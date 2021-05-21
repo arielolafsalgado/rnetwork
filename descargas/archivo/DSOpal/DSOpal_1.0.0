@@ -1,0 +1,45 @@
+Package: DSOpal
+Type: Package
+Title: 'DataSHIELD' Implementation for 'Opal'
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "Yannick",
+             family = "Marcon",
+             role = c("aut", "cre"),
+             email = "yannick.marcon@obiba.org",
+             comment = c(ORCID = "0000-0003-0138-2023")),
+      person(given = "Becca",
+             family = "Wilson",
+             role = "ctb",
+             comment = c(ORCID = "0000-0003-2294-593X")),
+      person("OBiBa group",
+             role="cph",
+             email="info@obiba.org"))
+Depends: R (>= 3.5), opalr (>= 1.3), DSI (>= 1.0), methods
+Description: 'DataSHIELD' is an infrastructure and series of R packages that 
+    enables the remote and 'non-disclosive' analysis of sensitive research data.
+    This package is the 'DataSHIELD' interface implementation for 'Opal', which is
+    the data integration application for biobanks by 'OBiBa'. Participant data, once
+    collected from any data source, must be integrated and stored in a central
+    data repository under a uniform model. 'Opal' is such a central repository.
+    It can import, process, validate, query, analyze, report, and export data.
+    'Opal' is the reference implementation of the 'DataSHIELD' infrastructure.
+License: LGPL (>= 2.1)
+URL: https://www.obiba.org https://www.obiba.org/pages/products/opal/
+        http://www.datashield.ac.uk https://doi.org/10.1093/ije/dyu188
+BugReports: https://github.com/datashield/DSOpal
+RoxygenNote: 7.1.0
+Encoding: UTF-8
+Collate: 'OpalDriver.R' 'OpalConnection.R' 'OpalResult.R'
+        'datashield.aggregate.r' 'datashield.assign.r'
+        'datashield.command.r' 'datashield.method.r'
+        'datashield.symbol.r' 'datashield.workspace.r' 'logindata.R'
+        'utils.R'
+NeedsCompilation: no
+Packaged: 2020-04-20 16:52:15 UTC; yannick
+Author: Yannick Marcon [aut, cre] (<https://orcid.org/0000-0003-0138-2023>),
+  Becca Wilson [ctb] (<https://orcid.org/0000-0003-2294-593X>),
+  OBiBa group [cph]
+Maintainer: Yannick Marcon <yannick.marcon@obiba.org>
+Repository: CRAN
+Date/Publication: 2020-04-27 16:10:02 UTC

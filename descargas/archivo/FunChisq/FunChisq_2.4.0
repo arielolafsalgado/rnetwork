@@ -1,0 +1,38 @@
+Package: FunChisq
+Type: Package
+Version: 2.4.0
+Date: 2017-02-26
+Title: Chi-Square and Exact Tests for Non-Parametric Functional
+        Dependencies
+Authors@R: c(person("Yang", "Zhang", role = "aut"),
+	           person("Hua", "Zhong", role = "aut"),
+             person("Ruby", "Sharma", role = "aut"),
+	           person("Sajal", "Kumar", role = "aut"),
+	           person("Joe", "Song", role = c("aut", "cre"),
+		                email = "joemsong@cs.nmsu.edu"))
+Author: Yang Zhang [aut], Hua Zhong [aut], Ruby Sharma [aut], Sajal Kumar [aut], Joe Song [aut, cre]
+Maintainer: Joe Song <joemsong@cs.nmsu.edu>
+Description: Statistical hypothesis testing methods for non-parametric
+ functional dependencies using asymptotic chi-square or exact statistics. These
+ tests reveal evidence for causality based on the causality-by-functionality
+ principle. They include asymptotic functional chi-square tests, an exact
+ functional test, a comparative functional chi-square test, and also a
+ comparative chi-square test. The normalized non-constant functional chi-square
+ test was used by Best Performer NMSUSongLab in HPN-DREAM (DREAM8) Breast
+ Cancer Network Inference Challenges. For continuous data, these tests offer an
+ advantage over regression analysis when a parametric functional form cannot be
+ assumed; for categorical data, they provide a novel means to assess directional
+ dependencies not possible with symmetrical Pearson's chi-square or Fisher's
+ exact tests.
+License: LGPL (>= 3)
+Depends: R (>= 3.0.0)
+Imports: Rcpp, stats
+LinkingTo: BH, Rcpp
+Suggests: Ckmeans.1d.dp, testthat, knitr, rmarkdown
+NeedsCompilation: yes
+URL: https://www.cs.nmsu.edu/~joemsong/publications
+LazyData: TRUE
+VignetteBuilder: knitr
+Packaged: 2017-02-28 00:14:24 UTC; joemsong
+Repository: CRAN
+Date/Publication: 2017-02-28 10:58:55

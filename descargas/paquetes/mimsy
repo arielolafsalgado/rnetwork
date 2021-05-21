@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package mimsy</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Calculate MIMS Dissolved Gas Concentrations Without Getting a Headache [R package mimsy version 0.6.2]" />
+<meta name="citation_author" content="Michelle Catherine Kelly" />
+<meta name="citation_publication_date" content="2020-07-15" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=mimsy" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=mimsy" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="mimsy: Calculate MIMS Dissolved Gas Concentrations Without Getting a Headache" />
+<meta name="og:description" content="Calculate dissolved gas concentrations from raw MIMS (Membrane Inlet Mass Spectrometer) signal data. Use mimsy() on a formatted CSV file to return dissolved gas concentrations (mg and microMole) of N2, O2, Ar based on gas solubility at temperature, pressure, and salinity. See references Benson and Krause (1984) &amp;lt;&lt;a href=&quot;https://doi.org/10.4319%2Flo.1992.37.6.1307&quot;&gt;doi:10.4319/lo.1992.37.6.1307&lt;/a&gt;&amp;gt;, Garcia and Gordon (1992) &amp;lt;&lt;a href=&quot;https://doi.org/10.4319%2Flo.1984.29.3.0620&quot;&gt;doi:10.4319/lo.1984.29.3.0620&lt;/a&gt;&amp;gt;, Stull (1947) &amp;lt;&lt;a href=&quot;https://doi.org/10.1021%2Fie50448a022&quot;&gt;doi:10.1021/ie50448a022&lt;/a&gt;&amp;gt;, and Hamme and Emerson (2004) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.dsr.2004.06.009&quot;&gt;doi:10.1016/j.dsr.2004.06.009&lt;/a&gt;&amp;gt; for more information. Easily save the output to a nicely-formatted multi-tab 'Excel' workbook with mimsy.save(). Supports dual-temperature standard calibration for dual-bath MIMS setups." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=mimsy" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>mimsy: Calculate MIMS Dissolved Gas Concentrations Without Getting a
+Headache</h2>
+<p>Calculate dissolved gas concentrations from raw MIMS 
+	(Membrane Inlet Mass Spectrometer) signal data. Use mimsy() on 
+	a formatted CSV file to return dissolved gas concentrations 
+	(mg and microMole) of N2, O2, Ar based on 
+	gas solubility at temperature, pressure, and salinity. See references 
+	Benson and Krause (1984) &lt;<a href="https://doi.org/10.4319%2Flo.1992.37.6.1307">doi:10.4319/lo.1992.37.6.1307</a>&gt;, Garcia and 
+	Gordon (1992) &lt;<a href="https://doi.org/10.4319%2Flo.1984.29.3.0620">doi:10.4319/lo.1984.29.3.0620</a>&gt;, Stull (1947) 
+	&lt;<a href="https://doi.org/10.1021%2Fie50448a022">doi:10.1021/ie50448a022</a>&gt;, and Hamme and Emerson (2004) 
+	&lt;<a href="https://doi.org/10.1016%2Fj.dsr.2004.06.009">doi:10.1016/j.dsr.2004.06.009</a>&gt; for more information. Easily save the 
+	output to a nicely-formatted multi-tab 'Excel' workbook with mimsy.save(). 
+	Supports dual-temperature standard calibration for dual-bath MIMS setups.</p>
+<table summary="Package mimsy summary">
+<tr>
+<td>Version:</td>
+<td>0.6.2</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../dplyr/index.html">dplyr</a>, <a href="../magrittr/index.html">magrittr</a>, <a href="../lubridate/index.html">lubridate</a>, <a href="../openxlsx/index.html">openxlsx</a>, utils</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../kableExtra/index.html">kableExtra</a>, <a href="../xfun/index.html">xfun</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-07-15</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Michelle Catherine Kelly [aut, cre],
+  Kevin Nevorski [ctb],
+  Amy M. Marcarelli [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Michelle Catherine Kelly  &#x3c;&#x6d;&#x63;&#x6b;&#x65;&#x6c;&#x6c;&#x79;&#x31;&#x20;&#x61;&#x74;&#x20;&#x6d;&#x74;&#x75;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/michelleckelly/mimsy/issues">https://github.com/michelleckelly/mimsy/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/michelleckelly/mimsy">https://github.com/michelleckelly/mimsy</a>,
+<a href="https://michelleckelly.github.io/mimsy/">https://michelleckelly.github.io/mimsy/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_mimsy.html">mimsy results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package mimsy downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="mimsy.pdf"> mimsy.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/mimsy.html">Get started</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/mimsy_0.6.2.tar.gz"> mimsy_0.6.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/mimsy_0.6.2.zip">mimsy_0.6.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/mimsy_0.6.2.zip">mimsy_0.6.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/mimsy_0.6.2.zip">mimsy_0.6.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/mimsy_0.6.2.tgz">mimsy_0.6.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/mimsy_0.6.2.tgz">mimsy_0.6.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/mimsy"> mimsy archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=mimsy"><samp>https://CRAN.R-project.org/package=mimsy</samp></a>
+to link to this page.</p>
+</body>
+</html>

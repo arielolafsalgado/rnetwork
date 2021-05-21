@@ -1,0 +1,32 @@
+Package: beanz
+Title: Bayesian Analysis of Heterogeneous Treatment Effect
+Version: 1.5
+Author: Chenguang Wang [aut, cre],
+    Ravi Varadhan [aut],
+    Trustees of Columbia University [cph] (tools/make_cpp.R, R/stanmodels.R)
+Maintainer: Chenguang Wang <cwang68@jhmi.edu>
+Description: It is vital to assess the heterogeneity of treatment effects
+    (HTE) when making health care decisions for an individual patient or a group
+    of patients. Nevertheless, it remains challenging to evaluate HTE based
+    on information collected from clinical studies that are often designed and
+    conducted to evaluate the efficacy of a treatment for the overall population.
+    The Bayesian framework offers a principled and flexible approach to estimate
+    and compare treatment effects across subgroups of patients defined by their
+    characteristics. This package allows users to explore a wide range of Bayesian
+    HTE analysis models, and produce posterior inferences about HTE. 
+Depends: R (>= 3.3.1), Rcpp (>= 0.12.5)
+License: GPL (>= 3)
+LinkingTo: StanHeaders (>= 2.10.0-2), rstan (>= 2.10.1), BH (>=
+        1.60.0), Rcpp (>= 0.11.0), RcppEigen
+RcppModules: stan_fit4nse_mod, stan_fit4fs_mod, stan_fit4sr_mod,
+        stan_fit4bs_mod, stan_fit4srs_mod, stan_fit4ds_mod,
+        stan_fit4eds_mod
+LazyData: true
+NeedsCompilation: yes
+Imports: rstan (>= 2.10.1), methods, survival
+Suggests: knitr, shiny, anoint, rmarkdown, pander, shinythemes, DT
+RoxygenNote: 5.0.1
+VignetteBuilder: knitr
+Packaged: 2016-07-06 19:18:30 UTC; cwang68
+Repository: CRAN
+Date/Publication: 2016-07-06 23:23:46

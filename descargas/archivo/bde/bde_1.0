@@ -1,0 +1,27 @@
+Package: bde
+Type: Package
+Title: Bounded Density Estimation
+Version: 1.0
+Date: 2013-06-19
+Author: Guzman Santafe, Borja Calvo, Aritz Perez and Jose A. Lozano
+Maintainer: Guzman Santafe <guzman.santafe@unavarra.es>
+Depends: R (>= 2.0)
+Imports: methods,shiny,ggplot2
+Description: This package includes S4 classes to deal with different estimators for densities in bounded domains. That is, a collection of different approaches to estimate densities defined within the interval [lower.limit, upper.limit], where lower.limit and upper.limit are values that can be set by the user.
+License: GPL-2
+LazyData: TRUE
+Collate: BoundedDensity.R KernelDensity.R Chen99Kernel.R
+        MicroBetaChen99Kernel.R MacroBetaChen99Kernel.R
+        BoundaryKernel.R NoBoundaryKernel.R NormalizedBoundaryKernel.R
+        Muller91BoundaryKernel.R
+        JonesCorrectionMuller91BoundaryKernel.R
+        Muller94BoundaryKernel.R
+        JonesCorrectionMuller94BoundaryKernel.R BernsteinPolynomials.R
+        Vitale.R BrVitale.R KakizawaB1.R KakizawaB2.R KakizawaB3.R
+        HirukawaJLNKernel.R HirukawaTSKernel.R
+        MacroBetaHirukawaJLNKernel.R MacroBetaHirukawaTSKernel.R
+        utils.R bde.R
+Packaged: 2014-11-12 17:42:43 UTC; gsantafe
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2014-11-13 07:38:50

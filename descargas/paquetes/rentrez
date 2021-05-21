@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package rentrez</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="'Entrez' in R [R package rentrez version 1.2.2]" />
+<meta name="citation_author" content="David Winter" />
+<meta name="citation_publication_date" content="2019-05-02" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=rentrez" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=rentrez" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="rentrez: 'Entrez' in R" />
+<meta name="og:description" content="Provides an R interface to the NCBI's 'EUtils' API, allowing users to search databases like 'GenBank' &amp;lt;&lt;a href=&quot;https://www.ncbi.nlm.nih.gov/genbank/&quot;&gt;https://www.ncbi.nlm.nih.gov/genbank/&lt;/a&gt;&amp;gt; and 'PubMed' &amp;lt;&lt;a href=&quot;https://www.ncbi.nlm.nih.gov/pubmed/&quot;&gt;https://www.ncbi.nlm.nih.gov/pubmed/&lt;/a&gt;&amp;gt;, process the results of those searches and pull data into their R sessions." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=rentrez" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>rentrez: 'Entrez' in R</h2>
+<p>Provides an R interface to the NCBI's 'EUtils' API, 
+    allowing users to search databases like 'GenBank' 
+    &lt;<a href="https://www.ncbi.nlm.nih.gov/genbank/">https://www.ncbi.nlm.nih.gov/genbank/</a>&gt; and 'PubMed' 
+    &lt;<a href="https://www.ncbi.nlm.nih.gov/pubmed/">https://www.ncbi.nlm.nih.gov/pubmed/</a>&gt;, process the 
+    results of those searches and pull data into their R sessions.</p>
+<table summary="Package rentrez summary">
+<tr>
+<td>Version:</td>
+<td>1.2.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.6.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../XML/index.html">XML</a>, <a href="../httr/index.html">httr</a> (&ge; 0.5), <a href="../jsonlite/index.html">jsonlite</a> (&ge; 0.9)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-05-02</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>David Winter <a href="https://orcid.org/0000-0002-6165-0029"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Scott Chamberlain <a href="https://orcid.org/0000-0003-1444-9135"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Han Guangchun <a href="https://orcid.org/0000-0001-9277-2507"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>David Winter  &#x3c;&#x64;&#x61;&#x76;&#x69;&#x64;&#x2e;&#x77;&#x69;&#x6e;&#x74;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ropensci/rentrez/issues">https://github.com/ropensci/rentrez/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://github.com/ropensci/rentrez">http://github.com/ropensci/rentrez</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">rentrez citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_rentrez.html">rentrez results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package rentrez downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="rentrez.pdf"> rentrez.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/rentrez_tutorial.html">Rentrez Tutorial</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/rentrez_1.2.2.tar.gz"> rentrez_1.2.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/rentrez_1.2.2.zip">rentrez_1.2.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/rentrez_1.2.2.zip">rentrez_1.2.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/rentrez_1.2.2.zip">rentrez_1.2.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/rentrez_1.2.2.tgz">rentrez_1.2.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/rentrez_1.2.2.tgz">rentrez_1.2.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/rentrez"> rentrez archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package rentrez reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../Map2NCBI/index.html">Map2NCBI</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="http://www.bioconductor.org/packages/release/bioc/html/animalcules.html"><span class="BioC">animalcules</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/appreci8R.html"><span class="BioC">appreci8R</span></a>, <a href="../biolink/index.html">biolink</a>, <a href="../covid19.analytics/index.html">covid19.analytics</a>, <a href="../fulltext/index.html">fulltext</a>, <a href="../geneHummus/index.html">geneHummus</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/ideal.html"><span class="BioC">ideal</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/MicrobiotaProcess.html"><span class="BioC">MicrobiotaProcess</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/nanotatoR.html"><span class="BioC">nanotatoR</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/PathoStat.html"><span class="BioC">PathoStat</span></a>, <a href="../pubmedR/index.html">pubmedR</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/PubScore.html"><span class="BioC">PubScore</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/recount.html"><span class="BioC">recount</span></a>, <a href="../rotl/index.html">rotl</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../BoSSA/index.html">BoSSA</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/genbankr.html"><span class="BioC">genbankr</span></a>, <a href="../idiogramFISH/index.html">idiogramFISH</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=rentrez"><samp>https://CRAN.R-project.org/package=rentrez</samp></a>
+to link to this page.</p>
+</body>
+</html>

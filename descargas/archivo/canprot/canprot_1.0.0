@@ -1,0 +1,39 @@
+Date: 2020-05-11
+Package: canprot
+Version: 1.0.0
+Title: Compositional Analysis of Differentially Expressed Proteins in
+        Cancer
+Authors@R: c(
+    person("Jeffrey", "Dick", email = "j3ffdick@gmail.com", role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0002-0687-5890")),
+    person("Ben", "Bolker", role = "ctb",
+      comment = c(ORCID = "0000-0002-2127-0443"))
+    )
+Maintainer: Jeffrey Dick <j3ffdick@gmail.com>
+Depends: R (>= 3.1.0)
+Imports: CHNOSZ (>= 1.3.0), xtable, MASS, knitr, rmarkdown
+Suggests: KernSmooth
+Description: Compositional analysis of differentially expressed proteins in
+  cancer and cell culture proteomics experiments. The data include lists of up-
+  and down-regulated proteins in different cancer types (breast, colorectal,
+  liver, lung, pancreatic, prostate) and laboratory conditions (hypoxia,
+  hyperosmotic stress, high glucose, 3D cell culture, and proteins secreted in
+  hypoxia), together with amino acid compositions computed for protein sequences
+  obtained from UniProt. Functions are provided to calculate compositional metrics
+  including protein length, carbon oxidation state, and stoichiometric hydration
+  state. In addition, phylostrata (evolutionary ages) of protein-coding genes are
+  compiled using data from Liebeskind et al. (2016) <doi:10.1093/gbe/evw113> or
+  Trigos et al. (2017) <doi:10.1073/pnas.1617743114>. The vignettes contain
+  plots of compositional differences, phylostrata for human proteins, and
+  references for all datasets.
+Encoding: UTF-8
+License: GPL (>= 2)
+BuildResaveData: no
+VignetteBuilder: knitr
+URL: http://github.com/jedick/canprot
+NeedsCompilation: no
+Packaged: 2020-05-11 04:19:08 UTC; jedick
+Author: Jeffrey Dick [aut, cre] (<https://orcid.org/0000-0002-0687-5890>),
+  Ben Bolker [ctb] (<https://orcid.org/0000-0002-2127-0443>)
+Repository: CRAN
+Date/Publication: 2020-05-11 11:10:09 UTC

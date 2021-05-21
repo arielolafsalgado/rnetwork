@@ -1,0 +1,41 @@
+Package: feasts
+Title: Feature Extraction and Statistics for Time Series
+Version: 0.1.4
+Description: Provides a collection of features, decomposition methods, 
+    statistical summaries and graphics functions for the analysing tidy time
+    series data. The package name 'feasts' is an acronym comprising of its key
+    features: Feature Extraction And Statistics for Time Series.
+Authors@R: c(
+    person("Mitchell", "O'Hara-Wild", email = "mail@mitchelloharawild.com", role = c("aut", "cre")),
+    person("Rob", "Hyndman", role = "aut"),
+    person("Earo", "Wang", role = "aut"),
+    person("Di", "Cook", role = "ctb"),
+    person("Thiyanga", "Talagala", role = "ctb", comment = "Correlation features"),
+    person("Leanne", "Chhay", role = "ctb", comment = "Guerrero's method")
+    )
+Depends: R (>= 3.5.0), fabletools (>= 0.2.0)
+Imports: rlang (>= 0.2.0), tibble (>= 1.4.1), tsibble (>= 0.9.0),
+        ggplot2 (>= 3.0.0), dplyr (>= 1.0.0), tidyr (>= 0.8.3), scales
+        (>= 1.1.0), vctrs, lubridate, grid, slider, utils
+Suggests: tsibbledata, pillar (>= 1.0.1), knitr, rmarkdown, testthat,
+        covr, seasonal, urca, fracdiff, fable
+ByteCompile: true
+VignetteBuilder: knitr
+License: GPL-3
+URL: http://feasts.tidyverts.org/, https://github.com/tidyverts/feasts/
+BugReports: https://github.com/tidyverts/feasts/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0.9000
+Language: en-GB
+NeedsCompilation: no
+Packaged: 2020-06-17 00:07:35 UTC; mitchell
+Author: Mitchell O'Hara-Wild [aut, cre],
+  Rob Hyndman [aut],
+  Earo Wang [aut],
+  Di Cook [ctb],
+  Thiyanga Talagala [ctb] (Correlation features),
+  Leanne Chhay [ctb] (Guerrero's method)
+Maintainer: Mitchell O'Hara-Wild <mail@mitchelloharawild.com>
+Repository: CRAN
+Date/Publication: 2020-06-17 05:40:14 UTC

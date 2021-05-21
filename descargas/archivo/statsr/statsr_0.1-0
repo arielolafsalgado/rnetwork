@@ -1,0 +1,40 @@
+Package: statsr
+Type: Package
+Title: Companion Package for Statistics with R
+Version: 0.1-0
+Date: 2018-05-07
+Authors@R: c(person("Colin", "Rundel", role=c("aut"), email="rundel@gmail.com"),
+             person("Mine", "Cetinkaya-Rundel", role=c("aut"), email="mine@stat.duke.edu"),
+             person("Merlise", "Clyde", role=c("aut", "cre"), email="clyde@duke.edu",
+	        		       comment=c(ORCID=0000-0002-3595-1872)),
+             person("David", "Banks", role=c("aut"), email="banks@stat.duke.edu"))
+Description: Provides functions and datasets to support inference with the open access book
+            "An Introduction to Bayesian Thinking", available online
+             <https://statswithr.github.io/book> and  online videos for the
+             "Statistics with R Specialization" <https://www.coursera.org/specializations/statistics>.  
+             which includes an introduction to Bayesian inference and decision
+             making for one and two sample credible intervals and 
+             hypothesis testing for Gaussian and Binomial data, in addition to
+             frequentist inference using model-based and randomization-based methods.
+             To help with understanding concepts, 'shiny' applications are used to aide 
+             visualization of sampling distributions, credible intervals, hypothesis testing, 
+             Lindley's and Bartlett's paradoxes. For development versions or to report issues, please visit
+             <https://github.com/StatsWithR/statsr>.
+LazyData: true
+License: GPL (>= 3)
+URL: https://www.r-project.org, https://github.com/StatsWithR/statsr
+BugReports: https://github.com/StatsWithR/statsr/issues
+RoxygenNote: 6.0.1
+Depends: R (>= 3.3.0), BayesFactor
+Imports: dplyr, rmarkdown, ggplot2, broom, gridExtra, shiny, cubature,
+        knitr, tidyr
+Suggests: HistData
+NeedsCompilation: no
+Packaged: 2018-05-07 17:05:38 UTC; mclyde
+Author: Colin Rundel [aut],
+  Mine Cetinkaya-Rundel [aut],
+  Merlise Clyde [aut, cre] (<https://orcid.org/-5469>),
+  David Banks [aut]
+Maintainer: Merlise Clyde <clyde@duke.edu>
+Repository: CRAN
+Date/Publication: 2018-05-08 08:41:19 UTC

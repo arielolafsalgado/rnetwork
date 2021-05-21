@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package bayesplot</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Plotting for Bayesian Models [R package bayesplot version 1.7.2]" />
+<meta name="citation_author1" content="Jonah Gabry" />
+<meta name="citation_author2" content="Tristan Mahr" />
+<meta name="citation_publication_date" content="2020-05-28" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=bayesplot" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=bayesplot" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="bayesplot: Plotting for Bayesian Models" />
+<meta name="og:description" content="Plotting functions for posterior analysis, MCMC diagnostics, prior and posterior predictive checks, and other visualizations to support the applied Bayesian workflow advocated in Gabry, Simpson, Vehtari, Betancourt, and Gelman (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Frssa.12378&quot;&gt;doi:10.1111/rssa.12378&lt;/a&gt;&amp;gt;. The package is designed not only to provide convenient functionality for users, but also a common set of functions that can be easily used by developers working on a variety of R packages for Bayesian modeling, particularly (but not exclusively) packages interfacing with 'Stan'." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=bayesplot" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>bayesplot: Plotting for Bayesian Models</h2>
+<p>Plotting functions for posterior analysis, MCMC diagnostics,
+    prior and posterior predictive checks, and other visualizations 
+    to support the applied Bayesian workflow advocated in
+    Gabry, Simpson, Vehtari, Betancourt, and Gelman (2019) &lt;<a href="https://doi.org/10.1111%2Frssa.12378">doi:10.1111/rssa.12378</a>&gt;.
+    The package is designed not only to provide convenient functionality 
+    for users, but also a common set of functions that can be easily used by 
+    developers working on a variety of R packages for Bayesian modeling, 
+    particularly (but not exclusively) packages interfacing with 'Stan'.</p>
+<table summary="Package bayesplot summary">
+<tr>
+<td>Version:</td>
+<td>1.7.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.1.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../dplyr/index.html">dplyr</a> (&ge; 0.8.0), <a href="../ggplot2/index.html">ggplot2</a> (&ge; 3.0.0), <a href="../ggridges/index.html">ggridges</a>, <a href="../glue/index.html">glue</a>, <a href="../reshape2/index.html">reshape2</a>, <a href="../rlang/index.html">rlang</a> (&ge; 0.3.0), stats, <a href="../tibble/index.html">tibble</a>, <a href="../tidyselect/index.html">tidyselect</a>, utils</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../gridExtra/index.html">gridExtra</a> (&ge; 2.2.1), <a href="../hexbin/index.html">hexbin</a>, <a href="../knitr/index.html">knitr</a> (&ge; 1.16), <a href="../loo/index.html">loo</a> (&ge;
+2.0.0), <a href="../RColorBrewer/index.html">RColorBrewer</a>, <a href="../rmarkdown/index.html">rmarkdown</a> (&ge; 1.0.0), <a href="../rstan/index.html">rstan</a> (&ge; 2.17.1), <a href="../rstanarm/index.html">rstanarm</a> (&ge; 2.17.4), <a href="../rstantools/index.html">rstantools</a> (&ge; 1.5.0), <a href="../scales/index.html">scales</a>, <a href="../shinystan/index.html">shinystan</a> (&ge; 2.3.0), <a href="../testthat/index.html">testthat</a> (&ge; 2.0.0), <a href="../vdiffr/index.html">vdiffr</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-05-28</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Jonah Gabry [aut, cre],
+  Tristan Mahr [aut],
+  Paul-Christian Bürkner [ctb],
+  Martin Modrák [ctb],
+  Malcolm Barrett [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Jonah Gabry  &#x3c;&#x6a;&#x73;&#x67;&#x32;&#x32;&#x30;&#x31;&#x20;&#x61;&#x74;&#x20;&#x63;&#x6f;&#x6c;&#x75;&#x6d;&#x62;&#x69;&#x61;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/stan-dev/bayesplot/issues/">https://github.com/stan-dev/bayesplot/issues/</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL (&ge; 3)</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://mc-stan.org/bayesplot">https://mc-stan.org/bayesplot</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>pandoc (&gt;= 1.12.3), pandoc-citeproc</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">bayesplot citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_bayesplot.html">bayesplot results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package bayesplot downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="bayesplot.pdf"> bayesplot.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/graphical-ppcs.html">Graphical posterior predictive checks</a><br/>
+<a href="vignettes/plotting-mcmc-draws.html">Plotting MCMC draws</a><br/>
+<a href="vignettes/visual-mcmc-diagnostics.html">Visual MCMC diagnostics</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/bayesplot_1.7.2.tar.gz"> bayesplot_1.7.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/bayesplot_1.7.2.zip">bayesplot_1.7.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/bayesplot_1.7.2.zip">bayesplot_1.7.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/bayesplot_1.7.2.zip">bayesplot_1.7.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/bayesplot_1.7.2.tgz">bayesplot_1.7.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/bayesplot_1.7.2.tgz">bayesplot_1.7.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/bayesplot"> bayesplot archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package bayesplot reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../bmscstan/index.html">bmscstan</a>, <a href="../walker/index.html">walker</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../baggr/index.html">baggr</a>, <a href="../bang/index.html">bang</a>, <a href="../bayesvl/index.html">bayesvl</a>, <a href="../blavaan/index.html">blavaan</a>, <a href="../brms/index.html">brms</a>, <a href="../dmbc/index.html">dmbc</a>, <a href="../hmclearn/index.html">hmclearn</a>, <a href="../mcp/index.html">mcp</a>, <a href="../missingHE/index.html">missingHE</a>, <a href="../MixSIAR/index.html">MixSIAR</a>, <a href="../multinma/index.html">multinma</a>, <a href="../OncoBayes2/index.html">OncoBayes2</a>, <a href="../pivmet/index.html">pivmet</a>, <a href="../RBesT/index.html">RBesT</a>, <a href="../revdbayes/index.html">revdbayes</a>, <a href="../rstanarm/index.html">rstanarm</a>, <a href="../rstap/index.html">rstap</a>, <a href="../shinystan/index.html">shinystan</a>, <a href="../simmr/index.html">simmr</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../breathteststan/index.html">breathteststan</a>, <a href="../bsem/index.html">bsem</a>, <a href="../concurve/index.html">concurve</a>, <a href="../CopulaDTA/index.html">CopulaDTA</a>, <a href="../Ecfun/index.html">Ecfun</a>, <a href="../emmeans/index.html">emmeans</a>, <a href="../glmmfields/index.html">glmmfields</a>, <a href="../greta/index.html">greta</a>, <a href="../HTLR/index.html">HTLR</a>, <a href="../loo/index.html">loo</a>, <a href="../mcmcsae/index.html">mcmcsae</a>, <a href="../projpred/index.html">projpred</a>, <a href="../rstan/index.html">rstan</a>, <a href="../tidybayes/index.html">tidybayes</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=bayesplot"><samp>https://CRAN.R-project.org/package=bayesplot</samp></a>
+to link to this page.</p>
+</body>
+</html>

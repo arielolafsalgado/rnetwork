@@ -1,0 +1,21 @@
+Package: DrugClust
+Type: Package
+Title: Implementation of a Machine Learning Framework for Predicting
+        Drugs Side Effects
+Version: 0.1
+Date: 2016-01-19
+Author: Giovanna Maria Dimitri
+Maintainer: Giovanna Maria Dimitri <gmd43@cam.ac.uk>
+Description: An implementation of a Machine Learning Framework for prediction of new drugs Side Effects.
+    Firstly drugs are clustered with respect to their features description and secondly predictions are made, according to Bayesian scores.
+    Moreover it can perform protein enrichment considering the proteins clustered together in the first step of the algorithm.
+    This last tool is of extreme interest for biologist and drug discovery purposes, given the fact that it can be used either as a validation of the clusters obtained, as well as for the possible discovery of new interactions between certain side effects and non targeted pathways.
+    Clustering of the drugs in the feature space can be done using K-Means, PAM or K-Seeds (a novel clustering algorithm proposed by the author).
+License: GPL-2
+LazyData: TRUE
+RoxygenNote: 5.0.0
+NeedsCompilation: no
+Imports: ROCR, MESS, cclust, cluster, e1071, utils, base
+Packaged: 2016-01-19 12:32:14 UTC; gmd43
+Repository: CRAN
+Date/Publication: 2016-01-19 18:22:04

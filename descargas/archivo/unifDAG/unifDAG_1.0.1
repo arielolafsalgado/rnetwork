@@ -1,0 +1,24 @@
+Package: unifDAG
+Type: Package
+Title: Uniform Sampling of Directed Acyclic Graphs
+Version: 1.0.1
+Date: 2017-09-12
+Maintainer: Markus Kalisch <kalisch@stat.math.ethz.ch>
+Authors@R: c(person("Markus","Kalisch",
+                    email="kalisch@stat.math.ethz.ch", role=c("aut","cre")),
+                    person("Manuel", "Schuerch", role="ctb"))
+Author: Markus Kalisch [aut, cre], Manuel Schuerch [ctb]
+Description: Uniform sampling of Directed Acyclic Graphs (DAG) using exact
+ enumeration by relating each DAG to a sequence of outpoints (nodes with no
+ incoming edges) and then to a composition of integers as suggested by
+ Kuipers, J. and Moffa, G. (2015) <doi:10.1007/s11222-013-9428-y>.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Imports: graph, gmp, stats, methods
+Suggests: Rgraphviz, knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-09-12 09:45:57 UTC; kalischm
+Repository: CRAN
+Date/Publication: 2017-09-12 17:35:51 UTC

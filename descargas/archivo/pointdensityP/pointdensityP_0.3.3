@@ -1,0 +1,23 @@
+Package: pointdensityP
+Title: Point Density for Geospatial Data
+Version: 0.3.3
+Author: "Paul Evangelista <paul.evangelista@usma.edu> and Dave Beskow
+    <david.beskow@usma.edu>"
+Maintainer: Paul Evangelista <paul.evangelista@usma.edu>
+Description: The function pointdensity returns a density count and the temporal average for
+    every point in the original list. The dataframe returned includes four
+    columns: lat, lon, count, and date_avg. The "lat" column is the original
+    latitude data; the "lon" column is the original longitude data; the "count"
+    is the density count of the number of points within a radius of
+    radius*grid_size (the neighborhood); and the date_avg column includes the
+    average date of each point in the neighborhood.
+Depends: R (>= 3.4.0)
+Imports: data.table, utils
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-04-16 15:30:37 UTC; Paul.Evangelista
+Repository: CRAN
+Date/Publication: 2018-04-16 20:59:24 UTC

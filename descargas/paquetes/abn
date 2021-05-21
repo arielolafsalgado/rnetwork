@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package abn</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Modelling Multivariate Data with Additive Bayesian Networks [R package abn version 2.3-0]" />
+<meta name="citation_author1" content="Gilles Kratzer" />
+<meta name="citation_author2" content="Fraser Ian Lewis" />
+<meta name="citation_publication_date" content="2020-10-22" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=abn" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=abn" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="abn: Modelling Multivariate Data with Additive Bayesian Networks" />
+<meta name="og:description" content="Bayesian network analysis is a form of probabilistic graphical models which derives from empirical data a directed acyclic graph, DAG, describing the dependency structure between random variables. An additive Bayesian network model consists of a form of a DAG where each node comprises a generalized linear model, GLM. Additive Bayesian network models are equivalent to Bayesian multivariate regression using graphical modelling, they generalises the usual multivariable regression, GLM, to multiple dependent variables. 'abn' provides routines to help determine optimal Bayesian network models for a given data set, where these models are used to identify statistical dependencies in messy, complex data. The additive formulation of these models is equivalent to multivariate generalised linear modelling (including mixed models with iid random effects). The usual term to describe this model selection process is structure discovery. The core functionality is concerned with model selection - determining the most robust empirical model of data from interdependent variables. Laplace approximations are used to estimate goodness of fit metrics and model parameters, and wrappers are also included to the INLA package which can be obtained from &amp;lt;&lt;a href=&quot;http://www.r-inla.org&quot;&gt;http://www.r-inla.org&lt;/a&gt;&amp;gt;. The computing library JAGS &amp;lt;&lt;a href=&quot;http://mcmc-jags.sourceforge.net/&quot;&gt;http://mcmc-jags.sourceforge.net/&lt;/a&gt;&amp;gt; is used to simulate 'abn'-like data. A comprehensive set of documented case studies, numerical accuracy/quality assurance exercises, and additional documentation are available from the 'abn' website &amp;lt;&lt;a href=&quot;http://r-bayesian-networks.org&quot;&gt;http://r-bayesian-networks.org&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=abn" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>abn: Modelling Multivariate Data with Additive Bayesian Networks</h2>
+<p>Bayesian network analysis is a form of probabilistic graphical models which derives from empirical data a directed acyclic graph, DAG, describing the dependency structure between  random variables. An additive Bayesian network model consists of a form of a DAG where each node comprises a generalized linear model, GLM. Additive Bayesian network models are equivalent to Bayesian multivariate regression using graphical modelling, they generalises the usual multivariable regression, GLM, to multiple dependent variables. 'abn' provides routines to help determine optimal Bayesian network models for a given data set, where these models are used to identify statistical dependencies in messy, complex data. The additive formulation of these models is equivalent to multivariate generalised linear modelling (including mixed models with iid random effects). The usual term to describe this model selection process is structure discovery. The core functionality is concerned with model selection - determining the most robust empirical model of data from interdependent variables. Laplace approximations are used to estimate goodness of fit metrics and model parameters, and wrappers are also included to the INLA package which can be obtained from &lt;<a href="http://www.r-inla.org">http://www.r-inla.org</a>&gt;. The computing library JAGS &lt;<a href="http://mcmc-jags.sourceforge.net/">http://mcmc-jags.sourceforge.net/</a>&gt; is used to simulate 'abn'-like data. A comprehensive set of documented case studies, numerical accuracy/quality assurance exercises, and additional documentation are available from the 'abn' website &lt;<a href="http://r-bayesian-networks.org">http://r-bayesian-networks.org</a>&gt;.</p>
+<table summary="Package abn summary">
+<tr>
+<td>Version:</td>
+<td>2.3-0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td><a href="../nnet/index.html">nnet</a>, <a href="../lme4/index.html">lme4</a>, R (&ge; 4.0.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>methods, <a href="../rjags/index.html">rjags</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td>INLA, <a href="http://www.bioconductor.org/packages/release/bioc/html/Rgraphviz.html"><span class="BioC">Rgraphviz</span></a>, <a href="../knitr/index.html">knitr</a>, <a href="../R.rsp/index.html">R.rsp</a>, <a href="../testthat/index.html">testthat</a>, <a href="../entropy/index.html">entropy</a>, <a href="../moments/index.html">moments</a>, <a href="../boot/index.html">boot</a>, <a href="../brglm/index.html">brglm</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-22</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Gilles Kratzer <a href="https://orcid.org/0000-0002-5929-8935"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Fraser Ian Lewis [aut],
+  Reinhard Furrer <a href="https://orcid.org/0000-0002-6319-2332"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Marta Pittavino <a href="https://orcid.org/0000-0002-1232-1034"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Gilles Kratzer  &#x3c;&#x67;&#x69;&#x6c;&#x6c;&#x65;&#x73;&#x2e;&#x6b;&#x72;&#x61;&#x74;&#x7a;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://git.math.uzh.ch/reinhard.furrer/abn/-/issues">https://git.math.uzh.ch/reinhard.furrer/abn/-/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://r-bayesian-networks.org">http://r-bayesian-networks.org</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>Gnu Scientific Library version &gt;= 1.12</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">abn citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="ChangeLog">ChangeLog</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_abn.html">abn results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package abn downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="abn.pdf"> abn.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/abn_v2.2.pdf">ABN - Vignette</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/abn_2.3-0.tar.gz"> abn_2.3-0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/abn_2.3-0.zip">abn_2.3-0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/abn_2.3-0.zip">abn_2.3-0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/ReadMe">not available</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/abn_2.3-0.tgz">abn_2.3-0.tgz</a>, r-oldrel: not available </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/abn"> abn archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=abn"><samp>https://CRAN.R-project.org/package=abn</samp></a>
+to link to this page.</p>
+</body>
+</html>

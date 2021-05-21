@@ -1,0 +1,35 @@
+Package: nodbi
+Title: 'NoSQL' Database Connector
+Description: Simplified document database manipulation and analysis,
+    including support for many 'NoSQL' databases, including document 
+    databases ('Elasticsearch', 'CouchDB', 'MongoDB'), 
+    'key-value' databases ('Redis'), and other 'NoSQL' types ('etcd').
+Version: 0.1.0
+Authors@R: c(
+    person("Scott", "Chamberlain", role = c("aut", "cre"),
+        email = "sckott@protonmail.com",
+        comment = c(ORCID = "0000-0003-1444-9135")),
+    person("Rich", "FitzJohn", role = "aut"),
+    person("Jeroen", "Ooms", role = "aut")
+  )
+License: MIT + file LICENSE
+LazyData: true
+URL: https://github.com/ropensci/nodbi
+BugReports: https://github.com/ropensci/nodbi/issues
+Depends: R (>= 2.10)
+Imports: data.table, jsonlite
+Suggests: sofa (>= 0.3.0), etseed (>= 0.1.0), elastic (>= 0.8.4),
+        mongolite (>= 1.6), redux, testthat
+RoxygenNote: 6.0.1
+X-schema.org-applicationCategory: Databases
+X-schema.org-keywords: database, MongoDB, Redis, Elasticsearch,
+        CouchDB, NoSQL, JSON, documents
+X-schema.org-isPartOf: https://ropensci.org
+NeedsCompilation: no
+Packaged: 2018-07-24 21:17:04 UTC; sckott
+Author: Scott Chamberlain [aut, cre] (<https://orcid.org/0000-0003-1444-9135>),
+  Rich FitzJohn [aut],
+  Jeroen Ooms [aut]
+Maintainer: Scott Chamberlain <sckott@protonmail.com>
+Repository: CRAN
+Date/Publication: 2018-08-01 13:00:03 UTC

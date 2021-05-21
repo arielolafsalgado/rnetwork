@@ -1,0 +1,43 @@
+Package: lightr
+Title: Read Spectrometric Data and Metadata
+Version: 1.1
+Authors@R: c(
+    person("Hugo", "Gruson", role = c("cre", "aut"),
+    email = "hugo.gruson+R@normalesup.org",
+    comment = c(ORCID = "0000-0002-4094-1476")),
+    person("Rafael", "Maia", role = "aut",
+    comment = c(ORCID = "0000-0002-7563-9795")),
+    person("Thomas", "White", role = "aut",
+    comment = c(ORCID = "0000-0002-3976-1734")),
+    person("Kotya", "Karapetyan", role = "cph",
+    comment = "Author of the MATLAB script to read AvaSoft7 binary files (CC-BY)")
+    )
+Description: Parse various reflectance/transmittance/absorbance spectra file
+    formats to extract spectral data and metadata, as described in Gruson, White
+    & Maia (2019) <doi:10.21105/joss.01857>. Among other formats, it can import
+    files from 'Avantes' <https://www.avantes.com/>, 'CRAIC' 
+    <http://www.microspectra.com/>, and 'OceanInsight' (formerly 'OceanOptics') 
+    <https://www.oceaninsight.com/> brands.
+    This package has been peer-reviewed by rOpenSci (v. 0.1).
+Depends: R (>= 3.5.0)
+Imports: future.apply, progressr, xml2 (>= 1.0.0)
+Suggests: knitr, pavo, rmarkdown, spelling, testthat (>= 2.0.0)
+URL: https://docs.ropensci.org/lightr,
+        https://github.com/ropensci/lightr
+BugReports: https://github.com/ropensci/lightr/issues
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+Language: en-GB
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-04-01 13:35:03 UTC; hugo
+Author: Hugo Gruson [cre, aut] (<https://orcid.org/0000-0002-4094-1476>),
+  Rafael Maia [aut] (<https://orcid.org/0000-0002-7563-9795>),
+  Thomas White [aut] (<https://orcid.org/0000-0002-3976-1734>),
+  Kotya Karapetyan [cph] (Author of the MATLAB script to read AvaSoft7
+    binary files (CC-BY))
+Maintainer: Hugo Gruson <hugo.gruson+R@normalesup.org>
+Repository: CRAN
+Date/Publication: 2020-04-01 14:10:06 UTC

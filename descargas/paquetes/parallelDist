@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package parallelDist</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Parallel Distance Matrix Computation using Multiple Threads [R package parallelDist version 0.2.4]" />
+<meta name="citation_author" content="Alexander Eckert" />
+<meta name="citation_publication_date" content="2018-12-12" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=parallelDist" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=parallelDist" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="parallelDist: Parallel Distance Matrix Computation using Multiple Threads" />
+<meta name="og:description" content="A fast parallelized alternative to R's native 'dist' function to calculate distance matrices for continuous, binary, and multi-dimensional input matrices, which supports a broad variety of 41 predefined distance functions from the 'stats', 'proxy' and 'dtw' R packages, as well as user- defined functions written in C++. For ease of use, the 'parDist' function extends the signature of the 'dist' function and uses the same parameter naming conventions as distance methods of existing R packages. The package is mainly implemented in C++ and leverages the 'RcppParallel' package to parallelize the distance computations with the help of the 'TinyThread' library. Furthermore, the 'Armadillo' linear algebra library is used for optimized matrix operations during distance calculations. The curiously recurring template pattern (CRTP) technique is applied to avoid virtual functions, which improves the Dynamic Time Warping calculations while the implementation stays flexible enough to support different DTW step patterns and normalization methods." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=parallelDist" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>parallelDist: Parallel Distance Matrix Computation using Multiple Threads</h2>
+<p>A fast parallelized alternative to R's native 'dist' function to
+    calculate distance matrices for continuous, binary, and multi-dimensional
+    input matrices, which supports a broad variety of 41 predefined distance
+    functions from the 'stats', 'proxy' and 'dtw' R packages, as well as user-
+    defined functions written in C++. For ease of use, the 'parDist' function
+    extends the signature of the 'dist' function and uses the same parameter
+    naming conventions as distance methods of existing R packages. The package
+    is mainly implemented in C++ and leverages the 'RcppParallel' package to
+    parallelize the distance computations with the help of the 'TinyThread'
+    library. Furthermore, the 'Armadillo' linear algebra library is used for
+    optimized matrix operations during distance calculations. The curiously
+    recurring template pattern (CRTP) technique is applied to avoid virtual
+    functions, which improves the Dynamic Time Warping calculations while
+    the implementation stays flexible enough to support different DTW step
+    patterns and normalization methods.</p>
+<table summary="Package parallelDist summary">
+<tr>
+<td>Version:</td>
+<td>0.2.4</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0.2)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.6), <a href="../RcppParallel/index.html">RcppParallel</a> (&ge; 4.3.20)</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppParallel/index.html">RcppParallel</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../dtw/index.html">dtw</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../proxy/index.html">proxy</a>, <a href="../testthat/index.html">testthat</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a>, <a href="../RcppXPtrUtils/index.html">RcppXPtrUtils</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2018-12-12</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Alexander Eckert [aut, cre],
+  Lucas Godoy [ctb],
+  Srikanth KS [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Alexander Eckert  &#x3c;&#x69;&#x6e;&#x66;&#x6f;&#x20;&#x61;&#x74;&#x20;&#x61;&#x6c;&#x65;&#x78;&#x61;&#x6e;&#x64;&#x65;&#x72;&#x65;&#x63;&#x6b;&#x65;&#x72;&#x74;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/alexeckert/parallelDist/issues">https://github.com/alexeckert/parallelDist/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/alexeckert/parallelDist">https://github.com/alexeckert/parallelDist</a>,
+<a href="https://www.alexandereckert.com/R">https://www.alexandereckert.com/R</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>C++11</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_parallelDist.html">parallelDist results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package parallelDist downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="parallelDist.pdf"> parallelDist.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/parallelDist.pdf">parallelDist vignette</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/parallelDist_0.2.4.tar.gz"> parallelDist_0.2.4.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/parallelDist_0.2.4.zip">parallelDist_0.2.4.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/parallelDist_0.2.4.zip">parallelDist_0.2.4.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/parallelDist_0.2.4.zip">parallelDist_0.2.4.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/parallelDist_0.2.4.tgz">parallelDist_0.2.4.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/parallelDist_0.2.4.tgz">parallelDist_0.2.4.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/parallelDist"> parallelDist archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package parallelDist reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../ImpactEffectsize/index.html">ImpactEffectsize</a>, <a href="../knnp/index.html">knnp</a>, <a href="../MLGL/index.html">MLGL</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../AdaptGauss/index.html">AdaptGauss</a>, <a href="../DatabionicSwarm/index.html">DatabionicSwarm</a>, <a href="../DataVisualizations/index.html">DataVisualizations</a>, <a href="../DistributionOptimization/index.html">DistributionOptimization</a>, <a href="../FCPS/index.html">FCPS</a>, <a href="../IncDTW/index.html">IncDTW</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=parallelDist"><samp>https://CRAN.R-project.org/package=parallelDist</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,44 @@
+Package: fsdaR
+Date: 2018-12-04
+Title: Robust Data Analysis Through Monitoring and Dynamic
+        Visualization
+Version: 0.4-4
+Authors@R: c(person("Valentin", "Todorov", role = c("aut", "cre"), email = "valentin.todorov@chello.at")
+         , person("Emmanuele", "Sordini", role = "aut", email = "Emmanuele.sordini@ec.europa.eu")
+         , person("Aldo", "Corbellini", role = "ctb")
+         , person("Francesca", "Torti", role = "ctb")
+         , person("Marco",  "Riani", role = "ctb")
+         , person("Domenico", "Perrotta", role = "ctb")
+         , person("Andrea", "Cerioli", role = "ctb")
+          )
+Description: Provides interface to the 'MATLAB' toolbox 'Flexible Statistical Data Analysis
+    (FSDA)' which is a comprehensive and computationally efficient
+    software package for robust statistics in regression, multivariate
+    and categorical data analysis. The current R version implements tools
+    for regression: (forward search, S- and MM-estimation, least trimmed
+    squares (LTS) and least median of squares (LMS)). The distinctive
+    feature of our regression package relies in the possibility of
+    monitoring the statistics of interest as function of breakdown point,
+    efficiency or subset size, depending on the estimator. This is
+    accompanied by a rich set of graphical features, such as dynamic
+    brushing, linking, particularly useful for exploratory data analysis.
+Depends: rrcov
+Imports: rJava, methods, stats4, ggplot2, reshape2
+Suggests: MASS
+SystemRequirements: (license-free) MATLAB Runtime (MCR) V 9.0
+LazyLoad: yes
+LazyData: yes
+License: GPL (>= 2)
+Packaged: 2018-12-05 22:42:01 UTC; Share
+Author: Valentin Todorov [aut, cre],
+  Emmanuele Sordini [aut],
+  Aldo Corbellini [ctb],
+  Francesca Torti [ctb],
+  Marco Riani [ctb],
+  Domenico Perrotta [ctb],
+  Andrea Cerioli [ctb]
+Maintainer: Valentin Todorov <valentin.todorov@chello.at>
+NeedsCompilation: no
+Repository: CRAN
+RoxygenNote: 6.1.0
+Date/Publication: 2018-12-05 23:10:03 UTC

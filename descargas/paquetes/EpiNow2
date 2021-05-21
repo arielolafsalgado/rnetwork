@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package EpiNow2</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Estimate Real-Time Case Counts and Time-Varying Epidemiological Parameters [R package EpiNow2 version 1.2.1]" />
+<meta name="citation_author1" content="Sam Abbott" />
+<meta name="citation_author2" content="Joel Hellewell" />
+<meta name="citation_author3" content="Robin Thompson" />
+<meta name="citation_author4" content="Katelyn Gostic" />
+<meta name="citation_author5" content="Katharine Sherratt" />
+<meta name="citation_author6" content="Sophie Meakin" />
+<meta name="citation_author7" content="James Munday" />
+<meta name="citation_author8" content="Nikos Bosse" />
+<meta name="citation_author9" content="Joe Hickson" />
+<meta name="citation_author10" content="EpiForecasts" />
+<meta name="citation_author11" content="Sebastian Funk" />
+<meta name="citation_publication_date" content="2020-10-20" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=EpiNow2" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=EpiNow2" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="EpiNow2: Estimate Real-Time Case Counts and Time-Varying Epidemiological Parameters" />
+<meta name="og:description" content="Estimates the time-varying reproduction number, rate of spread, and doubling time using a range of open-source tools (Abbott et al. (2020) &amp;lt;&lt;a href=&quot;https://doi.org/10.12688%2Fwellcomeopenres.16006.1&quot;&gt;doi:10.12688/wellcomeopenres.16006.1&lt;/a&gt;&amp;gt;), and current best practices (Gostic et al. (2020) &amp;lt;&lt;a href=&quot;https://doi.org/10.1101%2F2020.06.18.20134858&quot;&gt;doi:10.1101/2020.06.18.20134858&lt;/a&gt;&amp;gt;). It aims to help users avoid some of the limitations of naive implementations in a framework that is informed by community feedback and is under active development." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=EpiNow2" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>EpiNow2: Estimate Real-Time Case Counts and Time-Varying Epidemiological
+Parameters</h2>
+<p>Estimates the time-varying reproduction number, rate of spread,
+             and doubling time using a range of open-source tools (Abbott et al. (2020) &lt;<a href="https://doi.org/10.12688%2Fwellcomeopenres.16006.1">doi:10.12688/wellcomeopenres.16006.1</a>&gt;),
+             and current best practices (Gostic et al. (2020) &lt;<a href="https://doi.org/10.1101%2F2020.06.18.20134858">doi:10.1101/2020.06.18.20134858</a>&gt;).
+             It aims to help users avoid some of the limitations of naive implementations in a framework
+             that is informed by community feedback and is under active development.</p>
+<table summary="Package EpiNow2 summary">
+<tr>
+<td>Version:</td>
+<td>1.2.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.4.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../cowplot/index.html">cowplot</a>, <a href="../data.table/index.html">data.table</a>, <a href="../futile.logger/index.html">futile.logger</a> (&ge; 1.4), <a href="../future/index.html">future</a>, <a href="../future.apply/index.html">future.apply</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../lubridate/index.html">lubridate</a>, methods, <a href="../patchwork/index.html">patchwork</a>, <a href="../progressr/index.html">progressr</a>, <a href="../purrr/index.html">purrr</a>, <a href="../R.utils/index.html">R.utils</a> (&ge; 2.0.0), <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.0), <a href="../rlang/index.html">rlang</a> (&ge; 0.4.7), <a href="../rstan/index.html">rstan</a> (&ge; 2.18.1), <a href="../scales/index.html">scales</a>, stats, <a href="../truncnorm/index.html">truncnorm</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../BH/index.html">BH</a> (&ge; 1.66.0), <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.0), <a href="../RcppEigen/index.html">RcppEigen</a> (&ge; 0.3.3.3.0), <a href="../rstan/index.html">rstan</a> (&ge; 2.21.1), <a href="../StanHeaders/index.html">StanHeaders</a> (&ge; 2.21.0-5)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../countrycode/index.html">countrycode</a>, <a href="../dplyr/index.html">dplyr</a>, EpiSoon, <a href="../forecastHybrid/index.html">forecastHybrid</a>, <a href="../here/index.html">here</a>, <a href="../kableExtra/index.html">kableExtra</a>, <a href="../knitr/index.html">knitr</a>, <a href="../magrittr/index.html">magrittr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../rnaturalearth/index.html">rnaturalearth</a>, <a href="../rstantools/index.html">rstantools</a>, <a href="../spelling/index.html">spelling</a>, <a href="../tidyr/index.html">tidyr</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-20</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Sam Abbott <a href="https://orcid.org/0000-0001-8057-8037"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    cre],
+  Joel Hellewell <a href="https://orcid.org/0000-0003-2683-0849"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Robin Thompson [aut],
+  Katelyn Gostic [aut],
+  Katharine Sherratt [aut],
+  Sophie Meakin [aut],
+  James Munday [aut],
+  Nikos Bosse [aut],
+  Joe Hickson [aut],
+  Paul Mee [ctb],
+  Peter Ellis [ctb],
+  Hamada S. Badr <a href="https://orcid.org/0000-0002-9808-2344"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Michael DeWitt <a href="https://orcid.org/0000-0001-8940-1967"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  EpiForecasts [aut],
+  Sebastian Funk [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Sam Abbott  &#x3c;&#x73;&#x61;&#x6d;&#x2e;&#x61;&#x62;&#x62;&#x6f;&#x74;&#x74;&#x20;&#x61;&#x74;&#x20;&#x6c;&#x73;&#x68;&#x74;&#x6d;&#x2e;&#x61;&#x63;&#x2e;&#x75;&#x6b;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-GB</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">EpiNow2 citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_EpiNow2.html">EpiNow2 results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package EpiNow2 downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="EpiNow2.pdf"> EpiNow2.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/EpiNow2_1.2.1.tar.gz"> EpiNow2_1.2.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/EpiNow2_1.2.1.zip">EpiNow2_1.2.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/EpiNow2_1.2.1.zip">EpiNow2_1.2.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/EpiNow2_1.2.1.zip">EpiNow2_1.2.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/EpiNow2_1.2.1.tgz">EpiNow2_1.2.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/EpiNow2_1.1.0.tgz">EpiNow2_1.1.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/EpiNow2"> EpiNow2 archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=EpiNow2"><samp>https://CRAN.R-project.org/package=EpiNow2</samp></a>
+to link to this page.</p>
+</body>
+</html>

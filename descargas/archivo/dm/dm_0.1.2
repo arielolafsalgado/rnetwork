@@ -1,0 +1,57 @@
+Package: dm
+Title: Relational Data Models
+Version: 0.1.2
+Date: 2020-05-03
+Authors@R: 
+    c(person(given = "Tobias",
+             family = "Schieferdecker",
+             role = "aut",
+             email = "tobias@cynkra.com"),
+      person(given = "Kirill",
+             family = "Müller",
+             role = c("aut", "cre"),
+             email = "krlmlr+r@mailbox.org",
+             comment = c(ORCID = "0000-0002-1416-3412")),
+      person(given = "Darko",
+             family = "Bergant",
+             role = "aut",
+             email = "darko.bergant@gmail.com"),
+      person(given = "Katharina",
+             family = "Brunner",
+             role = "ctb"),
+      person(given = "energie360° AG",
+             role = "fnd",
+             email = "info@energie360.ch"),
+      person(given = "cynkra GmbH",
+             role = c("fnd", "cph"),
+             email = "mail@cynkra.com"))
+Description: Provides tools for working with multiple related
+    tables, stored as data frames or in a relational database.  Multiple
+    tables (data and metadata) are stored in a compound object, which can
+    then be manipulated with a pipe-friendly syntax.
+License: MIT + file LICENSE
+Depends: R (>= 3.3)
+Imports: backports, cli (>= 2.0.0), DBI, dplyr, ellipsis, glue, igraph,
+        lifecycle, magrittr, memoise, methods, pillar, purrr, rlang (>=
+        0.4.0), tibble, tidyr (>= 1.0.0), tidyselect (>= 1.0.0), vctrs
+        (>= 0.2.0)
+Suggests: brio, crayon, DiagrammeR, DiagrammeRsvg, dbplyr, digest,
+        fansi, keyring, knitr, nycflights13, odbc, rmarkdown, RMariaDB,
+        RPostgres, rprojroot, RSQLite, testthat (>= 2.1.0), tidyverse,
+        withr
+VignetteBuilder: knitr
+RdMacros: lifecycle
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+NeedsCompilation: no
+Packaged: 2020-05-04 09:54:50 UTC; kirill
+Author: Tobias Schieferdecker [aut],
+  Kirill Müller [aut, cre] (<https://orcid.org/0000-0002-1416-3412>),
+  Darko Bergant [aut],
+  Katharina Brunner [ctb],
+  energie360° AG [fnd],
+  cynkra GmbH [fnd, cph]
+Maintainer: Kirill Müller <krlmlr+r@mailbox.org>
+Repository: CRAN
+Date/Publication: 2020-05-04 11:20:02 UTC

@@ -1,0 +1,39 @@
+Package: rcosmo
+URL: https://github.com/frycast/rcosmo
+BugReports: https://github.com/frycast/rcosmo/issues
+Title: Cosmic Microwave Background Data Analysis
+Version: 1.1.0
+Authors@R: c(person("Daniel", "Fryer", 
+                     role = c("aut", "cre"), 
+                     email = "d.fryer@latrobe.edu.au",
+                     comment = c(ORCID = "0000-0001-6032-0522")),
+             person("Andriy", "Olenko", 
+                     role = "aut", 
+                     email = "a.olenko@latrobe.edu.au",
+                     comment = c(ORCID = "0000-0002-0917-7000")),
+             person("Ming", "Li", 
+                     role = "aut",
+                     comment = c(ORCID = "0000-0002-1218-2804")),             
+             person("Yuguang", "Wang", 
+                     role = "aut"))
+Description: Handling and Analysing Spherical, 
+      HEALPix and Cosmic Microwave Background data on a HEALPix grid.
+Depends: R (>= 3.4.0)
+License: GPL-3 | file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: FITSio (>= 2.1-0), Rcpp (>= 0.12.11), mmap (>= 0.6-17), tibble
+        (>= 1.4.2), rgl (>= 0.99.16), cli (>= 1.0.0), entropy (>=
+        1.2.1), geoR (>= 1.7-5.2.1), nnls (>= 1.4)
+Suggests: knitr, rmarkdown, testthat, R.rsp, gsl
+LinkingTo: Rcpp
+RoxygenNote: 6.1.1
+NeedsCompilation: yes
+Packaged: 2019-05-29 21:06:43 UTC; Doony
+Author: Daniel Fryer [aut, cre] (<https://orcid.org/0000-0001-6032-0522>),
+  Andriy Olenko [aut] (<https://orcid.org/0000-0002-0917-7000>),
+  Ming Li [aut] (<https://orcid.org/0000-0002-1218-2804>),
+  Yuguang Wang [aut]
+Maintainer: Daniel Fryer <d.fryer@latrobe.edu.au>
+Repository: CRAN
+Date/Publication: 2019-06-02 17:30:04 UTC

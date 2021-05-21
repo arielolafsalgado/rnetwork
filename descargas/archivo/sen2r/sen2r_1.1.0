@@ -1,0 +1,42 @@
+Package: sen2r
+Type: Package
+Title: Find, Download and Process Sentinel-2 Data
+Version: 1.1.0
+Authors@R: c(person("Luigi", "Ranghetti",
+                    email = "luigi@ranghetti.info",
+                    role = c("aut", "cre"),
+                    comment = c(ORCID = "0000-0001-6207-5188")),
+             person("Lorenzo", "Busetto",
+                    email = "lbusett@gmail.com",
+                    role = c("aut"),
+                    comment = c(ORCID = "0000-0001-9634-6038")))
+Description: Functions to download Sentinel-2 optical images
+ and perform preliminary processing operations.
+ 'sen2r' provides the instruments required to easily perform
+ (and eventually automate) the steps necessary to build a complete
+ Sentinel-2 processing chain.
+ A Graphical User Interface to facilitate data processing is also provided.
+License: GPL-3
+Encoding: UTF-8
+URL: http://sen2r.ranghetti.info, https://github.com/ranghetti/sen2r
+BugReports: https://github.com/ranghetti/sen2r/issues
+Depends: R (>= 3.5.0)
+Imports: reticulate, methods, digest, magrittr, sf, stars, data.table,
+        raster, XML, jsonlite, geojsonio, leaflet, leaflet.extras,
+        mapedit, shiny, shinyFiles, shinydashboard, shinyjs,
+        shinyWidgets, foreach, parallel, doParallel, units, httr
+Suggests: spelling, geojsonlint, httptest, knitr, rmarkdown, testthat
+        (>= 2.1.0)
+SystemRequirements: GDAL (>= 2.1.2), PROJ (>= 4.9.1), GEOS (>= 3.4.2),
+        Cairo, Curl, NetCDF, jq, Protocol Buffers, V8, OpenSSL,
+        Libxml2.
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+Language: en-GB
+NeedsCompilation: no
+Packaged: 2019-10-07 15:58:00 UTC; lranghetti
+Author: Luigi Ranghetti [aut, cre] (<https://orcid.org/0000-0001-6207-5188>),
+  Lorenzo Busetto [aut] (<https://orcid.org/0000-0001-9634-6038>)
+Maintainer: Luigi Ranghetti <luigi@ranghetti.info>
+Repository: CRAN
+Date/Publication: 2019-10-21 18:00:02 UTC

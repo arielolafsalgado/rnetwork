@@ -1,0 +1,29 @@
+Package: tramME
+Title: Transformation Models with Mixed Effects
+Version: 0.0.1
+Authors@R: c(person("Balint", "Tamasi", email = "balint.tamasi@uzh.ch", role = c("aut", "cre")),
+             person("Torsten", "Hothorn",  role = "ctb",
+                    email = "Torsten.Hothorn@R-project.org", comment = c(ORCID = "0000-0001-8301-0471")))
+Description: Likelihood-based estimation of mixed-effects transformation models using the Template
+  Model Builder (TMB). The technical details of transformation models are given in Hothorn et al. (2018)
+  <doi:10.1111/sjos.12291>. The random effects are assumed to be normally distributed on the scale of the
+  transformation function, the marginal likelihood is evaluated using the Laplace approximation,
+  and the gradients are calculated with automatic differentiation (AD).
+Depends: R (>= 3.5.0), tram (>= 0.3.2), mlt (>= 1.1.0)
+Imports: alabama, lme4 (>= 1.1.19), Matrix, methods, nlme, TMB (>=
+        1.7.15), stats, variables (>= 1.0.2), basefun (>= 1.0.6)
+Suggests: multcomp, parallel, survival, knitr, coxme, ordinal,
+        ordinalCont, ggplot2
+LinkingTo: TMB, RcppEigen
+VignetteBuilder: knitr
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+NeedsCompilation: yes
+Packaged: 2020-03-20 10:48:30 UTC; balint
+Author: Balint Tamasi [aut, cre],
+  Torsten Hothorn [ctb] (<https://orcid.org/0000-0001-8301-0471>)
+Maintainer: Balint Tamasi <balint.tamasi@uzh.ch>
+Repository: CRAN
+Date/Publication: 2020-03-21 17:40:02 UTC

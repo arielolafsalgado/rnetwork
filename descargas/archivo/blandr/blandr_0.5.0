@@ -1,0 +1,41 @@
+Package: blandr
+Title: Bland-Altman Method Comparison
+Version: 0.5.0
+Description: Carries out Bland Altman analyses (also known as a Tukey
+    mean-difference plot) as described by JM Bland and DG Altman in
+    1986 <doi:10.1016/S0140-6736(86)90837-8>. This package was created in 
+    2015 as existing Bland-Altman analysis functions did not calculate 
+    confidence intervals. This package was created to rectify this, 
+    and create reproducible plots. It further provides the structures for
+    creating a Jamovi (<https://www.jamovi.org/>) module to allows use of 
+    the package functions via an easy to use GUI system.
+Depends: R (>= 3.3.0)
+Authors@R: person("Deepankar", "Datta", email = "deepankardatta@nhs.net",
+                  role = c("aut", "cre"))
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/deepankardatta/blandr/
+BugReports: https://github.com/deepankardatta/blandr/issues
+Imports: ggplot2, knitr, stringr, jmvcore (>= 0.5.5), R6, rmarkdown
+Suggests: testthat
+VignetteBuilder: knitr
+Collate: 'blandr.data.preparation.r' 'blandr.dataset.fibre.r'
+        'blandr.dataset.sbp.r' 'blandr.dataset.o2sats.r'
+        'blandr.dataset.pefr.r' 'blandr.dataset.load.r'
+        'blandr.plot.ggplot.r' 'blandr.plot.rplot.r'
+        'blandr.plot.limits.r' 'blandr.statistics.r' 'blandr.draw.r'
+        'blandr.output.text.r' 'blandr.display.and.draw.r'
+        'blandr.display.and.plot.r' 'blandr.method.comparison.r'
+        'blandr.output.report.r' 'blandr.plot.normality.r'
+        'blandr.plot.qq.r' 'blandr.plot.r' 'jamovibaanalysis.b.R'
+        'jamovibaanalysis.h.R' 'jamovibaplothistogram.b.R'
+        'jamovibaplothistogram.h.R' 'jamovibaplotqq.b.R'
+        'jamovibaplotqq.h.R' 'jamovibastats.b.R' 'jamovibastats.h.R'
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-05-07 18:00:05 UTC; deepankardatta
+Author: Deepankar Datta [aut, cre]
+Maintainer: Deepankar Datta <deepankardatta@nhs.net>
+Repository: CRAN
+Date/Publication: 2018-05-07 20:32:50 UTC

@@ -1,0 +1,32 @@
+Package: FSelectorRcpp
+Type: Package
+Title: 'Rcpp' Implementation of 'FSelector' Entropy-Based Feature
+        Selection Algorithms with a Sparse Matrix Support
+Version: 0.1.0
+Date: 2017-03-03
+Authors@R: c(
+    person("Zygmunt", "Zawadzki", role = c("aut", "cre"), email = "zygmunt@zstat.pl"),
+    person("Marcin", "Kosinski", role = c("aut"), email = "m.p.kosinski@gmail.com"),
+    person("Krzysztof", "Slomczynski", role = c("ctb"), email = "krzysztofslomczynski@gmail.com")
+    )
+Description: 'Rcpp' (free of 'Java'/'Weka') implementation of 'FSelector' entropy-based feature selection algorithms with a sparse matrix support. It is also equipped with a parallel backend.
+Depends: R (>= 3.3.2)
+License: GPL-2
+LazyData: TRUE
+SystemRequirements: C++11
+Imports: Rcpp (>= 0.12.0), foreach, iterators
+LinkingTo: Rcpp, BH, RcppArmadillo, testthat
+Suggests: testthat, Matrix, RcppArmadillo, dplyr, RWeka, entropy,
+        FSelector, randomForest, doSNOW, doParallel, rpart, MASS, covr,
+        parallel, htmltools, magrittr, knitr, RTCGA.rnaseq, ggplot2,
+        microbenchmark, pbapply, tibble, rmarkdown
+RoxygenNote: 6.0.1.9000
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2017-03-06 07:55:17 UTC; zygmunt
+Author: Zygmunt Zawadzki [aut, cre],
+  Marcin Kosinski [aut],
+  Krzysztof Slomczynski [ctb]
+Maintainer: Zygmunt Zawadzki <zygmunt@zstat.pl>
+Repository: CRAN
+Date/Publication: 2017-03-06 11:28:51

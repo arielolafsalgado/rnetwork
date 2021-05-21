@@ -1,0 +1,47 @@
+Package: dataMaid
+Type: Package
+Title: A Suite of Checks for Identification of Potential Errors in a
+        Data Frame as Part of the Data Screening Process
+Version: 1.1.2
+Date: 2018-05-03
+Authors@R: c(person(given="Anne Helby", family="Petersen", email="ahpe@sund.ku.dk", role="aut"),
+             person(given="Claus Thorn", family="Ekstrøm", email="ekstrom@sund.ku.dk", role=c("aut", "cre")))
+Description: Data screening is an important first step of any statistical
+    analysis. dataMaid autogenerates a customizable data report with a thorough
+    summary of the checks and the results that a human can use to identify possible
+    errors. It provides an extendable suite of test for common potential
+    errors in a dataset. 
+URL: https://github.com/ekstroem/dataMaid
+BugReports: https://github.com/ekstroem/dataMaid/issues
+Depends: ggplot2
+Imports: gridExtra, haven, htmltools, magrittr, methods, pander,
+        robustbase, whoami
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+License: GPL-2
+RoxygenNote: 6.0.1.9000
+Collate: 'aggregateForBarplot.R' 'aggregateForHistogram.R'
+        'allCheckFunctions.R' 'allClasses.R' 'allSummaryFunctions.R'
+        'allVisualFunctions.R' 'allXFunctions.R' 'makeXFunction.R'
+        'visualFunction.R' 'basicVisual.R' 'summaryFunction.R'
+        'centralValue.R' 'check.R' 'checkResult.R' 'messageGenerator.R'
+        'checkFunction.R' 'identifyMissing.R' 'minMax.R' 'classes.R'
+        'clean.R' 'countMissing.R' 'dataMaid-package.R' 'description.R'
+        'identifyCaseIssues.R' 'identifyLoners.R' 'identifyNums.R'
+        'identifyOutliers.R' 'identifyOutliersTBStyle.R'
+        'identifyWhitespace.R' 'isCPR.R' 'isSingular.R' 'isEmpty.R'
+        'isKey.R' 'isSupported.R' 'makeCodebook.R' 'makeDataReport.R'
+        'misc.R' 'quartiles.R' 'render.R' 'setChecks.R'
+        'setSummaries.R' 'setVisuals.R' 'smartNum.R' 'standardVisual.R'
+        'summarize.R' 'summaryResult.R' 'uniqueValues.R'
+        'unpackLabelled.R' 'variableType.R' 'visualize.R'
+NeedsCompilation: no
+Packaged: 2018-05-03 17:53:37 UTC; cld189
+Author: Anne Helby Petersen [aut],
+  Claus Thorn Ekstrøm [aut, cre]
+Maintainer: Claus Thorn Ekstrøm <ekstrom@sund.ku.dk>
+Repository: CRAN
+Date/Publication: 2018-05-03 18:36:10 UTC

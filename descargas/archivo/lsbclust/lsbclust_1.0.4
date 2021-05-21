@@ -1,0 +1,35 @@
+Package: lsbclust
+Type: Package
+Title: Least-Squares Bilinear Clustering for Three-Way Data
+Version: 1.0.4
+Date: 2016-01-05
+Author: Pieter Schoonees [aut, cre], Patrick Groenen [ctb]
+Maintainer: Pieter Schoonees <schoonees@gmail.com>
+Authors@R: c(person(given = "Pieter", family = "Schoonees", role = c("aut",
+    "cre"), email = "schoonees@gmail.com"), person(given = "Patrick",
+    family = "Groenen", role = "ctb", email = "groenen@ese.eur.nl"))
+Description: Functions for performing least-squares bilinear clustering of
+    three-way data. The method uses the bilinear decomposition (or biadditive
+    model) to model two-way matrix slices while clustering over the third way.
+    Up to four different types of clusters are included, one for each term of the
+    bilinear decomposition. In this way, matrices are clustered simultaneously on
+    (a subset of) their overall means, row margins, column margins and row-column
+    interactions. The orthogonality of the bilinear model results in separability of
+    the joint clustering problem into four separate ones. Three of these subproblems
+    are specific k-means problems, while a special algorithm is implemented for the
+    interactions. Plotting methods are provided, including biplots for the low-rank
+    approximations of the interactions.
+License: GPL (>= 2)
+Depends: R (>= 3.2.2), stats, parallel, ggplot2
+Imports: plyr, clue, grid, gridExtra, reshape2, Rcpp, graphics, methods
+LinkingTo: Rcpp
+LazyData: yes
+LazyLoad: yes
+ByteCompile: yes
+BuildResaveData: best
+Suggests: testthat
+NeedsCompilation: yes
+RoxygenNote: 5.0.1
+Packaged: 2016-01-05 10:52:25 UTC; pieter
+Repository: CRAN
+Date/Publication: 2016-01-05 14:18:01

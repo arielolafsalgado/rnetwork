@@ -1,0 +1,16 @@
+Package: ADPclust
+Type: Package
+Title: Fast Clustering Using Adaptive Density Peak Detection
+Description: An implementation of ADPclust clustering procedures (Fast Clustering Using Adaptive Density Peak Detection). The work is built and improved upon Rodriguez and Laio[2014]'s idea. ADPclust clusters data by finding density peaks in a density-distance plot generated from local multivariate Gaussian density estimation. It includes an automatic centroids selection and parameter optimization algorithm, which finds the number of clusters and cluster centroids by comparing average silhouettes on a grid of testing clustering results; It also includes an user interactive algorithm that allows the user to manually selects cluster centroids from a two dimensional "density-distance plot".  
+Version: 0.6.3
+Author: Yifan "Ethan" Xu <ethan.yifanxu@gmail.edu>, Xiao-Feng Wang <wangx6@ccf.org>
+Maintainer: Yifan "Ethan" Xu <ethan.yifanxu@gmail.com>
+Depends: R (>= 2.14.0),
+Imports: dplyr, cluster, fields, knitr
+VignetteBuilder: knitr
+License: GPL (>= 2)
+LazyData: true
+Packaged: 2015-04-20 03:40:54 UTC; yifanxu
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2015-04-20 14:17:36

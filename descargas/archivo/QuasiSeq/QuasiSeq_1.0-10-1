@@ -1,0 +1,33 @@
+Package: QuasiSeq
+Version: 1.0-10-1
+Date: 2017-07-10
+Title: Analyzing RNA Sequencing Count Tables Using Quasi-Likelihood
+Authors@R: c(
+  person("Steve", "Lund", role=c("aut"), email="lundsp@gmail.com"),
+  person("Long", "Qu", role=c("aut", "cre","ctb"), email="rtistician@gmail.com"), 
+  person("Klirk", "Bhasavanich", role="aut"), 
+  person("Ian", "Marschner", role="aut", comment="The author of glm2::glm.fit2, which was modified slightly leading to glm.fit3 in this package."), 
+  person("", "R Core Team", role="aut", comment="The author of stats::glm.fit, which was modified slightly leading to glm.fit3 in this package.")
+  )
+Depends: R (>= 3.1.2)
+Imports: edgeR, mgcv, pracma, uniqueAtomMat (>= 0.1-1), utils,
+        grDevices, graphics
+Suggests: BB, nleqslv
+Enhances: stats
+Description: Identify differentially expressed genes in RNA-seq count data using quasi-Poisson or quasi-negative binomial models with 'QL', 'QLShrink' and 'QLSpline' methods described by Lund, Nettleton, McCarthy, and Smyth (2012) <DOI:10.1515/1544-6115.1826>. Report bias-reduced estimates of log fold changes.
+License: GPL (>= 2)
+NeedsCompilation: yes
+LazyData: yes
+Biarch: yes
+RoxygenNote: 6.0.1
+Packaged: 2017-07-09 20:05:07 UTC; lenovo
+Author: Steve Lund [aut],
+  Long Qu [aut, cre, ctb],
+  Klirk Bhasavanich [aut],
+  Ian Marschner [aut] (The author of glm2::glm.fit2, which was modified
+    slightly leading to glm.fit3 in this package.),
+  R Core Team [aut] (The author of stats::glm.fit, which was modified
+    slightly leading to glm.fit3 in this package.)
+Maintainer: Long Qu <rtistician@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-07-09 20:55:02 UTC

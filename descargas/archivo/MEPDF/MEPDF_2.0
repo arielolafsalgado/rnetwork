@@ -1,0 +1,23 @@
+Package: MEPDF
+Type: Package
+Title: Creation of Empirical Density Functions Based on Multivariate
+        Data
+Version: 2.0
+Author: Martin Wiegand, Saralees Nadarajah
+Date: 2018-07-12
+Maintainer: Martin Wiegand <Martin.Wiegand@manchester.ac.uk>
+Depends: R (>= 3.0.1)
+Description: Based on the input data an n-dimensional cube with sub cells of user specified side length is created.
+    The number of sample points which fall in each sub cube is counted, and with the cell volume and overall sample
+    size an empirical probability can be computed. A number of cubes of higher resolution can be superimposed. The
+    basic method stems from J.L. Bentley in "Multidimensional Divide and Conquer".
+    J. L. Bentley (1980) <doi:10.1145/358841.358850>.
+    Furthermore a simple kernel density estimation method is made available, as well as an expansion of Bentleys
+    method, which offers a kernel approach for the grid method.
+License: GPL-2
+LazyData: TRUE
+NeedsCompilation: no
+Packaged: 2018-07-31 12:43:28 UTC; martin
+Imports: plyr,mvtnorm,pracma,stats,gtools
+Repository: CRAN
+Date/Publication: 2018-07-31 13:20:03 UTC

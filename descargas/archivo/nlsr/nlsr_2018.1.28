@@ -1,0 +1,30 @@
+Package: nlsr
+Type: Package
+Title: Functions for Nonlinear Least Squares Solutions
+Version: 2018.1.28
+Date: 2018-01-28
+Authors@R: c( person(given = c("John", "C"), family = "Nash", role =
+        c("aut", "cre"), email = "nashjc@uottawa.ca"), 
+	person(given = "Duncan", family =
+        "Murdoch", role = "aut", email =
+        "murdoch.duncan@gmail.com") )
+Maintainer: John C Nash <nashjc@uottawa.ca>
+Description: Provides tools for working with nonlinear least squares problems.
+      It is intended to eventually supersede the 'nls()' function in the R
+      distribution. For example, 'nls()' specifically does NOT deal with small 
+      or zero residual problems as its Gauss-Newton method frequently stops with
+      'singular gradient' messages. 'nlsr' is based on the now-deprecated package
+      'nlmrt', and has refactored functions and R-language symbolic derivative
+      features.
+License: GPL-2
+Depends: R (>= 3.0)
+Imports: digest
+Suggests: minpack.lm, optimr, Rvmmin, Rcgmin, numDeriv, knitr,
+        rmarkdown, Ryacas, Deriv
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-01-30 19:12:28 UTC; john
+Author: John C Nash [aut, cre],
+  Duncan Murdoch [aut]
+Repository: CRAN
+Date/Publication: 2018-01-31 23:07:13 UTC

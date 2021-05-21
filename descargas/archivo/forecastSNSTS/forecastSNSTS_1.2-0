@@ -1,0 +1,32 @@
+Package: forecastSNSTS
+Title: Forecasting for Stationary and Non-Stationary Time Series
+Version: 1.2-0
+Authors@R: c(person("Tobias", "Kley", email = "t.kley@lse.ac.uk", role = c("aut", "cre")),
+             person("Philip", "Preuss", email = "philip.preuss@rub.de", role = c("aut")),
+             person("Piotr", "Fryzlewicz", email = "p.fryzlewicz@lse.ac.uk", role = c("aut")))
+Description: Methods to compute linear h-step ahead prediction coefficients based
+    on localised and iterated Yule-Walker estimates and empirical mean squared
+    and absolute prediction errors for the resulting predictors. Also, functions
+    to compute autocovariances for AR(p) processes, to simulate tvARMA(p,q) time
+    series, and to verify an assumption from Kley et al. (2017),
+    Preprint <http://personal.lse.ac.uk/kley/forecastSNSTS.pdf>.
+Depends: R (>= 3.2.3)
+License: GPL (>= 2)
+URL: http://github.com/tobiaskley/forecastSNSTS
+BugReports: http://github.com/tobiaskley/forecastSNSTS/issues
+Encoding: UTF-8
+LazyData: true
+LinkingTo: Rcpp
+Imports: Rcpp
+Collate: 'RcppExports.R' 'acfARp.R' 'f.R' 'forecastSNSTS-package.R'
+        'measure-of-accuracy.R' 'models.R'
+RoxygenNote: 6.0.1
+Suggests: testthat
+NeedsCompilation: yes
+Packaged: 2017-06-18 16:37:14 UTC; kley
+Author: Tobias Kley [aut, cre],
+  Philip Preuss [aut],
+  Piotr Fryzlewicz [aut]
+Maintainer: Tobias Kley <t.kley@lse.ac.uk>
+Repository: CRAN
+Date/Publication: 2017-06-18 17:36:22 UTC

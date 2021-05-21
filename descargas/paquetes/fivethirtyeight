@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package fivethirtyeight</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Data and Code Behind the Stories and Interactives at 'FiveThirtyEight' [R package fivethirtyeight version 0.6.1]" />
+<meta name="citation_author1" content="Albert Y. Kim" />
+<meta name="citation_author2" content="Chester Ismay" />
+<meta name="citation_author3" content="Jennifer Chunn" />
+<meta name="citation_publication_date" content="2020-08-05" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=fivethirtyeight" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=fivethirtyeight" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="fivethirtyeight: Data and Code Behind the Stories and Interactives at 'FiveThirtyEight'" />
+<meta name="og:description" content="Datasets and code published by the data journalism website 'FiveThirtyEight' available at &amp;lt;&lt;a href=&quot;https://github.com/fivethirtyeight/data&quot;&gt;https://github.com/fivethirtyeight/data&lt;/a&gt;&amp;gt;. Note that while we received guidance from editors at 'FiveThirtyEight', this package is not officially published by 'FiveThirtyEight'." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=fivethirtyeight" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>fivethirtyeight: Data and Code Behind the Stories and Interactives at
+'FiveThirtyEight'</h2>
+<p>Datasets and code published by the data journalism website 
+    'FiveThirtyEight' available at &lt;<a href="https://github.com/fivethirtyeight/data">https://github.com/fivethirtyeight/data</a>&gt;. 
+    Note that while we received guidance from editors at 'FiveThirtyEight', this 
+    package is not officially published by 'FiveThirtyEight'.</p>
+<table summary="Package fivethirtyeight summary">
+<tr>
+<td>Version:</td>
+<td>0.6.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.2.4)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../ggplot2/index.html">ggplot2</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../tidyr/index.html">tidyr</a> (&ge; 1.0.0), <a href="../readr/index.html">readr</a>, <a href="../tibble/index.html">tibble</a>, <a href="../stringr/index.html">stringr</a>, <a href="../broom/index.html">broom</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../patchwork/index.html">patchwork</a>, fivethirtyeightdata</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-08-05</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Albert Y. Kim <a href="https://orcid.org/0000-0001-7824-306X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Chester Ismay <a href="https://orcid.org/0000-0003-2820-2547"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Jennifer Chunn [aut],
+  Meredith Manley <a href="https://orcid.org/0000-0001-7707-0654"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Maggie Shea [ctb],
+  Starry Yujia Zhou [ctb],
+  Andrew Flowers [ctb],
+  Jonathan Bouchet [ctb],
+  G. Elliott Morris [ctb],
+  Adam Spannbauer [ctb],
+  Pradeep Adhokshaja [ctb],
+  Olivia Barrows [ctb],
+  Jojo Miller [ctb],
+  Jayla Nakayama [ctb],
+  Ben Baumer <a href="https://orcid.org/0000-0002-3279-0516"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb],
+  Rana Gahwagy <a href="https://orcid.org/0000-0002-6331-2840"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Natalia Iannucci <a href="https://orcid.org/0000-0001-5663-1731"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Marium Tapal <a href="https://orcid.org/0000-0001-5093-6462"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Irene Ryan [ctb],
+  Alina Barylsky [ctb],
+  Danica Miguel [ctb],
+  Sunni Raleigh [ctb],
+  Anna Ballou [ctb],
+  Jane Bang [ctb],
+  Jordan Moody [ctb],
+  Kara Van Allen [ctb],
+  Jessica Keast [ctb],
+  Lizette Carpenter [ctb],
+  Fatima Keita [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Albert Y. Kim  &#x3c;&#x61;&#x6c;&#x62;&#x65;&#x72;&#x74;&#x2e;&#x79;&#x73;&#x2e;&#x6b;&#x69;&#x6d;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/rudeboybert/fivethirtyeight/issues">https://github.com/rudeboybert/fivethirtyeight/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/rudeboybert/fivethirtyeight">https://github.com/rudeboybert/fivethirtyeight</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">fivethirtyeight citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_fivethirtyeight.html">fivethirtyeight results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package fivethirtyeight downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="fivethirtyeight.pdf"> fivethirtyeight.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/fivethirtyeight.html">fivethirtyeight Package</a><br/>
+<a href="vignettes/tame.html">The 'fivethirtyeight' R Package: "Tame Data" Principles for Introductory Statistics and Data Science Courses</a><br/>
+<a href="vignettes/user_contributed_vignettes.html">User-Contributed Vignettes</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/fivethirtyeight_0.6.1.tar.gz"> fivethirtyeight_0.6.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/fivethirtyeight_0.6.1.zip">fivethirtyeight_0.6.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/fivethirtyeight_0.6.1.zip">fivethirtyeight_0.6.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/fivethirtyeight_0.6.1.zip">fivethirtyeight_0.6.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/fivethirtyeight_0.6.1.tgz">fivethirtyeight_0.6.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/fivethirtyeight_0.6.1.tgz">fivethirtyeight_0.6.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/fivethirtyeight"> fivethirtyeight archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package fivethirtyeight reverse dependencies">
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../supernova/index.html">supernova</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=fivethirtyeight"><samp>https://CRAN.R-project.org/package=fivethirtyeight</samp></a>
+to link to this page.</p>
+</body>
+</html>

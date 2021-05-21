@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package sctransform</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Variance Stabilizing Transformations for Single Cell UMI Data [R package sctransform version 0.3.1]" />
+<meta name="citation_author" content="Christoph Hafemeister" />
+<meta name="citation_publication_date" content="2020-10-08" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=sctransform" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=sctransform" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="sctransform: Variance Stabilizing Transformations for Single Cell UMI Data" />
+<meta name="og:description" content="A normalization method for single-cell UMI count data using a variance stabilizing transformation. The transformation is based on a negative binomial regression model with regularized parameters. As part of the same regression framework, this package also provides functions for batch correction, and data correction. See Hafemeister and Satija 2019 &amp;lt;&lt;a href=&quot;https://doi.org/10.1186%2Fs13059-019-1874-1&quot;&gt;doi:10.1186/s13059-019-1874-1&lt;/a&gt;&amp;gt; for more details." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=sctransform" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>sctransform: Variance Stabilizing Transformations for Single Cell UMI Data</h2>
+<p>A normalization method for single-cell UMI count data using a 
+  variance stabilizing transformation. The transformation is based on a 
+  negative binomial regression model with regularized parameters. As part of the
+  same regression framework, this package also provides functions for
+  batch correction, and data correction. See Hafemeister and Satija 2019 
+  &lt;<a href="https://doi.org/10.1186%2Fs13059-019-1874-1">doi:10.1186/s13059-019-1874-1</a>&gt; for more details.</p>
+<table summary="Package sctransform summary">
+<tr>
+<td>Version:</td>
+<td>0.3.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.1.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../MASS/index.html">MASS</a>, <a href="../Matrix/index.html">Matrix</a>, methods, <a href="../future.apply/index.html">future.apply</a>, <a href="../future/index.html">future</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../reshape2/index.html">reshape2</a>, <a href="../gridExtra/index.html">gridExtra</a>, <a href="../matrixStats/index.html">matrixStats</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../RcppArmadillo/index.html">RcppArmadillo</a>, <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.11.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../irlba/index.html">irlba</a>, <a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a></td>
+</tr>
+<tr>
+<td>Enhances:</td>
+<td><a href="http://www.bioconductor.org/packages/release/bioc/html/glmGamPoi.html"><span class="BioC">glmGamPoi</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-08</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Christoph Hafemeister
+    <a href="https://orcid.org/0000-0001-6365-8254"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Christoph Hafemeister  &#x3c;&#x63;&#x68;&#x72;&#x69;&#x73;&#x74;&#x6f;&#x70;&#x68;&#x2e;&#x68;&#x61;&#x66;&#x65;&#x6d;&#x65;&#x69;&#x73;&#x74;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x6e;&#x79;&#x75;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ChristophH/sctransform/issues">https://github.com/ChristophH/sctransform/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a> | file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/ChristophH/sctransform">https://github.com/ChristophH/sctransform</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>C++11</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">sctransform citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_sctransform.html">sctransform results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package sctransform downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="sctransform.pdf"> sctransform.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/sctransform_0.3.1.tar.gz"> sctransform_0.3.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/sctransform_0.3.1.zip">sctransform_0.3.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/sctransform_0.3.1.zip">sctransform_0.3.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/sctransform_0.3.1.zip">sctransform_0.3.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/sctransform_0.3.1.tgz">sctransform_0.3.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/sctransform_0.3.1.tgz">sctransform_0.3.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/sctransform"> sctransform archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package sctransform reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="http://www.bioconductor.org/packages/release/bioc/html/muscat.html"><span class="BioC">muscat</span></a>, <a href="../Seurat/index.html">Seurat</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=sctransform"><samp>https://CRAN.R-project.org/package=sctransform</samp></a>
+to link to this page.</p>
+</body>
+</html>

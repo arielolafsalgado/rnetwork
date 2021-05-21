@@ -1,0 +1,23 @@
+Package: cherry
+Version: 0.6-11
+Date: 2015-06-19
+Title: Multiple Testing Methods for Exploratory Research
+Author: Jelle Goeman, Aldo Solari, Rosa Meijer
+Maintainer: Jelle Goeman <jelle.goeman@radboudumc.nl>
+Depends: methods, bitops, lpSolve, Matrix, slam
+Imports:
+Suggests: MASS, multtest, gurobi
+Description: Provides an alternative approach to multiple testing
+        by calculating a simultaneous upper confidence bounds for the
+        number of true null hypotheses among any subset of the hypotheses of interest. 
+	Some of the functions in this package are optionally enhanced by the 'gurobi'
+	software and its accompanying R package. For their installation, please follow the 
+	instructions at www.gurobi.com and http://www.gurobi.com/documentation, respectively.
+License: GPL (>= 2)
+Collate: closed.R shortcuts.R Meinshausen.R regionmethod.R DAGmethod.R
+        DAGstructure.R structuredHolm.R
+LazyLoad: yes
+Repository: CRAN
+NeedsCompilation: no
+Packaged: 2015-06-22 10:58:12 UTC; Jelle
+Date/Publication: 2015-06-22 19:53:18

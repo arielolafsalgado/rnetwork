@@ -1,0 +1,33 @@
+Package: httptest
+Type: Package
+Title: A Test Environment for HTTP Requests
+Description: Testing and documenting code that communicates with remote servers
+    can be painful. Dealing with authentication, server state,
+    and other complications can make testing seem too costly to
+    bother with. But it doesn't need to be that hard. This package enables one
+    to test all of the logic on the R sides of the API in your package without
+    requiring access to the remote service. Importantly, it provides three
+    contexts that mock the network connection in different ways, as well as
+    testing functions to assert that HTTP requests were---or were
+    not---made. It also allows one to safely record real API responses to use as
+    test fixture. The ability to save responses and load them offline also
+    enables one to write vignettes and other dynamic documents that can be
+    distributed without access to a live server.
+Version: 3.0.0
+Authors@R: person("Neal", "Richardson", role=c("aut", "cre"), email="neal.p.richardson@gmail.com")
+URL: http://enpiar.com/r/httptest,
+        https://github.com/nealrichardson/httptest
+BugReports: https://github.com/nealrichardson/httptest/issues
+License: MIT + file LICENSE
+Depends: R (>= 3.0.0), testthat
+Imports: digest, httr, jsonlite, stats
+Suggests: covr, knitr, rmarkdown, spelling, xml2
+Language: en-US
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-01-16 18:22:26 UTC; neal.richardson
+Author: Neal Richardson [aut, cre]
+Maintainer: Neal Richardson <neal.p.richardson@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-01-16 18:35:25 UTC

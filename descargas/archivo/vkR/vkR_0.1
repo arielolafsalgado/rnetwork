@@ -1,0 +1,33 @@
+Package: vkR
+Type: Package
+Title: Access to VK API via R
+Description: Provides an interface to the VK API <https://vk.com/dev/methods>.
+      VK <https://vk.com/> is the largest European online social networking
+      service, based in Russia.
+Version: 0.1
+Date: 2016-12-01
+Authors@R: c(
+    person("Dmitriy", "Sorokin", role = c("aut", "cre"),
+           email = "dementiy@yandex.ru"),
+    person("Anton", "Antonov", role = "ctb",
+           email = "tonytonov@gmail.com"))
+Maintainer: Dmitriy Sorokin <dementiy@yandex.ru>
+URL: https://github.com/Dementiy/vkR
+BugReports: https://github.com/Dementiy/vkR/issues
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 3.0.0)
+Imports: graphics, httr, jsonlite, stats, utils, XML
+Suggests: stringr, tm, plyr, dplyr, reshape2, jpeg, igraph, rgexf,
+        httpuv
+RoxygenNote: 5.0.1
+Collate: 'auth.R' 'database.R' 'friends.R' 'groups.R'
+        'igraph_gefx_exporter.R' 'likes.R' 'messages.R' 'network.R'
+        'queries.R' 'status.R' 'search.R' 'users.R' 'utils.R' 'wall.R'
+        'vkR.R'
+NeedsCompilation: no
+Packaged: 2016-12-01 23:45:48 UTC; dementiy
+Author: Dmitriy Sorokin [aut, cre],
+  Anton Antonov [ctb]
+Repository: CRAN
+Date/Publication: 2016-12-02 10:46:29

@@ -1,0 +1,34 @@
+Package: cvms
+Title: Cross-Validation for Model Selection
+Version: 0.2.0
+Authors@R: c(
+    person("Ludvig Renbo", "Olsen", email = "r-pkgs@ludvigolsen.dk", role = c("aut", "cre")),
+    person("Benjamin Hugh", "Zachariae", role = "aut")
+    )
+Description: Cross-validate one or multiple regression models and get relevant evaluation 
+  metrics in a tidy format. Validate the best model on a test set and compare it to a baseline evaluation.
+  Alternatively, evaluate predictions from an external model. 
+  Currently supports linear regression, logistic regression and 
+  (some functions only) multiclass classification.
+  Described in chp. 5 of Jeyaraman, B. P., Olsen, L. R., & Wambugu M. (2019, ISBN: 9781838550134).
+Depends: R (>= 3.5)
+License: MIT + file LICENSE
+URL: https://github.com/ludvigolsen/cvms
+BugReports: https://github.com/ludvigolsen/cvms/issues
+Encoding: UTF-8
+LazyData: true
+Imports: data.table (>= 1.12), dplyr, plyr, tidyr (>= 0.7.0), ggplot2,
+        purrr, tibble (>= 2.1.1), caret (>= 6.0-84), pROC (>= 1.14.0),
+        stats, lme4 (>= 1.1-21), MuMIn (>= 1.43.6), AICcmodavg (>=
+        2.2-1), broom, stringr, mltools (>= 0.3.5), rlang, utils
+RoxygenNote: 6.1.1
+Suggests: knitr, groupdata2 (>= 1.1.1), e1071, rmarkdown, testthat,
+        AUC, furrr, ModelMetrics, covr, nnet
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-09-05 19:21:31 UTC; ludvigolsen
+Author: Ludvig Renbo Olsen [aut, cre],
+  Benjamin Hugh Zachariae [aut]
+Maintainer: Ludvig Renbo Olsen <r-pkgs@ludvigolsen.dk>
+Repository: CRAN
+Date/Publication: 2019-09-07 16:20:02 UTC

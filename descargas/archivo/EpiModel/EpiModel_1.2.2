@@ -1,0 +1,43 @@
+Package: EpiModel
+Version: 1.2.2
+Date: 2015-11-02
+Title: Mathematical Modeling of Infectious Disease
+Description: Tools for simulating mathematical models of infectious disease.
+    Epidemic model classes include deterministic compartmental models,
+    stochastic individual contact models, and stochastic network models.
+    Disease types include SI, SIR, and SIS epidemics with and without
+    demography, with tools available for expansion to model complex epidemic
+    processes.
+Maintainer: Samuel Jenness <sjenness@uw.edu>
+Authors@R: c(person("Samuel", "Jenness",
+    role=c("cre","aut"), email="sjenness@uw.edu"),
+    person("Steven M.","Goodreau",
+    role=c("aut"), email="goodreau@uw.edu"),
+    person("Martina", "Morris",
+    role=c("aut"), email="morrism@uw.edu"),
+    person("Emily", "Beylerian",
+    role=c("ctb"), email="ebey@uw.edu"),
+    person("Li", "Wang",
+    role=c("ctb"), email="lxwang@uw.edu"),
+    person("Skye", "Bender-deMoll",
+    role=c("ctb"), email="skyebend@uw.edu"))
+License: GPL-2
+URL: http://epimodel.org/
+BugReports: https://github.com/statnet/EpiModel/issues
+Depends: R (>= 3.1), deSolve (>= 1.11), networkDynamic (>= 0.7.1),
+        tergm (>= 3.2.4)
+Imports: graphics, grDevices, stats, utils, doParallel, ergm (>=
+        3.2.4), foreach, network (>= 1.12.0), RColorBrewer, ape
+Suggests: knitr, ndtv (>= 0.7), shiny, testthat
+VignetteBuilder: knitr
+RoxygenNote: 5.0.0.9000
+NeedsCompilation: no
+Packaged: 2015-11-03 02:18:18 UTC; sjenness
+Author: Samuel Jenness [cre, aut],
+  Steven M. Goodreau [aut],
+  Martina Morris [aut],
+  Emily Beylerian [ctb],
+  Li Wang [ctb],
+  Skye Bender-deMoll [ctb]
+Repository: CRAN
+Date/Publication: 2015-11-03 11:59:50

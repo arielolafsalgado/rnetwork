@@ -1,0 +1,39 @@
+Package: jubilee
+Type: Package
+Title: Forecasting Long-Term Growth of the U.S. Stock Market and
+        Business Cycles
+Version: 0.3.1
+Date: 2019-07-31
+Authors@R: person(given = c("Stephen", "H-T."), family = "Lihn",
+                  email = "stevelihn@gmail.com", role = c("aut", "cre"))
+Author: Stephen H-T. Lihn [aut, cre]
+Maintainer: Stephen H-T. Lihn <stevelihn@gmail.com>
+Description: A long-term forecast model called "Jubilee-Tectonic model" is implemented to forecast future returns of the U.S. stock market, Treasury yield, and gold price. The five-factor model forecasts the 10-year and 20-year future equity returns with high R-squared above 80 percent. It is based on linear growth and mean reversion characteristics in the U.S. stock market. This model also enhances the CAPE model by introducing the hypothesis that there are fault lines in the historical CAPE, which can be calibrated and corrected through statistical learning. In addition, it contains a module for business cycles, optimal interest rate, and recession forecasts.
+URL: https://ssrn.com/abstract=3156574
+        https://ssrn.com/abstract=3422278
+Depends: R (>= 3.3.0)
+Imports: stats, yaml, utils, xts, zoo, splines, parallel, graphics,
+        methods, readxl, data.table
+Suggests: knitr, tinytex, R.rsp, testthat, roxygen2, scales, shape
+VignetteBuilder: R.rsp
+License: Artistic-2.0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Collate: 'daily2fraction-method.R' 'fraction2daily-method.R'
+        'jubilee-adj-fault-line-method.R' 'jubilee-calc-cape-method.R'
+        'jubilee-package.R' 'jubilee-class.R' 'jubilee-constructor.R'
+        'jubilee-eqty-ols-method.R' 'jubilee-forward-rtn-method.R'
+        'jubilee-fred-data-method.R' 'jubilee-locate-file.R'
+        'jubilee-macro-cost-method.R' 'jubilee-macro-fit-method.R'
+        'jubilee-macro-predict-method.R' 'jubilee-mcsapply-method.R'
+        'jubilee-ols-method.R' 'jubilee-optimal-tb3ms-method.R'
+        'jubilee-predict-method.R' 'jubilee-read-fred-file.R'
+        'jubilee-repo-class.R' 'jubilee-repo-config.R'
+        'jubilee-repo-constructor.R' 'jubilee-std-fault-line-method.R'
+        'jubilee-yield-inversion-method.R' 'tri-wave-class.R'
+        'tri-wave-constructor.R' 'tri-wave-model.R'
+NeedsCompilation: no
+Packaged: 2019-07-19 20:51:27 UTC; slihn
+Repository: CRAN
+Date/Publication: 2019-07-19 21:30:02 UTC

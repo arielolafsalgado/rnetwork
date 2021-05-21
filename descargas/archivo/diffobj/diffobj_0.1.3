@@ -1,0 +1,35 @@
+Package: diffobj
+Type: Package
+Title: Diffs for R Objects
+Description: Generate a colorized diff of two R objects for an intuitive
+    visualization of their differences.
+Version: 0.1.3
+Date: 2016-08-28
+Authors@R: c(
+    person(
+    "Brodie", "Gaslam", email="brodie.gaslam@yahoo.com",
+    role=c("aut", "cre")),
+    person(
+    "Michael B.", "Allen", email="ioplex@gmail.com",
+    role=c("ctb", "cph"),
+    comment="C implementation of Myers Diff Algorithm"))
+License: GPL-3
+LazyData: true
+URL: https://github.com/brodieG/diffobj
+BugReports: https://github.com/brodieG/diffobj/issues
+RoxygenNote: 5.0.1
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown, testthat, covr
+Collate: 'capt.R' 'check.R' 'pager.R' 'finalizer.R' 'misc.R' 'html.R'
+        'styles.R' 's4.R' 'core.R' 'diff.R' 'get.R' 'guides.R'
+        'hunks.R' 'layout.R' 'myerssimple.R' 'rdiff.R' 'rds.R' 'set.R'
+        'subset.R' 'summmary.R' 'system.R' 'text.R' 'tochar.R' 'trim.R'
+        'word.R'
+Imports: crayon (>= 1.3.2), tools, methods, utils, stats
+NeedsCompilation: yes
+Packaged: 2016-08-29 01:47:13 UTC; milberg
+Author: Brodie Gaslam [aut, cre],
+  Michael B. Allen [ctb, cph] (C implementation of Myers Diff Algorithm)
+Maintainer: Brodie Gaslam <brodie.gaslam@yahoo.com>
+Repository: CRAN
+Date/Publication: 2016-08-29 08:18:36

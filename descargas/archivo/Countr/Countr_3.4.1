@@ -1,0 +1,29 @@
+Package: Countr
+Type: Package
+Title: Flexible Univariate Count Models Based on Renewal Processes
+Version: 3.4.1
+Date: 2017-11-18
+Author: Tarak Kharrat, Georgi N. Boshnakov
+Maintainer: Tarak Kharrat <tarak.kharrat@gmail.com>
+Description: Flexible univariate count models based on renewal
+    processes. The models may include covariates and can be specified
+    with familiar formula syntax as in glm().
+License: GPL (>= 2)
+Depends: R (>= 3.3.0)
+Imports: Matrix, Rcpp (>= 0.11.3), flexsurv, Formula, VGAM, optimx,
+        numDeriv, boot, MASS, car, utils, Rdpack, lattice,
+        RColorBrewer, dplyr, standardize, pscl, lmtest, xtable
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: testthat, knitr
+RdMacros: Rdpack
+VignetteBuilder: knitr
+LazyData: true
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Collate: 'Countr.R' 'RcppExports.R' 'coefnames.R' 'convCount_loglik.R'
+        'convCount_moments.R' 'convCount_probs.R' 'dWeibull.R'
+        'dWeibullgamma.R' 'data.R' 'renewal_IV.R' 'renewal_tools.R'
+        'renewal_cstr.R' 'tools.R' 'renewal_methods.R'
+Packaged: 2017-11-20 13:33:26 UTC; mcbssgb2
+Repository: CRAN
+Date/Publication: 2017-11-20 17:32:24 UTC

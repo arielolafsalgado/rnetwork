@@ -1,0 +1,28 @@
+Package: scanstatistics
+Type: Package
+Title: Space-Time Anomaly Detection using Scan Statistics
+Description: Detection of anomalous space-time clusters using the scan 
+    statistics methodology. Focuses on prospective surveillance of data streams, 
+    scanning for clusters with ongoing anomalies. Hypothesis testing is made 
+    possible by the generation of Monte Carlo p-values.
+Version: 0.1.0
+Date: 2016-09-28
+Authors@R: person("Benjamin", "Kjellson", email = "benjak@math.su.se",
+  role = c("aut", "cre"))
+Maintainer: Benjamin Kjellson <benjak@math.su.se>
+Encoding: UTF-8
+License: GPL (>= 3)
+URL: https://github.com/BenjaK/scanstatistics
+BugReports: https://github.com/BenjaK/scanstatistics/issues
+Depends: data.table, R (>= 2.10)
+Imports: gamlss.dist, magrittr, plyr, sets
+Suggests: doParallel, foreach, ggplot2, knitr, MASS, pscl, purrr,
+        reshape2, rmarkdown, sp, testthat
+VignetteBuilder: knitr
+RoxygenNote: 5.0.1
+ByteCompile: true
+NeedsCompilation: no
+Packaged: 2016-09-29 06:03:25 UTC; benjamin
+Author: Benjamin Kjellson [aut, cre]
+Repository: CRAN
+Date/Publication: 2016-09-29 11:37:32

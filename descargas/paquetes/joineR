@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package joineR</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Joint Modelling of Repeated Measurements and Time-to-Event Data [R package joineR version 1.2.5]" />
+<meta name="citation_author1" content="Pete Philipson" />
+<meta name="citation_author2" content="Ines Sousa" />
+<meta name="citation_author3" content="Peter J. Diggle" />
+<meta name="citation_author4" content="Paula Williamson" />
+<meta name="citation_author5" content="Ruwanthi Kolamunnage-Dona" />
+<meta name="citation_author6" content="Robin Henderson" />
+<meta name="citation_author7" content="Graeme L. Hickey" />
+<meta name="citation_publication_date" content="2020-02-08" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=joineR" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=joineR" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="joineR: Joint Modelling of Repeated Measurements and Time-to-Event Data" />
+<meta name="og:description" content="Analysis of repeated measurements and time-to-event data via random effects joint models. Fits the joint models proposed by Henderson and colleagues &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fbiostatistics%2F1.4.465&quot;&gt;doi:10.1093/biostatistics/1.4.465&lt;/a&gt;&amp;gt; (single event time) and by Williamson and colleagues (2008) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fsim.3451&quot;&gt;doi:10.1002/sim.3451&lt;/a&gt;&amp;gt; (competing risks events time) to a single continuous repeated measure. The time-to-event data is modelled using a (cause-specific) Cox proportional hazards regression model with time-varying covariates. The longitudinal outcome is modelled using a linear mixed effects model. The association is captured by a latent Gaussian process. The model is estimated using am Expectation Maximization algorithm. Some plotting functions and the variogram are also included. This project is funded by the Medical Research Council (Grant numbers G0400615 and MR/M013227/1)." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=joineR" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>joineR: Joint Modelling of Repeated Measurements and Time-to-Event Data</h2>
+<p>Analysis of repeated measurements and time-to-event data via random
+    effects joint models. Fits the joint models proposed by Henderson and colleagues
+    &lt;<a href="https://doi.org/10.1093%2Fbiostatistics%2F1.4.465">doi:10.1093/biostatistics/1.4.465</a>&gt; (single event time) and by Williamson and
+    colleagues (2008) &lt;<a href="https://doi.org/10.1002%2Fsim.3451">doi:10.1002/sim.3451</a>&gt; (competing risks events time) to a
+    single continuous repeated measure. The time-to-event data is modelled using a 
+    (cause-specific) Cox proportional hazards regression model with time-varying 
+    covariates. The longitudinal outcome is modelled using a linear mixed effects
+    model. The association is captured by a latent Gaussian process. The model is 
+    estimated using am Expectation Maximization algorithm. Some plotting functions 
+    and the variogram are also included. This project is funded by the Medical 
+    Research Council (Grant numbers G0400615 and MR/M013227/1).</p>
+<table summary="Package joineR summary">
+<tr>
+<td>Version:</td>
+<td>1.2.5</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.6), <a href="../survival/index.html">survival</a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>graphics, <a href="../lattice/index.html">lattice</a>, <a href="../MASS/index.html">MASS</a>, <a href="../nlme/index.html">nlme</a>, <a href="../statmod/index.html">statmod</a>, stats, utils</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../testthat/index.html">testthat</a>, <a href="../covr/index.html">covr</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-02-08</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Pete Philipson <a href="https://orcid.org/0000-0001-7846-0208"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Ines Sousa <a href="https://orcid.org/0000-0002-2712-1713"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Peter J. Diggle <a href="https://orcid.org/0000-0003-3521-5020"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Paula Williamson <a href="https://orcid.org/0000-0001-9802-6636"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Ruwanthi Kolamunnage-Dona
+    <a href="https://orcid.org/0000-0003-3886-6208"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Robin Henderson [aut],
+  Graeme L. Hickey <a href="https://orcid.org/0000-0002-4989-0054"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Maria Sudell [ctb],
+  Medical Research Council [fnd] (Grant numbers: G0400615 and
+    MR/M013227/1)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Pete Philipson  &#x3c;&#x70;&#x65;&#x74;&#x65;&#x72;&#x2e;&#x70;&#x68;&#x69;&#x6c;&#x69;&#x70;&#x73;&#x6f;&#x6e;&#x31;&#x20;&#x61;&#x74;&#x20;&#x6e;&#x65;&#x77;&#x63;&#x61;&#x73;&#x74;&#x6c;&#x65;&#x2e;&#x61;&#x63;&#x2e;&#x75;&#x6b;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/petephilipson/joineR/issues">https://github.com/petephilipson/joineR/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a> | file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/petephilipson/joineR/">https://github.com/petephilipson/joineR/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">joineR citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Survival.html">Survival</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_joineR.html">joineR results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package joineR downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="joineR.pdf"> joineR.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/competing-risks.html">Competing risks</a><br/>
+<a href="vignettes/joineR.html">joineR</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/joineR_1.2.5.tar.gz"> joineR_1.2.5.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/joineR_1.2.5.zip">joineR_1.2.5.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/joineR_1.2.5.zip">joineR_1.2.5.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/joineR_1.2.5.zip">joineR_1.2.5.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/joineR_1.2.5.tgz">joineR_1.2.5.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/joineR_1.2.5.tgz">joineR_1.2.5.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/joineR"> joineR archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package joineR reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../joineRmeta/index.html">joineRmeta</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../joineRML/index.html">joineRML</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=joineR"><samp>https://CRAN.R-project.org/package=joineR</samp></a>
+to link to this page.</p>
+</body>
+</html>

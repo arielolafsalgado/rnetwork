@@ -1,0 +1,34 @@
+Package: rtmpt
+Version: 0.1-15
+Title: Fitting RT-MPT Models
+Authors@R: c(person("Raphael", "Hartmann", email = "raphael.hartmann@protonmail.com", role = c("aut", "cre")),
+             person("Karl C.", "Klauer", email="christoph.klauer@psychologie.uni-freiburg.de", role=c("cph", "aut", "ctb", "ths")),
+			 person("Henrik", "Singmann", email="henrik.singmann@warwick.ac.uk", role=c("aut", "ctb", "cph")),
+			 person("Jean Marie", "Linhart", email="jlinhart@stata.com", role=c("cph")))
+Author: Raphael Hartmann [aut, cre],
+  Karl C. Klauer [cph, aut, ctb, ths],
+  Henrik Singmann [aut, ctb, cph],
+  Jean Marie Linhart [cph]
+Maintainer: Raphael Hartmann <raphael.hartmann@protonmail.com>
+Depends: R (>= 3.0.0)
+Imports: coda, data.table, LaplacesDemon, loo, methods, stats, stringr,
+        truncnorm, utils
+Suggests: knitr
+VignetteBuilder: knitr
+NeedsCompilation: yes
+SystemRequirements: GSL (>=2.3)
+Description: Fit response-time extended multinomial processing tree (RT-MPT) models by Klauer and 
+			Kellen (2018) <doi:10.1016/j.jmp.2017.12.003>. The RT-MPT class not only incorporate 
+			frequencies like traditional multinomial processing tree (MPT) models, but also latencies. This enables it 
+			to estimate process completion times and encoding plus motor execution times next to the process probabilities 
+			of traditional MPTs. 'rtmpt' is a Bayesian framework and posterior samples are sampled using a Metropolis-Gibbs 
+			sampler like the one described in the Klauer and Kellen (2018), but with some modifications. Other than in 
+			the original C++ program we use the free and open source GNU Scientific Library (GSL). There is also the 
+			possibility to suppress single process completion times.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Packaged: 2019-10-04 18:34:39 UTC; hartmann2
+Repository: CRAN
+Date/Publication: 2019-10-07 14:50:02 UTC

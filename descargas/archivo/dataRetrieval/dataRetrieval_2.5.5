@@ -1,0 +1,48 @@
+Package: dataRetrieval
+Type: Package
+Title: Retrieval Functions for USGS and EPA Hydrologic and Water
+        Quality Data
+Version: 2.5.5
+Date: 2016-04-18
+Authors@R: c( person("Robert", "Hirsch", role = c("aut"),
+    email = "rhirsch@usgs.gov"),
+    person("Laura", "DeCicco", role = c("aut","cre"),
+    email = "ldecicco@usgs.gov"),
+    person("David","Lorenz", role=c("aut"),
+    email = "lorenz@usgs.gov"),
+    person("Jordan", "Read", role = c("ctb"),
+    email = "jread@usgs.gov"),
+    person("Lindsay","Carr", role=c("ctb"),
+    email = "lcarr@usgs.gov"))
+Description: Collection of functions to help retrieve U.S. Geological Survey
+    (USGS) and U.S. Environmental Protection Agency (EPA) water quality and
+    hydrology data from web services. USGS web services are discovered from the
+    National Water Information System (NWIS) tools. Both EPA and USGS water
+    quality data are obtained from the Water Quality Portal.
+License: CC0
+Copyright: This software is in the public domain because it contains
+        materials that originally came from the United States
+        Geological Survey, an agency of the United States Department of
+        Interior. For more information, see the official USGS copyright
+        policy at
+        http://www.usgs.gov/visual-id/credit_usgs.html#copyright
+Depends: R (>= 3.0)
+Imports: XML, httr (>= 1.0.0), curl, reshape2, lubridate (>= 1.5.0),
+        stats, utils, dplyr, readr (>= 0.1.1.9000)
+Suggests: xtable, knitr, testthat
+VignetteBuilder: knitr
+BuildVignettes: true
+BugReports: https://github.com/USGS-R/dataRetrieval/issues
+URL: https://github.com/USGS-R/dataRetrieval,
+        http://pubs.usgs.gov/tm/04/a10/
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-04-20 16:51:04 UTC; ldecicco
+Author: Robert Hirsch [aut],
+  Laura DeCicco [aut, cre],
+  David Lorenz [aut],
+  Jordan Read [ctb],
+  Lindsay Carr [ctb]
+Maintainer: Laura DeCicco <ldecicco@usgs.gov>
+Repository: CRAN
+Date/Publication: 2016-04-20 21:20:04

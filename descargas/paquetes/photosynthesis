@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package photosynthesis</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Tools for Plant Ecophysiology &amp;amp; Modeling [R package photosynthesis version 2.0.0]" />
+<meta name="citation_author1" content="Joseph Stinziano" />
+<meta name="citation_author2" content="Cassaundra Roback" />
+<meta name="citation_author3" content="Demi Gamble" />
+<meta name="citation_author4" content="Bridget Murphy" />
+<meta name="citation_author5" content="Patrick Hudson" />
+<meta name="citation_author6" content="Chris Muir" />
+<meta name="citation_publication_date" content="2020-09-12" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=photosynthesis" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=photosynthesis" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="photosynthesis: Tools for Plant Ecophysiology &amp;amp; Modeling" />
+<meta name="og:description" content="Contains modeling and analytical tools for plant ecophysiology. MODELING: Simulate C3 photosynthesis using the Farquhar, von Caemmerer, Berry (1980) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2FBF00386231&quot;&gt;doi:10.1007/BF00386231&lt;/a&gt;&amp;gt; model as described in Buckley and Diaz-Espejo (2015) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fpce.12459&quot;&gt;doi:10.1111/pce.12459&lt;/a&gt;&amp;gt;. It uses units to ensure that parameters are properly specified and transformed before calculations. Temperature response functions get automatically &quot;baked&quot; into all parameters based on leaf temperature following Bernacchi et al. (2002) &amp;lt;&lt;a href=&quot;https://doi.org/10.1104%2Fpp.008250&quot;&gt;doi:10.1104/pp.008250&lt;/a&gt;&amp;gt;. The package includes boundary layer, cuticular, stomatal, and mesophyll conductances to CO2, which each can vary on the upper and lower portions of the leaf. Use straightforward functions to simulate photosynthesis over environmental gradients such as Photosynthetic Photon Flux Density (PPFD) and leaf temperature, or over trait gradients such as CO2 conductance or photochemistry. ANALYTICAL TOOLS: Fit ACi (Farquhar et al. 1980 &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2FBF00386231&quot;&gt;doi:10.1007/BF00386231&lt;/a&gt;&amp;gt;) and AQ curves (Marshall &amp;amp; Biscoe 1980 &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fjxb%2F31.1.29&quot;&gt;doi:10.1093/jxb/31.1.29&lt;/a&gt;&amp;gt;), temperature responses (Heskel et al. 2016 &amp;lt;&lt;a href=&quot;https://doi.org/10.1073%2Fpnas.1520282113&quot;&gt;doi:10.1073/pnas.1520282113&lt;/a&gt;&amp;gt;; Kruse et al. 2008 &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fj.1365-3040.2008.01809.x&quot;&gt;doi:10.1111/j.1365-3040.2008.01809.x&lt;/a&gt;&amp;gt;, Medlyn et al. 2002 &amp;lt;&lt;a href=&quot;https://doi.org/10.1046%2Fj.1365-3040.2002.00891.x&quot;&gt;doi:10.1046/j.1365-3040.2002.00891.x&lt;/a&gt;&amp;gt;, Hobbs et al. 2013 &amp;lt;&lt;a href=&quot;https://doi.org/10.1021%2Fcb4005029&quot;&gt;doi:10.1021/cb4005029&lt;/a&gt;&amp;gt;), respiration in the light (Kok 1956 &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2F0006-3002%2856%2990003-8&quot;&gt;doi:10.1016/0006-3002(56)90003-8&lt;/a&gt;&amp;gt;, Walker &amp;amp; Ort 2015 &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fpce.12562&quot;&gt;doi:10.1111/pce.12562&lt;/a&gt;&amp;gt;, Yin et al. 2009 &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fj.1365-3040.2009.01934.x&quot;&gt;doi:10.1111/j.1365-3040.2009.01934.x&lt;/a&gt;&amp;gt;, Yin et al. 2011 &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fjxb%2Ferr038&quot;&gt;doi:10.1093/jxb/err038&lt;/a&gt;&amp;gt;), mesophyll conductance (Harley et al. 1992 &amp;lt;&lt;a href=&quot;https://doi.org/10.1104%2Fpp.98.4.1429&quot;&gt;doi:10.1104/pp.98.4.1429&lt;/a&gt;&amp;gt;), pressure-volume curves (Koide et al. 2000 &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2F978-94-009-2221-1_9&quot;&gt;doi:10.1007/978-94-009-2221-1_9&lt;/a&gt;&amp;gt;, Sack et al. 2003 &amp;lt;&lt;a href=&quot;https://doi.org/10.1046%2Fj.0016-8025.2003.01058.x&quot;&gt;doi:10.1046/j.0016-8025.2003.01058.x&lt;/a&gt;&amp;gt;, Tyree et al. 1972 &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fjxb%2F23.1.267&quot;&gt;doi:10.1093/jxb/23.1.267&lt;/a&gt;&amp;gt;), hydraulic vulnerability curves (Ogle et al. 2009 &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fj.1469-8137.2008.02760.x&quot;&gt;doi:10.1111/j.1469-8137.2008.02760.x&lt;/a&gt;&amp;gt;, Pammenter et al. 1998 &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Ftreephys%2F18.8-9.589&quot;&gt;doi:10.1093/treephys/18.8-9.589&lt;/a&gt;&amp;gt;), and tools for running sensitivity analyses particularly for variables with uncertainty (e.g. g_mc, gamma_star, R_d)." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=photosynthesis" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>photosynthesis: Tools for Plant Ecophysiology &amp; Modeling</h2>
+<p>Contains modeling and analytical tools for plant ecophysiology.
+    MODELING: Simulate C3 photosynthesis using the Farquhar, von Caemmerer,
+    Berry (1980) &lt;<a href="https://doi.org/10.1007%2FBF00386231">doi:10.1007/BF00386231</a>&gt; model as described in Buckley and
+    Diaz-Espejo (2015) &lt;<a href="https://doi.org/10.1111%2Fpce.12459">doi:10.1111/pce.12459</a>&gt;. It uses units to ensure that
+    parameters are properly specified and transformed before calculations.
+    Temperature response functions get automatically "baked" into all
+    parameters based on leaf temperature following Bernacchi et al. (2002)
+    &lt;<a href="https://doi.org/10.1104%2Fpp.008250">doi:10.1104/pp.008250</a>&gt;. The package includes boundary layer, cuticular,
+    stomatal, and mesophyll conductances to CO2, which each can vary on the
+    upper and lower portions of the leaf. Use straightforward functions to
+    simulate photosynthesis over environmental gradients such as Photosynthetic
+    Photon Flux Density (PPFD) and leaf temperature, or over trait gradients
+    such as CO2 conductance or photochemistry. 
+    ANALYTICAL TOOLS: Fit ACi (Farquhar et al. 1980 &lt;<a href="https://doi.org/10.1007%2FBF00386231">doi:10.1007/BF00386231</a>&gt;)
+    and AQ curves (Marshall &amp; Biscoe 1980 &lt;<a href="https://doi.org/10.1093%2Fjxb%2F31.1.29">doi:10.1093/jxb/31.1.29</a>&gt;),
+    temperature responses (Heskel et al. 2016 &lt;<a href="https://doi.org/10.1073%2Fpnas.1520282113">doi:10.1073/pnas.1520282113</a>&gt;;
+    Kruse et al. 2008 &lt;<a href="https://doi.org/10.1111%2Fj.1365-3040.2008.01809.x">doi:10.1111/j.1365-3040.2008.01809.x</a>&gt;, Medlyn et al.
+    2002 &lt;<a href="https://doi.org/10.1046%2Fj.1365-3040.2002.00891.x">doi:10.1046/j.1365-3040.2002.00891.x</a>&gt;, Hobbs et al. 2013
+    &lt;<a href="https://doi.org/10.1021%2Fcb4005029">doi:10.1021/cb4005029</a>&gt;), respiration in the light (Kok 1956
+    &lt;<a href="https://doi.org/10.1016%2F0006-3002%2856%2990003-8">doi:10.1016/0006-3002(56)90003-8</a>&gt;, Walker &amp; Ort 2015 &lt;<a href="https://doi.org/10.1111%2Fpce.12562">doi:10.1111/pce.12562</a>&gt;,
+    Yin et al. 2009 &lt;<a href="https://doi.org/10.1111%2Fj.1365-3040.2009.01934.x">doi:10.1111/j.1365-3040.2009.01934.x</a>&gt;, Yin et al. 2011
+    &lt;<a href="https://doi.org/10.1093%2Fjxb%2Ferr038">doi:10.1093/jxb/err038</a>&gt;), mesophyll conductance (Harley et al. 1992
+    &lt;<a href="https://doi.org/10.1104%2Fpp.98.4.1429">doi:10.1104/pp.98.4.1429</a>&gt;), pressure-volume curves (Koide et al. 2000
+    &lt;<a href="https://doi.org/10.1007%2F978-94-009-2221-1_9">doi:10.1007/978-94-009-2221-1_9</a>&gt;, Sack et al. 2003
+    &lt;<a href="https://doi.org/10.1046%2Fj.0016-8025.2003.01058.x">doi:10.1046/j.0016-8025.2003.01058.x</a>&gt;, Tyree et al. 1972
+    &lt;<a href="https://doi.org/10.1093%2Fjxb%2F23.1.267">doi:10.1093/jxb/23.1.267</a>&gt;), hydraulic vulnerability curves (Ogle et al. 2009
+    &lt;<a href="https://doi.org/10.1111%2Fj.1469-8137.2008.02760.x">doi:10.1111/j.1469-8137.2008.02760.x</a>&gt;, Pammenter et al. 1998
+    &lt;<a href="https://doi.org/10.1093%2Ftreephys%2F18.8-9.589">doi:10.1093/treephys/18.8-9.589</a>&gt;), and tools for running sensitivity
+    analyses particularly for variables with uncertainty (e.g. g_mc, gamma_star,
+    R_d).</p>
+<table summary="Package photosynthesis summary">
+<tr>
+<td>Version:</td>
+<td>2.0.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.0.0), <a href="../ggplot2/index.html">ggplot2</a> (&ge; 3.3.0), <a href="../minpack.lm/index.html">minpack.lm</a> (&ge; 1.2-1), <a href="../units/index.html">units</a> (&ge; 0.6.6)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../checkmate/index.html">checkmate</a> (&ge; 2.0.0), <a href="../crayon/index.html">crayon</a> (&ge; 1.3.4), <a href="../dplyr/index.html">dplyr</a> (&ge; 0.8.5), <a href="../furrr/index.html">furrr</a> (&ge; 0.1.0), <a href="../future/index.html">future</a> (&ge; 1.17.0), <a href="../glue/index.html">glue</a> (&ge; 1.4.0), graphics (&ge; 4.0.0), grDevices (&ge; 4.0.0), <a href="../gunit/index.html">gunit</a> (&ge; 1.0.0), <a href="../magrittr/index.html">magrittr</a> (&ge; 1.5.0), methods (&ge; 3.5.0), <a href="../nlme/index.html">nlme</a> (&ge; 3.1-147), <a href="../pkgnet/index.html">pkgnet</a> (&ge;
+0.4.1), <a href="../purrr/index.html">purrr</a> (&ge; 0.3.3), <a href="../rlang/index.html">rlang</a> (&ge; 0.4.6), stats (&ge; 4.0.0), <a href="../stringr/index.html">stringr</a> (&ge; 1.4.0), <a href="../tealeaves/index.html">tealeaves</a> (&ge; 1.0.5), <a href="../tidyselect/index.html">tidyselect</a> (&ge;
+1.0.0), utils (&ge; 4.0.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../tidyr/index.html">tidyr</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-12</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Joseph Stinziano <a href="https://orcid.org/0000-0002-7628-4201"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Cassaundra Roback [aut],
+  Demi Gamble [aut],
+  Bridget Murphy [aut],
+  Patrick Hudson [aut, dtc],
+  Chris Muir <a href="https://orcid.org/0000-0003-2555-3878"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Chris Muir  &#x3c;&#x63;&#x64;&#x6d;&#x75;&#x69;&#x72;&#x20;&#x61;&#x74;&#x20;&#x68;&#x61;&#x77;&#x61;&#x69;&#x69;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">photosynthesis citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_photosynthesis.html">photosynthesis results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package photosynthesis downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="photosynthesis.pdf"> photosynthesis.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/photosynthesis-curve-fitting-sensitivity-analyses.html">photosynthesis-curve-fitting-sensitivity-analyses</a><br/>
+<a href="vignettes/photosynthesis-introduction.html">Introduction to the photosynthesis package</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/photosynthesis_2.0.0.tar.gz"> photosynthesis_2.0.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/photosynthesis_2.0.0.zip">photosynthesis_2.0.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/photosynthesis_2.0.0.zip">photosynthesis_2.0.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/photosynthesis_1.0.2.zip">photosynthesis_1.0.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/photosynthesis_2.0.0.tgz">photosynthesis_2.0.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/photosynthesis_1.0.2.tgz">photosynthesis_1.0.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/photosynthesis"> photosynthesis archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=photosynthesis"><samp>https://CRAN.R-project.org/package=photosynthesis</samp></a>
+to link to this page.</p>
+</body>
+</html>

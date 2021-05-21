@@ -1,0 +1,52 @@
+Package: mstrio
+Type: Package
+Title: Interface for 'MicroStrategy' REST API
+Version: 11.1.4.25
+Authors@R: 
+    c(person(given = "Scott",
+             family = "Rigney",
+             role = c("aut", "cre"),
+             email = "srigney@microstrategy.com"),
+      person(given = "Zofia",
+             family = "Rogala",
+             role = "ctb",
+             email = "zrogala@microstrategy.com"),
+      person(given = "Ignacy",
+             family = "Hologa",
+             role = "ctb",
+             email = "ihologa@microstrategy.com"),
+      person(given = "Piotr",
+             family = "Czyz",
+             role = "ctb",
+             email = "pczyz@microstrategy.com"),
+      person(given = "Michał",
+             family = "Drzazga",
+             role = "ctb",
+             email = "mdrzazga@microstrategy.com"))
+Description: Interface for creating data sets and extracting data through the 'MicroStrategy' REST API. Access the demo API at <https://demo.microstrategy.com/MicroStrategyLibrary/api-docs/index.html>.
+License: Apache License 2.0 | file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.4.0)
+Imports: httr (>= 1.4.1), openssl (>= 1.4.1), jsonlite (>= 1.6),
+        methods, R6, miniUI, rstudioapi, shinyjs, shiny
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+Collate: 'api-authentication.R' 'api-cubes.R' 'api-datasets.R'
+        'api-projects.R' 'api-reports.R' 'api-misc.R' 'cube.R'
+        'datasets.R' 'report.R' 'microstrategy.R' 'utils-model.R'
+        'utils-formjson.R' 'utils-parsejson.R' 'utils-encoder.R'
+        'utils-composefilter.R' 'utils-files.R' 'utils-gui.R'
+        'utils-fetching.R' 'utils-helpers.R' 'utils-update.R'
+        'server.R' 'app.R'
+NeedsCompilation: no
+Packaged: 2019-10-28 16:06:39 UTC; srigney
+Author: Scott Rigney [aut, cre],
+  Zofia Rogala [ctb],
+  Ignacy Hologa [ctb],
+  Piotr Czyz [ctb],
+  Michał Drzazga [ctb]
+Maintainer: Scott Rigney <srigney@microstrategy.com>
+Repository: CRAN
+Date/Publication: 2019-10-28 16:50:02 UTC

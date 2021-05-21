@@ -1,0 +1,30 @@
+Package: choroplethr
+Title: Simplify the Creation of Choropleth Maps in R
+Description: Choropleths are thematic maps where geographic regions, such as
+    states, are colored according to some metric, such as the number of people
+    who live in that state.  choroplethr simplifies this process by 1.
+    Providing ready-made functions for creating choropleths of common maps. 2.
+    Providing API connections to interesting data sources for making
+    choropleths. 3. Providing a framework for creating choropleths from
+    arbitrary shapefiles. Please see the vignettes for more details.
+Version: 2.1.1
+Author: Ari Lamstein <arilamstein@gmail.com>[cre, aut],
+    Brian P Johnson <brian@pjohnson.info> [ctb, frontend animation code]
+Maintainer: Ari Lamstein <arilamstein@gmail.com>
+URL: https://github.com/trulia/choroplethr/,
+        https://groups.google.com/forum/#!forum/choroplethr
+BugReports: https://github.com/trulia/choroplethr/issues
+Copyright: Trulia, Inc.
+License: BSD_3_clause + file LICENSE
+Imports: scales, Hmisc, stringr, ggplot2, dplyr, R6, acs, WDI
+Suggests: testthat, zipcode, knitr, choroplethrMaps, choroplethrAdmin1
+Depends: R (>= 3.0.0)
+VignetteBuilder: knitr
+Collate: 'choropleth.R' 'admin1.R' 'admin1_data.R' 'choroplethr.R'
+        'choroplethr_acs.R' 'choroplethr_animate.R' 'choroplethr_wdi.R'
+        'country.R' 'country_data.R' 'usa.R' 'county.R' 'county_data.R'
+        'county_zoom.R' 'state.R' 'state_data.R' 'zip.R' 'zip_data.R'
+Packaged: 2014-12-11 01:11:47 UTC; arilamstein
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2014-12-11 07:59:29

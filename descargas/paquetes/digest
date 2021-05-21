@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package digest</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=digest" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="digest: Create Compact Hash Digests of R Objects" />
+<meta name="og:description" content="Implementation of a function 'digest()' for the creation of hash digests of arbitrary R objects (using the 'md5', 'sha-1', 'sha-256', 'crc32', 'xxhash', 'murmurhash', 'spookyhash' and 'blake3' algorithms) permitting easy comparison of R language objects, as well as functions such as'hmac()' to create hash-based message authentication code. Please note that this package is not meant to be deployed for cryptographic purposes for which more comprehensive (and widely tested) libraries such as 'OpenSSL' should be used." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=digest" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>digest: Create Compact Hash Digests of R Objects</h2>
+<p>Implementation of a function 'digest()' for the creation of hash
+ digests of arbitrary R objects (using the 'md5', 'sha-1', 'sha-256', 'crc32',
+ 'xxhash', 'murmurhash', 'spookyhash' and 'blake3' algorithms) permitting easy
+ comparison of R language objects, as well as functions such as'hmac()' to
+ create hash-based message authentication code. Please note that this package
+ is not meant to be deployed for cryptographic purposes for which more
+ comprehensive (and widely tested) libraries such as 'OpenSSL' should be
+ used.</p>
+<table summary="Package digest summary">
+<tr>
+<td>Version:</td>
+<td>0.6.27</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>utils</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../tinytest/index.html">tinytest</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../minidown/index.html">minidown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-24</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Dirk Eddelbuettel with contributions 
+ by Antoine Lucas, Jarek Tuszynski, Henrik Bengtsson, Simon Urbanek,
+ Mario Frasca, Bryan Lewis, Murray Stokely, Hannes Muehleisen,
+ Duncan Murdoch, Jim Hester, Wush Wu, Qiang Kou, Thierry Onkelinx, 
+ Michel Lang, Viliam Simko, Kurt Hornik, Radford Neal, Kendon Bell,
+ Matthew de Queljoe, Ion Suruceanu, Bill Denney, Dirk Schumacher,
+ and Winston Chang.</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Dirk Eddelbuettel  &#x3c;&#x65;&#x64;&#x64;&#x20;&#x61;&#x74;&#x20;&#x64;&#x65;&#x62;&#x69;&#x61;&#x6e;&#x2e;&#x6f;&#x72;&#x67;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/eddelbuettel/digest/issues">https://github.com/eddelbuettel/digest/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://dirk.eddelbuettel.com/code/digest.html">http://dirk.eddelbuettel.com/code/digest.html</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="ChangeLog">ChangeLog</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_digest.html">digest results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package digest downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="digest.pdf"> digest.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/sha1.html">sha1() versus digest()</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/digest_0.6.27.tar.gz"> digest_0.6.27.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/digest_0.6.27.zip">digest_0.6.27.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/digest_0.6.27.zip">digest_0.6.27.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/digest_0.6.27.zip">digest_0.6.27.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/digest_0.6.27.tgz">digest_0.6.27.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/digest_0.6.27.tgz">digest_0.6.27.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/digest"> digest archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package digest reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../blockmodels/index.html">blockmodels</a>, <a href="../coprimary/index.html">coprimary</a>, <a href="../DataEntry/index.html">DataEntry</a>, <a href="../ElstonStewart/index.html">ElstonStewart</a>, <a href="../gmDatabase/index.html">gmDatabase</a>, <a href="../gWidgets2/index.html">gWidgets2</a>, <a href="../gWidgets2tcltk/index.html">gWidgets2tcltk</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/IPPD.html"><span class="BioC">IPPD</span></a>, <a href="../likelihoodAsy/index.html">likelihoodAsy</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/metavizr.html"><span class="BioC">metavizr</span></a>, <a href="../rgdax/index.html">rgdax</a>, <a href="../RGoogleAnalytics/index.html">RGoogleAnalytics</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/SummarizedBenchmark.html"><span class="BioC">SummarizedBenchmark</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/weaver.html"><span class="BioC">weaver</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../ALA4R/index.html">ALA4R</a>, <a href="../animint2/index.html">animint2</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/annmap.html"><span class="BioC">annmap</span></a>, <a href="../archivist/index.html">archivist</a>, <a href="../archivist.github/index.html">archivist.github</a>, <a href="../ascii/index.html">ascii</a>, <a href="../aws.s3/index.html">aws.s3</a>, <a href="../aws.signature/index.html">aws.signature</a>, <a href="../BatchJobs/index.html">BatchJobs</a>, <a href="../batchtools/index.html">batchtools</a>, <a href="../baytrends/index.html">baytrends</a>, <a href="../BetaBit/index.html">BetaBit</a>, <a href="../BETS/index.html">BETS</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/BgeeDB.html"><span class="BioC">BgeeDB</span></a>, <a href="../BinaryDosage/index.html">BinaryDosage</a>, <a href="../biocompute/index.html">biocompute</a>, <a href="../bitmexr/index.html">bitmexr</a>, <a href="../blastula/index.html">blastula</a>, <a href="../boxr/index.html">boxr</a>, <a href="../bsub/index.html">bsub</a>, <a href="../calpassapi/index.html">calpassapi</a>, <a href="../cancensus/index.html">cancensus</a>, <a href="../caretEnsemble/index.html">caretEnsemble</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/cBioPortalData.html"><span class="BioC">cBioPortalData</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/celda.html"><span class="BioC">celda</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/ChemmineR.html"><span class="BioC">ChemmineR</span></a>, <a href="../coala/index.html">coala</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/cola.html"><span class="BioC">cola</span></a>, <a href="../corpustools/index.html">corpustools</a>, <a href="../CorrectOverloadedPeaks/index.html">CorrectOverloadedPeaks</a>, <a href="../covr/index.html">covr</a>, <a href="../crimedata/index.html">crimedata</a>, <a href="../cronR/index.html">cronR</a>, <a href="../crsra/index.html">crsra</a>, <a href="../ctmm/index.html">ctmm</a>, <a href="../dash/index.html">dash</a>, <a href="../datapack/index.html">datapack</a>, <a href="../DataSpaceR/index.html">DataSpaceR</a>, <a href="../dipsaus/index.html">dipsaus</a>, <a href="../distcomp/index.html">distcomp</a>, <a href="../distill/index.html">distill</a>, <a href="../distributional/index.html">distributional</a>, <a href="../dittodb/index.html">dittodb</a>, <a href="../dmdScheme/index.html">dmdScheme</a>, <a href="../dodgr/index.html">dodgr</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/doppelgangR.html"><span class="BioC">doppelgangR</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/doseR.html"><span class="BioC">doseR</span></a>, <a href="../downlit/index.html">downlit</a>, <a href="../downloader/index.html">downloader</a>, <a href="../dparser/index.html">dparser</a>, <a href="../dplR/index.html">dplR</a>, <a href="../dpmr/index.html">dpmr</a>, <a href="../drake/index.html">drake</a>, <a href="../duawranglr/index.html">duawranglr</a>, <a href="../easyr/index.html">easyr</a>, <a href="../ecd/index.html">ecd</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/eiR.html"><span class="BioC">eiR</span></a>, <a href="../EML/index.html">EML</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/esATAC.html"><span class="BioC">esATAC</span></a>, <a href="../ezsim/index.html">ezsim</a>, <a href="../fbRads/index.html">fbRads</a>, <a href="../FeatureHashing/index.html">FeatureHashing</a>, <a href="../feedeR/index.html">feedeR</a>, <a href="../finbif/index.html">finbif</a>, <a href="../finch/index.html">finch</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/FindMyFriends.html"><span class="BioC">FindMyFriends</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/flowWorkspace.html"><span class="BioC">flowWorkspace</span></a>, <a href="../FRK/index.html">FRK</a>, <a href="../FSelector/index.html">FSelector</a>, <a href="../FSinR/index.html">FSinR</a>, <a href="../fulltext/index.html">fulltext</a>, <a href="../future/index.html">future</a>, <a href="../geiger/index.html">geiger</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/gep2pep.html"><span class="BioC">gep2pep</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/GGBase.html"><span class="BioC">GGBase</span></a>, <a href="../ggmap/index.html">ggmap</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../ggraph/index.html">ggraph</a>, <a href="../glmbb/index.html">glmbb</a>, <a href="../googleAuthR/index.html">googleAuthR</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/gpuMagic.html"><span class="BioC">gpuMagic</span></a>, <a href="http://www.bioconductor.org/packages/release/data/annotation/html/grasp2db.html"><span class="BioC">grasp2db</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/Gviz.html"><span class="BioC">Gviz</span></a>, <a href="../GWSDAT/index.html">GWSDAT</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/HiCBricks.html"><span class="BioC">HiCBricks</span></a>, <a href="../hoardr/index.html">hoardr</a>, <a href="../htmltools/index.html">htmltools</a>, <a href="../httpcache/index.html">httpcache</a>, <a href="../httptest/index.html">httptest</a>, <a href="../hunspell/index.html">hunspell</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/ImmuneSpaceR.html"><span class="BioC">ImmuneSpaceR</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/infercnv.html"><span class="BioC">infercnv</span></a>, <a href="../IRkernel/index.html">IRkernel</a>, <a href="../kableExtra/index.html">kableExtra</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/karyoploteR.html"><span class="BioC">karyoploteR</span></a>, <a href="../Knoema/index.html">Knoema</a>, <a href="../kzfs/index.html">kzfs</a>, <a href="../LDATS/index.html">LDATS</a>, <a href="../lintr/index.html">lintr</a>, <a href="../listcomp/index.html">listcomp</a>, <a href="../LLSR/index.html">LLSR</a>, <a href="../loose.rock/index.html">loose.rock</a>, <a href="../LSX/index.html">LSX</a>, <a href="../madrat/index.html">madrat</a>, <a href="../MALDIquantForeign/index.html">MALDIquantForeign</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/matter.html"><span class="BioC">matter</span></a>, <a href="../MazamaLocationUtils/index.html">MazamaLocationUtils</a>, <a href="../memo/index.html">memo</a>, <a href="../memoise/index.html">memoise</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/MethylMix.html"><span class="BioC">MethylMix</span></a>, <a href="../metR/index.html">metR</a>, <a href="../micemd/index.html">micemd</a>, <a href="../mindicador/index.html">mindicador</a>, <a href="../miscTools/index.html">miscTools</a>, <a href="../mleap/index.html">mleap</a>, <a href="../mlr3/index.html">mlr3</a>, <a href="../mlr3db/index.html">mlr3db</a>, <a href="../mlr3pipelines/index.html">mlr3pipelines</a>, <a href="../mmpca/index.html">mmpca</a>, <a href="../modelStudio/index.html">modelStudio</a>, <a href="../MonetDB.R/index.html">MonetDB.R</a>, <a href="../monkeylearn/index.html">monkeylearn</a>, <a href="../MplusAutomation/index.html">MplusAutomation</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/MSnbase.html"><span class="BioC">MSnbase</span></a>, <a href="../mulset/index.html">mulset</a>, <a href="../mustashe/index.html">mustashe</a>, <a href="../nat/index.html">nat</a>, <a href="../nat.templatebrains/index.html">nat.templatebrains</a>, <a href="../neonstore/index.html">neonstore</a>, <a href="../neurohcp/index.html">neurohcp</a>, <a href="../nlsr/index.html">nlsr</a>, <a href="../NMF/index.html">NMF</a>, <a href="../nsrr/index.html">nsrr</a>, <a href="../odin/index.html">odin</a>, <a href="../onlineforecast/index.html">onlineforecast</a>, <a href="../oolong/index.html">oolong</a>, <a href="../OpasnetUtils/index.html">OpasnetUtils</a>, <a href="../OpenML/index.html">OpenML</a>, <a href="../OpenMx/index.html">OpenMx</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/openPrimeR.html"><span class="BioC">openPrimeR</span></a>, <a href="../optmatch/index.html">optmatch</a>, <a href="../orderly/index.html">orderly</a>, <a href="../pander/index.html">pander</a>, <a href="../particles/index.html">particles</a>, <a href="../paws.common/index.html">paws.common</a>, <a href="../pins/index.html">pins</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/pipeFrame.html"><span class="BioC">pipeFrame</span></a>, <a href="../pkgcache/index.html">pkgcache</a>, <a href="../pkgdown/index.html">pkgdown</a>, <a href="../pkgmaker/index.html">pkgmaker</a>, <a href="../PKNCA/index.html">PKNCA</a>, <a href="../plotly/index.html">plotly</a>, <a href="../pointblank/index.html">pointblank</a>, <a href="../poio/index.html">poio</a>, <a href="../polished/index.html">polished</a>, <a href="../pomp/index.html">pomp</a>, <a href="../portfolioBacktest/index.html">portfolioBacktest</a>, <a href="../prettymapr/index.html">prettymapr</a>, <a href="../progressr/index.html">progressr</a>, <a href="../proton/index.html">proton</a>, <a href="../provExplainR/index.html">provExplainR</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/psichomics.html"><span class="BioC">psichomics</span></a>, <a href="../ptvapi/index.html">ptvapi</a>, <a href="../qmethod/index.html">qmethod</a>, <a href="../quanteda/index.html">quanteda</a>, <a href="../R.cache/index.html">R.cache</a>, <a href="../R.filesets/index.html">R.filesets</a>, <a href="../R.rsp/index.html">R.rsp</a>, <a href="../R2MLwiN/index.html">R2MLwiN</a>, <a href="../r6extended/index.html">r6extended</a>, <a href="../radix/index.html">radix</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/ramwas.html"><span class="BioC">ramwas</span></a>, <a href="../rapbase/index.html">rapbase</a>, <a href="../Rbitcoin/index.html">Rbitcoin</a>, <a href="../rbokeh/index.html">rbokeh</a>, <a href="../Rborist/index.html">Rborist</a>, <a href="../rcmdcheck/index.html">rcmdcheck</a>, <a href="../rdhs/index.html">rdhs</a>, <a href="../rdrop2/index.html">rdrop2</a>, <a href="../rdtLite/index.html">rdtLite</a>, <a href="../reactable/index.html">reactable</a>, <a href="../readMzXmlData/index.html">readMzXmlData</a>, <a href="../readtext/index.html">readtext</a>, <a href="../repmis/index.html">repmis</a>, <a href="../repo/index.html">repo</a>, <a href="../reproducible/index.html">reproducible</a>, <a href="../rerddap/index.html">rerddap</a>, <a href="../Rexperigen/index.html">Rexperigen</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/RGraph2js.html"><span class="BioC">RGraph2js</span></a>, <a href="../rhub/index.html">rhub</a>, <a href="../Rinstapkg/index.html">Rinstapkg</a>, <a href="../rmapzen/index.html">rmapzen</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/RMassBank.html"><span class="BioC">RMassBank</span></a>, <a href="../rmdpartials/index.html">rmdpartials</a>, <a href="../rmonad/index.html">rmonad</a>, <a href="../rms/index.html">rms</a>, <a href="../rmsb/index.html">rmsb</a>, <a href="../rngtools/index.html">rngtools</a>, <a href="../ROAuth/index.html">ROAuth</a>, <a href="../routr/index.html">routr</a>, <a href="../roxygen2/index.html">roxygen2</a>, <a href="../Rpolyhedra/index.html">Rpolyhedra</a>, <a href="../rrepast/index.html">rrepast</a>, <a href="../rsconnect/index.html">rsconnect</a>, <a href="../RSiteCatalyst/index.html">RSiteCatalyst</a>, <a href="../rsyntax/index.html">rsyntax</a>, <a href="../rtext/index.html">rtext</a>, <a href="../rtika/index.html">rtika</a>, <a href="../rtodoist/index.html">rtodoist</a>, <a href="../sarsop/index.html">sarsop</a>, <a href="../sass/index.html">sass</a>, <a href="../scatterD3/index.html">scatterD3</a>, <a href="../semtree/index.html">semtree</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/seqplots.html"><span class="BioC">seqplots</span></a>, <a href="../SGP/index.html">SGP</a>, <a href="../sharpshootR/index.html">sharpshootR</a>, <a href="../shiny/index.html">shiny</a>, <a href="../shinycssloaders/index.html">shinycssloaders</a>, <a href="../shinyjs/index.html">shinyjs</a>, <a href="../shinylogs/index.html">shinylogs</a>, <a href="../shinyservicebot/index.html">shinyservicebot</a>, <a href="../shinytest/index.html">shinytest</a>, <a href="../SimInf/index.html">SimInf</a>, <a href="../simpleRCache/index.html">simpleRCache</a>, <a href="../sisal/index.html">sisal</a>, <a href="../sparklyr/index.html">sparklyr</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/SpatialCPie.html"><span class="BioC">SpatialCPie</span></a>, <a href="../stepR/index.html">stepR</a>, <a href="../storr/index.html">storr</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/subSeq.html"><span class="BioC">subSeq</span></a>, <a href="../swirl/index.html">swirl</a>, <a href="../tangles/index.html">tangles</a>, <a href="../tangram/index.html">tangram</a>, <a href="../tesseract/index.html">tesseract</a>, <a href="../testthat/index.html">testthat</a>, <a href="../text2vec/index.html">text2vec</a>, <a href="../textrank/index.html">textrank</a>, <a href="../textreuse/index.html">textreuse</a>, <a href="../threeBrain/index.html">threeBrain</a>, <a href="../tidytransit/index.html">tidytransit</a>, <a href="../tradestatistics/index.html">tradestatistics</a>, <a href="../trelliscopejs/index.html">trelliscopejs</a>, <a href="../trustedtimestamping/index.html">trustedtimestamping</a>, <a href="../ubiquity/index.html">ubiquity</a>, <a href="../ufs/index.html">ufs</a>, <a href="../UNF/index.html">UNF</a>, <a href="../userfriendlyscience/index.html">userfriendlyscience</a>, <a href="../VancouvR/index.html">VancouvR</a>, <a href="../vctrs/index.html">vctrs</a>, <a href="../vegalite/index.html">vegalite</a>, <a href="../virtuoso/index.html">virtuoso</a>, <a href="../vtreat/index.html">vtreat</a>, <a href="../worcs/index.html">worcs</a>, <a href="../wyz.code.rdoc/index.html">wyz.code.rdoc</a>, <a href="../x3ptools/index.html">x3ptools</a>, <a href="../zooimage/index.html">zooimage</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;linking&nbsp;to:</td>
+<td><a href="../FeatureHashing/index.html">FeatureHashing</a>, <a href="../text2vec/index.html">text2vec</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../aqp/index.html">aqp</a>, <a href="../ASMap/index.html">ASMap</a>, <a href="../botor/index.html">botor</a>, <a href="../brms/index.html">brms</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/CoRegFlux.html"><span class="BioC">CoRegFlux</span></a>, <a href="../CUB/index.html">CUB</a>, <a href="../dataone/index.html">dataone</a>, <a href="../devtools/index.html">devtools</a>, <a href="../dm/index.html">dm</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/EBImage.html"><span class="BioC">EBImage</span></a>, <a href="../enc/index.html">enc</a>, <a href="../ensr/index.html">ensr</a>, <a href="../FuzzyNumbers/index.html">FuzzyNumbers</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/gdsfmt.html"><span class="BioC">gdsfmt</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/GenomicRanges.html"><span class="BioC">GenomicRanges</span></a>, <a href="../gtfsrouter/index.html">gtfsrouter</a>, <a href="../gwsem/index.html">gwsem</a>, <a href="../HaDeX/index.html">HaDeX</a>, <a href="../hutils/index.html">hutils</a>, <a href="../hyperSpec/index.html">hyperSpec</a>, <a href="../i2dash/index.html">i2dash</a>, <a href="../igraph/index.html">igraph</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/ivygapSE.html"><span class="BioC">ivygapSE</span></a>, <a href="../jointseg/index.html">jointseg</a>, <a href="../knitr/index.html">knitr</a>, <a href="../LDAvis/index.html">LDAvis</a>, <a href="../lfe/index.html">lfe</a>, <a href="../lightr/index.html">lightr</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/minfi.html"><span class="BioC">minfi</span></a>, <a href="../mlrCPO/index.html">mlrCPO</a>, <a href="../mosmafs/index.html">mosmafs</a>, <a href="../openssl/index.html">openssl</a>, <a href="../packager/index.html">packager</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/PanVizGenerator.html"><span class="BioC">PanVizGenerator</span></a>, <a href="../pavo/index.html">pavo</a>, <a href="../ProjectTemplate/index.html">ProjectTemplate</a>, <a href="../provTraceR/index.html">provTraceR</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/QDNAseq.html"><span class="BioC">QDNAseq</span></a>, <a href="../R.devices/index.html">R.devices</a>, <a href="../R.utils/index.html">R.utils</a>, <a href="../REBayes/index.html">REBayes</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../robustlmm/index.html">robustlmm</a>, <a href="../rotor/index.html">rotor</a>, <a href="../rstanarm/index.html">rstanarm</a>, <a href="../rstap/index.html">rstap</a>, <a href="../rts/index.html">rts</a>, <a href="../RxODE/index.html">RxODE</a>, <a href="../sdcTable/index.html">sdcTable</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/SeqArray.html"><span class="BioC">SeqArray</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/shinyMethyl.html"><span class="BioC">shinyMethyl</span></a>, <a href="../simulator/index.html">simulator</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/SPONGE.html"><span class="BioC">SPONGE</span></a>, <a href="../stars/index.html">stars</a>, <a href="../styler/index.html">styler</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/SummarizedExperiment.html"><span class="BioC">SummarizedExperiment</span></a>, <a href="../supreme/index.html">supreme</a>, <a href="../swirlify/index.html">swirlify</a>, <a href="../textmineR/index.html">textmineR</a>, <a href="../TurtleGraphics/index.html">TurtleGraphics</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/yamss.html"><span class="BioC">yamss</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=digest"><samp>https://CRAN.R-project.org/package=digest</samp></a>
+to link to this page.</p>
+</body>
+</html>

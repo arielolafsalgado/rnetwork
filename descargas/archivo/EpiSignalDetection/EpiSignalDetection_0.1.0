@@ -1,0 +1,48 @@
+Package: EpiSignalDetection
+Type: Package
+Title: Signal Detection Analysis
+Version: 0.1.0
+Date: 2018-10-29
+Authors@R: c( 
+  person( given = "Lore", family = "Merdrignac", 
+          role = c("aut", "ctr"), email = "l.merdrignac@epiconcept.fr", comment = "Author of the package and original code"),
+  person( given = "Joana", family = "Gomes Dias", 
+          role = c("aut", "fnd", "cre"), email = "joana.gomes.dias@ecdc.europa.eu", comment = "Project manager and package maintainer"),
+  person( given = "Esther", family = "Kissling", 
+          role = c("aut", "ctr"), email = "e.kissling@epiconcept.fr"),
+  person( given = "Tommi", family = "Karki", 
+          role = c("aut", "fnd"), email = "tommi.karki@ecdc.europa.eu"),
+  person( given = "Margot", family = "Einoder-Moreno", 
+          role = c("ctb", "fnd"), email = "margot.einoder-moreno@ecdc.europa.eu")) 
+Description: Exploring time series for signal detection. It is specifically designed
+    to detect possible outbreaks using infectious disease surveillance data
+    at the European Union / European Economic Area or country level.
+    Automatic detection tools used are presented in the paper
+    "Monitoring count time series in R: aberration detection in public health surveillance",
+    by Salmon et al. (2016) <doi:10.18637/jss.v070.i10>.
+    The package includes:
+    - Signal Detection tool, an interactive 'shiny' application
+      in which the user can import external data and perform basic signal detection analyses;
+    - An automated report in HTML format, presenting the results of the time series analysis in tables and graphs.
+      This report can also be stratified by population characteristics (see 'Population' variable).
+    This project was funded by the European Centre for Disease Prevention and Control.
+Depends: R (>= 3.4.0)
+License: EUPL
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.0
+Imports: shiny, dplyr, pander, DT, surveillance, ISOweek, ggplot2,
+        graphics, utils, knitr (>= 1.20), rmarkdown
+VignetteBuilder: knitr
+URL: http://atlas.ecdc.europa.eu/public/index.aspx
+NeedsCompilation: no
+Packaged: 2018-11-05 11:02:59 UTC; LMC
+Author: Lore Merdrignac [aut, ctr] (Author of the package and original code),
+  Joana Gomes Dias [aut, fnd, cre] (Project manager and package
+    maintainer),
+  Esther Kissling [aut, ctr],
+  Tommi Karki [aut, fnd],
+  Margot Einoder-Moreno [ctb, fnd]
+Maintainer: Joana Gomes Dias <joana.gomes.dias@ecdc.europa.eu>
+Repository: CRAN
+Date/Publication: 2018-11-14 11:10:12 UTC

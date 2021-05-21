@@ -1,0 +1,26 @@
+Package: greenclust
+Type: Package
+Title: Combine Categories Using Greenacre's Method
+Version: 1.0.0
+Authors@R: person("Jeff", "Jetton", , "jeff.jetton@gmail.com", c("aut", "cre"))
+Description: Implements a method of iteratively collapsing the rows of a
+    contingency table, two at a time, by selecting the pair of categories whose
+    combination yields a new table with the smallest loss of chi-squared, as
+    described by Greenacre, M.J. (1988) <doi:10.1007/BF01901670>. The result is
+    compatible with the class of object returned by the 'stats' package's
+    hclust() function and can be used similarly (plotted as a dendrogram,
+    cut, etc.). Additional functions are provided for automatic cutting and
+    diagnostic plotting.
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://github.com/JeffJetton/greenclust
+BugReports: https://github.com/JeffJetton/greenclust/issues
+LazyData: true
+RoxygenNote: 6.1.1
+Suggests: testthat, knitr, rmarkdown
+NeedsCompilation: no
+Packaged: 2019-07-16 12:25:43 UTC; jeffjetton
+Author: Jeff Jetton [aut, cre]
+Maintainer: Jeff Jetton <jeff.jetton@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-07-18 11:50:02 UTC

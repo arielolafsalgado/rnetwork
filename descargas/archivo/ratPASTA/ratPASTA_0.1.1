@@ -1,0 +1,47 @@
+Package: ratPASTA
+Type: Package
+Title: Processing Acoustic Startle Experimental Data
+Version: 0.1.1
+Authors@R: c(person(given = "Ivan",
+                    family = "Kodvanj",
+                    role = c("aut", "cre"),
+                    email = "ikodvanj@gmail.com",
+                    comment = c(ORCID = "0000-0002-1359-3701")),
+              person(given = "Davor",
+                     family = "Virag",
+                     role = c("aut"),
+                     email = "davor.virag@gmail.com",
+                     comment = c(ORCID = "0000-0003-3574-7107")),
+              person(given = "Jan",
+                     family = "Homolak",
+                     role = c("aut"),
+                     email = "homolakjan@gmail.com",
+                     comment = c(ORCID = "0000-0003-1508-3243")))
+Maintainer: Ivan Kodvanj <ikodvanj@gmail.com>
+Description: Used for processing data obtained from behaviour experiments studying
+    acoustic startle response, a reflex to a loud sound, modulated by several 
+    brain regions. The input data is generated with PASTA (Platform for Acoustic 
+    STArtle), a DIY device made from a kitchen scale that measures the twitch of 
+    an animal standing on the device and records it as time-series data. The 
+    function of this package is to import all data, process it in accordance 
+    with default or custom metadata describing the experiment protocol, calculate 
+    measurements and visualize the results. The PASTA solution and this package
+    are described in Virag et al. (2020) <doi:10.1101/2020.04.10.035766>.
+Depends: R (>= 2.10)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+Imports: dplyr, ggplot2, ggpubr, ggsci, hms, lubridate, magrittr, plyr,
+        rjson, stats, stringr, tidyr
+Suggests: knitr, rmarkdown, testthat, covr
+VignetteBuilder: knitr
+URL: https://github.com/ikodvanj/ratPASTA
+BugReports: https://github.com/ikodvanj/ratPASTA/issues
+NeedsCompilation: no
+Packaged: 2020-06-04 09:56:06 UTC; ivan
+Author: Ivan Kodvanj [aut, cre] (<https://orcid.org/0000-0002-1359-3701>),
+  Davor Virag [aut] (<https://orcid.org/0000-0003-3574-7107>),
+  Jan Homolak [aut] (<https://orcid.org/0000-0003-1508-3243>)
+Repository: CRAN
+Date/Publication: 2020-06-04 11:20:10 UTC

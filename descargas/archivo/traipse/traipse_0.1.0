@@ -1,0 +1,33 @@
+Package: traipse
+Title: Shared Tools for Tracking Data
+Version: 0.1.0
+Authors@R: 
+    c(
+    person(given = "Michael", 
+           family = "Sumner", 
+           email = "mdsumner@gmail.com", 
+           role = c("aut", "cre"), 
+           comment = c(ORCID = "0000-0002-2471-7511"))
+           )
+Description: A collection of commonly used tools for animal movement and other tracking 
+ data. Variously distance, angle, bearing, distance-to, bearing-to and speed are 
+ provided for geographic data that can be used directly or within 'tidyverse' 
+ syntax. Distances and bearings are calculated using modern geodesic methods as 
+ provided by Charles F. F. Karney (2013) <doi:10.1007/s00190-012-0578-z> 
+ via the 'geodist' and 'geosphere' packages. 
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Depends: R (>= 2.10)
+Imports: magrittr, geodist, geosphere
+URL: https://github.com/Trackage/traipse
+BugReports: https://github.com/Trackage/traipse/issues
+Suggests: covr, testthat (>= 2.1.0), dplyr, tibble, spelling
+Language: en-US
+NeedsCompilation: no
+Packaged: 2019-06-28 22:30:15 UTC; mdsumner
+Author: Michael Sumner [aut, cre] (<https://orcid.org/0000-0002-2471-7511>)
+Maintainer: Michael Sumner <mdsumner@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-07-02 12:10:02 UTC

@@ -1,0 +1,36 @@
+Package: origami
+Title: Generalized Framework for Cross-Validation
+Version: 1.0.0
+Authors@R: c(
+  person("Jeremy", "Coyle", email = "jeremyrcoyle@gmail.com",
+         role = c("aut", "cre", "cph"),
+         comment = c(ORCID = "0000-0002-9874-6649")),
+  person("Nima", "Hejazi", email = "nh@nimahejazi.org",
+         role = "aut",
+         comment = c(ORCID = "0000-0002-7127-2789")),
+  person("Ivana", "Malenica", email = "imalenica@berkeley.edu",
+         role = "ctb")
+  )
+Maintainer: Jeremy Coyle <jeremyrcoyle@gmail.com>
+Description: Provides a general framework for the application of
+    cross-validation schemes to particular functions. By allowing arbitrary
+    lists of results, origami accommodates a range of cross-validation
+    applications.
+Depends: R (>= 3.0.0),
+License: GPL-3
+URL: http://origami.tlverse.org
+BugReports: https://github.com/tlverse/origami/issues
+Encoding: UTF-8
+Imports: abind, methods, data.table, future, future.apply, listenv
+Suggests: future.batchtools, testthat, class, rmarkdown, knitr,
+        stringr, forecast, randomForest
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1.9000
+NeedsCompilation: no
+Packaged: 2018-03-06 19:11:36 UTC; jrcoyle
+Author: Jeremy Coyle [aut, cre, cph] (<https://orcid.org/0000-0002-9874-6649>),
+  Nima Hejazi [aut] (<https://orcid.org/0000-0002-7127-2789>),
+  Ivana Malenica [ctb]
+Repository: CRAN
+Date/Publication: 2018-03-06 19:22:10 UTC

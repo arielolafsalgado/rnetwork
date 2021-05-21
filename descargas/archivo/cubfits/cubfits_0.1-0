@@ -1,0 +1,37 @@
+Package: cubfits
+Version: 0.1-0
+Date: 2014-05-15
+Title: Codon Usage Bias Fits
+Authors@R: c(person("Wei-Chen", "Chen", role = c("aut", "cre"), email =
+       "wccsnow@gmail.com"),
+       person("Russell", "Zaretzki", role = "aut"),
+       person("William", "Howell", role = "aut"),
+       person("Drew", "Schmidt", role = "aut"),
+       person("Michael", "Gilchrist", role = "aut"),
+       person("Students", "REU13", role = "ctb"))
+Depends: R(>= 3.0.0), methods
+Suggests: seqinr, VGAM, EMCluster
+Enhances: pbdMPI (>= 0.2-2), parallel
+LazyLoad: yes
+LazyData: yes
+Description: Estimating mutation and selection coefficients on synonymous
+       codon bias usage based on models of ribosome overhead cost (ROC).
+       Multinomial logistic regression and Markov Chain Monte Carlo are used to
+       estimate and predict protein production rates with/without the presence
+       of expressions and measurement errors. Work flows with examples for
+       simulation, estimation and prediction processes are also provided
+       with parallelization speedup. The whole framework is tested with
+       yeast genome and gene expression data of Yassour (2009).
+License: Mozilla Public License 2.0
+URL: https://github.com/snoweye/cubfits
+Packaged: 2014-05-18 19:08:04 UTC; snoweye
+Author: Wei-Chen Chen [aut, cre],
+  Russell Zaretzki [aut],
+  William Howell [aut],
+  Drew Schmidt [aut],
+  Michael Gilchrist [aut],
+  Students REU13 [ctb]
+Maintainer: Wei-Chen Chen <wccsnow@gmail.com>
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2014-05-19 07:14:28

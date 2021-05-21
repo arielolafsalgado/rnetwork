@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package tdigest</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Wicked Fast, Accurate Quantiles Using t-Digests [R package tdigest version 0.3.0]" />
+<meta name="citation_author1" content="Bob Rudis" />
+<meta name="citation_author2" content="Ted Dunning" />
+<meta name="citation_author3" content="Andrew Werner" />
+<meta name="citation_publication_date" content="2019-08-01" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=tdigest" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=tdigest" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="tdigest: Wicked Fast, Accurate Quantiles Using t-Digests" />
+<meta name="og:description" content="The t-Digest construction algorithm, by Dunning et al., (2019) &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1902.04023v1&quot;&gt;arXiv:1902.04023v1&lt;/a&gt;&amp;gt;, uses a variant of 1-dimensional k-means clustering to produce a very compact data structure that allows accurate estimation of quantiles. This t-Digest data structure can be used to estimate quantiles, compute other rank statistics or even to estimate related measures like trimmed means. The advantage of the t-Digest over previous digests for this purpose is that the t-Digest handles data with full floating point resolution. The accuracy of quantile estimates produced by t-Digests can be orders of magnitude more accurate than those produced by previous digest algorithms. Methods are provided to create and update t-Digests and retrieve quantiles from the accumulated distributions." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=tdigest" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>tdigest: Wicked Fast, Accurate Quantiles Using t-Digests</h2>
+<p>The t-Digest construction algorithm, by 
+    Dunning et al., (2019) &lt;<a href="https://arxiv.org/abs/1902.04023v1">arXiv:1902.04023v1</a>&gt;, uses a variant of 1-dimensional 
+    k-means clustering to produce a very compact data structure that allows 
+    accurate estimation of quantiles. This t-Digest data structure can be used 
+    to estimate quantiles, compute other rank statistics or even to estimate 
+    related measures like trimmed means. The advantage of the t-Digest over 
+    previous digests for this purpose is that the t-Digest handles data with 
+    full floating point resolution. The accuracy of quantile estimates produced 
+    by t-Digests can be orders of magnitude more accurate than those produced 
+    by previous digest algorithms. Methods are provided to create and update 
+    t-Digests and retrieve quantiles from the accumulated distributions.</p>
+<table summary="Package tdigest summary">
+<tr>
+<td>Version:</td>
+<td>0.3.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../magrittr/index.html">magrittr</a>, stats</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../covr/index.html">covr</a>, <a href="../spelling/index.html">spelling</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-08-01</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Bob Rudis <a href="https://orcid.org/0000-0001-5670-2640"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    cre],
+  Ted Dunning [aut] (t-Digest algorithm;
+    &lt;https://github.com/tdunning/t-digest/&gt;),
+  Andrew Werner [aut] (Original C+ code;
+    &lt;https://github.com/ajwerner/tdigest&gt;)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Bob Rudis  &#x3c;&#x62;&#x6f;&#x62;&#x20;&#x61;&#x74;&#x20;&#x72;&#x75;&#x64;&#x2e;&#x69;&#x73;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://gitlab.com/hrbrmstr/tdigest/issues">https://gitlab.com/hrbrmstr/tdigest/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>Copyright:</td>
+<td>file inst/COPYRIGHTS <br/>  <a href="COPYRIGHTS">tdigest copyright details</a> </td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://gitlab.com/hrbrmstr/tdigest">https://gitlab.com/hrbrmstr/tdigest</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_tdigest.html">tdigest results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package tdigest downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="tdigest.pdf"> tdigest.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/tdigest_0.3.0.tar.gz"> tdigest_0.3.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/tdigest_0.3.0.zip">tdigest_0.3.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/tdigest_0.3.0.zip">tdigest_0.3.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/tdigest_0.3.0.zip">tdigest_0.3.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/tdigest_0.3.0.tgz">tdigest_0.3.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/tdigest_0.3.0.tgz">tdigest_0.3.0.tgz</a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package tdigest reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../meboot/index.html">meboot</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../NNS/index.html">NNS</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=tdigest"><samp>https://CRAN.R-project.org/package=tdigest</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,44 @@
+Package: sarima
+Type: Package
+Title: Simulation and Prediction with Seasonal ARIMA Models
+Version: 0.8.2
+Date: 2020-03-02
+Authors@R: c( person(given = c("Georgi", "N."), 
+                     family = "Boshnakov", 
+                     role = c("aut", "cre"), 
+                     email = "georgi.boshnakov@manchester.ac.uk"), 
+	      person(given = "Jamie", 
+	             family = "Halliday", 
+	             role = "aut", email = "jamie.halliday@manchester.ac.uk") )
+Description: Functions, classes and methods for time series modelling with ARIMA
+    and related models. The aim of the package is to provide consistent
+    interface for the user. For example, a single function autocorrelations()
+    computes various kinds of theoretical and sample autocorrelations. This is
+    work in progress, see the documentation and vignettes for the current
+    functionality.  Function sarima() fits extended multiplicative seasonal
+    ARIMA models with trends, exogenous variables and arbitrary roots on the
+    unit circle, which can be fixed or estimated.
+URL: https://github.com/GeoBosh/sarima
+        https://geobosh.github.io/sarima/
+BugReports: https://github.com/GeoBosh/sarima/issues
+Depends: R (>= 2.10), FitAR, stats4
+Imports: methods, graphics, stats, utils, PolynomF (>= 1.0-0), Formula,
+        ltsa, FitARMA, lagged (>= 0.2.1), Rdpack, KFAS, FKF, Rcpp (>=
+        0.12.14), numDeriv, dplyr
+Suggests: fGarch, fImport, testthat
+RdMacros: Rdpack
+License: GPL (>= 2)
+LazyLoad: yes
+Collate: RcppExports.R utils.R generics.R filterClasses.R
+        modelClasses.R sarima.R autocovariances.R armacalc.R fit.R
+        wrapKFAS.R arma_Q0dotdotstats.R Kalman.R fitTools.R
+        periodogram.R predict.Sarima.R zzz.R
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 6.1.1
+NeedsCompilation: yes
+Packaged: 2020-03-02 09:11:21 UTC; georgi
+Author: Georgi N. Boshnakov [aut, cre],
+  Jamie Halliday [aut]
+Maintainer: Georgi N. Boshnakov <georgi.boshnakov@manchester.ac.uk>
+Repository: CRAN
+Date/Publication: 2020-03-02 10:30:02 UTC

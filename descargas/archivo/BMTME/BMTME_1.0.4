@@ -1,0 +1,42 @@
+Package: BMTME
+Title: Bayesian Multi-Trait Multi-Environment for Genomic Selection
+        Analysis
+Version: 1.0.4
+Date: 2018-12-25
+Language: en-US
+Authors@R: c(person("Francisco Javier", "Luna-Vazquez", email = "frahik@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-5370-7152")),
+             person("Fernando H.", "Toledo", role = "aut"),
+             person("Osval Antonio", "Montesinos-Lopez", email= "oamontes1@ucol.mx", role = "aut", comment = c(ORCID = "0000-0002-3973-6547")),
+             person("Abelardo", "Montesinos-Lopez", role = "aut"),
+             person("Jose", "Crossa", role = "aut", comment = c(ORCID = "0000-0001-9429-5855")))
+Maintainer: Francisco Javier Luna-Vazquez <frahik@gmail.com>
+Description: Genomic selection and prediction models with the capacity to use multiple traits and environments, through ready-to-use Bayesian models. It consists a group of functions 
+             that help to create regression models for some genomic models proposed by Montesinos-López, et al. (2016) <doi:10.1534/g3.116.032359>
+             also in Montesinos-López et al. (2018) <doi:10.1534/g3.118.200728> and Montesinos-López et al. (2018) <doi:10.2134/agronj2018.06.0362>.
+Depends: R (>= 3.0.0)
+License: LGPL-3
+Encoding: UTF-8
+LazyData: true
+Type: Package
+RoxygenNote: 6.1.1
+URL: https://github.com/frahik/BMTME
+BugReports: https://github.com/frahik/BMTME/issues/new
+NeedsCompilation: yes
+Collate: BME.R BMTME.R BMTME_Package.R BMORS.R BMORSEnv.R cholesky.R
+        datasets.R detectCore.R RandomPartition.R RcppExports.R utils.R
+Imports: BGLR, doSNOW, dplyr, foreach, matrixcalc, mvtnorm, progress,
+        snow, tidyr
+LinkingTo: Rcpp, RcppArmadillo
+SystemRequirements: C++11
+Suggests: covr, knitr, rmarkdown, testthat,
+VignetteBuilder: knitr
+Packaged: 2019-01-06 17:58:50 UTC; frahik
+Author: Francisco Javier Luna-Vazquez [aut, cre]
+    (<https://orcid.org/0000-0002-5370-7152>),
+  Fernando H. Toledo [aut],
+  Osval Antonio Montesinos-Lopez [aut]
+    (<https://orcid.org/0000-0002-3973-6547>),
+  Abelardo Montesinos-Lopez [aut],
+  Jose Crossa [aut] (<https://orcid.org/0000-0001-9429-5855>)
+Repository: CRAN
+Date/Publication: 2019-01-11 17:20:10 UTC

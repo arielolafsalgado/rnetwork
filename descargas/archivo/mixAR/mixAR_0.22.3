@@ -1,0 +1,46 @@
+Package: mixAR
+Type: Package
+Title: Mixture Autoregressive Models
+Version: 0.22.3
+Date: 2020-06-13
+Authors@R: c( person(given = c("Georgi", "N."), 
+                     family = "Boshnakov", 
+                     role = c("aut", "cre"), 
+                     email = "georgi.boshnakov@manchester.ac.uk"), 
+	      person(given = "Davide", 
+	             family = "Ravagli", 
+	             role = "aut", email = "davide.ravagli@manchester.ac.uk") )
+Maintainer: Georgi N. Boshnakov <georgi.boshnakov@manchester.ac.uk>
+Description: Model time series using mixture autoregressive (MAR)
+             models.  Implemented are frequentist (EM) and Bayesian
+             methods for estimation, prediction and model
+             evaluation. See Wong and Li (2002)
+             <doi:10.1111/1467-9868.00222>, Boshnakov (2009)
+             <doi:10.1016/j.spl.2009.04.009>), and the extensive
+             references in the documentation.
+License: GPL (>= 2)
+LazyLoad: yes
+Depends: R (>= 3.5), methods
+Imports: stats, graphics, utils, stats4, BB, combinat, timeDate,
+        fGarch, Rdpack (>= 0.7), gbutils (>= 0.3-1), MCMCpack, e1071,
+        permute, mvtnorm
+Suggests: fma, testthat
+RdMacros: Rdpack
+URL: https://geobosh.github.io/mixAR/ (website),
+        https://github.com/GeoBosh/mixAR/ (devel)
+BugReports: https://github.com/GeoBosh/mixAR/issues
+Collate: raggedCoef.R raggedCoefS.R mixComp.R mixAR.R mixARcalc.R
+        mixutil.R dist.R predict.R mix_se.R obs_info_matrix.R
+        samp_functions.R bayes_mixAR.R label_switch.R Choose_pk.R
+        marg_loglik.R mixSARfit.R mixARreg.R fit_mixARreg.R
+        raggedCoefV.R mixVAR.R fit_mixVAR.R cond_loglikV.R mixVAR_sim.R
+        mixAR_diag.R devel.R em0.R emGaussian.R emgen.R 00marmath.R
+        exmodels.R mixARsim.R
+Encoding: UTF-8
+RoxygenNote: 7.1.0
+NeedsCompilation: no
+Packaged: 2020-06-13 19:30:58 UTC; georgi
+Author: Georgi N. Boshnakov [aut, cre],
+  Davide Ravagli [aut]
+Repository: CRAN
+Date/Publication: 2020-06-22 08:40:03 UTC

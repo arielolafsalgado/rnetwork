@@ -1,0 +1,31 @@
+Package: actel
+Title: Acoustic Telemetry Data Analysis
+Version: 1.1.0
+Authors@R: person("Hugo", "Flávio", role = c("aut", "cre"), email = "hdmfla@aqua.dtu.dk", comment = c(ORCID = "0000-0002-5174-1197"))
+Description: Designed for studies where fish tagged with acoustic tags are expected
+    to move through receiver arrays. This package combines the advantages of automatic sorting and checking 
+    of fish movements with the possibility for user intervention on tags that deviate from expected 
+    behaviour. The three analysis functions (explore(), migration() and residency()) 
+    allow the users to analyse their data in a systematic way, making it easy to compare results from 
+    different studies.
+    CJS calculations are based on Perry et al. (2012) <https://www.researchgate.net/publication/256443823_Using_mark-recapture_models_to_estimate_survival_from_telemetry_data>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Language: en-GB
+Depends: R (>= 3.6)
+Imports: circular, data.table, DiagrammeR, DiagrammeRsvg, fasttime,
+        ggplot2, svglite, graphics, knitr, readr, reshape2, rmarkdown,
+        rsvg, scales, stats, stringr, stringi, grDevices, utils
+Suggests: raster, gdistance, sp, tools, rgdal, testthat, RGtk2,
+        gWidgets2RGtk2, gWidgets2
+VignetteBuilder: knitr
+URL: https://github.com/hugomflavio/actel
+BugReports: https://github.com/hugomflavio/actel/issues
+NeedsCompilation: no
+Packaged: 2020-08-01 10:40:56 UTC; hdmfla
+Author: Hugo Flávio [aut, cre] (<https://orcid.org/0000-0002-5174-1197>)
+Maintainer: Hugo Flávio <hdmfla@aqua.dtu.dk>
+Repository: CRAN
+Date/Publication: 2020-08-01 11:10:11 UTC

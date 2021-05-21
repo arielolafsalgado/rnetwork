@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package robustrao</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=robustrao" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="robustrao: An Extended Rao-Stirling Diversity Index to Handle Missing Data" />
+<meta name="og:description" content="A collection of functions to compute the Rao-Stirling diversity index (Porter and Rafols, 2009) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs11192-008-2197-2&quot;&gt;doi:10.1007/s11192-008-2197-2&lt;/a&gt;&amp;gt; and its extension to acknowledge missing data (i.e., uncategorized references) by calculating its interval of uncertainty using mathematical optimization as proposed in Calatrava et al. (2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs11192-016-1842-4&quot;&gt;doi:10.1007/s11192-016-1842-4&lt;/a&gt;&amp;gt;. The Rao-Stirling diversity index is a well-established bibliometric indicator to measure the interdisciplinarity of scientific publications. Apart from the obligatory dataset of publications with their respective references and a taxonomy of disciplines that categorizes references as well as a measure of similarity between the disciplines, the Rao-Stirling diversity index requires a complete categorization of all references of a publication into disciplines. Thus, it fails for a incomplete categorization; in this case, the robust extension has to be used, which encodes the uncertainty caused by missing bibliographic data as an uncertainty interval. Classification / ACM - 2012: Information systems ~ Similarity measures, Theory of computation ~ Quadratic programming, Applied computing ~ Digital libraries and archives." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=robustrao" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>robustrao: An Extended Rao-Stirling Diversity Index to Handle Missing Data</h2>
+<p>A collection of functions to compute the Rao-Stirling diversity index
+	(Porter and Rafols, 2009) &lt;<a href="https://doi.org/10.1007%2Fs11192-008-2197-2">doi:10.1007/s11192-008-2197-2</a>&gt; and its extension to
+	acknowledge missing data (i.e.,	uncategorized references) by calculating its
+	interval of uncertainty using	mathematical optimization as proposed in Calatrava
+	et al. (2016) &lt;<a href="https://doi.org/10.1007%2Fs11192-016-1842-4">doi:10.1007/s11192-016-1842-4</a>&gt;.
+	The Rao-Stirling diversity index is a well-established bibliometric indicator
+	to measure the interdisciplinarity of scientific publications. Apart from the
+	obligatory dataset of publications with their respective references and	a
+	taxonomy of disciplines that categorizes references as well as a measure of
+	similarity between the disciplines, the Rao-Stirling diversity index requires
+	a complete categorization of all references of a publication into disciplines.
+	Thus, it fails for a incomplete categorization; in this case, the robust
+	extension has to be used, which encodes the uncertainty caused by missing
+	bibliographic data as an uncertainty interval.
+	Classification / ACM - 2012: Information systems ~ Similarity measures,
+	Theory of computation ~ Quadratic	programming, Applied computing ~ Digital
+	libraries and archives.</p>
+<table summary="Package robustrao summary">
+<tr>
+<td>Version:</td>
+<td>1.0-5</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.2)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../doParallel/index.html">doParallel</a> (&ge; 1.0.10), <a href="../gmp/index.html">gmp</a> (&ge; 0.5-12), <a href="../iterpc/index.html">iterpc</a> (&ge; 0.3.0), <a href="../quadprog/index.html">quadprog</a> (&ge; 1.5-5), <a href="../igraph/index.html">igraph</a> (&ge; 1.0.1), <a href="../foreach/index.html">foreach</a> (&ge; 1.4.3)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-01-24</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Maria del Carmen Calatrava Moreno [aut, cre],
+	Thomas Auzinger [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Maria del Carmen Calatrava Moreno
+ &#x3c;&#x6d;&#x63;&#x2e;&#x63;&#x61;&#x6c;&#x61;&#x74;&#x72;&#x61;&#x76;&#x61;&#x2e;&#x6d;&#x6f;&#x72;&#x65;&#x6e;&#x6f;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://gitlab.com/mc.calatrava.moreno/robustrao.git">https://gitlab.com/mc.calatrava.moreno/robustrao.git</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">robustrao citation info</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/MissingData.html">MissingData</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_robustrao.html">robustrao results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package robustrao downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="robustrao.pdf"> robustrao.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/robustrao_1.0-5.tar.gz"> robustrao_1.0-5.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/robustrao_1.0-5.zip">robustrao_1.0-5.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/robustrao_1.0-5.zip">robustrao_1.0-5.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/robustrao_1.0-5.zip">robustrao_1.0-5.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/robustrao_1.0-5.tgz">robustrao_1.0-5.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/robustrao_1.0-5.tgz">robustrao_1.0-5.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/robustrao"> robustrao archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=robustrao"><samp>https://CRAN.R-project.org/package=robustrao</samp></a>
+to link to this page.</p>
+</body>
+</html>

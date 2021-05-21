@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package cSEM</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Composite-Based Structural Equation Modeling [R package cSEM version 0.3.0]" />
+<meta name="citation_author1" content="Manuel E. Rademaker" />
+<meta name="citation_author2" content="Florian Schuberth" />
+<meta name="citation_publication_date" content="2020-10-12" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=cSEM" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=cSEM" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="cSEM: Composite-Based Structural Equation Modeling" />
+<meta name="og:description" content="Estimate, assess, test, and study linear, nonlinear, hierarchical and multigroup structural equation models using composite-based approaches and procedures, including estimation techniques such as partial least squares path modeling (PLS-PM) and its derivatives (PLSc, ordPLSc, robustPLSc), generalized structured component analysis (GSCA), generalized structured component analysis with uniqueness terms (GSCAm), generalized canonical correlation analysis (GCCA), principal component analysis (PCA), factor score regression (FSR) using sum score, regression or bartlett scores (including bias correction using Croon’s approach), as well as several tests and typical postestimation procedures (e.g., verify admissibility of the estimates, assess the model fit, test the model fit etc.)." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=cSEM" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>cSEM: Composite-Based Structural Equation Modeling</h2>
+<p>Estimate, assess, test, and study linear, nonlinear, hierarchical 
+  and multigroup structural equation models using composite-based approaches 
+  and procedures, including estimation techniques such as partial least squares 
+  path modeling (PLS-PM) and its derivatives (PLSc, ordPLSc, robustPLSc), 
+  generalized structured component analysis (GSCA), generalized structured 
+  component analysis with uniqueness terms (GSCAm), generalized canonical 
+  correlation analysis (GCCA), principal component analysis (PCA), 
+  factor score regression (FSR) using sum score, regression or 
+  bartlett scores (including bias correction using Croon’s approach), 
+  as well as several tests and typical postestimation procedures 
+  (e.g., verify admissibility of the estimates, assess the model fit, 
+  test the model fit etc.).</p>
+<table summary="Package cSEM summary">
+<tr>
+<td>Version:</td>
+<td>0.3.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../abind/index.html">abind</a>, <a href="../alabama/index.html">alabama</a>, <a href="../cli/index.html">cli</a>, <a href="../crayon/index.html">crayon</a>, <a href="../expm/index.html">expm</a> (&ge; 0.999-5), <a href="../future.apply/index.html">future.apply</a>, <a href="../future/index.html">future</a>, <a href="../lavaan/index.html">lavaan</a>, <a href="../magrittr/index.html">magrittr</a>, <a href="../MASS/index.html">MASS</a>, <a href="../Matrix/index.html">Matrix</a>, <a href="../matrixcalc/index.html">matrixcalc</a>, <a href="../matrixStats/index.html">matrixStats</a>, <a href="../polycor/index.html">polycor</a>, <a href="../progressr/index.html">progressr</a>, <a href="../psych/index.html">psych</a>, <a href="../purrr/index.html">purrr</a>, <a href="../Rdpack/index.html">Rdpack</a>, <a href="../rlang/index.html">rlang</a>, stats, <a href="../symmoments/index.html">symmoments</a>, utils, <a href="../lifecycle/index.html">lifecycle</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../dplyr/index.html">dplyr</a>, <a href="../tidyr/index.html">tidyr</a>, <a href="../knitr/index.html">knitr</a>, <a href="../nnls/index.html">nnls</a>, <a href="../prettydoc/index.html">prettydoc</a>, <a href="../plotly/index.html">plotly</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../rootSolve/index.html">rootSolve</a>, <a href="../listviewer/index.html">listviewer</a>, <a href="../testthat/index.html">testthat</a>, <a href="../ggplot2/index.html">ggplot2</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-12</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Manuel E. Rademaker
+    <a href="https://orcid.org/0000-0002-8902-3561"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut, cre],
+  Florian Schuberth <a href="https://orcid.org/0000-0002-2110-9086"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Tamara Schamberger
+    <a href="https://orcid.org/0000-0002-7845-784X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb],
+  Michael Klesel <a href="https://orcid.org/0000-0002-2884-1819"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Theo K. Dijkstra [ctb],
+  Jörg Henseler <a href="https://orcid.org/0000-0002-9736-3048"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Manuel E. Rademaker  &#x3c;&#x6d;&#x61;&#x6e;&#x75;&#x65;&#x6c;&#x2e;&#x72;&#x61;&#x64;&#x65;&#x6d;&#x61;&#x6b;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x75;&#x6e;&#x69;&#x2d;&#x77;&#x75;&#x65;&#x72;&#x7a;&#x62;&#x75;&#x72;&#x67;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/M-E-Rademaker/cSEM/issues">https://github.com/M-E-Rademaker/cSEM/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/M-E-Rademaker/cSEM">https://github.com/M-E-Rademaker/cSEM</a>,
+<a href="https://m-e-rademaker.github.io/cSEM/">https://m-e-rademaker.github.io/cSEM/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">cSEM citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_cSEM.html">cSEM results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package cSEM downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="cSEM.pdf"> cSEM.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Notation.html">csem-notation</a><br/>
+<a href="vignettes/Terminology.html">csem-terminology</a><br/>
+<a href="vignettes/Using-assess.html">using-assess</a><br/>
+<a href="vignettes/cSEM.html">csem-basic</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/cSEM_0.3.0.tar.gz"> cSEM_0.3.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/cSEM_0.3.0.zip">cSEM_0.3.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/cSEM_0.3.0.zip">cSEM_0.3.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/cSEM_0.3.0.zip">cSEM_0.3.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/cSEM_0.3.0.tgz">cSEM_0.3.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/cSEM_0.3.0.tgz">cSEM_0.3.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/cSEM"> cSEM archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=cSEM"><samp>https://CRAN.R-project.org/package=cSEM</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,34 @@
+Package: anyflights
+Title: Query `nycflights13`-Like Air Travel Data for Given Years and
+        Airports
+Version: 0.2.0
+Authors@R: c(
+    person("Simon P.", "Couch", , "simonpatrickcouch@gmail.com", c("aut", "cre")),
+    person("Hadley", "Wickham", , "hadley@rstudio.com", "aut"),
+    person("RStudio", role = "cph"),
+    person("Jay", "Lee", , "jaylee@reed.edu", "ctb"),
+    person("Dennis", "Irorere", , "denironyx@gmail.com", "ctb")
+    )
+Description: Supplies a set of functions to query air travel data for user-
+    specified years and airports. Datasets include on-time flights, airlines,
+    airports, planes, and weather.
+License: CC0
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: httr, dplyr, readr, utils, tibble, lubridate, vroom, glue,
+        purrr, stringr, curl, usethis, Rd2roxygen
+URL: http://github.com/simonpcouch/anyflights
+BugReports: https://github.com/simonpcouch/anyflights/issues
+RoxygenNote: 7.0.2
+Encoding: UTF-8
+Suggests: testthat, nycflights13, covr
+NeedsCompilation: no
+Packaged: 2020-04-27 04:51:19 UTC; simonpcouch
+Author: Simon P. Couch [aut, cre],
+  Hadley Wickham [aut],
+  RStudio [cph],
+  Jay Lee [ctb],
+  Dennis Irorere [ctb]
+Maintainer: Simon P. Couch <simonpatrickcouch@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-04-27 13:20:03 UTC

@@ -1,0 +1,33 @@
+Package: sourceR
+Type: Package
+Title: Fits a Non-Parametric Bayesian Source Attribution Model
+Version: 0.2.0
+Date: 2016-06-21
+Authors@R: c(person("Poppy", "Miller", email = "p.miller@lancaster.ac.uk",
+  role = c("aut", "cre")),
+  person("Chris", "Jewell", role = "aut"),
+  person("Jonathan", "Marshall", role = "aut"),
+  person("Nigel", "French", role = "aut"))
+Description: Implements a non-parametric source attribution model
+    to attribute cases of disease to sources in Bayesian framework with source and
+    type effects. Type effects are clustered using a Dirichlet Process. Multiple
+    times and locations are supported.
+License: GPL-3
+Imports: gtools (>= 3.4.1), Rlab (>= 2.15.1), SPIn (>= 1.1), inline (>=
+        0.3.13), Rcpp (>= 0.11.3), methods, plyr (>= 1.8.3)
+Depends: R (>= 3.1.2)
+Suggests: cluster (>= 1.15.3), ggplot2 (>= 1.1.0), gplots (>= 2.16.0),
+        knitr
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 5.0.1
+LazyData: true
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2016-06-21 16:11:40 UTC; millerp
+Author: Poppy Miller [aut, cre],
+  Chris Jewell [aut],
+  Jonathan Marshall [aut],
+  Nigel French [aut]
+Maintainer: Poppy Miller <p.miller@lancaster.ac.uk>
+Repository: CRAN
+Date/Publication: 2016-06-21 19:57:31

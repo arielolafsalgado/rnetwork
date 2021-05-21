@@ -1,0 +1,30 @@
+Package: randomUniformForest
+Type: Package
+Title: Random Uniform Forests for Classification, Regression and
+        Unsupervised Learning
+Version: 1.1.2
+Date: 2015-12-05
+Author: Saip Ciss
+Maintainer: Saip Ciss <saip.ciss@wanadoo.fr>
+Description: Ensemble model, for classification, regression
+	and unsupervised learning, based on a forest of unpruned 
+	and randomized binary decision trees. Each tree is grown 
+	by sampling, with replacement, a set of variables at each node. 
+	Each cut-point is generated randomly, according to the continuous 
+	Uniform distribution. For each tree, data are either bootstrapped 
+	or subsampled. The unsupervised mode introduces clustering, dimension reduction
+	and variable importance, using a three-layer engine. Random Uniform Forests are mainly 
+	aimed to lower correlation between trees (or trees residuals), to provide a deep analysis 
+	of variable importance and to allow native distributed and incremental learning.
+License: BSD_3_clause + file LICENSE
+LazyData: yes
+Depends: R (>= 3.0.0)
+Imports: methods, Rcpp (>= 0.11.1), parallel, doParallel, iterators,
+        foreach (>= 1.4.2), ggplot2, pROC, gtools, cluster, MASS
+Suggests: R.rsp
+VignetteBuilder: R.rsp
+LinkingTo: Rcpp
+Packaged: 2015-01-05 23:13:32 UTC; zidd
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2015-01-06 05:47:19

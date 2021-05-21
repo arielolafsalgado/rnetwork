@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package MSCMT</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Multivariate Synthetic Control Method Using Time Series [R package MSCMT version 1.3.4]" />
+<meta name="citation_author1" content="Martin Becker" />
+<meta name="citation_author2" content="Stefan Klößner" />
+<meta name="citation_publication_date" content="2019-11-14" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=MSCMT" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=MSCMT" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="MSCMT: Multivariate Synthetic Control Method Using Time Series" />
+<meta name="og:description" content="Three generalizations of the synthetic control method (which has already an implementation in package 'Synth') are implemented: first, 'MSCMT' allows for using multiple outcome variables, second, time series can be supplied as economic predictors, and third, a well-defined cross-validation approach can be used. Much effort has been taken to make the implementation as stable as possible (including edge cases) without losing computational efficiency. A detailed description of the main algorithms is given in Becker and Klößner (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.ecosta.2017.08.002&quot;&gt;doi:10.1016/j.ecosta.2017.08.002&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=MSCMT" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>MSCMT: Multivariate Synthetic Control Method Using Time Series</h2>
+<p>Three generalizations of the synthetic control method (which has 
+    already an implementation in package 'Synth') are implemented: first, 
+    'MSCMT' allows for using multiple outcome variables, second, time series 
+    can be supplied as economic predictors, and third, a well-defined 
+    cross-validation approach can be used.
+    Much effort has been taken to make the implementation as stable as possible 
+    (including edge cases) without losing computational efficiency.
+    A detailed description of the main algorithms is given in 
+    Becker and Klößner (2018) &lt;<a href="https://doi.org/10.1016%2Fj.ecosta.2017.08.002">doi:10.1016/j.ecosta.2017.08.002</a>&gt;.</p>
+<table summary="Package MSCMT summary">
+<tr>
+<td>Version:</td>
+<td>1.3.4</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.2.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>stats, utils, parallel, <a href="../lpSolve/index.html">lpSolve</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../lpSolveAPI/index.html">lpSolveAPI</a>, <a href="../Rglpk/index.html">Rglpk</a>, <a href="../Rdpack/index.html">Rdpack</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../Synth/index.html">Synth</a>, <a href="../DEoptim/index.html">DEoptim</a>, <a href="../rgenoud/index.html">rgenoud</a>, <a href="../DEoptimR/index.html">DEoptimR</a>, <a href="../GenSA/index.html">GenSA</a>, <a href="../GA/index.html">GA</a>, <a href="../soma/index.html">soma</a>, <a href="../cmaes/index.html">cmaes</a>, <a href="../Rmalschains/index.html">Rmalschains</a>, <a href="../NMOF/index.html">NMOF</a>, <a href="../nloptr/index.html">nloptr</a>, <a href="../hydroPSO/index.html">hydroPSO</a>, <a href="../pso/index.html">pso</a>, <a href="../LowRankQP/index.html">LowRankQP</a>, <a href="../kernlab/index.html">kernlab</a>, <a href="../reshape/index.html">reshape</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-11-14</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Martin Becker <a href="https://orcid.org/0000-0003-2336-9751"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Stefan Klößner [aut],
+  Karline Soetaert [com],
+  Jack Dongarra [cph],
+  R.J. Hanson [cph],
+  K.H. Haskell [cph],
+  Cleve Moler [cph],
+  LAPACK authors [cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Martin Becker  &#x3c;&#x6d;&#x61;&#x72;&#x74;&#x69;&#x6e;&#x2e;&#x62;&#x65;&#x63;&#x6b;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x6d;&#x78;&#x2e;&#x75;&#x6e;&#x69;&#x2d;&#x73;&#x61;&#x61;&#x72;&#x6c;&#x61;&#x6e;&#x64;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL]</td>
+</tr>
+<tr>
+<td>Copyright:</td>
+<td>inst/COPYRIGHTS <br/>  <a href="COPYRIGHTS">MSCMT copyright details</a> </td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_MSCMT.html">MSCMT results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package MSCMT downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="MSCMT.pdf"> MSCMT.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/CheckingSynth.html">Checking and Improving Results of package Synth</a><br/>
+<a href="vignettes/UsingTimeSeries.html">SCM Using Time Series</a><br/>
+<a href="vignettes/WorkingWithMSCMT.html">Working with package MSCMT</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/MSCMT_1.3.4.tar.gz"> MSCMT_1.3.4.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/MSCMT_1.3.4.zip">MSCMT_1.3.4.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/MSCMT_1.3.4.zip">MSCMT_1.3.4.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/MSCMT_1.3.4.zip">MSCMT_1.3.4.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/MSCMT_1.3.4.tgz">MSCMT_1.3.4.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/MSCMT_1.3.4.tgz">MSCMT_1.3.4.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/MSCMT"> MSCMT archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=MSCMT"><samp>https://CRAN.R-project.org/package=MSCMT</samp></a>
+to link to this page.</p>
+</body>
+</html>

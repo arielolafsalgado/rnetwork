@@ -1,0 +1,19 @@
+Package: pbmcapply
+Type: Package
+Title: Tracking the Progress of Mc*pply with Progress Bar
+Version: 1.3.0
+Author: Kevin Kuang (aut), Francesco Napolitano (ctb)
+Maintainer: Kevin kuang <kvn.kuang@mail.utoronto.ca>
+Description: A light-weight package helps you track and visualize
+  the progress of parallel version of vectorized R functions (mc*apply).
+  Parallelization (mc.core > 1) works only on *nix (Linux, Unix such as macOS) system due to
+  the lack of fork() functionality, which is essential for mc*apply, on Windows.
+Depends: utils, parallel, future
+BugReports: https://github.com/kvnkuang/pbmcapply/issues
+URL: https://github.com/kvnkuang/pbmcapply
+License: MIT + file LICENSE
+LazyData: TRUE
+NeedsCompilation: no
+Packaged: 2018-11-05 03:50:27 UTC; kevin
+Repository: CRAN
+Date/Publication: 2018-11-05 05:30:02 UTC

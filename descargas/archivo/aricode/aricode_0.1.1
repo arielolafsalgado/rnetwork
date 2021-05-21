@@ -1,0 +1,32 @@
+Package: aricode
+Type: Package
+Title: Efficient Computations of Standard Clustering Comparison
+        Measures
+Version: 0.1.1
+Authors@R: c(
+    person("Julien", "Chiquet", role = c("aut", "cre"), email = "julien.chiquet@inra.fr",
+      comment = c(ORCID = "0000-0002-3629-3429")),
+    person("Guillem", "Rigaill", role = "aut", email = "guillem.rigaill@inra.fr"),
+    person("Valentin", "Dervieux", role = "ctb", email = "valentin.dervieux@gmail.com")
+  )
+Maintainer: Julien Chiquet <julien.chiquet@inra.fr>
+Description: Implements an efficient O(n) algorithm based on bucket-sorting for 
+    fast computation of standard clustering comparison measures. Available measures
+    include adjusted Rand index (ARI), normalized information distance (NID), 
+    normalized mutual information (NMI), normalized variation information (NVI) and
+    entropy, as described in Vinh et al (2009) <doi:10.1145/1553374.1553511>.
+License: GPL (>= 3)
+URL: https://github.com/jchiquet/aricode (dev version)
+BugReports: https://github.com/jchiquet/aricode/issues
+LazyData: TRUE
+Imports: Matrix, Rcpp
+Suggests: testthat
+LinkingTo: Rcpp
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2018-05-02 19:43:51 UTC; jchiquet
+Author: Julien Chiquet [aut, cre] (<https://orcid.org/0000-0002-3629-3429>),
+  Guillem Rigaill [aut],
+  Valentin Dervieux [ctb]
+Repository: CRAN
+Date/Publication: 2018-05-02 20:29:02 UTC

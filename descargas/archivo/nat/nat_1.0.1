@@ -1,0 +1,32 @@
+Package: nat
+Type: Package
+Title: nat: NeuroAnatomy Toolbox for Analysis of 3D Image Data
+Version: 1.0.1
+Date: 2013-02-06
+Author: Greg Jefferis with contributions from Ashley Manton
+Maintainer: Greg Jefferis <jefferis@gmail.com>
+URL: https://github.com/jefferis/nat http://jefferislab.org
+Description: This package is a reboot of the AnalysisSuite
+    (https://github.com/jefferis/AnalysisSuite) bundle of R code that I have
+    been using for a number of years to analyse and visualise 3D biological
+    image data, especially traced neurons. AnalysisSuite is most easily
+    installed using the nat.as package presently available at
+    https://github.com/jefferis/nat.as. The nat package is considerably cleaner
+    but currently provides only a subset of the full functionality of nat.as /
+    AnalysisSuite. nat can read 3D images and surfaces in Amira formats. Traced
+    neurons can be imported from SWC and Amira SkeletonGraph format. These data
+    can then be visualised in 3D via rgl, manipulated including applying
+    calculated registrations, e.g. using the CMTK registration suite, and
+    analysed. There package also has a simple representation for neurons that
+    have been subjected to a 3D skeletonisation but not formally traced; this
+    allows morphological comparison between neurons including searches and
+    clustering.
+Depends: R (>= 2.15.1), rgl
+Imports: RANN, igraph, methods, filehash
+Suggests: testthat
+License: GPL-3
+LazyData: yes
+Packaged: 2014-02-06 23:44:28 UTC; jefferis
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2014-02-07 13:56:28

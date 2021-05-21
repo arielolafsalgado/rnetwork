@@ -1,0 +1,26 @@
+Package: stepR
+Title: Multiscale Change-Point Inference
+Version: 2.0-1
+Authors@R: c(person("Pein", "Florian", role = "aut", email = "fpein@uni-goettingen.de"),
+    person("Thomas", "Hotz", role = "aut", email = "thomas.hotz@tu-ilmenau.de"),
+    person("Hannes", "Sieling", role = "aut", email = "hsielin@uni-goettingen.de"),
+    person("Timo", "Aspelmeier", role = "cre", email = "timo.aspelmeier@mathematik.uni-goettingen.de"))
+Depends: R (>= 3.0.0)
+Imports: Rcpp (>= 0.12.3), R.cache (>= 0.10.0), digest (>= 0.6.10),
+        stats, graphics, methods
+LinkingTo: Rcpp
+Suggests: testthat (>= 1.0.0), knitr
+VignetteBuilder: knitr
+Description: Allows fitting of step-functions to univariate serial data where neither the number of jumps nor their positions is known by implementing the multiscale regression estimators SMUCE and HSMUCE. In addition, confidence intervals for the change-point locations and bands for the unknown signal can be obtained.
+License: GPL-3
+Classification/MSC: 62G08, 92C40, 92D20
+LazyData: yes
+NeedsCompilation: yes
+Packaged: 2017-05-19 14:19:09 UTC; timo
+Author: Pein Florian [aut],
+  Thomas Hotz [aut],
+  Hannes Sieling [aut],
+  Timo Aspelmeier [cre]
+Maintainer: Timo Aspelmeier <timo.aspelmeier@mathematik.uni-goettingen.de>
+Repository: CRAN
+Date/Publication: 2017-05-19 21:22:23 UTC

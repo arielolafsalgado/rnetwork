@@ -1,0 +1,34 @@
+Package: treespace
+Title: Statistical Exploration of Landscapes of Phylogenetic Trees
+Version: 1.0.0
+Date: 2017-03-15
+Authors@R: c(TJ = person("Thibaut", "Jombart", email="thibautjombart@gmail.com", role = c("aut", "cre")),
+ 	     MK = person("Michelle", "Kendall", email="m.kendall@imperial.ac.uk", role = "aut"),
+	     JAG = person("Jacob", "Almagro-Garcia", role = "aut"),
+	     CC = person("Caroline", "Colijn", role = "aut"))
+Maintainer: Thibaut Jombart <thibautjombart@gmail.com>
+Description: Tools for the exploration of distributions of phylogenetic trees.
+    This package includes a shiny interface which can be started from R using
+    'treespaceServer()'.
+Depends: R (>= 3.1.2), ape, ade4
+Imports: adegenet, adegraphics, adephylo, combinat, compiler, distory,
+        fields, htmlwidgets, MASS, phangorn, Rcpp, RLumShiny,
+        scatterD3, shiny, shinyBS, utils
+LinkingTo: Rcpp
+Suggests: igraph, RColorBrewer, ggplot2, testthat, knitr, rmarkdown,
+        rgl
+License: MIT + file LICENSE
+LazyData: true
+Collate: RcppExports.R metrics.R medTree.R treespace.R findGroves.R
+        plotGroves.R plotTreeDiff.R servers.R transmissionTrees.R
+        data.R
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2017-03-16 17:00:55 UTC; thibaut
+Author: Thibaut Jombart [aut, cre],
+  Michelle Kendall [aut],
+  Jacob Almagro-Garcia [aut],
+  Caroline Colijn [aut]
+Repository: CRAN
+Date/Publication: 2017-03-17 07:24:30 UTC

@@ -1,0 +1,26 @@
+Package: slfm
+Type: Package
+Title: Tools for Fitting Sparse Latent Factor Model
+Version: 0.2.2
+Author: Joao Duarte and Vinicius Mayrink
+Maintainer: Joao Duarte <jdanielnd@gmail.com>
+Description: Set of tools to find coherent patterns in microarray data
+    using a Bayesian sparse latent factor model (Duarte and Mayrink 2015 -
+    http://link.springer.com/chapter/10.1007%2F978-3-319-12454-4_15).
+    Considerable effort has been put into making slfm fast and memory efficient,
+    turning it an interesting alternative to simpler methods in terms
+    of execution time. It implements versions of the SLFM using both type
+    of mixtures: using a degenerate distribution or a very concentrated
+    normal distribution for the spike part of the mixture. It also implements
+    additional functions to help pre-process the data and fit the model
+    for a large number of arrays.
+URL: https://github.com/jdanielnd/slfm
+BugReports: https://github.com/jdanielnd/slfm/issues
+Depends: R (>= 3.1.0)
+Imports: Rcpp (>= 0.11.0), coda, lattice
+LinkingTo: Rcpp, RcppArmadillo
+License: GPL-2
+NeedsCompilation: yes
+Packaged: 2015-08-10 01:50:32 UTC; jdanielnd
+Repository: CRAN
+Date/Publication: 2015-08-10 09:09:59

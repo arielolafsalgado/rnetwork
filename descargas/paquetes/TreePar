@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package TreePar</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=TreePar" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="TreePar: Estimating birth and death rates based on phylogenies" />
+<meta name="og:description" content="(i) For a given species phylogeny on present day data which is calibrated to calendar-time, a method for estimating maximum likelihood speciation and extinction processes is provided. The method allows for non-constant rates. Rates may change (1) as a function of time, i.e. rate shifts at specified times or mass extinction events (likelihood implemented as LikShifts, optimization as bd.shifts.optim and visualized as bd.shifts.plot) or (2) as a function of the number of species, i.e. density-dependence (likelihood implemented as LikDD and optimization as bd.densdep.optim) or (3) extinction rate may be a function of species age (likelihood implemented as LikAge and optimization as bd.age.optim.matlab). Note that the methods take into account the whole phylogeny, in particular it accounts for the &quot;pull of the present&quot; effect. (1-3) can take into account incomplete species sampling, as long as each species has the same probability of being sampled. For a given phylogeny on higher taxa (i.e. all but one species per taxa are missing), where the number of species is known within each higher taxa, speciation and extinction rates can be estimated under model (1) (implemented within LikShifts and bd.shifts.optim with groups !=0). (ii) For a given phylogeny with sequentially sampled tips, e.g. a virus phylogeny, rates can be estimated under a model where rates vary across time using bdsky.stt.optim based on likelihood LikShiftsSTT (extending LikShifts and bd.shifts.optim). Furthermore, rates may vary as a function of host types using LikTypesSTT (multitype branching process extending functions in R package diversitree). This function can furthermore calculate the likelihood under an epidemiological model where infected individuals are first exposed and then infectious." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=TreePar" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>TreePar: Estimating birth and death rates based on phylogenies</h2>
+<p>(i) For a given species phylogeny on present day data which is calibrated to calendar-time, a method for estimating maximum likelihood speciation and extinction processes is provided. The method allows for non-constant rates. Rates may change (1) as a function of time, i.e. rate shifts at specified times or mass extinction events (likelihood implemented as LikShifts, optimization as bd.shifts.optim and visualized as bd.shifts.plot) or (2) as a function of the number of species, i.e. density-dependence (likelihood implemented as LikDD and optimization as bd.densdep.optim) or (3) extinction rate may be a function of species age (likelihood implemented as LikAge and optimization as bd.age.optim.matlab). Note that the methods take into account the whole phylogeny, in particular it accounts for the "pull of the present" effect. (1-3) can take into account incomplete species sampling, as long as each species has the same probability of being sampled. For a given phylogeny on higher taxa (i.e. all but one species per taxa are missing), where the number of species is known within each higher taxa, speciation and extinction rates can be estimated under model (1) (implemented within LikShifts and bd.shifts.optim with groups !=0). (ii) For a given phylogeny with sequentially sampled tips, e.g. a virus phylogeny, rates can be estimated under a model where rates vary across time using bdsky.stt.optim based on likelihood LikShiftsSTT (extending LikShifts and bd.shifts.optim). Furthermore, rates may vary as a function of host types using LikTypesSTT (multitype branching process extending functions in R package diversitree). This function can furthermore calculate the likelihood under an epidemiological model where infected individuals are first exposed and then infectious.</p>
+<table summary="Package TreePar summary">
+<tr>
+<td>Version:</td>
+<td>3.3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td><a href="../ape/index.html">ape</a>, <a href="../Matrix/index.html">Matrix</a>, <a href="../subplex/index.html">subplex</a>, <a href="../TreeSim/index.html">TreeSim</a> (&ge; 2.1), <a href="../deSolve/index.html">deSolve</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2015-01-02</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Tanja Stadler</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Tanja Stadler  &#x3c;&#x74;&#x61;&#x6e;&#x6a;&#x61;&#x2e;&#x73;&#x74;&#x61;&#x64;&#x6c;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x62;&#x73;&#x73;&#x65;&#x2e;&#x65;&#x74;&#x68;&#x7a;&#x2e;&#x63;&#x68;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Phylogenetics.html">Phylogenetics</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_TreePar.html">TreePar results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package TreePar downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="TreePar.pdf"> TreePar.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/TreePar_3.3.tar.gz"> TreePar_3.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/TreePar_3.3.zip">TreePar_3.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/TreePar_3.3.zip">TreePar_3.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/TreePar_3.3.zip">TreePar_3.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/TreePar_3.3.tgz">TreePar_3.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/TreePar_3.3.tgz">TreePar_3.3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/TreePar"> TreePar archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=TreePar"><samp>https://CRAN.R-project.org/package=TreePar</samp></a>
+to link to this page.</p>
+</body>
+</html>

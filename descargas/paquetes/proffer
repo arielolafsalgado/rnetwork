@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package proffer</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Profile R Code and Visualize with 'Pprof' [R package proffer version 0.1.0]" />
+<meta name="citation_author" content="William Michael Landau" />
+<meta name="citation_publication_date" content="2020-03-23" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=proffer" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=proffer" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="proffer: Profile R Code and Visualize with 'Pprof'" />
+<meta name="og:description" content="Like similar profiling tools, the 'proffer' package automatically detects sources of slowness in R code. The distinguishing feature of 'proffer' is its utilization of 'pprof', which supplies interactive visualizations that are efficient and easy to interpret. Behind the scenes, the 'profile' package converts native Rprof() data to a protocol buffer that 'pprof' understands. For the documentation of 'proffer', visit &amp;lt;&lt;a href=&quot;https://r-prof.github.io/proffer&quot;&gt;https://r-prof.github.io/proffer&lt;/a&gt;&amp;gt;. To learn about the implementations and methodologies of 'pprof', 'profile', and protocol buffers, visit &amp;lt;&lt;a href=&quot;https://github.com/google/pprof&quot;&gt;https://github.com/google/pprof&lt;/a&gt;&amp;gt;. &amp;lt;&lt;a href=&quot;https://developers.google.com/protocol-buffers&quot;&gt;https://developers.google.com/protocol-buffers&lt;/a&gt;&amp;gt;, and &amp;lt;&lt;a href=&quot;https://github.com/r-prof/profile&quot;&gt;https://github.com/r-prof/profile&lt;/a&gt;&amp;gt;, respectively." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=proffer" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>proffer: Profile R Code and Visualize with 'Pprof'</h2>
+<p>Like similar profiling tools,
+  the 'proffer' package automatically detects
+  sources of slowness in R code.
+  The distinguishing feature of 'proffer' is its utilization of
+  'pprof', which supplies interactive visualizations
+  that are efficient and easy to interpret.
+  Behind the scenes, the 'profile' package converts
+  native Rprof() data to a protocol buffer
+  that 'pprof' understands.
+  For the documentation of 'proffer',
+  visit &lt;<a href="https://r-prof.github.io/proffer">https://r-prof.github.io/proffer</a>&gt;.
+  To learn about the implementations and methodologies of
+  'pprof', 'profile', and protocol buffers,
+  visit &lt;<a href="https://github.com/google/pprof">https://github.com/google/pprof</a>&gt;.
+  &lt;<a href="https://developers.google.com/protocol-buffers">https://developers.google.com/protocol-buffers</a>&gt;,
+  and &lt;<a href="https://github.com/r-prof/profile">https://github.com/r-prof/profile</a>&gt;, respectively.</p>
+<table summary="Package proffer summary">
+<tr>
+<td>Version:</td>
+<td>0.1.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../cli/index.html">cli</a>, <a href="../processx/index.html">processx</a>, <a href="../profile/index.html">profile</a>, <a href="../RProtoBuf/index.html">RProtoBuf</a>, utils, <a href="../withr/index.html">withr</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a> (&ge; 2.1.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-03-23</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>William Michael Landau
+    <a href="https://orcid.org/0000-0003-1878-3253"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut, cre],
+  Eli Lilly and Company [cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>William Michael Landau  &#x3c;&#x77;&#x69;&#x6c;&#x6c;&#x2e;&#x6c;&#x61;&#x6e;&#x64;&#x61;&#x75;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/r-prof/proffer/issues">https://github.com/r-prof/proffer/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/r-prof/proffer">https://github.com/r-prof/proffer</a>,
+<a href="https://r-prof.github.io/proffer">https://r-prof.github.io/proffer</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>Graphviz (https://www.graphviz.org/), pprof
+(https://github.com/google/pprof)</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_proffer.html">proffer results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package proffer downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="proffer.pdf"> proffer.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/proffer_0.1.0.tar.gz"> proffer_0.1.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/proffer_0.1.0.zip">proffer_0.1.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/proffer_0.1.0.zip">proffer_0.1.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/proffer_0.1.0.zip">proffer_0.1.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/proffer_0.1.0.tgz">proffer_0.1.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/proffer_0.1.0.tgz">proffer_0.1.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/proffer"> proffer archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=proffer"><samp>https://CRAN.R-project.org/package=proffer</samp></a>
+to link to this page.</p>
+</body>
+</html>

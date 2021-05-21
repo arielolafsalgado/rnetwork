@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package GMSE</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Generalised Management Strategy Evaluation Simulator [R package GMSE version 0.6.0.4]" />
+<meta name="citation_author" content="A. Bradley Duthie" />
+<meta name="citation_publication_date" content="2020-05-31" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=GMSE" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=GMSE" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="GMSE: Generalised Management Strategy Evaluation Simulator" />
+<meta name="og:description" content="Integrates game theory and ecological theory to construct social-ecological models that simulate the management of populations and stakeholder actions. These models build off of a previously developed management strategy evaluation (MSE) framework to simulate all aspects of management: population dynamics, manager observation of populations, manager decision making, and stakeholder responses to management decisions. The newly developed generalised management strategy evaluation (GMSE) framework uses genetic algorithms to mimic the decision-making process of managers and stakeholders under conditions of change, uncertainty, and conflict. Simulations can be run using gmse(), gmse_apply(), and gmse_gui() functions." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=GMSE" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>GMSE: Generalised Management Strategy Evaluation Simulator</h2>
+<p>Integrates game theory and ecological theory to construct 
+    social-ecological models that simulate the management of populations and 
+    stakeholder actions. These models build off of a previously developed 
+    management strategy evaluation (MSE) framework to simulate all aspects of 
+    management: population dynamics, manager observation of populations, manager
+    decision making, and stakeholder responses to management decisions. The 
+    newly developed generalised management strategy evaluation (GMSE) 
+    framework uses genetic algorithms to mimic the decision-making process of 
+    managers and stakeholders under conditions of change, uncertainty, and 
+    conflict. Simulations can be run using gmse(), gmse_apply(), and
+    gmse_gui() functions.</p>
+<table summary="Package GMSE summary">
+<tr>
+<td>Version:</td>
+<td>0.6.0.4</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.4.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>grDevices (&ge; 3.4.0), graphics (&ge; 3.4.0), stats (&ge; 3.4.0), <a href="../shiny/index.html">shiny</a>, <a href="../shinydashboard/index.html">shinydashboard</a>, <a href="../shinyjs/index.html">shinyjs</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../testthat/index.html">testthat</a>, <a href="../R.rsp/index.html">R.rsp</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-05-31</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>A. Bradley Duthie <a href="https://orcid.org/0000-0001-8343-4995"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Adrian Bach [ctb],
+  Nils Bunnefeld <a href="https://orcid.org/0000-0002-1349-4463"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb, fnd],
+  Jeremy Cusack <a href="https://orcid.org/0000-0003-3004-1586"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Isabel Jones <a href="https://orcid.org/0000-0002-8361-1370"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Jeroen Minderman <a href="https://orcid.org/0000-0002-8451-5540"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Erlend Nilsen <a href="https://orcid.org/0000-0002-5119-8331"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Rocio Pozo <a href="https://orcid.org/0000-0002-7546-8076"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb],
+  Sarobidy Rakotonarivo
+    <a href="https://orcid.org/0000-0002-8032-1431"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb],
+  Bram Van Moorter <a href="https://orcid.org/0000-0002-3196-1993"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>A. Bradley Duthie  &#x3c;&#x62;&#x72;&#x61;&#x64;&#x2e;&#x64;&#x75;&#x74;&#x68;&#x69;&#x65;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/confoobio/gmse/issues">https://github.com/confoobio/gmse/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://confoobio.github.io/gmse/">https://confoobio.github.io/gmse/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_GMSE.html">GMSE results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package GMSE downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="GMSE.pdf"> GMSE.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/SI1.pdf">The genetic algorithm</a><br/>
+<a href="vignettes/SI2.pdf">Use of gmse_apply</a><br/>
+<a href="vignettes/SI3.pdf">Example case study</a><br/>
+<a href="vignettes/SI4.pdf">Advanced options</a><br/>
+<a href="vignettes/SI5.pdf">Fisheries integration</a><br/>
+<a href="vignettes/SI6.pdf">Replicate simulations</a><br/>
+<a href="vignettes/SI7.pdf">GMSE data structures</a><br/>
+<a href="vignettes/SI8.pdf">Manager thresholds</a><br/>
+<a href="vignettes/ms.pdf">GMSE introduction</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/GMSE_0.6.0.4.tar.gz"> GMSE_0.6.0.4.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/GMSE_0.6.0.4.zip">GMSE_0.6.0.4.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/GMSE_0.6.0.4.zip">GMSE_0.6.0.4.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/GMSE_0.6.0.4.zip">GMSE_0.6.0.4.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/GMSE_0.6.0.4.tgz">GMSE_0.6.0.4.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/GMSE_0.6.0.4.tgz">GMSE_0.6.0.4.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/GMSE"> GMSE archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=GMSE"><samp>https://CRAN.R-project.org/package=GMSE</samp></a>
+to link to this page.</p>
+</body>
+</html>

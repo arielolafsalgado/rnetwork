@@ -1,0 +1,28 @@
+Package: RcppAlgos
+Version: 0.1.2
+Title: Tools for Combinatorics and Computational Mathematics
+Description: Provides optimized functions implemented in C++ with 'Rcpp'.
+    There is a generalized combinations function that is highly efficient
+    (both speed and memory). There are optional contraint arguments that
+    when employed, generate all combinations of a vector meeting a specific
+    criteria (E.g. finding all combinations such that the sum is less than
+    a bound). Additionally, there are various sieving functions that quickly
+    generate essential components for problems common in computational
+    mathematics (E.g. number of comprime elements, divisors, prime
+    factorizations, and complete factorizations for many numbers as well
+    as generating primes in a range).
+URL: https://github.com/jwood000/RcppAlgos
+BugReports: https://github.com/jwood000/RcppAlgos/issues
+Imports: Rcpp (>= 0.12.8)
+LinkingTo: Rcpp
+Suggests: gmp (>= 0.5-1), numbers (>= 0.6-6)
+License: GPL (>= 2)
+LazyData: TRUE
+NeedsCompilation: yes
+Author: Joseph Wood
+Maintainer: Joseph Wood <jwood000@gmail.com>
+Encoding: UTF-8
+RoxygenNote: 6.0.1
+Packaged: 2017-11-03 02:48:24 UTC; josephwood
+Repository: CRAN
+Date/Publication: 2017-11-03 04:32:02 UTC

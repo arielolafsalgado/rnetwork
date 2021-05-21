@@ -1,0 +1,30 @@
+Package: gglogo
+Title: Geom for Logo Sequence Plots
+Version: 0.1.4
+Authors@R: c(
+    person("Heike", "Hofmann", email = "hofmann@iastate.edu", role = "aut"),
+    person("Eric", "Hare", email = "eric@oaiti.org", role = c("aut", "cre")),
+    person("GGobi Foundation", role = "aut"))
+License: GPL-3
+URL: https://github.com/heike/gglogo
+BugReports: https://github.com/heike/gglogo/issues
+Depends: R (>= 3.1)
+Imports: ggplot2 (>= 2.0.0), grid, jpeg, plyr, dplyr, magrittr, purrr,
+        reshape2, knitr
+Suggests: RColorBrewer
+Description: Visualize sequences in (modified) logo plots. The design choices
+    used by these logo plots allow sequencing data to be more easily analyzed.
+    Because it is integrated into the 'ggplot2' geom framework, these logo plots
+    support native features such as faceting.
+Collate: 'logos.r' 'text.r' 'thin.r' 'data.r' 'alphabet.r' 'position.r'
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+LazyData: true
+NeedsCompilation: no
+Packaged: 2019-06-28 00:31:15 UTC; erichare
+Author: Heike Hofmann [aut],
+  Eric Hare [aut, cre],
+  GGobi Foundation [aut]
+Maintainer: Eric Hare <eric@oaiti.org>
+Repository: CRAN
+Date/Publication: 2019-06-28 14:20:03 UTC

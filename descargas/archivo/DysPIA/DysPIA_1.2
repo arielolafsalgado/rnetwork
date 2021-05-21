@@ -1,0 +1,25 @@
+Package: DysPIA
+Type: Package
+Title: Dysregulated Pathway Identification Analysis
+Version: 1.2
+Date: 2020-06-16
+Authors@R: c(person("Limei", "Wang", role = c("aut", "cre"),
+                     email = "lemon619@gmail.com"),
+              person("Jin", "Li", role = c("aut", "ctb"),
+                     email = "lijin0202@gmail.com"))
+Maintainer: Limei Wang <lemon619@gmail.com>
+Description: It is used to identify dysregulated pathways based on a pre-ranked gene pair list. A fast algorithm is used to make the computation really fast. The data in package 'DysPIAData' is needed.
+License: GPL (>= 2)
+Depends: R (>= 3.5.0)
+Imports: Rcpp (>= 1.0.4), BiocParallel, fastmatch, data.table, stats,
+        parmigene, DysPIAData
+LinkingTo: Rcpp
+RoxygenNote: 7.1.0
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2020-06-16 19:59:41 UTC; jinli
+Author: Limei Wang [aut, cre],
+  Jin Li [aut, ctb]
+Repository: CRAN
+Date/Publication: 2020-06-24 16:00:11 UTC

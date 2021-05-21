@@ -1,0 +1,33 @@
+Package: heuristica
+Title: Heuristics Including Take the Best and Unit-Weight Linear
+Version: 1.0.0
+Authors@R: c(
+	person("Jean", "Whitmore", email = "jeanimal@gmail.com",
+                  role = c("aut", "cre")),
+	person("Daniel", "Barkoczi", email = "barkoczi@mpib-berlin.mpg.de",
+		role = "aut")
+	)
+Description: Implements various heuristics like Take The Best and
+    unit-weight linear, which do two-alternative choice: which of
+    two objects will have a higher criterion?  Also offers functions
+    to assess performance, e.g. percent correct across all row pairs
+    in a data set and finding row pairs where models disagree.
+    New models can be added by implementing a fit and predict function--
+    see vignette.
+Depends: R (>= 3.1.0)
+License: MIT + file LICENSE
+LazyData: true
+Imports: Hmisc
+URL: https://github.com/jeanimal/heuristica
+BugReports: https://github.com/jeanimal/heuristica/issues
+Suggests: devtools, ggplot2, glmnet, knitr, plyr, reshape, reshape2,
+        testthat, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-06-18 03:03:57 UTC; jeanwhitmore
+Author: Jean Whitmore [aut, cre],
+  Daniel Barkoczi [aut]
+Maintainer: Jean Whitmore <jeanimal@gmail.com>
+Repository: CRAN
+Date/Publication: 2016-06-18 15:31:12

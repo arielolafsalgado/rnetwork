@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package themis</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Extra Recipes Steps for Dealing with Unbalanced Data [R package themis version 0.1.2]" />
+<meta name="citation_author" content="Emil Hvitfeldt" />
+<meta name="citation_publication_date" content="2020-08-14" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=themis" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=themis" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="themis: Extra Recipes Steps for Dealing with Unbalanced Data" />
+<meta name="og:description" content="A dataset with an uneven number of cases in each class is said to be unbalanced. Many models produce a subpar performance on unbalanced datasets. A dataset can be balanced by increasing the number of minority cases using SMOTE 2011 &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1106.1813&quot;&gt;arXiv:1106.1813&lt;/a&gt;&amp;gt;, BorderlineSMOTE 2005 &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2F11538059_91&quot;&gt;doi:10.1007/11538059_91&lt;/a&gt;&amp;gt; and ADASYN 2008 &amp;lt;&lt;a href=&quot;https://ieeexplore.ieee.org/document/4633969&quot;&gt;https://ieeexplore.ieee.org/document/4633969&lt;/a&gt;&amp;gt;. Or by decreasing the number of majority cases using NearMiss 2003 &amp;lt;&lt;a href=&quot;https://www.site.uottawa.ca/~nat/Workshop2003/jzhang.pdf&quot;&gt;https://www.site.uottawa.ca/~nat/Workshop2003/jzhang.pdf&lt;/a&gt;&amp;gt; or Tomek link removal 1976 &amp;lt;&lt;a href=&quot;https://ieeexplore.ieee.org/document/4309452&quot;&gt;https://ieeexplore.ieee.org/document/4309452&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=themis" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>themis: Extra Recipes Steps for Dealing with Unbalanced Data</h2>
+<p>A dataset with an uneven number of cases in each
+    class is said to be unbalanced. Many models produce a subpar
+    performance on unbalanced datasets. A dataset can be balanced by
+    increasing the number of minority cases using SMOTE 2011
+    &lt;<a href="https://arxiv.org/abs/1106.1813">arXiv:1106.1813</a>&gt;, BorderlineSMOTE 2005 &lt;<a href="https://doi.org/10.1007%2F11538059_91">doi:10.1007/11538059_91</a>&gt; and
+    ADASYN 2008 &lt;<a href="https://ieeexplore.ieee.org/document/4633969">https://ieeexplore.ieee.org/document/4633969</a>&gt;. Or by
+    decreasing the number of majority cases using NearMiss 2003
+    &lt;<a href="https://www.site.uottawa.ca/~nat/Workshop2003/jzhang.pdf">https://www.site.uottawa.ca/~nat/Workshop2003/jzhang.pdf</a>&gt; or Tomek
+    link removal 1976 &lt;<a href="https://ieeexplore.ieee.org/document/4309452">https://ieeexplore.ieee.org/document/4309452</a>&gt;.</p>
+<table summary="Package themis summary">
+<tr>
+<td>Version:</td>
+<td>0.1.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10), <a href="../recipes/index.html">recipes</a> (&ge; 0.1.4)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../dplyr/index.html">dplyr</a>, <a href="../generics/index.html">generics</a>, <a href="../purrr/index.html">purrr</a>, <a href="../RANN/index.html">RANN</a>, <a href="../rlang/index.html">rlang</a>, <a href="../ROSE/index.html">ROSE</a>, <a href="../tibble/index.html">tibble</a>, <a href="../unbalanced/index.html">unbalanced</a>, <a href="../withr/index.html">withr</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../covr/index.html">covr</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../modeldata/index.html">modeldata</a>, <a href="../testthat/index.html">testthat</a> (&ge; 2.1.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-08-14</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Emil Hvitfeldt <a href="https://orcid.org/0000-0002-0679-1945"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Emil Hvitfeldt  &#x3c;&#x65;&#x6d;&#x69;&#x6c;&#x68;&#x68;&#x76;&#x69;&#x74;&#x66;&#x65;&#x6c;&#x64;&#x74;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/tidymodels/themis/issues">https://github.com/tidymodels/themis/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/tidymodels/themis">https://github.com/tidymodels/themis</a>,
+<a href="https://themis.tidymodels.org">https://themis.tidymodels.org</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_themis.html">themis results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package themis downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="themis.pdf"> themis.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/themis_0.1.2.tar.gz"> themis_0.1.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/themis_0.1.2.zip">themis_0.1.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/themis_0.1.2.zip">themis_0.1.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/themis_0.1.2.zip">themis_0.1.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/themis_0.1.2.tgz">themis_0.1.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/themis_0.1.2.tgz">themis_0.1.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/themis"> themis archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=themis"><samp>https://CRAN.R-project.org/package=themis</samp></a>
+to link to this page.</p>
+</body>
+</html>

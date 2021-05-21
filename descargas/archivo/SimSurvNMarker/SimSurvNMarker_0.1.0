@@ -1,0 +1,32 @@
+Package: SimSurvNMarker
+Type: Package
+Title: Simulate Survival Time and Markers
+Version: 0.1.0
+Authors@R: c(person("Benjamin", "Christoffersen", 
+                    email = "boennecd@gmail.com", 
+                    role = c("cre", "aut")), 
+             person("Mark", "Clements",  
+                    role = "cph"), 
+             person("Ignace", "Bogaert", 
+                    role = "cph"))
+Maintainer: Benjamin Christoffersen <boennecd@gmail.com>
+Description: Provides functions to simulate from joint survival and marker 
+    models. The user can specific all basis functions of time, random or 
+    deterministic covariates, random or deterministic left-truncation and 
+    right-censoring times, and model parameters.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Suggests: testthat (>= 2.1.0), splines, R.rsp
+RoxygenNote: 7.1.1
+LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp
+SystemRequirements: C++14
+VignetteBuilder: R.rsp
+NeedsCompilation: yes
+Packaged: 2020-09-04 12:02:54 UTC; boennecd
+Author: Benjamin Christoffersen [cre, aut],
+  Mark Clements [cph],
+  Ignace Bogaert [cph]
+Repository: CRAN
+Date/Publication: 2020-09-11 09:50:11 UTC

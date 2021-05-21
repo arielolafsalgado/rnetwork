@@ -1,0 +1,30 @@
+Package: BetaPASS
+Title: Calculate Power and Sample Size with Beta Regression
+Version: 1.0-1
+Date: 2019-07-10
+Authors@R: c(person("Jinpu", "Li", email = "lijinp@health.missouri.edu", role = c("aut", "cre")),
+	person("Ryan", "Knigge", email = "rknigge@health.missouri.edu", role = "aut"),
+	person("Emily", "Leary", email = "LearyE@health.missouri.edu", role = "aut"))
+Description: Power calculations are a critical component of any research study to determine the 
+	minimum sample size necessary to detect differences between multiple groups. 
+	Researchers often work with data taking the form of proportions that can be modeled with 
+	a beta distribution. Here we present an R package, 'BetaPASS', that perform power and 
+	sample size calculations for data following a beta distribution with comparative 
+	nonparametric output. This package allows flexibility with multiple options for link 
+	functions to fit the data and graphing functionality for visual comparisons.
+Depends: R (>= 3.5)
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.0
+Imports: betareg, lmtest, reshape, ggplot2, Rcpp, stats
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-07-19 13:33:11 UTC; birdn
+Author: Jinpu Li [aut, cre],
+  Ryan Knigge [aut],
+  Emily Leary [aut]
+Maintainer: Jinpu Li <lijinp@health.missouri.edu>
+Repository: CRAN
+Date/Publication: 2019-07-23 12:10:09 UTC

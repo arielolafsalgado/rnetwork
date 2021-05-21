@@ -1,0 +1,40 @@
+Package: PlackettLuce
+Type: Package
+Title: Plackett-Luce Models for Rankings
+Version: 0.2-1
+Authors@R: c(person("Heather", "Turner", email =
+        "ht@heatherturner.net", role = c("aut", "cre")),
+        person("Ioannis", "Kosmidis", role = "aut"), person("David",
+        "Firth", role = "aut"), person("Jacob", "van Etten", role = "ctb"))
+URL: https://hturner.github.io/PlackettLuce/
+BugReports: https://github.com/hturner/PlackettLuce/issues
+Description: Functions to prepare rankings data and fit the Plackett-Luce model
+    jointly attributed to Plackett (1975) <doi:10.2307/2346567> and Luce 
+    (1959, ISBN:0486441369). The standard Plackett-Luce model is generalized 
+    to accommodate ties of any order in the ranking. Partial rankings, in which 
+    only a subset of items are ranked in each ranking, are also accommodated in
+    the implementation. Disconnected/weakly connected networks implied by the 
+    rankings are handled by adding pseudo-rankings with a hypothetical item. 
+    Methods are provided to estimate standard errors or quasi-standard errors 
+    for inference as well as to fit Plackett-Luce trees. See the package website
+    or vignette for full details.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 2.10)
+Imports: MASS, Matrix, igraph, partykit, psychotools, rARPACK, qvcalc,
+        sandwich, stats
+Suggests: BiocStyle, BradleyTerry2, BradleyTerryScalable, Matrix.utils,
+        PLMIX, StatRank, covr, hyper2, kableExtra, knitr, lbfgs, gnm,
+        pmr, psychotree, rmarkdown, testthat, tibble
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-12-07 11:08:17 UTC; hturner
+Author: Heather Turner [aut, cre],
+  Ioannis Kosmidis [aut],
+  David Firth [aut],
+  Jacob van Etten [ctb]
+Maintainer: Heather Turner <ht@heatherturner.net>
+Repository: CRAN
+Date/Publication: 2017-12-07 12:14:38 UTC

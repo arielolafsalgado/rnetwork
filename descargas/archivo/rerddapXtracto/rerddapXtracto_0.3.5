@@ -1,0 +1,30 @@
+Package: rerddapXtracto
+Type: Package
+Title: Extracts Environmental Data from 'ERDDAP' Web Services
+Version: 0.3.5
+Authors@R: person("Roy", "Mendelssohn", email = "roy.mendelssohn@noaa.gov", role = c("aut","cre"))
+Description: Contains three functions that access
+    environmental data from any 'ERDDAP' data web service. The rxtracto() function extracts
+    data along a trajectory for a given "radius" around the point. The
+    rxtracto_3D() function extracts data in a box. The rxtractogon() function
+    extracts data in a polygon. All of those three function use the 'rerddap' package
+    to extract the data, and should work with any 'ERDDAP' server.
+    There are also two functions, plotBBox() and plotTrack() that use the 'plotdap'
+    package to simplify the creation of maps of the data.
+URL: https://github.com/rmendels/rerddapXtracto
+BugReports: https://github.com/rmendels/rerddapXtracto/issues
+Depends: R(>= 3.5.0)
+License: CC0
+Imports: abind, dplyr, ggplot2, httr, methods, ncdf4, parsedate,
+        plotdap, readr, rerddap (>= 0.6.0), sp, stats,
+Suggests: gganimate, knitr, mapdata, rmarkdown
+RoxygenNote: 6.1.1
+Encoding: UTF-8
+LazyData: TRUE
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-06-03 21:05:32 UTC; rmendels
+Author: Roy Mendelssohn [aut, cre]
+Maintainer: Roy Mendelssohn <roy.mendelssohn@noaa.gov>
+Repository: CRAN
+Date/Publication: 2019-06-04 14:30:03 UTC

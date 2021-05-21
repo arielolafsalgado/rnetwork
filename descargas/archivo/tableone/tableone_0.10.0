@@ -1,0 +1,43 @@
+Package: tableone
+Type: Package
+Title: Create 'Table 1' to Describe Baseline Characteristics
+Version: 0.10.0
+Date: 2019-02-16
+Authors@R: c(
+    # http://r-pkgs.had.co.nz/description.html#author
+    person('Kazuki', 'Yoshida', email = 'kazukiyoshida@mail.harvard.edu', role = c('cre','aut'), comment = c(ORCID = '0000-0002-2030-3549')),
+    person('Jonathan', 'J Chipman', role = 'ctb'),
+    person('Justin', 'Bohn', role = 'ctb'),
+    person('Lucy', 'DAgostino McGowan', role = 'ctb'),
+    person('Malcolm', 'Barrett', role = 'ctb'),
+    person('Rune', 'Haubo B Christensen', role = 'ctb'),
+    person('gbouzill', role = 'ctb')
+    )
+Maintainer: Kazuki Yoshida <kazukiyoshida@mail.harvard.edu>
+Description: Creates 'Table 1', i.e., description of baseline patient
+    characteristics, which is essential in every medical research.
+    Supports both continuous and categorical variables, as well as
+    p-values and standardized mean differences. Weighted data are
+    supported via the 'survey' package. See 'github' for a screen cast.
+    'tableone' was inspired by descriptive statistics functions in
+    'Deducer' , a Java-based GUI package by Ian Fellows. This package
+    does not require GUI or Java, and intended for command-line users.
+License: GPL-2
+Imports: survey, MASS, e1071, zoo, gmodels, nlme, lmerTest, labelled,
+        methods
+Suggests: survival, testthat, Matrix, dummies, Matching, reshape2,
+        ggplot2, knitr, geepack, lme4
+URL: https://github.com/kaz-yos/tableone
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-02-16 22:46:28 UTC; kazuki
+Author: Kazuki Yoshida [cre, aut] (<https://orcid.org/0000-0002-2030-3549>),
+  Jonathan J Chipman [ctb],
+  Justin Bohn [ctb],
+  Lucy DAgostino McGowan [ctb],
+  Malcolm Barrett [ctb],
+  Rune Haubo B Christensen [ctb],
+  gbouzill [ctb]
+Repository: CRAN
+Date/Publication: 2019-02-17 19:20:03 UTC

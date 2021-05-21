@@ -1,0 +1,33 @@
+Package: DHARMa
+Title: Residual Diagnostics for Hierarchical (Multi-Level / Mixed)
+        Regression Models
+Version: 0.1.4
+Date: 2017-03-10
+Authors@R: c(person("Florian", "Hartig", email = "florian.hartig@biologie.uni-regensburg.de", role = c("aut", "cre")))
+Description: The 'DHARMa' package uses a simulation-based approach to create
+    readily interpretable scaled (quantile) residuals for fitted generalized linear mixed
+    models. Currently supported are generalized linear mixed models from 'lme4' 
+    (classes 'lmerMod', 'glmerMod'), generalized additive models ('gam' from 'mgcv'), 
+    'glm' (including 'negbin' from 'MASS', but excluding quasi-distributions) and 'lm' model
+    classes. Alternatively, externally created simulations, e.g. posterior predictive simulations 
+    from Bayesian software such as 'JAGS', 'STAN', or 'BUGS' can be processed as well. 
+    The resulting residuals are standardized to values between 0 and 1 and can be interpreted 
+    as intuitively as residuals from a linear regression. The package also provides a number of 
+    plot and test functions for typical model misspecification problems, such as 
+    over/underdispersion, zero-inflation, and residual spatial and temporal autocorrelation.
+Depends: R (>= 3.0.2)
+Imports: stats, graphics, utils, grDevices, gap, qrnn, lmtest, ape,
+        sfsmisc, MASS, doParallel, foreach, lme4, mgcv
+Suggests: knitr, testthat
+License: GPL (>= 3)
+URL: http://florianhartig.github.io/DHARMa/
+BugReports: https://github.com/florianhartig/DHARMa/issues
+LazyData: true
+RoxygenNote: 6.0.0
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-03-07 18:22:48 UTC; Florian
+Author: Florian Hartig [aut, cre]
+Maintainer: Florian Hartig <florian.hartig@biologie.uni-regensburg.de>
+Repository: CRAN
+Date/Publication: 2017-03-08 00:10:40

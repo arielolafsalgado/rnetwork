@@ -1,0 +1,33 @@
+Package: passt
+Type: Package
+Title: Probability Associator Time (PASS-T)
+Version: 0.1.0
+Authors@R: person("Johannes", "Titz",
+                  email = "johannes.titz@gmail.com",
+                  role = c("aut", "cre"))
+Description: Simulates judgments of frequency and duration based on
+    the Probability Associator Time (PASS-T) model. PASS-T is a memory
+    model based on a simple competitive artificial neural network. It 
+    can imitate human judgments of frequency and duration, which have
+    been extensively studied in cognitive psychology
+    (e.g. Hintzman (1970) <doi:10.1037/h0028865>, Betsch et al. (2010)
+    <https://psycnet.apa.org/record/2010-18204-003>). The PASS-T model
+    is an extension of the PASS model (Sedlmeier, 2002,
+    ISBN:0198508638). The package provides an easy way to run
+    simulations, which can then be compared with empirical data in
+    human judgments of frequency and duration.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+URL: https://github.com/johannes-titz/passt
+BugReports: https://github.com/johannes-titz/passt/issues
+Suggests: knitr, ggplot2, plyr, testthat (>= 2.1.0), covr
+VignetteBuilder: knitr
+Imports: magrittr,dplyr,tidyr,rlang
+NeedsCompilation: no
+Packaged: 2019-11-01 09:17:10 UTC; jt
+Author: Johannes Titz [aut, cre]
+Maintainer: Johannes Titz <johannes.titz@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-11-05 10:00:02 UTC

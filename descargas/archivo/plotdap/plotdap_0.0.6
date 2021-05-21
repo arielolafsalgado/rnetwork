@@ -1,0 +1,28 @@
+Package: plotdap
+Title: Easily Visualize Data from 'ERDDAP' Servers via the 'rerddap'
+        Package
+Version: 0.0.6
+Date: 2020-02-17
+Authors@R: c(
+    person("Carson", "Sievert", role = "aut"),
+    person("Roy", "Mendelssohn", role = c("aut", "ctb", "cre"), email = "roy.mendelssohn@noaa.gov"))
+Description: Easily visualize and animate 'tabledap' and 'griddap' objects obtained via the 'rerddap' package in a simple one-line command,  using either base graphics or 'ggplot2' graphics. 'plotdap' handles extracting and reshaping the data,  map projections and continental outlines.  Optionally the data can be animated through time using the 'gganmiate' package.
+License: MIT + file LICENSE
+URL: https://github.com/ropensci/plotdap
+BugReports: https://github.com/ropensci/plotdap/issues
+Depends: R (>= 3.6.0)
+Imports: cmocean, dplyr, gganimate, ggnewscale (>= 0.4.1), ggplot2 (>=
+        3.1.0), lazyeval, lubridate, magrittr, maps, raster, rerddap
+        (>= 0.6.0), rgeos, scales, sf, tidyr, viridis
+Suggests: Cairo, knitr, mapdata, maptools, rgdal, rmarkdown, testthat
+RoxygenNote: 7.0.2
+LazyData: true
+Encoding: UTF-8
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-02-17 16:11:18 UTC; rmendels
+Author: Carson Sievert [aut],
+  Roy Mendelssohn [aut, ctb, cre]
+Maintainer: Roy Mendelssohn <roy.mendelssohn@noaa.gov>
+Repository: CRAN
+Date/Publication: 2020-02-17 19:00:21 UTC

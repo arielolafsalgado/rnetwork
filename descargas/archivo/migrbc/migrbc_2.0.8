@@ -1,0 +1,47 @@
+Package: migrbc
+Type: Package
+Title: Production Rules Based Classification of Migration
+Version: 2.0.8
+URL: https://github.com/statisticsnz/migrbc,
+        https://statisticsnz.github.io/migrbc
+BugReports: https://github.com/statisticsnz/migrbc/issues
+Language: en-US
+Authors@R: 
+    c(
+      person(given = "Leshi",
+             family = "Chen",
+  	         email = "leshi.chen@stats.govt.nz",
+  	         role = c("aut", "cre")),
+  	  person(given = "Pubudu",
+             family = "Senanayake",
+             email = "pubudu.senanayake@stats.govt.nz",
+	           role = c("aut")),
+	    person(given = "Del",
+             family = "Robinson",
+             email = "del.robinson@stats.govt.nz",
+	           role = c("aut")),
+	    person("Statistics New Zealand", 
+             role = c("cph")))
+Author: Leshi Chen [aut, cre],
+  Pubudu Senanayake [aut],
+  Del Robinson [aut],
+  Statistics New Zealand [cph]
+Description: Provides mechanisms for classifying border crossings using a rules-based methodology. The goal of performing this type of classification is to identify any potential long-term migrants.  A long-term migration is defined as a border crossing involving a change in residence status. A border crossing counts as a long-term migration to/from a country if it entails a change from non-residence to residence / residence to non-residence.  The rules-based classification that used to determine a long-term migration is defined by a threshold duration and a test duration, alternatively named window size. Under a 12/16 rule, for instance, the threshold duration is 12 months and the test duration (window size) is 16 months. With a 9/12 rule, the threshold duration is 9 months and the test duration (window size)  is 12 months. For more information about the methodology applied, please visit Stats NZ (2020) <https://www.stats.govt.nz/methods/defining-migrants-using-travel-histories-and-the-1216-month-rule>.
+License: MIT + file LICENSE
+LinkingTo: Rcpp
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: yes
+Depends: R (>= 3.5)
+Imports: Rcpp (>= 1.0), lubridate (>= 1.7), stringr (>= 1.4), dplyr (>=
+        0.8), methods, parallel, futile.logger
+Suggests: magrittr, tools, knitr, rmarkdown, testthat
+RoxygenNote: 6.1.1
+Collate: 'RcppExports.R' 'check_functions.R' 'plot_mig_hist.R'
+        'pre_process.R' 'resolve_data.R' 'resolve_data_with_error.R'
+        'run_rbc.R' 'utility_functions.R' 'migrbc.R'
+VignetteBuilder: knitr
+Packaged: 2020-05-08 04:28:08 UTC; lchen
+Maintainer: Leshi Chen <leshi.chen@stats.govt.nz>
+Repository: CRAN
+Date/Publication: 2020-05-12 09:40:02 UTC

@@ -1,0 +1,37 @@
+Package: imputeTS
+Version: 2.7
+Date: 2018-06-19
+Title: Time Series Missing Value Imputation
+Description: Imputation (replacement) of missing values 
+             in univariate time series. 
+             Offers several imputation functions
+             and missing data plots. 
+             Available imputation algorithms include: 
+            'Mean', 'LOCF', 'Interpolation', 
+            'Moving Average', 'Seasonal Decomposition', 
+            'Kalman Smoothing on Structural Time Series models',
+            'Kalman Smoothing on ARIMA models'.
+Author: Steffen Moritz [aut, cre, cph]
+    (<https://orcid.org/0000-0002-0085-1804>)
+Authors@R: 
+  c(
+  person("Steffen", "Moritz", email="steffen.moritz10@gmail.com", role=c("aut", "cre", "cph"), comment = c(ORCID = "0000-0002-0085-1804"))
+  )
+Maintainer: Steffen Moritz <steffen.moritz10@gmail.com>
+LazyData: yes
+Type: Package
+ByteCompile: TRUE
+BugReports: https://github.com/SteffenMoritz/imputeTS/issues
+URL: https://github.com/SteffenMoritz/imputeTS
+Repository: CRAN
+Depends: R (>= 3.0.1)
+Imports: stats, stinepack, graphics, grDevices, forecast, magrittr,
+        Rcpp
+Suggests: testthat, utils, zoo, timeSeries, tis, xts
+License: GPL-3
+VignetteBuilder: utils
+RoxygenNote: 6.0.1
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2018-06-20 09:13:00 UTC; Steve
+Date/Publication: 2018-06-20 09:38:19 UTC

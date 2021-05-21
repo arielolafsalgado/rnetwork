@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package incadata</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Recognize and Handle Data in Formats Used by Swedish Cancer Centers [R package incadata version 0.9.1]" />
+<meta name="citation_author" content="Erik Bulow" />
+<meta name="citation_publication_date" content="2020-04-09" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=incadata" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=incadata" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="incadata: Recognize and Handle Data in Formats Used by Swedish Cancer Centers" />
+<meta name="og:description" content=" Handle data in formats used by cancer centers in Sweden, both from 'INCA' (&amp;lt;&lt;a href=&quot;https://rcc.incanet.se&quot;&gt;https://rcc.incanet.se&lt;/a&gt;&amp;gt;) and by the older register platform 'Rockan'. All variables are coerced to suitable classes based on their format. Dates (from various formats such as with missing month or day, with or without century prefix or with just a week number) are all recognized as dates and coerced to the ISO 8601 standard (Y-m-d). Boolean variables (internally stored either as 0/1 or &quot;True&quot;/&quot;False&quot;/blanks when exported) are coerced to logical. Variable names ending in '_Beskrivning' and '_Varde' will be character, and 'PERSNR' will be coerced (if possible) to a valid personal identification number 'pin' (by the 'sweidnumbr' package). The package also allow the user to interactively choose if a variable should be coerced into a potential format even though not all of its values might conform to the recognized pattern. It also contain a caching mechanism in order to temporarily store data sets with its newly decided formats in order to not rerun the identification process each time. The package also include a mechanism to aid the documentation process connected to projects build on data from 'INCA'. From version 0.7, some general help functions are also included, as previously found in the 'rccmisc' package." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=incadata" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>incadata: Recognize and Handle Data in Formats Used by Swedish Cancer
+Centers</h2>
+<p>
+  Handle data in formats used by cancer centers in Sweden, both from 'INCA' 
+  (&lt;<a href="https://rcc.incanet.se">https://rcc.incanet.se</a>&gt;) and by the older register platform 'Rockan'.
+  All variables are coerced to suitable classes based on their format. 
+  Dates (from various formats such as with missing month or day, with or 
+  without century prefix or with just a week number) are all recognized as
+  dates and coerced to the ISO 8601 standard (Y-m-d).
+  Boolean variables (internally stored either as 0/1 or "True"/"False"/blanks 
+  when exported) are coerced to logical. 
+  Variable names ending in '_Beskrivning' and '_Varde' will be character, 
+  and 'PERSNR' will be coerced (if possible) to a valid personal identification 
+  number 'pin' (by the 'sweidnumbr' package).
+  The package also allow the user to interactively choose if a variable should 
+  be coerced into a potential format even though not all of its values might 
+  conform to the recognized pattern.
+  It also contain a caching mechanism in order to temporarily store data sets 
+  with its newly decided formats in order to not rerun the identification 
+  process each time. 
+  The package also include a mechanism to aid the documentation process 
+  connected to projects build on data from 'INCA'.
+  From version 0.7, some general help functions are also included, 
+  as previously found in the 'rccmisc' package.</p>
+<table summary="Package incadata summary">
+<tr>
+<td>Version:</td>
+<td>0.9.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10), <a href="../decoder/index.html">decoder</a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../rvest/index.html">rvest</a>, <a href="../sweidnumbr/index.html">sweidnumbr</a>, <a href="../xml2/index.html">xml2</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../R.rsp/index.html">R.rsp</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-04-09</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Erik Bulow <a href="https://orcid.org/0000-0002-9973-456X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Erik Bulow  &#x3c;&#x65;&#x72;&#x69;&#x6b;&#x2e;&#x62;&#x75;&#x6c;&#x6f;&#x77;&#x20;&#x61;&#x74;&#x20;&#x72;&#x63;&#x63;&#x76;&#x61;&#x73;&#x74;&#x2e;&#x73;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://www.bitbucket.org/cancercentrum/incadata/issues">https://www.bitbucket.org/cancercentrum/incadata/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://cancercentrum.bitbucket.io/incadata">https://cancercentrum.bitbucket.io/incadata</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_incadata.html">incadata results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package incadata downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="incadata.pdf"> incadata.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/incadoc.html">incadoc</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/incadata_0.9.1.tar.gz"> incadata_0.9.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/incadata_0.9.1.zip">incadata_0.9.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/incadata_0.9.1.zip">incadata_0.9.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/incadata_0.9.1.zip">incadata_0.9.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/incadata_0.9.1.tgz">incadata_0.9.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/incadata_0.9.1.tgz">incadata_0.9.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/incadata"> incadata archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=incadata"><samp>https://CRAN.R-project.org/package=incadata</samp></a>
+to link to this page.</p>
+</body>
+</html>

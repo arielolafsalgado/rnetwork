@@ -1,0 +1,34 @@
+Package: sigr
+Type: Package
+Title: Succinct and Correct Statistical Summaries for Reports
+Version: 1.0.2
+Date: 2018-10-04
+Authors@R: c(
+    person("John", "Mount", email = "jmount@win-vector.com", role = c("aut", "cre")),
+    person("Nina", "Zumel", email = "nzumel@win-vector.com", role = c("aut")),
+    person(family = "Win-Vector LLC", role = c("cph"))
+    )
+URL: https://github.com/WinVector/sigr/,
+        https://winvector.github.io/sigr/
+Maintainer: John Mount <jmount@win-vector.com>
+BugReports: https://github.com/WinVector/sigr/issues
+Description: Succinctly and correctly format statistical summaries of
+    various models and tests (F-test, Chi-Sq-test, Fisher-test, T-test, and rank-significance).  The main purpose is unified reporting 
+    of experimental results, working around issue such as the difficulty of
+    extracting model summary facts (such as with 'lm'/'glm').  This package also
+    includes empirical tests, such as bootstrap estimates.
+License: GPL-3
+LazyData: TRUE
+RoxygenNote: 6.1.0
+Depends: R (>= 3.2.1)
+Imports: wrapr (>= 1.6.2), stats
+Suggests: pwr, parallel, knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+ByteCompile: true
+NeedsCompilation: no
+Packaged: 2018-10-05 01:59:14 UTC; johnmount
+Author: John Mount [aut, cre],
+  Nina Zumel [aut],
+  Win-Vector LLC [cph]
+Repository: CRAN
+Date/Publication: 2018-10-05 05:10:07 UTC

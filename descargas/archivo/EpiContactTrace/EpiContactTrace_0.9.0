@@ -1,0 +1,28 @@
+Package: EpiContactTrace
+Title: Epidemiological Tool for Contact Tracing
+Version: 0.9.0
+Date: 2015-07-02
+Authors@R: c(
+    person("Maria", "Noremark", role = c("aut")),
+    person("Stefan", "Widgren", role = c("aut", "cre"),
+     email = "stefan.widgren@gmail.com"))
+Description: Routines for epidemiological contact tracing
+    and visualisation of network of contacts.
+License: EUPL
+URL: https://github.com/stewid/EpiContactTrace
+Type: Package
+LazyLoad: yes
+Depends: R(>= 3.0.2)
+Imports: graphics, methods, utils
+Collate: 'Contacts.r' 'ContactTrace.r' 'EpiContactTrace-package.r'
+        'in-degree.r' 'ingoing-contact-chain.r' 'network-structure.r'
+        'network-summary.r' 'out-degree.r' 'outgoing-contact-chain.r'
+        'plot.r' 'report.r' 'shortest-paths.r' 'show.r' 'trace.r'
+        'tree.r'
+NeedsCompilation: yes
+Packaged: 2015-07-02 15:05:45 UTC; stefan
+Author: Maria Noremark [aut],
+  Stefan Widgren [aut, cre]
+Maintainer: Stefan Widgren <stefan.widgren@gmail.com>
+Repository: CRAN
+Date/Publication: 2015-07-02 18:31:27

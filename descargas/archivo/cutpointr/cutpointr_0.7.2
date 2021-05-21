@@ -1,0 +1,28 @@
+Package: cutpointr
+Type: Package
+Title: Determine and Evaluate Optimal Cutpoints in Binary
+        Classification Tasks
+Version: 0.7.2
+Authors@R: person("Christian", "Thiele", , "c.thiele@hs-osnabrueck.de", c("aut", "cre"))
+Description: Estimate cutpoints that optimize a specified metric in binary classification tasks
+    and validate performance using bootstrapping. Some methods for more robust cutpoint
+    estimation and various plotting functions are included.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.3.0)
+LinkingTo: Rcpp
+Imports: gridExtra (>= 2.2.1), foreach (>= 1.4.3), dplyr (>= 0.5.0),
+        tidyr (>= 0.6.0), purrr (>= 0.2.2), tibble (>= 1.4.2), ggplot2
+        (>= 2.2.0), Rcpp (>= 0.12.12), stats, utils, rlang (>= 0.1.2)
+RoxygenNote: 6.0.1
+Suggests: KernSmooth (>= 2.23-15), fANCOVA (>= 0.5-1), testthat (>=
+        1.0.2), doRNG (>= 1.6), doParallel (>= 1.0.11), knitr,
+        rmarkdown, mgcv (>= 1.8)
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2018-03-20 15:45:55 UTC; ct
+Author: Christian Thiele [aut, cre]
+Maintainer: Christian Thiele <c.thiele@hs-osnabrueck.de>
+Repository: CRAN
+Date/Publication: 2018-03-21 09:27:24 UTC

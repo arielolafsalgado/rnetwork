@@ -1,0 +1,29 @@
+Package: jwutil
+Title: Tools for Data Manipulation and Testing
+Version: 1.1.1
+Date: 2016-10-11
+Authors@R: person("Jack O. Wasey", role = c("aut", "cre", "cph"),
+    email = "jack@jackwasey.com")
+Description: This is a set of simple utilities for various data manipulation and testing tasks.
+    The goal is to use base tools well, without bringing in many
+    dependencies. Main areas of interest are semi-automated data frame manipulation, such as
+    converting factors in multiple binary indicator columns. There are testing
+    functions which provide 'testthat' expectations to permute arguments to
+    function calls. There are functions and data to test extreme numbers, dates,
+    and bad input of various kinds which should allow testing failure and corner
+    cases, which can be used for fuzzing your functions. The test suite has many examples of usage.
+URL: https://github.com/jackwasey/jwutil
+Depends: R (>= 3.0.0)
+Imports: checkmate, methods, Rcpp, stats, utils
+Suggests: testthat, knitr, lintr
+License: GPL-3
+BugReports: https://github.com/jackwasey/jwutil/issues
+Encoding: UTF-8
+LinkingTo: Rcpp
+RoxygenNote: 5.0.1
+NeedsCompilation: yes
+Packaged: 2016-10-11 22:57:01 UTC; waseyj
+Author: Jack O. Wasey [aut, cre, cph]
+Maintainer: Jack O. Wasey <jack@jackwasey.com>
+Repository: CRAN
+Date/Publication: 2016-10-18 10:46:33

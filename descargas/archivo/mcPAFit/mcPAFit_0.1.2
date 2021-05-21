@@ -1,0 +1,19 @@
+Package: mcPAFit
+Type: Package
+Title: Estimating Node Fitness from a Single Network Snapshot by Markov
+        Chain Monte Carlo
+Version: 0.1.2
+Date: 2016-05-18
+Author: Thong Pham, Paul Sheridan, Hidetoshi Shimodaira
+Maintainer: Thong Pham <thongpham@thongpham.net>
+Description: A Markov chain Monte Carlo method is provided to estimate fitness from a single network snapshot. Conventional methods require the complete information about the appearance order of nodes and edges in the network. This package performs inference on the timeline space, and so does not require such information.
+License: GPL-3
+Depends: R(>= 2.10.0)
+Imports: Rcpp (>= 0.11.3) , grDevices, graphics, stats, RColorBrewer,
+        PAFit
+LinkingTo: Rcpp
+LazyData: True
+NeedsCompilation: yes
+Packaged: 2016-05-17 07:47:09 UTC; pham
+Repository: CRAN
+Date/Publication: 2016-05-18 01:44:10

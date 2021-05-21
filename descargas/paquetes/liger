@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package liger</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Lightweight Iterative Geneset Enrichment [R package liger version 1.1.2]" />
+<meta name="citation_author1" content="Jean Fan" />
+<meta name="citation_author2" content="Peter Kharchenko" />
+<meta name="citation_publication_date" content="2020-07-16" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=liger" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=liger" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="liger: Lightweight Iterative Geneset Enrichment" />
+<meta name="og:description" content="Gene Set Enrichment Analysis (GSEA) is a computational method that determines whether an a priori defined set of genes shows statistically significant, concordant differences between two biological states. The original algorithm is detailed in Subramanian et al. with 'Java' implementations available through the Broad Institute (Subramanian et al. 2005 &amp;lt;&lt;a href=&quot;https://doi.org/10.1073%2Fpnas.0506580102&quot;&gt;doi:10.1073/pnas.0506580102&lt;/a&gt;&amp;gt;). The 'liger' package provides a lightweight R implementation of this enrichment test on a list of values (Fan et al., 2017 &amp;lt;&lt;a href=&quot;https://doi.org/10.5281%2Fzenodo.887386&quot;&gt;doi:10.5281/zenodo.887386&lt;/a&gt;&amp;gt;). Given a list of values, such as p-values or log-fold changes derived from differential expression analysis or other analyses comparing biological states, this package enables you to test a priori defined set of genes for enrichment to enable interpretability of highly significant or high fold-change genes." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=liger" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>liger: Lightweight Iterative Geneset Enrichment</h2>
+<p>Gene Set Enrichment Analysis (GSEA) is a computational method that determines whether an a priori defined set of genes shows statistically significant, concordant differences between two biological states. The original algorithm is detailed in Subramanian et al. with 'Java' implementations available through the Broad Institute (Subramanian et al. 2005 &lt;<a href="https://doi.org/10.1073%2Fpnas.0506580102">doi:10.1073/pnas.0506580102</a>&gt;). The 'liger' package provides a lightweight R implementation of this enrichment test on a list of values (Fan et al., 2017 &lt;<a href="https://doi.org/10.5281%2Fzenodo.887386">doi:10.5281/zenodo.887386</a>&gt;). Given a list of values, such as p-values or log-fold changes derived from differential expression analysis or other analyses comparing biological states, this package enables you to test a priori defined set of genes for enrichment to enable interpretability of highly significant or high fold-change genes.</p>
+<table summary="Package liger summary">
+<tr>
+<td>Version:</td>
+<td>1.1.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>graphics, stats, <a href="../Rcpp/index.html">Rcpp</a>, <a href="../matrixStats/index.html">matrixStats</a>, parallel</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-07-16</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Jean Fan <a href="https://orcid.org/0000-0002-0212-5451"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    cre],
+  Peter Kharchenko [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Jean Fan  &#x3c;&#x6a;&#x65;&#x61;&#x6e;&#x66;&#x61;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x6a;&#x68;&#x75;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/JEFworks/liger/issues">https://github.com/JEFworks/liger/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a> | file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/JEFworks/liger">https://github.com/JEFworks/liger</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">liger citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_liger.html">liger results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package liger downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="liger.pdf"> liger.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/gsea.pdf">example</a><br/>
+<a href="vignettes/interpreting.pdf">interpreting</a><br/>
+<a href="vignettes/permpvals.pdf">pvals</a><br/>
+<a href="vignettes/simulation.pdf">simulation</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/liger_1.1.2.tar.gz"> liger_1.1.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/liger_1.1.2.zip">liger_1.1.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/liger_1.1.2.zip">liger_1.1.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/liger_1.1.2.zip">liger_1.1.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/liger_1.1.2.tgz">liger_1.1.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/liger_1.1.2.tgz">liger_1.1.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/liger"> liger archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=liger"><samp>https://CRAN.R-project.org/package=liger</samp></a>
+to link to this page.</p>
+</body>
+</html>

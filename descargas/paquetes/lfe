@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package lfe</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Linear Group Fixed Effects [R package lfe version 2.8-5.1]" />
+<meta name="citation_author" content="Simen Gaure" />
+<meta name="citation_publication_date" content="2020-07-08" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=lfe" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=lfe" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="lfe: Linear Group Fixed Effects" />
+<meta name="og:description" content="Transforms away factors with many levels prior to doing an OLS. Useful for estimating linear models with multiple group fixed effects, and for estimating linear models which uses factors with many levels as pure control variables. Includes support for instrumental variables, conditional F statistics for weak instruments, robust and multi-way clustered standard errors, as well as limited mobility bias correction." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=lfe" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>lfe: Linear Group Fixed Effects</h2>
+<p>Transforms away factors with many levels prior to doing an OLS.
+  Useful for estimating linear models with multiple group fixed effects, and for
+  estimating linear models which uses factors with many levels as pure control variables.
+  Includes support for instrumental variables, conditional F statistics for weak instruments,
+  robust and multi-way clustered standard errors, as well as limited mobility bias correction.</p>
+<table summary="Package lfe summary">
+<tr>
+<td>Version:</td>
+<td>2.8-5.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.15.2), <a href="../Matrix/index.html">Matrix</a> (&ge; 1.1-2)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Formula/index.html">Formula</a>, <a href="../xtable/index.html">xtable</a>, compiler, utils, methods, <a href="../sandwich/index.html">sandwich</a>, parallel</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../digest/index.html">digest</a>, <a href="../igraph/index.html">igraph</a>, <a href="../plm/index.html">plm</a>, <a href="../cubature/index.html">cubature</a> (&ge; 2.0.3), <a href="../numDeriv/index.html">numDeriv</a>, <a href="../data.table/index.html">data.table</a>, <a href="../alpaca/index.html">alpaca</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-07-08</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Simen Gaure <a href="https://orcid.org/0000-0001-7251-8747"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    cre],
+  Grant McDermott [ctb],
+  Karl Dunkle Werner [ctb],
+  Matthieu Stigler [ctb],
+  Daniel Lüdecke [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Simen Gaure  &#x3c;&#x53;&#x69;&#x6d;&#x65;&#x6e;&#x2e;&#x47;&#x61;&#x75;&#x72;&#x65;&#x20;&#x61;&#x74;&#x20;&#x66;&#x72;&#x69;&#x73;&#x63;&#x68;&#x2e;&#x75;&#x69;&#x6f;&#x2e;&#x6e;&#x6f;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/sgaure/lfe/issues">https://github.com/sgaure/lfe/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/Artistic-2.0">Artistic-2.0</a></td>
+</tr>
+<tr>
+<td>Copyright:</td>
+<td>2011-2019, Simen Gaure</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/sgaure/lfe">https://github.com/sgaure/lfe</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Classification/JEL:</td>
+<td><a href="../../classifications/JEL.html#code:C13">C13</a>, <a href="../../classifications/JEL.html#code:C23">C23</a>, <a href="../../classifications/JEL.html#code:C60">C60</a></td>
+</tr>
+<tr>
+<td>Classification/MSC:</td>
+<td><a href="../../classifications/MSC.html#code:62J05">62J05</a>, <a href="../../classifications/MSC.html#code:65F10">65F10</a>, <a href="../../classifications/MSC.html#code:65F50">65F50</a></td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">lfe citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Econometrics.html">Econometrics</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_lfe.html">lfe results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package lfe downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="lfe.pdf"> lfe.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/biascorrection.pdf">Limited mobility bias correction</a><br/>
+<a href="vignettes/identification.pdf">Multicollinearity, identification, and estimable functions</a><br/>
+<a href="vignettes/lfehow.pdf">How lfe works</a><br/>
+<a href="vignettes/speed.pdf">Convergence rate with examples</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/lfe_2.8-5.1.tar.gz"> lfe_2.8-5.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/lfe_2.8-5.1.zip">lfe_2.8-5.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/lfe_2.8-5.1.zip">lfe_2.8-5.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/lfe_2.8-5.1.zip">lfe_2.8-5.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/lfe_2.8-5.1.tgz">lfe_2.8-5.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/lfe_2.8-5.1.tgz">lfe_2.8-5.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/lfe"> lfe archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package lfe reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../collapse/index.html">collapse</a>, <a href="../ExPanDaR/index.html">ExPanDaR</a>, <a href="../interflex/index.html">interflex</a>, <a href="../RCT/index.html">RCT</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../alpaca/index.html">alpaca</a>, <a href="../broom/index.html">broom</a>, <a href="../DeclareDesign/index.html">DeclareDesign</a>, <a href="../estimatr/index.html">estimatr</a>, <a href="../fixest/index.html">fixest</a>, <a href="../insight/index.html">insight</a>, <a href="../modelsummary/index.html">modelsummary</a>, <a href="../parameters/index.html">parameters</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;enhances:</td>
+<td><a href="../stargazer/index.html">stargazer</a>, <a href="../texreg/index.html">texreg</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=lfe"><samp>https://CRAN.R-project.org/package=lfe</samp></a>
+to link to this page.</p>
+</body>
+</html>

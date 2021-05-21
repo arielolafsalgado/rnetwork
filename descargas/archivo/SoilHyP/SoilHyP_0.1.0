@@ -1,0 +1,29 @@
+Package: SoilHyP
+Type: Package
+Title: Soil Hydraulic Properties
+Version: 0.1.0
+Date: 2018-01-12
+Maintainer: Ullrich Dettmann <ullrich.dettmann@thuenen.de>
+Authors@R: c(person('Ullrich', 'Dettmann', email = 'ullrich.dettmann@thuenen.de',
+                  role = c('aut', 'cre')), 
+          person('Felix', 'Andrews', role = 'ctb', comment = 'For the code copied from the hydromad::SCEoptim function (Version: 0.9-15) which is not on r-cran (https://github.com/floybix/hydromad). The SCEoptim function is adapted, and substantially revised from Brecht Donckels MATLAB code which is in turn adopted from Qingyun Duans MATLAB code'),
+          person('Brecht', 'Donckels', role = 'ctb', comment = 'For the Matlab code which was adapted and reviesed in the hydromad::SCEoptim function.'),
+          person('Qingyun', 'Duan', role = 'ctb', comment = 'For the MATLAB code adapted from Brecht Donkels.'))
+Description: Provides functions for (1) soil water retention and unsaturated hydraulic conductivity (van Genuchten-Mualem (vGM/vG) (van Genuchten (1980) <doi:10.2136/sssaj1980.03615995004400050002x>; Mualem (1976) <doi:10.1029/WR012i003p00513>), Peters-Durner-Iden (PDI) (Peters (2013) <doi:10.1002/wrcr.20548>; Iden and Durner (2013) <doi:10.1002/2014WR015937>; Peters (2014) <doi:10.1002/2014WR015937>)), (2) fitting of parameter for soil water retention (SWC) and/or unsaturated hydraulic conductivity function (Ku) using Shuffled Complex Evolution (SCE) optimisation and (3) calculation of soil hydraulic properties (unsaturated hydraulic conductivities and soil water contents) based on the simplfied evaporation method (SEM) (Peters and Durner (2008) <doi:10.1016/j.jhydrol.2008.04.016>).
+Encoding: UTF-8
+License: GPL (>= 2)
+Depends: R (>= 3.4.0)
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-02-09 16:24:16 UTC; ulli
+Author: Ullrich Dettmann [aut, cre],
+  Felix Andrews [ctb] (For the code copied from the hydromad::SCEoptim
+    function (Version: 0.9-15) which is not on r-cran
+    (https://github.com/floybix/hydromad). The SCEoptim function is
+    adapted, and substantially revised from Brecht Donckels MATLAB code
+    which is in turn adopted from Qingyun Duans MATLAB code),
+  Brecht Donckels [ctb] (For the Matlab code which was adapted and
+    reviesed in the hydromad::SCEoptim function.),
+  Qingyun Duan [ctb] (For the MATLAB code adapted from Brecht Donkels.)
+Repository: CRAN
+Date/Publication: 2018-02-09 18:42:24 UTC

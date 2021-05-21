@@ -1,0 +1,43 @@
+Package: climate
+Title: Interface to Download Meteorological (and Hydrological) Datasets
+Version: 0.3.0
+Authors@R: c(person(given = "Bartosz",
+           family = "Czernecki",
+           role = c("aut", "cre"),
+           email = "nwp@amu.edu.pl",
+           comment = c(ORCID = "0000-0001-6496-1386")),
+           person(given = "Arkadiusz", 
+           family = "Głogowski", 
+           role = "aut", 
+           email = "arkadiusz.glogowski@upwr.edu.pl", 
+           comment = c(ORCID = "0000-0002-7587-8892")),
+           person(given = "Jakub", 
+           family = "Nowosad", 
+           role = "aut",
+           email = "nowosad.jakub@gmail.com", 
+           comment = c(ORCID = "0000-0002-1057-3721")),
+           person("IMGW-PIB", role = "ctb", comment = "source of the data"))
+Description: Automatize downloading of meteorological and hydrological data from publicly available repositories:
+    OGIMET (<http://ogimet.com/index.phtml.en>), 
+    University of Wyoming - atmospheric vertical profiling data (<http://weather.uwyo.edu/upperair>),
+    and Polish Institute of Meterology and Water Management - National Research Institute (<https://dane.imgw.pl>).
+    This package also allows for adding geographical coordinates for each observation.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.1
+Depends: R (>= 3.1)
+Imports: RCurl, XML, imgw
+Suggests: testthat, knitr, rmarkdown, dplyr, tidyr, maps
+URL: https://github.com/bczernecki/climate
+BugReports: https://github.com/bczernecki/climate/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-12-04 13:48:17 UTC; bartosz
+Author: Bartosz Czernecki [aut, cre] (<https://orcid.org/0000-0001-6496-1386>),
+  Arkadiusz Głogowski [aut] (<https://orcid.org/0000-0002-7587-8892>),
+  Jakub Nowosad [aut] (<https://orcid.org/0000-0002-1057-3721>),
+  IMGW-PIB [ctb] (source of the data)
+Maintainer: Bartosz Czernecki <nwp@amu.edu.pl>
+Repository: CRAN
+Date/Publication: 2019-12-13 13:50:02 UTC

@@ -1,0 +1,42 @@
+Package: RPresto
+Title: DBI Connector to Presto
+Version: 1.2.0
+Authors@R: c(
+    person('Onur Ismail', 'Filiz', , 'onur@fb.com', role=c('aut', 'cre')),
+    person('Sergey', 'Goder', , 'sgoder@fb.com', role='aut'),
+    person('John Myles', 'White', , 'johnmyleswhite@fb.com', role='ctb')
+    )
+Copyright: Facebook, Inc. 2015-present.
+Description: Implements a DBI compliant interface to Presto. Presto is
+    an open source distributed SQL query engine for running interactive
+    analytic queries against data sources of all sizes ranging from
+    gigabytes to petabytes: <https://prestodb.io/>.
+Depends: R (>= 3.1.0), methods
+Imports: DBI (>= 0.3.0), httr (>= 0.6), RCurl, jsonlite, stringi, stats
+Suggests: testthat, dplyr (>= 0.4.3)
+License: BSD_3_clause + file LICENSE
+URL: https://github.com/prestodb/RPresto
+BugReports: https://github.com/prestodb/RPresto/issues
+Encoding: UTF-8
+LazyData: true
+Collate: 'PrestoDriver.R' 'Presto.R' 'PrestoConnection.R'
+        'utility_functions.R' 'PrestoCursor.R' 'PrestoResult.R'
+        'copy.to.src.presto.R' 'db.data.type.PrestoConnection.R'
+        'db.explain.PrestoConnection.R'
+        'db.query.rows.PrestoConnection.R' 'dbHasCompleted.R'
+        'dbClearResult.R' 'dbConnect.R' 'dbDataType.R' 'dbDisconnect.R'
+        'dbSendQuery.R' 'json.tabular.to.data.frame.R' 'extract.data.R'
+        'dbFetch.R' 'dbGetQuery.R' 'dbListTables.R' 'dbExistsTable.R'
+        'dbGetInfo.R' 'dbGetRowCount.R' 'dbGetStatement.R'
+        'dbIsValid.R' 'dbListFields.R' 'dbUnloadDriver.R' 'fetch.R'
+        'help.R' 'src.desc.src.presto.R' 'src.presto.R'
+        'src.translate.env.src.presto.R' 'tbl.src.presto.R'
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-03-17 20:31:17 UTC; onur
+Author: Onur Ismail Filiz [aut, cre],
+  Sergey Goder [aut],
+  John Myles White [ctb]
+Maintainer: Onur Ismail Filiz <onur@fb.com>
+Repository: CRAN
+Date/Publication: 2016-03-18 00:00:39

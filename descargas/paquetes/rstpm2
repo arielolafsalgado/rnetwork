@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package rstpm2</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Smooth Survival Models, Including Generalized Survival Models [R package rstpm2 version 1.5.1]" />
+<meta name="citation_author1" content="Mark Clements" />
+<meta name="citation_author2" content="Xing-Rong Liu" />
+<meta name="citation_publication_date" content="2019-11-05" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=rstpm2" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=rstpm2" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="rstpm2: Smooth Survival Models, Including Generalized Survival Models" />
+<meta name="og:description" content="R implementation of generalized survival models (GSMs), smooth accelerated failure time (AFT) models and Markov multi-state models. For the GSMs, g(S(t|x))=eta(t,x) for a link function g, survival S at time t with covariates x and a linear predictor eta(t,x). The main assumption is that the time effect(s) are smooth &amp;lt;&lt;a href=&quot;https://doi.org/10.1177%2F0962280216664760&quot;&gt;doi:10.1177/0962280216664760&lt;/a&gt;&amp;gt;. For fully parametric models with natural splines, this re-implements Stata's 'stpm2' function, which are flexible parametric survival models developed by Royston and colleagues. We have extended the parametric models to include any smooth parametric smoothers for time. We have also extended the model to include any smooth penalized smoothers from the 'mgcv' package, using penalized likelihood. These models include left truncation, right censoring, interval censoring, gamma frailties and normal random effects &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fsim.7451&quot;&gt;doi:10.1002/sim.7451&lt;/a&gt;&amp;gt;. For the smooth AFTs, S(t|x) = S_0(t*eta(t,x)), where the baseline survival function S_0(t)=exp(-exp(eta_0(t))) is modelled for natural splines for eta_0, and the time-dependent cumulative acceleration factor eta(t,x)=\int_0^t exp(eta_1(u,x)) du for log acceleration factor eta_1(u,x). The Markov multi-state models allow for a range of models with smooth transitions to predict transition probabilities, length of stay, utilities and costs, with differences, ratios and standardisation." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=rstpm2" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>rstpm2: Smooth Survival Models, Including Generalized Survival Models</h2>
+<p>R implementation of generalized survival models (GSMs), smooth accelerated failure time (AFT) models and Markov multi-state models. For the GSMs, g(S(t|x))=eta(t,x) for a link function g, survival S at time t with covariates x and a linear predictor eta(t,x). The main assumption is that the time effect(s) are smooth &lt;<a href="https://doi.org/10.1177%2F0962280216664760">doi:10.1177/0962280216664760</a>&gt;. For fully parametric models with natural splines, this re-implements Stata's 'stpm2' function, which are flexible parametric survival models developed by Royston and colleagues. We have extended the parametric models to include any smooth parametric smoothers for time. We have also extended the model to include any smooth penalized smoothers from the 'mgcv' package, using penalized likelihood. These models include left truncation, right censoring, interval censoring, gamma frailties and normal random effects &lt;<a href="https://doi.org/10.1002%2Fsim.7451">doi:10.1002/sim.7451</a>&gt;. For the smooth AFTs, S(t|x) = S_0(t*eta(t,x)), where the baseline survival function S_0(t)=exp(-exp(eta_0(t))) is modelled for natural splines for eta_0, and the time-dependent cumulative acceleration factor eta(t,x)=\int_0^t exp(eta_1(u,x)) du for log acceleration factor eta_1(u,x). The Markov multi-state models allow for a range of models with smooth transitions to predict transition probabilities, length of stay, utilities and costs, with differences, ratios and standardisation.</p>
+<table summary="Package rstpm2 summary">
+<tr>
+<td>Version:</td>
+<td>1.5.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0.2), methods, <a href="../survival/index.html">survival</a>, splines</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>graphics, <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.10.2), stats, <a href="../mgcv/index.html">mgcv</a>, <a href="../bbmle/index.html">bbmle</a> (&ge; 1.0.20), <a href="../fastGHQuad/index.html">fastGHQuad</a>, <a href="../deSolve/index.html">deSolve</a>, utils, parallel</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../eha/index.html">eha</a>, <a href="../testthat/index.html">testthat</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../lattice/index.html">lattice</a>, <a href="../readstata13/index.html">readstata13</a>, <a href="../mstate/index.html">mstate</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-11-05</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Mark Clements [aut, cre],
+  Xing-Rong Liu [aut],
+  Paul Lambert [ctb],
+  Lasse Hjort Jakobsen [ctb],
+  Alessandro Gasparini [ctb],
+  Gordon Smyth [cph],
+  Patrick Alken [cph],
+  Simon Wood [cph],
+  Rhys Ulerich [cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Mark Clements  &#x3c;&#x6d;&#x61;&#x72;&#x6b;&#x2e;&#x63;&#x6c;&#x65;&#x6d;&#x65;&#x6e;&#x74;&#x73;&#x20;&#x61;&#x74;&#x20;&#x6b;&#x69;&#x2e;&#x73;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="http://github.com/mclements/rstpm2/issues">http://github.com/mclements/rstpm2/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://github.com/mclements/rstpm2">http://github.com/mclements/rstpm2</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Survival.html">Survival</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_rstpm2.html">rstpm2 results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package rstpm2 downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="rstpm2.pdf"> rstpm2.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Introduction.pdf">Introduction to the rstpm2 Package</a><br/>
+<a href="vignettes/SimpleGuide.pdf">\texttt{rstpm2}: a simple guide</a><br/>
+<a href="vignettes/multistate.pdf">Predictions for Markov multi-state models</a><br/>
+<a href="vignettes/predictnl.pdf">Introduction to the predictnl function</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/rstpm2_1.5.1.tar.gz"> rstpm2_1.5.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/rstpm2_1.5.1.zip">rstpm2_1.5.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/rstpm2_1.5.1.zip">rstpm2_1.5.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/rstpm2_1.5.1.zip">rstpm2_1.5.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/rstpm2_1.5.1.tgz">rstpm2_1.5.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/rstpm2_1.5.1.tgz">rstpm2_1.5.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/rstpm2"> rstpm2 archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package rstpm2 reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../cuRe/index.html">cuRe</a>, <a href="../metaRMST/index.html">metaRMST</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../biostat3/index.html">biostat3</a>, <a href="../mexhaz/index.html">mexhaz</a>, <a href="../rsimsum/index.html">rsimsum</a>, <a href="../simsurv/index.html">simsurv</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=rstpm2"><samp>https://CRAN.R-project.org/package=rstpm2</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,33 @@
+Package: RcmdrPlugin.BiclustGUI
+Type: Package
+Title: 'Rcmdr' Plug-in GUI for Biclustering
+Version: 1.1.0
+Date: 2017-01-24
+Author: De Troyer Ewoud, Otava Martin
+Maintainer: De Troyer Ewoud <ewoud.detroyer@uhasselt.be>
+Description: A plug-in for R Commander ('Rcmdr'). The package is a Graphical
+    User Interface (GUI) in which several biclustering methods can be executed,
+    followed by diagnostics and plots of the results. Further, the GUI also has
+    the possibility to connect the methods to more general diagnostic packages for
+    biclustering. Biclustering methods from 'biclust', 'fabia', 's4vd', 'iBBiG',
+    'isa2', 'BiBitR', 'rqubic' and 'BicARE' are implemented. Additionally, 'superbiclust' and
+    'BcDiag' are also implemented to be able to further investigate results. The
+    GUI also provides a couple of extra utilities to export, save, search through
+    and plot the results. 'RcmdrPlugin.BiclustGUI' also provides a very specific
+    framework for biclustering in which new methods, diagnostics and plots can be
+    added. Scripts were prepared so that R-package developers can freely design
+    their own dialogs in the GUI which can then be added by the maintainer of
+    'RcmdrPlugin.BiclustGUI'. These scripts do not required any knowledge of 'tcltk'
+    and 'Rcmdr' and are easy to fill in.
+License: GPL-3
+Depends: biclust, fabia, iBBiG,superbiclust(>= 1.1),BcDiag(>= 1.0.10),
+        rqubic, BicARE, s4vd, BiBitR(>= 0.2.0)
+Imports: Rcmdr, tcltk, gplots, grDevices, graphics, methods, utils,
+        viridis
+VignetteBuilder: knitr
+Suggests: knitr
+NeedsCompilation: no
+Packaged: 2017-01-25 15:29:45 UTC; lucp8394
+RoxygenNote: 5.0.1
+Repository: CRAN
+Date/Publication: 2017-01-26 01:09:25

@@ -1,0 +1,34 @@
+Package: themis
+Title: Extra Recipes Steps for Dealing with Unbalanced Data
+Version: 0.1.0
+Authors@R: 
+    person(given = "Emil",
+           family = "Hvitfeldt",
+           role = c("aut", "cre"),
+           email = "emilhhvitfeldt@gmail.com",
+           comment = c(ORCID = "0000-0002-0679-1945"))
+Description: A dataset with an uneven number of cases in each class is said to 
+    be unbalanced. Many models produce a subpar performance on unbalanced 
+    datasets. A dataset can be balanced by increasing the number of minority 
+    cases using  SMOTE 2011 <arXiv:1106.1813>, BorderlineSMOTE 2005 
+    <doi:10.1007/11538059_91> and ADASYN 2008 
+    <https://ieeexplore.ieee.org/document/4633969>. Or by  decreasing the number
+    of majority cases using NearMiss 2003
+    <https://www.site.uottawa.ca/~nat/Workshop2003/jzhang.pdf> or Tomek link 
+    removal 1976 <https://ieeexplore.ieee.org/document/4309452>.
+License: MIT + file LICENSE
+Suggests: testthat (>= 2.1.0), covr, ggplot2, modeldata
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+Depends: R (>= 2.10), recipes (>= 0.1.4)
+Imports: tibble, purrr, withr, generics, dplyr, rlang, tidyselect (>=
+        0.2.5), ROSE, unbalanced, RANN, dials
+URL: https://github.com/tidymodels/themis
+BugReports: https://github.com/tidymodels/themis/issues
+NeedsCompilation: no
+Packaged: 2020-01-09 16:41:29 UTC; emilhvitfeldthansen
+Author: Emil Hvitfeldt [aut, cre] (<https://orcid.org/0000-0002-0679-1945>)
+Maintainer: Emil Hvitfeldt <emilhhvitfeldt@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-01-13 15:30:02 UTC

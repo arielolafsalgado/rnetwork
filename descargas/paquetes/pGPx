@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package pGPx</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Pseudo-Realizations for Gaussian Process Excursions [R package pGPx version 0.1.1]" />
+<meta name="citation_author" content="Dario Azzimonti" />
+<meta name="citation_publication_date" content="2018-08-20" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=pGPx" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=pGPx" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="pGPx: Pseudo-Realizations for Gaussian Process Excursions" />
+<meta name="og:description" content="Computes pseudo-realizations from the posterior distribution of a Gaussian Process (GP) with the method described in Azzimonti et al. (2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.1137%2F141000749&quot;&gt;doi:10.1137/141000749&lt;/a&gt;&amp;gt;. The realizations are obtained from simulations of the field at few well chosen points that minimize the expected distance in measure between the true excursion set of the field and the approximate one. Also implements a R interface for (the main function of) Distance Transform of sampled Functions (&amp;lt;&lt;a href=&quot;http://cs.brown.edu/people/pfelzens/dt/index.html&quot;&gt;http://cs.brown.edu/people/pfelzens/dt/index.html&lt;/a&gt;&amp;gt;)." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=pGPx" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>pGPx: Pseudo-Realizations for Gaussian Process Excursions</h2>
+<p>Computes pseudo-realizations from the posterior distribution of a Gaussian Process (GP) with the method described in Azzimonti et al. (2016) &lt;<a href="https://doi.org/10.1137%2F141000749">doi:10.1137/141000749</a>&gt;. The realizations are obtained from simulations of the field at few well chosen points that minimize the expected distance in measure between the true excursion set of the field and the approximate one. Also implements a R interface for (the main function of) Distance Transform of sampled Functions (&lt;<a href="http://cs.brown.edu/people/pfelzens/dt/index.html">http://cs.brown.edu/people/pfelzens/dt/index.html</a>&gt;).</p>
+<table summary="Package pGPx summary">
+<tr>
+<td>Version:</td>
+<td>0.1.1</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.13), <a href="../DiceKriging/index.html">DiceKriging</a>, <a href="../pbivnorm/index.html">pbivnorm</a>, <a href="../KrigInv/index.html">KrigInv</a>, <a href="../rgenoud/index.html">rgenoud</a>, <a href="../randtoolbox/index.html">randtoolbox</a>, <a href="../pracma/index.html">pracma</a>, grDevices</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../anMC/index.html">anMC</a>, <a href="../DiceDesign/index.html">DiceDesign</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2018-08-20</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Dario Azzimonti <a href="https://orcid.org/0000-0001-5080-3061"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre, cph],
+  Julien Bect [ctb],
+  Pedro Felzenszwalb [ctb, cph] (Original dt code,
+    http://cs.brown.edu/people/pfelzens/dt/index.html)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Dario Azzimonti  &#x3c;&#x64;&#x61;&#x72;&#x69;&#x6f;&#x2e;&#x61;&#x7a;&#x7a;&#x69;&#x6d;&#x6f;&#x6e;&#x74;&#x69;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://epubs.siam.org/doi/abs/10.1137/141000749">https://epubs.siam.org/doi/abs/10.1137/141000749</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_pGPx.html">pGPx results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package pGPx downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="pGPx.pdf"> pGPx.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/pGPx_0.1.1.tar.gz"> pGPx_0.1.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/pGPx_0.1.1.zip">pGPx_0.1.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/pGPx_0.1.1.zip">pGPx_0.1.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/pGPx_0.1.1.zip">pGPx_0.1.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/pGPx_0.1.1.tgz">pGPx_0.1.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/pGPx_0.1.1.tgz">pGPx_0.1.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/pGPx"> pGPx archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package pGPx reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../profExtrema/index.html">profExtrema</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=pGPx"><samp>https://CRAN.R-project.org/package=pGPx</samp></a>
+to link to this page.</p>
+</body>
+</html>

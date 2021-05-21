@@ -1,0 +1,26 @@
+Package: miceadds
+Type: Package
+Title: Some additional multiple imputation functions, especially for
+        mice
+Version: 0.11-121
+Date: 2014-02-19
+Author: Alexander Robitzsch [aut, cre]
+Maintainer: Alexander Robitzsch <a.robitzsch@bifie.at>
+Authors@R: c(person("Alexander", "Robitzsch", role =
+        c("aut","cre"), email = "a.robitzsch@bifie.at"))
+Description: The package miceadds contains some auxiliary functions for
+    multiple imputation which complements existing functionality in R.
+    In addition to some utility functions, main features include 
+    plausible value imputation, multilevel imputation functions,
+    imputation using partial least squares (PLS) for high dimensional 
+    predictors and two-way imputation.
+Depends: R (>= 2.15.0), MASS, mice (>= 2.21), mvtnorm, pan (>= 0.9)
+Imports: sirt (>= 0.42), lme4, MBESS, pls, mitools, bayesm, Rcpp (>=
+        0.11-0)
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: Amelia, Zelig, rbenchmark, reshape
+License: GPL (>= 2.0)
+Packaged: 2014-02-19 15:19:08 UTC; robitzsch
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2014-02-19 16:47:32

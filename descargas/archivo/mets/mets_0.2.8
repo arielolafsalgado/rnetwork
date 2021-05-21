@@ -1,0 +1,25 @@
+Package: mets
+Type: Package
+Title: Analysis of Multivariate Event Times
+Version: 0.2.8
+Date: 2014-05-07
+Author: Klaus K. Holst and Thomas Scheike
+Maintainer: Klaus K. Holst <kkho@biostat.ku.dk>
+Description: Implementation of various statistical models for multivariate
+    event history data. Including multivariate cumulative incidence models, and
+    bivariate random effects probit models (Liability models). Also contains
+    two-stage binomial modelling that can do pairwise odds-ratio dependence
+    modelling based marginal logistic regression models. This is an alternative
+    to the alternating logistic regression approach (ALR).
+License: GPL (>= 2)
+LazyLoad: yes
+URL: http://lava.r-forge.r-project.org/
+Depends: R (>= 2.15), timereg (>= 1.8.4), lava (>= 1.2.4)
+Imports: numDeriv, compiler, Rcpp, splines
+Suggests: lava.tobit (>= 0.4-7), prodlim, testthat, ucminf
+LinkingTo: Rcpp, RcppArmadillo
+Roxygen: list(wrap = FALSE)
+Packaged: 2014-05-13 09:52:53 UTC; klaus
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2014-05-13 14:57:03

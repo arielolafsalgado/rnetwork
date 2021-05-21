@@ -1,0 +1,43 @@
+Package: RKorAPClient
+Type: Package
+Title: 'KorAP' Web Service Client Package
+Version: 0.5.7
+Authors@R: 
+    c(person(given = "Marc",
+             family = "Kupietz",
+             role = c("aut", "cre"),
+             email = "kupietz@ids-mannheim.de"),
+      person(given = "Nils",
+             family = "Diewald",
+             role = c("ctb"),
+             email = "diewald@ids-mannheim.de"),
+      person(given = "Leibniz Institute for the German Language",
+             role = c("cph", "fnd")))
+Description: A client package that makes the 'KorAP' web service API accessible from R.
+  The corpus analysis platform 'KorAP' has been developed as a scientific tool to make
+  potentially large, stratified and multiply annotated corpora, such as the 'German Reference Corpus DeReKo'
+  or the 'Corpus of the Contemporary Romanian Language CoRoLa', accessible for linguists to let them verify
+  hypotheses and to find interesting patterns in real language use.
+  The 'RKorAPClient' package provides access to 'KorAP' and the corpora behind it for user-created R code,
+  as a programmatic alternative to the 'KorAP' web user-interface.
+  You can learn more about 'KorAP' and use it directly on 'DeReKo' at <https://korap.ids-mannheim.de/>.
+Depends: R (>= 3.5.0)
+Language: en-US
+License: BSD_2_clause + file LICENSE
+Encoding: UTF-8
+LazyData: false
+RoxygenNote: 7.1.0
+Imports: R.cache, broom, ggplot2, tibble, magrittr, tidyr, dplyr,
+        purrr, lubridate, highcharter, jsonlite, keyring, plotly,
+        htmlwidgets, utils, httr, methods, PTXQC
+Collate: 'KorAPConnection.R' 'KorAPCorpusStats.R' 'RKorAPClient.R'
+        'KorAPQuery.R' 'ci.R' 'highcharter-helper.R' 'misc.R'
+        'reexports.R'
+NeedsCompilation: no
+Packaged: 2020-03-17 11:46:38 UTC; kupietz
+Author: Marc Kupietz [aut, cre],
+  Nils Diewald [ctb],
+  Leibniz Institute for the German Language [cph, fnd]
+Maintainer: Marc Kupietz <kupietz@ids-mannheim.de>
+Repository: CRAN
+Date/Publication: 2020-03-17 12:50:02 UTC

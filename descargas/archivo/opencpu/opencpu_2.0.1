@@ -1,0 +1,30 @@
+Package: opencpu
+Title: Producing and Reproducing Results
+Version: 2.0.1
+Author: Jeroen Ooms
+Maintainer: Jeroen Ooms <jeroen@berkeley.edu>
+License: Apache License 2.0
+URL: https://www.opencpu.org (website) https://opencpu.github.io
+        (documentation) https://github.com/opencpu/opencpu#readme
+        (devel)
+BugReports: https://github.com/opencpu/opencpu/issues
+Depends: R (>= 3.0.0)
+Imports: evaluate (>= 0.10), httpuv (>= 1.3), knitr (>= 1.6), jsonlite
+        (>= 1.4), devtools (>= 1.12), sys (>= 1.3), webutils (>= 0.5),
+        curl (>= 2.5), sendmailR, rappdirs, zip, mime, protolite, brew,
+        openssl, pander
+Suggests: unix (>= 1.3), feather, R.rsp
+SystemRequirements: pandoc, apparmor (optional)
+VignetteBuilder: knitr, R.rsp
+Description: A system for embedded scientific computing and reproducible research with R.
+    The OpenCPU server exposes a simple but powerful HTTP api for RPC and data interchange
+    with R. This provides a reliable and scalable foundation for statistical services or 
+    building R web applications. The OpenCPU server runs either as a single-user development
+    server within the interactive R session, or as a multi-user Linux stack based on Apache2. 
+    The entire system is fully open source and permissively licensed. The OpenCPU website
+    has detailed documentation and example apps.
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-05-21 12:12:37 UTC; jeroen
+Repository: CRAN
+Date/Publication: 2017-05-21 17:14:29 UTC

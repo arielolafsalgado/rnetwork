@@ -1,0 +1,30 @@
+Package: constellation
+Type: Package
+Title: Identify Event Sequences Using Time Series Joins
+Version: 0.1.0
+Date: 2017-10-30
+Depends: R (>= 3.0.0)
+Imports: data.table (>= 1.9.5), fasttime (>= 1.0-2)
+Suggests: knitr, rmarkdown, ggplot2, devtools, testthat
+Authors@R: person("Mark", "Sendak", email = "mark.sendak@gmail.com",
+  role = c("aut", "cre"))
+Description: Examine any number of time series data frames to identify 
+    instances in which various criteria are met within specified time
+    frames. In clinical medicine, these types of events are often
+    called "constellations of signs and symptoms", because a single 
+    condition depends on a series of events occurring within a certain 
+    amount of time of each other. This package was written to work with
+    any number of time series data frames and is optimized for speed 
+    to work well with data frames with millions of rows.
+License: GPL (>= 2)
+LazyData: true
+URL: https://github.com/marksendak/constellation
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2017-11-30 18:41:40 UTC; mpd10
+Author: Mark Sendak [aut, cre]
+Maintainer: Mark Sendak <mark.sendak@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-11-30 19:07:46 UTC

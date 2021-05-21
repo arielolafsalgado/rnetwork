@@ -1,0 +1,15 @@
+Package: permubiome
+Type: Package
+Title: A Permutation Based Test for Biomarker Discovery in Microbiome
+        Data
+Version: 1.2
+Date: 2018-09-01
+Author: Alfonso Benitez-Paez
+Maintainer: Alfonso Benitez-Paez <abenitez@iata.csic.es>
+Description: The permubiome R package was created to perform a permutation-based non-parametric analysis on microbiome data for biomarker discovery aims. This test executes thousands of comparisons in a pairwise manner, after a random shuffling of data into the different groups of study with prior selection of the microbiome features with the largest variation among groups. Previous to the permutation test itself, data can be normalized according to different methods proposed to handle microbiome data ('proportions', 'anders', and 'paulson'). The median-based differences between groups resulting from the multiple simulations are fitted to a normal distribution with the aim to calculate their significance. A multiple testing correction based on Benjamini-Hochberg method (fdr) is finally applied to extract the differentially presented features between groups of your dataset. LATEST UPDATES: v1.1 and olders incorporates function to parse BIOM-like format; v1.2 and olders incorporates "optimize" function to maximize evaluation of features with largest inter-class variation.
+License: GPL-3
+Imports: ggplot2
+NeedsCompilation: no
+Packaged: 2018-08-17 18:16:09 UTC; alfonso
+Repository: CRAN
+Date/Publication: 2018-08-17 22:00:03 UTC

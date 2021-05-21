@@ -1,0 +1,25 @@
+Package: rfPermute
+Type: Package
+Title: Estimate Permutation p-Values for Random Forest Importance
+        Metrics
+Description: Estimate significance of importance metrics
+    for a Random Forest model by permuting the response
+    variable. Produces null distribution of importance
+    metrics for each predictor variable and p-value of
+    observed. Provides summary and visualization functions for 'randomForest' 
+    results.
+Version: 2.1.1
+Authors@R: c(
+  EA = person("Eric", "Archer", email = "eric.archer@noaa.gov", role = c("aut", "cre")))
+BugReports: https://github.com/EricArcher/rfPermute/issues
+Depends: R (>= 3.2.0), randomForest
+Imports: abind, ggplot2, graphics, grDevices, gridExtra, parallel,
+        reshape2, stats, swfscMisc
+License: GPL (>= 2)
+RoxygenNote: 5.0.1.9000
+NeedsCompilation: no
+Packaged: 2016-08-03 23:58:03 UTC; eric.archer
+Author: Eric Archer [aut, cre]
+Maintainer: Eric Archer <eric.archer@noaa.gov>
+Repository: CRAN
+Date/Publication: 2016-08-04 11:45:48

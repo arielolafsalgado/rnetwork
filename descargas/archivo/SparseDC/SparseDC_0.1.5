@@ -1,0 +1,31 @@
+Package: SparseDC
+Type: Package
+Title: Implementation of SparseDC Algorithm
+Version: 0.1.5
+Authors@R: c(
+    person("Jun", "Li", email = "jun.li@nd.edu",role = c("aut","cre")),
+    person("Martin", "Barron", email = "mbarron2@nd.edu",role = c("aut")))
+Description: Implements the algorithm described in 
+    Barron, M., Zhang, S. and Li, J. "A sparse differential
+    clustering algorithm for tracing cell type changes via single-cell
+    RNA-sequencing data"  (Unpublished). This algorithm clusters samples from two different
+    populations, links the clusters across the conditions and identifies 
+    marker genes for these changes. The package was designed for scRNA-Seq
+    data but is also applicable to many other data types, just replace cells
+    with samples and genes with variables. The package also contains functions
+    for estimating the parameters for SparseDC as outlined in the paper.
+Depends: R (>= 3.1.0)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Imports: stats
+NeedsCompilation: no
+Packaged: 2017-05-02 06:32:54 UTC; Administrator
+Author: Jun Li [aut, cre],
+  Martin Barron [aut]
+Maintainer: Jun Li <jun.li@nd.edu>
+Repository: CRAN
+Date/Publication: 2017-05-02 10:50:17 UTC

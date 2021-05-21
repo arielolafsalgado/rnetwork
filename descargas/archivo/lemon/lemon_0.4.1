@@ -1,0 +1,46 @@
+Package: lemon
+Type: Package
+Title: Freshing Up your 'ggplot2' Plots
+URL: https://github.com/stefanedwards/lemon
+BugReports: https://github.com/stefanedwards/lemon/issues
+Version: 0.4.1
+Date: 2018-06-28
+Authors@R: c(
+    person('Stefan McKinnon', 'Edwards', email='sme@iysik.com',
+    comment=c(ORCID='0000-0002-4628-8148'),
+    role=c('aut','ctb','cre')),
+    person('Baptiste','Auguie', role='ctb',
+    comment='For g_legend and grid_arrange_shared_legend'),
+    person('Shaun','Jackman', role='ctb',
+    comment='For grid_arrange_shared_legend'),
+    person("Hadley", "Wickham", , "hadley@rstudio.com", "ctb",
+    comment='ggplot2 functions'),
+    person("Winston", "Chang", , "winston@rstudio.com", "ctb",
+    comment='ggplot2 functions')
+    )
+Description: Functions for working with legends and axis lines of 'ggplot2',
+    facets that repeat axis lines on all panels, and some 'knitr' extensions.
+Depends: R (>= 3.1.0)
+Imports: ggplot2 (>= 2.2.0), plyr, grid, gridExtra, gtable, knitr (>=
+        1.12), lattice
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Collate: 'ggplot2.r' 'brackets.R' 'coord-flex.r' 'coord-capped.r'
+        'dot.r' 'facet-rep-lab.r' 'facet-wrap.r' 'geom-pointline.r'
+        'lemon_print.r' 'geom-siderange.r' 'gtable_show-.r'
+        'guides-axis.r' 'legends.r' 'lemon.r'
+Suggests: rmarkdown, stringr, dplyr, testthat
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-06-28 09:23:34 UTC; smhe
+Author: Stefan McKinnon Edwards [aut, ctb, cre]
+    (<https://orcid.org/0000-0002-4628-8148>),
+  Baptiste Auguie [ctb] (For g_legend and grid_arrange_shared_legend),
+  Shaun Jackman [ctb] (For grid_arrange_shared_legend),
+  Hadley Wickham [ctb] (ggplot2 functions),
+  Winston Chang [ctb] (ggplot2 functions)
+Maintainer: Stefan McKinnon Edwards <sme@iysik.com>
+Repository: CRAN
+Date/Publication: 2018-06-28 12:44:47 UTC

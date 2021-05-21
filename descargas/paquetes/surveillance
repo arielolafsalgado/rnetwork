@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package surveillance</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Temporal and Spatio-Temporal Modeling and Monitoring of Epidemic Phenomena [R package surveillance version 1.18.0]" />
+<meta name="citation_author.MH" content="Michael Höhle" />
+<meta name="citation_author.SM" content="Sebastian Meyer" />
+<meta name="citation_author.MP" content="Michaela Paul" />
+<meta name="citation_publication_date" content="2020-03-19" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=surveillance" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=surveillance" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="surveillance: Temporal and Spatio-Temporal Modeling and Monitoring of Epidemic Phenomena" />
+<meta name="og:description" content="Statistical methods for the modeling and monitoring of time series of counts, proportions and categorical data, as well as for the modeling of continuous-time point processes of epidemic phenomena. The monitoring methods focus on aberration detection in count data time series from public health surveillance of communicable diseases, but applications could just as well originate from environmetrics, reliability engineering, econometrics, or social sciences. The package implements many typical outbreak detection procedures such as the (improved) Farrington algorithm, or the negative binomial GLR-CUSUM method of Höhle and Paul (2008) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.csda.2008.02.015&quot;&gt;doi:10.1016/j.csda.2008.02.015&lt;/a&gt;&amp;gt;. A novel CUSUM approach combining logistic and multinomial logistic modeling is also included. The package contains several real-world data sets, the ability to simulate outbreak data, and to visualize the results of the monitoring in a temporal, spatial or spatio-temporal fashion. A recent overview of the available monitoring procedures is given by Salmon et al. (2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.18637%2Fjss.v070.i10&quot;&gt;doi:10.18637/jss.v070.i10&lt;/a&gt;&amp;gt;. For the retrospective analysis of epidemic spread, the package provides three endemic-epidemic modeling frameworks with tools for visualization, likelihood inference, and simulation. hhh4() estimates models for (multivariate) count time series following Paul and Held (2011) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fsim.4177&quot;&gt;doi:10.1002/sim.4177&lt;/a&gt;&amp;gt; and Meyer and Held (2014) &amp;lt;&lt;a href=&quot;https://doi.org/10.1214%2F14-AOAS743&quot;&gt;doi:10.1214/14-AOAS743&lt;/a&gt;&amp;gt;. twinSIR() models the susceptible-infectious-recovered (SIR) event history of a fixed population, e.g, epidemics across farms or networks, as a multivariate point process as proposed by Höhle (2009) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fbimj.200900050&quot;&gt;doi:10.1002/bimj.200900050&lt;/a&gt;&amp;gt;. twinstim() estimates self-exciting point process models for a spatio-temporal point pattern of infective events, e.g., time-stamped geo-referenced surveillance data, as proposed by Meyer et al. (2012) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fj.1541-0420.2011.01684.x&quot;&gt;doi:10.1111/j.1541-0420.2011.01684.x&lt;/a&gt;&amp;gt;. A recent overview of the implemented space-time modeling frameworks for epidemic phenomena is given by Meyer et al. (2017) &amp;lt;&lt;a href=&quot;https://doi.org/10.18637%2Fjss.v077.i11&quot;&gt;doi:10.18637/jss.v077.i11&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=surveillance" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>surveillance: Temporal and Spatio-Temporal Modeling and Monitoring of Epidemic
+Phenomena</h2>
+<p>Statistical methods for the modeling and monitoring of time series
+        of counts, proportions and categorical data, as well as for the modeling
+        of continuous-time point processes of epidemic phenomena.
+        The monitoring methods focus on aberration detection in count data time
+        series from public health surveillance of communicable diseases, but
+        applications could just as well originate from environmetrics,
+        reliability engineering, econometrics, or social sciences. The package
+        implements many typical outbreak detection procedures such as the
+        (improved) Farrington algorithm, or the negative binomial GLR-CUSUM
+        method of Höhle and Paul (2008) &lt;<a href="https://doi.org/10.1016%2Fj.csda.2008.02.015">doi:10.1016/j.csda.2008.02.015</a>&gt;.
+        A novel CUSUM approach combining logistic and multinomial logistic
+        modeling is also included. The package contains several real-world data
+        sets, the ability to simulate outbreak data, and to visualize the
+        results of the monitoring in a temporal, spatial or spatio-temporal
+        fashion. A recent overview of the available monitoring procedures is
+        given by Salmon et al. (2016) &lt;<a href="https://doi.org/10.18637%2Fjss.v070.i10">doi:10.18637/jss.v070.i10</a>&gt;.
+        For the retrospective analysis of epidemic spread, the package provides
+        three endemic-epidemic modeling frameworks with tools for visualization,
+        likelihood inference, and simulation. hhh4() estimates models for
+        (multivariate) count time series following Paul and Held (2011)
+        &lt;<a href="https://doi.org/10.1002%2Fsim.4177">doi:10.1002/sim.4177</a>&gt; and Meyer and Held (2014) &lt;<a href="https://doi.org/10.1214%2F14-AOAS743">doi:10.1214/14-AOAS743</a>&gt;.
+        twinSIR() models the susceptible-infectious-recovered (SIR) event
+        history of a fixed population, e.g, epidemics across farms or networks,
+        as a multivariate point process as proposed by Höhle (2009)
+        &lt;<a href="https://doi.org/10.1002%2Fbimj.200900050">doi:10.1002/bimj.200900050</a>&gt;. twinstim() estimates self-exciting point
+        process models for a spatio-temporal point pattern of infective events,
+        e.g., time-stamped geo-referenced surveillance data, as proposed by
+        Meyer et al. (2012) &lt;<a href="https://doi.org/10.1111%2Fj.1541-0420.2011.01684.x">doi:10.1111/j.1541-0420.2011.01684.x</a>&gt;.
+        A recent overview of the implemented space-time modeling frameworks
+        for epidemic phenomena is given by Meyer et al. (2017)
+        &lt;<a href="https://doi.org/10.18637%2Fjss.v077.i11">doi:10.18637/jss.v077.i11</a>&gt;.</p>
+<table summary="Package surveillance summary">
+<tr>
+<td>Version:</td>
+<td>1.18.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.2.0), methods, grDevices, graphics, stats, utils, <a href="../sp/index.html">sp</a> (&ge; 1.0-15), <a href="../xtable/index.html">xtable</a> (&ge; 1.7-0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.11.1), <a href="../polyCub/index.html">polyCub</a> (&ge; 0.6.0), <a href="../MASS/index.html">MASS</a>, <a href="../Matrix/index.html">Matrix</a>, <a href="../nlme/index.html">nlme</a>, <a href="../spatstat/index.html">spatstat</a> (&ge; 1.36-0)</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../polyCub/index.html">polyCub</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td>parallel, grid, <a href="../xts/index.html">xts</a>, <a href="../gridExtra/index.html">gridExtra</a> (&ge; 2.0.0), <a href="../lattice/index.html">lattice</a>, <a href="../colorspace/index.html">colorspace</a>, <a href="../scales/index.html">scales</a>, <a href="../animation/index.html">animation</a>, <a href="../rmapshaper/index.html">rmapshaper</a>, <a href="../msm/index.html">msm</a>, <a href="../spc/index.html">spc</a>, <a href="../quadprog/index.html">quadprog</a>, <a href="../memoise/index.html">memoise</a>, <a href="../polyclip/index.html">polyclip</a>, <a href="../rgeos/index.html">rgeos</a>, <a href="../gpclib/index.html">gpclib</a>, <a href="../maptools/index.html">maptools</a>, <a href="../intervals/index.html">intervals</a>, <a href="../spdep/index.html">spdep</a>, <a href="../numDeriv/index.html">numDeriv</a>, <a href="../maxLik/index.html">maxLik</a>, <a href="../gsl/index.html">gsl</a>, <a href="../fanplot/index.html">fanplot</a>, <a href="../hhh4contacts/index.html">hhh4contacts</a>, <a href="../testthat/index.html">testthat</a> (&ge;
+0.11.0), <a href="../coda/index.html">coda</a>, <a href="../splancs/index.html">splancs</a>, <a href="../gamlss/index.html">gamlss</a>, INLA (&ge; 0.0-1458166556), <a href="../runjags/index.html">runjags</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../MGLM/index.html">MGLM</a> (&ge; 0.1.0), <a href="../knitr/index.html">knitr</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-03-19</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Michael Höhle <a href="https://orcid.org/0000-0002-0423-6702"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, ths],
+  Sebastian Meyer <a href="https://orcid.org/0000-0002-1791-9449"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Michaela Paul [aut],
+  Leonhard Held [ctb, ths],
+  Howard Burkom [ctb],
+  Thais Correa [ctb],
+  Mathias Hofmann [ctb],
+  Christian Lang [ctb],
+  Juliane Manitz [ctb],
+  Andrea Riebler [ctb],
+  Daniel Sabanés Bové [ctb],
+  Maëlle Salmon [ctb],
+  Dirk Schumacher [ctb],
+  Stefan Steiner [ctb],
+  Mikko Virtanen [ctb],
+  Wei Wei [ctb],
+  Valentin Wimmer [ctb],
+  R Core Team [ctb] (A few code segments are modified versions of code
+    from base R)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Sebastian Meyer  &#x3c;&#x73;&#x65;&#x62;&#x2e;&#x6d;&#x65;&#x79;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x66;&#x61;&#x75;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://surveillance.R-Forge.R-project.org/">http://surveillance.R-Forge.R-project.org/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">surveillance citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Environmetrics.html">Environmetrics</a>, <a href="../../views/SpatioTemporal.html">SpatioTemporal</a>, <a href="../../views/TimeSeries.html">TimeSeries</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_surveillance.html">surveillance results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package surveillance downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="surveillance.pdf"> surveillance.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/glrnb.pdf">algo.glrnb: Count data regression charts using the generalized likelihood ratio statistic</a><br/>
+<a href="vignettes/hhh4.pdf">hhh4: An endemic-epidemic modelling framework for infectious disease counts</a><br/>
+<a href="vignettes/monitoringCounts.pdf">Monitoring count time series in R: Aberration detection in public health surveillance</a><br/>
+<a href="vignettes/surveillance.pdf">Getting started with outbreak detection</a><br/>
+<a href="vignettes/hhh4_spacetime.pdf">hhh4 (spatio-temporal): Endemic-epidemic modeling of areal count time series</a><br/>
+<a href="vignettes/twinSIR.pdf">twinSIR: Individual-level epidemic modeling for a fixed population with known distances</a><br/>
+<a href="vignettes/twinstim.pdf">twinstim: An endemic-epidemic modeling framework for spatio-temporal point patterns</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/surveillance_1.18.0.tar.gz"> surveillance_1.18.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/surveillance_1.18.0.zip">surveillance_1.18.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/surveillance_1.18.0.zip">surveillance_1.18.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/surveillance_1.18.0.zip">surveillance_1.18.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/surveillance_1.18.0.tgz">surveillance_1.18.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/surveillance_1.18.0.tgz">surveillance_1.18.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/surveillance"> surveillance archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package surveillance reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../hhh4contacts/index.html">hhh4contacts</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../EpiSignalDetection/index.html">EpiSignalDetection</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../tscount/index.html">tscount</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=surveillance"><samp>https://CRAN.R-project.org/package=surveillance</samp></a>
+to link to this page.</p>
+</body>
+</html>

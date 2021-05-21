@@ -1,0 +1,39 @@
+Package: glmmfields
+Type: Package
+Title: Generalized Linear Mixed Models with Robust Random Fields for
+        Spatiotemporal Modeling
+Version: 0.1.2
+Authors@R: c(
+    person(c("Sean", "C."), "Anderson", email = "sean@seananderson.ca",
+      role = c("aut", "cre")),
+    person(c("Eric", "J."), "Ward", role = "aut"),
+    person("Trustees of", "Columbia University", role = "cph"))
+Description: Implements Bayesian spatial and spatiotemporal models that
+    optionally allow for extreme spatial deviations through time. 'glmmfields'
+    uses a predictive process approach with random fields implemented through
+    a multivariate-t distribution instead of the usual multivariate normal.
+    Sampling is conducted with 'Stan'. References: Anderson and Ward (2019)
+    <doi:10.1002/ecy.2403>.
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 3.4.0), Rcpp (>= 0.12.18), methods
+Imports: rstan (>= 2.18.2), ggplot2 (>= 2.2.0), rstantools (>= 1.5.1),
+        cluster, dplyr (>= 0.8.0), reshape2, mvtnorm, broom, loo (>=
+        2.0.0), assertthat, nlme, forcats
+LinkingTo: StanHeaders (>= 2.18.0), rstan (>= 2.18.2), BH (>= 1.66.0),
+        Rcpp (>= 0.12.8), RcppEigen (>= 0.3.3.3.0)
+Suggests: testthat, parallel, bayesplot, knitr, rmarkdown, viridis,
+        coda
+URL: https://github.com/seananderson/glmmfields
+BugReports: https://github.com/seananderson/glmmfields/issues
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+SystemRequirements: GNU make
+NeedsCompilation: yes
+Packaged: 2019-03-08 01:29:39 UTC; seananderson
+Author: Sean C. Anderson [aut, cre],
+  Eric J. Ward [aut],
+  Trustees of Columbia University [cph]
+Maintainer: Sean C. Anderson <sean@seananderson.ca>
+Repository: CRAN
+Date/Publication: 2019-03-08 11:30:07 UTC

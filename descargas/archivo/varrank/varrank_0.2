@@ -1,0 +1,28 @@
+Package: varrank
+Type: Package
+Title: Heuristics Tools Based on Mutual Information for Variable
+        Ranking
+Version: 0.2
+Authors@R: c(person("Gilles", "Kratzer", role = c("aut", "cre"),
+             email = "gilles.kratzer@math.uzh.ch",
+             comment = c(ORCID = "0000-0002-5929-8935")),
+             person("Reinhard", "Furrer", role = c("ctb"), 
+             email = "reinhard.furrer@math.uzh.ch",
+             comment = c(ORCID = "0000-0002-6319-2332"))) 
+Author: Gilles Kratzer [aut, cre] (<https://orcid.org/0000-0002-5929-8935>),
+  Reinhard Furrer [ctb] (<https://orcid.org/0000-0002-6319-2332>)
+Maintainer: Gilles Kratzer <gilles.kratzer@math.uzh.ch>
+Description: A computational toolbox of heuristics approaches for performing variable ranking and feature selection based on mutual information well adapted for multivariate system epidemiology datasets. The core function is a general implementation of the minimum redundancy maximum relevance model. R. Battiti (1994) <doi:10.1109/72.298224>. Continuous variables are discretized using a large choice of rule. Variables ranking can be learned with a sequential forward/backward search algorithm. The two main problems that can be addressed by this package is the selection of the most representative variable within a group of variables of interest (i.e. dimension reduction) and variable ranking with respect to a set of features of interest. 
+Encoding: UTF-8
+License: GPL-3
+LazyData: true
+Suggests: knitr, rmarkdown, Boruta, DAAG, FSelector, caret, e1071,
+        mlbench, psych, varSelRF, gplots, entropy, testthat
+URL: https://www.math.uzh.ch/pages/varrank/
+Imports: stats, FNN, grDevices
+VignetteBuilder: knitr
+RoxygenNote: 6.1.0
+NeedsCompilation: no
+Packaged: 2018-12-20 07:23:27 UTC; Kratzer
+Repository: CRAN
+Date/Publication: 2018-12-20 08:50:03 UTC

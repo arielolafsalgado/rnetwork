@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package smooth</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Forecasting Using State Space Models [R package smooth version 2.6.0]" />
+<meta name="citation_author" content="Ivan Svetunkov" />
+<meta name="citation_publication_date" content="2020-06-17" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=smooth" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=smooth" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="smooth: Forecasting Using State Space Models" />
+<meta name="og:description" content="Functions implementing Single Source of Error state space models for purposes of time series analysis and forecasting. The package includes Exponential Smoothing (Hyndman et al., 2008, &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2F978-3-540-71918-2&quot;&gt;doi:10.1007/978-3-540-71918-2&lt;/a&gt;&amp;gt;), SARIMA (Svetunkov &amp;amp; Boylan, 2019 &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F00207543.2019.1600764&quot;&gt;doi:10.1080/00207543.2019.1600764&lt;/a&gt;&amp;gt;), Complex Exponential Smoothing (Svetunkov &amp;amp; Kourentzes, 2018, &amp;lt;&lt;a href=&quot;https://doi.org/10.13140%2FRG.2.2.24986.29123&quot;&gt;doi:10.13140/RG.2.2.24986.29123&lt;/a&gt;&amp;gt;), Simple Moving Average (Svetunkov &amp;amp; Petropoulos, 2018 &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F00207543.2017.1380326&quot;&gt;doi:10.1080/00207543.2017.1380326&lt;/a&gt;&amp;gt;), Vector Exponential Smoothing (de Silva et al., 2010, &amp;lt;&lt;a href=&quot;https://doi.org/10.1177%2F1471082X0901000401&quot;&gt;doi:10.1177/1471082X0901000401&lt;/a&gt;&amp;gt;) in state space forms, several simulation functions and intermittent demand state space models. It also allows dealing with intermittent demand based on the iETS framework (Svetunkov &amp;amp; Boylan, 2017, &amp;lt;&lt;a href=&quot;https://doi.org/10.13140%2FRG.2.2.35897.06242&quot;&gt;doi:10.13140/RG.2.2.35897.06242&lt;/a&gt;&amp;gt;)." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=smooth" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>smooth: Forecasting Using State Space Models</h2>
+<p>Functions implementing Single Source of Error state space models for purposes of time series analysis and forecasting.
+             The package includes Exponential Smoothing (Hyndman et al., 2008, &lt;<a href="https://doi.org/10.1007%2F978-3-540-71918-2">doi:10.1007/978-3-540-71918-2</a>&gt;),
+             SARIMA (Svetunkov &amp; Boylan, 2019 &lt;<a href="https://doi.org/10.1080%2F00207543.2019.1600764">doi:10.1080/00207543.2019.1600764</a>&gt;),
+             Complex Exponential Smoothing (Svetunkov &amp; Kourentzes, 2018, &lt;<a href="https://doi.org/10.13140%2FRG.2.2.24986.29123">doi:10.13140/RG.2.2.24986.29123</a>&gt;),
+             Simple Moving Average (Svetunkov &amp; Petropoulos, 2018 &lt;<a href="https://doi.org/10.1080%2F00207543.2017.1380326">doi:10.1080/00207543.2017.1380326</a>&gt;),
+             Vector Exponential Smoothing (de Silva et al., 2010, &lt;<a href="https://doi.org/10.1177%2F1471082X0901000401">doi:10.1177/1471082X0901000401</a>&gt;) in state space forms,
+             several simulation functions and intermittent demand state space models. It also allows dealing with
+             intermittent demand based on the iETS framework (Svetunkov &amp; Boylan, 2017, &lt;<a href="https://doi.org/10.13140%2FRG.2.2.35897.06242">doi:10.13140/RG.2.2.35897.06242</a>&gt;).</p>
+<table summary="Package smooth summary">
+<tr>
+<td>Version:</td>
+<td>2.6.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0.2), <a href="../greybox/index.html">greybox</a> (&ge; 0.5.9)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.3), stats, graphics, <a href="../forecast/index.html">forecast</a> (&ge; 7.0), <a href="../nloptr/index.html">nloptr</a>, utils, <a href="../zoo/index.html">zoo</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a> (&ge; 0.8.100.0.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../Mcomp/index.html">Mcomp</a>, <a href="../numDeriv/index.html">numDeriv</a>, <a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-17</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Ivan Svetunkov [aut, cre] (Lecturer at Centre for Marketing Analytics
+    and Forecasting, Lancaster University, UK)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Ivan Svetunkov  &#x3c;&#x69;&#x76;&#x61;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x73;&#x76;&#x65;&#x74;&#x75;&#x6e;&#x6b;&#x6f;&#x76;&#x2e;&#x72;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/config-i1/smooth/issues">https://github.com/config-i1/smooth/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/config-i1/smooth">https://github.com/config-i1/smooth</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-GB</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/TimeSeries.html">TimeSeries</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_smooth.html">smooth results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package smooth downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="smooth.pdf"> smooth.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/ces.html">ces() - Complex Exponential Smoothing</a><br/>
+<a href="vignettes/es.html">es() - Exponential Smoothing</a><br/>
+<a href="vignettes/gum.html">gum() - Generalised Univariate Model</a><br/>
+<a href="vignettes/oes.html">Occurrence part of iETS model</a><br/>
+<a href="vignettes/simulate.html">Simulate functions of the package</a><br/>
+<a href="vignettes/sma.html">sma() - Simple Moving Average</a><br/>
+<a href="vignettes/smooth.html">smooth</a><br/>
+<a href="vignettes/ssarima.html">ssarima() - State-Space ARIMA</a><br/>
+<a href="vignettes/ves.html">ves() - Vector Exponential Smoothing</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/smooth_2.6.0.tar.gz"> smooth_2.6.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/smooth_2.6.0.zip">smooth_2.6.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/smooth_2.6.0.zip">smooth_2.6.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/smooth_2.6.0.zip">smooth_2.6.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/smooth_2.6.0.tgz">smooth_2.6.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/smooth_2.6.0.tgz">smooth_2.6.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/smooth"> smooth archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package smooth reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../MAPA/index.html">MAPA</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../greybox/index.html">greybox</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=smooth"><samp>https://CRAN.R-project.org/package=smooth</samp></a>
+to link to this page.</p>
+</body>
+</html>

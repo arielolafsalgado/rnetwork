@@ -1,0 +1,30 @@
+Package: tram
+Title: Transformation Models
+Version: 0.3-0
+Date: 2019-10-09
+Authors@R: person("Torsten", "Hothorn", role = c("aut", "cre"),
+                  email = "Torsten.Hothorn@R-project.org", comment = c(ORCID = "0000-0001-8301-0471"))
+Description: Formula-based user-interfaces to specific transformation models
+  implemented in package 'mlt'. Available models include Cox models, some parametric 
+  survival models (Weibull, etc.), models for ordered categorical variables,
+  normal and non-normal (Box-Cox type) linear models, and continuous outcome logistic regression
+  (Lohse et al., 2017, <DOI:10.12688/f1000research.12934.1>). The underlying theory
+  is described in Hothorn et al. (2018) <DOI:10.1111/sjos.12291>. An extension to
+  transformation models for clustered data is provided.
+Depends: mlt (>= 1.0-5)
+Imports: Formula, multcomp, variables (>= 1.0-2), basefun (>= 1.0-5),
+        sandwich, stats, survival, graphics, Matrix, methods
+Suggests: MASS, TH.data, trtf (>= 0.3-3), mlbench, knitr, quantreg,
+        colorspace, ATR, lme4, merDeriv, SparseGrid, alabama, numDeriv,
+        gridExtra, lattice, latticeExtra, HSAUR3, mvtnorm, ordinalCont,
+        coxme, glmmsr, mlt.docreg, ordinal
+VignetteBuilder: knitr
+URL: http://ctm.R-forge.R-project.org
+Encoding: UTF-8
+License: GPL-2
+NeedsCompilation: yes
+Packaged: 2019-10-22 06:38:42 UTC; hothorn
+Author: Torsten Hothorn [aut, cre] (<https://orcid.org/0000-0001-8301-0471>)
+Maintainer: Torsten Hothorn <Torsten.Hothorn@R-project.org>
+Repository: CRAN
+Date/Publication: 2019-10-22 09:30:03 UTC

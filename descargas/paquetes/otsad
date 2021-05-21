@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package otsad</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Online Time Series Anomaly Detectors [R package otsad version 0.2.0]" />
+<meta name="citation_author1" content="Alaiñe Iturria" />
+<meta name="citation_author2" content="Jacinto Carrasco" />
+<meta name="citation_author3" content="Francisco Herrera" />
+<meta name="citation_author4" content="Santiago Charramendieta" />
+<meta name="citation_author5" content="Karmele Intxausti" />
+<meta name="citation_publication_date" content="2019-09-06" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=otsad" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=otsad" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="otsad: Online Time Series Anomaly Detectors" />
+<meta name="og:description" content="Implements a set of online fault detectors for time-series, called: PEWMA see M. Carter et al. (2012) &amp;lt;&lt;a href=&quot;https://doi.org/10.1109%2FSSP.2012.6319708&quot;&gt;doi:10.1109/SSP.2012.6319708&lt;/a&gt;&amp;gt;, SD-EWMA and TSSD-EWMA see H. Raza et al. (2015) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.patcog.2014.07.028&quot;&gt;doi:10.1016/j.patcog.2014.07.028&lt;/a&gt;&amp;gt;, KNN-CAD see E. Burnaev et al. (2016) &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1608.04585&quot;&gt;arXiv:1608.04585&lt;/a&gt;&amp;gt;, KNN-LDCD see V. Ishimtsev et al. (2017) &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1706.03412&quot;&gt;arXiv:1706.03412&lt;/a&gt;&amp;gt; and CAD-OSE see M. Smirnov (2018) &amp;lt;&lt;a href=&quot;https://github.com/smirmik/CAD&quot;&gt;https://github.com/smirmik/CAD&lt;/a&gt;&amp;gt;. The first three algorithms belong to prediction-based techniques and the last three belong to window-based techniques. In addition, the SD-EWMA and PEWMA algorithms are algorithms designed to work in stationary environments, while the other four are algorithms designed to work in non-stationary environments." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=otsad" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>otsad: Online Time Series Anomaly Detectors</h2>
+<p>Implements a set of online fault detectors for time-series, called: PEWMA see M. Carter
+             et al. (2012) &lt;<a href="https://doi.org/10.1109%2FSSP.2012.6319708">doi:10.1109/SSP.2012.6319708</a>&gt;, SD-EWMA and TSSD-EWMA see H. Raza et al. 
+             (2015) &lt;<a href="https://doi.org/10.1016%2Fj.patcog.2014.07.028">doi:10.1016/j.patcog.2014.07.028</a>&gt;, KNN-CAD see E. Burnaev et al. (2016)
+             &lt;<a href="https://arxiv.org/abs/1608.04585">arXiv:1608.04585</a>&gt;, KNN-LDCD see V. Ishimtsev et al. (2017) &lt;<a href="https://arxiv.org/abs/1706.03412">arXiv:1706.03412</a>&gt; and 
+             CAD-OSE see M. Smirnov (2018) &lt;<a href="https://github.com/smirmik/CAD">https://github.com/smirmik/CAD</a>&gt;. The first three 
+             algorithms belong to prediction-based techniques and the last three belong to 
+             window-based techniques. In addition, the SD-EWMA and PEWMA algorithms are algorithms 
+             designed to work in stationary environments, while the other four 
+             are algorithms designed to work in non-stationary environments.</p>
+<table summary="Package otsad summary">
+<tr>
+<td>Version:</td>
+<td>0.2.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.4.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>stats, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../plotly/index.html">plotly</a>, <a href="../sigmoid/index.html">sigmoid</a>, <a href="../reticulate/index.html">reticulate</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../stream/index.html">stream</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-09-06</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Alaiñe Iturria [aut, cre],
+  Jacinto Carrasco [aut],
+  Francisco Herrera [aut],
+  Santiago Charramendieta [aut],
+  Karmele Intxausti [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Alaiñe Iturria  &#x3c;&#x61;&#x69;&#x74;&#x75;&#x72;&#x72;&#x69;&#x61;&#x20;&#x61;&#x74;&#x20;&#x69;&#x6b;&#x65;&#x72;&#x6c;&#x61;&#x6e;&#x2e;&#x65;&#x73;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/alaineiturria/otsad/issues">https://github.com/alaineiturria/otsad/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/AGPL-3">AGPL (&ge; 3)</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/alaineiturria/otsad">https://github.com/alaineiturria/otsad</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>Python (&gt;= 3.0.1); bencode-python3 (1.0.2)</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">otsad citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/TimeSeries.html">TimeSeries</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_otsad.html">otsad results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package otsad downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="otsad.pdf"> otsad.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/otsad.pdf">The otsad Package: Online Time-Series Anomaly Detectors</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/otsad_0.2.0.tar.gz"> otsad_0.2.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/otsad_0.2.0.zip">otsad_0.2.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/otsad_0.2.0.zip">otsad_0.2.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/otsad_0.2.0.zip">otsad_0.2.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/otsad_0.2.0.tgz">otsad_0.2.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/otsad_0.2.0.tgz">otsad_0.2.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/otsad"> otsad archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package otsad reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../composits/index.html">composits</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=otsad"><samp>https://CRAN.R-project.org/package=otsad</samp></a>
+to link to this page.</p>
+</body>
+</html>

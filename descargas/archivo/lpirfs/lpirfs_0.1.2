@@ -1,0 +1,37 @@
+Package: lpirfs
+Type: Package
+Title: Local Projections Impulse Response Functions
+Version: 0.1.2
+Authors@R: c(
+            person("Philipp", "Adämmer", 
+                    email   = "adaemmer@hsu-hh.de", 
+                    role    = c("aut", "cre"),
+                    comment = c(ORCID = "0000-0003-3770-0097")),
+            person("James P.", "LeSage", 
+                    email   = "jlesage@spatial-econometrics.com", 
+                    role    = c("ctb")),
+            person("Mehmet.", "Balcilar", 
+                    email   = "mbalcilar@yahoo.com", 
+                    role    = c("ctb"))) 
+Maintainer: Philipp Adämmer <adaemmer@hsu-hh.de>
+BugReports: https://github.com/adaemmerp/lpirfs/issues
+Description: Contains functions to estimate linear and nonlinear impulse 
+             responses based on local projections by Jordà (2005) <doi:10.1257/0002828053828518>.
+             Nonlinear impulse responses are estimated for two regimes based on 
+             a transition function as used in Auerbach and Gorodnichenko (2012) <doi:10.1257/pol.4.2.1>.
+License: GPL (>= 2)
+Depends: R (>= 3.1.2)
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: yes
+Imports: doParallel(>= 1.0.11), dplyr(>= 0.7.4), foreach(>= 1.4.3),
+        ggplot2(>= 2.2.1), Rcpp(>= 0.12.17)
+RoxygenNote: 6.1.0
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: testthat, ggpubr, gridExtra
+Packaged: 2018-08-17 15:40:37 UTC; adaemmep
+Author: Philipp Adämmer [aut, cre] (<https://orcid.org/0000-0003-3770-0097>),
+  James P. LeSage [ctb],
+  Mehmet. Balcilar [ctb]
+Repository: CRAN
+Date/Publication: 2018-08-17 16:50:02 UTC

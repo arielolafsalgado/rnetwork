@@ -1,0 +1,32 @@
+Package: mcompanion
+Type: Package
+Title: Objects and Methods for Multi-Companion Matrices
+Version: 0.5-0
+Date: 2019-12-15
+Authors@R: person(given = c("Georgi", "N."), family = "Boshnakov", 
+                  role = c("aut", "cre"), 
+                  email = "georgi.boshnakov@manchester.ac.uk") 
+Description: 
+    Provides a class for multi-companion matrices with methods for
+    arithmetic and factorization.  A method for generation of
+    multi-companion matrices with prespecified spectral properties is
+    provided, as well as some utilities for periodically correlated and
+    multivariate time series models. See Boshnakov (2002)
+    <doi:10.1016/S0024-3795(01)00475-X> and Boshnakov & Iqelan (2009)
+    <doi:10.1111/j.1467-9892.2009.00617.x>.
+URL: https://github.com/GeoBosh/mcompanion
+        https://geobosh.github.io/mcompanion/
+BugReports: https://github.com/GeoBosh/mcompanion/issues
+Imports: methods, Matrix, gbutils, MASS, Rdpack
+Suggests: testthat
+RdMacros: Rdpack
+License: GPL (>= 2)
+Collate: mc.R mcompanion.R utils_Jordan.R mat.R sim.R class_MC.R
+        class_MF.R class_Jordan.R chains_smc.R class_SMC.R
+        class_mcSpec.R
+NeedsCompilation: no
+Packaged: 2019-12-15 15:52:32 UTC; georgi
+Author: Georgi N. Boshnakov [aut, cre]
+Maintainer: Georgi N. Boshnakov <georgi.boshnakov@manchester.ac.uk>
+Repository: CRAN
+Date/Publication: 2019-12-15 17:30:05 UTC

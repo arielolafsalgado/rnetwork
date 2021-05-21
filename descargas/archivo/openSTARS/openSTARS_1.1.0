@@ -1,0 +1,30 @@
+Package: openSTARS
+Type: Package
+Title: An Open Source Implementation of the 'ArcGIS' Toolbox 'STARS'
+Description: An open source implementation of the 'STARS' toolbox
+    (Peterson & Ver Hoef, 2014, <doi:10.18637/jss.v056.i02>) using 'R' and 'GRASS GIS'.
+    It prepares the *.ssn object needed for the 'SSN' package.
+    A Digital Elevation Model (DEM) is used to derive stream networks 
+    (in contrast to 'STARS' that can clean an existing stream network).
+Version: 1.1.0
+Authors@R: c(person("Mira", "Kattwinkel", role = c("aut","cre"),
+              email = "mira.kattwinkel@gmx.net"),
+	    person("Eduard", "Szöcs", role = c("aut"),
+             email = "eduardszoecs@gmail.com"))
+URL: https://github.com/MiKatt/openSTARS
+Depends: R (>= 3.3), data.table, rgrass7
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyLoad: true
+LazyData: true
+Imports: methods, progress, rgdal, sf, sp, raster, SSN
+RoxygenNote: 6.0.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-05-11 08:20:19 UTC; Mira_2
+Author: Mira Kattwinkel [aut, cre],
+  Eduard Szöcs [aut]
+Maintainer: Mira Kattwinkel <mira.kattwinkel@gmx.net>
+Repository: CRAN
+Date/Publication: 2018-05-11 10:12:42 UTC

@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package SSLR</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Semi-Supervised Classification, Regression and Clustering Methods [R package SSLR version 0.9.3]" />
+<meta name="citation_author" content="Francisco Jesús Palomares Alabarce" />
+<meta name="citation_publication_date" content="2020-10-14" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=SSLR" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=SSLR" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="SSLR: Semi-Supervised Classification, Regression and Clustering Methods" />
+<meta name="og:description" content="Providing a collection of techniques for semi-supervised classification, regression and clustering. In semi-supervised problem, both labeled and unlabeled data are used to train a classifier. The package includes a collection of semi-supervised learning techniques: self-training, co-training, democratic, decision tree, random forest, 'S3VM' ... etc, with a fairly intuitive interface that is easy to use." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=SSLR" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>SSLR: Semi-Supervised Classification, Regression and Clustering
+Methods</h2>
+<p>Providing a collection of techniques for semi-supervised 
+    classification, regression and clustering. In semi-supervised problem, both labeled and unlabeled
+    data are used to train a classifier. The package includes a collection of 
+    semi-supervised learning techniques: self-training, co-training, democratic, 
+    decision tree, random forest, 'S3VM' ... etc, with a fairly intuitive interface 
+    that is easy to use.</p>
+<table summary="Package SSLR summary">
+<tr>
+<td>Version:</td>
+<td>0.9.3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>stats, <a href="../parsnip/index.html">parsnip</a>, <a href="../plyr/index.html">plyr</a>, <a href="../dplyr/index.html">dplyr</a> (&ge; 0.8.0.1), <a href="../magrittr/index.html">magrittr</a>, <a href="../purrr/index.html">purrr</a>, <a href="../rlang/index.html">rlang</a> (&ge; 0.3.1), <a href="../proxy/index.html">proxy</a>, methods, <a href="../generics/index.html">generics</a>, utils, <a href="../RANN/index.html">RANN</a>, <a href="../foreach/index.html">foreach</a>, <a href="../RSSL/index.html">RSSL</a>, <a href="../conclust/index.html">conclust</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../caret/index.html">caret</a>, <a href="../tidymodels/index.html">tidymodels</a>, <a href="../e1071/index.html">e1071</a>, <a href="../C50/index.html">C50</a>, <a href="../kernlab/index.html">kernlab</a>, <a href="../testthat/index.html">testthat</a>, <a href="../doParallel/index.html">doParallel</a>, <a href="../tidyverse/index.html">tidyverse</a>, <a href="../factoextra/index.html">factoextra</a>, <a href="../survival/index.html">survival</a>, <a href="../xgboost/index.html">xgboost</a>, <a href="../covr/index.html">covr</a>, <a href="../kknn/index.html">kknn</a>, <a href="../randomForest/index.html">randomForest</a>, <a href="../ranger/index.html">ranger</a>, <a href="../MASS/index.html">MASS</a>, <a href="../nlme/index.html">nlme</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-14</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Francisco Jesús Palomares Alabarce
+    <a href="https://orcid.org/0000-0002-0499-7034"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut, cre],
+  José Manuel Benítez
+    <a href="https://orcid.org/0000-0002-2346-0793"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb],
+  Isaac Triguero <a href="https://orcid.org/0000-0002-0150-0651"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Christoph Bergmeir
+    <a href="https://orcid.org/0000-0002-3665-9021"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb],
+  Mabel González <a href="https://orcid.org/0000-0003-0152-444X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Francisco Jesús Palomares Alabarce  &#x3c;&#x66;&#x70;&#x61;&#x6c;&#x6f;&#x6d;&#x61;&#x72;&#x65;&#x73;&#x20;&#x61;&#x74;&#x20;&#x63;&#x6f;&#x72;&#x72;&#x65;&#x6f;&#x2e;&#x75;&#x67;&#x72;&#x2e;&#x65;&#x73;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://dicits.ugr.es/software/SSLR/">https://dicits.ugr.es/software/SSLR/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_SSLR.html">SSLR results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package SSLR downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="SSLR.pdf"> SSLR.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/classification.html">classification</a><br/>
+<a href="vignettes/clustering.html">clustering</a><br/>
+<a href="vignettes/fit.html">fit</a><br/>
+<a href="vignettes/introduction.html">introduction</a><br/>
+<a href="vignettes/models.html">models</a><br/>
+<a href="vignettes/regression.html">regression</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/SSLR_0.9.3.tar.gz"> SSLR_0.9.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/SSLR_0.9.3.zip">SSLR_0.9.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/SSLR_0.9.3.zip">SSLR_0.9.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/SSLR_0.9.3.zip">SSLR_0.9.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/SSLR_0.9.3.tgz">SSLR_0.9.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/SSLR_0.9.3.tgz">SSLR_0.9.3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/SSLR"> SSLR archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=SSLR"><samp>https://CRAN.R-project.org/package=SSLR</samp></a>
+to link to this page.</p>
+</body>
+</html>

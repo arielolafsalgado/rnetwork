@@ -1,0 +1,16 @@
+Package: blendedLink
+Type: Package
+Title: A New Link Function that Blends Two Specified Link Functions
+Version: 0.1
+Date: 2016-05-30
+Author: Robert Clark
+Maintainer: "Robert Clark" <rclark@uow.edu.au>
+Imports: stats
+Description: A new link function that equals one specified link function up to a cutover then a linear rescaling of another specified link function. For use in glm() or glm2(). The intended use is in binary regression, in which case the first link should be set to "log" and the second to "logit". This ensures that fitted probabilities are between 0 and 1 and that exponentiated coefficients can be interpreted as relative risks for probabilities up to the cutoff.
+License: GPL-2 | GPL-3
+LazyData: TRUE
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-05-30 10:26:04 UTC; rclark
+Repository: CRAN
+Date/Publication: 2016-05-30 16:38:53

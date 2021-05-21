@@ -1,0 +1,39 @@
+Package: seplyr
+Type: Package
+Title: Improved Standard Evaluation Interfaces for Common Data
+        Manipulation Tasks
+Version: 1.0.0
+Date: 2020-08-12
+Authors@R: c(
+    person("John", "Mount", email = "jmount@win-vector.com", role = c("aut", "cre")),
+    person(family = "Win-Vector LLC", role = c("cph"))
+    )
+Maintainer: John Mount <jmount@win-vector.com>
+URL: https://github.com/WinVector/seplyr/,
+        https://winvector.github.io/seplyr/
+BugReports: https://github.com/WinVector/seplyr/issues
+Description: The 'seplyr' (standard evaluation plying) package supplies improved
+    standard evaluation adapter methods for important common 'dplyr' data manipulation tasks.
+    In addition the 'seplyr' package supplies several new "key operations
+    bound together" methods.  These include 'group_summarize()' (which
+    combines grouping, arranging and calculation in an atomic unit),
+    'add_group_summaries()' (which joins grouped summaries into a 'data.frame'
+    in a well documented manner), 'add_group_indices()' (which adds
+    per-group identifiers to a 'data.frame' without depending on row-order),
+    'partition_mutate_qt()' (which optimizes mutate sequences), and 'if_else_device()'
+    (which simulates per-row if-else blocks in expression sequences).
+License: GPL-2 | GPL-3
+Encoding: UTF-8
+Depends: R (>= 3.4.0), wrapr (>= 2.0.0)
+Imports: dplyr (>= 0.8.5), rlang, tidyr
+LazyData: true
+RoxygenNote: 7.1.1
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+ByteCompile: true
+NeedsCompilation: no
+Packaged: 2020-08-12 18:15:48 UTC; johnmount
+Author: John Mount [aut, cre],
+  Win-Vector LLC [cph]
+Repository: CRAN
+Date/Publication: 2020-08-12 18:30:03 UTC

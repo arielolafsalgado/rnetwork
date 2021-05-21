@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package MAPITR</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="MArginal ePIstasis Test for Regions [R package MAPITR version 1.1.2]" />
+<meta name="citation_author1" content="Michael Turchin" />
+<meta name="citation_author2" content="Gregory Darnell" />
+<meta name="citation_author3" content="Lorin Crawford" />
+<meta name="citation_author4" content="Sohini Ramachandran" />
+<meta name="citation_publication_date" content="2020-09-28" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=MAPITR" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=MAPITR" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="MAPITR: MArginal ePIstasis Test for Regions" />
+<meta name="og:description" content="A genetic analysis tool and variance component model for identifying marginal epistasis between pathways and the rest of the genome. 'MAPITR' uses as input a matrix of genotypes, a vector of phenotypes, and a list of pathways. 'MAPITR' then iteratively tests each pathway for epistasis between any variants within the pathway versus any variants remaining in the rest of the genome. 'MAPITR' returns results in the form of p-values for every pathway indicating whether the null model of there being no epistatic interactions between a pathway and the rest of the genome can be rejected." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=MAPITR" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>MAPITR: MArginal ePIstasis Test for Regions</h2>
+<p>A genetic analysis tool and variance component 
+    model for identifying marginal epistasis between pathways 
+    and the rest of the genome. 'MAPITR' uses as input a matrix 
+    of genotypes, a vector of phenotypes, and a list of 
+    pathways. 'MAPITR' then iteratively tests each pathway for 
+    epistasis between any variants within the pathway versus 
+    any variants remaining in the rest of the genome. 'MAPITR'
+    returns results in the form of p-values for every pathway 
+    indicating whether the null model of there being no 
+    epistatic interactions between a pathway and the rest of 
+    the genome can be rejected.</p>
+<table summary="Package MAPITR summary">
+<tr>
+<td>Version:</td>
+<td>1.1.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>stats, <a href="../doParallel/index.html">doParallel</a>, <a href="../Rcpp/index.html">Rcpp</a> (&ge; 1.0.5), <a href="../CompQuadForm/index.html">CompQuadForm</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-28</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Michael Turchin <a href="https://orcid.org/0000-0003-3569-1529"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Gregory Darnell <a href="https://orcid.org/0000-0003-0425-940X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, ctb],
+  Lorin Crawford <a href="https://orcid.org/0000-0003-0178-8242"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, ctb],
+  Sohini Ramachandran
+    <a href="https://orcid.org/0000-0002-9588-7964"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Peter Carbonetto <a href="https://orcid.org/0000-0003-1144-6780"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Michael Turchin  &#x3c;&#x6d;&#x69;&#x63;&#x68;&#x61;&#x65;&#x6c;&#x5f;&#x74;&#x75;&#x72;&#x63;&#x68;&#x69;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x62;&#x72;&#x6f;&#x77;&#x6e;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/mturchin20/MAPITR/issues">https://github.com/mturchin20/MAPITR/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/mturchin20/MAPITR">https://github.com/mturchin20/MAPITR</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_MAPITR.html">MAPITR results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package MAPITR downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="MAPITR.pdf"> MAPITR.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/MAPITR.Intro.SimulatedData.html">MAPITR Introduction &ndash; Simulated Data</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/MAPITR_1.1.2.tar.gz"> MAPITR_1.1.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/MAPITR_1.1.2.zip">MAPITR_1.1.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/MAPITR_1.1.2.zip">MAPITR_1.1.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/MAPITR_1.1.2.zip">MAPITR_1.1.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/MAPITR_1.1.2.tgz">MAPITR_1.1.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/MAPITR_1.1.2.tgz">MAPITR_1.1.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/MAPITR"> MAPITR archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=MAPITR"><samp>https://CRAN.R-project.org/package=MAPITR</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package float</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="32-Bit Floats [R package float version 0.2-4]" />
+<meta name="citation_author1" content="Drew Schmidt" />
+<meta name="citation_author2" content="Wei-Chen Chen" />
+<meta name="citation_publication_date" content="2020-04-22" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=float" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=float" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="float: 32-Bit Floats" />
+<meta name="og:description" content="R comes with a suite of utilities for linear algebra with &quot;numeric&quot; (double precision) vectors/matrices. However, sometimes single precision (or less!) is more than enough for a particular task. This package extends R's linear algebra facilities to include 32-bit float (single precision) data. Float vectors/matrices have half the precision of their &quot;numeric&quot;-type counterparts but are generally faster to numerically operate on, for a performance vs accuracy trade-off. The internal representation is an S4 class, which allows us to keep the syntax identical to that of base R's. Interaction between floats and base types for binary operators is generally possible; in these cases, type promotion always defaults to the higher precision. The package ships with copies of the single precision 'BLAS' and 'LAPACK', which are automatically built in the event they are not available on the system." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=float" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>float: 32-Bit Floats</h2>
+<p>R comes with a suite of utilities for linear algebra with "numeric"
+    (double precision) vectors/matrices. However, sometimes single precision (or
+    less!) is more than enough for a particular task.  This package extends R's
+    linear algebra facilities to include 32-bit float (single precision) data.
+    Float vectors/matrices have half the precision of their "numeric"-type
+    counterparts but are generally faster to numerically operate on, for a
+    performance vs accuracy trade-off.  The internal representation is an S4
+    class, which allows us to keep the syntax identical to that of base R's.
+    Interaction between floats and base types for binary operators is generally
+    possible; in these cases, type promotion always defaults to the higher
+    precision.  The package ships with copies of the single precision 'BLAS' and
+    'LAPACK', which are automatically built in the event they are not available
+    on the system.</p>
+<table summary="Package float summary">
+<tr>
+<td>Version:</td>
+<td>0.2-4</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.6.0), methods</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>utils, tools</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-04-22</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Drew Schmidt [aut, cre, cph],
+  Wei-Chen Chen [aut],
+  Dmitriy Selivanov [ctb] (improvements in external package linking),
+  ORNL [cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Drew Schmidt  &#x3c;&#x77;&#x72;&#x61;&#x74;&#x68;&#x65;&#x6d;&#x61;&#x74;&#x69;&#x63;&#x73;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/wrathematics/float/issues">https://github.com/wrathematics/float/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/BSD_2_clause">BSD 2-clause License</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>Copyright:</td>
+<td>The copyright for the single precision BLAS/LAPACK
+distribution located in src/lapack is given in the file
+src/lapack/LICENSE.</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/wrathematics/float">https://github.com/wrathematics/float</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">float citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="ChangeLog">ChangeLog</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_float.html">float results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package float downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="float.pdf"> float.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/float.pdf">Introducing the float package: 32-Bit Floats for R</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/float_0.2-4.tar.gz"> float_0.2-4.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/float_0.2-4.zip">float_0.2-4.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/float_0.2-4.zip">float_0.2-4.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/float_0.2-4.zip">float_0.2-4.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/float_0.2-4.tgz">float_0.2-4.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/float_0.2-4.tgz">float_0.2-4.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/float"> float archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package float reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../GPoM/index.html">GPoM</a>, <a href="../pbdMPI/index.html">pbdMPI</a>, <a href="../rsparse/index.html">rsparse</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../xgboost/index.html">xgboost</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=float"><samp>https://CRAN.R-project.org/package=float</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,43 @@
+Package: RGA
+Type: Package
+Title: A Google Analytics API Client
+Description: Provides functions for accessing and retrieving data from the
+    Google Analytics APIs (https://developers.google.com/analytics/). Supports
+    OAuth 2.0 authorization. Package provides access to the Management, Core
+    Reporting, Multi-Channel Funnels Reporting, Real Time Reporting and
+    Metadata APIs. Access to all the Google Analytics accounts which the user
+    has access to. Auto-pagination to return more than 10,000 rows of the
+    results by combining multiple data requests. Also package provides
+    shiny app to explore the core reporting API dimensions and metrics.
+URL: https://github.com/artemklevtsov/RGA
+BugReports: https://github.com/artemklevtsov/RGA/issues
+Version: 0.3
+Date: 2015-10-23
+Authors@R: c(
+    person(given = "Artem", family = "Klevtsov",
+    email = "a.a.klevtsov@gmail.com", role = c("aut", "cre")),
+    person(given = "Philipp", family = "Upravitelev",
+    email = "upravitelev@gmail.com", role = "ctb"),
+    person(given = "Olga", family = "Shramko",
+    email = "ol1709@yahoo.com", role = "ctb"))
+License: GPL (>= 2)
+Depends: R (>= 3.0.0)
+Imports: jsonlite, httr (>= 1.0.0)
+Collate: 'utils.R' 'url.R' 'env.R' 'auth.R' 'request.R' 'convert.R'
+        'get-data.R' 'mgmt.R' 'accounts.R' 'custom-dims.R'
+        'custom-mets.R' 'custom-sources.R' 'date-ranges.R'
+        'experiments.R' 'filters.R' 'query.R' 'profiles.R' 'report.R'
+        'ga.R' 'firstdate.R' 'goals.R' 'mcf.R' 'metadata.R' 'package.R'
+        'realtime.R' 'segments.R' 'unsampled.R' 'uploads.R'
+        'webproperties.R' 'zzz.R'
+Suggests: knitr, testthat, shiny
+VignetteBuilder: knitr
+LazyData: true
+NeedsCompilation: no
+Packaged: 2015-10-22 20:19:29 UTC; xxx
+Author: Artem Klevtsov [aut, cre],
+  Philipp Upravitelev [ctb],
+  Olga Shramko [ctb]
+Maintainer: Artem Klevtsov <a.a.klevtsov@gmail.com>
+Repository: CRAN
+Date/Publication: 2015-10-23 01:57:46

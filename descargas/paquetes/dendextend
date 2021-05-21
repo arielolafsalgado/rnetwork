@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package dendextend</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Extending 'dendrogram' Functionality in R [R package dendextend version 1.14.0]" />
+<meta name="citation_author1" content="Tal Galili" />
+<meta name="citation_author2" content="Gregory Jefferis" />
+<meta name="citation_publication_date" content="2020-08-26" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=dendextend" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=dendextend" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="dendextend: Extending 'dendrogram' Functionality in R" />
+<meta name="og:description" content="Offers a set of functions for extending 'dendrogram' objects in R, letting you visualize and compare trees of 'hierarchical clusterings'. You can (1) Adjust a tree's graphical parameters - the color, size, type, etc of its branches, nodes and labels. (2) Visually and statistically compare different 'dendrograms' to one another." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=dendextend" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>dendextend: Extending 'dendrogram' Functionality in R</h2>
+<p>Offers a set of functions for extending
+    'dendrogram' objects in R, letting you visualize and compare trees of
+    'hierarchical clusterings'. You can (1) Adjust a tree's graphical parameters
+    - the color, size, type, etc of its branches, nodes and labels. (2)
+    Visually and statistically compare different 'dendrograms' to one another.</p>
+<table summary="Package dendextend summary">
+<tr>
+<td>Version:</td>
+<td>1.14.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>utils, stats, datasets, <a href="../magrittr/index.html">magrittr</a> (&ge; 1.0.1), <a href="../ggplot2/index.html">ggplot2</a>, <a href="../viridis/index.html">viridis</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../testthat/index.html">testthat</a>, <a href="../seriation/index.html">seriation</a>, <a href="../colorspace/index.html">colorspace</a>, <a href="../ape/index.html">ape</a>, <a href="../microbenchmark/index.html">microbenchmark</a>, <a href="../gplots/index.html">gplots</a>, <a href="../heatmaply/index.html">heatmaply</a>, <a href="../dynamicTreeCut/index.html">dynamicTreeCut</a>, <a href="../pvclust/index.html">pvclust</a>, <a href="../corrplot/index.html">corrplot</a>, <a href="../DendSer/index.html">DendSer</a>, <a href="../MASS/index.html">MASS</a>, <a href="../cluster/index.html">cluster</a>, <a href="../fpc/index.html">fpc</a>, <a href="../circlize/index.html">circlize</a> (&ge; 0.2.5), <a href="../covr/index.html">covr</a></td>
+</tr>
+<tr>
+<td>Enhances:</td>
+<td><a href="../ggdendro/index.html">ggdendro</a>, <a href="../dendroextras/index.html">dendroextras</a>, <a href="../Hmisc/index.html">Hmisc</a>, <a href="../data.table/index.html">data.table</a>, <a href="../rpart/index.html">rpart</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-08-26</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Tal Galili [aut, cre, cph] (https://www.r-statistics.com),
+  Yoav Benjamini [ths],
+  Gavin Simpson [ctb],
+  Gregory Jefferis [aut, ctb] (imported code from his dendroextras
+    package),
+  Marco Gallotta [ctb] (a.k.a: marcog),
+  Johan Renaudie [ctb] (https://github.com/plannapus),
+  The R Core Team [ctb] (Thanks for the Infastructure, and code in the
+    examples),
+  Kurt Hornik [ctb],
+  Uwe Ligges [ctb],
+  Andrej-Nikolai Spiess [ctb],
+  Steve Horvath [ctb],
+  Peter Langfelder [ctb],
+  skullkey [ctb],
+  Mark Van Der Loo [ctb] (https://github.com/markvanderloo d3dendrogram),
+  Andrie de Vries [ctb] (ggdendro author),
+  Zuguang Gu [ctb] (circlize author),
+  Cath [ctb] (https://github.com/CathG),
+  John Ma [ctb] (https://github.com/JohnMCMa),
+  Krzysiek G [ctb] (https://github.com/storaged),
+  Manuela Hummel [ctb] (https://github.com/hummelma),
+  Chase Clark [ctb] (https://github.com/chasemc),
+  Lucas Graybuck [ctb] (https://github.com/hypercompetent),
+  jdetribol [ctb] (https://github.com/jdetribol),
+  Ben Ho [ctb] (https://github.com/SplitInf),
+  Samuel Perreault [ctb] (https://github.com/samperochkin),
+  Christian Hennig [ctb] (http://www.homepages.ucl.ac.uk/~ucakche/),
+  David Bradley [ctb] (https://github.com/DBradley27),
+  Houyun Huang [ctb] (https://github.com/houyunhuang)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Tal Galili  &#x3c;&#x74;&#x61;&#x6c;&#x2e;&#x67;&#x61;&#x6c;&#x69;&#x6c;&#x69;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/talgalili/dendextend/issues">https://github.com/talgalili/dendextend/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://talgalili.github.io/dendextend/">http://talgalili.github.io/dendextend/</a>,
+<a href="https://github.com/talgalili/dendextend/">https://github.com/talgalili/dendextend/</a>,
+<a href="https://cran.r-project.org/package=dendextend">https://cran.r-project.org/package=dendextend</a>,
+<a href="https://www.r-statistics.com/tag/dendextend/">https://www.r-statistics.com/tag/dendextend/</a>,
+<a href="https://academic.oup.com/bioinformatics/article/31/22/3718/240978/dendextend-an-R-package-for-visualizing-adjusting">https://academic.oup.com/bioinformatics/article/31/22/3718/240978/dendextend-an-R-package-for-visualizing-adjusting</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">dendextend citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> <a href="ChangeLog">ChangeLog</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Cluster.html">Cluster</a>, <a href="../../views/Phylogenetics.html">Phylogenetics</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_dendextend.html">dendextend results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package dendextend downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="dendextend.pdf"> dendextend.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Cluster_Analysis.html">Hierarchical cluster analysis on famous data sets</a><br/>
+<a href="vignettes/FAQ.html">Frequently asked questions</a><br/>
+<a href="vignettes/Quick_Introduction.html">A quick introduction to dendextend (start here)</a><br/>
+<a href="vignettes/dendextend.html">Introduction to dendextend</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/dendextend_1.14.0.tar.gz"> dendextend_1.14.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/dendextend_1.14.0.zip">dendextend_1.14.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/dendextend_1.14.0.zip">dendextend_1.14.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/dendextend_1.14.0.zip">dendextend_1.14.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/dendextend_1.14.0.tgz">dendextend_1.14.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/dendextend_1.14.0.tgz">dendextend_1.14.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/dendextend"> dendextend archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package dendextend reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../EnsCat/index.html">EnsCat</a>, <a href="../PdPDB/index.html">PdPDB</a>, <a href="../uclust/index.html">uclust</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../BasketballAnalyzeR/index.html">BasketballAnalyzeR</a>, <a href="../BiBitR/index.html">BiBitR</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/celda.html"><span class="BioC">celda</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/CellTrails.html"><span class="BioC">CellTrails</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/ChAMP.html"><span class="BioC">ChAMP</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/CHETAH.html"><span class="BioC">CHETAH</span></a>, <a href="../CINNA/index.html">CINNA</a>, <a href="../Cluster.OBeu/index.html">Cluster.OBeu</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/consensusDE.html"><span class="BioC">consensusDE</span></a>, <a href="../factoextra/index.html">factoextra</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/GeneTonic.html"><span class="BioC">GeneTonic</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/GlobalAncova.html"><span class="BioC">GlobalAncova</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/GOpro.html"><span class="BioC">GOpro</span></a>, <a href="../HCD/index.html">HCD</a>, <a href="../heatmaply/index.html">heatmaply</a>, <a href="../ldaPrototype/index.html">ldaPrototype</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/MAGeCKFlute.html"><span class="BioC">MAGeCKFlute</span></a>, <a href="../mappoly/index.html">mappoly</a>, <a href="../Mercator/index.html">Mercator</a>, <a href="../MiRAnorm/index.html">MiRAnorm</a>, <a href="../Momocs/index.html">Momocs</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/multiClust.html"><span class="BioC">multiClust</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/Onassis.html"><span class="BioC">Onassis</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/pRoloc.html"><span class="BioC">pRoloc</span></a>, <a href="../rabhit/index.html">rabhit</a>, <a href="../rainette/index.html">rainette</a>, <a href="../seriation/index.html">seriation</a>, <a href="../tsibbletalk/index.html">tsibbletalk</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/ViSEAGO.html"><span class="BioC">ViSEAGO</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/YAPSA.html"><span class="BioC">YAPSA</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../celltrackR/index.html">celltrackR</a>, <a href="../circlize/index.html">circlize</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/cola.html"><span class="BioC">cola</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/ComplexHeatmap.html"><span class="BioC">ComplexHeatmap</span></a>, <a href="../DatabionicSwarm/index.html">DatabionicSwarm</a>, <a href="../dbscan/index.html">dbscan</a>, <a href="../FCPS/index.html">FCPS</a>, <a href="http://www.bioconductor.org/packages/release/data/experiment/html/HMP16SData.html"><span class="BioC">HMP16SData</span></a>, <a href="../IncDTW/index.html">IncDTW</a>, <a href="../isocat/index.html">isocat</a>, <a href="../kmer/index.html">kmer</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/packFinder.html"><span class="BioC">packFinder</span></a>, <a href="../perfectphyloR/index.html">perfectphyloR</a>, <a href="../pergola/index.html">pergola</a>, <a href="../phylogram/index.html">phylogram</a>, <a href="../plotly/index.html">plotly</a>, <a href="../ProjectionBasedClustering/index.html">ProjectionBasedClustering</a>, <a href="../rare/index.html">rare</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/scGPS.html"><span class="BioC">scGPS</span></a>, <a href="../sharpshootR/index.html">sharpshootR</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/variancePartition.html"><span class="BioC">variancePartition</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=dendextend"><samp>https://CRAN.R-project.org/package=dendextend</samp></a>
+to link to this page.</p>
+</body>
+</html>

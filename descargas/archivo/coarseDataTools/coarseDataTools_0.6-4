@@ -1,0 +1,34 @@
+Package: coarseDataTools
+Version: 0.6-4
+Date: 2019-06-04
+Title: Analysis of Coarsely Observed Data
+Authors@R: c(person("Nicholas G.", "Reich", email = "nick@schoolph.umass.edu", role = c("aut", "cre")),
+  person("Justin", "Lessler", email = "jlessler@jhsph.edu", role = "aut"),
+  person("Andrew", "Azman", email = "andrewazman@gmail.com", role = "aut"),
+  person("Zhian N.", "Kamvar", email = "zkamvar@gmail.com", role = "ctb"))
+Maintainer: Nicholas G. Reich <nick@schoolph.umass.edu>
+License: GPL (>= 2)
+URL: https://cran.r-project.org/package=coarseDataTools
+Imports: MCMCpack, graphics, stats, methods
+Description: Functions to analyze coarse data.
+    Specifically, it contains functions to (1) fit parametric accelerated
+    failure time models to interval-censored survival time data, and (2)
+    estimate the case-fatality ratio in scenarios with under-reporting.
+    This package's development was motivated by applications to infectious
+    disease: in particular, problems with estimating the incubation period and
+    the case fatality ratio of a given disease.  Sample data files are included
+    in the package. See Reich et al. (2009) <doi:10.1002/sim.3659>, 
+    Reich et al. (2012) <doi:10.1111/j.1541-0420.2011.01709.x>, and 
+    Lessler et al. (2009) <doi:10.1016/S1473-3099(09)70069-6>.
+Collate: 'CFR_estimation.R' 'dic.fit.mcmc.R' 'dic.fit.R'
+        'get.obs.type.R' 'S4stuff.R' 'sampleSizeSimulation.R'
+        'coarseDataTools-package.R'
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-06-05 13:49:00 UTC; ngr
+Author: Nicholas G. Reich [aut, cre],
+  Justin Lessler [aut],
+  Andrew Azman [aut],
+  Zhian N. Kamvar [ctb]
+Repository: CRAN
+Date/Publication: 2019-06-05 14:30:06 UTC

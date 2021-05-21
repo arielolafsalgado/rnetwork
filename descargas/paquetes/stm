@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package stm</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Estimation of the Structural Topic Model [R package stm version 1.3.6]" />
+<meta name="citation_author1" content="Margaret Roberts" />
+<meta name="citation_author2" content="Brandon Stewart" />
+<meta name="citation_author3" content="Dustin Tingley" />
+<meta name="citation_publication_date" content="2020-09-18" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=stm" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=stm" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="stm: Estimation of the Structural Topic Model" />
+<meta name="og:description" content="The Structural Topic Model (STM) allows researchers to estimate topic models with document-level covariates. The package also includes tools for model selection, visualization, and estimation of topic-covariate regressions. Methods developed in Roberts et. al. (2014) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fajps.12103&quot;&gt;doi:10.1111/ajps.12103&lt;/a&gt;&amp;gt; and Roberts et. al. (2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F01621459.2016.1141684&quot;&gt;doi:10.1080/01621459.2016.1141684&lt;/a&gt;&amp;gt;. Vignette is Roberts et. al. (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.18637%2Fjss.v091.i02&quot;&gt;doi:10.18637/jss.v091.i02&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=stm" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>stm: Estimation of the Structural Topic Model</h2>
+<p>The Structural Topic Model (STM) allows researchers 
+  to estimate topic models with document-level covariates. 
+  The package also includes tools for model selection, visualization,
+  and estimation of topic-covariate regressions. Methods developed in
+  Roberts et. al. (2014) &lt;<a href="https://doi.org/10.1111%2Fajps.12103">doi:10.1111/ajps.12103</a>&gt; and 
+  Roberts et. al. (2016) &lt;<a href="https://doi.org/10.1080%2F01621459.2016.1141684">doi:10.1080/01621459.2016.1141684</a>&gt;. Vignette
+  is Roberts et. al. (2019) &lt;<a href="https://doi.org/10.18637%2Fjss.v091.i02">doi:10.18637/jss.v091.i02</a>&gt;.</p>
+<table summary="Package stm summary">
+<tr>
+<td>Version:</td>
+<td>1.3.6</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0), methods</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.11.3), <a href="../data.table/index.html">data.table</a>, <a href="../glmnet/index.html">glmnet</a>, grDevices, graphics, <a href="../lda/index.html">lda</a>, <a href="../Matrix/index.html">Matrix</a>, <a href="../matrixStats/index.html">matrixStats</a>, parallel, <a href="../quadprog/index.html">quadprog</a>, <a href="../quanteda/index.html">quanteda</a>, <a href="../slam/index.html">slam</a>, splines, stats, <a href="../stringr/index.html">stringr</a>, utils</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../clue/index.html">clue</a>, <a href="../geometry/index.html">geometry</a>, <a href="../huge/index.html">huge</a>, <a href="../igraph/index.html">igraph</a>, <a href="../LDAvis/index.html">LDAvis</a>, <a href="../KernSmooth/index.html">KernSmooth</a>, <a href="../NLP/index.html">NLP</a>, <a href="../rsvd/index.html">rsvd</a>, <a href="../Rtsne/index.html">Rtsne</a>, <a href="../SnowballC/index.html">SnowballC</a>, <a href="../spelling/index.html">spelling</a>, <a href="../testthat/index.html">testthat</a>, <a href="../tm/index.html">tm</a> (&ge; 0.6), <a href="../wordcloud/index.html">wordcloud</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-18</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Margaret Roberts [aut],
+  Brandon Stewart [aut, cre],
+  Dustin Tingley [aut],
+  Kenneth Benoit [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Brandon Stewart  &#x3c;&#x62;&#x6d;&#x73;&#x34;&#x20;&#x61;&#x74;&#x20;&#x70;&#x72;&#x69;&#x6e;&#x63;&#x65;&#x74;&#x6f;&#x6e;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/bstewart/stm/issues">https://github.com/bstewart/stm/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://www.structuraltopicmodel.com/">http://www.structuraltopicmodel.com/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">stm citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/NaturalLanguageProcessing.html">NaturalLanguageProcessing</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_stm.html">stm results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package stm downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="stm.pdf"> stm.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/stmVignette.pdf">Using stm</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/stm_1.3.6.tar.gz"> stm_1.3.6.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/stm_1.3.6.zip">stm_1.3.6.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/stm_1.3.6.zip">stm_1.3.6.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/stm_1.3.6.zip">stm_1.3.6.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/stm_1.3.6.tgz">stm_1.3.6.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/stm_1.3.6.tgz">stm_1.3.6.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/stm"> stm archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package stm reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../stmgui/index.html">stmgui</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../oolong/index.html">oolong</a>, <a href="../stmCorrViz/index.html">stmCorrViz</a>, <a href="../stminsights/index.html">stminsights</a>, <a href="../themetagenomics/index.html">themetagenomics</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../quanteda/index.html">quanteda</a>, <a href="../tidytext/index.html">tidytext</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=stm"><samp>https://CRAN.R-project.org/package=stm</samp></a>
+to link to this page.</p>
+</body>
+</html>

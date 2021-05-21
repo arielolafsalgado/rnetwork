@@ -1,0 +1,32 @@
+Package: medicalrisk
+Type: Package
+Title: Medical Risk and Comorbidity Tools for ICD-9-CM Data
+Version: 1.2
+Date: 2016-01-23
+Authors@R: c(person("Patrick", "McCormick", role = c("aut", "cre"),
+               email = "patrick.mccormick@alum.mit.edu"),
+             person("Thomas", "Joseph", role = "aut",
+               email = "thomas.joseph@mountsinai.org"))
+Description: Generates risk estimates and comorbidity flags from ICD-9-CM
+    codes available in administrative medical datasets. The package supports
+    the Charlson Comorbidity Index, the Elixhauser Comorbidity
+    classification, the Revised Cardiac Risk Index, and the Risk Stratification
+    Index.  Methods are table-based, fast, and use the 'plyr' package, so
+    parallelization is possible for large jobs. Also includes a sample of
+    real ICD-9 data for 100 patients from a publicly available dataset.
+Depends: R (>= 3.0.0)
+Imports: plyr (>= 1.5), reshape2, hash
+Suggests: testthat, knitr, ggplot2, gridExtra
+License: GPL-3 | file LICENSE
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 5.0.1
+BugReports: https://github.com/patrickmdnet/medicalrisk/issues
+URL: https://github.com/patrickmdnet/medicalrisk
+NeedsCompilation: no
+Packaged: 2016-01-24 00:23:59 UTC; Patrick
+Author: Patrick McCormick [aut, cre],
+  Thomas Joseph [aut]
+Maintainer: Patrick McCormick <patrick.mccormick@alum.mit.edu>
+Repository: CRAN
+Date/Publication: 2016-01-24 15:45:31

@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package adabag</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=adabag" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="adabag: Applies Multiclass AdaBoost.M1, SAMME and Bagging" />
+<meta name="og:description" content="It implements Freund and Schapire's Adaboost.M1 algorithm and Breiman's Bagging algorithm using classification trees as individual classifiers. Once these classifiers have been trained, they can be used to predict on new data. Also, cross validation estimation of the error can be done. Since version 2.0 the function margins() is available to calculate the margins for these classifiers. Also a higher flexibility is achieved giving access to the rpart.control() argument of 'rpart'. Four important new features were introduced on version 3.0, AdaBoost-SAMME (Zhu et al., 2009) is implemented and a new function errorevol() shows the error of the ensembles as a function of the number of iterations. In addition, the ensembles can be pruned using the option 'newmfinal' in the predict.bagging() and predict.boosting() functions and the posterior probability of each class for observations can be obtained. Version 3.1 modifies the relative importance measure to take into account the gain of the Gini index given by a variable in each tree and the weights of these trees. Version 4.0 includes the margin-based ordered aggregation for Bagging pruning (Guo and Boukir, 2013) and a function to auto prune the 'rpart' tree. Moreover, three new plots are also available importanceplot(), plot.errorevol() and plot.margins(). Version 4.1 allows to predict on unlabeled data. Version 4.2 includes the parallel computation option for some of the functions." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=adabag" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>adabag: Applies Multiclass AdaBoost.M1, SAMME and Bagging</h2>
+<p>It implements Freund and Schapire's Adaboost.M1 algorithm and Breiman's Bagging
+	algorithm using classification trees as individual classifiers. Once these classifiers have been
+	trained, they can be used to predict on new data. Also, cross validation estimation of the error can
+	be done. Since version 2.0 the function margins() is available to calculate the margins for these
+	classifiers. Also a higher flexibility is achieved giving access to the rpart.control() argument
+	of 'rpart'. Four important new features were introduced on version 3.0, AdaBoost-SAMME (Zhu 
+	et al., 2009) is implemented and a new function errorevol() shows the error of the ensembles as
+	a function of the number of iterations. In addition, the ensembles can be pruned using the option 
+	'newmfinal' in the predict.bagging() and predict.boosting() functions and the posterior probability of
+	each class for observations can be obtained. Version 3.1 modifies the relative importance measure
+	to take into account the gain of the Gini index given by a variable in each tree and the weights of 
+	these trees. Version 4.0 includes the margin-based ordered aggregation for Bagging pruning (Guo
+	and Boukir, 2013) and a function to auto prune the 'rpart' tree. Moreover, three new plots are also 
+	available importanceplot(), plot.errorevol() and plot.margins(). Version 4.1 allows to predict on 
+	unlabeled data. Version 4.2 includes the parallel computation option for some of the functions.</p>
+<table summary="Package adabag summary">
+<tr>
+<td>Version:</td>
+<td>4.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td><a href="../rpart/index.html">rpart</a>, <a href="../caret/index.html">caret</a>, <a href="../foreach/index.html">foreach</a>, <a href="../doParallel/index.html">doParallel</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../mlbench/index.html">mlbench</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2018-01-19</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Alfaro, Esteban; Gamez, Matias and Garcia, Noelia; with contributions from Li Guo</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Esteban Alfaro  &#x3c;&#x45;&#x73;&#x74;&#x65;&#x62;&#x61;&#x6e;&#x2e;&#x41;&#x6c;&#x66;&#x61;&#x72;&#x6f;&#x20;&#x61;&#x74;&#x20;&#x75;&#x63;&#x6c;&#x6d;&#x2e;&#x65;&#x73;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">adabag citation info</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_adabag.html">adabag results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package adabag downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="adabag.pdf"> adabag.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/adabag_4.2.tar.gz"> adabag_4.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/adabag_4.2.zip">adabag_4.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/adabag_4.2.zip">adabag_4.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/adabag_4.2.zip">adabag_4.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/adabag_4.2.tgz">adabag_4.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/adabag_4.2.tgz">adabag_4.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/adabag"> adabag archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package adabag reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../rminer/index.html">rminer</a>, <a href="../TDMR/index.html">TDMR</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../crtests/index.html">crtests</a>, <a href="../MachineShop/index.html">MachineShop</a>, <a href="../mlr/index.html">mlr</a>, <a href="../pdp/index.html">pdp</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=adabag"><samp>https://CRAN.R-project.org/package=adabag</samp></a>
+to link to this page.</p>
+</body>
+</html>

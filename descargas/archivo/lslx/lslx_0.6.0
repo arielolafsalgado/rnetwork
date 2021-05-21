@@ -1,0 +1,31 @@
+Package: lslx
+Type: Package
+Title: Semi-Confirmatory Structural Equation Modeling via Penalized
+        Likelihood
+Version: 0.6.0
+Authors@R: c(person("Po-Hsien", "Huang", email = "psyphh@gmail.com", role = c("cre", "aut")), person("Wen-Hsin", "Hu", email = "loveakai@gmail.com", role = "aut"))
+Description: Fits semi-confirmatory structural equation modeling (SEM) via penalized likelihood (PL) with lasso or minimax concave penalty (MCP) developed by Huang, Chen, and Weng (2017) <doi:10.1007/s11336-017-9566-9>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Collate: lslxData.R lslxModel.R lslxFitting.R lslx.R
+        lslx-initialize-method.R lslx-set-coefficient-method.R
+        lslx-set-directed-method.R lslx-set-heterogeneity-method.R
+        lslx-set-undirected-method.R RcppExports.R lslx-fit-method.R
+        lslx-get-method.R lslx-extract-method.R lslx-test-method.R
+        lslx-summarize-method.R lslx-plot-method.R
+Depends: R (>= 3.1.0)
+Imports: Rcpp, R6, ggplot2, lavaan
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+LinkingTo: Rcpp, RcppEigen
+RoxygenNote: 6.0.1
+URL: https://github.com/psyphh/lslx
+BugReports: https://github.com/psyphh/lslx/issues
+NeedsCompilation: yes
+Packaged: 2017-11-03 14:28:25 UTC; psyphh
+Author: Po-Hsien Huang [cre, aut],
+  Wen-Hsin Hu [aut]
+Maintainer: Po-Hsien Huang <psyphh@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-11-03 18:40:27 UTC

@@ -1,0 +1,44 @@
+Package: simcdm
+Type: Package
+Title: Simulate Cognitive Diagnostic Model (CDM) Data
+Version: 0.0.5
+Authors@R: c(person("James Joseph", "Balamuta", 
+                    email = "balamut2@illinois.edu",
+                    role = c("aut", "cre", "cph"),
+                    comment = c(ORCID = "0000-0003-2826-8458")),
+             person("Steven Andrew", "Culpepper", 
+                    email = "sculpepp@illinois.edu",
+                    role = c("aut", "cph"),
+                    comment = c(ORCID = "0000-0003-4226-6176")
+                    ),
+             person("Aaron", "Hudson", 
+                    email = "awhudson@uw.edu",
+                    role = c("ctb", "cph")
+                    )
+            )
+Description: Provides efficient R and 'C++' routines to simulate cognitive diagnostic
+    model data for Deterministic Input, Noisy "And" Gate (DINA) and
+    reduced Reparameterized Unified Model (rRUM) from 
+    Culpepper and Hudson (2017) <doi: 10.1177/0146621617707511>,
+    Culpepper (2015) <doi:10.3102/1076998615595403>, and
+    de la Torre (2009) <doi:10.3102/1076998607309474>.
+Depends: R (>= 3.5.0)
+Imports: Rcpp (>= 1.0.0)
+LinkingTo: Rcpp, RcppArmadillo (>= 0.9.200)
+URL: https://github.com/tmsalab/simcdm
+BugReports: https://github.com/tmsalab/simcdm/issues
+License: GPL (>= 2)
+RoxygenNote: 6.1.1
+Encoding: UTF-8
+Suggests: testthat, covr, knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2019-01-20 22:07:36 UTC; ronin
+Author: James Joseph Balamuta [aut, cre, cph]
+    (<https://orcid.org/0000-0003-2826-8458>),
+  Steven Andrew Culpepper [aut, cph]
+    (<https://orcid.org/0000-0003-4226-6176>),
+  Aaron Hudson [ctb, cph]
+Maintainer: James Joseph Balamuta <balamut2@illinois.edu>
+Repository: CRAN
+Date/Publication: 2019-01-30 18:20:11 UTC

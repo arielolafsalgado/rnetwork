@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package SoilHyP</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Soil Hydraulic Properties [R package SoilHyP version 0.1.4]" />
+<meta name="citation_author" content="Ullrich Dettmann" />
+<meta name="citation_publication_date" content="2020-05-19" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=SoilHyP" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=SoilHyP" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="SoilHyP: Soil Hydraulic Properties" />
+<meta name="og:description" content="Provides functions for (1) soil water retention (SWC) and unsaturated hydraulic conductivity (Ku) (van Genuchten-Mualem (vGM or vG) [1, 2], Peters-Durner-Iden (PDI) [3, 4, 5], Brooks and Corey (bc) [8]), (2) fitting of parameter for SWC and/or Ku using Shuffled Complex Evolution (SCE) optimisation and (3) calculation of soil hydraulic properties (Ku and soil water contents) based on the simplified evaporation method (SEM) [6, 7]. Main references: [1] van Genuchten (1980) &amp;lt;&lt;a href=&quot;https://doi.org/10.2136%2Fsssaj1980.03615995004400050002x&quot;&gt;doi:10.2136/sssaj1980.03615995004400050002x&lt;/a&gt;&amp;gt;, [2] Mualem (1976) &amp;lt;&lt;a href=&quot;https://doi.org/10.1029%2FWR012i003p00513&quot;&gt;doi:10.1029/WR012i003p00513&lt;/a&gt;&amp;gt;, [3] Peters (2013) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fwrcr.20548&quot;&gt;doi:10.1002/wrcr.20548&lt;/a&gt;&amp;gt;, [4] Iden and Durner (2013) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2F2014WR015937&quot;&gt;doi:10.1002/2014WR015937&lt;/a&gt;&amp;gt;, [5] Peters (2014) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2F2014WR015937&quot;&gt;doi:10.1002/2014WR015937&lt;/a&gt;&amp;gt;, [6] Wind G. P. (1966), [7] Peters and Durner (2008) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.jhydrol.2008.04.016&quot;&gt;doi:10.1016/j.jhydrol.2008.04.016&lt;/a&gt;&amp;gt; and [8] Brooks and Corey (1964)." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=SoilHyP" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>SoilHyP: Soil Hydraulic Properties</h2>
+<p>Provides functions for (1) soil water retention (SWC) and unsaturated hydraulic conductivity (Ku) (van Genuchten-Mualem (vGM or vG) [1, 2], Peters-Durner-Iden (PDI) [3, 4, 5], Brooks and Corey (bc) [8]), (2) fitting of parameter for SWC  and/or Ku using Shuffled Complex Evolution (SCE) optimisation and (3) calculation of soil hydraulic properties (Ku and soil water contents) based on the simplified evaporation method (SEM) [6, 7].
+    Main references:
+    [1] van Genuchten (1980) &lt;<a href="https://doi.org/10.2136%2Fsssaj1980.03615995004400050002x">doi:10.2136/sssaj1980.03615995004400050002x</a>&gt;, 
+    [2] Mualem (1976) &lt;<a href="https://doi.org/10.1029%2FWR012i003p00513">doi:10.1029/WR012i003p00513</a>&gt;, 
+    [3] Peters (2013) &lt;<a href="https://doi.org/10.1002%2Fwrcr.20548">doi:10.1002/wrcr.20548</a>&gt;, 
+    [4] Iden and Durner (2013) &lt;<a href="https://doi.org/10.1002%2F2014WR015937">doi:10.1002/2014WR015937</a>&gt;, 
+    [5] Peters (2014) &lt;<a href="https://doi.org/10.1002%2F2014WR015937">doi:10.1002/2014WR015937</a>&gt;,
+    [6] Wind G. P. (1966),
+    [7] Peters and Durner (2008) &lt;<a href="https://doi.org/10.1016%2Fj.jhydrol.2008.04.016">doi:10.1016/j.jhydrol.2008.04.016</a>&gt; and
+    [8] Brooks and Corey (1964).</p>
+<table summary="Package SoilHyP summary">
+<tr>
+<td>Version:</td>
+<td>0.1.4</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../data.table/index.html">data.table</a> (&ge; 1.12), <a href="../lubridate/index.html">lubridate</a> (&ge; 1.7.8)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-05-19</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Ullrich Dettmann [aut, cre],
+  Felix Andrews [ctb] (For the code copied from the hydromad::SCEoptim
+    function (Version: 0.9-15) which is not on r-cran
+    (https://github.com/floybix/hydromad). The SCEoptim function is
+    adapted, and substantially revised from Brecht Donckels MATLAB code
+    which is in turn adopted from Qingyun Duans MATLAB code),
+  Brecht Donckels [ctb] (For the Matlab code which was adapted and
+    reviesed in the hydromad::SCEoptim function.),
+  Qingyun Duan [ctb] (For the MATLAB code adapted from Brecht Donkels.)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Ullrich Dettmann  &#x3c;&#x75;&#x6c;&#x6c;&#x72;&#x69;&#x63;&#x68;&#x2e;&#x64;&#x65;&#x74;&#x74;&#x6d;&#x61;&#x6e;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x74;&#x68;&#x75;&#x65;&#x6e;&#x65;&#x6e;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://bitbucket.org/UlliD/soilhyp/issues">https://bitbucket.org/UlliD/soilhyp/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_SoilHyP.html">SoilHyP results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package SoilHyP downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="SoilHyP.pdf"> SoilHyP.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/SoilHyP_0.1.4.tar.gz"> SoilHyP_0.1.4.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/SoilHyP_0.1.4.zip">SoilHyP_0.1.4.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/SoilHyP_0.1.4.zip">SoilHyP_0.1.4.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/SoilHyP_0.1.4.zip">SoilHyP_0.1.4.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/SoilHyP_0.1.4.tgz">SoilHyP_0.1.4.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/SoilHyP_0.1.4.tgz">SoilHyP_0.1.4.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/SoilHyP"> SoilHyP archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=SoilHyP"><samp>https://CRAN.R-project.org/package=SoilHyP</samp></a>
+to link to this page.</p>
+</body>
+</html>

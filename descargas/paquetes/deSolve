@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package deSolve</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Solvers for Initial Value Problems of Differential Equations ('ODE', 'DAE', 'DDE') [R package deSolve version 1.28]" />
+<meta name="citation_author1" content="Karline Soetaert" />
+<meta name="citation_author2" content="Thomas Petzoldt" />
+<meta name="citation_author3" content="R. Woodrow Setzer" />
+<meta name="citation_publication_date" content="2020-03-08" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=deSolve" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=deSolve" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="deSolve: Solvers for Initial Value Problems of Differential Equations ('ODE', 'DAE', 'DDE')" />
+<meta name="og:description" content="Functions that solve initial value problems of a system of first-order ordinary differential equations ('ODE'), of partial differential equations ('PDE'), of differential algebraic equations ('DAE'), and of delay differential equations. The functions provide an interface to the FORTRAN functions 'lsoda', 'lsodar', 'lsode', 'lsodes' of the 'ODEPACK' collection, to the FORTRAN functions 'dvode', 'zvode' and 'daspk' and a C-implementation of solvers of the 'Runge-Kutta' family with fixed or variable time steps. The package contains routines designed for solving 'ODEs' resulting from 1-D, 2-D and 3-D partial differential equations ('PDE') that have been converted to 'ODEs' by numerical differencing." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=deSolve" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>deSolve: Solvers for Initial Value Problems of Differential Equations
+('ODE', 'DAE', 'DDE')</h2>
+<p>Functions that solve initial value problems of a system
+        of first-order ordinary differential equations ('ODE'), of
+        partial differential equations ('PDE'), of differential
+        algebraic equations ('DAE'), and of delay differential
+        equations.  The functions provide an interface to the FORTRAN
+        functions 'lsoda', 'lsodar', 'lsode', 'lsodes' of the 'ODEPACK'
+        collection, to the FORTRAN functions 'dvode', 'zvode' and 'daspk'
+        and a C-implementation of solvers of the 'Runge-Kutta' family with
+        fixed or variable time steps.  The package contains routines
+        designed for solving 'ODEs' resulting from 1-D, 2-D and 3-D
+        partial differential equations ('PDE') that have been converted
+        to 'ODEs' by numerical differencing.</p>
+<table summary="Package deSolve summary">
+<tr>
+<td>Version:</td>
+<td>1.28</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>methods, graphics, grDevices, stats</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../scatterplot3d/index.html">scatterplot3d</a>, <a href="../FME/index.html">FME</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-03-08</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Karline Soetaert <a href="https://orcid.org/0000-0003-4603-7100"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Thomas Petzoldt <a href="https://orcid.org/0000-0002-4951-6468"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  R. Woodrow Setzer <a href="https://orcid.org/0000-0002-6709-9186"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Peter N. Brown [ctb] (files ddaspk.f, dvode.f, zvode.f),
+  George D. Byrne [ctb] (files dvode.f, zvode.f),
+  Ernst Hairer [ctb] (files radau5.f, radau5a),
+  Alan C. Hindmarsh [ctb] (files ddaspk.f, dlsode.f, dvode.f, zvode.f,
+    opdkmain.f, opdka1.f),
+  Cleve Moler [ctb] (file dlinpck.f),
+  Linda R. Petzold [ctb] (files ddaspk.f, dlsoda.f),
+  Youcef Saad [ctb] (file dsparsk.f),
+  Clement W. Ulrich [ctb] (file ddaspk.f)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Thomas Petzoldt  &#x3c;&#x74;&#x68;&#x6f;&#x6d;&#x61;&#x73;&#x2e;&#x70;&#x65;&#x74;&#x7a;&#x6f;&#x6c;&#x64;&#x74;&#x20;&#x61;&#x74;&#x20;&#x74;&#x75;&#x2d;&#x64;&#x72;&#x65;&#x73;&#x64;&#x65;&#x6e;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://desolve.r-forge.r-project.org/">http://desolve.r-forge.r-project.org/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">deSolve citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/DifferentialEquations.html">DifferentialEquations</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_deSolve.html">deSolve results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package deSolve downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="deSolve.pdf"> deSolve.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/compiledCode.pdf">R Package deSolve: Writing Code in Compiled Languages</a><br/>
+<a href="vignettes/deSolve.pdf">R Package deSolve: Solving Initial Value Differential Equations in R</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/deSolve_1.28.tar.gz"> deSolve_1.28.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/deSolve_1.28.zip">deSolve_1.28.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/deSolve_1.28.zip">deSolve_1.28.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/deSolve_1.28.zip">deSolve_1.28.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/deSolve_1.28.tgz">deSolve_1.28.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/deSolve_1.28.tgz">deSolve_1.28.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/deSolve"> deSolve archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package deSolve reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../BacArena/index.html">BacArena</a>, <a href="../bvpSolve/index.html">bvpSolve</a>, <a href="../Data2LD/index.html">Data2LD</a>, <a href="../deBInfer/index.html">deBInfer</a>, <a href="../deTestSet/index.html">deTestSet</a>, <a href="../DivE/index.html">DivE</a>, <a href="../ecolMod/index.html">ecolMod</a>, <a href="../ecosim/index.html">ecosim</a>, <a href="../embryogrowth/index.html">embryogrowth</a>, <a href="../epimdr/index.html">epimdr</a>, <a href="../EpiModel/index.html">EpiModel</a>, <a href="../FME/index.html">FME</a>, <a href="../GPoM/index.html">GPoM</a>, <a href="../GPoM.FDLyapu/index.html">GPoM.FDLyapu</a>, <a href="../growthrates/index.html">growthrates</a>, <a href="../hgm/index.html">hgm</a>, <a href="../hisse/index.html">hisse</a>, <a href="../insideRODE/index.html">insideRODE</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/MEIGOR.html"><span class="BioC">MEIGOR</span></a>, <a href="../neuRosim/index.html">neuRosim</a>, <a href="../nlmeODE/index.html">nlmeODE</a>, <a href="../ODEnetwork/index.html">ODEnetwork</a>, <a href="../ODEsensitivity/index.html">ODEsensitivity</a>, <a href="../pauwels2014/index.html">pauwels2014</a>, <a href="../primer/index.html">primer</a>, <a href="../ReacTran/index.html">ReacTran</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/SBMLR.html"><span class="BioC">SBMLR</span></a>, <a href="../scaRabee/index.html">scaRabee</a>, <a href="../shinySIR/index.html">shinySIR</a>, <a href="../simecol/index.html">simecol</a>, <a href="../SoilR/index.html">SoilR</a>, <a href="../TDCor/index.html">TDCor</a>, <a href="../TESS/index.html">TESS</a>, <a href="../TreePar/index.html">TreePar</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../asbio/index.html">asbio</a>, <a href="../AssetPricing/index.html">AssetPricing</a>, <a href="../bdynsys/index.html">bdynsys</a>, <a href="../biogrowth/index.html">biogrowth</a>, <a href="../bioinactivation/index.html">bioinactivation</a>, <a href="../briskaR/index.html">briskaR</a>, <a href="../capm/index.html">capm</a>, <a href="../CausalKinetiX/index.html">CausalKinetiX</a>, <a href="../CollocInfer/index.html">CollocInfer</a>, <a href="../covid19.analytics/index.html">covid19.analytics</a>, <a href="../DAISIE/index.html">DAISIE</a>, <a href="../DAMOCLES/index.html">DAMOCLES</a>, <a href="../DDD/index.html">DDD</a>, <a href="../deGradInfer/index.html">deGradInfer</a>, <a href="../diversitree/index.html">diversitree</a>, <a href="../dMod/index.html">dMod</a>, <a href="../DSAIDE/index.html">DSAIDE</a>, <a href="../DSAIRM/index.html">DSAIRM</a>, <a href="../dynatopmodel/index.html">dynatopmodel</a>, <a href="../dynr/index.html">dynr</a>, <a href="../EpiDynamics/index.html">EpiDynamics</a>, <a href="../EvolutionaryGames/index.html">EvolutionaryGames</a>, <a href="../evoper/index.html">evoper</a>, <a href="../flexsurv/index.html">flexsurv</a>, <a href="../gauseR/index.html">gauseR</a>, <a href="../geiger/index.html">geiger</a>, <a href="../httk/index.html">httk</a>, <a href="../hypergeo/index.html">hypergeo</a>, <a href="../idmodelr/index.html">idmodelr</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/INSPEcT.html"><span class="BioC">INSPEcT</span></a>, <a href="../MGDrivE2/index.html">MGDrivE2</a>, <a href="../microPop/index.html">microPop</a>, <a href="../microsamplingDesign/index.html">microsamplingDesign</a>, <a href="../mizer/index.html">mizer</a>, <a href="../mkin/index.html">mkin</a>, <a href="../morse/index.html">morse</a>, <a href="../nhm/index.html">nhm</a>, <a href="../nLTT/index.html">nLTT</a>, <a href="../odin/index.html">odin</a>, <a href="../PBD/index.html">PBD</a>, <a href="../pCODE/index.html">pCODE</a>, <a href="../phaseR/index.html">phaseR</a>, <a href="../pksensi/index.html">pksensi</a>, <a href="../pomp/index.html">pomp</a>, <a href="../readsdr/index.html">readsdr</a>, <a href="../RLumModel/index.html">RLumModel</a>, <a href="../rodeo/index.html">rodeo</a>, <a href="../RPANDA/index.html">RPANDA</a>, <a href="../rstpm2/index.html">rstpm2</a>, <a href="../rties/index.html">rties</a>, <a href="../secsse/index.html">secsse</a>, <a href="../seeds/index.html">seeds</a>, <a href="../selac/index.html">selac</a>, <a href="../simode/index.html">simode</a>, <a href="../soilassessment/index.html">soilassessment</a>, <a href="../spdynmod/index.html">spdynmod</a>, <a href="../stagePop/index.html">stagePop</a>, <a href="../StrathE2E2/index.html">StrathE2E2</a>, <a href="../streambugs/index.html">streambugs</a>, <a href="../takos/index.html">takos</a>, <a href="http://www.bioconductor.org/packages/release/data/experiment/html/TimerQuant.html"><span class="BioC">TimerQuant</span></a>, <a href="../TIMP/index.html">TIMP</a>, <a href="../tseriesChaos/index.html">tseriesChaos</a>, <a href="../ubiquity/index.html">ubiquity</a>, <a href="../ZeBook/index.html">ZeBook</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../AquaEnv/index.html">AquaEnv</a>, <a href="../calibrar/index.html">calibrar</a>, <a href="../cOde/index.html">cOde</a>, <a href="../dde/index.html">dde</a>, <a href="../fda/index.html">fda</a>, <a href="../LoopDetectR/index.html">LoopDetectR</a>, <a href="../PBSmodelling/index.html">PBSmodelling</a>, <a href="../PopED/index.html">PopED</a>, <a href="../r2sundials/index.html">r2sundials</a>, <a href="../Sim.DiffProc/index.html">Sim.DiffProc</a>, <a href="../smfsb/index.html">smfsb</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=deSolve"><samp>https://CRAN.R-project.org/package=deSolve</samp></a>
+to link to this page.</p>
+</body>
+</html>

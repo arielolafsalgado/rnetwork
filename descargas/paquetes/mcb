@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package mcb</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=mcb" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="mcb: Model Confidence Bounds" />
+<meta name="og:description" content="When choosing proper variable selection methods, it is important to consider the uncertainty of a certain method. The model confidence bound for variable selection identifies two nested models (upper and lower confidence bound models) containing the true model at a given confidence level. A good variable selection method is the one of which the model confidence bound under a certain confidence level has the shortest width. When visualizing the variability of model selection and comparing different model selection procedures, model uncertainty curve is a good graphical tool. A good variable selection method is the one of whose model uncertainty curve will tend to arch towards the upper left corner. This function aims to obtain the model confidence bound and draw the model uncertainty curve of certain single model selection method under a coverage rate equal or little higher than user-given confidential level. About what model confidence bound is and how it work please see Li,Y., Luo,Y., Ferrari,D., Hu,X. and Qin,Y. (2019) Model Confidence Bounds for Variable Selection. Biometrics, 75:392-403. &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fbiom.13024&quot;&gt;doi:10.1111/biom.13024&lt;/a&gt;&amp;gt;. Besides, 'flare' is needed only you apply the SQRT or LAD method ('mcb' totally has 8 methods). Although 'flare' has been archived by CRAN, you can still get it in &amp;lt;&lt;a href=&quot;https://CRAN.R-project.org/package=flare&quot;&gt;https://CRAN.R-project.org/package=flare&lt;/a&gt;&amp;gt; and the latest version is useful for 'mcb'." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=mcb" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>mcb: Model Confidence Bounds</h2>
+<p>When choosing proper variable selection methods, it is important to consider the uncertainty of a certain method. The model confidence bound for variable selection identifies two nested models (upper and lower confidence bound models) containing the true model at a given confidence level. A good variable selection method is the one of which the model confidence bound under a certain confidence level has the shortest width. When visualizing the variability of model selection and comparing different model selection procedures, model uncertainty curve is a good graphical tool. A good variable selection method is the one of whose model uncertainty curve will tend to arch towards the upper left corner. This function aims to obtain the model confidence bound and draw the model uncertainty curve of certain single model selection method under a coverage rate equal or little higher than user-given confidential level. About what model confidence bound is and how it work please see Li,Y., Luo,Y., Ferrari,D., Hu,X. and Qin,Y. (2019) Model Confidence Bounds for Variable Selection. Biometrics, 75:392-403. &lt;<a href="https://doi.org/10.1111%2Fbiom.13024">doi:10.1111/biom.13024</a>&gt;. Besides, 'flare' is needed only you apply the SQRT or LAD method ('mcb' totally has 8 methods). Although 'flare' has been archived by CRAN, you can still get it in &lt;<a href="https://CRAN.R-project.org/package=flare">https://CRAN.R-project.org/package=flare</a>&gt; and the latest version is useful for 'mcb'.</p>
+<table summary="Package mcb summary">
+<tr>
+<td>Version:</td>
+<td>0.1.15</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.6.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>parallel, methods, <a href="../leaps/index.html">leaps</a>, <a href="../lars/index.html">lars</a>, <a href="../MASS/index.html">MASS</a>, <a href="../glmnet/index.html">glmnet</a>, <a href="../ncvreg/index.html">ncvreg</a>, <a href="../smoothmest/index.html">smoothmest</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../reshape2/index.html">reshape2</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td>flare, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-05</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Yang Li, Yichen Qin, Heming Deng</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Heming Deng &#x3c;&#x64;&#x68;&#x65;&#x6d;&#x69;&#x6e;&#x67;&#x20;&#x61;&#x74;&#x20;&#x72;&#x75;&#x63;&#x2e;&#x65;&#x64;&#x75;&#x2e;&#x63;&#x6e;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_mcb.html">mcb results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package mcb downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="mcb.pdf"> mcb.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/mcb_0.1.15.tar.gz"> mcb_0.1.15.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/mcb_0.1.15.zip">mcb_0.1.15.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/mcb_0.1.15.zip">mcb_0.1.15.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/mcb_0.1.15.zip">mcb_0.1.15.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/mcb_0.1.15.tgz">mcb_0.1.15.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/mcb_0.1.15.tgz">mcb_0.1.15.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/mcb"> mcb archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=mcb"><samp>https://CRAN.R-project.org/package=mcb</samp></a>
+to link to this page.</p>
+</body>
+</html>

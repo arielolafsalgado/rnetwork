@@ -1,0 +1,34 @@
+Package: sparklyr
+Type: Package
+Title: R Interface to Apache Spark
+Version: 0.4
+Authors@R: c(
+    person("Javier", "Luraschi", email = "javier@rstudio.com", role = c("aut", "cre")),
+    person("Kevin", "Ushey", role = "aut", email = "kevin@rstudio.com"),
+    person("JJ", "Allaire", role = "aut", email = "jj@rstudio.com"),
+    person(family = "RStudio", role = c("cph")),
+    person(family = "The Apache Software Foundation", role = c("aut", "cph"))
+    )
+Maintainer: Javier Luraschi <javier@rstudio.com>
+Description: Provision, connect and interface to Apache Spark from within R.
+    This package supports connecting to local and remote Apache Spark clusters,
+    provides a 'dplyr' compatible back-end, and provides an interface to Spark's
+    built-in machine learning algorithms.
+License: Apache License 2.0 | file LICENSE
+BugReports: https://github.com/rstudio/sparklyr/issues
+LazyData: TRUE
+RoxygenNote: 5.0.1
+Depends: R (>= 3.1.2)
+Imports: methods, magrittr, lazyeval (>= 0.2.0), tibble (>= 1.1), dplyr
+        (>= 0.5.0), DBI (>= 0.4.1), readr (>= 0.2.0), digest, config,
+        rappdirs, assertthat, rprojroot, withr
+Suggests: testthat, RCurl
+NeedsCompilation: no
+Packaged: 2016-09-24 14:39:32 UTC; javierluraschi
+Author: Javier Luraschi [aut, cre],
+  Kevin Ushey [aut],
+  JJ Allaire [aut],
+  RStudio [cph],
+  The Apache Software Foundation [aut, cph]
+Repository: CRAN
+Date/Publication: 2016-09-24 22:40:18

@@ -1,0 +1,37 @@
+Package: rtkore
+Type: Package
+Title: STK++ Core Library Integration to R using Rcpp
+Version: 1.0.1
+Encoding: UTF-8
+Date: 2015-11-24
+Authors@R: c(person("Serge", "Iovleff", role=c("aut","cre"),
+    email="serge.iovleff@stkpp.org"),
+    person("Parmeet", "Bhatia", role="ctb",
+    email="bhatia.parmeet@gmail.com"))
+Copyright: Inria and specifically inst/COPYRIGHTS for the STK++ library
+Maintainer: Serge Iovleff <serge.iovleff@stkpp.org>
+Description: STK++ (http://www.stkpp.org) is a collection of
+    C++ classes for statistics, clustering, linear algebra, arrays (with an
+    Eigen-like API), regression, dimension reduction, etc. The integration of
+    the library to R is using Rcpp.
+ .
+       The rtkore package includes the header files from the STK++ core library.
+    All files contain only templated classes or inlined functions.
+ .
+       STK++ is licensed under the GNU LGPL version 2 or later. rtkore
+    (the stkpp integration into R) is licensed under the
+    GNU GPL version 2 or later. See file LICENSE.note for details.
+License: GPL (>= 2)
+BugReports: http://www.stkpp.org
+LazyLoad: yes
+Depends: R (>= 3.0.2), Rcpp (>= 0.11.0)
+LinkingTo: Rcpp
+URL: http://www.stkpp.org
+NeedsCompilation: yes
+SystemRequirements: GNU make
+Collate: 'rtkore.R' 'rtkoreFlags.R' 'inlineCxxPlugin.R'
+Packaged: 2015-11-24 15:15:04 UTC; iovleff
+Author: Serge Iovleff [aut, cre],
+  Parmeet Bhatia [ctb]
+Repository: CRAN
+Date/Publication: 2015-11-24 18:37:21

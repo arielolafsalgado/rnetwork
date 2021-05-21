@@ -1,0 +1,25 @@
+Package: beadplexr
+Type: Package
+Title: Analysis of Multiplex Cytometric Bead Assays
+Version: 0.1.0
+Authors@R: c( person("Ulrik", "Stervbo", , "ulrik.stervbo@gmail.com", role = c("aut", "cre")))
+Description: Reproducible and automated analysis of multiplex bead assays such as CBA, 
+    LEGENDplex, and MACSPlex. The package provides functions for streamlined reading of fcs 
+    files, and identification of bead clusters and analyte expression. It eases the 
+    calculation of a standard curve and the subsequent calculation of the analyte concentration.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 2.10)
+Suggests: knitr, rmarkdown, stringr, testthat, hexbin, igraph,
+        gridExtra
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+Imports: magrittr, tibble, dplyr, ggplot2, flowCore, yaml, purrr, fpc,
+        cluster, raster, lazyeval, tidyr, drc, mclust
+NeedsCompilation: no
+Packaged: 2018-03-07 16:51:18 UTC; ulrik
+Author: Ulrik Stervbo [aut, cre]
+Maintainer: Ulrik Stervbo <ulrik.stervbo@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-03-09 10:15:37 UTC

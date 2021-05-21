@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package seqDesign</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Simulation and Group Sequential Monitoring of Randomized Two-Stage Treatment Efficacy Trials with Time-to-Event Endpoints [R package seqDesign version 1.2]" />
+<meta name="citation_author1" content="Michal Juraska" />
+<meta name="citation_author2" content="Doug Grove" />
+<meta name="citation_publication_date" content="2019-05-22" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=seqDesign" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=seqDesign" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="seqDesign: Simulation and Group Sequential Monitoring of Randomized Two-Stage Treatment Efficacy Trials with Time-to-Event Endpoints" />
+<meta name="og:description" content="A modification of the preventive vaccine efficacy trial design of Gilbert, Grove et al. (2011, Statistical Communications in Infectious Diseases) is implemented, with application generally to individual-randomized clinical trials with multiple active treatment groups and a shared control group, and a study endpoint that is a time-to-event endpoint subject to right-censoring. The design accounts for the issues that the efficacy of the treatment/vaccine groups may take time to accrue while the multiple treatment administrations/vaccinations are given; there is interest in assessing the durability of treatment efficacy over time; and group sequential monitoring of each treatment group for potential harm, non-efficacy/efficacy futility, and high efficacy is warranted. The design divides the trial into two stages of time periods, where each treatment is first evaluated for efficacy in the first stage of follow-up, and, if and only if it shows significant treatment efficacy in stage one, it is evaluated for longer-term durability of efficacy in stage two. The package produces plots and tables describing operating characteristics of a specified design including an unconditional power for intention-to-treat and per-protocol/as-treated analyses; trial duration; probabilities of the different possible trial monitoring outcomes (e.g., stopping early for non-efficacy); unconditional power for comparing treatment efficacies; and distributions of numbers of endpoint events occurring after the treatments/vaccinations are given, useful as input parameters for the design of studies of the association of biomarkers with a clinical outcome (surrogate endpoint problem). The code can be used for a single active treatment versus control design and for a single-stage design." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=seqDesign" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>seqDesign: Simulation and Group Sequential Monitoring of Randomized
+Two-Stage Treatment Efficacy Trials with Time-to-Event
+Endpoints</h2>
+<p>A modification of the preventive vaccine efficacy trial design of Gilbert, Grove et al. (2011, Statistical Communications in Infectious Diseases) is implemented, with application generally to individual-randomized clinical trials with multiple active treatment groups and a shared control group, and a study endpoint that is a time-to-event endpoint subject to right-censoring. The design accounts for the issues that the efficacy of the treatment/vaccine groups may take time to accrue while the multiple treatment administrations/vaccinations are given; there is interest in assessing the durability of treatment efficacy over time; and group sequential monitoring of each treatment group for potential harm, non-efficacy/efficacy futility, and high efficacy is warranted. The design divides the trial into two stages of time periods, where each treatment is first evaluated for efficacy in the first stage of follow-up, and, if and only if it shows significant treatment efficacy in stage one, it is evaluated for longer-term durability of efficacy in stage two. The package produces plots and tables describing operating characteristics of a specified design including an unconditional power for intention-to-treat and per-protocol/as-treated analyses; trial duration; probabilities of the different possible trial monitoring outcomes (e.g., stopping early for non-efficacy); unconditional power for comparing treatment efficacies; and distributions of numbers of endpoint events occurring after the treatments/vaccinations are given, useful as input parameters for the design of studies of the association of biomarkers with a clinical outcome (surrogate endpoint problem). The code can be used for a single active treatment versus control design and for a single-stage design.</p>
+<table summary="Package seqDesign summary">
+<tr>
+<td>Version:</td>
+<td>1.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.16), <a href="../survival/index.html">survival</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../R.rsp/index.html">R.rsp</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-05-22</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Michal Juraska [aut, cre],
+  Doug Grove [aut],
+  Xuesong Yu [ctb],
+  Peter Gilbert [ctb],
+  Stephanie Wu [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Michal Juraska  &#x3c;&#x6d;&#x6a;&#x75;&#x72;&#x61;&#x73;&#x6b;&#x61;&#x20;&#x61;&#x74;&#x20;&#x66;&#x72;&#x65;&#x64;&#x68;&#x75;&#x74;&#x63;&#x68;&#x2e;&#x6f;&#x72;&#x67;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/mjuraska/seqDesign/issues">https://github.com/mjuraska/seqDesign/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/mjuraska/seqDesign">https://github.com/mjuraska/seqDesign</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/ExperimentalDesign.html">ExperimentalDesign</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_seqDesign.html">seqDesign results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package seqDesign downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="seqDesign.pdf"> seqDesign.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/seqDesignInstructions.pdf">Instructions for Using seqDesign and Generating the Output PDF Report</a><br/>
+<a href="vignettes/seqDesignReportTemplate.pdf">seqDesign's Report Template</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/seqDesign_1.2.tar.gz"> seqDesign_1.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/seqDesign_1.2.zip">seqDesign_1.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/seqDesign_1.2.zip">seqDesign_1.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/seqDesign_1.2.zip">seqDesign_1.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/seqDesign_1.2.tgz">seqDesign_1.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/seqDesign_1.2.tgz">seqDesign_1.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/seqDesign"> seqDesign archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=seqDesign"><samp>https://CRAN.R-project.org/package=seqDesign</samp></a>
+to link to this page.</p>
+</body>
+</html>

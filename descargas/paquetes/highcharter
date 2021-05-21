@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package highcharter</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="A Wrapper for the 'Highcharts' Library [R package highcharter version 0.8.2]" />
+<meta name="citation_author" content="Joshua Kunst" />
+<meta name="citation_publication_date" content="2020-07-26" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=highcharter" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=highcharter" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="highcharter: A Wrapper for the 'Highcharts' Library" />
+<meta name="og:description" content="A wrapper for the 'Highcharts' library including shortcut functions to plot R objects. 'Highcharts' &amp;lt;&lt;a href=&quot;http://www.highcharts.com/&quot;&gt;http://www.highcharts.com/&lt;/a&gt;&amp;gt; is a charting library offering numerous chart types with a simple configuration syntax." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=highcharter" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>highcharter: A Wrapper for the 'Highcharts' Library</h2>
+<p>A wrapper for the 'Highcharts' library including
+    shortcut functions to plot R objects. 'Highcharts'
+    &lt;<a href="http://www.highcharts.com/">http://www.highcharts.com/</a>&gt; is a charting library offering
+    numerous chart types with a simple configuration syntax.</p>
+<table summary="Package highcharter summary">
+<tr>
+<td>Version:</td>
+<td>0.8.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../htmlwidgets/index.html">htmlwidgets</a>, <a href="../magrittr/index.html">magrittr</a>, <a href="../purrr/index.html">purrr</a>, <a href="../rlist/index.html">rlist</a>, <a href="../assertthat/index.html">assertthat</a>, <a href="../zoo/index.html">zoo</a>, <a href="../dplyr/index.html">dplyr</a> (&ge; 0.7.0), <a href="../tibble/index.html">tibble</a> (&ge; 1.1), <a href="../stringr/index.html">stringr</a> (&ge; 1.3.0), <a href="../broom/index.html">broom</a>, <a href="../xts/index.html">xts</a>, <a href="../quantmod/index.html">quantmod</a>, <a href="../tidyr/index.html">tidyr</a>, <a href="../htmltools/index.html">htmltools</a>, <a href="../jsonlite/index.html">jsonlite</a>, <a href="../igraph/index.html">igraph</a>, <a href="../lubridate/index.html">lubridate</a>, <a href="../yaml/index.html">yaml</a>, <a href="../rlang/index.html">rlang</a> (&ge; 0.1.1), <a href="../rjson/index.html">rjson</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../survival/index.html">survival</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../httr/index.html">httr</a>, <a href="../viridisLite/index.html">viridisLite</a>, <a href="../shiny/index.html">shiny</a>, <a href="../MASS/index.html">MASS</a>, <a href="../gapminder/index.html">gapminder</a>, <a href="../forecast/index.html">forecast</a>, <a href="../geojsonio/index.html">geojsonio</a>, <a href="../testthat/index.html">testthat</a>, <a href="../covr/index.html">covr</a>, <a href="../spelling/index.html">spelling</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-07-26</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Joshua Kunst [aut, cre],
+  Nuno Agostinho [ctb] (hchart.survfit, densities and
+    hc_add_series_scatter),
+  Danton Noriega [ctb] (hcaes_),
+  Martin John Hadley [ctb] (hc_add_event_point improvement),
+  Eduardo Flores [ctb] (First version hc_add_series_df_tidy),
+  Dean Kilfoyle [ctb] (First version hc_add_series_boxplot),
+  Adline Dsilva [ctb] (First version Matrix heatmap),
+  Kamil Slowikowski <a href="https://orcid.org/0000-0002-2843-6370"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Christian Minich [ctb] (hcaes mutate_mapping improvement),
+  Jonathan Armond [ctb] (mutate_mapping bugfix),
+  David Breuer [ctb] (download_map_data quiet parameter),
+  Mauricio Vargas [ctb] (tests and gh-actions),
+  Michael Yan [ctb] (Motivational example for treemap/sunburst data
+    helper),
+  Bart Oortwijn [ctb] (rjson option, hc_add_yAxis, and GH issues
+    collaborator)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Joshua Kunst  &#x3c;&#x6a;&#x62;&#x6b;&#x75;&#x6e;&#x73;&#x74;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/jbkunst/highcharter/issues">https://github.com/jbkunst/highcharter/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://jkunst.com/highcharter">http://jkunst.com/highcharter</a>,
+<a href="https://github.com/jbkunst/highcharter">https://github.com/jbkunst/highcharter</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_highcharter.html">highcharter results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package highcharter downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="highcharter.pdf"> highcharter.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/highcharter_0.8.2.tar.gz"> highcharter_0.8.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/highcharter_0.8.2.zip">highcharter_0.8.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/highcharter_0.8.2.zip">highcharter_0.8.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/highcharter_0.8.2.zip">highcharter_0.8.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/highcharter_0.8.2.tgz">highcharter_0.8.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/highcharter_0.8.2.tgz">highcharter_0.8.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/highcharter"> highcharter archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package highcharter reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="http://www.bioconductor.org/packages/release/bioc/html/DAPAR.html"><span class="BioC">DAPAR</span></a>, <a href="../modchart/index.html">modchart</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/Prostar.html"><span class="BioC">Prostar</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/psichomics.html"><span class="BioC">psichomics</span></a>, <a href="../RKorAPClient/index.html">RKorAPClient</a>, <a href="../vistime/index.html">vistime</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../DramaAnalysis/index.html">DramaAnalysis</a>, <a href="../shinyjqui/index.html">shinyjqui</a>, <a href="../xplorerr/index.html">xplorerr</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=highcharter"><samp>https://CRAN.R-project.org/package=highcharter</samp></a>
+to link to this page.</p>
+</body>
+</html>

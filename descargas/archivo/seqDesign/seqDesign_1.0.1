@@ -1,0 +1,16 @@
+Package: seqDesign
+Version: 1.0.1
+Date: 2014-04-16
+Title: Simulation and group sequential monitoring of randomized
+        multi-arm two-stage Phase IIb/III treatment efficacy trials
+        with time-to-event endpoints
+Author: Michal Juraska and Doug Grove, with contributions from Xuesong Yu and Peter B. Gilbert
+Maintainer: Michal Juraska <mjuraska@fhcrc.org>
+Depends: R (>= 2.16), survival, xtable
+Description: This package implements the preventive vaccine efficacy trial design of Gilbert, Grove et al. (2011, Statistical Communications in Infectious Diseases), and applies generally to individual-randomized clinical trials with multiple active treatment groups and a shared placebo group, with a study endpoint that is a time-to-event endpoint subject to right-censoring. The design accounts for the issues that the efficacy of the treatment/vaccine groups may take time to accrue while the multiple treatment administrations/vaccinations are given; there is interest in assessing the durability of treatment efficacy over time; and group sequential monitoring of each treatment arm for potential harm, non-efficacy/efficacy futility, and high efficacy is warranted. The design divides the trial into two stages of time periods, where each treatment is first evaluated for efficacy in the first stage of follow-up, and, if and only if it shows significant treatment efficacy in stage one, it is evaluated for longer-term durability of efficacy in stage two. The package produces plots and tables describing operating characteristics of a specified design including an unconditional power for intention-to-treat and per-protocol/as-treated analyses; trial duration; probabilities of the different possible trial outcomes (e.g., stopping early for efficacy futility); unconditional power for comparing treatment efficacy; and distributions of numbers of endpoint events occurring after the treatments/vaccinations are given, useful as input parameters for the design of studies of the association of biomarkers with outcome (surrogate endpoint problem). The code can be used for a single active treatment versus control design and for a single-stage design.
+License: GPL-2
+LazyLoad: yes
+Packaged: 2014-04-16 22:23:28 UTC; mjuraska
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2014-04-17 17:28:58

@@ -1,0 +1,31 @@
+Package: weightr
+Title: Estimating Weight-Function Models for Publication Bias in R
+Version: 1.0.0
+Authors@R: c(
+  person(c("Kathleen", "M."), "Coburn", email = "kcoburn@ucmerced.edu", role = c("aut", "cre")),
+  person(c("Jack", "L."), "Vevea", email = "jvevea@ucmerced.edu", role = c("aut")))
+Description: Set of functions for estimating the Vevea and Hedges (1995)
+    weight-function model in R. By specifying arguments, users can
+    also estimate the modified model described in Vevea and Woods (2005), which
+    may be more practical with small datasets. Users can also specify moderators
+    to estimate a linear model. The package functionality allows users to easily
+    extract the results of these analyses as R objects for other uses. In addition,
+    the package includes a function to launch both models as a Shiny application.
+    Although the Shiny application is also available online, this function allows
+    users to launch it locally if they choose.
+URL: http://faculty.ucmerced.edu/jvevea/,
+        https://vevealab.shinyapps.io/WeightFunctionModel/,
+        http://bayes-1.ucmerced.edu/jvevea/pdfs/Vevea%20&%20Hedges%201995.pdf,
+        http://bayes-1.ucmerced.edu/jvevea/pdfs/vevea%20and%20woods.pdf
+Depends: R (>= 3.2.3)
+License: GPL-2 | GPL-3
+LazyData: true
+Suggests: shiny (>= 0.12.2), shinyBS (>= 0.61)
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-04-24 19:13:24 UTC; kathleencoburn
+Author: Kathleen M. Coburn [aut, cre],
+  Jack L. Vevea [aut]
+Maintainer: Kathleen M. Coburn <kcoburn@ucmerced.edu>
+Repository: CRAN
+Date/Publication: 2016-04-24 23:12:56

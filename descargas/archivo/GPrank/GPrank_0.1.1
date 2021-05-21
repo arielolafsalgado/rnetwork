@@ -1,0 +1,35 @@
+Package: GPrank
+Title: Gaussian Process Ranking of Multiple Time Series
+Version: 0.1.1
+Date: 2016-10-27
+Authors@R: c(person("Hande", "Topa", role = c("aut", "cre"),
+                     email = "hande.topa@helsinki.fi"),
+	     person("Antti", "Honkela", role = c("aut"),
+                     email = "antti.honkela@helsinki.fi"))
+Depends: R (>= 2.14.0)
+Imports: gptk, matrixStats, tigreBrowserWriter, RColorBrewer
+LazyData: true
+Description: Implements a Gaussian process (GP)-based ranking method
+    which can be used to rank multiple time series according to their
+    temporal activity levels. An example is the case when expression
+    levels of all genes are measured over a time course and the main
+    concern is to identify the most active genes, i.e. genes which
+    show significant non-random variation in their expression levels.
+    This is achieved by computing Bayes factors for each time series
+    by comparing the marginal likelihoods under time-dependent and
+    time-independent GP models. Additional variance information from
+    pre-processing of the observations is incorporated into the GP
+    models, which makes the ranking more robust against model
+    overfitting. The package supports exporting the results to
+    'tigreBrowser' for visualisation, filtering or ranking.
+License: MIT + file LICENSE
+URL: https://github.com/PROBIC/GPrank
+BugReports: https://github.com/PROBIC/GPrank/issues
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-10-27 08:51:47 UTC; topah
+Author: Hande Topa [aut, cre],
+  Antti Honkela [aut]
+Maintainer: Hande Topa <hande.topa@helsinki.fi>
+Repository: CRAN
+Date/Publication: 2016-10-27 17:40:22

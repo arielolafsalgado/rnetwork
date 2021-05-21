@@ -1,0 +1,34 @@
+Package: cleanNLP
+Type: Package
+Title: A Tidy Data Model for Natural Language Processing
+Version: 1.10.0
+Authors@R: c(person(given = "Taylor B.", family = "Arnold", email = "taylor.arnold@acm.org", role = c("aut", "cre")))
+Author: Taylor B. Arnold [aut, cre]
+Maintainer: Taylor B. Arnold <taylor.arnold@acm.org>
+Description: Provides a set of fast tools for converting a textual corpus into a set of normalized
+  tables. Users may make use of a Python back end with 'spaCy' <https://spacy.io>
+  or the Java back end 'CoreNLP' <http://stanfordnlp.github.io/CoreNLP/>. A minimal back
+  end with no external dependencies is also provided. Exposed annotation tasks include
+  tokenization, part of speech tagging, named entity recognition, entity linking, sentiment
+  analysis, dependency parsing, coreference resolution, and word embeddings. Summary
+  statistics regarding token unigram, part of speech tag, and dependency type frequencies
+  are also included to assist with analyses.
+Depends: R (>= 2.10)
+Imports: dplyr (>= 0.5.0), readr (>= 1.1.0), Matrix (>= 1.2), stringi,
+        stats, methods, utils
+Suggests: reticulate (>= 0.7), rJava (>= 0.9-8), tokenizers (>= 0.1.4),
+        RCurl (>= 1.95), knitr (>= 1.15), rmarkdown (>= 1.4), testthat
+        (>= 1.0.1), covr (>= 2.2.2)
+SystemRequirements: Python (>= 2.7.0); spaCy <https://spacy.io/> (>=
+        1.8); Java (>= 7.0); Stanford CoreNLP
+        <http://nlp.stanford.edu/software/corenlp.shtml> (>= 3.7.0)
+License: LGPL-2
+URL: https://statsmaths.github.io/cleanNLP/
+BugReports: http://github.com/statsmaths/cleanNLP/issues
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-07-01 10:38:36 UTC; taylor
+Repository: CRAN
+Date/Publication: 2017-07-01 14:48:49 UTC

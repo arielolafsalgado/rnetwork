@@ -1,0 +1,31 @@
+Package: finiteruinprob
+Type: Package
+Title: Computation of the probability of ruin within a finite time
+        horizon
+Version: 0.4
+Date: 2014-05-11
+Authors@R: c(person(given  = 'Benjamin',
+                    family = 'Baumgartner',
+                    email  = 'benjamin@baumgrt.com',
+                    role   = c('aut', 'cre')),
+             person(given  = 'Riccardo',
+                    family = 'Gatto',
+                    email  = 'gatto@stat.unibe.ch',
+                    role   = c('ctb', 'ths')))
+Maintainer: Benjamin Baumgartner <benjamin@baumgrt.com>
+Description: In the Cramér–Lundberg risk process perturbed by a Wiener
+    process, this packages provides approximations to the probability of
+    ruin within a finite time horizon.  Currently, there are three methods
+    implemented: The first one uses saddlepoint approximation (two
+    variants are provided), the second one uses importance sampling and
+    the third one is based on the simulation of a dual process.  This last
+    method is not very accurate and only given here for completeness.
+License: AGPL-3
+Imports: sdprisk, numDeriv
+Encoding: UTF-8
+Packaged: 2014-05-11 18:22:18 UTC; benjamin
+Author: Benjamin Baumgartner [aut, cre],
+  Riccardo Gatto [ctb, ths]
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2014-05-12 01:05:28

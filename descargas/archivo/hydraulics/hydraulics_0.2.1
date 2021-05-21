@@ -1,0 +1,32 @@
+Package: hydraulics
+Type: Package
+Title: Basic Pipe and Open Channel Hydraulics
+Version: 0.2.1
+Author: Ed Maurer [aut, cre], Irucka Embry [aut, ctb] (iemisc code)
+Maintainer: Ed Maurer <emaurer@scu.edu>
+Description: Functions for basic hydraulic calculations related to 
+    water flow in circular pipes both flowing full (under pressure), and 
+    partially full (gravity flow), and trapezoidal open channels. For 
+    pressure flow this includes friction loss calculations by solving 
+    the Darcy-Weisbach equation for head loss, flow or diameter, and 
+    plotting a Moody diagram. The Darcy-Weisbach friction factor is 
+    calculated using the Colebrook (or Colebrook-White equation), 
+    the basis of the Moody diagram, the original citation being 
+    Colebrook (1939) <doi:10.1680/ijoti.1939.13150>. For gravity flow, the
+    Manning equation is used, again solving for missing parameters. The 
+    derivation of and solutions using the Darcy-Weisbach equation and the
+    Manning equation are outlined in many fluid mechanics texts such as 
+    Finnemore and Franzini (2002, ISBN:978-0072432022). For the Manning equation
+    solutions, this package uses modifications of original code from the 'iemisc' 
+    package by Irucka Embry.
+License: GPL (>= 3)
+Depends: R (>= 3.6.0)
+Encoding: UTF-8
+LazyData: true
+Imports: ggplot2, grid, reshape2
+Suggests:
+RoxygenNote: 7.0.2
+NeedsCompilation: no
+Packaged: 2020-08-02 03:38:07 UTC; edwinmaurer
+Repository: CRAN
+Date/Publication: 2020-08-02 04:50:02 UTC

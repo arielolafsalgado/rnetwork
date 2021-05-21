@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package PCRedux</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Quantitative Polymerase Chain Reaction (qPCR) Data Mining and Machine Learning Toolkit [R package PCRedux version 1.0-6]" />
+<meta name="citation_author1" content="Stefan Roediger" />
+<meta name="citation_author2" content="Michal Burdukiewicz" />
+<meta name="citation_author3" content="Andrej-Nikolai Spiess" />
+<meta name="citation_author4" content="Konstantin A. Blagodatskikh" />
+<meta name="citation_publication_date" content="2020-03-06" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=PCRedux" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=PCRedux" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="PCRedux: Quantitative Polymerase Chain Reaction (qPCR) Data Mining and Machine Learning Toolkit" />
+<meta name="og:description" content="Extracts features from amplification curve data of quantitative Polymerase Chain Reactions (qPCR) (Pabinger S. et al. (2014) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.bdq.2014.08.002&quot;&gt;doi:10.1016/j.bdq.2014.08.002&lt;/a&gt;&amp;gt;) for machine learning purposes. Helper functions prepare the amplification curve data for processing as functional data (e.g., Hausdorff distance) or enable the plotting of amplification curve classes (negative, ambiguous, positive). The hookreg() and hookregNL() functions (Burdukiewicz M. et al. (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.bdq.2018.08.001&quot;&gt;doi:10.1016/j.bdq.2018.08.001&lt;/a&gt;&amp;gt;) can be used to predict amplification curves with an hook effect-like curvature. The pcrfit_single() function can be used to extract features from an amplification curve." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=PCRedux" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>PCRedux: Quantitative Polymerase Chain Reaction (qPCR) Data Mining and
+Machine Learning Toolkit</h2>
+<p>Extracts features from amplification curve data of quantitative Polymerase Chain Reactions (qPCR) (Pabinger S. et al. (2014) &lt;<a href="https://doi.org/10.1016%2Fj.bdq.2014.08.002">doi:10.1016/j.bdq.2014.08.002</a>&gt;) for machine learning purposes. Helper functions prepare the amplification curve data for processing as functional data (e.g., Hausdorff distance) or enable the plotting of amplification curve classes (negative, ambiguous, positive). The hookreg() and hookregNL() functions (Burdukiewicz M. et al. (2018) &lt;<a href="https://doi.org/10.1016%2Fj.bdq.2018.08.001">doi:10.1016/j.bdq.2018.08.001</a>&gt;) can be used to predict amplification curves with an hook effect-like curvature. The pcrfit_single() function can be used to extract features from an amplification curve.</p>
+<table summary="Package PCRedux summary">
+<tr>
+<td>Version:</td>
+<td>1.0-6</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../bcp/index.html">bcp</a>, <a href="../changepoint/index.html">changepoint</a>, <a href="../chipPCR/index.html">chipPCR</a>, <a href="../ecp/index.html">ecp</a>, <a href="../fda.usc/index.html">fda.usc</a>, <a href="../MBmca/index.html">MBmca</a>, <a href="../pbapply/index.html">pbapply</a>, <a href="../pracma/index.html">pracma</a>, <a href="../qpcR/index.html">qpcR</a>, <a href="../robustbase/index.html">robustbase</a>, <a href="../shiny/index.html">shiny</a>, stats, utils, <a href="../zoo/index.html">zoo</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../DT/index.html">DT</a>, FFTrees, <a href="../knitr/index.html">knitr</a>, <a href="../RDML/index.html">RDML</a>, <a href="../randomForest/index.html">randomForest</a>, <a href="../readxl/index.html">readxl</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../spelling/index.html">spelling</a>, <a href="../testthat/index.html">testthat</a>, <a href="../xtable/index.html">xtable</a>, <a href="../future/index.html">future</a>, <a href="../listenv/index.html">listenv</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-03-06</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Stefan Roediger <a href="https://orcid.org/0000-0002-1441-6512"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [cre, aut],
+  Michal Burdukiewicz
+    <a href="https://orcid.org/0000-0001-8926-582X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Andrej-Nikolai Spiess [aut],
+  Konstantin A. Blagodatskikh [aut],
+  Dominik Rafacz [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Stefan Roediger  &#x3c;&#x73;&#x74;&#x65;&#x66;&#x61;&#x6e;&#x2e;&#x72;&#x6f;&#x65;&#x64;&#x69;&#x67;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x62;&#x2d;&#x74;&#x75;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/PCRuniversum/PCRedux/issues">https://github.com/PCRuniversum/PCRedux/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://CRAN.R-project.org/package=PCRedux">https://CRAN.R-project.org/package=PCRedux</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="NEWS">NEWS</a> <a href="ChangeLog">ChangeLog</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_PCRedux.html">PCRedux results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package PCRedux downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="PCRedux.pdf"> PCRedux.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/PCRedux.pdf">PCRedux package - an overview</a><br/>
+<a href="vignettes/SI1.pdf">Algorithms for Automatized Detection of Hook Effect-bearing Amplification Curves</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/PCRedux_1.0-6.tar.gz"> PCRedux_1.0-6.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/PCRedux_1.0-6.zip">PCRedux_1.0-6.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/PCRedux_1.0-6.zip">PCRedux_1.0-6.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/PCRedux_1.0-6.zip">PCRedux_1.0-6.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/PCRedux_1.0-6.tgz">PCRedux_1.0-6.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/PCRedux_1.0-6.tgz">PCRedux_1.0-6.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/PCRedux"> PCRedux archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=PCRedux"><samp>https://CRAN.R-project.org/package=PCRedux</samp></a>
+to link to this page.</p>
+</body>
+</html>

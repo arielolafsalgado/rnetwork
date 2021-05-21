@@ -1,0 +1,45 @@
+Package: RNeXML
+Type: Package
+Title: Semantically Rich I/O for the 'NeXML' Format
+Version: 2.0.2
+Authors@R: c(person("Carl", "Boettiger", role = c("cre", "aut"),
+    email="cboettig@gmail.com"), person("Scott", "Chamberlain", role =
+    "aut"), person("Hilmar", "Lapp", role = "aut"), person("Kseniia",
+    "Shumelchyk", role = "aut"), person("Rutger", "Vos", role = "aut"))
+Description: Provides access to phyloinformatic data in NeXML format.  The
+    package should add new functionality to R such as the possibility to
+    manipulate NeXML objects in more various and refined way and compatibility
+    with 'ape' objects.
+URL: https://github.com/ropensci/RNeXML
+BugReports: https://github.com/ropensci/RNeXML/issues
+License: BSD_3_clause + file LICENSE
+Additional_repositories: http://www.omegahat.org/R,
+        http://carlboettiger.info/drat
+VignetteBuilder: knitr
+Suggests: rrdf (>= 2.0.2), geiger (>= 2.0), phytools (>= 0.3.93), knitr
+        (>= 1.5), rfigshare (>= 0.3.0), knitcitations (>= 1.0.1),
+        testthat (>= 0.8.1), phylobase (>= 0.6.8), rmarkdown (>=
+        0.3.3), Sxslt (>= 0.91)
+Depends: R (>= 3.0.0), ape (>= 3.1), methods (>= 3.0.0)
+Imports: XML (>= 3.95), plyr (>= 1.8), taxize (>= 0.2.2), reshape2 (>=
+        1.2.2), httr (>= 0.3), uuid (>= 0.1-1)
+Collate: 'classes.R' 'add_basic_meta.R' 'add_characters.R' 'add_meta.R'
+        'add_namespaces.R' 'add_trees.R' 'character_classes.R'
+        'concatenate_nexml.R' 'get_basic_metadata.R' 'get_characters.R'
+        'get_metadata.R' 'get_namespaces.R' 'get_rdf.R' 'get_taxa.R'
+        'get_taxa_meta.R' 'get_trees.R' 'internal_get_node_maps.R'
+        'internal_isEmpty.R' 'internal_name_by_id.R'
+        'internal_nexml_id.R' 'meta.R' 'nexmlTree.R' 'nexml_add.R'
+        'nexml_get.R' 'nexml_methods.R' 'nexml_publish.R'
+        'nexml_read.R' 'nexml_validate.R' 'nexml_write.R' 'simmap.R'
+        'taxize_nexml.R'
+NeedsCompilation: no
+Packaged: 2015-04-30 23:11:15 UTC; rstudio
+Author: Carl Boettiger [cre, aut],
+  Scott Chamberlain [aut],
+  Hilmar Lapp [aut],
+  Kseniia Shumelchyk [aut],
+  Rutger Vos [aut]
+Maintainer: Carl Boettiger <cboettig@gmail.com>
+Repository: CRAN
+Date/Publication: 2015-05-01 09:28:14

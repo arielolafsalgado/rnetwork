@@ -1,0 +1,26 @@
+Package: QuantumClone
+Title: Clustering Mutations using High Throughput Sequencing (HTS) Data
+Version: 0.16.8.19
+Authors@R: person("Paul", "Deveau", role = c("aut", "cre"),
+		     email = "paul.deveau@curie.fr")
+Description: Using HTS data, clusters mutations in order to recreate putative
+    clones from the data provided. It requires genotype at the location of the
+    variant as well as the depth of coverage and number of reads supporting the
+    mutation. Additional information may be provided, such as the contamination
+    in the tumor sample. This package also provides a function QuantumCat() which
+    simulates data obtained from tumor sequencing.
+URL: https://github.com/DeveauP/QuantumClone
+BugReports: https://github.com/DeveauP/QuantumClone/issues
+Depends: R (>= 3.1.0), fpc, foreach, optimx, compiler
+Imports: doParallel, parallel, gridExtra, ggplot2
+Suggests: knitr,rmarkdown
+License: GPL-2
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-08-26 07:16:09 UTC; User
+Author: Paul Deveau [aut, cre]
+Maintainer: Paul Deveau <paul.deveau@curie.fr>
+Repository: CRAN
+Date/Publication: 2016-08-26 14:28:21

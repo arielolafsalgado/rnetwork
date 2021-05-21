@@ -1,0 +1,41 @@
+Package: biomartr
+Title: Genomic Data Retrieval
+Version: 0.8.0
+Authors@R: person("Hajk-Georg", "Drost",
+                role = c("aut", "cre"),
+                email = "hgd23@cam.ac.uk",
+                comment = c(ORCID = "http://orcid.org/0000-0002-1567-306X"))
+Description: Perform large scale genomic data retrieval and functional annotation retrieval. This package aims to provide users with a standardized
+                way to automate genome, proteome, 'RNA', coding sequence ('CDS'), 'GFF', and metagenome
+                retrieval from 'NCBI RefSeq', 'NCBI Genbank', 'ENSEMBL', 'ENSEMBLGENOMES',
+                and 'UniProt' databases. Furthermore, an interface to the 'BioMart' database
+                (Smedley et al. (2009) <doi:10.1186/1471-2164-10-22>) allows users to retrieve
+                functional annotation for genomic loci. In addition, users can download entire databases such
+                as 'NCBI RefSeq' (Pruitt et al. (2007) <doi:10.1093/nar/gkl842>), 'NCBI nr',
+                'NCBI nt', 'NCBI Genbank' (Benson et al. (2013) <doi:10.1093/nar/gks1195>), etc. as
+                well as 'ENSEMBL' and 'ENSEMBLGENOMES' with only one command.
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Depends: R (>= 3.1.1)
+Imports: biomaRt, Biostrings, curl, tibble, jsonlite, data.table (>=
+        1.9.4), dplyr (>= 0.3.0), readr (>= 0.2.2), downloader (>=
+        0.3), RCurl (>= 1.95-4.5), XML (>= 3.98-1.1), httr (>= 0.6.1),
+        stringr (>= 0.6.2), purrr
+Suggests: knitr (>= 1.6), rmarkdown (>= 0.3.3), devtools (>= 1.6.1),
+        testthat, seqinr, magrittr
+License: GPL-2
+LazyData: true
+URL: https://github.com/ropensci/biomartr
+BugReports: https://github.com/ropensci/biomartr/issues
+RoxygenNote: 6.0.1
+Encoding: UTF-8
+X-schema.org-keywords: BioMart, genomic-data-retrieval,
+        annotation-retrieval, database-retrieval, NCBI, ENSEMBL,
+        biological-data-retrieval
+X-schema.org-applicationCategory: Data Access
+X-schema.org-isPartof: "ropensci.org"
+Packaged: 2018-06-27 16:35:20 UTC; h-gd
+Author: Hajk-Georg Drost [aut, cre] (<https://orcid.org/0000-0002-1567-306X>)
+Maintainer: Hajk-Georg Drost <hgd23@cam.ac.uk>
+Repository: CRAN
+Date/Publication: 2018-06-27 17:14:11 UTC

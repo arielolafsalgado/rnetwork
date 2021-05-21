@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package koRpus</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="An R Package for Text Analysis [R package koRpus version 0.13-3]" />
+<meta name="citation_author" content="Meik Michalke" />
+<meta name="citation_publication_date" content="2020-10-15" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=koRpus" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=koRpus" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="koRpus: An R Package for Text Analysis" />
+<meta name="og:description" content="A set of tools to analyze texts. Includes, amongst others, functions for automatic language detection, hyphenation, several indices of lexical diversity (e.g., type token ratio, HD-D/vocd-D, MTLD) and readability (e.g., Flesch, SMOG, LIX, Dale-Chall). Basic import functions for language corpora are also provided, to enable frequency analyses (supports Celex and Leipzig Corpora Collection file formats) and measures like tf-idf. Note: For full functionality a local installation of TreeTagger is recommended. It is also recommended to not load this package directly, but by loading one of the available language support packages from the 'l10n' repository &amp;lt;&lt;a href=&quot;https://undocumeantit.github.io/repos/l10n/&quot;&gt;https://undocumeantit.github.io/repos/l10n/&lt;/a&gt;&amp;gt;. 'koRpus' also includes a plugin for the R GUI and IDE RKWard, providing graphical dialogs for its basic features. The respective R package 'rkward' cannot be installed directly from a repository, as it is a part of RKWard. To make full use of this feature, please install RKWard from &amp;lt;&lt;a href=&quot;https://rkward.kde.org&quot;&gt;https://rkward.kde.org&lt;/a&gt;&amp;gt; (plugins are detected automatically). Due to some restrictions on CRAN, the full package sources are only available from the project homepage. To ask for help, report bugs, request features, or discuss the development of the package, please subscribe to the koRpus-dev mailing list (&amp;lt;&lt;a href=&quot;https://korpusml.reaktanz.de&quot;&gt;https://korpusml.reaktanz.de&lt;/a&gt;&amp;gt;)." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=koRpus" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>koRpus: An R Package for Text Analysis</h2>
+<p>A set of tools to analyze texts. Includes, amongst others,
+        functions for automatic language detection, hyphenation, several
+        indices of lexical diversity (e.g., type token ratio, HD-D/vocd-D,
+        MTLD) and readability (e.g., Flesch, SMOG, LIX, Dale-Chall). Basic
+        import functions for language corpora are also provided, to enable
+        frequency analyses (supports Celex and Leipzig Corpora Collection
+        file formats) and measures like tf-idf. Note: For full
+        functionality a local installation of TreeTagger is recommended. It
+        is also recommended to not load this package directly, but by
+        loading one of the available language support packages from the
+        'l10n' repository &lt;<a href="https://undocumeantit.github.io/repos/l10n/">https://undocumeantit.github.io/repos/l10n/</a>&gt;.
+        'koRpus' also includes a plugin for the R GUI and IDE RKWard,
+        providing graphical dialogs for its basic features. The respective
+        R package 'rkward' cannot be installed directly from a repository,
+        as it is a part of RKWard. To make full use of this feature, please
+        install RKWard from &lt;<a href="https://rkward.kde.org">https://rkward.kde.org</a>&gt; (plugins are detected
+        automatically). Due to some restrictions on CRAN, the full package
+        sources are only available from the project homepage. To ask for
+        help, report bugs, request features, or discuss the development of
+        the package, please subscribe to the koRpus-dev mailing list
+        (&lt;<a href="https://korpusml.reaktanz.de">https://korpusml.reaktanz.de</a>&gt;).</p>
+<table summary="Package koRpus summary">
+<tr>
+<td>Version:</td>
+<td>0.13-3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0.0), <a href="../sylly/index.html">sylly</a> (&ge; 0.1-6)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../data.table/index.html">data.table</a>, methods, <a href="../Matrix/index.html">Matrix</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../tm/index.html">tm</a>, <a href="../SnowballC/index.html">SnowballC</a>, <a href="../shiny/index.html">shiny</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, koRpus.lang.de, <a href="../koRpus.lang.en/index.html">koRpus.lang.en</a>, koRpus.lang.es, koRpus.lang.fr, koRpus.lang.it, koRpus.lang.nl, koRpus.lang.pt, koRpus.lang.ru</td>
+</tr>
+<tr>
+<td>Enhances:</td>
+<td>rkward</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-15</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Meik Michalke [aut, cre],
+  Earl Brown [ctb],
+  Alberto Mirisola [ctb],
+  Alexandre Brulet [ctb],
+  Laura Hauser [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Meik Michalke  &#x3c;&#x6d;&#x65;&#x69;&#x6b;&#x2e;&#x6d;&#x69;&#x63;&#x68;&#x61;&#x6c;&#x6b;&#x65;&#x20;&#x61;&#x74;&#x20;&#x68;&#x68;&#x75;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/unDocUMeantIt/koRpus/issues">https://github.com/unDocUMeantIt/koRpus/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL (&ge; 3)</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://reaktanz.de/?c=hacking&amp;amp;s=koRpus">https://reaktanz.de/?c=hacking&amp;s=koRpus</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">koRpus citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news.html">NEWS</a> <a href="ChangeLog">ChangeLog</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/NaturalLanguageProcessing.html">NaturalLanguageProcessing</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_koRpus.html">koRpus results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package koRpus downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="koRpus.pdf"> koRpus.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/koRpus_vignette.html">Using the koRpus Package for Text Analysis</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/koRpus_0.13-3.tar.gz"> koRpus_0.13-3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/koRpus_0.13-3.zip">koRpus_0.13-3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/koRpus_0.13-3.zip">koRpus_0.13-3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/koRpus_0.13-3.zip">koRpus_0.13-3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/koRpus_0.13-3.tgz">koRpus_0.13-3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/koRpus_0.13-3.tgz">koRpus_0.13-3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/koRpus"> koRpus archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package koRpus reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../koRpus.lang.en/index.html">koRpus.lang.en</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../textstem/index.html">textstem</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../qdap/index.html">qdap</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=koRpus"><samp>https://CRAN.R-project.org/package=koRpus</samp></a>
+to link to this page.</p>
+</body>
+</html>

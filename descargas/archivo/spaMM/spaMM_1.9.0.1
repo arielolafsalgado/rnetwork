@@ -1,0 +1,33 @@
+Package: spaMM
+Type: Package
+Title: Mixed Models, Particularly Spatial GLMMs
+Encoding: UTF-8
+Version: 1.9.0.1
+Date: 2016-05-24
+Authors@R: c(person("François", "Rousset", role = c("aut", "cre", "cph"),
+                     email = "francois.rousset@umontpellier.fr"),
+              person("Jean-Baptiste", "Ferdy", role = c("aut","cph")),
+              person("Alexandre", "Courtiol", role = "ctb"),
+              person("Dirk", "Eddelbuettel", role = "ctb", comment = "ziggurat rnorm sources"),
+              person("GSL authors", role = "ctb", comment = "src/gsl_bessel.*")
+              )
+Maintainer: François Rousset <francois.rousset@umontpellier.fr>
+Imports: methods, stats, graphics, Matrix, MASS, lpSolveAPI (>=
+        5.5.0.14), proxy, geometry (>= 0.3.6), Rcpp (>= 0.11.0), nlme,
+        mvtnorm, nloptr
+LinkingTo: Rcpp, RcppEigen
+Suggests: maps, testthat, lme4, rsae, ff, rasterVis, rgdal, rcdd
+Depends: R (>= 3.1.0)
+NeedsCompilation: yes
+Description: Inference in mixed models, including GLMMs with spatial correlations and models with non-Gaussian random effects (e.g., Beta Binomial, or negative-binomial mixed models). Heteroscedasticity can further be fitted by a linear model. The algorithms are currently various Laplace approximations methods for ML or REML, in particular h-likelihood and penalized-likelihood methods.  
+License: CeCILL-2
+URL: http://www.r-project.org,
+        http://kimura.univ-montp2.fr/~rousset/spaMM.htm
+Packaged: 2016-07-10 09:42:40 UTC; ripley
+Author: François Rousset [aut, cre, cph],
+  Jean-Baptiste Ferdy [aut, cph],
+  Alexandre Courtiol [ctb],
+  Dirk Eddelbuettel [ctb] (ziggurat rnorm sources),
+  GSL authors [ctb] (src/gsl_bessel.*)
+Repository: CRAN
+Date/Publication: 2016-07-10 12:00:56

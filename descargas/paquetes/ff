@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package ff</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=ff" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="ff: Memory-Efficient Storage of Large Data on Disk and Fast Access Functions" />
+<meta name="og:description" content="The ff package provides data structures that are stored on disk but behave (almost) as if they were in RAM by transparently mapping only a section (pagesize) in main memory - the effective virtual memory consumption per ff object. ff supports R's standard atomic data types 'double', 'logical', 'raw' and 'integer' and non-standard atomic types boolean (1 bit), quad (2 bit unsigned), nibble (4 bit unsigned), byte (1 byte signed with NAs), ubyte (1 byte unsigned), short (2 byte signed with NAs), ushort (2 byte unsigned), single (4 byte float with NAs). For example 'quad' allows efficient storage of genomic data as an 'A','T','G','C' factor. The unsigned types support 'circular' arithmetic. There is also support for close-to-atomic types 'factor', 'ordered', 'POSIXct', 'Date' and custom close-to-atomic types. ff not only has native C-support for vectors, matrices and arrays with flexible dimorder (major column-order, major row-order and generalizations for arrays). There is also a ffdf class not unlike data.frames and import/export filters for csv files. ff objects store raw data in binary flat files in native encoding, and complement this with metadata stored in R as physical and virtual attributes. ff objects have well-defined hybrid copying semantics, which gives rise to certain performance improvements through virtualization. ff objects can be stored and reopened across R sessions. ff files can be shared by multiple ff R objects (using different data en/de-coding schemes) in the same process or from multiple R processes to exploit parallelism. A wide choice of finalizer options allows to work with 'permanent' files as well as creating/removing 'temporary' ff files completely transparent to the user. On certain OS/Filesystem combinations, creating the ff files works without notable delay thanks to using sparse file allocation. Several access optimization techniques such as Hybrid Index Preprocessing and Virtualization are implemented to achieve good performance even with large datasets, for example virtual matrix transpose without touching a single byte on disk. Further, to reduce disk I/O, 'logicals' and non-standard data types get stored native and compact on binary flat files i.e. logicals take up exactly 2 bits to represent TRUE, FALSE and NA. Beyond basic access functions, the ff package also provides compatibility functions that facilitate writing code for ff and ram objects and support for batch processing on ff objects (e.g. as.ram, as.ff, ffapply). ff interfaces closely with functionality from package 'bit': chunked looping, fast bit operations and coercions between different objects that can store subscript information ('bit', 'bitwhich', ff 'boolean', ri range index, hi hybrid index). This allows to work interactively with selections of large datasets and quickly modify selection criteria. Further high-performance enhancements can be made available upon request. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=ff" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>ff: Memory-Efficient Storage of Large Data on Disk and Fast Access
+Functions</h2>
+<p>The ff package provides data structures that are stored on
+	disk but behave (almost) as if they were in RAM by transparently 
+	mapping only a section (pagesize) in main memory - the effective 
+	virtual memory consumption per ff object. ff supports R's standard 
+	atomic data types 'double', 'logical', 'raw' and 'integer' and 
+	non-standard atomic types boolean (1 bit), quad (2 bit unsigned), 
+	nibble (4 bit unsigned), byte (1 byte signed with NAs), ubyte (1 byte 
+	unsigned), short (2 byte signed with NAs), ushort (2 byte unsigned), 
+	single (4 byte float with NAs). For example 'quad' allows efficient 
+	storage of genomic data as an 'A','T','G','C' factor. The unsigned 
+	types support 'circular' arithmetic. There is also support for 
+	close-to-atomic types 'factor', 'ordered', 'POSIXct', 'Date' and 
+	custom close-to-atomic types. 
+	ff not only has native C-support for vectors, matrices and arrays 
+	with flexible dimorder (major column-order, major row-order and 
+	generalizations for arrays). There is also a ffdf class not unlike 
+	data.frames and import/export filters for csv files.
+	ff objects store raw data in binary flat files in native encoding,
+	and complement this with metadata stored in R as physical and virtual
+	attributes. ff objects have well-defined hybrid copying semantics, 
+	which gives rise to certain performance improvements through 
+	virtualization. ff objects can be stored and reopened across R 
+	sessions. ff files can be shared by multiple ff R objects 
+	(using different data en/de-coding schemes) in the same process 
+	or from multiple R processes to exploit parallelism. A wide choice of 
+	finalizer options allows to work with 'permanent' files as well as 
+	creating/removing 'temporary' ff files completely transparent to the 
+	user. On certain OS/Filesystem combinations, creating the ff files
+	works without notable delay thanks to using sparse file allocation.
+	Several access optimization techniques such as Hybrid Index 
+	Preprocessing and Virtualization are implemented to achieve good 
+	performance even with large datasets, for example virtual matrix 
+	transpose without touching a single byte on disk. Further, to reduce 
+	disk I/O, 'logicals' and non-standard data types get stored native and 
+	compact on binary flat files i.e. logicals take up exactly 2 bits to 
+	represent TRUE, FALSE and NA. 
+	Beyond basic access functions, the ff package also provides 
+	compatibility functions that facilitate writing code for ff and ram 
+	objects and support for batch processing on ff objects (e.g. as.ram, 
+	as.ff, ffapply). ff interfaces closely with functionality from package 
+	'bit': chunked looping, fast bit operations and coercions between 
+	different objects that can store subscript information ('bit', 
+	'bitwhich', ff 'boolean', ri range index, hi hybrid index). This allows
+	to work interactively with selections of large datasets and quickly 
+	modify selection criteria. 
+	Further high-performance enhancements can be made available upon request. </p>
+<table summary="Package ff summary">
+<tr>
+<td>Version:</td>
+<td>4.0.4</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10.1), <a href="../bit/index.html">bit</a> (&ge; 4.0.0), utils</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../biglm/index.html">biglm</a>, <a href="../testthat/index.html">testthat</a> (&ge; 0.11.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-13</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Daniel Adler [aut],
+	Christian Gläser [aut],
+	Oleg Nenadic  [aut], 
+	Jens Oehlschlägel [aut, cre],
+	Martijn Schuemie [aut],
+	Walter Zucchini  [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Jens Oehlschlägel  &#x3c;&#x4a;&#x65;&#x6e;&#x73;&#x2e;&#x4f;&#x65;&#x68;&#x6c;&#x73;&#x63;&#x68;&#x6c;&#x61;&#x65;&#x67;&#x65;&#x6c;&#x20;&#x61;&#x74;&#x20;&#x74;&#x72;&#x75;&#x65;&#x63;&#x6c;&#x75;&#x73;&#x74;&#x65;&#x72;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> | file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/truecluster/ff">https://github.com/truecluster/ff</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/HighPerformanceComputing.html">HighPerformanceComputing</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_ff.html">ff results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package ff downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="ff.pdf"> ff.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/ff_4.0.4.tar.gz"> ff_4.0.4.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/ff_4.0.4.zip">ff_4.0.4.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/ff_4.0.4.zip">ff_4.0.4.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/ff_4.0.4.zip">ff_4.0.4.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/ff_4.0.4.tgz">ff_4.0.4.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/ff_4.0.4.tgz">ff_4.0.4.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/ff"> ff archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package ff reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="http://www.bioconductor.org/packages/release/bioc/html/ADaCGH2.html"><span class="BioC">ADaCGH2</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/cn.farms.html"><span class="BioC">cn.farms</span></a>, <a href="../ETLUtils/index.html">ETLUtils</a>, <a href="../ffbase/index.html">ffbase</a>, <a href="../geoTS/index.html">geoTS</a>, <a href="../PopGenome/index.html">PopGenome</a>, <a href="../propagate/index.html">propagate</a>, <a href="../RecordLinkage/index.html">RecordLinkage</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/RnBeads.html"><span class="BioC">RnBeads</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../BGData/index.html">BGData</a>, <a href="../bootSVD/index.html">bootSVD</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/crlmm.html"><span class="BioC">crlmm</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/GGtools.html"><span class="BioC">GGtools</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/gQTLBase.html"><span class="BioC">gQTLBase</span></a>, <a href="../Haplin/index.html">Haplin</a>, <a href="../IsoGene/index.html">IsoGene</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/IsoGeneGUI.html"><span class="BioC">IsoGeneGUI</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/MinimumDistance.html"><span class="BioC">MinimumDistance</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/oligo.html"><span class="BioC">oligo</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/oligoClasses.html"><span class="BioC">oligoClasses</span></a>, <a href="../omicwas/index.html">omicwas</a>, <a href="../rmgarch/index.html">rmgarch</a>, <a href="../SFtools/index.html">SFtools</a>, <a href="../symDMatrix/index.html">symDMatrix</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="http://www.bioconductor.org/packages/release/bioc/html/ArrayTV.html"><span class="BioC">ArrayTV</span></a>, <a href="../bamlss/index.html">bamlss</a>, <a href="../bigchess/index.html">bigchess</a>, <a href="../bit/index.html">bit</a>, <a href="../credsubs/index.html">credsubs</a>, <a href="../LinkedMatrix/index.html">LinkedMatrix</a>, <a href="../nat.nblast/index.html">nat.nblast</a>, <a href="../RMOA/index.html">RMOA</a>, <a href="../SpaDES.tools/index.html">SpaDES.tools</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;enhances:</td>
+<td><a href="../prediction/index.html">prediction</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=ff"><samp>https://CRAN.R-project.org/package=ff</samp></a>
+to link to this page.</p>
+</body>
+</html>

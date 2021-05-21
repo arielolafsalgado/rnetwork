@@ -1,0 +1,30 @@
+Package: MSPRT
+Type: Package
+Title: Modified Sequential Probability Ratio Test (MSPRT)
+Version: 1.0
+Date: 2018-09-11
+Authors@R: c(person("Sandipan", "Pramanik", email = "sandy@stat.tamu.edu",
+                  role = c("aut", "cre")),
+            person("Valen E.", "Johnson", role = "aut"),
+            person("Anirban", "Bhattacharya", role = "aut") )
+Author: Sandipan Pramanik [aut, cre],
+  Valen E. Johnson [aut],
+  Anirban Bhattacharya [aut]
+Maintainer: Sandipan Pramanik <sandy@stat.tamu.edu>
+Description: A modified SPRT (MSPRT) can be designed and implemented with the help of this package. In a
+             MSPRT design, the maximum sample size of an experiment is fixed prior to the start of an
+             experiment, the alternative hypothesis used to define the rejection region of the test is
+             derived from the size of the test (Type I error), the maximum available sample size (N), and
+             the targeted Type 2 error (equal to 1 minus the power) is also prespecified. Given these values,
+             the MSPRT is defined in a manner very similar to Wald's initial proposal. This test can reduce
+             the average sample size required to perform statistical hypothesis tests at the specified levels
+             of significance and power. This package facilitates the carrying out of one sample Z tests, T Tests
+             and tests of binomial success probabilities. A user guidance for this software package is provided
+             here and also in the supplemental information.
+Imports: nleqslv, ggplot2, foreach, iterators, parallel, doParallel,
+        datasets, graphics, grDevices, methods, stats, utils
+License: GPL (>= 2)
+NeedsCompilation: no
+Packaged: 2018-09-11 16:56:52 UTC; sandipanpramanik
+Repository: CRAN
+Date/Publication: 2018-09-17 14:50:03 UTC

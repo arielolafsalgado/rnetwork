@@ -1,0 +1,30 @@
+Package: HiClimR
+Version: 2.1.5
+Title: Hierarchical Climate Regionalization
+Author: Hamada S. Badr [aut, cre], Benjamin F. Zaitchik [aut], Amin K. Dezfuli [aut]
+Description: A tool for Hierarchical Climate Regionalization applicable to any correlation-based clustering.
+             It adds several features and a new clustering method (called, 'regional' linkage) to hierarchical
+             clustering in R ('hclust' function in 'stats' library): data regridding, coarsening spatial resolution,
+             geographic masking, contiguity-constrained clustering, data filtering by mean and/or variance
+             thresholds, data preprocessing (detrending, standardization, and PCA), faster correlation function
+             with preliminary big data support, different clustering methods, hybrid hierarchical clustering,
+             multivariate clustering (MVC), cluster validation, visualization of regionalization results, and
+             exporting region map and mean timeseries into NetCDF-4 file.
+License: GPL (>= 2)
+URL: https://github.com/hsbadr/HiClimR
+BugReports: https://github.com/hsbadr/HiClimR/issues
+Maintainer: Hamada S. Badr <badr@jhu.edu>
+Depends: R (>= 2.10)
+Imports: graphics, grDevices, stats, utils, ncdf4
+Suggests: devtools, knitr, rmarkdown, roxygen2
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 6.1.1
+LazyData: yes
+LazyLoad: yes
+ByteCompile: yes
+NeedsCompilation: yes
+SystemRequirements: NetCDF (>= 4.1)
+Packaged: 2019-12-10 16:29:52 UTC; hbadr1
+Repository: CRAN
+Date/Publication: 2019-12-10 17:20:02 UTC

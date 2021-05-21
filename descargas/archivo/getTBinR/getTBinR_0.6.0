@@ -1,0 +1,48 @@
+Type: Package
+Package: getTBinR
+Title: Access and Summarise World Health Organisation Tuberculosis data
+Version: 0.6.0
+Authors@R: 
+    person(given = "Sam Abbott",
+           role = c("aut", "cre"),
+           email = "contact@samabbott.co.uk",
+           comment = c(ORCID = "0000-0001-8057-8037"))
+Description: Quickly and easily import analysis ready
+    Tuberculosis (TB) burden data, from the World Health Organisation
+    (WHO), into R. The aim of getTBinR is to allow researchers, and other
+    interested individuals, to quickly and easily gain access to a
+    detailed TB data set and to start using it to derive key insights. It
+    provides a consistent set of tools that can be used to rapidly
+    evaluate hypotheses on a widely used data set before they are explored
+    further using more complex methods or more detailed data. These tools
+    include: generic plotting and mapping functions; a data dictionary
+    search tool; an interactive shiny dashboard; and an automated, country
+    level, TB report. For newer R users, this package reduces the barrier
+    to entry by handling data import, munging, and visualisation. All
+    plotting and mapping functions are built with ggplot2 so can be
+    readily extended.
+License: GPL-3 | file LICENSE
+URL: https://www.samabbott.co.uk/getTBinR,
+        https://github.com/seabbs/getTBinR
+BugReports: https://github.com/seabbs/getTBinR/issues
+Depends: R (>= 3.3.0)
+Imports: data.table (>= 1.12.2), dplyr (>= 0.8.1), ggplot2 (>= 3.1.1),
+        ggthemes (>= 4.2.0), magrittr (>= 1.5), plotly (>= 4.9.0),
+        purrr (>= 0.3.2), scales (>= 1.0.0), tibble (>= 2.1.1), tidyr
+        (>= 0.8.3), viridis (>= 0.5.1), rlang (>= 0.3.4)
+Suggests: spelling (>= 2.1), covr (>= 3.2.1), devtools (>= 2.0.2),
+        usethis (>= 1.5.0), knitr (>= 1.23), pkgnet (>= 0.4.0),
+        rmarkdown (>= 1.12), shiny (>= 1.3.2), shinycssloaders (>=
+        0.2.0), shinydashboard (>= 0.7.1), shinyWidgets (>= 0.4.8),
+        testthat (>= 2.1.1), tidyverse (>= 1.2.1), vdiffr (>= 0.3.0)
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Language: en-GB
+NeedsCompilation: no
+Packaged: 2019-05-23 12:33:38 UTC; seabbs
+Author: Sam Abbott [aut, cre] (<https://orcid.org/0000-0001-8057-8037>)
+Maintainer: Sam Abbott <contact@samabbott.co.uk>
+Repository: CRAN
+Date/Publication: 2019-05-23 13:00:04 UTC

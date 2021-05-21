@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package rerf</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Randomer Forest [R package rerf version 2.0.4]" />
+<meta name="citation_author1" content="James Browne" />
+<meta name="citation_author2" content="Tyler Tomita" />
+<meta name="citation_publication_date" content="2019-03-15" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=rerf" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=rerf" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="rerf: Randomer Forest" />
+<meta name="og:description" content="R-RerF (aka Randomer Forest (RerF) or Random Projection Forests) is an algorithm developed by Tomita (2016) &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1506.03410v2&quot;&gt;arXiv:1506.03410v2&lt;/a&gt;&amp;gt; which is similar to Random Forest - Random Combination (Forest-RC) developed by Breiman (2001) &amp;lt;&lt;a href=&quot;https://doi.org/10.1023%2FA%3A1010933404324&quot;&gt;doi:10.1023/A:1010933404324&lt;/a&gt;&amp;gt;. Random Forests create axis-parallel, or orthogonal trees. That is, the feature space is recursively split along directions parallel to the axes of the feature space. Thus, in cases in which the classes seem inseparable along any single dimension, Random Forests may be suboptimal. To address this, Breiman also proposed and characterized Forest-RC, which uses linear combinations of coordinates rather than individual coordinates, to split along. This package, 'rerf', implements RerF which is similar to Forest-RC. The difference between the two algorithms is where the random linear combinations occur: Forest-RC combines features at the per tree level whereas RerF takes linear combinations of coordinates at every node in the tree." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=rerf" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>rerf: Randomer Forest</h2>
+<p>R-RerF (aka Randomer Forest (RerF) or Random Projection
+  Forests) is an algorithm developed by Tomita (2016) &lt;<a href="https://arxiv.org/abs/1506.03410v2">arXiv:1506.03410v2</a>&gt;
+  which is similar to Random Forest - Random Combination (Forest-RC)
+  developed by Breiman (2001) &lt;<a href="https://doi.org/10.1023%2FA%3A1010933404324">doi:10.1023/A:1010933404324</a>&gt;.  Random
+  Forests create axis-parallel, or orthogonal trees. That is, the feature
+  space is recursively split along directions parallel to the axes of the
+  feature space. Thus, in cases in which the classes seem inseparable
+  along any single dimension, Random Forests may be suboptimal.  To
+  address this, Breiman also proposed and characterized Forest-RC, which
+  uses linear combinations of coordinates rather than individual
+  coordinates, to split along.  This package, 'rerf', implements RerF
+  which is similar to Forest-RC.  The difference between the two
+  algorithms is where the random linear combinations occur: Forest-RC
+  combines features at the per tree level whereas RerF takes linear
+  combinations of coordinates at every node in the tree.</p>
+<table summary="Package rerf summary">
+<tr>
+<td>Version:</td>
+<td>2.0.4</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3.0), <a href="../Rcpp/index.html">Rcpp</a> (&ge; 1.0.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>parallel, <a href="../RcppZiggurat/index.html">RcppZiggurat</a>, utils, stats, <a href="../dummies/index.html">dummies</a>, <a href="../mclust/index.html">mclust</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../roxygen2/index.html">roxygen2</a> (&ge; 5.0.0), <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-03-15</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Jesse Patsolic [ctb, cre],
+  Benjamin Falk [ctb],
+  Jaewon Chung [ctb],
+  James Browne [aut],
+  Tyler Tomita [aut],
+  Joshua Vogelstein [ths]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Jesse Patsolic  &#x3c;&#x73;&#x6f;&#x66;&#x74;&#x77;&#x61;&#x72;&#x65;&#x20;&#x61;&#x74;&#x20;&#x6e;&#x65;&#x75;&#x72;&#x6f;&#x64;&#x61;&#x74;&#x61;&#x2e;&#x69;&#x6f;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/neurodata/R-RerF/issues">https://github.com/neurodata/R-RerF/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a> | file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/neurodata/R-RerF">https://github.com/neurodata/R-RerF</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>GNU make</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_rerf.html">rerf results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package rerf downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="rerf.pdf"> rerf.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/rerf_2.0.4.tar.gz"> rerf_2.0.4.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/rerf_2.0.4.zip">rerf_2.0.4.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/rerf_2.0.4.zip">rerf_2.0.4.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/rerf_2.0.4.zip">rerf_2.0.4.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/rerf_2.0.4.tgz">rerf_2.0.4.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/rerf_2.0.4.tgz">rerf_2.0.4.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/rerf"> rerf archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=rerf"><samp>https://CRAN.R-project.org/package=rerf</samp></a>
+to link to this page.</p>
+</body>
+</html>

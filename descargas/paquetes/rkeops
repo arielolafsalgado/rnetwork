@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package rkeops</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Kernel Operations on the GPU, with Autodiff, without Memory Overflows [R package rkeops version 1.4.1.1]" />
+<meta name="citation_author1" content="Benjamin Charlier" />
+<meta name="citation_author2" content="Jean Feydy" />
+<meta name="citation_author3" content="Joan A. Glaunès" />
+<meta name="citation_author4" content="Ghislain Durif" />
+<meta name="citation_publication_date" content="2020-09-04" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=rkeops" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=rkeops" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="rkeops: Kernel Operations on the GPU, with Autodiff, without Memory Overflows" />
+<meta name="og:description" content="The 'KeOps' library lets you compute generic reductions of very large arrays whose entries are given by a mathematical formula. It combines a tiled reduction scheme with an automatic differentiation engine, and can be used through 'R', 'Matlab', 'NumPy' or 'PyTorch' backends. It is perfectly suited to the computation of Kernel dot products and the associated gradients, even when the full kernel matrix does not fit into the GPU memory." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=rkeops" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>rkeops: Kernel Operations on the GPU, with Autodiff, without Memory
+Overflows</h2>
+<p>The 'KeOps' library lets you compute generic reductions of very large arrays 
+    whose entries are given by a mathematical formula. It combines a tiled reduction scheme 
+    with an automatic differentiation engine, and can be used through 'R', 'Matlab', 'NumPy' or 
+    'PyTorch' backends. It is perfectly suited to the computation of Kernel dot products 
+    and the associated gradients, even when the full kernel matrix does not fit into 
+    the GPU memory.</p>
+<table summary="Package rkeops summary">
+<tr>
+<td>Version:</td>
+<td>1.4.1.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.1.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 1.0.1), <a href="../openssl/index.html">openssl</a> (&ge; 1.3), <a href="../stringr/index.html">stringr</a> (&ge; 1.4.0)</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 1.0.1), <a href="../RcppEigen/index.html">RcppEigen</a> (&ge; 0.3.3.5)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a> (&ge; 2.1.0), <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>OS_type:</td>
+<td>unix</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-04</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Benjamin Charlier [aut] (&lt;http://imag.umontpellier.fr/~charlier/&gt;),
+  Jean Feydy [aut] (&lt;https://www.math.ens.fr/~feydy/&gt;),
+  Joan A. Glaunès [aut] (&lt;https://www.mi.parisdescartes.fr/~glaunes/&gt;),
+  Ghislain Durif [aut, cre] (&lt;https://gdurif.perso.math.cnrs.fr/&gt;),
+  François-David Collin [ctb] (Development-related consulting and
+    support),
+  Daniel Frey [ctb] (Author of the included C++ library 'sequences')</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Ghislain Durif  &#x3c;&#x67;&#x64;&#x2e;&#x64;&#x65;&#x76;&#x20;&#x61;&#x74;&#x20;&#x6c;&#x69;&#x62;&#x65;&#x72;&#x74;&#x79;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x6e;&#x65;&#x74;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/getkeops/keops/issues">https://github.com/getkeops/keops/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>Copyright:</td>
+<td>see file <a href="COPYRIGHTS">COPYRIGHTS</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://www.kernel-operations.io/">https://www.kernel-operations.io/</a>,
+<a href="https://github.com/getkeops/keops/">https://github.com/getkeops/keops/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>C++11, cmake (&gt;= 3.10), clang (optional), CUDA
+(optional but recommended)</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_rkeops.html">rkeops results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package rkeops downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="rkeops.pdf"> rkeops.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/introduction_to_rkeops.html">Introduction to RKeOps</a><br/>
+<a href="vignettes/using_rkeops.html">RKeOps: R bindings for KeOps</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/rkeops_1.4.1.1.tar.gz"> rkeops_1.4.1.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/ReadMe">not available</a>, r-release: <a href="../../../bin/windows/contrib/4.0/ReadMe">not available</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/ReadMe">not available</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/rkeops_1.4.1.1.tgz">rkeops_1.4.1.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/rkeops_1.4.1.1.tgz">rkeops_1.4.1.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/rkeops"> rkeops archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=rkeops"><samp>https://CRAN.R-project.org/package=rkeops</samp></a>
+to link to this page.</p>
+</body>
+</html>

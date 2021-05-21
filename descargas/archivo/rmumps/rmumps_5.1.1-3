@@ -1,0 +1,26 @@
+Package: rmumps
+Type: Package
+Title: Wrapper for MUMPS Library
+Version: 5.1.1-3
+Date: 2017-09-19
+Author: Serguei Sokol
+Maintainer: Serguei Sokol <sokol@insa-toulouse.fr>
+Description: Some basic features of MUMPS (Multifrontal Massively Parallel
+	sparse direct Solver) are wrapped in a class whose methods can be used
+	for sequentially solving a sparse linear system (symmetric or not)
+	with one or many right hand sides (dense or sparse).
+	There is a possibility to do separately symbolic analysis,
+	LU (or LDL^t) factorization and system solving.
+License: GPL (>= 2)
+Imports: methods, Rcpp (>= 0.12.0)
+LinkingTo: Rcpp
+SystemRequirements: C++11, GNU Make
+NeedsCompilation: yes
+Biarch: yes
+Suggests: testthat, Matrix, slam
+BugReports: https://github.com/sgsokol/rmumps/issues
+URL: http://mumps.enseeiht.fr/, https://github.com/sgsokol/rmumps/
+RoxygenNote: 6.0.1
+Packaged: 2017-09-19 09:45:57 UTC; sokol
+Repository: CRAN
+Date/Publication: 2017-09-19 16:12:02 UTC

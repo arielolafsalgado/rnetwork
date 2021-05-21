@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package GET</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Global Envelopes [R package GET version 0.2]" />
+<meta name="citation_author1" content="Mari Myllymäki" />
+<meta name="citation_author2" content="Tomáš Mrkvička" />
+<meta name="citation_publication_date" content="2020-10-24" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=GET" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=GET" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="GET: Global Envelopes" />
+<meta name="og:description" content="Implementation of global envelopes for a set of general d-dimensional vectors T in various applications. A 100(1-alpha)% global envelope is a band bounded by two vectors such that the probability that T falls outside this envelope in any of the d points is equal to alpha. Global means that the probability is controlled simultaneously for all the d elements of the vectors. The global envelopes can be used for graphical Monte Carlo and permutation tests where the test statistic is a multivariate vector or function (e.g. goodness-of-fit testing for point patterns and random sets, functional analysis of variance, functional general linear model, n-sample test of correspondence of distribution functions), for central regions of functional or multivariate data (e.g. outlier detection, functional boxplot) and for global confidence and prediction bands (e.g. confidence band in polynomial regression, Bayesian posterior prediction). See Myllymäki and Mrkvička (2020) &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1911.06583&quot;&gt;arXiv:1911.06583&lt;/a&gt;&amp;gt;, Myllymäki et al. (2017) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Frssb.12172&quot;&gt;doi:10.1111/rssb.12172&lt;/a&gt;&amp;gt;, Mrkvička et al. (2017) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs11222-016-9683-9&quot;&gt;doi:10.1007/s11222-016-9683-9&lt;/a&gt;&amp;gt;, Mrkvička et al. (2020) &amp;lt;&lt;a href=&quot;https://doi.org/10.14736%2Fkyb-2020-3-0432&quot;&gt;doi:10.14736/kyb-2020-3-0432&lt;/a&gt;&amp;gt;, Mrkvička et al. (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs11009-019-09756-y&quot;&gt;doi:10.1007/s11009-019-09756-y&lt;/a&gt;&amp;gt;, Mrkvička et al. (2019) &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1902.04926&quot;&gt;arXiv:1902.04926&lt;/a&gt;&amp;gt;, Mrkvička et al. (2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.spasta.2016.04.005&quot;&gt;doi:10.1016/j.spasta.2016.04.005&lt;/a&gt;&amp;gt;, and Myllymäki et al. (2020) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.spasta.2020.100436&quot;&gt;doi:10.1016/j.spasta.2020.100436&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=GET" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>GET: Global Envelopes</h2>
+<p>Implementation of global envelopes for a set of general d-dimensional vectors T
+    in various applications. A 100(1-alpha)% global envelope is a band bounded by two
+    vectors such that the probability that T falls outside this envelope in any of the d
+    points is equal to alpha. Global means that the probability is controlled simultaneously
+    for all the d elements of the vectors. The global envelopes can be used for graphical
+    Monte Carlo and permutation tests where the test statistic is a multivariate vector or
+    function (e.g. goodness-of-fit testing for point patterns and random sets, functional
+    analysis of variance, functional general linear model, n-sample test of correspondence
+    of distribution functions), for central regions of functional or multivariate data (e.g.
+    outlier detection, functional boxplot) and for global confidence and prediction bands
+    (e.g. confidence band in polynomial regression, Bayesian posterior prediction). See
+    Myllymäki and Mrkvička (2020) &lt;<a href="https://arxiv.org/abs/1911.06583">arXiv:1911.06583</a>&gt;,
+    Myllymäki et al. (2017) &lt;<a href="https://doi.org/10.1111%2Frssb.12172">doi:10.1111/rssb.12172</a>&gt;,
+    Mrkvička et al. (2017) &lt;<a href="https://doi.org/10.1007%2Fs11222-016-9683-9">doi:10.1007/s11222-016-9683-9</a>&gt;,
+    Mrkvička et al. (2020) &lt;<a href="https://doi.org/10.14736%2Fkyb-2020-3-0432">doi:10.14736/kyb-2020-3-0432</a>&gt;,
+    Mrkvička et al. (2019) &lt;<a href="https://doi.org/10.1007%2Fs11009-019-09756-y">doi:10.1007/s11009-019-09756-y</a>&gt;,
+    Mrkvička et al. (2019) &lt;<a href="https://arxiv.org/abs/1902.04926">arXiv:1902.04926</a>&gt;,
+    Mrkvička et al. (2016) &lt;<a href="https://doi.org/10.1016%2Fj.spasta.2016.04.005">doi:10.1016/j.spasta.2016.04.005</a>&gt;, and
+    Myllymäki et al. (2020) &lt;<a href="https://doi.org/10.1016%2Fj.spasta.2020.100436">doi:10.1016/j.spasta.2020.100436</a>&gt;.</p>
+<table summary="Package GET summary">
+<tr>
+<td>Version:</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../ggplot2/index.html">ggplot2</a>, graphics, <a href="../gridExtra/index.html">gridExtra</a>, methods, parallel, <a href="../spatstat/index.html">spatstat</a>, stats, utils</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../gstat/index.html">gstat</a>, <a href="../sp/index.html">sp</a>, <a href="../fda/index.html">fda</a>, <a href="../fda.usc/index.html">fda.usc</a>, <a href="../mvtnorm/index.html">mvtnorm</a>, <a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-24</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Mari Myllymäki [aut, cre],
+  Tomáš Mrkvička [aut],
+  Pavel Grabarnik [ctb],
+  Ute Hahn [ctb],
+  Mikko Kuronen [ctb],
+  Michael Rost [ctb],
+  Henri Seijo [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Mari Myllymäki  &#x3c;&#x6d;&#x61;&#x72;&#x69;&#x2e;&#x6d;&#x79;&#x6c;&#x6c;&#x79;&#x6d;&#x61;&#x6b;&#x69;&#x20;&#x61;&#x74;&#x20;&#x6c;&#x75;&#x6b;&#x65;&#x2e;&#x66;&#x69;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">GET citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_GET.html">GET results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package GET downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="GET.pdf"> GET.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/GET.pdf">GET: Global envelopes in R</a><br/>
+<a href="vignettes/pointpatterns.pdf">GET: Point patterns</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/GET_0.2.tar.gz"> GET_0.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/GET_0.2.zip">GET_0.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/GET_0.2.zip">GET_0.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/GET_0.2.zip">GET_0.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/GET_0.2.tgz">GET_0.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/GET_0.2.tgz">GET_0.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/GET"> GET archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=GET"><samp>https://CRAN.R-project.org/package=GET</samp></a>
+to link to this page.</p>
+</body>
+</html>

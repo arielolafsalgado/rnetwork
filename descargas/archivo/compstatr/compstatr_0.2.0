@@ -1,0 +1,39 @@
+Package: compstatr
+Type: Package
+Title: Tools for St. Louis Crime Data
+Version: 0.2.0
+Authors@R: c(
+    person("Christopher", "Prener", ,"chris.prener@slu.edu", c("aut", "cre")),
+    person("Cree", "Foeller", ,"cree.foeller@slu.edu", c("aut")),
+    person("Taylor", "Braswell", , , c("com"))
+    )
+Description: Provides a set of tools for creating yearly data sets of St. Louis 
+    Metropolitan Police Department (SLMPD) crime data, which are available from
+    January 2008 onward as monthly CSV releases on their website 
+    (<http:www.slmpd.org/Crimereports.shtml>). Once data are validated and created 
+    (monthly data releases have varying numbers of columns 
+    as well as different column names and formats), 'compstatr' also provides 
+    functions for categorizing and mapping crimes in St. Louis. The categorization 
+    tools that are provided will also work with any police department that uses 5 
+    and 6 digit numeric codes to identify specific crimes. These data provide researchers
+    and policy makers detailed data for St. Louis, which in the last several years 
+    has had some of the highest or the highest violent crime rates in the United States.
+Depends: R (>= 3.3)
+License: GPL-3
+URL: https://github.com/slu-openGIS/compstatr
+BugReports: https://github.com/slu-openGIS/compstatr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Imports: dplyr, fs, httr, janitor, lubridate, purrr, rlang, readr,
+        rvest, sf, stringr, tibble, tidyr, xml2
+Suggests: testthat, knitr, rmarkdown, covr
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-08-07 21:24:42 UTC; prenercg
+Author: Christopher Prener [aut, cre],
+  Cree Foeller [aut],
+  Taylor Braswell [com]
+Maintainer: Christopher Prener <chris.prener@slu.edu>
+Repository: CRAN
+Date/Publication: 2019-08-07 21:40:02 UTC

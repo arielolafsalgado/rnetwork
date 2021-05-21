@@ -1,0 +1,28 @@
+Package: nabor
+Type: Package
+Title: Wraps libnabo, a fast K Nearest Neighbour library for low
+        dimensions
+Version: 0.4.2
+Date: 2014-09-02
+Author: Stephane Mangenat (for libnabo), Gregory Jefferis
+Maintainer: Gregory Jefferis <jefferis@gmail.com>
+Description: An R wrapper for libnabo, an exact or approximate k nearest
+    neighbour library which is optimised for low dimensional spaces (e.g. 3D).
+    libnabo has speed and space advantages over the ANN library wrapped by
+    package RANN. nabor includes a knn function that is designed as a drop-in
+    replacement for RANN::nn2. In addition, objects which include the k-d tree
+    search structure can be returned to speed up repeated queries of the same
+    set of target points.
+License: BSD_3_clause + file LICENSE
+Copyright: libnabo is copyright 2010--2011, Stephane Magnenat, ASL,
+        ETHZ, Switzerland <stephane at magnenat dot net>
+URL: https://github.com/jefferis/nabor
+        https://github.com/ethz-asl/libnabo
+Depends: R (>= 3.0.2)
+Imports: Rcpp (>= 0.11.2), methods
+LinkingTo: Rcpp, RcppEigen (>= 0.3.2.2.0), BH (>= 1.54.0-4)
+Suggests: testthat, RANN
+Packaged: 2014-09-02 21:23:15 UTC; jefferis
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2014-09-03 01:30:42

@@ -1,0 +1,25 @@
+Package: MIICD
+Type: Package
+Title: Multiple Imputation for Interval Censored Data
+Version: 2.3
+Depends: R (>= 2.13.0)
+Date: 2015-12-17
+Authors@R: person("Marc", "Delord", , "mdelord@gmail.com", role = c("aut",
+    "cre"))
+Maintainer: Marc Delord <mdelord@gmail.com>
+Description: Implements multiple imputation for proportional hazards regression
+    with interval censored data or proportional sub-distribution hazards
+    regression for interval censored competing risks data. The main functions
+    allow to estimate survival function, cumulative incidence function, Cox
+    and Fine & Gray regression coefficients and associated variance-covariance
+    matrix. 'MIICD' functions call 'Surv', 'survfit' and 'coxph' from the
+    'survival' package, 'crprep' from the 'mstate' package, and 'mvrnorm' from
+    the 'MASS' package.
+LazyData: true
+License: GPL-3
+Imports: survival, MASS, mstate
+Author: Marc Delord [aut, cre]
+NeedsCompilation: no
+Repository: CRAN
+Packaged: 2016-11-28 13:22:23 UTC; marc
+Date/Publication: 2016-11-28 22:05:11

@@ -1,0 +1,17 @@
+Package: StempCens
+Type: Package
+Title: Spatio-Temporal Estimation and Prediction for Censored/Missing
+        Responses
+Version: 0.1.0
+Author: Katherine A. L. Valeriano, Victor H. Lachos and Larissa Avila Matos
+Maintainer: Larissa Avila Matos <larissa.amatos@gmail.com>
+Description: It estimates the parameters of a censored or missing data in spatio-temporal models using the SAEM algorithm (Delyon et al., 1999 <doi:10.1214/aos/1018031103>). This algorithm is a stochastic approximation of the widely used EM algorithm and an important tool for models in which the E-step does not have an analytic form. Besides the expressions obtained to estimate the parameters to the proposed model, we include the calculations for the observed information matrix using the method developed by Louis (1982) <https://www.jstor.org/stable/2345828>. To examine the performance of the fitted model, case-deletion measure are provided.
+License: GPL (>= 2)
+RoxygenNote: 6.1.1
+Imports: ssym, optimx, Matrix, sp, spTimer, mvtnorm, tmvtnorm,
+        MCMCglmm, ggplot2, grid, distances, gridExtra
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2019-02-04 13:51:30 UTC; larissam
+Repository: CRAN
+Date/Publication: 2019-02-08 17:43:18 UTC

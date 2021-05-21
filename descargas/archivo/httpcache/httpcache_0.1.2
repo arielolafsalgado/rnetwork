@@ -1,0 +1,29 @@
+Package: httpcache
+Type: Package
+Title: Query Cache for HTTP Clients
+Description: In order to improve performance for HTTP API clients, 'httpcache'
+    provides simple tools for caching and invalidating cache. It includes the
+    HTTP verb functions GET, PUT, PATCH, POST, and DELETE, which are drop-in
+    replacements for those in the 'httr' package. These functions are cache-aware
+    and provide default settings for cache invalidation suitable for RESTful
+    APIs; the package also enables custom cache-management strategies.
+    Finally, 'httpcache' includes a basic logging framework to facilitate the
+    measurement of HTTP request time and cache performance.
+Version: 0.1.2
+Date: 2016-02-20
+Authors@R: c(person("Neal", "Richardson", role = c("aut", "cre"),
+    email = "neal.p.richardson@gmail.com"))
+Author: Neal Richardson [aut, cre]
+Maintainer: Neal Richardson <neal.p.richardson@gmail.com>
+URL: https://github.com/nealrichardson/httpcache
+BugReports: https://github.com/nealrichardson/httpcache/issues
+License: MIT + file LICENSE
+LazyLoad: yes
+Depends: R (>= 3.0.0)
+Imports: httr (>= 1.0.0), digest
+Suggests: testthat
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-02-22 22:39:17 UTC; npr
+Repository: CRAN
+Date/Publication: 2016-02-23 07:18:22

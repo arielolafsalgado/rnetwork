@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package eq5d</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Methods for Calculating 'EQ-5D' Utility Index Scores [R package eq5d version 0.7.2]" />
+<meta name="citation_author1" content="Fraser Morton" />
+<meta name="citation_author2" content="Jagtar Singh Nijjar" />
+<meta name="citation_publication_date" content="2020-07-21" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=eq5d" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=eq5d" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="eq5d: Methods for Calculating 'EQ-5D' Utility Index Scores" />
+<meta name="og:description" content="EQ-5D is a popular health related quality of life instrument used in the clinical and economic evaluation of health care. Developed by the EuroQol group &amp;lt;&lt;a href=&quot;https://www.euroqol.org&quot;&gt;https://www.euroqol.org&lt;/a&gt;&amp;gt;, the instrument consists of two components: health state description and evaluation. For the description component a subject self-rates their health in terms of five dimensions; mobility, self-care, usual activities, pain/discomfort, and anxiety/depression using either a three-level (EQ-5D-3L, &amp;lt;&lt;a href=&quot;https://www.euroqol.org/eq-5d-instruments/eq-5d-3l-about&quot;&gt;https://www.euroqol.org/eq-5d-instruments/eq-5d-3l-about&lt;/a&gt;&amp;gt;) or a five-level (EQ-5D-5L, &amp;lt;&lt;a href=&quot;https://www.euroqol.org/eq-5d-instruments/eq-5d-5l-about&quot;&gt;https://www.euroqol.org/eq-5d-instruments/eq-5d-5l-about&lt;/a&gt;&amp;gt;) scale. Frequently the scores on these five dimensions are converted to a single utility index using country specific value sets, which can be used in the clinical and economic evaluation of health care as well as in population health surveys. The eq5d package provides methods to calculate index scores from a subject's dimension scores. 25 TTO and 11 VAS EQ-5D-3L value sets including those for countries in Szende et al (2007) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2F1-4020-5511-0&quot;&gt;doi:10.1007/1-4020-5511-0&lt;/a&gt;&amp;gt; and Szende et al (2014) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2F978-94-007-7596-1&quot;&gt;doi:10.1007/978-94-007-7596-1&lt;/a&gt;&amp;gt;, 22 EQ-5D-5L EQ-VT value sets from the EuroQol website, and the EQ-5D-5L crosswalk value sets developed by van Hout et al. (2012) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.jval.2012.02.008&quot;&gt;doi:10.1016/j.jval.2012.02.008&lt;/a&gt;&amp;gt; are included. Additionally, a shiny web tool is included to enable the calculation, visualisation and automated statistical analysis of EQ-5D index values via a web browser using EQ-5D dimension scores stored in CSV or Excel files. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=eq5d" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>eq5d: Methods for Calculating 'EQ-5D' Utility Index Scores</h2>
+<p>EQ-5D is a popular health related quality of life instrument used 
+    in the clinical and economic evaluation of health care. Developed by the 
+    EuroQol group &lt;<a href="https://www.euroqol.org">https://www.euroqol.org</a>&gt;, the instrument consists of two 
+    components: health state description and evaluation. For the description 
+    component a subject self-rates their health in terms of five dimensions; 
+    mobility, self-care, usual activities, pain/discomfort, and 
+    anxiety/depression using either a three-level (EQ-5D-3L,
+    &lt;<a href="https://www.euroqol.org/eq-5d-instruments/eq-5d-3l-about">https://www.euroqol.org/eq-5d-instruments/eq-5d-3l-about</a>&gt;) or a five-level
+    (EQ-5D-5L, &lt;<a href="https://www.euroqol.org/eq-5d-instruments/eq-5d-5l-about">https://www.euroqol.org/eq-5d-instruments/eq-5d-5l-about</a>&gt;) 
+    scale. Frequently the scores on these five dimensions are converted to a 
+    single utility index using country specific value sets, which can be used
+    in the clinical and economic evaluation of health care as well as in 
+    population health surveys. The eq5d package provides methods to calculate 
+    index scores from a subject's dimension scores. 25 TTO and 11 VAS EQ-5D-3L value 
+    sets including those for countries in Szende et al (2007) 
+    &lt;<a href="https://doi.org/10.1007%2F1-4020-5511-0">doi:10.1007/1-4020-5511-0</a>&gt; and Szende et al (2014) 
+    &lt;<a href="https://doi.org/10.1007%2F978-94-007-7596-1">doi:10.1007/978-94-007-7596-1</a>&gt;, 22 EQ-5D-5L EQ-VT value sets from the EuroQol
+    website, and the EQ-5D-5L crosswalk value sets developed by van Hout et al. (2012) 
+    &lt;<a href="https://doi.org/10.1016%2Fj.jval.2012.02.008">doi:10.1016/j.jval.2012.02.008</a>&gt; are included. Additionally, a shiny web tool is 
+    included to enable the calculation, visualisation and automated statistical 
+    analysis of EQ-5D index values via a web browser using EQ-5D dimension scores 
+    stored in CSV or Excel files. </p>
+<table summary="Package eq5d summary">
+<tr>
+<td>Version:</td>
+<td>0.7.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../shiny/index.html">shiny</a>, <a href="../DT/index.html">DT</a>, <a href="../mime/index.html">mime</a>, <a href="../readxl/index.html">readxl</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../ggiraph/index.html">ggiraph</a>, <a href="../ggiraphExtra/index.html">ggiraphExtra</a>, <a href="../shinycssloaders/index.html">shinycssloaders</a>, <a href="../shinyWidgets/index.html">shinyWidgets</a>, <a href="../FSA/index.html">FSA</a>, <a href="../PMCMRplus/index.html">PMCMRplus</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../covr/index.html">covr</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-07-21</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Fraser Morton [aut, cre],
+  Jagtar Singh Nijjar [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Fraser Morton  &#x3c;&#x66;&#x72;&#x61;&#x73;&#x65;&#x72;&#x2e;&#x6d;&#x6f;&#x72;&#x74;&#x6f;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6c;&#x61;&#x73;&#x67;&#x6f;&#x77;&#x2e;&#x61;&#x63;&#x2e;&#x75;&#x6b;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/fragla/eq5d/issues">https://github.com/fragla/eq5d/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/fragla/eq5d">https://github.com/fragla/eq5d</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-GB</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_eq5d.html">eq5d results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package eq5d downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="eq5d.pdf"> eq5d.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/eq5d.html">Calculating EQ-5D indices with eq5d</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/eq5d_0.7.2.tar.gz"> eq5d_0.7.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/eq5d_0.7.2.zip">eq5d_0.7.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/eq5d_0.7.2.zip">eq5d_0.7.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/eq5d_0.7.2.zip">eq5d_0.7.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/eq5d_0.7.2.tgz">eq5d_0.7.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/eq5d_0.7.2.tgz">eq5d_0.7.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/eq5d"> eq5d archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=eq5d"><samp>https://CRAN.R-project.org/package=eq5d</samp></a>
+to link to this page.</p>
+</body>
+</html>

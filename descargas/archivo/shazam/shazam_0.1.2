@@ -1,0 +1,52 @@
+Package: shazam
+Type: Package
+Version: 0.1.2
+Date: 2016-02-20
+Authors@R: c(person("Mohamed", "Uduman", role=c("aut"), 
+                    email="mohamed.uduman@yale.edu"),
+             person("Gur", "Yaari", role=c("aut"), 
+                    email="gur.yaari@biu.ac.il"),
+             person("Namita", "Gupta", role=c("aut"), 
+                    email="namita.gupta@yale.edu"),
+             person("Jason", "Vander Heiden", role=c("aut", "cre"), 
+                    email="jason.vanderheiden@yale.edu"),
+             person("Ang", "Cui", role=c("ctb"), 
+                    email="angcui@mit.edu"),
+             person("Susanna", "Marquez", role=c("ctb"), 
+                    email="susanna.marquez@yale.edu"),
+             person("Steven", "Kleinstein", role=c("aut", "cph"), 
+                    email="steven.kleinstein@yale.edu"))
+Title: Immunoglobulin Somatic Hypermutation Analysis
+Description: Provides a computational framework for Bayesian estimation of
+    antigen-driven selection in immunoglobulin (Ig) sequences, providing an
+    intuitive means of analyzing selection by quantifying the degree of 
+    selective pressure. Also provides tools to profile mutations in Ig
+    sequences, build models of somatic hypermutation (SHM) in Ig sequences, 
+    and make model-dependent distance comparisons of Ig repertoires. 
+License: CC BY-NC-SA 4.0
+URL: http://clip.med.yale.edu/changeo
+BugReports: https://bitbucket.org/kleinstein/shazam/issues
+LazyData: true
+BuildVignettes: true
+VignetteBuilder: knitr
+Depends: R (>= 3.1.2), alakazam (>= 0.2.1), ggplot2 (>= 2.0.0)
+Imports: data.table (>= 1.9.4), doParallel, dplyr, foreach, graphics,
+        grid, iterators, methods, lazyeval, parallel, SDMTools, scales,
+        seqinr, stats, stringi, tidyr, utils
+Suggests: knitr, rmarkdown, testthat
+Collate: 'shazam.R' 'RegionDefinitions.R' 'Baseline.R' 'Core.R'
+        'DistToNearest.R' 'MutationDefinitions.R' 'MutationProfiling.R'
+        'TargetingModels.R'
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-02-20 20:42:51 UTC; jason
+Author: Mohamed Uduman [aut],
+  Gur Yaari [aut],
+  Namita Gupta [aut],
+  Jason Vander Heiden [aut, cre],
+  Ang Cui [ctb],
+  Susanna Marquez [ctb],
+  Steven Kleinstein [aut, cph]
+Maintainer: Jason Vander Heiden <jason.vanderheiden@yale.edu>
+Repository: CRAN
+Date/Publication: 2016-02-21 15:58:13

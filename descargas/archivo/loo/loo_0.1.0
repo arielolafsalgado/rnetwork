@@ -1,0 +1,26 @@
+Package: loo
+Type: Package
+Title: Efficient Leave-One-Out Cross-Validation and WAIC for Bayesian
+        Models
+Version: 0.1.0
+Date: 2015-06-24
+Author: Aki Vehtari, Andrew Gelman, Jonah Gabry
+Maintainer: Jonah Gabry <jsg2201@columbia.edu>
+URL: https://github.com/jgabry/loo
+BugReports: https://github.com/jgabry/loo/issues
+Description: We efficiently approximate leave-one-out cross-validation (LOO)
+  using very good importance sampling (VGIS), a new procedure for regularizing
+  importance weights. As a byproduct of our calculations, we also obtain
+  approximate standard errors for estimated predictive errors, and for the
+  comparison of predictive errors between two models. We also compute the
+  widely applicable information criterion (WAIC).
+License: GPL (>= 3)
+LazyData: TRUE
+Depends: R (>= 3.2.0)
+Imports: matrixStats (>= 0.14.1), parallel
+Suggests: knitr, testthat
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2015-06-26 01:00:17 UTC; jgabry
+Repository: CRAN
+Date/Publication: 2015-06-26 10:55:18

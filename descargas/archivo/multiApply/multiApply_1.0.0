@@ -1,0 +1,24 @@
+Package: multiApply
+Title: Apply Functions to Multiple Multidimensional Arguments
+Version: 1.0.0
+Authors@R: c(
+    person("BSC-CNS", role = c("aut", "cph")),
+    person("Alasdair", "Hunter", , "alasdair.hunter@bsc.es", role = c("aut", "cre")),
+    person("Nicolau", "Manubens", , "nicolau.manubens@bsc.es", role = "aut"))
+Description: The base apply function and its variants, as well as the related functions in the 'plyr' package, typically apply user-defined functions to a single argument (or a list of vectorized arguments in the case of mapply). The 'multiApply' package extends this paradigm to functions taking a list of multiple unidimensional or multidimensional arguments (or combinations thereof) as input, which can have different numbers of dimensions as well as different dimension lengths.
+Depends: R (>= 3.2.0)
+Imports: abind, doParallel, foreach, plyr
+License: LGPL-3
+URL: https://earth.bsc.es/gitlab/ces/multiApply
+BugReports: https://earth.bsc.es/gitlab/ces/multiApply/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 5.0.0
+NeedsCompilation: no
+Packaged: 2018-02-05 15:42:07 UTC; ahunter
+Author: BSC-CNS [aut, cph],
+  Alasdair Hunter [aut, cre],
+  Nicolau Manubens [aut]
+Maintainer: Alasdair Hunter <alasdair.hunter@bsc.es>
+Repository: CRAN
+Date/Publication: 2018-02-05 15:55:40 UTC

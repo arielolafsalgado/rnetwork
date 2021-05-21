@@ -1,0 +1,37 @@
+Package: ropercenter
+Type: Package
+Title: Reproducible Data Retrieval from the Roper Center Data Archive
+Version: 0.3.0
+Date: 2020-08-18
+Authors@R: c(
+    person("Frederick", "Solt", email = "frederick-solt@uiowa.edu", role = c("aut", "cre", "cph")),
+    person("Jennifer", "Lin", email = "jenniferlin2025@u.northwestern.edu", role = c("ctb")),
+    person("Paul", "Gronke", email = "gronkep@reed.edu", role = c("ctb")))
+URL: https://github.com/fsolt/ropercenter
+BugReports: https://github.com/fsolt/ropercenter/issues
+Description: Reproducible, programmatic retrieval of datasets from the
+    Roper Center data archive.  The Roper Center for Public Opinion
+    Research <https://ropercenter.cornell.edu> maintains the largest 
+    archive of public opinion data in existence, but researchers using
+    these datasets are caught in a bind.  The Center's terms and conditions
+    bar redistribution of downloaded datasets, but to ensure that one's 
+    work can be reproduced, assessed, and built upon by others, one must
+    provide access to the raw data one employed.  The `ropercenter`
+    package cuts this knot by providing registered users with programmatic,
+    reproducible access to Roper Center datasets from within R.
+License: MIT + file LICENSE
+LazyData: TRUE
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Imports: RSelenium, dplyr, foreign, haven, magrittr, readr, rio,
+        stringr, tibble, tidyr
+Encoding: UTF-8
+RoxygenNote: 7.1.0
+NeedsCompilation: no
+Packaged: 2020-07-21 14:27:11 UTC; fredsolt
+Author: Frederick Solt [aut, cre, cph],
+  Jennifer Lin [ctb],
+  Paul Gronke [ctb]
+Maintainer: Frederick Solt <frederick-solt@uiowa.edu>
+Repository: CRAN
+Date/Publication: 2020-07-21 14:50:02 UTC

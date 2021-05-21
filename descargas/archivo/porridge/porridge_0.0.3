@@ -1,0 +1,25 @@
+Package: porridge
+Type: Package
+Title: Ridge-Type Penalized Estimation of a Potpourri of Models
+Version: 0.0.3
+Date: 2019-12-05
+Author: Wessel N. van Wieringen [aut, cre],
+  Mehran Aflakparast [ctb] (part of the R-code of the mixture
+    functionality)
+Maintainer: Wessel N. van Wieringen <w.vanwieringen@vumc.nl>
+Authors@R: c(person("Wessel N.", "van Wieringen", role = c("aut", "cre"),
+	             email="w.vanwieringen@vumc.nl"),
+	     person("Mehran", "Aflakparast", role = "ctb",
+	            comment="part of the R-code of the mixture functionality"))
+Description: The name of the package is derived from the French, 'pour' ridge, and provides functionality for ridge-type estimation of a potpourri of models. Currently, this estimation concerns that of various Gaussian graphical models from different study designs. Among others it considers the regular Gaussian graphical model and a mixture of such models. The porridge-package implements the estimation of the former either from i) data with replicated observations by penalized loglikelihood maximization using the regular ridge penalty on the parameters (van Wieringen, Chen, 2019) or ii) from non-replicated data by means of the generalized ridge estimator that allows for both the inclusion of quantitative and qualitative prior information on the precision matrix via element-wise penalization and shrinkage (van Wieringen, 2019, <doi.org/10.1080/10618600.2019.1604374>). Additionally, the porridge-package facilitates the ridge penalized estimation of a mixture of Gaussian graphical models (Aflakparast et al., 2018, <doi.org/10.1002/bimj.201700102>).
+License: GPL (>= 2)
+LazyLoad: yes
+URL: http://www.few.vu.nl/~wvanwie
+Depends: R (>= 2.15.1)
+Imports: MASS, stats, mvtnorm, Rcpp, methods
+Suggests: Matrix
+LinkingTo: Rcpp, RcppArmadillo
+NeedsCompilation: yes
+Packaged: 2019-12-05 09:00:23 UTC; wessel
+Repository: CRAN
+Date/Publication: 2019-12-05 09:50:02 UTC

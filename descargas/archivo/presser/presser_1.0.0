@@ -1,0 +1,44 @@
+Package: presser
+Title: Lightweight Web Server for Testing
+Version: 1.0.0
+Authors@R: c(
+  person("Gábor", "Csárdi", role = c("aut", "cre"),
+         email = "csardi.gabor@gmail.com"),
+  person(family = "RStudio, Pbc.", role = "cph"),
+  person(family = "Civetweb contributors", role = "ctb",
+         comment = "see inst/credits/ciwetweb.md"),
+  person(family = "Redoc contributors", role = "ctb",
+         comment = "see inst/credits/redoc.md"),
+  person("L. Peter", "Deutsch", rol = "ctb",
+         comment = "src/md5.h"),
+  person("Martin", "Purschke", rol = "ctb",
+         comment = "src/md5.h"),
+  person(family = "Aladdin Enterprises", rol = "cph",
+         comment = "src/md5.h")
+  )
+Description: Create a web app that makes it easier to test web clients
+  without using the internet. It includes a web app framework with path
+  matching and parameters and templates. Can parse various 'HTTP' request
+  bodies. Can send 'JSON' data or files from the disk. Includes a web app
+  that implements the <https://httpbin.org> web service.
+License: MIT + file LICENSE
+LazyData: true
+URL: https://r-lib.github.io/presser,
+        https://github.com/gaborcsardi/presser#readme
+BugReports: https://github.com/gaborcsardi/presser/issues
+RoxygenNote: 7.1.0
+Imports: stats, tools, utils
+Suggests: callr, curl, glue, jsonlite, testthat, withr
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2020-05-02 15:21:40 UTC; gaborcsardi
+Author: Gábor Csárdi [aut, cre],
+  RStudio, Pbc. [cph],
+  Civetweb contributors [ctb] (see inst/credits/ciwetweb.md),
+  Redoc contributors [ctb] (see inst/credits/redoc.md),
+  L. Peter Deutsch [ctb] (src/md5.h),
+  Martin Purschke [ctb] (src/md5.h),
+  Aladdin Enterprises [cph] (src/md5.h)
+Maintainer: Gábor Csárdi <csardi.gabor@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-05-06 13:00:06 UTC

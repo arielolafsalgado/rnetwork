@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package stratifyR</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Optimal Stratification of Univariate Populations [R package stratifyR version 1.0-2]" />
+<meta name="citation_author1" content="Karuna G. Reddy" />
+<meta name="citation_author2" content="M. G. M. Khan" />
+<meta name="citation_publication_date" content="2019-09-27" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=stratifyR" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=stratifyR" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="stratifyR: Optimal Stratification of Univariate Populations" />
+<meta name="og:description" content="This implements the stratification of univariate populations under stratified sampling designs using the method of Khan et al. (2002) &amp;lt;&lt;a href=&quot;https://doi.org/10.1177%2F0008068320020518&quot;&gt;doi:10.1177/0008068320020518&lt;/a&gt;&amp;gt;, Khan et al. (2008) (&amp;lt;&lt;a href=&quot;http://www.statcan.gc.ca/pub/12-001-x/2008002/article/10761-eng.pdf&quot;&gt;http://www.statcan.gc.ca/pub/12-001-x/2008002/article/10761-eng.pdf&lt;/a&gt;&amp;gt;) and Khan et al. (2015) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F02664763.2015.1018674&quot;&gt;doi:10.1080/02664763.2015.1018674&lt;/a&gt;&amp;gt;. It determines the Optimum Strata Boundaries (OSB) and Optimum Sample Sizes (OSS) for the study variable, y, using the best-fit frequency distribution of a survey variable (if data is available) or a hypothetical distribution (if data is not available). The method formulates the problem of determining the OSB as mathematical programming problem which is solved by using a dynamic programming technique. If a dataset of the population is available to the surveyor, the method estimates its best-fit distribution and determines the OSB and OSS under Neyman allocation directly. When the dataset is not available, stratification is made based on the assumption that the values of the study variable, y, are available as hypothetical realizations of proxy values of y from recent surveys. Thus, it requires certain distributional assumptions about the study variable. At present, it handles stratification for the populations where the study variable follows a continuous distribution, namely, Pareto, Triangular, Right-triangular, Weibull, Gamma, Exponential, Uniform, Normal, Log-normal and Cauchy distributions. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=stratifyR" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>stratifyR: Optimal Stratification of Univariate Populations</h2>
+<p>This implements the stratification of univariate populations under stratified sampling designs using the method of Khan et al. (2002) &lt;<a href="https://doi.org/10.1177%2F0008068320020518">doi:10.1177/0008068320020518</a>&gt;, Khan et al. (2008) (&lt;<a href="http://www.statcan.gc.ca/pub/12-001-x/2008002/article/10761-eng.pdf">http://www.statcan.gc.ca/pub/12-001-x/2008002/article/10761-eng.pdf</a>&gt;) and Khan et al. (2015) &lt;<a href="https://doi.org/10.1080%2F02664763.2015.1018674">doi:10.1080/02664763.2015.1018674</a>&gt;. It determines the Optimum Strata Boundaries (OSB) and Optimum Sample Sizes (OSS) for the study variable, y, using the best-fit frequency distribution of a survey variable (if data is available) or a hypothetical distribution (if data is not available). The method formulates the problem of determining the OSB as mathematical programming problem which is solved by using a dynamic programming technique. If a dataset of the population is available to the surveyor, the method estimates its best-fit distribution and determines the OSB and OSS under Neyman allocation directly. When the dataset is not available, stratification is made based on the assumption that the values of the study variable, y, are available as hypothetical realizations of proxy values of y from recent surveys. Thus, it requires certain distributional assumptions about the study variable. At present, it handles stratification for the populations where the study variable follows a continuous distribution, namely, Pareto, Triangular, Right-triangular, Weibull, Gamma, Exponential, Uniform, Normal, Log-normal and Cauchy distributions. </p>
+<table summary="Package stratifyR summary">
+<tr>
+<td>Version:</td>
+<td>1.0-2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.4.0), <a href="../fitdistrplus/index.html">fitdistrplus</a>, stats, <a href="../zipfR/index.html">zipfR</a>, <a href="../actuar/index.html">actuar</a>, <a href="../triangle/index.html">triangle</a>, <a href="../mc2d/index.html">mc2d</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-09-27</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Karuna G. Reddy [aut, cre],
+  M. G. M. Khan [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Karuna G. Reddy  &#x3c;&#x6b;&#x61;&#x72;&#x75;&#x6e;&#x61;&#x2e;&#x72;&#x65;&#x64;&#x64;&#x79;&#x20;&#x61;&#x74;&#x20;&#x61;&#x6e;&#x75;&#x2e;&#x65;&#x64;&#x75;&#x2e;&#x61;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_stratifyR.html">stratifyR results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package stratifyR downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="stratifyR.pdf"> stratifyR.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/stratifyR-vignette.html">R Package 'stratifyR'</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/stratifyR_1.0-2.tar.gz"> stratifyR_1.0-2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/stratifyR_1.0-2.zip">stratifyR_1.0-2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/stratifyR_1.0-2.zip">stratifyR_1.0-2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/stratifyR_1.0-2.zip">stratifyR_1.0-2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/stratifyR_1.0-2.tgz">stratifyR_1.0-2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/stratifyR_1.0-2.tgz">stratifyR_1.0-2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/stratifyR"> stratifyR archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=stratifyR"><samp>https://CRAN.R-project.org/package=stratifyR</samp></a>
+to link to this page.</p>
+</body>
+</html>

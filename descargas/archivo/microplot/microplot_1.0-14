@@ -1,0 +1,33 @@
+Package: microplot
+Type: Package
+Title: Use R Graphics Files as Microplots (Sparklines) in Tables in
+        LaTeX or HTML Files, and Output Data.frames to Org-Mode
+Version: 1.0-14
+Date: 2016-06-21
+Author: Richard M. Heiberger, with contributions from Karen Byron and Nooreen Dabbish.
+Maintainer: Richard M. Heiberger <rmh@temple.edu>
+Description: Prepare lists of R graphics files to be used as
+	     microplots (sparklines) in tables in either LaTeX or HTML files.  For LaTeX use
+	     the Hmisc::latex() function or xtable::xtable() with
+	     Sweave, knitr, rmarkdown, or Emacs org-mode to construct
+	     latex tabular environments which include the graphs.  For HTML files use
+	     either Emacs org-mode or the htmlTable::htmlTable()
+	     function to construct an HTML file containing tables which
+	     include the graphs.  Examples are shown with lattice
+	     graphics, base graphics, and ggplot2 graphics.  Examples
+	     for LaTeX include Sweave (both LaTeX-style and
+	     Noweb-style), knitr, emacs org-mode,
+	     and rmarkdown input files and their pdf
+	     output files.  Examples for HTML include org-mode
+	     and Rmd input files and their webarchive
+	     HTML output files.  In addition, the as.orgtable function
+	     can display a data.frame in an org-mode document.
+Imports: Hmisc
+Suggests: HH, lattice, ggplot2, reshape2, grid, latticeExtra, xtable,
+        markdown, rmarkdown, knitr, htmlTable
+SystemRequirements: LaTeX
+License: GPL (>= 2)
+NeedsCompilation: no
+Packaged: 2016-06-22 02:47:19 UTC; rmh
+Repository: CRAN
+Date/Publication: 2016-06-22 06:04:27

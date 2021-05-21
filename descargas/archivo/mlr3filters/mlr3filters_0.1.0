@@ -1,0 +1,49 @@
+Package: mlr3filters
+Title: Filter Based Feature Selection for 'mlr3'
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Patrick",
+             family = "Schratz",
+             role = c("aut", "cre"),
+             email = "patrick.schratz@gmail.com",
+             comment = c(ORCID = "0000-0003-0748-6624")),
+      person(given = "Michel",
+             family = "Lang",
+             role = "aut",
+             email = "michellang@gmail.com",
+             comment = c(ORCID = "0000-0001-9754-0393")),
+      person(given = "Bernd",
+             family = "Bischl",
+             role = "aut",
+             email = "bernd_bischl@gmx.net",
+             comment = c(ORCID = "0000-0001-6002-6980")))
+Description: Extends 'mlr3' with filter methods for feature
+    selection. Besides standalone filter methods built-in methods of any
+    machine-learning algorithm are supported.  Partial scoring of
+    multivariate filter methods is supported.
+License: LGPL-3
+URL: https://mlr3filters.mlr-org.com,
+        https://github.com/mlr-org/mlr3filters
+BugReports: https://github.com/mlr-org/mlr3filters/issues
+Depends: R (>= 3.1.0)
+Imports: backports, checkmate, data.table, mlr3 (>= 0.1.2), mlr3misc,
+        paradox, R6
+Suggests: care, FSelectorRcpp, lgr, mlr3learners, praznik, rpart,
+        testthat
+Encoding: UTF-8
+NeedsCompilation: no
+RoxygenNote: 6.1.1
+Collate: 'Filter.R' 'mlr_filters.R' 'FilterAUC.R' 'FilterAnova.R'
+        'FilterCMIM.R' 'FilterCarScore.R' 'FilterCorrelation.R'
+        'FilterDISR.R' 'FilterImportance.R' 'FilterInformationGain.R'
+        'FilterJMI.R' 'FilterJMIM.R' 'FilterKruskalTest.R'
+        'FilterMIM.R' 'FilterMRMR.R' 'FilterNJMIM.R'
+        'FilterPerformance.R' 'FilterVariance.R' 'flt.R' 'reexports.R'
+        'zzz.R'
+Packaged: 2019-09-03 08:43:39 UTC; patrickschratz
+Author: Patrick Schratz [aut, cre] (<https://orcid.org/0000-0003-0748-6624>),
+  Michel Lang [aut] (<https://orcid.org/0000-0001-9754-0393>),
+  Bernd Bischl [aut] (<https://orcid.org/0000-0001-6002-6980>)
+Maintainer: Patrick Schratz <patrick.schratz@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-09-04 08:30:02 UTC

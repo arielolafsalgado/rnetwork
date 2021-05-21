@@ -1,0 +1,29 @@
+Package: MNLpred
+Title: Simulated Predicted Probabilities for Multinomial Logit Models
+Version: 0.0.2
+Authors@R: 
+    person(given = "Manuel",
+           family = "Neumann",
+           role = c("aut", "cre"),
+           email = "manuel.neumann@mzes.uni-mannheim.de")
+Description: Functions to easily return simulated predicted probabilities and
+    first differences for multinomial logit models. It takes a specified 
+    scenario and a multinomial model to predict probabilities with a set of
+    coefficients, drawn from a simulated sampling distribution. The simulated 
+    predictions allow for meaningful plots with means and confidence intervals.
+    The methodological approach is based on the principles laid out by King,
+    Tomz, and Wittenberg (2000) <doi:10.2307/2669316>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+Suggests: knitr, rmarkdown, testthat, foreign, nnet, magrittr, ggplot2,
+        scales
+VignetteBuilder: knitr
+Imports: MASS, stats
+NeedsCompilation: no
+Packaged: 2020-03-04 09:41:06 UTC; manuneum
+Author: Manuel Neumann [aut, cre]
+Maintainer: Manuel Neumann <manuel.neumann@mzes.uni-mannheim.de>
+Repository: CRAN
+Date/Publication: 2020-03-04 09:50:06 UTC

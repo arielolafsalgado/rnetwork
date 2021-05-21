@@ -1,0 +1,27 @@
+Package: MRReg
+Title: MDL Multiresolution Linear Regression Framework
+Version: 0.1.1
+Authors@R: 
+    person(given = "Chainarong",
+           family = "Amornbunchornvej",
+           role = c("aut", "cre"),
+           email = "grandca@gmail.com",
+           comment = c(ORCID = "0000-0003-3131-0370"))
+Maintainer: Chainarong Amornbunchornvej <grandca@gmail.com>
+Description: We provide the framework to analyze multiresolution partitions (e.g. country, provinces, subdistrict) where each individual data point belongs to only one partition in each layer (e.g. i belongs to subdistrict A, province P, and country Q).   We assume that a partition in a higher layer subsumes lower-layer partitions (e.g. a nation is at the 1st layer subsumes all provinces at the 2nd layer). Given N individuals that have a pair of real values (x,y) that generated from  independent variable X and dependent variable Y. Each individual i belongs to one partition per layer. Our goal is to find which partitions at which highest level that all individuals  in the these partitions share the same linear model Y=f(X) where f is a linear function. The framework deploys the Minimum Description Length principle (MDL) to infer solutions. The publication of this package is at Chainarong Amornbunchornvej, Navaporn Surasvadi, Anon Plangprasopchok, and Suttipong Thajchayapong (2019) <arXiv:1907.05234>.
+License: MIT + file LICENSE
+URL: https://github.com/DarkEyes/MRReg
+BugReports: https://github.com/DarkEyes/MRReg/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0), caret
+Imports: igraph, ggplot2 (>= 3.0)
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.1.0
+NeedsCompilation: no
+Packaged: 2020-05-11 07:14:50 UTC; sai
+Author: Chainarong Amornbunchornvej [aut, cre]
+    (<https://orcid.org/0000-0003-3131-0370>)
+Repository: CRAN
+Date/Publication: 2020-05-12 14:30:02 UTC

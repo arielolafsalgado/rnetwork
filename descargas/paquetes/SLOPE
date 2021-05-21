@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package SLOPE</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Sorted L1 Penalized Estimation [R package SLOPE version 0.3.2]" />
+<meta name="citation_author1" content="Johan Larsson" />
+<meta name="citation_author2" content="Jonas Wallin" />
+<meta name="citation_author3" content="Malgorzata Bogdan" />
+<meta name="citation_author4" content="Ewout van den Berg" />
+<meta name="citation_author5" content="Chiara Sabatti" />
+<meta name="citation_author6" content="Emmanuel Candes" />
+<meta name="citation_author7" content="Evan Patterson" />
+<meta name="citation_author8" content="Weijie Su" />
+<meta name="citation_publication_date" content="2020-07-10" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=SLOPE" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=SLOPE" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="SLOPE: Sorted L1 Penalized Estimation" />
+<meta name="og:description" content="Efficient implementations for Sorted L-One Penalized Estimation (SLOPE): generalized linear models regularized with the sorted L1-norm (Bogdan et al. (2015) &amp;lt;&lt;a href=&quot;https://doi.org/10%2Fgfgwzt&quot;&gt;doi:10/gfgwzt&lt;/a&gt;&amp;gt;). Supported models include ordinary least-squares regression, binomial regression, multinomial regression, and Poisson regression. Both dense and sparse predictor matrices are supported. In addition, the package features predictor screening rules that enable fast and efficient solutions to high-dimensional problems." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=SLOPE" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>SLOPE: Sorted L1 Penalized Estimation</h2>
+<p>Efficient implementations for Sorted L-One Penalized Estimation 
+    (SLOPE): generalized linear models regularized with the sorted L1-norm 
+    (Bogdan et al. (2015) &lt;<a href="https://doi.org/10%2Fgfgwzt">doi:10/gfgwzt</a>&gt;). Supported models include ordinary 
+    least-squares regression, binomial regression, multinomial regression, and 
+    Poisson regression. Both dense and sparse  predictor matrices are supported.
+    In addition, the package features predictor screening rules that enable fast
+    and efficient solutions to high-dimensional problems.</p>
+<table summary="Package SLOPE summary">
+<tr>
+<td>Version:</td>
+<td>0.3.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../foreach/index.html">foreach</a>, <a href="../lattice/index.html">lattice</a>, <a href="../Matrix/index.html">Matrix</a>, methods, <a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a> (&ge; 0.9.850.1.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../caret/index.html">caret</a>, <a href="../covr/index.html">covr</a>, <a href="../glmnet/index.html">glmnet</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../spelling/index.html">spelling</a>, <a href="../testthat/index.html">testthat</a> (&ge;
+2.1.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-07-10</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Johan Larsson <a href="https://orcid.org/0000-0002-4029-5945"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Jonas Wallin <a href="https://orcid.org/0000-0003-0381-6593"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Malgorzata Bogdan [aut],
+  Ewout van den Berg [aut],
+  Chiara Sabatti [aut],
+  Emmanuel Candes [aut],
+  Evan Patterson [aut],
+  Weijie Su [aut],
+  Jerome Friedman [ctb] (code adapted from 'glmnet'),
+  Trevor Hastie [ctb] (code adapted from 'glmnet'),
+  Rob Tibshirani [ctb] (code adapted from 'glmnet'),
+  Balasubramanian Narasimhan [ctb] (code adapted from 'glmnet'),
+  Noah Simon [ctb] (code adapted from 'glmnet'),
+  Junyang Qian [ctb] (code adapted from 'glmnet'),
+  Akarsh Goyal [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Johan Larsson  &#x3c;&#x6a;&#x6f;&#x68;&#x61;&#x6e;&#x2e;&#x6c;&#x61;&#x72;&#x73;&#x73;&#x6f;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x73;&#x74;&#x61;&#x74;&#x2e;&#x6c;&#x75;&#x2e;&#x73;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/jolars/SLOPE/issues">https://github.com/jolars/SLOPE/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>Copyright:</td>
+<td>see file <a href="COPYRIGHTS">COPYRIGHTS</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://jolars.github.io/SLOPE/">https://jolars.github.io/SLOPE/</a>, <a href="https://github.com/jolars/SLOPE">https://github.com/jolars/SLOPE</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">SLOPE citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_SLOPE.html">SLOPE results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package SLOPE downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="SLOPE.pdf"> SLOPE.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/introduction.html">An introduction to SLOPE</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/SLOPE_0.3.2.tar.gz"> SLOPE_0.3.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/SLOPE_0.3.2.zip">SLOPE_0.3.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/SLOPE_0.3.2.zip">SLOPE_0.3.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/SLOPE_0.3.2.zip">SLOPE_0.3.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/SLOPE_0.3.2.tgz">SLOPE_0.3.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/SLOPE_0.3.2.tgz">SLOPE_0.3.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/SLOPE"> SLOPE archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=SLOPE"><samp>https://CRAN.R-project.org/package=SLOPE</samp></a>
+to link to this page.</p>
+</body>
+</html>

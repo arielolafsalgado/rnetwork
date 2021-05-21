@@ -1,0 +1,33 @@
+Package: rstanemax
+Version: 0.1.0
+Title: Emax Model Analysis with 'Stan'
+Description: Perform sigmoidal Emax model fit using 'Stan' in a formula notation, without writing 'Stan' model code.
+Authors@R: c(
+    person("Kenta", "Yoshida", , "6.kurabupasu@gmail.com", c("aut", "cre"), 
+      comment = c(ORCID = "0000-0003-4967-3831")),
+    person("Trustees of Columbia University", role = "cph", 
+      comment="src/init.cpp, tools/make_cc.R, R/stanmodels.R"))
+Encoding: UTF-8
+License: GPL-3 | file LICENSE
+LazyData: true
+ByteCompile: true
+Depends: R (>= 3.4.0), methods,Rcpp (>= 1.0.0)
+Imports: rstan (>= 2.18.2), rstantools (>= 1.5.1), magrittr (>= 1.5),
+        dplyr (>= 0.8.0), tidyr (>= 0.8.0), ggplot2 (>= 2.2.1)
+LinkingTo: StanHeaders (>= 2.18.1), rstan (>= 2.18.2), BH (>=
+        1.69.0-1), Rcpp (>= 1.0.0), RcppEigen (>= 0.3.3.5.0)
+SystemRequirements: GNU make
+NeedsCompilation: yes
+RoxygenNote: 6.1.1
+Suggests: testthat, knitr, rmarkdown, spelling
+VignetteBuilder: knitr
+Language: en-US
+URL: https://github.com/yoshidk6/rstanemax
+BugReports: https://github.com/yoshidk6/rstanemax/issues
+Packaged: 2019-05-29 06:30:42 UTC; yoshidk6
+Author: Kenta Yoshida [aut, cre] (<https://orcid.org/0000-0003-4967-3831>),
+  Trustees of Columbia University [cph] (src/init.cpp, tools/make_cc.R,
+    R/stanmodels.R)
+Maintainer: Kenta Yoshida <6.kurabupasu@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-05-31 15:50:03 UTC

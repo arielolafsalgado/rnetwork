@@ -1,0 +1,35 @@
+Package: GillespieSSA2
+Type: Package
+Title: Gillespie's Stochastic Simulation Algorithm for Impatient People
+Version: 0.2.4
+Authors@R: c(
+    person(
+      "Robrecht", 
+      "Cannoodt", 
+      email = "rcannood@gmail.com", 
+      role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0003-3641-729X")
+    )
+  )
+Description: A fast, scalable, and versatile framework for simulating large 
+  systems with Gillespie's Stochastic Simulation Algorithm ('SSA'). 
+  This package is the spiritual successor to the 'GillespieSSA' package 
+  originally written by Mario Pineda-Krch. Benefits of this package
+  include major speed improvements (>100x), easier to understand documentation,
+  and many unit tests that try to ensure the package works as intended.
+License: GPL (>= 3)
+LazyData: TRUE
+Depends: R (>= 3.0)
+Imports: assertthat, dplyr, dynutils, Matrix, methods, purrr, Rcpp (>=
+        0.12.3), readr, rlang, stringr, tidyr
+Suggests: ggplot2, GillespieSSA, knitr, rmarkdown, testthat (>= 2.1.0)
+LinkingTo: Rcpp
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2019-08-05 14:21:48 UTC; rcannood
+Author: Robrecht Cannoodt [aut, cre] (<https://orcid.org/0000-0003-3641-729X>)
+Maintainer: Robrecht Cannoodt <rcannood@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-08-05 16:20:02 UTC

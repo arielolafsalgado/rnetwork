@@ -1,0 +1,28 @@
+Package: fy
+Title: Utilities for Financial Years
+Version: 0.2.0
+Authors@R: 
+    person(given = "Hugh",
+           family = "Parsonage",
+           role = c("aut", "cre"),
+           email = "hugh.parsonage@gmail.com")
+Description: In Australia, a financial year (or fiscal year) is the period from 1 July to 30 June
+     of the following calendar year. As such, many databases need to represent and 
+     validate financial years efficiently. While the use of integer years with a convention that  
+     they represent the year ending is common, it may lead to ambiguity with calendar years.
+     On the other hand, string representations may be too inefficient and do not easily admit
+     arithmetic operations. This package tries to make validation of financial years quicker while
+     retaining clarity.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Depends: R (>= 3.1.0)
+Imports: fastmatch, data.table, hutils, utils
+Suggests: testthat (>= 2.1.0), withr, rlang, zoo, covr
+NeedsCompilation: no
+Packaged: 2019-10-21 06:01:36 UTC; hughp
+Author: Hugh Parsonage [aut, cre]
+Maintainer: Hugh Parsonage <hugh.parsonage@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-10-21 06:10:02 UTC

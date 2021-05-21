@@ -1,0 +1,35 @@
+Package: almanac
+Title: Tools for Working with Recurrence Rules
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Davis",
+             family = "Vaughan",
+             role = c("aut", "cre"),
+             email = "davis@rstudio.com"),
+      person(given = "RStudio",
+             role = "cph"))
+Description: Provides tools for defining recurrence rules and
+    recurrence bundles. Recurrence rules are a programmatic way to define
+    a recurring event, like the first Monday of December. Multiple
+    recurrence rules can be combined into larger recurrence bundles.
+    Together, these provide a system for adjusting and generating
+    sequences of dates while simultaneously skipping over dates in a
+    recurrence bundle's event set.
+License: MIT + file LICENSE
+URL: https://github.com/DavisVaughan/almanac
+BugReports: https://github.com/DavisVaughan/almanac/issues
+Depends: R (>= 3.2)
+Imports: glue, lubridate, magrittr, R6, rlang, V8 (>= 3.0.1), vctrs (>=
+        0.3.0)
+Suggests: covr, knitr, rmarkdown, testthat (>= 2.1.0)
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+NeedsCompilation: yes
+Packaged: 2020-05-21 10:33:31 UTC; davis
+Author: Davis Vaughan [aut, cre],
+  RStudio [cph]
+Maintainer: Davis Vaughan <davis@rstudio.com>
+Repository: CRAN
+Date/Publication: 2020-05-27 10:10:03 UTC

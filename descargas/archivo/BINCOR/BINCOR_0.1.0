@@ -1,0 +1,25 @@
+Package: BINCOR
+Type: Package
+Title: Estimate the Correlation Between Two Irregular Climate Time
+        Series
+Version: 0.1.0
+Authors@R: c(person("Josué M.", "Polanco-Martínez", role = c("aut", 
+        "cph", "cre"), email = "josue.m.polanco@gmail.com"), 
+        person("Mikko", "Korpela", role = c("ctb", "trl")), 
+        person("Aalto University", role = c("cph")), 
+        person("Manfred", "Mudelsee", role = "ctb"))
+Author: Josué M. Polanco-Martínez [aut, cph, cre],
+  Mikko Korpela [ctb, trl],
+  Aalto University [cph],
+  Manfred Mudelsee [ctb]
+Copyright: Authors and file inst/COPYRIGHTS
+Maintainer: Josué M. Polanco-Martínez <josue.m.polanco@gmail.com>
+Imports: pracma
+Description: Estimate the correlation between two irregular time series that are not necessarily sampled on identical time points. This program is also applicable to the situation of two evenly spaced time series that are not on the same time grid. 'BINCOR' is based on a novel estimation approach proposed by Mudelsee (2010, 2014) to estimate the correlation between two time series with different timescales. 'BINCOR' contains four functions: bin_cor() (the main function to build the binned time series), plot_ts() (to plot and compare the irregular and binned time series, cor_ts() (to estimate the correlation between the binned time series) and ccf_ts() (to estimate the cross-correlation between the binned time series).
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Date/Publication: 2018-02-20 09:21:44 UTC
+NeedsCompilation: no
+Packaged: 2018-02-19 18:16:01 UTC; jomopo
+Repository: CRAN

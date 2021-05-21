@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package carfima</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=carfima" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="carfima: Continuous-Time Fractionally Integrated ARMA Process for Irregularly Spaced Long-Memory Time Series Data" />
+<meta name="og:description" content="We provide a toolbox to fit a continuous-time fractionally integrated ARMA process (CARFIMA) on univariate and irregularly spaced time series data via both frequentist and Bayesian machinery. A general-order CARFIMA(p, H, q) model for p&amp;gt;q is specified in Tsai and Chan (2005) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fj.1467-9868.2005.00522.x&quot;&gt;doi:10.1111/j.1467-9868.2005.00522.x&lt;/a&gt;&amp;gt; and it involves p+q+2 unknown model parameters, i.e., p AR parameters, q MA parameters, Hurst parameter H, and process uncertainty (standard deviation) sigma. Also, the model can account for heteroscedastic measurement errors, if the information about measurement error standard deviations is known. The package produces their maximum likelihood estimates and asymptotic uncertainties using a global optimizer called the differential evolution algorithm. It also produces posterior samples of the model parameters via Metropolis-Hastings within a Gibbs sampler equipped with adaptive Markov chain Monte Carlo. These fitting procedures, however, may produce numerical errors if p&amp;gt;2. The toolbox also contains a function to simulate discrete time series data from CARFIMA(p, H, q) process given the model parameters and observation times. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=carfima" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>carfima: Continuous-Time Fractionally Integrated ARMA Process for
+Irregularly Spaced Long-Memory Time Series Data</h2>
+<p>We provide a toolbox to fit a continuous-time fractionally integrated ARMA process (CARFIMA) on univariate and irregularly spaced time series data via both frequentist and Bayesian machinery. A general-order CARFIMA(p, H, q) model for p&gt;q is specified in Tsai and Chan (2005) &lt;<a href="https://doi.org/10.1111%2Fj.1467-9868.2005.00522.x">doi:10.1111/j.1467-9868.2005.00522.x</a>&gt; and it involves p+q+2 unknown model parameters, i.e., p AR parameters, q MA parameters, Hurst parameter H, and process uncertainty (standard deviation) sigma. Also, the model can account for heteroscedastic measurement errors, if the information about measurement error standard deviations is known. The package produces their maximum likelihood estimates and asymptotic uncertainties using a global optimizer called the differential evolution algorithm. It also produces posterior samples of the model parameters via Metropolis-Hastings within a Gibbs sampler equipped with adaptive Markov chain Monte Carlo. These fitting procedures, however, may produce numerical errors if p&gt;2. The toolbox also contains a function to simulate discrete time series data from CARFIMA(p, H, q) process given the model parameters and observation times. </p>
+<table summary="Package carfima summary">
+<tr>
+<td>Version:</td>
+<td>2.0.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.2.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../mvtnorm/index.html">mvtnorm</a> (&ge; 1.0-11), <a href="../DEoptim/index.html">DEoptim</a> (&ge; 2.2-5), <a href="../pracma/index.html">pracma</a> (&ge; 2.2.9), <a href="../truncnorm/index.html">truncnorm</a> (&ge; 1.0-8), <a href="../invgamma/index.html">invgamma</a> (&ge; 1.1)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-03-21</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Hyungsuk Tak, Henghsiu Tsai, and Kisung You</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Hyungsuk Tak  &#x3c;&#x68;&#x79;&#x75;&#x6e;&#x67;&#x73;&#x75;&#x6b;&#x2e;&#x74;&#x61;&#x6b;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/TimeSeries.html">TimeSeries</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_carfima.html">carfima results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package carfima downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="carfima.pdf"> carfima.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/carfima_2.0.2.tar.gz"> carfima_2.0.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/carfima_2.0.2.zip">carfima_2.0.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/carfima_2.0.2.zip">carfima_2.0.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/carfima_2.0.2.zip">carfima_2.0.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/carfima_2.0.2.tgz">carfima_2.0.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/carfima_2.0.2.tgz">carfima_2.0.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/carfima"> carfima archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=carfima"><samp>https://CRAN.R-project.org/package=carfima</samp></a>
+to link to this page.</p>
+</body>
+</html>

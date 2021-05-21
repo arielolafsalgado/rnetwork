@@ -1,0 +1,42 @@
+Package: fdaPDE
+Version: 1.0
+Date: 2020-01-14
+Title: Functional Data Analysis and Partial Differential Equations;
+        Statistical Analysis of Functional and Spatial Data, Based on
+        Regression with Partial Differential Equation Regularization
+Authors@R: c(person("Eardi", "Lila", role = c("aut"),
+		     email = "elila@uw.edu"),
+	      person("Laura M.", "Sangalli", role = c("aut"),
+		     email = "laura.sangalli@polimi.it"),
+		    person("Eleonora", "Arnone", role = c("aut", "cre"),
+		     email = "eleonora.arnone@polimi.it"),
+	      person("Jim", "Ramsay", role = "aut",
+		     email = " ramsay@psych.mcgill.ca"),
+		    person("Luca", "Formaggia", role = "aut",
+		     email = " luca.formaggia@polimi.it"),
+		    person("Alessandra", "Colli", role = "ctb"),
+		    person("Luca", "Colombo", role = "ctb"),
+		    person("Carlo", "de Falco", role = "ctb"))
+Maintainer: Eleonora Arnone <eleonora.arnone@polimi.it>
+Depends: R (>= 3.5.0), stats, grDevices, graphics, geometry, rgl,
+        Matrix, plot3D, plot3Drgl
+LinkingTo: RcppEigen
+Suggests: MASS, testthat
+Description: An implementation of regression models with partial differential regularizations, making use of the Finite Element Method. The models efficiently handle data distributed over irregularly shaped domains and can comply with various conditions at the boundaries of the domain. A priori information about the spatial structure of the phenomenon under study can be incorporated in the model via the differential regularization.
+License: CC BY-NC-SA 4.0
+Copyright: See the individual source files for copyrights information
+NeedsCompilation: yes
+SystemRequirements: C++11
+RoxygenNote: 7.0.2
+Encoding: UTF-8
+Packaged: 2020-01-17 13:39:45 UTC; eleon_000
+Author: Eardi Lila [aut],
+  Laura M. Sangalli [aut],
+  Eleonora Arnone [aut, cre],
+  Jim Ramsay [aut],
+  Luca Formaggia [aut],
+  Alessandra Colli [ctb],
+  Luca Colombo [ctb],
+  Carlo de Falco [ctb]
+Repository: CRAN
+Date/Publication: 2020-01-17 17:00:08 UTC

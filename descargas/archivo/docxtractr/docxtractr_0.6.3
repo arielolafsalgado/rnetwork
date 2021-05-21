@@ -1,0 +1,52 @@
+Package: docxtractr
+Title: Extract Data Tables and Comments from 'Microsoft' 'Word'
+        Documents
+Version: 0.6.3
+Authors@R: 
+    c(person(given = "Bob",
+             family = "Rudis",
+             role = c("aut", "cre"),
+             email = "bob@rud.is",
+             comment = c(ORCID = "0000-0001-5670-2640")),
+      person(given = "Mark",
+             family = "Dulhunty",
+             role = "ctb"),
+      person(given = "Karlo",
+             family = "Guidoni-Martins",
+             role = "ctb",
+             email = "kguidonimartins@gmail.com"),
+      person(given = "Chris",
+             family = "Muir",
+             role = c("aut", "ctb"),
+             email = "chrismuirrva@gmail.com"),
+      person(given = "John",
+             family = "Muschelli",
+             role =  "ctb",
+             email = "muschellij2@gmail.com")             
+      )
+Maintainer: Bob Rudis <bob@rud.is>
+Description: 'Microsoft Word' 'docx' files provide an 'XML' structure that is fairly
+    straightforward to navigate, especially when it applies to 'Word' tables and
+    comments. Tools are provided to determine table count/structure, comment count
+    and also to extract/clean tables and comments from 'Microsoft Word' 'docx' documents.
+    There is also nascent support for '.doc' files.
+SystemRequirements: LibreOffice (<https://www.libreoffice.org/>)
+        required to extract data from .doc and .ppt[x] files.
+URL: http://gitlab.com/hrbrmstr/docxtractr
+BugReports: https://gitlab.com/hrbrmstr/docxtractr/issues
+Encoding: UTF-8
+Depends: R (>= 3.6.0)
+License: MIT + file LICENSE
+LazyData: true
+Suggests: testthat, covr
+Imports: tools, xml2, purrr, dplyr, utils, httr, magrittr
+RoxygenNote: 7.1.0
+NeedsCompilation: no
+Packaged: 2020-06-13 12:35:12 UTC; hrbrmstr
+Author: Bob Rudis [aut, cre] (<https://orcid.org/0000-0001-5670-2640>),
+  Mark Dulhunty [ctb],
+  Karlo Guidoni-Martins [ctb],
+  Chris Muir [aut, ctb],
+  John Muschelli [ctb]
+Repository: CRAN
+Date/Publication: 2020-06-13 12:50:07 UTC

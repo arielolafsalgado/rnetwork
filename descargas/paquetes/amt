@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package amt</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Animal Movement Tools [R package amt version 0.1.3]" />
+<meta name="citation_author" content="Johannes Signer" />
+<meta name="citation_publication_date" content="2020-10-01" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=amt" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=amt" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="amt: Animal Movement Tools" />
+<meta name="og:description" content="Manage and analyze animal movement data. The functionality of 'amt' includes methods to calculate track statistics (e.g. step lengths, speed, or turning angles), prepare data for fitting habitat selection analyses (resource selection functions and step-selection functions &amp;lt;&lt;a href=&quot;https://doi.org/10.1890%2F04-0953&quot;&gt;doi:10.1890/04-0953&lt;/a&gt;&amp;gt; and integrated step-selection functions &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2F2041-210X.12528&quot;&gt;doi:10.1111/2041-210X.12528&lt;/a&gt;&amp;gt;), and simulation of space-use from fitted step-selection functions &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fecs2.1771&quot;&gt;doi:10.1002/ecs2.1771&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=amt" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>amt: Animal Movement Tools</h2>
+<p>Manage and analyze animal movement data. The functionality of 'amt' includes methods to calculate track statistics (e.g. step lengths, speed, or turning angles), prepare data for fitting habitat selection analyses (resource selection functions and step-selection functions &lt;<a href="https://doi.org/10.1890%2F04-0953">doi:10.1890/04-0953</a>&gt; and integrated step-selection functions &lt;<a href="https://doi.org/10.1111%2F2041-210X.12528">doi:10.1111/2041-210X.12528</a>&gt;), and simulation of space-use from fitted step-selection functions &lt;<a href="https://doi.org/10.1002%2Fecs2.1771">doi:10.1002/ecs2.1771</a>&gt;.</p>
+<table summary="Package amt summary">
+<tr>
+<td>Version:</td>
+<td>0.1.3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../broom/index.html">broom</a>, <a href="../checkmate/index.html">checkmate</a>, <a href="../circular/index.html">circular</a>, <a href="../ctmm/index.html">ctmm</a>, <a href="../dplyr/index.html">dplyr</a> (&ge; 0.7.0), <a href="../fitdistrplus/index.html">fitdistrplus</a>, <a href="../FNN/index.html">FNN</a>, <a href="../geosphere/index.html">geosphere</a>, <a href="../KernSmooth/index.html">KernSmooth</a>, <a href="../leaflet/index.html">leaflet</a>, <a href="../lubridate/index.html">lubridate</a>, <a href="../magrittr/index.html">magrittr</a>, <a href="../maptools/index.html">maptools</a>, methods, <a href="../purrr/index.html">purrr</a>, <a href="../raster/index.html">raster</a>, <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.7), <a href="../rgeos/index.html">rgeos</a>, <a href="../Rdpack/index.html">Rdpack</a>, <a href="../rlang/index.html">rlang</a>, <a href="../sf/index.html">sf</a>, <a href="../sp/index.html">sp</a>, <a href="../survival/index.html">survival</a>, <a href="../tibble/index.html">tibble</a>, <a href="../tidyr/index.html">tidyr</a> (&ge;
+1.0.0)</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../adehabitatLT/index.html">adehabitatLT</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../bcpa/index.html">bcpa</a>, <a href="../devtools/index.html">devtools</a>, <a href="../moveHMM/index.html">moveHMM</a>, <a href="../move/index.html">move</a>, <a href="../sessioninfo/index.html">sessioninfo</a>, <a href="../spacetime/index.html">spacetime</a>, <a href="../trajectories/index.html">trajectories</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../tinytest/index.html">tinytest</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-01</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Johannes Signer [aut, cre],
+  Brian Smith [ctb],
+  Bjoern Reineking [ctb],
+  Ulrike Schlaegel [ctb],
+  Scott LaPoint [dtc]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Johannes Signer  &#x3c;&#x6a;&#x73;&#x69;&#x67;&#x6e;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x67;&#x77;&#x64;&#x67;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/jmsigner/amt">https://github.com/jmsigner/amt</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">amt citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Tracking.html">Tracking</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_amt.html">amt results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package amt downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="amt.pdf"> amt.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/p1_getting_started.html">Getting started with amt</a><br/>
+<a href="vignettes/p3_rsf.html">Resource Selection Functions (RSF) with 'amt'</a><br/>
+<a href="vignettes/p4_SSF.html">Fitting a Step-Selection Function</a><br/>
+<a href="vignettes/p5_other_packages.html">Interface to other packages with 'amt'</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/amt_0.1.3.tar.gz"> amt_0.1.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/amt_0.1.3.zip">amt_0.1.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/amt_0.1.3.zip">amt_0.1.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/amt_0.1.3.zip">amt_0.1.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/amt_0.1.3.tgz">amt_0.1.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/amt_0.1.3.tgz">amt_0.1.3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/amt"> amt archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package amt reverse dependencies">
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../move/index.html">move</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=amt"><samp>https://CRAN.R-project.org/package=amt</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,32 @@
+Package: blandr
+Title: Bland-Altman Method Comparison
+Version: 0.4.3
+Description: Carries out Bland Altman analyses (also known as a Tukey
+    mean-difference plot) as described by JM Bland and DG Altman in
+    1986 <doi:10.1016/S0140-6736(86)90837-8>. This package was created in 
+    2015 as existing Bland-Altman analysis functions did not calculate 
+    confidence intervals. This package was created to rectify this, 
+    and create reproducible plots.
+Depends: R (>= 3.4.0)
+Authors@R: person("Deepankar", "Datta", email = "deepankardatta@nhs.net",
+                  role = c("aut", "cre"))
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/deepankardatta/blandr/
+BugReports: https://github.com/deepankardatta/blandr/issues
+Imports: ggplot2, knitr
+Suggests: rmarkdown
+VignetteBuilder: knitr
+Collate: 'blandr.basic.plot.r' 'blandr.data.preparation.r'
+        'blandr.ggplot.r' 'blandr.plot.limits.r' 'blandr.statistics.r'
+        'blandr.draw.r' 'blandr.display.r' 'blandr.display.and.draw.r'
+        'blandr.display.and.plot.r' 'blandr.method.comparison.r'
+        'blandr.plot.r' 'blandr.proportional.bias.r'
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-07-29 07:08:27 UTC; hornik
+Author: Deepankar Datta [aut, cre]
+Maintainer: Deepankar Datta <deepankardatta@nhs.net>
+Repository: CRAN
+Date/Publication: 2017-07-29 09:09:23

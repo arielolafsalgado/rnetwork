@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package bisque</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=bisque" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="bisque: Approximate Bayesian Inference via Sparse Grid Quadrature Evaluation (BISQuE) for Hierarchical Models" />
+<meta name="og:description" content="Implementation of the 'bisque' strategy for approximate Bayesian posterior inference. See Hewitt and Hoeting (2019) &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1904.07270&quot;&gt;arXiv:1904.07270&lt;/a&gt;&amp;gt; for complete details. 'bisque' combines conditioning with sparse grid quadrature rules to approximate marginal posterior quantities of hierarchical Bayesian models. The resulting approximations are computationally efficient for many hierarchical Bayesian models. The 'bisque' package allows approximate posterior inference for custom models; users only need to specify the conditional densities required for the approximation." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=bisque" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>bisque: Approximate Bayesian Inference via Sparse Grid Quadrature
+Evaluation (BISQuE) for Hierarchical Models</h2>
+<p>Implementation of the 'bisque' strategy for approximate Bayesian posterior inference.  See Hewitt and Hoeting (2019) &lt;<a href="https://arxiv.org/abs/1904.07270">arXiv:1904.07270</a>&gt; for complete details.  'bisque' combines conditioning with sparse grid quadrature rules to approximate marginal posterior quantities of hierarchical Bayesian models.  The resulting approximations are computationally efficient for many hierarchical Bayesian models.  The 'bisque' package allows approximate posterior inference for custom models; users only need to specify the conditional densities required for the approximation.</p>
+<table summary="Package bisque summary">
+<tr>
+<td>Version:</td>
+<td>1.0.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0.2)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../mvQuad/index.html">mvQuad</a>, <a href="../Rcpp/index.html">Rcpp</a>, <a href="../foreach/index.html">foreach</a>, <a href="../itertools/index.html">itertools</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.4), <a href="../RcppArmadillo/index.html">RcppArmadillo</a>, <a href="../RcppEigen/index.html">RcppEigen</a> (&ge; 0.3.3.3.1)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../fields/index.html">fields</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-02-06</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Joshua Hewitt</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Joshua Hewitt  &#x3c;&#x6a;&#x6f;&#x73;&#x68;&#x75;&#x61;&#x2e;&#x68;&#x65;&#x77;&#x69;&#x74;&#x74;&#x20;&#x61;&#x74;&#x20;&#x64;&#x75;&#x6b;&#x65;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>A system with a recent-enough C++11 compiler (such
+as g++-4.8 or later).</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_bisque.html">bisque results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package bisque downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="bisque.pdf"> bisque.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/bisque_1.0.2.tar.gz"> bisque_1.0.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/bisque_1.0.2.zip">bisque_1.0.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/bisque_1.0.2.zip">bisque_1.0.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/bisque_1.0.2.zip">bisque_1.0.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/bisque_1.0.2.tgz">bisque_1.0.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/bisque_1.0.2.tgz">bisque_1.0.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/bisque"> bisque archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=bisque"><samp>https://CRAN.R-project.org/package=bisque</samp></a>
+to link to this page.</p>
+</body>
+</html>

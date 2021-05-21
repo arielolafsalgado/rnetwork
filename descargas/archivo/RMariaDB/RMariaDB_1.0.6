@@ -1,0 +1,43 @@
+Package: RMariaDB
+Title: Database Interface and 'MariaDB' Driver
+Version: 1.0.6
+Authors@R: c(
+    person("Kirill", "M\u00fcller", role = c("aut", "cre"), email = "krlmlr+r@mailbox.org", comment = c(ORCID = "0000-0002-1416-3412")),
+    person("Jeroen", "Ooms", role = "aut", comment = c(ORCID = "0000-0002-4035-0289")),
+    person("David", "James", role = "aut"),
+    person("Saikat", "DebRoy", role = "aut"),
+    person("Hadley", "Wickham", role = "aut"),
+    person("Jeffrey", "Horner", role = "aut"),
+    person("R Consortium", role = "fnd"),
+    person("RStudio", role = "cph"))
+Description: Implements a 'DBI'-compliant interface to 'MariaDB' (<https://mariadb.org/>) and 'MySQL' (<https://www.mysql.com/>) databases.
+License: GPL-2
+URL: https://github.com/r-dbi/RMariaDB,
+        https://downloads.mariadb.org/connector-c/
+BugReports: https://github.com/r-dbi/RMariaDB/issues
+Depends: R (>= 2.8.0)
+Imports: bit64, DBI (>= 1.0.0), hms, methods, Rcpp (>= 0.12.4)
+Suggests: DBItest, rprojroot, testthat
+LinkingTo: BH, plogr, Rcpp
+Encoding: UTF-8
+NeedsCompilation: yes
+RoxygenNote: 6.0.1.9000
+SystemRequirements: libmariadb-client-lgpl-dev or libmysqlclient-dev
+        (deb), mariadb-connector-c-devel or mariadb-devel (rpm),
+        mariadb-connector-c or mysql-connector-c (brew)
+Collate: 'MariaDBConnection.R' 'MariaDBDriver.R' 'MariaDBResult.R'
+        'RMariaDB.R' 'RcppExports.R' 'coerce.R' 'connect.R' 'default.R'
+        'export.R' 'names.R' 'query.R' 'quote.R' 'rownames.R' 'table.R'
+        'transaction.R' 'utils.R' 'zzz.R'
+Packaged: 2018-05-06 17:03:59 UTC; kirill
+Author: Kirill Müller [aut, cre] (<https://orcid.org/0000-0002-1416-3412>),
+  Jeroen Ooms [aut] (<https://orcid.org/0000-0002-4035-0289>),
+  David James [aut],
+  Saikat DebRoy [aut],
+  Hadley Wickham [aut],
+  Jeffrey Horner [aut],
+  R Consortium [fnd],
+  RStudio [cph]
+Maintainer: Kirill Müller <krlmlr+r@mailbox.org>
+Repository: CRAN
+Date/Publication: 2018-05-06 20:21:29 UTC

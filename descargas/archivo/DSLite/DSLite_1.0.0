@@ -1,0 +1,35 @@
+Package: DSLite
+Type: Package
+Version: 1.0.0
+Title: 'DataSHIELD' Implementation on Local Datasets
+Authors@R: 
+    c(person(given = "Yannick",
+             family = "Marcon",
+             role = c("aut", "cre"),
+             email = "yannick.marcon@obiba.org",
+             comment = c(ORCID = "0000-0003-0138-2023")))
+Depends: R (>= 3.5.0), DSI (>= 1.0), methods, R6
+Suggests: knitr, testthat, rmarkdown
+Description: 'DataSHIELD' is an infrastructure and series of R packages that 
+    enables the remote and 'non-disclosive' analysis of sensitive research data.
+    This 'DataSHIELD Interface' implementation is for analyzing datasets living
+    in the current R session. The purpose of this is primarily for lightweight
+    'DataSHIELD' analysis package development.
+License: LGPL (>= 2.1)
+URL: http://www.datashield.ac.uk https://doi.org/10.1093/ije/dyu188
+BugReports: https://github.com/datashield/DSLite
+RoxygenNote: 7.1.0
+VignetteBuilder: knitr
+Encoding: UTF-8
+Collate: 'DSLiteDriver.R' 'DSLiteConnection.R' 'DSLiteResult.R'
+        'DSLiteServer.R' 'data.cnsim.R' 'data.dasim.R'
+        'data.discordant.R' 'data.survival.R' 'data.testing.dataset.R'
+        'defaultDSConfiguration.R' 'getDSLiteData.R' 'setupCNSIMTest.R'
+        'setupDASIMTest.R' 'setupDATASETTest.R' 'setupDISCORDANTTest.R'
+        'setupDSLiteServer.R' 'setupSURVIVALTest.R'
+NeedsCompilation: no
+Packaged: 2020-04-09 14:07:41 UTC; yannick
+Author: Yannick Marcon [aut, cre] (<https://orcid.org/0000-0003-0138-2023>)
+Maintainer: Yannick Marcon <yannick.marcon@obiba.org>
+Repository: CRAN
+Date/Publication: 2020-04-10 16:30:02 UTC

@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package FLightR</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Reconstruct Animal Paths from Solar Geolocation Loggers Data [R package FLightR version 0.5.0]" />
+<meta name="citation_author1" content="Eldar Rakhimberdiev" />
+<meta name="citation_author2" content="Anatoly Saveliev" />
+<meta name="citation_author3" content="Julia Karagicheva" />
+<meta name="citation_publication_date" content="2020-05-15" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=FLightR" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=FLightR" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="FLightR: Reconstruct Animal Paths from Solar Geolocation Loggers Data" />
+<meta name="og:description" content="Spatio-temporal locations of an animal are computed from annotated data with a hidden Markov model via particle filter algorithm. The package is relatively robust to varying degrees of shading. The hidden Markov model is described in Movement Ecology (Rakhimberdiev et al., 2015) &amp;lt;&lt;a href=&quot;https://doi.org/10.1186%2Fs40462-015-0062-5&quot;&gt;doi:10.1186/s40462-015-0062-5&lt;/a&gt;&amp;gt;, general package description is in the Methods in Ecology and Evolution (Rakhimberdiev et al., 2017) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2F2041-210X.12765&quot;&gt;doi:10.1111/2041-210X.12765&lt;/a&gt;&amp;gt; and package accuracy assessed in the Journal of Avian Biology (Rakhimberdiev et al. 2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fjav.00891&quot;&gt;doi:10.1111/jav.00891&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=FLightR" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>FLightR: Reconstruct Animal Paths from Solar Geolocation Loggers Data</h2>
+<p>Spatio-temporal locations of an animal are computed 
+    from annotated data with a hidden Markov  model via particle
+    filter algorithm. The package is relatively robust to varying
+    degrees of shading.
+    The hidden Markov model is described in Movement Ecology (Rakhimberdiev et al., 2015) &lt;<a href="https://doi.org/10.1186%2Fs40462-015-0062-5">doi:10.1186/s40462-015-0062-5</a>&gt;,
+    general package description is in the Methods in Ecology and Evolution (Rakhimberdiev et al., 2017) &lt;<a href="https://doi.org/10.1111%2F2041-210X.12765">doi:10.1111/2041-210X.12765</a>&gt;
+    and package accuracy assessed in the Journal of Avian Biology (Rakhimberdiev et al. 2016) &lt;<a href="https://doi.org/10.1111%2Fjav.00891">doi:10.1111/jav.00891</a>&gt;.</p>
+<table summary="Package FLightR summary">
+<tr>
+<td>Version:</td>
+<td>0.5.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0.2)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../bit/index.html">bit</a>, <a href="../ggsn/index.html">ggsn</a>, <a href="../ggmap/index.html">ggmap</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../CircStats/index.html">CircStats</a>, <a href="../circular/index.html">circular</a>, <a href="../GeoLight/index.html">GeoLight</a>, <a href="../fields/index.html">fields</a>, <a href="../maptools/index.html">maptools</a>, methods, <a href="../mgcv/index.html">mgcv</a>, <a href="../nlme/index.html">nlme</a>, parallel, <a href="../raster/index.html">raster</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a>, <a href="../rgdal/index.html">rgdal</a>, <a href="../rgeos/index.html">rgeos</a>, <a href="../sp/index.html">sp</a>, <a href="../truncnorm/index.html">truncnorm</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../covr/index.html">covr</a>, <a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-05-15</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Eldar Rakhimberdiev [aut, cre],
+  Anatoly Saveliev [aut],
+  Julia Karagicheva [aut],
+  Simeon Lisovski [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Eldar Rakhimberdiev  &#x3c;&#x65;&#x2e;&#x72;&#x61;&#x6b;&#x68;&#x69;&#x6d;&#x62;&#x65;&#x72;&#x64;&#x69;&#x65;&#x76;&#x20;&#x61;&#x74;&#x20;&#x72;&#x75;&#x67;&#x2e;&#x6e;&#x6c;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="http://github.com/eldarrak/FLightR/issues">http://github.com/eldarrak/FLightR/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://CRAN.R-project.org/package=FLightR">https://CRAN.R-project.org/package=FLightR</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">FLightR citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/SpatioTemporal.html">SpatioTemporal</a>, <a href="../../views/Tracking.html">Tracking</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_FLightR.html">FLightR results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package FLightR downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="FLightR.pdf"> FLightR.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/FLightR_with_black-tailed_godwit_vignette_from_MEE_2017.html">FLightR with black-tailed godwit vignette from MEE 2017</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/FLightR_0.5.0.tar.gz"> FLightR_0.5.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/FLightR_0.5.0.zip">FLightR_0.5.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/FLightR_0.5.0.zip">FLightR_0.5.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/FLightR_0.5.0.zip">FLightR_0.5.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/FLightR_0.5.0.tgz">FLightR_0.5.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/FLightR_0.5.0.tgz">FLightR_0.5.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/FLightR"> FLightR archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=FLightR"><samp>https://CRAN.R-project.org/package=FLightR</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package cNORM</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Continuous Norming [R package cNORM version 1.2.3]" />
+<meta name="citation_author1" content="Wolfgang Lenhard" />
+<meta name="citation_author2" content="Alexandra Lenhard" />
+<meta name="citation_author3" content="Sebastian Gary" />
+<meta name="citation_publication_date" content="2020-06-18" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=cNORM" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=cNORM" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="cNORM: Continuous Norming" />
+<meta name="og:description" content="Conventional methods for producing standard scores in psychometrics or biometrics are often plagued with &quot;jumps&quot; or &quot;gaps&quot; (i.e., discontinuities) in norm tables and low confidence for assessing extreme scores. The continuous norming method introduced by A. Lenhard et al. (2016, &amp;lt;&lt;a href=&quot;https://doi.org/10.1177%2F1073191116656437&quot;&gt;doi:10.1177/1073191116656437&lt;/a&gt;&amp;gt;; 2019, &amp;lt;&lt;a href=&quot;https://doi.org/10.1371%2Fjournal.pone.0222279&quot;&gt;doi:10.1371/journal.pone.0222279&lt;/a&gt;&amp;gt;) and generates continuous test norm scores on the basis of the raw data from standardization samples, without requiring assumptions about the distribution of the raw data: Norm scores are directly established from raw data by modeling the latter ones as a function of both percentile scores and an explanatory variable (e.g., age). The method minimizes bias arising from sampling and measurement error, while handling marked deviations from normality, addressing bottom or ceiling effects and capturing almost all of the variance in the original norm data sample. An online demonstration is available via &amp;lt;&lt;a href=&quot;https://cnorm.shinyapps.io/cNORM/&quot;&gt;https://cnorm.shinyapps.io/cNORM/&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=cNORM" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>cNORM: Continuous Norming</h2>
+<p>Conventional methods for producing standard scores in psychometrics or biometrics 
+    are often plagued with "jumps" or "gaps" (i.e., discontinuities) in norm tables and low 
+    confidence for assessing extreme scores. The continuous norming method introduced by A. 
+    Lenhard et al. (2016, &lt;<a href="https://doi.org/10.1177%2F1073191116656437">doi:10.1177/1073191116656437</a>&gt;; 2019, &lt;<a href="https://doi.org/10.1371%2Fjournal.pone.0222279">doi:10.1371/journal.pone.0222279</a>&gt;) and generates continuous test norm 
+    scores on the basis of the raw data from standardization samples, without requiring 
+    assumptions about the distribution of the raw data: Norm scores are directly established 
+    from raw data by modeling the latter ones as a function of both percentile scores and an 
+    explanatory variable (e.g., age). The method minimizes bias arising from sampling and 
+    measurement error, while handling marked deviations from normality, addressing bottom 
+    or ceiling effects and capturing almost all of the variance in the original norm data 
+    sample. An online demonstration is available via &lt;<a href="https://cnorm.shinyapps.io/cNORM/">https://cnorm.shinyapps.io/cNORM/</a>&gt;.</p>
+<table summary="Package cNORM summary">
+<tr>
+<td>Version:</td>
+<td>1.2.3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../lattice/index.html">lattice</a> (&ge; 0.20), <a href="../leaps/index.html">leaps</a> (&ge; 3.0), <a href="../latticeExtra/index.html">latticeExtra</a> (&ge; 0.6)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../markdown/index.html">markdown</a>, <a href="../shiny/index.html">shiny</a>, <a href="../shinycssloaders/index.html">shinycssloaders</a>, <a href="../foreign/index.html">foreign</a>, <a href="../readxl/index.html">readxl</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-18</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Wolfgang Lenhard [cre, aut] (&lt;https://orcid.org/0000-0002-8184-6889&gt;),
+  Alexandra Lenhard [aut],
+  Sebastian Gary [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Wolfgang Lenhard  &#x3c;&#x77;&#x6f;&#x6c;&#x66;&#x67;&#x61;&#x6e;&#x67;&#x2e;&#x6c;&#x65;&#x6e;&#x68;&#x61;&#x72;&#x64;&#x20;&#x61;&#x74;&#x20;&#x75;&#x6e;&#x69;&#x2d;&#x77;&#x75;&#x65;&#x72;&#x7a;&#x62;&#x75;&#x72;&#x67;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/WLenhard/cNORM/issues">https://github.com/WLenhard/cNORM/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/AGPL-3">AGPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://www.psychometrica.de/cNorm_en.html">https://www.psychometrica.de/cNorm_en.html</a>,
+<a href="https://github.com/WLenhard/cNORM">https://github.com/WLenhard/cNORM</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">cNORM citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Psychometrics.html">Psychometrics</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_cNORM.html">cNORM results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package cNORM downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="cNORM.pdf"> cNORM.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/cNORM-Demo.html">"Demonstration for creating continuous norms with cNORM"</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/cNORM_1.2.3.tar.gz"> cNORM_1.2.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/cNORM_1.2.3.zip">cNORM_1.2.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/cNORM_1.2.3.zip">cNORM_1.2.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/cNORM_1.2.3.zip">cNORM_1.2.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/cNORM_1.2.3.tgz">cNORM_1.2.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/cNORM_1.2.3.tgz">cNORM_1.2.3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/cNORM"> cNORM archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=cNORM"><samp>https://CRAN.R-project.org/package=cNORM</samp></a>
+to link to this page.</p>
+</body>
+</html>

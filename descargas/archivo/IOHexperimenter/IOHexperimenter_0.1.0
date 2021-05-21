@@ -1,0 +1,36 @@
+Package: IOHexperimenter
+Type: Package
+Title: Benchmarking Part of the 'IOHprofiler'
+Version: 0.1.0
+Authors@R: c(
+    person("Furong", "Ye", email = "f.ye@liacs.leidenuniv.nl", role = "aut"),
+    person("Hao", "Wang", email = "h.wang@liacs.leidenuniv.nl", role = "aut"),
+    person("Diederick", "Vermetten", email="d.l.vermetten@liacs.leidenuniv.nl", role = c("aut","cre")),
+    person("Carola", "Doerr", email = "Carola.Doerr@mpi-inf.mpg.de", role = "aut"),
+    person("Thomas", "Bäck", email="t.h.w.baeck@liacs.leidenuniv.nl", role = "aut"))
+Maintainer: Diederick Vermetten <d.l.vermetten@liacs.leidenuniv.nl>
+Description: The benchmarking module for the Iterative Optimization Heuristics
+    Profiler ('IOHprofiler'). This module provides benchmarking in the 'IOHprofiler'
+    format. It enables performance tracking and analysis for any iterative optimization heuristic, 
+    which can be visualized and analyzed using the 'IOHanalyzer' package. It also provides access
+    to predefined benchmarking functions, both for pseudo-boolean and continuous domains, as well
+    as some sample algorithms. 
+License: BSD_3_clause + file LICENSE
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/IOHprofiler/IOHexperimenter
+BugReports: https://github.com/IOHprofiler/IOHexperimenter/issues
+Imports: Rcpp (>= 1.0.1), assertthat, magrittr
+LinkingTo: Rcpp, BH
+RoxygenNote: 6.1.1
+SystemRequirements: GNU make
+Suggests: testthat
+NeedsCompilation: yes
+Packaged: 2020-02-20 16:11:40 UTC; diedi
+Author: Furong Ye [aut],
+  Hao Wang [aut],
+  Diederick Vermetten [aut, cre],
+  Carola Doerr [aut],
+  Thomas Bäck [aut]
+Repository: CRAN
+Date/Publication: 2020-02-28 10:30:09 UTC

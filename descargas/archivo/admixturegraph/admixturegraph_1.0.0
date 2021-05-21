@@ -1,0 +1,30 @@
+Package: admixturegraph
+Type: Package
+Title: Admixture Graph Manipulation and Fitting
+Version: 1.0.0
+Date: 2015-09-24
+Authors@R: c(person("Thomas", "Mailund", email = "mailund@birc.au.dk", role = c("cre", "aut")),
+             person("Kalle", "Leppala", email = "kalle.m.leppala@gmail.com", role = c("aut")))
+Description: Implements tools for building and visualising admixture graphs
+    and for extracting equations from them. These equations can be compared to f-
+    statistics obtained from data to test the consistency of a graph against data --
+    for example by comparing the sign of f_4-statistics with the signs predicted by
+    the graph -- and graph parameters (edge lengths and admixture proportions) can
+    be fitted to observed statistics.
+License: GPL-2
+Depends: R (>= 3.2.2)
+Imports: doParallel, dplyr, foreach, ggplot2, graphics, MASS,
+        neldermead, parallel, pracma, stats, utils
+Suggests: knitr, testthat
+URL: https://github.com/mailund/admixture_graph
+BugReports: https://github.com/mailund/admixture_graph/issues
+VignetteBuilder: knitr
+LazyData: true
+RoxygenNote: 5.0.0
+NeedsCompilation: no
+Packaged: 2016-06-10 09:27:43 UTC; Luku
+Author: Thomas Mailund [cre, aut],
+  Kalle Leppala [aut]
+Maintainer: Thomas Mailund <mailund@birc.au.dk>
+Repository: CRAN
+Date/Publication: 2016-06-10 13:48:40

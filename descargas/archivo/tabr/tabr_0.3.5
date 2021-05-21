@@ -1,0 +1,33 @@
+Package: tabr
+Version: 0.3.5
+Title: Music Notation Syntax, Manipulation, Analysis and Transcription
+        in R
+Description: Provides a music notation syntax and a collection of music programming functions for 
+    generating, manipulating, organizing and analyzing musical information in R.
+    The music notation framework facilitates creating and analyzing music data in notation form.
+    The package also provides API wrapper functions for transcribing musical representations in R into guitar tablature ("tabs") using the 'LilyPond' backend (<http://lilypond.org>).
+    'LilyPond' is open source music engraving software for generating high quality sheet music based on markup syntax. 
+    'tabr' generates 'LilyPond' files from R code and can pass them to 'LilyPond' to be rendered into sheet music pdf files from R.
+    While 'LilyPond' caters to sheet music in general and 'tabr' can be used to create basic sheet music, 
+    the transcription functions focus on leveraging 'LilyPond' specifically for creating quality guitar tablature.
+    The package offers nominal MIDI file output support in conjunction with rendering tablature output. See the 'tuneR' package for more general use of MIDI files in R.
+Authors@R: person("Matthew", "Leonawicz", email = "matt_leonawicz@esource.com", role = c("aut", "cre"))
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+URL: https://github.com/leonawicz/tabr
+BugReports: https://github.com/leonawicz/tabr/issues
+Depends: R (>= 2.10)
+SystemRequirements: LilyPond
+Suggests: testthat, knitr, rmarkdown, covr, kableExtra, htmltools,
+        fansi
+Imports: magrittr, dplyr, purrr, tidyr, crayon, ggplot2
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-10-06 21:37:10 UTC; Matt
+Author: Matthew Leonawicz [aut, cre]
+Maintainer: Matthew Leonawicz <matt_leonawicz@esource.com>
+Repository: CRAN
+Date/Publication: 2019-10-06 22:00:02 UTC

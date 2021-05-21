@@ -1,0 +1,53 @@
+Package: EML
+Type: Package
+Title: Read and Write Ecological Metadata Language Files
+Description: Work with Ecological Metadata Language ('EML') files. 
+    'EML' is a widely used metadata standard in the ecological and
+    environmental sciences, described in Jones et al. (2006),
+    <doi:10.1146/annurev.ecolsys.37.091305.110031>.
+Version: 2.0.1
+Authors@R: c(
+              person("Carl", "Boettiger", 
+                  email = "cboettig@gmail.com", 
+                  role = c("aut", "cre", "cph"),
+                  comment=c(ORCID = "0000-0002-1642-628X")),
+              person("Matthew B.", "Jones", role="aut", 
+                     comment = c(ORCID="0000-0003-0077-4738")),      
+              person("Mitchell", "Maier", 
+                     role = c("ctb"),
+                     comment= c(ORCID = "0000-0001-6955-0535")),
+              person("Bryce", "Mecum", role = "ctb", 
+                     email = "brycemecum@gmail.com",
+                     comment = c(ORCID = "0000-0002-0381-3766")),
+              person("Maëlle", "Salmon", role = "ctb", 
+                     email = "maelle.salmon@yahoo.se", 
+                     comment = c(ORCID = "0000-0002-2815-0399")),
+              person("Jeanette", "Clark", role = "ctb", 
+                     email = "jclark@nceas.ucsb.edu",
+                     comment = c(ORCID = "0000-0003-4703-1974"))
+            )
+License: MIT + file LICENSE
+URL: https://github.com/ropensci/EML
+BugReports: https://github.com/ropensci/EML/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 2.10)
+Suggests: knitr, taxize, tibble, testthat, covr, EML, units,
+        htmlwidgets, shiny, shinyjs, spelling
+Imports: xml2, methods, digest, emld (>= 0.0.0.9900), jqr, jsonlite,
+        uuid, rmarkdown, utils, dplyr
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+Language: en-US
+NeedsCompilation: no
+Packaged: 2019-12-09 05:29:07 UTC; cboettig
+Author: Carl Boettiger [aut, cre, cph]
+    (<https://orcid.org/0000-0002-1642-628X>),
+  Matthew B. Jones [aut] (<https://orcid.org/0000-0003-0077-4738>),
+  Mitchell Maier [ctb] (<https://orcid.org/0000-0001-6955-0535>),
+  Bryce Mecum [ctb] (<https://orcid.org/0000-0002-0381-3766>),
+  Maëlle Salmon [ctb] (<https://orcid.org/0000-0002-2815-0399>),
+  Jeanette Clark [ctb] (<https://orcid.org/0000-0003-4703-1974>)
+Maintainer: Carl Boettiger <cboettig@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-12-09 10:40:02 UTC

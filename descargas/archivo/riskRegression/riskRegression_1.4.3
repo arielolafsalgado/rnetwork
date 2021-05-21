@@ -1,0 +1,35 @@
+Package: riskRegression
+Type: Package
+Title: Risk Regression Models and Prediction Scores for Survival
+        Analysis with Competing Risks
+Version: 1.4.3
+Author: Thomas Alexander Gerds, Thomas Harder Scheike, Paul Blanche, Brice
+    Ozenne
+Depends: R (>= 2.9.0), data.table (>= 1.10.4), ggplot2 (>= 2.1.0),
+        prodlim (>= 1.5.7)
+Imports: abind, stats, graphics, survival (>= 2.40.1), lava (>= 1.4.7),
+        cmprsk, doParallel, foreach, parallel, Rcpp, rms (>= 5.0-0)
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: boot, CoxBoost, Daim, mets, mstate, party, pec, penalized,
+        pROC, randomForest, randomForestSRC, rbenchmark, rpart,
+        testthat, timereg (>= 1.9.1)
+Maintainer: Thomas Alexander Gerds <tag@biostat.ku.dk>
+Description: Implementation of the following methods for event history analysis.
+    Risk regression models for survival endpoints also in the presence of competing
+    risks are fitted using binomial regression based on a time sequence of binary
+    event status variables. A formula interface for the Fine-Gray regression model
+    and an interface for the combination of cause-specific Cox regression models.
+    A toolbox for assessing and comparing performance of risk predictions (risk
+    markers and risk prediction models). Prediction performance is measured by the
+    Brier score and the area under the ROC curve for binary possibly time-dependent
+    outcome. Inverse probability of censoring weighting and pseudo values are used
+    to deal with right censored data. Lists of risk markers and lists of risk models
+    are assessed simultaneously. Cross-validation repeatedly splits the data, trains
+    the risk prediction models on one part of each split and then summarizes and
+    compares the performance across splits.
+License: GPL (>= 2)
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2017-06-29 16:01:35 UTC; tag
+Repository: CRAN
+Date/Publication: 2017-06-30 17:35:24 UTC

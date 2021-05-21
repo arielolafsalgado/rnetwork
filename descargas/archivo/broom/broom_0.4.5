@@ -1,0 +1,65 @@
+Type: Package
+Package: broom
+Title: Convert Statistical Analysis Objects into Tidy Data Frames
+Version: 0.4.5
+Authors@R: c(
+    person("David", "Robinson", email = "admiral.david@gmail.com", role = c("aut", "cre")),
+    person("Matthieu", "Gomez", email = "mattg@princeton.edu", role = "ctb"),
+    person("Boris", "Demeshev", email = "boris.demeshev@gmail.com", role = "ctb"),
+    person("Dieter", "Menne", email = "dieter.menne@menne-biomed.de", role = "ctb"),
+    person("Benjamin", "Nutter", email = "nutter@battelle.org", role = "ctb"),
+    person("Luke", "Johnston", email = "luke.johnston@mail.utoronto.ca", role = "ctb"),
+    person("Ben", "Bolker", email = "bolker@mcmaster.ca", role = "ctb"),
+    person("Francois", "Briatte", email = "f.briatte@gmail.com", role = "ctb"),
+    person("Jeffrey", "Arnold", email = "jeffrey.arnold@gmail.com", role = "ctb"),
+    person("Jonah", "Gabry", email = "jsg2201@columbia.edu", role = "ctb"),
+    person("Luciano", "Selzer", email = "luciano.selzer@gmail.com", role = "ctb"),
+    person("Gavin", "Simpson", email = "ucfagls@gmail.com", role = "ctb"),
+    person("Jens", "Preussner", email = " jens.preussner@mpi-bn.mpg.de", role = "ctb"),
+    person("Jay", "Hesselberth", email = "jay.hesselberth@gmail.com", role = "ctb"),
+    person("Matthew", "Lincoln", email = "matthew.d.lincoln@gmail.com", role = "ctb"),
+    person("Derek", "Chiu", role = "ctb"),
+    person("Hadley", "Wickham", email = "hadley@rstudio.com", role = "ctb"))
+Maintainer: David Robinson <admiral.david@gmail.com>
+Description: Convert statistical analysis objects from R into tidy data frames,
+    so that they can more easily be combined, reshaped and otherwise processed
+    with tools like 'dplyr', 'tidyr' and 'ggplot2'. The package provides three
+    S3 generics: tidy, which summarizes a model's statistical findings such as
+    coefficients of a regression; augment, which adds columns to the original
+    data such as predictions, residuals and cluster assignments; and glance, which
+    provides a one-row summary of model-level statistics.
+License: MIT + file LICENSE
+URL: http://github.com/tidyverse/broom
+BugReports: http://github.com/tidyverse/broom/issues
+Imports: dplyr, methods, nlme, plyr, psych, reshape2, stringr, tidyr
+Suggests: AER, akima, AUC, bbmle, betareg, biglm, binGroup, boot, brms,
+        btergm, coda, covr, emmeans, ergm, gam, gamlss, gamlss.data,
+        gamlss.dist, geepack, ggplot2, glmnet, gmm, Hmisc, knitr, ks,
+        Lahman, lfe, lme4, lmodel2, lmtest, lsmeans, maps, maptools,
+        MASS, Matrix, mclust, mgcv, muhaz, multcomp, network, nnet,
+        orcutt, plm, poLCA, purrr, quantreg, rgeos, robust, rstan,
+        rstanarm, sp, speedglm, statnet.common, survival, testthat,
+        tibble, xergm, zoo
+VignetteBuilder: knitr
+NeedsCompilation: no
+Repository: CRAN
+RoxygenNote: 6.0.1
+Packaged: 2018-06-29 21:24:05 UTC; alex
+Author: David Robinson [aut, cre],
+  Matthieu Gomez [ctb],
+  Boris Demeshev [ctb],
+  Dieter Menne [ctb],
+  Benjamin Nutter [ctb],
+  Luke Johnston [ctb],
+  Ben Bolker [ctb],
+  Francois Briatte [ctb],
+  Jeffrey Arnold [ctb],
+  Jonah Gabry [ctb],
+  Luciano Selzer [ctb],
+  Gavin Simpson [ctb],
+  Jens Preussner [ctb],
+  Jay Hesselberth [ctb],
+  Matthew Lincoln [ctb],
+  Derek Chiu [ctb],
+  Hadley Wickham [ctb]
+Date/Publication: 2018-07-03 07:20:02 UTC

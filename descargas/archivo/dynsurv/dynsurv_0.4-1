@@ -1,0 +1,45 @@
+Package: dynsurv
+Title: Dynamic Models for Survival Data
+Version: 0.4-1
+Date: 2020-08-27
+Authors@R: c(
+    person(given = "Wenjie", family = "Wang",
+           email = "wang@wwenjie.org",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-0363-3180")),
+    person(given = "Ming-Hui", family = "Chen", role = "aut"),
+    person(given = "Xiaojing", family = "Wang", role = "aut"),
+    person(given = "Jun", family = "Yan", role = "aut",
+           comment = c(ORCID = "0000-0003-4401-7296"))
+    )
+Description: Time-varying coefficient models for interval censored and
+    right censored survival data including
+    1) Bayesian Cox model with time-independent, time-varying or
+    dynamic coefficients for right censored and interval censored data studied by
+    Sinha et al. (1999) <doi:10.1111/j.0006-341X.1999.00585.x> and
+    Wang et al. (2013) <doi:10.1007/s10985-013-9246-8>,
+    2) Spline based time-varying coefficient Cox model for right censored data
+    proposed by Perperoglou et al. (2006) <doi:10.1016/j.cmpb.2005.11.006>, and
+    3) Transformation model with time-varying coefficients for right censored data
+    using estimating equations proposed by
+    Peng and Huang (2007) <doi:10.1093/biomet/asm058>.
+Depends: R (>= 3.0.2)
+Imports: data.table (>= 1.9.8), ggplot2, grDevices, grid, nleqslv,
+        splines2, stats, survival
+LinkingTo: BH (>= 1.54.0-2)
+License: GPL (>= 3)
+LazyLoad: Yes
+LazyData: Yes
+NeedsCompilation: yes
+Encoding: UTF-8
+URL: https://github.com/wenjie2wang/dynsurv
+BugReports: https://github.com/wenjie2wang/dynsurv/issues
+RoxygenNote: 7.1.1
+Packaged: 2020-08-27 15:48:35 UTC; wenjie
+Author: Wenjie Wang [aut, cre] (<https://orcid.org/0000-0003-0363-3180>),
+  Ming-Hui Chen [aut],
+  Xiaojing Wang [aut],
+  Jun Yan [aut] (<https://orcid.org/0000-0003-4401-7296>)
+Maintainer: Wenjie Wang <wang@wwenjie.org>
+Repository: CRAN
+Date/Publication: 2020-08-28 07:20:10 UTC

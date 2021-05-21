@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package VALERIE</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=VALERIE" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="VALERIE: Visualising Splicing at Single-Cell Resolution" />
+<meta name="og:description" content="Alternative splicing produces a variety of different protein products from a given gene. 'VALERIE' enables visualisation of alternative splicing events from high-throughput single-cell RNA-sequencing experiments. 'VALERIE' computes percent spliced-in (PSI) values for user-specified genomic coordinates corresponding to alternative splicing events. PSI is the proportion of sequencing reads supporting the included exon/intron as defined by Shiozawa (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.1038%2Fs41467-018-06063-x&quot;&gt;doi:10.1038/s41467-018-06063-x&lt;/a&gt;&amp;gt;. PSI are inferred from sequencing reads data based on specialised infrastructures for representing and computing annotated genomic ranges by Lawrence (2013) &amp;lt;&lt;a href=&quot;https://doi.org/10.1371%2Fjournal.pcbi.1003118&quot;&gt;doi:10.1371/journal.pcbi.1003118&lt;/a&gt;&amp;gt;. Computed PSI for each single cell are subsequently presented in the form of a heatmap implemented using the 'pheatmap' package by Kolde (2010) &amp;lt;&lt;a href=&quot;https://CRAN.R-project.org/package=pheatmap&quot;&gt;https://CRAN.R-project.org/package=pheatmap&lt;/a&gt;&amp;gt;. Board overview of the mean PSI difference and associated p-values across different user-defined groups of single cells are presented in the form of a line graph using the 'ggplot2' package by Wickham (2007) &amp;lt;&lt;a href=&quot;https://CRAN.R-project.org/package=ggplot2&quot;&gt;https://CRAN.R-project.org/package=ggplot2&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=VALERIE" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>VALERIE: Visualising Splicing at Single-Cell Resolution</h2>
+<p>Alternative splicing produces a variety of different protein products from a given gene. 'VALERIE' enables visualisation of alternative splicing events from high-throughput single-cell RNA-sequencing experiments. 'VALERIE' computes percent spliced-in (PSI) values for user-specified genomic coordinates corresponding to alternative splicing events. PSI is the proportion of sequencing reads supporting the included exon/intron as defined by Shiozawa (2018) &lt;<a href="https://doi.org/10.1038%2Fs41467-018-06063-x">doi:10.1038/s41467-018-06063-x</a>&gt;. PSI are inferred from sequencing reads data based on specialised infrastructures for representing and computing annotated genomic ranges by Lawrence (2013) &lt;<a href="https://doi.org/10.1371%2Fjournal.pcbi.1003118">doi:10.1371/journal.pcbi.1003118</a>&gt;. Computed PSI for each single cell are subsequently presented in the form of a heatmap implemented using the 'pheatmap' package by Kolde (2010) &lt;<a href="https://CRAN.R-project.org/package=pheatmap">https://CRAN.R-project.org/package=pheatmap</a>&gt;. Board overview of the mean PSI difference and associated p-values across different user-defined groups of single cells are presented in the form of a line graph using the 'ggplot2' package by Wickham (2007) &lt;<a href="https://CRAN.R-project.org/package=ggplot2">https://CRAN.R-project.org/package=ggplot2</a>&gt;.</p>
+<table summary="Package VALERIE summary">
+<tr>
+<td>Version:</td>
+<td>1.1.0</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="http://www.bioconductor.org/packages/release/bioc/html/GenomicAlignments.html"><span class="BioC">GenomicAlignments</span></a> (&ge; 1.16.0), <a href="http://www.bioconductor.org/packages/release/bioc/html/GenomicRanges.html"><span class="BioC">GenomicRanges</span></a> (&ge; 1.32.0), <a href="http://www.bioconductor.org/packages/release/bioc/html/IRanges.html"><span class="BioC">IRanges</span></a> (&ge; 2.14.0), <a href="http://www.bioconductor.org/packages/release/bioc/html/Rsamtools.html"><span class="BioC">Rsamtools</span></a> (&ge; 1.34.0), <a href="../plyr/index.html">plyr</a> (&ge; 1.8.4), <a href="../ggplot2/index.html">ggplot2</a> (&ge; 3.0.0), <a href="../pheatmap/index.html">pheatmap</a> (&ge; 1.0.10), <a href="../ggplotify/index.html">ggplotify</a> (&ge; 0.0.3), <a href="../ggpubr/index.html">ggpubr</a> (&ge; 0.2.4), <a href="../scales/index.html">scales</a> (&ge; 1.0.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-07-10</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Sean Wen</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Sean Wen  &#x3c;&#x73;&#x65;&#x61;&#x6e;&#x2e;&#x77;&#x65;&#x6e;&#x77;&#x78;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_VALERIE.html">VALERIE results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package VALERIE downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="VALERIE.pdf"> VALERIE.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/VALERIE.pdf">VALERIE</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/VALERIE_1.1.0.tar.gz"> VALERIE_1.1.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/VALERIE_1.1.0.zip">VALERIE_1.1.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/VALERIE_1.1.0.zip">VALERIE_1.1.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/VALERIE_1.1.0.zip">VALERIE_1.1.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/VALERIE_1.1.0.tgz">VALERIE_1.1.0.tgz</a>, r-oldrel: not available </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/VALERIE"> VALERIE archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=VALERIE"><samp>https://CRAN.R-project.org/package=VALERIE</samp></a>
+to link to this page.</p>
+</body>
+</html>

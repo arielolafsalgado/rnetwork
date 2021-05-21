@@ -1,0 +1,32 @@
+Package: nonnest2
+Title: Tests of Non-Nested Models
+Version: 0.5-3
+Date: 2020-03-14
+Authors@R: c(person(given = "Edgar", family = "Merkle",
+                    role = c("aut","cre"), email = "merklee@missouri.edu"),
+             person(given = "Dongjun", family = "You", role = "aut"),
+             person(given = "Lennart", family = "Schneider", role = "ctb"),
+             person(given = "Seongho", family = "Bae", role = "ctb")
+            )
+Description: Testing non-nested models via theory supplied by Vuong (1989) <DOI:10.2307/1912557>.
+    Includes tests of model distinguishability and of model fit that can be applied
+    to both nested and non-nested models. Also includes functionality to obtain
+    confidence intervals associated with AIC and BIC. This material is partially based on
+    work supported by the National Science Foundation under Grant Number SES-1061334.
+Depends: R (>= 3.0.0)
+Imports: CompQuadForm, mvtnorm, lavaan (>= 0.6-3), sandwich
+License: GPL-2 | GPL-3
+LazyData: yes
+Suggests: mirt (>= 1.26.3), AER, MASS, faraway, mlogit, ordinal, pscl,
+        knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+RoxygenNote: 7.0.2
+NeedsCompilation: no
+Packaged: 2020-03-14 21:25:39 UTC; merkle
+Author: Edgar Merkle [aut, cre],
+  Dongjun You [aut],
+  Lennart Schneider [ctb],
+  Seongho Bae [ctb]
+Maintainer: Edgar Merkle <merklee@missouri.edu>
+Repository: CRAN
+Date/Publication: 2020-03-14 22:20:02 UTC

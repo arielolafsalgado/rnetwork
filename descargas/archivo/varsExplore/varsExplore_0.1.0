@@ -1,0 +1,23 @@
+Package: varsExplore
+Type: Package
+Title: Searchable Variable Explorer with Labelled Variables
+Version: 0.1.0
+Author: Vlad Tarko
+Maintainer: Vlad Tarko <vladtarko@gmail.com>
+Description: Creates a summary dataframe that can be used in 'RStudio' similar to the variable
+    explorer in 'Stata', but which also includes the summary statistics. By default the result 
+    is shown in the 'RStudio' Viewer Pane as a searchable data table. This is useful particularly 
+    if you have a large dataset with a very large number of labelled variables with hard to 
+    remember names. Can also be used to generate a table of summary statistics.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: dplyr, magrittr, purrr, tidyr, stringr, glue, DT, rstudioapi,
+        rio
+RoxygenNote: 6.1.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-09-28 05:28:40 UTC; vladtarko
+Repository: CRAN
+Date/Publication: 2019-10-03 07:40:02 UTC

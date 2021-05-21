@@ -1,0 +1,39 @@
+Package: EmissV
+Title: Vehicular Emissions by Top-Down Methods
+Date: 2020-03-29
+Version: 0.665.2.0
+Authors@R: c(
+  person(given = "Daniel",
+         family = "Schuch",
+         role = c("aut", "cre"),
+         email = "schuch@usp.br",
+         comment = c(ORCID = "0000-0001-5977-4519")),
+  person(given = "Sergio",
+         family = "Ibarra-Espinosa",
+         role = c("aut"),
+         email = "sergio.ibarra@usp.br",
+         comment = c(ORCID = "0000-0002-3162-1905"))
+  )
+Maintainer: Daniel Schuch <schuch@usp.br>
+Description: Creates emissions for use in air quality models. Vehicular emissions 
+  are estimated by a top-down approach, total emissions are calculated using the 
+  statistical description of the fleet of vehicles, the emission is spatially 
+  distributed according to satellite images or openstreetmap data 
+  <https://www.openstreetmap.org> and then distributed temporarily 
+  (Vara-Vela et al., 2016, <doi:10.5194/acp-16-777-2016>).
+Depends: R (>= 3.4)
+Imports: ncdf4, units(>= 0.5-1), raster, sp, sf, methods, data.table,
+        lwgeom
+Suggests: testthat (>= 2.1.0), covr, osmar, rgdal, eixport
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+URL: https://atmoschem.github.io/EmissV
+BugReports: https://github.com/atmoschem/EmissV/issues
+NeedsCompilation: no
+Packaged: 2020-03-29 20:37:58 UTC; under
+Author: Daniel Schuch [aut, cre] (<https://orcid.org/0000-0001-5977-4519>),
+  Sergio Ibarra-Espinosa [aut] (<https://orcid.org/0000-0002-3162-1905>)
+Repository: CRAN
+Date/Publication: 2020-03-30 08:50:16 UTC

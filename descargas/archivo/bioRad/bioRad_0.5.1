@@ -1,0 +1,43 @@
+Package: bioRad
+Title: Biological Analysis and Visualization of Weather Radar Data
+Version: 0.5.1
+Description: Extract, visualize and summarize aerial movements of birds and
+    insects from weather radar data. See <doi:10.1111/ecog.04028>
+    for a software paper describing package and methodologies.
+Authors@R: c(
+    person("Adriaan M.", "Dokter", role = c("aut", "cre"), email = "amd427@cornell.edu", comment = c(ORCID = "0000-0001-6573-066X")),
+    person("Peter", "Desmet", role = "aut", email = "peter.desmet@inbo.be", comment = c(ORCID = "0000-0002-8442-8025")),
+    person("Stijn", "Van Hoey", role = "aut", email = "stijnvanhoey@gmail.com", comment = c(ORCID = "0000-0001-6413-3185")),
+    person("Bart", "Kranstauber", role = "ctb", email = "b.kranstauber@uva.nl", comment = c(ORCID = "0000-0001-8303-780X")),
+    person("Jurriaan", "Spaaks", role = "ctb", email = "j.spaaks@esciencecenter.nl"),
+    person("Lourens", "Veen", role = "ctb", email = "l.veen@esciencecenter.nl"),
+    person("Liesbeth", "Verlinden", role = "ctb", email = "l.verlinden@uva.nl", comment = c(ORCID = "0000-0003-1744-9325")),
+    person("Hidde", "Leijnse", role = "ctb", email = "hidde.leijnse@knmi.nl", comment = c(ORCID = "0000-0001-7835-4480"))
+    )
+License: MIT + file LICENSE
+URL: https://github.com/adokter/bioRad,
+        https://adokter.github.io/bioRad
+BugReports: https://github.com/adokter/bioRad/issues
+biocViews:
+Depends: R (>= 3.5.0)
+Imports: assertthat, curl, fields, ggmap, ggplot2, graphics, methods,
+        raster, rgdal, rhdf5, sp, stats, tidyr, utils, viridisLite,
+        viridis, maptools
+Suggests: knitr, testthat
+LazyData: true
+Encoding: UTF-8
+VignetteBuilder: knitr
+RoxygenNote: 7.1.0
+NeedsCompilation: no
+Packaged: 2020-03-31 21:32:37 UTC; amd427
+Author: Adriaan M. Dokter [aut, cre] (<https://orcid.org/0000-0001-6573-066X>),
+  Peter Desmet [aut] (<https://orcid.org/0000-0002-8442-8025>),
+  Stijn Van Hoey [aut] (<https://orcid.org/0000-0001-6413-3185>),
+  Bart Kranstauber [ctb] (<https://orcid.org/0000-0001-8303-780X>),
+  Jurriaan Spaaks [ctb],
+  Lourens Veen [ctb],
+  Liesbeth Verlinden [ctb] (<https://orcid.org/0000-0003-1744-9325>),
+  Hidde Leijnse [ctb] (<https://orcid.org/0000-0001-7835-4480>)
+Maintainer: Adriaan M. Dokter <amd427@cornell.edu>
+Repository: CRAN
+Date/Publication: 2020-04-01 17:30:09 UTC

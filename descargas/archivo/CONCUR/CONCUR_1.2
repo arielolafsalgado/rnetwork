@@ -1,0 +1,24 @@
+Package: CONCUR
+Type: Package
+Title: Copy Number Profile Curve-Based Association Test
+Version: 1.2
+Date: 2020-3-01
+Author: Amanda Brucker, Shannon T. Holloway, Jung-Ying Tzeng
+Maintainer: Shannon T. Holloway <sthollow@ncsu.edu>
+Description: Implements a kernel-based association test for copy number 
+  variation (CNV) aggregate analysis
+  in a certain genomic region (e.g., gene set, chromosome, or genome) that is
+  robust to the within-locus and across-locus etiological heterogeneity, and 
+  bypass the need to define a "locus" unit for CNVs. 
+  Brucker, A., et al. (2020) <doi:10.1101/666875>.
+License: GPL-2
+NeedsCompilation: no
+Repository: CRAN
+Encoding: UTF-8
+Depends: CompQuadForm, dplyr, mgcv
+RoxygenNote: 6.1.1
+Collate: 'commonAUC.R' 'segLength.R' 'popFunc.R' 'uniqueCombinations.R'
+        'createDF.R' 'deldup.R' 'CAUCkernel.R' 'cnvData.R' 'compFunc.R'
+        'dataChecks.R' 'test.qt.R' 'test.bt.R' 'pv_func.R' 'concur.R'
+Packaged: 2020-03-22 20:53:35 UTC; sthollow
+Date/Publication: 2020-03-25 15:40:05 UTC

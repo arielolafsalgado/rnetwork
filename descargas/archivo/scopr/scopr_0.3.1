@@ -1,0 +1,28 @@
+Package: scopr
+Title: Read Ethoscope Data
+Date: 2018-05-17
+Version: 0.3.1
+Authors@R: c(
+    person("Quentin", "Geissmann", role = c("aut", "cre"), email = "qgeissmann@gmail.com")
+    )
+Description: Handling of behavioural data from the Ethoscope platform 
+    (Geissmann, Garcia Rodriguez, Beckwith, French, Jamasb and Gilestro (2017) <DOI:10.1371/journal.pbio.2003026>).
+    Ethoscopes (<http://gilestrolab.github.io/ethoscope/>) are an open source/open hardware framework made of 
+    interconnected raspberry pis (<https://www.raspberrypi.org>) designed to quantify the behaviour of multiple 
+    small animals in a distributed and real-time fashion. The default tracking algorithm records primary variables
+    such as xy coordinates, dimensions and speed.
+Depends: R (>= 3.00), behavr
+Imports: data.table, readr, stringr, RSQLite, memoise
+Suggests: testthat, covr, knitr, ggetho, zeitgebr
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/rethomics/scopr
+BugReports: https://github.com/rethomics/scopr/issues
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-05-18 14:42:35 UTC; quentin
+Author: Quentin Geissmann [aut, cre]
+Maintainer: Quentin Geissmann <qgeissmann@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-05-18 15:36:59 UTC

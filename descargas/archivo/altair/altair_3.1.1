@@ -1,0 +1,53 @@
+Package: altair
+Version: 3.1.1
+Title: Interface to 'Altair'
+Description: Interface to 'Altair' <https://altair-viz.github.io>, which itself 
+  is a 'Python' interface to 'Vega-Lite' <https://vega.github.io/vega-lite>.
+  This package uses the 'Reticulate' framework 
+  <https://rstudio.github.io/reticulate> to manage the interface between R
+  and 'Python'.
+Authors@R: c(
+  person(
+    given = "Ian", 
+    family = "Lyttle", 
+    email = "ian.lyttle@schneider-electric.com", 
+    role = c("aut", "cre"), 
+    comment = c(ORCID = "0000-0001-9962-4849")
+  ),
+  person("Haley", "Jeppson", email = "hjeppson@iastate.edu", role = c("aut")),
+  person("Altair Developers", role = c("aut")),
+  person(
+    "Alicia", 
+    "Schep",
+    email = "aschep@gmail.com",
+    role = c("ctb"),
+    comment = c(ORCID = "orcid.org/0000-0002-3915-0618")
+  ),
+  person("Jake", "Vanderplas", comment = "Altair library", role = c("ctb")),
+  person("Brian", "Granger", comment = "Altair library", role = c("ctb"))
+  )
+SystemRequirements: Python (>= 3.5.0), (Python) Altair (>= 3.1.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+URL: https://github.com/vegawidget/altair
+BugReports: https://github.com/vegawidget/altair/issues
+Imports: reticulate (>= 1.9), htmlwidgets, rlang (>= 0.1.2),
+        assertthat, magrittr, jsonlite, utils, vegawidget (>= 0.2.1),
+        repr
+Suggests: httr, rprojroot, purrr, readr, knitr, rmarkdown, tibble,
+        listviewer (>= 2.0.0), testthat, pryr, stringr, tidyr, dplyr,
+        pkgdown, processx, rsvg, png, fs
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-07-07 15:00:42 UTC; sesa19001
+Author: Ian Lyttle [aut, cre] (<https://orcid.org/0000-0001-9962-4849>),
+  Haley Jeppson [aut],
+  Altair Developers [aut],
+  Alicia Schep [ctb] (<https://orcid.org/0000-0002-3915-0618>),
+  Jake Vanderplas [ctb] (Altair library),
+  Brian Granger [ctb] (Altair library)
+Maintainer: Ian Lyttle <ian.lyttle@schneider-electric.com>
+Repository: CRAN
+Date/Publication: 2019-07-11 10:23:53 UTC

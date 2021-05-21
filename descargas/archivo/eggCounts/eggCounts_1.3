@@ -1,0 +1,34 @@
+Package: eggCounts
+Imports: boot,coda,utils,testthat,numbers
+Depends: R (>= 3.2.0), Rcpp (>= 0.12.0), rstan (>= 2.11.1), methods
+Suggests: lattice
+Title: Hierarchical Modelling of Faecal Egg Counts
+Version: 1.3
+Date: 2017-01-27
+Authors@R: c(person("Craig", "Wang", role = c("cre","aut"),
+    email = "craig.wang@uzh.ch"),
+    person("Michaela", "Paul", role = "aut"),
+    person("Reinhard", "Furrer", role = "ctb",
+    email = "reinhard.furrer@math.uzh.ch"),
+    person("Trustees of", "Columbia University", role = "cph", comment = "rstanarm"))
+Description: An implementation of hierarchical models
+    for faecal egg count data to assess anthelmintic
+    efficacy. Bayesian inference is done via MCMC sampling using Stan.
+SystemRequirements: Stan (http://mc-stan.org/)
+License: GPL (>= 3)
+LinkingTo: StanHeaders (>= 2.11.0), rstan (>= 2.11.1), BH (>= 1.60),
+        Rcpp (>= 0.12.0), RcppEigen
+LazyLoad: yes
+NeedsCompilation: yes
+URL: http://www.math.uzh.ch/as/index.php?id=software_as
+RcppModules: stan_fit4paired_mod, stan_fit4unpaired_mod,
+        stan_fit4zipaired_mod, stan_fit4ziunpaired_mod,
+        stan_fit4nb_mod, stan_fit4zinb_mod
+Packaged: 2017-01-24 21:19:50 UTC; crwang
+Author: Craig Wang [cre, aut],
+  Michaela Paul [aut],
+  Reinhard Furrer [ctb],
+  Trustees of Columbia University [cph] (rstanarm)
+Maintainer: Craig Wang <craig.wang@uzh.ch>
+Repository: CRAN
+Date/Publication: 2017-01-25 10:23:13

@@ -1,0 +1,34 @@
+Package: scrubr
+Type: Package
+Title: Clean Biological Occurrence Records
+Description: Clean biological occurrence records. Includes functionality
+    for cleaning based on various aspects of spatial coordinates,
+    unlikely values due to political 'centroids', coordinates based on
+    where collections of specimens are held, and more.
+Version: 0.3.0
+Authors@R: c(person("Scott", "Chamberlain", role = c("aut", "cre"),
+    email = "myrmecocystus@gmail.com",
+    comment = c(ORCID = "0000-0003-1444-9135")))
+License: MIT + file LICENSE
+URL: https://github.com/ropensci/scrubr (devel)
+        https://docs.ropensci.org/scrubr (docs)
+BugReports: https://github.com/ropensci/scrubr/issues
+LazyData: TRUE
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+Imports: methods, stats, utils, Matrix, magrittr, qlcMatrix,
+        data.table, fastmatch, lazyeval, crul, jsonlite, tibble,
+        hoardr, curl
+Suggests: testthat, knitr, rmarkdown, rgbif, sf, mapview, rworldmap,
+        maps
+RoxygenNote: 7.0.2
+X-schema.org-applicationCategory: Biodiversity
+X-schema.org-keywords: specimens, occurrences, data, data-cleaning
+X-schema.org-isPartOf: https://ropensci.org
+NeedsCompilation: no
+Packaged: 2020-02-10 18:27:24 UTC; sckott
+Author: Scott Chamberlain [aut, cre] (<https://orcid.org/0000-0003-1444-9135>)
+Maintainer: Scott Chamberlain <myrmecocystus@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-02-10 18:40:02 UTC

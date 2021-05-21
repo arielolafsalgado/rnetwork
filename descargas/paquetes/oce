@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package oce</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Analysis of Oceanographic Data [R package oce version 1.2-0]" />
+<meta name="citation_author1" content="Dan Kelley" />
+<meta name="citation_author2" content="Clark Richards" />
+<meta name="citation_publication_date" content="2020-02-21" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=oce" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=oce" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="oce: Analysis of Oceanographic Data" />
+<meta name="og:description" content="Supports the analysis of Oceanographic data, including 'ADCP' measurements, measurements made with 'argo' floats, 'CTD' measurements, sectional data, sea-level time series, coastline and topographic data, etc. Provides specialized functions for calculating seawater properties such as potential temperature in either the 'UNESCO' or 'TEOS-10' equation of state. Produces graphical displays that conform to the conventions of the Oceanographic literature. This package is discussed extensively in Dan Kelley's book Oceanographic Analysis with R, published in 2018 by 'Springer-Verlag' with ISBN 978-1-4939-8842-6." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=oce" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>oce: Analysis of Oceanographic Data</h2>
+<p>Supports the analysis of Oceanographic data, including 'ADCP'
+    measurements, measurements made with 'argo' floats, 'CTD' measurements,
+    sectional data, sea-level time series, coastline and topographic data, etc.
+    Provides specialized functions for calculating seawater properties such as
+    potential temperature in either the 'UNESCO' or 'TEOS-10' equation of state.
+    Produces graphical displays that conform to the conventions of the
+    Oceanographic literature. This package is discussed extensively in
+    Dan Kelley's book Oceanographic Analysis with R, published
+    in 2018 by 'Springer-Verlag' with ISBN 978-1-4939-8842-6.</p>
+<table summary="Package oce summary">
+<tr>
+<td>Version:</td>
+<td>1.2-0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.15), <a href="../gsw/index.html">gsw</a>, methods, <a href="../testthat/index.html">testthat</a>, utils</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../akima/index.html">akima</a>, <a href="../automap/index.html">automap</a>, <a href="../DBI/index.html">DBI</a>, <a href="../foreign/index.html">foreign</a>, <a href="../knitr/index.html">knitr</a>, <a href="../lubridate/index.html">lubridate</a>, <a href="../ncdf4/index.html">ncdf4</a>, <a href="../ocedata/index.html">ocedata</a>, <a href="../raster/index.html">raster</a> (&ge; 1.4.3), <a href="../rgeos/index.html">rgeos</a>, <a href="../rgdal/index.html">rgdal</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../RSQLite/index.html">RSQLite</a>, <a href="../R.utils/index.html">R.utils</a>, <a href="../sf/index.html">sf</a>, <a href="../sp/index.html">sp</a>, <a href="../tiff/index.html">tiff</a>, <a href="../XML/index.html">XML</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-02-21</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Dan Kelley <a href="https://orcid.org/0000-0001-7808-5911"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    cre],
+  Clark Richards <a href="https://orcid.org/0000-0002-7833-206X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Chantelle Layton <a href="https://orcid.org/0000-0002-3199-5763"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb] (curl() coauthor),
+  British Geological Survey [ctb, cph] (magnetic-field subroutine)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Dan Kelley  &#x3c;&#x44;&#x61;&#x6e;&#x2e;&#x4b;&#x65;&#x6c;&#x6c;&#x65;&#x79;&#x20;&#x61;&#x74;&#x20;&#x44;&#x61;&#x6c;&#x2e;&#x43;&#x61;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/dankelley/oce/issues">https://github.com/dankelley/oce/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://dankelley.github.io/oce">https://dankelley.github.io/oce</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Environmetrics.html">Environmetrics</a>, <a href="../../views/SpatioTemporal.html">SpatioTemporal</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_oce.html">oce results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package oce downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="oce.pdf"> oce.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/adp.html">3. Analysis of acoustic-Doppler data</a><br/>
+<a href="vignettes/ctd.html">2. Analysis of CTD data</a><br/>
+<a href="vignettes/flags.html">5. Dealing with data-quality flags</a><br/>
+<a href="vignettes/map_projections.html">4. Using map projections</a><br/>
+<a href="vignettes/oce.html">1. Introduction to Oce</a><br/>
+<a href="vignettes/subclassing.html">6. Subclassing oce objects</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/oce_1.2-0.tar.gz"> oce_1.2-0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/oce_1.2-0.zip">oce_1.2-0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/oce_1.2-0.zip">oce_1.2-0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/oce_1.2-0.zip">oce_1.2-0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/oce_1.2-0.tgz">oce_1.2-0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/oce_1.2-0.tgz">oce_1.2-0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/oce"> oce archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package oce reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../seacarb/index.html">seacarb</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../dendroTools/index.html">dendroTools</a>, <a href="../morphomap/index.html">morphomap</a>, <a href="../soundecology/index.html">soundecology</a>, <a href="../SWMPr/index.html">SWMPr</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../graticule/index.html">graticule</a>, <a href="../oceanwaves/index.html">oceanwaves</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=oce"><samp>https://CRAN.R-project.org/package=oce</samp></a>
+to link to this page.</p>
+</body>
+</html>

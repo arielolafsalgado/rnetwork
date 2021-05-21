@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package singleCellHaystack</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Finding Needles (=differentially Expressed Genes) in Haystacks (=single Cell Data) [R package singleCellHaystack version 0.3.3]" />
+<meta name="citation_author1" content="Alexis Vandenbon" />
+<meta name="citation_author2" content="Diego Diez" />
+<meta name="citation_publication_date" content="2020-09-18" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=singleCellHaystack" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=singleCellHaystack" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="singleCellHaystack: Finding Needles (=differentially Expressed Genes) in Haystacks (=single Cell Data)" />
+<meta name="og:description" content="Identification of differentially expressed genes (DEGs) is a key step in single-cell transcriptomics data analysis. 'singleCellHaystack' predicts DEGs without relying on clustering of cells into arbitrary clusters. Single-cell RNA-seq (scRNA-seq) data is often processed to fewer dimensions using Principal Component Analysis (PCA) and represented in 2-dimensional plots (e.g. t-SNE or UMAP plots). 'singleCellHaystack' uses Kullback-Leibler divergence to find genes that are expressed in subsets of cells that are non-randomly positioned in a these multi-dimensional spaces or 2D representations. For the theoretical background of 'singleCellHaystack' we refer to Vandenbon and Diez (Nature Communications, 2020) &amp;lt;&lt;a href=&quot;https://doi.org/10.1038%2Fs41467-020-17900-3&quot;&gt;doi:10.1038/s41467-020-17900-3&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=singleCellHaystack" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>singleCellHaystack: Finding Needles (=differentially Expressed Genes) in Haystacks
+(=single Cell Data)</h2>
+<p>Identification of differentially expressed genes (DEGs) is a key step in single-cell 
+    transcriptomics data analysis. 'singleCellHaystack' predicts DEGs without relying on 
+    clustering of cells into arbitrary clusters. Single-cell RNA-seq (scRNA-seq) data is 
+    often processed to fewer dimensions using Principal Component Analysis (PCA) and 
+    represented in 2-dimensional plots (e.g. t-SNE or UMAP plots). 'singleCellHaystack' 
+    uses Kullback-Leibler divergence to find genes that are expressed in subsets of cells 
+    that are non-randomly positioned in a these multi-dimensional spaces or 2D representations. 
+    For the theoretical background of 'singleCellHaystack' we refer to 
+    Vandenbon and Diez (Nature Communications, 2020) &lt;<a href="https://doi.org/10.1038%2Fs41467-020-17900-3">doi:10.1038/s41467-020-17900-3</a>&gt;.</p>
+<table summary="Package singleCellHaystack summary">
+<tr>
+<td>Version:</td>
+<td>0.3.3</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>methods, <a href="../Matrix/index.html">Matrix</a>, splines, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../reshape2/index.html">reshape2</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/SummarizedExperiment.html"><span class="BioC">SummarizedExperiment</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/SingleCellExperiment.html"><span class="BioC">SingleCellExperiment</span></a>, <a href="../Seurat/index.html">Seurat</a>, SeuratData, <a href="../Rtsne/index.html">Rtsne</a>, <a href="../cowplot/index.html">cowplot</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-18</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Alexis Vandenbon <a href="https://orcid.org/0000-0003-2180-5732"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Diego Diez <a href="https://orcid.org/0000-0002-2325-4893"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Alexis Vandenbon  &#x3c;&#x61;&#x6c;&#x65;&#x78;&#x69;&#x73;&#x2e;&#x76;&#x61;&#x6e;&#x64;&#x65;&#x6e;&#x62;&#x6f;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">singleCellHaystack citation info</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_singleCellHaystack.html">singleCellHaystack results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package singleCellHaystack downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="singleCellHaystack.pdf"> singleCellHaystack.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/a01_toy_example.html">Application on toy example</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/singleCellHaystack_0.3.3.tar.gz"> singleCellHaystack_0.3.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/singleCellHaystack_0.3.3.zip">singleCellHaystack_0.3.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/singleCellHaystack_0.3.3.zip">singleCellHaystack_0.3.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/singleCellHaystack_0.3.3.zip">singleCellHaystack_0.3.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/singleCellHaystack_0.3.3.tgz">singleCellHaystack_0.3.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/singleCellHaystack_0.3.3.tgz">singleCellHaystack_0.3.3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/singleCellHaystack"> singleCellHaystack archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=singleCellHaystack"><samp>https://CRAN.R-project.org/package=singleCellHaystack</samp></a>
+to link to this page.</p>
+</body>
+</html>

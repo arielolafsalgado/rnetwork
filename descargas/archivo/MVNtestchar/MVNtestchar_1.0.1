@@ -1,0 +1,30 @@
+Package: MVNtestchar
+Type: Package
+Title: Multivariate Normal Distribution Characterization Test
+Version: 1.0.1
+Date: 2020-04-18
+Authors@R: person("William", "Fairweather", email = "wrf343@flowervalleyconsulting.com",
+    role = c("aut", "cre"))
+Description: Provides a test of multivariate normality of a sample which does
+    not require estimation of the nuisance parameters, the mean and covariance 
+    matrix.  Rather, a sequence of transformations removes these nuisance 
+    parameters and results in a set of sample matrices that are positive 
+    definite.  These matrices are uniformly distributed on the space of positive 
+    definite matrices in the unit hyperrectangle if and only if the original 
+    data is multivariate normal. The package performs a goodness of fit test of 
+    this hypothesis. Four sample datasets are included: a bivariate and a
+    trivariate normal set and a bivariate and trivariate Bernoulli set. In 
+    addition to the test, functions in the package give rotatable visualizations 
+    of the support region of positive definite matrices for bivariate samples.
+Depends: R (>= 2.10)
+Imports: graphics, grDevices, Hmisc, stats, utils, ggplot2
+License: GPL (>= 2)
+NeedsCompilation: no
+Packaged: 2020-04-18 17:50:08 UTC; No
+Author: William Fairweather [aut, cre]
+Maintainer: William Fairweather <wrf343@flowervalleyconsulting.com>
+RoxygenNote: 7.0.2
+Suggests: testthat, knitr, rmarkdown
+VignetteBuilder: knitr
+Repository: CRAN
+Date/Publication: 2020-04-18 18:10:02 UTC

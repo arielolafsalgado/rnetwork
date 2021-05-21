@@ -1,0 +1,35 @@
+Package: sabre
+Version: 0.2.0
+Title: Spatial Association Between Regionalizations
+Description: Calculates a degree of spatial association between regionalizations 
+    or categorical maps using the information-theoretical V-measure 
+    (Nowosad and Stepinski (2018) <doi:10.17605/OSF.IO/RCJH7>). It also
+    offers an R implementation of the MapCurve method 
+    (Hargrove et al. (2006) <doi:10.1007/s10109-006-0025-x>).
+Authors@R: c(person("Jakub", "Nowosad", 
+    email = "nowosad.jakub@gmail.com",
+    role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0002-1057-3721")),
+    person("Tomasz", "Stepinski",
+    role = c("aut")),
+    person("Space Informatics Lab", role = c("cph"))
+    )
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+Suggests: testthat, covr, knitr, rmarkdown
+RoxygenNote: 6.0.1
+Depends: R (>= 3.3.0)
+Imports: sf, entropy, tidyr, dplyr, rlang, tibble
+VignetteBuilder: knitr
+URL: https://github.com/Nowosad/sabre
+BugReports: https://github.com/Nowosad/sabre/issues
+NeedsCompilation: no
+Packaged: 2018-04-20 11:58:27 UTC; jn
+Author: Jakub Nowosad [aut, cre] (<https://orcid.org/0000-0002-1057-3721>),
+  Tomasz Stepinski [aut],
+  Space Informatics Lab [cph]
+Maintainer: Jakub Nowosad <nowosad.jakub@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-04-23 06:27:51 UTC

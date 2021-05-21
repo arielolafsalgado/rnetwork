@@ -1,0 +1,29 @@
+Package: LocalControlStrategy
+Title: Local Control Strategy for Analysis of Cross-Sectional Data
+Version: 1.3
+Date: 2018-09-15
+Author: Bob Obenchain 
+Maintainer: Bob Obenchain <wizbob@att.net>
+Depends: cluster, lattice
+Description: Especially when cross-sectional data are observational, effects of treatment
+  selection bias and confounding are revealed by using the unsupervised, nonparametric
+  preprocessing methods central to Local Control (LC) strategy. The LC objective is to
+  estimate the "effect-size distribution" that best quantifies a potentially causal
+  relationship between a continuous y-Outcome variable and a t-Treatment variable. This
+  t-variable may be either binary {1 = "new" vs 0 = "control"} or a numeric measure of
+  Exposure level. LC Strategy starts by CLUSTERING experimental units (patients) on
+  baseline x-Covariates, forming mutually exclusive and exhaustive BLOCKS of relatively
+  well-matched units. The implicit statistical model for LC is thus simple one-way ANOVA.
+  The Within-Block measures of effect-size are Local Rank Correlations (LRCs) when Exposure
+  is numeric with more than two levels. Otherwise, Treatment choice is Nested within
+  BLOCKS, and effect-sizes are Local Treatment Differences (LTDs) between within-cluster
+  y-Outcome Means ["new" minus "control"]. An Instrumental Variable (IV) method is also
+  provided so that Local Average y-Outcomes (LAOs) within BLOCKS may also contribute
+  information for effect-size inferences ...assuming that x-Covariates influence only
+  Treatment choice or Exposure level and otherwise have no direct effects on y-Outcome.
+License: GPL
+URL: https://www.R-project.org, http://localcontrolstatistics.org
+NeedsCompilation: no
+Packaged: 2018-09-14 17:24:52 UTC; wiz
+Repository: CRAN
+Date/Publication: 2018-09-21 22:30:18 UTC

@@ -1,0 +1,59 @@
+Package: SpaDES
+Type: Package
+Title: Develop and Run Spatially Explicit Discrete Event Simulation
+        Models
+Description: Easily implement a variety of simulation models, with a focus on
+    spatially explicit agent based models. These include raster-based,
+    event-based, and agent-based models. The core simulation components are
+    built upon a discrete event simulation framework that facilitates
+    modularity, and easily enables the user to include additional functionality
+    by running user-built simulation modules. Included are numerous tools to
+    visualize raster and other maps. The suggested package `fastshp` can be
+    installed with `install.packages("fastshp", repos="http://rforge.net",
+    type="source")`.
+URL: https://github.com/PredictiveEcology/SpaDES
+Version: 1.0.1
+Date: 2015-08-10
+Authors@R: c(
+    person(c("Alex", "M"), "Chubaty", email="achubaty@NRCan.gc.ca",
+    role=c("aut", "cre")),
+    person(c("Eliot", "J", "B"), "McIntire", email="emcintir@NRCan.gc.ca",
+    role=c("aut")),
+    person("Steve", "Cumming", email="Steve.Cumming@sbf.ulaval.ca",
+    role=c("ctb")),
+    person("Her Majesty the Queen in Right of Canada, as represented by the Minister of Natural Resources Canada",
+    role="cph")
+    )
+Additional_repositories: http://rforge.net
+Depends: R (>= 3.2.0)
+Suggests: fastshp, knitr, Matrix, RColorBrewer, rgdal, testthat,
+        tkrplot
+Imports: archivist, CircStats, data.table, DiagrammeR, digest,
+        downloader, dplyr, ff, ffbase, fpCompare, ggplot2, graphics,
+        grid, gridBase, httr, igraph, lubridate, methods, R.utils,
+        RandomFields, raster, secr, sp, stringi, stringr
+License: GPL-3
+VignetteBuilder: knitr
+BugReports: https://github.com/PredictiveEcology/SpaDES/issues
+ByteCompile: yes
+Collate: 'agent.R' 'SELES.R' 'module-dependencies-class.R'
+        'misc-methods.R' 'simList-class.R' 'check.R' 'environment.R'
+        'checkpoint.R' 'initialize.R' 'simulation.R' 'load.R'
+        'mapReduce.R' 'module-dependencies-methods.R'
+        'module-repository.R' 'module-template.R' 'moduleMetadata.R'
+        'movement.R' 'neighbourhood.R' 'numerical-comparisons.R'
+        'plotting-classes.R' 'plotting-colours.R' 'times.R'
+        'simList-accessors.R' 'plotting-diagrams.R'
+        'plotting-helpers.R' 'plotting-other.R' 'plotting.R'
+        'probability.R' 'progress.R' 'save.R' 'spades-classes.R'
+        'spades-package.R' 'splitRaster.R' 'spread-process.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2015-08-10 19:16:16 UTC; achubaty
+Author: Alex M Chubaty [aut, cre],
+  Eliot J B McIntire [aut],
+  Steve Cumming [ctb],
+  Her Majesty the Queen in Right of Canada, as represented by the
+    Minister of Natural Resources Canada [cph]
+Maintainer: Alex M Chubaty <achubaty@NRCan.gc.ca>
+Repository: CRAN
+Date/Publication: 2015-08-10 22:33:56

@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package rstanarm</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Bayesian Applied Regression Modeling via Stan [R package rstanarm version 2.21.1]" />
+<meta name="citation_author1" content="Jonah Gabry" />
+<meta name="citation_author2" content="Ben Goodrich" />
+<meta name="citation_publication_date" content="2020-07-20" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=rstanarm" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=rstanarm" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="rstanarm: Bayesian Applied Regression Modeling via Stan" />
+<meta name="og:description" content="Estimates previously compiled regression models using the 'rstan' package, which provides the R interface to the Stan C++ library for Bayesian estimation. Users specify models via the customary R syntax with a formula and data.frame plus some additional arguments for priors." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=rstanarm" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>rstanarm: Bayesian Applied Regression Modeling via Stan</h2>
+<p>Estimates previously compiled regression models using the 'rstan'
+    package, which provides the R interface to the Stan C++ library for Bayesian
+    estimation. Users specify models via the customary R syntax with a formula and
+    data.frame plus some additional arguments for priors.</p>
+<table summary="Package rstanarm summary">
+<tr>
+<td>Version:</td>
+<td>2.21.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.4.0), <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.0), methods</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../bayesplot/index.html">bayesplot</a> (&ge; 1.7.0), <a href="../ggplot2/index.html">ggplot2</a> (&ge; 2.2.1), <a href="../lme4/index.html">lme4</a> (&ge; 1.1-8), <a href="../loo/index.html">loo</a> (&ge; 2.1.0), <a href="../Matrix/index.html">Matrix</a> (&ge; 1.2-13), <a href="../nlme/index.html">nlme</a> (&ge; 3.1-124), <a href="../rstan/index.html">rstan</a> (&ge;
+2.21.1), <a href="../rstantools/index.html">rstantools</a> (&ge; 2.1.0), <a href="../shinystan/index.html">shinystan</a> (&ge; 2.3.0), stats, <a href="../survival/index.html">survival</a> (&ge; 2.40.1), <a href="../RcppParallel/index.html">RcppParallel</a> (&ge; 5.0.1), utils</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../StanHeaders/index.html">StanHeaders</a> (&ge; 2.21.0), <a href="../rstan/index.html">rstan</a> (&ge; 2.21.1), <a href="../BH/index.html">BH</a> (&ge;
+1.72.0-2), <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.0), <a href="../RcppEigen/index.html">RcppEigen</a> (&ge; 0.3.3.3.0), <a href="../RcppParallel/index.html">RcppParallel</a> (&ge; 5.0.1)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../betareg/index.html">betareg</a>, <a href="../data.table/index.html">data.table</a> (&ge; 1.10.0), <a href="../digest/index.html">digest</a>, <a href="../gridExtra/index.html">gridExtra</a>, <a href="../HSAUR3/index.html">HSAUR3</a>, <a href="../knitr/index.html">knitr</a> (&ge; 1.15.1), <a href="../MASS/index.html">MASS</a>, <a href="../mgcv/index.html">mgcv</a> (&ge; 1.8-13), <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../roxygen2/index.html">roxygen2</a>, <a href="../StanHeaders/index.html">StanHeaders</a> (&ge; 2.21.0), <a href="../testthat/index.html">testthat</a> (&ge; 1.0.2)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-07-20</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Jonah Gabry [aut],
+  Imad Ali [ctb],
+  Sam Brilleman [ctb],
+  Jacqueline Buros Novik [ctb] (R/stan_jm.R),
+  AstraZeneca [ctb] (R/stan_jm.R),
+  Trustees of Columbia University [cph],
+  Simon Wood [cph] (R/stan_gamm4.R),
+  R Core Deveopment Team [cph] (R/stan_aov.R),
+  Douglas Bates [cph] (R/pp_data.R),
+  Martin Maechler [cph] (R/pp_data.R),
+  Ben Bolker [cph] (R/pp_data.R),
+  Steve Walker [cph] (R/pp_data.R),
+  Brian Ripley [cph] (R/stan_aov.R, R/stan_polr.R),
+  William Venables [cph] (R/stan_polr.R),
+  Paul-Christian Burkner [cph] (R/misc.R),
+  Ben Goodrich [cre, aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Ben Goodrich  &#x3c;&#x62;&#x65;&#x6e;&#x6a;&#x61;&#x6d;&#x69;&#x6e;&#x2e;&#x67;&#x6f;&#x6f;&#x64;&#x72;&#x69;&#x63;&#x68;&#x20;&#x61;&#x74;&#x20;&#x63;&#x6f;&#x6c;&#x75;&#x6d;&#x62;&#x69;&#x61;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/stan-dev/rstanarm/issues">https://github.com/stan-dev/rstanarm/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL (&ge; 3)</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://mc-stan.org/rstanarm/">https://mc-stan.org/rstanarm/</a>, <a href="https://discourse.mc-stan.org">https://discourse.mc-stan.org</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>GNU make, pandoc (&gt;= 1.12.3), pandoc-citeproc</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">rstanarm citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_rstanarm.html">rstanarm results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package rstanarm downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="rstanarm.pdf"> rstanarm.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/aov.html">stan_aov: ANOVA Models</a><br/>
+<a href="vignettes/betareg.html">stan_betareg: Models for Rate/Proportion Data</a><br/>
+<a href="vignettes/binomial.html">stan_glm: GLMs for Binary and Binomial Data</a><br/>
+<a href="vignettes/continuous.html">stan_glm: GLMs for Continuous Data</a><br/>
+<a href="vignettes/count.html">stan_glm: GLMs for Count Data</a><br/>
+<a href="vignettes/glmer.html">stan_glmer: GLMs with Group-Specific Terms</a><br/>
+<a href="vignettes/jm.html">stan_jm: Joint Models for Longitudinal and Time-to-Event Data</a><br/>
+<a href="vignettes/lm.html">stan_lm: Regularized Linear Models</a><br/>
+<a href="vignettes/mrp.html">MRP with rstanarm</a><br/>
+<a href="vignettes/polr.html">stan_polr: Ordinal Models</a><br/>
+<a href="vignettes/pooling.html">Hierarchical Partial Pooling</a><br/>
+<a href="vignettes/priors.html">Prior Distributions</a><br/>
+<a href="vignettes/rstanarm.html">How to Use the rstanarm Package</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/rstanarm_2.21.1.tar.gz"> rstanarm_2.21.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/rstanarm_2.21.1.zip">rstanarm_2.21.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/rstanarm_2.21.1.zip">rstanarm_2.21.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/rstanarm_2.21.1.zip">rstanarm_2.21.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/rstanarm_2.21.1.tgz">rstanarm_2.21.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/rstanarm_2.19.2.tgz">rstanarm_2.19.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/rstanarm"> rstanarm archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package rstanarm reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../evidence/index.html">evidence</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../eefAnalytics/index.html">eefAnalytics</a>, <a href="../embed/index.html">embed</a>, <a href="../tidyposterior/index.html">tidyposterior</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../afex/index.html">afex</a>, <a href="../bayesplot/index.html">bayesplot</a>, <a href="../BayesPostEst/index.html">BayesPostEst</a>, <a href="../bayestestR/index.html">bayestestR</a>, <a href="../bridgesampling/index.html">bridgesampling</a>, <a href="../broom.mixed/index.html">broom.mixed</a>, <a href="../concurve/index.html">concurve</a>, <a href="../correlation/index.html">correlation</a>, <a href="../effectsize/index.html">effectsize</a>, <a href="../ggeffects/index.html">ggeffects</a>, <a href="../insight/index.html">insight</a>, <a href="../loo/index.html">loo</a>, <a href="../merTools/index.html">merTools</a>, <a href="../modelbased/index.html">modelbased</a>, <a href="../parameters/index.html">parameters</a>, <a href="../performance/index.html">performance</a>, <a href="../projpred/index.html">projpred</a>, <a href="../RBesT/index.html">RBesT</a>, <a href="../see/index.html">see</a>, <a href="../shinybrms/index.html">shinybrms</a>, <a href="../shinystan/index.html">shinystan</a>, <a href="../sjPlot/index.html">sjPlot</a>, <a href="../sjstats/index.html">sjstats</a>, <a href="../tidybayes/index.html">tidybayes</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;enhances:</td>
+<td><a href="../emmeans/index.html">emmeans</a>, <a href="../interactions/index.html">interactions</a>, <a href="../jtools/index.html">jtools</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=rstanarm"><samp>https://CRAN.R-project.org/package=rstanarm</samp></a>
+to link to this page.</p>
+</body>
+</html>

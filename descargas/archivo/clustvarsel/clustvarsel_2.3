@@ -1,0 +1,26 @@
+Package: clustvarsel
+Type: Package
+Version: 2.3
+Date: 2017-02-24
+Title: Variable Selection for Gaussian Model-Based Clustering
+Description: An R package implementing variable selection methodology for Gaussian model-based clustering which allows to find the (locally) optimal subset of variables in a data set that have group/cluster information. A greedy or headlong search can be used, either in a forward-backward or backward-forward direction, with or without sub-sampling at the hierarchical clustering stage for starting MCLUST models. By default the algorithm uses a sequential search, but parallelisation is also available.
+Authors@R: c(person("Nema", "Dean", role = "aut"),
+             person("Adrian E.", "Raftery", role = "aut"),
+             person("Luca", "Scrucca", role = c("aut", "cre"),
+                    email = "luca.scrucca@unipg.it"))
+Depends: R (>= 3.2), mclust (>= 5.2), BMA (>= 3.18), foreach, iterators
+Imports: stats, Matrix
+Suggests: MASS, parallel, doParallel, knitr (>= 1.12), rmarkdown (>=
+        0.9)
+License: GPL (>= 2)
+VignetteBuilder: knitr
+Repository: CRAN
+ByteCompile: true
+LazyLoad: yes
+NeedsCompilation: no
+Packaged: 2017-02-24 10:47:43 UTC; luca
+Author: Nema Dean [aut],
+  Adrian E. Raftery [aut],
+  Luca Scrucca [aut, cre]
+Maintainer: Luca Scrucca <luca.scrucca@unipg.it>
+Date/Publication: 2017-02-24 16:46:51

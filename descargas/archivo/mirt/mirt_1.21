@@ -1,0 +1,48 @@
+Package: mirt
+Version: 1.21
+Type: Package
+Title: Multidimensional Item Response Theory
+Authors@R: c( person("Phil", family="Chalmers", email =
+    "rphilip.chalmers@gmail.com", role = c("aut", "cre", "cph")),
+    person("Joshua", family="Pritikin", role=c('ctb')),
+    person("Alexander", family="Robitzsch", role=c('ctb')),
+    person("Mateusz", family="Zoltak", role=c('ctb')),
+    person("KwonHyun", family="Kim", role=c('ctb')),
+    person("Carl F.", family="Falk", role=c('ctb')),
+    person("Adam", family="Meade", role=c('ctb')))
+Description: Analysis of dichotomous and polytomous response data using
+    unidimensional and multidimensional latent trait models under the Item
+    Response Theory paradigm. Exploratory and confirmatory models can be
+    estimated with quadrature (EM) or stochastic (MHRM) methods. Confirmatory
+    bi-factor and two-tier analyses are available for modeling item testlets.
+    Multiple group analysis and mixed effects designs also are available for
+    detecting differential item and test functioning as well as modelling
+    item and person covariates. Finally, latent class models such as the DINA,
+    DINO, multidimensional latent class, and several other discrete latent
+    variable models are supported.
+VignetteBuilder: knitr
+Depends: stats, R (>= 3.1.0), stats4, lattice, methods
+Imports: GPArotation, Rcpp, sfsmisc, mgcv, splines, numDeriv
+Suggests: boot, latticeExtra, directlabels, shiny, knitr, Rsolnp,
+        alabama, sirt, mirtCAT
+ByteCompile: yes
+LazyLoad: yes
+LazyData: yes
+LinkingTo: Rcpp, RcppArmadillo
+License: GPL (>= 3)
+Repository: CRAN
+Maintainer: Phil Chalmers <rphilip.chalmers@gmail.com>
+URL: https://github.com/philchalmers/mirt,
+        https://github.com/philchalmers/mirt/wiki
+BugReports: https://github.com/philchalmers/mirt/issues?state=open
+RoxygenNote: 5.0.1
+NeedsCompilation: yes
+Packaged: 2016-11-30 21:20:20 UTC; phil
+Author: Phil Chalmers [aut, cre, cph],
+  Joshua Pritikin [ctb],
+  Alexander Robitzsch [ctb],
+  Mateusz Zoltak [ctb],
+  KwonHyun Kim [ctb],
+  Carl F. Falk [ctb],
+  Adam Meade [ctb]
+Date/Publication: 2016-12-01 08:28:34

@@ -1,0 +1,25 @@
+Package: lvec
+Type: Package
+Title: Out of Memory Vectors
+Version: 0.1.0
+Date: 2017-07-13
+Author: Jan van der Laan
+Maintainer: Jan van der Laan <djvanderlaan@unrealizedtime.nl>
+Description: Core functionality for working with vectors (numeric, integer,
+    logical and character) that are too large to keep in memory. The vectors are
+    kept (partially) on disk using memory mapping. This package contains the
+    basic functionality for working with these memory mapped vectors (e.g.
+    creating, indexing, ordering and sorting) and provides C++ headers which can
+    be used by other packages to extend the functionality provided in this
+    package.
+URL: https://github.com/djvanderlaan/lvec
+Depends: stats, R (>= 3.0.0)
+LinkingTo: BH
+Suggests: testthat
+License: GPL-3
+LazyLoad: yes
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2017-07-13 09:01:11 UTC; eoos
+Repository: CRAN
+Date/Publication: 2017-07-13 10:43:04 UTC

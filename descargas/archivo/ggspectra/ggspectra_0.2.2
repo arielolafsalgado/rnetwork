@@ -1,0 +1,37 @@
+Package: ggspectra
+Type: Package
+Title: Extensions to 'ggplot2' for Radiation Spectra
+Version: 0.2.2
+Date: 2017-08-30
+Authors@R: 
+   c(
+    person("Pedro J.", "Aphalo", email = "pedro.aphalo@helsinki.fi", role = c("aut", "cre")),
+    person("Titta K.", "Kotilainen", email = "titta.kotilainen@helsinki.fi", role = "ctb")
+    )
+Maintainer: Pedro J. Aphalo <pedro.aphalo@helsinki.fi>
+Description: Additional annotations, and stats for plotting "light"
+    spectra with 'ggplot2', together with specializations of ggplot()
+    and plot() methods for spectral data stored in objects of the classes
+    defined in package 'photobiology' and a plot() method for objects of
+    class "waveband", also defined in package 'photobiology'.
+License: GPL (>= 2)
+LazyData: TRUE
+LazyLoad: TRUE
+ByteCompile: TRUE
+Depends: R (>= 3.3.0)
+Imports: photobiology (>= 0.9.17), photobiologyWavebands (>= 0.4.2),
+        scales (>= 0.4.1), ggplot2 (>= 2.2.1), ggrepel (>= 0.6.5),
+        dplyr (>= 0.7.1), lubridate (>= 1.6.0), tidyr (>= 0.6.3),
+        reshape2 (>= 1.4.2)
+Suggests: knitr (>= 1.16), rmarkdown (>= 1.6)
+URL: http://www.r4photobiology.info,
+        https://bitbucket.org/aphalo/ggspectra
+BugReports: https://bitbucket.org/aphalo/ggspectra
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-08-31 22:19:57 UTC; aphalo
+Author: Pedro J. Aphalo [aut, cre],
+  Titta K. Kotilainen [ctb]
+Repository: CRAN
+Date/Publication: 2017-08-31 22:32:47 UTC

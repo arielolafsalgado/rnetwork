@@ -1,0 +1,34 @@
+Package: decoder
+Type: Package
+Title: Decode Coded Variables to Plain Text and the Other Way Around
+Version: 1.1.13
+Authors@R: 
+  person(
+    "Erik", 
+    "Bulow", 
+    email   = "erik.bulow@rccvast.se",
+    role    = c("aut", "cre"),
+    comment = c(ORCID = "0000-0002-9973-456X")
+  )
+Description: Main function "decode" is used to decode coded key values to plain
+    text. Function "code" can be used to code plain text to code if there is a
+    1:1 relation between the two. The concept relies on 'keyvalue' objects used
+    for translation. There are several 'keyvalue' objects included in the areas
+    of geographical regional codes, administrative health care unit codes,
+    diagnosis codes and more. It is also easy to extend the use by arbitrary 
+    code sets.
+License: GPL-2
+Depends: R (>= 2.10)
+Imports: backports
+Suggests: dplyr, DT, testthat, knitr, rmarkdown, tidyr, webshot
+VignetteBuilder: knitr
+Encoding: UTF-8
+URL: https://www.bitbucket.com/cancercentrum/decoder
+BugReports: https://www.bitbucket.com/cancercentrum/decoder/issues
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-01-08 10:40:05 UTC; erikbulow
+Author: Erik Bulow [aut, cre] (<https://orcid.org/0000-0002-9973-456X>)
+Maintainer: Erik Bulow <erik.bulow@rccvast.se>
+Repository: CRAN
+Date/Publication: 2019-01-08 17:10:03 UTC

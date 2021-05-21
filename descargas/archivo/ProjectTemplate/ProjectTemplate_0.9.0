@@ -1,0 +1,66 @@
+Package: ProjectTemplate
+Type: Package
+Title: Automates the Creation of New Statistical Analysis Projects
+Version: 0.9.0
+Date: 2019-02-26
+Authors@R: c( person("Aleksandar", "Blagotic", role = "ctb"),
+    person("Diego", "Valle-Jones", role = "ctb"),
+    person("Jeffrey", "Breen", role = "ctb"),
+    person("Joakim", "Lundborg", role = "ctb"),
+    person("John Myles", "White", role = c("aut", "cph")),
+    person("Josh", "Bode", role = "ctb"),
+    person("Kenton", "White", role = c("ctb", "cre"), email = "jkentonwhite@gmail.com"),
+    person("Kirill", "Mueller", role = "ctb"),
+    person("Matteo", "Redaelli", role = "ctb"),
+    person("Noah", "Lorang", role = "ctb"),
+    person("Patrick", "Schalk", role = "ctb"),
+    person("Dominik", "Schneider", role="ctb"))
+Description: Provides functions to
+    automatically build a directory structure for a new R
+    project. Using this structure, 'ProjectTemplate'
+    automates data loading, preprocessing, library
+    importing and unit testing.
+License: GPL-3 | file LICENSE
+LazyLoad: yes
+Encoding: UTF-8
+Depends: R (>= 2.7)
+Suggests: foreign, feather, reshape, plyr, digest, formatR, stringr,
+        ggplot2, lubridate, log4r (>= 0.1-5), DBI, RMySQL, RSQLite,
+        gdata, RODBC, RJDBC, readxl, xlsx, tuneR, pixmap, data.table,
+        RPostgreSQL, GetoptLong, whisker, tibble, testthat (>= 0.8)
+URL: http://projecttemplate.net
+BugReports: https://github.com/johnmyleswhite/ProjectTemplate/issues
+Collate: 'add.config.R' 'preinstalled.readers.R' 'add.extension.R'
+        'addins.R' 'arff.reader.R' 'cache.R' 'cache.name.R'
+        'cache.project.R' 'clean.variable.name.R' 'clear.R'
+        'clear.cache.R' 'translate.dcf.R' 'config.R' 'create.project.R'
+        'create.template.R' 'csv.reader.R' 'csv2.reader.R'
+        'db.reader.R' 'dbf.reader.R' 'epiinfo.reader.R'
+        'feather.reader.R' 'file.reader.R' 'get.project.R' 'help.R'
+        'list.data.R' 'load.project.R' 'migrate.project.R'
+        'migrate.template.R' 'mp3.reader.R' 'mtp.reader.R'
+        'octave.reader.R' 'ppm.reader.R' 'project.config.R'
+        'r.reader.R' 'rdata.reader.R' 'rds.reader.R' 'reload.project.R'
+        'require.package.R' 'run.project.R' 'show.project.R'
+        'spss.reader.R' 'sql.reader.R' 'stata.reader.R'
+        'stopifnotproject.R' 'stub.tests.R' 'systat.reader.R'
+        'test.project.R' 'tsv.reader.R' 'url.reader.R' 'wsv.reader.R'
+        'xls.reader.R' 'xlsx.reader.R' 'xport.reader.R'
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-02-26 19:02:11 UTC; kwhite
+Author: Aleksandar Blagotic [ctb],
+  Diego Valle-Jones [ctb],
+  Jeffrey Breen [ctb],
+  Joakim Lundborg [ctb],
+  John Myles White [aut, cph],
+  Josh Bode [ctb],
+  Kenton White [ctb, cre],
+  Kirill Mueller [ctb],
+  Matteo Redaelli [ctb],
+  Noah Lorang [ctb],
+  Patrick Schalk [ctb],
+  Dominik Schneider [ctb]
+Maintainer: Kenton White <jkentonwhite@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-02-26 19:30:08 UTC

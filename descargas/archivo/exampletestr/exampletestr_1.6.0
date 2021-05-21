@@ -1,0 +1,53 @@
+Type: Package
+Package: exampletestr
+Title: Help for Writing Unit Tests Based on Function Examples
+Version: 1.6.0
+Authors@R: 
+    c(person(given = "Rory",
+             family = "Nolan",
+             role = c("aut", "cre"),
+             email = "rorynoolan@gmail.com",
+             comment = c(ORCID = "0000-0002-5239-4043")),
+      person(given = "Sergi",
+             family = "Padilla-Parra",
+             role = "ths",
+             email = "spadilla@well.ox.ac.uk",
+             comment = c(ORCID = "0000-0002-8010-9481")),
+      person(given = "Thomas",
+             family = "Quinn",
+             role = "rev",
+             comment = c(ORCID = "0000-0003-0286-6329")),
+      person(given = "Laurent",
+             family = "Gatto",
+             role = "rev",
+             comment = c(ORCID = "0000-0002-1520-2268")))
+Maintainer: Rory Nolan <rorynoolan@gmail.com>
+Description: Take the examples written in your documentation of
+    functions and use them to create shells (skeletons which must be
+    manually completed by the user) of test files to be tested with the
+    'testthat' package. Sort of like python 'doctests' for R.
+License: GPL-3
+URL: https://rorynolan.github.io/exampletestr,
+        https://github.com/rorynolan/exampletestr#readme
+BugReports: https://www.github.com/rorynolan/exampletestr/issues
+Depends: R (>= 3.5.0)
+Imports: checkmate (>= 1.9.3), clipr (>= 0.7.0), filesstrings (>=
+        3.1.5), fs (>= 1.2.3), magrittr (>= 1.5), ore (>= 1.4.0),
+        purrr, readr, rlang (>= 0.3.3), roxygen2, rstudioapi (>= 0.4),
+        stringr (>= 1.3.0), styler (>= 1.2.0), usethis (>= 1.5.1),
+        withr (>= 2.1.0)
+Suggests: covr, crayon, knitr, pacman, rmarkdown, spelling, testthat
+        (>= 2.3.0)
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.1.0
+NeedsCompilation: no
+Packaged: 2020-04-08 15:59:17 UTC; rnolan
+Author: Rory Nolan [aut, cre] (<https://orcid.org/0000-0002-5239-4043>),
+  Sergi Padilla-Parra [ths] (<https://orcid.org/0000-0002-8010-9481>),
+  Thomas Quinn [rev] (<https://orcid.org/0000-0003-0286-6329>),
+  Laurent Gatto [rev] (<https://orcid.org/0000-0002-1520-2268>)
+Repository: CRAN
+Date/Publication: 2020-04-08 16:40:03 UTC

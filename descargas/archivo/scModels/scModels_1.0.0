@@ -1,0 +1,38 @@
+Package: scModels
+Title: Fitting Discrete Distribution Models to Count Data
+Version: 1.0.0
+Maintainer: Lisa Amrhein <amrheinlisa@gmail.com>
+Authors@R: c(
+  person("Lisa", "Amrhein", email="amrheinlisa@gmail.com", role=c("aut", "cre")),
+  person("Kumar", "Harsha", email="kumar.harsha@tum.de", role="aut"),
+  person("Christiane", "Fuchs", email="christiane.fuchs@helmholtz-muenchen.de", role="aut"),
+  person("Pavel", "Holoborodko", email="pavel@holoborodko.com", role="ctb", comment="Author and copyright holder of 'mpreal.h'"))
+License: GPL-3
+Description: Provides functions for fitting discrete distribution models to count data.
+  Included are the Poisson, the negative binomial and, most importantly,
+  a new implementation of the Poisson-beta distribution (density, distribution and quantile
+  functions, and random number generator) together with a needed new implementation of
+  Kummer's function (also: confluent hypergeometric function of the first kind). Three
+  different implementations of the Gillespie algorithm allow data simulation based on the
+  basic, switching or bursting mRNA generating processes. Moreover, likelihood functions for
+  four variants of each of the three aforementioned distributions are also available.
+  The variants include one population and two population mixtures, both with and without
+  zero-inflation. The package depends on the 'MPFR' libraries which need to be installed separately 
+  (see description at <https://github.com/fuchslab/scModels>).
+  This package is supplement to the paper "A mechanistic model for the negative binomial distribution of single-cell mRNA counts" 
+  by Lisa Amrhein, Kumar Harsha and Christiane Fuchs (2019) <doi:10.1101/657619> available on bioRxiv.
+Depends: R (>= 3.1.0)
+LazyData: true
+RoxygenNote: 6.1.1
+Suggests: knitr, rmarkdown, testthat
+LinkingTo: Rcpp
+Imports: Rcpp
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2019-06-13 14:01:09 UTC; kumarharsha
+Author: Lisa Amrhein [aut, cre],
+  Kumar Harsha [aut],
+  Christiane Fuchs [aut],
+  Pavel Holoborodko [ctb] (Author and copyright holder of 'mpreal.h')
+Repository: CRAN
+Date/Publication: 2019-06-13 16:10:03 UTC

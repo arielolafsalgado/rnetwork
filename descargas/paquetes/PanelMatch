@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package PanelMatch</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Matching Methods for Causal Inference with Time-Series Cross-Sectional Data [R package PanelMatch version 1.0.0]" />
+<meta name="citation_author1" content="In Song Kim" />
+<meta name="citation_author2" content="Adam Rauh" />
+<meta name="citation_author3" content="Erik Wang" />
+<meta name="citation_author4" content="Kosuke Imai" />
+<meta name="citation_publication_date" content="2020-02-28" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=PanelMatch" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=PanelMatch" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="PanelMatch: Matching Methods for Causal Inference with Time-Series Cross-Sectional Data" />
+<meta name="og:description" content="Implements a set of methodological tools that enable researchers to apply matching methods to time-series cross-sectional data. Imai, Kim, and Wang (2018) &amp;lt;&lt;a href=&quot;http://web.mit.edu/insong/www/pdf/tscs.pdf&quot;&gt;http://web.mit.edu/insong/www/pdf/tscs.pdf&lt;/a&gt;&amp;gt; proposes a nonparametric generalization of the difference-in-differences estimator, which does not rely on the linearity assumption as often done in practice. Researchers first select a method of matching each treated observation for a given unit in a particular time period with control observations from other units in the same time period that have a similar treatment and covariate history. These methods include standard matching methods based on propensity score and Mahalanobis distance, as well as weighting methods. Once matching is done, both short-term and long-term average treatment effects for the treated can be estimated with standard errors. The package also offers a visualization technique that allows researchers to assess the quality of matches by examining the resulting covariate balance." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=PanelMatch" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>PanelMatch: Matching Methods for Causal Inference with Time-Series
+Cross-Sectional Data</h2>
+<p>Implements a set of methodological tools
+	     that enable researchers to apply matching methods to
+	     time-series cross-sectional data. Imai, Kim, and Wang
+	     (2018) &lt;<a href="http://web.mit.edu/insong/www/pdf/tscs.pdf">http://web.mit.edu/insong/www/pdf/tscs.pdf</a>&gt; 
+	     proposes a nonparametric generalization of the
+	     difference-in-differences estimator, which does not rely
+	     on the linearity assumption as often done in
+	     practice. Researchers first select a method of matching
+	     each treated observation for a given unit in a
+	     particular time period with control observations from
+	     other units in the same time period that have a similar
+	     treatment and covariate history. These methods include
+	     standard matching methods based on propensity score and
+	     Mahalanobis distance, as well as weighting methods. Once 
+	     matching is done, both short-term and long-term average 
+	     treatment effects for the treated can be estimated with 
+	     standard errors. The package also offers a visualization 
+	     technique that allows researchers to assess the quality 
+	     of matches by examining the resulting covariate balance.</p>
+<table summary="Package PanelMatch summary">
+<tr>
+<td>Version:</td>
+<td>1.0.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.14.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.5), <a href="../data.table/index.html">data.table</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../CBPS/index.html">CBPS</a>, stats, graphics, grDevices, <a href="../MASS/index.html">MASS</a>, <a href="../Matrix/index.html">Matrix</a>, methods</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../RcppArmadillo/index.html">RcppArmadillo</a>, <a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppEigen/index.html">RcppEigen</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../testthat/index.html">testthat</a> (&ge; 2.1.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-02-28</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>In Song Kim [aut, cre],
+  Adam Rauh [aut],
+  Erik Wang [aut],
+  Kosuke Imai [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>In Song Kim  &#x3c;&#x69;&#x6e;&#x73;&#x6f;&#x6e;&#x67;&#x20;&#x61;&#x74;&#x20;&#x6d;&#x69;&#x74;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/insongkim/PanelMatch/issues">https://github.com/insongkim/PanelMatch/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL (&ge; 3)</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>C++11</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_PanelMatch.html">PanelMatch results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package PanelMatch downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="PanelMatch.pdf"> PanelMatch.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/using_panelmatch.html">Using PanelMatch</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/PanelMatch_1.0.0.tar.gz"> PanelMatch_1.0.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/PanelMatch_1.0.0.zip">PanelMatch_1.0.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/PanelMatch_1.0.0.zip">PanelMatch_1.0.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/PanelMatch_1.0.0.zip">PanelMatch_1.0.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/PanelMatch_1.0.0.tgz">PanelMatch_1.0.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/PanelMatch_1.0.0.tgz">PanelMatch_1.0.0.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=PanelMatch"><samp>https://CRAN.R-project.org/package=PanelMatch</samp></a>
+to link to this page.</p>
+</body>
+</html>

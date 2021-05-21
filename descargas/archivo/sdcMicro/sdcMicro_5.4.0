@@ -1,0 +1,50 @@
+Package: sdcMicro
+Type: Package
+Title: Statistical Disclosure Control Methods for Anonymization of Data
+        and Risk Estimation
+Version: 5.4.0
+Date: 2019-05-14
+Authors@R: c(
+  person("Matthias", "Templ", email="matthias.templ@gmail.com", role = c("aut", "cre")),
+  person("Bernhard", "Meindl", email = "Bernhard.Meindl@statistik.gv.at", role = c("aut")),
+  person("Alexander", "Kowarik", email="Alexander.Kowarik@statistik.gv.at", role = "aut", comment=c(ORCID="0000-0001-8598-4130")))
+Description: Data from statistical agencies and other institutions are mostly
+    confidential. This package can be used for the generation of anonymized
+    (micro)data, i.e. for the creation of public- and scientific-use files. In
+    addition, various risk estimation methods are included. Note that the package
+    includes a graphical user interface that allows to use various methods of this
+    package.
+LazyData: TRUE
+ByteCompile: TRUE
+LinkingTo: Rcpp
+Depends: R (>= 2.10)
+Suggests: laeken,testthat
+Imports: utils, stats, graphics, car, carData, rmarkdown, knitr,
+        data.table, xtable, robustbase, cluster, MASS, e1071, tools,
+        Rcpp, methods, sets, ggplot2, shiny, haven, rhandsontable, DT,
+        shinyBS, prettydoc, VIM(>= 4.7.0)
+License: GPL-2
+URL: https://github.com/sdcTools/sdcMicro
+Collate: '0classes.r' 'addGhostVars.R' 'addNoise.r' 'aux_functions.r'
+        'createNewID.R' 'dataGen.r' 'dataSets.R' 'dRisk.R' 'dRiskRMD.R'
+        'dUtility.R' 'freqCalc.r' 'globalRecode.R' 'groupAndRename.R'
+        'GUIfunctions.R' 'indivRisk.R' 'LLmodGlobalRisk.R'
+        'LocalRecProg.R' 'localSupp.R' 'localSuppression.R' 'mdav.R'
+        'measure_risk.R' 'methods.r' 'microaggregation.R' 'modRisk.R'
+        'muargus_compatibility_functions.R' 'mvTopCoding.R'
+        'plotFunctions.R' 'plotMicro.R' 'pram.R' 'rankSwap.R'
+        'RcppExports.R' 'report.R' 'riskyCells.R' 'sdcMicro-package.R'
+        'shuffle.R' 'suda2.R' 'timeEstimation.R' 'topBotCoding.R'
+        'valTable.R' 'zzz.R' 'printFunctions.R' 'mafast.R' 'maG.R'
+        'sdcApp.R' 'show_sdcMicroObj.R'
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2019-05-16 07:57:57 UTC; teml
+Author: Matthias Templ [aut, cre],
+  Bernhard Meindl [aut],
+  Alexander Kowarik [aut] (<https://orcid.org/0000-0001-8598-4130>)
+Maintainer: Matthias Templ <matthias.templ@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-05-16 10:10:03 UTC

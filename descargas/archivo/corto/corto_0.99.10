@@ -1,0 +1,35 @@
+Package: corto
+Type: Package
+Title: Inference of Gene Regulatory Networks
+Version: 0.99.10
+Authors@R: c(
+ person("Federico M.","Giorgi",email = "federico.giorgi@gmail.com",role=c("aut","cre")),
+ person("Daniele","Mercatelli",email = "danielemercatelli@gmail.com",role="ctb"),
+ person("Gonzalo","Lopez-Garcia",email = "gonzolgarcia@gmail.com",role="ctb"))
+Maintainer: Federico M. Giorgi <federico.giorgi@gmail.com>
+Description: We present 'corto' (Correlation Tool), a simple package to infer
+ gene regulatory networks using DPI (Data Processing Inequality) and bootstrapping
+ to recover edges. An initial step is performed to calculate all significant
+ edges between a list of source nodes (centroids) and target genes.
+ Then all triplets containing two centroids and one target are tested
+ in a DPI step which removes edges. A bootstrapping
+ process then calculates the robustness of the network, eventually re-adding
+ edges previously removed by DPI. The package implements a similar pipeline as
+ ARACNe-AP (Algorithm for the Reconstruction of Accurate Cellular Networks with
+ Adaptive Partitioning) by Giorgi (2016) <doi:10.1093/bioinformatics/btw216>)
+ with optimizations to run outside a  computing cluster (most notably
+ correlation to infer feature dependencies instead of Mutual Information).
+License: LGPL-3
+Encoding: UTF-8
+LazyData: TRUE
+RoxygenNote: 6.1.1
+Depends: R (>= 3.5)
+NeedsCompilation: no
+Imports: dplyr, knitr, parallel, pbapply, rmarkdown, stats, utils
+VignetteBuilder: knitr
+Packaged: 2019-10-25 10:54:06 UTC; feder
+Author: Federico M. Giorgi [aut, cre],
+  Daniele Mercatelli [ctb],
+  Gonzalo Lopez-Garcia [ctb]
+Repository: CRAN
+Date/Publication: 2019-10-30 17:00:14 UTC

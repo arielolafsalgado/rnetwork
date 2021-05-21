@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package ctmm</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Continuous-Time Movement Modeling [R package ctmm version 0.5.10]" />
+<meta name="citation_author1" content="Christen H. Fleming" />
+<meta name="citation_author2" content="Justin M. Calabrese" />
+<meta name="citation_publication_date" content="2020-05-07" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=ctmm" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=ctmm" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="ctmm: Continuous-Time Movement Modeling" />
+<meta name="og:description" content="Functions for identifying, fitting, and applying continuous-space, continuous-time stochastic movement models to animal tracking data. The package is described in Calabrese et al (2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2F2041-210X.12559&quot;&gt;doi:10.1111/2041-210X.12559&lt;/a&gt;&amp;gt;, with models and methods based on those introduced in Fleming &amp;amp; Calabrese et al (2014) &amp;lt;&lt;a href=&quot;https://doi.org/10.1086%2F675504&quot;&gt;doi:10.1086/675504&lt;/a&gt;&amp;gt;, Fleming et al (2014) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2F2041-210X.12176&quot;&gt;doi:10.1111/2041-210X.12176&lt;/a&gt;&amp;gt;, Fleming et al (2015) &amp;lt;&lt;a href=&quot;https://doi.org/10.1103%2FPhysRevE.91.032107&quot;&gt;doi:10.1103/PhysRevE.91.032107&lt;/a&gt;&amp;gt;, Fleming et al (2015) &amp;lt;&lt;a href=&quot;https://doi.org/10.1890%2F14-2010.1&quot;&gt;doi:10.1890/14-2010.1&lt;/a&gt;&amp;gt;, Fleming et al (2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.1890%2F15-1607&quot;&gt;doi:10.1890/15-1607&lt;/a&gt;&amp;gt;, Péron &amp;amp; Fleming et al (2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.1186%2Fs40462-016-0084-7&quot;&gt;doi:10.1186/s40462-016-0084-7&lt;/a&gt;&amp;gt;, Fleming &amp;amp; Calabrese (2017) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2F2041-210X.12673&quot;&gt;doi:10.1111/2041-210X.12673&lt;/a&gt;&amp;gt;, Péron et al (2017) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fecm.1260&quot;&gt;doi:10.1002/ecm.1260&lt;/a&gt;&amp;gt;, Fleming et al (2017) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.ecoinf.2017.04.008&quot;&gt;doi:10.1016/j.ecoinf.2017.04.008&lt;/a&gt;&amp;gt;, Fleming et al (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Feap.1704&quot;&gt;doi:10.1002/eap.1704&lt;/a&gt;&amp;gt;, Winner &amp;amp; Noonan et al (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2F2041-210X.13027&quot;&gt;doi:10.1111/2041-210X.13027&lt;/a&gt;&amp;gt;, Fleming et al (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2F2041-210X.13270&quot;&gt;doi:10.1111/2041-210X.13270&lt;/a&gt;&amp;gt;, and Noonan &amp;amp; Fleming et al (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1186%2Fs40462-019-0177-1&quot;&gt;doi:10.1186/s40462-019-0177-1&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=ctmm" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>ctmm: Continuous-Time Movement Modeling</h2>
+<p>Functions for identifying, fitting, and applying continuous-space, continuous-time stochastic movement models to animal tracking data.
+  The package is described in Calabrese et al (2016) &lt;<a href="https://doi.org/10.1111%2F2041-210X.12559">doi:10.1111/2041-210X.12559</a>&gt;, with models and methods based on those introduced in
+  Fleming &amp; Calabrese et al (2014) &lt;<a href="https://doi.org/10.1086%2F675504">doi:10.1086/675504</a>&gt;,
+  Fleming et al (2014) &lt;<a href="https://doi.org/10.1111%2F2041-210X.12176">doi:10.1111/2041-210X.12176</a>&gt;,
+  Fleming et al (2015) &lt;<a href="https://doi.org/10.1103%2FPhysRevE.91.032107">doi:10.1103/PhysRevE.91.032107</a>&gt;,
+  Fleming et al (2015) &lt;<a href="https://doi.org/10.1890%2F14-2010.1">doi:10.1890/14-2010.1</a>&gt;,
+  Fleming et al (2016) &lt;<a href="https://doi.org/10.1890%2F15-1607">doi:10.1890/15-1607</a>&gt;,
+  Péron &amp; Fleming et al (2016) &lt;<a href="https://doi.org/10.1186%2Fs40462-016-0084-7">doi:10.1186/s40462-016-0084-7</a>&gt;,
+  Fleming &amp; Calabrese (2017) &lt;<a href="https://doi.org/10.1111%2F2041-210X.12673">doi:10.1111/2041-210X.12673</a>&gt;,
+  Péron et al (2017) &lt;<a href="https://doi.org/10.1002%2Fecm.1260">doi:10.1002/ecm.1260</a>&gt;,
+  Fleming et al (2017) &lt;<a href="https://doi.org/10.1016%2Fj.ecoinf.2017.04.008">doi:10.1016/j.ecoinf.2017.04.008</a>&gt;,
+  Fleming et al (2018) &lt;<a href="https://doi.org/10.1002%2Feap.1704">doi:10.1002/eap.1704</a>&gt;,
+  Winner &amp; Noonan et al (2018) &lt;<a href="https://doi.org/10.1111%2F2041-210X.13027">doi:10.1111/2041-210X.13027</a>&gt;,
+  Fleming et al (2019) &lt;<a href="https://doi.org/10.1111%2F2041-210X.13270">doi:10.1111/2041-210X.13270</a>&gt;,
+  and
+  Noonan &amp; Fleming et al (2019) &lt;<a href="https://doi.org/10.1186%2Fs40462-019-0177-1">doi:10.1186/s40462-019-0177-1</a>&gt;.</p>
+<table summary="Package ctmm summary">
+<tr>
+<td>Version:</td>
+<td>0.5.10</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../data.table/index.html">data.table</a>, <a href="../digest/index.html">digest</a>, <a href="../expm/index.html">expm</a>, <a href="../fasttime/index.html">fasttime</a>, <a href="../Gmedian/index.html">Gmedian</a>, graphics, grDevices, <a href="../gsl/index.html">gsl</a>, <a href="../manipulate/index.html">manipulate</a>, <a href="../MASS/index.html">MASS</a>, methods, <a href="../numDeriv/index.html">numDeriv</a>, <a href="../pbivnorm/index.html">pbivnorm</a>, <a href="../pracma/index.html">pracma</a>, <a href="../raster/index.html">raster</a>, <a href="../rgdal/index.html">rgdal</a>, <a href="../shape/index.html">shape</a>, <a href="../sp/index.html">sp</a>, stats, utils</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../bit64/index.html">bit64</a>, <a href="../fftw/index.html">fftw</a>, <a href="../knitr/index.html">knitr</a>, <a href="../move/index.html">move</a>, parallel, <a href="../suncalc/index.html">suncalc</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-05-07</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Christen H. Fleming [aut, cre],
+  Justin M. Calabrese [aut],
+  Xianghui Dong [ctb],
+  Kevin Winner [ctb],
+  Guillaume Péron [ctb],
+  Michael J. Noonan [ctb],
+  Bart Kranstauber [ctb],
+  Eliezer Gurarie [ctb],
+  Kamran Safi [ctb],
+  Paul C. Cross [dtc],
+  Thomas Mueller [dtc],
+  Rogério C. de Paula [dtc],
+  Thomas Akre [dtc],
+  Jonathan Drescher-Lehman [dtc],
+  Autumn-Lynn Harrison [dtc],
+  Ronaldo G. Morato [dtc]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Christen H. Fleming  &#x3c;&#x66;&#x6c;&#x65;&#x6d;&#x69;&#x6e;&#x67;&#x63;&#x20;&#x61;&#x74;&#x20;&#x73;&#x69;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/ctmm-initiative/ctmm">https://github.com/ctmm-initiative/ctmm</a>,
+<a href="http://biology.umd.edu/movement.html">http://biology.umd.edu/movement.html</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/SpatioTemporal.html">SpatioTemporal</a>, <a href="../../views/Tracking.html">Tracking</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_ctmm.html">ctmm results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package ctmm downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="ctmm.pdf"> ctmm.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/akde.html">Autocorrelated Kernel Density Estimation</a><br/>
+<a href="vignettes/error.html">Dealing with telemetry error</a><br/>
+<a href="vignettes/periodogram.html">Periodic movement models</a><br/>
+<a href="vignettes/variogram.html">Variograms and Model Selection</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/ctmm_0.5.10.tar.gz"> ctmm_0.5.10.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/ctmm_0.5.10.zip">ctmm_0.5.10.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/ctmm_0.5.10.zip">ctmm_0.5.10.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/ctmm_0.5.10.zip">ctmm_0.5.10.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/ctmm_0.5.10.tgz">ctmm_0.5.10.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/ctmm_0.5.5.tgz">ctmm_0.5.5.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/ctmm"> ctmm archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package ctmm reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../amt/index.html">amt</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../move/index.html">move</a>, <a href="../trackdf/index.html">trackdf</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=ctmm"><samp>https://CRAN.R-project.org/package=ctmm</samp></a>
+to link to this page.</p>
+</body>
+</html>

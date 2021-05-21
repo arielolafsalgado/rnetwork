@@ -1,0 +1,36 @@
+Package: eulerr
+Title: Area-Proportional Euler and Venn Diagrams with Circles or
+        Ellipses
+Version: 3.1.0
+Authors@R: c(person("Johan", "Larsson", email = "johanlarsson@outlook.com",
+                    role = c("aut", "cre")),
+             person("A. Jonathan R.", "Godfrey", role = "ctb"),
+             person("Tim", "Kelley", role = "ctb", 
+                    comment = "Original Nelder-Mead code"),
+             person("David H.", "Eberly", role = "ctb",
+                    comment = "Geometric algorithms"))
+Description: Generate area-proportional Euler diagrams
+    using numerical optimization. An Euler diagram is a generalization of a Venn
+    diagram, relaxing the criterion that all interactions need to be
+    represented. Diagrams may be fit with ellipses and circles via
+    a wide range of inputs and can be visualized in numerous ways.
+Depends: R (>= 3.3.1)
+Imports: graphics, grDevices, grid, stats, utils, lattice, Rcpp, RcppDE
+Suggests: knitr, pBrackets, RConics, testthat, covr
+LinkingTo: Rcpp (>= 0.12.12), RcppArmadillo (>= 0.7.600.1.0)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+URL: https://github.com/jolars/eulerr
+BugReports: https://github.com/jolars/eulerr/issues
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2018-01-01 21:28:50 UTC; johan
+Author: Johan Larsson [aut, cre],
+  A. Jonathan R. Godfrey [ctb],
+  Tim Kelley [ctb] (Original Nelder-Mead code),
+  David H. Eberly [ctb] (Geometric algorithms)
+Maintainer: Johan Larsson <johanlarsson@outlook.com>
+Repository: CRAN
+Date/Publication: 2018-01-02 23:17:26 UTC

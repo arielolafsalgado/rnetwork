@@ -1,0 +1,21 @@
+Package: FLSSS
+Type: Package
+Title: Mining Rigs for Specialized Subset Sum, Multi-Subset Sum,
+        Multidimensional Subset Sum, Multidimensional Knapsack,
+        Generalized Assignment Problems
+Version: 7.6
+Author: Charlie Wusuo Liu
+Maintainer: Charlie Wusuo Liu <liuwusuo@gmail.com>
+Description: Specialized solvers for combinatorial optimization problems in the Subset Sum family. These solvers differ from the mainstream in the options of (i) subset size restriction, (ii) bounds on the subset elements, (iii) mining real-value sets with predefined subset sum errors, and (iv) finding one or more subsets in limited time. A novel algorithm for mining the one-dimensional Subset Sum induced algorithms for the multi-Subset Sum and the multidimensional Subset Sum. The latter is creatively scheduled in a multi-threaded environment, and the framework offers strong applications to the multidimensional Knapsack and the Generalized Assignment problems. Package updates include (a) renewed implementation of the multi-Subset Sum, multidimensional Knapsack and Generalized Assignment solvers; (b) availability of bounding solution space in the multidimensional Subset Sum; (c) fundamental data structure and architectural changes for enhanced cache locality and better chance of SIMD vectorization; (d) an option of mapping real-domain problems to the integer domain with controlled precision loss, and those integers are further zipped non-uniformly in 64-bit buffers. Arithmetic on compressed integers has a novel design with virtually zero speed lag relative to that on normal integers, and the consequent reduction in dimensionality often leads to substantial acceleration. Compilation with aggressive optimization, e.g. g++ '-Ofast', may speed up mining on some platforms. Package documentation (<arXiv:1612.04484v2>) is outdated as the time of writing.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+Imports: Rcpp (>= 0.12.13), RcppParallel
+LinkingTo: Rcpp, RcppParallel
+SystemRequirements: GNU make
+RoxygenNote: 6.1.0
+NeedsCompilation: yes
+Packaged: 2018-08-28 05:43:53 UTC; i56087
+Repository: CRAN
+Date/Publication: 2018-08-28 14:04:37 UTC

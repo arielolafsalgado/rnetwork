@@ -1,0 +1,28 @@
+Package: sicegar
+Type: Package
+Title: Analysis of Single-Cell Viral Growth Curves
+Version: 0.1
+Date: 2017-03-17
+Authors@R: c( person("M. Umut", "Caglar", role = c("aut", "cre"), email =
+    "umut.caglar@gmail.com"), person("Claus O.", "Wilke", role = c("aut"), email =
+    "wilke@austin.utexas.edu") )
+Description: Classifies time course fluorescence data of viral growth. The package categorize time course data into one of four categories, "ambiguous", "no signal", "sigmoidal", and "double sigmoidal" by fitting a series of mathematical models to the data. The origin of the package name came from "SIngle CEll Growth Analysis in R".
+URL: https://github.com/wilkelab/sicegar
+Imports: dplyr, minpack.lm, fBasics, ggplot2, stats
+License: GPL-2 | GPL-3
+LazyData: true
+Suggests: knitr
+VignetteBuilder: knitr
+BugReports: https://github.com/wilkelab/sicegar/issues
+Collate: 'categorize.R' 'mainFunctions.R' 'lineFitFunctions.R'
+        'sigmoidalFitFunctions.R' 'doublesigmoidalFitFunctions.R'
+        'normalizationFunction.R' 'sicegar.R' 'dataInputCheck.R'
+        'numericalReCalculation.R' 'generateFigures.R'
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2017-03-19 04:59:38 UTC; umut
+Author: M. Umut Caglar [aut, cre],
+  Claus O. Wilke [aut]
+Maintainer: M. Umut Caglar <umut.caglar@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-03-19 11:39:19 UTC

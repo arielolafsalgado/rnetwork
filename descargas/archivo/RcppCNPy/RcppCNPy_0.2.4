@@ -1,0 +1,25 @@
+Package: RcppCNPy
+Type: Package
+Title: Read-Write Support for NumPy Files via Rcpp
+Version: 0.2.4
+Date: 2015-01-05
+Author: Dirk Eddelbuettel and Wush Wu
+Maintainer: Dirk Eddelbuettel <edd@debian.org>
+Description: The cnpy library written by Carl Rogers provides read and write
+ facilities for files created with (or for) the NumPy extension for Python.
+ Vectors and matrices of numeric types can be read or written to and from
+ files as well as compressed files. Support for integer files is available if
+ the package has been built with -std=c++11 which is the default starting
+ with release 0.2.3 following the release of R 3.1.0. 
+License: GPL (>= 2)
+LazyLoad: yes
+Depends: R (>= 3.1.0)
+Imports: methods, Rcpp
+LinkingTo: Rcpp
+RcppModules: cnpy
+Suggests: highlight
+VignetteBuilder: highlight
+Packaged: 2015-01-06 02:30:14.202841 UTC; edd
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2015-01-06 05:57:47

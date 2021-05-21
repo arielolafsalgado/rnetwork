@@ -1,0 +1,36 @@
+Package: iglu
+Type: Package
+Title: Interpreting Glucose Data from Continuous Glucose Monitors
+Version: 1.0.2
+Authors@R: c(person("Steve", "Broll",
+            email = "stevebroll@tamu.edu",
+            role = c("aut")),
+            person("Jacek", "Urbanek",
+            role = c("aut")),
+            person("David", "Buchanan",
+            role = c("aut")),
+            person("John", "Muschelli",
+            role = c("aut"),
+            email = "muschellij2@gmail.com"), 
+            person("Irina", "Gaynanova",
+            email = "irinag@stat.tamu.edu",role = c("aut", "cre")))
+Description: Implements a wide range of metrics for measuring glucose control and glucose variability based on continuous glucose monitoring data. The list of implemented metrics is summarized in Rodbard (2009) <doi:10.1089/dia.2009.0015>. Additional visualization tools include time-series and lasagna plots. 
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Depends: R (>= 3.1.0)
+Imports: caTools, scales, stats, ggplot2, lubridate, shiny, dplyr,
+        magrittr, tibble, tidyr
+Suggests: knitr, rmarkdown, testthat (>= 2.1.0)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-06-30 21:43:35 UTC; Irina
+Author: Steve Broll [aut],
+  Jacek Urbanek [aut],
+  David Buchanan [aut],
+  John Muschelli [aut],
+  Irina Gaynanova [aut, cre]
+Maintainer: Irina Gaynanova <irinag@stat.tamu.edu>
+Repository: CRAN
+Date/Publication: 2020-07-01 12:30:06 UTC

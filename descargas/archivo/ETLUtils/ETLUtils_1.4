@@ -1,0 +1,25 @@
+Package: ETLUtils
+Maintainer: Jan Wijffels <jwijffels@bnosac.be>
+License: GPL-2
+Title: Utility Functions to Execute Standard Extract/Transform/Load
+        Operations (using Package 'ff') on Large Data
+Type: Package
+LazyLoad: yes
+Author: Jan Wijffels
+Description: Provides functions to facilitate the use of the 'ff' package
+    in interaction with big data in 'SQL' databases (e.g. in 'Oracle', 'MySQL',
+    'PostgreSQL', 'Hive') by allowing easy importing directly into 'ffdf' objects
+    using 'DBI', 'RODBC' and 'RJDBC'. Also contains some basic utility functions to
+    do fast left outer join merging based on 'match', factorisation of data and a
+    basic function for re-coding vectors.
+Version: 1.4
+URL: https://github.com/jwijffels/ETLUtils
+Date: 2018-01-17
+Depends: ff (>= 2.2-13)
+Imports: bit (>= 1.1-12)
+Suggests: RSQLite, zoo, DBI, RODBC, RJDBC
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-01-17 10:43:57 UTC; Jan
+Repository: CRAN
+Date/Publication: 2018-01-17 10:50:03 UTC

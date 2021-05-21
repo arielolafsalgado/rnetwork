@@ -1,0 +1,39 @@
+Package: rhoR
+Title: Rho for Inter Rater Reliability
+Authors@R: c(person("Brendan", "Eagan", email="beagan@wisc.edu", role = c("aut")),person("Brad", "Rogers", email = "bjrogers2@wisc.edu", role = c("aut")), person("Rebecca","Pozen", email = "rpozen@wisc.edu", role = c("aut")),person("Cody L", "Marquart", email="cody.marquart@wisc.edu", role = c("cre", "aut"), comment = c(ORCID = "0000-0002-3387-6792")),person("David", "Williamson Shaffer", email = "dws@education.wisc.edu", role = c("aut")))
+Maintainer: Cody L Marquart <cody.marquart@wisc.edu>
+Version: 1.2.1.2
+Description: Rho is used to test the generalization of inter rater reliability
+    (IRR) statistics. Calculating rho starts by generating a large number of
+    simulated, fully-coded data sets: a sizable collection of hypothetical
+    populations, all of which have a kappa value below a given threshold -- which
+    indicates unacceptable agreement. Then kappa is calculated on a sample from
+    each of those sets in the collection to see if it is equal to or higher than
+    the kappa in then real sample. If less than five percent of the distribution
+    of samples from the simulated data sets is greater than actual observed kappa,
+    the null hypothesis is rejected and one can conclude that if the two raters had
+    coded the rest of the data, we would have acceptable agreement (kappa above the
+    threshold).
+Depends: R (>= 3.0.0)
+License: GPL-3 | file LICENSE
+LazyData: true
+RoxygenNote: 6.1.1
+BugReports: https://gitlab.com/epistemic-analytics/qe-packages/rhor/issues
+Suggests: testthat (>= 2.1.0)
+Collate: 'rhoR.R' 'rho.R' 'rhoK.R' 'rhoSet.R' 'rhoCT.R' 'kappa.R'
+        'kappaSet.R' 'kappaCT.R' 'rhoMin.R' 'baserate.R'
+        'baserateSet.R' 'baserateCT.R' 'calcKappa.R' 'calcRho.R'
+        'checkBRPKcombo.R' 'contingencyTable.R' 'codeSet.R'
+        'contingencyToSet.R' 'createRandomSet.R'
+        'createSimulatedCodeSet.R' 'genPKcombo.R' 'genPcombo.R'
+        'generateKPs.R' 'getBootPvalue.R' 'getHandSet.R'
+        'getHandSetIndices.R' 'getR.R' 'getTestSet.R' 'prset.R'
+NeedsCompilation: no
+Packaged: 2019-11-05 14:48:15 UTC; root
+Author: Brendan Eagan [aut],
+  Brad Rogers [aut],
+  Rebecca Pozen [aut],
+  Cody L Marquart [cre, aut] (<https://orcid.org/0000-0002-3387-6792>),
+  David Williamson Shaffer [aut]
+Repository: CRAN
+Date/Publication: 2019-11-05 15:10:02 UTC

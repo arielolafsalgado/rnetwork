@@ -1,0 +1,41 @@
+Package: redcapAPI
+Type: Package
+Title: Interface to 'REDCap'
+Version: 2.2
+Authors@R: c(
+    person("Benjamin", "Nutter", email = "benjamin.nutter@gmail.com", 
+           role = c("aut", "ctb", "cre")),
+    person("Stephen", "Lane", role = "ctb"),
+    person("Will", "Beasley", role = "ctb"),
+    person("Jeffrey", "Horner", role = "ctb"),
+    person("Will", "Gray", role = "ctb"),
+    person("Jeremy", "Stephens", role = "ctb"))
+Maintainer: Benjamin Nutter <benjamin.nutter@gmail.com>
+Description: Access data stored in 'REDCap' databases using the Application
+    Programming Interface (API).  'REDCap' (Research Electronic Data CAPture;
+    <https://projectredcap.org>) is
+    a web application for building and managing online surveys and databases
+    developed at Vanderbilt University.  The API allows users to access data
+    and project meta data (such as the data dictionary) from the web
+    programmatically.  The 'redcapAPI' package facilitates the process of
+    accessing data with options to prepare an analysis-ready data set
+    consistent with the definitions in a database's data dictionary.
+License: GPL-2
+Depends: R (>= 3.0.0)
+Imports: checkmate, chron, DBI, httr, labelVector, lubridate, readr,
+        stringr, tidyr
+LazyLoad: yes
+URL: https://github.com/nutterb/redcapAPI/wiki,
+        https://github.com/nutterb/redcapAPI, https://projectredcap.org
+BugReports: https://github.com/nutterb/redcapAPI/issues
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2018-08-01 13:09:18 UTC; benjamin
+Author: Benjamin Nutter [aut, ctb, cre],
+  Stephen Lane [ctb],
+  Will Beasley [ctb],
+  Jeffrey Horner [ctb],
+  Will Gray [ctb],
+  Jeremy Stephens [ctb]
+Repository: CRAN
+Date/Publication: 2018-08-01 13:50:03 UTC

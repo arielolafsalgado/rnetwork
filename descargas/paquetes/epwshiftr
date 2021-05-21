@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package epwshiftr</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Create Future 'EnergyPlus' Weather Files using 'CMIP6' Data [R package epwshiftr version 0.1.1]" />
+<meta name="citation_author1" content="Hongyuan Jia" />
+<meta name="citation_author2" content="Adrian Chong" />
+<meta name="citation_publication_date" content="2020-08-11" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=epwshiftr" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=epwshiftr" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="epwshiftr: Create Future 'EnergyPlus' Weather Files using 'CMIP6' Data" />
+<meta name="og:description" content=" Query, download climate change projection data from the 'CMIP6' (Coupled Model Intercomparison Project Phase 6) project &amp;lt;&lt;a href=&quot;https://pcmdi.llnl.gov/CMIP6/&quot;&gt;https://pcmdi.llnl.gov/CMIP6/&lt;/a&gt;&amp;gt; in the 'ESGF' (Earth System Grid Federation) platform &amp;lt;&lt;a href=&quot;https://esgf.llnl.gov&quot;&gt;https://esgf.llnl.gov&lt;/a&gt;&amp;gt;, and create future 'EnergyPlus' &amp;lt;&lt;a href=&quot;https://energyplus.net&quot;&gt;https://energyplus.net&lt;/a&gt;&amp;gt; Weather ('EPW') files adjusted from climate changes using data from Global Climate Models ('GCM')." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=epwshiftr" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>epwshiftr: Create Future 'EnergyPlus' Weather Files using 'CMIP6' Data</h2>
+<p>
+    Query, download climate change projection data from the 'CMIP6' (Coupled
+    Model Intercomparison Project Phase 6) project
+    &lt;<a href="https://pcmdi.llnl.gov/CMIP6/">https://pcmdi.llnl.gov/CMIP6/</a>&gt; in the 'ESGF' (Earth System Grid Federation)
+    platform &lt;<a href="https://esgf.llnl.gov">https://esgf.llnl.gov</a>&gt;, and create future 'EnergyPlus'
+    &lt;<a href="https://energyplus.net">https://energyplus.net</a>&gt; Weather ('EPW') files adjusted from climate changes
+    using data from Global Climate Models ('GCM').</p>
+<table summary="Package epwshiftr summary">
+<tr>
+<td>Version:</td>
+<td>0.1.1</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../checkmate/index.html">checkmate</a>, <a href="../data.table/index.html">data.table</a> (&ge; 1.12.4), <a href="../eplusr/index.html">eplusr</a>, <a href="../future.apply/index.html">future.apply</a>, <a href="../fst/index.html">fst</a>, <a href="../jsonlite/index.html">jsonlite</a>, <a href="../progressr/index.html">progressr</a>, <a href="../psychrolib/index.html">psychrolib</a>, <a href="../rappdirs/index.html">rappdirs</a>, <a href="../RNetCDF/index.html">RNetCDF</a>, <a href="../units/index.html">units</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../pingr/index.html">pingr</a>, <a href="../covr/index.html">covr</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-08-11</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Hongyuan Jia <a href="https://orcid.org/0000-0002-0075-8183"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Adrian Chong <a href="https://orcid.org/0000-0002-9486-4728"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Hongyuan Jia  &#x3c;&#x68;&#x6f;&#x6e;&#x67;&#x79;&#x75;&#x61;&#x6e;&#x2e;&#x6a;&#x69;&#x61;&#x20;&#x61;&#x74;&#x20;&#x62;&#x65;&#x61;&#x72;&#x73;&#x2d;&#x62;&#x65;&#x72;&#x6b;&#x65;&#x6c;&#x65;&#x79;&#x2e;&#x73;&#x67;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ideas-lab-nus/epwshiftr/issues">https://github.com/ideas-lab-nus/epwshiftr/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/ideas-lab-nus/epwshiftr">https://github.com/ideas-lab-nus/epwshiftr</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_epwshiftr.html">epwshiftr results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package epwshiftr downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="epwshiftr.pdf"> epwshiftr.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/epwshiftr_0.1.1.tar.gz"> epwshiftr_0.1.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/epwshiftr_0.1.1.zip">epwshiftr_0.1.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/epwshiftr_0.1.1.zip">epwshiftr_0.1.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/epwshiftr_0.1.1.zip">epwshiftr_0.1.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/epwshiftr_0.1.1.tgz">epwshiftr_0.1.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/epwshiftr_0.1.1.tgz">epwshiftr_0.1.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/epwshiftr"> epwshiftr archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=epwshiftr"><samp>https://CRAN.R-project.org/package=epwshiftr</samp></a>
+to link to this page.</p>
+</body>
+</html>

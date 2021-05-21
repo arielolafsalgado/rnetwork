@@ -1,0 +1,29 @@
+Package: AzureContainers
+Title: Interface to 'Container Instances', 'Docker Registry' and
+        'Kubernetes' in 'Azure'
+Version: 1.0.0
+Authors@R: c(
+    person("Hong", "Ooi", , "hongooi@microsoft.com", role = c("aut", "cre")),
+    person("Bill", "Liang", role = "ctb", comment = "Assistance debugging MMLS on Kubernetes"),
+    person("Ramkumar", "Chandrasekaran", role = "ctb", comment = "Original blog article on Dockerising MMLS"),
+    person("Microsoft", role="cph")
+    )
+Description: An interface to container functionality in Microsoft's 'Azure' cloud: <https://azure.microsoft.com/en-us/overview/containers/>. Manage 'Azure Container Instance' (ACI), 'Azure Container Registry' (ACR) and 'Azure Kubernetes Service' (AKS) resources, push and pull images, and deploy services. On the client side, lightweight shells to the 'docker', 'kubectl' and 'helm' commandline tools are provided.
+URL: https://github.com/cloudyr/AzureContainers
+BugReports: https://github.com/cloudyr/AzureContainers/issues
+License: MIT + file LICENSE
+VignetteBuilder: knitr
+Depends: R (>= 3.3)
+Imports: AzureRMR, openssl, httr, R6
+Suggests: knitr, testthat
+RoxygenNote: 6.1.0.9000
+NeedsCompilation: no
+Packaged: 2018-12-17 02:35:24 UTC; hongooi
+Author: Hong Ooi [aut, cre],
+  Bill Liang [ctb] (Assistance debugging MMLS on Kubernetes),
+  Ramkumar Chandrasekaran [ctb] (Original blog article on Dockerising
+    MMLS),
+  Microsoft [cph]
+Maintainer: Hong Ooi <hongooi@microsoft.com>
+Repository: CRAN
+Date/Publication: 2018-12-25 22:30:18 UTC

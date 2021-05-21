@@ -1,0 +1,26 @@
+Package: ChemoSpec2D
+Type: Package
+Title: Exploratory Chemometrics for 2D Spectroscopy
+Version: 0.2.0
+Date: 2018-11-30
+Authors@R: c(
+    person("Bryan A.", "Hanson",
+    role = c("aut", "cre"), email =
+    "hanson@depauw.edu",
+    comment = "ORCID 0000-0003-3536-8246"))
+Description: A collection of functions for exploratory chemometrics of 2D spectroscopic data sets such as COSY (correlated spectroscopy) and HSQC (heteronuclear single quantum coherence) 2D NMR (nuclear magnetic resonance) spectra. 'ChemoSpec2D' deploys methods aimed primarily at classification of samples and the identification of spectral features which are important in distinguishing samples from each other. Each 2D spectrum (a matrix) is treated as the unit of observation, and thus the physical sample in the spectrometer corresponds to the  sample from a statistical perspective.  In addition to chemometric tools, a few tools are provided for plotting 2D spectra, but these are not intended to replace the functionality typically available on the spectrometer. 'ChemoSpec2D' takes many of its cues from 'ChemoSpec' and tries to create consistent graphical output and to be very user friendly.
+License: GPL-3
+Depends: R (>= 3.5.0), ChemoSpecUtils (>= 0.2)
+Imports: R.utils, tools, utils, plyr, ThreeWay, multiway, matrixStats
+Suggests: knitr, testthat
+URL: https://github.com/bryanhanson/ChemoSpec2D
+BugReports: https://github.com/bryanhanson/ChemoSpec2D/issues
+ByteCompile: TRUE
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2018-11-30 15:25:18 UTC; bryanhanson
+Author: Bryan A. Hanson [aut, cre] (ORCID 0000-0003-3536-8246)
+Maintainer: Bryan A. Hanson <hanson@depauw.edu>
+Repository: CRAN
+Date/Publication: 2018-12-09 14:10:06 UTC

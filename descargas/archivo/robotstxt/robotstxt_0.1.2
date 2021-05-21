@@ -1,0 +1,28 @@
+Package: robotstxt
+Type: Package
+Title: A 'robots.txt' Parser and 'Webbot'/'Spider'/'Crawler'
+        Permissions Checker
+Version: 0.1.2
+Authors@R: c(person("Peter", "Meissner", role = c("aut", "cre"),
+		     email = "retep.meissner@gmail.com"),
+	      person("Oliver", "Keys", role = "ctb"))
+Description: Provides a 'Robotstxt' ('R6') class and accompanying methods to
+    parse and check 'robots.txt' files. Data fields are provided as
+    data frames and vectors. Permissions can be checked by providing
+    path character vectors and optional bot names.
+License: MIT + file LICENSE
+LazyData: TRUE
+BugReports: https://github.com/petermeissner/robotstxt/issues
+URL: https://github.com/petermeissner/robotstxt
+Imports: R6 (>= 2.1.1), stringr (>= 1.0.0), httr (>= 1.0.0)
+Suggests: knitr, rmarkdown, dplyr, testthat
+Depends: R (>= 3.0.0)
+VignetteBuilder: knitr
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-02-07 23:21:42 UTC; peter
+Author: Peter Meissner [aut, cre],
+  Oliver Keys [ctb]
+Maintainer: Peter Meissner <retep.meissner@gmail.com>
+Repository: CRAN
+Date/Publication: 2016-02-08 13:37:57

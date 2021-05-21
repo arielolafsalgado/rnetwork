@@ -1,0 +1,49 @@
+Package: NLMR
+Type: Package
+Title: Simulating Neutral Landscape Models
+Version: 0.1.0
+Authors@R: c(person("Marco", "Sciaini", email = "sciaini.marco@gmail.com", role = c("aut", "cre"), comment = "Department of Ecosystem Modelling, University of Goettingen"), 
+    person("Matthias", "Fritsch", email = "matthias.fritsch@forst.uni-goettingen.de", role =  c("aut"), comment = "Department of Ecosystem Modelling, University of Goettingen"),
+    person("Cédric", "Scherer", email = "cedricphilippscherer@gmail.com", role =  c("aut"), comment = "Leibniz Institute for Zoo and Wildlife Research, Berlin"),
+    person("Craig", "Simpkins", email = "simpkinscraig063@gmail.com", role =  c("aut"), comment = "Department of Ecosystem Modelling, University of Goettingen"))
+Description: Provides neutral landscape models 
+    (Gardner et al. 1987 <doi:10.1007/BF02275262>,
+    With 1997 <doi:10.1046/j.1523-1739.1997.96210.x>) that can easily extend in 
+    existing landscape analyses. Neutral landscape models range from "hard" 
+    neutral models (only random functions) to "soft" ones (with parameters) and 
+    generate landscape patterns that are not grounded in ecological reasoning.
+    Thus, these patterns can be used as null models in landscape ecology. 'NLMR' 
+    combines a large number of algorithms from published software (Saura & 
+    Martínez 2000   <doi:10.1023/A:1008107902848>, Etherington et
+    al. 2015 <doi:10.1111/2041-210X.12308>) for simulating neutral landscapes and
+    includes utility functions to classify and combine the landscapes. The 
+    simulation results are obtained in a geospatial data format (raster* objects 
+    from the 'raster' package) and can, therefore, be used 
+    in any sort of raster data operation that is performed with standard 
+    observation data.                                                                                            
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+Depends: R (>= 3.1.0)
+RoxygenNote: 6.0.1
+Imports: checkmate, dismo, dplyr, ggplot2, gstat, igraph, lemon,
+        magrittr, maptools, purrr, RandomFields, raster, rasterVis,
+        R.utils, sp, spatstat, stats, tibble, viridis
+URL: https://marcosci.github.io/NLMR/
+BugReports: https://github.com/marcosci/NLMR/issues/
+Suggests: testthat, covr, knitr, rmarkdown, lintr
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-11-30 09:52:49 UTC; marco
+Author: Marco Sciaini [aut, cre] (Department of Ecosystem Modelling, University
+    of Goettingen),
+  Matthias Fritsch [aut] (Department of Ecosystem Modelling, University
+    of Goettingen),
+  Cédric Scherer [aut] (Leibniz Institute for Zoo and Wildlife Research,
+    Berlin),
+  Craig Simpkins [aut] (Department of Ecosystem Modelling, University of
+    Goettingen)
+Maintainer: Marco Sciaini <sciaini.marco@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-11-30 10:11:05 UTC

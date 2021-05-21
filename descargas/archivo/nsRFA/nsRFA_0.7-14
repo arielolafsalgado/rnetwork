@@ -1,0 +1,47 @@
+Package: nsRFA
+Version: 0.7-14
+Date: 2018-06-27
+Title: Non-Supervised Regional Frequency Analysis
+Authors@R: c(person("Alberto", "Viglione", role=c("aut", "cre"), email="viglione@hydro.tuwien.ac.at"),
+             person("Jonathan R. M.", "Hosking", role="ctb"),
+             person("Francesco", "Laio", role="ctb"),
+             person("Alan", "Miller", role="ctb"),
+             person("Eric", "Gaume", role="ctb"),
+             person("Olivier", "Payrastre", role="ctb"),
+             person("Jose Luis", "Salinas", role="ctb"),
+             person("Chi Cong", "N'guyen", role="ctb"),
+             person("Karine", "Halbert", role="ctb"))
+Depends: R (>= 3.0.0), stats, graphics
+Description: A collection of statistical tools for objective (non-supervised) applications 
+             of the Regional Frequency Analysis methods in hydrology. 
+             The package refers to the index-value method and, more precisely, helps the
+             hydrologist to: (1) regionalize the index-value; (2) form homogeneous regions 
+             with similar growth curves; (3) fit distribution functions to the 
+             empirical regional growth curves.
+             Most of the methods are those described in the Flood Estimation Handbook 
+            (Centre for Ecology & Hydrology, 1999, ISBN:9781906698003).
+             Homogeneity tests from Hosking and Wallis (1993) <doi:10.1029/92WR01980> 
+             and Viglione et al. (2007) <doi:10.1029/2006WR005095> are available.
+License: GPL (>= 2)
+Copyright: The fortran routines for the function HW.original are from
+        Jonathan R. M. Hosking and are available at the url
+        http://www.research.ibm.com/people/h/hosking/lmoments.html. The
+        functions `MLlaio2004.R', `GOFlaio2004.R' and `MSClaio2008.R'
+        are derived from original Francesco Laio Matlab code (non
+        published material). The fortran routines for the function
+        'bestlm' are from Alan Miller and were obtained from his R
+        package 'leaps'.
+NeedsCompilation: yes
+Packaged: 2018-06-27 13:12:14 UTC; alviglio
+Author: Alberto Viglione [aut, cre],
+  Jonathan R. M. Hosking [ctb],
+  Francesco Laio [ctb],
+  Alan Miller [ctb],
+  Eric Gaume [ctb],
+  Olivier Payrastre [ctb],
+  Jose Luis Salinas [ctb],
+  Chi Cong N'guyen [ctb],
+  Karine Halbert [ctb]
+Maintainer: Alberto Viglione <viglione@hydro.tuwien.ac.at>
+Repository: CRAN
+Date/Publication: 2018-06-27 14:03:25 UTC

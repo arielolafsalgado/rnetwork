@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package rio</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="A Swiss-Army Knife for Data I/O [R package rio version 0.5.16]" />
+<meta name="citation_author1" content="Chung-hong Chan" />
+<meta name="citation_author2" content="Thomas J. Leeper" />
+<meta name="citation_publication_date" content="2018-11-26" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=rio" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=rio" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="rio: A Swiss-Army Knife for Data I/O" />
+<meta name="og:description" content="Streamlined data import and export by making assumptions that the user is probably willing to make: 'import()' and 'export()' determine the data structure from the file extension, reasonable defaults are used for data import and export (e.g., 'stringsAsFactors=FALSE'), web-based import is natively supported (including from SSL/HTTPS), compressed files can be read directly without explicit decompression, and fast import packages are used where appropriate. An additional convenience function, 'convert()', provides a simple method for converting between file types." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=rio" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>rio: A Swiss-Army Knife for Data I/O</h2>
+<p>Streamlined data import and export by making assumptions that
+    the user is probably willing to make: 'import()' and 'export()' determine
+    the data structure from the file extension, reasonable defaults are used for
+    data import and export (e.g., 'stringsAsFactors=FALSE'), web-based import is
+    natively supported (including from SSL/HTTPS), compressed files can be read
+    directly without explicit decompression, and fast import packages are used where
+    appropriate. An additional convenience function, 'convert()', provides a simple
+    method for converting between file types.</p>
+<table summary="Package rio summary">
+<tr>
+<td>Version:</td>
+<td>0.5.16</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.15.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>tools, stats, utils, <a href="../foreign/index.html">foreign</a>, <a href="../haven/index.html">haven</a> (&ge; 1.1.0), <a href="../curl/index.html">curl</a> (&ge; 0.6), <a href="../data.table/index.html">data.table</a> (&ge; 1.9.8), <a href="../readxl/index.html">readxl</a> (&ge; 0.1.1), <a href="../openxlsx/index.html">openxlsx</a>, <a href="../tibble/index.html">tibble</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td>datasets, <a href="../bit64/index.html">bit64</a>, <a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../magrittr/index.html">magrittr</a>, <a href="../clipr/index.html">clipr</a>, <a href="../csvy/index.html">csvy</a>, <a href="../feather/index.html">feather</a>, <a href="../fst/index.html">fst</a>, <a href="../hexView/index.html">hexView</a>, <a href="../jsonlite/index.html">jsonlite</a>, <a href="../readODS/index.html">readODS</a> (&ge; 1.6.4), <a href="../readr/index.html">readr</a>, <a href="../rmatio/index.html">rmatio</a>, <a href="../xml2/index.html">xml2</a> (&ge; 1.2.0), <a href="../yaml/index.html">yaml</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2018-11-26</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Jason Becker [ctb],
+  Chung-hong Chan [aut],
+  Geoffrey CH Chan [ctb],
+  Thomas J. Leeper <a href="https://orcid.org/0000-0003-4097-6326"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Christopher Gandrud [ctb],
+  Andrew MacDonald [ctb],
+  Ista Zahn [ctb],
+  Stanislaus Stadlmann [ctb],
+  Ruaridh Williamson [ctb],
+  Patrick Kennedy [ctb],
+  Ryan Price [ctb],
+  Trevor L Davis [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Thomas J. Leeper  &#x3c;&#x74;&#x68;&#x6f;&#x73;&#x6a;&#x6c;&#x65;&#x65;&#x70;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/leeper/rio/issues">https://github.com/leeper/rio/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/leeper/rio">https://github.com/leeper/rio</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">rio citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/WebTechnologies.html">WebTechnologies</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_rio.html">rio results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package rio downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="rio.pdf"> rio.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/rio.html">Introduction to 'rio'</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/rio_0.5.16.tar.gz"> rio_0.5.16.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/rio_0.5.16.zip">rio_0.5.16.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/rio_0.5.16.zip">rio_0.5.16.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/rio_0.5.16.zip">rio_0.5.16.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/rio_0.5.16.tgz">rio_0.5.16.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/rio_0.5.16.tgz">rio_0.5.16.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/rio"> rio archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package rio reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../BARIS/index.html">BARIS</a>, <a href="../bibliometrix/index.html">bibliometrix</a>, <a href="../boxr/index.html">boxr</a>, <a href="../car/index.html">car</a>, <a href="../dpmr/index.html">dpmr</a>, <a href="../ExPanDaR/index.html">ExPanDaR</a>, <a href="../genogeographer/index.html">genogeographer</a>, <a href="../gesisdata/index.html">gesisdata</a>, <a href="../ledger/index.html">ledger</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/LinkHD.html"><span class="BioC">LinkHD</span></a>, <a href="../pewdata/index.html">pewdata</a>, <a href="../psData/index.html">psData</a>, <a href="../ropercenter/index.html">ropercenter</a>, <a href="../rosetta/index.html">rosetta</a>, <a href="../userfriendlyscience/index.html">userfriendlyscience</a>, <a href="../uwo4419/index.html">uwo4419</a>, <a href="../varsExplore/index.html">varsExplore</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../codebook/index.html">codebook</a>, <a href="../esquisse/index.html">esquisse</a>, <a href="../oceanis/index.html">oceanis</a>, <a href="../ufs/index.html">ufs</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=rio"><samp>https://CRAN.R-project.org/package=rio</samp></a>
+to link to this page.</p>
+</body>
+</html>

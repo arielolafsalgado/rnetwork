@@ -1,0 +1,49 @@
+Package: stats19
+Title: Work with Open Road Traffic Casualty Data from Great Britain
+Version: 0.1.1
+Authors@R: c(
+    person("Robin", "Lovelace", email = "rob00x@gmail.com", role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0001-5679-6536")),
+    person("Malcolm", "Morgan", email = "m.morgan1@leeds.ac.uk", role = c("aut")),
+    person("Layik", "Hama", email = "layik.hama@gmail.com", role = c("aut"),
+      comment = c(ORCID = "0000-0003-1912-4890")),
+    person("Mark", "Padgham", role=c("aut"),
+     comment = c(ORCID = "0000-0003-2172-5265")),
+    person("David", "Ranzolin", role=c("rev")),
+    person("Adam", "Sparks", role = c("rev", "ctb"),
+      comment = c(ORCID = "0000-0002-0061-8359"))
+  )
+Description: Tools to help process and analyse the UK road collision data collected using the
+  'STATS19' form. The data are provided as 'CSV' files with detailed road safety data about the
+  circumstances of personal injury road accidents in Great Britain from 1979, the types
+  (including make and model) of vehicles involved and the consequential casualties.  The
+  statistics relate only to personal injury accidents on public roads that are reported
+  to the police, and subsequently recorded, using the 'STATS19' accident reporting form. See
+  the Department for Transportation website 
+  <https://data.gov.uk/dataset/cb7ae6f0-4be6-4935-9277-47e5ce24a11f/road-safety-data> for more
+  information on these data.
+Depends: R (>= 3.5.0)
+License: GPL-3
+URL: https://github.com/ITSLeeds/stats19
+BugReports: https://github.com/ITSLeeds/stats19/issues
+Encoding: UTF-8
+LazyData: true
+Imports: sf, readr
+Suggests: curl (>= 3.2), dplyr, ggplot2, knitr, lubridate, rmarkdown,
+        stringr, testthat, tidyr, pkgdown
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+Language: en-US
+X-schema.org-keywords: stats19, road-safety, transport, car-crashes,
+        ropensci, data
+NeedsCompilation: no
+Packaged: 2019-01-11 14:46:44 UTC; robin
+Author: Robin Lovelace [aut, cre] (<https://orcid.org/0000-0001-5679-6536>),
+  Malcolm Morgan [aut],
+  Layik Hama [aut] (<https://orcid.org/0000-0003-1912-4890>),
+  Mark Padgham [aut] (<https://orcid.org/0000-0003-2172-5265>),
+  David Ranzolin [rev],
+  Adam Sparks [rev, ctb] (<https://orcid.org/0000-0002-0061-8359>)
+Maintainer: Robin Lovelace <rob00x@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-01-17 23:10:17 UTC

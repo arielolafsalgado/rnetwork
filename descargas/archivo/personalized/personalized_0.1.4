@@ -1,0 +1,31 @@
+Package: personalized
+Type: Package
+Title: Estimation and Validation Methods for Subgroup Identification
+        and Personalized Medicine
+Version: 0.1.4
+Authors@R: c(
+    person("Jared", "Huling",  role = c("aut", "cre"), email = "jaredhuling@gmail.com"),
+    person("Aaron", "Potvien", role = "ctb")
+    )
+Description: Provides functions for fitting and validation of subgroup
+    identification and personalized medicine models under the general subgroup
+    identification framework of Chen et al. (2017) <doi:10.1111/biom.12676>.
+    This package is intended for use for both randomized controlled trials and
+    observational studies.
+URL: https://jaredhuling.github.io/personalized/
+BugReports: https://github.com/jaredhuling/personalized/issues
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Suggests: knitr, rmarkdown, testthat
+Imports: survival, methods, kernlab, foreach
+Depends: glmnet (>= 2.0-13), mgcv, gbm, ggplot2, plotly
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-03-08 03:45:40 UTC; huling.7
+Author: Jared Huling [aut, cre],
+  Aaron Potvien [ctb]
+Maintainer: Jared Huling <jaredhuling@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-03-08 23:23:47 UTC

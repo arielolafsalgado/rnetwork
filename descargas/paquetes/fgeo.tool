@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package fgeo.tool</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Import and Manipulate ForestGEO Data [R package fgeo.tool version 1.2.6]" />
+<meta name="citation_author1" content="Mauro Lepore" />
+<meta name="citation_author2" content="Richard Condit" />
+<meta name="citation_author3" content="Suzanne Lao" />
+<meta name="citation_author4" content="Anudeep Singh" />
+<meta name="citation_publication_date" content="2020-03-23" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=fgeo.tool" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=fgeo.tool" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="fgeo.tool: Import and Manipulate ForestGEO Data" />
+<meta name="og:description" content="To help you access, transform, analyze, and visualize ForestGEO data, we developed a collection of R packages (&amp;lt;&lt;a href=&quot;https://forestgeo.github.io/fgeo/&quot;&gt;https://forestgeo.github.io/fgeo/&lt;/a&gt;&amp;gt;). This package, in particular, helps you to easily import, filter, and modify ForestGEO data. To learn more about ForestGEO visit &amp;lt;&lt;a href=&quot;http://www.forestgeo.si.edu/&quot;&gt;http://www.forestgeo.si.edu/&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=fgeo.tool" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>fgeo.tool: Import and Manipulate ForestGEO Data</h2>
+<p>To help you access, transform, analyze, and
+    visualize ForestGEO data, we developed a collection of R packages
+    (&lt;<a href="https://forestgeo.github.io/fgeo/">https://forestgeo.github.io/fgeo/</a>&gt;). This package, in particular,
+    helps you to easily import, filter, and modify ForestGEO data. To
+    learn more about ForestGEO visit &lt;<a href="http://www.forestgeo.si.edu/">http://www.forestgeo.si.edu/</a>&gt;.</p>
+<table summary="Package fgeo.tool summary">
+<tr>
+<td>Version:</td>
+<td>1.2.6</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.2)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../dplyr/index.html">dplyr</a> (&ge; 0.8.0.1), <a href="../glue/index.html">glue</a> (&ge; 1.3.1), <a href="../magrittr/index.html">magrittr</a> (&ge; 1.5), <a href="../purrr/index.html">purrr</a> (&ge; 0.3.2), <a href="../readr/index.html">readr</a> (&ge; 1.3.1), <a href="../rlang/index.html">rlang</a> (&ge; 0.3.4), <a href="../tibble/index.html">tibble</a> (&ge;
+2.1.1), <a href="../tidyselect/index.html">tidyselect</a> (&ge; 0.2.5)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../covr/index.html">covr</a> (&ge; 3.2.1), <a href="../fgeo.x/index.html">fgeo.x</a> (&ge; 1.1.3), <a href="../knitr/index.html">knitr</a> (&ge; 1.22), <a href="../pingr/index.html">pingr</a> (&ge; 1.1.2), <a href="../roxygen2/index.html">roxygen2</a> (&ge; 6.1.1), <a href="../spelling/index.html">spelling</a> (&ge; 2.1), <a href="../stringr/index.html">stringr</a> (&ge;
+1.4.0), <a href="../testthat/index.html">testthat</a> (&ge; 2.1.1), <a href="../tidyr/index.html">tidyr</a> (&ge; 0.8.3)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-03-23</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Mauro Lepore <a href="https://orcid.org/0000-0002-1986-7988"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, ctr, cre],
+  Richard Condit [aut],
+  Suzanne Lao [aut],
+  Anudeep Singh [aut],
+  CTFS-ForestGEO [cph, fnd]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Mauro Lepore  &#x3c;&#x6d;&#x61;&#x75;&#x72;&#x6f;&#x6c;&#x65;&#x70;&#x6f;&#x72;&#x65;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/forestgeo/fgeo.tool/issues">https://github.com/forestgeo/fgeo.tool/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/forestgeo/fgeo.tool">https://github.com/forestgeo/fgeo.tool</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_fgeo.tool.html">fgeo.tool results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package fgeo.tool downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="fgeo.tool.pdf"> fgeo.tool.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/fgeo.tool_1.2.6.tar.gz"> fgeo.tool_1.2.6.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/fgeo.tool_1.2.6.zip">fgeo.tool_1.2.6.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/fgeo.tool_1.2.6.zip">fgeo.tool_1.2.6.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/fgeo.tool_1.2.6.zip">fgeo.tool_1.2.6.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/fgeo.tool_1.2.6.tgz">fgeo.tool_1.2.6.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/fgeo.tool_1.2.6.tgz">fgeo.tool_1.2.6.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/fgeo.tool"> fgeo.tool archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package fgeo.tool reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../fgeo/index.html">fgeo</a>, <a href="../fgeo.analyze/index.html">fgeo.analyze</a>, <a href="../fgeo.plot/index.html">fgeo.plot</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=fgeo.tool"><samp>https://CRAN.R-project.org/package=fgeo.tool</samp></a>
+to link to this page.</p>
+</body>
+</html>

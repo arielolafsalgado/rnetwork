@@ -1,0 +1,44 @@
+Package: convergEU
+Type: Package
+Title: Monitoring Convergence of EU Countries
+Version: 0.4.1
+Depends: R (>= 3.6.0)
+Authors@R: c(
+           person("Federico M.", "Stefanini", 
+                  email = "federico.stefanini@unifi.it",
+                  role  = c("arc","aut", "cre")),
+           person("Massimiliano","Mascherini",
+                  email = "massimiliano.mascherini@eurofound.europa.eu",    
+                  role  = c("arc")),
+           person("Eleonora Peruffo", role = c("ctb")),        
+           person("Nedka Nikiforova", role = c("ctb")),       
+           person("Chiara Litardi", role = c("ctb"))  
+            )
+Maintainer: Federico M. Stefanini <federico.stefanini@unifi.it>
+URL:
+        https://local.disia.unifi.it/stefanini/RESEARCH/coneu/tutorial-conv.html
+Description: Indicators and measures by country and time describe
+    what happens at economic and social levels. This package provides
+    functions to calculate several measures of convergence after imputing
+    missing values. The automated downloading of Eurostat data,
+    followed by the production of country fiches and indicator fiches,
+    makes possible to produce automated reports.
+Imports: dplyr, tibble, tidyverse, knitr, ggplot2, eurostat, tidyr,
+        magrittr, rlang, utils, purrr, formattable, kableExtra,
+        caTools, broom, gridExtra, stringr, devtools, rmarkdown,
+        ggpubr, readr, readxl
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+VignetteBuilder: knitr
+Suggests: rvest, testthat
+NeedsCompilation: no
+Packaged: 2020-03-05 15:43:41 UTC; fred
+Author: Federico M. Stefanini [arc, aut, cre],
+  Massimiliano Mascherini [arc],
+  Eleonora Peruffo [ctb],
+  Nedka Nikiforova [ctb],
+  Chiara Litardi [ctb]
+Repository: CRAN
+Date/Publication: 2020-03-13 11:10:05 UTC

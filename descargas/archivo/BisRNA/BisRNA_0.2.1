@@ -1,0 +1,23 @@
+Package: BisRNA
+Type: Package
+Title: Analysis of RNA Cytosine-5 Methylation
+Version: 0.2.1
+Author: Carine Legrand
+Maintainer: Carine Legrand <c.legrand@dkfz.de>
+Description: Bisulfite-treated RNA non-conversion in a set of samples is analysed as
+    follows: each sample's Poisson parameter is estimated, and non-conversion
+    p-values are calculated for each sample and adjusted for multiple testing.
+    Finally, combined non-conversion p-value and standard error of the non-conversion
+    are calculated on the intersection of the set of samples.
+    A low combined non-conversion p-value points to methylation of the
+    corresponding RNA cytosine, or another event blocking bisulfite conversion.
+Date: 2017-04-11
+License: GPL (>= 2)
+LazyData: TRUE
+Depends: R (>= 3.3.2)
+Imports: MASS, knitr, graphics, stats, utils
+Suggests: IHW, testthat
+NeedsCompilation: no
+Packaged: 2017-04-12 10:55:19 UTC; legrand
+Repository: CRAN
+Date/Publication: 2017-04-12 14:13:34 UTC

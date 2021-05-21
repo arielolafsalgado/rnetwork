@@ -1,0 +1,39 @@
+Package: diceR
+Type: Package
+Title: Diverse Cluster Ensemble in R
+Version: 0.1.0
+Date: 2017-06-21
+Authors@R: c(
+    person("Derek", "Chiu", , "dchiu@bccrc.ca", c("aut", "cre")),
+    person("Aline", "Talhouk", , "atalhouk@bccrc.ca", "aut"),
+    person("Johnson", "Liu", , "gliu@bccrc.ca", c("ctb", "com"))
+    )
+Description: Performs cluster analysis using an ensemble clustering framework.
+    Results from a diverse set of algorithms are pooled together using methods
+    such as majority voting, K-Modes, LinkCluE, and CSPA. There are options to
+    compare cluster assignments across algorithms using internal and external
+    indices, visualizations such as heatmaps, and significance testing for the
+    existence of clusters.
+Depends: R (>= 3.2.0)
+Imports: abind, assertthat, dplyr, magrittr, tidyr, purrr, ggplot2,
+        gplots, grDevices, Hmisc, flux, NMF, apcluster, kernlab,
+        mclust, infotheo, blockcluster, caret, class, clue, cluster,
+        clusterCrit, clValid, klaR, RColorBrewer, quantable,
+        RankAggreg, sigclust, methods, Rcpp
+Suggests: testthat, knitr, rmarkdown, covr
+License: MIT + file LICENSE
+URL: https://github.com/AlineTalhouk/diceR
+BugReports: https://github.com/AlineTalhouk/diceR/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1.9000
+VignetteBuilder: knitr
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2017-06-21 19:34:09 UTC; dchiu
+Author: Derek Chiu [aut, cre],
+  Aline Talhouk [aut],
+  Johnson Liu [ctb, com]
+Maintainer: Derek Chiu <dchiu@bccrc.ca>
+Repository: CRAN
+Date/Publication: 2017-06-21 23:37:03 UTC

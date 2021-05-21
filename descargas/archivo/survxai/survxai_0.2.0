@@ -1,0 +1,33 @@
+Package: survxai
+Title: Visualization of the Local and Global Survival Model
+        Explanations
+Version: 0.2.0
+Authors@R: c(
+  person("Aleksandra", "Grudziaz", email = "aleksandra.grudziaz@gmail.com", role = c("aut", "cre")),
+  person("Alicja", "Gosiewska", email = "alicjagosiewska@gmail.com", role = c("aut")),
+  person("Przemyslaw", "Biecek", email = "przemyslaw.biecek@gmail.com", role = c("aut", "ths"))
+  )
+Description: Survival models may have very different structures. This package contains functions 
+  for creating a unified representation of a survival models, which can be further processed by various 
+  survival explainers. Tools implemented in 'survxai' help to understand how input variables are used in 
+  the model and what impact do they have on the final model prediction. Currently, four explanation methods are implemented. 
+  We can divide them into two groups: local and global.
+License: GPL
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.0
+Imports: breakDown, ggplot2, pec, scales, survival, survminer
+Depends: prodlim
+Suggests: CFC, covr, knitr, randomForestSRC, rmarkdown, rms, testthat,
+        tibble
+VignetteBuilder: knitr
+URL: https://mi2datalab.github.io/survxai/
+BugReports: https://github.com/MI2DataLab/survxai/issues
+NeedsCompilation: no
+Packaged: 2018-08-20 12:34:05 UTC; Aleksandra Grudziaz
+Author: Aleksandra Grudziaz [aut, cre],
+  Alicja Gosiewska [aut],
+  Przemyslaw Biecek [aut, ths]
+Maintainer: Aleksandra Grudziaz <aleksandra.grudziaz@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-08-24 15:50:12 UTC

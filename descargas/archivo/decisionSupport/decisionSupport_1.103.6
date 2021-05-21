@@ -1,0 +1,50 @@
+Package: decisionSupport
+Type: Package
+Title: Quantitative Support of Decision Making under Uncertainty
+Version: 1.103.6
+Date: 2017-11-27
+Authors@R: c(
+    person("Eike", "Luedeling",  email = "eike@eikeluedeling.com",  role = c("cre", "aut"), comment="ICRAF"),
+    person("Lutz", "Goehring", email = "lutz.goehring@gmx.de", role = "aut", comment="ICRAF and Lutz Goehring Consulting"),
+    person("World Agroforesrtry Centre (ICRAF)", role = "cph"))
+Description: Supporting the quantitative analysis of binary welfare based
+    decision making processes using Monte Carlo simulations. Decision support
+    is given on two levels: (i) The actual decision level is to choose between
+    two alternatives under probabilistic uncertainty. This package calculates
+    the optimal decision based on maximizing expected welfare. (ii) The meta
+    decision level is to allocate resources to reduce the uncertainty in the
+    underlying decision problem, i.e to increase the current information to
+    improve the actual decision making process. This problem is dealt with
+    using the Value of Information Analysis. The Expected Value of
+    Information for arbitrary prospective estimates can be calculated as
+    well as Individual Expected Value of Perfect Information.
+    The probabilistic calculations are done via Monte Carlo
+    simulations. This Monte Carlo functionality can be used on its own.
+License: GPL-3
+Depends: R (>= 3.1.3)
+Imports: chillR (>= 0.62), msm (>= 1.5), mvtnorm (>= 1.0.2), stats (>=
+        3.1.3), rriskDistributions (>= 2.0), nleqslv (>= 2.6)
+Suggests: eha (>= 2.4.2), mc2d (>= 0.1.15), pls (>= 2.4.3), testthat
+        (>= 0.9.1), knitr, rmarkdown
+VignetteBuilder: knitr
+URL: http://www.worldagroforestry.org/
+Encoding: UTF-8
+Classification/JEL: I38, O16, O21, O22, O23
+Collate: 'chance_event.R' 'paramtnormci_fit.R' 'paramtnormci_numeric.R'
+        'rtnorm90ci.R' 'rdistq_fit.R' 'rdist90ci_exact.R'
+        'estimate1d.R' 'random.R' 'rmvnorm90ci_exact.R' 'estimate.R'
+        'mcSimulation.R' 'welfareDecisionAnalysis.R' 'eviSimulation.R'
+        'individualEvpiSimulation.R' 'estimate_read_csv_old.R'
+        'decisionSupport.R' 'decisionSupport-package.R' 'discount.R'
+        'gompertz_yield.R' 'make_CPT.R' 'plainNames2data.frameNames.R'
+        'plsr.mcSimulation.R' 'random_state.R' 'sample_CPT.R'
+        'sample_simple_CPT.R' 'temp_situations.R' 'vv.R'
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-11-27 21:51:18 UTC; USER
+Author: Eike Luedeling [cre, aut] (ICRAF),
+  Lutz Goehring [aut] (ICRAF and Lutz Goehring Consulting),
+  World Agroforesrtry Centre (ICRAF) [cph]
+Maintainer: Eike Luedeling <eike@eikeluedeling.com>
+Repository: CRAN
+Date/Publication: 2017-11-28 00:10:36 UTC

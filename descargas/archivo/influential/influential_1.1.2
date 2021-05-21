@@ -1,0 +1,31 @@
+Package: influential
+Type: Package
+Title: Identification and Classification of the Most Influential Nodes
+Version: 1.1.2
+Author: Adrian (Abbas) Salavaty [aut, cre], Mirana Ramialison [ths], Peter D. Currie [ths]
+Maintainer: Adrian Salavaty <abbas.salavaty@gmail.com>
+Description: Contains functions for the classification and ranking of top candidate features, reconstruction of networks from
+    adjacency matrices and data frames, analysis of the topology of the network 
+    and calculation of centrality measures, and identification of the most
+    influential nodes. Also, a function is provided for running SIRIR model, which 
+    is the combination of leave-one-out cross validation technique and the conventional SIR model, on a network to unsupervisedly rank the true influence of vertices. Additionally, some functions have been provided for the assessment 
+    of dependence and correlation of two network centrality measures as well as 
+    the conditional probability of deviation from their corresponding means in opposite direction.
+    Fred Viole and David Nawrocki (2013, ISBN:1490523995).
+    Csardi G, Nepusz T (2006). "The igraph software package for complex network research." InterJournal, Complex Systems, 1695.
+    Adopted algorithms and sources are referenced in function document.
+Imports: igraph, ranger, coop, reshape2
+Suggests: Hmisc (>= 4.3-0), mgcv (>= 1.8-31), nortest (>= 1.0-4), NNS
+        (>= 0.4.7.1), parallel, knitr, rmarkdown
+Depends: R (>= 2.10)
+URL: http://github.com/asalavaty/influential
+BugReports: http://github.com/asalavaty/influential/issues
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-06-26 12:48:24 UTC; asal0019
+Repository: CRAN
+Date/Publication: 2020-06-26 14:50:06 UTC

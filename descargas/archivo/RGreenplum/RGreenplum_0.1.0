@@ -1,0 +1,26 @@
+Package: RGreenplum
+Title: Interface to 'Greenplum' Database
+Version: 0.1.0
+Authors@R: c(person("Michael", "Williams", role = c("aut", "cre"), 
+  email = "mw8765999@gmail.com"))
+Description: 
+    Fully 'DBI'-compliant interface to 'Greenplum' <https://greenplum.org/>,
+    an open-source parallel database. This is an extension of the 'RPostgres'
+    package <https://github.com/r-dbi/RPostgres>.
+License: GPL-2
+URL: https://github.com/mwillumz/RGreenplum
+BugReports: https://github.com/mwillumz/RGreenplum/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.1.0)
+Imports: DBI, RPostgres, methods
+Suggests: DBItest, testthat
+RoxygenNote: 6.0.1
+Collate: 'GreenplumDriver.R' 'GreenplumConnection.R' 'table-create.R'
+        'tables.R'
+NeedsCompilation: no
+Packaged: 2018-03-27 14:04:24 UTC; michael
+Author: Michael Williams [aut, cre]
+Maintainer: Michael Williams <mw8765999@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-03-28 08:05:52 UTC

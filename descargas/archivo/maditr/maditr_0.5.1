@@ -1,0 +1,30 @@
+Package: maditr
+Type: Package
+Title: Pipe-Style Interface for 'data.table'
+Version: 0.5.1
+Date: 2018-05-09
+Maintainer: Gregory Demin <gdemin@gmail.com>
+Authors@R: person("Gregory", "Demin", email = "gdemin@gmail.com", role = c("aut", "cre"))
+Depends: R (>= 3.3.0)
+Imports: data.table (>= 1.11), magrittr (>= 1.5)
+Suggests: knitr, testthat
+Description: Package provides pipe-style interface for 'data.table'. It preserves all
+    'data.table' features without significant impact on performance. 'let'
+    and 'take' functions are simplified interfaces for most common data manipulation
+    tasks. For example, you can write 'mtcars %>% take(mean(mpg), by = am)' for 
+    aggregation or 'mtcars %>% let(hp_wt = hp/wt, hp_wt_mpg = hp_wt/mpg)' for modification.
+    Use 'take_if/let_if' for conditional aggregation/modification. 'query_if' function
+    translates its arguments one-to-one to '[.data.table' method. Additionally there are
+    some conveniences such as automatic 'data.frame' conversion to 'data.table'.
+License: GPL-2
+URL: https://github.com/gdemin/maditr
+BugReports: https://github.com/gdemin/maditr/issues
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-05-09 23:28:34 UTC; gregory
+Author: Gregory Demin [aut, cre]
+Repository: CRAN
+Date/Publication: 2018-05-10 05:40:35 UTC

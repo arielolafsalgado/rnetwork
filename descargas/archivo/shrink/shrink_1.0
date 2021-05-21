@@ -1,0 +1,28 @@
+Package: shrink
+Type: Package
+Title: Global, Parameterwise, and Joint Shrinkage of Regression
+        Coefficients
+Version: 1.0
+Date: 2013-04-03
+Author: Daniela Dunkler, Georg Heinze
+Maintainer: Daniela Dunkler <daniela.dunkler@meduniwien.ac.at>
+Description: Shrinkage of regression coefficients in prognostic models
+        is required to correct the optimism in such a model caused by
+        variable selection. While global shrinkage modifies all
+        regression coefficients by the same factor, parameterwise
+        shrinkage factors differ between regression coefficients, their
+        values depending on each variable's prognostic relevance.  With
+        highly correlated or semantically related variables, such as
+        several columns of a design matrix describing a non-linear
+        effect, a compromise between global, and parameterwise
+        shrinkage, termed 'joint shrinkage', is a useful extension.  A
+        computational shortcut to resampling-based shrinkage factor
+        estimation based on DFBETA residuals is applied.  Global,
+        parameterwise, and joint shrinkage for models fitted by lm,
+        glm, coxph, or mfp is available.
+Suggests: survival, mfp, MASS
+License: GPL
+Packaged: 2013-04-02 13:27:45 UTC; Daniela
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2013-04-02 16:08:44

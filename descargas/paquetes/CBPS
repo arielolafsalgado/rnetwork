@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package CBPS</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Covariate Balancing Propensity Score [R package CBPS version 0.21]" />
+<meta name="citation_author1" content="Christian Fong" />
+<meta name="citation_author2" content="Marc Ratkovic" />
+<meta name="citation_author3" content="Kosuke Imai" />
+<meta name="citation_publication_date" content="2019-08-21" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=CBPS" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=CBPS" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="CBPS: Covariate Balancing Propensity Score" />
+<meta name="og:description" content="Implements the covariate balancing propensity score (CBPS) proposed by Imai and Ratkovic (2014) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Frssb.12027&quot;&gt;doi:10.1111/rssb.12027&lt;/a&gt;&amp;gt;. The propensity score is estimated such that it maximizes the resulting covariate balance as well as the prediction of treatment assignment. The method, therefore, avoids an iteration between model fitting and balance checking. The package also implements optimal CBPS from Fan et al. (2016) &amp;lt;&lt;a href=&quot;https://imai.fas.harvard.edu/research/CBPStheory.html&quot;&gt;https://imai.fas.harvard.edu/research/CBPStheory.html&lt;/a&gt;&amp;gt;, several extensions of the CBPS beyond the cross-sectional, binary treatment setting. They include the CBPS for longitudinal settings so that it can be used in conjunction with marginal structural models from Imai and Ratkovic (2015) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F01621459.2014.956872&quot;&gt;doi:10.1080/01621459.2014.956872&lt;/a&gt;&amp;gt;, treatments with three- and four-valued treatment variables, continuous-valued treatments from Fong, Hazlett, and Imai (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.1214%2F17-AOAS1101&quot;&gt;doi:10.1214/17-AOAS1101&lt;/a&gt;&amp;gt;, propensity score estimation with a large number of covariates from Ning, Peng, and Imai (2018) &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1812.08683&quot;&gt;arXiv:1812.08683&lt;/a&gt;&amp;gt;, and the situation with multiple distinct binary treatments administered simultaneously. In the future it will be extended to other settings including the generalization of experimental and instrumental variable estimates. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=CBPS" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>CBPS: Covariate Balancing Propensity Score</h2>
+<p>Implements the covariate balancing propensity score (CBPS) proposed
+    by Imai and Ratkovic (2014) &lt;<a href="https://doi.org/10.1111%2Frssb.12027">doi:10.1111/rssb.12027</a>&gt;. The propensity score is
+    estimated such that it maximizes the resulting covariate balance as well as the
+    prediction of treatment assignment. The method, therefore, avoids an iteration
+    between model fitting and balance checking.  The package also implements optimal
+    CBPS from Fan et al. (2016) &lt;<a href="https://imai.fas.harvard.edu/research/CBPStheory.html">https://imai.fas.harvard.edu/research/CBPStheory.html</a>&gt;,  
+    several extensions of the CBPS beyond the cross-sectional, binary treatment setting.
+    They include the CBPS for longitudinal settings so that it can be used in 
+    conjunction with marginal structural models from Imai and Ratkovic (2015) 
+    &lt;<a href="https://doi.org/10.1080%2F01621459.2014.956872">doi:10.1080/01621459.2014.956872</a>&gt;, treatments with three- and four-valued treatment 
+    variables, continuous-valued treatments from Fong, Hazlett, and Imai (2018) 
+    &lt;<a href="https://doi.org/10.1214%2F17-AOAS1101">doi:10.1214/17-AOAS1101</a>&gt;, propensity score estimation with a large number of 
+    covariates from Ning, Peng, and Imai (2018) &lt;<a href="https://arxiv.org/abs/1812.08683">arXiv:1812.08683</a>&gt;, and the situation 
+    with multiple distinct binary treatments administered simultaneously. In the future 
+    it will be extended to other settings including the generalization of experimental 
+    and instrumental variable estimates. </p>
+<table summary="Package CBPS summary">
+<tr>
+<td>Version:</td>
+<td>0.21</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.4), <a href="../MASS/index.html">MASS</a>, <a href="../MatchIt/index.html">MatchIt</a>, <a href="../nnet/index.html">nnet</a>, <a href="../numDeriv/index.html">numDeriv</a>, <a href="../glmnet/index.html">glmnet</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-08-21</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Christian Fong [aut, cre],
+  Marc Ratkovic [aut],
+  Kosuke Imai [aut],
+  Chad Hazlett [ctb],
+  Xiaolin Yang [ctb],
+  Sida Peng [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Christian Fong  &#x3c;&#x63;&#x6a;&#x66;&#x6f;&#x6e;&#x67;&#x20;&#x61;&#x74;&#x20;&#x75;&#x6d;&#x69;&#x63;&#x68;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="ChangeLog">ChangeLog</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_CBPS.html">CBPS results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package CBPS downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="CBPS.pdf"> CBPS.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/CBPS_0.21.tar.gz"> CBPS_0.21.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/CBPS_0.21.zip">CBPS_0.21.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/CBPS_0.21.zip">CBPS_0.21.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/CBPS_0.21.zip">CBPS_0.21.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/CBPS_0.21.tgz">CBPS_0.21.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/CBPS_0.21.tgz">CBPS_0.21.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/CBPS"> CBPS archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package CBPS reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../mvGPS/index.html">mvGPS</a>, <a href="../PanelMatch/index.html">PanelMatch</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../cobalt/index.html">cobalt</a>, <a href="../WeightIt/index.html">WeightIt</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;enhances:</td>
+<td><a href="../optmatch/index.html">optmatch</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=CBPS"><samp>https://CRAN.R-project.org/package=CBPS</samp></a>
+to link to this page.</p>
+</body>
+</html>

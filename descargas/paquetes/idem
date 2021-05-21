@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package idem</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=idem" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="idem: Inference in Randomized Controlled Trials with Death and Missingness" />
+<meta name="og:description" content="In randomized studies involving severely ill patients, functional outcomes are often unobserved due to missed clinic visits, premature withdrawal or death. It is well known that if these unobserved functional outcomes are not handled properly, biased treatment comparisons can be produced. In this package, we implement a procedure for comparing treatments that is based on the composite endpoint of both the functional outcome and survival. The procedure was proposed in Wang et al. (2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fbiom.12594&quot;&gt;doi:10.1111/biom.12594&lt;/a&gt;&amp;gt; and Wang et al. (2020) &amp;lt;&lt;a href=&quot;https://doi.org/10.18637%2Fjss.v093.i12&quot;&gt;doi:10.18637/jss.v093.i12&lt;/a&gt;&amp;gt;. It considers missing data imputation with different sensitivity analysis strategies to handle the unobserved functional outcomes not due to death." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=idem" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>idem: Inference in Randomized Controlled Trials with Death and
+Missingness</h2>
+<p>In randomized studies involving severely ill patients, functional
+    outcomes are often unobserved due to missed clinic visits, premature
+    withdrawal or death. It is well known that if these unobserved functional
+    outcomes are not handled properly, biased treatment comparisons can be
+    produced. In this package, we implement a procedure for comparing treatments
+    that is based on the composite endpoint of both the functional outcome and
+    survival. The procedure was proposed in Wang et al. (2016) &lt;<a href="https://doi.org/10.1111%2Fbiom.12594">doi:10.1111/biom.12594</a>&gt;
+    and Wang et al. (2020) &lt;<a href="https://doi.org/10.18637%2Fjss.v093.i12">doi:10.18637/jss.v093.i12</a>&gt;. It considers missing data
+    imputation with different sensitivity
+    analysis strategies to handle the unobserved functional outcomes not due to
+    death.</p>
+<table summary="Package idem summary">
+<tr>
+<td>Version:</td>
+<td>5.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.4.0), <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.0), methods</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../rstan/index.html">rstan</a> (&ge; 2.18.1), <a href="../rstantools/index.html">rstantools</a> (&ge; 1.5.0), <a href="../sqldf/index.html">sqldf</a> (&ge; 0.4), <a href="../survival/index.html">survival</a> (&ge; 2.38), <a href="../mice/index.html">mice</a> (&ge; 3.9.0), parallel (&ge; 3.2)</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../StanHeaders/index.html">StanHeaders</a> (&ge; 2.18.0), <a href="../rstan/index.html">rstan</a> (&ge; 2.18.1), <a href="../BH/index.html">BH</a> (&ge; 1.66.0), <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.0), <a href="../RcppEigen/index.html">RcppEigen</a> (&ge; 0.3.3.3.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../shiny/index.html">shiny</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../pander/index.html">pander</a>, <a href="../DT/index.html">DT</a>, <a href="../shinythemes/index.html">shinythemes</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-05-23</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Chenguang Wang [aut, cre],
+    Andrew Leroux [aut, cre],
+    Elizabeth Colantuoni [aut],
+    Daniel O Scharfstein [aut],
+    Trustees of Columbia University [cph] (tools/make_cpp.R, R/stanmodels.R)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Chenguang Wang  &#x3c;&#x63;&#x77;&#x61;&#x6e;&#x67;&#x36;&#x38;&#x20;&#x61;&#x74;&#x20;&#x6a;&#x68;&#x6d;&#x69;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL (&ge; 3)</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>GNU make</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">idem citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/MissingData.html">MissingData</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_idem.html">idem results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package idem downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="idem.pdf"> idem.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/vignette.html">idem: Inference in Randomized Controlled Trials with Death and Missingness</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/idem_5.0.tar.gz"> idem_5.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/idem_5.0.zip">idem_5.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/idem_5.0.zip">idem_5.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/idem_5.0.zip">idem_5.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/idem_5.0.tgz">idem_5.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/idem_5.0.tgz">idem_5.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/idem"> idem archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=idem"><samp>https://CRAN.R-project.org/package=idem</samp></a>
+to link to this page.</p>
+</body>
+</html>

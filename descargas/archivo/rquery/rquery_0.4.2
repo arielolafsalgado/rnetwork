@@ -1,0 +1,38 @@
+Package: rquery
+Type: Package
+Title: Relational Query Generator for Data Manipulation at Scale
+Version: 0.4.2
+Date: 2018-04-05
+Authors@R: c(
+    person("John", "Mount", email = "jmount@win-vector.com", role = c("aut", "cre")),
+    person(family = "Win-Vector LLC", role = c("cph"))
+    )
+Maintainer: John Mount <jmount@win-vector.com>
+URL: https://github.com/WinVector/rquery/,
+        https://winvector.github.io/rquery/
+Description: A 'SQL' query generator based on Edgar F. Codd's relational
+    algebra and experience using 'SQL' and 'dplyr' at big data
+    scale.  The design represents an attempt to make 'SQL' more teachable by
+    denoting composition by a sequential pipeline notation instead of nested
+    queries or functions.   The implementation delivers reliable high 
+    performance data processing on large data systems such as `Spark`
+    and databases. Package features include: data processing trees
+    or pipelines as observable objects (able to report both columns
+    produced and columns used), optimized 'SQL' generation as an explicit
+    user visible modeling step, and convenience methods for applying query
+    trees to in-memory 'data.frame's.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 3.4.0), wrapr (>= 1.3.0)
+Imports: DBI, utils
+Suggests: RSQLite, knitr, rmarkdown, testthat
+LazyData: true
+RoxygenNote: 6.0.1
+ByteCompile: true
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-04-05 19:07:59 UTC; johnmount
+Author: John Mount [aut, cre],
+  Win-Vector LLC [cph]
+Repository: CRAN
+Date/Publication: 2018-04-05 19:14:58 UTC

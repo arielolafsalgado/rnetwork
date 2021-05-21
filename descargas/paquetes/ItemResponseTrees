@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package ItemResponseTrees</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="IR-Tree Modeling in 'mirt', 'Mplus', or 'TAM' [R package ItemResponseTrees version 0.2.5]" />
+<meta name="citation_author" content="Hansjörg Plieninger" />
+<meta name="citation_publication_date" content="2020-05-06" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=ItemResponseTrees" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=ItemResponseTrees" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="ItemResponseTrees: IR-Tree Modeling in 'mirt', 'Mplus', or 'TAM'" />
+<meta name="og:description" content="Item response tree (IR-tree) models are a class of item response theory (IRT) models that assume that the responses to polytomous items can best be explained by multiple psychological processes; see Böckenholt (2012) &amp;lt;&lt;a href=&quot;https://doi.org/10.1037%2Fa0028111&quot;&gt;doi:10.1037/a0028111&lt;/a&gt;&amp;gt; for details. The package 'ItemResponseTrees' allows to fit such IR-tree models in 'mirt', 'Mplus', or 'TAM'. The package automates some of the hassle of IR-tree modeling by means of a consistent syntax. This allows new users to quickly adopt this model class, and this allows experienced users to fit many complex models effortlessly." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=ItemResponseTrees" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>ItemResponseTrees: IR-Tree Modeling in 'mirt', 'Mplus', or 'TAM'</h2>
+<p>Item response tree (IR-tree) models are a class of item response
+    theory (IRT) models that assume that the responses to polytomous items can
+    best be explained by multiple psychological processes; see Böckenholt
+    (2012) &lt;<a href="https://doi.org/10.1037%2Fa0028111">doi:10.1037/a0028111</a>&gt; for details. The package 
+    'ItemResponseTrees' allows to fit such IR-tree models in 'mirt', 'Mplus', or
+    'TAM'. The package automates some of the hassle of IR-tree modeling by means
+    of a consistent syntax. This allows new users to quickly adopt this model
+    class, and this allows experienced users to fit many complex models
+    effortlessly.</p>
+<table summary="Package ItemResponseTrees summary">
+<tr>
+<td>Version:</td>
+<td>0.2.5</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.6.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../checkmate/index.html">checkmate</a> (&ge; 1.9), <a href="../dplyr/index.html">dplyr</a>, <a href="../generics/index.html">generics</a>, <a href="../glue/index.html">glue</a>, <a href="../magrittr/index.html">magrittr</a>, <a href="../MASS/index.html">MASS</a>, <a href="../Matrix/index.html">Matrix</a>, methods, <a href="../mirt/index.html">mirt</a> (&ge; 1.30), <a href="../purrr/index.html">purrr</a>, <a href="../rlang/index.html">rlang</a> (&ge; 0.4.0), <a href="../sets/index.html">sets</a>, <a href="../stringr/index.html">stringr</a>, <a href="../tibble/index.html">tibble</a>, <a href="../tidyr/index.html">tidyr</a> (&ge; 1.0.0), <a href="../tidyselect/index.html">tidyselect</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../covr/index.html">covr</a>, <a href="../future/index.html">future</a>, <a href="../knitr/index.html">knitr</a>, <a href="../listenv/index.html">listenv</a>, <a href="../lme4/index.html">lme4</a>, <a href="../modeltests/index.html">modeltests</a> (&ge; 0.1.0), <a href="../MplusAutomation/index.html">MplusAutomation</a> (&ge; 0.7), <a href="../progress/index.html">progress</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../roxygen2/index.html">roxygen2</a>, <a href="../simsalapar/index.html">simsalapar</a>, <a href="../sfsmisc/index.html">sfsmisc</a>, <a href="../spelling/index.html">spelling</a>, <a href="../TAM/index.html">TAM</a> (&ge; 3.5-19), <a href="../testthat/index.html">testthat</a> (&ge;
+2.1.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-05-06</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Hansjörg Plieninger
+    <a href="https://orcid.org/0000-0002-4416-300X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Hansjörg Plieninger  &#x3c;&#x6d;&#x61;&#x69;&#x6c;&#x20;&#x61;&#x74;&#x20;&#x68;&#x61;&#x6e;&#x73;&#x6a;&#x6f;&#x65;&#x72;&#x67;&#x2e;&#x6d;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/hplieninger/ItemResponseTrees/issues">https://github.com/hplieninger/ItemResponseTrees/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/hplieninger/ItemResponseTrees">https://github.com/hplieninger/ItemResponseTrees</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">ItemResponseTrees citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_ItemResponseTrees.html">ItemResponseTrees results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package ItemResponseTrees downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="ItemResponseTrees.pdf"> ItemResponseTrees.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/ItemResponseTrees-Getting-started-with-IR-trees.html">Getting started with IR-trees</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/ItemResponseTrees_0.2.5.tar.gz"> ItemResponseTrees_0.2.5.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/ItemResponseTrees_0.2.5.zip">ItemResponseTrees_0.2.5.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/ItemResponseTrees_0.2.5.zip">ItemResponseTrees_0.2.5.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/ItemResponseTrees_0.2.5.zip">ItemResponseTrees_0.2.5.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/ItemResponseTrees_0.2.5.tgz">ItemResponseTrees_0.2.5.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/ItemResponseTrees_0.2.5.tgz">ItemResponseTrees_0.2.5.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/ItemResponseTrees"> ItemResponseTrees archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=ItemResponseTrees"><samp>https://CRAN.R-project.org/package=ItemResponseTrees</samp></a>
+to link to this page.</p>
+</body>
+</html>

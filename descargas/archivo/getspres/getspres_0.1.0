@@ -1,0 +1,44 @@
+Package: getspres
+Title: SPRE Statistics for Exploring Heterogeneity in Meta-Analysis
+Version: 0.1.0
+Authors@R: c(
+    person("Lerato E", "Magosi", email = "lmagosi@well.ox.ac.uk", 
+    role = "aut",),
+    person("Jemma C", "Hopewell", email = "jemma.hopewell@ndph.ox.ac.uk", 
+    role = "aut"), 
+    person("Martin", "Farrall", email = "mfarrall@well.ox.ac.uk", 
+    role = "aut"),
+    person("Lerato E", "Magosi", email = "magosil86@gmail.com", 
+    role = "cre")
+    )
+Description: An implementation of SPRE (standardised predicted random-effects)
+    statistics in R to explore heterogeneity in genetic association meta-
+    analyses, as described by Magosi et al. (2019) 
+    <doi:10.1093/bioinformatics/btz590>. SPRE statistics are precision 
+    weighted residuals that indicate the direction and extent with which 
+    individual study-effects in a meta-analysis deviate from the average 
+    genetic effect. Overly influential positive outliers have the potential 
+    to inflate average genetic effects in a meta-analysis whilst negative 
+    outliers might lower or change the direction of effect. See the 'getspres' 
+    website for documentation and examples 
+    <https://magosil86.github.io/getspres/>.
+Depends: R (>= 3.1.0)
+License: MIT + file LICENSE
+URL: https://magosil86.github.io/getspres/
+BugReports: https://github.com/magosil86/getspres/issues
+LazyData: true
+RoxygenNote: 6.1.1
+Suggests: knitr (>= 1.10.5), testthat
+VignetteBuilder: knitr
+Imports: metafor (>= 1.9-6), dplyr (>= 0.4.1), plotrix (>= 3.5-12),
+        colorspace (>= 1.2-6), RColorBrewer (>= 1.1-2), colorRamps (>=
+        2.3)
+NeedsCompilation: no
+Packaged: 2019-08-28 13:34:42 UTC; lmagosi
+Author: Lerato E Magosi [aut],
+  Jemma C Hopewell [aut],
+  Martin Farrall [aut],
+  Lerato E Magosi [cre]
+Maintainer: Lerato E Magosi <magosil86@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-08-28 14:10:02 UTC

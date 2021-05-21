@@ -1,0 +1,39 @@
+Package: sra
+Type: Package
+Title: Selection Response Analysis
+Version: 0.1
+Date: 2010-12-20
+Author: Arnaud Le Rouzic <lerouzic@legs.cnrs-gif.fr>
+Maintainer: Arnaud Le Rouzic <lerouzic@legs.cnrs-gif.fr>
+Depends: stats4
+Description: This package (sra) provides a set of tools to analyse
+        artificial-selection response datasets. The data typically
+        feature for several generations the average value of a trait in
+        a population, the variance of the trait, the population size
+        and the average value of the parents that were chosen to breed.
+        Sra implements two families of models aiming at describing the
+        dynamics of the genetic architecture of the trait during the
+        selection response. The first family relies on purely
+        descriptive (phenomenological) models, based on an
+        autoregressive framework. The second family provides different
+        mechanistic models, accounting e.g. for inbreeding, mutations,
+        genetic and environmental canalization, or epistasis. The
+        parameters underlying the dynamics of the time series are
+        estimated by maximum likelihood. The sra package thus provides
+        (i) a wrapper for the R functions mle() and optim() aiming at
+        fitting in a convenient way a predetermined set of models, and
+        (ii) some functions to plot and analyze the output of the
+        models.
+URL: http://www.legs.cnrs-gif.fr/sra.php
+License: GPL-2
+Scientists: Please be aware that the fact that this program is released
+        as Free Software does not excuse you from scientific propriety,
+        which obligates you to give appropriate credit. If you write a
+        scientific paper describing research that made substantive use
+        of this program, it is your obligation as a scientist to
+        mention the fashion in which this software was used, including
+        the version number, with a citation to the literature, in the
+        Methods section.
+Packaged: 2012-10-29 08:59:49 UTC; ripley
+Repository: CRAN
+Date/Publication: 2012-10-29 08:59:49

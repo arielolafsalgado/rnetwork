@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package multiApply</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Apply Functions to Multiple Multidimensional Arrays or Vectors [R package multiApply version 2.1.1]" />
+<meta name="citation_author1" content="BSC-CNS" />
+<meta name="citation_author2" content="Nicolau Manubens" />
+<meta name="citation_author3" content="Alasdair Hunter" />
+<meta name="citation_publication_date" content="2019-09-03" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=multiApply" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=multiApply" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="multiApply: Apply Functions to Multiple Multidimensional Arrays or Vectors" />
+<meta name="og:description" content="The base apply function and its variants, as well as the related functions in the 'plyr' package, typically apply user-defined functions to a single argument (or a list of vectorized arguments in the case of mapply). The 'multiApply' package extends this paradigm with its only function, Apply, which efficiently applies functions taking one or a list of multiple unidimensional or multidimensional arrays (or combinations thereof) as input. The input arrays can have different numbers of dimensions as well as different dimension lengths, and the applied function can return one or a list of unidimensional or multidimensional arrays as output. This saves development time by preventing the R user from writing often error-prone and memory-inefficient loops dealing with multiple complex arrays. Also, a remarkable feature of Apply is the transparent use of multi-core through its parameter 'ncores'. In contrast to the base apply function, this package suggests the use of 'target dimensions' as opposite to the 'margins' for specifying the dimensions relevant to the function to be applied." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=multiApply" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>multiApply: Apply Functions to Multiple Multidimensional Arrays or Vectors</h2>
+<p>The base apply function and its variants, as well as the related
+    functions in the 'plyr' package, typically apply user-defined functions to a
+    single argument (or a list of vectorized arguments in the case of mapply). The
+    'multiApply' package extends this paradigm with its only function, Apply, which
+    efficiently applies functions taking one or a list of multiple unidimensional
+    or multidimensional arrays (or combinations thereof) as input. The input
+    arrays can have different numbers of dimensions as well as different dimension
+    lengths, and the applied function can return one or a list of unidimensional or
+    multidimensional arrays as output. This saves development time by preventing the
+    R user from writing often error-prone and memory-inefficient loops dealing with
+    multiple complex arrays. Also, a remarkable feature of Apply is the transparent
+    use of multi-core through its parameter 'ncores'. In contrast to the base apply
+    function, this package suggests the use of 'target dimensions' as opposite
+    to the 'margins' for specifying the dimensions relevant to the function to be
+    applied.</p>
+<table summary="Package multiApply summary">
+<tr>
+<td>Version:</td>
+<td>2.1.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.2.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../doParallel/index.html">doParallel</a>, <a href="../foreach/index.html">foreach</a>, <a href="../plyr/index.html">plyr</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-09-03</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>BSC-CNS [aut, cph],
+  Nicolau Manubens [aut],
+  Alasdair Hunter [aut],
+  Nuria Perez [cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Nuria Perez  &#x3c;&#x6e;&#x75;&#x72;&#x69;&#x61;&#x2e;&#x70;&#x65;&#x72;&#x65;&#x7a;&#x20;&#x61;&#x74;&#x20;&#x62;&#x73;&#x63;&#x2e;&#x65;&#x73;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://earth.bsc.es/gitlab/ces/multiApply/issues">https://earth.bsc.es/gitlab/ces/multiApply/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/LGPL-3">LGPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://earth.bsc.es/gitlab/ces/multiApply">https://earth.bsc.es/gitlab/ces/multiApply</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_multiApply.html">multiApply results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package multiApply downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="multiApply.pdf"> multiApply.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/multiApply_2.1.1.tar.gz"> multiApply_2.1.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/multiApply_2.1.1.zip">multiApply_2.1.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/multiApply_2.1.1.zip">multiApply_2.1.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/multiApply_2.1.1.zip">multiApply_2.1.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/multiApply_2.1.1.tgz">multiApply_2.1.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/multiApply_2.1.1.tgz">multiApply_2.1.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/multiApply"> multiApply archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package multiApply reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../agroclim/index.html">agroclim</a>, <a href="../ClimProjDiags/index.html">ClimProjDiags</a>, <a href="../CSTools/index.html">CSTools</a>, <a href="../s2dv/index.html">s2dv</a>, <a href="../startR/index.html">startR</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=multiApply"><samp>https://CRAN.R-project.org/package=multiApply</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,52 @@
+Package: rnoaa
+Title: 'NOAA' Weather Data from R
+Description: Client for many 'NOAA' data sources including the 'NCDC' climate
+    'API' at <https://www.ncdc.noaa.gov/cdo-web/webservices/v2>, with functions for
+    each of the 'API' 'endpoints': data, data categories, data sets, data types,
+    locations, location categories, and stations. In addition, we have an interface
+    for 'NOAA' sea ice data, the 'NOAA' severe weather inventory, 'NOAA' Historical
+    Observing 'Metadata' Repository ('HOMR') data, 'NOAA' storm data via 'IBTrACS',
+    tornado data via the 'NOAA' storm prediction center, and more.
+Version: 0.8.0
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+Authors@R: c(
+    person("Scott", "Chamberlain", role = c("aut","cre"), email = "myrmecocystus@gmail.com"),
+    person("Brooke", "Anderson", role = "ctb"),
+    person("Maëlle", "Salmon", role = "ctb"),
+    person("Adam", "Erickson", role = "ctb"),
+    person("Nicholas", "Potter", role = "ctb"),
+    person("Joseph", "Stachelek", role = "ctb"),
+    person("Alex", "Simmons", role = "ctb"),
+    person("Karthik", "Ram", role = "ctb"),
+    person("Hart", "Edmund", role = "ctb")
+  )
+URL: https://github.com/ropensci/rnoaa
+BugReports: https://github.com/ropensci/rnoaa/issues
+LazyData: true
+VignetteBuilder: knitr
+Imports: utils, crul (>= 0.6.0), lubridate, dplyr, tidyr, ggplot2,
+        scales, XML, xml2, jsonlite, rappdirs, gridExtra, tibble,
+        isdparser (>= 0.2.0), geonames, hoardr (>= 0.5.2)
+Suggests: roxygen2 (>= 6.1.1), testthat, knitr, taxize, ncdf4, raster,
+        leaflet, rgdal, rmarkdown, purrr, ggmap, ropenaq, vcr
+RoxygenNote: 6.1.1
+X-schema.org-applicationCategory: Climate
+X-schema.org-keywords: earth, science, climate, precipitation,
+        temperature, storm, buoy, NCDC, NOAA, tornadoe, sea ice, ISD
+X-schema.org-isPartOf: https://ropensci.org
+NeedsCompilation: no
+Packaged: 2018-12-03 20:48:16 UTC; sckott
+Author: Scott Chamberlain [aut, cre],
+  Brooke Anderson [ctb],
+  Maëlle Salmon [ctb],
+  Adam Erickson [ctb],
+  Nicholas Potter [ctb],
+  Joseph Stachelek [ctb],
+  Alex Simmons [ctb],
+  Karthik Ram [ctb],
+  Hart Edmund [ctb]
+Maintainer: Scott Chamberlain <myrmecocystus@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-12-03 21:20:03 UTC

@@ -1,0 +1,37 @@
+Package: waterquality
+Title: Satellite Derived Water Quality Detection Algorithms
+Version: 0.2.2
+Authors@R: c(person("Richard", "Johansen", email = "richard.johansen@uc.edu", 
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0003-4287-9677")),
+    person("Jakub", "Nowosad", email="nowosad.jakub@gmail.com",
+    role = c("aut"), comment = c(ORCID = "0000-0002-1057-3721")),
+    person("Molly", "Reif", email="Molly.K.Reif@usace.army.mil",
+    role = c("aut"), comment = c(ORCID = "0000-0003-4207-1459")),
+    person("Erich", "Emery", email="Erich.B.Emery@usace.army.mil",
+    role = c("aut")),
+    person("U.S. Army Corps of Engineers", role = c("fnd")))
+Description: The goal of 'waterquality' is to convert satellite-reflectance imagery
+    to a host of pre-defined water quality algorithms designed for the detection of 
+    chlorophyll-a, blue-green algae (Phycocyanin), and turbidity. 
+    This package is able to process the following sensor configurations: 
+    WorldView-2, Sentinel-2, Landsat-8, MODIS, and MERIS.
+Depends: R (>= 3.4.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: methods, raster, rgdal
+RoxygenNote: 6.1.1
+Suggests: testthat, knitr, tibble, rmarkdown, covr
+URL: https://github.com/RAJohansen/waterquality
+BugReports: https://github.com/RAJohansen/waterquality/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-12-10 18:44:39 UTC; johansra
+Author: Richard Johansen [aut, cre] (<https://orcid.org/0000-0003-4287-9677>),
+  Jakub Nowosad [aut] (<https://orcid.org/0000-0002-1057-3721>),
+  Molly Reif [aut] (<https://orcid.org/0000-0003-4207-1459>),
+  Erich Emery [aut],
+  U.S. Army Corps of Engineers [fnd]
+Maintainer: Richard Johansen <richard.johansen@uc.edu>
+Repository: CRAN
+Date/Publication: 2018-12-18 23:20:03 UTC

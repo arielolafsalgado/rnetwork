@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package ddiv</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Data Driven I-v Feature Extraction [R package ddiv version 0.1.0]" />
+<meta name="citation_author1" content="Wei-Heng Huang" />
+<meta name="citation_author2" content="Xuan Ma" />
+<meta name="citation_author3" content="Roger H. French" />
+<meta name="citation_publication_date" content="2018-09-28" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=ddiv" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=ddiv" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="ddiv: Data Driven I-v Feature Extraction" />
+<meta name="og:description" content="The Data Driven I-V Feature Extraction is used to extract Current-Voltage (I-V) features from I-V curves. I-V curves indicate the relationship between current and voltage for a solar cell or Photovoltaic (PV) modules. The I-V features such as maximum power point (Pmp), shunt resistance (Rsh), series resistance (Rs),short circuit current (Isc), open circuit voltage (Voc), fill factor (FF), current at maximum power (Imp) and voltage at maximum power(Vmp) contain important information of the performance for PV modules. The traditional method uses the single diode model to model I-V curves and extract I-V features. This package does not use the diode model, but uses data-driven a method which select different linear parts of the I-V curves to extract I-V features. This method also uses a sampling method to calculate uncertainties when extracting I-V features. Also, because of the partially shaded array, &quot;steps&quot; occurs in I-V curves. The &quot;Segmented Regression&quot; method is used to identify steps in I-V curves. This material is based upon work supported by the U.S. Department of Energy’s Office of Energy Efficiency and Renewable Energy (EERE) under Solar Energy Technologies Office (SETO) Agreement Number DE-EE0007140. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=ddiv" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>ddiv: Data Driven I-v Feature Extraction</h2>
+<p>The Data Driven I-V Feature Extraction is used to extract 
+    Current-Voltage (I-V) features from I-V curves. I-V curves indicate the 
+    relationship between current and voltage for a solar cell or Photovoltaic (PV) 
+    modules. The I-V features such as maximum power point (Pmp), shunt resistance (Rsh), 
+    series resistance (Rs),short circuit current (Isc), open circuit voltage (Voc), 
+    fill factor (FF), current at maximum power (Imp) and voltage at maximum power(Vmp) 
+    contain important information of the performance for PV modules. The traditional 
+    method uses the single diode model to model I-V curves and extract I-V features. 
+    This package does not use the diode model, but uses data-driven a method which 
+    select different linear parts of the I-V curves to extract I-V features. 
+    This method also uses a sampling method to calculate uncertainties when extracting 
+    I-V features. Also, because of the partially shaded array, "steps" occurs in 
+    I-V curves. The "Segmented Regression" method is used to identify steps in I-V curves.
+    This material is based upon work supported by the U.S. Department of Energy’s 
+    Office of Energy Efficiency and Renewable Energy (EERE) under Solar Energy 
+    Technologies Office (SETO) Agreement Number DE-EE0007140. </p>
+<table summary="Package ddiv summary">
+<tr>
+<td>Version:</td>
+<td>0.1.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.4.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../MASS/index.html">MASS</a> (&ge; 0.5-3.0), <a href="../segmented/index.html">segmented</a> (&ge; 0.5-3.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2018-09-28</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Wei-Heng Huang <a href="https://orcid.org/0000-0002-6609-4981"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Xuan Ma <a href="https://orcid.org/0000-0003-2361-2846"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    cre],
+  Jiqi Liu <a href="https://orcid.org/0000-0003-2016-4160"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb],
+  Menghong Wang <a href="https://orcid.org/0000-0001-7349-699X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Alan J. Curran <a href="https://orcid.org/0000-0002-4505-8359"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Justin S. Fada <a href="https://orcid.org/0000-0002-0029-5051"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Jean-Nicolas Jaubert
+    <a href="https://orcid.org/0000-0002-9663-6999"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb],
+  Jing Sun <a href="https://orcid.org/0000-0002-4313-2316"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb],
+  Jennifer L. Braid <a href="https://orcid.org/0000-0002-0677-7756"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Jenny Brynjarsdottir
+    <a href="https://orcid.org/0000-0003-1859-4962"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb],
+  Roger H. French <a href="https://orcid.org/0000-0002-6162-0532"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Xuan Ma  &#x3c;&#x78;&#x78;&#x6d;&#x31;&#x31;&#x35;&#x20;&#x61;&#x74;&#x20;&#x63;&#x61;&#x73;&#x65;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_ddiv.html">ddiv results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package ddiv downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="ddiv.pdf"> ddiv.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Daystar.html">Outdoor Time Series I-V Curve Data from SDLE SunFarm</a><br/>
+<a href="vignettes/IV_4K.html">Damp Heat Plus Dynamic Mechanical Load Indoor Accelerated Test I-V Curve</a><br/>
+<a href="vignettes/IV_5M.html">I-V Curves from External Solar Testing Laboratory</a><br/>
+<a href="vignettes/IVcurve.html">Introduction to I-V Curves</a><br/>
+<a href="vignettes/ddiv.html">ddiv</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/ddiv_0.1.0.tar.gz"> ddiv_0.1.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/ddiv_0.1.0.zip">ddiv_0.1.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/ddiv_0.1.0.zip">ddiv_0.1.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/ddiv_0.1.0.zip">ddiv_0.1.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/ddiv_0.1.0.tgz">ddiv_0.1.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/ddiv_0.1.0.tgz">ddiv_0.1.0.tgz</a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package ddiv reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../SunsVoc/index.html">SunsVoc</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=ddiv"><samp>https://CRAN.R-project.org/package=ddiv</samp></a>
+to link to this page.</p>
+</body>
+</html>

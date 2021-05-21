@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package partition</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Agglomerative Partitioning Framework for Dimension Reduction [R package partition version 0.1.2]" />
+<meta name="citation_author1" content="Joshua Millstein" />
+<meta name="citation_author2" content="Malcolm Barrett" />
+<meta name="citation_publication_date" content="2020-05-24" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=partition" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=partition" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="partition: Agglomerative Partitioning Framework for Dimension Reduction" />
+<meta name="og:description" content="A fast and flexible framework for agglomerative partitioning. 'partition' uses an approach called Direct-Measure-Reduce to create new variables that maintain the user-specified minimum level of information. Each reduced variable is also interpretable: the original variables map to one and only one variable in the reduced data set. 'partition' is flexible, as well: how variables are selected to reduce, how information loss is measured, and the way data is reduced can all be customized. 'partition' is based on the Partition framework discussed in Millstein et al. (2020) &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fbioinformatics%2Fbtz661&quot;&gt;doi:10.1093/bioinformatics/btz661&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=partition" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>partition: Agglomerative Partitioning Framework for Dimension Reduction</h2>
+<p>A fast and flexible framework for agglomerative
+    partitioning. 'partition' uses an approach called
+    Direct-Measure-Reduce to create new variables that maintain the
+    user-specified minimum level of information. Each reduced variable is
+    also interpretable: the original variables map to one and only one
+    variable in the reduced data set. 'partition' is flexible, as well:
+    how variables are selected to reduce, how information loss is
+    measured, and the way data is reduced can all be customized.
+    'partition' is based on the Partition framework discussed in Millstein
+    et al. (2020) &lt;<a href="https://doi.org/10.1093%2Fbioinformatics%2Fbtz661">doi:10.1093/bioinformatics/btz661</a>&gt;.</p>
+<table summary="Package partition summary">
+<tr>
+<td>Version:</td>
+<td>0.1.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../crayon/index.html">crayon</a>, <a href="../dplyr/index.html">dplyr</a> (&ge; 0.8.0), <a href="../forcats/index.html">forcats</a>, <a href="../ggplot2/index.html">ggplot2</a> (&ge; 3.3.0), <a href="../infotheo/index.html">infotheo</a>, <a href="../magrittr/index.html">magrittr</a>, <a href="../MASS/index.html">MASS</a>, <a href="../pillar/index.html">pillar</a>, <a href="../purrr/index.html">purrr</a>, <a href="../Rcpp/index.html">Rcpp</a>, <a href="../rlang/index.html">rlang</a>, <a href="../stringr/index.html">stringr</a>, <a href="../tibble/index.html">tibble</a>, <a href="../tidyr/index.html">tidyr</a> (&ge; 1.0.0)</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../covr/index.html">covr</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../spelling/index.html">spelling</a>, <a href="../testthat/index.html">testthat</a>, <a href="../ggcorrplot/index.html">ggcorrplot</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-05-24</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Joshua Millstein [aut],
+  Malcolm Barrett <a href="https://orcid.org/0000-0003-0299-5825"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Malcolm Barrett  &#x3c;&#x6d;&#x61;&#x6c;&#x63;&#x6f;&#x6c;&#x6d;&#x62;&#x61;&#x72;&#x72;&#x65;&#x74;&#x74;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/USCbiostats/partition/issues">https://github.com/USCbiostats/partition/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://uscbiostats.github.io/partition/">https://uscbiostats.github.io/partition/</a>,
+<a href="https://github.com/USCbiostats/partition">https://github.com/USCbiostats/partition</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">partition citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_partition.html">partition results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package partition downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="partition.pdf"> partition.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/extending-partition.html">Extending partition</a><br/>
+<a href="vignettes/introduction-to-partition.html">Introduction to Partition</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/partition_0.1.2.tar.gz"> partition_0.1.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/partition_0.1.2.zip">partition_0.1.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/partition_0.1.2.zip">partition_0.1.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/partition_0.1.2.zip">partition_0.1.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/partition_0.1.2.tgz">partition_0.1.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/partition_0.1.2.tgz">partition_0.1.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/partition"> partition archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=partition"><samp>https://CRAN.R-project.org/package=partition</samp></a>
+to link to this page.</p>
+</body>
+</html>

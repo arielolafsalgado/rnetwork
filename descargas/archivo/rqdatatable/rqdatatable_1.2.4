@@ -1,0 +1,30 @@
+Package: rqdatatable
+Type: Package
+Title: 'rquery' for 'data.table'
+Version: 1.2.4
+Date: 2019-11-12
+Authors@R: c(
+    person("John", "Mount", email = "jmount@win-vector.com", role = c("aut", "cre")),
+    person(family = "Win-Vector LLC", role = c("cph"))
+    )
+Maintainer: John Mount <jmount@win-vector.com>
+Description: Implements the 'rquery' piped Codd-style query algebra using 'data.table'.  This allows
+   for a high-speed in memory implementation of Codd-style data manipulation tools.
+URL: https://github.com/WinVector/rqdatatable/,
+        https://winvector.github.io/rqdatatable/
+BugReports: https://github.com/WinVector/rqdatatable/issues
+License: GPL-2 | GPL-3
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+VignetteBuilder: knitr
+Depends: R (>= 3.4.0), rquery (>= 1.3.9)
+Imports: wrapr (>= 1.9.3), data.table (>= 1.12.2)
+RoxygenNote: 6.1.1
+Suggests: knitr, rmarkdown, DBI, RSQLite, parallel, RUnit
+NeedsCompilation: no
+Packaged: 2019-11-12 18:17:13 UTC; johnmount
+Author: John Mount [aut, cre],
+  Win-Vector LLC [cph]
+Repository: CRAN
+Date/Publication: 2019-11-12 19:20:03 UTC

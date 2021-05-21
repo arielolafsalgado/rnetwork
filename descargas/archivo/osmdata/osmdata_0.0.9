@@ -1,0 +1,51 @@
+Package: osmdata
+Version: 0.0.9
+Authors@R: c(
+    person("Mark", "Padgham", email="mark.padgham@email.com", role=c("aut", "cre")),
+    person("Bob", "Rudis", role="aut"),
+    person("Robin", "Lovelace", role="aut"), 
+    person("Maëlle", "Salmon", role="aut"),
+    person("Andrew", "Smith", role="ctb"),
+    person("James", "Smith", role="ctb"),
+    person("Marcin", "Kalicinski", role=c("ctb", "cph"),
+        comment="Author of included RapidXML code"),
+    person("Finkelstein", "Noam", role=c("ctb","cph"),
+        comment="Author of included stub.R code"),
+    person ("Bartnik", "Lukasz", role=c("ctb","cph"),
+        comment="Author of included stub.R code"))
+Maintainer: Mark Padgham <mark.padgham@email.com>
+Title: Import 'OpenStreetMap' Data as Simple Features or Spatial
+        Objects
+Description: Download and import of 'OpenStreetMap' ('OSM') data as 'sf' or 'sp'
+    objects.  'OSM' data are extracted from the 'Overpass' web server and
+    processed with very fast 'C++' routines for return to 'R'.
+Depends: R (>= 3.2.4)
+License: GPL-3
+SystemRequirements: C++11
+NeedsCompilation: yes
+LazyData: true
+Imports: curl, httr, lubridate, magrittr, methods, Rcpp (>= 0.12.4),
+        rvest, jsonlite, sp, tibble, utils, xml2
+Suggests: devtools, knitr, rmarkdown, roxygen2, sf, testthat
+LinkingTo: Rcpp
+URL: https://github.com/ropensci/osmdata
+BugReports: https://github.com/ropensci/osmdata/issues
+Encoding: UTF-8
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+X-schema.org-applicationCategory: Data Access
+X-schema.org-keywords: open0street0map, openstreetmap, overpass0API,
+        OSM
+X-schema.org-isPartOf: https://ropensci.org
+Packaged: 2018-12-14 11:12:50 UTC; markus
+Author: Mark Padgham [aut, cre],
+  Bob Rudis [aut],
+  Robin Lovelace [aut],
+  Maëlle Salmon [aut],
+  Andrew Smith [ctb],
+  James Smith [ctb],
+  Marcin Kalicinski [ctb, cph] (Author of included RapidXML code),
+  Finkelstein Noam [ctb, cph] (Author of included stub.R code),
+  Bartnik Lukasz [ctb, cph] (Author of included stub.R code)
+Repository: CRAN
+Date/Publication: 2018-12-19 08:13:28 UTC

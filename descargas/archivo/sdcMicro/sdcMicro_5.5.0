@@ -1,0 +1,50 @@
+Package: sdcMicro
+Type: Package
+Title: Statistical Disclosure Control Methods for Anonymization of Data
+        and Risk Estimation
+Version: 5.5.0
+Authors@R: c(
+  person("Matthias", "Templ", email="matthias.templ@gmail.com", role = c("aut", "cre"), comment=c(ORCID="0000-0002-8638-5276")),
+  person("Bernhard", "Meindl", email = "Bernhard.Meindl@statistik.gv.at", role = c("aut")),
+  person("Alexander", "Kowarik", email="Alexander.Kowarik@statistik.gv.at", role = "aut", comment=c(ORCID="0000-0001-8598-4130")))
+Description: Data from statistical agencies and other institutions are mostly
+    confidential. This package (see also Templ, Kowarik and Meindl (2017) <doi:10.18637/jss.v067.i04>) can be used for the generation of anonymized
+    (micro)data, i.e. for the creation of public- and scientific-use files.
+    The theoretical basis for the methods implemented can be found in Templ (2017) <doi:10.1007/978-3-319-50272-4>.
+    Various risk estimation and anonymisation methods are included. Note that the package
+    includes a graphical user interface (Meindl and Templ, 2019 <doi:10.3390/a12090191>) that allows to use various methods of this
+    package.
+LazyData: TRUE
+ByteCompile: TRUE
+LinkingTo: Rcpp
+Depends: R (>= 2.10)
+Suggests: laeken,testthat
+Imports: utils, stats, graphics, car, carData, rmarkdown, knitr,
+        data.table, xtable, robustbase, cluster, MASS, e1071, tools,
+        Rcpp, methods, ggplot2, shiny (>= 1.4.0), haven, rhandsontable,
+        DT, shinyBS, prettydoc, VIM(>= 4.7.0)
+License: GPL-2
+URL: https://github.com/sdcTools/sdcMicro
+Collate: '0classes.r' 'addGhostVars.R' 'addNoise.r' 'aux_functions.r'
+        'createNewID.R' 'dataGen.r' 'dataSets.R' 'dRisk.R' 'dRiskRMD.R'
+        'dUtility.R' 'freqCalc.r' 'globalRecode.R' 'groupAndRename.R'
+        'GUIfunctions.R' 'indivRisk.R' 'LLmodGlobalRisk.R'
+        'LocalRecProg.R' 'localSupp.R' 'localSuppression.R' 'mdav.R'
+        'measure_risk.R' 'methods.r' 'microaggregation.R' 'modRisk.R'
+        'muargus_compatibility_functions.R' 'mvTopCoding.R'
+        'plotFunctions.R' 'plotMicro.R' 'pram.R' 'rankSwap.R'
+        'RcppExports.R' 'report.R' 'riskyCells.R' 'sdcMicro-package.R'
+        'shuffle.R' 'suda2.R' 'timeEstimation.R' 'topBotCoding.R'
+        'valTable.R' 'zzz.R' 'printFunctions.R' 'mafast.R' 'maG.R'
+        'sdcApp.R' 'show_sdcMicroObj.R'
+RoxygenNote: 7.0.0
+VignetteBuilder: knitr
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2019-11-20 12:15:09 UTC; matthias
+Author: Matthias Templ [aut, cre] (<https://orcid.org/0000-0002-8638-5276>),
+  Bernhard Meindl [aut],
+  Alexander Kowarik [aut] (<https://orcid.org/0000-0001-8598-4130>)
+Maintainer: Matthias Templ <matthias.templ@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-11-21 10:40:03 UTC

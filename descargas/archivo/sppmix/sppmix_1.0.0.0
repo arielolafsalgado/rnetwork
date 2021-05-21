@@ -1,0 +1,23 @@
+Package: sppmix
+Title: Modeling Spatial Poisson and Related Point Processes
+Version: 1.0.0.0
+Author: Jiaxun Chen <chenjiaxun9@hotmail.com>
+ and Athanasios (Sakis) Christou Micheas <micheasa@missouri.edu>.
+ Significant contributions on the package skeleton creation, plotting functions and other code by
+ Yuchen Wang <ycwang0712@gmail.com>
+Maintainer: Sakis Micheas <micheasa@missouri.edu>
+Description: Implements classes and methods for modeling spatial point patterns using inhomogeneous Poisson point processes, where the intensity surface is assumed to be analogous to a finite additive mixture of normal components and the number of components is a finite, fixed or random integer. Extensions to the marked inhomogeneous Poisson point processes case are also presented. We provide an extensive suite of R functions that can be used to simulate, visualize and model point patterns, estimate the parameters of the models, assess convergence of the algorithms and perform model selection and checking in the proposed modeling context.
+Depends: R (>= 3.2.1), stats, graphics, grDevices, utils, USAboundaries
+License: CC BY-NC-SA 4.0
+LazyData: true
+Imports: Rcpp, spatstat, rgl, fields, mvtnorm, ggplot2 (>= 2.1.0),
+        matrixcalc,sp
+LinkingTo: Rcpp, RcppArmadillo, mvtnorm
+URL: http://www.stat.missouri.edu/~amicheas/sppmix/index.html
+RoxygenNote: 5.0.1
+Suggests: knitr,rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2017-02-22 13:58:12 UTC; sakis
+Repository: CRAN
+Date/Publication: 2017-02-23 08:31:33

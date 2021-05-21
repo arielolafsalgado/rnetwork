@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package RSGHB</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Functions for Hierarchical Bayesian Estimation: A Flexible Approach [R package RSGHB version 1.2.2]" />
+<meta name="citation_author1" content="Jeff Dumont" />
+<meta name="citation_author2" content="Jeff Keller" />
+<meta name="citation_publication_date" content="2019-07-03" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=RSGHB" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=RSGHB" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="RSGHB: Functions for Hierarchical Bayesian Estimation: A Flexible Approach" />
+<meta name="og:description" content="Functions for estimating models using a Hierarchical Bayesian (HB) framework. The flexibility comes in allowing the user to specify the likelihood function directly instead of assuming predetermined model structures. Types of models that can be estimated with this code include the family of discrete choice models (Multinomial Logit, Mixed Logit, Nested Logit, Error Components Logit and Latent Class) as well ordered response models like ordered probit and ordered logit. In addition, the package allows for flexibility in specifying parameters as either fixed (non-varying across individuals) or random with continuous distributions. Parameter distributions supported include normal, positive/negative log-normal, positive/negative censored normal, and the Johnson SB distribution. Kenneth Train's Matlab and Gauss code for doing Hierarchical Bayesian estimation has served as the basis for a few of the functions included in this package. These Matlab/Gauss functions have been rewritten to be optimized within R. Considerable code has been added to increase the flexibility and usability of the code base. Train's original Gauss and Matlab code can be found here: &amp;lt;&lt;a href=&quot;http://elsa.berkeley.edu/Software/abstracts/train1006mxlhb.html&quot;&gt;http://elsa.berkeley.edu/Software/abstracts/train1006mxlhb.html&lt;/a&gt;&amp;gt; See Train's chapter on HB in Discrete Choice with Simulation here: &amp;lt;&lt;a href=&quot;http://elsa.berkeley.edu/books/choice2.html&quot;&gt;http://elsa.berkeley.edu/books/choice2.html&lt;/a&gt;&amp;gt;; and his paper on using HB with non-normal distributions here: &amp;lt;&lt;a href=&quot;http://eml.berkeley.edu//~train/trainsonnier.pdf&quot;&gt;http://eml.berkeley.edu//~train/trainsonnier.pdf&lt;/a&gt;&amp;gt;. The authors would also like to thank the invaluable contributions of Stephane Hess and the Choice Modelling Centre: &amp;lt;&lt;a href=&quot;https://cmc.leeds.ac.uk/&quot;&gt;https://cmc.leeds.ac.uk/&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=RSGHB" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>RSGHB: Functions for Hierarchical Bayesian Estimation: A Flexible
+Approach</h2>
+<p>Functions for estimating models using a Hierarchical Bayesian (HB) framework. The flexibility comes in allowing the user to specify the likelihood function directly instead of assuming predetermined model structures. Types of models that can be estimated with this code include the family of discrete choice models (Multinomial Logit, Mixed Logit, Nested Logit, Error Components Logit and Latent Class) as well ordered response models like ordered probit and ordered logit. In addition, the package allows for flexibility in specifying parameters as either fixed (non-varying across individuals) or random with continuous distributions. Parameter distributions supported include normal, positive/negative log-normal, positive/negative censored normal, and the Johnson SB distribution. Kenneth Train's Matlab and Gauss code for doing Hierarchical Bayesian estimation has served as the basis for a few of the functions included in this package. These Matlab/Gauss functions have been rewritten to be optimized within R. Considerable code has been added to increase the flexibility and usability of the code base. Train's original Gauss and Matlab code can be found here: &lt;<a href="http://elsa.berkeley.edu/Software/abstracts/train1006mxlhb.html">http://elsa.berkeley.edu/Software/abstracts/train1006mxlhb.html</a>&gt; See Train's chapter on HB in Discrete Choice with Simulation here: &lt;<a href="http://elsa.berkeley.edu/books/choice2.html">http://elsa.berkeley.edu/books/choice2.html</a>&gt;; and his paper on using HB with non-normal distributions here: &lt;<a href="http://eml.berkeley.edu//~train/trainsonnier.pdf">http://eml.berkeley.edu//~train/trainsonnier.pdf</a>&gt;. The authors would also like to thank the invaluable contributions of Stephane Hess and the Choice Modelling Centre: &lt;<a href="https://cmc.leeds.ac.uk/">https://cmc.leeds.ac.uk/</a>&gt;.</p>
+<table summary="Package RSGHB summary">
+<tr>
+<td>Version:</td>
+<td>1.2.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>methods, <a href="../MCMCpack/index.html">MCMCpack</a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>graphics, grDevices, stats, utils</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-07-03</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Jeff Dumont [aut, cre],
+  Jeff Keller [aut],
+  Chase Carpenter [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Jeff Dumont  &#x3c;&#x4a;&#x65;&#x66;&#x66;&#x2e;&#x44;&#x75;&#x6d;&#x6f;&#x6e;&#x74;&#x20;&#x61;&#x74;&#x20;&#x72;&#x73;&#x67;&#x69;&#x6e;&#x63;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>Copyright:</td>
+<td>Resource Systems Group, Inc. 2019</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/RSGInc/RSGHB">https://github.com/RSGInc/RSGHB</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Bayesian.html">Bayesian</a>, <a href="../../views/Bayesian.html">Bayesian</a>, <a href="../../views/Econometrics.html">Econometrics</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_RSGHB.html">RSGHB results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package RSGHB downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="RSGHB.pdf"> RSGHB.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/RSGHB_HowTo.pdf">How to use RSGHB</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/RSGHB_1.2.2.tar.gz"> RSGHB_1.2.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/RSGHB_1.2.2.zip">RSGHB_1.2.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/RSGHB_1.2.2.zip">RSGHB_1.2.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/RSGHB_1.2.2.zip">RSGHB_1.2.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/RSGHB_1.2.2.tgz">RSGHB_1.2.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/RSGHB_1.2.2.tgz">RSGHB_1.2.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/RSGHB"> RSGHB archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package RSGHB reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../apollo/index.html">apollo</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=RSGHB"><samp>https://CRAN.R-project.org/package=RSGHB</samp></a>
+to link to this page.</p>
+</body>
+</html>

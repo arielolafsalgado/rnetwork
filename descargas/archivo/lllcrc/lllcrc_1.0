@@ -1,0 +1,23 @@
+Package: lllcrc
+Type: Package
+Title: Local Log-linear Models for Capture-Recapture
+Version: 1.0
+Date: 2013-12-16
+Author: Zach Kurtz
+Maintainer: Zach Kurtz <zkurtz@gmail.com>
+Description: Applies local log-linear capture-recapture models (LLLMs) a for
+    closed populations, as described in the ongoing doctoral thesis work of
+    Zachary Kurtz in the department of statistics at Carnegie Mellon
+    University.  The method is relevant when there are 3-4 capture occasions,
+    with auxiliary covariates available for all capture occasions.  As part of
+    estimating the number of missing population units, the method estimates the
+    "rate of missingness" as it varies over the covariate space.  In addition,
+    user-friendly functions are provided to recreate (approximately) the method
+    of Zwane and Van der Heijden (2004), which applied the VGAM package in a
+    way that is closely related to LLLMs.
+License: GPL-2
+Imports: data.table, combinat, VGAM, plyr
+Packaged: 2014-01-07 22:56:44 UTC; zach
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2014-01-08 00:50:46

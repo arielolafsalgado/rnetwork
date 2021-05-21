@@ -1,0 +1,49 @@
+Package: PROsetta
+Type: Package
+Title: Linking Patient-Reported Outcomes Measures
+Version: 0.1.4
+Date: 2020-06-30
+Authors@R: c(
+    person("Seung W.", "Choi",
+        email = "schoi@austin.utexas.edu",
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0003-4777-5420")),
+    person("Sangdon", "Lim",
+        email = "sangdonlim@utexas.edu",
+        role = c("aut"),
+        comment = c(ORCID = "0000-0002-2988-014X")),
+    person("Benjamin D.", "Schalet",
+        email = "b-schalet@northwewstern.edu",
+        role = c("ctb")),
+    person("Aaron", "Kaat",
+        email = "aaron.kaat@northwestern.edu",
+        role = c("ctb")),
+    person("David", "Cella",
+        email = "d-cella@northwestern.edu",
+        role = c("ctb")))
+Description: Perform scale linking to establish relationships between instruments
+    that measure similar constructs according to the PROsetta Stone methodology, as in Choi, Schalet, Cook, & Cella (2014) <doi:10.1037/a0035768>.
+URL: http://prosettastone.org
+BugReports: https://github.com/choi-phd/PROsetta/issues
+Imports: equate, lavaan, mirt, plink, psych, methods
+Depends: R (>= 3.5.0)
+Suggests: shiny, shinythemes, shinyWidgets, shinyjs, DT, knitr,
+        kableExtra, testthat (>= 2.1.0), dplyr, rmarkdown, pkgdown
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+Collate: 'import.R' 'configPROsetta.R' 'post_functions.R'
+        'core_functions.R' 'datasets.R' 'example.R'
+        'linking_functions.R' 'plot_functions.R' 'runshiny.R'
+NeedsCompilation: no
+Packaged: 2020-06-30 21:06:04 UTC; chois1
+Author: Seung W. Choi [aut, cre] (<https://orcid.org/0000-0003-4777-5420>),
+  Sangdon Lim [aut] (<https://orcid.org/0000-0002-2988-014X>),
+  Benjamin D. Schalet [ctb],
+  Aaron Kaat [ctb],
+  David Cella [ctb]
+Maintainer: Seung W. Choi <schoi@austin.utexas.edu>
+Repository: CRAN
+Date/Publication: 2020-07-01 11:00:18 UTC

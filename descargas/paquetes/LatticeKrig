@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package LatticeKrig</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Multi-Resolution Kriging Based on Markov Random Fields [R package LatticeKrig version 8.4]" />
+<meta name="citation_author1" content="Douglas Nychka" />
+<meta name="citation_author2" content="Dorit Hammerling" />
+<meta name="citation_author3" content="Stephan Sain" />
+<meta name="citation_author4" content="Nathan Lenssen" />
+<meta name="citation_author5" content="Colette Smirniotis" />
+<meta name="citation_author6" content="Matthew Iverson" />
+<meta name="citation_publication_date" content="2019-11-09" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=LatticeKrig" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=LatticeKrig" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="LatticeKrig: Multi-Resolution Kriging Based on Markov Random Fields" />
+<meta name="og:description" content="Methods for the interpolation of large spatial datasets. This package follows a &quot;fixed rank Kriging&quot; approach but provides a surface fitting method that can approximate standard spatial data models. Using a large number of basis functions allows for estimates that can come close to interpolating the observations (a spatial model with a small nugget variance.) Moreover, the covariance model for this method can approximate the Matern covariance family but also allows for a multi-resolution model and supports efficient computation of the profile likelihood for estimating covariance parameters. This is accomplished through compactly supported basis functions and a Markov random field model for the basis coefficients. These features lead to sparse matrices for the computations and this package makes of the R spam package for sparse linear algebra. An extension of this version over previous ones ( &amp;lt; 5.4 ) is the support for different geometries besides a rectangular domain. The Markov random field approach combined with a basis function representation makes the implementation of different geometries simple where only a few specific R functions need to be added with most of the computation and evaluation done by generic routines that have been tuned to be efficient. One benefit of this package's model/approach is the facility to do unconditional and conditional simulation of the field for large numbers of arbitrary points. There is also the flexibility for estimating non-stationary covariances and also the case when the observations are a linear combination (e.g. an integral) of the spatial process. Included are generic methods for prediction, standard errors for prediction, plotting of the estimated surface and conditional and unconditional simulation. See the 'LatticeKrig' GitHub repository for a vignette of this package. Development of this package was supported in part by the National Science Foundation Grant 1417857 and the National Center for Atmospheric Research. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=LatticeKrig" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>LatticeKrig: Multi-Resolution Kriging Based on Markov Random Fields</h2>
+<p>Methods for the interpolation of large spatial
+  datasets. This package follows a "fixed rank Kriging" approach but
+  provides a surface fitting method
+  that can approximate standard spatial data models.
+  Using a large number of basis functions allows for estimates that
+  can come close to interpolating the observations (a spatial model
+  with a small nugget variance.)  Moreover, the covariance model for
+  this method can approximate the Matern covariance family but also
+  allows for a multi-resolution model and supports efficient
+  computation of the profile likelihood for estimating covariance
+  parameters. This is accomplished through compactly supported basis
+  functions and a Markov random field model for the basis
+  coefficients. These features lead to sparse matrices for the
+  computations and this package makes of the R spam package for sparse
+  linear algebra.
+  An extension of this version over previous ones ( &lt; 5.4 ) is the
+  support for different geometries besides a rectangular domain. The
+  Markov random field approach combined with a basis function
+  representation makes the implementation of different geometries
+  simple where only a few specific R functions need to be added with
+  most of the computation and evaluation done by generic routines that
+  have been tuned to be efficient.  One benefit of this package's
+  model/approach is the facility to do unconditional and conditional
+  simulation of the field for large numbers of arbitrary points. There
+  is also the flexibility for estimating non-stationary covariances
+  and also the case when the observations are a linear combination
+  (e.g. an integral) of the spatial process. Included are generic
+  methods for prediction, standard errors for prediction, plotting of
+  the estimated surface and conditional and unconditional simulation.
+  See the 'LatticeKrig' GitHub repository for a vignette of this package.
+  Development of this package was supported in part by the National
+  Science Foundation  Grant 1417857 and the National Center for
+  Atmospheric Research. </p>
+<table summary="Package LatticeKrig summary">
+<tr>
+<td>Version:</td>
+<td>8.4</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0), methods, <a href="../spam/index.html">spam</a>, <a href="../fields/index.html">fields</a> (&ge; 9.9)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-11-09</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Douglas Nychka [aut, cre],
+  Dorit Hammerling [aut],
+  Stephan Sain [aut],
+  Nathan Lenssen [aut],
+  Colette Smirniotis [aut],
+  Matthew Iverson [aut],
+  University Corporation for Atmospheric Research [cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Douglas Nychka  &#x3c;&#x6e;&#x79;&#x63;&#x68;&#x6b;&#x61;&#x20;&#x61;&#x74;&#x20;&#x75;&#x63;&#x61;&#x72;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://www.r-project.org">https://www.r-project.org</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">LatticeKrig citation info</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_LatticeKrig.html">LatticeKrig results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package LatticeKrig downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="LatticeKrig.pdf"> LatticeKrig.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/LatticeKrig_8.4.tar.gz"> LatticeKrig_8.4.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/LatticeKrig_8.4.zip">LatticeKrig_8.4.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/LatticeKrig_8.4.zip">LatticeKrig_8.4.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/LatticeKrig_8.4.zip">LatticeKrig_8.4.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/LatticeKrig_8.4.tgz">LatticeKrig_8.4.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/LatticeKrig_8.4.tgz">LatticeKrig_8.4.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/LatticeKrig"> LatticeKrig archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package LatticeKrig reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../autoFRK/index.html">autoFRK</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=LatticeKrig"><samp>https://CRAN.R-project.org/package=LatticeKrig</samp></a>
+to link to this page.</p>
+</body>
+</html>

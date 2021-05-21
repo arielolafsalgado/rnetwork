@@ -1,0 +1,15 @@
+Package: PathSelectMP
+Type: Package
+Title: Backwards Variable Selection for Paths using M Plus
+Version: 1.0
+Date: 2016-05-19
+Author: William Terry, Meredith Ray, Hongmei Zhang
+Maintainer: William Terry <wterryj6a214@gmail.com>
+Description: Primarily for use with datasets containing only categorical variables, although continuous variables may be included as independent variables in paths. Using M Plus, backward variable selection is performed on all Total, Total Indirect, and then Direct effects until none of these effects have p-values greater than the specified target p-value. If there are missing values in the data, imputations are performed using the Mice package. Then selection is performed with the imputed data sets, and results are averaged.
+License: GPL (>= 2)
+Depends: R (>= 3.1.2)
+Imports: mice, MplusAutomation
+Packaged: 2016-05-19 21:40:23 UTC; wterr
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2016-05-20 01:16:03

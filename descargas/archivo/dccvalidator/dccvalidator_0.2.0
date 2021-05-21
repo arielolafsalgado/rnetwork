@@ -1,0 +1,51 @@
+Package: dccvalidator
+Title: Metadata Validation for Data Coordinating Centers
+Version: 0.2.0
+Authors@R: 
+    c(person(given = "Kara",
+             family = "Woo",
+             role = c("aut")),
+      person(given = "Sage Bionetworks",
+             role = "cph"),
+      person(given = "Nicole",
+             family = "Kauer",
+             role = c("aut", "cre"),
+             email = "nicole.kauer@sagebase.org"),
+      person(given = "Kelsey",
+             family = "Montgomery",
+             role = "aut",
+             email = "kelsey.montgomery@sagebase.org"),
+      person(given = "Dean",
+             family = "Attali",
+             role = "cph"))
+Description: Performs checks for common metadata quality issues. Used by the
+    data coordinating centers for the 'AMP-AD' consortium
+    (<https://adknowledgeportal.synapse.org>), 'PsychENCODE' consortium
+    (<http://www.psychencode.org>), and others to validate metadata prior to
+    data releases.
+License: MIT + file LICENSE
+URL: https://sage-bionetworks.github.io/dccvalidator,
+        https://github.com/Sage-Bionetworks/dccvalidator
+Depends: R (>= 3.4), shinyBS
+Imports: config, ggplot2, glue, golem, htmltools, knitr, markdown,
+        purrr, reactable, readr, readxl, reticulate, rlang, shiny,
+        shinydashboard, shinyjs, skimr, stats, tibble, tools, utils,
+        visdat
+Suggests: covr, jsonlite, jsonvalidate, rmarkdown (>= 1.16.2), stringr,
+        testthat, withr
+VignetteBuilder: knitr
+ByteCompile: true
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+SystemRequirements: synapseclient (pypi.org/project/synapseclient)
+NeedsCompilation: no
+Packaged: 2020-03-12 19:29:49 UTC; aryllen
+Author: Kara Woo [aut],
+  Sage Bionetworks [cph],
+  Nicole Kauer [aut, cre],
+  Kelsey Montgomery [aut],
+  Dean Attali [cph]
+Maintainer: Nicole Kauer <nicole.kauer@sagebase.org>
+Repository: CRAN
+Date/Publication: 2020-03-13 00:20:02 UTC

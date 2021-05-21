@@ -1,0 +1,34 @@
+Package: amt
+Type: Package
+Title: Animal Movement Tools
+Version: 0.0.6
+Authors@R: c(person("Johannes","Signer", role = c("aut", "cre"), email = "jsigner@gwdg.de"), 
+  person("Bjoern", "Reineking", role = "ctb"), 
+  person("Ulrike", "Schlaegel", role = "ctb"), 
+  person("Scott", "LaPoint", role = "dtc"))
+Description: Manage and analyze animal movement data. The functionality of 'amt' includes methods to calculate track statistics (e.g. step lengths, speed, or turning angles), prepare data for fitting habitat selection analyses (resource and step-selection functions), and simulation of space-use from fitted step-selection functions.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/jmsigner/amt
+Depends: R (>= 3.5),
+Imports: broom, checkmate, circular, ctmm, dplyr (>= 0.7.0),
+        fitdistrplus, FNN, geosphere, glue, graphics, grDevices,
+        KernSmooth, lazyeval, leaflet, lubridate, magrittr, maptools,
+        methods, purrr, raster, Rcpp (>= 0.12.7), rgeos, rlang, sf, sp,
+        survival, stats, tibble, tidyr, utils, velox
+Suggests: adehabitatLT, ggplot2, bcpa, devtools, moveHMM, move,
+        spacetime, testthat, trajectories, knitr, Rdpack, rmarkdown
+LinkingTo: Rcpp
+RoxygenNote: 6.1.1
+RdMacros: Rdpack
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2019-03-19 06:43:59 UTC; jsigner
+Author: Johannes Signer [aut, cre],
+  Bjoern Reineking [ctb],
+  Ulrike Schlaegel [ctb],
+  Scott LaPoint [dtc]
+Maintainer: Johannes Signer <jsigner@gwdg.de>
+Repository: CRAN
+Date/Publication: 2019-03-19 07:13:23 UTC

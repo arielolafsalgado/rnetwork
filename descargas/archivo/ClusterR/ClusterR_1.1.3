@@ -1,0 +1,25 @@
+Package: ClusterR
+Type: Package
+Title: Gaussian Mixture Models, K-Means, Mini-Batch-Kmeans and
+        K-Medoids Clustering
+Version: 1.1.3
+Date: 2018-07-21
+Author: Lampros Mouselimis <mouselimislampros@gmail.com>
+Maintainer: Lampros Mouselimis <mouselimislampros@gmail.com>
+BugReports: https://github.com/mlampros/ClusterR/issues
+URL: https://github.com/mlampros/ClusterR
+Description: Gaussian mixture models, k-means, mini-batch-kmeans and k-medoids clustering with the option to plot, validate, predict (new data) and estimate the optimal number of clusters. The package takes advantage of 'RcppArmadillo' to
+    speed up the computationally intensive parts of the functions. For more information, see (i) "Clustering in an Object-Oriented Environment" by Anja Struyf, Mia Hubert, Peter Rousseeuw (1997), Journal of Statistical Software, <doi:10.18637/jss.v001.i04>; (ii) "Web-scale k-means clustering" by D. Sculley (2010), ACM Digital Library, <doi:10.1145/1772690.1772862>; (iii) "Armadillo: a template-based C++ library for linear algebra" by Sanderson et al (2016), The Journal of Open Source Software, <doi:10.21105/joss.00026>.
+License: MIT + file LICENSE
+LazyData: TRUE
+Depends: R(>= 3.2.3), gtools
+Imports: Rcpp (>= 0.12.5), OpenImageR, graphics, grDevices, utils, gmp,
+        FD, stats, ggplot2
+LinkingTo: Rcpp, RcppArmadillo (>= 0.7.2)
+Suggests: testthat, covr, knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2018-07-21 20:04:35 UTC; lampros
+Repository: CRAN
+Date/Publication: 2018-07-21 21:00:02 UTC

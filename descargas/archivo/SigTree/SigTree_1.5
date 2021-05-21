@@ -1,0 +1,18 @@
+Package: SigTree
+Type: Package
+Title: Identify and visualize significantly responsive branches in a
+        phylogenetic tree
+Version: 1.5
+Date: 2014-05-23
+Authors@R: c(person(c("John","R."),"Stevens",role=c("aut","cre","ths","cph"),email="john.r.stevens@usu.edu",comment="www.stat.usu.edu/jrstevens"), 
+             person(c("Todd","R."),"Jones",role=c("aut","cph"),comment="www.toddrjones.com"))
+Description: SigTree takes a phylogenetic tree (of class phylo) and a data frame (or matrix) of corresponding tip labels and p-values and determines the significance of the branches (families of p-values) and plots the tree with colored branches (corresponding to families) according to their levels of significance.  Also produces a CSV file with the p-values of all of the branches as well as which tips belong to which branches.  Finally, it exports a file that can be opened in FigTree that produces a colored plot (colored branches according to their significance of corresponding groups of p-values) with p-value annotations.
+Imports: ape, phyext, RColorBrewer, phyloseq
+Repository: CRAN
+License: GPL-3
+Packaged: 2014-05-23 21:34:42 UTC; John R Stevens
+Author: John R. Stevens [aut, cre, ths, cph] (www.stat.usu.edu/jrstevens),
+  Todd R. Jones [aut, cph] (www.toddrjones.com)
+Maintainer: John R. Stevens <john.r.stevens@usu.edu>
+NeedsCompilation: yes
+Date/Publication: 2014-05-24 08:54:16

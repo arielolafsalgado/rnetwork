@@ -1,0 +1,51 @@
+Package: proffer
+Title: Profile R Code and Visualize with 'Pprof'
+Version: 0.0.2
+Encoding: UTF-8
+Language: en-US
+License: MIT + file LICENSE
+URL: https://github.com/r-prof/proffer,
+        https://r-prof.github.io/proffer
+BugReports: https://github.com/r-prof/proffer/issues
+Authors@R: c(
+  person(
+    given = c("William", "Michael"),
+    family = "Landau",
+    role = c("aut", "cre"),
+    email = "will.landau@gmail.com",
+    comment = c(ORCID = "0000-0003-1878-3253")
+  ),
+  person(
+    family = "Eli Lilly and Company",
+    role = "cph"
+  ))
+Description: Like similar profiling tools,
+  the 'proffer' package automatically detects
+  sources of slowness in R code.
+  The distinguishing feature of 'proffer' is its utilization of
+  'pprof', which supplies interactive visualizations
+  that are efficient and easy to interpret.
+  Behind the scenes, the 'profile' package converts
+  native 'Rprof()' data to a protocol buffer
+  that 'pprof' understands.
+  For the documentation of 'proffer',
+  visit <https://r-prof.github.io/proffer>.
+  To learn about the implementations and methodologies of
+  'pprof', 'profile', and protocol buffers,
+  visit <https://github.com/google/pprof>.
+  <https://developers.google.com/protocol-buffers>,
+  and <https://github.com/r-prof/profile>, respectively.
+Depends: R (>= 3.3.0)
+Imports: processx, profile, RProtoBuf, utils
+Suggests: profvis, testthat (>= 2.1.0)
+SystemRequirements: Graphviz (https://www.graphviz.org/), pprof
+        (https://github.com/google/pprof)
+RoxygenNote: 7.0.2
+NeedsCompilation: no
+Packaged: 2019-12-17 01:18:53 UTC; landau
+Author: William Michael Landau [aut, cre]
+    (<https://orcid.org/0000-0003-1878-3253>),
+  Eli Lilly and Company [cph]
+Maintainer: William Michael Landau <will.landau@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-12-20 13:40:03 UTC

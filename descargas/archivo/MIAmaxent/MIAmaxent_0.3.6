@@ -1,0 +1,34 @@
+Package: MIAmaxent
+Type: Package
+Title: Maxent Distribution Model Selection
+Version: 0.3.6
+Authors@R: c(
+    person("Julien", "Vollering", email = "julien.vollering@hisf.no", role = c("aut", "cre")),
+    person("Sabrina", "Mazzoni", email = "sabrina.mazzoni@nhm.uio.no", role = "aut"),
+    person("Rune", "Halvorsen", email = "rune.halvorsen@nhm.uio.no", role = "aut"))
+Maintainer: Julien Vollering <julien.vollering@hisf.no>
+Description: Tools for training, selecting, and evaluating maximum entropy
+    (Maxent) distribution models. This package provides tools for user-
+    controlled transformation of explanatory variables, selection of variables
+    by nested model comparison,  and flexible model evaluation and projection.
+    It is based on the strict maximum likelihood interpretation of maximum
+    entropy modelling.
+Depends: R (>= 2.10)
+License: MIT + file LICENSE
+LazyData: TRUE
+URL: https://github.com/julienvollering/MIAmaxent
+BugReports: https://github.com/julienvollering/MIAmaxent/issues
+RoxygenNote: 5.0.1
+SystemRequirements: Maxent.jar software, Java Runtime Environment (JRE)
+Imports: dplyr (>= 0.4.3), e1071 (>= 1.6-7), graphics (>= 3.3.0),
+        grDevices (>= 3.3.0), Hmisc (>= 3.17-2), raster (>= 2.5-8),
+        stats (>= 3.3.0), utils (>= 3.3.0)
+Suggests: knitr, rmarkdown, R.rsp
+VignetteBuilder: R.rsp
+NeedsCompilation: no
+Packaged: 2016-09-12 09:55:52 UTC; julienv
+Author: Julien Vollering [aut, cre],
+  Sabrina Mazzoni [aut],
+  Rune Halvorsen [aut]
+Repository: CRAN
+Date/Publication: 2016-09-12 15:08:52

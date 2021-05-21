@@ -1,0 +1,35 @@
+Package: MHCtools
+Type: Package
+Title: Analysis of MHC Data in Non-Model Species
+Version: 1.0.0
+Authors@R: person("Jacob", "Roved", email = "jacob.roved@biol.lu.se", 
+    role = c("aut", "cre"))
+Description: Nine tools for analysis of major histocompatibility complex (MHC) data in non-
+    model species. The functions are tailored for amplicon data sets that have been 
+    filtered using the 'dada2' method (for more information visit 
+    <https://benjjneb.github.io/dada2>), but even other data sets can be analysed, 
+    if the data tables are formatted according to the description in each function.
+    The ReplMatch() function matches replicates in data sets in order to evaluate 
+    genotyping success.
+    The GetReplTable() and GetReplStats() functions perform such an evaluation.
+    The HpltFind() function infers putative haplotypes from families in the data 
+    set. The GetHpltTable() and GetHpltStats() functions evaluate the accuracy of 
+    the haplotype inference.
+    The PapaDiv() function compares parent pairs in the data set and calculate their 
+    joint MHC diversity, taking into account sequence variants that occur in both 
+    parents.
+    The CreateFas() function creates a fasta file with all the sequences in the data 
+    set.
+    The CreateSamplesFas() function creates a fasta file for each sample in the data 
+    set.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: rlist (>= 0.4.6.1)
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-09-29 15:08:51 UTC; jacobroved
+Author: Jacob Roved [aut, cre]
+Maintainer: Jacob Roved <jacob.roved@biol.lu.se>
+Repository: CRAN
+Date/Publication: 2017-09-29 16:50:31 UTC

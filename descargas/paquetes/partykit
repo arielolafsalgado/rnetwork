@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package partykit</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="A Toolkit for Recursive Partytioning [R package partykit version 1.2-10]" />
+<meta name="citation_author1" content="Torsten Hothorn" />
+<meta name="citation_author2" content="Achim Zeileis" />
+<meta name="citation_publication_date" content="2020-10-12" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=partykit" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=partykit" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="partykit: A Toolkit for Recursive Partytioning" />
+<meta name="og:description" content="A toolkit with infrastructure for representing, summarizing, and visualizing tree-structured regression and classification models. This unified infrastructure can be used for reading/coercing tree models from different sources ('rpart', 'RWeka', 'PMML') yielding objects that share functionality for print()/plot()/predict() methods. Furthermore, new and improved reimplementations of conditional inference trees (ctree()) and model-based recursive partitioning (mob()) from the 'party' package are provided based on the new infrastructure. A description of this package was published by Hothorn and Zeileis (2015) &amp;lt;&lt;a href=&quot;https://jmlr.org/papers/v16/hothorn15a.html&quot;&gt;https://jmlr.org/papers/v16/hothorn15a.html&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=partykit" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>partykit: A Toolkit for Recursive Partytioning</h2>
+<p>A toolkit with infrastructure for representing, summarizing, and
+  visualizing tree-structured regression and classification models. This
+  unified infrastructure can be used for reading/coercing tree models from
+  different sources ('rpart', 'RWeka', 'PMML') yielding objects that share
+  functionality for print()/plot()/predict() methods. Furthermore, new and improved
+  reimplementations of conditional inference trees (ctree()) and model-based
+  recursive partitioning (mob()) from the 'party' package are provided based
+  on the new infrastructure. A description of this package was published
+  by Hothorn and Zeileis (2015) &lt;<a href="https://jmlr.org/papers/v16/hothorn15a.html">https://jmlr.org/papers/v16/hothorn15a.html</a>&gt;.</p>
+<table summary="Package partykit summary">
+<tr>
+<td>Version:</td>
+<td>1.2-10</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0), graphics, grid, <a href="../libcoin/index.html">libcoin</a> (&ge; 1.0-0), <a href="../mvtnorm/index.html">mvtnorm</a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>grDevices, stats, utils, <a href="../survival/index.html">survival</a>, <a href="../Formula/index.html">Formula</a> (&ge; 1.2-1), <a href="../inum/index.html">inum</a> (&ge; 1.0-0), <a href="../rpart/index.html">rpart</a> (&ge; 4.1-11)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../XML/index.html">XML</a>, <a href="../pmml/index.html">pmml</a>, <a href="../rJava/index.html">rJava</a>, <a href="../sandwich/index.html">sandwich</a>, <a href="../strucchange/index.html">strucchange</a>, <a href="../vcd/index.html">vcd</a>, <a href="../AER/index.html">AER</a>, <a href="../mlbench/index.html">mlbench</a>, <a href="../TH.data/index.html">TH.data</a> (&ge; 1.0-3), <a href="../coin/index.html">coin</a> (&ge; 1.1-0), <a href="../RWeka/index.html">RWeka</a> (&ge; 0.4-19), datasets, parallel, <a href="../psychotools/index.html">psychotools</a> (&ge; 0.3-0), <a href="../psychotree/index.html">psychotree</a>, <a href="../party/index.html">party</a> (&ge; 1.3-0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-12</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Torsten Hothorn <a href="https://orcid.org/0000-0001-8301-0471"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Heidi Seibold <a href="https://orcid.org/0000-0002-8960-9642"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Achim Zeileis <a href="https://orcid.org/0000-0003-0918-3766"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Torsten Hothorn  &#x3c;&#x54;&#x6f;&#x72;&#x73;&#x74;&#x65;&#x6e;&#x2e;&#x48;&#x6f;&#x74;&#x68;&#x6f;&#x72;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x52;&#x2d;&#x70;&#x72;&#x6f;&#x6a;&#x65;&#x63;&#x74;&#x2e;&#x6f;&#x72;&#x67;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://partykit.r-forge.r-project.org/partykit/">http://partykit.r-forge.r-project.org/partykit/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">partykit citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/MachineLearning.html">MachineLearning</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_partykit.html">partykit results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package partykit downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="partykit.pdf"> partykit.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/constparty.pdf">Constant Partying: Growing and Handling Trees with Constant Fits</a><br/>
+<a href="vignettes/ctree.pdf">ctree: Conditional Inference Trees</a><br/>
+<a href="vignettes/mob.pdf">Parties, Models, Mobsters: A New Implementation of Model-Based Recursive Partitioning in R</a><br/>
+<a href="vignettes/partykit.pdf">partykit: A Toolkit for Recursive Partytioning</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/partykit_1.2-10.tar.gz"> partykit_1.2-10.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/partykit_1.2-10.zip">partykit_1.2-10.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/partykit_1.2-10.zip">partykit_1.2-10.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/partykit_1.2-10.zip">partykit_1.2-10.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/partykit_1.2-10.tgz">partykit_1.2-10.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/partykit_1.2-10.tgz">partykit_1.2-10.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/partykit"> partykit archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package partykit reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../ATR/index.html">ATR</a>, <a href="../dtree/index.html">dtree</a>, <a href="../evtree/index.html">evtree</a>, <a href="../ggparty/index.html">ggparty</a>, <a href="../glmertree/index.html">glmertree</a>, <a href="../ICcforest/index.html">ICcforest</a>, <a href="../lagsarlmtree/index.html">lagsarlmtree</a>, <a href="../model4you/index.html">model4you</a>, <a href="../palmtree/index.html">palmtree</a>, <a href="../PPtreeViz/index.html">PPtreeViz</a>, <a href="../psychotree/index.html">psychotree</a>, <a href="../quint/index.html">quint</a>, <a href="../smbinning/index.html">smbinning</a>, <a href="../trtf/index.html">trtf</a>, <a href="../vcrpart/index.html">vcrpart</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../C443/index.html">C443</a>, <a href="../C50/index.html">C50</a>, <a href="../CGPfunctions/index.html">CGPfunctions</a>, <a href="../forestRK/index.html">forestRK</a>, <a href="../glmtree/index.html">glmtree</a>, <a href="../LLM/index.html">LLM</a>, <a href="../localModel/index.html">localModel</a>, <a href="../logiBin/index.html">logiBin</a>, <a href="../LTRCforests/index.html">LTRCforests</a>, <a href="../mboost/index.html">mboost</a>, <a href="../moreparty/index.html">moreparty</a>, <a href="../MST/index.html">MST</a>, <a href="../networktree/index.html">networktree</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/Pigengene.html"><span class="BioC">Pigengene</span></a>, <a href="../PlackettLuce/index.html">PlackettLuce</a>, <a href="../pre/index.html">pre</a>, <a href="../psica/index.html">psica</a>, <a href="../scorecardModelUtils/index.html">scorecardModelUtils</a>, <a href="../stablelearner/index.html">stablelearner</a>, <a href="../StratifiedMedicine/index.html">StratifiedMedicine</a>, <a href="../tidyrules/index.html">tidyrules</a>, <a href="../treeheatr/index.html">treeheatr</a>, <a href="../visTree/index.html">visTree</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../betareg/index.html">betareg</a>, <a href="../buildmer/index.html">buildmer</a>, <a href="../data.tree/index.html">data.tree</a>, <a href="../HSAUR2/index.html">HSAUR2</a>, <a href="../HSAUR3/index.html">HSAUR3</a>, <a href="../iml/index.html">iml</a>, <a href="../MachineShop/index.html">MachineShop</a>, <a href="../mlr3viz/index.html">mlr3viz</a>, <a href="../pdp/index.html">pdp</a>, <a href="../plotmo/index.html">plotmo</a>, <a href="../r2pmml/index.html">r2pmml</a>, <a href="../RWeka/index.html">RWeka</a>, <a href="../tbm/index.html">tbm</a>, <a href="../tidypredict/index.html">tidypredict</a>, <a href="../vip/index.html">vip</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;enhances:</td>
+<td><a href="../d3r/index.html">d3r</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=partykit"><samp>https://CRAN.R-project.org/package=partykit</samp></a>
+to link to this page.</p>
+</body>
+</html>

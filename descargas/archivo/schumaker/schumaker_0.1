@@ -1,0 +1,23 @@
+Package: schumaker
+Type: Package
+Title: Schumaker Shape-Preserving Spline
+Version: 0.1
+Date: 2015-08-05
+Author: Stuart Baumann [aut, cre], Margaryta Klymak[ctb]
+Maintainer: Stuart Baumann <Stuart.Baumann@ed.ac.uk>
+Description: This is a shape preserving spline which is guaranteed 
+    to be monotonic and concave or convex if the data is monotonic 
+    and concave or convex. It does not use any optimisation and is 
+    therefore quick and smoothly converges to a fixed point in 
+    economic dynamics problems including value function iteration. 
+    It also automatically gives the first two derivatives of the 
+    spline and options for determining behaviour when evaluated 
+    outside the interpolation domain.
+License: MIT + file LICENSE
+LazyData: TRUE
+Suggests: knitr, numDeriv, cobs, scam, microbenchmark
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2015-08-07 21:48:31 UTC; stuar
+Repository: CRAN
+Date/Publication: 2015-08-08 11:05:34

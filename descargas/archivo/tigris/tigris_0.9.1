@@ -1,0 +1,28 @@
+Package: tigris
+Type: Package
+Title: Load Census TIGER/Line Shapefiles
+Version: 0.9.1
+Date: 2020-01-10
+Authors@R: c(
+      person(given="Kyle", family="Walker", email="kyle.walker@tcu.edu", role=c("aut", "cre")),
+      person(given="Bob", family="Rudis", email="bob@rudis.net", role="ctb")
+    )
+URL: https://github.com/walkerke/tigris
+BugReports: https://github.com/walkerke/tigris/issues
+Description: Download TIGER/Line shapefiles from the United States Census Bureau 
+    (<https://www.census.gov/geo/maps-data/data/tiger-line.html>) and load into R as 'SpatialDataFrame' or 'sf' objects.
+License: MIT + file LICENSE
+LazyData: TRUE
+Encoding: UTF-8
+Depends: R (>= 3.3.0)
+Suggests: acs, testthat, ggplot2, ggthemes, leaflet, knitr, rgeos
+Imports: stringr, magrittr, rgdal, sp, utils, rappdirs, maptools, httr,
+        uuid, sf, dplyr, methods
+RoxygenNote: 7.0.2
+NeedsCompilation: no
+Packaged: 2020-01-13 16:42:28 UTC; kylewalker
+Author: Kyle Walker [aut, cre],
+  Bob Rudis [ctb]
+Maintainer: Kyle Walker <kyle.walker@tcu.edu>
+Repository: CRAN
+Date/Publication: 2020-01-13 17:10:02 UTC

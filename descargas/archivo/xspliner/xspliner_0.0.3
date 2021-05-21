@@ -1,0 +1,30 @@
+Package: xspliner
+Title: Assisted Model Building, using Surrogate Black-Box Models to
+        Train Interpretable Spline Based Additive Models
+Version: 0.0.3
+Authors@R: c(
+  person("Krystian", "Igras", email = "krystian8207@gmail.com", role = c("aut", "cre")),
+  person("Przemyslaw", "Biecek", role =  c("aut", "ths")))
+Description: Builds generalized linear model with automatic data transformation. 
+  The 'xspliner' helps to build simple, interpretable models that inherits informations provided by more complicated ones.
+  The resulting model may be treated as explanation of provided black box, that was supplied prior to the algorithm.
+Depends: R (>= 3.0)
+License: GPL
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Imports: stats, pdp, dplyr, ggplot2, mgcv, magrittr, purrr, tidyr, pROC
+        (>= 1.15.3)
+Suggests: ALEPlot, factorMerger, testthat, knitr, rmarkdown,
+        ResourceSelection, randomForest, e1071, caret, breakDown,
+        DALEX, xgboost, gridExtra, grid, ISLR
+VignetteBuilder: knitr
+URL: https://ModelOriented.github.io/xspliner/
+BugReports: https://github.com/ModelOriented/xspliner/issues
+NeedsCompilation: no
+Packaged: 2019-09-04 23:23:55 UTC; krystian
+Author: Krystian Igras [aut, cre],
+  Przemyslaw Biecek [aut, ths]
+Maintainer: Krystian Igras <krystian8207@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-09-05 04:40:02 UTC

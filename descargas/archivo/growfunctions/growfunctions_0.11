@@ -1,0 +1,30 @@
+Package: growfunctions
+Type: Package
+Title: Bayesian non-parametric dependent models for time-indexed
+        functional data
+Version: 0.11
+Date: 2014-12-09
+Author: Terrance Savitsky
+Maintainer: Terrance Savitsky <tds151@gmail.com>
+Description: Estimates a collection of time-indexed functions under
+    either of Gaussian process (GP) or intrinsic Gaussian Markov
+    random field (iGMRF) prior formulations where a Dirichlet process
+    mixture allows sub-groupings of the functions to share the same
+    covariance or precision parameters.  The GP and iGMRF formulations
+    both support any number of additive covariance or precision terms,
+    respectively, expressing either or both of multiple trend and
+    seasonality.
+License: GPL (>= 3)
+Depends: R (>= 3.1.1), Rcpp (>= 0.11.3)
+LinkingTo: Rcpp (>= 0.11.3), RcppArmadillo (>= 0.4.550.1.0)
+Imports: Matrix(>= 1.1), spam(>= 0.41-0), mvtnorm(>= 1.0-0), ggplot2(>=
+        0.9.3.1), reshape2(>= 1.2.2), scales(>= 0.2.3)
+Suggests: testthat(>= 0.8.1)
+Collate: 'MSPE.R' 'cps.R' 'gen_informative_sample.R' 'gpdpgrow.R'
+        'gmrfdpgrow.R' 'gp_car_fit_compare_facet.R' 'gp_cluster_plot.R'
+        'gp_informative_compare_plot.R' 'help.R' 'plot_cluster.R'
+        'predict_plot.R'
+Packaged: 2014-12-09 14:36:50 UTC; savitsky_t
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2014-12-09 17:38:56

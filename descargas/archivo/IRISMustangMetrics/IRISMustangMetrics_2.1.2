@@ -1,0 +1,34 @@
+Type: Package
+Package: IRISMustangMetrics
+Version: 2.1.2
+Title: Statistics and Metrics for Seismic Data
+Authors@R: c(
+    person("Jonathan", "Callahan", email="jonathan@mazamascience.com", role=c("aut")),
+    person("Rob", "Casey", email="rob@iris.washington.edu", role=c("aut")),
+    person("Mary", "Templeton", email="met@iris.washington.edu", role=c("aut")),
+    person("Gillian", "Sharer", email="gillian@iris.washington.edu", role=c("aut","cre"))
+    )
+Author: Jonathan Callahan [aut],
+  Rob Casey [aut],
+  Mary Templeton [aut],
+  Gillian Sharer [aut, cre]
+Maintainer: Gillian Sharer <gillian@iris.washington.edu>
+Depends: R (>= 3.2.0), IRISSeismic (>= 1.3.0)
+Imports: methods, RCurl, seismicRoll (>= 1.1.2), signal, stringr, XML,
+        stats, dplyr (>= 0.4.3)
+Collate: Class-Metric.R BSSUtils.R ISPAQUtils.R basicStatsMetric.R
+        correlationMetric.R crossCorrelationMetric.R
+        dailyDCOffsetMetric.R DCOffsetTimesMetric.R gapsMetric.R
+        PSDMetric.R SNRMetric.R spikesMetric.R STALTAMetric.R
+        stateOfHealthMetric.R upDownTimesMetric.R
+        transferFunctionMetric.R
+Description: Classes and functions for metrics calculation as part of the
+             'IRIS DMC MUSTANG' project. The functionality in this package 
+             builds upon the base classes of the 'IRISSeismic' package.
+             Metrics include basic statistics as well as higher level
+             'health' metrics that can help identify problematic seismometers.
+License: GPL (>= 2)
+Repository: CRAN
+NeedsCompilation: no
+Packaged: 2018-10-17 19:03:04 UTC; gillian
+Date/Publication: 2018-10-17 19:50:03 UTC

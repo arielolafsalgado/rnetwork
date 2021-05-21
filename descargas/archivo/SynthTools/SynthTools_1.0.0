@@ -1,0 +1,25 @@
+Package: SynthTools
+Title: Tools and Tests for Experiments with Partially Synthetic Data
+        Sets
+Version: 1.0.0
+Authors@R: 
+    person(given = "Charlotte",
+           family = "Looby",
+           role = c("aut", "cre"),
+           email = "clooby@rti.org")
+Description: A set of functions to support experimentation in the utility of partially synthetic data sets.  All functions compare an observed data set to one or a set of partially synthetic data sets derived from the observed data to (1) check that data sets have identical attributes, (2) calculate overall and specific variable perturbation rates, (3) check for potential logical inconsistencies, and (4) calculate confidence intervals and standard errors of desired variables in multiple imputed data sets. Confidence interval and standard error formulas have options for either synthetic data sets or multiple imputed data sets. For more information on the formulas and methods used, see Reiter & Raghunathan (2007) <doi:10.1198/016214507000000932>.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1.9000
+Depends: R (>= 2.10)
+Imports: dplyr, magrittr, Rdpack, utils
+Suggests: synthpop, testthat (>= 2.1.0), spelling
+RdMacros: Rdpack
+Language: en-US
+NeedsCompilation: no
+Packaged: 2019-09-03 18:47:50 UTC; clooby
+Author: Charlotte Looby [aut, cre]
+Maintainer: Charlotte Looby <clooby@rti.org>
+Repository: CRAN
+Date/Publication: 2019-09-04 13:40:08 UTC

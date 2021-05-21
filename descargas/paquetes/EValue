@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package EValue</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Sensitivity Analyses for Unmeasured Confounding or Selection Bias in Observational Studies and Meta-Analyses [R package EValue version 3.0.0]" />
+<meta name="citation_author1" content="Maya B. Mathur" />
+<meta name="citation_author2" content="Louisa H. Smith" />
+<meta name="citation_author3" content="Peng Ding" />
+<meta name="citation_author4" content="Tyler J. VanderWeele" />
+<meta name="citation_publication_date" content="2020-06-16" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=EValue" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=EValue" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="EValue: Sensitivity Analyses for Unmeasured Confounding or Selection Bias in Observational Studies and Meta-Analyses" />
+<meta name="og:description" content="Conducts sensitivity analyses for unmeasured confounding for either an observational study or a meta-analysis of observational studies. For a single observational study, the package reports E-values, defined as the minimum strength of association on the risk ratio scale that an unmeasured confounder would need to have with both the treatment and the outcome to fully explain away a specific treatment-outcome association, conditional on the measured covariates. You can use one of the evalues.XX() functions to compute E-values for the relevant outcome types. Outcome types include risk ratios, odds ratio with common or rare outcomes, hazard ratios with common or rare outcomes, and standardized differences in outcomes. Optionally, you can use the bias_plot() function to plot the bias factor as a function of two sensitivity parameters. (See VanderWeele &amp;amp; Ding, 2017 [&amp;lt;&lt;a href=&quot;http://annals.org/aim/article/2643434&quot;&gt;http://annals.org/aim/article/2643434&lt;/a&gt;&amp;gt;] for details.) For a meta-analysis, use the function confounded_meta to compute point estimates and inference for: (1) the proportion of studies with true causal effect sizes more extreme than a specified threshold of scientific importance; and (2) the minimum bias factor and confounding strength required to reduce to less than a specified threshold the proportion of studies with true effect sizes of scientifically significant size. The functions sens_plot() and sens_table() create plots and tables for visualizing these meta-analysis metrics across a range of bias values. (See Mathur &amp;amp; VanderWeele, 2019 [&amp;lt;&lt;a href=&quot;https://amstat.tandfonline.com/doi/full/10.1080/01621459.2018.1529598#.XKIJtOtKjdc&quot;&gt;https://amstat.tandfonline.com/doi/full/10.1080/01621459.2018.1529598#.XKIJtOtKjdc&lt;/a&gt;&amp;gt;] for details.) Most of the analyses available in this package can also be conducted using web-based graphical interfaces (for a single observational study: [&amp;lt;&lt;a href=&quot;https://evalue.hmdc.harvard.edu&quot;&gt;https://evalue.hmdc.harvard.edu&lt;/a&gt;&amp;gt;]; for a meta-analysis: [&amp;lt;&lt;a href=&quot;https://mmathur.shinyapps.io/meta_gui_2/&quot;&gt;https://mmathur.shinyapps.io/meta_gui_2/&lt;/a&gt;&amp;gt;]). " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=EValue" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>EValue: Sensitivity Analyses for Unmeasured Confounding or Selection
+Bias in Observational Studies and Meta-Analyses</h2>
+<p>Conducts sensitivity analyses for unmeasured confounding for either an observational study or a meta-analysis of observational studies. For a single observational study, the package reports E-values, defined as the minimum strength of association on the risk ratio scale that an unmeasured confounder would need to have with both the treatment and the outcome to fully explain away a specific treatment-outcome association, conditional on the measured covariates. You can use one of the evalues.XX() functions to compute E-values for the relevant outcome types. Outcome types include risk ratios, odds ratio with common or rare outcomes, hazard ratios with common or rare outcomes, and standardized differences in outcomes. Optionally, you can use the bias_plot() function to plot the bias factor as a function of two sensitivity parameters. (See VanderWeele &amp; Ding, 2017 [&lt;<a href="http://annals.org/aim/article/2643434">http://annals.org/aim/article/2643434</a>&gt;] for details.) For a meta-analysis, use the function confounded_meta to compute point estimates and inference for: (1) the proportion of studies with true causal effect sizes more extreme than a specified threshold of scientific importance; and (2) the minimum bias factor and confounding strength required to reduce to less than a specified threshold the proportion of studies with true effect sizes of scientifically significant size. The functions sens_plot() and sens_table() create plots and tables for visualizing these meta-analysis metrics across a range of bias values. (See Mathur &amp; VanderWeele, 2019 [&lt;<a href="https://amstat.tandfonline.com/doi/full/10.1080/01621459.2018.1529598#.XKIJtOtKjdc">https://amstat.tandfonline.com/doi/full/10.1080/01621459.2018.1529598#.XKIJtOtKjdc</a>&gt;] for details.) Most of the analyses available in this package can also be conducted using web-based graphical interfaces (for a single observational study: [&lt;<a href="https://evalue.hmdc.harvard.edu">https://evalue.hmdc.harvard.edu</a>&gt;]; for a meta-analysis: [&lt;<a href="https://mmathur.shinyapps.io/meta_gui_2/">https://mmathur.shinyapps.io/meta_gui_2/</a>&gt;]). </p>
+<table summary="Package EValue summary">
+<tr>
+<td>Version:</td>
+<td>3.0.0</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>stats, graphics, <a href="../ggplot2/index.html">ggplot2</a> (&ge; 2.2.1), <a href="../metafor/index.html">metafor</a>, <a href="../msm/index.html">msm</a>, <a href="../devtools/index.html">devtools</a>, methods</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-16</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Maya B. Mathur [cre, aut],
+  Louisa H. Smith [aut],
+  Peng Ding [aut],
+  Tyler J. VanderWeele [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Maya B. Mathur  &#x3c;&#x6d;&#x6d;&#x61;&#x74;&#x68;&#x75;&#x72;&#x20;&#x61;&#x74;&#x20;&#x73;&#x74;&#x61;&#x6e;&#x66;&#x6f;&#x72;&#x64;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">EValue citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/MetaAnalysis.html">MetaAnalysis</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_EValue.html">EValue results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package EValue downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="EValue.pdf"> EValue.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/meta-analysis.html">E-values for meta-analysis</a><br/>
+<a href="vignettes/multiple-bias-examples.html">Examples of multiple-bias sensitivity analysis</a><br/>
+<a href="vignettes/multiple-bias.html">E-values for multiple biases</a><br/>
+<a href="vignettes/selection-bias.html">E-values for selection bias</a><br/>
+<a href="vignettes/unmeasured-confounding.html">E-values for unmeasured confounding</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/EValue_3.0.0.tar.gz"> EValue_3.0.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/EValue_3.0.0.zip">EValue_3.0.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/EValue_3.0.0.zip">EValue_3.0.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/EValue_3.0.0.zip">EValue_3.0.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/EValue_3.0.0.tgz">EValue_3.0.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/EValue_3.0.0.tgz">EValue_3.0.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/EValue"> EValue archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=EValue"><samp>https://CRAN.R-project.org/package=EValue</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,36 @@
+Package: spacetime
+Version: 0.8-0
+Date: 2012-09-21
+Title: classes and methods for spatio-temporal data
+Authors@R: c(person("Edzer", "Pebesma", role = c("cre", "aut"), email =
+        "edzer.pebesma@uni-muenster.de"), person("Benedict", "Graeler",
+        role = "ctb"), person("Tom", "Gottfried", role = "ctb"),
+        person("Robert J.", "Hijmans", role = "ctb"))
+Depends: R (>= 2.14.0), methods, sp (>= 0.9-89), zoo, xts
+Suggests: rgdal, rgeos, raster, intervals, maps, mapdata, maptools,
+        gstat (>= 0.9-74), adehabitatLT, trip, diveMove, RColorBrewer,
+        plm, cshapes, foreign, RPostgreSQL
+Imports: lattice
+LazyData: yes
+Description: A package with classes and methods for spatio-temporal
+        data. In particular, space-time regular lattices, sparse
+        lattices, irregular data, and simple trajectories are
+        supported. Utility functions are provided for plotting data as
+        map sequences (lattice or animation) or multiple time series;
+        for spatial and temporal selection, as well as methods for
+        retrieving coordinates, for subsetting, print, summary, etc.
+License: GPL (>= 2)
+URL: http://www.52north.org/geostatistics,
+        http://www.52north.org/svn/geostatistics/main/spacetime
+Collate: Class-xts.R Class-ST.R Class-STFDF.R Class-STSDF.R
+        Class-STIDF.R Class-STLDF.R Class-STTDF.R interval.R endtime.R
+        ST-methods.R STFDF-methods.R STSDF-methods.R STIDF-methods.R
+        STLDF-methods.R STTDF-methods.R apply.R coerce.R stconstruct.R
+        plot.R stplot.R timematch.R over.R aggregate.R eof.R bind.R
+        raster.R tgrass.R
+Packaged: 2012-09-25 07:23:51 UTC; edzer
+Author: Edzer Pebesma [cre, aut], Benedict Graeler [ctb], Tom Gottfried
+        [ctb], Robert J. Hijmans [ctb]
+Maintainer: Edzer Pebesma <edzer.pebesma@uni-muenster.de>
+Repository: CRAN
+Date/Publication: 2012-09-25 08:22:32

@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package ergm</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Fit, Simulate and Diagnose Exponential-Family Models for Networks [R package ergm version 3.11.0]" />
+<meta name="citation_author1" content="Mark S. Handcock" />
+<meta name="citation_author2" content="David R. Hunter" />
+<meta name="citation_author3" content="Carter T. Butts" />
+<meta name="citation_author4" content="Steven M. Goodreau" />
+<meta name="citation_author5" content="Pavel N. Krivitsky" />
+<meta name="citation_author6" content="Martina Morris" />
+<meta name="citation_publication_date" content="2020-10-14" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=ergm" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=ergm" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="ergm: Fit, Simulate and Diagnose Exponential-Family Models for Networks" />
+<meta name="og:description" content="An integrated set of tools to analyze and simulate networks based on exponential-family random graph models (ERGMs). 'ergm' is a part of the Statnet suite of packages for network analysis." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=ergm" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>ergm: Fit, Simulate and Diagnose Exponential-Family Models for
+Networks</h2>
+<p>An integrated set of tools to analyze and simulate networks based on exponential-family random graph models (ERGMs). 'ergm' is a part of the Statnet suite of packages for network analysis.</p>
+<table summary="Package ergm summary">
+<tr>
+<td>Version:</td>
+<td>3.11.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td><a href="../network/index.html">network</a> (&ge; 1.15)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../robustbase/index.html">robustbase</a> (&ge; 0.93.5), <a href="../coda/index.html">coda</a> (&ge; 0.19.2), <a href="../trust/index.html">trust</a> (&ge; 0.1.7), <a href="../Matrix/index.html">Matrix</a> (&ge; 1.2.17), <a href="../lpSolve/index.html">lpSolve</a> (&ge; 5.6.13), parallel, methods, <a href="../MASS/index.html">MASS</a> (&ge; 7.3.51.4), <a href="../statnet.common/index.html">statnet.common</a> (&ge; 4.4.0), <a href="../rle/index.html">rle</a>, <a href="../purrr/index.html">purrr</a> (&ge;
+0.3.2), <a href="../rlang/index.html">rlang</a> (&ge; 0.3.4), <a href="../tibble/index.html">tibble</a> (&ge; 2.1.1)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../lattice/index.html">lattice</a> (&ge; 0.20.38), <a href="../latticeExtra/index.html">latticeExtra</a> (&ge; 0.6.28), <a href="../sna/index.html">sna</a> (&ge; 2.4), <a href="../latentnet/index.html">latentnet</a> (&ge; 2.9.0), <a href="../rmarkdown/index.html">rmarkdown</a> (&ge; 1.12), <a href="../knitr/index.html">knitr</a> (&ge; 1.22), <a href="../Rmpi/index.html">Rmpi</a> (&ge; 0.6.9), <a href="../testthat/index.html">testthat</a> (&ge; 2.1.1), <a href="../magrittr/index.html">magrittr</a>, <a href="../tergm/index.html">tergm</a>, <a href="../ergm.count/index.html">ergm.count</a>, <a href="../ergm.userterms/index.html">ergm.userterms</a>, <a href="../networkDynamic/index.html">networkDynamic</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-14</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Mark S. Handcock [aut],
+  David R. Hunter [aut],
+  Carter T. Butts [aut],
+  Steven M. Goodreau [aut],
+  Pavel N. Krivitsky
+    <a href="https://orcid.org/0000-0002-9101-3362"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut, cre],
+  Martina Morris [aut],
+  Li Wang [ctb],
+  Kirk Li [ctb],
+  Skye Bender-deMoll [ctb],
+  Chad Klumb [ctb],
+  Michał Bojanowski [ctb],
+  Ben Bolker [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Pavel N. Krivitsky  &#x3c;&#x70;&#x61;&#x76;&#x65;&#x6c;&#x20;&#x61;&#x74;&#x20;&#x73;&#x74;&#x61;&#x74;&#x6e;&#x65;&#x74;&#x2e;&#x6f;&#x72;&#x67;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/statnet/ergm/issues">https://github.com/statnet/ergm/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://statnet.org">https://statnet.org</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>OpenMPI</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">ergm citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/SocialSciences.html">SocialSciences</a>, <a href="../../views/gR.html">gR</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_ergm.html">ergm results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package ergm downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="ergm.pdf"> ergm.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/ergm-term-crossRef.html">ERGM terms cross-reference</a><br/>
+<a href="vignettes/nodal_attributes.html">Nodal Attribute Specification in ERGM Terms</a><br/>
+<a href="vignettes/ergm.pdf">ergm Example</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/ergm_3.11.0.tar.gz"> ergm_3.11.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/ergm_3.11.0.zip">ergm_3.11.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/ergm_3.11.0.zip">ergm_3.11.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/ergm_3.11.0.zip">ergm_3.11.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/ergm_3.11.0.tgz">ergm_3.11.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/ergm_3.11.0.tgz">ergm_3.11.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/ergm"> ergm archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package ergm reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../Bergm/index.html">Bergm</a>, <a href="../dnr/index.html">dnr</a>, <a href="../ergm.count/index.html">ergm.count</a>, <a href="../ergm.ego/index.html">ergm.ego</a>, <a href="../ergm.rank/index.html">ergm.rank</a>, <a href="../ergm.userterms/index.html">ergm.userterms</a>, <a href="../gwdegree/index.html">gwdegree</a>, <a href="../latentnet/index.html">latentnet</a>, <a href="../lvm4net/index.html">lvm4net</a>, <a href="../mlergm/index.html">mlergm</a>, <a href="../statnetWeb/index.html">statnetWeb</a>, <a href="../tergm/index.html">tergm</a>, <a href="../xergm.common/index.html">xergm.common</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../Blaunet/index.html">Blaunet</a>, <a href="../btergm/index.html">btergm</a>, <a href="../EpiModel/index.html">EpiModel</a>, <a href="../ergmito/index.html">ergmito</a>, <a href="../fergm/index.html">fergm</a>, <a href="../RDS/index.html">RDS</a>, <a href="../statnet/index.html">statnet</a>, <a href="../tergmLite/index.html">tergmLite</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;linking&nbsp;to:</td>
+<td><a href="../EpiModel/index.html">EpiModel</a>, <a href="../ergm.count/index.html">ergm.count</a>, <a href="../ergm.rank/index.html">ergm.rank</a>, <a href="../ergm.userterms/index.html">ergm.userterms</a>, <a href="../tergm/index.html">tergm</a>, <a href="../tergmLite/index.html">tergmLite</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../broom/index.html">broom</a>, <a href="../lolog/index.html">lolog</a>, <a href="../NetMix/index.html">NetMix</a>, <a href="../sand/index.html">sand</a>, <a href="../tsna/index.html">tsna</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;enhances:</td>
+<td><a href="../stargazer/index.html">stargazer</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=ergm"><samp>https://CRAN.R-project.org/package=ergm</samp></a>
+to link to this page.</p>
+</body>
+</html>

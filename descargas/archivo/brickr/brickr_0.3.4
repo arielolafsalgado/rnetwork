@@ -1,0 +1,36 @@
+Package: brickr
+Title: Emulate LEGO Bricks in 2D and 3D
+Version: 0.3.4
+Authors@R: 
+    person(given = "Ryan",
+           family = "Timpe",
+           role = c("aut", "cre"),
+           email = "ryan.timpe@gmail.com")
+Description: 
+    Generate digital LEGO models using 'tidyverse' functions. 
+    Convert image files into 2D and 3D LEGO mosaics, complete with piece counts and instructions. 
+    Render 3D models using simple data frame instructions.
+    Developed under the LEGO Group's Fair Play policy <https://www.lego.com/en-us/legal/notices-and-policies/fair-play/>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.0.2)
+Imports: ggplot2, magrittr, dplyr, tidyr, purrr, scales, farver,
+        colorspace, rgl
+Suggests: knitr, rmarkdown, gridExtra, png, jpeg, tibble, raster,
+        stringr
+RoxygenNote: 7.1.0
+URL: https://github.com/ryantimpe/brickr
+BugReports: https://github.com/ryantimpe/brickr/issues
+Collate: 'brickr.R' 'bricks-from-mosaic.R' 'bricks-from-tables.R'
+        'build-bricks-rgl.R' 'build-instructions.R' 'build-mosaic.R'
+        'collect-bricks.R' 'colors-and-themes.R' 'data.R'
+        'geom-brick-rect.R' 'image-to-mosaic.R'
+        'image-to-prep-mosaic.R' 'piece-count.R' 'utils-pipe.R'
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-05-09 19:38:37 UTC; ryant
+Author: Ryan Timpe [aut, cre]
+Maintainer: Ryan Timpe <ryan.timpe@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-05-09 20:30:02 UTC

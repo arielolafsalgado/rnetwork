@@ -1,0 +1,50 @@
+Package: raptr
+Type: Package
+Title: Representative and Adequate Prioritization Toolkit in R
+Version: 0.0.1
+Authors@R: c(person(c("Jeffrey", "O"), "Hanson", email='jeffrey.hanson@uqconnect.edu.au', role = c("aut", "cre")),
+	person(c("Jonathon", "R"), "Rhodes", role = c("aut")),
+	person(c("Hugh", "P"), "Possingham", role = c("aut")),
+	person(c("Richard", "A"), "Fuller", role = c("aut")))
+Description: Biodiversity is in crisis. The overarching aim of conservation 
+    is to preserve biodiversity patterns and processes. To this end, protected 
+    areas are established to buffer species and preserve biodiversity processes. 
+    But resources are limited and so protected areas must be cost-effective. This 
+    package contains tools to generate plans for protected areas (prioritizations),
+    using spatially explicit targets for biodiversity patterns and processes. 
+    To obtain solutions in a feasible amount  of time, this package uses the 
+    commercial 'Gurobi' software package (obtained from <http://www.gurobi.com/>). 
+    Additionally, the 'rgurobi' package can also be installed to provide extra 
+    functionality (obtained from <http://github.com/jeffreyhanson/rgurobi>).
+Imports: utils, boot, grDevices, PBSmapping, graphics, stats, scales,
+        shape, Matrix, adehabitatHR, RgoogleMaps, RandomFields,
+        RColorBrewer, plyr, parallel, doParallel, rgeos, hypervolume,
+        ks, gdalUtils, mvtnorm, ggplot2, testthat
+Depends: R(>= 3.1.0), methods, sp, rgdal, raster
+LinkingTo: Rcpp, RcppEigen, BH
+LazyData: true
+License: GPL-3
+URL: https://github.com/jeffreyhanson/raptr
+BugReports: https://github.com/jeffreyhanson/raptr/issues
+VignetteBuilder: knitr
+Suggests: knitr, dplyr, vegan, gurobi, rgurobi, gridExtra, rgl
+SystemRequirements: C++11
+Collate: 'dependencies.R' 'RcppExports.R' 'raptr-internal.R'
+        'generics.R' 'DemandPoints.R' 'misc.R' 'PlanningUnitPoints.R'
+        'AttributeSpace.R' 'AttributeSpaces.R' 'GurobiOpts.R'
+        'ManualOpts.R' 'calcSpeciesAverageInPus.R' 'calcBoundaryData.R'
+        'RapData.R' 'RapReliableOpts.R' 'RapResults.R'
+        'RapUnreliableOpts.R' 'RapUnsolved.R' 'RapSolved.R'
+        'SpatialPolygons2PolySet.R' 'data.R' 'rap.R' 'raptr.R'
+        'rrap.proportion.held.R' 'sim.pus.R' 'sim.space.R'
+        'sim.species.R' 'urap.proportion.held.R' 'zzz.R'
+RoxygenNote: 5.0.1
+NeedsCompilation: yes
+Packaged: 2016-10-27 23:48:45 UTC; uqjhans4
+Author: Jeffrey O Hanson [aut, cre],
+    Jonathon R Rhodes [aut],
+    Hugh P Possingham [aut],
+    Richard A Fuller [aut]
+Maintainer: Jeffrey O Hanson <jeffrey.hanson@uqconnect.edu.au>
+Repository: CRAN
+Date/Publication: 2016-10-28 10:51:18

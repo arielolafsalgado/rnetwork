@@ -1,0 +1,34 @@
+Package: NeuralSens
+Version: 0.0.5
+Title: Sensitivity Analysis of Neural Networks
+Date: 2019-07-11
+Description: Analysis functions to quantify inputs importance in neural network models. 
+  Functions are available for calculating and plotting the inputs importance and obtaining 
+  the activation function of each neuron layer and its derivatives. The importance of a given 
+  input is defined as the distribution of the derivatives of the output with respect to that 
+  input in each training data point.
+Author: José Portela González [aut],
+  Antonio Muñoz San Roque [aut],
+  Jaime Pizarroso Gonzalo [ctb, cre]
+Maintainer: Jaime Pizarroso Gonzalo <jpizarroso@alu.comillas.edu>
+Imports: ggplot2, gridExtra, NeuralNetTools, reshape2, caret,
+        fastDummies, stringr
+Suggests: h2o, neural, RSNNS, nnet, neuralnet
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+URL: https://github.com/JaiPizGon/NeuralSens
+BugReports: https://github.com/JaiPizGon/NeuralSens/issues
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Authors@R: c(
+    person(given = "José", family = "Portela González", 
+      email = "Jose.Portela@iit.comillas.edu", role = "aut"),
+	person(given = "Antonio", family = "Muñoz San Roque", 
+      email = "antonio.munoz@iit.comillas.edu", role = "aut"),
+    person(given = "Jaime", family = "Pizarroso Gonzalo", 
+      email = "jpizarroso@alu.comillas.edu", role = c("ctb", "cre"))
+    )
+Packaged: 2019-07-11 15:11:49 UTC; jaime
+Repository: CRAN
+Date/Publication: 2019-07-11 15:32:41 UTC

@@ -1,0 +1,36 @@
+Package: mosmafs
+Title: Multi-Objective Simultaneous Model and Feature Selection
+Description: Performs simultaneous hyperparameter tuning and
+  feature selection through both single-objective and multi-objective
+  optimization as described in Binder, Moosbauer et al. (2019) <arXiv:1912.12912>.
+  Uses the 'ecr'-package as basis but adds mixed integer
+  evolutionary strategies and multi-fidelity functionality as well as operators
+  specific for the problem of feature selection.
+Authors@R: c(
+  person("Martin", "Binder", email = "developer.mb706@mb706.com", role = c("aut", "cre")),
+  person("Susanne", "Dandl", email = "dandl.susanne@googlemail.com", role = "aut"),
+  person("Julia", "Moosbauer", email = "ju.moosbauer@googlemail.com", role = "aut"))
+URL: https://github.com/compstat-lmu/mosmafs
+BugReports: https://github.com/compstat-lmu/mosmafs/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+ByteCompile: yes
+Version: 0.1.1
+VignetteBuilder: knitr
+Depends: ecr (>= 2.1.0)
+Imports: BBmisc, checkmate (>= 1.9.0), ParamHelpers, MASS, smoof,
+        mlrCPO (>= 0.3.4), mlr, parallelMap
+Suggests: knitr, ggplot2, magrittr, testthat, rpart, parallel, praznik,
+        mlrMBO, emoa, DiceKriging, rgenoud, randomForest, digest
+RoxygenNote: 7.0.2
+Collate: 'customnsga2.R' 'datagen.R' 'ecrshims.R' 'evalmosmafs.R'
+        'filtermat.R' 'objective.R' 'utils.R' 'operators.R'
+        'plotting.R' 'selectorcpo.R' 'terminators.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2020-02-10 08:20:52 UTC; user
+Author: Martin Binder [aut, cre],
+  Susanne Dandl [aut],
+  Julia Moosbauer [aut]
+Maintainer: Martin Binder <developer.mb706@mb706.com>
+Repository: CRAN
+Date/Publication: 2020-02-19 09:10:02 UTC

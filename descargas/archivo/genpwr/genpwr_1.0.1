@@ -1,0 +1,36 @@
+Package: genpwr
+Title: Power Calculations Under Genetic Model Misspecification
+Version: 1.0.1
+Authors@R: c(person("Camille", "Moore", email = "moorec@njhealth.org", 
+    role = c("aut", "cre")), person("Sean", "Jacobson", email = "jacobsons@njhealth.org",
+    role = "aut"))
+Description: Power and sample size calculations for genetic association studies allowing 
+    for misspecification of the model of genetic susceptibility.
+    Power and/or sample size can be calculated for logistic (case/control study design) 
+    and linear (continuous phenotype) regression models, using additive, dominant, 
+    recessive or degree of freedom coding of the genetic covariate while assuming 
+    a true dominant, recessive or additive genetic effect. In addition, power and 
+    sample size calculations can be performed for gene by environment interactions.  
+    These methods are extensions of Gauderman (2002) 
+    <doi:10.1093/aje/155.5.478> and Gauderman (2002) <doi:10.1002/sim.973>
+    and are described in: 
+    Moore CM, Jacobson S, Fingerlin TE. Power and Sample Size Calculations 
+    for Genetic Association Studies in the Presence of Genetic Model Misspecification. 
+    American Society of Human Genetics. 
+    October 2018, San Diego. 
+    Poster Presentation: <http://www.ashg.org/2018meeting/listing/PosterSessions.shtml>.
+Depends: R (>= 3.5.0)
+License: GPL-3
+Imports: ggplot2, nleqslv, MASS, stats, utils
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-09-17 19:12:06 UTC; jacobsons
+Author: Camille Moore [aut, cre],
+  Sean Jacobson [aut]
+Maintainer: Camille Moore <moorec@njhealth.org>
+Repository: CRAN
+Date/Publication: 2019-09-17 19:40:02 UTC

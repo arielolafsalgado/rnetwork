@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package ghypernet</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Fit and Simulate Generalised Hypergeometric Ensembles of Graphs [R package ghypernet version 1.0.1]" />
+<meta name="citation_author1" content="Giona Casiraghi" />
+<meta name="citation_author2" content="Vahan Nanumyan" />
+<meta name="citation_author3" content="Laurence Brandenberger" />
+<meta name="citation_publication_date" content="2020-10-21" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=ghypernet" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=ghypernet" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="ghypernet: Fit and Simulate Generalised Hypergeometric Ensembles of Graphs" />
+<meta name="og:description" content="Provides functions for model fitting and selection of generalised hypergeometric ensembles of random graphs (gHypEG). To learn how to use it, check the vignettes for a quick tutorial. Please reference its use as Casiraghi, G., Nanumyan, V. (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.5281%2Fzenodo.2555300&quot;&gt;doi:10.5281/zenodo.2555300&lt;/a&gt;&amp;gt; together with those relevant references from the one listed below. The package is based on the research developed at the Chair of Systems Design, ETH Zurich. Casiraghi, G., Nanumyan, V., Scholtes, I., Schweitzer, F. (2016) &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1607.02441&quot;&gt;arXiv:1607.02441&lt;/a&gt;&amp;gt;. Casiraghi, G., Nanumyan, V., Scholtes, I., Schweitzer, F. (2017) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2F978-3-319-67256-4_11&quot;&gt;doi:10.1007/978-3-319-67256-4_11&lt;/a&gt;&amp;gt;. Casiraghi, G., (2017) &amp;lt;arxiv:1702.02048&amp;gt; Casiraghi, G., Nanumyan, V. (2018) &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1810.06495&quot;&gt;arXiv:1810.06495&lt;/a&gt;&amp;gt;. Brandenberger, L., Casiraghi, G., Nanumyan, V., Schweitzer, F. (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1145%2F3341161.3342926&quot;&gt;doi:10.1145/3341161.3342926&lt;/a&gt;&amp;gt; Casiraghi, G. (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs41109-019-0241-1&quot;&gt;doi:10.1007/s41109-019-0241-1&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=ghypernet" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>ghypernet: Fit and Simulate Generalised Hypergeometric Ensembles of Graphs</h2>
+<p>Provides functions for model fitting and selection of generalised hypergeometric ensembles of random graphs (gHypEG).
+    To learn how to use it, check the vignettes for a quick tutorial.
+    Please reference its use as Casiraghi, G., Nanumyan, V. (2019) &lt;<a href="https://doi.org/10.5281%2Fzenodo.2555300">doi:10.5281/zenodo.2555300</a>&gt;
+    together with those relevant references from the one listed below.
+    The package is based on the research developed at the Chair of Systems Design, ETH Zurich.
+    Casiraghi, G., Nanumyan, V., Scholtes, I., Schweitzer, F. (2016) &lt;<a href="https://arxiv.org/abs/1607.02441">arXiv:1607.02441</a>&gt;.
+    Casiraghi, G., Nanumyan, V., Scholtes, I., Schweitzer, F. (2017) &lt;<a href="https://doi.org/10.1007%2F978-3-319-67256-4_11">doi:10.1007/978-3-319-67256-4_11</a>&gt;.
+    Casiraghi, G., (2017) &lt;arxiv:1702.02048&gt;
+    Casiraghi, G., Nanumyan, V. (2018) &lt;<a href="https://arxiv.org/abs/1810.06495">arXiv:1810.06495</a>&gt;.
+    Brandenberger, L., Casiraghi, G., Nanumyan, V., Schweitzer, F. (2019) &lt;<a href="https://doi.org/10.1145%2F3341161.3342926">doi:10.1145/3341161.3342926</a>&gt;
+    Casiraghi, G. (2019) &lt;<a href="https://doi.org/10.1007%2Fs41109-019-0241-1">doi:10.1007/s41109-019-0241-1</a>&gt;.</p>
+<table summary="Package ghypernet summary">
+<tr>
+<td>Version:</td>
+<td>1.0.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../pbmcapply/index.html">pbmcapply</a>, <a href="../plyr/index.html">plyr</a>, <a href="../numbers/index.html">numbers</a>, <a href="../purrr/index.html">purrr</a>, <a href="../extraDistr/index.html">extraDistr</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../rlang/index.html">rlang</a>, <a href="../reshape2/index.html">reshape2</a>, <a href="../rootSolve/index.html">rootSolve</a>, methods, <a href="../texreg/index.html">texreg</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../BiasedUrn/index.html">BiasedUrn</a>, <a href="../igraph/index.html">igraph</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../ggraph/index.html">ggraph</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-21</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Giona Casiraghi <a href="https://orcid.org/0000-0003-0233-5747"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Vahan Nanumyan <a href="https://orcid.org/0000-0001-9054-3217"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Laurence Brandenberger [aut],
+  Giacomo Vaccario [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Giona Casiraghi  &#x3c;&#x67;&#x69;&#x6f;&#x6e;&#x61;&#x20;&#x61;&#x74;&#x20;&#x65;&#x74;&#x68;&#x7a;&#x2e;&#x63;&#x68;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/AGPL-3">AGPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://ghyper.net">https://ghyper.net</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-GB</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_ghypernet.html">ghypernet results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package ghypernet downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="ghypernet.pdf"> ghypernet.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Significantlinks.html">Finding Significant Links with gHypEGs</a><br/>
+<a href="vignettes/Tutorial_NRM.html">An introduction to generalized hypergeometric ensembles (gHypEG) regressions.</a><br/>
+<a href="vignettes/tutorial.html">ghypernet Tutorial</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/ghypernet_1.0.1.tar.gz"> ghypernet_1.0.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/ghypernet_1.0.1.zip">ghypernet_1.0.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/ghypernet_1.0.1.zip">ghypernet_1.0.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/ghypernet_1.0.1.zip">ghypernet_1.0.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/ghypernet_1.0.1.tgz">ghypernet_1.0.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/ghypernet_1.0.1.tgz">ghypernet_1.0.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/ghypernet"> ghypernet archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=ghypernet"><samp>https://CRAN.R-project.org/package=ghypernet</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,28 @@
+Package: CAST
+Type: Package
+Title: 'caret' Applications for Spatial-Temporal Models
+Version: 0.3.1
+Authors@R: c(person("Hanna", "Meyer", email = "hanna.meyer@geo.uni-marburg.de", role = c("cre", "aut")),
+             person("Chris", "Reudenbach", role = c("ctb")),
+             person("Marvin", "Ludwig", role = c("ctb")),
+             person("Thomas", "Nauss", role = c("ctb")))
+Author: Hanna Meyer [cre, aut],
+  Chris Reudenbach [ctb],
+  Marvin Ludwig [ctb],
+  Thomas Nauss [ctb]
+Maintainer: Hanna Meyer <hanna.meyer@geo.uni-marburg.de>
+Description: Supporting functionality to run 'caret' with spatial or spatial-temporal data. 'caret' is a frequently used package for model training and prediction using machine learning. This package includes functions to improve spatial-temporal modelling tasks using 'caret'. It prepares data for Leave-Location-Out and Leave-Time-Out cross-validation which are target-oriented validation strategies for spatial-temporal models. To decrease overfitting and improve model performances, the package implements a forward feature selection that selects suitable predictor variables in view to their contribution to the target-oriented performance.
+License: GPL (>= 3) | file LICENSE
+URL: https://github.com/environmentalinformatics-marburg/CAST
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.1.0)
+Imports: caret, stats, utils, ggplot2, graphics
+Suggests: doParallel, GSIF, randomForest, lubridate, raster, sp, knitr,
+        mapview, rmarkdown
+RoxygenNote: 6.1.0
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-11-19 09:54:50 UTC; hanna
+Repository: CRAN
+Date/Publication: 2018-11-19 11:10:03 UTC

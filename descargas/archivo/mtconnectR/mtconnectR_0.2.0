@@ -1,0 +1,34 @@
+Package: mtconnectR
+Type: Package
+Title: Read Data from Delimited MTConnect Data Files
+Version: 0.2.0
+Date: 2016-03-09
+Authors@R: c(
+  person("Alex", "Joseph", email = "alex@systeminsights.com", role = c("aut", "cre")),
+  person("Sainath", "Adapa", email = "sainath@systeminsights.com", role = c("aut")),
+  person("Nitin", "Madasu", email = "nitin@systeminsights.com", role = c("aut"))
+  )
+Maintainer: Alex Joseph <alex@systeminsights.com>
+Description: Read data in the 'MTConnect'<http://www.mtconnect.org/> standard.
+    You can use the package to read data from historical 'MTConnect logs' along
+    with the 'devices.xml' describing
+    the device. The data is organised into a 'MTConnectDevice' S4 data structure
+    and some convenience methods are also provided for basic read/view operations.
+Depends: R (>= 3.0.0)
+Imports: methods, data.table (>= 1.9.6), XML (>= 3.98), stringr (>=
+        1.0), plyr (>= 1.8.3), dplyr (>= 0.4.3)
+License: AGPL-3
+LazyData: TRUE
+Collate: common.R MTCDataItem.R merge.R MTCCycle.R MTCDevice.R
+        deviceXML.R dataExtraction_mtc.R dataExtraction_gcode.R zzz.R
+RoxygenNote: 5.0.1
+Suggests: knitr, rmarkdown, testthat, roxygen2
+BuildVignettes: yes
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2016-03-09 00:31:10 UTC; alexsanjoseph
+Author: Alex Joseph [aut, cre],
+  Sainath Adapa [aut],
+  Nitin Madasu [aut]
+Repository: CRAN
+Date/Publication: 2016-03-09 01:36:05

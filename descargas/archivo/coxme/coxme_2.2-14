@@ -1,0 +1,25 @@
+Title: Mixed Effects Cox Models
+Priority: optional
+Package: coxme
+Version: 2.2-14
+Depends: survival (>= 2.36.14), methods, bdsmatrix(>= 1.3), R(>= 2.10)
+Imports: nlme, Matrix (>= 1.0)
+Suggests: mvtnorm, kinship2
+LinkingTo: bdsmatrix
+LazyData: Yes
+LazyLoad: Yes
+Authors@R: person(c("Terry", "M."), "Therneau", role=c("aut", "cre"),
+	          email="therneau@mayo.edu")
+Description: This package fits Cox proportional hazards models containing both 
+ fixed and random effects.  The random effects can have a general form, of which
+ familial interactions (a "kinship" matrix) is a particular special case. 
+ Note that the simplest case of a mixed effects Cox model, i.e. a single random 
+ per-group intercept, is also called a "frailty" model.  The approach is based
+ on Rippatti and Palgren, Biometrics 2002.
+License: LGPL-2
+NeedsCompilation: yes
+Packaged: 2019-07-03 17:31:43 UTC; therneau
+Author: Terry M. Therneau [aut, cre]
+Maintainer: Terry M. Therneau <therneau@mayo.edu>
+Repository: CRAN
+Date/Publication: 2019-07-04 05:10:05 UTC

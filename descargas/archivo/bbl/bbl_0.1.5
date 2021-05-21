@@ -1,0 +1,28 @@
+Package: bbl
+Title: Boltzmann Bayes Learner
+Version: 0.1.5
+Authors@R: c(person("Jun","Woo",role=c("aut","cre"),
+                     email="jwoo@umn.edu",
+                     comment=c(ORCID="0000-0003-3220-2064")), 
+             person("Jinhua","Wang", role=c("ctb")))
+Maintainer: Jun Woo <jwoo@umn.edu>
+Depends: R (>= 3.6.0)
+Imports: methods, stats, utils, Rcpp (>= 0.12.16), pROC
+Description: Supervised learning using Boltzmann Bayes model inference, 
+    which extends naive Bayes model to include interactions. Enables 
+    classification of data into multiple response groups based on a large 
+    number of discrete predictors that can take factor values of 
+    heterogeneous levels. Either pseudo-likelihood and mean field 
+    inference can be used with L2 regularization, cross-validation, and 
+    prediction on new data. 
+    Woo et al. (2016) <doi:10.1186/s12864-016-2871-3>.
+License: GPL (>= 2)
+LinkingTo: Rcpp
+Encoding: UTF-8
+RoxygenNote: 6.1.1
+NeedsCompilation: yes
+Packaged: 2019-09-03 19:47:05 UTC; jwoo
+Author: Jun Woo [aut, cre] (<https://orcid.org/0000-0003-3220-2064>),
+  Jinhua Wang [ctb]
+Repository: CRAN
+Date/Publication: 2019-09-04 13:40:05 UTC

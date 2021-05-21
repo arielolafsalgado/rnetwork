@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package GEint</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Misspecified Models for Gene-Environment Interaction [R package GEint version 0.1.5]" />
+<meta name="citation_author" content="Ryan Sun" />
+<meta name="citation_publication_date" content="2019-01-15" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=GEint" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=GEint" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="GEint: Misspecified Models for Gene-Environment Interaction" />
+<meta name="og:description" content="First major functionality is to compute the bias in misspecified linear gene-environment interaction models. The most generalized function for this objective is GE_bias(). However GE_bias() requires specification of many higher order moments of covariates in the model. If users are unsure about how to calculate/estimate these higher order moments, it may be easier to use GE_bias_normal_squaredmis(). This function places many more assumptions on the covariates (most notably that they are all jointly generated from a multivariate normal distribution) and is thus able to automatically calculate many of the higher order moments automatically, necessitating only that the user specify some covariances. There are also functions to solve for the bias through simulation and non-linear equation solvers, these can be used to check your work. Second major functionality is to implement the Bootstrap Inference with Correct Sandwich (BICS) testing procedure, which we have found to provide better finite-sample performance than other inference procedures for testing GxE interaction. More details on these functions are available in Sun, Carroll, Christiani, and Lin, &quot;Testing for Gene-Environment Interaction Under Exposure Misspecification&quot; (In Revision)." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=GEint" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>GEint: Misspecified Models for Gene-Environment Interaction</h2>
+<p>First major functionality is to compute the bias in misspecified linear gene-environment interaction models. The most 
+	generalized function for this objective is GE_bias().  However GE_bias() requires specification of many
+	higher order moments of covariates in the model.  If users are unsure about how to calculate/estimate
+	these higher order moments, it may be easier to use GE_bias_normal_squaredmis().  This function places
+	many more assumptions on the covariates (most notably that they are all jointly generated from a multivariate
+	normal distribution) and is thus able to automatically calculate many of the higher order moments automatically,
+	necessitating only that the user specify some covariances.  There are also functions to solve for the bias 
+	through simulation and non-linear equation solvers, these can be used to check your work. Second major functionality
+	is to implement the Bootstrap Inference with Correct Sandwich (BICS) testing procedure, which we have found to provide better finite-sample
+	performance than other inference procedures for testing GxE interaction.  More details on these functions 
+	are available in Sun, Carroll, Christiani, and Lin, "Testing for Gene-Environment Interaction Under Exposure Misspecification"
+	(In Revision).</p>
+<table summary="Package GEint summary">
+<tr>
+<td>Version:</td>
+<td>0.1.5</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../mvtnorm/index.html">mvtnorm</a>, <a href="../bindata/index.html">bindata</a>, <a href="../nleqslv/index.html">nleqslv</a>, <a href="../pracma/index.html">pracma</a>, <a href="../speedglm/index.html">speedglm</a>, <a href="../rje/index.html">rje</a>, <a href="../geepack/index.html">geepack</a>, stats</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-01-15</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Ryan Sun [aut, cre],
+  Richard Barfield [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Ryan Sun  &#x3c;&#x72;&#x79;&#x61;&#x6e;&#x73;&#x75;&#x6e;&#x2e;&#x77;&#x6f;&#x72;&#x6b;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_GEint.html">GEint results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package GEint downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="GEint.pdf"> GEint.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/GEint_example.html">Vignette Title</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/GEint_0.1.5.tar.gz"> GEint_0.1.5.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/GEint_0.1.5.zip">GEint_0.1.5.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/GEint_0.1.5.zip">GEint_0.1.5.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/GEint_0.1.5.zip">GEint_0.1.5.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/GEint_0.1.5.tgz">GEint_0.1.5.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/GEint_0.1.5.tgz">GEint_0.1.5.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/GEint"> GEint archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=GEint"><samp>https://CRAN.R-project.org/package=GEint</samp></a>
+to link to this page.</p>
+</body>
+</html>

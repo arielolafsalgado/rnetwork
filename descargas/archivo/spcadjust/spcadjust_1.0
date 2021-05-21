@@ -1,0 +1,21 @@
+Package: spcadjust
+Version: 1.0
+Date: 2015-11-20
+Title: Functions for Calibrating Control Charts
+Author: Axel Gandy <a.gandy@imperial.ac.uk> and Jan Terje Kvaloy
+    <jan.t.kvaloy@uis.no>.
+Maintainer: Axel Gandy <a.gandy@imperial.ac.uk>
+Depends: R (>= 2.5.0)
+Imports: methods, stats, utils, graphics
+Description: Calibration of thresholds of control charts such as
+    CUSUM charts based on past data, taking estimation error into account.
+License: GPL (>= 2)
+Suggests: knitr, parallel, testthat
+VignetteBuilder: knitr
+Collate: 'CUSUMlib.R' 'model.R' 'main.R' 'CUSUM.R' 'EWMAlib.R' 'EWMA.R'
+        'lm.R' 'logreg.R' 'shewhart.R'
+RoxygenNote: 5.0.1
+Packaged: 2015-11-20 13:42:37 UTC; agandy
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2015-11-21 15:56:31

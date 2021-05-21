@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package analysisPipelines</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Compose Interoperable Analysis Pipelines &amp;amp; Put Them in Production [R package analysisPipelines version 1.0.2]" />
+<meta name="citation_author1" content="Naren Srinivasan" />
+<meta name="citation_author2" content="Zubin Dowlaty" />
+<meta name="citation_publication_date" content="2020-06-12" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=analysisPipelines" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=analysisPipelines" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="analysisPipelines: Compose Interoperable Analysis Pipelines &amp;amp; Put Them in Production" />
+<meta name="og:description" content="Enables data scientists to compose pipelines of analysis which consist of data manipulation, exploratory analysis &amp;amp; reporting, as well as modeling steps. Data scientists can use tools of their choice through an R interface, and compose interoperable pipelines between R, Spark, and Python. Credits to Mu Sigma for supporting the development of the package. Note - To enable pipelines involving Spark tasks, the package uses the 'SparkR' package. The SparkR package needs to be installed to use Spark as an engine within a pipeline. SparkR is distributed natively with Apache Spark and is not distributed on CRAN. The SparkR version needs to directly map to the Spark version (hence the native distribution), and care needs to be taken to ensure that this is configured properly. To install SparkR from Github, run the following command if you know the Spark version: 'devtools::install_github('apache/spark@v2.x.x', subdir='R/pkg')'. The other option is to install SparkR by running the following terminal commands if Spark has already been installed: '$ export SPARK_HOME=/path/to/spark/directory &amp;amp;&amp;amp; cd $SPARK_HOME/R/lib/SparkR/ &amp;amp;&amp;amp; R -e &quot;devtools::install('.')&quot;'." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=analysisPipelines" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>analysisPipelines: Compose Interoperable Analysis Pipelines &amp; Put Them in
+Production</h2>
+<p>Enables data scientists to compose pipelines of analysis which consist of data manipulation, exploratory analysis &amp; reporting, as well as modeling steps. Data scientists can use tools of their choice through an R interface, and compose interoperable pipelines between R, Spark, and Python.
+    Credits to Mu Sigma for supporting the development of the package.
+    Note - To enable pipelines involving Spark tasks, the package uses the 'SparkR' package. 
+    The SparkR package needs to be installed to use Spark as an engine within a pipeline. SparkR is distributed natively with Apache Spark and is not distributed on CRAN. The SparkR version needs to directly map to the Spark version (hence the native distribution), and care needs to be taken to ensure that this is configured properly.
+    To install SparkR from Github, run the following command if you know the Spark version: 'devtools::install_github('apache/spark@v2.x.x', subdir='R/pkg')'.
+    The other option is to install SparkR by running the following terminal commands if Spark has already been installed: '$ export SPARK_HOME=/path/to/spark/directory &amp;&amp; cd $SPARK_HOME/R/lib/SparkR/ &amp;&amp; R -e "devtools::install('.')"'.</p>
+<table summary="Package analysisPipelines summary">
+<tr>
+<td>Version:</td>
+<td>1.0.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.4.0), <a href="../magrittr/index.html">magrittr</a>, <a href="../pipeR/index.html">pipeR</a>, methods</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../ggplot2/index.html">ggplot2</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../futile.logger/index.html">futile.logger</a>, <a href="../RCurl/index.html">RCurl</a>, <a href="../rlang/index.html">rlang</a> (&ge; 0.3.0), <a href="../proto/index.html">proto</a>, <a href="../purrr/index.html">purrr</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../plotly/index.html">plotly</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, parallel, <a href="../visNetwork/index.html">visNetwork</a>, <a href="../rjson/index.html">rjson</a>, <a href="../DT/index.html">DT</a>, <a href="../shiny/index.html">shiny</a>, <a href="../R.devices/index.html">R.devices</a>, <a href="../corrplot/index.html">corrplot</a>, <a href="../car/index.html">car</a>, <a href="../foreign/index.html">foreign</a></td>
+</tr>
+<tr>
+<td>Enhances:</td>
+<td>SparkR, <a href="../reticulate/index.html">reticulate</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-12</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Naren Srinivasan [aut],
+  Zubin Dowlaty [aut],
+  Sanjay [ctb],
+  Neeratyoy Mallik [ctb],
+  Anoop S [ctb],
+  Mu Sigma, Inc. [cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>"Mu Sigma, Inc."  &#x3c;&#x69;&#x72;&#x64;&#x2e;&#x65;&#x78;&#x70;&#x65;&#x72;&#x69;&#x65;&#x6e;&#x63;&#x65;&#x6c;&#x61;&#x62;&#x20;&#x61;&#x74;&#x20;&#x6d;&#x75;&#x2d;&#x73;&#x69;&#x67;&#x6d;&#x61;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/Mu-Sigma/analysis-pipelines/issues">https://github.com/Mu-Sigma/analysis-pipelines/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/Mu-Sigma/analysis-pipelines">https://github.com/Mu-Sigma/analysis-pipelines</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_analysisPipelines.html">analysisPipelines results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package analysisPipelines downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="analysisPipelines.pdf"> analysisPipelines.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Analysis_pipelines_for_working_with_Python_functions.html">Analysis pipelines for working with Python functions</a><br/>
+<a href="vignettes/Analysis_pipelines_for_working_with_R_dataframes.html">Analysis pipelines for working with R data frames</a><br/>
+<a href="vignettes/Analysis_pipelines_for_working_with_sparkR.html">Analysis pipelines for working with Spark DataFrames for batch analyses</a><br/>
+<a href="vignettes/Interoperable_Pipelines.html">Interoperable analysis pipelines</a><br/>
+<a href="vignettes/Meta_Pipelines.html">Meta-pipelines</a><br/>
+<a href="vignettes/Streaming_pipelines_for_working_Apache_Spark_Structured_Streaming.html">Streaming Analysis Pipelines for working with Apache Spark Structured Streaming</a><br/>
+<a href="vignettes/Using_pipelines_inside_shiny_widgets.html">Using pipelines inside Shiny widgets or apps</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/analysisPipelines_1.0.2.tar.gz"> analysisPipelines_1.0.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/analysisPipelines_1.0.2.zip">analysisPipelines_1.0.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/analysisPipelines_1.0.2.zip">analysisPipelines_1.0.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/analysisPipelines_1.0.2.zip">analysisPipelines_1.0.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/analysisPipelines_1.0.2.tgz">analysisPipelines_1.0.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/analysisPipelines_1.0.2.tgz">analysisPipelines_1.0.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/analysisPipelines"> analysisPipelines archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=analysisPipelines"><samp>https://CRAN.R-project.org/package=analysisPipelines</samp></a>
+to link to this page.</p>
+</body>
+</html>

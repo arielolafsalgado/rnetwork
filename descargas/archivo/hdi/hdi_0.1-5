@@ -1,0 +1,20 @@
+Package: hdi
+Type: Package
+Title: High-Dimensional Inference
+Version: 0.1-5
+Date: 2016-03-11
+Author: Lukas Meier [aut, cre], Ruben Dezeure [aut], Nicolai Meinshausen [aut], Martin Maechler [aut], Peter Buehlmann [aut]
+Maintainer: Lukas Meier <meier@stat.math.ethz.ch>
+Description: Implementation of multiple approaches to perform inference in high-dimensional models.
+Depends: scalreg
+DependsNote: scalreg does not correctly import lars etc, so we need to
+        depend on it
+Imports: grDevices, graphics, stats, parallel, MASS, glmnet, linprog
+Suggests: Matrix
+SuggestsNote: for tests only
+Encoding: UTF-8
+License: GPL
+NeedsCompilation: no
+Packaged: 2016-03-11 11:00:49 UTC; meierluk
+Repository: CRAN
+Date/Publication: 2016-03-11 19:19:23

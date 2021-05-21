@@ -1,0 +1,30 @@
+Package: implyr
+Type: Package
+Title: R Interface for Apache Impala
+Version: 0.1.0
+Authors@R: c(
+    person("Ian", "Cook", email = "ian@cloudera.com", role = c("aut", "cre")),
+    person(family = "Cloudera", role = c("cph"))
+    )
+Maintainer: Ian Cook <ian@cloudera.com>
+Description: 'SQL' back-end to 'dplyr' for Apache Impala (incubating), the 
+    massively parallel processing query engine for Apache 'Hadoop'. Impala 
+    enables low-latency 'SQL' queries on data stored in the 'Hadoop' 
+    Distributed File System '(HDFS)', Apache 'HBase', Apache 'Kudu', and 
+    Amazon Simple Storage Service '(S3)'. See <https://impala.apache.org> 
+    for more information about Impala.
+URL: https://github.com/ianmcook/implyr
+BugReports: https://github.com/ianmcook/implyr/issues
+Depends: R (>= 3.1.2), DBI (>= 0.4.1), dplyr (>= 0.5.0)
+Imports: assertthat, methods, utils
+Suggests: RJDBC, odbc, nycflights13
+SystemRequirements: Impala driver to support a 'DBI'-compatible R
+        interface
+NeedsCompilation: no
+License: Apache License 2.0 | file LICENSE
+RoxygenNote: 6.0.1
+Packaged: 2017-03-24 12:55:04 UTC; icook
+Author: Ian Cook [aut, cre],
+  Cloudera [cph]
+Repository: CRAN
+Date/Publication: 2017-03-24 19:07:19 UTC

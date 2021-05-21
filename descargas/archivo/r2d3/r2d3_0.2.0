@@ -1,0 +1,34 @@
+Package: r2d3
+Type: Package
+Title: Interface to 'D3' Visualizations
+Version: 0.2.0
+Authors@R: c(
+    person("Javier", "Luraschi", email = "javier@rstudio.com", role = c("aut", "cre")),
+    person("JJ", "Allaire", role = c("aut")),
+    person("Mike", "Bostock", role = c("ctb", "cph"), comment = "d3.js library, http://d3js.org"),
+    person(family = "RStudio", role = c("cph"))
+    )
+Maintainer: Javier Luraschi <javier@rstudio.com>
+Description: Suite of tools for using 'D3', a library for producing dynamic, interactive data
+  visualizations. Supports translating objects into 'D3' friendly data structures, rendering
+  'D3' scripts, publishing 'D3' visualizations, incorporating 'D3' in R Markdown, creating
+  interactive 'D3' applications with Shiny, and distributing 'D3' based 'htmlwidgets' in R
+  packages.
+License: BSD_3_clause + file LICENSE
+Encoding: UTF-8
+LazyData: TRUE
+Depends: R (>= 3.1.2)
+Imports: htmlwidgets (>= 1.2), htmltools, jsonlite, rstudioapi
+Suggests: knitr, rmarkdown, shiny, shinytest, testthat, webshot
+RoxygenNote: 6.0.1
+URL: https://github.com/rstudio/r2d3
+BugReports: https://github.com/rstudio/r2d3/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-05-28 15:25:25 UTC; javierluraschi
+Author: Javier Luraschi [aut, cre],
+  JJ Allaire [aut],
+  Mike Bostock [ctb, cph] (d3.js library, http://d3js.org),
+  RStudio [cph]
+Repository: CRAN
+Date/Publication: 2018-05-29 09:23:22 UTC

@@ -1,0 +1,45 @@
+Package: dynwrap
+Type: Package
+Title: Representing and Inferring Single-Cell Trajectories
+Description: Provides functionality to infer trajectories from single-cell data,
+  represent them into a common format, and adapt them. Other biological information
+  can also be added, such as cellular grouping, RNA velocity and annotation.
+  Saelens et al. (2019) <doi:10.1038/s41587-019-0071-9>.
+Version: 1.2.0
+Authors@R: c(
+    person(
+      "Robrecht", 
+      "Cannoodt", 
+      email = "rcannood@gmail.com", 
+      role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0003-3641-729X", github = "rcannood")
+    ),
+    person(
+      "Wouter", 
+      "Saelens", 
+      email = "wouter.saelens@ugent.be", 
+      role = c("aut"), 
+      comment = c(ORCID = "0000-0002-7114-6248", github = "zouter")
+    )
+  )
+URL: https://github.com/dynverse/dynwrap
+BugReports: https://github.com/dynverse/dynwrap/issues
+License: MIT + file LICENSE
+LazyData: TRUE
+RoxygenNote: 7.0.2
+Encoding: UTF-8
+Depends: R (>= 3.0.0)
+Imports: assertthat, babelwhale, crayon, dplyr, dynutils (>= 1.0.3),
+        dynparam, FNN, igraph, glue, magrittr, Matrix, methods, purrr,
+        processx, readr, stringr, reshape2, testthat, tibble, tidyr,
+        yaml
+Suggests: dyndimred, knitr, pkgload, ranger, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-03-09 12:48:59 UTC; rcannood
+Author: Robrecht Cannoodt [aut, cre] (<https://orcid.org/0000-0003-3641-729X>,
+    rcannood),
+  Wouter Saelens [aut] (<https://orcid.org/0000-0002-7114-6248>, zouter)
+Maintainer: Robrecht Cannoodt <rcannood@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-03-09 15:10:02 UTC

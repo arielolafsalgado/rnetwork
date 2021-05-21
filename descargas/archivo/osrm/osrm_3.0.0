@@ -1,0 +1,31 @@
+Package: osrm
+Type: Package
+Title: Interface Between R and the OpenStreetMap-Based Routing Service
+        OSRM
+Version: 3.0.0
+Date: 2016-05-09
+Authors@R: c(person("Timothée", "Giraud", email = "timothee.giraud@ums-riate.fr", role = c("cre","aut")),
+    person("Robin", "Cura", role = c("ctb")), person("Matthieu", "Viry", role = c("ctb")))
+Description: An interface between R and the OSRM API. OSRM is a routing
+    service based on OpenStreetMap data. See <http://project-osrm.org/> for more
+    information. A public API exists but one can run its own instance. This package
+    allows to compute distances (travel time and kilometric distance) between points
+    and travel time matrices.
+License: GPL-3
+LazyData: TRUE
+Imports: jsonlite, sp, RCurl, utils, stats, bitops, rgeos, methods,
+        gepaf, raster
+Depends: R (>= 2.10)
+Suggests: cartography
+URL: https://github.com/rCarto/osrm
+BugReports: https://github.com/rCarto/osrm/issues
+Encoding: UTF-8
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-05-09 09:58:29 UTC; tg
+Author: Timothée Giraud [cre, aut],
+  Robin Cura [ctb],
+  Matthieu Viry [ctb]
+Maintainer: Timothée Giraud <timothee.giraud@ums-riate.fr>
+Repository: CRAN
+Date/Publication: 2016-05-09 17:53:04

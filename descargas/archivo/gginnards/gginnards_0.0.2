@@ -1,0 +1,35 @@
+Package: gginnards
+Type: Package
+Title: Explore the Innards of 'ggplot2' Objects
+Version: 0.0.2
+Date: 2019-02-23
+Authors@R: 
+    c(
+    person("Pedro J.", "Aphalo", email = "pedro.aphalo@helsinki.fi", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-3385-972X"))    )
+Maintainer: Pedro J. Aphalo <pedro.aphalo@helsinki.fi>
+Description: Extensions to 'ggplot2' providing low-level debug tools: statistics
+    and geometries reporting data passed to compute_group() and compute_panel() 
+    functions and to geometries. Layer manipulation: functions for deletion,
+    insertion, extraction and reordering of layers of "ggplot" objects. Data
+    manipulation: function for deletion of unused variables from the
+    data object embedded in "ggplot" objects.
+License: GPL (>= 2)
+LazyData: TRUE
+LazyLoad: TRUE
+ByteCompile: TRUE
+Depends: R (>= 3.4.0), ggplot2 (>= 3.1.0)
+Imports: utils, methods, rlang (>= 0.3.1), stringr (>= 1.4.0), magrittr
+        (>= 1.5), tibble (>= 2.0.1)
+Suggests: dplyr (>= 0.8.0.1), knitr (>= 1.21), rmarkdown (>= 1.11),
+        pryr (>= 0.1.4)
+URL: https://www.r4photobiology.info,
+        https://bitbucket.org/aphalo/gginnards
+BugReports: https://bitbucket.org/aphalo/gginnards/issues
+Encoding: UTF-8
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-03-24 22:31:46 UTC; aphalo
+Author: Pedro J. Aphalo [aut, cre] (<https://orcid.org/0000-0003-3385-972X>)
+Repository: CRAN
+Date/Publication: 2019-03-25 08:50:14 UTC

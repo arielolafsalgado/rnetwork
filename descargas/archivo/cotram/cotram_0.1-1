@@ -1,0 +1,30 @@
+Package: cotram
+Title: Count Transformation Models
+Version: 0.1-1
+Date: 2019-10-02
+Authors@R: c(
+	person(given = "Sandra", family = "Siegfried", role = "aut"),
+	person(given = "Torsten", family = "Hothorn", role = c("aut", "cre"),
+	email = "Torsten.Hothorn@R-project.org",
+	comment = c(ORCID = "0000-0001-8301-0471")))
+Description: Count transformation models featuring 
+        parameters interpretable as discrete hazard ratios, odds ratios,
+        reverse-time discrete hazard ratios, or transformed expectations. 
+        An appropriate data transformation for a count outcome and
+        regression coefficients are simultaneously estimated by maximising
+        the exact discrete log-likelihood using the computational framework
+        provided in package 'mlt', technical details are given in
+        Hothorn et al. (2018) <DOI:10.1111/sjos.12291>.
+Depends: tram (>= 0.2-6), mlt (>= 1.0-5)
+Imports: variables (>= 1.0-2), basefun (>= 1.0-5)
+Suggests: TH.data, knitr, lattice, colorspace
+VignetteBuilder: knitr
+Encoding: UTF-8
+License: GPL-2
+NeedsCompilation: no
+Packaged: 2019-10-02 08:00:57 UTC; hothorn
+Author: Sandra Siegfried [aut],
+  Torsten Hothorn [aut, cre] (<https://orcid.org/0000-0001-8301-0471>)
+Maintainer: Torsten Hothorn <Torsten.Hothorn@R-project.org>
+Repository: CRAN
+Date/Publication: 2019-10-02 09:40:02 UTC

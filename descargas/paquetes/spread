@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package spread</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Infectious Disease Spread Models [R package spread version 2019.8.5]" />
+<meta name="citation_author1" content="Solveig Engebretsen" />
+<meta name="citation_author2" content="Andreas Nygård Osnes" />
+<meta name="citation_author3" content="Richard White" />
+<meta name="citation_publication_date" content="2019-08-20" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=spread" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=spread" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="spread: Infectious Disease Spread Models" />
+<meta name="og:description" content="A stochastic SEIIaR (susceptible, exposed, infectious, infectious asymptomatic, recovered) metapopulation model that including commuting. Each location has a local infection system, while the locations are connected by people who commute each day. The model differentiates between day and night. During the day you can infect/be infected in the location where you work, while during the night you can infect/be infected in the location where you live. It is the same commuters who travel back and forth each day. At the start of a day, all commuters are sent to their work location, where they mix for 12 hours. The commuters are then sent to their respective home locations, where they mix for 12 hours. The model is loosely based upon a published model by Engebretsen (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1371%2Fjournal.pcbi.1006879&quot;&gt;doi:10.1371/journal.pcbi.1006879&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=spread" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>spread: Infectious Disease Spread Models</h2>
+<p>A stochastic SEIIaR (susceptible, exposed, infectious, infectious asymptomatic, recovered) metapopulation model that including commuting. Each location has a local infection system, while the locations are connected by people who commute each day. The model differentiates between day and night. During the day you can infect/be infected in the location where you work, while during the night you can infect/be infected in the location where you live. It is the same commuters who travel back and forth each day. At the start of a day, all commuters are sent to their work location, where they mix for 12 hours. The commuters are then sent to their respective home locations, where they mix for 12 hours. The model is loosely based upon a published model by Engebretsen (2019) &lt;<a href="https://doi.org/10.1371%2Fjournal.pcbi.1006879">doi:10.1371/journal.pcbi.1006879</a>&gt;.</p>
+<table summary="Package spread summary">
+<tr>
+<td>Version:</td>
+<td>2019.8.5</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.9.4), <a href="../RcppProgress/index.html">RcppProgress</a> (&ge; 0.1), <a href="../data.table/index.html">data.table</a>, <a href="../fhidata/index.html">fhidata</a>, <a href="../stringr/index.html">stringr</a>, <a href="../readxl/index.html">readxl</a>, <a href="../zoo/index.html">zoo</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppProgress/index.html">RcppProgress</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../glue/index.html">glue</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-08-20</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Solveig Engebretsen [aut],
+  Andreas Nygård Osnes [aut],
+  Richard White [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Richard White  &#x3c;&#x77;&#x20;&#x61;&#x74;&#x20;&#x72;&#x77;&#x68;&#x69;&#x74;&#x65;&#x2e;&#x6e;&#x6f;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>C++11</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_spread.html">spread results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package spread downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="spread.pdf"> spread.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/commuter_model.html">commuter_model</a><br/>
+<a href="vignettes/including_vax.html">including_vax</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/spread_2019.8.5.tar.gz"> spread_2019.8.5.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/spread_2019.8.5.zip">spread_2019.8.5.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/spread_2019.8.5.zip">spread_2019.8.5.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/spread_2019.8.5.zip">spread_2019.8.5.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/spread_2019.8.5.tgz">spread_2019.8.5.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/spread_2019.8.5.tgz">spread_2019.8.5.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=spread"><samp>https://CRAN.R-project.org/package=spread</samp></a>
+to link to this page.</p>
+</body>
+</html>

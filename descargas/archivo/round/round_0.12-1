@@ -1,0 +1,27 @@
+Package: round
+Version: 0.12-1
+Date: 2020-01-15
+Title: Rounding to Decimal Digits
+Authors@R: c(person("Martin","Maechler", role=c("aut","cre"),
+                    email="maechler@stat.math.ethz.ch", comment = c(ORCID = "0000-0002-8685-9910"))
+  , person("R-core", email = "R-core@R-project.org", role = "ctb", comment = '"r1.C" only')
+  	     )
+Description: Decimal rounding is non-trivial in binary arithmetic.  ISO
+  standard round to even is more rare than typically assumed as most decimal fractions
+  are not exactly representable in binary.  Our roundX() versions explore differences
+  between current and potential future versions of round() in R.
+  Further, provides (some partly related) C99 math lib functions not in base R.
+Imports: stats
+Suggests: grDevices, graphics, Matrix, lattice, knitr
+License: AGPL (>= 3)
+Encoding: UTF-8
+VignetteBuilder: knitr
+URL: https://gitlab.com/mmaechler/round/
+BugReports: https://gitlab.com/mmaechler/round/issues
+NeedsCompilation: yes
+Packaged: 2020-01-15 11:46:58 UTC; maechler
+Author: Martin Maechler [aut, cre] (<https://orcid.org/0000-0002-8685-9910>),
+  R-core [ctb] ("r1.C" only)
+Maintainer: Martin Maechler <maechler@stat.math.ethz.ch>
+Repository: CRAN
+Date/Publication: 2020-01-24 18:00:03 UTC

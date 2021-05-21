@@ -1,0 +1,49 @@
+Package: xpose
+Type: Package
+Title: Diagnostics for Pharmacometric Models
+Version: 0.4.7
+Authors@R: c(
+      person('Benjamin', 'Guiastrennec',
+             role  = c('aut', 'cre', 'cph'),
+             email = 'guiastrennec@gmail.com'),
+      person('Andrew C.', 'Hooker', 
+             role  = c('aut', 'cph'),
+             email = 'andrew.hooker@farmbio.uu.se'),
+      person('Sebastian', 'Ueckert',
+             role  = c('aut', 'cph'),
+             email = 'sebastian.ueckert@farmbio.uu.se'),
+      person('Mike K.', 'Smith', 
+             role  = 'ctb',
+             email = 'mike.k.smith@pfizer.com'),
+      person('Mats O.', 'Karlsson',
+             role  = c('aut', 'cph'),
+             email = 'mats.karlsson@farmbio.uu.se'))
+Description: Diagnostics for non-linear mixed-effects (population) 
+    models from 'NONMEM' <http://www.iconplc.com/innovation/nonmem/>. 
+    'xpose' facilitates data import, creation of numerical run summary 
+    and provide 'ggplot2'-based graphics for data exploration and model 
+    diagnostics.
+Depends: R (>= 3.3.0), ggplot2 (>= 3.1.0)
+Imports: dplyr (>= 0.8.0), ggforce (>= 0.2.0), grDevices, purrr (>=
+        0.3.0), readr (>= 1.3.0), rlang (>= 0.3.0), stringr (>= 1.4.0),
+        tibble (>= 2.1.0), tidyr (>= 0.8.0), utils, stats, vpc (>=
+        1.1.0)
+Suggests: here, gridExtra, rmarkdown, knitr, testthat, plotly, webshot,
+        mvtnorm
+License: LGPL-3
+URL: https://github.com/UUPharmacometrics/xpose
+BugReports: https://github.com/UUPharmacometrics/xpose/issues
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 7.0.2
+NeedsCompilation: no
+Packaged: 2020-02-04 19:53:12 UTC; bguiastr
+Author: Benjamin Guiastrennec [aut, cre, cph],
+  Andrew C. Hooker [aut, cph],
+  Sebastian Ueckert [aut, cph],
+  Mike K. Smith [ctb],
+  Mats O. Karlsson [aut, cph]
+Maintainer: Benjamin Guiastrennec <guiastrennec@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-02-04 20:30:02 UTC

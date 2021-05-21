@@ -1,0 +1,26 @@
+Package: PSM
+Type: Package
+Title: Non-Linear Mixed-Effects Modelling using Stochastic Differential
+        Equations
+Version: 0.8-12
+Date: 2018-11-05
+Encoding: UTF-8
+Author: Stig Bousgaard Mortensen, Soeren Klim, Robert Miller
+Maintainer: Robert Miller <robert.miller@tu-dresden.de>
+Imports: deSolve, graphics, MASS, numDeriv, stats, ucminf
+Suggests: datasets
+Description: Functions for fitting linear and non-linear mixed-effects models using
+        stochastic differential equations (SDEs). The package allows for any multivariate
+        non-linear time-variant model to be specified, and it also handles multidimensional
+        input, covariates, missing observations, and specification of dosage regimen.
+        The provided pipeline relies on the coupling of the FOCE algorithm and Kalman filtering
+        as outlined by Klim et al (2009, <doi:10.1016/j.cmpb.2009.02.001>) and has been
+        validated against the proprietary software 'NONMEM' (Tornoe et al, 2005,
+        <doi:10.1007/s11095-005-5269-5>). Further functions are provided for finding
+        smoothed estimates of model states and for simulation.
+License: GPL (>= 2)
+URL: http://www.imm.dtu.dk/psm
+NeedsCompilation: yes
+Packaged: 2018-05-12 14:13:51 UTC; bob
+Repository: CRAN
+Date/Publication: 2018-05-12 16:27:48 UTC

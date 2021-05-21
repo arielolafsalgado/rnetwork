@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package PreciseSums</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Accurate Floating Point Sums and Products [R package PreciseSums version 0.4]" />
+<meta name="citation_author1" content="Matthew Fidler" />
+<meta name="citation_author2" content="Raymond Hettinger" />
+<meta name="citation_author3" content="Jonathan Shewchuk" />
+<meta name="citation_author4" content="Julian Taylor" />
+<meta name="citation_author5" content="Nathaniel Smith" />
+<meta name="citation_publication_date" content="2020-07-10" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=PreciseSums" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=PreciseSums" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="PreciseSums: Accurate Floating Point Sums and Products" />
+<meta name="og:description" content="Most of the time floating point arithmetic does approximately the right thing. When adding sums or having products of numbers that greatly differ in magnitude, the floating point arithmetic may be incorrect. This package implements the Kahan (1965) sum &amp;lt;&lt;a href=&quot;https://doi.org/10.1145%2F363707.363723&quot;&gt;doi:10.1145/363707.363723&lt;/a&gt;&amp;gt;, Neumaier (1974) sum &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fzamm.19740540106&quot;&gt;doi:10.1002/zamm.19740540106&lt;/a&gt;&amp;gt;, pairwise-sum (adapted from 'NumPy', See Castaldo (2008) &amp;lt;&lt;a href=&quot;https://doi.org/10.1137%2F070679946&quot;&gt;doi:10.1137/070679946&lt;/a&gt;&amp;gt; for a discussion of accuracy), and arbitrary precision sum (adapted from the fsum in 'Python' ; Shewchuk (1997) &amp;lt;&lt;a href=&quot;http://www.cs.berkeley.edu/~jrs/papers/robustr.pdf&quot;&gt;http://www.cs.berkeley.edu/~jrs/papers/robustr.pdf&lt;/a&gt;&amp;gt;). In addition, products are changed to long double precision for accuracy, or changed into a log-sum for accuracy." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=PreciseSums" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>PreciseSums: Accurate Floating Point Sums and Products</h2>
+<p>Most of the time floating point arithmetic does
+  approximately the right thing.  When adding sums or having products
+  of numbers that greatly differ in magnitude, the floating point
+  arithmetic may be incorrect.  This package implements the Kahan
+  (1965) sum &lt;<a href="https://doi.org/10.1145%2F363707.363723">doi:10.1145/363707.363723</a>&gt;, Neumaier (1974) sum
+  &lt;<a href="https://doi.org/10.1002%2Fzamm.19740540106">doi:10.1002/zamm.19740540106</a>&gt;, pairwise-sum (adapted from 'NumPy',
+  See Castaldo (2008) &lt;<a href="https://doi.org/10.1137%2F070679946">doi:10.1137/070679946</a>&gt; for a discussion of
+  accuracy), and arbitrary precision sum (adapted from the fsum in
+  'Python' ; Shewchuk (1997)
+  &lt;<a href="http://www.cs.berkeley.edu/~jrs/papers/robustr.pdf">http://www.cs.berkeley.edu/~jrs/papers/robustr.pdf</a>&gt;).  In addition,
+  products are changed to long double precision for accuracy, or
+  changed into a log-sum for accuracy.</p>
+<table summary="Package PreciseSums summary">
+<tr>
+<td>Version:</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.2)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-07-10</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Matthew Fidler [aut, cre, cph],
+  Raymond Hettinger [cph, aut],
+  Jonathan Shewchuk [cph, aut],
+  Julian Taylor [cph, aut],
+  Nathaniel Smith [cph, aut],
+  NumPy Team [cph],
+  Python Team [cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Matthew Fidler  &#x3c;&#x6d;&#x61;&#x74;&#x74;&#x68;&#x65;&#x77;&#x2e;&#x66;&#x69;&#x64;&#x6c;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_PreciseSums.html">PreciseSums results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package PreciseSums downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="PreciseSums.pdf"> PreciseSums.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/PreciseSums_0.4.tar.gz"> PreciseSums_0.4.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/PreciseSums_0.4.zip">PreciseSums_0.4.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/PreciseSums_0.4.zip">PreciseSums_0.4.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/PreciseSums_0.4.zip">PreciseSums_0.4.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/PreciseSums_0.4.tgz">PreciseSums_0.4.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/PreciseSums_0.4.tgz">PreciseSums_0.4.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/PreciseSums"> PreciseSums archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package PreciseSums reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../RxODE/index.html">RxODE</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;linking&nbsp;to:</td>
+<td><a href="../RxODE/index.html">RxODE</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=PreciseSums"><samp>https://CRAN.R-project.org/package=PreciseSums</samp></a>
+to link to this page.</p>
+</body>
+</html>

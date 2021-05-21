@@ -1,0 +1,36 @@
+Package: abn
+Version: 2.0
+Date: 2019-06-06
+Title: Modelling Multivariate Data with Additive Bayesian Networks
+Authors@R: c(person("Gilles", "Kratzer", role = c("aut", "cre"),
+             email = "gilles.kratzer@math.uzh.ch",
+             comment = c(ORCID = "0000-0002-5929-8935")),
+             person("Fraser Ian", "Lewis", role = c("aut"), 
+             email = "fraseriain.lewis@uzh.ch"), 
+             person("Reinhard", "Furrer", role = c("ctb"), 
+             email = "reinhard.furrer@math.uzh.ch",
+             comment = c(ORCID = "0000-0002-6319-2332")),
+             person("Marta", "Pittavino", role = c("ctb"), 
+             email = "marta.pittavino@math.uzh.ch",
+             comment = c(ORCID = "0000-0002-1232-1034")))
+Author: Gilles Kratzer [aut, cre] (<https://orcid.org/0000-0002-5929-8935>),
+  Fraser Ian Lewis [aut],
+  Reinhard Furrer [ctb] (<https://orcid.org/0000-0002-6319-2332>),
+  Marta Pittavino [ctb] (<https://orcid.org/0000-0002-1232-1034>)
+Maintainer: Gilles Kratzer <gilles.kratzer@math.uzh.ch>
+Imports: methods, rjags
+LinkingTo: Rcpp, RcppArmadillo
+Depends: nnet, MASS, lme4, R (>= 2.15.1)
+Suggests: INLA, Rgraphviz, R.rsp
+VignetteBuilder: R.rsp
+Additional_repositories: https://inla.r-inla-download.org/R/stable/
+SystemRequirements: Gnu Scientific Library version >= 1.12
+Description: Bayesian network analysis is a form of probabilistic graphical models which derives from empirical data a directed acyclic graph, DAG, describing the dependency structure between  random variables. An additive Bayesian network model consists of a form of a DAG where each node comprises a generalized linear model, GLM. Additive Bayesian network models are equivalent to Bayesian multivariate regression using graphical modelling, they generalises the usual multivariable regression, GLM, to multiple dependent variables. 'abn' provides routines to help determine optimal Bayesian network models for a given data set, where these models are used to identify statistical dependencies in messy, complex data. The additive formulation of these models is equivalent to multivariate generalised linear modelling (including mixed models with iid random effects). The usual term to describe this model selection process is structure discovery. The core functionality is concerned with model selection - determining the most robust empirical model of data from interdependent variables. Laplace approximations are used to estimate goodness of fit metrics and model parameters, and wrappers are also included to the INLA package which can be obtained from <http://www.r-inla.org>. A comprehensive set of documented case studies, numerical accuracy/quality assurance exercises, and additional documentation are available from the 'abn' website <http://r-bayesian-networks.org>.
+License: GPL (>= 2)
+LazyData: true
+URL: http://r-bayesian-networks.org
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2019-06-27 15:13:25 UTC; Kratzer
+Repository: CRAN
+Date/Publication: 2019-07-01 09:10:48 UTC

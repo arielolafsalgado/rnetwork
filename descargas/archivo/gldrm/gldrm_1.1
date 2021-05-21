@@ -1,0 +1,30 @@
+Package: gldrm
+Type: Package
+Title: Generalized Linear Density Ratio Models
+Version: 1.1
+Authors@R: c(
+    person("Michael", "Wurm", email = "wurm@wisc.edu", role = c("aut", "cre")),
+    person("Paul", "Rathouz", email = "rathouz@biostat.wisc.edu", role = "aut"))
+Description: Fits a generalized linear density ratio model (GLDRM).
+    A GLDRM is a semiparametric generalized linear model.
+    In contrast to a GLM, which assumes a particular exponential family distribution, 
+    the GLDRM uses a semiparametric likelihood to estimate the reference distribution. 
+    The reference distribution may be any discrete, continuous, or mixed exponential 
+    family distribution. The model parameters, which include both the regression 
+    coefficients and the cdf of the unspecified reference distribution, are estimated 
+    by maximizing a semiparametric likelihood. Regression coefficients are estimated 
+    with no loss of efficiency, i.e. the asymptotic variance is the same as if the 
+    true exponential family distribution were known.
+Depends: R (>= 3.2.2)
+Imports: stats (>= 3.3.1)
+Suggests: testthat (>= 1.0.2)
+License: MIT + file LICENSE
+LazyData: TRUE
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-06-27 17:02:04 UTC; mike
+Author: Michael Wurm [aut, cre],
+  Paul Rathouz [aut]
+Maintainer: Michael Wurm <wurm@wisc.edu>
+Repository: CRAN
+Date/Publication: 2017-06-28 06:01:07 UTC

@@ -1,0 +1,41 @@
+Package: mkin
+Type: Package
+Title: Kinetic Evaluation of Chemical Degradation Data
+Version: 0.9.48.1
+Date: 2019-03-04
+Authors@R: c(person("Johannes", "Ranke", role = c("aut", "cre", "cph"),
+                    email = "jranke@uni-bremen.de",
+                    comment = c(ORCID = "0000-0003-4371-6538")),
+             person("Katrin", "Lindenberger", role = "ctb"),
+             person("René", "Lehmann", role = "ctb"),
+             person("Eurofins Regulatory AG", role = "cph"))
+Description: Calculation routines based on the FOCUS Kinetics Report (2006,
+  2014).  Includes a function for conveniently defining differential equation
+  models, model solution based on eigenvalues if possible or using numerical
+  solvers and a choice of the optimisation methods made available by the 'FME'
+  package.  If a C compiler (on windows: 'Rtools') is installed, differential
+  equation models are solved using compiled C functions.  Please note that no
+  warranty is implied for correctness of results or fitness for a particular
+  purpose.
+Imports: stats, graphics, methods, FME, deSolve, R6, minpack.lm,
+        rootSolve, inline, parallel, plyr
+Suggests: knitr, rbenchmark, tikzDevice, testthat, rmarkdown, covr,
+        vdiffr
+License: GPL
+LazyLoad: yes
+LazyData: yes
+Encoding: UTF-8
+VignetteBuilder: knitr
+BugReports: http://github.com/jranke/mkin/issues
+URL: https://cgit.jrwb.de/mkin/about
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-03-04 10:08:45 UTC; jranke
+Author: Johannes Ranke [aut, cre, cph]
+    (<https://orcid.org/0000-0003-4371-6538>),
+  Katrin Lindenberger [ctb],
+  René Lehmann [ctb],
+  Eurofins Regulatory AG [cph]
+Maintainer: Johannes Ranke <jranke@uni-bremen.de>
+Repository: CRAN
+Date/Publication: 2019-03-04 12:10:03 UTC

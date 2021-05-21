@@ -1,0 +1,30 @@
+Package: bssm
+Type: Package
+Title: Bayesian Inference of Non-Linear and Non-Gaussian State Space
+        Models
+Version: 0.1.4
+Date: 2018-02-04
+Author: Jouni Helske, Matti Vihola
+Maintainer: Jouni Helske <jouni.helske@iki.fi>
+Description: Efficient methods for Bayesian inference of state space models 
+    via particle Markov chain Monte Carlo and parallel importance sampling type weighted 
+    Markov chain Monte Carlo (Vihola, Helske, and Franks, 2017, <arXiv:1609.02541>). 
+    Gaussian, Poisson, binomial, or negative binomial 
+    observation densities and basic stochastic volatility models with Gaussian state 
+    dynamics, as well as general non-linear Gaussian models and discretised diffusion models 
+    are supported.
+License: GPL (>= 2)
+Depends: R (>= 3.1.3)
+Suggests: KFAS (>= 1.2.1), knitr (>= 1.11), rmarkdown (>= 0.8.1),
+        testthat, bayesplot, sde, ramcmc, sitmo
+Imports: coda (>= 0.18-1), diagis, ggplot2 (>= 2.0.0), Rcpp (>= 0.12.3)
+LinkingTo: BH, Rcpp, RcppArmadillo, ramcmc, sitmo
+SystemRequirements: C++11
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+BugReports: https://github.com/helske/bssm/issues
+ByteCompile: true
+NeedsCompilation: yes
+Packaged: 2018-02-04 13:59:28 UTC; jouni
+Repository: CRAN
+Date/Publication: 2018-02-04 15:30:09 UTC

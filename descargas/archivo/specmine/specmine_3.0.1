@@ -1,0 +1,35 @@
+Package: specmine
+Type: Package
+Title: Metabolomics and Spectral Data Analysis and Mining
+Version: 3.0.1
+Date: 2020-07-10
+Author: Christopher Costa <chrisbcl@hotmail.com> [aut],
+	Marcelo Maraschin <mtocsy@gmail.com> [aut],
+	Miguel Rocha <mrocha@di.uminho.pt> [aut, cre],
+	Sara Cardoso <saracardoso501@gmail.com> [aut],
+	Telma Afonso <telma.afonso94@gmail.com> [aut],
+	C. Beleites [cph],
+	Jie Hao [cph]
+Maintainer: Miguel Rocha <mrocha@di.uminho.pt>
+Depends: R (>= 4.0.0)
+SystemRequirements: Python (>=3.5.2) and the following python module:
+        nmrglue.
+Imports: hyperSpec, caret, e1071, ggplot2, impute, ellipse, GGally,
+        pcaPP, compare, baseline, MASS, pls, readJDX, speaq, gdata,
+        genefilter, RColorBrewer, grDevices, graphics, methods, stats,
+        utils, Metrics
+Suggests: ggdendro, reticulate, qdap, scatterplot3d, MAIT, xcms,
+        KEGGgraph, KEGGREST, rcytoscapejs, rgl, grid, curl, RCurl
+LazyData: true
+Description: Provides a set of methods for metabolomics 
+	data analysis, including data loading in different formats, 
+	pre-processing, metabolite identification, univariate and multivariate 
+	data analysis, machine learning, feature selection and pathway analysis. Case studies 
+	can be found on the website: <http://bio.di.uminho.pt/metabolomicspackage/index.html>.
+	This package suggests 'rcytoscapejs', a package not in mainstream repositories. If you need to install it,
+	use: devtools::install_github('cytoscape/r-cytoscape.js@v0.0.7').
+License: GPL (>= 2)
+NeedsCompilation: no
+Packaged: 2020-07-10 13:47:18 UTC; saracardoso
+Repository: CRAN
+Date/Publication: 2020-07-10 15:20:03 UTC

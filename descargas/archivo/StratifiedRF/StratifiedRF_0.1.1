@@ -1,0 +1,16 @@
+Package: StratifiedRF
+Type: Package
+Title: Builds Trees by Sampling Variables from Groups
+Version: 0.1.1
+Author: David Cortes <david.cortes.rivera@gmail.com>
+Maintainer: David Cortes <david.cortes.rivera@gmail.com>
+Description: Random Forest that works with groups of predictor variables. When building a tree, a number of variables is taken randomly from each group separately, thus ensuring that it contains variables from each group. Useful when rows contain information about different things (e.g. user information and product information) and it's not sensible to make a prediction with information from only one group of variables, or when there are far more variables from one group than the other and it's desired to have groups appear evenly on trees.
+    Trees are grown using the C5.0 algorithm. Currently works for classification only.
+Imports: C50, dplyr
+License: GPL-3
+LazyData: TRUE
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-06-21 07:43:04 UTC; david.cortes
+Repository: CRAN
+Date/Publication: 2017-06-21 15:25:56 UTC

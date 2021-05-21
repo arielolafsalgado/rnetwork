@@ -1,0 +1,16 @@
+Package: SigTree
+Type: Package
+Title: Functions to determine significantly responsive branches of
+        phylogenetic trees and produce colored plots both in FigTree
+        (via exported file) and R
+Version: 1.3
+Date: 2013-08-14
+Author: John R. Stevens and Todd R. Jones
+Maintainer: John R. Stevens <john.r.stevens@usu.edu>
+Description: SigTree takes a phylogenetic tree (of class phylo) and a data frame (or matrix) of corresponding tip labels and p-values and determines the significance of the branches (families of p-values) and plots the tree with colored branches (corresponding to families) according to the levels of significance,  Also produces a CSV file with the p-values of all of the branches as well as which tips belong to which branches.  Finally, it exports a file that can be opened in FigTree that produces a colored plot (colored branches according to the significance of corresponding groups of p-values) with p-value annotations.
+Depends: ape, phylobase, phyext, RColorBrewer, phyloseq
+License: GPL-3
+Packaged: 2013-08-14 22:27:15 UTC; John Stevens
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2013-08-15 06:57:23

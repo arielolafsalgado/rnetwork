@@ -1,0 +1,28 @@
+Package: NetRep
+Type: Package
+Title: Permutation Testing Network Module Preservation Across Datasets
+Version: 1.0.2
+Date: 2016-07-28
+Authors@R: person(given="Scott", family="Ritchie", 
+                  email="sritchie73@gmail.com", 
+                  role=c("aut", "cre"))
+BugReports: https://github.com/InouyeLab/NetRep/issues
+Description: Functions for assessing the replication/preservation of a network 
+  module's topology across datasets through permutation testing.
+License: GPL-2
+Depends: R (>= 3.0.2), methods
+Imports: foreach, Rcpp (>= 0.11), statmod, RhpcBLASctl, abind,
+        RColorBrewer, utils, stats, graphics, grDevices, ref
+Suggests: bigmemory, testthat, knitr, rmarkdown
+LinkingTo: Rcpp, BH, RcppArmadillo (>= 0.4)
+SystemRequirements: A compiler with C++11 support for the thread
+        library, Requires Rtools >= 33 (i.e. R >= 3.3.0) to build on
+        Windows.
+RoxygenNote: 5.0.1
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2016-07-29 00:08:29 UTC; scottr
+Author: Scott Ritchie [aut, cre]
+Maintainer: Scott Ritchie <sritchie73@gmail.com>
+Repository: CRAN
+Date/Publication: 2016-07-29 06:40:57

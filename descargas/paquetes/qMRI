@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package qMRI</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Methods for Quantitative Magnetic Resonance Imaging ('qMRI') [R package qMRI version 1.2]" />
+<meta name="citation_author1" content="Joerg Polzehl" />
+<meta name="citation_author2" content="Karsten Tabelow" />
+<meta name="citation_publication_date" content="2020-02-25" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=qMRI" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=qMRI" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="qMRI: Methods for Quantitative Magnetic Resonance Imaging ('qMRI')" />
+<meta name="og:description" content="Implementation of methods for estimation of quantitative maps from Multi-Parameter Mapping (MPM) acquisitions (Weiskopf et al. (2013) &amp;lt;&lt;a href=&quot;https://doi.org/10.3389%2Ffnins.2013.00095&quot;&gt;doi:10.3389/fnins.2013.00095&lt;/a&gt;&amp;gt;) including adaptive smoothing methods in the framework of the ESTATICS model (Estimating the apparent transverse relaxation time (R2*) from images with different contrasts, Weiskopf et al. (2014) &amp;lt;&lt;a href=&quot;https://doi.org/10.3389%2Ffnins.2014.00278&quot;&gt;doi:10.3389/fnins.2014.00278&lt;/a&gt;&amp;gt;). The smoothing method is described in Mohammadi et al. (2017). &amp;lt;&lt;a href=&quot;https://doi.org/10.20347%2FWIAS.PREPRINT.2432&quot;&gt;doi:10.20347/WIAS.PREPRINT.2432&lt;/a&gt;&amp;gt;. Usage of the package is also described in Polzehl and Tabelow (2019), Magnetic Resonance Brain Imaging, Chapter 6, Springer, Use R! Series. &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2F978-3-030-29184-6_6&quot;&gt;doi:10.1007/978-3-030-29184-6_6&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=qMRI" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>qMRI: Methods for Quantitative Magnetic Resonance Imaging ('qMRI')</h2>
+<p>Implementation of methods for estimation of quantitative maps
+    from Multi-Parameter Mapping (MPM) acquisitions (Weiskopf et al. (2013)
+    &lt;<a href="https://doi.org/10.3389%2Ffnins.2013.00095">doi:10.3389/fnins.2013.00095</a>&gt;) including adaptive
+    smoothing methods in the framework of the ESTATICS model
+    (Estimating the apparent transverse relaxation time (R2*) from images with
+    different contrasts, Weiskopf et al. (2014) &lt;<a href="https://doi.org/10.3389%2Ffnins.2014.00278">doi:10.3389/fnins.2014.00278</a>&gt;).
+    The smoothing method is described in Mohammadi et al. (2017).
+    &lt;<a href="https://doi.org/10.20347%2FWIAS.PREPRINT.2432">doi:10.20347/WIAS.PREPRINT.2432</a>&gt;. Usage of the package is also described in
+    Polzehl and Tabelow (2019),
+    Magnetic Resonance Brain Imaging, Chapter 6, Springer, Use R! Series.
+    &lt;<a href="https://doi.org/10.1007%2F978-3-030-29184-6_6">doi:10.1007/978-3-030-29184-6_6</a>&gt;.</p>
+<table summary="Package qMRI summary">
+<tr>
+<td>Version:</td>
+<td>1.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5), <a href="../awsMethods/index.html">awsMethods</a> (&ge; 1.0), methods</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../oro.nifti/index.html">oro.nifti</a> (&ge; 0.9), <a href="../stringr/index.html">stringr</a>, <a href="../aws/index.html">aws</a> (&ge; 2.4), <a href="../adimpro/index.html">adimpro</a> (&ge; 0.9)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../covr/index.html">covr</a>, <a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-02-25</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Joerg Polzehl [aut],
+  Karsten Tabelow [aut, cre],
+  WIAS Berlin [cph, fnd]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Karsten Tabelow  &#x3c;&#x6b;&#x61;&#x72;&#x73;&#x74;&#x65;&#x6e;&#x2e;&#x74;&#x61;&#x62;&#x65;&#x6c;&#x6f;&#x77;&#x20;&#x61;&#x74;&#x20;&#x77;&#x69;&#x61;&#x73;&#x2d;&#x62;&#x65;&#x72;&#x6c;&#x69;&#x6e;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>Copyright:</td>
+<td>This package is Copyright (C) 2015-2020 Weierstrass
+Institute for Applied Analysis and Stochastics.</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://www.wias-berlin.de/research/ats/imaging/">http://www.wias-berlin.de/research/ats/imaging/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_qMRI.html">qMRI results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package qMRI downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="qMRI.pdf"> qMRI.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/qMRI-Example.pdf">Analyzing MPM data with package qMRI</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/qMRI_1.2.tar.gz"> qMRI_1.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/qMRI_1.2.zip">qMRI_1.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/qMRI_1.2.zip">qMRI_1.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/qMRI_1.2.zip">qMRI_1.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/qMRI_1.2.tgz">qMRI_1.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/qMRI_1.2.tgz">qMRI_1.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/qMRI"> qMRI archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=qMRI"><samp>https://CRAN.R-project.org/package=qMRI</samp></a>
+to link to this page.</p>
+</body>
+</html>

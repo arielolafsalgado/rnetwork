@@ -1,0 +1,32 @@
+Package: rtide
+Title: Tide Heights
+Version: 0.0.5
+Date: 2018-08-20
+Authors@R: c(
+    person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c("aut", "cre")),
+    person("Luke", "Miller", email = "contact@lukemiller.org", role = "aut"),
+    person("Abram", "Fleishman", role = "aut"),
+    person("Poisson Consulting", role = "cph"))
+Description: Calculates tide heights based on tide station harmonics.
+    It includes the harmonics data for 637 US stations.
+    The harmonics data was converted from <https://github.com/poissonconsulting/rtide/blob/master/data-raw/harmonics-dwf-20151227-free.tar.bz2>,
+    NOAA web site data processed by David Flater for 'XTide'.
+    The code to calculate tide heights from the harmonics is based on 'XTide'.
+URL: https://github.com/poissonconsulting/rtide
+BugReports: https://github.com/poissonconsulting/rtide/issues
+Depends: R (>= 3.3.0)
+Imports: abind, checkr, lubridate, utils
+Suggests: ggplot2, scales, tibble, testthat
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.0
+NeedsCompilation: no
+Packaged: 2018-08-22 23:41:58 UTC; joe
+Author: Joe Thorley [aut, cre],
+  Luke Miller [aut],
+  Abram Fleishman [aut],
+  Poisson Consulting [cph]
+Maintainer: Joe Thorley <joe@poissonconsulting.ca>
+Repository: CRAN
+Date/Publication: 2018-08-23 04:40:03 UTC

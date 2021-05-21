@@ -1,0 +1,33 @@
+Package: ggmcmc
+Title: Tools for Analyzing MCMC Simulations from Bayesian Inference
+Description: Tools for assessing and diagnosing convergence of
+    Markov Chain Monte Carlo simulations, as well as for graphically display
+    results from full MCMC analysis. The package also facilitates the graphical
+    interpretation of models by providing flexible functions to plot the
+    results against observed variables.
+Version: 1.4.1
+Authors@R: person("Xavier", "Fernández i Marín", email = "xavier.fim@gmail.com", role = c("aut", "cre"))
+Depends: R (>= 3.5), dplyr (>= 0.5.0), tidyr (>= 0.5.1), ggplot2
+Imports: GGally (>= 1.1.0)
+Suggests: coda, rstan (>= 2.10.1), nimble, knitr, rmarkdown, ggthemes,
+        gridExtra, Cairo, extrafont
+License: GPL-2
+URL: http://xavier-fim.net/packages/ggmcmc,
+        https://github.com/xfim/ggmcmc
+BugReports: https://github.com/xfim/ggmcmc/issues
+Encoding: UTF-8
+Collate: 'data.R' 'functions.R' 'ggmcmc.R' 'ggs.R' 'ggs_Rhat.R'
+        'ggs_autocorrelation.R' 'ggs_caterpillar.R'
+        'ggs_compare_partial.R' 'ggs_crosscorrelation.R'
+        'ggs_density.R' 'ggs_effective.R' 'ggs_geweke.R'
+        'ggs_diagnostics.R' 'ggs_histogram.R' 'ggs_pairs.R' 'ggs_pcp.R'
+        'ggs_ppmean.R' 'ggs_ppsd.R' 'ggs_rocplot.R' 'ggs_running.R'
+        'ggs_separation.R' 'ggs_traceplot.R' 'globals.R' 'help.R'
+RoxygenNote: 7.1.0
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-04-02 10:12:38 UTC; xavier
+Author: Xavier Fernández i Marín [aut, cre]
+Maintainer: Xavier Fernández i Marín <xavier.fim@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-04-02 11:00:02 UTC

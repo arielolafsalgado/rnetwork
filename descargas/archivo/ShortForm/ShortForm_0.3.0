@@ -1,0 +1,29 @@
+Package: ShortForm
+Type: Package
+Title: Automatic Short Form Creation
+Version: 0.3.0
+Date: 2017-10-12
+Authors@R: c(person("Walter", "Leite", email = "Walter.Leite@coe.ufl.edu", role = "aut"), person("Anthony", "Raborn", email = "anthony.w.raborn@gmail.com", role = c("aut", "cre")))
+Description: Performs automatic creation of short forms of scales with an 
+    ant colony optimization algorithm. As implemented in the package, 
+    the algorithm randomly selects items to build a model of a specified length, 
+    then updates the probability of item selection according to the fit of 
+    the best model within each set of searches. The algorithm continues until 
+    the same items are selected by multiple ants a given number of times in a row. 
+    See Leite, Huang, & Marcoulides (2008) <doi:10.1080/00273170802285743> for
+    an applied example.
+License: LGPL (>= 2.0, < 3) | Mozilla Public License
+LazyData: TRUE
+RoxygenNote: 6.0.1
+Suggests: knitr, rmarkdown
+Imports: lavaan (>= 0.5-22), MplusAutomation (>= 0.7)
+Depends: R (>= 3.0.0)
+URL: https://github.com/AnthonyRaborn/ShortForm
+BugReports: https://github.com/AnthonyRaborn/ShortForm/issues
+NeedsCompilation: no
+Packaged: 2017-10-20 01:17:46 UTC; chika
+Author: Walter Leite [aut],
+  Anthony Raborn [aut, cre]
+Maintainer: Anthony Raborn <anthony.w.raborn@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-10-20 08:39:20 UTC

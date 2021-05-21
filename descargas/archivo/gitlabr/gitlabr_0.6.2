@@ -1,0 +1,29 @@
+Package: gitlabr
+Title: Access to the Gitlab API
+Version: 0.6.2
+Authors@R: person("Jirka", "Lewandowski", email = "jirka.lewandowski@wzb.eu", role = c("aut", "cre"))
+Description: Provides R functions to access the API of the project and
+    repository management web application gitlab. For many common tasks (repository
+    file access, issue assignment and status, commenting) convenience wrappers
+    are provided, and in addition the full API can be used by specifying request
+    locations. Gitlab is open-source software and can be self-hosted or used on
+    gitlab.com.
+Depends: R (>= 3.1.2), magrittr
+Imports: dplyr (>= 0.4.3), stringr, base64enc, httr (>= 1.0.0),
+        functional
+Suggests: devtools (>= 1.8.0), roxygen2, testthat, R.rsp, knitr
+URL: http://blog.points-of-interest.cc/post/gitlabr/
+        http://doc.gitlab.com/ce/ api/
+BugReports:
+        http://gitlab.points-of-interest.cc/points-of-interest/gitlabr/
+        issues/
+VignetteBuilder: R.rsp
+License: GPL (>= 3)
+LazyData: true
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-01-20 13:58:37 UTC; jlewando
+Author: Jirka Lewandowski [aut, cre]
+Maintainer: Jirka Lewandowski <jirka.lewandowski@wzb.eu>
+Repository: CRAN
+Date/Publication: 2016-01-20 15:38:18

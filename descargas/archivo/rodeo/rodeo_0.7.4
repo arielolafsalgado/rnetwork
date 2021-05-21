@@ -1,0 +1,26 @@
+Package: rodeo
+Type: Package
+NeedsCompilation: yes
+Title: A Code Generator for ODE-Based Models
+Version: 0.7.4
+Date: 2018-03-02
+Author: David Kneis <david.kneis@tu-dresden.de>
+Maintainer: David Kneis <david.kneis@tu-dresden.de>
+Description: Provides an R6 class and several utility methods to
+    facilitate the implementation of models based on ordinary
+    differential equations. The heart of the package is a code generator
+    that creates compiled 'Fortran' (or 'R') code which can be passed to
+    a numerical solver. There is direct support for solvers contained
+    in packages 'deSolve' and 'rootSolve'.
+URL: https://github.com/dkneis/rodeo
+License: GPL (>= 2)
+Imports: R6, deSolve
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown, xtable, rootSolve
+SystemRequirements: The tools to run 'R CMD SHLIB' on 'Fortran' code.
+        The used 'Fortran' compiler must support pointer initialization
+        which is a feature of the 2008 standard.
+RoxygenNote: 6.0.1
+Packaged: 2018-03-07 08:34:51 UTC; dkneis
+Repository: CRAN
+Date/Publication: 2018-03-07 09:06:40 UTC

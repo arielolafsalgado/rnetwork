@@ -1,0 +1,42 @@
+Package: MortalityTables
+Type: Package
+Version: 2.0
+Date: 2020-08-17
+Title: A Framework for Various Types of Mortality / Life Tables
+Authors@R: c(person("Reinhold", "Kainhofer", role=c("aut", "cre"), email="reinhold@kainhofer.com"))
+Author: Reinhold Kainhofer [aut, cre]
+Maintainer: Reinhold Kainhofer <reinhold@kainhofer.com>
+URL: https://gitlab.open-tools.net/R/r-mortality-tables
+Encoding: UTF-8
+Depends: ggplot2, methods, scales, utils, pracma, R (>= 2.10)
+Suggests: lifecontingencies, MortalityLaws, knitr, tidyverse,
+        rmarkdown, reshape2
+Description: Classes to implement and plot cohort life tables
+    for actuarial calculations. In particular, birth-year dependent mortality
+    tables using a yearly trend to extrapolate from a base year are implemented,
+    as well as period life table, cohort life tables using an age shift, and
+    merged life tables.
+License: GPL (>= 2)
+RoxygenNote: 7.1.1
+Collate: 'DocumentData.R' 'mortalityTable.R' 'mortalityTable.period.R'
+        'mortalityTable.ageShift.R' 'ageShift.R'
+        'mortalityTable.joined.R' 'mortalityTable.mixed.R' 'ages.R'
+        'baseTable.R' 'baseYear.R' 'fillAges.R' 'pensionTable.R'
+        'commutationNumbers.R' 'mortalityTable.improvementFactors.R'
+        'mortalityTable.trendProjection.R' 'deathProbabilities.R'
+        'getCohortTable.R' 'getOmega.R' 'getPeriodTable.R'
+        'lifeTable.R' 'makeQxDataFrame.R' 'mortalityComparisonTable.R'
+        'mortalityImprovement.R' 'mortalityTable.MakehamGompertz.R'
+        'mortalityTable.Weibull.R' 'mortalityTable.deMoivre.R'
+        'periodDeathProbabilities.R' 'mortalityTable.jointLives.R'
+        'utilityFunctions.R' 'mortalityTable.observed.R'
+        'mortalityTables.list.R' 'mortalityTables.load.R'
+        'plot.mortalityTable.R' 'plotMortalityTableComparisons.R'
+        'plotMortalityTables.R' 'plotMortalityTrend.R' 'setLoading.R'
+        'setModification.R' 'undampenTrend.R'
+        'whittaker.mortalityTable.R'
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-08-25 14:03:44 UTC; reinhold
+Repository: CRAN
+Date/Publication: 2020-08-26 12:20:02 UTC

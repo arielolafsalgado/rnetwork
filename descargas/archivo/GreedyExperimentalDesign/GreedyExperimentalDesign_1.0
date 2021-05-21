@@ -1,0 +1,22 @@
+Package: GreedyExperimentalDesign
+Type: Package
+Title: Greedy Experimental Design Construction
+Version: 1.0
+Date: 2016-12-8
+Author: Adam Kapelner, David Azriel and Abba M. Krieger
+Maintainer: Adam Kapelner <kapelner@qc.cuny.edu>
+Description: Computes experimental designs for a
+    two-arm experiment with covariates by greedily optimizing a
+    balance objective function. This optimization provides lower
+    variance for the treatment effect estimator (and higher power) 
+    while preserving a design that is close to complete randomization.
+    We return all iterations of the designs for use in a permutation test.
+License: GPL-3
+Depends: R (>= 3.2.0), rJava (>= 0.9-6)
+SystemRequirements: Java (>= 1.7.0)
+Imports: graphics, grDevices, stats
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-12-08 14:01:16 UTC; Kapelner
+Repository: CRAN
+Date/Publication: 2016-12-08 16:12:24

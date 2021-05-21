@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package ROCnReg</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="ROC Curve Inference with and without Covariates [R package ROCnReg version 1.0-3]" />
+<meta name="citation_author1" content="Maria Xose Rodriguez-Alvarez" />
+<meta name="citation_author2" content="Vanda Inacio" />
+<meta name="citation_publication_date" content="2020-09-07" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=ROCnReg" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=ROCnReg" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="ROCnReg: ROC Curve Inference with and without Covariates" />
+<meta name="og:description" content="Estimates the pooled (unadjusted) Receiver Operating Characteristic (ROC) curve, the covariate-adjusted ROC (AROC) curve, and the covariate-specific/conditional ROC (cROC) curve by different methods, both Bayesian and frequentist. Also, it provides functions to obtain ROC-based optimal cutpoints utilizing several criteria. Based on Erkanli, A. et al. (2006) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fsim.2496&quot;&gt;doi:10.1002/sim.2496&lt;/a&gt;&amp;gt;; Faraggi, D. (2003) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2F1467-9884.00350&quot;&gt;doi:10.1111/1467-9884.00350&lt;/a&gt;&amp;gt;; Gu, J. et al. (2008) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fsim.3366&quot;&gt;doi:10.1002/sim.3366&lt;/a&gt;&amp;gt;; Inacio de Carvalho, V. et al. (2013) &amp;lt;&lt;a href=&quot;https://doi.org/10.1214%2F13-BA825&quot;&gt;doi:10.1214/13-BA825&lt;/a&gt;&amp;gt;; Inacio de Carvalho, V., and Rodriguez-Alvarez, M.X. (2018) &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1806.00473&quot;&gt;arXiv:1806.00473&lt;/a&gt;&amp;gt;; Janes, H., and Pepe, M.S. (2009) &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fbiomet%2Fasp002&quot;&gt;doi:10.1093/biomet/asp002&lt;/a&gt;&amp;gt;; Pepe, M.S. (1998) &amp;lt;&lt;a href=&quot;http://www.jstor.org/stable/2534001?seq=1&quot;&gt;http://www.jstor.org/stable/2534001?seq=1&lt;/a&gt;&amp;gt;; Rodriguez-Alvarez, M.X. et al. (2011a) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.csda.2010.07.018&quot;&gt;doi:10.1016/j.csda.2010.07.018&lt;/a&gt;&amp;gt;; Rodriguez-Alvarez, M.X. et al. (2011a) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs11222-010-9184-1&quot;&gt;doi:10.1007/s11222-010-9184-1&lt;/a&gt;&amp;gt;. Please see Rodriguez-Alvarez, M.X. and Inacio, V. (20208) &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/2003.13111&quot;&gt;arXiv:2003.13111&lt;/a&gt;&amp;gt; for more details." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=ROCnReg" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>ROCnReg: ROC Curve Inference with and without Covariates</h2>
+<p>Estimates the pooled (unadjusted) Receiver Operating Characteristic (ROC) curve, the covariate-adjusted ROC (AROC) curve, and the covariate-specific/conditional ROC (cROC) curve by different methods, both Bayesian and frequentist. Also, it provides functions to obtain ROC-based optimal cutpoints utilizing several criteria. Based on Erkanli, A. et al. (2006) &lt;<a href="https://doi.org/10.1002%2Fsim.2496">doi:10.1002/sim.2496</a>&gt;; Faraggi, D. (2003) &lt;<a href="https://doi.org/10.1111%2F1467-9884.00350">doi:10.1111/1467-9884.00350</a>&gt;; Gu, J. et al. (2008) &lt;<a href="https://doi.org/10.1002%2Fsim.3366">doi:10.1002/sim.3366</a>&gt;; Inacio de Carvalho, V. et al. (2013) &lt;<a href="https://doi.org/10.1214%2F13-BA825">doi:10.1214/13-BA825</a>&gt;; Inacio de Carvalho, V., and Rodriguez-Alvarez, M.X. (2018) &lt;<a href="https://arxiv.org/abs/1806.00473">arXiv:1806.00473</a>&gt;; Janes, H., and Pepe, M.S. (2009) &lt;<a href="https://doi.org/10.1093%2Fbiomet%2Fasp002">doi:10.1093/biomet/asp002</a>&gt;; Pepe, M.S. (1998) &lt;<a href="http://www.jstor.org/stable/2534001?seq=1">http://www.jstor.org/stable/2534001?seq=1</a>&gt;; Rodriguez-Alvarez, M.X. et al. (2011a) &lt;<a href="https://doi.org/10.1016%2Fj.csda.2010.07.018">doi:10.1016/j.csda.2010.07.018</a>&gt;; Rodriguez-Alvarez, M.X. et al. (2011a) &lt;<a href="https://doi.org/10.1007%2Fs11222-010-9184-1">doi:10.1007/s11222-010-9184-1</a>&gt;. Please see Rodriguez-Alvarez, M.X. and Inacio, V. (20208) &lt;<a href="https://arxiv.org/abs/2003.13111">arXiv:2003.13111</a>&gt; for more details.</p>
+<table summary="Package ROCnReg summary">
+<tr>
+<td>Version:</td>
+<td>1.0-3</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>stats, grDevices, graphics, splines, <a href="../np/index.html">np</a>, <a href="../Matrix/index.html">Matrix</a>, <a href="../moments/index.html">moments</a>, <a href="../nor1mix/index.html">nor1mix</a>, <a href="../spatstat/index.html">spatstat</a>, <a href="../lattice/index.html">lattice</a>, <a href="../MASS/index.html">MASS</a>, <a href="../pbivnorm/index.html">pbivnorm</a>, parallel</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-07</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Maria Xose Rodriguez-Alvarez
+    <a href="https://orcid.org/0000-0002-1329-9238"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut, cre],
+  Vanda Inacio <a href="https://orcid.org/0000-0001-8084-1616"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Maria Xose Rodriguez-Alvarez  &#x3c;&#x6d;&#x78;&#x72;&#x6f;&#x64;&#x72;&#x69;&#x67;&#x75;&#x65;&#x7a;&#x20;&#x61;&#x74;&#x20;&#x62;&#x63;&#x61;&#x6d;&#x61;&#x74;&#x68;&#x2e;&#x6f;&#x72;&#x67;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL]</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_ROCnReg.html">ROCnReg results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package ROCnReg downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="ROCnReg.pdf"> ROCnReg.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/ROCnReg_1.0-3.tar.gz"> ROCnReg_1.0-3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/ROCnReg_1.0-3.zip">ROCnReg_1.0-3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/ROCnReg_1.0-3.zip">ROCnReg_1.0-3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/ROCnReg_1.0-3.zip">ROCnReg_1.0-3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/ROCnReg_1.0-3.tgz">ROCnReg_1.0-3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/ROCnReg_1.0-3.tgz">ROCnReg_1.0-3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/ROCnReg"> ROCnReg archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=ROCnReg"><samp>https://CRAN.R-project.org/package=ROCnReg</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,41 @@
+Package: checkmate
+Type: Package
+Title: Fast and Versatile Argument Checks
+Description: Tests and assertions to perform frequent argument checks. A
+    substantial part of the package was written in C to minimize any worries
+    about execution time overhead.
+Version: 1.7.3
+Author: Michel Lang <michellang@gmail.com>,
+    Bernd Bischl <bernd_bischl@gmx.net>
+Maintainer: Michel Lang <michellang@gmail.com>
+URL: https://github.com/mllg/checkmate
+BugReports: https://github.com/mllg/checkmate/issues
+NeedsCompilation: yes
+ByteCompile: yes
+Encoding: UTF-8
+Depends: R (>= 3.0.0)
+Imports: backports, utils
+Suggests: data.table, devtools, dplyr, ggplot2, knitr, rmarkdown,
+        magrittr, microbenchmark, testthat
+License: BSD_3_clause + file LICENSE
+VignetteBuilder: knitr
+RoxygenNote: 5.0.1
+Collate: 'AssertCollection.r' 'allMissing.r' 'anyInfinite.r'
+        'anyMissing.r' 'anyNaN.r' 'asInteger.r' 'assert.r' 'helper.r'
+        'makeExpectation.r' 'makeTest.r' 'makeAssertion.r'
+        'checkAccess.r' 'checkArray.r' 'checkAtomic.r'
+        'checkAtomicVector.r' 'checkCharacter.r' 'checkChoice.r'
+        'checkClass.r' 'checkComplex.r' 'checkCount.r'
+        'checkDataFrame.r' 'checkDataTable.r' 'checkDate.r'
+        'checkDirectory.r' 'checkEnvironment.r' 'checkFactor.r'
+        'checkFile.r' 'checkFlag.r' 'checkFunction.r' 'checkInt.r'
+        'checkInteger.r' 'checkIntegerish.r' 'checkList.r'
+        'checkLogical.r' 'checkMatrix.r' 'checkNamed.r' 'checkNames.r'
+        'checkNull.r' 'checkNumber.r' 'checkNumeric.r' 'checkOS.r'
+        'checkPathForOutput.r' 'checkScalar.r' 'checkScalarNA.r'
+        'checkSetEqual.r' 'checkString.r' 'checkSubset.r'
+        'checkVector.r' 'coalesce.r' 'isIntegerish.r' 'qassert.r'
+        'qassertr.r' 'wfwl.r' 'zzz.r'
+Packaged: 2016-03-10 18:30:37 UTC; michel
+Repository: CRAN
+Date/Publication: 2016-03-10 23:38:03

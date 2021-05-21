@@ -1,0 +1,35 @@
+Package: ozmaps
+Version: 0.2.0
+Title: Australia Maps
+Description: Maps of Australian coastline and administrative regions. Data 
+ can be drawn or accessed directly as simple features objects. Includes
+ simple functions for country or state maps of Australia and in-built data
+ sets of administrative regions from the Australian Bureau of Statistics 
+ <https://www.abs.gov.au/>. Layers include electoral divisions and local 
+ government areas, simplified from the original sources but with sufficient 
+ detail to allow mapping of a local municipality. 
+Authors@R: c(person("Michael", "Sumner", 
+              email = "mdsumner@gmail.com", 
+              role = c("aut", "cre")), 
+             person("Dianne", "Cook", role = "ctb"), 
+             person(given = "Edzer", family = "Pebesma",
+             role = c("ctb"),
+             comment = c("sf plot")))
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+Depends: R (>= 3.3.0)
+Imports: oz, tibble
+Suggests: paletteer, testthat, covr
+RoxygenNote: 6.1.1
+URL: https://github.com/mdsumner/ozmaps
+BugReports: https://github.com/mdsumner/ozmaps/issues
+NeedsCompilation: no
+Packaged: 2019-11-05 11:00:01 UTC; mdsumner
+Author: Michael Sumner [aut, cre],
+  Dianne Cook [ctb],
+  Edzer Pebesma [ctb] (sf plot)
+Maintainer: Michael Sumner <mdsumner@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-11-06 16:20:02 UTC

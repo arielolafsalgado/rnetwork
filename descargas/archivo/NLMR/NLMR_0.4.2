@@ -1,0 +1,57 @@
+Package: NLMR
+Type: Package
+Title: Simulating Neutral Landscape Models
+Version: 0.4.2
+Authors@R: c(person("Marco", "Sciaini", email = "sciaini.marco@gmail.com", role = c("aut", "cre"), comment = c(ORCID = '0000-0002-3042-5435')), 
+    person("Matthias", "Fritsch", email = "matthias.fritsch@forst.uni-goettingen.de", role = "aut"),
+    person("Craig", "Simpkins", email = "simpkinscraig063@gmail.com",
+       role =  "aut", comment = c(ORCID = '0000-0003-3212-1379')),
+    person("Cédric", "Scherer", email = "cedricphilippscherer@gmail.com", 
+       role =  c("aut"), comment = c(ORCID = '0000-0003-0465-2543')),
+    person("Sebastian", "Hanß", role = "aut", comment = c(ORCID = '0000-0002-3990-4897')), 
+    person("Laura", "Graham", role = "rev",
+       comment = "Laura reviewed the package for rOpenSci, see 
+                  https://github.com/ropensci/onboarding/issues/188"),
+    person("Jeffrey", "Hollister", role = "rev",
+       comment = "Jeffrey reviewed the package for rOpenSci, see 
+                  https://github.com/ropensci/onboarding/issues/188"))
+Maintainer: Marco Sciaini <sciaini.marco@gmail.com>
+Description: Provides neutral landscape models (<doi:10.1007/BF02275262>,
+    <http://sci-hub.tw/10.1007/bf02275262>).  
+    Neutral landscape models range from "hard" 
+    neutral models (completely random distributed), to "soft" neutral models 
+    (definable spatial characteristics) and generate landscape patterns that are 
+    independent of ecological processes.
+    Thus, these patterns can be used as null models in landscape ecology. 'nlmr' 
+    combines a large number of algorithms from other published software for 
+    simulating neutral landscapes. The simulation results are obtained in a
+    geospatial data format (raster* objects from the 'raster' package) and can,
+    therefore, be used in any sort of raster data operation that is performed 
+    with standard observation data.                                                                                                  
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+Depends: R (>= 3.1.0)
+SystemRequirements: C++11
+RoxygenNote: 6.1.1
+Imports: checkmate, dplyr, RandomFields, raster, spatstat, stats,
+        tibble, fasterize, sf, Rcpp
+URL: https://ropensci.github.io/NLMR/
+BugReports: https://github.com/ropensci/NLMR/issues/
+Suggests: testthat, covr, knitr, rmarkdown, lintr, landscapetools
+LinkingTo: Rcpp
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2019-02-27 02:08:48 UTC; marco
+Author: Marco Sciaini [aut, cre] (<https://orcid.org/0000-0002-3042-5435>),
+  Matthias Fritsch [aut],
+  Craig Simpkins [aut] (<https://orcid.org/0000-0003-3212-1379>),
+  Cédric Scherer [aut] (<https://orcid.org/0000-0003-0465-2543>),
+  Sebastian Hanß [aut] (<https://orcid.org/0000-0002-3990-4897>),
+  Laura Graham [rev] (Laura reviewed the package for rOpenSci, see
+    https://github.com/ropensci/onboarding/issues/188),
+  Jeffrey Hollister [rev] (Jeffrey reviewed the package for rOpenSci, see
+    https://github.com/ropensci/onboarding/issues/188)
+Repository: CRAN
+Date/Publication: 2019-02-27 05:10:04 UTC

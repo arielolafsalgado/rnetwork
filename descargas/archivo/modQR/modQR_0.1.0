@@ -1,0 +1,37 @@
+Package: modQR
+Encoding: UTF-8
+Version: 0.1.0
+Date: 2015-06-17
+Title: Multiple-Output Directional Quantile Regression
+Authors@R: c(person("Miroslav","Šiman", role=c("aut")),
+             person("Pavel","Boček", role=c("aut", "cre"), email="bocek@utia.cas.cz"))
+Author: Miroslav Šiman [aut],
+  Pavel Boček [aut, cre]
+Maintainer: Pavel Boček <bocek@utia.cas.cz>
+Copyright: The Institute of Information Theory and Automation of the
+        Czech Academy of Sciences Pod Vodárenskou věží 4, CZ-182 08
+        Prague 8, Czech Republic email: utia@utia.cas.cz, phone: +420
+        266 053 111
+Description: Contains basic tools for performing 
+             multiple-output quantile regression and computing 
+             regression quantile contours by means of directional 
+             regression quantiles. In the location case, one can thus 
+             obtain halfspace depth contours in two to six dimensions. 
+Classification/MSC: 62H05, 62J99, 62G08, 65C60
+Keywords: quantile regression, multivariate regression, semiparametric
+        regression, nonparametric regression, data depth, regression
+        depth, halfspace depth, Tukey depth, depth contour,
+        multivariate quantile, regression quantile, quantile-based
+        inference
+Repository: CRAN
+Depends: R (>= 2.5.0), lpSolve (>= 5.6.1), geometry (>= 0.3-1)
+Suggests: rgl
+License: LGPL-2
+Collate: addItem.R findItem.R delItem.R addRow.R findRow.R checkArray.R
+        checkCTechSTu.R getCTechSTM1u.R getCTechSTM2u.R getCharSTM1u.R
+        getCharSTM2u.R findOptimalBasisM1FromScratch.R
+        findOptimalBasisM2FromScratch.R compContourM1u.R
+        compContourM2u.R evalContour.R
+NeedsCompilation: no
+Packaged: 2015-06-18 12:04:54 UTC; bocek
+Date/Publication: 2015-06-18 18:00:31

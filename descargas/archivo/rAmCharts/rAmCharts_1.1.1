@@ -1,0 +1,49 @@
+Package: rAmCharts
+Title: JavaScript Charts API Tool
+Description: API for using 'AmCharts' Library. Based on the 'htmlwidgets'
+    package, it provides a global architecture to generate 'JavaScript' source
+    code for charts. Most of classes in the library have their equivalent in R
+    with S4 classes; for those classes, not all properties have been referenced
+    but can easily be added in the constructors. Complex properties (e.g.
+    'JavaScript' object) can be passed as named list. See examples at <http://
+    dataknowledge.github.io/rAmCharts/>. and <http://www.amcharts.com/> for more
+    information about the library. The package includes the free version of 'AmCharts'
+    Library. Its only limitation is that a small link to the web site will be
+    displayed in your charts. If you enjoy this library, do not hesitate to refer
+    to this page <http://www.amcharts.com/online-store/> to purchase a licence,
+    and thus support its creators and get a period of Priority Support. See also
+    <http://www.amcharts.com/about/> for more information about 'AmCharts' company.
+Version: 1.1.1
+Authors@R: c(
+    person(given = "Jeffery", family = "Petit", email = "jeff@datak.fr", role = c("aut", "cre")),
+    person(given = "Antanas", family = " Marcelionis", role = c("aut", "cph"),
+           comment = "'AmCharts' library in th directory htmlwidgets/lib/amcharts, refer to http://www.amcharts.com/"),
+    person(given = "Benoit", family = "Thieurmel", email = "benoit.thieurmel@datak.fr", role = c("aut", "ctb")),
+    person(family = "DataKnowledge", role = c("ctb"),
+            comment = "See official web site at http://www.datak.fr"))
+Date: 2015-09-15
+License: GPL (>= 2)
+URL: http://dataknowledge.github.io/rAmCharts/
+BugReports: https://github.com/DataKnowledge/rAmCharts/issues/
+Depends: R (>= 3.2.0)
+Collate: 'AmObject.R' 'AmBalloon.R' 'AmChart.R' 'sharedGenerics.R'
+        'Guide.R' 'AxisBase.R' 'ValueAxis.R' 'TrendLine.R' 'Title.R'
+        'Label.R' 'ChartScrollbar.R' 'ChartCursor.R' 'CategoryAxis.R'
+        'AmLegend.R' 'AmGraph.R' 'AmChart_getSet.R'
+        'AmChart_constructors.R' 'AmChart_plot.R'
+        'AmChart_shinyUtils.R' 'StockPanel.R' 'AmStockChart.R'
+        'StockEvent.R' 'DataSet.R' 'GaugeBand.R' 'GaugeAxis.R'
+        'GaugeArrow.R' 'PeriodSelector.R' 'amHist.R' 'shinyExamples.R'
+        'startupMessage.R' 'utils.R'
+Imports: methods, htmlwidgets, rlist, data.table, graphics, utils
+Suggests: pipeR, shiny
+NeedsCompilation: no
+Packaged: 2015-09-16 13:07:07 UTC; jpetit
+Author: Jeffery Petit [aut, cre],
+  Antanas Marcelionis [aut, cph] ('AmCharts' library in th directory
+    htmlwidgets/lib/amcharts, refer to http://www.amcharts.com/),
+  Benoit Thieurmel [aut, ctb],
+  DataKnowledge [ctb] (See official web site at http://www.datak.fr)
+Maintainer: Jeffery Petit <jeff@datak.fr>
+Repository: CRAN
+Date/Publication: 2015-09-16 18:51:10

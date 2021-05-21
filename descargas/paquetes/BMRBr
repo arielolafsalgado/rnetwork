@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package BMRBr</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="'BMRB' File Downloader [R package BMRBr version 0.2.0]" />
+<meta name="citation_author" content="Xi Chen" />
+<meta name="citation_publication_date" content="2018-08-24" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=BMRBr" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=BMRBr" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="BMRBr: 'BMRB' File Downloader" />
+<meta name="og:description" content="Nuclear magnetic resonance (NMR) is a highly versatile analytical technique for studying molecular configuration, conformation, and dynamics, especially those of biomacromolecules such as proteins. Biological Magnetic Resonance Data Bank ('BMRB') is a repository for Data from NMR Spectroscopy on Proteins, Peptides, Nucleic Acids, and other Biomolecules. Currently, 'BMRB' offers an R package 'RBMRB' to fetch data, however, it doesn't easily offer individual data file downloading and storing in a local directory. When using 'RBMRB', the data will stored as an R object, which fundamentally hinders the NMR researches to access the rich information from raw data, for example, the metadata. Here, 'BMRBr' File Downloader ('BMRBr') offers a more fundamental, low level downloader, which will download original deposited .str format file. This type of file contains information such as entry title, authors, citation, protein sequences, and so on. Many factors affect NMR experiment outputs, such as temperature, resonance sensitivity and etc., approximately 40% of the entries in the 'BMRB' have chemical shift accuracy problems [1,2] Unfortunately, current reference correction methods are heavily dependent on the availability of assigned protein chemical shifts or protein structure. This is my current research project is going to solve, which will be included in the future release of the package. The current version of the package is sufficient and robust enough for downloading individual 'BMRB' data file from the 'BMRB' database &amp;lt;&lt;a href=&quot;http://www.bmrb.wisc.edu&quot;&gt;http://www.bmrb.wisc.edu&lt;/a&gt;&amp;gt;. The functionalities of this package includes but not limited: * To simplifies NMR researches by combine data downloading and results analysis together. * To allows NMR data reaches a broader audience that could utilize more than just chemical shifts but also metadata. * To offer reference corrected data for entries without assignment or structure information (future release). Reference: [1] E.L. Ulrich, H. Akutsu, J.F. Doreleijers, Y. Harano, Y.E. Ioannidis, J. Lin, et al., BioMagResBank, Nucl. Acids Res. 36 (2008) D402–8. &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fnar%2Fgkm957&quot;&gt;doi:10.1093/nar/gkm957&lt;/a&gt;&amp;gt;. [2] L. Wang, H.R. Eghbalnia, A. Bahrami, J.L. Markley, Linear analysis of carbon-13 chemical shift differences and its application to the detection and correction of errors in referencing and spin system identifications, J. Biomol. NMR. 32 (2005) 13–22. &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs10858-005-1717-0&quot;&gt;doi:10.1007/s10858-005-1717-0&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=BMRBr" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>BMRBr: 'BMRB' File Downloader</h2>
+<p>Nuclear magnetic resonance (NMR) is a highly versatile analytical technique for studying molecular configuration, conformation, 
+        and dynamics, especially those of biomacromolecules such as proteins. Biological Magnetic Resonance Data Bank ('BMRB') is a repository
+        for Data from NMR Spectroscopy on Proteins, Peptides, Nucleic Acids, and other Biomolecules. Currently, 'BMRB' offers an R package 
+        'RBMRB' to fetch data, however, it doesn't easily offer individual data file downloading and storing in a local directory. When using 
+        'RBMRB', the data will stored as an R object, which fundamentally hinders the NMR researches to access the rich information from raw 
+        data, for example, the metadata. Here, 'BMRBr' File Downloader ('BMRBr') offers a more fundamental, low level downloader, which will 
+        download original deposited .str format file. This type of file contains information such as entry title, authors, citation, protein
+        sequences, and so on.
+        Many factors affect NMR experiment outputs, such as temperature, resonance sensitivity and etc., approximately 40% of the entries in the 'BMRB' have 
+        chemical shift accuracy problems [1,2] Unfortunately, current reference correction methods are heavily dependent on the availability of
+        assigned protein chemical shifts or protein structure. This is my current research project is going to solve, which will be included
+        in the future release of the package. The current version of the package is sufficient and robust enough for downloading individual 
+        'BMRB' data file from the 'BMRB' database &lt;<a href="http://www.bmrb.wisc.edu">http://www.bmrb.wisc.edu</a>&gt;. The functionalities of this package includes but not limited:
+        * To simplifies NMR researches by combine data downloading and results analysis together.
+        * To allows NMR data reaches a broader audience that could utilize more than just chemical shifts but also metadata.
+        * To offer reference corrected data for entries without assignment or structure information (future release).
+        Reference:
+        [1] E.L. Ulrich, H. Akutsu, J.F. Doreleijers, Y. Harano, Y.E. Ioannidis, J. Lin, et al., BioMagResBank, Nucl. Acids Res. 36 (2008) D402–8. &lt;<a href="https://doi.org/10.1093%2Fnar%2Fgkm957">doi:10.1093/nar/gkm957</a>&gt;.
+        [2] L. Wang, H.R. Eghbalnia, A. Bahrami, J.L. Markley, Linear analysis of carbon-13 chemical shift differences and its application to the detection and correction of errors in referencing and spin system identifications, J. Biomol. NMR. 32 (2005) 13–22. &lt;<a href="https://doi.org/10.1007%2Fs10858-005-1717-0">doi:10.1007/s10858-005-1717-0</a>&gt;.</p>
+<table summary="Package BMRBr summary">
+<tr>
+<td>Version:</td>
+<td>0.2.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.1.0), <a href="../xml2/index.html">xml2</a>, <a href="../rvest/index.html">rvest</a>, utils</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2018-08-24</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Xi Chen <a href="https://orcid.org/0000-0001-7094-6748"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Xi Chen  &#x3c;&#x62;&#x69;&#x6c;&#x6c;&#x63;&#x68;&#x65;&#x6e;&#x78;&#x69;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/billchenxi/BMRBr/issues">https://github.com/billchenxi/BMRBr/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/billchenxi/BMRBr">https://github.com/billchenxi/BMRBr</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_BMRBr.html">BMRBr results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package BMRBr downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="BMRBr.pdf"> BMRBr.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/vignette.html">BMRBr Package</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/BMRBr_0.2.0.tar.gz"> BMRBr_0.2.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/BMRBr_0.2.0.zip">BMRBr_0.2.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/BMRBr_0.2.0.zip">BMRBr_0.2.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/BMRBr_0.2.0.zip">BMRBr_0.2.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/BMRBr_0.2.0.tgz">BMRBr_0.2.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/BMRBr_0.2.0.tgz">BMRBr_0.2.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/BMRBr"> BMRBr archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package BMRBr reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../BaMORC/index.html">BaMORC</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=BMRBr"><samp>https://CRAN.R-project.org/package=BMRBr</samp></a>
+to link to this page.</p>
+</body>
+</html>

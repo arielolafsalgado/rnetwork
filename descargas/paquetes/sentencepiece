@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package sentencepiece</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Text Tokenization using Byte Pair Encoding and Unigram Modelling [R package sentencepiece version 0.1.2]" />
+<meta name="citation_author" content="Jan Wijffels" />
+<meta name="citation_publication_date" content="2020-06-08" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=sentencepiece" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=sentencepiece" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="sentencepiece: Text Tokenization using Byte Pair Encoding and Unigram Modelling" />
+<meta name="og:description" content="Unsupervised text tokenizer allowing to perform byte pair encoding and unigram modelling. Wraps the 'sentencepiece' library &amp;lt;&lt;a href=&quot;https://github.com/google/sentencepiece&quot;&gt;https://github.com/google/sentencepiece&lt;/a&gt;&amp;gt; which provides a language independent tokenizer to split text in words and smaller subword units. The techniques are explained in the paper &quot;SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing&quot; by Taku Kudo and John Richardson (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.18653%2Fv1%2FD18-2012&quot;&gt;doi:10.18653/v1/D18-2012&lt;/a&gt;&amp;gt;. Provides as well straightforward access to pretrained byte pair encoding models and subword embeddings trained on Wikipedia using 'word2vec', as described in &quot;BPEmb: Tokenization-free Pre-trained Subword Embeddings in 275 Languages&quot; by Benjamin Heinzerling and Michael Strube (2018) &amp;lt;&lt;a href=&quot;http://www.lrec-conf.org/proceedings/lrec2018/pdf/1049.pdf&quot;&gt;http://www.lrec-conf.org/proceedings/lrec2018/pdf/1049.pdf&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=sentencepiece" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>sentencepiece: Text Tokenization using Byte Pair Encoding and Unigram Modelling</h2>
+<p>Unsupervised text tokenizer allowing to perform byte pair encoding and unigram modelling. 
+    Wraps the 'sentencepiece' library &lt;<a href="https://github.com/google/sentencepiece">https://github.com/google/sentencepiece</a>&gt; which provides a language independent tokenizer to split text in words and smaller subword units. 
+    The techniques are explained in the paper "SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing" by Taku Kudo and John Richardson (2018) &lt;<a href="https://doi.org/10.18653%2Fv1%2FD18-2012">doi:10.18653/v1/D18-2012</a>&gt;.
+    Provides as well straightforward access to pretrained byte pair encoding models and subword embeddings trained on Wikipedia using 'word2vec', 
+    as described in "BPEmb: Tokenization-free Pre-trained Subword Embeddings in 275 Languages" by Benjamin Heinzerling and Michael Strube (2018) &lt;<a href="http://www.lrec-conf.org/proceedings/lrec2018/pdf/1049.pdf">http://www.lrec-conf.org/proceedings/lrec2018/pdf/1049.pdf</a>&gt;.</p>
+<table summary="Package sentencepiece summary">
+<tr>
+<td>Version:</td>
+<td>0.1.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.11.5)</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../tokenizers.bpe/index.html">tokenizers.bpe</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-08</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Jan Wijffels [aut, cre, cph] (R wrapper),
+  BNOSAC [cph] (R wrapper),
+  Google Inc. [ctb, cph] (Files at src/sentencepiece/src (Apache License,
+    Version 2.0),
+  The Abseil Authors [ctb, cph] (Files at src/third_party/absl (Apache
+    License, Version 2.0),
+  Google Inc. [ctb, cph] (Files at src/third_party/protobuf-lite (BSD-3
+    License)),
+  Kenton Varda (Google Inc.) [ctb, cph] (Files at
+    src/third_party/protobuf-lite: coded_stream.cc, extension_set.cc,
+    generated_message_util.cc, generated_message_util.cc,
+    message_lite.cc, repeated_field.cc, wire_format_lite.cc,
+    zero_copy_stream.cc, zero_copy_stream_impl_lite.cc,
+    google/protobuf/extension_set.h,
+    google/protobuf/generated_message_util.h,
+    google/protobuf/wire_format_lite.h,
+    google/protobuf/wire_format_lite_inl.h,
+    google/protobuf/message_lite.h, google/protobuf/repeated_field.h,
+    google/protobuf/io/coded_stream.h,
+    google/protobuf/io/zero_copy_stream_impl_lite.h,
+    google/protobuf/io/zero_copy_stream.h,
+    google/protobuf/stubs/common.h, google/protobuf/stubs/hash.h,
+    google/protobuf/stubs/once.h, google/protobuf/stubs/once.h.org
+    (BSD-3 License)),
+  Sanjay Ghemawat (Google Inc.) [ctb, cph] (Design of files at
+    src/third_party/protobuf-lite: coded_stream.cc, extension_set.cc,
+    generated_message_util.cc, generated_message_util.cc,
+    message_lite.cc, repeated_field.cc, wire_format_lite.cc,
+    zero_copy_stream.cc, zero_copy_stream_impl_lite.cc,
+    google/protobuf/extension_set.h,
+    google/protobuf/generated_message_util.h,
+    google/protobuf/wire_format_lite.h,
+    google/protobuf/wire_format_lite_inl.h,
+    google/protobuf/message_lite.h, google/protobuf/repeated_field.h,
+    google/protobuf/io/coded_stream.h,
+    google/protobuf/io/zero_copy_stream_impl_lite.h,
+    google/protobuf/io/zero_copy_stream.h (BSD-3 License)),
+  Jeff Dean (Google Inc.) [ctb, cph] (Design of files at
+    src/third_party/protobuf-lite: coded_stream.cc, extension_set.cc,
+    generated_message_util.cc, generated_message_util.cc,
+    message_lite.cc, repeated_field.cc, wire_format_lite.cc,
+    zero_copy_stream.cc, zero_copy_stream_impl_lite.cc,
+    google/protobuf/extension_set.h,
+    google/protobuf/generated_message_util.h,
+    google/protobuf/wire_format_lite.h,
+    google/protobuf/wire_format_lite_inl.h,
+    google/protobuf/message_lite.h, google/protobuf/repeated_field.h,
+    google/protobuf/io/coded_stream.h,
+    google/protobuf/io/zero_copy_stream_impl_lite.h,
+    google/protobuf/io/zero_copy_stream.h (BSD-3 License)),
+  Laszlo Csomor (Google Inc.) [ctb, cph] (Files at
+    src/third_party/protobuf-lite: io_win32.cc,
+    google/protobuf/stubs/io_win32.h (BSD-3 License)),
+  Wink Saville (Google Inc.) [ctb, cph] (Files at
+    src/third_party/protobuf-lite: message_lite.cc,
+    google/protobuf/wire_format_lite.h,
+    google/protobuf/wire_format_lite_inl.h,
+    google/protobuf/message_lite.h (BSD-3 License)),
+  Jim Meehan (Google Inc.) [ctb, cph] (Files at
+    src/third_party/protobuf-lite: structurally_valid.cc (BSD-3
+    License)),
+  Chris Atenasio (Google Inc.) [ctb, cph] (Files at
+    src/third_party/protobuf-lite: google/protobuf/wire_format_lite.h
+    (BSD-3 License)),
+  Jason Hsueh (Google Inc.) [ctb, cph] (Files at
+    src/third_party/protobuf-lite:
+    google/protobuf/io/coded_stream_inl.h (BSD-3 License)),
+  Anton Carver (Google Inc.) [ctb, cph] (Files at
+    src/third_party/protobuf-lite: google/protobuf/stubs/map_util.h
+    (BSD-3 License)),
+  Maxim Lifantsev (Google Inc.) [ctb, cph] (Files at
+    src/third_party/protobuf-lite: google/protobuf/stubs/mathlimits.h
+    (BSD-3 License)),
+  Susumu Yata [ctb, cph] (Files at src/third_party/darts_clone (BSD-3
+    License),
+  Daisuke Okanohara [ctb, cph] (File src/third_party/esaxx/esa.hxx (MIT
+    License)),
+  Yuta Mori [ctb, cph] (File src/third_party/esaxx/sais.hxx (MIT
+    License)),
+  Benjamin Heinzerling [ctb, cph] (Files
+    data/models/nl.wiki.bpe.vs1000.d25.w2v.txt and
+    data/models/nl.wiki.bpe.vs1000.model (MIT License))</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Jan Wijffels  &#x3c;&#x6a;&#x77;&#x69;&#x6a;&#x66;&#x66;&#x65;&#x6c;&#x73;&#x20;&#x61;&#x74;&#x20;&#x62;&#x6e;&#x6f;&#x73;&#x61;&#x63;&#x2e;&#x62;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="https://www.mozilla.org/en-US/MPL/2.0/">MPL-2.0</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/bnosac/sentencepiece">https://github.com/bnosac/sentencepiece</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_sentencepiece.html">sentencepiece results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package sentencepiece downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="sentencepiece.pdf"> sentencepiece.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/sentencepiece_0.1.2.tar.gz"> sentencepiece_0.1.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/sentencepiece_0.1.2.zip">sentencepiece_0.1.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/sentencepiece_0.1.2.zip">sentencepiece_0.1.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/sentencepiece_0.1.2.zip">sentencepiece_0.1.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/sentencepiece_0.1.2.tgz">sentencepiece_0.1.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/sentencepiece_0.1.2.tgz">sentencepiece_0.1.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/sentencepiece"> sentencepiece archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=sentencepiece"><samp>https://CRAN.R-project.org/package=sentencepiece</samp></a>
+to link to this page.</p>
+</body>
+</html>

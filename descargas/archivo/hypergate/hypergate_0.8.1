@@ -1,0 +1,24 @@
+Package: hypergate
+Title: Machine Learning of Hyperrectangular Gating Strategies for
+        High-Dimensional Cytometry
+Version: 0.8.1
+Authors@R: c(
+               person("Etienne","Becht",middle=NULL,email="etienne.becht@protonmail.com",role=c("cre","aut")),
+               person("Samuel","Granjeaud",middle=NULL,email="samuel.granjeaud@inserm.fr",role=c("ctb"))
+	   )
+Description: Given a high-dimensional dataset that typically represents a cytometry dataset, and a subset of the datapoints, this algorithm outputs an hyperrectangle so that datapoints within the hyperrectangle best correspond to the specified subset. In essence, this allows the conversion of clustering algorithms' outputs to gating strategies outputs.
+Depends: R (>= 3.0.0)
+License: GPL-3
+Encoding: UTF-8
+LazyData: false
+Imports: stats, grDevices, utils, graphics
+Suggests: knitr, rmarkdown, flowCore, sp, rgeos
+VignetteBuilder: knitr
+RoxygenNote: 6.1.0
+NeedsCompilation: no
+Packaged: 2019-04-16 21:33:43 UTC; ebecht
+Author: Etienne Becht [cre, aut],
+  Samuel Granjeaud [ctb]
+Maintainer: Etienne Becht <etienne.becht@protonmail.com>
+Repository: CRAN
+Date/Publication: 2019-04-17 21:20:03 UTC

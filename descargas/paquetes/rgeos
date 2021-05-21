@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package rgeos</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Interface to Geometry Engine - Open Source ('GEOS') [R package rgeos version 0.5-5]" />
+<meta name="citation_author1" content="Roger Bivand" />
+<meta name="citation_author2" content="Colin Rundel" />
+<meta name="citation_publication_date" content="2020-09-07" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=rgeos" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=rgeos" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="rgeos: Interface to Geometry Engine - Open Source ('GEOS')" />
+<meta name="og:description" content="Interface to Geometry Engine - Open Source ('GEOS') using the C 'API' for topology operations on geometries. The 'GEOS' library is external to the package, and, when installing the package from source, must be correctly installed first. Windows and Mac Intel OS X binaries are provided on 'CRAN'. ('rgeos' &amp;gt;= 0.5-1): Up to and including 'GEOS' 3.7.1, topological operations succeeded with some invalid geometries for which the same operations fail from and including 'GEOS' 3.7.2. The 'checkValidity=' argument defaults and structure have been changed, from default FALSE to integer default '0L' for 'GEOS' &amp;lt; 3.7.2 (no check), '1L' 'GEOS' &amp;gt;= 3.7.2 (check and warn). A value of '2L' is also provided that may be used, assigned globally using 'set_RGEOS_CheckValidity(2L)', or locally using the 'checkValidity=2L' argument, to attempt zero-width buffer repair if invalid geometries are found. The previous default (FALSE, now '0L') is fastest and used for 'GEOS' &amp;lt; 3.7.2, but will not warn users of possible problems before the failure of topological operations that previously succeeded. From 'GEOS' 3.8.0, repair of geometries may also be attempted using 'gMakeValid()', which may, however, return a collection of geometries of different types." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=rgeos" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>rgeos: Interface to Geometry Engine - Open Source ('GEOS')</h2>
+<p>Interface to Geometry Engine - Open Source ('GEOS') using the C 'API' for topology operations on geometries. The 'GEOS' library is external to the package, and, when installing the package from source, must be correctly installed first. Windows and Mac Intel OS X binaries are provided on 'CRAN'. ('rgeos' &gt;= 0.5-1): Up to and including 'GEOS' 3.7.1, topological operations succeeded with some invalid geometries for which the same operations fail from and including 'GEOS' 3.7.2. The 'checkValidity=' argument defaults and structure have been changed, from default FALSE to integer default '0L' for 'GEOS' &lt; 3.7.2 (no check), '1L' 'GEOS' &gt;= 3.7.2 (check and warn). A value of '2L' is also provided that may be used, assigned globally using 'set_RGEOS_CheckValidity(2L)', or locally using the 'checkValidity=2L' argument, to attempt zero-width buffer repair if invalid geometries are found. The previous default (FALSE, now '0L') is fastest and used for 'GEOS' &lt; 3.7.2, but will not warn users of possible problems before the failure of topological operations that previously succeeded. From 'GEOS' 3.8.0, repair of geometries may also be attempted using 'gMakeValid()', which may, however, return a collection of geometries of different types.</p>
+<table summary="Package rgeos summary">
+<tr>
+<td>Version:</td>
+<td>0.5-5</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3.0), methods, <a href="../sp/index.html">sp</a> (&ge; 1.1-0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>utils, stats, graphics</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../sp/index.html">sp</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../maptools/index.html">maptools</a> (&ge; 0.8-5), <a href="../testthat/index.html">testthat</a>, <a href="../XML/index.html">XML</a>, <a href="../maps/index.html">maps</a>, <a href="../rgdal/index.html">rgdal</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-07</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Roger Bivand <a href="https://orcid.org/0000-0003-2392-6140"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [cre, aut],
+  Colin Rundel [aut],
+  Edzer Pebesma [ctb],
+  Rainer Stuetz [ctb],
+  Karl Ove Hufthammer [ctb],
+  Patrick Giraudoux [ctb],
+  Martin Davis [cph, ctb],
+  Sandro Santilli [cph, ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Roger Bivand  &#x3c;&#x52;&#x6f;&#x67;&#x65;&#x72;&#x2e;&#x42;&#x69;&#x76;&#x61;&#x6e;&#x64;&#x20;&#x61;&#x74;&#x20;&#x6e;&#x68;&#x68;&#x2e;&#x6e;&#x6f;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://r-forge.r-project.org/projects/rgeos/">https://r-forge.r-project.org/projects/rgeos/</a>
+<a href="https://trac.osgeo.org/geos/">https://trac.osgeo.org/geos/</a>
+<a href="http://rgeos.r-forge.r-project.org/index.html">http://rgeos.r-forge.r-project.org/index.html</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>GEOS (&gt;= 3.2.0); for building from source: GEOS
+from http://trac.osgeo.org/geos/; GEOS OSX frameworks built by
+William Kyngesburye at http://www.kyngchaos.com/ may be used
+for source installs on OSX.</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="ChangeLog">ChangeLog</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Spatial.html">Spatial</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_rgeos.html">rgeos results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package rgeos downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="rgeos.pdf"> rgeos.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/rgeos_0.5-5.tar.gz"> rgeos_0.5-5.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/rgeos_0.5-5.zip">rgeos_0.5-5.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/rgeos_0.5-5.zip">rgeos_0.5-5.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/rgeos_0.5-5.zip">rgeos_0.5-5.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/rgeos_0.5-5.tgz">rgeos_0.5-5.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/rgeos_0.5-5.tgz">rgeos_0.5-5.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/rgeos"> rgeos archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package rgeos reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../animalEKF/index.html">animalEKF</a>, <a href="../cleangeo/index.html">cleangeo</a>, <a href="../DivE/index.html">DivE</a>, <a href="../ecochange/index.html">ecochange</a>, <a href="../GISTools/index.html">GISTools</a>, <a href="../highriskzone/index.html">highriskzone</a>, <a href="../ibeemd/index.html">ibeemd</a>, <a href="../IceCast/index.html">IceCast</a>, <a href="../itcSegment/index.html">itcSegment</a>, <a href="../KappaV/index.html">KappaV</a>, <a href="../pycno/index.html">pycno</a>, <a href="../spatialClust/index.html">spatialClust</a>, <a href="../spMaps/index.html">spMaps</a>, <a href="../Watersheds/index.html">Watersheds</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../amber/index.html">amber</a>, <a href="../amt/index.html">amt</a>, <a href="../antaresViz/index.html">antaresViz</a>, <a href="../atakrig/index.html">atakrig</a>, <a href="../BIEN/index.html">BIEN</a>, <a href="../birdring/index.html">birdring</a>, <a href="../BIRDS/index.html">BIRDS</a>, <a href="../bRacatus/index.html">bRacatus</a>, <a href="../briskaR/index.html">briskaR</a>, <a href="../cartograflow/index.html">cartograflow</a>, <a href="../cartography/index.html">cartography</a>, <a href="../CCAMLRGIS/index.html">CCAMLRGIS</a>, <a href="../ConR/index.html">ConR</a>, <a href="../constrainedKriging/index.html">constrainedKriging</a>, <a href="../contact/index.html">contact</a>, <a href="../CoordinateCleaner/index.html">CoordinateCleaner</a>, <a href="../disaggregation/index.html">disaggregation</a>, <a href="../DSpat/index.html">DSpat</a>, <a href="../DSsim/index.html">DSsim</a>, <a href="../dynatopmodel/index.html">dynatopmodel</a>, <a href="../EcoIndR/index.html">EcoIndR</a>, <a href="../eechidna/index.html">eechidna</a>, <a href="../emdi/index.html">emdi</a>, <a href="../ENMTools/index.html">ENMTools</a>, <a href="../epitweetr/index.html">epitweetr</a>, <a href="../expp/index.html">expp</a>, <a href="../ExtractTrainData/index.html">ExtractTrainData</a>, <a href="../FedData/index.html">FedData</a>, <a href="../fieldRS/index.html">fieldRS</a>, <a href="../flightplanning/index.html">flightplanning</a>, <a href="../FLightR/index.html">FLightR</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/flowDensity.html"><span class="BioC">flowDensity</span></a>, <a href="../ForestGapR/index.html">ForestGapR</a>, <a href="../ForestTools/index.html">ForestTools</a>, <a href="../GADMTools/index.html">GADMTools</a>, <a href="../gDefrag/index.html">gDefrag</a>, <a href="../GeNetIt/index.html">GeNetIt</a>, <a href="../geoaxe/index.html">geoaxe</a>, <a href="../geodetector/index.html">geodetector</a>, <a href="../geodiv/index.html">geodiv</a>, <a href="../geogrid/index.html">geogrid</a>, <a href="../geojsonio/index.html">geojsonio</a>, <a href="../geoviz/index.html">geoviz</a>, <a href="../geozoning/index.html">geozoning</a>, <a href="../gfcanalysis/index.html">gfcanalysis</a>, <a href="../ggvoronoi/index.html">ggvoronoi</a>, <a href="../GInSARCorW/index.html">GInSARCorW</a>, <a href="../GmAMisc/index.html">GmAMisc</a>, <a href="../gtfs2gps/index.html">gtfs2gps</a>, <a href="../hero/index.html">hero</a>, <a href="../hierarchicalDS/index.html">hierarchicalDS</a>, <a href="../hyfo/index.html">hyfo</a>, <a href="../hypervolume/index.html">hypervolume</a>, <a href="../incR/index.html">incR</a>, <a href="../inlabru/index.html">inlabru</a>, <a href="../inlmisc/index.html">inlmisc</a>, <a href="../ipdw/index.html">ipdw</a>, <a href="../LabourMarketAreas/index.html">LabourMarketAreas</a>, <a href="../lakemorpho/index.html">lakemorpho</a>, <a href="../leafletCN/index.html">leafletCN</a>, <a href="../leastcostpath/index.html">leastcostpath</a>, <a href="../letsR/index.html">letsR</a>, <a href="../lgcp/index.html">lgcp</a>, <a href="../lidR/index.html">lidR</a>, <a href="../mapsRinteractive/index.html">mapsRinteractive</a>, <a href="../MazamaSpatialUtils/index.html">MazamaSpatialUtils</a>, <a href="../MBNMAdose/index.html">MBNMAdose</a>, <a href="../MEDITS/index.html">MEDITS</a>, <a href="../MetaLandSim/index.html">MetaLandSim</a>, <a href="../MODIS/index.html">MODIS</a>, <a href="../Momocs/index.html">Momocs</a>, <a href="../movecost/index.html">movecost</a>, <a href="../muHVT/index.html">muHVT</a>, <a href="../NetLogoR/index.html">NetLogoR</a>, <a href="../nichevol/index.html">nichevol</a>, <a href="../OasisR/index.html">OasisR</a>, <a href="../osmplotr/index.html">osmplotr</a>, <a href="../pgirmess/index.html">pgirmess</a>, <a href="../phyloregion/index.html">phyloregion</a>, <a href="../plotdap/index.html">plotdap</a>, <a href="../postGIStools/index.html">postGIStools</a>, <a href="../prioritizr/index.html">prioritizr</a>, <a href="../psda/index.html">psda</a>, <a href="../quickmapr/index.html">quickmapr</a>, <a href="../quickPlot/index.html">quickPlot</a>, <a href="../RAC/index.html">RAC</a>, <a href="../rangeBuilder/index.html">rangeBuilder</a>, <a href="../rangeMapper/index.html">rangeMapper</a>, <a href="../rangeModelMetadata/index.html">rangeModelMetadata</a>, <a href="../raptr/index.html">raptr</a>, <a href="../RchivalTag/index.html">RchivalTag</a>, <a href="../ReadDIM/index.html">ReadDIM</a>, <a href="../red/index.html">red</a>, <a href="../redlistr/index.html">redlistr</a>, <a href="../rKIN/index.html">rKIN</a>, <a href="../rpostgis/index.html">rpostgis</a>, <a href="../RStoolbox/index.html">RStoolbox</a>, <a href="../RSurvey/index.html">RSurvey</a>, <a href="../Rtrack/index.html">Rtrack</a>, <a href="../SDraw/index.html">SDraw</a>, <a href="../sdStaf/index.html">sdStaf</a>, <a href="../SegEnvIneq/index.html">SegEnvIneq</a>, <a href="../shadow/index.html">shadow</a>, <a href="../ShapePattern/index.html">ShapePattern</a>, <a href="../SimSurvey/index.html">SimSurvey</a>, <a href="../SK/index.html">SK</a>, <a href="../smartR/index.html">smartR</a>, <a href="../SpaDES.tools/index.html">SpaDES.tools</a>, <a href="../spatialEco/index.html">spatialEco</a>, <a href="../SpatialEpiApp/index.html">SpatialEpiApp</a>, <a href="../SpatialGraph/index.html">SpatialGraph</a>, <a href="../SpatialPosition/index.html">SpatialPosition</a>, <a href="../spatsoc/index.html">spatsoc</a>, <a href="../spatsurv/index.html">spatsurv</a>, <a href="../spsurvey/index.html">spsurvey</a>, <a href="../SSN/index.html">SSN</a>, <a href="../stampr/index.html">stampr</a>, <a href="../stplanr/index.html">stplanr</a>, <a href="../SurfaceTortoise/index.html">SurfaceTortoise</a>, <a href="../SWMPrExtension/index.html">SWMPrExtension</a>, <a href="../TileManager/index.html">TileManager</a>, <a href="../uavRmp/index.html">uavRmp</a>, <a href="../wallace/index.html">wallace</a>, <a href="../waveformlidar/index.html">waveformlidar</a>, <a href="../waver/index.html">waver</a>, <a href="../wildlifeDI/index.html">wildlifeDI</a>, <a href="../wux/index.html">wux</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../adehabitatHR/index.html">adehabitatHR</a>, <a href="../adehabitatHS/index.html">adehabitatHS</a>, <a href="../adespatial/index.html">adespatial</a>, <a href="../AQuadtree/index.html">AQuadtree</a>, <a href="../BayesX/index.html">BayesX</a>, <a href="../bcmaps/index.html">bcmaps</a>, <a href="../BiodiversityR/index.html">BiodiversityR</a>, <a href="../blockCV/index.html">blockCV</a>, <a href="../broom/index.html">broom</a>, <a href="../cancensus/index.html">cancensus</a>, <a href="../cartogram/index.html">cartogram</a>, <a href="../CAST/index.html">CAST</a>, <a href="../covid19mobility/index.html">covid19mobility</a>, <a href="../daymetr/index.html">daymetr</a>, <a href="../dismo/index.html">dismo</a>, <a href="../ecospat/index.html">ecospat</a>, <a href="../ENMeval/index.html">ENMeval</a>, <a href="../epiR/index.html">epiR</a>, <a href="../excursions/index.html">excursions</a>, <a href="../fhidata/index.html">fhidata</a>, <a href="../foieGras/index.html">foieGras</a>, <a href="../FRK/index.html">FRK</a>, <a href="../GapAnalysis/index.html">GapAnalysis</a>, <a href="../ggformula/index.html">ggformula</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../grainscape/index.html">grainscape</a>, <a href="../gstat/index.html">gstat</a>, <a href="../gwfa/index.html">gwfa</a>, <a href="../HSAR/index.html">HSAR</a>, <a href="../hypergate/index.html">hypergate</a>, <a href="../indicspecies/index.html">indicspecies</a>, <a href="../inldata/index.html">inldata</a>, <a href="../IsoriX/index.html">IsoriX</a>, <a href="../landscapemetrics/index.html">landscapemetrics</a>, <a href="../leaflet/index.html">leaflet</a>, <a href="../lingtypology/index.html">lingtypology</a>, <a href="../mapmisc/index.html">mapmisc</a>, <a href="../maptools/index.html">maptools</a>, <a href="../micromap/index.html">micromap</a>, <a href="../mregions/index.html">mregions</a>, <a href="../nhdR/index.html">nhdR</a>, <a href="../npphen/index.html">npphen</a>, <a href="../oce/index.html">oce</a>, <a href="../plotly/index.html">plotly</a>, <a href="../polyCub/index.html">polyCub</a>, <a href="../prioritizrdata/index.html">prioritizrdata</a>, <a href="../raster/index.html">raster</a>, <a href="../rCAT/index.html">rCAT</a>, <a href="../recurse/index.html">recurse</a>, <a href="../reproducible/index.html">reproducible</a>, <a href="../rgbif/index.html">rgbif</a>, <a href="../rmapshaper/index.html">rmapshaper</a>, <a href="../rnaturalearth/index.html">rnaturalearth</a>, <a href="../RSAGA/index.html">RSAGA</a>, <a href="../rtop/index.html">rtop</a>, <a href="../sampSurf/index.html">sampSurf</a>, <a href="../secr/index.html">secr</a>, <a href="../secrlinear/index.html">secrlinear</a>, <a href="../sf/index.html">sf</a>, <a href="../sharpshootR/index.html">sharpshootR</a>, <a href="../SiMRiv/index.html">SiMRiv</a>, <a href="../soilDB/index.html">soilDB</a>, <a href="../sp/index.html">sp</a>, <a href="../spacetime/index.html">spacetime</a>, <a href="../spdep/index.html">spdep</a>, <a href="../sptotal/index.html">sptotal</a>, <a href="../stormwindmodel/index.html">stormwindmodel</a>, <a href="../streamDepletr/index.html">streamDepletr</a>, <a href="../SubgrPlots/index.html">SubgrPlots</a>, <a href="../surveillance/index.html">surveillance</a>, <a href="../tbart/index.html">tbart</a>, <a href="../tidyUSDA/index.html">tidyUSDA</a>, <a href="../tigris/index.html">tigris</a>, <a href="../TrajDataMining/index.html">TrajDataMining</a>, <a href="../trajectories/index.html">trajectories</a>, <a href="../ursa/index.html">ursa</a>, <a href="../windfarmGA/index.html">windfarmGA</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;enhances:</td>
+<td><a href="../geostatsp/index.html">geostatsp</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=rgeos"><samp>https://CRAN.R-project.org/package=rgeos</samp></a>
+to link to this page.</p>
+</body>
+</html>

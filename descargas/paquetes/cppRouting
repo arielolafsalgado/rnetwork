@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package cppRouting</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=cppRouting" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="cppRouting: Fast Implementation of Dijkstra Algorithm" />
+<meta name="og:description" content="Calculation of distances, shortest paths and isochrones on weighted graphs using several variants of Dijkstra algorithm. Proposed algorithms are unidirectional Dijkstra (Dijkstra, E. W. (1959) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2FBF01386390&quot;&gt;doi:10.1007/BF01386390&lt;/a&gt;&amp;gt;), bidirectional Dijkstra (Goldberg, Andrew &amp;amp; Fonseca F. Werneck, Renato (2005) &amp;lt;&lt;a href=&quot;https://pdfs.semanticscholar.org/0761/18dfbe1d5a220f6ac59b4de4ad07b50283ac.pdf&quot;&gt;https://pdfs.semanticscholar.org/0761/18dfbe1d5a220f6ac59b4de4ad07b50283ac.pdf&lt;/a&gt;&amp;gt;), A* search (P. E. Hart, N. J. Nilsson et B. Raphael (1968) &amp;lt;&lt;a href=&quot;https://doi.org/10.1109%2FTSSC.1968.300136&quot;&gt;doi:10.1109/TSSC.1968.300136&lt;/a&gt;&amp;gt;), new bidirectional A* (Pijls &amp;amp; Post (2009) &amp;lt;&lt;a href=&quot;http://repub.eur.nl/pub/16100/ei2009-10.pdf&quot;&gt;http://repub.eur.nl/pub/16100/ei2009-10.pdf&lt;/a&gt;&amp;gt;), Contraction hierarchies (R. Geisberger, P. Sanders, D. Schultes and D. Delling (2008) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2F978-3-540-68552-4_24&quot;&gt;doi:10.1007/978-3-540-68552-4_24&lt;/a&gt;&amp;gt;), PHAST (D. Delling, A.Goldberg, A. Nowatzyk, R. Werneck (2011) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.jpdc.2012.02.007&quot;&gt;doi:10.1016/j.jpdc.2012.02.007&lt;/a&gt;&amp;gt;)." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=cppRouting" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>cppRouting: Fast Implementation of Dijkstra Algorithm</h2>
+<p>Calculation of distances, shortest paths and isochrones on weighted graphs using several variants of Dijkstra algorithm.
+    Proposed algorithms are unidirectional Dijkstra (Dijkstra, E. W. (1959) &lt;<a href="https://doi.org/10.1007%2FBF01386390">doi:10.1007/BF01386390</a>&gt;),
+    bidirectional Dijkstra (Goldberg, Andrew &amp; Fonseca F. Werneck, Renato (2005) &lt;<a href="https://pdfs.semanticscholar.org/0761/18dfbe1d5a220f6ac59b4de4ad07b50283ac.pdf">https://pdfs.semanticscholar.org/0761/18dfbe1d5a220f6ac59b4de4ad07b50283ac.pdf</a>&gt;),
+    A* search (P. E. Hart, N. J. Nilsson et B. Raphael (1968) &lt;<a href="https://doi.org/10.1109%2FTSSC.1968.300136">doi:10.1109/TSSC.1968.300136</a>&gt;),
+    new bidirectional A* (Pijls &amp; Post (2009) &lt;<a href="http://repub.eur.nl/pub/16100/ei2009-10.pdf">http://repub.eur.nl/pub/16100/ei2009-10.pdf</a>&gt;),
+    Contraction hierarchies (R. Geisberger, P. Sanders, D. Schultes and D. Delling (2008) &lt;<a href="https://doi.org/10.1007%2F978-3-540-68552-4_24">doi:10.1007/978-3-540-68552-4_24</a>&gt;),
+    PHAST (D. Delling, A.Goldberg, A. Nowatzyk, R. Werneck (2011) &lt;<a href="https://doi.org/10.1016%2Fj.jpdc.2012.02.007">doi:10.1016/j.jpdc.2012.02.007</a>&gt;).</p>
+<table summary="Package cppRouting summary">
+<tr>
+<td>Version:</td>
+<td>2.0</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 1.0.1), <a href="../RcppParallel/index.html">RcppParallel</a>, <a href="../RcppProgress/index.html">RcppProgress</a> , <a href="../data.table/index.html">data.table</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppParallel/index.html">RcppParallel</a>, <a href="../RcppProgress/index.html">RcppProgress</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../igraph/index.html">igraph</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-01-07</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Vincent Larmet</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Vincent Larmet  &#x3c;&#x6c;&#x61;&#x72;&#x6d;&#x65;&#x74;&#x2e;&#x76;&#x69;&#x6e;&#x63;&#x65;&#x6e;&#x74;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/vlarmet/cppRouting">https://github.com/vlarmet/cppRouting</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>GNU make, C++11</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">cppRouting citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_cppRouting.html">cppRouting results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package cppRouting downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="cppRouting.pdf"> cppRouting.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/cpprouting.html">cppRouting</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/cppRouting_2.0.tar.gz"> cppRouting_2.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/cppRouting_2.0.zip">cppRouting_2.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/cppRouting_2.0.zip">cppRouting_2.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/cppRouting_2.0.zip">cppRouting_2.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/cppRouting_2.0.tgz">cppRouting_2.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/cppRouting_2.0.tgz">cppRouting_2.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/cppRouting"> cppRouting archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=cppRouting"><samp>https://CRAN.R-project.org/package=cppRouting</samp></a>
+to link to this page.</p>
+</body>
+</html>

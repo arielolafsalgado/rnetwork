@@ -1,0 +1,25 @@
+Package: ACSNMineR
+Type: Package
+Title: Gene Enrichment Analysis from ACSN Maps or GMT Files
+Version: 0.16.01.29
+Date: 2016-01-29
+Authors@R: c(person("Paul", "Deveau", role = c("aut", "cre"),
+		     email = "paul.deveau@curie.fr"),
+			 person("Eric", "Bonnet",role = "aut",
+			 email = "eric.bonnet@curie.fr"))
+Maintainer: Paul Deveau <paul.deveau@curie.fr>
+Description: Compute and represent gene set enrichment or depletion from your data based on pre-saved maps from the Atlas of Cancer Signalling Networks (ACSN) or user imported maps.
+ User imported maps must be complying with the GMT format as defined by the Broad Institute, that is to say that the file should be tab-separated, that the first column should contain the module name, the second column can contain comments that will be overwritten with the number of genes in the module, and subsequent columns must contain the list of genes (HUGO symbols; tab-separated) inside the module.
+ The gene set enrichment can be run with hypergeometric test or Fisher exact test, and can use multiple corrections. 
+ Visualization of data can be done either by barplots or heatmaps. 
+Depends: R (>= 3.1.0),ggplot2, gridExtra,scales,
+Suggests: knitr, rmarkdown,
+License: GPL-2
+LazyData: true
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2016-02-12 10:01:07 UTC; User
+Author: Paul Deveau [aut, cre],
+  Eric Bonnet [aut]
+Repository: CRAN
+Date/Publication: 2016-02-12 11:08:48

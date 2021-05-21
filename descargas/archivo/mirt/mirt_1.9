@@ -1,0 +1,40 @@
+Package: mirt
+Version: 1.9
+Date: 2014-04-23
+Type: Package
+Title: Multidimensional Item Response Theory
+Authors@R: c( person("Phil", family="Chalmers", email =
+    "rphilip.chalmers@gmail.com", role = c("aut", "cre", "cph")),
+    person("Joshua", family="Pritikin", role=c('ctb')),
+    person("Alexander", family="Robitzsch", role=c('ctb')),
+    person("Mateusz", family="Zoltak", role=c('ctb')))
+Description: Analysis of dichotomous and polytomous response data using
+    unidimensional and multidimensional latent trait models under the Item
+    Response Theory paradigm. Exploratory and confirmatory models can be
+    estimated with quadrature (EM) or stochastic (MHRM) methods. Confirmatory
+    bi-factor and two-tier analyses are available for modeling item testlets.
+    Multiple group analysis and mixed effects designs also are available for
+    detecting differential item functioning and modelling item and person
+    covariates.
+VignetteBuilder: knitr
+Depends: R (>= 2.15), stats4, lattice, methods
+Imports: GPArotation, Rcpp, sfsmisc, numDeriv
+Suggests: testthat, boot, latticeExtra, directlabels, shiny, knitr,
+        parallel, Rsolnp, alabama, sirt, mirtCAT
+ByteCompile: yes
+LazyLoad: yes
+LazyData: yes
+LinkingTo: Rcpp
+License: GPL (>= 3)
+Repository: CRAN
+Maintainer: Phil Chalmers <rphilip.chalmers@gmail.com>
+URL: https://github.com/philchalmers/mirt,
+        https://github.com/philchalmers/mirt/wiki
+BugReports: https://github.com/philchalmers/mirt/issues?state=open
+Packaged: 2015-03-28 17:44:26 UTC; phil
+Author: Phil Chalmers [aut, cre, cph],
+  Joshua Pritikin [ctb],
+  Alexander Robitzsch [ctb],
+  Mateusz Zoltak [ctb]
+NeedsCompilation: yes
+Date/Publication: 2015-03-29 08:43:16

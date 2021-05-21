@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package us.census.geoheader</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="US 2010 Census SF2 Geographic Header Summary Levels 010-050 [R package us.census.geoheader version 1.0.2]" />
+<meta name="citation_author" content="Greg Minshall" />
+<meta name="citation_publication_date" content="2020-06-25" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=us.census.geoheader" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=us.census.geoheader" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="us.census.geoheader: US 2010 Census SF2 Geographic Header Summary Levels 010-050" />
+<meta name="og:description" content="A simple interface to the Geographic Header information from the &quot;2010 US Census Summary File 2&quot;. The entire Summary File 2 is described at &amp;lt;&lt;a href=&quot;https://catalog.data.gov/dataset/census-2000-summary-file-2-sf2&quot;&gt;https://catalog.data.gov/dataset/census-2000-summary-file-2-sf2&lt;/a&gt;&amp;gt;, but note that this package only provides access to parts of the geographic header ('geoheader') of the file. In particular, only the first 101 columns of the geoheader are included and, more importantly, only rows with summary levels (SUMLEVs) 010 through 050 (nation down through county level) are included. In addition to access to (part of) the geoheader, the package also provides a decode function that takes a column name and value and, for certain columns, returns &quot;the meaning&quot; of that column (i.e., a &quot;SUMLEV&quot; value of 40 means &quot;State&quot;); without a value, the decode function attempts to describe the column itself." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=us.census.geoheader" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>us.census.geoheader: US 2010 Census SF2 Geographic Header Summary Levels 010-050</h2>
+<p>A simple interface to the Geographic Header information
+  from the "2010 US Census Summary File 2".  The entire Summary File 2
+  is described at
+  &lt;<a href="https://catalog.data.gov/dataset/census-2000-summary-file-2-sf2">https://catalog.data.gov/dataset/census-2000-summary-file-2-sf2</a>&gt;,
+  but note that this package only provides access to parts of the
+  geographic header ('geoheader') of the file.  In particular, only
+  the first 101 columns of the geoheader are included and, more
+  importantly, only rows with summary levels (SUMLEVs) 010 through 050
+  (nation down through county level) are included.  In addition to
+  access to (part of) the geoheader, the package also provides a
+  decode function that takes a column name and value and, for certain
+  columns, returns "the meaning" of that column (i.e., a "SUMLEV"
+  value of 40 means "State"); without a value, the decode function
+  attempts to describe the column itself.</p>
+<table summary="Package us.census.geoheader summary">
+<tr>
+<td>Version:</td>
+<td>1.0.2</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>utils, <a href="../tibble/index.html">tibble</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../R.rsp/index.html">R.rsp</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-25</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Greg Minshall [aut, cph, cre],
+  United States Census Bureau [dtc]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Greg Minshall  &#x3c;&#x6d;&#x69;&#x6e;&#x73;&#x68;&#x61;&#x6c;&#x6c;&#x20;&#x61;&#x74;&#x20;&#x61;&#x63;&#x6d;&#x2e;&#x6f;&#x72;&#x67;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/BSD_2_clause">BSD_2_clause</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://gitlab.com/minshall/us-census-geoheader">https://gitlab.com/minshall/us-census-geoheader</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">us.census.geoheader citation info</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_us.census.geoheader.html">us.census.geoheader results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package us.census.geoheader downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="us.census.geoheader.pdf"> us.census.geoheader.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/a-tour.html">a small tour of the geographic header (HTML)</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/us.census.geoheader_1.0.2.tar.gz"> us.census.geoheader_1.0.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/us.census.geoheader_1.0.2.zip">us.census.geoheader_1.0.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/us.census.geoheader_1.0.2.zip">us.census.geoheader_1.0.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/us.census.geoheader_1.0.2.zip">us.census.geoheader_1.0.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/us.census.geoheader_1.0.2.tgz">us.census.geoheader_1.0.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/us.census.geoheader_1.0.2.tgz">us.census.geoheader_1.0.2.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=us.census.geoheader"><samp>https://CRAN.R-project.org/package=us.census.geoheader</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,25 @@
+Package: subtee
+Type: Package
+Title: Subgroup Treatment Effect Estimation in Clinical Trials
+Version: 0.3-4
+Date: 2019-1-3
+Author: Nicolas Ballarini [aut, cre], 
+  Bjoern Bornkamp [aut], 
+  Marius Thomas [aut, cre], 
+  Baldur Magnusson [ctb]
+Maintainer: Nicolas Ballarini <nicolas.ballarini@meduniwien.ac.at>
+Description: Naive and adjusted treatment effect estimation for subgroups. Model 
+  averaging (Bornkamp et.al, 2016 <doi:10.1002/pst.1796>) and bagging (Rosenkranz, 2016 <doi:10.1002/bimj.201500147>) are proposed to address the problem of selection bias in
+  treatment effect estimates for subgroups. The package can be used for all 
+  commonly encountered type of outcomes in clinical trials (continuous, binary, 
+  survival, count). Additional functions are provided to build the subgroup 
+  variables to be used and to plot the results using forest plots.
+Imports: MASS, ggplot2, survival, matrixStats
+Suggests: knitr, parallel
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+License: GPL-2
+NeedsCompilation: no
+Packaged: 2019-01-07 09:47:04 UTC; nico
+Repository: CRAN
+Date/Publication: 2019-01-07 16:40:03 UTC

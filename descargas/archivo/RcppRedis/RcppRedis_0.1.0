@@ -1,0 +1,20 @@
+Package: RcppRedis
+Type: Package
+Title: Rcpp bindings for Redis using the hiredis library
+Version: 0.1.0
+Date: 2014-05-10
+Author: Dirk Eddelbuettel <edd@debian.org>
+Maintainer: Dirk Eddelbuettel <edd@debian.org>
+Description: RcppRedis connects R to the Redis key/value store using the
+  C client library hiredis
+SystemRequirements: The hiredis library (eg via package libhiredis-dev
+        on Debian/Ubuntu, hiredis-devel on Fedora/RedHat, or directly
+        from source from https://github.com/redis/hiredis)
+License: GPL (>= 2)
+Imports: methods, Rcpp (>= 0.11.0), RApiSerialize
+LinkingTo: Rcpp, RApiSerialize
+Suggests: rredis, RUnit
+Packaged: 2014-05-13 13:37:43.789468 UTC; edd
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2014-05-13 16:36:54

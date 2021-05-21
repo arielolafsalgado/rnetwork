@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package pcalg</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Methods for Graphical Models and Causal Inference [R package pcalg version 2.6-12]" />
+<meta name="citation_author1" content="Markus Kalisch" />
+<meta name="citation_author2" content="Alain Hauser" />
+<meta name="citation_author3" content="Martin Maechler" />
+<meta name="citation_publication_date" content="2020-09-22" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=pcalg" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=pcalg" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="pcalg: Methods for Graphical Models and Causal Inference" />
+<meta name="og:description" content="Functions for causal structure learning and causal inference using graphical models. The main algorithms for causal structure learning are PC (for observational data without hidden variables), FCI and RFCI (for observational data with hidden variables), and GIES (for a mix of data from observational studies (i.e. observational data) and data from experiments involving interventions (i.e. interventional data) without hidden variables). For causal inference the IDA algorithm, the Generalized Backdoor Criterion (GBC), the Generalized Adjustment Criterion (GAC) and some related functions are implemented. Functions for incorporating background knowledge are provided." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=pcalg" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>pcalg: Methods for Graphical Models and Causal Inference</h2>
+<p>Functions for causal structure
+  learning and causal inference using graphical models. The main algorithms
+  for causal structure learning are PC (for observational data without hidden
+  variables), FCI and RFCI (for observational data with hidden variables),
+  and GIES (for a mix of data from observational studies
+  (i.e. observational data) and data from experiments
+  involving interventions (i.e. interventional data) without hidden
+  variables). For causal inference the IDA algorithm, the Generalized
+  Backdoor Criterion (GBC), the Generalized Adjustment Criterion (GAC)
+  and some related functions are implemented. Functions for incorporating
+  background knowledge are provided.</p>
+<table summary="Package pcalg summary">
+<tr>
+<td>Version:</td>
+<td>2.6-12</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0.2)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>stats, graphics, utils, methods, <a href="../abind/index.html">abind</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/graph.html"><span class="BioC">graph</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/RBGL.html"><span class="BioC">RBGL</span></a>, <a href="../igraph/index.html">igraph</a>, <a href="../ggm/index.html">ggm</a>, <a href="../corpcor/index.html">corpcor</a>, <a href="../robustbase/index.html">robustbase</a>, <a href="../vcd/index.html">vcd</a>, <a href="../Rcpp/index.html">Rcpp</a>, <a href="../bdsmatrix/index.html">bdsmatrix</a>, <a href="../sfsmisc/index.html">sfsmisc</a> (&ge;
+1.0-26), <a href="../fastICA/index.html">fastICA</a>, <a href="../clue/index.html">clue</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.11.0), <a href="../RcppArmadillo/index.html">RcppArmadillo</a>, <a href="../BH/index.html">BH</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../MASS/index.html">MASS</a>, <a href="../Matrix/index.html">Matrix</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/Rgraphviz.html"><span class="BioC">Rgraphviz</span></a>, <a href="../mvtnorm/index.html">mvtnorm</a>, <a href="../huge/index.html">huge</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../dagitty/index.html">dagitty</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-22</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Markus Kalisch [aut, cre],
+  Alain Hauser [aut],
+  Martin Maechler [aut],
+  Diego Colombo [ctb],
+  Doris Entner [ctb],
+  Patrik Hoyer [ctb],
+  Antti Hyttinen [ctb],
+  Jonas Peters [ctb],
+  Nicoletta Andri [ctb],
+  Emilija Perkovic [ctb],
+  Preetam Nandy [ctb],
+  Philipp Ruetimann [ctb],
+  Daniel Stekhoven [ctb],
+  Manuel Schuerch [ctb],
+  Marco Eigenmann [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Markus Kalisch  &#x3c;&#x6b;&#x61;&#x6c;&#x69;&#x73;&#x63;&#x68;&#x20;&#x61;&#x74;&#x20;&#x73;&#x74;&#x61;&#x74;&#x2e;&#x6d;&#x61;&#x74;&#x68;&#x2e;&#x65;&#x74;&#x68;&#x7a;&#x2e;&#x63;&#x68;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://pcalg.r-forge.r-project.org/">http://pcalg.r-forge.r-project.org/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">pcalg citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news.html">NEWS</a> <a href="ChangeLog">ChangeLog</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/gR.html">gR</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_pcalg.html">pcalg results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package pcalg downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="pcalg.pdf"> pcalg.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/pcalgDoc.pdf">Causal Inference: The R package pcalg</a><br/>
+<a href="vignettes/vignette2018.pdf">Overview of the 'pcalg' Package for R</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/pcalg_2.6-12.tar.gz"> pcalg_2.6-12.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/pcalg_2.6-12.zip">pcalg_2.6-12.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/pcalg_2.6-12.zip">pcalg_2.6-12.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/pcalg_2.6-12.zip">pcalg_2.6-12.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/pcalg_2.6-12.tgz">pcalg_2.6-12.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/pcalg_2.6-12.tgz">pcalg_2.6-12.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/pcalg"> pcalg archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package pcalg reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../qtlnet/index.html">qtlnet</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../BiDAG/index.html">BiDAG</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/epiNEM.html"><span class="BioC">epiNEM</span></a>, <a href="../kpcalg/index.html">kpcalg</a>, <a href="../mDAG/index.html">mDAG</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/miRLAB.html"><span class="BioC">miRLAB</span></a>, <a href="../MRPC/index.html">MRPC</a>, <a href="../pcgen/index.html">pcgen</a>, <a href="../SID/index.html">SID</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../backShift/index.html">backShift</a>, <a href="../CompareCausalNetworks/index.html">CompareCausalNetworks</a>, <a href="../iTOP/index.html">iTOP</a>, <a href="../ParallelPC/index.html">ParallelPC</a>, <a href="../SCCI/index.html">SCCI</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=pcalg"><samp>https://CRAN.R-project.org/package=pcalg</samp></a>
+to link to this page.</p>
+</body>
+</html>

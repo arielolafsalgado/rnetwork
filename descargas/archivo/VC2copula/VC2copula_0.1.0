@@ -1,0 +1,33 @@
+Package: VC2copula
+Title: Extend the 'copula' Package with Families and Models from
+        'VineCopula'
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Thomas",
+            family = "Nagler",
+            role = c("aut", "cre"),
+            email = "mail@tnagler.com"),
+      person(given = "Benedikt",
+             family = "Graeler",
+             role = "ctb"))
+Description: Provides new classes for (rotated) BB1, BB6, BB7, BB8, and 
+  Tawn copulas, extends the existing Gumbel and Clayton families with 
+  rotations, and allows to set up a vine copula model using the 'copula' API.
+  Corresponding objects from the 'VineCopula' API can easily be converted.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/tnagler/VC2copula
+BugReports: https://github.com/tnagler/VC2copula/issues
+Depends: copula (>= 0.999-19.1)
+Imports: VineCopula (>= 2.3.0), methods
+Suggests: lattice, testthat (>= 2.1.0), spelling
+RoxygenNote: 7.0.0
+Language: en-US
+NeedsCompilation: no
+Packaged: 2019-12-07 16:42:14 UTC; n5
+Author: Thomas Nagler [aut, cre],
+  Benedikt Graeler [ctb]
+Maintainer: Thomas Nagler <mail@tnagler.com>
+Repository: CRAN
+Date/Publication: 2019-12-15 14:20:02 UTC

@@ -1,0 +1,24 @@
+Package: noaaoceans
+Type: Package
+Title: Collect Ocean Data from NOAA
+Version: 0.1.0
+Authors@R: person("Sean", "Warlick", email = "warlick.sean@gmail.com",
+    role = c("aut", "cre"))
+Maintainer: Sean Warlick <warlick.sean@gmail.com>
+Description: Provides a small set of tools for collecting data from National 
+    Oceanic and Atmospheric Administration (NOAA) data sources.  The functions 
+    provided in the package are wrappers around NOAA's existing APIs which is
+    found at <https://tidesandcurrents.noaa.gov/api/>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests: testthat, covr, knitr, rmarkdown, dplyr, httptest, ggplot2,
+        maps, mapdata
+RoxygenNote: 6.1.1
+Imports: httr, jsonlite, rvest, xml2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-02-03 22:01:11 UTC; SeanWarlick
+Author: Sean Warlick [aut, cre]
+Repository: CRAN
+Date/Publication: 2019-02-08 12:30:06 UTC

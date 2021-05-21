@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package fitdistrplus</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Help to Fit of a Parametric Distribution to Non-Censored or Censored Data [R package fitdistrplus version 1.1-1]" />
+<meta name="citation_author1" content="Marie-Laure Delignette-Muller" />
+<meta name="citation_author2" content="Christophe Dutang" />
+<meta name="citation_author3" content="Aurelie Siberchicot" />
+<meta name="citation_publication_date" content="2020-05-19" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=fitdistrplus" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=fitdistrplus" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="fitdistrplus: Help to Fit of a Parametric Distribution to Non-Censored or Censored Data" />
+<meta name="og:description" content="Extends the fitdistr() function (of the MASS package) with several functions to help the fit of a parametric distribution to non-censored or censored data. Censored data may contain left censored, right censored and interval censored values, with several lower and upper bounds. In addition to maximum likelihood estimation (MLE), the package provides moment matching (MME), quantile matching (QME) and maximum goodness-of-fit estimation (MGE) methods (available only for non-censored data). Weighted versions of MLE, MME and QME are available. See e.g. Casella &amp;amp; Berger (2002). Statistical inference. Pacific Grove." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=fitdistrplus" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>fitdistrplus: Help to Fit of a Parametric Distribution to Non-Censored or
+Censored Data</h2>
+<p>Extends the fitdistr() function (of the MASS package) with several functions to help the fit of a parametric distribution to non-censored or censored data. Censored data may contain left censored, right censored and interval censored values, with several lower and upper bounds. In addition to maximum likelihood estimation (MLE), the package provides moment matching (MME), quantile matching (QME) and maximum goodness-of-fit estimation (MGE) methods (available only for non-censored data). Weighted versions of MLE, MME and QME are available. See e.g. Casella &amp; Berger (2002). Statistical inference. Pacific Grove.</p>
+<table summary="Package fitdistrplus summary">
+<tr>
+<td>Version:</td>
+<td>1.1-1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.2.0), <a href="../MASS/index.html">MASS</a>, grDevices, <a href="../survival/index.html">survival</a>, methods</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>stats</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../actuar/index.html">actuar</a>, <a href="../rgenoud/index.html">rgenoud</a>, <a href="../mc2d/index.html">mc2d</a>, <a href="../gamlss.dist/index.html">gamlss.dist</a>, <a href="../knitr/index.html">knitr</a>, knitcitations, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../GeneralizedHyperbolic/index.html">GeneralizedHyperbolic</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-05-19</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Marie-Laure Delignette-Muller [aut],
+  Christophe Dutang [aut],
+  Regis Pouillot [ctb],
+  Jean-Baptiste Denis [ctb],
+  Aurelie Siberchicot [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Aurelie Siberchicot  &#x3c;&#x61;&#x75;&#x72;&#x65;&#x6c;&#x69;&#x65;&#x2e;&#x73;&#x69;&#x62;&#x65;&#x72;&#x63;&#x68;&#x69;&#x63;&#x6f;&#x74;&#x20;&#x61;&#x74;&#x20;&#x75;&#x6e;&#x69;&#x76;&#x2d;&#x6c;&#x79;&#x6f;&#x6e;&#x31;&#x2e;&#x66;&#x72;&#x3e;</td>
+</tr>
+<tr>
+<td>Contact:</td>
+<td>&#x4d;&#x61;&#x72;&#x69;&#x65;&#x2d;&#x4c;&#x61;&#x75;&#x72;&#x65;&#x20;&#x44;&#x65;&#x6c;&#x69;&#x67;&#x6e;&#x65;&#x74;&#x74;&#x65;&#x2d;&#x4d;&#x75;&#x6c;&#x6c;&#x65;&#x72;&#xa;&#x3c;&#x6d;&#x61;&#x72;&#x69;&#x65;&#x6c;&#x61;&#x75;&#x72;&#x65;&#x2e;&#x64;&#x65;&#x6c;&#x69;&#x67;&#x6e;&#x65;&#x74;&#x74;&#x65;&#x6d;&#x75;&#x6c;&#x6c;&#x65;&#x72;&#x40;&#x76;&#x65;&#x74;&#x61;&#x67;&#x72;&#x6f;&#x2d;&#x73;&#x75;&#x70;&#x2e;&#x66;&#x72;&#x3e;&#x20;&#x6f;&#x72;&#x20;&#x43;&#x68;&#x72;&#x69;&#x73;&#x74;&#x6f;&#x70;&#x68;&#x65;&#xa;&#x44;&#x75;&#x74;&#x61;&#x6e;&#x67;&#x20;&#x3c;&#x63;&#x68;&#x72;&#x69;&#x73;&#x74;&#x6f;&#x70;&#x68;&#x65;&#x2e;&#x64;&#x75;&#x74;&#x61;&#x6e;&#x67;&#x40;&#x65;&#x6e;&#x73;&#x69;&#x6d;&#x61;&#x67;&#x2e;&#x66;&#x72;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/aursiber/fitdistrplus/issues">https://github.com/aursiber/fitdistrplus/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://lbbe.univ-lyon1.fr/fitdistrplus.html">https://lbbe.univ-lyon1.fr/fitdistrplus.html</a>,
+<a href="https://github.com/aursiber/fitdistrplus">https://github.com/aursiber/fitdistrplus</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">fitdistrplus citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Distributions.html">Distributions</a>, <a href="../../views/Survival.html">Survival</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_fitdistrplus.html">fitdistrplus results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package fitdistrplus downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="fitdistrplus.pdf"> fitdistrplus.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/FAQ.html">Frequently Asked Questions</a><br/>
+<a href="vignettes/Optimalgo.html">Which optimization algorithm to choose?</a><br/>
+<a href="vignettes/paper2JSS.pdf">Fit parametric distributions on non-censored or censored data</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/fitdistrplus_1.1-1.tar.gz"> fitdistrplus_1.1-1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/fitdistrplus_1.1-1.zip">fitdistrplus_1.1-1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/fitdistrplus_1.1-1.zip">fitdistrplus_1.1-1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/fitdistrplus_1.1-1.zip">fitdistrplus_1.1-1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/fitdistrplus_1.1-1.tgz">fitdistrplus_1.1-1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/fitdistrplus_1.1-1.tgz">fitdistrplus_1.1-1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/fitdistrplus"> fitdistrplus archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package fitdistrplus reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../BMT/index.html">BMT</a>, <a href="../enveomics.R/index.html">enveomics.R</a>, <a href="../genasis/index.html">genasis</a>, <a href="../goft/index.html">goft</a>, <a href="../mbbefd/index.html">mbbefd</a>, <a href="../OneStep/index.html">OneStep</a>, <a href="../qmap/index.html">qmap</a>, <a href="../SCI/index.html">SCI</a>, <a href="../stratifyR/index.html">stratifyR</a>, <a href="../vsgoftest/index.html">vsgoftest</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../amt/index.html">amt</a>, <a href="../AnnuityRIR/index.html">AnnuityRIR</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/bayNorm.html"><span class="BioC">bayNorm</span></a>, <a href="../binnednp/index.html">binnednp</a>, <a href="../CalibratR/index.html">CalibratR</a>, <a href="../cascsim/index.html">cascsim</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/COCOA.html"><span class="BioC">COCOA</span></a>, <a href="../conf/index.html">conf</a>, <a href="../Dpit/index.html">Dpit</a>, <a href="../EnviroPRA/index.html">EnviroPRA</a>, <a href="../EpiEstim/index.html">EpiEstim</a>, <a href="../evtclass/index.html">evtclass</a>, <a href="../fasstr/index.html">fasstr</a>, <a href="../FitUltD/index.html">FitUltD</a>, <a href="../fitur/index.html">fitur</a>, <a href="../FMAdist/index.html">FMAdist</a>, <a href="../ICcalib/index.html">ICcalib</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/infercnv.html"><span class="BioC">infercnv</span></a>, <a href="../myTAI/index.html">myTAI</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/openPrimeR.html"><span class="BioC">openPrimeR</span></a>, <a href="../parmsurvfit/index.html">parmsurvfit</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/PERFect.html"><span class="BioC">PERFect</span></a>, <a href="../phenesse/index.html">phenesse</a>, <a href="../PredictionR/index.html">PredictionR</a>, <a href="../RTL/index.html">RTL</a>, <a href="../SeqNet/index.html">SeqNet</a>, <a href="../Seurat/index.html">Seurat</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/sojourner.html"><span class="BioC">sojourner</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/splatter.html"><span class="BioC">splatter</span></a>, <a href="../ssdtools/index.html">ssdtools</a>, <a href="../STI/index.html">STI</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../AICcmodavg/index.html">AICcmodavg</a>, <a href="../baytrends/index.html">baytrends</a>, <a href="../Corbi/index.html">Corbi</a>, <a href="../Ecfun/index.html">Ecfun</a>, <a href="../EGAnet/index.html">EGAnet</a>, <a href="../LindleyR/index.html">LindleyR</a>, <a href="../mc2d/index.html">mc2d</a>, <a href="../mle.tools/index.html">mle.tools</a>, <a href="../raw/index.html">raw</a>, <a href="../zalpha/index.html">zalpha</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;enhances:</td>
+<td><a href="../RobExtremes/index.html">RobExtremes</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=fitdistrplus"><samp>https://CRAN.R-project.org/package=fitdistrplus</samp></a>
+to link to this page.</p>
+</body>
+</html>

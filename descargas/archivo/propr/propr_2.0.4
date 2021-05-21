@@ -1,0 +1,36 @@
+Package: propr
+Title: Calculating Proportionality Between Vectors of Compositional
+        Data
+Version: 2.0.4
+URL: http://github.com/tpq/propr
+BugReports: http://github.com/tpq/propr/issues
+Authors@R: c(
+    person("Thomas", "Quinn", email = "contacttomquinn@gmail.com", role = c("aut", "cre")),
+    person("David", "Lovell", email = "david.lovell@qut.edu.au", role = "aut")
+    )
+Description: The bioinformatic evaluation of gene co-expression often begins with
+    correlation-based analyses. However, this approach lacks statistical validity
+    when applied to relative data, including those biological count data produced by
+    microarray assays or high-throughput RNA-sequencing. Two metrics of proportionality,
+    phi [Lovell et al (2015) <DOI:10.1371/journal.pcbi.1004075>] and rho [Erb and
+    Notredame (2016) <DOI:10.1007/s12064-015-0220-8>], both derived from compositional
+    data analysis, a branch of math dealing specifically with relative data,
+    represent novel alternatives to correlation. This package introduces a programmatic
+    framework for the calculation of feature dependence through proportionality, as
+    discussed in the cited publications.
+License: GPL-2
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 5.0.1
+Depends: R (>= 3.2.2)
+Imports: methods, Rcpp, stats
+Suggests: compositions, dendextend, fastcluster, ggplot2, ggthemes,
+        knitr, rmarkdown, testthat
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2016-10-31 02:33:12 UTC; thom
+Author: Thomas Quinn [aut, cre],
+  David Lovell [aut]
+Maintainer: Thomas Quinn <contacttomquinn@gmail.com>
+Repository: CRAN
+Date/Publication: 2016-10-31 07:57:10

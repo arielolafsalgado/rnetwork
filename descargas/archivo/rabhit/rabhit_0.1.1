@@ -1,0 +1,40 @@
+Package: rabhit
+Type: Package
+Title: Inference Tool for Antibody Haplotype
+Version: 0.1.1
+Authors@R: c(person("Ayelet", "Peres", role=c("aut","cre"), 
+                    email="peresay@biu.ac.il"),
+            person("Moriah", "Gidoni", role=c("aut"), 
+                    email="moriah.cohen@biu.ac.il"),
+             person("Gur", "Yaari", role=c("aut","cph"), 
+                    email="gur.yaari@biu.ac.il"))
+Description: Infers V-D-J haplotypes and gene deletions from AIRR-seq data, 
+    based on IGHJ, IGHD or IGHV as anchor, by adapting a Bayesian framework.
+    It also calculates a Bayes factor, a number that indicates the certainty level of the inference, for each haplotyped gene.
+    Citation:
+    Gidoni, et al (2019) <doi:10.1038/s41467-019-08489-3>.
+License: CC BY-SA 4.0
+URL: https://yaarilab.bitbucket.io/RAbHIT/
+BugReports: https://bitbucket.org/yaarilab/haplotyper/issues
+LazyData: true
+BuildVignettes: true
+VignetteBuilder: knitr
+Encoding: UTF-8
+Depends: R (>= 3.2.5), ggplot2 (>= 2.0.0)
+Imports: dplyr (>= 0.5.0), reshape2, plotly (>= 4.7.1), gtools (>=
+        3.5.0), cowplot (>= 0.9.1), stats, dendextend (>= 1.9.0),
+        data.table, ggdendro (>= 0.1.20), gridExtra, alakazam (>=
+        0.2.10), tigger (>= 0.2.11), methods, htmlwidgets, gtable,
+        grDevices, rlang, RColorBrewer, tidyr, stringi
+Suggests: knitr, rmarkdown
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Collate: 'Data.R' 'rabhit.R' 'internal_functions.R' 'functions.R'
+        'graphic_functions.R'
+Packaged: 2019-05-07 23:25:13 UTC; ayelet
+Author: Ayelet Peres [aut, cre],
+  Moriah Gidoni [aut],
+  Gur Yaari [aut, cph]
+Maintainer: Ayelet Peres <peresay@biu.ac.il>
+Repository: CRAN
+Date/Publication: 2019-05-08 13:10:03 UTC

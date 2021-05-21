@@ -1,0 +1,35 @@
+Package: ISEtools
+Type: Package
+Title: Tools for Ion Selective Electrodes
+Version: 3.1.1
+Date: 2018-12-31
+Authors@R: c(person("Peter", "Dillingham", role = c("aut", "cre"),
+    email = "peter.dillingham@otago.ac.nz"),
+    person("Christina", "McGraw", role = "ctb",
+    email = "cmcgraw@chemistry.otago.ac.nz"),
+    person("Aleksandar", "Radu", role = "ctb",
+    email = "a.radu@keele.ac.uk"),
+	person("Basim", "Alsaedi", role = "ctb",
+    email = "balsaedi@myune.edu.au")
+    )
+Author: Peter Dillingham [aut, cre],
+  Christina McGraw [ctb],
+  Aleksandar Radu [ctb],
+  Basim Alsaedi [ctb]
+Maintainer: Peter Dillingham <peter.dillingham@otago.ac.nz>
+Description: Characterisation and calibration of single or multiple Ion Selective Electrodes (ISEs); 
+    activity estimation of experimental samples. Implements methods described in:
+	Dillingham, P.W., Radu, T., Diamond, D., Radu, A. and McGraw, C.M. (2012) <doi:10.1002/elan.201100510> and 
+	Dillingham, P.W., Alsaedi, B.S.O. and McGraw, C.M. (2017) <doi:10.1109/ICSENS.2017.8233898>.
+Depends: Xmisc, coda
+Imports: graphics, stats, utils
+Suggests: R2WinBUGS, BRugs, boot, rjags, R.rsp
+VignetteBuilder: R.rsp
+SystemRequirements: OpenBUGS (>=3.0) OR jags (>=4.0.0)
+License: GPL-2
+URL: http://www.maths.otago.ac.nz/~dillingh/software.html
+RoxygenNote: 6.0.0
+NeedsCompilation: no
+Packaged: 2019-01-03 08:26:37 UTC; dillingh
+Repository: CRAN
+Date/Publication: 2019-01-08 17:40:08 UTC

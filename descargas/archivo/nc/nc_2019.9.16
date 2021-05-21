@@ -1,0 +1,28 @@
+Package: nc
+Maintainer: Toby Dylan Hocking <toby.hocking@r-project.org>
+Author: Toby Dylan Hocking
+Version: 2019.9.16
+License: GPL-3
+Title: Named Capture to Data Tables
+Description: User-friendly functions for extracting a data
+ table (row for each match, column for each group)
+ from non-tabular text data using regular expressions.
+ Patterns are defined using a readable syntax
+ that makes it easy to build complex patterns
+ in terms of simpler, re-usable sub-patterns.
+ Named R arguments are translated to column names
+ in the output; capture groups without names are used
+ internally in order to provide a standard interface
+ to three regular expression C libraries (PCRE, RE2, ICU).
+ Output can also include numeric columns via
+ user-specified type conversion functions.
+Depends: R (>= 2.14)
+Imports: data.table
+Suggests: testthat, re2r, knitr, stringi
+VignetteBuilder: knitr
+URL: https://github.com/tdhock/nc
+BugReports: https://github.com/tdhock/nc/issues
+NeedsCompilation: no
+Packaged: 2019-09-16 18:20:15 UTC; tdhock
+Repository: CRAN
+Date/Publication: 2019-09-23 15:40:06 UTC

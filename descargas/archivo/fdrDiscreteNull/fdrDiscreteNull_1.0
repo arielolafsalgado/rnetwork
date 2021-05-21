@@ -1,0 +1,24 @@
+Package: fdrDiscreteNull
+Type: Package
+Title: False Discovery Rate Procedure Under Discrete Null Distributions
+Version: 1.0
+Date: 2015-02-06
+Author: Xiongzhi Chen and R.W. Doerge <doerge@purdue.edu>
+Maintainer: Xiongzhi Chen <xiongzhi@princeton.edu>
+Description: It is known that current false discovery rate (FDR) procedures can be very conservative
+             when applied to p-values (and test statistics) with discrete (and heterogeneous) null distributions.
+             This package implements the more powerful weighted generalized FDR procedure that adapts to these two features of the discrete paradigm for multiple testing. 
+             The package takes in the original data set rather than the p-values in order to carry out the adjustments needed for multiple testing in this paradigm. The methodology applies also to multiple testing where the null p-values are uniformly distributed.
+             The package implements the method for three types of test statistics and their p-values:
+             (a) binomial test on if two independent Poisson distributions have the same means, (b) Fisher's exact test on if the conditional distribution is the same as the marginal distribution for two binomial distributions,
+             (c) the exact negative binomial test on if two independent negative binomial distributions with the same size parameter have the same means. 
+             It depends on the R packages ``MCMCpack'' to use its function ``dnoncenhypergeom'' for hypergeometric distributions, and edgeR to uses its normalization techniques for data that follow negative binomial distributions.
+Imports: MCMCpack, edgeR
+Depends: R(>= 3.1.0)
+URL: http://www.princeton.edu/~xiongzhi/fdrDiscreteNull
+License: LGPL
+Encoding: UTF-8
+Packaged: 2015-02-07 02:21:30 UTC; Admin
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2015-02-16 14:10:01

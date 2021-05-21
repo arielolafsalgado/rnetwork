@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package sqldf</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=sqldf" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="sqldf: Manipulate R Data Frames Using SQL" />
+<meta name="og:description" content="The sqldf() function is typically passed a single argument which is an SQL select statement where the table names are ordinary R data frame names. sqldf() transparently sets up a database, imports the data frames into that database, performs the SQL select or other statement and returns the result using a heuristic to determine which class to assign to each column of the returned data frame. The sqldf() or read.csv.sql() functions can also be used to read filtered files into R even if the original files are larger than R itself can handle. 'RSQLite', 'RH2', 'RMySQL' and 'RPostgreSQL' backends are supported." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=sqldf" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>sqldf: Manipulate R Data Frames Using SQL</h2>
+<p>The sqldf() function is typically passed a single argument which 
+	is an SQL select statement where the table names are ordinary R data 
+	frame names.  sqldf() transparently sets up a database, imports the 
+	data frames into that database, performs the SQL select or other
+	statement and returns the result using a heuristic to determine which 
+	class to assign to each column of the returned data frame.  The sqldf() 
+	or read.csv.sql() functions can also be used to read filtered files 
+	into R even if the original files are larger than R itself can handle.
+	'RSQLite', 'RH2', 'RMySQL' and 'RPostgreSQL' backends are supported.</p>
+<table summary="Package sqldf summary">
+<tr>
+<td>Version:</td>
+<td>0.4-11</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.1.0), <a href="../gsubfn/index.html">gsubfn</a> (&ge; 0.6), <a href="../proto/index.html">proto</a>, <a href="../RSQLite/index.html">RSQLite</a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../DBI/index.html">DBI</a>, <a href="../chron/index.html">chron</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../RH2/index.html">RH2</a>, <a href="../RMySQL/index.html">RMySQL</a>, <a href="../RPostgreSQL/index.html">RPostgreSQL</a>, <a href="../svUnit/index.html">svUnit</a>, tcltk, <a href="../MASS/index.html">MASS</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2017-06-28</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>G. Grothendieck</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>G. Grothendieck  &#x3c;&#x67;&#x67;&#x72;&#x6f;&#x74;&#x68;&#x65;&#x6e;&#x64;&#x69;&#x65;&#x63;&#x6b;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ggrothendieck/sqldf/issues">https://github.com/ggrothendieck/sqldf/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/ggrothendieck/sqldf">https://github.com/ggrothendieck/sqldf</a>,
+<a href="https://groups.google.com/group/sqldf">https://groups.google.com/group/sqldf</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="README.html">README</a> <a href="NEWS">NEWS</a> <a href="INSTALL">INSTALL</a></td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Databases.html">Databases</a>, <a href="../../views/HighPerformanceComputing.html">HighPerformanceComputing</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_sqldf.html">sqldf results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package sqldf downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="sqldf.pdf"> sqldf.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/sqldf_0.4-11.tar.gz"> sqldf_0.4-11.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/sqldf_0.4-11.zip">sqldf_0.4-11.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/sqldf_0.4-11.zip">sqldf_0.4-11.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/sqldf_0.4-11.zip">sqldf_0.4-11.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/sqldf_0.4-11.tgz">sqldf_0.4-11.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/sqldf_0.4-11.tgz">sqldf_0.4-11.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/sqldf"> sqldf archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package sqldf reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../Fgmutils/index.html">Fgmutils</a>, <a href="../GPCSIV/index.html">GPCSIV</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/methVisual.html"><span class="BioC">methVisual</span></a>, <a href="../smbinning/index.html">smbinning</a>, <a href="../vmsbase/index.html">vmsbase</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../bdvis/index.html">bdvis</a>, <a href="../BETS/index.html">BETS</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/casper.html"><span class="BioC">casper</span></a>, <a href="../Clustering/index.html">Clustering</a>, <a href="../fdq/index.html">fdq</a>, <a href="../helda/index.html">helda</a>, <a href="../idem/index.html">idem</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/InterMineR.html"><span class="BioC">InterMineR</span></a>, <a href="../ITGM/index.html">ITGM</a>, <a href="../kangar00/index.html">kangar00</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/KinSwingR.html"><span class="BioC">KinSwingR</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/miRNAtap.html"><span class="BioC">miRNAtap</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/mygene.html"><span class="BioC">mygene</span></a>, <a href="../polyPK/index.html">polyPK</a>, <a href="../ProfoundData/index.html">ProfoundData</a>, <a href="../puzzle/index.html">puzzle</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/r3Cseq.html"><span class="BioC">r3Cseq</span></a>, <a href="../RcextTools/index.html">RcextTools</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/RiboProfiling.html"><span class="BioC">RiboProfiling</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/RImmPort.html"><span class="BioC">RImmPort</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/RITAN.html"><span class="BioC">RITAN</span></a>, <a href="../Rprofet/index.html">Rprofet</a>, <a href="../RSDA/index.html">RSDA</a>, <a href="../scorecardModelUtils/index.html">scorecardModelUtils</a>, <a href="../scoringTools/index.html">scoringTools</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/scsR.html"><span class="BioC">scsR</span></a>, <a href="../smartR/index.html">smartR</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/STRINGdb.html"><span class="BioC">STRINGdb</span></a>, <a href="../taxotools/index.html">taxotools</a>, <a href="../tcpl/index.html">tcpl</a>, <a href="../visit/index.html">visit</a>, <a href="../waveformlidar/index.html">waveformlidar</a>, <a href="../WeibullFit/index.html">WeibullFit</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="http://www.bioconductor.org/packages/release/bioc/html/rcellminer.html"><span class="BioC">rcellminer</span></a>, <a href="../sqlutils/index.html">sqlutils</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=sqldf"><samp>https://CRAN.R-project.org/package=sqldf</samp></a>
+to link to this page.</p>
+</body>
+</html>

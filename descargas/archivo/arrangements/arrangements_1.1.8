@@ -1,0 +1,32 @@
+Type: Package
+Package: arrangements
+Title: Fast Generators and Iterators for Permutations, Combinations,
+        Integer Partitions and Compositions
+Version: 1.1.8
+Date: 2020-01-06
+Authors@R: 
+    person(given = "Randy",
+           family = "Lai",
+           role = c("aut", "cre"),
+           email = "randy.cs.lai@gmail.com")
+Description: Fast generators and iterators for permutations, combinations,
+    integer partitions and compositions. The arrangements are in
+    lexicographical order and generated iteratively in a memory efficient manner. 
+    It has been demonstrated that 'arrangements' outperforms most existing
+    packages of similar kind. Benchmarks could be found at
+    <https://randy3k.github.io/arrangements/articles/benchmark.html>.
+License: MIT + file LICENSE
+URL: https://randy3k.github.io/arrangements
+Depends: R (>= 3.4.0)
+Imports: gmp, methods, R6
+Suggests: foreach, knitr, rmarkdown, testthat
+ByteCompile: yes
+Encoding: UTF-8
+NeedsCompilation: yes
+RoxygenNote: 6.1.1
+SystemRequirements: gmp (>= 4.2.3)
+Packaged: 2020-01-07 19:58:48 UTC; randy
+Author: Randy Lai [aut, cre]
+Maintainer: Randy Lai <randy.cs.lai@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-01-08 23:20:02 UTC

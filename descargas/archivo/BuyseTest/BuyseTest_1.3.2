@@ -1,0 +1,40 @@
+Package: BuyseTest
+Type: Package
+Title: Generalized Pairwise Comparisons
+Version: 1.3.2
+Date: 2018-05-29
+Author: Brice Ozenne[aut, cre], Julien Peron[aut]
+Maintainer: brice ozenne <brice.ozenne@orange.fr>
+Description: Implementation of the Generalized Pairwise Comparisons. This test
+    enables to compare two groups of observations in randomized trials(e.g treated
+    vs. control patients) on several prioritized outcomes. Pairwise comparisons
+    require consideration of all possible pairs of individuals, one taken from the
+    treatment group and the other taken from the control group. The outcomes of the
+    two individuals forming a pair are compared. Thresholds of minimal clinically
+    significant differences can be defined. It is possible to analyze simultaneously
+    several outcomes by prioritizing the variables that capture them. The highest
+    priority is assigned to the variable considered the most clinically relevant.
+    A natural way of handling uninformative or neutral pairs is to consider the
+    outcomes in descending order of priority: whenever a pair is uninformative or
+    neutral for an outcome of higher priority, the outcomes of lower priority are
+    examined In the case of time-to-event endpoint, four methods to handle censored
+    observations are available in this package (Gehan, Peto, Efron, and Peron).
+License: GPL-3
+Depends: R (>= 2.10), prodlim, Rcpp, data.table
+Imports: doParallel, foreach, methods, lava, parallel, stats, stats4,
+        utils
+Suggests: pbapply, survival, testthat
+LinkingTo: Rcpp, RcppArmadillo
+SystemRequirements: C++11
+RoxygenNote: 6.0.1
+Collate: '0-onLoad.R' '1-setGeneric.R' 'BuyseRes-object.R'
+        'BuyseRes-summary.R' 'BuyseRes-confint.R' 'BuyseRes_get.R'
+        'BuyseRes_show.R' 'BuyseTest-check.R' 'BuyseTest-inference.R'
+        'BuyseTest-initialization.R' 'BuyseTest-package.R'
+        'BuyseTest-print.R' 'BuyseTest.R' 'BuyseTest.options-object.R'
+        'BuyseTest.options.R' 'RcppExports.R' 'constStrata.R'
+        'seBuyseTest.R' 'simBuyseTest.R' 'tableComparison.R' 'valid.R'
+NeedsCompilation: yes
+Packaged: 2018-05-29 07:07:50.422 UTC; hpl802
+Repository: CRAN
+Date/Publication: 2018-05-29 07:28:55 UTC

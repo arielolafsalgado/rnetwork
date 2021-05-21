@@ -1,0 +1,33 @@
+Package: arkdb
+Version: 0.0.5
+Title: Archive and Unarchive Databases Using Flat Files
+Description: Flat text files provide a robust, compressible, and portable
+  way to store tables from databases.  This package provides convenient
+  functions for exporting tables from relational database connections
+  into compressed text files and streaming those text files back into
+  a database without requiring the whole table to fit in working memory.
+Authors@R: c(person("Carl", "Boettiger", 
+                    email = "cboettig@gmail.com", 
+                    role = c("aut", "cre", "cph"),
+                    comment=c(ORCID = "0000-0002-1642-628X")),
+              person("Richard", "FitzJohn", role = "ctb"))
+URL: https://github.com/ropensci/arkdb
+BugReports: https://github.com/ropensci/arkdb/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+VignetteBuilder: knitr
+RoxygenNote: 6.1.0
+Imports: DBI, progress, tools, utils
+Suggests: readr, spelling, dplyr, dbplyr, nycflights13, testthat,
+        knitr, covr, fs, rmarkdown, RSQLite, MonetDBLite (>= 0.5.0)
+Language: en-US
+NeedsCompilation: no
+Packaged: 2018-10-31 20:34:06 UTC; cboettig
+Author: Carl Boettiger [aut, cre, cph]
+    (<https://orcid.org/0000-0002-1642-628X>),
+  Richard FitzJohn [ctb]
+Maintainer: Carl Boettiger <cboettig@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-10-31 21:10:03 UTC

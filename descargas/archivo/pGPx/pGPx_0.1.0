@@ -1,0 +1,25 @@
+Package: pGPx
+Type: Package
+Title: Pseudo-Realizations for Gaussian Process Excursions
+Version: 0.1.0
+Date: 2018-08-16
+Authors@R: c(person("Dario","Azzimonti",role=c("aut","cre","cph"),email= "dario.azzimonti@gmail.com"),person("Julien","Bect", role=c("ctb"),email = "julien.bect@centralesupelec.fr"),person("Pedro","Felzenszwalb",role= c("ctb","cph"),comment="Original dt code, http://cs.brown.edu/people/pfelzens/dt/index.html"))
+Author: Dario Azzimonti [aut, cre, cph],
+  Julien Bect [ctb],
+  Pedro Felzenszwalb [ctb, cph] (Original dt code,
+    http://cs.brown.edu/people/pfelzens/dt/index.html)
+Maintainer: Dario Azzimonti <dario.azzimonti@gmail.com>
+Description: Computes pseudo-realizations from the posterior distribution of a Gaussian Process (GP) with the method described in Azzimonti et al. (2016) <doi:10.1137/141000749>. The realizations are obtained from simulations of the field at few well chosen points that minimize the expected distance in measure between the true excursion set of the field and the approximate one. Also implements a R interface for (the main function of) Distance Transform of sampled Functions (<http://cs.brown.edu/people/pfelzens/dt/index.html>).
+URL: https://epubs.siam.org/doi/abs/10.1137/141000749
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: Rcpp (>= 0.12.13), DiceKriging, pbivnorm, KrigInv, rgenoud,
+        randtoolbox, pracma, grDevices
+Suggests: anMC, DiceDesign
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2018-08-16 13:44:00 UTC; dario
+Repository: CRAN
+Date/Publication: 2018-08-17 08:40:02 UTC

@@ -1,0 +1,30 @@
+Package: conStruct
+Version: 1.0.1
+Date: 2018-10-19
+Title: Models Spatially Continuous and Discrete Population Genetic
+        Structure
+Description: A method for modeling genetic data as a combination of discrete
+    layers, within each of which relatedness may decay continuously with geographic
+    distance. This package contains code for running analyses (which are implemented
+    in the modeling language 'rstan') and visualizing and interpreting output. See the
+    paper for more details on the model and its utility.
+Authors@R: person("Gideon", "Bradburd", email = "bradburd@msu.edu", role = c("aut", "cre"))
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+Depends: R (>= 3.4.0), Rcpp (>= 0.12.0), methods
+Imports: rstan (>= 2.18.1), rstantools (>= 1.5.0), caroline, gtools,
+        foreach, parallel, doParallel
+LinkingTo: StanHeaders (>= 2.18.0), rstan (>= 2.18.1), BH (>= 1.66.0),
+        Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0)
+SystemRequirements: GNU make
+NeedsCompilation: yes
+RoxygenNote: 6.1.0
+Suggests: knitr, rmarkdown, maps
+VignetteBuilder: knitr
+Packaged: 2018-10-19 16:30:13 UTC; bradburd
+Author: Gideon Bradburd [aut, cre]
+Maintainer: Gideon Bradburd <bradburd@msu.edu>
+Repository: CRAN
+Date/Publication: 2018-10-19 22:00:31 UTC

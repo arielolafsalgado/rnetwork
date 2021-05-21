@@ -1,0 +1,34 @@
+Package: qMRI
+Type: Package
+Title: Methods for Quantitative Magnetic Resonance Imaging (qMRI)
+Version: 1.0
+Date: 2019-05-08
+Authors@R: c(person("Joerg", "Polzehl", role = c("aut"),
+                    email = "joerg.polzehl@wias-berlin.de"),
+             person("Karsten", "Tabelow", role = c("aut", "cre"),
+                    email = "karsten.tabelow@wias-berlin.de"),
+             person("WIAS Berlin", role = c("cph", "fnd")))
+Maintainer: Karsten Tabelow <karsten.tabelow@wias-berlin.de>
+Depends: R (>= 3.5), awsMethods (>= 1.0)
+Imports: oro.nifti (>= 0.9), stringr, dti (>= 1.4), aws (>= 2.2),
+        adimpro (>= 0.9)
+LazyData: TRUE
+Description: Implementation of methods for estimation of quantitative maps
+    from Multi-Parameter Mapping (MPM) acquisitions (Weiskopf et al. (2013) 
+    <doi:10.3389/fnins.2013.00095>) including adaptive
+    smoothing methods in the framework of the ESTATICS model
+    (Estimating the apparent transverse relaxation time (R2*) from images with 
+    different contrasts, Weiskopf et al. (2014) <doi:10.3389/fnins.2014.00278>). 
+    The smoothing method is described in Mohammadi et al. (2017). 
+    <doi:10.20347/WIAS.PREPRINT.2432>.
+License: GPL (>= 2)
+Copyright: This package is Copyright (C) 2015-2019 Weierstrass
+        Institute for Applied Analysis and Stochastics.
+URL: http://www.wias-berlin.de/research/ats/imaging/
+NeedsCompilation: yes
+Packaged: 2019-05-31 13:29:17 UTC; polzehl
+Author: Joerg Polzehl [aut],
+  Karsten Tabelow [aut, cre],
+  WIAS Berlin [cph, fnd]
+Repository: CRAN
+Date/Publication: 2019-05-31 15:50:09 UTC

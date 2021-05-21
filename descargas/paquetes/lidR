@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package lidR</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Airborne LiDAR Data Manipulation and Visualization for Forestry Applications [R package lidR version 3.0.4]" />
+<meta name="citation_author1" content="Jean-Romain Roussel" />
+<meta name="citation_author2" content="David Auty" />
+<meta name="citation_publication_date" content="2020-10-10" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=lidR" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=lidR" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="lidR: Airborne LiDAR Data Manipulation and Visualization for Forestry Applications" />
+<meta name="og:description" content="Airborne LiDAR (Light Detection and Ranging) interface for data manipulation and visualization. Read/write 'las' and 'laz' files, computation of metrics in area based approach, point filtering, artificial point reduction, classification from geographic data, normalization, individual tree segmentation and other manipulations." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=lidR" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>lidR: Airborne LiDAR Data Manipulation and Visualization for Forestry
+Applications</h2>
+<p>Airborne LiDAR (Light Detection and Ranging) interface for data
+    manipulation and visualization. Read/write 'las' and 'laz' files, computation
+    of metrics in area based approach, point filtering, artificial point reduction,
+    classification from geographic data, normalization, individual tree segmentation
+    and other manipulations.</p>
+<table summary="Package lidR summary">
+<tr>
+<td>Version:</td>
+<td>3.0.4</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.1.0), methods, <a href="../raster/index.html">raster</a>, <a href="../sp/index.html">sp</a> (&ge; 1.4.2)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../data.table/index.html">data.table</a> (&ge; 1.12.0), <a href="../future/index.html">future</a>, <a href="../gdalUtils/index.html">gdalUtils</a>, <a href="../geometry/index.html">geometry</a>, <a href="../glue/index.html">glue</a>, grDevices, <a href="../lazyeval/index.html">lazyeval</a>, <a href="../Rcpp/index.html">Rcpp</a> (&ge; 1.0.3), <a href="../RCSF/index.html">RCSF</a>, <a href="../rgeos/index.html">rgeos</a>, <a href="../rgdal/index.html">rgdal</a> (&ge;
+1.4.8), <a href="../rgl/index.html">rgl</a>, <a href="../rlas/index.html">rlas</a> (&ge; 1.3.5), <a href="../sf/index.html">sf</a>, stats, tools, utils</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../BH/index.html">BH</a> (&ge; 1.72.0), <a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="http://www.bioconductor.org/packages/release/bioc/html/EBImage.html"><span class="BioC">EBImage</span></a>, <a href="../concaveman/index.html">concaveman</a>, <a href="../crayon/index.html">crayon</a>, <a href="../gstat/index.html">gstat</a>, <a href="../hexbin/index.html">hexbin</a>, <a href="../mapview/index.html">mapview</a>, <a href="../mapedit/index.html">mapedit</a>, <a href="../progress/index.html">progress</a>, <a href="../testthat/index.html">testthat</a> (&ge; 2.1.0), <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../covr/index.html">covr</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-10</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Jean-Romain Roussel [aut, cre, cph],
+  David Auty [aut, ctb] (Reviews the documentation),
+  Florian De Boissieu [ctb] (Fixed bugs and improved catalog features),
+  Andrew Sánchez Meador [ctb] (Implemented wing2015() for
+    segment_snags()),
+  Bourdon Jean-François [ctb] (Contributed to Roussel2020() for
+    track_sensor()),
+  Gatziolis Demetrios [ctb] (Implemented Gatziolis2019() for
+    track_sensor())</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Jean-Romain Roussel  &#x3c;&#x6a;&#x65;&#x61;&#x6e;&#x2d;&#x72;&#x6f;&#x6d;&#x61;&#x69;&#x6e;&#x2e;&#x72;&#x6f;&#x75;&#x73;&#x73;&#x65;&#x6c;&#x2e;&#x31;&#x20;&#x61;&#x74;&#x20;&#x75;&#x6c;&#x61;&#x76;&#x61;&#x6c;&#x2e;&#x63;&#x61;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/Jean-Romain/lidR/issues">https://github.com/Jean-Romain/lidR/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/Jean-Romain/lidR">https://github.com/Jean-Romain/lidR</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">lidR citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_lidR.html">lidR results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package lidR downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="lidR.pdf"> lidR.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/lidR-LAS-class.html">1. LAS formal class</a><br/>
+<a href="vignettes/lidR-LAScatalog-class.html">2. LAScatalog formal class</a><br/>
+<a href="vignettes/lidR-LAScatalog-engine.html">3. LAScatalog processing engine</a><br/>
+<a href="vignettes/lidR-catalog-apply-examples.html">5. Create a function to process a LAScatalog</a><br/>
+<a href="vignettes/lidR-computation-speed-LAScatalog.html">4. Speed-up the computations on a LAScatalog</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/lidR_3.0.4.tar.gz"> lidR_3.0.4.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/lidR_3.0.4.zip">lidR_3.0.4.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/lidR_3.0.4.zip">lidR_3.0.4.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/lidR_3.0.4.zip">lidR_3.0.4.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/lidR_3.0.4.tgz">lidR_3.0.4.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/lidR_3.0.4.tgz">lidR_3.0.4.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/lidR"> lidR archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package lidR reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../TreeLS/index.html">TreeLS</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../leafR/index.html">leafR</a>, <a href="../viewshed3d/index.html">viewshed3d</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../rGEDI/index.html">rGEDI</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=lidR"><samp>https://CRAN.R-project.org/package=lidR</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package sparklyr</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="R Interface to Apache Spark [R package sparklyr version 1.4.0]" />
+<meta name="citation_author1" content="Javier Luraschi" />
+<meta name="citation_author2" content="Kevin Kuo" />
+<meta name="citation_author3" content="Kevin Ushey" />
+<meta name="citation_author4" content="JJ Allaire" />
+<meta name="citation_author5" content="Hossein Falaki" />
+<meta name="citation_author6" content="Lu Wang" />
+<meta name="citation_author7" content="Andy Zhang" />
+<meta name="citation_author8" content="Yitao Li" />
+<meta name="citation_author9" content="The Apache Software Foundation" />
+<meta name="citation_publication_date" content="2020-09-16" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=sparklyr" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=sparklyr" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="sparklyr: R Interface to Apache Spark" />
+<meta name="og:description" content="R interface to Apache Spark, a fast and general engine for big data processing, see &amp;lt;&lt;a href=&quot;http://spark.apache.org&quot;&gt;http://spark.apache.org&lt;/a&gt;&amp;gt;. This package supports connecting to local and remote Apache Spark clusters, provides a 'dplyr' compatible back-end, and provides an interface to Spark's built-in machine learning algorithms." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=sparklyr" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>sparklyr: R Interface to Apache Spark</h2>
+<p>R interface to Apache Spark, a fast and general engine for big data
+    processing, see &lt;<a href="http://spark.apache.org">http://spark.apache.org</a>&gt;. This package supports connecting to
+    local and remote Apache Spark clusters, provides a 'dplyr' compatible back-end,
+    and provides an interface to Spark's built-in machine learning algorithms.</p>
+<table summary="Package sparklyr summary">
+<tr>
+<td>Version:</td>
+<td>1.4.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.2)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../assertthat/index.html">assertthat</a>, <a href="../base64enc/index.html">base64enc</a>, <a href="../config/index.html">config</a> (&ge; 0.2), <a href="../DBI/index.html">DBI</a> (&ge; 0.6-1), <a href="../dplyr/index.html">dplyr</a> (&ge; 0.7.2), <a href="../dbplyr/index.html">dbplyr</a> (&ge; 1.1.0), <a href="../digest/index.html">digest</a>, <a href="../forge/index.html">forge</a>, <a href="../generics/index.html">generics</a>, <a href="../globals/index.html">globals</a>, <a href="../glue/index.html">glue</a>, <a href="../httr/index.html">httr</a> (&ge; 1.2.1), <a href="../jsonlite/index.html">jsonlite</a> (&ge; 1.4), <a href="../lifecycle/index.html">lifecycle</a>, methods, <a href="../openssl/index.html">openssl</a> (&ge; 0.8), <a href="../purrr/index.html">purrr</a>, <a href="../r2d3/index.html">r2d3</a>, <a href="../rappdirs/index.html">rappdirs</a>, <a href="../rjson/index.html">rjson</a> (&ge;
+0.2.20), <a href="../rlang/index.html">rlang</a> (&ge; 0.1.4), <a href="../rprojroot/index.html">rprojroot</a>, <a href="../rstudioapi/index.html">rstudioapi</a> (&ge; 0.10), <a href="../stringr/index.html">stringr</a>, <a href="../tibble/index.html">tibble</a>, <a href="../tidyr/index.html">tidyr</a>, <a href="../tidyselect/index.html">tidyselect</a>, <a href="../vctrs/index.html">vctrs</a>, <a href="../uuid/index.html">uuid</a>, <a href="../withr/index.html">withr</a>, <a href="../xml2/index.html">xml2</a>, <a href="../ellipsis/index.html">ellipsis</a> (&ge; 0.1.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../arrow/index.html">arrow</a> (&ge; 0.14.0), <a href="../broom/index.html">broom</a>, <a href="../diffobj/index.html">diffobj</a>, <a href="../foreach/index.html">foreach</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../iterators/index.html">iterators</a>, <a href="../janeaustenr/index.html">janeaustenr</a>, <a href="../Lahman/index.html">Lahman</a>, <a href="../mlbench/index.html">mlbench</a>, <a href="../nnet/index.html">nnet</a>, <a href="../nycflights13/index.html">nycflights13</a>, <a href="../R6/index.html">R6</a>, <a href="../RCurl/index.html">RCurl</a>, <a href="../reshape2/index.html">reshape2</a>, <a href="../shiny/index.html">shiny</a> (&ge; 1.0.1), <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-16</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Javier Luraschi [aut],
+  Kevin Kuo <a href="https://orcid.org/0000-0001-7803-7901"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Kevin Ushey [aut],
+  JJ Allaire [aut],
+  Samuel Macedo [ctb],
+  Hossein Falaki [aut],
+  Lu Wang [aut],
+  Andy Zhang [aut],
+  Yitao Li <a href="https://orcid.org/0000-0002-1261-905X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    cre],
+  RStudio [cph],
+  The Apache Software Foundation [aut, cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Yitao Li  &#x3c;&#x79;&#x69;&#x74;&#x61;&#x6f;&#x20;&#x61;&#x74;&#x20;&#x72;&#x73;&#x74;&#x75;&#x64;&#x69;&#x6f;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/sparklyr/sparklyr/issues">https://github.com/sparklyr/sparklyr/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a> | file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://spark.rstudio.com/">https://spark.rstudio.com/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>Spark: 1.6.x or 2.x</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Databases.html">Databases</a>, <a href="../../views/ModelDeployment.html">ModelDeployment</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_sparklyr.html">sparklyr results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package sparklyr downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="sparklyr.pdf"> sparklyr.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/sparklyr_1.4.0.tar.gz"> sparklyr_1.4.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/sparklyr_1.4.0.zip">sparklyr_1.4.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/sparklyr_1.4.0.zip">sparklyr_1.4.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/sparklyr_1.4.0.zip">sparklyr_1.4.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/sparklyr_1.4.0.tgz">sparklyr_1.4.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/sparklyr_1.4.0.tgz">sparklyr_1.4.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/sparklyr"> sparklyr archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package sparklyr reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../geospark/index.html">geospark</a>, <a href="../graphframes/index.html">graphframes</a>, <a href="../mleap/index.html">mleap</a>, <a href="../rsparkling/index.html">rsparkling</a>, <a href="../shinyML/index.html">shinyML</a>, <a href="../spark.sas7bdat/index.html">spark.sas7bdat</a>, <a href="../sparkavro/index.html">sparkavro</a>, <a href="../sparkbq/index.html">sparkbq</a>, <a href="../sparkhail/index.html">sparkhail</a>, <a href="../sparklyr.flint/index.html">sparklyr.flint</a>, <a href="../sparklyr.nested/index.html">sparklyr.nested</a>, <a href="../sparktf/index.html">sparktf</a>, <a href="../sparkwarc/index.html">sparkwarc</a>, <a href="../sparkxgb/index.html">sparkxgb</a>, <a href="../variantspark/index.html">variantspark</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../butcher/index.html">butcher</a>, <a href="../corrr/index.html">corrr</a>, <a href="../parsnip/index.html">parsnip</a>, <a href="../pointblank/index.html">pointblank</a>, <a href="../resourcer/index.html">resourcer</a>, <a href="../vip/index.html">vip</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=sparklyr"><samp>https://CRAN.R-project.org/package=sparklyr</samp></a>
+to link to this page.</p>
+</body>
+</html>

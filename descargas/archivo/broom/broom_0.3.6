@@ -1,0 +1,34 @@
+Package: broom
+Type: Package
+Title: Convert Statistical Analysis Objects into Tidy Data Frames
+Version: 0.3.6
+Date: 2015-02-17
+Authors@R: c(
+    person("David", "Robinson", email = "admiral.david@gmail.com", role = c("aut", "cre")),
+    person("Matthieu", "Gomez", email = "mattg@princeton.edu", role = "ctb"),
+    person("Boris", "Demeshev", email = "boris.demeshev@gmail.com", role = "ctb"),
+    person("Hadley", "Wickham", email = "hadley@rstudio.com", role = "ctb")
+    )
+Maintainer: David Robinson <admiral.david@gmail.com>
+Description: Convert statistical analysis objects from R into tidy data frames,
+    so that they can more easily be combined, reshaped and otherwise processed
+    with tools like dplyr, tidyr and ggplot2. The package provides three S3
+    generics: tidy, which summarizes a model's statistical findings such as
+    coefficients of a regression; augment, which adds columns to the original
+    data such as predictions, residuals and cluster assignments; and glance,
+    which provides a one-row summary of model-level statistics.
+Imports: plyr, dplyr, tidyr, psych, stringr
+Suggests: knitr, survival, gam, glmnet, lfe, Lahman, MASS, sp, maps,
+        maptools, multcomp, testthat, lme4, zoo, ggplot2
+URL: http://github.com/dgrtwo/broom
+BugReports: http://github.com/dgrtwo/broom/issues
+VignetteBuilder: knitr
+License: MIT + file LICENSE
+Packaged: 2015-02-18 16:44:44 UTC; dgrtwo
+Author: David Robinson [aut, cre],
+  Matthieu Gomez [ctb],
+  Boris Demeshev [ctb],
+  Hadley Wickham [ctb]
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2015-02-18 19:31:14

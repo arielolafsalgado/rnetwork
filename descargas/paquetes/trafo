@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package trafo</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Estimation, Comparison and Selection of Transformations [R package trafo version 1.0.1]" />
+<meta name="citation_author1" content="Lily Medina" />
+<meta name="citation_author2" content="Piedad Castro" />
+<meta name="citation_author3" content="Ann-Kristin Kreutzmann" />
+<meta name="citation_author4" content="Natalia Rojas-Perilla" />
+<meta name="citation_publication_date" content="2018-11-27" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=trafo" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=trafo" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="trafo: Estimation, Comparison and Selection of Transformations" />
+<meta name="og:description" content="Estimation, selection and comparison of several families of transformations. The families of transformations included in the package are the following: Bickel-Doksum (Bickel and Doksum 1981 &amp;lt;&lt;a href=&quot;https://doi.org/10.2307%2F2287831&quot;&gt;doi:10.2307/2287831&lt;/a&gt;&amp;gt;), Box-Cox, Dual (Yang 2006 &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.econlet.2006.01.011&quot;&gt;doi:10.1016/j.econlet.2006.01.011&lt;/a&gt;&amp;gt;), Glog (Durbin et al. 2002 &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fbioinformatics%2F18.suppl_1.S105&quot;&gt;doi:10.1093/bioinformatics/18.suppl_1.S105&lt;/a&gt;&amp;gt;), gpower (Kelmansky et al. 2013 &amp;lt;&lt;a href=&quot;https://doi.org/10.1515%2Fsagmb-2012-0030&quot;&gt;doi:10.1515/sagmb-2012-0030&lt;/a&gt;&amp;gt;), Log, Log-shift opt (Feng et al. 2016 &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fsta4.104&quot;&gt;doi:10.1002/sta4.104&lt;/a&gt;&amp;gt;), Manly, modulus (John and Draper 1980 &amp;lt;&lt;a href=&quot;https://doi.org/10.2307%2F2986305&quot;&gt;doi:10.2307/2986305&lt;/a&gt;&amp;gt;), Neglog (Whittaker et al. 2005 &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fj.1467-9876.2005.00520.x&quot;&gt;doi:10.1111/j.1467-9876.2005.00520.x&lt;/a&gt;&amp;gt;), Reciprocal and Yeo-Johnson. The package simplifies to compare linear models with untransformed and transformed dependent variable as well as linear models where the dependent variable is transformed with different transformations. Furthermore, the package employs maximum likelihood approaches, moments optimization and divergence minimization to estimate the optimal transformation parameter." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=trafo" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>trafo: Estimation, Comparison and Selection of Transformations</h2>
+<p>Estimation, selection and comparison of several families of
+ transformations. The families of transformations included in the package are 
+ the following: Bickel-Doksum (Bickel and Doksum 1981 &lt;<a href="https://doi.org/10.2307%2F2287831">doi:10.2307/2287831</a>&gt;), 
+ Box-Cox, Dual (Yang 2006 &lt;<a href="https://doi.org/10.1016%2Fj.econlet.2006.01.011">doi:10.1016/j.econlet.2006.01.011</a>&gt;), 
+ Glog (Durbin et al. 2002 &lt;<a href="https://doi.org/10.1093%2Fbioinformatics%2F18.suppl_1.S105">doi:10.1093/bioinformatics/18.suppl_1.S105</a>&gt;), 
+ gpower (Kelmansky et al. 2013 &lt;<a href="https://doi.org/10.1515%2Fsagmb-2012-0030">doi:10.1515/sagmb-2012-0030</a>&gt;), 
+ Log, Log-shift opt (Feng et al. 2016 &lt;<a href="https://doi.org/10.1002%2Fsta4.104">doi:10.1002/sta4.104</a>&gt;),
+ Manly, modulus (John and Draper 1980 &lt;<a href="https://doi.org/10.2307%2F2986305">doi:10.2307/2986305</a>&gt;), 
+ Neglog (Whittaker et al. 2005 &lt;<a href="https://doi.org/10.1111%2Fj.1467-9876.2005.00520.x">doi:10.1111/j.1467-9876.2005.00520.x</a>&gt;), 
+ Reciprocal and Yeo-Johnson. The package simplifies to 
+ compare linear models with untransformed and transformed dependent variable 
+ as well as linear models where the dependent variable is transformed with 
+ different transformations. Furthermore, the package employs maximum likelihood 
+ approaches, moments optimization and divergence minimization to estimate the optimal 
+ transformation parameter.</p>
+<table summary="Package trafo summary">
+<tr>
+<td>Version:</td>
+<td>1.0.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.2.4)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../FNN/index.html">FNN</a>, <a href="../moments/index.html">moments</a>, <a href="../pryr/index.html">pryr</a>, graphics, grDevices, <a href="../lmtest/index.html">lmtest</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../R.rsp/index.html">R.rsp</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2018-11-27</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Lily Medina [aut],
+  Piedad Castro [aut],
+  Ann-Kristin Kreutzmann [aut, cre],
+  Natalia Rojas-Perilla [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Ann-Kristin Kreutzmann  &#x3c;&#x61;&#x6e;&#x6e;&#x2d;&#x6b;&#x72;&#x69;&#x73;&#x74;&#x69;&#x6e;&#x2e;&#x6b;&#x72;&#x65;&#x75;&#x74;&#x7a;&#x6d;&#x61;&#x6e;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x66;&#x75;&#x2d;&#x62;&#x65;&#x72;&#x6c;&#x69;&#x6e;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>Copyright:</td>
+<td>see file <a href="COPYRIGHTS">COPYRIGHTS</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_trafo.html">trafo results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package trafo downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="trafo.pdf"> trafo.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/vignette_trafo.pdf">The R package trafo for Transforming Linear Regression Models</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/trafo_1.0.1.tar.gz"> trafo_1.0.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/trafo_1.0.1.zip">trafo_1.0.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/trafo_1.0.1.zip">trafo_1.0.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/trafo_1.0.1.zip">trafo_1.0.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/trafo_1.0.1.tgz">trafo_1.0.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/trafo_1.0.1.tgz">trafo_1.0.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/trafo"> trafo archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=trafo"><samp>https://CRAN.R-project.org/package=trafo</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,47 @@
+Package: xnet
+Type: Package
+Title: Two-Step Kernel Ridge Regression for Network Predictions
+Version: 0.1.10
+Authors@R: c(person("Joris","Meys", email = "Joris.Meys@UGent.be", role
+        = c("cre","aut")), person("Michiel", "Stock", email =
+        "Michiel.Stock@UGent.be", role = "aut"))
+Description: Fit a two-step kernel ridge regression model for
+        predicting edges in networks, and carry out cross-validation
+        using shortcuts for swift and accurate performance assessment
+        (Stock et al, 2018 <doi:10.1093/bib/bby095> ).
+Date: 2019-12-09
+BugReports: https://github.com/CenterForStatistics-UGent/xnet/issues
+URL: https://github.com/CenterForStatistics-UGent/xnet
+Depends: R(>= 3.4.0)
+Imports: methods, utils, graphics, stats, grDevices
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.0
+Suggests: testthat, knitr, rmarkdown, ChemmineR, covr, fmcsR
+VignetteBuilder: knitr
+Collate: 'Class_linearFilter.R' 'all_generics.R' 'Class_permtest.R'
+        'Class_tskrr.R' 'Class_tskrrHeterogeneous.R'
+        'Class_tskrrHomogeneous.R' 'Class_tskrrImpute.R'
+        'Class_tskrrImputeHeterogeneous.R'
+        'Class_tskrrImputeHomogeneous.R' 'Class_tskrrTune.R'
+        'Class_tskrrTuneHeterogeneous.R' 'Class_tskrrTuneHomogeneous.R'
+        'as_tuned.R' 'create_grid.R' 'data_drugtarget.R'
+        'data_proteinInteraction.R' 'dim.R' 'eigen2hat.R' 'fitted.R'
+        'get_loo_fun.R' 'getlooInternal.R' 'getters_linearFilter.R'
+        'getters_permtest.R' 'getters_tskrr.R' 'getters_tskrrImpute.R'
+        'getters_tskrrTune.R' 'hat.R' 'impute_tskrr.R'
+        'impute_tskrr.fit.R' 'internal_helpers.R' 'is_symmetric.R'
+        'labels.R' 'linear_filter.R' 'loo.R' 'looInternal.R' 'loss.R'
+        'loss_functions.R' 'match_labels.R' 'permtest.R' 'plot.tskrr.R'
+        'plot_grid.R' 'predict.R' 'prepare_lambdas.R' 'residuals.R'
+        'test_input.R' 'test_symmetry.R' 'tskrr.R' 'tskrr.fit.R'
+        'tune.R' 'update.R' 'valid_dimensions.R' 'valid_labels.R'
+        'weights.R' 'xnet-package.R'
+NeedsCompilation: no
+Packaged: 2019-12-20 14:29:47 UTC; Joris
+Author: Joris Meys [cre, aut],
+  Michiel Stock [aut]
+Maintainer: Joris Meys <Joris.Meys@UGent.be>
+Repository: CRAN
+Date/Publication: 2020-01-09 09:30:02 UTC

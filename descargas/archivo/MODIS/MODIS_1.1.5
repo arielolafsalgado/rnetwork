@@ -1,0 +1,50 @@
+Package: MODIS
+Type: Package
+Title: Acquisition and Processing of MODIS Products
+Version: 1.1.5
+Date: 2019-03-08
+URL: https://github.com/MatMatt/MODIS
+BugReports: https://github.com/MatMatt/MODIS/issues
+Authors@R: c(
+	person("Matteo", "Mattiuzzi", role = "aut", email = "matteo@mattiuzzi.com"),
+	person("Jan", "Verbesselt", role = "ctb"),
+	person("Tomislav", "Hengl", role = "ctb"),
+	person("Anja", "Klisch", role = "ctb"),
+	person("Forrest", "Stevens", role = "ctb"),
+	person("Steven", "Mosher", role = "ctb"),
+	person("Bradley", "Evans", role = "ctb"),
+	person("Agustin", "Lobo", role = "ctb"), 
+	person("Koen", "Hufkens", role = "ctb"),
+	person("Florian", "Detsch", role = c("cre", "aut"), email = "fdetsch@web.de"))
+Description: Download and processing functionalities for the Moderate Resolution
+    Imaging Spectroradiometer (MODIS). The package provides automated access to the
+    global online data archives LP DAAC (<https://lpdaac.usgs.gov/>), LAADS 
+    (<https://ladsweb.modaps.eosdis.nasa.gov/>) and NSIDC (<https://nsidc.org/>) 
+    as well as processing capabilities such as file conversion, mosaicking, 
+    subsetting and time series filtering.
+License: MIT + file LICENSE
+LazyData: TRUE
+Depends: mapdata, R (>= 2.10), raster
+Imports: bitops, curl, devtools, grDevices, graphics, mapedit, maps,
+        maptools, methods, parallel, ptw, rgdal, rgeos, sf, sp, stats,
+        utils
+SystemRequirements: GDAL (>= 1.8.0)
+ByteCompile: TRUE
+Encoding: UTF-8
+RoxygenNote: 6.1.1
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2019-03-08 09:46:02 UTC; FlorianD
+Author: Matteo Mattiuzzi [aut],
+  Jan Verbesselt [ctb],
+  Tomislav Hengl [ctb],
+  Anja Klisch [ctb],
+  Forrest Stevens [ctb],
+  Steven Mosher [ctb],
+  Bradley Evans [ctb],
+  Agustin Lobo [ctb],
+  Koen Hufkens [ctb],
+  Florian Detsch [cre, aut]
+Maintainer: Florian Detsch <fdetsch@web.de>
+Repository: CRAN
+Date/Publication: 2019-03-08 13:43:00 UTC

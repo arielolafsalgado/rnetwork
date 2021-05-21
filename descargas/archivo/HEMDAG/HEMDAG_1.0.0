@@ -1,0 +1,18 @@
+Package: HEMDAG
+Title: Hierarchical Ensemble Methods for Directed Acyclic Graphs
+Version: 1.0.0
+Author: Marco Notaro [aut, cre] and Giorgio Valentini [aut]
+	(AnacletoLab, Dipartimento di Informatica, Universita' degli Studi di Milano)
+Maintainer: Marco Notaro <marco.notaro@unimi.it>
+Description: An implementation of Hierarchical Ensemble Methods for DAGs: 'HTD-DAG' (Hierarchical Top Down) and 'TPR-DAG' (True Path Rule). 'HEMDAG' can be used to enhance the predictions of virtually any flat learning method, by taking into account the hierarchical nature of the classes of a bio-ontology. 'HEMDAG' is specifically designed for exploiting the hierarchical relationships of DAG-structured taxonomies, such as the Human Phenotype Ontology (HPO) or the Gene Ontology (GO), but it can be also safely applied to tree-structured taxonomies (as FunCat), since trees are DAGs. 'HEMDAG' scale nicely both in terms of the complexity of the taxonomy and in the cardinality of the examples. (Marco Notaro, Max Schubach, Peter N. Robinson and Giorgio Valentini, Prediction of Human Phenotype Ontology terms by means of Hierarchical Ensemble methods, BMC Bioinformatics 2017).
+Depends: R (>= 3.4.1)
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Repository: CRAN
+NeedsCompilation: no
+Imports: graph, RBGL, PerfMeas, precrec, preprocessCore, methods
+Suggests: Rgraphviz
+RoxygenNote: 6.0.1
+Packaged: 2017-08-11 19:25:58 UTC; marco
+Date/Publication: 2017-08-11 21:56:15 UTC

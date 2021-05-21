@@ -1,0 +1,30 @@
+Package: BMSC
+Title: Bayesian Model Selection under Constraints
+Version: 0.1.1
+Authors@R: c(
+    person("Marcus", "Groß", email = "marcus.gross@inwt-statistics.de", role = c("aut", "cre")),
+    person("Ricardo", "Fernandes", email = "ldv1452@gmail.com", role = c("aut")),
+    person("Mira Celine", "Klein", email = "mira.klein@inwt-statistics.de", role = c("ctb"))
+    )
+Description: A Bayesian regression package supporting constrained coefficient estimation and
+     variable selection using Stan. This includes a robust variable selection
+    algorithm by a horseshoe prior  (<doi:10.1093/biomet/asq017>) that finds the optimal model considering main effects,
+    interactions as well as powers of given variables under potential parameter constraints.
+Depends: R (>= 3.4.0), Rcpp (>= 0.12.0), methods
+Imports: dplyr (>= 0.7.4), ggplot2 (>= 2.2.1), loo (>= 2.0.0), rstan
+        (>= 2.18.1), rstantools (>= 1.5.1), R.utils (>= 2.6.0)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+LinkingTo: StanHeaders (>= 2.18.0), rstan (>= 2.18.1), BH (>= 1.66.0),
+        Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0)
+Suggests: lintr, testthat
+RoxygenNote: 6.1.0
+NeedsCompilation: yes
+Packaged: 2018-10-17 11:09:53 UTC; mgross
+Author: Marcus Groß [aut, cre],
+  Ricardo Fernandes [aut],
+  Mira Celine Klein [ctb]
+Maintainer: Marcus Groß <marcus.gross@inwt-statistics.de>
+Repository: CRAN
+Date/Publication: 2018-10-18 14:30:03 UTC

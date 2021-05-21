@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package ROCR</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Visualizing the Performance of Scoring Classifiers [R package ROCR version 1.0-11]" />
+<meta name="citation_author1" content="Tobias Sing" />
+<meta name="citation_author2" content="Oliver Sander" />
+<meta name="citation_author3" content="Niko Beerenwinkel" />
+<meta name="citation_author4" content="Thomas Lengauer" />
+<meta name="citation_publication_date" content="2020-05-02" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=ROCR" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=ROCR" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="ROCR: Visualizing the Performance of Scoring Classifiers" />
+<meta name="og:description" content="ROC graphs, sensitivity/specificity curves, lift charts, and precision/recall plots are popular examples of trade-off visualizations for specific pairs of performance measures. ROCR is a flexible tool for creating cutoff-parameterized 2D performance curves by freely combining two from over 25 performance measures (new performance measures can be added using a standard interface). Curves from different cross-validation or bootstrapping runs can be averaged by different methods, and standard deviations, standard errors or box plots can be used to visualize the variability across the runs. The parameterization can be visualized by printing cutoff values at the corresponding curve positions, or by coloring the curve according to cutoff. All components of a performance plot can be quickly adjusted using a flexible parameter dispatching mechanism. Despite its flexibility, ROCR is easy to use, with only three commands and reasonable default values for all optional parameters." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=ROCR" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>ROCR: Visualizing the Performance of Scoring Classifiers</h2>
+<p>ROC graphs, sensitivity/specificity curves, lift charts,
+  and precision/recall plots are popular examples of trade-off
+  visualizations for specific pairs of performance measures. ROCR is a
+  flexible tool for creating cutoff-parameterized 2D performance curves
+  by freely combining two from over 25 performance measures (new
+  performance measures can be added using a standard interface).
+  Curves from different cross-validation or bootstrapping runs can be
+  averaged by different methods, and standard deviations, standard
+  errors or box plots can be used to visualize the variability across
+  the runs. The parameterization can be visualized by printing cutoff
+  values at the corresponding curve positions, or by coloring the
+  curve according to cutoff. All components of a performance plot can
+  be quickly adjusted using a flexible parameter dispatching
+  mechanism. Despite its flexibility, ROCR is easy to use, with only
+  three commands and reasonable default values for all optional
+  parameters.</p>
+<table summary="Package ROCR summary">
+<tr>
+<td>Version:</td>
+<td>1.0-11</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.6)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>methods, graphics, grDevices, <a href="../gplots/index.html">gplots</a>, stats</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-05-02</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Tobias Sing [aut],
+  Oliver Sander [aut],
+  Niko Beerenwinkel [aut],
+  Thomas Lengauer [aut],
+  Thomas Unterthiner [ctb],
+  Felix G.M. Ernst <a href="https://orcid.org/0000-0001-5064-0928"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Felix G.M. Ernst  &#x3c;&#x66;&#x65;&#x6c;&#x69;&#x78;&#x2e;&#x67;&#x6d;&#x2e;&#x65;&#x72;&#x6e;&#x73;&#x74;&#x20;&#x61;&#x74;&#x20;&#x6f;&#x75;&#x74;&#x6c;&#x6f;&#x6f;&#x6b;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ipa-tys/ROCR/issues">https://github.com/ipa-tys/ROCR/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://ipa-tys.github.io/ROCR/">http://ipa-tys.github.io/ROCR/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">ROCR citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/MachineLearning.html">MachineLearning</a>, <a href="../../views/Multivariate.html">Multivariate</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_ROCR.html">ROCR results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package ROCR downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="ROCR.pdf"> ROCR.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/ROCR.html">ROCR</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/ROCR_1.0-11.tar.gz"> ROCR_1.0-11.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/ROCR_1.0-11.zip">ROCR_1.0-11.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/ROCR_1.0-11.zip">ROCR_1.0-11.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/ROCR_1.0-11.zip">ROCR_1.0-11.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/ROCR_1.0-11.tgz">ROCR_1.0-11.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/ROCR_1.0-11.tgz">ROCR_1.0-11.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/ROCR"> ROCR archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package ROCR reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="http://www.bioconductor.org/packages/release/bioc/html/a4Classif.html"><span class="BioC">a4Classif</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/ASpediaFI.html"><span class="BioC">ASpediaFI</span></a>, <a href="../Comp2ROC/index.html">Comp2ROC</a>, <a href="../cvAUC/index.html">cvAUC</a>, <a href="../EBPRS/index.html">EBPRS</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/EDDA.html"><span class="BioC">EDDA</span></a>, <a href="../EMP/index.html">EMP</a>, <a href="../GsymPoint/index.html">GsymPoint</a>, <a href="../iFad/index.html">iFad</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/maPredictDSC.html"><span class="BioC">maPredictDSC</span></a>, <a href="../obliqueRF/index.html">obliqueRF</a>, <a href="../RcmdrPlugin.ROC/index.html">RcmdrPlugin.ROC</a>, <a href="../rocc/index.html">rocc</a>, <a href="../ROP/index.html">ROP</a>, <a href="../subtype/index.html">subtype</a>, <a href="../swa/index.html">swa</a>, <a href="../utiml/index.html">utiml</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../aLFQ/index.html">aLFQ</a>, <a href="../alookr/index.html">alookr</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/Anaquin.html"><span class="BioC">Anaquin</span></a>, <a href="../BayesPostEst/index.html">BayesPostEst</a>, <a href="../Biocomb/index.html">Biocomb</a>, <a href="../btergm/index.html">btergm</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/ChIPanalyser.html"><span class="BioC">ChIPanalyser</span></a>, <a href="../classifierplots/index.html">classifierplots</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/compcodeR.html"><span class="BioC">compcodeR</span></a>, <a href="../CSMES/index.html">CSMES</a>, <a href="../DCD/index.html">DCD</a>, <a href="http://www.bioconductor.org/packages/release/data/experiment/html/DeSousa2013.html"><span class="BioC">DeSousa2013</span></a>, <a href="../DMwR/index.html">DMwR</a>, <a href="../DRaWR/index.html">DRaWR</a>, <a href="../DrugClust/index.html">DrugClust</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/EDDA.html"><span class="BioC">EDDA</span></a>, <a href="../EFS/index.html">EFS</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/erccdashboard.html"><span class="BioC">erccdashboard</span></a>, <a href="../eSDM/index.html">eSDM</a>, <a href="../fdm2id/index.html">fdm2id</a>, <a href="../funModeling/index.html">funModeling</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/GGtools.html"><span class="BioC">GGtools</span></a>, <a href="../gkmSVM/index.html">gkmSVM</a>, <a href="../healthcareai/index.html">healthcareai</a>, <a href="../hybridEnsemble/index.html">hybridEnsemble</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/iCOBRA.html"><span class="BioC">iCOBRA</span></a>, <a href="../influenceAUC/index.html">influenceAUC</a>, <a href="../iRafNet/index.html">iRafNet</a>, <a href="../jmv/index.html">jmv</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/LedPred.html"><span class="BioC">LedPred</span></a>, <a href="../lulcc/index.html">lulcc</a>, <a href="../mccf1/index.html">mccf1</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/Melissa.html"><span class="BioC">Melissa</span></a>, <a href="../MetaIntegrator/index.html">MetaIntegrator</a>, <a href="../MLmetrics/index.html">MLmetrics</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/netDx.html"><span class="BioC">netDx</span></a>, <a href="../nlcv/index.html">nlcv</a>, <a href="../nlnet/index.html">nlnet</a>, <a href="../nlpred/index.html">nlpred</a>, <a href="../nproc/index.html">nproc</a>, <a href="../OmicKriging/index.html">OmicKriging</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/PAA.html"><span class="BioC">PAA</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/PathoStat.html"><span class="BioC">PathoStat</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/Pi.html"><span class="BioC">Pi</span></a>, <a href="../prcbench/index.html">prcbench</a>, <a href="../PredictABEL/index.html">PredictABEL</a>, <a href="../predictoR/index.html">predictoR</a>, <a href="../PriorCD/index.html">PriorCD</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/projectR.html"><span class="BioC">projectR</span></a>, <a href="../rawKS/index.html">rawKS</a>, <a href="../regressoR/index.html">regressoR</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/RNAmodR.html"><span class="BioC">RNAmodR</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/SC3.html"><span class="BioC">SC3</span></a>, <a href="../Seurat/index.html">Seurat</a>, <a href="../sirus/index.html">sirus</a>, <a href="../smartR/index.html">smartR</a>, <a href="../sperrorest/index.html">sperrorest</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/sRAP.html"><span class="BioC">sRAP</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/ssPATHS.html"><span class="BioC">ssPATHS</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/StarBioTrek.html"><span class="BioC">StarBioTrek</span></a>, <a href="../vimp/index.html">vimp</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../AER/index.html">AER</a>, <a href="../bnlearn/index.html">bnlearn</a>, <a href="../dismo/index.html">dismo</a>, <a href="../ePCR/index.html">ePCR</a>, <a href="../ezplot/index.html">ezplot</a>, <a href="../ggfortify/index.html">ggfortify</a>, <a href="../LEANR/index.html">LEANR</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/M3Drop.html"><span class="BioC">M3Drop</span></a>, <a href="../mlr/index.html">mlr</a>, <a href="../PRROC/index.html">PRROC</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/puma.html"><span class="BioC">puma</span></a>, <a href="../rattle/index.html">rattle</a>, <a href="../recommenderlab/index.html">recommenderlab</a>, <a href="../sand/index.html">sand</a>, <a href="../SmartMeterAnalytics/index.html">SmartMeterAnalytics</a>, <a href="../SuperLearner/index.html">SuperLearner</a>, <a href="../TDMR/index.html">TDMR</a>, <a href="../tmle/index.html">tmle</a>, <a href="../unbalanced/index.html">unbalanced</a>, <a href="../WeightedROC/index.html">WeightedROC</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=ROCR"><samp>https://CRAN.R-project.org/package=ROCR</samp></a>
+to link to this page.</p>
+</body>
+</html>

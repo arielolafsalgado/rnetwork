@@ -1,0 +1,32 @@
+Package: wdpar
+Type: Package
+Version: 0.0.1
+Title: Interface to the World Database on Protected Areas
+Description: Fetch and clean data from the World Database on Protected
+    Areas (WDPA). Data is obtained from Protected Planet
+    <http://protectedplanet.net>.
+Authors@R: c(person(c('Jeffrey', 'O'), 'Hanson',
+    email='jeffrey.hanson@uqconnect.edu.au', role = c('aut', 'cre')))
+Imports: utils, methods, sp, assertthat (>= 0.2.0), progress (>=
+        1.2.0), curl (>= 3.2), rappdirs (>= 0.3.1), httr (>= 1.3.1),
+        pingr (>= 1.1.2), countrycode (>= 1.1.0), wdman (>= 0.2.4),
+        RSelenium (>= 1.7.4), xml2 (>= 1.2.0), cli (>= 1.0.1), stringi
+        (>= 1.2.4), lwgeom (>= 0.1-4)
+Suggests: testthat (>= 2.0.1), knitr (>= 1.2.0), roxygen2 (>= 6.1.1),
+        rmarkdown (>= 1.10), ggmap (>= 2.6.1), ggplot2 (>= 3.1.0)
+Depends: R(>= 3.4.0), sf(>= 0.7-1)
+License: GPL-3
+LazyData: true
+URL: https://prioritizr.github.io/wdpar,
+        https://github.com/prioritizr/wdpar
+BugReports: https://github.com/prioritizr/wdpar/issues
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+Collate: 'internal.R' 'geo.R' 'package.R' 'wdpa_clean.R' 'wdpa_url.R'
+        'wdpa_fetch.R' 'wdpa_read.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2019-01-07 07:25:46 UTC; jeff
+Author: Jeffrey O Hanson [aut, cre]
+Maintainer: Jeffrey O Hanson <jeffrey.hanson@uqconnect.edu.au>
+Repository: CRAN
+Date/Publication: 2019-01-11 17:10:03 UTC

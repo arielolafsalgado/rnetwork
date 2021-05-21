@@ -1,0 +1,33 @@
+Package: CompareCausalNetworks
+Type: Package
+Title: Interface to Diverse Estimation Methods of Causal Networks
+Version: 0.1.4
+Date: 2015-10-04
+Author: Christina Heinze <heinze@stat.math.ethz.ch>,
+  Nicolai Meinshausen <meinshausen@stat.math.ethz.ch>
+Depends: R (>= 3.1.0)
+Imports: Matrix, methods
+Maintainer: Christina Heinze <heinze@stat.math.ethz.ch>
+Description: Unified interface for the estimation of causal networks, 
+ including the methods 'backShift' (from package 'backShift'), 
+ 'bivariateANM' (bivariate additive noise model), 
+ 'bivariateCAM' (bivariate causal additive model), 
+ 'CAM' (causal additive model) (from package 'CAM'), 
+ 'hiddenICP' (invariant causal prediction with hidden variables), 
+ 'ICP' (invariant causal prediction) (from package 'InvariantCausalPrediction'), 
+ 'GES' (greedy equivalence search), 
+ 'GIES' (greedy interventional equivalence search), 
+ 'LINGAM', 'PC' (PC Algorithm), 
+ 'RFCI' (really fast causal inference)
+ (all from package 'pcalg') and regression.
+License: GPL
+LazyData: true
+Suggests: pcalg, InvariantCausalPrediction, glmnet, backShift, CAM,
+        kernlab, mgcv, testthat
+URL: https://github.com/christinaheinze/CompareCausalNetworks
+BugReports:
+        https://github.com/christinaheinze/CompareCausalNetworks/issues
+NeedsCompilation: no
+Packaged: 2015-10-07 06:55:48 UTC; heinzec
+Repository: CRAN
+Date/Publication: 2015-10-07 09:49:12

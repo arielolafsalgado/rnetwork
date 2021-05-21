@@ -1,0 +1,32 @@
+Package: RcppArmadillo
+Type: Package
+Title: Rcpp Integration for the Armadillo Templated Linear Algebra
+        Library
+Version: 0.4.600.0
+Date: 2014-12-27
+Author: Romain Francois, Dirk Eddelbuettel and Doug Bates
+Maintainer: Dirk Eddelbuettel <edd@debian.org>
+Description: R and Armadillo integration using Rcpp
+ Armadillo is a templated C++ linear algebra library (by Conrad Sanderson)
+ that aims towards a good balance between speed and ease of use. Integer,
+ floating point and complex numbers are supported, as well as a subset of
+ trigonometric and statistics functions. Various matrix decompositions are
+ provided through optional integration with LAPACK and ATLAS libraries.
+ The RcppArmadillo package includes the header files from the templated
+ Armadillo library. Thus users do not need to install Armadillo itself in
+ order to use RcppArmadillo. Armadillo is licensed under the MPL 2.0, while
+ RcppArmadillo (the Rcpp bindings/bridge to Armadillo) is licensed under the
+ GNU GPL version 2 or later, as is the rest of Rcpp.
+License: GPL (>= 2)
+LazyLoad: yes
+LinkingTo: Rcpp
+Imports: Rcpp (>= 0.11.0)
+Suggests: RUnit, Matrix, pkgKitten
+URL: https://github.com/RcppCore/RcppArmadillo,
+        http://arma.sourceforge.net/,
+        http://dirk.eddelbuettel.com/code/rcpp.armadillo.html
+BugReports: https://github.com/RcppCore/RcppArmadillo/issues
+Packaged: 2014-12-27 15:29:05.687626 UTC; edd
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2014-12-28 04:44:01

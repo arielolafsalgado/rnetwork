@@ -1,0 +1,43 @@
+Package: AMModels
+Type: Package
+Title: Adaptive Management Model Manager
+Version: 0.1
+Date: 2016-12-01
+Author: Therese Donovan <tdonovan@uvm.edu>, Jon Katz <jonkatz4@gmail.com>
+Maintainer: Jon Katz <jonkatz4@gmail.com>
+Description: Helps enable adaptive management by codifying knowledge in the form
+    of models generated from numerous analyses and data sets. Facilitates
+    this process by storing all models and data sets in a single object that can
+    be updated and saved, thus tracking changes in knowledge through time. A shiny
+    application called AM Model Manager (modelMgr()) enables the use of these
+    functions via a GUI.
+License: GPL-3
+Copyright: This software is in the public domain because it contains
+        materials that originally came from the United States
+        Geological Survey, an agency of the United States Department of
+        Interior. For more information, see the official USGS copyright
+        policy at http://www.usgs.gov/visual-id/
+        credit_usgs.html#copyright. This software is in the public
+        domain because it contains materials that originally came from
+        the U.S. Geological Survey, an agency of the United States
+        Department of Interior. Although this software program has been
+        used by the U.S. Geological Survey (USGS), no warranty,
+        expressed or implied, is made by the USGS or the U.S.
+        Government as to the accuracy and functioning of the program
+        and related program material nor shall the fact of distribution
+        constitute any such warranty, and no responsibility is assumed
+        by the USGS in connection therewith. This software is provided
+        "AS IS."
+Encoding: UTF-8
+Imports: methods
+Suggests: shiny, shinyBS, knitr, unmarked, AICcmodavg
+RoxygenNote: 5.0.1
+Collate: 'AMModels-package.R' 'amData.R' 'amModel.R' 'amModelLib.R'
+        'classes.R' 'getAMModelLib.R' 'getters.R' 'insertAMModelLib.R'
+        'ls.R' 'metaSummary.R' 'methods-amModel.R'
+        'methods-amModelLib.R' 'modelMgr.R' 'rmModelsData.R'
+        'simCovariate.R'
+NeedsCompilation: no
+Packaged: 2016-12-02 17:19:46 UTC; jon
+Repository: CRAN
+Date/Publication: 2016-12-03 01:09:17

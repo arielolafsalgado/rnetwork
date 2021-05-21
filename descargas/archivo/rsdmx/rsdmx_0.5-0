@@ -1,0 +1,53 @@
+Package: rsdmx
+Version: 0.5-0
+Date: 2015-10-01
+Title: Tools for Reading SDMX Data and Metadata
+Authors@R: c(
+  person("Emmanuel", "Blondel", role = c("aut", "cre"), email = "emmanuel.blondel1@gmail.com"),
+  person("Matthieu", "Stigler", role = c("ctb")))
+Maintainer: Emmanuel Blondel <emmanuel.blondel1@gmail.com>
+Depends: R (>= 2.15)
+Imports: methods, XML (>= 3.96-1.1), RCurl, plyr, utils
+Suggests: testthat, knitr
+Description: Set of classes and methods to read data and metadata documents
+  exchanged through the Statistical Data and Metadata Exchange (SDMX) framework,
+  currently focusing on the SDMX XML standard format (SDMX-ML).
+License: GPL (>= 2)
+VignetteBuilder: knitr
+URL: https://github.com/opensdmx/rsdmx, http://www.sdmx.org
+BugReports: https://github.com/opensdmx/rsdmx/issues
+LazyLoad: yes
+Collate: Class-SDMXSchema.R Class-SDMXType.R Class-SDMXStructureType.R
+        Class-SDMXHeader.R Class-SDMXFooterMessage.R Class-SDMXFooter.R
+        Class-SDMX.R Class-SDMXGenericData.R Class-SDMXCompactData.R
+        Class-SDMXUtilityData.R Class-SDMXStructureSpecificData.R
+        Class-SDMXMessageGroup.R Class-SDMXConcept.R
+        Class-SDMXConceptScheme.R Class-SDMXConcepts.R Class-SDMXCode.R
+        Class-SDMXCodelist.R Class-SDMXCodelists.R
+        Class-SDMXDimension.R Class-SDMXTimeDimension.R
+        Class-SDMXPrimaryMeasure.R Class-SDMXAttribute.R
+        Class-SDMXComponents.R Class-SDMXDataStructure.R
+        Class-SDMXDataStructures.R Class-SDMXDataStructureDefinition.R
+        Class-SDMXRequestBuilder.R Class-SDMXRESTRequestBuilder.R
+        Class-SDMXServiceProvider.R SDMXSchema-methods.R
+        SDMXType-methods.R SDMXStructureType-methods.R
+        SDMXHeader-methods.R SDMXFooterMessage-methods.R
+        SDMXFooter-methods.R SDMX-methods.R SDMXGenericData-methods.R
+        SDMXCompactData-methods.R SDMXUtilityData-methods.R
+        SDMXStructureSpecificData-methods.R SDMXMessageGroup-methods.R
+        SDMXConcept-methods.R SDMXConceptScheme-methods.R
+        SDMXConcepts-methods.R SDMXCode-methods.R
+        SDMXCodelist-methods.R SDMXCodelists-methods.R
+        SDMXDimension-methods.R SDMXTimeDimension-methods.R
+        SDMXPrimaryMeasure-methods.R SDMXAttribute-methods.R
+        SDMXComponents-methods.R SDMXDataStructure-methods.R
+        SDMXDataStructures-methods.R
+        SDMXDataStructureDefinition-methods.R
+        SDMXRequestBuilder-methods.R SDMXRESTRequestBuilder-methods.R
+        SDMXServiceProvider-methods.R readSDMX.R profile.R
+NeedsCompilation: no
+Packaged: 2015-10-05 21:26:19 UTC; Emmanuel
+Author: Emmanuel Blondel [aut, cre],
+  Matthieu Stigler [ctb]
+Repository: CRAN
+Date/Publication: 2015-10-06 08:55:40

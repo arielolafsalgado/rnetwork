@@ -1,0 +1,31 @@
+Package: metaplot
+Type: Package
+Title: Formalized Plots with Systematic Metadata
+Version: 0.2.7
+Author: Tim Bergsma
+Maintainer: Tim Bergsma <bergsmat@gmail.com>
+Description: Designs plots in terms of core structure.  See 'example(metaplot)'.
+ Primary arguments are (unquoted) column names; order and type (numeric or not)
+ dictate the resulting plot.  Specify any y variables, x variable, any groups variable,
+ and any conditioning variables to metaplot() to generate density plots, boxplots, 
+ scatterplots, scatterplot matrices, or conditioned plots.  Honors scalar column 
+ attributes 'label' and 'guide' where present to produce fully annotated plots 
+ using concise syntax. Attribute 'guide' is typically units, but may be encoded() 
+ to provide interpretations of categorical values (see 'encode' package).  Utility 
+ unpack() transforms scalar column attributes to row values and pack() does the 
+ reverse, supporting tool-neutral storage of metadata along with primary data. 
+ Supports customizable aesthetics such as such as reference lines, unity lines, 
+ smooths, log transformation, and linear fits. Compact syntax and isolated metadata
+ promote workflow scalability.
+Imports: encode (>= 0.3.2), lattice, magrittr, lazyeval, dplyr (>=
+        0.7.1), tidyr, fold, rlang, ggplot2
+Suggests: spec, csv, nlme
+Depends: R (>= 2.10)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-12-01 17:01:26 UTC; tbergsma
+Repository: CRAN
+Date/Publication: 2017-12-01 17:56:49 UTC

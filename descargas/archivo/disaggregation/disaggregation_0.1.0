@@ -1,0 +1,36 @@
+Package: disaggregation
+Type: Package
+Title: Disaggregation Modelling
+Version: 0.1.0
+Authors@R: c(
+    person("Anita", "Nandi", email = "anita.k.nandi@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-5087-2494")),
+    person("Tim", "Lucas", email =  "timcdlucas@gmail.com", role = "aut", comment = c(ORCID = "0000-0003-4694-8107")),
+    person("Rohan", "Arambepola", email = "rarambepola@gmail.com", role = "aut"),
+    person("Andre", "Python", email = "python.andre@gmail.com", role = "aut", comment = c(ORCID = "0000-0001-8094-7226"))
+    )
+Description: Fits disaggregation regression models using 'TMB' ('Template Model
+    Builder'). When the response data are aggregated to polygon level but
+    the predictor variables are at a higher resolution, these models can be
+    useful. Regression models with spatial random fields. A useful reference for disaggregation modelling is 
+    Lucas et al. (2019) <doi:10.1101/548719>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Imports: maptools, raster, foreach, sp, parallel, doParallel, rgeos,
+        splancs, rgdal, Matrix, stats, TMB, dplyr, ggplot2, cowplot,
+        sparseMVN, utils
+Additional_repositories: https://inla.r-inla-download.org/R/stable
+Suggests: testthat, INLA, knitr, rmarkdown, SpatialEpi
+LinkingTo: TMB, RcppEigen
+SystemRequirements: GNU make
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2019-12-02 11:49:04 UTC; anitan
+Author: Anita Nandi [aut, cre] (<https://orcid.org/0000-0002-5087-2494>),
+  Tim Lucas [aut] (<https://orcid.org/0000-0003-4694-8107>),
+  Rohan Arambepola [aut],
+  Andre Python [aut] (<https://orcid.org/0000-0001-8094-7226>)
+Maintainer: Anita Nandi <anita.k.nandi@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-12-06 10:40:02 UTC

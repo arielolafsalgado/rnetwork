@@ -1,0 +1,49 @@
+Package: comat
+Title: Creates Co-Occurrence Matrices of Spatial Data
+Version: 0.8.2
+Authors@R: c(person(given = "Jakub", family = "Nowosad", role = c("aut", "cre"), email =
+             "nowosad.jakub@gmail.com", comment = c(ORCID = "0000-0002-1057-3721")),
+             person("Maximillian H.K.", "Hesselbarth",
+             role = c("ctb"),
+             email = "maximilian.hesselbarth@uni-goettingen.de",
+             comment = "Co-author of underlying C++ code for get_class_index_map(), 
+             get_unique_values(), and rcpp_get_coma() functions"),
+             person("Marco", "Sciaini",
+             role = "ctb",
+             email = "sciaini.marco@gmail.com",
+             comment = "Co-author of underlying C++ code for get_class_index_map(), 
+             get_unique_values(), and rcpp_get_coma() functions"),
+             person("Sebastian", "Hanss", 
+             role = "ctb", 
+             comment = "Co-author of underlying C++ code for get_class_index_map(), 
+             get_unique_values(), and rcpp_get_coma() functions"))
+Description: Builds co-occurrence matrices based on spatial raster data.
+    It includes creation of weighted co-occurrence matrices (wecoma) and 
+    integrated co-occurrence matrices 
+    (incoma; Vadivel et al. (2007) <doi:10.1016/j.patrec.2007.01.004>).
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: false
+RoxygenNote: 7.0.2
+Depends: R (>= 2.10)
+LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp
+Suggests: tinytest, covr, knitr, rmarkdown
+SystemRequirements: C++11
+URL: https://nowosad.github.io/comat/
+BugReports: https://github.com/Nowosad/comat/issues
+NeedsCompilation: yes
+Packaged: 2020-03-17 14:04:29 UTC; jn
+Author: Jakub Nowosad [aut, cre] (<https://orcid.org/0000-0002-1057-3721>),
+  Maximillian H.K. Hesselbarth [ctb] (Co-author of underlying C++ code
+    for get_class_index_map(), get_unique_values(), and rcpp_get_coma()
+    functions),
+  Marco Sciaini [ctb] (Co-author of underlying C++ code for
+    get_class_index_map(), get_unique_values(), and rcpp_get_coma()
+    functions),
+  Sebastian Hanss [ctb] (Co-author of underlying C++ code for
+    get_class_index_map(), get_unique_values(), and rcpp_get_coma()
+    functions)
+Maintainer: Jakub Nowosad <nowosad.jakub@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-03-17 14:40:06 UTC

@@ -1,0 +1,33 @@
+Package: TDMR
+Type: Package
+Title: Tuned Data Mining in R
+Version: 2.0
+Date: 2018-05-04
+Author: Wolfgang Konen <wolfgang.konen@fh-koeln.de>, Patrick Koch
+    <patrick.koch@fh-koeln.de>
+Maintainer: Wolfgang Konen <wolfgang.konen@fh-koeln.de>
+Description: Tuned Data Mining in R ('TDMR') performs the complete tuning of a 
+    data mining task (predictive analytics, that is classification and regression). 
+    Preprocessing parameters and modeling parameters can be tuned simultaneously. 
+    It incorporates a variety of tuners (among them 'SPOT' and 'CMA' with package 'rCMA') and 
+    allows integration of additional tuners. Noise handling in the data mining optimization  
+    process is supported, see Koch et al. (2015) <doi:10.1016/j.asoc.2015.01.005>.
+License: GPL (>= 2)
+Depends: R (>= 2.14.0), SPOT (>= 2.0), twiddler
+Suggests: cmaes, parallel, e1071, powell, ROCR, randomForest, rCMA,
+        rSFA
+Imports: testit, methods, adabag
+Collate: 'defaultSC.R' 'defaultOpts.R' 'makeTdmRandomSeed.r'
+        'printTDMclassifier.r' 'printTDMregressor.r' 'tdmBigLoop.r'
+        'tdmClassify.r' 'tdmClassifyLoop.r' 'tdmDefaultsFill.r'
+        'tdmDispatchTuner.r' 'tdmEnvTMakeNew.r' 'tdmGeneralUtils.r'
+        'tdmGraphicUtils.r' 'tdmMapDesign.r' 'tdmMetacostRf.r'
+        'tdmModelingUtils.r' 'tdmOptsDefaults.r' 'tdmParaBootstrap.r'
+        'tdmPreprocUtils.r' 'tdmReadAndSplit.r' 'tdmReadDataset.r'
+        'tdmRegress.r' 'tdmRegressLoop.r' 'tdmROCR.r' 'tdmStartSpot2.r'
+        'tdmStartOther.r' 'tdmTuneIt.r' 'unbiasedRun.r'
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-05-04 14:12:08 UTC; wolfgang
+Repository: CRAN
+Date/Publication: 2018-05-04 20:21:14 UTC

@@ -1,0 +1,71 @@
+Package: gdalcubes
+Title: Earth Observation Data Cubes from Satellite Image Collections
+Version: 0.1.0
+Date: 2019-05-15
+Authors@R: c(
+    person(given = "Marius",
+           family = "Appel",
+           role = c("aut", "cre"),
+           email = "marius.appel@uni-muenster.de",
+           comment = c(ORCID = "0000-0001-5281-3896")),
+    person(given = "Edzer",
+           family = "Pebesma",
+           role = "ctb",
+           comment = c(ORCID = "0000-0001-8049-7069")),
+    person(given = "Lewis",
+           family = "Van Winkle",
+           role = "cph"),
+    person(given = "Ole Christian",
+           family = "Eidheim",
+           role = "cph"),
+    person(given = "Niels",
+           family = "Lohmann",
+           role = "cph"),
+    person(given = "Howard",
+           family = "Hinnant",
+           role = "cph"),
+    person(given = "Adrian",
+           family = "Colomitchi",
+           role = "cph"),
+    person(given = "Florian",
+           family = "Dang",
+           role = "cph"),
+    person(given = "Paul",
+           family = "Thompson",
+           role = "cph"),
+    person(given = "Tomasz",
+           family = "Kamiński",
+           role = "cph"))
+Description: Processing collections of Earth observation images as on-demand multispectral, multitemporal data cubes. Users
+    define cubes by spatiotemporal extent, resolution, and spatial reference system and let 'gdalcubes' automatically apply cropping, reprojection, and 
+    resampling using the 'Geospatial Data Abstraction Library' ('GDAL'). Implemented functions on data cubes include reduction over space and time, applying arithmetic expressions on pixel band values,
+    moving window aggregates over time, filtering by space, time, bands, and predicates on pixel values, materializing data cubes as 'netCDF' files,
+    and plotting. User-defined 'R' functions can be applied over chunks of data cubes. The package implements lazy evaluation and 
+    multithreading. All computational parts are implemented in C++, linking to the 'GDAL', 'netCDF', 'CURL', and 'SQLite' libraries.
+Depends: R (>= 3.3.0), Rcpp, RcppProgress, jsonlite, ncdf4
+License: MIT + file LICENSE
+URL: https://github.com/appelmar/gdalcubes_R
+BugReports: https://github.com/appelmar/gdalcubes_R/issues/
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+LinkingTo: Rcpp, RcppProgress
+Suggests: knitr, magrittr, processx, rmarkdown, stars
+VignetteBuilder: knitr
+Copyright: file inst/COPYRIGHTS
+NeedsCompilation: yes
+SystemRequirements: cxx11, gdal, libgdal, libproj, libcurl, netcdf4
+Packaged: 2019-05-15 12:08:47 UTC; marius
+Author: Marius Appel [aut, cre] (<https://orcid.org/0000-0001-5281-3896>),
+  Edzer Pebesma [ctb] (<https://orcid.org/0000-0001-8049-7069>),
+  Lewis Van Winkle [cph],
+  Ole Christian Eidheim [cph],
+  Niels Lohmann [cph],
+  Howard Hinnant [cph],
+  Adrian Colomitchi [cph],
+  Florian Dang [cph],
+  Paul Thompson [cph],
+  Tomasz Kamiński [cph]
+Maintainer: Marius Appel <marius.appel@uni-muenster.de>
+Repository: CRAN
+Date/Publication: 2019-05-24 10:00:07 UTC

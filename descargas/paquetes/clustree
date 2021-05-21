@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package clustree</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Visualise Clusterings at Different Resolutions [R package clustree version 0.4.3]" />
+<meta name="citation_author1" content="Luke Zappia" />
+<meta name="citation_author2" content="Alicia Oshlack" />
+<meta name="citation_publication_date" content="2020-06-14" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=clustree" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=clustree" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="clustree: Visualise Clusterings at Different Resolutions" />
+<meta name="og:description" content="Deciding what resolution to use can be a difficult question when approaching a clustering analysis. One way to approach this problem is to look at how samples move as the number of clusters increases. This package allows you to produce clustering trees, a visualisation for interrogating clusterings as resolution increases." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=clustree" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>clustree: Visualise Clusterings at Different Resolutions</h2>
+<p>Deciding what resolution to use can be a difficult question when
+    approaching a clustering analysis. One way to approach this problem is to
+    look at how samples move as the number of clusters increases. This package
+    allows you to produce clustering trees, a visualisation for interrogating
+    clusterings as resolution increases.</p>
+<table summary="Package clustree summary">
+<tr>
+<td>Version:</td>
+<td>0.4.3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5), <a href="../ggraph/index.html">ggraph</a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../checkmate/index.html">checkmate</a>, <a href="../igraph/index.html">igraph</a>, <a href="../dplyr/index.html">dplyr</a>, grid, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../viridis/index.html">viridis</a>, methods, <a href="../rlang/index.html">rlang</a>, <a href="../tidygraph/index.html">tidygraph</a>, <a href="../ggrepel/index.html">ggrepel</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a> (&ge; 2.1.0), <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/SingleCellExperiment.html"><span class="BioC">SingleCellExperiment</span></a>, <a href="../Seurat/index.html">Seurat</a> (&ge; 2.3.0), <a href="../covr/index.html">covr</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/SummarizedExperiment.html"><span class="BioC">SummarizedExperiment</span></a>, <a href="../pkgdown/index.html">pkgdown</a>, <a href="../spelling/index.html">spelling</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-14</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Luke Zappia <a href="https://orcid.org/0000-0001-7744-8565"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    cre],
+  Alicia Oshlack <a href="https://orcid.org/0000-0001-9788-5690"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Andrea Rau [ctb],
+  Paul Hoffman <a href="https://orcid.org/0000-0002-7693-8957"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Luke Zappia  &#x3c;&#x6c;&#x75;&#x6b;&#x65;&#x20;&#x61;&#x74;&#x20;&#x6c;&#x61;&#x7a;&#x61;&#x70;&#x70;&#x69;&#x2e;&#x69;&#x64;&#x2e;&#x61;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/lazappi/clustree/issues">https://github.com/lazappi/clustree/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/lazappi/clustree">https://github.com/lazappi/clustree</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-GB</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">clustree citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_clustree.html">clustree results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package clustree downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="clustree.pdf"> clustree.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/clustree.html">Plotting clustering trees</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/clustree_0.4.3.tar.gz"> clustree_0.4.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/clustree_0.4.3.zip">clustree_0.4.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/clustree_0.4.3.zip">clustree_0.4.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/clustree_0.4.3.zip">clustree_0.4.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/clustree_0.4.3.tgz">clustree_0.4.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/clustree_0.4.3.tgz">clustree_0.4.3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/clustree"> clustree archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=clustree"><samp>https://CRAN.R-project.org/package=clustree</samp></a>
+to link to this page.</p>
+</body>
+</html>

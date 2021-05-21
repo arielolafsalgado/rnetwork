@@ -1,0 +1,29 @@
+Package: wyz.code.metaTesting
+Type: Package
+Title: Wizardry Code Meta Testing
+Version: 1.1.4
+Author: Fabien Gelineau <neonira@gmail.com>
+Maintainer: Fabien Gelineau <neonira@gmail.com>
+Description: Test R any R function without having to provide parameter values. 
+    Values will be generated, based on semantic naming of parameters as 
+    introduced by package 'wyz.code.offensiveProgramming'. Generated tests
+    can be saved and reused. Value generation logic can be completed with your
+    own specific data types and generation schemes, to meet your requirements.
+    Main benefits of 'wyz.code.metaTesting' is higher developer productivity,
+    reduced time to production, and industrial inference testing. Refer to 
+    chapter 10 of Offensive Programming Book, Fabien GELINEAU (2019, 
+    ISBN:979-10-699-4075-8), to learn about details and get value from this 
+    package. 
+Encoding: UTF-8
+LazyData: true
+License: GPL-3
+Depends: R (>= 3.5)
+Imports: methods, data.table (>= 1.11.8), tidyr, lubridate (>= 1.7.4),
+        wyz.code.offensiveProgramming (>= 1.1.12), crayon, utils, stats
+Suggests: testthat, knitr, rmarkdown
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-10-11 09:40:17 UTC; fgelineau
+Repository: CRAN
+Date/Publication: 2019-10-13 10:00:02 UTC

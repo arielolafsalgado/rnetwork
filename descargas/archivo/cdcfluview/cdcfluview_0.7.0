@@ -1,0 +1,34 @@
+Package: cdcfluview
+Type: Package
+Encoding: UTF-8
+Title: Retrieve 'U.S'. Flu Season Data from the 'CDC' 'FluView' Portal
+Version: 0.7.0
+Date: 2017-11-04
+Authors@R: c(
+    person("Bob", "Rudis", email = "bob@rud.is", role = c("aut", "cre"), 
+           comment = c(ORCID = "0000-0001-5670-2640")),
+    person("Craig", "McGowan", email = "mcgowan.cj@gmail.com", role = "ctb",
+           comment = c(ORCID = "0000-0002-6298-0185"))
+  )
+Maintainer: Bob Rudis <bob@rud.is>
+Description: The 'U.S.' Centers for Disease Control ('CDC') maintains a portal
+    <http://gis.cdc.gov/grasp/fluview/fluportaldashboard.html> for
+    accessing state, regional and national influenza statistics as well as
+    Mortality Surveillance Data. The web interface makes it difficult and 
+    time-consuming to select and retrieve influenza data. Tools are provided 
+    to access the data provided by the portal's underlying 'API'.
+URL: https://github.com/hrbrmstr/cdcfluview
+BugReports: https://github.com/hrbrmstr/cdcfluview/issues
+License: MIT + file LICENSE
+LazyData: true
+Suggests: testthat, covr
+Depends: R (>= 3.2.0)
+Imports: httr, tools, dplyr, jsonlite, stats, utils, sf, xml2, purrr,
+        readr, MMWRweek, units (>= 0.4-6)
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-11-14 03:13:45 UTC; bob
+Author: Bob Rudis [aut, cre] (0000-0001-5670-2640),
+  Craig McGowan [ctb] (0000-0002-6298-0185)
+Repository: CRAN
+Date/Publication: 2017-11-14 18:15:43 UTC

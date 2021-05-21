@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package multiclassPairs</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=multiclassPairs" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="multiclassPairs: Build MultiClass Pair-Based Classifiers using TSPs or RF" />
+<meta name="og:description" content="A toolbox to train a single sample classifier that uses in-sample feature relationships. The relationships are represented as feature1 &amp;lt; feature2 (e.g. gene1 &amp;lt; gene2). We provide two options to go with. First is based on 'switchBox' package which uses Top-score pairs algorithm. Second is a novel implementation based on random forest algorithm. For simple problems we recommend to use one-vs-rest using TSP option due to its simplicity and for being easy to interpret. For complex problems RF performs better. Both lines filter the features first then combine the filtered features to make the list of all the possible rules (i.e. rule1: feature1 &amp;lt; feature2, rule2: feature1 &amp;lt; feature3, etc...). Then the list of rules will be filtered and the most important and informative rules will be kept. The informative rules will be assembled in an one-vs-rest model or in an RF model. We provide a detailed description with each function in this package to explain the filtration and training methodology in each line. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=multiclassPairs" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>multiclassPairs: Build MultiClass Pair-Based Classifiers using TSPs or RF</h2>
+<p>A toolbox to train a single sample classifier that uses in-sample feature relationships. The relationships are represented as feature1 &lt; feature2 (e.g. gene1 &lt; gene2). We provide two options to go with. First is based on 'switchBox' package which uses Top-score pairs algorithm. Second is a novel implementation based on random forest algorithm. For simple problems we recommend to use one-vs-rest using TSP option due to its simplicity and for being easy to interpret.  For complex problems RF performs better.  Both lines filter the features first then combine the filtered features to make the list of all the possible rules (i.e. rule1: feature1 &lt; feature2, rule2: feature1 &lt; feature3, etc...).  Then the list of rules will be filtered and the most important and informative rules will be kept. The informative rules will be assembled in an one-vs-rest model or in an RF model.  We provide a detailed description with each function in this package to explain the filtration and training methodology in each line. </p>
+<table summary="Package multiclassPairs summary">
+<tr>
+<td>Version:</td>
+<td>0.2.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.0.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>methods, utils, stats, graphics, grDevices, <a href="../ranger/index.html">ranger</a>, <a href="../Boruta/index.html">Boruta</a>, <a href="../dunn.test/index.html">dunn.test</a>, <a href="../caret/index.html">caret</a>, <a href="../e1071/index.html">e1071</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="http://www.bioconductor.org/packages/release/bioc/html/Biobase.html"><span class="BioC">Biobase</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/switchBox.html"><span class="BioC">switchBox</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-30</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Nour-al-dain Marzouka</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Nour-al-dain Marzouka  &#x3c;&#x4e;&#x6f;&#x75;&#x72;&#x2d;&#x61;&#x6c;&#x2d;&#x64;&#x61;&#x69;&#x6e;&#x2e;&#x4d;&#x61;&#x72;&#x7a;&#x6f;&#x75;&#x6b;&#x61;&#x20;&#x61;&#x74;&#x20;&#x6d;&#x65;&#x64;&#x2e;&#x6c;&#x75;&#x2e;&#x73;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/NourMarzouka/multiclassPairs">https://github.com/NourMarzouka/multiclassPairs</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_multiclassPairs.html">multiclassPairs results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package multiclassPairs downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="multiclassPairs.pdf"> multiclassPairs.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/multiclassPairs_0.2.1.tar.gz"> multiclassPairs_0.2.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/multiclassPairs_0.2.1.zip">multiclassPairs_0.2.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/multiclassPairs_0.2.1.zip">multiclassPairs_0.2.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/ReadMe">not available</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: not available, r-oldrel: not available </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/multiclassPairs"> multiclassPairs archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=multiclassPairs"><samp>https://CRAN.R-project.org/package=multiclassPairs</samp></a>
+to link to this page.</p>
+</body>
+</html>

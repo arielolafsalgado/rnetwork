@@ -1,0 +1,32 @@
+Package: recosystem
+Type: Package
+Title: Recommender System using Matrix Factorization
+Version: 0.4.2
+Date: 2017-09-01
+Author: Yixuan Qiu, Chih-Jen Lin, Yu-Chin Juan, Wei-Sheng Chin,
+    Yong Zhuang, Bo-Wen Yuan, Meng-Yuan Yang, and other
+    contributors. See file AUTHORS for details.
+Maintainer: Yixuan Qiu <yixuan.qiu@cos.name>
+Description: R wrapper of the 'libmf' library
+    <http://www.csie.ntu.edu.tw/~cjlin/libmf/> for recommender
+    system using matrix factorization. It is typically used to
+    approximate an incomplete matrix using the product of two
+    matrices in a latent space. Other common names for this task
+    include "collaborative filtering", "matrix completion",
+    "matrix recovery", etc. High performance multi-core parallel
+    computing is supported in this package.
+License: BSD_3_clause + file LICENSE
+Copyright: see file COPYRIGHTS
+URL: https://github.com/yixuan/recosystem
+BugReports: https://github.com/yixuan/recosystem/issues
+SystemRequirements: C++11
+Depends: R (>= 3.3.0), methods
+Imports: Rcpp (>= 0.11.0)
+Suggests: knitr, prettydoc
+LinkingTo: Rcpp, RcppProgress
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2017-09-02 00:29:11 UTC; qyx
+Repository: CRAN
+Date/Publication: 2017-09-02 06:23:03 UTC

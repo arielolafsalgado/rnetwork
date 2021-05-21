@@ -1,0 +1,35 @@
+Package: vcr
+Title: Record 'HTTP' Calls to Disk
+Description: Record test suite 'HTTP' requests and replays them during
+    future runs. A port of the Ruby gem of the same name
+    (<https://github.com/vcr/vcr/>). Works by hooking into the 'webmockr'
+    R package for matching 'HTTP' requests by various rules ('HTTP' method,
+    'URL', query parameters, headers, body, etc.), and then caching
+    real 'HTTP' responses on disk in 'cassettes'. Subsequent 'HTTP' requests
+    matching any previous requests in the same 'cassette' use a cached
+    'HTTP' response.
+Version: 0.3.0
+Authors@R: c(person("Scott", "Chamberlain", role = c("aut", "cre"),
+    email = "sckott@protonmail.com", 
+    comment = c(ORCID="0000-0003-1444-9135")))
+URL: https://github.com/ropensci/vcr/ (devel)
+        https://ropenscilabs.github.io/http-testing-book/ (user manual)
+BugReports: https://github.com/ropensci/vcr/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+Imports: crul (>= 0.7.0), httr, webmockr (>= 0.4.0), urltools, yaml,
+        R6, lazyeval, base64enc
+Suggests: jsonlite, testthat, knitr, rmarkdown, desc, crayon, cli
+RoxygenNote: 6.1.1
+X-schema.org-applicationCategory: Web
+X-schema.org-keywords: http, https, API, web-services, curl, mock,
+        mocking, http-mocking, testing, testing-tools, tdd
+X-schema.org-isPartOf: https://ropensci.org
+NeedsCompilation: no
+Packaged: 2019-08-20 19:03:26 UTC; sckott
+Author: Scott Chamberlain [aut, cre] (<https://orcid.org/0000-0003-1444-9135>)
+Maintainer: Scott Chamberlain <sckott@protonmail.com>
+Repository: CRAN
+Date/Publication: 2019-08-20 19:40:02 UTC

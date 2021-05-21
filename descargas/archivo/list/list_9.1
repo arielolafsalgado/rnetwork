@@ -1,0 +1,54 @@
+Package: list
+Version: 9.1
+Title: Statistical Methods for the Item Count Technique and List
+        Experiment
+Authors@R: c(person("Graeme", "Blair", email = "graeme.blair@ucla.edu", role = c("aut", "cre")),
+             person("Winston", "Chou", email = "wchou@princeton.edu", role = c("aut")),
+             person("Kosuke", "Imai", email = "imai@harvard.edu", role = c("aut")),
+             person("Bethany", "Park", email = "bapark@princeton.edu", role = c("ctb")),
+             person("Alexander", "Coppock", email = "alex.coppock@yale.edu", role = c("ctb")))
+Depends: R (>= 3.2.0), utils, sandwich (>= 2.3-3)
+Imports: VGAM (>= 0.9-8), magic (>= 1.5-6), gamlss.dist (>= 4.3-4),
+        MASS (>= 7.3-40), quadprog (>= 1.5-5), corpcor (>= 1.6.7),
+        mvtnorm (>= 1.0-2), coda (>= 0.17-1), stats, arm
+Suggests: testthat (>= 0.9.1), knitr (>= 1.10.5)
+VignetteBuilder: knitr
+Description: Allows researchers to conduct multivariate
+    statistical analyses of survey data with list experiments. This
+    survey methodology is also known as the item count technique or
+    the unmatched count technique and is an alternative to the commonly
+    used randomized response method. The package implements the methods
+    developed by Imai (2011) <doi:10.1198/jasa.2011.ap10415>, 
+    Blair and Imai (2012) <doi:10.1093/pan/mpr048>, 
+    Blair, Imai, and Lyall (2013) <doi:10.1111/ajps.12086>, 
+    Imai, Park, and Greene (2014) <doi:10.1093/pan/mpu017>,
+    Aronow, Coppock, Crawford, and Green (2015) <doi:10.1093/jssam/smu023>, 
+    Chou, Imai, and Rosenfeld (2017) <doi:10.1177/0049124117729711>, and 
+    Blair, Chou, and Imai (2018) <https://imai.fas.harvard.edu/research/files/listerror.pdf>. 
+    This includes a Bayesian MCMC implementation of regression for the 
+    standard and multiple sensitive item list experiment designs and a 
+    random effects setup, a Bayesian MCMC hierarchical regression model 
+    with up to three hierarchical groups, the combined list experiment 
+    and endorsement experiment regression model, a joint model of the 
+    list experiment that enables the analysis of the list experiment as 
+    a predictor in outcome regression models, a method for combining 
+    list experiments with direct questions, and methods for diagnosing and
+    adjusting for response error. In addition, the package implements the 
+    statistical test that is designed to detect certain failures of list 
+    experiments, and a placebo test for the list experiment using data from 
+    direct questions.
+LazyLoad: yes
+LazyData: yes
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 6.1.1
+NeedsCompilation: yes
+Packaged: 2019-02-26 22:09:06 UTC; gblair
+Author: Graeme Blair [aut, cre],
+  Winston Chou [aut],
+  Kosuke Imai [aut],
+  Bethany Park [ctb],
+  Alexander Coppock [ctb]
+Maintainer: Graeme Blair <graeme.blair@ucla.edu>
+Repository: CRAN
+Date/Publication: 2019-02-26 22:30:04 UTC

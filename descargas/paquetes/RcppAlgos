@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package RcppAlgos</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=RcppAlgos" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="RcppAlgos: High Performance Tools for Combinatorics and Computational Mathematics" />
+<meta name="og:description" content="Provides optimized functions and flexible combinatorial iterators implemented in C++ with 'Rcpp' for solving problems in combinatorics and computational mathematics. Utilizes parallel programming via 'RcppThread' for maximal performance. Also makes use of the RMatrix class from the 'RcppParallel' library. There are combination/permutation functions with constraint parameters that allow for generation of all results of a vector meeting specific criteria (e.g. generating integer partitions/compositions or finding all combinations such that the sum is between two bounds). Capable of generating specific combinations/permutations (e.g. retrieve only the nth lexicographical result) which sets up nicely for parallelization as well as random sampling. Gmp support permits exploration where the total number of results is large (e.g. comboSample(10000, 500, n = 4)). Additionally, there are several high performance number theoretic functions that are useful for problems common in computational mathematics. Some of these functions make use of the fast integer division library 'libdivide'. The primeSieve function is based on the segmented sieve of Eratosthenes implementation by Kim Walisch. It is also efficient for large numbers by using the cache friendly improvements originally developed by Tomás Oliveira. Finally, there is a prime counting function that implements Legendre's formula based on the work of Kim Walisch." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=RcppAlgos" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>RcppAlgos: High Performance Tools for Combinatorics and Computational
+Mathematics</h2>
+<p>Provides optimized functions and flexible combinatorial iterators
+    implemented in C++ with 'Rcpp' for solving problems in combinatorics and
+    computational mathematics. Utilizes parallel programming via 'RcppThread'
+    for maximal performance. Also makes use of the RMatrix class from the
+    'RcppParallel' library. There are combination/permutation functions with
+    constraint parameters that allow for generation of all results of a vector
+    meeting specific criteria (e.g. generating integer partitions/compositions
+    or finding all combinations such that the sum is between two bounds).
+    Capable of generating specific combinations/permutations (e.g. retrieve
+    only the nth lexicographical result) which sets up nicely for
+    parallelization as well as random sampling. Gmp support permits exploration
+    where the total number of results is large (e.g. comboSample(10000, 500,
+    n = 4)). Additionally, there are several high performance number theoretic
+    functions that are useful for problems common in computational mathematics.
+    Some of these functions make use of the fast integer division library
+    'libdivide'. The primeSieve function is based on the segmented sieve of
+    Eratosthenes implementation by Kim Walisch. It is also efficient for large
+    numbers by using the cache friendly improvements originally developed by
+    Tomás Oliveira. Finally, there is a prime counting function that implements
+    Legendre's formula based on the work of Kim Walisch.</p>
+<table summary="Package RcppAlgos summary">
+<tr>
+<td>Version:</td>
+<td>2.4.1</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../gmp/index.html">gmp</a>, <a href="../Rcpp/index.html">Rcpp</a>, methods</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppThread/index.html">RcppThread</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../numbers/index.html">numbers</a>, <a href="../microbenchmark/index.html">microbenchmark</a>, <a href="../knitr/index.html">knitr</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-03-24</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Joseph Wood</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Joseph Wood  &#x3c;&#x6a;&#x77;&#x6f;&#x6f;&#x64;&#x30;&#x30;&#x30;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/jwood000/RcppAlgos/issues">https://github.com/jwood000/RcppAlgos/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/jwood000/RcppAlgos">https://github.com/jwood000/RcppAlgos</a>, <a href="https://gmplib.org/">https://gmplib.org/</a>,
+<a href="https://github.com/kimwalisch/primesieve">https://github.com/kimwalisch/primesieve</a>, <a href="http://libdivide.com">http://libdivide.com</a>,
+<a href="https://github.com/kimwalisch/primecount">https://github.com/kimwalisch/primecount</a>,
+<a href="http://ridiculousfish.com/">http://ridiculousfish.com/</a>,
+<a href="http://sweet.ua.pt/tos/software/prime_sieve.html">http://sweet.ua.pt/tos/software/prime_sieve.html</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>C++11, gmp (&gt;= 4.2.3)</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/NumericalMathematics.html">NumericalMathematics</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_RcppAlgos.html">RcppAlgos results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package RcppAlgos downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="RcppAlgos.pdf"> RcppAlgos.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/CombPermConstraints.html">Constraints, Integer Partitions, and Compositions</a><br/>
+<a href="vignettes/CombinatorialSampling.html">Combinatorial Sampling</a><br/>
+<a href="vignettes/CombinatoricsIterators.html">Combinatorial Iterators in RcppAlgos</a><br/>
+<a href="vignettes/ComputationalMathematics.html">Computational Mathematics Overview</a><br/>
+<a href="vignettes/GeneralCombinatorics.html">Combination and Permutation Basics</a><br/>
+<a href="vignettes/HighPerformanceBenchmarks.html">High Performance Benchmarks</a><br/>
+<a href="vignettes/SubsetSum.html">Attacking Problems Related to the Subset Sum Problem</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/RcppAlgos_2.4.1.tar.gz"> RcppAlgos_2.4.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/RcppAlgos_2.4.1.zip">RcppAlgos_2.4.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/RcppAlgos_2.4.1.zip">RcppAlgos_2.4.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/RcppAlgos_2.4.1.zip">RcppAlgos_2.4.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/RcppAlgos_2.4.1.tgz">RcppAlgos_2.4.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/RcppAlgos_2.4.1.tgz">RcppAlgos_2.4.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/RcppAlgos"> RcppAlgos archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package RcppAlgos reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="http://www.bioconductor.org/packages/release/bioc/html/SMAD.html"><span class="BioC">SMAD</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../STraTUS/index.html">STraTUS</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../RcppBigIntAlgos/index.html">RcppBigIntAlgos</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=RcppAlgos"><samp>https://CRAN.R-project.org/package=RcppAlgos</samp></a>
+to link to this page.</p>
+</body>
+</html>

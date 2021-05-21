@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package rquery</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Relational Query Generator for Data Manipulation at Scale [R package rquery version 1.4.6]" />
+<meta name="citation_author" content="John Mount" />
+<meta name="citation_publication_date" content="2020-10-17" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=rquery" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=rquery" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="rquery: Relational Query Generator for Data Manipulation at Scale" />
+<meta name="og:description" content="A piped query generator based on Edgar F. Codd's relational algebra, and on production experience using 'SQL' and 'dplyr' at big data scale. The design represents an attempt to make 'SQL' more teachable by denoting composition by a sequential pipeline notation instead of nested queries or functions. The implementation delivers reliable high performance data processing on large data systems such as 'Spark', databases, and 'data.table'. Package features include: data processing trees or pipelines as observable objects (able to report both columns produced and columns used), optimized 'SQL' generation as an explicit user visible table modeling step, plus explicit query reasoning and checking." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=rquery" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>rquery: Relational Query Generator for Data Manipulation at Scale</h2>
+<p>A piped query generator based on Edgar F. Codd's relational
+    algebra, and on production experience using 'SQL' and 'dplyr' at big data
+    scale.  The design represents an attempt to make 'SQL' more teachable by
+    denoting composition by a sequential pipeline notation instead of nested
+    queries or functions.   The implementation delivers reliable high 
+    performance data processing on large data systems such as 'Spark',
+    databases, and 'data.table'. Package features include: data processing trees
+    or pipelines as observable objects (able to report both columns
+    produced and columns used), optimized 'SQL' generation as an explicit
+    user visible table modeling step, plus explicit query reasoning and checking.</p>
+<table summary="Package rquery summary">
+<tr>
+<td>Version:</td>
+<td>1.4.6</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.4.0), <a href="../wrapr/index.html">wrapr</a> (&ge; 2.0.2)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>utils, stats, methods</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../DBI/index.html">DBI</a>, <a href="../RSQLite/index.html">RSQLite</a>, <a href="../rqdatatable/index.html">rqdatatable</a> (&ge; 1.2.8), <a href="../igraph/index.html">igraph</a>, <a href="../DiagrammeR/index.html">DiagrammeR</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../yaml/index.html">yaml</a>, <a href="../tinytest/index.html">tinytest</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-17</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>John Mount [aut, cre],
+  Win-Vector LLC [cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>John Mount  &#x3c;&#x6a;&#x6d;&#x6f;&#x75;&#x6e;&#x74;&#x20;&#x61;&#x74;&#x20;&#x77;&#x69;&#x6e;&#x2d;&#x76;&#x65;&#x63;&#x74;&#x6f;&#x72;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/WinVector/rquery/issues">https://github.com/WinVector/rquery/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/WinVector/rquery/">https://github.com/WinVector/rquery/</a>,
+<a href="https://winvector.github.io/rquery/">https://winvector.github.io/rquery/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_rquery.html">rquery results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package rquery downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="rquery.pdf"> rquery.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/AssigmentPartitioner.html">Assignment Partitioner</a><br/>
+<a href="vignettes/Parameterized_rquery.html">Parameterized rquery</a><br/>
+<a href="vignettes/PipeableSQL.html">Pipeable SQL</a><br/>
+<a href="vignettes/QueryGeneration.html">Query Generation</a><br/>
+<a href="vignettes/R_mapping.html">R mapping</a><br/>
+<a href="vignettes/rquery_intro.html">rquery Introduction</a><br/>
+<a href="vignettes/rquery_many_columns.html">rquery Many Columns</a><br/>
+<a href="vignettes/rquery_substitution.html">rquery Substitution</a><br/>
+<a href="vignettes/sql_quoting.html">SQL quoting</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/rquery_1.4.6.tar.gz"> rquery_1.4.6.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/rquery_1.4.6.zip">rquery_1.4.6.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/rquery_1.4.6.zip">rquery_1.4.6.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/rquery_1.4.6.zip">rquery_1.4.6.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/rquery_1.4.6.tgz">rquery_1.4.6.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/rquery_1.4.6.tgz">rquery_1.4.6.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/rquery"> rquery archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package rquery reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../rqdatatable/index.html">rqdatatable</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../cdata/index.html">cdata</a>, <a href="../WVPlots/index.html">WVPlots</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../vtreat/index.html">vtreat</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=rquery"><samp>https://CRAN.R-project.org/package=rquery</samp></a>
+to link to this page.</p>
+</body>
+</html>

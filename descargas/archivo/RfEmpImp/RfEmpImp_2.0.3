@@ -1,0 +1,34 @@
+Package: RfEmpImp
+Type: Package
+Title: Multiple Imputation using Chained Random Forests
+Version: 2.0.3
+Authors@R: c(person("Shangzhi", "Hong", role = c("aut", "cre"),
+            email = "shangzhi-hong@hotmail.com"),
+            person("Henry S.", "Lynn", role = c("ths")))
+Maintainer: Shangzhi Hong <shangzhi-hong@hotmail.com>
+Description: Functions for methods for multiple imputation using chained random
+    forests. Implemented algorithms can handle missing data in both continuous
+    and categorical variables by using prediction-based or node-based
+    conditional distributions constructed using random forests. For
+    prediction-based imputation, the method based on the empirical distribution
+    of out-of-bag prediction errors of random forests and the method based on
+    normality assumption are provided. For node-based imputation, the method
+    based on the conditional distribution formed by predicting nodes of random
+    forests and the method based on measures of proximities of random forests
+    are provided. More details of the statistical methods can be found in
+    Hong et al. (2020) <arXiv:2004.14823>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+Depends: R (>= 3.5.0), mice (>= 3.8.0), ranger (>= 0.12.1)
+Suggests: testthat (>= 2.1.0), knitr, rmarkdown
+NeedsCompilation: no
+URL: https://github.com/shangzhi-hong/RfEmpImp
+BugReports: https://github.com/shangzhi-hong/RfEmpImp/issues
+VignetteBuilder: knitr
+Packaged: 2020-05-12 11:49:23 UTC; HONG
+Author: Shangzhi Hong [aut, cre],
+  Henry S. Lynn [ths]
+Repository: CRAN
+Date/Publication: 2020-05-16 09:30:11 UTC

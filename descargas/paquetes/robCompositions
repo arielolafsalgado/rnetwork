@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package robCompositions</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Compositional Data Analysis [R package robCompositions version 2.2.1]" />
+<meta name="citation_author1" content="Matthias Templ" />
+<meta name="citation_author2" content="Karel Hron" />
+<meta name="citation_author3" content="Peter Filzmoser" />
+<meta name="citation_publication_date" content="2020-02-11" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=robCompositions" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=robCompositions" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="robCompositions: Compositional Data Analysis" />
+<meta name="og:description" content="Methods for analysis of compositional data including robust methods (&amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2F978-3-319-96422-5&quot;&gt;doi:10.1007/978-3-319-96422-5&lt;/a&gt;&amp;gt;), imputation of missing values (&amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.csda.2009.11.023&quot;&gt;doi:10.1016/j.csda.2009.11.023&lt;/a&gt;&amp;gt;), methods to replace rounded zeros (&amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F02664763.2017.1410524&quot;&gt;doi:10.1080/02664763.2017.1410524&lt;/a&gt;&amp;gt;, &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.chemolab.2016.04.011&quot;&gt;doi:10.1016/j.chemolab.2016.04.011&lt;/a&gt;&amp;gt;, &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.csda.2012.02.012&quot;&gt;doi:10.1016/j.csda.2012.02.012&lt;/a&gt;&amp;gt;), count zeros (&amp;lt;&lt;a href=&quot;https://doi.org/10.1177%2F1471082X14535524&quot;&gt;doi:10.1177/1471082X14535524&lt;/a&gt;&amp;gt;), methods to deal with essential zeros (&amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F02664763.2016.1182135&quot;&gt;doi:10.1080/02664763.2016.1182135&lt;/a&gt;&amp;gt;), (robust) outlier detection for compositional data, (robust) principal component analysis for compositional data, (robust) factor analysis for compositional data, (robust) discriminant analysis for compositional data (Fisher rule), robust regression with compositional predictors, functional data analysis and p-splines (&amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.csda.2015.07.007&quot;&gt;doi:10.1016/j.csda.2015.07.007&lt;/a&gt;&amp;gt;), contingency (&amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F03610926.2013.824980&quot;&gt;doi:10.1080/03610926.2013.824980&lt;/a&gt;&amp;gt;) and compositional tables (&amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fsjos.12326&quot;&gt;doi:10.1111/sjos.12326&lt;/a&gt;&amp;gt;, &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fsjos.12223&quot;&gt;doi:10.1111/sjos.12223&lt;/a&gt;&amp;gt;, &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F02664763.2013.856871&quot;&gt;doi:10.1080/02664763.2013.856871&lt;/a&gt;&amp;gt;) and (robust) Anderson-Darling normality tests for compositional data as well as popular log-ratio transformations (addLR, cenLR, isomLR, and their inverse transformations). In addition, visualisation and diagnostic tools are implemented as well as high and low-level plot functions for the ternary diagram." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=robCompositions" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>robCompositions: Compositional Data Analysis</h2>
+<p>Methods for analysis of compositional data including robust
+    methods  (&lt;<a href="https://doi.org/10.1007%2F978-3-319-96422-5">doi:10.1007/978-3-319-96422-5</a>&gt;), imputation of missing values (&lt;<a href="https://doi.org/10.1016%2Fj.csda.2009.11.023">doi:10.1016/j.csda.2009.11.023</a>&gt;), methods to replace 
+    rounded zeros (&lt;<a href="https://doi.org/10.1080%2F02664763.2017.1410524">doi:10.1080/02664763.2017.1410524</a>&gt;, &lt;<a href="https://doi.org/10.1016%2Fj.chemolab.2016.04.011">doi:10.1016/j.chemolab.2016.04.011</a>&gt;, &lt;<a href="https://doi.org/10.1016%2Fj.csda.2012.02.012">doi:10.1016/j.csda.2012.02.012</a>&gt;), 
+    count zeros (&lt;<a href="https://doi.org/10.1177%2F1471082X14535524">doi:10.1177/1471082X14535524</a>&gt;), 
+    methods to deal with essential zeros (&lt;<a href="https://doi.org/10.1080%2F02664763.2016.1182135">doi:10.1080/02664763.2016.1182135</a>&gt;), (robust) outlier
+    detection for compositional data, (robust) principal component analysis for
+    compositional data, (robust) factor analysis for compositional data, (robust)
+    discriminant analysis for compositional data (Fisher rule), robust regression
+    with compositional predictors, functional data analysis and p-splines (&lt;<a href="https://doi.org/10.1016%2Fj.csda.2015.07.007">doi:10.1016/j.csda.2015.07.007</a>&gt;), 
+    contingency (&lt;<a href="https://doi.org/10.1080%2F03610926.2013.824980">doi:10.1080/03610926.2013.824980</a>&gt;) 
+    and compositional tables (&lt;<a href="https://doi.org/10.1111%2Fsjos.12326">doi:10.1111/sjos.12326</a>&gt;, &lt;<a href="https://doi.org/10.1111%2Fsjos.12223">doi:10.1111/sjos.12223</a>&gt;, &lt;<a href="https://doi.org/10.1080%2F02664763.2013.856871">doi:10.1080/02664763.2013.856871</a>&gt;) 
+    and (robust) Anderson-Darling normality tests for
+    compositional data as well as popular log-ratio transformations (addLR, cenLR,
+    isomLR, and their inverse transformations). In addition, visualisation and
+    diagnostic tools are implemented as well as high and low-level plot functions
+    for the ternary diagram.</p>
+<table summary="Package robCompositions summary">
+<tr>
+<td>Version:</td>
+<td>2.2.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0), <a href="../ggplot2/index.html">ggplot2</a>, <a href="../pls/index.html">pls</a>, <a href="../data.table/index.html">data.table</a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../car/index.html">car</a>, <a href="../cvTools/index.html">cvTools</a>, <a href="../e1071/index.html">e1071</a>, <a href="../rrcov/index.html">rrcov</a>, <a href="../cluster/index.html">cluster</a>, <a href="../fpc/index.html">fpc</a>, <a href="../GGally/index.html">GGally</a>, <a href="../kernlab/index.html">kernlab</a>, <a href="../MASS/index.html">MASS</a>, <a href="../mclust/index.html">mclust</a>, <a href="../sROC/index.html">sROC</a>, <a href="../tidyr/index.html">tidyr</a>, <a href="../robustbase/index.html">robustbase</a>, <a href="../VIM/index.html">VIM</a>, <a href="../zCompositions/index.html">zCompositions</a>, <a href="../reshape2/index.html">reshape2</a>, <a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppEigen/index.html">RcppEigen</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-02-11</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Matthias Templ <a href="https://orcid.org/0000-0002-8638-5276"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Karel Hron <a href="https://orcid.org/0000-0002-1847-6598"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Peter Filzmoser <a href="https://orcid.org/0000-0002-8014-4682"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Kamila Facevicova [ctb],
+  Petra Kynclova [ctb],
+  Jan Walach [ctb],
+  Veronika Pintar [ctb],
+  Jiajia Chen [ctb],
+  Dominika Miksova [ctb],
+  Bernhard Meindl [ctb],
+  Alessandra Menafoglio
+    <a href="https://orcid.org/0000-0003-0682-6412"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb],
+  Alessia Di Blasi [ctb],
+  Federico Pavone [ctb],
+  Gianluca Zeni [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Matthias Templ  &#x3c;&#x6d;&#x61;&#x74;&#x74;&#x68;&#x69;&#x61;&#x73;&#x2e;&#x74;&#x65;&#x6d;&#x70;&#x6c;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">robCompositions citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/MissingData.html">MissingData</a>, <a href="../../views/OfficialStatistics.html">OfficialStatistics</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_robCompositions.html">robCompositions results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package robCompositions downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="robCompositions.pdf"> robCompositions.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/imputation.pdf">Imputation Methods in robCompositions</a><br/>
+<a href="vignettes/robCompositions-overview.pdf">Overview of the robCompostions package</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/robCompositions_2.2.1.tar.gz"> robCompositions_2.2.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/robCompositions_2.2.1.zip">robCompositions_2.2.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/robCompositions_2.2.1.zip">robCompositions_2.2.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/robCompositions_2.2.1.zip">robCompositions_2.2.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/robCompositions_2.2.1.tgz">robCompositions_2.2.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/robCompositions_2.2.1.tgz">robCompositions_2.2.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/robCompositions"> robCompositions archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package robCompositions reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../ToolsForCoDa/index.html">ToolsForCoDa</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../mvoutlier/index.html">mvoutlier</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../balance/index.html">balance</a>, <a href="../simFrame/index.html">simFrame</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=robCompositions"><samp>https://CRAN.R-project.org/package=robCompositions</samp></a>
+to link to this page.</p>
+</body>
+</html>

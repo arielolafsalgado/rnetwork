@@ -1,0 +1,27 @@
+Package: rmargint
+Type: Package
+Title: Robust Marginal Integration Procedures
+Version: 1.0.2
+Date: 2019-06-15
+Authors@R: c(person("Alejandra", "Martinez", role=c("cre"), email="ale_m_martinez@hotmail.com"),
+            person("Matias", "Salibian-Barrera", role = c("aut"), email = "matias@stat.ubc.ca"))
+Description: Three robust marginal integration procedures for additive models based on local 
+             polynomial kernel smoothers. As a preliminary estimator of the multivariate 
+             function for the marginal integration procedure, a first approach uses local 
+             constant M-estimators, a second one uses local polynomials of order 1 over all the
+             components of covariates, and the third one uses M-estimators based on local 
+             polynomials but only in the direction of interest. For this last approach, 
+             estimators of the derivatives of the additive functions can be obtained. All three
+             procedures can compute predictions for points outside the training set if desired. 
+             See Boente and Martinez (2017) <doi:10.1007/s11749-016-0508-0> for details. 
+License: GPL (>= 3.0)
+RoxygenNote: 6.1.1
+Encoding: UTF-8
+Imports: stats, graphics
+NeedsCompilation: yes
+Packaged: 2019-06-22 01:13:28 UTC; Alejandra
+Author: Alejandra Martinez [cre],
+  Matias Salibian-Barrera [aut]
+Maintainer: Alejandra Martinez <ale_m_martinez@hotmail.com>
+Repository: CRAN
+Date/Publication: 2019-06-28 06:10:02 UTC

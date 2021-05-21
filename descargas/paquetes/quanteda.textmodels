@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package quanteda.textmodels</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Scaling Models and Classifiers for Textual Data [R package quanteda.textmodels version 0.9.1]" />
+<meta name="citation_author1" content="Kenneth Benoit" />
+<meta name="citation_author2" content="Kohei Watanabe" />
+<meta name="citation_author3" content="Haiyan Wang" />
+<meta name="citation_author4" content="Stefan Müller" />
+<meta name="citation_author5" content="Patrick O. Perry" />
+<meta name="citation_author6" content="Benjamin Lauderdale" />
+<meta name="citation_author7" content="William Lowe" />
+<meta name="citation_publication_date" content="2020-03-13" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=quanteda.textmodels" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=quanteda.textmodels" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="quanteda.textmodels: Scaling Models and Classifiers for Textual Data" />
+<meta name="og:description" content="Scaling models and classifiers for sparse matrix objects representing textual data in the form of a document-feature matrix. Includes original implementations of 'Laver', 'Benoit', and Garry's (2003) &amp;lt;&lt;a href=&quot;https://doi.org/10.1017%2FS0003055403000698&quot;&gt;doi:10.1017/S0003055403000698&lt;/a&gt;&amp;gt;, 'Wordscores' model, Perry and 'Benoit's' (2017) &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1710.08963&quot;&gt;arXiv:1710.08963&lt;/a&gt;&amp;gt; class affinity scaling model, and 'Slapin' and 'Proksch's' (2008) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fj.1540-5907.2008.00338.x&quot;&gt;doi:10.1111/j.1540-5907.2008.00338.x&lt;/a&gt;&amp;gt; 'wordfish' model, as well as methods for correspondence analysis, latent semantic analysis, and fast Naive Bayes and linear 'SVMs' specially designed for sparse textual data." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=quanteda.textmodels" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>quanteda.textmodels: Scaling Models and Classifiers for Textual Data</h2>
+<p>Scaling models and classifiers for sparse matrix objects representing 
+    textual data in the form of a document-feature matrix.  Includes original 
+    implementations of 'Laver', 'Benoit', and Garry's (2003) &lt;<a href="https://doi.org/10.1017%2FS0003055403000698">doi:10.1017/S0003055403000698</a>&gt;,
+    'Wordscores' model, Perry and 'Benoit's' (2017) &lt;<a href="https://arxiv.org/abs/1710.08963">arXiv:1710.08963</a>&gt; class affinity scaling model, 
+    and 'Slapin' and 'Proksch's' (2008) &lt;<a href="https://doi.org/10.1111%2Fj.1540-5907.2008.00338.x">doi:10.1111/j.1540-5907.2008.00338.x</a>&gt; 'wordfish'
+    model, as well as methods for correspondence analysis, latent semantic analysis,
+    and fast Naive Bayes and linear 'SVMs' specially designed for sparse textual data.</p>
+<table summary="Package quanteda.textmodels summary">
+<tr>
+<td>Version:</td>
+<td>0.9.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.1.0), methods</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../ggplot2/index.html">ggplot2</a>, <a href="../LiblineaR/index.html">LiblineaR</a>, <a href="../Matrix/index.html">Matrix</a> (&ge; 1.2), <a href="../quanteda/index.html">quanteda</a> (&ge; 2.0), <a href="../RSpectra/index.html">RSpectra</a>, <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.12), <a href="../RcppParallel/index.html">RcppParallel</a>, <a href="../RSSL/index.html">RSSL</a>, <a href="../SparseM/index.html">SparseM</a>, <a href="../stringi/index.html">stringi</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppParallel/index.html">RcppParallel</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a> (&ge; 0.7.600.1.0), <a href="../quanteda/index.html">quanteda</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../ca/index.html">ca</a>, <a href="../covr/index.html">covr</a>, <a href="../fastNaiveBayes/index.html">fastNaiveBayes</a>, <a href="../knitr/index.html">knitr</a>, <a href="../lsa/index.html">lsa</a>, <a href="../microbenchmark/index.html">microbenchmark</a>, <a href="../naivebayes/index.html">naivebayes</a>, <a href="../spelling/index.html">spelling</a>, <a href="../RColorBrewer/index.html">RColorBrewer</a>, <a href="../testthat/index.html">testthat</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-03-13</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Kenneth Benoit <a href="https://orcid.org/0000-0002-0797-564X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [cre, aut, cph],
+  Kohei Watanabe <a href="https://orcid.org/0000-0001-6519-5265"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Haiyan Wang <a href="https://orcid.org/0000-0003-4992-4311"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Stefan Müller <a href="https://orcid.org/0000-0002-6315-4125"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Patrick O. Perry <a href="https://orcid.org/0000-0001-7460-127X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Benjamin Lauderdale
+    <a href="https://orcid.org/0000-0003-3090-0969"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  William Lowe <a href="https://orcid.org/0000-0002-1549-6163"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  European Research Council [fnd] (ERC-2011-StG 283794-QUANTESS)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Kenneth Benoit  &#x3c;&#x6b;&#x62;&#x65;&#x6e;&#x6f;&#x69;&#x74;&#x20;&#x61;&#x74;&#x20;&#x6c;&#x73;&#x65;&#x2e;&#x61;&#x63;&#x2e;&#x75;&#x6b;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/quanteda/quanteda.textmodels">https://github.com/quanteda/quanteda.textmodels</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>C++11</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-GB</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_quanteda.textmodels.html">quanteda.textmodels results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package quanteda.textmodels downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="quanteda.textmodels.pdf"> quanteda.textmodels.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/textmodel_performance.html">textmodel Performance Comparisons</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/quanteda.textmodels_0.9.1.tar.gz"> quanteda.textmodels_0.9.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/quanteda.textmodels_0.9.1.zip">quanteda.textmodels_0.9.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/quanteda.textmodels_0.9.1.zip">quanteda.textmodels_0.9.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/quanteda.textmodels_0.9.1.zip">quanteda.textmodels_0.9.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/quanteda.textmodels_0.9.1.tgz">quanteda.textmodels_0.9.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/quanteda.textmodels_0.9.1.tgz">quanteda.textmodels_0.9.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/quanteda.textmodels"> quanteda.textmodels archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package quanteda.textmodels reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../LSX/index.html">LSX</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../explor/index.html">explor</a>, <a href="../quanteda/index.html">quanteda</a>, <a href="../rainette/index.html">rainette</a>, <a href="../seededlda/index.html">seededlda</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=quanteda.textmodels"><samp>https://CRAN.R-project.org/package=quanteda.textmodels</samp></a>
+to link to this page.</p>
+</body>
+</html>

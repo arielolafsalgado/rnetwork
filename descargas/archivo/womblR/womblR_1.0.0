@@ -1,0 +1,29 @@
+Package: womblR
+Type: Package
+Title: Spatiotemporal Boundary Detection Model for Areal Unit Data
+Version: 1.0.0
+Description: Implements a spatiotemporal boundary detection model with a dissimilarity
+    metric for areal data with inference in a Bayesian setting using Markov chain
+    Monte Carlo (MCMC). The response variable can be modeled as Gaussian (no nugget),
+    probit or Tobit link and spatial correlation is introduced at each time point
+    through a conditional autoregressive (CAR) prior. Temporal correlation is introduced
+    through a hierarchical structure and can be specified as exponential or first-order
+    autoregressive. Full details of the package can be found in the accompanying vignette.
+Date: 2017-06-15
+Authors@R: person("Samuel I.", "Berchuck", email = "berchuck@ad.unc.edu", role = c("aut", "cre"))
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 5.0.1
+NeedsCompilation: yes
+Depends: R (>= 3.0.2)
+Imports: graphics, grDevices, mvtnorm (>= 1.0-0), Rcpp (>= 0.12.9),
+        stats, utils
+Suggests: coda, classInt, knitr, rmarkdown
+LinkingTo: Rcpp, RcppArmadillo (>= 0.7.500.0.0)
+VignetteBuilder: knitr
+Packaged: 2017-06-16 20:44:23 UTC; Sam
+Author: Samuel I. Berchuck [aut, cre]
+Maintainer: Samuel I. Berchuck <berchuck@ad.unc.edu>
+Repository: CRAN
+Date/Publication: 2017-06-17 14:55:19 UTC

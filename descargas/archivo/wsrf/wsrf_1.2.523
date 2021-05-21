@@ -1,0 +1,34 @@
+Package: wsrf
+Type: Package
+Title: Weighted Subspace Random Forest
+Version: 1.2.523
+Date: 2014-01-08
+Authors@R: c(person("Qinghan", "Meng", role="aut"),
+	person("He", "Zhao", email="Simon.Yansen.Zhao@gmail.com", role=c("aut", "cre")),
+	person("Graham", "Williams", email="graham.williams@togaware.com", role="aut"),
+	person("Junchao", "Lv", role="ctb"))
+Maintainer: He Zhao <Simon.Yansen.Zhao@gmail.com>
+Description: The wsrf package is a parallel implementation of the
+	Weighted Subspace Random Forest algorithm proposed (wsrf).  A
+	novel variable weighting method is used for variable subspace
+	selection in place of the traditional approach of random
+	variable sampling.  This new approach is particularly useful
+	in building models for high dimensional data---often
+	consisting of thousands of variables.  Parallel computation is
+	used to take advantage of multi-core machines and clusters of
+	machines to build random forest models from high dimensional
+	data with reduced elapsed times.
+License: GPL (>= 2)
+Depends: R (>= 3.0.0), Rcpp (>= 0.10.2), parallel
+LinkingTo: Rcpp
+Suggests: rattle (>= 2.6.26), randomForest(>= 4.6.7)
+OS_type: unix
+VignetteBuilder: knitr
+Packaged: 2014-01-08 08:57:43 UTC; simon
+Author: Qinghan Meng [aut],
+  He Zhao [aut, cre],
+  Graham Williams [aut],
+  Junchao Lv [ctb]
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2014-01-08 10:32:02

@@ -1,0 +1,35 @@
+Package: odbc
+Title: Connect to ODBC Compatible Databases (using the DBI Interface)
+Version: 1.1.0
+Authors@R: c(
+    person("Jim", "Hester", , "james.hester@rstudio.com", role = c("aut", "cre")),
+    person("Hadley", "Wickham", , "hadley@rstudio.com", role = c("aut")),
+    person("lexicalunit", role = c("cph"), comment = "nanodbc library"),
+    person("Google Inc.", role = c("cph"), comment = "cctz library"),
+    person("RStudio", role = c("cph", "fnd"))
+  )
+Description: A DBI-compatible interface to ODBC databases.
+License: MIT + file LICENSE
+URL: https://github.com/rstats-db/odbc
+BugReports: https://github.com/rstats-db/odbc/issues
+SystemRequirements: An ODBC3 driver manager and drivers.
+RoxygenNote: 6.0.1
+LazyData: true
+ByteCompile: true
+Imports: DBI (>= 0.3.0), methods, Rcpp (>= 0.12.11), blob (>= 1.1.0),
+        bit64, hms
+Suggests: tibble, DBItest, testthat, covr, magrittr
+LinkingTo: Rcpp, BH
+Collate: 'odbc.R' 'Driver.R' 'Connection.R' 'DataTypes.R'
+        'RcppExports.R' 'Result.R' 'Table.R' 'Viewer.R' 'utils.R'
+        'zzz.R'
+NeedsCompilation: yes
+Packaged: 2017-06-22 19:27:54 UTC; jhester
+Author: Jim Hester [aut, cre],
+  Hadley Wickham [aut],
+  lexicalunit [cph] (nanodbc library),
+  Google Inc. [cph] (cctz library),
+  RStudio [cph, fnd]
+Maintainer: Jim Hester <james.hester@rstudio.com>
+Repository: CRAN
+Date/Publication: 2017-06-23 09:22:06 UTC

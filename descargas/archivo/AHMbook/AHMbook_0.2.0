@@ -1,0 +1,113 @@
+Package: AHMbook
+Type: Package
+Title: Functions and Data for the Book "Applied Hierarchical Modeling
+        in Ecology" Vols 1 and 2
+Version: 0.2.0
+Date: 2020-06-08
+Depends: R (>= 2.10)
+Imports: grDevices, graphics, methods, stats, utils, plotrix, raster,
+        sp, RandomFields, coda, unmarked (>= 0.12.2), mvtnorm, spdep
+Suggests:
+Authors@R: c(
+  person("Marc", "Kéry", role="aut"),
+  person("Andy", "Royle", role="aut"),
+  person("Mike", "Meredith", role=c("aut", "cre"), email="mike@mmeredith.net"),
+  person("Urs", "Breitenmoser", role="dtc", comment="EurasianLynx"),
+  person("Richard", "Chandler", role="ctb"),
+  person("Bob", "Dorazio", role="ctb"),
+  person("Evan", "Grant", role="dtc", comment="duskySalamanders"),
+  person("Jon-Andren", "Henden", role="dtc", comment="Finnmark"),
+  person("Roland", "Kays", role="dtc", comment="MesoCarnivores"),
+  person("David", "King", role="dtc", comment="cswa"),
+  person("Xavier", "Lambin", role="dtc", comment="waterVoles"),
+  person("Jeremy", "Mizel", role=c("ctb", "dtc"), comment="treeSparrow"),
+  person("Anja", "Molinari-Jobin", role="dtc", comment="EurasianLynx"),
+  person("Réne-Jean", "Monneret", role="dtc", comment="FrenchPeregrines"),
+  person("Arielle", "Parsons", role="dtc", comment="MesoCarnivores"),
+  person("René", "Ruffinoni", role="dtc", comment="FrenchPeregrines"),
+  person("Michael", "Schaub", role="ctb"),
+  person("Rahel", "Solmann", role="ctb"),
+  person("Nicolas", "Strebel", role="dtc"),
+  person("Chris", "Sutherland", role=c("ctb", "dtc"), comment="waterVoles"),
+  person("Mathias", "Tobler", role="ctb"),
+  person("Fridolin", "Zimmermann", role="dtc", comment="EurasianLynx"),
+  person("Aargau Biodiversity Monitoring Program (LANAG)", role="dtc", comment("SwissMarbledWhite")),
+  person("British Ornithological Trust", role="dtc", comment="willowWarbler, UKmarbledWhite, <https://www.bto.org/>"),
+  person("Butterfly Conservation", role=c("dtc", "cph"), comment="UKmarbledWhite, <https://butterfly-conservation.org>"),
+  person("Centre for Ecology & Hydrology", role=c("dtc", "cph"), comment="UKmarbledWhite, <https://www.ceh.ac.uk>"),
+  person("Dutch Centre for Field Ornithology (Sovon)", role="dtc", comment="wagtail, <https://www.sovon.nl>"),
+  person("eMammal", role="dtc", comment="MesoCarnivores, <https://emammal.si.edu/>"),
+  person("Groupe Pèlerin Jura", role="dtc", comment="FrenchPeregrines"),
+  person("Hubbard Brook Ecosystem Study", role="dtc", comment="HubbardBrook, <http://data.hubbardbrook.org/data/dataset.php?id=178>"),
+  person("Joint Nature Conservation Committee (JNCC)", role=c("dtc", "cph"), comment="UKmarbledWhite, <https://jncc.gov.uk/>"),
+  person("North Carolina Museum of Natural Sciences", role="dtc", comment="mesoCarnivores"),
+  person("North Carolina State University", role="dtc", comment="mesoCarnivores"),
+  person("Progetto Lince Italia", role="dtc", comment="EurasianLynx, <https://www.progettolinceitalia.it>"),
+  person("Swiss Federal Statistical Office", role=c("dtc", "cph"), comment="BerneseOberland, <http://www.bfs.admin.ch>"),
+  person("Swiss Foundation KORA Carnivore Ecology and Wildlife Management (SCALP project)", role="dtc", comment="EurasianLynx, <https://www.kora.ch>"),
+  person("Swiss Ornithological Institute", role="dtc", comment="<https://www.vogelwarte.ch>"),
+  person("Centre for Ecology & Hydrology", role=c("dtc", "cph"), comment="UKmarbledWhite, <https://www.ceh.ac.uk>"),
+  person("UK Butterfly Monitoring Scheme (UKBMS)", role=c("dtc", "cph"), comment="UKmarbledWhite, <https://www.ceh.ac.uk/our-science/projects/uk-butterfly-monitoring-scheme>"))
+BugReports: https://github.com/mikemeredith/AHMbook/issues
+Description: Provides functions and data sets to accompany the two volume publication "Applied Hierarchical Modeling in Ecology: Analysis of distribution, abundance and species richness in R and BUGS" by Marc Kéry and Andy Royle: volume 1 (2016, ISBN: 978-0-12-801378-6) and volume 2 (2020, ISBN: 978-0-12-809585-0), <https://www.mbr-pwrc.usgs.gov/pubanalysis/keryroylebook>.
+License: GPL (>= 3)
+Copyright: file COPYRIGHTS
+NeedsCompilation: no
+URL: https://www.mbr-pwrc.usgs.gov/pubanalysis/keryroylebook/,
+        https://sites.google.com/site/appliedhierarchicalmodeling/home
+Encoding: UTF-8
+Language: en-US
+Packaged: 2020-06-09 01:01:42 UTC; User
+Author: Marc Kéry [aut],
+  Andy Royle [aut],
+  Mike Meredith [aut, cre],
+  Urs Breitenmoser [dtc] (EurasianLynx),
+  Richard Chandler [ctb],
+  Bob Dorazio [ctb],
+  Evan Grant [dtc] (duskySalamanders),
+  Jon-Andren Henden [dtc] (Finnmark),
+  Roland Kays [dtc] (MesoCarnivores),
+  David King [dtc] (cswa),
+  Xavier Lambin [dtc] (waterVoles),
+  Jeremy Mizel [ctb, dtc] (treeSparrow),
+  Anja Molinari-Jobin [dtc] (EurasianLynx),
+  Réne-Jean Monneret [dtc] (FrenchPeregrines),
+  Arielle Parsons [dtc] (MesoCarnivores),
+  René Ruffinoni [dtc] (FrenchPeregrines),
+  Michael Schaub [ctb],
+  Rahel Solmann [ctb],
+  Nicolas Strebel [dtc],
+  Chris Sutherland [ctb, dtc] (waterVoles),
+  Mathias Tobler [ctb],
+  Fridolin Zimmermann [dtc] (EurasianLynx),
+  Aargau Biodiversity Monitoring Program (LANAG) [dtc],
+  British Ornithological Trust [dtc] (willowWarbler, UKmarbledWhite,
+    <https://www.bto.org/>),
+  Butterfly Conservation [dtc, cph] (UKmarbledWhite,
+    <https://butterfly-conservation.org>),
+  Centre for Ecology & Hydrology [dtc, cph] (UKmarbledWhite,
+    <https://www.ceh.ac.uk>),
+  Dutch Centre for Field Ornithology (Sovon) [dtc] (wagtail,
+    <https://www.sovon.nl>),
+  eMammal [dtc] (MesoCarnivores, <https://emammal.si.edu/>),
+  Groupe Pèlerin Jura [dtc] (FrenchPeregrines),
+  Hubbard Brook Ecosystem Study [dtc] (HubbardBrook,
+    <http://data.hubbardbrook.org/data/dataset.php?id=178>),
+  Joint Nature Conservation Committee (JNCC) [dtc, cph] (UKmarbledWhite,
+    <https://jncc.gov.uk/>),
+  North Carolina Museum of Natural Sciences [dtc] (mesoCarnivores),
+  North Carolina State University [dtc] (mesoCarnivores),
+  Progetto Lince Italia [dtc] (EurasianLynx,
+    <https://www.progettolinceitalia.it>),
+  Swiss Federal Statistical Office [dtc, cph] (BerneseOberland,
+    <http://www.bfs.admin.ch>),
+  Swiss Foundation KORA Carnivore Ecology and Wildlife Management (SCALP
+    project) [dtc] (EurasianLynx, <https://www.kora.ch>),
+  Swiss Ornithological Institute [dtc] (<https://www.vogelwarte.ch>),
+  Centre for Ecology & Hydrology [dtc, cph] (UKmarbledWhite,
+    <https://www.ceh.ac.uk>),
+  UK Butterfly Monitoring Scheme (UKBMS) [dtc, cph] (UKmarbledWhite,
+    <https://www.ceh.ac.uk/our-science/projects/uk-butterfly-monitoring-scheme>)
+Maintainer: Mike Meredith <mike@mmeredith.net>
+Repository: CRAN
+Date/Publication: 2020-06-09 13:00:19 UTC

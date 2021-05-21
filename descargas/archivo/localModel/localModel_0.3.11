@@ -1,0 +1,28 @@
+Package: localModel
+Title: LIME-Based Explanations with Interpretable Inputs Based on
+        Ceteris Paribus Profiles
+Version: 0.3.11
+Author: Mateusz Staniak [aut, cre],
+  Przemyslaw Biecek [aut],
+  Krystian Igras [ctb],
+  Alicja Gosiewska [ctb]
+Maintainer: Mateusz Staniak <m.staniak@mini.pw.edu.pl>
+Description: Local explanations of machine learning models describe, how features contributed to a single prediction. 
+    This package implements an explanation method based on LIME 
+    (Local Interpretable Model-agnostic Explanations, 
+    see Tulio Ribeiro, Singh, Guestrin (2016) <doi:10.1145/2939672.2939778>) in which interpretable
+    inputs are created based on local rather than global behaviour of each original feature.
+URL: https://github.com/ModelOriented/localModel
+BugReports: https://github.com/ModelOriented/localModel/issues
+Depends: R (>= 3.5)
+License: GPL
+Encoding: UTF-8
+LazyData: true
+Imports: glmnet, ggplot2, partykit, ingredients
+RoxygenNote: 6.1.0
+Suggests: covr, knitr, rmarkdown, randomForest, DALEX, testthat
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-04-13 09:45:17 UTC; mstaniak
+Repository: CRAN
+Date/Publication: 2019-04-14 11:02:43 UTC

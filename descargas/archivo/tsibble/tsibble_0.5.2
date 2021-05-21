@@ -1,0 +1,47 @@
+Type: Package
+Package: tsibble
+Title: Tidy Temporal Data Frames and Tools
+Version: 0.5.2
+Date: 2018-09-11
+Authors@R: c(
+    person("Earo", "Wang", email = "earo.wang@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-6448-5260")),
+    person("Di", "Cook", role = c("aut", "ths"), comment = c(ORCID = "0000-0002-3813-7155")),
+    person("Rob", "Hyndman", role = c("aut", "ths"), comment = c(ORCID = "0000-0002-2140-5352")),
+    person("Mitchell", "O'Hara-Wild", role = c("ctb"))
+    )
+Description: Provides a 'tbl_ts' class (the 'tsibble') to store and manage
+    temporal-context data in a data-centric format, which is built on top of
+    the 'tibble'. The 'tsibble' aims at easily manipulating and analysing temporal 
+    data, including counting and filling time gaps, aggregate over calendar periods, 
+    performing rolling window calculations, and etc.
+License: GPL-3
+URL: https://pkg.earo.me/tsibble
+BugReports: https://github.com/tidyverts/tsibble/issues
+Depends: R (>= 3.1.3)
+Imports: anytime, dplyr (>= 0.7.3), lubridate, purrr (>= 0.2.3), Rcpp
+        (>= 0.12.3), rlang (>= 0.2.0), tibble (>= 1.4.1), tidyr,
+        tidyselect
+Suggests: covr, ggplot2 (>= 2.2.0), hms, hts, knitr, nanotime,
+        nycflights13 (>= 1.0.0), pillar (>= 1.0.1), rmarkdown,
+        testthat, timeDate
+LinkingTo: Rcpp (>= 0.12.0)
+VignetteBuilder: knitr
+ByteCompile: true
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.0
+Collate: 'RcppExports.R' 'as-tsibble.R' 'data.R' 'dplyr-verbs.R'
+        'dplyr-join.R' 'fill-na.R' 'format.R' 'holiday.R' 'index-by.R'
+        'interval.R' 'parse-key.R' 'period.R' 'reexports.R' 'slide.R'
+        'split-by.R' 'stretch.R' 'subset.R' 'tidyr-verbs.R' 'tile.R'
+        'time-wise.R' 'ts2tsibble.R' 'tsibble-pkg.R' 'tsibble2ts.R'
+        'type-sum.R' 'utils.R' 'zzz.R'
+NeedsCompilation: yes
+Packaged: 2018-09-11 15:16:22 UTC; earo
+Author: Earo Wang [aut, cre] (<https://orcid.org/0000-0001-6448-5260>),
+  Di Cook [aut, ths] (<https://orcid.org/0000-0002-3813-7155>),
+  Rob Hyndman [aut, ths] (<https://orcid.org/0000-0002-2140-5352>),
+  Mitchell O'Hara-Wild [ctb]
+Maintainer: Earo Wang <earo.wang@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-09-11 15:30:03 UTC

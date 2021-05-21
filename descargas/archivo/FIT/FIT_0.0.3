@@ -1,0 +1,27 @@
+Package: FIT
+Title: Transcriptomic Dynamics Models in Field Conditions
+Version: 0.0.3
+Authors@R: c(person("Koji", "Iwayama", email = "fieldtranscriptome@gmail.com",
+                    role = c("cre")),
+             person("Yuri", "Aisaka", email = "aisaka@lpixel.net",
+                    role = c("aut")))
+Description: Provides functionality for constructing
+    statistical models of transcriptomic dynamics in field conditions.
+    It further offers the function to predict expression of a gene given 
+    the attributes of samples and meteorological data.     
+Depends: R (>= 3.2.2)
+Imports: methods, Rcpp (>= 0.11.2), XML, gglasso, MASS
+License: MPL (>= 2) | file LICENSE
+LazyData: true
+LinkingTo: Rcpp, RcppEigen (>= 0.3.2.1.2)
+SystemRequirements: C++11
+NeedsCompilation: yes
+RoxygenNote: 5.0.1
+Packaged: 2016-11-24 09:51:29 UTC; Koji
+Author: Koji Iwayama [cre],
+  Yuri Aisaka [aut]
+Maintainer: Koji Iwayama <fieldtranscriptome@gmail.com>
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Repository: CRAN
+Date/Publication: 2016-11-24 11:57:55

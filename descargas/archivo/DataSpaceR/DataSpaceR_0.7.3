@@ -1,0 +1,37 @@
+Package: DataSpaceR
+Type: Package
+Title: Interface to 'the CAVD DataSpace'
+Version: 0.7.3
+Authors@R: c(person("Ju Yeong", "Kim",
+                    email = "jkim2345@fredhutch.org",
+                    role = c("aut", "cre", "cph")),
+             person("Sean", "Hughes",
+                    comment = "Sean reviewed the package for ropensci, see <https://github.com/ropensci/software-review/issues/261>",
+                    role = "rev"),
+             person("Jason", "Taylor", role = "aut"),
+             person("Helen", "Miller", role = "aut"))
+Description: Provides a convenient API interface to access immunological data
+    within 'the CAVD DataSpace'(<https://dataspace.cavd.org>), a data sharing 
+    and discovery tool that facilitates exploration of HIV immunological data 
+    from pre-clinical and clinical HIV vaccine studies.
+URL: https://docs.ropensci.org/DataSpaceR,
+        https://github.com/ropensci/DataSpaceR
+BugReports: https://github.com/ropensci/DataSpaceR/issues
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: utils, R6, Rlabkey (>= 2.2.0), curl, httr, assertthat, digest,
+        jsonlite, data.table
+Suggests: testthat, covr, knitr, pryr, rmarkdown, DT
+VignetteBuilder: knitr
+RoxygenNote: 7.0.2
+NeedsCompilation: no
+Packaged: 2020-01-08 00:58:01 UTC; jkim
+Author: Ju Yeong Kim [aut, cre, cph],
+  Sean Hughes [rev] (Sean reviewed the package for ropensci, see
+    <https://github.com/ropensci/software-review/issues/261>),
+  Jason Taylor [aut],
+  Helen Miller [aut]
+Maintainer: Ju Yeong Kim <jkim2345@fredhutch.org>
+Repository: CRAN
+Date/Publication: 2020-01-08 08:10:02 UTC

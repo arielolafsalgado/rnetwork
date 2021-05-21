@@ -1,0 +1,82 @@
+Package: prioritizr
+Type: Package
+Version: 3.0.4
+Title: Systematic Conservation Prioritization in R
+Description: Conservation prioritization using integer
+    programming techniques. To solve large-scale problems, users
+    should install the 'gurobi' optimizer
+    (available from <http://www.gurobi.com/>).
+Authors@R: c(person(c('Jeffrey', 'O'), 'Hanson',
+               email='jeffrey.hanson@uqconnect.edu.au', role = c('aut')),
+             person(c('Richard'), 'Schuster',
+               email='mail@richard-schuster.com', role = c('aut', 'cre')),
+             person(c('Nina'), 'Morrell',
+               email='nina.morrell@ubc.ca', role = c('aut')),
+             person(c('Matthew'), 'Strimas-Mackey',
+               email='mstrimas@gmail.com', role = c('aut')),
+             person(c('Matthew', 'E'), 'Watts',
+               email='m.watts@uq.edu.au', role = c('aut')),
+             person(c('Peter'), 'Arcese',
+               email='peter.arcese@ubc.ca', role = c('aut')),
+             person(c('Joeseph'), 'Bennett',
+               email='joseph.bennett@carleton.ca', role = c('aut')),
+             person(c('Hugh', 'P'), 'Possingham',
+               email='hugh.possingham@tnc.org', role = c('aut')))
+Imports: utils, methods, assertthat, data.table, uuid, Matrix, rgeos,
+        plyr, parallel, doParallel, magrittr
+Suggests: testthat, knitr, roxygen2, ape, shiny, xtable, rhandsontable,
+        RandomFields, velox, maptools, PBSmapping, spdep, gurobi,
+        lpsymphony, Rsymphony, rmarkdown
+Depends: R(>= 3.4.0), raster, sp, proto
+LinkingTo: Rcpp, RcppArmadillo, BH
+License: GPL-3
+LazyData: true
+SystemRequirements: C++11
+URL: https://github.com/prioritizr/prioritizr
+BugReports: https://github.com/prioritizr/prioritizr/issues
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+Collate: 'internal.R' 'pproto.R' 'Parameter-proto.R'
+        'ArrayParameter-proto.R' 'Parameters-proto.R'
+        'ScalarParameter-proto.R' 'parameters.R' 'waiver.R'
+        'ConservationModifier-proto.R' 'Penalty-proto.R'
+        'Constraint-proto.R' 'Collection-proto.R'
+        'ConservationProblem-proto.R' 'Decision-proto.R' 'Id.R'
+        'Objective-proto.R' 'OptimizationProblem-proto.R'
+        'OptimizationProblem-methods.R' 'Portfolio-proto.R'
+        'RcppExports.R' 'Solver-proto.R' 'Target-proto.R'
+        'add_absolute_targets.R' 'add_binary_decisions.R'
+        'add_boundary_penalties.R' 'add_connected_constraints.R'
+        'add_connectivity_penalties.R' 'add_corridor_constraints.R'
+        'add_cuts_portfolio.R' 'add_default_decisions.R'
+        'add_default_objective.R' 'add_default_portfolio.R'
+        'add_default_solver.R' 'add_default_targets.R'
+        'add_feature_weights.R' 'add_gurobi_solver.R'
+        'intersecting_units.R' 'add_locked_in_constraints.R'
+        'add_locked_out_constraints.R' 'add_loglinear_targets.R'
+        'add_lpsymphony_solver.R' 'add_max_cover_objective.R'
+        'add_max_features_objective.R' 'add_max_phylo_objective.R'
+        'add_max_utility_objective.R' 'add_min_set_objective.R'
+        'add_neighbor_contraints.R' 'add_proportion_decisions.R'
+        'add_relative_targets.R' 'add_rsymphony_solver.R'
+        'add_semicontinuous_decisions.R' 'add_shuffle_portfolio.R'
+        'boundary_matrix.R' 'branch_matrix.R' 'compile.R'
+        'connected_matrix.R' 'connectivity_matrix.R' 'constraints.R'
+        'data.R' 'decisions.R' 'parallel.R' 'fast_extract.R'
+        'magrittr-operators.R' 'marxan_problem.R' 'misc.R'
+        'objectives.R' 'package.R' 'penalties.R' 'portfolios.R'
+        'problem.R' 'rij_matrix.R' 'run_calculations.R' 'simulate.R'
+        'solve.R' 'solvers.R' 'targets.R' 'zzz.R'
+NeedsCompilation: yes
+Packaged: 2018-03-24 13:36:05 UTC; richard
+Author: Jeffrey O Hanson [aut],
+  Richard Schuster [aut, cre],
+  Nina Morrell [aut],
+  Matthew Strimas-Mackey [aut],
+  Matthew E Watts [aut],
+  Peter Arcese [aut],
+  Joeseph Bennett [aut],
+  Hugh P Possingham [aut]
+Maintainer: Richard Schuster <mail@richard-schuster.com>
+Repository: CRAN
+Date/Publication: 2018-03-25 15:23:07 UTC

@@ -1,0 +1,36 @@
+Package: tigger
+Type: Package
+Version: 0.2.5
+Date: 2016-06-07
+Authors@R: c(person("Daniel", "Gadala-Maria", role=c("aut", "cre"), 
+                    email="daniel.gadala-maria@yale.edu"),
+             person("Jason", "Vander Heiden", role=c("ctb"), 
+                    email="jason.vanderheiden@yale.edu"),
+             person("Steven", "Kleinstein", role=c("aut", "cph"), 
+                    email="steven.kleinstein@yale.edu"))
+Title: R Tools for Inferring New Immunoglobulin Alleles from Rep-Seq
+        Data
+Description: Infers the V genotype of an individual from immunoglobulin (Ig)
+    repertoire-sequencing (Rep-Seq) data, including detection of any novel
+    alleles. This information is then used to correct existing V allele calls
+    from among the sample sequences.
+License: CC BY-NC-SA 4.0
+URL: http://tigger.readthedocs.io
+BugReports: https://bitbucket.org/kleinstein/tigger/issues
+LazyData: true
+BuildVignettes: true
+VignetteBuilder: knitr
+Depends: R (>= 3.2.3), alakazam (>= 0.2.1), shazam (>= 0.1.2), ggplot2
+        (>= 2.0.0)
+Imports: tidyr, dplyr, doParallel, foreach, graphics, grid, iterators,
+        parallel, stats
+Suggests: knitr
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-06-08 07:38:12 UTC; dgada_000
+Author: Daniel Gadala-Maria [aut, cre],
+  Jason Vander Heiden [ctb],
+  Steven Kleinstein [aut, cph]
+Maintainer: Daniel Gadala-Maria <daniel.gadala-maria@yale.edu>
+Repository: CRAN
+Date/Publication: 2016-06-08 10:07:41

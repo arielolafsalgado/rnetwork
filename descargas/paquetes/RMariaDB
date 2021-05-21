@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package RMariaDB</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Database Interface and 'MariaDB' Driver [R package RMariaDB version 1.0.10]" />
+<meta name="citation_author1" content="Kirill Müller" />
+<meta name="citation_author2" content="Jeroen Ooms" />
+<meta name="citation_author3" content="David James" />
+<meta name="citation_author4" content="Saikat DebRoy" />
+<meta name="citation_author5" content="Hadley Wickham" />
+<meta name="citation_author6" content="Jeffrey Horner" />
+<meta name="citation_publication_date" content="2020-08-27" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=RMariaDB" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=RMariaDB" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="RMariaDB: Database Interface and 'MariaDB' Driver" />
+<meta name="og:description" content="Implements a 'DBI'-compliant interface to 'MariaDB' (&amp;lt;&lt;a href=&quot;https://mariadb.org/&quot;&gt;https://mariadb.org/&lt;/a&gt;&amp;gt;) and 'MySQL' (&amp;lt;&lt;a href=&quot;https://www.mysql.com/&quot;&gt;https://www.mysql.com/&lt;/a&gt;&amp;gt;) databases." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=RMariaDB" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>RMariaDB: Database Interface and 'MariaDB' Driver</h2>
+<p>Implements a 'DBI'-compliant interface to 'MariaDB'
+    (&lt;<a href="https://mariadb.org/">https://mariadb.org/</a>&gt;) and 'MySQL' (&lt;<a href="https://www.mysql.com/">https://www.mysql.com/</a>&gt;)
+    databases.</p>
+<table summary="Package RMariaDB summary">
+<tr>
+<td>Version:</td>
+<td>1.0.10</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.8.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../bit64/index.html">bit64</a>, <a href="../DBI/index.html">DBI</a> (&ge; 1.1.0), <a href="../hms/index.html">hms</a> (&ge; 0.5.0), methods, <a href="../Rcpp/index.html">Rcpp</a> (&ge;
+0.12.4)</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../BH/index.html">BH</a>, <a href="../plogr/index.html">plogr</a>, <a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../DBItest/index.html">DBItest</a> (&ge; 1.7.0), <a href="../rprojroot/index.html">rprojroot</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-08-27</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Kirill Müller <a href="https://orcid.org/0000-0002-1416-3412"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Jeroen Ooms <a href="https://orcid.org/0000-0002-4035-0289"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  David James [aut],
+  Saikat DebRoy [aut],
+  Hadley Wickham [aut],
+  Jeffrey Horner [aut],
+  R Consortium [fnd],
+  RStudio [cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Kirill Müller  &#x3c;&#x6b;&#x72;&#x6c;&#x6d;&#x6c;&#x72;&#x2b;&#x72;&#x20;&#x61;&#x74;&#x20;&#x6d;&#x61;&#x69;&#x6c;&#x62;&#x6f;&#x78;&#x2e;&#x6f;&#x72;&#x67;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/r-dbi/RMariaDB/issues">https://github.com/r-dbi/RMariaDB/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://rmariadb.r-dbi.org">https://rmariadb.r-dbi.org</a>, <a href="https://github.com/r-dbi/RMariaDB">https://github.com/r-dbi/RMariaDB</a>,
+<a href="https://downloads.mariadb.org/connector-c/">https://downloads.mariadb.org/connector-c/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>libmariadb-client-lgpl-dev or libmariadbclient-dev
+or libmysqlclient-dev, with libssl-dev (deb),
+mariadb-connector-c-devel or mariadb-devel (rpm),
+mariadb-connector-c or mysql-connector-c (brew)</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Databases.html">Databases</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_RMariaDB.html">RMariaDB results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package RMariaDB downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="RMariaDB.pdf"> RMariaDB.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/RMariaDB_1.0.10.tar.gz"> RMariaDB_1.0.10.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/RMariaDB_1.0.10.zip">RMariaDB_1.0.10.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/RMariaDB_1.0.10.zip">RMariaDB_1.0.10.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/RMariaDB_1.0.10.zip">RMariaDB_1.0.10.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/RMariaDB_1.0.10.tgz">RMariaDB_1.0.10.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/RMariaDB_1.0.10.tgz">RMariaDB_1.0.10.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/RMariaDB"> RMariaDB archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package RMariaDB reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../AdhereRViz/index.html">AdhereRViz</a>, <a href="../dbparser/index.html">dbparser</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/exomePeak2.html"><span class="BioC">exomePeak2</span></a>, <a href="../rapbase/index.html">rapbase</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="http://www.bioconductor.org/packages/release/bioc/html/customProDB.html"><span class="BioC">customProDB</span></a>, <a href="../dbplyr/index.html">dbplyr</a>, <a href="../dbx/index.html">dbx</a>, <a href="../dittodb/index.html">dittodb</a>, <a href="../dm/index.html">dm</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/GenomicFeatures.html"><span class="BioC">GenomicFeatures</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/OrganismDbi.html"><span class="BioC">OrganismDbi</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/OUTRIDER.html"><span class="BioC">OUTRIDER</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/PGA.html"><span class="BioC">PGA</span></a>, <a href="../pointblank/index.html">pointblank</a>, <a href="../resourcer/index.html">resourcer</a>, <a href="../RMySQL/index.html">RMySQL</a>, <a href="../valr/index.html">valr</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;enhances:</td>
+<td><a href="http://www.bioconductor.org/packages/release/bioc/html/ensembldb.html"><span class="BioC">ensembldb</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=RMariaDB"><samp>https://CRAN.R-project.org/package=RMariaDB</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,29 @@
+Package: rsolr
+Type: Package
+Title: R to Solr Interface
+Version: 0.0.4
+Author: Michael Lawrence, Gabe Becker, Jan Vogel
+Maintainer: Michael Lawrence <michafla@gene.com>
+Description: A comprehensive R API for querying Apache Solr databases.
+             A Solr core is represented as a data frame or list that
+             supports Solr-side filtering, sorting,
+             transformation and aggregation, all through the familiar
+             base R API. Queries are processed
+             lazily, i.e., a query is only sent to the database when
+             the data are required. 
+License: Apache License (== 2.0)
+Imports: restfulr (>= 0.0.2), graph, S4Vectors (>= 0.7.18), rjson, XML,
+        RCurl
+Depends: R (>= 3.2.0), BiocGenerics (>= 0.15.1), methods
+Suggests: nycflights13, RUnit, MASS
+Collate: utils.R pminmax.R Context-class.R DocCollection-class.R
+        Expression-class.R Facets-class.R FieldInfo-class.R
+        FieldType-class.R Promise-class.R SolrExpression-class.R
+        SolrQuery-class.R SolrSchema-class.R SolrCore-class.R
+        SolrResult-class.R SolrSummary-class.R Solr-class.R
+        SolrList-class.R SolrFrame-class.R SolrPromise-class.R
+        GroupedSolrFrame-class.R test.R zzz.R
+NeedsCompilation: yes
+Packaged: 2017-04-10 09:36:09 UTC; michafla
+Repository: CRAN
+Date/Publication: 2017-04-10 12:50:49 UTC

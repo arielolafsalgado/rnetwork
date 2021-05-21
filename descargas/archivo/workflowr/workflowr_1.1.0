@@ -1,0 +1,34 @@
+Package: workflowr
+Type: Package
+Title: A Framework for Reproducible and Collaborative Data Science
+Date: 2018-07-04
+Version: 1.1.0
+Authors@R: c(
+    person("John", "Blischak", role = c("aut", "cre"),
+           email = "jdblischak@uchicago.edu"),
+    person("Peter", "Carbonetto", role = c("aut")),
+    person("Matthew", "Stephens", role = c("aut")))
+Description: Combines literate programming ('knitr' and 'rmarkdown') and version
+  control ('Git', via 'git2r') to generate a website containing time-stamped,
+  versioned, and documented results.
+URL: https://github.com/jdblischak/workflowr
+BugReports: https://github.com/jdblischak/workflowr/issues
+Depends: R (>= 3.2.5)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: callr, getPass, git2r, glue, knitr (>= 1.18), methods,
+        rmarkdown (>= 1.7), rprojroot, rstudioapi, R.utils, stringr (>=
+        1.1.0), tools, utils, whisker, yaml
+RoxygenNote: 6.0.1.9000
+Suggests: covr, devtools, testthat, withr
+VignetteBuilder: knitr
+SystemRequirements: pandoc (>= 1.12.3) - http://pandoc.org
+NeedsCompilation: no
+Packaged: 2018-07-04 16:15:18 UTC; jdblischak
+Author: John Blischak [aut, cre],
+  Peter Carbonetto [aut],
+  Matthew Stephens [aut]
+Maintainer: John Blischak <jdblischak@uchicago.edu>
+Repository: CRAN
+Date/Publication: 2018-07-04 16:30:03 UTC

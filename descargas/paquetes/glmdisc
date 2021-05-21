@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package glmdisc</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Discretization and Grouping for Logistic Regression [R package glmdisc version 0.6]" />
+<meta name="citation_author1" content="Adrien Ehrhardt" />
+<meta name="citation_author2" content="Vincent Vandewalle" />
+<meta name="citation_publication_date" content="2020-09-30" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=glmdisc" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=glmdisc" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="glmdisc: Discretization and Grouping for Logistic Regression" />
+<meta name="og:description" content="A Stochastic-Expectation-Maximization (SEM) algorithm (Celeux et al. (1995) &amp;lt;&lt;a href=&quot;https://hal.inria.fr/inria-00074164&quot;&gt;https://hal.inria.fr/inria-00074164&lt;/a&gt;&amp;gt;) associated with a Gibbs sampler which purpose is to learn a constrained representation for logistic regression that is called quantization (Ehrhardt et al. (2019) &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1903.08920&quot;&gt;arXiv:1903.08920&lt;/a&gt;&amp;gt;). Continuous features are discretized and categorical features' values are grouped to produce a better logistic regression model. Pairwise interactions between quantized features are dynamically added to the model through a Metropolis-Hastings algorithm (Hastings, W. K. (1970) &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fbiomet%2F57.1.97&quot;&gt;doi:10.1093/biomet/57.1.97&lt;/a&gt;&amp;gt;)." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=glmdisc" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>glmdisc: Discretization and Grouping for Logistic Regression</h2>
+<p>A Stochastic-Expectation-Maximization (SEM) algorithm (Celeux et al. (1995) &lt;<a href="https://hal.inria.fr/inria-00074164">https://hal.inria.fr/inria-00074164</a>&gt;) associated with a Gibbs sampler which purpose is to learn a constrained representation for logistic regression that is called quantization (Ehrhardt et al. (2019) &lt;<a href="https://arxiv.org/abs/1903.08920">arXiv:1903.08920</a>&gt;). Continuous features are discretized and categorical features' values are grouped to produce a better logistic regression model. Pairwise interactions between quantized features are dynamically added to the model through a Metropolis-Hastings algorithm (Hastings, W. K. (1970) &lt;<a href="https://doi.org/10.1093%2Fbiomet%2F57.1.97">doi:10.1093/biomet/57.1.97</a>&gt;).</p>
+<table summary="Package glmdisc summary">
+<tr>
+<td>Version:</td>
+<td>0.6</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../caret/index.html">caret</a> (&ge; 6.0-82), <a href="../dplyr/index.html">dplyr</a>, <a href="../magrittr/index.html">magrittr</a>, <a href="../gam/index.html">gam</a>, <a href="../nnet/index.html">nnet</a>, <a href="../RcppNumerical/index.html">RcppNumerical</a>, methods, <a href="../MASS/index.html">MASS</a>, graphics, <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.13)</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppEigen/index.html">RcppEigen</a>, <a href="../RcppNumerical/index.html">RcppNumerical</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../testthat/index.html">testthat</a> (&ge; 2.1.0), <a href="../covr/index.html">covr</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-30</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Adrien Ehrhardt [aut, cre],
+  Vincent Vandewalle [aut],
+  Christophe Biernacki [ctb],
+  Philippe Heinrich [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Adrien Ehrhardt  &#x3c;&#x61;&#x64;&#x72;&#x69;&#x65;&#x6e;&#x2e;&#x65;&#x68;&#x72;&#x68;&#x61;&#x72;&#x64;&#x74;&#x20;&#x61;&#x74;&#x20;&#x63;&#x65;&#x6e;&#x74;&#x72;&#x61;&#x6c;&#x69;&#x65;&#x6e;&#x73;&#x2d;&#x6c;&#x69;&#x6c;&#x6c;&#x65;&#x2e;&#x6f;&#x72;&#x67;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/adimajo/glmdisc/issues">https://github.com/adimajo/glmdisc/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://adimajo.github.io">https://adimajo.github.io</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">glmdisc citation info</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_glmdisc.html">glmdisc results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package glmdisc downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="glmdisc.pdf"> glmdisc.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/glmdisc.html">'glmdisc' package</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/glmdisc_0.6.tar.gz"> glmdisc_0.6.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/glmdisc_0.6.zip">glmdisc_0.6.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/glmdisc_0.6.zip">glmdisc_0.6.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/glmdisc_0.6.zip">glmdisc_0.6.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/glmdisc_0.6.tgz">glmdisc_0.6.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/glmdisc_0.6.tgz">glmdisc_0.6.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/glmdisc"> glmdisc archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=glmdisc"><samp>https://CRAN.R-project.org/package=glmdisc</samp></a>
+to link to this page.</p>
+</body>
+</html>

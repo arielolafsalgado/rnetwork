@@ -1,0 +1,25 @@
+Package: tableone
+Type: Package
+Title: Create "Table 1" to Describe Baseline Characteristics
+Version: 0.7.1
+Date: 2015-08-11
+Author: Kazuki Yoshida, Justin Bohn.
+Maintainer: Kazuki Yoshida <kazukiyoshida@mail.harvard.edu>
+Description: Creates "Table 1", i.e., description of baseline patient
+    characteristics, which is essential in every medical research.
+    Supports both continuous and categorical variables, as well as
+    p-values and standardized mean differences. Weighted data are
+    supported via the survey package. See github for a screencast.
+    tableone was inspired by descriptive statistics functions in
+    Deducer , a Java-based GUI package by Ian Fellows. This package
+    does not require GUI or Java, and intended for command-line users.
+License: GPL-2
+Imports: survey, MASS, e1071, zoo, gmodels
+Suggests: survival, testthat, Matrix, dummies, Matching, reshape2,
+        ggplot2, knitr
+URL: https://github.com/kaz-yos/tableone
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2015-08-12 00:52:21 UTC; kazuki
+Repository: CRAN
+Date/Publication: 2015-08-12 06:42:51

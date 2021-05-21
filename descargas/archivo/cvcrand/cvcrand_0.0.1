@@ -1,0 +1,38 @@
+Package: cvcrand
+Type: Package
+Title: Efficient Design and Analysis of Cluster Randomized Trials
+Version: 0.0.1
+Date: 2017-11-28
+Authors@R: c(person(given = "Hengshi", family = "Yu", role = c("aut", "cre"), 
+             email="hengshi@umich.edu"), 
+             person(given = "John A.", family = "Gallis", role ="aut", 
+             email = "john.gallis@duke.edu"), 
+             person(given = "Fan", family = "Li", role ="aut", 
+             email = "frank.li@duke.edu"),
+             person(given = "Elizabeth L.", family = "Turner", role ="aut", 
+             email = "liz.turner@duke.edu")) 
+Maintainer: Hengshi Yu <hengshi@umich.edu>
+Description: Constrained randomization by Raab and Butcher (2001) <doi:10.1002/1097-0258(20010215)20:3%3C351::AID-SIM797%3E3.0.CO;2-C> 
+            is suitable for cluster randomized trials (CRTs) with a
+            small number of clusters (e.g., 20 or fewer). The procedure of
+            constrained randomization is based on the baseline values of some
+            cluster-level covariates specified. The intervention effect on
+            the individual outcome can then be analyzed through
+            clustered permutation test introduced by Gail, et al. (1996) <doi:10.1002/(SICI)1097-0258(19960615)15:11%3C1069::AID-SIM220%3E3.0.CO;2-Q>. 
+            Motivated from Li, et al. (2016) <doi:10.1002/sim.7410>, the package performs constrained randomization on the baseline
+            values of cluster-level covariates and cluster permutation test on the individual-level outcome for cluster randomized trials. 
+License: GPL (>= 2)
+LazyData: TRUE
+Depends: R (>= 3.3.1)
+Imports: tableone
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-11-28 18:43:07 UTC; Hengshi Yu (Oliver)
+Author: Hengshi Yu [aut, cre],
+  John A. Gallis [aut],
+  Fan Li [aut],
+  Elizabeth L. Turner [aut]
+Repository: CRAN
+Date/Publication: 2017-11-28 19:06:15 UTC

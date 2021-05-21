@@ -1,0 +1,33 @@
+Package: WVPlots
+Type: Package
+Title: Common Plots for Analysis
+Version: 1.0.2
+Date: 2018-07-20
+Authors@R: c(
+    person("John", "Mount", email = "jmount@win-vector.com", role = c("aut", "cre")),
+    person("Nina", "Zumel", email = "nzumel@win-vector.com", role = c("aut")),
+    person(family = "Win-Vector LLC", role = c("cph"))
+    )
+URL: https://github.com/WinVector/WVPlots,
+        https://winvector.github.io/WVPlots/
+Maintainer: John Mount <jmount@win-vector.com>
+BugReports: https://github.com/WinVector/WVPlots/issues
+Description: Select data analysis plots, under a standardized calling interface implemented on top of 'ggplot2' and 'plotly'.  
+   Plots of interest include: 'ROC', gain curve, scatter plot with marginal distributions, 
+   conditioned scatter plot with marginal densities,
+   box and stem with matching theoretical distribution, and density with matching theoretical distribution.
+License: GPL-3
+VignetteBuilder: knitr
+Depends: R (>= 3.2.1)
+Imports: ggplot2 (>= 2.2.0), wrapr (>= 1.5.0), sigr (>= 0.2.6), cdata
+        (>= 0.7.0), utils, grid, gridExtra, graphics, mgcv
+Suggests: knitr, testthat, plotly, hexbin
+RoxygenNote: 6.0.1
+ByteCompile: true
+NeedsCompilation: no
+Packaged: 2018-07-20 16:13:35 UTC; johnmount
+Author: John Mount [aut, cre],
+  Nina Zumel [aut],
+  Win-Vector LLC [cph]
+Repository: CRAN
+Date/Publication: 2018-07-20 16:30:02 UTC

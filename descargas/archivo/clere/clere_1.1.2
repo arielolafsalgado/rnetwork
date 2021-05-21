@@ -1,0 +1,20 @@
+Package: clere
+Type: Package
+Title: Simultaneous Variables Clustering and Regression
+Version: 1.1.2
+Date: 2015-10-02
+Author: Loic Yengo, Mickael Canouil
+Maintainer: Loic Yengo <loic.yengo@gmail.com>
+Description: Implements an empirical Bayes approach for simultaneous variable clustering and regression. This version also (re)implements in C++ an R script proposed by Howard Bondell that fits the Pairwise Absolute Clustering and Sparsity (PACS) methodology (see Sharma DB et al. - 2013).
+License: GPL (>= 3)
+Copyright: Loic Yengo
+Depends: R (>= 2.10), parallel, methods
+Imports: Rcpp
+Suggests: R.rsp
+LinkingTo: Rcpp, RcppEigen
+Collate: 'fitClere.R' 'Clere.R' 'sClere-Class.R' 'fitPacs.R'
+VignetteBuilder: R.rsp
+NeedsCompilation: yes
+Packaged: 2015-10-08 08:44:00 UTC; root
+Repository: CRAN
+Date/Publication: 2015-10-08 13:40:02

@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package eRTG3D</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Empirically Informed Random Trajectory Generation in 3-D [R package eRTG3D version 0.6.3]" />
+<meta name="citation_author" content="Merlin Unterfinger" />
+<meta name="citation_publication_date" content="2020-07-26" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=eRTG3D" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=eRTG3D" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="eRTG3D: Empirically Informed Random Trajectory Generation in 3-D" />
+<meta name="og:description" content="Creates realistic random trajectories in a 3-D space between two given fix points, so-called conditional empirical random walks (CERWs). The trajectory generation is based on empirical distribution functions extracted from observed trajectories (training data) and thus reflects the geometrical movement characteristics of the mover. A digital elevation model (DEM), representing the Earth's surface, and a background layer of probabilities (e.g. food sources, uplift potential, waterbodies, etc.) can be used to influence the trajectories. Unterfinger M (2018). &quot;3-D Trajectory Simulation in Movement Ecology: Conditional Empirical Random Walk&quot;. Master's thesis, University of Zurich. &amp;lt;&lt;a href=&quot;https://www.geo.uzh.ch/dam/jcr:6194e41e-055c-4635-9807-53c5a54a3be7/MasterThesis_Unterfinger_2018.pdf&quot;&gt;https://www.geo.uzh.ch/dam/jcr:6194e41e-055c-4635-9807-53c5a54a3be7/MasterThesis_Unterfinger_2018.pdf&lt;/a&gt;&amp;gt;. Technitis G, Weibel R, Kranstauber B, Safi K (2016). &quot;An algorithm for empirically informed random trajectory generation between two endpoints&quot;. GIScience 2016: Ninth International Conference on Geographic Information Science, 9, online. &amp;lt;&lt;a href=&quot;https://doi.org/10.5167%2Fuzh-130652&quot;&gt;doi:10.5167/uzh-130652&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=eRTG3D" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>eRTG3D: Empirically Informed Random Trajectory Generation in 3-D</h2>
+<p>Creates realistic random trajectories in a 3-D space between two given fix points, so-called conditional empirical random walks (CERWs). The trajectory generation is based on empirical distribution functions extracted from observed trajectories (training data) and thus reflects the geometrical movement characteristics of the mover. A digital elevation model (DEM), representing the Earth's surface, and a background layer of probabilities (e.g. food sources, uplift potential, waterbodies, etc.) can be used to influence the trajectories.
+    Unterfinger M (2018). "3-D Trajectory Simulation in Movement Ecology: Conditional Empirical Random Walk". Master's thesis, University of Zurich. &lt;<a href="https://www.geo.uzh.ch/dam/jcr:6194e41e-055c-4635-9807-53c5a54a3be7/MasterThesis_Unterfinger_2018.pdf">https://www.geo.uzh.ch/dam/jcr:6194e41e-055c-4635-9807-53c5a54a3be7/MasterThesis_Unterfinger_2018.pdf</a>&gt;.
+    Technitis G, Weibel R, Kranstauber B, Safi K (2016). "An algorithm for empirically informed random trajectory generation between two endpoints". GIScience 2016: Ninth International Conference on Geographic Information Science, 9, online. &lt;<a href="https://doi.org/10.5167%2Fuzh-130652">doi:10.5167/uzh-130652</a>&gt;.</p>
+<table summary="Package eRTG3D summary">
+<tr>
+<td>Version:</td>
+<td>0.6.3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../CircStats/index.html">CircStats</a> (&ge; 0.2-6), <a href="../ggplot2/index.html">ggplot2</a> (&ge; 3.1.1), <a href="../pbapply/index.html">pbapply</a> (&ge; 1.4-1), <a href="../plotly/index.html">plotly</a> (&ge; 4.9.0), <a href="../raster/index.html">raster</a> (&ge; 2.9-5), <a href="../rasterVis/index.html">rasterVis</a> (&ge; 0.45), <a href="../tiff/index.html">tiff</a> (&ge; 0.1-5)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a> (&ge; 1.23), <a href="../pander/index.html">pander</a> (&ge; 0.6.3), <a href="../gridExtra/index.html">gridExtra</a> (&ge; 2.3), <a href="../plyr/index.html">plyr</a> (&ge; 1.8.4), <a href="../rmarkdown/index.html">rmarkdown</a> (&ge; 1.13), <a href="../sf/index.html">sf</a> (&ge; 0.7-4), <a href="../sp/index.html">sp</a> (&ge; 1.3-1), <a href="../testthat/index.html">testthat</a> (&ge; 2.1.0), <a href="../covr/index.html">covr</a> (&ge; 3.2.1)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-07-26</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Merlin Unterfinger
+    <a href="https://orcid.org/0000-0003-2020-2366"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut, cre],
+  Kamran Safi [ctb, ths],
+  George Technitis [ctb, ths],
+  Robert Weibel [ths]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Merlin Unterfinger  &#x3c;&#x69;&#x6e;&#x66;&#x6f;&#x20;&#x61;&#x74;&#x20;&#x6d;&#x75;&#x6e;&#x74;&#x65;&#x72;&#x66;&#x69;&#x6e;&#x67;&#x65;&#x72;&#x2e;&#x63;&#x68;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/munterfinger/eRTG3D/issues">https://github.com/munterfinger/eRTG3D/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL (&ge; 3)</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://munterfinger.github.io/eRTG3D/">https://munterfinger.github.io/eRTG3D/</a>,
+<a href="https://github.com/munterfinger/eRTG3D">https://github.com/munterfinger/eRTG3D</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">eRTG3D citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_eRTG3D.html">eRTG3D results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package eRTG3D downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="eRTG3D.pdf"> eRTG3D.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/v1.html">Included example data sets</a><br/>
+<a href="vignettes/v2.html">Standard workflow of the eRTG3D</a><br/>
+<a href="vignettes/v3.html">Visualization of trajectories</a><br/>
+<a href="vignettes/v4.html">Verification of results</a><br/>
+<a href="vignettes/v5.html">Parallel computation</a><br/>
+<a href="vignettes/v6.html">Coordinate reference system transformations in 3-D</a><br/>
+<a href="vignettes/v7.html">Linkage to the 'sf' package</a><br/>
+<a href="vignettes/v8.html">Trajectory simulations in 2-D</a><br/>
+<a href="vignettes/v9.html">Point cloud analysis</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/eRTG3D_0.6.3.tar.gz"> eRTG3D_0.6.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/eRTG3D_0.6.3.zip">eRTG3D_0.6.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/eRTG3D_0.6.3.zip">eRTG3D_0.6.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/eRTG3D_0.6.3.zip">eRTG3D_0.6.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/eRTG3D_0.6.3.tgz">eRTG3D_0.6.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/eRTG3D_0.6.3.tgz">eRTG3D_0.6.3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/eRTG3D"> eRTG3D archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=eRTG3D"><samp>https://CRAN.R-project.org/package=eRTG3D</samp></a>
+to link to this page.</p>
+</body>
+</html>

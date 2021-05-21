@@ -1,0 +1,27 @@
+Package: RTD
+Title: Simple TD API Client
+Version: 0.1.1
+Authors@R: 
+    person(given = "Aki",
+           family = "Ariga",
+           role = c("aut", "cre"),
+           email = "chezou@gmail.com")
+Maintainer: Aki Ariga <chezou@gmail.com>
+Description: 
+  Upload R data.frame to Arm Treasure Data, see <https://www.treasuredata.com/>. 
+  You can execute database or table handling for resources on Arm Treasure Data.
+SystemRequirements: embulk, embulk-output-td
+License: Apache License 2.0 | file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Collate: 'TdClient.R' 'database.R' 'table.R' 'td.R'
+Imports: readr (>= 1.2.1), httr(>= 1.4.0), openssl, jsonlite, methods,
+        urltools
+Suggests: testthat (>= 2.0.1), mockery (>= 0.4.1.1), dplyr (>= 0.7.8),
+        webmockr
+NeedsCompilation: no
+Packaged: 2019-01-02 11:17:08 UTC; ariga
+Author: Aki Ariga [aut, cre]
+Repository: CRAN
+Date/Publication: 2019-01-02 13:50:04 UTC

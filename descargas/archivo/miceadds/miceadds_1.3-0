@@ -1,0 +1,29 @@
+Package: miceadds
+Type: Package
+Title: Some Additional Multiple Imputation Functions, Especially for
+        'mice'
+Version: 1.3-0
+Date: 2015-07-10
+Author: Alexander Robitzsch [aut, cre]
+Maintainer: Alexander Robitzsch <a.robitzsch@bifie.at>
+Authors@R: c(person("Alexander", "Robitzsch", role =
+        c("aut","cre"), email = "a.robitzsch@bifie.at"))
+Description: 
+    Contains some auxiliary functions for multiple imputation which 
+    complements existing functionality in R.
+    In addition to some utility functions, main features include 
+    plausible value imputation, multilevel imputation functions,
+    imputation using partial least squares (PLS) for high dimensional 
+    predictors, nested multiple imputation, and two-way imputation.
+Depends: R (>= 2.15.0), mice
+Imports: methods, stats, graphics, utils, Rcpp, TAM, lme4, inline, car,
+        foreign, sjmisc, multiwayvcov, grouped, MBESS, bayesm, sirt,
+        pls, mitools, MASS, mvtnorm
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: Amelia, Zelig, jomo, haven, BIFIEsurvey, mitml, pan
+License: GPL (>= 2)
+URL: https://sites.google.com/site/alexanderrobitzsch/software
+Packaged: 2015-07-10 09:36:02 UTC; robitzsch
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2015-07-10 20:32:50

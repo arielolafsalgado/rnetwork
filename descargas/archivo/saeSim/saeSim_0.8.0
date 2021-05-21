@@ -1,0 +1,30 @@
+Package: saeSim
+Type: Package
+Title: Simulation Tools for Small Area Estimation
+Date: 2015-04-27
+Version: 0.8.0
+Authors@R: c(person("Sebastian", "Warnholz", role = c("aut", "cre"),
+                    email = "Sebastian.Warnholz@fu-berlin.de"),
+             person("Timo", "Schmid", role = "aut",
+                    email = "Timo.Schmid@fu-berlin.de"))
+URL: https://wahani.github.io/saeSim
+BugReports: https://github.com/wahani/saeSim/issues
+Depends: R(>= 3.1), methods
+Imports: dplyr(>= 0.2), functional, ggplot2, grDevices, MASS, utils,
+        spdep, stats, parallelMap
+Suggests: testthat, knitr, rmarkdown
+Description: Tools for the simulation of data in the context of small area
+    estimation. Combine all steps of your simulation - from data generation
+    over drawing samples to model fitting - in one object. This enables easy
+    modification and combination of different scenarios. You can store your
+    results in a folder or start the simulation in parallel.
+License: MIT + file LICENSE
+VignetteBuilder: knitr
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-04-27 12:42:44 UTC; sebastian
+Author: Sebastian Warnholz [aut, cre],
+  Timo Schmid [aut]
+Maintainer: Sebastian Warnholz <Sebastian.Warnholz@fu-berlin.de>
+Repository: CRAN
+Date/Publication: 2016-04-27 18:56:59

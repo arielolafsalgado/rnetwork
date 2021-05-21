@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package LocalControlStrategy</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=LocalControlStrategy" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="LocalControlStrategy: Local Control Strategy for Robust Analysis of Cross-Sectional Data" />
+<meta name="og:description" content="Especially when cross-sectional data are observational, effects of treatment selection bias and confounding are revealed by using the Nonparametric and Unsupervised &quot;preprocessing&quot; methods central to Local Control (LC) Strategy. The LC objective is to estimate the &quot;effect-size distribution&quot; that best quantifies a potentially causal relationship between a numeric y-Outcome variable and a t-Treatment variable. This t-variable may be either binary {1 = &quot;new&quot; vs 0 = &quot;control&quot;} or a numeric measure of Exposure level. LC Strategy starts by CLUSTERING experimental units (patients) on their pre-exposure X-Covariates, forming mutually exclusive and exhaustive BLOCKS of relatively well-matched units. The implicit statistical model for LC is thus simple one-way ANOVA. The Within-Block measures of effect-size are Local Rank Correlations (LRCs) when Exposure is numeric with more than two levels. Otherwise, Treatment choice is Nested within BLOCKS, and effect-sizes are LOCAL Treatment Differences (LTDs) between within-cluster y-Outcome Means [&quot;new&quot; minus &quot;control&quot;]. An Instrumental Variable (IV) method is also provided so that Local Average y-Outcomes (LAOs) within BLOCKS may also contribute information for effect-size inferences ...assuming that X-Covariates influence only Treatment choice or Exposure level and otherwise have no direct effects on y-Outcome. Finally, a &quot;Most-Like-Me&quot; function provides histograms of effect-size distributions to aid Doctor-Patient communications about Personalized Medicine. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=LocalControlStrategy" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>LocalControlStrategy: Local Control Strategy for Robust Analysis of Cross-Sectional
+Data</h2>
+<p>Especially when cross-sectional data are observational, effects of treatment
+  selection bias and confounding are revealed by using the Nonparametric and Unsupervised 
+  "preprocessing" methods central to Local Control (LC) Strategy. The LC objective is to
+  estimate the "effect-size distribution" that best quantifies a potentially causal
+  relationship between a numeric y-Outcome variable and a t-Treatment variable. This
+  t-variable may be either binary {1 = "new" vs 0 = "control"} or a numeric measure of
+  Exposure level. LC Strategy starts by CLUSTERING experimental units (patients) on their
+  pre-exposure X-Covariates, forming mutually exclusive and exhaustive BLOCKS of relatively
+  well-matched units. The implicit statistical model for LC is thus simple one-way ANOVA.
+  The Within-Block measures of effect-size are Local Rank Correlations (LRCs) when Exposure
+  is numeric with more than two levels. Otherwise, Treatment choice is Nested within
+  BLOCKS, and effect-sizes are LOCAL Treatment Differences (LTDs) between within-cluster
+  y-Outcome Means ["new" minus "control"]. An Instrumental Variable (IV) method is also
+  provided so that Local Average y-Outcomes (LAOs) within BLOCKS may also contribute
+  information for effect-size inferences ...assuming that X-Covariates influence only
+  Treatment choice or Exposure level and otherwise have no direct effects on y-Outcome.
+  Finally, a "Most-Like-Me" function provides histograms of effect-size distributions to
+  aid Doctor-Patient communications about Personalized Medicine.  </p>
+<table summary="Package LocalControlStrategy summary">
+<tr>
+<td>Version:</td>
+<td>1.3.3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td><a href="../cluster/index.html">cluster</a>, <a href="../lattice/index.html">lattice</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-08-29</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Bob Obenchain </td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Bob Obenchain  &#x3c;&#x77;&#x69;&#x7a;&#x62;&#x6f;&#x62;&#x20;&#x61;&#x74;&#x20;&#x61;&#x74;&#x74;&#x2e;&#x6e;&#x65;&#x74;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://www.R-project.org">https://www.R-project.org</a>, <a href="http://localcontrolstatistics.org">http://localcontrolstatistics.org</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_LocalControlStrategy.html">LocalControlStrategy results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package LocalControlStrategy downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="LocalControlStrategy.pdf"> LocalControlStrategy.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/LocalControlStrategy_1.3.3.tar.gz"> LocalControlStrategy_1.3.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/LocalControlStrategy_1.3.3.zip">LocalControlStrategy_1.3.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/LocalControlStrategy_1.3.3.zip">LocalControlStrategy_1.3.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/LocalControlStrategy_1.3.3.zip">LocalControlStrategy_1.3.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/LocalControlStrategy_1.3.3.tgz">LocalControlStrategy_1.3.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/LocalControlStrategy_1.3.3.tgz">LocalControlStrategy_1.3.3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/LocalControlStrategy"> LocalControlStrategy archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=LocalControlStrategy"><samp>https://CRAN.R-project.org/package=LocalControlStrategy</samp></a>
+to link to this page.</p>
+</body>
+</html>

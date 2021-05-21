@@ -1,0 +1,35 @@
+Package: gscaLCA
+Type: Package
+Title: Generalized Structure Component Analysis- Latent Class Analysis
+        & Latent Class Regression
+Version: 0.0.3
+Authors@R: c(
+              person("Jihoon", "Ryoo",
+                  role = c("aut")),
+              person("Seohee", "Park", email = "hee6904@gmail.com",
+                  role = c("aut", "cre")),
+              person("Seoungeun", "Kim",
+                  role = c("aut")), 
+              person("heungsun", "Hwaung",
+                  role = c("aut")))
+Description: 
+    Execute Latent Class Analysis (LCA) and Latent Class Regression (LCR) by using Generalized Structured Component Analysis (GSCA). This is explained in Ryoo, Park, and Kim (2019) <doi:10.1007/s41237-019-00084-6>.
+    It estimates the parameters of latent class prevalence and item response probability in LCA with a single line comment. It also provides graphs of item response probabilities. In addition, the package enables to estimate the relationship between the prevalence and covariates. 
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/hee6904/gscaLCA
+Depends: R (>= 2.10)
+Imports: gridExtra, ggplot2, stringr, progress, psych, fastDummies,
+        fclust, MASS, devtools, foreach, doSNOW, nnet
+Suggests: knitr, rmarkdown
+RoxygenNote: 7.1.0
+NeedsCompilation: no
+Packaged: 2020-05-25 14:47:56 UTC; Spenser
+Author: Jihoon Ryoo [aut],
+  Seohee Park [aut, cre],
+  Seoungeun Kim [aut],
+  heungsun Hwaung [aut]
+Maintainer: Seohee Park <hee6904@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-05-25 21:20:09 UTC

@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package metan</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Multi Environment Trials Analysis [R package metan version 1.10.0]" />
+<meta name="citation_author" content="Tiago Olivoto" />
+<meta name="citation_publication_date" content="2020-10-24" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=metan" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=metan" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="metan: Multi Environment Trials Analysis" />
+<meta name="og:description" content="Performs stability analysis of multi-environment trial data using parametric and non-parametric methods. Parametric methods includes Additive Main Effects and Multiplicative Interaction (AMMI) analysis by Gauch (2013) &amp;lt;&lt;a href=&quot;https://doi.org/10.2135%2Fcropsci2013.04.0241&quot;&gt;doi:10.2135/cropsci2013.04.0241&lt;/a&gt;&amp;gt;, Ecovalence by Wricke (1965), Genotype plus Genotype-Environment (GGE) biplot analysis by Yan &amp;amp; Kang (2003) &amp;lt;&lt;a href=&quot;https://doi.org/10.1201%2F9781420040371&quot;&gt;doi:10.1201/9781420040371&lt;/a&gt;&amp;gt;, geometric adaptability index by Mohammadi &amp;amp; Amri (2008) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs10681-007-9600-6&quot;&gt;doi:10.1007/s10681-007-9600-6&lt;/a&gt;&amp;gt;, joint regression analysis by Eberhart &amp;amp; Russel (1966) &amp;lt;&lt;a href=&quot;https://doi.org/10.2135%2Fcropsci1966.0011183X000600010011x&quot;&gt;doi:10.2135/cropsci1966.0011183X000600010011x&lt;/a&gt;&amp;gt;, genotypic confidence index by Annicchiarico (1992), Murakami &amp;amp; Cruz's (2004) method &amp;lt;&lt;a href=&quot;https://doi.org/10.12702%2F1984-7033.v04n01a02&quot;&gt;doi:10.12702/1984-7033.v04n01a02&lt;/a&gt;&amp;gt;, power law residuals (POLAR) statistics by Doring et al. (2015) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.fcr.2015.08.005&quot;&gt;doi:10.1016/j.fcr.2015.08.005&lt;/a&gt;&amp;gt;, scale-adjusted coefficient of variation by Doring &amp;amp; Reckling (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.eja.2018.06.007&quot;&gt;doi:10.1016/j.eja.2018.06.007&lt;/a&gt;&amp;gt;, stability variance by Shukla (1972) &amp;lt;&lt;a href=&quot;https://doi.org/10.1038%2Fhdy.1972.87&quot;&gt;doi:10.1038/hdy.1972.87&lt;/a&gt;&amp;gt;, weighted average of absolute scores by Olivoto et al. (2019a) &amp;lt;&lt;a href=&quot;https://doi.org/10.2134%2Fagronj2019.03.0220&quot;&gt;doi:10.2134/agronj2019.03.0220&lt;/a&gt;&amp;gt;, and multi-trait stability index by Olivoto et al. (2019b) &amp;lt;&lt;a href=&quot;https://doi.org/10.2134%2Fagronj2019.03.0221&quot;&gt;doi:10.2134/agronj2019.03.0221&lt;/a&gt;&amp;gt;. Non-parametric methods includes superiority index by Lin &amp;amp; Binns (1988) &amp;lt;&lt;a href=&quot;https://doi.org/10.4141%2Fcjps88-018&quot;&gt;doi:10.4141/cjps88-018&lt;/a&gt;&amp;gt;, nonparametric measures of phenotypic stability by Huehn (1990) &amp;lt;&lt;a href=&quot;https://link.springer.com/article/10.1007/BF00024241&quot;&gt;https://link.springer.com/article/10.1007/BF00024241&lt;/a&gt;&amp;gt;, TOP third statistic by Fox et al. (1990) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2FBF00040364&quot;&gt;doi:10.1007/BF00040364&lt;/a&gt;&amp;gt;. Functions for computing biometrical analysis such as path analysis, canonical correlation, partial correlation, clustering analysis, and tools for inspecting, manipulating, summarizing and plotting typical multi-environment trial data are also provided." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=metan" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>metan: Multi Environment Trials Analysis</h2>
+<p>Performs stability analysis of multi-environment
+    trial data using parametric and non-parametric methods. Parametric
+    methods includes Additive Main Effects and Multiplicative Interaction
+    (AMMI) analysis by Gauch (2013) &lt;<a href="https://doi.org/10.2135%2Fcropsci2013.04.0241">doi:10.2135/cropsci2013.04.0241</a>&gt;,
+    Ecovalence by Wricke (1965), Genotype plus Genotype-Environment (GGE)
+    biplot analysis by Yan &amp; Kang (2003) &lt;<a href="https://doi.org/10.1201%2F9781420040371">doi:10.1201/9781420040371</a>&gt;,
+    geometric adaptability index by Mohammadi &amp; Amri (2008)
+    &lt;<a href="https://doi.org/10.1007%2Fs10681-007-9600-6">doi:10.1007/s10681-007-9600-6</a>&gt;, joint regression analysis by Eberhart
+    &amp; Russel (1966) &lt;<a href="https://doi.org/10.2135%2Fcropsci1966.0011183X000600010011x">doi:10.2135/cropsci1966.0011183X000600010011x</a>&gt;,
+    genotypic confidence index by Annicchiarico (1992), Murakami &amp; Cruz's
+    (2004) method &lt;<a href="https://doi.org/10.12702%2F1984-7033.v04n01a02">doi:10.12702/1984-7033.v04n01a02</a>&gt;, power law residuals
+    (POLAR) statistics by Doring et al. (2015)
+    &lt;<a href="https://doi.org/10.1016%2Fj.fcr.2015.08.005">doi:10.1016/j.fcr.2015.08.005</a>&gt;, scale-adjusted coefficient of
+    variation by Doring &amp; Reckling (2018) &lt;<a href="https://doi.org/10.1016%2Fj.eja.2018.06.007">doi:10.1016/j.eja.2018.06.007</a>&gt;,
+    stability variance by Shukla (1972) &lt;<a href="https://doi.org/10.1038%2Fhdy.1972.87">doi:10.1038/hdy.1972.87</a>&gt;,
+    weighted average of absolute scores by Olivoto et al. (2019a)
+    &lt;<a href="https://doi.org/10.2134%2Fagronj2019.03.0220">doi:10.2134/agronj2019.03.0220</a>&gt;, and multi-trait stability index by
+    Olivoto et al. (2019b) &lt;<a href="https://doi.org/10.2134%2Fagronj2019.03.0221">doi:10.2134/agronj2019.03.0221</a>&gt;.
+    Non-parametric methods includes superiority index by Lin &amp; Binns
+    (1988) &lt;<a href="https://doi.org/10.4141%2Fcjps88-018">doi:10.4141/cjps88-018</a>&gt;, nonparametric measures of phenotypic
+    stability by Huehn (1990)
+    &lt;<a href="https://link.springer.com/article/10.1007/BF00024241">https://link.springer.com/article/10.1007/BF00024241</a>&gt;, TOP third
+    statistic by Fox et al. (1990) &lt;<a href="https://doi.org/10.1007%2FBF00040364">doi:10.1007/BF00040364</a>&gt;. Functions for
+    computing biometrical analysis such as path analysis, canonical
+    correlation, partial correlation, clustering analysis, and tools for
+    inspecting, manipulating, summarizing and plotting typical
+    multi-environment trial data are also provided.</p>
+<table summary="Package metan summary">
+<tr>
+<td>Version:</td>
+<td>1.10.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../cowplot/index.html">cowplot</a>, <a href="../dplyr/index.html">dplyr</a> (&ge; 1.0.0), <a href="../GGally/index.html">GGally</a>, <a href="../ggforce/index.html">ggforce</a>, <a href="../ggplot2/index.html">ggplot2</a> (&ge;
+3.3.0), <a href="../ggrepel/index.html">ggrepel</a>, grid, <a href="../lme4/index.html">lme4</a>, <a href="../lmerTest/index.html">lmerTest</a>, <a href="../magrittr/index.html">magrittr</a>, <a href="../mathjaxr/index.html">mathjaxr</a>, methods, <a href="../progress/index.html">progress</a>, <a href="../purrr/index.html">purrr</a>, <a href="../rlang/index.html">rlang</a> (&ge; 0.1.2), <a href="../tibble/index.html">tibble</a>, <a href="../tidyr/index.html">tidyr</a>, <a href="../tidyselect/index.html">tidyselect</a> (&ge; 1.0.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../DT/index.html">DT</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../roxygen2/index.html">roxygen2</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-24</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Tiago Olivoto <a href="https://orcid.org/0000-0002-0241-9636"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre, cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Tiago Olivoto  &#x3c;&#x74;&#x69;&#x61;&#x67;&#x6f;&#x6f;&#x6c;&#x69;&#x76;&#x6f;&#x74;&#x6f;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/TiagoOlivoto/metan/issues">https://github.com/TiagoOlivoto/metan/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/TiagoOlivoto/metan">https://github.com/TiagoOlivoto/metan</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">metan citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_metan.html">metan results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package metan downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="metan.pdf"> metan.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/metan_start.html">Multi-environment Trial Analysis</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/metan_1.10.0.tar.gz"> metan_1.10.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/metan_1.10.0.zip">metan_1.10.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/metan_1.10.0.zip">metan_1.10.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/metan_1.10.0.zip">metan_1.10.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/metan_1.10.0.tgz">metan_1.10.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/metan_1.10.0.tgz">metan_1.10.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/metan"> metan archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=metan"><samp>https://CRAN.R-project.org/package=metan</samp></a>
+to link to this page.</p>
+</body>
+</html>

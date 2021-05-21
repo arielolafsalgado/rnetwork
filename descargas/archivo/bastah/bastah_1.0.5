@@ -1,0 +1,25 @@
+Package: bastah
+Type: Package
+Title: Big Data Statistical Analysis for High-Dimensional Models
+Version: 1.0.5
+Date: 2016-05-18
+Author: Ehsan Ullah [aut, cre], Reda Rawi [aut], Lukas Meier [ctb], Ruben Dezeure [ctb], Nicolai Meinshausen [ctb], Martin Maechler [ctb], Peter Buehlmann [ctb], Tingni Sun [ctb]
+Authors@R: c(person(given = "Ehsan", family = "Ullah", role = c("aut", "cre"), email = "eullah@qf.org.qa"),
+   person(given = "Reda", family = "Rawi", role = c("aut")),
+   person(given = "Lukas", family = "Meier", role = c("ctb")),
+   person(given = "Ruben", family = "Dezeure", role = c("ctb")),
+   person(given = "Nicolai", family = "Meinshausen", role = c("ctb")),
+   person(given = "Martin", family = "Maechler", role = c("ctb")),
+   person(given = "Peter", family = "Buehlmann", role = c("ctb")),
+   person(given = "Tingni", family = "Sun", role = c("ctb")))
+Maintainer: Ehsan Ullah <eullah@qf.org.qa>
+Repository: CRAN
+Description: Big data statistical analysis for high-dimensional models is made possible by modifying lasso.proj() in 'hdi' package by replacing its nodewise-regression with sparse precision matrix computation using 'BigQUIC'.
+License: GPL (== 2)
+LazyData: TRUE
+Enhances: doMC, rPython
+Imports: BigQuic, foreach, glmnet, lars, MASS, stats, Matrix, scalreg
+Depends: R (>= 3.2.0)
+NeedsCompilation: no
+Packaged: 2016-05-18 07:22:48 UTC; ehsan
+Date/Publication: 2016-05-18 10:38:25

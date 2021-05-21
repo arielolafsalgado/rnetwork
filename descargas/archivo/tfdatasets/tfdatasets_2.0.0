@@ -1,0 +1,46 @@
+Package: tfdatasets
+Type: Package
+Title: Interface to 'TensorFlow' Datasets
+Version: 2.0.0
+Authors@R: c(
+  person("Daniel", "Falbel", role = c("ctb", "cph", "cre"), 
+         email = "daniel@rstudio.com"),
+  person("JJ", "Allaire", role = c("aut", "cph"),
+         email = "jj@rstudio.com"),
+  person("Yuan", "Tang", role = c("aut"),
+         email = "terrytangyuan@gmail.com",
+         comment = c(ORCID = "0000-0001-5243-233X")),
+  person("Kevin", "Ushey", role = c("aut"),
+         email = "kevin@rstudio.com"),
+  person("RStudio", role = c("cph", "fnd")),  
+  person(family = "Google Inc.", role = c("cph"))
+  )
+Description: Interface to 'TensorFlow' Datasets, a high-level library for 
+    building complex input pipelines from simple, re-usable pieces. 
+    See <https://www.tensorflow.org/programmers_guide/datasets> for additional
+    details.
+License: Apache License 2.0
+URL: https://github.com/rstudio/tfdatasets
+BugReports: https://github.com/rstudio/tfdatasets/issues
+SystemRequirements: TensorFlow >= 1.4 (https://www.tensorflow.org/)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.1)
+Imports: reticulate (>= 1.10), tensorflow (>= 1.13.1), magrittr, rlang,
+        tidyselect, stats, generics, tfestimators
+RoxygenNote: 7.0.1
+Suggests: testthat, knitr, keras, rsample, rmarkdown, Metrics, dplyr
+VignetteBuilder: knitr
+Config/reticulate: list( packages = list( list(package = "tensorflow",
+        pip = TRUE) ) )
+NeedsCompilation: no
+Packaged: 2019-12-13 14:00:23 UTC; dfalbel
+Author: Daniel Falbel [ctb, cph, cre],
+  JJ Allaire [aut, cph],
+  Yuan Tang [aut] (<https://orcid.org/0000-0001-5243-233X>),
+  Kevin Ushey [aut],
+  RStudio [cph, fnd],
+  Google Inc. [cph]
+Maintainer: Daniel Falbel <daniel@rstudio.com>
+Repository: CRAN
+Date/Publication: 2019-12-13 14:40:02 UTC

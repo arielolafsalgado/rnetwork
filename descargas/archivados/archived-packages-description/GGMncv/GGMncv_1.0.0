@@ -1,0 +1,32 @@
+Package: GGMncv
+Type: Package
+Title: Gaussian Graphical Models with Non-Convex Penalties
+Version: 1.0.0
+Date: 2020-07-03
+Authors@R: person("Donald", "Williams", email = "drwwilliams@ucdavis.edu", role = c("aut", "cre"))
+Description: Estimate Gaussian graphical models with non-convex penalties, including 
+  the atan Wang and Zhu (2016) <doi:10.1155/2016/6495417>, 
+  seamless L0 Dicker, Huang, and Lin (2013) <doi:10.5705/ss.2011.074>,
+  exponential Wang, Fan, and Zhu <doi:10.1007/s10463-016-0588-3>, 
+  smooth integration of counting and absolute deviation Lv and Fan (2009) <doi:10.1214/09-AOS683>,
+  logarithm Mazumder, Friedman, and Hastie (2011) <doi:10.1198/jasa.2011.tm09738>,
+  Lq, smoothly clipped absolute deviation Fan and Li (2001) <doi:10.1198/016214501753382273>,
+  and minimax concave penalty Zhang (2010) <doi:10.1214/09-AOS729>. There are also extensions
+  for computing variable inclusion probabilities and multiple regression coefficients.
+License: GPL-2
+Depends: R (>= 4.0.0)
+Imports: Rcpp (>= 1.0.4.6), Rdpack (>= 0.11-1), ggplot2 (>= 3.3.0),
+        glassoFast (>= 1.0), numDeriv (>= 2016.8-1.1), methods, psych
+        (>= 1.9.12.31), stats, utils
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+LinkingTo: Rcpp, RcppArmadillo
+RdMacros: Rdpack
+BugReports: https://github.com/donaldRwilliams/GGMncv/issues
+NeedsCompilation: yes
+Packaged: 2020-07-04 23:19:27 UTC; Donny
+Author: Donald Williams [aut, cre]
+Maintainer: Donald Williams <drwwilliams@ucdavis.edu>
+Repository: CRAN
+Date/Publication: 2020-07-06 12:40:03 UTC

@@ -1,0 +1,30 @@
+Package: stabs
+Title: Stability Selection with Error Control
+Version: 0.6-2
+Date: 2017-01-30
+Authors@R: c(person("Benjamin", "Hofner", role = c("aut", "cre"),
+	            email = "benjamin.hofner@pei.de"),
+       	     person("Torsten", "Hothorn", role = c("aut")))
+Description: Resampling procedures to assess the stability of selected variables
+    with additional finite sample error control for high-dimensional variable
+    selection procedures such as Lasso or boosting. Both, standard stability
+    selection (Meinshausen & Buhlmann, 2010, <doi:10.1111/j.1467-9868.2010.00740.x>) 
+    and complementary pairs stability selection with improved error bounds 
+    (Shah & Samworth, 2013, <doi:10.1111/j.1467-9868.2011.01034.x>) are
+    implemented. The package can be combined with arbitrary user specified
+    variable selection approaches.
+VignetteBuilder: knitr
+Depends: R (>= 2.14.0), methods, stats, parallel
+Imports: graphics, grDevices, utils
+Suggests: glmnet, lars, mboost (> 2.3-0), gamboostLSS (>= 1.2-0), QUIC,
+        TH.data, hdi, testthat, knitr, rmarkdown, igraph, huge
+LazyData: yes
+License: GPL-2
+URL: https://github.com/hofnerb/stabs
+NeedsCompilation: no
+Packaged: 2017-01-30 13:45:38 UTC; hofbe
+Author: Benjamin Hofner [aut, cre],
+  Torsten Hothorn [aut]
+Maintainer: Benjamin Hofner <benjamin.hofner@pei.de>
+Repository: CRAN
+Date/Publication: 2017-01-31 06:51:20

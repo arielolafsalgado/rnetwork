@@ -1,0 +1,45 @@
+Package: funreg
+Type: Package
+Title: funreg (Functional Regression for Irregularly Timed Data)
+Version: 1.1
+Date: 2014-06-12
+Authors@R: c(person("John", "Dziak",
+    role = c("aut", "cre"),
+    email = "jjd264@psu.edu"),
+    person("Mariya", "Shiyko",
+    role = "aut",
+    email = "M.Shiyko@neu.edu"))
+Depends: R (>= 2.15.0)
+Imports: MASS, mgcv, mvtnorm, splines
+Copyright: The Pennsylvania State University and Northeastern
+        University
+Description: This package performs functional regression, and some related
+    approaches, for intensive longitudinal data (see Walls & Schafer, 2006)
+    which is not necessarily observed on an equally spaced grid of times.  The
+    approach generally follows the ideas of Goldsmith, Bobb, Crainiceanu,
+    Caffo, and Reich (2011) and the approach taken in their sample code, but
+    with some modifications to make it more feasible to use with long rather
+    than wide, non-rectangular longitudinal datasets with unequal and
+    potentially random measurement times.  It also allows easy plotting of the
+    correlation between the smoothed covariate and the outcome as a function of
+    time, which can add additional insights on how to interpret a functional
+    regression.  Additionally, it also provides several permutation tests for
+    the significance of the functional predictor.  The heuristic interpretation
+    of ``time'' is used to describe the index of the functional predictor, but
+    the same methods can equally be used for another unidimensional continuous
+    index, such as space along a north-south axis.  The development of this
+    package was part of a research project supported by Award R03 CA171809-01
+    from the National Cancer Institute and Award P50 DA010075 from the National
+    Institute on Drug Abuse. The content is solely the responsibility of the
+    authors and does not necessarily represent the official views of the
+    National Institute on Drug Abuse, the National Cancer Institute, or the
+    National Institutes of Health.
+License: GPL (>= 2)
+LazyData: true
+Packaged: 2014-06-20 22:20:03 UTC; admin_jjd264
+Author: John Dziak [aut, cre],
+  Mariya Shiyko [aut]
+Maintainer: John Dziak <jjd264@psu.edu>
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2014-06-21 01:11:39

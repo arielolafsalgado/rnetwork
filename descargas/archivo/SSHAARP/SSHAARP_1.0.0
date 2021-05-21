@@ -1,0 +1,33 @@
+Package: SSHAARP
+Version: 1.0.0
+Date: 2020-04-20
+Title: Searching Shared HLA Amino Acid Residue Prevalence
+Authors@R: 
+    c(person("Livia", "Tran",
+    role = c("aut", "cre"),
+           email = "livia.tran@ucsf.edu"),
+    person("Steven", "Mack", 
+    role= "aut",
+            email = "steven.mack@ucsf.edu"),
+    person("Josh", "Bredeweg", role= "ctb"),
+    person("Dale", "Steinhardt", role= "ctb"))
+Maintainer: Livia Tran <livia.tran@ucsf.edu>
+Depends: R (>= 2.10)
+Description: Processes amino acid alignments produced by the 'IPD-IMGT/HLA (Immuno Polymorphism-ImMunoGeneTics/Human Leukocyte Antigen) Database' to identify user-defined amino acid residue motifs shared across HLA alleles, and calculates the frequencies of those motifs based on HLA allele frequency data. 'SSHAARP' (Searching Shared HLA Amino Acid Residue Prevalence) uses 'Generic Mapping Tools (GMT)' software and the 'GMT' R package to generate global frequency heat maps that illustrate the distribution of each user-defined map around the globe. 'SSHAARP' analyzes the allele frequency data described by Solberg et al. (2008) <doi:10.1016/j.humimm.2008.05.001>, a global set of 497 population samples from 185 published datasets, representing 66,800 individuals total.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Imports: data.table, stringr, gtools, BIGDAWG, gmt, DescTools, dplyr,
+        sessioninfo, filesstrings
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+SystemRequirements: GMT (5 or 6), Ghostscript (>=9.6)
+RoxygenNote: 7.1.0
+NeedsCompilation: no
+Packaged: 2020-04-22 01:40:20 UTC; liviatran
+Author: Livia Tran [aut, cre],
+  Steven Mack [aut],
+  Josh Bredeweg [ctb],
+  Dale Steinhardt [ctb]
+Repository: CRAN
+Date/Publication: 2020-04-27 17:10:02 UTC

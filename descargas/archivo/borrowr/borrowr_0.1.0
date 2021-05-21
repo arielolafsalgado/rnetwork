@@ -1,0 +1,27 @@
+Package: borrowr
+Type: Package
+Title: Estimate Causal Effects with Borrowing Between Data Sources
+Version: 0.1.0
+Author: Jeffrey A. Boatman [aut, cre],
+  David M. Vock [aut],
+  Joseph S. Koopmeiners [aut]
+Maintainer: Jeffrey A. Boatman <boat0036@umn.edu>
+Description: Estimate population average treatment effects from a primary data source 
+  with borrowing from supplemental sources. Causal estimation is done with either a 
+  Bayesian linear model or with Bayesian additive regression trees (BART) to adjust 
+  for confounding. Borrowing is done with multisource exchangeability models (MEMs). For 
+  information on BART, see Chipman, George, & McCulloch (2010) <doi:10.1214/09-AOAS285>. 
+  For information on MEMs, see Kaizer, Koopmeiners, & 
+  Hobbs (2018) <doi10.1093/biostatistics/kxx031>.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Imports: mvtnorm(>= 1.0.8), BART(>= 2.1), Rcpp (>= 1.0.0)
+LinkingTo: Rcpp
+Suggests: knitr, rmarkdown, ggplot2
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2019-07-17 21:49:42 UTC; boat0036
+Repository: CRAN
+Date/Publication: 2019-07-19 10:00:02 UTC

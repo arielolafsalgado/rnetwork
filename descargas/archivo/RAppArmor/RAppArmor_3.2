@@ -1,0 +1,32 @@
+Package: RAppArmor
+Type: Package
+Title: Bindings to AppArmor and Security Related Linux Tools
+Version: 3.2
+Authors@R: person("Jeroen", "Ooms", role = c("aut", "cre"), 
+    email = "jeroen@berkeley.edu", comment = c(ORCID = "0000-0002-4035-0289"))
+Description: Bindings to kernel methods for enforcing security restrictions. 
+    AppArmor can apply mandatory access control (MAC) policies on a given task 
+    (process) via security profiles with detailed ACL definitions. In addition
+    this package implements bindings for setting process resource limits (rlimit),
+    uid, gid, affinity and priority. The high level R function 'eval.secure' 
+    builds on these methods to perform dynamic sandboxing: it evaluates a single
+    R expression within a temporary fork which acts as a sandbox by enforcing 
+    fine grained restrictions without affecting the main R process. A portable 
+    version of this function is now available in the 'unix' package.
+License: Apache License 2.0
+URL: http://www.jstatsoft.org/v55/i07/ (paper),
+        http://github.com/jeroen/RAppArmor#readme (devel)
+BugReports: http://github.com/jeroen/RAppArmor/issues
+OS_type: unix
+SystemRequirements: linux (>= 3.0), libapparmor-dev
+VignetteBuilder: R.rsp
+Suggests: testthat, R.rsp
+Depends: unix (>= 1.4)
+RoxygenNote: 6.1.1
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2019-03-16 12:55:35 UTC; jeroen
+Author: Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>)
+Maintainer: Jeroen Ooms <jeroen@berkeley.edu>
+Repository: CRAN
+Date/Publication: 2019-03-16 19:53:52 UTC

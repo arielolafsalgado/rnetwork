@@ -1,0 +1,28 @@
+Package: errorlocate
+Type: Package
+Title: Locate Errors with Validation Rules
+Version: 0.2.0
+Authors@R: c(person("Edwin", "de Jonge", email = "edwindjonge@gmail.com", role = c("aut", "cre")),
+             person("Mark", "van der Loo", email = "mark.vanderloo@gmail.com", role = c("aut")))
+Description: Errors in data can be located and removed using validation rules from package 'validate'.
+License: GPL-3
+LazyData: TRUE
+URL: https://github.com/data-cleaning/errorlocate
+BugReports: https://github.com/data-cleaning/errorlocate/issues
+Depends: validate
+Imports: lpSolveAPI, methods
+Suggests: testthat, magrittr, covr
+RoxygenNote: 6.1.1
+Encoding: UTF-8
+Collate: 'MipRules.R' 'addnoise.R' 'categorical.R' 'conditional.R'
+        'dnf.R' 'errorlocalizer.R' 'errorlocate-package.r'
+        'errorlocation.R' 'expr_manip.R' 'expr_simplify.R' 'linear.R'
+        'locate-errors.R' 'mip_lpsolve.R' 'mip_rule.R'
+        'replace-errors.R' 'soft-rule.R' 'utils.R' 'values.R'
+NeedsCompilation: no
+Packaged: 2019-07-01 09:20:56 UTC; edwin
+Author: Edwin de Jonge [aut, cre],
+  Mark van der Loo [aut]
+Maintainer: Edwin de Jonge <edwindjonge@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-07-01 09:40:03 UTC

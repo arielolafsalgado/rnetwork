@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package markovchain</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Easy Handling Discrete Time Markov Chains [R package markovchain version 0.8.5-2]" />
+<meta name="citation_author1" content="Giorgio Alfredo Spedicato" />
+<meta name="citation_author2" content="Tae Seung Kang" />
+<meta name="citation_author3" content="Sai Bhargav Yalamanchi" />
+<meta name="citation_author4" content="Deepak Yadav" />
+<meta name="citation_author5" content="Ignacio Cordón" />
+<meta name="citation_publication_date" content="2020-09-08" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=markovchain" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=markovchain" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="markovchain: Easy Handling Discrete Time Markov Chains" />
+<meta name="og:description" content="Functions and S4 methods to create and manage discrete time Markov chains more easily. In addition functions to perform statistical (fitting and drawing random variates) and probabilistic (analysis of their structural proprieties) analysis are provided." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=markovchain" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>markovchain: Easy Handling Discrete Time Markov Chains</h2>
+<p>Functions and S4 methods to create and manage discrete time Markov
+    chains more easily. In addition functions to perform statistical (fitting
+    and drawing random variates) and probabilistic (analysis of their structural
+    proprieties) analysis are provided.</p>
+<table summary="Package markovchain summary">
+<tr>
+<td>Version:</td>
+<td>0.8.5-2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.6.0), methods</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../igraph/index.html">igraph</a>, <a href="../Matrix/index.html">Matrix</a>, <a href="../matlab/index.html">matlab</a>, <a href="../expm/index.html">expm</a>, stats4, parallel, <a href="../Rcpp/index.html">Rcpp</a> (&ge;
+1.0.2), <a href="../RcppParallel/index.html">RcppParallel</a>, utils, stats, grDevices</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppParallel/index.html">RcppParallel</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a> (&ge; 0.9.600.4.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../testthat/index.html">testthat</a>, <a href="../diagram/index.html">diagram</a>, <a href="../DiagrammeR/index.html">DiagrammeR</a>, <a href="../msm/index.html">msm</a>, <a href="../Rsolnp/index.html">Rsolnp</a>, knitcitations, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../ctmcd/index.html">ctmcd</a>, <a href="../bookdown/index.html">bookdown</a>, <a href="../rticles/index.html">rticles</a></td>
+</tr>
+<tr>
+<td>Enhances:</td>
+<td><a href="../etm/index.html">etm</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-08</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Giorgio Alfredo Spedicato
+    <a href="https://orcid.org/0000-0002-0315-8888"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut, cre],
+  Tae Seung Kang [aut],
+  Sai Bhargav Yalamanchi [aut],
+  Mildenberger Thoralf
+    <a href="https://orcid.org/0000-0001-7242-1873"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb],
+  Deepak Yadav [aut],
+  Ignacio Cordón <a href="https://orcid.org/0000-0002-3152-0231"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Vandit Jain [ctb],
+  Toni Giorgino <a href="https://orcid.org/0000-0001-6449-0596"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Richèl J.C. Bilderbeek
+    <a href="https://orcid.org/0000-0003-1107-7049"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb],
+  Daniel Ebbert <a href="https://orcid.org/0000-0003-3666-7205"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Shreyash Maheshwari [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Giorgio Alfredo Spedicato  &#x3c;&#x73;&#x70;&#x65;&#x64;&#x69;&#x63;&#x61;&#x74;&#x6f;&#x5f;&#x67;&#x69;&#x6f;&#x72;&#x67;&#x69;&#x6f;&#x20;&#x61;&#x74;&#x20;&#x79;&#x61;&#x68;&#x6f;&#x6f;&#x2e;&#x69;&#x74;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/spedygiorgio/markovchain/issues">https://github.com/spedygiorgio/markovchain/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/spedygiorgio/markovchain/">https://github.com/spedygiorgio/markovchain/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>GNU make</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">markovchain citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="NEWS">NEWS</a> <a href="ChangeLog">ChangeLog</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Finance.html">Finance</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_markovchain.html">markovchain results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package markovchain downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="markovchain.pdf"> markovchain.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/an_introduction_to_markovchain_package.pdf">An introduction to markovchain package</a><br/>
+<a href="vignettes/gsoc_2017_additions.pdf">Google Summer of Code 2017 Additions</a><br/>
+<a href="vignettes/higher_order_markov_chains.pdf">Higher order markov chains</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/markovchain_0.8.5-2.tar.gz"> markovchain_0.8.5-2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/markovchain_0.8.5-2.zip">markovchain_0.8.5-2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/markovchain_0.8.5-2.zip">markovchain_0.8.5-2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/markovchain_0.8.5-2.zip">markovchain_0.8.5-2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/markovchain_0.8.5-2.tgz">markovchain_0.8.5-2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/markovchain_0.8.5-2.tgz">markovchain_0.8.5-2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/markovchain"> markovchain archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package markovchain reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../lifecontingencies/index.html">lifecontingencies</a>, <a href="../modesto/index.html">modesto</a>, <a href="../Robocoap/index.html">Robocoap</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../aqp/index.html">aqp</a>, <a href="../ctmcd/index.html">ctmcd</a>, <a href="../FuzzyStatProb/index.html">FuzzyStatProb</a>, <a href="../MPkn/index.html">MPkn</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=markovchain"><samp>https://CRAN.R-project.org/package=markovchain</samp></a>
+to link to this page.</p>
+</body>
+</html>

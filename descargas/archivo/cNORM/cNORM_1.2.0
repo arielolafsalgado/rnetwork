@@ -1,0 +1,37 @@
+Package: cNORM
+Type: Package
+Title: Continuous Norming
+Version: 1.2.0
+Maintainer: Wolfgang Lenhard <wolfgang.lenhard@uni-wuerzburg.de>
+Date: 2019-07-26
+Authors@R: c(person("Wolfgang", "Lenhard", role = c("cre","aut"), email="wolfgang.lenhard@uni-wuerzburg.de", comment=c("<https://orcid.org/0000-0002-8184-6889>")), person("Alexandra", "Lenhard", role=c("aut")), person("Sebastian", "Gary", role=c("ctb")))
+Description: Conventional methods for producing standard scores in psychometrics or biometrics 
+    are often plagued with "jumps" or "gaps" (i.e., discontinuities) in norm tables and low 
+    confidence for assessing extreme scores. The continuous norming method introduced by A. 
+    Lenhard et al. (2016), <doi:10.1177/1073191116656437>, generates continuous test norm 
+    scores on the basis of the raw data from standardization samples, without requiring 
+    assumptions about the distribution of the raw data: Norm scores are directly established 
+    from raw data by modeling the latter ones as a function of both percentile scores and an 
+    explanatory variable (e.g., age). The method minimizes bias arising from sampling and 
+    measurement error, while handling marked deviations from normality, addressing bottom 
+    or ceiling effects and capturing almost all of the variance in the original norm data 
+    sample.
+Depends: R (>= 3.1.0)
+Imports: lattice (>= 0.20), leaps (>= 3.0.0), latticeExtra (>= 0.6)
+Suggests: knitr, markdown, shiny, shinycssloaders, foreign, readxl,
+        rmarkdown
+License: AGPL-3
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Repository: CRAN
+Encoding: UTF-8
+LazyData: true
+URL: https://www.psychometrica.de/cNorm_en.html,
+        https://github.com/WLenhard/cNORM
+BugReports: https://github.com/WLenhard/cNORM/issues
+Packaged: 2019-07-26 14:46:24 UTC; gbpa005
+Author: Wolfgang Lenhard [cre, aut] (<https://orcid.org/0000-0002-8184-6889>),
+  Alexandra Lenhard [aut],
+  Sebastian Gary [ctb]
+Date/Publication: 2019-07-26 15:10:02 UTC

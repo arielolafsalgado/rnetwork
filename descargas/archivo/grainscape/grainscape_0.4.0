@@ -1,0 +1,42 @@
+Package: grainscape
+Type: Package
+Title: Landscape Connectivity, Habitat, and Protected Area Networks
+Description: Given a landscape resistance surface, creates grains of connectivity
+    (Galpern et al. (2012) <doi:10.1111/j.1365-294X.2012.05677.x>) and minimum planar graph
+    (Fall et al. (2007) <doi:10.1007/s10021-007-9038-7>) models that can be used to calculate
+    effective distances for landscape connectivity at multiple scales.
+URL: https://achubaty.github.io/grainscape,
+        https://github.com/achubaty/grainscape
+Version: 0.4.0
+Date: 2019-08-06
+Authors@R: c(
+    person("Paul", "Galpern", email = "pgalpern@gmail.com", role = c("aut", "cph")),
+    person("Sam", "Doctolero", email = "sam.doctolero@gmail.com", role = "aut"),
+    person("Alex M", "Chubaty", email = "alex.chubaty@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-7146-8135"))
+    )
+License: GPL (>= 2)
+Imports: ggplot2, graphics, grDevices, igraph, methods, sp, raster,
+        Rcpp (>= 0.12.11.4), rgdal, utils
+LinkingTo: Rcpp
+Suggests: cowplot, ggthemes, hunspell, knitr, parallel, rgeos,
+        rmarkdown, spelling, testthat
+VignetteBuilder: knitr, rmarkdown
+BugReports: https://github.com/achubaty/grainscape/issues
+ByteCompile: yes
+Collate: 'grainscape-package.R' 'classes.R' 'GOC.R' 'MPG.R'
+        'RcppExports.R' 'grain.R' 'corridor.R' 'deprecated.R'
+        'distance.R' 'export.R' 'extract.R' 'ggGS.R' 'graphdf.R'
+        'habitatConnectivityEngine.R' 'patchFilter.R' 'plot.R'
+        'point.R' 'theme_grainscape.R' 'threshold.R' 'zzz.R'
+Encoding: UTF-8
+Language: en-CA
+RoxygenNote: 6.1.1
+NeedsCompilation: yes
+Packaged: 2019-08-08 14:13:50 UTC; achubaty
+Author: Paul Galpern [aut, cph],
+  Sam Doctolero [aut],
+  Alex M Chubaty [aut, cre] (<https://orcid.org/0000-0001-7146-8135>)
+Maintainer: Alex M Chubaty <alex.chubaty@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-08-09 10:30:02 UTC

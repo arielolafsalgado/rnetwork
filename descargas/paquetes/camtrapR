@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package camtrapR</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Camera Trap Data Management and Preparation of Occupancy and Spatial Capture-Recapture Analyses [R package camtrapR version 2.0.3]" />
+<meta name="citation_author1" content="Juergen Niedballa" />
+<meta name="citation_author2" content="Alexandre Courtiol" />
+<meta name="citation_author3" content="Rahel Sollmann" />
+<meta name="citation_publication_date" content="2020-07-29" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=camtrapR" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=camtrapR" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="camtrapR: Camera Trap Data Management and Preparation of Occupancy and Spatial Capture-Recapture Analyses" />
+<meta name="og:description" content="Management of and data extraction from camera trap data in wildlife studies. The package provides a workflow for storing and sorting camera trap photos (and videos), tabulates records of species and individuals, and creates detection/non-detection matrices for occupancy and spatial capture-recapture analyses with great flexibility. In addition, it can visualise species activity data and provides simple mapping functions with GIS export." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=camtrapR" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>camtrapR: Camera Trap Data Management and Preparation of Occupancy and
+Spatial Capture-Recapture Analyses</h2>
+<p>Management of and data extraction from camera trap data in wildlife studies. The package provides a workflow for storing and sorting camera trap photos (and videos), tabulates records of species and individuals, and creates detection/non-detection matrices for occupancy and spatial capture-recapture analyses with great flexibility. In addition, it can visualise species activity data and provides simple mapping functions with GIS export.</p>
+<table summary="Package camtrapR summary">
+<tr>
+<td>Version:</td>
+<td>2.0.3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.1.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>methods, <a href="../sp/index.html">sp</a>, <a href="../overlap/index.html">overlap</a>, <a href="../secr/index.html">secr</a>, <a href="../data.table/index.html">data.table</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../lubridate/index.html">lubridate</a>, <a href="../raster/index.html">raster</a>, <a href="../rgdal/index.html">rgdal</a>, <a href="../ritis/index.html">ritis</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../taxize/index.html">taxize</a>, <a href="../testthat/index.html">testthat</a>, <a href="../tibble/index.html">tibble</a>, <a href="../unmarked/index.html">unmarked</a>, <a href="../zip/index.html">zip</a>, <a href="../RSQLite/index.html">RSQLite</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-07-29</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Juergen Niedballa <a href="https://orcid.org/0000-0002-9187-2116"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Alexandre Courtiol
+    <a href="https://orcid.org/0000-0003-0637-2959"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Rahel Sollmann <a href="https://orcid.org/0000-0002-1607-2039"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  John Mathai [ctb],
+  Seth Timothy Wong [ctb],
+  An The Truong Nguyen [ctb],
+  Azlan bin Mohamed <a href="https://orcid.org/0000-0003-3788-4383"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Andrew Tilker <a href="https://orcid.org/0000-0003-3630-8691"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Andreas Wilting <a href="https://orcid.org/0000-0001-5073-9186"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb, ths]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Juergen Niedballa  &#x3c;&#x63;&#x61;&#x6d;&#x74;&#x72;&#x61;&#x70;&#x72;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://groups.google.com/forum/#!forum/camtrapr">https://groups.google.com/forum/#!forum/camtrapr</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/jniedballa/camtrapR">https://github.com/jniedballa/camtrapR</a>,
+<a href="https://jniedballa.github.io/camtrapR">https://jniedballa.github.io/camtrapR</a>,
+<a href="https://groups.google.com/forum/#!forum/camtrapr">https://groups.google.com/forum/#!forum/camtrapr</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>ExifTool
+(http://www.sno.phy.queensu.ca/~phil/exiftool/)</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">camtrapR citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_camtrapR.html">camtrapR results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package camtrapR downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="camtrapR.pdf"> camtrapR.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/camtrapr1.html">1. Raw camera trap data organisation</a><br/>
+<a href="vignettes/camtrapr2.html">2. Species and Individual Identification</a><br/>
+<a href="vignettes/camtrapr3.html">3. Extracting data from camera trap images, creating occupancy &amp; secr input</a><br/>
+<a href="vignettes/camtrapr4.html">4. Data exploration and visualisation</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/camtrapR_2.0.3.tar.gz"> camtrapR_2.0.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/camtrapR_2.0.3.zip">camtrapR_2.0.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/camtrapR_2.0.3.zip">camtrapR_2.0.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/camtrapR_2.0.3.zip">camtrapR_2.0.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/camtrapR_2.0.3.tgz">camtrapR_2.0.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/camtrapR_2.0.3.tgz">camtrapR_2.0.3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/camtrapR"> camtrapR archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=camtrapR"><samp>https://CRAN.R-project.org/package=camtrapR</samp></a>
+to link to this page.</p>
+</body>
+</html>

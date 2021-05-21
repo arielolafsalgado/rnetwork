@@ -1,0 +1,42 @@
+Type: Package
+Package: MazamaSpatialUtils
+Version: 0.6.1
+Title: Spatial Data Download and Utility Functions
+Authors@R: c(
+    person("Jonathan", "Callahan", email="jonathan.s.callahan@gmail.com", role=c("aut","cre")), 
+    person("Tom", "Bergamaschi", email="tbergama@gmail.com", role=c("aut")),
+    person("Ruby", "Fore", email="ruby.a.fore@gmail.com", role=c("aut")),
+    person("Will", "Leahy", email="procterw@gmail.com", role=c("aut")),
+    person("Helen", "Miller", email="helen@ohana.org", role=c("aut")),
+    person("Henry", "Nguyen", email="oh.henry.nguyen@gmail.com", role=c("aut")),
+    person("Robin", "Winstanley", email="robin@winstan.net", role=c("aut")),
+    person("Alice", "Yang", email="wenhuy@uw.edu", role=c("aut"))
+    )
+Author: Jonathan Callahan [aut, cre],
+  Tom Bergamaschi [aut],
+  Ruby Fore [aut],
+  Will Leahy [aut],
+  Helen Miller [aut],
+  Henry Nguyen [aut],
+  Robin Winstanley [aut],
+  Alice Yang [aut]
+Maintainer: Jonathan Callahan <jonathan.s.callahan@gmail.com>
+Description: A suite of conversion scripts to create internally standardized
+    spatial polygons data frames. Utility scripts use these data sets to return
+    values such as country, state, timezone, watershed, etc. associated with a
+    set of longitude/latitude pairs. (They also make cool maps.)
+License: GPL-2
+URL: https://github.com/MazamaScience/MazamaSpatialUtils
+BugReports: https://github.com/MazamaScience/MazamaSpatialUtils/issues
+Repository: CRAN
+Depends: R (>= 3.1.0), sp
+Imports: countrycode, dplyr, geojsonio, lubridate, rgdal, rgeos, rlang,
+        rmapshaper, rvest (>= 0.3.0), shiny, stringr, utils, xml2
+Suggests: knitr, maps, markdown, readr, rmarkdown, testthat
+Encoding: UTF-8
+VignetteBuilder: knitr
+LazyData: true
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-01-30 16:29:17 UTC; jonathan
+Date/Publication: 2019-01-30 17:40:23 UTC

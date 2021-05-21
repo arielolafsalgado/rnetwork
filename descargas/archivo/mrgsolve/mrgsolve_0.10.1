@@ -1,0 +1,70 @@
+Type: Package
+Package: mrgsolve
+Title: Simulate from ODE-Based Models
+Version: 0.10.1
+Authors@R: 
+    c(person(given = "Kyle T",
+             family = "Baron",
+             role = c("aut", "cre"),
+             email = "kyleb@metrumrg.com",
+             comment = c(ORCID = "0000-0001-7252-5656")),
+      person(given = "Bill",
+             family = "Gillespie",
+             role = "ctb"),
+      person(given = "Charles",
+             family = "Margossian",
+             role = "ctb"),
+      person(given = "Devin",
+             family = "Pastoor",
+             role = "ctb"),
+      person(given = "Bill",
+             family = "Denney",
+             role = "ctb",
+             comment = c(ORCID = "0000-0002-5759-428X")),
+      person(given = "Dilawar",
+             family = "Singh",
+             role = "ctb"),
+      person(given = "Metrum Research Group",
+             role = "cph"))
+Maintainer: Kyle T Baron <kyleb@metrumrg.com>
+Description: Fast simulation from ordinary differential equation
+    (ODE) based models typically employed in quantitative pharmacology and
+    systems biology.
+License: GPL (>= 2)
+URL: https://github.com/metrumresearchgroup/mrgsolve
+BugReports: https://github.com/metrumresearchgroup/mrgsolve/issues
+Depends: R (>= 3.1.2), methods
+Imports: Rcpp (>= 0.12.12), dplyr (>= 0.8.1), magrittr (>= 1.5),
+        RcppArmadillo (>= 0.7.900.2.0), tibble (>= 2.1.1), rlang (>=
+        0.3.4), tidyselect (>= 0.2.5), lifecycle, glue
+Suggests: lattice, testthat, xml2 (>= 1.2.0), rmarkdown, yaml, knitr
+LinkingTo: Rcpp (>= 0.12.12), RcppArmadillo (>= 0.7.900.2.0), BH (>=
+        1.62.0-1)
+RdMacros: lifecycle
+Encoding: UTF-8
+Language: en-US
+LazyLoad: yes
+NeedsCompilation: yes
+RoxygenNote: 7.0.2
+SystemRequirements: C++11
+Collate: 'RcppExports.R' 'utils.R' 'package.R' 'generics.R'
+        'class_tgrid.R' 'class_numericlist.R' 'class_matlist.R'
+        'class_ev.R' 'class_derived.R' 'class_mrgmod.R'
+        'class_mrgsims.R' 'Aaaa.R' 'annot.R' 'chain.R' 'class_build.R'
+        'events.R' 'class_rx.R' 'compile.R' 'data_set.R' 'datasets.R'
+        'env.R' 'funset.R' 'handle_spec_block.R' 'idata_set.R' 'init.R'
+        'inven.R' 'knobs.R' 'matlist.R' 'matrix.R' 'mcode.R'
+        'model_include.R' 'modlib.R' 'modspec.R' 'mread.R'
+        'mrgindata.R' 'mrgsim_q.R' 'mrgsims.R' 'mrgsolve.R' 'nmxml.R'
+        'param.R' 'print.R' 'r_to_cpp.R' 'realize_addl.R' 'relabel.R'
+        'render.R' 'update.R' 'workflows.R'
+Packaged: 2020-02-17 17:48:53 UTC; kyleb
+Author: Kyle T Baron [aut, cre] (<https://orcid.org/0000-0001-7252-5656>),
+  Bill Gillespie [ctb],
+  Charles Margossian [ctb],
+  Devin Pastoor [ctb],
+  Bill Denney [ctb] (<https://orcid.org/0000-0002-5759-428X>),
+  Dilawar Singh [ctb],
+  Metrum Research Group [cph]
+Repository: CRAN
+Date/Publication: 2020-02-21 06:00:02 UTC

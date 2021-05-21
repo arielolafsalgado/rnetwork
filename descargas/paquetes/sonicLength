@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package sonicLength</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=sonicLength" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="sonicLength: Estimating Abundance of Clones from DNA Fragmentation Data" />
+<meta name="og:description" content="Estimate the abundance of cell clones from the distribution of lengths of DNA fragments (as created by sonication, whence &amp;lsquo;sonicLength&amp;rsquo;). The algorithm in &quot;Estimating abundances of retroviral insertion sites from DNA fragment length data&quot; by Berry CC, Gillet NA, Melamed A, Gormley N, Bangham CR, Bushman FD. Bioinformatics; 2012 Mar 15;28(6):755-62 is implemented. The experimental setting and estimation details are described in detail there. Briefly, integration of new DNA in a host genome (due to retroviral infection or gene therapy) can be tracked using DNA sequencing, potentially allowing characterization of the abundance of individual cell clones bearing distinct integration sites. The locations of integration sites can be determined by fragmenting the host DNA (via sonication or fragmentase), breaking the newly integrated DNA at a known sequence, amplifying the fragments containing both host and integrated DNA, sequencing those amplicons, then mapping the host sequences to positions on the reference genome. The relative number of fragments containing a given position in the host genome estimates the relative abundance of cells hosting the corresponding integration site, but that number is not available and the count of amplicons per fragment varies widely. However, the expected number of distinct fragment lengths is a function of the abundance of cells hosting an integration site at a given position and a certain nuisance parameter. The algorithm implicitly estimates that function to estimate the relative abundance." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=sonicLength" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>sonicLength: Estimating Abundance of Clones from DNA Fragmentation Data</h2>
+<p>Estimate the abundance of cell clones from the
+	     distribution of lengths of DNA fragments (as created by
+	     sonication, whence &lsquo;sonicLength&rsquo;).  The algorithm in
+	     "Estimating abundances of retroviral insertion sites from
+	     DNA fragment length data" by Berry CC, Gillet NA, Melamed
+	     A, Gormley N, Bangham CR, Bushman FD. Bioinformatics;
+	     2012 Mar 15;28(6):755-62 is implemented.  The
+	     experimental setting and estimation details are described
+	     in detail there. Briefly, integration of new DNA in a
+	     host genome (due to retroviral infection or gene therapy)
+	     can be tracked using DNA sequencing, potentially allowing
+	     characterization of the abundance of individual cell
+	     clones bearing distinct integration sites. The locations
+	     of integration sites can be determined by fragmenting the
+	     host DNA (via sonication or fragmentase), breaking the
+	     newly integrated DNA at a known sequence, amplifying the
+	     fragments containing both host and integrated DNA,
+	     sequencing those amplicons, then mapping the host
+	     sequences to positions on the reference genome. The
+	     relative number of fragments containing a given position
+	     in the host genome estimates the relative abundance of
+	     cells hosting the corresponding integration site, but
+	     that number is not available and the count of amplicons
+	     per fragment varies widely.  However, the expected number
+	     of distinct fragment lengths is a function of the
+	     abundance of cells hosting an integration site at a given
+	     position and a certain nuisance parameter. The algorithm
+	     implicitly estimates that function to estimate the
+	     relative abundance.</p>
+<table summary="Package sonicLength summary">
+<tr>
+<td>Version:</td>
+<td>1.4.6</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.14.0), splines</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-03-05</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Charles Berry</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Charles Berry  &#x3c;&#x63;&#x63;&#x62;&#x65;&#x72;&#x72;&#x79;&#x20;&#x61;&#x74;&#x20;&#x75;&#x63;&#x73;&#x64;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">sonicLength citation info</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_sonicLength.html">sonicLength results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package sonicLength downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="sonicLength.pdf"> sonicLength.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/EstAbund.pdf">Estimating Abundances with sonicLength</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/sonicLength_1.4.6.tar.gz"> sonicLength_1.4.6.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/sonicLength_1.4.6.zip">sonicLength_1.4.6.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/sonicLength_1.4.6.zip">sonicLength_1.4.6.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/sonicLength_1.4.6.zip">sonicLength_1.4.6.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/sonicLength_1.4.6.tgz">sonicLength_1.4.6.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/sonicLength_1.4.6.tgz">sonicLength_1.4.6.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/sonicLength"> sonicLength archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package sonicLength reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="http://www.bioconductor.org/packages/release/bioc/html/hiReadsProcessor.html"><span class="BioC">hiReadsProcessor</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=sonicLength"><samp>https://CRAN.R-project.org/package=sonicLength</samp></a>
+to link to this page.</p>
+</body>
+</html>

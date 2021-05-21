@@ -1,0 +1,58 @@
+Package: workflowr
+Type: Package
+Title: A Framework for Reproducible and Collaborative Data Science
+Version: 1.6.0
+Authors@R: c(
+    person("John", "Blischak", role = c("aut", "cre"),
+           email = "jdblischak@uchicago.edu",
+           comment = c(ORCID = "0000-0003-2634-9879")),
+    person("Peter", "Carbonetto", role = c("aut"),
+           comment = c(ORCID = "0000-0003-1144-6780")),
+    person("Matthew", "Stephens", role = c("aut"),
+           comment = c(ORCID = "0000-0001-5397-9257")),
+    person("Luke", "Zappia", role = c("ctb"),
+           comment = "Instructions for hosting with GitLab"),
+    person("Pierre", "Formont", role = c("ctb"),
+           comment = "Support for hosting with Shiny Server"),
+    person("Tim", "Trice", role = c("ctb"),
+           comment = "Instructions for sharing common code"),
+    person("Jiaxiang", "Li", role = c("ctb"),
+           comment = "Function wflow_toc() to create table of contents"),
+    person("Michael J.", "Kane", role = c("ctb"),
+           email = "michael.kane@yale.edu",
+           comment = c(ORCID = "http://orcid.org/0000-0003-1899-6662",
+                       "Option suppress_report")))
+Description: Provides a workflow for your analysis projects by combining
+  literate programming ('knitr' and 'rmarkdown') and version control
+  ('Git', via 'git2r') to generate a website containing time-stamped,
+  versioned, and documented results.
+URL: https://github.com/jdblischak/workflowr
+BugReports: https://github.com/jdblischak/workflowr/issues
+Depends: R (>= 3.2.5)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: callr, fs (>= 1.2.7), getPass, git2r (>= 0.26.0), glue, httpuv
+        (>= 1.2.2), httr, knitr (>= 1.18), rmarkdown (>= 1.7),
+        rprojroot, rstudioapi (>= 0.6), stringr (>= 1.3.0), tools,
+        utils, whisker (>= 0.3-2), yaml
+RoxygenNote: 7.0.2
+Suggests: clipr (>= 0.7.0), covr, devtools, miniUI (>= 0.1.1), shiny
+        (>= 0.14), spelling, testthat (>= 2.0.0), withr (>= 2.0.0)
+VignetteBuilder: knitr
+SystemRequirements: pandoc (>= 1.12.3) - http://pandoc.org
+Language: en-US
+NeedsCompilation: no
+Packaged: 2019-12-19 20:10:55 UTC; jdb-work
+Author: John Blischak [aut, cre] (<https://orcid.org/0000-0003-2634-9879>),
+  Peter Carbonetto [aut] (<https://orcid.org/0000-0003-1144-6780>),
+  Matthew Stephens [aut] (<https://orcid.org/0000-0001-5397-9257>),
+  Luke Zappia [ctb] (Instructions for hosting with GitLab),
+  Pierre Formont [ctb] (Support for hosting with Shiny Server),
+  Tim Trice [ctb] (Instructions for sharing common code),
+  Jiaxiang Li [ctb] (Function wflow_toc() to create table of contents),
+  Michael J. Kane [ctb] (<https://orcid.org/0000-0003-1899-6662>, Option
+    suppress_report)
+Maintainer: John Blischak <jdblischak@uchicago.edu>
+Repository: CRAN
+Date/Publication: 2019-12-19 20:40:02 UTC

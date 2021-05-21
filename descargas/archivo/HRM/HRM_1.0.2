@@ -1,0 +1,33 @@
+Package: HRM
+Version: 1.0.2
+Date: 2018-10-16
+Title: High-Dimensional Repeated Measures
+Authors@R: c(person("Martin Happ", role = c("aut", "cre"),
+                      email = "martin.happ@aon.at",
+                      comment = c(ORCID = "0000-0003-0009-2665")),
+	      person("Harrar W. Solomon", role = "aut"),
+	      person("Arne C. Bathke", role = "aut"))
+Maintainer: Martin Happ <martin.happ@aon.at>
+LazyData: true
+Depends: R (>= 3.4.0), MASS, matrixcalc, plyr, ggplot2
+Imports: xtable, reshape2, tcltk, data.table, doBy, mvtnorm, Rcpp (>=
+        0.12.16), pseudorank (>= 0.3.7)
+Suggests: RGtk2 (>= 2.8.0), cairoDevice, RGtk2Extras, testthat
+LinkingTo: Rcpp
+SystemRequirements: C++11
+Description: Methods for testing main and interaction effects in possibly
+    high-dimensional parametric or nonparametric repeated measures in factorial designs.
+    The observations of the subjects are assumed to be multivariate normal if using the parametric test.
+    The nonparametric version tests with regard to nonparametric relative effects (based on pseudo-ranks).
+    It is possible to use up to 2 whole- and 3 subplot factors.
+License: GPL-2 | GPL-3
+RoxygenNote: 6.1.0
+URL: http://github.com/happma/HRM
+BugReports: http://github.com/happma/HRM/issues
+NeedsCompilation: yes
+Packaged: 2018-10-17 11:14:54 UTC; b1011921
+Author: Martin Happ [aut, cre] (<https://orcid.org/0000-0003-0009-2665>),
+  Harrar W. Solomon [aut],
+  Arne C. Bathke [aut]
+Repository: CRAN
+Date/Publication: 2018-10-17 22:20:20 UTC

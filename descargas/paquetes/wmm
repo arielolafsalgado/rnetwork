@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package wmm</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="World Magnetic Model [R package wmm version 1.0.0]" />
+<meta name="citation_author" content="Will Frierson" />
+<meta name="citation_publication_date" content="2019-11-22" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=wmm" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=wmm" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="wmm: World Magnetic Model" />
+<meta name="og:description" content="Calculate magnetic field at a given location and time according to the World Magnetic Model (WMM). Both the main field and secular variation components are returned. This functionality is useful for physicists and geophysicists who need orthogonal components from WMM. Currently, this package supports annualized time inputs between 2000 and 2020. If desired, users can specify which WMM version to use, e.g., the original WMM2015 release or the recent out-of-cycle WMM2015 release. Methods used to implement WMM, including the Gauss coefficients for each release, are described in the following publications: Chulliat et al (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.25921%2Fxhr3-0t19&quot;&gt;doi:10.25921/xhr3-0t19&lt;/a&gt;&amp;gt;, Chulliat et al (2015) &amp;lt;&lt;a href=&quot;https://doi.org/10.7289%2FV5TB14V7&quot;&gt;doi:10.7289/V5TB14V7&lt;/a&gt;&amp;gt;, Maus et al (2010) &amp;lt;&lt;a href=&quot;https://www.ngdc.noaa.gov/geomag/WMM/data/WMMReports/WMM2010_Report.pdf&quot;&gt;https://www.ngdc.noaa.gov/geomag/WMM/data/WMMReports/WMM2010_Report.pdf&lt;/a&gt;&amp;gt;, McLean et al (2004) &amp;lt;&lt;a href=&quot;https://www.ngdc.noaa.gov/geomag/WMM/data/WMMReports/TRWMM_2005.pdf&quot;&gt;https://www.ngdc.noaa.gov/geomag/WMM/data/WMMReports/TRWMM_2005.pdf&lt;/a&gt;&amp;gt;, and Macmillian et al (2000) &amp;lt;&lt;a href=&quot;https://www.ngdc.noaa.gov/geomag/WMM/data/WMMReports/wmm2000.pdf&quot;&gt;https://www.ngdc.noaa.gov/geomag/WMM/data/WMMReports/wmm2000.pdf&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=wmm" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>wmm: World Magnetic Model</h2>
+<p>Calculate magnetic field at a given location and time according to 
+  the World Magnetic Model (WMM). Both the main field and secular variation 
+  components are returned. This functionality is useful for physicists and 
+  geophysicists who need orthogonal components from WMM. Currently, this package 
+  supports annualized time inputs between 2000 and 2020. If desired, users can
+  specify which WMM version to use, e.g., the original WMM2015 release or the 
+  recent out-of-cycle WMM2015 release. Methods used to implement WMM, including 
+  the Gauss coefficients for each release, are described in the following 
+  publications: Chulliat et al (2019) &lt;<a href="https://doi.org/10.25921%2Fxhr3-0t19">doi:10.25921/xhr3-0t19</a>&gt;, 
+  Chulliat et al (2015) &lt;<a href="https://doi.org/10.7289%2FV5TB14V7">doi:10.7289/V5TB14V7</a>&gt;, 
+  Maus et al (2010) &lt;<a href="https://www.ngdc.noaa.gov/geomag/WMM/data/WMMReports/WMM2010_Report.pdf">https://www.ngdc.noaa.gov/geomag/WMM/data/WMMReports/WMM2010_Report.pdf</a>&gt;, 
+  McLean et al (2004) &lt;<a href="https://www.ngdc.noaa.gov/geomag/WMM/data/WMMReports/TRWMM_2005.pdf">https://www.ngdc.noaa.gov/geomag/WMM/data/WMMReports/TRWMM_2005.pdf</a>&gt;,
+  and Macmillian et al (2000) &lt;<a href="https://www.ngdc.noaa.gov/geomag/WMM/data/WMMReports/wmm2000.pdf">https://www.ngdc.noaa.gov/geomag/WMM/data/WMMReports/wmm2000.pdf</a>&gt;.</p>
+<table summary="Package wmm summary">
+<tr>
+<td>Version:</td>
+<td>1.0.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a> (&ge; 2.0.1), <a href="../data.table/index.html">data.table</a> (&ge; 1.12.2)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-11-22</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Will Frierson [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Will Frierson  &#x3c;&#x77;&#x69;&#x6c;&#x6c;&#x2e;&#x66;&#x72;&#x69;&#x65;&#x72;&#x73;&#x6f;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/wfrierson/wmm/issues">https://github.com/wfrierson/wmm/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/wfrierson/wmm">https://github.com/wfrierson/wmm</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_wmm.html">wmm results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package wmm downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="wmm.pdf"> wmm.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/wmm_1.0.0.tar.gz"> wmm_1.0.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/wmm_1.0.0.zip">wmm_1.0.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/wmm_1.0.0.zip">wmm_1.0.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/wmm_1.0.0.zip">wmm_1.0.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/wmm_1.0.0.tgz">wmm_1.0.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/wmm_1.0.0.tgz">wmm_1.0.0.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=wmm"><samp>https://CRAN.R-project.org/package=wmm</samp></a>
+to link to this page.</p>
+</body>
+</html>

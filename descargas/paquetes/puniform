@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package puniform</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=puniform" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="puniform: Meta-Analysis Methods Correcting for Publication Bias" />
+<meta name="og:description" content="Provides meta-analysis methods that correct for publication bias and outcome reporting bias. Four methods and a visual tool are currently included in the package. The p-uniform method as described in van Assen, van Aert, and Wicherts (2015) &amp;lt;&lt;a href=&quot;https://doi.org/10.1037%2Fmet0000025&quot;&gt;doi:10.1037/met0000025&lt;/a&gt;&amp;gt; can be used for estimating the average effect size, testing the null hypothesis of no effect, and testing for publication bias using only the statistically significant effect sizes of primary studies. The second method in the package is the p-uniform* method as described in van Aert and van Assen (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.31222%2Fosf.io%2Fzqjr9&quot;&gt;doi:10.31222/osf.io/zqjr9&lt;/a&gt;&amp;gt;. This method is an extension of the p-uniform method that allows for estimation of the average effect size and the between-study variance in a meta-analysis, and uses both the statistically significant and nonsignificant effect sizes. The third method in the package is the hybrid method as described in van Aert and van Assen (2017) &amp;lt;&lt;a href=&quot;https://doi.org/10.3758%2Fs13428-017-0967-6&quot;&gt;doi:10.3758/s13428-017-0967-6&lt;/a&gt;&amp;gt;. The hybrid method is a meta-analysis method for combining an original study and replication and while taking into account statistical significance of the original study. The p-uniform and hybrid method are based on the statistical theory that the distribution of p-values is uniform conditional on the population effect size. The fourth method in the package is the Snapshot Bayesian Hybrid Meta-Analysis Method as described in van Aert and van Assen (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.1371%2Fjournal.pone.0175302&quot;&gt;doi:10.1371/journal.pone.0175302&lt;/a&gt;&amp;gt;. This method computes posterior probabilities for four true effect sizes (no, small, medium, and large) based on an original study and replication while taking into account publication bias in the original study. The method can also be used for computing the required sample size of the replication akin to power analysis in null hypothesis significance testing. The meta-plot is a visual tool for meta-analysis that provides information on the primary studies in the meta-analysis, the results of the meta-analysis, and characteristics of the research on the effect under study (van Assen and others, 2020). Helper functions to apply the Correcting for Outcome Reporting Bias (CORB) method to correct for outcome reporting bias in a meta-analysis (van Aert &amp;amp; Wicherts, 2020)." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=puniform" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>puniform: Meta-Analysis Methods Correcting for Publication Bias</h2>
+<p>Provides meta-analysis methods that correct for
+    publication bias and outcome reporting bias. Four methods and a visual tool 
+    are currently included in the package. The p-uniform method as described in 
+    van Assen, van Aert, and Wicherts (2015) &lt;<a href="https://doi.org/10.1037%2Fmet0000025">doi:10.1037/met0000025</a>&gt; can be used
+    for estimating the average effect size, testing the null hypothesis of no 
+    effect, and testing for publication bias using only the statistically 
+    significant effect sizes of primary studies. The second method in the package 
+    is the p-uniform* method as described in van Aert and van Assen (2019) 
+    &lt;<a href="https://doi.org/10.31222%2Fosf.io%2Fzqjr9">doi:10.31222/osf.io/zqjr9</a>&gt;. This method is an extension of the p-uniform 
+    method that allows for estimation of the average effect size and the 
+    between-study variance in a meta-analysis, and uses both the statistically 
+    significant and nonsignificant effect sizes. The third method in the package 
+    is the hybrid method as described in van Aert and van Assen (2017) 
+    &lt;<a href="https://doi.org/10.3758%2Fs13428-017-0967-6">doi:10.3758/s13428-017-0967-6</a>&gt;. The hybrid method is a meta-analysis method 
+    for combining an original study and replication and while taking into account 
+    statistical significance of the  original study. The p-uniform and hybrid method 
+    are based on the statistical theory that the distribution of p-values is 
+    uniform conditional on the population effect size. The fourth method in the 
+    package is the Snapshot Bayesian Hybrid Meta-Analysis Method as described in 
+    van Aert and van Assen (2018) &lt;<a href="https://doi.org/10.1371%2Fjournal.pone.0175302">doi:10.1371/journal.pone.0175302</a>&gt;. This method 
+    computes posterior probabilities for four true effect sizes (no, small, medium, 
+    and large) based on an original study and replication while taking into account 
+    publication bias in the original study. The method can also be used for computing 
+    the required sample size of the replication akin to power analysis in null 
+    hypothesis significance testing. The meta-plot is a visual tool for meta-analysis 
+    that provides information on the primary studies in the meta-analysis, the 
+    results of the meta-analysis, and characteristics of the research on the effect 
+    under study (van Assen and others, 2020). Helper functions to apply the 
+    Correcting for Outcome Reporting Bias (CORB) method to correct for outcome 
+    reporting bias in a meta-analysis (van Aert &amp; Wicherts, 2020).</p>
+<table summary="Package puniform summary">
+<tr>
+<td>Version:</td>
+<td>0.2.3</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.15), <a href="../ADGofTest/index.html">ADGofTest</a> (&ge; 0.3), stats, <a href="../metafor/index.html">metafor</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-26</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Robbie C.M. van Aert</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Robbie C.M. van Aert  &#x3c;&#x52;&#x2e;&#x43;&#x2e;&#x4d;&#x2e;&#x76;&#x61;&#x6e;&#x41;&#x65;&#x72;&#x74;&#x20;&#x61;&#x74;&#x20;&#x74;&#x69;&#x6c;&#x62;&#x75;&#x72;&#x67;&#x75;&#x6e;&#x69;&#x76;&#x65;&#x72;&#x73;&#x69;&#x74;&#x79;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/MetaAnalysis.html">MetaAnalysis</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_puniform.html">puniform results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package puniform downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="puniform.pdf"> puniform.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/puniform_0.2.3.tar.gz"> puniform_0.2.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/puniform_0.2.2.zip">puniform_0.2.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/puniform_0.2.3.zip">puniform_0.2.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/puniform_0.2.2.zip">puniform_0.2.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/puniform_0.2.2.tgz">puniform_0.2.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/puniform_0.2.3.tgz">puniform_0.2.3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/puniform"> puniform archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=puniform"><samp>https://CRAN.R-project.org/package=puniform</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,42 @@
+Package: svgPanZoom
+Title: R 'Htmlwidget' to Add Pan and Zoom to Almost any R Graphic
+Version: 0.3.0
+Authors@R: c(
+              person(
+                "Anders", "Riutta et. al.", role = c("aut", "cph"),
+                comment = "svg-pan-zoom.js BSD-licensed library in htmlwidgets/lib,
+                https://github.com/ariutta/svg-pan-zoom"
+              ),
+              person(
+                "Jorik", "Tangelder", role = c("aut", "cph"),
+                comment = "hammer.js MIT-licensed touch library in htmlwidgets/lib,
+                https://github.com/hammerjs/hammer"
+              ),
+              person(
+                "Kent", "Russell", role = c("aut", "cre"),
+                comment = "R interface to svg-pan-zoom.js",
+                email = "kent.russell@timelyportfolio.com"
+              )
+            )
+Maintainer: Kent Russell <kent.russell@timelyportfolio.com>
+Description: This 'htmlwidget' provides pan and zoom
+    interactivity to R graphics, including 'base', 'lattice', and 'ggplot2'.  The
+    interactivity is provided through the 'svg-pan-zoom.js' library.  Various
+    options to the widget can tailor the pan and zoom experience to nearly any
+    user desire.
+URL: https://github.com/timelyportfolio/svgPanZoom
+BugReports: https://github.com/timelyportfolio/svgPanZoom/issues
+License: MIT + file LICENSE
+Depends: R (>= 3.1.2)
+Imports: htmlwidgets (>= 0.3.2)
+Suggests: gridSVG, htmltools, knitr, SVGAnnotation, XML, xml2
+Additional_repositories: http://www.omegahat.org/R/
+NeedsCompilation: no
+Packaged: 2015-09-11 16:32:45 UTC; Kent
+Author: Anders Riutta et. al. [aut, cph] (svg-pan-zoom.js BSD-licensed library
+    in htmlwidgets/lib, https://github.com/ariutta/svg-pan-zoom),
+  Jorik Tangelder [aut, cph] (hammer.js MIT-licensed touch library in
+    htmlwidgets/lib, https://github.com/hammerjs/hammer),
+  Kent Russell [aut, cre] (R interface to svg-pan-zoom.js)
+Repository: CRAN
+Date/Publication: 2015-09-11 18:53:05

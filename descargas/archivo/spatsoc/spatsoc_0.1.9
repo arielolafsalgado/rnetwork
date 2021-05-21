@@ -1,0 +1,43 @@
+Package: spatsoc
+Title: Group Animal Relocation Data by Spatial and Temporal
+        Relationship
+Version: 0.1.9
+Authors@R: 
+    c(person(given = "Alec L.",
+             family = "Robitaille",
+             role = c("aut", "cre"),
+             email = "robit.alec@gmail.com",
+             comment = c(ORCID = "0000-0002-4706-1762")),
+      person(given = "Quinn",
+             family = "Webber",
+             role = "aut",
+             comment = c(ORCID = "0000-0002-0434-9360")),
+      person(given = "Eric",
+             family = "Vander Wal",
+             role = "aut",
+             comment = c(ORCID = "0000-0002-8534-4317")))
+Description: Detects spatial and temporal groups in GPS relocations. 
+    It can be used to convert GPS relocations to 
+    gambit-of-the-group format to build proximity-based social networks. 
+    In addition, the randomizations function provides data-stream 
+    randomization methods suitable for GPS data. 
+Depends: R (>= 3.4)
+License: GPL-3 | file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: data.table (>= 1.10.5), sp, rgeos, adehabitatHR, igraph,
+        methods
+Suggests: testthat, knitr, rmarkdown, asnipe
+SystemRequirements: GEOS (>= 3.2.0)
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+BugReports: https://github.com/ropensci/spatsoc/issues
+URL: http://spatsoc.robitalec.ca, https://github.com/ropensci/spatsoc
+NeedsCompilation: no
+Packaged: 2019-05-14 20:03:11 UTC; alecr
+Author: Alec L. Robitaille [aut, cre] (<https://orcid.org/0000-0002-4706-1762>),
+  Quinn Webber [aut] (<https://orcid.org/0000-0002-0434-9360>),
+  Eric Vander Wal [aut] (<https://orcid.org/0000-0002-8534-4317>)
+Maintainer: Alec L. Robitaille <robit.alec@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-05-14 20:20:03 UTC

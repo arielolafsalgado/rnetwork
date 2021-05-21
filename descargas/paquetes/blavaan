@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package blavaan</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Bayesian Latent Variable Analysis [R package blavaan version 0.3-10]" />
+<meta name="citation_author1" content="Edgar Merkle" />
+<meta name="citation_author2" content="Yves Rosseel" />
+<meta name="citation_author3" content="Ben Goodrich" />
+<meta name="citation_publication_date" content="2020-08-03" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=blavaan" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=blavaan" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="blavaan: Bayesian Latent Variable Analysis" />
+<meta name="og:description" content="Fit a variety of Bayesian latent variable models, including confirmatory factor analysis, structural equation models, and latent growth curve models." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=blavaan" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>blavaan: Bayesian Latent Variable Analysis</h2>
+<p>Fit a variety of Bayesian latent variable models, including confirmatory
+   factor analysis, structural equation models, and latent growth curve models.</p>
+<table summary="Package blavaan summary">
+<tr>
+<td>Version:</td>
+<td>0.3-10</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0), methods, <a href="../lavaan/index.html">lavaan</a> (&ge; 0.6-5), <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.15)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>stats, utils, graphics, <a href="../MCMCpack/index.html">MCMCpack</a>, <a href="../coda/index.html">coda</a>, <a href="../mnormt/index.html">mnormt</a>, <a href="../nonnest2/index.html">nonnest2</a> (&ge;
+0.5-5), <a href="../loo/index.html">loo</a> (&ge; 2.0), <a href="../rstan/index.html">rstan</a> (&ge; 2.19.2), <a href="../rstantools/index.html">rstantools</a> (&ge; 1.5.0), <a href="../bayesplot/index.html">bayesplot</a>, <a href="../future.apply/index.html">future.apply</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../StanHeaders/index.html">StanHeaders</a> (&ge; 2.18.1), <a href="../rstan/index.html">rstan</a> (&ge; 2.19.2), <a href="../BH/index.html">BH</a> (&ge; 1.69.0), <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.15), <a href="../RcppEigen/index.html">RcppEigen</a> (&ge; 0.3.3.4.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../runjags/index.html">runjags</a> (&ge; 2.0.4-2), <a href="../modeest/index.html">modeest</a> (&ge; 2.3.3), <a href="../rjags/index.html">rjags</a>, <a href="../semTools/index.html">semTools</a>, <a href="../testthat/index.html">testthat</a> (&ge; 2.0.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-08-03</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Edgar Merkle <a href="https://orcid.org/0000-0001-7158-0653"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Yves Rosseel [aut],
+  Ben Goodrich [aut],
+  Mauricio Garnier-Villarreal
+    <a href="https://orcid.org/0000-0002-2951-6647"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb]
+    (R/blav_compare.R, R/ctr_bayes_fit.R),
+  Terrence D. Jorgensen
+    <a href="https://orcid.org/0000-0001-5111-6773"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb]
+    (R/ctr_bayes_fit.R, R/ctr_ppmc.R),
+  Huub Hoofs [ctb] (R/ctr_bayes_fit.R),
+  Rens van de Schoot [ctb] (R/ctr_bayes_fit.R)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Edgar Merkle  &#x3c;&#x6d;&#x65;&#x72;&#x6b;&#x6c;&#x65;&#x65;&#x20;&#x61;&#x74;&#x20;&#x6d;&#x69;&#x73;&#x73;&#x6f;&#x75;&#x72;&#x69;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL (&ge; 3)</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>GNU make</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">blavaan citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Psychometrics.html">Psychometrics</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_blavaan.html">blavaan results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package blavaan downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="blavaan.pdf"> blavaan.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/blavaan_0.3-10.tar.gz"> blavaan_0.3-10.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/blavaan_0.3-10.zip">blavaan_0.3-10.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/blavaan_0.3-10.zip">blavaan_0.3-10.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/blavaan_0.3-10.zip">blavaan_0.3-10.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/blavaan_0.3-10.tgz">blavaan_0.3-10.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/blavaan_0.3-10.tgz">blavaan_0.3-10.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/blavaan"> blavaan archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package blavaan reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../Replication/index.html">Replication</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../DAC/index.html">DAC</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../insight/index.html">insight</a>, <a href="../semTools/index.html">semTools</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=blavaan"><samp>https://CRAN.R-project.org/package=blavaan</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,37 @@
+Package: smam
+Title: Statistical Modeling of Animal Movements
+Version: 0.4.0
+Date: 2018-10-17
+Authors@R: c(
+    person("Jun", "Yan", email = "jun.yan@uconn.edu", role = "aut"),
+    person("Vladimir", "Pozdnyakov", email = "vladimir.pozdnyakov@uconn.edu", role = "aut"),
+    person("Chaoran", "Hu", email = "chaoran.hu@uconn.edu", role = c("aut", "cre")))
+Description: Animal movement models including moving-resting process
+    with embedded Brownian motion according to
+    Yan et al. (2014) <doi:10.1007/s10144-013-0428-8>,
+    Pozdnyakov et al. (2017) <doi:10.1007/s11009-017-9547-6>,
+    Brownian motion with measurement error according to
+    Pozdnyakov et al. (2014) <doi:10.1890/13-0532.1>,
+    and moving-resting-handling process with embedded Brownian motion,
+    Pozdnyakov et al. (2018) <arXiv:1806.00849>.
+Depends: R (>= 3.3.0)
+License: GPL (>= 3.0)
+Encoding: UTF-8
+LazyData: true
+Imports: nloptr, Matrix, stats, Rcpp, RcppParallel, doParallel,
+        foreach, parallel, methods, numDeriv
+Suggests: R.rsp
+LinkingTo: Rcpp, RcppGSL, RcppParallel
+SystemRequirements: GNU GSL, GNU make, C++11
+VignetteBuilder: R.rsp
+BugReports: https://github.com/ChaoranHu/smam/issues
+URL: https://github.com/ChaoranHu/smam
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2018-10-17 21:33:23 UTC; ChaoranHu
+Author: Jun Yan [aut],
+  Vladimir Pozdnyakov [aut],
+  Chaoran Hu [aut, cre]
+Maintainer: Chaoran Hu <chaoran.hu@uconn.edu>
+Repository: CRAN
+Date/Publication: 2018-10-18 11:30:03 UTC

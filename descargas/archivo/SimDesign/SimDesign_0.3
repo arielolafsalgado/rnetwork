@@ -1,0 +1,24 @@
+Package: SimDesign
+Title: Structure for Organizing Monte Carlo Simulation Designs
+Version: 0.3
+Date: 2015-10-04
+Authors@R: person("Phil", "Chalmers", email = "rphilip.chalmers@gmail.com",
+           role = c("aut", "cre"))
+Description: Provides tools to help organize Monte Carlo simulations in R.
+             The tools provided control the structure and back-end of the Monte Carlo simulations
+             by utilizing a generate-analyse-summarise strategy. The functions
+             control common simulation issues such as re-simulating non-convergent results,
+             support parallel back-end computations, save and restore temporary files,
+             aggregate results across independent nodes, and provide native support for debugging.
+VignetteBuilder: knitr
+Depends: R (>= 3.2.1)
+Imports: foreach, methods, parallel
+Suggests: knitr
+License: GPL (>= 2)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2015-10-05 00:59:14 UTC; phil
+Author: Phil Chalmers [aut, cre]
+Maintainer: Phil Chalmers <rphilip.chalmers@gmail.com>
+Repository: CRAN
+Date/Publication: 2015-10-05 12:37:41

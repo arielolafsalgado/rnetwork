@@ -1,0 +1,33 @@
+Package: hts
+Title: Hierarchical and Grouped Time Series
+Version: 5.1.4
+Authors@R: c(
+    person("Rob", "Hyndman", role = "aut"), 
+    person("Alan", "Lee", role = "aut", comment = "Fast computation using recursive methods"),
+    person("Earo", "Wang", email = "earo.wang@gmail.com", role = c("aut", "cre")),
+    person("Shanika", "Wickramasuriya", role = c("ctb", "cph"), comment = "Forecasting via trace minimization")
+    )
+Description: Methods for analysing and forecasting hierarchical and grouped time
+    series.
+Depends: R (>= 3.0.2), forecast (>= 8.1)
+Imports: SparseM, Matrix, matrixcalc, parallel, utils, methods,
+        graphics, grDevices, stats
+Suggests: testthat, knitr, rmarkdown
+LinkingTo: Rcpp (>= 0.11.0), RcppEigen
+LazyLoad: yes
+LazyData: yes
+ByteCompile: TRUE
+URL: http://pkg.earo.me/hts, https://github.com/earowang/hts
+BugReports: https://github.com/earowang/hts/issues
+License: GPL (>= 2)
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2017-06-20 23:59:00 UTC; earo
+Author: Rob Hyndman [aut],
+  Alan Lee [aut] (Fast computation using recursive methods),
+  Earo Wang [aut, cre],
+  Shanika Wickramasuriya [ctb, cph] (Forecasting via trace minimization)
+Maintainer: Earo Wang <earo.wang@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-06-21 14:55:25 UTC

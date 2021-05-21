@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package bayestestR</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Understand and Describe Bayesian Models and Posterior Distributions [R package bayestestR version 0.7.5]" />
+<meta name="citation_author1" content="Dominique Makowski" />
+<meta name="citation_author2" content="Daniel Lüdecke" />
+<meta name="citation_author3" content="Mattan S. Ben-Shachar" />
+<meta name="citation_author4" content="Michael D. Wilson" />
+<meta name="citation_publication_date" content="2020-10-22" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=bayestestR" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=bayestestR" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="bayestestR: Understand and Describe Bayesian Models and Posterior Distributions" />
+<meta name="og:description" content="Provides utilities to describe posterior distributions and Bayesian models. It includes point-estimates such as Maximum A Posteriori (MAP), measures of dispersion (Highest Density Interval - HDI; Kruschke, 2015 &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2FC2012-0-00477-2&quot;&gt;doi:10.1016/C2012-0-00477-2&lt;/a&gt;&amp;gt;) and indices used for null-hypothesis testing (such as ROPE percentage, pd and Bayes factors)." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=bayestestR" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>bayestestR: Understand and Describe Bayesian Models and Posterior
+Distributions</h2>
+<p>Provides utilities to describe posterior distributions and Bayesian models. It includes point-estimates such as Maximum A Posteriori (MAP), measures of dispersion (Highest Density Interval - HDI; Kruschke, 2015 &lt;<a href="https://doi.org/10.1016%2FC2012-0-00477-2">doi:10.1016/C2012-0-00477-2</a>&gt;) and indices used for null-hypothesis testing (such as ROPE percentage, pd and Bayes factors).</p>
+<table summary="Package bayestestR summary">
+<tr>
+<td>Version:</td>
+<td>0.7.5</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../insight/index.html">insight</a> (&ge; 0.9.6.1), methods, stats, utils</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../BayesFactor/index.html">BayesFactor</a>, <a href="../bayesQR/index.html">bayesQR</a>, <a href="../bridgesampling/index.html">bridgesampling</a>, <a href="../brms/index.html">brms</a>, <a href="../broom/index.html">broom</a>, <a href="../covr/index.html">covr</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../effectsize/index.html">effectsize</a>, <a href="../emmeans/index.html">emmeans</a>, <a href="../GGally/index.html">GGally</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../ggridges/index.html">ggridges</a>, <a href="../httr/index.html">httr</a>, <a href="../KernSmooth/index.html">KernSmooth</a>, <a href="../knitr/index.html">knitr</a>, <a href="../MASS/index.html">MASS</a>, <a href="../mclust/index.html">mclust</a>, <a href="../modelbased/index.html">modelbased</a>, <a href="../lme4/index.html">lme4</a>, <a href="../logspline/index.html">logspline</a>, <a href="../mediation/index.html">mediation</a>, <a href="../parameters/index.html">parameters</a>, <a href="../performance/index.html">performance</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../rstan/index.html">rstan</a>, <a href="../rstanarm/index.html">rstanarm</a>, <a href="../see/index.html">see</a>, <a href="../stringr/index.html">stringr</a>, <a href="../testthat/index.html">testthat</a>, <a href="../tidyr/index.html">tidyr</a>, <a href="../tweedie/index.html">tweedie</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-22</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Dominique Makowski
+    <a href="https://orcid.org/0000-0001-5375-9967"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut, cre],
+  Daniel Lüdecke <a href="https://orcid.org/0000-0002-8895-3206"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Mattan S. Ben-Shachar
+    <a href="https://orcid.org/0000-0002-4287-4801"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Michael D. Wilson <a href="https://orcid.org/0000-0003-4143-7308"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Paul-Christian Bürkner [rev],
+  Tristan Mahr <a href="https://orcid.org/0000-0002-8890-5116"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [rev],
+  Henrik Singmann <a href="https://orcid.org/0000-0002-4842-3657"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Quentin F. Gronau <a href="https://orcid.org/0000-0001-5510-6943"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Sam Crawley <a href="https://orcid.org/0000-0002-7847-0411"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Dominique Makowski  &#x3c;&#x64;&#x6f;&#x6d;&#x2e;&#x6d;&#x61;&#x6b;&#x6f;&#x77;&#x73;&#x6b;&#x69;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/easystats/bayestestR/issues">https://github.com/easystats/bayestestR/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://easystats.github.io/bayestestR/">https://easystats.github.io/bayestestR/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-GB</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">bayestestR citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_bayestestR.html">bayestestR results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package bayestestR downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="bayestestR.pdf"> bayestestR.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/bayes_factors.html">Bayes Factors</a><br/>
+<a href="vignettes/bayestestR.html">Get Started with Bayesian Analysis</a><br/>
+<a href="vignettes/credible_interval.html">Credible Intervals (CI)</a><br/>
+<a href="vignettes/example1.html">Example 1: Initiation to Bayesian models</a><br/>
+<a href="vignettes/example2.html">Example 2: Confirmation of Bayesian skills</a><br/>
+<a href="vignettes/example3.html">Example 3: Become a Bayesian master</a><br/>
+<a href="vignettes/guidelines.html">Reporting Guidelines</a><br/>
+<a href="vignettes/indicesEstimationComparison.html">In-Depth 1: Comparison of Point-Estimates</a><br/>
+<a href="vignettes/indicesExistenceComparison.html">In-Depth 2: Comparison of Indices of Effect Existence</a><br/>
+<a href="vignettes/mediation.html">Mediation Analysis using Bayesian Regression Models</a><br/>
+<a href="vignettes/probability_of_direction.html">Probability of Direction (pd)</a><br/>
+<a href="vignettes/region_of_practical_equivalence.html">Region of Practical Equivalence (ROPE)</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/bayestestR_0.7.5.tar.gz"> bayestestR_0.7.5.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/bayestestR_0.7.5.zip">bayestestR_0.7.5.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/bayestestR_0.7.5.zip">bayestestR_0.7.5.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/bayestestR_0.7.5.zip">bayestestR_0.7.5.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/bayestestR_0.7.5.tgz">bayestestR_0.7.5.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/bayestestR_0.7.5.tgz">bayestestR_0.7.5.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/bayestestR"> bayestestR archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package bayestestR reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../correlation/index.html">correlation</a>, <a href="../effectsize/index.html">effectsize</a>, <a href="../eiCompare/index.html">eiCompare</a>, <a href="../fbst/index.html">fbst</a>, <a href="../modelbased/index.html">modelbased</a>, <a href="../neatStats/index.html">neatStats</a>, <a href="../parameters/index.html">parameters</a>, <a href="../performance/index.html">performance</a>, <a href="../psycho/index.html">psycho</a>, <a href="../see/index.html">see</a>, <a href="../sjPlot/index.html">sjPlot</a>, <a href="../sjstats/index.html">sjstats</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../coveffectsplot/index.html">coveffectsplot</a>, <a href="../insight/index.html">insight</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=bayestestR"><samp>https://CRAN.R-project.org/package=bayestestR</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,50 @@
+Package: tensorflow
+Type: Package
+Title: R Interface to TensorFlow
+Version: 0.8.1
+Authors@R: c(
+  person("JJ", "Allaire", role = c("aut", "cre"),
+     comment = "R interface", email = "jj@rstudio.com"),
+  person(family = "RStudio", role = "cph"),
+  person("Dirk", "Eddelbuettel", role = c("ctb", "cph"),
+         email = "edd@debian.org"),
+  person("Nick", "Golding", role = c("ctb", "cph"),
+         email = "nick.golding.research@gmail.com"),
+  person("Yuan", "Tang", role = c("ctb", "cph"),
+         email = "terrytangyuan@gmail.com"),
+  person(family = "Google Inc.", role = c("ctb", "cph"),
+         comment = "Examples and Tutorials")
+  )
+Description: Interface to 'TensorFlow' <https://www.tensorflow.org/>, 
+  an open source software library for numerical computation using data
+  flow graphs. Nodes in the graph represent mathematical operations, 
+  while the graph edges represent the multidimensional data arrays 
+  (tensors) communicated between them. The flexible architecture allows
+  you to deploy computation to one or more 'CPUs' or 'GPUs' in a desktop, 
+  server, or mobile device with a single 'API'. 'TensorFlow' was originally
+  developed by researchers and engineers working on the Google Brain Team 
+  within Google's Machine Intelligence research organization for the 
+  purposes of conducting machine learning and deep neural networks research,
+  but the system is general enough to be applicable in a wide variety
+  of other domains as well.
+License: Apache License 2.0
+URL: https://github.com/rstudio/tensorflow
+BugReports: https://github.com/rstudio/tensorflow/issues
+SystemRequirements: TensorFlow (https://www.tensorflow.org/)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.0)
+Imports: utils, reticulate (>= 0.8), yaml, jsonlite
+RoxygenNote: 6.0.1
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2017-05-26 00:29:27 UTC; jjallaire
+Author: JJ Allaire [aut, cre] (R interface),
+  RStudio [cph],
+  Dirk Eddelbuettel [ctb, cph],
+  Nick Golding [ctb, cph],
+  Yuan Tang [ctb, cph],
+  Google Inc. [ctb, cph] (Examples and Tutorials)
+Maintainer: JJ Allaire <jj@rstudio.com>
+Repository: CRAN
+Date/Publication: 2017-05-26 00:35:04 UTC

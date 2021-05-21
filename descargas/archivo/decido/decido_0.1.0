@@ -1,0 +1,31 @@
+Package: decido
+Version: 0.1.0
+Title: Bindings for 'Mapbox' Ear Cutting Triangulation Library
+Description: Provides constrained triangulation of polygons. Ear cutting (or 
+ ear clipping) applies constrained triangulation by successively 'cutting'
+ triangles from a polygon defined by path/s. Holes are supported by introducing
+ a bridge segment between polygon paths. This package wraps the 'header-only' 
+ library 'earcut.hpp' <https://github.com/mapbox/earcut.hpp.git> which includes
+ a reference to the method used by Held, M. (2001) <doi:10.1007/s00453-001-0028-4>. 
+Authors@R: c(
+        person("Michael", "Sumner", email = "mdsumner@gmail.com", role = c("aut", "cre")), 
+        person("Andrew", "Smith", role = "ctb", comment = "provided C++ guidance"), 
+        person("Mapbox", role = "cph", comment = "author of header library earcut.hpp"))
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+LinkingTo: Rcpp
+Imports: Rcpp, oz
+RoxygenNote: 6.0.1
+Suggests: covr, testthat, knitr, rmarkdown
+SystemRequirements: C++11
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2018-03-12 07:00:10 UTC; mdsumner
+Author: Michael Sumner [aut, cre],
+  Andrew Smith [ctb] (provided C++ guidance),
+  Mapbox [cph] (author of header library earcut.hpp)
+Maintainer: Michael Sumner <mdsumner@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-03-13 16:22:49 UTC

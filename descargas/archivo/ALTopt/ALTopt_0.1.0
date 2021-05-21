@@ -1,0 +1,29 @@
+Package: ALTopt
+Title: Optimal Experimental Designs for Accelerated Life Testing
+Version: 0.1.0
+Authors@R: c(person("Kangwon", "Seo", role = c("aut", "cre"),
+    email = "kseo7@asu.edu"),
+    person("Rong", "Pan", role =  "aut",
+    email = "rong.pan@asu.edu"))
+Description: This package creates the optimal (D, U and I) designs for
+    the accelerated life testing with right censoring or interval censoring.
+    It uses generalized linear model (GLM) approach to derive the asymptotic
+    variance-covariance matrix of regression coefficients. The failure time
+    distribution is assumed to follow Weibull distribution with a known shape
+    parameter and log-linear link functions are used to model the relationship
+    between failure time parameters and stress variables. Any number of stress
+    factors can be used but no more than 3 are recommended due to the
+    computational time. ALTopt package also provides several plotting functions
+    including contour plot, Fraction of Use Space (FUS) plot and Variance
+    Dispersion graphs of Use Space (VDUS) plot.
+Depends: R (>= 3.0.0)
+License: GPL-3
+LazyData: true
+Imports: cubature (>= 1.0), lattice (>= 0.20)
+Packaged: 2015-01-17 00:15:29 UTC; kseo7
+Author: Kangwon Seo [aut, cre],
+  Rong Pan [aut]
+Maintainer: Kangwon Seo <kseo7@asu.edu>
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2015-01-17 07:22:11

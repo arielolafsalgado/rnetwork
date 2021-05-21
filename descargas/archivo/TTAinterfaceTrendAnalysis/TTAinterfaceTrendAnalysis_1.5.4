@@ -1,0 +1,27 @@
+Package: TTAinterfaceTrendAnalysis
+Type: Package
+Title: Temporal Trend Analysis Graphical Interface
+Version: 1.5.4
+Date: 2018-02-28
+Authors@R: c(person(given="David", family="DEVREKER", role = c("aut", "cre"), email =
+        "David.Devreker@ifremer.fr" ), person(given="Alain", family="LEFEBVRE",
+        role = c("aut"), email = "Alain.Lefebvre@ifremer.fr" ) )
+Description: This interface was created to develop a standard procedure 
+ to analyse temporal trend in the framework of the OSPAR convention.
+ The analysis process run through 4 successive steps : 1) manipulate your data, 2)
+ select the parameters you want to analyse, 3) build your regulated 
+ time series, 4) perform diagnosis and analysis and 5) read the results. 
+ Statistical analysis call other package function such as Kendall tests
+ or cusum() function.
+License: GPL (>= 2)
+Depends: R (>= 3.3.0), base, stats, grDevices
+Imports: pastecs, reshape, e1071, relimp, multcomp, rkt , nlme,
+        lubridate, tcltk, tcltk2, mvtnorm, zoo, methods
+URL: http://cran.at.r-project.org/package=TTAinterfaceTrendAnalysis
+NeedsCompilation: no
+Packaged: 2018-03-01 13:35:24 UTC; ddevreke
+Author: David DEVREKER [aut, cre],
+  Alain LEFEBVRE [aut]
+Maintainer: David DEVREKER <David.Devreker@ifremer.fr>
+Repository: CRAN
+Date/Publication: 2018-03-01 14:40:34 UTC

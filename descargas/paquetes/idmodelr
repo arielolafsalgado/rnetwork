@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package idmodelr</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Infectious Disease Model Library and Utilities [R package idmodelr version 0.3.2]" />
+<meta name="citation_author1" content="Sam Abbott" />
+<meta name="citation_author2" content="Akira Endo" />
+<meta name="citation_publication_date" content="2020-06-11" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=idmodelr" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=idmodelr" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="idmodelr: Infectious Disease Model Library and Utilities" />
+<meta name="og:description" content="Explore a range of infectious disease models in a consistent framework. The primary aim of 'idmodelr' is to provide a library of infectious disease models for researchers, students, and other interested individuals. These models can be used to understand the underlying dynamics and as a reference point when developing models for research. 'idmodelr' also provides a range of utilities. These include: plotting functionality; a simulation wrapper; scenario analysis tooling; an interactive dashboard; tools for handling mult-dimensional models; and both model and parameter look up tables. Unlike other modelling packages such as 'pomp' (&amp;lt;&lt;a href=&quot;https://kingaa.github.io/pomp/&quot;&gt;https://kingaa.github.io/pomp/&lt;/a&gt;&amp;gt;), 'libbi' (&amp;lt;&lt;a href=&quot;http://libbi.org&quot;&gt;http://libbi.org&lt;/a&gt;&amp;gt;) and 'EpiModel' (&amp;lt;&lt;a href=&quot;http://www.epimodel.org&quot;&gt;http://www.epimodel.org&lt;/a&gt;&amp;gt;), 'idmodelr' serves primarily as an educational resource. It is most comparable to epirecipes (&amp;lt;&lt;a href=&quot;http://epirecip.es/epicookbook/chapters/simple&quot;&gt;http://epirecip.es/epicookbook/chapters/simple&lt;/a&gt;&amp;gt;) but provides a more consistent framework, an R based workflow, and additional utility tooling. After users have explored model dynamics with 'idmodelr' they may then implement their model using one of these packages in order to utilise the model fitting tools they provide. For newer modellers, this package reduces the barrier to entry by containing multiple infectious disease models, providing a consistent framework for simulation and visualisation, and signposting towards other, more research focussed, resources. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=idmodelr" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>idmodelr: Infectious Disease Model Library and Utilities</h2>
+<p>Explore a range of infectious disease models in a consistent framework. 
+    The primary aim of 'idmodelr' is to provide a library of infectious disease models
+    for researchers, students, and other interested individuals. These models can be 
+    used to understand the underlying dynamics and as a reference point when developing
+    models for research. 'idmodelr' also provides a range of utilities. These include: plotting 
+    functionality; a simulation wrapper; scenario analysis tooling; an interactive 
+    dashboard; tools for handling mult-dimensional models; and both model and parameter
+    look up tables. Unlike other modelling packages such as 'pomp' (&lt;<a href="https://kingaa.github.io/pomp/">https://kingaa.github.io/pomp/</a>&gt;), 'libbi' (&lt;<a href="http://libbi.org">http://libbi.org</a>&gt;)
+    and 'EpiModel' (&lt;<a href="http://www.epimodel.org">http://www.epimodel.org</a>&gt;), 'idmodelr' serves primarily as an educational 
+    resource. It is most comparable to epirecipes (&lt;<a href="http://epirecip.es/epicookbook/chapters/simple">http://epirecip.es/epicookbook/chapters/simple</a>&gt;)
+    but provides a more consistent framework, an R based workflow, and additional utility tooling. 
+    After users have explored model dynamics with 'idmodelr' they may then 
+    implement their model using one of these packages in order to utilise the model
+    fitting tools they provide.  For newer modellers, this package reduces the barrier
+    to entry by containing multiple infectious disease models, providing a consistent
+    framework for simulation and visualisation, and signposting towards other, more 
+    research focussed, resources. </p>
+<table summary="Package idmodelr summary">
+<tr>
+<td>Version:</td>
+<td>0.3.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../dplyr/index.html">dplyr</a> (&ge; 0.8.3), <a href="../rlang/index.html">rlang</a> (&ge; 0.4.0), <a href="../ggplot2/index.html">ggplot2</a> (&ge; 3.2.0), <a href="../viridis/index.html">viridis</a> (&ge; 0.5.1), <a href="../magrittr/index.html">magrittr</a> (&ge; 1.5), <a href="../purrr/index.html">purrr</a> (&ge; 0.3.2), <a href="../future/index.html">future</a> (&ge; 1.14.0), <a href="../furrr/index.html">furrr</a> (&ge; 0.1.0), <a href="../stringr/index.html">stringr</a> (&ge; 1.4.0), <a href="../tibble/index.html">tibble</a> (&ge;
+2.1.3), <a href="../tidyr/index.html">tidyr</a> (&ge; 0.8.3), <a href="../deSolve/index.html">deSolve</a> (&ge; 1.23)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a> (&ge; 2.1.1), <a href="../rmarkdown/index.html">rmarkdown</a> (&ge; 1.13), <a href="../knitr/index.html">knitr</a> (&ge; 1.23), <a href="../pkgnet/index.html">pkgnet</a> (&ge; 0.4.0), <a href="../DT/index.html">DT</a> (&ge; 0.7), <a href="../vdiffr/index.html">vdiffr</a> (&ge; 0.3.1), <a href="../spelling/index.html">spelling</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-11</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Sam Abbott <a href="https://orcid.org/0000-0001-8057-8037"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    cre],
+  Akira Endo <a href="https://orcid.org/0000-0001-6377-7296"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Sam Abbott  &#x3c;&#x63;&#x6f;&#x6e;&#x74;&#x61;&#x63;&#x74;&#x20;&#x61;&#x74;&#x20;&#x73;&#x61;&#x6d;&#x61;&#x62;&#x62;&#x6f;&#x74;&#x74;&#x2e;&#x63;&#x6f;&#x2e;&#x75;&#x6b;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/seabbs/idmodelr/issues">https://github.com/seabbs/idmodelr/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://www.samabbott.co.uk/idmodelr">http://www.samabbott.co.uk/idmodelr</a>,
+<a href="https://github.com/seabbs/idmodelr">https://github.com/seabbs/idmodelr</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-GB</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">idmodelr citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_idmodelr.html">idmodelr results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package idmodelr downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="idmodelr.pdf"> idmodelr.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/model_details.html">Model details</a><br/>
+<a href="vignettes/parameter_details.html">Parameter details</a><br/>
+<a href="vignettes/resources.html">Other resources</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/idmodelr_0.3.2.tar.gz"> idmodelr_0.3.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/idmodelr_0.3.2.zip">idmodelr_0.3.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/idmodelr_0.3.2.zip">idmodelr_0.3.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/idmodelr_0.3.2.zip">idmodelr_0.3.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/idmodelr_0.3.2.tgz">idmodelr_0.3.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/idmodelr_0.3.2.tgz">idmodelr_0.3.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/idmodelr"> idmodelr archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=idmodelr"><samp>https://CRAN.R-project.org/package=idmodelr</samp></a>
+to link to this page.</p>
+</body>
+</html>

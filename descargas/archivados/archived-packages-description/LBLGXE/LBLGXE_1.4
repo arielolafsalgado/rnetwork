@@ -1,0 +1,17 @@
+Package: LBLGXE
+Type: Package
+Title: Logistic Bayesian Lasso for Rare (or Common) Haplotype
+        Association
+Version: 1.4
+Author: Xiaochen Yuan, Yuan Zhang, Shuang Xia, Swati Biswas, and Shili Lin
+Maintainer: Xiaochen Yuan <xxy142030@utdallas.edu>
+Description: This function takes a dataset of haplotypes and environmental covariates with one binary phenotype in which rows for individuals of uncertain phase have been augmented by "pseudo-individuals" who carry the possible multilocus genotypes consistent with the single-locus phenotypes. Bayesian lasso is used to find the posterior distributions of logistic regression coefficients, which are then used to calculate Bayes Factor and credible set to test for association with haplotypes, environmental covariates and interactions. The model can handle complex sampling data, in particular, frequency matched cases and controls with controls obtained using stratified sampling. This version can also be applied to a dataset with no environmental covariate and two correlated binary phenotypes.
+Depends: R (>= 2.10), hapassoc, dummies
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+NeedsCompilation: yes
+Packaged: 2019-08-25 16:39:18 UTC; xcass
+Repository: CRAN
+Date/Publication: 2019-08-29 07:00:03 UTC

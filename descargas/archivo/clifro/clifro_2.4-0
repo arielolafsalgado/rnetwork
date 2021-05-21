@@ -1,0 +1,31 @@
+Package: clifro
+Type: Package
+Title: Easily Download and Visualise Climate Data from CliFlo
+Version: 2.4-0
+Date: 2015-03-05
+Authors@R: person("Blake", "Seers", role = c("aut", "cre"),
+    email = "blake.seers@gmail.com")
+VignetteBuilder: knitr
+Imports: methods, lubridate, XML, selectr, RCurl, utils, ggplot2,
+        scales, RColorBrewer, reshape2
+Suggests: knitr, ggmap
+Description: CliFlo is a web portal to the New Zealand National Climate
+    Database and provides public access (via subscription) to around 6,500
+    various climate stations. Collating and manipulating data from CliFlo
+    (hence clifro) and importing into R for further analysis, exploration and
+    visualisation is now straightforward and coherent. The user is required to
+    have an internet connection, and a current CliFlo subscription (free) if
+    data from stations, other than the public Reefton electronic weather
+    station, is sought.
+URL: http://cliflo.niwa.co.nz/ https://github.com/ropensci/clifro
+BugReports: https://github.com/ropensci/clifro/issues
+License: GPL-2
+Collate: 'dataFrame.R' 'cfStation.R' 'cfData.R' 'cfDataList.R'
+        'cfData-plotMethods.R' 'cfDatatype.R' 'cfQuery.R' 'cfUser.R'
+        'findStations.R'
+Packaged: 2015-03-04 21:31:08 UTC; bsee002
+Author: Blake Seers [aut, cre]
+Maintainer: Blake Seers <blake.seers@gmail.com>
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2015-03-04 23:47:33

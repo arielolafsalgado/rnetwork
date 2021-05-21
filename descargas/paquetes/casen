@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package casen</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Metodos De Estimacion Con Disenio Probabilistico y Estratificado en Encuesta CASEN (Estimation Methods with Probabilistic Stratified Sampling in CASEN Survey) [R package casen version 0.1.4]" />
+<meta name="citation_author" content="Mauricio Vargas" />
+<meta name="citation_publication_date" content="2020-04-08" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=casen" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=casen" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="casen: Metodos De Estimacion Con Disenio Probabilistico y Estratificado en Encuesta CASEN (Estimation Methods with Probabilistic Stratified Sampling in CASEN Survey)" />
+<meta name="og:description" content="Funciones para realizar estadistica descriptiva e inferencia con el disenio complejo de la Encuesta CASEN (Encuesta de Caracterizacion Socio-Economica). Incluye datasets que permiten armonizar los codigos de comunas que cambian entre anios y permite convertir a los codigos oficiales de SUBDERE. (Functions to compute descriptive and inferential statistics with CASEN Survey [Socio-Economic Characterization Survey] complex design. Includes datasets to harmonize commune codes that change across years and allows to convert to official SUBDERE codes.)" />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=casen" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>casen: Metodos De Estimacion Con Disenio Probabilistico y Estratificado
+en Encuesta CASEN (Estimation Methods with Probabilistic
+Stratified Sampling in CASEN Survey)</h2>
+<p>Funciones para realizar estadistica descriptiva e inferencia con el
+ disenio complejo de la Encuesta CASEN (Encuesta de Caracterizacion 
+ Socio-Economica). Incluye datasets que permiten armonizar los codigos de 
+ comunas que cambian entre anios y permite convertir a los codigos oficiales de 
+ SUBDERE.
+ (Functions to compute descriptive and inferential statistics with CASEN
+ Survey [Socio-Economic Characterization Survey] complex design. Includes 
+ datasets to harmonize commune codes that change across years and allows to 
+ convert to official SUBDERE codes.)</p>
+<table summary="Package casen summary">
+<tr>
+<td>Version:</td>
+<td>0.1.4</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../rlang/index.html">rlang</a>, stats, utils, <a href="../dplyr/index.html">dplyr</a>, <a href="../haven/index.html">haven</a>, <a href="../labelled/index.html">labelled</a>, <a href="../glue/index.html">glue</a>, <a href="../magrittr/index.html">magrittr</a>, <a href="../tidyr/index.html">tidyr</a>, <a href="../tibble/index.html">tibble</a>, <a href="../janitor/index.html">janitor</a>, <a href="../survey/index.html">survey</a>, <a href="../srvyr/index.html">srvyr</a>, <a href="../purrr/index.html">purrr</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../covr/index.html">covr</a>, <a href="../testthat/index.html">testthat</a>, <a href="../broom/index.html">broom</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-04-08</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Mauricio Vargas <a href="https://orcid.org/0000-0003-1017-7574"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Ricardo Aravena [ths],
+  Klaus Lehmann [ctb] (Revision de las primeras versiones del software),
+  Kirill Muller [ctb] (Actualizacion para la compatibilidad con tibble
+    v3.0),
+  Pontificia Universidad Catolica de Chile [cph],
+  Ministerio de Desarrollo Social (MDS) [dtc],
+  Subsecretaria de Desarrollo Regional (SUBDERE) [dtc]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Mauricio Vargas  &#x3c;&#x6d;&#x76;&#x61;&#x72;&#x67;&#x61;&#x73;&#x20;&#x61;&#x74;&#x20;&#x64;&#x63;&#x63;&#x2e;&#x75;&#x63;&#x68;&#x69;&#x6c;&#x65;&#x2e;&#x63;&#x6c;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/pachamaltese/casen/issues">https://github.com/pachamaltese/casen/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://pachamaltese.github.io/casen/">https://pachamaltese.github.io/casen/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_casen.html">casen results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package casen downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="casen.pdf"> casen.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/basic-usage.html">Uso basico del paquete casen</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/casen_0.1.4.tar.gz"> casen_0.1.4.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/casen_0.1.4.zip">casen_0.1.4.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/casen_0.1.4.zip">casen_0.1.4.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/casen_0.1.4.zip">casen_0.1.4.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/casen_0.1.4.tgz">casen_0.1.4.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/casen_0.1.4.tgz">casen_0.1.4.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/casen"> casen archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=casen"><samp>https://CRAN.R-project.org/package=casen</samp></a>
+to link to this page.</p>
+</body>
+</html>

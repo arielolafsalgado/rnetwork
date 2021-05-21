@@ -1,0 +1,40 @@
+Package: vdiffr
+Title: Visual Regression Testing and Graphical Diffing
+Version: 0.2.0
+Authors@R: c(
+    person("Lionel", "Henry", , "lionel@rstudio.com", c("cre", "aut")),
+    person("RStudio", role = "cph"),
+    person("Carl", "Sutherland", role = "aut", comment = "jg-imagediff library"),
+    person("Humble Software", role = "cph", comment = "jg-imagediff library"),
+    person("David", "Hong", role = "aut", comment = "TwoFace library"),
+    person(family = "jQuery Foundation", role = "cph", comment = "jQuery library"),
+    person(family = "jQuery contributors", role = c("ctb", "cph"),
+           comment = "jQuery library; authors listed in inst/htmlwidgets/lib/jquery-authors.txt")
+    )
+Description: An extension to the 'testthat' package that makes it easy
+    to add graphical unit tests. It provides a Shiny application to
+    manage the test cases.
+License: GPL-3 | file LICENSE
+LazyData: true
+ByteCompile: true
+SystemRequirements: FreeType >= 2.6.0
+Depends: R (>= 3.1.0)
+Imports: devtools, fontquiver (>= 0.2.0), gdtools (>= 0.1.2), glue,
+        grDevices, htmlwidgets (>= 0.6), purrr (>= 0.2.0), rlang, R6,
+        Rcpp, shiny, svglite (>= 1.2.0), testthat (>= 1.0.0), xml2
+Suggests: ggplot2, roxygen2, rstudioapi, yaml
+LinkingTo: Rcpp
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2017-08-03 13:10:35 UTC; lionel
+Author: Lionel Henry [cre, aut],
+  RStudio [cph],
+  Carl Sutherland [aut] (jg-imagediff library),
+  Humble Software [cph] (jg-imagediff library),
+  David Hong [aut] (TwoFace library),
+  jQuery Foundation [cph] (jQuery library),
+  jQuery contributors [ctb, cph] (jQuery library; authors listed in
+    inst/htmlwidgets/lib/jquery-authors.txt)
+Maintainer: Lionel Henry <lionel@rstudio.com>
+Repository: CRAN
+Date/Publication: 2017-08-03 13:15:34 UTC

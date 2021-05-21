@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package clustrd</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=clustrd" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="clustrd: Methods for Joint Dimension Reduction and Clustering" />
+<meta name="og:description" content="A class of methods that combine dimension reduction and clustering of continuous, categorical or mixed-type data (Markos, Iodice D'Enza and van de Velden 2019; &amp;lt;&lt;a href=&quot;https://doi.org/10.18637%2Fjss.v091.i10&quot;&gt;doi:10.18637/jss.v091.i10&lt;/a&gt;&amp;gt;). For continuous data, the package contains implementations of factorial K-means (Vichi and Kiers 2001; &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2FS0167-9473%2800%2900064-5&quot;&gt;doi:10.1016/S0167-9473(00)00064-5&lt;/a&gt;&amp;gt;) and reduced K-means (De Soete and Carroll 1994; &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2F978-3-642-51175-2_24&quot;&gt;doi:10.1007/978-3-642-51175-2_24&lt;/a&gt;&amp;gt;); both methods that combine principal component analysis with K-means clustering. For categorical data, the package provides MCA K-means (Hwang, Dillon and Takane 2006; &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs11336-004-1173-x&quot;&gt;doi:10.1007/s11336-004-1173-x&lt;/a&gt;&amp;gt;), i-FCB (Iodice D'Enza and Palumbo 2013, &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs00180-012-0329-x&quot;&gt;doi:10.1007/s00180-012-0329-x&lt;/a&gt;&amp;gt;) and Cluster Correspondence Analysis (van de Velden, Iodice D'Enza and Palumbo 2017; &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs11336-016-9514-0&quot;&gt;doi:10.1007/s11336-016-9514-0&lt;/a&gt;&amp;gt;), which combine multiple correspondence analysis with K-means. For mixed-type data, it provides mixed Reduced K-means and mixed Factorial K-means (van de Velden, Iodice D'Enza and Markos 2019; &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fwics.1456&quot;&gt;doi:10.1002/wics.1456&lt;/a&gt;&amp;gt;), which combine PCA for mixed-type data with K-means." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=clustrd" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>clustrd: Methods for Joint Dimension Reduction and Clustering</h2>
+<p>A class of methods that combine dimension reduction and clustering of continuous, categorical or mixed-type data (Markos, Iodice D'Enza and van de Velden 2019; &lt;<a href="https://doi.org/10.18637%2Fjss.v091.i10">doi:10.18637/jss.v091.i10</a>&gt;). For continuous data, the package contains implementations of factorial K-means (Vichi and Kiers 2001; &lt;<a href="https://doi.org/10.1016%2FS0167-9473%2800%2900064-5">doi:10.1016/S0167-9473(00)00064-5</a>&gt;) and reduced K-means (De Soete and Carroll 1994; &lt;<a href="https://doi.org/10.1007%2F978-3-642-51175-2_24">doi:10.1007/978-3-642-51175-2_24</a>&gt;); both methods that combine principal component analysis with K-means clustering. For categorical data, the package provides MCA K-means (Hwang, Dillon and Takane 2006; &lt;<a href="https://doi.org/10.1007%2Fs11336-004-1173-x">doi:10.1007/s11336-004-1173-x</a>&gt;), i-FCB (Iodice D'Enza and Palumbo 2013, &lt;<a href="https://doi.org/10.1007%2Fs00180-012-0329-x">doi:10.1007/s00180-012-0329-x</a>&gt;) and Cluster Correspondence Analysis (van de Velden, Iodice D'Enza and Palumbo 2017; &lt;<a href="https://doi.org/10.1007%2Fs11336-016-9514-0">doi:10.1007/s11336-016-9514-0</a>&gt;), which combine multiple correspondence analysis with K-means. For mixed-type data, it provides mixed Reduced K-means and mixed Factorial K-means (van de Velden, Iodice D'Enza and Markos 2019; &lt;<a href="https://doi.org/10.1002%2Fwics.1456">doi:10.1002/wics.1456</a>&gt;), which combine PCA for mixed-type data with K-means.</p>
+<table summary="Package clustrd summary">
+<tr>
+<td>Version:</td>
+<td>1.3.7-2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td><a href="../ggplot2/index.html">ggplot2</a>, grid</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../rARPACK/index.html">rARPACK</a>, <a href="../tibble/index.html">tibble</a>, <a href="../corpcor/index.html">corpcor</a>, <a href="../GGally/index.html">GGally</a>, <a href="../fpc/index.html">fpc</a>, <a href="../cluster/index.html">cluster</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../plyr/index.html">plyr</a>, <a href="../ggrepel/index.html">ggrepel</a>, <a href="../ca/index.html">ca</a>, stats</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-02-29</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Angelos Markos [aut, cre], Alfonso Iodice D'Enza [aut], Michel van de Velden [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Angelos Markos  &#x3c;&#x61;&#x6d;&#x61;&#x72;&#x6b;&#x6f;&#x73;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">clustrd citation info</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_clustrd.html">clustrd results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package clustrd downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="clustrd.pdf"> clustrd.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/clustrd_1.3.7-2.tar.gz"> clustrd_1.3.7-2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/clustrd_1.3.7-2.zip">clustrd_1.3.7-2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/clustrd_1.3.7-2.zip">clustrd_1.3.7-2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/clustrd_1.3.7-2.zip">clustrd_1.3.7-2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/clustrd_1.3.7-2.tgz">clustrd_1.3.7-2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/clustrd_1.3.7-2.tgz">clustrd_1.3.7-2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/clustrd"> clustrd archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package clustrd reverse dependencies">
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../FCPS/index.html">FCPS</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=clustrd"><samp>https://CRAN.R-project.org/package=clustrd</samp></a>
+to link to this page.</p>
+</body>
+</html>

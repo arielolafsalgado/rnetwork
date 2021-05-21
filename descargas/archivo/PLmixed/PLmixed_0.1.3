@@ -1,0 +1,28 @@
+Package: PLmixed
+Title: Estimate (Generalized) Linear Mixed Models with Factor
+        Structures
+Version: 0.1.3
+Authors@R: c(person("Minjeong", "Jeon", role = "aut"),
+    person("Nicholas", "Rockwood", email = "rockwood.19@osu.edu", role = c("aut", "cre")))
+Description: Utilizes the 'lme4' package and the optim() function from 'stats'
+    to estimate (generalized) linear mixed models (GLMM) with factor
+    structures using a profile likelihood approach, as outlined in
+    Jeon and Rabe-Hesketh (2012) <doi:10.3102/1076998611417628>.
+    Factor analysis and item response models can be extended to allow
+    for an arbitrary number of nested and crossed random effects,
+    making it useful for multilevel and cross-classified models.
+Depends: R (>= 3.2.2)
+Imports: lme4, Matrix (>= 1.1.1), numDeriv, stats
+Suggests: knitr, rmarkdown, irtoys
+VignetteBuilder: knitr
+Encoding: UTF-8
+License: GPL (>= 2)
+LazyData: true
+RoxygenNote: 6.0.1.9000
+NeedsCompilation: no
+Packaged: 2018-05-02 19:51:14 UTC; nickrockwood
+Author: Minjeong Jeon [aut],
+  Nicholas Rockwood [aut, cre]
+Maintainer: Nicholas Rockwood <rockwood.19@osu.edu>
+Repository: CRAN
+Date/Publication: 2018-05-02 20:55:21 UTC

@@ -1,0 +1,25 @@
+Package: wyz.code.offensiveProgramming
+Type: Package
+Title: Wizardry Code Offensive Programming
+Version: 1.1.15
+Author: Fabien Gelineau <neonira@gmail.com>
+Maintainer: Fabien Gelineau <neonira@gmail.com>
+Description: Allows to change R coding from defensive programming (i.e. many input
+    parameter checks implementation required) to offensive
+    programming (none/reduced number of parameter checks required). Provides code 
+    instrumentation to ease this change. Should reduce
+    the code size as many controls and type checks have no more reason to exist.
+    Should also speed up processing as many checks will be reduced to single check.
+Encoding: UTF-8
+LazyData: true
+License: GPL-3
+Depends: R (>= 3.5)
+Imports: methods, data.table (>= 1.11.8), tidyr, lubridate (>= 1.7.4),
+        stringr (>= 1.4.0), R6 (>= 2.4.0), crayon
+Suggests: testthat, knitr, rmarkdown
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-01-15 14:49:48 UTC; fabien
+Repository: CRAN
+Date/Publication: 2020-01-15 15:20:02 UTC

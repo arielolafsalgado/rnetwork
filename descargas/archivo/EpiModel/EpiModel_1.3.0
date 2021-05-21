@@ -1,0 +1,45 @@
+Package: EpiModel
+Version: 1.3.0
+Date: 2017-03-02
+Title: Mathematical Modeling of Infectious Disease
+Description: Tools for simulating mathematical models of infectious disease. 
+    Epidemic model classes include deterministic compartmental models, stochastic 
+    agent-based models, and stochastic network models. Network models use the
+    robust statistical methods of exponential-family random graph models (ERGMs) 
+    from the Statnet suite of software packages in R. Standard templates for epidemic 
+    modeling include SI, SIR, and SIS disease types. EpiModel features 
+    an easy API for extending these templates to address novel scientific research aims.
+Maintainer: Samuel Jenness <samuel.m.jenness@emory.edu>
+Authors@R: c(person("Samuel", "Jenness",
+    role=c("cre","aut"), email="samuel.m.jenness@emory.edu"),
+    person("Steven M.","Goodreau",
+    role=c("aut"), email="goodreau@uw.edu"),
+    person("Martina", "Morris",
+    role=c("aut"), email="morrism@uw.edu"),
+    person("Emily", "Beylerian",
+    role=c("ctb"), email="emily.beylerian@gmail.com"),
+    person("Skye", "Bender-deMoll",
+    role=c("ctb"), email="skyebend@uw.edu"),
+    person("Kevin", "Weiss",
+    role=c("ctb"), email="kevin.weiss@emory.edu"))
+License: GPL-3
+URL: http://epimodel.org/
+BugReports: https://github.com/statnet/EpiModel/issues
+Depends: R (>= 3.2), deSolve (>= 1.12), networkDynamic (>= 0.9.0),
+        tergm (>= 3.3.1)
+Imports: graphics, grDevices, stats, utils, doParallel, ergm (>=
+        3.5.1), foreach, network (>= 1.13.0), RColorBrewer, ape,
+        lazyeval
+Suggests: covr, knitr, ndtv, rmarkdown, shiny, testthat
+VignetteBuilder: knitr
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2017-03-13 18:55:41 UTC; sjennes
+Author: Samuel Jenness [cre, aut],
+  Steven M. Goodreau [aut],
+  Martina Morris [aut],
+  Emily Beylerian [ctb],
+  Skye Bender-deMoll [ctb],
+  Kevin Weiss [ctb]
+Repository: CRAN
+Date/Publication: 2017-03-13 21:14:09

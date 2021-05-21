@@ -1,0 +1,27 @@
+Package: raincpc
+Title: Obtain and Analyze Rainfall Data from the Climate Prediction
+        Center
+Description: The Climate Prediction Center's (CPC) global rainfall data, 1979
+    to present, 0.5 degree (or 50 km) resolution, is one of the few high
+    quality, long term, observation based, daily rainfall products available
+    for free. Although raw data is available at CPC's ftp site, obtaining,
+    processing and visualizing the data is not easy since there are over
+    12000 files and formats and names of these files have changed over time.
+    This package provides functionality to download, process and visualize over
+    35 years of global daily rainfall data from CPC. The vignette demonstrates
+    the use of this package, including the extraction and display of regional
+    rainfall data.
+Version: 0.2
+Author: Gopi Goteti <my.ration.shop@gmail.com>
+Maintainer: Gopi Goteti <my.ration.shop@gmail.com>
+Depends: R (>= 3.0.2)
+Imports: SDMTools
+Suggests: knitr, raster, ggplot2
+VignetteBuilder: knitr
+License: MIT + file LICENSE
+LazyData: true
+Collate: 'cpc_get_rawdata.r' 'cpc_read_rawdata.r' 'raincpc-package.r'
+Packaged: 2014-06-25 19:42:51 UTC; ggoteti
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2014-06-25 23:54:12

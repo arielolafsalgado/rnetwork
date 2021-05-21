@@ -1,0 +1,35 @@
+Package: specs
+Title: Single-Equation Penalized Error-Correction Selector (SPECS)
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Etienne",
+           family = "Wijler",
+           role = c("aut","cre"),
+           email = "e.wijler@maastrichtuniversity.nl"),
+     person(given = "Stephan",
+           family = "Smeekes",
+           role = "aut",
+           email = "s.smeekes@maastrichtuniversity.nl", 
+           comment = c(ORCID = "0000-0002-0157-639X"))
+           )
+Maintainer: Etienne Wijler <e.wijler@maastrichtuniversity.nl>
+Description: Implementation of SPECS, your favourite Single-Equation Penalized Error-Correction Selector developed in
+    Smeekes and Wijler (2020) <arXiv:1809.08889>. SPECS provides a fully automated estimation procedure for large and potentially
+    (co)integrated datasets. The dataset in levels is converted to a conditional error-correction model, either by the user or
+    by means of the functions included in this package, and various specialised forms of penalized regression can be applied to
+    the model. Automated options for initializing and selecting a sequence of penalties, as well as the construction of penalty
+    weights via an initial estimator, are available. Moreover, the user may choose from a number of pre-specified deterministic
+    configurations to further simplify the model building process.
+Depends: R (>= 3.5.0)
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp
+NeedsCompilation: yes
+Packaged: 2020-07-05 18:02:12 UTC; Etienne
+Author: Etienne Wijler [aut, cre],
+  Stephan Smeekes [aut] (<https://orcid.org/0000-0002-0157-639X>)
+Repository: CRAN
+Date/Publication: 2020-07-06 13:40:02 UTC

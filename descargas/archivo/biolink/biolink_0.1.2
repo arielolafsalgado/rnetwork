@@ -1,0 +1,23 @@
+Package: biolink
+Type: Package
+Title: Create Hyperlinks to Biological Databases and Resources
+Description: Generate urls and hyperlinks to commonly used biological databases
+    and resources based on standard identifiers. This is primarily useful when
+    writing dynamic reports that reference things like gene symbols in text or
+    tables, allowing you to, for example, convert gene identifiers to hyperlinks
+    pointing to their entry in the NCBI Gene database. Currently supports NCBI
+    Gene, PubMed, Gene Ontology, CRAN and Bioconductor.
+Version: 0.1.2
+Authors@R: person("Aaron", "Wolen", , "aaron@wolen.com", role = c("aut", "cre"))
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: utils, rentrez, xml2, memoise
+Suggests: testthat, lintr, httr, covr
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-03-06 15:26:25 UTC; aaron
+Author: Aaron Wolen [aut, cre]
+Maintainer: Aaron Wolen <aaron@wolen.com>
+Repository: CRAN
+Date/Publication: 2017-03-07 01:21:03

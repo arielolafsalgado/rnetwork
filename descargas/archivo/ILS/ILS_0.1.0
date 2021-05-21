@@ -1,0 +1,33 @@
+Package: ILS
+Type: Package
+Title: Interlaboratory Study
+Version: 0.1.0
+Date: 2016-05-22
+Authors@R: c(
+      person("Miguel","Flores",role=c("aut","cre"), email="ma.flores@outlook.com"),
+			person("Salvador","Naya",role="ctb"),
+			person("Javier","Tarrio-Saavedra",role="ctb"),
+			person("Ruben","Fernandez",role="ctb"),
+			person("Rubi","Arias",role="ctb")
+      )
+Depends: R (>= 3.1.0), multcomp, depthTools, fda.usc, MASS
+Description: It performs interlaboratory studies (ILS) to detect those laboratories that provide non-consistent results when comparing to others.
+  It permits to work simultaneously with various testing materials, from standard univariate, and functional data analysis (FDA) perspectives.
+  The univariate approach based on ASTM E691-08 consist of estimating the Mandel's h and k statistics to identify those laboratories
+  that provide more significant different results, testing also the presence of outliers by Cochran and Grubbs tests, Analysis of variance (ANOVA) 
+  techniques are provided (F and Tuckey tests) to test differences in means corresponding to different laboratories per each material.
+  Taking into account the functional nature of data retrieved in analytical chemistry, applied physics and engineering (spectra, thermograms, etc.).
+  ILS package provides a FDA approach for finding the Mandel's k and h statistics distribution by smoothing bootstrap resampling.
+License: GPL (>= 2)
+LazyData: yes
+Author: Miguel Flores [aut, cre],
+  Salvador Naya [ctb],
+  Javier Tarrio-Saavedra [ctb],
+  Ruben Fernandez [ctb],
+  Rubi Arias [ctb]
+Maintainer: Miguel Flores <ma.flores@outlook.com>
+Repository: CRAN
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-05-23 10:48:30 UTC; MiguelA
+Date/Publication: 2016-05-23 13:04:51

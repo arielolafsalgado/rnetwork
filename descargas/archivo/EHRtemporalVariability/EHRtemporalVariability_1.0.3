@@ -1,0 +1,38 @@
+Package: EHRtemporalVariability
+Type: Package
+Title: Delineating Temporal Dataset Shifts in Electronic Health Records
+Version: 1.0.3
+Date: 2020-03-25
+Encoding: UTF-8
+Description: The 'EHRtemporalVariability' package contains functions to delineate temporal dataset shifts in Electronic Health Records through the projection and visualization of dissimilarities among data temporal batches. This is done through the estimation of data statistical distributions over time and their projection in non-parametric statistical manifolds uncovering the patterns of the data latent temporal variability. Dataset shifts can be explored and identified through visual analytics formats such as Data Temporal heatmaps and Information Geometric Temporal (IGT) plots. An additional 'EHRtemporalVariability' Shiny app can be used to load and explore the package results and even to allow the use of these functions to those users non-experienced in R coding.
+Depends: R (>= 3.3.0), dplyr
+License: Apache License 2.0 | file LICENSE
+LazyData: true
+Imports: plotly, shiny, zoo, xts, lubridate, RColorBrewer, viridis,
+        scales, methods
+Suggests: knitr, rmarkdown, devtools, BiocStyle
+VignetteBuilder: knitr
+NeedsCompilation: no
+Authors@R: c(
+  person("Carlos", "Sáez", email = "carsaesi@upv.es", role = c("aut", "cre")),
+  person("Alba", "Gutiérrez-Sacristán", email = "Alba_Gutierrez@hms.harvard.edu", role = c("aut")),
+  person("Isaac", "Kohane", email = "Isaac_Kohane@hms.harvard.edu", role = c("aut")),
+  person("Juan M", "García-Gómez", email = "juanmig@upv.es", role = c("aut")),
+  person("Paul", "Avillach", email = "Paul_Avillach@hms.harvard.edu", role = c("aut")),
+  person("Biomedical Data Science Lab, Universitat Politècnica de València (Spain)", role = c("cph")),
+  person("Department of Biomedical Informatics, Harvard Medical School", role = c("cph"))
+  )
+Maintainer: Carlos Sáez <carsaesi@upv.es>
+RoxygenNote: 7.1.0
+URL: http://github.com/hms-dbmi/EHRtemporalVariability
+Packaged: 2020-03-25 23:49:27 UTC; Carlos
+Author: Carlos Sáez [aut, cre],
+  Alba Gutiérrez-Sacristán [aut],
+  Isaac Kohane [aut],
+  Juan M García-Gómez [aut],
+  Paul Avillach [aut],
+  Biomedical Data Science Lab, Universitat Politècnica de València
+    (Spain) [cph],
+  Department of Biomedical Informatics, Harvard Medical School [cph]
+Repository: CRAN
+Date/Publication: 2020-03-26 05:10:03 UTC

@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package AMR</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Antimicrobial Resistance Analysis [R package AMR version 1.4.0]" />
+<meta name="citation_author1" content="Matthijs S. Berends" />
+<meta name="citation_author2" content="Christian F. Luz" />
+<meta name="citation_author3" content="Alexander W. Friedrich" />
+<meta name="citation_author4" content="Bhanu N. M. Sinha" />
+<meta name="citation_author5" content="Casper J. Albers" />
+<meta name="citation_author6" content="Corinna Glasner" />
+<meta name="citation_publication_date" content="2020-10-08" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=AMR" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=AMR" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="AMR: Antimicrobial Resistance Analysis" />
+<meta name="og:description" content="Functions to simplify the analysis and prediction of Antimicrobial Resistance (AMR) and to work with microbial and antimicrobial properties by using evidence-based methods, like those defined by Leclercq et al. (2013) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fj.1469-0691.2011.03703.x&quot;&gt;doi:10.1111/j.1469-0691.2011.03703.x&lt;/a&gt;&amp;gt; and the Clinical and Laboratory Standards Institute (2014) &amp;lt;isbn: 1-56238-899-1&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=AMR" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>AMR: Antimicrobial Resistance Analysis</h2>
+<p>Functions to simplify the analysis and prediction of Antimicrobial 
+    Resistance (AMR) and to work with microbial and antimicrobial properties by
+    using evidence-based methods, like those defined by Leclercq et al. (2013) 
+    &lt;<a href="https://doi.org/10.1111%2Fj.1469-0691.2011.03703.x">doi:10.1111/j.1469-0691.2011.03703.x</a>&gt; and the Clinical and Laboratory 
+    Standards Institute (2014) &lt;isbn: 1-56238-899-1&gt;.</p>
+<table summary="Package AMR summary">
+<tr>
+<td>Version:</td>
+<td>1.4.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../cleaner/index.html">cleaner</a>, <a href="../curl/index.html">curl</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../knitr/index.html">knitr</a>, <a href="../microbenchmark/index.html">microbenchmark</a>, <a href="../readxl/index.html">readxl</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../rstudioapi/index.html">rstudioapi</a>, <a href="../rvest/index.html">rvest</a>, <a href="../skimr/index.html">skimr</a>, <a href="../testthat/index.html">testthat</a>, <a href="../tidyr/index.html">tidyr</a>, <a href="../xml2/index.html">xml2</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-08</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Matthijs S. Berends
+    <a href="https://orcid.org/0000-0001-7620-1800"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut, cre],
+  Christian F. Luz <a href="https://orcid.org/0000-0001-5809-5995"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, ctb],
+  Alexander W. Friedrich
+    <a href="https://orcid.org/0000-0003-4881-038X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut, ths],
+  Bhanu N. M. Sinha <a href="https://orcid.org/0000-0003-1634-0010"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, ths],
+  Casper J. Albers <a href="https://orcid.org/0000-0002-9213-6743"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, ths],
+  Corinna Glasner <a href="https://orcid.org/0000-0003-1241-1328"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, ths],
+  Judith M. Fonville [ctb],
+  Erwin E. A. Hassing [ctb],
+  Eric H. L. C. M. Hazenberg [ctb],
+  Gwen Knight [ctb],
+  Annick Lenglet [ctb],
+  Bart C. Meijer [ctb],
+  Sofia Ny [ctb],
+  Dennis Souverein [ctb],
+  Anthony Underwood [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Matthijs S. Berends  &#x3c;&#x6d;&#x2e;&#x73;&#x2e;&#x62;&#x65;&#x72;&#x65;&#x6e;&#x64;&#x73;&#x20;&#x61;&#x74;&#x20;&#x75;&#x6d;&#x63;&#x67;&#x2e;&#x6e;&#x6c;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/msberends/AMR/issues">https://github.com/msberends/AMR/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://msberends.github.io/AMR/">https://msberends.github.io/AMR/</a>, <a href="https://github.com/msberends/AMR">https://github.com/msberends/AMR</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">AMR citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_AMR.html">AMR results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package AMR downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="AMR.pdf"> AMR.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/datasets.html">Data sets for download / own use</a><br/>
+<a href="vignettes/welcome_to_AMR.html">Welcome to the AMR package</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/AMR_1.4.0.tar.gz"> AMR_1.4.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/AMR_1.4.0.zip">AMR_1.4.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/AMR_1.4.0.zip">AMR_1.4.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/AMR_1.4.0.zip">AMR_1.4.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/AMR_1.4.0.tgz">AMR_1.4.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/AMR_1.4.0.tgz">AMR_1.4.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/AMR"> AMR archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=AMR"><samp>https://CRAN.R-project.org/package=AMR</samp></a>
+to link to this page.</p>
+</body>
+</html>

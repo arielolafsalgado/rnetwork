@@ -1,0 +1,39 @@
+Package: heatmaply
+Type: Package
+Title: Interactive Heat Maps Using 'plotly'
+Version: 0.3.2
+Date: 2016-05-25
+Authors@R: c(person("Tal", "Galili", role = c("aut", "cre", "cph"), email =
+    "tal.galili@gmail.com", comment = "http://www.r-statistics.com"))
+Description: Create interactive heatmaps that are usable from the R console,
+    in the 'RStudio' viewer pane, in 'R Markdown' documents, and in 'Shiny' apps.
+    Hover the mouse pointer over a cell to show details or drag a rectangle to
+    zoom. A heatmap is a popular graphical method for visualizing high-dimensional
+    data, in which a table of numbers are encoded as a grid of colored cells. The
+    rows and columns of the matrix are ordered to highlight patterns and are often
+    accompanied by dendrograms. Heatmaps are used in many fields for visualizing
+    observations, correlations, missing values patterns, and more. Interactive
+    heatmaps allow the inspection of specific value by hovering the mouse over a
+    cell, as well as zooming into a region of the heatmap by dragging a rectangle
+    around the relevant area. This work is based on the 'ggplot2' and 'plotly.js'
+    engine. It produces similar heatmaps as 'd3heatmap', with the advantage of speed
+    ('plotly.js' is able to handle larger size matrix), and the ability to zoom from
+    the dendrogram panes.
+Depends: R (>= 3.0.0), plotly (>= 3.6.0), viridis
+Imports: ggplot2, dendextend, magrittr (>= 1.0.1), reshape2, scales,
+        utils, stats
+Suggests: knitr, rmarkdown, gplots
+VignetteBuilder: knitr
+License: GPL-2 | GPL-3
+URL: https://cran.r-project.org/package=heatmaply,
+        https://github.com/talgalili/heatmaply/,
+        http://www.r-statistics.com/tag/heatmaply/
+BugReports: https://github.com/talgalili/heatmaply/issues
+LazyData: TRUE
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-05-26 07:40:04 UTC; junior
+Author: Tal Galili [aut, cre, cph] (http://www.r-statistics.com)
+Maintainer: Tal Galili <tal.galili@gmail.com>
+Repository: CRAN
+Date/Publication: 2016-05-26 17:50:25

@@ -1,0 +1,29 @@
+Package: LDAvis
+Title: Interactive Visualization of Topic Models
+Version: 0.2
+Authors@R: c(person("Carson", "Sievert", role = c("aut", "cre"), email =
+    "cpsievert1@gmail.com"), person("Kenny", "Shirley", role = "aut",
+    email = "kshirley@research.att.com"))
+Description: Tools to create an interactive web-based visualization of a
+    topic model that has been fit to a corpus of text data using
+    Latent Dirichlet Allocation (LDA). Given the estimated parameters of
+    the topic model, it computes various summary statistics as input to
+    an interactive visualization built with D3.js that is accessed via
+    a browser. The goal is to help users interpret the topics in their
+    LDA topic model.
+Depends: R (>= 2.10)
+Imports: proxy, RJSONIO, parallel
+License: MIT + file LICENSE
+Suggests: mallet, lda, topicmodels, gistr (>= 0.0.8.99), servr, shiny,
+        knitr, rmarkdown
+LazyData: true
+VignetteBuilder: knitr
+URL: https://github.com/cpsievert/LDAvis
+BugReports: https://github.com/cpsievert/LDAvis/issues
+Packaged: 2015-01-23 16:58:48 UTC; cpsievert
+Author: Carson Sievert [aut, cre],
+  Kenny Shirley [aut]
+Maintainer: Carson Sievert <cpsievert1@gmail.com>
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2015-01-23 21:07:17

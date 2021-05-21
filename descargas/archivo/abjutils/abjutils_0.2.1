@@ -1,0 +1,37 @@
+Package: abjutils
+Type: Package
+Date: 2018-01-18
+Title: Useful Tools for Jurimetrical Analysis Used by the Brazilian
+        Jurimetrics Association
+Description: The Brazilian Jurimetrics Association (ABJ in Portuguese,
+  see <http://www.abjur.org.br/en/> for more information) is a non-profit
+  organization which aims to investigate and promote the use of
+  statistics and probability in the study of Law and its institutions.
+  This package implements general purpose tools used by ABJ, such as functions
+  for sampling and basic manipulation of Brazilian lawsuits identification
+  number. It also implements functions for text cleaning, such as accentuation removal.
+Version: 0.2.1
+Authors@R: c(
+  person("Julio", "Trecenti", role = "aut", email = "jtrecenti@abj.org.br"),
+  person("Athos", "Damiani", role = "ctb", email = "athos.damiani@gmail.com"),
+  person("Fernando", "Correa", role = "aut", email = "fcorrea@abj.org.br"),
+  person("Caio", "Lente", role = c("aut","cre"), email = "ctlente@gmail.com"),
+  person(family = "Brazilian Jurimetrics Association", role = "cph"))
+Maintainer: Caio Lente <ctlente@gmail.com>
+URL: https://github.com/abjur/abjutils
+LazyData: TRUE
+Depends: R (>= 3.1)
+License: MIT + file LICENSE
+Imports: stringr, dplyr, httr, tibble, devtools, magrittr, plyr, purrr,
+        rstudioapi, scales, stringi, glue, tidyr, progress
+Suggests: testthat
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-01-19 13:25:19 UTC; ctlente
+Author: Julio Trecenti [aut],
+  Athos Damiani [ctb],
+  Fernando Correa [aut],
+  Caio Lente [aut, cre],
+  Brazilian Jurimetrics Association [cph]
+Repository: CRAN
+Date/Publication: 2018-01-19 18:26:56 UTC

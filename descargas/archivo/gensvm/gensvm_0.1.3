@@ -1,0 +1,34 @@
+Package: gensvm
+Version: 0.1.3
+Date: 2019-12-02
+Title: A Generalized Multiclass Support Vector Machine
+Authors@R: c(person("Gertjan", "van den Burg", role=c("aut", "cre"),
+			email="gertjanvandenburg@gmail.com"),
+		person("Patrick", "Groenen", email="groenen@ese.eur.nl", role="ctb"))
+Maintainer: Gertjan van den Burg <gertjanvandenburg@gmail.com>
+Description: The GenSVM classifier is a generalized multiclass support vector
+	machine (SVM). This classifier aims to find decision boundaries that
+	separate the classes with as wide a margin as possible. In GenSVM, the
+	loss function is very flexible in the way that misclassifications are
+	penalized.  This allows the user to tune the classifier to the dataset
+	at hand and potentially obtain higher classification accuracy than
+	alternative multiclass SVMs.  Moreover, this flexibility means that
+	GenSVM has a number of other multiclass SVMs as special cases. One of
+	the other advantages of GenSVM is that it is trained in the primal
+	space, allowing the use of warm starts during optimization.  This
+	means that for common tasks such as cross validation or repeated model
+	fitting, GenSVM can be trained very quickly. Based on: G.J.J. van den
+	Burg and P.J.F. Groenen (2018) <http://www.jmlr.org/papers/v17/14-526.html>.
+License: GPL (>= 2)
+Depends: R (>= 3.0.0)
+Classification/MSC: 62H30, 68T10
+URL: https://github.com/GjjvdBurg/RGenSVM
+        http://jmlr.org/papers/v17/14-526.html
+BugReports: https://github.com/GjjvdBurg/RGenSVM
+RoxygenNote: 6.1.1
+NeedsCompilation: yes
+Packaged: 2019-12-02 16:50:52 UTC; gertjan
+Author: Gertjan van den Burg [aut, cre],
+  Patrick Groenen [ctb]
+Repository: CRAN
+Date/Publication: 2019-12-02 19:30:06 UTC

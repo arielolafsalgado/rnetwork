@@ -1,0 +1,68 @@
+Package: quanteda
+Type: Package
+Title: Quantitative Analysis of Textual Data
+Authors@R: c( person("Kenneth", "Benoit", email = "kbenoit@lse.ac.uk", role =
+    c("aut", "cre")), 
+    person("Kohei", "Watanabe", email = "watanabe.kohei@gmail.com", role = "ctb"), 
+    person("Paul", "Nulty", email = "paul.nulty@gmail.com", role = "ctb"), 
+    person("Adam", "Obeng", email = "quanteda@binaryeagle.com", role = "ctb"),
+    person("Haiyan", "Wang", email = "h.wang52@lse.ac.uk", role = "ctb"),
+    person("Benjamin", "Lauderdale", email = "B.E.lauderdale@lse.ac.uk", role = "ctb"),
+    person("Will", "Lowe", email="wlowe@princeton.edu", role="ctb") )
+Author: Kenneth Benoit [aut, cre],
+    Kohei Watanabe [ctb],
+    Paul Nulty [ctb],
+    Adam Obeng [ctb],
+    Haiyan Wang [ctb],
+    Benjamin Lauderdale [ctb],
+    Will Lowe [ctb]
+Maintainer: Kenneth Benoit <kbenoit@lse.ac.uk>
+Version: 0.9.9-22
+Date: 2017-02-08
+Description: A fast, flexible toolset for for the management, processing, and
+    quantitative analysis of textual data in R.
+License: GPL-3
+Depends: R (>= 3.2.2)
+Imports: methods, utils, stats, Matrix (>= 1.2), data.table (>= 1.9.6),
+        SnowballC, wordcloud, proxy, Rcpp, RcppParallel, ca, stringi,
+        fastmatch, ggplot2 (>= 2.2.0), yaml
+LinkingTo: Rcpp, RcppParallel, RcppArmadillo
+Suggests: knitr, rmarkdown, lda, topicmodels, tm (>= 0.6), slam, XML,
+        testthat, RColorBrewer, xtable, DT
+URL: http://github.com/kbenoit/quanteda
+Encoding: UTF-8
+BugReports: https://github.com/kbenoit/quanteda/issues
+LazyData: TRUE
+VignetteBuilder: knitr
+Collate: 'RcppExports.R' 'View.R' 'character-methods.R'
+        'dictionaries.R' 'corpus.R' 'collocations.R' 'convert.R'
+        'corpus-deprecated.R' 'corpus-methods-base.R'
+        'corpus-methods-quanteda.R' 'corpus_reshape.R'
+        'corpus_sample.R' 'corpus_segment.R' 'corpus_subset.R'
+        'corpuszip.R' 'data-deprecated.R' 'data-documentation.R'
+        'dfm-classes.R' 'dfm-deprecated.R' 'dfm-methods.R'
+        'dfm-print.R' 'dfm-subsetting.R' 'dfm.R' 'dfm_compress.R'
+        'dfm_lookup.R' 'dfm_sample.R' 'dfm_select.R' 'dfm_trim.R'
+        'dfm_weight.R' 'dictionaries-deprecated.R' 'fcm-methods.R'
+        'fcm.R' 'joinTokens-deprecated.R' 'kwic2.R' 'kwic_old.R'
+        'nfunctions.R' 'nscrabble.R' 'nsyllable.R' 'phrases.R'
+        'plots-deprecated.R' 'plots.R' 'quanteda.R'
+        'readtext-methods.R' 'regex2fixed.R' 'resample.R'
+        'selectFeatures-old.R' 'selectFeatures.R' 'sequences.R'
+        'settings.R' 'similarity.R' 'stopwords.R' 'textmodel-NB.R'
+        'textmodel-ca.R' 'textmodel-generics.R' 'textmodel-internal.R'
+        'textmodel-wordfish.R' 'textmodel-wordscores.R'
+        'textmodel-wordshoal.R' 'textstat-deprecated.R'
+        'textstat-lexdiv.R' 'textstat-readability.R' 'textstat_dist.R'
+        'textstat_keyness.R' 'textstat_simil.R' 'toLower.R'
+        'tokenize.R' 'tokenize_outtakes.R' 'tokens.R'
+        'tokens_compound.R' 'tokens_lookup.R' 'tokens_ngrams.R'
+        'tokens_select.R' 'tolower-misc.R' 'utils.R' 'valuetype.R'
+        'wordstem.R' 'zzz.R'
+RcppModules: ngramMaker
+RoxygenNote: 5.0.1
+SystemRequirements: C++11,GNU make
+NeedsCompilation: yes
+Packaged: 2017-02-08 17:57:27 UTC; kbenoit
+Repository: CRAN
+Date/Publication: 2017-02-09 00:55:09

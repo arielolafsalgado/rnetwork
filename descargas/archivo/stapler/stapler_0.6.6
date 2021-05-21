@@ -1,0 +1,30 @@
+Package: stapler
+Version: 0.6.6
+Title: Simultaneous Truth and Performance Level Estimation
+Description: An implementation of Simultaneous Truth and 
+    Performance Level Estimation (STAPLE) <doi:10.1109/TMI.2004.828354>.  This
+    method is used when there are multiple raters for an object, typically an
+    image, and this method fuses these ratings into one rating.  It uses an
+    expectation-maximization method to estimate this rating and the individual
+    specificity/sensitivity for each rater.
+Authors@R: c(person(given = "John", family = "Muschelli", 
+        role = c("aut", "cre"), email = "muschellij2@gmail.com", 
+        comment = NULL))
+License: GPL-3
+Imports: matrixStats, RNifti
+Suggests: knitr, rmarkdown, covr, testthat, spelling
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+Type: Package
+Maintainer: John Muschelli <muschellij2@gmail.com>
+VignetteBuilder: knitr
+URL: https://github.com/muschellij2/stapler
+BugReports: https://github.com/muschellij2/stapler/issues
+RoxygenNote: 6.1.1
+Language: en-US
+NeedsCompilation: no
+Packaged: 2019-03-06 14:46:36 UTC; johnmuschelli
+Author: John Muschelli [aut, cre]
+Repository: CRAN
+Date/Publication: 2019-03-07 01:20:03 UTC

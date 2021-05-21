@@ -1,0 +1,29 @@
+Package: rlfsm
+Type: Package
+Title: Simulations and Statistical Inference for Linear Fractional
+        Stable Motions
+Version: 1.0.0
+Authors@R: c(
+  person("Dmitry", "Otryakhin", , "d.otryakhin.acad@protonmail.ch", c("aut", "cre")),
+  person("Stepan", "Mazur", , "mazurstepanm@gmail.com", "aut"),
+  person("Mathias", "Ljungdahl", , "ljungdahl@math.au.dk", "ctb")
+  )
+Maintainer: Dmitry Otryakhin <d.otryakhin.acad@protonmail.ch>
+Author: Dmitry Otryakhin [aut, cre],
+  Stepan Mazur [aut],
+  Mathias Ljungdahl [ctb]
+Description: Contains functions for simulating linear fractional stable motions, according to techniques developed by Stoev and Taqqu (2004) <doi:10.1142/S0218348X04002379>, as well as functions for computing important statistics used with these processes introduced by Mazur, Otryakhin and Podolskij (2018) <arXiv:1802.06373>, and also different quantities related to those statistics.
+License: GPL-3
+URL:
+        https://gitlab.com/Dmitry_Otryakhin/Tools-for-parameter-estimation-of-the-linear-fractional-stable-motion
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Depends: methods, foreach, doParallel
+Imports: ggplot2, stabledist, reshape2, plyr, Rdpack
+Suggests: elliptic, spatstat, testthat, stringi
+RdMacros: Rdpack
+NeedsCompilation: no
+Packaged: 2019-11-05 11:15:26 UTC; dmot8856
+Repository: CRAN
+Date/Publication: 2019-11-05 13:40:02 UTC

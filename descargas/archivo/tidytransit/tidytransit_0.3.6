@@ -1,0 +1,50 @@
+Package: tidytransit
+Type: Package
+Title: Read, Validate, Analyze, and Map Files in the General Transit
+        Feed Specification
+Version: 0.3.6
+Authors@R: c(
+    person("Tom", "Buckley", role = c("aut", "cre"), email = "tom@tbuckl.com"),
+    person("Danton", "Noriega-Goodwin", role = c("aut"), email = "danton.noriega@gmail.com"),
+    person("Flavio", "Poletti", role = c("aut"), email = "flavio.poletti@hotmail.ch"),
+    person("Angela", "Li", role = c("aut"), email = "angela@rladies.org"),
+    person("Mark", "Padgham", role = c("aut"), email = "mark.padgham@email.com"),
+    person("Elaine", "McVey", role = c("ctb"), email = "elaine.mcvey@transloc.com"),
+    person("Charles Hans", "Thompson", role = c("ctb"), email = "hans.thompson1@gmail.com"),
+    person("Michael", "Sumner", role = c("ctb")),
+    person("Patrick", "Hausmann", role = c("ctb"), email = "patrick.hausmann@covimo.de"),
+    person("Bob", "Rudis", role = c("ctb"), email = "bob@rud.is"),
+    person("Kearey", "Smith", role = c("ctb")),
+    person("Dave", "Vautin", role = c("ctb")),
+    person("Kyle", "Walker", role = c("ctb"))
+  )
+Description: Read General Transit Feed Specification (GTFS) zipfiles into a list of R dataframes. Perform validation of the data structure against the specification. Analyze the headways and frequencies at routes and stops. Create maps and perform spatial analysis on the routes and stops. Please see the GTFS documentation here for more detail: <http://gtfs.org/>.
+License: GPL
+LazyData: TRUE
+Depends: R (>= 3.2.5)
+Imports: dplyr, zip, tibble, readr, data.table, httr, htmltools,
+        magrittr, stringr, assertthat, scales, here, rlang, sf,
+        lubridate, hms, tidyr, tools
+Suggests: testthat, knitr, rmarkdown
+RoxygenNote: 6.1.0
+URL: https://github.com/r-transit/tidytransit
+BugReports: https://github.com/r-transit/tidytransit
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-02-04 01:56:15 UTC; tbuck
+Author: Tom Buckley [aut, cre],
+  Danton Noriega-Goodwin [aut],
+  Flavio Poletti [aut],
+  Angela Li [aut],
+  Mark Padgham [aut],
+  Elaine McVey [ctb],
+  Charles Hans Thompson [ctb],
+  Michael Sumner [ctb],
+  Patrick Hausmann [ctb],
+  Bob Rudis [ctb],
+  Kearey Smith [ctb],
+  Dave Vautin [ctb],
+  Kyle Walker [ctb]
+Maintainer: Tom Buckley <tom@tbuckl.com>
+Repository: CRAN
+Date/Publication: 2019-02-04 10:00:02 UTC

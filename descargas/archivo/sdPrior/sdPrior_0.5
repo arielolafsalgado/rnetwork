@@ -1,0 +1,21 @@
+Package: sdPrior
+Title: Scale-Dependent Hyperpriors in Structured Additive
+        Distributional Regression
+Version: 0.5
+Authors@R: c(person(given = "Nadja", family = "Klein", role = c("aut", "cre"), email = "n.klein@mbs.edu"),
+						person(given = "Thomas", family = "Kneib", role = "aut", email = "tkneib@uni-goettingen.de"))
+Maintainer: Nadja Klein <n.klein@mbs.edu>
+Description: Utility functions for scale-dependent and alternative hyperpriors. The distribution parameters may capture location, scale, shape, etc. and every parameter may depend
+  on complex additive terms (fixed, random, smooth, spatial, etc.) similar to a generalized additive model. Hyperpriors for all effects can be elicitated within the package. Including complex tensor product interaction terms and variable selection priors. The basic model is explained in in Klein and Kneib (2016) <doi:10.1214/15-BA983>.
+Depends: R (>= 3.1.0)
+Imports: splines, GB2, caTools, MASS, stats, pscl, mvtnorm, mgcv,
+        graphics, rsvd, doParallel, parallel, BayesX
+LazyData: true
+License: GPL-2
+NeedsCompilation: no
+Packaged: 2018-05-28 19:20:05 UTC; nadja.klein
+RoxygenNote: 6.0.1
+Author: Nadja Klein [aut, cre],
+  Thomas Kneib [aut]
+Repository: CRAN
+Date/Publication: 2018-05-29 07:37:18 UTC

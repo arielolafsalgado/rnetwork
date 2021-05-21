@@ -1,0 +1,30 @@
+Package: autocogs
+Title: Automatic Cognostic Summaries
+Version: 0.1.1
+Authors@R: c(
+    person("Barret", "Schloerke", email = "schloerke@gmail.com", role = c("aut")),
+    person("Ryan", "Hafen", email = "rhafen@gmail.com", role = c("ths", "cre"))
+  )
+Description: Automatically calculates cognostic groups for plot objects and list column plot objects.  Results are returned in a nested data frame.
+Depends: R (>= 3.4.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: dplyr, checkmate, MASS, broom, moments, diptest, mclust,
+        ggplot2, tibble, utils, hexbin, progress
+RoxygenNote: 6.1.0
+Collate: 'autocog.R' 'known_cog_groups.R' 'add_cog_group.R'
+        'field_info.R' 'add_cog_group_.R' 'known_layer_cogs.R'
+        'add_layer_cogs.R' 'add_layer_cogs_.R' 'cog_desc.R'
+        'cog_spec.R' 'layer_count.R' 'layer_info.R' 'of_type.R'
+        'plot_class.R' 'plot_cogs.R'
+Suggests: testthat, covr
+URL: https://github.com/schloerke/autocogs
+BugReports: https://github.com/schloerke/autocogs/issues
+NeedsCompilation: no
+Packaged: 2018-09-13 17:32:16 UTC; hafen
+Author: Barret Schloerke [aut],
+  Ryan Hafen [ths, cre]
+Maintainer: Ryan Hafen <rhafen@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-09-21 22:30:13 UTC

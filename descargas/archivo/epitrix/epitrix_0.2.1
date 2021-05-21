@@ -1,0 +1,27 @@
+Package: epitrix
+Title: Small Helpers and Tricks for Epidemics Analysis
+Version: 0.2.1
+Authors@R: c(person("Thibaut", "Jombart", email = "thibautjombart@gmail.com", role = c("aut", "cre")),
+             person("Anne", "Cori", email = "a.cori@imperial.ac.uk", role = c("aut")),
+             person("Zhian N.", "Kamvar", email = "zkamvar@gmail.com", role = "ctb")
+            ) 
+Description: A collection of small functions useful for epidemics analysis and infectious disease modelling. This includes computation of basic reproduction numbers from growth rates, generation of hashed labels to anonymise data, and fitting discretised Gamma distributions.
+Depends: R (>= 3.3.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests: testthat, roxygen2, outbreaks, incidence (>= 1.4.1), knitr,
+        rmarkdown
+Imports: digest, distcrete, stringi
+RoxygenNote: 6.1.0
+URL: http://www.repidemicsconsortium.org/epitrix
+BugReports: https://github.com/reconhub/epitrix/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-08-28 11:22:44 UTC; zkamvar
+Author: Thibaut Jombart [aut, cre],
+  Anne Cori [aut],
+  Zhian N. Kamvar [ctb]
+Maintainer: Thibaut Jombart <thibautjombart@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-08-28 14:04:27 UTC

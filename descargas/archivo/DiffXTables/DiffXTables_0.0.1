@@ -1,0 +1,37 @@
+Package: DiffXTables
+Title: Distributional Differences Across Contingency Tables
+Version: 0.0.1
+Date: 2019-10-29
+Authors@R: 
+    c(person(given = "Ruby",
+             family = "Sharma",
+             role = "aut",
+             email = "ruby49@nmsu.edu"),
+      person(given = "Joe",
+             family = "Song",
+             role = c("aut", "cre"),
+             email = "joemsong@cs.nmsu.edu",
+             comment = c(ORCID = "0000-0002-6883-6547")))
+Author: Ruby Sharma [aut],
+  Joe Song [aut, cre] (<https://orcid.org/0000-0002-6883-6547>)
+Maintainer: Joe Song <joemsong@cs.nmsu.edu>
+Description: Statistical methods for hypothesis testing of differences in the
+    underlying distributions across two or more contingency tables. The package
+    includes three tests: the comparative chi-squared test (Song et al, 2014)
+    <doi:10.1093/nar/gku086> (Zhang et al, 2015) <doi:10.1093/nar/gkv358>, the
+    Sharma-Song test, and the heterogeneity test. They all have an
+    asymptotically chi-squared null distribution. These options allow one to
+    test for patterns that differ in first and second orders, directly related
+    to marginal and joint distributions of given contingency tables.
+Depends: R (>= 3.0)
+Imports: Matrix
+Suggests: Ckmeans.1d.dp, FunChisq, knitr, rmarkdown, testthat
+License: LGPL (>= 3)
+Encoding: UTF-8
+NeedsCompilation: no
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+Packaged: 2019-10-29 22:56:34 UTC; joemsong
+Repository: CRAN
+Date/Publication: 2019-11-04 14:40:02 UTC

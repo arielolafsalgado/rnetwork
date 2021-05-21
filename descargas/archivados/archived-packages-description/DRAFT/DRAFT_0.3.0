@@ -1,0 +1,24 @@
+Package: DRAFT
+Type: Package
+Title: Disease Rapid Analysis and Forecasting Tool
+Version: 0.3.0
+Authors@R: c(person(given="Michal", family="Ben-Nun", email="mbennun@predsci.com", role="aut"), 
+	person(given="James", family="Turtle", email="jturtle@predsci.com", role="cre"),
+	person(given="Pete", family="Riley", email="pete@predsci.com", role="ctb"))
+Author: Michal Ben-Nun [aut],
+  James Turtle [cre],
+  Pete Riley [ctb]
+Maintainer: James Turtle <jturtle@predsci.com>
+Description: Fits epidemic data to and generates stochastic profiles of a model with constant or time-dependent behavior modification parameters. Two parameters, p and q, describe the effect of reduced contact rate of susceptible and infectious populations, respectively as described by Brauer (2011, ISSN:1471-2458). In the absence of behavior modification, p=q=1, we recover the familiar compartmental Susceptible-Infectious-Recovered (SIR) equations. 'DRAFT' supports both constant values for p and q and a time-dependent form which smoothly changes p and q from their initial, pre-epidemic value of 1.0 to the user chosen values that are between 0 and 1. The start and transient time of behavior change are set by the user. 'DRAFT' can be used to compare forecasts of epidemic incidence with and without behavior modification.  Additional parameters and data fitting methods are explained in Ben-Nun et al (2019) <doi:10.1371/journal.pcbi.1007013>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: yes
+Imports: stats, utils, tools, coda, gridExtra, ggplot2, reshape,
+        lubridate (>= 1.7.0)
+RoxygenNote: 6.1.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Packaged: 2019-08-02 23:46:24 UTC; turtle
+Repository: CRAN
+Date/Publication: 2019-08-05 13:00:05 UTC

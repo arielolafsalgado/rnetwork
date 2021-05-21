@@ -1,0 +1,33 @@
+Package: bayesImageS
+Type: Package
+Title: Bayesian Methods for Image Segmentation using a Potts Model
+Version: 0.4-1
+Date: 2017-10-19
+Authors@R: c(
+    person("Matt", "Moores", role = c("aut", "cre"), email = "M.T.Moores@warwick.ac.uk", comment = c(ORCID = "0000-0003-4531-3572")),
+    person("Kerrie", "Mengersen", role=c("aut", "ths"), email="k.mengersen@qut.edu.au", comment = c(ORCID = "0000-0001-8625-9168")),
+    person("Dai", "Feng", role="ctb"))
+Description: Various algorithms for segmentation of 2D and 3D images, such
+    as computed tomography and satellite remote sensing. This package implements
+    Bayesian image analysis using the hidden Potts model with external field
+    prior. Latent labels are sampled using chequerboard updating or Swendsen-Wang.
+    Algorithms for the smoothing parameter include pseudolikelihood, path sampling,
+    the exchange algorithm, approximate Bayesian computation (ABC-MCMC and ABC-SMC),
+    and Bayesian indirect likelihood (BIL).
+License: GPL (>= 2)
+URL: https://bitbucket.org/Azeari/bayesimages
+BugReports: https://bitbucket.org/Azeari/bayesimages/issues
+Depends: R (>= 3.0.0)
+Imports: Rcpp (>= 0.10.6)
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: mcmcse, coda, knitr
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2017-10-19 16:13:17 UTC; stsrjs
+Author: Matt Moores [aut, cre] (0000-0003-4531-3572),
+  Kerrie Mengersen [aut, ths] (0000-0001-8625-9168),
+  Dai Feng [ctb]
+Maintainer: Matt Moores <M.T.Moores@warwick.ac.uk>
+Repository: CRAN
+Date/Publication: 2017-10-19 17:44:11 UTC

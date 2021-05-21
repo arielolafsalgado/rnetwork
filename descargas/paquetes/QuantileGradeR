@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package QuantileGradeR</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=QuantileGradeR" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="QuantileGradeR: Quantile-Adjusted Restaurant Grading" />
+<meta name="og:description" content="Implementation of the food safety restaurant grading system adopted by Public Health - Seattle &amp;amp; King County (see Ashwood, Z.C., Elias, B., and Ho. D.E. &quot;Improving the Reliability of Food Safety Disclosure: A Quantile Adjusted Restaurant Grading System for Seattle-King County&quot; (working paper)). As reported in the accompanying paper, this package allows jurisdictions to easily implement refinements that address common challenges with unadjusted grading systems. First, in contrast to unadjusted grading, where the most recent single routine inspection is the primary determinant of a grade, grading inputs are allowed to be flexible. For instance, it is straightforward to base the grade on average inspection scores across multiple inspection cycles. Second, the package can identify quantile cutoffs by inputting substantively meaningful regulatory thresholds (e.g., the proportion of establishments receiving sufficient violation points to warrant a return visit). Third, the quantile adjustment equalizes the proportion of establishments in a flexible number of grading categories (e.g., A/B/C) across areas (e.g., ZIP codes, inspector areas) to account for inspector differences. Fourth, the package implements a refined quantile adjustment that addresses two limitations with the stats::quantile() function when applied to inspection score datasets with large numbers of score ties. The quantile adjustment algorithm iterates over quantiles until, over all restaurants in all areas, grading proportions are within a tolerance of desired global proportions. In addition the package allows a modified definition of &quot;quantile&quot; from &quot;Nearest Rank&quot;. Instead of requiring that at least p[1]% of restaurants receive the top grade and at least (p[1]+p[2])% of restaurants receive the top or second best grade for quantiles p, the algorithm searches for cutoffs so that as close as possible p[1]% of restaurants receive the top grade, and as close as possible to p[2]% of restaurants receive the second top grade." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=QuantileGradeR" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>QuantileGradeR: Quantile-Adjusted Restaurant Grading</h2>
+<p>Implementation of the food safety restaurant grading system adopted by Public Health - Seattle &amp; King County (see Ashwood, Z.C., Elias, B., and Ho. D.E. "Improving the Reliability of Food Safety Disclosure: A Quantile Adjusted Restaurant Grading System for Seattle-King County" (working paper)). As reported in the accompanying paper, this package allows jurisdictions to easily implement refinements that address common challenges with unadjusted grading systems. First, in contrast to unadjusted grading, where the most recent single routine inspection is the primary determinant of a grade, grading inputs are allowed to be flexible. For instance, it is straightforward to base the grade on average inspection scores across multiple inspection cycles. Second, the package can identify quantile cutoffs by inputting substantively meaningful regulatory thresholds (e.g., the proportion of establishments receiving sufficient violation points to warrant a return visit). Third, the quantile adjustment equalizes the proportion of establishments in a flexible number of grading categories (e.g., A/B/C) across areas (e.g., ZIP codes, inspector areas) to account for inspector differences. Fourth, the package implements a refined quantile adjustment that addresses two limitations with the stats::quantile() function when applied to inspection score datasets with large numbers of score ties. The quantile adjustment algorithm iterates over quantiles until, over all restaurants in all areas, grading proportions are within a tolerance of desired global proportions. In addition the package allows a modified definition of "quantile" from "Nearest Rank". Instead of requiring that at least p[1]% of restaurants receive the top grade and at least (p[1]+p[2])% of restaurants receive the top or second best grade for quantiles p, the algorithm searches for cutoffs so that as close as possible p[1]% of restaurants receive the top grade, and as close as possible to p[2]% of restaurants receive the second top grade.</p>
+<table summary="Package QuantileGradeR summary">
+<tr>
+<td>Version:</td>
+<td>0.1.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.2.3)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>stats</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2017-02-06</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Zoe Ashwood,
+    Becky Elias,
+    Daniel E. Ho</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Zoe Ashwood  &#x3c;&#x7a;&#x61;&#x73;&#x68;&#x77;&#x6f;&#x6f;&#x64;&#x20;&#x61;&#x74;&#x20;&#x6c;&#x61;&#x77;&#x2e;&#x73;&#x74;&#x61;&#x6e;&#x66;&#x6f;&#x72;&#x64;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://www.kingcounty.gov/depts/health/environmental-health/food-safety/inspection-system/food-safety-rating.aspx">http://www.kingcounty.gov/depts/health/environmental-health/food-safety/inspection-system/food-safety-rating.aspx</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_QuantileGradeR.html">QuantileGradeR results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package QuantileGradeR downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="QuantileGradeR.pdf"> QuantileGradeR.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/QuantileGradeR_0.1.1.tar.gz"> QuantileGradeR_0.1.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/QuantileGradeR_0.1.1.zip">QuantileGradeR_0.1.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/QuantileGradeR_0.1.1.zip">QuantileGradeR_0.1.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/QuantileGradeR_0.1.1.zip">QuantileGradeR_0.1.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/QuantileGradeR_0.1.1.tgz">QuantileGradeR_0.1.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/QuantileGradeR_0.1.1.tgz">QuantileGradeR_0.1.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/QuantileGradeR"> QuantileGradeR archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=QuantileGradeR"><samp>https://CRAN.R-project.org/package=QuantileGradeR</samp></a>
+to link to this page.</p>
+</body>
+</html>

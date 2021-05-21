@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package bamlss</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Bayesian Additive Models for Location, Scale, and Shape (and Beyond) [R package bamlss version 1.1-2]" />
+<meta name="citation_author1" content="Nikolaus Umlauf" />
+<meta name="citation_author2" content="Nadja Klein" />
+<meta name="citation_author3" content="Achim Zeileis" />
+<meta name="citation_author4" content="Thorsten Simon" />
+<meta name="citation_publication_date" content="2020-02-19" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=bamlss" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=bamlss" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="bamlss: Bayesian Additive Models for Location, Scale, and Shape (and Beyond)" />
+<meta name="og:description" content="Infrastructure for estimating probabilistic distributional regression models in a Bayesian framework. The distribution parameters may capture location, scale, shape, etc. and every parameter may depend on complex additive terms (fixed, random, smooth, spatial, etc.) similar to a generalized additive model. The conceptual and computational framework is introduced in Umlauf, Klein, Zeileis (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F10618600.2017.1407325&quot;&gt;doi:10.1080/10618600.2017.1407325&lt;/a&gt;&amp;gt; and the R package in Umlauf, Klein, Simon, Zeileis (2019) &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1909.11784&quot;&gt;arXiv:1909.11784&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=bamlss" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>bamlss: Bayesian Additive Models for Location, Scale, and Shape (and
+Beyond)</h2>
+<p>Infrastructure for estimating probabilistic distributional regression models in a Bayesian framework.
+  The distribution parameters may capture location, scale, shape, etc. and every parameter may depend
+  on complex additive terms (fixed, random, smooth, spatial, etc.) similar to a generalized additive model.
+  The conceptual and computational framework is introduced in Umlauf, Klein, Zeileis (2019)
+  &lt;<a href="https://doi.org/10.1080%2F10618600.2017.1407325">doi:10.1080/10618600.2017.1407325</a>&gt; and the R package in Umlauf, Klein, Simon, Zeileis (2019)
+  &lt;<a href="https://arxiv.org/abs/1909.11784">arXiv:1909.11784</a>&gt;.</p>
+<table summary="Package bamlss summary">
+<tr>
+<td>Version:</td>
+<td>1.1-2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0), <a href="../coda/index.html">coda</a>, <a href="../colorspace/index.html">colorspace</a>, <a href="../mgcv/index.html">mgcv</a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Formula/index.html">Formula</a>, <a href="../MBA/index.html">MBA</a>, <a href="../mvtnorm/index.html">mvtnorm</a>, <a href="../sp/index.html">sp</a>, <a href="../Matrix/index.html">Matrix</a>, <a href="../survival/index.html">survival</a>, methods, parallel, <a href="../raster/index.html">raster</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../akima/index.html">akima</a>, <a href="../ff/index.html">ff</a>, <a href="../ffbase/index.html">ffbase</a>, <a href="../fields/index.html">fields</a>, <a href="../gamlss/index.html">gamlss</a>, <a href="../geoR/index.html">geoR</a>, <a href="../rjags/index.html">rjags</a>, <a href="../BayesX/index.html">BayesX</a>, <a href="../BayesXsrc/index.html">BayesXsrc</a>, <a href="../R2BayesX/index.html">R2BayesX</a>, <a href="../mapdata/index.html">mapdata</a>, <a href="../maps/index.html">maps</a>, <a href="../maptools/index.html">maptools</a>, <a href="../nnet/index.html">nnet</a>, <a href="../spatstat/index.html">spatstat</a>, <a href="../spdep/index.html">spdep</a>, <a href="../zoo/index.html">zoo</a>, <a href="../keras/index.html">keras</a>, <a href="../splines2/index.html">splines2</a>, <a href="../sdPrior/index.html">sdPrior</a>, <a href="../statmod/index.html">statmod</a>, <a href="../glogis/index.html">glogis</a>, <a href="../glmnet/index.html">glmnet</a>, <a href="../scoringRules/index.html">scoringRules</a>, <a href="../knitr/index.html">knitr</a>, <a href="../MASS/index.html">MASS</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-02-19</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Nikolaus Umlauf <a href="https://orcid.org/0000-0003-2160-9803"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Nadja Klein [aut],
+  Achim Zeileis <a href="https://orcid.org/0000-0003-0918-3766"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Meike Koehler [ctb],
+  Thorsten Simon <a href="https://orcid.org/0000-0002-3778-7738"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Stanislaus Stadlmann [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Nikolaus Umlauf  &#x3c;&#x4e;&#x69;&#x6b;&#x6f;&#x6c;&#x61;&#x75;&#x73;&#x2e;&#x55;&#x6d;&#x6c;&#x61;&#x75;&#x66;&#x20;&#x61;&#x74;&#x20;&#x75;&#x69;&#x62;&#x6b;&#x2e;&#x61;&#x63;&#x2e;&#x61;&#x74;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://www.bamlss.org/">http://www.bamlss.org/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">bamlss citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Bayesian.html">Bayesian</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_bamlss.html">bamlss results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package bamlss downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="bamlss.pdf"> bamlss.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/bamlss.html">First Steps</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/bamlss_1.1-2.tar.gz"> bamlss_1.1-2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/bamlss_1.1-2.zip">bamlss_1.1-2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/bamlss_1.1-2.zip">bamlss_1.1-2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/bamlss_1.1-2.zip">bamlss_1.1-2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/bamlss_1.1-2.tgz">bamlss_1.1-2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/bamlss_1.1-2.tgz">bamlss_1.1-2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/bamlss"> bamlss archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package bamlss reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../distreg.vis/index.html">distreg.vis</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=bamlss"><samp>https://CRAN.R-project.org/package=bamlss</samp></a>
+to link to this page.</p>
+</body>
+</html>

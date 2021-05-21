@@ -1,0 +1,47 @@
+Package: CornerstoneR
+Version: 2.0.0
+Title: Collection of Scripts for Interface Between 'Cornerstone' and
+        'R'
+Description: Collection of generic 'R' scripts which enable you to use existing 'R' routines in 'Cornerstone'.
+ .
+        The desktop application 'Cornerstone' (<https://www.camline.com/en/products/cornerstone/cornerstone-core.html>)
+    is a data analysis software provided by 'camLine' that empowers engineering teams to find solutions even faster.
+    The engineers incorporate intensified hands-on statistics into their projects.
+    They benefit from an intuitive and uniquely designed graphical Workmap concept: you design
+    experiments (DoE) and explore data, analyze dependencies, and find answers you can act upon,
+    immediately, interactively, and without any programming.
+ .
+        While 'Cornerstone's' interface to the statistical programming language 'R' has been available
+    since version 6.0, the latest interface with 'R' is even much more efficient.
+    'Cornerstone' release 7.1.1 allows you to integrate user defined 'R' packages directly into the
+    standard 'Cornerstone' GUI.
+    Your engineering team stays in 'Cornerstone's' graphical working environment and can apply 'R'
+    routines, immediately and without the need to deal with programming code.
+    Additionally, your 'R' programming team develops corresponding 'R' packages detached from
+    'Cornerstone' in their favorite 'R' environment.
+ .
+        Learn how to use 'R' packages in 'Cornerstone' 7.1.1 on 'camLineTV' YouTube channel 
+    (<https://www.youtube.com/watch?v=HEQHwq_laXU>) (available in German).
+Authors@R: c(
+    person("Dirk", "Surmann", NULL, "dirk.surmann@camline.academy"
+           , role = c("aut", "cre"), comment = c(ORCID = "0000-0003-0873-137X"))
+    )
+URL: https://gitlab.com/camLine/CornerstoneR
+BugReports: https://gitlab.com/camLine/CornerstoneR/issues
+Language: en-US
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 3.2.1)
+Imports: checkmate (>= 1.9.1) , data.table (>= 1.10) , minpack.lm ,
+        ranger , SpatialTools , vcd
+Suggests: ggplot2 , knitr , prettydoc , rmarkdown , roxygen2 , testthat
+ByteCompile: yes
+LazyData: yes
+RoxygenNote: 7.1.0
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-05-16 13:28:09 UTC; surmannd
+Author: Dirk Surmann [aut, cre] (<https://orcid.org/0000-0003-0873-137X>)
+Maintainer: Dirk Surmann <dirk.surmann@camline.academy>
+Repository: CRAN
+Date/Publication: 2020-05-17 22:40:09 UTC

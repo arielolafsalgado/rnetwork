@@ -1,0 +1,62 @@
+Package: gmGeostats
+Version: 0.10-6
+Date: 2020-09-07
+Title: Geostatistics for Compositional Analysis
+Authors@R: c(person(given = "Raimon", 
+        family = "Tolosana-Delgado", 
+        role = c("aut"),
+        email = "r.tolosana@hzdr.de",
+        comment = c(ORCID = "0000-0001-9847-0462")),
+        person(given = "Ute", 
+        family = "Mueller", 
+        role = c("aut"),
+        email = "u.mueller@ecu.edu.au"),
+        person(given = "K. Gerald", 
+        family = "van den Boogaart", 
+        role = c("ctb", "cre"),
+        email = "support@boogaart.de"),
+        person(given = "Hassan", 
+        family = "Talebi", 
+        role = c("ctb", "cph"),
+        email = "hassan.talebi@csiro.au"),
+        person(given = "Helmholtz-Zentrum Dresden-Rossendorf", role = "cph"),
+        person(given = "Edith Cowan University", role = "cph")
+     )
+Depends: R (>= 2.10)
+Suggests: FNN, JADE, jointDiag, DescTools, knitr, rmarkdown (>= 2.3),
+        magrittr, readxl
+Imports: methods, gstat, compositions (>= 2.0), sp, boot, foreach,
+        utils, RColorBrewer
+Description: Support for geostatistical analysis of multivariate data, 
+         in particular data with restrictions, e.g. positive amounts data, 
+         compositional data, distributional data, microstructural data, etc. 
+         It includes descriptive analysis and modelling for such data, both 
+         from a two-point Gaussian perspective and multipoint perspective.
+         The methods mainly follow Tolosana-Delgado, Mueller and van den
+         Boogaart (2018) <doi:10.1007/s11004-018-9769-3>.
+License: CC BY-SA 4.0 | GPL (>= 2)
+URL: https://www.r-project.org, http://www.stat.boogaart.de
+Copyright: (C) 2020 by Helmholtz-Zentrum Dresden-Rossendorf and Edith
+        Cowan University; gsi.DS code by Hassan Talebi
+RoxygenNote: 7.1.0
+Encoding: UTF-8
+VignetteBuilder: knitr
+LazyData: true
+Collate: 'Anamorphosis.R' 'compositionsCompatibility.R'
+        'gstatCompatibility.R' 'variograms.R' 'gmValidationStrategy.R'
+        'gmAnisotropy.R' 'abstractClasses.R' 'accuracy.R' 'data.R'
+        'exploratools.R' 'genDiag.R' 'geostats.R' 'gmDataFrameStack.R'
+        'gmSimulation.R' 'gmSpatialMethodParameters.R'
+        'gmSpatialModel.R' 'grids.R' 'mask.R' 'spSupport.R'
+        'uncorrelationTest.R' 'zzz.R'
+NeedsCompilation: yes
+Packaged: 2020-09-08 13:43:49 UTC; tolosa53
+Author: Raimon Tolosana-Delgado [aut] (<https://orcid.org/0000-0001-9847-0462>),
+  Ute Mueller [aut],
+  K. Gerald van den Boogaart [ctb, cre],
+  Hassan Talebi [ctb, cph],
+  Helmholtz-Zentrum Dresden-Rossendorf [cph],
+  Edith Cowan University [cph]
+Maintainer: K. Gerald van den Boogaart <support@boogaart.de>
+Repository: CRAN
+Date/Publication: 2020-09-16 09:10:03 UTC

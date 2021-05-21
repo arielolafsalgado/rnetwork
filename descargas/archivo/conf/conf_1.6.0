@@ -1,0 +1,50 @@
+Package: conf
+Type: Package
+Title: Visualization and Analysis of Statistical Measures of Confidence
+Version: 1.6.0
+Authors@R: c(person("Christopher", "Weld", role = c("aut", "cre"), email = "ceweld@email.wm.edu", comment = c(ORCID = "0000-0001-5902-9738")), 
+  person("Hayeon", "Park", role = "aut"),
+  person("Lawrence", "Leemis", role = "aut"),
+  person("Andrew", "Loh", role = "ctb"),
+  person("Yuan", "Chang", role = "ctb"),
+  person("Brock", "Crook", role = "ctb"),
+  person("Xin", "Zhang", role = "ctb"))
+Maintainer: Christopher Weld <ceweld@email.wm.edu>
+Imports: graphics, stats, statmod, STAR, SDMTools, fitdistrplus
+Description: Enables: (1) plotting two-dimensional confidence regions, (2) coverage analysis
+  of confidence region simulations and (3) calculating confidence intervals and the associated 
+  actual coverage for binomial proportions. Each is given in greater detail next. 
+  (1) Plots the two-dimensional confidence region for probability distribution parameters 
+  (supported distribution suffixes: cauchy, gamma, invgauss, logis, llogis, lnorm, norm, unif, 
+  weibull) corresponding to a user-given complete or right-censored dataset and level of 
+  significance.  The crplot() algorithm plots more points in areas of greater curvature to 
+  ensure a smooth appearance throughout the confidence region boundary.  An alternative 
+  heuristic plots a specified number of points at roughly uniform intervals along its boundary. 
+  Both heuristics build upon the radial profile log-likelihood ratio technique for plotting 
+  confidence regions given by Jaeger (2016) <doi:10.1080/00031305.2016.1182946>, and
+  are detailed in a publication by Weld (2019) <doi:10.1080/00031305.2018.1564696>. 
+  (2) Performs confidence region coverage simulations for a random sample drawn from a user-
+  specified parametric population distribution, or for a user-specified dataset and point of 
+  interest with coversim(). (3) Calculates confidence interval bounds for a binomial 
+  proportion with binomTest(), calculates the actual coverage with binomTestCoverage(), and 
+  plots the actual coverage with binomTestCoveragePlot(). Calculates confidence interval 
+  bounds for the binomial proportion using an ensemble of constituent confidence intervals 
+  with binomTestEnsemble().
+Depends: R (>= 3.2.0)
+License: GPL (<= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-03-16 13:33:48 UTC; christopherweld
+Author: Christopher Weld [aut, cre] (<https://orcid.org/0000-0001-5902-9738>),
+  Hayeon Park [aut],
+  Lawrence Leemis [aut],
+  Andrew Loh [ctb],
+  Yuan Chang [ctb],
+  Brock Crook [ctb],
+  Xin Zhang [ctb]
+Repository: CRAN
+Date/Publication: 2019-03-16 20:03:46 UTC

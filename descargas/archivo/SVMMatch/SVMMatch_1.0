@@ -1,0 +1,16 @@
+Package: SVMMatch
+Type: Package
+Title: Causal Effect Estimation and Diagnostics with Support Vector
+        Machines
+Version: 1.0
+Date: 2015-02-05
+Author: Marc Ratkovic
+Maintainer: Marc Ratkovic <ratkovic@princeton.edu>
+Description: Causal effect estimation in observational data often requires identifying a set of untreated observations that are comparable to some treated group of interest.  This package provides a suite of functions for identifying such a set of observations and for implementing standard and new diagnostics tools.  The primary function, svmmatch(), uses support vector machines to identify a region of common support between treatment and control groups.  A sensitivity analysis, balance checking, and assessment of the region of overlap between treated and control groups is included.  The Bayesian implementation allows for recovery of uncertainty estimates for the treatment effect and all other parameters.
+License: GPL (>= 2)
+Depends: Rcpp (>= 0.10.3)
+LinkingTo: Rcpp, RcppArmadillo
+Packaged: 2015-02-07 02:11:33 UTC; ratkovic
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2015-02-07 10:43:17

@@ -1,0 +1,35 @@
+Package: reda
+Title: Recurrent Event Data Analysis
+Version: 0.2.1
+Date: 2015-11-28
+Authors@R: c(
+    person(given = "Wenjie", family = "Wang", 
+           email = "wenjie.2.wang@uconn.edu",
+           role = c("aut", "cre")),
+    person(given = "Haoda", family = "Fu", role = "aut"),
+    person(given = "Jun", family = "Yan", role = "ctb")
+    )
+Description: Functions that fit gamma frailty model with spline or piecewise
+    constant baseline rate function for recurrent event data, compute and
+    plot parametric mean cumulative function (MCF) from a fitted model
+    as well as nonparametric sample MCF (Nelson-Aalen estimator) are provided.
+    Most functions are S4 methods that produce S4 class objects.
+Imports: ggplot2, grDevices, methods, plyr, splines, stats, utils
+Suggests: knitr
+Depends: R (>= 3.2.0)
+License: GPL (>= 3)
+LazyData: true
+VignetteBuilder: knitr
+Collate: 'class.R' 'aic.R' 'baseline.R' 'coef.R' 'data.R' 'dataCheck.R'
+        'fit.R' 'mcf.R' 'plot.R' 'reda.R' 'show.R' 'summary.R'
+URL: https://github.com/wenjie2wang/reda
+BugReports: https://github.com/wenjie2wang/reda/issues
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2015-11-28 19:11:11 UTC; wenjie
+Author: Wenjie Wang [aut, cre],
+  Haoda Fu [aut],
+  Jun Yan [ctb]
+Maintainer: Wenjie Wang <wenjie.2.wang@uconn.edu>
+Repository: CRAN
+Date/Publication: 2015-11-28 23:18:33

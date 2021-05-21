@@ -1,0 +1,29 @@
+Type: Package
+Package: IRISSeismic
+Version: 1.0.5
+Title: Classes and Methods for Seismic Data Analysis
+Authors@R: c(
+    person("Jonathan", "Callahan", email="jonathan.s.callahan@gmail.com", role=c("aut","cre")),
+    person("Rob", "Casey", email="rob@iris.washington.edu", role=c("aut")),
+    person("Mary", "Templeton", email="met@iris.washington.edu", role=c("aut"))
+    )
+Author: Jonathan Callahan [aut, cre],
+    Rob Casey [aut],
+    Mary Templeton [aut]
+Maintainer: Jonathan Callahan <jonathan.s.callahan@gmail.com>
+Depends: R (>= 3.1.0)
+Imports: methods, pracma, RCurl, seismicRoll (>= 1.0.1), signal,
+        stringr, XML
+Suggests: mapdata, maps
+Description: Provides classes and methods for seismic data analysis. The
+             base classes and methods are inspired by the python code found in
+             the 'ObsPy' python toolbox <http://github.com/obsypy/obspy>. Additional classes and 
+             methods support data returned by web services provided by the 'IRIS
+             DMC' <http://service.iris.edu/>.
+Collate: Class-Trace.R Class-Stream.R Class-IrisClient.R
+        mseedWrappers.R Utils.R spectralUtils.R
+License: GPL (>= 2)
+Repository: CRAN
+Packaged: 2015-07-20 20:53:33 UTC; jonathan
+NeedsCompilation: yes
+Date/Publication: 2015-07-21 07:53:04

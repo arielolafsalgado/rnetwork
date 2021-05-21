@@ -1,0 +1,27 @@
+Package: superbiclust
+Type: Package
+Title: Generating Robust Biclusters from a Bicluster Set (Ensemble
+        Biclustering)
+Version: 0.1
+Date: 2012-08-23
+Author: Tatsiana Khamiakova
+Maintainer: Tatsiana Khamiakova <tatsiana.khamiakova@uhasselt.be>
+Depends: biclust, fabia
+Imports: methods, Matrix
+Description: Biclusters are submatrices in the data matrix which
+        satisfy certain conditions of homogeneity. Package contains
+        functions for generating robust biclusters with respect to the
+        initialization parameters for a given bicluster solution
+        contained in a bicluster set in data, the procedure is also
+        known as ensemble biclustering. The set of biclusters is
+        evaluated based on the similarity of its elements (the
+        overlap), and afterwards the hierarchical tree is constructed
+        to obtain cut-off points for the classes of robust biclusters.
+        The result is a number of robust (or super) biclusters with
+        none or low overlap.
+License: GPL (>= 2)
+LazyLoad: yes
+Packaged: 2013-04-23 08:40:09 UTC; lucp2149
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2013-04-23 12:08:10

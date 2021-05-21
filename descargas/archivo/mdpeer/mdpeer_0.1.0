@@ -1,0 +1,23 @@
+Package: mdpeer
+Title: Graph-Constrained Regression with Enhanced Regularization
+        Parameters Selection
+Version: 0.1.0
+Authors@R: c(person("Marta", "Karas", email = "marta.karass@gmail.com", role = c("aut", "cre")),
+             person("Damian", "Brzyski", email = "dbrzyski@iu.edu", role = "ctb"),
+             person("Jaroslaw", "Harezlak", email = "harezlak@iu.edu", role = "ctb"))
+Author: Marta Karas [aut, cre], Damian Brzyski [ctb], Jaroslaw Harezlak [ctb]
+Maintainer: Marta Karas <marta.karass@gmail.com>
+Description: Performs graph-constrained regularization in which regularization parameters are selected with the use of a known fact of equivalence between penalized regression and Linear Mixed Model solutions. Provides implementation of three different regression methods where graph-constraints among coefficients are accounted for. 'crPEER' (Partially Empirical Eigenvectors for Regression with Constant Ridge, Constant Ridge PEER) method utilizes additional Ridge term to handle the non-invertibility of a graph Laplacian matrix. 'vrPEER' (Variable Reduction PEER) method performs variable-reduction procedure to handle the non-invertibility of a graph Laplacian matrix. Finally, 'RidgePEER' method employs a penalty term being a linear combination of graph-originated and Ridge-originated penalty terms, whose two regularization parameters are ML estimators from corresponding Linear Mixed Model solution. Notably, in 'RidgePEER' method a graph-originated penalty term allows imposing similarity between coefficients based on graph information given whereas additional Ridge-originated penalty term facilitates parameters estimation: it reduces computational issues arising from singularity in a graph-originated penalty matrix and yields plausible results in situations when graph information is not informative or when it is unclear whether connectivities represented by a graph reflect similarities among corresponding coefficients.
+Depends: R (>= 3.3.1)
+Imports: MASS, glmgraph, magic, reshape2, ggplot2, scalreg, glmnet,
+        nlme, nloptr
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 5.0.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2016-11-25 12:29:43 UTC; mkaras
+Repository: CRAN
+Date/Publication: 2016-11-25 19:48:06

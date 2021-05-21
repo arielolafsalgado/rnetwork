@@ -1,0 +1,49 @@
+Package: BuyseTest
+Type: Package
+Title: Generalized Pairwise Comparisons
+Version: 1.5.0
+Date: 2018-09-26
+Authors@R: c(
+    person("Brice", "Ozenne", role = c("aut", "cre"), email = "brice.ozenne@orange.fr", comment = c(ORCID = "0000-0001-9694-2956")),
+    person("Julien", "Peron", role = "aut")
+	)
+Description: Implementation of the Generalized Pairwise Comparisons. This test
+    enables to compare two groups of observations in randomized trials(e.g treated
+    vs. control patients) on several prioritized outcomes. Pairwise comparisons
+    require consideration of all possible pairs of individuals, one taken from the
+    treatment group and the other taken from the control group. The outcomes of the
+    two individuals forming a pair are compared. Thresholds of minimal clinically
+    significant differences can be defined. It is possible to analyze simultaneously
+    several outcomes by prioritizing the variables that capture them. The highest
+    priority is assigned to the variable considered the most clinically relevant.
+    A natural way of handling uninformative or neutral pairs is to consider the
+    outcomes in descending order of priority: whenever a pair is uninformative or
+    neutral for an outcome of higher priority, the outcomes of lower priority are
+    examined In the case of time-to-event endpoint, four methods to handle censored
+    observations are available in this package (Gehan, Peto, Efron, and Peron).
+License: GPL-3
+URL: https://github.com/bozenne/BuyseTest
+BugReports: https://github.com/bozenne/BuyseTest/issues
+Depends: R (>= 2.10), prodlim, Rcpp, data.table
+Imports: doParallel, foreach, methods, lava, parallel, stats, stats4,
+        utils
+Suggests: knitr, pbapply, survival, testthat
+LinkingTo: Rcpp, RcppArmadillo
+SystemRequirements: C++11
+VignetteBuilder: knitr
+NeedsCompilation: yes
+RoxygenNote: 6.0.1
+Collate: '0-onLoad.R' '1-setGeneric.R' 'BuyseRes-object.R'
+        'BuyseRes-summary.R' 'BuyseRes-confint.R' 'BuyseRes_get.R'
+        'BuyseRes_show.R' 'BuyseTest-check.R' 'BuyseTest-inference.R'
+        'BuyseTest-initialization.R' 'BuyseTest-package.R'
+        'BuyseTest-print.R' 'BuyseTest.R' 'BuyseTest.options-object.R'
+        'BuyseTest.options.R' 'PairScore.R' 'RcppExports.R'
+        'constStrata.R' 'discreteRoot.R' 'seBuyseTest.R'
+        'simBuyseTest.R' 'valid.R'
+Packaged: 2018-09-26 07:59:14.932 UTC; hpl802
+Author: Brice Ozenne [aut, cre] (<https://orcid.org/0000-0001-9694-2956>),
+  Julien Peron [aut]
+Maintainer: Brice Ozenne <brice.ozenne@orange.fr>
+Repository: CRAN
+Date/Publication: 2018-09-26 14:20:14 UTC

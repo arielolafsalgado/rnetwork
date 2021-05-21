@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package subscreen</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=subscreen" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="subscreen: Systematic Screening of Study Data for Subgroup Effects" />
+<meta name="og:description" content="Identifying outcome relevant subgroups has now become as simple as possible! The formerly lengthy and tedious search for the needle in a haystack will be replaced by a single, comprehensive and coherent presentation. The central result of a subgroup screening is a diagram in which each single dot stands for a subgroup. The diagram may show thousands of them. The position of the dot in the diagram is determined by the sample size of the subgroup and the statistical measure of the treatment effect in that subgroup. The sample size is shown on the horizontal axis while the treatment effect is displayed on the vertical axis. Furthermore, the diagram shows the line of no effect and the overall study results. For small subgroups, which are found on the left side of the plot, larger random deviations from the mean study effect are expected, while for larger subgroups only small deviations from the study mean can be expected to be chance findings. So for a study with no conspicuous subgroup effects, the dots in the figure are expected to form a kind of funnel. Any deviations from this funnel shape hint to conspicuous subgroups. This approach was presented in Muysers (2020) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs43441-019-00082-6&quot;&gt;doi:10.1007/s43441-019-00082-6&lt;/a&gt;&amp;gt; and referenced in Ballarini (2020) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fpst.2012&quot;&gt;doi:10.1002/pst.2012&lt;/a&gt;&amp;gt;. New to version 3 is the Automatic Screening of one- or MUlti-factorial Subgroups (ASMUS) for documentation of the structured review of subgroup findings." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=subscreen" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>subscreen: Systematic Screening of Study Data for Subgroup Effects</h2>
+<p>Identifying outcome relevant subgroups has now become as simple as possible! The formerly lengthy and tedious search for the needle in a haystack will be replaced by a single, comprehensive and coherent presentation.
+ The central result of a subgroup screening is a diagram in which each single dot stands for a subgroup.
+ The diagram may show thousands of them. The position of the dot in the diagram is determined by the
+ sample size of the subgroup and the statistical measure of the treatment effect in that subgroup. The
+ sample size is shown on the horizontal axis while the treatment effect is displayed on the vertical axis. Furthermore,
+ the diagram shows the line of no effect and the overall study results. For small subgroups, which
+ are found on the left side of the plot, larger random deviations from the mean study effect are expected,
+ while for larger subgroups only small deviations from the study mean can be expected to be chance findings.
+ So for a study with no conspicuous subgroup effects, the dots in the figure are expected to form a
+ kind of funnel. Any deviations from this funnel shape hint to conspicuous subgroups.
+ This approach was presented in Muysers (2020) &lt;<a href="https://doi.org/10.1007%2Fs43441-019-00082-6">doi:10.1007/s43441-019-00082-6</a>&gt; and referenced in Ballarini (2020) &lt;<a href="https://doi.org/10.1002%2Fpst.2012">doi:10.1002/pst.2012</a>&gt;.
+ New to version 3 is the Automatic Screening of one- or MUlti-factorial Subgroups (ASMUS) for documentation of the structured review of subgroup findings.</p>
+<table summary="Package subscreen summary">
+<tr>
+<td>Version:</td>
+<td>3.0.1</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>utils, <a href="../plyr/index.html">plyr</a>, <a href="../data.table/index.html">data.table</a>, grDevices, graphics, <a href="../shiny/index.html">shiny</a>, <a href="../DT/index.html">DT</a>, stats, <a href="../shinyjs/index.html">shinyjs</a>, <a href="../bsplus/index.html">bsplus</a>, <a href="../jsonlite/index.html">jsonlite</a>, <a href="../colourpicker/index.html">colourpicker</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../randomForestSRC/index.html">randomForestSRC</a>, <a href="../V8/index.html">V8</a>, <a href="../purrr/index.html">purrr</a>, <a href="../shinyWidgets/index.html">shinyWidgets</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td>parallel, <a href="../survival/index.html">survival</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-27</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Bodo Kirsch, Steffen Jeske, Susanne Lippert, Thomas Schmelter, Christoph Muysers, Hermann Kulmann</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Bodo Kirsch  &#x3c;&#x62;&#x6f;&#x64;&#x6f;&#x2e;&#x6b;&#x69;&#x72;&#x73;&#x63;&#x68;&#x20;&#x61;&#x74;&#x20;&#x62;&#x61;&#x79;&#x65;&#x72;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_subscreen.html">subscreen results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package subscreen downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="subscreen.pdf"> subscreen.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/subscreen.html">subscreen Package Manual</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/subscreen_3.0.1.tar.gz"> subscreen_3.0.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/subscreen_3.0.0.zip">subscreen_3.0.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/subscreen_3.0.1.zip">subscreen_3.0.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/subscreen_3.0.0.zip">subscreen_3.0.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/subscreen_3.0.0.tgz">subscreen_3.0.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/subscreen_3.0.0.tgz">subscreen_3.0.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/subscreen"> subscreen archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=subscreen"><samp>https://CRAN.R-project.org/package=subscreen</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package broom.mixed</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Tidying Methods for Mixed Models [R package broom.mixed version 0.2.6]" />
+<meta name="citation_author1" content="Ben Bolker" />
+<meta name="citation_author2" content="David Robinson" />
+<meta name="citation_publication_date" content="2020-05-17" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=broom.mixed" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=broom.mixed" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="broom.mixed: Tidying Methods for Mixed Models" />
+<meta name="og:description" content="Convert fitted objects from various R mixed-model packages into tidy data frames along the lines of the 'broom' package. The package provides three S3 generics for each model: tidy(), which summarizes a model's statistical findings such as coefficients of a regression; augment(), which adds columns to the original data such as predictions, residuals and cluster assignments; and glance(), which provides a one-row summary of model-level statistics." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=broom.mixed" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>broom.mixed: Tidying Methods for Mixed Models</h2>
+<p>Convert fitted objects from various R mixed-model packages
+    into tidy data frames along the lines of the 'broom' package.
+    The package provides three
+    S3 generics for each model: tidy(), which summarizes a model's statistical findings such as
+    coefficients of a regression; augment(), which adds columns to the original
+    data such as predictions, residuals and cluster assignments; and glance(), which
+    provides a one-row summary of model-level statistics.</p>
+<table summary="Package broom.mixed summary">
+<tr>
+<td>Version:</td>
+<td>0.2.6</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../broom/index.html">broom</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../tidyr/index.html">tidyr</a>, <a href="../plyr/index.html">plyr</a>, <a href="../purrr/index.html">purrr</a>, <a href="../tibble/index.html">tibble</a>, <a href="../reshape2/index.html">reshape2</a>, <a href="../nlme/index.html">nlme</a>, methods, <a href="../stringr/index.html">stringr</a>, <a href="../coda/index.html">coda</a>, <a href="../TMB/index.html">TMB</a>, <a href="../cubelyr/index.html">cubelyr</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../testthat/index.html">testthat</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../Matrix/index.html">Matrix</a>, <a href="../MCMCglmm/index.html">MCMCglmm</a>, <a href="../lme4/index.html">lme4</a>, <a href="../brms/index.html">brms</a>, <a href="../mgcv/index.html">mgcv</a>, <a href="../gamlss/index.html">gamlss</a>, <a href="../gamlss.data/index.html">gamlss.data</a>, <a href="../lmerTest/index.html">lmerTest</a>, <a href="../pbkrtest/index.html">pbkrtest</a>, glmmADMB, <a href="../glmmTMB/index.html">glmmTMB</a>, <a href="../dotwhisker/index.html">dotwhisker</a>, <a href="../pander/index.html">pander</a>, <a href="../R2jags/index.html">R2jags</a>, <a href="../GLMMadaptive/index.html">GLMMadaptive</a>, <a href="../rstan/index.html">rstan</a>, <a href="../rstanarm/index.html">rstanarm</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-05-17</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Ben Bolker <a href="https://orcid.org/0000-0002-2127-0443"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    cre],
+  David Robinson [aut],
+  Dieter Menne [ctb],
+  Jonah Gabry [ctb],
+  Paul Buerkner [ctb],
+  Christopher Hua [ctb],
+  William Petry <a href="https://orcid.org/0000-0002-5230-5987"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Joshua Wiley <a href="https://orcid.org/0000-0002-0271-6702"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Patrick Kennedy [ctb],
+  Eduard Szöcs <a href="https://orcid.org/0000-0001-5376-1194"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb] (BASF SE),
+  Indrajeet Patil [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Ben Bolker  &#x3c;&#x62;&#x6f;&#x6c;&#x6b;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x6d;&#x63;&#x6d;&#x61;&#x73;&#x74;&#x65;&#x72;&#x2e;&#x63;&#x61;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="http://github.com/bbolker/broom.mixed/issues">http://github.com/bbolker/broom.mixed/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://github.com/bbolker/broom.mixed">http://github.com/bbolker/broom.mixed</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_broom.mixed.html">broom.mixed results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package broom.mixed downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="broom.mixed.pdf"> broom.mixed.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/broom_mixed_intro.html">introduction to broom.mixed</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/broom.mixed_0.2.6.tar.gz"> broom.mixed_0.2.6.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/broom.mixed_0.2.6.zip">broom.mixed_0.2.6.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/broom.mixed_0.2.6.zip">broom.mixed_0.2.6.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/broom.mixed_0.2.6.zip">broom.mixed_0.2.6.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/broom.mixed_0.2.6.tgz">broom.mixed_0.2.6.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/broom.mixed_0.2.6.tgz">broom.mixed_0.2.6.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/broom.mixed"> broom.mixed archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package broom.mixed reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../broomExtra/index.html">broomExtra</a>, <a href="../cvms/index.html">cvms</a>, <a href="../glmmfields/index.html">glmmfields</a>, <a href="../gtsummary/index.html">gtsummary</a>, <a href="../hmi/index.html">hmi</a>, <a href="../konfound/index.html">konfound</a>, <a href="../merTools/index.html">merTools</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../broom.helpers/index.html">broom.helpers</a>, <a href="../faux/index.html">faux</a>, <a href="../glmmTMB/index.html">glmmTMB</a>, <a href="../huxtable/index.html">huxtable</a>, <a href="../jtools/index.html">jtools</a>, <a href="../mice/index.html">mice</a>, <a href="../modelsummary/index.html">modelsummary</a>, <a href="../panelr/index.html">panelr</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=broom.mixed"><samp>https://CRAN.R-project.org/package=broom.mixed</samp></a>
+to link to this page.</p>
+</body>
+</html>

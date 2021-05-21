@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package SourceSet</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="A Graphical Model Approach to Identify Primary Genes in Perturbed Biological Pathways [R package SourceSet version 0.1.3]" />
+<meta name="citation_author1" content="Elisa Salviato" />
+<meta name="citation_author2" content="Vera Djordjilovic" />
+<meta name="citation_author3" content="Chiara Romualdi" />
+<meta name="citation_author4" content="Monica Chiogna" />
+<meta name="citation_publication_date" content="2019-10-18" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=SourceSet" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=SourceSet" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="SourceSet: A Graphical Model Approach to Identify Primary Genes in Perturbed Biological Pathways" />
+<meta name="og:description" content="The algorithm pursues the identification of the set of variables driving the differences in two different experimental conditions (i.e., the primary genes) within a graphical model context. It uses the idea of simultaneously looking for the differences between two multivariate normal distributions in all marginal and conditional distributions associated with a decomposable graph, which represents the pathway under exam. The implementation accommodates genomics specific issues (low sample size and multiple testing issues) and provides a number of functions offering numerical and visual summaries to help the user interpret the obtained results. In order to use the (optional) 'Cytoscape' functionalities, the suggested 'r2cytoscape' package must be installed from the 'GitHub' repository ('devtools::install_github('cytoscape/r2cytoscape')'). " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=SourceSet" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>SourceSet: A Graphical Model Approach to Identify Primary Genes in
+Perturbed Biological Pathways</h2>
+<p>The algorithm pursues the identification of the set of variables driving the differences in two different experimental conditions (i.e., the primary genes) within a graphical model context. It uses the idea of simultaneously looking for the differences between two multivariate normal distributions in all marginal and conditional distributions associated with a decomposable graph, which represents the pathway under exam. The implementation accommodates genomics specific issues (low sample size and multiple testing issues) and provides a number of functions offering numerical and visual summaries to help the user interpret the obtained results. In order to use the (optional) 'Cytoscape' functionalities, the suggested 'r2cytoscape' package must be installed from the 'GitHub' repository ('devtools::install_github('cytoscape/r2cytoscape')'). </p>
+<table summary="Package SourceSet summary">
+<tr>
+<td>Version:</td>
+<td>0.1.3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../gRbase/index.html">gRbase</a>, <a href="../progress/index.html">progress</a>, <a href="../reshape2/index.html">reshape2</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/graph.html"><span class="BioC">graph</span></a>, <a href="../igraph/index.html">igraph</a>, <a href="../gtools/index.html">gtools</a>, methods, <a href="../plyr/index.html">plyr</a>, <a href="../scales/index.html">scales</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../networkD3/index.html">networkD3</a>, <a href="../ggplot2/index.html">ggplot2</a>, grDevices, <a href="http://www.bioconductor.org/packages/release/bioc/html/Rgraphviz.html"><span class="BioC">Rgraphviz</span></a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, r2cytoscape, <a href="http://www.bioconductor.org/packages/release/bioc/html/BiocStyle.html"><span class="BioC">BiocStyle</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/Biobase.html"><span class="BioC">Biobase</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/graphite.html"><span class="BioC">graphite</span></a>, <a href="http://www.bioconductor.org/packages/release/data/annotation/html/hgu95av2.db.html"><span class="BioC">hgu95av2.db</span></a>, <a href="http://www.bioconductor.org/packages/release/data/experiment/html/ALL.html"><span class="BioC">ALL</span></a>, <a href="../mvtnorm/index.html">mvtnorm</a>, <a href="http://www.bioconductor.org/packages/release/data/annotation/html/org.Hs.eg.db.html"><span class="BioC">org.Hs.eg.db</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-10-18</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Elisa Salviato [aut, cre],
+  Vera Djordjilovic [aut],
+  Chiara Romualdi [aut],
+  Monica Chiogna [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Elisa Salviato  &#x3c;&#x65;&#x6c;&#x69;&#x73;&#x61;&#x2e;&#x73;&#x61;&#x6c;&#x76;&#x69;&#x61;&#x74;&#x6f;&#x2e;&#x38;&#x38;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/AGPL-3">AGPL-3</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_SourceSet.html">SourceSet results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package SourceSet downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="SourceSet.pdf"> SourceSet.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/SourceSet.html">SourceSet package</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/SourceSet_0.1.3.tar.gz"> SourceSet_0.1.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/SourceSet_0.1.3.zip">SourceSet_0.1.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/SourceSet_0.1.3.zip">SourceSet_0.1.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/SourceSet_0.1.3.zip">SourceSet_0.1.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/SourceSet_0.1.3.tgz">SourceSet_0.1.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/SourceSet_0.1.3.tgz">SourceSet_0.1.3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/SourceSet"> SourceSet archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=SourceSet"><samp>https://CRAN.R-project.org/package=SourceSet</samp></a>
+to link to this page.</p>
+</body>
+</html>

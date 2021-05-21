@@ -1,0 +1,64 @@
+Package: economiccomplexity
+Type: Package
+Title: Computational Methods for Economic Complexity
+Version: 1.0
+Authors@R: c(
+    person(given = "Mauricio",
+      family = "Vargas",
+      role = c("aut", "cre", "cph"),
+      email = "mvargas@dcc.uchile.cl",
+      comment = c(ORCID = "0000-0003-1017-7574")
+    ),
+    person(given = "Carlo",
+      family = "Bottai",
+      role = "ctb",
+      comment = "improved the eigenvalues calculation"
+    ),
+    person(given = "Diego",
+      family = "Kozlowski",
+      role = "ctb",
+      comment = "provided initial RCA function used up to v0.2.4"
+    ),
+    person(given = "Nico",
+      family = "Pintar",
+      role = "rev",
+      comment = "suggested improvements to special cases in eigenvalues 
+      calculation"
+    ),
+    person(family = "The World Bank",
+      role = "dtc",
+      comment = "World GDP per capita dataset"
+    ),
+    person(family = "Open Trade Statistics",
+      role = "dtc",
+      comment = "World Trade dataset"
+    )
+  )
+Description: A wrapper of different methods from Linear Algebra for the equations
+  introduced in The Atlas of Economic Complexity and related literature. This
+  package provides standard matrix and graph output that can be used seamlessly
+  with other packages.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5)
+Imports: Matrix, igraph
+Suggests: testthat (>= 2.1.0), knitr, Rdpack, ggraph
+URL: https://pachamaltese.github.io/economiccomplexity
+BugReports: http://github.com/pachamaltese/economiccomplexity/issues
+RdMacros: Rdpack
+RoxygenNote: 7.0.2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-02-20 03:56:26 UTC; pacha
+Author: Mauricio Vargas [aut, cre, cph]
+    (<https://orcid.org/0000-0003-1017-7574>),
+  Carlo Bottai [ctb] (improved the eigenvalues calculation),
+  Diego Kozlowski [ctb] (provided initial RCA function used up to v0.2.4),
+  Nico Pintar [rev] (suggested improvements to special cases in
+    eigenvalues calculation),
+  The World Bank [dtc] (World GDP per capita dataset),
+  Open Trade Statistics [dtc] (World Trade dataset)
+Maintainer: Mauricio Vargas <mvargas@dcc.uchile.cl>
+Repository: CRAN
+Date/Publication: 2020-02-20 05:50:02 UTC

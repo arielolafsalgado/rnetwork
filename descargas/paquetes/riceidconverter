@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package riceidconverter</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=riceidconverter" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="riceidconverter: Convert Biological ID from RAP or MSU to SYMBOL for Oryza Sativa" />
+<meta name="og:description" content="Convert one biological ID to another of rice (Oryza sativa). Rice(Oryza sativa) has more than one form gene ID for the genome. The two main gene ID for rice genome are the RAP (The Rice Annotation Project, &amp;lt;&lt;a href=&quot;https://rapdb.dna.affrc.go.jp/&quot;&gt;https://rapdb.dna.affrc.go.jp/&lt;/a&gt;&amp;gt;, and the MSU(The Rice Genome Annotation Project, &amp;lt;&lt;a href=&quot;http://rice.plantbiology.msu.edu/&quot;&gt;http://rice.plantbiology.msu.edu/&lt;/a&gt;&amp;gt;. All RAP rice gene IDs are of the form Os##g####### as explained on the website &amp;lt;&lt;a href=&quot;https://rapdb.dna.affrc.go.jp/&quot;&gt;https://rapdb.dna.affrc.go.jp/&lt;/a&gt;&amp;gt;. All MSU rice gene IDs are of the form LOC_Os##g##### as explained on the website &amp;lt;&lt;a href=&quot;http://rice.plantbiology.msu.edu/analyses_nomenclature.shtml&quot;&gt;http://rice.plantbiology.msu.edu/analyses_nomenclature.shtml&lt;/a&gt;&amp;gt;. All SYMBOL rice gene IDs are the unique name on the NCBI(National Center for Biotechnology Information, &amp;lt;&lt;a href=&quot;https://www.ncbi.nlm.nih.gov/&quot;&gt;https://www.ncbi.nlm.nih.gov/&lt;/a&gt;&amp;gt;. The TRANSCRIPTID, is the transcript id of rice, are of the form Os##t#######. The researchers usually need to converter between various IDs. Such as converter RAP to SYMBOLS for function searching on NCBI. There are a lot of websites with the function for converting RAP to MSU or MSU to RA, such as 'ID Converter' &amp;lt;&lt;a href=&quot;https://rapdb.dna.affrc.go.jp/tools/converter&quot;&gt;https://rapdb.dna.affrc.go.jp/tools/converter&lt;/a&gt;&amp;gt;. But it is difficult to convert super multiple IDs on these websites. The package can convert all IDs between the three IDs (RAP, MSU and SYMBOL) regardless of the number." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=riceidconverter" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>riceidconverter: Convert Biological ID from RAP or MSU to SYMBOL for Oryza Sativa</h2>
+<p>Convert one biological ID to another of rice (Oryza sativa).
+    Rice(Oryza sativa) has more than one form gene ID for the genome. 
+    The two main gene ID for rice genome are  the RAP (The Rice Annotation Project, &lt;<a href="https://rapdb.dna.affrc.go.jp/">https://rapdb.dna.affrc.go.jp/</a>&gt;, 
+    and the MSU(The Rice Genome Annotation Project, &lt;<a href="http://rice.plantbiology.msu.edu/">http://rice.plantbiology.msu.edu/</a>&gt;.
+    All RAP rice gene IDs are of the form Os##g####### as explained on the website &lt;<a href="https://rapdb.dna.affrc.go.jp/">https://rapdb.dna.affrc.go.jp/</a>&gt;.
+    All MSU rice gene IDs are of the form LOC_Os##g##### as explained on the website &lt;<a href="http://rice.plantbiology.msu.edu/analyses_nomenclature.shtml">http://rice.plantbiology.msu.edu/analyses_nomenclature.shtml</a>&gt;.
+    All SYMBOL rice gene IDs are the unique name on the NCBI(National Center for Biotechnology Information, &lt;<a href="https://www.ncbi.nlm.nih.gov/">https://www.ncbi.nlm.nih.gov/</a>&gt;.
+    The TRANSCRIPTID, is the transcript id of rice, are of the form Os##t#######.
+    The researchers usually need to converter between various IDs. Such as converter RAP to SYMBOLS for function searching on NCBI.
+    There are a lot of websites with the function for converting RAP to MSU or MSU to RA, such as 'ID Converter' &lt;<a href="https://rapdb.dna.affrc.go.jp/tools/converter">https://rapdb.dna.affrc.go.jp/tools/converter</a>&gt;.
+    But it is difficult to convert super multiple IDs on these websites.
+    The package can convert all IDs between the three IDs (RAP, MSU and SYMBOL) regardless of the number.</p>
+<table summary="Package riceidconverter summary">
+<tr>
+<td>Version:</td>
+<td>1.1.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../dplyr/index.html">dplyr</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-02-14</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Xiang LI</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Xiang LI  &#x3c;&#x79;&#x6e;&#x61;&#x75;&#x6c;&#x78;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/Artistic-2.0">Artistic-2.0</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_riceidconverter.html">riceidconverter results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package riceidconverter downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="riceidconverter.pdf"> riceidconverter.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/riceidconverter_1.1.1.tar.gz"> riceidconverter_1.1.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/riceidconverter_1.1.1.zip">riceidconverter_1.1.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/riceidconverter_1.1.1.zip">riceidconverter_1.1.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/riceidconverter_1.1.1.zip">riceidconverter_1.1.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/riceidconverter_1.1.1.tgz">riceidconverter_1.1.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/riceidconverter_1.1.1.tgz">riceidconverter_1.1.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/riceidconverter"> riceidconverter archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package riceidconverter reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../ricegeneann/index.html">ricegeneann</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=riceidconverter"><samp>https://CRAN.R-project.org/package=riceidconverter</samp></a>
+to link to this page.</p>
+</body>
+</html>

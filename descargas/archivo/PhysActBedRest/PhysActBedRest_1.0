@@ -1,0 +1,15 @@
+Package: PhysActBedRest
+Type: Package
+Title: Marks Periods of 'Bedrest' in Actigraph Accelerometer Data
+Version: 1.0
+Date: 2016-4-5
+Author: J. Dustin Tracy, Zhiyi Xu, Sari Acra, Kong Y. Chen, Maciej S. Buchowski
+Maintainer: J. Dustin Tracy <jtracy2@student.gsu.edu>
+Depends: R (>= 2.10), chron, stringr
+Imports: lubridate
+Description: Contains a function to categorize accelerometer readings collected in free-living (e.g., for 24 hours/day for 7 days), preprocessed and compressed as counts (unit-less value) in a specified time period termed epoch (e.g., 1 minute) as either bedrest (sleep) or active.  The input is a matrix with a timestamp column and a column with number of counts per epoch. The output is the same dataframe with an additional column termed bedrest. In the bedrest column each line (epoch) contains a function-generated classification 'br' or 'a' denoting bedrest/sleep and activity, respectively.  The package is designed to be used after wear/nonwear marking function in the 'PhysicalActivity' package.  
+License: GPL (>= 3)
+NeedsCompilation: no
+Packaged: 2016-04-06 13:50:34 UTC; Dustin
+Repository: CRAN
+Date/Publication: 2016-04-06 16:21:27

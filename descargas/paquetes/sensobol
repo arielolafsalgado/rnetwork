@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package sensobol</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Computation of High-Order Sobol' Sensitivity Indices [R package sensobol version 0.2.2]" />
+<meta name="citation_author" content="Arnald Puy" />
+<meta name="citation_publication_date" content="2020-02-25" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=sensobol" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=sensobol" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="sensobol: Computation of High-Order Sobol' Sensitivity Indices" />
+<meta name="og:description" content="It allows to rapidly compute, bootstrap and plot up to third-order Sobol' indices using the estimators by Saltelli et al. 2010 &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.cpc.2009.09.018&quot;&gt;doi:10.1016/j.cpc.2009.09.018&lt;/a&gt;&amp;gt; and Jansen 1999 &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2FS0010-4655%2898%2900154-4&quot;&gt;doi:10.1016/S0010-4655(98)00154-4&lt;/a&gt;&amp;gt;. The 'sensobol' package also implements the algorithm by Khorashadi Zadeh et al. 2017 &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.envsoft.2017.02.001&quot;&gt;doi:10.1016/j.envsoft.2017.02.001&lt;/a&gt;&amp;gt; to calculate the approximation error in the computation of Sobol' first and total indices, an approach that allows to robustly screen influential from non-influential model inputs. Finally, it also provides functions to obtain publication-ready figures of the model output uncertainty and sensitivity-related analysis." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=sensobol" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>sensobol: Computation of High-Order Sobol' Sensitivity Indices</h2>
+<p>It allows to rapidly compute, bootstrap and plot up to third-order Sobol' indices
+    using the estimators by Saltelli et al. 2010 &lt;<a href="https://doi.org/10.1016%2Fj.cpc.2009.09.018">doi:10.1016/j.cpc.2009.09.018</a>&gt; and 
+    Jansen 1999 &lt;<a href="https://doi.org/10.1016%2FS0010-4655%2898%2900154-4">doi:10.1016/S0010-4655(98)00154-4</a>&gt;. The 'sensobol' package also implements
+    the algorithm by Khorashadi Zadeh et al. 2017 &lt;<a href="https://doi.org/10.1016%2Fj.envsoft.2017.02.001">doi:10.1016/j.envsoft.2017.02.001</a>&gt; to 
+    calculate the approximation error in the computation of Sobol' first and
+    total indices, an approach that allows to robustly screen influential from non-influential
+    model inputs. Finally, it also provides functions to obtain publication-ready figures
+    of the model output uncertainty and sensitivity-related analysis.</p>
+<table summary="Package sensobol summary">
+<tr>
+<td>Version:</td>
+<td>0.2.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.4.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../boot/index.html">boot</a> (&ge; 1.3.20), <a href="../data.table/index.html">data.table</a> (&ge; 1.12.0), <a href="../ggplot2/index.html">ggplot2</a> (&ge; 3.1.0), <a href="../magrittr/index.html">magrittr</a> (&ge; 1.5), <a href="../matrixStats/index.html">matrixStats</a> (&ge; 0.54.0), <a href="../randtoolbox/index.html">randtoolbox</a> (&ge;
+1.17.1), <a href="../Rdpack/index.html">Rdpack</a> (&ge; 0.7), <a href="../rlang/index.html">rlang</a> (&ge; 0.3.1), <a href="../scales/index.html">scales</a> (&ge; 1.0.0), stats, <a href="../stringr/index.html">stringr</a> (&ge; 1.4.0), utils</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../testthat/index.html">testthat</a>, <a href="../covr/index.html">covr</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-02-25</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Arnald Puy <a href="https://orcid.org/0000-0001-9469-2156"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    cre],
+  Bertrand Ioos [ctb] (Author of included 'sensitivity' fragments),
+  Gilles Pujol [ctb] (Author of included 'sensitivity' fragments),
+  RStudio [cph] (Copyright holder of included 'sensitivity' fragments)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Arnald Puy  &#x3c;&#x61;&#x72;&#x6e;&#x61;&#x6c;&#x64;&#x2e;&#x70;&#x75;&#x79;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="http://github.com/arnaldpuy/sensobol/issues">http://github.com/arnaldpuy/sensobol/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://github.com/arnaldpuy/sensobol">http://github.com/arnaldpuy/sensobol</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_sensobol.html">sensobol results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package sensobol downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="sensobol.pdf"> sensobol.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/sensobol.html">sensobol</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/sensobol_0.2.2.tar.gz"> sensobol_0.2.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/sensobol_0.2.2.zip">sensobol_0.2.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/sensobol_0.2.2.zip">sensobol_0.2.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/sensobol_0.2.2.zip">sensobol_0.2.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/sensobol_0.2.2.tgz">sensobol_0.2.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/sensobol_0.2.2.tgz">sensobol_0.2.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/sensobol"> sensobol archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=sensobol"><samp>https://CRAN.R-project.org/package=sensobol</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package TreeSearch</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Phylogenetic Tree Search Using Custom Optimality Criteria [R package TreeSearch version 0.4.3]" />
+<meta name="citation_author" content="Martin R. Smith" />
+<meta name="citation_publication_date" content="2020-07-09" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=TreeSearch" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=TreeSearch" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="TreeSearch: Phylogenetic Tree Search Using Custom Optimality Criteria" />
+<meta name="og:description" content="Searches for phylogenetic trees that are optimal using a user-defined criterion. Handles inapplicable data using the algorithm of Brazeau, Guillerme and Smith (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fsysbio%2Fsyy083&quot;&gt;doi:10.1093/sysbio/syy083&lt;/a&gt;&amp;gt;. Implements Profile Parsimony (Faith and Trueman, 2001) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F10635150118627&quot;&gt;doi:10.1080/10635150118627&lt;/a&gt;&amp;gt;, and Successive Approximations (Farris, 1969) &amp;lt;&lt;a href=&quot;https://doi.org/10.2307%2F2412182&quot;&gt;doi:10.2307/2412182&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=TreeSearch" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>TreeSearch: Phylogenetic Tree Search Using Custom Optimality Criteria</h2>
+<p>Searches for phylogenetic trees that are optimal using a 
+  user-defined criterion. 
+  Handles inapplicable data using the algorithm of 
+  Brazeau, Guillerme and Smith (2019) &lt;<a href="https://doi.org/10.1093%2Fsysbio%2Fsyy083">doi:10.1093/sysbio/syy083</a>&gt;.
+  Implements Profile Parsimony (Faith and Trueman, 2001) 
+  &lt;<a href="https://doi.org/10.1080%2F10635150118627">doi:10.1080/10635150118627</a>&gt;, and Successive Approximations (Farris, 1969) 
+  &lt;<a href="https://doi.org/10.2307%2F2412182">doi:10.2307/2412182</a>&gt;.</p>
+<table summary="Package TreeSearch summary">
+<tr>
+<td>Version:</td>
+<td>0.4.3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../ape/index.html">ape</a> (&ge; 5.0), <a href="../phangorn/index.html">phangorn</a> (&ge; 2.2.1), <a href="../R.cache/index.html">R.cache</a>, <a href="../Rdpack/index.html">Rdpack</a>, stats, <a href="../TreeTools/index.html">TreeTools</a> (&ge; 1.0.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../shiny/index.html">shiny</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-07-09</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Martin R. Smith <a href="https://orcid.org/0000-0001-5660-1727"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre, cph],
+  Martin Brazeau <a href="https://orcid.org/0000-0002-0650-1282"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Martin R. Smith  &#x3c;&#x6d;&#x61;&#x72;&#x74;&#x69;&#x6e;&#x2e;&#x73;&#x6d;&#x69;&#x74;&#x68;&#x20;&#x61;&#x74;&#x20;&#x64;&#x75;&#x72;&#x68;&#x61;&#x6d;&#x2e;&#x61;&#x63;&#x2e;&#x75;&#x6b;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ms609/TreeSearch/issues">https://github.com/ms609/TreeSearch/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL (&ge; 3)</a></td>
+</tr>
+<tr>
+<td>Copyright:</td>
+<td>Incorporates C/C++ code from Morphy Phylogenetic Library by
+Martin Brazeau &lt;https://github.com/mbrazeau/MorphyLib&gt; (GPL3)</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://ms609.github.io/TreeSearch">https://ms609.github.io/TreeSearch</a>,
+<a href="https://github.com/ms609/TreeSearch">https://github.com/ms609/TreeSearch</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-GB</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">TreeSearch citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_TreeSearch.html">TreeSearch results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package TreeSearch downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="TreeSearch.pdf"> TreeSearch.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/getting-started.html">Getting started: installation and setup</a><br/>
+<a href="vignettes/inapplicable.html">Tree search with inapplicable data</a><br/>
+<a href="vignettes/profile-scores.html">Calculating concavity profiles for profile parsimony</a><br/>
+<a href="vignettes/profile.html">Tree search with profile parsimony</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/TreeSearch_0.4.3.tar.gz"> TreeSearch_0.4.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/TreeSearch_0.4.3.zip">TreeSearch_0.4.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/TreeSearch_0.4.3.zip">TreeSearch_0.4.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/TreeSearch_0.4.3.zip">TreeSearch_0.4.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/TreeSearch_0.4.3.tgz">TreeSearch_0.4.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/TreeSearch_0.4.3.tgz">TreeSearch_0.4.3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/TreeSearch"> TreeSearch archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package TreeSearch reverse dependencies">
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../CongreveLamsdell2016/index.html">CongreveLamsdell2016</a>, <a href="../TreeDist/index.html">TreeDist</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=TreeSearch"><samp>https://CRAN.R-project.org/package=TreeSearch</samp></a>
+to link to this page.</p>
+</body>
+</html>

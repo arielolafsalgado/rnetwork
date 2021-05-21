@@ -1,0 +1,28 @@
+Package: colocalized
+Type: Package
+Title: Clusters of Colocalized Sequences
+Version: 0.1.0
+Authors@R: person("Stefan", "Golas", email = "stefanmgolas@gmail.com", role = c("cre","aut"))
+Description: Finds clusters of colocalized sequences in .bed annotation files
+    up to a specified cut-off distance. Two sequences are colocalized if they
+    are within the cut-off distance of each other, and clusters are sets of
+    sequences where each sequence is colocalized to at least one other sequence
+    in the cluster. For a set of .bed annotation tables provided in a list 
+    along with a cut-off distance, the program will output a file containing
+    the locations of each cluster. Annotated .bed files are from 
+    the 'pwmscan' application at <https://ccg.epfl.ch/pwmtools/pwmscan.php>. 
+    Personal machines might crash or take excessively long depending 
+    on the number of annotated sequences in each file and whether chromsearch() 
+    or gensearch() is used. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1.9000
+Depends: R (>= 3.0.0)
+Imports: foreach, doParallel, purrr, utils
+NeedsCompilation: no
+Packaged: 2019-09-11 11:09:28 UTC; Stefan
+Author: Stefan Golas [cre, aut]
+Maintainer: Stefan Golas <stefanmgolas@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-09-19 09:00:10 UTC

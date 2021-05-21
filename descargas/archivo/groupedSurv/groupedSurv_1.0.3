@@ -1,0 +1,27 @@
+Package: groupedSurv
+Type: Package
+Title: Efficient Estimation of Grouped Survival Models Using the Exact
+        Likelihood Function
+Version: 1.0.3
+Date: 2018-06-28
+Author: Jiaxing Lin [aut], 
+  Alexander Sibley [aut], 
+  Tracy Truong [aut], 
+  Kouros Owzar [aut], 
+  Zhiguo Li [aut],
+  Yu Jiang [ctb], 
+  Janice McCarthy [ctb], 
+  Andrew Allen [ctb]
+Maintainer: Jiaxing Lin <jiaxing.lin@duke.edu>
+Description: These 'Rcpp'-based functions compute the efficient score statistics for grouped time-to-event data (Prentice and Gloeckler, 1978), with the optional inclusion of baseline covariates. Functions for estimating the parameter of interest and nuisance parameters, including baseline hazards, using maximum likelihood are also provided. A parallel set of functions allow for the incorporation of family structure of related individuals (e.g., trios). Note that the current implementation of the frailty model (Ripatti and Palmgren, 2000) is sensitive to departures from model assumptions, and should be considered experimental. For these data, the exact proportional-hazards-model-based likelihood is computed by evaluating multiple variable integration. The integration is accomplished using the 'Cuba' library (Hahn, 2005), and the source files are included in this package. The maximization process is carried out using Brent's algorithm, with the C++ code file from John Burkardt and John Denker (Brent, 2002).
+License: GPL (>= 2)
+Imports: Rcpp (>= 0.12.4), doParallel, doRNG, parallel, foreach, qvalue
+LinkingTo: Rcpp, RcppEigen, BH
+Suggests: knitr, snplist, BEDMatrix
+VignetteBuilder: knitr
+BuildVignettes: yes
+NeedsCompilation: yes
+RoxygenNote: 6.0.1
+Packaged: 2018-06-28 21:27:19 UTC; jl354
+Repository: CRAN
+Date/Publication: 2018-06-29 04:38:06 UTC

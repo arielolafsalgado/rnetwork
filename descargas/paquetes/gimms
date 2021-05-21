@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package gimms</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Download and Process GIMMS NDVI3g Data [R package gimms version 1.1.3]" />
+<meta name="citation_author" content="Florian Detsch" />
+<meta name="citation_publication_date" content="2020-03-19" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=gimms" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=gimms" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="gimms: Download and Process GIMMS NDVI3g Data" />
+<meta name="og:description" content="This is a set of functions to retrieve information about GIMMS NDVI3g files currently available online; download (and re-arrange, in the case of NDVI3g.v0) the half-monthly data sets from NASA Ames Ecological Forecasting Lab (ECOCAST); import downloaded files from ENVI binary (NDVI3g.v0) or NetCDF format (NDVI3g.v1) directly into R based on the widespread 'raster' package; conduct quality control; and generate monthly composites (e.g., maximum values) from the half-monthly input data. As a special gimmick, a method is included to conveniently apply the Mann-Kendall trend test upon 'Raster*' images, optionally featuring trend-free pre-whitening to account for lag-1 autocorrelation." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=gimms" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>gimms: Download and Process GIMMS NDVI3g Data</h2>
+<p>This is a set of functions to retrieve information about GIMMS
+    NDVI3g files currently available online; download (and re-arrange, in the 
+    case of NDVI3g.v0) the half-monthly data sets from NASA Ames Ecological 
+    Forecasting Lab (ECOCAST); import downloaded files from ENVI binary 
+    (NDVI3g.v0) or NetCDF format (NDVI3g.v1) directly into R based on the 
+    widespread 'raster' package; conduct quality control; and generate monthly 
+    composites (e.g., maximum values) from the half-monthly input data. As a 
+    special gimmick, a method is included to conveniently apply the Mann-Kendall 
+    trend test upon 'Raster*' images, optionally featuring trend-free 
+    pre-whitening to account for lag-1 autocorrelation.</p>
+<table summary="Package gimms summary">
+<tr>
+<td>Version:</td>
+<td>1.1.3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10), <a href="../raster/index.html">raster</a>, methods</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../curl/index.html">curl</a>, parallel, <a href="../Kendall/index.html">Kendall</a>, <a href="../ncdf4/index.html">ncdf4</a>, <a href="../zyp/index.html">zyp</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-03-19</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Florian Detsch [cre, aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Florian Detsch  &#x3c;&#x66;&#x64;&#x65;&#x74;&#x73;&#x63;&#x68;&#x20;&#x61;&#x74;&#x20;&#x77;&#x65;&#x62;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/environmentalinformatics-marburg/gimms/issues">https://github.com/environmentalinformatics-marburg/gimms/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/environmentalinformatics-marburg/gimms">https://github.com/environmentalinformatics-marburg/gimms</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_gimms.html">gimms results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package gimms downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="gimms.pdf"> gimms.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/gimms_1.1.3.tar.gz"> gimms_1.1.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/gimms_1.1.3.zip">gimms_1.1.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/gimms_1.1.3.zip">gimms_1.1.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/gimms_1.1.3.zip">gimms_1.1.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/gimms_1.1.3.tgz">gimms_1.1.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/gimms_1.1.3.tgz">gimms_1.1.3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/gimms"> gimms archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=gimms"><samp>https://CRAN.R-project.org/package=gimms</samp></a>
+to link to this page.</p>
+</body>
+</html>

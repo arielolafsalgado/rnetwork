@@ -1,0 +1,35 @@
+Package: ipumsr
+Title: Read 'IPUMS' Extract Files
+Version: 0.1.0
+Authors@R: c(
+  person("Greg Freedman Ellis", email = "gfellis@umn.edu", role = c("aut", "cre")), 
+  person("Derek Burk", role = "ctb"),
+  person("Joe Grover", role = "ctb"),
+  person("Minnesota Population Center", email = "ipums@umn.edu", role = "cph")
+  )
+Contact: ipums@umn.edu
+URL: https://www.ipums.org, https://github.com/mnpopcenter/ipumsr
+BugReports: https://github.com/mnpopcenter/ipumsr/issues
+Description: An easy way to import census, survey and geographic data provided by 'IPUMS'
+    into R plus tools to help use the associated metadata to make analysis easier. 'IPUMS'
+    data describing 1.4 billion individuals drawn from over 750 censuses and surveys is
+    available free of charge from our website <https://ipums.org>.
+License: Mozilla Public License 2.0
+Encoding: UTF-8
+LazyData: true
+Imports: dplyr (>= 0.7.0), haven, purrr, raster, readr, rlang, stringr,
+        tibble, tidyr, xml2, Rcpp
+RoxygenNote: 6.0.1
+Suggests: DT, ggplot2, htmltools, knitr, rgdal, rmarkdown, rstudioapi,
+        scales, sf, sp, shiny, testthat, covr
+VignetteBuilder: knitr
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2017-11-13 20:44:36 UTC; gfellis
+Author: Greg Freedman Ellis [aut, cre],
+  Derek Burk [ctb],
+  Joe Grover [ctb],
+  Minnesota Population Center [cph]
+Maintainer: Greg Freedman Ellis <gfellis@umn.edu>
+Repository: CRAN
+Date/Publication: 2017-11-13 23:27:19 UTC

@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package fabMix</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Overfitting Bayesian Mixtures of Factor Analyzers with Parsimonious Covariance and Unknown Number of Components [R package fabMix version 5.0]" />
+<meta name="citation_author" content="Panagiotis Papastamoulis" />
+<meta name="citation_publication_date" content="2020-02-19" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=fabMix" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=fabMix" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="fabMix: Overfitting Bayesian Mixtures of Factor Analyzers with Parsimonious Covariance and Unknown Number of Components" />
+<meta name="og:description" content="Model-based clustering of multivariate continuous data using Bayesian mixtures of factor analyzers (Papastamoulis (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs11222-019-09891-z&quot;&gt;doi:10.1007/s11222-019-09891-z&lt;/a&gt;&amp;gt; (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.csda.2018.03.007&quot;&gt;doi:10.1016/j.csda.2018.03.007&lt;/a&gt;&amp;gt;). The number of clusters is estimated using overfitting mixture models (Rousseau and Mengersen (2011) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fj.1467-9868.2011.00781.x&quot;&gt;doi:10.1111/j.1467-9868.2011.00781.x&lt;/a&gt;&amp;gt;): suitable prior assumptions ensure that asymptotically the extra components will have zero posterior weight, therefore, the inference is based on the &amp;ldquo;alive&amp;rdquo; components. A Gibbs sampler is implemented in order to (approximately) sample from the posterior distribution of the overfitting mixture. A prior parallel tempering scheme is also available, which allows to run multiple parallel chains with different prior distributions on the mixture weights. These chains run in parallel and can swap states using a Metropolis-Hastings move. Eight different parameterizations give rise to parsimonious representations of the covariance per cluster (following Mc Nicholas and Murphy (2008) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs11222-008-9056-0&quot;&gt;doi:10.1007/s11222-008-9056-0&lt;/a&gt;&amp;gt;). The model parameterization and number of factors is selected according to the Bayesian Information Criterion. Identifiability issues related to label switching are dealt by post-processing the simulated output with the Equivalence Classes Representatives algorithm (Papastamoulis and Iliopoulos (2010) &amp;lt;&lt;a href=&quot;https://www.jstor.org/stable/25703571&quot;&gt;https://www.jstor.org/stable/25703571&lt;/a&gt;&amp;gt;, Papastamoulis (2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.18637%2Fjss.v069.c01&quot;&gt;doi:10.18637/jss.v069.c01&lt;/a&gt;&amp;gt;). " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=fabMix" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>fabMix: Overfitting Bayesian Mixtures of Factor Analyzers with
+Parsimonious Covariance and Unknown Number of Components</h2>
+<p>Model-based clustering of multivariate continuous data using Bayesian mixtures of factor analyzers (Papastamoulis (2019) &lt;<a href="https://doi.org/10.1007%2Fs11222-019-09891-z">doi:10.1007/s11222-019-09891-z</a>&gt; (2018) &lt;<a href="https://doi.org/10.1016%2Fj.csda.2018.03.007">doi:10.1016/j.csda.2018.03.007</a>&gt;). The number of clusters is estimated using overfitting mixture models (Rousseau and Mengersen (2011) &lt;<a href="https://doi.org/10.1111%2Fj.1467-9868.2011.00781.x">doi:10.1111/j.1467-9868.2011.00781.x</a>&gt;): suitable prior assumptions ensure that asymptotically the extra components will have zero posterior weight, therefore, the inference is based on the &ldquo;alive&rdquo; components. A Gibbs sampler is implemented in order to (approximately) sample from the posterior distribution of the overfitting mixture. A prior parallel tempering scheme is also available, which allows to run multiple parallel chains with different prior distributions on the mixture weights. These chains run in parallel and can swap states using a Metropolis-Hastings move. Eight different parameterizations give rise to parsimonious representations of the covariance per cluster (following Mc Nicholas and Murphy (2008) &lt;<a href="https://doi.org/10.1007%2Fs11222-008-9056-0">doi:10.1007/s11222-008-9056-0</a>&gt;). The model parameterization and number of factors is selected according to the Bayesian Information Criterion. Identifiability issues related to label switching are dealt by post-processing the simulated output with the Equivalence Classes Representatives algorithm (Papastamoulis and Iliopoulos (2010) &lt;<a href="https://www.jstor.org/stable/25703571">https://www.jstor.org/stable/25703571</a>&gt;, Papastamoulis (2016) &lt;<a href="https://doi.org/10.18637%2Fjss.v069.c01">doi:10.18637/jss.v069.c01</a>&gt;). </p>
+<table summary="Package fabMix summary">
+<tr>
+<td>Version:</td>
+<td>5.0</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.17), <a href="../MASS/index.html">MASS</a>, <a href="../doParallel/index.html">doParallel</a>, <a href="../foreach/index.html">foreach</a>, <a href="../label.switching/index.html">label.switching</a>, <a href="../mvtnorm/index.html">mvtnorm</a>, <a href="../RColorBrewer/index.html">RColorBrewer</a>, <a href="../corrplot/index.html">corrplot</a>, <a href="../mclust/index.html">mclust</a>, <a href="../coda/index.html">coda</a>, <a href="../ggplot2/index.html">ggplot2</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-02-19</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Panagiotis Papastamoulis
+    <a href="https://orcid.org/0000-0001-9468-7613"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Panagiotis Papastamoulis  &#x3c;&#x70;&#x61;&#x70;&#x61;&#x70;&#x61;&#x73;&#x74;&#x20;&#x61;&#x74;&#x20;&#x79;&#x61;&#x68;&#x6f;&#x6f;&#x2e;&#x67;&#x72;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/mqbssppe/overfittingFABMix">https://github.com/mqbssppe/overfittingFABMix</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">fabMix citation info</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_fabMix.html">fabMix results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package fabMix downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="fabMix.pdf"> fabMix.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/fabMix_5.0.tar.gz"> fabMix_5.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/fabMix_5.0.zip">fabMix_5.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/fabMix_5.0.zip">fabMix_5.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/fabMix_5.0.zip">fabMix_5.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/fabMix_5.0.tgz">fabMix_5.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/fabMix_5.0.tgz">fabMix_5.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/fabMix"> fabMix archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package fabMix reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../bpgmm/index.html">bpgmm</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=fabMix"><samp>https://CRAN.R-project.org/package=fabMix</samp></a>
+to link to this page.</p>
+</body>
+</html>

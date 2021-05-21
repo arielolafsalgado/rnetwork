@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package SeerMapper</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=SeerMapper" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="SeerMapper: A Quick Way to Map U.S. Rates and Data of U.S. States, Counties, Census Tracts, or Seer Registries using 2000 and 2010 U.S. Census Boundaries" />
+<meta name="og:description" content="Provides an easy way to map seer registry area rate data on a U.S. map. The U.S. data may be mapped at the state or state/county. U.S. Seer registry data may be mapped at the Seer registry area, Seer Registry area/county or Seer Registry area/county/census tract level. The function uses a calculated default categorization breakpoint list for 5 categories, when not breakpoint list is provided or the number of categories is specified by the user. A user provided break point list is limited to containing 5 values. The number of calculated categories may be from 3 to 11. The user provide the p-value for each area and request hatching over any areas with a p-value &amp;gt; 0.05. Other types of comparisons can be specified. If states or state/counties are used, the area identifier is the U.S. FIPS codes for states and counties, 2 digits and 5 digits respectfully. If the data is for U.S. Seer Registry areas, the Seer Registry area identifier used to link the data to the geographical area is a Seer Registry area abbreviation. See documentation for the list of acceptable Seer Registry area names and abbreviations. The state boundaries are overlaid all rate maps. The package contains the boundary data for state, county, Seer Registry areas, and census tracts for counties within a Seer registry area. The package support boundary data from the 2000 and 2010 U.S. Census. The SeerMapper package version contains the U.S. Census 2000 and 2010 boundary data for the regional, state, Seer Registry, and county levels. Six supplement packages contain the census tract boundary data. Copyrighted 2014, 2015, 2016, 2017, 2018 and 2019 by Pearson and Pickle." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=SeerMapper" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>SeerMapper: A Quick Way to Map U.S. Rates and Data of U.S. States, Counties,
+Census Tracts, or Seer Registries using 2000 and 2010 U.S.
+Census Boundaries</h2>
+<p>Provides an easy way to map seer registry area rate data on a U.S. map.  
+   The U.S. data may be mapped at the state or state/county.
+   U.S. Seer registry data may be mapped at the Seer registry area, Seer Registry 
+   area/county or Seer Registry area/county/census tract level. The function uses 
+   a calculated default categorization breakpoint list for 5 categories, 
+   when not breakpoint list is provided or the number of categories is specified 
+   by the user. A user provided break point list is limited to containing 5 values.  
+   The number of calculated categories may be from 3 to 11. The user provide the p-value 
+   for each area and request hatching over any areas with a p-value &gt; 0.05. 
+   Other types of comparisons can be specified.  If states or 
+   state/counties are used, the area identifier is the U.S. FIPS codes for states and 
+   counties, 2 digits and 5 digits respectfully.  If the data is for U.S. Seer Registry 
+   areas, the Seer Registry area identifier used to link the data to the geographical 
+   area is a Seer Registry area abbreviation.  See documentation for the list of 
+   acceptable Seer Registry area names and abbreviations. The state boundaries are 
+   overlaid all rate maps. The package contains the boundary data for state, county, 
+   Seer Registry areas, and census tracts for counties within a Seer registry area.   
+   The package support boundary data from the 2000 and 2010 U.S. Census.  
+   The SeerMapper package version contains the U.S. Census 2000 and 2010 boundary data
+   for the regional, state, Seer Registry, and county levels.  Six supplement packages 
+   contain the census tract boundary data.
+   Copyrighted 2014, 2015, 2016, 2017, 2018 and 2019 by Pearson and Pickle.</p>
+<table summary="Package SeerMapper summary">
+<tr>
+<td>Version:</td>
+<td>1.2.4</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.6.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>graphics, <a href="../maptools/index.html">maptools</a>, <a href="../RColorBrewer/index.html">RColorBrewer</a>, <a href="../rgdal/index.html">rgdal</a>, <a href="../sp/index.html">sp</a>, stats, <a href="../stringr/index.html">stringr</a>, methods, <a href="../SeerMapperRegs/index.html">SeerMapperRegs</a>, <a href="../SeerMapperEast/index.html">SeerMapperEast</a>, <a href="../SeerMapperWest/index.html">SeerMapperWest</a>, <a href="../SeerMapper2010Regs/index.html">SeerMapper2010Regs</a>, <a href="../SeerMapper2010East/index.html">SeerMapper2010East</a>, <a href="../SeerMapper2010West/index.html">SeerMapper2010West</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-23</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Jim Pearson</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Joe Zou  &#x3c;&#x7a;&#x6f;&#x75;&#x6a;&#x20;&#x61;&#x74;&#x20;&#x69;&#x6d;&#x73;&#x77;&#x65;&#x62;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_SeerMapper.html">SeerMapper results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package SeerMapper downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="SeerMapper.pdf"> SeerMapper.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/SeerMapper_1.2.4.tar.gz"> SeerMapper_1.2.4.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/SeerMapper_1.2.4.zip">SeerMapper_1.2.4.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/SeerMapper_1.2.4.zip">SeerMapper_1.2.4.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/SeerMapper_1.2.4.zip">SeerMapper_1.2.4.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/SeerMapper_1.2.4.tgz">SeerMapper_1.2.4.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/SeerMapper_1.2.4.tgz">SeerMapper_1.2.4.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/SeerMapper"> SeerMapper archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package SeerMapper reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../satscanMapper/index.html">satscanMapper</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=SeerMapper"><samp>https://CRAN.R-project.org/package=SeerMapper</samp></a>
+to link to this page.</p>
+</body>
+</html>

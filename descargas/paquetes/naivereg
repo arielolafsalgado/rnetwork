@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package naivereg</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=naivereg" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="naivereg: Nonparametric Additive Instrumental Variable Estimator and Related IV Methods" />
+<meta name="og:description" content="In empirical studies, instrumental variable (IV) regression is the signature method to solve the endogeneity problem. If we enforce the exogeneity condition of the IV, it is likely that we end up with a large set of IVs without knowing which ones are good. Also, one could face the model uncertainty for structural equation, as large micro dataset is commonly available nowadays. This package uses adaptive group lasso and B-spline methods to select the nonparametric components of the IV function, with the linear function being a special case (naivereg). The package also incorporates two stage least squares estimator (2SLS), generalized method of moment (GMM), generalized empirical likelihood (GEL) methods post instrument selection, logistic-regression instrumental variables estimator (LIVE, for dummy endogenous variable problem), double-selection plus instrumental variable estimator (DS-IV) and double selection plus logistic regression instrumental variable estimator (DS-LIVE), where the double selection methods are useful for high-dimensional structural equation models. The naivereg is nonparametric version of 'ivregress' in 'Stata' with IV selection and high dimensional features. The package is based on the paper by Q. Fan and W. Zhong, &quot;Nonparametric Additive Instrumental Variable Estimator: A Group Shrinkage Estimation Perspective&quot; (2018), Journal of Business &amp;amp; Economic Statistics &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F07350015.2016.1180991&quot;&gt;doi:10.1080/07350015.2016.1180991&lt;/a&gt;&amp;gt; as well as a series of working papers led by the same authors. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=naivereg" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>naivereg: Nonparametric Additive Instrumental Variable Estimator and
+Related IV Methods</h2>
+<p>In empirical studies, instrumental variable (IV) regression is the signature method to solve the endogeneity problem. If we enforce the exogeneity condition of the IV, it is likely that we end up with a large set of IVs without knowing which ones are good. Also, one could face the model uncertainty for structural equation, as large micro dataset is commonly available nowadays. This package uses adaptive group lasso and B-spline methods to select the nonparametric components of the IV function, with the linear function being a special case (naivereg). The package also incorporates two stage least squares estimator (2SLS), generalized method of moment (GMM), generalized empirical likelihood (GEL) methods post instrument selection, logistic-regression instrumental variables estimator (LIVE, for dummy endogenous variable problem), double-selection plus instrumental variable estimator (DS-IV) and double selection plus logistic regression instrumental variable estimator (DS-LIVE), where the double selection methods are useful for high-dimensional structural equation models. The naivereg is nonparametric version of 'ivregress' in 'Stata' with IV selection and high dimensional features. The package is based on the paper by Q. Fan and W. Zhong, "Nonparametric Additive Instrumental Variable Estimator: A Group Shrinkage Estimation Perspective" (2018), Journal of Business &amp; Economic Statistics &lt;<a href="https://doi.org/10.1080%2F07350015.2016.1180991">doi:10.1080/07350015.2016.1180991</a>&gt; as well as a series of working papers led by the same authors. </p>
+<table summary="Package naivereg summary">
+<tr>
+<td>Version:</td>
+<td>1.0.5</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../grpreg/index.html">grpreg</a>, splines, <a href="../gmm/index.html">gmm</a>, stats, <a href="../ncvreg/index.html">ncvreg</a>, <a href="../glmnet/index.html">glmnet</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-03-18</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Qingliang Fan, KongYu He, Wei Zhong</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Qingliang Fan  &#x3c;&#x6d;&#x69;&#x63;&#x68;&#x61;&#x65;&#x6c;&#x71;&#x66;&#x61;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x78;&#x6d;&#x75;&#x2e;&#x65;&#x64;&#x75;&#x2e;&#x63;&#x6e;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_naivereg.html">naivereg results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package naivereg downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="naivereg.pdf"> naivereg.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/naivereg_1.0.5.tar.gz"> naivereg_1.0.5.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/naivereg_1.0.5.zip">naivereg_1.0.5.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/naivereg_1.0.5.zip">naivereg_1.0.5.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/naivereg_1.0.5.zip">naivereg_1.0.5.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/naivereg_1.0.5.tgz">naivereg_1.0.5.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/naivereg_1.0.5.tgz">naivereg_1.0.5.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/naivereg"> naivereg archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=naivereg"><samp>https://CRAN.R-project.org/package=naivereg</samp></a>
+to link to this page.</p>
+</body>
+</html>

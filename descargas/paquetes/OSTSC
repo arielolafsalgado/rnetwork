@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package OSTSC</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=OSTSC" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="OSTSC: Over Sampling for Time Series Classification" />
+<meta name="og:description" content="Oversampling of imbalanced univariate time series classification data using integrated ESPO and ADASYN methods. Enhanced Structure Preserving Oversampling (ESPO) is used to generate a large percentage of the synthetic minority samples from univariate labeled time series under the modeling assumption that the predictors are Gaussian. ESPO estimates the covariance structure of the minority-class samples and applies a spectral filer to reduce noise. Adaptive Synthetic (ADASYN) sampling approach is a nearest neighbor interpolation approach which is subsequently applied to the ESPO samples. This code is ported from a 'MATLAB' implementation by Cao et al. &amp;lt;&lt;a href=&quot;https://doi.org/10.1109%2FTKDE.2013.37&quot;&gt;doi:10.1109/TKDE.2013.37&lt;/a&gt;&amp;gt; and adapted for use with Recurrent Neural Networks implemented in 'TensorFlow'." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=OSTSC" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>OSTSC: Over Sampling for Time Series Classification</h2>
+<p>Oversampling of imbalanced univariate time series classification data 
+    using integrated ESPO and ADASYN methods. Enhanced Structure Preserving Oversampling 
+    (ESPO) is used to generate a large percentage of the synthetic minority samples 
+    from univariate labeled time series under the modeling assumption that the predictors 
+    are Gaussian. ESPO estimates the covariance structure of the minority-class samples 
+    and applies a spectral filer to reduce noise. Adaptive Synthetic (ADASYN) sampling 
+    approach is a nearest neighbor interpolation approach which is subsequently applied 
+    to the ESPO samples. This code is ported from a 'MATLAB' implementation by Cao et al. 
+    &lt;<a href="https://doi.org/10.1109%2FTKDE.2013.37">doi:10.1109/TKDE.2013.37</a>&gt; and adapted for use with Recurrent Neural Networks 
+    implemented in 'TensorFlow'.</p>
+<table summary="Package OSTSC summary">
+<tr>
+<td>Version:</td>
+<td>0.0.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.2.3)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../fields/index.html">fields</a>, <a href="../MASS/index.html">MASS</a>, stats, utils, parallel, <a href="../doParallel/index.html">doParallel</a>, <a href="../doSNOW/index.html">doSNOW</a>, <a href="../foreach/index.html">foreach</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../keras/index.html">keras</a>, <a href="../dummies/index.html">dummies</a>, <a href="../rlist/index.html">rlist</a>, <a href="../pROC/index.html">pROC</a>, <a href="../devtools/index.html">devtools</a>, knitcitations, <a href="../testthat/index.html">testthat</a>, <a href="../xts/index.html">xts</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2017-12-04</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Matthew Dixon [ctb],
+    Diego Klabjan [ctb],
+    Lan Wei [aut, trl, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Lan Wei  &#x3c;&#x6c;&#x77;&#x65;&#x69;&#x63;&#x64;&#x73;&#x6f;&#x72;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/lweicdsor/OSTSC">https://github.com/lweicdsor/OSTSC</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_OSTSC.html">OSTSC results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package OSTSC downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="OSTSC.pdf"> OSTSC.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Over_Sampling_for_Time_Series_Classification.pdf">Over_Sampling_for_Time_Series_Classification</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/OSTSC_0.0.1.tar.gz"> OSTSC_0.0.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/OSTSC_0.0.1.zip">OSTSC_0.0.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/OSTSC_0.0.1.zip">OSTSC_0.0.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/OSTSC_0.0.1.zip">OSTSC_0.0.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/OSTSC_0.0.1.tgz">OSTSC_0.0.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/OSTSC_0.0.1.tgz">OSTSC_0.0.1.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=OSTSC"><samp>https://CRAN.R-project.org/package=OSTSC</samp></a>
+to link to this page.</p>
+</body>
+</html>

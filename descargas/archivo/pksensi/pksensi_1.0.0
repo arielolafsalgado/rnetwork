@@ -1,0 +1,27 @@
+Package: pksensi
+Type: Package
+Title: Global Sensitivity Analysis in Pharmacokinetic Modeling
+Version: 1.0.0
+Authors@R: c(
+    person("Nan-Hung", "Hsieh", role = c("aut", "cre"), email = "nhsieh@cvm.tamu.edu", comment = c(ORCID = "0000-0003-0163-2766")),
+    person("Brad", "Reisfeld", role = "aut"),
+    person("Weihsueh A.", "Chiu", role = "aut", comment = c(ORCID = "0000-0002-7575-2368")))
+Depends: R (>= 3.3.0)
+Imports: data.table, deSolve, dplyr, getPass, ggplot2, magrittr,
+        reshape
+Description: Applying the global sensitivity analysis workflow to investigate the parameter uncertainty and sensitivity in pharmacokinetic (PK) models, especially the physiologically-based pharmacokinetic (PBPK) model with multivariate outputs. The package also provide some functions to check the sensitivity measures and its convergence of model parameters.   
+License: GPL (>= 3)
+RoxygenNote: 6.1.0
+Suggests: covr, knitr, rmarkdown, testthat, viridis
+LazyData: true
+URL: https://github.com/nanhung/pksensi
+BugReports: https://github.com/nanhung/pksensi/issues
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2018-10-30 17:46:51 UTC; nhsieh
+Author: Nan-Hung Hsieh [aut, cre] (<https://orcid.org/0000-0003-0163-2766>),
+  Brad Reisfeld [aut],
+  Weihsueh A. Chiu [aut] (<https://orcid.org/0000-0002-7575-2368>)
+Maintainer: Nan-Hung Hsieh <nhsieh@cvm.tamu.edu>
+Repository: CRAN
+Date/Publication: 2018-10-30 18:20:03 UTC

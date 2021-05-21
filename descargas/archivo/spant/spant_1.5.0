@@ -1,0 +1,34 @@
+Package: spant
+Type: Package
+Title: MR Spectroscopy Analysis Tools
+Version: 1.5.0
+Date: 2020-05-10
+Authors@R: c(
+    person("Martin", "Wilson", email = "martin@pipegrep.co.uk",
+           role = c("cre", "aut")),
+    person("Yong", "Wang", role = "ctb"),
+    person("John", "Muschelli", role = "ctb"))
+Description: Tools for reading, visualising and processing Magnetic Resonance
+    Spectroscopy data. <https://martin3141.github.io/spant/>.
+BugReports: https://github.com/martin3141/spant/issues
+License: GPL-3
+RoxygenNote: 7.1.0
+NeedsCompilation: yes
+LazyData: yes
+Depends: R (>= 2.10)
+Imports: abind, plyr, foreach, pracma, stringr, complexplus, signal,
+        matrixcalc, minpack.lm, nnls, utils, graphics, grDevices,
+        smoother, readr, magrittr, ptw, viridisLite, mmand, RNifti,
+        RNiftyReg, fields, MASS, shiny, miniUI, oro.dicom, numDeriv,
+        nloptr, irlba, tibble
+Suggests: neurobase, oro.nifti, knitr, rmarkdown, testthat, doParallel
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-GB
+Packaged: 2020-05-10 07:43:26 UTC; martin
+Author: Martin Wilson [cre, aut],
+  Yong Wang [ctb],
+  John Muschelli [ctb]
+Maintainer: Martin Wilson <martin@pipegrep.co.uk>
+Repository: CRAN
+Date/Publication: 2020-05-11 09:10:02 UTC

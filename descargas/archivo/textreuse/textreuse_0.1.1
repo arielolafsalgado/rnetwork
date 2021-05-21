@@ -1,0 +1,31 @@
+Package: textreuse
+Type: Package
+Title: Detect Text Reuse and Document Similarity
+Version: 0.1.1
+Date: 2015-11-04
+Authors@R: c(person("Lincoln", "Mullen", role = c("aut", "cre"),
+    email = "lincoln@lincolnmullen.com"))
+Description: Tools for measuring similarity among documents and detecting
+    passages which have been reused. Implements shingled n-gram, skip n-gram,
+    and other tokenizers; similarity/dissimilarity functions; pairwise
+    comparisons; minhash and locality sensitive hashing algorithms; and a
+    version of the Smith-Waterman local alignment algorithm suitable for
+    natural language.
+License: MIT + file LICENSE
+LazyData: TRUE
+URL: https://github.com/ropensci/textreuse
+BugReports: https://github.com/ropensci/textreuse/issues
+VignetteBuilder: knitr
+Depends: R (>= 3.1.1)
+Imports: assertthat (>= 0.1), digest (>= 0.6.8), dplyr (>= 0.4.3), NLP
+        (>= 0.1.8), Rcpp (>= 0.12.0), RcppProgress (>= 0.1), stringr
+        (>= 1.0.0), tidyr (>= 0.3.1)
+Suggests: testthat (>= 0.11.0), knitr (>= 1.11), rmarkdown (>= 0.8)
+LinkingTo: BH, Rcpp, RcppProgress
+RoxygenNote: 5.0.0
+NeedsCompilation: yes
+Packaged: 2015-11-04 14:32:31 UTC; lmullen
+Author: Lincoln Mullen [aut, cre]
+Maintainer: Lincoln Mullen <lincoln@lincolnmullen.com>
+Repository: CRAN
+Date/Publication: 2015-11-04 17:33:59

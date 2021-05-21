@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package broom</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Convert Statistical Objects into Tidy Tibbles [R package broom version 0.7.2]" />
+<meta name="citation_author1" content="David Robinson" />
+<meta name="citation_author2" content="Alex Hayes" />
+<meta name="citation_author3" content="Simon Couch" />
+<meta name="citation_publication_date" content="2020-10-20" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=broom" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=broom" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="broom: Convert Statistical Objects into Tidy Tibbles" />
+<meta name="og:description" content="Summarizes key information about statistical objects in tidy tibbles. This makes it easy to report results, create plots and consistently work with large numbers of models at once. Broom provides three verbs that each provide different types of information about a model. tidy() summarizes information about model components such as coefficients of a regression. glance() reports information about an entire model, such as goodness of fit measures like AIC and BIC. augment() adds information about individual observations to a dataset, such as fitted values or influence measures." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=broom" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>broom: Convert Statistical Objects into Tidy Tibbles</h2>
+<p>Summarizes key information about statistical
+    objects in tidy tibbles. This makes it easy to report results, create
+    plots and consistently work with large numbers of models at once.
+    Broom provides three verbs that each provide different types of
+    information about a model. tidy() summarizes information about model
+    components such as coefficients of a regression. glance() reports
+    information about an entire model, such as goodness of fit measures
+    like AIC and BIC. augment() adds information about individual
+    observations to a dataset, such as fitted values or influence
+    measures.</p>
+<table summary="Package broom summary">
+<tr>
+<td>Version:</td>
+<td>0.7.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.1)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../backports/index.html">backports</a>, <a href="../dplyr/index.html">dplyr</a> (&ge; 1.0.0), <a href="../ellipsis/index.html">ellipsis</a>, <a href="../generics/index.html">generics</a> (&ge; 0.0.2), <a href="../glue/index.html">glue</a>, methods, <a href="../purrr/index.html">purrr</a>, <a href="../rlang/index.html">rlang</a>, <a href="../stringr/index.html">stringr</a>, <a href="../tibble/index.html">tibble</a> (&ge; 3.0.0), <a href="../tidyr/index.html">tidyr</a> (&ge; 1.0.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../AER/index.html">AER</a>, <a href="../akima/index.html">akima</a>, <a href="../AUC/index.html">AUC</a>, <a href="../bbmle/index.html">bbmle</a>, <a href="../betareg/index.html">betareg</a>, <a href="../biglm/index.html">biglm</a>, <a href="../binGroup/index.html">binGroup</a>, <a href="../boot/index.html">boot</a>, <a href="../btergm/index.html">btergm</a>, <a href="../car/index.html">car</a>, <a href="../caret/index.html">caret</a>, <a href="../cluster/index.html">cluster</a>, <a href="../coda/index.html">coda</a>, <a href="../covr/index.html">covr</a>, <a href="../drc/index.html">drc</a>, <a href="../e1071/index.html">e1071</a>, <a href="../emmeans/index.html">emmeans</a>, <a href="../epiR/index.html">epiR</a>, <a href="../ergm/index.html">ergm</a> (&ge; 3.10.4), <a href="../fixest/index.html">fixest</a> (&ge; 0.5.0), <a href="../gam/index.html">gam</a> (&ge; 1.15), <a href="../gamlss/index.html">gamlss</a>, <a href="../gamlss.data/index.html">gamlss.data</a>, <a href="../gamlss.dist/index.html">gamlss.dist</a>, <a href="../gee/index.html">gee</a>, <a href="../geepack/index.html">geepack</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../glmnet/index.html">glmnet</a>, <a href="../glmnetUtils/index.html">glmnetUtils</a>, <a href="../gmm/index.html">gmm</a>, <a href="../Hmisc/index.html">Hmisc</a>, <a href="../irlba/index.html">irlba</a>, <a href="../joineRML/index.html">joineRML</a>, <a href="../Kendall/index.html">Kendall</a>, <a href="../knitr/index.html">knitr</a>, <a href="../ks/index.html">ks</a>, <a href="../Lahman/index.html">Lahman</a>, <a href="../lavaan/index.html">lavaan</a>, <a href="../leaps/index.html">leaps</a>, <a href="../lfe/index.html">lfe</a>, <a href="../lm.beta/index.html">lm.beta</a>, <a href="../lme4/index.html">lme4</a>, <a href="../lmodel2/index.html">lmodel2</a>, <a href="../lmtest/index.html">lmtest</a> (&ge; 0.9.38), <a href="../lsmeans/index.html">lsmeans</a>, <a href="../maps/index.html">maps</a>, <a href="../maptools/index.html">maptools</a>, <a href="../margins/index.html">margins</a>, <a href="../MASS/index.html">MASS</a>, <a href="../Matrix/index.html">Matrix</a>, <a href="../mclogit/index.html">mclogit</a>, <a href="../mclust/index.html">mclust</a>, <a href="../mediation/index.html">mediation</a>, <a href="../metafor/index.html">metafor</a>, <a href="../mfx/index.html">mfx</a>, <a href="../mgcv/index.html">mgcv</a>, <a href="../mlogit/index.html">mlogit</a>, <a href="../modeldata/index.html">modeldata</a>, <a href="../modeltests/index.html">modeltests</a>, <a href="../muhaz/index.html">muhaz</a>, <a href="../multcomp/index.html">multcomp</a>, <a href="../network/index.html">network</a>, <a href="../nnet/index.html">nnet</a>, <a href="../orcutt/index.html">orcutt</a> (&ge; 2.2), <a href="../ordinal/index.html">ordinal</a>, <a href="../plm/index.html">plm</a>, <a href="../poLCA/index.html">poLCA</a>, <a href="../psych/index.html">psych</a>, <a href="../quantreg/index.html">quantreg</a>, <a href="../rgeos/index.html">rgeos</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../robust/index.html">robust</a>, <a href="../robustbase/index.html">robustbase</a>, <a href="../rsample/index.html">rsample</a>, <a href="../sandwich/index.html">sandwich</a>, <a href="../sp/index.html">sp</a>, <a href="../spdep/index.html">spdep</a>, <a href="../spatialreg/index.html">spatialreg</a>, <a href="../speedglm/index.html">speedglm</a>, <a href="../spelling/index.html">spelling</a>, <a href="../survey/index.html">survey</a>, <a href="../survival/index.html">survival</a>, <a href="../systemfit/index.html">systemfit</a>, <a href="../testthat/index.html">testthat</a> (&ge; 2.1.0), <a href="../tseries/index.html">tseries</a>, <a href="../zoo/index.html">zoo</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-20</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>David Robinson [aut],
+  Alex Hayes <a href="https://orcid.org/0000-0002-4985-5160"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    cre],
+  Simon Couch [aut],
+  Indrajeet Patil <a href="https://orcid.org/0000-0003-1995-6531"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Derek Chiu [ctb],
+  Matthieu Gomez [ctb],
+  Boris Demeshev [ctb],
+  Dieter Menne [ctb],
+  Benjamin Nutter [ctb],
+  Luke Johnston [ctb],
+  Ben Bolker [ctb],
+  Francois Briatte [ctb],
+  Jeffrey Arnold [ctb],
+  Jonah Gabry [ctb],
+  Luciano Selzer [ctb],
+  Gavin Simpson [ctb],
+  Jens Preussner [ctb],
+  Jay Hesselberth [ctb],
+  Hadley Wickham [ctb],
+  Matthew Lincoln [ctb],
+  Alessandro Gasparini [ctb],
+  Lukasz Komsta [ctb],
+  Frederick Novometsky [ctb],
+  Wilson Freitas [ctb],
+  Michelle Evans [ctb],
+  Jason Cory Brunson [ctb],
+  Simon Jackson [ctb],
+  Ben Whalley [ctb],
+  Karissa Whiting [ctb],
+  Yves Rosseel [ctb],
+  Michael Kuehn [ctb],
+  Jorge Cimentada [ctb],
+  Erle Holgersen [ctb],
+  Karl Dunkle Werner
+    <a href="https://orcid.org/0000-0003-0523-7309"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb],
+  Ethan Christensen [ctb],
+  Steven Pav [ctb],
+  Paul PJ [ctb],
+  Ben Schneider [ctb],
+  Patrick Kennedy [ctb],
+  Lily Medina [ctb],
+  Brian Fannin [ctb],
+  Jason Muhlenkamp [ctb],
+  Matt Lehman [ctb],
+  Bill Denney <a href="https://orcid.org/0000-0002-5759-428X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb],
+  Nic Crane [ctb],
+  Andrew Bates [ctb],
+  Vincent Arel-Bundock
+    <a href="https://orcid.org/0000-0003-2042-7063"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb],
+  Hideaki Hayashi [ctb],
+  Luis Tobalina [ctb],
+  Annie Wang [ctb],
+  Wei Yang Tham [ctb],
+  Clara Wang [ctb],
+  Abby Smith <a href="https://orcid.org/0000-0002-3207-0375"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb],
+  Jasper Cooper <a href="https://orcid.org/0000-0002-8639-3188"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  E Auden Krauska <a href="https://orcid.org/0000-0002-1466-5850"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Alex Wang [ctb],
+  Malcolm Barrett <a href="https://orcid.org/0000-0003-0299-5825"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Charles Gray <a href="https://orcid.org/0000-0002-9978-011X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Jared Wilber [ctb],
+  Vilmantas Gegzna <a href="https://orcid.org/0000-0002-9500-5167"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Eduard Szoecs [ctb],
+  Frederik Aust <a href="https://orcid.org/0000-0003-4900-788X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Angus Moore [ctb],
+  Nick Williams [ctb],
+  Marius Barth <a href="https://orcid.org/0000-0002-3421-6665"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Bruna Wundervald <a href="https://orcid.org/0000-0001-8163-220X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Joyce Cahoon <a href="https://orcid.org/0000-0001-7217-4702"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Grant McDermott <a href="https://orcid.org/0000-0001-7883-8573"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Kevin Zarca [ctb],
+  Shiro Kuriwaki <a href="https://orcid.org/0000-0002-5687-2647"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Lukas Wallrich <a href="https://orcid.org/0000-0003-2121-5177"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  James Martherus <a href="https://orcid.org/0000-0002-8285-3300"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Chuliang Xiao <a href="https://orcid.org/0000-0002-8466-9398"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Joseph Larmarange [ctb],
+  Max Kuhn [ctb],
+  Michal Bojanowski [ctb],
+  Hakon Malmedal [ctb],
+  Clara Wang [ctb],
+  Sergio Oller [ctb],
+  Luke Sonnet [ctb],
+  Jim Hester [ctb],
+  Cory Brunson [ctb],
+  Ben Schneider [ctb],
+  Bernie Gray <a href="https://orcid.org/0000-0001-9190-6032"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb],
+  Mara Averick [ctb],
+  Aaron Jacobs [ctb],
+  Andreas Bender [ctb],
+  Sven Templer [ctb],
+  Paul-Christian Buerkner [ctb],
+  Matthew Kay [ctb],
+  Erwan Le Pennec [ctb],
+  Johan Junkka [ctb],
+  Hao Zhu [ctb],
+  Benjamin Soltoff [ctb],
+  Zoe Wilkinson Saldana [ctb],
+  Tyler Littlefield [ctb],
+  Charles T. Gray [ctb],
+  Shabbh E. Banks [ctb],
+  Serina Robinson [ctb],
+  Roger Bivand [ctb],
+  Riinu Ots [ctb],
+  Nicholas Williams [ctb],
+  Nina Jakobsen [ctb],
+  Michael Weylandt [ctb],
+  Lisa Lendway [ctb],
+  Karl Hailperin [ctb],
+  Josue Rodriguez [ctb],
+  Jenny Bryan [ctb],
+  Chris Jarvis [ctb],
+  Greg Macfarlane [ctb],
+  Brian Mannakee [ctb],
+  Drew Tyre [ctb],
+  Shreyas Singh [ctb],
+  Laurens Geffert [ctb],
+  Hong Ooi [ctb],
+  Henrik Bengtsson [ctb],
+  Eduard Szocs [ctb],
+  David Hugh-Jones [ctb],
+  Matthieu Stigler [ctb],
+  Hugo Tavares <a href="https://orcid.org/0000-0001-9373-2726"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  R. Willem Vervoort [ctb],
+  Brenton M. Wiernik [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Alex Hayes  &#x3c;&#x61;&#x6c;&#x65;&#x78;&#x70;&#x67;&#x68;&#x61;&#x79;&#x65;&#x73;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/tidymodels/broom/issues">https://github.com/tidymodels/broom/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://broom.tidymodels.org/">https://broom.tidymodels.org/</a>, <a href="https://github.com/tidymodels/broom">https://github.com/tidymodels/broom</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_broom.html">broom results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package broom downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="broom.pdf"> broom.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/adding-tidiers.html">Adding tidiers to broom</a><br/>
+<a href="vignettes/available-methods.html">Available methods</a><br/>
+<a href="vignettes/bootstrapping.html">Tidy bootstrapping</a><br/>
+<a href="vignettes/broom.html">Introduction to broom</a><br/>
+<a href="vignettes/broom_and_dplyr.html">broom and dplyr</a><br/>
+<a href="vignettes/kmeans.html">kmeans with dplyr and broom</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/broom_0.7.2.tar.gz"> broom_0.7.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/broom_0.7.2.zip">broom_0.7.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/broom_0.7.2.zip">broom_0.7.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/broom_0.7.2.zip">broom_0.7.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/broom_0.7.2.tgz">broom_0.7.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/broom_0.7.2.tgz">broom_0.7.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/broom"> broom archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package broom reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="http://www.bioconductor.org/packages/release/bioc/html/biobroom.html"><span class="BioC">biobroom</span></a>, <a href="../lineqGPR/index.html">lineqGPR</a>, <a href="../nlshelper/index.html">nlshelper</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../allestimates/index.html">allestimates</a>, <a href="../amt/index.html">amt</a>, <a href="../apaTables/index.html">apaTables</a>, <a href="../autocogs/index.html">autocogs</a>, <a href="../breathtestcore/index.html">breathtestcore</a>, <a href="../broom.helpers/index.html">broom.helpers</a>, <a href="../broom.mixed/index.html">broom.mixed</a>, <a href="../broomExtra/index.html">broomExtra</a>, <a href="../card/index.html">card</a>, <a href="../catenary/index.html">catenary</a>, <a href="../catfun/index.html">catfun</a>, <a href="../cdom/index.html">cdom</a>, <a href="../CGPfunctions/index.html">CGPfunctions</a>, <a href="../chest/index.html">chest</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/ChIPexoQual.html"><span class="BioC">ChIPexoQual</span></a>, <a href="../conjoint/index.html">conjoint</a>, <a href="../convergEU/index.html">convergEU</a>, <a href="../cvms/index.html">cvms</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/DEGreport.html"><span class="BioC">DEGreport</span></a>, <a href="../DeLorean/index.html">DeLorean</a>, <a href="../describedata/index.html">describedata</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/DiscoRhythm.html"><span class="BioC">DiscoRhythm</span></a>, <a href="../disto/index.html">disto</a>, <a href="../doBy/index.html">doBy</a>, <a href="../docdescriptR/index.html">docdescriptR</a>, <a href="../docinfeR/index.html">docinfeR</a>, <a href="../dotwhisker/index.html">dotwhisker</a>, <a href="../dragon/index.html">dragon</a>, <a href="../echarts4r/index.html">echarts4r</a>, <a href="../edwards97/index.html">edwards97</a>, <a href="../eoffice/index.html">eoffice</a>, <a href="../equatiomatic/index.html">equatiomatic</a>, <a href="../ERSA/index.html">ERSA</a>, <a href="../eurostat/index.html">eurostat</a>, <a href="../explore/index.html">explore</a>, <a href="../finalfit/index.html">finalfit</a>, <a href="../forestmangr/index.html">forestmangr</a>, <a href="../forestmodel/index.html">forestmodel</a>, <a href="../funneljoin/index.html">funneljoin</a>, <a href="../geepack/index.html">geepack</a>, <a href="../germinationmetrics/index.html">germinationmetrics</a>, <a href="../ggpmisc/index.html">ggpmisc</a>, <a href="../glmmfields/index.html">glmmfields</a>, <a href="../gtsummary/index.html">gtsummary</a>, <a href="../gWQS/index.html">gWQS</a>, <a href="../highcharter/index.html">highcharter</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/isomiRs.html"><span class="BioC">isomiRs</span></a>, <a href="../JSmediation/index.html">JSmediation</a>, <a href="../konfound/index.html">konfound</a>, <a href="../lcsm/index.html">lcsm</a>, <a href="../lin.eval/index.html">lin.eval</a>, <a href="../mason/index.html">mason</a>, <a href="../MatchThem/index.html">MatchThem</a>, <a href="../mice/index.html">mice</a>, <a href="../modelr/index.html">modelr</a>, <a href="../modelsummary/index.html">modelsummary</a>, <a href="../moderndive/index.html">moderndive</a>, <a href="../mosaic/index.html">mosaic</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/MSstats.html"><span class="BioC">MSstats</span></a>, <a href="../mudfold/index.html">mudfold</a>, <a href="../NetworkExtinction/index.html">NetworkExtinction</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/NPARC.html"><span class="BioC">NPARC</span></a>, <a href="../omicwas/index.html">omicwas</a>, <a href="../PHEindicatormethods/index.html">PHEindicatormethods</a>, <a href="../pixiedust/index.html">pixiedust</a>, <a href="../psychReport/index.html">psychReport</a>, <a href="../PVplr/index.html">PVplr</a>, <a href="../R2MLwiN/index.html">R2MLwiN</a>, <a href="../radiant.data/index.html">radiant.data</a>, <a href="../radiant.model/index.html">radiant.model</a>, <a href="../RCT/index.html">RCT</a>, <a href="../RKorAPClient/index.html">RKorAPClient</a>, <a href="../robomit/index.html">robomit</a>, <a href="../rstatix/index.html">rstatix</a>, <a href="../sclr/index.html">sclr</a>, <a href="../SemNeT/index.html">SemNeT</a>, <a href="../simglm/index.html">simglm</a>, <a href="../SimplifyStats/index.html">SimplifyStats</a>, <a href="../simts/index.html">simts</a>, <a href="../sjstats/index.html">sjstats</a>, <a href="../skedastic/index.html">skedastic</a>, <a href="../specr/index.html">specr</a>, <a href="../statsr/index.html">statsr</a>, <a href="../StroupGLMM/index.html">StroupGLMM</a>, <a href="../survminer/index.html">survminer</a>, <a href="../sweep/index.html">sweep</a>, <a href="../SWMPrExtension/index.html">SWMPrExtension</a>, <a href="../tadaatoolbox/index.html">tadaatoolbox</a>, <a href="../takos/index.html">takos</a>, <a href="../temperatureresponse/index.html">temperatureresponse</a>, <a href="../tidycomm/index.html">tidycomm</a>, <a href="../tidyMicro/index.html">tidyMicro</a>, <a href="../tidymodels/index.html">tidymodels</a>, <a href="../tidyverse/index.html">tidyverse</a>, <a href="../tipr/index.html">tipr</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/TPP.html"><span class="BioC">TPP</span></a>, <a href="../TSS.RESTREND/index.html">TSS.RESTREND</a>, <a href="../valr/index.html">valr</a>, <a href="../widyr/index.html">widyr</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../agridat/index.html">agridat</a>, <a href="../arsenal/index.html">arsenal</a>, <a href="../autoimage/index.html">autoimage</a>, <a href="../bayestestR/index.html">bayestestR</a>, <a href="http://www.bioconductor.org/packages/release/data/experiment/html/BloodCancerMultiOmics2017.html"><span class="BioC">BloodCancerMultiOmics2017</span></a>, <a href="../casen/index.html">casen</a>, <a href="../composits/index.html">composits</a>, <a href="../confoundr/index.html">confoundr</a>, <a href="../crawl/index.html">crawl</a>, <a href="../crossmap/index.html">crossmap</a>, <a href="../DeclareDesign/index.html">DeclareDesign</a>, <a href="../disk.frame/index.html">disk.frame</a>, <a href="../DLMtool/index.html">DLMtool</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../eechidna/index.html">eechidna</a>, <a href="../ethnobotanyR/index.html">ethnobotanyR</a>, <a href="../faux/index.html">faux</a>, <a href="../fhidata/index.html">fhidata</a>, <a href="../fivethirtyeight/index.html">fivethirtyeight</a>, <a href="../flextable/index.html">flextable</a>, <a href="../GGally/index.html">GGally</a>, <a href="../ggasym/index.html">ggasym</a>, <a href="../ggdist/index.html">ggdist</a>, <a href="../ggformula/index.html">ggformula</a>, <a href="../glmmTMB/index.html">glmmTMB</a>, <a href="../gravity/index.html">gravity</a>, <a href="../groupdata2/index.html">groupdata2</a>, <a href="../huxtable/index.html">huxtable</a>, <a href="../infer/index.html">infer</a>, <a href="../interactions/index.html">interactions</a>, <a href="../jtools/index.html">jtools</a>, <a href="../kayadata/index.html">kayadata</a>, <a href="../KMunicate/index.html">KMunicate</a>, <a href="../lspline/index.html">lspline</a>, <a href="../lucid/index.html">lucid</a>, <a href="../macleish/index.html">macleish</a>, <a href="../MARSS/index.html">MARSS</a>, <a href="../miceFast/index.html">miceFast</a>, <a href="../mpcmp/index.html">mpcmp</a>, <a href="../nls.multstart/index.html">nls.multstart</a>, <a href="../openintro/index.html">openintro</a>, <a href="../plotly/index.html">plotly</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/progeny.html"><span class="BioC">progeny</span></a>, <a href="../pubh/index.html">pubh</a>, <a href="../qgcomp/index.html">qgcomp</a>, <a href="../RBesT/index.html">RBesT</a>, <a href="../rsample/index.html">rsample</a>, <a href="../simhelpers/index.html">simhelpers</a>, <a href="../simTool/index.html">simTool</a>, <a href="../sparklyr/index.html">sparklyr</a>, <a href="../texreg/index.html">texreg</a>, <a href="../tibbletime/index.html">tibbletime</a>, <a href="../tidybayes/index.html">tidybayes</a>, <a href="../tidycat/index.html">tidycat</a>, <a href="../tidyquant/index.html">tidyquant</a>, <a href="../tidytext/index.html">tidytext</a>, <a href="../timetk/index.html">timetk</a>, <a href="../utile.visuals/index.html">utile.visuals</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=broom"><samp>https://CRAN.R-project.org/package=broom</samp></a>
+to link to this page.</p>
+</body>
+</html>

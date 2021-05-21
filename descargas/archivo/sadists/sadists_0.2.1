@@ -1,0 +1,29 @@
+Package: sadists
+Maintainer: Steven E. Pav <shabbychef@gmail.com>
+Authors@R: c(person(c("Steven", "E."), "Pav", role=c("aut","cre"),
+    email="shabbychef@gmail.com"))
+Version: 0.2.1
+Date: 2015-06-11
+License: LGPL-3
+Title: Some Additional Distributions
+BugReports: https://github.com/shabbychef/sadists/issues
+Description: Provides the density, distribution, quantile and generation functions of some obscure probability 
+    distributions, including the doubly non-central t, F, Beta, and Eta distributions; 
+    Lecoutre's lambda-prime and K-prime; the upsilon distribution; the (weighted) sum of 
+    non-central chi-squares to a power; the (weighted) sum of log non-central chi-squares;
+    the product of non-central chi-squares to powers; the product of doubly non-central
+	F variates.
+Depends: R (>= 3.0.2)
+Imports: PDQutils (>= 0.1.1), hypergeo, orthopolynom
+Suggests: shiny, testthat, ggplot2, xtable, knitr
+URL: https://github.com/shabbychef/sadists
+VignetteBuilder: knitr
+Collate: 'cumulants.r' 'dnbeta.r' 'dneta.r' 'dnf.r' 'dnt.r' 'kprime.r'
+        'lambdap.r' 'moments.r' 'prodchisqpow.r' 'proddnf.r'
+        'runExample.r' 'sadists.r' 'sumchisqpow.r' 'sumlogchisq.r'
+        'upsilon.r' 'utils.r'
+NeedsCompilation: no
+Packaged: 2015-06-11 14:02:14 UTC; spav
+Author: Steven E. Pav [aut, cre]
+Repository: CRAN
+Date/Publication: 2015-06-11 18:37:26

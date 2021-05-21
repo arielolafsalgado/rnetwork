@@ -1,0 +1,41 @@
+Package: tidycwl
+Type: Package
+Title: Tidy Common Workflow Language Tools and Workflows
+Version: 1.0.4
+Authors@R: c(
+    person("Nan", "Xiao", email = "nan.xiao@sevenbridges.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0250-5673")),
+    person("Soner", "Koc", email = "soner.koc@sevenbridges.com", role = c("aut")),
+    person("Dennis", "Dean", email = "dennis.dean@sevenbridges.com", role = c("aut"),
+           comment = c(ORCID = "0000-0002-7621-9717")),
+    person("Seven Bridges Genomics", role = c("cph", "fnd"))
+    )
+Maintainer: Nan Xiao <nan.xiao@sevenbridges.com>
+Description: The Common Workflow Language <https://www.commonwl.org/> is an
+    open standard for describing data analysis workflows. This package takes
+    the raw Common Workflow Language workflows encoded in JSON or 'YAML'
+    and turns the workflow elements into tidy data frames or lists.
+    A graph representation for the workflow can be constructed and visualized
+    with the parsed workflow inputs, outputs, and steps. Users can embed the
+    visualizations in their 'Shiny' applications, and export them
+    as HTML files or static images.
+License: AGPL-3
+SystemRequirements: PhantomJS (https://phantomjs.org), pandoc (>=
+        1.12.3) - https://pandoc.org.
+VignetteBuilder: knitr
+URL: https://sbg.github.io/tidycwl/, https://github.com/sbg/tidycwl
+BugReports: https://github.com/sbg/tidycwl/issues
+Encoding: UTF-8
+LazyData: true
+Imports: jsonlite, yaml, dplyr, magrittr, visNetwork, htmlwidgets,
+        webshot
+Suggests: knitr, rmarkdown, shiny
+RoxygenNote: 7.0.1
+NeedsCompilation: no
+Packaged: 2019-12-03 19:28:43 UTC; nanx
+Author: Nan Xiao [aut, cre] (<https://orcid.org/0000-0002-0250-5673>),
+  Soner Koc [aut],
+  Dennis Dean [aut] (<https://orcid.org/0000-0002-7621-9717>),
+  Seven Bridges Genomics [cph, fnd]
+Repository: CRAN
+Date/Publication: 2019-12-07 00:20:02 UTC

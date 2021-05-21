@@ -1,0 +1,40 @@
+Package: reproducible
+Type: Package
+Title: A Set of Tools that Enhance Reproducibility Beyond Package
+        Management
+Description: Built on top of 'git2r' and 'archivist', this package aims at
+    making high-level, robust, machine and OS independent tools for making
+    deeply reproducible and reusable content in R. This extends beyond the
+    package management utilities of 'packrat' and 'checkpoint' by including
+    tools for caching, and accessing GitHub repositories.
+URL: https://github.com/PredictiveEcology/reproducible
+Date: 2017-08-09
+Version: 0.1.2
+Authors@R: c(
+    person("Eliot J B", "McIntire", email = "eliot.mcintire@canada.ca",
+    role = c("aut", "cre")),
+    person("Alex M", "Chubaty", email = "alexander.chubaty@canada.ca",
+    role = c("aut")),
+    person("Her Majesty the Queen in Right of Canada, as represented by the Minister of Natural Resources Canada",
+    role = "cph")
+    )
+Depends: R (>= 3.3.2)
+Imports: archivist (>= 2.1.2), data.table (>= 1.10.4), devtools,
+        digest, fastdigest, git2r (>= 0.18), magrittr, methods, raster,
+        sp
+Suggests: hunspell, knitr, rgdal, rmarkdown, testthat
+License: GPL-3
+BugReports: https://github.com/PredictiveEcology/reproducible/issues
+ByteCompile: yes
+RoxygenNote: 6.0.1
+Collate: 'cache-helpers.R' 'cache-tools.R' 'robustDigest.R' 'cache.R'
+        'consistentPaths.R' 'git.R' 'reproducible-package.R'
+NeedsCompilation: no
+Packaged: 2017-08-09 16:58:49 UTC; achubaty
+Author: Eliot J B McIntire [aut, cre],
+  Alex M Chubaty [aut],
+  Her Majesty the Queen in Right of Canada, as represented by the
+    Minister of Natural Resources Canada [cph]
+Maintainer: Eliot J B McIntire <eliot.mcintire@canada.ca>
+Repository: CRAN
+Date/Publication: 2017-08-09 17:34:18 UTC

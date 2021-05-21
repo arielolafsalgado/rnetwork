@@ -1,0 +1,29 @@
+Package: tree.interpreter
+Type: Package
+Title: Random Forest Prediction Decomposition and Feature Importance
+        Measure
+Version: 0.1.0
+Date: 2019-10-15
+Author: Qingyao Sun
+Maintainer: Qingyao Sun <sunqingyao19970825@gmail.com>
+Description: An R re-implementation of the 'treeinterpreter' package on PyPI
+        <https://pypi.org/project/treeinterpreter/>. Each prediction can be
+        decomposed as 'prediction = bias + feature_1_contribution + ... +
+        feature_n_contribution'. This decomposition is then used to calculate
+        the Mean Decrease Impurity (MDI) and Mean Decrease Impurity using
+        out-of-bag samples (MDI-oob) feature importance measures based on the
+        work of Li et al. (2019) <arXiv:1906.10845>.
+Encoding: UTF-8
+License: MIT + file LICENSE
+Imports: Rcpp (>= 1.0.2)
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 6.1.1
+Suggests: MASS, randomForest, ranger, testthat (>= 2.1.0), knitr,
+        rmarkdown, covr
+URL: https://github.com/nalzok/tree.interpreter
+BugReports: https://github.com/nalzok/tree.interpreter/issues
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2019-10-26 06:17:00 UTC; nalzok
+Repository: CRAN
+Date/Publication: 2019-10-30 17:40:02 UTC

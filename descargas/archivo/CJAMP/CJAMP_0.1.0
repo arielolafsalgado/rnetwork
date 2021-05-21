@@ -1,0 +1,20 @@
+Package: CJAMP
+Type: Package
+Title: Copula-Based Joint Analysis of Multiple Phenotypes
+Version: 0.1.0
+Authors@R: c( person("Stefan", "Konigorski", email = "stefan.konigorski@gmail.com", role = c("aut", "cre")), person("Yildiz E.", "Yilmaz", email = "yyilmaz@mun.ca", role = c("ctb", "ths")))
+Description: We provide a computationally efficient and robust implementation of the recently proposed C-JAMP (Copula-based Joint Analysis of Multiple Phenotypes) method (Konigorski et al., 2018, submitted). C-JAMP allows estimating and testing the association of one or multiple predictors on multiple outcomes in a joint model, and is implemented here with a focus on large-scale genome-wide association studies with two phenotypes. The use of copula functions allows modeling a wide range of multivariate dependencies between the phenotypes, and previous results are supporting that C-JAMP can increase the power of association studies to identify associated genetic variants in comparison to existing methods (Konigorski, Yilmaz, Pischon, 2016, <DOI:10.1186/s12919-016-0045-6>; Konigorski, Yilmaz, Bull, 2014, <DOI:10.1186/1753-6561-8-S1-S72>). In addition to the C-JAMP functions, functions are available to generate genetic and phenotypic data, to compute the minor allele frequency (MAF) of genetic markers, and to estimate the phenotypic variance explained by genetic markers.
+License: GPL-2
+Encoding: UTF-8
+LazyData: TRUE
+Imports: stats, optimx
+Suggests: MASS, knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-04-24 09:40:12 UTC; skonigor
+Author: Stefan Konigorski [aut, cre],
+  Yildiz E. Yilmaz [ctb, ths]
+Maintainer: Stefan Konigorski <stefan.konigorski@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-04-24 10:00:42 UTC

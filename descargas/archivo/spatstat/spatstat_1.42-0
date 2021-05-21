@@ -1,0 +1,185 @@
+Package: spatstat
+Version: 1.42-0
+Nickname: Life, The Universe and Everything
+Date: 2015-05-27
+Title: Spatial Point Pattern Analysis, Model-Fitting, Simulation, Tests
+Author: Adrian Baddeley <Adrian.Baddeley@uwa.edu.au>,
+	Rolf Turner <r.turner@auckland.ac.nz> 
+        and Ege Rubak <rubak@math.aau.dk>,
+	with substantial contributions of code by 
+	Kasper Klitgaard Berthelsen;
+	Abdollah Jalilian;
+	Marie-Colette van Lieshout;
+	Tuomas Rajala;
+	Dominic Schuhmacher;
+	and 
+	Rasmus Waagepetersen.
+	Additional contributions 
+	by Q.W. Ang; 
+	S. Azaele; 
+	M. Baddeley;
+	C. Beale; 
+	M. Bell;
+	R. Bernhardt; 
+	T. Bendtsen;
+	A. Bevan;
+	B. Biggerstaff;
+	A. Bilgrau;
+	L. Bischof;
+	R. Bivand;
+	J.M. Blanco Moreno;
+	F. Bonneu;
+	J. Burgos; 
+	S. Byers; 
+	Y.M. Chang; 
+	J.B. Chen; 
+	I. Chernayavsky; 
+	Y.C. Chin; 
+	B. Christensen; 
+	J.-F. Coeurjolly;
+	R. Corria Ainslie;
+	M. de la Cruz; 
+	P. Dalgaard; 
+        S. Das;
+	P.J. Diggle; 
+	P. Donnelly;
+	I. Dryden; 
+	S. Eglen; 
+	A. El-Gabbas;
+        O. Flores;
+	E.D. Ford;
+        P. Forbes;
+	S. Frank; 
+	J. Franklin; 
+	N. Funwi-Gabga;
+        O. Garcia;
+	A. Gault; 
+	M. Genton;
+	S. Ghalandarayeshi;
+	J. Gilbey;
+	J. Goldstick;
+	P. Grabarnik; 
+	C. Graf; 
+	U. Hahn; 
+	A. Hardegen; 
+	M.B. Hansen; 
+	M. Hazelton; 
+	J. Heikkinen; 
+	M. Hering; 
+	M. Herrmann; 
+	K. Hornik; 
+	P. Hunziker; 
+	J. Hywood;
+	R. Ihaka; 
+	A. Jammalamadaka;
+	R. John-Chandran; 
+	D. Johnson; 
+	M. Khanmohammadi;
+	P. Kovesi;
+	M. Kuhn; 
+	J. Laake; 
+	F. Lavancier;
+	T. Lawrence; 
+	R.A. Lamb; 
+	J. Lee; 
+	G.P. Leser; 
+	H.T. Li;
+	G. Limitsios;
+	A. Lister;
+	B. Madin;
+	J. Marcus;
+	K. Marchikanti; 
+	R. Mark; 
+	J. Mateu;
+	P. McCullagh; 
+	U. Mehlig;
+	S. Meyer; 
+	X.C. Mi;
+	L. De Middeleer;
+	R.K. Milne; 
+        E. Miranda;
+	J. Moller; 
+	E. Mudrak;
+        G.M. Nair;
+	N. Nava;
+	L.S. Nielsen; 
+	F. Nunes; 
+	J.R. Nyengaard;
+	J. Oehlschlaegel;
+	T. Onkelinx;
+	S. O'Riordan;
+	E. Parilov; 
+	J. Picka; 
+	N. Picard; 
+	M. Porter;
+	S. Protsiv;
+	A. Raftery; 
+	S. Rakshit; 
+	P. Ramon;
+	X. Raynaud,
+	M. Reiter; 
+        I. Renner;
+	T.O. Richardson;  
+	B.D. Ripley;  
+	E. Rosenbaum; 
+	B. Rowlingson; 
+	J. Rudokas;
+	J. Rudge;
+	C. Ryan; 
+	F. Safavimanesh;
+	A. Sarkka; 
+	C. Schank; 
+	K. Schladitz; 
+	S. Schutte;
+	B.T. Scott; 
+        O. Semboli;
+	G.C. Shen;
+	V. Shcherbakov;
+	I.-M. Sintorn; 
+	Y. Song; 
+	M. Spiess; 
+	M. Stevenson; 
+	K. Stucki; 
+	M. Sumner; 
+	P. Surovy; 
+	B. Taylor; 
+	T. Thorarinsdottir;
+	B. Turlach; 
+	T. Tvedebrink;
+        K. Ummer;
+	M. Uppala;
+	A. van Burgel; 
+	T. Verbeke; 
+        M. Vihtakari;
+	A. Villers; 
+        F. Vinatier;
+        S. Voss;
+	H. Wang; 
+	H. Wendrock; 
+	J. Wild;
+	C. Witthoft;
+	S. Wong;
+	M. Woringer;
+	M.E. Zamboni
+	and
+	A. Zeileis.
+Maintainer: Adrian Baddeley <Adrian.Baddeley@uwa.edu.au>
+Depends: R (>= 3.2.0), stats, graphics, grDevices, utils
+Imports: mgcv, Matrix, deldir (>= 0.0-21), abind, tensor, polyclip (>=
+        1.3-0), goftest
+Suggests: sm, maptools, gsl, locfit, spatial, rpanel, tkrplot,
+        RandomFields (>= 3.0.0)
+Description: Comprehensive toolbox for analysing spatial data, mainly Spatial Point Patterns, including multitype/marked points and spatial covariates, in any two-dimensional spatial region. Also supports three-dimensional point patterns, space-time point patterns in any number of dimensions, and point patterns on a linear network. 
+	Contains about 2000 functions for plotting spatial data, exploratory data analysis, model-fitting, simulation, spatial sampling, model diagnostics, and formal inference. 
+	Data types include point patterns, line segment patterns, spatial windows, pixel images, tessellations, and linear networks. 
+	Exploratory methods include quadrat counts, K-functions and their simulation envelopes, nearest neighbour distance and empty space statistics, Fry plots, pair correlation function, kernel smoothed intensity, relative risk estimation with cross-validated bandwidth selection, mark correlation functions, segregation indices, mark dependence diagnostics, and kernel estimates of covariate effects. Formal hypothesis tests of random pattern (chi-squared, Kolmogorov-Smirnov, Diggle-Cressie-Loosmore-Ford, Dao-Genton) and tests for covariate effects (Cox-Berman-Waller-Lawson, Kolmogorov-Smirnov) are also supported.
+	Parametric models can be fitted to point pattern data using the functions ppm, kppm, slrm similar to glm. Types of models include Poisson, Gibbs, Cox and cluster point processes. Models may involve dependence on covariates, interpoint interaction, cluster formation and dependence on marks. Models are fitted by maximum likelihood, logistic regression, minimum contrast, and composite likelihood methods. 
+	Fitted point process models can be simulated, automatically. Formal hypothesis tests of a fitted model are supported (likelihood ratio test, analysis of deviance, Monte Carlo tests) along with basic tools for model selection (stepwise, AIC). Tools for validating the fitted model include simulation envelopes, residuals, residual plots and Q-Q plots, leverage and influence diagnostics, partial residuals, and added variable plots.
+License: GPL (>= 2)
+URL: http://www.spatstat.org
+LazyData: true
+NeedsCompilation: yes
+ByteCompile: true
+Packaged: 2015-05-27 09:24:09 UTC; adrian
+Repository: CRAN
+Date/Publication: 2015-06-01 07:46:50

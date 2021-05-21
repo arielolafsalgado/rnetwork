@@ -1,0 +1,32 @@
+Package: PortfolioEffectEstim
+Type: Package
+Title: High Frequency Price Estimators by PortfolioEffect
+Version: 1.0
+Date: 2015-09-25
+Depends: methods,PortfolioEffectHFT
+Imports: rJava
+LazyData: yes
+ByteCompile: TRUE
+Authors@R: c(person("Andrey", "Kostin", role = c("aut", "cre"),
+                    email = "andrey.kostin@portfolioeffect.com"),
+             person("Aleksey", "Zemnitskiy", role = c("aut")),
+             person("Oleg", "Nechaev", role = c("aut"))
+           )
+Maintainer: Andrey Kostin <andrey.kostin@portfolioeffect.com>
+Description: R interface to PortfolioEffect Quant service for estimating
+    high frequency price variance, quarticity, microstructure noise variance, 
+    and other metrics in both aggregate and rolling window flavors. 
+    Constructed estimators could use client-side market data or access 
+    HF intraday price history for all major US Equities.
+    See https://www.portfolioeffect.com/ for more information on the 
+    PortfolioEffect high frequency portfolio analytics platform.
+URL: https://www.portfolioeffect.com/
+License: GPL-3
+SystemRequirements: Java (>= 1.7)
+NeedsCompilation: no
+Repository: CRAN
+Packaged: 2015-11-13 09:54:15 UTC; alex
+Author: Andrey Kostin [aut, cre],
+  Aleksey Zemnitskiy [aut],
+  Oleg Nechaev [aut]
+Date/Publication: 2015-11-13 12:02:03

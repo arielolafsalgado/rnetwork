@@ -1,0 +1,18 @@
+Package: IncDTW
+Type: Package
+Title: Incremental Calculation of Dynamic Time Warping
+Version: 0.1.0
+Author: Maximilian Leodolter
+Maintainer: Maximilian Leodolter <maximilian.leodolter@gmail.com>
+Description: Implements incremental calculation of the DTW ( Dynamic Time Warping) distance of two vectors, which is specifically useful for life data streams. Further the calculation of the global cost matrix is implemented in C++ to be faster. The Sakoe Chiba band is also implemented. The calculation of DTW is less functional then the one of dtw(), however much faster. For details about DTW see the original paper "Dynamic programming algorithm optimization for spoken word recognition" by Sakoe and Chiba (1978) <DOI:10.1109/TASSP.1978.1163055>.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Imports: Rcpp (>= 0.12.8)
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2017-07-03 10:08:45 UTC; LeodolterM
+Suggests: testthat
+RoxygenNote: 6.0.1
+Repository: CRAN
+Date/Publication: 2017-07-03 11:00:20 UTC

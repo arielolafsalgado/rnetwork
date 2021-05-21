@@ -1,0 +1,34 @@
+Package: tfse
+Version: 0.5.0
+Title: Tools for Script Editing
+Description: A collection of useful tools for programming and writing-scripts. 
+    Several functions are simple wrappers around base R functions that extend 
+    their functionality while also providing some convenient properties–regular
+    expression functions that automatically detect look-ahead and look-behind 
+    statements, a read-line function that suppresses incomplete-final-line 
+    warnings and automatically opens and closes connections, a version of 
+    substrings that starts from the end of strings, etc. Other functions are 
+    useful for checking whether packages are installed, omitting 
+    missing data, and showing in-use connections.
+Authors@R: 
+    person(given = "Michael W.",
+           family = "Kearney",
+           role = c("aut", "cre"),
+           email = "kearneymw@missouri.edu",
+           comment = c(ORCID = "0000-0002-0730-4694"))
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Language: en-US
+Depends: R (>= 2.10)
+Imports: utils, magrittr, dapr, stats
+Suggests: testthat, covr
+URL: https://tfse.mikewk.com
+BugReports: https://github.com/mkearney/tfse/issues
+NeedsCompilation: no
+Packaged: 2019-02-08 17:53:09 UTC; mwk
+Author: Michael W. Kearney [aut, cre] (<https://orcid.org/0000-0002-0730-4694>)
+Maintainer: Michael W. Kearney <kearneymw@missouri.edu>
+Repository: CRAN
+Date/Publication: 2019-02-08 18:20:03 UTC

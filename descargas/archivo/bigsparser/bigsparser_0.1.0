@@ -1,0 +1,28 @@
+Package: bigsparser
+Title: Sparse Matrix Format with Data on Disk
+Version: 0.1.0
+Authors@R: 
+    person(given = "Florian",
+           family = "Privé",
+           role = c("aut", "cre"),
+           email = "florian.prive.21@gmail.com")
+Description: Provides a sparse matrix format with data stored on disk, to be
+    used in both R and C++. This is intended for more efficient use of sparse 
+    data in C++ and also when parallelizing, since data on disk does not need
+    copying. Only a limited number of features will be implemented. For now,
+    conversion can be performed from a 'dgCMatrix' of R package 'Matrix'.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+URL: https://github.com/privefl/bigsparser
+BugReports: https://github.com/privefl/bigsparser/issues
+LinkingTo: Rcpp, rmio
+Imports: Rcpp, bigassertr, methods
+Suggests: Matrix, testthat (>= 2.1.0)
+NeedsCompilation: yes
+Packaged: 2020-04-08 12:39:16 UTC; au639593
+Author: Florian Privé [aut, cre]
+Maintainer: Florian Privé <florian.prive.21@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-04-10 08:40:02 UTC

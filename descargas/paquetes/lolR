@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package lolR</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Linear Optimal Low-Rank Projection [R package lolR version 2.1]" />
+<meta name="citation_author" content="Eric Bridgeford" />
+<meta name="citation_publication_date" content="2020-06-26" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=lolR" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=lolR" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="lolR: Linear Optimal Low-Rank Projection" />
+<meta name="og:description" content="Supervised learning techniques designed for the situation when the dimensionality exceeds the sample size have a tendency to overfit as the dimensionality of the data increases. To remedy this High dimensionality; low sample size (HDLSS) situation, we attempt to learn a lower-dimensional representation of the data before learning a classifier. That is, we project the data to a situation where the dimensionality is more manageable, and then are able to better apply standard classification or clustering techniques since we will have fewer dimensions to overfit. A number of previous works have focused on how to strategically reduce dimensionality in the unsupervised case, yet in the supervised HDLSS regime, few works have attempted to devise dimensionality reduction techniques that leverage the labels associated with the data. In this package and the associated manuscript Vogelstein et al. (2017) &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1709.01233&quot;&gt;arXiv:1709.01233&lt;/a&gt;&amp;gt;, we provide several methods for feature extraction, some utilizing labels and some not, along with easily extensible utilities to simplify cross-validative efforts to identify the best feature extraction method. Additionally, we include a series of adaptable benchmark simulations to serve as a standard for future investigative efforts into supervised HDLSS. Finally, we produce a comprehensive comparison of the included algorithms across a range of benchmark simulations and real data applications." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=lolR" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>lolR: Linear Optimal Low-Rank Projection</h2>
+<p>Supervised learning techniques designed for the situation when the dimensionality exceeds the sample size have a tendency to overfit as the dimensionality of the data increases. To remedy this High dimensionality; low sample size (HDLSS) situation, we attempt to learn a lower-dimensional representation of the data before learning a classifier. That is, we project the data to a situation where the dimensionality is more manageable, and then are able to better apply standard classification or clustering techniques since we will have fewer dimensions to overfit. A number of previous works have focused on how to strategically reduce dimensionality in the unsupervised case, yet in the supervised HDLSS regime, few works have attempted to devise dimensionality reduction techniques that leverage the labels associated with the data. In this package and the associated manuscript Vogelstein et al. (2017) &lt;<a href="https://arxiv.org/abs/1709.01233">arXiv:1709.01233</a>&gt;, we provide several methods for feature extraction, some utilizing labels and some not, along with easily extensible utilities to simplify cross-validative efforts to identify the best feature extraction method. Additionally, we include a series of adaptable benchmark simulations to serve as a standard for future investigative efforts into supervised HDLSS. Finally, we produce a comprehensive comparison of the included algorithms across a range of benchmark simulations and real data applications.</p>
+<table summary="Package lolR summary">
+<tr>
+<td>Version:</td>
+<td>2.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.4.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../ggplot2/index.html">ggplot2</a>, <a href="../abind/index.html">abind</a>, <a href="../MASS/index.html">MASS</a>, <a href="../irlba/index.html">irlba</a>, <a href="../pls/index.html">pls</a>, <a href="../robust/index.html">robust</a>, <a href="../robustbase/index.html">robustbase</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, parallel, <a href="../randomForest/index.html">randomForest</a>, <a href="../latex2exp/index.html">latex2exp</a>, <a href="../testthat/index.html">testthat</a>, <a href="../covr/index.html">covr</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-26</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Eric Bridgeford [aut, cre],
+  Minh Tang [ctb],
+  Jason Yim [ctb],
+  Joshua Vogelstein [ths]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Eric Bridgeford  &#x3c;&#x65;&#x72;&#x69;&#x63;&#x77;&#x62;&#x39;&#x35;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/neurodata/lol">https://github.com/neurodata/lol</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_lolR.html">lolR results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package lolR downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="lolR.pdf"> lolR.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/dp.html">dp</a><br/>
+<a href="vignettes/extend_classification.html">extend_classification</a><br/>
+<a href="vignettes/extend_embedding.html">extend_embedding</a><br/>
+<a href="vignettes/lol.html">lol</a><br/>
+<a href="vignettes/lrcca.html">lrcca</a><br/>
+<a href="vignettes/lrlda.html">lrlda</a><br/>
+<a href="vignettes/nearestCentroid.html">centroid</a><br/>
+<a href="vignettes/pca.html">pca</a><br/>
+<a href="vignettes/pls.html">pls</a><br/>
+<a href="vignettes/rp.html">rp</a><br/>
+<a href="vignettes/simulations.html">sims</a><br/>
+<a href="vignettes/xval.html">xval</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/lolR_2.1.tar.gz"> lolR_2.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/lolR_2.1.zip">lolR_2.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/lolR_2.1.zip">lolR_2.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/lolR_2.1.zip">lolR_2.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/lolR_2.1.tgz">lolR_2.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/lolR_2.1.tgz">lolR_2.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/lolR"> lolR archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=lolR"><samp>https://CRAN.R-project.org/package=lolR</samp></a>
+to link to this page.</p>
+</body>
+</html>

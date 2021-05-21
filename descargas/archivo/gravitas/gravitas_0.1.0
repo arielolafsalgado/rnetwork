@@ -1,0 +1,57 @@
+Package: gravitas
+Type: Package
+Title: Explore Probability Distributions for Bivariate Temporal
+        Granularities
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Sayani",
+             family = "Gupta",
+             role = c("aut", "cre"),
+             email = "gupta.sayani@gmail.com",
+             comment = c(ORCID = "0000-0003-0643-5358")),
+      person(given = "Rob",
+             family = "Hyndman",
+             role = c("aut", "ths"),
+             email="Rob.Hyndman@monash.edu", 
+             comment = c(ORCID = "0000-0002-2140-5352")),
+      person(given = "Di",
+             family = "Cook",
+             role = c("aut", "ths"),
+             email = "dicook@monash.edu", 
+             comment = c(ORCID = "0000-0002-3813-7155")),
+      person(given = "Antony", 
+             family = "Unwin", 
+             role = "aut", 
+             email = " unwin@math.uni-augsburg.de",
+             comment = c(ORCID =  "0000-0002-5841-5757")))
+Depends: R(>= 3.1.3)
+Imports: lubridate(>= 1.7.4), dplyr(>= 0.8.0), tsibble (>= 0.8.0),
+        tibble(>= 2.1.1), rlang(>= 0.3.4), tidyr(>= 0.8.3), ggplot2 (>=
+        3.1.1), stats, stringr(>= 1.4.0), lvplot, ggridges, shiny,
+        RColorBrewer, ineq, magrittr, utils
+Suggests: tsibbledata (>= 0.1.0), purrr (>= 0.3.2), testthat (>=
+        2.1.0), covr, knitr, shinythemes, shinyalert, rmarkdown, readr
+VignetteBuilder: knitr
+Maintainer: Sayani Gupta <gupta.sayani@gmail.com>
+Description: Provides tools for systematically exploring large quantities of 
+             temporal data across different temporal granularities
+             (deconstructions of time) by visualizing probability distributions. 
+             'gravitas' computes circular, aperiodic,
+             single-order-up or multiple-order-up granularities and
+             advises on which combinations of granularities to explore
+             and through which distribution plots.
+BugReports: https://github.com/Sayani07/gravitas/issues
+License: GPL-3
+URL: https://github.com/Sayani07/gravitas/
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-11-01 06:38:25 UTC; sgup0008
+Author: Sayani Gupta [aut, cre] (<https://orcid.org/0000-0003-0643-5358>),
+  Rob Hyndman [aut, ths] (<https://orcid.org/0000-0002-2140-5352>),
+  Di Cook [aut, ths] (<https://orcid.org/0000-0002-3813-7155>),
+  Antony Unwin [aut] (<https://orcid.org/0000-0002-5841-5757>)
+Repository: CRAN
+Date/Publication: 2019-11-05 14:30:02 UTC

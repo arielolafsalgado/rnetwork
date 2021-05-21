@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package esvis</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Visualization and Estimation of Effect Sizes [R package esvis version 0.3.1]" />
+<meta name="citation_author" content="Daniel Anderson" />
+<meta name="citation_publication_date" content="2020-04-30" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=esvis" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=esvis" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="esvis: Visualization and Estimation of Effect Sizes" />
+<meta name="og:description" content="A variety of methods are provided to estimate and visualize distributional differences in terms of effect sizes. Particular emphasis is upon evaluating differences between two or more distributions across the entire scale, rather than at a single point (e.g., differences in means). For example, Probability-Probability (PP) plots display the difference between two or more distributions, matched by their empirical CDFs (see Ho and Reardon, 2012; &amp;lt;&lt;a href=&quot;https://doi.org/10.3102%2F1076998611411918&quot;&gt;doi:10.3102/1076998611411918&lt;/a&gt;&amp;gt;), allowing for examinations of where on the scale distributional differences are largest or smallest. The area under the PP curve (AUC) is an effect-size metric, corresponding to the probability that a randomly selected observation from the x-axis distribution will have a higher value than a randomly selected observation from the y-axis distribution. Binned effect size plots are also available, in which the distributions are split into bins (set by the user) and separate effect sizes (Cohen's d) are produced for each bin - again providing a means to evaluate the consistency (or lack thereof) of the difference between two or more distributions at different points on the scale. Evaluation of empirical CDFs is also provided, with built-in arguments for providing annotations to help evaluate distributional differences at specific points (e.g., semi-transparent shading). All function take a consistent argument structure. Calculation of specific effect sizes is also possible. The following effect sizes are estimable: (a) Cohen's d, (b) Hedges' g, (c) percentage above a cut, (d) transformed (normalized) percentage above a cut, (e) area under the PP curve, and (f) the V statistic (see Ho, 2009; &amp;lt;&lt;a href=&quot;https://doi.org/10.3102%2F1076998609332755&quot;&gt;doi:10.3102/1076998609332755&lt;/a&gt;&amp;gt;), which essentially transforms the area under the curve to standard deviation units. By default, effect sizes are calculated for all possible pairwise comparisons, but a reference group (distribution) can be specified." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=esvis" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>esvis: Visualization and Estimation of Effect Sizes</h2>
+<p>A variety of methods are provided to estimate and visualize
+    distributional differences in terms of effect sizes. Particular emphasis
+    is upon evaluating differences between two or more distributions across
+    the entire scale, rather than at a single point (e.g., differences in
+    means). For example, Probability-Probability (PP) plots display the
+    difference between two or more distributions, matched by their empirical
+    CDFs (see Ho and Reardon, 2012; &lt;<a href="https://doi.org/10.3102%2F1076998611411918">doi:10.3102/1076998611411918</a>&gt;), allowing
+    for examinations of where on the scale distributional differences are
+    largest or smallest. The area under the PP curve (AUC) is an effect-size
+    metric, corresponding to the probability that a randomly selected
+    observation from the x-axis distribution will have a higher value
+    than a randomly selected observation from the y-axis distribution. 
+    Binned effect size plots are also available, in which the distributions
+    are split into bins (set by the user) and separate effect sizes (Cohen's
+    d) are produced for each bin - again providing a means to evaluate the
+    consistency (or lack thereof) of the difference between two or more 
+    distributions at different points on the scale. Evaluation of empirical 
+    CDFs is also provided, with  built-in arguments for providing annotations 
+    to help evaluate distributional differences at specific points (e.g., 
+    semi-transparent shading). All function take a consistent argument 
+    structure. Calculation of specific effect sizes is also possible. The
+    following effect sizes are estimable: (a) Cohen's d, (b) Hedges' g, 
+    (c) percentage above a cut, (d) transformed (normalized) percentage above 
+    a cut, (e)  area under the PP curve, and (f) the V statistic (see Ho, 
+    2009; &lt;<a href="https://doi.org/10.3102%2F1076998609332755">doi:10.3102/1076998609332755</a>&gt;), which essentially transforms the 
+    area under the curve to standard deviation units. By default, effect sizes 
+    are calculated for all possible pairwise comparisons, but a reference 
+    group (distribution) can be specified.</p>
+<table summary="Package esvis summary">
+<tr>
+<td>Version:</td>
+<td>0.3.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.1)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../sfsmisc/index.html">sfsmisc</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../magrittr/index.html">magrittr</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../rlang/index.html">rlang</a>, <a href="../tidyr/index.html">tidyr</a> (&ge; 1.0.0), <a href="../purrr/index.html">purrr</a>, <a href="../Hmisc/index.html">Hmisc</a>, <a href="../tibble/index.html">tibble</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../viridisLite/index.html">viridisLite</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-04-30</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Daniel Anderson [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Daniel Anderson  &#x3c;&#x64;&#x61;&#x6e;&#x69;&#x65;&#x6c;&#x61;&#x20;&#x61;&#x74;&#x20;&#x75;&#x6f;&#x72;&#x65;&#x67;&#x6f;&#x6e;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/datalorax/esvis/issues">https://github.com/datalorax/esvis/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/datalorax/esvis">https://github.com/datalorax/esvis</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_esvis.html">esvis results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package esvis downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="esvis.pdf"> esvis.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/esvis_0.3.1.tar.gz"> esvis_0.3.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/esvis_0.3.1.zip">esvis_0.3.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/esvis_0.3.1.zip">esvis_0.3.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/esvis_0.3.1.zip">esvis_0.3.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/esvis_0.3.1.tgz">esvis_0.3.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/esvis_0.3.1.tgz">esvis_0.3.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/esvis"> esvis archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=esvis"><samp>https://CRAN.R-project.org/package=esvis</samp></a>
+to link to this page.</p>
+</body>
+</html>

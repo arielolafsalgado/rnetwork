@@ -1,0 +1,30 @@
+Package: ltmle
+Type: Package
+Title: Longitudinal Targeted Maximum Likelihood Estimation
+Version: 0.9-6
+Date: 2015-5-26
+Maintainer: Joshua Schwab <joshuaschwab@yahoo.com>
+Authors@R: c(person("Joshua", "Schwab", role=c("aut", "cre"),
+    email="joshuaschwab@yahoo.com"), person("Samuel", "Lendle", role="aut"),
+    person("Maya", "Petersen", role="aut"), person("Mark", "van der Laan",
+    role="aut"), person("Susan", "Gruber", role="ctb"))
+Depends: R(>= 3.0.0)
+Imports: Matrix
+Suggests: SuperLearner, memoise, testthat
+Description: Targeted Maximum Likelihood Estimation (TMLE) of
+    treatment/censoring specific mean outcome or marginal structural model for
+    point-treatment and longitudinal data.
+License: GPL-2
+Collate: 'GeneralUtilities.R' 'ltmle.R' 'ltmle_sg.R'
+        'BinaryToCensoring.R' 'DeterministicFunctions.R' 'zzz.R'
+URL: https://github.com/joshuaschwab/ltmle
+BugReports: https://github.com/joshuaschwab/ltmle/issues
+NeedsCompilation: no
+Packaged: 2015-05-28 22:03:40 UTC; maya
+Author: Joshua Schwab [aut, cre],
+  Samuel Lendle [aut],
+  Maya Petersen [aut],
+  Mark van der Laan [aut],
+  Susan Gruber [ctb]
+Repository: CRAN
+Date/Publication: 2015-05-29 08:50:25

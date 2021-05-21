@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package datanugget</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Create, Refine, and Cluster Data Nuggets [R package datanugget version 1.0.0]" />
+<meta name="citation_author1" content="Traymon Beavers" />
+<meta name="citation_author2" content="Javier Cabrera" />
+<meta name="citation_author3" content="Mariusz Lubomirski" />
+<meta name="citation_publication_date" content="2020-01-24" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=datanugget" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=datanugget" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="datanugget: Create, Refine, and Cluster Data Nuggets" />
+<meta name="og:description" content="Creating, refining, and clustering data nuggets. Data nuggets reduce a large dataset into a small collection of nuggets of data, each containing a center (location), weight (importance), and scale (variability) parameter. Data nugget centers are created by choosing observations in the dataset which are as equally spaced apart as possible. Data nugget weights are created by counting the number observations closest to a given data nugget’s center. We then say the data nugget 'contains' these observations and the data nugget center is recalculated as the mean of these observations. Data nugget scales are created by calculating the trace of the covariance matrix of the observations contained within a data nugget divided by the dimension of the dataset. Data nuggets are refined by 'splitting' data nuggets which have scales or shapes (defined as the ratio of the two largest eigenvalues of the covariance matrix of the observations contained within the data nugget) deemed too large. Data nuggets are clustered by using a weighted form of k-means clustering which uses both the centers and weights of data nuggets to optimize the clustering assignments." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=datanugget" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>datanugget: Create, Refine, and Cluster Data Nuggets</h2>
+<p>Creating, refining, and clustering data nuggets. 
+    Data nuggets reduce a large dataset into a small collection of nuggets of 
+    data, each containing a center (location), weight (importance), and scale 
+    (variability) parameter. Data nugget centers are created by choosing 
+    observations in the dataset which are as equally spaced apart as possible. 
+    Data nugget weights are created by counting the number observations 
+    closest to a given data nugget’s center. We then say the data nugget 
+    'contains' these observations and the data nugget center is recalculated 
+    as the mean of these observations. Data nugget scales are created by 
+    calculating the trace of the covariance matrix of the observations 
+    contained within a data nugget divided by the dimension of the dataset. 
+    Data nuggets are refined by 'splitting' data nuggets which have scales or 
+    shapes (defined as the ratio of the two largest eigenvalues of the 
+    covariance matrix of the observations contained within the data nugget) 
+    deemed too large. Data nuggets are clustered by using a weighted form of 
+    k-means clustering which uses both the centers and weights of data nuggets 
+    to optimize the clustering assignments.</p>
+<table summary="Package datanugget summary">
+<tr>
+<td>Version:</td>
+<td>1.0.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0), <a href="../doSNOW/index.html">doSNOW</a> (&ge; 1.0.16), <a href="../foreach/index.html">foreach</a> (&ge; 1.4.4), parallel (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-01-24</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Traymon Beavers [aut, cre],
+  Javier Cabrera [aut],
+  Mariusz Lubomirski [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Traymon Beavers  &#x3c;&#x74;&#x72;&#x61;&#x79;&#x2e;&#x62;&#x65;&#x61;&#x76;&#x65;&#x72;&#x73;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_datanugget.html">datanugget results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package datanugget downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="datanugget.pdf"> datanugget.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/datanugget_1.0.0.tar.gz"> datanugget_1.0.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/datanugget_1.0.0.zip">datanugget_1.0.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/datanugget_1.0.0.zip">datanugget_1.0.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/datanugget_1.0.0.zip">datanugget_1.0.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/datanugget_1.0.0.tgz">datanugget_1.0.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/datanugget_1.0.0.tgz">datanugget_1.0.0.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=datanugget"><samp>https://CRAN.R-project.org/package=datanugget</samp></a>
+to link to this page.</p>
+</body>
+</html>

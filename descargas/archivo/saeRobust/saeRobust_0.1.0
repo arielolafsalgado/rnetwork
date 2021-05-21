@@ -1,0 +1,32 @@
+Package: saeRobust
+Title: Robust Small Area Estimation
+Version: 0.1.0
+Author: Sebastian Warnholz [aut, cre]
+Maintainer: Sebastian Warnholz <Sebastian.Warnholz@fu-berlin.de>
+Description: Methods to fit robust alternatives to commonly used models used in
+    Small Area Estimation. The methods here used are based on best linear
+    unbiased predictions and linear mixed models. At this time available models
+    include area level models incorporating spatial and temporal correlation in
+    the random effects.
+BugReports: https://github.com/wahani/saeRobust/issues
+Depends: R (>= 3.3), methods, aoos
+Imports: assertthat, ggplot2, Matrix, magrittr, MASS, modules, memoise,
+        Rcpp, spdep
+License: MIT + file LICENSE
+LazyData: true
+Suggests: knitr, rmarkdown, sae, saeSim, testthat
+VignetteBuilder: knitr
+Encoding: UTF-8
+ByteCompile: true
+RoxygenNote: 5.0.1
+LinkingTo: Rcpp, RcppArmadillo
+Collate: 'NAMESPACE.R' 'RcppExports.R' 'bootstrap.R' 'correlation.R'
+        'fit.R' 'fixedPoint.R' 'helper.R' 'makeXY.R' 'mat.R'
+        'matModels.R' 'mse.R' 'plot.R' 'print.R' 'psiFunctions.R'
+        'rfh.R' 'robustEstimationEquations.R'
+        'robustObjectiveFunctions.R' 'testData.R' 'update.R'
+        'variance.R'
+NeedsCompilation: yes
+Packaged: 2016-05-16 15:57:48 UTC; sebastian
+Repository: CRAN
+Date/Publication: 2016-05-16 19:47:53

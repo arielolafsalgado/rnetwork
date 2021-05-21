@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package prepdat</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Preparing Experimental Data for Statistical Analysis [R package prepdat version 1.0.8]" />
+<meta name="citation_author1" content="Ayala S. Allon" />
+<meta name="citation_author2" content="Roy Luria" />
+<meta name="citation_publication_date" content="2016-09-23" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=prepdat" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=prepdat" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="prepdat: Preparing Experimental Data for Statistical Analysis" />
+<meta name="og:description" content="Prepares data for statistical analysis (e.g., analysis of variance ;ANOVA) by enabling the user to easily and quickly merge (using the file_merge() function) raw data files into one merged table and then aggregate the merged table (using the prep() function) into a finalized table while keeping track and summarizing every step of the preparation. The finalized table contains several possibilities for dependent measures of the dependent variable. Most suitable when measuring variables in an interval or ratio scale (e.g., reaction-times) and/or discrete values such as accuracy. Main functions included are file_merge() and prep(). The file_merge() function vertically merges individual data files (in a long format) in which each line is a single observation to one single dataset. The prep() function aggregates the single dataset according to any combination of grouping variables (i.e., between-subjects and within-subjects independent variables, respectively), and returns a data frame with a number of dependent measures for further analysis for each cell according to the combination of provided grouping variables. Dependent measures for each cell include among others means before and after rejecting all values according to a flexible standard deviation criteria, number of rejected values according to the flexible standard deviation criteria, proportions of rejected values according to the flexible standard deviation criteria, number of values before rejection, means after rejecting values according to procedures described in Van Selst &amp;amp; Jolicoeur (1994; suitable when measuring reaction-times), standard deviations, medians, means according to any percentile (e.g., 0.05, 0.25, 0.75, 0.95) and harmonic means. The data frame prep() returns can also be exported as a txt file to be used for statistical analysis in other statistical programs." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=prepdat" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>prepdat: Preparing Experimental Data for Statistical Analysis</h2>
+<p>Prepares data for statistical analysis (e.g., analysis of variance
+  ;ANOVA) by enabling the user to easily and quickly merge (using the
+  file_merge() function) raw data files into one merged table and then
+  aggregate the merged table (using the prep() function) into a finalized
+  table while keeping track and summarizing every step of the preparation.
+  The finalized table contains several possibilities for dependent measures of
+  the dependent variable. Most suitable when measuring variables in an
+  interval or ratio scale (e.g., reaction-times) and/or discrete values such
+  as accuracy. Main functions included are file_merge() and prep(). The
+  file_merge() function vertically merges individual data files (in a long
+  format) in which each line is a single observation to one single dataset.
+  The prep() function aggregates the single dataset according to any
+  combination of grouping variables (i.e., between-subjects and
+  within-subjects independent variables, respectively), and returns a data
+  frame with a number of dependent measures for further analysis for each cell
+  according to the combination of provided grouping variables. Dependent
+  measures for each cell include among others means before and after rejecting
+  all values according to a flexible standard deviation criteria, number of
+  rejected values according to the flexible standard deviation criteria,
+  proportions of rejected values according to the flexible standard deviation
+  criteria, number of values before rejection, means after rejecting values
+  according to procedures described in Van Selst &amp; Jolicoeur (1994; suitable
+  when measuring reaction-times), standard deviations, medians, means according
+  to any percentile (e.g., 0.05, 0.25, 0.75, 0.95) and harmonic means. The data
+  frame prep() returns can also be exported as a txt file to be used for
+  statistical analysis in other statistical programs.</p>
+<table summary="Package prepdat summary">
+<tr>
+<td>Version:</td>
+<td>1.0.8</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0.3)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../dplyr/index.html">dplyr</a> (&ge; 0.4.2), <a href="../reshape2/index.html">reshape2</a> (&ge; 1.4.1), <a href="../psych/index.html">psych</a> (&ge; 1.5.4)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2016-09-23</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Ayala S. Allon [aut, cre],
+  Roy Luria [aut],
+  James Grange [ctb],
+  Nachshon Meiran [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Ayala S. Allon  &#x3c;&#x61;&#x79;&#x61;&#x6c;&#x61;&#x61;&#x6c;&#x6c;&#x6f;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="http://github.com/ayalaallon/prepdat/issues">http://github.com/ayalaallon/prepdat/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://github.com/ayalaallon/prepdat">http://github.com/ayalaallon/prepdat</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="README.html">README</a> <a href="news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_prepdat.html">prepdat results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package prepdat downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="prepdat.pdf"> prepdat.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/prepdat_1.0.8.tar.gz"> prepdat_1.0.8.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/prepdat_1.0.8.zip">prepdat_1.0.8.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/prepdat_1.0.8.zip">prepdat_1.0.8.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/prepdat_1.0.8.zip">prepdat_1.0.8.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/prepdat_1.0.8.tgz">prepdat_1.0.8.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/prepdat_1.0.8.tgz">prepdat_1.0.8.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/prepdat"> prepdat archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=prepdat"><samp>https://CRAN.R-project.org/package=prepdat</samp></a>
+to link to this page.</p>
+</body>
+</html>

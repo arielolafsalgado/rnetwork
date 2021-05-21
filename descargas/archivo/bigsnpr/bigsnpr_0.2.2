@@ -1,0 +1,39 @@
+Encoding: UTF-8
+Package: bigsnpr
+Type: Package
+Title: Analysis of Massive SNP Arrays
+Version: 0.2.2
+Date: 2017-12-02
+Authors@R: c(
+    person("Florian", "Privé", 
+           email = "florian.prive.21@gmail.com", 
+           role = c("aut", "cre")),
+    person("Michael", "Blum", 
+           email = "michael.blum@univ-grenoble-alpes.fr", 
+           role = "ths"),
+    person("Hugues", "Aschard", 
+           email = "hugues.aschard@pasteur.fr",
+           role = "ths"))
+Description: Easy-to-use, efficient, flexible and scalable tools
+    for the analysis of massive SNP arrays.
+    Preprint: Privé et al. (2017) <doi:10.1101/190926>.
+License: GPL-3
+LazyData: TRUE
+ByteCompile: TRUE
+Depends: R (>= 3.3.2), bigstatsr (>= 0.2.3)
+Imports: data.table, doParallel, foreach, ggplot2, gsubfn, Matrix,
+        parallel, Rcpp, robustbase, stats, xgboost
+LinkingTo: BH, bigstatsr, Rcpp, RcppArmadillo
+Suggests: spelling, covr, dplyr, gaston, Hmisc, magrittr, pcadapt,
+        testthat
+RoxygenNote: 6.0.1
+URL: https://privefl.github.io/bigsnpr
+BugReports: https://github.com/privefl/bigsnpr/issues
+NeedsCompilation: yes
+Packaged: 2017-12-04 17:09:27 UTC; Florian
+Author: Florian Privé [aut, cre],
+  Michael Blum [ths],
+  Hugues Aschard [ths]
+Maintainer: Florian Privé <florian.prive.21@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-12-05 09:54:23 UTC

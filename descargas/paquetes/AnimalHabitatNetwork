@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package AnimalHabitatNetwork</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Networks Characterising the Physical Configurations of Animal Habitats [R package AnimalHabitatNetwork version 0.1.0]" />
+<meta name="citation_author" content="Peng He" />
+<meta name="citation_publication_date" content="2019-11-25" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=AnimalHabitatNetwork" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=AnimalHabitatNetwork" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="AnimalHabitatNetwork: Networks Characterising the Physical Configurations of Animal Habitats" />
+<meta name="og:description" content="Functions for generating and visualising networks for characterising the physical attributes and spatial organisations of habitat components (i.e. habitat physical configurations). The network generating algorithm first determines the X and Y coordinates of N nodes within a rectangle with a side length of L and an area of A. Then it computes the pair-wise Euclidean distance Dij between node i and j, and then a complete network with 1/Dij as link weights is constructed. Then, the algorithm removes links from the complete network with the probability as shown in the function ahn_prob(). Such link removals can make the network disconnected whereas a connected network is wanted. In such cases, the algorithm rewires one network component to its spatially nearest neighbouring component and repeat doing this until the network is connected again. Finally, it outputs an undirected network (weighted or unweighted, connected or disconnected). This package came with a manuscript on modelling the physical configurations of animal habitats using networks (in preparation)." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=AnimalHabitatNetwork" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>AnimalHabitatNetwork: Networks Characterising the Physical Configurations of Animal
+Habitats</h2>
+<p>Functions for generating and visualising networks for characterising the physical attributes and spatial organisations of habitat components (i.e. habitat physical configurations). The network generating algorithm first determines the X and Y coordinates of N nodes within a rectangle with a side length of L and an area of A. Then it computes the pair-wise Euclidean distance Dij between node i and j, and then a complete network with 1/Dij as link weights is constructed. Then, the algorithm removes links from the complete network with the probability as shown in the function ahn_prob(). Such link removals can make the network disconnected whereas a connected network is wanted. In such cases, the algorithm rewires one network component to its spatially nearest neighbouring component and repeat doing this until the network is connected again. Finally, it outputs an undirected network (weighted or unweighted, connected or disconnected). This package came with a manuscript on modelling the physical configurations of animal habitats using networks (in preparation).</p>
+<table summary="Package AnimalHabitatNetwork summary">
+<tr>
+<td>Version:</td>
+<td>0.1.0</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>stats, <a href="../igraph/index.html">igraph</a> (&ge; 1.2.4.1), <a href="../ggplot2/index.html">ggplot2</a> (&ge; 3.2.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-11-25</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Peng He <a href="https://orcid.org/0000-0002-7176-701X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    cre],
+  Damien R. Farine <a href="https://orcid.org/0000-0003-2208-7613"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ths]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Peng He  &#x3c;&#x70;&#x68;&#x65;&#x20;&#x61;&#x74;&#x20;&#x61;&#x62;&#x2e;&#x6d;&#x70;&#x67;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_AnimalHabitatNetwork.html">AnimalHabitatNetwork results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package AnimalHabitatNetwork downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="AnimalHabitatNetwork.pdf"> AnimalHabitatNetwork.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/AnimalHabitatNetwork_0.1.0.tar.gz"> AnimalHabitatNetwork_0.1.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/AnimalHabitatNetwork_0.1.0.zip">AnimalHabitatNetwork_0.1.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/AnimalHabitatNetwork_0.1.0.zip">AnimalHabitatNetwork_0.1.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/AnimalHabitatNetwork_0.1.0.zip">AnimalHabitatNetwork_0.1.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/AnimalHabitatNetwork_0.1.0.tgz">AnimalHabitatNetwork_0.1.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/AnimalHabitatNetwork_0.1.0.tgz">AnimalHabitatNetwork_0.1.0.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=AnimalHabitatNetwork"><samp>https://CRAN.R-project.org/package=AnimalHabitatNetwork</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,44 @@
+Package: tidyqwi
+Title: A Convenient API for Accessing United States Census Bureau's
+        Quarterly Workforce Indicator
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Michael",
+           family = "DeWitt",
+           role = c("aut", "cre"),
+           email = "me.dewitt.jr@gmail.com",
+           comment = c(ORCID = "0000-0001-8940-1967")),
+    person(given = "Mona",
+           family = "Ahmadiani",
+           role = c("aut"),
+           email = "ahmadim@wfu.edu",
+           comment = c(ORCID = "0000-0002-1269-5685")),    
+    person(given = "Adam",
+           family = "Hyde",
+           role = c("aut"),
+           email = "hydeas@wfu.edu")
+           )
+Maintainer: Michael DeWitt <me.dewitt.jr@gmail.com>
+Description: The purpose of this package is to access the 
+    United States Census Bureau's Quarterly Workforce Indicator data. Additionally, 
+    the data will be retrieved in a tidy format for further manipulation with full variable
+    descriptions added if desired. Information about the United States Census Bureau's 
+    Quarterly Workforce Indicator is available at 
+    <https://www.census.gov/data/developers/data-sets/qwi.html>.
+Depends: R (>= 3.0), future (>= 1.6.2)
+Imports: dplyr, httr, jsonlite, magrittr, xml2, stringr, purrr, stats,
+        tidyr, plyr, labelled, furrr
+License: MIT + file LICENSE
+BugReports: https://github.com/medewitt/tidyqwi/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Suggests: testthat, covr, knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-02-28 19:16:37 UTC; dewittme
+Author: Michael DeWitt [aut, cre] (<https://orcid.org/0000-0001-8940-1967>),
+  Mona Ahmadiani [aut] (<https://orcid.org/0000-0002-1269-5685>),
+  Adam Hyde [aut]
+Repository: CRAN
+Date/Publication: 2019-03-06 12:40:04 UTC

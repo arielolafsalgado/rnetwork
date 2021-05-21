@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package BuyseTest</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Generalized Pairwise Comparisons [R package BuyseTest version 2.1.3]" />
+<meta name="citation_author1" content="Brice Ozenne" />
+<meta name="citation_author2" content="Eva Cantagallo" />
+<meta name="citation_publication_date" content="2020-05-07" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=BuyseTest" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=BuyseTest" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="BuyseTest: Generalized Pairwise Comparisons" />
+<meta name="og:description" content="Implementation of the Generalized Pairwise Comparisons (GPC) as defined in Buyse (2010) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fsim.3923&quot;&gt;doi:10.1002/sim.3923&lt;/a&gt;&amp;gt; for complete observations, and extended in Peron (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.1177%2F0962280216658320&quot;&gt;doi:10.1177/0962280216658320&lt;/a&gt;&amp;gt; to deal with right-censoring. GPC compare two groups of observations (intervention vs. control group) regarding several prioritized endpoints to estimate the probability that a random observation drawn from one group performs better than a random observation drawn from the other group (Mann-Whitney parameter). The net benefit and win ratio statistics, i.e. the difference and ratio between the probabilities relative to the intervention and control groups, can then also be estimated. Confidence intervals and p-values are obtained using permutations, a non-parametric bootstrap, or the asymptotic theory. The software enables the use of thresholds of minimal importance difference, stratification, non-prioritized endpoints (O'Brien test), and can handle right-censoring and competing-risks." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=BuyseTest" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>BuyseTest: Generalized Pairwise Comparisons</h2>
+<p>Implementation of the Generalized Pairwise Comparisons (GPC)
+             as defined in Buyse (2010) &lt;<a href="https://doi.org/10.1002%2Fsim.3923">doi:10.1002/sim.3923</a>&gt; for complete observations,
+             and extended in Peron (2018) &lt;<a href="https://doi.org/10.1177%2F0962280216658320">doi:10.1177/0962280216658320</a>&gt; to deal with right-censoring.        
+             GPC compare two groups of observations (intervention vs. control group)
+			 regarding several prioritized endpoints to estimate the probability that a random observation drawn from
+			 one group performs better than a random observation drawn from the other group (Mann-Whitney parameter).
+			 The net benefit and win ratio statistics,
+			 i.e. the difference and ratio between the probabilities relative to the intervention and control groups,
+			 can then also be estimated. Confidence intervals and p-values are obtained using permutations, a non-parametric bootstrap, or the asymptotic theory.
+			 The software enables the use of thresholds of minimal importance difference,
+			 stratification, non-prioritized endpoints (O'Brien test), and can handle right-censoring and competing-risks.</p>
+<table summary="Package BuyseTest summary">
+<tr>
+<td>Version:</td>
+<td>2.1.3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10), <a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../data.table/index.html">data.table</a>, <a href="../doParallel/index.html">doParallel</a>, <a href="../foreach/index.html">foreach</a>, methods, <a href="../lava/index.html">lava</a>, parallel, <a href="../prodlim/index.html">prodlim</a>, stats, stats4, utils</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../cvAUC/index.html">cvAUC</a>, <a href="../pbapply/index.html">pbapply</a>, <a href="../pROC/index.html">pROC</a>, <a href="../R.rsp/index.html">R.rsp</a>, <a href="../riskRegression/index.html">riskRegression</a>, <a href="../survival/index.html">survival</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-05-07</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Brice Ozenne <a href="https://orcid.org/0000-0001-9694-2956"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Julien Peron [ctb],
+  Eva Cantagallo [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Brice Ozenne  &#x3c;&#x62;&#x72;&#x69;&#x63;&#x65;&#x2e;&#x6d;&#x68;&#x2e;&#x6f;&#x7a;&#x65;&#x6e;&#x6e;&#x65;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/bozenne/BuyseTest/issues">https://github.com/bozenne/BuyseTest/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/bozenne/BuyseTest">https://github.com/bozenne/BuyseTest</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>C++11</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">BuyseTest citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_BuyseTest.html">BuyseTest results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package BuyseTest downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="BuyseTest.pdf"> BuyseTest.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/overview.pdf">BuyseTest: overview</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/BuyseTest_2.1.3.tar.gz"> BuyseTest_2.1.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/BuyseTest_2.1.3.zip">BuyseTest_2.1.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/BuyseTest_2.1.3.zip">BuyseTest_2.1.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/BuyseTest_2.1.3.zip">BuyseTest_2.1.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/BuyseTest_2.1.3.tgz">BuyseTest_2.1.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/BuyseTest_2.1.3.tgz">BuyseTest_2.1.3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/BuyseTest"> BuyseTest archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=BuyseTest"><samp>https://CRAN.R-project.org/package=BuyseTest</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,42 @@
+Package: grpSLOPE
+Type: Package
+Title: Group Sorted L1 Penalized Estimation
+Version: 0.1.0
+Authors@R: c(person("Alexej", "Gossmann", email = "alexej.go@googlemail.com", role = c("aut", "cre")),
+    person("Damian", "Brzyski", role = "aut"),
+    person("Weijie", "Su", role = "aut"),
+    person("Malgorzata", "Bogdan", role = "aut"),
+    person("Ewout", "van den Berg", role = "ctb",
+      comment = "A part of the optimization code was obtained from http://statweb.stanford.edu/~candes/SortedL1/software.html under GNU GPL-3"),
+    person("Emmanuel", "Candes", role = "ctb",
+      comment = "A part of the optimization code was obtained from http://statweb.stanford.edu/~candes/SortedL1/software.html under GNU GPL-3"))
+Description: Group SLOPE is a penalized linear regression method that is used
+    for adaptive selection of groups of significant predictors in a
+    high-dimensional linear model.
+    The Group SLOPE method can control the (group) false discovery rate at a
+    user-specified level (i.e., control the expected proportion of irrelevant
+    among all selected groups of predictors).
+License: GPL-3
+URL: https://github.com/agisga/grpSLOPE.git
+BugReports: https://github.com/agisga/grpSLOPE/issues
+LazyData: TRUE
+Imports: Rcpp (>= 0.12.1), SLOPE (>= 0.1.1)
+LinkingTo: Rcpp, RcppEigen
+RoxygenNote: 5.0.0
+Suggests: testthat, knitr, rmarkdown, pander
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2016-04-24 17:57:55 UTC; alexej
+Author: Alexej Gossmann [aut, cre],
+  Damian Brzyski [aut],
+  Weijie Su [aut],
+  Malgorzata Bogdan [aut],
+  Ewout van den Berg [ctb] (A part of the optimization code was obtained
+    from http://statweb.stanford.edu/~candes/SortedL1/software.html
+    under GNU GPL-3),
+  Emmanuel Candes [ctb] (A part of the optimization code was obtained
+    from http://statweb.stanford.edu/~candes/SortedL1/software.html
+    under GNU GPL-3)
+Maintainer: Alexej Gossmann <alexej.go@googlemail.com>
+Repository: CRAN
+Date/Publication: 2016-04-24 23:23:46

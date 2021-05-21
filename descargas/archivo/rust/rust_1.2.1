@@ -1,0 +1,36 @@
+Package: rust
+Type: Package
+Title: Ratio-of-Uniforms Simulation with Transformation
+Version: 1.2.1
+Date: 2017-05-31
+Authors@R: person(c("Paul", "J."), "Northrop", email = "p.northrop@ucl.ac.uk",
+  role = c("aut", "cre", "cph"))
+Description: Uses the generalised ratio-of-uniforms (RU) method to simulate
+    from univariate and (low-dimensional) multivariate continuous distributions.
+    The user specifies the log-density, up to an additive constant. The RU
+    algorithm is applied after relocation of mode of the density to zero, and
+    the user can choose a tuning parameter r. For details see Wakefield, Gelfand
+    and Smith (1991) <DOI:10.1007/BF01889987>, Efficient generation of random
+    variates via the ratio-of-uniforms method, Statistics and Computing (1991)
+    1, 129-133.  A Box-Cox variable transformation can be used to make the input
+    density suitable for the RU method and to improve efficiency.  In the
+    multivariate case rotation of axes can also be used to improve efficiency.
+    From version 1.2.0 the 'Rcpp' package 
+    <https://cran.r-project.org/package=Rcpp> can be used to improve efficiency.
+    See the rust website for more information, documentation and examples.
+Imports: stats, graphics, methods, spatstat, Rcpp (>= 0.12.10)
+License: GPL (>= 2)
+LazyData: TRUE
+Depends: R (>= 3.3.1)
+RoxygenNote: 6.0.1
+Suggests: knitr, rmarkdown, testthat, inline, microbenchmark
+VignetteBuilder: knitr
+URL: http://github.com/paulnorthrop/rust
+BugReports: http://github.com/paulnorthrop/rust/issues
+LinkingTo: Rcpp (>= 0.12.10), RcppArmadillo
+NeedsCompilation: yes
+Packaged: 2017-05-31 18:26:27 UTC; paul
+Author: Paul J. Northrop [aut, cre, cph]
+Maintainer: Paul J. Northrop <p.northrop@ucl.ac.uk>
+Repository: CRAN
+Date/Publication: 2017-06-01 05:48:49 UTC

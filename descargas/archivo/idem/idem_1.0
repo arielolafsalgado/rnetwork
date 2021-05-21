@@ -1,0 +1,31 @@
+Package: idem
+Title: Inference in Randomized Controlled Trials with Death and
+        Missingness
+Version: 1.0
+Author: Chenguang Wang [aut, cre],
+    Andrew Leroux [aut, cre],
+    Elizabeth Colantuoni [aut],
+    Daniel O Scharfstein [aut]
+Maintainer: Chenguang Wang <cwang68@jhmi.edu>
+Description: In randomized studies involving severely ill patients, functional
+    outcomes are often unobserved due to missed clinic visits, premature
+    withdrawal or death. It is well known that if these unobserved functional
+    outcomes are not handled properly, biased treatment comparisons can be
+    produced. In this package, we implement a procedure for comparing treatments
+    that is based on the composite endpoint of both the functional outcome and
+    survival. The procedure considers missing data imputation with a sensitivity
+    analysis strategy to handle the unobserved functional outcomes not due to
+    death.
+Depends: R (>= 3.2.4)
+License: GPL (>= 3)
+Imports: sqldf (>= 0.4), survival (>= 2.38), parallel (>= 3.2), coda
+        (>= 0.18)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 5.0.1
+Suggests: knitr, shiny, rmarkdown, pander
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2016-07-05 11:14:25 UTC; cwang68
+Repository: CRAN
+Date/Publication: 2016-07-06 00:46:23

@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package future</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Unified Parallel and Distributed Processing in R for Everyone [R package future version 1.19.1]" />
+<meta name="citation_author" content="Henrik Bengtsson" />
+<meta name="citation_publication_date" content="2020-09-22" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=future" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=future" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="future: Unified Parallel and Distributed Processing in R for Everyone" />
+<meta name="og:description" content="The purpose of this package is to provide a lightweight and unified Future API for sequential and parallel processing of R expression via futures. The simplest way to evaluate an expression in parallel is to use 'x %&amp;lt;-% { expression }' with 'plan(multiprocess)'. This package implements sequential, multicore, multisession, and cluster futures. With these, R expressions can be evaluated on the local machine, in parallel a set of local machines, or distributed on a mix of local and remote machines. Extensions to this package implement additional backends for processing futures via compute cluster schedulers etc. Because of its unified API, there is no need to modify any code in order switch from sequential on the local machine to, say, distributed processing on a remote compute cluster. Another strength of this package is that global variables and functions are automatically identified and exported as needed, making it straightforward to tweak existing code to make use of futures." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=future" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>future: Unified Parallel and Distributed Processing in R for Everyone</h2>
+<p>The purpose of this package is to provide a lightweight and
+    unified Future API for sequential and parallel processing of R
+    expression via futures.  The simplest way to evaluate an expression
+    in parallel is to use 'x %&lt;-% { expression }' with 'plan(multiprocess)'.
+    This package implements sequential, multicore, multisession, and
+    cluster futures.  With these, R expressions can be evaluated on the
+    local machine, in parallel a set of local machines, or distributed
+    on a mix of local and remote machines.
+    Extensions to this package implement additional backends for
+    processing futures via compute cluster schedulers etc.
+    Because of its unified API, there is no need to modify any code in order
+    switch from sequential on the local machine to, say, distributed
+    processing on a remote compute cluster.
+    Another strength of this package is that global variables and functions
+    are automatically identified and exported as needed, making it
+    straightforward to tweak existing code to make use of futures.</p>
+<table summary="Package future summary">
+<tr>
+<td>Version:</td>
+<td>1.19.1</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../digest/index.html">digest</a>, <a href="../globals/index.html">globals</a> (&ge; 0.12.5), <a href="../listenv/index.html">listenv</a> (&ge; 0.8.0), parallel, tools, utils</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../RhpcBLASctl/index.html">RhpcBLASctl</a>, <a href="../R.rsp/index.html">R.rsp</a>, <a href="../markdown/index.html">markdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-22</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Henrik Bengtsson [aut, cre, cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Henrik Bengtsson  &#x3c;&#x68;&#x65;&#x6e;&#x72;&#x69;&#x6b;&#x62;&#x20;&#x61;&#x74;&#x20;&#x62;&#x72;&#x61;&#x6a;&#x75;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/HenrikBengtsson/future/issues">https://github.com/HenrikBengtsson/future/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/LGPL-2.1">LGPL-2.1</a> | <a href="../../licenses/LGPL-3">LGPL-3</a> [expanded from: LGPL (&ge; 2.1)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/HenrikBengtsson/future">https://github.com/HenrikBengtsson/future</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">future citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/HighPerformanceComputing.html">HighPerformanceComputing</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_future.html">future results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package future downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="future.pdf"> future.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/future-1-overview.html">A Future for R: A Comprehensive Overview</a><br/>
+<a href="vignettes/future-2-output.html">A Future for R: Text and Message Output</a><br/>
+<a href="vignettes/future-3-topologies.html">A Future for R: Future Topologies</a><br/>
+<a href="vignettes/future-4-issues.html">A Future for R: Common Issues with Solutions</a><br/>
+<a href="vignettes/future-4-non-exportable-objects.html">A Future for R: Non-Exportable Objects</a><br/>
+<a href="vignettes/future-5-startup.html">A Future for R: Controlling Default Future Strategy</a><br/>
+<a href="vignettes/future-6-future-api-backend-specification.html">A Future for R: Future API Backend Specification</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/future_1.19.1.tar.gz"> future_1.19.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/future_1.19.1.zip">future_1.19.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/future_1.19.1.zip">future_1.19.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/future_1.19.1.zip">future_1.19.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/future_1.19.1.tgz">future_1.19.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/future_1.19.1.tgz">future_1.19.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/future"> future archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package future reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../dhReg/index.html">dhReg</a>, <a href="../doFuture/index.html">doFuture</a>, <a href="../furrr/index.html">furrr</a>, <a href="../future.apply/index.html">future.apply</a>, <a href="../future.BatchJobs/index.html">future.BatchJobs</a>, <a href="../future.batchtools/index.html">future.batchtools</a>, <a href="../future.callr/index.html">future.callr</a>, <a href="../SCtools/index.html">SCtools</a>, <a href="../spatialwarnings/index.html">spatialwarnings</a>, <a href="../tidyqwi/index.html">tidyqwi</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../adept/index.html">adept</a>, <a href="../alookr/index.html">alookr</a>, <a href="../aroma.affymetrix/index.html">aroma.affymetrix</a>, <a href="../aroma.core/index.html">aroma.core</a>, <a href="../BatchGetSymbols/index.html">BatchGetSymbols</a>, <a href="../bayesmove/index.html">bayesmove</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/biotmle.html"><span class="BioC">biotmle</span></a>, <a href="../bkmrhat/index.html">bkmrhat</a>, <a href="../brms/index.html">brms</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/ceRNAnetsim.html"><span class="BioC">ceRNAnetsim</span></a>, <a href="../civis/index.html">civis</a>, <a href="../Clustering/index.html">Clustering</a>, <a href="../codalm/index.html">codalm</a>, <a href="../cSEM/index.html">cSEM</a>, <a href="../datapackage.r/index.html">datapackage.r</a>, <a href="../delayed/index.html">delayed</a>, <a href="../dipsaus/index.html">dipsaus</a>, <a href="../disk.frame/index.html">disk.frame</a>, <a href="../dragon/index.html">dragon</a>, <a href="../drtmle/index.html">drtmle</a>, <a href="../EFAtools/index.html">EFAtools</a>, <a href="../EpiNow2/index.html">EpiNow2</a>, <a href="../FAMoS/index.html">FAMoS</a>, <a href="../fastpos/index.html">fastpos</a>, <a href="../fiery/index.html">fiery</a>, <a href="../fipe/index.html">fipe</a>, <a href="../foieGras/index.html">foieGras</a>, <a href="../funGp/index.html">funGp</a>, <a href="../future.tests/index.html">future.tests</a>, <a href="../genBaRcode/index.html">genBaRcode</a>, <a href="../GetBCBData/index.html">GetBCBData</a>, <a href="../googleComputeEngineR/index.html">googleComputeEngineR</a>, <a href="../googleTagManageR/index.html">googleTagManageR</a>, <a href="../greta/index.html">greta</a>, <a href="../gtfs2gps/index.html">gtfs2gps</a>, <a href="../gWQS/index.html">gWQS</a>, <a href="../idmodelr/index.html">idmodelr</a>, <a href="../iml/index.html">iml</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/infercnv.html"><span class="BioC">infercnv</span></a>, <a href="../JointAI/index.html">JointAI</a>, <a href="../kernelboot/index.html">kernelboot</a>, <a href="../ldaPrototype/index.html">ldaPrototype</a>, <a href="../lidR/index.html">lidR</a>, <a href="../lmtp/index.html">lmtp</a>, <a href="../mcp/index.html">mcp</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/methyvim.html"><span class="BioC">methyvim</span></a>, <a href="../onemapsgapi/index.html">onemapsgapi</a>, <a href="../origami/index.html">origami</a>, <a href="../photosynthesis/index.html">photosynthesis</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/Prostar.html"><span class="BioC">Prostar</span></a>, <a href="../PSCBS/index.html">PSCBS</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/QDNAseq.html"><span class="BioC">QDNAseq</span></a>, <a href="../qgcomp/index.html">qgcomp</a>, <a href="../rainette/index.html">rainette</a>, <a href="../rangeMapper/index.html">rangeMapper</a>, <a href="../rBiasCorrection/index.html">rBiasCorrection</a>, <a href="../robotstxt/index.html">robotstxt</a>, <a href="../RTransferEntropy/index.html">RTransferEntropy</a>, <a href="../sctransform/index.html">sctransform</a>, <a href="../seer/index.html">seer</a>, <a href="../Seurat/index.html">Seurat</a>, <a href="../shinyrecap/index.html">shinyrecap</a>, <a href="../sigminer/index.html">sigminer</a>, <a href="../Signac/index.html">Signac</a>, <a href="../simhelpers/index.html">simhelpers</a>, <a href="../skpr/index.html">skpr</a>, <a href="../sperrorest/index.html">sperrorest</a>, <a href="../startR/index.html">startR</a>, <a href="../steps/index.html">steps</a>, <a href="../tableschema.r/index.html">tableschema.r</a>, <a href="../tealeaves/index.html">tealeaves</a>, <a href="../treeHMM/index.html">treeHMM</a>, <a href="../tsfeatures/index.html">tsfeatures</a>, <a href="../TSstudio/index.html">TSstudio</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../BAMBI/index.html">BAMBI</a>, <a href="../batchtools/index.html">batchtools</a>, <a href="../bcmaps/index.html">bcmaps</a>, <a href="../blockCV/index.html">blockCV</a>, <a href="../CLVTools/index.html">CLVTools</a>, <a href="../codebook/index.html">codebook</a>, <a href="../crossmap/index.html">crossmap</a>, <a href="../drake/index.html">drake</a>, <a href="../ezcox/index.html">ezcox</a>, <a href="../fxtract/index.html">fxtract</a>, <a href="../grattan/index.html">grattan</a>, <a href="../GSODR/index.html">GSODR</a>, <a href="../gstat/index.html">gstat</a>, <a href="../hal9001/index.html">hal9001</a>, <a href="../haldensify/index.html">haldensify</a>, <a href="../inlinedocs/index.html">inlinedocs</a>, <a href="../ipc/index.html">ipc</a>, <a href="../ItemResponseTrees/index.html">ItemResponseTrees</a>, <a href="../jstor/index.html">jstor</a>, <a href="../ldsr/index.html">ldsr</a>, <a href="../lgr/index.html">lgr</a>, <a href="../metagam/index.html">metagam</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/MineICA.html"><span class="BioC">MineICA</span></a>, <a href="../mlr3/index.html">mlr3</a>, <a href="../mlr3db/index.html">mlr3db</a>, <a href="../nflfastR/index.html">nflfastR</a>, <a href="../PCRedux/index.html">PCRedux</a>, <a href="../PeakSegDisk/index.html">PeakSegDisk</a>, <a href="../penaltyLearning/index.html">penaltyLearning</a>, <a href="../plumber/index.html">plumber</a>, <a href="../progressr/index.html">progressr</a>, <a href="../promises/index.html">promises</a>, <a href="../qtl2pleio/index.html">qtl2pleio</a>, <a href="../regmedint/index.html">regmedint</a>, <a href="../reproducible/index.html">reproducible</a>, <a href="../sapfluxnetr/index.html">sapfluxnetr</a>, <a href="../shiny/index.html">shiny</a>, <a href="../simglm/index.html">simglm</a>, <a href="../spacey/index.html">spacey</a>, <a href="../SpaDES.core/index.html">SpaDES.core</a>, <a href="../txshift/index.html">txshift</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=future"><samp>https://CRAN.R-project.org/package=future</samp></a>
+to link to this page.</p>
+</body>
+</html>

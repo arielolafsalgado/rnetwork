@@ -1,0 +1,20 @@
+Package: ldamatch
+Title: Selection of Statistically Similar Research Groups
+Version: 1.0.0
+Authors@R: c(person("Kyle", "Gorman", email = "kylebgorman@gmail.com", role = c("aut", "cre")), person("Geza", "Kiss", email = "kiss@ohsu.edu", role = "aut"))
+Description: Select statistically similar research groups by backward selection using various robust algorithms, including a heuristic based on linear discriminant analysis, multiple heuristics based on the test statistic, and parallelized exhaustive search.
+Depends: R (>= 3.0.0)
+License: MIT + file LICENSE
+LazyData: true
+VignetteBuilder: knitr
+Suggests: doMC, knitr, testthat
+Imports: MASS, RUnit, data.table, entropy, foreach, iterators, iterpc,
+        kSamples, stats, car, gmp
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-06-15 15:36:48 UTC; kbg
+Author: Kyle Gorman [aut, cre],
+  Geza Kiss [aut]
+Maintainer: Kyle Gorman <kylebgorman@gmail.com>
+Repository: CRAN
+Date/Publication: 2016-06-21 19:57:35

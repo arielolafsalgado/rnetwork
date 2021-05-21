@@ -1,0 +1,38 @@
+Package: officer
+Type: Package
+Title: Manipulation of Microsoft Word and PowerPoint Documents
+Version: 0.2.1
+Authors@R: c(
+    person("David", "Gohel", role = c("aut", "cre"),
+    email = "david.gohel@ardata.fr"),
+    person("Frank", "Hangler", role = "ctb", email = "frank@plotandscatter.com", comment = "function body_replace_all_text"),
+    person("Liz", "Sander", role = "ctb", email = 'lsander@civisanalytics.com', comment = "several documentation fixes"),
+    person("Jon", "Calder", role = "ctb", email = 'jonmcalder@gmail.com', comment = "update vignettes")
+    )
+Description: Access and manipulate 'Microsoft Word' and 'Microsoft PowerPoint' documents from R. 
+  The package focuses on tabular and graphical reporting from R; it also provides two functions
+  that let users get document content into data objects. A set of functions 
+  lets add and remove images, tables and paragraphs of text in new or existing documents. 
+  When working with 'PowerPoint' presentations, slides can be added or removed; shapes inside 
+  slides can also be added or removed. When working with 'Word' documents, a cursor can be 
+  used to help insert or delete content at a specific location in the document. The package 
+  does not require any installation of Microsoft products to be able to write Microsoft files.
+License: GPL-3
+LazyData: TRUE
+LinkingTo: Rcpp
+Imports: Rcpp (>= 0.12.12), R6,R.utils,grDevices, base64enc, zip,
+        digest,uuid,utils, magrittr,htmltools, xml2 (>= 1.1.0)
+URL: https://davidgohel.github.io/officer
+BugReports: https://github.com/davidgohel/officer/issues
+RoxygenNote: 6.0.1.9000
+Suggests: testthat, devEMF, knitr,tibble,ggplot2, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2018-01-08 13:56:19 UTC; davidgohel
+Author: David Gohel [aut, cre],
+  Frank Hangler [ctb] (function body_replace_all_text),
+  Liz Sander [ctb] (several documentation fixes),
+  Jon Calder [ctb] (update vignettes)
+Maintainer: David Gohel <david.gohel@ardata.fr>
+Repository: CRAN
+Date/Publication: 2018-01-08 22:28:26 UTC

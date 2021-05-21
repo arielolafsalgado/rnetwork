@@ -1,0 +1,40 @@
+Package: pathfindR
+Type: Package
+Title: Enrichment Analysis Utilizing Active Subnetworks
+Version: 1.4.0
+Author: Ege Ulgen, Ozan Ozisik
+Maintainer: Ege Ulgen <egeulgen@gmail.com>
+Description: Enrichment analysis enables researchers to uncover mechanisms 
+    underlying a phenotype. However, conventional methods for enrichment 
+    analysis do not take into account protein-protein interaction information, 
+    resulting in incomplete conclusions. pathfindR is a tool for enrichment 
+    analysis utilizing active subnetworks. The main function identifies active 
+    subnetworks in a protein-protein interaction network using a user-provided 
+    list of genes and associated p values. It then performs enrichment analyses 
+    on the identified subnetworks, identifying enriched terms (i.e. pathways or, 
+    more broadly, gene sets) that possibly underlie the phenotype of interest.
+    pathfindR also offers functionalities to cluster the enriched terms and 
+    identify representative terms in each cluster, to score the enriched terms 
+    per sample and to visualize analysis results. The enrichment, clustering and 
+    other methods implemented in pathfindR are described in detail in 
+    Ulgen E, Ozisik O, Sezerman OU. 2019. pathfindR: An R Package for 
+    Comprehensive Identification of Enriched Pathways in Omics Data Through 
+    Active Subnetworks. Front. Genet. <doi:10.3389/fgene.2019.00858>.
+License: MIT + file LICENSE
+URL: https://github.com/egeulgen/pathfindR
+BugReports: https://github.com/egeulgen/pathfindR/issues
+Encoding: UTF-8
+LazyData: true
+SystemRequirements: Java JVM 1.8
+biocViews:
+Imports: DBI, AnnotationDbi, doParallel, foreach, rmarkdown,
+        org.Hs.eg.db, ggplot2, ggraph, fpc, grDevices, igraph, R.utils,
+        magick, KEGGREST, KEGGgraph, knitr
+Depends: R (>= 3.6)
+Suggests: testthat (>= 2.1.0), covr
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-11-08 07:35:04 UTC; egeulgen
+Repository: CRAN
+Date/Publication: 2019-11-08 11:40:02 UTC

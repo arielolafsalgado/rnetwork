@@ -1,0 +1,39 @@
+Package: factoextra
+Type: Package
+Title: Extract and Visualize the Results of Multivariate Data Analyses
+Version: 1.0.3
+Date: 2016-03-31
+Authors@R: c(
+    person("Alboukadel", "Kassambara", role = c("aut", "cre"), email = "alboukadel.kassambara@gmail.com"),
+    person("Fabian", "Mundt", role = c("aut"), email = "f.mundt@inventionate.de")
+    )
+Description: Provides some easy-to-use functions to extract and visualize
+    the output of multivariate data analyses, including 'PCA' (Principal Component
+    Analysis), 'CA' (Correspondence Analysis), 'MCA' (Multiple Correspondence Analysis),
+    'MFA' (Multiple Factor Analysis) and 'HMFA' (Hierarchical Multiple Factor Analysis)
+    functions from different R packages. It contains also functions for simplifying some clustering analysis steps 
+    and provides 'ggplot2' - based elegant data visualization. 
+License: GPL-2
+LazyData: true
+Depends: R (>= 3.1.0), ggplot2
+Imports: cluster, dendextend, grid, stats, reshape2, ggrepel, abind
+Suggests: ade4, ca, FactoMineR, MASS, knitr
+URL: http://www.sthda.com/english/rpkgs/factoextra
+BugReports: https://github.com/kassambara/factoextra/issues
+Collate: 'cluster_utilities.R' 'decathlon2.R' 'eigenvalue.R'
+        'utilities.R' 'dist.R' 'fviz_dend.R' 'hcut.R'
+        'print.factoextra.R' 'get_pca.R' 'fviz_cluster.R' 'eclust.R'
+        'facto_summarize.R' 'fviz_add.R' 'fviz_ca.R' 'fviz_contrib.R'
+        'fviz_cos2.R' 'get_hmfa.R' 'fviz_hmfa.R' 'get_mca.R'
+        'fviz_mca.R' 'get_mfa.R' 'fviz_mfa.R' 'fviz_nbclust.R'
+        'fviz_pca.R' 'fviz_silhouette.R' 'get_ca.R'
+        'get_clust_tendency.R' 'hkmeans.R' 'housetasks.R'
+        'multishapes.R' 'poison.R'
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-04-26 13:11:54 UTC; alboukadel
+Author: Alboukadel Kassambara [aut, cre],
+  Fabian Mundt [aut]
+Maintainer: Alboukadel Kassambara <alboukadel.kassambara@gmail.com>
+Repository: CRAN
+Date/Publication: 2016-04-26 16:50:39

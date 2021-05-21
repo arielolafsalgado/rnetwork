@@ -1,0 +1,30 @@
+Package: reqres
+Type: Package
+Title: Powerful Classes for HTTP Requests and Responses
+Version: 0.2.0
+Date: 2017-08-12
+Authors@R: 
+    person(given = "Thomas Lin",
+           family = "Pedersen",
+           role = c("cre", "aut"),
+           email = "thomasp85@gmail.com")
+Maintainer: Thomas Lin Pedersen <thomasp85@gmail.com>
+Description: In order to facilitate parsing of http requests and creating 
+    appropriate responses this package provides two classes to handle a lot of
+    the housekeeping involved in working with http exchanges. The infrastructure
+    builds upon the 'rook' specification and is thus well suited to be combined
+    with 'httpuv' based web servers.
+License: MIT + file LICENSE
+LazyData: TRUE
+Depends: R (>= 2.10)
+Imports: R6, assertthat, stringi, urltools, tools, brotli, jsonlite,
+        xml2, webutils, utils
+RoxygenNote: 6.0.1
+Suggests: fiery, testthat, covr
+URL: https://github.com/thomasp85/reqres#reqres
+BugReports: https://github.com/thomasp85/reqres/issues
+NeedsCompilation: no
+Packaged: 2017-08-12 08:55:38 UTC; thomas
+Author: Thomas Lin Pedersen [cre, aut]
+Repository: CRAN
+Date/Publication: 2017-08-12 14:22:34 UTC

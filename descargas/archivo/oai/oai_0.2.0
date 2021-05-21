@@ -1,0 +1,31 @@
+Package: oai
+Type: Package
+Title: General Purpose 'Oai-PMH' Services Client
+Description: A general purpose client to work with any 'OAI-PMH'
+    (Open Archives Initiative Protocol for 'Metadata' Harvesting) service.
+    The 'OAI-PMH' protocol is described at
+    http://www.openarchives.org/OAI/openarchivesprotocol.html.
+    Functions are provided to work with the 'OAI-PMH' verbs: 'GetRecord',
+    'Identify', 'ListIdentifiers', 'ListMetadataFormats', 'ListRecords', and
+    'ListSets'.
+Version: 0.2.0
+License: MIT + file LICENSE
+Authors@R: c(
+    person("Scott", "Chamberlain", role = c("aut", "cre"), email = "myrmecocystus@gmail.com"),
+    person("Michal", "Bojanowski", role = "aut")
+    )
+URL: https://github.com/sckott/oai
+BugReports: https://github.com/sckott/oai/issues
+VignetteBuilder: knitr
+LazyData: true
+Imports: methods, stats, utils, xml2 (>= 0.1.2), httr (>= 1.0.0), plyr
+        (>= 1.8.3), stringr (>= 1.0.0)
+Suggests: DBI, knitr, RSQLite, testthat
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-02-06 08:12:06 UTC; sacmac
+Author: Scott Chamberlain [aut, cre],
+  Michal Bojanowski [aut]
+Maintainer: Scott Chamberlain <myrmecocystus@gmail.com>
+Repository: CRAN
+Date/Publication: 2016-02-06 11:07:56

@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package ShapeSelectForest</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=ShapeSelectForest" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="ShapeSelectForest: Shape Selection for Landsat Time Series of Forest Dynamics" />
+<meta name="og:description" content="Landsat satellites collect important data about global forest conditions. Documentation about Landsat's role in forest disturbance estimation is available at the site &amp;lt;&lt;a href=&quot;http://landsat.gsfc.nasa.gov/?p=9513&quot;&gt;http://landsat.gsfc.nasa.gov/?p=9513&lt;/a&gt;&amp;gt;. By constrained quadratic B-splines, this package delivers an optimal shape-restricted trajectory to a time series of Landsat imagery for the purpose of modeling annual forest disturbance dynamics to behave in an ecologically sensible manner assuming one of seven possible &quot;shapes&quot;, namely, flat, decreasing, one-jump (decreasing, jump up, decreasing), inverted vee (increasing then decreasing), vee (decreasing then increasing), linear increasing, and double-jump (decreasing, jump up, decreasing, jump up, decreasing). The main routine selects the best shape according to the minimum Bayes information criterion (BIC) or the cone information criterion (CIC), which is defined as the log of the estimated predictive squared error. The package also provides parameters summarizing the temporal pattern including year(s) of inflection, magnitude of change, pre- and post-inflection rates of growth or recovery. In addition, it contains routines for converting a flat map of disturbance agents to time-series disturbance maps and a graphical routine displaying the fitted trajectory of Landsat imagery. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=ShapeSelectForest" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>ShapeSelectForest: Shape Selection for Landsat Time Series of Forest Dynamics</h2>
+<p>Landsat satellites collect important data about global forest conditions. Documentation about Landsat's role in forest disturbance estimation is available at the site &lt;<a href="http://landsat.gsfc.nasa.gov/?p=9513">http://landsat.gsfc.nasa.gov/?p=9513</a>&gt;. By constrained quadratic B-splines, this package delivers an optimal shape-restricted trajectory to a time series of Landsat imagery for the purpose of modeling annual forest disturbance dynamics to behave in an ecologically sensible manner assuming one of seven possible "shapes", namely, flat, decreasing, one-jump (decreasing, jump up, decreasing), inverted vee (increasing then decreasing), vee (decreasing then increasing), linear increasing, and double-jump (decreasing, jump up, decreasing, jump up, decreasing). The main routine selects the best shape according to the minimum Bayes information criterion (BIC) or the cone information criterion (CIC), which is defined as the log of the estimated predictive squared error. The package also provides parameters summarizing the temporal pattern including year(s) of inflection, magnitude of change, pre- and post-inflection rates of growth or recovery. In addition, it contains routines for converting a flat map of disturbance agents to time-series disturbance maps and a graphical routine displaying the fitted trajectory of Landsat imagery. </p>
+<table summary="Package ShapeSelectForest summary">
+<tr>
+<td>Version:</td>
+<td>1.4</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td><a href="../coneproj/index.html">coneproj</a> (&ge; 1.6), <a href="../raster/index.html">raster</a> (&ge; 2.3-40), R (&ge; 3.0.2)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td>stats, <a href="../MASS/index.html">MASS</a>, graphics, grDevices, utils</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-03-27</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Mary C. Meyer, Xiyue Liao, Elizabeth Freeman, Gretchen G. Moisen </td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Xiyue Liao  &#x3c;&#x6c;&#x69;&#x61;&#x6f;&#x78;&#x69;&#x79;&#x75;&#x65;&#x32;&#x30;&#x31;&#x31;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://sites.google.com/site/shaperestrictedregression/shapeselectforest">https://sites.google.com/site/shaperestrictedregression/shapeselectforest</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://sites.google.com/site/shaperestrictedregression/shapeselectforest">https://sites.google.com/site/shaperestrictedregression/shapeselectforest</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">ShapeSelectForest citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="ChangeLog">ChangeLog</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_ShapeSelectForest.html">ShapeSelectForest results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package ShapeSelectForest downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="ShapeSelectForest.pdf"> ShapeSelectForest.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/ShapeSelectForest_1.4.tar.gz"> ShapeSelectForest_1.4.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/ShapeSelectForest_1.4.zip">ShapeSelectForest_1.4.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/ShapeSelectForest_1.4.zip">ShapeSelectForest_1.4.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/ShapeSelectForest_1.4.zip">ShapeSelectForest_1.4.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/ShapeSelectForest_1.4.tgz">ShapeSelectForest_1.4.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/ShapeSelectForest_1.4.tgz">ShapeSelectForest_1.4.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/ShapeSelectForest"> ShapeSelectForest archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=ShapeSelectForest"><samp>https://CRAN.R-project.org/package=ShapeSelectForest</samp></a>
+to link to this page.</p>
+</body>
+</html>

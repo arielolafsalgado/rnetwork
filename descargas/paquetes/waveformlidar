@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package waveformlidar</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Waveform LiDAR Data Processing and Analysis [R package waveformlidar version 1.2.0]" />
+<meta name="citation_author" content="Tan Zhou" />
+<meta name="citation_publication_date" content="2020-08-01" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=waveformlidar" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=waveformlidar" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="waveformlidar: Waveform LiDAR Data Processing and Analysis" />
+<meta name="og:description" content="A wealth of Full Waveform (FW) Light Detection and Ranging (LiDAR) data are available to the public from different sources, which is poised to boost the extensive application of FW LiDAR data. However, we lack a handy and open source tool that can be used by ecological and remote sensing communities for processing and analyzing FW LiDAR data. To this end, we introduce 'waveformlidar', an R package dedicated to FW LiDAR processing, analysis and visualization as a solution to the constraint. Specifically, this package provides several commonly used waveform processing methods such as Gaussian, adaptive Gaussian and Weibull decompositions, and deconvolution approaches (Gold and Richard-Lucy (RL)) with customized settings. In addition, we also develop some functions to derive commonly used waveform metrics for characterizing vegetation structure. Moreover, a new way to directly visualize FW LiDAR data is developed through converting waveforms into points to form the Hyper Point cloud (HPC), which can be easily adopted and subsequently analyzed with existing discrete-return LiDAR processing tools such as 'LAStools' and 'FUSION'. Basic explorations of the HPC such as 3D voxelization of the HPC and conversion from original waveforms to composite waveforms are also available in this package. All of these functions are developed based on small-footprint FW LiDAR data, but they can be easily transplanted to the large footprint FW LiDAR data such as Geoscience Laser Altimeter System (GLAS) and Global Ecosystem Dynamics Investigation (GEDI) data analysis. References: Zhou et al. (2017a) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.isprsjprs.2017.04.021&quot;&gt;doi:10.1016/j.isprsjprs.2017.04.021&lt;/a&gt;&amp;gt;; Zhou et al. (2017b) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.rse.2017.08.012&quot;&gt;doi:10.1016/j.rse.2017.08.012&lt;/a&gt;&amp;gt;; Zhou et al. (2018a) &amp;lt;&lt;a href=&quot;https://doi.org/10.3390%2Frs10010039&quot;&gt;doi:10.3390/rs10010039&lt;/a&gt;&amp;gt;;Zhou et al. (2018b) &amp;lt;&lt;a href=&quot;https://doi.org/10.3390%2Frs10121949&quot;&gt;doi:10.3390/rs10121949&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=waveformlidar" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>waveformlidar: Waveform LiDAR Data Processing and Analysis</h2>
+<p>A wealth of Full Waveform (FW) Light Detection and Ranging (LiDAR) data are available to 
+	the public from different sources, which is poised to boost the extensive 
+	application of FW LiDAR data. However, we lack a handy and open source tool 
+	that can be used by ecological and remote sensing communities for processing and analyzing FW LiDAR 
+	data. To this end, we introduce 'waveformlidar', an R package dedicated to 
+	FW LiDAR processing, analysis and visualization as a solution to the constraint.
+	Specifically, this package provides several commonly used waveform processing methods
+	such as Gaussian, adaptive Gaussian and Weibull decompositions, and 
+	deconvolution approaches (Gold and Richard-Lucy (RL)) with customized settings. 
+	In addition, we also develop some functions to derive commonly used waveform metrics
+	for characterizing vegetation structure. Moreover, a new way to directly visualize 
+	FW LiDAR data is developed through converting waveforms into points to form the Hyper
+	Point cloud (HPC), which can be easily adopted and subsequently analyzed with existing 
+	discrete-return LiDAR processing tools such as 'LAStools' and 'FUSION'. Basic explorations of 
+	the HPC such as 3D voxelization of the HPC and conversion from original waveforms to 
+	composite waveforms are also available in this package. All of these functions are 
+	developed based on small-footprint FW LiDAR data, but they can be easily transplanted to
+	the large footprint FW LiDAR data such as Geoscience Laser Altimeter System (GLAS) 
+	and Global Ecosystem Dynamics Investigation (GEDI) data analysis. References: Zhou et al. (2017a) &lt;<a href="https://doi.org/10.1016%2Fj.isprsjprs.2017.04.021">doi:10.1016/j.isprsjprs.2017.04.021</a>&gt;;
+	Zhou et al. (2017b) &lt;<a href="https://doi.org/10.1016%2Fj.rse.2017.08.012">doi:10.1016/j.rse.2017.08.012</a>&gt;; Zhou et al. (2018a) &lt;<a href="https://doi.org/10.3390%2Frs10010039">doi:10.3390/rs10010039</a>&gt;;Zhou et al. (2018b) &lt;<a href="https://doi.org/10.3390%2Frs10121949">doi:10.3390/rs10121949</a>&gt;.</p>
+<table summary="Package waveformlidar summary">
+<tr>
+<td>Version:</td>
+<td>1.2.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.0.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../data.table/index.html">data.table</a>, <a href="../caTools/index.html">caTools</a>, <a href="../minpack.lm/index.html">minpack.lm</a>, <a href="../flux/index.html">flux</a>, <a href="../raster/index.html">raster</a>, <a href="../rgdal/index.html">rgdal</a>, <a href="../sp/index.html">sp</a>, <a href="../rgeos/index.html">rgeos</a>, <a href="../sqldf/index.html">sqldf</a>, <a href="../splitstackshape/index.html">splitstackshape</a>, <a href="../reshape2/index.html">reshape2</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, rPeaks</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-08-01</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Tan Zhou [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Tan Zhou  &#x3c;&#x74;&#x61;&#x6e;&#x6b;&#x63;&#x68;&#x6f;&#x77;&#x31;&#x32;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/tankwin08/waveformlidar/issues">https://github.com/tankwin08/waveformlidar/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/tankwin08/waveformlidar">https://github.com/tankwin08/waveformlidar</a>,</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_waveformlidar.html">waveformlidar results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package waveformlidar downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="waveformlidar.pdf"> waveformlidar.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/waveformlidar_1.2.0.tar.gz"> waveformlidar_1.2.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/waveformlidar_1.2.0.zip">waveformlidar_1.2.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/waveformlidar_1.2.0.zip">waveformlidar_1.2.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/ReadMe">not available</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/waveformlidar_1.2.0.tgz">waveformlidar_1.2.0.tgz</a>, r-oldrel: not available </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/waveformlidar"> waveformlidar archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=waveformlidar"><samp>https://CRAN.R-project.org/package=waveformlidar</samp></a>
+to link to this page.</p>
+</body>
+</html>

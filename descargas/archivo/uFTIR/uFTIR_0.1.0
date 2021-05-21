@@ -1,0 +1,36 @@
+Package: uFTIR
+Type: Package
+Title: Process and Analyze Agilent Cary 620 FTIR Microscope Images
+Version: 0.1.0
+Date: 2020-02-20
+Authors@R: 
+    person(
+      given = "Fabio",
+      family = "Corradini",
+      role = c("aut", "cre"),
+      email = "fabio.corradini@inia.cl",
+      comment = c(ORCID = "0000-0001-9696-7643")
+    )
+Maintainer: Fabio Corradini <fabio.corradini@inia.cl>
+Description: A set of tools to read, process, and summarize Agilent Cary 620 uFTIR Microscope hyperspectral images
+    primarily intended for microplastic analysis.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.4.4.0), parallel
+Imports: Rcpp (>= 1.0.2), methods, raster, sp, rgdal
+Suggests: rmarkdown, testthat (>= 2.1.0), prospectr
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.0.2
+Collate: 'RcppExports.R' 'classes.R' 'clipper.R' 'datadocs.R'
+        'mosaic_chunk.R' 'mosaic_compose.R' 'mosaic_info.R'
+        'mosaic_sam.R' 'plot_methods.R' 'preprocess.R'
+        'profile_methods.R' 'rgdal_polygonize.R' 'smooth_sam.R'
+        'summary_methods.R' 'tile_base_corr.R' 'tile_read.R'
+        'tile_sam.R' 'uFTIR.R' 'wavealign.R'
+SystemRequirements: C++11
+NeedsCompilation: yes
+Packaged: 2020-02-21 14:01:59 UTC; fabio
+Author: Fabio Corradini [aut, cre] (<https://orcid.org/0000-0001-9696-7643>)
+Repository: CRAN
+Date/Publication: 2020-03-06 16:40:02 UTC

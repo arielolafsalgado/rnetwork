@@ -1,0 +1,23 @@
+Package: discretecdAlgorithm
+Type: Package
+Title: Coordinate-Descent Algorithm for Discrete Data
+Version: 0.0.1
+Authors@R: person("Jiaying", "Gu", email = "gujy.lola@gmail.com", role = c("aut", "cre"))
+Description: Structure learning of Bayesian network using coordinate-descent
+    algorithm. This algorithm is designed for discrete network assuming a multinomial data set,
+    and we use a multi-logit model to do the regression.
+    The algorithm is described in Gu, Fu and Zhou (2016) <http://arxiv.org/abs/1403.2310>.
+License: GPL (>= 2)
+LazyData: TRUE
+Depends: R (>= 3.2.3)
+Imports: Rcpp, sparsebnUtils, nnet
+LinkingTo: Rcpp, RcppEigen
+RoxygenNote: 5.0.1
+Suggests: testthat,
+SystemRequirements: C++11
+NeedsCompilation: yes
+Packaged: 2016-08-11 03:26:41 UTC; jiayinggu
+Author: Jiaying Gu [aut, cre]
+Maintainer: Jiaying Gu <gujy.lola@gmail.com>
+Repository: CRAN
+Date/Publication: 2016-08-11 13:08:27

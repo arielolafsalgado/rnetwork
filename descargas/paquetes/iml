@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package iml</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Interpretable Machine Learning [R package iml version 0.10.1]" />
+<meta name="citation_author1" content="Christoph Molnar" />
+<meta name="citation_author2" content="Patrick Schratz" />
+<meta name="citation_publication_date" content="2020-09-24" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=iml" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=iml" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="iml: Interpretable Machine Learning" />
+<meta name="og:description" content="Interpretability methods to analyze the behavior and predictions of any machine learning model. Implemented methods are: Feature importance described by Fisher et al. (2018) &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1801.01489&quot;&gt;arXiv:1801.01489&lt;/a&gt;&amp;gt;, accumulated local effects plots described by Apley (2018) &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1612.08468&quot;&gt;arXiv:1612.08468&lt;/a&gt;&amp;gt;, partial dependence plots described by Friedman (2001) &amp;lt;www.jstor.org/stable/2699986&amp;gt;, individual conditional expectation ('ice') plots described by Goldstein et al. (2013) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F10618600.2014.907095&quot;&gt;doi:10.1080/10618600.2014.907095&lt;/a&gt;&amp;gt;, local models (variant of 'lime') described by Ribeiro et. al (2016) &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1602.04938&quot;&gt;arXiv:1602.04938&lt;/a&gt;&amp;gt;, the Shapley Value described by Strumbelj et. al (2014) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs10115-013-0679-x&quot;&gt;doi:10.1007/s10115-013-0679-x&lt;/a&gt;&amp;gt;, feature interactions described by Friedman et. al &amp;lt;&lt;a href=&quot;https://doi.org/10.1214%2F07-AOAS148&quot;&gt;doi:10.1214/07-AOAS148&lt;/a&gt;&amp;gt; and tree surrogate models." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=iml" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>iml: Interpretable Machine Learning</h2>
+<p>Interpretability methods to analyze the behavior
+    and predictions of any machine learning model.  Implemented methods
+    are: Feature importance described by Fisher et al. (2018)
+    &lt;<a href="https://arxiv.org/abs/1801.01489">arXiv:1801.01489</a>&gt;, accumulated local effects plots described by Apley
+    (2018) &lt;<a href="https://arxiv.org/abs/1612.08468">arXiv:1612.08468</a>&gt;, partial dependence plots described by
+    Friedman (2001) &lt;www.jstor.org/stable/2699986&gt;, individual
+    conditional expectation ('ice') plots described by Goldstein et al.
+    (2013) &lt;<a href="https://doi.org/10.1080%2F10618600.2014.907095">doi:10.1080/10618600.2014.907095</a>&gt;, local models (variant of
+    'lime') described by Ribeiro et. al (2016) &lt;<a href="https://arxiv.org/abs/1602.04938">arXiv:1602.04938</a>&gt;, the
+    Shapley Value described by Strumbelj et. al (2014)
+    &lt;<a href="https://doi.org/10.1007%2Fs10115-013-0679-x">doi:10.1007/s10115-013-0679-x</a>&gt;, feature interactions described by
+    Friedman et. al &lt;<a href="https://doi.org/10.1214%2F07-AOAS148">doi:10.1214/07-AOAS148</a>&gt; and tree surrogate models.</p>
+<table summary="Package iml summary">
+<tr>
+<td>Version:</td>
+<td>0.10.1</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../checkmate/index.html">checkmate</a>, <a href="../data.table/index.html">data.table</a>, <a href="../Formula/index.html">Formula</a>, <a href="../future/index.html">future</a>, <a href="../future.apply/index.html">future.apply</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../keras/index.html">keras</a> (&ge; 2.2.5.0), <a href="../Metrics/index.html">Metrics</a>, <a href="../prediction/index.html">prediction</a>, <a href="../R6/index.html">R6</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../ALEPlot/index.html">ALEPlot</a>, <a href="../bench/index.html">bench</a>, <a href="../caret/index.html">caret</a>, <a href="../covr/index.html">covr</a>, <a href="../e1071/index.html">e1071</a>, <a href="../future.callr/index.html">future.callr</a>, <a href="../glmnet/index.html">glmnet</a>, <a href="../gower/index.html">gower</a>, <a href="../h2o/index.html">h2o</a>, <a href="../knitr/index.html">knitr</a>, <a href="../MASS/index.html">MASS</a>, <a href="../mlr/index.html">mlr</a>, <a href="../mlr3/index.html">mlr3</a>, <a href="../party/index.html">party</a>, <a href="../partykit/index.html">partykit</a>, <a href="../patchwork/index.html">patchwork</a>, <a href="../randomForest/index.html">randomForest</a>, <a href="../ranger/index.html">ranger</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../rpart/index.html">rpart</a>, <a href="../testthat/index.html">testthat</a>, <a href="../yaImpute/index.html">yaImpute</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-24</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Christoph Molnar [aut, cre],
+  Patrick Schratz <a href="https://orcid.org/0000-0003-0748-6624"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Christoph Molnar  &#x3c;&#x63;&#x68;&#x72;&#x69;&#x73;&#x74;&#x6f;&#x70;&#x68;&#x2e;&#x6d;&#x6f;&#x6c;&#x6e;&#x61;&#x72;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/christophM/iml/issues">https://github.com/christophM/iml/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://christophm.github.io/iml/">https://christophm.github.io/iml/</a>,
+<a href="https://github.com/christophM/iml/">https://github.com/christophM/iml/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">iml citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_iml.html">iml results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package iml downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="iml.pdf"> iml.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/intro.html">Introduction to iml: Interpretable Machine Learning in R</a><br/>
+<a href="vignettes/parallel.html">Parallel computation of interpretation methods</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/iml_0.10.1.tar.gz"> iml_0.10.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/iml_0.10.1.zip">iml_0.10.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/iml_0.10.1.zip">iml_0.10.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/iml_0.10.1.zip">iml_0.10.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/iml_0.10.1.tgz">iml_0.10.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/iml_0.10.1.tgz">iml_0.10.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/iml"> iml archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package iml reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../DriveML/index.html">DriveML</a>, <a href="../moreparty/index.html">moreparty</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../DALEXtra/index.html">DALEXtra</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=iml"><samp>https://CRAN.R-project.org/package=iml</samp></a>
+to link to this page.</p>
+</body>
+</html>

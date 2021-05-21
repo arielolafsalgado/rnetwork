@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package sgmcmc</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Stochastic Gradient Markov Chain Monte Carlo [R package sgmcmc version 0.2.5]" />
+<meta name="citation_author1" content="Jack Baker" />
+<meta name="citation_author2" content="Christopher Nemeth" />
+<meta name="citation_author3" content="Paul Fearnhead" />
+<meta name="citation_author4" content="Emily B. Fox" />
+<meta name="citation_publication_date" content="2019-10-24" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=sgmcmc" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=sgmcmc" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="sgmcmc: Stochastic Gradient Markov Chain Monte Carlo" />
+<meta name="og:description" content="Provides functions that performs popular stochastic gradient Markov chain Monte Carlo (SGMCMC) methods on user specified models. The required gradients are automatically calculated using 'TensorFlow' &amp;lt;&lt;a href=&quot;https://www.tensorflow.org/&quot;&gt;https://www.tensorflow.org/&lt;/a&gt;&amp;gt;, an efficient library for numerical computation. This means only the log likelihood and log prior functions need to be specified. The methods implemented include stochastic gradient Langevin dynamics (SGLD), stochastic gradient Hamiltonian Monte Carlo (SGHMC), stochastic gradient Nose-Hoover thermostat (SGNHT) and their respective control variate versions for increased efficiency. References: M. Welling, Y. W. Teh (2011) &amp;lt;&lt;a href=&quot;http://www.icml-2011.org/papers/398_icmlpaper.pdf&quot;&gt;http://www.icml-2011.org/papers/398_icmlpaper.pdf&lt;/a&gt;&amp;gt;; T. Chen, E. B. Fox, C. E. Guestrin (2014) &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1402.4102&quot;&gt;arXiv:1402.4102&lt;/a&gt;&amp;gt;; N. Ding, Y. Fang, R. Babbush, C. Chen, R. D. Skeel, H. Neven (2014) &amp;lt;&lt;a href=&quot;https://papers.nips.cc/paper/5592-bayesian-sampling-using-stochastic-gradient-thermostats&quot;&gt;https://papers.nips.cc/paper/5592-bayesian-sampling-using-stochastic-gradient-thermostats&lt;/a&gt;&amp;gt;; J. Baker, P. Fearnhead, E. B. Fox, C. Nemeth (2017) &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1706.05439&quot;&gt;arXiv:1706.05439&lt;/a&gt;&amp;gt;. For more details see &amp;lt;&lt;a href=&quot;https://doi.org/10.18637%2Fjss.v091.i03&quot;&gt;doi:10.18637/jss.v091.i03&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=sgmcmc" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>sgmcmc: Stochastic Gradient Markov Chain Monte Carlo</h2>
+<p>Provides functions that performs popular stochastic gradient Markov chain Monte Carlo (SGMCMC) methods on user specified models. The required gradients are automatically calculated using 'TensorFlow' &lt;<a href="https://www.tensorflow.org/">https://www.tensorflow.org/</a>&gt;, an efficient library for numerical computation. This means only the log likelihood and log prior functions need to be specified. The methods implemented include stochastic gradient Langevin dynamics (SGLD), stochastic gradient Hamiltonian Monte Carlo (SGHMC), stochastic gradient Nose-Hoover thermostat (SGNHT) and their respective control variate versions for increased efficiency. References: M. Welling, Y. W. Teh (2011) &lt;<a href="http://www.icml-2011.org/papers/398_icmlpaper.pdf">http://www.icml-2011.org/papers/398_icmlpaper.pdf</a>&gt;; T. Chen, E. B. Fox, C. E. Guestrin (2014) &lt;<a href="https://arxiv.org/abs/1402.4102">arXiv:1402.4102</a>&gt;; N. Ding, Y. Fang, R. Babbush, C. Chen, R. D. Skeel, H. Neven (2014) &lt;<a href="https://papers.nips.cc/paper/5592-bayesian-sampling-using-stochastic-gradient-thermostats">https://papers.nips.cc/paper/5592-bayesian-sampling-using-stochastic-gradient-thermostats</a>&gt;; J. Baker, P. Fearnhead, E. B. Fox, C. Nemeth (2017) &lt;<a href="https://arxiv.org/abs/1706.05439">arXiv:1706.05439</a>&gt;. For more details see &lt;<a href="https://doi.org/10.18637%2Fjss.v091.i03">doi:10.18637/jss.v091.i03</a>&gt;.</p>
+<table summary="Package sgmcmc summary">
+<tr>
+<td>Version:</td>
+<td>0.2.5</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0), <a href="../tensorflow/index.html">tensorflow</a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>utils, <a href="../reticulate/index.html">reticulate</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../MASS/index.html">MASS</a>, <a href="../knitr/index.html">knitr</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-10-24</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Jack Baker [aut, cre, cph],
+  Christopher Nemeth [aut, cph],
+  Paul Fearnhead [aut, cph],
+  Emily B. Fox [aut, cph],
+  STOR-i [cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Jack Baker  &#x3c;&#x6a;&#x61;&#x63;&#x6b;&#x62;&#x61;&#x6b;&#x65;&#x72;&#x39;&#x32;&#x20;&#x61;&#x74;&#x20;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/STOR-i/sgmcmc/issues">https://github.com/STOR-i/sgmcmc/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/STOR-i/sgmcmc">https://github.com/STOR-i/sgmcmc</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>TensorFlow (https://www.tensorflow.org/),
+TensorFlow Probability
+(https://www.tensorflow.org/probability/)</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">sgmcmc citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_sgmcmc.html">sgmcmc results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package sgmcmc downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="sgmcmc.pdf"> sgmcmc.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/gaussMixture.html">Gaussian Mixture</a><br/>
+<a href="vignettes/logisticRegression.html">Logistic Regression</a><br/>
+<a href="vignettes/mvGauss.html">Multivariate Gaussian</a><br/>
+<a href="vignettes/nn.html">Bayesian Neural Network</a><br/>
+<a href="vignettes/sgmcmc.html">Getting Started</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/sgmcmc_0.2.5.tar.gz"> sgmcmc_0.2.5.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/sgmcmc_0.2.5.zip">sgmcmc_0.2.5.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/sgmcmc_0.2.5.zip">sgmcmc_0.2.5.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/sgmcmc_0.2.5.zip">sgmcmc_0.2.5.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/sgmcmc_0.2.5.tgz">sgmcmc_0.2.5.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/sgmcmc_0.2.5.tgz">sgmcmc_0.2.5.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/sgmcmc"> sgmcmc archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=sgmcmc"><samp>https://CRAN.R-project.org/package=sgmcmc</samp></a>
+to link to this page.</p>
+</body>
+</html>

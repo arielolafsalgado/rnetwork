@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package landsepi</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Landscape Epidemiology and Evolution [R package landsepi version 1.0.1]" />
+<meta name="citation_author1" content="Loup Rimbaud" />
+<meta name="citation_author2" content="Julien Papaix" />
+<meta name="citation_publication_date" content="2020-07-02" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=landsepi" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=landsepi" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="landsepi: Landscape Epidemiology and Evolution" />
+<meta name="og:description" content="A stochastic, spatially-explicit, demo-genetic model simulating the spread and evolution of a plant pathogen in a heterogeneous landscape to assess resistance deployment strategies. It is based on a spatial geometry for describing the landscape and allocation of different cultivars, a dispersal kernel for the dissemination of the pathogen, and a SEIR ('Susceptible-Exposed-Infectious-Removed’) structure with a discrete time step. It provides a useful tool to assess the performance of a wide range of deployment options with respect to their epidemiological, evolutionary and economic outcomes. Loup Rimbaud, Julien Papaïx, Jean-François Rey, Luke G Barrett, Peter H Thrall (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.1371%2Fjournal.pcbi.1006067&quot;&gt;doi:10.1371/journal.pcbi.1006067&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=landsepi" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>landsepi: Landscape Epidemiology and Evolution</h2>
+<p>A stochastic, spatially-explicit, demo-genetic model simulating the spread and evolution 
+    of a plant pathogen in a heterogeneous landscape to assess resistance deployment strategies. 
+    It is based on a spatial geometry for describing the landscape and allocation of different cultivars, 
+    a dispersal kernel for the dissemination of the pathogen, and a SEIR 
+    ('Susceptible-Exposed-Infectious-Removed’) structure with a discrete time step.
+    It provides a useful tool to assess the performance of a wide range of deployment options with 
+    respect to their epidemiological, evolutionary and economic outcomes.
+    Loup Rimbaud, Julien Papaïx, Jean-François Rey, Luke G Barrett, 
+    Peter H Thrall (2018) &lt;<a href="https://doi.org/10.1371%2Fjournal.pcbi.1006067">doi:10.1371/journal.pcbi.1006067</a>&gt;.</p>
+<table summary="Package landsepi summary">
+<tr>
+<td>Version:</td>
+<td>1.0.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>methods, utils, grDevices (&ge; 3.0.0), graphics (&ge; 3.0.0), R (&ge; 3.3.0), <a href="../sp/index.html">sp</a> (&ge; 1.0-17)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.9.0), stats (&ge; 3.0.2), <a href="../Matrix/index.html">Matrix</a>, <a href="../mvtnorm/index.html">mvtnorm</a>, <a href="../fields/index.html">fields</a>, <a href="../splancs/index.html">splancs</a>, <a href="../sf/index.html">sf</a>, <a href="../DBI/index.html">DBI</a>, <a href="../RSQLite/index.html">RSQLite</a>, <a href="../foreach/index.html">foreach</a>, parallel, <a href="../doParallel/index.html">doParallel</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../shiny/index.html">shiny</a>, <a href="../shinyjs/index.html">shinyjs</a>, <a href="../DT/index.html">DT</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-07-02</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Loup Rimbaud [aut],
+  Julien Papaix [aut],
+  Jean-Francois Rey [cre],
+  Jean-Loup Gaussen [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Jean-Francois Rey  &#x3c;&#x6a;&#x65;&#x61;&#x6e;&#x2d;&#x66;&#x72;&#x61;&#x6e;&#x63;&#x6f;&#x69;&#x73;&#x2e;&#x72;&#x65;&#x79;&#x20;&#x61;&#x74;&#x20;&#x69;&#x6e;&#x72;&#x61;&#x65;&#x2e;&#x66;&#x72;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://gitlab.paca.inra.fr/CSIRO-INRA/landsepi/issues">https://gitlab.paca.inra.fr/CSIRO-INRA/landsepi/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> | file <a href="LICENSE">LICENSE</a> [expanded from: GPL (&ge; 2) | file LICENSE]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://gitlab.paca.inra.fr/CSIRO-INRA/landsepi">https://gitlab.paca.inra.fr/CSIRO-INRA/landsepi</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>C++11, gsl</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">landsepi citation info</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_landsepi.html">landsepi results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package landsepi downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="landsepi.pdf"> landsepi.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/landscape_dispersal.html">3 - Parameterising landscape and dispersal in landsepi</a><br/>
+<a href="vignettes/run_exp_design.html">2 - Running a numerical experimental design</a><br/>
+<a href="vignettes/run_simple_simul.html">1 - Running a simple simulation</a><br/>
+<a href="vignettes/list_of_parameters.pdf">list of parameters</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/landsepi_1.0.1.tar.gz"> landsepi_1.0.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/landsepi_1.0.1.zip">landsepi_1.0.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/landsepi_1.0.1.zip">landsepi_1.0.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/landsepi_1.0.1.zip">landsepi_1.0.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/landsepi_1.0.1.tgz">landsepi_1.0.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/landsepi_1.0.1.tgz">landsepi_1.0.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/landsepi"> landsepi archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=landsepi"><samp>https://CRAN.R-project.org/package=landsepi</samp></a>
+to link to this page.</p>
+</body>
+</html>

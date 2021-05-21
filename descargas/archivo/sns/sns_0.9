@@ -1,0 +1,14 @@
+Package: sns
+Type: Package
+Title: Stochastic Newton Sampler
+Version: 0.9
+Date: 2014-8-25
+Author: Alireza S. Mahani, Asad Hasan, Marshall Jiang, Mansour T.S. Sharabiani 
+Maintainer: Asad Hasan <asad.hasan@sentrana.com>
+Description: Multivariate, Markov Chain Monte Carlo sampler for twice differentiable, log-concave probability densities. SNS is a Metropolis-Hastings variant, with a special form of the proposal function. The proposal function is a local Gaussian approximation to the density obtained via Taylor expansion of the log-density around the current point. The mean of the Gaussian proposal is taken as the full Newton-Raphson step from the current point. During burn-in, Newton-Raphson optimization is performed to get close to the mode of the pdf which is unique due to convexity.
+License: GPL (>= 2)
+Imports: mvtnorm
+Packaged: 2014-08-25 20:13:37 UTC; ahasan
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2014-08-25 22:26:38

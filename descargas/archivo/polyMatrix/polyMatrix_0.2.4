@@ -1,0 +1,41 @@
+Package: polyMatrix
+Version: 0.2.4
+Title: Infrastructure for Manipulation Polynomial Matrices
+Description: 
+  Implementation of class "polyMatrix" for storing a matrix of polynomials and implements 
+  basic matrix operations; including a determinant and characteristic polynomial.
+  It is based on the package 'polynom' and uses a lot of its methods to implement matrix operations.
+  This package includes 2 methods of triangularization of polynomial matrices:
+  Extended Euclidean algorithm which is most classical but numerically unstable;
+  Sylvester algorithm based on LQ decomposition.
+  Both methods are described in 
+  D. Henrion & M. Sebek, Reliable numerical methods for polynomial matrix triangularization,
+  IEEE Transactions on Automatic Control (Volume 44, Issue 3, Mar 1999, Pages 497-508) <doi:10.1109/9.751344>
+  and in 
+  Salah Labhalla, Henri Lombardi & Roger Marlin, 
+  Algorithmes de calcule de la reduction de Hermite d'une matrice a coefficients polynomeaux,
+  Theoretical Computer Science (Volume 161, Issue 1-2, July 1996, Pages 69-92) <doi:10.1016/0304-3975(95)00090-9>.
+Type: Package
+Authors@R: c(
+    person("Tamas", "Prohle", email="prohlet@ludens.elte.hu", role="aut"),
+    person("Peter", "Prohle", email="prohlep@math.elte.hu", role="aut"),
+    person("Nikolai", "Ryzhkov", email="namezys@gmail.com", role=c("aut", "cre")),
+    person("Ildiko", "Laszlo", role="ctb", comment = c(ORCID = "0000-0003-2324-8183")),
+    person("Ulas Onat", "Alakent", role="ctb")
+    )
+Imports: polynom
+License: MIT + file LICENSE
+Depends: R (>= 3.0), stats, MTS
+Suggests: testthat
+Repository: CRAN
+URL: https://github.com/namezys/polymatrix
+BugReports: https://github.com/namezys/polymatrix/issues
+NeedsCompilation: no
+Packaged: 2020-01-13 12:11:01 UTC; namezys
+Author: Tamas Prohle [aut],
+  Peter Prohle [aut],
+  Nikolai Ryzhkov [aut, cre],
+  Ildiko Laszlo [ctb] (<https://orcid.org/0000-0003-2324-8183>),
+  Ulas Onat Alakent [ctb]
+Maintainer: Nikolai Ryzhkov <namezys@gmail.com>
+Date/Publication: 2020-01-16 10:30:02 UTC

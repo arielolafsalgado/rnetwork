@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package spdep</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Spatial Dependence: Weighting Schemes, Statistics [R package spdep version 1.1-5]" />
+<meta name="citation_author" content="Roger Bivand" />
+<meta name="citation_publication_date" content="2020-06-29" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=spdep" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=spdep" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="spdep: Spatial Dependence: Weighting Schemes, Statistics" />
+<meta name="og:description" content="A collection of functions to create spatial weights matrix objects from polygon 'contiguities', from point patterns by distance and tessellations, for summarizing these objects, and for permitting their use in spatial data analysis, including regional aggregation by minimum spanning tree; a collection of tests for spatial 'autocorrelation', including global 'Morans I' and 'Gearys C' proposed by 'Cliff' and 'Ord' (1973, ISBN: 0850860369) and (1981, ISBN: 0850860814), 'Hubert/Mantel' general cross product statistic, Empirical Bayes estimates and 'Assunção/Reis' (1999) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002/(SICI)1097-0258(19990830)18:16%3C2147::AID-SIM179%3E3.0.CO;2-I&quot;&gt;doi:10.1002/(SICI)1097-0258(19990830)18:16%3C2147::AID-SIM179%3E3.0.CO;2-I&lt;/a&gt;&amp;gt; Index, 'Getis/Ord' G ('Getis' and 'Ord' 1992) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fj.1538-4632.1992.tb00261.x&quot;&gt;doi:10.1111/j.1538-4632.1992.tb00261.x&lt;/a&gt;&amp;gt; and multicoloured join count statistics, 'APLE' ('Li 'et al.' ) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fj.1538-4632.2007.00708.x&quot;&gt;doi:10.1111/j.1538-4632.2007.00708.x&lt;/a&gt;&amp;gt;, local 'Moran's I' ('Anselin' 1995) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fj.1538-4632.1995.tb00338.x&quot;&gt;doi:10.1111/j.1538-4632.1995.tb00338.x&lt;/a&gt;&amp;gt; and 'Getis/Ord' G ('Ord' and 'Getis' 1995) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fj.1538-4632.1995.tb00912.x&quot;&gt;doi:10.1111/j.1538-4632.1995.tb00912.x&lt;/a&gt;&amp;gt;, 'saddlepoint' approximations ('Tiefelsdorf' 2002) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fj.1538-4632.2002.tb01084.x&quot;&gt;doi:10.1111/j.1538-4632.2002.tb01084.x&lt;/a&gt;&amp;gt; and exact tests for global and local 'Moran's I' ('Bivand et al.' 2009) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.csda.2008.07.021&quot;&gt;doi:10.1016/j.csda.2008.07.021&lt;/a&gt;&amp;gt; and 'LOSH' local indicators of spatial heteroscedasticity ('Ord' and 'Getis') &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs00168-011-0492-y&quot;&gt;doi:10.1007/s00168-011-0492-y&lt;/a&gt;&amp;gt;. The implementation of most of the measures is described in 'Bivand' and 'Wong' (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs11749-018-0599-x&quot;&gt;doi:10.1007/s11749-018-0599-x&lt;/a&gt;&amp;gt;. 'spdep' &amp;gt;= 1.1-1 corresponds to 'spatialreg' &amp;gt;= 1.1-1, in which the model fitting functions are deprecated and pass through to 'spatialreg', but will mask those in 'spatialreg'. From versions 1.2-1, the functions will be made defunct in 'spdep'. For now 'spatialreg' only has functions from 'spdep', where they are shown as deprecated. 'spatialreg' only loads the namespace of 'spdep'; if you attach 'spdep', the same functions in the other package will be masked. Some feed through adequately, others do not." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=spdep" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>spdep: Spatial Dependence: Weighting Schemes, Statistics</h2>
+<p>A collection of functions to create spatial weights matrix
+  objects from polygon 'contiguities', from point patterns by distance and
+  tessellations, for summarizing these objects, and for permitting their
+  use in spatial data analysis, including regional aggregation by minimum
+  spanning tree; a collection of tests for spatial 'autocorrelation',
+  including global 'Morans I' and 'Gearys C' proposed by 'Cliff' and 'Ord'
+  (1973, ISBN: 0850860369) and (1981, ISBN: 0850860814), 'Hubert/Mantel'
+  general cross product statistic, Empirical Bayes estimates and
+  'Assunção/Reis' (1999) &lt;<a href="https://doi.org/10.1002/(SICI)1097-0258(19990830)18:16%3C2147::AID-SIM179%3E3.0.CO;2-I">doi:10.1002/(SICI)1097-0258(19990830)18:16%3C2147::AID-SIM179%3E3.0.CO;2-I</a>&gt; Index, 'Getis/Ord' G ('Getis' and 'Ord' 1992)
+  &lt;<a href="https://doi.org/10.1111%2Fj.1538-4632.1992.tb00261.x">doi:10.1111/j.1538-4632.1992.tb00261.x</a>&gt; and multicoloured
+  join count statistics, 'APLE' ('Li 'et al.' )
+  &lt;<a href="https://doi.org/10.1111%2Fj.1538-4632.2007.00708.x">doi:10.1111/j.1538-4632.2007.00708.x</a>&gt;, local 'Moran's I'
+  ('Anselin' 1995) &lt;<a href="https://doi.org/10.1111%2Fj.1538-4632.1995.tb00338.x">doi:10.1111/j.1538-4632.1995.tb00338.x</a>&gt; and
+  'Getis/Ord' G ('Ord' and 'Getis' 1995)
+  &lt;<a href="https://doi.org/10.1111%2Fj.1538-4632.1995.tb00912.x">doi:10.1111/j.1538-4632.1995.tb00912.x</a>&gt;,
+  'saddlepoint' approximations ('Tiefelsdorf' 2002)
+  &lt;<a href="https://doi.org/10.1111%2Fj.1538-4632.2002.tb01084.x">doi:10.1111/j.1538-4632.2002.tb01084.x</a>&gt; and exact tests
+  for global and local 'Moran's I' ('Bivand et al.' 2009)
+  &lt;<a href="https://doi.org/10.1016%2Fj.csda.2008.07.021">doi:10.1016/j.csda.2008.07.021</a>&gt; and 'LOSH' local indicators
+  of spatial heteroscedasticity ('Ord' and 'Getis')
+  &lt;<a href="https://doi.org/10.1007%2Fs00168-011-0492-y">doi:10.1007/s00168-011-0492-y</a>&gt;. The implementation of most of
+  the measures is described in 'Bivand' and 'Wong' (2018)
+  &lt;<a href="https://doi.org/10.1007%2Fs11749-018-0599-x">doi:10.1007/s11749-018-0599-x</a>&gt;.
+  'spdep' &gt;= 1.1-1 corresponds to 'spatialreg' &gt;= 1.1-1, in which the model
+  fitting functions are deprecated and pass through to 'spatialreg', but
+  will mask those in 'spatialreg'. From versions 1.2-1, the functions will
+  be made defunct in 'spdep'.
+  For now 'spatialreg' only has functions from 'spdep', where they are shown
+  as deprecated. 'spatialreg' only loads the namespace of 'spdep'; if you
+  attach 'spdep', the same functions in the other package will be masked.
+  Some feed through adequately, others do not.</p>
+<table summary="Package spdep summary">
+<tr>
+<td>Version:</td>
+<td>1.1-5</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3.0), methods, <a href="../sp/index.html">sp</a> (&ge; 1.0), <a href="../spData/index.html">spData</a> (&ge; 0.2.6.0), <a href="../sf/index.html">sf</a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../deldir/index.html">deldir</a>, <a href="../boot/index.html">boot</a> (&ge; 1.3-1), graphics, grDevices, utils, stats, <a href="../Matrix/index.html">Matrix</a>, <a href="../LearnBayes/index.html">LearnBayes</a>, <a href="../MASS/index.html">MASS</a>, <a href="../coda/index.html">coda</a>, <a href="../expm/index.html">expm</a>, <a href="../gmodels/index.html">gmodels</a>, <a href="../nlme/index.html">nlme</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../spatialreg/index.html">spatialreg</a> (&ge; 1.1-1), parallel, <a href="../RANN/index.html">RANN</a>, <a href="../rgeos/index.html">rgeos</a>, <a href="../RColorBrewer/index.html">RColorBrewer</a>, <a href="../lattice/index.html">lattice</a>, <a href="../xtable/index.html">xtable</a>, <a href="../maptools/index.html">maptools</a> (&ge; 0.5-4), <a href="../foreign/index.html">foreign</a>, <a href="../igraph/index.html">igraph</a>, <a href="../RSpectra/index.html">RSpectra</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rgdal/index.html">rgdal</a>, <a href="../classInt/index.html">classInt</a>, <a href="../tmap/index.html">tmap</a>, <a href="../spam/index.html">spam</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-29</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Roger Bivand <a href="https://orcid.org/0000-0003-2392-6140"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [cre, aut],
+  Micah Altman [ctb],
+  Luc Anselin [ctb],
+  Renato Assunção [ctb],
+  Olaf Berke [ctb],
+  Andrew Bernat [ctb],
+  Guillaume Blanchet [ctb],
+  Eric Blankmeyer [ctb],
+  Marilia Carvalho [ctb],
+  Bjarke Christensen [ctb],
+  Yongwan Chun [ctb],
+  Carsten Dormann [ctb],
+  Stéphane Dray [ctb],
+  Virgilio Gómez-Rubio [ctb],
+  Martin Gubri [ctb],
+  Rein Halbersma [ctb],
+  Elias Krainski [ctb],
+  Pierre Legendre [ctb],
+  Nicholas Lewin-Koh [ctb],
+  Angela Li [ctb],
+  Hongfei Li [ctb],
+  Jielai Ma [ctb],
+  Abhirup Mallik [ctb, trl],
+  Giovanni Millo [ctb],
+  Werner Mueller [ctb],
+  Hisaji Ono [ctb],
+  Pedro Peres-Neto [ctb],
+  Gianfranco Piras [ctb],
+  Markus Reder [ctb],
+  Michael Tiefelsdorf [ctb],
+  René Westerholt [ctb],
+  Danlin Yu [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Roger Bivand  &#x3c;&#x52;&#x6f;&#x67;&#x65;&#x72;&#x2e;&#x42;&#x69;&#x76;&#x61;&#x6e;&#x64;&#x20;&#x61;&#x74;&#x20;&#x6e;&#x68;&#x68;&#x2e;&#x6e;&#x6f;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/r-spatial/spdep/issues/">https://github.com/r-spatial/spdep/issues/</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/r-spatial/spdep/">https://github.com/r-spatial/spdep/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">spdep citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="ChangeLog">ChangeLog</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Spatial.html">Spatial</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_spdep.html">spdep results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package spdep downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="spdep.pdf"> spdep.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/CO69.html">The Problem of Spatial Autocorrelation:” forty years on</a><br/>
+<a href="vignettes/nb_igraph.html">Spatial weights objects as sparse matrices and graphs</a><br/>
+<a href="vignettes/nb_sf.html">Creating Neighbours using sf objects</a><br/>
+<a href="vignettes/sids.html">Introduction to the North Carolina SIDS data set (re-revised)</a><br/>
+<a href="vignettes/nb.pdf">Creating Neighbours</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/spdep_1.1-5.tar.gz"> spdep_1.1-5.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/spdep_1.1-5.zip">spdep_1.1-5.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/spdep_1.1-5.zip">spdep_1.1-5.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/spdep_1.1-5.zip">spdep_1.1-5.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/spdep_1.1-5.tgz">spdep_1.1-5.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/spdep_1.1-5.tgz">spdep_1.1-5.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/spdep"> spdep archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package spdep reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../AMOEBA/index.html">AMOEBA</a>, <a href="../BSPADATA/index.html">BSPADATA</a>, <a href="../Compind/index.html">Compind</a>, <a href="../DCluster/index.html">DCluster</a>, <a href="../ibeemd/index.html">ibeemd</a>, <a href="../LS2Wstat/index.html">LS2Wstat</a>, <a href="../spatialprobit/index.html">spatialprobit</a>, <a href="../spfrontier/index.html">spfrontier</a>, <a href="../splm/index.html">splm</a>, <a href="../ssfa/index.html">ssfa</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../adegenet/index.html">adegenet</a>, <a href="../adespatial/index.html">adespatial</a>, <a href="../AGPRIS/index.html">AGPRIS</a>, <a href="../AHMbook/index.html">AHMbook</a>, <a href="../bfsMaps/index.html">bfsMaps</a>, <a href="../CARBayes/index.html">CARBayes</a>, <a href="../CARBayesST/index.html">CARBayesST</a>, <a href="../ClustGeo/index.html">ClustGeo</a>, <a href="../DNLC/index.html">DNLC</a>, <a href="../DRHotNet/index.html">DRHotNet</a>, <a href="../edbuildmapr/index.html">edbuildmapr</a>, <a href="../emdi/index.html">emdi</a>, <a href="../expp/index.html">expp</a>, <a href="../FlexScan/index.html">FlexScan</a>, <a href="../GeNetIt/index.html">GeNetIt</a>, <a href="../geomerge/index.html">geomerge</a>, <a href="../GWmodel/index.html">GWmodel</a>, <a href="../HSAR/index.html">HSAR</a>, <a href="../INLABMA/index.html">INLABMA</a>, <a href="../LabourMarketAreas/index.html">LabourMarketAreas</a>, <a href="../latticeDensity/index.html">latticeDensity</a>, <a href="../mclcar/index.html">mclcar</a>, <a href="../mdsOpt/index.html">mdsOpt</a>, <a href="../medfate/index.html">medfate</a>, <a href="../meteoland/index.html">meteoland</a>, <a href="../OasisR/index.html">OasisR</a>, <a href="../pgirmess/index.html">pgirmess</a>, <a href="../PReMiuM/index.html">PReMiuM</a>, <a href="../redist/index.html">redist</a>, <a href="../ref.ICAR/index.html">ref.ICAR</a>, <a href="../saeRobust/index.html">saeRobust</a>, <a href="../saeSim/index.html">saeSim</a>, <a href="../SegEnvIneq/index.html">SegEnvIneq</a>, <a href="../smartR/index.html">smartR</a>, <a href="../spANOVA/index.html">spANOVA</a>, <a href="../spatialEco/index.html">spatialEco</a>, <a href="../SpatialEpi/index.html">SpatialEpi</a>, <a href="../SpatialEpiApp/index.html">SpatialEpiApp</a>, <a href="../spatialreg/index.html">spatialreg</a>, <a href="../spemd/index.html">spemd</a>, <a href="../spGARCH/index.html">spGARCH</a>, <a href="../sphet/index.html">sphet</a>, <a href="../spmoran/index.html">spmoran</a>, <a href="../spsur/index.html">spsur</a>, <a href="../stampr/index.html">stampr</a>, <a href="../SUMMER/index.html">SUMMER</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../ade4/index.html">ade4</a>, <a href="../adegraphics/index.html">adegraphics</a>, <a href="../ASGS.foyer/index.html">ASGS.foyer</a>, <a href="../bamlss/index.html">bamlss</a>, <a href="../BayesX/index.html">BayesX</a>, <a href="../brms/index.html">brms</a>, <a href="../broom/index.html">broom</a>, <a href="../constrainedKriging/index.html">constrainedKriging</a>, <a href="../DatabionicSwarm/index.html">DatabionicSwarm</a>, <a href="../diseasemapping/index.html">diseasemapping</a>, <a href="../epiphy/index.html">epiphy</a>, <a href="../FRK/index.html">FRK</a>, <a href="../gamlss.spatial/index.html">gamlss.spatial</a>, <a href="../Guerry/index.html">Guerry</a>, <a href="../INLAMSM/index.html">INLAMSM</a>, <a href="../leastcostpath/index.html">leastcostpath</a>, <a href="../loo/index.html">loo</a>, <a href="../mcglm/index.html">mcglm</a>, <a href="../mcmcsae/index.html">mcmcsae</a>, <a href="../McSpatial/index.html">McSpatial</a>, <a href="../plm/index.html">plm</a>, <a href="../prabclus/index.html">prabclus</a>, <a href="../ProjectionBasedClustering/index.html">ProjectionBasedClustering</a>, <a href="../R.SamBada/index.html">R.SamBada</a>, <a href="../R2BayesX/index.html">R2BayesX</a>, <a href="../rflexscan/index.html">rflexscan</a>, <a href="../seg/index.html">seg</a>, <a href="../sharpshootR/index.html">sharpshootR</a>, <a href="../spData/index.html">spData</a>, <a href="../spgwr/index.html">spgwr</a>, <a href="../starma/index.html">starma</a>, <a href="../subniche/index.html">subniche</a>, <a href="../surveillance/index.html">surveillance</a>, <a href="../TexMix/index.html">TexMix</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;enhances:</td>
+<td><a href="../MuMIn/index.html">MuMIn</a>, <a href="../stargazer/index.html">stargazer</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=spdep"><samp>https://CRAN.R-project.org/package=spdep</samp></a>
+to link to this page.</p>
+</body>
+</html>

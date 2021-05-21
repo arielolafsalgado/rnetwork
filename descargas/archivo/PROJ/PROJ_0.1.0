@@ -1,0 +1,40 @@
+Package: PROJ
+Title: Generic Coordinate System Transformations Using 'PROJ'
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Michael D.",
+           family = "Sumner",
+           role = c("aut", "cre"),
+           email = "mdsumner@gmail.com",
+           comment = c(ORCID = "0000-0002-2471-7511")), 
+    person("Jeroen", "Ooms", role = c("ctb"), 
+           comment = "provided PROJ library support on Windows, and assistance with Windows configuration"), 
+    person("Simon", "Urbanek", role = c("cph", "ctb"), 
+           comment = "wrote original code versions for PROJ version 6"))
+Description: A wrapper around the generic coordinate transformation software 'PROJ'
+ that transforms geospatial coordinates from one coordinate reference system ('CRS') to another. This 
+  includes cartographic projections as well as geodetic transformations. Version 6.0.0 or 
+  higher is required. The intention is for this package to be used by user-packages such 
+  as 'reproj', and that the older 'PROJ.4' and version 5 pathways be provided by the 
+  legacy package. The 'PROJ' library is available from <https://proj.org/>. 
+Depends: R (>= 2.10)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+SystemRequirements: PROJ (>= 6.0.0)
+Suggests: testthat (>= 2.1.0), covr, spelling, knitr, rmarkdown
+URL: https://github.com/hypertidy/PROJ
+BugReports: https://github.com/hypertidy/PROJ/issues
+RoxygenNote: 7.0.2
+Language: en-US
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2020-01-07 06:56:06 UTC; mdsumner
+Author: Michael D. Sumner [aut, cre] (<https://orcid.org/0000-0002-2471-7511>),
+  Jeroen Ooms [ctb] (provided PROJ library support on Windows, and
+    assistance with Windows configuration),
+  Simon Urbanek [cph, ctb] (wrote original code versions for PROJ version
+    6)
+Maintainer: Michael D. Sumner <mdsumner@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-01-07 17:00:13 UTC

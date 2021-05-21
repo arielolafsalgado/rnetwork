@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package emba</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Ensemble Boolean Model Biomarker Analysis [R package emba version 0.1.7]" />
+<meta name="citation_author" content="John Zobolas" />
+<meta name="citation_publication_date" content="2020-09-22" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=emba" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=emba" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="emba: Ensemble Boolean Model Biomarker Analysis" />
+<meta name="og:description" content="Analysis and visualization of an ensemble of boolean models for biomarker discovery in cancer cell networks. The package allows to easily load the simulation data results of the DrugLogics software pipeline which predicts synergistic drug combinations in cancer cell lines (developed by the DrugLogics research group in NTNU). It has generic functions that can be used to split a boolean model dataset to model groups with regards to the models predictive performance (number of true positive predictions/Matthews correlation coefficient score) or synergy prediction based on a given set of gold standard synergies and find the average activity difference per network node between all model group pairs. Thus, given user-specific thresholds, important nodes (biomarkers) can be accessed in the sense that they make the models predict specific synergies (synergy biomarkers) or have better performance in general (performance biomarkers). Lastly, if the boolean models have a specific equation form and differ only in their link operator, link operator biomarkers can also be found." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=emba" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>emba: Ensemble Boolean Model Biomarker Analysis</h2>
+<p>Analysis and visualization of an ensemble of boolean models for 
+  biomarker discovery in cancer cell networks. The package allows to easily 
+  load the simulation data results of the DrugLogics software pipeline which predicts synergistic drug 
+  combinations in cancer cell lines (developed by the DrugLogics research group 
+  in NTNU). It has generic functions that can be used to split a boolean model 
+  dataset to model groups with regards to the models predictive performance (number of true 
+  positive predictions/Matthews correlation coefficient score) or synergy prediction based on a given set 
+  of gold standard synergies and find the average activity difference per network 
+  node between all model group pairs. Thus, given user-specific thresholds,
+  important nodes (biomarkers) can be accessed in the sense that they make the 
+  models predict specific synergies (synergy biomarkers) or have better 
+  performance in general (performance biomarkers). Lastly, if the 
+  boolean models have a specific equation form and differ only in their link operator, 
+  link operator biomarkers can also be found.</p>
+<table summary="Package emba summary">
+<tr>
+<td>Version:</td>
+<td>0.1.7</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>graphics, grDevices, utils, <a href="../purrr/index.html">purrr</a>, <a href="../rje/index.html">rje</a> (&ge; 1.10), <a href="../igraph/index.html">igraph</a> (&ge;
+1.2.4), <a href="../visNetwork/index.html">visNetwork</a> (&ge; 2.0.9), <a href="../Ckmeans.1d.dp/index.html">Ckmeans.1d.dp</a> (&ge; 4.2.2), <a href="../usefun/index.html">usefun</a> (&ge; 0.4.3), <a href="../readr/index.html">readr</a> (&ge; 1.3.0), <a href="../dplyr/index.html">dplyr</a> (&ge; 1.0.0), <a href="../tidyr/index.html">tidyr</a> (&ge;
+1.1.0), <a href="../tidyselect/index.html">tidyselect</a> (&ge; 1.0.0), <a href="../stringr/index.html">stringr</a> (&ge; 1.4.0), <a href="../tibble/index.html">tibble</a> (&ge;
+3.0.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../xfun/index.html">xfun</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-22</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>John Zobolas <a href="https://orcid.org/0000-0002-3609-8674"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cph, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>John Zobolas  &#x3c;&#x62;&#x62;&#x6c;&#x6f;&#x64;&#x66;&#x6f;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/bblodfon/emba/issues">https://github.com/bblodfon/emba/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://bblodfon.github.io/emba/">https://bblodfon.github.io/emba/</a>,
+<a href="https://github.com/bblodfon/emba">https://github.com/bblodfon/emba</a>,
+<a href="https://github.com/druglogics/">https://github.com/druglogics/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_emba.html">emba results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package emba downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="emba.pdf"> emba.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/emba.html">emba</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/emba_0.1.7.tar.gz"> emba_0.1.7.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/emba_0.1.7.zip">emba_0.1.7.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/emba_0.1.7.zip">emba_0.1.7.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/emba_0.1.7.zip">emba_0.1.7.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/emba_0.1.7.tgz">emba_0.1.7.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/emba_0.1.7.tgz">emba_0.1.7.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/emba"> emba archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=emba"><samp>https://CRAN.R-project.org/package=emba</samp></a>
+to link to this page.</p>
+</body>
+</html>

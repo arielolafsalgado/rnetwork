@@ -1,0 +1,20 @@
+Package: jcext
+Type: Package
+Title: Extended Classification of Weather Types
+Version: 0.1
+Depends: R (>= 3.2.3)
+Encoding: UTF-8
+Author: Noelia Otero
+Maintainer: Noelia Otero <noeli1680@gmail.com>
+Description: Provides a gridded classification of weather types by applying the Jenkinson and Collison classification. For a given region (it can be either local region or the whole map),it computes at each grid the 11 weather 
+             types during the period considered for the analysis. See Otero et al., (2017) <doi:10.1007/s00382-017-3705-y> for more information.
+License: GPL (>= 2)
+LazyData: TRUE
+Imports: parallel, stringr, RColorBrewer, graphics, grDevices, maps,
+        rworldmap, ggplot2, sp
+Suggests: ncdf4
+RoxygenNote: 6.0.1.9000
+NeedsCompilation: no
+Packaged: 2018-01-21 16:30:15 UTC; notero
+Repository: CRAN
+Date/Publication: 2018-01-22 11:25:58 UTC

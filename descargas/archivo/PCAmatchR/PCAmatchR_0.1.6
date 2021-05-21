@@ -1,0 +1,39 @@
+Package: PCAmatchR
+Title: Match Cases to Controls Based on Genotype Principal Components
+Version: 0.1.6
+Authors@R: 
+    c(person(given = "Derek W.",
+             family = "Brown",
+             role = c("aut", "cre"),
+             email = "derek.brown@nih.gov"),
+      person(given = "Mitchel J.",
+             family = "Machiela",
+             role = "aut",
+             email = "mitchell.machiela@nih.gov"),
+      person(given = "Timothy A.",
+             family = "Myers",
+             role = "ctb"),
+      person(given = "NCI",
+             role = c("cph", "fnd")))
+Maintainer: Derek W. Brown <derek.brown@nih.gov>
+Description: Matches cases to controls based on genotype principle components (PC). 
+      In order to produce better results, matches are based on the weighted 
+      distance of PCs where the weights are equal to the % variance explained 
+      by that PC. A weighted Mahalanobis distance metric (Kidd et al. (1987)
+      <DOI:10.1016/0031-3203(87)90066-5>) is used to determine matches. 
+License: MIT + file LICENSE
+URL: https://github.com/machiela-lab/PCAmatchR
+BugReports: https://github.com/machiela-lab/PCAmatchR/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 2.10)
+RoxygenNote: 7.0.2
+Suggests: optmatch, testthat
+NeedsCompilation: no
+Packaged: 2020-04-16 11:35:02 UTC; myersta
+Author: Derek W. Brown [aut, cre],
+  Mitchel J. Machiela [aut],
+  Timothy A. Myers [ctb],
+  NCI [cph, fnd]
+Repository: CRAN
+Date/Publication: 2020-04-24 11:20:03 UTC

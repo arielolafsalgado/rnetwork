@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package PopED</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Population (and Individual) Optimal Experimental Design [R package PopED version 0.5.0]" />
+<meta name="citation_author1" content="Andrew C. Hooker" />
+<meta name="citation_author2" content="Marco Foracchia" />
+<meta name="citation_author3" content="Sebastian Ueckert" />
+<meta name="citation_author4" content="Joakim Nyberg" />
+<meta name="citation_publication_date" content="2020-06-13" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=PopED" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=PopED" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="PopED: Population (and Individual) Optimal Experimental Design" />
+<meta name="og:description" content="Optimal experimental designs for both population and individual studies based on nonlinear mixed-effect models. Often this is based on a computation of the Fisher Information Matrix. This package was developed for pharmacometric problems, and examples and predefined models are available for these types of systems. The methods are described in Nyberg et al. (2012) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.cmpb.2012.05.005&quot;&gt;doi:10.1016/j.cmpb.2012.05.005&lt;/a&gt;&amp;gt;, and Foracchia et al. (2004) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2FS0169-2607%2803%2900073-7&quot;&gt;doi:10.1016/S0169-2607(03)00073-7&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=PopED" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>PopED: Population (and Individual) Optimal Experimental Design</h2>
+<p>Optimal experimental designs for both population and individual
+    studies based on nonlinear mixed-effect models. Often this is based on a
+    computation of the Fisher Information Matrix. This package was developed
+    for pharmacometric problems, and examples and predefined models are available
+    for these types of systems. The methods are described in Nyberg et al. 
+    (2012) &lt;<a href="https://doi.org/10.1016%2Fj.cmpb.2012.05.005">doi:10.1016/j.cmpb.2012.05.005</a>&gt;, and Foracchia et al. (2004) 
+    &lt;<a href="https://doi.org/10.1016%2FS0169-2607%2803%2900073-7">doi:10.1016/S0169-2607(03)00073-7</a>&gt;.</p>
+<table summary="Package PopED summary">
+<tr>
+<td>Version:</td>
+<td>0.5.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.14)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../ggplot2/index.html">ggplot2</a>, <a href="../MASS/index.html">MASS</a>, <a href="../mvtnorm/index.html">mvtnorm</a>, <a href="../dplyr/index.html">dplyr</a> (&ge; 0.7.0), <a href="../codetools/index.html">codetools</a>, stats, utils, <a href="../magrittr/index.html">magrittr</a>, <a href="../boot/index.html">boot</a>, <a href="../purrr/index.html">purrr</a>, <a href="../stringr/index.html">stringr</a>, <a href="../tibble/index.html">tibble</a>, <a href="../gtools/index.html">gtools</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../Hmisc/index.html">Hmisc</a>, <a href="../nlme/index.html">nlme</a>, <a href="../GA/index.html">GA</a>, <a href="../deSolve/index.html">deSolve</a>, <a href="../Rcpp/index.html">Rcpp</a>, <a href="../shiny/index.html">shiny</a>, <a href="../rhandsontable/index.html">rhandsontable</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../gridExtra/index.html">gridExtra</a>, <a href="../covr/index.html">covr</a>, <a href="../devtools/index.html">devtools</a>, <a href="../mrgsolve/index.html">mrgsolve</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-13</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Andrew C. Hooker <a href="https://orcid.org/0000-0002-2676-5912"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre, trl, cph],
+  Marco Foracchia [aut] (O-Matrix version),
+  Eric Stroemberg [ctb] (MATLAB version),
+  Martin Fink [ctb] (Streamlining code, added functionality, vignettes),
+  Giulia Lestini [ctb] (Streamlining code, added functionality,
+    vignettes),
+  Sebastian Ueckert <a href="https://orcid.org/0000-0002-3712-0255"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut] (MATLAB version),
+  Joakim Nyberg [aut] (MATLAB version)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Andrew C. Hooker  &#x3c;&#x61;&#x6e;&#x64;&#x72;&#x65;&#x77;&#x2e;&#x68;&#x6f;&#x6f;&#x6b;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x66;&#x61;&#x72;&#x6d;&#x62;&#x69;&#x6f;&#x2e;&#x75;&#x75;&#x2e;&#x73;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/andrewhooker/PopED/issues">https://github.com/andrewhooker/PopED/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/LGPL-3">LGPL (&ge; 3)</a></td>
+</tr>
+<tr>
+<td>Copyright:</td>
+<td>2014-2018 Andrew C. Hooker</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://andrewhooker.github.io/PopED">https://andrewhooker.github.io/PopED</a>,
+<a href="https://github.com/andrewhooker/PopED">https://github.com/andrewhooker/PopED</a>,</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">PopED citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/ExperimentalDesign.html">ExperimentalDesign</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_PopED.html">PopED results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package PopED downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="PopED.pdf"> PopED.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/examples.html">Examples</a><br/>
+<a href="vignettes/intro-poped.html">Introduction to PopED</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/PopED_0.5.0.tar.gz"> PopED_0.5.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/PopED_0.5.0.zip">PopED_0.5.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/PopED_0.5.0.zip">PopED_0.5.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/PopED_0.5.0.zip">PopED_0.5.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/PopED_0.5.0.tgz">PopED_0.5.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/PopED_0.5.0.tgz">PopED_0.5.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/PopED"> PopED archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package PopED reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../ncappc/index.html">ncappc</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=PopED"><samp>https://CRAN.R-project.org/package=PopED</samp></a>
+to link to this page.</p>
+</body>
+</html>

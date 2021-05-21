@@ -1,0 +1,27 @@
+Package: SCOR
+Type: Package
+Title: Spherically Constrained Optimization Routine
+Version: 1.1.0
+Authors@R: c(
+      person("Debsurya","De", ,"debsurya001@gmail.com", role =c("cre","aut")),
+      person("Priyam","Das", ,"pdas@ncsu.edu" , role = "aut")
+      )
+Depends: R (>= 3.5.0)
+Imports: doParallel, foreach, iterators, parallel
+Collate: 'imports.R' 'biomarker.R' 'SHUM.R' 'EHUM.R' 'ULBA.R' 'SCOR.R'
+        'SCOR-package.R' 'optimized_HUM.R' 'youden_points.R'
+        'YoudenBoxPlot.R'
+Maintainer: Debsurya De <debsurya001@gmail.com>
+Description: A non-convex optimization package that optimizes any function under the criterion, combination of
+              variables are on the surface of a unit sphere, as described in the paper : Das et al. (2019) <arXiv:1909.04024> .
+License: GPL-3
+URL: https://github.com/synx21/SCOR
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.99.9001
+NeedsCompilation: no
+Packaged: 2019-10-21 10:50:54 UTC; Debsurya
+Author: Debsurya De [cre, aut],
+  Priyam Das [aut]
+Repository: CRAN
+Date/Publication: 2019-10-24 17:20:02 UTC

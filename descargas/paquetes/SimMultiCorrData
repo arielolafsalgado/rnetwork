@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package SimMultiCorrData</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=SimMultiCorrData" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="SimMultiCorrData: Simulation of Correlated Data with Multiple Variable Types" />
+<meta name="og:description" content="Generate continuous (normal or non-normal), binary, ordinal, and count (Poisson or Negative Binomial) variables with a specified correlation matrix. It can also produce a single continuous variable. This package can be used to simulate data sets that mimic real-world situations (i.e. clinical or genetic data sets, plasmodes). All variables are generated from standard normal variables with an imposed intermediate correlation matrix. Continuous variables are simulated by specifying mean, variance, skewness, standardized kurtosis, and fifth and sixth standardized cumulants using either Fleishman's third-order (&amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2FBF02293811&quot;&gt;doi:10.1007/BF02293811&lt;/a&gt;&amp;gt;) or Headrick's fifth-order (&amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2FS0167-9473%2802%2900072-5&quot;&gt;doi:10.1016/S0167-9473(02)00072-5&lt;/a&gt;&amp;gt;) polynomial transformation. Binary and ordinal variables are simulated using a modification of the ordsample() function from 'GenOrd'. Count variables are simulated using the inverse cdf method. There are two simulation pathways which differ primarily according to the calculation of the intermediate correlation matrix. In Correlation Method 1, the intercorrelations involving count variables are determined using a simulation based, logarithmic correlation correction (adapting Yahav and Shmueli's 2012 method, &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fasmb.901&quot;&gt;doi:10.1002/asmb.901&lt;/a&gt;&amp;gt;). In Correlation Method 2, the count variables are treated as ordinal (adapting Barbiero and Ferrari's 2015 modification of GenOrd, &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fasmb.2072&quot;&gt;doi:10.1002/asmb.2072&lt;/a&gt;&amp;gt;). There is an optional error loop that corrects the final correlation matrix to be within a user-specified precision value of the target matrix. The package also includes functions to calculate standardized cumulants for theoretical distributions or from real data sets, check if a target correlation matrix is within the possible correlation bounds (given the distributions of the simulated variables), summarize results (numerically or graphically), to verify valid power method pdfs, and to calculate lower standardized kurtosis bounds." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=SimMultiCorrData" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>SimMultiCorrData: Simulation of Correlated Data with Multiple Variable Types</h2>
+<p>Generate continuous (normal or non-normal), binary, ordinal, and count (Poisson or Negative 
+    Binomial) variables with a specified correlation matrix.  It can also produce a single continuous 
+    variable.  This package can be used to simulate data sets that mimic real-world situations (i.e. 
+    clinical or genetic data sets, plasmodes).  All variables are generated from standard normal 
+    variables with an imposed intermediate correlation matrix.  Continuous variables are simulated 
+    by specifying mean, variance, skewness, standardized kurtosis, and fifth and sixth standardized 
+    cumulants using either Fleishman's third-order (&lt;<a href="https://doi.org/10.1007%2FBF02293811">doi:10.1007/BF02293811</a>&gt;) or Headrick's 
+    fifth-order (&lt;<a href="https://doi.org/10.1016%2FS0167-9473%2802%2900072-5">doi:10.1016/S0167-9473(02)00072-5</a>&gt;) polynomial transformation.  Binary and 
+    ordinal variables are simulated using a modification of the ordsample() function from 'GenOrd'.  
+    Count variables are simulated using the inverse cdf method.  There are two simulation pathways 
+    which differ primarily according to the calculation of the intermediate correlation matrix.  In 
+    Correlation Method 1, the intercorrelations involving count variables are determined using a 
+    simulation based, logarithmic correlation correction (adapting Yahav and Shmueli's 2012 method, 
+    &lt;<a href="https://doi.org/10.1002%2Fasmb.901">doi:10.1002/asmb.901</a>&gt;).  In Correlation Method 2, the count variables are treated as ordinal 
+    (adapting Barbiero and Ferrari's 2015 modification of GenOrd, &lt;<a href="https://doi.org/10.1002%2Fasmb.2072">doi:10.1002/asmb.2072</a>&gt;).  
+    There is an optional error loop that corrects the final correlation matrix to be within a 
+    user-specified precision value of the target matrix.  The package also includes functions to 
+    calculate standardized cumulants for theoretical distributions or from real data sets, check 
+    if a target correlation matrix is within the possible correlation bounds (given the distributions 
+    of the simulated variables), summarize results (numerically or graphically), to verify valid power 
+    method pdfs, and to calculate lower standardized kurtosis bounds.</p>
+<table summary="Package SimMultiCorrData summary">
+<tr>
+<td>Version:</td>
+<td>0.2.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../BB/index.html">BB</a>, <a href="../nleqslv/index.html">nleqslv</a>, <a href="../GenOrd/index.html">GenOrd</a>, <a href="../psych/index.html">psych</a>, <a href="../Matrix/index.html">Matrix</a>, <a href="../VGAM/index.html">VGAM</a>, <a href="../triangle/index.html">triangle</a>, <a href="../ggplot2/index.html">ggplot2</a>, grid, stats, utils</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../printr/index.html">printr</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2018-06-28</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Allison Cynthia Fialkowski</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Allison Cynthia Fialkowski  &#x3c;&#x61;&#x6c;&#x6c;&#x69;&#x6a;&#x61;&#x7a;&#x7a;&#x20;&#x61;&#x74;&#x20;&#x75;&#x61;&#x62;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/AFialkowski/SimMultiCorrData">https://github.com/AFialkowski/SimMultiCorrData</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_SimMultiCorrData.html">SimMultiCorrData results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package SimMultiCorrData downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="SimMultiCorrData.pdf"> SimMultiCorrData.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/benefits.html">Benefits of SimMultiCorrData and Comparison to Other Packages</a><br/>
+<a href="vignettes/dist_comp.html">Comparison of Simulated Distribution to Theoretical Distribution or Empirical Data</a><br/>
+<a href="vignettes/errorloop.html">Overview of Error Loop</a><br/>
+<a href="vignettes/functions.html">Functions by Topic</a><br/>
+<a href="vignettes/method_comp.html">Comparison of Correlation Method 1 and Correlation Method 2</a><br/>
+<a href="vignettes/sixth_validpdf.html">Using the Sixth Cumulant Correction to Find Valid Power Method Pdfs</a><br/>
+<a href="vignettes/variable_types.html">Variable Types</a><br/>
+<a href="vignettes/workflow.html">Overall Workflow for Data Simulation</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/SimMultiCorrData_0.2.2.tar.gz"> SimMultiCorrData_0.2.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/SimMultiCorrData_0.2.2.zip">SimMultiCorrData_0.2.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/SimMultiCorrData_0.2.2.zip">SimMultiCorrData_0.2.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/SimMultiCorrData_0.2.2.zip">SimMultiCorrData_0.2.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/SimMultiCorrData_0.2.2.tgz">SimMultiCorrData_0.2.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/SimMultiCorrData_0.2.2.tgz">SimMultiCorrData_0.2.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/SimMultiCorrData"> SimMultiCorrData archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package SimMultiCorrData reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../SimCorrMix/index.html">SimCorrMix</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=SimMultiCorrData"><samp>https://CRAN.R-project.org/package=SimMultiCorrData</samp></a>
+to link to this page.</p>
+</body>
+</html>

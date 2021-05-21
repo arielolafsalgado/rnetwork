@@ -1,0 +1,34 @@
+Package: qwraps2
+Title: Quick Wraps 2
+Version: 0.4.2
+Authors@R: c(
+    person("Peter", "DeWitt", , "dewittpe@gmail.com", role = c("aut", "cre")),
+    person("Tell",  "Bennett", , "tell.bennett@cuanschutz.edu", role = c("ctb"))
+    )
+Description: A collection of (wrapper) functions the creator found useful
+    for quickly placing data summaries and formatted regression results into
+    '.Rnw' or '.Rmd' files. Functions for generating commonly used graphics,
+    such as receiver operating curves or Bland-Altman plots, are also provided
+    by 'qwraps2'.  'qwraps2' is a updated version of a package 'qwraps'. The
+    original version 'qwraps' was never submitted to CRAN but can be found at
+    <https://github.com/dewittpe/qwraps/>. The implementation and limited scope
+    of the functions within 'qwraps2' <https://github.com/dewittpe/qwraps2/> is
+    fundamentally different from 'qwraps'.
+Depends: R (>= 3.0.2)
+License: GPL-2
+Encoding: UTF-8
+URL: https://github.com/dewittpe/qwraps2/
+LazyData: true
+Imports: dplyr, ggplot2, knitr, magrittr, Rcpp (>= 0.12.11), rlang,
+        tidyr, utils
+Suggests: survival, testthat, covr, rbenchmark, rmarkdown
+RoxygenNote: 7.0.2
+LinkingTo: Rcpp (>= 0.12.11), RcppArmadillo
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2019-12-02 19:47:34 UTC; dewittp
+Author: Peter DeWitt [aut, cre],
+  Tell Bennett [ctb]
+Maintainer: Peter DeWitt <dewittpe@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-12-02 20:40:13 UTC

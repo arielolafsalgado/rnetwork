@@ -1,0 +1,32 @@
+Package: oddsratio
+Version: 1.0.0
+Title: Odds Ratio Calculation for GAM(M)s & GLM(M)s
+Authors@R: c(
+    person("Patrick", "Schratz", , "patrick.schratz@gmail.com", c("aut", "cre"))
+    )
+Description: Simplified odds ratio calculation of GAM(M)s & GLM(M)s. 
+    Provides structured output (data frame) of all predictors and their corresponding odds ratios and confident intervals
+    for further analyses. It helps to avoid false references of predictors and increments by
+    specifying these parameters in a list instead of using 'exp(coef(model))' 
+    (standard approach of odds ratio calculation for GLMs) which just returns a plain numeric output. 
+    For GAM(M)s, odds ratio calculation is highly simplified with this package since it takes care of
+    the multiple 'predict()' calls of the chosen predictor while holding other predictors constant.
+    Also, this package allows odds ratio calculation of percentage steps across the whole
+    predictor distribution range for GAM(M)s. In both cases, confident intervals are returned additionally.
+    Calculated odds ratio of GAM(M)s can be inserted into the smooth function plot. 
+URL: https://github.com/pat-s/oddsratio
+BugReports: https://github.com/pat-s/oddsratio/issues
+Depends: R (>= 3.0.0)
+Imports: mgcv, MASS, stats, ggplot2 (>= 2.2.0), cowplot
+License: MIT + file LICENSE
+RoxygenNote: 6.0.1
+Suggests: knitr, rmarkdown, grid, gtable, scales, testthat, pacman, gam
+LazyData: true
+ByteCompile: true
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-06-12 20:30:54 UTC; pjs
+Author: Patrick Schratz [aut, cre]
+Maintainer: Patrick Schratz <patrick.schratz@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-06-12 22:08:28 UTC

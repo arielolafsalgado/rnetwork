@@ -1,0 +1,34 @@
+Package: covatest
+Type: Package
+Title: Tests on Properties of Space-Time Covariance Functions
+Version: 1.1.1
+Authors@R: c(person("Sandra", "De Iaco", role = c("aut", "cre"), 
+    email = "sandra.deiaco@unisalento.it"),
+    person("Claudia", "Cappello", role = "aut", email = "claudia.cappello@unisalento.it"),
+    person("Donato", "Posa", role = "aut", email = "donato.posa@unisalento.it"),
+    person("Sabrina ", "Maggio", role = "ctb", email = "sabrina.maggio@unisalento.it"))
+Description: Tests on properties of space-time covariance functions.
+    Tests on symmetry, separability and for assessing 
+    different forms of non-separability are available. Moreover tests on 
+    some classes of covariance functions, such that the classes of 
+    product-sum models, Gneiting models and integrated product models have 
+    been provided.
+Depends: R(>= 3.3.0)
+Imports: utils, stats, graphics, methods, matrixcalc, lubridate, zoo,
+        gstat, sp (>= 0.9-72), spacetime (>= 1.0-0)
+Maintainer: Sandra De Iaco <sandra.deiaco@unisalento.it>
+License: GPL (>= 2.0)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.0
+Collate: 'sepindex.R' 'couples.R' 'blocks.R' 'covablocks.R'
+        'covastat.R' 'covaprop.R' 'covastatM.R' 'read.STdata.R'
+        'vv_13.R'
+NeedsCompilation: no
+Packaged: 2018-12-01 17:38:12 UTC; claudiacappello
+Author: Sandra De Iaco [aut, cre],
+  Claudia Cappello [aut],
+  Donato Posa [aut],
+  Sabrina Maggio [ctb]
+Repository: CRAN
+Date/Publication: 2018-12-02 15:50:12 UTC

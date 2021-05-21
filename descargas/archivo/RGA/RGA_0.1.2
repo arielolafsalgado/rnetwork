@@ -1,0 +1,36 @@
+Package: RGA
+Type: Package
+Title: A Google Analytics API client for R
+Description: Provides functions for accessing and retrieving data from the
+    Google Analytics APIs (https://developers.google.com/analytics/). Supports
+    OAuth 2.0 authorization. Package provides access to the Management, Core
+    Reporting, Multi-Channel Funnels Reporting, Real Time Reporting and
+    Metadata APIs. Access to all the Google Analytics accounts which the user
+    has access to. Auto-pagination to return more than 10,000 rows of the
+    results by combining multiple data requests. Also the RGA package provides
+    shiny app to explore the core reporting API dimensions and metrics.
+URL: https://bitbucket.org/unikum/rga
+BugReports: https://bitbucket.org/unikum/rga/issues
+Version: 0.1.2
+Date: 2014-06-03
+Authors@R: c(
+    person(given = "Artem", family = "Klevtsov",
+    email = "a.a.klevtsov@gmail.com", role = c("aut", "cre")),
+    person(given = "Philipp", family = "Upravitelev",
+    email = "upravitelev@gmail.com", role = "ctb"),
+    person(given = "Olga", family = "Shramko",
+    email = "ol1709@yahoo.com", role = "ctb"))
+License: GPL (>= 2)
+Depends: R (>= 2.15.1)
+Imports: RCurl, jsonlite, httr (>= 0.3), httpuv, shiny (>= 0.10.0)
+Collate: 'auth.R' 'convert.R' 'data.R' 'utils.R' 'url.R' 'query.R'
+        'get-data.R' 'mgmt.R' 'onload.R' 'package.R' 'report.R'
+        'shiny.R'
+Packaged: 2014-09-01 07:28:01 UTC; xxx
+Author: Artem Klevtsov [aut, cre],
+  Philipp Upravitelev [ctb],
+  Olga Shramko [ctb]
+Maintainer: Artem Klevtsov <a.a.klevtsov@gmail.com>
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2014-09-01 10:06:13

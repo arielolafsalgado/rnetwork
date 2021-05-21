@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package RJafroc</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Analyzing Diagnostic Observer Performance Studies [R package RJafroc version 1.3.2]" />
+<meta name="citation_author1" content="Dev Chakraborty" />
+<meta name="citation_author2" content="Peter Philips" />
+<meta name="citation_author3" content="Xuetong Zhai" />
+<meta name="citation_publication_date" content="2020-03-06" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=RJafroc" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=RJafroc" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="RJafroc: Analyzing Diagnostic Observer Performance Studies" />
+<meta name="og:description" content="Implements software for assessing medical imaging systems, radiologists or computer aided detection algorithms. Models of observer performance are implemented, including the binormal model (BM), the contaminated binormal model (CBM), the correlated contaminated binormal model (CORCBM), and the radiological search model (RSM). The software and applications are described in a book - Chakraborty DP: Observer Performance Methods for Diagnostic Imaging - Foundations, Modeling, and Applications with R-Based Examples. Taylor-Francis LLC; 2017 - and its vignettes &amp;lt;&lt;a href=&quot;https://dpc10ster.github.io/RJafroc/&quot;&gt;https://dpc10ster.github.io/RJafroc/&lt;/a&gt;&amp;gt;. Observer performance data collection paradigms are the receiver operating characteristic (ROC) and its location specific extensions, primarily free-response ROC (FROC) and the location ROC (LROC). ROC data consists of single ratings per images. A rating is the perceived confidence level that the image is that of a diseased patient. FROC data consists of a variable number (including zero) of mark-rating pairs per image, where a mark is the location of a clinically reportable suspicious region and the rating is the corresponding confidence level that it is a real lesion. LROC data consists of a rating and a forced localization of the most suspicious region on every image. RJafroc supersedes the Windows version of JAFROC software V4.2.1, &amp;lt;&lt;a href=&quot;http://www.devchakraborty.com&quot;&gt;http://www.devchakraborty.com&lt;/a&gt;&amp;gt;:. Package functions are organized as follows. Data file related function names are preceded by Df, curve fitting functions by Fit, included data sets by dataset, plotting functions by Plot, significance testing functions by St, sample size related functions by Ss, data simulation functions by Simulate and utility functions by Util. Implemented are figures of merit (FOMs) for quantifying performance, functions for visualizing empirical operating characteristics: e.g., ROC, FROC, alternative FROC (AFROC) and weighted AFROC (wAFROC) curves. Four maximum likelihood curve-fitting algorithms are implemented: the binormal model (BM), the contaminated binormal model (CBM), the correlated contaminated binormal model (CORCBM) and the radiological search model (RSM). Unlike the binormal model, CBM, CORCBM and RSM predict &quot;proper&quot; ROC curves that do not cross the chance diagonal. RSM fitting additionally yields measures of search and lesion-classification performances. Search performance is the ability to find lesions while avoiding finding non-lesions. Lesion-classification performance is the ability to correctly classify found lesions from found non-lesions. For fully crossed study designs significance testing of reader-averaged FOM differences between modalities is implemented via both Dorfman-Berbaum-Metz and the Obuchowski-Rockette methods, including Hillis' extensions. Also implemented are single treatment analyses, which allow comparison of performance of a group of radiologists to a specified value, or comparison to CAD to a group of radiologists interpreting the same cases. Crossed-modality analysis is implemented wherein there are two crossed treatment factors and the desire is to determined performance in each treatment factor averaged over all levels of the other factor. Sample size estimation tools are provided for ROC and FROC studies; these use estimates of the relevant variances from a pilot study to predict required numbers of readers and cases in a pivotal study to achieve a desired power. Utility and data file manipulation functions allow data to be read in any of the currently used input formats, including Excel, and the results of the analysis can be viewed in text or Excel output files. The methods are illustrated with several included datasets from the author's international collaborations. This version corrects a few bugs noticed by users and extends the Excel file input format for greater flexibility in handling non-crossed datasets and the sample size routines have been rewritten for ease of use." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=RJafroc" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>RJafroc: Analyzing Diagnostic Observer Performance Studies</h2>
+<p>Implements software for assessing medical imaging systems, radiologists or computer aided detection algorithms. 
+    Models of observer performance are implemented, including the binormal model (BM), the contaminated binormal model (CBM), the 
+    correlated contaminated binormal model (CORCBM), and the radiological search model (RSM). The software and applications are 
+    described in a book - Chakraborty DP: Observer Performance Methods for Diagnostic Imaging - Foundations, Modeling, and 
+    Applications with R-Based Examples. Taylor-Francis LLC; 2017 - and its vignettes &lt;<a href="https://dpc10ster.github.io/RJafroc/">https://dpc10ster.github.io/RJafroc/</a>&gt;. 
+    Observer performance data collection paradigms are the receiver operating characteristic (ROC) and its location specific 
+    extensions, primarily free-response ROC (FROC) and the location ROC (LROC). ROC data consists of single ratings per images. 
+    A rating is the perceived confidence level that the image is that of a diseased patient. FROC data consists of a variable 
+    number (including zero) of mark-rating pairs per image, where a mark is the location of a clinically reportable suspicious region 
+    and the rating is the corresponding confidence level that it is a real lesion. LROC data consists of a rating and a forced 
+    localization of the most suspicious region on every image. RJafroc supersedes the Windows version of JAFROC software 
+    V4.2.1, &lt;<a href="http://www.devchakraborty.com">http://www.devchakraborty.com</a>&gt;:. Package functions are organized as follows. Data file related function names are 
+    preceded by Df, curve fitting functions by Fit, included data sets by dataset, plotting functions by 
+    Plot, significance testing functions by St, sample size related functions by Ss, data simulation functions 
+    by Simulate and utility functions by Util. Implemented are figures of merit (FOMs) for quantifying performance, 
+    functions for visualizing empirical operating characteristics: e.g., ROC, FROC, alternative FROC (AFROC) and weighted AFROC 
+    (wAFROC) curves. Four maximum likelihood curve-fitting algorithms are implemented: the binormal model (BM), the contaminated 
+    binormal model (CBM), the correlated contaminated binormal model (CORCBM) and the radiological search model (RSM). Unlike the 
+    binormal model, CBM, CORCBM and RSM predict "proper" ROC curves that do not cross the chance diagonal. RSM fitting additionally 
+    yields measures of search and lesion-classification performances. Search performance is the ability to find lesions while 
+    avoiding finding non-lesions. Lesion-classification performance is the ability to correctly classify found lesions from found 
+    non-lesions. For fully crossed study designs significance testing of reader-averaged FOM differences between modalities is 
+    implemented via both Dorfman-Berbaum-Metz and the Obuchowski-Rockette methods, including Hillis' extensions. Also implemented are 
+    single treatment analyses, which allow comparison of performance of a group of radiologists to a specified value, or comparison 
+    to CAD to a group of radiologists interpreting the same cases. Crossed-modality analysis is implemented wherein there are two crossed 
+    treatment factors and the desire is to determined performance in each treatment factor averaged over all levels of the other factor. 
+    Sample size estimation tools are provided for ROC and FROC studies; these use estimates of the relevant variances from a pilot study 
+    to predict required numbers of readers and cases in a pivotal study to achieve a desired power. Utility and data file manipulation 
+    functions allow data to be read in any of the currently used input formats, including Excel, and the results of the analysis can be 
+    viewed in text or Excel output files. The methods are illustrated with several included datasets from the author's international 
+    collaborations. This version corrects a few bugs noticed by users and extends the Excel file input format for 
+    greater flexibility in handling non-crossed datasets and the sample size routines have been rewritten for ease of use.</p>
+<table summary="Package RJafroc summary">
+<tr>
+<td>Version:</td>
+<td>1.3.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../bbmle/index.html">bbmle</a>, <a href="../binom/index.html">binom</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../mvtnorm/index.html">mvtnorm</a>, <a href="../numDeriv/index.html">numDeriv</a>, <a href="../openxlsx/index.html">openxlsx</a>, <a href="../Rcpp/index.html">Rcpp</a>, stats, <a href="../stringr/index.html">stringr</a>, tools, utils</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-03-06</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Dev Chakraborty [cre, aut, cph],
+  Peter Philips [aut],
+  Xuetong Zhai [aut],
+  Lucy D'Agostino McGowan [ctb],
+  Alejandro RodriguezRuiz [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Dev Chakraborty  &#x3c;&#x64;&#x70;&#x63;&#x31;&#x30;&#x73;&#x74;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://dpc10ster.github.io/RJafroc/">https://dpc10ster.github.io/RJafroc/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_RJafroc.html">RJafroc results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package RJafroc downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="RJafroc.pdf"> RJafroc.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/RJafroc_1.3.2.tar.gz"> RJafroc_1.3.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/RJafroc_1.3.2.zip">RJafroc_1.3.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/RJafroc_1.3.2.zip">RJafroc_1.3.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/RJafroc_1.3.2.zip">RJafroc_1.3.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/RJafroc_1.3.2.tgz">RJafroc_1.3.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/RJafroc_1.3.2.tgz">RJafroc_1.3.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/RJafroc"> RJafroc archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=RJafroc"><samp>https://CRAN.R-project.org/package=RJafroc</samp></a>
+to link to this page.</p>
+</body>
+</html>

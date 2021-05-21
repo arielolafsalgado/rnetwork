@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package csodata</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Download Data from the CSO 'StatBank' API [R package csodata version 1.0.2]" />
+<meta name="citation_author1" content="Eoin Horgan" />
+<meta name="citation_author2" content="Conor Crowley" />
+<meta name="citation_author3" content="Mervyn O'Luing" />
+<meta name="citation_publication_date" content="2020-08-14" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=csodata" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=csodata" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="csodata: Download Data from the CSO 'StatBank' API" />
+<meta name="og:description" content="Imports 'StatBank' data in JSON-stat format and (optionally) reshapes it into wide format. The Central Statistics Office (CSO) is the national statistical institute of Ireland and 'StatBank' is the CSOs online database of Official Statistics. This database contains current and historical data series compiled from CSO statistical releases and is accessed at &amp;lt;&lt;a href=&quot;http://www.cso.ie/px/pxeirestat/statire/SelectTable/Omrade0.asp?Planguage=0&quot;&gt;http://www.cso.ie/px/pxeirestat/statire/SelectTable/Omrade0.asp?Planguage=0&lt;/a&gt;&amp;gt;. A tutorial explaining and illustrating how to navigate to the 'StatBank' and how to search the 'StatBank' by keyword or theme can be found here: &amp;lt;&lt;a href=&quot;https://www.cso.ie/en/interactivezone/youtubevideos/statbanktutorial/&quot;&gt;https://www.cso.ie/en/interactivezone/youtubevideos/statbanktutorial/&lt;/a&gt;&amp;gt;. This tutorial also demonstrates how a user can create, edit and download a table from the 'StatBank'. The CSO 'StatBank' Application Programming Interface (API), which is accessed in this package, provides access to 'StatBank' data in JSON-stat format at &amp;lt;&lt;a href=&quot;https://statbank.cso.ie/webserviceclient/&quot;&gt;https://statbank.cso.ie/webserviceclient/&lt;/a&gt;&amp;gt;. This dissemination tool allows developers machine to machine access to CSO 'StatBank' data." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=csodata" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>csodata: Download Data from the CSO 'StatBank' API</h2>
+<p>Imports 'StatBank' data in JSON-stat format and (optionally) reshapes it into wide
+	format. The Central Statistics Office (CSO) is the national statistical institute of Ireland
+	and 'StatBank' is the CSOs online database of Official Statistics. This database contains current
+	and historical data series compiled from CSO statistical releases and is accessed at
+	&lt;<a href="http://www.cso.ie/px/pxeirestat/statire/SelectTable/Omrade0.asp?Planguage=0">http://www.cso.ie/px/pxeirestat/statire/SelectTable/Omrade0.asp?Planguage=0</a>&gt;.
+	A tutorial explaining and illustrating how to navigate to the 'StatBank' and how to search the
+	'StatBank' by keyword or theme can be found here:
+	&lt;<a href="https://www.cso.ie/en/interactivezone/youtubevideos/statbanktutorial/">https://www.cso.ie/en/interactivezone/youtubevideos/statbanktutorial/</a>&gt;. This tutorial also
+	demonstrates how a user can create, edit and download a table from the 'StatBank'. The CSO
+	'StatBank' Application Programming Interface (API), which is accessed in this package, provides
+	access to 'StatBank' data in JSON-stat format at &lt;<a href="https://statbank.cso.ie/webserviceclient/">https://statbank.cso.ie/webserviceclient/</a>&gt;.
+	This dissemination tool allows developers machine to machine access to CSO 'StatBank' data.</p>
+<table summary="Package csodata summary">
+<tr>
+<td>Version:</td>
+<td>1.0.2</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../dplyr/index.html">dplyr</a>, <a href="../httr/index.html">httr</a>, <a href="../jsonlite/index.html">jsonlite</a>, <a href="../reshape2/index.html">reshape2</a>, <a href="../rjstat/index.html">rjstat</a>, <a href="../R.cache/index.html">R.cache</a>, <a href="../sf/index.html">sf</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../tmap/index.html">tmap</a>, <a href="../viridisLite/index.html">viridisLite</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-08-14</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Eoin Horgan <a href="https://orcid.org/0000-0002-3446-6154"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Conor Crowley [aut, cre],
+  Mervyn O'Luing [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Conor Crowley  &#x3c;&#x63;&#x6f;&#x6e;&#x6f;&#x72;&#x2e;&#x63;&#x72;&#x6f;&#x77;&#x6c;&#x65;&#x79;&#x20;&#x61;&#x74;&#x20;&#x63;&#x73;&#x6f;&#x2e;&#x69;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_csodata.html">csodata results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package csodata downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="csodata.pdf"> csodata.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/quick_start_guide.html">csodata quick start guide</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/csodata_1.0.2.tar.gz"> csodata_1.0.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/csodata_1.0.2.zip">csodata_1.0.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/csodata_1.0.2.zip">csodata_1.0.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/csodata_1.0.2.zip">csodata_1.0.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/csodata_1.0.2.tgz">csodata_1.0.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/csodata_1.0.2.tgz">csodata_1.0.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/csodata"> csodata archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=csodata"><samp>https://CRAN.R-project.org/package=csodata</samp></a>
+to link to this page.</p>
+</body>
+</html>

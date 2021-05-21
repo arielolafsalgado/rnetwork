@@ -1,0 +1,25 @@
+Package: marked
+Version: 1.1.9
+Date: 2015-08-19
+Title: Mark-Recapture Analysis for Survival and Abundance Estimation
+Author: Jeff Laake <jeff.laake@noaa.gov>, Devin Johnson
+    <devin.johnson@noaa.gov>, Paul Conn <paul.conn@noaa.gov>
+Maintainer: Jeff Laake <Jeff.Laake@noaa.gov>
+Description: Functions for fitting various models to capture-recapture data
+    including fixed and mixed-effects Cormack-Jolly-Seber(CJS) for survival
+    estimation and POPAN structured Jolly-Seber models for abundance
+    estimation. Includes a CJS models that concurrently estimates and corrects
+    for tag loss. Hidden Markov model (HMM) implementations of CJS and
+    multistate models with and without state uncertainty.
+Depends: R (>= 2.15.0), lme4, methods, parallel
+Imports: graphics, stats, utils, R2admb, truncnorm, coda, ggplot2,
+        Matrix, numDeriv, expm, Rcpp (>= 0.9.13), optimx (>= 2013.8.6)
+LinkingTo: Rcpp
+SystemRequirements: ADMB version 11 (http://admb-project.org/) for
+        use.admb=TRUE; see readme.txt
+LazyLoad: yes
+License: GPL (>= 2)
+NeedsCompilation: yes
+Packaged: 2015-08-19 22:53:51 UTC; JLaake
+Repository: CRAN
+Date/Publication: 2015-08-20 01:23:28

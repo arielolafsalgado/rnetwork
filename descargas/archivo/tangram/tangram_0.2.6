@@ -1,0 +1,38 @@
+Package: tangram
+Title: The Grammar of Tables
+Version: 0.2.6
+Authors@R: c(person("Shawn", "Garbett", email = "Shawn.Garbett@Vanderbilt.edu", role = c("aut", "cre")),
+             person("Thomas", "Stewart", email = "Thomas.Stewart@Vanderbilt.edu", role=c("ctb")),
+             person("Jennifer", "Thompson", email = "jennifer.l.thompson@vanderbilt.edu", role= c("ctb"))
+             )
+Description: Provides an extensible formula system to quickly and easily create
+    production quality tables. The steps of the process are formula parser,
+    statistical content generation from data, to rendering. Each step of the process
+    is separate and user definable thus creating a set of building blocks for
+    highly extensible table generation. A user is not limited by any of the 
+    choices of the package creator other than the formula grammar. For example,
+    one could chose to add a different S3 rendering function and output a format
+    not provided in the default package. Or possibly one would rather have Gini
+    coefficients for their statistical content. Routines to achieve New England
+    Journal of Medicine style, Lancet style and Hmisc::summaryM() statistics are
+    provided. The package contains rendering for HTML5, Rmarkdown and an indexing
+    format for use in tracing and tracking are provided.
+Author: Shawn Garbett [aut, cre],
+  Thomas Stewart [ctb],
+  Jennifer Thompson [ctb]
+Maintainer: Shawn Garbett <Shawn.Garbett@Vanderbilt.edu>
+Depends: R (>= 3.2.3), R6, stringr, base64enc, digest, magrittr
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Suggests: testthat, rms, knitr, rmarkdown, Hmisc
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+Collate: 'S3-Cell.R' 'hmisc-lm.fit.qr.bare.R' 'hmisc-impute.R'
+        'hmisc-biVar.R' 'hmisc-cut2.R' 'hmisc-in.operator.R' 'typing.R'
+        'hmisc.R' 'html5.R' 'index.R' 'parser.R' 'main.R' 'rmd.R'
+        'table_builder.R' 'rms.R' 'summary.R'
+NeedsCompilation: no
+Packaged: 2017-05-03 15:40:26 UTC; garbetsp
+Repository: CRAN
+Date/Publication: 2017-05-03 16:20:59 UTC

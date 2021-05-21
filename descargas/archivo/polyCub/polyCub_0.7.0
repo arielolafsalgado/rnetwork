@@ -1,0 +1,47 @@
+Package: polyCub
+Title: Cubature over Polygonal Domains
+Version: 0.7.0
+Date: 2018-10-11
+Authors@R: c(
+    person("Sebastian", "Meyer",
+           email = "seb.meyer@fau.de",
+           role = c("aut","cre","trl"),
+           comment = c(ORCID = "0000-0002-1791-9449")),
+    person("Leonhard", "Held",
+           email = "Leonhard.Held@uzh.ch",
+           role = "ths"),
+    person("Michael", "Hoehle",
+           email = "hoehle@math.su.se",
+           role = "ths")
+    )
+Description: Numerical integration of continuously differentiable
+    functions f(x,y) over simple closed polygonal domains.
+    The following cubature methods are implemented:
+    product Gauss cubature (Sommariva and Vianello, 2007,
+    <doi:10.1007/s10543-007-0131-2>),
+    the simple two-dimensional midpoint rule
+    (wrapping 'spatstat' functions),
+    adaptive cubature for radially symmetric functions via line
+    integrate() along the polygon boundary (Meyer and Held, 2014,
+    <doi:10.1214/14-AOAS743>, Supplement B),
+    and integration of the bivariate Gaussian density based on a
+    triangulation of the polygonal domain.
+    For simple integration along the axes, the packages 'cubature'
+    and 'R2Cuba' are more appropriate.
+License: GPL-2
+URL: https://github.com/bastistician/polyCub
+BugReports: https://github.com/bastistician/polyCub/issues
+Depends: R (>= 2.15.0), methods
+Imports: grDevices, graphics, stats, sp (>= 1.0-11)
+Suggests: spatstat, lattice, testthat, mvtnorm, statmod, rgeos, gpclib,
+        cubature
+RoxygenNote: 6.1.0
+NeedsCompilation: yes
+Packaged: 2018-10-11 15:14:49 UTC; smeyer
+Author: Sebastian Meyer [aut, cre, trl]
+    (<https://orcid.org/0000-0002-1791-9449>),
+  Leonhard Held [ths],
+  Michael Hoehle [ths]
+Maintainer: Sebastian Meyer <seb.meyer@fau.de>
+Repository: CRAN
+Date/Publication: 2018-10-11 16:00:03 UTC

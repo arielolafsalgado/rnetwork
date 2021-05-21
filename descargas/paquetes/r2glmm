@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package r2glmm</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Computes R Squared for Mixed (Multilevel) Models [R package r2glmm version 0.1.2]" />
+<meta name="citation_author" content="Byron Jaeger" />
+<meta name="citation_publication_date" content="2017-08-05" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=r2glmm" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=r2glmm" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="r2glmm: Computes R Squared for Mixed (Multilevel) Models" />
+<meta name="og:description" content="The model R squared and semi-partial R squared for the linear and generalized linear mixed model (LMM and GLMM) are computed with confidence limits. The R squared measure from Edwards et.al (2008) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fsim.3429&quot;&gt;doi:10.1002/sim.3429&lt;/a&gt;&amp;gt; is extended to the GLMM using penalized quasi-likelihood (PQL) estimation (see Jaeger et al. 2016 &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F02664763.2016.1193725&quot;&gt;doi:10.1080/02664763.2016.1193725&lt;/a&gt;&amp;gt;). Three methods of computation are provided and described as follows. First, The Kenward-Roger approach. Due to some inconsistency between the 'pbkrtest' package and the 'glmmPQL' function, the Kenward-Roger approach in the 'r2glmm' package is limited to the LMM. Second, The method introduced by Nakagawa and Schielzeth (2013) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fj.2041-210x.2012.00261.x&quot;&gt;doi:10.1111/j.2041-210x.2012.00261.x&lt;/a&gt;&amp;gt; and later extended by Johnson (2014) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2F2041-210X.12225&quot;&gt;doi:10.1111/2041-210X.12225&lt;/a&gt;&amp;gt;. The 'r2glmm' package only computes marginal R squared for the LMM and does not generalize the statistic to the GLMM; however, confidence limits and semi-partial R squared for fixed effects are useful additions. Lastly, an approach using standardized generalized variance (SGV) can be used for covariance model selection. Package installation instructions can be found in the readme file." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=r2glmm" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>r2glmm: Computes R Squared for Mixed (Multilevel) Models</h2>
+<p>The model R squared and semi-partial R squared for the linear and
+    generalized linear mixed model (LMM and GLMM) are computed with confidence
+    limits. The R squared measure from Edwards et.al (2008) &lt;<a href="https://doi.org/10.1002%2Fsim.3429">doi:10.1002/sim.3429</a>&gt;
+    is extended to the GLMM using penalized quasi-likelihood (PQL) estimation
+    (see Jaeger et al. 2016 &lt;<a href="https://doi.org/10.1080%2F02664763.2016.1193725">doi:10.1080/02664763.2016.1193725</a>&gt;). Three methods
+    of computation are provided and described as follows. First, The
+    Kenward-Roger approach. Due to some inconsistency between the 'pbkrtest'
+    package and the 'glmmPQL' function, the Kenward-Roger approach in the
+    'r2glmm' package is limited to the LMM. Second, The method introduced
+    by Nakagawa and Schielzeth (2013) &lt;<a href="https://doi.org/10.1111%2Fj.2041-210x.2012.00261.x">doi:10.1111/j.2041-210x.2012.00261.x</a>&gt;
+    and later extended by Johnson (2014) &lt;<a href="https://doi.org/10.1111%2F2041-210X.12225">doi:10.1111/2041-210X.12225</a>&gt;.
+    The 'r2glmm' package only computes marginal R squared for the LMM and does
+    not generalize the statistic to the GLMM; however, confidence limits and
+    semi-partial R squared for fixed effects are useful additions. Lastly, an
+    approach using standardized generalized variance (SGV) can be used for
+    covariance model selection. Package installation instructions can be found
+    in the readme file.</p>
+<table summary="Package r2glmm summary">
+<tr>
+<td>Version:</td>
+<td>0.1.2</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../mgcv/index.html">mgcv</a>, <a href="../lmerTest/index.html">lmerTest</a>, <a href="../Matrix/index.html">Matrix</a>, <a href="../pbkrtest/index.html">pbkrtest</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../afex/index.html">afex</a>, stats, <a href="../MASS/index.html">MASS</a>, <a href="../gridExtra/index.html">gridExtra</a>, grid, <a href="../data.table/index.html">data.table</a>, <a href="../dplyr/index.html">dplyr</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../lme4/index.html">lme4</a>, <a href="../nlme/index.html">nlme</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2017-08-05</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Byron Jaeger [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Byron Jaeger  &#x3c;&#x62;&#x79;&#x72;&#x6f;&#x6e;&#x2e;&#x6a;&#x61;&#x65;&#x67;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/bcjaeger/r2glmm/issues">https://github.com/bcjaeger/r2glmm/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/bcjaeger/r2glmm">https://github.com/bcjaeger/r2glmm</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="README.html">README</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_r2glmm.html">r2glmm results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package r2glmm downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="r2glmm.pdf"> r2glmm.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/r2glmm_0.1.2.tar.gz"> r2glmm_0.1.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/r2glmm_0.1.2.zip">r2glmm_0.1.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/r2glmm_0.1.2.zip">r2glmm_0.1.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/r2glmm_0.1.2.zip">r2glmm_0.1.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/r2glmm_0.1.2.tgz">r2glmm_0.1.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/r2glmm_0.1.2.tgz">r2glmm_0.1.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/r2glmm"> r2glmm archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package r2glmm reverse dependencies">
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="http://www.bioconductor.org/packages/release/bioc/html/variancePartition.html"><span class="BioC">variancePartition</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=r2glmm"><samp>https://CRAN.R-project.org/package=r2glmm</samp></a>
+to link to this page.</p>
+</body>
+</html>

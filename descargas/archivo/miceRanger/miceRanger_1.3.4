@@ -1,0 +1,34 @@
+Package: miceRanger
+Title: Multiple Imputation by Chained Equations with Random Forests
+Version: 1.3.4
+Authors@R: 
+    person(given = "Sam",
+           family = "Wilson",
+           role = c("aut","cre"),
+           email = "samwilson303@gmail.com")
+Maintainer: Sam Wilson <samwilson303@gmail.com>
+Description: Multiple Imputation has been shown to 
+  be a flexible method to impute missing values by 
+  Van Buuren (2007) <doi:10.1177/0962280206074463>. 
+  Expanding on this, random forests have been shown 
+  to be an accurate model by Stekhoven and Buhlmann 
+  <arXiv:1105.0828> to impute missing values in datasets. 
+  They have the added benefits of returning out of bag 
+  error and variable importance estimates, as well as 
+  being simple to run in parallel.
+URL: https://github.com/FarrellDay/miceRanger
+BugReports: https://github.com/FarrellDay/miceRanger/issues
+Encoding: UTF-8
+LazyData: true
+License: MIT + file LICENSE
+Depends: R (>= 3.5.0)
+Imports: ranger, data.table, stats, FNN, ggplot2, crayon, corrplot,
+        ggpubr, DescTools, foreach
+Suggests: knitr, rmarkdown, doParallel, testthat (>= 2.1.0)
+RoxygenNote: 7.0.2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-02-22 01:46:57 UTC; SamWilson
+Author: Sam Wilson [aut, cre]
+Repository: CRAN
+Date/Publication: 2020-02-22 05:50:02 UTC

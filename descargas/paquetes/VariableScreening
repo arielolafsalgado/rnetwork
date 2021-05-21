@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package VariableScreening</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="High-Dimensional Screening for Semiparametric Longitudinal Regression [R package VariableScreening version 0.2.0]" />
+<meta name="citation_author1" content="Runze Li" />
+<meta name="citation_author2" content="Liying Huang" />
+<meta name="citation_author3" content="John Dziak" />
+<meta name="citation_publication_date" content="2018-08-09" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=VariableScreening" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=VariableScreening" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="VariableScreening: High-Dimensional Screening for Semiparametric Longitudinal Regression" />
+<meta name="og:description" content="Implements variable screening techniques for ultra-high dimensional regression settings. Techniques for independent (iid) data, varying-coefficient models, and longitudinal data are implemented. The package currently contains three screen functions: screenIID(), screenLD() and screenVCM(), and six methods for simulating dataset: simulateDCSIS(), simulateLD, simulateMVSIS(), simulateMVSISNY(), simulateSIRS() and simulateVCM(). The package is based on the work of Li-Ping ZHU, Lexin LI, Runze LI, and Li-Xing ZHU (2011) &amp;lt;&lt;a href=&quot;https://doi.org/10.1198%2Fjasa.2011.tm10563&quot;&gt;doi:10.1198/jasa.2011.tm10563&lt;/a&gt;&amp;gt;, Runze LI, Wei ZHONG, &amp;amp; Liping ZHU (2012) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F01621459.2012.695654&quot;&gt;doi:10.1080/01621459.2012.695654&lt;/a&gt;&amp;gt;, Jingyuan LIU, Runze LI, &amp;amp; Rongling WU (2014) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F01621459.2013.850086&quot;&gt;doi:10.1080/01621459.2013.850086&lt;/a&gt;&amp;gt; Hengjian CUI, Runze LI, &amp;amp; Wei ZHONG (2015) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F01621459.2014.920256&quot;&gt;doi:10.1080/01621459.2014.920256&lt;/a&gt;&amp;gt;, and Wanghuan CHU, Runze LI and Matthew REIMHERR (2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.1214%2F16-AOAS912&quot;&gt;doi:10.1214/16-AOAS912&lt;/a&gt;&amp;gt;. Special thanks are due to Ling Zhang for providing detailed testing and proposing a method for speed improvement on the simulation of data with AR-1 structure." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=VariableScreening" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>VariableScreening: High-Dimensional Screening for Semiparametric Longitudinal
+Regression</h2>
+<p>Implements variable screening techniques for ultra-high
+    dimensional regression settings.  Techniques for independent (iid) data,
+    varying-coefficient models, and longitudinal data are implemented. The package
+     currently contains three screen functions: screenIID(), screenLD() and screenVCM(),
+     and six methods for simulating dataset: simulateDCSIS(), simulateLD, simulateMVSIS(),
+     simulateMVSISNY(), simulateSIRS() and simulateVCM(). The package is based on the work of
+    Li-Ping ZHU, Lexin LI, Runze LI, and Li-Xing ZHU (2011) &lt;<a href="https://doi.org/10.1198%2Fjasa.2011.tm10563">doi:10.1198/jasa.2011.tm10563</a>&gt;,
+    Runze LI, Wei ZHONG, &amp; Liping ZHU (2012) &lt;<a href="https://doi.org/10.1080%2F01621459.2012.695654">doi:10.1080/01621459.2012.695654</a>&gt;,
+    Jingyuan LIU, Runze LI, &amp; Rongling WU (2014) &lt;<a href="https://doi.org/10.1080%2F01621459.2013.850086">doi:10.1080/01621459.2013.850086</a>&gt;
+    Hengjian CUI, Runze LI, &amp; Wei ZHONG (2015) &lt;<a href="https://doi.org/10.1080%2F01621459.2014.920256">doi:10.1080/01621459.2014.920256</a>&gt;, and
+    Wanghuan CHU, Runze LI and Matthew REIMHERR (2016) &lt;<a href="https://doi.org/10.1214%2F16-AOAS912">doi:10.1214/16-AOAS912</a>&gt;.
+    Special thanks are due to Ling Zhang for providing detailed testing and proposing
+    a method for speed improvement on the simulation of data with AR-1 structure.</p>
+<table summary="Package VariableScreening summary">
+<tr>
+<td>Version:</td>
+<td>0.2.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.2.1)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../gee/index.html">gee</a>, <a href="../expm/index.html">expm</a>, splines, <a href="../MASS/index.html">MASS</a>, <a href="../energy/index.html">energy</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2018-08-09</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Runze Li [aut],
+  Liying Huang [aut, cre],
+  John Dziak [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Liying Huang  &#x3c;&#x6c;&#x78;&#x68;&#x33;&#x37;&#x20;&#x61;&#x74;&#x20;&#x50;&#x53;&#x55;&#x2e;&#x45;&#x44;&#x55;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>Copyright:</td>
+<td>The Pennsylvania State University</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_VariableScreening.html">VariableScreening results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package VariableScreening downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="VariableScreening.pdf"> VariableScreening.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/VariableScreening_0.2.0.tar.gz"> VariableScreening_0.2.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/VariableScreening_0.2.0.zip">VariableScreening_0.2.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/VariableScreening_0.2.0.zip">VariableScreening_0.2.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/VariableScreening_0.2.0.zip">VariableScreening_0.2.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/VariableScreening_0.2.0.tgz">VariableScreening_0.2.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/VariableScreening_0.2.0.tgz">VariableScreening_0.2.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/VariableScreening"> VariableScreening archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=VariableScreening"><samp>https://CRAN.R-project.org/package=VariableScreening</samp></a>
+to link to this page.</p>
+</body>
+</html>

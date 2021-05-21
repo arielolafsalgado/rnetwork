@@ -1,0 +1,38 @@
+Package: dtpcrm
+Type: Package
+Title: Dose Transition Pathways for Continual Reassessment Method
+Version: 0.1.0
+Authors@R: c(person("Christina", "Yap", email = "yapchristina17@gmail.com",
+                  role = c("aut", "cre")),
+             person("Daniel", "Slade", email = "D.Slade@bham.ac.uk",
+                  role = c("aut")), 
+             person("Kristian", "Brock", email = "k.brock@bham.ac.uk",
+                  role = c("aut")),
+             person("Yi", "Pan", email = "ypan1988@gmail.com",
+                  role = c("aut")))
+Maintainer: Christina Yap <yapchristina17@gmail.com>
+Description: Provides the dose transition pathways (DTP) to project in advance
+    the doses recommended by a model-based design for subsequent patients (stay,
+    escalate, deescalate or stop early) using all the accumulated toxicity
+    information; See Yap et al (2017) <doi: 10.1158/1078-0432.CCR-17-0582>. DTP
+    can be used as a design and an operational tool and can be displayed as a
+    table or flow diagram. The 'dtpcrm' package also provides the modified
+    continual reassessment method (CRM) and time-to-event CRM (TITE-CRM) with
+    added practical considerations to allow stopping early when there is
+    sufficient evidence that the lowest dose is too toxic and/or there is a
+    sufficient number of patients dosed at the maximum tolerated dose.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Imports: diagram, dfcrm
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-04-09 14:53:44 UTC; yipan
+Author: Christina Yap [aut, cre],
+  Daniel Slade [aut],
+  Kristian Brock [aut],
+  Yi Pan [aut]
+Repository: CRAN
+Date/Publication: 2019-04-10 17:56:04 UTC

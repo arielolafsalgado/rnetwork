@@ -1,0 +1,17 @@
+Package: expands
+Type: Package
+Title: ExPANdS
+Version: 1.5
+Date: 2014-09-27
+Author: Noemi Andor
+Maintainer: Noemi Andor <noemi.andor@gmail.com>
+Description: Expanding Ploidy and Allele Frequency on Nested Subpopulations (ExPANdS) characterizes coexisting subpopulations in a tumor using copy number and allele frequencies derived from exome- or whole genome sequencing input data (http://www.ncbi.nlm.nih.gov/pubmed/24177718). The model amplifies the statistical power to detect coexisting genotypes, by exploiting run-specific tradeoffs between depth of coverage and breadth of coverage. ExPANdS predicts the number of clonal expansions, the size of the resulting subpopulations in the tumor bulk, the mutations specific to each subpopulation and tumor purity. The main function runExPANdS provides the complete functionality needed to predict coexisting subpopulations from single nucleotide variations (SNVs) and associated copy numbers.  The robustness of the subpopulation predictions by ExPANdS increases with the number of mutations provided. It is recommended that at least 200 mutations are used as an input to obtain stable results. Updates include: (1) Additional optional parameter "min_CellFreq" provided for function runExPANdS, specifying the minimum cellular prevalence of mutations to be included for subpopulation predictions.(2) Filtered loci with high-level amplifications, according to max_PM setting. This reduces unnecessary processing time, as assignment of mutations within amplified regions to subpopulations is not successful. (3) Additional function "buildMultiSamplePhylo" available, which integrates the subpopulations predicted in multiple, geographically distinct tumor samples into one common phylogeny.
+License: GPL-2
+Depends: R (>= 2.10)
+Imports: rJava (>= 0.5-0), flexmix (>= 2.3), matlab (>= 0.8.9), mclust
+        (>= 4.2), moments (>= 0.13), ape (>= 3.0), permute (>= 0.8)
+SystemRequirements: Java (>= 1.5)
+Packaged: 2014-09-28 16:14:12 UTC; nandor
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2014-09-28 20:43:46

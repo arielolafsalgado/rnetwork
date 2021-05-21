@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package loo</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Efficient Leave-One-Out Cross-Validation and WAIC for Bayesian Models [R package loo version 2.3.1]" />
+<meta name="citation_author1" content="Aki Vehtari" />
+<meta name="citation_author2" content="Jonah Gabry" />
+<meta name="citation_author3" content="Mans Magnusson" />
+<meta name="citation_author4" content="Yuling Yao" />
+<meta name="citation_author5" content="Paul-Christian Bürkner" />
+<meta name="citation_author6" content="Topi Paananen" />
+<meta name="citation_author7" content="Andrew Gelman" />
+<meta name="citation_publication_date" content="2020-07-14" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=loo" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=loo" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="loo: Efficient Leave-One-Out Cross-Validation and WAIC for Bayesian Models" />
+<meta name="og:description" content="Efficient approximate leave-one-out cross-validation (LOO) for Bayesian models fit using Markov chain Monte Carlo, as described in Vehtari, Gelman, and Gabry (2017) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs11222-016-9696-4&quot;&gt;doi:10.1007/s11222-016-9696-4&lt;/a&gt;&amp;gt;. The approximation uses Pareto smoothed importance sampling (PSIS), a new procedure for regularizing importance weights. As a byproduct of the calculations, we also obtain approximate standard errors for estimated predictive errors and for the comparison of predictive errors between models. The package also provides methods for using stacking and other model weighting techniques to average Bayesian predictive distributions." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=loo" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>loo: Efficient Leave-One-Out Cross-Validation and WAIC for Bayesian
+Models</h2>
+<p>Efficient approximate leave-one-out cross-validation (LOO)
+    for Bayesian models fit using Markov chain Monte Carlo, as 
+    described in Vehtari, Gelman, and Gabry (2017) 
+    &lt;<a href="https://doi.org/10.1007%2Fs11222-016-9696-4">doi:10.1007/s11222-016-9696-4</a>&gt;. 
+    The approximation uses Pareto smoothed importance sampling (PSIS), 
+    a new procedure for regularizing importance weights. 
+    As a byproduct of the calculations, we also obtain approximate 
+    standard errors for estimated predictive errors and for the comparison 
+    of predictive errors between models. The package also provides methods 
+    for using stacking and other model weighting techniques to average 
+    Bayesian predictive distributions.</p>
+<table summary="Package loo summary">
+<tr>
+<td>Version:</td>
+<td>2.3.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.1.2)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../checkmate/index.html">checkmate</a>, <a href="../matrixStats/index.html">matrixStats</a> (&ge; 0.52), parallel, stats</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../bayesplot/index.html">bayesplot</a> (&ge; 1.7.0), <a href="../brms/index.html">brms</a> (&ge; 2.10.0), <a href="../ggplot2/index.html">ggplot2</a>, graphics, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../rstan/index.html">rstan</a>, <a href="../rstanarm/index.html">rstanarm</a> (&ge; 2.19.0), <a href="../rstantools/index.html">rstantools</a>, <a href="../spdep/index.html">spdep</a>, <a href="../testthat/index.html">testthat</a> (&ge; 2.1.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-07-14</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Aki Vehtari [aut],
+  Jonah Gabry [cre, aut],
+  Mans Magnusson [aut],
+  Yuling Yao [aut],
+  Paul-Christian Bürkner [aut],
+  Topi Paananen [aut],
+  Andrew Gelman [aut],
+  Ben Goodrich [ctb],
+  Juho Piironen [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Jonah Gabry  &#x3c;&#x6a;&#x73;&#x67;&#x32;&#x32;&#x30;&#x31;&#x20;&#x61;&#x74;&#x20;&#x63;&#x6f;&#x6c;&#x75;&#x6d;&#x62;&#x69;&#x61;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/stan-dev/loo/issues">https://github.com/stan-dev/loo/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL (&ge; 3)</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://mc-stan.org/loo">https://mc-stan.org/loo</a>, <a href="https://discourse.mc-stan.org">https://discourse.mc-stan.org</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>pandoc (&gt;= 1.12.3), pandoc-citeproc</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">loo citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_loo.html">loo results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package loo downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="loo.pdf"> loo.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/loo2-example.html">Using the loo package</a><br/>
+<a href="vignettes/loo2-large-data.html">Using Leave-one-out cross-validation for large data</a><br/>
+<a href="vignettes/loo2-lfo.html">Approximate leave-future-out cross-validation for Bayesian time series models</a><br/>
+<a href="vignettes/loo2-moment-matching.html">Avoiding model refits in leave-one-out cross-validation with moment matching</a><br/>
+<a href="vignettes/loo2-non-factorized.html">Leave-one-out cross-validation for non-factorized models</a><br/>
+<a href="vignettes/loo2-weights.html">Bayesian Stacking and Pseudo-BMA weights</a><br/>
+<a href="vignettes/loo2-with-rstan.html">Writing Stan programs for use with the loo package</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/loo_2.3.1.tar.gz"> loo_2.3.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/loo_2.3.1.zip">loo_2.3.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/loo_2.3.1.zip">loo_2.3.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/loo_2.3.1.zip">loo_2.3.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/loo_2.3.1.tgz">loo_2.3.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/loo_2.3.1.tgz">loo_2.3.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/loo"> loo archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package loo reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../evidence/index.html">evidence</a>, <a href="../spsurv/index.html">spsurv</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../BAMBI/index.html">BAMBI</a>, <a href="../bayesbr/index.html">bayesbr</a>, <a href="../bayesdfa/index.html">bayesdfa</a>, <a href="../beanz/index.html">beanz</a>, <a href="../blavaan/index.html">blavaan</a>, <a href="../bmgarch/index.html">bmgarch</a>, <a href="../brms/index.html">brms</a>, <a href="../glmmfields/index.html">glmmfields</a>, <a href="../hBayesDM/index.html">hBayesDM</a>, <a href="../hsstan/index.html">hsstan</a>, <a href="../mcmcsae/index.html">mcmcsae</a>, <a href="../mcp/index.html">mcp</a>, <a href="../missingHE/index.html">missingHE</a>, <a href="../MixSIAR/index.html">MixSIAR</a>, <a href="../pcFactorStan/index.html">pcFactorStan</a>, <a href="../projpred/index.html">projpred</a>, <a href="../publipha/index.html">publipha</a>, <a href="../rmsb/index.html">rmsb</a>, <a href="../rstan/index.html">rstan</a>, <a href="../rstanarm/index.html">rstanarm</a>, <a href="../rstap/index.html">rstap</a>, <a href="../rtmpt/index.html">rtmpt</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../bayesplot/index.html">bayesplot</a>, <a href="../bayesvl/index.html">bayesvl</a>, <a href="../bmscstan/index.html">bmscstan</a>, <a href="../CopulaDTA/index.html">CopulaDTA</a>, <a href="../multinma/index.html">multinma</a>, <a href="../performance/index.html">performance</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=loo"><samp>https://CRAN.R-project.org/package=loo</samp></a>
+to link to this page.</p>
+</body>
+</html>

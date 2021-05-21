@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package oddstream</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Outlier Detection in Data Streams [R package oddstream version 0.5.0]" />
+<meta name="citation_author" content="Priyanga Dilini Talagala" />
+<meta name="citation_publication_date" content="2019-12-16" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=oddstream" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=oddstream" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="oddstream: Outlier Detection in Data Streams" />
+<meta name="og:description" content="We proposes a framework that provides real time support for early detection of anomalous series within a large collection of streaming time series data. By definition, anomalies are rare in comparison to a system's typical behaviour. We define an anomaly as an observation that is very unlikely given the forecast distribution. The algorithm first forecasts a boundary for the system's typical behaviour using a representative sample of the typical behaviour of the system. An approach based on extreme value theory is used for this boundary prediction process. Then a sliding window is used to test for anomalous series within the newly arrived collection of series. Feature based representation of time series is used as the input to the model. To cope with concept drift, the forecast boundary for the system's typical behaviour is updated periodically. More details regarding the algorithm can be found in Talagala, P. D., Hyndman, R. J., Smith-Miles, K., et al. (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F10618600.2019.1617160&quot;&gt;doi:10.1080/10618600.2019.1617160&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=oddstream" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>oddstream: Outlier Detection in Data Streams</h2>
+<p>We proposes a framework that provides real time support for early detection of
+    anomalous series within a large collection of streaming time series data. By definition, anomalies
+    are rare in comparison to a system's typical behaviour. We define an anomaly as an observation that
+    is very unlikely given the forecast distribution. The algorithm first forecasts a boundary for the
+    system's typical behaviour using a representative sample of the typical behaviour of the system. An
+    approach based on extreme value theory is used for this boundary prediction process. Then a sliding
+    window is used to test for anomalous series within the newly arrived collection of series. Feature
+    based representation of time series is used as the input to the model. To cope with concept drift,
+    the forecast boundary for the system's typical behaviour is updated periodically.  More details
+    regarding the algorithm can be found in Talagala, P. D., Hyndman, R. J., Smith-Miles, K., et al.
+    (2019) &lt;<a href="https://doi.org/10.1080%2F10618600.2019.1617160">doi:10.1080/10618600.2019.1617160</a>&gt;.</p>
+<table summary="Package oddstream summary">
+<tr>
+<td>Version:</td>
+<td>0.5.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.4.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../pcaPP/index.html">pcaPP</a>, stats, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../ks/index.html">ks</a>, <a href="../MASS/index.html">MASS</a>, <a href="../RcppRoll/index.html">RcppRoll</a>, <a href="../mgcv/index.html">mgcv</a>, <a href="../moments/index.html">moments</a> , <a href="../RColorBrewer/index.html">RColorBrewer</a>, <a href="../mvtsplot/index.html">mvtsplot</a>, <a href="../tibble/index.html">tibble</a>, <a href="../reshape/index.html">reshape</a>, <a href="../dplyr/index.html">dplyr</a>, graphics, <a href="../tidyr/index.html">tidyr</a>, <a href="../kernlab/index.html">kernlab</a>, <a href="../magrittr/index.html">magrittr</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../tidyverse/index.html">tidyverse</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-12-16</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Priyanga Dilini Talagala [aut, cre],
+  Rob J. Hyndman [ths],
+  Kate Smith-Miles [ths]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Priyanga Dilini Talagala  &#x3c;&#x70;&#x72;&#x69;&#x74;&#x61;&#x6c;&#x61;&#x67;&#x61;&#x6c;&#x61;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/pridiltal/oddstream/issues">https://github.com/pridiltal/oddstream/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_oddstream.html">oddstream results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package oddstream downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="oddstream.pdf"> oddstream.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/oddstream_0.5.0.tar.gz"> oddstream_0.5.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/oddstream_0.5.0.zip">oddstream_0.5.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/oddstream_0.5.0.zip">oddstream_0.5.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/oddstream_0.5.0.zip">oddstream_0.5.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/oddstream_0.5.0.tgz">oddstream_0.5.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/oddstream_0.5.0.tgz">oddstream_0.5.0.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=oddstream"><samp>https://CRAN.R-project.org/package=oddstream</samp></a>
+to link to this page.</p>
+</body>
+</html>

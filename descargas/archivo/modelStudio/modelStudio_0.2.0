@@ -1,0 +1,36 @@
+Package: modelStudio
+Title: Interactive Studio with Explanations for ML Predictive Models
+Version: 0.2.0
+Authors@R: 
+    c(person("Hubert", "Baniecki", role = c("aut", "cre"),
+             email = "hbaniecki@gmail.com",
+             comment = c(ORCID = "0000-0001-6661-5364")),
+      person("Przemyslaw", "Biecek", role = c("aut"), 
+             comment = c(ORCID = "0000-0001-8423-1823")))
+Description: Automate explanation of machine learning predictive models.
+  This package generates advanced interactive and animated model explanations in the form
+  of a serverless HTML site. It combines 'R' with 'D3.js' to produce plots and descriptions
+  for various local and global explanations. Tools for model exploration unite with
+  tools for EDA (Exploratory Data Analysis) to give a broad overview of the model behaviour.
+  'modelStudio' is a fast and condensed way to get all the answers without much effort. 
+  Break down your model and look into its ingredients with only a few lines of code.
+Depends: R (>= 3.5)
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+Imports: iBreakDown (>= 0.9.9), ingredients (>= 0.5), r2d3, jsonlite
+Suggests: DALEX (>= 0.4.9), parallelMap, randomForest, knitr,
+        rmarkdown, testthat, spelling
+VignetteBuilder: knitr
+URL: https://ModelOriented.github.io/modelStudio/,
+        https://github.com/ModelOriented/modelStudio
+BugReports: https://github.com/ModelOriented/modelStudio/issues
+Language: en-US
+NeedsCompilation: no
+Packaged: 2020-01-10 14:48:56 UTC; Hubert
+Author: Hubert Baniecki [aut, cre] (<https://orcid.org/0000-0001-6661-5364>),
+  Przemyslaw Biecek [aut] (<https://orcid.org/0000-0001-8423-1823>)
+Maintainer: Hubert Baniecki <hbaniecki@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-01-13 13:40:02 UTC

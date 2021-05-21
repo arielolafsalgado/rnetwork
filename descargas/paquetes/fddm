@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package fddm</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Fast Implementation of the Diffusion Decision Model [R package fddm version 0.2-1]" />
+<meta name="citation_author" content="Kendal B. Foster" />
+<meta name="citation_publication_date" content="2020-10-13" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=fddm" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=fddm" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="fddm: Fast Implementation of the Diffusion Decision Model" />
+<meta name="og:description" content="Provides the probability density function (PDF) of the diffusion decision model (DDM; e.g., Ratcliff &amp;amp; McKoon, 2008, &amp;lt;&lt;a href=&quot;https://doi.org/10.1162%2Fneco.2008.12-06-420&quot;&gt;doi:10.1162/neco.2008.12-06-420&lt;/a&gt;&amp;gt;) with across-trial variability in the drift rate. Because the PDF of the DDM contains an infinite sum, it needs to be approximated. 'fddm' implements all published approximations (Navarro &amp;amp; Fuss, 2009, &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.jmp.2009.02.003&quot;&gt;doi:10.1016/j.jmp.2009.02.003&lt;/a&gt;&amp;gt;; Gondan, Blurton, &amp;amp; Kesselmeier, 2014, &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.jmp.2014.05.002&quot;&gt;doi:10.1016/j.jmp.2014.05.002&lt;/a&gt;&amp;gt;) plus new approximations. All approximations are implemented purely in 'C++' providing faster speed than existing packages." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=fddm" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>fddm: Fast Implementation of the Diffusion Decision Model</h2>
+<p>Provides the probability density function (PDF) of the diffusion decision
+  model (DDM; e.g., Ratcliff &amp; McKoon, 2008, &lt;<a href="https://doi.org/10.1162%2Fneco.2008.12-06-420">doi:10.1162/neco.2008.12-06-420</a>&gt;)
+  with across-trial variability in the drift rate.
+  Because the PDF of the DDM contains an infinite sum, it needs to be
+  approximated. 'fddm' implements all published approximations (Navarro &amp; Fuss, 2009,
+  &lt;<a href="https://doi.org/10.1016%2Fj.jmp.2009.02.003">doi:10.1016/j.jmp.2009.02.003</a>&gt;; Gondan, Blurton, &amp; Kesselmeier, 2014,
+  &lt;<a href="https://doi.org/10.1016%2Fj.jmp.2014.05.002">doi:10.1016/j.jmp.2014.05.002</a>&gt;) plus new approximations. All approximations
+  are implemented purely in 'C++' providing faster speed than existing packages.</p>
+<table summary="Package fddm summary">
+<tr>
+<td>Version:</td>
+<td>0.2-1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 1.0.1)</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../rtdists/index.html">rtdists</a>, <a href="../RWiener/index.html">RWiener</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../reshape2/index.html">reshape2</a>, <a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../microbenchmark/index.html">microbenchmark</a>, <a href="../ggnewscale/index.html">ggnewscale</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-13</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Kendal B. Foster [aut],
+  Henrik Singmann <a href="https://orcid.org/0000-0002-4842-3657"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Henrik Singmann  &#x3c;&#x73;&#x69;&#x6e;&#x67;&#x6d;&#x61;&#x6e;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/rtdists/fddm/issues">https://github.com/rtdists/fddm/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/rtdists/fddm">https://github.com/rtdists/fddm</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>C++11</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_fddm.html">fddm results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package fddm downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="fddm.pdf"> fddm.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/benchmark.html">Benchmark Testing</a><br/>
+<a href="vignettes/example.html">Fitting Example Using dfddm</a><br/>
+<a href="vignettes/math.html">Mathematical Description of Methods</a><br/>
+<a href="vignettes/validity.html">Validity of Methods</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/fddm_0.2-1.tar.gz"> fddm_0.2-1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/fddm_0.2-1.zip">fddm_0.2-1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/fddm_0.2-1.zip">fddm_0.2-1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/fddm_0.1-1.zip">fddm_0.1-1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/fddm_0.2-1.tgz">fddm_0.2-1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/fddm_0.2-1.tgz">fddm_0.2-1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/fddm"> fddm archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=fddm"><samp>https://CRAN.R-project.org/package=fddm</samp></a>
+to link to this page.</p>
+</body>
+</html>

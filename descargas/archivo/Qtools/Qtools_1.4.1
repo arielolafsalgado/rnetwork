@@ -1,0 +1,29 @@
+Package: Qtools
+Type: Package
+Title: Utilities for Quantiles
+Version: 1.4.1
+Date: 2019-07-13
+Authors@R: c(
+	person(given="Marco", family="Geraci", role=c("aut", "cph", "cre"), email="geraci@mailbox.sc.edu", comment = c(ORCID = "0000-0002-6311-8685")),
+	person(given="Alessio", family="Farcomeni", role=c("ctb"), email="alessio.farcomeni@uniroma1.it", comment = "Contributions to midrq code"))
+Maintainer: Marco Geraci <geraci@mailbox.sc.edu>
+Depends: R (>= 3.0.0)
+Imports: utils, glmx, grDevices, graphics, stats, MASS, Matrix, np,
+        quantreg, mice, boot, numDeriv (>= 2016.8-1), Rcpp (>= 0.12.13)
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: survey, knitr, rmarkdown
+VignetteBuilder: knitr
+Description: Functions for unconditional and conditional quantiles. These
+    include methods for transformation-based quantile regression,
+    quantile-based measures of location, scale and shape, methods for quantiles
+    of discrete variables, quantile-based multiple imputation, and restricted
+    quantile regression. A vignette is given in Geraci (2016, The R Journal)
+	<doi:10.32614/RJ-2016-037> and included in the package.
+License: GPL (>= 2)
+LazyLoad: yes
+NeedsCompilation: yes
+Packaged: 2019-07-13 15:16:36 UTC; geraci
+Author: Marco Geraci [aut, cph, cre] (<https://orcid.org/0000-0002-6311-8685>),
+  Alessio Farcomeni [ctb] (Contributions to midrq code)
+Repository: CRAN
+Date/Publication: 2019-07-13 16:20:03 UTC

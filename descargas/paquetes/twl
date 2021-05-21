@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package twl</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=twl" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="twl: Two-Way Latent Structure Clustering Model" />
+<meta name="og:description" content="Implementation of a Bayesian two-way latent structure model for integrative genomic clustering. The model clusters samples in relation to distinct data sources, with each subject-dataset receiving a latent cluster label, though cluster labels have across-dataset meaning because of the model formulation. A common scaling across data sources is unneeded, and inference is obtained by a Gibbs Sampler. The model can fit multivariate Gaussian distributed clusters or a heavier-tailed modification of a Gaussian density. Uniquely among integrative clustering models, the formulation makes no nestedness assumptions of samples across data sources &amp;ndash; the user can still fit the model if a study subject only has information from one data source. The package provides a variety of post-processing functions for model examination including ones for quantifying observed alignment of clusterings across genomic data sources. Run time is optimized so that analyses of datasets on the order of thousands of features on fewer than 5 datasets and hundreds of subjects can converge in 1 or 2 days on a single CPU. See &quot;Swanson DM, Lien T, Bergholtz H, Sorlie T, Frigessi A, Investigating Coordinated Architectures Across Clusters in Integrative Studies: a Bayesian Two-Way Latent Structure Model, 2018, &amp;lt;&lt;a href=&quot;https://doi.org/10.1101%2F387076&quot;&gt;doi:10.1101/387076&lt;/a&gt;&amp;gt;, Cold Spring Harbor Laboratory&quot; at &amp;lt;&lt;a href=&quot;https://www.biorxiv.org/content/early/2018/08/07/387076.full.pdf&quot;&gt;https://www.biorxiv.org/content/early/2018/08/07/387076.full.pdf&lt;/a&gt;&amp;gt; for model details." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=twl" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>twl: Two-Way Latent Structure Clustering Model</h2>
+<p>Implementation of a Bayesian two-way latent structure model for integrative genomic clustering.  The model clusters samples in relation to distinct data sources, with each subject-dataset receiving a latent cluster label, though cluster labels have across-dataset meaning because of the model formulation.  A common scaling across data sources is unneeded, and inference is obtained by a Gibbs Sampler.  The model can fit multivariate Gaussian distributed clusters or a heavier-tailed modification of a Gaussian density.  Uniquely among integrative clustering models, the formulation makes no nestedness assumptions of samples across data sources &ndash; the user can still fit the model if a study subject only has information from one data source. The package provides a variety of post-processing functions for model examination including ones for quantifying observed alignment of clusterings across genomic data sources.  Run time is optimized so that analyses of datasets on the order of thousands of features on fewer than 5 datasets and hundreds of subjects can converge in 1 or 2 days on a single CPU.  See "Swanson DM, Lien T, Bergholtz H, Sorlie T, Frigessi A, Investigating Coordinated Architectures Across Clusters in Integrative Studies: a Bayesian Two-Way Latent Structure Model, 2018, &lt;<a href="https://doi.org/10.1101%2F387076">doi:10.1101/387076</a>&gt;, Cold Spring Harbor Laboratory" at &lt;<a href="https://www.biorxiv.org/content/early/2018/08/07/387076.full.pdf">https://www.biorxiv.org/content/early/2018/08/07/387076.full.pdf</a>&gt; for model details.</p>
+<table summary="Package twl summary">
+<tr>
+<td>Version:</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10), <a href="../data.table/index.html">data.table</a>, <a href="../MCMCpack/index.html">MCMCpack</a>, <a href="../corrplot/index.html">corrplot</a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rfast/index.html">Rfast</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2018-08-24</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Michael Swanson</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Michael Swanson  &#x3c;&#x64;&#x6d;&#x73;&#x38;&#x36;&#x36;&#x20;&#x61;&#x74;&#x20;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x68;&#x61;&#x72;&#x76;&#x61;&#x72;&#x64;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_twl.html">twl results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package twl downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="twl.pdf"> twl.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/twl_1.0.tar.gz"> twl_1.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/twl_1.0.zip">twl_1.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/twl_1.0.zip">twl_1.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/twl_1.0.zip">twl_1.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/twl_1.0.tgz">twl_1.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/twl_1.0.tgz">twl_1.0.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=twl"><samp>https://CRAN.R-project.org/package=twl</samp></a>
+to link to this page.</p>
+</body>
+</html>

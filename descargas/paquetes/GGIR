@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package GGIR</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Raw Accelerometer Data Analysis [R package GGIR version 2.1-0]" />
+<meta name="citation_author" content="Vincent T van Hees" />
+<meta name="citation_publication_date" content="2020-08-27" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=GGIR" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=GGIR" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="GGIR: Raw Accelerometer Data Analysis" />
+<meta name="og:description" content="A tool to process and analyse data collected with wearable raw acceleration sensors as described in Migueles and colleagues (JMPB 2019), and van Hees and colleagues (JApplPhysiol 2014; PLoSONE 2015). The package has been developed and tested for binary data from 'GENEActiv' &amp;lt;&lt;a href=&quot;https://www.activinsights.com/&quot;&gt;https://www.activinsights.com/&lt;/a&gt;&amp;gt; and GENEA devices (not for sale), .csv-export data from 'Actigraph' &amp;lt;&lt;a href=&quot;https://actigraphcorp.com&quot;&gt;https://actigraphcorp.com&lt;/a&gt;&amp;gt; devices, and .cwa and .wav-format data from 'Axivity' &amp;lt;&lt;a href=&quot;https://axivity.com&quot;&gt;https://axivity.com&lt;/a&gt;&amp;gt;. These devices are currently widely used in research on human daily physical activity. Further, the package can handle accelerometer data file from any other sensor brand providing that the data is stored in csv format and has either no header or a two column header. Also the package allows for external function embedding." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=GGIR" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>GGIR: Raw Accelerometer Data Analysis</h2>
+<p>A tool to process and analyse data collected with wearable raw acceleration sensors as described in Migueles and colleagues (JMPB 2019), and van Hees and colleagues (JApplPhysiol 2014; PLoSONE 2015). The package has been developed and tested for binary data from 'GENEActiv' &lt;<a href="https://www.activinsights.com/">https://www.activinsights.com/</a>&gt; and GENEA devices (not for sale), .csv-export data from  'Actigraph' &lt;<a href="https://actigraphcorp.com">https://actigraphcorp.com</a>&gt; devices, and .cwa and .wav-format data from 'Axivity' &lt;<a href="https://axivity.com">https://axivity.com</a>&gt;. These devices are currently widely used in research on human daily physical activity. Further, the package can handle accelerometer data file from any other sensor brand providing that the data is stored in csv format and has either no header or a two column header. Also the package allows for external function embedding.</p>
+<table summary="Package GGIR summary">
+<tr>
+<td>Version:</td>
+<td>2.1-0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>stats, utils, R (&ge; 3.2.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../data.table/index.html">data.table</a>, <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.10), <a href="../foreach/index.html">foreach</a>, <a href="../doParallel/index.html">doParallel</a>, <a href="../signal/index.html">signal</a>, <a href="../zoo/index.html">zoo</a>, <a href="../bitops/index.html">bitops</a>, <a href="../matlab/index.html">matlab</a>, <a href="../GENEAread/index.html">GENEAread</a>, <a href="../tuneR/index.html">tuneR</a>, <a href="../unisensR/index.html">unisensR</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../covr/index.html">covr</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-08-27</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Vincent T van Hees [aut, cre],
+  Zhou Fang [ctb],
+  Jing Hua Zhao [ctb],
+  Joe Heywood [ctb],
+  Evgeny Mirkes [ctb],
+  Severine Sabia [ctb],
+  Joan Capdevila Pujol [ctb],
+  Jairo H Migueles [ctb],
+  Matthew R Patterson [ctb],
+  Dan Jackson [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Vincent T van Hees  &#x3c;&#x76;&#x2e;&#x76;&#x61;&#x6e;&#x68;&#x65;&#x65;&#x73;&#x20;&#x61;&#x74;&#x20;&#x61;&#x63;&#x63;&#x65;&#x6c;&#x74;&#x69;&#x6e;&#x67;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/wadpac/GGIR/issues">https://github.com/wadpac/GGIR/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/LGPL-2">LGPL-2</a> | <a href="../../licenses/LGPL-2.1">LGPL-2.1</a> | file <a href="LICENSE">LICENSE</a> [expanded from: LGPL (&ge; 2.0, &lt; 3) | file LICENSE]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/wadpac/GGIR/">https://github.com/wadpac/GGIR/</a>,
+<a href="https://groups.google.com/forum/#!forum/RpackageGGIR">https://groups.google.com/forum/#!forum/RpackageGGIR</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">GGIR citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Tracking.html">Tracking</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_GGIR.html">GGIR results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package GGIR downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="GGIR.pdf"> GGIR.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/ExternalFunction.pdf">Embedding external functions in GGIR</a><br/>
+<a href="vignettes/GGIR.html">Accelerometer data processing with GGIR</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/GGIR_2.1-0.tar.gz"> GGIR_2.1-0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/GGIR_2.1-0.zip">GGIR_2.1-0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/GGIR_2.1-0.zip">GGIR_2.1-0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/GGIR_2.1-0.zip">GGIR_2.1-0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/GGIR_2.1-0.tgz">GGIR_2.1-0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/GGIR_2.1-0.tgz">GGIR_2.1-0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/GGIR"> GGIR archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package GGIR reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../AGread/index.html">AGread</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=GGIR"><samp>https://CRAN.R-project.org/package=GGIR</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,42 @@
+Package: hesim
+Type: Package
+Title: Health-Economic Simulation Modeling and Decision Analysis
+Version: 0.2.3
+Authors@R: c(
+    person("Devin", "Incerti", , "devin.incerti@gmail.com", role = c("aut", "cre")),
+    person("Jeroen P.", "Jansen", role = "aut"),
+    person(given = "R Core Team", role = "ctb",
+    comment="hesim uses some slightly modified C functions from base R")
+    )
+Description: Parameterize, simulate, and analyze health-economic simulation 
+  models. Supports N-state partitioned survival models (Glasziou et al. 1990)
+  <doi:10.1002/sim.4780091106> and continuous time state transition models 
+  (Siebert et al. 2012) <doi:10.1016/j.jval.2012.06.014> parameterized using 
+  survival or multi-state modeling (de Wreede et al. 2011, Jackson 2015) 
+  <doi:10.18637/jss.v038.i07>, <doi:10.18637/jss.v070.i08>. Decision uncertainty 
+  from a cost-effectiveness analysis is quantified with standard graphical and 
+  tabular summaries of a probabilistic sensitivity analysis (Claxton et al. 2005, 
+  Barton et al. 2008) <doi:10.1002/hec.985>, <doi:10.1111/j.1524-4733.2008.00358.x>. 
+  Simulation code written in C++ to boost performance.
+URL: https://github.com/hesim-dev/hesim
+BugReports: https://github.com/hesim-dev/hesim/issues
+License: GPL-3
+LazyData: true
+LinkingTo: Rcpp, RcppArmadillo
+Depends: R (>= 3.5.0)
+Imports: data.table, flexsurv, MASS, Rcpp (>= 0.12.16), R6, stats,
+        survival
+Suggests: covr, ggplot2, knitr, mstate, msm, numDeriv, pracma,
+        rmarkdown, scales, testthat, truncnorm
+VignetteBuilder: knitr
+RoxygenNote: 7.0.1
+SystemRequirements: C++11
+NeedsCompilation: yes
+Packaged: 2020-03-16 23:41:31 UTC; devin.incerti
+Author: Devin Incerti [aut, cre],
+  Jeroen P. Jansen [aut],
+  R Core Team [ctb] (hesim uses some slightly modified C functions from
+    base R)
+Maintainer: Devin Incerti <devin.incerti@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-03-17 19:00:05 UTC

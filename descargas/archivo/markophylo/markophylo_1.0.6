@@ -1,0 +1,28 @@
+Package: markophylo
+Type: Package
+Title: Markov Chain Models for Phylogenetic Trees
+Version: 1.0.6
+Date: 2018-01-29
+Author: Utkarsh J. Dang and G. Brian Golding
+Maintainer: Utkarsh J. Dang <udang@binghamton.edu>
+Description: Allows for fitting of maximum likelihood models using Markov chains
+    on phylogenetic trees for analysis of discrete character data. Examples of such
+    discrete character data include restriction sites, gene family presence/absence,
+    intron presence/absence, and gene family size data. Hypothesis-driven user-
+    specified substitution rate matrices can be estimated. Allows for biologically
+    realistic models combining constrained substitution rate matrices, site rate
+    variation, site partitioning, branch-specific rates, allowing for non-stationary
+    prior root probabilities, correcting for sampling bias, etc. See Dang and Golding 
+    (2016) <doi:10.1093/bioinformatics/btv541> for more details.
+License: GPL (>= 2)
+Imports: Rcpp (>= 0.11.4), ape (>= 3.2), numDeriv (>= 2012.9.1),
+        phangorn (>= 1.99.13)
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: knitr (>= 1.10), testthat (>= 0.9.1)
+Depends: R (>= 2.10)
+VignetteBuilder: knitr
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2018-01-30 16:34:28 UTC; udang
+Repository: CRAN
+Date/Publication: 2018-01-30 17:14:26 UTC

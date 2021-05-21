@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package FindIt</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=FindIt" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="FindIt: Finding Heterogeneous Treatment Effects" />
+<meta name="og:description" content="The heterogeneous treatment effect estimation procedure proposed by Imai and Ratkovic (2013)&amp;lt;&lt;a href=&quot;https://doi.org/10.1214%2F12-AOAS593&quot;&gt;doi:10.1214/12-AOAS593&lt;/a&gt;&amp;gt;. The proposed method is applicable, for example, when selecting a small number of most (or least) efficacious treatments from a large number of alternative treatments as well as when identifying subsets of the population who benefit (or are harmed by) a treatment of interest. The method adapts the Support Vector Machine classifier by placing separate LASSO constraints over the pre-treatment parameters and causal heterogeneity parameters of interest. This allows for the qualitative distinction between causal and other parameters, thereby making the variable selection suitable for the exploration of causal heterogeneity. The package also contains a class of functions, CausalANOVA, which estimates the average marginal interaction effects (AMIEs) by a regularized ANOVA as proposed by Egami and Imai (2019)&amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F01621459.2018.1476246&quot;&gt;doi:10.1080/01621459.2018.1476246&lt;/a&gt;&amp;gt;. It contains a variety of regularization techniques to facilitate analysis of large factorial experiments. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=FindIt" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>FindIt: Finding Heterogeneous Treatment Effects</h2>
+<p>The heterogeneous treatment effect estimation procedure 
+        proposed by Imai and Ratkovic (2013)&lt;<a href="https://doi.org/10.1214%2F12-AOAS593">doi:10.1214/12-AOAS593</a>&gt;.  
+        The proposed method is applicable, for
+        example, when selecting a small number of most (or least)
+        efficacious treatments from a large number of alternative
+        treatments as well as when identifying subsets of the
+        population who benefit (or are harmed by) a treatment of
+        interest. The method adapts the Support Vector Machine
+        classifier by placing separate LASSO constraints over the
+        pre-treatment parameters and causal heterogeneity parameters of
+        interest. This allows for the qualitative distinction between
+        causal and other parameters, thereby making the variable
+        selection suitable for the exploration of causal heterogeneity. 	
+        The package also contains a class of functions, CausalANOVA, 
+        which estimates the average marginal interaction effects (AMIEs)
+        by a regularized ANOVA as proposed by Egami and Imai (2019)&lt;<a href="https://doi.org/10.1080%2F01621459.2018.1476246">doi:10.1080/01621459.2018.1476246</a>&gt;. 
+        It contains a variety of regularization techniques to facilitate 
+	analysis of large factorial experiments. </p>
+<table summary="Package FindIt summary">
+<tr>
+<td>Version:</td>
+<td>1.2.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.1.0), <a href="../arm/index.html">arm</a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../glmnet/index.html">glmnet</a>, <a href="../lars/index.html">lars</a>, <a href="../Matrix/index.html">Matrix</a>, <a href="../quadprog/index.html">quadprog</a>, <a href="../glinternet/index.html">glinternet</a>, <a href="../igraph/index.html">igraph</a>, <a href="../sandwich/index.html">sandwich</a>, <a href="../lmtest/index.html">lmtest</a>, stats, graphics, utils, <a href="../limSolve/index.html">limSolve</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-11-20</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Naoki Egami, Marc Ratkovic, Kosuke Imai</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Naoki Egami  &#x3c;&#x6e;&#x65;&#x67;&#x61;&#x6d;&#x69;&#x20;&#x61;&#x74;&#x20;&#x70;&#x72;&#x69;&#x6e;&#x63;&#x65;&#x74;&#x6f;&#x6e;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_FindIt.html">FindIt results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package FindIt downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="FindIt.pdf"> FindIt.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/FindIt_1.2.0.tar.gz"> FindIt_1.2.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/FindIt_1.2.0.zip">FindIt_1.2.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/FindIt_1.2.0.zip">FindIt_1.2.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/FindIt_1.2.0.zip">FindIt_1.2.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/FindIt_1.2.0.tgz">FindIt_1.2.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/FindIt_1.2.0.tgz">FindIt_1.2.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/FindIt"> FindIt archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=FindIt"><samp>https://CRAN.R-project.org/package=FindIt</samp></a>
+to link to this page.</p>
+</body>
+</html>

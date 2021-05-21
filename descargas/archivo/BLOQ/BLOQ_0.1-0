@@ -1,0 +1,41 @@
+Package: BLOQ
+Type: Package
+Version: 0.1-0
+Date: 2018-08-09
+Title: Impute and Analyze Data with Observations Below the Limit of
+        Quantification
+Authors@R: c(
+	person("Vahid","Nassiri", email = "vahid.nassiri@openanalytics.eu", role = "cre"),
+	person("Helen", "Barnett", email= "h.barnett@lancaster.ac.uk", role = "aut"),
+	person("Helena", "Geys", email= "HGEYS@its.jnj.com", role = "aut"),
+	person("Tom", "Jacobs", email= "TJACOBS1@its.jnj.com", role = "aut"),
+	person("Thomas", "Jaki", email= "t.jaki@lancaster.ac.uk", role = "aut"))
+Maintainer: Vahid Nassiri <vahid.nassiri@openanalytics.eu>
+Description: Methods for non-compartmental
+        pharmacokinetic analysis with observations below the 
+        limit of quantification (BLOQ) are implemented as 
+        described in Barnett, Helen Yvette. 
+        "Optimizing pharmacokinetic studies utilizing 
+        microsampling." PhD diss., Lancaster University, 2017. 
+        (available online: 
+        <http://eprints.lancs.ac.uk/89163/1/2017barnettphd.pdf>). 
+        It includes estimating the area under the concentrations
+        versus time curve (AUC) and its standard error using two 
+        approaches: direct estimation using censored maximum 
+        likelihood, also by first imputing the BLOQ's 
+        using various methods, then compute AUC and its standard 
+        error using imputed data.
+Imports: maxLik, mvnmle, mvtnorm,
+Suggests: testthat,
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 6.1.0
+NeedsCompilation: no
+Packaged: 2018-08-13 14:13:50 UTC; vnassiri
+Author: Vahid Nassiri [cre],
+  Helen Barnett [aut],
+  Helena Geys [aut],
+  Tom Jacobs [aut],
+  Thomas Jaki [aut]
+Repository: CRAN
+Date/Publication: 2018-08-13 14:40:20 UTC

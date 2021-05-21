@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package PhenotypeSimulator</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Flexible Phenotype Simulation from Different Genetic and Noise Models [R package PhenotypeSimulator version 0.3.3]" />
+<meta name="citation_author" content="Hannah Meyer" />
+<meta name="citation_publication_date" content="2019-05-15" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=PhenotypeSimulator" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=PhenotypeSimulator" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="PhenotypeSimulator: Flexible Phenotype Simulation from Different Genetic and Noise Models" />
+<meta name="og:description" content="Simulation is a critical part of method development and assessment in quantitative genetics. 'PhenotypeSimulator' allows for the flexible simulation of phenotypes under different models, including genetic variant and infinitesimal genetic effects (reflecting population structure) as well as non-genetic covariate effects, observational noise and additional correlation effects. The different phenotype components are combined into a final phenotype while controlling for the proportion of variance explained by each of the components. For each effect component, the number of variables, their distribution and the design of their effect across traits can be customised. For the simulation of the genetic effects, external genotype data from a number of standard software ('plink', 'hapgen2'/ 'impute2', 'genome', 'bimbam', simple text files) can be imported. The final simulated phenotypes and its components can be automatically saved into .rds or .csv files. In addition, they can be saved in formats compatible with commonly used genetic association software ('gemma', 'bimbam', 'plink', 'snptest', 'LiMMBo'). " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=PhenotypeSimulator" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>PhenotypeSimulator: Flexible Phenotype Simulation from Different Genetic and Noise
+Models</h2>
+<p>Simulation is a critical part of method development and assessment
+    in quantitative genetics. 'PhenotypeSimulator' allows for the flexible 
+    simulation of phenotypes under different models, including genetic variant 
+    and  infinitesimal genetic effects (reflecting population structure) as well 
+    as non-genetic covariate effects, observational noise and additional 
+    correlation effects. The different phenotype components are combined into a 
+    final phenotype while controlling for the proportion of variance explained 
+    by each of the components. For each effect component, the number of 
+    variables, their distribution and the design of their effect across traits 
+    can be customised. For the simulation of the genetic effects, external 
+    genotype data from a number of standard software ('plink', 'hapgen2'/
+    'impute2', 'genome', 'bimbam', simple text files) can be imported. The final 
+    simulated phenotypes and its components can be automatically saved into .rds 
+    or .csv files. In addition, they can be saved in formats compatible with 
+    commonly used genetic association software ('gemma', 'bimbam', 'plink', 
+    'snptest', 'LiMMBo'). </p>
+<table summary="Package PhenotypeSimulator summary">
+<tr>
+<td>Version:</td>
+<td>0.3.3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>methods, <a href="../optparse/index.html">optparse</a>, <a href="../R.utils/index.html">R.utils</a>, <a href="../mvtnorm/index.html">mvtnorm</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/snpStats.html"><span class="BioC">snpStats</span></a>, <a href="../zoo/index.html">zoo</a>, <a href="../data.table/index.html">data.table</a> (&ge; 1.11.0), <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.11), <a href="../cowplot/index.html">cowplot</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../reshape2/index.html">reshape2</a>, <a href="../dplyr/index.html">dplyr</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-05-15</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Hannah Meyer <a href="https://orcid.org/0000-0003-4564-0899"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Konrad Rudolph <a href="https://orcid.org/0000-0002-9866-7051"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Hannah Meyer  &#x3c;&#x68;&#x61;&#x6e;&#x6e;&#x61;&#x68;&#x2e;&#x76;&#x2e;&#x6d;&#x65;&#x79;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/HannahVMeyer/PhenotypeSimulator/issues">https://github.com/HannahVMeyer/PhenotypeSimulator/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/HannahVMeyer/PhenotypeSimulator">https://github.com/HannahVMeyer/PhenotypeSimulator</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">PhenotypeSimulator citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_PhenotypeSimulator.html">PhenotypeSimulator results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package PhenotypeSimulator downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="PhenotypeSimulator.pdf"> PhenotypeSimulator.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/PhenotypeSimulator.pdf">Flexible phenotype simulation with PhenotypeSimulator</a><br/>
+<a href="vignettes/Sample-scripts-external-genotype-simulation.pdf">Supported Genotype Simulation</a><br/>
+<a href="vignettes/Simulation-and-LinearModel.pdf">Simulation and linear model fit</a><br/>
+<a href="vignettes/SimulationBasedOnExampleData.pdf">Simulation based on example data</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/PhenotypeSimulator_0.3.3.tar.gz"> PhenotypeSimulator_0.3.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/PhenotypeSimulator_0.3.3.zip">PhenotypeSimulator_0.3.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/PhenotypeSimulator_0.3.3.zip">PhenotypeSimulator_0.3.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/PhenotypeSimulator_0.3.3.zip">PhenotypeSimulator_0.3.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/PhenotypeSimulator_0.3.3.tgz">PhenotypeSimulator_0.3.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/PhenotypeSimulator_0.3.3.tgz">PhenotypeSimulator_0.3.3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/PhenotypeSimulator"> PhenotypeSimulator archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=PhenotypeSimulator"><samp>https://CRAN.R-project.org/package=PhenotypeSimulator</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,44 @@
+Package: LocalControl
+Type: Package
+Title: Nonparametric Methods for Generating High Quality Comparative
+        Effectiveness Evidence
+Version: 1.1.0
+Date: 2017-11-22
+Authors@R: c(
+  person(given = "Nicolas R.", family = "Lauve", role = "aut"),
+  person(given = "Stuart J.", family = "Nelson", role = "aut"),
+  person(given = "S. Stanley", family = "Young", role = "aut"),
+  person(given = "Robert L.", family = "Obenchain", role = "aut"),
+  person(given = "Melania", family = "Pintilie", role = "ctb"),
+  person(given = "Martin", family = "Kutz", role = "ctb"),
+  person(given = "Christophe G.", family = "Lambert", role = c("aut","cre"), email = "cglambert@unm.edu"))
+Description: Implements novel nonparametric approaches to address
+    biases and confounding when comparing treatments or exposures in
+    observational studies of outcomes. While designed and appropriate for use
+    in studies involving medicine and the life sciences, the package can be
+    used in other situations involving outcomes with multiple confounders.
+    The package implements a family of methods for nonparametric bias
+    correction when comparing treatments in cross-sectional, case-control,
+    and survival analysis settings, including competing risks with censoring.
+    The approach extends to bias-corrected personalized predictions of
+    treatment outcome differences, and analysis of heterogeneity of treatment
+    effect-sizes across patient subgroups.
+License: Apache License 2.0 | file LICENSE
+SystemRequirements: C++11
+LazyData: TRUE
+LinkingTo: Rcpp
+Imports: Rcpp, gss, cluster, lattice, stats, graphics
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Depends: R (>= 3.0.0)
+Repository: CRAN
+Packaged: 2017-11-22 22:31:52 UTC; lambert
+Author: Nicolas R. Lauve [aut],
+  Stuart J. Nelson [aut],
+  S. Stanley Young [aut],
+  Robert L. Obenchain [aut],
+  Melania Pintilie [ctb],
+  Martin Kutz [ctb],
+  Christophe G. Lambert [aut, cre]
+Maintainer: Christophe G. Lambert <cglambert@unm.edu>
+Date/Publication: 2017-11-22 22:41:30 UTC

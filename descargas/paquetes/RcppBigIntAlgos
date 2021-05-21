@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package RcppBigIntAlgos</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Factor Big Integers with the Parallel Quadratic Sieve [R package RcppBigIntAlgos version 0.3.3]" />
+<meta name="citation_author" content="Joseph Wood" />
+<meta name="citation_publication_date" content="2020-10-14" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=RcppBigIntAlgos" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=RcppBigIntAlgos" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="RcppBigIntAlgos: Factor Big Integers with the Parallel Quadratic Sieve" />
+<meta name="og:description" content="Features the multiple polynomial quadratic sieve (MPQS) algorithm for factoring large integers and a vectorized factoring function that returns the complete factorization of an integer. The MPQS is based off of the seminal work of Carl Pomerance (1984) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2F3-540-39757-4_17&quot;&gt;doi:10.1007/3-540-39757-4_17&lt;/a&gt;&amp;gt; along with the modification of multiple polynomials introduced by Peter Montgomery and J. Davis as outlined by Robert D. Silverman (1987) &amp;lt;&lt;a href=&quot;https://doi.org/10.1090%2FS0025-5718-1987-0866119-8&quot;&gt;doi:10.1090/S0025-5718-1987-0866119-8&lt;/a&gt;&amp;gt;. Utilizes the C library GMP (GNU Multiple Precision Arithmetic) and 'RcppThread' for sieving multiple polynomials in parallel. The Pollard's rho algorithm for factoring smaller numbers is the same algorithm used by the factorize function in the 'gmp' package." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=RcppBigIntAlgos" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>RcppBigIntAlgos: Factor Big Integers with the Parallel Quadratic Sieve</h2>
+<p>Features the multiple polynomial quadratic sieve (MPQS) algorithm
+    for factoring large integers and a vectorized factoring function that
+    returns the complete factorization of an integer. The MPQS is based off of
+    the seminal work of Carl Pomerance (1984) &lt;<a href="https://doi.org/10.1007%2F3-540-39757-4_17">doi:10.1007/3-540-39757-4_17</a>&gt;
+    along with the modification of multiple polynomials introduced by Peter
+    Montgomery and J. Davis as outlined by Robert D. Silverman (1987)
+    &lt;<a href="https://doi.org/10.1090%2FS0025-5718-1987-0866119-8">doi:10.1090/S0025-5718-1987-0866119-8</a>&gt;. Utilizes the C library
+    GMP (GNU Multiple Precision Arithmetic) and 'RcppThread' for sieving
+    multiple polynomials in parallel. The Pollard's rho algorithm for
+    factoring smaller numbers is the same algorithm used by the factorize
+    function in the 'gmp' package.</p>
+<table summary="Package RcppBigIntAlgos summary">
+<tr>
+<td>Version:</td>
+<td>0.3.3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td><a href="../gmp/index.html">gmp</a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppThread/index.html">RcppThread</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../numbers/index.html">numbers</a>, <a href="../RcppAlgos/index.html">RcppAlgos</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-14</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Joseph Wood [aut, cre],
+  Free Software Foundation, Inc. [cph],
+  Mike Tryczak [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Joseph Wood  &#x3c;&#x6a;&#x77;&#x6f;&#x6f;&#x64;&#x30;&#x30;&#x30;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/jwood000/RcppBigIntAlgos/issues">https://github.com/jwood000/RcppBigIntAlgos/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/jwood000/RcppBigIntAlgos">https://github.com/jwood000/RcppBigIntAlgos</a>, <a href="https://gmplib.org/">https://gmplib.org/</a>,
+<a href="http://mathworld.wolfram.com/QuadraticSieve.html">http://mathworld.wolfram.com/QuadraticSieve.html</a>,
+<a href="http://micsymposium.org/mics_2011_proceedings/mics2011_submission_28.pdf">http://micsymposium.org/mics_2011_proceedings/mics2011_submission_28.pdf</a>,
+<a href="https://www.math.colostate.edu/~hulpke/lectures/m400c/quadsievex.pdf">https://www.math.colostate.edu/~hulpke/lectures/m400c/quadsievex.pdf</a>,
+<a href="https://blogs.msdn.microsoft.com/devdev/2006/06/19/factoring-large-numbers-with-quadratic-sieve/">https://blogs.msdn.microsoft.com/devdev/2006/06/19/factoring-large-numbers-with-quadratic-sieve/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>C++11, gmp (&gt;= 4.2.3)</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/NumericalMathematics.html">NumericalMathematics</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_RcppBigIntAlgos.html">RcppBigIntAlgos results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package RcppBigIntAlgos downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="RcppBigIntAlgos.pdf"> RcppBigIntAlgos.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/RcppBigIntAlgos_0.3.3.tar.gz"> RcppBigIntAlgos_0.3.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/RcppBigIntAlgos_0.3.3.zip">RcppBigIntAlgos_0.3.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/RcppBigIntAlgos_0.3.3.zip">RcppBigIntAlgos_0.3.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/RcppBigIntAlgos_0.3.3.zip">RcppBigIntAlgos_0.3.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/RcppBigIntAlgos_0.3.3.tgz">RcppBigIntAlgos_0.3.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/RcppBigIntAlgos_0.3.3.tgz">RcppBigIntAlgos_0.3.3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/RcppBigIntAlgos"> RcppBigIntAlgos archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=RcppBigIntAlgos"><samp>https://CRAN.R-project.org/package=RcppBigIntAlgos</samp></a>
+to link to this page.</p>
+</body>
+</html>

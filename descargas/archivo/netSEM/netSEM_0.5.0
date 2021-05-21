@@ -1,0 +1,73 @@
+Package: netSEM
+Type: Package
+Title: Network Structural Equation Modeling
+Description: The network structural equation modeling conducts a network statistical analysis
+    on a data frame of coincident observations of multiple continuous variables [1]. 
+    It builds a pathway model by exploring a pool of domain knowledge guided candidate statistical
+    relationships between each of the variable pairs, selecting the 'best fit' on
+    the basis of a specific criteria such as adjusted r-squared value.
+    This work was funded under U. S. Dept. of Energy, Prime Award No. DE-E-0004946, 
+    Award Agreement No. 60220829-51077-T. 
+    [1] Bruckman, Laura S., Nicholas R. Wheeler, Junheng Ma, Ethan Wang, Carl K. Wang, Ivan Chou, 
+    Jiayang Sun, and Roger H. French. (2013) <doi:10.1109/ACCESS.2013.2267611>.
+Version: 0.5.0
+Authors@R: c(person("Wei-Heng", "Huang", email="wxh272@case.edu", 
+                    role=c("aut","cre"), comment = c(ORCID = "0000-0002-6609-4981")),
+            person("Nicholas", "Wheeler", email="nrw16@case.edu", 
+                    role=c("aut"), comment = c(ORCID = "0000-0003-2248-8919")),
+            person("Addison", "Klinke", email="agk38@case.edu", 
+                    role=c("aut"), comment = c(ORCID = "0000-0002-6985-7657")),
+            person("Yifan", "Xu", email="yifan.xu@case.edu", 
+                    role=c("aut"), comment = c(ORCID = "0000-0003-1696-0228")),
+            person("Wenyu", "Du", email="wxd97@case.edu", 
+                    role=c("aut"), comment = c(ORCID = "0000-0002-8672-9104")),
+            person("Abdulkerim", "Gok", email="axg515@case.edu", 
+                    role=c("aut"), comment = c(ORCID = "0000-0003-3433-7106")),
+            person("Devin", "Gordon", email="dag109@case.edu", 
+                    role=c("ctb"), comment = c(ORCID = "0000-0002-5919-0422")),
+            person("Yu", "Wang", email="yxw880@case.edu", 
+                    role=c("ctb"), comment = c(ORCID = "0000-0003-1353-2578")), 
+            person("Jiqi", "Liu", email="jxl1763@case.edu", 
+                    role=c("ctb"), comment = c(ORCID = "0000-0003-2016-4160")),
+            person("Alan", "Curran", email="ajc269@case.edu", 
+                    role=c("ctb"), comment = c(ORCID = "0000-0002-4505-8359")),
+            person("Justin", "Fada", email="jxf77@case.edu", 
+                    role=c("ctb"), comment = c(ORCID = "0000-0002-0029-5051")),
+            person("Xuan", "Ma", email="xxm115@case.edu", 
+                    role=c("ctb"), comment = c(ORCID = "0000-0003-2361-2846")),
+            person("Jennifer", "Braid", email="jlb269@case.edu", 
+                    role=c("ctb"), comment = c(ORCID = "0000-0002-0677-7756")),
+            person("Laura", "Bruckman", email="lsh41@case.edu", 
+                    role=c("aut"), comment = c(ORCID = "0000-0003-1271-1072")),
+            person("Roger", "French", email="rxf131@case.edu", 
+                    role=c("aut","cph"), comment = c(ORCID = "0000-0002-6162-0532")) )
+Depends: R (>= 3.1.0)
+Imports: DiagrammeR (>= 0.9.2), DiagrammeRsvg (>= 0.1), htmlwidgets (>=
+        1.2), knitr (>= 1.20), magrittr (>= 1.5), MASS (>= 7.3-47),
+        rsvg (>= 1.1), svglite (>= 1.2.1), png (>= 0.1-7), segmented
+        (>= 0.5-3.0), gtools (>= 3.5.0)
+License: GPL (>= 2)
+LazyData: true
+Suggests: rmarkdown, testthat
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-06-10 22:22:21 UTC; setup
+Author: Wei-Heng Huang [aut, cre] (<https://orcid.org/0000-0002-6609-4981>),
+  Nicholas Wheeler [aut] (<https://orcid.org/0000-0003-2248-8919>),
+  Addison Klinke [aut] (<https://orcid.org/0000-0002-6985-7657>),
+  Yifan Xu [aut] (<https://orcid.org/0000-0003-1696-0228>),
+  Wenyu Du [aut] (<https://orcid.org/0000-0002-8672-9104>),
+  Abdulkerim Gok [aut] (<https://orcid.org/0000-0003-3433-7106>),
+  Devin Gordon [ctb] (<https://orcid.org/0000-0002-5919-0422>),
+  Yu Wang [ctb] (<https://orcid.org/0000-0003-1353-2578>),
+  Jiqi Liu [ctb] (<https://orcid.org/0000-0003-2016-4160>),
+  Alan Curran [ctb] (<https://orcid.org/0000-0002-4505-8359>),
+  Justin Fada [ctb] (<https://orcid.org/0000-0002-0029-5051>),
+  Xuan Ma [ctb] (<https://orcid.org/0000-0003-2361-2846>),
+  Jennifer Braid [ctb] (<https://orcid.org/0000-0002-0677-7756>),
+  Laura Bruckman [aut] (<https://orcid.org/0000-0003-1271-1072>),
+  Roger French [aut, cph] (<https://orcid.org/0000-0002-6162-0532>)
+Maintainer: Wei-Heng Huang <wxh272@case.edu>
+Repository: CRAN
+Date/Publication: 2018-06-12 10:33:50 UTC

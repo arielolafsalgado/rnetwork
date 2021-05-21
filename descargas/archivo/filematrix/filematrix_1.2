@@ -1,0 +1,32 @@
+Package: filematrix
+Type: Package
+Title: File-Backed Matrix Class with Convenient Read and Write Access
+Version: 1.2
+Date: 2018-01-11
+Authors@R: person(  "Andrey A", "Shabalin",
+                    role = c("aut", "cre"),
+                    email = "andrey.shabalin@gmail.com",
+                    comment = c(ORCID = "0000-0003-0309-6821"))
+Description: Interface for working with large matrices stored in files,
+        not in computer memory. Supports multiple non-character
+        data types (double, integer, logical and raw) of
+        various sizes (e.g. 8 and 4 byte real values).
+        Access to parts of the matrix is done by indexing, 
+        exactly as with usual R matrices.
+        Supports very large matrices.
+        Tested on multi-terabyte matrices.
+        Allows for more than 2^32 rows or columns.
+        Allows for quick addition of extra columns to a filematrix.
+        Cross-platform as the package has R code only.
+BugReports: https://github.com/andreyshabalin/filematrix/issues
+URL: https://github.com/andreyshabalin/filematrix
+License: LGPL-3
+Depends: methods, utils
+VignetteBuilder: knitr
+Suggests: BiocStyle, knitr, rmarkdown, RSQLite
+NeedsCompilation: no
+Packaged: 2018-01-13 10:56:10 UTC; Andrey
+Author: Andrey A Shabalin [aut, cre] (0000-0003-0309-6821)
+Maintainer: Andrey A Shabalin <andrey.shabalin@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-01-13 17:07:09 UTC

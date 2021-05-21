@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package AssetCorr</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=AssetCorr" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="AssetCorr: Estimating Asset Correlations from Default Data" />
+<meta name="og:description" content="Functions for the estimation of intra- and inter-cohort correlations in the Vasicek credit portfolio model. For intra-cohort correlations, the package covers the two method of moments estimators of Gordy (2000) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2FS0378-4266%2899%2900054-0&quot;&gt;doi:10.1016/S0378-4266(99)00054-0&lt;/a&gt;&amp;gt;, the method of moments estimator of Lucas (1995) &amp;lt;&lt;a href=&quot;http://jfi.iijournals.com/content/4/4/76&quot;&gt;http://jfi.iijournals.com/content/4/4/76&lt;/a&gt;&amp;gt; and a Binomial approximation extension of this approach. Moreover, the maximum likelihood estimators of Gordy and Heitfield (2010) &amp;lt;&lt;a href=&quot;http://elsa.berkeley.edu/~mcfadden/e242_f03/heitfield.pdf&quot;&gt;http://elsa.berkeley.edu/~mcfadden/e242_f03/heitfield.pdf&lt;/a&gt;&amp;gt; and Duellmann and Gehde-Trapp (2004) &amp;lt;&lt;a href=&quot;http://hdl.handle.net/10419/19729&quot;&gt;http://hdl.handle.net/10419/19729&lt;/a&gt;&amp;gt; are implemented. For inter-cohort correlations, the method of moments estimator of Bluhm and Overbeck (2003) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2F978-3-642-59365-9_2&quot;&gt;doi:10.1007/978-3-642-59365-9_2&lt;/a&gt;&amp;gt;/Bams et al. (2016) &amp;lt;&lt;a href=&quot;https://ssrn.com/abstract=2676595&quot;&gt;https://ssrn.com/abstract=2676595&lt;/a&gt;&amp;gt; is provided and the maximum likelihood estimators comprise the approaches of Gordy and Heitfield (2010)/Kalkbrener and Onwunta (2010) &amp;lt;ISBN: 978-1906348250&amp;gt; and Pfeuffer et al. (2018). Bootstrap and Jackknife procedures for bias correction are included as well as the method of moments estimator of Frei and Wunsch (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.21314%2FJCR.2017.231&quot;&gt;doi:10.21314/JCR.2017.231&lt;/a&gt;&amp;gt; for auto-correlated time series." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=AssetCorr" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>AssetCorr: Estimating Asset Correlations from Default Data</h2>
+<p>Functions for the estimation of intra- and inter-cohort correlations in the Vasicek credit portfolio model. For intra-cohort correlations, the package covers the two method of moments estimators of Gordy (2000) &lt;<a href="https://doi.org/10.1016%2FS0378-4266%2899%2900054-0">doi:10.1016/S0378-4266(99)00054-0</a>&gt;, the method of moments estimator of Lucas (1995) &lt;<a href="http://jfi.iijournals.com/content/4/4/76">http://jfi.iijournals.com/content/4/4/76</a>&gt; and a Binomial approximation extension of this approach. Moreover, the maximum likelihood estimators of Gordy and Heitfield (2010) &lt;<a href="http://elsa.berkeley.edu/~mcfadden/e242_f03/heitfield.pdf">http://elsa.berkeley.edu/~mcfadden/e242_f03/heitfield.pdf</a>&gt; and Duellmann and Gehde-Trapp (2004) &lt;<a href="http://hdl.handle.net/10419/19729">http://hdl.handle.net/10419/19729</a>&gt; are implemented. For inter-cohort correlations, the method of moments estimator of Bluhm and Overbeck (2003) &lt;<a href="https://doi.org/10.1007%2F978-3-642-59365-9_2">doi:10.1007/978-3-642-59365-9_2</a>&gt;/Bams et al. (2016) &lt;<a href="https://ssrn.com/abstract=2676595">https://ssrn.com/abstract=2676595</a>&gt; is provided and the maximum likelihood estimators comprise the approaches of Gordy and Heitfield (2010)/Kalkbrener and Onwunta (2010) &lt;ISBN: 978-1906348250&gt; and Pfeuffer et al. (2018). Bootstrap and Jackknife procedures for bias correction are included as well as the method of moments estimator of Frei and Wunsch (2018) &lt;<a href="https://doi.org/10.21314%2FJCR.2017.231">doi:10.21314/JCR.2017.231</a>&gt; for auto-correlated time series.</p>
+<table summary="Package AssetCorr summary">
+<tr>
+<td>Version:</td>
+<td>1.0.3</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../VineCopula/index.html">VineCopula</a>, <a href="../mvtnorm/index.html">mvtnorm</a>, <a href="../boot/index.html">boot</a>, <a href="../numDeriv/index.html">numDeriv</a>, <a href="../mvQuad/index.html">mvQuad</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../Rdpack/index.html">Rdpack</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2018-08-30</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Maximilian Nagl [aut,cre], Yevhen Havrylenko [aut], Marius Pfeuffer [aut], Kevin Jakob [aut], Matthias Fischer [aut], Daniel Roesch [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Maximilian Nagl  &#x3c;&#x6d;&#x61;&#x78;&#x69;&#x6d;&#x69;&#x6c;&#x69;&#x61;&#x6e;&#x2e;&#x6e;&#x61;&#x67;&#x6c;&#x20;&#x61;&#x74;&#x20;&#x75;&#x72;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_AssetCorr.html">AssetCorr results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package AssetCorr downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="AssetCorr.pdf"> AssetCorr.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/AssetCorr_vignette.html">An AssetCorr Guide</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/AssetCorr_1.0.3.tar.gz"> AssetCorr_1.0.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/AssetCorr_1.0.3.zip">AssetCorr_1.0.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/AssetCorr_1.0.3.zip">AssetCorr_1.0.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/AssetCorr_1.0.3.zip">AssetCorr_1.0.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/AssetCorr_1.0.3.tgz">AssetCorr_1.0.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/AssetCorr_1.0.3.tgz">AssetCorr_1.0.3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/AssetCorr"> AssetCorr archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=AssetCorr"><samp>https://CRAN.R-project.org/package=AssetCorr</samp></a>
+to link to this page.</p>
+</body>
+</html>

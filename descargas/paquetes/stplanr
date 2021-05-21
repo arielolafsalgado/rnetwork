@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package stplanr</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Sustainable Transport Planning [R package stplanr version 0.7.2]" />
+<meta name="citation_author1" content="Robin Lovelace" />
+<meta name="citation_author2" content="Richard Ellison" />
+<meta name="citation_author3" content="Malcolm Morgan" />
+<meta name="citation_publication_date" content="2020-09-04" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=stplanr" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=stplanr" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="stplanr: Sustainable Transport Planning" />
+<meta name="og:description" content="Tools for transport planning with an emphasis on spatial transport data and non-motorized modes. Enables common transport planning tasks including: downloading and cleaning transport datasets; creating geographic &quot;desire lines&quot; from origin-destination (OD) data; route assignment, locally and via interfaces to routing services such as &amp;lt;&lt;a href=&quot;https://cyclestreets.net/&quot;&gt;https://cyclestreets.net/&lt;/a&gt;&amp;gt;; calculation of route segment attributes such as bearing and aggregate flow; and 'travel watershed' analysis. See Lovelace and Ellison (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.32614%2FRJ-2018-053&quot;&gt;doi:10.32614/RJ-2018-053&lt;/a&gt;&amp;gt; and vignettes for details." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=stplanr" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>stplanr: Sustainable Transport Planning</h2>
+<p>Tools for transport planning with an emphasis on spatial transport
+    data and non-motorized modes. Enables common transport planning tasks including:
+    downloading and cleaning transport datasets; creating geographic "desire lines"
+    from origin-destination (OD) data; route assignment, locally and via
+    interfaces to routing services such as &lt;<a href="https://cyclestreets.net/">https://cyclestreets.net/</a>&gt;;
+    calculation of route segment attributes such as bearing and aggregate flow;
+    and 'travel watershed' analysis.
+    See Lovelace and Ellison (2018) &lt;<a href="https://doi.org/10.32614%2FRJ-2018-053">doi:10.32614/RJ-2018-053</a>&gt; and vignettes
+    for details.</p>
+<table summary="Package stplanr summary">
+<tr>
+<td>Version:</td>
+<td>0.7.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../sp/index.html">sp</a> (&ge; 1.3.1), <a href="../curl/index.html">curl</a> (&ge; 3.2), <a href="../dplyr/index.html">dplyr</a> (&ge; 0.7.6), <a href="../httr/index.html">httr</a> (&ge;
+1.3.1), <a href="../jsonlite/index.html">jsonlite</a> (&ge; 1.5), <a href="../stringr/index.html">stringr</a> (&ge; 1.3.1), <a href="../maptools/index.html">maptools</a> (&ge;
+0.9.3), <a href="../raster/index.html">raster</a> (&ge; 2.6.7), <a href="../rgeos/index.html">rgeos</a> (&ge; 0.3.28), methods, <a href="../geosphere/index.html">geosphere</a> (&ge; 1.5.7), <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.1), <a href="../igraph/index.html">igraph</a> (&ge; 1.2.2), <a href="../nabor/index.html">nabor</a> (&ge; 0.5.0), <a href="../rlang/index.html">rlang</a> (&ge; 0.2.2), <a href="../lwgeom/index.html">lwgeom</a> (&ge; 0.1.4), <a href="../sf/index.html">sf</a> (&ge;
+0.6.3), <a href="../magrittr/index.html">magrittr</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../RcppArmadillo/index.html">RcppArmadillo</a> (&ge; 0.9.100.5.0), <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.18)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a> (&ge; 2.0.0), <a href="../knitr/index.html">knitr</a> (&ge; 1.20), <a href="../rmarkdown/index.html">rmarkdown</a> (&ge; 1.10), <a href="../dodgr/index.html">dodgr</a> (&ge; 0.0.3), <a href="../stats19/index.html">stats19</a>, <a href="../cyclestreets/index.html">cyclestreets</a>, <a href="../pbapply/index.html">pbapply</a>, <a href="../leaflet/index.html">leaflet</a>, <a href="../rgdal/index.html">rgdal</a>, <a href="../pct/index.html">pct</a>, <a href="../tmap/index.html">tmap</a>, <a href="../bench/index.html">bench</a>, <a href="../openxlsx/index.html">openxlsx</a> (&ge; 4.1.0), <a href="../osrm/index.html">osrm</a>, <a href="../data.table/index.html">data.table</a>, <a href="../geodist/index.html">geodist</a>, <a href="../mapsapi/index.html">mapsapi</a>, <a href="../s2/index.html">s2</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-04</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Robin Lovelace <a href="https://orcid.org/0000-0001-5679-6536"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Richard Ellison [aut],
+  Malcolm Morgan <a href="https://orcid.org/0000-0002-9488-9183"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Barry Rowlingson [ctb] (Author of overline),
+  Nick Bearman [ctb] (Co-author of gclip),
+  Nikolai Berkoff [ctb] (Co-author of line2route),
+  Scott Chamberlain [rev] (Scott reviewed the package for rOpenSci, see
+    https://github.com/ropensci/onboarding/issues/10),
+  Mark Padgham [ctb],
+  Andrea Gilardi <a href="https://orcid.org/0000-0002-9424-7439"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Robin Lovelace  &#x3c;&#x72;&#x6f;&#x62;&#x30;&#x30;&#x78;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ropensci/stplanr/issues">https://github.com/ropensci/stplanr/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/ropensci/stplanr">https://github.com/ropensci/stplanr</a>,
+<a href="https://docs.ropensci.org/stplanr/">https://docs.ropensci.org/stplanr/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>GNU make</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">stplanr citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Spatial.html">Spatial</a>, <a href="../../views/SpatioTemporal.html">SpatioTemporal</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_stplanr.html">stplanr results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package stplanr downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="stplanr.pdf"> stplanr.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/stplanr-od.html">Origin-destination data with stplanr</a><br/>
+<a href="vignettes/stplanr-paper.html">stplanr: A Package for Transport Planning</a><br/>
+<a href="vignettes/stplanr-parallel.html">Parallel routing and performance with stplanr</a><br/>
+<a href="vignettes/stplanr-route-nets.html">Route networks with stplanr</a><br/>
+<a href="vignettes/stplanr-routing.html">Transport routing with stplanr</a><br/>
+<a href="vignettes/stplanr.html">Introducing stplanr</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/stplanr_0.7.2.tar.gz"> stplanr_0.7.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/stplanr_0.7.2.zip">stplanr_0.7.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/stplanr_0.7.2.zip">stplanr_0.7.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/stplanr_0.7.2.zip">stplanr_0.7.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/stplanr_0.7.2.tgz">stplanr_0.7.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/stplanr_0.7.2.tgz">stplanr_0.7.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/stplanr"> stplanr archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package stplanr reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../pct/index.html">pct</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../cyclestreets/index.html">cyclestreets</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=stplanr"><samp>https://CRAN.R-project.org/package=stplanr</samp></a>
+to link to this page.</p>
+</body>
+</html>

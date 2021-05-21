@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package cobalt</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Covariate Balance Tables and Plots [R package cobalt version 4.2.3]" />
+<meta name="citation_author" content="Noah Greifer" />
+<meta name="citation_publication_date" content="2020-08-31" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=cobalt" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=cobalt" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="cobalt: Covariate Balance Tables and Plots" />
+<meta name="og:description" content="Generate balance tables and plots for covariates of groups preprocessed through matching, weighting or subclassification, for example, using propensity scores. Includes integration with 'MatchIt', 'twang', 'Matching', 'optmatch', 'CBPS', 'ebal', 'WeightIt', 'cem', 'sbw', and 'designmatch' for assessing balance on the output of their preprocessing functions. Users can also specify data for balance assessment not generated through the above packages. Also included are methods for assessing balance in clustered or multiply imputed data sets or data sets with longitudinal treatments." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=cobalt" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>cobalt: Covariate Balance Tables and Plots</h2>
+<p>Generate balance tables and plots for covariates of groups preprocessed through matching, weighting or subclassification, for example, using propensity scores. Includes integration with 'MatchIt', 'twang', 'Matching', 'optmatch', 'CBPS', 'ebal', 'WeightIt', 'cem', 'sbw', and 'designmatch' for assessing balance on the output of their preprocessing functions. Users can also specify data for balance assessment not generated through the above packages. Also included are methods for assessing balance in clustered or multiply imputed data sets or data sets with longitudinal treatments.</p>
+<table summary="Package cobalt summary">
+<tr>
+<td>Version:</td>
+<td>4.2.3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../ggplot2/index.html">ggplot2</a> (&ge; 3.3.0), grid, <a href="../gtable/index.html">gtable</a> (&ge; 0.3.0), <a href="../gridExtra/index.html">gridExtra</a> (&ge;
+2.3.0), <a href="../rlang/index.html">rlang</a> (&ge; 0.4.0), <a href="../crayon/index.html">crayon</a>, <a href="../backports/index.html">backports</a> (&ge; 1.1.8)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../MatchIt/index.html">MatchIt</a>, <a href="../WeightIt/index.html">WeightIt</a> (&ge; 0.5.0), <a href="../twang/index.html">twang</a> (&ge; 1.6), <a href="../Matching/index.html">Matching</a>, <a href="../optmatch/index.html">optmatch</a>, cem, <a href="../ebal/index.html">ebal</a>, <a href="../CBPS/index.html">CBPS</a> (&ge; 0.17), <a href="../designmatch/index.html">designmatch</a>, <a href="../optweight/index.html">optweight</a>, <a href="../mice/index.html">mice</a> (&ge; 3.8.0), <a href="../MatchThem/index.html">MatchThem</a> (&ge; 0.9.3), <a href="../sbw/index.html">sbw</a>, <a href="../mlogit/index.html">mlogit</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-08-31</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Noah Greifer <a href="https://orcid.org/0000-0003-3067-7154"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Noah Greifer  &#x3c;&#x6e;&#x6f;&#x61;&#x68;&#x2e;&#x67;&#x72;&#x65;&#x69;&#x66;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ngreifer/cobalt/issues">https://github.com/ngreifer/cobalt/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://ngreifer.github.io/cobalt/">https://ngreifer.github.io/cobalt/</a>,
+<a href="https://github.com/ngreifer/cobalt">https://github.com/ngreifer/cobalt</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_cobalt.html">cobalt results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package cobalt downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="cobalt.pdf"> cobalt.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/cobalt.html">Covariate Balance Tables and Plots: A Guide to the cobalt Package</a><br/>
+<a href="vignettes/cobalt_A1_other_packages.html">Appendix 1: Using cobalt with Other Preprocessing Packages</a><br/>
+<a href="vignettes/cobalt_A2_segmented_data.html">Appendix 2: Using cobalt with Clustered, Multiply Imputed, and Other Segmented Data</a><br/>
+<a href="vignettes/cobalt_A3_longitudinal_treat.html">Appendix 3: Using cobalt with Longitudinal Treatments</a><br/>
+<a href="vignettes/cobalt_A4_love.plot.html">Appendix 4: Using love.plot To Generate Love Plots</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/cobalt_4.2.3.tar.gz"> cobalt_4.2.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/cobalt_4.2.3.zip">cobalt_4.2.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/cobalt_4.2.3.zip">cobalt_4.2.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/cobalt_4.2.3.zip">cobalt_4.2.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/cobalt_4.2.3.tgz">cobalt_4.2.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/cobalt_4.2.3.tgz">cobalt_4.2.3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/cobalt"> cobalt archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package cobalt reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../mvGPS/index.html">mvGPS</a>, <a href="../WeightIt/index.html">WeightIt</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../MatchThem/index.html">MatchThem</a>, <a href="../optweight/index.html">optweight</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=cobalt"><samp>https://CRAN.R-project.org/package=cobalt</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package BIRDS</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Biodiversity Information Review and Decision Support [R package BIRDS version 0.1.2]" />
+<meta name="citation_author1" content="Debora Arlt" />
+<meta name="citation_author2" content="Alejandro Ruete" />
+<meta name="citation_author3" content="Anton Hammarström" />
+<meta name="citation_publication_date" content="2020-10-08" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=BIRDS" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=BIRDS" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="BIRDS: Biodiversity Information Review and Decision Support" />
+<meta name="og:description" content="It helps making the evaluation and preparation of biodiversity data easy, systematic and reproducible. It also helps the users to overlay the point observations into a custom grid that is useful for further analysis. The review summarise statistics that helps evaluate whether a set of species observations is fit-for-use and take decisions upon its use of on further analyses. It does so by quantifying the sampling effort (amount of effort expended during an event) and data completeness (data gaps) to help judge whether the data is representative, valid and fit for any intended purpose. The 'BIRDS' package is most useful when working with heterogeneous data sets with variation in the sampling process, i.e. where data have been collected and reported in various ways and therefore varying in sampling effort and data completeness (i.e. how well the reported observations describe the true state). Primary biodiversity data (PBD) combining data from different data sets, like e.g. Global Biodiversity Information Facility (GBIF) mediated data, commonly vary in the ways data has been generated - containing opportunistically collected presence-only data together with and data from systematic monitoring programs. The set of tools provided is aimed at understanding the process that generated the data (i.e. observing, recording and reporting species into databases). There is a non-vital function on this package (makeDggrid()) that depends the package 'dggridR' that is no longer on CRAN. You can find it here &amp;lt;&lt;a href=&quot;https://github.com/r-barnes/dggridR&quot;&gt;https://github.com/r-barnes/dggridR&lt;/a&gt;&amp;gt;. References: Ruete (2015) &amp;lt;&lt;a href=&quot;https://doi.org/10.3897%2FBDJ.3.e5361&quot;&gt;doi:10.3897/BDJ.3.e5361&lt;/a&gt;&amp;gt;; Szabo, Vesk, Baxter &amp;amp; Possingham (2010) &amp;lt;&lt;a href=&quot;https://doi.org/10.1890%2F09-0877.1&quot;&gt;doi:10.1890/09-0877.1&lt;/a&gt;&amp;gt;; Telfer, Preston 6 Rothery (2002) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2FS0006-3207%2802%2900050-2&quot;&gt;doi:10.1016/S0006-3207(02)00050-2&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=BIRDS" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>BIRDS: Biodiversity Information Review and Decision Support</h2>
+<p>It helps making the evaluation and preparation of biodiversity data
+   easy, systematic and reproducible. It also helps the users to overlay the 
+   point observations into a custom grid that is useful for further analysis. 
+   The review summarise statistics that helps evaluate whether a set of species 
+   observations is fit-for-use and take decisions upon its use of on further 
+   analyses. It does so by quantifying the sampling effort (amount of effort
+   expended during an event) and data completeness (data gaps) to help judge 
+   whether the data is representative, valid and fit for any intended purpose. 
+   The 'BIRDS' package is most useful when working with heterogeneous data sets 
+   with variation in the sampling process, i.e. where data have been collected 
+   and reported in various ways and therefore varying in sampling effort 
+   and data completeness (i.e. how well the reported observations describe the 
+   true state). Primary biodiversity data (PBD) combining data from different 
+   data sets, like e.g. Global Biodiversity Information Facility (GBIF) mediated
+   data, commonly vary in the ways data has been generated - containing 
+   opportunistically collected presence-only data together with and data from 
+   systematic monitoring programs. The set of tools provided is aimed at 
+   understanding the process that generated the data (i.e. observing, recording 
+   and reporting species into databases). There is a non-vital function on this 
+   package (makeDggrid()) that depends the package 'dggridR' that is no longer on CRAN. 
+   You can find it here &lt;<a href="https://github.com/r-barnes/dggridR">https://github.com/r-barnes/dggridR</a>&gt;. References: 
+   Ruete (2015) &lt;<a href="https://doi.org/10.3897%2FBDJ.3.e5361">doi:10.3897/BDJ.3.e5361</a>&gt;; Szabo, Vesk, Baxter &amp; Possingham (2010) 
+   &lt;<a href="https://doi.org/10.1890%2F09-0877.1">doi:10.1890/09-0877.1</a>&gt;; Telfer, Preston 6 Rothery (2002) &lt;<a href="https://doi.org/10.1016%2FS0006-3207%2802%2900050-2">doi:10.1016/S0006-3207(02)00050-2</a>&gt;.</p>
+<table summary="Package BIRDS summary">
+<tr>
+<td>Version:</td>
+<td>0.1.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../data.table/index.html">data.table</a>, <a href="../dbscan/index.html">dbscan</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../esquisse/index.html">esquisse</a>, <a href="../geosphere/index.html">geosphere</a> (&ge; 1.5), <a href="../leaflet/index.html">leaflet</a> (&ge; 2.0), <a href="../lubridate/index.html">lubridate</a> (&ge; 1.7.4), <a href="../magrittr/index.html">magrittr</a>, <a href="../mapedit/index.html">mapedit</a> (&ge;
+0.5), methods, <a href="../nnet/index.html">nnet</a>, <a href="../rgeos/index.html">rgeos</a> (&ge; 0.4), <a href="../rgdal/index.html">rgdal</a> (&ge; 1.5), <a href="../rlang/index.html">rlang</a>, <a href="../sf/index.html">sf</a> (&ge; 0.7), <a href="../shiny/index.html">shiny</a> (&ge; 1.0), <a href="../sp/index.html">sp</a> (&ge; 1.4-4), <a href="../stringr/index.html">stringr</a> (&ge; 1.4), <a href="../shotGroups/index.html">shotGroups</a>, <a href="../taxize/index.html">taxize</a>, <a href="../tidyr/index.html">tidyr</a>, <a href="../xts/index.html">xts</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../covr/index.html">covr</a>, <a href="../dggridR/index.html">dggridR</a>, <a href="../knitr/index.html">knitr</a>, <a href="../leaflet.extras/index.html">leaflet.extras</a>, <a href="../leafpm/index.html">leafpm</a>, <a href="../maps/index.html">maps</a>, <a href="../rgbif/index.html">rgbif</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../testthat/index.html">testthat</a>, utils, <a href="../vegan/index.html">vegan</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-08</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Debora Arlt <a href="https://orcid.org/0000-0003-0874-4250"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Alejandro Ruete <a href="https://orcid.org/0000-0001-7681-2812"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Anton Hammarström [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Alejandro Ruete  &#x3c;&#x61;&#x6c;&#x65;&#x72;&#x75;&#x65;&#x74;&#x65;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/Greensway/BIRDS/issues">https://github.com/Greensway/BIRDS/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/greensway/BIRDS">https://github.com/greensway/BIRDS</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>GDAL (&gt;= 2.0.1)</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_BIRDS.html">BIRDS results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package BIRDS downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="BIRDS.pdf"> BIRDS.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/BIRDS.html">Introduction to BIRDS</a><br/>
+<a href="vignettes/technical_details.html">BIRDS technical details</a><br/>
+<a href="vignettes/working_with_xts_timeseries.html">Working with xts time series</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/BIRDS_0.1.2.tar.gz"> BIRDS_0.1.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/BIRDS_0.1.2.zip">BIRDS_0.1.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/BIRDS_0.1.2.zip">BIRDS_0.1.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/BIRDS_0.1.2.zip">BIRDS_0.1.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/BIRDS_0.1.2.tgz">BIRDS_0.1.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/BIRDS_0.1.2.tgz">BIRDS_0.1.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/BIRDS"> BIRDS archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=BIRDS"><samp>https://CRAN.R-project.org/package=BIRDS</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package warbleR</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Streamline Bioacoustic Analysis [R package warbleR version 1.1.24]" />
+<meta name="citation_author1" content="Marcelo Araya-Salas" />
+<meta name="citation_author2" content="Grace Smith-Vidaurre" />
+<meta name="citation_publication_date" content="2020-07-01" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=warbleR" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=warbleR" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="warbleR: Streamline Bioacoustic Analysis" />
+<meta name="og:description" content="Functions aiming to facilitate the analysis of the structure of animal acoustic signals in 'R'. 'warbleR' makes use of the basic sound analysis tools from the package 'seewave', and offers new tools for acoustic structure analysis. The main features of the package are the use of loops to apply tasks through acoustic signals referenced in a selection (annotation) table and the production of spectrograms in image files that allow to organize data and verify acoustic analyzes. The package offers functions to explore, organize and manipulate multiple sound files, explore and download 'Xeno-Canto' recordings, detect signals automatically, create spectrograms of complete recordings or individual signals, run different measures of acoustic signal structure, evaluate the performance of measurement methods, catalog signals, characterize different structural levels in acoustic signals, run statistical analysis of duet coordination and consolidate databases and annotation tables, among others." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=warbleR" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>warbleR: Streamline Bioacoustic Analysis</h2>
+<p>Functions aiming to facilitate the analysis of the structure of animal acoustic signals in 'R'. 'warbleR' makes use of the basic sound analysis tools from the package 'seewave', and offers new tools for acoustic structure analysis. The main features of the package are the use of loops to apply tasks through acoustic signals referenced in a selection (annotation) table and the production of spectrograms in image files that allow to organize data and verify acoustic analyzes. The package offers functions to explore, organize and manipulate multiple sound files, explore and download 'Xeno-Canto' recordings, detect signals automatically, create spectrograms of complete recordings or individual signals, run different measures of acoustic signal structure, evaluate the performance of measurement methods, catalog signals, characterize different structural levels in acoustic signals, run statistical analysis of duet coordination and consolidate databases and annotation tables, among others.</p>
+<table summary="Package warbleR summary">
+<tr>
+<td>Version:</td>
+<td>1.1.24</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.2.1), <a href="../tuneR/index.html">tuneR</a>, <a href="../seewave/index.html">seewave</a> (&ge; 2.0.1), <a href="../NatureSounds/index.html">NatureSounds</a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../dtw/index.html">dtw</a>, <a href="../fftw/index.html">fftw</a>, graphics, grDevices, <a href="../monitoR/index.html">monitoR</a>, parallel, <a href="../pbapply/index.html">pbapply</a>, <a href="../RCurl/index.html">RCurl</a>, <a href="../rjson/index.html">rjson</a>, stats, utils, methods</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../jpeg/index.html">jpeg</a>, <a href="../ape/index.html">ape</a>, <a href="../bioacoustics/index.html">bioacoustics</a>, <a href="../soundgen/index.html">soundgen</a>, <a href="../wavethresh/index.html">wavethresh</a>, <a href="../png/index.html">png</a>, <a href="../pracma/index.html">pracma</a>, <a href="../Sim.DiffProc/index.html">Sim.DiffProc</a>, <a href="../maps/index.html">maps</a>, <a href="../leaflet/index.html">leaflet</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-07-01</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Marcelo Araya-Salas
+    <a href="https://orcid.org/0000-0003-3594-619X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut, cre],
+  Grace Smith-Vidaurre [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Marcelo Araya-Salas  &#x3c;&#x6d;&#x61;&#x72;&#x63;&#x65;&#x6c;&#x6f;&#x2e;&#x61;&#x72;&#x61;&#x79;&#x61;&#x20;&#x61;&#x74;&#x20;&#x75;&#x63;&#x72;&#x2e;&#x61;&#x63;&#x2e;&#x63;&#x72;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/maRce10/warbleR/issues">https://github.com/maRce10/warbleR/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://marce10.github.io/warbleR">https://marce10.github.io/warbleR</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">warbleR citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_warbleR.html">warbleR results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package warbleR downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="warbleR.pdf"> warbleR.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Intro_to_warbleR.html">1. Introduction to warbleR</a><br/>
+<a href="vignettes/warbleR_workflow_01.html">2. Import sound files and select signals</a><br/>
+<a href="vignettes/warbleR_workflow_02.html">3. Visual inspection and signal classification</a><br/>
+<a href="vignettes/warbleR_workflow_03.html">4. Acoustic (dis)similarity, coordinated singing and simulating songs</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/warbleR_1.1.24.tar.gz"> warbleR_1.1.24.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/warbleR_1.1.24.zip">warbleR_1.1.24.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/warbleR_1.1.24.zip">warbleR_1.1.24.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/warbleR_1.1.24.zip">warbleR_1.1.24.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/warbleR_1.1.24.tgz">warbleR_1.1.24.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/warbleR_1.1.24.tgz">warbleR_1.1.24.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/warbleR"> warbleR archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package warbleR reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../baRulho/index.html">baRulho</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../Rraven/index.html">Rraven</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=warbleR"><samp>https://CRAN.R-project.org/package=warbleR</samp></a>
+to link to this page.</p>
+</body>
+</html>

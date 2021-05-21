@@ -1,0 +1,30 @@
+Package: sctransform
+Type: Package
+Title: Variance Stabilizing Transformations for Single Cell UMI Data
+Version: 0.3
+Authors@R: person(given = 'Christoph', family = 'Hafemeister', email = 'christoph.hafemeister@nyu.edu', role = c('aut', 'cre'), comment = c(ORCID = '0000-0001-6365-8254'))
+Description: A normalization method for single-cell UMI count data using a 
+  variance stabilizing transformation. The transformation is based on a 
+  negative binomial regression model with regularized parameters. As part of the
+  same regression framework, this package also provides functions for
+  batch correction, and data correction. See Hafemeister and Satija 2019 
+  <doi:10.1186/s13059-019-1874-1> for more details.
+URL: https://github.com/ChristophH/sctransform
+BugReports: https://github.com/ChristophH/sctransform/issues
+License: GPL-3 | file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.0.2)
+Imports: MASS, Matrix, methods, future.apply, future, ggplot2,
+        reshape2, gridExtra
+LinkingTo: Rcpp (>= 0.11.0), RcppEigen
+Suggests: irlba, testthat, knitr
+Enhances: speedglm, glmGamPoi
+RoxygenNote: 7.1.1
+NeedsCompilation: yes
+Packaged: 2020-09-19 20:09:45 UTC; christoph
+Author: Christoph Hafemeister [aut, cre]
+    (<https://orcid.org/0000-0001-6365-8254>)
+Maintainer: Christoph Hafemeister <christoph.hafemeister@nyu.edu>
+Repository: CRAN
+Date/Publication: 2020-09-20 14:40:02 UTC

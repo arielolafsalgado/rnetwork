@@ -1,0 +1,24 @@
+Package: ForeCA
+Type: Package
+Title: Forecastable Component Analysis
+Version: 0.2.0
+Date: 2015-01-01
+Author: Georg M. Goerg <im@gmge.org>
+Maintainer: Georg M. Goerg <im@gmge.org>
+URL: http://www.gmge.org
+Description: Forecastable Component Analysis (ForeCA) is a novel dimension
+    reduction (DR) technique for temporally dependent signals. Contrary to
+    other popular DR methods, such as PCA or ICA, ForeCA takes time dependency
+    explicitly into account and searches for the most ''forecastable'' signal.
+    The measure of forecastability is based on the Shannon entropy of the
+    spectral density of the transformed signal. This R package provides the
+    main algorithms and auxiliary function (summary, plotting, etc.) to apply
+    ForeCA to multivariate time series data.
+Depends: R (>= 3.0.0), ifultools (>= 2.0.0)
+License: GPL-2
+Imports: MASS, sapa
+Suggests: astsa, mgcv, nlme (>= 3.1-64), testthat (>= 0.9.0), rSFA,
+Packaged: 2015-02-20 02:12:07 UTC; georg
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2015-02-20 11:58:25

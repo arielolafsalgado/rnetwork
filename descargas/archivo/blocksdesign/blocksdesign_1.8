@@ -1,0 +1,26 @@
+Package: blocksdesign
+Type: Package
+Title: Nested Block Designs for Unstructured Treatments
+Version: 1.8
+Date: 2015-10-11
+Author: R. N. Edmondson
+Maintainer: Rodney Edmondson <rodney.edmondson@gmail.com>
+Depends: R (>= 3.1.0)
+Description: Nested block designs for unstructured treatment sets where blocks
+    can be repeatedly nested and treatments can have different levels of
+    replication. Blocks are optimized hierarchically from the top down with each set of
+    nested blocks optimized within the levels of any existing higher-level blocks. 
+    Block sizes are equal if the number of blocks exactly divides the number of plots,
+    otherwise they differ by at most one plot. The design output is a data
+    table giving a randomised allocation of treatments to blocks together with
+    a plan table showing treatments in blocks and a set of blocks-by-treatments
+    incidence matrices, one for each blocks stratum.
+License: GPL (>= 2)
+URL: http://www.expdesigns.co.uk
+Suggests: knitr
+VignetteBuilder: knitr
+Imports: crossdes
+NeedsCompilation: no
+Packaged: 2015-10-11 20:24:01 UTC; rne
+Repository: CRAN
+Date/Publication: 2015-10-12 00:20:56

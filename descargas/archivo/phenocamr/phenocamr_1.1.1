@@ -1,0 +1,29 @@
+Package: phenocamr
+Title: Facilitates 'PhenoCam' Data Access and Time Series
+        Post-Processing
+Version: 1.1.1
+Authors@R: person("Hufkens","Koen",
+		  email="koen.hufkens@gmail.com",
+		  role=c("aut", "cre"))
+Description: 
+    Programmatic interface to the 'PhenoCam' web services (<http://phenocam.sr.unh.edu>).
+    Allows for easy downloading of 'PhenoCam' data directly to your R workspace
+    or your computer and provides post-processing routines for consistent and easy
+    timeseries outlier detection, smoothing and estimation of phenological transition dates.
+    Methods for this package are described in detail in Hufkens et. al (2018) <doi:10.1111/2041-210X.12970>.
+Depends: R (>= 3.4.0),
+Imports: shiny, jsonlite, changepoint, httr, zoo, utils, graphics,
+        stats, daymetr
+Suggests: covr, testthat, knitr, rmarkdown, shinydashboard, leaflet,
+        plotly, DT
+License: AGPL-3
+LazyData: true
+ByteCompile: true
+RoxygenNote: 6.1.0
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-08-22 13:49:07 UTC; khufkens
+Author: Hufkens Koen [aut, cre]
+Maintainer: Hufkens Koen <koen.hufkens@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-08-22 14:20:03 UTC

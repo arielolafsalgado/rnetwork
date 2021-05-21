@@ -1,0 +1,21 @@
+Package: windAC
+Type: Package
+Title: Area Correction Methods
+Version: 1.0.0
+Date: 2019-10-09
+Authors@R: c(person("Jared", "Studyvin", role = c("aut", "cre"),
+                     email = "jstudyvin@west-inc.com"), person("Paul","Rabie",role=c("aut")),person("Daniel","Riser-Espinoza",role=c("ctb")),person("Trent","McDonald",role=c("ctb")))
+Author: Jared Studyvin [aut, cre],
+  Paul Rabie [aut],
+  Daniel Riser-Espinoza [ctb],
+  Trent McDonald [ctb]
+Depends: R (>= 3.6.0)
+Imports: mvtnorm, sf
+Maintainer: Jared Studyvin <jstudyvin@west-inc.com>
+Description: Bird and bat carcasses from wind turbines often fall outside of the searched area. To compensate, area correction (AC) estimations are calculated to estimate the percentage of fatalities that fall within the searched area versus those that fall outside of it. This package provides two likelihood based methods and one physics based method (Hull and Muir (2010) <doi:10.1080/14486563.2010.9725253>) to estimate the carcass fall distance distribution. There are also functions for calculating the proportion of area searched in one unit annuli, log logistic distribution functions, and truncated distribution functions.
+License: GNU General Public License
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-10-11 12:41:32 UTC; jstudyvin
+Repository: CRAN
+Date/Publication: 2019-10-28 16:20:02 UTC

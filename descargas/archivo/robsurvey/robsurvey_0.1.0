@@ -1,0 +1,34 @@
+Package: robsurvey
+Type: Package
+Title: Robust Survey Statistics Estimation
+Version: 0.1.0
+Authors@R: c(
+    person("Beat", "Hulliger", email = "beat.hulliger@fhnw.ch", role = "aut"),
+    person("Tobias", "Schoch", email = "tobias.schoch@gmail.com", role = "aut"),
+    person("Martin", "Sterchi", email = "martin.sterchi@fhnw.ch", role = "cre"))
+Description: Multiple functions to compute robust survey statistics. The package 
+    supports the computations of robust means, totals, and ratios. Available 
+    methods are Huber M-estimators, trimming, and winsorization. The package 
+    'robsurvey' complements the 'survey' package. The package additionally 
+    includes a weighted version of the resistant line function of base R (line()), 
+    as well as two median based simple regression estimators. The methods are 
+    described in Hulliger (1995) 
+    <https://www150.statcan.gc.ca/n1/en/catalogue/12-001-X199500114407/>.
+License: MIT + file LICENSE
+URL: https://github.com/martinSter/robsurvey
+BugReports: https://github.com/martinSter/robsurvey/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.6.0)
+Imports: survey (>= 3.35-1), stats, graphics, utils
+RoxygenNote: 6.1.1
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2019-05-27 07:46:10 UTC; martin.sterchi
+Author: Beat Hulliger [aut],
+  Tobias Schoch [aut],
+  Martin Sterchi [cre]
+Maintainer: Martin Sterchi <martin.sterchi@fhnw.ch>
+Repository: CRAN
+Date/Publication: 2019-05-29 13:00:03 UTC

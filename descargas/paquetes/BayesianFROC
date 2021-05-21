@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package BayesianFROC</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="FROC Analysis by Bayesian Approaches [R package BayesianFROC version 0.3.1]" />
+<meta name="citation_author" content="Issei Tsunoda" />
+<meta name="citation_publication_date" content="2020-09-14" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=BayesianFROC" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=BayesianFROC" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="BayesianFROC: FROC Analysis by Bayesian Approaches" />
+<meta name="og:description" content="Execute BayesianFROC::fit_GUI_Shiny() (or fit_GUI_Shiny_MRMC()) for a graphical user interface via Shiny. Provides new methods for the so-called Free-response Receiver Operating Characteristic (FROC) analysis. The ultimate aim of FROC analysis is to compare observer performances, which means comparing characteristics, such as area under the curve (AUC) or figure of merit (FOM). In this package, we only use the notion of AUC for modality comparison, where by &quot;modality&quot;, we mean imaging methods such as Magnetic Resonance Imaging (MRI), Computed Tomography (CT), Positron Emission Tomography (PET), ..., etc. So there is a problem that which imaging method is better to detect lesions from shadows in radiographs. To solve modality comparison issues, this package provides new methods using hierarchical Bayesian models proposed by the author of this package. Using this package, one can obtain at least one conclusion that which imaging methods are better for finding lesions in radiographs with the case of your data. Fitting FROC statistical models is sometimes not so good, it can easily confirm by drawing FROC curves and comparing these curves and the points constructed by False Positive fractions (FPFs) and True Positive Fractions (TPFs), we can validate the goodness of fit intuitively. Such validation is also implemented by the Chi square goodness of fit statistics in the Bayesian context which means that the parameter is not deterministic, thus by integrating it with the posterior predictive measure, we get a desired value. To compare modalities (imaging methods: MRI, CT, PET, ... , etc), we evaluate AUCs for each modality. FROC is developed by Dev Chakraborty, his FROC model in his 1989 paper relies on the maximal likelihood methodology. The author modified and provided the alternative Bayesian FROC model. Strictly speaking, his model does not coincide with models in this package. In FROC context, we means by multiple reader and multiple case (MRMC) the case of the number of reader or modality is two or more. The MRMC data is available for functions of this package. I hope that medical researchers use not only the frequentist method but also alternative Bayesian methods. In medical research, many problems are considered under only frequentist methods, such as the notion of p-values. But p-value is sometimes misunderstood. Bayesian methods provide very simple, direct, intuitive answer for research questions. Combining frequentist methods with Bayesian methods, we can obtain more reliable answer for research questions. Please execute the following R scripts from the R (R studio) console, demo(demo_MRMC, package = &quot;BayesianFROC&quot;); demo(demo_srsc, package = &quot;BayesianFROC&quot;); demo(demo_stan, package = &quot;BayesianFROC&quot;); demo(demo_drawcurves_srsc, package = &quot;BayesianFROC&quot;); demo_Bayesian_FROC(); demo_Bayesian_FROC_without_pause(). References: Dev Chakraborty (1989) &amp;lt;&lt;a href=&quot;https://doi.org/10.1118%2F1.596358&quot;&gt;doi:10.1118/1.596358&lt;/a&gt;&amp;gt; Maximum likelihood analysis of free - response receiver operating characteristic (FROC) data. Pre-print: Issei Tsunoda; Bayesian Models for free-response receiver operating characteristic analysis." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=BayesianFROC" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>BayesianFROC: FROC Analysis by Bayesian Approaches</h2>
+<p>Execute BayesianFROC::fit_GUI_Shiny() (or fit_GUI_Shiny_MRMC()) for a graphical user interface via Shiny.  Provides new methods for the so-called Free-response Receiver Operating Characteristic (FROC) analysis. The ultimate aim of FROC analysis is to compare observer performances, which means comparing characteristics, such as area under the curve (AUC) or figure of merit (FOM). In this package, we only use the notion of AUC for modality comparison, where by "modality",  we mean imaging methods such as Magnetic Resonance Imaging (MRI), Computed Tomography (CT), Positron Emission Tomography (PET), ..., etc. So there is a problem that which imaging method is better to detect lesions from shadows in radiographs. To solve modality comparison issues, this package provides new methods using hierarchical Bayesian models proposed by the author of this package. Using this package, one can obtain at least one conclusion that which imaging methods are better for finding lesions in radiographs with the case of your data. Fitting FROC statistical models is sometimes not so good, it can easily confirm by drawing FROC curves and comparing these curves and the points constructed by False Positive fractions (FPFs) and True Positive Fractions (TPFs), we can validate the goodness of fit intuitively. Such validation is also implemented by the Chi square goodness of fit statistics in the Bayesian context which means that the parameter is not deterministic, thus by integrating it with the posterior predictive measure, we get a desired value. To compare modalities (imaging methods: MRI, CT, PET, ... , etc),  we evaluate AUCs for each modality. FROC is developed by Dev Chakraborty, his FROC model in his 1989 paper relies on the maximal likelihood methodology. The author modified and provided the alternative Bayesian FROC model. Strictly speaking, his model does not coincide with models in this package. In FROC context, we means by multiple reader and multiple case (MRMC) the case of the number of reader or modality is two or more. The MRMC data is available for functions of this package. I hope that medical researchers use not only the frequentist method but also alternative Bayesian methods. In medical research, many problems are considered under only frequentist methods, such as the notion of p-values. But p-value is sometimes misunderstood. Bayesian methods provide very simple, direct, intuitive answer for research questions. Combining frequentist methods with Bayesian methods, we can obtain more reliable answer for research questions. Please execute the following R scripts from the R (R studio) console, demo(demo_MRMC, package = "BayesianFROC"); demo(demo_srsc, package = "BayesianFROC"); demo(demo_stan, package = "BayesianFROC"); demo(demo_drawcurves_srsc, package = "BayesianFROC"); demo_Bayesian_FROC(); demo_Bayesian_FROC_without_pause(). References: Dev Chakraborty (1989) &lt;<a href="https://doi.org/10.1118%2F1.596358">doi:10.1118/1.596358</a>&gt; Maximum likelihood analysis of free - response receiver operating characteristic (FROC) data. Pre-print: Issei Tsunoda; Bayesian Models for free-response receiver operating characteristic analysis.</p>
+<table summary="Package BayesianFROC summary">
+<tr>
+<td>Version:</td>
+<td>0.3.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td><a href="../rstan/index.html">rstan</a> (&ge; 2.18.2), R (&ge; 3.5.0), <a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../readxl/index.html">readxl</a>, <a href="../xlsx/index.html">xlsx</a>, stats, graphics, tcltk, grDevices, <a href="../ggplot2/index.html">ggplot2</a>, methods, <a href="../car/index.html">car</a>, <a href="../crayon/index.html">crayon</a>, <a href="../DiagrammeR/index.html">DiagrammeR</a>, <a href="../bridgesampling/index.html">bridgesampling</a>, <a href="../rhandsontable/index.html">rhandsontable</a>, <a href="../shiny/index.html">shiny</a>, <a href="../pracma/index.html">pracma</a>, <a href="../shinydashboard/index.html">shinydashboard</a>, <a href="../shinythemes/index.html">shinythemes</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../openxlsx/index.html">openxlsx</a>, <a href="../hexbin/index.html">hexbin</a>, <a href="../MASS/index.html">MASS</a>, <a href="../magrittr/index.html">magrittr</a>, <a href="../markdown/index.html">markdown</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-14</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Issei Tsunoda [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Issei Tsunoda  &#x3c;&#x74;&#x73;&#x75;&#x6e;&#x6f;&#x64;&#x61;&#x2e;&#x69;&#x73;&#x73;&#x65;&#x69;&#x31;&#x31;&#x31;&#x31;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">BayesianFROC citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_BayesianFROC.html">BayesianFROC results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package BayesianFROC downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="BayesianFROC.pdf"> BayesianFROC.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Implemented_Models.html">FROC_Models</a><br/>
+<a href="vignettes/References.pdf">Using Annoy in C++</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/BayesianFROC_0.3.1.tar.gz"> BayesianFROC_0.3.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/BayesianFROC_0.3.1.zip">BayesianFROC_0.3.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/BayesianFROC_0.3.1.zip">BayesianFROC_0.3.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/BayesianFROC_0.3.1.zip">BayesianFROC_0.3.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/BayesianFROC_0.3.1.tgz">BayesianFROC_0.3.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/BayesianFROC_0.3.1.tgz">BayesianFROC_0.3.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/BayesianFROC"> BayesianFROC archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=BayesianFROC"><samp>https://CRAN.R-project.org/package=BayesianFROC</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,26 @@
+Package: mrbsizeR
+Type: Package
+Title: Scale Space Multiresolution Analysis of Random Signals
+Version: 1.0.1
+Author: Thimo Schuster [cre, aut],
+    Leena Pasanen [ctb],
+    Reinhard Furrer [ctb]
+Authors@R: c(person("Thimo", "Schuster", email = "thimo.schuster@gmail.com", role = c("cre", "aut")), 
+    person("Leena", "Pasanen", email = "leena.pasanen@oulu.fi", role = "ctb"),
+    person("Reinhard", "Furrer", email = "reinhard.furrer@math.uzh.ch", role = "ctb"))
+Maintainer: Thimo Schuster <thimo.schuster@gmail.com>
+Description: A method for the multiresolution analysis of spatial fields and images to capture scale-dependent features. mrbsizeR is based on scale space smoothing and uses differences of smooths at neighbouring scales for finding features on different scales. To infer which of the captured features are credible, Bayesian analysis is used.
+    The scale space multiresolution analysis has three steps: (1) Bayesian signal reconstruction. (2) Using differences of smooths, scale-dependent features of the reconstructed signal can be found. (3) Posterior credibility analysis of the differences of smooths created. The method has first been proposed by Holmstrom, Pasanen, Furrer, Sain (2011) <DOI:10.1016/j.csda.2011.04.011>.
+License: GPL-2
+URL: http://cc.oulu.fi/~lpasanen/MRBSiZer/
+LazyData: TRUE
+Depends: R (>= 3.0.0), maps(>= 3.1.1)
+Imports: fields (>= 8.10), stats (>= 3.0.0), grDevices(>= 3.0.0),
+        graphics(>= 3.0.0), methods(>= 3.0.0)
+RoxygenNote: 6.0.1
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-04-02 19:06:56 UTC; Thimo Schuster
+Repository: CRAN
+Date/Publication: 2017-04-03 06:17:17 UTC

@@ -1,0 +1,35 @@
+Package: spinifex
+Title: Manual Tours, Manual Control of Dynamic Projections of Numeric
+        Multivariate Data
+Version: 0.2.0
+Authors@R: c(
+    person("Nicholas", "Spyrison", email = "spyrison@gmail.com", role = c("aut", "cre")),
+    person("Dianne", "Cook", role = c("aut", "ths"))
+    )
+Description: Generates the path for manual tours
+  ['Cook' & 'Buja' (1997) <doi:10.2307/1390747>]. Tours are generally available in the
+  'tourr' package ['Wickham' 'et' 'al.' (2011) <doi:10.18637/jss.v040.i02>]. 
+  The grand tour is an algorithm that shows all possible projections given sufficient time. 
+  Guided uses projection pursuit to steer the tour towards interesting projections. 
+  The 'spinifex' package implements manual control, where the contribution of a selected variable 
+  can be adjusted between -1 to 1, to examine the sensitivity of structure in the data
+  to that variable. 
+  The result is an animation where the variable is toured into and out of the projection 
+  completely, which can be rendered using the 'gganimate' and 'plotly' packages.
+Depends: R (>= 3.4.0)
+License: CC BY-NC-SA 4.0
+URL: https://github.com/nspyrison/spinifex/
+BugReports: https://github.com/nspyrison/spinifex/issues
+Imports: tourr, ggplot2, gganimate, plotly, shiny
+Suggests: rmarkdown, knitr, testthat, covr, RColorBrewer, dplyr, GGally
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+NeedsCompilation: no
+Packaged: 2020-06-18 02:58:11 UTC; Nicholas Spyrison
+Author: Nicholas Spyrison [aut, cre],
+  Dianne Cook [aut, ths]
+Maintainer: Nicholas Spyrison <spyrison@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-06-18 10:40:03 UTC

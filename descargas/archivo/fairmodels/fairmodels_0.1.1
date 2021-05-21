@@ -1,0 +1,28 @@
+Package: fairmodels
+Type: Package
+Title: Flexible Tool for Bias Detection, Visualization, and Mitigation
+Version: 0.1.1
+Authors@R: 
+    c(person("Jakub", "Wiśniewski", role = c("aut", "cre"),
+             email = "jakwisn@gmail.com"),
+      person("Przemysław", "Biecek", role = c("aut"), 
+             comment = c(ORCID = "0000-0001-8423-1823")))
+Description: Measure fairness metrics in one place for many models. Check how big is model's bias towards different races, sex, nationalities etc. Use measures such as Statistical Parity, Equal odds to detect the discrimination against unprivileged groups. Visualize the bias using heatmap, radar plot, biplot, bar chart (and more!). There are various preprocessing and post-processing bias mitigation algorithms implemented.   
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5)
+Imports: DALEX, ggplot2, patchwork, ggdendro, ggrepel, scales
+Suggests: ranger, gbm, knitr, rmarkdown, covr, testthat, spelling
+RoxygenNote: 7.1.1.9000
+VignetteBuilder: knitr
+URL: https://modeloriented.github.io/fairmodels/
+BugReports: https://github.com/ModelOriented/fairmodels/issues
+Language: en-US
+NeedsCompilation: no
+Packaged: 2020-08-12 11:56:05 UTC; jakwisn
+Author: Jakub Wiśniewski [aut, cre],
+  Przemysław Biecek [aut] (<https://orcid.org/0000-0001-8423-1823>)
+Maintainer: Jakub Wiśniewski <jakwisn@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-08-20 08:50:02 UTC

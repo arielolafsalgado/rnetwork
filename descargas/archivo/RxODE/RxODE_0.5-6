@@ -1,0 +1,32 @@
+Package: RxODE
+Version: 0.5-6
+Date: 2016-11-01
+Title: Facilities for Simulating from ODE-Based Models
+Authors@R: c(
+   person("Melissa", "Hallow", 
+      role = "aut", email = "hallowkm@uga.edu"),
+   person("Matthew L.","Fidler",
+      role = "aut", email = "matthew.fidler@gmail.com"),
+   person("Wenping", "Wang", 
+      role = c("aut", "cre"), email = "wwang8198@gmail.com")
+   )
+Author: Melissa Hallow [aut], Matthew L. Fidler [aut], Wenping Wang [aut, cre]
+Maintainer: Wenping Wang <wwang8198@gmail.com>
+Depends: R (>= 3.0.0)
+Suggests: knitr, rmarkdown, shiny
+Imports: utils
+Description: Facilities for running simulations from ordinary 
+   differential equation (ODE) models, such as pharmacometrics and other 
+   compartmental models.  A compilation manager translates the ODE model 
+   into C, compiles it, and dynamically loads the object code into R for 
+   improved computational efficiency.  An event table object facilitates 
+   the specification of complex dosing regimens (optional) and sampling 
+   schedules.
+NeedsCompilation: yes
+VignetteBuilder: knitr
+SystemRequirements: GNU make
+License: GPL (>= 2)
+URL: https://www.r-project.org, https://github.com/hallowkm/RxODE
+Packaged: 2017-03-27 17:36:52 UTC; wangwez
+Repository: CRAN
+Date/Publication: 2017-03-28 06:11:49 UTC

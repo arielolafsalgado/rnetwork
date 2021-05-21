@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package piRF</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Prediction Intervals for Random Forests [R package piRF version 0.1.0]" />
+<meta name="citation_author1" content="Chancellor Johnstone" />
+<meta name="citation_author2" content="Haozhe Zhang" />
+<meta name="citation_publication_date" content="2020-05-12" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=piRF" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=piRF" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="piRF: Prediction Intervals for Random Forests" />
+<meta name="og:description" content="Implements multiple state-of-the-art prediction interval methodologies for random forests. These include: quantile regression intervals, out-of-bag intervals, bag-of-observations intervals, one-step boosted random forest intervals, bias-corrected intervals, high-density intervals, and split-conformal intervals. The implementations include a combination of novel adjustments to the original random forest methodology and novel prediction interval methodologies. All of these methodologies can be utilized using solely this package, rather than a collection of separate packages. Currently, only regression trees are supported. Also capable of handling high dimensional data. Roy, Marie-Helene and Larocque, Denis (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1177%2F0962280219829885&quot;&gt;doi:10.1177/0962280219829885&lt;/a&gt;&amp;gt;. Ghosal, Indrayudh and Hooker, Giles (2018) &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1803.08000&quot;&gt;arXiv:1803.08000&lt;/a&gt;&amp;gt;. Zhu, Lin and Lu, Jiaxin and Chen, Yihong (2019) &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1905.10101&quot;&gt;arXiv:1905.10101&lt;/a&gt;&amp;gt;. Zhang, Haozhe and Zimmerman, Joshua and Nettleton, Dan and Nordman, Daniel J. (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F00031305.2019.1585288&quot;&gt;doi:10.1080/00031305.2019.1585288&lt;/a&gt;&amp;gt;. Meinshausen, Nicolai (2006) &amp;lt;&lt;a href=&quot;http://www.jmlr.org/papers/volume7/meinshausen06a/meinshausen06a.pdf&quot;&gt;http://www.jmlr.org/papers/volume7/meinshausen06a/meinshausen06a.pdf&lt;/a&gt;&amp;gt;. Romano, Yaniv and Patterson, Evan and Candes, Emmanuel (2019) &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1905.03222&quot;&gt;arXiv:1905.03222&lt;/a&gt;&amp;gt;. Tung, Nguyen Thanh and Huang, Joshua Zhexue and Nguyen, Thuy Thi and Khan, Imran (2014) &amp;lt;&lt;a href=&quot;https://doi.org/10.13140%2F2.1.2500.8002&quot;&gt;doi:10.13140/2.1.2500.8002&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=piRF" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>piRF: Prediction Intervals for Random Forests</h2>
+<p>Implements multiple state-of-the-art prediction interval methodologies for random forests. 
+	These include: quantile regression intervals, out-of-bag intervals, bag-of-observations intervals, 
+	one-step boosted random forest intervals, bias-corrected intervals, high-density intervals, and 
+	split-conformal intervals. The implementations include a combination of novel adjustments to the 
+	original random forest methodology and novel prediction interval methodologies. All of these 
+	methodologies can be utilized using solely this package, rather than a collection of separate 
+	packages. Currently, only regression trees are supported. Also capable of handling high dimensional data. 
+	Roy, Marie-Helene and Larocque, Denis (2019) &lt;<a href="https://doi.org/10.1177%2F0962280219829885">doi:10.1177/0962280219829885</a>&gt;.
+	Ghosal, Indrayudh and Hooker, Giles (2018) &lt;<a href="https://arxiv.org/abs/1803.08000">arXiv:1803.08000</a>&gt;.
+	Zhu, Lin and Lu, Jiaxin and Chen, Yihong (2019) &lt;<a href="https://arxiv.org/abs/1905.10101">arXiv:1905.10101</a>&gt;.
+	Zhang, Haozhe and Zimmerman, Joshua and Nettleton, Dan and Nordman, Daniel J. (2019) &lt;<a href="https://doi.org/10.1080%2F00031305.2019.1585288">doi:10.1080/00031305.2019.1585288</a>&gt;.
+	Meinshausen, Nicolai (2006) &lt;<a href="http://www.jmlr.org/papers/volume7/meinshausen06a/meinshausen06a.pdf">http://www.jmlr.org/papers/volume7/meinshausen06a/meinshausen06a.pdf</a>&gt;.
+	Romano, Yaniv and Patterson, Evan and Candes, Emmanuel (2019) &lt;<a href="https://arxiv.org/abs/1905.03222">arXiv:1905.03222</a>&gt;.
+	Tung, Nguyen Thanh and Huang, Joshua Zhexue and Nguyen, Thuy Thi and Khan, Imran (2014) &lt;<a href="https://doi.org/10.13140%2F2.1.2500.8002">doi:10.13140/2.1.2500.8002</a>&gt;.</p>
+<table summary="Package piRF summary">
+<tr>
+<td>Version:</td>
+<td>0.1.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rdpack/index.html">Rdpack</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../devtools/index.html">devtools</a>, <a href="../foreach/index.html">foreach</a>, <a href="../doParallel/index.html">doParallel</a>, <a href="../hdrcde/index.html">hdrcde</a>, <a href="../rfinterval/index.html">rfinterval</a>, <a href="../ranger/index.html">ranger</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-05-12</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Chancellor Johnstone [cre, aut, cph],
+  Haozhe Zhang [aut, cph],
+  Martin Wright [ctb, cph],
+  Gregor DeCillia [ctb, cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Chancellor Johnstone  &#x3c;&#x63;&#x68;&#x61;&#x6e;&#x63;&#x65;&#x6c;&#x6c;&#x6f;&#x72;&#x2e;&#x6a;&#x6f;&#x68;&#x6e;&#x73;&#x74;&#x6f;&#x6e;&#x65;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://github.com/chancejohnstone/piRF">http://github.com/chancejohnstone/piRF</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_piRF.html">piRF results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package piRF downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="piRF.pdf"> piRF.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/piRF_0.1.0.tar.gz"> piRF_0.1.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/piRF_0.1.0.zip">piRF_0.1.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/piRF_0.1.0.zip">piRF_0.1.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/piRF_0.1.0.zip">piRF_0.1.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/piRF_0.1.0.tgz">piRF_0.1.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/piRF_0.1.0.tgz">piRF_0.1.0.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=piRF"><samp>https://CRAN.R-project.org/package=piRF</samp></a>
+to link to this page.</p>
+</body>
+</html>

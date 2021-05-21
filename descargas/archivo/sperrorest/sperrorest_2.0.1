@@ -1,0 +1,36 @@
+Package: sperrorest
+Type: Package
+Title: Perform Spatial Error Estimation and Variable Importance in
+        Parallel
+Description: Implements spatial error estimation and 
+   permutation-based variable importance measures for predictive models using 
+   spatial cross-validation and spatial block bootstrap.
+Version: 2.0.1
+Date: 2017-07-20
+Authors@R: c(
+      person("Alexander", "Brenning", , "alexander.brenning@uni-jena.de",
+        c("aut", "cre")),
+      person("Patrick", "Schratz", , "patrick.schratz@uni-jena.de",
+        c("aut")),
+      person("Tobias", "Herrmann", , "herrmann.tobias89@gmail.com",
+        "aut")  
+      )
+BugReports: https://github.com/pat-s/sperrorest/issues
+Depends: R (>= 2.10)
+Suggests: ipred, nnet, RSAGA, knitr, testthat, pacman, rmarkdown
+Imports: pbapply, pbmcapply, foreach, magrittr, future, doFuture, ROCR,
+        parallel, graphics, stats, rpart, purrr, stringr, gdata
+License: GPL-3
+LazyData: true
+LazyLoad: yes
+ByteCompile: true
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-07-20 22:25:52 UTC; pjs
+Author: Alexander Brenning [aut, cre],
+  Patrick Schratz [aut],
+  Tobias Herrmann [aut]
+Maintainer: Alexander Brenning <alexander.brenning@uni-jena.de>
+Repository: CRAN
+Date/Publication: 2017-07-21 06:10:54 UTC

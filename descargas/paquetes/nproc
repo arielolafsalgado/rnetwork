@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package nproc</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Neyman-Pearson (NP) Classification Algorithms and NP Receiver Operating Characteristic (NP-ROC) Curves [R package nproc version 2.1.5]" />
+<meta name="citation_author1" content="Yang Feng" />
+<meta name="citation_author2" content="Jessica Li" />
+<meta name="citation_author3" content="Xin Tong" />
+<meta name="citation_publication_date" content="2020-01-13" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=nproc" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=nproc" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="nproc: Neyman-Pearson (NP) Classification Algorithms and NP Receiver Operating Characteristic (NP-ROC) Curves" />
+<meta name="og:description" content="In many binary classification applications, such as disease diagnosis and spam detection, practitioners commonly face the need to limit type I error (i.e., the conditional probability of misclassifying a class 0 observation as class 1) so that it remains below a desired threshold. To address this need, the Neyman-Pearson (NP) classification paradigm is a natural choice; it minimizes type II error (i.e., the conditional probability of misclassifying a class 1 observation as class 0) while enforcing an upper bound, alpha, on the type I error. Although the NP paradigm has a century-long history in hypothesis testing, it has not been well recognized and implemented in classification schemes. Common practices that directly limit the empirical type I error to no more than alpha do not satisfy the type I error control objective because the resulting classifiers are still likely to have type I errors much larger than alpha. As a result, the NP paradigm has not been properly implemented for many classification scenarios in practice. In this work, we develop the first umbrella algorithm that implements the NP paradigm for all scoring-type classification methods, including popular methods such as logistic regression, support vector machines and random forests. Powered by this umbrella algorithm, we propose a novel graphical tool for NP classification methods: NP receiver operating characteristic (NP-ROC) bands, motivated by the popular receiver operating characteristic (ROC) curves. NP-ROC bands will help choose in a data adaptive way and compare different NP classifiers. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=nproc" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>nproc: Neyman-Pearson (NP) Classification Algorithms and NP Receiver
+Operating Characteristic (NP-ROC) Curves</h2>
+<p>In many binary classification applications, such as disease
+    diagnosis and spam detection, practitioners commonly face the need to limit
+    type I error (i.e., the conditional probability of misclassifying a class 0
+    observation as class 1) so that it remains below a desired threshold. To address
+    this need, the Neyman-Pearson (NP) classification paradigm is a natural choice;
+    it minimizes type II error (i.e., the conditional probability of misclassifying
+    a class 1 observation as class 0) while enforcing an upper bound, alpha, on the
+    type I error. Although the NP paradigm has a century-long history in hypothesis
+    testing, it has not been well recognized and implemented in classification
+    schemes. Common practices that directly limit the empirical type I error to
+    no more than alpha do not satisfy the type I error control objective because
+    the resulting classifiers are still likely to have type I errors much larger
+    than alpha. As a result, the NP paradigm has not been properly implemented
+    for many classification scenarios in practice. In this work, we develop the
+    first umbrella algorithm that implements the NP paradigm for all scoring-type
+    classification methods, including popular methods such as logistic regression,
+    support vector machines and random forests. Powered by this umbrella algorithm,
+    we propose a novel graphical tool for NP classification methods: NP receiver
+    operating characteristic (NP-ROC) bands, motivated by the popular receiver
+    operating characteristic (ROC) curves. NP-ROC bands will help choose in a data
+    adaptive way and compare different NP classifiers. </p>
+<table summary="Package nproc summary">
+<tr>
+<td>Version:</td>
+<td>2.1.5</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../glmnet/index.html">glmnet</a>, <a href="../e1071/index.html">e1071</a>, <a href="../randomForest/index.html">randomForest</a>, <a href="../naivebayes/index.html">naivebayes</a>, <a href="../MASS/index.html">MASS</a>, parallel, <a href="../ada/index.html">ada</a>, stats, graphics, <a href="../ROCR/index.html">ROCR</a>, <a href="../tree/index.html">tree</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-01-13</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Yang Feng [aut, cre],
+  Jessica Li [aut],
+  Xin Tong [aut],
+  Ye Tian [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Yang Feng  &#x3c;&#x79;&#x61;&#x6e;&#x67;&#x66;&#x65;&#x6e;&#x67;&#x73;&#x74;&#x61;&#x74;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://advances.sciencemag.org/content/4/2/eaao1659">http://advances.sciencemag.org/content/4/2/eaao1659</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">nproc citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="ChangeLog">ChangeLog</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_nproc.html">nproc results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package nproc downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="nproc.pdf"> nproc.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/nproc-demo.pdf">nproc demo</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/nproc_2.1.5.tar.gz"> nproc_2.1.5.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/nproc_2.1.5.zip">nproc_2.1.5.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/nproc_2.1.5.zip">nproc_2.1.5.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/nproc_2.1.5.zip">nproc_2.1.5.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/nproc_2.1.5.tgz">nproc_2.1.5.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/nproc_2.1.5.tgz">nproc_2.1.5.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/nproc"> nproc archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=nproc"><samp>https://CRAN.R-project.org/package=nproc</samp></a>
+to link to this page.</p>
+</body>
+</html>

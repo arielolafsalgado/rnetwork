@@ -1,0 +1,31 @@
+Package: i2dash
+Type: Package
+Title: Iterative and Interactive Dashboards
+Version: 0.2.1
+Authors@R: c(
+    person(given = "Arsenij", family = "Ustjanzew", email = "arsenij.ustjanzew@mpi-bn.mpg.de", role = c("aut", "cre", "cph")),
+    person(given = "Jens", family = "Preussner", email = "jens.preussner@mpi-bn.mpg.de", role = c("aut", "cph"), comment = c(ORCID = "0000-0003-1927-3458")),
+    person(given = "Mario", family = "Looso", email = "mario.looso@mpi-bn.mpg.de", role = c("aut", "cph"), comment = c(ORCID = "0000-0003-1495-9530")))
+Description: Create customized, web-based dashboards for data presentation, exploration and sharing. 'i2dash' integrates easily into existing data analysis pipelines and can organize scientific findings thematically across different pages and layouts.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+VignetteBuilder: knitr
+Imports: magrittr, knitr, flexdashboard, yaml, assertive.sets,
+        assertive.types, rmarkdown, stringr, stringi, glue, ymlthis,
+        methods, stats, utils
+Suggests: switchr, plotly, BiocStyle, xfun, htmltools, testthat,
+        ComplexHeatmap, digest, ggplot2, gt, kableExtra, forcats,
+        leaflet
+Collate: 'i2dashboard.R' 'AllGenerics.R' 'assemble.R' 'components.R'
+        'colormap.R' 'get_set.R' 'pages.R' 'reexports.R' 'sidebar.R'
+        'vis_objects.R'
+NeedsCompilation: no
+Packaged: 2020-05-27 14:06:40 UTC; austjan
+Author: Arsenij Ustjanzew [aut, cre, cph],
+  Jens Preussner [aut, cph] (<https://orcid.org/0000-0003-1927-3458>),
+  Mario Looso [aut, cph] (<https://orcid.org/0000-0003-1495-9530>)
+Maintainer: Arsenij Ustjanzew <arsenij.ustjanzew@mpi-bn.mpg.de>
+Repository: CRAN
+Date/Publication: 2020-05-27 15:00:02 UTC

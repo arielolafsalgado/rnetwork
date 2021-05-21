@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package momentuHMM</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=momentuHMM" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="momentuHMM: Maximum Likelihood Analysis of Animal Movement Behavior Using Multivariate Hidden Markov Models" />
+<meta name="og:description" content="Extended tools for analyzing telemetry data using generalized hidden Markov models. Features of momentuHMM (pronounced &amp;ldquo;momentum&amp;rdquo;) include data pre-processing and visualization, fitting HMMs to location and auxiliary biotelemetry or environmental data, biased and correlated random walk movement models, hierarchical HMMs, multiple imputation for incorporating location measurement error and missing data, user-specified design matrices and constraints for covariate modelling of parameters, random effects, decoding of the state process, visualization of fitted models, model checking and selection, and simulation. See McClintock and Michelot (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2F2041-210X.12995&quot;&gt;doi:10.1111/2041-210X.12995&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=momentuHMM" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>momentuHMM: Maximum Likelihood Analysis of Animal Movement Behavior Using
+Multivariate Hidden Markov Models</h2>
+<p>Extended tools for analyzing telemetry data using generalized hidden Markov models. Features of momentuHMM (pronounced &ldquo;momentum&rdquo;) include data pre-processing and visualization, fitting HMMs to location and auxiliary biotelemetry or environmental data, biased and correlated random walk movement models, hierarchical HMMs, multiple imputation for incorporating location measurement error and missing data, user-specified design matrices and constraints for covariate modelling of parameters, random effects, decoding of the state process, visualization of fitted models, model checking and selection, and simulation. See McClintock and Michelot (2018) &lt;<a href="https://doi.org/10.1111%2F2041-210X.12995">doi:10.1111/2041-210X.12995</a>&gt;.</p>
+<table summary="Package momentuHMM summary">
+<tr>
+<td>Version:</td>
+<td>1.5.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../doParallel/index.html">doParallel</a>, <a href="../foreach/index.html">foreach</a>, <a href="../numDeriv/index.html">numDeriv</a>, <a href="../CircStats/index.html">CircStats</a>, <a href="../crawl/index.html">crawl</a> (&ge;
+2.2.1), <a href="../ggmap/index.html">ggmap</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../mitools/index.html">mitools</a>, <a href="../moveHMM/index.html">moveHMM</a>, <a href="../raster/index.html">raster</a>, <a href="../argosfilter/index.html">argosfilter</a>, <a href="../car/index.html">car</a>, <a href="../mvtnorm/index.html">mvtnorm</a>, <a href="../sp/index.html">sp</a>, <a href="../MASS/index.html">MASS</a>, <a href="../Brobdingnag/index.html">Brobdingnag</a>, <a href="../conicfit/index.html">conicfit</a>, <a href="../nleqslv/index.html">nleqslv</a>, <a href="../survival/index.html">survival</a>, <a href="../qdapRegex/index.html">qdapRegex</a>, <a href="../geosphere/index.html">geosphere</a>, <a href="../prodlim/index.html">prodlim</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../magrittr/index.html">magrittr</a>, <a href="../doRNG/index.html">doRNG</a>, <a href="../scatterplot3d/index.html">scatterplot3d</a>, <a href="../data.tree/index.html">data.tree</a>, <a href="../lubridate/index.html">lubridate</a>, <a href="../extraDistr/index.html">extraDistr</a>, <a href="../rlang/index.html">rlang</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../setRNG/index.html">setRNG</a>, splines, <a href="../splines2/index.html">splines2</a> (&ge; 0.2.8), <a href="../R.rsp/index.html">R.rsp</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-03-06</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Brett McClintock, Theo Michelot</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Brett McClintock  &#x3c;&#x62;&#x72;&#x65;&#x74;&#x74;&#x2e;&#x6d;&#x63;&#x63;&#x6c;&#x69;&#x6e;&#x74;&#x6f;&#x63;&#x6b;&#x20;&#x61;&#x74;&#x20;&#x6e;&#x6f;&#x61;&#x61;&#x2e;&#x67;&#x6f;&#x76;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/bmcclintock/momentuHMM/issues">https://github.com/bmcclintock/momentuHMM/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/bmcclintock/momentuHMM">https://github.com/bmcclintock/momentuHMM</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">momentuHMM citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/SpatioTemporal.html">SpatioTemporal</a>, <a href="../../views/Tracking.html">Tracking</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_momentuHMM.html">momentuHMM results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package momentuHMM downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="momentuHMM.pdf"> momentuHMM.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/momentuHMM.pdf">Guide to using momentuHMM</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/momentuHMM_1.5.1.tar.gz"> momentuHMM_1.5.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/momentuHMM_1.5.1.zip">momentuHMM_1.5.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/momentuHMM_1.5.1.zip">momentuHMM_1.5.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/momentuHMM_1.5.1.zip">momentuHMM_1.5.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/momentuHMM_1.5.1.tgz">momentuHMM_1.5.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/momentuHMM_1.5.1.tgz">momentuHMM_1.5.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/momentuHMM"> momentuHMM archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=momentuHMM"><samp>https://CRAN.R-project.org/package=momentuHMM</samp></a>
+to link to this page.</p>
+</body>
+</html>

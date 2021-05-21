@@ -1,0 +1,27 @@
+Package: RNAseqNet
+Type: Package
+Title: Log-Linear Poisson Graphical Model with Hot-Deck Multiple
+        Imputation
+Version: 0.1.0
+Date: 2017-04-19
+Authors@R: c(person("Alyssa", "Imbert", role = c("aut"), email="alyssa.imbert@inra.fr"),
+             person("Nathalie", "Villa-Vialaneix", role = c("aut", "cre"), email="nathalie.villa-vialaneix@inra.fr"))
+Maintainer: Nathalie Villa-Vialaneix <nathalie.villa-vialaneix@inra.fr>
+Description: Infer log-linear Poisson Graphical Model with an auxiliary data
+    set. Hot-deck multiple imputation method is used to improve the reliability
+    of the inference with an auxiliary dataset. Standard log-linear Poisson 
+    graphical model can also be used for the inference and the Stability 
+    Approach for Regularization Selection (StARS) is implemented to drive the 
+    selection of the regularization parameter.
+License: GPL (>= 3)
+Repository: CRAN
+Depends: R (>= 3.1.0), ggplot2
+Imports: igraph (>= 1.0), hot.deck, PoiClaClu, glmnet
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2017-04-19 13:49:29 UTC; nathalie
+Author: Alyssa Imbert [aut],
+  Nathalie Villa-Vialaneix [aut, cre]
+Date/Publication: 2017-04-19 15:51:49 UTC

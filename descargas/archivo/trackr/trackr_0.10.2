@@ -1,0 +1,39 @@
+Package: trackr
+Type: Package
+Title: Semantic Annotation and Discoverability System for R-Based
+        Artifacts
+Version: 0.10.2
+Date: 2018-08-24
+Authors@R: c(
+    person("Gabriel", "Becker", role = c("aut", "cre"),
+        email = "becker.gabriel@gene.com"),
+    person("Sara", "Moore", role = c("aut"),
+        email = "moore.sara@gene.com"))
+Copyright: Genentech, Inc.
+Maintainer: Gabriel Becker <becker.gabriel@gene.com>
+Description: Automatically annotates R-based artifacts
+	     with relevant descriptive and provenance-related
+    	     and provides a backend-agnostic storage and
+	     discoverability system for organizing, retrieving, and
+	     interrogating such artifacts.
+License: Artistic-2.0
+Depends: histry (>= 0.2.1)
+Imports: fastdigest, ggplot2, lattice, gridGraphics, methods,
+        CodeDepends (>= 0.6.2), RJSONIO, rsolr, htmltools, miniUI,
+        shiny, rmarkdown, roprov (>= 0.1.1), rlang
+Suggests: proto, png, httr, knitr, MASS, MEMSS, mlmRev, dplyr,
+        gridExtra, rstudioapi, switchr (>= 0.12.99)
+VignetteBuilder: knitr
+Collate: 'Classes.R' 'DocCollectionRef-methods.R' 'Generics.R'
+        'PlotWrapper.R' 'ObjFeatureSet.R' 'Trackr-main-API.R'
+        'abbrev.R' 'accessor-methods.R' 'autotrack.R' 'backend-impls.R'
+        'coercerender.R' 'convenience_constructors.R'
+        'ggplotversions.R' 'knitr.R' 'makeRStudioExtras.R'
+        'parseCode.R' 'recordFile.R' 'shiny.R' 'showMethods.R'
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-08-28 21:10:34 UTC; beckerg4
+Author: Gabriel Becker [aut, cre],
+  Sara Moore [aut]
+Repository: CRAN
+Date/Publication: 2018-08-29 15:50:03 UTC

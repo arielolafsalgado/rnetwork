@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package lava</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Latent Variable Models [R package lava version 1.6.8]" />
+<meta name="citation_author" content="Klaus K. Holst" />
+<meta name="citation_publication_date" content="2020-09-26" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=lava" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=lava" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="lava: Latent Variable Models" />
+<meta name="og:description" content="A general implementation of Structural Equation Models with latent variables (MLE, 2SLS, and composite likelihood estimators) with both continuous, censored, and ordinal outcomes (Holst and Budtz-Joergensen (2013) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs00180-012-0344-y&quot;&gt;doi:10.1007/s00180-012-0344-y&lt;/a&gt;&amp;gt;). Mixture latent variable models and non-linear latent variable models (Holst and Budtz-Joergensen (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fbiostatistics%2Fkxy082&quot;&gt;doi:10.1093/biostatistics/kxy082&lt;/a&gt;&amp;gt;). The package also provides methods for graph exploration (d-separation, back-door criterion), simulation of general non-linear latent variable models, and estimation of influence functions for a broad range of statistical models." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=lava" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>lava: Latent Variable Models</h2>
+<p>A general implementation of Structural Equation Models
+	with latent variables (MLE, 2SLS, and composite likelihood
+	estimators) with both continuous, censored, and ordinal
+	outcomes (Holst and Budtz-Joergensen (2013) &lt;<a href="https://doi.org/10.1007%2Fs00180-012-0344-y">doi:10.1007/s00180-012-0344-y</a>&gt;).
+	Mixture latent variable models and non-linear latent variable models
+	(Holst and Budtz-Joergensen (2019) &lt;<a href="https://doi.org/10.1093%2Fbiostatistics%2Fkxy082">doi:10.1093/biostatistics/kxy082</a>&gt;).
+	The package also provides methods for graph exploration (d-separation,
+	back-door criterion), simulation of general non-linear latent variable
+	models, and estimation of influence functions for a broad range of
+	statistical models.</p>
+<table summary="Package lava summary">
+<tr>
+<td>Version:</td>
+<td>1.6.8</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>grDevices, graphics, methods, <a href="../numDeriv/index.html">numDeriv</a>, stats, <a href="../survival/index.html">survival</a>, <a href="../SQUAREM/index.html">SQUAREM</a>, utils</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../KernSmooth/index.html">KernSmooth</a>, <a href="../Matrix/index.html">Matrix</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/Rgraphviz.html"><span class="BioC">Rgraphviz</span></a>, <a href="../data.table/index.html">data.table</a>, <a href="../ellipse/index.html">ellipse</a>, <a href="../fields/index.html">fields</a>, <a href="../foreach/index.html">foreach</a>, <a href="../geepack/index.html">geepack</a>, gof (&ge; 0.9), <a href="http://www.bioconductor.org/packages/release/bioc/html/graph.html"><span class="BioC">graph</span></a>, <a href="../knitr/index.html">knitr</a>, <a href="../bookdown/index.html">bookdown</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../igraph/index.html">igraph</a> (&ge; 0.6), lava.tobit (&ge; 0.4.7), <a href="../lavaSearch2/index.html">lavaSearch2</a>, <a href="../lme4/index.html">lme4</a>, <a href="../magrittr/index.html">magrittr</a>, <a href="../mets/index.html">mets</a> (&ge; 1.1), <a href="../nlme/index.html">nlme</a>, <a href="../optimx/index.html">optimx</a>, <a href="../polycor/index.html">polycor</a>, <a href="../quantreg/index.html">quantreg</a>, <a href="../rgl/index.html">rgl</a>, <a href="../R.rsp/index.html">R.rsp</a> (&ge; 0.40), <a href="../testthat/index.html">testthat</a> (&ge; 0.11), <a href="../visNetwork/index.html">visNetwork</a>, <a href="../zoo/index.html">zoo</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-26</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Klaus K. Holst [aut, cre],
+  Brice Ozenne [ctb],
+  Thomas Gerds [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Klaus K. Holst  &#x3c;&#x6b;&#x6c;&#x61;&#x75;&#x73;&#x20;&#x61;&#x74;&#x20;&#x68;&#x6f;&#x6c;&#x73;&#x74;&#x2e;&#x69;&#x74;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/kkholst/lava/issues">https://github.com/kkholst/lava/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://kkholst.github.io/lava/">https://kkholst.github.io/lava/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">lava citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Psychometrics.html">Psychometrics</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_lava.html">lava results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package lava downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="lava.pdf"> lava.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/correlation.html">Estimating partial correlations with lava</a><br/>
+<a href="vignettes/gof.html">XXX</a><br/>
+<a href="vignettes/nonlinear.html">Non-linear latent variable models and error-in-variable models</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/lava_1.6.8.tar.gz"> lava_1.6.8.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/lava_1.6.8.zip">lava_1.6.8.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/lava_1.6.8.zip">lava_1.6.8.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/lava_1.6.8.zip">lava_1.6.8.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/lava_1.6.8.tgz">lava_1.6.8.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/lava_1.6.8.tgz">lava_1.6.8.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/lava"> lava archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package lava reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../lavaSearch2/index.html">lavaSearch2</a>, <a href="../mets/index.html">mets</a>, <a href="../targeted/index.html">targeted</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../BuyseTest/index.html">BuyseTest</a>, <a href="../prodlim/index.html">prodlim</a>, <a href="../Publish/index.html">Publish</a>, <a href="../riskRegression/index.html">riskRegression</a>, <a href="../SmoothHazard/index.html">SmoothHazard</a>, <a href="../timereg/index.html">timereg</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../pec/index.html">pec</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=lava"><samp>https://CRAN.R-project.org/package=lava</samp></a>
+to link to this page.</p>
+</body>
+</html>

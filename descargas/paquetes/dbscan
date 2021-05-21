@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package dbscan</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Density Based Clustering of Applications with Noise (DBSCAN) and Related Algorithms [R package dbscan version 1.1-5]" />
+<meta name="citation_author1" content="Michael Hahsler" />
+<meta name="citation_author2" content="Matthew Piekenbrock" />
+<meta name="citation_publication_date" content="2019-10-23" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=dbscan" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=dbscan" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="dbscan: Density Based Clustering of Applications with Noise (DBSCAN) and Related Algorithms" />
+<meta name="og:description" content="A fast reimplementation of several density-based algorithms of the DBSCAN family for spatial data. Includes the DBSCAN (density-based spatial clustering of applications with noise) and OPTICS (ordering points to identify the clustering structure) clustering algorithms HDBSCAN (hierarchical DBSCAN) and the LOF (local outlier factor) algorithm. The implementations use the kd-tree data structure (from library ANN) for faster k-nearest neighbor search. An R interface to fast kNN and fixed-radius NN search is also provided. See Hahsler M, Piekenbrock M and Doran D (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.18637%2Fjss.v091.i01&quot;&gt;doi:10.18637/jss.v091.i01&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=dbscan" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>dbscan: Density Based Clustering of Applications with Noise (DBSCAN) and
+Related Algorithms</h2>
+<p>A fast reimplementation of several density-based algorithms of
+    the DBSCAN family for spatial data. Includes the DBSCAN (density-based spatial
+    clustering of applications with noise) and OPTICS (ordering points to identify
+    the clustering structure) clustering algorithms HDBSCAN (hierarchical DBSCAN) and the LOF (local outlier
+    factor) algorithm. The implementations use the kd-tree data structure (from
+    library ANN) for faster k-nearest neighbor search. An R interface to fast kNN
+    and fixed-radius NN search is also provided. 
+    See Hahsler M, Piekenbrock M and Doran D (2019) &lt;<a href="https://doi.org/10.18637%2Fjss.v091.i01">doi:10.18637/jss.v091.i01</a>&gt;.</p>
+<table summary="Package dbscan summary">
+<tr>
+<td>Version:</td>
+<td>1.1-5</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 1.0.0), graphics, stats, methods</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../fpc/index.html">fpc</a>, <a href="../microbenchmark/index.html">microbenchmark</a>, <a href="../testthat/index.html">testthat</a>, <a href="../dendextend/index.html">dendextend</a>, <a href="../igraph/index.html">igraph</a>, <a href="../knitr/index.html">knitr</a>, <a href="../DMwR/index.html">DMwR</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-10-23</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Michael Hahsler [aut, cre, cph],
+  Matthew Piekenbrock [aut, cph],
+  Sunil Arya [ctb, cph],
+  David Mount [ctb, cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Michael Hahsler  &#x3c;&#x6d;&#x68;&#x61;&#x68;&#x73;&#x6c;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x6c;&#x79;&#x6c;&#x65;&#x2e;&#x73;&#x6d;&#x75;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/mhahsler/dbscan/issues">https://github.com/mhahsler/dbscan/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>Copyright:</td>
+<td>ANN library is copyright by University of Maryland, Sunil
+Arya and David Mount. All other code is copyright by Michael
+Hahsler and Matthew Piekenbrock.</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/mhahsler/dbscan">https://github.com/mhahsler/dbscan</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>C++11</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">dbscan citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Cluster.html">Cluster</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_dbscan.html">dbscan results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package dbscan downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="dbscan.pdf"> dbscan.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/hdbscan.html">HDBSCAN with the dbscan package</a><br/>
+<a href="vignettes/dbscan.pdf">Fast Density-based Clustering</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/dbscan_1.1-5.tar.gz"> dbscan_1.1-5.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/dbscan_1.1-5.zip">dbscan_1.1-5.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/dbscan_1.1-5.zip">dbscan_1.1-5.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/dbscan_1.1-5.zip">dbscan_1.1-5.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/dbscan_1.1-5.tgz">dbscan_1.1-5.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/dbscan_1.1-5.tgz">dbscan_1.1-5.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/dbscan"> dbscan archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package dbscan reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../ktaucenters/index.html">ktaucenters</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../AFM/index.html">AFM</a>, <a href="../Biopeak/index.html">Biopeak</a>, <a href="../BIRDS/index.html">BIRDS</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/celda.html"><span class="BioC">celda</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/CiteFuse.html"><span class="BioC">CiteFuse</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/CluMSID.html"><span class="BioC">CluMSID</span></a>, <a href="../cordillera/index.html">cordillera</a>, <a href="../DDoutlier/index.html">DDoutlier</a>, <a href="../dPCP/index.html">dPCP</a>, <a href="../eventstream/index.html">eventstream</a>, <a href="../funtimes/index.html">funtimes</a>, <a href="../haploReconstruct/index.html">haploReconstruct</a>, <a href="../maotai/index.html">maotai</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/miRSM.html"><span class="BioC">miRSM</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/optimalFlow.html"><span class="BioC">optimalFlow</span></a>, <a href="../ParBayesianOptimization/index.html">ParBayesianOptimization</a>, <a href="../rescue/index.html">rescue</a>, <a href="../smotefamily/index.html">smotefamily</a>, <a href="../stream/index.html">stream</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../diceR/index.html">diceR</a>, <a href="../EHRtemporalVariability/index.html">EHRtemporalVariability</a>, <a href="../FCPS/index.html">FCPS</a>, <a href="../ksharp/index.html">ksharp</a>, <a href="../mlr3cluster/index.html">mlr3cluster</a>, <a href="../opticskxi/index.html">opticskxi</a>, <a href="../OTclust/index.html">OTclust</a>, <a href="../performance/index.html">performance</a>, <a href="../shipunov/index.html">shipunov</a>, <a href="../supc/index.html">supc</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=dbscan"><samp>https://CRAN.R-project.org/package=dbscan</samp></a>
+to link to this page.</p>
+</body>
+</html>

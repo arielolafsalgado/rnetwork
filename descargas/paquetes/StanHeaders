@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package StanHeaders</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="C++ Header Files for Stan [R package StanHeaders version 2.21.0-6]" />
+<meta name="citation_author1" content="Ben Goodrich" />
+<meta name="citation_author2" content="Andrew Gelman" />
+<meta name="citation_author3" content="Bob Carpenter" />
+<meta name="citation_author4" content="Matt Hoffman" />
+<meta name="citation_author5" content="Daniel Lee" />
+<meta name="citation_author6" content="Michael Betancourt" />
+<meta name="citation_author7" content="Marcus Brubaker" />
+<meta name="citation_author8" content="Jiqiang Guo" />
+<meta name="citation_author9" content="Peter Li" />
+<meta name="citation_author10" content="Allen Riddell" />
+<meta name="citation_author11" content="Marco Inacio" />
+<meta name="citation_author12" content="Mitzi Morris" />
+<meta name="citation_author13" content="Jeffrey Arnold" />
+<meta name="citation_author14" content="Rob Goedman" />
+<meta name="citation_author15" content="Brian Lau" />
+<meta name="citation_author16" content="Rob Trangucci" />
+<meta name="citation_author17" content="Jonah Gabry" />
+<meta name="citation_author18" content="Alp Kucukelbir" />
+<meta name="citation_author19" content="Robert Grant" />
+<meta name="citation_author20" content="Dustin Tran" />
+<meta name="citation_author21" content="Michael Malecki" />
+<meta name="citation_author22" content="Yuanjun Gao" />
+<meta name="citation_publication_date" content="2020-08-16" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=StanHeaders" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=StanHeaders" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="StanHeaders: C++ Header Files for Stan" />
+<meta name="og:description" content="The C++ header files of the Stan project are provided by this package, but it contains little R code or documentation. The main reference is the vignette. There is a shared object containing part of the 'CVODES' library, but its functionality is not accessible from R. 'StanHeaders' is primarily useful for developers who want to utilize the 'LinkingTo' directive of their package's DESCRIPTION file to build on the Stan library without incurring unnecessary dependencies. The Stan project develops a probabilistic programming language that implements full or approximate Bayesian statistical inference via Markov Chain Monte Carlo or 'variational' methods and implements (optionally penalized) maximum likelihood estimation via optimization. The Stan library includes an advanced automatic differentiation scheme, 'templated' statistical and linear algebra functions that can handle the automatically 'differentiable' scalar types (and doubles, 'ints', etc.), and a parser for the Stan language. The 'rstan' package provides user-facing R functions to parse, compile, test, estimate, and analyze Stan models." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=StanHeaders" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>StanHeaders: C++ Header Files for Stan</h2>
+<p>The C++ header files of the Stan project are provided by this package, but it contains little R code or documentation. The main reference is the vignette. There is a shared object containing part of the 'CVODES' library, but its functionality is not accessible from R. 'StanHeaders' is primarily useful for developers who want to utilize the 'LinkingTo' directive of their package's DESCRIPTION file to build on the Stan library without incurring unnecessary dependencies. The Stan project develops a probabilistic programming language that implements full or approximate Bayesian statistical inference via Markov Chain Monte Carlo or 'variational' methods and implements (optionally penalized) maximum likelihood estimation via optimization. The Stan library includes an advanced automatic differentiation scheme, 'templated' statistical and linear algebra functions that can handle the automatically 'differentiable' scalar types (and doubles, 'ints', etc.), and a parser for the Stan language. The 'rstan' package provides user-facing R functions to parse, compile, test, estimate, and analyze Stan models.</p>
+<table summary="Package StanHeaders summary">
+<tr>
+<td>Version:</td>
+<td>2.21.0-6</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.4.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../RcppParallel/index.html">RcppParallel</a> (&ge; 5.0.1)</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../RcppEigen/index.html">RcppEigen</a>, <a href="../RcppParallel/index.html">RcppParallel</a> (&ge; 5.0.1)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../BH/index.html">BH</a>, <a href="../knitr/index.html">knitr</a> (&ge; 1.15.1), <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../Matrix/index.html">Matrix</a>, methods, <a href="../rstan/index.html">rstan</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-08-16</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Ben Goodrich [cre, aut],
+  Joshua Pritikin [ctb],
+  Andrew Gelman [aut],
+  Bob Carpenter [aut],
+  Matt Hoffman [aut],
+  Daniel Lee [aut],
+  Michael Betancourt [aut],
+  Marcus Brubaker [aut],
+  Jiqiang Guo [aut],
+  Peter Li [aut],
+  Allen Riddell [aut],
+  Marco Inacio [aut],
+  Mitzi Morris [aut],
+  Jeffrey Arnold [aut],
+  Rob Goedman [aut],
+  Brian Lau [aut],
+  Rob Trangucci [aut],
+  Jonah Gabry [aut],
+  Alp Kucukelbir [aut],
+  Robert Grant [aut],
+  Dustin Tran [aut],
+  Michael Malecki [aut],
+  Yuanjun Gao [aut],
+  Trustees of Columbia University [cph],
+  Lawrence Livermore National Security [cph] (CVODES),
+  The Regents of the University of California [cph] (CVODES),
+  Southern Methodist University [cph] (CVODES)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Ben Goodrich  &#x3c;&#x62;&#x65;&#x6e;&#x6a;&#x61;&#x6d;&#x69;&#x6e;&#x2e;&#x67;&#x6f;&#x6f;&#x64;&#x72;&#x69;&#x63;&#x68;&#x20;&#x61;&#x74;&#x20;&#x63;&#x6f;&#x6c;&#x75;&#x6d;&#x62;&#x69;&#x61;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/BSD_3_clause">BSD_3_clause</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://mc-stan.org/">https://mc-stan.org/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>pandoc</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">StanHeaders citation info</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_StanHeaders.html">StanHeaders results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package StanHeaders downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="StanHeaders.pdf"> StanHeaders.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/stanmath.html">Using the Stan Math C++ Library</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/StanHeaders_2.21.0-6.tar.gz"> StanHeaders_2.21.0-6.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/StanHeaders_2.21.0-6.zip">StanHeaders_2.21.0-6.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/StanHeaders_2.21.0-6.zip">StanHeaders_2.21.0-6.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/StanHeaders_2.21.0-6.zip">StanHeaders_2.21.0-6.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/StanHeaders_2.21.0-6.tgz">StanHeaders_2.21.0-6.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/StanHeaders_2.21.0-6.tgz">StanHeaders_2.21.0-6.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/StanHeaders"> StanHeaders archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package StanHeaders reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../bayesvl/index.html">bayesvl</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/IgGeneUsage.html"><span class="BioC">IgGeneUsage</span></a>, <a href="../llbayesireg/index.html">llbayesireg</a>, <a href="../rstan/index.html">rstan</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../modeltime/index.html">modeltime</a>, <a href="../PosteriorBootstrap/index.html">PosteriorBootstrap</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;linking&nbsp;to:</td>
+<td><a href="../baggr/index.html">baggr</a>, <a href="../bayes4psy/index.html">bayes4psy</a>, <a href="../bayesbr/index.html">bayesbr</a>, <a href="../bayesdfa/index.html">bayesdfa</a>, <a href="../beanz/index.html">beanz</a>, <a href="../bellreg/index.html">bellreg</a>, <a href="../blavaan/index.html">blavaan</a>, <a href="../bmgarch/index.html">bmgarch</a>, <a href="../bmlm/index.html">bmlm</a>, <a href="../breathteststan/index.html">breathteststan</a>, <a href="../bsem/index.html">bsem</a>, <a href="../CausalQueries/index.html">CausalQueries</a>, <a href="../cbq/index.html">cbq</a>, <a href="../CNVRG/index.html">CNVRG</a>, <a href="../conStruct/index.html">conStruct</a>, <a href="../ctsem/index.html">ctsem</a>, <a href="../DCPO/index.html">DCPO</a>, <a href="../DeLorean/index.html">DeLorean</a>, <a href="../densEstBayes/index.html">densEstBayes</a>, <a href="../dfpk/index.html">dfpk</a>, <a href="../eggCounts/index.html">eggCounts</a>, <a href="../EpiNow2/index.html">EpiNow2</a>, <a href="../fishflux/index.html">fishflux</a>, <a href="../gastempt/index.html">gastempt</a>, <a href="../glmmfields/index.html">glmmfields</a>, <a href="../hBayesDM/index.html">hBayesDM</a>, <a href="../hsstan/index.html">hsstan</a>, <a href="../idem/index.html">idem</a>, <a href="../MADPop/index.html">MADPop</a>, <a href="../metaBMA/index.html">metaBMA</a>, <a href="../MetaStan/index.html">MetaStan</a>, <a href="../mrbayes/index.html">mrbayes</a>, <a href="../multinma/index.html">multinma</a>, <a href="../OncoBayes2/index.html">OncoBayes2</a>, <a href="../OpenMx/index.html">OpenMx</a>, <a href="../pcFactorStan/index.html">pcFactorStan</a>, <a href="../ProbReco/index.html">ProbReco</a>, <a href="../prophet/index.html">prophet</a>, <a href="../psrwe/index.html">psrwe</a>, <a href="../publipha/index.html">publipha</a>, <a href="../qmix/index.html">qmix</a>, <a href="../rater/index.html">rater</a>, <a href="../RBesT/index.html">RBesT</a>, <a href="../Rlgt/index.html">Rlgt</a>, <a href="../rmdcev/index.html">rmdcev</a>, <a href="../rmsb/index.html">rmsb</a>, <a href="../rstan/index.html">rstan</a>, <a href="../rstanarm/index.html">rstanarm</a>, <a href="../rstanemax/index.html">rstanemax</a>, <a href="../rstap/index.html">rstap</a>, <a href="../spsurv/index.html">spsurv</a>, <a href="../ssMousetrack/index.html">ssMousetrack</a>, <a href="../survHE/index.html">survHE</a>, <a href="../thurstonianIRT/index.html">thurstonianIRT</a>, <a href="../tmbstan/index.html">tmbstan</a>, <a href="../trialr/index.html">trialr</a>, <a href="../visit/index.html">visit</a>, <a href="../walker/index.html">walker</a>, <a href="../YPBP/index.html">YPBP</a>, <a href="../YPPE/index.html">YPPE</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../rstanarm/index.html">rstanarm</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=StanHeaders"><samp>https://CRAN.R-project.org/package=StanHeaders</samp></a>
+to link to this page.</p>
+</body>
+</html>

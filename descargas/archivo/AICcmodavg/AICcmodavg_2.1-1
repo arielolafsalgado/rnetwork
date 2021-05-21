@@ -1,0 +1,19 @@
+Package: AICcmodavg
+Type: Package
+Title: Model Selection and Multimodel Inference Based on (Q)AIC(c)
+Version: 2.1-1
+Date: 2017-06-19
+Author: Marc J. Mazerolle <marc.mazerolle@sbf.ulaval.ca>.  
+Maintainer: Marc J. Mazerolle <marc.mazerolle@sbf.ulaval.ca>
+Depends: R (>= 3.0.0)
+Imports: methods, stats, graphics, lattice, MASS, Matrix, nlme, stats4,
+        survival, unmarked, VGAM, xtable
+Suggests: betareg, coxme, fitdistrplus, lavaan, lme4, maxlike, nnet,
+        ordinal, pscl, R2jags, R2OpenBUGS, R2WinBUGS
+Description: Functions to implement model selection and multimodel inference based on Akaike's information criterion (AIC) and the second-order AIC (AICc), as well as their quasi-likelihood counterparts (QAIC, QAICc) from various model object classes.  The package implements classic model averaging for a given parameter of interest or predicted values, as well as a shrinkage version of model averaging parameter estimates or effect sizes.  The package includes diagnostics and goodness-of-fit statistics for certain model types including those of 'unmarkedFit' classes estimating demographic parameters after accounting for imperfect detection probabilities.  Some functions also allow the creation of model selection tables for Bayesian models of the 'bugs' and 'rjags' classes.  Functions also implement model selection using BIC.  Objects following model selection and multimodel inference can be formatted to LaTeX using 'xtable' methods included in the package.
+License: GPL (>= 2)
+LazyLoad: yes
+Repository: CRAN
+NeedsCompilation: no
+Packaged: 2017-06-19 16:07:17 UTC; mazerolm
+Date/Publication: 2017-06-19 23:35:50 UTC

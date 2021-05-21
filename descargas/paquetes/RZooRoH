@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package RZooRoH</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=RZooRoH" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="RZooRoH: Partitioning of Individual Autozygosity into Multiple Homozygous-by-Descent Classes" />
+<meta name="og:description" content="Functions to identify Homozygous-by-Descent (HBD) segments associated with runs of homozygosity (ROH) and to estimate individual autozygosity (or inbreeding coefficient). HBD segments and autozygosity are assigned to multiple HBD classes with a model-based approach relying on a mixture of exponential distributions. The rate of the exponential distribution is distinct for each HBD class and defines the expected length of the HBD segments. These HBD classes are therefore related to the age of the segments (longer segments and smaller rates for recent autozygosity / recent common ancestor). The functions allow to estimate the parameters of the model (rates of the exponential distributions, mixing proportions), to estimate global and local autozygosity probabilities and to identify HBD segments with the Viterbi decoding. The method is fully described in Druet and Gautier (2017) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fmec.14324&quot;&gt;doi:10.1111/mec.14324&lt;/a&gt;&amp;gt;. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=RZooRoH" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>RZooRoH: Partitioning of Individual Autozygosity into Multiple
+Homozygous-by-Descent Classes</h2>
+<p>Functions to identify Homozygous-by-Descent (HBD) segments associated with runs of homozygosity (ROH) and to
+    estimate individual autozygosity (or inbreeding coefficient). HBD segments and autozygosity are assigned to multiple HBD classes
+    with a model-based approach relying on a mixture of exponential distributions. The rate of the exponential distribution is distinct
+    for each HBD class and defines the expected length of the HBD segments. These HBD classes are therefore related to the age of the
+    segments (longer segments and smaller rates for recent autozygosity / recent common ancestor). The functions allow to estimate the
+    parameters of the model (rates of the exponential distributions, mixing proportions), to estimate global and local autozygosity
+    probabilities and to identify HBD segments with the Viterbi decoding. The method is fully described in Druet and Gautier (2017)
+    &lt;<a href="https://doi.org/10.1111%2Fmec.14324">doi:10.1111/mec.14324</a>&gt;. </p>
+<table summary="Package RZooRoH summary">
+<tr>
+<td>Version:</td>
+<td>0.2.3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.2.0), methods</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../foreach/index.html">foreach</a>, <a href="../doParallel/index.html">doParallel</a>, parallel, <a href="../data.table/index.html">data.table</a>, <a href="../RColorBrewer/index.html">RColorBrewer</a>, <a href="../iterators/index.html">iterators</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-03-22</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Tom Druet, Naveen Kumar Kadri, Amandine Bertrand and Mathieu Gautier</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Tom Druet  &#x3c;&#x74;&#x6f;&#x6d;&#x2e;&#x64;&#x72;&#x75;&#x65;&#x74;&#x20;&#x61;&#x74;&#x20;&#x75;&#x6c;&#x69;&#x65;&#x67;&#x65;&#x2e;&#x62;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">RZooRoH citation info</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_RZooRoH.html">RZooRoH results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package RZooRoH downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="RZooRoH.pdf"> RZooRoH.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/zooroh-vignette.pdf">The RZooRoH package</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/RZooRoH_0.2.3.tar.gz"> RZooRoH_0.2.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/RZooRoH_0.2.3.zip">RZooRoH_0.2.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/RZooRoH_0.2.3.zip">RZooRoH_0.2.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/RZooRoH_0.2.3.zip">RZooRoH_0.2.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/RZooRoH_0.2.3.tgz">RZooRoH_0.2.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/RZooRoH_0.2.3.tgz">RZooRoH_0.2.3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/RZooRoH"> RZooRoH archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=RZooRoH"><samp>https://CRAN.R-project.org/package=RZooRoH</samp></a>
+to link to this page.</p>
+</body>
+</html>

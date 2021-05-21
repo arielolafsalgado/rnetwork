@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package psrwe</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=psrwe" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="psrwe: PS-Integrated Methods for Incorporating RWE in Clinical Studies" />
+<meta name="og:description" content="High-quality real-world data can be transformed into scientific real-world evidence (RWE) for regulatory and healthcare decision-making using proven analytical methods and techniques. For example, propensity score (PS) methodology can be applied to pre-select a subset of real-world data containing patients that are similar to those in the current clinical study in terms of covariates, and to stratify the selected patients together with those in the current study into more homogeneous strata. Then, methods such as power prior approach or composite likelihood approach can be applied in each stratum to draw inference for the parameters of interest. This package provides functions that implement the PS-integrated RWE analysis methods proposed in Wang et al. (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F10543406.2019.1657133&quot;&gt;doi:10.1080/10543406.2019.1657133&lt;/a&gt;&amp;gt;, Wang et al. (2020) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F10543406.2019.1684309&quot;&gt;doi:10.1080/10543406.2019.1684309&lt;/a&gt;&amp;gt; and Chen et al. (2020) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F10543406.2020.1730877&quot;&gt;doi:10.1080/10543406.2020.1730877&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=psrwe" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>psrwe: PS-Integrated Methods for Incorporating RWE in Clinical Studies</h2>
+<p>High-quality real-world data can be transformed into scientific
+    real-world evidence (RWE) for regulatory and healthcare decision-making
+    using proven analytical methods and techniques. For example, propensity
+    score (PS) methodology can be applied to pre-select a subset of real-world
+    data containing patients that are similar to those in the current clinical
+    study in terms of covariates, and to stratify the selected patients together
+    with those in the current study into more homogeneous strata. Then, methods
+    such as power prior approach or composite likelihood approach can be applied
+    in each stratum to draw inference for the parameters of interest. This
+    package provides functions that implement the PS-integrated RWE analysis
+    methods proposed in Wang et al. (2019) &lt;<a href="https://doi.org/10.1080%2F10543406.2019.1657133">doi:10.1080/10543406.2019.1657133</a>&gt;,
+    Wang et al. (2020) &lt;<a href="https://doi.org/10.1080%2F10543406.2019.1684309">doi:10.1080/10543406.2019.1684309</a>&gt; and Chen et al.
+    (2020) &lt;<a href="https://doi.org/10.1080%2F10543406.2020.1730877">doi:10.1080/10543406.2020.1730877</a>&gt;.</p>
+<table summary="Package psrwe summary">
+<tr>
+<td>Version:</td>
+<td>1.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>methods, R (&ge; 4.0), <a href="../rstan/index.html">rstan</a> (&ge; 2.19.3), <a href="../Rcpp/index.html">Rcpp</a> (&ge; 1.0.5)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>parallel (&ge; 3.2), <a href="../cowplot/index.html">cowplot</a> (&ge; 1.0.0), <a href="../dplyr/index.html">dplyr</a> (&ge; 0.8.5), <a href="../ggplot2/index.html">ggplot2</a> (&ge; 3.3.2), <a href="../randomForest/index.html">randomForest</a> (&ge; 4.6-14)</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../BH/index.html">BH</a> (&ge; 1.72.0-3), <a href="../rstan/index.html">rstan</a> (&ge; 2.19.3), <a href="../Rcpp/index.html">Rcpp</a> (&ge; 1.0.5), <a href="../RcppEigen/index.html">RcppEigen</a> (&ge; 0.3.3.7.0), <a href="../StanHeaders/index.html">StanHeaders</a> (&ge; 2.21.0-5)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../markdown/index.html">markdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-08</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Chenguang Wang [aut, cre]
+        Trustees of Columbia University [cph] (tools/make_cpp.R, R/stanmodels.R)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Chenguang Wang  &#x3c;&#x63;&#x77;&#x61;&#x6e;&#x67;&#x36;&#x38;&#x20;&#x61;&#x74;&#x20;&#x6a;&#x68;&#x6d;&#x69;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL (&ge; 3)</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>GNU make</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_psrwe.html">psrwe results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package psrwe downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="psrwe.pdf"> psrwe.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/vignette.html">psrwe: Propensity Score-Integrated Methods for Incorporating Real-World Evidence in Clinical Studies</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/psrwe_1.2.tar.gz"> psrwe_1.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/psrwe_1.2.zip">psrwe_1.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/psrwe_1.2.zip">psrwe_1.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/ReadMe">not available</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/psrwe_1.2.tgz">psrwe_1.2.tgz</a>, r-oldrel: not available </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=psrwe"><samp>https://CRAN.R-project.org/package=psrwe</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,29 @@
+Package: futility
+Type: Package
+Title: Interim Analysis of Operational Futility in Randomized Trials
+        with Time-to-Event Endpoints and Fixed Follow-Up
+Version: 0.3
+Date: 2019-01-31
+Authors@R: c(person("Yingying", "Zhuang", email = "yyzhuang@uw.edu", role = "aut"), person("Michal", "Juraska", email = "mjuraska@fredhutch.org", role = c("aut", "cre")), person("Doug", "Grove", email = "dgrove@scharp.org", role = "ctb"), person("Peter", "Gilbert", email = "pgilbert@scharp.org", role = "ctb"), person("Alexander", "Luedtke", email = "aluedtke@uw.edu", role = "ctb"), person("Sanne", "Roels", email = "sroels4@its.jnj.com", role = "ctb"), person("An", "Vandebosch", email = "AVANDEBO@its.jnj.com", role = "ctb"))
+BugReports: https://github.com/mjuraska/futility/issues
+Description: Randomized clinical trials commonly follow participants for a time-to-event efficacy endpoint for a fixed period of time. Consequently, at the time when the last enrolled participant completes their follow-up, the number of observed endpoints is a random variable. Assuming data collected through an interim timepoint, simulation-based estimation and inferential procedures in the standard right-censored failure time analysis framework are conducted for the distribution of the number of endpoints--in total as well as by treatment arm--at the end of the follow-up period. The future (i.e., yet unobserved) enrollment, endpoint, and dropout times are generated according to mechanisms specified in the simTrial() function in the 'seqDesign' package. A Bayesian model for the endpoint rate, offering the option to specify a robust mixture prior distribution, is used for generating future data (see the vignette for details). Inference can be restricted to participants who received treatment according to the protocol and are observed to be at risk for the endpoint at a specified timepoint. Plotting functions are provided for graphical display of results.
+License: GPL-2
+URL: https://github.com/mjuraska/futility
+Encoding: UTF-8
+LazyData: TRUE
+RoxygenNote: 6.1.1
+Imports: graphics, stats, utils
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-02-01 18:14:23 UTC; mjuraska
+Author: Yingying Zhuang [aut],
+  Michal Juraska [aut, cre],
+  Doug Grove [ctb],
+  Peter Gilbert [ctb],
+  Alexander Luedtke [ctb],
+  Sanne Roels [ctb],
+  An Vandebosch [ctb]
+Maintainer: Michal Juraska <mjuraska@fredhutch.org>
+Repository: CRAN
+Date/Publication: 2019-02-06 23:33:14 UTC

@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package fmcmc</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="A friendly MCMC framework [R package fmcmc version 0.4-0]" />
+<meta name="citation_author" content="George Vega Yon" />
+<meta name="citation_publication_date" content="2020-09-01" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=fmcmc" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=fmcmc" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="fmcmc: A friendly MCMC framework" />
+<meta name="og:description" content="Provides a friendly (flexible) Markov Chain Monte Carlo (MCMC) framework for implementing Metropolis-Hastings algorithm in a modular way allowing users to specify automatic convergence checker, personalized transition kernels, and out-of-the-box multiple MCMC chains using parallel computing. Most of the methods implemented in this package can be found in Brooks et al. (2011, ISBN 9781420079425). Among the methods included, we have: Haario (2001) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs11222-011-9269-5&quot;&gt;doi:10.1007/s11222-011-9269-5&lt;/a&gt;&amp;gt; Adaptive Metropolis, Vihola (2012) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs11222-011-9269-5&quot;&gt;doi:10.1007/s11222-011-9269-5&lt;/a&gt;&amp;gt; Robust Adaptive Metropolis, and Thawornwattana et al. (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.1214%2F17-BA1084&quot;&gt;doi:10.1214/17-BA1084&lt;/a&gt;&amp;gt; Mirror transition kernels." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=fmcmc" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>fmcmc: A friendly MCMC framework</h2>
+<p>Provides a friendly (flexible) Markov Chain Monte Carlo (MCMC)
+         framework for implementing Metropolis-Hastings algorithm in a modular way
+         allowing users to specify automatic convergence checker, personalized
+         transition kernels, and out-of-the-box multiple MCMC chains using
+         parallel computing. Most of the methods implemented in this package can
+         be found in Brooks et al. (2011, ISBN 9781420079425). Among the methods
+         included, we have: Haario (2001) &lt;<a href="https://doi.org/10.1007%2Fs11222-011-9269-5">doi:10.1007/s11222-011-9269-5</a>&gt;
+         Adaptive Metropolis, Vihola (2012) &lt;<a href="https://doi.org/10.1007%2Fs11222-011-9269-5">doi:10.1007/s11222-011-9269-5</a>&gt;
+         Robust Adaptive Metropolis, and Thawornwattana et
+         al. (2018) &lt;<a href="https://doi.org/10.1214%2F17-BA1084">doi:10.1214/17-BA1084</a>&gt; Mirror transition kernels.</p>
+<table summary="Package fmcmc summary">
+<tr>
+<td>Version:</td>
+<td>0.4-0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>parallel, <a href="../coda/index.html">coda</a>, stats, methods, <a href="../MASS/index.html">MASS</a>, <a href="../Matrix/index.html">Matrix</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../covr/index.html">covr</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../mcmc/index.html">mcmc</a>, <a href="../tinytest/index.html">tinytest</a>, <a href="../mvtnorm/index.html">mvtnorm</a>, <a href="../adaptMCMC/index.html">adaptMCMC</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-01</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>George Vega Yon <a href="https://orcid.org/0000-0002-3171-0844"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Paul Marjoram <a href="https://orcid.org/0000-0003-0824-7449"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb, ths],
+  National Cancer Institute (NCI) [fnd] (Grant Number 5P01CA196569-02),
+  Fabian Scheipl <a href="https://orcid.org/0000-0001-8172-3603"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [rev] (JOSS reviewer)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>George Vega Yon  &#x3c;&#x67;&#x2e;&#x76;&#x65;&#x67;&#x61;&#x79;&#x6f;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/USCbiostats/fmcmc/issues">https://github.com/USCbiostats/fmcmc/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/USCbiostats/fmcmc">https://github.com/USCbiostats/fmcmc</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">fmcmc citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> <a href="ChangeLog">ChangeLog</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_fmcmc.html">fmcmc results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package fmcmc downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="fmcmc.pdf"> fmcmc.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/user-defined-kernels.html">User-defined kernels</a><br/>
+<a href="vignettes/workflow-with-fmcmc.html">Workflow with fmcmc</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/fmcmc_0.4-0.tar.gz"> fmcmc_0.4-0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/fmcmc_0.4-0.zip">fmcmc_0.4-0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/fmcmc_0.4-0.zip">fmcmc_0.4-0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/fmcmc_0.4-0.zip">fmcmc_0.4-0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/fmcmc_0.4-0.tgz">fmcmc_0.4-0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/fmcmc_0.4-0.tgz">fmcmc_0.4-0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/fmcmc"> fmcmc archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package fmcmc reverse dependencies">
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../ergmito/index.html">ergmito</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=fmcmc"><samp>https://CRAN.R-project.org/package=fmcmc</samp></a>
+to link to this page.</p>
+</body>
+</html>

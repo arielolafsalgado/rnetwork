@@ -1,0 +1,76 @@
+Package: skimr
+Title: Compact and Flexible Summaries of Data
+Version: 2.0
+Authors@R: c(
+  person("Elin", "Waring", email="elin.waring@gmail.com", role = c("cre", "aut")),
+  person("Michael", "Quinn", email="msquinn@google.com", role = "aut"),
+  person("Amelia", "McNamara", email="amcnamara@smith.edu", role = "aut"),
+  person("Eduardo", "Arino de la Rubia", email="earino@gmail.com", role = "aut"),
+  person("Hao", "Zhu", email="haozhu233@gmail.com", role = "aut"),
+  person("Julia", "Lowndes", email="lowndes@nceas.ucsb.edu", role = 'ctb'),
+  person("Shannon", "Ellis", email="sellis18@jhmi.edu", role = "aut"),
+  person("Hope", "McLeod", email="hmgit2@gmail.com", role = 'ctb'),
+  person("Hadley", "Wickham", email="hadley@rstudio.com", role = 'ctb'),
+  person("Kirill", "Müller", email="krlmlr+r@mailbox.org", role = 'ctb'),
+  person(family = "RStudio, Inc.", role = "cph", comment = "Spark functions"),
+  person("Connor", "Kirkpatrick", email="hello@connorkirkpatrick.com", role = 'ctb'),
+  person("Scott", "Brenstuhl", email="brenstsr@miamioh.edu", role = 'ctb'),
+  person("Patrick", "Schratz", email="patrick.schratz@gmail.com", role = 'ctb'),
+  person("lbusett", "", email="lbusett@gmail.com", role='ctb'),
+  person("Mikko","Korpela", email="mvkorpel@iki.fi", role='ctb'),
+  person("Jennifer","Thompson", email="thompson.jennifer@gmail.com", role='ctb'),
+  person("Harris","McGehee", email="mcgehee.harris@gmail.com", role='ctb'),
+  person("Roepke","Mark",email="mroepke5@gmail.com",role='ctb'),
+  person("Patrick", "Kennedy", email="pkqstr@protonmail.com", role='ctb'),
+  person("Daniel", "Possenriede", email="possenriede@gmail.com", role='ctb')
+  )
+Description: A simple to use summary function that can be used with pipes
+    and displays nicely in the console. The default summary statistics may be
+    modified by the user as can the default formatting. Support for data frames
+    and vectors is included, and users can implement their own skim methods for
+    specific object types as described in a vignette. Default summaries include
+    support for inline spark graphs. Instructions for managing these on
+    specific operating systems are given in the "Using skimr" vignette and the
+    README.
+Depends: R (>= 3.1.2)
+Imports: cli, crayon, dplyr (>= 0.8.0), knitr (>= 1.2), magrittr (>=
+        1.5), purrr, repr, rlang (>= 0.3.1), stats, stringr (>= 1.1),
+        tibble (>= 2.0.0), tidyr (>= 1.0), tidyselect (>= 0.2.5)
+Suggests: covr, extrafont, rmarkdown, sf, testthat (>= 2.0.0), withr
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: https://docs.ropensci.org/skimr (website),
+        https://github.com/ropensci/skimr
+BugReports: https://github.com/ropensci/skimr/issues
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+Collate: 'deprecated.R' 'dplyr.R' 'stats.R' 'skim_with.R'
+        'get_skimmers.R' 'reshape.R' 'sfl.R' 'skim.R' 'skim_obj.R'
+        'skim_print.R' 'skimr-package.R' 'summary.R' 'utils.R'
+NeedsCompilation: no
+Packaged: 2019-11-13 01:12:15 UTC; elinwaring
+Author: Elin Waring [cre, aut],
+  Michael Quinn [aut],
+  Amelia McNamara [aut],
+  Eduardo Arino de la Rubia [aut],
+  Hao Zhu [aut],
+  Julia Lowndes [ctb],
+  Shannon Ellis [aut],
+  Hope McLeod [ctb],
+  Hadley Wickham [ctb],
+  Kirill Müller [ctb],
+  RStudio, Inc. [cph] (Spark functions),
+  Connor Kirkpatrick [ctb],
+  Scott Brenstuhl [ctb],
+  Patrick Schratz [ctb],
+  lbusett [ctb],
+  Mikko Korpela [ctb],
+  Jennifer Thompson [ctb],
+  Harris McGehee [ctb],
+  Roepke Mark [ctb],
+  Patrick Kennedy [ctb],
+  Daniel Possenriede [ctb]
+Maintainer: Elin Waring <elin.waring@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-11-21 11:40:02 UTC

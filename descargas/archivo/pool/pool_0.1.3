@@ -1,0 +1,32 @@
+Package: pool
+Type: Package
+Title: Object Pooling
+Version: 0.1.3
+Authors@R: c(
+    person("Barbara", "Borges", email = "barbara@rstudio.com",
+      role = c("aut", "cre")),
+    person(family = "RStudio", role = "cph")
+    )
+Description: Enables the creation of object pools, which make it less
+    computationally expensive to fetch a new object. Currently the
+    only supported pooled objects are 'DBI' connections.
+License: GPL-3
+Depends: R (>= 3.0.0), methods
+Imports: DBI, R6, dplyr, dbplyr, later
+Suggests: testthat, tibble, RSQLite, RMySQL
+URL: https://github.com/rstudio/pool
+BugReports: https://github.com/rstudio/pool/issues
+LazyData: TRUE
+Collate: 'utils.R' 'scheduler.R' 'pool.R' 'pool-methods.R' 'object.R'
+        'DBI.R' 'DBI-connection-interpolate.R' 'DBI-connection-quote.R'
+        'DBI-connection-sql.R' 'DBI-connection-transaction.R'
+        'DBI-connection.R' 'DBI-driver.R' 'DBI-object-deprecated.R'
+        'DBI-object.R' 'DBI-pool.R' 'dbplyr.R'
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-11-03 22:44:37 UTC; barbaraborges
+Author: Barbara Borges [aut, cre],
+  RStudio [cph]
+Maintainer: Barbara Borges <barbara@rstudio.com>
+Repository: CRAN
+Date/Publication: 2017-11-03 23:27:36 UTC

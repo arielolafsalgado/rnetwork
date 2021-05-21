@@ -1,0 +1,49 @@
+Encoding: UTF-8
+Package: inctools
+Type: Package
+Title: Incidence Estimation Tools
+Version: 1.0.10
+Date: 2017-04-13
+Authors@R: c(
+  person("Alex","Welte", email="alexwelte@sun.ac.za", role="aut"),
+  person("Eduard","Grebe",email="eduardgrebe@sun.ac.za",role=c("cre","aut")),
+  person("Avery","McIntosh",email="avery.i.mcintosh@gmail.com",role="aut"),
+  person("Petra","Bäumler",email="petra.baeumler@med.uni-muenich.de",role="aut"),
+  person("Reshma","Kassanjee", role="ctb"),
+  person("Hilmarie","Brand", role="ctb"),
+  person("Cari","Van Schalkwyk", role="ctb"),
+  person("Yuruo","Li",email="yul123@pitt.edu", role="ctb"),
+  person("Simon","Daniel",email="skjdaniel@gmail.com", role="ctb"),
+  person("Stefano","Ongarello", email="stefano.ongarello@finddx.org", role="aut"),
+  person("Yusuke","Asai", email="yusuke.asai@yahoo.de", role="ctb")
+  )
+Description: Tools for estimating incidence from biomarker data in cross-
+    sectional surveys, and for calibrating tests for recent infection. 
+    Implements and extends the method of Kassanjee et al. (2012)
+    <doi:10.1097/EDE.0b013e3182576c07>.
+URL: http://www.incidence-estimation.org/page/inctools
+BugReports: https://github.com/SACEMA/inctools/issues
+Depends: R (>= 3.2.1)
+License: GPL-3
+LazyData: True
+Imports: stats, cubature, ggplot2, glm2, MASS, magrittr, dplyr, plyr,
+        pracma, foreach, parallel, doParallel, utils
+Suggests: survey, knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-04-13 19:59:49 UTC; eduardgrebe
+Author: Alex Welte [aut],
+  Eduard Grebe [cre, aut],
+  Avery McIntosh [aut],
+  Petra Bäumler [aut],
+  Reshma Kassanjee [ctb],
+  Hilmarie Brand [ctb],
+  Cari Van Schalkwyk [ctb],
+  Yuruo Li [ctb],
+  Simon Daniel [ctb],
+  Stefano Ongarello [aut],
+  Yusuke Asai [ctb]
+Maintainer: Eduard Grebe <eduardgrebe@sun.ac.za>
+Repository: CRAN
+Date/Publication: 2017-04-13 20:41:36 UTC

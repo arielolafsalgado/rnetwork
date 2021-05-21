@@ -1,0 +1,16 @@
+Package: BallMapper
+Type: Package
+Title: The Ball Mapper Algorithm
+Version: 0.1.0
+Authors@R: person("Pawel", "Dlotko", email = "pdlotko@gmail.com", role = c("aut", "cre"))
+Description: The core algorithm is described in "Ball mapper: a shape summary for topological data analysis" by Pawel Dlotko, (2019) <arXiv:1901.07410>. Ball Mapper provide a topologically accurate summary of a data in a form of an abstract graph. To create it, please provide the coordinates of points (in the points array), values of a function of interest at those points (can be initialized randomly if you do not have it) and the value epsilon which is the radius of the ball in the Ball Mapper construction. It can be understood as the minimal resolution on which we use to create the model of the data. 
+Maintainer: Pawel Dlotko <pdlotko@gmail.com>
+License: MIT + file LICENCE
+Encoding: UTF-8
+LazyData: true
+Imports: igraph, scales, networkD3, testthat, fields, methods
+NeedsCompilation: no
+Packaged: 2019-07-23 19:43:56 UTC; Tomasz
+Author: Pawel Dlotko [aut, cre]
+Repository: CRAN
+Date/Publication: 2019-07-26 11:10:03 UTC

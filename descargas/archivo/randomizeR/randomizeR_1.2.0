@@ -1,0 +1,47 @@
+Package: randomizeR
+Title: Randomization for Clinical Trials
+Version: 1.2.0
+Date: 2016-03-11
+Authors@R: c(
+    person(given="David", family="Schindler", email="dschindler@ukaachen.de", role="aut"),
+    person(given="Diane", family="Uschner", email="duschner@ukaachen.de", role=c("aut","cre")),
+    person(given="Martin", family="Manolov", email="martin.manolov@rwth-aachen.de", role="ctb"),
+	person(given="Thi Mui", family="Pham", email="thi.mui.pham@rwth-aachen.de", role="ctb"),
+	person(given="Ralf-Dieter", family="Hilgers", email="rhilgers@ukaachen.de", role=c("aut","ths")),
+	person(given="Nicole", family="Heussen", email="nheussen@ukaachen.de", role=c("aut","ths"))
+    )
+Description: This tool enables the user to choose a randomization procedure
+    based on sound scientific criteria. It comprises the generation of
+    randomization sequences as well the assessment of randomization procedures
+    based on carefully selected criteria. Furthermore, randomizeR provides a
+    function for the comparison of randomization procedures.
+Depends: R (>= 3.2.4), methods, ggplot2, plotrix
+License: GPL (>= 3)
+LazyData: true
+Collate: 'getDesign.R' 'randPar.R' 'abcdPar.R' 'randSeq.R' 'abcdSeq.R'
+        'getExpectation.R' 'normEndp.R' 'endpoint.R' 'util.R'
+        'getStat.R' 'power.R' 'imbalance.R' 'corGuess.R' 'testDec.R'
+        'doublyT.R' 'chronBias.R' 'selBias.R' 'bias.R' 'issue.R'
+        'assess.R' 'bbcdPar.R' 'bbcdSeq.R' 'ebcPar.R' 'bsdPar.R'
+        'bsdSeq.R' 'chenPar.R' 'chenSeq.R' 'chronBiasStepT.R'
+        'combinedBias.R' 'compare.R' 'crPar.R' 'crSeq.R'
+        'createParam.R' 'ebcSeq.R' 'gbcdPar.R' 'gbcdSeq.R' 'hadaPar.R'
+        'hadaSeq.R' 'mpPar.R' 'mpSeq.R' 'pbrPar.R' 'pbrSeq.R'
+        'rtbdSeq.R' 'rpbrSeq.R' 'randomBlockSeq.R'
+        'randomizeROverview.R' 'randomizeRPackage.R' 'rarPar.R'
+        'rarSeq.R' 'rpbrPar.R' 'tbdPar.R' 'rtbdPar.R' 'saveAssess.R'
+        'saveRand.R' 'tbdSeq.R' 'udPar.R' 'udSeq.R'
+Suggests: testthat, knitr, quantreg
+VignetteBuilder: knitr
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-03-11 13:56:49 UTC; duschner
+Author: David Schindler [aut],
+  Diane Uschner [aut, cre],
+  Martin Manolov [ctb],
+  Thi Mui Pham [ctb],
+  Ralf-Dieter Hilgers [aut, ths],
+  Nicole Heussen [aut, ths]
+Maintainer: Diane Uschner <duschner@ukaachen.de>
+Repository: CRAN
+Date/Publication: 2016-03-12 00:19:09

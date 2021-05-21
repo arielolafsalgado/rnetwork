@@ -1,0 +1,20 @@
+Package: sievePH
+Type: Package
+Title: Sieve Analysis Methods for Proportional Hazards Models
+Version: 1.0.0
+Authors@R: c(person("Michal", "Juraska", email = "mjuraska@fredhutch.org", role = c("aut", "cre")), person("Stephanie", "Wu", email = "swu18@uw.edu", role = "ctb"))
+Description: Implements semiparametric estimation and testing procedures for a continuous, possibly multivariate, mark-specific hazard ratio (treatment/placebo) of an event of interest in a randomized treatment efficacy trial with a time-to-event endpoint, as described in Juraska M and Gilbert PB (2013), Mark-specific hazard ratio model with multivariate continuous marks: an application to vaccine efficacy. Biometrics 69(2):328 337, and in Juraska M and Gilbert PB (2015), Mark-specific hazard ratio model with missing multivariate marks. Lifetime Data Analysis 22(4): 606-25. The former considers continuous multivariate marks fully observed in all subjects who experience the event of interest, whereas the latter extends the previous work to allow multivariate marks that are subject to missingness-at-random. For models with missing marks, two estimators are implemented based on (i) inverse probability weighting (IPW) of complete cases, and (ii) augmentation of the IPW estimating functions by leveraging correlations between the mark and auxiliary data to 'impute' the expected profile score vectors for subjects with missing marks. The augmented IPW estimator is doubly robust and recommended for use with incomplete mark data. The methods make two key assumptions: (i) the time-to-event is assumed to be conditionally independent of the mark given treatment, and (ii) the weight function in the semiparametric density ratio/biased sampling model is assumed to be exponential. Diagnostic testing procedures for evaluating validity of both assumptions are implemented. Summary and plotting functions are provided for estimation and inferential results.
+URL: https://github.com/mjuraska/sievePH
+BugReports: https://github.com/mjuraska/sievePH/issues
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports: graphics, stats, survival
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-02-22 21:30:12 UTC; mjuraska
+Author: Michal Juraska [aut, cre],
+  Stephanie Wu [ctb]
+Maintainer: Michal Juraska <mjuraska@fredhutch.org>
+Repository: CRAN
+Date/Publication: 2019-02-26 16:20:03 UTC

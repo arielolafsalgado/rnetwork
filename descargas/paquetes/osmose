@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package osmose</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Object Oriented Simulator of Marine Ecosystems [R package osmose version 3.3.4]" />
+<meta name="citation_author1" content="Yunne-Jai Shin" />
+<meta name="citation_author2" content="Travers Morgane" />
+<meta name="citation_author3" content="Verley Philippe" />
+<meta name="citation_author4" content="Ricardo Oliveros-Ramos" />
+<meta name="citation_author5" content="Laure Velez" />
+<meta name="citation_publication_date" content="2020-04-28" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=osmose" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=osmose" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="osmose: Object Oriented Simulator of Marine Ecosystems" />
+<meta name="og:description" content="The multispecies and individual-based model (IBM) 'OSMOSE' (Shin and Curry (2001) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2FS0990-7440%2801%2901106-8&quot;&gt;doi:10.1016/S0990-7440(01)01106-8&lt;/a&gt;&amp;gt; and Shin and Curry (2004) &amp;lt;&lt;a href=&quot;https://doi.org/10.1139%2Ff03-154&quot;&gt;doi:10.1139/f03-154&lt;/a&gt;&amp;gt;) focuses on fish species. This model assumes opportunistic predation based on spatial co-occurrence and size adequacy between a predator and its prey (size-based opportunistic predation). It represents fish individuals grouped into schools, which are characterized by their size, weight, age, taxonomy and geographical location (2D model), and which undergo major processes of fish life cycle (growth, explicit predation, natural and starvation mortalities, reproduction and migration) and fishing exploitation. The model needs basic biological parameters that are often available for a wide range of species, and which can be found in 'FishBase' for instance (see &amp;lt;&lt;a href=&quot;http://www.fishbase.org/search.php&quot;&gt;http://www.fishbase.org/search.php&lt;/a&gt;&amp;gt;), and fish spatial distribution data. This package provides tools to build and run simulations using the 'OSMOSE' model." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=osmose" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>osmose: Object Oriented Simulator of Marine Ecosystems</h2>
+<p>The multispecies and individual-based model (IBM) 'OSMOSE'
+  (Shin and Curry (2001) &lt;<a href="https://doi.org/10.1016%2FS0990-7440%2801%2901106-8">doi:10.1016/S0990-7440(01)01106-8</a>&gt; and Shin and Curry 
+  (2004) &lt;<a href="https://doi.org/10.1139%2Ff03-154">doi:10.1139/f03-154</a>&gt;) focuses on fish species. This model assumes 
+  opportunistic predation based on spatial co-occurrence and size adequacy 
+  between a predator and its prey (size-based opportunistic predation). It
+  represents fish individuals grouped into schools, which are characterized by 
+  their size, weight, age, taxonomy and geographical location (2D model), and 
+  which undergo major processes of fish life cycle (growth, explicit predation, 
+  natural and starvation mortalities, reproduction and migration) and fishing 
+  exploitation. The model needs basic biological parameters that are often 
+  available for a wide range of species, and which can be found in 'FishBase' 
+  for instance (see &lt;<a href="http://www.fishbase.org/search.php">http://www.fishbase.org/search.php</a>&gt;), and fish spatial 
+  distribution data. This package provides tools to build and run simulations 
+  using the 'OSMOSE' model.</p>
+<table summary="Package osmose summary">
+<tr>
+<td>Version:</td>
+<td>3.3.4</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>graphics, grDevices, <a href="../rlist/index.html">rlist</a>, stats, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../stringr/index.html">stringr</a>, utils, <a href="../ncdf4/index.html">ncdf4</a>, <a href="../mgcv/index.html">mgcv</a>, <a href="../fields/index.html">fields</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-04-28</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Yunne-Jai Shin <a href="https://orcid.org/0000-0002-7259-9265"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Travers Morgane <a href="https://orcid.org/0000-0003-1493-662X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Verley Philippe <a href="https://orcid.org/0000-0002-5686-2764"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Ricardo Oliveros-Ramos
+    <a href="https://orcid.org/0000-0002-8069-2101"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Laure Velez [aut],
+  Nicolas Barrier <a href="https://orcid.org/0000-0002-1693-4719"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [cre],
+  Criscely Lujan [ctb],
+  Michael Hurtado [ctb],
+  Wencheng Lau-Medrano [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Nicolas Barrier  &#x3c;&#x6e;&#x69;&#x63;&#x6f;&#x6c;&#x61;&#x73;&#x2e;&#x62;&#x61;&#x72;&#x72;&#x69;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x69;&#x72;&#x64;&#x2e;&#x66;&#x72;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/osmose-model/osmose/issues">https://github.com/osmose-model/osmose/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="http://www.cecill.info/licences/Licence_CeCILL_V2-en.txt">CeCILL</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://www.osmose-model.org/">http://www.osmose-model.org/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>Java (&gt;= 8)</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_osmose.html">osmose results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package osmose downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="osmose.pdf"> osmose.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/create_run_read.html">Creates a folder with basic files for a running. Then, run the model and read the outputs.</a><br/>
+<a href="vignettes/plot_method.html">Plot method demonstration</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/osmose_3.3.4.tar.gz"> osmose_3.3.4.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/osmose_3.3.4.zip">osmose_3.3.4.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/osmose_3.3.4.zip">osmose_3.3.4.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/osmose_3.3.4.zip">osmose_3.3.4.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/osmose_3.3.4.tgz">osmose_3.3.4.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/osmose_3.3.4.tgz">osmose_3.3.4.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/osmose"> osmose archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=osmose"><samp>https://CRAN.R-project.org/package=osmose</samp></a>
+to link to this page.</p>
+</body>
+</html>

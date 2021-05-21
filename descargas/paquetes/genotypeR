@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package genotypeR</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="SNP Genotype Marker Design and Analysis [R package genotypeR version 0.0.1.8]" />
+<meta name="citation_author1" content="Stephen Alfred Sefick" />
+<meta name="citation_author2" content="Magdelena A Castronova" />
+<meta name="citation_author3" content="Laurie S Stevison" />
+<meta name="citation_publication_date" content="2018-05-22" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=genotypeR" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=genotypeR" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="genotypeR: SNP Genotype Marker Design and Analysis" />
+<meta name="og:description" content="We implement a common genotyping workflow with a standardized software interface. 'genotypeR' designs genotyping markers from vcf files, outputs markers for multiplexing suitability on various platforms (Sequenom and Illumina GoldenGate), and provides various QA/QC and analysis functions. We developed this package to analyze data in Stevison LS, SA Sefick, CA Rushton, and RM Graze. 2017. Invited Review: Recombination rate plasticity: revealing mechanisms by design. Philosophical Transactions Royal Society London B Biol Sci 372:1-14. &amp;lt;&lt;a href=&quot;https://doi.org/10.1098%2Frstb.2016.0459&quot;&gt;doi:10.1098/rstb.2016.0459&lt;/a&gt;&amp;gt;, and have published it here Sefick, S.A., M.A. Castronova, and L.S. Stevison. 2017. GENOTYPER: An integrated R packages for single nuleotide polymorphism genotype marker design and data analysis. Methods in Ecology and Evolution 9: 1318-1323. &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2F2041-210X.12965&quot;&gt;doi:10.1111/2041-210X.12965&lt;/a&gt;&amp;gt;. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=genotypeR" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>genotypeR: SNP Genotype Marker Design and Analysis</h2>
+<p>We implement a common genotyping workflow with a standardized software interface. 'genotypeR' designs genotyping markers from vcf files, outputs markers for multiplexing suitability on various platforms (Sequenom and Illumina GoldenGate), and provides various QA/QC and analysis functions. We developed this package to analyze data in Stevison LS, SA Sefick, CA Rushton, and RM Graze. 2017. Invited Review: Recombination rate plasticity: revealing mechanisms by design. Philosophical Transactions Royal Society London B Biol Sci 372:1-14. &lt;<a href="https://doi.org/10.1098%2Frstb.2016.0459">doi:10.1098/rstb.2016.0459</a>&gt;, and have published it here Sefick, S.A., M.A. Castronova, and L.S. Stevison. 2017. GENOTYPER: An integrated R packages for single nuleotide polymorphism genotype marker design and data analysis. Methods in Ecology and Evolution 9: 1318-1323. &lt;<a href="https://doi.org/10.1111%2F2041-210X.12965">doi:10.1111/2041-210X.12965</a>&gt;.  </p>
+<table summary="Package genotypeR summary">
+<tr>
+<td>Version:</td>
+<td>0.0.1.8</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3.2)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>methods, <a href="../reshape2/index.html">reshape2</a>, <a href="../plyr/index.html">plyr</a>, <a href="../doBy/index.html">doBy</a>, <a href="../zoo/index.html">zoo</a>, <a href="../colorspace/index.html">colorspace</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../qtl/index.html">qtl</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2018-05-22</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Stephen Alfred Sefick [aut, cre],
+  Magdelena A Castronova [aut],
+  Laurie S Stevison [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Stephen Alfred Sefick  &#x3c;&#x73;&#x73;&#x65;&#x66;&#x69;&#x63;&#x6b;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL (&ge; 3)</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/StevisonLab/genotypeR">https://github.com/StevisonLab/genotypeR</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>The SequenomMarkers() marker design function
+requires 'vcftools' and 'Perl' on 'windows', and, in addition,
+'awk' and 'bash' on '*nix'.</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">genotypeR citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_genotypeR.html">genotypeR results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package genotypeR downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="genotypeR.pdf"> genotypeR.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/genotypeR.html">Vignette Title</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/genotypeR_0.0.1.8.tar.gz"> genotypeR_0.0.1.8.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/genotypeR_0.0.1.8.zip">genotypeR_0.0.1.8.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/genotypeR_0.0.1.8.zip">genotypeR_0.0.1.8.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/genotypeR_0.0.1.8.zip">genotypeR_0.0.1.8.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/genotypeR_0.0.1.8.tgz">genotypeR_0.0.1.8.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/genotypeR_0.0.1.8.tgz">genotypeR_0.0.1.8.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/genotypeR"> genotypeR archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=genotypeR"><samp>https://CRAN.R-project.org/package=genotypeR</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,25 @@
+Package: genBaRcode
+Title: Analysis and Visualization Tools for Genetic Barcode Data
+Version: 1.2.2
+Author: Lars Thielecke <lars.thielecke@tu-dresden.de>
+Maintainer: Lars Thielecke <lars.thielecke@tu-dresden.de>
+Description: Provides the necessary functions to identify and extract a selection of already available barcode constructs (Cornils, K. et al. (2014) <doi:10.1093/nar/gku081>) and freely choosable barcode designs from next generation sequence (NGS) data. Furthermore, it offers the possibility to account for sequence errors, the calculation of barcode similarities and provides a variety of visualisation tools (Thielecke, L. et al. (2017) <doi:10.1038/srep43249>).
+Depends: R (>= 3.4)
+License: LGPL
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+Suggests: testthat, knitr, rmarkdown
+Imports: methods, RColorBrewer, ape, ggnetwork, ggplot2, ggraph,
+        igraph, network, phangorn, stringdist, visNetwork, reshape2,
+        S4Vectors, shiny, ggseqlogo, ggtree, dplyr, VennDiagram,
+        futile.logger, future, future.apply, tools, ShortRead,
+        Biostrings
+RoxygenNote: 6.1.1
+Collate: 'BCdata-class.R' 'BCdata-class-methods.R'
+        'analysis_functions.R' 'data.R' 'error_correction_function.R'
+        'helper_functions.R' 'plot_functions.R' 'raw_data_processing.R'
+NeedsCompilation: no
+Packaged: 2019-10-25 12:04:00 UTC; LT
+Repository: CRAN
+Date/Publication: 2019-10-25 15:10:02 UTC

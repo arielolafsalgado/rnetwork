@@ -1,0 +1,32 @@
+Package: taxlist
+Version: 0.1.2
+Encoding: UTF-8
+Date: 2017-08-05
+Title: Handling Taxonomic Lists
+Author: Miguel Alvarez <kamapu78@gmail.com>
+Maintainer: Miguel Alvarez <kamapu78@gmail.com>
+Depends: R(>= 3.0.0), stats, utils
+Imports: foreign, methods, taxize, vegdata
+Suggests: devtools, knitr, stringi, rmarkdown
+LazyData: true
+Description: Handling taxonomic lists through objects of class 'taxlist'.
+    This package provides functions to import species lists from 'Turboveg'
+    (<https://www.synbiosys.alterra.nl/turboveg>) and the possibility to create
+    backups from resulting R-objects.
+    Also quick displays are implemented in the summary-methods.
+License: GPL (>= 2)
+URL: https://cran.r-project.org/package=taxlist,
+        https://github.com/kamapu/taxlist
+BugReports: https://github.com/kamapu/taxlist/issues
+Collate: 'NULLing.R''taxlist-class.R''clean.R''as.list.R'
+        'taxon_names.R''taxon_relations.R''taxon_traits.R''taxon_views.R'
+        'levels.R''add_concept.R''add_synonym.R''add_view.R''accepted_name.R'
+        'add_level.R''add_parent.R''get_children.R'
+        'change_concept.R''Extract.R''subset.R' 'merge_taxa.R'
+        'backup_object.R''summary.R'
+        'df2taxlist.R''tv2taxlist.R''tnrs.R' 'StartMessage.R'
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-08-06 20:51:20 UTC; m_alvarez
+Repository: CRAN
+Date/Publication: 2017-08-06 21:00:10 UTC

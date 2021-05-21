@@ -1,0 +1,39 @@
+Package: testextra
+Type: Package
+Title: Extract Test Blocks
+Version: 0.1.0
+Authors@R: c( 
+    person("Andrew", "Redd", role = c("aut", "cre")
+          , email = "andrew.redd@hsc.utah.edu"
+          , comment = c(ORCID = "https://orcid.org/000-0002-6149-2438")
+          ), 
+    person("R Documentation Task Force", role=c("cph")
+          , comment = c(url = "https://rdoctaskforce.github.io/")
+          ),
+    person("R Consortium", role="fnd"
+          , comment = c(url = "https://www.r-consortium.org")
+          ))
+Maintainer: Andrew Redd <andrew.redd@hsc.utah.edu>
+Description: A collection of testing enhancements and utilities.
+    Including utilities for extracting inline test blocks from 
+    package source files.
+License: GPL-2
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+Imports: assertthat, methods, parsetools, pkgcond, postlogic, purrr,
+        rlang, stringi, testthat, utils
+Suggests: covr, devtools, withr, rstudioapi, htmltools, shiny, yaml, DT
+RoxygenNote: 6.1.1
+Collate: 'extract_tests.R' 'catch_condition.R' 'inheritance.R'
+        'new_namespace.R' 'strings.R' 'util-testing.R' 'validity.R'
+        'coverage.R'
+URL: https://github.com/RDocTaskForce/testextra
+BugReports: https://github.com/RDocTaskForce/testextra/issues
+NeedsCompilation: no
+Packaged: 2019-01-11 19:40:58 UTC; u0092104
+Author: Andrew Redd [aut, cre] (<https://orcid.org/000-0002-6149-2438>),
+  R Documentation Task Force [cph] (https://rdoctaskforce.github.io/),
+  R Consortium [fnd] (https://www.r-consortium.org)
+Repository: CRAN
+Date/Publication: 2019-01-18 22:30:03 UTC

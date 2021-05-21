@@ -1,0 +1,16 @@
+Package: SQB
+Title: Sequential Bagging on Regression
+Description: Methodology: Remove one observation. Training the rest of data that are sampled without replacement and given this observation's input, predict the response back. Replicate this N times and for each response, take a sample from these replicates with replacement. Average each responses of sample and again replicate this step N time for each observation. Approximate these N new responses and generate another N responses y'. Training these y' and predict to have N responses of each testing observation. The average of N is the final prediction. Each observation will do the same.
+Version: 0.1
+Author: Moshu Xie <mxie622@gmail.com>
+Maintainer: Moshu Xie <mxie622@gmail.com>
+Depends: R (>= 3.2.5), rpart , parallel , epandist , triangle, caret
+Suggests: MASS
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-05-08 09:40:47 UTC; mikexie
+Repository: CRAN
+Date/Publication: 2018-05-09 09:31:35 UTC

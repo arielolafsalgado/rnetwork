@@ -1,0 +1,35 @@
+Package: FuzzyAHP
+Type: Package
+Title: (Fuzzy) AHP Calculation
+Version: 0.6.1
+Date: 2016-03-14
+Authors@R: c(person("Jan", "Caha", email = "cahik@atlas.cz",
+  role = c("aut", "cre")),
+  person("Aneta", "Drážná", email = "",
+  role = c("ctb", "com")))
+URL: http://github.com/JanCaha/FuzzyAHP/
+Description: Calculation of AHP (Analytic Hierarchy Process - <http://en.wikipedia.org/wiki/Analytic_hierarchy_process>)
+    with classic and fuzzy weights based on Saaty's pairwise comparison method for determination of weights.
+Encoding: UTF-8
+Depends: R (>= 3.0.0), methods
+Suggests: knitr
+License: LGPL (>= 3)
+LazyData: TRUE
+VignetteBuilder: knitr
+RoxygenNote: 5.0.1
+Collate: 'class-FuzzyData.R' 'class-PairwiseComparisonMatrix.R'
+        'class-FuzzyPairwiseComparisonMatrix.R' 'class-FuzzyWeights.R'
+        'class-Weights.R' 'function-bindFuzzyData.R'
+        'function-calculateAHP.R' 'function-calculateWeights.R'
+        'function-compare.R' 'function-consistencyRatio.R'
+        'function-defuzzify.R' 'function-getFuzzyNumbers.R'
+        'function-internal-optimization.R' 'function-print.R'
+        'function-strictConsistency.R' 'function-weakConsistency.R'
+        'package-FuzzyAHP.R'
+NeedsCompilation: no
+Packaged: 2016-04-05 09:41:13 UTC; Cahik
+Author: Jan Caha [aut, cre],
+  Aneta Drážná [ctb, com]
+Maintainer: Jan Caha <cahik@atlas.cz>
+Repository: CRAN
+Date/Publication: 2016-04-06 15:31:29

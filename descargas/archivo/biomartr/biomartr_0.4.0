@@ -1,0 +1,32 @@
+Package: biomartr
+Title: Genomic Data Retrieval
+Version: 0.4.0
+Author: Hajk-Georg Drost
+Maintainer: Hajk-Georg Drost <hgd23@cam.ac.uk>
+Description: Perform metagenomic data retrieval and functional annotation
+    retrieval. In detail, this package aims to provide users with a standardized
+    way to automate genome, proteome, coding sequence ('CDS'), 'GFF', and metagenome
+    retrieval from 'NCBI' and 'ENSEMBL' databases. Furthermore, an interface to the 'BioMart' database
+    (Smedley et al. (2009) <doi:10.1186/1471-2164-10-22>) allows users to retrieve
+    functional annotation for genomic loci. Users can download entire databases such
+    as 'NCBI RefSeq' (Pruitt et al. (2007) <doi:10.1093/nar/gkl842>), 'NCBI nr',
+    'NCBI nt' and 'NCBI Genbank' (Benson et al. (2013) <doi:10.1093/nar/gks1195>) as
+    well as 'ENSEMBL' and 'ENSEMBLGENOMES' with only one command.
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Depends: R (>= 3.1.1)
+Imports: biomaRt, Biostrings, stringi, curl, tibble, jsonlite,
+        data.table (>= 1.9.4), dplyr (>= 0.3.0), readr (>= 0.2.2),
+        downloader (>= 0.3), RCurl (>= 1.95-4.5), XML (>= 3.98-1.1),
+        httr (>= 0.6.1), stringr (>= 0.6.2)
+Suggests: knitr (>= 1.6), rmarkdown (>= 0.3.3), devtools (>= 1.6.1),
+        testthat
+License: GPL-3
+LazyData: true
+URL: https://github.com/HajkD/biomartr
+BugReports: https://github.com/HajkD/biomartr/issues
+RoxygenNote: 6.0.1
+Encoding: UTF-8
+Packaged: 2017-03-13 20:36:54 UTC; h-gd
+Repository: CRAN
+Date/Publication: 2017-03-14 06:58:21

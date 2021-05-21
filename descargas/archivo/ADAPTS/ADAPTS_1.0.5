@@ -1,0 +1,25 @@
+Package: ADAPTS
+Type: Package
+Title: Automated Deconvolution Augmentation of Profiles for Tissue
+        Specific Cells
+Version: 1.0.5
+Author: Samuel A Danziger
+Maintainer: Samuel A Danziger <sam.danziger@gmail.com>
+Copyright: Bristol-Myers Squibb
+Description: Tools to construct (or add to) cell-type signature matrices using flow sorted or single cell samples and deconvolve bulk gene expression data.
+    Useful for assessing the quality of single cell RNAseq experiments, estimating the accuracy of signature matrices, and determining cell-type spillover. 
+    Please cite: Danziger SA et al. (2019) ADAPTS: Automated Deconvolution Augmentation of Profiles for Tissue Specific cells <doi:10.1371/journal.pone.0224693>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Depends: R (>= 3.3.0)
+biocViews:
+Imports: missForest, e1071, WGCNA, ComICS, pheatmap, doParallel,
+        quantmod, preprocessCore, pcaMethods, foreach, nnls, ranger
+Suggests: R.rsp, DeconRNASeq
+VignetteBuilder: R.rsp
+NeedsCompilation: no
+Packaged: 2020-08-31 17:13:24 UTC; sdanziger
+Repository: CRAN
+Date/Publication: 2020-08-31 21:50:06 UTC

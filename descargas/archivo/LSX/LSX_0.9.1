@@ -1,0 +1,22 @@
+Package: LSX
+Type: Package
+Title: Latent Semantic Scaling
+Date: 2020-09-14
+Version: 0.9.1
+Authors@R: person("Kohei", "Watanabe", email = "watanabe.kohei@gmail.com", role = c("aut", "cre", "cph"))
+Description: A word embeddings-based semisupervised model for document scaling Watanabe (2017) <doi:10.1177/0267323117695735>.
+    LSS allows users to analyze large and complex corpora on arbitrary dimensions with seed words exploiting efficiency of word embeddings (SVD, Glove).
+License: GPL-3
+LazyData: TRUE
+Encoding: UTF-8
+Depends: quanteda (>= 2.0), quanteda.textmodels, methods, R (>= 3.5.0)
+Imports: digest, Matrix, RSpectra, irlba, rsvd, rsparse, proxyC,
+        grDevices, stats, ggplot2, ggrepel, reshape2, e1071
+Suggests: testthat
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2020-09-14 04:41:03 UTC; kohei
+Author: Kohei Watanabe [aut, cre, cph]
+Maintainer: Kohei Watanabe <watanabe.kohei@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-09-14 21:10:14 UTC

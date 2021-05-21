@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package hesim</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Health-Economic Simulation Modeling and Decision Analysis [R package hesim version 0.4.1]" />
+<meta name="citation_author1" content="Devin Incerti" />
+<meta name="citation_author2" content="Jeroen P. Jansen" />
+<meta name="citation_publication_date" content="2020-10-05" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=hesim" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=hesim" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="hesim: Health-Economic Simulation Modeling and Decision Analysis" />
+<meta name="og:description" content="A modular and computationally efficient R package for parameterizing, simulating, and analyzing health-economic simulation models. The package supports cohort discrete time state transition models (Briggs et al. 1998) &amp;lt;&lt;a href=&quot;https://doi.org/10.2165%2F00019053-199813040-00003&quot;&gt;doi:10.2165/00019053-199813040-00003&lt;/a&gt;&amp;gt;, N-state partitioned survival models (Glasziou et al. 1990) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fsim.4780091106&quot;&gt;doi:10.1002/sim.4780091106&lt;/a&gt;&amp;gt;, and individual-level continuous time state transition models (Siebert et al. 2012) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.jval.2012.06.014&quot;&gt;doi:10.1016/j.jval.2012.06.014&lt;/a&gt;&amp;gt;, encompassing both Markov (time-homogeneous and time-inhomogeneous) and semi-Markov processes. Decision uncertainty from a cost-effectiveness analysis is quantified with standard graphical and tabular summaries of a probabilistic sensitivity analysis (Claxton et al. 2005, Barton et al. 2008) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fhec.985&quot;&gt;doi:10.1002/hec.985&lt;/a&gt;&amp;gt;, &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fj.1524-4733.2008.00358.x&quot;&gt;doi:10.1111/j.1524-4733.2008.00358.x&lt;/a&gt;&amp;gt;. Use of C++ and data.table make individual-patient simulation, probabilistic sensitivity analysis, and incorporation of patient heterogeneity fast." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=hesim" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>hesim: Health-Economic Simulation Modeling and Decision Analysis</h2>
+<p>A modular and computationally efficient R package for  
+  parameterizing, simulating, and analyzing health-economic simulation 
+  models. The package supports cohort discrete time state transition models 
+  (Briggs et al. 1998) &lt;<a href="https://doi.org/10.2165%2F00019053-199813040-00003">doi:10.2165/00019053-199813040-00003</a>&gt;,
+  N-state partitioned survival models (Glasziou et al. 1990)
+  &lt;<a href="https://doi.org/10.1002%2Fsim.4780091106">doi:10.1002/sim.4780091106</a>&gt;, and individual-level continuous 
+  time state transition models (Siebert et al. 2012) &lt;<a href="https://doi.org/10.1016%2Fj.jval.2012.06.014">doi:10.1016/j.jval.2012.06.014</a>&gt;,
+  encompassing both Markov (time-homogeneous and time-inhomogeneous) and 
+  semi-Markov processes. Decision uncertainty from a cost-effectiveness analysis is 
+  quantified with standard graphical and tabular summaries of a probabilistic 
+  sensitivity analysis (Claxton et al. 2005, Barton et al. 2008) &lt;<a href="https://doi.org/10.1002%2Fhec.985">doi:10.1002/hec.985</a>&gt;, 
+  &lt;<a href="https://doi.org/10.1111%2Fj.1524-4733.2008.00358.x">doi:10.1111/j.1524-4733.2008.00358.x</a>&gt;. Use of C++ and data.table
+  make individual-patient simulation, probabilistic sensitivity analysis, 
+  and incorporation of patient heterogeneity fast.</p>
+<table summary="Package hesim summary">
+<tr>
+<td>Version:</td>
+<td>0.4.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../data.table/index.html">data.table</a>, <a href="../flexsurv/index.html">flexsurv</a>, <a href="../MASS/index.html">MASS</a>, <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.16), <a href="../R6/index.html">R6</a>, stats, <a href="../survival/index.html">survival</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../covr/index.html">covr</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../kableExtra/index.html">kableExtra</a>, <a href="../knitr/index.html">knitr</a>, <a href="../mstate/index.html">mstate</a>, <a href="../msm/index.html">msm</a>, <a href="../nnet/index.html">nnet</a>, <a href="../numDeriv/index.html">numDeriv</a>, <a href="../pracma/index.html">pracma</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../scales/index.html">scales</a>, <a href="../testthat/index.html">testthat</a>, <a href="../truncnorm/index.html">truncnorm</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-05</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Devin Incerti [aut, cre],
+  Jeroen P. Jansen [aut],
+  R Core Team [ctb] (hesim uses some slightly modified C functions from
+    base R)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Devin Incerti  &#x3c;&#x64;&#x65;&#x76;&#x69;&#x6e;&#x2e;&#x69;&#x6e;&#x63;&#x65;&#x72;&#x74;&#x69;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/hesim-dev/hesim/issues">https://github.com/hesim-dev/hesim/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://hesim-dev.github.io/hesim/">https://hesim-dev.github.io/hesim/</a>,
+<a href="https://github.com/hesim-dev/hesim">https://github.com/hesim-dev/hesim</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>C++11</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_hesim.html">hesim results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package hesim downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="hesim.pdf"> hesim.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/cea.html">Cost-effectiveness analysis</a><br/>
+<a href="vignettes/expected-values.html">Simulating costs and quality-adjusted life-years</a><br/>
+<a href="vignettes/intro.html">Introduction to hesim</a><br/>
+<a href="vignettes/markov-cohort.html">Simple Markov cohort model</a><br/>
+<a href="vignettes/markov-inhomogeneous-cohort.html">Time inhomogeneous Markov cohort models</a><br/>
+<a href="vignettes/markov-inhomogeneous-indiv.html">Time inhomogeneous Markov individual-level models</a><br/>
+<a href="vignettes/mlogit.html">Markov models with multinomial logistic regression</a><br/>
+<a href="vignettes/mstate.html">Markov and semi-Markov multi-state models</a><br/>
+<a href="vignettes/psm.html">Partitioned survival models</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/hesim_0.4.1.tar.gz"> hesim_0.4.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/hesim_0.4.1.zip">hesim_0.4.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/hesim_0.4.1.zip">hesim_0.4.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/hesim_0.4.1.zip">hesim_0.4.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/hesim_0.4.1.tgz">hesim_0.4.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/hesim_0.4.1.tgz">hesim_0.4.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/hesim"> hesim archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=hesim"><samp>https://CRAN.R-project.org/package=hesim</samp></a>
+to link to this page.</p>
+</body>
+</html>

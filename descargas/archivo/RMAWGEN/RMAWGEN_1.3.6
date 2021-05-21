@@ -1,0 +1,27 @@
+Package: RMAWGEN
+Maintainer: Emanuele Cordano <emanuele.cordano@gmail.com>
+License: GPL (>= 2)
+Title: Multi-Site Auto-Regressive Weather GENerator
+Type: Package
+Author: Emanuele Cordano, Emanuele Eccel
+Description: S3 and S4 functions are implemented for spatial multi-site
+    stochastic generation of daily time series of temperature and
+    precipitation. These tools make use of Vector AutoRegressive models (VARs).
+    The weather generator model is then saved as an object and is calibrated by
+    daily instrumental "Gaussianized" time series through the 'vars' package
+    tools. Once obtained this model, it can it can be used for weather
+    generations and be adapted to work with several climatic monthly time
+    series.
+Version: 1.3.6
+Repository: CRAN
+Date/Publication: 2019-11-15 17:20:02 UTC
+Packaged: 2019-11-15 10:15:28 UTC; root
+Date: 2019-11-13
+Depends: R (>= 2.10),chron,date,vars,methods
+Suggests: RgoogleMaps,lubridate
+URL: https://github.com/ecor/RMAWGEN,
+        https://docs.google.com/file/d/0B66otCUk3Bv6V3RPbm1mUG4zVHc/edit,
+        http://presentations.copernicus.org/EGU2012-14026_presentation.pdf,
+        http://presentations.copernicus.org/EGU2012-5404_presentation.pdf
+RoxygenNote: 6.1.1
+NeedsCompilation: no

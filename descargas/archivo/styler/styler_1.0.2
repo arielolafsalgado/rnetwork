@@ -1,0 +1,34 @@
+Package: styler
+Title: Non-Invasive Pretty Printing of R Code
+Version: 1.0.2
+Authors@R: c(person("Kirill", "Müller", role = c("aut"), email = "krlmlr+r@mailbox.org"),
+  person("Lorenz", "Walthert", role = c("cre", "aut"), email = "lorenz.walthert@icloud.com"))
+Description: 
+    Pretty-prints R code without changing the user's formatting intent.
+Imports: backports, cli, enc (>= 0.2), magrittr, purrr (>= 0.2.3),
+        rematch2, rlang, rprojroot, tibble (>= 1.4.2), withr
+Suggests: data.tree, dplyr, here, knitr, rmarkdown, rstudioapi,
+        testthat
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Date: 2018-06-21
+BugReports: https://github.com/r-lib/styler/issues
+URL: https://github.com/r-lib/styler
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+Collate: 'addins.R' 'communicate.R' 'compat-dplyr.R' 'compat-tidyr.R'
+        'expr-is.R' 'indent.R' 'initialize.R' 'nest.R'
+        'nested-to-tree.R' 'parse.R' 'reindent.R' 'token-define.R'
+        'relevel.R' 'rules-line-break.R' 'rules-other.R'
+        'rules-replacement.R' 'rules-spacing.R' 'serialize.R'
+        'set-assert-args.R' 'style-guides.R' 'styler.R' 'testing.R'
+        'token-create.R' 'transform-code.R' 'transform-files.R' 'ui.R'
+        'unindent.R' 'utils.R' 'vertical.R' 'visit.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2018-06-25 14:35:38 UTC; lorenz
+Author: Kirill Müller [aut],
+  Lorenz Walthert [cre, aut]
+Maintainer: Lorenz Walthert <lorenz.walthert@icloud.com>
+Repository: CRAN
+Date/Publication: 2018-06-26 19:22:55 UTC

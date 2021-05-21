@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package BiDAG</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=BiDAG" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="BiDAG: Bayesian Inference for Directed Acyclic Graphs" />
+<meta name="og:description" content="Implementation of a collection of MCMC methods for Bayesian structure learning of directed acyclic graphs (DAGs), both from continuous and discrete data. For efficient inference on larger DAGs, the space of DAGs is pruned according to the data. To filter the search space, the algorithm employs a hybrid approach, combining constraint-based learning with search and score. A reduced search space is initially defined on the basis of a skeleton obtained by means of the PC-algorithm, and then iteratively improved with search and score. Search and score is then performed following two approaches: Order MCMC, or Partition MCMC. The BGe score is implemented for continuous data and the BDe score is implemented for binary data or categorical data. The algorithms may provide the maximum a posteriori (MAP) graph or a sample (a collection of DAGs) from the posterior distribution given the data. All algorithms are also applicable for structure learning and sampling for dynamic Bayesian networks. References: J. Kuipers, P. Suter and G. Moffa (2018) &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1803.07859v2&quot;&gt;arXiv:1803.07859v2&lt;/a&gt;&amp;gt;, N. Friedman and D. Koller (2003) &amp;lt;&lt;a href=&quot;https://doi.org/10.1023%2FA%3A1020249912095&quot;&gt;doi:10.1023/A:1020249912095&lt;/a&gt;&amp;gt;, D. Geiger and D. Heckerman (2002) &amp;lt;&lt;a href=&quot;https://doi.org/10.1214%2Faos%2F1035844981&quot;&gt;doi:10.1214/aos/1035844981&lt;/a&gt;&amp;gt;, J. Kuipers and G. Moffa (2017) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F01621459.2015.1133426&quot;&gt;doi:10.1080/01621459.2015.1133426&lt;/a&gt;&amp;gt;, M. Kalisch et al.(2012) &amp;lt;&lt;a href=&quot;https://doi.org/10.18637%2Fjss.v047.i11&quot;&gt;doi:10.18637/jss.v047.i11&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=BiDAG" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>BiDAG: Bayesian Inference for Directed Acyclic Graphs</h2>
+<p>Implementation of a collection of MCMC methods for Bayesian structure learning
+    of directed acyclic graphs (DAGs), both from continuous and discrete data. For efficient
+    inference on larger DAGs, the space of DAGs is pruned according to the data. To filter
+    the search space, the algorithm employs a hybrid approach, combining constraint-based 
+    learning with search and score. A reduced search space is initially defined on the basis
+    of a skeleton obtained by means of the PC-algorithm, and then iteratively improved with
+    search and score. Search and score is then performed following two approaches:
+    Order MCMC, or Partition MCMC.
+    The BGe score is implemented for continuous data and the BDe score is implemented
+    for binary data or categorical data. The algorithms may provide the maximum a posteriori 
+    (MAP) graph or a sample (a collection of DAGs) from the posterior distribution given the data.
+    All algorithms are also applicable for structure learning and sampling for dynamic Bayesian networks.
+    References:
+    J. Kuipers, P. Suter and G. Moffa (2018) &lt;<a href="https://arxiv.org/abs/1803.07859v2">arXiv:1803.07859v2</a>&gt;,
+    N. Friedman and D. Koller (2003) &lt;<a href="https://doi.org/10.1023%2FA%3A1020249912095">doi:10.1023/A:1020249912095</a>&gt;, 
+    D. Geiger and D. Heckerman (2002) &lt;<a href="https://doi.org/10.1214%2Faos%2F1035844981">doi:10.1214/aos/1035844981</a>&gt;, 
+    J. Kuipers and G. Moffa (2017) &lt;<a href="https://doi.org/10.1080%2F01621459.2015.1133426">doi:10.1080/01621459.2015.1133426</a>&gt;, 
+    M. Kalisch et al.(2012) &lt;<a href="https://doi.org/10.18637%2Fjss.v047.i11">doi:10.18637/jss.v047.i11</a>&gt;.</p>
+<table summary="Package BiDAG summary">
+<tr>
+<td>Version:</td>
+<td>1.4.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0), graphics</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.7), methods, <a href="../pcalg/index.html">pcalg</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/graph.html"><span class="BioC">graph</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/Rgraphviz.html"><span class="BioC">Rgraphviz</span></a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-07-14</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Polina Suter [aut, cre], Jack Kuipers [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Polina Suter  &#x3c;&#x70;&#x6f;&#x6c;&#x69;&#x6e;&#x61;&#x2e;&#x6d;&#x69;&#x6e;&#x6b;&#x69;&#x6e;&#x61;&#x20;&#x61;&#x74;&#x20;&#x62;&#x73;&#x73;&#x65;&#x2e;&#x65;&#x74;&#x68;&#x7a;&#x2e;&#x63;&#x68;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_BiDAG.html">BiDAG results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package BiDAG downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="BiDAG.pdf"> BiDAG.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/BiDAG_1.4.1.tar.gz"> BiDAG_1.4.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/BiDAG_1.4.1.zip">BiDAG_1.4.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/BiDAG_1.4.1.zip">BiDAG_1.4.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/BiDAG_1.4.1.zip">BiDAG_1.4.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/BiDAG_1.4.1.tgz">BiDAG_1.4.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/BiDAG_1.4.1.tgz">BiDAG_1.4.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/BiDAG"> BiDAG archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package BiDAG reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../Bestie/index.html">Bestie</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=BiDAG"><samp>https://CRAN.R-project.org/package=BiDAG</samp></a>
+to link to this page.</p>
+</body>
+</html>

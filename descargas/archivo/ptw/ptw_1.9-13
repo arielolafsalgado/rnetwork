@@ -1,0 +1,33 @@
+Package: ptw
+Type: Package
+Title: Parametric Time Warping
+Version: 1.9-13
+Authors@R: c(person("Jan", "Gerretzen", role = "ctb"),
+             person("Paul", "Eilers", role = "aut"),
+	     person("Hans", "Wouters", role = "ctb"),
+	     person("Tom", "Bloemberg", role = "aut",
+	            email = "t.bloemberg@science.ru.nl"),
+	     person("Ron", "Wehrens", role = c("aut", "cre"),
+	            email = "ron.wehrens@gmail.com"))
+Description: Parametric Time Warping aligns patterns, i.e. it aims to
+        put corresponding features at the same locations. The algorithm
+        searches for an optimal polynomial describing the warping. It
+        is possible to align one sample to a reference, several samples
+        to the same reference, or several samples to several
+        references. One can choose between calculating individual
+        warpings, or one global warping for a set of samples and one
+        reference. Two optimization criteria are implemented: RMS (Root
+        Mean Square error) and WCC (Weighted Cross Correlation). Both
+	warping of peak profiles and of peak lists are supported.
+License: GPL (>= 2)
+Imports: nloptr, graphics, grDevices, stats
+NeedsCompilation: yes
+Packaged: 2018-05-25 08:13:45 UTC; ron
+Author: Jan Gerretzen [ctb],
+  Paul Eilers [aut],
+  Hans Wouters [ctb],
+  Tom Bloemberg [aut],
+  Ron Wehrens [aut, cre]
+Maintainer: Ron Wehrens <ron.wehrens@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-05-25 22:17:57 UTC

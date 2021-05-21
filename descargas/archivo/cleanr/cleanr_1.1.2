@@ -1,0 +1,34 @@
+Package: cleanr
+Type: Package
+Title: Helps You to Code Cleaner
+Version: 1.1.2
+Authors@R: person(given = c("Andreas", "Dominik"), family = "Cullmann",
+    email = "adc-r@arcor.de", role = c("aut","cre"))
+Description: Check your R code for some of the most common layout flaws.
+    Many tried to teach us how to write code less dreadful, be it implicitly as
+    B. W. Kernighan and D. M. Ritchie (1988) <ISBN:0-13-110362-8>
+    in 'The C Programming Language' did, be it
+    explicitly as R.C. Martin (2008) <ISBN:0-13-235088-2> in
+    'Clean Code: A Handbook of Agile Software Craftsmanship' did.
+    So we should check our code for files too long or wide, functions with too
+    many lines, too wide lines, too many arguments or too many levels of 
+    nesting.
+    Note: This is not a static code analyzer like pylint or the like. Checkout
+    https://github.com/jimhester/lintr instead.
+Depends: R (>= 3.3.1)
+License: BSD_2_clause + file LICENSE
+URL: https://github.com/fvafrCU/cleanr
+Imports: checkmate
+Suggests: RUnit, knitr, rmarkdown
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 5.0.1
+Collate: 'utils.R' 'internals.R' 'checks.R' 'cleanr-package.R'
+        'options.R' 'wrappers.R' 'zzz.R'
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2016-12-21 10:21:51 UTC; nik
+Author: Andreas Dominik Cullmann [aut, cre]
+Maintainer: Andreas Dominik Cullmann <adc-r@arcor.de>
+Repository: CRAN
+Date/Publication: 2016-12-21 12:07:36

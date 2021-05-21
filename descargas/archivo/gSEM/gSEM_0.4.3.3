@@ -1,0 +1,16 @@
+Package: gSEM
+Type: Package
+Title: Semi-Supervised Generalized Structural Equation Modelling
+Description: Conducts a semi-gSEM statistical analysis (semi-supervised generalized structural equation modeling) on a data frame of coincident observations of multiple continuous variables, via two functions sgSEMp1() and  sgSEMp2(), representing fittings based on two statistical principles. Principle 1 determines the univariate relationships in the spirit of the Markovian process. The relationship between each pair of system elements, including predictors and the system level response, is determined with the Markovian property that assumes the value of the current predictor is sufficient in relating to the next level variable, i.e., the relationship is independent of the specific value of the preceding-level variable to the current predictor, given the current value. Principle 2 resembles the multiple regression principle in the way multiple predictors are considered simultaneously. Specifically, the first-level predictors to the system level variable, such as, Time and unit level variables, acted on the system level variable collectively by an additive model. This collective additive model can be found with a generalized stepwise variable selection (using the step() function in R, which performs variable selection on the basis of AIC) and this proceeds iteratively.
+Version: 0.4.3.3
+Author: Junheng Ma <jxm216@case.edu>, Nicholas Wheeler <nrw16@case.edu>, Yifan Xu <ethan.yifanxu@case.edu>, Wenyu Du <wxd97@case.edu>, Abdulkerim Gok <axg515@case.edu>, Jiayang Sun <jiayang.sun@case.edu>
+Maintainer: Junheng Ma <jxm216@case.edu>
+Depends: R (>= 2.14.0)
+Imports: knitr, MASS, htmlwidgets, DiagrammeR
+License: GPL (>= 2)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2015-12-23 14:30:51 UTC; Junheng Ma
+RoxygenNote: 5.0.1
+Repository: CRAN
+Date/Publication: 2015-12-23 16:13:42

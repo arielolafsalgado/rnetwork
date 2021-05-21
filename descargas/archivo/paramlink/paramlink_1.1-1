@@ -1,0 +1,26 @@
+Package: paramlink
+Version: 1.1-1
+Date: 2017-08-08
+Title: Parametric Linkage and Other Pedigree Analysis in R
+Authors@R: c(
+    person("Magnus Dehli", "Vigeland", email = "m.d.vigeland@medisin.uio.no", role = c("aut", "cre")),
+    person("Thore", "Egeland", role = "ctb"),
+    person("Guro", "Doerum", role = "ctb"))
+Author: Magnus Dehli Vigeland [aut, cre],
+  Thore Egeland [ctb],
+  Guro Doerum [ctb]
+Maintainer: Magnus Dehli Vigeland <m.d.vigeland@medisin.uio.no>
+Description: A suite of tools for analysing pedigrees with marker data, including parametric linkage analysis, forensic computations, relatedness analysis and marker simulations. The core of the package is an implementation of the Elston-Stewart algorithm for pedigree likelihoods, extended to allow mutations as well as complex inbreeding. Features for linkage analysis include singlepoint LOD scores, power analysis, and multipoint analysis (the latter through a wrapper to the 'MERLIN' software). Forensic applications include exclusion probabilities, genotype distributions and conditional simulations. Data from the 'Familias' software can be imported and analysed in 'paramlink'. Finally, 'paramlink' offers many utility functions for creating, manipulating and plotting pedigrees with or without marker data (the actual plotting is done by the 'kinship2' package).
+Depends: R (>= 3.3)
+Imports: assertthat, graphics, kinship2, maxLik, stats, utils
+Suggests: identity, igraph
+SystemRequirements: For the MERLIN wrapper, MERLIN
+        (http://csg.sph.umich.edu/abecasis/Merlin/) must be installed
+        and pointed to in the PATH environment variable.
+License: GPL (>= 2)
+LazyData: Yes
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-08-12 09:43:56 UTC; magnusdv
+Repository: CRAN
+Date/Publication: 2017-08-14 15:08:51 UTC

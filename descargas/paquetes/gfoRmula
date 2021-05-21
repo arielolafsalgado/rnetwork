@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package gfoRmula</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Parametric G-Formula [R package gfoRmula version 0.3.1]" />
+<meta name="citation_author1" content="Victoria Lin" />
+<meta name="citation_author2" content="Sean McGrath" />
+<meta name="citation_author3" content="Zilu Zhang" />
+<meta name="citation_author4" content="Roger W. Logan" />
+<meta name="citation_author5" content="Lucia C. Petito" />
+<meta name="citation_author6" content="Jessica G. Young" />
+<meta name="citation_author7" content="Miguel A. Hernán" />
+<meta name="citation_publication_date" content="2020-03-23" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=gfoRmula" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=gfoRmula" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="gfoRmula: Parametric G-Formula" />
+<meta name="og:description" content="Implements the parametric g-formula algorithm of Robins (1986) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2F0270-0255%2886%2990088-6&quot;&gt;doi:10.1016/0270-0255(86)90088-6&lt;/a&gt;&amp;gt;. The g-formula can be used to estimate the causal effects of hypothetical time-varying treatment interventions on the mean or risk of an outcome from longitudinal data with time-varying confounding. This package allows: 1) binary or continuous/multi-level time-varying treatments; 2) different types of outcomes (survival or continuous/binary end of follow-up); 3) data with competing events or truncation by death and loss to follow-up and other types of censoring events; 4) different options for handling competing events in the case of survival outcomes; 5) a random measurement/visit process; 6) joint interventions on multiple treatments; and 7) general incorporation of a priori knowledge of the data structure." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=gfoRmula" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>gfoRmula: Parametric G-Formula</h2>
+<p>Implements the parametric g-formula algorithm of Robins (1986) 
+    &lt;<a href="https://doi.org/10.1016%2F0270-0255%2886%2990088-6">doi:10.1016/0270-0255(86)90088-6</a>&gt;. The g-formula can be used to estimate 
+    the causal effects of hypothetical time-varying treatment interventions on 
+    the mean or risk of an outcome from longitudinal data with time-varying 
+    confounding. This package allows: 1) binary or continuous/multi-level 
+    time-varying treatments; 2) different types of outcomes (survival or 
+    continuous/binary end of follow-up); 3) data with competing events or 
+    truncation by death and loss to follow-up and other types of censoring 
+    events; 4) different options for handling competing events in the case of 
+    survival outcomes; 5) a random measurement/visit process; 6) joint 
+    interventions on multiple treatments; and 7) general incorporation of a 
+    priori knowledge of the data structure.</p>
+<table summary="Package gfoRmula summary">
+<tr>
+<td>Version:</td>
+<td>0.3.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.4.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../data.table/index.html">data.table</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../ggpubr/index.html">ggpubr</a>, grDevices, <a href="../nnet/index.html">nnet</a>, parallel, <a href="../progress/index.html">progress</a>, stats, <a href="../stringr/index.html">stringr</a>, <a href="../survival/index.html">survival</a>, <a href="../truncnorm/index.html">truncnorm</a>, <a href="../truncreg/index.html">truncreg</a>, utils</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../Hmisc/index.html">Hmisc</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-03-23</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Victoria Lin [aut] (V. Lin and S. McGrath made equal contributions),
+  Sean McGrath <a href="https://orcid.org/0000-0002-7281-3516"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre] (V. Lin and S. McGrath made equal contributions),
+  Zilu Zhang [aut],
+  Roger W. Logan [aut],
+  Lucia C. Petito [aut],
+  Jessica G. Young <a href="https://orcid.org/0000-0002-2758-6932"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut] (M.A. Hernán and J.G. Young made equal contributions),
+  Miguel A. Hernán [aut] (M.A. Hernán and J.G. Young made equal
+    contributions),
+  2019 The President and Fellows of Harvard College [cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Sean McGrath  &#x3c;&#x73;&#x65;&#x61;&#x6e;&#x5f;&#x6d;&#x63;&#x67;&#x72;&#x61;&#x74;&#x68;&#x20;&#x61;&#x74;&#x20;&#x67;&#x2e;&#x68;&#x61;&#x72;&#x76;&#x61;&#x72;&#x64;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/CausalInference/gfoRmula/issues">https://github.com/CausalInference/gfoRmula/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/CausalInference/gfoRmula">https://github.com/CausalInference/gfoRmula</a>,
+<a href="https://arxiv.org/abs/1908.07072">https://arxiv.org/abs/1908.07072</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_gfoRmula.html">gfoRmula results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package gfoRmula downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="gfoRmula.pdf"> gfoRmula.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/gfoRmula_0.3.1.tar.gz"> gfoRmula_0.3.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/gfoRmula_0.3.1.zip">gfoRmula_0.3.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/gfoRmula_0.3.1.zip">gfoRmula_0.3.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/gfoRmula_0.3.1.zip">gfoRmula_0.3.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/gfoRmula_0.3.1.tgz">gfoRmula_0.3.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/gfoRmula_0.3.1.tgz">gfoRmula_0.3.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/gfoRmula"> gfoRmula archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=gfoRmula"><samp>https://CRAN.R-project.org/package=gfoRmula</samp></a>
+to link to this page.</p>
+</body>
+</html>

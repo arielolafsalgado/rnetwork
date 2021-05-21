@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package ShiftConvolvePoibin</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Exactly Computing the Tail of the Poisson-Binomial Distribution [R package ShiftConvolvePoibin version 1.0.0]" />
+<meta name="citation_author1" content="Andrew Lee" />
+<meta name="citation_author2" content="Noah Peres" />
+<meta name="citation_author3" content="Uri Keich" />
+<meta name="citation_publication_date" content="2020-05-04" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=ShiftConvolvePoibin" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=ShiftConvolvePoibin" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="ShiftConvolvePoibin: Exactly Computing the Tail of the Poisson-Binomial Distribution" />
+<meta name="og:description" content="An exact method for computing the Poisson-Binomial Distribution (PBD). The package provides a function for generating a random sample from the PBD, as well as two distinct approaches for computing the density, distribution, and quantile functions of the PBD. The first method uses direct-convolution, or a dynamic-programming approach which is numerically stable but can be slow for a large input due to its quadratic complexity. The second method is much faster on large inputs thanks to its use of Fast Fourier Transform (FFT) based convolutions. Notably in this case the package uses an exponential shift to practically guarantee the relative accuracy of the computation of an arbitrarily small tail of the PBD &amp;ndash; something that FFT-based methods often struggle with. This ShiftConvolvePoiBin method is described in Peres, Lee and Keich (2020) &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/2004.07429&quot;&gt;arXiv:2004.07429&lt;/a&gt;&amp;gt; where it is also shown to be competitive with the fastest implementations for exactly computing the entire Poisson-Binomial distribution." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=ShiftConvolvePoibin" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>ShiftConvolvePoibin: Exactly Computing the Tail of the Poisson-Binomial Distribution</h2>
+<p>An exact method for computing the Poisson-Binomial Distribution (PBD). The package provides a function for generating a random sample from the PBD, as well as two distinct approaches for computing the density, distribution, and quantile functions of the PBD. The first method uses direct-convolution, or a dynamic-programming approach which is numerically stable but can be slow for a large input due to its quadratic complexity. The second method is much faster on large inputs thanks to its use of Fast Fourier Transform (FFT) based convolutions. Notably in this case the package uses an exponential shift to practically guarantee the relative accuracy of the computation of an arbitrarily small tail of the PBD &ndash; something that FFT-based methods often struggle with. This ShiftConvolvePoiBin method is described in Peres, Lee and Keich (2020) &lt;<a href="https://arxiv.org/abs/2004.07429">arXiv:2004.07429</a>&gt; where it is also shown to be competitive with the fastest implementations for exactly computing the entire Poisson-Binomial distribution.</p>
+<table summary="Package ShiftConvolvePoibin summary">
+<tr>
+<td>Version:</td>
+<td>1.0.0</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-05-04</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Andrew Lee [aut, cre],
+  Noah Peres [aut, ctb],
+  Uri Keich [aut, ctb],
+  Alexander Mukhin [cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Andrew Lee  &#x3c;&#x61;&#x6e;&#x64;&#x72;&#x65;&#x77;&#x6c;&#x20;&#x61;&#x74;&#x20;&#x6d;&#x61;&#x74;&#x68;&#x73;&#x2e;&#x75;&#x73;&#x79;&#x64;&#x2e;&#x65;&#x64;&#x75;&#x2e;&#x61;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_ShiftConvolvePoibin.html">ShiftConvolvePoibin results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package ShiftConvolvePoibin downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="ShiftConvolvePoibin.pdf"> ShiftConvolvePoibin.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/ShiftConvolvePoibin_1.0.0.tar.gz"> ShiftConvolvePoibin_1.0.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/ShiftConvolvePoibin_1.0.0.zip">ShiftConvolvePoibin_1.0.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/ShiftConvolvePoibin_1.0.0.zip">ShiftConvolvePoibin_1.0.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/ShiftConvolvePoibin_1.0.0.zip">ShiftConvolvePoibin_1.0.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/ShiftConvolvePoibin_1.0.0.tgz">ShiftConvolvePoibin_1.0.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/ShiftConvolvePoibin_1.0.0.tgz">ShiftConvolvePoibin_1.0.0.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=ShiftConvolvePoibin"><samp>https://CRAN.R-project.org/package=ShiftConvolvePoibin</samp></a>
+to link to this page.</p>
+</body>
+</html>

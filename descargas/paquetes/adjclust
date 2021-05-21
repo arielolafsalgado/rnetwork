@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package adjclust</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Adjacency-Constrained Clustering of a Block-Diagonal Similarity Matrix [R package adjclust version 0.5.99]" />
+<meta name="citation_author1" content="Christophe Ambroise" />
+<meta name="citation_author2" content="Shubham Chaturvedi" />
+<meta name="citation_author3" content="Alia Dehman" />
+<meta name="citation_author4" content="Pierre Neuvial" />
+<meta name="citation_author5" content="Guillem Rigaill" />
+<meta name="citation_author6" content="Nathalie Vialaneix" />
+<meta name="citation_publication_date" content="2020-06-18" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=adjclust" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=adjclust" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="adjclust: Adjacency-Constrained Clustering of a Block-Diagonal Similarity Matrix" />
+<meta name="og:description" content="Implements a constrained version of hierarchical agglomerative clustering, in which each observation is associated to a position, and only adjacent clusters can be merged. Typical application fields in bioinformatics include Genome-Wide Association Studies or Hi-C data analysis, where the similarity between items is a decreasing function of their genomic distance. Taking advantage of this feature, the implemented algorithm is time and memory efficient. This algorithm is described in Ambroise et al (2019) &amp;lt;&lt;a href=&quot;https://almob.biomedcentral.com/articles/10.1186/s13015-019-0157-4&quot;&gt;https://almob.biomedcentral.com/articles/10.1186/s13015-019-0157-4&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=adjclust" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>adjclust: Adjacency-Constrained Clustering of a Block-Diagonal Similarity
+Matrix</h2>
+<p>Implements a constrained version of hierarchical agglomerative 
+    clustering, in which each observation is associated to a position, and 
+    only adjacent clusters can be merged. Typical application fields in 
+    bioinformatics include Genome-Wide Association Studies or Hi-C data 
+    analysis, where the similarity between items is a decreasing function of 
+    their genomic distance. Taking advantage of this feature, the implemented 
+    algorithm is time and memory efficient. This algorithm is described in 
+    Ambroise et al (2019) &lt;<a href="https://almob.biomedcentral.com/articles/10.1186/s13015-019-0157-4">https://almob.biomedcentral.com/articles/10.1186/s13015-019-0157-4</a>&gt;.</p>
+<table summary="Package adjclust summary">
+<tr>
+<td>Version:</td>
+<td>0.5.99</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>stats, graphics, grDevices, <a href="../Matrix/index.html">Matrix</a>, <a href="../matrixStats/index.html">matrixStats</a>, methods, utils, <a href="../capushe/index.html">capushe</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../testthat/index.html">testthat</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../rioja/index.html">rioja</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/HiTC.html"><span class="BioC">HiTC</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/snpStats.html"><span class="BioC">snpStats</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/BiocGenerics.html"><span class="BioC">BiocGenerics</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-18</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Christophe Ambroise [aut],
+  Shubham Chaturvedi [aut],
+  Alia Dehman [aut],
+  Pierre Neuvial [aut, cre],
+  Guillem Rigaill [aut],
+  Nathalie Vialaneix [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Pierre Neuvial  &#x3c;&#x70;&#x69;&#x65;&#x72;&#x72;&#x65;&#x2e;&#x6e;&#x65;&#x75;&#x76;&#x69;&#x61;&#x6c;&#x20;&#x61;&#x74;&#x20;&#x6d;&#x61;&#x74;&#x68;&#x2e;&#x75;&#x6e;&#x69;&#x76;&#x2d;&#x74;&#x6f;&#x75;&#x6c;&#x6f;&#x75;&#x73;&#x65;&#x2e;&#x66;&#x72;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/pneuvial/adjclust/issues">https://github.com/pneuvial/adjclust/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/pneuvial/adjclust">https://github.com/pneuvial/adjclust</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_adjclust.html">adjclust results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package adjclust downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="adjclust.pdf"> adjclust.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/hicClust.html">Clustering of Hi-C contact maps</a><br/>
+<a href="vignettes/notesCHAC.html">Implementation notes for the adjclust package</a><br/>
+<a href="vignettes/snpClust.html">Inferring Linkage Disequilibrium blocks from genotypes</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/adjclust_0.5.99.tar.gz"> adjclust_0.5.99.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/adjclust_0.5.99.zip">adjclust_0.5.99.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/adjclust_0.5.99.zip">adjclust_0.5.99.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/adjclust_0.5.99.zip">adjclust_0.5.99.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/adjclust_0.5.99.tgz">adjclust_0.5.99.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/adjclust_0.5.99.tgz">adjclust_0.5.99.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/adjclust"> adjclust archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=adjclust"><samp>https://CRAN.R-project.org/package=adjclust</samp></a>
+to link to this page.</p>
+</body>
+</html>

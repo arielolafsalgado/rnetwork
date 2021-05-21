@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package bbsBayes</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Hierarchical Bayesian Analysis of North American BBS Data [R package bbsBayes version 2.3.4.2020]" />
+<meta name="citation_author1" content="Brandon P.M. Edwards" />
+<meta name="citation_author2" content="Adam C. Smith" />
+<meta name="citation_publication_date" content="2020-10-22" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=bbsBayes" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=bbsBayes" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="bbsBayes: Hierarchical Bayesian Analysis of North American BBS Data" />
+<meta name="og:description" content="The North American Breeding Bird Survey (BBS) is a long-running program that seeks to monitor the status and trends of the breeding birds in North America. Since its start in 1966, the BBS has accumulated over 50 years of data for over 500 species of North American Birds. Given the temporal and spatial structure of the data, hierarchical Bayesian models are used to assess the status and trends of these 500+ species of birds. 'bbsBayes' allows you to perform hierarchical Bayesian analysis of BBS data. You can run a full model analysis for one or more species that you choose, or you can take more control and specify how the data should be stratified, prepared for 'JAGS', or modelled. The functions provided here allow you to replicate analyses performed by the United State Geological Survey (USGS, see Link and Sauer (2011) &amp;lt;&lt;a href=&quot;https://doi.org/10.1525%2Fauk.2010.09220&quot;&gt;doi:10.1525/auk.2010.09220&lt;/a&gt;&amp;gt;) and Canadian Wildlife Service (CWS, see Smith and Edwards (2020) &amp;lt;&lt;a href=&quot;https://doi.org/10.1101%2F2020.03.26.010215&quot;&gt;doi:10.1101/2020.03.26.010215&lt;/a&gt;&amp;gt;)." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=bbsBayes" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>bbsBayes: Hierarchical Bayesian Analysis of North American BBS Data</h2>
+<p>The North American Breeding Bird Survey (BBS) is a long-running
+  program that seeks to monitor the status and trends of the breeding birds in
+  North America. Since its start in 1966, the BBS has accumulated over 50 years 
+  of data for over 500 species of North American Birds. Given the temporal and 
+  spatial structure of the data, hierarchical Bayesian models are used to assess 
+  the status and trends of these 500+ species of birds. 'bbsBayes' allows you to perform 
+  hierarchical Bayesian analysis of BBS data. You can run a full
+  model analysis for one or more species that you choose, or you can take
+  more control and specify how the data should be stratified, prepared
+  for 'JAGS', or modelled. The functions provided here allow you to replicate
+  analyses performed by the United State Geological Survey (USGS, see Link 
+  and Sauer (2011) &lt;<a href="https://doi.org/10.1525%2Fauk.2010.09220">doi:10.1525/auk.2010.09220</a>&gt;) and Canadian Wildlife Service
+  (CWS, see Smith and Edwards (2020) &lt;<a href="https://doi.org/10.1101%2F2020.03.26.010215">doi:10.1101/2020.03.26.010215</a>&gt;).</p>
+<table summary="Package bbsBayes summary">
+<tr>
+<td>Version:</td>
+<td>2.3.4.2020</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../progress/index.html">progress</a>, <a href="../jagsUI/index.html">jagsUI</a>, <a href="../ggrepel/index.html">ggrepel</a>, <a href="../geofacet/index.html">geofacet</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../stringr/index.html">stringr</a>, grDevices, <a href="../rgdal/index.html">rgdal</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../sf/index.html">sf</a>, tools, <a href="../latticeExtra/index.html">latticeExtra</a>, <a href="../rappdirs/index.html">rappdirs</a>, <a href="../sbtools/index.html">sbtools</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-22</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Brandon P.M. Edwards [aut, cre],
+  Adam C. Smith [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Brandon P.M. Edwards  &#x3c;&#x65;&#x64;&#x77;&#x61;&#x72;&#x64;&#x73;&#x62;&#x20;&#x61;&#x74;&#x20;&#x75;&#x6f;&#x67;&#x75;&#x65;&#x6c;&#x70;&#x68;&#x2e;&#x63;&#x61;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/BrandonEdwards/bbsBayes">https://github.com/BrandonEdwards/bbsBayes</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>JAGS 4.3.0
+(https://sourceforge.net/projects/mcmc-jags/)</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">bbsBayes citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_bbsBayes.html">bbsBayes results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package bbsBayes downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="bbsBayes.pdf"> bbsBayes.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/bbsBayes_2.3.4.2020.tar.gz"> bbsBayes_2.3.4.2020.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/bbsBayes_2.3.4.2020.zip">bbsBayes_2.3.4.2020.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/bbsBayes_2.3.4.2020.zip">bbsBayes_2.3.4.2020.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/bbsBayes_2.3.4.2020.zip">bbsBayes_2.3.4.2020.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/bbsBayes_2.3.4.2020.tgz">bbsBayes_2.3.4.2020.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/bbsBayes_2.3.4.2020.tgz">bbsBayes_2.3.4.2020.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/bbsBayes"> bbsBayes archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=bbsBayes"><samp>https://CRAN.R-project.org/package=bbsBayes</samp></a>
+to link to this page.</p>
+</body>
+</html>

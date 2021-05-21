@@ -1,0 +1,28 @@
+Package: prioritizr
+Type: Package
+Title: Systematic Conservation Prioritization in R
+Version: 0.1.2
+Date: 2016-11-15
+Authors@R: person("Matthew", "Strimas-Mackey", email="mstrimas@gmail.com", role = c("aut", "cre"))
+Description: Solve systematic reserve design problems using integer programming 
+    techniques. To solve problems most efficiently users can install three 
+    optional packages not available on CRAN: the 'gurobi' optimizer (available 
+    from <http://www.gurobi.com/>) and the conservation prioritization package 
+    'marxan' (available from <https://github.com/jeffreyhanson/marxan>).
+Depends: R (>= 3.1.2)
+License: MIT + file LICENSE
+LazyData: TRUE
+RoxygenNote: 5.0.1
+Imports: assertthat, sp, raster, slam, dplyr, gstat, rgeos, rasterVis,
+        methods, tidyr
+Suggests: marxan, gurobi, lpsymphony, Rsymphony, knitr, rmarkdown,
+        glpkAPI, testthat
+URL: https://github.com/mstrimas/prioritizr
+BugReports: https://github.com/mstrimas/prioritizr/issues
+VignetteBuilder: knitr
+Maintainer: Matthew Strimas-Mackey <mstrimas@gmail.com>
+NeedsCompilation: no
+Packaged: 2016-12-01 19:15:28 UTC; matt
+Author: Matthew Strimas-Mackey [aut, cre]
+Repository: CRAN
+Date/Publication: 2016-12-01 21:32:43

@@ -1,0 +1,34 @@
+Package: hesim
+Type: Package
+Title: Health-Economic Simulation Modeling and Decision Analysis
+Version: 0.1.0
+Authors@R: c(
+    person("Devin", "Incerti", , "devin.incerti@gmail.com", c("aut", "cre"))
+    )
+Description: Functionality for developing and analyzing the output of health-economic 
+    simulation models. Contains random sampling functions for conducting probabilistic  
+    sensitivity analyses (Claxton et al. 2005) <doi:10.1002/hec.985> and 
+    individual patient simulations (Brennan et al. 2006) <doi:10.1002/hec.1148>. 
+    Individualized cost-effectiveness analysis (Basu and Meltzer 2007, Ioannidis and Garber 2011) 
+    <doi:10.1177/0272989X06297393>, <doi:10.1371/journal.pmed.1001058> 
+    can be performed on simulation output and used to 
+    summarize a probabilistic sensitivity analysis at the subgroup or individual 
+    level. Core functions are written in C++ to facilitate computationally 
+    intensive modeling.
+URL: https://github.com/InnovationValueInitiative/hesim
+BugReports: https://github.com/InnovationValueInitiative/hesim/issues
+License: GPL-3
+LazyData: true
+LinkingTo: Rcpp, RcppArmadillo
+Depends: R (>= 3.2.3)
+Imports: data.table, Rcpp (>= 0.12.9), stats
+Suggests: covr, ggplot2, knitr, msm, rmarkdown, scales, testthat,
+        truncnorm
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2017-12-01 19:20:15 UTC; devin.incerti
+Author: Devin Incerti [aut, cre]
+Maintainer: Devin Incerti <devin.incerti@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-12-03 12:16:20 UTC

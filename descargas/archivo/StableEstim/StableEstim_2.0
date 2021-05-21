@@ -1,0 +1,23 @@
+Package: StableEstim
+Type: Package
+Title: Estimate the 4 parameters of stable law using different methods
+Version: 2.0
+Date: 2013-11-20
+Depends: R(>= 2.10.0),methods,Matrix,stats,utils,stabledist,testthat
+Imports: numDeriv,xtable,fBasics,MASS
+Author: Tarak Kharrat, Georgi N. Boshnakov
+Maintainer: Tarak Kharrat <tarak.kharrat@manchester.ac.uk>
+Description: Compute the maximum-likelihood(ML), generalised method of moment with finite and continuum number of points, the iterative Koutrouvelis regression and the Kogon-McCulloch methods to estimate the 4 parameters of stable law. The asymptotic properties of the estimator (covariance matrix, confidence intervals) are also provided.
+License: GPL (>= 2)
+Collate: cte.R ExternalPackageInterface.R ToolsFct.R Interpolation.R
+        RegularInverse.R stableCF.R CFbasedMoment.R WeightingMatrix.R
+        eCFfirstZero.R tSchemes.R MultiDimIntegral.R InitialGuess.R
+        KoutParamsEstim.R MLParamsEstim.R GMMParamsEstim.R
+        CgmmParamsEstim.R OutputFileManip.R CheckPoint.R BestT_Class.R
+        Estim_Class.R Estim.R Simulation.R BestT.R
+LazyLoad: yes
+LazyData: yes
+Packaged: 2014-02-24 08:51:56 UTC; tkharrat
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2014-02-24 11:19:02

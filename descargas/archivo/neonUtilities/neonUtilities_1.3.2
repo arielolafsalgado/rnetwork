@@ -1,0 +1,28 @@
+Package: neonUtilities
+Version: 1.3.2
+Date: 2019-12-02
+Title: Utilities for Working with NEON Data
+Author: Christine Laney <claney@battelleecology.org>, Claire Lunch <clunch@battelleecology.org>
+Maintainer: Claire Lunch <clunch@battelleecology.org>
+Description: NEON data packages can be accessed through the NEON Data Portal <https://data.neonscience.org/home>
+    or through the NEON Data API (see <https://data.neonscience.org/data-api> for documentation). Data delivered from
+    the Data Portal are provided as monthly zip files packaged within a parent zip file, while individual files
+    can be accessed from the API. This package provides tools that aid in discovering, downloading, and reformatting 
+    data prior to use in analyses. This includes downloading data via the API, merging data tables by type, and 
+    converting formats. For more information, see the readme file at <https://github.com/NEONScience/NEON-utilities>.
+Depends: R (>= 3.4.0)
+biocViews:
+Imports: dplyr(>= 0.7.1), gdata(>= 2.18), httr, jsonlite, downloader,
+        data.table, utils, stats, lubridate, readr, tidyr, stringr,
+        pbapply, parallel, plyr
+Suggests: rhdf5, raster, testthat, magrittr
+License: AGPL-3
+URL: https://github.com/NEONScience/NEON-utilities
+BugReports: https://github.com/NEONScience/NEON-utilities/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-12-03 14:58:29 UTC; clunch
+Repository: CRAN
+Date/Publication: 2019-12-03 15:40:03 UTC

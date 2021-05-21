@@ -1,0 +1,43 @@
+Package: dtwclust
+Type: Package
+Title: Time Series Clustering Along with Optimizations for the Dynamic
+        Time Warping Distance
+Version: 5.0.0
+Date: 2017-12-09
+Depends: R (>= 3.2.0), methods, proxy (>= 0.4-16), dtw
+Imports: parallel, stats, utils, bigmemory, clue, cluster, dplyr,
+        flexclust, foreach, ggplot2, Matrix, RSpectra, Rcpp, reshape2,
+        rngtools
+Suggests: doParallel, knitr, rmarkdown, testthat, TSclust, TSdist
+LinkingTo: BH, bigmemory, Rcpp, RcppArmadillo
+Author: Alexis Sarda-Espinosa
+Maintainer: Alexis Sarda <alexis.sarda@gmail.com>
+Description: Time series clustering along with optimized techniques related
+    to the Dynamic Time Warping distance and its corresponding lower bounds.
+    Implementations of partitional, hierarchical, fuzzy, k-Shape and TADPole
+    clustering are available. Functionality can be easily extended with
+    custom distance measures and centroid definitions. Implementations of
+    DTW barycenter averaging and a distance based on global alignment kernels
+    are also provided. All included distance functions have custom loops
+    optimized for the calculation of cross-distance matrices, including
+    parallelization support. Several cluster validity indices are included.
+URL: https://github.com/asardaes/dtwclust
+BugReports: https://github.com/asardaes/dtwclust/issues
+License: GPL-3
+LazyData: TRUE
+NeedsCompilation: yes
+SystemRequirements: C++11
+RoxygenNote: 6.0.1
+Collate: 'DBA.R' 'Distmat.R' 'GAK.R' 'NCCc.R' 'SBD.R' 'SparseDistmat.R'
+        'TADPole.R' 'tsclust-family.R' 'TSClusters-classes.R' 'cvi.R'
+        'TSClusters-methods.R' 'all-cent2.R' 'as-methods.R'
+        'compare-clusterings.R' 'compute-envelope.R' 'data.R'
+        'ddist2.R' 'dtw-basic.R' 'dtw-lb.R' 'dtw2.R'
+        'globals-internal.R' 'lb-improved.R' 'lb-keogh.R'
+        'partitional-fuzzy.R' 'pkg.R' 'reinterpolate.R'
+        'shape-extraction.R' 'tsclust-controls.R' 'tsclust.R'
+        'tslist.R' 'utils.R' 'zscore.R'
+VignetteBuilder: knitr
+Packaged: 2017-12-09 09:36:03 UTC; oso
+Repository: CRAN
+Date/Publication: 2017-12-09 09:58:54 UTC

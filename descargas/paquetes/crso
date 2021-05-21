@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package crso</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=crso" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="crso: Cancer Rule Set Optimization ('crso')" />
+<meta name="og:description" content="An algorithm for identifying candidate driver combinations in cancer. CRSO is based on a theoretical model of cancer in which a cancer rule is defined to be a collection of two or more events (i.e., alterations) that are minimally sufficient to cause cancer. A cancer rule set is a set of cancer rules that collectively are assumed to account for all of ways to cause cancer in the population. In CRSO every event is designated explicitly as a passenger or driver within each patient. Each event is associated with a patient-specific, event-specific passenger penalty, reflecting how unlikely the event would have happened by chance, i.e., as a passenger. CRSO evaluates each rule set by assigning all samples to a rule in the rule set, or to the null rule, and then calculating the total statistical penalty from all unassigned event. CRSO uses a three phase procedure find the best rule set of fixed size K for a range of Ks. A core rule set is then identified from among the best rule sets of size K as the rule set that best balances rule set size and statistical penalty. Users should consult the 'crso' vignette for an example walk through of a full CRSO run. The full description, of the CRSO algorithm is presented in: Klein MI, Cannataro V, Townsend J, Stern DF and Zhao H. &quot;Identifying combinations of cancer driver in individual patients.&quot; BioRxiv 674234 [Preprint]. June 19, 2019. &amp;lt;&lt;a href=&quot;https://doi.org/10.1101%2F674234&quot;&gt;doi:10.1101/674234&lt;/a&gt;&amp;gt;. Please cite this article if you use 'crso'." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=crso" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>crso: Cancer Rule Set Optimization ('crso')</h2>
+<p>An algorithm for identifying candidate driver combinations in cancer. CRSO 
+  is based on a theoretical model of cancer in which a cancer rule 
+  is defined to be a collection of two or more events (i.e., alterations) that are minimally 
+  sufficient to cause cancer. A cancer rule set is a set of cancer rules that collectively 
+  are assumed to account for all of ways to cause cancer in the population. In CRSO every 
+  event is designated explicitly as a passenger or driver within each patient. 
+  Each event is associated with a patient-specific, event-specific passenger penalty, 
+  reflecting how unlikely the event would have happened by chance, i.e., as a passenger.
+  CRSO evaluates each rule set by assigning all samples to a rule in the rule set,
+  or to the null rule, and then calculating the total statistical penalty from all
+  unassigned event. CRSO uses a three phase procedure find the best rule set of 
+  fixed size K for a range of Ks. A core rule set is then identified from among
+  the best rule sets of size K as the rule set that best balances rule set size and 
+  statistical penalty. 
+  Users should consult the 'crso' vignette for an example walk through of a full CRSO run.
+  The full description, of the CRSO algorithm is presented in: 
+  Klein MI, Cannataro V, Townsend J, Stern DF and Zhao H. "Identifying combinations of cancer driver in individual patients." 
+  BioRxiv 674234 [Preprint]. June 19, 2019. &lt;<a href="https://doi.org/10.1101%2F674234">doi:10.1101/674234</a>&gt;.
+  Please cite this article if you use 'crso'.</p>
+<table summary="Package crso summary">
+<tr>
+<td>Version:</td>
+<td>0.1.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0), <a href="../foreach/index.html">foreach</a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>stats, utils</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-07-07</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Michael Klein</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Michael Klein  &#x3c;&#x6d;&#x69;&#x63;&#x68;&#x61;&#x65;&#x6c;&#x2e;&#x6b;&#x6c;&#x65;&#x69;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x79;&#x61;&#x6c;&#x65;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_crso.html">crso results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package crso downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="crso.pdf"> crso.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/CRSO-vignette.html">CRSO-vignette</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/crso_0.1.1.tar.gz"> crso_0.1.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/crso_0.1.1.zip">crso_0.1.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/crso_0.1.1.zip">crso_0.1.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/crso_0.1.1.zip">crso_0.1.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/crso_0.1.1.tgz">crso_0.1.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/crso_0.1.1.tgz">crso_0.1.1.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=crso"><samp>https://CRAN.R-project.org/package=crso</samp></a>
+to link to this page.</p>
+</body>
+</html>

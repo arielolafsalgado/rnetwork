@@ -1,0 +1,21 @@
+Package: ptycho
+Type: Package
+Title: Bayesian Variable Selection with Hierarchical Priors
+Version: 1.1-2
+Author: Laurel Stell and Chiara Sabatti
+Maintainer: Laurel Stell <lstell@stanford.edu>
+URL: web.stanford.edu/~lstell/ptycho/
+Description: 
+  Bayesian variable selection for linear regression models using hierarchical
+  priors. There is a prior that combines information across responses and one
+  that combines information across covariates, as well as a standard spike and
+  slab prior for comparison. An MCMC samples from the marginal posterior
+  distribution for the 0-1 variables indicating if each covariate belongs to the
+  model for each response.
+License: GPL (>= 2)
+Depends: R (>= 3.0.0)
+Imports: coda, plyr, reshape2, foreach, doMC, doRNG
+NeedsCompilation: no
+Packaged: 2015-09-11 21:09:43 UTC; lstell
+Repository: CRAN
+Date/Publication: 2015-09-12 17:20:11

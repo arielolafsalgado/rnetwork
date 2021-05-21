@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package randcorr</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Generate a Random p x p Correlation Matrix [R package randcorr version 1.0]" />
+<meta name="citation_author1" content="Daniel F. Schmidt" />
+<meta name="citation_author2" content="Enes Makalic" />
+<meta name="citation_publication_date" content="2018-11-16" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=randcorr" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=randcorr" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="randcorr: Generate a Random p x p Correlation Matrix" />
+<meta name="og:description" content="Implements the algorithm by Pourahmadi and Wang (2015) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.spl.2015.06.015&quot;&gt;doi:10.1016/j.spl.2015.06.015&lt;/a&gt;&amp;gt; for generating a random p x p correlation matrix. Briefly, the idea is to represent the correlation matrix using Cholesky factorization and p(p-1)/2 hyperspherical coordinates (i.e., angles), sample the angles from a particular distribution and then convert to the standard correlation matrix form. The angles are sampled from a distribution with pdf proportional to sin^k(theta) (0 &amp;lt; theta &amp;lt; pi, k &amp;gt;= 1) using the efficient sampling algorithm described in Enes Makalic and Daniel F. Schmidt (2018) &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1809.05212&quot;&gt;arXiv:1809.05212&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=randcorr" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>randcorr: Generate a Random p x p Correlation Matrix</h2>
+<p>Implements the algorithm by Pourahmadi and Wang (2015) &lt;<a href="https://doi.org/10.1016%2Fj.spl.2015.06.015">doi:10.1016/j.spl.2015.06.015</a>&gt; for generating a random p x p correlation matrix. Briefly, the idea is to represent the correlation matrix using Cholesky factorization and p(p-1)/2 hyperspherical coordinates (i.e., angles), sample the angles from a particular distribution and then convert to the standard correlation matrix form. The angles are sampled from a distribution with pdf proportional to sin^k(theta) (0 &lt; theta &lt; pi, k &gt;= 1) using the efficient sampling algorithm described in Enes Makalic and Daniel F. Schmidt (2018) &lt;<a href="https://arxiv.org/abs/1809.05212">arXiv:1809.05212</a>&gt;.</p>
+<table summary="Package randcorr summary">
+<tr>
+<td>Version:</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2018-11-16</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Daniel F. Schmidt [aut, cph, cre],
+  Enes Makalic [aut, cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Daniel F. Schmidt  &#x3c;&#x64;&#x61;&#x6e;&#x69;&#x65;&#x6c;&#x2e;&#x73;&#x63;&#x68;&#x6d;&#x69;&#x64;&#x74;&#x20;&#x61;&#x74;&#x20;&#x6d;&#x6f;&#x6e;&#x61;&#x73;&#x68;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL (&ge; 3)</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">randcorr citation info</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_randcorr.html">randcorr results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package randcorr downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="randcorr.pdf"> randcorr.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/randcorr_1.0.tar.gz"> randcorr_1.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/randcorr_1.0.zip">randcorr_1.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/randcorr_1.0.zip">randcorr_1.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/randcorr_1.0.zip">randcorr_1.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/randcorr_1.0.tgz">randcorr_1.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/randcorr_1.0.tgz">randcorr_1.0.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=randcorr"><samp>https://CRAN.R-project.org/package=randcorr</samp></a>
+to link to this page.</p>
+</body>
+</html>

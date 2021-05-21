@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package bfw</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Bayesian Framework for Computational Modeling [R package bfw version 0.4.1]" />
+<meta name="citation_author" content="Øystein Olav Skaar" />
+<meta name="citation_publication_date" content="2019-11-25" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=bfw" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=bfw" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="bfw: Bayesian Framework for Computational Modeling" />
+<meta name="og:description" content="Derived from the work of Kruschke (2015, &amp;lt;ISBN:9780124058880&amp;gt;), the present package aims to provide a framework for conducting Bayesian analysis using Markov chain Monte Carlo (MCMC) sampling utilizing the Just Another Gibbs Sampler ('JAGS', Plummer, 2003, &amp;lt;&lt;a href=&quot;http://mcmc-jags.sourceforge.net/&quot;&gt;http://mcmc-jags.sourceforge.net/&lt;/a&gt;&amp;gt;). The initial version includes several modules for conducting Bayesian equivalents of chi-squared tests, analysis of variance (ANOVA), multiple (hierarchical) regression, softmax regression, and for fitting data (e.g., structural equation modeling)." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=bfw" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>bfw: Bayesian Framework for Computational Modeling</h2>
+<p>Derived from the work of Kruschke (2015, &lt;ISBN:9780124058880&gt;),
+    the present package aims to provide a framework for conducting Bayesian
+    analysis using Markov chain Monte Carlo (MCMC) sampling utilizing the
+    Just Another Gibbs Sampler ('JAGS', Plummer, 2003, &lt;<a href="http://mcmc-jags.sourceforge.net/">http://mcmc-jags.sourceforge.net/</a>&gt;).
+    The initial version includes several modules for conducting Bayesian
+    equivalents of chi-squared tests, analysis of variance (ANOVA),
+    multiple (hierarchical) regression, softmax regression, and for fitting data
+    (e.g., structural equation modeling).</p>
+<table summary="Package bfw summary">
+<tr>
+<td>Version:</td>
+<td>0.4.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../coda/index.html">coda</a> (&ge; 0.19-1), <a href="../MASS/index.html">MASS</a> (&ge; 7.3-47), <a href="../runjags/index.html">runjags</a> (&ge; 2.0.4-2)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../covr/index.html">covr</a> (&ge; 3.1.0), <a href="../circlize/index.html">circlize</a> (&ge; 0.4.4), <a href="../data.table/index.html">data.table</a> (&ge; 1.12.2), <a href="../dplyr/index.html">dplyr</a> (&ge; 0.7.7), <a href="../ggplot2/index.html">ggplot2</a> (&ge; 2.2.1), <a href="../knitr/index.html">knitr</a> (&ge; 1.20), <a href="../lavaan/index.html">lavaan</a> (&ge; 0.6-1), <a href="../magrittr/index.html">magrittr</a> (&ge; 1.5), <a href="../officer/index.html">officer</a> (&ge; 0.3.1), <a href="../plyr/index.html">plyr</a> (&ge;
+1.8.4), <a href="../png/index.html">png</a> (&ge; 0.1-7), <a href="../psych/index.html">psych</a> (&ge; 1.7.8), <a href="../rmarkdown/index.html">rmarkdown</a> (&ge; 1.10), <a href="../rvg/index.html">rvg</a> (&ge; 0.1.9), <a href="../scales/index.html">scales</a> (&ge; 0.5.0), <a href="../testthat/index.html">testthat</a> (&ge; 2.0.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-11-25</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Øystein Olav Skaar [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Øystein Olav Skaar  &#x3c;&#x62;&#x61;&#x79;&#x65;&#x73;&#x69;&#x61;&#x6e;&#x66;&#x77;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/oeysan/bfw/issues/">https://github.com/oeysan/bfw/issues/</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/oeysan/bfw/">https://github.com/oeysan/bfw/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>JAGS &gt;=4.3.0 &lt;http://mcmc-jags.sourceforge.net/&gt;,
+Java JDK &gt;=1.4 &lt;https://www.java.com/en/download/manual.jsp&gt;</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_bfw.html">bfw results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package bfw downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="bfw.pdf"> bfw.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/fit_latent_data.html">Fit Latent Data</a><br/>
+<a href="vignettes/fit_observed_data.html">Fit Observed Data</a><br/>
+<a href="vignettes/metric.html">Predict Metric</a><br/>
+<a href="vignettes/plot_mean.html">Plot Data</a><br/>
+<a href="vignettes/regression.html">Regression</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/bfw_0.4.1.tar.gz"> bfw_0.4.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/bfw_0.4.1.zip">bfw_0.4.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/bfw_0.4.1.zip">bfw_0.4.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/bfw_0.4.1.zip">bfw_0.4.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/bfw_0.4.1.tgz">bfw_0.4.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/bfw_0.4.1.tgz">bfw_0.4.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/bfw"> bfw archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=bfw"><samp>https://CRAN.R-project.org/package=bfw</samp></a>
+to link to this page.</p>
+</body>
+</html>

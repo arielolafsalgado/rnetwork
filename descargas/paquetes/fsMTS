@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package fsMTS</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Feature Selection for Multivariate Time Series [R package fsMTS version 0.1.5]" />
+<meta name="citation_author" content="Dmitry Pavlyuk" />
+<meta name="citation_publication_date" content="2020-04-06" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=fsMTS" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=fsMTS" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="fsMTS: Feature Selection for Multivariate Time Series" />
+<meta name="og:description" content="Implements feature selection routines for multivariate time series (MTS). The list of implemented algorithms includes: own lags (independent MTS components), distance-based (using external structure, e.g. Pfeifer and Deutsch (1980) &amp;lt;&lt;a href=&quot;https://doi.org/10.2307%2F1268381&quot;&gt;doi:10.2307/1268381&lt;/a&gt;&amp;gt;), cross-correlation (see Schelter et al. (2006, ISBN:9783527406234)), graphical LASSO (see Haworth and Cheng (2014) &amp;lt;&lt;a href=&quot;https://www.gla.ac.uk/media/Media_401739_smxx.pdf&quot;&gt;https://www.gla.ac.uk/media/Media_401739_smxx.pdf&lt;/a&gt;&amp;gt;), random forest (see Pavlyuk (2020) &quot;Random Forest Variable Selection for Sparse Vector Autoregressive Models&quot; in Contributions to Statistics, in production), least angle regression (see Gelper and Croux (2008) &amp;lt;&lt;a href=&quot;https://lirias.kuleuven.be/retrieve/16024&quot;&gt;https://lirias.kuleuven.be/retrieve/16024&lt;/a&gt;&amp;gt;), mutual information (see Schelter et al. (2006, ISBN:9783527406234), Liu et al. (2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.1109%2FChiCC.2016.7554480&quot;&gt;doi:10.1109/ChiCC.2016.7554480&lt;/a&gt;&amp;gt;), and partial spectral coherence (see Davis et al.(2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F10618600.2015.1092978&quot;&gt;doi:10.1080/10618600.2015.1092978&lt;/a&gt;&amp;gt;). In addition, the package implements functions for ensemble feature selection (using feature ranking and majority voting). The package is implemented within Dmitry Pavlyuk's research project No. 1.1.1.2/VIAA/1/16/112 &quot;Spatiotemporal urban traffic modelling using big data&quot;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=fsMTS" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>fsMTS: Feature Selection for Multivariate Time Series</h2>
+<p>Implements feature selection routines for multivariate time series (MTS). 
+    The list of implemented algorithms includes: 
+    own lags (independent MTS components), 
+    distance-based (using external structure, e.g. Pfeifer and Deutsch (1980) &lt;<a href="https://doi.org/10.2307%2F1268381">doi:10.2307/1268381</a>&gt;),
+    cross-correlation (see  Schelter et al. (2006, ISBN:9783527406234)),
+    graphical LASSO (see Haworth and Cheng (2014) &lt;<a href="https://www.gla.ac.uk/media/Media_401739_smxx.pdf">https://www.gla.ac.uk/media/Media_401739_smxx.pdf</a>&gt;),
+    random forest (see Pavlyuk (2020) "Random Forest Variable Selection for Sparse Vector Autoregressive Models" in Contributions to Statistics, in production),
+    least angle regression (see Gelper and Croux (2008) &lt;<a href="https://lirias.kuleuven.be/retrieve/16024">https://lirias.kuleuven.be/retrieve/16024</a>&gt;), 
+    mutual information (see  Schelter et al. (2006, ISBN:9783527406234), Liu et al. (2016) &lt;<a href="https://doi.org/10.1109%2FChiCC.2016.7554480">doi:10.1109/ChiCC.2016.7554480</a>&gt;),
+    and partial spectral coherence (see Davis et al.(2016) &lt;<a href="https://doi.org/10.1080%2F10618600.2015.1092978">doi:10.1080/10618600.2015.1092978</a>&gt;). 
+    In addition, the package implements functions for ensemble feature selection (using feature ranking and majority voting).
+    The package is implemented within Dmitry Pavlyuk's research project No. 1.1.1.2/VIAA/1/16/112 "Spatiotemporal urban traffic modelling using big data".</p>
+<table summary="Package fsMTS summary">
+<tr>
+<td>Version:</td>
+<td>0.1.5</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.6)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../glasso/index.html">glasso</a>, <a href="../lars/index.html">lars</a>, <a href="../mpmi/index.html">mpmi</a>, <a href="../freqdom/index.html">freqdom</a>, <a href="../randomForestSRC/index.html">randomForestSRC</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../sparsevar/index.html">sparsevar</a>, <a href="../plot.matrix/index.html">plot.matrix</a>, <a href="../svMisc/index.html">svMisc</a>, <a href="../MTS/index.html">MTS</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-04-06</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Dmitry Pavlyuk <a href="https://orcid.org/0000-0003-3710-9678"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Dmitry Pavlyuk  &#x3c;&#x44;&#x6d;&#x69;&#x74;&#x72;&#x79;&#x2e;&#x50;&#x61;&#x76;&#x6c;&#x79;&#x75;&#x6b;&#x20;&#x61;&#x74;&#x20;&#x74;&#x73;&#x69;&#x2e;&#x6c;&#x76;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/TimeSeries.html">TimeSeries</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_fsMTS.html">fsMTS results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package fsMTS downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="fsMTS.pdf"> fsMTS.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/simulated.html">Feature selection for a simulated data set</a><br/>
+<a href="vignettes/traffic.html">Feature selection for a real traffic data set</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/fsMTS_0.1.5.tar.gz"> fsMTS_0.1.5.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/fsMTS_0.1.5.zip">fsMTS_0.1.5.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/fsMTS_0.1.5.zip">fsMTS_0.1.5.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/fsMTS_0.1.5.zip">fsMTS_0.1.5.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/fsMTS_0.1.5.tgz">fsMTS_0.1.5.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/fsMTS_0.1.5.tgz">fsMTS_0.1.5.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/fsMTS"> fsMTS archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=fsMTS"><samp>https://CRAN.R-project.org/package=fsMTS</samp></a>
+to link to this page.</p>
+</body>
+</html>

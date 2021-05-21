@@ -1,0 +1,47 @@
+Package: povcalnetR
+Title: Client for the 'Povcalnet' API
+Version: 0.1.0
+Authors@R: c( 
+    person(given = "Tony",
+           family = "Fujs",
+           role = c("aut", "cre"),
+           email = "tonyfujs@gmail.com"),
+    person(given = "Ratnadeep",
+           family = "Mitra",
+           role = c("aut")),
+    person(given = "Andres",
+           family = "Castaneda",
+           role = c("ctb")),
+    person(given = "Espen",
+           family = "Prydz",
+           role = c("ctb")),
+    person(given = "Christoph",
+           family = "Lakner",
+           role = c("ctb")),
+     person(given = "World Bank",
+           role = c("cph"))
+    )
+Description: Provides an interface to compute poverty and inequality indicators for more than 160 countries and regions from the World Bank's database of household surveys. It has the same functionality as the 'Povcalnet' website (<http://iresearch.worldbank.org/PovcalNet/>). 'Povcalnet' is a computational tool that allows users to estimate poverty rates for regions, sets of countries or individual countries, over time and at any poverty line. 'Povcalnet' is managed jointly by the data and research group in the World Bank's development economics division. It draws heavily upon a strong collaboration with the poverty and equity global practice, which is responsible for the gathering and harmonization of the underlying survey data.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Depends: R (>= 3.2.0)
+Imports: purrr, stringr, httr, jsonlite, readr, tibble, dplyr, js,
+        tidyr, memoise, naniar, ggthemes, ggplot2
+Suggests: testthat (>= 2.1.0), assertthat, knitr, rmarkdown, forcats,
+        scales
+VignetteBuilder: knitr
+URL: https://github.com/worldbank/povcalnetR
+BugReports: https://github.com/worldbank/povcalnetR/issues
+NeedsCompilation: no
+Packaged: 2019-09-27 09:11:27 UTC; WB499754
+Author: Tony Fujs [aut, cre],
+  Ratnadeep Mitra [aut],
+  Andres Castaneda [ctb],
+  Espen Prydz [ctb],
+  Christoph Lakner [ctb],
+  World Bank [cph]
+Maintainer: Tony Fujs <tonyfujs@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-10-02 10:20:02 UTC

@@ -1,0 +1,34 @@
+Package: workflows
+Title: Modeling Workflows
+Version: 0.1.2
+Authors@R: 
+    c(person(given = "Davis",
+             family = "Vaughan",
+             role = c("aut", "cre"),
+             email = "davis@rstudio.com"),
+      person(given = "RStudio",
+             role = "cph"))
+Description: Managing both a 'parsnip' model and a preprocessor, such as a
+    model formula or recipe from 'recipes', can often be challenging. The goal
+    of 'workflows' is to streamline this process by bundling the model alongside
+    the preprocessor, all within the same object.
+License: MIT + file LICENSE
+URL: https://github.com/tidymodels/workflows,
+        https://workflows.tidymodels.org
+BugReports: https://github.com/tidymodels/workflows/issues
+Depends: R (>= 3.2)
+Imports: cli (>= 2.0.0), ellipsis (>= 0.2.0), generics, glue, hardhat
+        (>= 0.1.4), parsnip (>= 0.1.2), rlang (>= 0.4.1)
+Suggests: covr, knitr, magrittr, modeldata (>= 0.0.2), recipes,
+        rmarkdown, testthat (>= 2.3.0)
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2020-07-07 13:18:01 UTC; davis
+Author: Davis Vaughan [aut, cre],
+  RStudio [cph]
+Maintainer: Davis Vaughan <davis@rstudio.com>
+Repository: CRAN
+Date/Publication: 2020-07-07 13:40:02 UTC

@@ -1,0 +1,25 @@
+Package: TimeSeries.OBeu
+Type: Package
+Title: Time Series Analysis 'OpenBudgets'
+Version: 1.2.2
+Date: 2018-01-20
+Description: Estimate and return the needed parameters for visualisations designed for 'OpenBudgets' <http://openbudgets.eu/> time series data. Calculate time series model and forecast parameters in Budget time series data of municipalities across Europe, according to the 'OpenBudgets' data model. There are functions for measuring deterministic and stochastic trend of the input time series data, decomposing with local regression models or seasonal trend decomposition, modelling the appropriate auto regressive integrated moving average model and provide forecasts for the input 'OpenBudgets' time series fiscal data. Also, can be used generally to extract visualisation parameters convert them to 'JSON' format and use them as input in a different graphical interface.
+Authors@R: c(
+    person("Kleanthis", "Koupidis", email = "koupidis@okfn.gr", role = c("aut", "cre")),
+    person("Charalampos", "Bratsas",  email = "charalampos.bratsas@okfn.org", role = "aut")
+    )
+Maintainer: Kleanthis Koupidis <koupidis@okfn.gr>
+URL: https://github.com/okgreece/TimeSeries.OBeu
+BugReports: https://github.com/okgreece/TimeSeries.OBeu/issues
+License: GPL-2 | file LICENSE
+LazyData: TRUE
+Imports: forecast, locfit, jsonlite, stats, trend, tseries
+RoxygenNote: 6.0.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-01-19 22:44:35 UTC; Kleanthis-Okf
+Author: Kleanthis Koupidis [aut, cre],
+  Charalampos Bratsas [aut]
+Repository: CRAN
+Date/Publication: 2018-01-22 09:41:59 UTC

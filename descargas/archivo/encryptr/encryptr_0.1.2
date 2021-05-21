@@ -1,0 +1,35 @@
+Package: encryptr
+Type: Package
+Title: Easily Encrypt and Decrypt Data Frame or Tibble Columns using
+        RSA Public/Private Keys
+Version: 0.1.2
+Authors@R: c(
+  person(given = "Cameron", family = "Fairfield", role = c("aut"), email = "cameron.fairfield@ed.ac.uk"),
+  person(given = "Riinu", family = "Ots", role = c("aut")),
+  person(given = "Stephen", family = "Knight", role = c("aut")),
+  person(given = "Tom", family = "Drake", role = c("aut")),
+  person(given = "Ewen", family = "Harrison", role = c("aut", "cre"), email = "ewen.harrison@ed.ac.uk")
+  )
+Maintainer: Ewen Harrison <ewen.harrison@ed.ac.uk>
+Description: It is important to ensure that sensitive data is protected. 
+    This straightforward package is aimed at the end-user. 
+    Strong RSA encryption using a public/private key pair is used to encrypt data frame or tibble columns.
+    A public key can be shared to allow others to encrypt data to be sent to you. 
+    This is particularly aimed a healthcare settings so patient data can be pseudonymised. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+BugReports: https://github.com/SurgicalInformatics/encryptr/issues
+URL: https://github.com/SurgicalInformatics/encryptr
+Imports: dplyr, knitr, openssl, purrr, readr, rlang
+RoxygenNote: 6.1.0
+Suggests: testthat, withr
+NeedsCompilation: no
+Packaged: 2019-03-21 10:20:41 UTC; eharrison
+Author: Cameron Fairfield [aut],
+  Riinu Ots [aut],
+  Stephen Knight [aut],
+  Tom Drake [aut],
+  Ewen Harrison [aut, cre]
+Repository: CRAN
+Date/Publication: 2019-03-25 09:40:03 UTC

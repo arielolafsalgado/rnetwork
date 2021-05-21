@@ -1,0 +1,34 @@
+Package: sdcSpatial
+Title: Statistical Disclosure Control for Spatial Data
+Version: 0.1.0
+Authors@R: c(
+  person("Edwin", "de Jonge", email = "edwindjonge@gmail.com", role = c("aut", "cre"), 
+    comment=c(ORCID="0000-0002-6580-4718")),
+  person("Peter-Paul", "de Wolf", role = c("aut")),
+  person("Sapphire", "Han", role = c("ctb"))
+  )
+Description: Privacy protected raster maps 
+  can be created from spatial point data. Protection
+  methods include smoothing of dichotomous variables by de Jonge and de Wolf (2016) 
+  <doi:10.1007/978-3-319-45381-1_9>, continuous variables by de Wolf and 
+  de Jonge (2018) <doi:10.1007/978-3-319-99771-1_23>, suppressing 
+  revealing values and a generalization of the quad tree method by 
+  Suñé, Rovira, Ibáñez and Farré (2017) <doi:10.2901/EUROSTAT.C2017.001>.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/edwindj/sdcSpatial
+BugReports: https://github.com/edwindj/sdcSpatial/issues
+RoxygenNote: 6.1.1
+Suggests: testthat, knitr, rmarkdown, sp, sf
+Imports: raster, methods
+Depends: R (>= 2.10)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-07-02 20:15:10 UTC; edwin
+Author: Edwin de Jonge [aut, cre] (<https://orcid.org/0000-0002-6580-4718>),
+  Peter-Paul de Wolf [aut],
+  Sapphire Han [ctb]
+Maintainer: Edwin de Jonge <edwindjonge@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-07-03 15:50:03 UTC

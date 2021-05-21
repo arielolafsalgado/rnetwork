@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package gravitas</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Explore Probability Distributions for Bivariate Temporal Granularities [R package gravitas version 0.1.3]" />
+<meta name="citation_author1" content="Sayani Gupta" />
+<meta name="citation_author2" content="Rob Hyndman" />
+<meta name="citation_author3" content="Di Cook" />
+<meta name="citation_author4" content="Antony Unwin" />
+<meta name="citation_publication_date" content="2020-06-25" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=gravitas" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=gravitas" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="gravitas: Explore Probability Distributions for Bivariate Temporal Granularities" />
+<meta name="og:description" content="Provides tools for systematically exploring large quantities of temporal data across cyclic temporal granularities (deconstructions of time) by visualizing probability distributions. Cyclic time granularities can be circular, quasi-circular or aperiodic. 'gravitas' computes cyclic single-order-up or multiple-order-up granularities, check the feasibility of creating plots for any two cyclic granularities and recommend probability distributions plots for exploring periodicity in the data." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=gravitas" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>gravitas: Explore Probability Distributions for Bivariate Temporal
+Granularities</h2>
+<p>Provides tools for systematically exploring large quantities of 
+             temporal data across cyclic temporal granularities
+             (deconstructions of time) by visualizing probability distributions.
+             Cyclic time granularities can be circular, quasi-circular or 
+             aperiodic. 'gravitas' computes cyclic
+             single-order-up or multiple-order-up granularities, check the
+             feasibility of creating plots for any two cyclic granularities
+             and recommend probability distributions plots for exploring
+             periodicity in the data.</p>
+<table summary="Package gravitas summary">
+<tr>
+<td>Version:</td>
+<td>0.1.3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../lubridate/index.html">lubridate</a> (&ge; 1.7.4), <a href="../dplyr/index.html">dplyr</a> (&ge; 0.8.0), <a href="../tsibble/index.html">tsibble</a> (&ge; 0.8.0), <a href="../tibble/index.html">tibble</a> (&ge; 2.1.1), <a href="../rlang/index.html">rlang</a> (&ge; 0.3.4), <a href="../tidyr/index.html">tidyr</a> (&ge; 0.8.3), <a href="../ggplot2/index.html">ggplot2</a> (&ge;
+3.1.1), stats, <a href="../stringr/index.html">stringr</a> (&ge; 1.4.0), <a href="../lvplot/index.html">lvplot</a>, <a href="../ggridges/index.html">ggridges</a>, <a href="../shiny/index.html">shiny</a>, <a href="../RColorBrewer/index.html">RColorBrewer</a>, <a href="../ineq/index.html">ineq</a>, <a href="../magrittr/index.html">magrittr</a>, utils</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../tsibbledata/index.html">tsibbledata</a> (&ge; 0.1.0), <a href="../purrr/index.html">purrr</a> (&ge; 0.3.2), <a href="../testthat/index.html">testthat</a> (&ge;
+2.1.0), <a href="../covr/index.html">covr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../readr/index.html">readr</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-25</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Sayani Gupta <a href="https://orcid.org/0000-0003-0643-5358"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Rob Hyndman <a href="https://orcid.org/0000-0002-2140-5352"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    ths],
+  Di Cook <a href="https://orcid.org/0000-0002-3813-7155"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    ths],
+  Antony Unwin <a href="https://orcid.org/0000-0002-5841-5757"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Sayani Gupta  &#x3c;&#x67;&#x75;&#x70;&#x74;&#x61;&#x2e;&#x73;&#x61;&#x79;&#x61;&#x6e;&#x69;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/Sayani07/gravitas/issues">https://github.com/Sayani07/gravitas/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/Sayani07/gravitas/">https://github.com/Sayani07/gravitas/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/TimeSeries.html">TimeSeries</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_gravitas.html">gravitas results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package gravitas downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="gravitas.pdf"> gravitas.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/cricket.html">Exploring probability distributions for cricket</a><br/>
+<a href="vignettes/gravitas_vignette.html">Exploring probability distributions for bivariate temporal granularities</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/gravitas_0.1.3.tar.gz"> gravitas_0.1.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/gravitas_0.1.3.zip">gravitas_0.1.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/gravitas_0.1.3.zip">gravitas_0.1.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/gravitas_0.1.3.zip">gravitas_0.1.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/gravitas_0.1.3.tgz">gravitas_0.1.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/gravitas_0.1.3.tgz">gravitas_0.1.3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/gravitas"> gravitas archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=gravitas"><samp>https://CRAN.R-project.org/package=gravitas</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,19 @@
+Package: designmatch
+Type: Package
+Title: Construction of Optimally Matched Samples for Randomized
+        Experiments and Observational Studies that are Balanced by
+        Design
+Version: 0.1
+Date: 2016-01-23
+Author: Jose R. Zubizarreta <zubizarreta@columbia.edu>, Cinar Kilcioglu <ckilcioglu16@gsb.columbia.edu>
+Maintainer: Jose R. Zubizarreta <zubizarreta@columbia.edu>
+Depends: R (>= 3.2), lattice, MASS, slam, Rglpk
+Suggests: gurobi, Rcplex, Rsymphony
+SystemRequirements: GLPK library package (e.g., libglpk-dev on
+        Debian/Ubuntu)
+License: GPL-2 | GPL-3
+Description: Includes functions for the construction of matched samples that are balanced by design.  These functions include options for directly balancing means, higher order moments and distributions of the covariates, that can be used in observational studies with treatment and control units, cases and controls, and more generally in settings with instrumental variables and in discontinuity designs.  These functions can also be used for the design of randomized experiments, for example for matching before randomization.  The performance of these functions is greatly enhanced by the Gurobi optimization solver and its associated R interface.  For their installation, please follow the instructions at http://user.gurobi.com/download/gurobi-optimizer and http://www.gurobi.com/documentation/6.5/refman/r_api_overview.html; also, we have included direction in the gurobi_installation file in the inst folder.
+NeedsCompilation: no
+Packaged: 2016-01-28 20:55:24 UTC; jrz
+Repository: CRAN
+Date/Publication: 2016-01-29 00:36:19

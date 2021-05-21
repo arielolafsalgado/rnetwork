@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package dtwclust</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=dtwclust" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="dtwclust: Time Series Clustering Along with Optimizations for the Dynamic Time Warping Distance" />
+<meta name="og:description" content="Time series clustering along with optimized techniques related to the Dynamic Time Warping distance and its corresponding lower bounds. Implementations of partitional, hierarchical, fuzzy, k-Shape and TADPole clustering are available. Functionality can be easily extended with custom distance measures and centroid definitions. Implementations of DTW barycenter averaging, a distance based on global alignment kernels, and the soft-DTW distance and centroid routines are also provided. All included distance functions have custom loops optimized for the calculation of cross-distance matrices, including parallelization support. Several cluster validity indices are included." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=dtwclust" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>dtwclust: Time Series Clustering Along with Optimizations for the Dynamic
+Time Warping Distance</h2>
+<p>Time series clustering along with optimized techniques related
+    to the Dynamic Time Warping distance and its corresponding lower bounds.
+    Implementations of partitional, hierarchical, fuzzy, k-Shape and TADPole
+    clustering are available. Functionality can be easily extended with
+    custom distance measures and centroid definitions. Implementations of
+    DTW barycenter averaging, a distance based on global alignment kernels,
+    and the soft-DTW distance and centroid routines are also provided. 
+    All included distance functions have custom loops optimized for the 
+    calculation of cross-distance matrices, including parallelization support.
+    Several cluster validity indices are included.</p>
+<table summary="Package dtwclust summary">
+<tr>
+<td>Version:</td>
+<td>5.5.6</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.2.0), methods, <a href="../proxy/index.html">proxy</a> (&ge; 0.4-16), <a href="../dtw/index.html">dtw</a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>parallel, stats, utils, <a href="../bigmemory/index.html">bigmemory</a>, <a href="../clue/index.html">clue</a>, <a href="../cluster/index.html">cluster</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../flexclust/index.html">flexclust</a>, <a href="../foreach/index.html">foreach</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../ggrepel/index.html">ggrepel</a>, <a href="../Matrix/index.html">Matrix</a>, <a href="../nloptr/index.html">nloptr</a>, <a href="../RSpectra/index.html">RSpectra</a>, <a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppParallel/index.html">RcppParallel</a> (&ge; 4.4.0), <a href="../reshape2/index.html">reshape2</a>, <a href="../shiny/index.html">shiny</a>, <a href="../shinyjs/index.html">shinyjs</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a>, <a href="../RcppParallel/index.html">RcppParallel</a>, <a href="../RcppThread/index.html">RcppThread</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../doParallel/index.html">doParallel</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-12-11</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Alexis Sarda-Espinosa</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Alexis Sarda  &#x3c;&#x61;&#x6c;&#x65;&#x78;&#x69;&#x73;&#x2e;&#x73;&#x61;&#x72;&#x64;&#x61;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/asardaes/dtwclust/issues">https://github.com/asardaes/dtwclust/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>Copyright:</td>
+<td>see file <a href="COPYRIGHTS">COPYRIGHTS</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/asardaes/dtwclust">https://github.com/asardaes/dtwclust</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>C++11, GNU make</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">dtwclust citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/TimeSeries.html">TimeSeries</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_dtwclust.html">dtwclust results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package dtwclust downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="dtwclust.pdf"> dtwclust.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/parallelization-considerations.html">Parallelization considerations for dtwclust</a><br/>
+<a href="vignettes/timing-experiments.html">Timing experiments for dtwclust</a><br/>
+<a href="vignettes/dtwclust.pdf">Comparing Time-Series Clustering Algorithms in R Using the dtwclust Package</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/dtwclust_5.5.6.tar.gz"> dtwclust_5.5.6.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/dtwclust_5.5.6.zip">dtwclust_5.5.6.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/dtwclust_5.5.6.zip">dtwclust_5.5.6.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/dtwclust_5.5.6.zip">dtwclust_5.5.6.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/dtwclust_5.5.6.tgz">dtwclust_5.5.6.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/dtwclust_5.5.6.tgz">dtwclust_5.5.6.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/dtwclust"> dtwclust archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package dtwclust reverse dependencies">
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../IncDTW/index.html">IncDTW</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=dtwclust"><samp>https://CRAN.R-project.org/package=dtwclust</samp></a>
+to link to this page.</p>
+</body>
+</html>

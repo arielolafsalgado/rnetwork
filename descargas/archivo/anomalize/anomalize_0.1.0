@@ -1,0 +1,39 @@
+Package: anomalize
+Type: Package
+Title: Tidy Anomaly Detection
+Version: 0.1.0
+Authors@R: c(
+    person("Matt", "Dancho", email = "mdancho@business-science.io", role = c("aut", "cre")),
+    person("Davis", "Vaughan", email = "dvaughan@business-science.io", role = c("aut"))
+  )
+Description: 
+    The 'anomalize' package enables a "tidy" workflow for detecting anomalies in data.
+    The main functions are time_decompose(), anomalize(), and time_recompose().
+    When combined, it's quite simple to decompose time series, detect anomalies,
+    and create bands separating the "normal" data from the anomalous data at scale (i.e. for multiple time series). 
+    Time series decomposition is used to remove trend and seasonal components via the time_decompose() function
+    and methods include seasonal decomposition of time series by Loess ("stl") and 
+    seasonal decomposition by piecewise medians ("twitter"). The anomalize() function implements
+    two methods for anomaly detection of residuals including using an inner quartile range ("iqr")
+    and generalized extreme studentized deviation ("gesd"). These methods are based on
+    those used in the 'forecast' package and the Twitter 'AnomalyDetection' package. 
+    Refer to the associated functions for specific references for these methods. 
+URL: https://github.com/business-science/anomalize
+BugReports: https://github.com/business-science/anomalize/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.0.0)
+Imports: dplyr, glue, timetk, sweep, tibbletime, purrr, rlang, tibble,
+        tidyr, ggplot2
+RoxygenNote: 6.0.1
+Suggests: tidyverse, tidyquant, testthat, covr, knitr, rmarkdown,
+        devtools, roxygen2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-04-05 17:06:16 UTC; mdancho
+Author: Matt Dancho [aut, cre],
+  Davis Vaughan [aut]
+Maintainer: Matt Dancho <mdancho@business-science.io>
+Repository: CRAN
+Date/Publication: 2018-04-06 11:39:58 UTC

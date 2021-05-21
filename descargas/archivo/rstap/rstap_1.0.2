@@ -1,0 +1,29 @@
+Package: rstap
+Type: Package
+Version: 1.0.2
+Title: Spatial Temporal Aggregated Predictor Models via 'stan'
+Description: Estimates previously compiled stap regression models using the 'rstan' package. Users specify models via a custom R syntax with a formula and data.frame plus additional arguments for priors.
+License: GPL (>= 3)
+Authors@R: person("Adam", "Peterson", , "atpvyc@umich.edu", c("aut", "cre"))
+URL: https://biostatistics4socialimpact.github.io/rstap
+BugReports: https://github.com/biostatistics4socialimpact/rstap/issues
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+Depends: R (>= 3.4.0), Rcpp (>= 0.12.16), methods
+Imports: abind (>= 1.4-5), bayesplot (>= 1.5.0), ggplot2 (>= 2.2.1),
+        lme4 (>= 1.1-8), loo (>= 2.0.0), Matrix (>= 1.2-13), nlme (>=
+        3.1-124), rstan (>= 2.18.1), rstantools (>= 1.4.0), stats,
+        utils, pracma (>= 2.1.4), dplyr (>= 0.7.6)
+LinkingTo: StanHeaders (>= 2.18.0), rstan (>= 2.18.1), BH (>=
+        1.66.0-1), Rcpp (>= 0.12.16), RcppEigen(>= 0.3.3.3.0)
+SystemRequirements: GNU make
+NeedsCompilation: yes
+RoxygenNote: 6.1.0
+Suggests: testthat, digest, knitr, rmarkdown, pkgdown, fields
+VignetteBuilder: knitr
+Packaged: 2018-12-29 16:59:16 UTC; Adam
+Author: Adam Peterson [aut, cre]
+Maintainer: Adam Peterson <atpvyc@umich.edu>
+Repository: CRAN
+Date/Publication: 2019-01-03 00:20:03 UTC

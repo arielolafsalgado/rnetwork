@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package Signac</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Analysis of Single-Cell Chromatin Data [R package Signac version 1.0.0]" />
+<meta name="citation_author1" content="Tim Stuart" />
+<meta name="citation_author2" content="Avi Srivastava" />
+<meta name="citation_publication_date" content="2020-08-16" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=Signac" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=Signac" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="Signac: Analysis of Single-Cell Chromatin Data" />
+<meta name="og:description" content="A framework for the analysis and exploration of single-cell chromatin data. The 'Signac' package contains functions for quantifying single-cell chromatin data, computing per-cell quality control metrics, dimension reduction and normalization, visualization, and DNA sequence motif analysis. Reference: Stuart and Butler et al. (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.cell.2019.05.031&quot;&gt;doi:10.1016/j.cell.2019.05.031&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=Signac" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>Signac: Analysis of Single-Cell Chromatin Data</h2>
+<p>A framework for the analysis and exploration of single-cell chromatin data.
+    The 'Signac' package contains functions for quantifying single-cell chromatin data,
+    computing per-cell quality control metrics, dimension reduction
+    and normalization, visualization, and DNA sequence motif analysis.
+    Reference: Stuart and Butler et al. (2019) &lt;<a href="https://doi.org/10.1016%2Fj.cell.2019.05.031">doi:10.1016/j.cell.2019.05.031</a>&gt;.</p>
+<table summary="Package Signac summary">
+<tr>
+<td>Version:</td>
+<td>1.0.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.6.0), methods</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="http://www.bioconductor.org/packages/release/bioc/html/GenomeInfoDb.html"><span class="BioC">GenomeInfoDb</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/GenomicRanges.html"><span class="BioC">GenomicRanges</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/IRanges.html"><span class="BioC">IRanges</span></a>, <a href="../Matrix/index.html">Matrix</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/Rsamtools.html"><span class="BioC">Rsamtools</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/S4Vectors.html"><span class="BioC">S4Vectors</span></a>, <a href="../Seurat/index.html">Seurat</a> (&ge; 3.2.0), <a href="../data.table/index.html">data.table</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../future/index.html">future</a>, <a href="../future.apply/index.html">future.apply</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../ggseqlogo/index.html">ggseqlogo</a>, <a href="../irlba/index.html">irlba</a>, <a href="../pbapply/index.html">pbapply</a>, <a href="../tidyr/index.html">tidyr</a>, <a href="../patchwork/index.html">patchwork</a>, grid, stats, utils, <a href="http://www.bioconductor.org/packages/release/bioc/html/Biobase.html"><span class="BioC">Biobase</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/BiocGenerics.html"><span class="BioC">BiocGenerics</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/Biostrings.html"><span class="BioC">Biostrings</span></a>, <a href="../ggrepel/index.html">ggrepel</a>, <a href="../stringi/index.html">stringi</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/ggbio.html"><span class="BioC">ggbio</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/biovizBase.html"><span class="BioC">biovizBase</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/AnnotationFilter.html"><span class="BioC">AnnotationFilter</span></a>, <a href="../fastmatch/index.html">fastmatch</a>, <a href="../lsa/index.html">lsa</a>, <a href="../RcppRoll/index.html">RcppRoll</a>, <a href="../scales/index.html">scales</a>, <a href="../Rcpp/index.html">Rcpp</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/qvalue.html"><span class="BioC">qvalue</span></a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a> (&ge; 2.1.0), <a href="http://www.bioconductor.org/packages/release/bioc/html/chromVAR.html"><span class="BioC">chromVAR</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/SummarizedExperiment.html"><span class="BioC">SummarizedExperiment</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/TFBSTools.html"><span class="BioC">TFBSTools</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/motifmatchr.html"><span class="BioC">motifmatchr</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/BSgenome.html"><span class="BioC">BSgenome</span></a>, <a href="../shiny/index.html">shiny</a>, <a href="../miniUI/index.html">miniUI</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-08-16</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Tim Stuart <a href="https://orcid.org/0000-0002-3044-0897"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    cre],
+  Avi Srivastava <a href="https://orcid.org/0000-0001-9798-2079"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Paul Hoffman <a href="https://orcid.org/0000-0002-7693-8957"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Rahul Satija <a href="https://orcid.org/0000-0001-9448-8833"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Tim Stuart  &#x3c;&#x74;&#x73;&#x74;&#x75;&#x61;&#x72;&#x74;&#x20;&#x61;&#x74;&#x20;&#x6e;&#x79;&#x67;&#x65;&#x6e;&#x6f;&#x6d;&#x65;&#x2e;&#x6f;&#x72;&#x67;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/timoast/signac/issues">https://github.com/timoast/signac/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/timoast/signac">https://github.com/timoast/signac</a>, <a href="https://satijalab.org/signac">https://satijalab.org/signac</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_Signac.html">Signac results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package Signac downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="Signac.pdf"> Signac.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/Signac_1.0.0.tar.gz"> Signac_1.0.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/Signac_1.0.0.zip">Signac_1.0.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/Signac_1.0.0.zip">Signac_1.0.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/Signac_1.0.0.zip">Signac_1.0.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/Signac_0.2.5.tgz">Signac_0.2.5.tgz</a>, r-oldrel: not available </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/Signac"> Signac archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=Signac"><samp>https://CRAN.R-project.org/package=Signac</samp></a>
+to link to this page.</p>
+</body>
+</html>

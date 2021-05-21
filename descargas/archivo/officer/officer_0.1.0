@@ -1,0 +1,31 @@
+Package: officer
+Type: Package
+Title: Manipulation of Microsoft Word and PowerPoint Documents
+Version: 0.1.0
+Authors@R: c(
+    person("David", "Gohel", role = c("aut", "cre"),
+    email = "david.gohel@ardata.fr"))
+Description: Manipulate 'Microsoft Word' and 'Microsoft PowerPoint' documents from R. 
+  The package focus on tabular and graphical reporting from R. A set of functions 
+  lets add and remove images, tables and paragraphs of text in new or existing documents. 
+  When working with 'PowerPoint' presentations, slides can be added or removed; shapes inside 
+  slides can also be added or removed. When working with 'Word' documents, a cursor can be 
+  used to help insert or delete content at a specific location in the document. The package 
+  does not require any installation of Microsoft product to be able to write Microsoft files.
+License: GPL-3
+LazyData: TRUE
+LinkingTo: Rcpp, gdtools
+Imports: Rcpp (>= 0.12.3), purrr,dplyr,R6,tibble,lazyeval,
+        R.utils,utils,grDevices, gdtools, base64enc, digest, magrittr,
+        xml2 (>= 1.1.0)
+URL: https://davidgohel.github.io/officer
+BugReports: https://github.com/davidgohel/officer/issues
+RoxygenNote: 6.0.1
+Suggests: testthat, ionicons, devEMF, knitr,htmltools, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2017-03-01 08:05:31 UTC; davidgohel
+Author: David Gohel [aut, cre]
+Maintainer: David Gohel <david.gohel@ardata.fr>
+Repository: CRAN
+Date/Publication: 2017-03-01 12:29:20

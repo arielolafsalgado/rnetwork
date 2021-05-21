@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package dparser</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Port of 'Dparser' Package [R package dparser version 0.1.8]" />
+<meta name="citation_author1" content="Matthew Fidler" />
+<meta name="citation_author2" content="John Plevyak" />
+<meta name="citation_publication_date" content="2017-11-13" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=dparser" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=dparser" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="dparser: Port of 'Dparser' Package" />
+<meta name="og:description" content="A Scannerless GLR parser/parser generator. Note that GLR standing for &quot;generalized LR&quot;, where L stands for &quot;left-to-right&quot; and R stands for &quot;rightmost (derivation)&quot;. For more information see &amp;lt;&lt;a href=&quot;https://en.wikipedia.org/wiki/GLR_parser&quot;&gt;https://en.wikipedia.org/wiki/GLR_parser&lt;/a&gt;&amp;gt;. This parser is based on the Tomita (1987) algorithm. (Paper can be found at &amp;lt;&lt;a href=&quot;http://acl-arc.comp.nus.edu.sg/archives/acl-arc-090501d3/data/pdf/anthology-PDF/J/J87/J87-1004.pdf&quot;&gt;http://acl-arc.comp.nus.edu.sg/archives/acl-arc-090501d3/data/pdf/anthology-PDF/J/J87/J87-1004.pdf&lt;/a&gt;&amp;gt;). The original 'dparser' package documentation can be found at &amp;lt;&lt;a href=&quot;http://dparser.sourceforge.net/&quot;&gt;http://dparser.sourceforge.net/&lt;/a&gt;&amp;gt;. This allows you to add mini-languages to R (like RxODE's ODE mini-language Wang, Hallow, and James 2015 &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fpsp4.12052&quot;&gt;doi:10.1002/psp4.12052&lt;/a&gt;&amp;gt;) or to parse other languages like 'NONMEM' to automatically translate them to R code. To use this in your code, add a LinkingTo dparser in your DESCRIPTION file and instead of using #include &amp;lt;dparse.h&amp;gt; use #include &amp;lt;dparser.h&amp;gt;. This also provides a R-based port of the make_dparser &amp;lt;&lt;a href=&quot;http://dparser.sourceforge.net/d/make_dparser.cat&quot;&gt;http://dparser.sourceforge.net/d/make_dparser.cat&lt;/a&gt;&amp;gt; command called mkdparser(). Additionally you can parse an arbitrary grammar within R using the dparse() function, which works on most OSes and is mainly for grammar testing. The fastest parsing, of course, occurs at the C level, and is suggested." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=dparser" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>dparser: Port of 'Dparser' Package</h2>
+<p>A Scannerless GLR parser/parser generator.  Note that GLR standing for "generalized LR", where L stands for "left-to-right" and
+   R stands for "rightmost (derivation)".  For more information see &lt;<a href="https://en.wikipedia.org/wiki/GLR_parser">https://en.wikipedia.org/wiki/GLR_parser</a>&gt;. This parser is based on the Tomita
+   (1987) algorithm. (Paper can be found at &lt;<a href="http://acl-arc.comp.nus.edu.sg/archives/acl-arc-090501d3/data/pdf/anthology-PDF/J/J87/J87-1004.pdf">http://acl-arc.comp.nus.edu.sg/archives/acl-arc-090501d3/data/pdf/anthology-PDF/J/J87/J87-1004.pdf</a>&gt;).
+   The original 'dparser' package documentation can be found at &lt;<a href="http://dparser.sourceforge.net/">http://dparser.sourceforge.net/</a>&gt;.  This allows you to add mini-languages to R (like
+   RxODE's ODE mini-language Wang, Hallow, and James 2015 &lt;<a href="https://doi.org/10.1002%2Fpsp4.12052">doi:10.1002/psp4.12052</a>&gt;) or to parse other languages like 'NONMEM' to automatically translate
+   them to R code.   To use this in your code, add a LinkingTo dparser in your DESCRIPTION file and instead of using #include &lt;dparse.h&gt; use
+   #include &lt;dparser.h&gt;.  This also provides a R-based port of the make_dparser &lt;<a href="http://dparser.sourceforge.net/d/make_dparser.cat">http://dparser.sourceforge.net/d/make_dparser.cat</a>&gt; command called
+   mkdparser().  Additionally you can parse an arbitrary grammar within R using the dparse() function, which works on most OSes and is mainly for grammar
+   testing.  The fastest parsing, of course, occurs at the C level, and is suggested.</p>
+<table summary="Package dparser summary">
+<tr>
+<td>Version:</td>
+<td>0.1.8</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.2.3)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../digest/index.html">digest</a>, methods</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../rex/index.html">rex</a>, <a href="../covr/index.html">covr</a>, <a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../devtools/index.html">devtools</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2017-11-13</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Matthew Fidler [aut, cre],
+  John Plevyak [aut, cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Matthew Fidler  &#x3c;&#x6d;&#x61;&#x74;&#x74;&#x68;&#x65;&#x77;&#x2e;&#x66;&#x69;&#x64;&#x6c;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/BSD_3_clause">BSD_3_clause</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_dparser.html">dparser results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package dparser downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="dparser.pdf"> dparser.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/dparser_0.1.8.tar.gz"> dparser_0.1.8.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/dparser_0.1.8.zip">dparser_0.1.8.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/dparser_0.1.8.zip">dparser_0.1.8.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/dparser_0.1.8.zip">dparser_0.1.8.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/dparser_0.1.8.tgz">dparser_0.1.8.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/dparser_0.1.8.tgz">dparser_0.1.8.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/dparser"> dparser archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package dparser reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../RxODE/index.html">RxODE</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;linking&nbsp;to:</td>
+<td><a href="../RxODE/index.html">RxODE</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=dparser"><samp>https://CRAN.R-project.org/package=dparser</samp></a>
+to link to this page.</p>
+</body>
+</html>

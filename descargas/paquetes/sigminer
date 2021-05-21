@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package sigminer</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Extract, Analyze and Visualize Signatures for Genomic Variations [R package sigminer version 1.0.19]" />
+<meta name="citation_author1" content="Shixiang Wang" />
+<meta name="citation_author2" content="Xue-Song Liu" />
+<meta name="citation_author3" content="Tao Wu" />
+<meta name="citation_author4" content="Ziyu Tao" />
+<meta name="citation_publication_date" content="2020-09-28" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=sigminer" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=sigminer" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="sigminer: Extract, Analyze and Visualize Signatures for Genomic Variations" />
+<meta name="og:description" content="Genomic alterations including single nucleotide substitution, copy number alteration, etc. are the major force for cancer initialization and development. Due to the specificity of molecular lesions caused by genomic alterations, we can generate characteristic alteration spectra, called 'signature' (Wang, Shixiang, et al. (2020) &amp;lt;&lt;a href=&quot;https://doi.org/10.1101%2F2020.04.27.20082404&quot;&gt;doi:10.1101/2020.04.27.20082404&lt;/a&gt;&amp;gt; &amp;amp; Alexandrov, Ludmil B., et al. (2020) &amp;lt;&lt;a href=&quot;https://doi.org/10.1038%2Fs41586-020-1943-3&quot;&gt;doi:10.1038/s41586-020-1943-3&lt;/a&gt;&amp;gt; &amp;amp; Macintyre, Geoff, et al. (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.1038%2Fs41588-018-0179-8&quot;&gt;doi:10.1038/s41588-018-0179-8&lt;/a&gt;&amp;gt;). This package helps users to extract, analyze and visualize signatures from genomic alteration records, thus providing new insight into cancer study." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=sigminer" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>sigminer: Extract, Analyze and Visualize Signatures for Genomic Variations</h2>
+<p>Genomic alterations including single nucleotide
+    substitution, copy number alteration, etc. are the major force for
+    cancer initialization and development. Due to the specificity of
+    molecular lesions caused by genomic alterations, we can generate
+    characteristic alteration spectra, called 'signature' (Wang, Shixiang,
+    et al.  (2020) &lt;<a href="https://doi.org/10.1101%2F2020.04.27.20082404">doi:10.1101/2020.04.27.20082404</a>&gt; &amp; Alexandrov, Ludmil
+    B., et al. (2020) &lt;<a href="https://doi.org/10.1038%2Fs41586-020-1943-3">doi:10.1038/s41586-020-1943-3</a>&gt; &amp; Macintyre, Geoff,
+    et al. (2018) &lt;<a href="https://doi.org/10.1038%2Fs41588-018-0179-8">doi:10.1038/s41588-018-0179-8</a>&gt;).  This package helps
+    users to extract, analyze and visualize signatures from genomic
+    alteration records, thus providing new insight into cancer study.</p>
+<table summary="Package sigminer summary">
+<tr>
+<td>Version:</td>
+<td>1.0.19</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../cli/index.html">cli</a> (&ge; 2.0.0), <a href="../cowplot/index.html">cowplot</a>, <a href="../data.table/index.html">data.table</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../foreach/index.html">foreach</a>, <a href="../furrr/index.html">furrr</a>, <a href="../future/index.html">future</a>, <a href="../ggplot2/index.html">ggplot2</a> (&ge; 3.3.0), <a href="../ggpubr/index.html">ggpubr</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/maftools.html"><span class="BioC">maftools</span></a>, <a href="../magrittr/index.html">magrittr</a>, methods, <a href="../NMF/index.html">NMF</a>, <a href="../purrr/index.html">purrr</a>, <a href="../Rcpp/index.html">Rcpp</a>, <a href="../rlang/index.html">rlang</a> (&ge; 0.1.2), stats, <a href="../tidyr/index.html">tidyr</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="http://www.bioconductor.org/packages/release/bioc/html/Biobase.html"><span class="BioC">Biobase</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/Biostrings.html"><span class="BioC">Biostrings</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/BSgenome.html"><span class="BioC">BSgenome</span></a>, <a href="http://www.bioconductor.org/packages/release/data/annotation/html/BSgenome.Hsapiens.UCSC.hg19.html"><span class="BioC">BSgenome.Hsapiens.UCSC.hg19</span></a>, <a href="../circlize/index.html">circlize</a>, <a href="../cluster/index.html">cluster</a>, <a href="../covr/index.html">covr</a>, <a href="../doFuture/index.html">doFuture</a>, <a href="../flexmix/index.html">flexmix</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/GenomicRanges.html"><span class="BioC">GenomicRanges</span></a>, <a href="../GenSA/index.html">GenSA</a>, <a href="../ggalluvial/index.html">ggalluvial</a>, <a href="../ggcorrplot/index.html">ggcorrplot</a>, <a href="../ggfittext/index.html">ggfittext</a>, <a href="../ggplotify/index.html">ggplotify</a>, <a href="../ggrepel/index.html">ggrepel</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/IRanges.html"><span class="BioC">IRanges</span></a>, <a href="../knitr/index.html">knitr</a>, <a href="../markdown/index.html">markdown</a>, <a href="../nnls/index.html">nnls</a>, <a href="../patchwork/index.html">patchwork</a>, <a href="../pheatmap/index.html">pheatmap</a>, <a href="../quadprog/index.html">quadprog</a>, <a href="../R.utils/index.html">R.utils</a>, <a href="../RColorBrewer/index.html">RColorBrewer</a>, <a href="../reticulate/index.html">reticulate</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../roxygen2/index.html">roxygen2</a>, <a href="../testthat/index.html">testthat</a>, <a href="../tibble/index.html">tibble</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-28</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Shixiang Wang <a href="https://orcid.org/0000-0001-9855-7357"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Xue-Song Liu <a href="https://orcid.org/0000-0002-7736-0077"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, ctb],
+  Tao Wu [aut, ctb],
+  Ziyu Tao [aut, ctb],
+  Geoffrey Macintyre [ctb],
+  Anand Mayakonda [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Shixiang Wang  &#x3c;&#x77;&#x5f;&#x73;&#x68;&#x69;&#x78;&#x69;&#x61;&#x6e;&#x67;&#x20;&#x61;&#x74;&#x20;&#x31;&#x36;&#x33;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ShixiangWang/sigminer/issues">https://github.com/ShixiangWang/sigminer/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/ShixiangWang/sigminer">https://github.com/ShixiangWang/sigminer</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">sigminer citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_sigminer.html">sigminer results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package sigminer downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="sigminer.pdf"> sigminer.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/sigminer.html">sigminer vignette</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/sigminer_1.0.19.tar.gz"> sigminer_1.0.19.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/sigminer_1.0.19.zip">sigminer_1.0.19.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/sigminer_1.0.19.zip">sigminer_1.0.19.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/sigminer_1.0.19.zip">sigminer_1.0.19.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: not available, r-oldrel: not available </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/sigminer"> sigminer archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=sigminer"><samp>https://CRAN.R-project.org/package=sigminer</samp></a>
+to link to this page.</p>
+</body>
+</html>

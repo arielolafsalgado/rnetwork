@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package DAISIE</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Dynamical Assembly of Islands by Speciation, Immigration and Extinction [R package DAISIE version 3.0.1]" />
+<meta name="citation_author1" content="Rampal S. Etienne" />
+<meta name="citation_author2" content="Luis Valente" />
+<meta name="citation_author3" content="Albert B. Phillimore" />
+<meta name="citation_author4" content="Bart Haegeman" />
+<meta name="citation_author5" content="Joshua W. Lambert" />
+<meta name="citation_author6" content="Pedro Neves" />
+<meta name="citation_author7" content="Shu Xie" />
+<meta name="citation_author8" content="Richèl J.C. Bilderbeek" />
+<meta name="citation_publication_date" content="2020-08-26" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=DAISIE" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=DAISIE" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="DAISIE: Dynamical Assembly of Islands by Speciation, Immigration and Extinction" />
+<meta name="og:description" content="Simulates and computes the (maximum) likelihood of a dynamical model of island biota assembly through speciation, immigration and extinction. See e.g. Valente et al. 2015. Ecology Letters 18: 844-852, &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fele.12461&quot;&gt;doi:10.1111/ele.12461&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=DAISIE" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>DAISIE: Dynamical Assembly of Islands by Speciation, Immigration and
+Extinction</h2>
+<p>Simulates and computes the (maximum) likelihood of a dynamical model of island biota assembly through speciation, immigration and extinction. See e.g. Valente et al. 2015. Ecology Letters 18: 844-852, &lt;<a href="https://doi.org/10.1111%2Fele.12461">doi:10.1111/ele.12461</a>&gt;.</p>
+<table summary="Package DAISIE summary">
+<tr>
+<td>Version:</td>
+<td>3.0.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../deSolve/index.html">deSolve</a>, graphics, stats, utils, <a href="../DDD/index.html">DDD</a> (&ge; 4.4), <a href="../subplex/index.html">subplex</a>, <a href="../Matrix/index.html">Matrix</a>, <a href="../tensor/index.html">tensor</a>, <a href="../pracma/index.html">pracma</a>, <a href="../testit/index.html">testit</a>, <a href="../foreach/index.html">foreach</a>, <a href="../doParallel/index.html">doParallel</a>, <a href="../magrittr/index.html">magrittr</a>, parallel</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../covr/index.html">covr</a>, <a href="../testthat/index.html">testthat</a> (&ge; 2.1.0), <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../gridExtra/index.html">gridExtra</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/ggtree.html"><span class="BioC">ggtree</span></a>, <a href="../tidytree/index.html">tidytree</a>, <a href="../tidyr/index.html">tidyr</a>, <a href="../purrr/index.html">purrr</a>, <a href="../ape/index.html">ape</a>, <a href="../phytools/index.html">phytools</a>, <a href="../tibble/index.html">tibble</a></td>
+</tr>
+<tr>
+<td>Enhances:</td>
+<td><a href="../doMC/index.html">doMC</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-08-26</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Rampal S. Etienne <a href="https://orcid.org/0000-0003-2142-7612"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Luis Valente <a href="https://orcid.org/0000-0003-4247-8785"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Albert B. Phillimore
+    <a href="https://orcid.org/0000-0002-6553-1553"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Bart Haegeman <a href="https://orcid.org/0000-0003-2325-4727"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Joshua W. Lambert [aut],
+  Pedro Neves <a href="https://orcid.org/0000-0003-2561-4677"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Shu Xie [aut],
+  Richèl J.C. Bilderbeek
+    <a href="https://orcid.org/0000-0003-1107-7049"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Torsten Hauffe <a href="https://orcid.org/0000-0001-5711-9457"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Giovanni Laudanno [ctb],
+  Nadiah Kristensen [ctb],
+  Raphael Scherrer [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Rampal S. Etienne  &#x3c;&#x72;&#x2e;&#x73;&#x2e;&#x65;&#x74;&#x69;&#x65;&#x6e;&#x6e;&#x65;&#x20;&#x61;&#x74;&#x20;&#x72;&#x75;&#x67;&#x2e;&#x6e;&#x6c;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_DAISIE.html">DAISIE results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package DAISIE downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="DAISIE.pdf"> DAISIE.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/demo_CSvsIW.html">Demo: Fitting clade-specific and island-wide diversity-dependence models in DAISIE</a><br/>
+<a href="vignettes/demo_optimize.html">Demo optimizing parameters</a><br/>
+<a href="vignettes/demo_sim.html">Demo simulating islands</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/DAISIE_3.0.1.tar.gz"> DAISIE_3.0.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/DAISIE_3.0.1.zip">DAISIE_3.0.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/DAISIE_3.0.1.zip">DAISIE_3.0.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/DAISIE_3.0.1.zip">DAISIE_3.0.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/DAISIE_3.0.1.tgz">DAISIE_3.0.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/DAISIE_3.0.1.tgz">DAISIE_3.0.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/DAISIE"> DAISIE archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=DAISIE"><samp>https://CRAN.R-project.org/package=DAISIE</samp></a>
+to link to this page.</p>
+</body>
+</html>

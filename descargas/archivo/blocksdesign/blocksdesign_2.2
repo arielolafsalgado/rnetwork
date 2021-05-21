@@ -1,0 +1,26 @@
+Package: blocksdesign
+Type: Package
+Title: Nested and Crossed Block Designs for Unstructured Treatment Sets
+Version: 2.2
+Date: 2016-09-01
+Author: R. N. Edmondson
+Maintainer: Rodney Edmondson <rodney.edmondson@gmail.com>
+Depends: R (>= 3.1.0)
+Description: Constructs nested and crossed block designs 
+  for unstructured treatment sets with arbitrary replication not necessarily all equal.
+  Blocks can be nested to any required depth of nesting and blocks are optimized 
+  hierarchically from the top down with successive nested blocks strata optimized within
+  the levels of all preceding blocks strata. Block sizes are all equal in any one stratum if the number 
+  of blocks in that stratum exactly divides the number of plots, otherwise they differ by at most one plot. 
+  The design output is a data table showing a randomised allocation of treatments to blocks together with
+  plans showing the allocation of treatments to blocks for each block in the bottom stratum of the design. 
+  D and A-efficiency factors are shown for each stratum together with A-efficiency upper bounds,
+  where available.
+License: GPL (>= 2)
+URL: http://www.expdesigns.co.uk
+Imports: crossdes
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-09-01 20:23:34 UTC; rne
+Repository: CRAN
+Date/Publication: 2016-09-02 02:03:31

@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package confoundr</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Diagnostics for Confounding of Time-Varying and Other Joint Exposures [R package confoundr version 1.2]" />
+<meta name="citation_author" content="John W. Jackson" />
+<meta name="citation_publication_date" content="2019-09-20" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=confoundr" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=confoundr" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="confoundr: Diagnostics for Confounding of Time-Varying and Other Joint Exposures" />
+<meta name="og:description" content="Implements three covariate-balance diagnostics for time-varying confounding and selection-bias in complex longitudinal data, as described in Jackson (2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.1097%2FEDE.0000000000000547&quot;&gt;doi:10.1097/EDE.0000000000000547&lt;/a&gt;&amp;gt; and Jackson (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Faje%2Fkwz136&quot;&gt;doi:10.1093/aje/kwz136&lt;/a&gt;&amp;gt;. Diagnostic 1 assesses measured confounding/selection-bias, diagnostic 2 assesses exposure-covariate feedback, and diagnostic 3 assesses residual confounding/selection-bias after inverse probability weighting or propensity score stratification. All diagnostics appropriately account for exposure history, can be adapted to assess a particular depth of covariate history, and can be implemented in right-censored data. Balance assessments can be obtained for all times, selected-times, or averaged across person-time. The balance measures are reported as tables or plots. These diagnostics can be applied to the study of multivariate exposures including time-varying exposures, direct effects, interaction, and censoring." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=confoundr" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>confoundr: Diagnostics for Confounding of Time-Varying and Other Joint
+Exposures</h2>
+<p>Implements three covariate-balance diagnostics for time-varying confounding and selection-bias in complex longitudinal data, as described in Jackson (2016) &lt;<a href="https://doi.org/10.1097%2FEDE.0000000000000547">doi:10.1097/EDE.0000000000000547</a>&gt; and Jackson (2019) &lt;<a href="https://doi.org/10.1093%2Faje%2Fkwz136">doi:10.1093/aje/kwz136</a>&gt;. Diagnostic 1 assesses measured confounding/selection-bias, diagnostic 2 assesses exposure-covariate feedback, and diagnostic 3 assesses residual confounding/selection-bias after inverse probability weighting or propensity score stratification. All diagnostics appropriately account for exposure history, can be adapted to assess a particular depth of covariate history, and can be implemented in right-censored data. Balance assessments can be obtained for all times, selected-times, or averaged across person-time. The balance measures are reported as tables or plots. These diagnostics can be applied to the study of multivariate exposures including time-varying exposures, direct effects, interaction, and censoring.</p>
+<table summary="Package confoundr summary">
+<tr>
+<td>Version:</td>
+<td>1.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.1.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>grid, <a href="../gridExtra/index.html">gridExtra</a> (&ge; 2.3), <a href="../scales/index.html">scales</a> (&ge; 0.5.0), <a href="../Rmpfr/index.html">Rmpfr</a> (&ge;
+0.7-0), <a href="../dplyr/index.html">dplyr</a> (&ge; 0.7.5), <a href="../tidyr/index.html">tidyr</a> (&ge; 0.8.1), <a href="../ggplot2/index.html">ggplot2</a> (&ge;
+2.2.1), <a href="../magrittr/index.html">magrittr</a> (&ge; 1.5), <a href="../stringr/index.html">stringr</a> (&ge; 1.3.1), <a href="../purrr/index.html">purrr</a> (&ge;
+0.2.5), <a href="../rlang/index.html">rlang</a> (&ge; 0.2.1), stats</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../covr/index.html">covr</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../testthat/index.html">testthat</a>, <a href="../broom/index.html">broom</a> (&ge; 0.4.4)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-09-20</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>John W. Jackson [aut, cre],
+  Erin Schnellinger [ctb],
+  Linda Valeri [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>John W. Jackson  &#x3c;&#x6a;&#x6f;&#x68;&#x6e;&#x2e;&#x6a;&#x61;&#x63;&#x6b;&#x73;&#x6f;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x6a;&#x68;&#x75;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/jwjackson/confoundr/issues">https://github.com/jwjackson/confoundr/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">confoundr citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_confoundr.html">confoundr results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package confoundr downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="confoundr.pdf"> confoundr.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/quickdemo.html">Demo Vignette</a><br/>
+<a href="vignettes/selectionbias.html">Extended Vignette</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/confoundr_1.2.tar.gz"> confoundr_1.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/confoundr_1.2.zip">confoundr_1.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/confoundr_1.2.zip">confoundr_1.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/confoundr_1.2.zip">confoundr_1.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/confoundr_1.2.tgz">confoundr_1.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/confoundr_1.2.tgz">confoundr_1.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/confoundr"> confoundr archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=confoundr"><samp>https://CRAN.R-project.org/package=confoundr</samp></a>
+to link to this page.</p>
+</body>
+</html>

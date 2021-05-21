@@ -1,0 +1,27 @@
+Package: qualmap
+Type: Package
+Title: Opinionated Approach for Digitizing Semi-Structured Qualitative
+        GIS Data
+Version: 0.1.1
+Authors@R: person("Christopher", "Prener", email = "chris.prener@slu.edu", 
+                  role = c("aut", "cre"), comment = c(ORCID = "0000-0002-4310-9888"))
+Description: Provides a set of functions for taking qualitative GIS data, hand drawn on a map, and 
+   converting it to a simple features object. These tools are focused on data that are drawn on a map
+   that contains some type of polygon features. For each area identified on the map, the id numbers
+   of these polygons can be entered as vectors and transformed using qualmap.
+Depends: R (>= 3.3)
+License: GPL-3
+URL: https://github.com/slu-openGIS/qualmap
+BugReports: https://github.com/slu-openGIS/qualmap/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.0
+Imports: dplyr, glue, leaflet, purrr, rlang, sf
+Suggests: covr, ggplot2, testthat, tigris, tidycensus, knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-09-03 17:57:21 UTC; chris
+Author: Christopher Prener [aut, cre] (<https://orcid.org/0000-0002-4310-9888>)
+Maintainer: Christopher Prener <chris.prener@slu.edu>
+Repository: CRAN
+Date/Publication: 2018-09-12 15:10:14 UTC

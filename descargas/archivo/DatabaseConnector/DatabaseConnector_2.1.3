@@ -1,0 +1,40 @@
+Package: DatabaseConnector
+Type: Package
+Title: Connecting to Various Database Platforms
+Version: 2.1.3
+Date: 2018-06-28
+Authors@R: c(
+    person("Martijn", "Schuemie", email = "schuemie@ohdsi.org", role = c("aut", "cre")),
+    person("Marc", "Suchard", role = c("aut")),
+    person("Observational Health Data Science and Informatics", role = c("cph")),
+    person("Microsoft Inc.", role = c("cph"), comment = "SQL Server JDBC driver"),
+    person("PostgreSQL Global Development Group", role = c("cph"), comment = "PostgreSQL JDBC driver"),
+    person("Starschema  Ltd.", role = c("cph"), comment = "BigQuery JDBC driver"),
+    person("Oracle Inc.", role = c("cph"), comment = "Oracle  JDBC driver"),
+    person("Amazon Inc.", role = c("cph"), comment = "RedShift  JDBC driver")
+  )
+Description: An R 'DataBase Interface' ('DBI') compatible interface to various database platforms ('PostgreSQL', 'Oracle', 'Microsoft SQL Server', 
+    'Amazon Redshift', 'Microsoft Parallel Database Warehouse', 'IBM Netezza', 'Apache Impala', and 'Google BigQuery'). Also includes support for
+    fetching data as 'ffdf' objects. Uses 'Java Database Connectivity' ('JDBC') to connect to databases.
+Imports: DatabaseConnectorJars, rJava, bit, ff, ffbase (>= 0.12.1),
+        SqlRender, methods, utils, DBI (>= 1.0.0), urltools
+Suggests: aws.s3, uuid, R.utils, testthat, DBItest, knitr, rmarkdown,
+License: Apache License
+VignetteBuilder: knitr
+URL: https://github.com/OHDSI/DatabaseConnector
+BugReports: https://github.com/OHDSI/DatabaseConnector/issues
+Copyright: See file COPYRIGHTS
+RoxygenNote: 6.0.1.9000
+NeedsCompilation: no
+Packaged: 2018-06-28 11:22:41 UTC; MSCHUEMI
+Author: Martijn Schuemie [aut, cre],
+  Marc Suchard [aut],
+  Observational Health Data Science and Informatics [cph],
+  Microsoft Inc. [cph] (SQL Server JDBC driver),
+  PostgreSQL Global Development Group [cph] (PostgreSQL JDBC driver),
+  Starschema Ltd. [cph] (BigQuery JDBC driver),
+  Oracle Inc. [cph] (Oracle JDBC driver),
+  Amazon Inc. [cph] (RedShift JDBC driver)
+Maintainer: Martijn Schuemie <schuemie@ohdsi.org>
+Repository: CRAN
+Date/Publication: 2018-06-28 11:35:16 UTC

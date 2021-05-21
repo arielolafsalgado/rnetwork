@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package neonUtilities</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Utilities for Working with NEON Data [R package neonUtilities version 1.3.7]" />
+<meta name="citation_author1" content="Claire Lunch" />
+<meta name="citation_author2" content="Christine Laney" />
+<meta name="citation_author3" content="Nathan Mietkiewicz" />
+<meta name="citation_author4" content="Eric Sokol" />
+<meta name="citation_author5" content="Kaelin Cawley" />
+<meta name="citation_author6" content="NEON (National Ecological Observatory Network)" />
+<meta name="citation_publication_date" content="2020-09-25" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=neonUtilities" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=neonUtilities" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="neonUtilities: Utilities for Working with NEON Data" />
+<meta name="og:description" content="NEON data packages can be accessed through the NEON Data Portal &amp;lt;&lt;a href=&quot;https://data.neonscience.org/home&quot;&gt;https://data.neonscience.org/home&lt;/a&gt;&amp;gt; or through the NEON Data API (see &amp;lt;&lt;a href=&quot;https://data.neonscience.org/data-api&quot;&gt;https://data.neonscience.org/data-api&lt;/a&gt;&amp;gt; for documentation). Data delivered from the Data Portal are provided as monthly zip files packaged within a parent zip file, while individual files can be accessed from the API. This package provides tools that aid in discovering, downloading, and reformatting data prior to use in analyses. This includes downloading data via the API, merging data tables by type, and converting formats. For more information, see the readme file at &amp;lt;&lt;a href=&quot;https://github.com/NEONScience/NEON-utilities&quot;&gt;https://github.com/NEONScience/NEON-utilities&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=neonUtilities" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>neonUtilities: Utilities for Working with NEON Data</h2>
+<p>NEON data packages can be accessed through the NEON Data Portal &lt;<a href="https://data.neonscience.org/home">https://data.neonscience.org/home</a>&gt;
+    or through the NEON Data API (see &lt;<a href="https://data.neonscience.org/data-api">https://data.neonscience.org/data-api</a>&gt; for documentation). Data delivered from
+    the Data Portal are provided as monthly zip files packaged within a parent zip file, while individual files
+    can be accessed from the API. This package provides tools that aid in discovering, downloading, and reformatting 
+    data prior to use in analyses. This includes downloading data via the API, merging data tables by type, and 
+    converting formats. For more information, see the readme file at &lt;<a href="https://github.com/NEONScience/NEON-utilities">https://github.com/NEONScience/NEON-utilities</a>&gt;.</p>
+<table summary="Package neonUtilities summary">
+<tr>
+<td>Version:</td>
+<td>1.3.7</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.4.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../dplyr/index.html">dplyr</a> (&ge; 0.7.1), <a href="../httr/index.html">httr</a>, <a href="../jsonlite/index.html">jsonlite</a>, <a href="../downloader/index.html">downloader</a>, <a href="../data.table/index.html">data.table</a>, utils, stats, <a href="../lubridate/index.html">lubridate</a>, <a href="../readr/index.html">readr</a>, <a href="../tidyr/index.html">tidyr</a>, <a href="../stringr/index.html">stringr</a>, <a href="../pbapply/index.html">pbapply</a>, parallel, <a href="../plyr/index.html">plyr</a>, <a href="../curl/index.html">curl</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="http://www.bioconductor.org/packages/release/bioc/html/rhdf5.html"><span class="BioC">rhdf5</span></a>, <a href="../raster/index.html">raster</a>, <a href="../R.utils/index.html">R.utils</a>, <a href="../sp/index.html">sp</a>, <a href="../testthat/index.html">testthat</a>, <a href="../magrittr/index.html">magrittr</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-25</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Claire Lunch [aut, cre, ctb],
+  Christine Laney [aut, ctb],
+  Nathan Mietkiewicz [aut, ctb],
+  Eric Sokol [aut, ctb],
+  Kaelin Cawley [aut, ctb],
+  NEON (National Ecological Observatory Network) [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Claire Lunch  &#x3c;&#x63;&#x6c;&#x75;&#x6e;&#x63;&#x68;&#x20;&#x61;&#x74;&#x20;&#x62;&#x61;&#x74;&#x74;&#x65;&#x6c;&#x6c;&#x65;&#x65;&#x63;&#x6f;&#x6c;&#x6f;&#x67;&#x79;&#x2e;&#x6f;&#x72;&#x67;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/NEONScience/NEON-utilities/issues">https://github.com/NEONScience/NEON-utilities/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/AGPL-3">AGPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/NEONScience/NEON-utilities">https://github.com/NEONScience/NEON-utilities</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_neonUtilities.html">neonUtilities results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package neonUtilities downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="neonUtilities.pdf"> neonUtilities.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/neonUtilities_1.3.7.tar.gz"> neonUtilities_1.3.7.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/neonUtilities_1.3.7.zip">neonUtilities_1.3.7.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/neonUtilities_1.3.7.zip">neonUtilities_1.3.7.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/neonUtilities_1.3.7.zip">neonUtilities_1.3.7.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/neonUtilities_1.3.7.tgz">neonUtilities_1.3.7.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/neonUtilities_1.3.7.tgz">neonUtilities_1.3.7.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/neonUtilities"> neonUtilities archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package neonUtilities reverse dependencies">
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../neonstore/index.html">neonstore</a>, <a href="../Z10/index.html">Z10</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=neonUtilities"><samp>https://CRAN.R-project.org/package=neonUtilities</samp></a>
+to link to this page.</p>
+</body>
+</html>

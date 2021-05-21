@@ -1,0 +1,33 @@
+Package: blocksdesign
+Type: Package
+Title: Nested and Crossed Block Designs for Factorial, Fractional
+        Factorial and Unstructured Treatment Sets
+Version: 3.9
+Date: 2020-03-01"
+Author: R. N. Edmondson.
+Maintainer: Rodney Edmondson <rodney.edmondson@gmail.com>
+Depends: R (>= 3.1.0)
+Description: Constructs D-optimal or near D-optimal nested and crossed 
+  block designs for unstructured or general factorial treatment designs. 
+  The treatment design, if required, is found from a model
+  matrix design formula and can be added sequentially, if required.
+  The block design is found from a defined
+  set of block factors and is conditional on the defined treatment design.   
+  The block factors are added in sequence and each added block factor
+  is optimized conditional on all previously added block factors.
+  The block design can have repeated nesting down to any required 
+  depth of nesting with either simple nested blocks or
+  crossed blocks at each level of nesting. Outputs include a table
+  showing the allocation of treatments to blocks and tables showing
+  the achieved D-efficiency factors for each block and treatment design. 
+License: GPL (>= 2)
+Imports: lme4, plyr, PolynomF
+LazyData: true
+RoxygenNote: 7.0.2
+Encoding: UTF-8
+Suggests: knitr, rmarkdown, R.rsp
+VignetteBuilder: knitr,R.rsp
+NeedsCompilation: no
+Packaged: 2020-02-29 22:12:09 UTC; rodney
+Repository: CRAN
+Date/Publication: 2020-02-29 22:40:03 UTC

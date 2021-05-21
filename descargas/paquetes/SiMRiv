@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package SiMRiv</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Simulating Multistate Movements in River/Heterogeneous Landscapes [R package SiMRiv version 1.0.4]" />
+<meta name="citation_author1" content="Lorenzo Quaglietta" />
+<meta name="citation_author2" content="Miguel Porto" />
+<meta name="citation_publication_date" content="2019-12-19" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=SiMRiv" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=SiMRiv" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="SiMRiv: Simulating Multistate Movements in River/Heterogeneous Landscapes" />
+<meta name="og:description" content="Provides functions to generate and analyze spatially-explicit individual-based multistate movements in rivers, heterogeneous and homogeneous spaces. This is done by incorporating landscape bias on local behaviour, based on resistance rasters. Although originally conceived and designed to simulate trajectories of species constrained to linear habitats/dendritic ecological networks (e.g. river networks), the simulation algorithm is built to be highly flexible and can be applied to any (aquatic, semi-aquatic or terrestrial) organism, independently on the landscape in which it moves. Thus, the user will be able to use the package to simulate movements either in homogeneous landscapes, heterogeneous landscapes (e.g. semi-aquatic animal moving mainly along rivers but also using the matrix), or even in highly contrasted landscapes (e.g. fish in a river network). The algorithm and its input parameters are the same for all cases, so that results are comparable. Simulated trajectories can then be used as mechanistic null models (Potts &amp;amp; Lewis 2014, &amp;lt;&lt;a href=&quot;https://doi.org/10.1098%2Frspb.2014.0231&quot;&gt;doi:10.1098/rspb.2014.0231&lt;/a&gt;&amp;gt;) to test a variety of 'Movement Ecology' hypotheses (Nathan et al. 2008, &amp;lt;&lt;a href=&quot;https://doi.org/10.1073%2Fpnas.0800375105&quot;&gt;doi:10.1073/pnas.0800375105&lt;/a&gt;&amp;gt;), including landscape effects (e.g. resources, infrastructures) on animal movement and species site fidelity, or for predictive purposes (e.g. road mortality risk, dispersal/connectivity). The package should be relevant to explore a broad spectrum of ecological phenomena, such as those at the interface of animal behaviour, management, landscape and movement ecology, disease and invasive species spread, and population dynamics." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=SiMRiv" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>SiMRiv: Simulating Multistate Movements in River/Heterogeneous
+Landscapes</h2>
+<p>Provides functions to generate and analyze spatially-explicit individual-based multistate movements in rivers,
+  heterogeneous and homogeneous spaces. This is done by incorporating landscape bias on local behaviour, based on
+  resistance rasters. Although originally conceived and designed to simulate trajectories of species constrained to
+  linear habitats/dendritic ecological networks (e.g. river networks), the simulation algorithm is built to be
+  highly flexible and can be applied to any (aquatic, semi-aquatic or terrestrial) organism, independently on the
+  landscape in which it moves. Thus, the user will be able to use the package to simulate movements either in
+  homogeneous landscapes, heterogeneous landscapes (e.g. semi-aquatic animal moving mainly along rivers but also using
+  the matrix), or even in highly contrasted landscapes (e.g. fish in a river network). The algorithm and its input
+  parameters are the same for all cases, so that results are comparable. Simulated trajectories can then be used as
+  mechanistic null models (Potts &amp; Lewis 2014, &lt;<a href="https://doi.org/10.1098%2Frspb.2014.0231">doi:10.1098/rspb.2014.0231</a>&gt;) to test a variety of 'Movement Ecology'
+  hypotheses (Nathan et al. 2008, &lt;<a href="https://doi.org/10.1073%2Fpnas.0800375105">doi:10.1073/pnas.0800375105</a>&gt;), including landscape effects (e.g. resources, 
+  infrastructures) on animal movement and species site fidelity, or for predictive purposes (e.g. road mortality risk,
+  dispersal/connectivity). The package should be relevant to explore a broad spectrum of ecological phenomena, such as
+  those at the interface of animal behaviour, management, landscape and movement ecology, disease and invasive species
+  spread, and population dynamics.</p>
+<table summary="Package SiMRiv summary">
+<tr>
+<td>Version:</td>
+<td>1.0.4</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10), <a href="../raster/index.html">raster</a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>methods, stats, <a href="../sp/index.html">sp</a>, <a href="../mco/index.html">mco</a>, parallel, <a href="../rgdal/index.html">rgdal</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../adehabitatLT/index.html">adehabitatLT</a>, <a href="../moveHMM/index.html">moveHMM</a>, <a href="../rgeos/index.html">rgeos</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-12-19</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Lorenzo Quaglietta [aut],
+  Miguel Porto [aut, cre],
+  Erida Gjini [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Miguel Porto  &#x3c;&#x6d;&#x70;&#x62;&#x65;&#x72;&#x74;&#x6f;&#x6c;&#x6f;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/miguel-porto/SiMRiv">https://github.com/miguel-porto/SiMRiv</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://www.r-project.org">https://www.r-project.org</a>, <a href="https://github.com/miguel-porto/SiMRiv">https://github.com/miguel-porto/SiMRiv</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">SiMRiv citation info</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/SpatioTemporal.html">SpatioTemporal</a>, <a href="../../views/Tracking.html">Tracking</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_SiMRiv.html">SiMRiv results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package SiMRiv downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="SiMRiv.pdf"> SiMRiv.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/SiMRiv.pdf">Usage of the SiMRiv package</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/SiMRiv_1.0.4.tar.gz"> SiMRiv_1.0.4.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/SiMRiv_1.0.4.zip">SiMRiv_1.0.4.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/SiMRiv_1.0.4.zip">SiMRiv_1.0.4.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/SiMRiv_1.0.4.zip">SiMRiv_1.0.4.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/SiMRiv_1.0.4.tgz">SiMRiv_1.0.4.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/SiMRiv_1.0.4.tgz">SiMRiv_1.0.4.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/SiMRiv"> SiMRiv archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=SiMRiv"><samp>https://CRAN.R-project.org/package=SiMRiv</samp></a>
+to link to this page.</p>
+</body>
+</html>

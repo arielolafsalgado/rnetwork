@@ -1,0 +1,26 @@
+Package: geosapi
+Type: Package
+Title: GeoServer REST API R Interface
+Version: 0.3-0
+Date: 2018-09-12
+Authors@R: c(person("Emmanuel", "Blondel", role = c("aut", "cre"), email = "emmanuel.blondel1@gmail.com", comment = c(ORCID = "0000-0002-5870-5762")))
+Maintainer: Emmanuel Blondel <emmanuel.blondel1@gmail.com>
+Description: Provides an R interface to the GeoServer REST API, allowing to upload 
+ and publish data in a GeoServer web-application and expose data to OGC Web-Services. 
+ The package currently supports all CRUD (Create,Read,Update,Delete) operations
+ on GeoServer workspaces, namespaces, datastores (stores of vector data), featuretypes,
+ layers, styles, as well as vector data upload operations. For more information about 
+ the GeoServer REST API, see <http://docs.geoserver.org/stable/en/user/rest/>.
+Depends: R (>= 3.1.0)
+Imports: R6, openssl, httr, XML
+Suggests: testthat, roxygen2
+License: MIT + file LICENSE
+URL: https://github.com/eblondel/geosapi/wiki, http://geoserver.org/
+BugReports: https://github.com/eblondel/geosapi/issues
+LazyLoad: yes
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-09-12 13:00:37 UTC; manub
+Author: Emmanuel Blondel [aut, cre] (<https://orcid.org/0000-0002-5870-5762>)
+Repository: CRAN
+Date/Publication: 2018-09-12 13:40:03 UTC

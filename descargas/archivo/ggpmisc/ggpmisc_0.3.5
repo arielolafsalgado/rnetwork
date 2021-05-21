@@ -1,0 +1,48 @@
+Package: ggpmisc
+Type: Package
+Title: Miscellaneous Extensions to 'ggplot2'
+Version: 0.3.5
+Date: 2020-06-01
+Authors@R: 
+    c(
+    person("Pedro J.", "Aphalo", email = "pedro.aphalo@helsinki.fi", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-3385-972X")),
+    person("Kamil", "Slowikowski", role = "ctb")
+    )
+Maintainer: Pedro J. Aphalo <pedro.aphalo@helsinki.fi>
+Description: Extensions to 'ggplot2' respecting the grammar of graphics
+    paradigm. Specialization of method ggplot(): accept and convert on the fly 
+    time series data. Geom: "table", "plot" and "grob" add insets to plots
+    using native data coordinates, while "table_npc", "plot_npc" and "grob_npc"
+    do the same using "npc" coordinates through new aesthetics "npcx" and "npcy". 
+    Statistics: locate and tag peaks and valleys; count observations in different 
+    quadrants of a plot; select observations based on 2D density; label with the 
+    equation of a polynomial fitted with lm() or other types of models; labels 
+    with P-value, R^2 or adjusted R^2 or information criteria for fitted models; 
+    label with ANOVA table for fitted models; label with summary for fitted 
+    models. Model fit classes for which suitable methods are provided by package
+    'broom' are supported. Scales and stats to build volcano and quadrant plots
+    based on outcomes, fold changes, p-values and false discovery rates.
+License: GPL (>= 2)
+LazyData: TRUE
+LazyLoad: TRUE
+ByteCompile: TRUE
+Depends: R (>= 3.6.0), ggplot2 (>= 3.3.0)
+Imports: grid, rlang (>= 0.4.5), magrittr (>= 1.5), gridExtra (>= 2.3),
+        scales (>= 1.1.0), MASS (>= 7.3-51.5), polynom (>= 1.4-0),
+        splus2R (>= 1.2-2), tibble (>= 3.0.1), plyr (>= 1.8.6), dplyr
+        (>= 0.8.3), xts (>= 0.12-0), zoo (>= 1.8-7), broom (>= 0.5.5),
+        lubridate (>= 1.7.8), stringr (>= 1.4.0)
+Suggests: knitr (>= 1.28), rmarkdown (>= 2.1), nlme (>= 3.1-147),
+        gginnards(>= 0.0.3), ggrepel (>= 0.8.2), magick (>= 2.3)
+URL: https://docs.r4photobiology.info/ggpmisc/,
+        https://bitbucket.org/aphalo/ggpmisc
+BugReports: https://bitbucket.org/aphalo/ggpmisc/issues
+Encoding: UTF-8
+RoxygenNote: 7.1.0
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-06-01 07:18:39 UTC; Aphalo
+Author: Pedro J. Aphalo [aut, cre] (<https://orcid.org/0000-0003-3385-972X>),
+  Kamil Slowikowski [ctb]
+Repository: CRAN
+Date/Publication: 2020-06-01 08:10:02 UTC

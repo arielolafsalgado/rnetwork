@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package ShortForm</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Automatic Short Form Creation [R package ShortForm version 0.4.6]" />
+<meta name="citation_author1" content="Anthony Raborn" />
+<meta name="citation_author2" content="Walter Leite" />
+<meta name="citation_publication_date" content="2020-03-13" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=ShortForm" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=ShortForm" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="ShortForm: Automatic Short Form Creation" />
+<meta name="og:description" content="Performs automatic creation of short forms of scales with an ant colony optimization algorithm and a Tabu search. As implemented in the package, the ant colony algorithm randomly selects items to build a model of a specified length, then updates the probability of item selection according to the fit of the best model within each set of searches. The algorithm continues until the same items are selected by multiple ants a given number of times in a row. On the other hand, the Tabu search changes one parameter at a time to be either free, constrained, or fixed while keeping track of the changes made and putting changes that result in worse fit in a &quot;tabu&quot; list so that the algorithm does not revisit them for some number of searches. See Leite, Huang, &amp;amp; Marcoulides (2008) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F00273170802285743&quot;&gt;doi:10.1080/00273170802285743&lt;/a&gt;&amp;gt; for an applied example of the ant colony algorithm, and Marcoulides &amp;amp; Falk (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F10705511.2017.1409074&quot;&gt;doi:10.1080/10705511.2017.1409074&lt;/a&gt;&amp;gt; for an applied example of the Tabu search." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=ShortForm" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>ShortForm: Automatic Short Form Creation</h2>
+<p>Performs automatic creation of short forms of scales with an 
+    ant colony optimization algorithm and a Tabu search. As implemented in the 
+    package, the ant colony algorithm randomly selects items to build a model of 
+    a specified length, then updates the probability of item selection according 
+    to the fit of the best model within each set of searches. The algorithm 
+    continues until the same items are selected by multiple ants a given number 
+    of times in a row. On the other hand, the Tabu search changes one parameter at
+    a time to be either free, constrained, or fixed while keeping track of the
+    changes made and putting changes that result in worse fit in a "tabu" list
+    so that the algorithm does not revisit them for some number of searches. 
+    See Leite, Huang, &amp; Marcoulides (2008) &lt;<a href="https://doi.org/10.1080%2F00273170802285743">doi:10.1080/00273170802285743</a>&gt; for
+    an applied example of the ant colony algorithm, and Marcoulides &amp; Falk (2018)
+    &lt;<a href="https://doi.org/10.1080%2F10705511.2017.1409074">doi:10.1080/10705511.2017.1409074</a>&gt; for an applied example of the Tabu search.</p>
+<table summary="Package ShortForm summary">
+<tr>
+<td>Version:</td>
+<td>0.4.6</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../lavaan/index.html">lavaan</a> (&ge; 0.5-22), <a href="../ggplot2/index.html">ggplot2</a>, <a href="../tidyr/index.html">tidyr</a>, <a href="../stringr/index.html">stringr</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../MplusAutomation/index.html">MplusAutomation</a> (&ge; 0.7), <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-03-13</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Anthony Raborn [aut, cre],
+  Walter Leite [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Anthony Raborn  &#x3c;&#x61;&#x6e;&#x74;&#x68;&#x6f;&#x6e;&#x79;&#x2e;&#x77;&#x2e;&#x72;&#x61;&#x62;&#x6f;&#x72;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/AnthonyRaborn/ShortForm/issues">https://github.com/AnthonyRaborn/ShortForm/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/LGPL-2">LGPL-2</a> | <a href="../../licenses/LGPL-2.1">LGPL-2.1</a> | <a href="http://website-archive.mozilla.org/www.mozilla.org/mpl/MPL/1.0/">MPL version 1.0</a> | <a href="https://www.mozilla.org/en-US/MPL/1.1/">MPL version 1.1</a> | <a href="https://www.mozilla.org/en-US/MPL/2.0/">MPL version 2.0</a> [expanded from: LGPL (&ge; 2.0, &lt; 3) | Mozilla Public License]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/AnthonyRaborn/ShortForm">https://github.com/AnthonyRaborn/ShortForm</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_ShortForm.html">ShortForm results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package ShortForm downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="ShortForm.pdf"> ShortForm.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/ShortForm_0.4.6.tar.gz"> ShortForm_0.4.6.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/ShortForm_0.4.6.zip">ShortForm_0.4.6.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/ShortForm_0.4.6.zip">ShortForm_0.4.6.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/ShortForm_0.4.6.zip">ShortForm_0.4.6.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/ShortForm_0.4.6.tgz">ShortForm_0.4.6.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/ShortForm_0.4.6.tgz">ShortForm_0.4.6.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/ShortForm"> ShortForm archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=ShortForm"><samp>https://CRAN.R-project.org/package=ShortForm</samp></a>
+to link to this page.</p>
+</body>
+</html>

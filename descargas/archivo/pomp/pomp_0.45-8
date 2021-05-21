@@ -1,0 +1,53 @@
+Package: pomp
+Type: Package
+Title: Statistical inference for partially observed Markov processes
+Version: 0.45-8
+Date: 2014-01-09
+Authors@R: c(
+	   person(given=c("Aaron","A."),family="King",
+		role=c("aut","cre"),email="kingaa@umich.edu"),
+	  person(given=c("Edward","L."),family="Ionides",role=c("aut")),
+	  person(given=c("Carles"),family="Breto",role=c("aut")),
+	  person(given=c("Stephen","P."),family="Ellner",role=c("ctb")),
+	  person(given=c("Matthew","J."),family="Ferrari",role=c("ctb")),
+	  person(given=c("Bruce","E."),family="Kendall",role=c("ctb")),
+	  person(given=c("Michael"),family="Lavine",role=c("ctb")),
+	  person(given="Dao",family="Nguyen",role=c("ctb")),
+	  person(given=c("Daniel","C."),family="Reuman",role=c("ctb")),
+	  person(given=c("Helen"),family="Wearing",role=c("ctb")),
+	  person(given=c("Simon","N."),family="Wood",role=c("ctb"))
+	  )
+URL: http://pomp.r-forge.r-project.org
+Description: Inference methods for partially-observed Markov processes
+Depends: R(>= 2.14.1), stats, graphics, methods, mvtnorm, subplex,
+        deSolve
+License: GPL (>= 2)
+LazyData: true
+BuildVignettes: true
+Collate: aaa.R authors.R version.R eulermultinom.R plugins.R parmat.R
+        logmeanexp.R slice-design.R profile-design.R sobol.R bsplines.R
+        sannbox.R pomp-fun.R pomp-class.R pomp.R pomp-methods.R
+        rmeasure-pomp.R rprocess-pomp.R init-state-pomp.R
+        dmeasure-pomp.R dprocess-pomp.R skeleton-pomp.R simulate-pomp.R
+        trajectory-pomp.R plot-pomp.R pfilter.R pfilter-methods.R
+        traj-match.R bsmc.R mif-class.R particles-mif.R mif.R
+        mif-methods.R compare-mif.R pmcmc.R pmcmc-methods.R
+        compare-pmcmc.R nlf-funcs.R nlf-guts.R nlf-objfun.R nlf.R
+        probe.R probe-match.R basic-probes.R spect.R spect-match.R
+        builder.R example.R
+Packaged: 2014-01-09 16:22:18 UTC; kingaa
+Author: Aaron A. King [aut, cre],
+  Edward L. Ionides [aut],
+  Carles Breto [aut],
+  Stephen P. Ellner [ctb],
+  Matthew J. Ferrari [ctb],
+  Bruce E. Kendall [ctb],
+  Michael Lavine [ctb],
+  Dao Nguyen [ctb],
+  Daniel C. Reuman [ctb],
+  Helen Wearing [ctb],
+  Simon N. Wood [ctb]
+Maintainer: Aaron A. King <kingaa@umich.edu>
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2014-01-09 22:22:00

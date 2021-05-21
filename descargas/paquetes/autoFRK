@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package autoFRK</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=autoFRK" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="autoFRK: Automatic Fixed Rank Kriging" />
+<meta name="og:description" content="Automatic fixed rank kriging for (irregularly located) spatial data using a class of basis functions with multi-resolution features and ordered in terms of their resolutions. The model parameters are estimated by maximum likelihood (ML) and the number of basis functions is determined by Akaike's information criterion (AIC). For spatial data with either one realization or independent replicates, the ML estimates and AIC are efficiently computed using their closed-form expressions when no missing value occurs. Details regarding the basis function construction, parameter estimation, and AIC calculation can be found in Tzeng and Huang (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F00401706.2017.1345701&quot;&gt;doi:10.1080/00401706.2017.1345701&lt;/a&gt;&amp;gt;. For data with missing values, the ML estimates are obtained using the expectation- maximization algorithm. Apart from the number of basis functions, there are no other tuning parameters, making the method fully automatic. Users can also include a stationary structure in the spatial covariance, which utilizes 'LatticeKrig' package." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=autoFRK" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>autoFRK: Automatic Fixed Rank Kriging</h2>
+<p>Automatic fixed rank kriging for (irregularly located)
+    spatial data using a class of basis functions with multi-resolution features
+    and ordered in terms of their resolutions. The model parameters are estimated
+    by maximum likelihood (ML) and the number of basis functions is determined
+    by Akaike's information criterion (AIC). For spatial data with either one
+    realization or independent replicates, the ML estimates and AIC are efficiently
+    computed using their closed-form expressions when no missing value occurs. Details 
+    regarding the basis function construction, parameter estimation, and AIC calculation  
+    can be found in Tzeng and Huang (2018) &lt;<a href="https://doi.org/10.1080%2F00401706.2017.1345701">doi:10.1080/00401706.2017.1345701</a>&gt;. For
+    data with missing values, the ML estimates are obtained using the expectation-
+    maximization algorithm. Apart from the number of basis functions, there are
+    no other tuning parameters, making the method fully automatic. Users can also
+    include a stationary structure in the spatial covariance, which utilizes
+    'LatticeKrig' package.</p>
+<table summary="Package autoFRK summary">
+<tr>
+<td>Version:</td>
+<td>1.3.3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.1), <a href="../spam/index.html">spam</a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../fields/index.html">fields</a> (&ge; 6.9.1), <a href="../filehashSQLite/index.html">filehashSQLite</a>, <a href="../filehash/index.html">filehash</a>, <a href="../MASS/index.html">MASS</a>, <a href="../mgcv/index.html">mgcv</a>, <a href="../LatticeKrig/index.html">LatticeKrig</a> (&ge; 5.4), <a href="../FNN/index.html">FNN</a>, <a href="../filematrix/index.html">filematrix</a>, <a href="../Rcpp/index.html">Rcpp</a>, methods</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RSpectra/index.html">RSpectra</a>, <a href="../RcppEigen/index.html">RcppEigen</a>, <a href="../RcppParallel/index.html">RcppParallel</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-13</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>ShengLi Tzeng [aut, cre], Hsin-Cheng Huang [aut], Wen-Ting Wang [ctb], Douglas Nychka [ctb], Colin Gillespie [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>ShengLi Tzeng  &#x3c;&#x73;&#x6c;&#x74;&#x2e;&#x63;&#x6d;&#x75;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_autoFRK.html">autoFRK results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package autoFRK downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="autoFRK.pdf"> autoFRK.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/autoFRK_1.3.3.tar.gz"> autoFRK_1.3.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/autoFRK_1.3.3.zip">autoFRK_1.3.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/autoFRK_1.3.3.zip">autoFRK_1.3.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/autoFRK_1.3.3.zip">autoFRK_1.3.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/autoFRK_1.3.3.tgz">autoFRK_1.3.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/autoFRK_1.3.3.tgz">autoFRK_1.3.3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/autoFRK"> autoFRK archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=autoFRK"><samp>https://CRAN.R-project.org/package=autoFRK</samp></a>
+to link to this page.</p>
+</body>
+</html>

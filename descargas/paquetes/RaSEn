@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package RaSEn</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=RaSEn" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="RaSEn: Random Subspace Ensemble Classification" />
+<meta name="og:description" content="We propose a flexible ensemble classification framework, RaSE algorithm, for the sparse classification problem. In RaSE algorithm, for each weak learner, some random subspaces are generated and the optimal one is chosen to train the model on the basis of some criterion. To be adapted to the problem, a novel criterion, ratio information criterion (RIC) is put up with based on Kullback-Leibler divergence. Besides minimizing RIC, multiple criteria can be applied, for instance, minimizing extended Bayesian information criterion (eBIC), minimizing training error, minimizing the validation error, minimizing the cross-validation error, minimizing leave-one-out error. And the choices of base classifiers are also various, for instance, linear discriminant analysis, quadratic discriminant analysis, k-nearest neighbor, logistic regression, decision trees, random forest, support vector machines. RaSE algorithm can also be applied to do feature ranking, providing us the importance of each feature based on the selected percentage in multiple subspaces. In addition, to relax the requirement of the number of random subspaces to be generated, we propose an iterative version of RaSE, which is shown to be effective under many sparse binary classification settings." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=RaSEn" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>RaSEn: Random Subspace Ensemble Classification</h2>
+<p>We propose a flexible ensemble classification framework, RaSE algorithm, for the sparse classification problem. In RaSE algorithm, for each weak learner, some random subspaces are generated and the optimal one is chosen to train the model on the basis of some criterion. To be adapted to the problem, a novel criterion, ratio information criterion (RIC) is put up with based on Kullback-Leibler divergence. Besides minimizing RIC, multiple criteria can be applied, for instance, minimizing extended Bayesian information criterion (eBIC), minimizing training error, minimizing the validation error, minimizing the cross-validation error, minimizing leave-one-out error. And the choices of base classifiers are also various, for instance, linear discriminant analysis, quadratic discriminant analysis, k-nearest neighbor, logistic regression, decision trees, random forest, support vector machines. RaSE algorithm can also be applied to do feature ranking, providing us the importance of each feature based on the selected percentage in multiple subspaces. In addition, to relax the requirement of the number of random subspaces to be generated, we propose an iterative version of RaSE, which is shown to be effective under many sparse binary classification settings.</p>
+<table summary="Package RaSEn summary">
+<tr>
+<td>Version:</td>
+<td>1.1.0</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../MASS/index.html">MASS</a>, <a href="../caret/index.html">caret</a>, <a href="../class/index.html">class</a>, <a href="../doParallel/index.html">doParallel</a>, <a href="../e1071/index.html">e1071</a>, <a href="../foreach/index.html">foreach</a>, <a href="../nnet/index.html">nnet</a>, <a href="../randomForest/index.html">randomForest</a>, <a href="../rpart/index.html">rpart</a>, stats, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../gridExtra/index.html">gridExtra</a>, <a href="../formatR/index.html">formatR</a>, <a href="../FNN/index.html">FNN</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-21</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Ye Tian [aut, cre] and Yang Feng [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Ye Tian  &#x3c;&#x79;&#x65;&#x2e;&#x74;&#x20;&#x61;&#x74;&#x20;&#x63;&#x6f;&#x6c;&#x75;&#x6d;&#x62;&#x69;&#x61;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_RaSEn.html">RaSEn results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package RaSEn downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="RaSEn.pdf"> RaSEn.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/RaSEn-demo.pdf">RaSEn demo</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/RaSEn_1.1.0.tar.gz"> RaSEn_1.1.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/RaSEn_1.1.0.zip">RaSEn_1.1.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/RaSEn_1.1.0.zip">RaSEn_1.1.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/RaSEn_1.1.0.zip">RaSEn_1.1.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/RaSEn_1.1.0.tgz">RaSEn_1.1.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/RaSEn_1.1.0.tgz">RaSEn_1.1.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/RaSEn"> RaSEn archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=RaSEn"><samp>https://CRAN.R-project.org/package=RaSEn</samp></a>
+to link to this page.</p>
+</body>
+</html>

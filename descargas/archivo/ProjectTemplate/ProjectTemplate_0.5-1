@@ -1,0 +1,55 @@
+Package: ProjectTemplate
+Type: Package
+Title: Automates the creation of new statistical analysis projects.
+Version: 0.5-1
+Date: 2014-03-16
+Authors@R: c( person("Aleksandar", "Blagotic", role = "ctb"), person("Diego",
+    "Valle-Jones", role = "ctb"), person("Jeffrey", "Breen", role = "ctb"),
+    person("Joakim", "Lundborg", role = "ctb"), person("John Myles", "White",
+    role = c("aut", "cph")), person("Josh", "Bode", role = "ctb"),
+    person("Kenton", "White", role = "ctb"), person("Kirill", "Mueller", email
+    = "mail@kirill-mueller.de", role = c("ctb", "cre")), person("Matteo",
+    "Redaelli", role = "ctb"), person("Noah", "Lorang", role = "ctb"),
+    person("Patrick", "Schalk", role = "ctb"))
+Description: ProjectTemplate provides functions to
+    automatically build a directory structure for a new R
+    project. Using this structure, ProjectTemplate
+    automates data loading, preprocessing, library
+    importing and unit testing.
+License: Artistic-2.0
+LazyLoad: yes
+Roxygen: list(wrap = FALSE)
+Depends: R (>= 2.7)
+Suggests: foreign, reshape, plyr, stringr, ggplot2, lubridate, log4r,
+        RMySQL, RSQLite, gdata, RODBC, RJDBC, xlsx, tuneR, pixmap,
+        data.table, RPostgreSQL, GetoptLong, testthat, Defaults
+URL: http://projecttemplate.net
+BugReports: https://github.com/johnmyleswhite/ProjectTemplate/issues
+Collate: 'arff.reader.R' 'cache.R' 'cache.name.R' 'cache.project.R'
+        'clean.variable.name.R' 'create.project.R' 'csv.reader.R'
+        'csv2.reader.R' 'db.reader.R' 'dbf.reader.R' 'epiinfo.reader.R'
+        'xport.reader.R' 'xlsx.reader.R' 'xls.reader.R' 'wsv.reader.R'
+        'url.reader.R' 'tsv.reader.R' 'systat.reader.R'
+        'stata.reader.R' 'require.package.R' 'sql.reader.R'
+        'spss.reader.R' 'rdata.reader.R' 'r.reader.R' 'ppm.reader.R'
+        'octave.reader.R' 'mtp.reader.R' 'mp3.reader.R' 'file.reader.R'
+        'extensions.dispatch.table.R' 'get.project.R' 'help.R'
+        'load.project.R' 'reload.project.R' 'run.project.R'
+        'show.project.R' 'stub.tests.R' 'test.project.R'
+        'translate.dcf.R'
+Packaged: 2014-03-17 08:37:02 UTC; muelleki
+Author: Aleksandar Blagotic [ctb],
+  Diego Valle-Jones [ctb],
+  Jeffrey Breen [ctb],
+  Joakim Lundborg [ctb],
+  John Myles White [aut, cph],
+  Josh Bode [ctb],
+  Kenton White [ctb],
+  Kirill Mueller [ctb, cre],
+  Matteo Redaelli [ctb],
+  Noah Lorang [ctb],
+  Patrick Schalk [ctb]
+Maintainer: Kirill Mueller <mail@kirill-mueller.de>
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2014-03-17 10:35:23

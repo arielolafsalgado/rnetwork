@@ -1,0 +1,35 @@
+Package: lbfgsb3c
+Type: Package
+Title: Limited Memory BFGS Minimizer with Bounds on Parameters with
+        optim() 'C' Interface
+Version: 2018-2.13
+Authors@R: c(person(given = c("Matthew", "L"), family = "Fidler", role =
+              c("aut", "cre"), email = "matthew.fidler@gmail.com"),
+	      person(given = c("John", "C"), family = "Nash", role =
+              c("aut"), email = "nashjc@uottawa.ca"),
+              person(given = "Ciyou", family = "Zhu", role = "aut"), 
+              person(given = "Richard", family = "Byrd", role = "aut"), 
+              person(given = "Jorge", family = "Nocedal", role = "aut"),
+              person(given = c("Jose", "Luis"), family = "Morales", role = "aut"))
+Maintainer: Matthew L Fidler <matthew.fidler@gmail.com>
+Description: Interfacing to Nocedal et al. L-BFGS-B.3.0 (2011 <doi:10.1145/2049662.2049669>) limited
+	memory BFGS minimizer with bounds on parameters. This is a fork of 'lbfgsb3'.  This
+	registers a 'R' compatible 'C' interface to L-BFGS-B.3.0 that uses the same function types
+	and optimization as the optim() function (see writing 'R' extensions and source for
+	details).  Ths package also adds more stopping criterion as well as allows adjusting more tolerances.
+License: GPL-2
+Depends: R (>= 3.0.2)
+Imports: Rcpp (>= 0.12.3), numDeriv, methods
+LinkingTo: Rcpp (>= 0.12.3), RcppArmadillo
+NeedsCompilation: yes
+RoxygenNote: 6.1.0
+Suggests: testthat
+Packaged: 2018-10-15 23:19:11 UTC; FIDLEMA3
+Author: Matthew L Fidler [aut, cre],
+  John C Nash [aut],
+  Ciyou Zhu [aut],
+  Richard Byrd [aut],
+  Jorge Nocedal [aut],
+  Jose Luis Morales [aut]
+Repository: CRAN
+Date/Publication: 2018-10-19 16:20:03 UTC

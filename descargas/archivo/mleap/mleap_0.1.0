@@ -1,0 +1,28 @@
+Package: mleap
+Type: Package
+Title: Interface to 'MLeap'
+Version: 0.1.0
+Authors@R: c(
+  person("Kevin", "Kuo", role = c("aut", "cre"), email = "kevin.kuo@rstudio.com",
+  comment = c(ORCID = "0000-0001-7803-7901"))
+  )
+Description: A 'sparklyr' <https://spark.rstudio.com> extension that provides
+  an interface to 'MLeap' <https://github.com/combust/mleap>, an open source library
+  that enables exporting and serving of 'Apache Spark' pipelines.
+URL: https://github.com/rstudio/mleap
+BugReports: https://github.com/rstudio/mleap/issues
+License: Apache License (>= 2.0)
+SystemRequirements: Apache Spark 2.0+, Apache Maven 3.5+, Java JDK 8,
+        MLeap Runtime 0.9.6+
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.1.2)
+Imports: sparklyr, jsonlite, purrr, fs, tibble, rJava, digest
+RoxygenNote: 6.0.1
+Suggests: testthat, covr
+NeedsCompilation: no
+Packaged: 2018-04-24 21:12:57 UTC; kevinykuo
+Author: Kevin Kuo [aut, cre] (<https://orcid.org/0000-0001-7803-7901>)
+Maintainer: Kevin Kuo <kevin.kuo@rstudio.com>
+Repository: CRAN
+Date/Publication: 2018-04-24 21:32:19 UTC

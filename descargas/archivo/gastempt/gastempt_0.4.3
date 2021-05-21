@@ -1,0 +1,31 @@
+Package: gastempt
+Version: 0.4.3
+Authors@R: c(
+      person("Dieter", "Menne", ,"dieter.menne@menne-biomed.de", c("aut","cre"))
+    )
+Type: Package
+Title: Analyzing Gastric Emptying from MRI or Scintigraphy
+Description: Fits gastric emptying time series from MRI or scintigraphic measurements
+   using nonlinear mixed-model population fits with 'nlme' and Bayesian methods with 
+   Stan; computes derived parameters such as t50 and AUC.
+License: GPL (>= 3)
+LazyData: TRUE
+NeedsCompilation: yes
+URL: http://github.com/dmenne/gastempt
+BugReports: http://github.com/dmenne/gastempt/issues
+Depends: R (>= 3.4.0)
+Imports: nlme, Rcpp (>= 0.12.19), dplyr, tibble, ggplot2 (>= 3.0.0),
+        rstan (>= 2.18.1), rstantools (>= 1.5.1), assertthat, stringr,
+        methods, shiny
+Suggests: rmarkdown, knitr, covr, testthat
+LinkingTo: StanHeaders (>= 2.18.0), rstan (>= 2.18.1), BH (>=
+        1.66.0-1), Rcpp (>= 0.12.19), RcppEigen (>= 0.3.3.4.0)
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+Encoding: UTF-8
+SystemRequirements: GNU make
+Packaged: 2018-11-09 20:09:04 UTC; dieter
+Author: Dieter Menne [aut, cre]
+Maintainer: Dieter Menne <dieter.menne@menne-biomed.de>
+Repository: CRAN
+Date/Publication: 2018-11-10 15:00:03 UTC

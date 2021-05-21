@@ -1,0 +1,34 @@
+Package: rbiom
+Type: Package
+Title: Read/Write, Transform, and Summarize 'BIOM' Data
+Version: 1.0.0
+Authors@R: 
+    person("Daniel P.", "Smith", 
+    email = "dansmith@orst.edu", 
+    role  = c("aut", "cre", "cph"),
+    comment = c(ORCID = "0000-0002-2479-2044"))
+Description: 
+    A toolkit for working with Biological Observation Matrix ('BIOM') files.
+    Features include reading/writing all 'BIOM' formats, rarefaction, alpha
+    diversity, beta diversity (including 'UniFrac'), summarizing counts by 
+    taxonomic level, and sample subsetting. Standalone functions for 
+    reading, writing, and subsetting phylogenetic trees are also provided. 
+    All CPU intensive operations are encoded in C with multi-thread support.
+URL: https://cmmr.github.io/rbiom/index.html
+BugReports: https://github.com/cmmr/rbiom/issues
+License: AGPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.6.0)
+LinkingTo: Rcpp, RcppParallel
+Imports: magrittr, methods, plyr, Rcpp, RcppParallel, R.utils, rhdf5,
+        rjson, slam, openxlsx
+Suggests: ape, reshape2, testthat
+RoxygenNote: 7.1.0
+NeedsCompilation: yes
+Packaged: 2020-05-18 06:12:09 UTC; Daniel
+Author: Daniel P. Smith [aut, cre, cph]
+    (<https://orcid.org/0000-0002-2479-2044>)
+Maintainer: Daniel P. Smith <dansmith@orst.edu>
+Repository: CRAN
+Date/Publication: 2020-05-26 14:20:02 UTC

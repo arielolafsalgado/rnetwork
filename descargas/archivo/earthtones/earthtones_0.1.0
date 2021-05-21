@@ -1,0 +1,23 @@
+Package: earthtones
+Title: Derive a Color Palette from a Particular Location on Earth
+Version: 0.1.0
+Date: 2016-08-31
+Description: Downloads a satellite image via Google Maps/Earth (these are
+    originally from a variety of aerial photography sources), 
+    translates the image into a perceptually uniform color space,
+    runs one of a few different clustering algorithms on the colors in the image 
+    searching for a user-supplied number of colors,
+    and returns the resulting color palette.  
+Depends: R (>= 3.1.0)
+License: MIT + file LICENSE
+LazyData: true
+Author: Will Cornwell, Mitch Lyons, Nick Murray
+Maintainer: Will Cornwell <wcornwell@gmail.com>
+Imports: ggmap (>= 2.6.1)
+Suggests: testthat, cluster, knitr, rmarkdown, ggplot2
+VignetteBuilder: knitr
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-09-01 07:40:33 UTC; willcornwell
+Repository: CRAN
+Date/Publication: 2016-09-01 13:17:29

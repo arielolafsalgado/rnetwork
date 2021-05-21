@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package ncpen</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Unified Algorithm for Non-convex Penalized Estimation for Generalized Linear Models [R package ncpen version 1.0.0]" />
+<meta name="citation_author1" content="Dongshin Kim" />
+<meta name="citation_author2" content="Sunghoon Kwon" />
+<meta name="citation_author3" content="Sangin Lee" />
+<meta name="citation_publication_date" content="2018-11-17" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=ncpen" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=ncpen" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="ncpen: Unified Algorithm for Non-convex Penalized Estimation for Generalized Linear Models" />
+<meta name="og:description" content="An efficient unified nonconvex penalized estimation algorithm for Gaussian (linear), binomial Logit (logistic), Poisson, multinomial Logit, and Cox proportional hazard regression models. The unified algorithm is implemented based on the convex concave procedure and the algorithm can be applied to most of the existing nonconvex penalties. The algorithm also supports convex penalty: least absolute shrinkage and selection operator (LASSO). Supported nonconvex penalties include smoothly clipped absolute deviation (SCAD), minimax concave penalty (MCP), truncated LASSO penalty (TLP), clipped LASSO (CLASSO), sparse ridge (SRIDGE), modified bridge (MBRIDGE) and modified log (MLOG). For high-dimensional data (data set with many variables), the algorithm selects relevant variables producing a parsimonious regression model. Kim, D., Lee, S. and Kwon, S. (2018) &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1811.05061&quot;&gt;arXiv:1811.05061&lt;/a&gt;&amp;gt;, Lee, S., Kwon, S. and Kim, Y. (2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.csda.2015.08.019&quot;&gt;doi:10.1016/j.csda.2015.08.019&lt;/a&gt;&amp;gt;, Kwon, S., Lee, S. and Kim, Y. (2015) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.csda.2015.07.001&quot;&gt;doi:10.1016/j.csda.2015.07.001&lt;/a&gt;&amp;gt;. (This research is funded by Julian Virtue Professorship from Center for Applied Research at Pepperdine Graziadio Business School and the National Research Foundation of Korea.)" />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=ncpen" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>ncpen: Unified Algorithm for Non-convex Penalized Estimation for
+Generalized Linear Models</h2>
+<p>An efficient unified nonconvex penalized estimation algorithm for
+    Gaussian (linear), binomial Logit (logistic), Poisson, multinomial Logit,
+    and Cox proportional hazard regression models.
+    The unified algorithm is implemented based on the convex concave procedure and
+    the algorithm can be applied to most of the existing nonconvex penalties.
+    The algorithm also supports convex penalty:
+    least absolute shrinkage and selection operator (LASSO).
+    Supported nonconvex penalties include
+    smoothly clipped absolute deviation (SCAD),
+    minimax concave penalty (MCP), truncated LASSO penalty (TLP),
+    clipped LASSO (CLASSO), sparse ridge (SRIDGE),
+    modified bridge (MBRIDGE) and modified log (MLOG).
+    For high-dimensional data (data set with many variables),
+    the algorithm selects relevant variables producing a parsimonious regression model.
+    Kim, D., Lee, S. and Kwon, S. (2018) &lt;<a href="https://arxiv.org/abs/1811.05061">arXiv:1811.05061</a>&gt;,
+    Lee, S., Kwon, S. and Kim, Y. (2016) &lt;<a href="https://doi.org/10.1016%2Fj.csda.2015.08.019">doi:10.1016/j.csda.2015.08.019</a>&gt;,
+    Kwon, S., Lee, S. and Kim, Y. (2015) &lt;<a href="https://doi.org/10.1016%2Fj.csda.2015.07.001">doi:10.1016/j.csda.2015.07.001</a>&gt;.
+    (This research is funded by Julian Virtue Professorship from Center for Applied Research at Pepperdine
+    Graziadio Business School and the National Research Foundation of Korea.)</p>
+<table summary="Package ncpen summary">
+<tr>
+<td>Version:</td>
+<td>1.0.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.4)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.11.2)</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2018-11-17</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Dongshin Kim [aut, cre, cph],
+  Sunghoon Kwon [aut, cph],
+  Sangin Lee [aut, cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Dongshin Kim  &#x3c;&#x64;&#x6f;&#x6e;&#x67;&#x73;&#x68;&#x69;&#x6e;&#x2e;&#x6b;&#x69;&#x6d;&#x20;&#x61;&#x74;&#x20;&#x6c;&#x69;&#x76;&#x65;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/zeemkr/ncpen/issues">https://github.com/zeemkr/ncpen/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL (&ge; 3)</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/zeemkr/ncpen">https://github.com/zeemkr/ncpen</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_ncpen.html">ncpen results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package ncpen downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="ncpen.pdf"> ncpen.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/ncpen_1.0.0.tar.gz"> ncpen_1.0.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/ncpen_1.0.0.zip">ncpen_1.0.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/ncpen_1.0.0.zip">ncpen_1.0.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/ncpen_1.0.0.zip">ncpen_1.0.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/ncpen_1.0.0.tgz">ncpen_1.0.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/ncpen_1.0.0.tgz">ncpen_1.0.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/ncpen"> ncpen archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=ncpen"><samp>https://CRAN.R-project.org/package=ncpen</samp></a>
+to link to this page.</p>
+</body>
+</html>

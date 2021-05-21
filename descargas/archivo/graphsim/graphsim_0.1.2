@@ -1,0 +1,27 @@
+Package: graphsim
+Type: Package
+Title: Simulate Expression Data from 'igraph' Networks
+Version: 0.1.2
+Date: 2020-03-02
+Authors@R: c(person("S. Thomas", "Kelly",email = "tom.kelly@postgrad.otago.ac.nz", role = c("ctb")),
+             person("S. Thomas", "Kelly",email = "tom.kelly@riken.jp", role = c("aut", "cre")),
+             person("Michael A.", "Black", email = "mik.black@otago.ac.nz", role = c("aut", "ths")))
+Description: Functions to develop simulated continuous data (e.g., gene expression) from a sigma covariance matrix derived from a graph structure in 'igraph' objects. Intended to extend 'mvtnorm' to take 'igraph' structures rather than sigma matrices as input.
+Language: en-GB
+License: GPL-3
+Depends: R (>= 2.10.0)
+Imports: utils, igraph, mvtnorm, Matrix, matrixcalc, graphics
+Suggests: knitr, rmarkdown, animation, testthat, gplots, scales,
+        devtools, vdiffr
+LazyData: TRUE
+RoxygenNote: 7.0.2
+Encoding: UTF-8
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-03-09 17:24:17 UTC; tom
+Author: S. Thomas Kelly [ctb],
+  S. Thomas Kelly [aut, cre],
+  Michael A. Black [aut, ths]
+Maintainer: S. Thomas Kelly <tom.kelly@riken.jp>
+Repository: CRAN
+Date/Publication: 2020-03-16 14:10:02 UTC

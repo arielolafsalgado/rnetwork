@@ -1,0 +1,32 @@
+Package: widgetframe
+Type: Package
+Title: 'Htmlwidgets' in Responsive 'iframes'
+Version: 0.2.0
+Authors@R: c(
+    person("Bhaskar", "Karambelkar", email = "bhaskarvk@gmail.com", role = c("aut", "cre"))
+    )
+Description: Provides two functions 'frameableWidget()', and 'frameWidget()'.
+  The 'frameableWidget()' is used to add extra code to a 'htmlwidget' which
+  allows is to be rendered correctly inside a responsive 'iframe'.
+  The 'frameWidget()' is a 'htmlwidget' which displays content of another 'htmlwidget'
+  inside a responsive 'iframe'.
+  These functions allow for easier embedding of 'htmlwidgets' in content management systems
+  such as 'wordpress', 'blogger' etc.
+  They also allow for separation of widget content from main HTML content where
+  CSS of the main HTML could interfere with the widget.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.1.0), htmlwidgets,
+Imports: htmltools, purrr, magrittr, utils, tools
+RoxygenNote: 6.0.1
+URL: https://github.com/bhaskarvk/widgetframe
+BugReports: https://github.com/bhaskarvk/widgetframe/issues
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-05-11 19:31:55 UTC; bhaskar
+Author: Bhaskar Karambelkar [aut, cre]
+Maintainer: Bhaskar Karambelkar <bhaskarvk@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-05-11 20:24:47 UTC

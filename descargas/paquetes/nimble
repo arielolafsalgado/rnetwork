@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package nimble</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="MCMC, Particle Filtering, and Programmable Hierarchical Modeling [R package nimble version 0.10.0]" />
+<meta name="citation_author1" content="Perry de Valpine" />
+<meta name="citation_author2" content="Christopher Paciorek" />
+<meta name="citation_author3" content="Daniel Turek" />
+<meta name="citation_author4" content="Nick Michaud" />
+<meta name="citation_author5" content="Cliff Anderson-Bergman" />
+<meta name="citation_author6" content="Fritz Obermeyer" />
+<meta name="citation_author7" content="Claudia Wehrhahn Cortes" />
+<meta name="citation_author8" content="Abel Rodrìguez" />
+<meta name="citation_author9" content="Duncan Temple Lang" />
+<meta name="citation_author10" content="Sally Paganin" />
+<meta name="citation_publication_date" content="2020-10-10" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=nimble" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=nimble" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="nimble: MCMC, Particle Filtering, and Programmable Hierarchical Modeling" />
+<meta name="og:description" content="A system for writing hierarchical statistical models largely compatible with 'BUGS' and 'JAGS', writing nimbleFunctions to operate models and do basic R-style math, and compiling both models and nimbleFunctions via custom-generated C++. 'NIMBLE' includes default methods for MCMC, Monte Carlo Expectation Maximization, and some other tools. The nimbleFunction system makes it easy to do things like implement new MCMC samplers from R, customize the assignment of samplers to different parts of a model from R, and compile the new samplers automatically via C++ alongside the samplers 'NIMBLE' provides. 'NIMBLE' extends the 'BUGS'/'JAGS' language by making it extensible: New distributions and functions can be added, including as calls to external compiled code. Although most people think of MCMC as the main goal of the 'BUGS'/'JAGS' language for writing models, one can use 'NIMBLE' for writing arbitrary other kinds of model-generic algorithms as well. A full User Manual is available at &amp;lt;&lt;a href=&quot;https://r-nimble.org&quot;&gt;https://r-nimble.org&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=nimble" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>nimble: MCMC, Particle Filtering, and Programmable Hierarchical Modeling</h2>
+<p>A system for writing hierarchical statistical models largely
+    compatible with 'BUGS' and 'JAGS', writing nimbleFunctions to operate models
+    and do basic R-style math, and compiling both models and nimbleFunctions via
+    custom-generated C++. 'NIMBLE' includes default methods for MCMC, Monte Carlo
+    Expectation Maximization, and some other tools. The nimbleFunction system makes
+    it easy to do things like implement new MCMC samplers from R, customize the
+    assignment of samplers to different parts of a model from R, and compile the
+    new samplers automatically via C++ alongside the samplers 'NIMBLE' provides.
+    'NIMBLE' extends the 'BUGS'/'JAGS' language by making it extensible: New
+    distributions and functions can be added, including as calls to external
+    compiled code. Although most people think of MCMC as the main goal of the
+    'BUGS'/'JAGS' language for writing models, one can use 'NIMBLE' for writing
+    arbitrary other kinds of model-generic algorithms as well. A full User Manual is
+    available at &lt;<a href="https://r-nimble.org">https://r-nimble.org</a>&gt;.</p>
+<table summary="Package nimble summary">
+<tr>
+<td>Version:</td>
+<td>0.10.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.1.2)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>methods, <a href="../igraph/index.html">igraph</a>, <a href="../coda/index.html">coda</a>, <a href="../R6/index.html">R6</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-10</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Perry de Valpine [aut],
+  Christopher Paciorek [aut, cre],
+  Daniel Turek [aut],
+  Nick Michaud [aut],
+  Cliff Anderson-Bergman [aut],
+  Fritz Obermeyer [aut],
+  Claudia Wehrhahn Cortes [aut] (Bayesian nonparametrics system),
+  Abel Rodrìguez [aut] (Bayesian nonparametrics system),
+  Duncan Temple Lang [aut] (packaging configuration),
+  Sally Paganin [aut] (reversible jump MCMC),
+  Jagadish Babu [ctb] (code for the compilation system for an early
+    version of NIMBLE),
+  Lauren Ponisio [ctb] (contributions to the cross-validation code),
+  Peter Sujan [ctb] (multivariate t distribution code)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Christopher Paciorek  &#x3c;&#x70;&#x61;&#x63;&#x69;&#x6f;&#x72;&#x65;&#x6b;&#x20;&#x61;&#x74;&#x20;&#x73;&#x74;&#x61;&#x74;&#x2e;&#x62;&#x65;&#x72;&#x6b;&#x65;&#x6c;&#x65;&#x79;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/BSD_3_clause">BSD_3_clause</a> + file <a href="LICENSE">LICENSE</a> | <a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: BSD_3_clause + file LICENSE | GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>Copyright:</td>
+<td>See COPYRIGHTS file. <br/>  <a href="COPYRIGHTS">nimble copyright details</a> </td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://r-nimble.org">https://r-nimble.org</a>, <a href="https://github.com/nimble-dev/nimble">https://github.com/nimble-dev/nimble</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>GNU make</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">nimble citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="NEWS">NEWS</a> <a href="INSTALL">INSTALL</a></td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Bayesian.html">Bayesian</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_nimble.html">nimble results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package nimble downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="nimble.pdf"> nimble.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/nimble_0.10.0.tar.gz"> nimble_0.10.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/nimble_0.10.0.zip">nimble_0.10.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/nimble_0.10.0.zip">nimble_0.10.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/nimble_0.10.0.zip">nimble_0.10.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/nimble_0.10.0.tgz">nimble_0.10.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/nimble_0.10.0.tgz">nimble_0.10.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/nimble"> nimble archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package nimble reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../BayesNSGP/index.html">BayesNSGP</a>, <a href="../bcgam/index.html">bcgam</a>, <a href="../exPrior/index.html">exPrior</a>, <a href="../nimbleEcology/index.html">nimbleEcology</a>, <a href="../nimbleSCR/index.html">nimbleSCR</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../bridgesampling/index.html">bridgesampling</a>, <a href="../ggmcmc/index.html">ggmcmc</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=nimble"><samp>https://CRAN.R-project.org/package=nimble</samp></a>
+to link to this page.</p>
+</body>
+</html>

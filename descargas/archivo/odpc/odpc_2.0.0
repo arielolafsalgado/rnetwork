@@ -1,0 +1,29 @@
+Package: odpc
+Type: Package
+Title: One-Sided Dynamic Principal Components
+Version: 2.0.0
+Date: 2018-09-11
+Author: Daniel Peña <daniel.pena@uc3m.es>,
+    Ezequiel Smucler <ezequiels.90@gmail.com>,
+    Victor Yohai <vyohai@dm.uba.ar>
+Maintainer: Ezequiel Smucler <ezequiels.90@gmail.com>
+Description: Functions to compute the one-sided dynamic
+	principal components ('odpc') introduced in Smucler, Peña and Yohai (2018)
+	<DOI:10.1080/01621459.2018.1520117>. 'odpc' is a novel dimension
+	reduction technique for multivariate time series, that is useful
+	for forecasting. These dynamic principal components are defined as
+	the linear combinations of the present and past values of the series
+	that minimize the reconstruction mean squared error.
+License: GPL (>= 2)
+Biarch: true
+Imports: methods, Rcpp (>= 0.12.7), forecast, parallel, doParallel,
+        foreach
+LinkingTo: Rcpp, RcppArmadillo (>= 0.7.500.0.0)
+Suggests: testthat
+Depends: R (>= 3.3.0)
+NeedsCompilation: yes
+Encoding: UTF-8
+RoxygenNote: 6.0.1
+Packaged: 2018-09-11 22:34:18 UTC; ezequiel
+Repository: CRAN
+Date/Publication: 2018-09-12 04:20:03 UTC

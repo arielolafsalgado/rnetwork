@@ -1,0 +1,31 @@
+Package: mRpostman
+Type: Package
+Title: IMAP Tools in a Tidy Way
+Version: 0.2.0
+Date: 2019-08-18
+Authors@R: c(
+    person(given="Allan", family="Quadros", email = "allanvcq@gmail.com",
+    role = c("aut", "cre")))
+Description: Multiple IMAP (Internet Message Access Protocol) commands 
+    based on the RFC 3501 manual (Crispin, 2003, <doi:10.17487/RFC3501>), 
+    its updates, and other related documents. Besides other features,
+    'mRpostman' provides functions for listing, selecting and renaming mailboxes, 
+    as well as moving, fetching, and searching for messages using several 
+    criteria.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: curl, stringr, magrittr, assertthat, base64enc
+Depends: R (>= 3.1.0)
+BugReports: https://github.com/allanvc/mRpostman/issues
+SystemRequirements: libcurl: libcurl-devel (rpm) or
+        libcurl4-openssl-dev (deb)
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-08-20 19:12:26 UTC; allan
+Author: Allan Quadros [aut, cre]
+Maintainer: Allan Quadros <allanvcq@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-08-22 07:30:02 UTC

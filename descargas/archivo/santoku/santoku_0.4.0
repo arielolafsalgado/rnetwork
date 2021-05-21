@@ -1,0 +1,31 @@
+Package: santoku
+Type: Package
+Title: A Versatile Cutting Tool
+Version: 0.4.0
+Authors@R: 
+    person(given = "David",
+           family = "Hugh-Jones",
+           role = c("aut", "cre"),
+           email = "davidhughjones@gmail.com")
+Author: David Hugh-Jones [aut, cre]
+Maintainer: David Hugh-Jones <davidhughjones@gmail.com>
+Description: A tool for cutting data into intervals. Allows singleton intervals.
+  Always includes the whole range of data by default. Flexible labelling. 
+  Convenience functions for cutting by quantiles etc. Handles dates and times.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+Suggests: covr, testthat (>= 2.1.0), knitr, lubridate, microbenchmark,
+        purrr, rmarkdown, scales, withr
+LinkingTo: Rcpp
+Imports: Rcpp, assertthat, lifecycle, vctrs
+URL: https://github.com/hughjonesd/santoku,
+        https://hughjonesd.github.io/santoku/
+BugReports: https://github.com/hughjonesd/santoku/issues
+VignetteBuilder: knitr
+RdMacros: lifecycle
+NeedsCompilation: yes
+Packaged: 2020-06-09 10:53:35 UTC; david
+Repository: CRAN
+Date/Publication: 2020-06-09 11:30:03 UTC

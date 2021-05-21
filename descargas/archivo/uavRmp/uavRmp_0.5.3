@@ -1,0 +1,35 @@
+Package: uavRmp
+Type: Package
+Title: UAV Mission Planner
+Version: 0.5.3
+Date: 2017-11-20
+Authors@R: c(person("Chris", "Reudenbach", email = "reudenbach@uni-marburg.de", role = c("cre", "aut")),
+             person("Sebastian", "Richter", role = c("ctb")),
+             person("Lars", "Opgenoorth",  role = c("ctb")),
+             person("Florian", "Detsch", role = c("ctb")),
+             person("Hanna", "Meyer", role = c("ctb"))
+             )
+Encoding: UTF-8
+Maintainer: Chris Reudenbach <reudenbach@uni-marburg.de>
+Description: The Unmanned Aerial Vehicle Mission Planner provides an easy to use workflow for planning autonomous obstacle avoiding surveys of rtf-UAVs to retrieve aerial or spot related data. It creates either intermediate flight control files for the DJI phantom x UAVs or ready to upload control files for the pixhawk based flightcontroller as used in the 3DR Solo. Additionally it contains some useful tools for digitizing and data manipulation.
+URL: https://github.com/gisma/uavRmp
+BugReports: https://github.com/gisma/uavRmp/issues
+LazyData: TRUE
+License: GPL (>= 3) | file LICENSE
+Depends: R (>= 3.1.0)
+Imports: stringr, sp, raster, htmlwidgets, htmltools, rgdal, rgeos,
+        gdalUtils, geosphere, tools, maptools, log4r, zoo, data.table,
+        spatial.tools, devtools, sf, roxygen2, methods, brew
+RoxygenNote: 6.0.1
+SystemRequirements: GNU make
+Suggests: knitr, rmarkdown, mapview
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-01-11 21:39:43 UTC; creu
+Author: Chris Reudenbach [cre, aut],
+  Sebastian Richter [ctb],
+  Lars Opgenoorth [ctb],
+  Florian Detsch [ctb],
+  Hanna Meyer [ctb]
+Repository: CRAN
+Date/Publication: 2018-01-13 00:23:34 UTC

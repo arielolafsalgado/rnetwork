@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package openVA</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=openVA" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="openVA: Automated Method for Verbal Autopsy" />
+<meta name="og:description" content="Implements multiple existing open-source algorithms for coding cause of death from verbal autopsies. The methods implemented include 'InterVA4' by Byass et al (2012) &amp;lt;&lt;a href=&quot;https://doi.org/10.3402%2Fgha.v5i0.19281&quot;&gt;doi:10.3402/gha.v5i0.19281&lt;/a&gt;&amp;gt;, 'InterVA5' by Byass at al (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1186%2Fs12916-019-1333-6&quot;&gt;doi:10.1186/s12916-019-1333-6&lt;/a&gt;&amp;gt;, 'InSilicoVA' by McCormick et al (2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F01621459.2016.1152191&quot;&gt;doi:10.1080/01621459.2016.1152191&lt;/a&gt;&amp;gt;, 'NBC' by Miasnikof et al (2015) &amp;lt;&lt;a href=&quot;https://doi.org/10.1186%2Fs12916-015-0521-2&quot;&gt;doi:10.1186/s12916-015-0521-2&lt;/a&gt;&amp;gt;, and a replication of 'Tariff' method by James et al (2011) &amp;lt;&lt;a href=&quot;https://doi.org/10.1186%2F1478-7954-9-31&quot;&gt;doi:10.1186/1478-7954-9-31&lt;/a&gt;&amp;gt; and Serina, et al. (2015) &amp;lt;&lt;a href=&quot;https://doi.org/10.1186%2Fs12916-015-0527-9&quot;&gt;doi:10.1186/s12916-015-0527-9&lt;/a&gt;&amp;gt;. It also provides tools for data manipulation tasks commonly used in Verbal Autopsy analysis and implements easy graphical visualization of individual and population level statistics. The 'NBC' method is implemented by the 'nbc4va' package that can be installed from &amp;lt;&lt;a href=&quot;https://github.com/rrwen/nbc4va&quot;&gt;https://github.com/rrwen/nbc4va&lt;/a&gt;&amp;gt;. Note that this package was not developed by authors affiliated with the Institute for Health Metrics and Evaluation and thus unintentional discrepancies may exist in the implementation of the 'Tariff' method." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=openVA" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>openVA: Automated Method for Verbal Autopsy</h2>
+<p>Implements multiple existing open-source algorithms for coding cause of death from verbal autopsies. The methods implemented include 'InterVA4' by Byass et al (2012) &lt;<a href="https://doi.org/10.3402%2Fgha.v5i0.19281">doi:10.3402/gha.v5i0.19281</a>&gt;, 'InterVA5' by Byass at al (2019) &lt;<a href="https://doi.org/10.1186%2Fs12916-019-1333-6">doi:10.1186/s12916-019-1333-6</a>&gt;, 'InSilicoVA' by McCormick et al (2016) &lt;<a href="https://doi.org/10.1080%2F01621459.2016.1152191">doi:10.1080/01621459.2016.1152191</a>&gt;, 'NBC' by Miasnikof et al (2015) &lt;<a href="https://doi.org/10.1186%2Fs12916-015-0521-2">doi:10.1186/s12916-015-0521-2</a>&gt;, and a replication of 'Tariff' method by James et al (2011) &lt;<a href="https://doi.org/10.1186%2F1478-7954-9-31">doi:10.1186/1478-7954-9-31</a>&gt; and Serina, et al. (2015) &lt;<a href="https://doi.org/10.1186%2Fs12916-015-0527-9">doi:10.1186/s12916-015-0527-9</a>&gt;. It also provides tools for data manipulation tasks commonly used in Verbal Autopsy analysis and implements easy graphical visualization of individual and population level statistics. The 'NBC' method is implemented by the 'nbc4va' package that can be installed from &lt;<a href="https://github.com/rrwen/nbc4va">https://github.com/rrwen/nbc4va</a>&gt;. Note that this package was not developed by authors affiliated with the Institute for Health Metrics and Evaluation and thus unintentional discrepancies may exist in the implementation of the 'Tariff' method.</p>
+<table summary="Package openVA summary">
+<tr>
+<td>Version:</td>
+<td>1.0.11</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.1)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../InterVA5/index.html">InterVA5</a> (&ge; 1.0.1), <a href="../InSilicoVA/index.html">InSilicoVA</a> (&ge; 1.1.3), <a href="../InterVA4/index.html">InterVA4</a> (&ge;
+1.7.3), <a href="../Tariff/index.html">Tariff</a> (&ge; 1.0.1), <a href="../ggplot2/index.html">ggplot2</a>, <a href="../crayon/index.html">crayon</a>, <a href="../cli/index.html">cli</a>, methods</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td>nbc4va, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-05-04</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Zehang Richard Li, Tyler McCormick, Sam Clark</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Zehang Richard Li  &#x3c;&#x6c;&#x69;&#x7a;&#x65;&#x68;&#x61;&#x6e;&#x67;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/verbal-autopsy-software/openVA/issues">https://github.com/verbal-autopsy-software/openVA/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/verbal-autopsy-software/openVA">https://github.com/verbal-autopsy-software/openVA</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_openVA.html">openVA results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package openVA downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="openVA.pdf"> openVA.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/openVA_1.0.11.tar.gz"> openVA_1.0.11.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/openVA_1.0.11.zip">openVA_1.0.11.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/openVA_1.0.11.zip">openVA_1.0.11.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/openVA_1.0.11.zip">openVA_1.0.11.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/openVA_1.0.11.tgz">openVA_1.0.11.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/openVA_1.0.11.tgz">openVA_1.0.11.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/openVA"> openVA archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package openVA reverse dependencies">
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../CrossVA/index.html">CrossVA</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=openVA"><samp>https://CRAN.R-project.org/package=openVA</samp></a>
+to link to this page.</p>
+</body>
+</html>

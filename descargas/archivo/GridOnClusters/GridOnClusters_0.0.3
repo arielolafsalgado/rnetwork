@@ -1,0 +1,44 @@
+Package: GridOnClusters
+Type: Package
+Title: Joint Discretization of Data on a Grid that Preserves Clusters
+Version: 0.0.3
+Date: 2020-03-17
+Authors@R: 
+    c(person(given = "Jiandong",
+             family = "Wang",
+             role = "aut",
+             email = "wangjd24@nmsu.edu"),
+      person(given = "Sajal",
+             family = "Kumar",
+             role = c("aut"),
+             email = "kumarsajal49@gmail.com",
+             comment = c(ORCID = "0000-0003-0930-1582")),
+      person(given = "Joe",
+             family = "Song",
+             role = c("aut", "cre"),
+             email = "joemsong@cs.nmsu.edu",
+             comment = c(ORCID = "0000-0002-6883-6547")))
+Author: Jiandong Wang [aut],
+  Sajal Kumar [aut] (<https://orcid.org/0000-0003-0930-1582>),
+  Joe Song [aut, cre] (<https://orcid.org/0000-0002-6883-6547>)
+Maintainer: Joe Song <joemsong@cs.nmsu.edu>
+Description: Discretize continuous multivariate data using a grid
+    that captures the joint distribution via preserving clusters in
+    the original data. Joint grid discretization is applicable as a
+    data transformation step in methods inferring dependency by
+    association, function, or causality with assuming a parametric
+    model.
+Imports: Rcpp, cluster, GDAtools
+Suggests: Ckmeans.1d.dp, FunChisq, knitr, testthat (>= 2.1.0),
+        rmarkdown
+Depends: R (>= 3.0)
+License: LGPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+LinkingTo: Rcpp
+RoxygenNote: 7.1.0
+NeedsCompilation: yes
+VignetteBuilder: knitr
+Packaged: 2020-03-18 04:12:30 UTC; joesong
+Repository: CRAN
+Date/Publication: 2020-03-20 14:40:05 UTC

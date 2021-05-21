@@ -1,0 +1,46 @@
+Package: sf
+Version: 0.4-1
+Title: Simple Features for R
+Description: Support for simple features, a standardized way to encode spatial vector data. Binds 
+    to GDAL for reading and writing data, to GEOS for geometrical operations, and to Proj.4 for projection
+	conversions and datum transformations.
+Authors@R: c(person("Edzer", "Pebesma", role = c("aut", "cre"), email = "edzer.pebesma@uni-muenster.de"),
+	person("Roger", "Bivand", role = "ctb"),
+	person("Ian", "Cook", role = "ctb"),
+	person("Tim", "Keitt", role = "ctb"),
+	person("Michael", "Sumner", role = "ctb"),
+	person("Robin", "Lovelace", role = "ctb"),
+	person("Hadley", "Wickham", role = "ctb"),
+	person("Jeroen", "Ooms", role = "ctb"),
+	person("Etienne", "Racine", role = "ctb"))
+Depends: R (>= 3.3.0)
+Imports: utils, stats, tools, graphics, grDevices, grid, methods, Rcpp,
+        DBI, units (>= 0.4), magrittr
+Suggests: sp (>= 1.2-4), rgeos, rgdal, RPostgreSQL, testthat, knitr,
+        tibble, dplyr, tidyr, geosphere (>= 1.5-5), maptools, maps,
+        microbenchmark
+LinkingTo: Rcpp
+VignetteBuilder: knitr
+SystemRequirements: GDAL (>= 2.0.0), GEOS (>= 3.3.0), PROJ.4 (>= 4.8.0)
+License: GPL-2 | MIT + file LICENSE
+URL: https://github.com/edzer/sfr/
+BugReports: https://github.com/edzer/sfr/issues/
+Collate: RcppExports.R init.R bbox.R read.R db.R sfc.R sfg.R sf.R wkb.R
+        wkt.R plot.R geom.R transform.R sp.R crs.R grid.R arith.R
+        tidy.R cast_sfg.R cast_sfc.R graticule.R datasets.R aggregate.R
+        agr.R maps.R join.R sample.R lwgeom.R
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2017-03-28 09:11:03 UTC; edzer
+Author: Edzer Pebesma [aut, cre],
+  Roger Bivand [ctb],
+  Ian Cook [ctb],
+  Tim Keitt [ctb],
+  Michael Sumner [ctb],
+  Robin Lovelace [ctb],
+  Hadley Wickham [ctb],
+  Jeroen Ooms [ctb],
+  Etienne Racine [ctb]
+Maintainer: Edzer Pebesma <edzer.pebesma@uni-muenster.de>
+Repository: CRAN
+Date/Publication: 2017-03-28 10:34:07 UTC

@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package ctsem</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Continuous Time Structural Equation Modelling [R package ctsem version 3.3.11]" />
+<meta name="citation_author1" content="Charles Driver" />
+<meta name="citation_author2" content="Manuel Voelkle" />
+<meta name="citation_author3" content="Han Oud" />
+<meta name="citation_publication_date" content="2020-09-16" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=ctsem" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=ctsem" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="ctsem: Continuous Time Structural Equation Modelling" />
+<meta name="og:description" content="Hierarchical continuous time state space modelling, for linear and nonlinear systems measured by continuous variables, with limited support for binary data. The subject specific dynamic system is modelled as a stochastic differential equation (SDE), measurement models are typically multivariate normal factor models. Linear mixed effects SDE's estimated via maximum likelihood and optimization are the default. Nonlinearities, (state dependent parameters) and random effects on all parameters are possible, using either max likelihood / max a posteriori optimization (with optional importance sampling) or Stan's Hamiltonian Monte Carlo sampling. See &amp;lt;&lt;a href=&quot;https://github.com/cdriveraus/ctsem/raw/master/vignettes/hierarchicalmanual.pdf&quot;&gt;https://github.com/cdriveraus/ctsem/raw/master/vignettes/hierarchicalmanual.pdf&lt;/a&gt;&amp;gt; for details. Priors may be used. For the conceptual overview of the hierarchical Bayesian linear SDE approach, see &amp;lt;&lt;a href=&quot;https://www.researchgate.net/publication/324093594_Hierarchical_Bayesian_Continuous_Time_Dynamic_Modeling&quot;&gt;https://www.researchgate.net/publication/324093594_Hierarchical_Bayesian_Continuous_Time_Dynamic_Modeling&lt;/a&gt;&amp;gt;. Exogenous inputs may also be included, for an overview of such possibilities see &amp;lt;&lt;a href=&quot;https://www.researchgate.net/publication/328221807_Understanding_the_Time_Course_of_Interventions_with_Continuous_Time_Dynamic_Models&quot;&gt;https://www.researchgate.net/publication/328221807_Understanding_the_Time_Course_of_Interventions_with_Continuous_Time_Dynamic_Models&lt;/a&gt;&amp;gt; . Stan based functions are not available on 32 bit Windows systems at present. &amp;lt;&lt;a href=&quot;https://cdriver.netlify.app/&quot;&gt;https://cdriver.netlify.app/&lt;/a&gt;&amp;gt; contains some tutorial blog posts." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=ctsem" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>ctsem: Continuous Time Structural Equation Modelling</h2>
+<p>Hierarchical continuous time state space modelling, for linear
+    and nonlinear systems measured by  continuous variables, with limited support for 
+    binary data. The subject specific dynamic system is modelled as a stochastic 
+    differential equation (SDE), measurement models are typically multivariate normal factor models. 
+    Linear mixed effects SDE's estimated via maximum likelihood and optimization are the default.
+    Nonlinearities,  (state dependent parameters) and random effects on all parameters
+    are possible, using either max likelihood / max a posteriori optimization 
+    (with optional importance sampling) or
+    Stan's Hamiltonian Monte Carlo sampling. See  &lt;<a href="https://github.com/cdriveraus/ctsem/raw/master/vignettes/hierarchicalmanual.pdf">https://github.com/cdriveraus/ctsem/raw/master/vignettes/hierarchicalmanual.pdf</a>&gt;
+    for details. Priors may be used. For the conceptual
+    overview of the hierarchical Bayesian linear SDE approach, see &lt;<a href="https://www.researchgate.net/publication/324093594_Hierarchical_Bayesian_Continuous_Time_Dynamic_Modeling">https://www.researchgate.net/publication/324093594_Hierarchical_Bayesian_Continuous_Time_Dynamic_Modeling</a>&gt;.
+    Exogenous inputs may also be included, for an overview of such possibilities see &lt;<a href="https://www.researchgate.net/publication/328221807_Understanding_the_Time_Course_of_Interventions_with_Continuous_Time_Dynamic_Models">https://www.researchgate.net/publication/328221807_Understanding_the_Time_Course_of_Interventions_with_Continuous_Time_Dynamic_Models</a>&gt; .
+    Stan based functions are not available on 32 bit Windows systems at present. 
+    &lt;<a href="https://cdriver.netlify.app/">https://cdriver.netlify.app/</a>&gt; contains some tutorial blog posts.</p>
+<table summary="Package ctsem summary">
+<tr>
+<td>Version:</td>
+<td>3.3.11</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0), <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.16)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../cOde/index.html">cOde</a>, <a href="../expm/index.html">expm</a>, <a href="../data.table/index.html">data.table</a> (&ge; 1.12.8), datasets, <a href="../Deriv/index.html">Deriv</a>, <a href="../ggplot2/index.html">ggplot2</a>, graphics, grDevices, <a href="../MASS/index.html">MASS</a>, <a href="../Matrix/index.html">Matrix</a>, methods, <a href="../mize/index.html">mize</a>, <a href="../mvtnorm/index.html">mvtnorm</a>, parallel, <a href="../pkgbuild/index.html">pkgbuild</a>, <a href="../plyr/index.html">plyr</a>, <a href="../rstan/index.html">rstan</a> (&ge; 2.19.0), stats, tools, utils, <a href="../RcppParallel/index.html">RcppParallel</a>, <a href="../tibble/index.html">tibble</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../BH/index.html">BH</a> (&ge; 1.66.0-1), <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.16), <a href="../RcppEigen/index.html">RcppEigen</a> (&ge;
+0.3.3.4.0), <a href="../RcppParallel/index.html">RcppParallel</a> (&ge; 5.0.1), <a href="../rstan/index.html">rstan</a> (&ge; 2.21), <a href="../StanHeaders/index.html">StanHeaders</a> (&ge; 2.21.0), <a href="../RcppParallel/index.html">RcppParallel</a> (&ge; 5.0.1)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../testthat/index.html">testthat</a>, <a href="../devtools/index.html">devtools</a>, <a href="../DEoptim/index.html">DEoptim</a>, <a href="../tinytex/index.html">tinytex</a>, <a href="../lme4/index.html">lme4</a>, <a href="../GGally/index.html">GGally</a>, <a href="../shiny/index.html">shiny</a>, <a href="../gridExtra/index.html">gridExtra</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-16</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Charles Driver [aut, cre, cph],
+  Manuel Voelkle [aut, cph],
+  Han Oud [aut, cph],
+  Trustees of Columbia University [cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Charles Driver  &#x3c;&#x64;&#x72;&#x69;&#x76;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x6d;&#x70;&#x69;&#x62;&#x2d;&#x62;&#x65;&#x72;&#x6c;&#x69;&#x6e;&#x2e;&#x6d;&#x70;&#x67;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/cdriveraus/ctsem">https://github.com/cdriveraus/ctsem</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>GNU make</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">ctsem citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_ctsem.html">ctsem results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package ctsem downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="ctsem.pdf"> ctsem.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/hierarchicalmanual.pdf">Introduction to Hierarchical Continuous Time Dynamic Modelling with ctsem</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/ctsem_3.3.11.tar.gz"> ctsem_3.3.11.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/ctsem_3.3.11.zip">ctsem_3.3.11.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/ctsem_3.3.11.zip">ctsem_3.3.11.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/ctsem_3.3.11.zip">ctsem_3.3.11.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/ctsem_3.3.11.tgz">ctsem_3.3.11.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/ctsem_3.3.11.tgz">ctsem_3.3.11.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/ctsem"> ctsem archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package ctsem reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../ctsemOMX/index.html">ctsemOMX</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=ctsem"><samp>https://CRAN.R-project.org/package=ctsem</samp></a>
+to link to this page.</p>
+</body>
+</html>

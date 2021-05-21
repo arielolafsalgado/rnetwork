@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package hopit</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Hierarchical Ordered Probit Models with Application to Reporting Heterogeneity [R package hopit version 0.10.3]" />
+<meta name="citation_author" content="Maciej J. Danko" />
+<meta name="citation_publication_date" content="2019-12-08" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=hopit" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=hopit" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="hopit: Hierarchical Ordered Probit Models with Application to Reporting Heterogeneity" />
+<meta name="og:description" content="Self-reported health, happiness, attitudes, and other statuses or perceptions are often the subject of biases that may come from different sources. For example, the evaluation of an individual’s own health may depend on previous medical diagnoses, functional status, and symptoms and signs of illness; as on well as life-style behaviors, including contextual social, gender, age-specific, linguistic and other cultural factors (Jylha 2009 &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.socscimed.2009.05.013&quot;&gt;doi:10.1016/j.socscimed.2009.05.013&lt;/a&gt;&amp;gt;; Oksuzyan et al. 2019 &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.socscimed.2019.03.002&quot;&gt;doi:10.1016/j.socscimed.2019.03.002&lt;/a&gt;&amp;gt;). The hopit package offers versatile functions for analyzing different self-reported ordinal variables, and for helping to estimate their biases. Specifically, the package provides the function to fit a generalized ordered probit model that regresses original self-reported status measures on two sets of independent variables (King et al. 2004 &amp;lt;&lt;a href=&quot;https://doi.org/10.1017%2FS0003055403000881&quot;&gt;doi:10.1017/S0003055403000881&lt;/a&gt;&amp;gt;; Jurges 2007 &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fhec.1134&quot;&gt;doi:10.1002/hec.1134&lt;/a&gt;&amp;gt;; Oksuzyan et al. 2019 &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.socscimed.2019.03.002&quot;&gt;doi:10.1016/j.socscimed.2019.03.002&lt;/a&gt;&amp;gt;). The first set of variables (e.g., health variables) included in the regression are individual statuses and characteristics that are directly related to the self-reported variable. In the case of self-reported health, these could be chronic conditions, mobility level, difficulties with daily activities, performance on grip strength tests, anthropometric measures, and lifestyle behaviors. The second set of independent variables (threshold variables) is used to model cut-points between adjacent self-reported response categories as functions of individual characteristics, such as gender, age group, education, and country (Oksuzyan et al. 2019 &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.socscimed.2019.03.002&quot;&gt;doi:10.1016/j.socscimed.2019.03.002&lt;/a&gt;&amp;gt;). The model helps to adjust for specific socio-demographic and cultural differences in how the continuous latent health is projected onto the ordinal self-rated measure. The fitted model can be used to calculate an individual predicted latent status variable, a latent index, and standardized latent coefficients; and makes it possible to reclassify a categorical status measure that has been adjusted for inter-individual differences in reporting behavior." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=hopit" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>hopit: Hierarchical Ordered Probit Models with Application to Reporting
+Heterogeneity</h2>
+<p>Self-reported health, happiness, attitudes, and other statuses or perceptions are often the subject of biases that may come from different sources. For example, the evaluation of an individual’s own health may depend on previous medical diagnoses, functional status, and symptoms and signs of illness; as on well as life-style behaviors, including contextual social, gender, age-specific, linguistic and other cultural factors (Jylha 2009 &lt;<a href="https://doi.org/10.1016%2Fj.socscimed.2009.05.013">doi:10.1016/j.socscimed.2009.05.013</a>&gt;; Oksuzyan et al. 2019 &lt;<a href="https://doi.org/10.1016%2Fj.socscimed.2019.03.002">doi:10.1016/j.socscimed.2019.03.002</a>&gt;). The hopit package offers versatile functions for analyzing different self-reported ordinal variables, and for helping to estimate their biases. Specifically, the package provides the function to fit a generalized ordered probit model that regresses original self-reported status measures on two sets of independent variables (King et al. 2004 &lt;<a href="https://doi.org/10.1017%2FS0003055403000881">doi:10.1017/S0003055403000881</a>&gt;; Jurges 2007  &lt;<a href="https://doi.org/10.1002%2Fhec.1134">doi:10.1002/hec.1134</a>&gt;; Oksuzyan et al. 2019  &lt;<a href="https://doi.org/10.1016%2Fj.socscimed.2019.03.002">doi:10.1016/j.socscimed.2019.03.002</a>&gt;). The first set of variables (e.g., health variables) included in the regression are individual statuses and characteristics that are directly related to the self-reported variable. In the case of self-reported health, these could be chronic conditions, mobility level, difficulties with daily activities, performance on grip strength tests, anthropometric measures, and lifestyle behaviors. The second set of independent variables (threshold variables) is used to model cut-points between adjacent self-reported response categories as functions of individual characteristics, such as gender, age group, education, and country (Oksuzyan et al. 2019 &lt;<a href="https://doi.org/10.1016%2Fj.socscimed.2019.03.002">doi:10.1016/j.socscimed.2019.03.002</a>&gt;). The model helps to adjust for specific socio-demographic and cultural differences in how the continuous latent health is projected onto the ordinal self-rated measure. The fitted model can be used to calculate an individual predicted latent status variable, a latent index, and standardized latent coefficients; and makes it possible to reclassify a categorical status measure that has been adjusted for inter-individual differences in reporting behavior.</p>
+<table summary="Package hopit summary">
+<tr>
+<td>Version:</td>
+<td>0.10.3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0), <a href="../survey/index.html">survey</a> (&ge; 3.35)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../MASS/index.html">MASS</a>, <a href="../Rcpp/index.html">Rcpp</a>, <a href="../Matrix/index.html">Matrix</a>, graphics, stats, grDevices, <a href="../Rdpack/index.html">Rdpack</a> (&ge;
+0.11.0)</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppEigen/index.html">RcppEigen</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a> (&ge; 2.1.0), <a href="../R.rsp/index.html">R.rsp</a> (&ge; 0.43.0), <a href="../usethis/index.html">usethis</a> (&ge; 1.5.0), <a href="../knitr/index.html">knitr</a> (&ge; 1.20), <a href="../rmarkdown/index.html">rmarkdown</a> (&ge; 1.12), <a href="../roxygen2/index.html">roxygen2</a> (&ge; 6.1.1)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-12-08</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Maciej J. Danko <a href="https://orcid.org/0000-0002-7924-9022"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Maciej J. Danko  &#x3c;&#x4d;&#x61;&#x63;&#x69;&#x65;&#x6a;&#x2e;&#x44;&#x61;&#x6e;&#x6b;&#x6f;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>C++11</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">hopit citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_hopit.html">hopit results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package hopit downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="hopit.pdf"> hopit.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/vig_hopit.pdf">R packages: vignette</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/hopit_0.10.3.tar.gz"> hopit_0.10.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/hopit_0.10.3.zip">hopit_0.10.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/hopit_0.10.3.zip">hopit_0.10.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/hopit_0.10.3.zip">hopit_0.10.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/hopit_0.10.3.tgz">hopit_0.10.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/hopit_0.10.3.tgz">hopit_0.10.3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/hopit"> hopit archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=hopit"><samp>https://CRAN.R-project.org/package=hopit</samp></a>
+to link to this page.</p>
+</body>
+</html>

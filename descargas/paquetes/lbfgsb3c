@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package lbfgsb3c</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Limited Memory BFGS Minimizer with Bounds on Parameters with optim() 'C' Interface [R package lbfgsb3c version 2020-3.2]" />
+<meta name="citation_author1" content="Matthew L Fidler" />
+<meta name="citation_author2" content="John C Nash" />
+<meta name="citation_author3" content="Ciyou Zhu" />
+<meta name="citation_author4" content="Richard Byrd" />
+<meta name="citation_author5" content="Jorge Nocedal" />
+<meta name="citation_author6" content="Jose Luis Morales" />
+<meta name="citation_publication_date" content="2020-03-03" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=lbfgsb3c" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=lbfgsb3c" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="lbfgsb3c: Limited Memory BFGS Minimizer with Bounds on Parameters with optim() 'C' Interface" />
+<meta name="og:description" content="Interfacing to Nocedal et al. L-BFGS-B.3.0 (See &amp;lt;&lt;a href=&quot;http://users.iems.northwestern.edu/~nocedal/lbfgsb.html&quot;&gt;http://users.iems.northwestern.edu/~nocedal/lbfgsb.html&lt;/a&gt;&amp;gt;) limited memory BFGS minimizer with bounds on parameters. This is a fork of 'lbfgsb3'. This registers a 'R' compatible 'C' interface to L-BFGS-B.3.0 that uses the same function types and optimization as the optim() function (see writing 'R' extensions and source for details). This package also adds more stopping criteria as well as allowing the adjustment of more tolerances." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=lbfgsb3c" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>lbfgsb3c: Limited Memory BFGS Minimizer with Bounds on Parameters with
+optim() 'C' Interface</h2>
+<p>Interfacing to Nocedal et al. L-BFGS-B.3.0 
+        (See &lt;<a href="http://users.iems.northwestern.edu/~nocedal/lbfgsb.html">http://users.iems.northwestern.edu/~nocedal/lbfgsb.html</a>&gt;)
+        limited memory BFGS minimizer with bounds on parameters. 
+        This is a fork of 'lbfgsb3'. 
+	This registers a 'R' compatible 'C' interface to L-BFGS-B.3.0 that uses the same 
+	function types and optimization as the optim() function (see writing 'R' extensions
+        and source for details).  This package also adds more stopping criteria as well 
+        as allowing the adjustment of more tolerances.</p>
+<table summary="Package lbfgsb3c summary">
+<tr>
+<td>Version:</td>
+<td>2020-3.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0.2)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.3), <a href="../numDeriv/index.html">numDeriv</a>, methods</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.3), <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../optimx/index.html">optimx</a>, <a href="../microbenchmark/index.html">microbenchmark</a>, <a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../pkgbuild/index.html">pkgbuild</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-03-03</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Matthew L Fidler [aut, cre],
+  John C Nash [aut],
+  Ciyou Zhu [aut],
+  Richard Byrd [aut],
+  Jorge Nocedal [aut],
+  Jose Luis Morales [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Matthew L Fidler  &#x3c;&#x6d;&#x61;&#x74;&#x74;&#x68;&#x65;&#x77;&#x2e;&#x66;&#x69;&#x64;&#x6c;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Optimization.html">Optimization</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_lbfgsb3c.html">lbfgsb3c results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package lbfgsb3c downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="lbfgsb3c.pdf"> lbfgsb3c.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/lbfgsb3c.pdf">lbfgsb3c-nocompile</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/lbfgsb3c_2020-3.2.tar.gz"> lbfgsb3c_2020-3.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/lbfgsb3c_2020-3.2.zip">lbfgsb3c_2020-3.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/lbfgsb3c_2020-3.2.zip">lbfgsb3c_2020-3.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/lbfgsb3c_2020-3.2.zip">lbfgsb3c_2020-3.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/lbfgsb3c_2020-3.2.tgz">lbfgsb3c_2020-3.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/lbfgsb3c_2020-3.2.tgz">lbfgsb3c_2020-3.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/lbfgsb3c"> lbfgsb3c archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package lbfgsb3c reverse dependencies">
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../blackbox/index.html">blackbox</a>, <a href="../optimParallel/index.html">optimParallel</a>, <a href="../optimx/index.html">optimx</a>, <a href="../psqn/index.html">psqn</a>, <a href="../ROI.plugin.optimx/index.html">ROI.plugin.optimx</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=lbfgsb3c"><samp>https://CRAN.R-project.org/package=lbfgsb3c</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,43 @@
+Package: websocket
+Version: 1.0.0
+Title: 'WebSocket' Client Library
+Description: Provides a 'WebSocket' client interface for R.
+    'WebSocket' is a protocol for low-overhead real-time communication:
+    <https://en.wikipedia.org/wiki/WebSocket>.
+Authors@R: c(
+    person("Alan", "Dipert", role = c("aut", "cre"), email = "alan@rstudio.com"),
+    person("Barbara", "Borges", role = c("aut")),
+    person("Winston", "Chang", role = c("aut"), email = "winston@rstudio.com"),
+    person("Joe", "Cheng", role = c("aut"), email = "joe@rstudio.com"),
+    person(family = "RStudio", role = "cph"),
+    person("Peter", "Thorson", role = c("ctb", "cph"), comment = "WebSocket++ library"),
+    person("René", "Nyffenegger", role = c("ctb", "cph"), comment = "Base 64 library"),
+    person("Micael", "Hildenborg", role = c("ctb", "cph"), comment = "SHA1 library"),
+    person(family = "Aladdin Enterprises", role = "cph", comment = "MD5 library"),
+    person("Bjoern", "Hoehrmann", role = c("ctb", "cph"), comment = "UTF8 Validation library"))
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+Imports: Rcpp, R6, later
+LinkingTo: Rcpp, BH, AsioHeaders
+SystemRequirements: GNU make, OpenSSL >= 1.0.1
+RoxygenNote: 6.1.1
+Collate: 'RcppExports.R' 'websocket.R'
+Suggests: testthat, knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2019-06-07 20:02:23 UTC; alan
+Author: Alan Dipert [aut, cre],
+  Barbara Borges [aut],
+  Winston Chang [aut],
+  Joe Cheng [aut],
+  RStudio [cph],
+  Peter Thorson [ctb, cph] (WebSocket++ library),
+  René Nyffenegger [ctb, cph] (Base 64 library),
+  Micael Hildenborg [ctb, cph] (SHA1 library),
+  Aladdin Enterprises [cph] (MD5 library),
+  Bjoern Hoehrmann [ctb, cph] (UTF8 Validation library)
+Maintainer: Alan Dipert <alan@rstudio.com>
+Repository: CRAN
+Date/Publication: 2019-06-18 15:10:03 UTC

@@ -1,0 +1,39 @@
+Package: CAISEr
+Type: Package
+Title: Comparison of Algorithms with Iterative Sample Size Estimation
+Version: 1.0.15
+Date: 2019-08-19
+Authors@R: c(person(given = "Felipe", family = "Campelo",
+                    email = "f.campelo@aston.ac.uk",
+                    role = c("aut", "cre")),
+             person(given = "Fernanda", family = "Takahashi",
+                    email = "fernandact@ufmg.br",
+                    role = "ctb"),
+             person(given = "Elizabeth", family = "Wanner",
+                    email = "e.wanner@aston.ac.uk",
+                    role = "ctb"))
+Description: Functions for performing experimental comparisons of algorithms 
+             using adequate sample sizes for power and accuracy. Implements the 
+             methodology originally presented in Campelo and Takahashi (2019) 
+             <doi:10.1007/s10732-018-9396-7> 
+             for the comparison of two algorithms, and later generalised in 
+             Campelo and Wanner (Submitted, 2019) <arxiv:1908.01720>.
+License: GPL-2
+Depends: R (>= 3.5.0)
+Imports: assertthat (>= 0.2.1), parallel (>= 3.5.1), pbmcapply (>=
+        1.4.1), ggplot2 (>= 3.1.1), gridExtra (>= 2.3)
+Suggests: MOEADr, smoof, knitr, rmarkdown, car, dplyr, pkgdown
+LazyData: TRUE
+Encoding: UTF-8
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+URL: https://fcampelo.github.io/CAISEr/
+BugReports: https://github.com/fcampelo/CAISEr/issues
+NeedsCompilation: no
+Packaged: 2019-08-19 14:07:02 UTC; campelof
+Author: Felipe Campelo [aut, cre],
+  Fernanda Takahashi [ctb],
+  Elizabeth Wanner [ctb]
+Maintainer: Felipe Campelo <f.campelo@aston.ac.uk>
+Repository: CRAN
+Date/Publication: 2019-08-19 18:00:20 UTC

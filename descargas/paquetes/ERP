@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package ERP</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=ERP" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="ERP: Significance Analysis of Event-Related Potentials Data" />
+<meta name="og:description" content="Functions for signal detection and identification designed for Event-Related Potentials (ERP) data in a linear model framework. The functional F-test proposed in Causeur, Sheu, Perthame, Rufini (2018, submitted) for analysis of variance issues in ERP designs is implemented for signal detection (tests for mean difference among groups of curves in One-way ANOVA designs for example). Once an experimental effect is declared significant, identification of significant intervals is achieved by the multiple testing procedures reviewed and compared in Sheu, Perthame, Lee and Causeur (2016, &amp;lt;&lt;a href=&quot;https://doi.org/10.1214%2F15-AOAS888&quot;&gt;doi:10.1214/15-AOAS888&lt;/a&gt;&amp;gt;). Some of the methods gathered in the package are the classical FDR- and FWER-controlling procedures, also available using function p.adjust. The package also implements the Guthrie-Buchwald procedure (Guthrie and Buchwald, 1991 &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fj.1469-8986.1991.tb00417.x&quot;&gt;doi:10.1111/j.1469-8986.1991.tb00417.x&lt;/a&gt;&amp;gt;), which accounts for the auto-correlation among t-tests to control erroneous detection of short intervals. The Adaptive Factor-Adjustment method is an extension of the method described in Causeur, Chu, Hsieh and Sheu (2012, &amp;lt;&lt;a href=&quot;https://doi.org/10.3758%2Fs13428-012-0230-0&quot;&gt;doi:10.3758/s13428-012-0230-0&lt;/a&gt;&amp;gt;). It assumes a factor model for the correlation among tests and combines adaptively the estimation of the signal and the updating of the dependence modelling (see Sheu et al., 2016, &amp;lt;&lt;a href=&quot;https://doi.org/10.1214%2F15-AOAS888&quot;&gt;doi:10.1214/15-AOAS888&lt;/a&gt;&amp;gt; for further details)." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=ERP" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>ERP: Significance Analysis of Event-Related Potentials Data</h2>
+<p>Functions for signal detection and identification designed for Event-Related Potentials (ERP) data in a linear model framework. The functional F-test proposed in Causeur, Sheu, Perthame, Rufini (2018, submitted) for analysis of variance issues in ERP designs is implemented for signal detection (tests for mean difference among groups of curves in One-way ANOVA designs for example). Once an experimental effect is declared significant, identification of significant intervals is achieved by the multiple testing procedures reviewed and compared in Sheu, Perthame, Lee and Causeur (2016, &lt;<a href="https://doi.org/10.1214%2F15-AOAS888">doi:10.1214/15-AOAS888</a>&gt;). Some of the methods gathered in the package are the classical FDR- and FWER-controlling procedures, also available using function p.adjust. The package also implements the Guthrie-Buchwald procedure (Guthrie and Buchwald, 1991 &lt;<a href="https://doi.org/10.1111%2Fj.1469-8986.1991.tb00417.x">doi:10.1111/j.1469-8986.1991.tb00417.x</a>&gt;), which accounts for the auto-correlation among t-tests to control erroneous detection of short intervals. The Adaptive Factor-Adjustment method is an extension of the method described in Causeur, Chu, Hsieh and Sheu (2012, &lt;<a href="https://doi.org/10.3758%2Fs13428-012-0230-0">doi:10.3758/s13428-012-0230-0</a>&gt;). It assumes a factor model for the correlation among tests and combines adaptively the estimation of the signal and the updating of the dependence modelling (see Sheu et al., 2016, &lt;<a href="https://doi.org/10.1214%2F15-AOAS888">doi:10.1214/15-AOAS888</a>&gt; for further details).</p>
+<table summary="Package ERP summary">
+<tr>
+<td>Version:</td>
+<td>2.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>graphics, grDevices, stats, <a href="../corpcor/index.html">corpcor</a>, <a href="../irlba/index.html">irlba</a>, <a href="../fdrtool/index.html">fdrtool</a>, splines, <a href="../mnormt/index.html">mnormt</a>, <a href="../pacman/index.html">pacman</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../prettydoc/index.html">prettydoc</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-12-13</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>David Causeur, Ching-Fan Sheu, Mei-Chen Chu, Flavia Rufini</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>David Causeur  &#x3c;&#x64;&#x61;&#x76;&#x69;&#x64;&#x2e;&#x63;&#x61;&#x75;&#x73;&#x65;&#x75;&#x72;&#x20;&#x61;&#x74;&#x20;&#x61;&#x67;&#x72;&#x6f;&#x63;&#x61;&#x6d;&#x70;&#x75;&#x73;&#x2d;&#x6f;&#x75;&#x65;&#x73;&#x74;&#x2e;&#x66;&#x72;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://erpinr.org">http://erpinr.org</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_ERP.html">ERP results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package ERP downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="ERP.pdf"> ERP.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/ERP.html">ERP: Significance Analysis of Event-Related Potentials Data</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/ERP_2.2.tar.gz"> ERP_2.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/ERP_2.2.zip">ERP_2.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/ERP_2.2.zip">ERP_2.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/ERP_2.2.zip">ERP_2.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/ERP_2.2.tgz">ERP_2.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/ERP_2.2.tgz">ERP_2.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/ERP"> ERP archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=ERP"><samp>https://CRAN.R-project.org/package=ERP</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package rEDM</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Empirical Dynamic Modeling ('EDM') [R package rEDM version 1.6.1]" />
+<meta name="citation_author1" content="Joseph Park" />
+<meta name="citation_author2" content="Cameron Smith" />
+<meta name="citation_author3" content="George Sugihara" />
+<meta name="citation_author4" content="Ethan Deyle" />
+<meta name="citation_publication_date" content="2020-10-20" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=rEDM" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=rEDM" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="rEDM: Empirical Dynamic Modeling ('EDM')" />
+<meta name="og:description" content="An implementation of 'EDM' algorithms based on research software developed for internal use at the Sugihara Lab ('UCSD/SIO'). The package is implemented with 'Rcpp' wrappers around the 'cppEDM' library. It implements the 'simplex' projection method from Sugihara &amp;amp; May (1990) &amp;lt;&lt;a href=&quot;https://doi.org/10.1038%2F344734a0&quot;&gt;doi:10.1038/344734a0&lt;/a&gt;&amp;gt;, the 'S-map' algorithm from Sugihara (1994) &amp;lt;&lt;a href=&quot;https://doi.org/10.1098%2Frsta.1994.0106&quot;&gt;doi:10.1098/rsta.1994.0106&lt;/a&gt;&amp;gt;, convergent cross mapping described in Sugihara et al. (2012) &amp;lt;&lt;a href=&quot;https://doi.org/10.1126%2Fscience.1227079&quot;&gt;doi:10.1126/science.1227079&lt;/a&gt;&amp;gt;, and, 'multiview embedding' described in Ye &amp;amp; Sugihara (2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.1126%2Fscience.aag0863&quot;&gt;doi:10.1126/science.aag0863&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=rEDM" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>rEDM: Empirical Dynamic Modeling ('EDM')</h2>
+<p>An implementation of 'EDM' algorithms based on research software developed for internal use at the Sugihara Lab ('UCSD/SIO').  The package is implemented with 'Rcpp' wrappers around the 'cppEDM' library.  It implements the 'simplex' projection method from Sugihara &amp; May (1990) &lt;<a href="https://doi.org/10.1038%2F344734a0">doi:10.1038/344734a0</a>&gt;, the 'S-map' algorithm from Sugihara (1994) &lt;<a href="https://doi.org/10.1098%2Frsta.1994.0106">doi:10.1098/rsta.1994.0106</a>&gt;, convergent cross mapping described in Sugihara et al. (2012) &lt;<a href="https://doi.org/10.1126%2Fscience.1227079">doi:10.1126/science.1227079</a>&gt;, and, 'multiview embedding' described in Ye &amp; Sugihara (2016) &lt;<a href="https://doi.org/10.1126%2Fscience.aag0863">doi:10.1126/science.aag0863</a>&gt;.</p>
+<table summary="Package rEDM summary">
+<tr>
+<td>Version:</td>
+<td>1.6.1</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>methods, <a href="../Rcpp/index.html">Rcpp</a> (&ge; 1.0.1)</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppThread/index.html">RcppThread</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-20</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Joseph Park <a href="https://orcid.org/0000-0001-5411-1409"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    cre],
+  Cameron Smith [aut],
+  George Sugihara <a href="https://orcid.org/0000-0002-2863-6946"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, ccp],
+  Ethan Deyle <a href="https://orcid.org/0000-0001-8704-8434"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Erik Saberski <a href="https://orcid.org/0000-0002-6475-6187"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Hao Ye <a href="https://orcid.org/0000-0002-8630-1458"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb],
+  The Regents of the University of California [cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Joseph Park  &#x3c;&#x4a;&#x6f;&#x73;&#x65;&#x70;&#x68;&#x50;&#x61;&#x72;&#x6b;&#x20;&#x61;&#x74;&#x20;&#x49;&#x45;&#x45;&#x45;&#x2e;&#x6f;&#x72;&#x67;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/BSD_2_clause">BSD_2_clause</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_rEDM.html">rEDM results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package rEDM downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="rEDM.pdf"> rEDM.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/rEDM-tutorial.pdf">"Empirical Dynamic Modeling"</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/rEDM_1.6.1.tar.gz"> rEDM_1.6.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/rEDM_1.6.1.zip">rEDM_1.6.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/rEDM_1.6.1.zip">rEDM_1.6.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/rEDM_1.3.8.5.zip">rEDM_1.3.8.5.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/rEDM_1.6.1.tgz">rEDM_1.6.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/rEDM_1.6.1.tgz">rEDM_1.6.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/rEDM"> rEDM archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=rEDM"><samp>https://CRAN.R-project.org/package=rEDM</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,36 @@
+Package: sapfluxnetr
+Title: Working with 'Sapfluxnet' Project Data
+Version: 0.1.0
+Authors@R: c(
+  person("Victor", "Granda", email = "victorgrandagarcia@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-0469-1991")),
+  person("Rafael", "Poyatos", email = "r.poyatos@creaf.uab.cat", role = "aut", comment = c(ORCID = "0000-0003-0521-2523")),
+  person("Victor", "Flo", email = "v.flo@creaf.uab.cat", role = "aut", comment = c(ORCID = "0000-0003-1908-4577")),
+  person("Jacob", "Nelson", email = "", role = 'ctb', comment = c(ORCID = "0000-0002-4663-2420")),
+  person("Sapfluxnet Core Team", email = "sapfluxnet@creaf.uab.cat", role = 'cph')
+  )
+Description: Access, modify, aggregate and plot data from the 'Sapfluxnet' project
+  (<http://sapfluxnet.creaf.cat>), the first global database of sap flow measurements.
+Depends: R (>= 3.5.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: assertthat, dplyr, furrr, ggplot2, glue, lubridate, magrittr,
+        methods, purrr, rlang, stats, stringr, tibble, tidyr
+RoxygenNote: 7.1.0
+Collate: 'data.R' 'getters.R' 'helpers.R' 'imports.R' 'metrics.R'
+        'sfn_data_classes.R' 'sfn_data_generics.R' 'sfn_data_methods.R'
+        'sfn_dplyr.R' 'visualizations.R'
+Suggests: future, knitr, remotes, rmarkdown, testthat, xtable
+VignetteBuilder: knitr
+URL: https://github.com/sapfluxnet/sapfluxnetr
+BugReports: https://github.com/sapfluxnet/sapfluxnetr/issues
+NeedsCompilation: no
+Packaged: 2020-05-11 10:32:45 UTC; malditobarbudo
+Author: Victor Granda [aut, cre] (<https://orcid.org/0000-0002-0469-1991>),
+  Rafael Poyatos [aut] (<https://orcid.org/0000-0003-0521-2523>),
+  Victor Flo [aut] (<https://orcid.org/0000-0003-1908-4577>),
+  Jacob Nelson [ctb] (<https://orcid.org/0000-0002-4663-2420>),
+  Sapfluxnet Core Team [cph]
+Maintainer: Victor Granda <victorgrandagarcia@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-05-11 12:50:07 UTC

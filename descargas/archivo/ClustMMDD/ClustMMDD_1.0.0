@@ -1,0 +1,19 @@
+Package: ClustMMDD
+Type: Package
+Title: Variable Selection in Clustering by Mixture Models for Discrete
+        Data
+Version: 1.0.0
+Date: 2015-05-18
+Author: Wilson Toussile
+Maintainer: Wilson Toussile <wilson.toussile@gmail.com>
+Description: An implementation of a variable selection procedure in clustering by mixture of multinomial models for discrete data. Genotype data are examples of such data with two unordered observations (alleles) at each locus for diploid individual. The two-fold problem is seen as a model selection problem where competing models are characterized by the number of clusters K, and the subset S of clustering variables. Competing models are compared by penalized maximum likelihood criteria. We considered asymptotic criteria such as Akaike and Bayesian Information criteria, and a family of penalized criteria with penalty function to be data driven calibrated. 
+License: GPL (>= 2)
+Depends: Rcpp (>= 0.11.5)
+Collate: "RcppExports.R" "ClustMMDD.R" "modelKS.R" "zzz.R"
+LazyLoad: true
+Imports: methods
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2015-05-20 12:59:33 UTC; tousswil
+Repository: CRAN
+Date/Publication: 2015-05-20 15:19:27

@@ -1,0 +1,67 @@
+Package: GSODR
+Type: Package
+Title: Global Surface Summary of the Day (GSOD) Weather Data from R
+Version: 1.1.2
+Authors@R: c(person("Adam", "Sparks", role = c("aut", "cre"),
+    email = "adamhsparks@gmail.com",
+    comment = c(ORCID = "0000-0002-0061-8359")),
+    person("Tomislav", "Hengl", role = "aut",
+    email = "tom.hengl@isric.org",
+    comment = c(ORCID = "0000-0002-9921-5129")),
+    person("Andrew", "Nelson", role = "aut",
+    email = "dr.andy.nelson@gmail.com",
+    comment = c(ORCID = "0000-0002-7249-3778")),
+    person("Hugh", "Parsonage", role = c("cph", "ctb"),
+    email = "hugh.parsonage@gmail.com",
+    comment = c(ORCID = "0000-0003-4055-0835")),
+    person("Bob", "Rudis", email = "bob@rud.is", role = c("cph", "ctb"),
+    comment = c(ORCID = "0000-0001-5670-2640")))
+URL: https://github.com/ropensci/GSODR
+BugReports: https://github.com/ropensci/GSODR/issues
+Description: Provides automated downloading, parsing, cleaning, unit conversion
+    and formatting of Global Surface Summary of the Day (GSOD) weather data from
+    the from the USA National Centers for Environmental Information (NCEI) for
+    use in R.  Units are converted from from United States Customary System
+    (USCS) units to International System of Units (SI).  Stations may be 
+    individually checked for number of missing days defined by the user, where
+    stations with too many missing observations are omitted.  Only stations with
+    valid reported latitude and longitude values are permitted in the final 
+    data.  Additional useful elements, saturation vapour pressure (es), actual 
+    vapour pressure (ea) and relative humidity are calculated from the original 
+    data and included in the final data set.  The resulting data include station
+    identification information, state, country, latitude, longitude, elevation,
+    weather observations and associated flags.  Data may be automatically saved 
+    to disk. File output may be returned as a comma-separated values (CSV) or
+    GeoPackage (GPKG) file.  Additional data are included with this R package: a
+    list of elevation values for stations between -60 and 60 degrees latitude 
+    derived from the Shuttle Radar Topography Measuring Mission (SRTM).  For
+    information on the GSOD data from NCEI, please see the GSOD readme.txt file
+    available from, <http://www1.ncdc.noaa.gov/pub/data/gsod/readme.txt>.
+Depends: R (>= 3.2.0)
+License: MIT + file LICENSE
+Imports: curl, dplyr (>= 0.7.0), magrittr, purrr (>= 0.2.0), R.utils,
+        readr, rgdal (>= 1.1-9), rlang, sp, stats, tibble, utils
+Suggests: ggplot2, ggthemes, gridExtra, knitr, lubridate, mapproj,
+        maps, plotKML, raster, reshape2, rgeos, rmarkdown, roxygen2 (>=
+        6.0.1), spacetime, testthat, tidyr, covr
+RoxygenNote: 6.0.1
+Encoding: UTF-8
+NeedsCompilation: no
+Repository: CRAN
+LazyData: FALSE
+LazyLoad: FALSE
+ByteCompile: TRUE
+VignetteBuilder: knitr
+X-schema.org-applicationCategory: Tools
+X-schema.org-keywords: US-NCEI, meteorological-data, global-weather,
+        weather, weather-data, meteorology, station-data,
+        surface-weather, data-access, US-NCDC
+X-schema.org-isPartOf: https://ropensci.org
+Packaged: 2017-12-15 04:55:09 UTC; adamsparks
+Author: Adam Sparks [aut, cre] (0000-0002-0061-8359),
+  Tomislav Hengl [aut] (0000-0002-9921-5129),
+  Andrew Nelson [aut] (0000-0002-7249-3778),
+  Hugh Parsonage [cph, ctb] (0000-0003-4055-0835),
+  Bob Rudis [cph, ctb] (0000-0001-5670-2640)
+Maintainer: Adam Sparks <adamhsparks@gmail.com>
+Date/Publication: 2017-12-15 08:17:22 UTC

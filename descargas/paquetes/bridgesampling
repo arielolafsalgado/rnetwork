@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package bridgesampling</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Bridge Sampling for Marginal Likelihoods and Bayes Factors [R package bridgesampling version 1.0-0]" />
+<meta name="citation_author1" content="Quentin F. Gronau" />
+<meta name="citation_author2" content="Henrik Singmann" />
+<meta name="citation_publication_date" content="2020-02-26" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=bridgesampling" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=bridgesampling" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="bridgesampling: Bridge Sampling for Marginal Likelihoods and Bayes Factors" />
+<meta name="og:description" content="Provides functions for estimating marginal likelihoods, Bayes factors, posterior model probabilities, and normalizing constants in general, via different versions of bridge sampling (Meng &amp;amp; Wong, 1996, &amp;lt;&lt;a href=&quot;http://www3.stat.sinica.edu.tw/statistica/j6n4/j6n43/j6n43.htm&quot;&gt;http://www3.stat.sinica.edu.tw/statistica/j6n4/j6n43/j6n43.htm&lt;/a&gt;&amp;gt;). Gronau, Singmann, &amp;amp; Wagenmakers (2020) &amp;lt;&lt;a href=&quot;https://doi.org/10.18637%2Fjss.v092.i10&quot;&gt;doi:10.18637/jss.v092.i10&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=bridgesampling" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>bridgesampling: Bridge Sampling for Marginal Likelihoods and Bayes Factors</h2>
+<p>Provides functions for estimating marginal likelihoods, Bayes
+    factors, posterior model probabilities, and normalizing constants in general,
+    via different versions of bridge sampling (Meng &amp; Wong, 1996, 
+    &lt;<a href="http://www3.stat.sinica.edu.tw/statistica/j6n4/j6n43/j6n43.htm">http://www3.stat.sinica.edu.tw/statistica/j6n4/j6n43/j6n43.htm</a>&gt;).
+    Gronau, Singmann, &amp; Wagenmakers (2020) &lt;<a href="https://doi.org/10.18637%2Fjss.v092.i10">doi:10.18637/jss.v092.i10</a>&gt;.</p>
+<table summary="Package bridgesampling summary">
+<tr>
+<td>Version:</td>
+<td>1.0-0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../mvtnorm/index.html">mvtnorm</a>, <a href="../Matrix/index.html">Matrix</a>, <a href="../Brobdingnag/index.html">Brobdingnag</a>, <a href="../stringr/index.html">stringr</a>, <a href="../coda/index.html">coda</a>, parallel, <a href="../scales/index.html">scales</a>, utils, methods</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppEigen/index.html">RcppEigen</a>, <a href="../R2jags/index.html">R2jags</a>, <a href="../rjags/index.html">rjags</a>, <a href="../runjags/index.html">runjags</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../R.rsp/index.html">R.rsp</a>, <a href="../BayesFactor/index.html">BayesFactor</a>, <a href="../rstan/index.html">rstan</a>, <a href="../rstanarm/index.html">rstanarm</a>, <a href="../nimble/index.html">nimble</a>, <a href="../MCMCpack/index.html">MCMCpack</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-02-26</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Quentin F. Gronau <a href="https://orcid.org/0000-0001-5510-6943"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Henrik Singmann <a href="https://orcid.org/0000-0002-4842-3657"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Jonathan J. Forster [ctb],
+  Eric-Jan Wagenmakers [ths],
+  The JASP Team [ctb],
+  Jiqiang Guo [ctb],
+  Jonah Gabry [ctb],
+  Ben Goodrich [ctb],
+  Kees Mulder [ctb],
+  Perry de Valpine [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Quentin F. Gronau  &#x3c;&#x51;&#x75;&#x65;&#x6e;&#x74;&#x69;&#x6e;&#x2e;&#x46;&#x2e;&#x47;&#x72;&#x6f;&#x6e;&#x61;&#x75;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/quentingronau/bridgesampling">https://github.com/quentingronau/bridgesampling</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">bridgesampling citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Bayesian.html">Bayesian</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_bridgesampling.html">bridgesampling results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package bridgesampling downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="bridgesampling.pdf"> bridgesampling.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/bridgesampling_example_jags.html">Hierarchical Normal Example JAGS</a><br/>
+<a href="vignettes/bridgesampling_example_nimble.html">Hierarchical Normal Example Nimble</a><br/>
+<a href="vignettes/bridgesampling_example_stan.html">Hierarchical Normal Example Stan</a><br/>
+<a href="vignettes/bridgesampling_stan_ttest.html">Bayesian One-Sample T-Test Stan</a><br/>
+<a href="vignettes/bridgesampling_paper.pdf">bridgesampling: An R Package for Estimating Normalizing Constants (JSS version)</a><br/>
+<a href="vignettes/bridgesampling_paper_extended.pdf">bridgesampling: An R Package for Estimating Normalizing Constants (Extended)</a><br/>
+<a href="vignettes/bridgesampling_tutorial.pdf">A Tutorial on Bridge Sampling</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/bridgesampling_1.0-0.tar.gz"> bridgesampling_1.0-0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/bridgesampling_1.0-0.zip">bridgesampling_1.0-0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/bridgesampling_1.0-0.zip">bridgesampling_1.0-0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/bridgesampling_1.0-0.zip">bridgesampling_1.0-0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/bridgesampling_1.0-0.tgz">bridgesampling_1.0-0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/bridgesampling_1.0-0.tgz">bridgesampling_1.0-0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/bridgesampling"> bridgesampling archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package bridgesampling reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../BAMBI/index.html">BAMBI</a>, <a href="../BayesianFROC/index.html">BayesianFROC</a>, <a href="../BayesianTools/index.html">BayesianTools</a>, <a href="../brms/index.html">brms</a>, <a href="../metaBMA/index.html">metaBMA</a>, <a href="../RoBMA/index.html">RoBMA</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../bayestestR/index.html">bayestestR</a>, <a href="../bmscstan/index.html">bmscstan</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=bridgesampling"><samp>https://CRAN.R-project.org/package=bridgesampling</samp></a>
+to link to this page.</p>
+</body>
+</html>

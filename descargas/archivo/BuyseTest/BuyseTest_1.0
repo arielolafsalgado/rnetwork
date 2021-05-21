@@ -1,0 +1,36 @@
+Package: BuyseTest
+Type: Package
+Title: Generalized Pairwise Comparisons
+Version: 1.0
+Date: 2016-08-15
+Author: Brice Ozenne[aut, cre], Julien Peron[aut]
+Maintainer: brice ozenne <brice.ozenne@orange.fr>
+Description: Implementation of the Generalized Pairwise Comparisons. This test
+    enables to compare two groups of observations in randomized trials(e.g treated
+    vs. control patients) on several prioritized outcomes. Pairwise comparisons
+    require consideration of all possible pairs of individuals, one taken from the
+    treatment group and the other taken from the control group. The outcomes of the
+    two individuals forming a pair are compared. Thresholds of minimal clinically
+    significant differences can be defined. It is possible to analyse simultaneously
+    several outcomes by prioritizing the variables that capture them. The highest
+    priority is assigned to the variable considered the most clinically relevant.
+    A natural way of handling uninformative or neutral pairs is to consider the
+    outcomes in descending order of priority: whenever a pair is uninformative or
+    neutral for an outcome of higher priority, the outcomes of lower priority are
+    examined In the case of time-to-event endpoint, four methods to handle censored
+    observations are available in this package (Gehan, Peto, Efron, and Peron).
+License: GPL-3
+Depends: R (>= 2.10), survival, Rcpp, data.table, snowfall
+Imports: methods, lava, stats, stats4, tcltk, utils
+Suggests: testthat
+LinkingTo: Rcpp, RcppArmadillo
+Collate: 'BuyseTest-package.R' 'FCT_BuyseTest.R' 'FCT_Valid.R'
+        'FCT_simul.R' 'FCT_support.R' 'FCTi-computation.R'
+        'FCTi-initilization.R' 'FCTi-print.R' 'OBJECT_BuyseTest.R'
+        'METHOD_get.R' 'METHOD_summary.R' 'METHOD_print.R'
+        'RcppExports.R'
+RoxygenNote: 5.0.1
+NeedsCompilation: yes
+Packaged: 2016-08-17 05:19:17 UTC; brice
+Repository: CRAN
+Date/Publication: 2016-08-17 10:40:20

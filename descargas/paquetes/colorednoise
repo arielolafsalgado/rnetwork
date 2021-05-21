@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package colorednoise</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Simulate Temporally Autocorrelated Populations [R package colorednoise version 1.1.0]" />
+<meta name="citation_author" content="Julia Pilowsky" />
+<meta name="citation_publication_date" content="2020-08-05" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=colorednoise" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=colorednoise" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="colorednoise: Simulate Temporally Autocorrelated Populations" />
+<meta name="og:description" content="Temporally autocorrelated populations are correlated in their vital rates (growth, death, etc.) from year to year. It is very common for populations, whether they be bacteria, plants, or humans, to be temporally autocorrelated. This poses a challenge for stochastic population modeling, because a temporally correlated population will behave differently from an uncorrelated one. This package provides tools for simulating populations with white noise (no temporal autocorrelation), red noise (positive temporal autocorrelation), and blue noise (negative temporal autocorrelation). The algebraic formulation for autocorrelated noise comes from Ruokolainen et al. (2009) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.tree.2009.04.009&quot;&gt;doi:10.1016/j.tree.2009.04.009&lt;/a&gt;&amp;gt;. Models for unstructured populations and for structured populations (matrix models) are available." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=colorednoise" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>colorednoise: Simulate Temporally Autocorrelated Populations</h2>
+<p>Temporally autocorrelated populations are correlated in their vital rates (growth, death, etc.) from year to year. It is very common for populations, whether they be bacteria, plants, or humans, to be temporally autocorrelated. This poses a challenge for stochastic population modeling, because a temporally correlated population will behave differently from an uncorrelated one.
+    This package provides tools for simulating populations with white noise (no temporal autocorrelation), red noise (positive temporal autocorrelation), and blue noise (negative temporal autocorrelation).  The algebraic formulation for autocorrelated noise comes from Ruokolainen et al. (2009) &lt;<a href="https://doi.org/10.1016%2Fj.tree.2009.04.009">doi:10.1016/j.tree.2009.04.009</a>&gt;. Models for unstructured populations and for structured populations (matrix models) are available.</p>
+<table summary="Package colorednoise summary">
+<tr>
+<td>Version:</td>
+<td>1.1.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>stats (&ge; 3.3.2), <a href="../purrr/index.html">purrr</a> (&ge; 0.2.3), <a href="../Rcpp/index.html">Rcpp</a> (&ge; 1.0.5), <a href="../data.table/index.html">data.table</a> (&ge; 1.12.8)</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../ggplot2/index.html">ggplot2</a> (&ge; 2.2.1), <a href="../knitr/index.html">knitr</a> (&ge; 1.17), <a href="../rmarkdown/index.html">rmarkdown</a> (&ge; 1.6), <a href="../testthat/index.html">testthat</a> (&ge; 1.0.2), <a href="../covr/index.html">covr</a> (&ge; 3.0.0), <a href="../pkgdown/index.html">pkgdown</a> (&ge; 1.1.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-08-05</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Julia Pilowsky <a href="https://orcid.org/0000-0002-6376-2585"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Julia Pilowsky  &#x3c;&#x6a;&#x61;&#x70;&#x32;&#x31;&#x37;&#x38;&#x20;&#x61;&#x74;&#x20;&#x63;&#x61;&#x61;&#x2e;&#x63;&#x6f;&#x6c;&#x75;&#x6d;&#x62;&#x69;&#x61;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="http://github.com/japilo/colorednoise/issues">http://github.com/japilo/colorednoise/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_colorednoise.html">colorednoise results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package colorednoise downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="colorednoise.pdf"> colorednoise.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/noise.html">Simulate noise</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/colorednoise_1.1.0.tar.gz"> colorednoise_1.1.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/colorednoise_1.1.0.zip">colorednoise_1.1.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/colorednoise_1.1.0.zip">colorednoise_1.1.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/colorednoise_1.1.0.zip">colorednoise_1.1.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/colorednoise_1.1.0.tgz">colorednoise_1.1.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/colorednoise_1.1.0.tgz">colorednoise_1.1.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/colorednoise"> colorednoise archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=colorednoise"><samp>https://CRAN.R-project.org/package=colorednoise</samp></a>
+to link to this page.</p>
+</body>
+</html>

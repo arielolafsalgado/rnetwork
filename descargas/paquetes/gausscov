@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package gausscov</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="The Gaussian Covariate Method for Variable Selection [R package gausscov version 0.0.8]" />
+<meta name="citation_author" content="Laurie Davies" />
+<meta name="citation_publication_date" content="2020-10-21" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=gausscov" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=gausscov" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="gausscov: The Gaussian Covariate Method for Variable Selection" />
+<meta name="og:description" content="Given the standard linear model the traditional way of deciding whether to include the jth covariate is to apply the F-test to decide whether the corresponding beta coefficient is zero. The Gaussian covariate method is completely different. The question as to whether the beta coefficient is or is not zero is replaced by the question as to whether the covariate is better or worse than i.i.d. Gaussian noise. The P-value for the covariate is the probability that Gaussian noise is better. Surprisingly this can be given exactly and it is the same a the P-value for the classical model based on the F-distribution. The Gaussian covariate P-value is model free, it is the same for any data set. Using the idea it is possible to do covariate selection for a small number of covariates 25 by considering all subsets. Post selection inference causes no problems as the P-values hold whatever the data. The idea extends to stepwise regression again with exact probabilities. In the simplest version the only parameter is a specified cut-off P-value which can be interpreted as the probability of a false positive being included in the final selection. For more information see the website below and the accompanying papers: L. Davies and L. Duembgen, &quot;Covariate Selection Based on a Model-free Approach to Linear Regression with Exact Probabilities&quot;, 2020, &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1906.01990&quot;&gt;arXiv:1906.01990&lt;/a&gt;&amp;gt;. L. Davies, &quot;Lasso, Knockoff and Gaussian covariates: A comparison&quot;, 2018, &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1807.09633&quot;&gt;arXiv:1807.09633&lt;/a&gt;&amp;gt;. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=gausscov" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>gausscov: The Gaussian Covariate Method for Variable Selection</h2>
+<p>Given the standard linear model the traditional way of deciding whether to include the jth covariate is to apply the F-test to decide whether the corresponding beta coefficient is  zero. The Gaussian covariate method is completely different. The question as to whether the beta coefficient is or is not zero is replaced by the question as to whether the covariate is better or worse than i.i.d. Gaussian noise. The P-value for the covariate is the probability that Gaussian noise is better. Surprisingly this can be given exactly and it is the same a the P-value for the classical model based on the F-distribution. The Gaussian covariate P-value is model free, it is the same for any data set. Using the idea it is possible to do covariate selection for a small number of covariates 25 by considering all subsets.  Post selection inference causes no problems as the P-values hold whatever the data. The idea extends to stepwise regression again with exact probabilities. In the simplest version the only parameter is a specified cut-off P-value which can be interpreted as the probability of a false positive being included in the final selection. For more information see the website below and the accompanying papers: L. Davies and L. Duembgen, "Covariate Selection Based on a Model-free Approach to Linear Regression with Exact Probabilities", 2020, &lt;<a href="https://arxiv.org/abs/1906.01990">arXiv:1906.01990</a>&gt;. L. Davies, "Lasso, Knockoff and Gaussian covariates: A comparison", 2018, &lt;<a href="https://arxiv.org/abs/1807.09633">arXiv:1807.09633</a>&gt;. </p>
+<table summary="Package gausscov summary">
+<tr>
+<td>Version:</td>
+<td>0.0.8</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0), stats</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-21</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Laurie Davies [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Laurie Davies  &#x3c;&#x6c;&#x61;&#x75;&#x72;&#x69;&#x65;&#x2e;&#x64;&#x61;&#x76;&#x69;&#x65;&#x73;&#x20;&#x61;&#x74;&#x20;&#x75;&#x6e;&#x69;&#x2d;&#x64;&#x75;&#x65;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_gausscov.html">gausscov results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package gausscov downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="gausscov.pdf"> gausscov.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/gausscov_0.0.8.tar.gz"> gausscov_0.0.8.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/gausscov_0.0.8.zip">gausscov_0.0.8.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/gausscov_0.0.8.zip">gausscov_0.0.8.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/gausscov_0.0.8.zip">gausscov_0.0.8.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/gausscov_0.0.8.tgz">gausscov_0.0.8.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/gausscov_0.0.8.tgz">gausscov_0.0.8.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/gausscov"> gausscov archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=gausscov"><samp>https://CRAN.R-project.org/package=gausscov</samp></a>
+to link to this page.</p>
+</body>
+</html>

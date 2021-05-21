@@ -1,0 +1,37 @@
+Package: updog
+Title: Flexible Genotyping for Polyploids
+Version: 1.0.0
+Date: 2018-06-11
+Authors@R: person("David", "Gerard", email = "gerard.1787@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-9450-5023"))
+Description: Implements empirical Bayes approaches to genotype
+       polyploids from next generation sequencing data while
+       accounting for allelic bias, overdispersion, and sequencing
+       error. The main function is flexdog(), which allows the specification
+       of many different genotype distributions. An experimental
+       function that takes into account varying levels of relatedness
+       is implemented in mupdog(). Also provided are functions to
+       simulate genotypes, rgeno(), and read-counts, rflexdog(), as well as
+       functions to calculate oracle genotyping error rates, oracle_mis(), and
+       correlation with the true genotypes, oracle_cor(). These latter two
+       functions are useful for read depth calculations. Run
+       browseVignettes(package = "updog") in R for example usage. See also
+       Gerard et al. (2018) <doi:10.1101/281550> for details on the
+       implemented methods.
+Depends: R (>= 3.4.0)
+License: GPL-3
+BugReports: http://github.com/dcgerard/updog/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp (>= 0.12.16), RcppArmadillo, assertthat, foreach,
+        doParallel, ggplot2, ggthemes, stringr
+Suggests: covr, testthat, SuppDists, Rmpfr, CVXR, knitr, rmarkdown,
+        tidyverse
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2018-07-09 14:14:56 UTC; david
+Author: David Gerard [aut, cre] (<https://orcid.org/0000-0001-9450-5023>)
+Maintainer: David Gerard <gerard.1787@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-07-10 16:20:03 UTC

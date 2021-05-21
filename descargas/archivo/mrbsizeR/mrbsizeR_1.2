@@ -1,0 +1,39 @@
+Package: mrbsizeR
+Type: Package
+Title: Scale Space Multiresolution Analysis of Random Signals
+Version: 1.2
+Date: 2019-12-04
+Authors@R: c(
+    person("Thimo", "Schuster", email = "thimo.schuster@gmail.com", role = c("aut")),
+    person("Roman", "Flury", email = "roman.flury@math.uzh.ch", role = c("cre", "aut")),
+    person("Leena", "Pasanen", email = "leena.pasanen@oulu.fi", role = "ctb"),
+    person("Reinhard", "Furrer", email = "reinhard.furrer@math.uzh.ch", role = "ctb"))
+Maintainer: Roman Flury <roman.flury@math.uzh.ch>
+Description: A method for the multiresolution analysis of spatial fields and images to capture scale-dependent features.
+    mrbsizeR is based on scale space smoothing and uses differences of smooths at neighbouring scales for finding features on different scales.
+    To infer which of the captured features are credible, Bayesian analysis is used.
+    The scale space multiresolution analysis has three steps: (1) Bayesian signal reconstruction.
+    (2) Using differences of smooths, scale-dependent features of the reconstructed signal can be found.
+    (3) Posterior credibility analysis of the differences of smooths created.
+    The method has first been proposed by Holmstrom, Pasanen, Furrer, Sain (2011) <DOI:10.1016/j.csda.2011.04.011>.
+    Matlab code is available under <http://cc.oulu.fi/~lpasanen/MRBSiZer/>.
+License: GPL-2
+LazyData: TRUE
+Depends: R (>= 3.0.0), maps(>= 3.1.1)
+Imports: fields (>= 8.10), stats (>= 3.0.0), grDevices(>= 3.0.0),
+        graphics(>= 3.0.0), methods(>= 3.0.0), Rcpp (>= 0.12.14)
+LinkingTo: Rcpp
+RoxygenNote: 6.1.0
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+BugReports: https://github.com/romanflury/mrbsizeR/issues
+URL: https://github.com/romanflury/mrbsizeR,
+        https://romanflury.github.io/mrbsizeR/
+NeedsCompilation: yes
+Packaged: 2019-12-06 12:23:57 UTC; roflur
+Author: Thimo Schuster [aut],
+  Roman Flury [cre, aut],
+  Leena Pasanen [ctb],
+  Reinhard Furrer [ctb]
+Repository: CRAN
+Date/Publication: 2019-12-06 13:00:03 UTC

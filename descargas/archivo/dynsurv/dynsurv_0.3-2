@@ -1,0 +1,40 @@
+Package: dynsurv
+Title: Dynamic Models for Survival Data
+Version: 0.3-2
+Date: 2016-08-30
+Authors@R: c(
+    person(given = "Wenjie", family = "Wang",
+           email = "wenjie.2.wang@uconn.edu", role = c("cre", "aut")),
+    person(given = "Ming-Hui", family = "Chen",
+           email = "ming-hui.chen@uconn.edu", role = "aut"),
+    person(given = "Xiaojing", family = "Wang",
+           email = "wangxj03@gmail.com", role = "aut"),
+    person(given = "Jun", family = "Yan",
+           email = "jun.yan@uconn.edu", role = "aut")
+    )
+Description: Functions to fit time-varying coefficient models for interval
+	     censored and right censored survival data. Three major
+	     approaches are implemented: 1) Bayesian Cox model with
+	     time-independent, time-varying or dynamic coefficients for
+	     right censored and interval censored data; 2) Spline based
+	     time-varying coefficient Cox model for right censored data;
+	     3) Transformation model with time-varying coefficients for
+	     right censored data using estimating equations.
+Depends: R (>= 3.0.2), survival
+Imports: ggplot2, grDevices, grid, nleqslv, plyr, reshape, stats, utils
+LinkingTo: BH (>= 1.54.0-2)
+License: GPL (>= 3)
+LazyLoad: Yes
+LazyData: Yes
+NeedsCompilation: yes
+URL: https://github.com/wenjie2wang/dynsurv
+BugReports: https://github.com/wenjie2wang/dynsurv/issues
+RoxygenNote: 5.0.1
+Packaged: 2016-08-30 18:13:52 UTC; wenjie
+Author: Wenjie Wang [cre, aut],
+  Ming-Hui Chen [aut],
+  Xiaojing Wang [aut],
+  Jun Yan [aut]
+Maintainer: Wenjie Wang <wenjie.2.wang@uconn.edu>
+Repository: CRAN
+Date/Publication: 2016-08-31 01:18:32

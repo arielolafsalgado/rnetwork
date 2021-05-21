@@ -1,0 +1,16 @@
+Package: DRHotNet
+Title: Differential Risk Hotspots in a Linear Network
+Version: 1.0
+Author: Alvaro Briz-Redon
+Maintainer: Alvaro Briz-Redon <alvaro.briz@uv.es>
+Description: Performs the identification of differential risk hotspots given a marked point pattern (Diggle 2013) <doi:10.1201/b15326> lying on a linear network (Baddeley, Rubak and Turner 2015) <doi:10.1201/b19708>. The algorithm makes use of a network-constrained version of kernel density estimation (McSwiggan, Baddeley and Nair 2017) <doi:10.1111/sjos.12255>, and then follows a statistical approach to approximate the probability of ocurrence across space for the type of event specified by the user through the marks of the pattern (Kelsall and Diggle 1995) <doi:10.2307/3318678>. The final goal is to detect microzones of the road network where the type of event indicated by the user is overrepresented, considering the network structure provided.
+Depends: R (>= 3.5.0)
+Imports: spatstat, spdep, raster, maptools, sp, utils, stats
+License: GPL-2
+LazyData: true
+RoxygenNote: 6.1.1
+Suggests: knitr, rmarkdown
+NeedsCompilation: no
+Packaged: 2019-06-11 17:18:17 UTC; Usuario
+Repository: CRAN
+Date/Publication: 2019-06-14 12:00:15 UTC

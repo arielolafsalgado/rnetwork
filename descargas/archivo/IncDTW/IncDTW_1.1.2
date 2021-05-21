@@ -1,0 +1,23 @@
+Package: IncDTW
+Type: Package
+Title: Incremental Calculation of Dynamic Time Warping
+Version: 1.1.2
+Author: Maximilian Leodolter
+Maintainer: Maximilian Leodolter <maximilian.leodolter@gmail.com>
+Description: The Dynamic Time Warping (DTW) distance measure for time series allows non-linear alignments of time series to match  similar patterns in time series of different lengths and or different speeds. IncDTW is characterized by (1) the incremental calculation of DTW (reduces runtime complexity to a linear level for updating the DTW distance) - especially for life data streams or subsequence matching, (2) the vector based implementation of DTW which is faster because no matrices are allocated (reduces the space complexity from a quadratic to a linear level in the number of observations) - for all runtime intensive DTW computations, (3) the subsequence matching algorithm runDTW, that efficiently finds the k-NN to a query pattern in a long time series, and (4) C++ in the heart. For details about DTW see the original paper "Dynamic programming algorithm optimization for spoken word recognition" by Sakoe and Chiba (1978) <DOI:10.1109/TASSP.1978.1163055>.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 2.10)
+Imports: Rcpp (>= 0.12.8), RcppParallel, ggplot2, scales, parallel,
+        stats, data.table
+LinkingTo: Rcpp, RcppParallel, RcppArmadillo
+NeedsCompilation: yes
+Packaged: 2019-06-27 07:58:43 UTC; LeodolterM
+RoxygenNote: 6.1.1
+Suggests: knitr, dtw, rmarkdown, gridExtra, testthat, dtwclust,
+        parallelDist, microbenchmark, rucrdtw, proxy, R.rsp
+VignetteBuilder: knitr, R.rsp
+SystemRequirements: GNU make
+Repository: CRAN
+Date/Publication: 2019-06-27 08:40:06 UTC

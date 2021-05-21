@@ -1,0 +1,55 @@
+Package: pomp
+Type: Package
+Title: Statistical Inference for Partially Observed Markov Processes
+Version: 0.65-1
+Date: 2015-05-30
+Authors@R: c(person(given=c("Aaron","A."),family="King",
+		role=c("aut","cre"),email="kingaa@umich.edu"),
+	  person(given=c("Edward","L."),family="Ionides",role=c("aut")),
+	  person(given=c("Carles"),family="Breto",role=c("aut")),
+	  person(given=c("Stephen","P."),family="Ellner",role=c("ctb")),
+	  person(given=c("Matthew","J."),family="Ferrari",role=c("ctb")),
+	  person(given=c("Bruce","E."),family="Kendall",role=c("ctb")),
+	  person(given=c("Michael"),family="Lavine",role=c("ctb")),
+	  person(given="Dao",family="Nguyen",role=c("ctb")),
+	  person(given=c("Daniel","C."),family="Reuman",role=c("ctb")),
+	  person(given=c("Helen"),family="Wearing",role=c("ctb")),
+	  person(given=c("Simon","N."),family="Wood",role=c("ctb"))
+	  )
+URL: http://pomp.r-forge.r-project.org
+Description: Inference methods for partially observed Markov processes (AKA stochastic dynamical systems, state-space models).
+Depends: R(>= 3.0.0), methods
+Imports: stats, graphics, mvtnorm, deSolve, coda, subplex, nloptr
+License: GPL (>= 2)
+LazyData: true
+MailingList: Subscribe to pomp-announce@r-forge.r-project.org for
+        announcements by going to
+        http://lists.r-forge.r-project.org/mailman/listinfo/pomp-announce.
+Collate: aaa.R authors.R generics.R eulermultinom.R csnippet.R
+        pomp-fun.R plugins.R builder.R parmat.R logmeanexp.R
+        slice-design.R profile-design.R sobol.R bsplines.R sannbox.R
+        pomp-class.R load.R pomp.R pomp-methods.R rmeasure-pomp.R
+        rprocess-pomp.R init-state-pomp.R dmeasure-pomp.R
+        dprocess-pomp.R skeleton-pomp.R dprior-pomp.R rprior-pomp.R
+        simulate-pomp.R trajectory-pomp.R plot-pomp.R pfilter.R
+        pfilter-methods.R minim.R traj-match.R bsmc.R bsmc2.R mif.R
+        mif-methods.R proposals.R pmcmc.R pmcmc-methods.R nlf-funcs.R
+        nlf-guts.R nlf-objfun.R nlf.R probe.R probe-match.R
+        basic-probes.R spect.R spect-match.R abc.R abc-methods.R
+        example.R
+Packaged: 2015-05-31 23:06:39 UTC; kingaa
+Author: Aaron A. King [aut, cre],
+  Edward L. Ionides [aut],
+  Carles Breto [aut],
+  Stephen P. Ellner [ctb],
+  Matthew J. Ferrari [ctb],
+  Bruce E. Kendall [ctb],
+  Michael Lavine [ctb],
+  Dao Nguyen [ctb],
+  Daniel C. Reuman [ctb],
+  Helen Wearing [ctb],
+  Simon N. Wood [ctb]
+Maintainer: Aaron A. King <kingaa@umich.edu>
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2015-06-01 08:31:18

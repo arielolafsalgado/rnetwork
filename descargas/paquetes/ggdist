@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package ggdist</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Visualizations of Distributions and Uncertainty [R package ggdist version 2.2.0]" />
+<meta name="citation_author" content="Matthew Kay" />
+<meta name="citation_publication_date" content="2020-07-12" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=ggdist" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=ggdist" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="ggdist: Visualizations of Distributions and Uncertainty" />
+<meta name="og:description" content="Provides primitives for visualizing distributions using 'ggplot2' that are particularly tuned for visualizing uncertainty in either a frequentist or Bayesian mode. Both analytical distributions (such as frequentist confidence distributions or Bayesian priors) and distributions represented as samples (such as bootstrap distributions or Bayesian posterior samples) are easily visualized. Visualization primitives include but are not limited to: points with multiple uncertainty intervals, eye plots (Spiegelhalter D., 1999) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2F1467-985X.00120&quot;&gt;doi:10.1111/1467-985X.00120&lt;/a&gt;&amp;gt;, density plots, gradient plots, dot plots (Wilkinson L., 1999) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F00031305.1999.10474474&quot;&gt;doi:10.1080/00031305.1999.10474474&lt;/a&gt;&amp;gt;, quantile dot plots (Kay M., Kola T., Hullman J., Munson S., 2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.1145%2F2858036.2858558&quot;&gt;doi:10.1145/2858036.2858558&lt;/a&gt;&amp;gt;, complementary cumulative distribution function barplots (Fernandes M., Walls L., Munson S., Hullman J., Kay M., 2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.1145%2F3173574.3173718&quot;&gt;doi:10.1145/3173574.3173718&lt;/a&gt;&amp;gt;, and fit curves with multiple uncertainty ribbons." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=ggdist" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>ggdist: Visualizations of Distributions and Uncertainty</h2>
+<p>Provides primitives for visualizing distributions using 'ggplot2' that are particularly tuned for
+    visualizing uncertainty in either a frequentist or Bayesian mode. Both analytical distributions (such as 
+    frequentist confidence distributions or Bayesian priors) and distributions represented as samples (such as 
+    bootstrap distributions or Bayesian posterior samples) are easily visualized. Visualization primitives include
+    but are not limited to: points with multiple uncertainty intervals, 
+    eye plots (Spiegelhalter D., 1999) &lt;<a href="https://doi.org/10.1111%2F1467-985X.00120">doi:10.1111/1467-985X.00120</a>&gt;,
+    density plots, gradient plots, dot plots (Wilkinson L., 1999) &lt;<a href="https://doi.org/10.1080%2F00031305.1999.10474474">doi:10.1080/00031305.1999.10474474</a>&gt;,
+    quantile dot plots (Kay M., Kola T., Hullman J., Munson S., 2016) &lt;<a href="https://doi.org/10.1145%2F2858036.2858558">doi:10.1145/2858036.2858558</a>&gt;,
+    complementary cumulative distribution function 
+    barplots (Fernandes M., Walls L., Munson S., Hullman J., Kay M., 2018) &lt;<a href="https://doi.org/10.1145%2F3173574.3173718">doi:10.1145/3173574.3173718</a>&gt;,
+    and fit curves with multiple uncertainty ribbons.</p>
+<table summary="Package ggdist summary">
+<tr>
+<td>Version:</td>
+<td>2.2.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../dplyr/index.html">dplyr</a> (&ge; 0.8.0), <a href="../tidyr/index.html">tidyr</a> (&ge; 1.0.0), <a href="../ggplot2/index.html">ggplot2</a> (&ge; 3.3.0), <a href="../purrr/index.html">purrr</a> (&ge; 0.2.3), <a href="../rlang/index.html">rlang</a> (&ge; 0.3.0), <a href="../scales/index.html">scales</a>, grid, <a href="../forcats/index.html">forcats</a>, <a href="../HDInterval/index.html">HDInterval</a>, <a href="../tibble/index.html">tibble</a>, <a href="../vctrs/index.html">vctrs</a>, <a href="../distributional/index.html">distributional</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../testthat/index.html">testthat</a>, <a href="../vdiffr/index.html">vdiffr</a> (&ge; 0.3.0), <a href="../svglite/index.html">svglite</a>, <a href="../broom/index.html">broom</a> (&ge;
+0.5.6), <a href="../modelr/index.html">modelr</a>, <a href="../cowplot/index.html">cowplot</a>, <a href="../covr/index.html">covr</a>, <a href="../gdtools/index.html">gdtools</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../png/index.html">png</a>, <a href="../pkgdown/index.html">pkgdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-07-12</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Matthew Kay [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Matthew Kay  &#x3c;&#x6d;&#x6a;&#x73;&#x6b;&#x61;&#x79;&#x20;&#x61;&#x74;&#x20;&#x75;&#x6d;&#x69;&#x63;&#x68;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/mjskay/ggdist/issues/new">https://github.com/mjskay/ggdist/issues/new</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL (&ge; 3)</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://mjskay.github.io/ggdist">http://mjskay.github.io/ggdist</a>, <a href="https://github.com/mjskay/ggdist">https://github.com/mjskay/ggdist</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">ggdist citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_ggdist.html">ggdist results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package ggdist downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="ggdist.pdf"> ggdist.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/freq-uncertainty-vis.html">Frequentist uncertainty visualization</a><br/>
+<a href="vignettes/slabinterval.html">Slab + interval stats and geoms</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/ggdist_2.2.0.tar.gz"> ggdist_2.2.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/ggdist_2.2.0.zip">ggdist_2.2.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/ggdist_2.2.0.zip">ggdist_2.2.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/ggdist_2.1.1.zip">ggdist_2.1.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/ggdist_2.2.0.tgz">ggdist_2.2.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/ggdist_2.1.1.tgz">ggdist_2.1.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/ggdist"> ggdist archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package ggdist reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../multinma/index.html">multinma</a>, <a href="../tidybayes/index.html">tidybayes</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../distributional/index.html">distributional</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=ggdist"><samp>https://CRAN.R-project.org/package=ggdist</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,36 @@
+Package: modeltime
+Title: The Tidymodels Extension for Time Series Modeling
+Version: 0.2.0
+Authors@R: c(
+    person("Matt", "Dancho", email = "mdancho@business-science.io", role = c("aut", "cre")),
+    person("Business Science", role = "cph"))
+Description: 
+    The time series forecasting framework for use with the 'tidymodels' ecosystem. 
+    Models include ARIMA, Exponential Smoothing, and additional time series models
+    from the 'forecast' and 'prophet' packages. Refer to "Forecasting Principles & Practice, Second edition" 
+    (<https://otexts.com/fpp2/>).
+    Refer to "Prophet: forecasting at scale" 
+    (<https://research.fb.com/blog/2017/02/prophet-forecasting-at-scale/>.).
+URL: https://github.com/business-science/modeltime
+BugReports: https://github.com/business-science/modeltime/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: StanHeaders, timetk (>= 2.1.0), parsnip (>= 0.1.3), dials,
+        yardstick, workflows (>= 0.1.3), hardhat, rlang (>= 0.1.2),
+        glue, plotly, reactable, gt, ggplot2, tibble, tidyr, dplyr,
+        purrr, stringr, forcats, scales, janitor, progressr, magrittr,
+        forecast, xgboost, prophet, methods
+Suggests: rstan, tidymodels, recipes, rsample, tune, tidyverse,
+        lubridate, testthat, roxygen2, kernlab, earth, randomForest,
+        tidyquant, knitr, rmarkdown, webshot
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-09-28 12:13:06 UTC; mdancho
+Author: Matt Dancho [aut, cre],
+  Business Science [cph]
+Maintainer: Matt Dancho <mdancho@business-science.io>
+Repository: CRAN
+Date/Publication: 2020-09-28 12:40:02 UTC

@@ -1,0 +1,25 @@
+Package: scmamp
+Type: Package
+Title: Statistical Comparison of Multiple Algorithms in Multiple
+        Problems
+Version: 0.2
+Date: 2015-09-02
+Authors@R: c(person(given = "Borja", family = "Calvo", role = c("aut", "cre") , email ="borja.calvo@ehu.eus"), 
+   person(given = "Guzman", family = "Santafe", role = c("aut"), email = "guzman.santafe@unavarra.es")) 
+LazyData: yes
+Imports: ggplot2, graph, reshape2, Rgraphviz, methods
+Suggests: knitr
+VignetteBuilder: knitr
+Description: Given a matrix with results of different algorithms for different problems, the package uses statistical tests and corrections to assess the differences between algorithms.
+License: GPL-2
+BugReports: https://github.com/b0rxa/scmamp/issues
+Collate: tests.R post_hoc.R plotting.R scmamp.R latex.R
+        loading_functions.R data_manipulation.R
+NeedsCompilation: no
+Packaged: 2015-09-06 14:18:54 UTC; aitatxoborja
+Author: Borja Calvo [aut, cre],
+  Guzman Santafe [aut]
+Maintainer: Borja Calvo <borja.calvo@ehu.eus>
+Depends: R (>= 2.10)
+Repository: CRAN
+Date/Publication: 2015-09-06 19:30:59

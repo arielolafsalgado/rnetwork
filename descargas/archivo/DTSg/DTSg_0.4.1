@@ -1,0 +1,31 @@
+Package: DTSg
+Type: Package
+Title: A Class for Working with Time Series Based on 'data.table' and
+        'R6' with Largely Optional Reference Semantics
+Version: 0.4.1
+Authors@R: person("Gerold", "Hepp", email = "ghepp@iwag.tuwien.ac.at", role = c("aut", "cre"))
+Description: Basic time series functionalities such as listing of missing
+    values, application of arbitrary aggregation as well as rolling window
+    functions and automatic detection of periodicity. As it is mainly based on
+    'data.table', it is fast and - in combination with the 'R6' package - offers
+    reference semantics. In addition to its native R6 interface, it provides an
+    S3 interface inclusive an S3 wrapper method generator for those who prefer
+    the latter.
+License: MIT + file LICENSE
+URL: https://github.com/gisler/DTSg
+BugReports: https://github.com/gisler/DTSg/issues
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+Depends: R (>= 3.2.0)
+Imports: checkmate, data.table, methods, R6
+Suggests: covr, dygraphs, fasttime, knitr, magrittr, RColorBrewer,
+        rmarkdown, tinytest
+RoxygenNote: 7.1.0
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-05-07 21:57:28 UTC; ghepp
+Author: Gerold Hepp [aut, cre]
+Maintainer: Gerold Hepp <ghepp@iwag.tuwien.ac.at>
+Repository: CRAN
+Date/Publication: 2020-05-08 04:20:02 UTC

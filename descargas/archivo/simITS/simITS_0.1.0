@@ -1,0 +1,48 @@
+Type: Package
+Package: simITS
+Title: Analysis via Simulation of Interrupted Time Series (ITS) Data
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Luke",
+             family = "Miratrix",
+             role = c("aut", "cre"),
+             email = "lmiratrix@g.harvard.edu"),
+      person(given = "Brit",
+             family = "Henderson",
+             role = "ctb",
+             email = "Brit.Henderson@mdrc.org"),
+      person(given = "Chloe",
+             family = "Anderson",
+             role = "ctb",
+             email = "Chloe.AAnderson@mdrc.org"),
+      person(given = "Arnold Ventures", role="fnd"),
+      person(given = "MDRC", role="fnd") )
+Description: Uses simulation to create prediction intervals for
+    post-policy outcomes in interrupted time series (ITS) designs,
+    following Miratrix (2020) <arXiv:2002.05746>. This package provides
+    methods for fitting ITS models with lagged outcomes and variables to
+    account for temporal dependencies.  It then conducts inference via
+    simulation, simulating a set of plausible counterfactual post-policy
+    series to compare to the observed post-policy series. This package
+    also provides methods to visualize such data, and also to incorporate
+    seasonality models and smoothing and aggregation/summarization.  This
+    work partially funded by Arnold Ventures in collaboration with
+    MDRC.
+License: GPL-3
+Depends: dplyr, R (>= 2.10), rlang
+Suggests: arm, ggplot2, knitr, plyr, purrr, rmarkdown, stats, testthat
+        (>= 2.1.0), tidyr
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+NeedsCompilation: no
+Packaged: 2020-04-22 22:10:22 UTC; lmiratrix
+Author: Luke Miratrix [aut, cre],
+  Brit Henderson [ctb],
+  Chloe Anderson [ctb],
+  Arnold Ventures [fnd],
+  MDRC [fnd]
+Maintainer: Luke Miratrix <lmiratrix@g.harvard.edu>
+Repository: CRAN
+Date/Publication: 2020-04-28 09:40:02 UTC

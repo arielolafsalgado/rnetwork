@@ -1,0 +1,23 @@
+Package: GCPM
+Type: Package
+Title: Generalized Credit Portfolio Model
+Version: 1.1
+Date: 2014-11-24
+Author: Kevin Jakob
+Maintainer: Kevin Jakob <Kevin.Jakob@Student.uni-augsburg.de>
+Description: The package helps to analyze the default risk of credit portfolios. Commonly known models, 
+		like CreditRisk+ or the CreditMetrics model are implemented in their very basic settings.
+		The portfolio loss distribution can be achieved either by simulation or analytically 
+		in case of the classic CreditRisk+ model. Models are only implemented to respect losses
+		caused by defaults, i.e. migration risk is not included. The package structure is kept
+		flexible especially with respect to distributional assumptions in order to quantify the
+		sensitivity of risk figures with respect to several assumptions. Therefore the package
+		can be used to determine the credit risk of a given portfolio as well as to quantify
+		model sensitivities.
+License: GPL-2
+Imports: Rcpp (>= 0.11.2), methods, RcppProgress(>= 0.1)
+LinkingTo: Rcpp, RcppProgress
+Packaged: 2014-11-24 18:46:01 UTC; Kevin_Jakob
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2014-11-25 08:40:13

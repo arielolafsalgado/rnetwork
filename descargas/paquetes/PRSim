@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package PRSim</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Stochastic Simulation of Streamflow Time Series using Phase Randomization [R package PRSim version 1.2-2]" />
+<meta name="citation_author1" content="Manuela Brunner" />
+<meta name="citation_author2" content="Reinhard Furrer" />
+<meta name="citation_publication_date" content="2020-05-28" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=PRSim" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=PRSim" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="PRSim: Stochastic Simulation of Streamflow Time Series using Phase Randomization" />
+<meta name="og:description" content="Provides a simulation framework to simulate streamflow time series with similar main characteristics as observed data. These characteristics include the distribution of daily streamflow values and their temporal correlation as expressed by short- and long-range dependence. The approach is based on the randomization of the phases of the Fourier transform or the phases of the wavelet transform. The function prsim() is applicable to single site simulation and uses the Fourier transform. The function prsim.wave() extends the approach to multiple sites and is based on the complex wavelet transform. We further use the flexible four-parameter Kappa distribution, which allows for the extrapolation to yet unobserved low and high flows. Alternatively, the empirical or any other distribution can be used. A detailed description of the simulation approach for single sites and an application example can be found in &amp;lt;&lt;a href=&quot;https://www.hydrol-earth-syst-sci.net/23/3175/2019/&quot;&gt;https://www.hydrol-earth-syst-sci.net/23/3175/2019/&lt;/a&gt;&amp;gt;. A detailed description and evaluation of the wavelet-based multi-site approach can be found in &amp;lt;&lt;a href=&quot;https://www.hydrol-earth-syst-sci-discuss.net/hess-2019-658/&quot;&gt;https://www.hydrol-earth-syst-sci-discuss.net/hess-2019-658/&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=PRSim" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>PRSim: Stochastic Simulation of Streamflow Time Series using Phase
+Randomization</h2>
+<p>Provides a simulation framework to simulate streamflow time series with similar
+  main characteristics as observed data. These characteristics include the distribution of daily 
+  streamflow values and their temporal correlation as expressed by short- and long-range 
+  dependence. The approach is based on the randomization of the phases of the Fourier 
+  transform or the phases of the wavelet transform. The function prsim() is applicable 
+  to single site simulation and uses the Fourier transform. 
+  The function prsim.wave() extends the approach to multiple sites 
+  and is based on the complex wavelet transform. 
+  We further use the flexible four-parameter Kappa distribution, 
+  which allows for the extrapolation to yet unobserved low and high flows. 
+  Alternatively, the empirical or any other distribution can be used. 
+  A detailed description of the simulation approach for single sites 
+  and an application example can be found in &lt;<a href="https://www.hydrol-earth-syst-sci.net/23/3175/2019/">https://www.hydrol-earth-syst-sci.net/23/3175/2019/</a>&gt;.
+  A detailed description and evaluation of the wavelet-based multi-site approach
+  can be found in &lt;<a href="https://www.hydrol-earth-syst-sci-discuss.net/hess-2019-658/">https://www.hydrol-earth-syst-sci-discuss.net/hess-2019-658/</a>&gt;.</p>
+<table summary="Package PRSim summary">
+<tr>
+<td>Version:</td>
+<td>1.2-2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0), <a href="../homtest/index.html">homtest</a>, <a href="../goftest/index.html">goftest</a>, <a href="../wavScalogram/index.html">wavScalogram</a>, <a href="../splus2R/index.html">splus2R</a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>stats, methods</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../lattice/index.html">lattice</a>, <a href="../ismev/index.html">ismev</a>, <a href="../evd/index.html">evd</a>, <a href="../GB2/index.html">GB2</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-05-28</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Manuela Brunner <a href="https://orcid.org/0000-0001-8824-877X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Reinhard Furrer <a href="https://orcid.org/0000-0002-6319-2332"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Manuela Brunner  &#x3c;&#x6d;&#x61;&#x6e;&#x75;&#x65;&#x6c;&#x61;&#x2e;&#x69;&#x2e;&#x62;&#x72;&#x75;&#x6e;&#x6e;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://git.math.uzh.ch/reinhard.furrer/PRSim-devel">https://git.math.uzh.ch/reinhard.furrer/PRSim-devel</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://git.math.uzh.ch/reinhard.furrer/PRSim-devel">https://git.math.uzh.ch/reinhard.furrer/PRSim-devel</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_PRSim.html">PRSim results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package PRSim downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="PRSim.pdf"> PRSim.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/PRSim_1.2-2.tar.gz"> PRSim_1.2-2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/PRSim_1.2-2.zip">PRSim_1.2-2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/PRSim_1.2-2.zip">PRSim_1.2-2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/PRSim_1.2-2.zip">PRSim_1.2-2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/PRSim_1.2-2.tgz">PRSim_1.2-2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/PRSim_1.2-2.tgz">PRSim_1.2-2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/PRSim"> PRSim archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=PRSim"><samp>https://CRAN.R-project.org/package=PRSim</samp></a>
+to link to this page.</p>
+</body>
+</html>

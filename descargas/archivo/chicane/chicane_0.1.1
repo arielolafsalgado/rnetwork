@@ -1,0 +1,34 @@
+Package: chicane
+Title: Capture Hi-C Analysis Engine
+Type: Package
+Version: 0.1.1
+Date: 2019-09-29
+Authors@R: c(
+  person("Erle", "Holgersen", role = c("aut", "cre"), email = "erle.holgersen@gmail.com"),
+  person("Olivia", "Leavy", role = "aut"),
+  person("Olivia", "Fletcher", role = "aut"),
+  person("Frank", "Dudbridge", role = "aut"),
+  person("Syed", "Haider", role = "aut")
+  )
+Author: Erle Holgersen [aut, cre],
+  Olivia Leavy [aut],
+  Olivia Fletcher [aut],
+  Frank Dudbridge [aut],
+  Syed Haider [aut]
+Maintainer: Erle Holgersen <erle.holgersen@gmail.com>
+Description: Toolkit for processing and calling interactions in capture Hi-C data. Converts BAM files into counts of reads linking restriction fragments, and identifies pairs of fragments that interact more than expected by chance. Significant interactions are identified by comparing the observed read count to the expected background rate from a count regression model.
+Depends: R (>= 3.5.0), gamlss.tr, gamlss
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports: data.table, MASS, stats, foreach, doParallel, iterators
+SystemRequirements: bedtools
+Suggests: knitr, rmarkdown, testthat, GenomicInteractions, Gviz,
+        countreg
+Additional_repositories: http://R-Forge.R-project.org/
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-09-29 21:18:17 UTC; shaider
+Repository: CRAN
+Date/Publication: 2019-10-01 19:20:02 UTC

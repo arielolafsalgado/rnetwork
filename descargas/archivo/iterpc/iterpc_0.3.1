@@ -1,0 +1,32 @@
+Package: iterpc
+Type: Package
+Title: Efficient Iterators for Permutations and Combinations
+Version: 0.3.1
+Date: 2017-08-28
+Author: Randy Lai [aut, cre], Martin Broadhurst [aut]
+Maintainer: Randy Lai <randy.cs.lai@gmail.com>
+Authors@R: c(
+    person("Randy", "Lai", , "randy.cs.lai@gmail.com", role = c("aut", "cre")),
+    person("Martin", "Broadhurst", role = "aut")
+    )
+Description: A collection of iterators for generating permutations and combinations with or
+    without replacement; with distinct items or non-distinct items (multiset).
+    The generated sequences are in lexicographical order (dictionary order). The
+    algorithms to generate permutations and combinations are memory efficient. These
+    iterative algorithms enable users to process all sequences without putting all
+    results in the memory at the same time. The algorithms are written in C/C++ for
+    faster performances.
+URL: https://randy3k.github.io/iterpc
+License: GPL-2
+Depends: R (>= 3.0.0)
+Imports: iterators, gmp (>= 0.5-12), Rcpp (>= 0.11.0)
+Suggests: foreach, testthat, knitr, rmarkdown
+LinkingTo: Rcpp
+SystemRequirements: GNU make
+NeedsCompilation: yes
+ByteCompile: yes
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+Packaged: 2017-08-28 05:09:20 UTC; Randy
+Repository: CRAN
+Date/Publication: 2017-08-28 11:37:13 UTC

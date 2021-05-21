@@ -1,0 +1,28 @@
+Package: yamlet
+Type: Package
+Title: Versatile Curation of Table Metadata
+Version: 0.3.3
+Author: Tim Bergsma
+Maintainer: Tim Bergsma <bergsmat@gmail.com>
+Description: The 'yamlet' package implements a file-based
+ mechanism for documenting datasets. It reads and writes
+ YAML-formatted metadata and applies it as data 
+ item attributes. Data and metadata are stored independently
+ but can be coordinated by using similar file paths with
+ different extensions.  The 'yamlet' dialect is valid 'YAML',
+ but some conventions are chosen to improve readability. 
+ Defaults and conventions can be over-ridden by the user. 
+ See ?yamlet and ?decorate.data.frame.
+ See ?read_yamlet ?write_yamlet, and ?io_csv.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: yaml, csv (>= 0.5.4), encode, ggplot2, knitr, dplyr (>=
+        0.8.1), rlang
+RoxygenNote: 7.0.2
+VignetteBuilder: knitr
+Suggests: testthat (>= 2.1.0), magrittr, table1
+NeedsCompilation: no
+Packaged: 2020-01-21 23:11:19 UTC; tim.bergsma
+Repository: CRAN
+Date/Publication: 2020-01-22 06:50:03 UTC

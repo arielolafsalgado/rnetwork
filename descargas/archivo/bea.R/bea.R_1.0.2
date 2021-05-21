@@ -1,0 +1,35 @@
+Package: bea.R
+Title: Bureau of Economic Analysis API
+Version: 1.0.2
+Authors@R: c(person("Andrea", "Julca", role = c("aut", "cre"),
+		     email = c("Andrea.Julca@bea.gov")),
+				 person("Jeff", "Chen", role = "ctb"),
+				 person("Walt", "Kampas", role = "ctb"))
+Author: Andrea Julca [aut, cre], 
+		Jeff Chen [ctb],
+		Walt Kampas [ctb]
+Depends: R (>= 3.2.1), data.table
+Imports: httr, DT, shiny, jsonlite, googleVis, shinydashboard, ggplot2,
+        stringr, chron, gtable, scales, htmltools, httpuv, xtable,
+        stringi, magrittr, htmlwidgets, Rcpp, munsell, colorspace,
+        plyr, yaml
+Description: Provides an R interface for the Bureau of Economic Analysis (BEA) 
+		API (see <http://www.bea.gov/API/bea_web_service_api_user_guide.htm> for 
+		more information) that serves two core purposes - 
+    1. To Extract/Transform/Load data [beaGet()] from the BEA API as R-friendly 
+		formats in the user's work space [transformation done by default in beaGet() 
+		can be modified using optional parameters; see, too, bea2List(), bea2Tab()].
+		2. To enable the search of descriptive meta data [beaSearch()].
+		Other features of the library exist mainly as intermediate methods 
+		or are in early stages of development.
+		Important Note - You must have an API key to use this library.  
+		Register for a key at <http://www.bea.gov/API/signup/index.cfm> .
+URL: https://github.com/us-bea/beaR
+License: CC0
+LazyData: no
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-07-12 21:49:48 UTC; odacj1
+Maintainer: Andrea Julca <Andrea.Julca@bea.gov>
+Repository: CRAN
+Date/Publication: 2017-07-13 04:53:16 UTC

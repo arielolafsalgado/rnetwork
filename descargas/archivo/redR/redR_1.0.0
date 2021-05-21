@@ -1,0 +1,23 @@
+Package: redR
+Type: Package
+Title: REgularization by Denoising (RED)
+Version: 1.0.0
+Author: person("Adriano", "Passos", email="adriano.utfpr@gmail.com", role=c("aut","cre"))
+Maintainer: Adriano G. Passos <adriano.utfpr@gmail.com>
+Description: Regularization by Denoising uses a denoising engine to solve
+  many image reconstruction ill-posed inverse problems. This is a R
+  implementation of the algorithm developed by Romano et.al. (2016) <arXiv:1611.02862>. Currently,
+  only the gradient descent optimization framework is implemented. Also,
+  only the median filter is implemented as a denoiser engine. However,
+  (almost) any denoiser engine can be plugged in. There are currently available
+  3 reconstruction tasks: denoise, deblur and super-resolution. And again,
+  any other task can be easily plugged into the main function 'RED'.
+Depends: R (>= 3.4.0), imager
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-06-14 14:39:18 UTC; CITEC
+Repository: CRAN
+Date/Publication: 2017-06-14 21:52:45 UTC

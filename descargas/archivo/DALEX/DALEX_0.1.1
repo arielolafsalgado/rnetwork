@@ -1,0 +1,29 @@
+Package: DALEX
+Title: Descriptive mAchine Learning EXplanations
+Version: 0.1.1
+Authors@R: person("Przemyslaw", "Biecek", email = "przemyslaw.biecek@gmail.com", role = c("aut", "cre"))
+Description: Machine Learning (ML) models are widely used and have various applications in classification 
+  or regression. Models created with boosting, bagging, stacking or similar techniques are often
+  used due to their high performance, but such black-box models usually lack of interpretability.
+  'DALEX' package contains various explainers that help to understand the link between input variables and model output.
+  The single_variable() explainer extracts conditional response of a model as a function of a single selected variable.
+  It is a wrapper over packages 'pdp' and 'ALEPlot'.
+  The single_prediction() explainer attributes arts of model prediction to articular variables used in the model.
+  It is a wrapper over 'breakDown' package.
+  The variable_dropout() explainer assess variable importance based on consecutive permutations.
+  All these explainers can be plotted with generic plot() function and compared across different models.
+Depends: R (>= 3.0)
+License: GPL
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1.9000
+Imports: pdp, ggplot2, ALEPlot, breakDown
+Suggests: gbm, randomForest, xgboost
+URL: https://pbiecek.github.io/DALEX/
+BugReports: https://github.com/pbiecek/DALEX/issues
+NeedsCompilation: no
+Packaged: 2018-02-28 01:44:36 UTC; pbiecek
+Author: Przemyslaw Biecek [aut, cre]
+Maintainer: Przemyslaw Biecek <przemyslaw.biecek@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-02-28 16:36:14 UTC

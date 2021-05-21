@@ -1,0 +1,33 @@
+Package: sparseHessianFD
+Type: Package
+Title: Interface to ACM TOMS Algorithm 636, for computing sparse
+        Hessians.
+Version: 0.1.0
+Date: 2012-11-15
+Author: R interface code by Michael Braun Original Fortran code by
+        Thomas F. Coleman, Burton S. Garbow and Jorge J. More.
+Maintainer: Michael Braun <braunm@mit.edu>
+URL: braunm.scripts.mit.edu
+Description: Computes Hessian of a scalar-valued function, and returns
+        it in sparse Matrix format.  The user must supply the objective
+        function, the gradient, and the row and column indices of the
+        non-zero elements of the lower triangle of the Hessian (i.e.,
+        the sparsity structure must be known in advance).  The
+        algorithm exploits this sparsity, so Hessians can be computed
+        quickly even when the number of arguments to the objective
+        functions is large. This package is intended to be useful when
+        optimizing objective functions using optimizers than can
+        exploit this sparsity, such as the trustOptim package. The
+        underlying algorithm is ACM TOMS Algorithm 636, written by
+        Coleman, Garbow and More (ACM Transactions on Mathematical
+        Software, 11:4, Dec. 1985). The package also includes functions
+        to sample from, and compute the log density of, a multivariate
+        normal distribution when the precision matrix is sparse.
+License: file LICENSE
+Depends: Rcpp (>= 0.9.6), RcppEigen (>= 0.3.1), Matrix, methods
+LinkingTo: Rcpp, RcppEigen
+Packaged: 2012-11-26 17:32:23 UTC; braunm
+Repository: CRAN
+Date/Publication: 2012-11-26 19:09:55
+NeedsCompilation: yes
+License_restricts_use: yes

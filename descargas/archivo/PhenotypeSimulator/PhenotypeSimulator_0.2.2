@@ -1,0 +1,44 @@
+Package: PhenotypeSimulator
+Title: Flexible Phenotype Simulation from Different Genetic and Noise
+        Models
+Version: 0.2.2
+Authors@R: c(
+  person("Hannah", "Meyer", email = "hannah@ebi.ac.uk", role = c("aut", "cre")),
+  person("Konrad", "Rudolph", email = "konrad.rudolph@gmail.com", role = "ctb")
+  )
+URL: https://github.com/HannahVMeyer/PhenotypeSimulator
+BugReports: https://github.com/HannahVMeyer/PhenotypeSimulator/issues
+Description: Simulation is a critical part of method development and assessment
+    in quantitative genetics. 'PhenotypeSimulator' allows for the flexible 
+    simulation of phenotypes under different models, including genetic variant 
+    and  infinitesimal genetic effects (reflecting population structure) as well 
+    as non-genetic covariate effects, observational noise and additional 
+    correlation effects. The different phenotype components are combined into a 
+    final phenotype while controlling for the proportion of variance explained 
+    by each of the components. For each effect component, the number of 
+    variables, their distribution and the design of their effect across traits 
+    can be customised. For the simulation of the genetic effects, external 
+    genotype data from a number of standard software ('plink', 'hapgen2'/
+    'impute2', 'genome', 'bimbam', simple text files) can be imported. The final 
+    simulated phenotypes and its components can be automatically saved into .rds 
+    or .csv files. In addition, they can be saved in formats compatible with 
+    commonly used genetic association software ('gemma', 'bimbam', 'plink', 
+    'snptest'). 
+Depends: R (>= 3.3.0)
+biocViews:
+LinkingTo: Rcpp
+Imports: methods, optparse, R.utils, mvtnorm, snpStats, zoo, data.table
+        (>= 1.11.0), Rcpp (>= 0.12.11), ggplot2, reshape2, dplyr
+Suggests: testthat, knitr, rmarkdown
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2018-05-13 18:32:45 UTC; hannah
+Author: Hannah Meyer [aut, cre],
+  Konrad Rudolph [ctb]
+Maintainer: Hannah Meyer <hannah@ebi.ac.uk>
+Repository: CRAN
+Date/Publication: 2018-05-13 18:52:32 UTC

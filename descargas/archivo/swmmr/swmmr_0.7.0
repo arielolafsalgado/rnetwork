@@ -1,0 +1,26 @@
+Package: swmmr
+Type: Package
+Title: R Interface for US EPA's SWMM
+Description: Functions to connect the widely used Storm Water Management Model (SWMM)
+  of the United States Environmental Protection Agency (US EPA) 
+  <https://www.epa.gov/water-research/storm-water-management-model-swmm> to R with
+  currently two main goals: (1) Run a SWMM simulation from R and (2) provide fast 
+  access to simulation results, i.e. SWMM's binary '.out'-files. High performance is achieved
+  with help of Rcpp. Additionally, reading SWMM's '.inp'-files is supported to 
+  glance model structures. 
+Version: 0.7.0
+Date: 2017-07-13
+Authors@R: person("Dominik", "Leutnant", email = "leutnant@fh-muenster.de", role = c("aut", "cre"))
+URL: https://github.com/dleutnant/swmmr
+License: GPL-3
+BugReports: https://github.com/dleutnant/swmmr/issues
+ByteCompile: TRUE
+Imports: Rcpp, utils, xts
+LinkingTo: Rcpp
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2017-07-13 15:55:17 UTC; dominik
+Author: Dominik Leutnant [aut, cre]
+Maintainer: Dominik Leutnant <leutnant@fh-muenster.de>
+Repository: CRAN
+Date/Publication: 2017-07-13 16:11:52 UTC

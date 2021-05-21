@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package SunsVoc</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Constructing Suns-Voc from Outdoor Time-Series I-V Curves [R package SunsVoc version 0.1.1]" />
+<meta name="citation_author1" content="Menghong Wang" />
+<meta name="citation_author2" content="Tyler J. Burleyson" />
+<meta name="citation_author3" content="Jiqi Liu" />
+<meta name="citation_author4" content="Alan J. Curran" />
+<meta name="citation_author5" content="Abdulkerim Gok" />
+<meta name="citation_author6" content="Eric J. Schneller" />
+<meta name="citation_author7" content="Kristopher O. Davis" />
+<meta name="citation_author8" content="Jennifer L. Braid" />
+<meta name="citation_author9" content="Roger H. French" />
+<meta name="citation_publication_date" content="2020-10-04" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=SunsVoc" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=SunsVoc" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="SunsVoc: Constructing Suns-Voc from Outdoor Time-Series I-V Curves" />
+<meta name="og:description" content=" Suns-Voc (or Isc-Voc) curves can provide the current-voltage (I-V) characteristics of the diode of photovoltaic cells without the effect of series resistance. Here, Suns-Voc curves can be constructed with outdoor time-series I-V curves [1,2,3] of full-size photovoltaic (PV) modules instead of having to be measured in the lab. Time series of four different power loss modes can be calculated based on obtained Isc-Voc curves. This material is based upon work supported by the U.S. Department of Energy's Office of Energy Efficiency and Renewable Energy (EERE) under Solar Energy Technologies Office (SETO) Agreement Number DE-EE0008172. Jennifer L. Braid is supported by the U.S. Department of Energy (DOE) Office of Energy Efficiency and Renewable Energy administered by the Oak Ridge Institute for Science and Education (ORISE) for the DOE. ORISE is managed by Oak Ridge Associated Universities (ORAU) under DOE contract number DE-SC0014664. [1] Wang, M. et al, 2018. &amp;lt;&lt;a href=&quot;https://doi.org/10.1109%2FPVSC.2018.8547772&quot;&gt;doi:10.1109/PVSC.2018.8547772&lt;/a&gt;&amp;gt;. [2] Walters et al, 2018 &amp;lt;&lt;a href=&quot;https://doi.org/10.1109%2FPVSC.2018.8548187&quot;&gt;doi:10.1109/PVSC.2018.8548187&lt;/a&gt;&amp;gt;. [3] Guo, S. et al, 2016. &amp;lt;&lt;a href=&quot;https://doi.org/10.1117%2F12.2236939&quot;&gt;doi:10.1117/12.2236939&lt;/a&gt;&amp;gt;. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=SunsVoc" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>SunsVoc: Constructing Suns-Voc from Outdoor Time-Series I-V Curves</h2>
+<p>
+    Suns-Voc (or Isc-Voc) curves can provide the current-voltage (I-V) characteristics of the
+    diode of photovoltaic cells without the effect of series resistance.
+    Here, Suns-Voc curves can be constructed with outdoor time-series I-V
+    curves [1,2,3] of full-size photovoltaic (PV) modules instead of having to be measured in the lab.
+    Time series of four different power loss modes can be calculated based on obtained Isc-Voc curves.
+    This material is based upon work supported by the U.S. Department of
+    Energy's Office of Energy Efficiency and Renewable Energy (EERE) under
+    Solar Energy Technologies Office (SETO) Agreement Number DE-EE0008172. 
+    Jennifer L. Braid is supported by the U.S. Department of Energy (DOE) Office of 
+    Energy Efficiency and Renewable Energy administered by the Oak Ridge 
+    Institute for Science and Education (ORISE) for the DOE. 
+    ORISE is managed by Oak Ridge Associated Universities (ORAU) under DOE
+    contract number DE-SC0014664. 
+    [1] Wang, M. et al, 2018. 
+    &lt;<a href="https://doi.org/10.1109%2FPVSC.2018.8547772">doi:10.1109/PVSC.2018.8547772</a>&gt;. 
+    [2] Walters et al, 2018
+    &lt;<a href="https://doi.org/10.1109%2FPVSC.2018.8548187">doi:10.1109/PVSC.2018.8548187</a>&gt;. 
+    [3] Guo, S. et al, 2016. 
+    &lt;<a href="https://doi.org/10.1117%2F12.2236939">doi:10.1117/12.2236939</a>&gt;. </p>
+<table summary="Package SunsVoc summary">
+<tr>
+<td>Version:</td>
+<td>0.1.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../ddiv/index.html">ddiv</a>, <a href="../magrittr/index.html">magrittr</a>, <a href="../stringr/index.html">stringr</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../purrr/index.html">purrr</a>, <a href="../data.table/index.html">data.table</a>, <a href="../rlang/index.html">rlang</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a> (&ge; 2.1.0), <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../ggplot2/index.html">ggplot2</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-04</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Menghong Wang <a href="https://orcid.org/0000-0001-7349-699X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Tyler J. Burleyson
+    <a href="https://orcid.org/0000-0002-6356-5354"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut, cre],
+  Jiqi Liu <a href="https://orcid.org/0000-0003-2016-4160"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Alan J. Curran <a href="https://orcid.org/0000-0002-4505-8359"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Abdulkerim Gok <a href="https://orcid.org/0000-0003-3433-7106"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, ctb],
+  Eric J. Schneller <a href="https://orcid.org/0000-0002-2104-0066"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Kristopher O. Davis
+    <a href="https://orcid.org/0000-0002-5772-6254"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Jennifer L. Braid <a href="https://orcid.org/0000-0002-0677-7756"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Roger H. French <a href="https://orcid.org/0000-0002-6162-0532"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Tyler J. Burleyson  &#x3c;&#x74;&#x6a;&#x62;&#x31;&#x35;&#x32;&#x20;&#x61;&#x74;&#x20;&#x63;&#x61;&#x73;&#x65;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/BSD_3_clause">BSD_3_clause</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_SunsVoc.html">SunsVoc results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package SunsVoc downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="SunsVoc.pdf"> SunsVoc.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/pipeline.html">pipeline</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/SunsVoc_0.1.1.tar.gz"> SunsVoc_0.1.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/SunsVoc_0.1.1.zip">SunsVoc_0.1.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/SunsVoc_0.1.1.zip">SunsVoc_0.1.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/SunsVoc_0.1.1.zip">SunsVoc_0.1.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/SunsVoc_0.1.1.tgz">SunsVoc_0.1.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/SunsVoc_0.1.1.tgz">SunsVoc_0.1.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/SunsVoc"> SunsVoc archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=SunsVoc"><samp>https://CRAN.R-project.org/package=SunsVoc</samp></a>
+to link to this page.</p>
+</body>
+</html>

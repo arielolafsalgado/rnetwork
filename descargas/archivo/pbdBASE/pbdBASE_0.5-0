@@ -1,0 +1,42 @@
+Package: pbdBASE
+Type: Package
+Title: Programming with Big Data -- Base Wrappers for Distributed
+        Matrices
+Version: 0.5-0
+Description: An interface to and extensions for the 'PBLAS' and 'ScaLAPACK'
+    numerical libraries.  This enables R to utilize distributed linear algebra
+    for codes written in the 'SPMD' fashion.  This interface is deliberately
+    low-level and mimics the style of the native libraries it wraps.  For a much
+    higher level way of managing distributed matrices, see the 'pbdDMAT'
+    package.
+License: Mozilla Public License 2.0
+Depends: R (>= 3.0.0), methods
+Imports: utils, pbdMPI (>= 0.3-8), pbdSLAP(>= 0.2-4)
+SystemRequirements: OpenMPI (>= 1.5.4) on Solaris, Linux, Mac, and
+        FreeBSD. MS-MPI (Microsoft HPC Pack 2012) or MPICH2 (>=
+        1.4.1p1) on Windows.
+LazyLoad: yes
+LazyData: yes
+ByteCompile: yes
+NeedsCompilation: yes
+URL: http://r-pbd.org/
+BugReports: http://group.r-pbd.org/
+MailingList: Please send questions and comments regarding pbdR to
+        RBigData@gmail.com
+Authors@R: c(person("Drew", "Schmidt", role=c("aut", "cre"), email="wrathematics@gmail.com"),
+    person("Wei-Chen", "Chen", role="aut"),
+    person("Sebastien", "Lamy de la Chapelle", role="aut"),
+    person("George", "Ostrouchov", role="aut"),
+    person("Pragneshkumar", "Patel", role="aut"),
+    person("Ewan", "Higgs", role="ctb"))
+Maintainer: Drew Schmidt <wrathematics@gmail.com>
+RoxygenNote: 6.0.1
+Packaged: 2018-12-02 23:24:18 UTC; mschmid3
+Author: Drew Schmidt [aut, cre],
+  Wei-Chen Chen [aut],
+  Sebastien Lamy de la Chapelle [aut],
+  George Ostrouchov [aut],
+  Pragneshkumar Patel [aut],
+  Ewan Higgs [ctb]
+Repository: CRAN
+Date/Publication: 2018-12-08 15:00:03 UTC

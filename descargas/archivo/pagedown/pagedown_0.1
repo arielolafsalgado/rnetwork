@@ -1,0 +1,38 @@
+Package: pagedown
+Type: Package
+Title: Paginate the HTML Output of R Markdown with CSS for Print
+Version: 0.1
+Authors@R: c(
+  person("Yihui", "Xie", role = c("aut", "cre"), email = "xie@yihui.name", comment = c(ORCID = "0000-0003-0645-5666")),
+  person("Romain", "Lesur", role = c("aut", "cph"), comment = c(ORCID = "0000-0002-0721-5595")),
+  person(family = "RStudio, Inc.", role = "cph"),
+  person("Adam", "Hyde", role = "ctb", comment = "paged.js in resources/js/"),
+  person("Min-Zhong", "Lu", role = "ctb", comment = "resume.css in resources/css/"),
+  person("Zulko", role = "ctb", comment = "poster-relaxed.css in resources/css/"),
+  person()
+  )
+Description: Use the paged media properties in CSS and the JavaScript
+  library 'paged.js' to split the content of an HTML document into discrete
+  pages. Each page can have its page size, page numbers, margin boxes, and
+  running headers, etc. Applications of this package include books, letters,
+  reports, papers, business cards, resumes, and posters.
+Imports: rmarkdown (>= 1.11), bookdown (>= 0.8), htmltools, xfun
+Suggests: testit, xaringan
+License: MIT + file LICENSE
+URL: https://github.com/rstudio/pagedown
+BugReports: https://github.com/rstudio/pagedown/issues
+SystemRequirements: Pandoc (>= 2.2.3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-01-02 15:30:53 UTC; yihui
+Author: Yihui Xie [aut, cre] (<https://orcid.org/0000-0003-0645-5666>),
+  Romain Lesur [aut, cph] (<https://orcid.org/0000-0002-0721-5595>),
+  RStudio, Inc. [cph],
+  Adam Hyde [ctb] (paged.js in resources/js/),
+  Min-Zhong Lu [ctb] (resume.css in resources/css/),
+  Zulko [ctb] (poster-relaxed.css in resources/css/)
+Maintainer: Yihui Xie <xie@yihui.name>
+Repository: CRAN
+Date/Publication: 2019-01-02 16:20:13 UTC

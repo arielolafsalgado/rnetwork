@@ -1,0 +1,31 @@
+Package: orf
+Type: Package
+Title: Ordered Random Forests
+Version: 0.1.2
+Date: 2019-11-22
+Author: Gabriel Okasa [aut, cre], Michael Lechner [ctb]
+Maintainer: Gabriel Okasa <gabriel.okasa@unisg.ch>
+Description: An implementation of the Ordered Forest estimator as developed 
+    in Lechner & Okasa (2019) <arXiv:1907.02436>. The Ordered Forest flexibly
+    estimates the conditional probabilities of models with ordered categorical
+    outcomes (so-called ordered choice models). Additionally to common machine 
+    learning algorithms the 'orf' package provides functions for estimating
+    marginal effects as well as statistical inference thereof and thus provides
+    similar output as in standard econometric models for ordered choice. The
+    core forest algorithm relies on the fast C++ forest implementation from
+    the 'ranger' package (Wright & Ziegler, 2017) <arXiv:1508.04409>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 2.10)
+Imports: ggplot2, ranger, Rcpp, stats, utils, xtable
+RoxygenNote: 6.1.1
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+URL: https://github.com/okasag/orf
+BugReports: https://github.com/okasag/orf/issues
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2019-11-22 20:49:26 UTC; okasag
+Repository: CRAN
+Date/Publication: 2019-11-30 10:00:05 UTC

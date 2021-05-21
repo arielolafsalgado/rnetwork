@@ -1,0 +1,33 @@
+Package: loo
+Type: Package
+Title: Efficient Leave-One-Out Cross-Validation and WAIC for Bayesian
+        Models
+Version: 0.1.2
+Date: 2015-07-16
+Authors@R: c(person("Aki", "Vehtari", email = "Aki.Vehtari@aalto.fi", role = c("aut")),
+             person("Andrew", "Gelman", email = "gelman@stat.columbia.edu", role = c("aut")),
+             person("Jonah", "Gabry", email = "jsg2201@columbia.edu", role = c("cre", "aut")),
+             person("Juho", "Piironen", role = c("ctb")))
+Maintainer: Jonah Gabry <jsg2201@columbia.edu>
+URL: https://github.com/jgabry/loo
+BugReports: https://github.com/jgabry/loo/issues
+Description: We efficiently approximate leave-one-out cross-validation (LOO)
+  using Pareto smoothed importance sampling (PSIS), a new procedure for
+  regularizing importance weights. As a byproduct of our calculations, we also
+  obtain approximate standard errors for estimated predictive errors, and for
+  the comparison of predictive errors between two models. We also compute the
+  widely applicable information criterion (WAIC).
+License: GPL (>= 3)
+LazyData: TRUE
+Depends: R (>= 3.1.2)
+Imports: graphics, matrixStats (>= 0.14.1), parallel, stats
+Suggests: knitr, testthat
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2015-07-16 16:14:33 UTC; jgabry
+Author: Aki Vehtari [aut],
+  Andrew Gelman [aut],
+  Jonah Gabry [cre, aut],
+  Juho Piironen [ctb]
+Repository: CRAN
+Date/Publication: 2015-07-17 00:18:06

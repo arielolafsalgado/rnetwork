@@ -1,0 +1,28 @@
+Package: EstimationTools
+Type: Package
+Title: Maximum Likelihood Estimation for Probability Functions from
+        Data Sets
+Version: 1.1.0
+Authors@R: person("Jaime", "Mosquera", email = "jmosquerag@unal.edu.co", role = c("aut", "cre"), 
+      comment = c(ORCID = "0000-0002-1684-4756"))
+Imports: Rdpack, knitr, rmarkdown
+RdMacros: Rdpack
+Suggests: gamlss.dist
+Depends: R (>= 3.3.0), stats, DEoptim, boot, numDeriv, BBmisc
+Description: A routine for parameter estimation for any probability density or
+    mass function implemented in R via maximum likelihood (ML) given a data set. This
+    routine is a wrapper function specifically developed for ML estimation. There are
+    included optimization procedures such as 'nlminb' and 'optim' from base package,
+    and 'DEoptim' Mullen (2011) <doi: 10.18637/jss.v040.i06>. Standard errors are
+    estimated with 'numDeriv' Gilbert (2011) <http://CRAN.R-project.org/package=numDeriv>.
+License: GPL-3
+URL: https://github.com/Jaimemosg/EstimationTools
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-06-05 21:14:40 UTC; USUARIO
+Author: Jaime Mosquera [aut, cre] (<https://orcid.org/0000-0002-1684-4756>)
+Maintainer: Jaime Mosquera <jmosquerag@unal.edu.co>
+Repository: CRAN
+Date/Publication: 2019-06-06 14:52:16 UTC

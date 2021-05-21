@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package sentometrics</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="An Integrated Framework for Textual Sentiment Time Series Aggregation and Prediction [R package sentometrics version 0.8.2]" />
+<meta name="citation_author1" content="Samuel Borms" />
+<meta name="citation_author2" content="David Ardia" />
+<meta name="citation_author3" content="Keven Bluteau" />
+<meta name="citation_author4" content="Kris Boudt" />
+<meta name="citation_publication_date" content="2020-06-25" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=sentometrics" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=sentometrics" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="sentometrics: An Integrated Framework for Textual Sentiment Time Series Aggregation and Prediction" />
+<meta name="og:description" content="Optimized prediction based on textual sentiment, accounting for the intrinsic challenge that sentiment can be computed and pooled across texts and time in various ways. See Ardia et al. (2020) &amp;lt;&lt;a href=&quot;https://doi.org/10.2139%2Fssrn.3067734&quot;&gt;doi:10.2139/ssrn.3067734&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=sentometrics" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>sentometrics: An Integrated Framework for Textual Sentiment Time Series
+Aggregation and Prediction</h2>
+<p>Optimized prediction based on textual sentiment, accounting for the intrinsic challenge that sentiment can be computed and pooled across texts and time in various ways. See Ardia et al. (2020) &lt;<a href="https://doi.org/10.2139%2Fssrn.3067734">doi:10.2139/ssrn.3067734</a>&gt;.</p>
+<table summary="Package sentometrics summary">
+<tr>
+<td>Version:</td>
+<td>0.8.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../caret/index.html">caret</a>, compiler, <a href="../data.table/index.html">data.table</a>, <a href="../foreach/index.html">foreach</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../glmnet/index.html">glmnet</a>, <a href="../ISOweek/index.html">ISOweek</a>, <a href="../quanteda/index.html">quanteda</a>, <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.13), <a href="../RcppRoll/index.html">RcppRoll</a>, <a href="../RcppParallel/index.html">RcppParallel</a>, stats, <a href="../stringi/index.html">stringi</a>, utils</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a>, <a href="../RcppParallel/index.html">RcppParallel</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../covr/index.html">covr</a>, <a href="../doParallel/index.html">doParallel</a>, <a href="../e1071/index.html">e1071</a>, <a href="../NLP/index.html">NLP</a>, parallel, <a href="../randomForest/index.html">randomForest</a>, <a href="../testthat/index.html">testthat</a>, <a href="../tm/index.html">tm</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-25</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Samuel Borms <a href="https://orcid.org/0000-0001-9533-1870"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  David Ardia <a href="https://orcid.org/0000-0003-2823-782X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Keven Bluteau <a href="https://orcid.org/0000-0003-2990-4807"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Kris Boudt <a href="https://orcid.org/0000-0002-1000-5142"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Jeroen Van Pelt [ctb],
+  Andres Algaba [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Samuel Borms  &#x3c;&#x73;&#x61;&#x6d;&#x75;&#x65;&#x6c;&#x2e;&#x62;&#x6f;&#x72;&#x6d;&#x73;&#x20;&#x61;&#x74;&#x20;&#x75;&#x6e;&#x69;&#x6e;&#x65;&#x2e;&#x63;&#x68;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/sborms/sentometrics/issues">https://github.com/sborms/sentometrics/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://sborms.github.io/sentometrics">https://sborms.github.io/sentometrics</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>GNU make</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">sentometrics citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_sentometrics.html">sentometrics results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package sentometrics downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="sentometrics.pdf"> sentometrics.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/sentometrics_0.8.2.tar.gz"> sentometrics_0.8.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/sentometrics_0.8.2.zip">sentometrics_0.8.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/sentometrics_0.8.2.zip">sentometrics_0.8.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/sentometrics_0.8.2.zip">sentometrics_0.8.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/sentometrics_0.8.2.tgz">sentometrics_0.8.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/sentometrics_0.8.2.tgz">sentometrics_0.8.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/sentometrics"> sentometrics archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=sentometrics"><samp>https://CRAN.R-project.org/package=sentometrics</samp></a>
+to link to this page.</p>
+</body>
+</html>

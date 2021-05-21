@@ -1,0 +1,20 @@
+Package: ePCR
+Type: Package
+Title: Ensemble Penalized Cox Regression for Survival Prediction
+Version: 0.9.9-9
+Date: 2019-04-11
+Author: Teemu Daniel Laajala <teelaa@utu.fi> [aut, cre], Mika Murtoj<e4>rvi <mianmu2@hotmail.com> [ctb]
+Maintainer: Teemu Daniel Laajala <teelaa@utu.fi>
+Depends: R (>= 3.0.0)
+Imports: grDevices, graphics, stats, glmnet, hamlet, survival, timeROC,
+        pracma, Bolstad2, impute,
+Suggests: MASS, Matrix, ROCR, c060, methods, utils, R.rsp
+Description: The top-performing ensemble-based Penalized Cox Regression (ePCR) framework developed during the DREAM 9.5 mCRPC Prostate Cancer Challenge <https://www.synapse.org/ProstateCancerChallenge> presented in Guinney J, Wang T, Laajala TD, et al. (2017) <doi:10.1016/S1470-2045(16)30560-5> is provided here-in, together with the corresponding follow-up work. While initially aimed at modeling the most advanced stage of prostate cancer, metastatic Castration-Resistant Prostate Cancer (mCRPC), the modeling framework has subsequently been extended to cover also the non-metastatic form of advanced prostate cancer (CRPC). Readily fitted ensemble-based model S4-objects are provided, and a simulated example dataset based on a real-life cohort is provided from the Turku University Hospital, to illustrate the use of the package. Functionality of the ePCR methodology relies on constructing ensembles of strata in patient cohorts and averaging over them, with each ensemble member consisting of a highly optimized penalized/regularized Cox regression model. Various cross-validation and other modeling schema are provided for constructing novel model objects.
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 6.1.1
+VignetteBuilder: R.rsp
+NeedsCompilation: no
+Packaged: 2019-04-11 10:49:28 UTC; teemu
+Repository: CRAN
+Date/Publication: 2019-04-11 11:25:20 UTC

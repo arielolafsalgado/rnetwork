@@ -1,0 +1,58 @@
+Package: copula
+Version: 0.999-18
+VersionNote: Last CRAN: 0.999-17 on 2017-06-17
+Date: 2017-08-31
+Title: Multivariate Dependence with Copulas
+Author: Marius Hofert <marius.hofert@uwaterloo.ca>,
+ Ivan Kojadinovic <ivan.kojadinovic@univ-pau.fr>,
+ Martin Maechler <maechler@stat.math.ethz.ch>, and
+ Jun Yan <jun.yan@uconn.edu>
+Maintainer: Martin Maechler <maechler@stat.math.ethz.ch>
+Depends: R (>= 3.1.0)
+Imports: stats, graphics, methods, stats4, Matrix, lattice, colorspace,
+        gsl, ADGofTest, stabledist (>= 0.6-4), mvtnorm, pcaPP, pspline,
+        numDeriv
+Suggests: MASS, KernSmooth, sfsmisc, scatterplot3d, Rmpfr, bbmle,
+        knitr, parallel, gridExtra, lcopula, mvnormtest, partitions,
+        polynom, qrng, randtoolbox, rugarch, Runuran, tseries, VGAM,
+        VineCopula, zoo
+SuggestsNote: the last lines' packages {parallel, ..., zoo} are only
+        used in vignettes, demos and few tests.
+Enhances: nor1mix
+Description: Classes (S4) of commonly used elliptical, Archimedean,
+ extreme-value and other copula families, as well as their rotations,
+ mixtures and asymmetrizations. Nested Archimedean copulas, related
+ tools and special functions. Methods for density, distribution, random
+ number generation, bivariate dependence measures, Rosenblatt transform,
+ Kendall distribution function, perspective and contour plots. Fitting of
+ copula models with potentially partly fixed parameters, including
+ standard errors. Serial independence tests, copula specification tests
+ (independence, exchangeability, radial symmetry, extreme-value
+ dependence, goodness-of-fit) and model selection based on
+ cross-validation. Empirical copula, smoothed versions, and
+ non-parametric estimators of the Pickands dependence function.
+License: GPL (>= 3) | file LICENCE
+ByteCompile: yes
+VignetteBuilder: knitr
+Collate: AllClass.R Classes.R AllGeneric.R Auxiliaries.R aux-acopula.R
+        asymCopula.R mixCopula.R rotCopula.R Copula.R special-func.R
+        amhCopula.R claytonCopula.R frankCopula.R cop_objects.R
+        nacopula.R dC-dc.R amhExpr.R An.R archmCopula.R cCopula.R
+        claytonExpr.R ellipCopula.R empcop.R empPsi.R acR.R
+        estimation.R evCopula.R evTests.R exchTests.R fgmCopula.R
+        fitCopula.R fitLambda.R fitMvdc.R fixedPar.R frankExpr.R
+        galambosCopula.R galambosExpr-math.R galambosExpr.R
+        ggraph-tools.R pairsRosenblatt.R prob.R gofTrafos.R
+        gofEVTests.R gofCopula.R graphics.R gumbelCopula.R gumbelExpr.R
+        huslerReissCopula.R huslerReissExpr.R indepCopula.R
+        indepTests.R joeCopula.R K.R logseries.R mvdc.R margCopula.R
+        matrix_tools.R normalCopula.R opower.R plackettCopula.R
+        plackettExpr.R rstable1.R safeUroot.R schlatherCopula.R
+        stable.R timing.R tCopula.R tawnCopula.R tawnExpr.R tevCopula.R
+        varianceReduction.R wrapper.R xvCopula.R zzz.R
+Encoding: UTF-8
+URL: http://copula.r-forge.r-project.org/
+NeedsCompilation: yes
+Packaged: 2017-08-31 15:24:16 UTC; maechler
+Repository: CRAN
+Date/Publication: 2017-09-01 11:33:14 UTC

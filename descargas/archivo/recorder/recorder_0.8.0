@@ -1,0 +1,29 @@
+Package: recorder
+Title: Toolkit to Validate New Data for a Predictive Model
+Version: 0.8.0
+Authors@R: 
+    person(given = "Lars",
+           family = "Kjeldgaard",
+           role = c("aut", "cre"),
+           email = "lars_kjeldgaard@hotmail.com")
+Description: A lightweight toolkit to validate new observations when computing
+    their predictions with a predictive model. The validation process 
+    consists of two steps: (1) record relevant statistics and meta data of the
+    variables in the original training data for the predictive model and
+    (2) use these data to run a set of basic validation tests on the new set of 
+    observations.
+URL: https://github.com/smaakage85/recorder
+Depends: R (>= 3.4.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Imports: data.table, crayon
+Suggests: testthat, knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-05-14 14:40:26 UTC; w19799
+Author: Lars Kjeldgaard [aut, cre]
+Maintainer: Lars Kjeldgaard <lars_kjeldgaard@hotmail.com>
+Repository: CRAN
+Date/Publication: 2019-05-20 08:10:03 UTC

@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package PVplr</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Performance Loss Rate Analysis Pipeline [R package PVplr version 0.1.0]" />
+<meta name="citation_author1" content="Alan Curran" />
+<meta name="citation_author2" content="Tyler Burleyson" />
+<meta name="citation_author3" content="Sascha Lindig" />
+<meta name="citation_author4" content="David Moser" />
+<meta name="citation_author5" content="Roger French" />
+<meta name="citation_publication_date" content="2020-10-07" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=PVplr" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=PVplr" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="PVplr: Performance Loss Rate Analysis Pipeline" />
+<meta name="og:description" content="The pipeline contained in this package provides tools used in the Solar Durability and Lifetime Extension Center (SDLE) for the analysis of Performance Loss Rates (PLR) in real world photovoltaic systems. Functions included allow for data cleaning, feature correction, power predictive modeling, PLR determination, and uncertainty bootstrapping through various methods &amp;lt;&lt;a href=&quot;https://doi.org/10.1109%2FPVSC40753.2019.8980928&quot;&gt;doi:10.1109/PVSC40753.2019.8980928&lt;/a&gt;&amp;gt;. The vignette &quot;Pipeline Walkthrough&quot; gives an explicit run through of typical package usage. This material is based upon work supported by the U.S Department of Energy's Office of Energy Efficiency and Renewable Energy (EERE) under Solar Energy Technologies Office (SETO) Agreement Number DE-EE-0008172. This work made use of the High Performance Computing Resource in the Core Facility for Advanced Research Computing at Case Western Reserve University. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=PVplr" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>PVplr: Performance Loss Rate Analysis Pipeline</h2>
+<p>The pipeline contained in this package provides tools used in the
+    Solar Durability and Lifetime Extension Center (SDLE) for the analysis of
+    Performance Loss Rates (PLR) in real world photovoltaic systems. Functions
+    included allow for data cleaning, feature correction, power predictive modeling, 
+    PLR determination, and uncertainty bootstrapping through various methods 
+    &lt;<a href="https://doi.org/10.1109%2FPVSC40753.2019.8980928">doi:10.1109/PVSC40753.2019.8980928</a>&gt;.
+    The vignette "Pipeline Walkthrough" gives
+    an explicit run through of typical package usage. 
+    This material is based upon work supported by the U.S Department
+    of Energy's Office of Energy Efficiency and Renewable Energy (EERE) under
+    Solar Energy Technologies Office (SETO) Agreement Number DE-EE-0008172. 
+    This work made use of the High Performance Computing Resource in the 
+    Core Facility for Advanced Research Computing at
+    Case Western Reserve University. </p>
+<table summary="Package PVplr summary">
+<tr>
+<td>Version:</td>
+<td>0.1.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../dplyr/index.html">dplyr</a> (&ge; 0.7.8), <a href="../magrittr/index.html">magrittr</a> (&ge; 1.5), <a href="../broom/index.html">broom</a> (&ge; 0.5.1), <a href="../ggplot2/index.html">ggplot2</a> (&ge; 3.1.0), <a href="../stlplus/index.html">stlplus</a> (&ge; 0.5.1), <a href="../cluster/index.html">cluster</a> (&ge; 2.0.7-1), <a href="../purrr/index.html">purrr</a> (&ge;
+0.3.3), <a href="../tidyr/index.html">tidyr</a> (&ge; 1.1.1), <a href="../minpack.lm/index.html">minpack.lm</a> (&ge; 1.2-1), <a href="../rlang/index.html">rlang</a> (&ge;
+0.3.1), <a href="../segmented/index.html">segmented</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-07</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Alan Curran <a href="https://orcid.org/0000-0002-4505-8359"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    cre],
+  Tyler Burleyson <a href="https://orcid.org/0000-0002-6356-5354"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Sascha Lindig <a href="https://orcid.org/0000-0001-5421-8265"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  David Moser <a href="https://orcid.org/0000-0002-4895-8862"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Roger French <a href="https://orcid.org/0000-0002-6162-0532"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Solar Durability and Lifetime Extension research center [cph, fnd]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Alan Curran  &#x3c;&#x61;&#x6c;&#x61;&#x6e;&#x2e;&#x63;&#x75;&#x72;&#x72;&#x61;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x63;&#x61;&#x73;&#x65;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/BSD_3_clause">BSD_3_clause</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_PVplr.html">PVplr results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package PVplr downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="PVplr.pdf"> PVplr.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/feature_correction.html">feature_correction</a><br/>
+<a href="vignettes/model_comparison.html">model_comparison</a><br/>
+<a href="vignettes/nonlinear_plr.html">nonlinear_plr</a><br/>
+<a href="vignettes/pipeline_walkthrough.html">pipeline_walkthrough</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/PVplr_0.1.0.tar.gz"> PVplr_0.1.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/PVplr_0.1.0.zip">PVplr_0.1.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/PVplr_0.1.0.zip">PVplr_0.1.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/PVplr_0.1.0.zip">PVplr_0.1.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/PVplr_0.1.0.tgz">PVplr_0.1.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/PVplr_0.1.0.tgz">PVplr_0.1.0.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=PVplr"><samp>https://CRAN.R-project.org/package=PVplr</samp></a>
+to link to this page.</p>
+</body>
+</html>

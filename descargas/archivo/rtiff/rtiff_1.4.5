@@ -1,0 +1,26 @@
+Package: rtiff
+Type: Package
+Title: Read and Write TIFF Files
+Version: 1.4.5
+Date: 2015-07-15
+Depends: pixmap
+Author: Eric Kort <eric.kort@vai.org>
+Maintainer: Eric Kort <eric.kort@vai.org>
+SystemRequirements: libtiff
+Description: Reads and writes TIFF format images and
+        returns them as a pixmap object. Because the resulting object
+        can be very large for even modestly sized TIFF images, images
+        can be reduced as they are read for improved performance.  This
+        package is a wrapper around libtiff (www.libtiff.org), on which
+        it depends (i.e. the libtiff shared library must be on your
+        PATH for the binary to work, and tiffio.h must be on your
+        system to build the package from source). By using libtiff's
+        highlevel TIFFReadRGBAImage function, this package inherently
+        supports a wide range of image formats and compression schemes.
+        This package also provides an implementation of the Ridler
+        Autothresholding algorithm for easy generation of binary masks.
+License: GPL-3
+Packaged: 2015-07-16 04:40:16 UTC; root
+Repository: CRAN
+Date/Publication: 2015-07-16 14:38:53
+NeedsCompilation: yes

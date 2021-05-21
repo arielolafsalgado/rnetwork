@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package KoulMde</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=KoulMde" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="KoulMde: Koul's Minimum Distance Estimation in Regression and Image Segmentation Problems" />
+<meta name="og:description" content="Many methods are developed to deal with two major statistical problems: image segmentation and nonparametric estimation in various regression models. Image segmentation is nowadays gaining a lot of attention from various scientific subfields. Especially, image segmentation has been popular in medical research such as magnetic resonance imaging (MRI) analysis. When a patient suffers from some brain diseases such as dementia and Parkinson's disease, those diseases can be easily diagnosed in brain MRI: the area affected by those diseases is brightly expressed in MRI, which is called a white lesion. For the purpose of medical research, locating and segment those white lesions in MRI is a critical issue; it can be done manually. However, manual segmentation is very expensive in that it is error-prone and demands a huge amount of time. Therefore, supervised machine learning has emerged as an alternative solution. Despite its powerful performance in a classification problem such as hand-written digits, supervised machine learning has not shown the same satisfactory result in MRI analysis. Setting aside all issues of the supervised machine learning, it exposed a critical problem when employed for MRI analysis: it requires time-consuming data labeling. Thus, there is a strong demand for an unsupervised approach, and this package - based on Hira L. Koul (1986) &amp;lt;&lt;a href=&quot;https://doi.org/10.1214%2Faos%2F1176350059&quot;&gt;doi:10.1214/aos/1176350059&lt;/a&gt;&amp;gt; - proposes an efficient method for simple image segmentation - here, &quot;simple&quot; means that an image is black-and-white - which can easily be applied to MRI analysis. This package includes a function GetSegImage(): when a black-and-white image is given as an input, GetSegImage() separates an area of white pixels - which corresponds to a white lesion in MRI - from the given image. For the second problem, consider linear regression model and autoregressive model of order q where errors in the linear regression model and innovations in the autoregression model are independent and symmetrically distributed. Hira L. Koul (1986) &amp;lt;&lt;a href=&quot;https://doi.org/10.1214%2Faos%2F1176350059&quot;&gt;doi:10.1214/aos/1176350059&lt;/a&gt;&amp;gt; proposed a nonparametric minimum distance estimation method by minimizing L2-type distance between certain weighted residual empirical processes. He also proposed a simpler version of the loss function by using symmetry of the integrating measure in the distance. Kim (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F00949655.2017.1392527&quot;&gt;doi:10.1080/00949655.2017.1392527&lt;/a&gt;&amp;gt; proposed a fast computational method which enables practitioners to compute the minimum distance estimator of the vector of general multiple regression parameters for several integrating measures. This package contains three functions: KoulLrMde(), KoulArMde(), and Koul2StageMde(). The former two provide minimum distance estimators for linear regression model and autoregression model, respectively, where both are based on Koul's method. These two functions take much less time for the computation than those based on parametric minimum distance estimation methods. Koul2StageMde() provides estimators for regression and autoregressive coefficients of linear regression model with autoregressive errors through minimum distant method of two stages. The new version is written in Rcpp and dramatically reduces computational time. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=KoulMde" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>KoulMde: Koul's Minimum Distance Estimation in Regression and Image
+Segmentation Problems</h2>
+<p>Many methods are developed to deal with two major statistical problems: image segmentation 
+    and nonparametric estimation in various regression models. Image segmentation is nowadays 
+    gaining a lot of attention from various scientific subfields. Especially, image segmentation 
+    has been popular in medical research such as magnetic resonance imaging (MRI) analysis. When 
+    a patient suffers from some brain diseases such as dementia and Parkinson's disease, 
+    those diseases can be easily diagnosed in brain MRI: the area affected by those diseases is 
+    brightly expressed in MRI, which is called a white lesion. For the purpose of medical research,
+    locating and segment those white lesions in MRI is a critical issue; it can be done
+    manually. However, manual segmentation is very expensive in that it is error-prone and demands a huge
+    amount of time. Therefore, supervised machine learning has emerged as an alternative solution. 
+    Despite its powerful performance in a classification problem such as hand-written digits, supervised 
+    machine learning has not shown the same satisfactory result in MRI analysis. Setting aside all issues
+    of the supervised machine learning, it exposed a critical problem when employed for MRI analysis: it 
+    requires time-consuming data labeling. Thus, there is a strong demand for an unsupervised approach, 
+    and this package - based on Hira L. Koul (1986) &lt;<a href="https://doi.org/10.1214%2Faos%2F1176350059">doi:10.1214/aos/1176350059</a>&gt; - proposes an efficient
+    method for simple image segmentation - here, "simple" means that an image is black-and-white - which 
+    can easily be applied to MRI analysis. This package includes a function GetSegImage(): when a black-and-white
+    image is given as an input, GetSegImage() separates an area of white pixels - which corresponds to 
+    a white lesion in MRI - from the given image. For the second problem, consider linear regression model and autoregressive model of
+    order q where errors in the linear regression model and innovations in the
+    autoregression model are independent and symmetrically distributed. Hira L. Koul
+    (1986) &lt;<a href="https://doi.org/10.1214%2Faos%2F1176350059">doi:10.1214/aos/1176350059</a>&gt; proposed a nonparametric minimum distance
+    estimation method by minimizing L2-type distance between certain weighted
+    residual empirical processes. He also proposed a simpler version of the loss
+    function by using symmetry of the integrating measure in the distance. Kim
+    (2018) &lt;<a href="https://doi.org/10.1080%2F00949655.2017.1392527">doi:10.1080/00949655.2017.1392527</a>&gt; proposed a fast computational method
+    which enables practitioners to compute the minimum distance estimator of the vector
+    of general multiple regression parameters for several integrating measures. This
+    package contains three functions: KoulLrMde(), KoulArMde(), and Koul2StageMde().
+    The former two provide minimum distance estimators for linear regression model
+    and autoregression model, respectively, where both are based on Koul's method.
+    These two functions take much less time for the computation than those based
+    on parametric minimum distance estimation methods. Koul2StageMde() provides
+    estimators for regression and autoregressive coefficients of linear regression
+    model with autoregressive errors through minimum distant method of two stages.
+    The new version is written in Rcpp and dramatically reduces computational time. </p>
+<table summary="Package KoulMde summary">
+<tr>
+<td>Version:</td>
+<td>3.2.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.2.2)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.7), <a href="../expm/index.html">expm</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-10</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Jiwoong Kim &lt;jwboys26 at gmail.com&gt;</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Jiwoong Kim  &#x3c;&#x6a;&#x77;&#x62;&#x6f;&#x79;&#x73;&#x32;&#x36;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_KoulMde.html">KoulMde results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package KoulMde downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="KoulMde.pdf"> KoulMde.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/KoulMde_3.2.1.tar.gz"> KoulMde_3.2.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/KoulMde_3.2.1.zip">KoulMde_3.2.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/KoulMde_3.2.1.zip">KoulMde_3.2.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/KoulMde_3.2.1.zip">KoulMde_3.2.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/KoulMde_3.2.1.tgz">KoulMde_3.2.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/KoulMde_3.2.1.tgz">KoulMde_3.2.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/KoulMde"> KoulMde archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=KoulMde"><samp>https://CRAN.R-project.org/package=KoulMde</samp></a>
+to link to this page.</p>
+</body>
+</html>

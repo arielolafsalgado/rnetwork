@@ -1,0 +1,36 @@
+Package: MSGARCH
+Type: Package
+Title: Markov-Switching GARCH Models
+Version: 2.1
+Date: 2018-02-26
+Authors@R: c(person("David", "Ardia", role = c("aut"),
+             email = "david.ardia.ch@gmail.com"),
+             person("Keven", "Bluteau", role = c("aut", "cre"),
+             email = "Keven.Bluteau@unine.ch"),
+             person("Kris", "Boudt", role = c("ctb"),
+             email = "kris.boudt@vub.ac.be"),
+             person("Leopoldo", "Catania", role = c("aut"),
+             email = "leopoldo.catania@econ.au.dk"),
+             person("Brian", "Peterson", role = c("ctb"),
+             email = "brian@braverock.com"),
+             person("Denis-Alexandre", "Trottier", role = c("aut"),
+             email = "denis-alexandre.trottier.1@ulaval.ca"))
+Author: David Ardia [aut],
+  Keven Bluteau [aut, cre],
+  Kris Boudt [ctb],
+  Leopoldo Catania [aut],
+  Brian Peterson [ctb],
+  Denis-Alexandre Trottier [aut]
+Maintainer: Keven Bluteau <Keven.Bluteau@unine.ch>
+Description: Fit (by Maximum Likelihood or MCMC/Bayesian), simulate, and forecast various Markov-Switching GARCH models as described in Ardia et al. (2017) <https://ssrn.com/abstract=2845809>.
+License: GPL (>= 2)
+BugReports: https://github.com/keblu/MSGARCH/issues
+URL: https://github.com/keblu/MSGARCH
+Imports: Rcpp, coda, methods, zoo, expm, fanplot, MASS, numDeriv
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: mcmc, testthat
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2018-02-26 18:18:25 UTC; Keven
+Repository: CRAN
+Date/Publication: 2018-02-26 22:08:17 UTC

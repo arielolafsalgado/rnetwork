@@ -1,0 +1,59 @@
+Package: gravity
+Type: Package
+Title: Estimation Methods for Gravity Models
+Version: 0.9.8
+Authors@R: c(
+  person("Anna-Lena", "Woelwer",
+    role = c("aut", "cph"),
+    email = "woelwer@uni-trier.de"),
+  person("Jan Pablo", "Burgard",
+    role = c("aut", "cph"),
+    email = "burgardj@uni-trier.de"),
+  person("Joshua", "Kunst", 
+    role = c("aut", "cph"),
+    email = "jbkunst@gmail.com"),
+  person("Mauricio", "Vargas", 
+    role = c("aut","cre","cph"), 
+    email = "mvargas@dcc.uchile.cl", 
+    comment = c(ORCID = "0000-0003-1017-7574")),
+  person("Romain", "Francois", 
+    role = "ctb", 
+    email = "romain@purrple.cat",
+    comment = "adapted parts of the code to use dplyr 0.8.0"),
+  person("Lionel", "Henry", 
+    role = c("ctb"), 
+    email = "lionel@rstudio.com",
+    comment = "simplified parts of the code"),
+  person("Hrisyana", "Doytchinova", 
+    role = c("rev"), 
+    email = "hrisyana.doytchinova@un.org",
+    comment = "sent us different suggestions and bug reports")
+  )
+Description: A wrapper of different standard estimation methods for gravity models. 
+  This package provides estimation methods for log-log models and multiplicative models.
+URL: http://pachamaltese.github.io/gravity
+Imports: lmtest, sandwich, glm2, MASS, stats, censReg, survival,
+        multiwayvcov, tibble, magrittr, dplyr, tidyr, purrr, rlang,
+        Rdpack, utils
+RdMacros: Rdpack
+Depends: R(>= 3.4.0)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Suggests: knitr, rmarkdown, testthat, broom
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-05-08 21:14:15 UTC; pacha
+Author: Anna-Lena Woelwer [aut, cph],
+  Jan Pablo Burgard [aut, cph],
+  Joshua Kunst [aut, cph],
+  Mauricio Vargas [aut, cre, cph]
+    (<https://orcid.org/0000-0003-1017-7574>),
+  Romain Francois [ctb] (adapted parts of the code to use dplyr 0.8.0),
+  Lionel Henry [ctb] (simplified parts of the code),
+  Hrisyana Doytchinova [rev] (sent us different suggestions and bug
+    reports)
+Maintainer: Mauricio Vargas <mvargas@dcc.uchile.cl>
+Repository: CRAN
+Date/Publication: 2019-05-08 21:40:04 UTC

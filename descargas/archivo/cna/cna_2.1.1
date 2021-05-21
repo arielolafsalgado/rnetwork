@@ -1,0 +1,29 @@
+Package: cna
+Type: Package
+Title: Causal Modeling with Coincidence Analysis
+Version: 2.1.1
+Date: 2018-06-13
+Authors@R: c(person("Mathias", "Ambuehl", role = c("aut", "cre", "cph"), 
+                    email = "mathias.ambuehl@consultag.ch"),
+             person("Michael", "Baumgartner", role = c("aut", "cph"),
+                     email = "michael.baumgartner@unige.ch"),
+             person("Ruedi", "Epple", role = "ctb"),
+             person("Alrik", "Thiem", role = "ctb")
+             )
+Description: Provides comprehensive functionalities for causal modeling with Coincidence Analysis (CNA), which is a configurational comparative method of causal data analysis that was first introduced in Baumgartner (2009) <doi:10.1177/0049124109339369>. CNA is related to Qualitative Comparative Analysis (QCA), but contrary to the latter, it is custom-built for uncovering causal structures with multiple outcomes and it builds causal models from the bottom up by gradually combining single factors to complex dependency structures until the requested thresholds of model fit are met. The new functionalities provided by this package version include various new parameters of model fit, as exhaustiveness and faithfulness, and a test for structural redundancies in multi-outcome models with a corresponding function that eliminates such redundancies. Also, the algorithmic efficiency has been significantly increased. Finally, the package now comes with an extensive vignette.
+License: GPL (>= 2)
+URL: https://CRAN.R-project.org/package=cna
+Depends: R (>= 3.2.0)
+Imports: Rcpp, utils, stats, matrixStats
+LinkingTo: Rcpp
+Suggests: dplyr
+NeedsCompilation: yes
+LazyData: yes
+Packaged: 2018-06-13 07:22:17 UTC; MAM
+Author: Mathias Ambuehl [aut, cre, cph],
+  Michael Baumgartner [aut, cph],
+  Ruedi Epple [ctb],
+  Alrik Thiem [ctb]
+Maintainer: Mathias Ambuehl <mathias.ambuehl@consultag.ch>
+Repository: CRAN
+Date/Publication: 2018-06-13 10:02:55 UTC

@@ -1,0 +1,70 @@
+Package: s2dverification
+Title: Set of Common Tools for Forecast Verification
+Version: 2.8.5
+Authors@R: c(
+    person("BSC-CNS", role = c("aut", "cph")),
+    person("Virginie", "Guemas", , "virginie.guemas@bsc.es", role = "aut"),
+    person("Nicolau", "Manubens", , "nicolau.manubens@bsc.es", role = c("aut", "cre")),
+    person("Javier", "Garcia-Serrano", , "javier.garcia@bsc.es", role = "aut"),
+    person("Neven", "Fuckar", , "neven.fuckar@bsc.es", role = "aut"),
+    person("Louis-Philippe", "Caron", , "louis-philippe.caron@bsc.es", role = "aut"),
+    person("Omar", "Bellprat", , "omar.bellprat@bsc.es", role = "aut"),
+    person("Luis", "Rodrigues", , "lrodrigues@ic3.cat", role = "aut"),
+    person("Veronica", "Torralba", , "veronica.torralba@bsc.es", role = "aut"), 
+    person("Alasdair", "Hunter", , "alasdair.hunter@bsc.es", role = "aut"), 
+    person("Chloe", "Prodhomme", , "chloe.prodhomme@bs.es", role = "aut"),
+    person("Martin", "Menegoz", , "martin.menegoz@bsc.es", role = "aut"),
+    person("Domingo", "Manubens", , "domingo.manubens@bsc.es", role = "ctb"),
+    person("Constantin", "Ardilouze", , "constantin.ardilouze@meteo.fr", role = "ctb"),
+    person("Lauriane", "Batte", , "lauriane.batte@meteo.fr", role = "ctb"),
+    person("Fabian", "Lienert", , "fabian.lienert@bsc.es", role = "ctb"),
+    person("Julia", "Giner", , "julia.giner@bsc.es", role = "ctb"),
+    person("Jean-Philippe", "Baudouin", , "jean.baudouin@bsc.es", role = "ctb"),
+    person("Nube", "Gonzalez", , "nube.gonzalez@bsc.es", role = "ctb"),
+    person("Ludovic", "Auger", , "ludovic.auger@meteo.fr", role = "ctb"),
+    person("Nicola", "Cortesi", , "nicola.cortesi@bsc.es", role = "ctb"),
+    person("Eleftheria", "Exarchou", , "eleftheria.exarchou@bsc.es", role = "ctb"),
+    person("Ruben", "Cruz", , "ruben.cruzgarcia@bsc.es", role = "ctb"),
+    person("Isabel", "Andreu-Burillo", , "isabel.andreu.burillo@ic3.cat", role = "ctb"),
+    person("Ramiro", "Saurral", , "ramiro.saurral@ic3.cat", role = "ctb"))
+Description: Set of tools to verify forecasts through the computation of typical prediction scores against one or more observational datasets or reanalyses (a reanalysis being a physical extrapolation of observations that relies on the equations from a model, not a pure observational dataset). Intended for seasonal to decadal climate forecasts although can be useful to verify other kinds of forecasts. The package can be helpful in climate sciences for other purposes than forecasting. 
+Depends: maps, methods, R (>= 2.14.1)
+Imports: abind, bigmemory, GEOmap, geomapdata, mapproj, NbClust, ncdf4,
+        parallel, plyr, SpecsVerification (>= 0.5.0)
+Suggests: easyVerification
+License: LGPL-3
+URL: https://earth.bsc.es/gitlab/es/s2dverification/wikis/home
+BugReports: https://earth.bsc.es/gitlab/es/s2dverification/issues
+LazyData: true
+SystemRequirements: cdo
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2019-03-19 17:32:45 UTC; nmanuben
+Author: BSC-CNS [aut, cph],
+  Virginie Guemas [aut],
+  Nicolau Manubens [aut, cre],
+  Javier Garcia-Serrano [aut],
+  Neven Fuckar [aut],
+  Louis-Philippe Caron [aut],
+  Omar Bellprat [aut],
+  Luis Rodrigues [aut],
+  Veronica Torralba [aut],
+  Alasdair Hunter [aut],
+  Chloe Prodhomme [aut],
+  Martin Menegoz [aut],
+  Domingo Manubens [ctb],
+  Constantin Ardilouze [ctb],
+  Lauriane Batte [ctb],
+  Fabian Lienert [ctb],
+  Julia Giner [ctb],
+  Jean-Philippe Baudouin [ctb],
+  Nube Gonzalez [ctb],
+  Ludovic Auger [ctb],
+  Nicola Cortesi [ctb],
+  Eleftheria Exarchou [ctb],
+  Ruben Cruz [ctb],
+  Isabel Andreu-Burillo [ctb],
+  Ramiro Saurral [ctb]
+Maintainer: Nicolau Manubens <nicolau.manubens@bsc.es>
+Repository: CRAN
+Date/Publication: 2019-03-19 17:50:02 UTC

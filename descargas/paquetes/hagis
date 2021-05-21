@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package hagis</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Analysis of Plant Pathogen Pathotype Complexities, Distributions and Diversity [R package hagis version 3.1.0]" />
+<meta name="citation_author1" content="Austin G. McCoy" />
+<meta name="citation_author2" content="Zachary Noel" />
+<meta name="citation_author3" content="Adam H. Sparks" />
+<meta name="citation_author4" content="Martin Chilvers" />
+<meta name="citation_publication_date" content="2020-10-07" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=hagis" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=hagis" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="hagis: Analysis of Plant Pathogen Pathotype Complexities, Distributions and Diversity" />
+<meta name="og:description" content="Analysis of plant pathogen pathotype survey data. Functions provided calculate distribution of susceptibilities, distribution of complexities with statistics, pathotype frequency distribution, as well as diversity indices for pathotypes. This package is meant to be a direct replacement for Herrmann, Löwer, Schachtel's (1999) &amp;lt;&lt;a href=&quot;https://doi.org/10.1046%2Fj.1365-3059.1999.00325.x&quot;&gt;doi:10.1046/j.1365-3059.1999.00325.x&lt;/a&gt;&amp;gt; Habgood-Gilmour Spreadsheet, 'HaGiS', previously used for pathotype analysis." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=hagis" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>hagis: Analysis of Plant Pathogen Pathotype Complexities, Distributions
+and Diversity</h2>
+<p>Analysis of plant pathogen pathotype survey data.  Functions
+  provided calculate distribution of susceptibilities, distribution of
+  complexities with statistics, pathotype frequency distribution, as well as
+  diversity indices for pathotypes.  This package is meant to be a direct
+  replacement for Herrmann, Löwer, Schachtel's (1999)
+  &lt;<a href="https://doi.org/10.1046%2Fj.1365-3059.1999.00325.x">doi:10.1046/j.1365-3059.1999.00325.x</a>&gt; Habgood-Gilmour Spreadsheet, 'HaGiS',
+  previously used for pathotype analysis.</p>
+<table summary="Package hagis summary">
+<tr>
+<td>Version:</td>
+<td>3.1.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.4.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../data.table/index.html">data.table</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../pander/index.html">pander</a>, stats, utils</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../ape/index.html">ape</a>, <a href="../covr/index.html">covr</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../testthat/index.html">testthat</a>, <a href="../vegan/index.html">vegan</a>, <a href="../vdiffr/index.html">vdiffr</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-07</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Austin G. McCoy <a href="https://orcid.org/0000-0003-2483-4184"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, ccp],
+  Zachary Noel <a href="https://orcid.org/0000-0001-6375-8300"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, ccp],
+  Adam H. Sparks <a href="https://orcid.org/0000-0002-0061-8359"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Martin Chilvers <a href="https://orcid.org/0000-0001-8832-1666"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Zhian N. Kamvar <a href="https://orcid.org/0000-0003-1458-7108"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb, rev],
+  Michigan Soybean Promotion Committee [fnd],
+  Project GREEEN [fnd],
+  North Central Soybean Research Program [fnd],
+  GRDC Project DAQ00186 [fnd]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Adam H. Sparks  &#x3c;&#x61;&#x64;&#x61;&#x6d;&#x68;&#x73;&#x70;&#x61;&#x72;&#x6b;&#x73;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/openplantpathology/hagis/issues">https://github.com/openplantpathology/hagis/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/openplantpathology/hagis">https://github.com/openplantpathology/hagis</a>,
+<a href="https://openplantpathology.github.io/hagis/">https://openplantpathology.github.io/hagis/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">hagis citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_hagis.html">hagis results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package hagis downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="hagis.pdf"> hagis.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/betadiversity.html">Beta-diversity Analysis</a><br/>
+<a href="vignettes/hagis.html">hagis: Tools for Analysis of Plant Pathogen Pathotype Complexities, Distributions and Diversity</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/hagis_3.1.0.tar.gz"> hagis_3.1.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/hagis_3.1.0.zip">hagis_3.1.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/hagis_3.1.0.zip">hagis_3.1.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/hagis_3.1.0.zip">hagis_3.1.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/hagis_3.1.0.tgz">hagis_3.1.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/hagis_3.1.0.tgz">hagis_3.1.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/hagis"> hagis archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=hagis"><samp>https://CRAN.R-project.org/package=hagis</samp></a>
+to link to this page.</p>
+</body>
+</html>

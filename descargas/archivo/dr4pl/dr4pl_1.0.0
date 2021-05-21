@@ -1,0 +1,28 @@
+Package: dr4pl
+Type: Package
+Date: 2017-10-17
+Title: Dose Response Data Analysis using the 4 Parameter Logistic (4PL)
+        Model
+Version: 1.0.0
+Depends: R (>= 3.1.0)
+Authors@R: c(person("Justin T.", "Landis", rol = c("aut", "cre"), email = "jtlandis314@gmail.com"),
+             person("Hyowon", "An", role = "aut", email = "ahwbest@gmail.com"),
+             person("Aubrey G.", "Bailey", rol = "aut", email = "aubreybailey@gmail.com"))
+Description: Models the relationship between dose levels and responses in a pharmacological experiment using the 4 Parameter Logistic model. Traditional packages on dose-response modelling such as 'drc' and 'nplr' often draw errors due to convergence failure especially when data have outliers or non-logistic shapes. This package provides robust estimation methods that are less affected by outliers and other initialization methods that work well for data lacking logistic shapes. We provide the bounds on the parameters of the 4PL model that prevent parameter estimates from diverging or converging to zero and base their justification in a statistical principle. These methods are used as remedies to convergence failure problems.  Gadagkar, S. R. and Call, G. B. (2015) <doi:10.1016/j.vascn.2014.08.006> Ritz, C. and Baty, F. and Streibig, J. C. and Gerhard, D. (2015) <doi:10.1371/journal.pone.0146021>.
+License: GPL (>= 2)
+LazyData: TRUE
+URL: https://github.com/ahwbest/dr4pl
+BugReports: https://bitbucket.org/dittmerlab/dr4pl/issues?status=new&status=open
+RdMacros: Rdpack
+RoxygenNote: 6.0.1
+Imports: ggplot2, devtools, drc, Matrix, Rdpack, testthat, tensor
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-10-18 18:17:46 UTC; travis
+Author: Justin T. Landis [aut, cre],
+  Hyowon An [aut],
+  Aubrey G. Bailey [aut]
+Maintainer: Justin T. Landis <jtlandis314@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-10-22 17:50:57 UTC

@@ -1,0 +1,32 @@
+Package: dr4pl
+Type: Package
+Date: 2018-12-03
+Title: Dose Response Data Analysis using the 4 Parameter Logistic (4pl)
+        Model
+Version: 1.1.7.4
+Depends: R (>= 3.1.0)
+Authors@R: c(person("Justin T.", "Landis", rol = c("aut", "cre"), email = "jtlandis314@gmail.com"),
+             person("Hyowon", "An", role = "aut", email = "ahwbest@gmail.com"),
+             person("Aubrey G.", "Bailey", rol = "aut", email = "aubreybailey@gmail.com"),
+             person("Dirk P.", "Dittmer", rol = "aut", email = "dirk_dittmer@med.unc.edu"),
+             person("James S.", "Marron", rol = "aut", email = "marron@unc.edu"))
+Description: Models the relationship between dose levels and responses in a pharmacological experiment using the 4 Parameter Logistic model. Traditional packages on dose-response modelling such as 'drc' and 'nplr' often draw errors due to convergence failure especially when data have outliers or non-logistic shapes. This package provides robust estimation methods that are less affected by outliers and other initialization methods that work well for data lacking logistic shapes. We provide the bounds on the parameters of the 4PL model that prevent parameter estimates from diverging or converging to zero and base their justification in a statistical principle. These methods are used as remedies to convergence failure problems.  Gadagkar, S. R. and Call, G. B. (2015) <doi:10.1016/j.vascn.2014.08.006> Ritz, C. and Baty, F. and Streibig, J. C. and Gerhard, D. (2015) <doi:10.1371/journal.pone.0146021>.
+License: GPL (>= 2)
+LazyData: TRUE
+URL: https://bitbucket.org/dittmerlab/dr4pl
+BugReports: https://bitbucket.org/dittmerlab/dr4pl/issues?status=new&status=open
+RdMacros: Rdpack
+RoxygenNote: 6.1.1
+Imports: ggplot2, Matrix, matrixcalc, tensor, Rdpack
+Suggests: drc, devtools, roxygen2, testthat, knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-12-03 18:43:17 UTC; travis
+Author: Justin T. Landis [aut, cre],
+  Hyowon An [aut],
+  Aubrey G. Bailey [aut],
+  Dirk P. Dittmer [aut],
+  James S. Marron [aut]
+Maintainer: Justin T. Landis <jtlandis314@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-12-03 19:10:04 UTC

@@ -1,0 +1,32 @@
+Package: trackeR
+Version: 1.2.0
+Title: Infrastructure for Running, Cycling and Swimming Data from
+        GPS-Enabled Tracking Devices
+Authors@R: c(person(given = "Ioannis", family = "Kosmidis",
+	            role = c("aut", "cre"), email = "ioannis.kosmidis@warwick.ac.uk",
+		    comment = c(ORCID = "0000-0003-1556-0302")),
+             person(given = "Hannah", family = "Frick",
+	   	    role = "aut", email = "hannah.frick@gmail.com",
+	            comment = c(ORCID = "0000-0002-6049-5258")),
+	     person(given = "Robin", family = "Hornak",
+	            role = "aut", email = "robinhornak@gmail.com"))
+Description: Provides infrastructure for handling running, cycling and swimming data from GPS-enabled tracking devices within R. The package provides methods to extract, clean and organise workout and competition data into session-based and unit-aware data objects of class 'trackeRdata' (S3 class). The information can then be visualised, summarised, and analysed through flexible and extensible methods. Frick and Kosmidis (2017) <doi: 10.18637/jss.v082.i07>, which is updated and maintained as one of the vignettes, provides detailed descriptions of the package and its methods, and real-data demonstrations of the package functionality.
+Depends: R (>= 3.1.0), zoo
+Imports: ggplot2, ggridges, xml2, RSQLite, jsonlite, raster, scam,
+        foreach, fda, sp, leaflet, ggmap, gridExtra, gtable
+Suggests: testthat, knitr, rmarkdown, covr
+VignetteBuilder: knitr
+License: GPL-3
+URL: https://github.com/trackerproject/trackeR
+BugReports: https://github.com/trackerproject/trackeR/issues
+RoxygenNote: 6.0.1
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: no
+Packaged: 2018-10-12 08:13:17 UTC; yiannis
+Author: Ioannis Kosmidis [aut, cre] (<https://orcid.org/0000-0003-1556-0302>),
+  Hannah Frick [aut] (<https://orcid.org/0000-0002-6049-5258>),
+  Robin Hornak [aut]
+Maintainer: Ioannis Kosmidis <ioannis.kosmidis@warwick.ac.uk>
+Repository: CRAN
+Date/Publication: 2018-10-12 09:00:03 UTC

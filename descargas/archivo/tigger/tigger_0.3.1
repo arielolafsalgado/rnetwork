@@ -1,0 +1,47 @@
+Package: tigger
+Type: Package
+Version: 0.3.1
+Date: 2018-10-19
+Authors@R: c(person("Daniel", "Gadala-Maria", role=c("aut"), 
+                    email="daniel.gadala-maria@yale.edu"),
+             person("Susanna", "Marquez", role=c("aut"), 
+                    email="susanna.marquez@yale.edu"),                    
+             person("Moriah", "Cohen", role=c("aut"), 
+                    email="moriah.cohen@biu.ac.il"),   
+             person("Gur", "Yaari", role=c("aut"), 
+                    email="gur.yaari@biu.ac.il"),
+             person("Jason", "Vander Heiden", role=c("ctb", "cre"), 
+                    email="jason.vanderheiden@yale.edu"),
+             person("Steven", "Kleinstein", role=c("aut", "cph"), 
+                    email="steven.kleinstein@yale.edu"))
+Title: Infers Novel Immunoglobulin Alleles from Sequencing Data
+Description: Infers the V genotype of an individual from immunoglobulin (Ig)
+    repertoire sequencing data (AIRR-Seq, Rep-Seq). Includes detection of 
+    any novel alleles. This information is then used to correct existing V 
+    allele calls from among the sample sequences.
+    Citations:
+    Gadala-Maria, et al (2015) <doi:10.1073/pnas.1417683112>.
+License: CC BY-SA 4.0
+URL: http://tigger.readthedocs.io
+BugReports: https://bitbucket.org/kleinstein/tigger/issues
+LazyData: true
+BuildVignettes: true
+VignetteBuilder: knitr
+Encoding: UTF-8
+Depends: R (>= 3.2.5), ggplot2 (>= 2.0.0)
+Imports: alakazam (>= 0.2.11), dplyr (>= 0.7.0), doParallel, foreach,
+        graphics, gridExtra, gtools, iterators, lazyeval, parallel,
+        rlang, shazam (>= 0.1.10), stats, stringi, tidyr
+Suggests: knitr, testthat
+RoxygenNote: 6.1.0
+NeedsCompilation: no
+Packaged: 2018-10-19 15:56:11 UTC; susanna
+Author: Daniel Gadala-Maria [aut],
+  Susanna Marquez [aut],
+  Moriah Cohen [aut],
+  Gur Yaari [aut],
+  Jason Vander Heiden [ctb, cre],
+  Steven Kleinstein [aut, cph]
+Maintainer: Jason Vander Heiden <jason.vanderheiden@yale.edu>
+Repository: CRAN
+Date/Publication: 2018-10-19 18:30:08 UTC

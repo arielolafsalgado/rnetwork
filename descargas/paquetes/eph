@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package eph</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Argentina's Permanent Household Survey Data and Manipulation Utilities [R package eph version 0.4.0]" />
+<meta name="citation_author1" content="Diego Kozlowski" />
+<meta name="citation_author2" content="Pablo Tiscornia" />
+<meta name="citation_author3" content="Guido Weksler" />
+<meta name="citation_author4" content="Natsumi Shokida" />
+<meta name="citation_author5" content="German Rosati" />
+<meta name="citation_publication_date" content="2020-06-25" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=eph" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=eph" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="eph: Argentina's Permanent Household Survey Data and Manipulation Utilities" />
+<meta name="og:description" content="Tools to download and manipulate the Permanent Household Survey from Argentina (EPH is the Spanish acronym for Permanent Household Survey). e.g: get_microdata() for downloading the datasets, get_poverty_lines() for downloading the official poverty baskets, calculate_poverty() for the calculation of stating if a household is in poverty or not, following the official methodology. organize_panels() is used to concatenate observations from different periods, and organize_labels() adds the official labels to the data. The implemented methods are based on INDEC (2016) &amp;lt;&lt;a href=&quot;http://www.estadistica.ec.gba.gov.ar/dpe/images/SOCIEDAD/EPH_metodologia_22_pobreza.pdf&quot;&gt;http://www.estadistica.ec.gba.gov.ar/dpe/images/SOCIEDAD/EPH_metodologia_22_pobreza.pdf&lt;/a&gt;&amp;gt;. As this package works with the argentinian Permanent Household Survey and its main audience is from this country, the documentation was written in Spanish." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=eph" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>eph: Argentina's Permanent Household Survey Data and Manipulation
+Utilities</h2>
+<p>Tools to download and manipulate the Permanent Household Survey from Argentina
+    (EPH is the Spanish acronym for Permanent Household Survey).
+    e.g: get_microdata() for downloading the datasets, get_poverty_lines() for downloading the official poverty baskets,
+    calculate_poverty() for the calculation of stating if a household is in poverty or not, following the official methodology.
+    organize_panels() is used to concatenate observations from different periods, and organize_labels()
+    adds the official labels to the data. The implemented methods are based on INDEC (2016) &lt;<a href="http://www.estadistica.ec.gba.gov.ar/dpe/images/SOCIEDAD/EPH_metodologia_22_pobreza.pdf">http://www.estadistica.ec.gba.gov.ar/dpe/images/SOCIEDAD/EPH_metodologia_22_pobreza.pdf</a>&gt;.
+    As this package works with the argentinian Permanent Household Survey and its main audience is from this country,
+    the documentation was written in Spanish.</p>
+<table summary="Package eph summary">
+<tr>
+<td>Version:</td>
+<td>0.4.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../dplyr/index.html">dplyr</a>, <a href="../expss/index.html">expss</a>, <a href="../assertthat/index.html">assertthat</a>, <a href="../purrr/index.html">purrr</a>, <a href="../tibble/index.html">tibble</a>, <a href="../stringr/index.html">stringr</a>, <a href="../magrittr/index.html">magrittr</a>, <a href="../glue/index.html">glue</a>, <a href="../readxl/index.html">readxl</a>, <a href="../janitor/index.html">janitor</a>, <a href="../questionr/index.html">questionr</a>, <a href="../tidyr/index.html">tidyr</a>, <a href="../readr/index.html">readr</a>, utils, <a href="../curl/index.html">curl</a>, <a href="../attempt/index.html">attempt</a>, <a href="../zoo/index.html">zoo</a>, <a href="../tidyverse/index.html">tidyverse</a>, <a href="../leaflet/index.html">leaflet</a>, <a href="../htmltools/index.html">htmltools</a>, <a href="../rlang/index.html">rlang</a>, <a href="../rvest/index.html">rvest</a>, <a href="../xml2/index.html">xml2</a>, stats</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../lubridate/index.html">lubridate</a>, <a href="../covr/index.html">covr</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../ggplot2/index.html">ggplot2</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-25</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Diego Kozlowski <a href="https://orcid.org/0000-0002-5396-3471"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Pablo Tiscornia [aut],
+  Guido Weksler [aut],
+  Natsumi Shokida [aut],
+  German Rosati <a href="https://orcid.org/0000-0002-9775-0435"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Diego Kozlowski  &#x3c;&#x64;&#x69;&#x65;&#x67;&#x6f;&#x6b;&#x6f;&#x7a;&#x39;&#x32;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/holatam/eph/issues">https://github.com/holatam/eph/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/holatam/eph">https://github.com/holatam/eph</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>es</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">eph citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_eph.html">eph results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package eph downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="eph.pdf"> eph.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/eph.html">Ejemplo de uso</a><br/>
+<a href="vignettes/estimacion_pobreza.html">estimacion_pobreza</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/eph_0.4.0.tar.gz"> eph_0.4.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/eph_0.4.0.zip">eph_0.4.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/eph_0.4.0.zip">eph_0.4.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/eph_0.4.0.zip">eph_0.4.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/eph_0.4.0.tgz">eph_0.4.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/eph_0.4.0.tgz">eph_0.4.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/eph"> eph archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=eph"><samp>https://CRAN.R-project.org/package=eph</samp></a>
+to link to this page.</p>
+</body>
+</html>

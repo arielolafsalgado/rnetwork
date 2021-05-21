@@ -1,0 +1,33 @@
+Package: PRSim
+Type: Package
+Title: Stochastic Simulation of Streamflow Time Series using Phase
+        Randomization
+Version: 1.0
+Date: 2019-03-10
+Authors@R: c(person("Manuela", "Brunner", role = c("aut", "cre"),
+             email = "manuela.brunner@wsl.ch", 
+             comment = c(ORCID = "0000-0001-8824-877X")), 
+             person("Reinhard", "Furrer", role = c("aut"),  
+             email = "reinhard.furrer@math.uzh.ch", 
+             comment = c(ORCID = "0000-0002-6319-2332"))) 
+Author: Manuela Brunner [aut, cre] (<https://orcid.org/0000-0001-8824-877X>),
+  Reinhard Furrer [aut] (<https://orcid.org/0000-0002-6319-2332>)
+Maintainer: Manuela Brunner <manuela.brunner@wsl.ch>
+Description: Provides a simulation framework to simulate streamflow time series with similar
+  main characteristics as observed data. These characteristics include the distribution of daily 
+  streamflow values and their temporal correlation as expressed by short- and long-range 
+  dependence. The approach is based on the randomization of the phases of the Fourier 
+  transform. We further use the flexible four-parameter Kappa distribution, which allows 
+  for the extrapolation to yet unobserved low and high flows.
+URL: https://git.math.uzh.ch/reinhard.furrer/PRSim-devel
+BugReports: https://git.math.uzh.ch/reinhard.furrer/PRSim-devel
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: homtest
+Suggests: lattice
+Imports: stats
+NeedsCompilation: no
+Packaged: 2019-03-25 07:34:20 UTC; furrer
+Repository: CRAN
+Date/Publication: 2019-03-29 17:10:03 UTC

@@ -1,0 +1,38 @@
+Package: dataMaid
+Type: Package
+Title: A Suite of Checks for Identification of Potential Errors in a
+        Data Frame as Part of the Data Cleaning Process
+Version: 0.9.2
+Date: 2017-01-02
+Authors@R: c(person("Anne Helby", "Petersen", , email="ahpe@sund.ku.dk", role="aut"),
+             person("Claus Thorn", "Ekstrøm", , email="ekstrom@sund.ku.dk", role=c("aut", "cre")))
+Description: Data cleaning is an important first step of any statistical
+    analysis. dataMaid provides an extendable suite of test for common potential
+    errors in a dataset. It produces a document with a thorough summary of the
+    checks and the results that a human can use to identify possible errors.
+Imports: haven, methods, pander, rmarkdown, robustbase, gridExtra
+Depends: ggplot2
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+License: GPL-2
+RoxygenNote: 5.0.1.9000
+Collate: 'allCheckFunctions.R' 'allClasses.R' 'allSummaryFunctions.R'
+        'allVisualFunctions.R' 'allXFunctions.R' 'makeXFunction.R'
+        'visualFunction.R' 'basicVisual.R' 'summaryFunction.R'
+        'centralValue.R' 'check.R' 'checkResult.R' 'messageGenerator.R'
+        'checkFunction.R' 'identifyMissing.R' 'minMax.R' 'classes.R'
+        'clean.R' 'countMissing.R' 'dataMaid-package.R' 'description.R'
+        'identifyCaseIssues.R' 'identifyLoners.R' 'identifyNums.R'
+        'identifyOutliers.R' 'identifyOutliersTBStyle.R'
+        'identifyWhitespace.R' 'isCPR.R' 'isEmpty.R' 'isKey.R' 'misc.R'
+        'quartiles.R' 'render.R' 'smartNum.R' 'standardVisual.R'
+        'summarize.R' 'summaryResult.R' 'uniqueValues.R'
+        'unpackLabelled.R' 'variableType.R' 'visualize.R'
+NeedsCompilation: no
+Packaged: 2017-01-02 10:51:43 UTC; cld189
+Author: Anne Helby Petersen [aut],
+  Claus Thorn Ekstrøm [aut, cre]
+Maintainer: Claus Thorn Ekstrøm <ekstrom@sund.ku.dk>
+Repository: CRAN
+Date/Publication: 2017-01-02 18:04:58

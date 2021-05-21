@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package BivRegBLS</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Tolerance Interval and EIV Regression - Method Comparison Studies [R package BivRegBLS version 1.1.1]" />
+<meta name="citation_author1" content="Bernard G Francq" />
+<meta name="citation_author2" content="Marion Berger" />
+<meta name="citation_publication_date" content="2019-10-10" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=BivRegBLS" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=BivRegBLS" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="BivRegBLS: Tolerance Interval and EIV Regression - Method Comparison Studies" />
+<meta name="og:description" content="Assess the agreement in method comparison studies by tolerance intervals and errors-in-variables (EIV) regressions. The Ordinary Least Square regressions (OLSv and OLSh), the Deming Regression (DR), and the (Correlated)-Bivariate Least Square regressions (BLS and CBLS) can be used with unreplicated or replicated data. The BLS() and CBLS() are the two main functions to estimate a regression line, while XY.plot() and MD.plot() are the two main graphical functions to display, respectively an (X,Y) plot or (M,D) plot with the BLS or CBLS results. Four hyperbolic statistical intervals are provided: the Confidence Interval (CI), the Confidence Bands (CB), the Prediction Interval and the Generalized prediction Interval. Assuming no proportional bias, the (M,D) plot (Band-Altman plot) may be simplified by calculating univariate tolerance intervals (beta-expectation (type I) or beta-gamma content (type II)). Major updates from last version 1.0.0 are: title shortened, include the new functions BLS.fit() and CBLS.fit() as shortcut of the, respectively, functions BLS() and CBLS(). References: B.G. Francq, B. Govaerts (2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fsim.6872&quot;&gt;doi:10.1002/sim.6872&lt;/a&gt;&amp;gt;, B.G. Francq, B. Govaerts (2014) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.chemolab.2014.03.006&quot;&gt;doi:10.1016/j.chemolab.2014.03.006&lt;/a&gt;&amp;gt;, B.G. Francq, B. Govaerts (2014) &amp;lt;&lt;a href=&quot;http://publications-sfds.fr/index.php/J-SFdS/article/view/262&quot;&gt;http://publications-sfds.fr/index.php/J-SFdS/article/view/262&lt;/a&gt;&amp;gt;, B.G. Francq (2013), PhD Thesis, UCLouvain, Errors-in-variables regressions to assess equivalence in method comparison studies, &amp;lt;&lt;a href=&quot;https://dial.uclouvain.be/pr/boreal/object/boreal%3A135862/datastream/PDF_01/view&quot;&gt;https://dial.uclouvain.be/pr/boreal/object/boreal%3A135862/datastream/PDF_01/view&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=BivRegBLS" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>BivRegBLS: Tolerance Interval and EIV Regression - Method Comparison
+Studies</h2>
+<p>Assess the agreement in method comparison studies by tolerance intervals and errors-in-variables (EIV) regressions. The Ordinary Least Square regressions (OLSv and OLSh), the Deming Regression (DR), and the (Correlated)-Bivariate Least Square regressions (BLS and CBLS) can be used with unreplicated or replicated data. The BLS() and CBLS() are the two main functions to estimate a regression line, while XY.plot() and MD.plot() are the two main graphical functions to display, respectively an (X,Y) plot or (M,D) plot with the BLS or CBLS results. Four hyperbolic statistical intervals are provided: the Confidence Interval (CI), the Confidence Bands (CB), the Prediction Interval and the Generalized prediction Interval. Assuming no proportional bias, the (M,D) plot (Band-Altman plot) may be simplified by calculating univariate tolerance intervals (beta-expectation (type I) or beta-gamma content (type II)). Major updates from last version 1.0.0 are: title shortened, include the new functions BLS.fit() and CBLS.fit() as shortcut of the, respectively, functions BLS() and CBLS(). References: B.G. Francq, B. Govaerts (2016) &lt;<a href="https://doi.org/10.1002%2Fsim.6872">doi:10.1002/sim.6872</a>&gt;, B.G. Francq, B. Govaerts (2014) &lt;<a href="https://doi.org/10.1016%2Fj.chemolab.2014.03.006">doi:10.1016/j.chemolab.2014.03.006</a>&gt;, B.G. Francq, B. Govaerts (2014) &lt;<a href="http://publications-sfds.fr/index.php/J-SFdS/article/view/262">http://publications-sfds.fr/index.php/J-SFdS/article/view/262</a>&gt;, B.G. Francq (2013), PhD Thesis, UCLouvain, Errors-in-variables regressions to assess equivalence in method comparison studies, &lt;<a href="https://dial.uclouvain.be/pr/boreal/object/boreal%3A135862/datastream/PDF_01/view">https://dial.uclouvain.be/pr/boreal/object/boreal%3A135862/datastream/PDF_01/view</a>&gt;.</p>
+<table summary="Package BivRegBLS summary">
+<tr>
+<td>Version:</td>
+<td>1.1.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.1.0), <a href="../ellipse/index.html">ellipse</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-10-10</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Bernard G Francq [cre, aut],
+  Marion Berger [aut],
+  Christophe Agut [ctb],
+  Guy Mathieu [ctb],
+  Armand Berges [ctb],
+  Franck Pellissier [ctb],
+  Veronique Onado [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Bernard G Francq  &#x3c;&#x42;&#x69;&#x76;&#x52;&#x65;&#x67;&#x42;&#x4c;&#x53;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/AGPL-3">AGPL-3</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_BivRegBLS.html">BivRegBLS results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package BivRegBLS downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="BivRegBLS.pdf"> BivRegBLS.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/BivRegBLS_1.1.1.tar.gz"> BivRegBLS_1.1.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/BivRegBLS_1.1.1.zip">BivRegBLS_1.1.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/BivRegBLS_1.1.1.zip">BivRegBLS_1.1.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/BivRegBLS_1.1.1.zip">BivRegBLS_1.1.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/BivRegBLS_1.1.1.tgz">BivRegBLS_1.1.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/BivRegBLS_1.1.1.tgz">BivRegBLS_1.1.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/BivRegBLS"> BivRegBLS archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=BivRegBLS"><samp>https://CRAN.R-project.org/package=BivRegBLS</samp></a>
+to link to this page.</p>
+</body>
+</html>

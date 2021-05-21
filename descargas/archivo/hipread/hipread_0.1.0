@@ -1,0 +1,45 @@
+Package: hipread
+Type: Package
+Title: Read Hierarchical Fixed Width Files
+Version: 0.1.0
+Authors@R: c(
+    person("Greg", "Freedman Ellis", , "gfellis@umn.edu", c("aut", "cre")),
+    person("Derek Burk", role = "ctb"),
+    person("Joe Grover", role = "ctb"),
+    person("Mark Padgham", role = "ctb"),
+    person("Hadley", "Wickham", , "hadley@rstudio.com", "ctb", comment = "Code adapted from readr"),
+    person("Jim", "Hester", , "james.hester@rstudio.com", c("ctb"), comment = "Code adapted from readr"),
+    person("Romain", "Francois", role = "ctb", comment = "Code adapted from readr"),
+    person("R Core Team", role = "ctb", comment = "Code adapted from readr"),
+    person("RStudio", role = c("cph", "fnd"), comment = "Code adapted from readr"),
+    person("Jukka", "Jylänki", role = c("ctb", "cph"), comment = "Code adapted from readr"),
+    person("Mikkel", "Jørgensen", role = c("ctb", "cph"), comment = "Code adapted from readr"),
+    person("University of Minnesota", role = "cph"))
+Maintainer: Greg Freedman Ellis <gfellis@umn.edu>
+Description: Read hierarchical fixed width files like those commonly used by 
+    many census data providers. Also allows for reading of data in chunks,
+    and reading 'gzipped' files without storing the full file in memory.
+License: GPL (>= 2) | file LICENSE
+Encoding: UTF-8
+LazyData: true
+LinkingTo: Rcpp, BH
+Imports: Rcpp, dplyr, R6, rlang
+Suggests: readr, testthat
+SystemRequirements: C++11
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2018-07-24 14:43:43 UTC; greg
+Author: Greg Freedman Ellis [aut, cre],
+  Derek Burk [ctb],
+  Joe Grover [ctb],
+  Mark Padgham [ctb],
+  Hadley Wickham [ctb] (Code adapted from readr),
+  Jim Hester [ctb] (Code adapted from readr),
+  Romain Francois [ctb] (Code adapted from readr),
+  R Core Team [ctb] (Code adapted from readr),
+  RStudio [cph, fnd] (Code adapted from readr),
+  Jukka Jylänki [ctb, cph] (Code adapted from readr),
+  Mikkel Jørgensen [ctb, cph] (Code adapted from readr),
+  University of Minnesota [cph]
+Repository: CRAN
+Date/Publication: 2018-07-30 11:00:09 UTC

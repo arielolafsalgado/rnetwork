@@ -1,0 +1,18 @@
+Package: GFORCE
+Type: Package
+Title: Clustering and Inference Procedures for High-Dimensional Latent
+        Variable Models
+Version: 0.1.4
+Authors@R: person("Carson", "Eisenach", email = "eisenach@princeton.edu", role = c("aut", "cre"))
+Description: A complete suite of computationally efficient methods for high dimensional clustering and inference problems in G-Latent Models (a type of Latent Variable Gaussian graphical model). The main feature is the FORCE (First-Order, Certifiable, Efficient) clustering algorithm which is a fast solver for a semi-definite programming (SDP) relaxation of the K-means problem. For certain types of graphical models (G-Latent Models), with high probability the algorithm not only finds the optimal clustering, but produces a certificate of having done so. This certificate, however, is model independent and so can also be used to certify data clustering problems. The 'GFORCE' package also contains implementations of inferential procedures for G-Latent graphical models using n-fold cross validation. Also included are native code implementations of other popular clustering methods such as Lloyd's algorithm with kmeans++ initialization and complete linkage hierarchical clustering. The FORCE method is due to Eisenach and Liu (2019) <arxiv:1806.00530>.
+License: GPL-2
+LazyData: TRUE
+RoxygenNote: 6.1.1
+Imports: MASS,lpSolve,stats
+Suggests: testthat
+NeedsCompilation: yes
+Packaged: 2019-04-05 14:12:51 UTC; carson
+Author: Carson Eisenach [aut, cre]
+Maintainer: Carson Eisenach <eisenach@princeton.edu>
+Repository: CRAN
+Date/Publication: 2019-04-07 09:42:42 UTC

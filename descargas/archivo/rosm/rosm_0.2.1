@@ -1,0 +1,28 @@
+Package: rosm
+Type: Package
+Title: Plot Raster Map Tiles from Open Street Map and Other Sources
+Version: 0.2.1
+Date: 2017-03-30
+Encoding: UTF-8
+Authors@R: c(person("Dewey", "Dunnington", role = c("aut", "cre"),
+				email = "dewey@fishandwhistle.net"),
+			person("Timothée", "Giraud", role = "ctb"))
+Maintainer: Dewey Dunnington <dewey@fishandwhistle.net>
+Description: Download and plot Open Street Map <http://www.openstreetmap.org/>,
+    Bing Maps <http://www.bing.com/maps> and other tiled map sources in a way 
+    that works seamlessly with plotting from the 'sp' package. Use to create 
+    high-resolution basemaps and add hillshade to vector-based maps.
+License: GPL-2
+LazyData: TRUE
+Imports: curl, abind, jpeg, png, sp, rgdal, rjson, methods, plyr,
+        prettymapr
+Suggests: rcanvec, cartography, raster, testthat
+URL: https://github.com/paleolimbot/rosm
+BugReports: https://github.com/paleolimbot/rosm/issues
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2017-04-01 22:19:42 UTC; dewey
+Author: Dewey Dunnington [aut, cre],
+  Timothée Giraud [ctb]
+Repository: CRAN
+Date/Publication: 2017-04-01 22:53:42 UTC

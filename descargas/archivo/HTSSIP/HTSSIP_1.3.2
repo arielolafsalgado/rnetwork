@@ -1,0 +1,32 @@
+Package: HTSSIP
+Type: Package
+Title: High Throughput Sequencing of Stable Isotope Probing Data
+        Analysis
+Version: 1.3.2
+Authors@R: c(
+    person("Nicholas", "Youngblut", email="nyoungb2@gmail.com", role=c("aut")),
+    person("Samuel", "Barnett", email="seb369@cornell.edu", role=c("cre", "ctb"))
+    )
+Maintainer: Samuel Barnett <seb369@cornell.edu>
+Description: Functions for analyzing high throughput sequencing 
+    stable isotope probing (HTS-SIP) data.
+    Analyses include high resolution stable isotope probing (HR-SIP),
+    multi-window high resolution stable isotope probing (MW-HR-SIP), 
+    and quantitative stable isotope probing (q-SIP). 
+License: GPL-2 | file LICENSE
+LazyData: TRUE
+Depends: R (>= 3.1.2)
+Imports: igraph(>= 1.0.1), ape(>= 4.1), magrittr (>= 1.5), stringr (>=
+        1.0.0), plyr (>= 1.8.4), dplyr (>= 0.5.0), tidyr (>= 0.5.1),
+        ggplot2 (>= 2.1.0), vegan (>= 2.4.3), DESeq2 (>= 1.10.1),
+        phyloseq (>= 1.19.1), coenocliner (>= 0.2.2), lazyeval(>=
+        0.2.0)
+RoxygenNote: 6.0.1
+Suggests: testthat, knitr, rmarkdown, doParallel
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-01-23 18:11:04 UTC; sam
+Author: Nicholas Youngblut [aut],
+  Samuel Barnett [cre, ctb]
+Repository: CRAN
+Date/Publication: 2018-01-25 14:44:49 UTC

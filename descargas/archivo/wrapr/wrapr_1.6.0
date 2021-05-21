@@ -1,0 +1,40 @@
+Package: wrapr
+Type: Package
+Title: Wrap R Tools for Debugging and Parametric Programming
+Version: 1.6.0
+Date: 2018-08-01
+Authors@R: c(
+    person("John", "Mount", email = "jmount@win-vector.com", role = c("aut", "cre")),
+    person("Nina", "Zumel", email = "nzumel@win-vector.com", role = c("aut")),
+    person(family = "Win-Vector LLC", role = c("cph"))
+    )
+URL: https://github.com/WinVector/wrapr,
+        http://winvector.github.io/wrapr/
+Maintainer: John Mount <jmount@win-vector.com>
+BugReports: https://github.com/WinVector/wrapr/issues
+Description: Tools for writing and debugging R code. Provides: 
+    'let()' 
+    (converts non-standard evaluation interfaces to parametric standard
+    evaluation interfaces), 
+    '%.>%' dot-pipe (an 'S3' configurable pipe),
+    'build_frame()'/'draw_frame()' ('data.frame' example tools),
+    'qc()' (quoting concatenate), 
+    ':=' (named map builder),
+    'DebugFnW()' (capture function context on error for debugging),
+    and more.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.0
+Depends: R (>= 3.2.1)
+Imports: utils, methods
+Suggests: parallel, testthat, knitr, rmarkdown
+VignetteBuilder: knitr
+ByteCompile: true
+NeedsCompilation: no
+Packaged: 2018-08-01 17:12:49 UTC; johnmount
+Author: John Mount [aut, cre],
+  Nina Zumel [aut],
+  Win-Vector LLC [cph]
+Repository: CRAN
+Date/Publication: 2018-08-01 17:40:03 UTC

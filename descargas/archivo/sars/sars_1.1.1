@@ -1,0 +1,31 @@
+Package: sars
+Type: Package
+Title: Fit and Compare Species-Area Relationship Models Using
+        Multimodel Inference
+Version: 1.1.1
+Authors@R: c(person("Thomas J.", "Matthews", email = "txm676@gmail.com",
+                  role = c("aut", "cre"), comment = c(ORCID = "0000-0002-7624-244X")),
+            person("Francois", "Guilhaumon", email = "francois.guilhaumon@ird.fr",
+                  role = c("aut"), comment = c(ORCID = "0000-0003-4707-8932")))
+Description: Implements the basic elements of the multi-model
+    inference paradigm for up to twenty species-area relationship models (SAR), using simple
+    R list-objects and functions, as in Triantis et al. 2012 <DOI:10.1111/j.1365-2699.2011.02652.x>.
+    The package is scalable and users can easily create their own model and data objects. Additional
+    SAR related functions are provided.
+License: GPL-3
+URL: https://github.com/txm676/sars, https://txm676.github.io/sars/
+BugReports: https://github.com/txm676/sars/issues
+Imports: dplyr, graphics, nortest, stats, utils, crayon, cli, numDeriv
+Depends: R(>= 3.0.0)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-02-19 17:03:08 UTC; Tom
+Author: Thomas J. Matthews [aut, cre] (<https://orcid.org/0000-0002-7624-244X>),
+  Francois Guilhaumon [aut] (<https://orcid.org/0000-0003-4707-8932>)
+Maintainer: Thomas J. Matthews <txm676@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-02-19 17:50:03 UTC

@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package phyr</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Model Based Phylogenetic Analysis [R package phyr version 1.0.2]" />
+<meta name="citation_author1" content="Anthony Ives" />
+<meta name="citation_author2" content="Russell Dinnage" />
+<meta name="citation_author3" content="Lucas A. Nell" />
+<meta name="citation_author4" content="Matthew Helmus" />
+<meta name="citation_author5" content="Daijiang Li" />
+<meta name="citation_publication_date" content="2019-11-13" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=phyr" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=phyr" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="phyr: Model Based Phylogenetic Analysis" />
+<meta name="og:description" content="A collection of functions to do model-based phylogenetic analysis. It includes functions to calculate community phylogenetic diversity, to estimate correlations among functional traits while accounting for phylogenetic relationships, and to fit phylogenetic generalized linear mixed models. The Bayesian phylogenetic generalized linear mixed models are fitted with the 'INLA' package (&amp;lt;&lt;a href=&quot;http://www.r-inla.org&quot;&gt;http://www.r-inla.org&lt;/a&gt;&amp;gt;)." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=phyr" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>phyr: Model Based Phylogenetic Analysis</h2>
+<p>A collection of functions to do model-based phylogenetic analysis. 
+    It includes functions to calculate community phylogenetic diversity,
+    to estimate correlations among functional traits while accounting for 
+    phylogenetic relationships, and to fit phylogenetic generalized linear
+    mixed models. The Bayesian phylogenetic generalized linear mixed models
+    are fitted with the 'INLA' package (&lt;<a href="http://www.r-inla.org">http://www.r-inla.org</a>&gt;).</p>
+<table summary="Package phyr summary">
+<tr>
+<td>Version:</td>
+<td>1.0.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.1)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>stats, <a href="../ape/index.html">ape</a>, <a href="../Rcpp/index.html">Rcpp</a>, <a href="../Matrix/index.html">Matrix</a>, methods, graphics, <a href="../dplyr/index.html">dplyr</a>, <a href="../lme4/index.html">lme4</a>, <a href="../nloptr/index.html">nloptr</a>, <a href="../gridExtra/index.html">gridExtra</a>, <a href="../mvtnorm/index.html">mvtnorm</a>, <a href="../latticeExtra/index.html">latticeExtra</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../pez/index.html">pez</a>, <a href="../tidyr/index.html">tidyr</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../covr/index.html">covr</a>, <a href="../picante/index.html">picante</a>, <a href="../rbenchmark/index.html">rbenchmark</a>, INLA, <a href="../MCMCglmm/index.html">MCMCglmm</a>, <a href="../logistf/index.html">logistf</a>, <a href="../phylolm/index.html">phylolm</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-11-13</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Anthony Ives [aut],
+  Russell Dinnage <a href="https://orcid.org/0000-0003-0846-2819"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Lucas A. Nell <a href="https://orcid.org/0000-0003-3209-0517"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Matthew Helmus [aut],
+  Daijiang Li <a href="https://orcid.org/0000-0002-0925-3421"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Daijiang Li  &#x3c;&#x64;&#x61;&#x69;&#x6a;&#x69;&#x61;&#x6e;&#x67;&#x6c;&#x65;&#x65;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/daijiang/phyr/issues">https://github.com/daijiang/phyr/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/daijiang/phyr/">https://github.com/daijiang/phyr/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_phyr.html">phyr results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package phyr downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="phyr.pdf"> phyr.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/benchmarks.html">Performance benchmark</a><br/>
+<a href="vignettes/pglmm.html">Usage of pglmm()</a><br/>
+<a href="vignettes/plot-re.html">Plot random terms of communityPGLMM</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/phyr_1.0.2.tar.gz"> phyr_1.0.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/phyr_1.0.2.zip">phyr_1.0.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/phyr_1.0.2.zip">phyr_1.0.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/phyr_1.0.2.zip">phyr_1.0.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/phyr_1.0.2.tgz">phyr_1.0.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/phyr_1.0.2.tgz">phyr_1.0.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/phyr"> phyr archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=phyr"><samp>https://CRAN.R-project.org/package=phyr</samp></a>
+to link to this page.</p>
+</body>
+</html>

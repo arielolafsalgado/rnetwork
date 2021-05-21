@@ -1,0 +1,37 @@
+Package: PheCAP
+Type: Package
+Title: High-Throughput Phenotyping with EHR using a Common Automated
+        Pipeline
+Version: 1.1.0
+Authors@R: c(
+    person("Yichi", "Zhang", role = "aut"),
+    person("Chuan", "Hong", role = "aut"),
+    person("Tianxi", "Cai", role = "aut"),
+    person(family = "PARSE LTD", role =  c("aut", "cre"), email = "software@parse-health.org")
+    )
+Description: Implement surrogate-assisted feature extraction (SAFE) and
+             common machine learning approaches to train and validate phenotyping models.
+             Background and details about the methods can be found at 
+             Zhang et al. (2019) <doi:10.1038/s41596-019-0227-6>,
+             Yu et al. (2017) <doi:10.1093/jamia/ocw135>, and 
+             Liao et al. (2015) <doi:10.1136/bmj.h1885>.
+URL: https://celehs.github.io/PheCAP/, https://github.com/celehs/PheCAP
+BugReports: https://github.com/celehs/PheCAP/issues
+License: GPL-3
+Encoding: UTF-8
+ByteCompile: yes
+Imports: graphics, methods, stats, utils, glmnet, RMySQL
+Suggests: ggplot2, e1071, randomForestSRC, xgboost, knitr
+VignetteBuilder: knitr
+Depends: R (>= 3.3.0)
+RoxygenNote: 6.1.1
+LazyData: true
+NeedsCompilation: no
+Packaged: 2020-04-28 13:16:07 UTC; celehs
+Author: Yichi Zhang [aut],
+  Chuan Hong [aut],
+  Tianxi Cai [aut],
+  PARSE LTD [aut, cre]
+Maintainer: PARSE LTD <software@parse-health.org>
+Repository: CRAN
+Date/Publication: 2020-05-02 13:10:06 UTC

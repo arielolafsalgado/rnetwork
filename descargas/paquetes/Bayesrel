@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package Bayesrel</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=Bayesrel" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="Bayesrel: Bayesian Reliability Estimation" />
+<meta name="og:description" content="Functionality for the most common single test reliability estimates is provided: Coefficient alpha, 'Guttman's' lambda-2/-4/-6, the greatest lower bound and coefficient omega. The Bayesian estimates are provided with credible intervals. The frequentist estimates are provided with bootstrapped confidence intervals The method for the Bayesian estimates, except for omega, is sampling from the posterior inverse 'Wishart' for the covariance matrix based measures. See 'Murphy' (2007) &amp;lt;&lt;a href=&quot;https://www.seas.harvard.edu/courses/cs281/papers/murphy-2007.pdf&quot;&gt;https://www.seas.harvard.edu/courses/cs281/papers/murphy-2007.pdf&lt;/a&gt;&amp;gt;. In the case of omega it is 'Gibbs' Sampling from the joint conditional distributions of a single factor model. See 'Lee' (2007, &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2F9780470024737&quot;&gt;doi:10.1002/9780470024737&lt;/a&gt;&amp;gt;). The glb method is adjusted code from the 'Rcsdp' package by 'Hector Corrada Bravo', &amp;lt;&lt;a href=&quot;https://CRAN.R-project.org/package=Rcsdp&quot;&gt;https://CRAN.R-project.org/package=Rcsdp&lt;/a&gt;&amp;gt;; lambda-4 is from 'Benton' (2015) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2F978-3-319-07503-7_19&quot;&gt;doi:10.1007/978-3-319-07503-7_19&lt;/a&gt;&amp;gt;; the principal factor analysis for the frequentist omega is from 'Schlegel' (2017) &amp;lt;&lt;a href=&quot;https://www.r-bloggers.com/iterated-principal-factor-method-of-factor-analysis-with-r/&quot;&gt;https://www.r-bloggers.com/iterated-principal-factor-method-of-factor-analysis-with-r/&lt;/a&gt;&amp;gt;; and the analytic alpha interval is from 'Bonett' and 'Wright' (2014) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fjob.1960&quot;&gt;doi:10.1002/job.1960&lt;/a&gt;&amp;gt;. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=Bayesrel" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>Bayesrel: Bayesian Reliability Estimation</h2>
+<p>Functionality for the most common single test reliability estimates is provided:  
+    Coefficient alpha, 'Guttman's' lambda-2/-4/-6, the greatest lower bound and coefficient omega. 
+    The Bayesian estimates are provided with credible intervals. 
+    The frequentist estimates are provided with bootstrapped confidence intervals
+    The method for the Bayesian estimates, except for omega, 
+    is sampling from the posterior inverse 'Wishart' for the covariance matrix based measures. 
+    See 'Murphy' (2007) &lt;<a href="https://www.seas.harvard.edu/courses/cs281/papers/murphy-2007.pdf">https://www.seas.harvard.edu/courses/cs281/papers/murphy-2007.pdf</a>&gt;. 
+    In the case of omega it is 'Gibbs' Sampling from the joint conditional distributions of a single factor model. 
+    See 'Lee' (2007, &lt;<a href="https://doi.org/10.1002%2F9780470024737">doi:10.1002/9780470024737</a>&gt;). 
+    The glb method is adjusted code from the 'Rcsdp' package by 'Hector Corrada Bravo', 
+    &lt;<a href="https://CRAN.R-project.org/package=Rcsdp">https://CRAN.R-project.org/package=Rcsdp</a>&gt;; 
+    lambda-4 is from 'Benton' (2015) &lt;<a href="https://doi.org/10.1007%2F978-3-319-07503-7_19">doi:10.1007/978-3-319-07503-7_19</a>&gt;; 
+    the principal factor analysis for the frequentist omega is from 'Schlegel' (2017) 
+    &lt;<a href="https://www.r-bloggers.com/iterated-principal-factor-method-of-factor-analysis-with-r/">https://www.r-bloggers.com/iterated-principal-factor-method-of-factor-analysis-with-r/</a>&gt;; 
+    and the analytic alpha interval is from 'Bonett' and 'Wright' (2014) &lt;<a href="https://doi.org/10.1002%2Fjob.1960">doi:10.1002/job.1960</a>&gt;. </p>
+<table summary="Package Bayesrel summary">
+<tr>
+<td>Version:</td>
+<td>0.6.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../LaplacesDemon/index.html">LaplacesDemon</a>, <a href="../Rcsdp/index.html">Rcsdp</a>, <a href="../MASS/index.html">MASS</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../ggridges/index.html">ggridges</a>, <a href="../lavaan/index.html">lavaan</a>, <a href="../plotrix/index.html">plotrix</a>, <a href="../coda/index.html">coda</a>, methods, stats, graphics, <a href="../Rdpack/index.html">Rdpack</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a> (&ge; 2.1.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-03-04</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Julius M. Pfadt and Don van den Bergh</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Julius M. Pfadt  &#x3c;&#x6a;&#x75;&#x6c;&#x69;&#x75;&#x73;&#x2e;&#x70;&#x66;&#x61;&#x64;&#x74;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_Bayesrel.html">Bayesrel results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package Bayesrel downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="Bayesrel.pdf"> Bayesrel.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/Bayesrel_0.6.1.tar.gz"> Bayesrel_0.6.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/Bayesrel_0.6.1.zip">Bayesrel_0.6.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/Bayesrel_0.6.1.zip">Bayesrel_0.6.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/Bayesrel_0.6.1.zip">Bayesrel_0.6.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/Bayesrel_0.6.1.tgz">Bayesrel_0.6.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/Bayesrel_0.6.1.tgz">Bayesrel_0.6.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/Bayesrel"> Bayesrel archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=Bayesrel"><samp>https://CRAN.R-project.org/package=Bayesrel</samp></a>
+to link to this page.</p>
+</body>
+</html>

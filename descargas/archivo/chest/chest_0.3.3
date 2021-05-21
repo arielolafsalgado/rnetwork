@@ -1,0 +1,31 @@
+Package: chest
+Type: Package
+Title: Change-in-Estimate Approach to Assess Confounding Effects
+Version: 0.3.3
+Authors@R: person("Zhiqiang", "Wang", email = "zhiqiang.wang@menzies.edu.au", role = c("aut", "cre"))
+Description: Applies the change-in-effect estimate method to assess confounding 
+    effects in medical and epidemiological research (Greenland & Pearce (2016) 
+    <doi:10.1146/annurev-publhealth-031914-122559> ). It starts with a crude model 
+    including only the outcome and exposure variables. At each of the subsequent 
+    steps, one variable which creates the largest change among the remaining variables 
+    is selected. This process is repeated until all variables have been entered into 
+    the model (Wang Z (2007) <doi:10.1177/1536867X0700700203> ). Currently, the 'chest' 
+    package has functions for linear regression, logistic regression, negative 
+    binomial regression, Cox proportional hazards model and conditional logistic 
+    regression. 
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports: broom, ggplot2, survival, grid, speedglm, forestplot, MASS,
+        tibble, dplyr
+Depends: R (>= 2.20)
+RoxygenNote: 7.1.1
+Suggests: spelling, knitr, rmarkdown
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2020-07-12 00:57:46 UTC; uqzwang
+Author: Zhiqiang Wang [aut, cre]
+Maintainer: Zhiqiang Wang <zhiqiang.wang@menzies.edu.au>
+Repository: CRAN
+Date/Publication: 2020-07-12 07:20:05 UTC

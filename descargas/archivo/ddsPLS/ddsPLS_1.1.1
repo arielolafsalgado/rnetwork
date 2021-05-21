@@ -1,0 +1,41 @@
+Package: ddsPLS
+Version: 1.1.1
+Date: 2019-09-26
+Title: Data-Driven Sparse Partial Least Squares Robust to Missing
+        Samples for Mono and Multi-Block Data Sets
+Description: Allows to build Multi-Data-Driven Sparse Partial Least Squares models. Multi-blocks with 
+    high-dimensional settings are particularly sensible to this. It comes with visualization
+    functions and uses 'Rcpp' functions for fast computations and 'doParallel' to parallelize cross-validation.
+    This is based on H Lorenzo, J Saracco, R Thiebaut (2019) <arXiv:1901.04380>.
+    Many applications have been successfully realized.
+    See <https://hadrienlorenzo.netlify.com/> for more information, documentation and examples.
+Authors@R: c(person("Hadrien","Lorenzo", role = c("aut", "cre"),
+                     email = "hadrien.lorenzo.2015@gmail.com"),
+             person("Misbah","Razzaq", role = "ctb",
+                     email = "misbah.razzaq@u-bordeaux.fr"),
+             person("Jerome","Saracco", role = c("aut"),
+                     email = "jerome.saracco@math.u-bordeaux1.fr"),
+             person("Rodolphe","Thiebaut", role = c("aut"),
+                     email = "rodolphe.thiebaut@u-bordeaux.fr"))
+Maintainer: Hadrien Lorenzo <hadrien.lorenzo.2015@gmail.com>
+License: MIT + file LICENSE
+Encoding: UTF-8
+ByteCompile: true
+RoxygenNote: 6.1.1
+Imports:
+        RColorBrewer,MASS,graphics,stats,Rdpack,doParallel,foreach,parallel,corrplot,Rcpp
+        (>= 0.12.18)
+RdMacros: Rdpack
+Suggests: knitr,rmarkdown,htmltools
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+LinkingTo: Rcpp
+URL: https://hadrienlorenzo.netlify.com/
+NeedsCompilation: yes
+Packaged: 2019-09-26 15:07:56 UTC; hl1
+Author: Hadrien Lorenzo [aut, cre],
+  Misbah Razzaq [ctb],
+  Jerome Saracco [aut],
+  Rodolphe Thiebaut [aut]
+Repository: CRAN
+Date/Publication: 2019-09-26 15:30:02 UTC

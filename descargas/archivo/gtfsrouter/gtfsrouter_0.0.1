@@ -1,0 +1,29 @@
+Package: gtfsrouter
+Title: Routing with GTFS (General Transit Feed Specification) Data
+Version: 0.0.1
+Authors@R: c(
+    person("Mark", "Padgham",
+            email="mark.padgham@email.com",
+            role=c("aut", "cre")))
+Description: Use GTFS (General Transit Feed Specification) data for routing from
+    nominated start and end stations, and for extracting isochrones from
+    nominated start station.
+License: GPL-3
+Depends: R (>= 2.10)
+Imports: data.table, methods, Rcpp (>= 0.12.6)
+Suggests: alphahull, geodist, here, hms, lubridate, lwgeom, knitr,
+        mapview, rmarkdown, sf, testthat
+LinkingTo: Rcpp
+SystemRequirements: C++11
+NeedsCompilation: yes
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/ATFutures/gtfs-router
+BugReports: https://github.com/ATFutures/gtfs-router/issues
+RoxygenNote: 6.1.1
+Packaged: 2019-03-19 09:05:11 UTC; markus
+Author: Mark Padgham [aut, cre]
+Maintainer: Mark Padgham <mark.padgham@email.com>
+Repository: CRAN
+Date/Publication: 2019-03-22 17:20:20 UTC

@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package mkin</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Kinetic Evaluation of Chemical Degradation Data [R package mkin version 0.9.50.3]" />
+<meta name="citation_author" content="Johannes Ranke" />
+<meta name="citation_publication_date" content="2020-10-08" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=mkin" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=mkin" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="mkin: Kinetic Evaluation of Chemical Degradation Data" />
+<meta name="og:description" content="Calculation routines based on the FOCUS Kinetics Report (2006, 2014). Includes a function for conveniently defining differential equation models, model solution based on eigenvalues if possible or using numerical solvers. If a C compiler (on windows: 'Rtools') is installed, differential equation models are solved using automatically generated C functions. Please note that no warranty is implied for correctness of results or fitness for a particular purpose." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=mkin" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>mkin: Kinetic Evaluation of Chemical Degradation Data</h2>
+<p>Calculation routines based on the FOCUS Kinetics Report (2006,
+  2014).  Includes a function for conveniently defining differential equation
+  models, model solution based on eigenvalues if possible or using numerical
+  solvers.  If a C compiler (on windows: 'Rtools') is installed, differential
+  equation models are solved using automatically generated C functions.  Please
+  note that no warranty is implied for correctness of results or fitness for a
+  particular purpose.</p>
+<table summary="Package mkin summary">
+<tr>
+<td>Version:</td>
+<td>0.9.50.3</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>stats, graphics, methods, <a href="../deSolve/index.html">deSolve</a>, <a href="../R6/index.html">R6</a>, <a href="../inline/index.html">inline</a>, parallel, <a href="../numDeriv/index.html">numDeriv</a>, <a href="../lmtest/index.html">lmtest</a>, <a href="../pkgbuild/index.html">pkgbuild</a>, <a href="../nlme/index.html">nlme</a> (&ge; 3.1-149), <a href="../purrr/index.html">purrr</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rbenchmark/index.html">rbenchmark</a>, <a href="../tikzDevice/index.html">tikzDevice</a>, <a href="../testthat/index.html">testthat</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../covr/index.html">covr</a>, <a href="../vdiffr/index.html">vdiffr</a>, <a href="../benchmarkme/index.html">benchmarkme</a>, <a href="../tibble/index.html">tibble</a>, stats4</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-08</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Johannes Ranke <a href="https://orcid.org/0000-0003-4371-6538"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre, cph],
+  Katrin Lindenberger [ctb],
+  René Lehmann [ctb],
+  Eurofins Regulatory AG [cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Johannes Ranke  &#x3c;&#x6a;&#x72;&#x61;&#x6e;&#x6b;&#x65;&#x20;&#x61;&#x74;&#x20;&#x75;&#x6e;&#x69;&#x2d;&#x62;&#x72;&#x65;&#x6d;&#x65;&#x6e;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/jranke/mkin/issues/">https://github.com/jranke/mkin/issues/</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://pkgdown.jrwb.de/mkin/">https://pkgdown.jrwb.de/mkin/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-GB</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/DifferentialEquations.html">DifferentialEquations</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_mkin.html">mkin results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package mkin downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="mkin.pdf"> mkin.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/FOCUS_D.html">Example evaluation of FOCUS Example Dataset D</a><br/>
+<a href="vignettes/FOCUS_L.html">Example evaluation of FOCUS Laboratory Data L1 to L3</a><br/>
+<a href="vignettes/mkin.html">mkin - Kinetic evaluation of chemical degradation data</a><br/>
+<a href="vignettes/twa.html">Calculation of time weighted average concentrations with mkin</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/mkin_0.9.50.3.tar.gz"> mkin_0.9.50.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/mkin_0.9.50.3.zip">mkin_0.9.50.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/mkin_0.9.50.3.zip">mkin_0.9.50.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/mkin_0.9.50.3.zip">mkin_0.9.50.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/mkin_0.9.50.3.tgz">mkin_0.9.50.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/mkin_0.9.50.3.tgz">mkin_0.9.50.3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/mkin"> mkin archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=mkin"><samp>https://CRAN.R-project.org/package=mkin</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package feisr</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Estimating Fixed Effects Individual Slope Models [R package feisr version 1.1.1]" />
+<meta name="citation_author1" content="Tobias Ruettenauer" />
+<meta name="citation_author2" content="Volker Ludwig" />
+<meta name="citation_publication_date" content="2020-06-17" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=feisr" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=feisr" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="feisr: Estimating Fixed Effects Individual Slope Models" />
+<meta name="og:description" content="Provides the function feis() to estimate fixed effects individual slope (FEIS) models. The FEIS model constitutes a more general version of the often-used fixed effects (FE) panel model, as implemented in the package 'plm' by Croissant and Millo (2008) &amp;lt;&lt;a href=&quot;https://doi.org/10.18637%2Fjss.v027.i02&quot;&gt;doi:10.18637/jss.v027.i02&lt;/a&gt;&amp;gt;. In FEIS models, data are not only person demeaned like in conventional FE models, but detrended by the predicted individual slope of each person or group. Estimation is performed by applying least squares lm() to the transformed data. For more details on FEIS models see Bruederl and Ludwig (2015, ISBN:1446252442); Frees (2001) &amp;lt;&lt;a href=&quot;https://doi.org/10.2307%2F3316008&quot;&gt;doi:10.2307/3316008&lt;/a&gt;&amp;gt;; Polachek and Kim (1994) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2F0304-4076%2894%2990075-2&quot;&gt;doi:10.1016/0304-4076(94)90075-2&lt;/a&gt;&amp;gt;; Ruettenauer and Ludwig (2020) &amp;lt;&lt;a href=&quot;https://doi.org/10.1177%2F0049124120926211&quot;&gt;doi:10.1177/0049124120926211&lt;/a&gt;&amp;gt;; Wooldridge (2010, ISBN:0262294354). To test consistency of conventional FE and random effects estimators against heterogeneous slopes, the package also provides the functions feistest() for an artificial regression test and bsfeistest() for a bootstrapped version of the Hausman test." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=feisr" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>feisr: Estimating Fixed Effects Individual Slope Models</h2>
+<p>Provides the function feis() to estimate fixed effects individual 
+    slope (FEIS) models. The FEIS model constitutes a more general version of 
+    the often-used fixed effects (FE) panel model, as implemented in the 
+    package 'plm' by Croissant and Millo (2008) &lt;<a href="https://doi.org/10.18637%2Fjss.v027.i02">doi:10.18637/jss.v027.i02</a>&gt;. 
+    In FEIS models, data are not only person demeaned like in conventional 
+    FE models, but detrended by the predicted individual slope of each 
+    person or group. Estimation is performed by applying least squares lm() 
+    to the transformed data. For more details on FEIS models see Bruederl and 
+    Ludwig (2015, ISBN:1446252442); Frees (2001) &lt;<a href="https://doi.org/10.2307%2F3316008">doi:10.2307/3316008</a>&gt;; 
+    Polachek and Kim (1994) &lt;<a href="https://doi.org/10.1016%2F0304-4076%2894%2990075-2">doi:10.1016/0304-4076(94)90075-2</a>&gt;; 
+	Ruettenauer and Ludwig (2020) &lt;<a href="https://doi.org/10.1177%2F0049124120926211">doi:10.1177/0049124120926211</a>&gt;;
+    Wooldridge (2010, ISBN:0262294354). To test consistency of conventional FE 
+    and random effects estimators against heterogeneous slopes, the package 
+    also provides the functions feistest() for an artificial regression test 
+    and bsfeistest() for a bootstrapped version of the Hausman test.</p>
+<table summary="Package feisr summary">
+<tr>
+<td>Version:</td>
+<td>1.1.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.4.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../aod/index.html">aod</a>, <a href="../Formula/index.html">Formula</a>, <a href="../plm/index.html">plm</a>, <a href="../Rdpack/index.html">Rdpack</a>, stats, <a href="../dplyr/index.html">dplyr</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../texreg/index.html">texreg</a> (&ge; 1.37.1), <a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../ggplot2/index.html">ggplot2</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-17</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Tobias Ruettenauer
+    <a href="https://orcid.org/0000-0001-5747-9735"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut, cre],
+  Volker Ludwig <a href="https://orcid.org/0000-0003-3118-3172"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Tobias Ruettenauer  &#x3c;&#x72;&#x75;&#x65;&#x74;&#x74;&#x65;&#x6e;&#x61;&#x75;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x73;&#x6f;&#x77;&#x69;&#x2e;&#x75;&#x6e;&#x69;&#x2d;&#x6b;&#x6c;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ruettenauer/feisr/issues">https://github.com/ruettenauer/feisr/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/ruettenauer/feisr">https://github.com/ruettenauer/feisr</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">feisr citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Econometrics.html">Econometrics</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_feisr.html">feisr results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package feisr downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="feisr.pdf"> feisr.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/feisr-vignette.html">Fixed Effects Individual Slopes using feisr</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/feisr_1.1.1.tar.gz"> feisr_1.1.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/feisr_1.1.1.zip">feisr_1.1.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/feisr_1.1.1.zip">feisr_1.1.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/feisr_1.1.1.zip">feisr_1.1.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/feisr_1.1.1.tgz">feisr_1.1.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/feisr_1.1.1.tgz">feisr_1.1.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/feisr"> feisr archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package feisr reverse dependencies">
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../insight/index.html">insight</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;enhances:</td>
+<td><a href="../texreg/index.html">texreg</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=feisr"><samp>https://CRAN.R-project.org/package=feisr</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,32 @@
+Package: diversityForest
+Type: Package
+Title: Diversity Forests
+Version: 0.1.0
+Date: 2020-01-07
+Author: Roman Hornung [aut, cre], Marvin N. Wright [ctb, cph]
+Maintainer: Roman Hornung <hornung@ibe.med.uni-muenchen.de>
+Description: Implements diversity forests as described in an
+  upcoming paper by the author of the package.
+  This package is a fork of the R package 'ranger' (main author: 
+  Marvin N. Wright) that implements random forests using an efficient C++ 
+  implementation. More precisely, 'diversityForest' was written by modifying 
+  the code of 'ranger', version 0.11.0. Therefore, details on further 
+  functionalities of the code that are not presented in the help pages of 
+  'diversityForest' are found in the help pages of 'ranger' (version 0.11.0). 
+  The code in the example sections of the 'diversityForest' manual can be used 
+  as a template for all basic application scenarios with respect to 
+  classification using univariate, binary splitting. Some function 
+  arguments adopted from the 'ranger' package are not be useable
+  with diversity forests (for the current package version).
+SystemRequirements: C++11
+Encoding: UTF-8
+License: GPL-3
+Imports: Rcpp (>= 0.11.2), Matrix
+LinkingTo: Rcpp, RcppEigen
+Depends: R (>= 3.1)
+Suggests: survival, testthat
+RoxygenNote: 6.1.1
+NeedsCompilation: yes
+Packaged: 2020-01-07 08:43:34 UTC; hornung
+Repository: CRAN
+Date/Publication: 2020-01-08 16:20:09 UTC

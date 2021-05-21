@@ -1,0 +1,32 @@
+Package: BTM
+Type: Package
+Title: Biterm Topic Models for Short Text
+Version: 0.3.1
+Maintainer: Jan Wijffels <jwijffels@bnosac.be>
+Authors@R: c(
+    person('Jan', 'Wijffels', role = c('aut', 'cre', 'cph'), email = 'jwijffels@bnosac.be', comment = "R wrapper"), 
+    person('BNOSAC', role = 'cph', comment = "R wrapper"), 
+    person('Xiaohui Yan', role = c('ctb', 'cph'), email = 'xhcloud@gmail.com', comment = "BTM C++ library"))
+Description: Biterm Topic Models find topics in collections of short texts. 
+    It is a word co-occurrence based topic model that learns topics by modeling word-word co-occurrences patterns which are called biterms.
+    This in contrast to traditional topic models like Latent Dirichlet Allocation and Probabilistic Latent Semantic Analysis 
+    which are word-document co-occurrence topic models.
+    A biterm consists of two words co-occurring in the same short text window.  
+    This context window can for example be a twitter message, a short answer on a survey, a sentence of a text or a document identifier. 
+    The techniques are explained in detail in the paper 'A Biterm Topic Model For Short Text' by Xiaohui Yan, Jiafeng Guo, Yanyan Lan, Xueqi Cheng (2013) <https://github.com/xiaohuiyan/xiaohuiyan.github.io/blob/master/paper/BTM-WWW13.pdf>.
+License: Apache License 2.0
+URL: https://github.com/bnosac/BTM
+Encoding: UTF-8
+LazyData: true
+Imports: Rcpp, utils
+Suggests: udpipe, data.table
+LinkingTo: Rcpp
+RoxygenNote: 7.1.0
+SystemRequirements: C++11
+NeedsCompilation: yes
+Packaged: 2020-05-02 06:15:39 UTC; Jan
+Author: Jan Wijffels [aut, cre, cph] (R wrapper),
+  BNOSAC [cph] (R wrapper),
+  Xiaohui Yan [ctb, cph] (BTM C++ library)
+Repository: CRAN
+Date/Publication: 2020-05-02 06:40:02 UTC

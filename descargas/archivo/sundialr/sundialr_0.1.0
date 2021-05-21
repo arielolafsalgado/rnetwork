@@ -1,0 +1,52 @@
+Package: sundialr
+Type: Package
+Title: An Interface to 'SUNDIALS' Ordinary Differential Equation (ODE)
+        Solvers
+Version: 0.1.0
+Authors@R: c(
+    person("Satyaprakash", "Nayak", "", "sn248@cornell.edu", c("aut", "cre")),
+    person("Scott D", "Cohen", "", "", c("ctb")),
+    person("Alan C", "Hindmarsh", "", "", c("ctb")),
+    person("Radu", "Serban", "", "", c("ctb")),
+    person("Dan", "Shumaker", "", "", c("ctb")),
+    person("Daniel R", "Reynolds", "", "", c("ctb")),
+    person("Aaron", "Collier", "", "", c("ctb")),
+    person("David", "Gardner", "", "", c("ctb")),
+    person("Carol", "Woodward", "", "", c("ctb")),
+    person("Slaven", "Peles", "", "", c("ctb")),
+    person("Peter", "Brown", "", "", c("ctb")),
+    person("Hilari C", "Tiedeman", "", "", c("ctb")),
+    person("Ting", "Yan", "", "", c("ctb")),
+    person("Lawrence Livermore National Security", role =  c("cph")),
+    person("Southern Methodist University", role =  c("cph"))
+    )
+Maintainer: Satyaprakash Nayak <sn248@cornell.edu>
+URL: https://github.com/sn248/sundialr
+BugReports: https://github.com/sn248/sundialr/issues
+Description: Provides a way to call the functions in 'SUNDIALS' C ODE solving library (<https://computation.llnl.gov/projects/sundials>). Currently the serial version of ODE solver, 'CVODE' from the library can be accessed. The package requires ODE to be written using 'Rcpp' and does not require the libraries to be installed on the system.
+License: GPL (>= 2)
+LazyData: TRUE
+Imports: Rcpp (>= 0.12.5)
+LinkingTo: Rcpp
+RoxygenNote: 6.0.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2018-07-02 12:23:07 UTC; nayaks16
+Author: Satyaprakash Nayak [aut, cre],
+  Scott D Cohen [ctb],
+  Alan C Hindmarsh [ctb],
+  Radu Serban [ctb],
+  Dan Shumaker [ctb],
+  Daniel R Reynolds [ctb],
+  Aaron Collier [ctb],
+  David Gardner [ctb],
+  Carol Woodward [ctb],
+  Slaven Peles [ctb],
+  Peter Brown [ctb],
+  Hilari C Tiedeman [ctb],
+  Ting Yan [ctb],
+  Lawrence Livermore National Security [cph],
+  Southern Methodist University [cph]
+Repository: CRAN
+Date/Publication: 2018-07-05 08:30:03 UTC

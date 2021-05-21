@@ -1,0 +1,23 @@
+Package: TGS
+Title: Rapid Reconstruction of Time-Varying Gene Regulatory Networks
+Version: 1.0.0
+Authors@R: c(person("Manan", "Gupta", , "guptamanan100@gmail.com", c("aut", "cre")),person("Saptarshi", "Pyne", ,"saptarshipyne01@gmail.com", role = "aut"),person("Alok", "Kumar", ,"alok4039@gmail.com", role = "aut"),   person("Ashish", "Anand", , "anand.ashish@iitg.ac.in", role = "aut"))
+Description: Rapid advancement in high-throughput gene expression measurement technologies has resulted in genome- scale time series datasets. Uncovering the underlying temporal sequence of gene regulatory events in the form of time-varying Gene Regulatory Networks (GRNs) demands computationally fast, accurate and highly scalable algorithms. To provide a flexible framework in a significantly time-efficient manner, a novel algorithm, namely TGS (Ashish Anand et al., 2018 <doi:10.1109/TCBB.2018.2861698>), is proposed here. TGS is shown to consume only 29 minutes for a microarray dataset with 4028 genes. Moreover, it provides the flexibility and time-efficiency, without losing the accuracy. Nevertheless, TGS’s main memory requirement grows exponentially with the number of genes, which it tackles by restricting the maximum number of regulators for each gene. Relaxing this restriction remains an important challenge as the true number of regulators is not known a prior. 
+License: CC BY-NC-SA 4.0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+biocViews:
+Imports: minet, stats, base, utils, bnstruct, ggm, foreach, doParallel,
+        rjson
+Suggests: R.rsp
+VignetteBuilder: R.rsp
+NeedsCompilation: no
+Packaged: 2018-11-07 11:12:19 UTC; cse
+Author: Manan Gupta [aut, cre],
+  Saptarshi Pyne [aut],
+  Alok Kumar [aut],
+  Ashish Anand [aut]
+Maintainer: Manan Gupta <guptamanan100@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-11-16 16:10:13 UTC

@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package anomalize</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Tidy Anomaly Detection [R package anomalize version 0.2.2]" />
+<meta name="citation_author1" content="Matt Dancho" />
+<meta name="citation_author2" content="Davis Vaughan" />
+<meta name="citation_publication_date" content="2020-10-20" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=anomalize" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=anomalize" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="anomalize: Tidy Anomaly Detection" />
+<meta name="og:description" content=" The 'anomalize' package enables a &quot;tidy&quot; workflow for detecting anomalies in data. The main functions are time_decompose(), anomalize(), and time_recompose(). When combined, it's quite simple to decompose time series, detect anomalies, and create bands separating the &quot;normal&quot; data from the anomalous data at scale (i.e. for multiple time series). Time series decomposition is used to remove trend and seasonal components via the time_decompose() function and methods include seasonal decomposition of time series by Loess (&quot;stl&quot;) and seasonal decomposition by piecewise medians (&quot;twitter&quot;). The anomalize() function implements two methods for anomaly detection of residuals including using an inner quartile range (&quot;iqr&quot;) and generalized extreme studentized deviation (&quot;gesd&quot;). These methods are based on those used in the 'forecast' package and the Twitter 'AnomalyDetection' package. Refer to the associated functions for specific references for these methods. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=anomalize" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>anomalize: Tidy Anomaly Detection</h2>
+<p>
+    The 'anomalize' package enables a "tidy" workflow for detecting anomalies in data.
+    The main functions are time_decompose(), anomalize(), and time_recompose().
+    When combined, it's quite simple to decompose time series, detect anomalies,
+    and create bands separating the "normal" data from the anomalous data at scale (i.e. for multiple time series). 
+    Time series decomposition is used to remove trend and seasonal components via the time_decompose() function
+    and methods include seasonal decomposition of time series by Loess ("stl") and 
+    seasonal decomposition by piecewise medians ("twitter"). The anomalize() function implements
+    two methods for anomaly detection of residuals including using an inner quartile range ("iqr")
+    and generalized extreme studentized deviation ("gesd"). These methods are based on
+    those used in the 'forecast' package and the Twitter 'AnomalyDetection' package. 
+    Refer to the associated functions for specific references for these methods. </p>
+<table summary="Package anomalize summary">
+<tr>
+<td>Version:</td>
+<td>0.2.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../dplyr/index.html">dplyr</a>, <a href="../glue/index.html">glue</a>, <a href="../timetk/index.html">timetk</a>, <a href="../sweep/index.html">sweep</a>, <a href="../tibbletime/index.html">tibbletime</a> (&ge; 0.1.5), <a href="../purrr/index.html">purrr</a>, <a href="../rlang/index.html">rlang</a>, <a href="../tibble/index.html">tibble</a>, <a href="../tidyr/index.html">tidyr</a> (&ge; 1.0.0), <a href="../ggplot2/index.html">ggplot2</a>, <a href="../cli/index.html">cli</a>, <a href="../crayon/index.html">crayon</a>, <a href="../rstudioapi/index.html">rstudioapi</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../tidyverse/index.html">tidyverse</a>, <a href="../tidyquant/index.html">tidyquant</a>, <a href="../stringr/index.html">stringr</a>, <a href="../testthat/index.html">testthat</a> (&ge; 2.1.0), <a href="../covr/index.html">covr</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../devtools/index.html">devtools</a>, <a href="../roxygen2/index.html">roxygen2</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-20</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Matt Dancho [aut, cre],
+  Davis Vaughan [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Matt Dancho  &#x3c;&#x6d;&#x64;&#x61;&#x6e;&#x63;&#x68;&#x6f;&#x20;&#x61;&#x74;&#x20;&#x62;&#x75;&#x73;&#x69;&#x6e;&#x65;&#x73;&#x73;&#x2d;&#x73;&#x63;&#x69;&#x65;&#x6e;&#x63;&#x65;&#x2e;&#x69;&#x6f;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/business-science/anomalize/issues">https://github.com/business-science/anomalize/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL (&ge; 3)</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/business-science/anomalize">https://github.com/business-science/anomalize</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_anomalize.html">anomalize results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package anomalize downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="anomalize.pdf"> anomalize.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/anomalize_methods.html">Anomalize Methods</a><br/>
+<a href="vignettes/anomalize_quick_start_guide.html">Anomalize Quick Start Guide</a><br/>
+<a href="vignettes/forecasting_with_cleaned_anomalies.html">Forecasting with Cleaned Anomalies</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/anomalize_0.2.2.tar.gz"> anomalize_0.2.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/anomalize_0.2.2.zip">anomalize_0.2.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/anomalize_0.2.2.zip">anomalize_0.2.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/anomalize_0.2.2.zip">anomalize_0.2.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/anomalize_0.2.2.tgz">anomalize_0.2.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/anomalize_0.2.2.tgz">anomalize_0.2.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/anomalize"> anomalize archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package anomalize reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../composits/index.html">composits</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=anomalize"><samp>https://CRAN.R-project.org/package=anomalize</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,32 @@
+Package: RCT
+Title: Assign Treatments, Power Calculations, Balances, Impact
+        Evaluation of Experiments
+Version: 1.0.0
+Authors@R: person("Isidoro", "Garcia-Urquieta", email = "isidoro.gu@gmail.com", 
+  role =c("aut", "cre"))
+Description: Assists in the whole process of designing and evaluating Randomized Control Trials.
+    Robust treatment assignment by strata/blocks, that handles misfits; 
+    Power calculations of the minimum detectable treatment effect
+    Balance tables of T-test of covariates; 
+    Balance Regression: (treatment ~ all x variables) with F-test of null model; 
+    Impact_evaluation: Impact evaluation regressions. This function
+    gives you the option to include control_vars, fixed effect variables,
+    cluster variables (for robust SE), multiple endogenous variables and
+    multiple heterogeneous variables (to test treatment effect heterogeneity)
+    summary_statistics: Function that creates a summary statistics table with statistics 
+    rank observations in n groups: Creates a factor variable with n groups. Each group has 
+    a min and max label attach to each category.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports: dplyr, purrr, glue, rlang, tidyr, stringr, MASS, pracma, lfe,
+        broom, forcats, magrittr, ggplot2, tidyselect (>= 1.0.0)
+Suggests: knitr, rmarkdown, testthat, qpdf
+RoxygenNote: 7.0.2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-04-03 05:46:37 UTC; Isidoro
+Author: Isidoro Garcia-Urquieta [aut, cre]
+Maintainer: Isidoro Garcia-Urquieta <isidoro.gu@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-04-03 17:50:05 UTC

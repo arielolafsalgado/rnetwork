@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package brms</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Bayesian Regression Models using 'Stan' [R package brms version 2.14.0]" />
+<meta name="citation_author" content="Paul-Christian Bürkner" />
+<meta name="citation_publication_date" content="2020-10-08" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=brms" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=brms" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="brms: Bayesian Regression Models using 'Stan'" />
+<meta name="og:description" content="Fit Bayesian generalized (non-)linear multivariate multilevel models using 'Stan' for full Bayesian inference. A wide range of distributions and link functions are supported, allowing users to fit &amp;ndash; among others &amp;ndash; linear, robust linear, count data, survival, response times, ordinal, zero-inflated, hurdle, and even self-defined mixture models all in a multilevel context. Further modeling options include non-linear and smooth terms, auto-correlation structures, censored data, meta-analytic standard errors, and quite a few more. In addition, all parameters of the response distribution can be predicted in order to perform distributional regression. Prior specifications are flexible and explicitly encourage users to apply prior distributions that actually reflect their beliefs. Model fit can easily be assessed and compared with posterior predictive checks and leave-one-out cross-validation. References: Bürkner (2017) &amp;lt;&lt;a href=&quot;https://doi.org/10.18637%2Fjss.v080.i01&quot;&gt;doi:10.18637/jss.v080.i01&lt;/a&gt;&amp;gt;; Bürkner (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.32614%2FRJ-2018-017&quot;&gt;doi:10.32614/RJ-2018-017&lt;/a&gt;&amp;gt;; Carpenter et al. (2017) &amp;lt;&lt;a href=&quot;https://doi.org/10.18637%2Fjss.v076.i01&quot;&gt;doi:10.18637/jss.v076.i01&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=brms" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>brms: Bayesian Regression Models using 'Stan'</h2>
+<p>Fit Bayesian generalized (non-)linear multivariate multilevel models
+    using 'Stan' for full Bayesian inference. A wide range of distributions 
+    and link functions are supported, allowing users to fit &ndash; among others &ndash; 
+    linear, robust linear, count data, survival, response times, ordinal, 
+    zero-inflated, hurdle, and even self-defined mixture models all in a 
+    multilevel context. Further modeling options include non-linear and 
+    smooth terms, auto-correlation structures, censored data, meta-analytic 
+    standard errors, and quite a few more. In addition, all parameters of the 
+    response distribution can be predicted in order to perform distributional 
+    regression. Prior specifications are flexible and explicitly encourage 
+    users to apply prior distributions that actually reflect their beliefs.
+    Model fit can easily be assessed and compared with posterior predictive 
+    checks and leave-one-out cross-validation. References: Bürkner (2017)
+    &lt;<a href="https://doi.org/10.18637%2Fjss.v080.i01">doi:10.18637/jss.v080.i01</a>&gt;; Bürkner (2018) &lt;<a href="https://doi.org/10.32614%2FRJ-2018-017">doi:10.32614/RJ-2018-017</a>&gt;;
+    Carpenter et al. (2017) &lt;<a href="https://doi.org/10.18637%2Fjss.v076.i01">doi:10.18637/jss.v076.i01</a>&gt;.</p>
+<table summary="Package brms summary">
+<tr>
+<td>Version:</td>
+<td>2.14.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0), <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.0), methods</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../rstan/index.html">rstan</a> (&ge; 2.19.2), <a href="../ggplot2/index.html">ggplot2</a> (&ge; 2.0.0), <a href="../loo/index.html">loo</a> (&ge; 2.3.1), <a href="../Matrix/index.html">Matrix</a> (&ge; 1.1.1), <a href="../mgcv/index.html">mgcv</a> (&ge; 1.8-13), <a href="../rstantools/index.html">rstantools</a> (&ge; 2.1.1), <a href="../bayesplot/index.html">bayesplot</a> (&ge; 1.5.0), <a href="../shinystan/index.html">shinystan</a> (&ge; 2.4.0), <a href="../bridgesampling/index.html">bridgesampling</a> (&ge; 0.3-0), <a href="../glue/index.html">glue</a> (&ge; 1.3.0), <a href="../matrixStats/index.html">matrixStats</a>, <a href="../nleqslv/index.html">nleqslv</a>, <a href="../nlme/index.html">nlme</a>, <a href="../coda/index.html">coda</a>, <a href="../abind/index.html">abind</a>, <a href="../future/index.html">future</a>, stats, utils, parallel, grDevices, <a href="../backports/index.html">backports</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a> (&ge; 0.9.1), <a href="../emmeans/index.html">emmeans</a> (&ge; 1.4.2), cmdstanr (&ge; 0.1.3), <a href="../RWiener/index.html">RWiener</a>, <a href="../rtdists/index.html">rtdists</a>, <a href="../mice/index.html">mice</a>, <a href="../spdep/index.html">spdep</a>, <a href="../mnormt/index.html">mnormt</a>, <a href="../lme4/index.html">lme4</a>, <a href="../MCMCglmm/index.html">MCMCglmm</a>, <a href="../splines2/index.html">splines2</a>, <a href="../ape/index.html">ape</a>, <a href="../arm/index.html">arm</a>, <a href="../statmod/index.html">statmod</a>, <a href="../digest/index.html">digest</a>, <a href="../R.rsp/index.html">R.rsp</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-08</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Paul-Christian Bürkner [aut, cre],
+  Jonah Gabry [ctb],
+  Sebastian Weber [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Paul-Christian Bürkner  &#x3c;&#x70;&#x61;&#x75;&#x6c;&#x2e;&#x62;&#x75;&#x65;&#x72;&#x6b;&#x6e;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/paul-buerkner/brms/issues">https://github.com/paul-buerkner/brms/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/paul-buerkner/brms">https://github.com/paul-buerkner/brms</a>,
+<a href="https://discourse.mc-stan.org/">https://discourse.mc-stan.org/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">brms citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Bayesian.html">Bayesian</a>, <a href="../../views/Phylogenetics.html">Phylogenetics</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_brms.html">brms results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package brms downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="brms.pdf"> brms.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/brms_customfamilies.html">Define Custom Response Distributions with brms</a><br/>
+<a href="vignettes/brms_distreg.html">Estimating Distributional Models with brms</a><br/>
+<a href="vignettes/brms_families.html">Parameterization of Response Distributions in brms</a><br/>
+<a href="vignettes/brms_missings.html">Handle Missing Values with brms</a><br/>
+<a href="vignettes/brms_monotonic.html">Estimating Monotonic Effects with brms</a><br/>
+<a href="vignettes/brms_multivariate.html">Estimating Multivariate Models with brms</a><br/>
+<a href="vignettes/brms_nonlinear.html">Estimating Non-Linear Models with brms</a><br/>
+<a href="vignettes/brms_phylogenetics.html">Estimating Phylogenetic Multilevel Models with brms</a><br/>
+<a href="vignettes/brms_threading.html">Running brms models with within-chain parallelization</a><br/>
+<a href="vignettes/brms_multilevel.pdf">Multilevel Models with brms</a><br/>
+<a href="vignettes/brms_overview.pdf">Overview of the brms Package</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/brms_2.14.0.tar.gz"> brms_2.14.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/brms_2.14.0.zip">brms_2.14.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/brms_2.14.0.zip">brms_2.14.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/brms_2.14.0.zip">brms_2.14.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/brms_2.14.0.tgz">brms_2.14.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/brms_2.14.0.tgz">brms_2.14.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/brms"> brms archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package brms reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../pollimetry/index.html">pollimetry</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../ESTER/index.html">ESTER</a>, <a href="../shinybrms/index.html">shinybrms</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../afex/index.html">afex</a>, <a href="../bayestestR/index.html">bayestestR</a>, <a href="../broom.mixed/index.html">broom.mixed</a>, <a href="../concurve/index.html">concurve</a>, <a href="../effectsize/index.html">effectsize</a>, <a href="../emmeans/index.html">emmeans</a>, <a href="../ggeffects/index.html">ggeffects</a>, <a href="../insight/index.html">insight</a>, <a href="../loo/index.html">loo</a>, <a href="../modelbased/index.html">modelbased</a>, <a href="../panelr/index.html">panelr</a>, <a href="../parameters/index.html">parameters</a>, <a href="../performance/index.html">performance</a>, <a href="../projpred/index.html">projpred</a>, <a href="../see/index.html">see</a>, <a href="../sjPlot/index.html">sjPlot</a>, <a href="../sjstats/index.html">sjstats</a>, <a href="../tidybayes/index.html">tidybayes</a>, <a href="../trending/index.html">trending</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;enhances:</td>
+<td><a href="../interactions/index.html">interactions</a>, <a href="../jtools/index.html">jtools</a>, <a href="../texreg/index.html">texreg</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=brms"><samp>https://CRAN.R-project.org/package=brms</samp></a>
+to link to this page.</p>
+</body>
+</html>

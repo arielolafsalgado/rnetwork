@@ -1,0 +1,26 @@
+Package: ldaPrototype
+Type: Package
+Title: Prototype of Multiple Latent Dirichlet Allocation Runs
+Version: 0.1.1
+Date: 2020-01-08
+Authors@R: person("Jonas", "Rieger", email="jonas.rieger@tu-dortmund.de", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-0007-4478"))
+Description: Determine a Prototype from a number of runs of Latent Dirichlet Allocation (LDA) measuring its similarities with S-CLOP: A procedure to select the LDA run with highest mean pairwise similarity, which is measured by S-CLOP (Similarity of multiple sets by Clustering with Local Pruning), to all other runs. LDA runs are specified by its assignments leading to estimators for distribution parameters. Repeated runs lead to different results, which we encounter by choosing the most representative LDA run as prototype.
+URL: https://github.com/JonasRieger/ldaPrototype,
+        https://doi.org/10.5281/zenodo.3597978
+BugReports: https://github.com/JonasRieger/ldaPrototype/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: checkmate (>= 1.8.5), colorspace (>= 1.4-1), data.table (>=
+        1.11.2), dendextend, fs (>= 1.2.0), lda (>= 1.4.2), progress
+        (>= 1.1.1), stats, utils
+Suggests: batchtools (>= 0.9.11), future, parallelMap, RColorBrewer (>=
+        1.1-2), testthat, tosca
+RoxygenNote: 7.0.2
+LazyData: true
+NeedsCompilation: no
+Packaged: 2020-01-08 16:29:17 UTC; rieger
+Author: Jonas Rieger [aut, cre] (<https://orcid.org/0000-0002-0007-4478>)
+Maintainer: Jonas Rieger <jonas.rieger@tu-dortmund.de>
+Repository: CRAN
+Date/Publication: 2020-01-10 17:40:09 UTC

@@ -1,0 +1,38 @@
+Package: plainview
+Type: Package
+Title: Plot Raster Images Interactively on a Plain HTML Canvas
+Version: 0.1.0
+Date: 2019-03-18
+Authors@R: 
+    c(person(given = "Tim",
+             family = "Appelhans",
+             role = c("cre", "aut"),
+             email = "tim.appelhans@gmail.com"),
+      person(given = "Stefan",
+             family = "Woellauer",
+             role = "aut",
+             email = "stephan.woellauer@geo.uni-marburg.de"))
+Maintainer: Tim Appelhans <tim.appelhans@gmail.com>
+Description: Provides methods for plotting potentially large (raster) images
+    interactively on a plain HTML canvas. In contrast to package 'mapview'
+    data are plotted without background map, but data can be projected to
+    any spatial coordinate reference system.
+    Supports plotting of classes 'RasterLayer', 'RasterStack', 'RasterBrick'
+    (from package 'raster') as well as 'png' files located on disk. 
+    Interactivity includes zooming, panning, and mouse location information. 
+    In case of multi-layer 'RasterStacks' or 'RasterBricks', RGB image plots 
+    are created (similar to 'raster::plotRGB' - but interactive).
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 2.10), methods
+Imports: gdalUtils, htmltools, htmlwidgets, lattice, png, raster,
+        viridisLite
+Suggests: shiny
+LazyData: true
+RoxygenNote: 6.1.0
+NeedsCompilation: no
+Packaged: 2019-03-18 20:21:04 UTC; timpanse
+Author: Tim Appelhans [cre, aut],
+  Stefan Woellauer [aut]
+Repository: CRAN
+Date/Publication: 2019-03-22 10:50:03 UTC

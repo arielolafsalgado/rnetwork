@@ -1,0 +1,22 @@
+Package: gofCopula
+Type: Package
+Title: Goodness-of-Fit Tests for Copulae
+Version: 0.2-1
+Date: 2016-09-16
+Author: Ostap Okhrin <ostap.okhrin@tu-dresden.de>, 
+		Simon Trimborn <simon.trimborn@wiwi.hu-berlin.de>, 
+		Shulin Zhang <slzhang@swufe.edu.cn>, 
+		Qian M. Zhou <qmzhou@sfu.ca>
+Maintainer: Simon Trimborn <simon.trimborn@wiwi.hu-berlin.de>
+LazyLoad: yes
+LazyData: true
+Depends: R (>= 1.9.0), copula (>= 0.999-15), foreach, parallel,
+        doParallel, R.utils
+Imports: SparseGrid, numDeriv, VineCopula (>= 2.0.4), methods, stats,
+        MASS, utils
+Description: Several GoF tests for Copulae are provided. A new hybrid test is implemented which supports all of the individual tests. Estimation methods for the margins are provided. All the tests support parameter estimation and predefined values. The parameters are estimated by pseudo maximum likelihood but if it fails the estimation switches automatically to inversion of Kendall's tau. All the tests support automatized parallelization of the bootstrapping tasks.
+License: GPL (>= 3)
+NeedsCompilation: yes
+Packaged: 2016-09-16 12:27:39 UTC; trimborns
+Repository: CRAN
+Date/Publication: 2016-09-16 18:15:45

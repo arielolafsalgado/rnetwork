@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package googleLanguageR</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Call Google's 'Natural Language' API, 'Cloud Translation' API, 'Cloud Speech' API and 'Cloud Text-to-Speech' API [R package googleLanguageR version 0.3.0]" />
+<meta name="citation_author" content="Mark Edmondson" />
+<meta name="citation_publication_date" content="2020-04-19" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=googleLanguageR" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=googleLanguageR" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="googleLanguageR: Call Google's 'Natural Language' API, 'Cloud Translation' API, 'Cloud Speech' API and 'Cloud Text-to-Speech' API" />
+<meta name="og:description" content="Call 'Google Cloud' machine learning APIs for text and speech tasks. Call the 'Cloud Translation' API &amp;lt;&lt;a href=&quot;https://cloud.google.com/translate/&quot;&gt;https://cloud.google.com/translate/&lt;/a&gt;&amp;gt; for detection and translation of text, the 'Natural Language' API &amp;lt;&lt;a href=&quot;https://cloud.google.com/natural-language/&quot;&gt;https://cloud.google.com/natural-language/&lt;/a&gt;&amp;gt; to analyse text for sentiment, entities or syntax, the 'Cloud Speech' API &amp;lt;&lt;a href=&quot;https://cloud.google.com/speech/&quot;&gt;https://cloud.google.com/speech/&lt;/a&gt;&amp;gt; to transcribe sound files to text and the 'Cloud Text-to-Speech' API &amp;lt;&lt;a href=&quot;https://cloud.google.com/text-to-speech/&quot;&gt;https://cloud.google.com/text-to-speech/&lt;/a&gt;&amp;gt; to turn text into sound files." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=googleLanguageR" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>googleLanguageR: Call Google's 'Natural Language' API, 'Cloud Translation' API,
+'Cloud Speech' API and 'Cloud Text-to-Speech' API</h2>
+<p>Call 'Google Cloud' machine learning APIs for text and speech tasks.
+  Call the 'Cloud Translation' API &lt;<a href="https://cloud.google.com/translate/">https://cloud.google.com/translate/</a>&gt; for detection 
+  and translation of text, the 'Natural Language' API &lt;<a href="https://cloud.google.com/natural-language/">https://cloud.google.com/natural-language/</a>&gt; to 
+  analyse text for sentiment, entities or syntax, the 'Cloud Speech' API 
+  &lt;<a href="https://cloud.google.com/speech/">https://cloud.google.com/speech/</a>&gt; to transcribe sound files to text and 
+  the 'Cloud Text-to-Speech' API &lt;<a href="https://cloud.google.com/text-to-speech/">https://cloud.google.com/text-to-speech/</a>&gt; to turn text 
+  into sound files.</p>
+<table summary="Package googleLanguageR summary">
+<tr>
+<td>Version:</td>
+<td>0.3.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../assertthat/index.html">assertthat</a>, <a href="../base64enc/index.html">base64enc</a>, <a href="../googleAuthR/index.html">googleAuthR</a> (&ge; 1.1.1), <a href="../jsonlite/index.html">jsonlite</a>, <a href="../magrittr/index.html">magrittr</a>, <a href="../purrr/index.html">purrr</a> (&ge; 0.2.4), stats, <a href="../tibble/index.html">tibble</a>, utils</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../cld2/index.html">cld2</a>, <a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../rvest/index.html">rvest</a>, <a href="../shiny/index.html">shiny</a>, <a href="../shinyjs/index.html">shinyjs</a>, <a href="../stringdist/index.html">stringdist</a>, <a href="../tidyr/index.html">tidyr</a>, <a href="../tuneR/index.html">tuneR</a>, <a href="../xml2/index.html">xml2</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-04-19</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Mark Edmondson [aut, cre],
+  John Muschelli [ctb],
+  Neal Richardson [rev] (Neal reviewed the package for ropensci, see
+    &lt;https://github.com/ropensci/onboarding/issues/127&gt;),
+  Julia Gustavsen [rev] (Julia reviewed the package for ropensci, see
+    &lt;https://github.com/ropensci/onboarding/issues/127&gt;)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Mark Edmondson  &#x3c;&#x72;&#x20;&#x61;&#x74;&#x20;&#x73;&#x75;&#x6e;&#x68;&#x6f;&#x6c;&#x6f;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ropensci/googleLanguageR/issues">https://github.com/ropensci/googleLanguageR/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://code.markedmondson.me/googleLanguageR/">http://code.markedmondson.me/googleLanguageR/</a>,
+<a href="https://github.com/ropensci/googleLanguageR">https://github.com/ropensci/googleLanguageR</a>,
+<a href="https://docs.ropensci.org/googleLanguageR/">https://docs.ropensci.org/googleLanguageR/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/WebTechnologies.html">WebTechnologies</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_googleLanguageR.html">googleLanguageR results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package googleLanguageR downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="googleLanguageR.pdf"> googleLanguageR.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/nlp.html">Google Natural Language API</a><br/>
+<a href="vignettes/setup.html">Introduction to googleLanguageR</a><br/>
+<a href="vignettes/speech.html">Google Cloud Speech-to-Text API</a><br/>
+<a href="vignettes/text-to-speech.html">Google Cloud Text-to-Speech API</a><br/>
+<a href="vignettes/translation.html">Google Cloud Translation API</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/googleLanguageR_0.3.0.tar.gz"> googleLanguageR_0.3.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/googleLanguageR_0.3.0.zip">googleLanguageR_0.3.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/googleLanguageR_0.3.0.zip">googleLanguageR_0.3.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/googleLanguageR_0.3.0.zip">googleLanguageR_0.3.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/googleLanguageR_0.3.0.tgz">googleLanguageR_0.3.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/googleLanguageR_0.3.0.tgz">googleLanguageR_0.3.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/googleLanguageR"> googleLanguageR archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package googleLanguageR reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../text2speech/index.html">text2speech</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../shiny.i18n/index.html">shiny.i18n</a>, <a href="../sonicscrewdriver/index.html">sonicscrewdriver</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=googleLanguageR"><samp>https://CRAN.R-project.org/package=googleLanguageR</samp></a>
+to link to this page.</p>
+</body>
+</html>

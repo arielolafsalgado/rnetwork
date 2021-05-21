@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package RolWinMulCor</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Subroutines to Estimate Rolling Window Multiple Correlation [R package RolWinMulCor version 1.0.0]" />
+<meta name="citation_author" content="Josue M. Polanco-Martinez" />
+<meta name="citation_publication_date" content="2020-08-31" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=RolWinMulCor" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=RolWinMulCor" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="RolWinMulCor: Subroutines to Estimate Rolling Window Multiple Correlation" />
+<meta name="og:description" content="Rolling Window Multiple Correlation ('RolWinMulCor') estimates the rolling (running) window correlation for the bi- and multi-variate cases between regular (sampled on identical time points) time series, with especial emphasis to ecological data (although this can be applied to other kinds of data sets). 'RolWinMulCor' is based on the concept of rolling, running or sliding window and is useful to evaluate the evolution of correlation through time and time-scales. 'RolWinMulCor' contains six functions. The first two focus on the bi-variate case: (1) rolwincor_1win() and (2) rolwincor_heatmap(), estimate the correlation coefficients and the their respective p-values for only one window-length (time-scale) and considering all possible window-lengths or a band of window-lengths, respectively. The second two functions: (3) rolwinmulcor_1win() and (4) rolwinmulcor_heatmap() are designed to analyze the multi-variate case, following the bi-variate case to visually display the results, but these two approaches are methodologically different: the multi-variate case estimates the adjusted coefficients of determination instead of the correlation coefficients. The last two functions: (5) plot_1win() and (6) plot_heatmap(), are used to represent graphically the outputs of the four aforementioned functions as simple plots or as heat maps. The functions contained in 'RolWinMulCor' are highly flexible since this contains several parameters to control the estimation of correlation and the features of the plot output, e.g. to remove the (linear) trend contained in the time series under analysis, to choose different p-value correction methods (which are used to address the multiple comparison problem) or to personalise the plot outputs. The 'RolWinMulCor' package also provides examples with synthetic and real-life ecological time series to exemplify its use. Methods derived from H. Abdi. (2007) &amp;lt;&lt;a href=&quot;https://personal.utdallas.edu/~herve/Abdi-MCC2007-pretty.pdf&quot;&gt;https://personal.utdallas.edu/~herve/Abdi-MCC2007-pretty.pdf&lt;/a&gt;&amp;gt;, J. M. Polanco-Martinez (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs11071-019-04974-y&quot;&gt;doi:10.1007/s11071-019-04974-y&lt;/a&gt;&amp;gt;, and R. Telford (2013) &amp;lt;&lt;a href=&quot;https://quantpalaeo.wordpress.com/2013/01/04/running-correlations-running-into-problems/&quot;&gt;https://quantpalaeo.wordpress.com/2013/01/04/running-correlations-running-into-problems/&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=RolWinMulCor" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>RolWinMulCor: Subroutines to Estimate Rolling Window Multiple Correlation</h2>
+<p>Rolling Window Multiple Correlation ('RolWinMulCor') estimates the rolling (running) window correlation for the bi- and multi-variate cases between regular (sampled on identical time points) time series, with especial emphasis to ecological data (although this can be applied to other kinds of data sets). 'RolWinMulCor' is based on the concept of rolling, running or sliding window and is useful to evaluate the evolution of correlation through time and time-scales. 'RolWinMulCor' contains six functions. The first two focus on the bi-variate case: (1) rolwincor_1win() and (2) rolwincor_heatmap(), estimate the correlation coefficients and the their respective p-values for only one window-length (time-scale) and considering all possible window-lengths or a band of window-lengths, respectively. The second two functions: (3) rolwinmulcor_1win() and (4) rolwinmulcor_heatmap() are designed to analyze the multi-variate case, following the bi-variate case to visually display the results, but these two approaches are methodologically different: the multi-variate case estimates the adjusted coefficients of determination instead of the correlation coefficients. The last two functions: (5) plot_1win() and (6) plot_heatmap(), are used to represent graphically the outputs of the four aforementioned functions as simple plots or as heat maps. The functions contained in 'RolWinMulCor' are highly flexible since this contains several parameters to control the estimation of correlation and the features of the plot output, e.g. to remove the (linear) trend contained in the time series under analysis, to choose different p-value correction methods (which are used to address the multiple comparison problem) or to personalise the plot outputs. The 'RolWinMulCor' package also provides examples with synthetic and real-life ecological time series to exemplify its use. Methods derived from H. Abdi. (2007) &lt;<a href="https://personal.utdallas.edu/~herve/Abdi-MCC2007-pretty.pdf">https://personal.utdallas.edu/~herve/Abdi-MCC2007-pretty.pdf</a>&gt;, J. M. Polanco-Martinez (2019) &lt;<a href="https://doi.org/10.1007%2Fs11071-019-04974-y">doi:10.1007/s11071-019-04974-y</a>&gt;, and R. Telford (2013) &lt;<a href="https://quantpalaeo.wordpress.com/2013/01/04/running-correlations-running-into-problems/">https://quantpalaeo.wordpress.com/2013/01/04/running-correlations-running-into-problems/</a>&gt;.</p>
+<table summary="Package RolWinMulCor summary">
+<tr>
+<td>Version:</td>
+<td>1.0.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0), stats, <a href="../gtools/index.html">gtools</a>, <a href="../zoo/index.html">zoo</a>, <a href="../pracma/index.html">pracma</a>, <a href="../colorspace/index.html">colorspace</a>, <a href="../scales/index.html">scales</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-08-31</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Josue M. Polanco-Martinez [aut, cph, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Josue M. Polanco-Martinez  &#x3c;&#x6a;&#x6f;&#x73;&#x75;&#x65;&#x2e;&#x6d;&#x2e;&#x70;&#x6f;&#x6c;&#x61;&#x6e;&#x63;&#x6f;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_RolWinMulCor.html">RolWinMulCor results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package RolWinMulCor downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="RolWinMulCor.pdf"> RolWinMulCor.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/RolWinMulCor_1.0.0.tar.gz"> RolWinMulCor_1.0.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/RolWinMulCor_1.0.0.zip">RolWinMulCor_1.0.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/RolWinMulCor_1.0.0.zip">RolWinMulCor_1.0.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/RolWinMulCor_1.0.0.zip">RolWinMulCor_1.0.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/RolWinMulCor_1.0.0.tgz">RolWinMulCor_1.0.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/RolWinMulCor_1.0.0.tgz">RolWinMulCor_1.0.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/RolWinMulCor"> RolWinMulCor archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=RolWinMulCor"><samp>https://CRAN.R-project.org/package=RolWinMulCor</samp></a>
+to link to this page.</p>
+</body>
+</html>

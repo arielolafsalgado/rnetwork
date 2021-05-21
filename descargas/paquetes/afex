@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package afex</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Analysis of Factorial Experiments [R package afex version 0.28-0]" />
+<meta name="citation_author1" content="Henrik Singmann" />
+<meta name="citation_author2" content="Ben Bolker" />
+<meta name="citation_author3" content="Jake Westfall" />
+<meta name="citation_author4" content="Frederik Aust" />
+<meta name="citation_author5" content="Mattan S. Ben-Shachar" />
+<meta name="citation_publication_date" content="2020-09-20" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=afex" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=afex" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="afex: Analysis of Factorial Experiments" />
+<meta name="og:description" content="Convenience functions for analyzing factorial experiments using ANOVA or mixed models. aov_ez(), aov_car(), and aov_4() allow specification of between, within (i.e., repeated-measures), or mixed (i.e., split-plot) ANOVAs for data in long format (i.e., one observation per row), automatically aggregating multiple observations per individual and cell of the design. mixed() fits mixed models using lme4::lmer() and computes p-values for all fixed effects using either Kenward-Roger or Satterthwaite approximation for degrees of freedom (LMM only), parametric bootstrap (LMMs and GLMMs), or likelihood ratio tests (LMMs and GLMMs). afex_plot() provides a high-level interface for interaction or one-way plots using ggplot2, combining raw data and model estimates. afex uses type 3 sums of squares as default (imitating commercial statistical software)." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=afex" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>afex: Analysis of Factorial Experiments</h2>
+<p>Convenience functions for analyzing factorial experiments using ANOVA or
+         mixed models. aov_ez(), aov_car(), and aov_4() allow specification of
+         between, within (i.e., repeated-measures), or mixed (i.e., split-plot) 
+         ANOVAs for data in long format (i.e., one observation per row),
+         automatically aggregating multiple observations per individual and cell 
+         of the design. mixed() fits mixed models using lme4::lmer() and computes 
+         p-values for all fixed effects using either Kenward-Roger or Satterthwaite 
+         approximation for degrees of freedom (LMM only), parametric bootstrap 
+         (LMMs and GLMMs), or likelihood ratio tests (LMMs and GLMMs). 
+         afex_plot() provides a high-level interface for interaction or one-way 
+         plots using ggplot2, combining raw data and model estimates. afex uses 
+         type 3 sums of squares as default (imitating commercial statistical software).</p>
+<table summary="Package afex summary">
+<tr>
+<td>Version:</td>
+<td>0.28-0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0), <a href="../lme4/index.html">lme4</a> (&ge; 1.1-8)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../pbkrtest/index.html">pbkrtest</a> (&ge; 0.4-1), <a href="../lmerTest/index.html">lmerTest</a> (&ge; 3.0-0), <a href="../car/index.html">car</a>, <a href="../reshape2/index.html">reshape2</a>, stats, methods, utils</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../emmeans/index.html">emmeans</a> (&ge; 1.4), <a href="../coin/index.html">coin</a>, <a href="../xtable/index.html">xtable</a>, parallel, <a href="../plyr/index.html">plyr</a>, <a href="../optimx/index.html">optimx</a>, <a href="../nloptr/index.html">nloptr</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../R.rsp/index.html">R.rsp</a>, <a href="../lattice/index.html">lattice</a>, <a href="../latticeExtra/index.html">latticeExtra</a>, <a href="../multcomp/index.html">multcomp</a>, <a href="../testthat/index.html">testthat</a>, <a href="../mlmRev/index.html">mlmRev</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../tidyr/index.html">tidyr</a>, <a href="../dfoptim/index.html">dfoptim</a>, <a href="../Matrix/index.html">Matrix</a>, <a href="../psychTools/index.html">psychTools</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../MEMSS/index.html">MEMSS</a>, <a href="../effects/index.html">effects</a>, <a href="../carData/index.html">carData</a>, <a href="../ggbeeswarm/index.html">ggbeeswarm</a>, <a href="../nlme/index.html">nlme</a>, <a href="../cowplot/index.html">cowplot</a>, <a href="../jtools/index.html">jtools</a>, <a href="../ggpubr/index.html">ggpubr</a>, <a href="../ggpol/index.html">ggpol</a>, <a href="../MASS/index.html">MASS</a>, <a href="../glmmTMB/index.html">glmmTMB</a>, <a href="../brms/index.html">brms</a>, <a href="../rstanarm/index.html">rstanarm</a>, <a href="../statmod/index.html">statmod</a>, <a href="../ggResidpanel/index.html">ggResidpanel</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-20</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Henrik Singmann <a href="https://orcid.org/0000-0002-4842-3657"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Ben Bolker [aut],
+  Jake Westfall [aut],
+  Frederik Aust <a href="https://orcid.org/0000-0003-4900-788X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Mattan S. Ben-Shachar [aut],
+  Søren Højsgaard [ctb],
+  John Fox [ctb],
+  Michael A. Lawrence [ctb],
+  Ulf Mertens [ctb],
+  Jonathon Love [ctb],
+  Russell Lenth [ctb],
+  Rune Haubo Bojesen Christensen [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Henrik Singmann  &#x3c;&#x73;&#x69;&#x6e;&#x67;&#x6d;&#x61;&#x6e;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/singmann/afex/issues">https://github.com/singmann/afex/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://afex.singmann.science/">http://afex.singmann.science/</a>, <a href="https://github.com/singmann/afex">https://github.com/singmann/afex</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_afex.html">afex results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package afex downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="afex.pdf"> afex.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/afex_analysing_accuracy_data.html">Analysis of Accuracy Data using ANOVA and binomial GLMMs</a><br/>
+<a href="vignettes/afex_anova_example.html">ANOVA and Post-Hoc Contrasts: Reanalysis of Singmann and Klauer (2011)</a><br/>
+<a href="vignettes/afex_mixed_example.html">Mixed Model Example Analysis: Reanalysis of Freeman et al. (2010)</a><br/>
+<a href="vignettes/afex_plot_introduction.html">afex_plot: Publication Ready Plots for Experimental Designs</a><br/>
+<a href="vignettes/afex_plot_supported_models.html">afex_plot: Supported Models</a><br/>
+<a href="vignettes/introduction-mixed-models.pdf">An Introduction to Mixed Models for Experimental Psychology</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/afex_0.28-0.tar.gz"> afex_0.28-0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/afex_0.28-0.zip">afex_0.28-0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/afex_0.28-0.zip">afex_0.28-0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/afex_0.28-0.zip">afex_0.28-0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/afex_0.28-0.tgz">afex_0.28-0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/afex_0.28-0.tgz">afex_0.28-0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/afex"> afex archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package afex reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../fullfact/index.html">fullfact</a>, <a href="../jmv/index.html">jmv</a>, <a href="../pwr2ppl/index.html">pwr2ppl</a>, <a href="../r2glmm/index.html">r2glmm</a>, <a href="../Superpower/index.html">Superpower</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../apa/index.html">apa</a>, <a href="../effectsize/index.html">effectsize</a>, <a href="../insight/index.html">insight</a>, <a href="../standardize/index.html">standardize</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=afex"><samp>https://CRAN.R-project.org/package=afex</samp></a>
+to link to this page.</p>
+</body>
+</html>

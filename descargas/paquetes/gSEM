@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package gSEM</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=gSEM" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="gSEM: Semi-Supervised Generalized Structural Equation Modeling" />
+<meta name="og:description" content="Conducts a semi-gSEM statistical analysis (semi-supervised generalized structural equation modeling) on a data frame of coincident observations of multiple predictive or intermediate variables and a final continuous, outcome variable, via two functions sgSEMp1() and sgSEMp2(), representing fittings based on two statistical principles. Principle 1 determines all sensible univariate relationships in the spirit of the Markovian process. The relationship between each pair of variables, including predictors and the final outcome variable, is determined with the Markovian property that the value of the current predictor is sufficient in relating to the next level variable, i.e., the relationship is independent of the specific value of the preceding-level variables to the current predictor, given the current value. Principle 2 resembles the multiple regression principle in the way multiple predictors are considered simultaneously. Specifically, the relationship of the first-level predictors (such as Time and irradiance etc) to the outcome variable (such as, module degradation or yellowing) is fit by a supervised additive model. Then each significant intermediate variable is taken as the new outcome variable and the other variables (except the final outcome variable) as the predictors in investigating the next-level multivariate relationship by a supervised additive model. This fitting process is continued until all sensible models are investigated." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=gSEM" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>gSEM: Semi-Supervised Generalized Structural Equation Modeling</h2>
+<p>Conducts a semi-gSEM statistical analysis (semi-supervised generalized structural equation modeling) on a data frame of coincident observations of multiple predictive or intermediate variables and a final continuous, outcome variable, via two functions sgSEMp1() and sgSEMp2(), representing fittings based on two statistical principles. Principle 1 determines all sensible univariate relationships in the spirit of the Markovian process. The relationship between each pair of variables, including predictors and the final outcome variable, is determined with the Markovian property that the value of the current predictor is sufficient in relating to the next level variable, i.e., the relationship is independent of the specific value of the preceding-level variables to the current predictor, given the current value. Principle 2 resembles the multiple regression principle in the way multiple predictors are considered simultaneously. Specifically, the relationship of the first-level predictors (such as Time and irradiance etc) to the outcome variable (such as, module degradation or yellowing)  is fit by a supervised additive model. Then each significant intermediate variable is taken as the new outcome variable and the other variables (except the final outcome variable) as the predictors in investigating the next-level multivariate relationship by a supervised additive model. This fitting process is continued until all sensible models are investigated.</p>
+<table summary="Package gSEM summary">
+<tr>
+<td>Version:</td>
+<td>0.4.3.4</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.14.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../MASS/index.html">MASS</a>, <a href="../htmlwidgets/index.html">htmlwidgets</a>, <a href="../DiagrammeR/index.html">DiagrammeR</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2016-01-11</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Junheng Ma, Nicholas Wheeler, Yifan Xu, Wenyu Du, Abdulkerim Gok, Jiayang Sun</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Junheng Ma  &#x3c;&#x6a;&#x78;&#x6d;&#x32;&#x31;&#x36;&#x20;&#x61;&#x74;&#x20;&#x63;&#x61;&#x73;&#x65;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Psychometrics.html">Psychometrics</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_gSEM.html">gSEM results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package gSEM downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="gSEM.pdf"> gSEM.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/gSEM_0.4.3.4.tar.gz"> gSEM_0.4.3.4.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/gSEM_0.4.3.4.zip">gSEM_0.4.3.4.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/gSEM_0.4.3.4.zip">gSEM_0.4.3.4.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/gSEM_0.4.3.4.zip">gSEM_0.4.3.4.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/gSEM_0.4.3.4.tgz">gSEM_0.4.3.4.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/gSEM_0.4.3.4.tgz">gSEM_0.4.3.4.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/gSEM"> gSEM archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=gSEM"><samp>https://CRAN.R-project.org/package=gSEM</samp></a>
+to link to this page.</p>
+</body>
+</html>

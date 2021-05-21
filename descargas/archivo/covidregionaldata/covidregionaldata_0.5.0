@@ -1,0 +1,79 @@
+Package: covidregionaldata
+Title: Subnational Data for the Covid-19 Outbreak
+Version: 0.5.0
+Authors@R: c(person(given = "Sam Abbott",
+           role = c("aut", "cre"),
+           email = "sam.abbott@lshtm.ac.uk",
+           comment = c(ORCID = "0000-0001-8057-8037")),
+    person("Katharine", "Sherratt",
+           email = "katharine.sherratt@lshtm.ac.uk",
+           role = c("aut"),
+           comment = c(ORCID = "0000-0003-4413-453X")),
+    person("Jonnie", "Bevan",
+            email = "jonnie.bevan@tessella.com",
+            role = c("aut")),
+    person("Hamish", "Gibbs",
+           email = "Hamish.Gibbs@lshtm.ac.uk",
+           role = c("aut"),
+           comment = c(ORCID = "0000-0003-4413-453X")),
+    person("Joel", "Hellewell",
+           email = "joel.hellewell@lshtm.ac.uk",
+           role = c("aut"),
+           comment = c(ORCID = "0000-0003-2683-0849")),
+    person("James", "Munday",
+           email = "james.munday@lshtm.ac.uk",
+           role = c("aut")),
+    person("Patrick", "Barks",
+       email = "patrick.barks@epicentre.msf.org",
+       role = c("ctb")),
+    person("Paul", "Campbell",
+       email = " paul.campbell@epicentre.msf.org",
+       role = c("aut")),
+    person("Flavio", "Finger",
+       email = "flavio.finger@epicentre.msf.org",
+       role = c("ctb"),
+       comment = c(ORCID = "0000-0002-8613-5170")),
+    person("Sebastian", "Funk",
+            email = "sebastian.funk@lshtm.ac.uk",
+            role = c("aut")))
+Description: An interface to subnational and national level Covid-19 data.
+    For all countries supported, this includes a daily time-series of cases.
+    Wherever available we also provide  data on deaths, hospitalisations, and tests.
+    National level data is also supported using a range of data sources as well as
+    linelist data and links to intervention data sets. Data sources included:
+    WHO <https://dashboards-dev.sprinklr.com/data/9043/global-covid19-who-gis.json>, <https://covid19.who.in>;
+    ACAPS interventions <https://data.humdata.org/dataset/acaps-covid19-government-measures-dataset>;
+    patient linelist: <https://github.com/beoutbreakprepared/nCoV2019>),
+    regional data (Afghanistan: <https://data.humdata.org/dataset/afghanistan-covid-19-statistics-per-province>;
+    Belgium: <https://epistat.wiv-isp.be/covid>; Brazil: <https://github.com/wcota/covid19br>;
+    Canada: <https://health-infobase.canada.ca/>; Colombia: <https://github.com/danielcs88/colombia_covid-19>;
+    Germany: <https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/dd4580c810204019a7b8eb3e0b329dd6_0>;
+    India: <https://api.covid19india.org/>; Italy: <https://github.com/pcm-dpc/COVID-19>;
+    Russia: <https://github.com/grwlf/COVID-19_plus_Russia>;  UK: <https://coronavirus.data.gov.uk>, 
+    <https://github.com/tomwhite/covid-19-uk-data>; USA: <https://github.com/nytimes/covid-19-data>),
+    and geocoding data (Colombia: <https://en.wikipedia.org/wiki/ISO_3166-2:CO>; Russia: <https://en.wikipedia.org/wiki/ISO_3166-2:RU>).
+Language: en-gb
+License: MIT + file LICENSE
+Depends: R (>= 2.10)
+Imports: readr, dplyr, tibble, purrr, stringr, magrittr, memoise,
+        lubridate, tidyr, httr, yaml, readxl, xml2, rvest, jsonlite,
+        countrycode
+Suggests: data.table, pkgdown, testthat, spelling
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2020-07-24 13:28:43 UTC; seabbs
+Author: Sam Abbott [aut, cre] (<https://orcid.org/0000-0001-8057-8037>),
+  Katharine Sherratt [aut] (<https://orcid.org/0000-0003-4413-453X>),
+  Jonnie Bevan [aut],
+  Hamish Gibbs [aut] (<https://orcid.org/0000-0003-4413-453X>),
+  Joel Hellewell [aut] (<https://orcid.org/0000-0003-2683-0849>),
+  James Munday [aut],
+  Patrick Barks [ctb],
+  Paul Campbell [aut],
+  Flavio Finger [ctb] (<https://orcid.org/0000-0002-8613-5170>),
+  Sebastian Funk [aut]
+Maintainer: Sam Abbott <sam.abbott@lshtm.ac.uk>
+Repository: CRAN
+Date/Publication: 2020-07-24 14:00:02 UTC

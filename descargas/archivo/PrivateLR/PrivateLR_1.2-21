@@ -1,0 +1,19 @@
+Package: PrivateLR
+Type: Package
+Title: Differentially Private Regularized Logistic Regression
+Version: 1.2-21
+Date: 2014-10-30
+Author: Staal A. Vinterbo <sav@ucsd.edu>
+Maintainer: Staal A. Vinterbo <sav@ucsd.edu>
+Description: PrivateLR implements two differentially private algorithms for 
+  estimating L2-regularized logistic regression coefficients. A randomized
+  algorithm F is epsilon-differentially private (C. Dwork, Differential
+  Privacy, ICALP 2006), if 
+     |log(P(F(D) in S)) - log(P(F(D') in S))| <= epsilon
+  for any pair D, D' of datasets that differ in exactly one element, any
+  set S, and the randomness is taken over the choices F makes. 
+License: GPL (>= 2)
+Packaged: 2014-10-31 05:05:11 UTC; staal
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2014-10-31 16:16:00

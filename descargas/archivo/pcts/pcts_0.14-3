@@ -1,0 +1,35 @@
+Package: pcts
+Type: Package
+Title: Periodically Correlated and Periodically Integrated Time Series
+Description: Classes and methods for modelling and simulation of
+    periodically correlated (PC) and periodically integrated time
+    series.  Compute theoretical periodic autocovariances and related
+    properties of PC autoregressive moving average models. Some original
+    methods including Boshnakov & Iqelan (2009)
+    <doi:10.1111/j.1467-9892.2009.00617.x>, Boshnakov (1996)
+    <doi:10.1111/j.1467-9892.1996.tb00281.x>.
+Version: 0.14-3
+Date: 2020-01-07
+Author: Georgi N. Boshnakov
+Maintainer: Georgi N. Boshnakov <georgi.boshnakov@manchester.ac.uk>
+Depends: R (>= 3.5.0), sarima
+Imports: methods, Matrix, BB, PolynomF (>= 2.0-2), gbutils, zoo, ltsa,
+        stats4, lagged (>= 0.2.2), mcompanion, Rdpack (>= 0.9),
+        lubridate
+Suggests: testthat, pear, fUnitRoots, partsm
+RdMacros: Rdpack
+LazyData: yes
+URL: https://geobosh.github.io/pcts https://github.com/GeoBosh/pcts
+BugReports: https://github.com/GeoBosh/pcts/issues
+License: GPL (>= 2)
+Collate: utils.R test1.r PeriodicCalc.R pcstat.R pc00smallutil.r
+        pc02filters.r pc03simu.r acfsums.R pcls.R pcarma_model.R
+        pcarma_acf.R generics.R autocovariances.R classCycle.R
+        pcFilterClasses.R PeriodicClasses.R cyclic.R
+        FittedPeriodicModels.R fitPM.R pcTest.R PeriodicVector.R sim.R
+        optimcore.R
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2020-01-07 19:48:22 UTC; georgi
+Repository: CRAN
+Date/Publication: 2020-01-09 15:30:02 UTC

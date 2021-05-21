@@ -1,0 +1,27 @@
+Package: mvSLOUCH
+Type: Package
+Title: Multivariate Stochastic Linear Ornstein-Uhlenbeck Models for
+        Phylogenetic Comparative Hypotheses
+Version: 2.5
+Date: 2020-06-03
+Author: Krzysztof Bartoszek <krzbar@protonmail.ch>
+Maintainer: Krzysztof Bartoszek <krzbar@protonmail.ch>
+Description: Fits multivariate Ornstein-Uhlenbeck types of models to continues trait data from species related by a common evolutionary history. See K. Bartoszek, J, Pienaar, P. Mostad, S. Andersson, T. F.Hansen (2012) <doi:10.1016/j.jtbi.2012.08.005>. The suggested PCMBaseCpp package (which significantly speeds up the likelihood calculations) can be obtained from <https://github.com/venelin/PCMBaseCpp/>.
+Depends: R(>= 3.1.2), abind
+License: GPL (>= 2) | file LICENCE
+LazyLoad: yes
+Collate: bootstrap.R evolmodelest.R matrixexps.R phylgls.R
+        sdecovariancephyl.R wrappers.R ci.R fitch.mvsl.R
+        matrixparametrizations.R PhyloSDEestim.R sdemoments.R estimBM.R
+        getESS.R modelparams.R phyltree_paths.R simulVasicekprocphyl.R
+        estimGLSGC.R loglik.R modelparamssummary.R precalcs.R
+        simulVasicekproc.R estimMAXLIK.R make.states.mvsl.R
+        modelparamstransform.R regimes.R trees2slouch.mvsl.R
+        simulclustphyl.R
+Imports: ape (>= 5.3), graphics, methods, mvtnorm, Matrix, matrixcalc,
+        ouch, PCMBase (>= 1.2.10), stats, TreeSim
+Suggests: PCMBaseCpp(>= 0.1.9)
+NeedsCompilation: no
+Repository: CRAN
+Packaged: 2020-06-03 10:05:32 UTC; kbart
+Date/Publication: 2020-06-03 10:40:02 UTC

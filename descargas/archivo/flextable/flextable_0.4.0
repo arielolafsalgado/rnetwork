@@ -1,0 +1,29 @@
+Package: flextable
+Type: Package
+Title: Functions for Tabular Reporting
+Version: 0.4.0
+Authors@R: c(
+    person("David", "Gohel", role = c("aut", "cre"),
+    email = "david.gohel@ardata.fr"),
+    person("Maxim", "Nazarov", role = c("ctb"),
+      comment = "rmarkdown for docx output"))
+Description: Create pretty tables for 'Microsoft Word', 'Microsoft PowerPoint' and 'HTML' documents. 
+  Functions are provided to let users create tables, modify and format their content. 
+  It extends package 'officer' that does not contain any feature for customized tabular reporting 
+  and can be used with R Markdown documents.
+License: GPL-3
+LazyData: TRUE
+Imports: stats,utils,grDevices, officer (>= 0.2.0), rmarkdown,
+        knitr,htmltools, lazyeval,R6,stringr, gdtools (>= 0.1.6)
+RoxygenNote: 6.0.1.9000
+Suggests: xml2, testthat
+URL: https://davidgohel.github.io/flextable
+BugReports: https://github.com/davidgohel/flextable/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-12-08 08:50:10 UTC; davidgohel
+Author: David Gohel [aut, cre],
+  Maxim Nazarov [ctb] (rmarkdown for docx output)
+Maintainer: David Gohel <david.gohel@ardata.fr>
+Repository: CRAN
+Date/Publication: 2017-12-08 09:01:20 UTC

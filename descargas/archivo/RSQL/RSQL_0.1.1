@@ -1,0 +1,27 @@
+Package: RSQL
+Type: Package
+Title: Database Agnostic Package to Generate and Process 'SQL' Queries
+        in R
+Version: 0.1.1
+Language: en-US
+Authors@R: c(
+    person("Alejandro", "Baranek",,"abaranek@dc.uba.ar", c("cre", "aut")),
+    person("Leonardo","Belen",,"leobelen@gmail.com", c("aut")))
+Maintainer: Alejandro Baranek <abaranek@dc.uba.ar>
+Description: Allows the user to generate and execute select, insert, update and delete 'SQL' queries the underlying database without having to explicitly write 'SQL' code. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+Collate: 'sql-lib.R' 'zzz.R'
+Imports: lgr, R6, DBI, RSQLite
+Suggests: knitr, testthat, rmarkdown, dplyr, covr
+VignetteBuilder: knitr
+BugReports: https://github.com/rOpenStats/rsql/issues
+URL: https://github.com/rOpenStats/rsql
+NeedsCompilation: no
+Packaged: 2020-01-23 17:24:15 UTC; kenarab
+Author: Alejandro Baranek [cre, aut],
+  Leonardo Belen [aut]
+Repository: CRAN
+Date/Publication: 2020-02-05 16:10:11 UTC

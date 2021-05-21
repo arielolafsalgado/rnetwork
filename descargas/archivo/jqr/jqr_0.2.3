@@ -1,0 +1,41 @@
+Package: jqr
+Title: Client for 'jq', a JSON Processor
+Description: Client for 'jq', a JSON processor (<http://stedolan.github.io/jq/>), written
+    in C. 'jq' allows the following with JSON data: index into, parse, do calculations,
+    cut up and filter, change key names and values, perform conditionals and comparisons,
+    and more.
+Version: 0.2.3
+Depends: R (>= 3.1.2)
+License: MIT + file LICENSE
+LazyData: true
+Authors@R: c(person("Rich", "FitzJohn", role = "aut",
+    email = "rich.fitzjohn@gmail.com"),
+    person("Scott", "Chamberlain", role = c("aut", "cre"),
+    email = "myrmecocystus@gmail.com"),
+    person("Stefan Milton Bache", role = "aut",
+    email = "stefan@stefanbache.dk"),
+    person("Stephen", "Dolan", role = c("aut","cph"), comment = "jq library"),
+    person(family = "jq contributors", role = "ctb",
+         comment = "jq library; authors listed in inst/AUTHORS.jq"),
+    person("Free Software Foundation", role = c("ctb","cph"), comment = "parser code in src/parser.c"),
+    person("David M", "Gay", role = c("ctb","cph"), comment = "code in src/jv_dtoa.c"))
+VignetteBuilder: knitr
+SystemRequirements: GNU make
+URL: https://github.com/ropensci/jqr
+BugReports: https://github.com/ropensci/jqr/issues
+LinkingTo: BH, Rcpp
+Imports: Rcpp, lazyeval, magrittr
+Suggests: jsonlite, testthat, knitr, covr
+RoxygenNote: 5.0.1
+NeedsCompilation: yes
+Packaged: 2016-05-10 00:18:26 UTC; sacmac
+Author: Rich FitzJohn [aut],
+  Scott Chamberlain [aut, cre],
+  Stefan Milton Bache [aut],
+  Stephen Dolan [aut, cph] (jq library),
+  jq contributors [ctb] (jq library; authors listed in inst/AUTHORS.jq),
+  Free Software Foundation [ctb, cph] (parser code in src/parser.c),
+  David M Gay [ctb, cph] (code in src/jv_dtoa.c)
+Maintainer: Scott Chamberlain <myrmecocystus@gmail.com>
+Repository: CRAN
+Date/Publication: 2016-05-10 06:56:47

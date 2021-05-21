@@ -1,0 +1,19 @@
+Package: PeakSegJoint
+Maintainer: Toby Dylan Hocking <toby.hocking@r-project.org>
+Author: Toby Dylan Hocking
+Version: 2018.01.09
+License: GPL-3
+Title: Joint Peak Detection in Several ChIP-Seq Samples
+Description: Jointly segment several ChIP-seq samples to find the peaks 
+ which are the same and different across samples. The fast approximate
+ maximum Poisson likelihood algorithm is described in
+ "PeakSegJoint: fast supervised peak detection via joint segmentation
+ of multiple count data samples"
+ <arXiv:1506.01286> by TD Hocking and G Bourque.
+Suggests: testthat, ggplot2 (>= 2.0), microbenchmark
+Depends: R (>= 2.14)
+Imports: PeakError, parallel, penaltyLearning
+NeedsCompilation: yes
+Packaged: 2018-09-28 16:14:17 UTC; tdhock
+Repository: CRAN
+Date/Publication: 2018-10-01 20:50:33 UTC

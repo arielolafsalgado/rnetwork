@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package cointReg</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Parameter Estimation and Inference in a Cointegrating Regression [R package cointReg version 0.2.0]" />
+<meta name="citation_author1" content="Philipp Aschersleben" />
+<meta name="citation_author2" content="Martin Wagner" />
+<meta name="citation_publication_date" content="2016-06-14" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=cointReg" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=cointReg" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="cointReg: Parameter Estimation and Inference in a Cointegrating Regression" />
+<meta name="og:description" content="Cointegration methods are widely used in empirical macroeconomics and empirical finance. It is well known that in a cointegrating regression the ordinary least squares (OLS) estimator of the parameters is super-consistent, i.e. converges at rate equal to the sample size T. When the regressors are endogenous, the limiting distribution of the OLS estimator is contaminated by so-called second order bias terms, see e.g. Phillips and Hansen (1990) &amp;lt;&lt;a href=&quot;https://doi.org/10.2307%2F2297545&quot;&gt;doi:10.2307/2297545&lt;/a&gt;&amp;gt;. The presence of these bias terms renders inference difficult. Consequently, several modifications to OLS that lead to zero mean Gaussian mixture limiting distributions have been proposed, which in turn make standard asymptotic inference feasible. These methods include the fully modified OLS (FM-OLS) approach of Phillips and Hansen (1990) &amp;lt;&lt;a href=&quot;https://doi.org/10.2307%2F2297545&quot;&gt;doi:10.2307/2297545&lt;/a&gt;&amp;gt;, the dynamic OLS (D-OLS) approach of Phillips and Loretan (1991) &amp;lt;&lt;a href=&quot;https://doi.org/10.2307%2F2298004&quot;&gt;doi:10.2307/2298004&lt;/a&gt;&amp;gt;, Saikkonen (1991) &amp;lt;&lt;a href=&quot;https://doi.org/10.1017%2FS0266466600004217&quot;&gt;doi:10.1017/S0266466600004217&lt;/a&gt;&amp;gt; and Stock and Watson (1993) &amp;lt;&lt;a href=&quot;https://doi.org/10.2307%2F2951763&quot;&gt;doi:10.2307/2951763&lt;/a&gt;&amp;gt; and the new estimation approach called integrated modified OLS (IM-OLS) of Vogelsang and Wagner (2014) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.jeconom.2013.10.015&quot;&gt;doi:10.1016/j.jeconom.2013.10.015&lt;/a&gt;&amp;gt;. The latter is based on an augmented partial sum (integration) transformation of the regression model. IM-OLS is similar in spirit to the FM- and D-OLS approaches, with the key difference that it does not require estimation of long run variance matrices and avoids the need to choose tuning parameters (kernels, bandwidths, lags). However, inference does require that a long run variance be scaled out. This package provides functions for the parameter estimation and inference with all three modified OLS approaches. That includes the automatic bandwidth selection approaches of Andrews (1991) &amp;lt;&lt;a href=&quot;https://doi.org/10.2307%2F2938229&quot;&gt;doi:10.2307/2938229&lt;/a&gt;&amp;gt; and of Newey and West (1994) &amp;lt;&lt;a href=&quot;https://doi.org/10.2307%2F2297912&quot;&gt;doi:10.2307/2297912&lt;/a&gt;&amp;gt; as well as the calculation of the long run variance." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=cointReg" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>cointReg: Parameter Estimation and Inference in a Cointegrating Regression</h2>
+<p>Cointegration methods are widely used in empirical macroeconomics
+    and empirical finance. It is well known that in a cointegrating
+    regression the ordinary least squares (OLS) estimator of the
+    parameters is super-consistent, i.e. converges at rate equal to the
+    sample size T. When the regressors are endogenous, the limiting
+    distribution of the OLS estimator is contaminated by so-called second
+    order bias terms, see e.g. Phillips and Hansen (1990) &lt;<a href="https://doi.org/10.2307%2F2297545">doi:10.2307/2297545</a>&gt;.
+    The presence of these bias terms renders inference difficult. Consequently,
+    several modifications to OLS that lead to zero mean Gaussian mixture
+    limiting distributions have been proposed, which in turn make
+    standard asymptotic inference feasible. These methods include
+    the fully modified OLS (FM-OLS) approach of Phillips and Hansen
+    (1990) &lt;<a href="https://doi.org/10.2307%2F2297545">doi:10.2307/2297545</a>&gt;, the dynamic OLS (D-OLS) approach of Phillips
+    and Loretan (1991) &lt;<a href="https://doi.org/10.2307%2F2298004">doi:10.2307/2298004</a>&gt;, Saikkonen (1991)
+    &lt;<a href="https://doi.org/10.1017%2FS0266466600004217">doi:10.1017/S0266466600004217</a>&gt; and Stock and Watson (1993)
+    &lt;<a href="https://doi.org/10.2307%2F2951763">doi:10.2307/2951763</a>&gt; and the new estimation approach called integrated
+    modified OLS (IM-OLS) of Vogelsang and Wagner (2014)
+    &lt;<a href="https://doi.org/10.1016%2Fj.jeconom.2013.10.015">doi:10.1016/j.jeconom.2013.10.015</a>&gt;. The latter is based on an augmented
+    partial sum (integration) transformation of the regression model. IM-OLS is
+    similar in spirit to the FM- and D-OLS approaches, with the key difference
+    that it does not require estimation of long run variance matrices and avoids
+    the need to choose tuning parameters (kernels, bandwidths, lags). However,
+    inference does require that a long run variance be scaled out.
+    This package provides functions for the parameter estimation and inference
+    with all three modified OLS approaches. That includes the automatic
+    bandwidth selection approaches of Andrews (1991) &lt;<a href="https://doi.org/10.2307%2F2938229">doi:10.2307/2938229</a>&gt; and
+    of Newey and West (1994) &lt;<a href="https://doi.org/10.2307%2F2297912">doi:10.2307/2297912</a>&gt; as well as the calculation of
+    the long run variance.</p>
+<table summary="Package cointReg summary">
+<tr>
+<td>Version:</td>
+<td>0.2.0</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../checkmate/index.html">checkmate</a> (&ge; 1.6.0), <a href="../MASS/index.html">MASS</a>, <a href="../matrixStats/index.html">matrixStats</a> (&ge; 0.14.1)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2016-06-14</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Philipp Aschersleben [aut, cre],
+  Martin Wagner [aut] (Author of underlying MATLAB code.)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Philipp Aschersleben  &#x3c;&#x61;&#x73;&#x63;&#x68;&#x65;&#x72;&#x73;&#x6c;&#x65;&#x62;&#x65;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x73;&#x74;&#x61;&#x74;&#x69;&#x73;&#x74;&#x69;&#x6b;&#x2e;&#x74;&#x75;&#x2d;&#x64;&#x6f;&#x72;&#x74;&#x6d;&#x75;&#x6e;&#x64;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/aschersleben/cointReg/issues">https://github.com/aschersleben/cointReg/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/aschersleben/cointReg">https://github.com/aschersleben/cointReg</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="README.html">README</a> <a href="news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/TimeSeries.html">TimeSeries</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_cointReg.html">cointReg results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package cointReg downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="cointReg.pdf"> cointReg.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/cointReg.html">cointReg</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/cointReg_0.2.0.tar.gz"> cointReg_0.2.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/cointReg_0.2.0.zip">cointReg_0.2.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/cointReg_0.2.0.zip">cointReg_0.2.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/cointReg_0.2.0.zip">cointReg_0.2.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/cointReg_0.2.0.tgz">cointReg_0.2.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/cointReg_0.2.0.tgz">cointReg_0.2.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/cointReg"> cointReg archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package cointReg reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../cointmonitoR/index.html">cointmonitoR</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../CPAT/index.html">CPAT</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=cointReg"><samp>https://CRAN.R-project.org/package=cointReg</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package pander</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="An R 'Pandoc' Writer [R package pander version 0.6.3]" />
+<meta name="citation_author1" content="Gergely Daróczi" />
+<meta name="citation_author2" content="Roman Tsegelskyi" />
+<meta name="citation_publication_date" content="2018-11-06" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=pander" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=pander" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="pander: An R 'Pandoc' Writer" />
+<meta name="og:description" content="Contains some functions catching all messages, 'stdout' and other useful information while evaluating R code and other helpers to return user specified text elements (like: header, paragraph, table, image, lists etc.) in 'pandoc' markdown or several type of R objects similarly automatically transformed to markdown format. Also capable of exporting/converting (the resulting) complex 'pandoc' documents to e.g. HTML, 'PDF', 'docx' or 'odt'. This latter reporting feature is supported in brew syntax or with a custom reference class with a smarty caching 'backend'." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=pander" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>pander: An R 'Pandoc' Writer</h2>
+<p>Contains some functions catching all messages, 'stdout' and other
+    useful information while evaluating R code and other helpers to return user
+    specified text elements (like: header, paragraph, table, image, lists etc.)
+    in 'pandoc' markdown or several type of R objects similarly automatically
+    transformed to markdown format. Also capable of exporting/converting (the
+    resulting) complex 'pandoc' documents to e.g. HTML, 'PDF', 'docx' or 'odt'. This
+    latter reporting feature is supported in brew syntax or with a custom reference
+    class with a smarty caching 'backend'.</p>
+<table summary="Package pander summary">
+<tr>
+<td>Version:</td>
+<td>0.6.3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.15.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>grDevices, graphics, methods, utils, stats, <a href="../digest/index.html">digest</a>, tools, <a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td>grid, <a href="../lattice/index.html">lattice</a>, <a href="../ggplot2/index.html">ggplot2</a> (&ge; 0.9.2), <a href="../sylly/index.html">sylly</a>, <a href="../sylly.en/index.html">sylly.en</a>, <a href="../futile.logger/index.html">futile.logger</a>, <a href="../survival/index.html">survival</a>, <a href="../microbenchmark/index.html">microbenchmark</a>, <a href="../zoo/index.html">zoo</a>, <a href="../nlme/index.html">nlme</a>, <a href="../descr/index.html">descr</a>, <a href="../MASS/index.html">MASS</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../tables/index.html">tables</a>, <a href="../reshape/index.html">reshape</a>, <a href="../memisc/index.html">memisc</a>, <a href="../Epi/index.html">Epi</a>, <a href="../randomForest/index.html">randomForest</a>, <a href="../tseries/index.html">tseries</a>, <a href="../gtable/index.html">gtable</a>, <a href="../rms/index.html">rms</a>, <a href="../forecast/index.html">forecast</a>, <a href="../data.table/index.html">data.table</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2018-11-06</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Gergely Daróczi <a href="https://orcid.org/0000-0003-3149-8537"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Roman Tsegelskyi [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Gergely Daróczi  &#x3c;&#x64;&#x61;&#x72;&#x6f;&#x63;&#x7a;&#x69;&#x67;&#x20;&#x61;&#x74;&#x20;&#x72;&#x61;&#x70;&#x70;&#x6f;&#x72;&#x74;&#x65;&#x72;&#x2e;&#x6e;&#x65;&#x74;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/rapporter/pander/issues">https://github.com/rapporter/pander/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/AGPL-3">AGPL-3</a> | file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://rapporter.github.io/pander">http://rapporter.github.io/pander</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>pandoc (http://johnmacfarlane.net/pandoc) for
+exporting markdown files to other formats.</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="NEWS">NEWS</a> <a href="INSTALL">INSTALL</a></td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/ReproducibleResearch.html">ReproducibleResearch</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_pander.html">pander results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package pander downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="pander.pdf"> pander.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/evals.html">Capturing evaluation information with evals</a><br/>
+<a href="vignettes/knitr.html">Using pander with knitr</a><br/>
+<a href="vignettes/pander.html">Rendering markdown with pander</a><br/>
+<a href="vignettes/pandoc_table.html">Rendering tables with pandoc.table</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/pander_0.6.3.tar.gz"> pander_0.6.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/pander_0.6.3.zip">pander_0.6.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/pander_0.6.3.zip">pander_0.6.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/pander_0.6.3.zip">pander_0.6.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/pander_0.6.3.tgz">pander_0.6.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/pander_0.6.3.tgz">pander_0.6.3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/pander"> pander archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package pander reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../desctable/index.html">desctable</a>, <a href="../DiffXTables/index.html">DiffXTables</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="http://www.bioconductor.org/packages/release/bioc/html/BatchQC.html"><span class="BioC">BatchQC</span></a>, <a href="../brinton/index.html">brinton</a>, <a href="../brr/index.html">brr</a>, <a href="../carpenter/index.html">carpenter</a>, <a href="../dataMaid/index.html">dataMaid</a>, <a href="../eclust/index.html">eclust</a>, <a href="../EpiSignalDetection/index.html">EpiSignalDetection</a>, <a href="../funModeling/index.html">funModeling</a>, <a href="../geomultistar/index.html">geomultistar</a>, <a href="../goxygen/index.html">goxygen</a>, <a href="../hagis/index.html">hagis</a>, <a href="../jtools/index.html">jtools</a>, <a href="../LOGAN/index.html">LOGAN</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/Metab.html"><span class="BioC">Metab</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/metaseqR2.html"><span class="BioC">metaseqR2</span></a>, <a href="../MplusAutomation/index.html">MplusAutomation</a>, <a href="../mscstexta4r/index.html">mscstexta4r</a>, <a href="../mscsweblm4r/index.html">mscsweblm4r</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/ngsReports.html"><span class="BioC">ngsReports</span></a>, <a href="../packagefinder/index.html">packagefinder</a>, <a href="../PCADSC/index.html">PCADSC</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/qcmetrics.html"><span class="BioC">qcmetrics</span></a>, <a href="../rapport/index.html">rapport</a>, <a href="../rapportools/index.html">rapportools</a>, <a href="../rmda/index.html">rmda</a>, <a href="../rosetta/index.html">rosetta</a>, <a href="../shinyobjects/index.html">shinyobjects</a>, <a href="../starschemar/index.html">starschemar</a>, <a href="../summarytools/index.html">summarytools</a>, <a href="../ufs/index.html">ufs</a>, <a href="../userfriendlyscience/index.html">userfriendlyscience</a>, <a href="../veccompare/index.html">veccompare</a>, <a href="../xgxr/index.html">xgxr</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../accelerometry/index.html">accelerometry</a>, <a href="../ammistability/index.html">ammistability</a>, <a href="../AmpGram/index.html">AmpGram</a>, <a href="../arsenal/index.html">arsenal</a>, <a href="../ARTool/index.html">ARTool</a>, <a href="../augmentedRCBD/index.html">augmentedRCBD</a>, <a href="../backShift/index.html">backShift</a>, <a href="../baytrends/index.html">baytrends</a>, <a href="../beanz/index.html">beanz</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/BEclear.html"><span class="BioC">BEclear</span></a>, <a href="../broom.mixed/index.html">broom.mixed</a>, <a href="../clifro/index.html">clifro</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/CoreGx.html"><span class="BioC">CoreGx</span></a>, <a href="../countfitteR/index.html">countfitteR</a>, <a href="../countyweather/index.html">countyweather</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/ctsGE.html"><span class="BioC">ctsGE</span></a>, <a href="../datafsm/index.html">datafsm</a>, <a href="../dataPreparation/index.html">dataPreparation</a>, <a href="../diceR/index.html">diceR</a>, <a href="../diveMove/index.html">diveMove</a>, <a href="../dMod/index.html">dMod</a>, <a href="../eRTG3D/index.html">eRTG3D</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/esetVis.html"><span class="BioC">esetVis</span></a>, <a href="../evaluator/index.html">evaluator</a>, <a href="../flattabler/index.html">flattabler</a>, <a href="../freesurfer/index.html">freesurfer</a>, <a href="../GCalignR/index.html">GCalignR</a>, <a href="../germinationmetrics/index.html">germinationmetrics</a>, <a href="../ggparty/index.html">ggparty</a>, <a href="../ggthemes/index.html">ggthemes</a>, <a href="../grpSLOPE/index.html">grpSLOPE</a>, <a href="../HaDeX/index.html">HaDeX</a>, <a href="../hurricaneexposure/index.html">hurricaneexposure</a>, <a href="../idem/index.html">idem</a>, <a href="../ivmte/index.html">ivmte</a>, <a href="../jdx/index.html">jdx</a>, <a href="../jsr223/index.html">jsr223</a>, <a href="../JWileymisc/index.html">JWileymisc</a>, <a href="../LifeInsuranceContracts/index.html">LifeInsuranceContracts</a>, <a href="../Luminescence/index.html">Luminescence</a>, <a href="../mbbefd/index.html">mbbefd</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/MCbiclust.html"><span class="BioC">MCbiclust</span></a>, <a href="../Mediana/index.html">Mediana</a>, <a href="../miWQS/index.html">miWQS</a>, <a href="../mlr/index.html">mlr</a>, <a href="../molic/index.html">molic</a>, <a href="../MUS/index.html">MUS</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/netprioR.html"><span class="BioC">netprioR</span></a>, <a href="../NetworkInference/index.html">NetworkInference</a>, <a href="../NIPTeR/index.html">NIPTeR</a>, <a href="../noaastormevents/index.html">noaastormevents</a>, <a href="../nonmemica/index.html">nonmemica</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/OncoSimulR.html"><span class="BioC">OncoSimulR</span></a>, <a href="../opencpu/index.html">opencpu</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/openPrimeR.html"><span class="BioC">openPrimeR</span></a>, <a href="../optmatch/index.html">optmatch</a>, <a href="../ormPlot/index.html">ormPlot</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/peakPantheR.html"><span class="BioC">peakPantheR</span></a>, <a href="../PGRdup/index.html">PGRdup</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/PharmacoGx.html"><span class="BioC">PharmacoGx</span></a>, <a href="../r4lineups/index.html">r4lineups</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/ramwas.html"><span class="BioC">ramwas</span></a>, <a href="../RClone/index.html">RClone</a>, <a href="../relMix/index.html">relMix</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/rmelting.html"><span class="BioC">rmelting</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/RTCGA.html"><span class="BioC">RTCGA</span></a>, <a href="../santaR/index.html">santaR</a>, <a href="../shiftR/index.html">shiftR</a>, <a href="../srvyr/index.html">srvyr</a>, <a href="../stationery/index.html">stationery</a>, <a href="../stocks/index.html">stocks</a>, <a href="../syuzhet/index.html">syuzhet</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/TCGAbiolinksGUI.html"><span class="BioC">TCGAbiolinksGUI</span></a>, <a href="http://www.bioconductor.org/packages/release/data/experiment/html/TCGAWorkflowData.html"><span class="BioC">TCGAWorkflowData</span></a>, <a href="../tidyrules/index.html">tidyrules</a>, <a href="../treespace/index.html">treespace</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/TVTB.html"><span class="BioC">TVTB</span></a>, <a href="../UncertainInterval/index.html">UncertainInterval</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/variancePartition.html"><span class="BioC">variancePartition</span></a>, <a href="../visit/index.html">visit</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/xcms.html"><span class="BioC">xcms</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=pander"><samp>https://CRAN.R-project.org/package=pander</samp></a>
+to link to this page.</p>
+</body>
+</html>

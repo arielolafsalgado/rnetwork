@@ -1,0 +1,27 @@
+Package: glmmsr
+Title: Fit a Generalized Linear Mixed Model
+Version: 0.1.1
+Authors@R: person("Helen", "Ogden", , "heogden12@gmail.com", role = c("aut", "cre"))
+Description: Conduct inference about generalized linear mixed models, with a
+    choice about which method to use to approximate the likelihood. In addition
+    to the Laplace and adaptive Gaussian quadrature approximations, which are
+    borrowed from 'lme4', the likelihood may be approximated by the sequential
+    reduction approximation, or an importance sampling approximation. These
+    methods provide an accurate approximation to the likelihood in some
+    situations where it is not possible to use adaptive Gaussian quadrature.
+Depends: R (>= 3.1.2)
+LinkingTo: Rcpp, RcppEigen, BH
+Imports: lme4 (>= 1.1-8), Matrix, R6, Rcpp, methods, stats, utils
+URL: http://github.com/heogden/glmmsr
+BugReports: http://github.com/heogden/glmmsr/issues
+License: GPL (>= 2)
+LazyData: true
+Suggests: BradleyTerry2, hglm.data, knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+RoxygenNote: 5.0.1
+NeedsCompilation: yes
+Packaged: 2016-03-12 16:53:37 UTC; ogden
+Author: Helen Ogden [aut, cre]
+Maintainer: Helen Ogden <heogden12@gmail.com>
+Repository: CRAN
+Date/Publication: 2016-03-13 11:29:42

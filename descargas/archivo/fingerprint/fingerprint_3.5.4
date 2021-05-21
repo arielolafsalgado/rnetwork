@@ -1,0 +1,24 @@
+Package: fingerprint
+Version: 3.5.4
+Date: 2016-10-24
+Title: Functions for Processing Binary Fingerprint Data
+Author: Rajarshi Guha <rajarshi.guha@gmail.com>
+Maintainer: Rajarshi Guha <rajarshi.guha@gmail.com>
+Description: A S4 class to represent binary 'fingerprints' and methods to manipulate 
+ fingerprint objects. Internally, the 'fingerprint' class models a binary fingerprint
+ as a vector of integers, such
+ that each element represents the position in the fingerprint that is set to 1.
+ The bitwise logical functions in R are overridden so that they can be used directly
+ with 'fingerprint' objects. A number of distance metrics are also
+ available (many contributed by Michael Fadock). Fingerprints 
+ can be converted to Euclidean vectors (i.e., points on the unit hypersphere) and
+ can also be folded using OR.  Arbitrary fingerprint formats can be handled via line
+ handlers. Currently handlers are provided for CDK, MOE and BCI fingerprint data.
+License: LGPL
+Depends: methods
+LazyLoad: yes
+Suggests: RUnit
+NeedsCompilation: yes
+Packaged: 2016-11-12 19:21:59 UTC; guhar
+Repository: CRAN
+Date/Publication: 2016-11-12 21:41:35

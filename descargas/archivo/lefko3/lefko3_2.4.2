@@ -1,0 +1,34 @@
+Package: lefko3
+Type: Package
+Title: Historical and Ahistorical Population Projection Matrix Analysis
+Version: 2.4.2
+Date: 2020-09-09
+Authors@R: c(person(given = "Richard P.", family = "Shefferson",
+             email = "cdorm@g.ecc.u-tokyo.ac.jp", role = c("aut", "cre"),
+             comment=c(ORCID="0000-0002-5234-3131")),
+             person(given = "Johan", family = "Ehrlen", role = "aut",
+             comment=c(ORCID="0000-0001-8539-8967")))
+Description: Creates matrix population models for use in population ecological
+             analyses. Specializes on the construction of historical matrices,
+             which are 2d matrices comprising 3 time intervals of demographic
+             information. Estimates both raw and function-based forms of
+             historical and standard ahistorical matrices. Methodology based on
+             Ehrlen (2000) <doi:10.1890/0012-9658(2000)081[1675:TDOPPD]2.0.CO;2>.
+Encoding: UTF-8
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.3), glmmTMB, lme4, MASS, MuMIn, RSpectra, stats,
+        stringr
+LinkingTo: Rcpp, RcppArmadillo
+LazyData: true
+RoxygenNote: 7.1.1
+Suggests: knitr, popbio, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2020-09-09 08:50:48 UTC; richshefferson
+Author: Richard P. Shefferson [aut, cre]
+    (<https://orcid.org/0000-0002-5234-3131>),
+  Johan Ehrlen [aut] (<https://orcid.org/0000-0001-8539-8967>)
+Maintainer: Richard P. Shefferson <cdorm@g.ecc.u-tokyo.ac.jp>
+Depends: R (>= 3.5.0)
+Repository: CRAN
+Date/Publication: 2020-09-17 08:20:08 UTC

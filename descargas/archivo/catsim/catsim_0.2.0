@@ -1,0 +1,30 @@
+Package: catsim
+Type: Package
+Title: Binary and Categorical Image Similarity Index
+Version: 0.2.0
+Authors@R: c(person(c("Geoffrey", "Thompson"),email="gzthompson@gmail.com",
+    role = c("aut", "cre"), comment = c(ORCID = '0000-0003-2436-8822')))	
+Description: Computes a structural similarity metric (after the style of
+    MS-SSIM for images) for binary and categorical 2D and 3D images. Can be
+    based on accuracy (simple matching), Cohen's kappa, Rand index, adjusted
+    Rand index, Jaccard index, Dice index, normalized mutual information, or
+    adjusted mutual information. In addition, has fast computation
+    of Cohen's kappa, the Rand indices, and the two mutual informations.
+    Implements the methods of Thompson and Maitra (2020) <arXiv:2004.09073>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: Rcpp
+RoxygenNote: 7.1.0
+URL: http://github.com/gzt/catsim, https://gzt.github.io/catsim
+BugReports: https://github.com/gzt/catsim/issues
+LinkingTo: Rcpp, testthat
+Suggests: testthat, covr, knitr, rmarkdown
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+NeedsCompilation: yes
+Packaged: 2020-04-23 19:56:47 UTC; gzt
+Author: Geoffrey Thompson [aut, cre] (<https://orcid.org/0000-0003-2436-8822>)
+Maintainer: Geoffrey Thompson <gzthompson@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-04-28 10:40:07 UTC

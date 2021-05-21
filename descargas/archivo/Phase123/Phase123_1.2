@@ -1,0 +1,18 @@
+Package: Phase123
+Type: Package
+Title: Simulating and Conducting Phase 123 Trials
+Version: 1.2
+Date: 2018-01-31
+Author: Andrew G Chapple
+Maintainer: Andrew Chapple <andrew.g.chapple@rice.edu>
+Description: Contains three simulation functions for implementing the entire Phase 123 trial and the separate Eff-Tox and Phase 3 portions of the trial, which may be beneficial for use on clusters. The functions AssignEffTox() and RandomizeEffTox() assign doses to patient cohorts during phase 12 and Reoptimize() determines the optimal dose to continue with during Phase 3. The functions ReturnMeansAgent() and ReturnMeanControl() gives the true mean survival for the agent doses and control and ReturnOCS() gives the operating characteristics of the design.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports: Rcpp (>= 0.12.9),survival, stats
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2018-02-06 19:23:05 UTC; Andrew
+Repository: CRAN
+Date/Publication: 2018-02-07 13:02:41 UTC

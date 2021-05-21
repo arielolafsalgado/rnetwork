@@ -1,0 +1,28 @@
+Package: exuber
+Type: Package
+Title: Econometric Analysis of Explosive Time Series
+Version: 0.1.0
+Authors@R: c(
+            person("Kostas", "Vasilopoulos", , email = "k.vasilopoulo@gmail.com", c("cre", "aut")),
+            person("Eftymios", "Pavlidis", email = "e.pavlidis@lancaster.ac.uk", role = "aut"),
+            person("Simon", "Spavound", email = "simon.spavound@googlemail.com", role = "aut")
+            )
+Description: Testing for and dating periods of explosive dynamics (exuberance) in time series using recursive unit root tests as proposed by Phillips, P. C., Shi, S. and Yu, J. (2015a) <doi:10.1111/iere.12132>. Simulate a variety of periodically-collapsing bubble models. The estimation and simulation utilizes the matrix inversion lemma from the recursive least squares algorithm, which results in a significant speed improvement.
+License: GPL-3
+URL: https://github.com/kvasilopoulos/exuber
+BugReports: https://github.com/kvasilopoulos/exuber/issues
+Imports: doParallel, parallel, foreach, Rcpp, rlang, dplyr, ggplot2,
+        purrr
+Suggests: knitr, rmarkdown, covr, testthat, withr, gridExtra
+LinkingTo: Rcpp
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2018-06-15 15:43:09 UTC; T460p
+Author: Kostas Vasilopoulos [cre, aut],
+  Eftymios Pavlidis [aut],
+  Simon Spavound [aut]
+Maintainer: Kostas Vasilopoulos <k.vasilopoulo@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-06-17 14:07:54 UTC

@@ -1,0 +1,30 @@
+Package: drugCombo
+Type: Package
+Title: Drug Interaction Modeling Based on Loewe Additivity Following
+        Harbron's Approach
+Version: 1.0.0
+Date: 2018-05-09
+Author: Maxim Nazarov, Nele Goeyvaerts, Chris Harbron (original article and code)
+Maintainer: Maxim Nazarov <maxim.nazarov@openanalytics.eu>
+Description: Perform assessment of synergy/antagonism for drug combinations based
+    on the Loewe additivity model, following Harbron's approach (Statistics in
+    Medicine, 2010, <doi:10.1002/sim.3916>). The package allows flexible modeling
+    of the drug interaction index and supports "2-stage" estimation in addition 
+    to "1-stage" estimation, including bootstrap-based confidence intervals.
+    The method requires data on the monotherapy responses and the package 
+    accommodates both checkerboard and ray designs. Functions are available for 
+    graphical exploration of model goodness-of-fit and diagnostics, as well as 
+    for synergy/antagonism assessment in 2D and 3D.
+License: GPL-3
+RoxygenNote: 6.0.1
+Depends: R (>= 2.10)
+Imports: ggplot2, minpack.lm, BIGL (>= 0.9), rgl, nlme, Deriv, methods,
+        stats
+Suggests: knitr, rmarkdown, testthat, Cairo
+VignetteBuilder: knitr, rmarkdown
+LazyData: true
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2018-05-09 13:53:27 UTC; mnazarov
+Repository: CRAN
+Date/Publication: 2018-05-11 09:22:03 UTC

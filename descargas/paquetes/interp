@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package interp</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Interpolation Methods [R package interp version 1.0-33]" />
+<meta name="citation_author1" content="Albrecht Gebhardt" />
+<meta name="citation_author2" content="Roger Bivand" />
+<meta name="citation_author3" content="David Sinclair" />
+<meta name="citation_publication_date" content="2020-01-08" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=interp" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=interp" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="interp: Interpolation Methods" />
+<meta name="og:description" content="Bivariate data interpolation on regular and irregular grids, either linear or using splines are the main part of this package. It is intended to provide FOSS replacement functions for the ACM licensed akima::interp and tripack::tri.mesh functions. Currently the piecewise linear interpolation part of akima::interp (and also akima::interpp) is implemented in interp::interp, this corresponds to the call akima::interp(..., linear=TRUE) which is the default setting and covers most of akima::interp use cases in depending packages. A re-implementation of Akimas spline interpolation (akima::interp(..., linear=FALSE)) is currently under development and will complete this package in a later version. Estimators for partial derivatives are already available, these are a prerequisite for the spline interpolation. The basic part is currently a GPLed triangulation algorithm (sweep hull algorithm by David Sinclair) providing the starting point for the piecewise linear interpolator. As side effect this algorithm is also used to provide replacements for the basic functions of the tripack package which also suffer from the ACM restrictions. All functions are designed to be backward compatible with their akima / tripack counterparts." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=interp" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>interp: Interpolation Methods</h2>
+<p>Bivariate data interpolation on regular and irregular
+  grids, either linear or using splines are the main part of this
+  package.  It is intended to provide FOSS replacement functions for
+  the ACM licensed akima::interp and tripack::tri.mesh functions.
+  Currently the piecewise linear interpolation part of akima::interp
+  (and also akima::interpp) is implemented in interp::interp, this
+  corresponds to the call akima::interp(..., linear=TRUE) which is the
+  default setting and covers most of akima::interp use cases in
+  depending packages.  A re-implementation of Akimas spline
+  interpolation (akima::interp(..., linear=FALSE)) is currently under
+  development and will complete this package in a later
+  version. Estimators for partial derivatives are already available,
+  these are a prerequisite for the spline interpolation.  The basic
+  part is currently a GPLed triangulation algorithm (sweep hull
+  algorithm by David Sinclair) providing the starting point for the
+  piecewise linear interpolator. As side effect this algorithm is also
+  used to provide replacements for the basic functions of the tripack
+  package which also suffer from the ACM restrictions.  All functions
+  are designed to be backward compatible with their akima / tripack
+  counterparts.</p>
+<table summary="Package interp summary">
+<tr>
+<td>Version:</td>
+<td>1.0-33</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.9), <a href="../deldir/index.html">deldir</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppEigen/index.html">RcppEigen</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../sp/index.html">sp</a>, <a href="../Deriv/index.html">Deriv</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-01-08</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Albrecht Gebhardt [aut, cre, cph] (...),
+  Roger Bivand [aut],
+  David Sinclair [aut, cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Albrecht Gebhardt  &#x3c;&#x61;&#x6c;&#x62;&#x72;&#x65;&#x63;&#x68;&#x74;&#x2e;&#x67;&#x65;&#x62;&#x68;&#x61;&#x72;&#x64;&#x74;&#x20;&#x61;&#x74;&#x20;&#x61;&#x61;&#x75;&#x2e;&#x61;&#x74;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="README">README</a> <a href="ChangeLog">ChangeLog</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/NumericalMathematics.html">NumericalMathematics</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_interp.html">interp results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package interp downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="interp.pdf"> interp.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/interp_1.0-33.tar.gz"> interp_1.0-33.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/interp_1.0-33.zip">interp_1.0-33.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/interp_1.0-33.zip">interp_1.0-33.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/interp_1.0-33.zip">interp_1.0-33.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/interp_1.0-33.tgz">interp_1.0-33.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/interp_1.0-33.tgz">interp_1.0-33.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/interp"> interp archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package interp reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../contourPlot/index.html">contourPlot</a>, <a href="../scpm/index.html">scpm</a>, <a href="../Yamm/index.html">Yamm</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../EvolutionaryGames/index.html">EvolutionaryGames</a>, <a href="../NGSSEML/index.html">NGSSEML</a>, <a href="../OUwie/index.html">OUwie</a>, <a href="../pcds/index.html">pcds</a>, <a href="../RCarb/index.html">RCarb</a>, <a href="../SOMbrero/index.html">SOMbrero</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../locfit/index.html">locfit</a>, <a href="../rgl/index.html">rgl</a>, <a href="../shotGroups/index.html">shotGroups</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=interp"><samp>https://CRAN.R-project.org/package=interp</samp></a>
+to link to this page.</p>
+</body>
+</html>

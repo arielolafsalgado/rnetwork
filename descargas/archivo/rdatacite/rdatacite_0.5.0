@@ -1,0 +1,29 @@
+Package: rdatacite
+Type: Package
+Title: Client for the 'DataCite' API
+Description: Client for the web service methods provided
+    by 'DataCite' (<https://www.datacite.org/>), including functions to interface with
+    their 'RESTful' search API. The API is backed by 'Elasticsearch', allowing
+    expressive queries, including faceting.
+Version: 0.5.0
+License: MIT + file LICENSE
+Authors@R: person("Scott", "Chamberlain", role = c("aut", "cre"),
+    email = "myrmecocystus@gmail.com",
+    comment = c(ORCID="0000-0003-1444-9135"))
+URL: https://docs.ropensci.org/rdatacite,
+        https://github.com/ropensci/rdatacite
+BugReports: https://github.com/ropensci/rdatacite/issues
+Encoding: UTF-8
+Imports: jsonlite, crul (>= 0.7.4), tibble
+Suggests: knitr, testthat, webmockr, vcr
+RoxygenNote: 7.0.2
+X-schema.org-applicationCategory: Data
+X-schema.org-keywords: data, scholarly, dataset, https, API,
+        web-services
+X-schema.org-isPartOf: https://ropensci.org
+NeedsCompilation: no
+Packaged: 2020-01-07 18:50:57 UTC; sckott
+Author: Scott Chamberlain [aut, cre] (<https://orcid.org/0000-0003-1444-9135>)
+Maintainer: Scott Chamberlain <myrmecocystus@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-01-08 19:10:02 UTC

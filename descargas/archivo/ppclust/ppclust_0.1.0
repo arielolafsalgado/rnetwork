@@ -1,0 +1,24 @@
+Package: ppclust
+Type: Package
+Title: Probabilistic and Possibilistic Cluster Analysis
+Version: 0.1.0
+Date: 2017-11-28
+Encoding: latin1
+Authors@R: c(person("Zeynel", "Cebeci", email = "zcebeci@cukurova.edu.tr", role = c("aut", "cre")), 
+     person("Figen","Yildiz", role = "aut", email = "yildizf@cukurova.edu.tr"),
+     person("Alper Tuna","Kavlak", role = "aut", email = "alpertunakavlak@gmail.com"),
+     person("Cagatay","Cebeci", role = "aut", email = "cagatay.cebeci@strath.ac.uk"),
+     person("Hasan","Onder", role = "aut", email = "honder@omu.edu.tr"))
+Author: Zeynel Cebeci [aut, cre], Figen Yildiz [aut], Alper Tuna Kavlak [aut], Cagatay Cebeci [aut], Hasan Onder [aut]
+Maintainer: Zeynel Cebeci <zcebeci@cukurova.edu.tr>
+Description: Partitioning clustering divides the objects in a data set into non-overlapping subsets or clusters by using the prototype-based probabilistic and possibilistic clustering algorithms. This package covers a set of the functions for Fuzzy C-Means (Bezdek, 1974) <doi:10.1080/01969727308546047>, Possibilistic C-Means (Krishnapuram & Keller, 1993) <doi:10.1109/91.227387>, Possibilistic Fuzzy C-Means (Pal et al, 2005) <doi:10.1109/TFUZZ.2004.840099>, Possibilistic Clustering Algorithm (Yang et al, 2006) <doi:10.1016/j.patcog.2005.07.005>, Possibilistic C-Means with Repulsion (Wachs et al, 2006) <doi:10.1007/3-540-31662-0_6> and the other variants of hard and soft clustering algorithms. The cluster prototypes and membership matrices required by these partitioning algorithms are initialized with different initialization techniques that are available in the package 'inaparc'. As the distance metrics, not only the Euclidean distance but also a set of the commonly used distance metrics are available to use with some of the algorithms in the package. 
+Depends: R (>= 3.0.0)
+License: GPL (>= 2)
+LazyData: true
+Imports: graphics, grDevices, inaparc, stats, utils
+Suggests: cluster, factoextra, fclust, knitr, MASS, rmarkdown, vegclust
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-11-28 18:36:31 UTC; user1
+Repository: CRAN
+Date/Publication: 2017-11-29 15:18:25 UTC

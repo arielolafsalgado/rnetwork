@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package kgc</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Koeppen-Geiger Climatic Zones [R package kgc version 1.0.0.2]" />
+<meta name="citation_author1" content="Chelsey Bryant" />
+<meta name="citation_author2" content="Nicholas R. Wheeler" />
+<meta name="citation_author3" content="Franz Rubel" />
+<meta name="citation_author4" content="Roger H. French" />
+<meta name="citation_publication_date" content="2017-12-20" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=kgc" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=kgc" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="kgc: Koeppen-Geiger Climatic Zones" />
+<meta name="og:description" content="Aids in identifying the Koeppen-Geiger (KG) climatic zone for a given location. The Koeppen-Geiger climate zones were first published in 1884, as a system to classify regions of the earth by their relative heat and humidity through the year, for the benefit of human health, plant and agriculture and other human activity [1]. This climate zone classification system, applicable to all of the earths surface, has continued to be developed by scientists up to the present day. Recently one of use (FZ) has published updated, higher accuracy KG climate zone definitions [2]. In this package we use these updated high-resolution maps as the data source [3]. We provide functions that return the KG climate zone for a given longitude and lattitude, or for a given United States zip code. In addition the CZUncertainty() function will check climate zones nearby to check if the given location is near a climate zone boundary. In addition an interactive shiny app is provided to define the KG climate zone for a given longitude and lattitude, or United States zip code. Digital data, as well as animated maps, showing the shift of the climate zones are provided on the following website &amp;lt;&lt;a href=&quot;http://koeppen-geiger.vu-wien.ac.at&quot;&gt;http://koeppen-geiger.vu-wien.ac.at&lt;/a&gt;&amp;gt;. This work was supported by the DOE-EERE SunShot award DE-EE-0007140. [1] W. Koeppen, (2011) &amp;lt;&lt;a href=&quot;https://doi.org/10.1127%2F0941-2948%2F2011%2F105&quot;&gt;doi:10.1127/0941-2948/2011/105&lt;/a&gt;&amp;gt;. [2] F. Rubel and M. Kottek, (2010) &amp;lt;&lt;a href=&quot;https://doi.org/10.1127%2F0941-2948%2F2010%2F0430&quot;&gt;doi:10.1127/0941-2948/2010/0430&lt;/a&gt;&amp;gt;. [3] F. Rubel, K. Brugger, K. Haslinger, and I. Auer, (2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.1127%2Fmetz%2F2016%2F0816&quot;&gt;doi:10.1127/metz/2016/0816&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=kgc" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>kgc: Koeppen-Geiger Climatic Zones</h2>
+<p>Aids in identifying the Koeppen-Geiger (KG) climatic zone for 
+    a given location. The Koeppen-Geiger climate zones were first published in 1884, as a system
+    to classify regions of the earth by their relative heat and humidity through the year, for 
+    the benefit of human health, plant and agriculture and other human activity [1]. This climate
+    zone classification system, applicable to all of the earths surface, has continued to be 
+    developed by scientists up to the present day.  Recently one of use (FZ) has published updated,
+    higher accuracy KG climate zone definitions [2]. In this package we use these updated 
+    high-resolution maps as the data source [3]. We provide functions that return the KG climate zone 
+    for a given longitude and lattitude, or for a given United States zip code. In addition
+    the CZUncertainty() function will check climate zones nearby to check if the given location
+    is near a climate zone boundary. In addition an interactive shiny app is provided to define 
+    the KG climate zone for a given longitude and lattitude, or United States zip code. 
+    Digital data, as well as animated maps, showing the shift of the climate zones are provided 
+    on the following website &lt;<a href="http://koeppen-geiger.vu-wien.ac.at">http://koeppen-geiger.vu-wien.ac.at</a>&gt;.
+    This work was supported by the DOE-EERE SunShot award DE-EE-0007140.
+     [1] W. Koeppen, (2011) &lt;<a href="https://doi.org/10.1127%2F0941-2948%2F2011%2F105">doi:10.1127/0941-2948/2011/105</a>&gt;.
+     [2] F. Rubel and M. Kottek, (2010) &lt;<a href="https://doi.org/10.1127%2F0941-2948%2F2010%2F0430">doi:10.1127/0941-2948/2010/0430</a>&gt;.
+     [3] F. Rubel, K. Brugger, K. Haslinger, and I. Auer, (2016) &lt;<a href="https://doi.org/10.1127%2Fmetz%2F2016%2F0816">doi:10.1127/metz/2016/0816</a>&gt;.</p>
+<table summary="Package kgc summary">
+<tr>
+<td>Version:</td>
+<td>1.0.0.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3.2), <a href="../shiny/index.html">shiny</a>, <a href="../shinythemes/index.html">shinythemes</a>, <a href="../plyr/index.html">plyr</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2017-12-20</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Chelsey Bryant <a href="https://orcid.org/0000-0003-3603-4854"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Nicholas R. Wheeler
+    <a href="https://orcid.org/0000-0003-2248-8919"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Franz Rubel <a href="https://orcid.org/0000-0002-0048-7379"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Roger H. French <a href="https://orcid.org/0000-0002-6162-0532"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Chelsey Bryant  &#x3c;&#x63;&#x6c;&#x62;&#x31;&#x31;&#x37;&#x20;&#x61;&#x74;&#x20;&#x63;&#x61;&#x73;&#x65;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/BSD_2_clause">BSD_2_clause</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_kgc.html">kgc results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package kgc downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="kgc.pdf"> kgc.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/kgc-fine.html">2 - KGC Data Resolution</a><br/>
+<a href="vignettes/kgc-vignette.html">1 - KGC Vignette</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/kgc_1.0.0.2.tar.gz"> kgc_1.0.0.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/kgc_1.0.0.2.zip">kgc_1.0.0.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/kgc_1.0.0.2.zip">kgc_1.0.0.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/kgc_1.0.0.2.zip">kgc_1.0.0.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/kgc_1.0.0.2.tgz">kgc_1.0.0.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/kgc_1.0.0.2.tgz">kgc_1.0.0.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/kgc"> kgc archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=kgc"><samp>https://CRAN.R-project.org/package=kgc</samp></a>
+to link to this page.</p>
+</body>
+</html>

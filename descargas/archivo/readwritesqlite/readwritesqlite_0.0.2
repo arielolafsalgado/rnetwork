@@ -1,0 +1,33 @@
+Package: readwritesqlite
+Title: Enhanced Reading and Writing for 'SQLite' Databases
+Version: 0.0.2
+Authors@R: c(
+    person("Joe", "Thorley", , "joe@poissonconsulting.ca", c("aut", "cre"), comment = c(ORCID = "0000-0002-7683-4592")),
+    person("Poisson Consulting", role = c("cph", "fnd"))
+    )
+Description: 
+  Reads and writes data frames to 'SQLite' databases while 
+  preserving time zones (for POSIXct columns), 
+  projections (for 'sfc' columns), units (for 'units' columns), 
+  levels (for factors and ordered factors) and classes for 
+  logical, Date and 'hms' columns.
+  It also logs changes to tables and provides more informative error messages.
+License: MIT + file LICENSE
+Depends: R (>= 3.4)
+Imports: err, checkr, dttr2, hms (>= 0.5.0), DBI, RSQLite, sf, tibble,
+        units
+Suggests: covr, testthat, knitr, rmarkdown
+URL: https://github.com/poissonconsulting/readwritesqlite
+BugReports: https://github.com/poissonconsulting/readwritesqlite/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2019-07-23 16:26:43 UTC; joe
+Author: Joe Thorley [aut, cre] (<https://orcid.org/0000-0002-7683-4592>),
+  Poisson Consulting [cph, fnd]
+Maintainer: Joe Thorley <joe@poissonconsulting.ca>
+Repository: CRAN
+Date/Publication: 2019-07-23 16:50:02 UTC

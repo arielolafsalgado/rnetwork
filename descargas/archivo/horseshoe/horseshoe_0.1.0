@@ -1,0 +1,33 @@
+Package: horseshoe
+Title: Implementation of the Horseshoe Prior
+Version: 0.1.0
+Authors@R: c(
+    person("Stephanie", "van der Pas", email = "svdpas@math.leidenuniv.nl", role = c("cre", "aut")),
+    person("James", "Scott", email = "James.Scott@mccombs.utexas.edu", role = "aut"),
+    person("Antik", "Chakraborty", email = "antik@stat.tamu.edu", role = "aut"),
+    person("Anirban", "Bhattacharya", email = "anirbanb@stat.tamu.edu", role = "aut"))
+Description: Contains functions for applying the horseshoe prior to high-
+    dimensional linear regression, yielding the posterior mean and credible
+    intervals, amongst other things. The key parameter tau can be equipped with
+    a prior or estimated via maximum marginal likelihood estimation (MMLE).
+    The main function, horseshoe, is for linear regression. In addition, there
+    are functions specifically for the sparse normal means problem, allowing
+    for faster computation of for example the posterior mean and posterior
+    variance. Finally, there is a function available to perform variable
+    selection, using either a form of thresholding, or credible intervals.
+Depends: R (>= 3.1.0)
+Imports: stats
+Suggests: Hmisc
+Encoding: UTF-8
+License: GPL-3
+LazyData: false
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-11-08 15:53:54 UTC; stephanie
+Author: Stephanie van der Pas [cre, aut],
+  James Scott [aut],
+  Antik Chakraborty [aut],
+  Anirban Bhattacharya [aut]
+Maintainer: Stephanie van der Pas <svdpas@math.leidenuniv.nl>
+Repository: CRAN
+Date/Publication: 2016-11-08 18:36:01

@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package scoper</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Spectral Clustering-Based Method for Identifying B Cell Clones [R package scoper version 1.1.0]" />
+<meta name="citation_author1" content="Nima Nouri" />
+<meta name="citation_author2" content="Jason Vander Heiden" />
+<meta name="citation_author3" content="Steven Kleinstein" />
+<meta name="citation_publication_date" content="2020-08-10" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=scoper" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=scoper" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="scoper: Spectral Clustering-Based Method for Identifying B Cell Clones" />
+<meta name="og:description" content="Provides a computational framework for identification of B cell clones from Adaptive Immune Receptor Repertoire sequencing (AIRR-Seq) data. Three main functions are included (identicalClones, hierarchicalClones, and spectralClones) that perform clustering among sequences of BCRs/IGs (B cell receptors/immunoglobulins) which share the same V gene, J gene and junction length. Nouri N and Kleinstein SH (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fbioinformatics%2Fbty235&quot;&gt;doi:10.1093/bioinformatics/bty235&lt;/a&gt;&amp;gt;. Nouri N and Kleinstein SH (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1101%2F788620&quot;&gt;doi:10.1101/788620&lt;/a&gt;&amp;gt;. Gupta NT, et al. (2017) &amp;lt;&lt;a href=&quot;https://doi.org/10.4049%2Fjimmunol.1601850&quot;&gt;doi:10.4049/jimmunol.1601850&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=scoper" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>scoper: Spectral Clustering-Based Method for Identifying B Cell Clones</h2>
+<p>Provides a computational framework for identification of B cell clones from 
+             Adaptive Immune Receptor Repertoire sequencing (AIRR-Seq) data. Three main 
+             functions are included (identicalClones, hierarchicalClones, and spectralClones) 
+             that perform clustering among sequences of BCRs/IGs (B cell receptors/immunoglobulins) 
+             which share the same V gene, J gene and junction length.
+             Nouri N and Kleinstein SH (2018) &lt;<a href="https://doi.org/10.1093%2Fbioinformatics%2Fbty235">doi:10.1093/bioinformatics/bty235</a>&gt;.
+             Nouri N and Kleinstein SH (2019) &lt;<a href="https://doi.org/10.1101%2F788620">doi:10.1101/788620</a>&gt;.
+             Gupta NT, et al. (2017) &lt;<a href="https://doi.org/10.4049%2Fjimmunol.1601850">doi:10.4049/jimmunol.1601850</a>&gt;.</p>
+<table summary="Package scoper summary">
+<tr>
+<td>Version:</td>
+<td>1.1.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0), <a href="../ggplot2/index.html">ggplot2</a> (&ge; 3.2.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../alakazam/index.html">alakazam</a> (&ge; 1.0.2), <a href="../shazam/index.html">shazam</a> (&ge; 1.0.1), <a href="../data.table/index.html">data.table</a>, <a href="../doParallel/index.html">doParallel</a>, <a href="../dplyr/index.html">dplyr</a> (&ge; 0.8.1), <a href="../foreach/index.html">foreach</a>, methods, <a href="../Rcpp/index.html">Rcpp</a> (&ge;
+0.12.12), <a href="../rlang/index.html">rlang</a>, <a href="../scales/index.html">scales</a>, stats, <a href="../stringi/index.html">stringi</a>, <a href="../tidyr/index.html">tidyr</a> (&ge; 1.0.0)</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-08-10</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Nima Nouri [aut],
+  Edel Aron [ctb],
+  Jason Vander Heiden [aut, cre],
+  Steven Kleinstein [aut, cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Jason Vander Heiden  &#x3c;&#x6a;&#x61;&#x73;&#x6f;&#x6e;&#x2e;&#x76;&#x61;&#x6e;&#x64;&#x65;&#x72;&#x68;&#x65;&#x69;&#x64;&#x65;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://bitbucket.org/kleinstein/scoper/issues">https://bitbucket.org/kleinstein/scoper/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/AGPL-3">AGPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://scoper.readthedocs.io">https://scoper.readthedocs.io</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>C++11</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">scoper citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_scoper.html">scoper results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package scoper downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="scoper.pdf"> scoper.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Scoper-Vignette.pdf">Inferring B cell clonal relationships</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/scoper_1.1.0.tar.gz"> scoper_1.1.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/scoper_1.1.0.zip">scoper_1.1.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/scoper_1.1.0.zip">scoper_1.1.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/scoper_1.1.0.zip">scoper_1.1.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/scoper_1.1.0.tgz">scoper_1.1.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/scoper_1.1.0.tgz">scoper_1.1.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/scoper"> scoper archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=scoper"><samp>https://CRAN.R-project.org/package=scoper</samp></a>
+to link to this page.</p>
+</body>
+</html>

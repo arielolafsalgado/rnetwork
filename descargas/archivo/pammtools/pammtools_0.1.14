@@ -1,0 +1,34 @@
+Package: pammtools
+Title: Piece-Wise Exponential Additive Mixed Modeling Tools for
+        Survival Analysis
+Version: 0.1.14
+Date: 2019-09-05
+Authors@R: c(
+    person("Andreas", "Bender", , "andreas.bender@stat.uni-muenchen.de", role = c("aut", "cre"), comment=c(ORCID = "0000-0001-5628-8611")),
+    person("Fabian", "Scheipl", , "fabian.scheipl@stat.uni-muenchen.de", role = c("aut")))
+Description: The Piece-wise exponential (Additive Mixed) Model
+    (PAMM; Bender and Scheipl (2018) <doi: 10.1177/1471082X17748083>) is a
+    powerful model class for the analysis of survival (or time-to-event) data,
+    based on Generalized Additive (Mixed) Models (GA(M)Ms). It offers intuitive specification and robust estimation of complex survival models with stratified baseline hazards, random effects, time-varying effects, time-dependent covariates and cumulative effects (Bender and others (2018) <doi:10.1093/biostatistics/kxy003>.
+    pammtools provides tidy workflow for survival analysis with PAMMs,
+    including data simulation, transformation and other functions for data
+    preprocessing and model post-processing as well as visualization.
+Depends: R (>= 3.3.0)
+Imports: mgcv, survival (>= 2.39-5), checkmate, magrittr, rlang, tidyr
+        (>= 0.8.3), ggplot2, dplyr (>= 0.7.0), purrr (>= 0.2.3),
+        tibble, msm, lazyeval, Formula, mvtnorm
+Suggests: RColorBrewer, scam, coxme, testthat, timereg, knitr,
+        rmarkdown, grid, gridExtra, covr, pkgdown
+License: MIT + file LICENSE
+LazyData: true
+URL: https://github.com/adibender/pammtools
+BugReports: https://github.com/adibender/pammtools/issues
+RoxygenNote: 6.1.1
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2019-09-08 14:14:30 UTC; abhs
+Author: Andreas Bender [aut, cre] (<https://orcid.org/0000-0001-5628-8611>),
+  Fabian Scheipl [aut]
+Maintainer: Andreas Bender <andreas.bender@stat.uni-muenchen.de>
+Repository: CRAN
+Date/Publication: 2019-09-08 14:40:02 UTC

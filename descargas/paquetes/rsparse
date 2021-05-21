@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package rsparse</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Statistical Learning on Sparse Matrices [R package rsparse version 0.4.0]" />
+<meta name="citation_author" content="Dmitriy Selivanov" />
+<meta name="citation_publication_date" content="2020-04-01" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=rsparse" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=rsparse" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="rsparse: Statistical Learning on Sparse Matrices" />
+<meta name="og:description" content="Implements many algorithms for statistical learning on sparse matrices - matrix factorizations, matrix completion, elastic net regressions, factorization machines. Also 'rsparse' enhances 'Matrix' package by providing methods for multithreaded &amp;lt;sparse, dense&amp;gt; matrix products and native slicing of the sparse matrices in Compressed Sparse Row (CSR) format. List of the algorithms for regression problems: 1) Elastic Net regression via Follow The Proximally-Regularized Leader (FTRL) Stochastic Gradient Descent (SGD), as per McMahan et al(, &amp;lt;&lt;a href=&quot;https://doi.org/10.1145%2F2487575.2488200&quot;&gt;doi:10.1145/2487575.2488200&lt;/a&gt;&amp;gt;) 2) Factorization Machines via SGD, as per Rendle (2010, &amp;lt;&lt;a href=&quot;https://doi.org/10.1109%2FICDM.2010.127&quot;&gt;doi:10.1109/ICDM.2010.127&lt;/a&gt;&amp;gt;) List of algorithms for matrix factorization and matrix completion: 1) Weighted Regularized Matrix Factorization (WRMF) via Alternating Least Squares (ALS) - paper by Hu, Koren, Volinsky (2008, &amp;lt;&lt;a href=&quot;https://doi.org/10.1109%2FICDM.2008.22&quot;&gt;doi:10.1109/ICDM.2008.22&lt;/a&gt;&amp;gt;) 2) Maximum-Margin Matrix Factorization via ALS, paper by Rennie, Srebro (2005, &amp;lt;&lt;a href=&quot;https://doi.org/10.1145%2F1102351.1102441&quot;&gt;doi:10.1145/1102351.1102441&lt;/a&gt;&amp;gt;) 3) Fast Truncated Singular Value Decomposition (SVD), Soft-Thresholded SVD, Soft-Impute matrix completion via ALS - paper by Hastie, Mazumder et al. (2014, &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1410.2596&quot;&gt;arXiv:1410.2596&lt;/a&gt;&amp;gt;) 4) Linear-Flow matrix factorization, from 'Practical linear models for large-scale one-class collaborative filtering' by Sedhain, Bui, Kawale et al (2016, ISBN:978-1-57735-770-4) 5) GlobalVectors (GloVe) matrix factorization via SGD, paper by Pennington, Socher, Manning (2014, &amp;lt;&lt;a href=&quot;https://www.aclweb.org/anthology/D14-1162&quot;&gt;https://www.aclweb.org/anthology/D14-1162&lt;/a&gt;&amp;gt;) Package is reasonably fast and memory efficient - it allows to work with large datasets - millions of rows and millions of columns. This is particularly useful for practitioners working on recommender systems." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=rsparse" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>rsparse: Statistical Learning on Sparse Matrices</h2>
+<p>Implements many algorithms for statistical learning on 
+  sparse matrices - matrix factorizations, matrix completion, 
+  elastic net regressions, factorization machines. 
+  Also 'rsparse' enhances 'Matrix' package by providing methods for 
+  multithreaded &lt;sparse, dense&gt; matrix products and native slicing of 
+  the sparse matrices in Compressed Sparse Row (CSR) format.
+  List of the algorithms for regression problems:
+  1) Elastic Net regression via Follow The Proximally-Regularized Leader (FTRL) 
+  Stochastic Gradient Descent (SGD), as per McMahan et al(, &lt;<a href="https://doi.org/10.1145%2F2487575.2488200">doi:10.1145/2487575.2488200</a>&gt;)
+  2) Factorization Machines via SGD, as per Rendle (2010, &lt;<a href="https://doi.org/10.1109%2FICDM.2010.127">doi:10.1109/ICDM.2010.127</a>&gt;)
+  List of algorithms for matrix factorization and matrix completion:
+  1) Weighted Regularized Matrix Factorization (WRMF) via Alternating Least 
+  Squares (ALS) - paper by Hu, Koren, Volinsky (2008, &lt;<a href="https://doi.org/10.1109%2FICDM.2008.22">doi:10.1109/ICDM.2008.22</a>&gt;)
+  2) Maximum-Margin Matrix Factorization via ALS, paper by Rennie, Srebro 
+  (2005, &lt;<a href="https://doi.org/10.1145%2F1102351.1102441">doi:10.1145/1102351.1102441</a>&gt;)
+  3) Fast Truncated Singular Value Decomposition (SVD), Soft-Thresholded SVD, 
+  Soft-Impute matrix completion via ALS - paper by Hastie, Mazumder 
+  et al. (2014, &lt;<a href="https://arxiv.org/abs/1410.2596">arXiv:1410.2596</a>&gt;)
+  4) Linear-Flow matrix factorization, from 'Practical linear models for 
+  large-scale one-class collaborative filtering' by Sedhain, Bui, Kawale et al 
+  (2016, ISBN:978-1-57735-770-4)
+  5) GlobalVectors (GloVe) matrix factorization via SGD, paper by Pennington, 
+  Socher, Manning (2014, &lt;<a href="https://www.aclweb.org/anthology/D14-1162">https://www.aclweb.org/anthology/D14-1162</a>&gt;)
+  Package is reasonably fast and memory efficient - it allows to work with large
+  datasets - millions of rows and millions of columns. This is particularly useful 
+  for practitioners working on recommender systems.</p>
+<table summary="Package rsparse summary">
+<tr>
+<td>Version:</td>
+<td>0.4.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.6.0), methods</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Matrix/index.html">Matrix</a> (&ge; 1.2), <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.11), <a href="../data.table/index.html">data.table</a> (&ge; 1.10.0), <a href="../float/index.html">float</a> (&ge; 0.2-2), <a href="../RhpcBLASctl/index.html">RhpcBLASctl</a>, <a href="../lgr/index.html">lgr</a> (&ge; 0.2)</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a> (&ge; 0.9.100.5.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../covr/index.html">covr</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-04-01</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Dmitriy Selivanov <a href="https://orcid.org/0000-0001-5413-1506"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre, cph],
+  Drew Schmidt [ctb] (configure script for BLAS, LAPACK detection),
+  Wei-Chen Chen [ctb] (configure script and work on linking to float
+    package)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Dmitriy Selivanov  &#x3c;&#x64;&#x73;&#x20;&#x61;&#x74;&#x20;&#x72;&#x65;&#x78;&#x79;&#x2e;&#x61;&#x69;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/rexyai/rsparse/issues">https://github.com/rexyai/rsparse/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/rexyai/rsparse">https://github.com/rexyai/rsparse</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/MissingData.html">MissingData</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_rsparse.html">rsparse results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package rsparse downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="rsparse.pdf"> rsparse.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/rsparse_0.4.0.tar.gz"> rsparse_0.4.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/rsparse_0.4.0.zip">rsparse_0.4.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/rsparse_0.4.0.zip">rsparse_0.4.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/rsparse_0.4.0.zip">rsparse_0.4.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/rsparse_0.4.0.tgz">rsparse_0.4.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/rsparse_0.4.0.tgz">rsparse_0.4.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/rsparse"> rsparse archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package rsparse reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../LSX/index.html">LSX</a>, <a href="../text2vec/index.html">text2vec</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=rsparse"><samp>https://CRAN.R-project.org/package=rsparse</samp></a>
+to link to this page.</p>
+</body>
+</html>

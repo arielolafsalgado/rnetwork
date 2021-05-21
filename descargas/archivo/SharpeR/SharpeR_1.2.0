@@ -1,0 +1,32 @@
+Package: SharpeR
+Maintainer: Steven E. Pav <shabbychef@gmail.com>
+Authors@R: c(person(c("Steven", "E."), "Pav", 
+    role=c("aut","cre"),
+    email="shabbychef@gmail.com",
+    comment = c(ORCID = "0000-0002-4197-6195")))
+Version: 1.2.0
+Date: 2018-10-07
+License: LGPL-3
+Title: Statistical Significance of the Sharpe Ratio
+BugReports: https://github.com/shabbychef/SharpeR/issues
+Description: A collection of tools for analyzing significance of assets,
+    funds, and trading strategies, based on the Sharpe ratio and overfit 
+    of the same. Provides density, distribution, quantile and random generation 
+    of the Sharpe ratio distribution based on normal returns, as well
+    as the optimal Sharpe ratio over multiple assets. Computes confidence intervals
+    on the Sharpe and provides a test of equality of Sharpe ratios based on 
+    the Delta method.
+Depends: R (>= 3.0.0)
+Imports: matrixcalc, methods, sadists (>= 0.2.0)
+Suggests: xtable, xts, timeSeries, quantmod, MASS, TTR, testthat,
+        sandwich, knitr
+URL: https://github.com/shabbychef/SharpeR
+VignetteBuilder: knitr
+Collate: 'SharpeR.r' 'utils.r' 'distributions.r' 'sr.r' 'estimation.r'
+        'sr_bias.r' 'tests.r' 'unified.r'
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-10-07 19:16:00 UTC; spav
+Author: Steven E. Pav [aut, cre] (<https://orcid.org/0000-0002-4197-6195>)
+Repository: CRAN
+Date/Publication: 2018-10-07 21:00:13 UTC

@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package GMMAT</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=GMMAT" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="GMMAT: Generalized Linear Mixed Model Association Tests" />
+<meta name="og:description" content="Perform association tests using generalized linear mixed models (GLMMs) in genome-wide association studies (GWAS) and sequencing association studies. First, GMMAT fits a GLMM with covariate adjustment and random effects to account for population structure and familial or cryptic relatedness. For GWAS, GMMAT performs score tests for each genetic variant as proposed in Chen et al. (2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.ajhg.2016.02.012&quot;&gt;doi:10.1016/j.ajhg.2016.02.012&lt;/a&gt;&amp;gt;. For candidate gene studies, GMMAT can also perform Wald tests to get the effect size estimate for each genetic variant. For rare variant analysis from sequencing association studies, GMMAT performs the variant Set Mixed Model Association Tests (SMMAT) as proposed in Chen et al. (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.ajhg.2018.12.012&quot;&gt;doi:10.1016/j.ajhg.2018.12.012&lt;/a&gt;&amp;gt;, including the burden test, the sequence kernel association test (SKAT), SKAT-O and an efficient hybrid test of the burden test and SKAT, based on user-defined variant sets." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=GMMAT" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>GMMAT: Generalized Linear Mixed Model Association Tests</h2>
+<p>Perform association tests using generalized linear mixed models (GLMMs) in genome-wide association studies (GWAS) and sequencing association studies. First, GMMAT fits a GLMM with covariate adjustment and random effects to account for population structure and familial or cryptic relatedness. For GWAS, GMMAT performs score tests for each genetic variant as proposed in Chen et al. (2016) &lt;<a href="https://doi.org/10.1016%2Fj.ajhg.2016.02.012">doi:10.1016/j.ajhg.2016.02.012</a>&gt;. For candidate gene studies, GMMAT can also perform Wald tests to get the effect size estimate for each genetic variant. For rare variant analysis from sequencing association studies, GMMAT performs the variant Set Mixed Model Association Tests (SMMAT) as proposed in Chen et al. (2019) &lt;<a href="https://doi.org/10.1016%2Fj.ajhg.2018.12.012">doi:10.1016/j.ajhg.2018.12.012</a>&gt;, including the burden test, the sequence kernel association test (SKAT), SKAT-O and an efficient hybrid test of the burden test and SKAT, based on user-defined variant sets.</p>
+<table summary="Package GMMAT summary">
+<tr>
+<td>Version:</td>
+<td>1.3.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.2.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/SeqArray.html"><span class="BioC">SeqArray</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/SeqVarTools.html"><span class="BioC">SeqVarTools</span></a>, <a href="../CompQuadForm/index.html">CompQuadForm</a>, <a href="../foreach/index.html">foreach</a>, parallel, <a href="../Matrix/index.html">Matrix</a>, methods</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../doMC/index.html">doMC</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-23</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Han Chen, Matthew P. Conomos, Duy T. Pham</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Han Chen  &#x3c;&#x48;&#x61;&#x6e;&#x2e;&#x43;&#x68;&#x65;&#x6e;&#x2e;&#x32;&#x20;&#x61;&#x74;&#x20;&#x75;&#x74;&#x68;&#x2e;&#x74;&#x6d;&#x63;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>Copyright:</td>
+<td>See COPYRIGHTS for details. <br/>  <a href="COPYRIGHTS">GMMAT copyright details</a> </td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_GMMAT.html">GMMAT results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package GMMAT downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="GMMAT.pdf"> GMMAT.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/GMMAT.pdf">GMMAT</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/GMMAT_1.3.1.tar.gz"> GMMAT_1.3.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/GMMAT_1.3.1.zip">GMMAT_1.3.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/GMMAT_1.3.1.zip">GMMAT_1.3.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/GMMAT_1.3.1.zip">GMMAT_1.3.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/GMMAT_1.3.1.tgz">GMMAT_1.3.1.tgz</a>, r-oldrel: not available </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/GMMAT"> GMMAT archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package GMMAT reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../RsqMed/index.html">RsqMed</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=GMMAT"><samp>https://CRAN.R-project.org/package=GMMAT</samp></a>
+to link to this page.</p>
+</body>
+</html>

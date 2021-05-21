@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package BayesVarSel</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Bayes Factors, Model Choice and Variable Selection in Linear Models [R package BayesVarSel version 2.0.1]" />
+<meta name="citation_author1" content="Gonzalo Garcia-Donato" />
+<meta name="citation_author2" content="Anabel Forte" />
+<meta name="citation_publication_date" content="2020-02-18" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=BayesVarSel" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=BayesVarSel" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="BayesVarSel: Bayes Factors, Model Choice and Variable Selection in Linear Models" />
+<meta name="og:description" content="Conceived to calculate Bayes factors in Linear models and then to provide a formal Bayesian answer to testing and variable selection problems. From a theoretical side, the emphasis in this package is placed on the prior distributions and it allows a wide range of them: Jeffreys (1961); Zellner and Siow(1980)&amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fbf02888369&quot;&gt;doi:10.1007/bf02888369&lt;/a&gt;&amp;gt;; Zellner and Siow(1984); Zellner (1986)&amp;lt;&lt;a href=&quot;https://doi.org/10.2307%2F2233941&quot;&gt;doi:10.2307/2233941&lt;/a&gt;&amp;gt;; Fernandez et al. (2001)&amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fs0304-4076%2800%2900076-2&quot;&gt;doi:10.1016/s0304-4076(00)00076-2&lt;/a&gt;&amp;gt;; Liang et al. (2008)&amp;lt;&lt;a href=&quot;https://doi.org/10.1198%2F016214507000001337&quot;&gt;doi:10.1198/016214507000001337&lt;/a&gt;&amp;gt; and Bayarri et al. (2012)&amp;lt;&lt;a href=&quot;https://doi.org/10.1214%2F12-aos1013&quot;&gt;doi:10.1214/12-aos1013&lt;/a&gt;&amp;gt;. The interaction with the package is through a friendly interface that syntactically mimics the well-known lm() command of R. The resulting objects can be easily explored providing the user very valuable information (like marginal, joint and conditional inclusion probabilities of potential variables; the highest posterior probability model, HPM; the median probability model, MPM) about the structure of the true -data generating- model. Additionally, this package incorporates abilities to handle problems with a large number of potential explanatory variables through parallel and heuristic versions of the main commands, Garcia-Donato and Martinez-Beneito (2013)&amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F01621459.2012.742443&quot;&gt;doi:10.1080/01621459.2012.742443&lt;/a&gt;&amp;gt;. It also allows problems with p&amp;gt;n and p&amp;gt;&amp;gt;n and also incorporates routines to handle problems with variable selection with factors." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=BayesVarSel" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>BayesVarSel: Bayes Factors, Model Choice and Variable Selection in Linear
+Models</h2>
+<p>Conceived to calculate Bayes factors in Linear models and then to provide a formal Bayesian answer to testing and variable selection problems. From a theoretical side, the emphasis in this package is placed on the prior distributions and it allows a wide range of them: Jeffreys (1961); Zellner and Siow(1980)&lt;<a href="https://doi.org/10.1007%2Fbf02888369">doi:10.1007/bf02888369</a>&gt;; Zellner and Siow(1984); Zellner (1986)&lt;<a href="https://doi.org/10.2307%2F2233941">doi:10.2307/2233941</a>&gt;; Fernandez et al. (2001)&lt;<a href="https://doi.org/10.1016%2Fs0304-4076%2800%2900076-2">doi:10.1016/s0304-4076(00)00076-2</a>&gt;; Liang et al. (2008)&lt;<a href="https://doi.org/10.1198%2F016214507000001337">doi:10.1198/016214507000001337</a>&gt;  and Bayarri et al. (2012)&lt;<a href="https://doi.org/10.1214%2F12-aos1013">doi:10.1214/12-aos1013</a>&gt;. The interaction with the package is through a friendly interface that syntactically mimics the well-known lm() command of R. The resulting objects can be easily explored providing the user very valuable information (like marginal, joint and conditional inclusion probabilities of potential variables; the highest posterior probability model, HPM; the median probability model, MPM) about the structure of the true -data generating- model. Additionally, this package incorporates abilities to handle problems with a large number of potential explanatory variables through parallel and heuristic versions of the main commands, Garcia-Donato and Martinez-Beneito (2013)&lt;<a href="https://doi.org/10.1080%2F01621459.2012.742443">doi:10.1080/01621459.2012.742443</a>&gt;. It also allows problems with p&gt;n and p&gt;&gt;n and also incorporates routines to handle problems with variable selection with factors.</p>
+<table summary="Package BayesVarSel summary">
+<tr>
+<td>Version:</td>
+<td>2.0.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td><a href="../MASS/index.html">MASS</a> (&ge; 7.3-45), <a href="../mvtnorm/index.html">mvtnorm</a> (&ge; 1.0-5), parallel (&ge; 3.3), R (&ge;
+3.3)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../faraway/index.html">faraway</a>, <a href="../hdi/index.html">hdi</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-02-18</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Gonzalo Garcia-Donato [aut],
+  Anabel Forte [aut, cre],
+  Carlos Vergara-Hernández [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Anabel Forte  &#x3c;&#x61;&#x6e;&#x61;&#x62;&#x65;&#x6c;&#x2e;&#x66;&#x6f;&#x72;&#x74;&#x65;&#x20;&#x61;&#x74;&#x20;&#x75;&#x76;&#x2e;&#x65;&#x73;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/comodin19/BayesVarSel/issues">https://github.com/comodin19/BayesVarSel/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/comodin19/BayesVarSel">https://github.com/comodin19/BayesVarSel</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>GNU Scientific Library</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">BayesVarSel citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Bayesian.html">Bayesian</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_BayesVarSel.html">BayesVarSel results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package BayesVarSel downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="BayesVarSel.pdf"> BayesVarSel.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/BayesVarSel.pdf">Bayesian Testing, Variable Selection and Model Averaging in Linear Models using R with BayesVarSel</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/BayesVarSel_2.0.1.tar.gz"> BayesVarSel_2.0.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/BayesVarSel_2.0.1.zip">BayesVarSel_2.0.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/BayesVarSel_2.0.1.zip">BayesVarSel_2.0.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/BayesVarSel_2.0.1.zip">BayesVarSel_2.0.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/BayesVarSel_2.0.1.tgz">BayesVarSel_2.0.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/BayesVarSel_2.0.1.tgz">BayesVarSel_2.0.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/BayesVarSel"> BayesVarSel archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=BayesVarSel"><samp>https://CRAN.R-project.org/package=BayesVarSel</samp></a>
+to link to this page.</p>
+</body>
+</html>

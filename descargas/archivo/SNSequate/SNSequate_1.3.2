@@ -1,0 +1,33 @@
+Package: SNSequate
+Version: 1.3.2
+Date: 2020-01-22
+Title: Standard and Nonstandard Statistical Models and Methods for Test
+        Equating
+Authors@R: c(
+    person("Jorge", "Gonzalez", email = "jorge.gonzalez@mat.uc.cl", role = c("cre","aut")),
+    person("Daniel", "Leon Acuna", email = "dnacuna@uc.cl", role = "ctb"))
+Maintainer: Jorge Gonzalez <jorge.gonzalez@mat.uc.cl>
+Depends: R (>= 3.1.0), magic, stats
+Imports: methods, emdbook, plyr, statmod, knitr, progress
+Description: Contains functions to perform various models and
+    methods for test equating. It currently implements the traditional
+    mean, linear and equipercentile equating methods. Both IRT observed-score 
+    and true-score equating are also supported, as well as the mean-mean, 
+    mean-sigma, Haebara and Stocking-Lord IRT linking methods.
+    It also supports newest methods such that local equating, kernel
+    equating (using Gaussian, logistic, Epanechnikov, uniform and adaptive 
+    kernels) with presmoothing, and IRT parameter linking methods based on 
+    asymmetric item characteristic functions. Functions to obtain both 
+    standard error of equating (SEE) and standard error of equating differences 
+    between two equating functions (SEED) are also implemented for the kernel method of
+    equating.
+License: GPL (>= 2)
+URL: http://www.mat.uc.cl/~jorge.gonzalez
+Suggests: testthat
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2020-01-23 17:02:09 UTC; jgonzale
+Author: Jorge Gonzalez [cre, aut],
+  Daniel Leon Acuna [ctb]
+Repository: CRAN
+Date/Publication: 2020-01-23 17:30:14 UTC

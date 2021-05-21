@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package vlad</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Variable Life Adjusted Display and Other Risk-Adjusted Quality Control Charts [R package vlad version 0.2.1]" />
+<meta name="citation_author1" content="Philipp Wittenberg" />
+<meta name="citation_author2" content="Sven Knoth" />
+<meta name="citation_publication_date" content="2020-08-24" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=vlad" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=vlad" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="vlad: Variable Life Adjusted Display and Other Risk-Adjusted Quality Control Charts" />
+<meta name="og:description" content="Contains functions to set up risk-adjusted quality control charts in health care. For the variable life adjusted display (VLAD) proposed by Lovegrove et al. (1997) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2FS0140-6736%2897%2906507-0&quot;&gt;doi:10.1016/S0140-6736(97)06507-0&lt;/a&gt;&amp;gt; signaling rules derived in Wittenberg et al. (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fsim.7647&quot;&gt;doi:10.1002/sim.7647&lt;/a&gt;&amp;gt; are implemented. Additionally, for the risk-adjusted cumulative sum chart based on log-likelihood ratio statistic introduced by Steiner et al. (2000) &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fbiostatistics%2F1.4.441&quot;&gt;doi:10.1093/biostatistics/1.4.441&lt;/a&gt;&amp;gt; average run length and control limits can be computed with fast and accurate Markov chain approximations developed in Knoth et al. (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fsim.8104&quot;&gt;doi:10.1002/sim.8104&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=vlad" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>vlad: Variable Life Adjusted Display and Other Risk-Adjusted Quality
+Control Charts</h2>
+<p>Contains functions to set up risk-adjusted quality control charts in health care. For the variable life adjusted display (VLAD) proposed by Lovegrove et al. (1997) &lt;<a href="https://doi.org/10.1016%2FS0140-6736%2897%2906507-0">doi:10.1016/S0140-6736(97)06507-0</a>&gt; signaling rules derived in Wittenberg et al. (2018) &lt;<a href="https://doi.org/10.1002%2Fsim.7647">doi:10.1002/sim.7647</a>&gt; are implemented. Additionally, for the risk-adjusted cumulative sum chart based on log-likelihood ratio statistic introduced by Steiner et al. (2000) &lt;<a href="https://doi.org/10.1093%2Fbiostatistics%2F1.4.441">doi:10.1093/biostatistics/1.4.441</a>&gt; average run length and control limits can be computed with fast and accurate Markov chain approximations developed in Knoth et al. (2019) &lt;<a href="https://doi.org/10.1002%2Fsim.8104">doi:10.1002/sim.8104</a>&gt;.</p>
+<table summary="Package vlad summary">
+<tr>
+<td>Version:</td>
+<td>0.2.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.12), <a href="../checkmate/index.html">checkmate</a>, <a href="../magrittr/index.html">magrittr</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../tidyr/index.html">tidyr</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../BH/index.html">BH</a>, <a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../ggplot2/index.html">ggplot2</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../spcadjust/index.html">spcadjust</a> (&ge; 1.1), <a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-08-24</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Philipp Wittenberg
+    <a href="https://orcid.org/0000-0001-7151-8243"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut, cre],
+  Sven Knoth <a href="https://orcid.org/0000-0002-9666-5554"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    ths]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Philipp Wittenberg  &#x3c;&#x70;&#x77;&#x69;&#x74;&#x74;&#x65;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x68;&#x73;&#x75;&#x2d;&#x68;&#x68;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/wittenberg/vlad/issues">https://github.com/wittenberg/vlad/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/wittenberg/vlad">https://github.com/wittenberg/vlad</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>C++11</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">vlad citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_vlad.html">vlad results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package vlad downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="vlad.pdf"> vlad.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/vlad_0.2.1.tar.gz"> vlad_0.2.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/vlad_0.2.1.zip">vlad_0.2.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/vlad_0.2.1.zip">vlad_0.2.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/vlad_0.2.1.zip">vlad_0.2.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/vlad_0.2.1.tgz">vlad_0.2.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/vlad_0.2.1.tgz">vlad_0.2.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/vlad"> vlad archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=vlad"><samp>https://CRAN.R-project.org/package=vlad</samp></a>
+to link to this page.</p>
+</body>
+</html>

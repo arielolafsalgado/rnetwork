@@ -1,0 +1,52 @@
+Package: rpf
+Type: Package
+Title: Response Probability Functions
+Version: 0.56.2
+Date: 2017-12-07
+Authors@R: c(person("Joshua",family="Pritikin", email="jpritikin@pobox.com",
+    role=c('cre','aut')), person("Jonathan",family="Weeks",
+    email="weeksjp@gmail.com", role=c('ctb')),
+    person("Li", family="Cai", role=c('ctb')), person("Carrie",
+    family="Houts", role=c('ctb')), person("Phil", "Chalmers", email =
+    "rphilip.chalmers@gmail.com", role = c("ctb")),
+    person(c("Michael", "D."), "Hunter", role="ctb"),
+    person(c("Carl", "F."), "Falk", email =
+    "falkcarl@msu.edu", role = c("ctb"))
+    )
+Maintainer: ORPHANED
+Description: The purpose of this package is to factor out logic and math common
+    to Item Factor Analysis fitting, diagnostics, and analysis. It is
+    envisioned as core support code suitable for more specialized IRT packages
+    to build upon. Complete access to optimized C functions are made available
+    with R_RegisterCCallable().
+LazyData: yes
+LazyDataCompression: bzip2
+License: GPL (>= 3)
+LinkingTo: RcppEigen
+Suggests: testthat, roxygen2, ggplot2, reshape2, gridExtra, numDeriv,
+        knitr, mirt
+Imports: mvtnorm
+Depends: methods, parallel, R (>= 2.14.0)
+VignetteBuilder: knitr
+Collate: 'init.R' 'classes.R' 'fit.R' 'drm.R' 'nrm.R' 'mcm.R' 'grm.R'
+        'LSAT.R' 'sample.R' 'dataframe.R' 'diagnose.R' 'science.R'
+        'kct.R' 'openmx.R' 'flexmirt.R' 'util.R' 'lmp.R'
+URL: https://github.com/jpritikin/rpf
+SystemRequirements: GNU make
+RoxygenNote: 6.0.1.9000
+NeedsCompilation: yes
+Packaged: 2018-05-06 08:03:08 UTC; ripley
+Author: Joshua Pritikin [cre, aut],
+  Jonathan Weeks [ctb],
+  Li Cai [ctb],
+  Carrie Houts [ctb],
+  Phil Chalmers [ctb],
+  Michael D. Hunter [ctb],
+  Carl F. Falk [ctb]
+Repository: CRAN
+Date/Publication: 2018-05-06 08:12:24 UTC
+X-CRAN-Original-Maintainer: Joshua Pritikin <jpritikin@pobox.com>
+X-CRAN-Comment: Orphaned and corrected on 2018-04-03 as invalid
+        Makevars was not corrected nor GNU make declared, despite
+        requests. Further corrected on 2018-05-06 for warnings from gcc
+        8.

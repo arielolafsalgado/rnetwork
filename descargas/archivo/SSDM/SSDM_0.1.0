@@ -1,0 +1,35 @@
+Package: SSDM
+Type: Package
+Title: Stacked Species Distribution Modelling
+Version: 0.1.0
+Date: 2016-02-12
+Author: Sylvain Schmitt, Robin Pouteau, Dimitri Justeau, Philippe Birnbaum
+Maintainer: Sylvain Schmitt <sylvain.schmitt@agroparistech.fr>
+Description: Allows to map species richness and endemism based on stacked
+    species distribution models (SSDM). Individuals SDMs can be created using a
+    single or multiple algorithms (ensemble SDMs). For each species, an SDM can
+    yield a habitat suitability map, a binary map, a between-algorithm variance
+    map, and can assess variable importance, algorithm accuracy, and between-
+    algorithm correlation. Methods to stack individual SDMs include summing
+    individual probabilities and thresholding then summing. Thresholding can be
+    based on a specific evaluation metric or by drawing repeatedly from a Bernoulli
+    distribution. The SSDM package also provides a user-friendly interface.
+License: GPL (>= 3) | file LICENSE
+LazyData: TRUE
+Imports: sp (>= 1.2.0), raster (>= 2.4.20), methods (>= 3.2.2),
+        SDMTools (>= 1.1.221), mgcv (>= 1.8.7), earth (>= 4.4.3), rpart
+        (>= 4.1.10), gbm (>= 2.1.1), randomForest (>= 4.6.10), dismo
+        (>= 1.0.12), nnet (>= 7.3.10), e1071 (>= 1.6.7), shiny (>=
+        0.12.2), shinydashboard (>= 0.5.1), gplots (>= 0.1.0), spThin
+        (>= 0.1.0)
+Suggests: shinyFiles (>= 0.6.0)
+Depends: R (>= 3.2.2)
+Collate: 'Algorithm.SDM.R' 'Ensemble.SDM.R' 'Env.R' 'Occurrences.R'
+        'SSDM.R' 'Stacked.SDM.R' 'checkargs.R' 'ensemble.R'
+        'modelling.R' 'ensemble_modelling.R' 'gui.R' 'load_model.R'
+        'load_occ.R' 'load_var.R' 'plot.model.R' 'save.model.R'
+        'stack_modelling.R' 'stacking.R' 'update.stack.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2016-02-11 21:56:31 UTC; amap
+Repository: CRAN
+Date/Publication: 2016-02-12 00:55:58

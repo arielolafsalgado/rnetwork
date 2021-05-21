@@ -1,0 +1,26 @@
+Package: fastshap
+Type: Package
+Title: Fast Approximate Shapley Values
+Version: 0.0.4
+Authors@R: person("Brandon", "Greenwell", email = "greenwell.brandon@gmail.com", role =
+         c("aut", "cre"), comment = c(ORCID = "0000-0002-8120-0084"))
+Description: Computes fast (relative to other implementations) approximate 
+    Shapley values for any supervised learning model. Shapley values help to 
+    explain the predictions from any black box model using ideas from game 
+    theory; see Strumbel and Kononenko (2014) <doi:10.1007/s10115-013-0679-x> 
+    for details.
+License: GPL (>= 2)
+URL: https://github.com/bgreenwell/fastshap
+BugReports: https://github.com/bgreenwell/fastshap/issues
+Imports: abind, ggplot2, gridExtra, matrixStats, plyr, Rcpp (>= 1.0.1),
+        tibble
+Suggests: AmesHousing, covr, earth, htmltools, knitr, ranger,
+        reticulate, rmarkdown, rstudioapi, tinytest, titanic, xgboost
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.0.2
+NeedsCompilation: yes
+Packaged: 2020-01-26 17:22:28 UTC; b780620
+Author: Brandon Greenwell [aut, cre] (<https://orcid.org/0000-0002-8120-0084>)
+Maintainer: Brandon Greenwell <greenwell.brandon@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-01-26 17:40:02 UTC

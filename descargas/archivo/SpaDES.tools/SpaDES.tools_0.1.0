@@ -1,0 +1,54 @@
+Package: SpaDES.tools
+Type: Package
+Title: Additional Tools for Developing Spatially Explicit Discrete
+        Event Simulation (SpaDES) Models
+Description: Provides GIS/map utilities and additional modeling tools for
+    developing cellular automata and agent based models in 'SpaDES'.
+URL: http://spades.predictiveecology.org,
+        https://github.com/PredictiveEcology/SpaDES.tools
+Date: 2017-08-11
+Version: 0.1.0
+Authors@R: c(
+    person("Alex M", "Chubaty", email = "alexander.chubaty@canada.ca",
+    role = c("aut", "cre")),
+    person("Eliot J B", "McIntire", email = "eliot.mcintire@canada.ca",
+    role = c("aut")),
+    person("Yong", "Luo", email = "yluo1@lakeheadu.ca",
+    role = c("ctb")),
+    person("Steve", "Cumming", email = "Steve.Cumming@sbf.ulaval.ca",
+    role = c("ctb")),
+    person("Her Majesty the Queen in Right of Canada, as represented by the Minister of Natural Resources Canada",
+    role = "cph")
+    )
+Depends: R (>= 3.3.2)
+Imports: bit (>= 1.1-12), checkmate (>= 1.8.2), CircStats (>= 0.2-4),
+        compiler, data.table (>= 1.10.4), fastdigest, fastmatch (>=
+        1.1-0), ff (>= 2.2-13), ffbase (>= 0.12.3), fpCompare (>=
+        0.2.1), magrittr, methods, quickPlot, RandomFields (>= 3.1.24),
+        Rcpp (>= 0.12.12), reproducible, raster (>= 2.5-8), sp (>=
+        1.2-4), stats, utils
+Suggests: DEoptim (>= 2.2-4), dplyr (>= 0.5.0), hunspell, knitr,
+        microbenchmark, parallel, profvis, RColorBrewer (>= 1.1-2),
+        rgdal, rgeos, rmarkdown, testthat (>= 1.0.2)
+LinkingTo: Rcpp
+License: GPL-3
+BugReports: https://github.com/PredictiveEcology/SpaDES.tools/issues
+ByteCompile: yes
+Collate: 'RcppExports.R' 'heading.R' 'SELES.R'
+        'distanceFromEachPoint.R' 'environment.R' 'initialize.R'
+        'mapReduce.R' 'mergeRaster.R' 'movement.R' 'neighbourhood.R'
+        'numerical-comparisons.R' 'resample.R' 'rings.R'
+        'spades-tools-package.R' 'splitRaster.R' 'spread.R' 'spread2.R'
+        'zzz.R'
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2017-08-12 03:55:11 UTC; achubaty
+Author: Alex M Chubaty [aut, cre],
+  Eliot J B McIntire [aut],
+  Yong Luo [ctb],
+  Steve Cumming [ctb],
+  Her Majesty the Queen in Right of Canada, as represented by the
+    Minister of Natural Resources Canada [cph]
+Maintainer: Alex M Chubaty <alexander.chubaty@canada.ca>
+Repository: CRAN
+Date/Publication: 2017-08-12 14:38:10 UTC

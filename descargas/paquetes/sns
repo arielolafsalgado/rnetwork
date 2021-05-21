@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package sns</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=sns" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="sns: Stochastic Newton Sampler (SNS)" />
+<meta name="og:description" content="Stochastic Newton Sampler (SNS) is a Metropolis-Hastings-based, Markov Chain Monte Carlo sampler for twice differentiable, log-concave probability density functions (PDFs) where the proposal density function is a multivariate Gaussian resulting from a second-order Taylor-series expansion of log-density around the current point. The mean of the Gaussian proposal is the full Newton-Raphson step from the current point. A Boolean flag allows for switching from SNS to Newton-Raphson optimization (by choosing the mean of proposal function as next point). This can be used during burn-in to get close to the mode of the PDF (which is unique due to concavity). For high-dimensional densities, mixing can be improved via 'state space partitioning' strategy, in which SNS is applied to disjoint subsets of state space, wrapped in a Gibbs cycle. Numerical differentiation is available when analytical expressions for gradient and Hessian are not available. Facilities for validation and numerical differentiation of log-density are provided. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=sns" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>sns: Stochastic Newton Sampler (SNS)</h2>
+<p>Stochastic Newton Sampler (SNS) is a Metropolis-Hastings-based, Markov Chain Monte Carlo sampler for twice differentiable, log-concave probability density functions (PDFs) where the proposal density function is a multivariate Gaussian resulting from a second-order Taylor-series expansion of log-density around the current point. The mean of the Gaussian proposal is the full Newton-Raphson step from the current point. A Boolean flag allows for switching from SNS to Newton-Raphson optimization (by choosing the mean of proposal function as next point). This can be used during burn-in to get close to the mode of the PDF (which is unique due to concavity). For high-dimensional densities, mixing can be improved via 'state space partitioning' strategy, in which SNS is applied to disjoint subsets of state space, wrapped in a Gibbs cycle. Numerical differentiation is available when analytical expressions for gradient and Hessian are not available. Facilities for validation and numerical differentiation of log-density are provided. </p>
+<table summary="Package sns summary">
+<tr>
+<td>Version:</td>
+<td>1.1.2</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../mvtnorm/index.html">mvtnorm</a>, <a href="../coda/index.html">coda</a>, <a href="../numDeriv/index.html">numDeriv</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../RegressionFactory/index.html">RegressionFactory</a>, <a href="../MfUSampler/index.html">MfUSampler</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2016-10-25</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Alireza S. Mahani, Asad Hasan, Marshall Jiang, Mansour T.A. Sharabiani </td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Alireza Mahani  &#x3c;&#x61;&#x6c;&#x69;&#x72;&#x65;&#x7a;&#x61;&#x2e;&#x73;&#x2e;&#x6d;&#x61;&#x68;&#x61;&#x6e;&#x69;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">sns citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="ChangeLog">ChangeLog</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_sns.html">sns results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package sns downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="sns.pdf"> sns.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/SNS.pdf">Stochastic Newton Sampler: The R Package sns</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/sns_1.1.2.tar.gz"> sns_1.1.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/sns_1.1.2.zip">sns_1.1.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/sns_1.1.2.zip">sns_1.1.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/sns_1.1.2.zip">sns_1.1.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/sns_1.1.2.tgz">sns_1.1.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/sns_1.1.2.tgz">sns_1.1.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/sns"> sns archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package sns reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../HBglm/index.html">HBglm</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../MfUSampler/index.html">MfUSampler</a>, <a href="../RegressionFactory/index.html">RegressionFactory</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=sns"><samp>https://CRAN.R-project.org/package=sns</samp></a>
+to link to this page.</p>
+</body>
+</html>

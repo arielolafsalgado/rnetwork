@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package SimCorrMix</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=SimCorrMix" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="SimCorrMix: Simulation of Correlated Data with Multiple Variable Types Including Continuous and Count Mixture Distributions" />
+<meta name="og:description" content="Generate continuous (normal, non-normal, or mixture distributions), binary, ordinal, and count (regular or zero-inflated, Poisson or Negative Binomial) variables with a specified correlation matrix, or one continuous variable with a mixture distribution. This package can be used to simulate data sets that mimic real-world clinical or genetic data sets (i.e., plasmodes, as in Vaughan et al., 2009 &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.csda.2008.02.032&quot;&gt;doi:10.1016/j.csda.2008.02.032&lt;/a&gt;&amp;gt;). The methods extend those found in the 'SimMultiCorrData' R package. Standard normal variables with an imposed intermediate correlation matrix are transformed to generate the desired distributions. Continuous variables are simulated using either Fleishman (1978)'s third order &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2FBF02293811&quot;&gt;doi:10.1007/BF02293811&lt;/a&gt;&amp;gt; or Headrick (2002)'s fifth order &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2FS0167-9473%2802%2900072-5&quot;&gt;doi:10.1016/S0167-9473(02)00072-5&lt;/a&gt;&amp;gt; polynomial transformation method (the power method transformation, PMT). Non-mixture distributions require the user to specify mean, variance, skewness, standardized kurtosis, and standardized fifth and sixth cumulants. Mixture distributions require these inputs for the component distributions plus the mixing probabilities. Simulation occurs at the component level for continuous mixture distributions. The target correlation matrix is specified in terms of correlations with components of continuous mixture variables. These components are transformed into the desired mixture variables using random multinomial variables based on the mixing probabilities. However, the package provides functions to approximate expected correlations with continuous mixture variables given target correlations with the components. Binary and ordinal variables are simulated using a modification of ordsample() in package 'GenOrd'. Count variables are simulated using the inverse CDF method. There are two simulation pathways which calculate intermediate correlations involving count variables differently. Correlation Method 1 adapts Yahav and Shmueli's 2012 method &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fasmb.901&quot;&gt;doi:10.1002/asmb.901&lt;/a&gt;&amp;gt; and performs best with large count variable means and positive correlations or small means and negative correlations. Correlation Method 2 adapts Barbiero and Ferrari's 2015 modification of the 'GenOrd' package &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fasmb.2072&quot;&gt;doi:10.1002/asmb.2072&lt;/a&gt;&amp;gt; and performs best under the opposite scenarios. The optional error loop may be used to improve the accuracy of the final correlation matrix. The package also contains functions to calculate the standardized cumulants of continuous mixture distributions, check parameter inputs, calculate feasible correlation boundaries, and summarize and plot simulated variables." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=SimCorrMix" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>SimCorrMix: Simulation of Correlated Data with Multiple Variable Types
+Including Continuous and Count Mixture Distributions</h2>
+<p>Generate continuous (normal, non-normal, or mixture distributions), binary, ordinal, 
+    and count (regular or zero-inflated, Poisson or Negative Binomial) variables with a specified 
+    correlation matrix, or one continuous variable with a mixture distribution.  This package can 
+    be used to simulate data sets that mimic real-world clinical or genetic data sets (i.e., 
+    plasmodes, as in Vaughan et al., 2009 &lt;<a href="https://doi.org/10.1016%2Fj.csda.2008.02.032">doi:10.1016/j.csda.2008.02.032</a>&gt;).  The methods 
+    extend those found in the 'SimMultiCorrData' R package.  Standard normal variables with an 
+    imposed intermediate correlation matrix are transformed to generate the desired distributions.  
+    Continuous variables are simulated using either Fleishman (1978)'s third order 
+    &lt;<a href="https://doi.org/10.1007%2FBF02293811">doi:10.1007/BF02293811</a>&gt; or Headrick (2002)'s fifth order 
+    &lt;<a href="https://doi.org/10.1016%2FS0167-9473%2802%2900072-5">doi:10.1016/S0167-9473(02)00072-5</a>&gt; polynomial transformation method (the power method 
+    transformation, PMT).  Non-mixture distributions require the user to specify mean, variance, 
+    skewness, standardized kurtosis, and standardized fifth and sixth cumulants.  Mixture 
+    distributions require these inputs for the component distributions plus the mixing 
+    probabilities.  Simulation occurs at the component level for continuous mixture 
+    distributions.  The target correlation matrix is specified in terms of correlations with 
+    components of continuous mixture variables.  These components are transformed into the 
+    desired mixture variables using random multinomial variables based on the mixing 
+    probabilities.  However, the package provides functions to approximate expected correlations 
+    with continuous mixture variables given target correlations with the components. Binary and 
+    ordinal variables are simulated using a modification of ordsample() in package 'GenOrd'.  
+    Count variables are simulated using the inverse CDF method.  There are two simulation 
+    pathways which calculate intermediate correlations involving count variables differently.  
+    Correlation Method 1 adapts Yahav and Shmueli's 2012 method &lt;<a href="https://doi.org/10.1002%2Fasmb.901">doi:10.1002/asmb.901</a>&gt; and 
+    performs best with large count variable means and positive correlations or small means and 
+    negative correlations.  Correlation Method 2 adapts Barbiero and Ferrari's 2015 
+    modification of the 'GenOrd' package &lt;<a href="https://doi.org/10.1002%2Fasmb.2072">doi:10.1002/asmb.2072</a>&gt; and performs best under the 
+    opposite scenarios.  The optional error loop may be used to improve the accuracy of the 
+    final correlation matrix.  The package also contains functions to calculate the 
+    standardized cumulants of continuous mixture distributions, check parameter inputs, 
+    calculate feasible correlation boundaries, and summarize and plot simulated variables.</p>
+<table summary="Package SimCorrMix summary">
+<tr>
+<td>Version:</td>
+<td>0.1.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.4.0), <a href="../SimMultiCorrData/index.html">SimMultiCorrData</a> (&ge; 0.2.1)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../BB/index.html">BB</a>, <a href="../nleqslv/index.html">nleqslv</a>, <a href="../MASS/index.html">MASS</a>, <a href="../mvtnorm/index.html">mvtnorm</a>, <a href="../Matrix/index.html">Matrix</a>, <a href="../VGAM/index.html">VGAM</a>, <a href="../triangle/index.html">triangle</a>, <a href="../ggplot2/index.html">ggplot2</a>, grid, stats, utils</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../printr/index.html">printr</a>, <a href="../bookdown/index.html">bookdown</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2018-07-01</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Allison Cynthia Fialkowski</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Allison Cynthia Fialkowski  &#x3c;&#x61;&#x6c;&#x6c;&#x69;&#x6a;&#x61;&#x7a;&#x7a;&#x20;&#x61;&#x74;&#x20;&#x75;&#x61;&#x62;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/AFialkowski/SimCorrMix">https://github.com/AFialkowski/SimCorrMix</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_SimCorrMix.html">SimCorrMix results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package SimCorrMix downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="SimCorrMix.pdf"> SimCorrMix.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/cont_mixture.html">Continuous Mixture Distributions</a><br/>
+<a href="vignettes/corr_mixture.html">Expected Cumulants and Correlations for Continuous Mixture Variables</a><br/>
+<a href="vignettes/method_comp.html">Comparison of Correlation Methods 1 and 2</a><br/>
+<a href="vignettes/variable_types.html">Variable Types</a><br/>
+<a href="vignettes/workflow.html">Overall Workflow for Generation of Correlated Data</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/SimCorrMix_0.1.1.tar.gz"> SimCorrMix_0.1.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/SimCorrMix_0.1.1.zip">SimCorrMix_0.1.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/SimCorrMix_0.1.1.zip">SimCorrMix_0.1.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/SimCorrMix_0.1.1.zip">SimCorrMix_0.1.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/SimCorrMix_0.1.1.tgz">SimCorrMix_0.1.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/SimCorrMix_0.1.1.tgz">SimCorrMix_0.1.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/SimCorrMix"> SimCorrMix archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=SimCorrMix"><samp>https://CRAN.R-project.org/package=SimCorrMix</samp></a>
+to link to this page.</p>
+</body>
+</html>

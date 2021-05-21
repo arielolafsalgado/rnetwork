@@ -1,0 +1,37 @@
+Package: riskyr
+Type: Package
+Title: Rendering Risk Literacy more Transparent
+Version: 0.1.0
+Date: 2018-02-16
+Authors@R: c(person("Hansjoerg", "Neth", role = c("aut", "cre"),
+                     email = "h.neth@uni.kn"), 
+             person("Felix", "Gaisbauer", role = "aut"), 
+             person("Nico", "Gradwohl", role = "aut"),  
+             person("Wolfgang", "Gaissmaier", role = "aut")) 
+Author: Hansjoerg Neth [aut, cre],
+  Felix Gaisbauer [aut],
+  Nico Gradwohl [aut],
+  Wolfgang Gaissmaier [aut]
+Maintainer: Hansjoerg Neth <h.neth@uni.kn>
+Description: Risk-related information can be expressed in terms of probabilities or frequencies. By providing a toolbox of methods and metrics, we compute, translate, and represent risk-related information in a variety of ways. By offering different, but complementary perspectives on the interplay between key parameters, 'riskyr' renders teaching and training of risk literacy more transparent. 
+Depends: R (>= 3.2)
+Imports: diagram (>= 1.6.4), grid (>= 3.4.3), vcd (>= 1.4), utils (>=
+        3.4.3)
+Suggests: devtools, rmarkdown, knitr, roxygen2
+Collate: 'comp_util.R' 'init_txt.R' 'init_pal.R' 'init_prob.R'
+        'comp_prob_prob.R' 'init_freq.R' 'comp_freq_prob.R'
+        'init_num.R' 'init_prob_num.R' 'init_freq_num.R'
+        'comp_freq_freq.R' 'comp_prob_freq.R' 'comp_xxxx_prob.R'
+        'comp_popu.R' 'comp_accu.R' 'plot_mosaic.R' 'plot_icons.R'
+        'plot_tree.R' 'plot_fnet.R' 'plot_curve.R' 'plot_plane.R'
+        'data.R' 'read_data.R' 'riskyr_class.R' 'start_riskyr.R'
+Encoding: UTF-8
+LazyData: true
+License: GPL-2 | GPL-3
+BugReports: https://github.com/hneth/riskyr/issues
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-02-16 22:34:00 UTC; hneth
+Repository: CRAN
+Date/Publication: 2018-02-19 09:22:19 UTC

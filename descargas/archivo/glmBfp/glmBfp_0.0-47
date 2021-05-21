@@ -1,0 +1,47 @@
+Package: glmBfp
+Imports: survival, rms, statmod, methods, coda, Runuran (>= 0.12), Rcpp
+        (>= 0.11.6)
+License: GPL (>= 2)
+Title: Bayesian Fractional Polynomials for GLMs
+LinkingTo: Rcpp, RcppArmadillo
+LazyLoad: yes
+Authors@R: c(person("Isaac","Gravestock", role=c("aut","cre"), email="isaac.gravestock@uzh.ch"),
+            person("Daniel","Sabanes Bove", role="aut"),
+            person("David","Maisonave", role="ctb"),
+            person("Terry","Therneau", role="ctb"),
+            person("R Core Team", role="ctb")
+            )
+Description: Implements the Bayesian paradigm
+    for fractional polynomials in generalized linear
+    models. See package 'bfp' for the treatment of normal
+    models.
+Version: 0.0-47
+Date: 2016-06-27
+Depends: R (>= 2.12.0)
+Encoding: UTF-8
+Suggests: MASS
+Collate: 'GPrior-classes.R' 'posteriors.R' 'GlmBayesMfp-methods.R'
+        'GlmBayesMfpSamples-class.R' 'GlmBayesMfpSamples-methods.R'
+        'McmcOptions-class.R' 'McmcOptions-methods.R' 'RcppExports.R'
+        'helpers.R' 'computeModels.R' 'constructNewdataMatrix.R'
+        'getFpTransforms.R' 'getDesignMatrix.R' 'coxTBF.R'
+        'evalZdensity.R' 'formula.R' 'fpScale.R' 'fpTrans.R'
+        'getFamily.R' 'getLogGPrior.R' 'getLogMargLikEstimate.R'
+        'getMarginalZ.R' 'sampleGlm.R' 'sampleBma.R' 'getModelCoefs.R'
+        'glmBayesMfp.R' 'glmBfp-package.R' 'hpds.R' 'inclusionProbs.R'
+        'optimize.R' 'plotCurveEstimate.R' 'predictCoxTBF.R'
+        'testCox.R' 'uncenteredDesignMatrix.R' 'writeFormula.R'
+RoxygenNote: 5.0.1
+Author: Isaac Gravestock [aut, cre],
+  Daniel Sabanes Bove [aut],
+  David Maisonave [ctb],
+  Terry Therneau [ctb],
+  R Core Team [ctb]
+Maintainer: Isaac Gravestock <isaac.gravestock@uzh.ch>
+Repository: CRAN
+Repository/R-Forge/Project: bfp
+Repository/R-Forge/Revision: 109
+Repository/R-Forge/DateTimeStamp: 2016-06-29 12:32:07
+Date/Publication: 2016-06-29 15:57:34
+NeedsCompilation: yes
+Packaged: 2016-06-29 12:48:18 UTC; rforge

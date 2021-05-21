@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package metaBMA</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Bayesian Model Averaging for Random and Fixed Effects Meta-Analysis [R package metaBMA version 0.6.3]" />
+<meta name="citation_author" content="Daniel W. Heck" />
+<meta name="citation_publication_date" content="2020-06-02" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=metaBMA" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=metaBMA" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="metaBMA: Bayesian Model Averaging for Random and Fixed Effects Meta-Analysis" />
+<meta name="og:description" content="Computes the posterior model probabilities for standard meta-analysis models (null model vs. alternative model assuming either fixed- or random-effects, respectively). These posterior probabilities are used to estimate the overall mean effect size as the weighted average of the mean effect size estimates of the random- and fixed-effect model as proposed by Gronau, Van Erp, Heck, Cesario, Jonas, &amp;amp; Wagenmakers (2017, &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F23743603.2017.1326760&quot;&gt;doi:10.1080/23743603.2017.1326760&lt;/a&gt;&amp;gt;). The user can define a wide range of non-informative or informative priors for the mean effect size and the heterogeneity coefficient. Moreover, using pre-compiled Stan models, meta-analysis with continuous and discrete moderators with Jeffreys-Zellner-Siow (JZS) priors can be fitted and tested. This allows to compute Bayes factors and perform Bayesian model averaging across random- and fixed-effects meta-analysis with and without moderators. For a primer on Bayesian model-averaged meta-analysis, see Gronau, Heck, Berkhout, Haaf, &amp;amp; Wagenmakers (2020, &amp;lt;&lt;a href=&quot;https://doi.org/10.31234%2Fosf.io%2F97qup&quot;&gt;doi:10.31234/osf.io/97qup&lt;/a&gt;&amp;gt;)." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=metaBMA" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>metaBMA: Bayesian Model Averaging for Random and Fixed Effects
+Meta-Analysis</h2>
+<p>Computes the posterior model probabilities for standard meta-analysis models 
+    (null model vs. alternative model assuming either fixed- or random-effects, respectively).
+    These posterior probabilities are used to estimate the overall mean effect size 
+    as the weighted average of the mean effect size estimates of the random- and 
+    fixed-effect model as proposed by Gronau, Van Erp, Heck, Cesario, Jonas, &amp; 
+    Wagenmakers (2017, &lt;<a href="https://doi.org/10.1080%2F23743603.2017.1326760">doi:10.1080/23743603.2017.1326760</a>&gt;). The user can define 
+    a wide range of non-informative or informative priors for the mean effect size 
+    and the heterogeneity coefficient. Moreover, using pre-compiled Stan models, 
+    meta-analysis with continuous and discrete moderators with Jeffreys-Zellner-Siow (JZS) 
+    priors can be fitted and tested. This allows to compute Bayes factors and 
+    perform Bayesian model averaging across random- and fixed-effects meta-analysis 
+    with and without moderators. For a primer on Bayesian model-averaged meta-analysis, 
+    see Gronau, Heck, Berkhout, Haaf, &amp; Wagenmakers (2020, &lt;<a href="https://doi.org/10.31234%2Fosf.io%2F97qup">doi:10.31234/osf.io/97qup</a>&gt;).</p>
+<table summary="Package metaBMA summary">
+<tr>
+<td>Version:</td>
+<td>0.6.3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.4.0), <a href="../Rcpp/index.html">Rcpp</a> (&ge; 1.0.0), methods</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../mvtnorm/index.html">mvtnorm</a>, <a href="../logspline/index.html">logspline</a>, <a href="../coda/index.html">coda</a>, <a href="../LaplacesDemon/index.html">LaplacesDemon</a>, <a href="../rstan/index.html">rstan</a> (&ge; 2.18.1), <a href="../rstantools/index.html">rstantools</a> (&ge; 1.5.1), <a href="../bridgesampling/index.html">bridgesampling</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../BH/index.html">BH</a> (&ge; 1.69.0-1), <a href="../Rcpp/index.html">Rcpp</a> (&ge; 1.0.0), <a href="../RcppEigen/index.html">RcppEigen</a> (&ge; 0.3.3.5.0), <a href="../rstan/index.html">rstan</a> (&ge; 2.18.1), <a href="../StanHeaders/index.html">StanHeaders</a> (&ge; 2.18.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-02</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Daniel W. Heck <a href="https://orcid.org/0000-0002-6302-9252"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Quentin F. Gronau [ctb],
+  Eric-Jan Wagenmakers [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Daniel W. Heck  &#x3c;&#x64;&#x68;&#x65;&#x63;&#x6b;&#x20;&#x61;&#x74;&#x20;&#x75;&#x6e;&#x69;&#x2d;&#x6d;&#x61;&#x72;&#x62;&#x75;&#x72;&#x67;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/danheck/metaBMA">https://github.com/danheck/metaBMA</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>GNU make</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">metaBMA citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/MetaAnalysis.html">MetaAnalysis</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_metaBMA.html">metaBMA results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package metaBMA downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="metaBMA.pdf"> metaBMA.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/metaBMA.html">metaBMA: Meta-Analysis with Bayesian Model Averaging</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/metaBMA_0.6.3.tar.gz"> metaBMA_0.6.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/metaBMA_0.6.3.zip">metaBMA_0.6.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/metaBMA_0.6.3.zip">metaBMA_0.6.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/metaBMA_0.6.3.zip">metaBMA_0.6.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/metaBMA_0.6.3.tgz">metaBMA_0.6.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/metaBMA_0.6.3.tgz">metaBMA_0.6.3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/metaBMA"> metaBMA archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package metaBMA reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../tidyBF/index.html">tidyBF</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../RoBMA/index.html">RoBMA</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=metaBMA"><samp>https://CRAN.R-project.org/package=metaBMA</samp></a>
+to link to this page.</p>
+</body>
+</html>

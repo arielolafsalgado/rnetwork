@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package malariaAtlas</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="An R Interface to Open-Access Malaria Data, Hosted by the 'Malaria Atlas Project' [R package malariaAtlas version 1.0.1]" />
+<meta name="citation_author1" content="Daniel Pfeffer" />
+<meta name="citation_author2" content="Tim Lucas" />
+<meta name="citation_author3" content="Daniel May" />
+<meta name="citation_author4" content="Suzanne Keddie" />
+<meta name="citation_author5" content="Jen Rozier" />
+<meta name="citation_author6" content="Oliver Watson" />
+<meta name="citation_author7" content="Harry Gibson" />
+<meta name="citation_publication_date" content="2020-06-01" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=malariaAtlas" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=malariaAtlas" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="malariaAtlas: An R Interface to Open-Access Malaria Data, Hosted by the 'Malaria Atlas Project'" />
+<meta name="og:description" content="A suite of tools to allow you to download all publicly available parasite rate survey points, mosquito occurrence points and raster surfaces from the 'Malaria Atlas Project' &amp;lt;&lt;a href=&quot;https://malariaatlas.org/&quot;&gt;https://malariaatlas.org/&lt;/a&gt;&amp;gt; servers as well as utility functions for plotting the downloaded data." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=malariaAtlas" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>malariaAtlas: An R Interface to Open-Access Malaria Data, Hosted by the
+'Malaria Atlas Project'</h2>
+<p>A suite of tools to allow you to download all 
+  publicly available parasite rate survey points, mosquito occurrence points and raster surfaces from 
+  the 'Malaria Atlas Project' &lt;<a href="https://malariaatlas.org/">https://malariaatlas.org/</a>&gt; servers as well as utility functions for plotting
+  the downloaded data.</p>
+<table summary="Package malariaAtlas summary">
+<tr>
+<td>Version:</td>
+<td>1.0.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td><a href="../ggplot2/index.html">ggplot2</a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../curl/index.html">curl</a>, <a href="../rgdal/index.html">rgdal</a>, <a href="../raster/index.html">raster</a>, <a href="../sp/index.html">sp</a>, <a href="../xml2/index.html">xml2</a>, grid, <a href="../gridExtra/index.html">gridExtra</a>, <a href="../httr/index.html">httr</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../stringi/index.html">stringi</a>, <a href="../tidyr/index.html">tidyr</a>, methods, stats, utils, <a href="../rlang/index.html">rlang</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../palettetown/index.html">palettetown</a>, <a href="../magrittr/index.html">magrittr</a>, <a href="../tibble/index.html">tibble</a>, <a href="../rdhs/index.html">rdhs</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-01</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Daniel Pfeffer <a href="https://orcid.org/0000-0002-2204-3488"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Tim Lucas <a href="https://orcid.org/0000-0003-4694-8107"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    cre],
+  Daniel May <a href="https://orcid.org/0000-0003-0005-2452"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Suzanne Keddie <a href="https://orcid.org/0000-0003-1254-7794"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Jen Rozier <a href="https://orcid.org/0000-0002-2610-7557"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Oliver Watson <a href="https://orcid.org/0000-0003-2374-0741"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Harry Gibson <a href="https://orcid.org/0000-0001-6779-3250"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Nick Golding [ctb],
+  David Smith [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Tim Lucas  &#x3c;&#x74;&#x69;&#x6d;&#x63;&#x64;&#x6c;&#x75;&#x63;&#x61;&#x73;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/malaria-atlas-project/malariaAtlas/issues">https://github.com/malaria-atlas-project/malariaAtlas/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/malaria-atlas-project/malariaAtlas">https://github.com/malaria-atlas-project/malariaAtlas</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">malariaAtlas citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_malariaAtlas.html">malariaAtlas results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package malariaAtlas downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="malariaAtlas.pdf"> malariaAtlas.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/overview.html">Basic malariaAtlas usage</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/malariaAtlas_1.0.1.tar.gz"> malariaAtlas_1.0.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/malariaAtlas_1.0.1.zip">malariaAtlas_1.0.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/malariaAtlas_1.0.1.zip">malariaAtlas_1.0.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/malariaAtlas_1.0.1.zip">malariaAtlas_1.0.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/malariaAtlas_1.0.1.tgz">malariaAtlas_1.0.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/malariaAtlas_1.0.1.tgz">malariaAtlas_1.0.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/malariaAtlas"> malariaAtlas archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=malariaAtlas"><samp>https://CRAN.R-project.org/package=malariaAtlas</samp></a>
+to link to this page.</p>
+</body>
+</html>

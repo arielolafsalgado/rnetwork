@@ -1,0 +1,31 @@
+Package: meteoland
+Type: Package
+Title: Landscape Meteorology Tools
+Version: 0.8.1
+Date: 2019-05-08
+Authors@R: c(
+	person('Miquel', 'De Cáceres', role=c('aut','cre'),
+	email='miquelcaceres@gmail.com'),
+	person('Nicolas', 'Martin', role='aut'),
+	person('Víctor', 'Granda', role='aut'),
+	person('Antoine', 'Cabon', role='aut'))
+Description: Functions to estimate weather variables at any position of a landscape [De Caceres et al. (2018) <doi:10.1016/j.envsoft.2018.08.003>].
+License: GPL (>= 2)
+URL: http://vegmod.ctfc.cat/meteolandweb
+LazyData: TRUE
+Depends: R (>= 3.4.0), sp
+Imports: spdep, rgdal, ncdf4, ncdf4.helpers, httr, jsonlite, methods,
+        Rcpp (>= 0.12.12)
+Suggests: knitr
+LinkingTo: Rcpp
+Encoding: UTF-8
+NeedsCompilation: yes
+VignetteBuilder: utils, knitr
+Packaged: 2019-05-27 10:32:30 UTC; miquel.decaceres
+Author: Miquel De Cáceres [aut, cre],
+  Nicolas Martin [aut],
+  Víctor Granda [aut],
+  Antoine Cabon [aut]
+Maintainer: Miquel De Cáceres <miquelcaceres@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-05-29 13:40:03 UTC

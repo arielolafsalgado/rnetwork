@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package corpcor</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=corpcor" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="corpcor: Efficient Estimation of Covariance and (Partial) Correlation" />
+<meta name="og:description" content="Implements a James-Stein-type shrinkage estimator for the covariance matrix, with separate shrinkage for variances and correlations. The details of the method are explained in Schafer and Strimmer (2005) &amp;lt;&lt;a href=&quot;https://doi.org/10.2202%2F1544-6115.1175&quot;&gt;doi:10.2202/1544-6115.1175&lt;/a&gt;&amp;gt; and Opgen-Rhein and Strimmer (2007) &amp;lt;&lt;a href=&quot;https://doi.org/10.2202%2F1544-6115.1252&quot;&gt;doi:10.2202/1544-6115.1252&lt;/a&gt;&amp;gt;. The approach is both computationally as well as statistically very efficient, it is applicable to &quot;small n, large p&quot; data, and always returns a positive definite and well-conditioned covariance matrix. In addition to inferring the covariance matrix the package also provides shrinkage estimators for partial correlations and partial variances. The inverse of the covariance and correlation matrix can be efficiently computed, as well as any arbitrary power of the shrinkage correlation matrix. Furthermore, functions are available for fast singular value decomposition, for computing the pseudoinverse, and for checking the rank and positive definiteness of a matrix." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=corpcor" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>corpcor: Efficient Estimation of Covariance and (Partial) Correlation</h2>
+<p>Implements a James-Stein-type shrinkage estimator for 
+  the covariance matrix, with separate shrinkage for variances and correlations.  
+  The details of the method are explained in Schafer and Strimmer (2005) 
+  &lt;<a href="https://doi.org/10.2202%2F1544-6115.1175">doi:10.2202/1544-6115.1175</a>&gt; and Opgen-Rhein and Strimmer (2007) 
+  &lt;<a href="https://doi.org/10.2202%2F1544-6115.1252">doi:10.2202/1544-6115.1252</a>&gt;.  The approach is both computationally as well
+  as statistically very efficient, it is applicable to "small n, large p" data, 
+  and always returns a positive definite and well-conditioned covariance matrix.  
+  In addition to inferring the covariance matrix the package also provides 
+  shrinkage estimators for partial correlations and partial variances.  
+  The inverse of the covariance and correlation matrix 
+  can be efficiently computed, as well as any arbitrary power of the 
+  shrinkage correlation matrix.  Furthermore, functions are available for fast 
+  singular value decomposition, for computing the pseudoinverse, and for 
+  checking the rank and positive definiteness of a matrix.</p>
+<table summary="Package corpcor summary">
+<tr>
+<td>Version:</td>
+<td>1.6.9</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0.2)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>stats</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2017-04-01</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Juliane Schafer, Rainer Opgen-Rhein, Verena Zuber, Miika Ahdesmaki, 
+ A. Pedro Duarte Silva, and Korbinian Strimmer.</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Korbinian Strimmer  &#x3c;&#x73;&#x74;&#x72;&#x69;&#x6d;&#x6d;&#x65;&#x72;&#x6c;&#x61;&#x62;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL (&ge; 3)</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://strimmerlab.org/software/corpcor/">http://strimmerlab.org/software/corpcor/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Multivariate.html">Multivariate</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_corpcor.html">corpcor results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package corpcor downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="corpcor.pdf"> corpcor.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/corpcor_1.6.9.tar.gz"> corpcor_1.6.9.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/corpcor_1.6.9.zip">corpcor_1.6.9.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/corpcor_1.6.9.zip">corpcor_1.6.9.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/corpcor_1.6.9.zip">corpcor_1.6.9.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/corpcor_1.6.9.tgz">corpcor_1.6.9.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/corpcor_1.6.9.tgz">corpcor_1.6.9.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/corpcor"> corpcor archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package corpcor reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../BinNonNor/index.html">BinNonNor</a>, <a href="../BinNor/index.html">BinNor</a>, <a href="../care/index.html">care</a>, <a href="../COMBAT/index.html">COMBAT</a>, <a href="../EDISON/index.html">EDISON</a>, <a href="../FPCA2D/index.html">FPCA2D</a>, <a href="../FRCC/index.html">FRCC</a>, <a href="../GeneNet/index.html">GeneNet</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/GlobalAncova.html"><span class="BioC">GlobalAncova</span></a>, <a href="../GLSME/index.html">GLSME</a>, <a href="../Hotelling/index.html">Hotelling</a>, <a href="../HPbayes/index.html">HPbayes</a>, <a href="../kcirt/index.html">kcirt</a>, <a href="../leapp/index.html">leapp</a>, <a href="../longitudinal/index.html">longitudinal</a>, <a href="../MAVTgsa/index.html">MAVTgsa</a>, <a href="../metavcov/index.html">metavcov</a>, <a href="../mgpd/index.html">mgpd</a>, <a href="../miRtest/index.html">miRtest</a>, <a href="../MultiOrd/index.html">MultiOrd</a>, <a href="../mvMORPH/index.html">mvMORPH</a>, <a href="../OrdNor/index.html">OrdNor</a>, <a href="../OUwie/index.html">OUwie</a>, <a href="../PoisBinNonNor/index.html">PoisBinNonNor</a>, <a href="../PoisBinOrd/index.html">PoisBinOrd</a>, <a href="../PoisBinOrdNonNor/index.html">PoisBinOrdNonNor</a>, <a href="../PoisBinOrdNor/index.html">PoisBinOrdNor</a>, <a href="../PoisNonNor/index.html">PoisNonNor</a>, <a href="../PoisNor/index.html">PoisNor</a>, <a href="../qtlhot/index.html">qtlhot</a>, <a href="../sda/index.html">sda</a>, <a href="../sideChannelAttack/index.html">sideChannelAttack</a>, <a href="../SMFI5/index.html">SMFI5</a>, <a href="../splitFeas/index.html">splitFeas</a>, <a href="../st/index.html">st</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/trigger.html"><span class="BioC">trigger</span></a>, <a href="../whitening/index.html">whitening</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="http://www.bioconductor.org/packages/release/bioc/html/BatchQC.html"><span class="BioC">BatchQC</span></a>, <a href="../BinOrdNonNor/index.html">BinOrdNonNor</a>, <a href="../biospear/index.html">biospear</a>, <a href="../BNrich/index.html">BNrich</a>, <a href="../bootnet/index.html">bootnet</a>, <a href="../boral/index.html">boral</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/CAMTHC.html"><span class="BioC">CAMTHC</span></a>, <a href="../carSurv/index.html">carSurv</a>, <a href="../cate/index.html">cate</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/clipper.html"><span class="BioC">clipper</span></a>, <a href="../clustrd/index.html">clustrd</a>, <a href="../CopulaCenR/index.html">CopulaCenR</a>, <a href="../corHMM/index.html">corHMM</a>, <a href="../covequal/index.html">covequal</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/cpvSNP.html"><span class="BioC">cpvSNP</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/CytoML.html"><span class="BioC">CytoML</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/debCAM.html"><span class="BioC">debCAM</span></a>, <a href="../deepgmm/index.html">deepgmm</a>, <a href="../dnapath/index.html">dnapath</a>, <a href="../ERP/index.html">ERP</a>, <a href="../esaBcv/index.html">esaBcv</a>, <a href="../FADA/index.html">FADA</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/flowClust.html"><span class="BioC">flowClust</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/flowUtils.html"><span class="BioC">flowUtils</span></a>, <a href="../FoReco/index.html">FoReco</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/GOSim.html"><span class="BioC">GOSim</span></a>, <a href="../GWpcor/index.html">GWpcor</a>, <a href="../HSPOR/index.html">HSPOR</a>, <a href="../idm/index.html">idm</a>, <a href="../iTOP/index.html">iTOP</a>, <a href="../jackstraw/index.html">jackstraw</a>, <a href="../knockoff/index.html">knockoff</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/lfa.html"><span class="BioC">lfa</span></a>, <a href="../list/index.html">list</a>, <a href="../lvm4net/index.html">lvm4net</a>, <a href="../lvnet/index.html">lvnet</a>, <a href="../lymphclon/index.html">lymphclon</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/M3C.html"><span class="BioC">M3C</span></a>, <a href="../MCMCglmm/index.html">MCMCglmm</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/miRspongeR.html"><span class="BioC">miRspongeR</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/mixOmics.html"><span class="BioC">mixOmics</span></a>, <a href="../mlVAR/index.html">mlVAR</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/mogsa.html"><span class="BioC">mogsa</span></a>, <a href="../MSEtool/index.html">MSEtool</a>, <a href="../MultiVarMI/index.html">MultiVarMI</a>, <a href="../netassoc/index.html">netassoc</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/netbenchmark.html"><span class="BioC">netbenchmark</span></a>, <a href="../netgsa/index.html">netgsa</a>, <a href="../nowcasting/index.html">nowcasting</a>, <a href="../parma/index.html">parma</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/PathoStat.html"><span class="BioC">PathoStat</span></a>, <a href="../pcalg/index.html">pcalg</a>, <a href="../pcev/index.html">pcev</a>, <a href="../penalizedSVM/index.html">penalizedSVM</a>, <a href="../perARMA/index.html">perARMA</a>, <a href="../pivmet/index.html">pivmet</a>, <a href="../psychonetrics/index.html">psychonetrics</a>, <a href="../qgraph/index.html">qgraph</a>, <a href="../r4ss/index.html">r4ss</a>, <a href="../ratematrix/index.html">ratematrix</a>, <a href="../relaimpo/index.html">relaimpo</a>, <a href="../REndo/index.html">REndo</a>, <a href="../rmgarch/index.html">rmgarch</a>, <a href="../RMTL/index.html">RMTL</a>, <a href="../RNGforGPD/index.html">RNGforGPD</a>, <a href="../RPANDA/index.html">RPANDA</a>, <a href="../SCCS/index.html">SCCS</a>, <a href="../seedCCA/index.html">seedCCA</a>, <a href="../segMGarch/index.html">segMGarch</a>, <a href="../semPlot/index.html">semPlot</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/SEPIRA.html"><span class="BioC">SEPIRA</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/sigaR.html"><span class="BioC">sigaR</span></a>, <a href="../SimTimeVar/index.html">SimTimeVar</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/snm.html"><span class="BioC">snm</span></a>, <a href="../sparsevar/index.html">sparsevar</a>, <a href="../spduration/index.html">spduration</a>, <a href="../StabilizedRegression/index.html">StabilizedRegression</a>, <a href="../subselect/index.html">subselect</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/ToPASeq.html"><span class="BioC">ToPASeq</span></a>, <a href="../ttScreening/index.html">ttScreening</a>, <a href="../vampyr/index.html">vampyr</a>, <a href="../VARshrink/index.html">VARshrink</a>, <a href="../varTestnlme/index.html">varTestnlme</a>, <a href="../wux/index.html">wux</a>, <a href="../xLLiM/index.html">xLLiM</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../BLCOP/index.html">BLCOP</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/CMA.html"><span class="BioC">CMA</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/DEGraph.html"><span class="BioC">DEGraph</span></a>, <a href="../EGAnet/index.html">EGAnet</a>, <a href="../NMF/index.html">NMF</a>, <a href="../picante/index.html">picante</a>, <a href="../PortfolioAnalytics/index.html">PortfolioAnalytics</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=corpcor"><samp>https://CRAN.R-project.org/package=corpcor</samp></a>
+to link to this page.</p>
+</body>
+</html>

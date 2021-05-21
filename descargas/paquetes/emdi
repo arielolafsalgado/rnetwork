@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package emdi</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Estimating and Mapping Disaggregated Indicators [R package emdi version 2.0.1]" />
+<meta name="citation_author1" content="Sylvia Harmening" />
+<meta name="citation_author2" content="Ann-Kristin Kreutzmann" />
+<meta name="citation_author3" content="Soeren Pannier" />
+<meta name="citation_author4" content="Natalia Rojas-Perilla" />
+<meta name="citation_author5" content="Nicola Salvati" />
+<meta name="citation_author6" content="Timo Schmid" />
+<meta name="citation_author7" content="Matthias Templ" />
+<meta name="citation_author8" content="Nikos Tzavidis" />
+<meta name="citation_author9" content="Nora Würz" />
+<meta name="citation_publication_date" content="2020-07-10" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=emdi" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=emdi" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="emdi: Estimating and Mapping Disaggregated Indicators" />
+<meta name="og:description" content="Functions that support estimating, assessing and mapping regional disaggregated indicators. So far, estimation methods comprise direct estimation, the model-based unit-level approach Empirical Best Prediction (see &quot;Small area estimation of poverty indicators&quot; by Molina and Rao (2010) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fcjs.10051&quot;&gt;doi:10.1002/cjs.10051&lt;/a&gt;&amp;gt;), the area-level model (see &quot;Estimates of income for small places: An application of James-Stein procedures to Census Data&quot; by (Fay and Herriot 1979) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F01621459.1979.10482505&quot;&gt;doi:10.1080/01621459.1979.10482505&lt;/a&gt;&amp;gt;) and various extensions of it (adjusted variance estimation methods, log and arcsin transformation, spatial, robust and measurement error models), as well as their precision estimates. The assessment of the used model is supported by a summary and diagnostic plots. For a suitable presentation of estimates, map plots can be easily created. Furthermore, results can easily be exported to excel. For a detailed description of the package and the methods used see &quot;The {R} Package {emdi} for Estimating and Mapping Regionally Disaggregated Indicators&quot; by Kreutzmann et al. (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.18637%2Fjss.v091.i07&quot;&gt;doi:10.18637/jss.v091.i07&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=emdi" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>emdi: Estimating and Mapping Disaggregated Indicators</h2>
+<p>Functions that support estimating, assessing and mapping regional
+    disaggregated indicators. So far, estimation methods comprise direct estimation,
+    the model-based unit-level approach Empirical Best Prediction (see "Small area
+    estimation of poverty indicators" by Molina and Rao (2010) &lt;<a href="https://doi.org/10.1002%2Fcjs.10051">doi:10.1002/cjs.10051</a>&gt;), 
+    the area-level model (see "Estimates of income for small places: An 
+    application of James-Stein procedures to Census Data" by (Fay and Herriot 1979) 
+    &lt;<a href="https://doi.org/10.1080%2F01621459.1979.10482505">doi:10.1080/01621459.1979.10482505</a>&gt;) and various extensions of it (adjusted variance estimation methods, 
+    log and arcsin transformation, spatial, robust and measurement error models), 
+    as well as their precision estimates. The assessment of the used model
+    is supported by a summary and diagnostic plots. For a suitable presentation of
+    estimates, map plots can be easily created. Furthermore, results can easily be
+    exported to excel. For a detailed description of the package and the methods used
+    see "The {R} Package {emdi} for Estimating and Mapping Regionally Disaggregated Indicators"
+    by Kreutzmann et al. (2019) &lt;<a href="https://doi.org/10.18637%2Fjss.v091.i07">doi:10.18637/jss.v091.i07</a>&gt;.</p>
+<table summary="Package emdi summary">
+<tr>
+<td>Version:</td>
+<td>2.0.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../nlme/index.html">nlme</a>, <a href="../moments/index.html">moments</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../MuMIn/index.html">MuMIn</a>, <a href="../gridExtra/index.html">gridExtra</a>, <a href="../openxlsx/index.html">openxlsx</a>, <a href="../reshape2/index.html">reshape2</a>, graphics, stats, <a href="../parallelMap/index.html">parallelMap</a>, <a href="../HLMdiag/index.html">HLMdiag</a>, parallel, <a href="../boot/index.html">boot</a>, <a href="../rgeos/index.html">rgeos</a>, <a href="../maptools/index.html">maptools</a>, <a href="../MASS/index.html">MASS</a>, <a href="../readODS/index.html">readODS</a>, <a href="../formula.tools/index.html">formula.tools</a>, <a href="../saeRobust/index.html">saeRobust</a>, <a href="../spdep/index.html">spdep</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../R.rsp/index.html">R.rsp</a>, <a href="../simFrame/index.html">simFrame</a>, <a href="../laeken/index.html">laeken</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-07-10</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Sylvia Harmening [aut],
+  Ann-Kristin Kreutzmann [aut],
+  Soeren Pannier [aut, cre],
+  Natalia Rojas-Perilla [aut],
+  Nicola Salvati [aut],
+  Timo Schmid [aut],
+  Matthias Templ [aut],
+  Nikos Tzavidis [aut],
+  Nora Würz [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Soeren Pannier  &#x3c;&#x73;&#x6f;&#x65;&#x72;&#x65;&#x6e;&#x2e;&#x70;&#x61;&#x6e;&#x6e;&#x69;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x66;&#x75;&#x2d;&#x62;&#x65;&#x72;&#x6c;&#x69;&#x6e;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>Copyright:</td>
+<td>inst/COPYRIGHTS <br/>  <a href="COPYRIGHTS">emdi copyright details</a> </td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/SoerenPannier/emdi">https://github.com/SoerenPannier/emdi</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">emdi citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/OfficialStatistics.html">OfficialStatistics</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_emdi.html">emdi results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package emdi downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="emdi.pdf"> emdi.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/vignette_emdi.pdf">Estimating and Mapping Regional Disaggregated Indicators</a><br/>
+<a href="vignettes/vignette_fh.pdf">Producing Small Area Estimates Based on Area-Level Models</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/emdi_2.0.1.tar.gz"> emdi_2.0.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/emdi_2.0.1.zip">emdi_2.0.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/emdi_2.0.1.zip">emdi_2.0.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/emdi_2.0.1.zip">emdi_2.0.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/emdi_2.0.1.tgz">emdi_2.0.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/emdi_2.0.1.tgz">emdi_2.0.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/emdi"> emdi archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=emdi"><samp>https://CRAN.R-project.org/package=emdi</samp></a>
+to link to this page.</p>
+</body>
+</html>

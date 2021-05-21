@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package sfsmisc</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Utilities from 'Seminar fuer Statistik' ETH Zurich [R package sfsmisc version 1.1-7]" />
+<meta name="citation_author" content="Martin Maechler" />
+<meta name="citation_publication_date" content="2020-05-07" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=sfsmisc" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=sfsmisc" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="sfsmisc: Utilities from 'Seminar fuer Statistik' ETH Zurich" />
+<meta name="og:description" content="Useful utilities ['goodies'] from Seminar fuer Statistik ETH Zurich, some of which were ported from S-plus in the 1990's. For graphics, have pretty (Log-scale) axes, an enhanced Tukey-Anscombe plot, combining histogram and boxplot, 2d-residual plots, a 'tachoPlot()', pretty arrows, etc. For robustness, have a robust F test and robust range(). For system support, notably on Linux, provides 'Sys.*()' functions with more access to system and CPU information. Finally, miscellaneous utilities such as simple efficient prime numbers, integer codes, Duplicated(), toLatex.numeric() and is.whole()." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=sfsmisc" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>sfsmisc: Utilities from 'Seminar fuer Statistik' ETH Zurich</h2>
+<p>Useful utilities ['goodies'] from Seminar fuer Statistik ETH Zurich,
+   some of which were ported from S-plus in the 1990's.
+ For graphics, have pretty (Log-scale) axes, an enhanced Tukey-Anscombe
+   plot, combining histogram and boxplot, 2d-residual plots, a 'tachoPlot()',
+   pretty arrows, etc.
+ For robustness, have a robust F test and robust range().
+ For system support, notably on Linux, provides 'Sys.*()' functions with
+   more access to system and CPU information.
+ Finally, miscellaneous utilities such as simple efficient prime numbers,
+   integer codes, Duplicated(), toLatex.numeric() and is.whole().</p>
+<table summary="Package sfsmisc summary">
+<tr>
+<td>Version:</td>
+<td>1.1-7</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.2.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>grDevices, methods, utils, stats</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td>datasets, tcltk, <a href="../cluster/index.html">cluster</a>, <a href="../lattice/index.html">lattice</a>, <a href="../MASS/index.html">MASS</a>, <a href="../Matrix/index.html">Matrix</a>, <a href="../nlme/index.html">nlme</a>, <a href="../lokern/index.html">lokern</a></td>
+</tr>
+<tr>
+<td>Enhances:</td>
+<td><a href="../mgcv/index.html">mgcv</a>, <a href="../rpart/index.html">rpart</a>, <a href="../nor1mix/index.html">nor1mix</a>, <a href="../polycor/index.html">polycor</a>, <a href="../sm/index.html">sm</a>, <a href="../tikzDevice/index.html">tikzDevice</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-05-07</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Martin Maechler <a href="https://orcid.org/0000-0002-8685-9910"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Werner Stahel [ctb] (Functions: compresid2way(), f.robftest(), last(),
+    p.scales(), p.dnorm()),
+  Andreas Ruckstuhl [ctb] (Functions: p.arrows(), p.profileTraces(),
+    p.res.2x()),
+  Christian Keller [ctb] (Functions: histBxp(), p.tachoPlot()),
+  Kjetil Halvorsen [ctb] (Functions: KSd(), ecdf.ksCI()),
+  Alain Hauser [ctb] (Functions: cairoSwd(), is.whole(),
+    toLatex.numeric()*),
+  Christoph Buser [ctb] (to function Duplicated()),
+  Lorenz Gygax [ctb] (to function p.res.2fact()),
+  Bill Venables [ctb] (Functions: empty.dimnames(), primes()),
+  Tony Plate [ctb] (to inv.seq()),
+  Isabelle Flückiger [ctb],
+  Marcel Wolbers [ctb],
+  Markus Keller [ctb],
+  Sandrine Dudoit [ctb],
+  Jane Fridlyand [ctb],
+  Greg Snow [ctb] (to loessDemo()),
+  Henrik Aa. Nielsen [ctb] (to loessDemo()),
+  Vincent Carey [ctb],
+  Ben Bolker [ctb],
+  Philippe Grosjean [ctb],
+  Frédéric Ibanez [ctb],
+  Caterina Savi [ctb],
+  Charles Geyer [ctb],
+  Jens Oehlschlägel [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Martin Maechler  &#x3c;&#x6d;&#x61;&#x65;&#x63;&#x68;&#x6c;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x73;&#x74;&#x61;&#x74;&#x2e;&#x6d;&#x61;&#x74;&#x68;&#x2e;&#x65;&#x74;&#x68;&#x7a;&#x2e;&#x63;&#x68;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news.html">NEWS</a> <a href="ChangeLog">ChangeLog</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Distributions.html">Distributions</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_sfsmisc.html">sfsmisc results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package sfsmisc downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="sfsmisc.pdf"> sfsmisc.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/sfsmisc_1.1-7.tar.gz"> sfsmisc_1.1-7.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/sfsmisc_1.1-7.zip">sfsmisc_1.1-7.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/sfsmisc_1.1-7.zip">sfsmisc_1.1-7.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/sfsmisc_1.1-7.zip">sfsmisc_1.1-7.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/sfsmisc_1.1-7.tgz">sfsmisc_1.1-7.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/sfsmisc_1.1-7.tgz">sfsmisc_1.1-7.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/sfsmisc"> sfsmisc archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package sfsmisc reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../ddalpha/index.html">ddalpha</a>, <a href="../distr/index.html">distr</a>, <a href="../ICEbox/index.html">ICEbox</a>, <a href="../modiscloud/index.html">modiscloud</a>, <a href="../plfm/index.html">plfm</a>, <a href="../TTS/index.html">TTS</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../DAC/index.html">DAC</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/deco.html"><span class="BioC">deco</span></a>, <a href="../Demerelate/index.html">Demerelate</a>, <a href="../DHARMa/index.html">DHARMa</a>, <a href="../DiSSMod/index.html">DiSSMod</a>, <a href="../distrMod/index.html">distrMod</a>, <a href="../DPQ/index.html">DPQ</a>, <a href="../esvis/index.html">esvis</a>, <a href="../FCGR/index.html">FCGR</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/ffpe.html"><span class="BioC">ffpe</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/flowClean.html"><span class="BioC">flowClean</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/flowType.html"><span class="BioC">flowType</span></a>, <a href="../FrF2/index.html">FrF2</a>, <a href="../gasfluxes/index.html">gasfluxes</a>, <a href="../IMaGES/index.html">IMaGES</a>, <a href="../lokern/index.html">lokern</a>, <a href="../mcmcplots/index.html">mcmcplots</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/MLInterfaces.html"><span class="BioC">MLInterfaces</span></a>, <a href="../mosqcontrol/index.html">mosqcontrol</a>, <a href="../MRFcov/index.html">MRFcov</a>, <a href="../npregfast/index.html">npregfast</a>, <a href="../pcalg/index.html">pcalg</a>, <a href="../RADanalysis/index.html">RADanalysis</a>, <a href="../rags2ridges/index.html">rags2ridges</a>, <a href="../random.polychor.pa/index.html">random.polychor.pa</a>, <a href="../RandomCoefficients/index.html">RandomCoefficients</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/RchyOptimyx.html"><span class="BioC">RchyOptimyx</span></a>, <a href="../simrel/index.html">simrel</a>, <a href="../simsalapar/index.html">simsalapar</a>, <a href="../ssrm.logmer/index.html">ssrm.logmer</a>, <a href="../takos/index.html">takos</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../alphastable/index.html">alphastable</a>, <a href="../Bessel/index.html">Bessel</a>, <a href="../CDM/index.html">CDM</a>, <a href="../copula/index.html">copula</a>, <a href="../corrgram/index.html">corrgram</a>, <a href="../expm/index.html">expm</a>, <a href="../ItemResponseTrees/index.html">ItemResponseTrees</a>, <a href="../longmemo/index.html">longmemo</a>, <a href="../qrmtools/index.html">qrmtools</a>, <a href="../Rmpfr/index.html">Rmpfr</a>, <a href="../robcor/index.html">robcor</a>, <a href="../robustbase/index.html">robustbase</a>, <a href="../sirt/index.html">sirt</a>, <a href="../stabledist/index.html">stabledist</a>, <a href="../TAM/index.html">TAM</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;enhances:</td>
+<td><a href="../Matrix/index.html">Matrix</a>, <a href="../Matrix/index.html">Matrix</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=sfsmisc"><samp>https://CRAN.R-project.org/package=sfsmisc</samp></a>
+to link to this page.</p>
+</body>
+</html>

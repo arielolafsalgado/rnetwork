@@ -1,0 +1,35 @@
+Package: rnoaa
+Version: 0.2.0
+Date: 2014-07-21
+License: MIT + file LICENSE
+Title: NOAA climate data from R.
+Description: This is an R wrapper to many NOAA APIs including the NCDC climate
+    API at http://www.ncdc.noaa.gov/cdo-web/webservices/v2. There are functions
+    for each of the API endpoints: data, data categories, data sets, data
+    types, locations, location categories, and stations. In addition, we have
+    an interface for NOAA sea ice data that is not part of the climate data
+    API, the NOAA severe weather inventory, and ERDDAP data. NOAA buoy data is
+    only on the buoy branch in the Github repository for this package (see url
+    below).
+Authors@R: c(person("Hart", "Edmund", role = c("aut","cre"),
+    email = "Edmund.m.hart@gmail.com"),
+    person("Scott", "Chamberlain", role = "aut",
+    email = "myrmecocystus@gmail.com"),
+    person("Karthik", "Ram", role = "aut",
+    email = "karthik.ram@gmail.com"))
+URL: https://github.com/ropensci/rnoaa
+BugReports: http://www.github.com/ropensci/rnoaa/issues
+LazyLoad: yes
+LazyData: yes
+VignetteBuilder: knitr
+Imports: httr, lubridate, plyr, ggplot2, scales, sp, rgdal, rgeos,
+        maptools, stringr, XML, data.table, assertthat, jsonlite
+Suggests: testthat, roxygen2, knitr, taxize
+Packaged: 2014-07-21 19:34:34 UTC; thart
+Author: Hart Edmund [aut, cre],
+  Scott Chamberlain [aut],
+  Karthik Ram [aut]
+Maintainer: Hart Edmund <Edmund.m.hart@gmail.com>
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2014-07-21 23:25:40

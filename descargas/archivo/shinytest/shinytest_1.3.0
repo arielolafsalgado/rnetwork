@@ -1,0 +1,28 @@
+Package: shinytest
+Title: Test Shiny Apps
+Version: 1.3.0
+Authors@R: c(
+    person("Winston", "Chang", role = c("aut", "cre"), email = "winston@rstudio.com"),
+    person("Gábor", "Csárdi", role = "aut", email = "gabor@rstudio.com")
+    )
+Description: For automated testing of Shiny applications, using a headless
+    browser, driven through 'WebDriver'.
+License: MIT + file LICENSE
+LazyData: true
+URL: https://github.com/rstudio/shinytest
+BugReports: https://github.com/rstudio/shinytest/issues
+RoxygenNote: 6.0.1.9000
+Imports: assertthat, digest, crayon, debugme, parsedate, pingr, callr
+        (>= 2.0.3), R6, rematch, httr, shiny (>= 1.0.4), testthat (>=
+        1.0.0), utils, webdriver (>= 1.0.5), htmlwidgets, jsonlite,
+        withr, httpuv
+Suggests: rmarkdown, flexdashboard
+Encoding: UTF-8
+SystemRequirements: PhantomJS (http://phantomjs.org/)
+NeedsCompilation: no
+Packaged: 2018-05-04 20:33:32 UTC; winston
+Author: Winston Chang [aut, cre],
+  Gábor Csárdi [aut]
+Maintainer: Winston Chang <winston@rstudio.com>
+Repository: CRAN
+Date/Publication: 2018-05-07 12:12:51 UTC

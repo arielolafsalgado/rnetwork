@@ -1,0 +1,44 @@
+Package: chirps
+Type: Package
+Title: API Client for CHIRPS
+Version: 0.1.0
+Authors@R: c(person("Kauê", "de Sousa", 
+        email = "kaue.desousa@inn.no", role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0002-7571-7845")), 
+        person("Adam H.", "Sparks", role = c("aut"),
+        comment = c(ORCID = "0000-0002-0061-8359")),
+        person("William", "Ashmall", role = "ctb",
+        comment = c("API Client implementation")),
+        person("Jacob", "van Etten", role = c("ths"),
+        comment = c(ORCID = "0000-0001-7554-2558")),
+        person("Svein Ø.", "Solberg", role = c("ths"),
+        comment = c(ORCID = "0000-0002-4491-4483")))
+URL: https://docs.ropensci.org/chirps/
+BugReports: https://github.com/ropensci/chirps/issues
+Description: API Client for the Climate Hazards Group InfraRed Precipitation
+  with Station Data 'CHIRPS'. The 'CHIRPS' data is a 35+ year quasi-global
+  rainfall data set, which incorporates 0.05 arc-degrees resolution satellite
+  imagery, and in-situ station data to create gridded rainfall time series for
+  trend analysis and seasonal drought monitoring. For more details on 'CHIRPS'
+  data please visit its official home page <https://www.chc.ucsb.edu/data/chirps>.
+  Requests from large time series (> 10 years) and large geographic coverage 
+  (global scale) may take several minutes.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0), methods
+Imports: crul, jsonlite, sf, stats
+Suggests: knitr, markdown, rmarkdown, testthat (>= 2.1.0), vcr (>= 0.5)
+Language: en-GB
+RoxygenNote: 7.1.0
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-07-01 15:14:40 UTC; kauefeitosadiasdesousa
+Author: Kauê de Sousa [aut, cre] (<https://orcid.org/0000-0002-7571-7845>),
+  Adam H. Sparks [aut] (<https://orcid.org/0000-0002-0061-8359>),
+  William Ashmall [ctb] (API Client implementation),
+  Jacob van Etten [ths] (<https://orcid.org/0000-0001-7554-2558>),
+  Svein Ø. Solberg [ths] (<https://orcid.org/0000-0002-4491-4483>)
+Maintainer: Kauê de Sousa <kaue.desousa@inn.no>
+Repository: CRAN
+Date/Publication: 2020-07-03 14:20:07 UTC

@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package nc</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=nc" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="nc: Named Capture to Data Tables" />
+<meta name="og:description" content="User-friendly functions for extracting a data table (row for each match, column for each group) from non-tabular text data using regular expressions, and for melting columns that match a regular expression. Patterns are defined using a readable syntax that makes it easy to build complex patterns in terms of simpler, re-usable sub-patterns. Named R arguments are translated to column names in the output; capture groups without names are used internally in order to provide a standard interface to three regular expression C libraries (PCRE, RE2, ICU). Output can also include numeric columns via user-specified type conversion functions. RE2 engine (re2r package) was removed from CRAN in Mar 2020 so must be installed from github." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=nc" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>nc: Named Capture to Data Tables</h2>
+<p>User-friendly functions for extracting a data
+ table (row for each match, column for each group)
+ from non-tabular text data using regular expressions,
+ and for melting columns that match a regular expression.
+ Patterns are defined using a readable syntax
+ that makes it easy to build complex patterns
+ in terms of simpler, re-usable sub-patterns.
+ Named R arguments are translated to column names
+ in the output; capture groups without names are used
+ internally in order to provide a standard interface
+ to three regular expression C libraries (PCRE, RE2, ICU).
+ Output can also include numeric columns via
+ user-specified type conversion functions.
+ RE2 engine (re2r package) was removed from CRAN in Mar 2020
+ so must be installed from github.</p>
+<table summary="Package nc summary">
+<tr>
+<td>Version:</td>
+<td>2020.8.6</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.14)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../data.table/index.html">data.table</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, re2r, <a href="../stringi/index.html">stringi</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../tidyr/index.html">tidyr</a> (&ge; 1.0.0), <a href="../cdata/index.html">cdata</a>, <a href="../reshape2/index.html">reshape2</a>, <a href="../knitr/index.html">knitr</a>, <a href="../markdown/index.html">markdown</a>, <a href="../R.utils/index.html">R.utils</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-08-10</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Toby Dylan Hocking</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Toby Dylan Hocking  &#x3c;&#x74;&#x6f;&#x62;&#x79;&#x2e;&#x68;&#x6f;&#x63;&#x6b;&#x69;&#x6e;&#x67;&#x20;&#x61;&#x74;&#x20;&#x72;&#x2d;&#x70;&#x72;&#x6f;&#x6a;&#x65;&#x63;&#x74;&#x2e;&#x6f;&#x72;&#x67;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/tdhock/nc/issues">https://github.com/tdhock/nc/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/tdhock/nc">https://github.com/tdhock/nc</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_nc.html">nc results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package nc downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="nc.pdf"> nc.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/v1-capture-first.html">vignette 1: capture first match</a><br/>
+<a href="vignettes/v2-capture-all.html">vignette 2: capture all matches</a><br/>
+<a href="vignettes/v3-capture-melt.html">vignette 3: capture melt</a><br/>
+<a href="vignettes/v4-comparisons.html">vignette 4: comparisons with other packages</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/nc_2020.8.6.tar.gz"> nc_2020.8.6.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/nc_2020.8.6.zip">nc_2020.8.6.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/nc_2020.8.6.zip">nc_2020.8.6.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/nc_2020.5.13.zip">nc_2020.5.13.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/nc_2020.8.6.tgz">nc_2020.8.6.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/nc_2020.5.13.tgz">nc_2020.5.13.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/nc"> nc archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=nc"><samp>https://CRAN.R-project.org/package=nc</samp></a>
+to link to this page.</p>
+</body>
+</html>

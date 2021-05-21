@@ -1,0 +1,23 @@
+Package: ActiveDriverWGS
+Title: A Driver Discovery Tool for Cancer Whole Genomes
+Version: 1.1.0
+Authors@R: c(person("Juri", "Reimand", email = "juri.reimand@utoronto.ca", role = c("aut", "cre")), person("Helen", "Zhu", email = "helen.zhu@oicr.on.ca", role = c("aut")))
+Description: A method for finding an enrichment of cancer simple somatic mutations (SNVs and Indels) in functional elements across the human genome. 'ActiveDriverWGS' detects coding and noncoding driver elements using whole genome sequencing data. The method is part of the following publication: Candidate Cancer Driver Mutations in Distal Regulatory Elements and Long-Range Chromatin Interaction Networks. Molecular Cell (2020) <doi:10.1016/j.molcel.2019.12.027>.
+Depends: R (>= 3.5)
+Imports: BSgenome, BSgenome.Hsapiens.UCSC.hg19, Biostrings,
+        GenomeInfoDb, GenomicRanges, IRanges, S4Vectors
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Suggests: knitr, testthat, BSgenome.Hsapiens.UCSC.hg38,
+        BSgenome.Mmusculus.UCSC.mm9, BSgenome.Mmusculus.UCSC.mm10,
+        rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2020-09-07 13:32:21 UTC; jreimand
+Author: Juri Reimand [aut, cre],
+  Helen Zhu [aut]
+Maintainer: Juri Reimand <juri.reimand@utoronto.ca>
+Repository: CRAN
+Date/Publication: 2020-09-07 21:30:14 UTC

@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package dataone</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="R Interface to the DataONE REST API [R package dataone version 2.1.4]" />
+<meta name="citation_author1" content="Matthew B. Jones" />
+<meta name="citation_author2" content="Peter Slaughter" />
+<meta name="citation_author3" content="Rob Nahf" />
+<meta name="citation_author4" content="Carl Boettiger" />
+<meta name="citation_author5" content="Chris Jones" />
+<meta name="citation_author6" content="Jordan Read" />
+<meta name="citation_author7" content="Lauren Walker" />
+<meta name="citation_author8" content="Edmund Hart" />
+<meta name="citation_author9" content="Scott Chamberlain" />
+<meta name="citation_publication_date" content="2020-02-16" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=dataone" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=dataone" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="dataone: R Interface to the DataONE REST API" />
+<meta name="og:description" content="Provides read and write access to data and metadata from the DataONE network &amp;lt;&lt;a href=&quot;https://www.dataone.org&quot;&gt;https://www.dataone.org&lt;/a&gt;&amp;gt; of data repositories. Each DataONE repository implements a consistent repository application programming interface. Users call methods in R to access these remote repository functions, such as methods to query the metadata catalog, get access to metadata for particular data packages, and read the data objects from the data repository. Users can also insert and update data objects on repositories that support these methods." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=dataone" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>dataone: R Interface to the DataONE REST API</h2>
+<p>Provides read and write access to data and metadata from
+    the DataONE network &lt;<a href="https://www.dataone.org">https://www.dataone.org</a>&gt; of data repositories.  
+    Each DataONE repository implements a consistent repository application 
+    programming interface. Users call methods in R to access these remote 
+    repository functions, such as methods to query the metadata catalog, get 
+    access to metadata for particular data packages, and read the data objects 
+    from the data repository. Users can also insert and update data objects on 
+    repositories that support these methods.</p>
+<table summary="Package dataone summary">
+<tr>
+<td>Version:</td>
+<td>2.1.4</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.1.1)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../XML/index.html">XML</a> (&ge; 3.95-0.1), <a href="../hash/index.html">hash</a>, <a href="../httr/index.html">httr</a>, methods, <a href="../stringr/index.html">stringr</a>, <a href="../datapack/index.html">datapack</a> (&ge;
+1.3.0), <a href="../plyr/index.html">plyr</a>, <a href="../parsedate/index.html">parsedate</a>, <a href="../uuid/index.html">uuid</a>, <a href="../base64enc/index.html">base64enc</a>, <a href="../jsonlite/index.html">jsonlite</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../testthat/index.html">testthat</a>, <a href="../digest/index.html">digest</a>, <a href="../openssl/index.html">openssl</a> (&ge; 0.9.3), <a href="../xml2/index.html">xml2</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-02-16</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Matthew B. Jones [aut, cre],
+  Peter Slaughter [aut],
+  Rob Nahf [aut],
+  Carl Boettiger [aut],
+  Chris Jones [aut],
+  Jordan Read [aut],
+  Lauren Walker [aut],
+  Edmund Hart [aut],
+  Scott Chamberlain [aut],
+  Regents of the University of California [cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Matthew B. Jones  &#x3c;&#x6a;&#x6f;&#x6e;&#x65;&#x73;&#x20;&#x61;&#x74;&#x20;&#x6e;&#x63;&#x65;&#x61;&#x73;&#x2e;&#x75;&#x63;&#x73;&#x62;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/DataONEorg/rdataone/issues">https://github.com/DataONEorg/rdataone/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a></td>
+</tr>
+<tr>
+<td>Copyright:</td>
+<td>see file <a href="COPYRIGHTS">COPYRIGHTS</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/DataONEorg/rdataone">https://github.com/DataONEorg/rdataone</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">dataone citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/WebTechnologies.html">WebTechnologies</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_dataone.html">dataone results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package dataone downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="dataone.pdf"> dataone.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/dataone-federation.html">DataONE Federation</a><br/>
+<a href="vignettes/dataone-overview.html">dataone R Package Overview</a><br/>
+<a href="vignettes/download-data.html">Downloading Data From DataONE</a><br/>
+<a href="vignettes/known-issues.html">Known Issues</a><br/>
+<a href="vignettes/searching-dataone.html">Searching DataONE Data Holdings</a><br/>
+<a href="vignettes/update-package.html">Updating Packages on DataONE</a><br/>
+<a href="vignettes/upload-data.html">Uploading Data to DataONE</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/dataone_2.1.4.tar.gz"> dataone_2.1.4.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/dataone_2.1.4.zip">dataone_2.1.4.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/dataone_2.1.4.zip">dataone_2.1.4.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/dataone_2.1.4.zip">dataone_2.1.4.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/dataone_2.1.4.tgz">dataone_2.1.4.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/dataone_2.1.4.tgz">dataone_2.1.4.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/dataone"> dataone archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package dataone reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../nesRdata/index.html">nesRdata</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=dataone"><samp>https://CRAN.R-project.org/package=dataone</samp></a>
+to link to this page.</p>
+</body>
+</html>

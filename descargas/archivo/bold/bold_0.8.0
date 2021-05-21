@@ -1,0 +1,31 @@
+Package: bold
+Title: Interface to Bold Systems API
+Description: A programmatic interface to the Web Service methods provided by
+    Bold Systems (<http://www.boldsystems.org/>) for genetic 'barcode' data.
+    Functions include methods for searching by sequences by taxonomic names,
+    ids, collectors, and institutions; as well as a function for searching
+    for specimens, and downloading trace files.
+Version: 0.8.0
+License: MIT + file LICENSE
+Authors@R: c(person("Scott", "Chamberlain",
+    role = c("aut", "cre"),
+    email = "myrmecocystus@gmail.com",
+    comment = c(ORCID = "orcid.org/0000-0003-1444-9135")))
+URL: https://github.com/ropensci/bold
+BugReports: https://github.com/ropensci/bold/issues
+VignetteBuilder: knitr
+LazyData: yes
+Encoding: UTF-8
+Imports: xml2, crul (>= 0.3.8), stringr, jsonlite, reshape, plyr,
+        data.table, tibble
+Suggests: roxygen2 (>= 6.0.1), sangerseqR, knitr, testthat
+RoxygenNote: 6.1.0
+X-schema.org-applicationCategory: Data Access
+X-schema.org-keywords: biodiversity, barcode, DNA, sequences, fasta
+X-schema.org-isPartOf: https://ropensci.org
+NeedsCompilation: no
+Packaged: 2018-10-26 17:46:48 UTC; sckott
+Author: Scott Chamberlain [aut, cre] (<https://orcid.org/0000-0003-1444-9135>)
+Maintainer: Scott Chamberlain <myrmecocystus@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-10-26 18:10:03 UTC

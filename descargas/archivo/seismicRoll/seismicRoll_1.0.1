@@ -1,0 +1,27 @@
+Type: Package
+Package: seismicRoll
+Version: 1.0.1
+Title: Fast Rolling Functions for Seismology using Rcpp
+Authors@R: c(
+    person("Jonathan", "Callahan", email="jonathan.s.callahan@gmail.com", role=c("aut","cre")),
+    person("Rob", "Casey", email="rob@iris.washington.edu", role=c("aut")),
+    person("Mary", "Templeton", email="met@iris.washington.edu", role=c("aut"))
+    )
+Author: Jonathan Callahan [aut, cre],
+    Rob Casey [aut],
+    Mary Templeton [aut]
+Maintainer: Jonathan Callahan <jonathan.s.callahan@gmail.com>
+Depends: R (>= 2.14.1), Rcpp (>= 0.10.4)
+Suggests: microbenchmark
+LinkingTo: Rcpp
+Description: Fast versions of seismic analysis functions that 'roll' over a
+             vector of values. See the RcppRoll package for alternative 
+             versions of basic statistical functions such as rolling mean, 
+             median, etc.
+Collate: seismicRoll.R RcppExports.R findOutliers.R roll_hampel.R
+        roll_mean.R roll_median.R roll_sd.R roll_stalta.R
+License: GPL-2
+Repository: CRAN
+Packaged: 2015-03-11 15:44:41 UTC; jonathan
+NeedsCompilation: yes
+Date/Publication: 2015-03-11 17:59:03

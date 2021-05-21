@@ -1,0 +1,30 @@
+Package: snotelr
+Title: Calculate and Visualize 'SNOTEL' Snow Data and Seasonality
+Version: 1.0.1
+Authors@R: person(
+      family = "Hufkens",
+      given = "Koen",
+		  email = "koen.hufkens@gmail.com",
+		  role = c("aut", "cre"))
+Description: Programmatic interface to the 'SNOTEL' snow data
+  (<https://www.wcc.nrcs.usda.gov/snow/>). Provides easy downloads of snow 
+  data into your R work space or a local directory. Additional post-processing 
+  routines to extract snow season indexes are provided.
+URL: https://github.com/khufkens/snotelr
+BugReports: https://github.com/khufkens/snotelr/issues
+Depends: R (>= 3.4)
+Imports: shiny, xml2, httr, utils, stats, rvest, magrittr, wdman,
+        RSelenium, memoise
+Suggests: knitr, rmarkdown, covr, testthat, shinydashboard, leaflet,
+        plotly, DT
+VignetteBuilder: knitr
+License: AGPL-3
+LazyData: true
+ByteCompile: true
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-01-03 17:00:00 UTC; khufkens
+Author: Koen Hufkens [aut, cre]
+Maintainer: Koen Hufkens <koen.hufkens@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-01-08 18:00:03 UTC

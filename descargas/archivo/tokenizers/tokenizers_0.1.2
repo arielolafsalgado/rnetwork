@@ -1,0 +1,30 @@
+Package: tokenizers
+Type: Package
+Title: Tokenize Text
+Version: 0.1.2
+Date: 2016-04-14
+Description: Convert natural language text into tokens. The tokenizers have a
+    consistent interface and are compatible with Unicode, thanks to being built
+    on the 'stringi' package. Includes tokenizers for shingled n-grams, skip
+    n-grams, words, word stems, sentences, paragraphs, characters, lines, and
+    regular expressions.
+License: MIT + file LICENSE
+LazyData: yes
+Authors@R: c(person("Lincoln", "Mullen", role = c("aut", "cre"),
+        email = "lincoln@lincolnmullen.com"),
+        person("Dmitriy", "Selivanov", role = c("ctb"),
+        email = "selivanov.dmitriy@gmail.com"))
+URL: https://github.com/lmullen/tokenizers
+BugReports: https://github.com/lmullen/tokenizers/issues
+RoxygenNote: 5.0.1
+Depends: R (>= 3.1.3)
+Imports: stringi (>= 1.0.1), Rcpp (>= 0.12.3), SnowballC (>= 0.5.1)
+LinkingTo: Rcpp
+Suggests: testthat, covr
+NeedsCompilation: yes
+Packaged: 2016-04-14 14:57:45 UTC; lmullen
+Author: Lincoln Mullen [aut, cre],
+  Dmitriy Selivanov [ctb]
+Maintainer: Lincoln Mullen <lincoln@lincolnmullen.com>
+Repository: CRAN
+Date/Publication: 2016-04-14 18:19:35

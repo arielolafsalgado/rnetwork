@@ -1,0 +1,32 @@
+Package: correlationfunnel
+Type: Package
+Title: Speed Up Exploratory Data Analysis (EDA) with the Correlation
+        Funnel
+Version: 0.1.0
+Authors@R: 
+    person("Matt", "Dancho", email = "mdancho@business-science.io", role = c("aut", "cre"))
+Description: 
+    Speeds up exploratory data analysis (EDA)
+    by providing a succinct workflow and interactive visualization tools for understanding
+    which features have relationships to target (response). Uses binary correlation analysis
+    to determine relationship. Default correlation method is the Pearson method. 
+    Lian Duan, W Nick Street, Yanchi Liu, Songhua Xu, and Brook Wu (2014) <doi:10.1145/2637484>.
+URL: https://github.com/business-science/correlationfunnel
+BugReports: https://github.com/business-science/correlationfunnel/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.1)
+Imports: ggplot2, rlang, recipes, magrittr, plotly, tibble, dplyr,
+        tidyr, stats, utils, ggrepel, stringr, forcats, purrr, cli,
+        crayon, rstudioapi
+Suggests: scales, knitr, rmarkdown, covr, lubridate, testthat (>=
+        2.1.0)
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-08-05 19:40:15 UTC; mdancho
+Author: Matt Dancho [aut, cre]
+Maintainer: Matt Dancho <mdancho@business-science.io>
+Repository: CRAN
+Date/Publication: 2019-08-06 09:30:09 UTC

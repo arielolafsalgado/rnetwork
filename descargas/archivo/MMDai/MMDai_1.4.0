@@ -1,0 +1,25 @@
+Package: MMDai
+Type: Package
+Title: Multivariate Multinomial Distribution Approximation and
+        Imputation for Incomplete Data
+Version: 1.4.0
+Author: Chaojie Wang
+Maintainer: Chaojie Wang <wang910930@163.com>
+Description: Missingness in categorical data is a common problem in various real applications. 
+  Traditional approaches either utilize only the complete observations or impute the missing data by some ad hoc methods rather than the true conditional distribution of the missing data, 
+  thus losing or distorting the rich information in the partial observations. 
+  This package develops a Bayesian nonparametric approach, the Dirichlet Process Mixture of Collapsed Product-Multinomials (DPMCPM, Wang et al. (2017) <arXiv:1712.02214v1>), 
+  to model the full data jointly and compute the model efficiently. 
+  By fitting an infinite mixture of product-multinomial distributions, 
+  DPMCPM is applicable for any categorical data regardless of the true distribution, 
+  which may contain complex association among variables. 
+  Under the framework of latent class analysis, we show that DPMCPM can model general missing mechanisms by creating an extra category to denote missingness, 
+  which implicitly integrates out the missing part with regard to their true conditional distribution. 
+License: GPL (>= 2)
+LazyData: TRUE
+Depends: DirichletReg, stats
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-12-07 14:14:07 UTC; grad01
+Repository: CRAN
+Date/Publication: 2017-12-07 15:05:43 UTC

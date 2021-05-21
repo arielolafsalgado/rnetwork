@@ -1,0 +1,36 @@
+Package: genie
+Type: Package
+Title: A New, Fast, and Outlier Resistant Hierarchical Clustering
+        Algorithm
+Version: 1.0.0
+Date: 2016-03-07
+Authors@R: c(
+    person("Marek", "Gagolewski", role = c("aut", "cre"),
+    email = "gagolews@rexamine.com"),
+    person("Maciej", "Bartoszuk", role = "aut",
+    email = "bartoszuk@rexamine.com"),
+    person("Anna", "Cena", role = "aut",
+    email = "cena@rexamine.com")
+    )
+Description: A new hierarchical clustering linkage criterion:
+    the Genie algorithm links two clusters in such a way that a chosen
+    economic inequity measure (e.g., the Gini index) of the cluster
+    sizes does not increase drastically above a given threshold. Benchmarks
+    indicate a high practical usefulness of the introduced method:
+    it most often outperforms the Ward or average linkage in terms of
+    the clustering quality while retaining the single linkage speed.
+License: GPL (>= 3)
+Depends: R (>= 3.1.0), stats
+Imports: Rcpp (>= 0.12.0)
+Suggests: datasets, testthat, stringi
+LinkingTo: Rcpp (>= 0.12.0)
+SystemRequirements: OpenMP, C++11
+RoxygenNote: 5.0.1
+NeedsCompilation: yes
+Packaged: 2016-03-07 15:59:02 UTC; gagolews
+Author: Marek Gagolewski [aut, cre],
+  Maciej Bartoszuk [aut],
+  Anna Cena [aut]
+Maintainer: Marek Gagolewski <gagolews@rexamine.com>
+Repository: CRAN
+Date/Publication: 2016-03-07 23:24:16

@@ -1,0 +1,26 @@
+Package: synthACS
+Title: Synthetic Microdata and Spatial MicroSimulation Modeling for ACS
+        Data
+Version: 0.4.4
+Authors@R: person("Alex", "Whitworth",,email = "whitworth.alex@gmail.com", c("aut", "cre"))
+Description: Firstly provides a wrapper to library(acs) to access
+  numerous American Community Survey (ACS) base tables which may be of interest
+  to many researchers. Secondly, it builds synthetic micro-datasets of ACS data
+  at any specified geographic level with 10 default individual attributes. Thirdly,
+  the package provides functionality for users to add additional ACS & non-ACS  data attributes to micro-datasets based on macro population characteristics. And
+  finally, the package also conducts spatial microsimulation modeling (SMSM)
+  via simulated annealing.  SMSM is conducted in parallel by default.
+Depends: R (>= 3.2.3), acs (>= 1.2), data.table (>= 1.9.6)
+Imports: Rcpp
+License: MIT + file LICENSE
+LazyData: true
+Suggests: testthat, tigris (>= 0.3), sp (>= 1.2), leaflet (>= 1.0),
+        shiny (>= 0.13), rgdal (>= 1.1)
+RoxygenNote: 5.0.1
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2016-06-23 17:55:20 UTC; awhitworth
+Author: Alex Whitworth [aut, cre]
+Maintainer: Alex Whitworth <whitworth.alex@gmail.com>
+Repository: CRAN
+Date/Publication: 2016-06-24 09:53:55

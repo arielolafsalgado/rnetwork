@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package MODIStsp</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="A Tool for Automating Download and Preprocessing of MODIS Land Products Data [R package MODIStsp version 2.0.4]" />
+<meta name="citation_author1" content="Lorenzo Busetto" />
+<meta name="citation_author2" content="Luigi Ranghetti" />
+<meta name="citation_publication_date" content="2020-10-13" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=MODIStsp" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=MODIStsp" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="MODIStsp: A Tool for Automating Download and Preprocessing of MODIS Land Products Data" />
+<meta name="og:description" content="Allows automating the creation of time series of rasters derived from MODIS Satellite Land Products data. It performs several typical preprocessing steps such as download, mosaicking, reprojection and resize of data acquired on a specified time period. All processing parameters can be set using a user-friendly GUI. Users can select which layers of the original MODIS HDF files they want to process, which additional Quality Indicators should be extracted from aggregated MODIS Quality Assurance layers and, in the case of Surface Reflectance products , which Spectral Indexes should be computed from the original reflectance bands. For each output layer, outputs are saved as single-band raster files corresponding to each available acquisition date. Virtual files allowing access to the entire time series as a single file are also created. Command-line execution exploiting a previously saved processing options file is also possible, allowing to automatically update time series related to a MODIS product whenever a new image is available." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=MODIStsp" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>MODIStsp: A Tool for Automating Download and Preprocessing of MODIS Land
+Products Data</h2>
+<p>Allows automating the creation of time series of rasters derived
+    from MODIS Satellite Land Products data. It performs several typical
+    preprocessing steps such as download, mosaicking, reprojection and resize
+    of data acquired on a specified time period. All processing parameters
+    can be set using a user-friendly GUI. Users can select which layers of
+    the original MODIS HDF files they want to process, which additional
+    Quality Indicators should be extracted from aggregated MODIS Quality
+    Assurance layers and, in the case of Surface Reflectance products
+    , which Spectral Indexes should be computed from the original reflectance
+    bands. For each output layer, outputs are saved as single-band raster
+    files corresponding to each available acquisition date. Virtual files
+    allowing access to the entire time series as a single file are also created.
+    Command-line execution exploiting a previously saved processing options
+    file is also possible, allowing to automatically update time series
+    related to a MODIS product whenever a new image is available.</p>
+<table summary="Package MODIStsp summary">
+<tr>
+<td>Version:</td>
+<td>2.0.4</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../assertthat/index.html">assertthat</a>, <a href="../bitops/index.html">bitops</a> (&ge; 1.0-6), <a href="../data.table/index.html">data.table</a> (&ge; 1.9.6), <a href="../gdalUtilities/index.html">gdalUtilities</a>, <a href="../httr/index.html">httr</a> (&ge; 1.4.2), <a href="../jsonlite/index.html">jsonlite</a>, <a href="../geojsonio/index.html">geojsonio</a>, parallel, <a href="../raster/index.html">raster</a> (&ge; 3.3.13), <a href="../sf/index.html">sf</a> (&ge; 0.9.3), <a href="../stringr/index.html">stringr</a> (&ge; 1.0.0), <a href="../xts/index.html">xts</a> (&ge;
+0.9-7), <a href="../xml2/index.html">xml2</a> (&ge; 1.2.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../spelling/index.html">spelling</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../png/index.html">png</a>, grid, <a href="../httptest/index.html">httptest</a>, <a href="../geojsonlint/index.html">geojsonlint</a>, <a href="../leaflet/index.html">leaflet</a>, <a href="../shiny/index.html">shiny</a>, <a href="../shinydashboard/index.html">shinydashboard</a>, <a href="../shinyFiles/index.html">shinyFiles</a>, <a href="../shinyalert/index.html">shinyalert</a>, <a href="../shinyjs/index.html">shinyjs</a>, <a href="../rappdirs/index.html">rappdirs</a>, <a href="../leafem/index.html">leafem</a> (&ge; 0.1.3), <a href="../mapedit/index.html">mapedit</a> (&ge;
+0.6.0), <a href="../rgdal/index.html">rgdal</a>, <a href="../magrittr/index.html">magrittr</a>, <a href="../formatR/index.html">formatR</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-13</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Lorenzo Busetto <a href="https://orcid.org/0000-0001-9634-6038"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Luigi Ranghetti <a href="https://orcid.org/0000-0001-6207-5188"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Leah Wasser [rev] (Leah Wasser reviewed the package for rOpenSci, see
+    https://github.com/ropensci/software-review/issues/184),
+  Jeff Hanson [rev] (Jeff Hanson reviewed the package for rOpenSci, see
+    https://github.com/ropensci/software-review/issues/184)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Lorenzo Busetto  &#x3c;&#x6c;&#x62;&#x75;&#x73;&#x65;&#x74;&#x74;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ropensci/MODIStsp/issues">https://github.com/ropensci/MODIStsp/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/ropensci/MODIStsp/">https://github.com/ropensci/MODIStsp/</a>,
+<a href="https://docs.ropensci.org/MODIStsp/">https://docs.ropensci.org/MODIStsp/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">MODIStsp citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_MODIStsp.html">MODIStsp results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package MODIStsp downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="MODIStsp.pdf"> MODIStsp.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/MODIStsp.html">MODIStsp: A Tool for Automatic Preprocessing of MODIS Time Series - v2.0.0</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/MODIStsp_2.0.4.tar.gz"> MODIStsp_2.0.4.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/MODIStsp_2.0.4.zip">MODIStsp_2.0.4.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/MODIStsp_2.0.4.zip">MODIStsp_2.0.4.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/MODIStsp_2.0.4.zip">MODIStsp_2.0.4.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/MODIStsp_2.0.4.tgz">MODIStsp_2.0.4.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/MODIStsp_2.0.4.tgz">MODIStsp_2.0.4.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/MODIStsp"> MODIStsp archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=MODIStsp"><samp>https://CRAN.R-project.org/package=MODIStsp</samp></a>
+to link to this page.</p>
+</body>
+</html>

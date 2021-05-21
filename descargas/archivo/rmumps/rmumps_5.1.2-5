@@ -1,0 +1,105 @@
+Package: rmumps
+Type: Package
+Title: Wrapper for MUMPS Library
+Version: 5.1.2-5
+Date: 2018-12-18
+Authors@R: c(person("Serguei", "Sokol", role=c("aut", "cre"), email="sokol@insa-toulouse.fr"),
+         person("Emmanuel", "Agullo", role="ctb"),
+         person("Patrick", "Amestoy", role="ctb"),
+         person("Maurice", "Bremond", role="ctb"),
+         person("Alfredo", "Buttari", role="ctb"),
+         person("Philippe", "Combes", role="ctb"),
+         person("Marie", "Durand", role="ctb"),
+         person("Aurelia", "Fevre", role="ctb"),
+         person("Abdou", "Guermouche", role="ctb"),
+         person("Guillaume", "Joslin", role="ctb"),
+         person("Jacko", "Koster", role="ctb"),
+         person("Jean-Yves", "L'Excellent", role="ctb"),
+         person("Stephane", "Pralet", role="ctb"),
+         person("Chiara", "Puglisi", role="ctb"),
+         person("Francois-Henry", "Rouet", role="ctb"),
+         person("Wissam", "Sid-Lakhdar", role="ctb"),
+         person("Tzvetomila", "Slavova", role="ctb"),
+         person("Bora", "Ucar", role="ctb"),
+         person("Clement", "Weisbecker", role="ctb"),
+         person("Juergen", "Schulze", role="ctb"),
+         person("George", "Karypis", role="ctb"),
+         person("Douglas C.", "Schmidt", role="ctb"),
+         person("Isamu", "Hasegawa", role="ctb"),
+         person("Alexander", "Chemeris", role="ctb"),
+         person("Makoto", "Matsumoto", role="ctb"),
+         person("Takuji", "Nishimura", role="ctb"),
+         person("Francois", "Pellegrini", role="ctb"),
+         person("David", "Goudin", role="ctb"),
+         person("Pascal", "Henon", role="ctb"),
+         person("Pierre", "Ramet", role="ctb"),
+         person("Sebastien", "Fourestier", role="ctb"),
+         person("Jun-Ho", "Her", role="ctb"),
+         person("Cedric", "Chevalier", role="ctb"),
+         person("Timothy A.", "Davis", role="ctb"),
+         person("Iain S.", "Duff", role="ctb"),
+         person("John K.", "Reid", role="ctb"),
+         person("Richard", "Stallman", role="ctb"),
+         person("Samuel", "Thibault", role="ctb")
+         )
+Maintainer: Serguei Sokol <sokol@insa-toulouse.fr>
+Description: Some basic features of MUMPS (Multifrontal Massively Parallel
+         sparse direct Solver) are wrapped in a class whose methods can be used
+         for sequentially solving a sparse linear system (symmetric or not)
+         with one or many right hand sides (dense or sparse).
+         There is a possibility to do separately symbolic analysis,
+         LU (or LDL^t) factorization and system solving.
+         Third part ordering libraries are included and can be used: PORD, METIS, SCOTCH.
+         MUMPS method was first described in Amestoy et al. (2001) <doi:10.1137/S0895479899358194>
+         and Amestoy et al. (2006) <doi:10.1016/j.parco.2005.07.004>.
+License: GPL (>= 2)
+Imports: methods, Rcpp (>= 0.12.0)
+LinkingTo: Rcpp
+SystemRequirements: C++11, GNU Make
+NeedsCompilation: yes
+Biarch: yes
+Suggests: testthat, Matrix, slam
+BugReports: https://github.com/sgsokol/rmumps/issues
+URL: http://mumps.enseeiht.fr/, https://github.com/sgsokol/rmumps/
+RoxygenNote: 6.1.0
+Packaged: 2018-12-18 14:03:58 UTC; sokol
+Author: Serguei Sokol [aut, cre],
+  Emmanuel Agullo [ctb],
+  Patrick Amestoy [ctb],
+  Maurice Bremond [ctb],
+  Alfredo Buttari [ctb],
+  Philippe Combes [ctb],
+  Marie Durand [ctb],
+  Aurelia Fevre [ctb],
+  Abdou Guermouche [ctb],
+  Guillaume Joslin [ctb],
+  Jacko Koster [ctb],
+  Jean-Yves L'Excellent [ctb],
+  Stephane Pralet [ctb],
+  Chiara Puglisi [ctb],
+  Francois-Henry Rouet [ctb],
+  Wissam Sid-Lakhdar [ctb],
+  Tzvetomila Slavova [ctb],
+  Bora Ucar [ctb],
+  Clement Weisbecker [ctb],
+  Juergen Schulze [ctb],
+  George Karypis [ctb],
+  Douglas C. Schmidt [ctb],
+  Isamu Hasegawa [ctb],
+  Alexander Chemeris [ctb],
+  Makoto Matsumoto [ctb],
+  Takuji Nishimura [ctb],
+  Francois Pellegrini [ctb],
+  David Goudin [ctb],
+  Pascal Henon [ctb],
+  Pierre Ramet [ctb],
+  Sebastien Fourestier [ctb],
+  Jun-Ho Her [ctb],
+  Cedric Chevalier [ctb],
+  Timothy A. Davis [ctb],
+  Iain S. Duff [ctb],
+  John K. Reid [ctb],
+  Richard Stallman [ctb],
+  Samuel Thibault [ctb]
+Repository: CRAN
+Date/Publication: 2018-12-18 15:20:03 UTC

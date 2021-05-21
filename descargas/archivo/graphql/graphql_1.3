@@ -1,0 +1,30 @@
+Package: graphql
+Type: Package
+Title: A GraphQL Query Parser
+Version: 1.3
+Authors@R: c(
+    person("Jeroen", "Ooms", , "jeroen@berkeley.edu", role = c("cre", "aut")),
+    person("Barret", "Schloerke", , "schloerke@gmail.com", role = "ctb"),
+    person("Scott", "Wolchok", role = "ctb"),
+    person("Facebook, Inc", role = c("aut","cph"), comment = "libgraphqlparser C++ library"))
+Description: Bindings to the 'libgraphqlparser' C++ library. Currently parses
+    GraphQL and exports the AST in JSON format.
+License: BSD_3_clause + file LICENSE
+Encoding: UTF-8
+URL: http://graphql.org https://github.com/ropensci/graphql
+BugReports: https://github.com/ropensci/graphql/issues
+LinkingTo: Rcpp
+Imports: Rcpp (>= 0.12.0), jsonlite
+LazyData: NA
+SystemRequirements: NA
+RoxygenNote: 6.0.1.9000
+Suggests: testthat
+NeedsCompilation: yes
+Packaged: 2017-06-03 11:31:46 UTC; jeroen
+Author: Jeroen Ooms [cre, aut],
+  Barret Schloerke [ctb],
+  Scott Wolchok [ctb],
+  Facebook, Inc [aut, cph] (libgraphqlparser C++ library)
+Maintainer: Jeroen Ooms <jeroen@berkeley.edu>
+Repository: CRAN
+Date/Publication: 2017-06-03 12:10:00 UTC

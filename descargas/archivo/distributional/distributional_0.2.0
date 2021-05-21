@@ -1,0 +1,50 @@
+Package: distributional
+Title: Vectorised Probability Distributions
+Version: 0.2.0
+Authors@R: 
+    c(person(given = "Mitchell",
+             family = "O'Hara-Wild",
+             role = c("aut", "cre"),
+             email = "mail@mitchelloharawild.com",
+             comment = c(ORCID = "0000-0001-6729-7695")),
+      person(given = "Earo",
+             family = "Wang",
+             role = c("ctb"),
+             comment = c(ORCID = "0000-0001-6448-5260")),
+      person(given = "Matthew",
+             family = "Kay",
+             role = c("ctb"),
+             comment = c(ORCID = "0000-0001-9446-0419")),
+      person(given = "Alex",
+             family = "Hayes",
+             role = c("aut"),
+             comment = c(ORCID = "0000-0002-4985-5160")))
+Description: Vectorised distribution objects with tools for manipulating, 
+    visualising, and using probability distributions. Designed to allow model
+    prediction outputs to return distributions rather than their parameters, 
+    allowing users to directly interact with predictive distributions in a
+    data-oriented workflow. In addition to providing generic replacements for
+    p/d/q/r functions, other useful statistics can be computed including means,
+    variances, intervals, and highest density regions.
+License: GPL-3
+Imports: vctrs (>= 0.3.0), rlang (>= 0.4.5), generics, ellipsis, stats,
+        numDeriv, ggplot2, scales, farver, digest, utils, lifecycle
+Suggests: testthat (>= 2.1.0), covr, mvtnorm, actuar, ggdist
+RdMacros: lifecycle
+URL: https://pkg.mitchelloharawild.com/distributional/,
+        https://github.com/mitchelloharawild/distributional
+BugReports: https://github.com/mitchelloharawild/distributional/issues
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2020-08-03 07:34:40 UTC; mitchell
+Author: Mitchell O'Hara-Wild [aut, cre]
+    (<https://orcid.org/0000-0001-6729-7695>),
+  Earo Wang [ctb] (<https://orcid.org/0000-0001-6448-5260>),
+  Matthew Kay [ctb] (<https://orcid.org/0000-0001-9446-0419>),
+  Alex Hayes [aut] (<https://orcid.org/0000-0002-4985-5160>)
+Maintainer: Mitchell O'Hara-Wild <mail@mitchelloharawild.com>
+Repository: CRAN
+Date/Publication: 2020-08-03 08:10:03 UTC

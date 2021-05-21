@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package celltrackR</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Motion Trajectory Analysis [R package celltrackR version 0.3.1]" />
+<meta name="citation_author1" content="Johannes Textor" />
+<meta name="citation_author2" content="Katharina Dannenberg" />
+<meta name="citation_author3" content="Jeffrey Berry" />
+<meta name="citation_author4" content="Gerhard Burger" />
+<meta name="citation_author5" content="Inge Wortel" />
+<meta name="citation_publication_date" content="2020-03-31" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=celltrackR" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=celltrackR" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="celltrackR: Motion Trajectory Analysis" />
+<meta name="og:description" content="Provides methodology to analyze cells that move in a two- or three-dimensional space. Available measures include displacement, confinement ratio, autocorrelation, straightness, turning angle, and fractal dimension. Measures can be applied to entire tracks, steps, or subtracks with varying length. While the methodology has been developed for cell trajectory analysis, it is applicable to anything that moves including animals, people, or vehicles. Some of the methodology implemented in this packages was described by: Beauchemin, Dixit, and Perelson (2007) &amp;lt;&lt;a href=&quot;https://doi.org/10.4049%2Fjimmunol.178.9.5505&quot;&gt;doi:10.4049/jimmunol.178.9.5505&lt;/a&gt;&amp;gt;, Beltman, Maree, and de Boer (2009) &amp;lt;&lt;a href=&quot;https://doi.org/10.1038%2Fnri2638&quot;&gt;doi:10.1038/nri2638&lt;/a&gt;&amp;gt;, Gneiting and Schlather (2004) &amp;lt;&lt;a href=&quot;https://doi.org/10.1137%2FS0036144501394387&quot;&gt;doi:10.1137/S0036144501394387&lt;/a&gt;&amp;gt;, Mokhtari, Mech, Zitzmann, Hasenberg, Gunzer, and Figge (2013) &amp;lt;&lt;a href=&quot;https://doi.org/10.1371%2Fjournal.pone.0080808&quot;&gt;doi:10.1371/journal.pone.0080808&lt;/a&gt;&amp;gt;, Moreau, Lemaitre, Terriac, Azar, Piel, Lennon-Dumenil, and Bousso (2012) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.immuni.2012.05.014&quot;&gt;doi:10.1016/j.immuni.2012.05.014&lt;/a&gt;&amp;gt;, Textor, Peixoto, Henrickson, Sinn, von Andrian, and Westermann (2011) &amp;lt;&lt;a href=&quot;https://doi.org/10.1073%2Fpnas.1102288108&quot;&gt;doi:10.1073/pnas.1102288108&lt;/a&gt;&amp;gt;, Textor, Sinn, and de Boer (2013) &amp;lt;&lt;a href=&quot;https://doi.org/10.1186%2F1471-2105-14-S6-S10&quot;&gt;doi:10.1186/1471-2105-14-S6-S10&lt;/a&gt;&amp;gt;, Textor, Henrickson, Mandl, von Andrian, Westermann, de Boer, and Beltman (2014) &amp;lt;&lt;a href=&quot;https://doi.org/10.1371%2Fjournal.pcbi.1003752&quot;&gt;doi:10.1371/journal.pcbi.1003752&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=celltrackR" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>celltrackR: Motion Trajectory Analysis</h2>
+<p>Provides methodology to analyze cells that move in a two- or three-dimensional
+	space. Available measures include displacement, confinement ratio, autocorrelation,
+	straightness, turning angle, and fractal dimension. Measures can be applied to entire tracks,
+	steps, or subtracks with varying length. While the methodology has been developed for
+	cell trajectory analysis, it is applicable to anything that moves including animals,
+	people, or vehicles.
+	Some of the methodology implemented in this packages was described by: 
+	Beauchemin, Dixit, and Perelson (2007) &lt;<a href="https://doi.org/10.4049%2Fjimmunol.178.9.5505">doi:10.4049/jimmunol.178.9.5505</a>&gt;, 
+	Beltman, Maree, and de Boer (2009) &lt;<a href="https://doi.org/10.1038%2Fnri2638">doi:10.1038/nri2638</a>&gt;,
+	Gneiting and Schlather (2004) &lt;<a href="https://doi.org/10.1137%2FS0036144501394387">doi:10.1137/S0036144501394387</a>&gt;,
+	Mokhtari, Mech, Zitzmann, Hasenberg, Gunzer, and Figge (2013) &lt;<a href="https://doi.org/10.1371%2Fjournal.pone.0080808">doi:10.1371/journal.pone.0080808</a>&gt;,
+	Moreau, Lemaitre, Terriac, Azar, Piel, Lennon-Dumenil, and Bousso (2012) &lt;<a href="https://doi.org/10.1016%2Fj.immuni.2012.05.014">doi:10.1016/j.immuni.2012.05.014</a>&gt;,
+	Textor, Peixoto, Henrickson, Sinn, von Andrian, and Westermann (2011) &lt;<a href="https://doi.org/10.1073%2Fpnas.1102288108">doi:10.1073/pnas.1102288108</a>&gt;,
+  Textor, Sinn, and de Boer (2013) &lt;<a href="https://doi.org/10.1186%2F1471-2105-14-S6-S10">doi:10.1186/1471-2105-14-S6-S10</a>&gt;,
+  Textor, Henrickson, Mandl, von Andrian, Westermann, de Boer, and Beltman (2014) &lt;<a href="https://doi.org/10.1371%2Fjournal.pcbi.1003752">doi:10.1371/journal.pcbi.1003752</a>&gt;.</p>
+<table summary="Package celltrackR summary">
+<tr>
+<td>Version:</td>
+<td>0.3.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.4.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>stats, grDevices, graphics, utils, <a href="../ellipse/index.html">ellipse</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../pracma/index.html">pracma</a>, <a href="../scatterplot3d/index.html">scatterplot3d</a>, <a href="../fractaldim/index.html">fractaldim</a>, <a href="../testthat/index.html">testthat</a>, <a href="../wordspace/index.html">wordspace</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../uwot/index.html">uwot</a>, <a href="../dendextend/index.html">dendextend</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../ggbeeswarm/index.html">ggbeeswarm</a>, <a href="../gridExtra/index.html">gridExtra</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-03-31</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Johannes Textor [aut, cre],
+  Katharina Dannenberg [aut],
+  Jeffrey Berry [aut],
+  Gerhard Burger [aut],
+  Inge Wortel [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Johannes Textor  &#x3c;&#x6a;&#x6f;&#x68;&#x61;&#x6e;&#x6e;&#x65;&#x73;&#x2e;&#x74;&#x65;&#x78;&#x74;&#x6f;&#x72;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x78;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://www.motilitylab.net">http://www.motilitylab.net</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">celltrackR citation info</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_celltrackR.html">celltrackR results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package celltrackR downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="celltrackR.pdf"> celltrackR.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/ana-methods.html">Track Analysis Methods</a><br/>
+<a href="vignettes/clustering.html">Clustering</a><br/>
+<a href="vignettes/QC.html">Quality Control and Preprocessing</a><br/>
+<a href="vignettes/reading-converting-data.html">Reading, Converting, and Filtering Tracking Data</a><br/>
+<a href="vignettes/simulation.html">Simulating Tracks</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/celltrackR_0.3.1.tar.gz"> celltrackR_0.3.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/celltrackR_0.3.1.zip">celltrackR_0.3.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/celltrackR_0.3.1.zip">celltrackR_0.3.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/celltrackR_0.3.1.zip">celltrackR_0.3.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/celltrackR_0.3.1.tgz">celltrackR_0.3.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/celltrackR_0.3.1.tgz">celltrackR_0.3.1.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=celltrackR"><samp>https://CRAN.R-project.org/package=celltrackR</samp></a>
+to link to this page.</p>
+</body>
+</html>

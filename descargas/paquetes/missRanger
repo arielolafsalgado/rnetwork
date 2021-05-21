@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package missRanger</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Fast Imputation of Missing Values [R package missRanger version 2.1.0]" />
+<meta name="citation_author" content="Michael Mayer" />
+<meta name="citation_publication_date" content="2019-06-30" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=missRanger" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=missRanger" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="missRanger: Fast Imputation of Missing Values" />
+<meta name="og:description" content="Alternative implementation of the beautiful 'MissForest' algorithm used to impute mixed-type data sets by chaining random forests, introduced by Stekhoven, D.J. and Buehlmann, P. (2012) &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fbioinformatics%2Fbtr597&quot;&gt;doi:10.1093/bioinformatics/btr597&lt;/a&gt;&amp;gt;. Under the hood, it uses the lightning fast random jungle package 'ranger'. Between the iterative model fitting, we offer the option of using predictive mean matching. This firstly avoids imputation with values not already present in the original data (like a value 0.3334 in 0-1 coded variable). Secondly, predictive mean matching tries to raise the variance in the resulting conditional distributions to a realistic level. This would allow e.g. to do multiple imputation when repeating the call to missRanger(). A formula interface allows to control which variables should be imputed by which." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=missRanger" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>missRanger: Fast Imputation of Missing Values</h2>
+<p>Alternative implementation of the beautiful 'MissForest' algorithm used to impute 
+    mixed-type data sets by chaining random forests, introduced by Stekhoven, D.J. and 
+    Buehlmann, P. (2012) &lt;<a href="https://doi.org/10.1093%2Fbioinformatics%2Fbtr597">doi:10.1093/bioinformatics/btr597</a>&gt;. Under the hood, it uses the 
+    lightning fast random jungle package 'ranger'. Between the iterative model fitting, 
+    we offer the option of using predictive mean matching. This firstly avoids imputation 
+    with values not already present in the original data (like a value 0.3334 in 0-1 coded variable). 
+    Secondly, predictive mean matching tries to raise the variance in the resulting conditional 
+    distributions to a realistic level. This would allow e.g. to do multiple imputation when 
+    repeating the call to missRanger(). 
+    A formula interface allows to control which variables should be imputed by which.</p>
+<table summary="Package missRanger summary">
+<tr>
+<td>Version:</td>
+<td>2.1.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>stats, <a href="../FNN/index.html">FNN</a> (&ge; 1.1), <a href="../ranger/index.html">ranger</a> (&ge; 0.10)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../mice/index.html">mice</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../survival/index.html">survival</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-06-30</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Michael Mayer [aut, cre, cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Michael Mayer  &#x3c;&#x6d;&#x61;&#x79;&#x65;&#x72;&#x6d;&#x69;&#x63;&#x68;&#x61;&#x65;&#x6c;&#x37;&#x39;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_missRanger.html">missRanger results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package missRanger downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="missRanger.pdf"> missRanger.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/vignette_missRanger.html">missRanger</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/missRanger_2.1.0.tar.gz"> missRanger_2.1.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/missRanger_2.1.0.zip">missRanger_2.1.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/missRanger_2.1.0.zip">missRanger_2.1.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/missRanger_2.1.0.zip">missRanger_2.1.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/missRanger_2.1.0.tgz">missRanger_2.1.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/missRanger_2.1.0.tgz">missRanger_2.1.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/missRanger"> missRanger archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package missRanger reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../outForest/index.html">outForest</a>, <a href="../wiseR/index.html">wiseR</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../worcs/index.html">worcs</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=missRanger"><samp>https://CRAN.R-project.org/package=missRanger</samp></a>
+to link to this page.</p>
+</body>
+</html>

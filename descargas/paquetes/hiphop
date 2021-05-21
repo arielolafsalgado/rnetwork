@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package hiphop</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Parentage Assignment using Bi-Allelic Genetic Markers [R package hiphop version 0.0.1]" />
+<meta name="citation_author1" content="Martijn van de Pol" />
+<meta name="citation_author2" content="Lyanne Brouwer" />
+<meta name="citation_author3" content="Andrew Cockburn" />
+<meta name="citation_publication_date" content="2020-08-19" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=hiphop" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=hiphop" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="hiphop: Parentage Assignment using Bi-Allelic Genetic Markers" />
+<meta name="og:description" content="Can be used for paternity and maternity assignment and outperforms conventional methods where closely related individuals occur in the pool of possible parents. The method compares the genotypes of offspring with any combination of potentials parents and scores the number of mismatches of these individuals at bi-allelic genetic markers (e.g. Single Nucleotide Polymorphisms). It elaborates on a prior exclusion method based on the Homozygous Opposite Test (HOT; Huisman 2017 &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2F1755-0998.12665&quot;&gt;doi:10.1111/1755-0998.12665&lt;/a&gt;&amp;gt;) by introducing the additional exclusion criterion HIPHOP (Homozygous Identical Parents, Heterozygous Offspring are Precluded; Cockburn et al., in revision). Potential parents are excluded if they have more mismatches than can be expected due to genotyping error and mutation, and thereby one can identify the true genetic parents and detect situations where one (or both) of the true parents is not sampled. Package 'hiphop' can deal with (a) the case where there is contextual information about parentage of the mother (i.e. a female has been seen to be involved in reproductive tasks such as nest building), but paternity is unknown (e.g. due to promiscuity), (b) where both parents need to be assigned, because there is no contextual information on which female laid eggs and which male fertilized them (e.g. polygynandrous mating system where multiple females and males deposit young in a common nest, or organisms with external fertilisation that breed in aggregations). For details: Cockburn, A., Penalba, J.V.,Jaccoud, D.,Kilian, A., Brouwer, L., Double, M.C., Margraf, N., Osmond, H.L., van de Pol, M. and Kruuk, L.E.B. (in revision). HIPHOP: improved paternity assignment among close relatives using a simple exclusion method for bi-allelic markers. Molecular Ecology Resources, DOI to be added upon acceptance." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=hiphop" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>hiphop: Parentage Assignment using Bi-Allelic Genetic Markers</h2>
+<p>Can be used for paternity and maternity assignment and outperforms 
+  conventional methods where closely related individuals occur in the pool of 
+  possible parents. The method compares the genotypes of offspring with any 
+  combination of potentials parents and scores the number of mismatches of these 
+  individuals at bi-allelic genetic markers (e.g. Single Nucleotide Polymorphisms). 
+  It elaborates on a prior exclusion method based on the Homozygous Opposite Test 
+  (HOT; Huisman 2017 &lt;<a href="https://doi.org/10.1111%2F1755-0998.12665">doi:10.1111/1755-0998.12665</a>&gt;) by introducing the 
+  additional exclusion criterion HIPHOP (Homozygous Identical Parents, 
+  Heterozygous Offspring are Precluded; Cockburn et al., in revision). Potential 
+  parents are excluded if they have more mismatches than can 
+  be expected due to genotyping error and mutation, and thereby one can identify the 
+  true genetic parents and detect situations where one (or both) of the true 
+  parents is not sampled. Package 'hiphop' can deal with (a) the case where there 
+  is contextual information about parentage of the mother (i.e. a female has been 
+  seen to be involved in reproductive tasks such as nest building), but paternity 
+  is unknown (e.g. due to promiscuity), (b) where both parents need to be assigned, 
+  because there is no contextual information on which female laid eggs and which 
+  male fertilized them (e.g. polygynandrous mating system where multiple females 
+  and males deposit young in a common nest, or organisms with external fertilisation 
+  that breed in aggregations).
+    For details: Cockburn, A., Penalba, J.V.,Jaccoud, D.,Kilian, A., Brouwer, L.,
+       Double, M.C., Margraf, N., Osmond, H.L., van de Pol, M. and Kruuk, L.E.B. 
+       (in revision). HIPHOP: improved paternity assignment among close relatives 
+       using a simple exclusion method for bi-allelic markers. 
+       Molecular Ecology Resources, DOI to be added upon acceptance.</p>
+<table summary="Package hiphop summary">
+<tr>
+<td>Version:</td>
+<td>0.0.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.6)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-08-19</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Martijn van de Pol
+    <a href="https://orcid.org/0000-0003-4102-4079"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut, cre],
+  Lyanne Brouwer <a href="https://orcid.org/0000-0001-6728-4851"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Andrew Cockburn <a href="https://orcid.org/0000-0002-8531-3350"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Martijn van de Pol  &#x3c;&#x6d;&#x61;&#x72;&#x74;&#x69;&#x6a;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x6d;&#x79;&#x73;&#x63;&#x69;&#x65;&#x6e;&#x63;&#x65;&#x2e;&#x65;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://groups.google.com/d/forum/r-hiphop">https://groups.google.com/d/forum/r-hiphop</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">hiphop citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_hiphop.html">hiphop results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package hiphop downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="hiphop.pdf"> hiphop.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/intro_hiphop.html">intro_hiphop</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/hiphop_0.0.1.tar.gz"> hiphop_0.0.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/hiphop_0.0.1.zip">hiphop_0.0.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/hiphop_0.0.1.zip">hiphop_0.0.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/hiphop_0.0.1.zip">hiphop_0.0.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/hiphop_0.0.1.tgz">hiphop_0.0.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/hiphop_0.0.1.tgz">hiphop_0.0.1.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=hiphop"><samp>https://CRAN.R-project.org/package=hiphop</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,26 @@
+Package: dplyr.teradata
+Type: Package
+Title: A 'Teradata' Backend for 'dplyr'
+Version: 0.3.1
+Description: A 'Teradata' backend for 'dplyr'. It makes it possible to operate
+  'Teradata' database <https://www.teradata.com/products-and-services/teradata-database/>
+  in the same way as manipulating data frames with 'dplyr'.
+Authors@R: c(
+    person("Koji", "Makiyama", email = "hoxo.smile@gmail.com", role = c("cre", "aut")),
+    person("Jim", "Hester", role = "ctb"))
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: dplyr (>= 0.8.0), dbplyr (>= 1.2.0)
+Imports: bit64, DBI (>= 0.8), methods, odbc (>= 1.1.6), rstudioapi (>=
+        0.7)
+Suggests: blob, covr, knitr, rmarkdown, testthat
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-03-20 09:53:14 UTC; kmakiyam
+Author: Koji Makiyama [cre, aut],
+  Jim Hester [ctb]
+Maintainer: Koji Makiyama <hoxo.smile@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-03-20 21:30:02 UTC

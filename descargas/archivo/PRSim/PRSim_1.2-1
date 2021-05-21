@@ -1,0 +1,36 @@
+Package: PRSim
+Type: Package
+Title: Stochastic Simulation of Streamflow Time Series using Phase
+        Randomization
+Version: 1.2-1
+Date: 2020-01-10
+Authors@R: c(person("Manuela", "Brunner", role = c("aut", "cre"),
+             email = "manuela.i.brunner@gmail.com", 
+             comment = c(ORCID = "0000-0001-8824-877X")), 
+             person("Reinhard", "Furrer", role = c("aut"),  
+             email = "reinhard.furrer@math.uzh.ch", 
+             comment = c(ORCID = "0000-0002-6319-2332"))) 
+Author: Manuela Brunner [aut, cre] (<https://orcid.org/0000-0001-8824-877X>),
+  Reinhard Furrer [aut] (<https://orcid.org/0000-0002-6319-2332>)
+Maintainer: Manuela Brunner <manuela.i.brunner@gmail.com>
+Description: Provides a simulation framework to simulate streamflow time series with similar
+  main characteristics as observed data. These characteristics include the distribution of daily 
+  streamflow values and their temporal correlation as expressed by short- and long-range 
+  dependence. The approach is based on the randomization of the phases of the Fourier 
+  transform or the phases of the wavelet transform. The function prsim() is applicable to single site simulation and uses the Fourier transform. 
+  The function prsim.wave() extends the approach to multiple sites and is based on the complex wavelet transform. We further use the flexible four-parameter Kappa distribution, which allows 
+  for the extrapolation to yet unobserved low and high flows. Alternatively, the empirical or any other distribution can be used. A detailed description of 
+  the simulation approach for single sites and an application example can be found 
+  in <https://www.hydrol-earth-syst-sci-discuss.net/hess-2019-142/>.
+URL: https://git.math.uzh.ch/reinhard.furrer/PRSim-devel
+BugReports: https://git.math.uzh.ch/reinhard.furrer/PRSim-devel
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0), homtest, goftest, wmtsa
+Suggests: lattice, ismev, evd, GB2
+Imports: stats
+NeedsCompilation: yes
+Packaged: 2020-01-09 16:09:42 UTC; mbrunner
+Repository: CRAN
+Date/Publication: 2020-01-10 16:50:22 UTC

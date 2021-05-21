@@ -1,0 +1,36 @@
+Package: MatchIt
+Version: 3.0.1
+Date: 2017-04-18
+Title: Nonparametric Preprocessing for Parametric Casual Inference
+Description: Selects matched samples of the original treated and
+    control groups with similar covariate distributions -- can be
+    used to match exactly on covariates, to match on propensity
+    scores, or perform a variety of other matching procedures.  The
+    package also implements a series of recommendations offered in
+    Ho, Imai, King, and Stuart (2007) <DOI:10.1093/pan/mpl013>.
+Authors@R: c(
+  person("Daniel", "Ho", , "daniel.e.ho@gmail.com", c("aut")),
+  person("Kosuke", "Imai", , "kimai@Princeton.Edu", c("aut", "cre")),
+  person("Gary", "King", , "king@harvard.edu", c("aut")),
+  person("Elizabeth", "Stuart", , "stuart@stat.harvard.edu", c("aut")),
+  person("Alex", "Whitworth", , "whitworth.alex@gmail.com", c("ctb"))
+  )
+Maintainer: Kosuke Imai <kimai@Princeton.Edu>
+Depends: R (>= 2.6)
+Imports: MASS, Matching, rgenoud
+Suggests: cem, nnet, optmatch, rpart, mgcv, WhatIf, R.rsp, testthat
+VignetteBuilder: R.rsp
+LazyLoad: yes
+LazyData: yes
+License: GPL (>= 2)
+URL: http://gking.harvard.edu/matchit
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2017-04-18 12:13:20 UTC; kimai
+Author: Daniel Ho [aut],
+  Kosuke Imai [aut, cre],
+  Gary King [aut],
+  Elizabeth Stuart [aut],
+  Alex Whitworth [ctb]
+Repository: CRAN
+Date/Publication: 2017-04-18 13:04:21 UTC

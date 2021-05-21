@@ -1,0 +1,33 @@
+Package: ggformula
+Title: Formula Interface to the Grammar of Graphics
+Description: Provides a formula interface to 'ggplot2' graphics.
+Type: Package
+Version: 0.9.2
+Authors@R: c(
+    person("Daniel", "Kaplan", email = "kaplan@macalester.edu", role = c("aut")),
+    person("Randall", "Pruim", email = "rpruim@calvin.edu", role = c("aut","cre"))
+    )
+License: MIT + file LICENSE
+LazyData: TRUE
+LazyLoad: TRUE
+Depends: R (>= 3.1), ggplot2 (>= 3.0), ggstance (>= 0.3.1)
+Imports: mosaicCore, rlang, magrittr, tibble, stringr, tidyr, grid
+Suggests: mosaicData, dplyr, lattice, mosaic, mosaicModel, testthat,
+        vdiffr, knitr, rmarkdown, lubridate, survival, broom, scales,
+        maps, maptools, rgeos, sf, purrr, ggthemes, covr, ggplot2movies
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+Encoding: UTF-8
+URL: https://github.com/ProjectMOSAIC/ggformula
+BugReports: https://github.com/ProjectMOSAIC/ggformula/issues
+Collate: 'MIpop-doc.R' 'formula2aes.R' 'gf_aux.R' 'gf_dist.R'
+        'layer_factory.R' 'gf_function2d.R' 'gf_functions.R'
+        'ggstance.R' 'ggstrings.R' 'newplots.R' 'reexports.R'
+        'scales.R' 'utils.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2019-09-05 14:32:54 UTC; rpruim
+Author: Daniel Kaplan [aut],
+  Randall Pruim [aut, cre]
+Maintainer: Randall Pruim <rpruim@calvin.edu>
+Repository: CRAN
+Date/Publication: 2019-09-05 15:10:02 UTC

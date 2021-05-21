@@ -1,0 +1,42 @@
+Package: corpus
+Version: 0.9.4
+Title: Text Corpus Analysis
+Authors@R: c(
+  person(c("Patrick", "O."), "Perry",
+         role = c("aut", "cph", "cre"),
+         email = "pperry@stern.nyu.edu"),
+  person(c("Finn", "\u00c5rup"), "Nielsen",
+         role = c("cph", "dtc"),
+         comment = "AFINN Sentiment Lexicon"),
+  person("Martin Porter and Richard Boulton",
+         role = c("ctb", "cph", "dtc"),
+         comment = "Snowball Stemmer and Stopword Lists"),
+  person("Carlo Strapparava and Alessandro Valitutti",
+         role = c("cph", "dtc"),
+         comment = "WordNet-Affect Lexicon"),
+  person("Unicode, Inc.",
+         role = c("cph", "dtc"),
+         comment = "Unicode Character Database"))
+Depends: R (>= 2.10)
+Imports: stats
+Suggests: knitr, Matrix, testthat
+Enhances: quanteda, tm
+Description: Text corpus data analysis, with full support for international text (Unicode).  Functions for reading data from newline-delimited JSON files, for normalizing and tokenizing text, for searching for term occurrences, and for computing term occurrence frequencies, including n-grams.
+License: Apache License (== 2.0) | file LICENSE
+URL: http://corpustext.com, https://github.com/patperry/r-corpus
+BugReports: https://github.com/patperry/r-corpus/issues
+LazyData: Yes
+Encoding: UTF-8
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2017-10-31 17:45:26 UTC; ptrck
+Author: Patrick O. Perry [aut, cph, cre],
+  Finn Årup Nielsen [cph, dtc] (AFINN Sentiment Lexicon),
+  Martin Porter and Richard Boulton [ctb, cph, dtc] (Snowball Stemmer and
+    Stopword Lists),
+  Carlo Strapparava and Alessandro Valitutti [cph, dtc] (WordNet-Affect
+    Lexicon),
+  Unicode, Inc. [cph, dtc] (Unicode Character Database)
+Maintainer: Patrick O. Perry <pperry@stern.nyu.edu>
+Repository: CRAN
+Date/Publication: 2017-10-31 21:31:25 UTC

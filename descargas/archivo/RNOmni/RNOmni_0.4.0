@@ -1,0 +1,22 @@
+Package: RNOmni
+Title: Omnibus Test for Genetic Association Analysis using the Rank
+        Normal Transformation
+Version: 0.4.0
+Date: 2018-05-16
+Authors@R: person("Zachary","McCaw",email="zmccaw@g.harvard.edu",role=c("aut","cre"))
+Description: Implementation of genetic association tests using the rank based inverse normal transformation (INT). The primary contribution is an omnibus test, which synthesizes two complementary INT-based approaches. In simulations against phenotypes with skewed and heavy tailed residuals, the omnibus test provided valid inference in the absence of genetic effects. When genetic effects were present, the omnibus test provided power comparable to the more efficient of the component methods. Under these settings, standard linear regression variously failed to control the type I error in the absence of genetic effects, and was underpowered in the presence of genetic effects. 
+Depends: R (>= 3.2.2)
+Imports: abind, foreach, mvtnorm, plyr, Rcpp
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Suggests: ggplot2, knitr, reshape2, rmarkdown
+VignetteBuilder: knitr
+LinkingTo: Rcpp, RcppEigen
+NeedsCompilation: yes
+Packaged: 2018-05-16 19:14:58 UTC; zmccaw
+Author: Zachary McCaw [aut, cre]
+Maintainer: Zachary McCaw <zmccaw@g.harvard.edu>
+Repository: CRAN
+Date/Publication: 2018-05-16 21:38:13 UTC

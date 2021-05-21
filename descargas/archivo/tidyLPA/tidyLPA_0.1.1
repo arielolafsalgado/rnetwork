@@ -1,0 +1,34 @@
+Type: Package
+Package: tidyLPA
+Title: Easily Carry Out Latent Profile Analysis
+Version: 0.1.1
+Authors@R: c(
+    person(c("Joshua", "M"), "Rosenberg", role = c("aut", "cre"), email = "jmichaelrosenberg@gmail.com"),
+    person(c("Jennifer", "A"), "Schmidt", role = "ctb", email = "jaschmid@msu.edu"),
+    person(c("Patrick", "N"), "Beymer", role = "ctb", email = "beymerpa@msu.edu"),
+    person(c("Rebecca", "R"), "Steingut", role = "ctb", email = "rebeccarosesteingut@gmail.com")
+    )
+Description: An interface to the 'mclust' package to easily carry out latent profile
+    analysis ("LPA"). Provides functionality to estimate commonly-specified models.
+    Follows a tidy approach, in that output is in the form of a data frame that can
+    subsequently be computed on. Also has functions to interface to the commercial 
+    'MPlus' software via the 'MplusAutomation' package.
+License: MIT + file LICENSE
+Depends: R (>= 2.10)
+Imports: dplyr, forcats, ggplot2, magrittr, mclust, purrr, readr,
+        rlang, stringr, tibble, tidyr
+Suggests: covr, devtools, knitr, MplusAutomation, rmarkdown, roxygen2,
+        testthat,
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-02-14 17:23:05 UTC; joshuarosenberg
+Author: Joshua M Rosenberg [aut, cre],
+  Jennifer A Schmidt [ctb],
+  Patrick N Beymer [ctb],
+  Rebecca R Steingut [ctb]
+Maintainer: Joshua M Rosenberg <jmichaelrosenberg@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-02-14 19:07:56 UTC

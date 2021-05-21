@@ -1,0 +1,44 @@
+Package: RPostgres
+Title: 'Rcpp' Interface to 'PostgreSQL'
+Version: 1.1.2
+Date: 2018-05-05
+Authors@R: c(
+    person("Hadley", "Wickham", role = "aut"),
+    person("Jeroen", "Ooms", role = "aut"),
+    person("Kirill", "M\u00fcller", role = c("aut", "cre"), email = "krlmlr+r@mailbox.org", comment = c(ORCID = "0000-0002-1416-3412")),
+    person("RStudio", role = "cph"),
+    person("R Consortium", role = "fnd"),
+    person("Tomoaki", "Nishiyama", role = "ctb",
+    comment = "Code for encoding vectors into strings derived from RPostgreSQL")
+    )
+Description: 
+    Fully 'DBI'-compliant 'Rcpp'-backed interface to 'PostgreSQL' <https://www.postgresql.org/>,
+    an open-source relational database.
+License: GPL-2
+URL: https://github.com/r-dbi/RPostgres
+BugReports: https://github.com/r-dbi/RPostgres/issues
+Depends: R (>= 3.1.0)
+Imports: bit64, blob (>= 1.1.1), DBI (>= 1.0.0), hms, methods, Rcpp (>=
+        0.11.4.2), withr
+Suggests: DBItest, testthat
+LinkingTo: BH, plogr (>= 0.2.0), Rcpp
+Encoding: UTF-8
+LazyLoad: true
+RoxygenNote: 6.0.1.9000
+SystemRequirements: libpq >= 9.0: libpq-dev (deb) or postgresql-devel
+        (rpm)
+Collate: 'PqDriver.R' 'PqConnection.R' 'PqResult.R' 'RPostgres-pkg.R'
+        'RcppExports.R' 'default.R' 'export.R' 'names.R' 'quote.R'
+        'tables.R' 'transactions.R' 'utils.R'
+NeedsCompilation: yes
+Packaged: 2019-12-03 07:12:17 UTC; ripley
+Author: Hadley Wickham [aut],
+  Jeroen Ooms [aut],
+  Kirill Müller [aut, cre] (<https://orcid.org/0000-0002-1416-3412>),
+  RStudio [cph],
+  R Consortium [fnd],
+  Tomoaki Nishiyama [ctb] (Code for encoding vectors into strings derived
+    from RPostgreSQL)
+Maintainer: Kirill Müller <krlmlr+r@mailbox.org>
+Repository: CRAN
+Date/Publication: 2019-12-03 12:22:03 UTC

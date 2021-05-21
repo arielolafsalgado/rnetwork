@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package redist</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Simulation Methods for Legislative Redistricting [R package redist version 2.0.2]" />
+<meta name="citation_author1" content="Ben Fifield" />
+<meta name="citation_author2" content="Christopher T. Kenny" />
+<meta name="citation_author3" content="Cory McCartan" />
+<meta name="citation_author4" content="Alexander Tarr" />
+<meta name="citation_author5" content="Jun Kawahara" />
+<meta name="citation_author6" content="Kosuke Imai" />
+<meta name="citation_publication_date" content="2020-10-13" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=redist" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=redist" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="redist: Simulation Methods for Legislative Redistricting" />
+<meta name="og:description" content="Enables researchers to sample redistricting plans from a pre-specified target distribution using Sequential Monte Carlo and Markov Chain Monte Carlo algorithms. The package allows for the implementation of various constraints in the redistricting process such as geographic compactness and population parity requirements. Tools for analysis such as computation of various summary statistics and plotting functionality are also included. The package implements methods described in Fifield, Higgins, Imai and Tarr (2020) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F10618600.2020.1739532&quot;&gt;doi:10.1080/10618600.2020.1739532&lt;/a&gt;&amp;gt;, Fifield, Imai, Kawahara, and Kenny (2020) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F2330443X.2020.1791773&quot;&gt;doi:10.1080/2330443X.2020.1791773&lt;/a&gt;&amp;gt;, and McCartan and Imai (2020) &amp;lt;arXiv: 2008.06131&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=redist" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>redist: Simulation Methods for Legislative Redistricting</h2>
+<p>Enables researchers to sample redistricting plans from a pre-specified
+    target distribution using Sequential Monte Carlo and Markov Chain Monte Carlo
+    algorithms.  The package allows for the implementation of various constraints in
+    the redistricting process such as geographic compactness and population parity
+    requirements. Tools for analysis such as computation of various summary statistics
+    and plotting functionality are also included. The package implements methods
+    described in Fifield, Higgins, Imai and Tarr (2020) &lt;<a href="https://doi.org/10.1080%2F10618600.2020.1739532">doi:10.1080/10618600.2020.1739532</a>&gt;,
+    Fifield, Imai, Kawahara, and Kenny (2020) &lt;<a href="https://doi.org/10.1080%2F2330443X.2020.1791773">doi:10.1080/2330443X.2020.1791773</a>&gt;,
+    and McCartan and Imai (2020) &lt;arXiv: 2008.06131&gt;.</p>
+<table summary="Package redist summary">
+<tr>
+<td>Version:</td>
+<td>2.0.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.11.0), <a href="../spdep/index.html">spdep</a>, <a href="../sp/index.html">sp</a>, <a href="../sf/index.html">sf</a>, <a href="../coda/index.html">coda</a>, parallel, <a href="../doParallel/index.html">doParallel</a>, <a href="../foreach/index.html">foreach</a>, <a href="../lwgeom/index.html">lwgeom</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../magrittr/index.html">magrittr</a>, <a href="../readr/index.html">readr</a>, <a href="../servr/index.html">servr</a>, <a href="../sys/index.html">sys</a>, <a href="../tibble/index.html">tibble</a>, <a href="../stringr/index.html">stringr</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a>, <a href="../RcppEigen/index.html">RcppEigen</a>, <a href="../BH/index.html">BH</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../Rmpi/index.html">Rmpi</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../igraph/index.html">igraph</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-13</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Ben Fifield [aut, cre],
+  Christopher T. Kenny [aut],
+  Cory McCartan [aut],
+  Alexander Tarr [aut],
+  Michael Higgins [ctb],
+  Jun Kawahara [aut],
+  Kosuke Imai [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Ben Fifield  &#x3c;&#x62;&#x65;&#x6e;&#x66;&#x69;&#x66;&#x69;&#x65;&#x6c;&#x64;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/kosukeimai/redist/issues">https://github.com/kosukeimai/redist/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>gmp, libxml2, python</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">redist citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="ChangeLog">ChangeLog</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_redist.html">redist results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package redist downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="redist.pdf"> redist.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Intro-to-redist.html">Intro-to-redist</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/redist_2.0.2.tar.gz"> redist_2.0.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/redist_2.0.2.zip">redist_2.0.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/redist_2.0.2.zip">redist_2.0.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/redist_2.0.2.zip">redist_2.0.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/redist_2.0.2.tgz">redist_2.0.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/redist_2.0.2.tgz">redist_2.0.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/redist"> redist archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=redist"><samp>https://CRAN.R-project.org/package=redist</samp></a>
+to link to this page.</p>
+</body>
+</html>

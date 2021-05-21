@@ -1,0 +1,34 @@
+Package: dialr
+Title: Parse, Format, and Validate International Phone Numbers
+Version: 0.3.1
+Authors@R: 
+    c(person(given = "Danny",
+             family = "Smith",
+             role = c("aut", "cre"),
+             email = "danny@gorcha.org"),
+      person(given = "The Social Research Centre",
+             role = "cph"))
+Description: Parse, format, and validate international phone
+    numbers using Google's 'libphonenumber' java library,
+    <https://github.com/google/libphonenumber>.
+License: GPL-3
+URL: https://socialresearchcentre.github.io/dialr,
+        https://github.com/socialresearchcentre/dialr,
+        https://github.com/socialresearchcentre/dialrjars,
+        https://github.com/google/libphonenumber
+BugReports: https://github.com/socialresearchcentre/dialr/issues
+Depends: R (>= 3.2.3)
+Imports: dialrjars (>= 8.10.11.1), rJava
+Suggests: covr, dplyr, knitr, pillar, rmarkdown, testthat (>= 2.1.0)
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: no
+RoxygenNote: 7.1.0
+SystemRequirements: java (>= 1.6)
+Packaged: 2020-04-04 05:10:56 UTC; danny
+Author: Danny Smith [aut, cre],
+  The Social Research Centre [cph]
+Maintainer: Danny Smith <danny@gorcha.org>
+Repository: CRAN
+Date/Publication: 2020-04-04 09:00:02 UTC

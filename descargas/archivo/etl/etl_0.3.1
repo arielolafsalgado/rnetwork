@@ -1,0 +1,29 @@
+Package: etl
+Type: Package
+Title: Extract-Transfer-Load Framework for Medium Data
+Version: 0.3.1
+Date: 2016-06-07
+Authors@R: c(
+    person("Ben", "Baumer", email = "ben.baumer@gmail.com",
+      role = c("aut", "cre")),
+    person("Carson", "Sievert", email = "cpsievert1@gmail.com", role = "ctb"))
+Maintainer: Ben Baumer <ben.baumer@gmail.com>
+Description: A framework for loading medium-sized data from
+    the Internet to a local or remote relational database management system.
+    This package itself doesn't do much more than provide a toy example and set up
+    the method structure. Packages that depend on this package will facilitate the
+    construction and maintenance of their respective databases.
+License: CC0
+LazyData: TRUE
+Imports: DBI, datasets, methods, utils
+Depends: R (>= 2.10), dplyr
+Suggests: knitr, RSQLite, RPostgreSQL, RMySQL, testthat
+URL: http://github.com/beanumber/etl
+BugReports: https://github.com/beanumber/etl/issues
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-06-08 01:42:33 UTC; bbaumer
+Author: Ben Baumer [aut, cre],
+  Carson Sievert [ctb]
+Repository: CRAN
+Date/Publication: 2016-06-08 05:47:00

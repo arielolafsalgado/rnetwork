@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package lactcurves</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=lactcurves" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="lactcurves: Lactation Curve Parameter Estimation" />
+<meta name="og:description" content="AllCurves() runs multiple lactation curve models and extracts selection criteria for each model. This package summarises the most common lactation curve models from the last century and provides a tool for researchers to quickly decide on which model fits their data best to proceed with their analysis. Start parameters were optimized based on a dataset with 1.7 million Holstein-Friesian cows. If convergence fails, the start parameters need to be manually adjusted. The models included in the package are taken from: (1) Michaelis-Menten: Michaelis, L. and M.L. Menten (1913). &amp;lt;www.plantphys.info/plant_physiology/copyright/MichaelisMentenTranslation2.pdf&amp;gt; (1a) Michaelis-Menten (Rook): Rook, A.J., J. France, and M.S. Dhanoa (1993). &amp;lt;&lt;a href=&quot;https://doi.org/10.1017%2FS002185960007684X&quot;&gt;doi:10.1017/S002185960007684X&lt;/a&gt;&amp;gt; (1b) Michaelis-Menten + exponential (Rook): Rook, A.J., J. France, and M.S. Dhanoa (1993). &amp;lt;&lt;a href=&quot;https://doi.org/10.1017%2FS002185960007684X&quot;&gt;doi:10.1017/S002185960007684X&lt;/a&gt;&amp;gt; (2) Brody (1923): Brody, S., A.C. Ragsdale, and C.W. Turner (1923). &amp;lt;&lt;a href=&quot;https://doi.org/10.1085%2Fjgp.5.6.777&quot;&gt;doi:10.1085/jgp.5.6.777&lt;/a&gt;&amp;gt; (3) Brody (1924): Brody, S., C.W. Tuner, and A.C. Ragsdale (1924). &amp;lt;&lt;a href=&quot;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2140670/&quot;&gt;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2140670/&lt;/a&gt;&amp;gt; (4) Schumacher: Schumacher, F.X. (1939) in Thornley, J.H.M. and J. France (2007). &amp;lt;&lt;a href=&quot;https://books.google.com.au/books/about/Mathematical_Models_in_Agriculture.html?id=rlwBCRSHobcC&amp;amp;amp;redir_esc=y&quot;&gt;https://books.google.com.au/books/about/Mathematical_Models_in_Agriculture.html?id=rlwBCRSHobcC&amp;amp;redir_esc=y&lt;/a&gt;&amp;gt; (4a) Schumacher (Lopez et al. 2015): Lopez, S. J. France, N.E. Odongo, R.A. McBride, E. Kebreab, O. AlZahal, B.W. McBride, and J. Dijkstra (2015). &amp;lt;&lt;a href=&quot;https://doi.org/10.3168%2Fjds.2014-8132&quot;&gt;doi:10.3168/jds.2014-8132&lt;/a&gt;&amp;gt; (5) Parabolic exponential (Adediran): Adediran, S.A., D.A. Ratkowsky, D.J. Donaghy, and A.E.O. Malau-Aduli (2012). &amp;lt;&lt;a href=&quot;https://doi.org/10.3168%2Fjds.2011-4663&quot;&gt;doi:10.3168/jds.2011-4663&lt;/a&gt;&amp;gt; (6) Wood: Wood, P.D.P. (1967). &amp;lt;&lt;a href=&quot;https://doi.org/10.1038%2F216164a0&quot;&gt;doi:10.1038/216164a0&lt;/a&gt;&amp;gt; (6a) Wood reparameterized (Dhanoa): Dhanoa, M.S. (1981). &amp;lt;&lt;a href=&quot;https://doi.org/10.1017%2FS0003356100027276&quot;&gt;doi:10.1017/S0003356100027276&lt;/a&gt;&amp;gt; (6b) Wood non-linear (Cappio-Borlino): Cappio-Borlino, A., G. Pulina, and G. Rossi (1995). &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2F0921-4488%2895%2900713-U&quot;&gt;doi:10.1016/0921-4488(95)00713-U&lt;/a&gt;&amp;gt; (7) Quadratic Polynomial (Dave): Dave, B.K. (1971) in Adediran, S.A., D.A. Ratkowsky, D.J. Donaghy, and A.E.O. Malau-Aduli (2012). &amp;lt;&lt;a href=&quot;https://doi.org/10.3168%2Fjds.2011-4663&quot;&gt;doi:10.3168/jds.2011-4663&lt;/a&gt;&amp;gt; (8) Cobby and Le Du (Vargas): Vargas, B., W.J. Koops, M. Herrero, and J.A.M Van Arendonk (2000). &amp;lt;&lt;a href=&quot;https://doi.org/10.3168%2Fjds.S0022-0302%2800%2975005-3&quot;&gt;doi:10.3168/jds.S0022-0302(00)75005-3&lt;/a&gt;&amp;gt; (9) Papajcsik and Bodero 1: Papajcsik, I.A. and J. Bodero (1988). &amp;lt;&lt;a href=&quot;https://doi.org/10.1017%2FS0003356100003275&quot;&gt;doi:10.1017/S0003356100003275&lt;/a&gt;&amp;gt; (10) Papajcsik and Bodero 2: Papajcsik, I.A. and J. Bodero (1988). &amp;lt;&lt;a href=&quot;https://doi.org/10.1017%2FS0003356100003275&quot;&gt;doi:10.1017/S0003356100003275&lt;/a&gt;&amp;gt; (11) Papajcsik and Bodero 3: Papajcsik, I.A. and J. Bodero (1988). &amp;lt;&lt;a href=&quot;https://doi.org/10.1017%2FS0003356100003275&quot;&gt;doi:10.1017/S0003356100003275&lt;/a&gt;&amp;gt; (12) Papajcsik and Bodero 4: Papajcsik, I.A. and J. Bodero (1988). &amp;lt;&lt;a href=&quot;https://doi.org/10.1017%2FS0003356100003275&quot;&gt;doi:10.1017/S0003356100003275&lt;/a&gt;&amp;gt; (13) Papajcsik and Bodero 6: Papajcsik, I.A. and J. Bodero (1988). &amp;lt;&lt;a href=&quot;https://doi.org/10.1017%2FS0003356100003275&quot;&gt;doi:10.1017/S0003356100003275&lt;/a&gt;&amp;gt; (14) Mixed log model 1 (Guo and Swalve): Guo, Z. and H.H. Swalve (1995). &amp;lt;&lt;a href=&quot;https://journal.interbull.org/index.php/ib/issue/view/11&quot;&gt;https://journal.interbull.org/index.php/ib/issue/view/11&lt;/a&gt;&amp;gt; (15) Mixed log model 3 (Guo and Swalve): Guo, Z. and H.H. Swalve (1995). &amp;lt;&lt;a href=&quot;https://journal.interbull.org/index.php/ib/issue/view/11&quot;&gt;https://journal.interbull.org/index.php/ib/issue/view/11&lt;/a&gt;&amp;gt; (16) Log-quadratic (Adediran et al. 2012): Adediran, S.A., D.A. Ratkowsky, D.J. Donaghy, and A.E.O. Malau-Aduli (2012). &amp;lt;&lt;a href=&quot;https://doi.org/10.3168%2Fjds.2011-4663&quot;&gt;doi:10.3168/jds.2011-4663&lt;/a&gt;&amp;gt; (17) Wilmink: J.B.M. Wilmink (1987). &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2F0301-6226%2887%2990003-0&quot;&gt;doi:10.1016/0301-6226(87)90003-0&lt;/a&gt;&amp;gt; (17a) modified Wilmink (Jakobsen): Jakobsen J.H., P. Madsen, J. Jensen, J. Pedersen, L.G. Christensen, and D.A. Sorensen (2002). &amp;lt;&lt;a href=&quot;https://doi.org/10.3168%2Fjds.S0022-0302%2802%2974231-8&quot;&gt;doi:10.3168/jds.S0022-0302(02)74231-8&lt;/a&gt;&amp;gt; (17b) modified Wilmink (Laurenson &amp;amp; Strucken): in preparation (2019). (18) Bicompartemental (Ferguson and Boston 1993): Ferguson, J.D., and R. Boston (1993) in Adediran, S.A., D.A. Ratkowsky, D.J. Donaghy, and A.E.O. Malau-Aduli (2012). &amp;lt;&lt;a href=&quot;https://doi.org/10.3168%2Fjds.2011-4663&quot;&gt;doi:10.3168/jds.2011-4663&lt;/a&gt;&amp;gt; (19) Dijkstra: Dijkstra, J., J. France, M.S. Dhanoa, J.A. Maas, M.D. Hanigan, A.J. Rook, and D.E. Beever (1997). &amp;lt;doi10.3168/jds.S0022-0302(97)76185-X&amp;gt; (20) Morant and Gnanasakthy (Pollott et al 2000): Pollott, G.E. and E. Gootwine (2000). &amp;lt;doi10.1017/S1357729800055028&amp;gt; (21) Morant and Gnanasakthy (Vargas et al 2000): Vargas, B., W.J. Koops, M. Herrero, and J.A.M Van Arendonk (2000). &amp;lt;&lt;a href=&quot;https://doi.org/10.3168%2Fjds.S0022-0302%2800%2975005-3&quot;&gt;doi:10.3168/jds.S0022-0302(00)75005-3&lt;/a&gt;&amp;gt; (22) Morant and Gnanasakthy (Adediran et al. 2012): Adediran, S.A., D.A. Ratkowsky, D.J. Donaghy, and A.E.O. Malau-Aduli (2012). &amp;lt;&lt;a href=&quot;https://doi.org/10.3168%2Fjds.2011-4663&quot;&gt;doi:10.3168/jds.2011-4663&lt;/a&gt;&amp;gt; (23) Khandekar (Guo and Swalve): Guo, Z. and H.H. Swalve (1995). &amp;lt;&lt;a href=&quot;https://journal.interbull.org/index.php/ib/issue/view/11&quot;&gt;https://journal.interbull.org/index.php/ib/issue/view/11&lt;/a&gt;&amp;gt; (24) Ali and Schaeffer: Ali, T.E. and L.R. Schaeffer (1987). &amp;lt;&lt;a href=&quot;https://www.nrcresearchpress.com/doi/pdf/10.4141/cjas87-067&quot;&gt;https://www.nrcresearchpress.com/doi/pdf/10.4141/cjas87-067&lt;/a&gt;&amp;gt; (25) Fractional Polynomial (Elvira et al. 2013): Elvira, L., F. Hernandez, P. Cuesta, S. Cano, J.-V. Gonzalez-Martin, and S. Astiz (2012). &amp;lt;&lt;a href=&quot;https://doi.org/10.1017%2FS175173111200239X&quot;&gt;doi:10.1017/S175173111200239X&lt;/a&gt;&amp;gt; (26) Pollott multiplicative (Elvira): Elvira, L., F. Hernandez, P. Cuesta, S. Cano, J.-V. Gonzalez-Martin, and S. Astiz (2012). &amp;lt;&lt;a href=&quot;https://doi.org/10.1017%2FS175173111200239X&quot;&gt;doi:10.1017/S175173111200239X&lt;/a&gt;&amp;gt; (27) Pollott modified: Adediran, S.A., D.A. Ratkowsky, D.J. Donaghy, and A.E.O. Malau-Aduli (2012). &amp;lt;&lt;a href=&quot;https://doi.org/10.3168%2Fjds.2011-4663&quot;&gt;doi:10.3168/jds.2011-4663&lt;/a&gt;&amp;gt; (28) Monophasic Grossman: Grossman, M. and W.J. Koops (1988). &amp;lt;&lt;a href=&quot;https://doi.org/10.3168%2Fjds.S0022-0302%2888%2979723-4&quot;&gt;doi:10.3168/jds.S0022-0302(88)79723-4&lt;/a&gt;&amp;gt; (29) Monophasic Power Transformed (Grossman 1999): Grossman, M., S.M. Hartz, and W.J. Koops (1999). &amp;lt;&lt;a href=&quot;https://doi.org/10.3168%2Fjds.S0022-0302%2899%2975464-0&quot;&gt;doi:10.3168/jds.S0022-0302(99)75464-0&lt;/a&gt;&amp;gt; (30) Diphasic (Grossman 1999): Grossman, M., S.M. Hartz, and W.J. Koops (1999). &amp;lt;&lt;a href=&quot;https://doi.org/10.3168%2Fjds.S0022-0302%2899%2975464-0&quot;&gt;doi:10.3168/jds.S0022-0302(99)75464-0&lt;/a&gt;&amp;gt; (31) Diphasic Power Transformed (Grossman 1999): Grossman, M., S.M. Hartz, and W.J. Koops (1999). &amp;lt;&lt;a href=&quot;https://doi.org/10.3168%2Fjds.S0022-0302%2899%2975464-0&quot;&gt;doi:10.3168/jds.S0022-0302(99)75464-0&lt;/a&gt;&amp;gt; (32) Legendre Polynomial (3th order): Jakobsen J.H., P. Madsen, J. Jensen, J. Pedersen, L.G. Christensen, and D.A. Sorensen (2002). &amp;lt;&lt;a href=&quot;https://doi.org/10.3168%2Fjds.S0022-0302%2802%2974231-8&quot;&gt;doi:10.3168/jds.S0022-0302(02)74231-8&lt;/a&gt;&amp;gt; (33) Legendre Polynomial (4th order): Jakobsen J.H., P. Madsen, J. Jensen, J. Pedersen, L.G. Christensen, and D.A. Sorensen (2002). &amp;lt;&lt;a href=&quot;https://doi.org/10.3168%2Fjds.S0022-0302%2802%2974231-8&quot;&gt;doi:10.3168/jds.S0022-0302(02)74231-8&lt;/a&gt;&amp;gt; (34) Legendre + Wilmink (Lidauer): Lidauer, M. and E.A. Mantysaari (1999). &amp;lt;&lt;a href=&quot;https://journal.interbull.org/index.php/ib/article/view/417&quot;&gt;https://journal.interbull.org/index.php/ib/article/view/417&lt;/a&gt;&amp;gt; (35) Natural Cubic Spline (3 percentiles): White, I.M.S., R. Thompson, and S. Brotherstone (1999). &amp;lt;&lt;a href=&quot;https://doi.org/10.3168%2Fjds.S0022-0302%2899%2975277-X&quot;&gt;doi:10.3168/jds.S0022-0302(99)75277-X&lt;/a&gt;&amp;gt; (36) Natural Cubic Spline (4 percentiles): White, I.M.S., R. Thompson, and S. Brotherstone (1999). &amp;lt;&lt;a href=&quot;https://doi.org/10.3168%2Fjds.S0022-0302%2899%2975277-X&quot;&gt;doi:10.3168/jds.S0022-0302(99)75277-X&lt;/a&gt;&amp;gt; (37) Natural Cubic Spline (5 percentiles): White, I.M.S., R. Thompson, and S. Brotherstone (1999) &amp;lt;&lt;a href=&quot;https://doi.org/10.3168%2Fjds.S0022-0302%2899%2975277-X&quot;&gt;doi:10.3168/jds.S0022-0302(99)75277-X&lt;/a&gt;&amp;gt; (38) Natural Cubic Spline (defined knots according to Harrell 2001): Jr. Harrell, F.E. (2001). &amp;lt;&lt;a href=&quot;https://link.springer.com/book/10.1007/978-3-319-19425-7&quot;&gt;https://link.springer.com/book/10.1007/978-3-319-19425-7&lt;/a&gt;&amp;gt; The selection criteria measure the goodness of fit of the model and include: Residual standard error (RSE), R-square (R2), log likelihood, Akaike information criterion (AIC), Akaike information criterion corrected (AICC), Bayesian Information Criterion (BIC), Durbin Watson coefficient (DW). The following model parameters are included: Residual sum of squares (RSS), Residual standard deviation (RSD), F-value (F) based on F-ratio test." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=lactcurves" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>lactcurves: Lactation Curve Parameter Estimation</h2>
+<p>AllCurves() runs multiple lactation curve models and extracts selection criteria for each model.
+  This package summarises the most common lactation curve models from the last century and provides a tool 
+  for researchers to quickly decide on which model fits their data best to proceed with their analysis.
+  Start parameters were optimized based on a dataset with 1.7 million Holstein-Friesian cows. If convergence fails, 
+  the start parameters need to be manually adjusted.
+  The models included in the package are taken from:
+  (1) Michaelis-Menten: Michaelis, L. and M.L. Menten (1913). &lt;www.plantphys.info/plant_physiology/copyright/MichaelisMentenTranslation2.pdf&gt;
+  (1a) Michaelis-Menten (Rook): Rook, A.J., J. France, and M.S. Dhanoa (1993). &lt;<a href="https://doi.org/10.1017%2FS002185960007684X">doi:10.1017/S002185960007684X</a>&gt;
+  (1b) Michaelis-Menten + exponential (Rook): Rook, A.J., J. France, and M.S. Dhanoa (1993). &lt;<a href="https://doi.org/10.1017%2FS002185960007684X">doi:10.1017/S002185960007684X</a>&gt;
+  (2) Brody (1923): Brody, S., A.C. Ragsdale, and C.W. Turner (1923). &lt;<a href="https://doi.org/10.1085%2Fjgp.5.6.777">doi:10.1085/jgp.5.6.777</a>&gt;
+  (3) Brody (1924): Brody, S., C.W. Tuner, and A.C. Ragsdale (1924). &lt;<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2140670/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2140670/</a>&gt;
+  (4) Schumacher: Schumacher, F.X. (1939) in Thornley, J.H.M. and J. France (2007). &lt;<a href="https://books.google.com.au/books/about/Mathematical_Models_in_Agriculture.html?id=rlwBCRSHobcC&amp;amp;redir_esc=y">https://books.google.com.au/books/about/Mathematical_Models_in_Agriculture.html?id=rlwBCRSHobcC&amp;redir_esc=y</a>&gt;
+  (4a) Schumacher (Lopez et al. 2015): Lopez, S. J. France, N.E. Odongo, R.A. McBride, E. Kebreab, O. AlZahal, B.W. McBride, and J. Dijkstra (2015). &lt;<a href="https://doi.org/10.3168%2Fjds.2014-8132">doi:10.3168/jds.2014-8132</a>&gt;
+  (5) Parabolic exponential (Adediran): Adediran, S.A., D.A. Ratkowsky, D.J. Donaghy, and A.E.O. Malau-Aduli (2012). &lt;<a href="https://doi.org/10.3168%2Fjds.2011-4663">doi:10.3168/jds.2011-4663</a>&gt;
+  (6) Wood: Wood, P.D.P. (1967). &lt;<a href="https://doi.org/10.1038%2F216164a0">doi:10.1038/216164a0</a>&gt;
+  (6a) Wood reparameterized (Dhanoa): Dhanoa, M.S. (1981). &lt;<a href="https://doi.org/10.1017%2FS0003356100027276">doi:10.1017/S0003356100027276</a>&gt;
+  (6b) Wood non-linear (Cappio-Borlino): Cappio-Borlino, A., G. Pulina, and G. Rossi (1995). &lt;<a href="https://doi.org/10.1016%2F0921-4488%2895%2900713-U">doi:10.1016/0921-4488(95)00713-U</a>&gt;
+  (7) Quadratic Polynomial (Dave): Dave, B.K. (1971) in Adediran, S.A., D.A. Ratkowsky, D.J. Donaghy, and A.E.O. Malau-Aduli (2012). &lt;<a href="https://doi.org/10.3168%2Fjds.2011-4663">doi:10.3168/jds.2011-4663</a>&gt;
+  (8) Cobby and Le Du (Vargas): Vargas, B., W.J. Koops, M. Herrero, and J.A.M Van Arendonk (2000). &lt;<a href="https://doi.org/10.3168%2Fjds.S0022-0302%2800%2975005-3">doi:10.3168/jds.S0022-0302(00)75005-3</a>&gt;
+  (9) Papajcsik and Bodero 1: Papajcsik, I.A. and J. Bodero (1988). &lt;<a href="https://doi.org/10.1017%2FS0003356100003275">doi:10.1017/S0003356100003275</a>&gt;
+  (10) Papajcsik and Bodero 2: Papajcsik, I.A. and J. Bodero (1988). &lt;<a href="https://doi.org/10.1017%2FS0003356100003275">doi:10.1017/S0003356100003275</a>&gt;
+  (11) Papajcsik and Bodero 3: Papajcsik, I.A. and J. Bodero (1988). &lt;<a href="https://doi.org/10.1017%2FS0003356100003275">doi:10.1017/S0003356100003275</a>&gt;
+  (12) Papajcsik and Bodero 4: Papajcsik, I.A. and J. Bodero (1988). &lt;<a href="https://doi.org/10.1017%2FS0003356100003275">doi:10.1017/S0003356100003275</a>&gt;
+  (13) Papajcsik and Bodero 6: Papajcsik, I.A. and J. Bodero (1988). &lt;<a href="https://doi.org/10.1017%2FS0003356100003275">doi:10.1017/S0003356100003275</a>&gt;
+  (14) Mixed log model 1 (Guo and Swalve): Guo, Z. and H.H. Swalve (1995). &lt;<a href="https://journal.interbull.org/index.php/ib/issue/view/11">https://journal.interbull.org/index.php/ib/issue/view/11</a>&gt;
+  (15) Mixed log model 3 (Guo and Swalve): Guo, Z. and H.H. Swalve (1995). &lt;<a href="https://journal.interbull.org/index.php/ib/issue/view/11">https://journal.interbull.org/index.php/ib/issue/view/11</a>&gt;
+  (16) Log-quadratic (Adediran et al. 2012): Adediran, S.A., D.A. Ratkowsky, D.J. Donaghy, and A.E.O. Malau-Aduli (2012). &lt;<a href="https://doi.org/10.3168%2Fjds.2011-4663">doi:10.3168/jds.2011-4663</a>&gt;
+  (17) Wilmink: J.B.M. Wilmink (1987). &lt;<a href="https://doi.org/10.1016%2F0301-6226%2887%2990003-0">doi:10.1016/0301-6226(87)90003-0</a>&gt;
+  (17a) modified Wilmink (Jakobsen): Jakobsen J.H., P. Madsen, J. Jensen, J. Pedersen, L.G. Christensen, and D.A. Sorensen (2002). &lt;<a href="https://doi.org/10.3168%2Fjds.S0022-0302%2802%2974231-8">doi:10.3168/jds.S0022-0302(02)74231-8</a>&gt;
+  (17b) modified Wilmink (Laurenson &amp; Strucken): in preparation (2019).
+  (18) Bicompartemental (Ferguson and Boston 1993): Ferguson, J.D., and R. Boston (1993) in Adediran, S.A., D.A. Ratkowsky, D.J. Donaghy, and A.E.O. Malau-Aduli (2012). &lt;<a href="https://doi.org/10.3168%2Fjds.2011-4663">doi:10.3168/jds.2011-4663</a>&gt;
+  (19) Dijkstra: Dijkstra, J., J. France, M.S. Dhanoa, J.A. Maas, M.D. Hanigan, A.J. Rook, and D.E. Beever (1997). &lt;doi10.3168/jds.S0022-0302(97)76185-X&gt;
+  (20) Morant and Gnanasakthy (Pollott et al 2000): Pollott, G.E. and E. Gootwine (2000). &lt;doi10.1017/S1357729800055028&gt;
+  (21) Morant and Gnanasakthy (Vargas et al 2000): Vargas, B., W.J. Koops, M. Herrero, and J.A.M Van Arendonk (2000). &lt;<a href="https://doi.org/10.3168%2Fjds.S0022-0302%2800%2975005-3">doi:10.3168/jds.S0022-0302(00)75005-3</a>&gt;
+  (22) Morant and Gnanasakthy (Adediran et al. 2012): Adediran, S.A., D.A. Ratkowsky, D.J. Donaghy, and A.E.O. Malau-Aduli (2012). &lt;<a href="https://doi.org/10.3168%2Fjds.2011-4663">doi:10.3168/jds.2011-4663</a>&gt;
+  (23) Khandekar (Guo and Swalve): Guo, Z. and H.H. Swalve (1995). &lt;<a href="https://journal.interbull.org/index.php/ib/issue/view/11">https://journal.interbull.org/index.php/ib/issue/view/11</a>&gt;
+  (24) Ali and Schaeffer: Ali, T.E. and L.R. Schaeffer (1987). &lt;<a href="https://www.nrcresearchpress.com/doi/pdf/10.4141/cjas87-067">https://www.nrcresearchpress.com/doi/pdf/10.4141/cjas87-067</a>&gt;
+  (25) Fractional Polynomial (Elvira et al. 2013): Elvira, L., F. Hernandez, P. Cuesta, S. Cano, J.-V. Gonzalez-Martin, and S. Astiz (2012). &lt;<a href="https://doi.org/10.1017%2FS175173111200239X">doi:10.1017/S175173111200239X</a>&gt;
+  (26) Pollott multiplicative (Elvira): Elvira, L., F. Hernandez, P. Cuesta, S. Cano, J.-V. Gonzalez-Martin, and S. Astiz (2012). &lt;<a href="https://doi.org/10.1017%2FS175173111200239X">doi:10.1017/S175173111200239X</a>&gt;
+  (27) Pollott modified: Adediran, S.A., D.A. Ratkowsky, D.J. Donaghy, and A.E.O. Malau-Aduli (2012). &lt;<a href="https://doi.org/10.3168%2Fjds.2011-4663">doi:10.3168/jds.2011-4663</a>&gt;
+  (28) Monophasic Grossman: Grossman, M. and W.J. Koops (1988). &lt;<a href="https://doi.org/10.3168%2Fjds.S0022-0302%2888%2979723-4">doi:10.3168/jds.S0022-0302(88)79723-4</a>&gt;
+  (29) Monophasic Power Transformed (Grossman 1999): Grossman, M., S.M. Hartz, and W.J. Koops (1999). &lt;<a href="https://doi.org/10.3168%2Fjds.S0022-0302%2899%2975464-0">doi:10.3168/jds.S0022-0302(99)75464-0</a>&gt;
+  (30) Diphasic (Grossman 1999): Grossman, M., S.M. Hartz, and W.J. Koops (1999). &lt;<a href="https://doi.org/10.3168%2Fjds.S0022-0302%2899%2975464-0">doi:10.3168/jds.S0022-0302(99)75464-0</a>&gt;
+  (31) Diphasic Power Transformed (Grossman 1999): Grossman, M., S.M. Hartz, and W.J. Koops (1999). &lt;<a href="https://doi.org/10.3168%2Fjds.S0022-0302%2899%2975464-0">doi:10.3168/jds.S0022-0302(99)75464-0</a>&gt;
+  (32) Legendre Polynomial (3th order): Jakobsen J.H., P. Madsen, J. Jensen, J. Pedersen, L.G. Christensen, and D.A. Sorensen (2002). &lt;<a href="https://doi.org/10.3168%2Fjds.S0022-0302%2802%2974231-8">doi:10.3168/jds.S0022-0302(02)74231-8</a>&gt;
+  (33) Legendre Polynomial (4th order): Jakobsen J.H., P. Madsen, J. Jensen, J. Pedersen, L.G. Christensen, and D.A. Sorensen (2002). &lt;<a href="https://doi.org/10.3168%2Fjds.S0022-0302%2802%2974231-8">doi:10.3168/jds.S0022-0302(02)74231-8</a>&gt;
+  (34) Legendre + Wilmink (Lidauer): Lidauer, M. and E.A. Mantysaari (1999). &lt;<a href="https://journal.interbull.org/index.php/ib/article/view/417">https://journal.interbull.org/index.php/ib/article/view/417</a>&gt;
+  (35) Natural Cubic Spline (3 percentiles): White, I.M.S., R. Thompson, and S. Brotherstone (1999). &lt;<a href="https://doi.org/10.3168%2Fjds.S0022-0302%2899%2975277-X">doi:10.3168/jds.S0022-0302(99)75277-X</a>&gt;
+  (36) Natural Cubic Spline (4 percentiles): White, I.M.S., R. Thompson, and S. Brotherstone (1999). &lt;<a href="https://doi.org/10.3168%2Fjds.S0022-0302%2899%2975277-X">doi:10.3168/jds.S0022-0302(99)75277-X</a>&gt;
+  (37) Natural Cubic Spline (5 percentiles): White, I.M.S., R. Thompson, and S. Brotherstone (1999) &lt;<a href="https://doi.org/10.3168%2Fjds.S0022-0302%2899%2975277-X">doi:10.3168/jds.S0022-0302(99)75277-X</a>&gt;
+  (38) Natural Cubic Spline (defined knots according to Harrell 2001): Jr. Harrell, F.E. (2001). &lt;<a href="https://link.springer.com/book/10.1007/978-3-319-19425-7">https://link.springer.com/book/10.1007/978-3-319-19425-7</a>&gt;
+  The selection criteria measure the goodness of fit of the model and include:
+  Residual standard error (RSE),
+  R-square (R2),
+  log likelihood,
+  Akaike information criterion (AIC),
+  Akaike information criterion corrected (AICC),
+  Bayesian Information Criterion (BIC),
+  Durbin Watson coefficient (DW).
+  The following model parameters are included: 
+  Residual sum of squares (RSS),
+  Residual standard deviation (RSD),
+  F-value (F) based on F-ratio test.</p>
+<table summary="Package lactcurves summary">
+<tr>
+<td>Version:</td>
+<td>1.0.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td><a href="../orthopolynom/index.html">orthopolynom</a>, splines</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-08-20</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Eva M. Strucken</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Eva M. Strucken  &#x3c;&#x65;&#x73;&#x74;&#x72;&#x75;&#x63;&#x6b;&#x65;&#x20;&#x61;&#x74;&#x20;&#x75;&#x6e;&#x65;&#x2e;&#x65;&#x64;&#x75;&#x2e;&#x61;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_lactcurves.html">lactcurves results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package lactcurves downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="lactcurves.pdf"> lactcurves.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/lactcurves_1.0.0.tar.gz"> lactcurves_1.0.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/lactcurves_1.0.0.zip">lactcurves_1.0.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/lactcurves_1.0.0.zip">lactcurves_1.0.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/lactcurves_1.0.0.zip">lactcurves_1.0.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/lactcurves_1.0.0.tgz">lactcurves_1.0.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/lactcurves_1.0.0.tgz">lactcurves_1.0.0.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=lactcurves"><samp>https://CRAN.R-project.org/package=lactcurves</samp></a>
+to link to this page.</p>
+</body>
+</html>

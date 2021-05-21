@@ -1,0 +1,73 @@
+Package: sarsop
+Type: Package
+Title: Approximate POMDP Planning Software
+Version: 0.6.2
+Authors@R: c(
+    person("Carl", "Boettiger", 
+            email = "cboettig@gmail.com", 
+            role = c("cre", "aut", "cph"),
+            comment = c(ORCID = "0000-0002-1642-628X")),
+    person("Jeroen", "Ooms", role = c("aut")),
+    person("Milad", "Memarzadeh", role = "aut"),
+    person("Hanna", "Kurniawati", role = c("ctb", "cph")),
+    person("David", "Hsu", role = c("ctb", "cph")),
+    person("Hanna", "Kurniawati", role = c("ctb", "cph")),
+    person("Wee", "Sun Lee", role = c("ctb", "cph")),
+    person("Yanzhu", "Du", role = "ctb"),
+    person("Xan", "Huang", role = "ctb"),
+    person("Trey", "Smith", role = c("ctb", "cph")),
+    person("Tony", "Cassandra", role = c("ctb", "cph")),
+    person("Lee", "Thomason", role = c("ctb", "cph")),
+    person("Carl", "Kindman", role = c("ctb", "cph")),
+    person("Le", "Trong Dao", role = c("ctb", "cph")),
+    person("Amit", "Jain", role= c("ctb", "cph")),
+    person("Rong", "Nan", role = c("ctb", "cph")),
+    person("Ulrich", "Drepper", role = c("ctb")),
+    person("", "Free Software Foundation", role = "cph"),
+    person("Tyge", "Lovset", role = c("ctb", "cph")),
+    person("Yves", "Berquin", role = c("ctb", "cph")),
+    person("Benjamin", "Grüdelbach", role = "ctb"),
+    person("", "RSA Data Security, Inc.", role = "cph")
+    )
+Description: A toolkit for Partially Observed Markov Decision Processes (POMDP). Provides
+    bindings to C++ libraries implementing the algorithm SARSOP (Successive Approximations
+    of the Reachable Space under Optimal Policies) and described in Kurniawati et al (2008),
+    <doi:10.15607/RSS.2008.IV.009>.  This package also provides a high-level interface
+    for generating, solving and simulating POMDP problems and their solutions.
+License: GPL-2
+URL: https://github.com/boettiger-lab/sarsop
+BugReports: https://github.com/boettiger-lab/sarsop/issues
+RoxygenNote: 7.1.0
+Imports: xml2, parallel, processx, digest, Matrix
+Suggests: testthat, roxygen2, knitr, tidyverse, covr, spelling
+LinkingTo: BH
+Encoding: UTF-8
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2020-06-25 23:33:11 UTC; cboettig
+Author: Carl Boettiger [cre, aut, cph]
+    (<https://orcid.org/0000-0002-1642-628X>),
+  Jeroen Ooms [aut],
+  Milad Memarzadeh [aut],
+  Hanna Kurniawati [ctb, cph],
+  David Hsu [ctb, cph],
+  Hanna Kurniawati [ctb, cph],
+  Wee Sun Lee [ctb, cph],
+  Yanzhu Du [ctb],
+  Xan Huang [ctb],
+  Trey Smith [ctb, cph],
+  Tony Cassandra [ctb, cph],
+  Lee Thomason [ctb, cph],
+  Carl Kindman [ctb, cph],
+  Le Trong Dao [ctb, cph],
+  Amit Jain [ctb, cph],
+  Rong Nan [ctb, cph],
+  Ulrich Drepper [ctb],
+  Free Software Foundation [cph],
+  Tyge Lovset [ctb, cph],
+  Yves Berquin [ctb, cph],
+  Benjamin Grüdelbach [ctb],
+  RSA Data Security, Inc. [cph]
+Maintainer: Carl Boettiger <cboettig@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-06-26 08:50:09 UTC

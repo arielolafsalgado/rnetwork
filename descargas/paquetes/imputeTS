@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package imputeTS</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Time Series Missing Value Imputation [R package imputeTS version 3.1]" />
+<meta name="citation_author1" content="Steffen Moritz" />
+<meta name="citation_author2" content="Sebastian Gatscha" />
+<meta name="citation_publication_date" content="2020-08-04" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=imputeTS" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=imputeTS" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="imputeTS: Time Series Missing Value Imputation" />
+<meta name="og:description" content="Imputation (replacement) of missing values in univariate time series. Offers several imputation functions and missing data plots. Available imputation algorithms include: 'Mean', 'LOCF', 'Interpolation', 'Moving Average', 'Seasonal Decomposition', 'Kalman Smoothing on Structural Time Series models', 'Kalman Smoothing on ARIMA models'. Published in Moritz and Bartz-Beielstein (2017) &amp;lt;&lt;a href=&quot;https://doi.org/10.32614%2FRJ-2017-009&quot;&gt;doi:10.32614/RJ-2017-009&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=imputeTS" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>imputeTS: Time Series Missing Value Imputation</h2>
+<p>Imputation (replacement) of missing values 
+             in univariate time series. 
+             Offers several imputation functions
+             and missing data plots. 
+             Available imputation algorithms include: 
+            'Mean', 'LOCF', 'Interpolation', 
+            'Moving Average', 'Seasonal Decomposition', 
+            'Kalman Smoothing on Structural Time Series models',
+            'Kalman Smoothing on ARIMA models'. Published in Moritz and Bartz-Beielstein (2017) 
+            &lt;<a href="https://doi.org/10.32614%2FRJ-2017-009">doi:10.32614/RJ-2017-009</a>&gt;.</p>
+<table summary="Package imputeTS summary">
+<tr>
+<td>Version:</td>
+<td>3.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0.1)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>utils, stats, grDevices, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../ggtext/index.html">ggtext</a>, <a href="../stinepack/index.html">stinepack</a>, <a href="../forecast/index.html">forecast</a>, <a href="../magrittr/index.html">magrittr</a>, <a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../R.rsp/index.html">R.rsp</a>, <a href="../knitr/index.html">knitr</a>, <a href="../zoo/index.html">zoo</a>, <a href="../timeSeries/index.html">timeSeries</a>, <a href="../tis/index.html">tis</a>, <a href="../xts/index.html">xts</a>, <a href="../tibble/index.html">tibble</a>, <a href="../tsibble/index.html">tsibble</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-08-04</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Steffen Moritz <a href="https://orcid.org/0000-0002-0085-1804"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre, cph],
+  Sebastian Gatscha [aut],
+  Earo Wang <a href="https://orcid.org/0000-0001-6448-5260"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Steffen Moritz  &#x3c;&#x73;&#x74;&#x65;&#x66;&#x66;&#x65;&#x6e;&#x2e;&#x6d;&#x6f;&#x72;&#x69;&#x74;&#x7a;&#x31;&#x30;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/SteffenMoritz/imputeTS/issues">https://github.com/SteffenMoritz/imputeTS/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/SteffenMoritz/imputeTS">https://github.com/SteffenMoritz/imputeTS</a>,
+<a href="https://steffenmoritz.github.io/imputeTS/">https://steffenmoritz.github.io/imputeTS/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">imputeTS citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/MissingData.html">MissingData</a>, <a href="../../views/TimeSeries.html">TimeSeries</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_imputeTS.html">imputeTS results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package imputeTS downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="imputeTS.pdf"> imputeTS.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Cheat_Sheet_imputeTS.pdf">Cheat Sheet imputeTS</a><br/>
+<a href="vignettes/imputeTS-Time-Series-Missing-Value-Imputation-in-R.pdf">imputeTS: Time Series Missing Value Imputation in R</a><br/>
+<a href="vignettes/gallery_visualizations.html">Gallery: Times Series Missing Data Visualizations</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/imputeTS_3.1.tar.gz"> imputeTS_3.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/imputeTS_3.1.zip">imputeTS_3.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/imputeTS_3.1.zip">imputeTS_3.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/imputeTS_3.1.zip">imputeTS_3.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/imputeTS_3.1.tgz">imputeTS_3.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/imputeTS_3.1.tgz">imputeTS_3.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/imputeTS"> imputeTS archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package imputeTS reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../EventDetectR/index.html">EventDetectR</a>, <a href="../gimme/index.html">gimme</a>, <a href="../hpiR/index.html">hpiR</a>, <a href="../imputeTestbench/index.html">imputeTestbench</a>, <a href="../RiverLoad/index.html">RiverLoad</a>, <a href="../TrendSLR/index.html">TrendSLR</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../baytrends/index.html">baytrends</a>, <a href="../epimdr/index.html">epimdr</a>, <a href="../naniar/index.html">naniar</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=imputeTS"><samp>https://CRAN.R-project.org/package=imputeTS</samp></a>
+to link to this page.</p>
+</body>
+</html>

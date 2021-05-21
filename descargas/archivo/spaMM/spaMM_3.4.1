@@ -1,0 +1,38 @@
+Package: spaMM
+Type: Package
+Title: Mixed-Effect Models, Particularly Spatial Models
+Encoding: UTF-8
+Version: 3.4.1
+Date: 2020-08-11
+Authors@R: c(person("François", "Rousset", role = c("aut", "cre", "cph"),
+                     email = "francois.rousset@umontpellier.fr",
+                     comment = c(ORCID = "0000-0003-4670-0371")),
+              person("Jean-Baptiste", "Ferdy", role = c("aut","cph")),
+              person("Alexandre", "Courtiol", role = "aut",
+                     comment = c(ORCID = "0000-0003-0637-2959")),
+              person("GSL authors", role = "ctb", comment = "src/gsl_bessel.*")
+              )
+Maintainer: François Rousset <francois.rousset@umontpellier.fr>
+Imports: methods, stats, graphics, Matrix, MASS, proxy, Rcpp (>=
+        0.12.10), nlme, nloptr, minqa, pbapply, crayon, gmp, ROI, boot
+LinkingTo: Rcpp, RcppEigen (>= 0.3.3.5.0)
+Depends: R (>= 3.2.0)
+Suggests: maps, testthat, lme4, rsae, rcdd, pedigreemm, foreach,
+        multilevel, Infusion (>= 1.3.0), IsoriX (>= 0.8.1), blackbox
+        (>= 1.1.25), RSpectra, ROI.plugin.glpk
+Enhances: multcomp
+NeedsCompilation: yes
+Description: Inference based on mixed-effect models, including generalized linear mixed models with spatial correlations and models with non-Gaussian random effects (e.g., Beta). Various approximations of likelihood or restricted likelihood are implemented, in particular Laplace approximation and h-likelihood (Lee and Nelder 2001 <doi:10.1093/biomet/88.4.987>). Both classical geostatistical models, and Markov random field models on irregular grids (as considered in the 'INLA' package, <http://www.r-inla.org>), can be fitted. Variation in residual variance (heteroscedasticity) can itself be represented by a mixed-effect model. 
+License: CeCILL-2
+URL: https://www.r-project.org,
+        https://kimura.univ-montp2.fr/~rousset/spaMM.htm
+RoxygenNote: 6.1.1
+ByteCompile: true
+Packaged: 2020-08-11 15:59:17 UTC; francois.rousset
+Author: François Rousset [aut, cre, cph]
+    (<https://orcid.org/0000-0003-4670-0371>),
+  Jean-Baptiste Ferdy [aut, cph],
+  Alexandre Courtiol [aut] (<https://orcid.org/0000-0003-0637-2959>),
+  GSL authors [ctb] (src/gsl_bessel.*)
+Repository: CRAN
+Date/Publication: 2020-08-11 19:20:02 UTC

@@ -1,0 +1,29 @@
+Package: dfConn
+Type: Package
+Title: Dynamic Functional Connectivity Analysis
+Version: 0.2.0
+Authors@R: c(person("Zikai", "Lin", email = "ziklin@iu.edu", role = c("aut", "cre")),
+            person("Maria", "Kudela", email = "maria.kudela@gmail.com", role = c("aut")),
+            person("Jaroslaw","Harezlak",email = "harezlak@iu.edu", role = c("aut")),
+            person("Mario","Dzemidzic", email = "mdzemidz@iupui.edu", role = c("aut")))
+Maintainer: Zikai Lin <ziklin@iu.edu>
+Description: An implementation of multivariate linear process bootstrap (MLPB) method and sliding window technique to assess the dynamic functional connectivity (dFC) estimate by providing its confidence bands, based on Maria Kudela (2017) <doi: 10.1016/j.neuroimage.2017.01.056>.
+  It also integrates features to visualize non-zero coverage for selected a-priori regions of interest estimated by the dynamic functional connectivity model (dFCM) and dynamic functional connectivity (dFC) curves for reward-related a-priori regions of interest where the activation-based analysis reported.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 2.10)
+Suggests: iterators, testthat, itertools, mgcv, latex2exp
+Imports: doParallel, nlme, parallel, foreach, ggplot2, fields, gplots,
+        splines, stats, stringr, graphics, data.table, gtools, Rcpp (>=
+        0.12.18)
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 6.1.1
+NeedsCompilation: yes
+Packaged: 2019-05-31 17:04:05 UTC; ziklin
+Author: Zikai Lin [aut, cre],
+  Maria Kudela [aut],
+  Jaroslaw Harezlak [aut],
+  Mario Dzemidzic [aut]
+Repository: CRAN
+Date/Publication: 2019-05-31 18:00:04 UTC

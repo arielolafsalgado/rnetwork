@@ -1,0 +1,79 @@
+Package: drake
+Title: A Pipeline Toolkit for Reproducible Computation at Scale
+Description: A general-purpose computational engine for data analysis,
+  drake rebuilds intermediate data objects when their dependencies change,
+  and it skips work when the results are already up to date.
+  Not every execution starts from scratch,
+  and completed projects have tangible evidence
+  that they are reproducible.
+  Extensive documentation, from beginner-friendly tutorials
+  to practical examples and more, is available at the reference website
+  <https://ropensci.github.io/drake/> and the online manual
+  <https://ropenscilabs.github.io/drake-manual/>.
+Version: 5.2.1
+License: GPL-3
+URL: https://github.com/ropensci/drake
+BugReports: https://github.com/ropensci/drake/issues
+Authors@R: c(
+  person(
+    family = "Landau",
+    given = c("William", "Michael"),
+    email = "will.landau@gmail.com",
+    role = c("aut", "cre")
+  ),
+  person(
+    family = "Axthelm",
+    given = "Alex",
+    email = "aaxthelm@che.IN.gov",
+    role = "ctb"
+  ),
+  person(
+    family = "Clarkberg",
+    given = "Jasper",
+    email = "jasper@clarkberg.org",
+    role = "ctb"
+  ),
+  person(
+    family = "Müller",
+    given = "Kirill",
+    email = "krlmlr+r@mailbox.org",
+    role = "ctb"
+  ),
+  person(
+    family = "Marwick",
+    given = "Ben",
+    email = "bmarwick@uw.edu",
+    role = "rev"
+  ),
+  person(
+    family = "Slaughter",
+    given = "Peter",
+    email = "slaughter@nceas.ucsb.edu",
+    role = "rev"
+  ),
+  person(
+    family = "Eli Lilly and Company",
+    role = "cph"
+  ))
+Depends: R (>= 3.2.0)
+Imports: bindr, CodeDepends, crayon, evaluate, digest, dplyr, formatR,
+        future, future.apply, fs, grDevices, igraph, knitr, lubridate,
+        magrittr, parallel, pkgconfig, purrr, R6, R.utils, rlang (>=
+        0.2.0), rprojroot, stats, storr (>= 1.1.0), stringi, testthat,
+        tibble, tidyselect (>= 0.2.4), txtq, utils, visNetwork, withr
+Suggests: abind, callr, DBI, MASS, methods, RSQLite, rmarkdown, tidyr
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-06-18 22:08:28 UTC; landau
+Author: William Michael Landau [aut, cre],
+  Alex Axthelm [ctb],
+  Jasper Clarkberg [ctb],
+  Kirill Müller [ctb],
+  Ben Marwick [rev],
+  Peter Slaughter [rev],
+  Eli Lilly and Company [cph]
+Maintainer: William Michael Landau <will.landau@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-06-19 07:35:27 UTC

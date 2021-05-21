@@ -1,0 +1,34 @@
+Package: jubilee
+Type: Package
+Title: Forecast Long-Term Growth of the U.S. Stock Market
+Version: 0.2.4
+Date: 2018-09-01
+Authors@R: person(given = c("Stephen", "H-T."), family = "Lihn",
+                  email = "stevelihn@gmail.com", role = c("aut", "cre"))
+Author: Stephen H-T. Lihn [aut, cre]
+Maintainer: Stephen H-T. Lihn <stevelihn@gmail.com>
+Description: A long-term forecast model called "Jubilee-Tectonic model" is implemented to forecast future returns of the U.S. stock market, Treasury yield, and gold price. The five-factor model can forecast the 10-year and 20-year future equity returns with high R-squared above 80 percent. It is based on linear growth and mean reversion characteristics in the U.S. stock market. In addition, this model enhances the CAPE model by introducing the hypothesis that there are fault lines in the historical CAPE, which can be calibrated and corrected through statistical learning.
+URL: https://ssrn.com/abstract=3156574
+Depends: R (>= 3.3.0)
+Imports: stats, yaml, utils, xts, zoo, splines, parallel, graphics,
+        methods, readxl, data.table, lmtest
+Suggests: knitr, tinytex, R.rsp, testthat, roxygen2, scales, shape
+VignetteBuilder: R.rsp
+License: Artistic-2.0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.0
+Collate: 'daily2fraction-method.R' 'fraction2daily-method.R'
+        'jubilee-adj-fault-line-method.R' 'jubilee-calc-cape-method.R'
+        'jubilee-package.R' 'jubilee-class.R' 'jubilee-constructor.R'
+        'jubilee-eqty-ols-method.R' 'jubilee-forward-rtn-method.R'
+        'jubilee-fred-data-method.R' 'jubilee-locate-file.R'
+        'jubilee-mcsapply-method.R' 'jubilee-ols-method.R'
+        'jubilee-predict-method.R' 'jubilee-read-fred-file.R'
+        'jubilee-repo-class.R' 'jubilee-repo-config.R'
+        'jubilee-repo-constructor.R' 'jubilee-std-fault-line-method.R'
+        'tri-wave-class.R' 'tri-wave-constructor.R' 'tri-wave-model.R'
+NeedsCompilation: no
+Packaged: 2018-09-01 19:43:03 UTC; slihn
+Repository: CRAN
+Date/Publication: 2018-09-03 11:30:06 UTC

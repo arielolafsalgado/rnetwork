@@ -1,0 +1,25 @@
+Package: caRpools
+Type: Package
+Title: CRISPR AnalyzeR for Pooled CRISPR Screens
+Version: 0.82.5
+Date: 2015-10-12
+Author: Jan Winter, Florian Heigwer
+Maintainer: Jan Winter <jan.winter@dkfz-heidelberg.de>
+Description: CRISPR-Analyzer for pooled CRISPR screens (caRpools) provides an end-to-end analysis of CRISPR screens including quality control, hit candidate analysis, visualization and automated report generation using R markdown. Needs MAGeCK (http://sourceforge.net/p/mageck/wiki/Home/), bowtie2 for all functions. CRISPR (clustered regularly interspaced short palindromic repeats) is a method to perform genome editing. See <https://en.wikipedia.org/wiki/CRISPR> for more information on
+  CRISPR.
+Depends: R (>= 3.1.0)
+Imports:
+        rmarkdown,VennDiagram,DESeq2,sm,biomaRt,seqinr,scatterplot3d,xlsx
+Suggests: BiocGenerics,knitr,stringi
+SystemRequirements: MAGeCK (=0.51, from
+        http://sourceforge.net/p/mageck/wiki/Home/), bowtie2
+        (http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)
+License: GPL
+URL: http://www.crispr-analyzer.de,
+        https://github.com/boutroslab/caRpools
+BugReports: https://github.com/boutroslab/caRpools
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2015-11-01 16:15:59 UTC; janwinter
+Repository: CRAN
+Date/Publication: 2015-11-04 19:47:03

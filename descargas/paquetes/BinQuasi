@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package BinQuasi</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Analyzing Replicated ChIP Sequencing Data Using Quasi-Likelihood [R package BinQuasi version 0.1-6]" />
+<meta name="citation_author1" content="Emily Goren" />
+<meta name="citation_author2" content="Steve Lund" />
+<meta name="citation_author3" content="Long Qu" />
+<meta name="citation_author4" content="Ian Marschner" />
+<meta name="citation_author5" content="Daniel Gerhard" />
+<meta name="citation_author6" content="R Core Team" />
+<meta name="citation_publication_date" content="2018-07-27" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=BinQuasi" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=BinQuasi" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="BinQuasi: Analyzing Replicated ChIP Sequencing Data Using Quasi-Likelihood" />
+<meta name="og:description" content="Identify peaks in ChIP-seq data with biological replicates using a one-sided quasi-likelihood ratio test in quasi-Poisson or quasi-negative binomial models." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=BinQuasi" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>BinQuasi: Analyzing Replicated ChIP Sequencing Data Using Quasi-Likelihood</h2>
+<p>Identify peaks in ChIP-seq data with biological replicates using a one-sided quasi-likelihood ratio test in quasi-Poisson or quasi-negative binomial models.</p>
+<table summary="Package BinQuasi summary">
+<tr>
+<td>Version:</td>
+<td>0.1-6</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="http://www.bioconductor.org/packages/release/bioc/html/edgeR.html"><span class="BioC">edgeR</span></a>, <a href="../mgcv/index.html">mgcv</a>, <a href="../pracma/index.html">pracma</a>, <a href="../quadprog/index.html">quadprog</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/Rsamtools.html"><span class="BioC">Rsamtools</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/GenomicAlignments.html"><span class="BioC">GenomicAlignments</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/GenomicRanges.html"><span class="BioC">GenomicRanges</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/IRanges.html"><span class="BioC">IRanges</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/csaw.html"><span class="BioC">csaw</span></a> (&ge; 1.12.0), <a href="http://www.bioconductor.org/packages/release/bioc/html/SummarizedExperiment.html"><span class="BioC">SummarizedExperiment</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/BiocGenerics.html"><span class="BioC">BiocGenerics</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/S4Vectors.html"><span class="BioC">S4Vectors</span></a>, <a href="../RMySQL/index.html">RMySQL</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../nleqslv/index.html">nleqslv</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2018-07-27</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Emily Goren [aut, cre],
+  Steve Lund [aut] (The author of the QuasiSeq package, from which all
+    functions were modified to produce this package.),
+  Long Qu [aut] (The author of the QuasiSeq package, from which all
+    functions were modified to produce this package.),
+  Ian Marschner [aut] (The author of glm2::glm.fit2, which was modified
+    slightly leading to glm.fit3 in this package.),
+  Daniel Gerhard [aut] (The author of mcprofile::orglm.fit, which was
+    modified slightly and used under the same name in this package.),
+  R Core Team [aut] (The author of stats::glm.fit, which was modified
+    slightly leading to glm.fit3 in this package.)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Emily Goren  &#x3c;&#x65;&#x6d;&#x69;&#x6c;&#x79;&#x2e;&#x67;&#x6f;&#x72;&#x65;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/emilygoren/BinQuasi/issues">https://github.com/emilygoren/BinQuasi/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/emilygoren/BinQuasi">https://github.com/emilygoren/BinQuasi</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_BinQuasi.html">BinQuasi results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package BinQuasi downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="BinQuasi.pdf"> BinQuasi.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/BinQuasi.html">BinQuasi Quick Start Guide</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/BinQuasi_0.1-6.tar.gz"> BinQuasi_0.1-6.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/BinQuasi_0.1-6.zip">BinQuasi_0.1-6.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/BinQuasi_0.1-6.zip">BinQuasi_0.1-6.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/BinQuasi_0.1-6.zip">BinQuasi_0.1-6.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: not available, r-oldrel: not available </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/BinQuasi"> BinQuasi archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=BinQuasi"><samp>https://CRAN.R-project.org/package=BinQuasi</samp></a>
+to link to this page.</p>
+</body>
+</html>

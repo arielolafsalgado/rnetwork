@@ -1,0 +1,35 @@
+Package: GENEAclassify
+Type: Package
+Title: Segmentation and Classification of Accelerometer Data
+Version: 1.4.5
+Date: 2017-08-30
+Authors@R: c(
+    person("Chris", "Campbell", role = "aut", email = "ccampbell@mango-solutions.com"),
+    person("Aimee", "Gott", role = "aut", email = "agott@mango-solutions.com"),
+    person("Joss", "Langford", role = "aut", email = "joss@activinsights.co.uk"),
+    person("Charles", "Sweetland", role = c("aut","cre"), email = "charles@sweetland-solutions.co.uk"),
+    person("Activinsights Ltd", role = "cph", email = "info@activinsights.com")
+    )
+Author: Chris Campbell [aut],
+    Aimee Gott [aut],
+    Joss Langford [aut],
+    Charles Sweetland [aut, cre],
+    Activinsights Ltd [cph]
+Description: Segmentation and classification procedures for
+    data from the 'Activinsights GENEActiv' <https://www.activinsights.com/products/geneactiv/> accelerometer
+    that provides the user with a model to guess behaviour from test data where behaviour is missing.
+    Includes a step counting algorithm, a function to create segmented data with custom features and
+    a function to use recursive partitioning provided in the function 
+    rpart() of the 'rpart' package to create classification models.
+License: GPL
+LazyData: true
+Depends: R (>= 2.14.0), methods, utils, grDevices,MASS,GENEAread,
+        changepoint,signal,rpart
+Suggests: waveslim,knitr,rmarkdown
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2017-08-30 11:19:49 UTC; CharlesSweetland
+Maintainer: Charles Sweetland <charles@sweetland-solutions.co.uk>
+Repository: CRAN
+Date/Publication: 2017-08-30 11:29:26 UTC

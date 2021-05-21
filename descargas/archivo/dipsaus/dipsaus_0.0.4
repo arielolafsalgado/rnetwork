@@ -1,0 +1,41 @@
+Package: dipsaus
+Type: Package
+Title: A Dipping Sauce for Data Analysis and Visualizations
+Version: 0.0.4
+Authors@R: c(
+    person("Zhengjia", "Wang", email = "zhengjia.wang@rice.edu", role = c("aut", "cre"))
+    )
+Description: Works as "add-ons" to packages like 'shiny', 'future', as well as 
+    'rlang', and provides utility functions. Just like dipping sauce adding 
+    flavors to potato chips or pita bread, 'dipsaus' for data analysis and 
+    visualizations adds handy functions and enhancements to popular packages. 
+    The goal is to provide simple solutions that are frequently asked for 
+    online, such as how to synchronize 'shiny' inputs without freezing the app,
+    or how to get memory size on 'Linux' or 'MacOS' system. The enhancements 
+    roughly fall into these four categories: 1. 'shiny' input widgets; 2. 
+    high-performance computing using 'RcppParallel' and 'future' package; 3. 
+    modify R calls and convert among numbers, strings, and other objects. 4. 
+    utility functions to get system information such like CPU chipset, memory 
+    limit, etc.
+URL: https://github.com/dipterix/dipsaus
+BugReports: https://github.com/dipterix/dipsaus/issues
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Language: en-US
+Depends: R (>= 3.6.0)
+Imports: utils, grDevices, shiny, cli, stringr, parallel, jsonlite (>=
+        1.6), future, future.apply, data.table, Rcpp, RcppParallel,
+        crayon, fastmap, base64url, base64enc, txtq, synchronicity,
+        digest, R6, rlang (>= 0.4.0)
+Suggests: microbenchmark, knitr, rmarkdown, testthat, promises,
+        magrittr, glue, qs, RcppRedis
+RoxygenNote: 7.0.2
+LinkingTo: Rcpp, RcppParallel
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2020-01-19 22:43:47 UTC; beauchamplab
+Author: Zhengjia Wang [aut, cre]
+Maintainer: Zhengjia Wang <zhengjia.wang@rice.edu>
+Repository: CRAN
+Date/Publication: 2020-01-20 05:40:02 UTC

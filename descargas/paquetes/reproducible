@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package reproducible</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="A Set of Tools that Enhance Reproducibility Beyond Package Management [R package reproducible version 1.2.1]" />
+<meta name="citation_author1" content="Eliot J B McIntire" />
+<meta name="citation_author2" content="Alex M Chubaty" />
+<meta name="citation_publication_date" content="2020-08-18" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=reproducible" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=reproducible" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="reproducible: A Set of Tools that Enhance Reproducibility Beyond Package Management" />
+<meta name="og:description" content="Collection of high-level, machine- and OS-independent tools for making deeply reproducible and reusable content in R. The two workhorse functions are Cache and prepInputs; these allow for: nested caching, robust to environments, and objects with environments (like functions); and data retrieval and processing in continuous workflow environments. In all cases, efforts are made to make the first and subsequent calls of functions have the same result, but vastly faster at subsequent times by way of checksums and digesting. Several features are still under active development, including cloud storage of cached objects, allowing for sharing between users. Several advanced options are available, see ?reproducibleOptions." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=reproducible" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>reproducible: A Set of Tools that Enhance Reproducibility Beyond Package
+Management</h2>
+<p>Collection of high-level, machine- and OS-independent tools
+    for making deeply reproducible and reusable content in R.
+    The two workhorse functions are Cache and prepInputs; 
+    these allow for: nested caching, robust to environments, and objects with
+    environments (like functions); and data retrieval and processing 
+    in continuous workflow environments. In all cases,
+    efforts are made to make the first and subsequent calls of functions have 
+    the same result, but vastly faster at subsequent times by way of checksums
+    and digesting. Several features are still under active development, including
+    cloud storage of cached objects, allowing for sharing between users. Several
+    advanced options are available, see ?reproducibleOptions.</p>
+<table summary="Package reproducible summary">
+<tr>
+<td>Version:</td>
+<td>1.2.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../data.table/index.html">data.table</a> (&ge; 1.10.4), <a href="../DBI/index.html">DBI</a>, <a href="../digest/index.html">digest</a>, <a href="../fpCompare/index.html">fpCompare</a>, <a href="../glue/index.html">glue</a>, <a href="../magrittr/index.html">magrittr</a>, methods, <a href="../Require/index.html">Require</a>, <a href="../raster/index.html">raster</a>, <a href="../RSQLite/index.html">RSQLite</a>, <a href="../rlang/index.html">rlang</a>, <a href="../sp/index.html">sp</a> (&ge;
+1.4-2), utils</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../covr/index.html">covr</a>, <a href="../crayon/index.html">crayon</a>, <a href="../fastdigest/index.html">fastdigest</a>, <a href="../fasterize/index.html">fasterize</a>, <a href="../future/index.html">future</a>, <a href="../gdalUtils/index.html">gdalUtils</a>, <a href="../googledrive/index.html">googledrive</a>, <a href="../httr/index.html">httr</a>, <a href="../qs/index.html">qs</a>, <a href="../knitr/index.html">knitr</a>, parallel, <a href="../RCurl/index.html">RCurl</a> (&ge; 1.95-4.8), <a href="../rgdal/index.html">rgdal</a>, <a href="../rgeos/index.html">rgeos</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../sf/index.html">sf</a>, stats, <a href="../testthat/index.html">testthat</a>, <a href="../TimeWarp/index.html">TimeWarp</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-08-18</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Eliot J B McIntire
+    <a href="https://orcid.org/0000-0002-6914-8316"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut, cre],
+  Alex M Chubaty <a href="https://orcid.org/0000-0001-7146-8135"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Tati Micheletti <a href="https://orcid.org/0000-0003-4838-8342"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Ceres Barros <a href="https://orcid.org/0000-0003-4036-977X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Ian Eddy <a href="https://orcid.org/0000-0001-7397-2116"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb],
+  Her Majesty the Queen in Right of Canada, as represented by the
+    Minister of Natural Resources Canada [cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Eliot J B McIntire  &#x3c;&#x65;&#x6c;&#x69;&#x6f;&#x74;&#x2e;&#x6d;&#x63;&#x69;&#x6e;&#x74;&#x69;&#x72;&#x65;&#x20;&#x61;&#x74;&#x20;&#x63;&#x61;&#x6e;&#x61;&#x64;&#x61;&#x2e;&#x63;&#x61;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/PredictiveEcology/reproducible/issues">https://github.com/PredictiveEcology/reproducible/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://reproducible.predictiveecology.org">https://reproducible.predictiveecology.org</a>,
+<a href="https://github.com/PredictiveEcology/reproducible">https://github.com/PredictiveEcology/reproducible</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>'unrar' (Linux/macOS) or '7-Zip' (Windows) to work
+with '.rar' files.</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-CA</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_reproducible.html">reproducible results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package reproducible downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="reproducible.pdf"> reproducible.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Cache-using-postgresql.html">Using alternate database backends for Cache</a><br/>
+<a href="vignettes/Intro-to-Cache.html">Introduction to Cache</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/reproducible_1.2.1.tar.gz"> reproducible_1.2.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/reproducible_1.2.1.zip">reproducible_1.2.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/reproducible_1.2.1.zip">reproducible_1.2.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/reproducible_1.2.1.zip">reproducible_1.2.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/reproducible_1.2.1.tgz">reproducible_1.2.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/reproducible_1.2.1.tgz">reproducible_1.2.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/reproducible"> reproducible archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package reproducible reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../SpaDES.core/index.html">SpaDES.core</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../SpaDES/index.html">SpaDES</a>, <a href="../SpaDES.addins/index.html">SpaDES.addins</a>, <a href="../SpaDES.tools/index.html">SpaDES.tools</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=reproducible"><samp>https://CRAN.R-project.org/package=reproducible</samp></a>
+to link to this page.</p>
+</body>
+</html>

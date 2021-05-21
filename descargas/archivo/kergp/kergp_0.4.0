@@ -1,0 +1,25 @@
+Package: kergp
+Type: Package
+Title: Gaussian Process Laboratory
+Version: 0.4.0
+Date: 2018-09-17
+Author: Yves Deville, David Ginsbourger, Olivier Roustant. Contributors: Nicolas Durrande.
+Maintainer: Olivier Roustant <roustant@emse.fr>
+Description: Gaussian Process models with customised covariance kernels.
+License: GPL-3
+Depends: Rcpp (>= 0.10.5), methods, testthat, nloptr
+Suggests: DiceKriging, DiceDesign, lhs, inline, foreach, knitr,
+        ggplot2, reshape2, corrplot
+Imports: MASS, numDeriv, stats4, doParallel, doFuture, utils
+LinkingTo: Rcpp
+RoxygenNote: 6.0.1
+Collate: 'CovFormulas.R' 'allGenerics.R' 'checkGrad.R' 'covComp.R'
+        'covMan.R' 'covQual.R' 'q1CompSymm.R' 'q1Symm.R'
+        'covQualNested.R' 'covRadial.R' 'covTS.R' 'covZZAll.R' 'gp.R'
+        'kFuns.R' 'kernelNorm.R' 'kernels1d_Call.R' 'logLikFuns.R'
+        'methodGLS.R' 'methodMLE.R' 'miscUtils.R' 'prinKrige.R'
+        'q1Diag.R' 'simulPar.R' 'simulate_gp.R'
+NeedsCompilation: yes
+Packaged: 2018-09-17 13:26:59 UTC; yves
+Repository: CRAN
+Date/Publication: 2018-09-17 14:00:03 UTC

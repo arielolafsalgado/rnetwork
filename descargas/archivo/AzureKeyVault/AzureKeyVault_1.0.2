@@ -1,0 +1,25 @@
+Package: AzureKeyVault
+Title: Key and Secret Management in 'Azure'
+Version: 1.0.2
+Authors@R: c(
+    person("Hong", "Ooi", , "hongooi@microsoft.com", role = c("aut", "cre")),
+    person("Microsoft", role="cph")
+    )
+Description: Manage keys, certificates, secrets, and storage accounts in Microsoft's 'Key Vault' service: <https://azure.microsoft.com/services/key-vault>. Provides facilities to store and retrieve secrets, use keys to encrypt, decrypt, sign and verify data, and manage certificates. Integrates with the 'AzureAuth' package to enable authentication with a certificate, and with the 'openssl' package for importing and exporting cryptographic objects. Part of the 'AzureR' family of packages.
+License: MIT + file LICENSE
+URL: https://github.com/Azure/AzureKeyVault
+        https://github.com/Azure/AzureR
+BugReports: https://github.com/Azure/AzureKeyVault/issues
+VignetteBuilder: knitr
+Depends: R (>= 3.3),
+Imports: utils, R6, httr, jsonlite, openssl, jose, AzureRMR,
+        AzureGraph, AzureAuth (>= 1.0.1)
+Suggests: AzureStor, knitr, testthat
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-10-15 14:20:18 UTC; hongo
+Author: Hong Ooi [aut, cre],
+  Microsoft [cph]
+Maintainer: Hong Ooi <hongooi@microsoft.com>
+Repository: CRAN
+Date/Publication: 2019-10-15 15:10:06 UTC

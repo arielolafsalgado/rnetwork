@@ -1,0 +1,34 @@
+Package: available
+Title: Check if the Title of a Package is Available, Appropriate and
+        Interesting
+Version: 1.0.3
+Authors@R: c(
+    person("Carl", "Ganz", role = c("aut")),
+    person("Gábor", "Csárdi", , "csardi.gabor@gmail.com", role = c("aut")),
+    person("Jim", "Hester", email = "james.f.hester@gmail.com", role = c("aut", "cre")),
+    person("Molly", "Lewis", role = c("aut")),
+    person("Rachael", "Tatman", role = c("aut"))
+    )
+Description: Check if a given package name is available to use. It checks the
+  name's validity. Checks if it is used on 'GitHub', 'CRAN' and 'Bioconductor'. Checks
+  for unintended meanings by querying Urban Dictionary, 'Wiktionary' and Wikipedia.
+Depends: R (>= 3.3.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Imports: cli, clisymbols, crayon, tidytext, desc, glue, jsonlite,
+        memoise, SnowballC, stringdist, tibble, udapi, yesno
+Suggests: usethis, BiocInstaller, BiocManager, testthat
+URL: https://github.com/ropenscilabs/available
+BugReports: https://github.com/ropenscilabs/available/issues
+NeedsCompilation: no
+Packaged: 2019-07-01 15:46:44 UTC; jhester
+Author: Carl Ganz [aut],
+  Gábor Csárdi [aut],
+  Jim Hester [aut, cre],
+  Molly Lewis [aut],
+  Rachael Tatman [aut]
+Maintainer: Jim Hester <james.f.hester@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-07-01 19:30:03 UTC

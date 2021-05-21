@@ -1,0 +1,55 @@
+Package: tensorflow
+Type: Package
+Title: R Interface to 'TensorFlow'
+Version: 1.14.0
+Authors@R: c(
+  person("Daniel", "Falbel", role = c("ctb", "cph", "cre"), email = "daniel@rstudio.com"),
+  person("JJ", "Allaire", role = c("aut", "cph")),
+  person(family = "RStudio", role = c("cph", "fnd")),
+  person("Yuan", "Tang", role = c("aut", "cph"),
+         email = "terrytangyuan@gmail.com",
+         comment = c(ORCID = "0000-0001-5243-233X")),
+  person("Dirk", "Eddelbuettel", role = c("ctb", "cph"),
+         email = "edd@debian.org"),
+  person("Nick", "Golding", role = c("ctb", "cph"),
+         email = "nick.golding.research@gmail.com"),
+  person("Tomasz", "Kalinowski", role = c("ctb", "cph")),
+  person(family = "Google Inc.", role = c("ctb", "cph"),
+         comment = "Examples and Tutorials")
+  )
+Description: Interface to 'TensorFlow' <https://www.tensorflow.org/>, 
+  an open source software library for numerical computation using data
+  flow graphs. Nodes in the graph represent mathematical operations, 
+  while the graph edges represent the multidimensional data arrays 
+  (tensors) communicated between them. The flexible architecture allows
+  you to deploy computation to one or more 'CPUs' or 'GPUs' in a desktop, 
+  server, or mobile device with a single 'API'. 'TensorFlow' was originally
+  developed by researchers and engineers working on the Google Brain Team 
+  within Google's Machine Intelligence research organization for the 
+  purposes of conducting machine learning and deep neural networks research,
+  but the system is general enough to be applicable in a wide variety
+  of other domains as well.
+License: Apache License 2.0
+URL: https://github.com/rstudio/tensorflow
+BugReports: https://github.com/rstudio/tensorflow/issues
+SystemRequirements: TensorFlow (https://www.tensorflow.org/)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.1)
+Imports: config, jsonlite (>= 1.2), processx, reticulate (>= 1.10),
+        tfruns (>= 1.0), utils, yaml, rstudioapi (>= 0.7)
+Suggests: testthat, keras, tfestimators
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-08-01 12:44:21 UTC; dfalbel
+Author: Daniel Falbel [ctb, cph, cre],
+  JJ Allaire [aut, cph],
+  RStudio [cph, fnd],
+  Yuan Tang [aut, cph] (<https://orcid.org/0000-0001-5243-233X>),
+  Dirk Eddelbuettel [ctb, cph],
+  Nick Golding [ctb, cph],
+  Tomasz Kalinowski [ctb, cph],
+  Google Inc. [ctb, cph] (Examples and Tutorials)
+Maintainer: Daniel Falbel <daniel@rstudio.com>
+Repository: CRAN
+Date/Publication: 2019-08-01 13:30:02 UTC

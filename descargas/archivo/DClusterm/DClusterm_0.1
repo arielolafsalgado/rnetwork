@@ -1,0 +1,25 @@
+Package: DClusterm
+Type: Package
+Title: Model-Based Detection of Disease Clusters
+Version: 0.1
+Date: 2017-02-10
+Author: Virgilio Gomez-Rubio, Paula Esther Moraga Serrano, Barry
+    Rowlingson
+Maintainer: Virgilio Gomez-Rubio <virgilio.gomez@uclm.es>
+Depends: R (>= 2.10), parallel, sp, spacetime, DCluster
+Suggests: INLA
+Imports: methods, xts, lme4, pscl, RColorBrewer, gridExtra,
+        latticeExtra
+Description: Model-based methods for the detection of disease clusters
+  using GLMs, GLMMs and zero-inflated models.
+Additional_repositories: https://www.math.ntnu.no/inla/R/stable
+License: GPL-3
+LazyLoad: yes
+LazyData: yes
+Collate: 'Functions1PAU.R' 'Functions2PAU.R' 'glm.isclusterPAU.R'
+        'knutils.R'
+RoxygenNote: 6.0.0
+NeedsCompilation: no
+Packaged: 2017-02-11 16:50:49 UTC; virgil
+Repository: CRAN
+Date/Publication: 2017-02-12 08:31:01

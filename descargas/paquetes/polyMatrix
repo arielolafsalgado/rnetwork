@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package polyMatrix</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Infrastructure for Manipulation Polynomial Matrices [R package polyMatrix version 0.3.1]" />
+<meta name="citation_author1" content="Tamas Prohle" />
+<meta name="citation_author2" content="Peter Prohle" />
+<meta name="citation_author3" content="Nikolai Ryzhkov" />
+<meta name="citation_author4" content="Ildiko Laszlo" />
+<meta name="citation_publication_date" content="2020-06-04" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=polyMatrix" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=polyMatrix" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="polyMatrix: Infrastructure for Manipulation Polynomial Matrices" />
+<meta name="og:description" content=" Implementation of class &quot;polyMatrix&quot; for storing a matrix of polynomials and implements basic matrix operations; including a determinant and characteristic polynomial. It is based on the package 'polynom' and uses a lot of its methods to implement matrix operations. This package includes 3 methods of triangularization of polynomial matrices: Extended Euclidean algorithm which is most classical but numerically unstable; Sylvester algorithm based on LQ decomposition; Interpolation algorithm is based on LQ decomposition and Newton interpolation. Both methods are described in D. Henrion &amp;amp; M. Sebek, Reliable numerical methods for polynomial matrix triangularization, IEEE Transactions on Automatic Control (Volume 44, Issue 3, Mar 1999, Pages 497-508) &amp;lt;&lt;a href=&quot;https://doi.org/10.1109%2F9.751344&quot;&gt;doi:10.1109/9.751344&lt;/a&gt;&amp;gt; and in Salah Labhalla, Henri Lombardi &amp;amp; Roger Marlin, Algorithmes de calcule de la reduction de Hermite d'une matrice a coefficients polynomeaux, Theoretical Computer Science (Volume 161, Issue 1-2, July 1996, Pages 69-92) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2F0304-3975%2895%2900090-9&quot;&gt;doi:10.1016/0304-3975(95)00090-9&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=polyMatrix" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>polyMatrix: Infrastructure for Manipulation Polynomial Matrices</h2>
+<p>
+  Implementation of class "polyMatrix" for storing a matrix of polynomials and implements 
+  basic matrix operations; including a determinant and characteristic polynomial.
+  It is based on the package 'polynom' and uses a lot of its methods to implement matrix operations.
+  This package includes 3 methods of triangularization of polynomial matrices:
+  Extended Euclidean algorithm which is most classical but numerically unstable;
+  Sylvester algorithm based on LQ decomposition;
+  Interpolation algorithm is based on LQ decomposition and Newton interpolation.
+  Both methods are described in 
+  D. Henrion &amp; M. Sebek, Reliable numerical methods for polynomial matrix triangularization,
+  IEEE Transactions on Automatic Control (Volume 44, Issue 3, Mar 1999, Pages 497-508) &lt;<a href="https://doi.org/10.1109%2F9.751344">doi:10.1109/9.751344</a>&gt;
+  and in 
+  Salah Labhalla, Henri Lombardi &amp; Roger Marlin, 
+  Algorithmes de calcule de la reduction de Hermite d'une matrice a coefficients polynomeaux,
+  Theoretical Computer Science (Volume 161, Issue 1-2, July 1996, Pages 69-92) &lt;<a href="https://doi.org/10.1016%2F0304-3975%2895%2900090-9">doi:10.1016/0304-3975(95)00090-9</a>&gt;.</p>
+<table summary="Package polyMatrix summary">
+<tr>
+<td>Version:</td>
+<td>0.3.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0), stats, <a href="../MTS/index.html">MTS</a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../polynom/index.html">polynom</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-04</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Tamas Prohle [aut],
+  Peter Prohle [aut],
+  Nikolai Ryzhkov [aut, cre],
+  Ildiko Laszlo <a href="https://orcid.org/0000-0003-2324-8183"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Ulas Onat Alakent [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Nikolai Ryzhkov  &#x3c;&#x6e;&#x61;&#x6d;&#x65;&#x7a;&#x79;&#x73;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/namezys/polymatrix/issues">https://github.com/namezys/polymatrix/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/namezys/polymatrix">https://github.com/namezys/polymatrix</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/NumericalMathematics.html">NumericalMathematics</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_polyMatrix.html">polyMatrix results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package polyMatrix downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="polyMatrix.pdf"> polyMatrix.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/polyMatrix_0.3.1.tar.gz"> polyMatrix_0.3.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/polyMatrix_0.3.1.zip">polyMatrix_0.3.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/polyMatrix_0.3.1.zip">polyMatrix_0.3.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/polyMatrix_0.3.1.zip">polyMatrix_0.3.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/polyMatrix_0.3.1.tgz">polyMatrix_0.3.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/polyMatrix_0.3.1.tgz">polyMatrix_0.3.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/polyMatrix"> polyMatrix archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=polyMatrix"><samp>https://CRAN.R-project.org/package=polyMatrix</samp></a>
+to link to this page.</p>
+</body>
+</html>

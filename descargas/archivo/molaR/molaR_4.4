@@ -1,0 +1,29 @@
+Package: molaR
+Title: Dental Surface Complexity Measurement Tools
+Version: 4.4
+Authors@R: c(person("James D.", "Pampush", role = c("aut", "cre", "cph"), email = "jdpampush@gmail.com"),
+  person("Julia M.", "Winchester", role = c("aut", "cph")),
+  person("Paul E.", "Morse", role = c("aut", "cph")),
+  person("Alexander Q.", "Vining", role = c("aut", "cph")))
+Description: Surface topography calculations of Dirichlet's normal energy,
+    relief index, surface slope, and orientation patch count for teeth using scans of
+    enamel caps.
+    Importantly, for the relief index and orientation patch count calculations to
+    work, the scanned tooth files must be oriented with the occlusal plane parallel
+    to the x and y axes, and perpendicular to the z axis. The files should also be
+    simplified, and smoothed in some other software prior to uploading into R.
+Depends: R (>= 2.10), alphahull, rgl, Rvcg
+License: ACM
+LazyData: true
+Suggests: knitr, rmarkdown, rglwidget
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-09-18 16:57:10 UTC; jamespampush
+Author: James D. Pampush [aut, cre, cph],
+  Julia M. Winchester [aut, cph],
+  Paul E. Morse [aut, cph],
+  Alexander Q. Vining [aut, cph]
+Maintainer: James D. Pampush <jdpampush@gmail.com>
+RoxygenNote: 6.1.0
+Repository: CRAN
+Date/Publication: 2018-09-18 17:20:02 UTC

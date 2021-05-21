@@ -1,0 +1,41 @@
+Package: taxa
+Type: Package
+Title: Taxonomic Classes
+Description: Provides taxonomic classes for
+    groupings of taxonomic names without data, and those
+    with data. Methods provided are "taxonomically aware", in
+    that they know about ordering of ranks, and methods that
+    filter based on taxonomy also filter associated data. 
+    This package is described in the publication: "Taxa: An R 
+    package implementing data standards and methods for 
+    taxonomic data", Zachary S.L. Foster, Scott Chamberlain,  
+    Niklaus J. Grünwald (2018) <doi:10.12688/f1000research.14013.2>.
+Version: 0.3.3
+Authors@R: c(
+    person("Scott", "Chamberlain", role = "aut", 
+       email = "myrmecocystus+r@gmail.com", comment = c(ORCID = "0000-0003-1444-9135")),
+    person("Zachary", "Foster", role = c("aut", "cre"), 
+       email = "zacharyfoster1989@gmail.com", comment = c(ORCID = "0000-0002-5075-0948"))
+    )
+Depends: R (>= 3.0.2)
+VignetteBuilder: knitr
+LazyLoad: yes
+LazyData: yes
+Encoding: UTF-8
+License: MIT + file LICENSE
+URL: https://docs.ropensci.org/taxa, https://github.com/ropensci/taxa
+BugReports: https://github.com/ropensci/taxa/issues
+Imports: R6, jsonlite, dplyr, lazyeval, magrittr, tibble, knitr, rlang,
+        stringr, crayon, tidyr, utils, taxize
+Suggests: roxygen2 (>= 6.0.1), testthat, rmarkdown (>= 0.9.6)
+RoxygenNote: 7.0.2.9000
+X-schema.org-applicationCategory: Taxonomy
+X-schema.org-keywords: taxonomy, biology, hierarchy
+X-schema.org-isPartOf: https://ropensci.org
+NeedsCompilation: no
+Packaged: 2020-02-24 19:45:09 UTC; zachary
+Author: Scott Chamberlain [aut] (<https://orcid.org/0000-0003-1444-9135>),
+  Zachary Foster [aut, cre] (<https://orcid.org/0000-0002-5075-0948>)
+Maintainer: Zachary Foster <zacharyfoster1989@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-02-25 06:40:02 UTC

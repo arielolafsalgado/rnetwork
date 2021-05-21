@@ -1,0 +1,65 @@
+Package: rdfp
+Title: An Implementation of the 'DoubleClick for Publishers' API
+Version: 0.1.2
+Date: 2018-04-05
+Description: An implementation of Google's 'DoubleClick for Publishers' (DFP) API 
+    <https://developers.google.com/doubleclick-publishers/docs/start>. 
+    This package is automatically compiled from the API WSDLs (Web Service Description 
+    Language) files to dictate how the API is structured. Theoretically, all API 
+    actions are possible using this package; however, care must be taken to format 
+    the inputs correctly and parse the outputs correctly as well. Please see Google's 
+    DFP API reference and this package's website <https://stevenmmortimer.github.io/rdfp/> 
+    for more information, documentation, and examples.
+Authors@R: c(
+    person(c("Steven", "M."), "Mortimer", , "reportmort@gmail.com", c("aut", "cre")),
+    person("Jennifer", "Bryan", , "jenny@rstudio.com", c("ctb")),
+    person("Joanna", "Zhao", , "joanna.zhao@alumni.ubc.ca", c("ctb"))
+    )
+URL: https://github.com/StevenMMortimer/rdfp
+BugReports: https://github.com/StevenMMortimer/rdfp/issues
+Encoding: UTF-8
+Depends: R (>= 3.1.0)
+License: MIT + file LICENSE
+LazyData: true
+Imports: httr (>= 1.0.0), curl (>= 0.9.7), plyr (>= 1.8.3), XML (>=
+        3.98-1.2), utils (>= 3.1.0), methods (>= 3.1.0), xml2, dplyr,
+        purrr, readr, lubridate
+Suggests: knitr, testthat, rmarkdown
+RoxygenNote: 6.0.1
+Collate: 'ActivityGroupService.R' 'ActivityService.R'
+        'AdExclusionRuleService.R' 'AdRuleService.R'
+        'AudienceSegmentService.R' 'BaseRateService.R'
+        'CdnConfigurationService.R' 'CompanyService.R'
+        'ContactService.R' 'ContentBundleService.R'
+        'ContentMetadataKeyHierarchyService.R' 'ContentService.R'
+        'CreativeService.R' 'CreativeSetService.R'
+        'CreativeTemplateService.R' 'CreativeWrapperService.R'
+        'CustomFieldService.R' 'CustomTargetingService.R'
+        'ExchangeRateService.R' 'ForecastService.R'
+        'InventoryService.R' 'LabelService.R'
+        'LineItemCreativeAssociationService.R' 'LineItemService.R'
+        'LineItemTemplateService.R' 'LiveStreamEventService.R'
+        'MobileApplicationService.R' 'NativeStyleService.R'
+        'NetworkService.R' 'OrderService.R' 'PackageService.R'
+        'PlacementService.R' 'PremiumRateService.R'
+        'ProductPackageItemService.R' 'ProductPackageService.R'
+        'ProductService.R' 'ProductTemplateService.R'
+        'ProposalLineItemService.R' 'ProposalService.R'
+        'PublisherQueryLanguageService.R' 'RateCardService.R'
+        'ReconciliationLineItemReportService.R'
+        'ReconciliationOrderReportService.R'
+        'ReconciliationReportRowService.R'
+        'ReconciliationReportService.R' 'ReportService.R'
+        'SuggestedAdUnitService.R' 'TeamService.R' 'UserService.R'
+        'UserTeamAssociationService.R' 'WorkflowRequestService.R'
+        'dfp_auth.R' 'dfp_options_settings.R' 'dfp_service_endpoints.R'
+        'dfp_utils.R' 'dfp_utils_xml.R' 'rdfp.R'
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-04-07 01:22:11 UTC; steven.mortimer
+Author: Steven M. Mortimer [aut, cre],
+  Jennifer Bryan [ctb],
+  Joanna Zhao [ctb]
+Maintainer: Steven M. Mortimer <reportmort@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-04-09 11:08:29 UTC

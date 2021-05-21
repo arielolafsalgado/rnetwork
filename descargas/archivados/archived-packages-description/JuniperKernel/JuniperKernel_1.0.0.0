@@ -1,0 +1,42 @@
+Package: JuniperKernel
+Title: Kernel for 'Jupyter'
+Version: 1.0.0.0
+Date: 2017-12-07
+Authors@R: c(
+  person("Spencer Aiello",   role=c("aut", "cre", "cph"), email="spnrpa@gmail.com"),
+  person("Stephan Brumme",   role="cph"),
+  person("Jake Luciani",     role="cph"),
+  person("Tony Plate",       role="cph"),
+  person("Matthieu Decorde", role="cph"),
+  person("RStudio (Hadley Wickham)", role="cph") )
+Copyright: See the file COPYRIGHTS
+Depends: R (>= 3.2.0)
+Imports: utils, jsonlite, repr, Rcpp (>= 0.11.0), gdtools (>= 0.1.6),
+        data.table, methods
+Suggests: RUnit, roxygen2
+Collate: 'booter.R' 'comm_close.R' 'comm_info_request.R' 'comm_msg.R'
+        'comm_open.R' 'complete_request.R' 'execute_request.R'
+        'history_request.R' 'inspect_request.R' 'is_complete_request.R'
+        'juniper.R' 'kernel_info_request.R' 'kernelspec.R'
+        'RcppExports.R' 'request.R' 'shutdown_request.R' 'zzz.R'
+LinkingTo: Rcpp, gdtools
+Description: Provides a full implementation of the 'Jupyter' <http://jupyter.org/> messaging protocol in C++ by leveraging 'Rcpp' and 'Xeus' <https://github.com/QuantStack/xeus>.
+             'Jupyter' supplies an interactive computing environment and a messaging protocol defined over 'ZeroMQ' for multiple programming languages. This package implements
+             the 'Jupyter' kernel interface so that 'R' is exposed to this interactive computing environment.
+             'Xeus' is a C++ library that facilitates the implementation of kernels for 'Jupyter'. Additionally, 'Xeus' provides an interface to libraries that exist in the 'Jupyter' ecosystem for building widgets,
+             plotting, and more <https://blog.jupyter.org/interactive-workflows-for-c-with-jupyter-fe9b54227d92>. 'JuniperKernel' uses 'Xeus' as a library for the 'Jupyter' messaging protocol.
+URL: https://github.com/JuniperKernel/JuniperKernel
+License: GPL (>= 2)
+BugReports: https://github.com/JuniperKernel/JuniperKernel/issues
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2017-12-18 20:57:09 UTC; saiello8
+Author: Spencer Aiello [aut, cre, cph],
+  Stephan Brumme [cph],
+  Jake Luciani [cph],
+  Tony Plate [cph],
+  Matthieu Decorde [cph],
+  RStudio (Hadley Wickham) [cph]
+Maintainer: Spencer Aiello <spnrpa@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-12-19 11:22:42 UTC

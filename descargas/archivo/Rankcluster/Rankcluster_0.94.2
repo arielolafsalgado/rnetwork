@@ -1,0 +1,35 @@
+Package: Rankcluster
+Type: Package
+Title: Model-Based Clustering for Multivariate Partial Ranking Data
+Version: 0.94.2
+Date: 2020-02-20
+Authors@R: c(person("Quentin", "Grimonprez", role = c("aut", "cre"), email = "quentin.grimonprez@inria.fr"),
+              person("Julien", "Jacques", role = "aut"),
+              person("Christophe", "Biernacki", role = "aut"))
+Description: Implementation of a model-based clustering algorithm for
+    ranking data (C. Biernacki, J. Jacques (2013) <doi:10.1016/j.csda.2012.08.008>). 
+    Multivariate rankings as well as partial rankings are taken
+    into account. This algorithm is based on an extension of the Insertion
+    Sorting Rank (ISR) model for ranking data, which is a meaningful and
+    effective model parametrized by a position parameter (the modal ranking,
+    quoted by mu) and a dispersion parameter (quoted by pi). The heterogeneity
+    of the rank population is modelled by a mixture of ISR, whereas conditional
+    independence assumption is considered for multivariate rankings.
+License: GPL (>= 2)
+Copyright: Inria - Université de Lille
+BugReports: https://github.com/modal-inria/Rankcluster/issues/
+Depends: R (>= 2.10), methods
+Imports: Rcpp
+LinkingTo: Rcpp, RcppEigen
+Suggests: knitr
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.0.2
+NeedsCompilation: yes
+Packaged: 2020-02-20 10:12:26 UTC; grimonprez
+Author: Quentin Grimonprez [aut, cre],
+  Julien Jacques [aut],
+  Christophe Biernacki [aut]
+Maintainer: Quentin Grimonprez <quentin.grimonprez@inria.fr>
+Repository: CRAN
+Date/Publication: 2020-02-20 10:30:02 UTC

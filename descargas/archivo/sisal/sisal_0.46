@@ -1,0 +1,31 @@
+Encoding: UTF-8
+Package: sisal
+Type: Package
+Title: Sequential Input Selection Algorithm
+Version: 0.46
+Date: 2015-10-10
+Authors@R: person("Mikko", "Korpela", role = c("aut", "cre"),
+        email = "mvkorpel@iki.fi")
+Author: Mikko Korpela [aut, cre]
+Maintainer: Mikko Korpela <mvkorpel@iki.fi>
+Copyright: Aalto University
+Depends: R (>= 3.1.2)
+Imports: graphics, grDevices, grid, methods, stats, utils, boot,
+        lattice, mgcv, digest, R.matlab, R.methodsS3
+Suggests: graph, Rgraphviz, testthat (>= 0.8)
+Description: Implements the SISAL algorithm by Tikka and Hollmén. It is
+        a sequential backward selection algorithm which uses a linear
+        model in a cross-validation setting. Starting from the full
+        model, one variable at a time is removed based on the
+        regression coefficients. From this set of models, a
+        parsimonious (sparse) model is found by choosing the model with
+        the smallest number of variables among those models where the
+        validation error is smaller than a threshold. Also implements
+        extensions which explore larger parts of the search space
+        and/or use ridge regression instead of ordinary least squares.
+License: GPL (>= 2)
+LazyData: yes
+NeedsCompilation: no
+Packaged: 2015-10-10 06:19:10 UTC; mvkorpel
+Repository: CRAN
+Date/Publication: 2015-10-10 15:45:32

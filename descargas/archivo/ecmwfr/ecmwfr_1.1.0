@@ -1,0 +1,37 @@
+Package: ecmwfr
+Title: Interface to 'ECMWF' and 'CDS' Data Web Services
+Version: 1.1.0
+Authors@R: c(person(
+               family = "Hufkens",
+               given = "Koen",
+               email = "koen.hufkens@gmail.com",
+               role = c("aut", "cre")),
+             person(
+               family = "Stauffer",
+               given = "Reto",
+               email = "Reto.Stauffer@uibk.ac.at",
+               role = c("ctb"),
+               comment = c(ORCID = "0000-0002-3798-5507"))
+           )
+Description: Programmatic interface to the European Centre for Medium-Range
+    Weather Forecasts public and restricted dataset web services (ECMWF;
+    <https://www.ecmwf.int/>) as well as Copernicus's Climate Data Store (CDS;
+    <https://cds.climate.copernicus.eu>). Allows for easy downloads of weather 
+    forecasts and climate data directly to your R work space or your computer.
+URL: https://github.com/khufkens/ecmwfr
+BugReports: https://github.com/khufkens/ecmwfr/issues
+Depends: R (>= 3.4)
+Imports: httr, keyring, memoise
+License: AGPL-3
+LazyData: true
+ByteCompile: true
+RoxygenNote: 6.1.1
+Suggests: rmarkdown, covr, testthat, raster, maps, ncdf4, stars, knitr,
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-02-06 20:29:32 UTC; khufkens
+Author: Koen Hufkens [aut, cre],
+  Reto Stauffer [ctb] (<https://orcid.org/0000-0002-3798-5507>)
+Maintainer: Koen Hufkens <koen.hufkens@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-02-06 23:11:15 UTC

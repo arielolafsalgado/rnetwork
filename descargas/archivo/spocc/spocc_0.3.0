@@ -1,0 +1,30 @@
+Package: spocc
+Title: Interface to Species Occurrence Data Sources
+Description: A programmatic interface to many species occurrence data sources,
+    including 'GBIF', 'USGS's' 'BISON', 'iNaturalist', Berkeley 'Ecoinformatics'
+    Engine 'eBird', and 'AntWeb'. Includes functionality for retrieving
+    species occurrence data, and combining that data.
+Version: 0.3.0
+License: MIT + file LICENSE
+Authors@R: c(person("Scott", "Chamberlain", role = c("aut", "cre"),
+    email = "myrmecocystus@gmail.com"),
+    person("Karthik", "Ram", role = "aut",
+    email = "karthik.ram@gmail.com"),
+    person("Ted", "Hart", role = "aut",
+    email = "edmund.m.hart@gmail.com"))
+URL: https://github.com/ropensci/spocc
+BugReports: https://github.com/ropensci/spocc/issues
+LazyData: true
+VignetteBuilder: knitr
+Imports: utils, methods, stats, rgbif (>= 0.8.4), rbison (>= 0.4.8),
+        ecoengine (>= 1.9.1), rebird (>= 0.1.1), AntWeb (>= 0.7),
+        rvertnet (>= 0.3.0), lubridate, httr, whisker, V8, jsonlite
+Suggests: roxygen2, testthat, knitr, taxize
+NeedsCompilation: no
+Packaged: 2015-07-04 14:46:13 UTC; sacmac
+Author: Scott Chamberlain [aut, cre],
+  Karthik Ram [aut],
+  Ted Hart [aut]
+Maintainer: Scott Chamberlain <myrmecocystus@gmail.com>
+Repository: CRAN
+Date/Publication: 2015-07-04 19:56:34

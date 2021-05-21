@@ -1,0 +1,19 @@
+Package: SimJoint
+Type: Package
+Title: Simulate Joint Distribution
+Version: 0.1.1
+Author: Charlie Wusuo Liu
+Maintainer: Charlie Wusuo Liu <liuwusuo@gmail.com>
+Description: Simulate joint distribution given nonparametric marginals and their covariance structure characterized by a correlation matrix. The simulator engages the problem from a purely computational perspective. It assumes no statistical models such as copulas and parametric distributions, and can approximate the target correlations regardless of theoretical feasibility. The algorithm integrates and advances the Iman-Conover (1982) approach (<doi:10.1080/03610918208812265>) and the Ruscio-Kaczetow (2008) iteration (<doi:10.1080/00273170802285693>). The package is implemented in C++ and carefully designed toward computing speed, suitable for large input in a manycore environment. Precision of the approximation and computing speed both outperform various CRAN packages to date by a substantial margin. Benchmarks are detailed in function examples.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: Rcpp (>= 1.0.0), RcppParallel,
+LinkingTo: Rcpp, RcppParallel, RcppArmadillo
+SystemRequirements: GNU make
+Suggests: R.rsp
+VignetteBuilder: R.rsp
+NeedsCompilation: yes
+Packaged: 2019-06-12 05:18:03 UTC; Charlie
+Repository: CRAN
+Date/Publication: 2019-06-13 13:10:14 UTC

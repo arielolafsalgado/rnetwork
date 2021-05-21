@@ -1,0 +1,33 @@
+Package: Thermimage
+Type: Package
+Title: Thermal Image Analysis
+Version: 4.0.0
+Date: 2019-10-31
+Author: Glenn J. Tattersall
+Description: A collection of functions and routines for inputting thermal
+    image video files, plotting and converting binary raw data into estimates of
+    temperature.  First published 2015-03-26.  Written primarily for research purposes
+    in biological applications of thermal images.  v1 included the base calculations 
+    for converting thermal image binary values to temperatures. v2 included additional
+    equations for providing heat transfer calculations and an import function for thermal
+    image files (v2.2.3 fixed error importing thermal image to windows OS). v3. Added numerous
+    functions for converting thermal image, videos, rewriting and exporting.  
+    v3.1. Added new functions to convert files. v3.2.  Fixed the various functions related to finding frame times.
+    v4.0. fixed an error in atmospheric attenuation constants, affecting raw2temp and temp2raw functions.
+    Recommend update for use with long distance calculations.
+License: GPL (>= 2)
+Depends: R (>= 2.10)
+SystemRequirements: exiftool, perl, ffmpeg, imagemagick
+Suggests: fields
+Imports: tiff, png
+LazyData: true
+Maintainer: Glenn J. Tattersall <gtatters@brocku.ca>
+URL: https://cran.r-project.org/package=Thermimage,
+        https://github.com/gtatters/Thermimage
+BugReports: http://github.com/gtatters/Thermimage/issues
+Encoding: UTF-8
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-10-31 22:37:25 UTC; GlennTattersall
+Repository: CRAN
+Date/Publication: 2019-10-31 23:10:02 UTC

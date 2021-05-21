@@ -1,0 +1,44 @@
+Package: ascii
+Maintainer: Mark Clements <mark.clements@ki.se>
+License: GPL (>= 2)
+Title: Export R Objects to Several Markup Languages
+Type: Package
+Authors@R: c(person("David", "Hajage", role="aut", email="dhajage@gmail.com"),
+	person("Mark", "Clements", role=c("cre","ctb"), email="mark.clements@ki.se"),
+	person("Seth", "Falcon", role="ctb", email="seth@userprimary.net"),
+	person("Terry", "Therneau", role="ctb", email="therneau.terry@mayo.edu"),
+	person("Matti","Pastell", role="ctb"),
+	person("Friedrich", "Leisch", role="ctb"))
+Description: Coerce R object to 'asciidoc', 'txt2tags',
+    'restructuredText', 'org', 'textile' or 'pandoc' syntax.
+    Package comes with a set of drivers for 'Sweave'.
+Version: 2.3
+URL: http://github.com/mclements/ascii
+BugReports: http://github.com/mclements/ascii/issues
+Date: 2020-07-27
+Depends: R (>= 2.13), methods
+Imports: utils, digest, codetools, survival, stats, grDevices
+Suggests: Hmisc, xtable, R2HTML, knitr
+Collate: 'asciiAnova.r' 'asciiDataFrame.r' 'asciiDefault.r'
+        'asciiDensity.r' 'asciiDescr.r' 'asciiEpi.r' 'asciiGlm.r'
+        'asciiHmisc.r' 'asciiHtest.r' 'asciiList.r' 'asciiLm.r'
+        'asciiMatrix.r' 'asciiMemisc.r' 'asciiPrcomp.r'
+        'asciiSmoothSpline.r' 'asciiSummaryTable.r' 'asciiSurvival.r'
+        'asciiTable.r' 'asciiTs.r' 'asciiVector.r' 'bind.r' 'cbind.r'
+        'export.r' 'generic.r' 'groups.r' 'interleave.r'
+        'paste.matrix.r' 'plim.r' 'print.character.matrix.r'
+        'RweaveAscii.r' 'show.asciidoc.r' 'show.org.r' 'show.pandoc.r'
+        'show.r' 'show.rest.r' 'show.t2t.r' 'show.textile.r'
+        'SweaveAscii.r' 'tocharac.r' 'weaverAscii.r' 'zzz.r' 'print.r'
+        'cache_expr.R' 'weaver.R' 'unexported.R'
+RoxygenNote: 7.0.2
+NeedsCompilation: no
+Packaged: 2020-07-27 20:52:53 UTC; marcle
+Author: David Hajage [aut],
+  Mark Clements [cre, ctb],
+  Seth Falcon [ctb],
+  Terry Therneau [ctb],
+  Matti Pastell [ctb],
+  Friedrich Leisch [ctb]
+Repository: CRAN
+Date/Publication: 2020-07-27 23:50:02 UTC

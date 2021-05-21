@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package idiogramFISH</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Idiograms with Marks and Karyotype Indices [R package idiogramFISH version 1.16.7]" />
+<meta name="citation_author" content="Fernando Roa" />
+<meta name="citation_publication_date" content="2020-10-15" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=idiogramFISH" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=idiogramFISH" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="idiogramFISH: Idiograms with Marks and Karyotype Indices" />
+<meta name="og:description" content="Plot idiograms of karyotypes, plasmids, circular chr. having a set of data.frames for chromosome data and optionally mark data. Two styles of chromosomes can be used: without or with visible chromatids (when not circular). Supports micrometers, cM and Mb or any unit. Two styles of centromeres are available: triangular and rounded; and six styles of marks: square (squareLeft), dots, cM (cMLeft), cenStyle, upArrow, downArrow; its legend (label) can be drawn inline or to the right of karyotypes. Idiograms can also be plotted in concentric circles. It is possible to calculate chromosome indices by Levan et al. (1964) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fj.1601-5223.1964.tb01953.x&quot;&gt;doi:10.1111/j.1601-5223.1964.tb01953.x&lt;/a&gt;&amp;gt;, karyotype indices of Watanabe et al. (1999) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2FPL00013869&quot;&gt;doi:10.1007/PL00013869&lt;/a&gt;&amp;gt; and Romero-Zarco (1986) &amp;lt;&lt;a href=&quot;https://doi.org/10.2307%2F1221906&quot;&gt;doi:10.2307/1221906&lt;/a&gt;&amp;gt; and classify chromosomes by morphology Guerra (1986) and Levan et al. (1964)." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=idiogramFISH" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>idiogramFISH: Idiograms with Marks and Karyotype Indices</h2>
+<p>Plot idiograms of karyotypes, plasmids, circular chr. having a set of data.frames 
+    for chromosome data and optionally mark data. Two styles of chromosomes can be used: without or with 
+    visible chromatids (when not circular).
+    Supports micrometers, cM and Mb or any unit. Two styles of centromeres are available: triangular and rounded; 
+    and six styles of marks: square (squareLeft), dots, cM (cMLeft), cenStyle, upArrow, downArrow; 
+    its legend (label) can be drawn inline or to the right of karyotypes. Idiograms can also be plotted in 
+    concentric circles. It is possible to calculate chromosome indices by Levan et al. (1964) 
+    &lt;<a href="https://doi.org/10.1111%2Fj.1601-5223.1964.tb01953.x">doi:10.1111/j.1601-5223.1964.tb01953.x</a>&gt;, karyotype indices of Watanabe et al. (1999) 
+    &lt;<a href="https://doi.org/10.1007%2FPL00013869">doi:10.1007/PL00013869</a>&gt; and Romero-Zarco (1986) &lt;<a href="https://doi.org/10.2307%2F1221906">doi:10.2307/1221906</a>&gt; and classify chromosomes
+    by morphology Guerra (1986) and Levan et al. (1964).</p>
+<table summary="Package idiogramFISH summary">
+<tr>
+<td>Version:</td>
+<td>1.16.7</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../crayon/index.html">crayon</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../tidyr/index.html">tidyr</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../plyr/index.html">plyr</a>, <a href="../rentrez/index.html">rentrez</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../ggpubr/index.html">ggpubr</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/ggtree.html"><span class="BioC">ggtree</span></a>, <a href="../phytools/index.html">phytools</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/treeio.html"><span class="BioC">treeio</span></a>, <a href="../rmdformats/index.html">rmdformats</a>, <a href="../knitr/index.html">knitr</a>, <a href="../kableExtra/index.html">kableExtra</a>, <a href="../rvcheck/index.html">rvcheck</a>, <a href="../badger/index.html">badger</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../RCurl/index.html">RCurl</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-15</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Fernando Roa [aut, cre],
+  Mariana PC Telles [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Fernando Roa  &#x3c;&#x66;&#x72;&#x6f;&#x61;&#x6f;&#x20;&#x61;&#x74;&#x20;&#x75;&#x6e;&#x61;&#x6c;&#x2e;&#x65;&#x64;&#x75;&#x2e;&#x63;&#x6f;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://gitlab.com/ferroao/idiogramFISH/-/issues">https://gitlab.com/ferroao/idiogramFISH/-/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://ferroao.gitlab.io/manualidiogramfish/">https://ferroao.gitlab.io/manualidiogramfish/</a>,
+<a href="https://ferroao.gitlab.io/idiogramFISH">https://ferroao.gitlab.io/idiogramFISH</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>pandoc (&gt;= 2.0)</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">idiogramFISH citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_idiogramFISH.html">idiogramFISH results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package idiogramFISH downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="idiogramFISH.pdf"> idiogramFISH.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/AVignette.html">idiogramFISH</a><br/>
+<a href="vignettes/index.html">idiogramFISH vignette</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/idiogramFISH_1.16.7.tar.gz"> idiogramFISH_1.16.7.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/idiogramFISH_1.16.7.zip">idiogramFISH_1.16.7.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/idiogramFISH_1.16.7.zip">idiogramFISH_1.16.7.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/idiogramFISH_1.16.7.zip">idiogramFISH_1.16.7.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/idiogramFISH_1.16.7.tgz">idiogramFISH_1.16.7.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/idiogramFISH_1.16.7.tgz">idiogramFISH_1.16.7.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/idiogramFISH"> idiogramFISH archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=idiogramFISH"><samp>https://CRAN.R-project.org/package=idiogramFISH</samp></a>
+to link to this page.</p>
+</body>
+</html>

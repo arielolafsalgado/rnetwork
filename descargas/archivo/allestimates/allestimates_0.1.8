@@ -1,0 +1,29 @@
+Package: allestimates
+Type: Package
+Title: Effect Estimates from All Models
+Version: 0.1.8
+Authors@R: person("Zhiqiang", "Wang", email = "zhiqiang.wang@menzies.edu.au", role = c("aut", "cre"))
+Description: Estimates and plots effect estimates from models with all possible 
+    combinations of a list of variables. It can be used for assessing treatment 
+    effects in clinical trials or risk factors in bio-medical and epidemiological 
+    research. Like Stata command 'confall' (Wang Z (2007) <doi:10.1177/1536867X0700700203> ), 
+    'allestimates' calculates and stores all effect estimates, and plots them against p values or 
+    Akaike information criterion (AIC) values. It currently has functions for linear 
+    regression: all_lm(), logistic and Poisson regression: all_glm() and all_speedglm(), 
+    and Cox proportional hazards regression: all_cox(). 
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports: broom, ggplot2, speedglm, survival, tidyr, utils, stringr,
+        dplyr
+Depends: R (>= 2.10)
+RoxygenNote: 7.1.1
+Suggests: spelling, knitr, rmarkdown
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2020-07-12 01:17:50 UTC; uqzwang
+Author: Zhiqiang Wang [aut, cre]
+Maintainer: Zhiqiang Wang <zhiqiang.wang@menzies.edu.au>
+Repository: CRAN
+Date/Publication: 2020-07-12 07:20:09 UTC

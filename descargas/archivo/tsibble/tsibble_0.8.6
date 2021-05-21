@@ -1,0 +1,52 @@
+Type: Package
+Package: tsibble
+Title: Tidy Temporal Data Frames and Tools
+Version: 0.8.6
+Authors@R: 
+    c(person(given = "Earo",
+             family = "Wang",
+             role = c("aut", "cre"),
+             email = "earo.wang@gmail.com",
+             comment = c(ORCID = "0000-0001-6448-5260")),
+      person(given = "Di",
+             family = "Cook",
+             role = c("aut", "ths"),
+             comment = c(ORCID = "0000-0002-3813-7155")),
+      person(given = "Rob",
+             family = "Hyndman",
+             role = c("aut", "ths"),
+             comment = c(ORCID = "0000-0002-2140-5352")),
+      person(given = "Mitchell",
+             family = "O'Hara-Wild",
+             role = "aut",
+             comment = c(ORCID = "0000-0001-6729-7695")))
+Description: Provides a 'tbl_ts' class (the 'tsibble') for
+    temporal data in an data- and model-oriented format. The 'tsibble' provides
+    tools to easily manipulate and analyse temporal data, such as filling in 
+    time gaps and aggregating over calendar periods.
+License: GPL-3
+URL: https://tsibble.tidyverts.org
+BugReports: https://github.com/tidyverts/tsibble/issues
+Depends: R (>= 3.2.0)
+Imports: anytime (>= 0.3.1), dplyr (>= 0.8.1), lifecycle, lubridate (>=
+        1.7.0), purrr (>= 0.2.3), rlang (>= 0.2.0), tibble (>= 2.0.1),
+        tidyselect, vctrs (>= 0.2.0)
+Suggests: covr, crayon, furrr, ggplot2 (>= 2.2.0), hms, knitr,
+        nanotime, nycflights13 (>= 1.0.0), pillar (>= 1.0.1),
+        rmarkdown, spelling, testthat, tidyr (>= 1.0.0), timeDate
+VignetteBuilder: knitr
+RdMacros: lifecycle
+ByteCompile: true
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+RoxygenNote: 7.0.2
+NeedsCompilation: no
+Packaged: 2020-01-30 22:39:23 UTC; earo
+Author: Earo Wang [aut, cre] (<https://orcid.org/0000-0001-6448-5260>),
+  Di Cook [aut, ths] (<https://orcid.org/0000-0002-3813-7155>),
+  Rob Hyndman [aut, ths] (<https://orcid.org/0000-0002-2140-5352>),
+  Mitchell O'Hara-Wild [aut] (<https://orcid.org/0000-0001-6729-7695>)
+Maintainer: Earo Wang <earo.wang@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-01-31 06:20:11 UTC

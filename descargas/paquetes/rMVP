@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package rMVP</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Memory-Efficient, Visualize-Enhanced, Parallel-Accelerated GWAS Tool [R package rMVP version 1.0.4]" />
+<meta name="citation_author1" content="Lilin Yin" />
+<meta name="citation_author2" content="Haohao Zhang" />
+<meta name="citation_author3" content="Zhenshuang Tang" />
+<meta name="citation_author4" content="Jingya Xu" />
+<meta name="citation_author5" content="Dong Yin" />
+<meta name="citation_author6" content="Zhiwu Zhang" />
+<meta name="citation_author7" content="Xiaohui Yuan" />
+<meta name="citation_author8" content="Mengjin Zhu" />
+<meta name="citation_author9" content="Shuhong Zhao" />
+<meta name="citation_author10" content="Xinyun Li" />
+<meta name="citation_author11" content="Xiaolei Liu" />
+<meta name="citation_publication_date" content="2020-09-01" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=rMVP" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=rMVP" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="rMVP: Memory-Efficient, Visualize-Enhanced, Parallel-Accelerated GWAS Tool" />
+<meta name="og:description" content="A memory-efficient, visualize-enhanced, parallel-accelerated Genome-Wide Association Study (GWAS) tool. It can (1) effectively process large data, (2) rapidly evaluate population structure, (3) efficiently estimate variance components several algorithms, (4) implement parallel-accelerated association tests of markers three methods, (5) globally efficient design on GWAS process computing, (6) enhance visualization of related information. 'rMVP' contains three models GLM (Alkes Price (2006) &amp;lt;&lt;a href=&quot;https://doi.org/10.1038%2Fng1847&quot;&gt;doi:10.1038/ng1847&lt;/a&gt;&amp;gt;), MLM (Jianming Yu (2006) &amp;lt;&lt;a href=&quot;https://doi.org/10.1038%2Fng1702&quot;&gt;doi:10.1038/ng1702&lt;/a&gt;&amp;gt;) and FarmCPU (Xiaolei Liu (2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.1371%2Fjournal.pgen.1005767&quot;&gt;doi:10.1371/journal.pgen.1005767&lt;/a&gt;&amp;gt;); variance components estimation methods EMMAX (Hyunmin Kang (2008) &amp;lt;&lt;a href=&quot;https://doi.org/10.1534%2Fgenetics.107.080101&quot;&gt;doi:10.1534/genetics.107.080101&lt;/a&gt;&amp;gt;;), FaSTLMM (method: Christoph Lippert (2011) &amp;lt;&lt;a href=&quot;https://doi.org/10.1038%2Fnmeth.1681&quot;&gt;doi:10.1038/nmeth.1681&lt;/a&gt;&amp;gt;, R implementation from 'GAPIT2': You Tang and Xiaolei Liu (2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.1371%2Fjournal.pone.0107684&quot;&gt;doi:10.1371/journal.pone.0107684&lt;/a&gt;&amp;gt; and 'SUPER': Qishan Wang and Feng Tian (2014) &amp;lt;&lt;a href=&quot;https://doi.org/10.1371%2Fjournal.pone.0107684&quot;&gt;doi:10.1371/journal.pone.0107684&lt;/a&gt;&amp;gt;), and HE regression (Xiang Zhou (2017) &amp;lt;&lt;a href=&quot;https://doi.org/10.1214%2F17-AOAS1052&quot;&gt;doi:10.1214/17-AOAS1052&lt;/a&gt;&amp;gt;)." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=rMVP" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>rMVP: Memory-Efficient, Visualize-Enhanced, Parallel-Accelerated GWAS
+Tool</h2>
+<p>A memory-efficient, visualize-enhanced, parallel-accelerated Genome-Wide Association Study (GWAS) tool. It can
+    (1) effectively process large data, 
+    (2) rapidly evaluate population structure, 
+    (3) efficiently estimate variance components several algorithms, 
+    (4) implement parallel-accelerated association tests of markers three methods, 
+    (5) globally efficient design on GWAS process computing, 
+    (6) enhance visualization of related information. 
+    'rMVP' contains three models GLM (Alkes Price (2006) &lt;<a href="https://doi.org/10.1038%2Fng1847">doi:10.1038/ng1847</a>&gt;), MLM (Jianming Yu (2006) &lt;<a href="https://doi.org/10.1038%2Fng1702">doi:10.1038/ng1702</a>&gt;) 
+    and FarmCPU (Xiaolei Liu (2016) &lt;<a href="https://doi.org/10.1371%2Fjournal.pgen.1005767">doi:10.1371/journal.pgen.1005767</a>&gt;); variance components estimation methods EMMAX 
+    (Hyunmin Kang (2008) &lt;<a href="https://doi.org/10.1534%2Fgenetics.107.080101">doi:10.1534/genetics.107.080101</a>&gt;;), FaSTLMM (method: Christoph Lippert (2011) &lt;<a href="https://doi.org/10.1038%2Fnmeth.1681">doi:10.1038/nmeth.1681</a>&gt;, 
+    R implementation from 'GAPIT2': You Tang and Xiaolei Liu (2016) &lt;<a href="https://doi.org/10.1371%2Fjournal.pone.0107684">doi:10.1371/journal.pone.0107684</a>&gt; and 
+    'SUPER': Qishan Wang and Feng Tian (2014) &lt;<a href="https://doi.org/10.1371%2Fjournal.pone.0107684">doi:10.1371/journal.pone.0107684</a>&gt;), and HE regression 
+    (Xiang Zhou (2017) &lt;<a href="https://doi.org/10.1214%2F17-AOAS1052">doi:10.1214/17-AOAS1052</a>&gt;).</p>
+<table summary="Package rMVP summary">
+<tr>
+<td>Version:</td>
+<td>1.0.4</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>utils, stats, methods, graphics, grDevices, <a href="../MASS/index.html">MASS</a>, <a href="../Rcpp/index.html">Rcpp</a>, <a href="../bigmemory/index.html">bigmemory</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a>, <a href="../RcppEigen/index.html">RcppEigen</a>, <a href="../RcppProgress/index.html">RcppProgress</a>, <a href="../BH/index.html">BH</a>, <a href="../bigmemory/index.html">bigmemory</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../testthat/index.html">testthat</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-01</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Lilin Yin [aut],
+  Haohao Zhang [aut],
+  Zhenshuang Tang [aut],
+  Jingya Xu [aut],
+  Dong Yin [aut],
+  Zhiwu Zhang [aut],
+  Xiaohui Yuan [aut],
+  Mengjin Zhu [aut],
+  Shuhong Zhao [aut],
+  Xinyun Li [aut],
+  Qishan Wang [ctb],
+  Feng Tian [ctb],
+  Hyunmin Kang [ctb],
+  Xiang Zhou [ctb],
+  Xiaolei Liu [cre, aut, cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Xiaolei Liu  &#x3c;&#x78;&#x69;&#x61;&#x6f;&#x6c;&#x65;&#x69;&#x6c;&#x69;&#x75;&#x20;&#x61;&#x74;&#x20;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x68;&#x7a;&#x61;&#x75;&#x2e;&#x65;&#x64;&#x75;&#x2e;&#x63;&#x6e;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/xiaolei-lab/rMVP/issues">https://github.com/xiaolei-lab/rMVP/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/xiaolei-lab/rMVP">https://github.com/xiaolei-lab/rMVP</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>C++11</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="ChangeLog">ChangeLog</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_rMVP.html">rMVP results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package rMVP downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="rMVP.pdf"> rMVP.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/rMVP_1.0.4.tar.gz"> rMVP_1.0.4.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/rMVP_1.0.4.zip">rMVP_1.0.4.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/rMVP_1.0.4.zip">rMVP_1.0.4.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/rMVP_1.0.4.zip">rMVP_1.0.4.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/rMVP_1.0.4.tgz">rMVP_1.0.4.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/rMVP_1.0.4.tgz">rMVP_1.0.4.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/rMVP"> rMVP archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=rMVP"><samp>https://CRAN.R-project.org/package=rMVP</samp></a>
+to link to this page.</p>
+</body>
+</html>

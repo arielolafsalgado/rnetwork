@@ -1,0 +1,25 @@
+Package: kml
+Type: Package
+Title: K-Means for Longitudinal Data
+Version: 2.4
+Date: 2015-08-06
+Authors@R: c(person("Christophe","Genolini",role=c("cre","aut"),email="christophe.genolini@u-paris10.fr"),
+    person("Bruno","Falissard",role=c("ctb")))
+Description: An implementation of k-means specifically design
+        to cluster longitudinal data. It provides facilities to deal with missing
+        value, compute several quality criterion (Calinski and Harabatz,
+        Ray and Turie, Davies and Bouldin, BIC, ...) and propose a graphical
+        interface for choosing the 'best' number of clusters.
+License: GPL (>= 2)
+LazyData: no
+URL: http:www.r-project.org
+Collate: global.R clusterLongData.R parKml.R parChoice.R kml.R
+Depends: methods,clv,longitudinalData (>= 2.4)
+Encoding: latin1
+NeedsCompilation: yes
+Packaged: 2015-08-17 15:52:00 UTC; Christophe
+Author: Christophe Genolini [cre, aut],
+  Bruno Falissard [ctb]
+Maintainer: Christophe Genolini <christophe.genolini@u-paris10.fr>
+Repository: CRAN
+Date/Publication: 2015-08-18 15:46:36

@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package vcfR</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Manipulate and Visualize VCF Data [R package vcfR version 1.12.0]" />
+<meta name="citation_author1" content="Brian J. Knaus" />
+<meta name="citation_author2" content="Niklaus J. Grunwald" />
+<meta name="citation_publication_date" content="2020-09-01" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=vcfR" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=vcfR" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="vcfR: Manipulate and Visualize VCF Data" />
+<meta name="og:description" content="Facilitates easy manipulation of variant call format (VCF) data. Functions are provided to rapidly read from and write to VCF files. Once VCF data is read into R a parser function extracts matrices of data. This information can then be used for quality control or other purposes. Additional functions provide visualization of genomic data. Once processing is complete data may be written to a VCF file (*.vcf.gz). It also may be converted into other popular R objects (e.g., genlight, DNAbin). VcfR provides a link between VCF data and familiar R software." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=vcfR" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>vcfR: Manipulate and Visualize VCF Data</h2>
+<p>Facilitates easy manipulation of variant call format (VCF) data.
+    Functions are provided to rapidly read from and write to VCF files. Once
+    VCF data is read into R a parser function extracts matrices of data. This
+    information can then be used for quality control or other purposes. Additional
+    functions provide visualization of genomic data. Once processing is complete
+    data may be written to a VCF file (*.vcf.gz). It also may be converted into
+    other popular R objects (e.g., genlight, DNAbin). VcfR provides a link between
+    VCF data and familiar R software.</p>
+<table summary="Package vcfR summary">
+<tr>
+<td>Version:</td>
+<td>1.12.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0.1)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../ape/index.html">ape</a>, <a href="../dplyr/index.html">dplyr</a>, graphics, grDevices, <a href="../magrittr/index.html">magrittr</a>, <a href="../memuse/index.html">memuse</a>, methods, <a href="../pinfsc50/index.html">pinfsc50</a>, <a href="../Rcpp/index.html">Rcpp</a>, stats, <a href="../stringr/index.html">stringr</a>, <a href="../tibble/index.html">tibble</a>, utils, <a href="../vegan/index.html">vegan</a>, <a href="../viridisLite/index.html">viridisLite</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../adegenet/index.html">adegenet</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../knitr/index.html">knitr</a>, <a href="../poppr/index.html">poppr</a>, <a href="../reshape2/index.html">reshape2</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../scales/index.html">scales</a>, <a href="../testthat/index.html">testthat</a>, <a href="../tidyr/index.html">tidyr</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-01</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Brian J. Knaus <a href="https://orcid.org/0000-0003-1665-4343"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [cre, aut],
+  Niklaus J. Grunwald
+    <a href="https://orcid.org/0000-0003-1656-7602"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Eric C. Anderson [ctb],
+  David J. Winter [ctb],
+  Zhian N. Kamvar <a href="https://orcid.org/0000-0003-1458-7108"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Javier F. Tabima <a href="https://orcid.org/0000-0002-3603-2691"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Brian J. Knaus  &#x3c;&#x62;&#x72;&#x69;&#x61;&#x6e;&#x6b;&#x2e;&#x6c;&#x69;&#x73;&#x74;&#x73;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/knausb/vcfR">https://github.com/knausb/vcfR</a>,
+<a href="https://knausb.github.io/vcfR_documentation/">https://knausb.github.io/vcfR_documentation/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">vcfR citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_vcfR.html">vcfR results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package vcfR downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="vcfR.pdf"> vcfR.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/converting_data.html">Converting data</a><br/>
+<a href="vignettes/intro_to_vcfR.html">Introduction to vcfR</a><br/>
+<a href="vignettes/vcf_data.html">vcf data</a><br/>
+<a href="vignettes/workflow.html">vcfR workflow</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/vcfR_1.12.0.tar.gz"> vcfR_1.12.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/vcfR_1.12.0.zip">vcfR_1.12.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/vcfR_1.12.0.zip">vcfR_1.12.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/vcfR_1.12.0.zip">vcfR_1.12.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/vcfR_1.12.0.tgz">vcfR_1.12.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/vcfR_1.12.0.tgz">vcfR_1.12.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/vcfR"> vcfR archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package vcfR reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../GARCOM/index.html">GARCOM</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/MADSEQ.html"><span class="BioC">MADSEQ</span></a>, <a href="../mappoly/index.html">mappoly</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../LDheatmap/index.html">LDheatmap</a>, <a href="../MoBPS/index.html">MoBPS</a>, <a href="../onemap/index.html">onemap</a>, <a href="../pcadapt/index.html">pcadapt</a>, <a href="../perfectphyloR/index.html">perfectphyloR</a>, <a href="../rdiversity/index.html">rdiversity</a>, <a href="../rehh/index.html">rehh</a>, <a href="../SimRVSequences/index.html">SimRVSequences</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=vcfR"><samp>https://CRAN.R-project.org/package=vcfR</samp></a>
+to link to this page.</p>
+</body>
+</html>

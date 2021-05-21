@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package seer</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Feature-Based Forecast Model Selection [R package seer version 1.1.5]" />
+<meta name="citation_author1" content="Thiyanga Talagala" />
+<meta name="citation_author2" content="Rob J Hyndman" />
+<meta name="citation_author3" content="George Athanasopoulos" />
+<meta name="citation_publication_date" content="2020-06-08" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=seer" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=seer" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="seer: Feature-Based Forecast Model Selection" />
+<meta name="og:description" content="A novel meta-learning framework for forecast model selection using time series features. Many applications require a large number of time series to be forecast. Providing better forecasts for these time series is important in decision and policy making. We propose a classification framework which selects forecast models based on features calculated from the time series. We call this framework FFORMS (Feature-based FORecast Model Selection). FFORMS builds a mapping that relates the features of time series to the best forecast model using a random forest. 'seer' package is the implementation of the FFORMS algorithm. For more details see our paper at &amp;lt;&lt;a href=&quot;https://www.monash.edu/business/econometrics-and-business-statistics/research/publications/ebs/wp06-2018.pdf&quot;&gt;https://www.monash.edu/business/econometrics-and-business-statistics/research/publications/ebs/wp06-2018.pdf&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=seer" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>seer: Feature-Based Forecast Model Selection</h2>
+<p>A novel meta-learning framework for forecast model selection using time series features. Many applications require a large number of time series to be forecast. Providing better forecasts for these time series is important in decision and policy making. We propose a classification framework which selects forecast models based on features calculated from the time series. We call this framework FFORMS (Feature-based FORecast Model Selection). FFORMS builds a mapping that relates the features of time series to the best forecast model using a random forest. 'seer' package is the implementation of the FFORMS algorithm. For more details see our paper at &lt;<a href="https://www.monash.edu/business/econometrics-and-business-statistics/research/publications/ebs/wp06-2018.pdf">https://www.monash.edu/business/econometrics-and-business-statistics/research/publications/ebs/wp06-2018.pdf</a>&gt;.</p>
+<table summary="Package seer summary">
+<tr>
+<td>Version:</td>
+<td>1.1.5</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.2.3)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>stats, <a href="../urca/index.html">urca</a>, <a href="../forecast/index.html">forecast</a> (&ge; 8.3), <a href="../dplyr/index.html">dplyr</a>, <a href="../magrittr/index.html">magrittr</a>, <a href="../randomForest/index.html">randomForest</a>, <a href="../forecTheta/index.html">forecTheta</a>, <a href="../stringr/index.html">stringr</a>, <a href="../tibble/index.html">tibble</a>, <a href="../purrr/index.html">purrr</a>, <a href="../future/index.html">future</a>, <a href="../furrr/index.html">furrr</a>, utils, <a href="../tsfeatures/index.html">tsfeatures</a>, <a href="../MASS/index.html">MASS</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a> (&ge; 2.1.0), <a href="../covr/index.html">covr</a>, <a href="../repmis/index.html">repmis</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../tidyr/index.html">tidyr</a>, <a href="../Mcomp/index.html">Mcomp</a>, <a href="../GGally/index.html">GGally</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-08</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Thiyanga Talagala <a href="https://orcid.org/0000-0002-0656-9789"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Rob J Hyndman <a href="https://orcid.org/0000-0002-2140-5352"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ths, aut],
+  George Athanasopoulos [ths, aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Thiyanga Talagala  &#x3c;&#x74;&#x73;&#x74;&#x61;&#x6c;&#x61;&#x67;&#x61;&#x6c;&#x61;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/TimeSeries.html">TimeSeries</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_seer.html">seer results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package seer downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="seer.pdf"> seer.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/seer_1.1.5.tar.gz"> seer_1.1.5.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/seer_1.1.5.zip">seer_1.1.5.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/seer_1.1.5.zip">seer_1.1.5.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/seer_1.1.5.zip">seer_1.1.5.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/seer_1.1.5.tgz">seer_1.1.5.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/seer_1.1.5.tgz">seer_1.1.5.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/seer"> seer archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=seer"><samp>https://CRAN.R-project.org/package=seer</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,24 @@
+Package: jeek
+Type: Package
+Date: 2018-06-15
+Title: A Fast and Scalable Joint Estimator for Integrating Additional
+        Knowledge in Learning Multiple Related Sparse Gaussian
+        Graphical Models
+Version: 1.0.0
+Authors@R: c(person("Beilun", "Wang", role = c("aut", "cre"), email = "bw4mw@virginia.edu"), person("Yanjun", "Qi", role = "aut", email = "yanjun@virginia.edu"))
+Author: Beilun Wang [aut, cre],
+  Yanjun Qi [aut]
+Maintainer: Beilun Wang <bw4mw@virginia.edu>
+Description: Provides a fast and scalable joint estimator for integrating additional knowledge in learning multiple related sparse Gaussian Graphical Models (JEEK). The JEEK algorithm can be used to fast estimate multiple related precision matrices in a large-scale. For instance, it can identify multiple gene networks from multi-context gene expression datasets. By performing data-driven network inference from high-dimensional and heterogeneous data sets, this tool can help users effectively translate aggregated data into knowledge that take the form of graphs among entities. Please run demo(jeekDemo) to learn the basic functions provided by this package. For further details, please read the original paper: Beilun Wang, Arshdeep Sekhon, Yanjun Qi "A Fast and Scalable Joint Estimator for Integrating Additional Knowledge in Learning Multiple Related Sparse Gaussian Graphical Models" (ICML 2018) <arXiv:1806.00548>.
+Depends: R (>= 3.0.0), lpSolve, pcaPP, igraph
+Suggests: parallel
+License: GPL-2
+Encoding: UTF-8
+URL: https://github.com/QData/jeek
+BugReports: https://github.com/QData/jeek
+LazyData: true
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-06-13 14:53:50 UTC; beilunwang
+Repository: CRAN
+Date/Publication: 2018-06-14 19:24:50 UTC

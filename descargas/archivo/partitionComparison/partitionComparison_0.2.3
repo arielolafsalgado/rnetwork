@@ -1,0 +1,36 @@
+Package: partitionComparison
+Type: Package
+Title: Implements Measures for the Comparison of Two Partitions
+Version: 0.2.3
+Date: 2017-12-19
+Author: Fabian Ball [aut, cre, cph, ctb],
+    Andreas Geyer-Schulz [cph]
+Maintainer: Fabian Ball <fabian.ball@kit.edu>
+Description: Provides several measures ((dis)similarity, distance/metric,
+    correlation, entropy) for comparing two partitions of the same set of
+    objects. The different measures can be assigned to three different
+    classes: Pair comparison (containing the famous Jaccard and Rand
+    indices), set based, and information theory based.
+    Many of the implemented measures can be found in
+    Albatineh AN, Niewiadomska-Bugaj M and Mihalko D (2006)
+    <doi:10.1007/s00357-006-0017-z> and
+    Meila M (2007) <doi:10.1016/j.jmva.2006.11.013>.
+    Partitions are represented by vectors of class labels which allow a
+    straightforward integration with existing clustering algorithms
+    (e.g. kmeans()). The package is mostly based on the S4 object system.
+URL: https://github.com/FabianBall/partitionComparison
+BugReports: https://github.com/FabianBall/partitionComparison/issues
+Depends: R (>= 3.2.0)
+License: MIT + file LICENSE
+Authors@R: c(
+    person("Fabian", "Ball",, "fabian.ball@kit.edu", c("aut", "cre", "cph", "ctb")),
+    person("Andreas", "Geyer-Schulz",, "andreas.geyer-schulz@kit.edu", c("cph"))
+    )
+RoxygenNote: 6.0.1
+RdMacros: Rdpack
+Imports: methods, Rdpack, lpSolve
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2017-12-19 12:48:52 UTC; jd5147
+Repository: CRAN
+Date/Publication: 2017-12-19 13:10:51 UTC

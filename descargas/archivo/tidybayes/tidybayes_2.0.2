@@ -1,0 +1,59 @@
+Package: tidybayes
+Title: Tidy Data and 'Geoms' for Bayesian Models
+Version: 2.0.2
+Date: 2020-03-18
+Authors@R: c(
+        person("Matthew", "Kay", role = c("aut", "cre"), email = "mjskay@umich.edu"),
+        person("Timothy", "Mastny", role = "ctb", email = "tim.mastny@gmail.com")
+    )
+Maintainer: Matthew Kay <mjskay@umich.edu>
+Description: Compose data for and extract, manipulate, and visualize posterior draws from Bayesian models
+    ('JAGS', 'Stan', 'rstanarm', 'brms', 'MCMCglmm', 'coda', ...) in a tidy data format. Functions are provided
+    to help extract tidy data frames of draws from Bayesian models and that generate point
+    summaries and intervals in a tidy format. In addition, 'ggplot2' 'geoms' and 'stats' are provided for
+    common visualization primitives like points with multiple uncertainty intervals, eye plots (intervals plus
+    densities), and fit curves with multiple, arbitrary uncertainty bands.
+Depends: R (>= 3.5.0)
+Imports: plyr, dplyr (>= 0.8.0), tidyr (>= 1.0.0), ggplot2 (>= 3.1.0),
+        coda, purrr (>= 0.2.3), rlang (>= 0.3.0), scales, grid,
+        forcats, HDInterval, arrayhelpers, tidyselect, tibble, magrittr
+Suggests: knitr, testthat, vdiffr (>= 0.3.0), svglite, ggstance (>=
+        0.3.2), rstan (>= 2.17.0), runjags, rjags, jagsUI, rstanarm (>=
+        2.19.2), emmeans, broom (>= 0.4.3), dotwhisker, MCMCglmm,
+        bayesplot, modelr, brms (>= 2.11.1), cowplot, covr, gdtools,
+        rmarkdown, ggrepel, bindrcpp, RColorBrewer, gganimate, gifski,
+        png, transformr
+License: GPL (>= 3)
+Language: en-US
+BugReports: https://github.com/mjskay/tidybayes/issues/new
+URL: http://mjskay.github.io/tidybayes,
+        https://github.com/mjskay/tidybayes
+VignetteBuilder: knitr
+RoxygenNote: 7.1.0
+LazyData: true
+Encoding: UTF-8
+Collate: "tidybayes-package.R" "add_draws.R" "binning_methods.R"
+        "combine_chains.R" "compare_levels.R" "compose_data.R" "data.R"
+        "density_bins.R" "deprecated.R" "draw_key_slabinterval.R"
+        "fitted_draws.R" "flip_aes.R" "gather_draws.R"
+        "gather_emmeans_draws.R" "gather_pairs.R" "gather_variables.R"
+        "geom.R" "geom_slabinterval.R" "geom_dotsinterval.R"
+        "geom_interval.R" "geom_intervalh.R" "geom_lineribbon.R"
+        "geom_pointinterval.R" "geom_pointintervalh.R"
+        "get_variables.R" "global_variables.R" "lkjcorr_marginal.R"
+        "onAttach.R" "parse_dist.R" "point_interval.R"
+        "predict_curve.R" "predicted_draws.R" "recover_types.R"
+        "residual_draws.R" "sample_draws.R" "scales.R" "spread_draws.R"
+        "stat.R" "stat_slabinterval.R" "stat_dist_slabinterval.R"
+        "stat_sample_slabinterval.R" "geom_eye.R" "stat_dotsinterval.R"
+        "stat_pointinterval.R" "stat_pointintervalh.R"
+        "stat_interval.R" "stat_intervalh.R" "stat_lineribbon.R"
+        "theme_tidybayes.R" "tidy_draws.R" "tidy_format_translators.R"
+        "tidybayes-models.R" "ungather_draws.R" "unspread_draws.R"
+        "util.R" "x_at_y.R"
+NeedsCompilation: no
+Packaged: 2020-03-19 14:11:31 UTC; matth
+Author: Matthew Kay [aut, cre],
+  Timothy Mastny [ctb]
+Repository: CRAN
+Date/Publication: 2020-03-19 15:10:02 UTC

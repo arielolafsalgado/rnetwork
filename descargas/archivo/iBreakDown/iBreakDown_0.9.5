@@ -1,0 +1,36 @@
+Package: iBreakDown
+Title: Model Agnostic Instance Level Variable Attributions
+Version: 0.9.5
+Authors@R: c(person("Przemyslaw", "Biecek", email = "przemyslaw.biecek@gmail.com", role = c("aut", "cre")),
+    person("Alicja", "Gosiewska", email = "alicjagosiewska@gmail.com", role = c("aut")),
+    person("Dariusz", "Komosinski", role = c("ctb")))
+Description: Model agnostic tool for decomposition of predictions from black boxes.
+    Supports additive attributions and attributions with interactions.
+    The Break Down Table shows contributions of every variable to a final prediction. 
+    The Break Down Plot presents variable contributions in a concise graphical way. 
+    This package works for classification and regression models. 
+    It is an extension of the 'breakDown' package (Staniak and Biecek 2018) <doi:10.32614/RJ-2018-072>,
+    with new and faster strategies for orderings. 
+    It supports interactions in explanations and has interactive visuals (implemented with 'D3.js' library). 
+    The methodology behind is described in the 'iBreakDown' article (Gosiewska and Biecek 2019) <arXiv:1903.11420>
+    This package is a part of the 'DrWhy.AI' universe (Biecek 2018) <arXiv:1806.08915>.
+Depends: R (>= 3.0)
+Date: 2019-04-01
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports: ggplot2, DALEX
+RoxygenNote: 6.1.1
+Suggests: knitr, rmarkdown, caret, randomForest, e1071, xgboost,
+        ranger, nnet, testthat, r2d3
+VignetteBuilder: knitr
+URL: https://ModelOriented.github.io/iBreakDown/
+BugReports: https://github.com/ModelOriented/iBreakDown/issues
+NeedsCompilation: no
+Packaged: 2019-04-01 20:19:10 UTC; pbiecek
+Author: Przemyslaw Biecek [aut, cre],
+  Alicja Gosiewska [aut],
+  Dariusz Komosinski [ctb]
+Maintainer: Przemyslaw Biecek <przemyslaw.biecek@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-04-04 12:20:03 UTC

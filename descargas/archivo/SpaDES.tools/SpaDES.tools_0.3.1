@@ -1,0 +1,62 @@
+Package: SpaDES.tools
+Type: Package
+Title: Additional Tools for Developing Spatially Explicit Discrete
+        Event Simulation (SpaDES) Models
+Description: Provides GIS and map utilities, plus additional modeling tools for
+    developing cellular automata, dynamic raster models,  and agent based models
+    in 'SpaDES'.
+    Included are various methods for spatial spreading, spatial agents, GIS
+    operations, random map generation, and others.
+    See '?SpaDES.tools' for an categorized overview of these additional tools.
+URL: http://spades-tools.predictiveecology.org,
+        https://github.com/PredictiveEcology/SpaDES.tools
+Date: 2019-01-29
+Version: 0.3.1
+Authors@R: c(
+    person("Alex M", "Chubaty", email = "alex.chubaty@gmail.com",
+    role = c("aut", "cre"), comment = c(ORCID = "https://orcid.org/0000-0001-7146-8135")),
+    person("Eliot J B", "McIntire", email = "eliot.mcintire@canada.ca",
+    role = c("aut"), comment=c(ORCID = "https://orcid.org/0000-0002-6914-8316")),
+    person("Yong", "Luo", email = "yluo1@lakeheadu.ca",
+    role = c("ctb")),
+    person("Steve", "Cumming", email = "Steve.Cumming@sbf.ulaval.ca",
+    role = c("ctb")),
+    person("Jean", "Marchal", email = "jean.d.marchal@gmail.com",
+    role = c("ctb")),
+    person("Her Majesty the Queen in Right of Canada, as represented by the Minister of Natural Resources Canada",
+    role = "cph")
+    )
+Depends: R (>= 3.3.0)
+Imports: bit (>= 1.1-12), checkmate (>= 1.8.2), CircStats (>= 0.2-4),
+        data.table (>= 1.10.4), fastmatch (>= 1.1-0), ff (>= 2.2-13),
+        ffbase (>= 0.12.3), fpCompare (>= 0.2.1), magrittr, methods,
+        parallel, quickPlot, raster (>= 2.5-8), Rcpp (>= 0.12.12),
+        reproducible (>= 0.2.0), rgeos, sp (>= 1.2-4), stats
+Suggests: DEoptim (>= 2.2-4), dplyr, gdalUtils, knitr, mgcv,
+        microbenchmark, profvis, RandomFields (>= 3.1.24), RColorBrewer
+        (>= 1.1-2), rmarkdown, testthat (>= 1.0.2)
+Encoding: UTF-8
+Language: en-CA
+LinkingTo: Rcpp
+License: GPL-3
+BugReports: https://github.com/PredictiveEcology/SpaDES.tools/issues
+ByteCompile: yes
+Collate: 'RcppExports.R' 'heading.R' 'SELES.R'
+        'distanceFromEachPoint.R' 'environment.R' 'initialize.R'
+        'mapReduce.R' 'mergeRaster.R' 'movement.R' 'neighbourhood.R'
+        'numerical-comparisons.R' 'probability.R' 'resample.R'
+        'rings.R' 'spades-tools-deprecated.R' 'spades-tools-package.R'
+        'splitRaster.R' 'spread.R' 'spread2.R' 'zzz.R'
+RoxygenNote: 6.1.1
+NeedsCompilation: yes
+Packaged: 2019-02-01 15:35:59 UTC; achubaty
+Author: Alex M Chubaty [aut, cre] (<https://orcid.org/0000-0001-7146-8135>),
+  Eliot J B McIntire [aut] (<https://orcid.org/0000-0002-6914-8316>),
+  Yong Luo [ctb],
+  Steve Cumming [ctb],
+  Jean Marchal [ctb],
+  Her Majesty the Queen in Right of Canada, as represented by the
+    Minister of Natural Resources Canada [cph]
+Maintainer: Alex M Chubaty <alex.chubaty@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-02-01 18:03:21 UTC

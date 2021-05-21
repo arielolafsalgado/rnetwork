@@ -1,0 +1,34 @@
+Package: productivity
+Version: 0.1.0
+Date: 2016-11-14
+Title: Indices of Productivity Using Data Envelopment Analysis (DEA)
+Authors@R: c(
+  person("K Hervé", "Dakpo", role = "aut"),
+  person("Yann", "Desjeux", , "yann.desjeux@inra.fr", role = c("aut","cre")),
+  person("Laure", "Latruffe", role = "aut"))
+Maintainer: Yann Desjeux <yann.desjeux@inra.fr>
+Description: 
+  Various transitive measures of productivity and profitability, in levels and changes, are computed. 
+  In addition to the classic Malmquist productivity index, the 'productivity' package contains also the 
+  multiplicatively complete and transitive Färe-Primont and Lowe indices.
+  These indices are also decomposed into different components providing insightful information on 
+  the sources of productivity and profitability improvements. 
+  In the use of Malmquist productivity index, the technological change index is further decomposed 
+  into bias technological change components.
+  For the transitive Färe-Primont and Lowe measures, it is possible to rule out technological change.
+  The package also allows to prohibit negative technological change.
+  All the estimations are based on the nonparametric Data Envelopment Analysis (DEA) and several 
+  assumptions regarding returns to scale are available (i.e. CRS, VRS, NIRS, NDRS).
+  The package allows parallel computing by default, depending on the user's computer configuration.
+Depends: R (>= 2.16)
+Imports: doParallel, foreach, parallel, Rglpk, utils
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: no
+Packaged: 2016-11-14 09:44:06 UTC; ydesjeux
+Author: K Hervé Dakpo [aut],
+  Yann Desjeux [aut, cre],
+  Laure Latruffe [aut]
+Repository: CRAN
+Date/Publication: 2016-11-14 11:32:48

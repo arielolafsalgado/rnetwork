@@ -1,0 +1,40 @@
+Package: dti
+Version: 1.3-0.3
+Date: 2018-12-20
+Title: Analysis of Diffusion Weighted Imaging (DWI) Data
+Authors@R: c(person("Karsten", "Tabelow", role = c("aut", "cre"),
+                    email = "karsten.tabelow@wias-berlin.de"),
+             person("Joerg", "Polzehl", role = c("aut"),
+                    email = "joerg.polzehl@wias-berlin.de"),
+             person("Felix", "Anker", role = c("ctb")))
+Author: Karsten Tabelow [aut, cre],
+  Joerg Polzehl [aut],
+  Felix Anker [ctb]
+Maintainer: Karsten Tabelow <karsten.tabelow@wias-berlin.de>
+Depends: R (>= 3.1.0), awsMethods (>= 1.0-1), adimpro, rgl
+SystemRequirements: gsl
+Imports: methods, parallel, oro.nifti (>= 0.3.9), oro.dicom, gsl,
+        quadprog
+LazyData: TRUE
+Description: Diffusion Weighted Imaging (DWI) is a Magnetic Resonance Imaging
+             modality, that measures diffusion of water in tissues like the human
+             brain. The package contains R-functions to process diffusion-weighted
+             data. The functionality includes diffusion tensor imaging (DTI),
+             diffusion kurtosis imaging (DKI), modeling for high angular resolution
+             diffusion weighted imaging (HARDI) using Q-ball-reconstruction and
+             tensor mixture models, several methods for structural adaptive
+             smoothing including POAS and msPOAS, and a streamline fiber tracking
+             for tensor and tensor mixture models.
+             The package provides functionality to manipulate and visualize results
+             in 2D and 3D.
+License: GPL (>= 2)
+Copyright: This package is Copyright (C) 2005-2018 Weierstrass
+        Institute for Applied Analysis and Stochastics.
+URL: http://www.wias-berlin.de/research/ats/imaging/
+Suggests: covr
+RoxygenNote: 6.1.0
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2018-12-20 12:11:27 UTC; tabelow
+Repository: CRAN
+Date/Publication: 2018-12-20 13:20:03 UTC

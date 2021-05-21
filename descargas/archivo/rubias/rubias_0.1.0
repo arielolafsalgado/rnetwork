@@ -1,0 +1,29 @@
+Package: rubias
+Type: Package
+Title: Bayesian Inference from the Conditional Genetic Stock
+        Identification Model
+Version: 0.1.0
+Authors@R: c(
+    person(given = c("Eric", "C."), family = "Anderson", email = "eric.anderson@noaa.gov", role = c("aut", "cre")),
+    person(given = "Ben", family = "Moran", email = "moran.ben@husky.neu.edu", role = c("aut"))
+  )
+Maintainer: Eric C. Anderson <eric.anderson@noaa.gov>
+Description: Implements Bayesian inference for the conditional genetic 
+    stock identification model.  It allows inference of mixed fisheries and also 
+    simulation of mixtures to predict accuracy.  A full description of the underlying
+    methods is in review at Canadian Journal of Fisheries and Aquatic Sciences.
+License: CC0
+LazyData: TRUE
+Depends: R (>= 3.3.0)
+Imports: dplyr, ggplot2, gtools, magrittr, Rcpp (>= 0.12.5), readr,
+        rlang, stringr, tibble, tidyr
+LinkingTo: Rcpp
+RoxygenNote: 6.0.1
+Suggests: knitr, rmarkdown, tidyverse
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2018-01-26 20:27:34 UTC; eric.anderson
+Author: Eric C. Anderson [aut, cre],
+  Ben Moran [aut]
+Repository: CRAN
+Date/Publication: 2018-01-29 10:12:38 UTC

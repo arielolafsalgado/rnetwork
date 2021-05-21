@@ -1,0 +1,40 @@
+Package: multimark
+Type: Package
+Title: Capture-Mark-Recapture Analysis using Multiple Non-Invasive
+        Marks
+Version: 2.0.1
+Date: 2017-06-30
+Depends: R (>= 3.2.1)
+Imports: parallel, Matrix, coda, statmod, RMark, Brobdingnag, mvtnorm,
+        graphics, methods, stats, utils, prodlim, sp, raster
+Authors@R: c(person("Brett T.", "McClintock", email = "brett.mcclintock@noaa.gov",role = c("aut", "cre")),person("Acho", "Arnold",role = c("ctb","cph"), comment = "C original matrix library, https://github.com/najela/matrix.h"),person("Barry", "Brown",role = "ctb", comment = "Fortran original ranlib library"),person("James", "Lovato",role = "ctb", comment = "Fortran original ranlib library"),person("John", "Burkardt",role = "ctb", comment = "C original ranlib library, http://people.sc.fsu.edu/~jburkardt/c_src/ranlib"),person("Cleve", "Moler",role = "ctb", comment = "C original linpack library, http://www.kkant.net/geist/ranlib/"),person("Arjun", "Gopalaswamy",role = "ctb", comment = "modified snippets of R package SPACECAP code"))
+Description: Traditional and spatial capture-mark-recapture analysis with
+    multiple non-invasive marks. The models implemented in 'multimark' combine
+    encounter history data arising from two different non-invasive ``marks'',
+    such as images of left-sided and right-sided pelage patterns of bilaterally
+    asymmetrical species, to estimate abundance and related demographic
+    parameters while accounting for imperfect detection. Bayesian models are
+    specified using simple formulae and fitted using Markov chain Monte Carlo.
+    Addressing deficiencies in currently available software, 'multimark' also
+    provides a user-friendly interface for performing Bayesian multimodel
+    inference using non-spatial or spatial capture-recapture data consisting of a single
+    conventional mark or multiple non-invasive marks.
+License: GPL-2
+LazyData: yes
+ByteCompile: TRUE
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2017-06-30 18:09:56 UTC; brettmcclintock
+Author: Brett T. McClintock [aut, cre],
+  Acho Arnold [ctb, cph] (C original matrix library,
+    https://github.com/najela/matrix.h),
+  Barry Brown [ctb] (Fortran original ranlib library),
+  James Lovato [ctb] (Fortran original ranlib library),
+  John Burkardt [ctb] (C original ranlib library,
+    http://people.sc.fsu.edu/~jburkardt/c_src/ranlib),
+  Cleve Moler [ctb] (C original linpack library,
+    http://www.kkant.net/geist/ranlib/),
+  Arjun Gopalaswamy [ctb] (modified snippets of R package SPACECAP code)
+Maintainer: Brett T. McClintock <brett.mcclintock@noaa.gov>
+Repository: CRAN
+Date/Publication: 2017-06-30 20:49:00 UTC

@@ -1,0 +1,34 @@
+Package: cocor
+Type: Package
+Title: Comparing Correlations
+Author: Birk Diedenhofen [aut, cre]
+Maintainer: Birk Diedenhofen <mail@birkdiedenhofen.de>
+Depends: methods
+Suggests: testthat
+Enhances: rkward
+Imports: stats
+Description: Statistical tests for the comparison between two
+    correlations based on either independent or dependent groups.
+    Dependent correlations can either be overlapping or
+    nonoverlapping. A web interface is available at
+    http://comparingcorrelations.org. A plugin for the R GUI and
+    IDE RKWard is included. Please install RKWard from
+    https://rkward.kde.org to use this feature. The respective R
+    package 'rkward' cannot be installed directly from a
+    repository, as it is a part of RKWard.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyLoad: yes
+URL: http://comparingcorrelations.org
+Authors@R: c(person(given="Birk", family="Diedenhofen",
+        email="mail@birkdiedenhofen.de", role=c("aut", "cre")))
+Version: 1.1-2
+Date: 2015-10-17
+Collate: '0helper.r' 'as.htest.r' 'cocor-package.R'
+        'cocor.dep.groups.nonoverlap.r' 'cocor.dep.groups.overlap.r'
+        'cocor.indep.groups.r' 'cocor.r' 'get.cocor.input.r'
+        'get.cocor.results.r'
+NeedsCompilation: no
+Packaged: 2015-10-17 13:36:55 UTC; birk
+Repository: CRAN
+Date/Publication: 2015-10-18 10:06:56

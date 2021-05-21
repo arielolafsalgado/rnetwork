@@ -1,0 +1,68 @@
+Package: collapse
+Title: Advanced and Fast Data Transformation
+Version: 1.3.1
+Date: 2020-08-10
+Authors@R: c(
+           person("Sebastian", "Krantz", role = c("aut", "cre"), 
+                  email = "sebastian.krantz@graduateinstitute.ch"),
+           person("Matt", "Dowle", role = "ctb"),
+           person("Arun", "Srinivasan", role = "ctb"),
+           person("Simen", "Gaure", role = "ctb"),
+           person("Dirk", "Eddelbuettel", role = "ctb"),
+           person("R Core Team and contributors worldwide", role = "ctb"),
+           person("Martyn", "Plummer", role = "cph"),
+           person("1999-2016 The R Core Team", role = "cph")
+           )
+Description: A C/C++ based package for advanced data transformation and 
+    statistical computing in R that is extremely fast, flexible and 
+    parsimonious to code with and programmer friendly. 
+    It is well integrated with 'dplyr', 'plm' and 'data.table'.
+    --- Key Features: ---
+    (1) Advanced statistical programming: A full set of fast statistical functions 
+        supporting grouped and weighted computations on vectors, matrices and 
+        data frames. Fast and programmable grouping, ordering, unique values / rows, 
+        factor generation and interactions. Fast and flexible functions for data 
+        manipulation and data object conversions.
+    (2) Advanced aggregation: Fast and easy multi-data-type, multi-function, 
+        weighted, parallelized and fully customized data aggregation.
+    (3) Advanced transformations: Fast (grouped) replacing and sweeping out of 
+        statistics, and (grouped, weighted) scaling / standardizing, between 
+        (averaging) and (quasi-)within (centering / demeaning) transformations, 
+        higher-dimensional centering (i.e. multiple fixed effects transformations), 
+        linear prediction and partialling-out.
+    (4) Advanced time-computations: Fast (sequences of) lags / leads, and 
+        (lagged / leaded, iterated, quasi-, log-) differences and growth 
+        rates on (unordered) time series and panel data. Multivariate auto-, 
+        partial- and cross-correlation functions for panel data. 
+        Panel data to (ts-)array conversions.
+    (5) List processing: (Recursive) list search / identification, extraction / 
+        subsetting, data-apply, and generalized row-binding / unlisting in 2D.
+    (6) Advanced data exploration: Fast (grouped, weighted, panel-decomposed) 
+        summary statistics for complex multilevel / panel data.
+URL: https://sebkrantz.github.io/collapse/,
+        https://github.com/SebKrantz/collapse,
+        https://twitter.com/collapse_R
+BugReports: https://github.com/SebKrantz/collapse/issues
+License: GPL (>= 2) | file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: Rcpp (>= 1.0.1), lfe (>= 2.7)
+LinkingTo: Rcpp
+Suggests: dplyr, plm, data.table, matrixStats, magrittr, ggplot2,
+        scales, vars, knitr, rmarkdown, testthat, microbenchmark
+SystemRequirements: C++11
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2020-08-27 11:26:31 UTC; Sebastian Krantz
+Author: Sebastian Krantz [aut, cre],
+  Matt Dowle [ctb],
+  Arun Srinivasan [ctb],
+  Simen Gaure [ctb],
+  Dirk Eddelbuettel [ctb],
+  R Core Team and contributors worldwide [ctb],
+  Martyn Plummer [cph],
+  1999-2016 The R Core Team [cph]
+Maintainer: Sebastian Krantz <sebastian.krantz@graduateinstitute.ch>
+Repository: CRAN
+Date/Publication: 2020-08-27 17:40:03 UTC

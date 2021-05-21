@@ -1,0 +1,24 @@
+Package: nonet
+Title: Weighted Average Ensemble without Training Labels
+Version: 0.3.0
+Authors@R: c(person("Aviral", "Vijay", role = c("aut", "cre"), email = "aviral.vijay@gslab.com"), person("Sameer", "Mahajan", role = "aut", email = "sameer.mahajan@gslab.com"))
+Description: It provides ensemble capabilities to supervised and unsupervised learning models predictions without using training labels. It decides the relative weights of the different models predictions by using best models predictions as response variable and rest of the mo. User can decide the best model, therefore, It provides freedom to user to ensemble models based on their design solutions.
+Depends: R (>= 3.5.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: TRUE
+Imports: caret (>= 6.0.78), dplyr, randomForest, ggplot2, rlist (>=
+        0.4.6.1), glmnet, tidyverse, e1071, purrr, pROC (>= 1.13.0),
+        rlang (<= 0.3.0.1),
+RoxygenNote: 6.1.1
+Suggests: testthat, knitr, rmarkdown, ClusterR
+URL: https://aviralvijay-gslab.github.io/nonet/
+BugReports: https://github.com/AviralVijay-GSLab/nonet/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-12-20 10:12:41 UTC; GS-1854
+Author: Aviral Vijay [aut, cre],
+  Sameer Mahajan [aut]
+Maintainer: Aviral Vijay <aviral.vijay@gslab.com>
+Repository: CRAN
+Date/Publication: 2018-12-31 22:20:03 UTC

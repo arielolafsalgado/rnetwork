@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package rmdcev</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Kuhn-Tucker and Multiple Discrete-Continuous Extreme Value Models [R package rmdcev version 1.2.4]" />
+<meta name="citation_author" content="Patrick Lloyd-Smith" />
+<meta name="citation_publication_date" content="2020-09-30" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=rmdcev" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=rmdcev" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="rmdcev: Kuhn-Tucker and Multiple Discrete-Continuous Extreme Value Models" />
+<meta name="og:description" content="Estimates and simulates Kuhn-Tucker demand models with individual heterogeneity. The package implements the multiple-discrete continuous extreme value (MDCEV) model and the Kuhn-Tucker specification common in the environmental economics literature on recreation demand. Latent class and random parameters specifications can be implemented and the models are fit using maximum likelihood estimation or Bayesian estimation. All models are implemented in Stan, which is a C++ package for performing full Bayesian inference (see Stan Development Team, 2019) &amp;lt;&lt;a href=&quot;https://mc-stan.org/&quot;&gt;https://mc-stan.org/&lt;/a&gt;&amp;gt;. The package also implements demand forecasting (Pinjari and Bhat (2011) &amp;lt;&lt;a href=&quot;https://repositories.lib.utexas.edu/handle/2152/23880&quot;&gt;https://repositories.lib.utexas.edu/handle/2152/23880&lt;/a&gt;&amp;gt;) and welfare calculation (Lloyd-Smith (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.jocm.2017.12.002&quot;&gt;doi:10.1016/j.jocm.2017.12.002&lt;/a&gt;&amp;gt;) for policy simulation." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=rmdcev" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>rmdcev: Kuhn-Tucker and Multiple Discrete-Continuous Extreme Value
+Models</h2>
+<p>Estimates and simulates Kuhn-Tucker demand models with individual heterogeneity. The package implements the multiple-discrete continuous extreme value (MDCEV) model and the Kuhn-Tucker specification common in the environmental economics literature on recreation demand. Latent class and random parameters specifications can be implemented and the models are fit using maximum likelihood estimation or Bayesian estimation. All models are implemented in Stan, which is a C++ package for performing full Bayesian inference (see Stan Development Team, 2019) &lt;<a href="https://mc-stan.org/">https://mc-stan.org/</a>&gt;. The package also implements demand forecasting (Pinjari and Bhat (2011) &lt;<a href="https://repositories.lib.utexas.edu/handle/2152/23880">https://repositories.lib.utexas.edu/handle/2152/23880</a>&gt;) and welfare calculation (Lloyd-Smith (2018) &lt;<a href="https://doi.org/10.1016%2Fj.jocm.2017.12.002">doi:10.1016/j.jocm.2017.12.002</a>&gt;) for policy simulation.</p>
+<table summary="Package rmdcev summary">
+<tr>
+<td>Version:</td>
+<td>1.2.4</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.0.0), <a href="../Rcpp/index.html">Rcpp</a> (&ge; 1.0.5), methods</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../rstan/index.html">rstan</a> (&ge; 2.21.0), <a href="../rstantools/index.html">rstantools</a> (&ge; 2.1.1), <a href="../RcppParallel/index.html">RcppParallel</a> (&ge;
+5.0.1), <a href="../dplyr/index.html">dplyr</a> (&ge; 0.7.8), <a href="../purrr/index.html">purrr</a>, <a href="../tibble/index.html">tibble</a>, <a href="../tidyr/index.html">tidyr</a>, utils, stats, <a href="../Formula/index.html">Formula</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../BH/index.html">BH</a> (&ge; 1.72.0), <a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppEigen/index.html">RcppEigen</a> (&ge; 0.3.3.3.0), <a href="../RcppParallel/index.html">RcppParallel</a> (&ge; 5.0.1), <a href="../rstan/index.html">rstan</a> (&ge; 2.21.0), <a href="../StanHeaders/index.html">StanHeaders</a> (&ge; 2.21.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-30</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Patrick Lloyd-Smith [aut, cre],
+  Trustees of Columbia University [cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Patrick Lloyd-Smith  &#x3c;&#x70;&#x61;&#x74;&#x72;&#x69;&#x63;&#x6b;&#x2e;&#x6c;&#x6c;&#x6f;&#x79;&#x64;&#x73;&#x6d;&#x69;&#x74;&#x68;&#x20;&#x61;&#x74;&#x20;&#x75;&#x73;&#x61;&#x73;&#x6b;&#x2e;&#x63;&#x61;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/plloydsmith/rmdcev/issues">https://github.com/plloydsmith/rmdcev/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/plloydsmith/rmdcev">https://github.com/plloydsmith/rmdcev</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>GNU make</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">rmdcev citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_rmdcev.html">rmdcev results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package rmdcev downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="rmdcev.pdf"> rmdcev.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/rmdcev_1.2.4.tar.gz"> rmdcev_1.2.4.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/rmdcev_1.2.4.zip">rmdcev_1.2.4.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/rmdcev_1.2.4.zip">rmdcev_1.2.4.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/rmdcev_1.2.3.zip">rmdcev_1.2.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/rmdcev_1.2.4.tgz">rmdcev_1.2.4.tgz</a>, r-oldrel: not available </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/rmdcev"> rmdcev archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=rmdcev"><samp>https://CRAN.R-project.org/package=rmdcev</samp></a>
+to link to this page.</p>
+</body>
+</html>

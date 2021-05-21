@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package polyCub</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Cubature over Polygonal Domains [R package polyCub version 0.7.1]" />
+<meta name="citation_author" content="Sebastian Meyer" />
+<meta name="citation_publication_date" content="2019-02-07" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=polyCub" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=polyCub" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="polyCub: Cubature over Polygonal Domains" />
+<meta name="og:description" content="Numerical integration of continuously differentiable functions f(x,y) over simple closed polygonal domains. The following cubature methods are implemented: product Gauss cubature (Sommariva and Vianello, 2007, &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs10543-007-0131-2&quot;&gt;doi:10.1007/s10543-007-0131-2&lt;/a&gt;&amp;gt;), the simple two-dimensional midpoint rule (wrapping 'spatstat' functions), adaptive cubature for radially symmetric functions via line integrate() along the polygon boundary (Meyer and Held, 2014, &amp;lt;&lt;a href=&quot;https://doi.org/10.1214%2F14-AOAS743&quot;&gt;doi:10.1214/14-AOAS743&lt;/a&gt;&amp;gt;, Supplement B), and integration of the bivariate Gaussian density based on polygon triangulation. For simple integration along the axes, the 'cubature' package is more appropriate." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=polyCub" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>polyCub: Cubature over Polygonal Domains</h2>
+<p>Numerical integration of continuously differentiable
+    functions f(x,y) over simple closed polygonal domains.
+    The following cubature methods are implemented:
+    product Gauss cubature (Sommariva and Vianello, 2007,
+    &lt;<a href="https://doi.org/10.1007%2Fs10543-007-0131-2">doi:10.1007/s10543-007-0131-2</a>&gt;),
+    the simple two-dimensional midpoint rule
+    (wrapping 'spatstat' functions),
+    adaptive cubature for radially symmetric functions via line
+    integrate() along the polygon boundary (Meyer and Held, 2014,
+    &lt;<a href="https://doi.org/10.1214%2F14-AOAS743">doi:10.1214/14-AOAS743</a>&gt;, Supplement B),
+    and integration of the bivariate Gaussian density based on
+    polygon triangulation.
+    For simple integration along the axes, the 'cubature' package
+    is more appropriate.</p>
+<table summary="Package polyCub summary">
+<tr>
+<td>Version:</td>
+<td>0.7.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.15.0), methods</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>grDevices, graphics, stats, <a href="../sp/index.html">sp</a> (&ge; 1.0-11)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../spatstat/index.html">spatstat</a>, <a href="../lattice/index.html">lattice</a>, <a href="../testthat/index.html">testthat</a>, <a href="../mvtnorm/index.html">mvtnorm</a>, <a href="../statmod/index.html">statmod</a>, <a href="../rgeos/index.html">rgeos</a>, <a href="../gpclib/index.html">gpclib</a>, <a href="../cubature/index.html">cubature</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../microbenchmark/index.html">microbenchmark</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-02-07</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Sebastian Meyer <a href="https://orcid.org/0000-0002-1791-9449"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre, trl],
+  Leonhard Held [ths],
+  Michael Hoehle [ths]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Sebastian Meyer  &#x3c;&#x73;&#x65;&#x62;&#x2e;&#x6d;&#x65;&#x79;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x66;&#x61;&#x75;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/bastistician/polyCub/issues">https://github.com/bastistician/polyCub/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/bastistician/polyCub">https://github.com/bastistician/polyCub</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">polyCub citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/NumericalMathematics.html">NumericalMathematics</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_polyCub.html">polyCub results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package polyCub downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="polyCub.pdf"> polyCub.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/polyCub.html">Getting started with polyCub</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/polyCub_0.7.1.tar.gz"> polyCub_0.7.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/polyCub_0.7.1.zip">polyCub_0.7.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/polyCub_0.7.1.zip">polyCub_0.7.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/polyCub_0.7.1.zip">polyCub_0.7.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/polyCub_0.7.1.tgz">polyCub_0.7.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/polyCub_0.7.1.tgz">polyCub_0.7.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/polyCub"> polyCub archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package polyCub reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../rase/index.html">rase</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../surveillance/index.html">surveillance</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;linking&nbsp;to:</td>
+<td><a href="../surveillance/index.html">surveillance</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=polyCub"><samp>https://CRAN.R-project.org/package=polyCub</samp></a>
+to link to this page.</p>
+</body>
+</html>

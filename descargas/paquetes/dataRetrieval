@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package dataRetrieval</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Retrieval Functions for USGS and EPA Hydrologic and Water Quality Data [R package dataRetrieval version 2.7.6]" />
+<meta name="citation_author1" content="Laura DeCicco" />
+<meta name="citation_author2" content="Robert Hirsch" />
+<meta name="citation_author3" content="David Lorenz" />
+<meta name="citation_author4" content="David Watkins" />
+<meta name="citation_publication_date" content="2020-03-11" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=dataRetrieval" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=dataRetrieval" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="dataRetrieval: Retrieval Functions for USGS and EPA Hydrologic and Water Quality Data" />
+<meta name="og:description" content="Collection of functions to help retrieve U.S. Geological Survey (USGS) and U.S. Environmental Protection Agency (EPA) water quality and hydrology data from web services. USGS web services are discovered from National Water Information System (NWIS) &amp;lt;&lt;a href=&quot;https://waterservices.usgs.gov/&quot;&gt;https://waterservices.usgs.gov/&lt;/a&gt;&amp;gt; and &amp;lt;&lt;a href=&quot;https://waterdata.usgs.gov/nwis&quot;&gt;https://waterdata.usgs.gov/nwis&lt;/a&gt;&amp;gt;. Both EPA and USGS water quality data are obtained from the Water Quality Portal &amp;lt;&lt;a href=&quot;https://www.waterqualitydata.us/&quot;&gt;https://www.waterqualitydata.us/&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=dataRetrieval" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>dataRetrieval: Retrieval Functions for USGS and EPA Hydrologic and Water
+Quality Data</h2>
+<p>Collection of functions to help retrieve U.S. Geological Survey
+    (USGS) and U.S. Environmental Protection Agency (EPA) water quality and
+    hydrology data from web services. USGS web services are discovered from 
+    National Water Information System (NWIS) &lt;<a href="https://waterservices.usgs.gov/">https://waterservices.usgs.gov/</a>&gt; and &lt;<a href="https://waterdata.usgs.gov/nwis">https://waterdata.usgs.gov/nwis</a>&gt;. 
+    Both EPA and USGS water quality data are obtained from the Water Quality Portal &lt;<a href="https://www.waterqualitydata.us/">https://www.waterqualitydata.us/</a>&gt;.</p>
+<table summary="Package dataRetrieval summary">
+<tr>
+<td>Version:</td>
+<td>2.7.6</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../httr/index.html">httr</a> (&ge; 1.0.0), <a href="../curl/index.html">curl</a>, <a href="../lubridate/index.html">lubridate</a> (&ge; 1.5.0), stats, utils, <a href="../xml2/index.html">xml2</a>, <a href="../readr/index.html">readr</a> (&ge; 1.0.0), <a href="../jsonlite/index.html">jsonlite</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../htmlTable/index.html">htmlTable</a>, <a href="../knitr/index.html">knitr</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-03-11</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Laura DeCicco <a href="https://orcid.org/0000-0002-3915-9487"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Robert Hirsch <a href="https://orcid.org/0000-0002-4534-075X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  David Lorenz [aut],
+  Jordan Read [ctb],
+  Jordan Walker [ctb],
+  Lindsay Carr [ctb],
+  David Watkins <a href="https://orcid.org/0000-0002-7544-0700"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Laura DeCicco  &#x3c;&#x6c;&#x64;&#x65;&#x63;&#x69;&#x63;&#x63;&#x6f;&#x20;&#x61;&#x74;&#x20;&#x75;&#x73;&#x67;&#x73;&#x2e;&#x67;&#x6f;&#x76;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/USGS-R/dataRetrieval/issues">https://github.com/USGS-R/dataRetrieval/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="https://creativecommons.org/publicdomain/zero/1.0/legalcode">CC0</a></td>
+</tr>
+<tr>
+<td>Copyright:</td>
+<td>This software is in the public domain because it contains
+materials that originally came from the United States
+Geological Survey, an agency of the United States Department of
+Interior.</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://pubs.usgs.gov/tm/04/a10/">https://pubs.usgs.gov/tm/04/a10/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">dataRetrieval citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Hydrology.html">Hydrology</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_dataRetrieval.html">dataRetrieval results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package dataRetrieval downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="dataRetrieval.pdf"> dataRetrieval.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/dataRetrieval.html">Introduction to the dataRetrieval package</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/dataRetrieval_2.7.6.tar.gz"> dataRetrieval_2.7.6.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/dataRetrieval_2.7.6.zip">dataRetrieval_2.7.6.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/dataRetrieval_2.7.6.zip">dataRetrieval_2.7.6.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/dataRetrieval_2.7.6.zip">dataRetrieval_2.7.6.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/dataRetrieval_2.7.6.tgz">dataRetrieval_2.7.6.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/dataRetrieval_2.7.6.tgz">dataRetrieval_2.7.6.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/dataRetrieval"> dataRetrieval archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package dataRetrieval reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../baytrends/index.html">baytrends</a>, <a href="../CityWaterBalance/index.html">CityWaterBalance</a>, <a href="../countyfloods/index.html">countyfloods</a>, <a href="../EGRET/index.html">EGRET</a>, <a href="../waterData/index.html">waterData</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../hydrolinks/index.html">hydrolinks</a>, <a href="../inldata/index.html">inldata</a>, <a href="../MGBT/index.html">MGBT</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=dataRetrieval"><samp>https://CRAN.R-project.org/package=dataRetrieval</samp></a>
+to link to this page.</p>
+</body>
+</html>

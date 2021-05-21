@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package sjPlot</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Data Visualization for Statistics in Social Science [R package sjPlot version 2.8.5]" />
+<meta name="citation_author" content="Daniel Lüdecke" />
+<meta name="citation_publication_date" content="2020-09-24" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=sjPlot" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=sjPlot" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="sjPlot: Data Visualization for Statistics in Social Science" />
+<meta name="og:description" content="Collection of plotting and table output functions for data visualization. Results of various statistical analyses (that are commonly used in social sciences) can be visualized using this package, including simple and cross tabulated frequencies, histograms, box plots, (generalized) linear models, mixed effects models, principal component analysis and correlation matrices, cluster analyses, scatter plots, stacked scales, effects plots of regression models (including interaction terms) and much more. This package supports labelled data." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=sjPlot" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>sjPlot: Data Visualization for Statistics in Social Science</h2>
+<p>Collection of plotting and table output functions for data
+    visualization. Results of various statistical analyses (that are commonly used
+    in social sciences) can be visualized using this package, including simple and
+    cross tabulated frequencies, histograms, box plots, (generalized) linear models,
+    mixed effects models, principal component analysis and correlation matrices, 
+    cluster analyses, scatter plots, stacked scales, effects plots of regression 
+    models (including interaction terms) and much more. This package supports
+    labelled data.</p>
+<table summary="Package sjPlot summary">
+<tr>
+<td>Version:</td>
+<td>2.8.5</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.2)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>graphics, grDevices, stats, utils, <a href="../bayestestR/index.html">bayestestR</a> (&ge; 0.6.0), <a href="../dplyr/index.html">dplyr</a> (&ge; 0.8.1), <a href="../effectsize/index.html">effectsize</a>, <a href="../ggeffects/index.html">ggeffects</a> (&ge; 0.14.3), <a href="../ggplot2/index.html">ggplot2</a> (&ge; 3.2.0), <a href="../knitr/index.html">knitr</a>, <a href="../insight/index.html">insight</a> (&ge; 0.8.0), <a href="../MASS/index.html">MASS</a>, <a href="../parameters/index.html">parameters</a> (&ge;
+0.7.0), <a href="../performance/index.html">performance</a> (&ge; 0.4.3), <a href="../purrr/index.html">purrr</a>, <a href="../rlang/index.html">rlang</a>, <a href="../scales/index.html">scales</a>, <a href="../sjlabelled/index.html">sjlabelled</a> (&ge; 1.1.2), <a href="../sjmisc/index.html">sjmisc</a> (&ge; 2.8.2), <a href="../sjstats/index.html">sjstats</a> (&ge; 0.17.8), <a href="../tidyr/index.html">tidyr</a> (&ge; 1.0.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../brms/index.html">brms</a>, <a href="../car/index.html">car</a>, clubSandwich, <a href="../cluster/index.html">cluster</a>, <a href="../cowplot/index.html">cowplot</a>, <a href="../GPArotation/index.html">GPArotation</a>, <a href="../ggrepel/index.html">ggrepel</a>, <a href="../glmmTMB/index.html">glmmTMB</a>, <a href="../gridExtra/index.html">gridExtra</a>, <a href="../ggridges/index.html">ggridges</a>, <a href="../httr/index.html">httr</a>, <a href="../lme4/index.html">lme4</a> (&ge; 1.1-12), <a href="../nFactors/index.html">nFactors</a>, <a href="../pscl/index.html">pscl</a>, <a href="../psych/index.html">psych</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../rstanarm/index.html">rstanarm</a>, <a href="../sandwich/index.html">sandwich</a>, <a href="../survey/index.html">survey</a>, <a href="../TMB/index.html">TMB</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-24</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Daniel Lüdecke <a href="https://orcid.org/0000-0002-8895-3206"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Alexander Bartel <a href="https://orcid.org/0000-0002-1280-6138"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Carsten Schwemmer [ctb],
+  Chuck Powell <a href="https://orcid.org/0000-0002-3606-2188"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Amir Djalovski [ctb],
+  Johannes Titz <a href="https://orcid.org/0000-0002-1102-5719"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Daniel Lüdecke  &#x3c;&#x64;&#x2e;&#x6c;&#x75;&#x65;&#x64;&#x65;&#x63;&#x6b;&#x65;&#x20;&#x61;&#x74;&#x20;&#x75;&#x6b;&#x65;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/strengejacke/sjPlot/issues">https://github.com/strengejacke/sjPlot/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://strengejacke.github.io/sjPlot/">https://strengejacke.github.io/sjPlot/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">sjPlot citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_sjPlot.html">sjPlot results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package sjPlot downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="sjPlot.pdf"> sjPlot.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/blackwhitefigures.html">Black &amp; White Figures for Print Journals</a><br/>
+<a href="vignettes/custplot.html">Customize Plot Appearance</a><br/>
+<a href="vignettes/plot_interactions.html">Plotting Interaction Effects of Regression Models</a><br/>
+<a href="vignettes/plot_likert_scales.html">Plotting Likert Scales</a><br/>
+<a href="vignettes/plot_marginal_effects.html">Plotting Marginal Effects of Regression Models</a><br/>
+<a href="vignettes/plot_model_estimates.html">Plotting Estimates (Fixed Effects) of Regression Models</a><br/>
+<a href="vignettes/sjtitemanalysis.html">Item Analysis of a Scale or an Index</a><br/>
+<a href="vignettes/tab_bayes.html">Summary of Bayesian Models as HTML Table</a><br/>
+<a href="vignettes/tab_mixed.html">Summary of Mixed Models as HTML Table</a><br/>
+<a href="vignettes/tab_model_estimates.html">Summary of Regression Models as HTML Table</a><br/>
+<a href="vignettes/tab_model_robust.html">Robust Estimation of Standard Errors</a><br/>
+<a href="vignettes/table_css.html">Customizing HTML tables</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/sjPlot_2.8.5.tar.gz"> sjPlot_2.8.5.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/sjPlot_2.8.5.zip">sjPlot_2.8.5.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/sjPlot_2.8.5.zip">sjPlot_2.8.5.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/sjPlot_2.8.5.zip">sjPlot_2.8.5.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/sjPlot_2.8.5.tgz">sjPlot_2.8.5.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/sjPlot_2.8.5.tgz">sjPlot_2.8.5.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/sjPlot"> sjPlot archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package sjPlot reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../pubh/index.html">pubh</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../rties/index.html">rties</a>, <a href="../sjlabelled/index.html">sjlabelled</a>, <a href="../sjmisc/index.html">sjmisc</a>, <a href="../sjstats/index.html">sjstats</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=sjPlot"><samp>https://CRAN.R-project.org/package=sjPlot</samp></a>
+to link to this page.</p>
+</body>
+</html>

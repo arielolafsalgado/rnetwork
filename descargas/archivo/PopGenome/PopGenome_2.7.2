@@ -1,0 +1,30 @@
+Package: PopGenome
+Type: Package
+Title: An Efficient Swiss Army Knife for Population Genomic Analyses
+Version: 2.7.2
+Date: 2019-12-30
+Authors@R: c(	person("Bastian", "Pfeifer", role = c("aut", "cre"), email = "bastianxpfeifer@gmail.com"),
+				person("Ulrich", "Wittelsbuerger", role = "ctb"),
+				person("Heng", "Li", role = "ctb"),
+				person("Bob", "Handsaker", role = "ctb")			)
+Depends: R (>= 2.14.2), ff
+Imports: methods
+Suggests: parallel, bigmemory, BASIX, WhopGenome, BlockFeST
+Description: Provides efficient tools for population genomics data analysis,
+	able to process individual loci, large sets of loci, or whole genomes. PopGenome <DOI:10.1093/molbev/msu136> not only 
+	implements a wide range of population genetics statistics, but also facilitates the easy 
+	implementation of new algorithms by other researchers. PopGenome is optimized for speed via 
+	the seamless integration of C code.
+License: GPL-3
+LazyLoad: yes
+Copyright: inst/COPYRIGHTS
+SystemRequirements: zlib headers and library.
+Repository: CRAN
+NeedsCompilation: yes
+Packaged: 2020-01-10 09:15:58 UTC; bastian
+Author: Bastian Pfeifer [aut, cre],
+  Ulrich Wittelsbuerger [ctb],
+  Heng Li [ctb],
+  Bob Handsaker [ctb]
+Maintainer: Bastian Pfeifer <bastianxpfeifer@gmail.com>
+Date/Publication: 2020-01-10 12:40:03 UTC

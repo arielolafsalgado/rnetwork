@@ -1,0 +1,36 @@
+Package: vein
+Type: Package
+Title: Vehicular Emissions Inventories
+Version: 0.6.0
+Date: 2019-01-11
+Authors@R: c(
+  person(given = "Sergio", family = "Ibarra-Espinosa",
+         role = c("aut", "cre"),
+         email = "sergio.ibarra@usp.br",
+         comment = c(ORCID = "0000-0002-3162-1905")),
+  person(given = "Daniel",
+         family = "Schuch",
+         role = c("ctb"),
+         email = "schuch@usp.br",
+         comment = c(ORCID = "0000-0001-5977-4519"))) 
+Description: Elaboration of vehicular emissions inventories,
+    consisting in four stages, pre-processing activity data, preparing 
+    emissions factors, estimating the emissions and post-processing of emissions 
+    in maps and databases. More details in Ibarra-Espinosa et al (2018) <doi:10.5194/gmd-11-2209-2018>. It is recommended to start with the function inventory, which requires that the user must know the vehicular composition of its study area,or in other words, the combination of of type of vehicles, size and fuel of the fleet.
+License: MIT + file LICENSE
+URL: https://atmoschem.github.io/vein/
+BugReports: https://github.com/atmoschem/vein/issues/
+LazyData: no
+Depends: R (>= 2.10)
+Imports: sf, sp, data.table, graphics, stats, units, methods, eixport
+Suggests: knitr, rmarkdown, testthat, covr, lwgeom, cptcity
+RoxygenNote: 6.1.1
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2019-01-12 16:38:12 UTC; sergio
+Author: Sergio Ibarra-Espinosa [aut, cre]
+    (<https://orcid.org/0000-0002-3162-1905>),
+  Daniel Schuch [ctb] (<https://orcid.org/0000-0001-5977-4519>)
+Maintainer: Sergio Ibarra-Espinosa <sergio.ibarra@usp.br>
+Repository: CRAN
+Date/Publication: 2019-01-12 18:30:03 UTC

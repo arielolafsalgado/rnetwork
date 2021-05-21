@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package rgenie</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Analysis of GenIE Experiments [R package rgenie version 1.0.0]" />
+<meta name="citation_author" content="Jeremy Schwartzentruber" />
+<meta name="citation_publication_date" content="2020-09-30" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=rgenie" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=rgenie" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="rgenie: Analysis of GenIE Experiments" />
+<meta name="og:description" content="The R package for GenIE analysis is designed to analyze the next-generation sequencing output from a set of GenIE experimental replicates. GenIE (genome-editing interrogation of enhancers) is an experimental method to evaluate the effects of individual single-nucleotide polymorphisms (SNPs) on gene transcription. It is based on targeted CRISPR-Cas9 genome editing in cultured cells to produce indels at a target locus, optionally with a homology-dependent recombination (HDR) construct to create precisely defined genomic changes. Following this, both genomic DNA (gDNA) and RNA are extracted from the same pool of cells, then complementary DNA (cDNA) is generated from the RNA. Both gDNA and cDNA are amplified with locus-specific PCR primers, in multiple replicates, and libraries of the experimental replicates are prepared for next-generation sequencing. The sequencing data from each replicate for each region should be aligned to either the full reference genome or to a locus-specific (amplicon) reference genome for analysis by 'rgenie'." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=rgenie" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>rgenie: Analysis of GenIE Experiments</h2>
+<p>The R package for GenIE analysis is designed to analyze the next-generation sequencing
+    output from a set of GenIE experimental replicates. GenIE (genome-editing interrogation of enhancers)
+    is an experimental method to evaluate the effects of individual single-nucleotide polymorphisms (SNPs)
+    on gene transcription. It is based on targeted CRISPR-Cas9 genome editing in cultured cells to
+    produce indels at a target locus, optionally with a homology-dependent recombination (HDR) construct
+    to create precisely defined genomic changes. Following this, both genomic DNA (gDNA) and RNA are
+    extracted from the same pool of cells, then complementary DNA (cDNA) is generated from the RNA. Both
+    gDNA and cDNA are amplified with locus-specific PCR primers, in multiple replicates, and libraries of
+    the experimental replicates are prepared for next-generation sequencing. The sequencing data from each
+    replicate for each region should be aligned to either the full reference genome or to a locus-specific
+    (amplicon) reference genome for analysis by 'rgenie'.</p>
+<table summary="Package rgenie summary">
+<tr>
+<td>Version:</td>
+<td>1.0.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../dplyr/index.html">dplyr</a> (&ge; 1.0.2), <a href="../ggplot2/index.html">ggplot2</a> (&ge; 3.3.2), <a href="../magrittr/index.html">magrittr</a> (&ge; 1.5), <a href="../stringr/index.html">stringr</a> (&ge; 1.4.0), <a href="../readr/index.html">readr</a> (&ge; 1.3.1), <a href="../tidyr/index.html">tidyr</a> (&ge; 1.1.2), <a href="../tibble/index.html">tibble</a> (&ge; 3.0.3), <a href="../forcats/index.html">forcats</a> (&ge; 0.5.0), stats, <a href="../cowplot/index.html">cowplot</a> (&ge; 0.9.4), <a href="../egg/index.html">egg</a> (&ge; 0.4.2), <a href="../ggdendro/index.html">ggdendro</a> (&ge; 0.1-20), <a href="../gridExtra/index.html">gridExtra</a> (&ge; 2.3), <a href="../FNN/index.html">FNN</a> (&ge;
+1.1.3), <a href="http://www.bioconductor.org/packages/release/bioc/html/variancePartition.html"><span class="BioC">variancePartition</span></a> (&ge; 1.14.0), <a href="http://www.bioconductor.org/packages/release/bioc/html/Rsamtools.html"><span class="BioC">Rsamtools</span></a> (&ge; 2.0.0), <a href="http://www.bioconductor.org/packages/release/bioc/html/IRanges.html"><span class="BioC">IRanges</span></a> (&ge; 2.18.1)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../devtools/index.html">devtools</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-30</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Jeremy Schwartzentruber [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Jeremy Schwartzentruber  &#x3c;&#x6a;&#x65;&#x72;&#x65;&#x6d;&#x79;&#x33;&#x37;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/jeremy37/rgenie/issues">https://github.com/jeremy37/rgenie/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/jeremy37/rgenie">https://github.com/jeremy37/rgenie</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">rgenie citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_rgenie.html">rgenie results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package rgenie downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="rgenie.pdf"> rgenie.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/introduction.html">rgenie Introduction</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/rgenie_1.0.0.tar.gz"> rgenie_1.0.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/rgenie_1.0.0.zip">rgenie_1.0.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/rgenie_1.0.0.zip">rgenie_1.0.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/rgenie_1.0.0.zip">rgenie_1.0.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: not available, r-oldrel: not available </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=rgenie"><samp>https://CRAN.R-project.org/package=rgenie</samp></a>
+to link to this page.</p>
+</body>
+</html>

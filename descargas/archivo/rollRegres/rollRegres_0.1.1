@@ -1,0 +1,28 @@
+Package: rollRegres
+Type: Package
+Title: Fast Rolling and Expanding Window Linear Regression
+Version: 0.1.1
+Authors@R: person("Benjamin", "Christoffersen", 
+                  email = "boennecd@gmail.com", 
+                  role = c("cre", "aut"))
+Description: Methods for fast rolling and expanding linear regression models. That is, series of linear regression models estimated on either an expanding window of data or a moving window of data. The methods use rank-one updates and downdates of the upper triangular matrix from a QR decomposition (see Dongarra, Moler, Bunch, and Stewart (1979) <doi:10.1137/1.9781611971811>).
+Copyright: Jack Dongarra, Jim Bunch, Cleve Moler, and Gilbert Stewart
+        due to the LINPACK routines `dchdd` and `dchud`.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp, checkmate
+Suggests: knitr, rmarkdown, testthat, zoo, roll, microbenchmark,
+        RcppParallel
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+BugReports: https://github.com/boennecd/rollRegres/issues
+SystemRequirements: C++11
+URL: https://github.com/boennecd/rollRegres
+NeedsCompilation: yes
+Packaged: 2018-09-12 18:34:35 UTC; User
+Author: Benjamin Christoffersen [cre, aut]
+Maintainer: Benjamin Christoffersen <boennecd@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-09-12 18:50:02 UTC

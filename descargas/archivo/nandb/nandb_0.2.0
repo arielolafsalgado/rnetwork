@@ -1,0 +1,33 @@
+Package: nandb
+Type: Package
+Title: Number and Brightness Image Analysis
+Version: 0.2.0
+Authors@R: c(person("Rory", "Nolan", email = "rorynoolan@gmail.com", 
+                    role = c("aut", "cre", "cph")),
+             person("Luis", "Alvarez", email = "lalvarez@well.ox.ac.uk",
+                    role = "ctb"),
+             person("Sergi", "Padilla-Parra", email = "spadilla@well.ox.ac.uk",
+                    role = c("ctb", "ths", "cph")))
+Maintainer: Rory Nolan <rorynoolan@gmail.com>
+URL: https://github.com/rorynolan/nandb
+BugReports: https://github.com/rorynolan/nandb/issues
+Description: Functions for calculation of molecular number and brightness from 
+    images, as detailed in Digman et al. 2008 <doi:10.1529/biophysj.107.114645>. 
+    Includes the implementation of the novel "automatic detrending" technique.
+License: BSD_3_clause + file LICENSE
+LazyData: TRUE
+LinkingTo: Rcpp, BH
+Imports: Rcpp, filesstrings, magrittr, readr, reshape2, R.utils,
+        autothresholdr, abind, viridis, dplyr, matrixStats,
+        BiocParallel, parallel, stringr, EBImage, RSAGA, ggplot2,
+        grDevices, RcppRoll, tibble, purrr, hexbin, ore, tiff
+RoxygenNote: 6.0.1
+Suggests: knitr, rmarkdown, covr, testthat
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2017-05-29 15:04:02 UTC; rnolan
+Author: Rory Nolan [aut, cre, cph],
+  Luis Alvarez [ctb],
+  Sergi Padilla-Parra [ctb, ths, cph]
+Repository: CRAN
+Date/Publication: 2017-05-29 16:11:29 UTC

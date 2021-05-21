@@ -1,0 +1,28 @@
+Package: valorate
+Version: 1.0-0
+Date: 2016-09-29
+Title: Velocity and Accuracy of the LOg-RAnk TEst
+Authors@R: c(person("Victor", "Trevino", role = c("aut", "cre"),
+    email = "vtrevino@itesm.mx"))
+Author: Victor Trevino [aut, cre]
+Maintainer: Victor Trevino <vtrevino@itesm.mx>
+Depends: R (>= 3.1.0), methods
+Imports: survival, graphics, utils, stats
+Description: The algorithm implemented in this package was
+    designed to quickly estimates the distribution of the 
+    log-rank especially for heavy unbalanced groups. VALORATE 
+    estimates the null distribution and the p-value of the 
+    log-rank test based on a recent formulation. For a given 
+    number of alterations that define the size of survival 
+    groups, the estimation involves a weighted sum of 
+    distributions that are conditional on a co-occurrence term 
+    where mutations and events are both present. The estimation 
+    of conditional distributions is quite fast allowing the 
+    analysis of large datasets in few minutes 
+    <http://bioinformatica.mty.itesm.mx/valorate>.
+License: GPL (>= 2)
+URL: http://bioinformatica.mty.itesm.mx/valorate
+NeedsCompilation: yes
+Packaged: 2016-10-02 16:49:16 UTC; victortrevino
+Repository: CRAN
+Date/Publication: 2016-10-02 22:54:53

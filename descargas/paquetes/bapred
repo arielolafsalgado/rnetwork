@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package bapred</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=bapred" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="bapred: Batch Effect Removal and Addon Normalization (in Phenotype Prediction using Gene Data)" />
+<meta name="og:description" content="Various tools dealing with batch effects, in particular enabling the removal of discrepancies between training and test sets in prediction scenarios. Moreover, addon quantile normalization and addon RMA normalization (Kostka &amp;amp; Spang, 2008) is implemented to enable integrating the quantile normalization step into prediction rules. The following batch effect removal methods are implemented: FAbatch, ComBat, (f)SVA, mean-centering, standardization, Ratio-A and Ratio-G. For each of these we provide an additional function which enables a posteriori ('addon') batch effect removal in independent batches ('test data'). Here, the (already batch effect adjusted) training data is not altered. For evaluating the success of batch effect adjustment several metrics are provided. Moreover, the package implements a plot for the visualization of batch effects using principal component analysis. The main functions of the package for batch effect adjustment are ba() and baaddon() which enable batch effect removal and addon batch effect removal, respectively, with one of the seven methods mentioned above. Another important function here is bametric() which is a wrapper function for all implemented methods for evaluating the success of batch effect removal. For (addon) quantile normalization and (addon) RMA normalization the functions qunormtrain(), qunormaddon(), rmatrain() and rmaaddon() can be used." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=bapred" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>bapred: Batch Effect Removal and Addon Normalization (in Phenotype
+Prediction using Gene Data)</h2>
+<p>Various tools dealing with batch effects, in particular enabling the 
+  removal of discrepancies between training and test sets in prediction scenarios.
+  Moreover, addon quantile normalization and addon RMA normalization (Kostka &amp; Spang, 
+  2008) is implemented to enable integrating the quantile normalization step into 
+  prediction rules. The following batch effect removal methods are implemented: 
+  FAbatch, ComBat, (f)SVA, mean-centering, standardization, Ratio-A and Ratio-G. 
+  For each of these we provide  an additional function which enables a posteriori 
+  ('addon') batch effect removal in independent batches ('test data'). Here, the
+  (already batch effect adjusted) training data is not altered. For evaluating the
+  success of batch effect adjustment several metrics are provided. Moreover, the 
+  package implements a plot for the visualization of batch effects using principal 
+  component analysis. The main functions of the package for batch effect adjustment 
+  are ba() and baaddon() which enable batch effect removal and addon batch effect 
+  removal, respectively, with one of the seven methods mentioned above. Another 
+  important function here is bametric() which is a wrapper function for all implemented
+  methods for evaluating the success of batch effect removal. For (addon) quantile 
+  normalization and (addon) RMA normalization the functions qunormtrain(), 
+  qunormaddon(), rmatrain() and rmaaddon() can be used.</p>
+<table summary="Package bapred summary">
+<tr>
+<td>Version:</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.1.0), <a href="../glmnet/index.html">glmnet</a>, <a href="../lme4/index.html">lme4</a>, <a href="../MASS/index.html">MASS</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/sva.html"><span class="BioC">sva</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/affyPLM.html"><span class="BioC">affyPLM</span></a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../FNN/index.html">FNN</a>, <a href="../fuzzyRankTests/index.html">fuzzyRankTests</a>, <a href="../mnormt/index.html">mnormt</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/affy.html"><span class="BioC">affy</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/Biobase.html"><span class="BioC">Biobase</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="http://www.bioconductor.org/packages/release/bioc/html/ArrayExpress.html"><span class="BioC">ArrayExpress</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2016-06-03</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Roman Hornung, David Causeur</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Roman Hornung  &#x3c;&#x68;&#x6f;&#x72;&#x6e;&#x75;&#x6e;&#x67;&#x20;&#x61;&#x74;&#x20;&#x69;&#x62;&#x65;&#x2e;&#x6d;&#x65;&#x64;&#x2e;&#x75;&#x6e;&#x69;&#x2d;&#x6d;&#x75;&#x65;&#x6e;&#x63;&#x68;&#x65;&#x6e;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">bapred citation info</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_bapred.html">bapred results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package bapred downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="bapred.pdf"> bapred.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/bapred_1.0.tar.gz"> bapred_1.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/bapred_1.0.zip">bapred_1.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/bapred_1.0.zip">bapred_1.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/bapred_1.0.zip">bapred_1.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/bapred_1.0.tgz">bapred_1.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/bapred_1.0.tgz">bapred_1.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/bapred"> bapred archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=bapred"><samp>https://CRAN.R-project.org/package=bapred</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,30 @@
+Package: bedr
+Type: Package
+Title: Genomic Region Processing using Tools Such as 'BEDTools',
+        'BEDOPS' and 'Tabix'
+Version: 1.0.4
+Date: 2017-10-12
+Authors@R: c(
+  person("Daryl", "Waggott", role = "aut"),
+  person("Syed", "Haider", role = "aut"),
+  person("Emilie", "Lalonde", role = "ctb"),
+  person("Clement", "Fung", role = "ctb"),
+  person("Paul", "C. Boutros", role = c("aut", "cre", "cph"), email = "Paul.Boutros@oicr.on.ca")
+  )
+Author: Daryl Waggott [aut], Syed Haider [aut], Emilie Lalonde [ctb], Clement Fung [ctb], Paul C. Boutros [aut, cre, cph]
+Maintainer: Paul C. Boutros <Paul.Boutros@oicr.on.ca>
+Description: Genomic regions processing using open-source command line tools such as 'BEDTools', 'BEDOPS' and 'Tabix'. 
+  These tools offer scalable and efficient utilities to perform genome arithmetic e.g indexing, formatting and merging.
+  bedr API enhances access to these tools as well as offers additional utilities for genomic regions processing.
+Depends: R (>= 3.0)
+SystemRequirements: Preferred genomic operations engine: 'BEDTools',
+        'BEDOPS' and 'Tabix'.
+Suggests: knitr (>= 1.4), rmarkdown (>= 0.9.5)
+VignetteBuilder: knitr
+License: GPL-2
+Imports: testthat (>= 0.7.1), VennDiagram (>= 1.6.4), data.table (>=
+        1.8.11), R.utils (>= 2.0.2), yaml (>= 2.1.10), parallel, grid
+NeedsCompilation: no
+Packaged: 2017-10-12 21:02:33 UTC; shaider
+Repository: CRAN
+Date/Publication: 2017-10-13 21:27:11 UTC

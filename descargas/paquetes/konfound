@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package konfound</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Quantify the Robustness of Causal Inferences [R package konfound version 0.2.2]" />
+<meta name="citation_author1" content="Joshua M Rosenberg" />
+<meta name="citation_author2" content="Ran Xu" />
+<meta name="citation_author3" content="Qinyun Lin" />
+<meta name="citation_author4" content="Kenneth A Frank" />
+<meta name="citation_publication_date" content="2020-08-18" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=konfound" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=konfound" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="konfound: Quantify the Robustness of Causal Inferences" />
+<meta name="og:description" content="Statistical methods that quantify the conditions necessary to alter inferences, also known as sensitivity analysis, are becoming increasingly important to a variety of quantitative sciences. A series of recent works, including Frank (2000) &amp;lt;&lt;a href=&quot;https://doi.org/10.1177%2F0049124100029002001&quot;&gt;doi:10.1177/0049124100029002001&lt;/a&gt;&amp;gt; and Frank et al. (2013) &amp;lt;&lt;a href=&quot;https://doi.org/10.3102%2F0162373713493129&quot;&gt;doi:10.3102/0162373713493129&lt;/a&gt;&amp;gt; extend previous sensitivity analyses by considering the characteristics of omitted variables or unobserved cases that would change an inference if such variables or cases were observed. These analyses generate statements such as &quot;an omitted variable would have to be correlated at xx with the predictor of interest (e.g., treatment) and outcome to invalidate an inference of a treatment effect&quot;. Or &quot;one would have to replace pp percent of the observed data with null hypothesis cases to invalidate the inference&quot;. We implement these recent developments of sensitivity analysis and provide modules to calculate these two robustness indices and generate such statements in R. In particular, the functions konfound(), pkonfound() and mkonfound() allow users to calculate the robustness of inferences for a user's own model, a single published study and multiple studies respectively." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=konfound" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>konfound: Quantify the Robustness of Causal Inferences</h2>
+<p>Statistical methods that quantify the conditions necessary to alter
+    inferences, also known as sensitivity analysis, are becoming increasingly
+    important to a variety of quantitative sciences. A series of recent works,
+    including Frank (2000) &lt;<a href="https://doi.org/10.1177%2F0049124100029002001">doi:10.1177/0049124100029002001</a>&gt; and Frank et al.
+    (2013) &lt;<a href="https://doi.org/10.3102%2F0162373713493129">doi:10.3102/0162373713493129</a>&gt; extend previous sensitivity analyses
+    by considering the characteristics of omitted variables or unobserved cases
+    that would change an inference if such variables or cases were observed. These
+    analyses generate statements such as "an omitted variable would have to be
+    correlated at xx with the predictor of interest (e.g., treatment) and outcome
+    to invalidate an inference of a treatment effect". Or "one would have to replace
+    pp percent of the observed data with null hypothesis cases to invalidate the
+    inference". We implement these recent developments of sensitivity analysis and
+    provide modules to calculate these two robustness indices and generate such
+    statements in R. In particular, the functions konfound(), pkonfound() and 
+    mkonfound() allow users to calculate the robustness of inferences for a user's 
+    own model, a single published study and multiple studies respectively.</p>
+<table summary="Package konfound summary">
+<tr>
+<td>Version:</td>
+<td>0.2.2</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../broom/index.html">broom</a>, <a href="../broom.mixed/index.html">broom.mixed</a>, <a href="../crayon/index.html">crayon</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../mice/index.html">mice</a>, <a href="../purrr/index.html">purrr</a>, <a href="../rlang/index.html">rlang</a>, <a href="../tidyr/index.html">tidyr</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../margins/index.html">margins</a>, <a href="../pbkrtest/index.html">pbkrtest</a>, <a href="../devtools/index.html">devtools</a>, <a href="../forcats/index.html">forcats</a>, <a href="../knitr/index.html">knitr</a>, <a href="../lme4/index.html">lme4</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../roxygen2/index.html">roxygen2</a>, <a href="../testthat/index.html">testthat</a>, <a href="../ggrepel/index.html">ggrepel</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-08-18</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Joshua M Rosenberg [aut, cre],
+  Ran Xu [aut],
+  Qinyun Lin [aut],
+  Kenneth A Frank [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Joshua M Rosenberg  &#x3c;&#x6a;&#x6d;&#x72;&#x6f;&#x73;&#x65;&#x6e;&#x62;&#x65;&#x72;&#x67;&#x20;&#x61;&#x74;&#x20;&#x75;&#x74;&#x6b;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/jrosen48/konfound/issues">https://github.com/jrosen48/konfound/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/jrosen48/konfound">https://github.com/jrosen48/konfound</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_konfound.html">konfound results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package konfound downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="konfound.pdf"> konfound.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/introduction-to-konfound.html">Introduction-to-Konfound</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/konfound_0.2.2.tar.gz"> konfound_0.2.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/konfound_0.2.2.zip">konfound_0.2.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/konfound_0.2.2.zip">konfound_0.2.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/konfound_0.2.2.zip">konfound_0.2.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/konfound_0.2.2.tgz">konfound_0.2.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/konfound_0.2.2.tgz">konfound_0.2.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/konfound"> konfound archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=konfound"><samp>https://CRAN.R-project.org/package=konfound</samp></a>
+to link to this page.</p>
+</body>
+</html>

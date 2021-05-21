@@ -1,0 +1,48 @@
+Type: Package
+Package: nanostringr
+Title: Performs Quality Control, Data Normalization, and Batch Effect
+        Correction for 'NanoString nCounter' Data
+Version: 0.1.1
+Date: 2019-03-25
+Authors@R: 
+    c(person(given = "Derek",
+             family = "Chiu",
+             role = c("aut", "cre"),
+             email = "dchiu@bccrc.ca"),
+      person(given = "Aline",
+             family = "Talhouk",
+             role = "aut",
+             email = "atalhouk@bccrc.ca"),
+      person(given = "Samuel",
+             family = "Leung",
+             role = "aut",
+             email = "Samuel.Leung@vch.ca"))
+Description: Provides quality control (QC), normalization, and
+    batch effect correction operations for 'NanoString nCounter' data,
+    Talhouk et al. (2016) <doi:10.1371/journal.pone.0153844>.  Various
+    metrics are used to determine which samples passed or failed QC.  Gene
+    expression should first be normalized to housekeeping genes, before a
+    reference-based approach is used to adjust for batch effects.  Raw
+    NanoString data can be imported in the form of Reporter Code Count
+    (RCC) files.
+License: MIT + file LICENSE
+URL: https://github.com/OVCARE/nanostringr,
+        https://ovcare.github.io/nanostringr
+BugReports: https://github.com/OVCARE/nanostringr/issues
+Depends: R (>= 3.5.0)
+Imports: assertthat, ccaPP, dplyr, magrittr, purrr, readr, rlang,
+        tibble
+Suggests: covr, epiR, ggplot2, knitr, pander, rmarkdown, stringr,
+        testthat, tidyr
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: TRUE
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-03-25 22:26:09 UTC; dchiu
+Author: Derek Chiu [aut, cre],
+  Aline Talhouk [aut],
+  Samuel Leung [aut]
+Maintainer: Derek Chiu <dchiu@bccrc.ca>
+Repository: CRAN
+Date/Publication: 2019-03-25 22:50:03 UTC

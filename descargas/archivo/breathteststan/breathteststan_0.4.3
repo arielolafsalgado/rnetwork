@@ -1,0 +1,39 @@
+Package: breathteststan
+Type: Package
+Title: Stan-Based Fit to Gastric Emptying Curves
+Version: 0.4.3
+Authors@R: c(
+    person("Dieter", "Menne", , "dieter.menne@menne-biomed.de", role = c("aut", "cre")),
+    person("Menne Biomed Consulting Tuebingen", role = c("cph")),
+    person("Benjamin","Misselwitz", , role = c("fnd")),
+    person("Mark", "Fox", , role = c("fnd")),
+    person("University Hospital of Zurich, Dep. Gastroenterology", role = c("fnd", "dtc"))
+    )
+Description: Stan-based curve-fitting function
+  for use with package 'breathtestcore' by the same author.
+  Stan functions are refactored here for easier testing.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+Depends: R (>= 3.4.0), methods, Rcpp (>= 0.12.18)
+Imports: tibble, purrr, dplyr, rstan(>= 2.17.3), rstantools(>= 1.5.0),
+        stringr, tidyr
+Suggests: ggplot2, shinystan, bayesplot, testthat, covr, knitr,
+        rmarkdown, breathtestcore(>= 0.4.1.0)
+LinkingTo: StanHeaders (>= 2.17.2), rstan (>= 2.17.3), BH (>=
+        1.66.0-1), Rcpp (>= 0.12.18), RcppEigen (>= 0.3.3.4.0)
+URL: https://github.com/dmenne/breathteststan
+BugReports: https://github.com/dmenne/breathteststan/issues
+NeedsCompilation: yes
+SystemRequirements: GNU make, pandoc
+RoxygenNote: 6.0.1
+Packaged: 2018-07-30 07:24:58 UTC; Dieter
+Author: Dieter Menne [aut, cre],
+  Menne Biomed Consulting Tuebingen [cph],
+  Benjamin Misselwitz [fnd],
+  Mark Fox [fnd],
+  University Hospital of Zurich, Dep. Gastroenterology [fnd, dtc]
+Maintainer: Dieter Menne <dieter.menne@menne-biomed.de>
+Repository: CRAN
+Date/Publication: 2018-07-30 12:00:11 UTC

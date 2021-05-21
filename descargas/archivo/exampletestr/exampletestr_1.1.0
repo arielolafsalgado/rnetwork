@@ -1,0 +1,26 @@
+Package: exampletestr
+Type: Package
+Title: Help for Writing Unit Tests Based on Function Examples
+Version: 1.1.0
+Authors@R: c(person("Rory", "Nolan", email = "rorynoolan@gmail.com", role = c("aut", "cre")),
+             person("Sergi", "Padilla-Parra", email = "spadilla@well.ox.ac.uk", role = "ths"))
+Maintainer: Rory Nolan <rorynoolan@gmail.com>
+Description: Take the examples written in your documentation of functions and 
+    use them to create shells (skeletons which must be manually completed by
+    the user) of test files to be tested with the 'testthat' package. 
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: filesstrings (>= 1.2.0), magrittr, stringr, devtools, formatR,
+        purrr, roxygen2, checkmate, readr
+RoxygenNote: 6.0.1
+URL: https://www.github.com/rorynolan/exampletestr
+BugReports: https://www.github.com/rorynolan/exampletestr/issues
+Suggests: testthat, covr, knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-12-03 13:52:51 UTC; rnolan
+Author: Rory Nolan [aut, cre],
+  Sergi Padilla-Parra [ths]
+Repository: CRAN
+Date/Publication: 2017-12-03 14:12:54 UTC

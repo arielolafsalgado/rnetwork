@@ -1,0 +1,32 @@
+Package: DecomposeR
+Type: Package
+Title: Empirical Mode Decomposition for Cyclostratigraphy
+Version: 1.0.1
+Author: Sebastien Wouters [aut, cre]
+Maintainer: Sebastien Wouters <sebastien.wouters@doct.uliege.be>
+Description: Tools to apply Ensemble Empirical Mode 
+    Decomposition (EEMD) for cyclostratigraphy purposes. Mainly: a new 
+    algorithm, extricate, that performs EEMD in seconds, a linear interpolation 
+    algorithm  using the greatest rational common divisor of depth or time, 
+    different algorithms to compute instantaneous amplitude, frequency and  
+    ratios of frequencies, and functions to verify and visualise the outputs.
+    The functions were developed during the CRASH project (Checking the 
+    Reproducibility of Astrochronology in the Hauterivian). When using for 
+    publication please cite Wouters, S., Da Silva, A.C. Crucifix, M., Sinnesael,
+    M., Zivanovic, M., Boulvain, F., Devleeschouwer, X., 2019, "Litholog 
+    generation with the 'StratigrapheR' package and signal decomposition for 
+    cyclostratigraphic purposes". Geophysical Research Abstracts Vol. 21, 
+    EGU2019-5520, 2019, EGU General Assembly 2019. 
+    <http://hdl.handle.net/2268/234402>.
+License: GPL-3
+Depends: R (>= 3.6.0)
+Encoding: UTF-8
+LazyData: TRUE
+RoxygenNote: 7.0.2
+Imports: graphics, stats, utils, StratigrapheR (>= 1.0.1), hht, grid,
+        hexbin, colorRamps, dplyr
+Suggests: EMD, astrochron, tidyverse
+NeedsCompilation: no
+Packaged: 2020-04-01 12:31:38 UTC; Seb
+Repository: CRAN
+Date/Publication: 2020-04-01 13:10:03 UTC

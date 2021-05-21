@@ -1,0 +1,25 @@
+Package: covTestR
+Type: Package
+Title: Covariance Matrix Tests
+Version: 0.1.1
+Authors@R: c(person("Ben", "Barnard", email = "ben_barnard@outlook.com", role = c("aut", "cre")),
+  person("Dean", "Young", email = "dean_young@baylor.edu", role = c("aut")))
+Maintainer: Ben Barnard <ben_barnard@outlook.com>
+Description: Testing functions for Covariance Matrices. These tests include high-dimension homogeneity of covariance
+  matrix testing described by Schott (2007) <doi:10.1016/j.csda.2007.03.004> and high-dimensional one-sample tests of 
+  covariance matrix structure described by Fisher, et al. (2010) <doi:10.1016/j.jmva.2010.07.004>. Covariance matrix
+  tests use C++ to speed performance and allow larger data sets.
+License: GPL-2
+LazyData: TRUE
+RoxygenNote: 6.0.1
+Suggests: covr
+Depends: R (>= 3.4)
+Imports: lazyeval, dplyr, Rcpp
+LinkingTo: Rcpp, RcppArmadillo
+SystemRequirements: C++11
+NeedsCompilation: yes
+Packaged: 2017-11-24 16:29:36 UTC; ben_barnard
+Author: Ben Barnard [aut, cre],
+  Dean Young [aut]
+Repository: CRAN
+Date/Publication: 2017-11-24 18:11:02 UTC

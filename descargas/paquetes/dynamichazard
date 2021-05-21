@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package dynamichazard</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Dynamic Hazard Models using State Space Models [R package dynamichazard version 0.6.6]" />
+<meta name="citation_author" content="Benjamin Christoffersen" />
+<meta name="citation_publication_date" content="2019-10-14" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=dynamichazard" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=dynamichazard" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="dynamichazard: Dynamic Hazard Models using State Space Models" />
+<meta name="og:description" content="Contains functions that lets you fit dynamic hazard models using state space models. The first implemented model is described in Fahrmeir (1992) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F01621459.1992.10475232&quot;&gt;doi:10.1080/01621459.1992.10475232&lt;/a&gt;&amp;gt; and Fahrmeir (1994) &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fbiomet%2F81.2.317&quot;&gt;doi:10.1093/biomet/81.2.317&lt;/a&gt;&amp;gt;. Extensions hereof are available where the Extended Kalman filter is replaced by an unscented Kalman filter and other options including particle filters. The implemented particle filters support more general state space models. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=dynamichazard" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>dynamichazard: Dynamic Hazard Models using State Space Models</h2>
+<p>Contains functions that lets you fit dynamic hazard models using 
+  state space models. The first implemented model is described in Fahrmeir 
+  (1992) &lt;<a href="https://doi.org/10.1080%2F01621459.1992.10475232">doi:10.1080/01621459.1992.10475232</a>&gt; and Fahrmeir (1994) 
+  &lt;<a href="https://doi.org/10.1093%2Fbiomet%2F81.2.317">doi:10.1093/biomet/81.2.317</a>&gt;. Extensions hereof are available where the  
+  Extended Kalman filter is replaced by an unscented Kalman filter and other 
+  options including particle filters. The implemented particle filters support
+  more general state space models. </p>
+<table summary="Package dynamichazard summary">
+<tr>
+<td>Version:</td>
+<td>0.6.6</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0), stats, graphics, utils, <a href="../survival/index.html">survival</a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>parallel, <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.6), <a href="../boot/index.html">boot</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../timereg/index.html">timereg</a>, <a href="../captioner/index.html">captioner</a>, <a href="../biglm/index.html">biglm</a>, <a href="../httr/index.html">httr</a>, <a href="../mgcv/index.html">mgcv</a>, <a href="../shiny/index.html">shiny</a>, <a href="../formatR/index.html">formatR</a>, <a href="../R.rsp/index.html">R.rsp</a>, <a href="../speedglm/index.html">speedglm</a>, <a href="../dichromat/index.html">dichromat</a>, <a href="../colorspace/index.html">colorspace</a>, <a href="../plyr/index.html">plyr</a>, <a href="../gsl/index.html">gsl</a>, <a href="../mvtnorm/index.html">mvtnorm</a>, <a href="../nloptr/index.html">nloptr</a> (&ge; 1.2.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-10-14</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Benjamin Christoffersen [cre, aut],
+  Alan Miller [cph],
+  Anthony Williams [cph],
+  Boost developers [cph],
+  R-core [cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Benjamin Christoffersen  &#x3c;&#x62;&#x6f;&#x65;&#x6e;&#x6e;&#x65;&#x63;&#x64;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/boennecd/dynamichazard/issues">https://github.com/boennecd/dynamichazard/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/boennecd/dynamichazard">https://github.com/boennecd/dynamichazard</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>C++11</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Survival.html">Survival</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_dynamichazard.html">dynamichazard results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package dynamichazard downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="dynamichazard.pdf"> dynamichazard.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Comparing_methods_for_logistic_models.pdf">Comparing methods for time varying logistic models</a><br/>
+<a href="vignettes/Diagnostics.pdf">Diagnostics</a><br/>
+<a href="vignettes/ddhazard.pdf">ddhazard</a><br/>
+<a href="vignettes/Bootstrap_illustration.pdf">Bootstrap illustration</a><br/>
+<a href="vignettes/Particle_filtering.pdf">Particle filters in the dynamichazard package</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/dynamichazard_0.6.6.tar.gz"> dynamichazard_0.6.6.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/dynamichazard_0.6.6.zip">dynamichazard_0.6.6.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/dynamichazard_0.6.6.zip">dynamichazard_0.6.6.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/dynamichazard_0.6.6.zip">dynamichazard_0.6.6.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/dynamichazard_0.6.6.tgz">dynamichazard_0.6.6.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/dynamichazard_0.6.6.tgz">dynamichazard_0.6.6.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/dynamichazard"> dynamichazard archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=dynamichazard"><samp>https://CRAN.R-project.org/package=dynamichazard</samp></a>
+to link to this page.</p>
+</body>
+</html>

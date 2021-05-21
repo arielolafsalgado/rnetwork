@@ -1,0 +1,23 @@
+Package: vinereg
+Type: Package
+Title: D-Vine Quantile Regression
+Version: 0.2.0
+Author: Thomas Nagler, Daniel Kraus
+Maintainer: Thomas Nagler <mail@tnagler.com>
+Description: 
+  Implements D-vine quantile regression models with
+  parametric or nonparametric pair-copulas. See 
+  Kraus and Czado (2017) <doi:10.1016/j.csda.2016.12.009> and
+  Schallhorn et al. (2017) <arXiv:1705.08310>.
+License: GPL-3
+LazyData: TRUE
+Imports: cctools, rvinecopulib (>= 0.2.8), doParallel, parallel,
+        foreach, kde1d (>= 0.2.0),
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Suggests: knitr, rmarkdown, ggplot2, PivotalR, quantreg, tidyr, dplyr,
+        purrr, scales, mgcv, testthat, covr
+VignetteBuilder: knitr
+Packaged: 2018-05-28 15:33:41 UTC; n5
+Repository: CRAN
+Date/Publication: 2018-05-29 09:23:18 UTC

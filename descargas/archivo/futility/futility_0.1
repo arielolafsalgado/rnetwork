@@ -1,0 +1,19 @@
+Package: futility
+Type: Package
+Title: Interim Analysis of Operational Futility in Randomized Trials
+        with Time-to-Event Endpoints and Fixed Follow-Up
+Version: 0.1
+Date: 2017-07-27
+Author: Yingying Zhuang and Michal Juraska, with contributions from Doug Grove, Peter B. Gilbert, and Alexander R. Luedtke
+Maintainer: Michal Juraska <mjuraska@fredhutch.org>
+Description: Randomized clinical trials commonly follow participants for a time-to-event efficacy endpoint for a fixed period of time. Consequently, at the time when the last enrolled participant completes their follow-up, the number of observed endpoints is a random variable. Assuming data collected through an interim timepoint, simulation-based estimation and inferential procedures in the standard right-censored failure time analysis framework are conducted for the distribution of the number of endpoints--in total as well as by treatment arm--at the end of the follow-up period. The future (i.e., yet unobserved) enrollment, endpoint, and dropout times are generated according to mechanisms specified in the simTrial() function in the 'seqDesign' package. A Bayesian model for the endpoint rate is used for generating future data (see the vignette for details).
+License: GPL-2
+LazyData: TRUE
+RoxygenNote: 6.0.1
+Imports: graphics, stats, utils
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-07-27 17:17:20 UTC; mjuraska
+Repository: CRAN
+Date/Publication: 2017-07-28 22:29:21 UTC

@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package tiler</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Create Geographic and Non-Geographic Map Tiles [R package tiler version 0.2.4]" />
+<meta name="citation_author" content="Matthew Leonawicz" />
+<meta name="citation_publication_date" content="2019-11-26" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=tiler" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=tiler" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="tiler: Create Geographic and Non-Geographic Map Tiles" />
+<meta name="og:description" content="Creates geographic map tiles from geospatial map files or non-geographic map tiles from simple image files. This package provides a tile generator function for creating map tile sets for use with packages such as 'leaflet'. In addition to generating map tiles based on a common raster layer source, it also handles the non-geographic edge case, producing map tiles from arbitrary images. These map tiles, which have a non-geographic, simple coordinate reference system (CRS), can also be used with 'leaflet' when applying the simple CRS option. Map tiles can be created from an input file with any of the following extensions: tif, grd and nc for spatial maps and png, jpg and bmp for basic images. This package requires 'Python' and the 'gdal' library for 'Python'. 'Windows' users are recommended to install 'OSGeo4W' (&amp;lt;&lt;a href=&quot;https://trac.osgeo.org/osgeo4w/&quot;&gt;https://trac.osgeo.org/osgeo4w/&lt;/a&gt;&amp;gt;) as an easy way to obtain the required 'gdal' support for 'Python'." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=tiler" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>tiler: Create Geographic and Non-Geographic Map Tiles</h2>
+<p>Creates geographic map tiles from geospatial map files or non-geographic map tiles from simple image files. 
+    This package provides a tile generator function for creating map tile sets for use with packages such as 'leaflet'. 
+    In addition to generating map tiles based on a common raster layer source, it also handles the non-geographic edge case, producing map tiles from arbitrary images.
+    These map tiles, which have a non-geographic, simple coordinate reference system (CRS), can also be used with 'leaflet' when applying the simple CRS option.
+    Map tiles can be created from an input file with any of the following extensions: tif, grd and nc for spatial maps and png, jpg and bmp for basic images.
+    This package requires 'Python' and the 'gdal' library for 'Python'. 
+    'Windows' users are recommended to install 'OSGeo4W' (&lt;<a href="https://trac.osgeo.org/osgeo4w/">https://trac.osgeo.org/osgeo4w/</a>&gt;) as an easy way to obtain the required 'gdal' support for 'Python'.</p>
+<table summary="Package tiler summary">
+<tr>
+<td>Version:</td>
+<td>0.2.4</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../sp/index.html">sp</a>, <a href="../rgdal/index.html">rgdal</a>, <a href="../raster/index.html">raster</a>, <a href="../png/index.html">png</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../covr/index.html">covr</a>, <a href="../jpeg/index.html">jpeg</a>, <a href="../bmp/index.html">bmp</a>, <a href="../leaflet/index.html">leaflet</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-11-26</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Matthew Leonawicz <a href="https://orcid.org/0000-0001-9452-2771"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Matthew Leonawicz  &#x3c;&#x6d;&#x61;&#x74;&#x74;&#x5f;&#x6c;&#x65;&#x6f;&#x6e;&#x61;&#x77;&#x69;&#x63;&#x7a;&#x20;&#x61;&#x74;&#x20;&#x65;&#x73;&#x6f;&#x75;&#x72;&#x63;&#x65;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ropensci/tiler/issues">https://github.com/ropensci/tiler/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/ropensci/tiler">https://github.com/ropensci/tiler</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>Python (&gt;= 2.7), python-gdal library (For Windows,
+gdal installed via OSGeo4W &lt;https://trac.osgeo.org/osgeo4w/&gt;
+recommended) clipboard</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_tiler.html">tiler results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package tiler downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="tiler.pdf"> tiler.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/tiler-intro.html">Introduction to tiler</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/tiler_0.2.4.tar.gz"> tiler_0.2.4.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/tiler_0.2.4.zip">tiler_0.2.4.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/tiler_0.2.4.zip">tiler_0.2.4.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/tiler_0.2.4.zip">tiler_0.2.4.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/tiler_0.2.4.tgz">tiler_0.2.4.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/tiler_0.2.4.tgz">tiler_0.2.4.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/tiler"> tiler archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=tiler"><samp>https://CRAN.R-project.org/package=tiler</samp></a>
+to link to this page.</p>
+</body>
+</html>

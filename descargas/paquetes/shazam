@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package shazam</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Immunoglobulin Somatic Hypermutation Analysis [R package shazam version 1.0.2]" />
+<meta name="citation_author1" content="Mohamed Uduman" />
+<meta name="citation_author2" content="Namita Gupta" />
+<meta name="citation_author3" content="Susanna Marquez" />
+<meta name="citation_author4" content="Julian Zhou" />
+<meta name="citation_author5" content="Nima Nouri" />
+<meta name="citation_author6" content="Jason Vander Heiden" />
+<meta name="citation_author7" content="Gur Yaari" />
+<meta name="citation_author8" content="Steven Kleinstein" />
+<meta name="citation_publication_date" content="2020-08-11" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=shazam" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=shazam" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="shazam: Immunoglobulin Somatic Hypermutation Analysis" />
+<meta name="og:description" content="Provides a computational framework for analyzing mutations in immunoglobulin (Ig) sequences. Includes methods for Bayesian estimation of antigen-driven selection pressure, mutational load quantification, building of somatic hypermutation (SHM) models, and model-dependent distance calculations. Also includes empirically derived models of SHM for both mice and humans. Citations: Gupta and Vander Heiden, et al (2015) &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fbioinformatics%2Fbtv359&quot;&gt;doi:10.1093/bioinformatics/btv359&lt;/a&gt;&amp;gt;, Yaari, et al (2012) &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fnar%2Fgks457&quot;&gt;doi:10.1093/nar/gks457&lt;/a&gt;&amp;gt;, Yaari, et al (2013) &amp;lt;&lt;a href=&quot;https://doi.org/10.3389%2Ffimmu.2013.00358&quot;&gt;doi:10.3389/fimmu.2013.00358&lt;/a&gt;&amp;gt;, Cui, et al (2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.4049%2Fjimmunol.1502263&quot;&gt;doi:10.4049/jimmunol.1502263&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=shazam" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>shazam: Immunoglobulin Somatic Hypermutation Analysis</h2>
+<p>Provides a computational framework for analyzing mutations in
+    immunoglobulin (Ig) sequences. Includes methods for Bayesian estimation of
+    antigen-driven selection pressure, mutational load quantification, building of
+    somatic hypermutation (SHM) models, and model-dependent distance calculations.
+    Also includes empirically derived models of SHM for both mice and humans.
+    Citations: 
+    Gupta and Vander Heiden, et al (2015) &lt;<a href="https://doi.org/10.1093%2Fbioinformatics%2Fbtv359">doi:10.1093/bioinformatics/btv359</a>&gt;, 
+    Yaari, et al (2012) &lt;<a href="https://doi.org/10.1093%2Fnar%2Fgks457">doi:10.1093/nar/gks457</a>&gt;, 
+    Yaari, et al (2013) &lt;<a href="https://doi.org/10.3389%2Ffimmu.2013.00358">doi:10.3389/fimmu.2013.00358</a>&gt;, 
+    Cui, et al (2016) &lt;<a href="https://doi.org/10.4049%2Fjimmunol.1502263">doi:10.4049/jimmunol.1502263</a>&gt;.</p>
+<table summary="Package shazam summary">
+<tr>
+<td>Version:</td>
+<td>1.0.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0), <a href="../ggplot2/index.html">ggplot2</a> (&ge; 3.2.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../alakazam/index.html">alakazam</a> (&ge; 1.0.2), <a href="../ape/index.html">ape</a>, <a href="../diptest/index.html">diptest</a>, <a href="../doParallel/index.html">doParallel</a>, <a href="../dplyr/index.html">dplyr</a> (&ge;
+0.8.1), <a href="../foreach/index.html">foreach</a>, graphics, grid, <a href="../igraph/index.html">igraph</a>, <a href="../iterators/index.html">iterators</a>, <a href="../kedd/index.html">kedd</a>, <a href="../KernSmooth/index.html">KernSmooth</a>, <a href="../lazyeval/index.html">lazyeval</a>, <a href="../MASS/index.html">MASS</a>, methods, parallel, <a href="../progress/index.html">progress</a>, <a href="../rlang/index.html">rlang</a>, <a href="../scales/index.html">scales</a>, <a href="../seqinr/index.html">seqinr</a>, stats, <a href="../stringi/index.html">stringi</a> (&ge; 1.1.3), <a href="../tidyr/index.html">tidyr</a>, <a href="../tidyselect/index.html">tidyselect</a>, utils</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-08-11</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Mohamed Uduman [aut],
+  Namita Gupta [aut],
+  Susanna Marquez [aut],
+  Julian Zhou [aut],
+  Nima Nouri [aut],
+  Ang Cui [ctb],
+  Jason Vander Heiden [aut, cre],
+  Gur Yaari [aut],
+  Steven Kleinstein [aut, cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Jason Vander Heiden  &#x3c;&#x6a;&#x61;&#x73;&#x6f;&#x6e;&#x2e;&#x76;&#x61;&#x6e;&#x64;&#x65;&#x72;&#x68;&#x65;&#x69;&#x64;&#x65;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://bitbucket.org/kleinstein/shazam/issues">https://bitbucket.org/kleinstein/shazam/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/AGPL-3">AGPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://shazam.readthedocs.io">http://shazam.readthedocs.io</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">shazam citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_shazam.html">shazam results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package shazam downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="shazam.pdf"> shazam.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Baseline-Vignette.pdf">Selection quantification</a><br/>
+<a href="vignettes/DistToNearest-Vignette.pdf">Distance to nearest neighbor</a><br/>
+<a href="vignettes/Mutation-Vignette.pdf">Mutation analysis</a><br/>
+<a href="vignettes/Shmulate-Vignette.pdf">Simulating sequence mutations</a><br/>
+<a href="vignettes/Targeting-Vignette.pdf">SHM targeting models</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/shazam_1.0.2.tar.gz"> shazam_1.0.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/shazam_1.0.2.zip">shazam_1.0.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/shazam_1.0.2.zip">shazam_1.0.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/shazam_1.0.2.zip">shazam_1.0.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/shazam_1.0.2.tgz">shazam_1.0.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/shazam_1.0.2.tgz">shazam_1.0.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/shazam"> shazam archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package shazam reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../scoper/index.html">scoper</a>, <a href="../tigger/index.html">tigger</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=shazam"><samp>https://CRAN.R-project.org/package=shazam</samp></a>
+to link to this page.</p>
+</body>
+</html>

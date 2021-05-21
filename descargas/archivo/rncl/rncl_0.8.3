@@ -1,0 +1,34 @@
+Package: rncl
+Title: An Interface to the Nexus Class Library
+Version: 0.8.3
+Authors@R: c(person("Francois", "Michonneau", role=c("aut", "cre"),
+    email="francois.michonneau@gmail.com",    comment = c("ORCID" = "0000-0002-9092-966X")),
+    person("Ben", "Bolker", role=c("aut"),    comment = c("ORCID" = "0000-0002-2127-0443")),
+    person("Mark", "Holder", role=c("aut"),   comment = c("ORCID" = "0000-0001-5575-0536")),
+    person("Paul", "Lewis", role=c("aut"),    comment = c("ORCID" = "0000-0001-9852-8759")),
+    person("Brian", "O'Meara", role=c("aut"), comment = c("ORCID" = "0000-0002-0337-5997")))
+Maintainer: Francois Michonneau <francois.michonneau@gmail.com>
+Description: An interface to the Nexus Class Library which allows parsing
+    of NEXUS, Newick and other phylogenetic tree file formats. It provides
+    elements of the file that can be used to build phylogenetic objects
+    such as ape's 'phylo' or phylobase's 'phylo4(d)'. This functionality
+    is demonstrated with 'read_newick_phylo()' and 'read_nexus_phylo()'.
+Imports: Rcpp (>= 0.11.0), progress (>= 1.1.2), stats
+Suggests: testthat, ape
+LinkingTo: Rcpp, progress
+Depends: R (>= 3.1.1)
+License: BSD_2_clause + file LICENSE
+URL: https://github.com/fmichonneau/rncl
+BugReports: https://github.com/fmichonneau/rncl/issues
+LazyData: true
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2018-07-27 12:59:13 UTC; francois
+Author: Francois Michonneau [aut, cre]
+    (<https://orcid.org/0000-0002-9092-966X>),
+  Ben Bolker [aut] (<https://orcid.org/0000-0002-2127-0443>),
+  Mark Holder [aut] (<https://orcid.org/0000-0001-5575-0536>),
+  Paul Lewis [aut] (<https://orcid.org/0000-0001-9852-8759>),
+  Brian O'Meara [aut] (<https://orcid.org/0000-0002-0337-5997>)
+Repository: CRAN
+Date/Publication: 2018-07-27 14:20:02 UTC

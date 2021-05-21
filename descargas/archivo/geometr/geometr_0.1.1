@@ -1,0 +1,32 @@
+Package: geometr
+Title: Generate and Modify Interoperable Geometric Shapes
+Version: 0.1.1
+Authors@R: c(
+    person("Steffen", "Ehrmann", role = c("aut", "cre"), email = "steffen@funroll-loops.de", comment = c(ORCID = "0000-0002-2958-0796")),
+    person("Dan", "Sunday", role = c("cph"), comment = "fast point-in-polygon algorithm.")
+    )
+Description: Provides tools that generate and process fully accessible and tidy
+    geometric shapes. The package improves interoperability of spatial and 
+    other geometric classes by providing getters and setters that produce 
+    identical output from various classes.
+URL: https://github.com/EhrmannS/geometr
+BugReports: https://github.com/EhrmannS/geometr/issues
+Depends: R (>= 2.10)
+Language: en-gb
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: checkmate, sf, sp, spatstat, raster, crayon, deldir, dplyr,
+        grDevices, grid, methods, rgdal, rlang, tibble
+Suggests: testthat, rmarkdown, magrittr, covr, knitr, readr
+LinkingTo: Rcpp
+RoxygenNote: 6.1.1
+SystemRequirements: C++11
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2019-10-15 11:48:38 UTC; se87kuhe
+Author: Steffen Ehrmann [aut, cre] (<https://orcid.org/0000-0002-2958-0796>),
+  Dan Sunday [cph] (fast point-in-polygon algorithm.)
+Maintainer: Steffen Ehrmann <steffen@funroll-loops.de>
+Repository: CRAN
+Date/Publication: 2019-10-16 12:00:07 UTC

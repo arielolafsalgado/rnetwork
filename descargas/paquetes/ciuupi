@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package ciuupi</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Confidence Intervals Utilizing Uncertain Prior Information [R package ciuupi version 1.1.0]" />
+<meta name="citation_author1" content="Rheanna Mainzer" />
+<meta name="citation_author2" content="Paul Kabaila" />
+<meta name="citation_publication_date" content="2019-01-15" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=ciuupi" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=ciuupi" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="ciuupi: Confidence Intervals Utilizing Uncertain Prior Information" />
+<meta name="og:description" content=" Computes a confidence interval for a specified linear combination of the regression parameters in a linear regression model with iid normal errors with known variance when there is uncertain prior information that a distinct specified linear combination of the regression parameters takes a given value. This confidence interval, found by numerical constrained optimization, has the required minimum coverage and utilizes this uncertain prior information through desirable expected length properties. This confidence interval has the following three practical applications. Firstly, if the error variance has been accurately estimated from previous data then it may be treated as being effectively known. Secondly, for sufficiently large (dimension of the response vector) minus (dimension of regression parameter vector), greater than or equal to 30 (say), if we replace the assumed known value of the error variance by its usual estimator in the formula for the confidence interval then the resulting interval has, to a very good approximation, the same coverage probability and expected length properties as when the error variance is known. Thirdly, some more complicated models can be approximated by the linear regression model with error variance known when certain unknown parameters are replaced by estimates. This confidence interval is described in Kabaila, P. and Mainzer, R. (2017) &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1708.09543&quot;&gt;arXiv:1708.09543&lt;/a&gt;&amp;gt;, and is a member of the family of confidence intervals proposed by Kabaila, P. and Giri, K. (2009) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.jspi.2009.03.018&quot;&gt;doi:10.1016/j.jspi.2009.03.018&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=ciuupi" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>ciuupi: Confidence Intervals Utilizing Uncertain Prior Information</h2>
+<p>
+  Computes a confidence interval for a specified linear combination of the 
+  regression parameters in a linear regression model with iid normal errors
+  with known variance when there is uncertain prior information that a distinct
+  specified linear combination of the regression parameters takes a given 
+  value.  This confidence interval, found by numerical constrained 
+  optimization, has the required minimum coverage and utilizes this uncertain 
+  prior information through desirable expected length properties.
+  This confidence interval has the following three practical applications. 
+  Firstly, if the error variance has been accurately estimated from previous 
+  data then it may be treated as being effectively known. Secondly, for 
+  sufficiently large (dimension of the response vector) minus (dimension of 
+  regression parameter vector), greater than or equal to 30 (say),
+  if we replace the assumed known value of the error variance by its usual 
+  estimator in the formula for the confidence interval then the resulting 
+  interval has, to a very good approximation, the same coverage probability 
+  and expected length properties as when the error variance is known. Thirdly,
+  some more complicated models can be approximated by the linear regression 
+  model with error variance known when certain unknown parameters are replaced 
+  by estimates. This confidence interval is described in Kabaila, P. and 
+  Mainzer, R. (2017) &lt;<a href="https://arxiv.org/abs/1708.09543">arXiv:1708.09543</a>&gt;, and is a member of the family of 
+  confidence intervals proposed by Kabaila, P. and Giri, K. (2009) 
+  &lt;<a href="https://doi.org/10.1016%2Fj.jspi.2009.03.018">doi:10.1016/j.jspi.2009.03.018</a>&gt;.</p>
+<table summary="Package ciuupi summary">
+<tr>
+<td>Version:</td>
+<td>1.1.0</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../nloptr/index.html">nloptr</a>, <a href="../statmod/index.html">statmod</a>, <a href="../functional/index.html">functional</a>, <a href="../pracma/index.html">pracma</a>, stats</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-01-15</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Rheanna Mainzer [aut, cre],
+  Paul Kabaila [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Rheanna Mainzer  &#x3c;&#x72;&#x68;&#x65;&#x61;&#x6e;&#x6e;&#x61;&#x2e;&#x6d;&#x61;&#x69;&#x6e;&#x7a;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x75;&#x6e;&#x69;&#x6d;&#x65;&#x6c;&#x62;&#x2e;&#x65;&#x64;&#x75;&#x2e;&#x61;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_ciuupi.html">ciuupi results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package ciuupi downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="ciuupi.pdf"> ciuupi.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/desciption-ciuupi.html">Vignette Title</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/ciuupi_1.1.0.tar.gz"> ciuupi_1.1.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/ciuupi_1.1.0.zip">ciuupi_1.1.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/ciuupi_1.1.0.zip">ciuupi_1.1.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/ciuupi_1.1.0.zip">ciuupi_1.1.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/ciuupi_1.1.0.tgz">ciuupi_1.1.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/ciuupi_1.1.0.tgz">ciuupi_1.1.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/ciuupi"> ciuupi archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=ciuupi"><samp>https://CRAN.R-project.org/package=ciuupi</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package batchtools</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Tools for Computation on Batch Systems [R package batchtools version 0.9.14]" />
+<meta name="citation_author1" content="Michel Lang" />
+<meta name="citation_author2" content="Bernd Bischl" />
+<meta name="citation_publication_date" content="2020-10-21" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=batchtools" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=batchtools" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="batchtools: Tools for Computation on Batch Systems" />
+<meta name="og:description" content="As a successor of the packages 'BatchJobs' and 'BatchExperiments', this package provides a parallel implementation of the Map function for high performance computing systems managed by schedulers 'IBM Spectrum LSF' (&amp;lt;&lt;a href=&quot;https://www.ibm.com/products/hpc-workload-management&quot;&gt;https://www.ibm.com/products/hpc-workload-management&lt;/a&gt;&amp;gt;), 'OpenLava' (&amp;lt;&lt;a href=&quot;https://www.openlava.org/&quot;&gt;https://www.openlava.org/&lt;/a&gt;&amp;gt;), 'Univa Grid Engine'/'Oracle Grid Engine' (&amp;lt;&lt;a href=&quot;https://www.univa.com/&quot;&gt;https://www.univa.com/&lt;/a&gt;&amp;gt;), 'Slurm' (&amp;lt;&lt;a href=&quot;https://slurm.schedmd.com/&quot;&gt;https://slurm.schedmd.com/&lt;/a&gt;&amp;gt;), 'TORQUE/PBS' (&amp;lt;&lt;a href=&quot;https://adaptivecomputing.com/cherry-services/torque-resource-manager/&quot;&gt;https://adaptivecomputing.com/cherry-services/torque-resource-manager/&lt;/a&gt;&amp;gt;), or 'Docker Swarm' (&amp;lt;&lt;a href=&quot;https://docs.docker.com/engine/swarm/&quot;&gt;https://docs.docker.com/engine/swarm/&lt;/a&gt;&amp;gt;). A multicore and socket mode allow the parallelization on a local machines, and multiple machines can be hooked up via SSH to create a makeshift cluster. Moreover, the package provides an abstraction mechanism to define large-scale computer experiments in a well-organized and reproducible way." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=batchtools" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>batchtools: Tools for Computation on Batch Systems</h2>
+<p>As a successor of the packages 'BatchJobs' and 'BatchExperiments',
+    this package provides a parallel implementation of the Map function for high
+    performance computing systems managed by schedulers 'IBM Spectrum LSF'
+    (&lt;<a href="https://www.ibm.com/products/hpc-workload-management">https://www.ibm.com/products/hpc-workload-management</a>&gt;),
+    'OpenLava' (&lt;<a href="https://www.openlava.org/">https://www.openlava.org/</a>&gt;), 'Univa Grid Engine'/'Oracle Grid
+    Engine' (&lt;<a href="https://www.univa.com/">https://www.univa.com/</a>&gt;), 'Slurm' (&lt;<a href="https://slurm.schedmd.com/">https://slurm.schedmd.com/</a>&gt;),
+    'TORQUE/PBS'
+    (&lt;<a href="https://adaptivecomputing.com/cherry-services/torque-resource-manager/">https://adaptivecomputing.com/cherry-services/torque-resource-manager/</a>&gt;),
+    or 'Docker Swarm' (&lt;<a href="https://docs.docker.com/engine/swarm/">https://docs.docker.com/engine/swarm/</a>&gt;).
+    A multicore and socket mode allow the parallelization on a local machines,
+    and multiple machines can be hooked up via SSH to create a makeshift
+    cluster. Moreover, the package provides an abstraction mechanism to define
+    large-scale computer experiments in a well-organized and reproducible way.</p>
+<table summary="Package batchtools summary">
+<tr>
+<td>Version:</td>
+<td>0.9.14</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../backports/index.html">backports</a> (&ge; 1.1.2), <a href="../base64url/index.html">base64url</a> (&ge; 1.1), <a href="../brew/index.html">brew</a>, <a href="../checkmate/index.html">checkmate</a> (&ge;
+1.8.5), <a href="../data.table/index.html">data.table</a> (&ge; 1.11.2), <a href="../digest/index.html">digest</a> (&ge; 0.6.9), <a href="../fs/index.html">fs</a> (&ge;
+1.2.0), parallel, <a href="../progress/index.html">progress</a> (&ge; 1.1.1), <a href="../R6/index.html">R6</a>, <a href="../rappdirs/index.html">rappdirs</a>, stats, <a href="../stringi/index.html">stringi</a>, utils, <a href="../withr/index.html">withr</a> (&ge; 2.0.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../debugme/index.html">debugme</a>, <a href="../doMPI/index.html">doMPI</a>, <a href="../doParallel/index.html">doParallel</a>, <a href="../e1071/index.html">e1071</a>, <a href="../foreach/index.html">foreach</a>, <a href="../future/index.html">future</a>, <a href="../future.batchtools/index.html">future.batchtools</a>, <a href="../knitr/index.html">knitr</a>, <a href="../parallelMap/index.html">parallelMap</a>, <a href="../ranger/index.html">ranger</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../Rmpi/index.html">Rmpi</a>, <a href="../rpart/index.html">rpart</a>, <a href="../snow/index.html">snow</a>, <a href="../testthat/index.html">testthat</a>, <a href="../tibble/index.html">tibble</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-21</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Michel Lang <a href="https://orcid.org/0000-0001-9754-0393"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [cre,
+    aut],
+  Bernd Bischl [aut],
+  Dirk Surmann <a href="https://orcid.org/0000-0003-0873-137X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Michel Lang  &#x3c;&#x6d;&#x69;&#x63;&#x68;&#x65;&#x6c;&#x6c;&#x61;&#x6e;&#x67;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/mllg/batchtools/issues">https://github.com/mllg/batchtools/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/LGPL-3">LGPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/mllg/batchtools">https://github.com/mllg/batchtools</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">batchtools citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/HighPerformanceComputing.html">HighPerformanceComputing</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_batchtools.html">batchtools results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package batchtools downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="batchtools.pdf"> batchtools.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/batchtools.html">batchtools</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/batchtools_0.9.14.tar.gz"> batchtools_0.9.14.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/batchtools_0.9.14.zip">batchtools_0.9.14.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/batchtools_0.9.14.zip">batchtools_0.9.14.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/batchtools_0.9.14.zip">batchtools_0.9.14.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/batchtools_0.9.14.tgz">batchtools_0.9.14.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/batchtools_0.9.14.tgz">batchtools_0.9.14.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/batchtools"> batchtools archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package batchtools reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../future.batchtools/index.html">future.batchtools</a>, <a href="../ldaPrototype/index.html">ldaPrototype</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/Rcwl.html"><span class="BioC">Rcwl</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/systemPipeR.html"><span class="BioC">systemPipeR</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="http://www.bioconductor.org/packages/release/bioc/html/BiocParallel.html"><span class="BioC">BiocParallel</span></a>, <a href="../mlr/index.html">mlr</a>, <a href="../parallelMap/index.html">parallelMap</a>, <a href="../pulsar/index.html">pulsar</a>, <a href="../SPOT/index.html">SPOT</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;enhances:</td>
+<td><a href="../simpleCache/index.html">simpleCache</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=batchtools"><samp>https://CRAN.R-project.org/package=batchtools</samp></a>
+to link to this page.</p>
+</body>
+</html>

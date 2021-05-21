@@ -1,0 +1,17 @@
+Package: SimReg
+Type: Package
+Title: Similarity Regression Functions
+Version: 1.1
+Date: 2015-08-26
+Author: Daniel Greene
+Maintainer: Daniel Greene <dg333@cam.ac.uk>
+Description: Functions for performing Bayesian `similarity regression', adapted to regression of binary genotype against HPO encoded phenotype. The purpose is to weigh the evidence for an association between phenotype and genotype. This is done by estimating a Bayes factor comparing a `no association' model with one in which log odds of presenting a particular binary genotype is linked to the semantic similarity between the corresponding phenotype and an estimated characteristic phenotype.
+License: GPL (>= 2)
+Imports: Rcpp (>= 0.11.1), dplyr, parallel, ggplot2, plotrix,
+        gridExtra, reshape2
+LinkingTo: Rcpp
+Depends: R (>= 3.0.0), hpoPlot
+NeedsCompilation: yes
+Packaged: 2015-08-27 09:19:17 UTC; dg333
+Repository: CRAN
+Date/Publication: 2015-08-27 14:14:04

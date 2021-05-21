@@ -1,0 +1,29 @@
+Package: readsdmx
+Type: Package
+Title: Read SDMX-XML Data
+Version: 0.2.2
+Authors@R: c(person("Matthew", "de Queljoe", email = "matthew.dequeljoe@gmail.com", role = c("aut", "cre")),
+    person("Marcin", "Kalicinski", role = c("ctb", "cph"), comment = "Author of RapidXML library"),
+    person("Emmanuel", "Blondel", role = c("ctb", "cph"), comment = c(ORCID = "0000-0002-5870-5762", "SDMX-ML test files")))
+Maintainer: Matthew de Queljoe <matthew.dequeljoe@gmail.com>
+Description: Read Statistical Data and Metadata Exchange (SDMX) XML data. 
+    This the main transmission format used in official statistics. Data can be imported from
+    local SDMX-ML files or a SDMX web-service and will be read in 'as is' into a dataframe object.
+    The 'RapidXML' C++ library <http://rapidxml.sourceforge.net> is used to parse the XML data.
+URL: https://github.com/mdequeljoe/readsdmx
+BugReports: https://github.com/mdequeljoe/readsdmx/issues
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: Rcpp (>= 0.12.18), utils
+LinkingTo: Rcpp
+RoxygenNote: 6.1.1
+Suggests: testthat
+NeedsCompilation: yes
+Packaged: 2019-01-21 18:36:56 UTC; matthew
+Author: Matthew de Queljoe [aut, cre],
+  Marcin Kalicinski [ctb, cph] (Author of RapidXML library),
+  Emmanuel Blondel [ctb, cph] (<https://orcid.org/0000-0002-5870-5762>,
+    SDMX-ML test files)
+Repository: CRAN
+Date/Publication: 2019-02-01 15:10:07 UTC

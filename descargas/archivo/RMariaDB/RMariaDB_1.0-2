@@ -1,0 +1,43 @@
+Package: RMariaDB
+Version: 1.0-2
+Title: Database Interface and 'MariaDB' Driver
+Encoding: UTF-8
+Description: Implements a 'DBI'-compliant interface to 'MariaDB' (<https://mariadb.org/>) and 'MySQL' (<https://www.mysql.com/>) databases.
+Authors@R: c(
+    person("Kirill", "Müller", email = "krlmlr+r@mailbox.org", role = c("aut", "cre")),
+    person("Jeroen", "Ooms", role = "aut"),
+    person("David", "James", role = "aut"),
+    person("Saikat", "DebRoy", role = "aut"),
+    person("Hadley", "Wickham", role = "aut"),
+    person("Jeffrey", "Horner", role = "aut"),
+    person("RStudio", role = "cph"),
+    person("Kungliga Tekniska Högskolan", role = "ctb", comment = "Source code for timegm"))
+Depends: R (>= 2.8.0)
+Imports: bit64, DBI, hms, methods, Rcpp (>= 0.12.4)
+Suggests: DBItest, rprojroot, testthat
+LinkingTo: Rcpp, BH, plogr
+License: GPL-2
+URL: https://github.com/rstats-db/RMariaDB,
+        https://downloads.mariadb.org/connector-c/
+BugReports: https://github.com/rstats-db/RMariaDB/issues
+SystemRequirements: libmariadb-client-lgpl-dev or libmysqlclient-dev
+        (deb), mariadb-connector-c-devel or mariadb-devel (rpm),
+        mariadb-connector-c or mysql-connector-c (brew)
+NeedsCompilation: yes
+Collate: 'MariaDBConnection.R' 'MariaDBDriver.R' 'MariaDBResult.R'
+        'RMariaDB.R' 'RcppExports.R' 'coerce.R' 'connect.R' 'default.R'
+        'export.R' 'query.R' 'quote.R' 'rownames.R' 'table.R'
+        'transaction.R' 'utils.R' 'zzz.R'
+RoxygenNote: 6.0.1
+Packaged: 2017-10-03 19:31:11 UTC; muelleki
+Author: Kirill Müller [aut, cre],
+  Jeroen Ooms [aut],
+  David James [aut],
+  Saikat DebRoy [aut],
+  Hadley Wickham [aut],
+  Jeffrey Horner [aut],
+  RStudio [cph],
+  Kungliga Tekniska Högskolan [ctb] (Source code for timegm)
+Maintainer: Kirill Müller <krlmlr+r@mailbox.org>
+Repository: CRAN
+Date/Publication: 2017-10-04 08:39:30 UTC

@@ -1,0 +1,34 @@
+Package: rstantools
+Type: Package
+Title: Tools for Developing R Packages Interfacing with 'Stan'
+Version: 1.0.0
+Date: 2016-11-18
+Authors@R: c(person("Jonah", "Gabry", email = "jsg2201@columbia.edu",
+                    role = c("aut", "cre")),
+             person("Ben", "Goodrich", email = "benjamin.goodrich@columbia.edu",
+                    role = "aut"),
+             person("Trustees of", "Columbia University", role = "cph"))
+Maintainer: Jonah Gabry <jsg2201@columbia.edu>
+Description: Provides various tools for developers of R packages interfacing
+    with 'Stan' <http://mc-stan.org>, including functions to set up the required 
+    package structure, S3 generics and default methods to unify function naming 
+    across 'Stan'-based R packages, and a vignette with recommendations for 
+    developers.
+License: GPL (>= 3)
+URL: http://mc-stan.org/,
+        https://groups.google.com/forum/#!forum/stan-users
+BugReports: https://github.com/stan-dev/rstantools/issues
+Encoding: UTF-8
+LazyData: true
+Imports: stats, utils
+Suggests: rstan (>= 2.12.1), rstanarm (>= 2.12.1), shinystan (>=
+        2.2.1), loo (>= 0.1.6), testthat, covr, knitr, rmarkdown
+RoxygenNote: 5.0.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2016-11-19 19:00:37 UTC; jgabry
+Author: Jonah Gabry [aut, cre],
+  Ben Goodrich [aut],
+  Trustees of Columbia University [cph]
+Repository: CRAN
+Date/Publication: 2016-11-20 16:40:05

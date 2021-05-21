@@ -1,0 +1,32 @@
+Package: jointseg
+Type: Package
+Title: Joint Segmentation of Multivariate (Copy Number) Signals
+Version: 1.0.0
+Authors@R: c(person("Morgane", "Pierre-Jean", role = c("aut", "cre"), 
+                     email = "mpierrejean.pro@gmail.com"),
+              person("Pierre", "Neuvial", role = c("aut"),
+                     email="pierre.neuvial@math.univ-toulouse.fr"),
+              person("Guillem", "Rigaill", role = "aut"))
+Description: Methods for fast segmentation of multivariate
+    signals into piecewise constant profiles and for generating realistic
+    copy-number profiles. A typical application is the joint segmentation of total
+    DNA copy numbers and allelic ratios obtained from Single Nucleotide Polymorphism
+    (SNP) microarrays in cancer studies. The methods are described in Pierre-Jean, 
+    Rigaill and Neuvial (2015) <doi:10.1093/bib/bbu026>.
+License: LGPL (>= 2.1)
+Depends: R (>= 3.1.0)
+Imports: acnr (>= 0.3.1), matrixStats (>= 0.6.0), DNAcopy
+Suggests: PSCBS, R.cache, digest, changepoint (>= 1.0.2), knitr,
+        rmarkdown, testthat
+VignetteBuilder: knitr
+URL: https://github.com/mpierrejean/jointseg
+RoxygenNote: 6.0.1.9000
+BugReports: https://github.com/mpierrejean/jointseg/issues
+NeedsCompilation: yes
+Packaged: 2017-11-27 14:02:18 UTC; mpierre-jean
+Author: Morgane Pierre-Jean [aut, cre],
+  Pierre Neuvial [aut],
+  Guillem Rigaill [aut]
+Maintainer: Morgane Pierre-Jean <mpierrejean.pro@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-11-27 14:32:01 UTC

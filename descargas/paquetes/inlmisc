@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package inlmisc</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Miscellaneous Functions for the USGS INL Project Office [R package inlmisc version 0.5.2]" />
+<meta name="citation_author" content="Jason C. Fisher" />
+<meta name="citation_publication_date" content="2020-09-12" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=inlmisc" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=inlmisc" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="inlmisc: Miscellaneous Functions for the USGS INL Project Office" />
+<meta name="og:description" content="A collection of functions for creating high-level graphics, performing raster-based analysis, processing MODFLOW-based models, selecting subsets using a genetic algorithm, creating interactive web maps, accessing color palettes, etc. Used to support packages and scripts written by researchers at the United States Geological Survey (USGS) Idaho National Laboratory (INL) Project Office." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=inlmisc" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>inlmisc: Miscellaneous Functions for the USGS INL Project Office</h2>
+<p>A collection of functions for creating high-level graphics,
+    performing raster-based analysis, processing MODFLOW-based models,
+    selecting subsets using a genetic algorithm, creating interactive web maps,
+    accessing color palettes, etc. Used to support packages and scripts written
+    by researchers at the United States Geological Survey (USGS)
+    Idaho National Laboratory (INL) Project Office.</p>
+<table summary="Package inlmisc summary">
+<tr>
+<td>Version:</td>
+<td>0.5.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../checkmate/index.html">checkmate</a>, <a href="../data.table/index.html">data.table</a>, <a href="../GA/index.html">GA</a>, graphics, grDevices, <a href="../htmltools/index.html">htmltools</a>, <a href="../htmlwidgets/index.html">htmlwidgets</a>, <a href="../igraph/index.html">igraph</a>, <a href="../knitr/index.html">knitr</a>, <a href="../leaflet/index.html">leaflet</a>, methods, parallel, <a href="../raster/index.html">raster</a>, <a href="../rgdal/index.html">rgdal</a>, <a href="../rgeos/index.html">rgeos</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../scales/index.html">scales</a>, <a href="../sp/index.html">sp</a>, stats, <a href="../tinytex/index.html">tinytex</a>, tools, <a href="../webshot/index.html">webshot</a>, <a href="../wordcloud2/index.html">wordcloud2</a>, <a href="../xtable/index.html">xtable</a>, <a href="../yaml/index.html">yaml</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../alphahull/index.html">alphahull</a>, <a href="../dichromat/index.html">dichromat</a>, <a href="../doParallel/index.html">doParallel</a>, <a href="../doRNG/index.html">doRNG</a>, grid, <a href="../gstat/index.html">gstat</a>, <a href="../maptools/index.html">maptools</a>, <a href="../png/index.html">png</a>, <a href="../remotes/index.html">remotes</a>, <a href="../roxygen2/index.html">roxygen2</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-12</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Jason C. Fisher <a href="https://orcid.org/0000-0001-9032-8912"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Jason C. Fisher  &#x3c;&#x6a;&#x66;&#x69;&#x73;&#x68;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x75;&#x73;&#x67;&#x73;&#x2e;&#x67;&#x6f;&#x76;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/USGS-R/inlmisc/issues">https://github.com/USGS-R/inlmisc/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="https://creativecommons.org/publicdomain/zero/1.0/legalcode">CC0</a></td>
+</tr>
+<tr>
+<td>Copyright:</td>
+<td>This software is in the public domain because it contains
+materials that originally came from the United States
+Geological Survey (USGS), an agency of the United States
+Department of Interior. For more information, see the official
+USGS copyright policy at
+https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/USGS-R/inlmisc">https://github.com/USGS-R/inlmisc</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>pandoc (https://pandoc.org/) and phantomjs
+(https://phantomjs.org/)</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">inlmisc citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Spatial.html">Spatial</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_inlmisc.html">inlmisc results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package inlmisc downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="inlmisc.pdf"> inlmisc.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/inlmisc_0.5.2.tar.gz"> inlmisc_0.5.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/inlmisc_0.5.2.zip">inlmisc_0.5.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/inlmisc_0.5.2.zip">inlmisc_0.5.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/inlmisc_0.5.2.zip">inlmisc_0.5.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/inlmisc_0.5.2.tgz">inlmisc_0.5.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/inlmisc_0.5.2.tgz">inlmisc_0.5.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/inlmisc"> inlmisc archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package inlmisc reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../geomerge/index.html">geomerge</a>, <a href="../RSurvey/index.html">RSurvey</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../inldata/index.html">inldata</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=inlmisc"><samp>https://CRAN.R-project.org/package=inlmisc</samp></a>
+to link to this page.</p>
+</body>
+</html>

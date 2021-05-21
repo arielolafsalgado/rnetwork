@@ -1,0 +1,32 @@
+Package: tiledb
+Type: Package
+Version: 0.7.0
+Title: Sparse and Dense Multidimensional Array Storage Engine for Data
+        Science
+Author: TileDB, Inc.
+Copyright: TileDB, Inc.
+Maintainer: Dirk Eddelbuettel <dirk@tiledb.com>
+Description: The data science storage engine 'TileDB' introduces a
+ powerful on-disk format for multi-dimensional arrays. It supports
+ dense and sparse arrays, dataframes and key-values stores, cloud
+ storage ('S3', 'GCS', 'Azure'), chunked arrays, multiple compression,
+ encryption and checksum filters, uses a fully multi-threaded
+ implementation, supports parallel I/O, data versioning ('time
+ travel'), metadata and groups. It is implemented as an embeddable
+ cross-platform C++ library with APIs from several languages, and
+ integrations.
+License: MIT + file LICENSE
+URL: https://github.com/TileDB-Inc/TileDB-R
+BugReports: https://github.com/TileDB-Inc/TileDB-R/issues
+SystemRequirements: cmake, curl, git
+OS_type: unix
+Imports: methods, Rcpp, nanotime
+LinkingTo: Rcpp
+Suggests: testthat, rmarkdown, knitr, BiocStyle
+VignetteBuilder: knitr
+RoxygenNote: 7.1.0
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2020-06-26 11:26:05.587211 UTC; edd
+Repository: CRAN
+Date/Publication: 2020-06-26 16:00:06 UTC

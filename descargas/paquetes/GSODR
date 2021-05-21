@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package GSODR</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Global Surface Summary of the Day ('GSOD') Weather Data Client [R package GSODR version 2.1.2]" />
+<meta name="citation_author1" content="Adam Sparks" />
+<meta name="citation_author2" content="Tomislav Hengl" />
+<meta name="citation_author3" content="Andrew Nelson" />
+<meta name="citation_publication_date" content="2020-09-20" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=GSODR" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=GSODR" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="GSODR: Global Surface Summary of the Day ('GSOD') Weather Data Client" />
+<meta name="og:description" content="Provides automated downloading, parsing, cleaning, unit conversion and formatting of Global Surface Summary of the Day ('GSOD') weather data from the from the USA National Centers for Environmental Information ('NCEI'). Units are converted from from United States Customary System ('USCS') units to International System of Units ('SI'). Stations may be individually checked for number of missing days defined by the user, where stations with too many missing observations are omitted. Only stations with valid reported latitude and longitude values are permitted in the final data. Additional useful elements, saturation vapour pressure ('es'), actual vapour pressure ('ea') and relative humidity ('RH') are calculated from the original data using the improved August-Roche-Magnus approximation (Alduchov &amp;amp; Eskridge 1996) and included in the final data set. The resulting metadata include station identification information, country, state, latitude, longitude, elevation, weather observations and associated flags. For information on the 'GSOD' data from 'NCEI', please see the 'GSOD' 'readme.txt' file available from, &amp;lt;&lt;a href=&quot;https://www1.ncdc.noaa.gov/pub/data/gsod/readme.txt&quot;&gt;https://www1.ncdc.noaa.gov/pub/data/gsod/readme.txt&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=GSODR" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>GSODR: Global Surface Summary of the Day ('GSOD') Weather Data Client</h2>
+<p>Provides automated downloading, parsing, cleaning, unit conversion
+    and formatting of Global Surface Summary of the Day ('GSOD') weather data
+    from the from the USA National Centers for Environmental Information
+    ('NCEI').  Units are converted from from United States Customary System
+    ('USCS') units to International System of Units ('SI').  Stations may be
+    individually checked for number of missing days defined by the user, where
+    stations with too many missing observations are omitted.  Only stations with
+    valid reported latitude and longitude values are permitted in the final
+    data.  Additional useful elements, saturation vapour pressure ('es'), actual
+    vapour pressure ('ea') and relative humidity ('RH') are calculated from the
+    original data using the improved August-Roche-Magnus approximation (Alduchov
+    &amp; Eskridge 1996) and included in the final data set.  The resulting metadata
+    include station identification information, country, state, latitude,
+    longitude, elevation, weather observations and associated flags.  For
+    information on the 'GSOD' data from 'NCEI', please see the 'GSOD'
+    'readme.txt' file available from,
+    &lt;<a href="https://www1.ncdc.noaa.gov/pub/data/gsod/readme.txt">https://www1.ncdc.noaa.gov/pub/data/gsod/readme.txt</a>&gt;.</p>
+<table summary="Package GSODR summary">
+<tr>
+<td>Version:</td>
+<td>2.1.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../countrycode/index.html">countrycode</a>, <a href="../curl/index.html">curl</a>, <a href="../data.table/index.html">data.table</a> (&ge; 1.11.6), <a href="../future.apply/index.html">future.apply</a>, <a href="../httr/index.html">httr</a>, <a href="../R.utils/index.html">R.utils</a>, stats, utils</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../dplyr/index.html">dplyr</a>, <a href="../future/index.html">future</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../gridExtra/index.html">gridExtra</a>, <a href="../knitr/index.html">knitr</a>, <a href="../mapproj/index.html">mapproj</a>, <a href="../maps/index.html">maps</a>, <a href="../remotes/index.html">remotes</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../roxygen2/index.html">roxygen2</a> (&ge; 6.1.0), <a href="../testthat/index.html">testthat</a>, <a href="../tidyr/index.html">tidyr</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-20</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Adam Sparks <a href="https://orcid.org/0000-0002-0061-8359"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    cre],
+  Tomislav Hengl <a href="https://orcid.org/0000-0002-9921-5129"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Andrew Nelson <a href="https://orcid.org/0000-0002-7249-3778"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Hugh Parsonage <a href="https://orcid.org/0000-0003-4055-0835"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [cph, ctb],
+  Taras Kaduk [ctb] (Suggestion for handling bulk station downloads more
+    efficiently),
+  Gwenael Giboire [ctb] (Several bug reports in early versions and
+    testing feedback),
+  Łukasz Pawlik [ctb] (Reported bug in windspeed conversion calculation),
+  Ross Darnell <a href="https://orcid.org/0000-0002-7973-6322"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb] (Reported bug in 'Windows OS' versions causing 'GSOD' data
+    untarring to fail),
+  Tyler Widdison [ctb] (Reported bug where `nearest_stations()` did not
+    return stations in order of nearest to farthest.)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Adam Sparks  &#x3c;&#x61;&#x64;&#x61;&#x6d;&#x68;&#x73;&#x70;&#x61;&#x72;&#x6b;&#x73;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ropensci/GSODR/issues">https://github.com/ropensci/GSODR/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://docs.ropensci.org/GSODR/">https://docs.ropensci.org/GSODR/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-AU</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">GSODR citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Hydrology.html">Hydrology</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_GSODR.html">GSODR results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package GSODR downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="GSODR.pdf"> GSODR.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/GSODR.html">GSODR</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/GSODR_2.1.2.tar.gz"> GSODR_2.1.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/GSODR_2.1.2.zip">GSODR_2.1.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/GSODR_2.1.2.zip">GSODR_2.1.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/GSODR_2.1.2.zip">GSODR_2.1.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/GSODR_2.1.2.tgz">GSODR_2.1.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/GSODR_2.1.2.tgz">GSODR_2.1.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/GSODR"> GSODR archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package GSODR reverse dependencies">
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../apsimx/index.html">apsimx</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=GSODR"><samp>https://CRAN.R-project.org/package=GSODR</samp></a>
+to link to this page.</p>
+</body>
+</html>

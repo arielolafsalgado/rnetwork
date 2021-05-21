@@ -1,0 +1,27 @@
+Package: plotGMM
+Type: Package
+Title: Tools for Visualizing Gaussian Mixture Models
+Version: 0.2.1
+BugReports: https://github.com/pdwaggoner/plotGMM/issues
+Authors@R: c(person("Philip", "Waggoner", role = c("aut", "cre"), email = "philip.waggoner@gmail.com"),
+             person("Fong", "Chan", role = "aut"))
+Maintainer: Philip Waggoner <philip.waggoner@gmail.com>
+Description: The main function, plot_GMM, is used for plotting output from Gaussian mixture models (GMMs), 
+    including both densities and overlaying mixture weight component curves from the fit GMM. The package
+    also include the function, plot_cut_point, which plots the cutpoint (mu) from the GMM over a histogram
+    of the distribution with several color options. Finally, the package includes the function, plot_mix_comps, 
+    which is used in the plot_GMM function, and can be used to create a custom plot for overlaying mixture 
+    component curves from GMMs. For the plot_mix_comps function, usage most often will be specifying 
+    the "fun" argument within "stat_function" in a ggplot2 object.
+Imports: methods, graphics, wesanderson, amerika, ggplot2
+Suggests: mixtools, testthat
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-06-28 17:25:21 UTC; bpwaggo
+Author: Philip Waggoner [aut, cre],
+  Fong Chan [aut]
+Repository: CRAN
+Date/Publication: 2019-06-28 23:20:15 UTC

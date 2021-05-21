@@ -1,0 +1,36 @@
+Package: valr
+Type: Package
+Title: Genome Interval Arithmetic in R
+Version: 0.4.2
+Authors@R: c(
+    person('Jay', 'Hesselberth', role = c('aut', 'cre'),
+      email = 'jay.hesselberth@gmail.com',
+      comment = c(ORCID = '0000-0002-6299-179X')),
+    person('Kent', 'Riemondy', role = c('aut'),
+      email = 'kent.riemondy@ucdenver.edu',
+      comment = c(ORCID = '0000-0003-0750-1273'))
+    )
+Description: Read and manipulate genome intervals and signals. Provides
+             functionality similar to command-line tool suites within R,
+             enabling interactive analysis and visualization of genome-scale data. 
+License: MIT + file LICENSE
+Depends: R (>= 3.1.2)
+Imports: dplyr (>= 0.7.0), rlang, readr, stringr, tibble, broom,
+        ggplot2,
+SystemRequirements: C++11
+LinkingTo: Rcpp (>= 0.12.8), BH, plogr, bindrcpp,
+Suggests: knitr, rmarkdown, testthat, microbenchmark, covr, curl,
+        RMySQL, purrr, tidyr, devtools, DT, cowplot, dbplyr,
+        GenomicRanges, IRanges, S4Vectors,
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+URL: http://github.com/rnabioco/valr, http://rnabioco.github.io/valr
+BugReports: https://github.com/rnabioco/valr/issues
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2018-11-17 13:39:29 UTC; jayhesselberth
+Author: Jay Hesselberth [aut, cre] (<https://orcid.org/0000-0002-6299-179X>),
+  Kent Riemondy [aut] (<https://orcid.org/0000-0003-0750-1273>)
+Maintainer: Jay Hesselberth <jay.hesselberth@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-11-18 00:50:02 UTC

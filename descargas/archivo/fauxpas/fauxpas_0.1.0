@@ -1,0 +1,25 @@
+Package: fauxpas
+Title: HTTP Error Helpers
+Description: HTTP error helpers. Methods included for general purpose HTTP 
+    error handling, as well as individual methods for every HTTP status
+    code, both via status code numbers as well as their descriptive names.
+    Supports ability to adjust behavior to stop, message or warning.
+    Includes ability to use custom whisker template to have any configuration
+    of status code, short description, and verbose message. Currently 
+    supports integration with 'crul', 'curl', and 'httr'.
+Version: 0.1.0
+Authors@R: person("Scott", "Chamberlain", role = c("aut", "cre"),
+    email = "myrmecocystus@gmail.com")
+License: MIT + file LICENSE
+URL: https://github.com/ropenscilabs/fauxpas
+BugReports: https://github.com/ropenscilabs/fauxpas/issues
+Imports: R6 (>= 2.1.2), httpcode (>= 0.2.0), whisker
+Suggests: crul (>= 0.1.0), curl (>= 2.2), httr (>= 1.2.0), testthat,
+        covr
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-11-16 01:26:47 UTC; sacmac
+Author: Scott Chamberlain [aut, cre]
+Maintainer: Scott Chamberlain <myrmecocystus@gmail.com>
+Repository: CRAN
+Date/Publication: 2016-11-16 08:16:30

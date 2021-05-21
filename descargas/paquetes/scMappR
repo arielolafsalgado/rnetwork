@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package scMappR</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Single Cell Mapper [R package scMappR version 0.1.4]" />
+<meta name="citation_author1" content="Dustin Sokolowski" />
+<meta name="citation_author2" content="Mariela Faykoo-Martinez" />
+<meta name="citation_author3" content="Lauren Erdman" />
+<meta name="citation_author4" content="Houyun Hou" />
+<meta name="citation_author5" content="Cadia Chan" />
+<meta name="citation_author6" content="Helen Zhu" />
+<meta name="citation_author7" content="Melissa Holmes" />
+<meta name="citation_author8" content="Anna Goldenberg" />
+<meta name="citation_author9" content="Michael Wilson" />
+<meta name="citation_publication_date" content="2020-09-02" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=scMappR" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=scMappR" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="scMappR: Single Cell Mapper" />
+<meta name="og:description" content="Description of scMappR R package adapted from pre-print. The single cell mapper (scMappR) R package contains a suite of bioinformatic tools that provide experimentally relevant cell-type specific information to a list of differentially expressed genes (DEG). The function &quot;scMappR_and_pathway_analysis&quot; reranks DEGs to generate cell-type specificity scores called cell-weighted fold-changes. Users input a list of DEGs, normalized counts, and a signature matrix into this function. scMappR then re-weights bulk DEGs by cell-type specific expression from the signature matrix, cell-type proportions from RNA-seq deconvolution and the ratio of cell-type proportions between the two conditions to account for changes in cell-type proportion. With cwFold-changes calculated, scMappR uses two approaches to utilize cwFold-changes to complete cell-type specific pathway analysis. The &quot;process_dgTMatrix_lists&quot; function in the scMappR package contains an automated scRNA-seq processing pipeline where users input scRNA-seq count data, which is made compatible for scMappR and other R packages that analyze scRNA-seq data. We further used this to store hundreds up regularly updating signature matrices. The functions &quot;tissue_by_celltype_enrichment&quot;, &quot;tissue_scMappR_internal&quot;, and &quot;tissue_scMappR_custom&quot; combine these consistently processed scRNAseq count data with gene-set enrichment tools to allow for cell-type marker enrichment of a generic gene list (e.g. GWAS hits). Reference: Sokolowski,D.J., Faykoo-Martinez,M., Erdman,L., Hou,H., Chan,C., Zhu,H., Holmes,M.M., Goldenberg,A. and Wilson,M.D. (2020) Single-cell mapper (scMappR): using scRNA-seq to infer cell-type specificities of differentially expressed genes. BioRxiv, 10.1101/2020.08.24.265298." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=scMappR" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>scMappR: Single Cell Mapper</h2>
+<p>Description of scMappR R package adapted from pre-print. The single cell mapper (scMappR) R package contains a suite of bioinformatic tools that provide experimentally relevant cell-type specific information to a list of differentially expressed genes (DEG). The function "scMappR_and_pathway_analysis" reranks DEGs to generate cell-type specificity scores called cell-weighted fold-changes. Users input a list of DEGs, normalized counts, and a signature matrix into this function. scMappR then re-weights bulk DEGs by cell-type specific expression from the signature matrix, cell-type proportions from RNA-seq deconvolution and the ratio of cell-type proportions between the two conditions to account for changes in cell-type proportion. With cwFold-changes calculated, scMappR uses two approaches to utilize cwFold-changes to complete cell-type specific pathway analysis. The "process_dgTMatrix_lists" function in the scMappR package contains an automated scRNA-seq processing pipeline where users input scRNA-seq count data, which is made compatible for scMappR and other R packages that analyze scRNA-seq data. We further used this to store hundreds up regularly updating signature matrices. The functions "tissue_by_celltype_enrichment", "tissue_scMappR_internal", and "tissue_scMappR_custom" combine these consistently processed scRNAseq count data with gene-set enrichment tools to allow for cell-type marker enrichment of a generic gene list (e.g. GWAS hits). Reference: Sokolowski,D.J., Faykoo-Martinez,M., Erdman,L., Hou,H., Chan,C., Zhu,H., Holmes,M.M., Goldenberg,A. and Wilson,M.D. (2020) Single-cell mapper (scMappR): using scRNA-seq to infer cell-type specificities of differentially expressed genes. BioRxiv, 10.1101/2020.08.24.265298.</p>
+<table summary="Package scMappR summary">
+<tr>
+<td>Version:</td>
+<td>0.1.4</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.0.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../ggplot2/index.html">ggplot2</a>, <a href="../pheatmap/index.html">pheatmap</a>, graphics, <a href="../Seurat/index.html">Seurat</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/GSVA.html"><span class="BioC">GSVA</span></a>, stats, utils, <a href="../downloader/index.html">downloader</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/pcaMethods.html"><span class="BioC">pcaMethods</span></a>, grDevices, <a href="../gProfileR/index.html">gProfileR</a>, <a href="../limSolve/index.html">limSolve</a>, <a href="../gprofiler2/index.html">gprofiler2</a>, <a href="../pbapply/index.html">pbapply</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-02</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Dustin Sokolowski [aut, cre],
+  Mariela Faykoo-Martinez [aut],
+  Lauren Erdman [aut],
+  Houyun Hou [aut],
+  Cadia Chan [aut],
+  Helen Zhu [aut],
+  Melissa Holmes [aut],
+  Anna Goldenberg [aut],
+  Michael Wilson [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Dustin Sokolowski  &#x3c;&#x64;&#x75;&#x73;&#x74;&#x69;&#x6e;&#x2e;&#x73;&#x6f;&#x6b;&#x6f;&#x6c;&#x6f;&#x77;&#x73;&#x6b;&#x69;&#x20;&#x61;&#x74;&#x20;&#x73;&#x69;&#x63;&#x6b;&#x6b;&#x69;&#x64;&#x73;&#x2e;&#x63;&#x61;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_scMappR.html">scMappR results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package scMappR downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="scMappR.pdf"> scMappR.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/scMappR_Vignette.html">single cell Mapper (scMappR)</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/scMappR_0.1.4.tar.gz"> scMappR_0.1.4.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/scMappR_0.1.4.zip">scMappR_0.1.4.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/scMappR_0.1.4.zip">scMappR_0.1.4.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/scMappR_0.1.1.zip">scMappR_0.1.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/scMappR_0.1.4.tgz">scMappR_0.1.4.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/scMappR_0.1.1.tgz">scMappR_0.1.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/scMappR"> scMappR archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=scMappR"><samp>https://CRAN.R-project.org/package=scMappR</samp></a>
+to link to this page.</p>
+</body>
+</html>

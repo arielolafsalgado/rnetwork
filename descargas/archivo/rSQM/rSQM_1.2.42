@@ -1,0 +1,26 @@
+Package: rSQM
+Type: Package
+Title: Statistical Downscaling Toolkit for Climate Change Scenario
+        using Non Parametric Quantile Mapping
+Version: 1.2.42
+Date: 2017-09-20
+Authors@R: c(person("Jaepil Cho", role="aut", email="jpcho89@gmail"),
+			       person("Wonil Cho", role=c("aut", "cre"), email="climate.service@apcc21.org"),
+			       person("Imgook Jung", role="aut", email="igjung@apcc21.org"))
+Author: Jaepil Cho [aut],
+  Wonil Cho [aut, cre],
+  Imgook Jung [aut]
+Maintainer: Wonil Cho <climate.service@apcc21.org>
+Description: Conducts statistical downscaling of daily CMIP5 (Coupled Model Intercomparison Project 5) climate change scenario data at a station level using empirical quantile mapping method by Jaepil Cho et al. (2016) <doi:10.1002/ird.2035>.
+License: GPL (>= 2)
+LazyData: TRUE
+RoxygenNote: 6.0.1
+Depends: R (>= 3.3.3)
+Imports: ncdf4, zoo, stringr, EcoHydRology, dplyr, gsubfn, yaml, mise,
+        reshape2, qmap, ggplot2
+Suggests: knitr, rmarkdown, testthat
+NeedsCompilation: no
+Packaged: 2017-09-25 00:53:23 UTC; jowonil
+VignetteBuilder: knitr
+Repository: CRAN
+Date/Publication: 2017-09-25 08:27:42 UTC

@@ -1,0 +1,22 @@
+Package: RNOmni
+Title: Omnibus Test for Genetic Association Analysis using the Rank
+        Normal Transformation
+Version: 0.1.2
+Date: 2017-10-26
+Authors@R: person("Zachary","McCaw",email="zmccaw@g.harvard.edu",role=c("aut","cre"))
+Description: Implementation of genetic association tests that utilize the rank based inverse normal transformation (INT). The primary contribution is an omnibus test, which synthesizes two INT-based approaches, termed direct INT (DINT) and partially indirect INT (PIINT). In genome scale simulations, the omnibus test routinely provided valid inference against continuous phenotypes with skewed and heavy tailed residual distributions. Association testing against these same phenotypes via standard linear regression led to an excess of false positive associations. In addition to controlling the type I error, the omnibus approach provided power comparable to the more powerful of the component methods. 
+Depends: R (>= 3.2.2)
+Imports: abind, cowplot, foreach, ggplot2, microbenchmark, mvtnorm,
+        RcppEigen, reshape2
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1.9000
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-10-28 03:26:53 UTC; zmccaw
+Author: Zachary McCaw [aut, cre]
+Maintainer: Zachary McCaw <zmccaw@g.harvard.edu>
+Repository: CRAN
+Date/Publication: 2017-10-29 13:03:44 UTC

@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package ODS</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Statistical Methods for Outcome-Dependent Sampling Designs [R package ODS version 0.2.0]" />
+<meta name="citation_author1" content="Yinghao Pan" />
+<meta name="citation_author2" content="Haibo Zhou" />
+<meta name="citation_author3" content="Mark Weaver" />
+<meta name="citation_author4" content="Guoyou Qin" />
+<meta name="citation_author5" content="Jianwen Cai" />
+<meta name="citation_publication_date" content="2018-11-19" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=ODS" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=ODS" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="ODS: Statistical Methods for Outcome-Dependent Sampling Designs" />
+<meta name="og:description" content="Outcome-dependent sampling (ODS) schemes are cost-effective ways to enhance study efficiency. In ODS designs, one observes the exposure/covariates with a probability that depends on the outcome variable. Popular ODS designs include case-control for binary outcome, case-cohort for time-to-event outcome, and continuous outcome ODS design (Zhou et al. 2002) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fj.0006-341X.2002.00413.x&quot;&gt;doi:10.1111/j.0006-341X.2002.00413.x&lt;/a&gt;&amp;gt;. Because ODS data has biased sampling nature, standard statistical analysis such as linear regression will lead to biases estimates of the population parameters. This package implements four statistical methods related to ODS designs: (1) An empirical likelihood method analyzing the primary continuous outcome with respect to exposure variables in continuous ODS design (Zhou et al., 2002). (2) A partial linear model analyzing the primary outcome in continuous ODS design (Zhou, Qin and Longnecker, 2011) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fj.1541-0420.2010.01500.x&quot;&gt;doi:10.1111/j.1541-0420.2010.01500.x&lt;/a&gt;&amp;gt;. (3) Analyze a secondary outcome in continuous ODS design (Pan et al. 2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fsim.7672&quot;&gt;doi:10.1002/sim.7672&lt;/a&gt;&amp;gt;. (4) An estimated likelihood method analyzing a secondary outcome in case-cohort data (Pan et al. 2017) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fbiom.12838&quot;&gt;doi:10.1111/biom.12838&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=ODS" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>ODS: Statistical Methods for Outcome-Dependent Sampling Designs</h2>
+<p>Outcome-dependent sampling (ODS) schemes are cost-effective ways to enhance study efficiency. 
+    In ODS designs, one observes the exposure/covariates with a probability that depends on the outcome 
+    variable. Popular ODS designs include case-control for binary outcome, case-cohort for time-to-event 
+    outcome, and continuous outcome ODS design (Zhou et al. 2002) &lt;<a href="https://doi.org/10.1111%2Fj.0006-341X.2002.00413.x">doi:10.1111/j.0006-341X.2002.00413.x</a>&gt;. 
+    Because ODS data has biased sampling nature, standard statistical analysis such as linear regression 
+    will lead to biases estimates of the population parameters. This package implements four statistical 
+    methods related to ODS designs: (1) An empirical likelihood method analyzing the primary continuous 
+    outcome with respect to exposure variables in continuous ODS design (Zhou et al., 2002). (2) A partial 
+    linear model analyzing the primary outcome in continuous ODS design (Zhou, Qin and Longnecker, 2011) 
+    &lt;<a href="https://doi.org/10.1111%2Fj.1541-0420.2010.01500.x">doi:10.1111/j.1541-0420.2010.01500.x</a>&gt;. (3) Analyze a secondary outcome in continuous ODS design 
+    (Pan et al. 2018) &lt;<a href="https://doi.org/10.1002%2Fsim.7672">doi:10.1002/sim.7672</a>&gt;. (4) An estimated likelihood method analyzing a secondary 
+    outcome in case-cohort data (Pan et al. 2017) &lt;<a href="https://doi.org/10.1111%2Fbiom.12838">doi:10.1111/biom.12838</a>&gt;.</p>
+<table summary="Package ODS summary">
+<tr>
+<td>Version:</td>
+<td>0.2.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../cubature/index.html">cubature</a> (&ge; 1.4-1), <a href="../survival/index.html">survival</a> (&ge; 2.42-3), utils, stats</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2018-11-19</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Yinghao Pan [aut, cre],
+  Haibo Zhou [aut],
+  Mark Weaver [aut],
+  Guoyou Qin [aut],
+  Jianwen Cai [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Yinghao Pan  &#x3c;&#x79;&#x70;&#x61;&#x6e;&#x38;&#x20;&#x61;&#x74;&#x20;&#x75;&#x6e;&#x63;&#x63;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/Yinghao-Pan/ODS/issues">https://github.com/Yinghao-Pan/ODS/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/Yinghao-Pan/ODS">https://github.com/Yinghao-Pan/ODS</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_ODS.html">ODS results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package ODS downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="ODS.pdf"> ODS.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/ODS_0.2.0.tar.gz"> ODS_0.2.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/ODS_0.2.0.zip">ODS_0.2.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/ODS_0.2.0.zip">ODS_0.2.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/ODS_0.2.0.zip">ODS_0.2.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/ODS_0.2.0.tgz">ODS_0.2.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/ODS_0.2.0.tgz">ODS_0.2.0.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=ODS"><samp>https://CRAN.R-project.org/package=ODS</samp></a>
+to link to this page.</p>
+</body>
+</html>

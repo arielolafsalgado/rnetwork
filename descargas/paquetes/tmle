@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package tmle</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Targeted Maximum Likelihood Estimation [R package tmle version 1.5.0-1]" />
+<meta name="citation_author1" content="Susan Gruber" />
+<meta name="citation_author2" content="Mark van der Laan" />
+<meta name="citation_publication_date" content="2020-06-07" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=tmle" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=tmle" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="tmle: Targeted Maximum Likelihood Estimation" />
+<meta name="og:description" content="Targeted maximum likelihood estimation of point treatment effects (Targeted Maximum Likelihood Learning, The International Journal of Biostatistics, 2(1), 2006. This version automatically estimates the additive treatment effect among the treated (ATT) and among the controls (ATC). The tmle() function calculates the adjusted marginal difference in mean outcome associated with a binary point treatment, for continuous or binary outcomes. Relative risk and odds ratio estimates are also reported for binary outcomes. Missingness in the outcome is allowed, but not in treatment assignment or baseline covariate values. The population mean is calculated when there is missingness, and no variation in the treatment assignment. The tmleMSM() function estimates the parameters of a marginal structural model for a binary point treatment effect. Effect estimation stratified by a binary mediating variable is also available. An ID argument can be used to identify repeated measures. Default settings call 'SuperLearner' to estimate the Q and g portions of the likelihood, unless values or a user-supplied regression function are passed in as arguments. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=tmle" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>tmle: Targeted Maximum Likelihood Estimation</h2>
+<p>Targeted maximum likelihood estimation of point treatment effects (Targeted Maximum Likelihood Learning, The International Journal of Biostatistics, 2(1), 2006.  This version automatically estimates the additive treatment effect among the treated (ATT) and among the controls (ATC).  The tmle() function calculates the adjusted marginal difference in mean outcome associated with a binary point treatment, for continuous or binary outcomes.  Relative risk and odds ratio estimates are also reported for binary outcomes. Missingness in the outcome is allowed, but not in treatment assignment or baseline covariate values.  The population mean is calculated when there is missingness, and no variation in the treatment assignment. The tmleMSM() function estimates the parameters of a marginal structural model for a binary point treatment effect. Effect estimation stratified by a binary mediating variable is also available. An ID argument can be used to identify repeated measures. Default settings call 'SuperLearner' to estimate the Q and g portions of the likelihood, unless values or a user-supplied regression function are passed in as arguments. </p>
+<table summary="Package tmle summary">
+<tr>
+<td>Version:</td>
+<td>1.5.0-1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td><a href="../glmnet/index.html">glmnet</a>, <a href="../SuperLearner/index.html">SuperLearner</a> (&ge; 2.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../dbarts/index.html">dbarts</a> (&ge; 0.9-12), <a href="../gam/index.html">gam</a> (&ge; 1.15), <a href="../ROCR/index.html">ROCR</a> (&ge; 1.0-7)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-07</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Susan Gruber [aut, cre],
+  Mark van der Laan [aut],
+  Chris Kennedy [ctr]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Susan Gruber  &#x3c;&#x73;&#x67;&#x72;&#x75;&#x62;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x63;&#x61;&#x6c;&#x2e;&#x62;&#x65;&#x72;&#x6b;&#x65;&#x6c;&#x65;&#x79;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/BSD_3_clause">BSD_3_clause</a> + file <a href="LICENSE">LICENSE</a> | <a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>Copyright:</td>
+<td>Copyright 2012. The Regents of the University of California
+(Regents). All Rights Reserved.</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://CRAN.R-project.org/package=tmle">https://CRAN.R-project.org/package=tmle</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">tmle citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_tmle.html">tmle results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package tmle downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="tmle.pdf"> tmle.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/tmle_1.5.0-1.tar.gz"> tmle_1.5.0-1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/tmle_1.5.0-1.zip">tmle_1.5.0-1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/tmle_1.5.0-1.zip">tmle_1.5.0-1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/tmle_1.5.0-1.zip">tmle_1.5.0-1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/tmle_1.5.0-1.tgz">tmle_1.5.0-1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/tmle_1.5.0-1.tgz">tmle_1.5.0-1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/tmle"> tmle archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package tmle reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../ctmle/index.html">ctmle</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="http://www.bioconductor.org/packages/release/bioc/html/adaptest.html"><span class="BioC">adaptest</span></a>, <a href="../CIMTx/index.html">CIMTx</a>, <a href="../CovSelHigh/index.html">CovSelHigh</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/methyvim.html"><span class="BioC">methyvim</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../bartCause/index.html">bartCause</a>, <a href="../ltmle/index.html">ltmle</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=tmle"><samp>https://CRAN.R-project.org/package=tmle</samp></a>
+to link to this page.</p>
+</body>
+</html>

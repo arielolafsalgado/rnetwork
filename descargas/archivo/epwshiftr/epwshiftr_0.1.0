@@ -1,0 +1,33 @@
+Package: epwshiftr
+Title: Create Future 'EnergyPlus' Weather Files using 'CMIP6' Data
+Version: 0.1.0
+Authors@R: 
+    person(given = "Hongyuan",
+           family = "Jia",
+           role = c("aut", "cre"),
+           email = "hongyuan.jia@bears-berkeley.sg",
+           comment = c(ORCID = "0000-0002-0075-8183"))
+Description: 
+    Query, download climate change projection data from the 'CMIP6' (Coupled
+    Model Intercomparison Project Phase 6) project
+    <https://pcmdi.llnl.gov/CMIP6> in the 'ESGF' (Earth System Grid Federation)
+    platform <https://esgf.llnl.gov>, and create future 'EnergyPlus'
+    <https://energyplus.net> Weather ('EPW') files adjusted from climate changes
+    using data from Global Climate Models ('GCM').
+Imports: checkmate, data.table (>= 1.12.4), eplusr, future.apply, fst,
+        jsonlite, progressr, psychrolib, rappdirs, RNetCDF, units
+Suggests: testthat, pingr, covr
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/ideas-lab-nus/epwshiftr
+BugReports: https://github.com/ideas-lab-nus/epwshiftr/issues
+RoxygenNote: 7.0.2
+Collate: 'coord.R' 'utils.R' 'epwshiftr-package.R' 'esgf.R' 'morph.R'
+        'netcdf.R'
+NeedsCompilation: no
+Packaged: 2020-07-07 13:38:42 UTC; hongyuanjia
+Author: Hongyuan Jia [aut, cre] (<https://orcid.org/0000-0002-0075-8183>)
+Maintainer: Hongyuan Jia <hongyuan.jia@bears-berkeley.sg>
+Repository: CRAN
+Date/Publication: 2020-07-07 14:00:07 UTC

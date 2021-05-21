@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package plantecowrap</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Enhancing Capabilities of 'plantecophys' [R package plantecowrap version 1.0.4]" />
+<meta name="citation_author1" content="Joseph Stinziano" />
+<meta name="citation_author2" content="Demi Gamble" />
+<meta name="citation_author3" content="Robert Sharwood" />
+<meta name="citation_author4" content="Warren Conaty" />
+<meta name="citation_publication_date" content="2020-04-03" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=plantecowrap" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=plantecowrap" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="plantecowrap: Enhancing Capabilities of 'plantecophys'" />
+<meta name="og:description" content="Provides wrapping functions to add to capabilities to 'plantecophys' (Duursma, 2015, &amp;lt;&lt;a href=&quot;https://doi.org/10.1371%2Fjournal.pone.0143346&quot;&gt;doi:10.1371/journal.pone.0143346&lt;/a&gt;&amp;gt;). Key added capabilities include temperature responses of mesophyll conductance (gm, gmeso), apparent Michaelis-Menten constant for rubisco carboxylation in air (Km, Kcair),and photorespiratory CO2 compensation point (GammaStar) for fitting A-Ci or A-Cc curves for C3 plants (for temperature responses of gm, Km, &amp;amp; GammaStar, see Bernacchi et al., 2002, &amp;lt;&lt;a href=&quot;https://doi.org/10.1104%2Fpp.008250&quot;&gt;doi:10.1104/pp.008250&lt;/a&gt;&amp;gt;; for theory on fitting A-Ci or A-Cc curves, see Farquhar et al., 1980; &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2FBF00386231&quot;&gt;doi:10.1007/BF00386231&lt;/a&gt;&amp;gt;, von Caemmerer, 2000, ISBN:064306379X; Ethier &amp;amp; Livingston, 2004 &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fj.1365-3040.2004.01140.x&quot;&gt;doi:10.1111/j.1365-3040.2004.01140.x&lt;/a&gt;&amp;gt;; and Gu et al., 2010, &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fj.1365-3040.2010.02192.x&quot;&gt;doi:10.1111/j.1365-3040.2010.02192.x&lt;/a&gt;&amp;gt;). Includes the ability to fit the Arrhenius and modified Arrhenius temperature response functions (see Medlyn et al., 2002, &amp;lt;&lt;a href=&quot;https://doi.org/10.1046%2Fj.1365-3040.2002.00891.x&quot;&gt;doi:10.1046/j.1365-3040.2002.00891.x&lt;/a&gt;&amp;gt;) for maximum rubisco carboxylation rates (Vcmax) and maximum electron transport rates (Jmax) (see Farquhar et al., 1980; &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2FBF00386231&quot;&gt;doi:10.1007/BF00386231&lt;/a&gt;&amp;gt;)." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=plantecowrap" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>plantecowrap: Enhancing Capabilities of 'plantecophys'</h2>
+<p>Provides wrapping functions to add to capabilities to 'plantecophys' 
+    (Duursma, 2015, &lt;<a href="https://doi.org/10.1371%2Fjournal.pone.0143346">doi:10.1371/journal.pone.0143346</a>&gt;). Key added capabilities 
+    include temperature responses of mesophyll conductance (gm, gmeso), apparent 
+    Michaelis-Menten constant for rubisco carboxylation in air (Km, Kcair),and
+    photorespiratory CO2 compensation point (GammaStar) for fitting A-Ci or A-Cc
+    curves for C3 plants (for temperature responses of gm, Km, &amp; GammaStar,  see 
+    Bernacchi et al., 2002, &lt;<a href="https://doi.org/10.1104%2Fpp.008250">doi:10.1104/pp.008250</a>&gt;; for theory on fitting A-Ci 
+    or A-Cc curves, see Farquhar et al., 1980; &lt;<a href="https://doi.org/10.1007%2FBF00386231">doi:10.1007/BF00386231</a>&gt;, von 
+    Caemmerer, 2000, ISBN:064306379X; Ethier &amp; Livingston, 2004 
+    &lt;<a href="https://doi.org/10.1111%2Fj.1365-3040.2004.01140.x">doi:10.1111/j.1365-3040.2004.01140.x</a>&gt;; and Gu et al., 2010, 
+    &lt;<a href="https://doi.org/10.1111%2Fj.1365-3040.2010.02192.x">doi:10.1111/j.1365-3040.2010.02192.x</a>&gt;). Includes the ability to fit the 
+    Arrhenius and modified Arrhenius temperature response functions (see Medlyn 
+    et al., 2002, &lt;<a href="https://doi.org/10.1046%2Fj.1365-3040.2002.00891.x">doi:10.1046/j.1365-3040.2002.00891.x</a>&gt;) for maximum rubisco 
+    carboxylation rates (Vcmax) and maximum electron transport rates (Jmax) (see
+    Farquhar et al., 1980; &lt;<a href="https://doi.org/10.1007%2FBF00386231">doi:10.1007/BF00386231</a>&gt;).</p>
+<table summary="Package plantecowrap summary">
+<tr>
+<td>Version:</td>
+<td>1.0.4</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0), <a href="../ggplot2/index.html">ggplot2</a> (&ge; 3.2.1), <a href="../minpack.lm/index.html">minpack.lm</a> (&ge; 1.2-1), <a href="../plantecophys/index.html">plantecophys</a> (&ge; 1.4-4), <a href="../tidyr/index.html">tidyr</a> (&ge; 1.0.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-04-03</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Joseph Stinziano <a href="https://orcid.org/0000-0002-7628-4201"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Demi Gamble [aut],
+  Robert Sharwood [aut],
+  Warren Conaty [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Joseph Stinziano  &#x3c;&#x6a;&#x6f;&#x73;&#x65;&#x70;&#x68;&#x73;&#x74;&#x69;&#x6e;&#x7a;&#x69;&#x61;&#x6e;&#x6f;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/jstinzi/plantecowrap/issues">https://github.com/jstinzi/plantecowrap/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/jstinzi/plantecowrap">https://github.com/jstinzi/plantecowrap</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_plantecowrap.html">plantecowrap results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package plantecowrap downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="plantecowrap.pdf"> plantecowrap.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Example_dataset_creation.html">Example_dataset_creation</a><br/>
+<a href="vignettes/Using_plantecowrap.html">Using_plantecophystools</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/plantecowrap_1.0.4.tar.gz"> plantecowrap_1.0.4.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/plantecowrap_1.0.4.zip">plantecowrap_1.0.4.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/plantecowrap_1.0.4.zip">plantecowrap_1.0.4.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/plantecowrap_1.0.4.zip">plantecowrap_1.0.4.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/plantecowrap_1.0.4.tgz">plantecowrap_1.0.4.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/plantecowrap_1.0.4.tgz">plantecowrap_1.0.4.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=plantecowrap"><samp>https://CRAN.R-project.org/package=plantecowrap</samp></a>
+to link to this page.</p>
+</body>
+</html>

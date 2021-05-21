@@ -1,0 +1,34 @@
+Package: trelliscopejs
+Title: Create Interactive Trelliscope Displays
+Version: 0.2.4
+Authors@R: c(
+    person(given = "Ryan",
+           family = "Hafen",
+           role = c("aut", "cre"),
+           email = "rhafen@gmail.com",
+           comment = c(ORCID = "0000-0002-5516-8367")),
+    person(given = "Barret",
+           family = "Schloerke",
+           email = "schloerke@gmail.com",
+           role = "aut"))
+Description: Trelliscope is a scalable, flexible, interactive approach to visualizing data (Hafen, 2013 <doi:10.1109/LDAV.2013.6675164>). This package provides methods that make it easy to create a Trelliscope display specification for TrelliscopeJS. High-level functions are provided for creating displays from within 'tidyverse' or 'ggplot2' workflows. Low-level functions are also provided for creating new interfaces.
+Depends: R (>= 3.4.0)
+License: BSD_3_clause + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: dplyr, purrr, grid, htmltools, DistributionUtils, grDevices,
+        gtable, digest, jsonlite, ggplot2 (>= 3.2.1), base64enc,
+        htmlwidgets, graphics, progress, utils, knitr, webshot,
+        autocogs, tidyr, rlang
+Suggests: rbokeh, plotly, testthat, covr, gapminder, housingData
+RoxygenNote: 7.0.2
+URL: https://github.com/hafen/trelliscopejs
+BugReports: https://github.com/hafen/trelliscopejs/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-02-10 15:35:38 UTC; hafen
+Author: Ryan Hafen [aut, cre] (<https://orcid.org/0000-0002-5516-8367>),
+  Barret Schloerke [aut]
+Maintainer: Ryan Hafen <rhafen@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-02-10 22:40:02 UTC

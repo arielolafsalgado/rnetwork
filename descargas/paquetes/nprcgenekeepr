@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package nprcgenekeepr</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Genetic Tools for Colony Management [R package nprcgenekeepr version 1.0.3]" />
+<meta name="citation_author1" content="Michael Raboin" />
+<meta name="citation_author2" content="Terry Therneau" />
+<meta name="citation_author3" content="Amanda Vinson" />
+<meta name="citation_author4" content="R. Mark Sharp" />
+<meta name="citation_publication_date" content="2020-06-02" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=nprcgenekeepr" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=nprcgenekeepr" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="nprcgenekeepr: Genetic Tools for Colony Management" />
+<meta name="og:description" content="Provides genetic tools for colony management and is a derivation of the work in Amanda Vinson and Michael J Raboin (2015) &amp;lt;&lt;a href=&quot;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4671785/&quot;&gt;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4671785/&lt;/a&gt;&amp;gt; &quot;A Practical Approach for Designing Breeding Groups to Maximize Genetic Diversity in a Large Colony of Captive Rhesus Macaques ('Macaca' 'mulatto')&quot;. It provides a 'Shiny' application with an exposed API. The application supports five groups of functions: (1) Quality control of studbooks contained in text files or 'Excel' workbooks and of pedigrees within 'LabKey' Electronic Health Records (EHR); (2) Creation of pedigrees from a list of animals using the 'LabKey' EHR integration; (3) Creation and display of an age by sex pyramid plot of the living animals within the designated pedigree; (4) Generation of genetic value analysis reports; and (5) Creation of potential breeding groups with and without proscribed sex ratios and defined maximum kinships." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=nprcgenekeepr" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>nprcgenekeepr: Genetic Tools for Colony Management</h2>
+<p>Provides genetic tools for colony management and is a derivation 
+    of the work in Amanda Vinson and Michael J Raboin (2015) 
+    &lt;<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4671785/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4671785/</a>&gt; "A Practical 
+    Approach for Designing Breeding Groups to Maximize Genetic Diversity in a 
+    Large Colony of Captive Rhesus Macaques ('Macaca' 'mulatto')".
+    It provides a 'Shiny' application with an exposed API. 
+    The application supports five groups of functions: 
+    (1) Quality control of studbooks contained in text files or 'Excel' 
+    workbooks and of pedigrees within 'LabKey' Electronic Health Records 
+    (EHR); 
+    (2) Creation of pedigrees from a list of animals using the 'LabKey' EHR 
+    integration; 
+    (3) Creation and display of an age by sex pyramid plot of the living 
+    animals within the designated pedigree; 
+    (4) Generation of genetic value analysis reports; and 
+    (5) Creation of potential breeding groups with and without proscribed sex 
+    ratios and defined maximum kinships.</p>
+<table summary="Package nprcgenekeepr summary">
+<tr>
+<td>Version:</td>
+<td>1.0.3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.6.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../anytime/index.html">anytime</a>, <a href="../futile.logger/index.html">futile.logger</a>, <a href="../htmlTable/index.html">htmlTable</a>, <a href="../lubridate/index.html">lubridate</a>, <a href="../Matrix/index.html">Matrix</a>, <a href="../plotrix/index.html">plotrix</a>, <a href="../readxl/index.html">readxl</a>, <a href="../Rlabkey/index.html">Rlabkey</a>, <a href="../shiny/index.html">shiny</a>, <a href="../shinyBS/index.html">shinyBS</a>, <a href="../stringi/index.html">stringi</a>, utils, <a href="../WriteXLS/index.html">WriteXLS</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../covr/index.html">covr</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../ggplot2/index.html">ggplot2</a>, grid, <a href="../kableExtra/index.html">kableExtra</a>, <a href="../knitr/index.html">knitr</a>, <a href="../pkgdown/index.html">pkgdown</a>, <a href="../png/index.html">png</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../roxygen2/index.html">roxygen2</a> (&ge; 7.0.0), <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-02</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Michael Raboin [aut],
+  Terry Therneau [aut],
+  Amanda Vinson [aut, dtc],
+  R. Mark Sharp <a href="https://orcid.org/0000-0002-6170-6942"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre, cph, dtc],
+  Southwest National Primate Research Center NIH grant P51 RR13986 [fnd],
+  Oregon National Primate Research Center grant P51 OD011092 [fnd]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>R. Mark Sharp  &#x3c;&#x72;&#x6d;&#x73;&#x68;&#x61;&#x72;&#x70;&#x20;&#x61;&#x74;&#x20;&#x6d;&#x65;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/rmsharp/nprcgenekeepr/issues">https://github.com/rmsharp/nprcgenekeepr/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://rmsharp.github.io/nprcgenekeepr/">https://rmsharp.github.io/nprcgenekeepr/</a>,
+<a href="https://github.com/rmsharp/nprcgenekeepr">https://github.com/rmsharp/nprcgenekeepr</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_nprcgenekeepr.html">nprcgenekeepr results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package nprcgenekeepr downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="nprcgenekeepr.pdf"> nprcgenekeepr.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/a3manual.html">Genetic Management Tools Manual</a><br/>
+<a href="vignettes/a4Development_Plans.html">Development Plans</a><br/>
+<a href="vignettes/a2interactive.html">Interactive Use of nprcgenekeepr</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/nprcgenekeepr_1.0.3.tar.gz"> nprcgenekeepr_1.0.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/nprcgenekeepr_1.0.3.zip">nprcgenekeepr_1.0.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/nprcgenekeepr_1.0.3.zip">nprcgenekeepr_1.0.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/nprcgenekeepr_1.0.3.zip">nprcgenekeepr_1.0.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/nprcgenekeepr_1.0.3.tgz">nprcgenekeepr_1.0.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/nprcgenekeepr_1.0.3.tgz">nprcgenekeepr_1.0.3.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=nprcgenekeepr"><samp>https://CRAN.R-project.org/package=nprcgenekeepr</samp></a>
+to link to this page.</p>
+</body>
+</html>

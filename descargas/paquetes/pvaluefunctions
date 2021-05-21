@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package pvaluefunctions</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Creates and Plots P-Value Functions, S-Value Functions, Confidence Distributions and Confidence Densities [R package pvaluefunctions version 1.6.0]" />
+<meta name="citation_author" content="Denis Infanger" />
+<meta name="citation_publication_date" content="2020-06-24" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=pvaluefunctions" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=pvaluefunctions" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="pvaluefunctions: Creates and Plots P-Value Functions, S-Value Functions, Confidence Distributions and Confidence Densities" />
+<meta name="og:description" content="Contains functions to compute and plot confidence distributions, confidence densities, p-value functions and s-value (surprisal) functions for several commonly used estimates. Instead of just calculating one p-value and one confidence interval, p-value functions display p-values and confidence intervals for many levels thereby allowing to gauge the compatibility of several parameter values with the data. These methods are discussed by Infanger D, Schmidt-Trucksäss A. (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fsim.8293&quot;&gt;doi:10.1002/sim.8293&lt;/a&gt;&amp;gt;; Poole C. (1987) &amp;lt;&lt;a href=&quot;https://doi.org/10.2105%2FAJPH.77.2.195&quot;&gt;doi:10.2105/AJPH.77.2.195&lt;/a&gt;&amp;gt;; Schweder T, Hjort NL. (2002) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2F1467-9469.00285&quot;&gt;doi:10.1111/1467-9469.00285&lt;/a&gt;&amp;gt;; Bender R, Berg G, Zeeb H. (2005) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fbimj.200410104&quot;&gt;doi:10.1002/bimj.200410104&lt;/a&gt;&amp;gt; ; Singh K, Xie M, Strawderman WE. (2007) &amp;lt;&lt;a href=&quot;https://doi.org/10.1214%2F074921707000000102&quot;&gt;doi:10.1214/074921707000000102&lt;/a&gt;&amp;gt;; Rothman KJ, Greenland S, Lash TL. (2008, ISBN:9781451190052); Amrhein V, Trafimow D, Greenland S. (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F00031305.2018.1543137&quot;&gt;doi:10.1080/00031305.2018.1543137&lt;/a&gt;&amp;gt;; and Greenland S. (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F00031305.2018.1529625&quot;&gt;doi:10.1080/00031305.2018.1529625&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=pvaluefunctions" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>pvaluefunctions: Creates and Plots P-Value Functions, S-Value Functions,
+Confidence Distributions and Confidence Densities</h2>
+<p>Contains functions to compute and plot confidence distributions, confidence densities, p-value functions and s-value (surprisal) functions for several commonly used estimates. Instead of just calculating one p-value and one confidence interval, p-value functions display p-values and confidence intervals for many levels thereby allowing to gauge the compatibility of several parameter values with the data. These methods are discussed by Infanger D, Schmidt-Trucksäss A. (2019) &lt;<a href="https://doi.org/10.1002%2Fsim.8293">doi:10.1002/sim.8293</a>&gt;; Poole C. (1987) &lt;<a href="https://doi.org/10.2105%2FAJPH.77.2.195">doi:10.2105/AJPH.77.2.195</a>&gt;; Schweder T, Hjort NL. (2002) &lt;<a href="https://doi.org/10.1111%2F1467-9469.00285">doi:10.1111/1467-9469.00285</a>&gt;; Bender R, Berg G, Zeeb H. (2005) &lt;<a href="https://doi.org/10.1002%2Fbimj.200410104">doi:10.1002/bimj.200410104</a>&gt; ; Singh K, Xie M, Strawderman WE. (2007) &lt;<a href="https://doi.org/10.1214%2F074921707000000102">doi:10.1214/074921707000000102</a>&gt;; Rothman KJ, Greenland S, Lash TL. (2008, ISBN:9781451190052); Amrhein V, Trafimow D, Greenland S. (2019) &lt;<a href="https://doi.org/10.1080%2F00031305.2018.1543137">doi:10.1080/00031305.2018.1543137</a>&gt;; and Greenland S. (2019) &lt;<a href="https://doi.org/10.1080%2F00031305.2018.1529625">doi:10.1080/00031305.2018.1529625</a>&gt;.</p>
+<table summary="Package pvaluefunctions summary">
+<tr>
+<td>Version:</td>
+<td>1.6.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../ggplot2/index.html">ggplot2</a> (&ge; 3.3.0), <a href="../scales/index.html">scales</a> (&ge; 1.1.0), <a href="../zipfR/index.html">zipfR</a> (&ge; 0.6-66), <a href="../pracma/index.html">pracma</a> (&ge; 2.2.9), stats</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../devtools/index.html">devtools</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-24</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Denis Infanger <a href="https://orcid.org/0000-0001-9028-7110"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Denis Infanger  &#x3c;&#x64;&#x65;&#x6e;&#x69;&#x73;&#x2e;&#x69;&#x6e;&#x66;&#x61;&#x6e;&#x67;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x75;&#x6e;&#x69;&#x62;&#x61;&#x73;&#x2e;&#x63;&#x68;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/DInfanger/pvaluefunctions">https://github.com/DInfanger/pvaluefunctions</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_pvaluefunctions.html">pvaluefunctions results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package pvaluefunctions downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="pvaluefunctions.pdf"> pvaluefunctions.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/pvaluefun.html">P-value functions</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/pvaluefunctions_1.6.0.tar.gz"> pvaluefunctions_1.6.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/pvaluefunctions_1.6.0.zip">pvaluefunctions_1.6.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/pvaluefunctions_1.6.0.zip">pvaluefunctions_1.6.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/pvaluefunctions_1.6.0.zip">pvaluefunctions_1.6.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/pvaluefunctions_1.6.0.tgz">pvaluefunctions_1.6.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/pvaluefunctions_1.6.0.tgz">pvaluefunctions_1.6.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/pvaluefunctions"> pvaluefunctions archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=pvaluefunctions"><samp>https://CRAN.R-project.org/package=pvaluefunctions</samp></a>
+to link to this page.</p>
+</body>
+</html>

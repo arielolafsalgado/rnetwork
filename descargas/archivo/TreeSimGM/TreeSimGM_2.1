@@ -1,0 +1,16 @@
+Package: TreeSimGM
+Type: Package
+Title: Simulating Phylogenetic Trees under a General Model with or
+        without Shifts
+Version: 2.1
+Date: 2017-05-01
+Author: Oskar Hagen, Tanja Stadler
+Maintainer: Oskar Hagen <oskar.hagen@outlook.com>
+Depends: TreeSim, ape
+Description: Provides a flexible simulation tool for phylogenetic trees under a general model for speciation and extinction. Trees with a user-specified number of extant tips, or a user-specified stem age are simulated. It is possible to assume any probability distribution for the waiting time until speciation and extinction. Furthermore, the waiting times to speciation / extinction may be scaled in different parts of the tree, meaning we can simulate trees with clade-dependent diversification processes. At a speciation event, one species splits into two. We allow for two different modes at these splits: (i) symmetric, where for every speciation event new waiting times until speciation and extinction are drawn for both daughter lineages; and (ii) asymmetric, where a speciation event results in one species with new waiting times, and another that carries the extinction time and age of its ancestor. The symmetric mode can be seen as an vicariant or allopatric process where divided populations suffer equal evolutionary forces while the asymmetric mode could be seen as a peripatric speciation where a mother lineage continues to exist. 
+License: GPL-2
+LazyLoad: yes
+NeedsCompilation: no
+Packaged: 2017-05-05 07:56:21 UTC; admin
+Repository: CRAN
+Date/Publication: 2017-05-05 17:38:11 UTC

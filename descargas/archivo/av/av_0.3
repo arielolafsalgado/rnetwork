@@ -1,0 +1,29 @@
+Package: av
+Type: Package
+Title: Working with Audio and Video
+Version: 0.3
+Authors@R: person("Jeroen", "Ooms", role = c("aut", "cre"), email = "jeroen@berkeley.edu",
+    comment = c(ORCID = "0000-0002-4035-0289"))
+Description: Bindings to 'FFmpeg' <http://www.ffmpeg.org/> AV library for working with audio 
+    and video in R. Generate high quality videos files by capturing images from the R graphics
+    device combined with custom audio stream. Also offers tools to convert between countless 
+    audio / video formats, or convert images to video and vice versa. This package interfaces
+    directly to the C API and does not require any command line utilities.
+License: MIT + file LICENSE
+URL: https://docs.ropensci.org/av (website),
+        https://github.com/ropensci/av (devel)
+BugReports: https://github.com/ropensci/av/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+SystemRequirements: FFmpeg >= 3.2 with at least libx264 and lame (mp3)
+        drivers. On Debian / Ubuntu use libavfilter-dev and on Fedora
+        use ffmpeg-devel.
+Suggests: testthat, ps, ggplot2, gapminder
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2019-08-21 15:30:57 UTC; jeroen
+Author: Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>)
+Maintainer: Jeroen Ooms <jeroen@berkeley.edu>
+Repository: CRAN
+Date/Publication: 2019-08-21 16:30:02 UTC

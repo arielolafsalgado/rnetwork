@@ -1,0 +1,27 @@
+Package: brainGraph
+Type: Package
+Version: 2.0.0
+Date: 2018-02-05
+Title: Graph Theory Analysis of Brain MRI Data
+Author: Christopher G. Watson <cgwatson@bu.edu>
+Maintainer: Christopher G. Watson <cgwatson@bu.edu>
+Description: A set of tools for performing graph theory analysis of brain MRI
+    data. It works with data from a Freesurfer analysis (cortical thickness,
+    volumes, local gyrification index, surface area), diffusion tensor
+    tractography data (e.g., from FSL) and resting-state fMRI data (e.g., from
+    DPABI). It contains a graphical user interface for graph visualization and
+    data exploration, along with several functions for generating useful
+    figures.
+URL: https://github.com/cwatson/brainGraph
+BugReports: https://groups.google.com/forum/?hl=en#!forum/brainGraph-help
+LazyData: true
+Depends: R (>= 3.0.0), igraph (>= 1.0.0), RGtk2, cairoDevice
+Imports: abind, ade4, boot, data.table, expm, foreach, ggplot2,
+        ggrepel, gridExtra, Hmisc, MASS, Matrix, mediation, methods,
+        oro.nifti, permute, parallel, RcppEigen, scales
+License: GPL-3
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-02-06 00:10:44 UTC; cwatson
+Repository: CRAN
+Date/Publication: 2018-02-06 04:22:14 UTC

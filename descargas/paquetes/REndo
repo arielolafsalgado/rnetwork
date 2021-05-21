@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package REndo</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Fitting Linear Models with Endogenous Regressors using Latent Instrumental Variables [R package REndo version 2.4.1]" />
+<meta name="citation_author1" content="Raluca Gui" />
+<meta name="citation_author2" content="Markus Meierer" />
+<meta name="citation_author3" content="Rene Algesheimer" />
+<meta name="citation_author4" content="Patrik Schilter" />
+<meta name="citation_publication_date" content="2020-10-14" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=REndo" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=REndo" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="REndo: Fitting Linear Models with Endogenous Regressors using Latent Instrumental Variables" />
+<meta name="og:description" content="Fits linear models with endogenous regressor using latent instrumental variable approaches. The methods included in the package are Lewbel's (1997) &amp;lt;&lt;a href=&quot;https://doi.org/10.2307%2F2171884&quot;&gt;doi:10.2307/2171884&lt;/a&gt;&amp;gt; higher moments approach as well as Lewbel's (2012) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F07350015.2012.643126&quot;&gt;doi:10.1080/07350015.2012.643126&lt;/a&gt;&amp;gt; heteroscedasticity approach, Park and Gupta's (2012) &amp;lt;&lt;a href=&quot;https://doi.org/10.1287%2Fmksc.1120.0718&quot;&gt;doi:10.1287/mksc.1120.0718&lt;/a&gt;&amp;gt; joint estimation method that uses Gaussian copula and Kim and Frees's (2007) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs11336-007-9008-1&quot;&gt;doi:10.1007/s11336-007-9008-1&lt;/a&gt;&amp;gt; multilevel generalized method of moment approach that deals with endogeneity in a multilevel setting. These are statistical techniques to address the endogeneity problem where no external instrumental variables are needed. Note that with version 2.0.0 sweeping changes were introduced which greatly improve functionality and usability but break backwards compatibility." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=REndo" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>REndo: Fitting Linear Models with Endogenous Regressors using Latent
+Instrumental Variables</h2>
+<p>Fits linear models with endogenous regressor using latent instrumental variable approaches. 
+    The methods included in the package are Lewbel's (1997) &lt;<a href="https://doi.org/10.2307%2F2171884">doi:10.2307/2171884</a>&gt; higher moments approach as well as 
+    Lewbel's (2012) &lt;<a href="https://doi.org/10.1080%2F07350015.2012.643126">doi:10.1080/07350015.2012.643126</a>&gt; heteroscedasticity approach, Park and Gupta's (2012) &lt;<a href="https://doi.org/10.1287%2Fmksc.1120.0718">doi:10.1287/mksc.1120.0718</a>&gt; joint estimation method 
+    that uses Gaussian copula and Kim and Frees's (2007) &lt;<a href="https://doi.org/10.1007%2Fs11336-007-9008-1">doi:10.1007/s11336-007-9008-1</a>&gt; multilevel generalized
+    method of moment approach that deals with endogeneity in a multilevel setting.
+    These are statistical techniques to address the endogeneity problem where no external instrumental variables are needed.
+    Note that with version 2.0.0 sweeping changes were introduced which greatly improve functionality and usability but break backwards compatibility.</p>
+<table summary="Package REndo summary">
+<tr>
+<td>Version:</td>
+<td>2.4.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.4)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>methods (&ge; 3.4), stats (&ge; 3.4), utils (&ge; 3.4), <a href="../Formula/index.html">Formula</a> (&ge;
+1.2), <a href="../optimx/index.html">optimx</a> (&ge; 2013.8.7), <a href="../mvtnorm/index.html">mvtnorm</a> (&ge; 1.0-8), <a href="../AER/index.html">AER</a> (&ge; 1.2-5), <a href="../Matrix/index.html">Matrix</a> (&ge; 1.2-14), <a href="../lme4/index.html">lme4</a> (&ge; 1.1-18-1), <a href="../data.table/index.html">data.table</a> (&ge; 1.11.8), <a href="../corpcor/index.html">corpcor</a> (&ge; 1.6.9), <a href="../Rcpp/index.html">Rcpp</a> (&ge; 1.0.3), <a href="../lmtest/index.html">lmtest</a> (&ge; 0.9-35)</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppEigen/index.html">RcppEigen</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../covr/index.html">covr</a>, <a href="../R.rsp/index.html">R.rsp</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-14</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Raluca Gui [cre, aut],
+  Markus Meierer [aut],
+  Rene Algesheimer [aut],
+  Patrik Schilter [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Raluca Gui  &#x3c;&#x72;&#x61;&#x6c;&#x75;&#x63;&#x61;&#x2e;&#x67;&#x75;&#x69;&#x20;&#x61;&#x74;&#x20;&#x62;&#x75;&#x73;&#x69;&#x6e;&#x65;&#x73;&#x73;&#x2e;&#x75;&#x7a;&#x68;&#x2e;&#x63;&#x68;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/mmeierer/REndo/issues">https://github.com/mmeierer/REndo/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/mmeierer/REndo">https://github.com/mmeierer/REndo</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Econometrics.html">Econometrics</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_REndo.html">REndo results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package REndo downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="REndo.pdf"> REndo.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/REndo-introduction.pdf">REndo-introduction</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/REndo_2.4.1.tar.gz"> REndo_2.4.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/REndo_2.4.1.zip">REndo_2.4.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/REndo_2.4.1.zip">REndo_2.4.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/REndo_2.4.1.zip">REndo_2.4.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/REndo_2.4.1.tgz">REndo_2.4.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/REndo_2.4.1.tgz">REndo_2.4.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/REndo"> REndo archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=REndo"><samp>https://CRAN.R-project.org/package=REndo</samp></a>
+to link to this page.</p>
+</body>
+</html>

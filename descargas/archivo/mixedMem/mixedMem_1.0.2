@@ -1,0 +1,28 @@
+Package: mixedMem
+Type: Package
+Title: Tools for Discrete Multivariate Mixed Membership Models
+Version: 1.0.2
+Date: 2015-04-29
+Authors@R: c( person("Y. Samuel", "Wang", email = "ysamwang@uw.edu", role =
+    c("aut","cre")), person("Elena A.", "Erosheva", email =
+    "erosheva@uw.edu", role = "aut"))
+Maintainer: Y. Samuel Wang <ysamwang@uw.edu>
+Description: Fits mixed membership models with discrete
+    multivariate data (with or without repeated measures) following the general
+    framework of Erosheva 2004. This package uses a Variational EM approach by
+    approximating the posterior distribution of latent memberships and
+    selecting hyperparameters through a pseudo-MLE procedure. Currently
+    supported data types are Bernoulli, multinomial and rank (Plackett-Luce).
+License: GPL (>= 2)
+Depends: R (>= 3.0.2)
+Imports: Rcpp (>= 0.11.3), gtools
+LazyData: TRUE
+LinkingTo: Rcpp (>= 0.11.3), RcppArmadillo, BH
+VignetteBuilder: knitr
+Suggests: knitr, xtable,
+Packaged: 2015-05-08 15:01:39 UTC; hornik
+Author: Y. Samuel Wang [aut, cre],
+  Elena A. Erosheva [aut]
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2015-05-08 18:14:40

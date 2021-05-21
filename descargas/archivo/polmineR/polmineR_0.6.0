@@ -1,0 +1,58 @@
+Package: polmineR
+Type: Package
+Title: Toolset for Corpus Analysis
+Version: 0.6.0
+Date: 2016-06-22
+Author: Andreas Blaette
+Maintainer: Andreas Blaette <andreas.blaette@uni-due.de>
+Imports: rcqp, methods, R6, data.table, slam, Matrix, tm, parallel,
+        foreach, DT
+Suggests: polmineR.sampleCorpus, doParallel, markdown, htmltools, xlsx,
+        sendmailR, koRpus, chron, knitr, bigmemory, bigtabulate, shiny,
+        miniUI, rJava
+Additional_repositories: https://polmine.github.io/drat/
+VignetteBuilder: knitr
+LazyData: yes
+Description: Tools for corpus analysis using the CWB as an efficient backend.
+    The package offers basic functionality to flexibly create subcorpora and to
+    carry out and basic statistical operations. Beyond that, it is intended to
+    serve as an interface to packages implementing advanced statistical
+    procedures.
+BugReports: https://github.com/PolMine/polmineR/issues
+License: GPL-3
+URL: https://www.github.com/PolMine/polmineR
+Collate: 'CQI.R' 'CQI.cqpserver.R' 'CQI.perl.R' 'CQI.rcqp.R'
+        'TermDocumentMatrix_methods.R' 'adjustEncoding_method.R'
+        'generics.R' 'textstat_class.R' 'bundle_class.R'
+        'polmineR_package.R' 'partition_class.R'
+        'partitionBundle_class.R' 'as.DocumentTermMatrix_method.R'
+        'as.markdown_method.R' 'comp_class.R' 'context_class.R'
+        'contextBundle_class.R' 'cooccurrences_class.R'
+        'as.sparseMatrix_method.R' 'as.speeches_method.R'
+        'blapply_method.R' 'kwic_class.R' 'browse_method.R'
+        'chisquare_method.R' 'ngrams_method.R' 'compare_method.R'
+        'contextBundle_methods.R' 'context_method.R'
+        'cooccurrence_method.R' 'cooccurrencesBundle_methods.R'
+        'cooccurrencesReshaped_methods.R' 'cooccurrences_method.R'
+        'cooccurrences_methods.R' 'corpus_method.R'
+        'dispersion_class.R' 'count_method.R' 'tempcorpus.R'
+        'cpos_method.R' 'hits_class.R' 'dispersion_method.R'
+        'dispersion_methods.R' 'dotplot_method.R' 'encoding_method.R'
+        'enrich_method.R' 'freq_method.R' 'frequencies_method.R'
+        'getEncoding_method.R' 'getTermFrequencies_method.R'
+        'getTerms_method.R' 'getTokenStream_method.R'
+        'highlight_method.R' 'html_method.R' 'html_methods.R'
+        'kwic_method.R' 'kwic_methods.R' 'll_method.R' 'mail_method.R'
+        'means_method.R' 'meta_method.R' 'noise_method.R'
+        'pAttributes_method.R' 'partitionBundle_method.R'
+        'partitionBundle_methods.R' 'sAttributes2cpos_method.R'
+        'partition_method.R' 'partition_methods.R' 'plot_method.R'
+        'pmi_method.R' 'read_method.R' 'registry.R' 'rustyard.R'
+        'sAttributes_method.R' 'scatterplot_method.R' 'size_method.R'
+        'tTest.R' 'terms_method.R' 'trim_method.R' 'use_method.R'
+        'utils.R' 'view_method.R' 'weigh_method.R' 'zzz.R'
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-06-22 07:28:00 UTC; blaette
+Repository: CRAN
+Date/Publication: 2016-06-22 10:32:51

@@ -1,0 +1,35 @@
+Package: sparkbq
+Type: Package
+Title: Google 'BigQuery' Support for 'sparklyr'
+Version: 0.1.0
+Date: 2018-07-31
+Authors@R: c(person(family = "Mirai Solutions GmbH", role = "aut",
+                    email = "info@mirai-solutions.com"),
+             person("Martin", "Studer", role = "cre",
+                    email = "martin.studer@mirai-solutions.com"),
+             person("Nicola", "Lambiase", role = "ctb",
+                    email = "nicola.lambiase@mirai-solutions.com"),
+             person("Omer", "Demirel", role = "ctb"))
+URL: http://www.mirai-solutions.com,
+        https://github.com/miraisolutions/sparkbq
+BugReports: https://github.com/miraisolutions/sparkbq/issues
+Description: A 'sparklyr' extension package providing an integration with Google 'BigQuery'.
+  It supports direct import/export where records are directly streamed from/to 'BigQuery'.
+  In addition, data may be imported/exported via intermediate data extracts on Google 'Cloud Storage'.
+Depends: R (>= 3.3.2)
+Imports: sparklyr (>= 0.7.0)
+Suggests: dplyr
+License: GPL-3 | file LICENSE
+SystemRequirements: Spark (>= 2.2.x)
+Encoding: UTF-8
+LazyData: yes
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-07-31 16:17:56 UTC; mstuder
+Author: Mirai Solutions GmbH [aut],
+  Martin Studer [cre],
+  Nicola Lambiase [ctb],
+  Omer Demirel [ctb]
+Maintainer: Martin Studer <martin.studer@mirai-solutions.com>
+Repository: CRAN
+Date/Publication: 2018-08-02 11:40:02 UTC

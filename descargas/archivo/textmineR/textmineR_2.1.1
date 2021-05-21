@@ -1,0 +1,33 @@
+Package: textmineR
+Type: Package
+Title: Functions for Text Mining and Topic Modeling
+Version: 2.1.1
+Date: 2018-03-06
+Authors@R: c(
+    person("Thomas", "Jones", role = c("aut", "cre"), email = "jones.thos.w@gmail.com"),
+    person("William", "Doane", email = "wil@drdoane.com", role = "ctb")
+    )
+Description: An aid for text mining in R, with a syntax that
+    should be familiar to experienced R users. Provides a wrapper for several 
+    topic models that take similarly-formatted input and give similarly-formatted
+    output. Has additional functionality for analyzing and diagnostics for
+    topic models.
+SystemRequirements: GNU make, C++11
+Depends: R (>= 3.0.2), Matrix
+Imports: methods, lda, parallel, topicmodels, text2vec (>= 0.5), tm,
+        stringr, SnowballC, Rcpp (>= 0.12.12), RcppProgress, RSpectra
+Suggests: digest, igraph, knitr, MASS, rmarkdown, stringi, wordcloud
+License: GPL (>= 3)
+URL: https://github.com/TommyJones/textmineR
+BugReports: https://github.com/TommyJones/textmineR/issues
+LazyData: true
+LinkingTo: Rcpp, RcppArmadillo, RcppProgress
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2018-03-06 16:03:16 UTC; tommy
+Author: Thomas Jones [aut, cre],
+  William Doane [ctb]
+Maintainer: Thomas Jones <jones.thos.w@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-03-06 23:07:20 UTC

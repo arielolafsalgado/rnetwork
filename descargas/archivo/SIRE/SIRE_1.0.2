@@ -1,0 +1,30 @@
+Package: SIRE
+Type: Package
+Title: Finding Feedback Effects in SEM and Testing for Their
+        Significance
+Version: 1.0.2
+Authors@R: person("Gianmarco", "Vacca", email = "gianmarco.vacca@unicatt.it", role = c("aut","cre"))
+Maintainer: Gianmarco Vacca <gianmarco.vacca@unicatt.it>
+Description: Provides two main functionalities.
+    1 - Given a system of simultaneous equation,
+    it decomposes  the matrix of coefficients weighting the endogenous variables 
+    into three submatrices: one includes the subset of coefficients that have a causal nature
+    in the model, two include the subset of coefficients that have a interdependent nature
+    in the model, either at systematic level or induced by the correlation between error terms.
+    2 - Given a decomposed model,
+    it tests for the significance of the interdependent relationships acting in the system, 
+    via Maximum likelihood and Wald test, which can be built starting from the function output.
+    For theoretical reference see Faliva (1992) <doi:10.1007/BF02589085> and 
+    Faliva and Zoia (1994) <doi:10.1007/BF02589041>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.1.0)
+Imports: systemfit, psych, igraph, matrixcalc, MASS, numDeriv, Matrix,
+        stringr
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-07-28 17:41:17 UTC; JimmyMac
+Author: Gianmarco Vacca [aut, cre]
+Repository: CRAN
+Date/Publication: 2018-07-30 13:20:03 UTC

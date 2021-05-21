@@ -1,0 +1,32 @@
+Package: httptest
+Type: Package
+Title: A Test Environment for HTTP Requests
+Description: Testing code and packages that communicate with remote servers can
+    be painful. Dealing with authentication, bootstrapping server state,
+    cleaning up objects that may get created during the test run, network
+    flakiness, and other complications can make testing seem too costly to
+    bother with. But it doesn't need to be that hard. This package enables one
+    to test all of the logic on the R sides of the API in your package without
+    requiring access to the remote service. Importantly, it provides three test
+    contexts that mock the network connection in different ways, and it offers
+    additional expectations to assert that HTTP requests were--or were
+    not--made. Using these tools, one can test that code is making the intended
+    requests and that it handles the expected responses correctly, all without
+    depending on a connection to a remote API.
+Version: 2.0.0
+Date: 2017-06-03
+Authors@R: person("Neal", "Richardson", role=c("aut", "cre"), email="neal.p.richardson@gmail.com")
+Author: Neal Richardson [aut, cre]
+Maintainer: Neal Richardson <neal.p.richardson@gmail.com>
+URL: https://github.com/nealrichardson/httptest
+BugReports: https://github.com/nealrichardson/httptest/issues
+License: MIT + file LICENSE
+Depends: R (>= 3.0.0), testthat
+Imports: digest, httr, jsonlite
+Suggests: knitr
+RoxygenNote: 6.0.0
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-06-04 17:53:52 UTC; neal.richardson
+Repository: CRAN
+Date/Publication: 2017-06-05 07:29:05 UTC

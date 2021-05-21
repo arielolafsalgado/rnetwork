@@ -1,0 +1,24 @@
+Package: trade
+Type: Package
+Title: Tools for Trade Practitioners
+Version: 0.5.4
+Author: Charles Taragin
+Maintainer: Charles Taragin <ctaragin@ftc.gov>
+Depends: antitrust (>= 0.99.11)
+Imports: methods, stats
+Suggests: shiny,bookdown,knitr, rhandsontable
+VignetteBuilder: knitr
+Description: A collection of tools for trade practitioners, including the ability to calibrate different consumer demand systems and simulate the effects of tariffs and quotas under different competitive regimes. These tools are derived from Anderson et al. (2001) <doi:10.1016/S0047-2727(00)00085-2> and Froeb et al. (2003) <doi:10.1016/S0304-4076(02)00166-5>.
+License: Unlimited
+Encoding: UTF-8
+LazyLoad: yes
+RoxygenNote: 6.1.1
+Collate: 'QuotaClasses.R' 'TariffClasses.R' 'TariffCournot-methods.R'
+        'TariffMonComRUM-methods.R' 'summary-methods.R' 'ps-methods.R'
+        'bertrand_quota.R' 'bertrand_tariff.R' 'cournot_tariff.R'
+        'initialize-methods.R' 'monopolistic_competition_tariff.R'
+        'trade_shiny.R'
+NeedsCompilation: no
+Packaged: 2019-06-25 18:47:45 UTC; ctaragin
+Repository: CRAN
+Date/Publication: 2019-06-26 10:20:03 UTC

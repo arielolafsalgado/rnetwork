@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package sf</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Simple Features for R [R package sf version 0.9-6]" />
+<meta name="citation_author" content="Edzer Pebesma" />
+<meta name="citation_publication_date" content="2020-09-13" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=sf" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=sf" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="sf: Simple Features for R" />
+<meta name="og:description" content="Support for simple features, a standardized way to encode spatial vector data. Binds to 'GDAL' for reading and writing data, to 'GEOS' for geometrical operations, and to 'PROJ' for projection conversions and datum transformations. Optionally uses the 's2' package for spherical geometry operations on geographic coordinates." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=sf" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>sf: Simple Features for R</h2>
+<p>Support for simple features, a standardized way to
+    encode spatial vector data. Binds to 'GDAL' for reading and writing
+    data, to 'GEOS' for geometrical operations, and to 'PROJ' for
+    projection conversions and datum transformations. Optionally uses the 's2'
+    package for spherical geometry operations on geographic coordinates.</p>
+<table summary="Package sf summary">
+<tr>
+<td>Version:</td>
+<td>0.9-6</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>methods, R (&ge; 3.3.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../classInt/index.html">classInt</a> (&ge; 0.4-1), <a href="../DBI/index.html">DBI</a> (&ge; 0.8), graphics, grDevices, grid, <a href="../magrittr/index.html">magrittr</a>, <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.18), stats, tools, <a href="../units/index.html">units</a> (&ge; 0.6-0), utils</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../blob/index.html">blob</a>, <a href="../covr/index.html">covr</a>, <a href="../dplyr/index.html">dplyr</a> (&ge; 0.8-3), <a href="../ggplot2/index.html">ggplot2</a>, <a href="../knitr/index.html">knitr</a>, <a href="../lwgeom/index.html">lwgeom</a> (&ge;
+0.2-1), <a href="../maps/index.html">maps</a>, <a href="../mapview/index.html">mapview</a>, <a href="../microbenchmark/index.html">microbenchmark</a>, <a href="../odbc/index.html">odbc</a>, <a href="../pillar/index.html">pillar</a>, <a href="../pool/index.html">pool</a>, <a href="../raster/index.html">raster</a>, <a href="../rgdal/index.html">rgdal</a>, <a href="../rgeos/index.html">rgeos</a>, <a href="../rlang/index.html">rlang</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../RPostgres/index.html">RPostgres</a> (&ge; 1.1.0), <a href="../RPostgreSQL/index.html">RPostgreSQL</a>, <a href="../RSQLite/index.html">RSQLite</a>, <a href="../s2/index.html">s2</a> (&ge; 1.0.1), <a href="../sp/index.html">sp</a> (&ge; 1.2-4), <a href="../spatstat/index.html">spatstat</a>, <a href="../spatstat.utils/index.html">spatstat.utils</a>, <a href="../stars/index.html">stars</a> (&ge; 0.2-0), <a href="../testthat/index.html">testthat</a>, <a href="../tibble/index.html">tibble</a> (&ge; 1.4.1), <a href="../tidyr/index.html">tidyr</a> (&ge; 1.0-0), <a href="../tidyselect/index.html">tidyselect</a> (&ge; 1.0.0), <a href="../tmap/index.html">tmap</a> (&ge; 2.0), <a href="../vctrs/index.html">vctrs</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-13</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Edzer Pebesma <a href="https://orcid.org/0000-0001-8049-7069"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Roger Bivand <a href="https://orcid.org/0000-0003-2392-6140"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Etienne Racine [ctb],
+  Michael Sumner [ctb],
+  Ian Cook [ctb],
+  Tim Keitt [ctb],
+  Robin Lovelace [ctb],
+  Hadley Wickham [ctb],
+  Jeroen Ooms <a href="https://orcid.org/0000-0002-4035-0289"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb],
+  Kirill Müller [ctb],
+  Thomas Lin Pedersen [ctb],
+  Dan Baston [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Edzer Pebesma  &#x3c;&#x65;&#x64;&#x7a;&#x65;&#x72;&#x2e;&#x70;&#x65;&#x62;&#x65;&#x73;&#x6d;&#x61;&#x20;&#x61;&#x74;&#x20;&#x75;&#x6e;&#x69;&#x2d;&#x6d;&#x75;&#x65;&#x6e;&#x73;&#x74;&#x65;&#x72;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/r-spatial/sf/issues/">https://github.com/r-spatial/sf/issues/</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://r-spatial.github.io/sf/">https://r-spatial.github.io/sf/</a>, <a href="https://github.com/r-spatial/sf/">https://github.com/r-spatial/sf/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>C++11, GDAL (&gt;= 2.0.1), GEOS (&gt;= 3.4.0), PROJ (&gt;=
+4.8.0)</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">sf citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Spatial.html">Spatial</a>, <a href="../../views/SpatioTemporal.html">SpatioTemporal</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_sf.html">sf results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package sf downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="sf.pdf"> sf.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/sf1.html">1. Simple Features for R</a><br/>
+<a href="vignettes/sf2.html">2. Reading, Writing and Converting Simple Features</a><br/>
+<a href="vignettes/sf3.html">3. Manipulating Simple Feature Geometries</a><br/>
+<a href="vignettes/sf4.html">4. Manipulating Simple Features</a><br/>
+<a href="vignettes/sf5.html">5. Plotting Simple Features</a><br/>
+<a href="vignettes/sf6.html">6. Miscellaneous</a><br/>
+<a href="vignettes/sf7.html">7. The s2geometry library for spherical geometry in sf</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/sf_0.9-6.tar.gz"> sf_0.9-6.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/sf_0.9-6.zip">sf_0.9-6.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/sf_0.9-6.zip">sf_0.9-6.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/sf_0.9-6.zip">sf_0.9-6.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/sf_0.9-6.tgz">sf_0.9-6.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/sf_0.9-6.tgz">sf_0.9-6.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/sf"> sf archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package sf reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../basf/index.html">basf</a>, <a href="../bcmaps/index.html">bcmaps</a>, <a href="../chilemapas/index.html">chilemapas</a>, <a href="../GADMTools/index.html">GADMTools</a>, <a href="../nngeo/index.html">nngeo</a>, <a href="../prioritizr/index.html">prioritizr</a>, <a href="../RCzechia/index.html">RCzechia</a>, <a href="../RGISTools/index.html">RGISTools</a>, <a href="../rLFT/index.html">rLFT</a>, <a href="../siland/index.html">siland</a>, <a href="../spdep/index.html">spdep</a>, <a href="../stars/index.html">stars</a>, <a href="../starsExtra/index.html">starsExtra</a>, <a href="../stcos/index.html">stcos</a>, <a href="../tilegramsR/index.html">tilegramsR</a>, <a href="../wdpar/index.html">wdpar</a>, <a href="../windAC/index.html">windAC</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../amt/index.html">amt</a>, <a href="../areal/index.html">areal</a>, <a href="../arealDB/index.html">arealDB</a>, <a href="../BARIS/index.html">BARIS</a>, <a href="../bbsBayes/index.html">bbsBayes</a>, <a href="../bcdata/index.html">bcdata</a>, <a href="../BIEN/index.html">BIEN</a>, <a href="../BIRDS/index.html">BIRDS</a>, <a href="../biscale/index.html">biscale</a>, <a href="../blockCV/index.html">blockCV</a>, <a href="../bnspatial/index.html">bnspatial</a>, <a href="../briskaR/index.html">briskaR</a>, <a href="../btb/index.html">btb</a>, <a href="../capm/index.html">capm</a>, <a href="../card/index.html">card</a>, <a href="../cartograflow/index.html">cartograflow</a>, <a href="../cartogram/index.html">cartogram</a>, <a href="../cartography/index.html">cartography</a>, <a href="../cdcfluview/index.html">cdcfluview</a>, <a href="../chirps/index.html">chirps</a>, <a href="../compstatr/index.html">compstatr</a>, <a href="../concaveman/index.html">concaveman</a>, <a href="../ConR/index.html">ConR</a>, <a href="../crawl/index.html">crawl</a>, <a href="../crimedata/index.html">crimedata</a>, <a href="../CropScapeR/index.html">CropScapeR</a>, <a href="../csodata/index.html">csodata</a>, <a href="../cyclestreets/index.html">cyclestreets</a>, <a href="../diffman/index.html">diffman</a>, <a href="../dssd/index.html">dssd</a>, <a href="../ebirdst/index.html">ebirdst</a>, <a href="../ech/index.html">ech</a>, <a href="../ecochange/index.html">ecochange</a>, <a href="../edbuildmapr/index.html">edbuildmapr</a>, <a href="../eiCompare/index.html">eiCompare</a>, <a href="../elevatr/index.html">elevatr</a>, <a href="../EmissV/index.html">EmissV</a>, <a href="../envirem/index.html">envirem</a>, <a href="../eSDM/index.html">eSDM</a>, <a href="../exactextractr/index.html">exactextractr</a>, <a href="../FedData/index.html">FedData</a>, <a href="../fgdr/index.html">fgdr</a>, <a href="../fingertipscharts/index.html">fingertipscharts</a>, <a href="../flexpolyline/index.html">flexpolyline</a>, <a href="../flightplot/index.html">flightplot</a>, <a href="../foieGras/index.html">foieGras</a>, <a href="../GapAnalysis/index.html">GapAnalysis</a>, <a href="../gdalUtilities/index.html">gdalUtilities</a>, <a href="../GeNetIt/index.html">GeNetIt</a>, <a href="../geobr/index.html">geobr</a>, <a href="../geodiv/index.html">geodiv</a>, <a href="../geodrawr/index.html">geodrawr</a>, <a href="../geofacet/index.html">geofacet</a>, <a href="../geogrid/index.html">geogrid</a>, <a href="../geojsonio/index.html">geojsonio</a>, <a href="../geometr/index.html">geometr</a>, <a href="../geomultistar/index.html">geomultistar</a>, <a href="../geonetwork/index.html">geonetwork</a>, <a href="../geouy/index.html">geouy</a>, <a href="../geoviz/index.html">geoviz</a>, <a href="../ggsn/index.html">ggsn</a>, <a href="../ggspatial/index.html">ggspatial</a>, <a href="../ggVennDiagram/index.html">ggVennDiagram</a>, <a href="../giscoR/index.html">giscoR</a>, <a href="../graph4lg/index.html">graph4lg</a>, <a href="../gtfs2gps/index.html">gtfs2gps</a>, <a href="../GWnnegPCA/index.html">GWnnegPCA</a>, <a href="../GWpcor/index.html">GWpcor</a>, <a href="../GWSDAT/index.html">GWSDAT</a>, <a href="../hereR/index.html">hereR</a>, <a href="../hydrolinks/index.html">hydrolinks</a>, <a href="../jpmesh/index.html">jpmesh</a>, <a href="../jpndistrict/index.html">jpndistrict</a>, <a href="../kokudosuuchi/index.html">kokudosuuchi</a>, <a href="../kuniezu/index.html">kuniezu</a>, <a href="../LAGOSNE/index.html">LAGOSNE</a>, <a href="../landsepi/index.html">landsepi</a>, <a href="../lconnect/index.html">lconnect</a>, <a href="../leafem/index.html">leafem</a>, <a href="../leafgl/index.html">leafgl</a>, <a href="../leafpm/index.html">leafpm</a>, <a href="../leafpop/index.html">leafpop</a>, <a href="../lidR/index.html">lidR</a>, <a href="../linemap/index.html">linemap</a>, <a href="../link2GI/index.html">link2GI</a>, <a href="../lwgeom/index.html">lwgeom</a>, <a href="../macleish/index.html">macleish</a>, <a href="../mapboxapi/index.html">mapboxapi</a>, <a href="../mapchina/index.html">mapchina</a>, <a href="../mapedit/index.html">mapedit</a>, <a href="../mapi/index.html">mapi</a>, <a href="../mapsapi/index.html">mapsapi</a>, <a href="../mapview/index.html">mapview</a>, <a href="../MODIS/index.html">MODIS</a>, <a href="../MODISTools/index.html">MODISTools</a>, <a href="../MODIStsp/index.html">MODIStsp</a>, <a href="../moveVis/index.html">moveVis</a>, <a href="../MTA/index.html">MTA</a>, <a href="../ncdfgeom/index.html">ncdfgeom</a>, <a href="../nhdplusTools/index.html">nhdplusTools</a>, <a href="../nhdR/index.html">nhdR</a>, <a href="../nichevol/index.html">nichevol</a>, <a href="../NipponMap/index.html">NipponMap</a>, <a href="../NLMR/index.html">NLMR</a>, <a href="../nlrx/index.html">nlrx</a>, <a href="../oceanis/index.html">oceanis</a>, <a href="../opendatatoronto/index.html">opendatatoronto</a>, <a href="../opentripplanner/index.html">opentripplanner</a>, <a href="../Orcs/index.html">Orcs</a>, <a href="../osrm/index.html">osrm</a>, <a href="../otpr/index.html">otpr</a>, <a href="../ows4R/index.html">ows4R</a>, <a href="../oxcovid19/index.html">oxcovid19</a>, <a href="../ozmaps/index.html">ozmaps</a>, <a href="../parlitools/index.html">parlitools</a>, <a href="../pct/index.html">pct</a>, <a href="../plotdap/index.html">plotdap</a>, <a href="../polAr/index.html">polAr</a>, <a href="../PWFSLSmoke/index.html">PWFSLSmoke</a>, <a href="../qualmap/index.html">qualmap</a>, <a href="../quickmapr/index.html">quickmapr</a>, <a href="../r5r/index.html">r5r</a>, <a href="../raceland/index.html">raceland</a>, <a href="../rasterDT/index.html">rasterDT</a>, <a href="../redist/index.html">redist</a>, <a href="../Relectoral/index.html">Relectoral</a>, <a href="../rerddapXtracto/index.html">rerddapXtracto</a>, <a href="../rFIA/index.html">rFIA</a>, <a href="../rfishnet2/index.html">rfishnet2</a>, <a href="../RFmerge/index.html">RFmerge</a>, <a href="../rgeopat2/index.html">rgeopat2</a>, <a href="../rmapshaper/index.html">rmapshaper</a>, <a href="../rmapzen/index.html">rmapzen</a>, <a href="../rnaturalearth/index.html">rnaturalearth</a>, <a href="../robis/index.html">robis</a>, <a href="../RPyGeo/index.html">RPyGeo</a>, <a href="../Rsagacmd/index.html">Rsagacmd</a>, <a href="../sabre/index.html">sabre</a>, <a href="../safedata/index.html">safedata</a>, <a href="../sen2r/index.html">sen2r</a>, <a href="../sfdct/index.html">sfdct</a>, <a href="../simplevis/index.html">simplevis</a>, <a href="../slga/index.html">slga</a>, <a href="../smartmap/index.html">smartmap</a>, <a href="../SMITIDstruct/index.html">SMITIDstruct</a>, <a href="../smoothr/index.html">smoothr</a>, <a href="../spatialEco/index.html">spatialEco</a>, <a href="../SpatialKDE/index.html">SpatialKDE</a>, <a href="../SpatialPosition/index.html">SpatialPosition</a>, <a href="../spatialrisk/index.html">spatialrisk</a>, <a href="../spsurvey/index.html">spsurvey</a>, <a href="../stats19/index.html">stats19</a>, <a href="../stlcsb/index.html">stlcsb</a>, <a href="../stplanr/index.html">stplanr</a>, <a href="../sugarbag/index.html">sugarbag</a>, <a href="../swfscDAS/index.html">swfscDAS</a>, <a href="../tanaka/index.html">tanaka</a>, <a href="../TargomoR/index.html">TargomoR</a>, <a href="../tidycensus/index.html">tidycensus</a>, <a href="../tidygeoRSS/index.html">tidygeoRSS</a>, <a href="../tidytransit/index.html">tidytransit</a>, <a href="../tidyUSDA/index.html">tidyUSDA</a>, <a href="../tigris/index.html">tigris</a>, <a href="../tilemaps/index.html">tilemaps</a>, <a href="../tmap/index.html">tmap</a>, <a href="../tmaptools/index.html">tmaptools</a>, <a href="../topsa/index.html">topsa</a>, <a href="../trackeRapp/index.html">trackeRapp</a>, <a href="../transformr/index.html">transformr</a>, <a href="../trigpoints/index.html">trigpoints</a>, <a href="../uavRmp/index.html">uavRmp</a>, <a href="../VancouvR/index.html">VancouvR</a>, <a href="../vein/index.html">vein</a>, <a href="../velociraptr/index.html">velociraptr</a>, <a href="../webTRISr/index.html">webTRISr</a>, <a href="../WEGE/index.html">WEGE</a>, <a href="../windfarmGA/index.html">windfarmGA</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;linking&nbsp;to:</td>
+<td><a href="../lwgeom/index.html">lwgeom</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../adklakedata/index.html">adklakedata</a>, <a href="../apsimx/index.html">apsimx</a>, <a href="../auk/index.html">auk</a>, <a href="../belg/index.html">belg</a>, <a href="../BIOMASS/index.html">BIOMASS</a>, <a href="../cancensus/index.html">cancensus</a>, <a href="../CAST/index.html">CAST</a>, <a href="../censusxy/index.html">censusxy</a>, <a href="../ckanr/index.html">ckanr</a>, <a href="../climatrends/index.html">climatrends</a>, <a href="../colorist/index.html">colorist</a>, <a href="../covid19mobility/index.html">covid19mobility</a>, <a href="../covid19nytimes/index.html">covid19nytimes</a>, <a href="../deckgl/index.html">deckgl</a>, <a href="../DeclareDesign/index.html">DeclareDesign</a>, <a href="../disdat/index.html">disdat</a>, <a href="../dodgr/index.html">dodgr</a>, <a href="../echelon/index.html">echelon</a>, <a href="../echor/index.html">echor</a>, <a href="../EcoIndR/index.html">EcoIndR</a>, <a href="../eddi/index.html">eddi</a>, <a href="../eRTG3D/index.html">eRTG3D</a>, <a href="../fasterize/index.html">fasterize</a>, <a href="../finbif/index.html">finbif</a>, <a href="../gdalcubes/index.html">gdalcubes</a>, <a href="../gear/index.html">gear</a>, <a href="../geodaData/index.html">geodaData</a>, <a href="../geohashTools/index.html">geohashTools</a>, <a href="../geojson/index.html">geojson</a>, <a href="../geometa/index.html">geometa</a>, <a href="../geos/index.html">geos</a>, <a href="../gfcanalysis/index.html">gfcanalysis</a>, <a href="../ggformula/index.html">ggformula</a>, <a href="../gghighlight/index.html">gghighlight</a>, <a href="../ggiraph/index.html">ggiraph</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../googlePolylines/index.html">googlePolylines</a>, <a href="../gstat/index.html">gstat</a>, <a href="../gtfsrouter/index.html">gtfsrouter</a>, <a href="../HSAR/index.html">HSAR</a>, <a href="../ipumsr/index.html">ipumsr</a>, <a href="../isoband/index.html">isoband</a>, <a href="../janitor/index.html">janitor</a>, <a href="../jsonlite/index.html">jsonlite</a>, <a href="../leaflet/index.html">leaflet</a>, <a href="../leaflet.extras2/index.html">leaflet.extras2</a>, <a href="../leri/index.html">leri</a>, <a href="../lutz/index.html">lutz</a>, <a href="../mapsFinland/index.html">mapsFinland</a>, <a href="../mdsr/index.html">mdsr</a>, <a href="../mlr/index.html">mlr</a>, <a href="../mudata2/index.html">mudata2</a>, <a href="../nasapower/index.html">nasapower</a>, <a href="../NetLogoR/index.html">NetLogoR</a>, <a href="../nlaR/index.html">nlaR</a>, <a href="../nlgeocoder/index.html">nlgeocoder</a>, <a href="../o2geosocial/index.html">o2geosocial</a>, <a href="../oce/index.html">oce</a>, <a href="../od/index.html">od</a>, <a href="../onemapsgapi/index.html">onemapsgapi</a>, <a href="../osmdata/index.html">osmdata</a>, <a href="../pinochet/index.html">pinochet</a>, <a href="../plotly/index.html">plotly</a>, <a href="../polylabelr/index.html">polylabelr</a>, <a href="../protolite/index.html">protolite</a>, <a href="../raster/index.html">raster</a>, <a href="../rasterVis/index.html">rasterVis</a>, <a href="../rayrender/index.html">rayrender</a>, <a href="../rayshader/index.html">rayshader</a>, <a href="../rcartocolor/index.html">rcartocolor</a>, <a href="../readwritesqlite/index.html">readwritesqlite</a>, <a href="../reproducible/index.html">reproducible</a>, <a href="../rgbif/index.html">rgbif</a>, <a href="../rgrass7/index.html">rgrass7</a>, <a href="../rinat/index.html">rinat</a>, <a href="../rmangal/index.html">rmangal</a>, <a href="../sbtools/index.html">sbtools</a>, <a href="../scrubr/index.html">scrubr</a>, <a href="../sdcSpatial/index.html">sdcSpatial</a>, <a href="../skimr/index.html">skimr</a>, <a href="../sociome/index.html">sociome</a>, <a href="../soilDB/index.html">soilDB</a>, <a href="../SpaDES.core/index.html">SpaDES.core</a>, <a href="../SpaDES.tools/index.html">SpaDES.tools</a>, <a href="../SpatialBSS/index.html">SpatialBSS</a>, <a href="../spatialreg/index.html">spatialreg</a>, <a href="../spbabel/index.html">spbabel</a>, <a href="../spData/index.html">spData</a>, <a href="../spsur/index.html">spsur</a>, <a href="../stormwindmodel/index.html">stormwindmodel</a>, <a href="../swmmr/index.html">swmmr</a>, <a href="../tricolore/index.html">tricolore</a>, <a href="../ukpolice/index.html">ukpolice</a>, <a href="../ursa/index.html">ursa</a>, <a href="../USAboundaries/index.html">USAboundaries</a>, <a href="../waterquality/index.html">waterquality</a>, <a href="../WaveSampling/index.html">WaveSampling</a>, <a href="../weathercan/index.html">weathercan</a>, <a href="../wk/index.html">wk</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;enhances:</td>
+<td><a href="../landscapemetrics/index.html">landscapemetrics</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=sf"><samp>https://CRAN.R-project.org/package=sf</samp></a>
+to link to this page.</p>
+</body>
+</html>

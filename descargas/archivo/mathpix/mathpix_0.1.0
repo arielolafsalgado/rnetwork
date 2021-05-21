@@ -1,0 +1,24 @@
+Package: mathpix
+Title: Support for the 'Mathpix' API (Image to 'LaTeX')
+Version: 0.1.0
+Authors@R: person("Jonathan", "Carroll", email = "rpkg@jcarroll.com.au", role = c("aut", "cre"))
+Maintainer: Jonathan Carroll <rpkg@jcarroll.com.au>
+Description: Given an image of a formula (typeset or handwritten) this package
+    provides calls to the 'Mathpix' service to produce the 'LaTeX' code which should
+    generate that image, and pastes it into a (e.g. an 'rmarkdown') document. 
+    See <https://docs.mathpix.com/> for full details. 'Mathpix' is an external service 
+    and use of the API is subject to their terms and conditions.
+Depends: R (>= 3.3.2)
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/jonocarroll/mathpix
+BugReports: https://github.com/jonocarroll/mathpix/issues
+Suggests: testthat
+RoxygenNote: 6.0.1
+Imports: purrr, base64enc, httr, rstudioapi, texPreview
+NeedsCompilation: no
+Packaged: 2017-09-27 05:58:14 UTC; jono
+Author: Jonathan Carroll [aut, cre]
+Repository: CRAN
+Date/Publication: 2017-09-27 09:04:21 UTC

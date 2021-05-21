@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package stars</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Spatiotemporal Arrays, Raster and Vector Data Cubes [R package stars version 0.4-3]" />
+<meta name="citation_author" content="Edzer Pebesma" />
+<meta name="citation_publication_date" content="2020-07-08" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=stars" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=stars" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="stars: Spatiotemporal Arrays, Raster and Vector Data Cubes" />
+<meta name="og:description" content="Reading, manipulating, writing and plotting spatiotemporal arrays (raster and vector data cubes) in 'R', using 'GDAL' bindings provided by 'sf', and 'NetCDF' bindings by 'ncmeta' and 'RNetCDF'." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=stars" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>stars: Spatiotemporal Arrays, Raster and Vector Data Cubes</h2>
+<p>Reading, manipulating, writing and plotting
+    spatiotemporal arrays (raster and vector data cubes) in 'R', using 'GDAL'
+    bindings provided by 'sf', and 'NetCDF' bindings by 'ncmeta' and 'RNetCDF'.</p>
+<table summary="Package stars summary">
+<tr>
+<td>Version:</td>
+<td>0.4-3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3.0), <a href="../abind/index.html">abind</a>, <a href="../sf/index.html">sf</a> (&ge; 0.9-0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>methods, parallel, <a href="../classInt/index.html">classInt</a> (&ge; 0.4-1), <a href="../lwgeom/index.html">lwgeom</a>, <a href="../rlang/index.html">rlang</a>, <a href="../units/index.html">units</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../PCICt/index.html">PCICt</a>, <a href="../RNetCDF/index.html">RNetCDF</a> (&ge; 1.8-2), <a href="../covr/index.html">covr</a>, <a href="../cubelyr/index.html">cubelyr</a>, <a href="../digest/index.html">digest</a>, <a href="../dplyr/index.html">dplyr</a> (&ge;
+0.7-0), <a href="../exactextractr/index.html">exactextractr</a>, <a href="../future.apply/index.html">future.apply</a>, <a href="../ggforce/index.html">ggforce</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../ggthemes/index.html">ggthemes</a>, <a href="../gstat/index.html">gstat</a>, <a href="../httr/index.html">httr</a>, <a href="../jsonlite/index.html">jsonlite</a>, <a href="../knitr/index.html">knitr</a>, <a href="../maps/index.html">maps</a>, <a href="../ncdfgeom/index.html">ncdfgeom</a>, <a href="../ncmeta/index.html">ncmeta</a> (&ge; 0.0.3), <a href="../pbapply/index.html">pbapply</a>, <a href="../plm/index.html">plm</a>, <a href="../raster/index.html">raster</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../s2/index.html">s2</a> (&ge; 1.0.0), <a href="../sp/index.html">sp</a>, <a href="../spacetime/index.html">spacetime</a>, <a href="../spatstat/index.html">spatstat</a>, starsdata, <a href="../testthat/index.html">testthat</a>, <a href="../viridis/index.html">viridis</a>, <a href="../xts/index.html">xts</a>, <a href="../zoo/index.html">zoo</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-07-08</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Edzer Pebesma <a href="https://orcid.org/0000-0001-8049-7069"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Michael Sumner <a href="https://orcid.org/0000-0002-2471-7511"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Etienne Racine [ctb],
+  Adriano Fantini [ctb],
+  David Blodgett [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Edzer Pebesma  &#x3c;&#x65;&#x64;&#x7a;&#x65;&#x72;&#x2e;&#x70;&#x65;&#x62;&#x65;&#x73;&#x6d;&#x61;&#x20;&#x61;&#x74;&#x20;&#x75;&#x6e;&#x69;&#x2d;&#x6d;&#x75;&#x65;&#x6e;&#x73;&#x74;&#x65;&#x72;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/r-spatial/stars/issues/">https://github.com/r-spatial/stars/issues/</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="https://www.apache.org/LICENSE-1.1">Apache License version 1.1</a> | <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License version 2.0</a> [expanded from: Apache License]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://r-spatial.github.io/stars/">https://r-spatial.github.io/stars/</a>,
+<a href="https://github.com/r-spatial/stars/">https://github.com/r-spatial/stars/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Spatial.html">Spatial</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_stars.html">stars results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package stars downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="stars.pdf"> stars.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/stars1.html">1. introduction</a><br/>
+<a href="vignettes/stars2.html">2. stars proxy objects</a><br/>
+<a href="vignettes/stars3.html">3. stars tidyverse methods</a><br/>
+<a href="vignettes/stars4.html">4. stars data model</a><br/>
+<a href="vignettes/stars5.html">5. vector-raster and raster-vector conversion</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/stars_0.4-3.tar.gz"> stars_0.4-3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/stars_0.4-3.zip">stars_0.4-3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/stars_0.4-3.zip">stars_0.4-3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/stars_0.4-3.zip">stars_0.4-3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/stars_0.4-3.tgz">stars_0.4-3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/stars_0.4-3.tgz">stars_0.4-3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/stars"> stars archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package stars reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../starsExtra/index.html">starsExtra</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../cubeview/index.html">cubeview</a>, <a href="../fgdr/index.html">fgdr</a>, <a href="../mapsapi/index.html">mapsapi</a>, <a href="../RGISTools/index.html">RGISTools</a>, <a href="../sen2r/index.html">sen2r</a>, <a href="../simplevis/index.html">simplevis</a>, <a href="../tmap/index.html">tmap</a>, <a href="../tmaptools/index.html">tmaptools</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../belg/index.html">belg</a>, <a href="../gdalcubes/index.html">gdalcubes</a>, <a href="../ggspatial/index.html">ggspatial</a>, <a href="../gstat/index.html">gstat</a>, <a href="../leafem/index.html">leafem</a>, <a href="../mapview/index.html">mapview</a>, <a href="../meteoland/index.html">meteoland</a>, <a href="../nngeo/index.html">nngeo</a>, <a href="../palr/index.html">palr</a>, <a href="../rgrass7/index.html">rgrass7</a>, <a href="../sf/index.html">sf</a>, <a href="../shadow/index.html">shadow</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;enhances:</td>
+<td><a href="../landscapemetrics/index.html">landscapemetrics</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=stars"><samp>https://CRAN.R-project.org/package=stars</samp></a>
+to link to this page.</p>
+</body>
+</html>

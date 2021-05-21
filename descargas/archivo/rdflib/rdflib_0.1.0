@@ -1,0 +1,39 @@
+Package: rdflib
+Title: Tools to Manipulate and Query Semantic Data
+Version: 0.1.0
+Authors@R: person("Carl", "Boettiger", 
+                  email = "cboettig@gmail.com", 
+                  role = c("aut", "cre", "cph"),
+                  comment=c(ORCID = "0000-0002-1642-628X"))
+Description: The Resource Description Framework, or 'RDF' is a widely used
+             data representation model that forms the cornerstone of the 
+             Semantic Web. 'RDF' represents data as a graph rather than 
+             the familiar data table or rectangle of relational databases.
+             The 'rdflib' package provides a friendly and concise user interface
+             for performing common tasks on 'RDF' data, such as reading, writing
+             and converting between the various serializations of 'RDF' data,
+             including 'rdfxml', 'turtle', 'nquads', 'ntriples', and 'json-ld';
+             creating new 'RDF' graphs, and performing graph queries using 'SPARQL'.
+             This package wraps the low level 'redland' R package which
+             provides direct bindings to the 'redland' C library.  Additionally,
+             the package supports the newer and more developer friendly
+             'JSON-LD' format through the 'jsonld' package. The package
+             interface takes inspiration from the Python 'rdflib' library.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/ropensci/rdflib
+BugReports: https://github.com/ropensci/rdflib/issues
+Imports: redland, jsonld, methods, utils, stringi, readr
+RoxygenNote: 6.0.1
+Suggests: magrittr, covr, testthat, knitr, rmarkdown, jqr, DT,
+        tidyverse, dplyr, tidyr, tibble, purrr, lubridate, httr, xml2,
+        jsonlite, repurrrsive, nycflights13, codemetar
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-03-08 21:40:42 UTC; cboettig
+Author: Carl Boettiger [aut, cre, cph]
+    (<https://orcid.org/0000-0002-1642-628X>)
+Maintainer: Carl Boettiger <cboettig@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-03-09 12:56:58 UTC

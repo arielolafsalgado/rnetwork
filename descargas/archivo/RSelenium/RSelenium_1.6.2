@@ -1,0 +1,34 @@
+Package: RSelenium
+Type: Package
+Title: R Bindings for 'Selenium WebDriver'
+Version: 1.6.2
+Authors@R: person("John", "Harrison", , "johndharrison0@gmail.com", 
+    role = c("aut", "cre"), comment = "R package RSelenium")
+Description: Provides a set of R bindings for the 'Selenium 2.0 WebDriver' 
+    (see <https://seleniumhq.github.io/docs/wd.html>
+    for more information) using the 'JsonWireProtocol' (see
+    <https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol> for more
+    information). 'Selenium 2.0 WebDriver' allows driving a web browser
+    natively as a user would either locally or on a remote machine using
+    the Selenium server it marks a leap forward in terms of web browser
+    automation. Selenium automates web browsers (commonly referred to as
+    browsers). Using RSelenium you can automate browsers locally or
+    remotely.
+License: AGPL-3
+URL: http://ropensci.github.io/RSelenium
+BugReports: http://github.com/ropensci/RSelenium/issues
+Additional_repositories: http://www.omegahat.net/R
+Depends: R (>= 3.0.0)
+Imports: XML,methods,caTools,tools,utils, openssl, httr
+Suggests: testthat, knitr, Rcompression, covr, rmarkdown
+VignetteBuilder: knitr
+LazyData: true
+Collate: 'errorHandler.R' 'remoteDriver.R' 'selKeys-data.R' 'util.R'
+        'webElement.R' 'zzz.R'
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-12-02 22:44:06 UTC; john
+Author: John Harrison [aut, cre] (R package RSelenium)
+Maintainer: John Harrison <johndharrison0@gmail.com>
+Repository: CRAN
+Date/Publication: 2016-12-03 00:57:46

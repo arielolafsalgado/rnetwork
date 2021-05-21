@@ -1,0 +1,37 @@
+Package: spam64
+Type: Package
+Title: 64-Bit Extension of the SPArse Matrix R Package 'spam'
+Version: 2.1-1
+Date: 2017-07-02
+Authors@R: c(person("Reinhard", "Furrer", role = c("aut", "cre"),
+                    email = "reinhard.furrer@math.uzh.ch"),
+             person("Florian", "Gerber", role = "ctb",
+	                email = "florian.gerber@math.uzh.ch"),
+	     person("Daniel", "Gerber", role = "ctb",
+			email = "daniel_gerber_2222@hotmail.com"),
+             person("Kaspar", "Moesinger", role = "ctb",
+	                email = "kaspar.moesinger@gmail.com"),
+             person("Youcef", "Saad", role = "ctb",
+                        comment = "SPARSEKIT http://www-users.cs.umn.edu/~saad/software/SPARSKIT/"),
+             person(c("Esmond", "G."), "Ng", role = "ctb",
+                        comment = "Fortran Cholesky routines"),
+             person(c("Barry", "W."), "Peyton", role = "ctb",
+                        comment = "Fortran Cholesky routines"),
+             person(c("Joseph", "W.H."), "Liu", role = "ctb",
+                        comment = "Fortran Cholesky routines"),
+             person(c("Alan", "D."), "George", role = "ctb",
+                        comment = "Fortran Cholesky routines")
+		 	)
+Author: Reinhard Furrer [aut, cre], Florian Gerber [ctb], Daniel Gerber [ctb], Kaspar Moesinger [ctb], Youcef Saad [ctb] (SPARSEKIT http://www-users.cs.umn.edu/~saad/software/SPARSKIT/), Esmond G. Ng [ctb] (Fortran Cholesky routines), Barry W. Peyton [ctb] (Fortran Cholesky routines), Joseph W.H. Liu [ctb] (Fortran Cholesky routines), Alan D. George [ctb] (Fortran Cholesky routines) 
+Maintainer: Reinhard Furrer <reinhard.furrer@math.uzh.ch>
+Description: Provides the Fortran code of the R package 'spam'
+    with 64-bit integers. Loading this package together with the R package
+    'spam' enables the sparse matrix class "spam" to handle huge sparse matrices
+    with more than 2^31-1 non-zero elements. 
+Suggests: spam (== 2.1-1)
+License: LGPL-2
+URL: http://www.math.uzh.ch/furrer/software/spam/
+NeedsCompilation: yes
+Packaged: 2017-07-02 19:23:04 UTC; furrer
+Repository: CRAN
+Date/Publication: 2017-07-02 22:01:30 UTC

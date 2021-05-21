@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package bayesImageS</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Bayesian Methods for Image Segmentation using a Potts Model [R package bayesImageS version 0.6-0]" />
+<meta name="citation_author1" content="Matt Moores" />
+<meta name="citation_author2" content="Kerrie Mengersen" />
+<meta name="citation_publication_date" content="2019-01-04" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=bayesImageS" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=bayesImageS" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="bayesImageS: Bayesian Methods for Image Segmentation using a Potts Model" />
+<meta name="og:description" content="Various algorithms for segmentation of 2D and 3D images, such as computed tomography and satellite remote sensing. This package implements Bayesian image analysis using the hidden Potts model with external field prior of Moores et al. (2015) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.csda.2014.12.001&quot;&gt;doi:10.1016/j.csda.2014.12.001&lt;/a&gt;&amp;gt;. Latent labels are sampled using chequerboard updating or Swendsen-Wang. Algorithms for the smoothing parameter include pseudolikelihood, path sampling, the exchange algorithm, approximate Bayesian computation (ABC-MCMC and ABC-SMC), and the parametric functional approximate Bayesian (PFAB) algorithm. Refer to &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs11222-014-9525-6&quot;&gt;doi:10.1007/s11222-014-9525-6&lt;/a&gt;&amp;gt; and &amp;lt;&lt;a href=&quot;https://doi.org/10.1214%2F18-BA1130&quot;&gt;doi:10.1214/18-BA1130&lt;/a&gt;&amp;gt; for further details." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=bayesImageS" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>bayesImageS: Bayesian Methods for Image Segmentation using a Potts Model</h2>
+<p>Various algorithms for segmentation of 2D and 3D images, such
+    as computed tomography and satellite remote sensing. This package implements
+    Bayesian image analysis using the hidden Potts model with external field
+    prior of Moores et al. (2015) &lt;<a href="https://doi.org/10.1016%2Fj.csda.2014.12.001">doi:10.1016/j.csda.2014.12.001</a>&gt;.
+    Latent labels are sampled using chequerboard updating or Swendsen-Wang.
+    Algorithms for the smoothing parameter include pseudolikelihood, path sampling,
+    the exchange algorithm, approximate Bayesian computation (ABC-MCMC and ABC-SMC),
+    and the parametric functional approximate Bayesian (PFAB) algorithm. Refer to
+    &lt;<a href="https://doi.org/10.1007%2Fs11222-014-9525-6">doi:10.1007/s11222-014-9525-6</a>&gt; and &lt;<a href="https://doi.org/10.1214%2F18-BA1130">doi:10.1214/18-BA1130</a>&gt; for further details.</p>
+<table summary="Package bayesImageS summary">
+<tr>
+<td>Version:</td>
+<td>0.6-0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.10.6)</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../mcmcse/index.html">mcmcse</a>, <a href="../coda/index.html">coda</a>, <a href="../PottsUtils/index.html">PottsUtils</a>, <a href="../rstan/index.html">rstan</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../lattice/index.html">lattice</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-01-04</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Matt Moores <a href="https://orcid.org/0000-0003-4531-3572"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    cre],
+  Kerrie Mengersen <a href="https://orcid.org/0000-0001-8625-9168"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, ths],
+  Dai Feng [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Matt Moores  &#x3c;&#x6d;&#x6d;&#x6f;&#x6f;&#x72;&#x65;&#x73;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://bitbucket.org/Azeari/bayesimages/issues">https://bitbucket.org/Azeari/bayesimages/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> | file <a href="LICENSE">LICENSE</a> [expanded from: GPL (&ge; 2) | file LICENSE]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://bitbucket.org/Azeari/bayesimages">https://bitbucket.org/Azeari/bayesimages</a>,
+<a href="https://mooresm.github.io/bayesImageS/">https://mooresm.github.io/bayesImageS/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">bayesImageS citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Bayesian.html">Bayesian</a>, <a href="../../views/MedicalImaging.html">MedicalImaging</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_bayesImageS.html">bayesImageS results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package bayesImageS downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="bayesImageS.pdf"> bayesImageS.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Background.html">Bayesian Methods for Image Segmentation</a><br/>
+<a href="vignettes/mcmcPotts.html">mcmcPotts</a><br/>
+<a href="vignettes/mcmcPottsNoData.html">mcmcPottsNoData</a><br/>
+<a href="vignettes/swNoData.html">swNoData</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/bayesImageS_0.6-0.tar.gz"> bayesImageS_0.6-0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/bayesImageS_0.6-0.zip">bayesImageS_0.6-0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/bayesImageS_0.6-0.zip">bayesImageS_0.6-0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/bayesImageS_0.6-0.zip">bayesImageS_0.6-0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/bayesImageS_0.6-0.tgz">bayesImageS_0.6-0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/bayesImageS_0.6-0.tgz">bayesImageS_0.6-0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/bayesImageS"> bayesImageS archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=bayesImageS"><samp>https://CRAN.R-project.org/package=bayesImageS</samp></a>
+to link to this page.</p>
+</body>
+</html>

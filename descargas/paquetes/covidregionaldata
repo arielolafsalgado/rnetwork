@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package covidregionaldata</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Subnational Data for the Covid-19 Outbreak [R package covidregionaldata version 0.6.0]" />
+<meta name="citation_author1" content="Sam Abbott" />
+<meta name="citation_author2" content="Katharine Sherratt" />
+<meta name="citation_author3" content="Jonnie Bevan" />
+<meta name="citation_author4" content="Hamish Gibbs" />
+<meta name="citation_author5" content="Joel Hellewell" />
+<meta name="citation_author6" content="James Munday" />
+<meta name="citation_author7" content="Paul Campbell" />
+<meta name="citation_author8" content="Sebastian Funk" />
+<meta name="citation_publication_date" content="2020-08-27" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=covidregionaldata" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=covidregionaldata" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="covidregionaldata: Subnational Data for the Covid-19 Outbreak" />
+<meta name="og:description" content="An interface to subnational and national level Covid-19 data. For all countries supported, this includes a daily time-series of cases. Wherever available we also provide data on deaths, hospitalisations, and tests. National level data is also supported using a range of data sources as well as linelist data and links to intervention data sets. Data sources included: WHO &amp;lt;&lt;a href=&quot;https://covid19.who.int&quot;&gt;https://covid19.who.int&lt;/a&gt;&amp;gt;; ACAPS interventions &amp;lt;&lt;a href=&quot;https://data.humdata.org/dataset/acaps-covid19-government-measures-dataset&quot;&gt;https://data.humdata.org/dataset/acaps-covid19-government-measures-dataset&lt;/a&gt;&amp;gt;; patient linelist: &amp;lt;&lt;a href=&quot;https://github.com/beoutbreakprepared/nCoV2019&quot;&gt;https://github.com/beoutbreakprepared/nCoV2019&lt;/a&gt;&amp;gt;), regional data (Afghanistan: &amp;lt;&lt;a href=&quot;https://data.humdata.org/dataset/afghanistan-covid-19-statistics-per-province&quot;&gt;https://data.humdata.org/dataset/afghanistan-covid-19-statistics-per-province&lt;/a&gt;&amp;gt;; Belgium: &amp;lt;&lt;a href=&quot;https://epistat.wiv-isp.be/covid/&quot;&gt;https://epistat.wiv-isp.be/covid/&lt;/a&gt;&amp;gt;; Brazil: &amp;lt;&lt;a href=&quot;https://github.com/wcota/covid19br&quot;&gt;https://github.com/wcota/covid19br&lt;/a&gt;&amp;gt;; Canada: &amp;lt;&lt;a href=&quot;https://health-infobase.canada.ca/&quot;&gt;https://health-infobase.canada.ca/&lt;/a&gt;&amp;gt;; Colombia: &amp;lt;&lt;a href=&quot;https://github.com/danielcs88/colombia_covid-19&quot;&gt;https://github.com/danielcs88/colombia_covid-19&lt;/a&gt;&amp;gt;; Germany: &amp;lt;&lt;a href=&quot;https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/dd4580c810204019a7b8eb3e0b329dd6_0&quot;&gt;https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/dd4580c810204019a7b8eb3e0b329dd6_0&lt;/a&gt;&amp;gt;; India: &amp;lt;&lt;a href=&quot;https://api.covid19india.org/&quot;&gt;https://api.covid19india.org/&lt;/a&gt;&amp;gt;; Italy: &amp;lt;&lt;a href=&quot;https://github.com/pcm-dpc/COVID-19&quot;&gt;https://github.com/pcm-dpc/COVID-19&lt;/a&gt;&amp;gt;; Russia: &amp;lt;&lt;a href=&quot;https://github.com/grwlf/COVID-19_plus_Russia&quot;&gt;https://github.com/grwlf/COVID-19_plus_Russia&lt;/a&gt;&amp;gt;; UK: &amp;lt;&lt;a href=&quot;https://coronavirus.data.gov.uk&quot;&gt;https://coronavirus.data.gov.uk&lt;/a&gt;&amp;gt;; USA: &amp;lt;&lt;a href=&quot;https://github.com/nytimes/covid-19-data&quot;&gt;https://github.com/nytimes/covid-19-data&lt;/a&gt;&amp;gt;), and geocoding data (Colombia: &amp;lt;&lt;a href=&quot;https://en.wikipedia.org/wiki/ISO_3166-2:CO&quot;&gt;https://en.wikipedia.org/wiki/ISO_3166-2:CO&lt;/a&gt;&amp;gt;; Russia: &amp;lt;&lt;a href=&quot;https://en.wikipedia.org/wiki/ISO_3166-2:RU&quot;&gt;https://en.wikipedia.org/wiki/ISO_3166-2:RU&lt;/a&gt;&amp;gt;)." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=covidregionaldata" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>covidregionaldata: Subnational Data for the Covid-19 Outbreak</h2>
+<p>An interface to subnational and national level Covid-19 data.
+    For all countries supported, this includes a daily time-series of cases.
+    Wherever available we also provide  data on deaths, hospitalisations, and tests.
+    National level data is also supported using a range of data sources as well as
+    linelist data and links to intervention data sets. Data sources included:
+    WHO &lt;<a href="https://covid19.who.int">https://covid19.who.int</a>&gt;;
+    ACAPS interventions &lt;<a href="https://data.humdata.org/dataset/acaps-covid19-government-measures-dataset">https://data.humdata.org/dataset/acaps-covid19-government-measures-dataset</a>&gt;;
+    patient linelist: &lt;<a href="https://github.com/beoutbreakprepared/nCoV2019">https://github.com/beoutbreakprepared/nCoV2019</a>&gt;),
+    regional data (Afghanistan: &lt;<a href="https://data.humdata.org/dataset/afghanistan-covid-19-statistics-per-province">https://data.humdata.org/dataset/afghanistan-covid-19-statistics-per-province</a>&gt;;
+    Belgium: &lt;<a href="https://epistat.wiv-isp.be/covid/">https://epistat.wiv-isp.be/covid/</a>&gt;; Brazil: &lt;<a href="https://github.com/wcota/covid19br">https://github.com/wcota/covid19br</a>&gt;;
+    Canada: &lt;<a href="https://health-infobase.canada.ca/">https://health-infobase.canada.ca/</a>&gt;; Colombia: &lt;<a href="https://github.com/danielcs88/colombia_covid-19">https://github.com/danielcs88/colombia_covid-19</a>&gt;;
+    Germany: &lt;<a href="https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/dd4580c810204019a7b8eb3e0b329dd6_0">https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/dd4580c810204019a7b8eb3e0b329dd6_0</a>&gt;;
+    India: &lt;<a href="https://api.covid19india.org/">https://api.covid19india.org/</a>&gt;; Italy: &lt;<a href="https://github.com/pcm-dpc/COVID-19">https://github.com/pcm-dpc/COVID-19</a>&gt;;
+    Russia: &lt;<a href="https://github.com/grwlf/COVID-19_plus_Russia">https://github.com/grwlf/COVID-19_plus_Russia</a>&gt;;  UK: &lt;<a href="https://coronavirus.data.gov.uk">https://coronavirus.data.gov.uk</a>&gt;;
+    USA: &lt;<a href="https://github.com/nytimes/covid-19-data">https://github.com/nytimes/covid-19-data</a>&gt;),
+    and geocoding data (Colombia: &lt;<a href="https://en.wikipedia.org/wiki/ISO_3166-2:CO">https://en.wikipedia.org/wiki/ISO_3166-2:CO</a>&gt;; Russia: &lt;<a href="https://en.wikipedia.org/wiki/ISO_3166-2:RU">https://en.wikipedia.org/wiki/ISO_3166-2:RU</a>&gt;).</p>
+<table summary="Package covidregionaldata summary">
+<tr>
+<td>Version:</td>
+<td>0.6.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../readr/index.html">readr</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../tibble/index.html">tibble</a>, <a href="../purrr/index.html">purrr</a>, <a href="../stringr/index.html">stringr</a>, <a href="../magrittr/index.html">magrittr</a>, <a href="../memoise/index.html">memoise</a>, <a href="../lubridate/index.html">lubridate</a>, <a href="../tidyr/index.html">tidyr</a> (&ge; 1.0.0), <a href="../httr/index.html">httr</a>, <a href="../yaml/index.html">yaml</a>, <a href="../readxl/index.html">readxl</a>, <a href="../xml2/index.html">xml2</a>, <a href="../rvest/index.html">rvest</a>, <a href="../jsonlite/index.html">jsonlite</a>, <a href="../countrycode/index.html">countrycode</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../data.table/index.html">data.table</a>, <a href="../pkgdown/index.html">pkgdown</a>, <a href="../testthat/index.html">testthat</a>, <a href="../spelling/index.html">spelling</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-08-27</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Sam Abbott <a href="https://orcid.org/0000-0001-8057-8037"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    cre],
+  Katharine Sherratt
+    <a href="https://orcid.org/0000-0003-4413-453X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Jonnie Bevan [aut],
+  Hamish Gibbs <a href="https://orcid.org/0000-0003-4413-453X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Joel Hellewell <a href="https://orcid.org/0000-0003-2683-0849"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  James Munday [aut],
+  Patrick Barks [ctb],
+  Paul Campbell [aut],
+  Flavio Finger <a href="https://orcid.org/0000-0002-8613-5170"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Sebastian Funk [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Sam Abbott  &#x3c;&#x73;&#x61;&#x6d;&#x2e;&#x61;&#x62;&#x62;&#x6f;&#x74;&#x74;&#x20;&#x61;&#x74;&#x20;&#x6c;&#x73;&#x68;&#x74;&#x6d;&#x2e;&#x61;&#x63;&#x2e;&#x75;&#x6b;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/epiforecasts/covidregionaldata/issues">https://github.com/epiforecasts/covidregionaldata/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td>https:/epiforecasts.io/covidregionaldata,
+<a href="https://github.com/epiforecasts/covidregionaldata">https://github.com/epiforecasts/covidregionaldata</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-gb</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_covidregionaldata.html">covidregionaldata results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package covidregionaldata downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="covidregionaldata.pdf"> covidregionaldata.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/covidregionaldata_0.6.0.tar.gz"> covidregionaldata_0.6.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/covidregionaldata_0.6.0.zip">covidregionaldata_0.6.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/covidregionaldata_0.6.0.zip">covidregionaldata_0.6.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/ReadMe">not available</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/covidregionaldata_0.6.0.tgz">covidregionaldata_0.6.0.tgz</a>, r-oldrel: not available </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/covidregionaldata"> covidregionaldata archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=covidregionaldata"><samp>https://CRAN.R-project.org/package=covidregionaldata</samp></a>
+to link to this page.</p>
+</body>
+</html>

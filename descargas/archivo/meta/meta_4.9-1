@@ -1,0 +1,27 @@
+Package: meta
+Title: General Package for Meta-Analysis
+Version: 4.9-1
+Depends: R (>= 2.9.1)
+Imports: grid
+Suggests: metafor (>= 1.9-9), lme4, numDeriv, BiasedUrn
+Authors@R: c(person("Guido","Schwarzer", role=c("cre","aut"), email="sc@imbi.uni-freiburg.de"))
+Date: 2018-03-21
+URL: https://github.com/guido-s/meta http://meta-analysis-with-r.org
+Description: User-friendly general package providing standard methods for meta-analysis and supporting Schwarzer, Carpenter, and Rücker <DOI:10.1007/978-3-319-21416-0>, "Meta-Analysis with R" (2015):
+ - fixed effect and random effects meta-analysis;
+ - several plots (forest, funnel, Galbraith / radial, L'Abbe, Baujat, bubble);
+ - statistical tests and trim-and-fill method to evaluate bias in meta-analysis;
+ - import data from 'RevMan 5';
+ - prediction interval, Hartung-Knapp and Paule-Mandel method for random effects model;
+ - cumulative meta-analysis and leave-one-out meta-analysis;
+ - meta-regression (if R package 'metafor' is installed);
+ - generalised linear mixed models (if R packages 'metafor', 'lme4', 'numDeriv', and 'BiasedUrn' are installed);
+ - produce forest plot summarising several (subgroup) meta-analyses.
+License: GPL (>= 2)
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2018-03-21 13:11:15 UTC; sc
+Author: Guido Schwarzer [cre, aut]
+Maintainer: Guido Schwarzer <sc@imbi.uni-freiburg.de>
+Repository: CRAN
+Date/Publication: 2018-03-22 08:12:57 UTC

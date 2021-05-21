@@ -1,0 +1,25 @@
+Package: GEint
+Type: Package
+Title: Misspecified Models for Gene-Environment Interaction
+Version: 0.1.1
+Date: 2016-09-30
+Authors@R: person("Ryan", "Sun", email = "ryansun.work@gmail.com", role = c("aut", "cre"))
+Description: Compute the bias in misspecified linear gene-environment interaction models. The most 
+	generalized function for this objective is GE_bias().  However GE_bias() requires specification of many
+	higher order moments of covariates in the model.  If users are unsure about how to calculate/estimate
+	these higher order moments, it may be easier to use GE_bias_normal_squaredmis().  This function places
+	many more assumptions on the covariates (most notably that they are all jointly generated from a multivariate
+	normal distribution) and is thus able to automatically calculate many of the higher order moments automatically,
+	necessitating only that the user specify some covariances.  There are also functions to solve for the bias 
+	through simulation and non-linear equation solvers, these can be used to check your work.
+Imports: mvtnorm, nleqslv, pracma, speedglm, rje, geepack, stats
+License: GPL-3
+RoxygenNote: 5.0.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2016-09-30 17:00:29 UTC; ryansun
+Author: Ryan Sun [aut, cre]
+Maintainer: Ryan Sun <ryansun.work@gmail.com>
+Repository: CRAN
+Date/Publication: 2016-10-01 01:07:46

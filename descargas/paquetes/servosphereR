@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package servosphereR</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Analyze Data Generated from Syntech Servosphere Trials [R package servosphereR version 0.1.1]" />
+<meta name="citation_author" content="Jacob T. Wittman" />
+<meta name="citation_publication_date" content="2019-05-14" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=servosphereR" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=servosphereR" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="servosphereR: Analyze Data Generated from Syntech Servosphere Trials" />
+<meta name="og:description" content="Functions that facilitate and speed up the analysis of data produced by a Syntech servosphere &amp;lt;&lt;a href=&quot;http://www.ockenfels-syntech.com/products/locomotion-compensation/&quot;&gt;http://www.ockenfels-syntech.com/products/locomotion-compensation/&lt;/a&gt;&amp;gt;, which is equipment for studying the movement behavior of arthropods. This package is designed to make working with data produced from a servosphere easy for someone new to or unfamiliar with R. The functions provided in this package fall into three broad-use categories: functions for cleaning raw data produced by the servosphere software, functions for deriving movement variables based on position data, and functions for summarizing movement variables for easier analysis. These functions are built with functions from the tidyverse package to work efficiently, as a single servosphere file may consist of hundreds of thousands of rows of data and a user may wish to analyze hundreds of files at a time. Many of the movement variables derivable through this package are described in the following papers: Otálora-Luna, Fernando; Dickens, Joseph C. (2011) &amp;lt;&lt;a href=&quot;https://doi.org/10.1371%2Fjournal.pone.0020990&quot;&gt;doi:10.1371/journal.pone.0020990&lt;/a&gt;&amp;gt; Party, Virginie; Hanot, Christophe; Busser, Daniela Schmidt; Rochat, Didier; Renou, Michel (2013) &amp;lt;&lt;a href=&quot;https://doi.org/10.1371%2Fjournal.pone.0052897&quot;&gt;doi:10.1371/journal.pone.0052897&lt;/a&gt;&amp;gt; Bell, William J.; Kramer, Ernest (1980) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2FBF01402908&quot;&gt;doi:10.1007/BF01402908&lt;/a&gt;&amp;gt; Becher, Paul G; Guerin, Patrick M. (2009) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.jinsphys.2009.01.006&quot;&gt;doi:10.1016/j.jinsphys.2009.01.006&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=servosphereR" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>servosphereR: Analyze Data Generated from Syntech Servosphere Trials</h2>
+<p>Functions that facilitate and speed up the analysis of data
+    produced by a Syntech servosphere &lt;<a href="http://www.ockenfels-syntech.com/products/locomotion-compensation/">http://www.ockenfels-syntech.com/products/locomotion-compensation/</a>&gt;,
+    which is equipment for studying the movement behavior of arthropods.
+    This package is designed to make working with data produced from a 
+    servosphere easy for someone new to or unfamiliar with R. The functions
+    provided in this package fall into three broad-use categories: functions for
+    cleaning raw data produced by the servosphere software, functions for
+    deriving movement variables based on position data, and functions for 
+    summarizing movement variables for easier analysis. These functions are
+    built with functions from the tidyverse package to work efficiently, as a
+    single servosphere file may consist of hundreds of thousands of rows of data
+    and a user may wish to analyze hundreds of files at a time. Many of the 
+    movement variables derivable through this package are described in the 
+    following papers:
+    Otálora-Luna, Fernando; Dickens, Joseph C. (2011) &lt;<a href="https://doi.org/10.1371%2Fjournal.pone.0020990">doi:10.1371/journal.pone.0020990</a>&gt;
+    Party, Virginie; Hanot, Christophe; Busser, Daniela Schmidt; Rochat, Didier; Renou, Michel (2013) &lt;<a href="https://doi.org/10.1371%2Fjournal.pone.0052897">doi:10.1371/journal.pone.0052897</a>&gt;
+    Bell, William J.; Kramer, Ernest (1980) &lt;<a href="https://doi.org/10.1007%2FBF01402908">doi:10.1007/BF01402908</a>&gt;
+    Becher, Paul G; Guerin, Patrick M. (2009) &lt;<a href="https://doi.org/10.1016%2Fj.jinsphys.2009.01.006">doi:10.1016/j.jinsphys.2009.01.006</a>&gt;.</p>
+<table summary="Package servosphereR summary">
+<tr>
+<td>Version:</td>
+<td>0.1.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../purrr/index.html">purrr</a> (&ge; 0.2), <a href="../data.table/index.html">data.table</a> (&ge; 1.10), <a href="../dplyr/index.html">dplyr</a> (&ge; 0.7), <a href="../magrittr/index.html">magrittr</a> (&ge; 1.5), <a href="../rlang/index.html">rlang</a> (&ge; 0.3), stats (&ge; 3.4)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-05-14</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Jacob T. Wittman [aut, cre],
+  Brian H. Aukema [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Jacob T. Wittman  &#x3c;&#x77;&#x69;&#x74;&#x74;&#x6a;&#x61;&#x30;&#x31;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="http://github.com/wittja01/servosphereR/issues">http://github.com/wittja01/servosphereR/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://github.com/wittja01/servosphereR">http://github.com/wittja01/servosphereR</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_servosphereR.html">servosphereR results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package servosphereR downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="servosphereR.pdf"> servosphereR.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/my-vignette.html">servosphereR: A Package for Analyzing SynTech Servosphere Data</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/servosphereR_0.1.1.tar.gz"> servosphereR_0.1.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/servosphereR_0.1.1.zip">servosphereR_0.1.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/servosphereR_0.1.1.zip">servosphereR_0.1.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/servosphereR_0.1.1.zip">servosphereR_0.1.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/servosphereR_0.1.1.tgz">servosphereR_0.1.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/servosphereR_0.1.1.tgz">servosphereR_0.1.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/servosphereR"> servosphereR archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=servosphereR"><samp>https://CRAN.R-project.org/package=servosphereR</samp></a>
+to link to this page.</p>
+</body>
+</html>

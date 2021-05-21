@@ -1,0 +1,36 @@
+Package: threshr
+Title: Threshold Selection and Uncertainty for Extreme Value Analysis
+Version: 1.0.1
+Date: 2019-03-01
+Authors@R: c(
+    person(c("Paul", "J."), "Northrop", email = "p.northrop@ucl.ac.uk", 
+      role = c("aut", "cre", "cph")),
+    person("Nicolas", "Attalides", role = "aut")
+    )
+Description: Provides functions for the selection of thresholds for use in 
+    extreme value models, based mainly on the methodology in 
+    Northrop, Attalides and Jonathan (2017) <doi:10.1111/rssc.12159>.
+    It also performs predictive inferences about future extreme values, 
+    based either on a single threshold or on a weighted average of inferences 
+    from multiple thresholds, using the 'revdbayes' package 
+    <https://cran.r-project.org/package=revdbayes>.   
+    At the moment only the case where the data can be treated as 
+    independent identically distributed observations is considered.
+Imports: graphics, methods, revdbayes (>= 1.2.0), rust (>= 1.2.2),
+        stats
+License: GPL (>= 2)
+LazyData: TRUE
+Encoding: UTF-8
+Depends: R (>= 3.3.0)
+RoxygenNote: 6.1.0
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+URL: http://github.com/paulnorthrop/threshr
+BugReports: http://github.com/paulnorthrop/threshr/issues
+NeedsCompilation: no
+Packaged: 2019-03-01 14:06:42 UTC; paul
+Author: Paul J. Northrop [aut, cre, cph],
+  Nicolas Attalides [aut]
+Maintainer: Paul J. Northrop <p.northrop@ucl.ac.uk>
+Repository: CRAN
+Date/Publication: 2019-03-01 21:50:03 UTC

@@ -1,0 +1,77 @@
+Package: mlr3pipelines
+Title: Preprocessing Operators and Pipelines for 'mlr3'
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Martin",
+             family = "Binder",
+             role = c("aut", "cre"),
+             email = "mlr.developer@mb706.com"),
+      person(given = "Florian",
+             family = "Pfisterer",
+             role = "aut",
+             email = "pfistererf@googlemail.com",
+             comment = c(ORCID = "0000-0001-8867-762X")),
+      person(given = "Bernd",
+             family = "Bischl",
+             role = "aut",
+             email = "bernd_bischl@gmx.net",
+             comment = c(ORCID = "0000-0001-6002-6980")),
+      person(given = "Michel",
+             family = "Lang",
+             role = "aut",
+             email = "michellang@gmail.com",
+             comment = c(ORCID = "0000-0001-9754-0393")),
+      person(given = "Susanne",
+             family = "Dandl",
+             role = "aut",
+             email = "dandl.susanne@googlemail.com"))
+Description: Dataflow programming toolkit that enriches 'mlr3' with a diverse
+  set of pipelining operators ('PipeOps') that can be composed into graphs.
+  Operations exist for data preprocessing, model fitting, and ensemble
+  learning. Graphs can themselves be treated as 'mlr3' 'Learners' and can
+  therefore be resampled, benchmarked, and tuned.
+License: LGPL-3
+URL: https://mlr3pipelines.mlr-org.com,
+        https://github.com/mlr-org/mlr3pipelines
+BugReports: https://github.com/mlr-org/mlr3pipelines/issues
+Depends: R (>= 3.1.0)
+Imports: backports, checkmate, data.table, digest, mlr3 (>= 0.1.3),
+        mlr3misc (>= 0.1.4), paradox, R6, withr
+Suggests: ggplot2, glmnet, igraph, knitr, lgr, lme4, mlbench,
+        mlr3filters, mlr3learners, nloptr, rmarkdown, rpart, testthat,
+        visNetwork, bestNormalize, fastICA, kernlab, smotefamily
+VignetteBuilder: knitr
+ByteCompile: true
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: no
+RoxygenNote: 6.1.1
+Collate: 'Graph.R' 'GraphLearner.R' 'mlr_pipeops.R' 'utils.R'
+        'PipeOp.R' 'PipeOpEnsemble.R' 'LearnerAvg.R' 'NO_OP.R'
+        'PipeOpTaskPreproc.R' 'PipeOpBoxCox.R' 'PipeOpBranch.R'
+        'PipeOpChunk.R' 'PipeOpClassBalancing.R' 'PipeOpClassifAvg.R'
+        'PipeOpColApply.R' 'PipeOpCollapseFactors.R' 'PipeOpCopy.R'
+        'PipeOpEncode.R' 'PipeOpEncodeLmer.R' 'PipeOpFeatureUnion.R'
+        'PipeOpFilter.R' 'PipeOpFixFactors.R' 'PipeOpHistBin.R'
+        'PipeOpICA.R' 'PipeOpImpute.R' 'PipeOpImputeHist.R'
+        'PipeOpImputeMean.R' 'PipeOpImputeMedian.R'
+        'PipeOpImputeNewlvl.R' 'PipeOpImputeSample.R'
+        'PipeOpKernelPCA.R' 'PipeOpLearner.R' 'PipeOpLearnerCV.R'
+        'PipeOpMissingIndicators.R' 'PipeOpModelMatrix.R'
+        'PipeOpMutate.R' 'PipeOpNOP.R' 'PipeOpPCA.R'
+        'PipeOpQuantileBin.R' 'PipeOpRegrAvg.R'
+        'PipeOpRemoveConstants.R' 'PipeOpScale.R' 'PipeOpScaleMaxAbs.R'
+        'PipeOpScaleRange.R' 'PipeOpSelect.R' 'PipeOpSmote.R'
+        'PipeOpSpatialSign.R' 'PipeOpSubsample.R' 'PipeOpUnbranch.R'
+        'PipeOpYeoJohnson.R' 'Selector.R' 'assert_graph.R'
+        'greplicate.R' 'gunion.R' 'operators.R' 'po.R' 'reexports.R'
+        'typecheck.R' 'zzz.R'
+Packaged: 2019-10-01 16:14:45 UTC; user
+Author: Martin Binder [aut, cre],
+  Florian Pfisterer [aut] (<https://orcid.org/0000-0001-8867-762X>),
+  Bernd Bischl [aut] (<https://orcid.org/0000-0001-6002-6980>),
+  Michel Lang [aut] (<https://orcid.org/0000-0001-9754-0393>),
+  Susanne Dandl [aut]
+Maintainer: Martin Binder <mlr.developer@mb706.com>
+Repository: CRAN
+Date/Publication: 2019-10-06 10:40:02 UTC

@@ -1,0 +1,30 @@
+Package: s2
+Type: Package
+Title: Google's S2 Library for Geometry on the Sphere
+Version: 0.4-0
+Authors@R: c(
+    person('Ege', 'Rubak', email='rubak@math.aau.dk', role = c('aut', 'cre')),
+    person("Jeroen", "Ooms", , "jeroen.ooms@stat.ucla.edu", role = "aut", comment = "configure and cleanup script"),
+    person("Edzer", "Pebesma", role = "aut", email = "edzer.pebesma@uni-muenster.de", comment = "Interface to sf"),
+    person(family = "Google, Inc.", role = "cph", comment = "Original s2 source code")
+    )
+Description: R bindings for Google's s2 library for geometric calculations on
+    the sphere.
+License: Apache License (== 2.0)
+Depends: R (>= 3.0.0)
+Imports: methods, Rcpp (>= 0.12.5)
+Suggests: globe
+URL: https://github.com/spatstat/s2,
+        https://code.google.com/archive/p/s2-geometry-library/
+SystemRequirements: OpenSSL >= 1.0.0, C++11
+LinkingTo: Rcpp
+NeedsCompilation: yes
+RoxygenNote: 6.0.1.9000
+Packaged: 2018-04-21 19:51:44 UTC; rubak
+Author: Ege Rubak [aut, cre],
+  Jeroen Ooms [aut] (configure and cleanup script),
+  Edzer Pebesma [aut] (Interface to sf),
+  Google, Inc. [cph] (Original s2 source code)
+Maintainer: Ege Rubak <rubak@math.aau.dk>
+Repository: CRAN
+Date/Publication: 2018-04-21 21:17:58 UTC

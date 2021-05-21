@@ -1,0 +1,28 @@
+Package: hpiR
+Type: Package
+Title: House Price Indexes
+Version: 0.2.0
+Authors@R: c(person("Andy", "Krause", role=c("aut", "cre"), 
+                    email = "andyxkrause@gmail.com"))
+Maintainer: Andy Krause <andyxkrause@gmail.com>
+Description: Compute house price indexes and series using a variety of different methods and
+    models common through the real estate literature.  Evaluate index 'goodness' based
+    on accuracy, volatility and revision statistics. Background on basic model construction
+    for repeat sales models can be found at: Case and Quigley (1991) <doi:10.2307/2109686> and 
+    for hedonic pricing models at: Bourassa et al (2006) <doi:10.1016/j.jhe.2006.03.001>.
+Depends: R (>= 3.1.0)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: dplyr, magrittr, lubridate, robustbase, ggplot2, imputeTS,
+        purrr, forecast, caret, gridExtra, knitr, MASS, rlang, plyr,
+        zoo
+URL: https://www.github.com/andykrause/hpiR
+RoxygenNote: 6.0.1
+Suggests: markdown, testthat
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-08-05 19:18:32 UTC; andyx
+Author: Andy Krause [aut, cre]
+Repository: CRAN
+Date/Publication: 2018-08-08 16:40:03 UTC

@@ -1,0 +1,34 @@
+Package: qfasar
+Type: Package
+Title: Quantitative Fatty Acid Signature Analysis in R
+Version: 1.0.0
+Authors@R: person("Jeffrey F.", "Bromaghin",
+                  email = "jbromaghin@usgs.gov",
+                  role = c("aut", "cre"))
+Description: An implementation of Quantitative Fatty Acid Signature
+    Analysis (QFASA) in R.  QFASA is a method of estimating the diet
+    composition of predators.  The fundamental unit of information in
+    QFASA is a fatty acid signature (signature), which is a vector of
+    proportions describing the composition of fatty acids within lipids.
+    Signature data from at least one predator and from samples of all
+    potential prey types are required.  Calibration coefficients, which
+    adjust for the differential metabolism of individual fatty acids by
+    predators, are also required. Given those data inputs, a predator
+    signature is modeled as a mixture of prey signatures and its diet
+    estimate is obtained as the mixture that minimizes a measure of
+    distance between the observed and modeled signatures.  A variety of
+    estimation options and simulation capabilities are implemented.
+    Please refer to the vignette for additional details and references.
+License: CC0
+LazyData: TRUE
+Imports: Rsolnp (>= 1.16)
+RoxygenNote: 5.0.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Packaged: 2016-08-24 21:42:58 UTC; jbromaghin
+Date: 2016-07-26
+NeedsCompilation: no
+Author: Jeffrey F. Bromaghin [aut, cre]
+Maintainer: Jeffrey F. Bromaghin <jbromaghin@usgs.gov>
+Repository: CRAN
+Date/Publication: 2016-08-25 10:00:58

@@ -1,0 +1,23 @@
+Package: curl
+Type: Package
+Title: A Connection Interface to Libcurl
+Version: 0.5
+Date: 2015-02-01
+Author: Jeroen Ooms
+Maintainer: Jeroen Ooms <jeroen.ooms@stat.ucla.edu>
+Description: The curl() function provides a drop-in replacement for base url()
+    with better performance and support for http 2.0, ssl (https://, ftps://),
+    gzip, deflate and other libcurl goodies. This interface is implemented
+    using the RConnection API in order to support incremental processing of
+    both binary and text streams. If you are looking for a more-user-friendly
+    http client, try the RCurl or httr packages instead.
+License: MIT + file LICENSE
+SystemRequirements: libcurl: libcurl-devel (rpm) or
+        libcurl4-openssl-dev (deb).
+URL: https://github.com/jeroenooms/curl,
+        https://www.opencpu.org/posts/curl-release-0-2/
+BugReports: https://github.com/jeroenooms/curl/issues
+Packaged: 2015-02-01 06:49:45 UTC; ooms
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2015-02-01 09:05:01

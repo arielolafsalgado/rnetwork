@@ -1,0 +1,31 @@
+Package: dissever
+Type: Package
+Title: Spatial Downscaling using the Dissever Algorithm
+Version: 0.2-1
+Date: 2017-12-07
+Authors@R: c(
+    person("Pierre", "Roudier", email = "roudierp@landcareresearch.co.nz", role = c("cre", "aut")),
+    person("Brendan", "Malone", email = "brendan.malone@sydney.edu.au", role = "ctb")
+    )
+Description: Spatial downscaling of coarse grid mapping to fine grid
+    mapping using predictive covariates and a model fitted using the 'caret'
+    package. The original dissever algorithm was published by Malone et al. 
+    (2012) <doi:10.1016/j.cageo.2011.08.021>, and extended by Roudier et al.
+    (2017) <doi:10.1016/j.compag.2017.08.021>.
+URL: https://github.com/pierreroudier/dissever
+BugReports: https://github.com/pierreroudier/dissever/issues
+License: GPL-2
+LazyData: TRUE
+Imports: methods, caret, sp, raster, plyr, dplyr, foreach, boot,
+        magrittr, viridis
+Suggests: knitr, rmarkdown
+Collate: 'dissever-package.R' 'dissever.R'
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-12-07 20:29:51 UTC; pierre
+Author: Pierre Roudier [cre, aut],
+  Brendan Malone [ctb]
+Maintainer: Pierre Roudier <roudierp@landcareresearch.co.nz>
+Repository: CRAN
+Date/Publication: 2017-12-08 09:56:40 UTC

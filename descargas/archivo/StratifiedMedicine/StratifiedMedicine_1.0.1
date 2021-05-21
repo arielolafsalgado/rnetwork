@@ -1,0 +1,30 @@
+Package: StratifiedMedicine
+Type: Package
+Title: Stratified Medicine
+Version: 1.0.1
+Author: Thomas Jemielita [aut, cre]
+Maintainer: Thomas Jemielita <thomasjemielita@gmail.com>
+Description: A toolkit for stratified medicine, subgroup identification, and precision medicine.
+    Current tools include (1) filtering models (reduce covariate space), (2) patient-level estimate
+    models (counterfactual patient-level quantities, for example the individual treatment effect), 
+    (3) subgroup identification models (find subsets of patients with similar treatment effects), 
+    and (4) parameter estimation and inference (for the overall population and discovered subgroups).
+    These tools can directly feed into stratified medicine algorithms including PRISM 
+    (patient response identifiers for stratified medicine; Jemielita and Mehrotra 2019
+    <arXiv:1912.03337>. PRISM is a flexible and general framework which accepts 
+    user-created models/functions. This package is in beta and will be continually updated.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true4
+Depends: R (>= 3.4),
+Imports: dplyr, partykit, ranger, survival, glmnet, ggplot2, ggparty,
+        mvtnorm
+RoxygenNote: 7.1.0
+URL: https://github.com/thomasjemielita/StratifiedMedicine
+Suggests: knitr, rmarkdown, MASS, BART, survRM2, TH.data, coin, rpart,
+        testthat (>= 2.1.0)
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-06-17 19:55:13 UTC; thoma
+Repository: CRAN
+Date/Publication: 2020-06-17 21:20:02 UTC

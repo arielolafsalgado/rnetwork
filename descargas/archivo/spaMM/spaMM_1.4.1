@@ -1,0 +1,25 @@
+Package: spaMM
+Type: Package
+Title: Mixed Models, Particularly Spatial GLMMs
+Encoding: UTF-8
+Version: 1.4.1
+Date: 2014-11-08
+Authors@R: c(person("François", "Rousset", role = c("aut", "cre", "cph"),
+                     email = "francois.rousset@univ-montp2.fr"),
+              person("Jean-Baptiste", "Ferdy", role = c("aut","cph")))
+Maintainer: François Rousset <francois.rousset@univ-montp2.fr>
+Imports: stats, graphics, Matrix, MASS, lpSolveAPI (>= 5.5.0.14),
+        proxy, geometry, Rcpp (>= 0.11.0), nlme
+LinkingTo: Rcpp, RcppEigen
+Suggests: maps, testthat, lme4
+Depends: R (>= 3.0.0)
+NeedsCompilation: yes
+Description: Implements a collection of functions for inference in mixed models. It was developed in particular for GLMMs with spatial correlations, but also fits models with non-Gaussian random effects (e.g., Beta Binomial, or negative-binomial mixed models). Heteroskedasticity can further be fitted by a linear model. The algorithms are currently various Laplace approximations methods for ML or REML, in particular h-likelihood and penalized-likelihood methods.  
+License: CeCILL-2
+URL: http://www.r-project.org,
+        http://kimura.univ-montp2.fr/~rousset/spaMM.htm
+Packaged: 2014-11-08 16:54:39 UTC; rousset
+Author: François Rousset [aut, cre, cph],
+  Jean-Baptiste Ferdy [aut, cph]
+Repository: CRAN
+Date/Publication: 2014-11-09 00:46:19

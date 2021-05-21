@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package dfped</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=dfped" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="dfped: Extrapolation and Bridging of Adult Information in Early Phase Dose-Finding Paediatrics Studies" />
+<meta name="og:description" content="A unified method for designing and analysing dose-finding trials in paediatrics, while bridging information from adults, is proposed in the 'dfped' package. The dose range can be calculated under three extrapolation methods: linear, allometry and maturation adjustment, using pharmacokinetic (PK) data. To do this, it is assumed that target exposures are the same in both populations. The working model and prior distribution parameters of the dose-toxicity and dose-efficacy relationships can be obtained using early phase adult toxicity and efficacy data at several dose levels through 'dfped' package. Priors are used into the dose finding process through a Bayesian model selection or adaptive priors, to facilitate adjusting the amount of prior information to differences between adults and children. This calibrates the model to adjust for misspecification if the adult and paediatric data are very different. User can use his/her own Bayesian model written in Stan code through the 'dfped' package. A template of this model is proposed in the examples of the corresponding R functions in the package. Finally, in this package you can find a simulation function for one trial or for more than one trial. These methods are proposed by Petit et al, (2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.1177%2F0962280216671348&quot;&gt;doi:10.1177/0962280216671348&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=dfped" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>dfped: Extrapolation and Bridging of Adult Information in Early Phase
+Dose-Finding Paediatrics Studies</h2>
+<p>A unified method for designing and analysing dose-finding trials in paediatrics, while bridging information from adults, is proposed in the 'dfped' package. The dose range can be calculated under three extrapolation methods: linear, allometry and maturation adjustment, using pharmacokinetic (PK) data. To do this, it is assumed that target exposures are the same in both populations. The working model and prior distribution parameters of the dose-toxicity and dose-efficacy relationships can be obtained using early phase adult toxicity and efficacy data at several dose levels through 'dfped' package. Priors are used into the dose finding process through a Bayesian model selection or adaptive priors, to facilitate adjusting the amount of prior information to differences between adults and children. This calibrates the model to adjust for misspecification if the adult and paediatric data are very different. User can use his/her own Bayesian model written in Stan code through the 'dfped' package. A template of this model is proposed in the examples of the corresponding R functions in the package. Finally, in this package you can find a simulation function for one trial or for more than one trial. These methods are proposed by Petit et al, (2016) &lt;<a href="https://doi.org/10.1177%2F0962280216671348">doi:10.1177/0962280216671348</a>&gt;.</p>
+<table summary="Package dfped summary">
+<tr>
+<td>Version:</td>
+<td>1.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0.2), <a href="../rstan/index.html">rstan</a> (&ge; 2.8.1), stats4</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../ggplot2/index.html">ggplot2</a> (&ge; 2.0.0), methods, stats, graphics, grDevices</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2018-03-27</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Artemis Toumazi, Caroline Petit, Sarah Zohar</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Artemis Toumazi  &#x3c;&#x61;&#x72;&#x74;&#x65;&#x6d;&#x69;&#x73;&#x2e;&#x74;&#x6f;&#x75;&#x6d;&#x61;&#x7a;&#x69;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="http://github.com/artemis-toumazi/dfped/issues">http://github.com/artemis-toumazi/dfped/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL (&ge; 3)</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://github.com/artemis-toumazi/dfped">http://github.com/artemis-toumazi/dfped</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>C++11</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="README.html">README</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/ClinicalTrials.html">ClinicalTrials</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_dfped.html">dfped results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package dfped downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="dfped.pdf"> dfped.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/dfped_1.1.tar.gz"> dfped_1.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/dfped_1.1.zip">dfped_1.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/dfped_1.1.zip">dfped_1.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/dfped_1.1.zip">dfped_1.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/dfped_1.1.tgz">dfped_1.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/dfped_1.1.tgz">dfped_1.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/dfped"> dfped archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=dfped"><samp>https://CRAN.R-project.org/package=dfped</samp></a>
+to link to this page.</p>
+</body>
+</html>

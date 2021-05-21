@@ -1,0 +1,30 @@
+Package: bestNormalize
+Type: Package
+Title: Normalizing Transformation Functions
+Version: 0.2.2
+Date: 2017-11-13
+Authors@R: person("Ryan Andrew", "Peterson", 
+                  email = "ryan-peterson@uiowa.edu", 
+                  role = c("aut", "cre"))
+Description: Estimate a suite of normalizing transformations, including 
+    a new technique based on ranks which can guarantee normally distributed 
+    transformed data if there are no ties: Ordered Quantile Normalization. 
+    The package is built to estimate the best normalizing transformation for
+    a vector consistently and accurately. It implements the Box-Cox 
+    transformation, the Yeo-Johnson transformation, three types of Lambert
+    WxF transformations, and the Ordered Quantile normalization 
+    transformation.
+URL: https://github.com/petersonR/bestNormalize
+License: GPL-3
+Depends: R (>= 3.1.0)
+Imports: LambertW, nortest
+Suggests: knitr, MASS, testthat, mgcv
+VignetteBuilder: knitr
+LazyData: true
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-11-14 16:19:48 UTC; rpterson
+Author: Ryan Andrew Peterson [aut, cre]
+Maintainer: Ryan Andrew Peterson <ryan-peterson@uiowa.edu>
+Repository: CRAN
+Date/Publication: 2017-11-14 16:26:23 UTC

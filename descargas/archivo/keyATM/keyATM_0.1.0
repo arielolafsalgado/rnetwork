@@ -1,0 +1,29 @@
+Package: keyATM
+Version: 0.1.0
+Title: Keyword Assisted Topic Model
+Description: Fits keyword assisted topic models (keyATM) using collapsed Gibbs samplers. The keyATM combines the latent dirichlet allocation (LDA) models with a small number of keywords selected by researchers in order to improve the interpretability and topic classification of the LDA. The keyATM can also incorporate covariates and directly model time trends. The keyATM is proposed in Eshima, Imai, and Sasaki (2020) <arXiv:2004.05964>.
+Authors@R: c(person("Shusei", "Eshima", email = "shuseieshima@g.harvard.edu", role = c("aut","cre")),
+    person("Tomoya", "Sasaki", email = "tomoyas@mit.edu", role = c("aut")),
+    person("William", "Lowe", email = "wlowe@princeton.edu", role = c("ctb")),
+    person("Kosuke", "Imai", email = "imai@harvard.edu", role = c("aut")))
+License: GPL-3
+Depends: R (>= 3.5)
+Imports: Rcpp, dplyr, fastmap, ggplot2, ggrepel, magrittr, Matrix,
+        parallel, purrr, quanteda, rlang, stats, stringr, tibble, tidyr
+LinkingTo: Rcpp, RcppEigen, RcppProgress
+Suggests: readtext
+URL: https://keyatm.github.io/keyATM/
+Encoding: UTF-8
+BugReports: https://github.com/keyATM/keyATM/issues
+LazyData: TRUE
+RoxygenNote: 7.1.0
+SystemRequirements: C++11
+NeedsCompilation: yes
+Packaged: 2020-04-14 02:49:16 UTC; shusei
+Author: Shusei Eshima [aut, cre],
+  Tomoya Sasaki [aut],
+  William Lowe [ctb],
+  Kosuke Imai [aut]
+Maintainer: Shusei Eshima <shuseieshima@g.harvard.edu>
+Repository: CRAN
+Date/Publication: 2020-04-15 12:50:06 UTC

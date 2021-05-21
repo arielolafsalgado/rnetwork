@@ -1,0 +1,26 @@
+Package: walker
+Type: Package
+Title: Efficient Bayesian Linear Regression with Time-Varying
+        Coefficients
+Version: 0.1.0
+Date: 2017-06-15
+Author: Jouni Helske
+Maintainer: Jouni Helske <jouni.helske@iki.fi>
+Description: Fully Bayesian linear regression where the regression 
+    coefficients are allowed to vary over "time", either as independent random 
+    walks. All computations are done using Hamiltonian Monte Carlo provided by 
+    Stan, using a state space representation of the model in order to marginalise 
+    over the coefficients for efficient sampling.
+License: GPL (>= 2)
+Suggests: knitr (>= 1.11), rmarkdown (>= 0.8.1), testthat
+Depends: R (>= 3.0.2), rstan (>= 2.14.1)
+Imports: Rcpp (>= 0.12.9), methods
+LinkingTo: StanHeaders (>= 2.14.0.1), rstan (>= 2.14.1), BH (>=
+        1.62.0.1), Rcpp (>= 0.12.9), RcppEigen (>= 0.3.2.9.0)
+VignetteBuilder: knitr
+SystemRequirements: C++11
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2017-06-15 14:11:29 UTC; jouni
+Repository: CRAN
+Date/Publication: 2017-06-15 15:18:48 UTC

@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package medrxivr</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Access and Search MedRxiv and BioRxiv Preprint Data [R package medrxivr version 0.0.3]" />
+<meta name="citation_author1" content="Luke McGuinness" />
+<meta name="citation_author2" content="Lena Schmidt" />
+<meta name="citation_publication_date" content="2020-09-28" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=medrxivr" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=medrxivr" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="medrxivr: Access and Search MedRxiv and BioRxiv Preprint Data" />
+<meta name="og:description" content="An increasingly important source of health-related bibliographic content are preprints - preliminary versions of research articles that have yet to undergo peer review. The two preprint repositories most relevant to health-related sciences are medRxiv &amp;lt;&lt;a href=&quot;https://www.medrxiv.org/&quot;&gt;https://www.medrxiv.org/&lt;/a&gt;&amp;gt; and bioRxiv &amp;lt;&lt;a href=&quot;https://www.biorxiv.org/&quot;&gt;https://www.biorxiv.org/&lt;/a&gt;&amp;gt;, both of which are operated by the Cold Spring Harbor Laboratory. 'medrxivr' provides programmatic access to the 'Cold Spring Harbour Laboratory (CSHL)' API &amp;lt;&lt;a href=&quot;https://api.biorxiv.org/&quot;&gt;https://api.biorxiv.org/&lt;/a&gt;&amp;gt;, allowing users to easily download medRxiv and bioRxiv preprint metadata (e.g. title, abstract, publication date, author list, etc) into R. 'medrxivr' also provides functions to search the downloaded preprint records using regular expressions and Boolean logic, as well as helper functions that allow users to export their search results to a .BIB file for easy import to a reference manager and to download the full-text PDFs of preprints matching their search criteria." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=medrxivr" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>medrxivr: Access and Search MedRxiv and BioRxiv Preprint Data</h2>
+<p>An increasingly important source of health-related bibliographic 
+    content are preprints - preliminary versions of research articles that have
+    yet to undergo peer review. The two preprint repositories most relevant to 
+    health-related sciences are medRxiv &lt;<a href="https://www.medrxiv.org/">https://www.medrxiv.org/</a>&gt; and
+    bioRxiv &lt;<a href="https://www.biorxiv.org/">https://www.biorxiv.org/</a>&gt;, both of which are operated by the Cold 
+    Spring Harbor Laboratory. 'medrxivr' provides programmatic access to the 
+    'Cold Spring Harbour Laboratory (CSHL)' API &lt;<a href="https://api.biorxiv.org/">https://api.biorxiv.org/</a>&gt;,
+    allowing users to easily download medRxiv and bioRxiv preprint metadata
+    (e.g. title, abstract, publication date, author list, etc) into R. 
+    'medrxivr' also provides functions to search the downloaded preprint records 
+    using regular expressions and Boolean logic, as well as helper functions 
+    that allow users to export their search results to a .BIB file for easy 
+    import to a reference manager and to download the full-text PDFs of 
+    preprints matching their search criteria.</p>
+<table summary="Package medrxivr summary">
+<tr>
+<td>Version:</td>
+<td>0.0.3</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>methods, <a href="../dplyr/index.html">dplyr</a>, <a href="../curl/index.html">curl</a>, <a href="../jsonlite/index.html">jsonlite</a>, <a href="../httr/index.html">httr</a>, <a href="../stringr/index.html">stringr</a>, <a href="../rlang/index.html">rlang</a>, <a href="../vroom/index.html">vroom</a>, <a href="../bib2df/index.html">bib2df</a>, <a href="../tibble/index.html">tibble</a>, <a href="../progress/index.html">progress</a>, <a href="../lubridate/index.html">lubridate</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a> (&ge; 2.1.0), <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../covr/index.html">covr</a>, <a href="../kableExtra/index.html">kableExtra</a>, <a href="../spelling/index.html">spelling</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-28</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Luke McGuinness <a href="https://orcid.org/0000-0001-8730-9761"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Lena Schmidt <a href="https://orcid.org/0000-0003-0709-8226"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Tuija Sonkkila [rev],
+  Najko Jahn [rev]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Luke McGuinness  &#x3c;&#x6c;&#x75;&#x6b;&#x65;&#x2e;&#x6d;&#x63;&#x67;&#x75;&#x69;&#x6e;&#x6e;&#x65;&#x73;&#x73;&#x20;&#x61;&#x74;&#x20;&#x62;&#x72;&#x69;&#x73;&#x74;&#x6f;&#x6c;&#x2e;&#x61;&#x63;&#x2e;&#x75;&#x6b;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ropensci/medrxivr/issues">https://github.com/ropensci/medrxivr/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/ropensci/medrxivr">https://github.com/ropensci/medrxivr</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">medrxivr citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_medrxivr.html">medrxivr results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package medrxivr downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="medrxivr.pdf"> medrxivr.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/medrxivr.html">medrxivr</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/medrxivr_0.0.3.tar.gz"> medrxivr_0.0.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/medrxivr_0.0.3.zip">medrxivr_0.0.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/medrxivr_0.0.3.zip">medrxivr_0.0.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/medrxivr_0.0.3.zip">medrxivr_0.0.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/medrxivr_0.0.3.tgz">medrxivr_0.0.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/medrxivr_0.0.3.tgz">medrxivr_0.0.3.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=medrxivr"><samp>https://CRAN.R-project.org/package=medrxivr</samp></a>
+to link to this page.</p>
+</body>
+</html>

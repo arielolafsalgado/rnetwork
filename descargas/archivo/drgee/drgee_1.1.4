@@ -1,0 +1,24 @@
+Package: drgee
+Type: Package
+Title: Doubly Robust Generalized Estimating Equations
+Version: 1.1.4
+Date: 2016-01-13
+Author: Johan Zetterqvist <johan.zetterqvist@ki.se> , Arvid Sjölander <arvid.sjolander@ki.se> with contributions from Alexander Ploner.
+Maintainer: Johan Zetterqvist <johan.zetterqvist@ki.se>
+Description: Fit restricted mean models for the conditional association
+  between an exposure and an outcome, given covariates. Three methods
+  are implemented: O-estimation, where a nuisance model for the
+  association between the covariates and the outcome is used;
+  E-estimation where a nuisance model for the association
+  between the covariates and the exposure is used, and doubly robust (DR)
+  estimation where both nuisance models are used. In DR-estimation,
+  the estimates will be consistent when at least one of the nuisance
+  models is correctly specified, not necessarily both.
+Depends: stats, nleqslv, survival, R (>= 3.0.0), Rcpp, data.table
+LinkingTo: Rcpp, RcppArmadillo
+License: GPL-2 | GPL-3
+NeedsCompilation: yes
+Encoding: UTF-8
+Packaged: 2016-01-13 15:49:44 UTC; johanzetterqvist
+Repository: CRAN
+Date/Publication: 2016-01-13 17:26:04

@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package ivmte</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Instrumental Variables: Extrapolation by Marginal Treatment Effects [R package ivmte version 1.2.0]" />
+<meta name="citation_author1" content="Alexander Torgovitsky" />
+<meta name="citation_author2" content="Joshua Shea" />
+<meta name="citation_publication_date" content="2020-04-18" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=ivmte" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=ivmte" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="ivmte: Instrumental Variables: Extrapolation by Marginal Treatment Effects" />
+<meta name="og:description" content="The marginal treatment effect was introduced by Heckman and Vytlacil (2005) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fj.1468-0262.2005.00594.x&quot;&gt;doi:10.1111/j.1468-0262.2005.00594.x&lt;/a&gt;&amp;gt; to provide a choice-theoretic interpretation to instrumental variables models that maintain the monotonicity condition of Imbens and Angrist (1994) &amp;lt;&lt;a href=&quot;https://doi.org/10.2307%2F2951620&quot;&gt;doi:10.2307/2951620&lt;/a&gt;&amp;gt;. This interpretation can be used to extrapolate from the compliers to estimate treatment effects for other subpopulations. This package provides a flexible set of methods for conducting this extrapolation. It allows for parametric or nonparametric sieve estimation, and allows the user to maintain shape restrictions such as monotonicity. The package operates in the general framework developed by Mogstad, Santos and Torgovitsky (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.3982%2FECTA15463&quot;&gt;doi:10.3982/ECTA15463&lt;/a&gt;&amp;gt;, and accommodates either point identification or partial identification (bounds). In the partially identified case, bounds are computed using linear programming. Support for three linear programming solvers is provided. Gurobi and the Gurobi R API can be obtained from &amp;lt;&lt;a href=&quot;http://www.gurobi.com/index&quot;&gt;http://www.gurobi.com/index&lt;/a&gt;&amp;gt;. CPLEX can be obtained from &amp;lt;&lt;a href=&quot;https://www.ibm.com/analytics/cplex-optimizer&quot;&gt;https://www.ibm.com/analytics/cplex-optimizer&lt;/a&gt;&amp;gt;. CPLEX R APIs 'Rcplex' and 'cplexAPI' are available from CRAN. The lp_solve library is freely available from &amp;lt;&lt;a href=&quot;http://lpsolve.sourceforge.net/5.5/&quot;&gt;http://lpsolve.sourceforge.net/5.5/&lt;/a&gt;&amp;gt;, and is included when installing its API 'lpSolveAPI', which is available from CRAN." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=ivmte" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>ivmte: Instrumental Variables: Extrapolation by Marginal Treatment
+Effects</h2>
+<p>The marginal treatment effect was introduced by Heckman and
+    Vytlacil (2005) &lt;<a href="https://doi.org/10.1111%2Fj.1468-0262.2005.00594.x">doi:10.1111/j.1468-0262.2005.00594.x</a>&gt; to provide a
+    choice-theoretic interpretation to instrumental variables models that
+    maintain the monotonicity condition of Imbens and Angrist (1994)
+    &lt;<a href="https://doi.org/10.2307%2F2951620">doi:10.2307/2951620</a>&gt;. This interpretation can be used to extrapolate from
+    the compliers to estimate treatment effects for other subpopulations. This
+    package provides a flexible set of methods for conducting this
+    extrapolation. It allows for parametric or nonparametric sieve estimation,
+    and allows the user to maintain shape restrictions such as monotonicity. The
+    package operates in the general framework developed by Mogstad, Santos and
+    Torgovitsky (2018) &lt;<a href="https://doi.org/10.3982%2FECTA15463">doi:10.3982/ECTA15463</a>&gt;, and accommodates either point
+    identification or partial identification (bounds). In the partially
+    identified case, bounds are computed using linear programming. Support for
+    three linear programming solvers is provided. Gurobi and the Gurobi R API
+    can be obtained from &lt;<a href="http://www.gurobi.com/index">http://www.gurobi.com/index</a>&gt;. CPLEX can be obtained
+    from &lt;<a href="https://www.ibm.com/analytics/cplex-optimizer">https://www.ibm.com/analytics/cplex-optimizer</a>&gt;. CPLEX R APIs 'Rcplex'
+    and 'cplexAPI' are available from CRAN. The lp_solve library is freely
+    available from &lt;<a href="http://lpsolve.sourceforge.net/5.5/">http://lpsolve.sourceforge.net/5.5/</a>&gt;, and is included when
+    installing its API 'lpSolveAPI', which is
+    available from CRAN.</p>
+<table summary="Package ivmte summary">
+<tr>
+<td>Version:</td>
+<td>1.2.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.6.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Formula/index.html">Formula</a>, methods, stats, utils</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td>gurobi (&ge; 8.1-0), <a href="../slam/index.html">slam</a> (&ge; 0.1-42), <a href="../cplexAPI/index.html">cplexAPI</a> (&ge; 1.3.3), <a href="../lpSolveAPI/index.html">lpSolveAPI</a> (&ge; 5.5.2.0-17), <a href="../testthat/index.html">testthat</a> (&ge; 2.0.0), <a href="../data.table/index.html">data.table</a> (&ge;
+1.12.0), <a href="../splines2/index.html">splines2</a> (&ge; 0.2.8), <a href="../Matrix/index.html">Matrix</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../pander/index.html">pander</a>, <a href="../AER/index.html">AER</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../gridExtra/index.html">gridExtra</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-04-18</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Alexander Torgovitsky [aut],
+  Joshua Shea [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Joshua Shea  &#x3c;&#x6a;&#x6b;&#x63;&#x73;&#x68;&#x65;&#x61;&#x20;&#x61;&#x74;&#x20;&#x75;&#x63;&#x68;&#x69;&#x63;&#x61;&#x67;&#x6f;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_ivmte.html">ivmte results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package ivmte downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="ivmte.pdf"> ivmte.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/ivmte.html">ivmte</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/ivmte_1.2.0.tar.gz"> ivmte_1.2.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/ivmte_1.2.0.zip">ivmte_1.2.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/ivmte_1.2.0.zip">ivmte_1.2.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/ivmte_1.2.0.zip">ivmte_1.2.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/ivmte_1.2.0.tgz">ivmte_1.2.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/ivmte_1.2.0.tgz">ivmte_1.2.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/ivmte"> ivmte archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=ivmte"><samp>https://CRAN.R-project.org/package=ivmte</samp></a>
+to link to this page.</p>
+</body>
+</html>

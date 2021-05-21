@@ -1,0 +1,48 @@
+Package: dynutils
+Type: Package
+Title: Common Functionality for the 'dynverse' Packages
+Version: 1.0.1
+Authors@R: c(
+    person(
+      "Robrecht", 
+      "Cannoodt", 
+      email = "rcannood@gmail.com", 
+      role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0003-3641-729X", github = "rcannood")
+    ),
+    person(
+      "Wouter", 
+      "Saelens", 
+      email = "wouter.saelens@ugent.be", 
+      role = c("aut"), 
+      comment = c(ORCID = "0000-0002-7114-6248", github = "zouter")
+    )
+  )
+Description: 
+  Provides common functionality for the 'dynverse' packages. 
+  'dynverse' is created to support the development, execution, and benchmarking of trajectory inference methods.
+  For more information, check out <dynverse.org>.
+License: GPL-3
+URL: http://github.com/dynverse/dynutils
+BugReports: https://github.com/dynverse/dynutils/issues
+LazyData: TRUE
+RoxygenNote: 6.1.0
+Depends: R (>= 3.0.0)
+Imports: assertthat, crayon, devtools, desc, dplyr, glue, magrittr,
+        methods, purrr, Rcpp, stringr, testthat, tibble, tidyr
+Suggests: ggplot2, knitr, readr, rmarkdown
+LinkingTo: Rcpp
+VignetteBuilder: knitr
+Collate: 'RcppExports.R' 'add_class.R' 'assertions.R'
+        'inherit_default_params.R' 'calculate_distance.R'
+        'check_packages.R' 'expand_matrix.R' 'extend_with.R'
+        'install_packages.R' 'mapdf.R' 'package.R' 'pritt.R'
+        'random_time_string.R' 'safe_tempdir.R' 'scaling.R' 'tibble.R'
+NeedsCompilation: yes
+Packaged: 2019-02-04 13:48:40 UTC; rcannood
+Author: Robrecht Cannoodt [aut, cre] (<https://orcid.org/0000-0003-3641-729X>,
+    rcannood),
+  Wouter Saelens [aut] (<https://orcid.org/0000-0002-7114-6248>, zouter)
+Maintainer: Robrecht Cannoodt <rcannood@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-02-04 14:33:21 UTC

@@ -1,0 +1,22 @@
+Package: purge
+Type: Package
+Title: Purge Training Data from Models
+Version: 0.1.0
+Date: 2015-09-01
+Authors@R: c(
+    person("Marc", "Maier", email="mmaier@massmutual.com", role="cre"),
+    person("Chaoqun", "Jia", email="cjia@massmutual.com", role="ctb"),
+    person("MassMutual Advanced Analytics", comment="http://datascience.massmutual.com", role="aut"))
+Maintainer: Marc Maier <mmaier@massmutual.com>
+Description: Enables the removal of training data from fitted R models while retaining predict functionality. The purged models are more portable as their memory footprints do not scale with the training sample size.
+License: MIT + file LICENSE
+LazyData: TRUE
+Imports: lme4 (>= 1.1-8), rpart, randomForest, methods
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2015-09-02 00:32:25 UTC; mm90357
+Author: Marc Maier [cre],
+  Chaoqun Jia [ctb],
+  MassMutual Advanced Analytics [aut] (http://datascience.massmutual.com)
+Repository: CRAN
+Date/Publication: 2015-09-02 15:52:22

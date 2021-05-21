@@ -1,0 +1,28 @@
+Package: fuzzyjoin
+Type: Package
+Title: Join Tables Together on Inexact Matching
+Version: 0.1.4
+Date: 2018-03-01
+Authors@R: c(person("David", "Robinson", email = "admiral.david@gmail.com",
+    role = c("aut", "cre")),
+          person("Joran", "Elias", email = "statisticalskier@gmail.com",
+          role = "ctb"))
+Maintainer: David Robinson <admiral.david@gmail.com>
+Description: Join tables together based not on whether columns
+  match exactly, but whether they are similar by some comparison.
+  Implementations include string distance and regular expression
+  matching.
+License: MIT + file LICENSE
+LazyData: TRUE
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+Imports: stringdist, stringr, dplyr, tidyr (>= 0.4.0), purrr, geosphere
+Suggests: testthat, knitr, ggplot2, qdapDictionaries, readr, rvest,
+        rmarkdown, maps, IRanges, covr
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-03-01 23:33:53 UTC; drobinson
+Author: David Robinson [aut, cre],
+  Joran Elias [ctb]
+Repository: CRAN
+Date/Publication: 2018-03-02 09:10:25 UTC

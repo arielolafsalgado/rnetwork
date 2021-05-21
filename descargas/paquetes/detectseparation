@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package detectseparation</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Detect and Check for Separation and Infinite Maximum Likelihood Estimates [R package detectseparation version 0.1]" />
+<meta name="citation_author1" content="Ioannis Kosmidis" />
+<meta name="citation_author2" content="Dirk Schumacher" />
+<meta name="citation_publication_date" content="2020-03-25" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=detectseparation" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=detectseparation" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="detectseparation: Detect and Check for Separation and Infinite Maximum Likelihood Estimates" />
+<meta name="og:description" content="Provides pre-fit and post-fit methods for detecting separation and infinite maximum likelihood estimates in generalized linear models with categorical responses. The pre-fit methods apply on binomial-response generalized liner models such as logit, probit and cloglog regression, and can be directly supplied as fitting methods to the glm() function. They solve the linear programming problems for the detection of separation developed in Konis (2007, &amp;lt;&lt;a href=&quot;https://ora.ox.ac.uk/objects/uuid:8f9ee0d0-d78e-4101-9ab4-f9cbceed2a2a&quot;&gt;https://ora.ox.ac.uk/objects/uuid:8f9ee0d0-d78e-4101-9ab4-f9cbceed2a2a&lt;/a&gt;&amp;gt;) using 'ROI' &amp;lt;&lt;a href=&quot;https://cran.r-project.org/package=ROI&quot;&gt;https://cran.r-project.org/package=ROI&lt;/a&gt;&amp;gt; or 'lpSolveAPI' &amp;lt;&lt;a href=&quot;https://cran.r-project.org/package=lpSolveAPI&quot;&gt;https://cran.r-project.org/package=lpSolveAPI&lt;/a&gt;&amp;gt;. The post-fit methods apply to models with categorical responses, including binomial-response generalized linear models and multinomial-response models, such as baseline category logits and adjacent category logits models; for example, the models implemented in the 'brglm2' &amp;lt;&lt;a href=&quot;https://cran.r-project.org/package=brglm2&quot;&gt;https://cran.r-project.org/package=brglm2&lt;/a&gt;&amp;gt; package. The post-fit methods successively refit the model with increasing number of iteratively reweighted least squares iterations, and monitor the ratio of the estimated standard error for each parameter to what it has been in the first iteration. According to the results in Lesaffre &amp;amp; Albert (1989, &amp;lt;&lt;a href=&quot;https://www.jstor.org/stable/2345845&quot;&gt;https://www.jstor.org/stable/2345845&lt;/a&gt;&amp;gt;), divergence of those ratios indicates data separation." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=detectseparation" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>detectseparation: Detect and Check for Separation and Infinite Maximum Likelihood
+Estimates</h2>
+<p>Provides pre-fit and post-fit methods for detecting separation and infinite maximum likelihood estimates in generalized linear models with categorical responses. The pre-fit methods apply on binomial-response generalized liner models such as logit, probit and cloglog regression, and can be directly supplied as fitting methods to the glm() function. They solve the linear programming problems for the detection of separation developed in Konis (2007, &lt;<a href="https://ora.ox.ac.uk/objects/uuid:8f9ee0d0-d78e-4101-9ab4-f9cbceed2a2a">https://ora.ox.ac.uk/objects/uuid:8f9ee0d0-d78e-4101-9ab4-f9cbceed2a2a</a>&gt;) using 'ROI' &lt;<a href="https://cran.r-project.org/package=ROI">https://cran.r-project.org/package=ROI</a>&gt; or 'lpSolveAPI' &lt;<a href="https://cran.r-project.org/package=lpSolveAPI">https://cran.r-project.org/package=lpSolveAPI</a>&gt;. The post-fit methods apply to models with categorical responses, including binomial-response generalized linear models and multinomial-response models, such as baseline category logits and adjacent category logits models; for example, the models implemented in the 'brglm2' &lt;<a href="https://cran.r-project.org/package=brglm2">https://cran.r-project.org/package=brglm2</a>&gt; package. The post-fit methods successively refit the model with increasing number of iteratively reweighted least squares iterations, and monitor the ratio of the estimated standard error for each parameter to what it has been in the first iteration. According to the results in Lesaffre &amp; Albert (1989, &lt;<a href="https://www.jstor.org/stable/2345845">https://www.jstor.org/stable/2345845</a>&gt;), divergence of those ratios indicates data separation.</p>
+<table summary="Package detectseparation summary">
+<tr>
+<td>Version:</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../ROI/index.html">ROI</a>, <a href="../ROI.plugin.lpsolve/index.html">ROI.plugin.lpsolve</a>, <a href="../lpSolveAPI/index.html">lpSolveAPI</a>, <a href="../pkgload/index.html">pkgload</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../covr/index.html">covr</a>, <a href="../brglm2/index.html">brglm2</a>, <a href="../AER/index.html">AER</a>, <a href="../ROI.plugin.ecos/index.html">ROI.plugin.ecos</a>, <a href="../ROI.plugin.glpk/index.html">ROI.plugin.glpk</a>, <a href="../ROI.plugin.neos/index.html">ROI.plugin.neos</a>, <a href="../ROI.plugin.alabama/index.html">ROI.plugin.alabama</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-03-25</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Ioannis Kosmidis <a href="https://orcid.org/0000-0003-1556-0302"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Dirk Schumacher [aut],
+  Kjell Konis [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Ioannis Kosmidis  &#x3c;&#x69;&#x6f;&#x61;&#x6e;&#x6e;&#x69;&#x73;&#x2e;&#x6b;&#x6f;&#x73;&#x6d;&#x69;&#x64;&#x69;&#x73;&#x20;&#x61;&#x74;&#x20;&#x77;&#x61;&#x72;&#x77;&#x69;&#x63;&#x6b;&#x2e;&#x61;&#x63;&#x2e;&#x75;&#x6b;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ikosmidis/detectseparation/issues">https://github.com/ikosmidis/detectseparation/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/ikosmidis/detectseparation">https://github.com/ikosmidis/detectseparation</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_detectseparation.html">detectseparation results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package detectseparation downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="detectseparation.pdf"> detectseparation.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/separation.html">Detecting separation and infinite estimates in logistic regression</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/detectseparation_0.1.tar.gz"> detectseparation_0.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/detectseparation_0.1.zip">detectseparation_0.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/detectseparation_0.1.zip">detectseparation_0.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/detectseparation_0.1.zip">detectseparation_0.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/detectseparation_0.1.tgz">detectseparation_0.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/detectseparation_0.1.tgz">detectseparation_0.1.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=detectseparation"><samp>https://CRAN.R-project.org/package=detectseparation</samp></a>
+to link to this page.</p>
+</body>
+</html>

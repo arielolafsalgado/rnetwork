@@ -1,0 +1,33 @@
+Package: validate
+Maintainer: Mark van der Loo <mark.vanderloo@gmail.com>
+License: GPL-3
+Title: Data Validation Infrastructure
+LazyData: no
+Type: Package
+LazyLoad: yes
+Authors@R: c(person("Mark", "van der Loo",role=c("cre","aut"),email="mark.vanderloo@gmail.com")
+    , person("Edwin", "de Jonge", role="aut")
+    , person("Paul","Hsieh",role="ctb"))
+Description: Declare data validation rules and data quality indicators; confront
+    data with them and analyze or visualize the results. The package supports
+    rules that are per-field, in-record, cross-record or cross-dataset. Rules
+    can be automatically analyzed for rule type and connectivity.
+Version: 0.1.2
+Depends: R (>= 3.0.0)
+URL: https://github.com/data-cleaning/validate
+BugReports: https://github.com/data-cleaning/validate/issues
+Date: 2015-08-28
+Imports: methods, graphics, settings, yaml
+Suggests: testthat, knitr
+VignetteBuilder: knitr
+Collate: 'sugar.R' 'rule.R' 'validate_pkg.R' 'parse.R'
+        'expressionset.R' 'validator.R' 'indicator.R' 'confrontation.R'
+        'barplot.R' 'compare.R' 'factory.R' 'functions.R' 'retailers.R'
+        'utils.R' 'yaml.R'
+NeedsCompilation: yes
+Packaged: 2015-09-01 14:15:55 UTC; mark
+Author: Mark van der Loo [cre, aut],
+  Edwin de Jonge [aut],
+  Paul Hsieh [ctb]
+Repository: CRAN
+Date/Publication: 2015-09-01 18:15:12

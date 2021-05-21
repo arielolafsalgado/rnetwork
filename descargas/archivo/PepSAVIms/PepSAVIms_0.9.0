@@ -1,0 +1,32 @@
+Package: PepSAVIms
+Type: Package
+Title: PepSAVI-MS Data Analysis
+Version: 0.9.0
+Date: 2016-11-30
+Authors@R: c(
+    person("Pritchard", "David", email="dpritch@live.unc.edu", role=c("aut", "cre")),
+    person("Kirkpatrick", "Christine", email="ckirkpat@live.unc.edu", role="aut"))
+Description: An implementation of the data processing and data analysis portion
+    of a pipeline named the PepSAVI-MS which is currently under development by
+    the Hicks laboratory at the University of North Carolina.  The statistical
+    analysis package presented herein provides a collection of software tools
+    used to facilitate the prioritization of putative bioactive peptides from a
+    complex biological matrix.  Tools are provided to deconvolute mass
+    spectrometry features into a single representation for each peptide charge
+    state, filter compounds to include only those possibly contributing to the
+    observed bioactivity, and prioritize these remaining compounds for those
+    most likely contributing to each bioactivity data set.
+License: CC BY-NC-SA 4.0
+LazyData: TRUE
+Depends: R (>= 3.0.0)
+Suggests: testthat, knitr
+Imports: elasticnet
+VignetteBuilder: knitr
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-12-02 15:00:07 UTC; dpritch
+Author: Pritchard David [aut, cre],
+  Kirkpatrick Christine [aut]
+Maintainer: Pritchard David <dpritch@live.unc.edu>
+Repository: CRAN
+Date/Publication: 2016-12-03 01:34:44

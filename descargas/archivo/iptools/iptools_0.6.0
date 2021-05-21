@@ -1,0 +1,29 @@
+Package: iptools
+Type: Package
+Title: Manipulate, Validate and Resolve 'IP' Addresses
+Version: 0.6.0
+Date: 2018-08-24
+Author: Bob Rudis <bob@rud.is> [aut, cre],
+        Oliver Keyes <ironholds@gmail.com> [aut],
+        Tim Smith [ctb]
+Maintainer: Bob Rudis <bob@rud.is>
+Description: A toolkit for manipulating, validating and testing 'IP' addresses and
+    ranges, along with datasets relating to 'IP' addresses. Tools are also provided
+    to map 'IPv4' blocks to country codes. While it primarily has support for the 'IPv4'
+    address space, more extensive 'IPv6' support is intended.
+License: MIT + file LICENSE
+URL: https://github.com/hrbrmstr/iptools
+BugReports: https://github.com/hrbrmstr/iptools/issues
+NeedsCompilation: yes
+SystemRequirements: C++11
+Depends: R (>= 3.0.0)
+Suggests: testthat, knitr, rmarkdown
+Imports: Rcpp (>= 0.11.2), utils, stats, AsioHeaders, stringi,
+        triebeard
+Encoding: UTF-8
+LinkingTo: BH, Rcpp, AsioHeaders
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1.9000
+Packaged: 2018-09-16 21:15:04 UTC; hrbrmstr
+Repository: CRAN
+Date/Publication: 2018-09-24 23:40:02 UTC

@@ -1,0 +1,40 @@
+Package: VWPre
+Type: Package
+Title: Tools for Preprocessing Visual World Data
+Version: 0.9.0
+Date: 2016-09-28
+Authors@R: c(person("Vincent", "Porretta", role = c("aut", "cre"),
+		     email = "vincentporretta@gmail.com"),
+	      person("Aki-Juhani", "Kyröläinen", role = "aut"),
+	      person("Jacolien", "van Rij", role = "ctb"),
+		  person("Juhani", "Järvikivi", role = "ctb"))
+Author: Vincent Porretta [aut, cre],
+  Aki-Juhani Kyröläinen [aut],
+  Jacolien van Rij [ctb],
+  Juhani Järvikivi [ctb]
+Maintainer: Vincent Porretta <vincentporretta@gmail.com>
+Description: Gaze data from the Visual World Paradigm requires significant
+    preprocessing prior to plotting and analyzing the data. This package 
+    provides functions for preparing visual world eye-tracking data for 
+    statistical analysis and plotting. It can prepare data for linear 
+    analyses (e.g., ANOVA, Gaussian-family LMER, Gaussian-family GAMM) as
+    well as logistic analyses (e.g., binomial-family LMER and binomial-family GAMM).
+    Additionally, it contains various plotting functions for creating grand average and
+    conditional average plots. See the vignette for samples of the functionality.
+    Currently, the functions in this package are designed for handling data
+    collected with SR Research Eyelink eye trackers using Sample Reports created
+    in SR Research Data Viewer; however, in subsequent releases we would like 
+    to add functionality for data collected with other systems.
+Depends: R (>= 3.3.1), dplyr (>= 0.5.0), lazyeval (>= 0.2.0), ggplot2
+        (>= 2.1.0)
+Imports: mgcv (>= 1.8-15), shiny (>= 0.14), tidyr (>= 0.6.0)
+License: GPL (>= 2)
+LazyData: true
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-09-27 21:19:10 UTC; vjp
+Repository: CRAN
+Date/Publication: 2016-09-28 23:09:01

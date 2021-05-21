@@ -1,0 +1,30 @@
+Package: pedprobr
+Type: Package
+Title: Probability Computations on Pedigrees
+Version: 0.1.0
+Authors@R: person("Magnus Dehli", "Vigeland", 
+                  email = "m.d.vigeland@medisin.uio.no", 
+                  role = c("aut", "cre"),
+                  comment = c(ORCID = "0000-0002-9134-4962"))
+Description: An implementation of the Elston-Stewart algorithm for calculating
+    pedigree likelihoods given genetic marker data (Elston and Stewart (1971) 
+    <doi:10.1159/000152448>). The standard algorithm is extended to allow inbred 
+    founders. Mutation modelling is supported by the 'pedmut' package. 'pedprobr' 
+    is part of the ped suite, a collection of packages for pedigree analysis in R, 
+    based on 'pedtools' for handling pedigrees and markers.
+License: GPL-3
+URL: https://github.com/magnusdv/pedprobr
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+Depends: R (>= 3.1.0), pedtools
+Imports: pedmut
+Suggests: testthat
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-10-29 20:01:39 UTC; magnusdv
+Author: Magnus Dehli Vigeland [aut, cre]
+    (<https://orcid.org/0000-0002-9134-4962>)
+Maintainer: Magnus Dehli Vigeland <m.d.vigeland@medisin.uio.no>
+Repository: CRAN
+Date/Publication: 2019-11-01 12:30:02 UTC

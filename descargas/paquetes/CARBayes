@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package CARBayes</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=CARBayes" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="CARBayes: Spatial Generalised Linear Mixed Models for Areal Unit Data" />
+<meta name="og:description" content="Implements a class of univariate and multivariate spatial generalised linear mixed models for areal unit data, with inference in a Bayesian setting using Markov chain Monte Carlo (MCMC) simulation. The response variable can be binomial, Gaussian, multinomial, Poisson or zero-inflated Poisson (ZIP), and spatial autocorrelation is modelled by a set of random effects that are assigned a conditional autoregressive (CAR) prior distribution. A number of different models are available for univariate spatial data, including models with no random effects as well as random effects modelled by different types of CAR prior, including the BYM model (Besag et al. (1991) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2FBF00116466&quot;&gt;doi:10.1007/BF00116466&lt;/a&gt;&amp;gt;), the Leroux model (Leroux et al. (2000) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2F978-1-4612-1284-3_4&quot;&gt;doi:10.1007/978-1-4612-1284-3_4&lt;/a&gt;&amp;gt;) and the localised model (Lee et al. (2015) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fenv.2348&quot;&gt;doi:10.1002/env.2348&lt;/a&gt;&amp;gt;). Additionally, a multivariate CAR (MCAR) model for multivariate spatial data is available, as is a two-level hierarchical model for modelling data relating to individuals within areas. Full details are given in the vignette accompanying this package. The initial creation of this package was supported by the Economic and Social Research Council (ESRC) grant RES-000-22-4256, and on-going development has been supported by the Engineering and Physical Science Research Council (EPSRC) grant EP/J017442/1, ESRC grant ES/K006460/1, Innovate UK / Natural Environment Research Council (NERC) grant NE/N007352/1 and the TB Alliance. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=CARBayes" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>CARBayes: Spatial Generalised Linear Mixed Models for Areal Unit Data</h2>
+<p>Implements a class of univariate and multivariate spatial generalised linear mixed models for areal unit data, with inference in a Bayesian setting using Markov chain Monte Carlo (MCMC) simulation. The response variable can be binomial, Gaussian, multinomial, Poisson or zero-inflated Poisson (ZIP), and spatial autocorrelation is modelled by a set of random effects that are assigned a conditional autoregressive (CAR) prior distribution. A number of different models are available for univariate spatial data, including models with no random effects as well as random effects modelled by different types of CAR prior, including the BYM model (Besag et al. (1991) &lt;<a href="https://doi.org/10.1007%2FBF00116466">doi:10.1007/BF00116466</a>&gt;), the Leroux model (Leroux et al. (2000) &lt;<a href="https://doi.org/10.1007%2F978-1-4612-1284-3_4">doi:10.1007/978-1-4612-1284-3_4</a>&gt;) and the localised model (Lee et al. (2015) &lt;<a href="https://doi.org/10.1002%2Fenv.2348">doi:10.1002/env.2348</a>&gt;). Additionally,  a multivariate CAR (MCAR) model for multivariate spatial data is available, as is a two-level hierarchical model for modelling data relating to individuals within areas. Full details are given in the vignette accompanying this package. The initial creation of this package was supported by the Economic and Social Research Council (ESRC) grant RES-000-22-4256, and on-going development has been supported by the Engineering and Physical Science Research Council (EPSRC) grant EP/J017442/1, ESRC grant ES/K006460/1, Innovate UK / Natural Environment Research Council (NERC) grant NE/N007352/1 and the TB Alliance. </p>
+<table summary="Package CARBayes summary">
+<tr>
+<td>Version:</td>
+<td>5.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td><a href="../MASS/index.html">MASS</a>, R (&ge; 3.0.0), <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.11.5)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../CARBayesdata/index.html">CARBayesdata</a>, <a href="../coda/index.html">coda</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../GGally/index.html">GGally</a>, <a href="../leaflet/index.html">leaflet</a>, <a href="../matrixcalc/index.html">matrixcalc</a>, <a href="../MCMCpack/index.html">MCMCpack</a>, <a href="../rgdal/index.html">rgdal</a>, <a href="../sp/index.html">sp</a>, <a href="../spam/index.html">spam</a>, <a href="../spdep/index.html">spdep</a>, stats, <a href="../truncnorm/index.html">truncnorm</a>, utils</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../boot/index.html">boot</a>, <a href="../deldir/index.html">deldir</a>, <a href="../foreign/index.html">foreign</a>, grid, <a href="../maptools/index.html">maptools</a>, <a href="../Matrix/index.html">Matrix</a>, <a href="../nlme/index.html">nlme</a>, <a href="../shapefiles/index.html">shapefiles</a>, splines</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-03-13</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Duncan Lee</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Duncan Lee  &#x3c;&#x44;&#x75;&#x6e;&#x63;&#x61;&#x6e;&#x2e;&#x4c;&#x65;&#x65;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6c;&#x61;&#x73;&#x67;&#x6f;&#x77;&#x2e;&#x61;&#x63;&#x2e;&#x75;&#x6b;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="http://github.com/duncanplee/CARBayes/issues">http://github.com/duncanplee/CARBayes/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://github.com/duncanplee/CARBayes">http://github.com/duncanplee/CARBayes</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">CARBayes citation info</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Spatial.html">Spatial</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_CARBayes.html">CARBayes results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package CARBayes downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="CARBayes.pdf"> CARBayes.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/CARBayes.pdf">Vignette for CARBayes  package.</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/CARBayes_5.2.tar.gz"> CARBayes_5.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/CARBayes_5.2.zip">CARBayes_5.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/CARBayes_5.2.zip">CARBayes_5.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/CARBayes_5.2.zip">CARBayes_5.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/CARBayes_5.2.tgz">CARBayes_5.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/CARBayes_5.2.tgz">CARBayes_5.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/CARBayes"> CARBayes archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package CARBayes reverse dependencies">
+<tr>
+<td>Reverse&nbsp;enhances:</td>
+<td><a href="../emmeans/index.html">emmeans</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=CARBayes"><samp>https://CRAN.R-project.org/package=CARBayes</samp></a>
+to link to this page.</p>
+</body>
+</html>

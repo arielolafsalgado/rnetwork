@@ -1,0 +1,34 @@
+Package: vtreat
+Type: Package
+Title: A Statistically Sound 'data.frame' Processor/Conditioner
+Version: 1.0.0
+Date: 2017-10-04
+Authors@R: c(
+    person("John", "Mount", email = "jmount@win-vector.com", role = c("aut", "cre")),
+    person("Nina", "Zumel", email = "nzumel@win-vector.com", role = c("aut")),
+    person(family = "Win-Vector LLC", role = c("cph"))
+    )
+URL: https://github.com/WinVector/vtreat/,
+        https://winvector.github.io/vtreat/
+BugReports: https://github.com/WinVector/vtreat/issues
+Maintainer: John Mount <jmount@win-vector.com>
+Description: A 'data.frame' processor/conditioner that prepares real-world data for predictive modeling in a statistically sound manner.
+    'vtreat' prepares variables so that data has fewer exceptional cases, making
+    it easier to safely use models in production. Common problems 'vtreat' defends
+    against: 'Inf', 'NA', too many categorical levels, rare categorical levels, and new
+    categorical levels (levels seen during application, but not during training).
+    'vtreat::prepare' should be used as you would use 'model.matrix'.
+License: GPL-3
+Suggests: testthat, knitr, parallel, rmarkdown, data.table, dplyr,
+        ggplot2, RSQLite, datasets, stats
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+ByteCompile: true
+NeedsCompilation: no
+Packaged: 2017-10-04 15:42:03 UTC; johnmount
+Author: John Mount [aut, cre],
+  Nina Zumel [aut],
+  Win-Vector LLC [cph]
+Repository: CRAN
+Date/Publication: 2017-10-04 15:51:43 UTC

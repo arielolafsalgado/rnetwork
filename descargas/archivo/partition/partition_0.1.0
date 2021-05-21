@@ -1,0 +1,44 @@
+Package: partition
+Type: Package
+Title: Agglomerative Partitioning Framework for Dimension Reduction
+Version: 0.1.0
+Authors@R: c(
+ person(
+    "Joshua", 
+    "Millstein", 
+    role = "aut",
+    email = "joshua.millstein@usc.edu"),
+  person(
+    "Malcolm", 
+    "Barrett", 
+    role = c("aut", "cre"),
+    email = "malcolmbarrett@gmail.com", 
+    comment = c(ORCID = "0000-0003-0299-5825")))
+Maintainer: Malcolm Barrett <malcolmbarrett@gmail.com>
+Description: A fast and flexible framework for agglomerative partitioning. 'partition' uses an approach 
+  called Direct-Measure-Reduce to create new variables that maintain the 
+  user-specified minimum level of information. Each reduced variable is also interpretable:
+  the original variables map to one and only one variable in the reduced data set. 'partition'
+  is flexible, as well: how variables are selected to reduce, how information loss is measured, 
+  and the way data is reduced can all be customized.  
+Depends: R (>= 3.3.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp, rlang, purrr, tibble, dplyr (>= 0.8.0), tidyr, ggplot2
+        (>= 3.0.0), stringr, magrittr, crayon, pillar, infotheo, MASS,
+        forcats
+Suggests: covr, spelling, testthat, knitr, rmarkdown
+RoxygenNote: 6.1.1
+URL: https://uscbiostats.github.io/partition/,
+        https://github.com/USCbiostats/partition
+BugReports: https://github.com/USCbiostats/partition/issues
+Language: en-US
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2019-05-16 16:08:33 UTC; malcolmbarrett
+Author: Joshua Millstein [aut],
+  Malcolm Barrett [aut, cre] (<https://orcid.org/0000-0003-0299-5825>)
+Repository: CRAN
+Date/Publication: 2019-05-17 07:00:04 UTC

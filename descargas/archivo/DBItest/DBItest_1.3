@@ -1,0 +1,30 @@
+Package: DBItest
+Title: Testing 'DBI' Back Ends
+Version: 1.3
+Date: 2016-07-07
+Authors@R: c( person(given = "Kirill", family = "Müller", role =
+        c("aut", "cre"), email = "krlmlr+r@mailbox.org"),
+        person("RStudio", role = "cph") )
+Description: A helper that tests 'DBI' back ends for conformity
+    to the interface, currently work in progress.
+Depends: R (>= 3.0.0)
+Imports: methods, testthat (>= 1.0.2), withr, DBI (>= 0.4-1)
+Suggests: devtools, lintr, knitr, rmarkdown
+License: LGPL (>= 2)
+LazyData: true
+Encoding: UTF-8
+BugReports: https://github.com/rstats-db/DBItest/issues
+RoxygenNote: 5.0.1
+VignetteBuilder: knitr
+Collate: 'DBItest.R' 'context.R' 'expectations.R' 'import-dbi.R'
+        'import-testthat.R' 'run.R' 'test-all.R'
+        'test-getting-started.R' 'test-driver.R' 'test-connection.R'
+        'test-result.R' 'test-sql.R' 'test-meta.R' 'test-compliance.R'
+        'tweaks.R' 'utf8.R' 'utils.R'
+NeedsCompilation: no
+Packaged: 2016-07-07 09:55:10 UTC; muelleki
+Author: Kirill Müller [aut, cre],
+  RStudio [cph]
+Maintainer: Kirill Müller <krlmlr+r@mailbox.org>
+Repository: CRAN
+Date/Publication: 2016-07-07 13:36:27

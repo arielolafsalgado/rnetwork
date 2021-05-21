@@ -1,0 +1,18 @@
+Package: kpeaks
+Type: Package
+Title: Determination of K Using Peak Counts of Features for Clustering
+Version: 0.1.0
+Date: 2017-09-17
+Authors@R: c(person("Zeynel", "Cebeci", email = "zcebeci@cukurova.edu.tr", role = c("aut", "cre")), 
+     person("Cagatay","Cebeci", role = "aut", email = "cagataycebeci@gmail.com"))
+Author: Zeynel Cebeci [aut, cre], Cagatay Cebeci [aut]
+Maintainer: Zeynel Cebeci <zcebeci@cukurova.edu.tr>
+Description: The input argument k which is the number of clusters is needed to start all of the partitioning clustering algorithms. In unsupervised learning applications, an optimal value of this argument is widely determined by using the internal validity indexes. Since these indexes suggest a k value which is computed on the clustering results after several runs of a clustering algorithm they are computationally expensive. On the contrary, 'kpeaks' enables to estimate k before running any clustering algorithm. It is based on a simple novel technique using the descriptive statistics of peak counts of the features in a data set.
+Depends: R (>= 2.10.0)
+License: GPL (>= 2)
+LazyData: true
+Imports: graphics, stats, utils
+NeedsCompilation: no
+Packaged: 2017-09-17 17:29:04 UTC; user1
+Repository: CRAN
+Date/Publication: 2017-09-19 09:37:37 UTC

@@ -1,0 +1,28 @@
+Package: easySdcTable
+Type: Package
+Title: Easy Interface to the Statistical Disclosure Control Package
+        'sdcTable'
+Version: 0.3.3
+Date: 2019-02-20
+Authors@R: person("Øyvind", "Langsrud", role = c("aut", "cre"), email = "oyl@ssb.no")
+Author: Øyvind Langsrud [aut, cre]
+Maintainer: Øyvind Langsrud <oyl@ssb.no>
+Depends: R (>= 3.0.0), sdcTable, SSBtools, shiny
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown
+Description: The main function, ProtectTable(), performs table suppression according to a 
+ frequency rule with a data set as the only required input. Within this function, 
+ protectTable(), protectLinkedTables() or runArgusBatchFile() in package 'sdcTable' is called. 
+ Lists of level-hierarchy (parameter 'dimList') and other required input to these functions 
+ are created automatically. 
+ The function, PTgui(), starts a graphical user interface based on the shiny package.
+License: Apache License 2.0 | file LICENSE
+LazyData: TRUE
+RoxygenNote: 6.1.1
+Encoding: UTF-8
+URL: https://github.com/statisticsnorway/easySdcTable
+BugReports: https://github.com/statisticsnorway/easySdcTable/issues
+NeedsCompilation: no
+Packaged: 2019-02-20 13:59:24 UTC; oyl
+Repository: CRAN
+Date/Publication: 2019-02-20 14:20:03 UTC

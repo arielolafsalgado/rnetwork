@@ -1,0 +1,30 @@
+Package: rvinecopulib
+Type: Package
+Title: High Performance Algorithms for Vine Copula Modeling
+Version: 0.1.0.1.0
+Authors@R: c(
+        person("Thomas", "Nagler",, "info@vinecopulib.org", role = c("aut", "cre")),
+        person("Thibault", "Vatter",, "info@vinecopulib.org", role = c("aut"))
+        )
+Description: Provides an interface to 'vinecopulib', a
+ high performance C++ library based on 'Boost', 'Eigen' and 'NLopt'. 
+ It provides high-performance implementations of 
+ the core features of the popular 'VineCopula' package, in particular
+ inference algorithms for both vine copula and bivariate copula models.
+ Advantages over VineCopula are a sleaker and more modern API, shorter runtimes, 
+ especially in high dimensions, nonparametric and multi-parameter families.
+License: GPL-3 | file LICENSE
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: yes
+Imports: graphics, grDevices, lattice, Rcpp (>= 0.12.12), stats, utils
+Suggests: igraph, ggplot2, ggraph, testthat
+LinkingTo: BH, Rcpp, RcppEigen, RcppProgress
+SystemRequirements: C++11
+RoxygenNote: 6.0.1
+Packaged: 2017-08-29 13:07:04 UTC; n5
+Author: Thomas Nagler [aut, cre],
+  Thibault Vatter [aut]
+Maintainer: Thomas Nagler <info@vinecopulib.org>
+Repository: CRAN
+Date/Publication: 2017-08-30 14:50:52 UTC

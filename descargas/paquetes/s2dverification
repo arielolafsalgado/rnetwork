@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package s2dverification</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Set of Common Tools for Forecast Verification [R package s2dverification version 2.8.6]" />
+<meta name="citation_author1" content="BSC-CNS" />
+<meta name="citation_author2" content="Virginie Guemas" />
+<meta name="citation_author3" content="Nicolau Manubens" />
+<meta name="citation_author4" content="Javier Garcia-Serrano" />
+<meta name="citation_author5" content="Neven Fuckar" />
+<meta name="citation_author6" content="Louis-Philippe Caron" />
+<meta name="citation_author7" content="Omar Bellprat" />
+<meta name="citation_author8" content="Luis Rodrigues" />
+<meta name="citation_author9" content="Veronica Torralba" />
+<meta name="citation_author10" content="Alasdair Hunter" />
+<meta name="citation_author11" content="Chloe Prodhomme" />
+<meta name="citation_author12" content="Martin Menegoz" />
+<meta name="citation_publication_date" content="2019-10-17" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=s2dverification" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=s2dverification" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="s2dverification: Set of Common Tools for Forecast Verification" />
+<meta name="og:description" content="Set of tools to verify forecasts through the computation of typical prediction scores against one or more observational datasets or reanalyses (a reanalysis being a physical extrapolation of observations that relies on the equations from a model, not a pure observational dataset). Intended for seasonal to decadal climate forecasts although can be useful to verify other kinds of forecasts. The package can be helpful in climate sciences for other purposes than forecasting." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=s2dverification" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>s2dverification: Set of Common Tools for Forecast Verification</h2>
+<p>Set of tools to verify forecasts through the computation of typical
+    prediction scores against one or more observational datasets or reanalyses (a
+    reanalysis being a physical extrapolation of observations that relies on the
+    equations from a model, not a pure observational dataset). Intended for seasonal
+    to decadal climate forecasts although can be useful to verify other kinds of
+    forecasts. The package can be helpful in climate sciences for other purposes
+    than forecasting.</p>
+<table summary="Package s2dverification summary">
+<tr>
+<td>Version:</td>
+<td>2.8.6</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td><a href="../maps/index.html">maps</a>, methods, R (&ge; 2.14.1)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../abind/index.html">abind</a>, <a href="../bigmemory/index.html">bigmemory</a>, <a href="../GEOmap/index.html">GEOmap</a>, <a href="../geomapdata/index.html">geomapdata</a>, <a href="../mapproj/index.html">mapproj</a>, <a href="../NbClust/index.html">NbClust</a>, <a href="../ncdf4/index.html">ncdf4</a>, parallel, <a href="../plyr/index.html">plyr</a>, <a href="../SpecsVerification/index.html">SpecsVerification</a> (&ge; 0.5.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../easyVerification/index.html">easyVerification</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-10-17</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>BSC-CNS [aut, cph],
+  Virginie Guemas [aut],
+  Nicolau Manubens [aut],
+  An-Chi Ho [ctb, cre],
+  Nuria Perez-Zanon [ctb],
+  Javier Garcia-Serrano [aut],
+  Neven Fuckar [aut],
+  Louis-Philippe Caron [aut],
+  Omar Bellprat [aut],
+  Luis Rodrigues [aut],
+  Veronica Torralba [aut],
+  Alasdair Hunter [aut],
+  Chloe Prodhomme [aut],
+  Martin Menegoz [aut],
+  Domingo Manubens [ctb],
+  Constantin Ardilouze [ctb],
+  Lauriane Batte [ctb],
+  Fabian Lienert [ctb],
+  Julia Giner [ctb],
+  Jean-Philippe Baudouin [ctb],
+  Nube Gonzalez [ctb],
+  Ludovic Auger [ctb],
+  Nicola Cortesi [ctb],
+  Eleftheria Exarchou [ctb],
+  Ruben Cruz [ctb],
+  Isabel Andreu-Burillo [ctb],
+  Ramiro Saurral [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>An-Chi Ho  &#x3c;&#x61;&#x6e;&#x2e;&#x68;&#x6f;&#x20;&#x61;&#x74;&#x20;&#x62;&#x73;&#x63;&#x2e;&#x65;&#x73;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://earth.bsc.es/gitlab/es/s2dverification/issues">https://earth.bsc.es/gitlab/es/s2dverification/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/LGPL-3">LGPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://earth.bsc.es/gitlab/es/s2dverification/wikis/home">https://earth.bsc.es/gitlab/es/s2dverification/wikis/home</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>cdo</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_s2dverification.html">s2dverification results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package s2dverification downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="s2dverification.pdf"> s2dverification.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/s2dverification_2.8.6.tar.gz"> s2dverification_2.8.6.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/s2dverification_2.8.6.zip">s2dverification_2.8.6.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/s2dverification_2.8.6.zip">s2dverification_2.8.6.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/s2dverification_2.8.6.zip">s2dverification_2.8.6.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/s2dverification_2.8.6.tgz">s2dverification_2.8.6.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/s2dverification_2.8.6.tgz">s2dverification_2.8.6.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/s2dverification"> s2dverification archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package s2dverification reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../CSTools/index.html">CSTools</a>, <a href="../startR/index.html">startR</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=s2dverification"><samp>https://CRAN.R-project.org/package=s2dverification</samp></a>
+to link to this page.</p>
+</body>
+</html>

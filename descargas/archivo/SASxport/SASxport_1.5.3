@@ -1,0 +1,56 @@
+Package: SASxport
+Title: Read and Write 'SAS' 'XPORT' Files
+Version: 1.5.3
+Description: Functions for reading, listing
+    the contents of, and writing 'SAS' 'xport' format files.
+    The functions support reading and writing of either
+    individual data frames or sets of data frames.  Further,
+    a mechanism has been provided for customizing how
+    variables of different data types are stored.
+Author: Unless otherwise noted, the contents of this package were written by
+    Gregory R. Warnes <greg@warnes.net> and are provided under the
+    terms of the GNU General Public License, version 2.0 or later.
+    --
+    The files 'src/ieee2ibm.c' and 'src/ibm2ieee.c' were extracted from
+    BRL-CAD file /brlcad/src/libbu/htond.c written by Michael John
+    Muuss, Copyright (c) 2004-2007 United States Government as
+    represented by the U.S. Army Research Laboratory, and is utilized
+    and redistributed under the terms of the GNU Lesser General Public
+    License, version 2.1.
+    --
+    The files 'R/AFirst.lib.s', 'R/all.is.numeric.R',
+    'R/importConvertDateTime.R', 'R/in.opererator.R', 'R/makeNames.R',
+    'R/read.xport.R', and 'R/testDateTime.R' are copied or adapted from the
+    'Hmisc' package created by Frank E. Harrell, Jr.
+    <f.harrell@vanderbilt.edu>, and are utilized and redistributed under
+    the terms of the GNU General Public License, version 2.0 or later.
+    --
+    The files 'R/xport.R', 'src/SASxport.c', 'src/SASxport.h', and
+    'src/foreign.h' are copied or adapted from the 'R' 'foreign' package
+    created by Douglas M. Bates <bates@stat.wisc.edu> and Saikat DebRoy
+    <saikat@stat.wisc.edu>, and are utilized and redistributed under the
+    terms of the GNU General Public License, version 2.0 or later.
+    --
+    The creation of this package was partially funded by Metrum Institute
+    <http://metruminstitute.org>.
+Maintainer: Gabor Csardi <gcsardi@mango-solutions.com>
+License: GPL-2
+Depends: R (>= 2.4.0)
+Imports: chron, Hmisc, utils
+URL: https://github.com/mangothecat/SASxport
+BugReports: https://github.com/mangothecat/SASxport/issues
+RoxygenNote: 5.0.1
+Collate: 'AFirst_lib.R' 'SASformat.R' 'SASiformat.R' 'SAStype.R'
+        'all.is.numeric.R' 'blanks.R' 'fromSASDate.R' 'fstr.R'
+        'importConvertDateTime.R' 'in.opererator.R' 'lookup.xport.R'
+        'make.formats.R' 'makeNames.R' 'makeSASNames.R' 'package.R'
+        'parseFormat.R' 'process.formats.R' 'rawToDisplay.R'
+        'read.xport.R' 'scat.R' 'testDateTime.R' 'toSAS.R'
+        'write.xport.R' 'xport.NA.R' 'xport.R' 'xport.character.R'
+        'xport.dateFMT.R' 'xport.file.header.R' 'xport.fill.R'
+        'xport.member.header.R' 'xport.namestr.R'
+        'xport.namestr.header.R' 'xport.numeric.R' 'xport.obs.header.R'
+NeedsCompilation: yes
+Packaged: 2016-03-10 16:19:27 UTC; gaborcsardi
+Repository: CRAN
+Date/Publication: 2016-03-11 00:40:23

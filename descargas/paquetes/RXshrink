@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package RXshrink</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=RXshrink" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="RXshrink: Maximum Likelihood Shrinkage using Generalized Ridge or Least Angle Regression Methods" />
+<meta name="og:description" content="Functions are provided to calculate and display ridge TRACE diagnostics for a variety of shrinkage Paths. TRACEs identify the m-Extent of shrinkage most likely, under Normal-theory, to produce optimally biased estimates of beta-coefficients with minimum MSE Risk. The unr.ridge() function implements the &quot;Unrestricted Path&quot; introduced in Obenchain (2020) &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/2005.14291&quot;&gt;arXiv:2005.14291&lt;/a&gt;&amp;gt;. This Shrinkage-Path is more efficient than the Paths used by the qm.ridge(), aug.lars() and uc.lars() functions. Optimally biased predictions can be made using RXpredict() for all five types of RXshrink linear model TRACE diagnostics. Functions MLboot(), MLcalc(), MLhist() and MLtrue() provide insights into the true bias and MSE risk characteristics of non-linear Shrinkage estimators. Functions unr.aug() and unr.biv() augment the calculations made by unr.ridge() to provide plots of the bivariate confidence ellipses corresponding to any of the p*(p-1) possible pairs of shrunken regression coefficients. The correct.signs() function provides estimates with &quot;correct&quot; numerical signs when ill-conditioned (nearly multicollinear) models yield OLS estimates that disagree with the signs of the observed correlations between the y-outcome and the selected x-predictor variables." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=RXshrink" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>RXshrink: Maximum Likelihood Shrinkage using Generalized Ridge or Least
+Angle Regression Methods</h2>
+<p>Functions are provided to calculate and display ridge TRACE diagnostics for
+  a variety of shrinkage Paths. TRACEs identify the m-Extent of shrinkage most likely,
+  under Normal-theory, to produce optimally biased estimates of beta-coefficients with
+  minimum MSE Risk. The unr.ridge() function implements the "Unrestricted Path"
+  introduced in Obenchain (2020) &lt;<a href="https://arxiv.org/abs/2005.14291">arXiv:2005.14291</a>&gt;. This Shrinkage-Path is more
+  efficient than the Paths used by the qm.ridge(), aug.lars() and uc.lars() functions.
+  Optimally biased predictions can be made using RXpredict() for all five types of
+  RXshrink linear model TRACE diagnostics. Functions MLboot(), MLcalc(), MLhist() and
+  MLtrue() provide insights into the true bias and MSE risk characteristics of non-linear
+  Shrinkage estimators. Functions unr.aug() and unr.biv() augment the calculations made
+  by unr.ridge() to provide plots of the bivariate confidence ellipses corresponding to
+  any of the p*(p-1) possible pairs of shrunken regression coefficients. The correct.signs()
+  function provides estimates with "correct" numerical signs when ill-conditioned (nearly
+  multicollinear) models yield OLS estimates that disagree with the signs of the observed
+  correlations between the y-outcome and the selected x-predictor variables.</p>
+<table summary="Package RXshrink summary">
+<tr>
+<td>Version:</td>
+<td>1.4.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0), <a href="../lars/index.html">lars</a>, <a href="../ellipse/index.html">ellipse</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-01</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Bob Obenchain </td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Bob Obenchain  &#x3c;&#x77;&#x69;&#x7a;&#x62;&#x6f;&#x62;&#x20;&#x61;&#x74;&#x20;&#x61;&#x74;&#x74;&#x2e;&#x6e;&#x65;&#x74;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://www.R-project.org">https://www.R-project.org</a> , <a href="http://localcontrolstatistics.org">http://localcontrolstatistics.org</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/MachineLearning.html">MachineLearning</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_RXshrink.html">RXshrink results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package RXshrink downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="RXshrink.pdf"> RXshrink.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/RXshrink_1.4.2.tar.gz"> RXshrink_1.4.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/RXshrink_1.4.2.zip">RXshrink_1.4.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/RXshrink_1.4.2.zip">RXshrink_1.4.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/RXshrink_1.4.2.zip">RXshrink_1.4.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/RXshrink_1.4.2.tgz">RXshrink_1.4.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/RXshrink_1.4.2.tgz">RXshrink_1.4.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/RXshrink"> RXshrink archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=RXshrink"><samp>https://CRAN.R-project.org/package=RXshrink</samp></a>
+to link to this page.</p>
+</body>
+</html>

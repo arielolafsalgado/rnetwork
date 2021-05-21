@@ -1,0 +1,46 @@
+Package: tidyvpc
+Type: Package
+Title: VPC Percentiles and Prediction Intervals
+Version: 1.0.0
+Date: 2020-02-17
+Authors@R: c(
+      person("Olivier", "Barriere", email = "olivier.barriere@gmail.com",
+      role = c("aut")),
+      person("Benjamin", "Rich", email = "mail@benjaminrich.net",
+      role = c("aut")),
+      person("James", "Craig", email = "jameswbcraig@gmail.com",
+      role = c("aut", "cre")),
+      person("Samer", "Mouksassi", email = "samermouksassi@gmail.com",
+      role = c("aut")),
+      person("Kris", "Jamsen",
+      role = c("ctb"))
+    )
+Description: Perform a Visual Predictive Check (VPC), while accounting for 
+    stratification, censoring, and prediction correction. Using piping from 
+    'magrittr', the intuitive syntax gives users a flexible and powerful method 
+    to generate VPCs using both traditional binning and a new binless approach 
+    Jamsen et al. (2018) <doi:10.1002/psp4.12319> with Additive Quantile 
+    Regression (AQR) and Locally Estimated Scatterplot Smoothing (LOESS) 
+    prediction correction. 
+URL: https://github.com/jameswcraig/tidyvpc
+BugReports: https://github.com/jameswcraig/tidyvpc/issues
+Depends: R (>= 3.5.0), data.table (>= 1.9.8), magrittr, quantreg (>=
+        5.51)
+Imports: rlang (>= 0.3.0), methods
+Suggests: cluster, classInt, KernSmooth, ggplot2, shiny, remotes, vpc,
+        knitr, rmarkdown
+License: MIT + file LICENSE
+LazyData: true
+Encoding: UTF-8
+VignetteBuilder: knitr
+RoxygenNote: 7.0.2.9000
+NeedsCompilation: no
+Packaged: 2020-03-25 19:00:49 UTC; jcraig
+Author: Olivier Barriere [aut],
+  Benjamin Rich [aut],
+  James Craig [aut, cre],
+  Samer Mouksassi [aut],
+  Kris Jamsen [ctb]
+Maintainer: James Craig <jameswbcraig@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-03-26 10:10:12 UTC

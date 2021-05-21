@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package lubridate</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Make Dealing with Dates a Little Easier [R package lubridate version 1.7.9]" />
+<meta name="citation_author1" content="Vitalie Spinu" />
+<meta name="citation_author2" content="Garrett Grolemund" />
+<meta name="citation_author3" content="Hadley Wickham" />
+<meta name="citation_publication_date" content="2020-06-08" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=lubridate" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=lubridate" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="lubridate: Make Dealing with Dates a Little Easier" />
+<meta name="og:description" content="Functions to work with date-times and time-spans: fast and user friendly parsing of date-time data, extraction and updating of components of a date-time (years, months, days, hours, minutes, and seconds), algebraic manipulation on date-time and time-span objects. The 'lubridate' package has a consistent and memorable syntax that makes working with dates easy and fun. Parts of the 'CCTZ' source code, released under the Apache 2.0 License, are included in this package. See &amp;lt;&lt;a href=&quot;https://github.com/google/cctz&quot;&gt;https://github.com/google/cctz&lt;/a&gt;&amp;gt; for more details." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=lubridate" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>lubridate: Make Dealing with Dates a Little Easier</h2>
+<p>Functions to work with date-times and time-spans:
+    fast and user friendly parsing of date-time data, extraction and
+    updating of components of a date-time (years, months, days, hours,
+    minutes, and seconds), algebraic manipulation on date-time and
+    time-span objects. The 'lubridate' package has a consistent and
+    memorable syntax that makes working with dates easy and fun.  Parts of
+    the 'CCTZ' source code, released under the Apache 2.0 License, are
+    included in this package. See &lt;<a href="https://github.com/google/cctz">https://github.com/google/cctz</a>&gt; for
+    more details.</p>
+<table summary="Package lubridate summary">
+<tr>
+<td>Version:</td>
+<td>1.7.9</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>methods, R (&ge; 3.2)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../generics/index.html">generics</a>, <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.13)</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../covr/index.html">covr</a>, <a href="../knitr/index.html">knitr</a>, <a href="../testthat/index.html">testthat</a> (&ge; 2.1.0), <a href="../vctrs/index.html">vctrs</a> (&ge; 0.3.0)</td>
+</tr>
+<tr>
+<td>Enhances:</td>
+<td><a href="../chron/index.html">chron</a>, <a href="../timeDate/index.html">timeDate</a>, <a href="../tis/index.html">tis</a>, <a href="../zoo/index.html">zoo</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-08</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Vitalie Spinu [aut, cre],
+  Garrett Grolemund [aut],
+  Hadley Wickham [aut],
+  Ian Lyttle [ctb],
+  Imanuel Costigan [ctb],
+  Jason Law [ctb],
+  Doug Mitarotonda [ctb],
+  Joseph Larmarange [ctb],
+  Jonathan Boiser [ctb],
+  Chel Hee Lee [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Vitalie Spinu  &#x3c;&#x73;&#x70;&#x69;&#x6e;&#x75;&#x76;&#x69;&#x74;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/tidyverse/lubridate/issues">https://github.com/tidyverse/lubridate/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://lubridate.tidyverse.org">http://lubridate.tidyverse.org</a>,
+<a href="https://github.com/tidyverse/lubridate">https://github.com/tidyverse/lubridate</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>A system with zoneinfo data (e.g.
+/usr/share/zoneinfo) as well as a recent-enough C++11 compiler
+(such as g++-4.8 or later). On Windows the zoneinfo included
+with R is used.</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">lubridate citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/ReproducibleResearch.html">ReproducibleResearch</a>, <a href="../../views/TimeSeries.html">TimeSeries</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_lubridate.html">lubridate results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package lubridate downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="lubridate.pdf"> lubridate.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/lubridate.html">Do more with dates and times in R</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/lubridate_1.7.9.tar.gz"> lubridate_1.7.9.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/lubridate_1.7.9.zip">lubridate_1.7.9.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/lubridate_1.7.9.zip">lubridate_1.7.9.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/lubridate_1.7.9.zip">lubridate_1.7.9.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/lubridate_1.7.9.tgz">lubridate_1.7.9.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/lubridate_1.7.9.tgz">lubridate_1.7.9.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/lubridate"> lubridate archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package lubridate reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../baytrends/index.html">baytrends</a>, <a href="../dataPreparation/index.html">dataPreparation</a>, <a href="../hystReet/index.html">hystReet</a>, <a href="../MetFns/index.html">MetFns</a>, <a href="../MRMR/index.html">MRMR</a>, <a href="../orgR/index.html">orgR</a>, <a href="../pkdata/index.html">pkdata</a>, <a href="../radiant.data/index.html">radiant.data</a>, <a href="../RGoogleAnalytics/index.html">RGoogleAnalytics</a>, <a href="../RGoogleAnalyticsPremium/index.html">RGoogleAnalyticsPremium</a>, <a href="../seawaveQ/index.html">seawaveQ</a>, <a href="../tidyquant/index.html">tidyquant</a>, <a href="../TimeProjection/index.html">TimeProjection</a>, <a href="../TreeDep/index.html">TreeDep</a>, <a href="../tuneRanger/index.html">tuneRanger</a>, <a href="../weatherr/index.html">weatherr</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../activityCounts/index.html">activityCounts</a>, <a href="../activPAL/index.html">activPAL</a>, <a href="../actogrammr/index.html">actogrammr</a>, <a href="../actuaryr/index.html">actuaryr</a>, <a href="../AdhereR/index.html">AdhereR</a>, <a href="../AdhereRViz/index.html">AdhereRViz</a>, <a href="../adjustedcranlogs/index.html">adjustedcranlogs</a>, <a href="../aemo/index.html">aemo</a>, <a href="../AeRobiology/index.html">AeRobiology</a>, <a href="../AGread/index.html">AGread</a>, <a href="../aire.zmvm/index.html">aire.zmvm</a>, <a href="../AirSensor/index.html">AirSensor</a>, <a href="../alfred/index.html">alfred</a>, <a href="../algaeClassify/index.html">algaeClassify</a>, <a href="../almanac/index.html">almanac</a>, <a href="../amt/index.html">amt</a>, <a href="../animaltracker/index.html">animaltracker</a>, <a href="../antaresRead/index.html">antaresRead</a>, <a href="../antaresViz/index.html">antaresViz</a>, <a href="../anyflights/index.html">anyflights</a>, <a href="../aoristic/index.html">aoristic</a>, <a href="../archivist/index.html">archivist</a>, <a href="../autoTS/index.html">autoTS</a>, <a href="../batata/index.html">batata</a>, <a href="../BatchGetSymbols/index.html">BatchGetSymbols</a>, <a href="../BAwiR/index.html">BAwiR</a>, <a href="../bayesmove/index.html">bayesmove</a>, <a href="../beats/index.html">beats</a>, <a href="../BETS/index.html">BETS</a>, <a href="../binomialMix/index.html">binomialMix</a>, <a href="../bioRad/index.html">bioRad</a>, <a href="../BIRDS/index.html">BIRDS</a>, <a href="../bitmexr/index.html">bitmexr</a>, <a href="../bomrang/index.html">bomrang</a>, <a href="../bReeze/index.html">bReeze</a>, <a href="../brinton/index.html">brinton</a>, <a href="../bsam/index.html">bsam</a>, <a href="../bsplus/index.html">bsplus</a>, <a href="../bupaR/index.html">bupaR</a>, <a href="../busdater/index.html">busdater</a>, <a href="../bysykkel/index.html">bysykkel</a>, <a href="../calendar/index.html">calendar</a>, <a href="../card/index.html">card</a>, <a href="../cardioModel/index.html">cardioModel</a>, <a href="../catmaply/index.html">catmaply</a>, <a href="../cder/index.html">cder</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/CellBench.html"><span class="BioC">CellBench</span></a>, <a href="../cgmanalysis/index.html">cgmanalysis</a>, <a href="../CityWaterBalance/index.html">CityWaterBalance</a>, <a href="../clifro/index.html">clifro</a>, <a href="../climaemet/index.html">climaemet</a>, <a href="../climwin/index.html">climwin</a>, <a href="../clr/index.html">clr</a>, <a href="../CLVTools/index.html">CLVTools</a>, <a href="../coalitions/index.html">coalitions</a>, <a href="../combinedevents/index.html">combinedevents</a>, <a href="../compstatr/index.html">compstatr</a>, <a href="../contact/index.html">contact</a>, <a href="../corporaexplorer/index.html">corporaexplorer</a>, <a href="../countyfloods/index.html">countyfloods</a>, <a href="../countytimezones/index.html">countytimezones</a>, <a href="../countyweather/index.html">countyweather</a>, <a href="../covatest/index.html">covatest</a>, <a href="../covid19br/index.html">covid19br</a>, <a href="../covid19france/index.html">covid19france</a>, <a href="../covid19mobility/index.html">covid19mobility</a>, <a href="../covid19us/index.html">covid19us</a>, <a href="../covidregionaldata/index.html">covidregionaldata</a>, <a href="../CRANsearcher/index.html">CRANsearcher</a>, <a href="../crawl/index.html">crawl</a>, <a href="../cricketr/index.html">cricketr</a>, <a href="../crimeutils/index.html">crimeutils</a>, <a href="../cruts/index.html">cruts</a>, <a href="../cyclomort/index.html">cyclomort</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/DaMiRseq.html"><span class="BioC">DaMiRseq</span></a>, <a href="../daqapo/index.html">daqapo</a>, <a href="../datadogr/index.html">datadogr</a>, <a href="../dataonderivatives/index.html">dataonderivatives</a>, <a href="../dataRetrieval/index.html">dataRetrieval</a>, <a href="../DBItest/index.html">DBItest</a>, <a href="../deflateBR/index.html">deflateBR</a>, <a href="../dendroTools/index.html">dendroTools</a>, <a href="../distill/index.html">distill</a>, <a href="../dmtools/index.html">dmtools</a>, <a href="../docxtools/index.html">docxtools</a>, <a href="../dragon/index.html">dragon</a>, <a href="../DSSAT/index.html">DSSAT</a>, <a href="../dtwSat/index.html">dtwSat</a>, <a href="../dycdtools/index.html">dycdtools</a>, <a href="../dynatopmodel/index.html">dynatopmodel</a>, <a href="../easyr/index.html">easyr</a>, <a href="../edeaR/index.html">edeaR</a>, <a href="../eesim/index.html">eesim</a>, <a href="../efts/index.html">efts</a>, <a href="../EHRtemporalVariability/index.html">EHRtemporalVariability</a>, <a href="../eia/index.html">eia</a>, <a href="../EloOptimized/index.html">EloOptimized</a>, <a href="../EpiNow2/index.html">EpiNow2</a>, <a href="../eplusr/index.html">eplusr</a>, <a href="../esmprep/index.html">esmprep</a>, <a href="../etl/index.html">etl</a>, <a href="../ExcelFunctionsR/index.html">ExcelFunctionsR</a>, <a href="../exuber/index.html">exuber</a>, <a href="../eye/index.html">eye</a>, <a href="../ezplot/index.html">ezplot</a>, <a href="../fable.prophet/index.html">fable.prophet</a>, <a href="../fasstr/index.html">fasstr</a>, <a href="../feasts/index.html">feasts</a>, <a href="../FedData/index.html">FedData</a>, <a href="../feedeR/index.html">feedeR</a>, <a href="../ffscrapr/index.html">ffscrapr</a>, <a href="../fgeo.analyze/index.html">fgeo.analyze</a>, <a href="../finbif/index.html">finbif</a>, <a href="../fipe/index.html">fipe</a>, <a href="../fitzRoy/index.html">fitzRoy</a>, <a href="../fmbasics/index.html">fmbasics</a>, <a href="../fmdates/index.html">fmdates</a>, <a href="../foieGras/index.html">foieGras</a>, <a href="../forecastML/index.html">forecastML</a>, <a href="../fpp3/index.html">fpp3</a>, <a href="../fruclimadapt/index.html">fruclimadapt</a>, <a href="../ganalytics/index.html">ganalytics</a>, <a href="../garma/index.html">garma</a>, <a href="../gbfs/index.html">gbfs</a>, <a href="../GenEst/index.html">GenEst</a>, <a href="../geomerge/index.html">geomerge</a>, <a href="../GetBCBData/index.html">GetBCBData</a>, <a href="../GetDFPData/index.html">GetDFPData</a>, <a href="../ggpmisc/index.html">ggpmisc</a>, <a href="../ggspectra/index.html">ggspectra</a>, <a href="../gk/index.html">gk</a>, <a href="../Gmisc/index.html">Gmisc</a>, <a href="../gravitas/index.html">gravitas</a>, <a href="../GuessCompx/index.html">GuessCompx</a>, <a href="../GVARX/index.html">GVARX</a>, <a href="../hablar/index.html">hablar</a>, <a href="../hansard/index.html">hansard</a>, <a href="../happybiRthday/index.html">happybiRthday</a>, <a href="../healthcareai/index.html">healthcareai</a>, <a href="../healthfinance/index.html">healthfinance</a>, <a href="../heatwaveR/index.html">heatwaveR</a>, <a href="../heims/index.html">heims</a>, <a href="../highcharter/index.html">highcharter</a>, <a href="../hpiR/index.html">hpiR</a>, <a href="../htmldf/index.html">htmldf</a>, <a href="../humanize/index.html">humanize</a>, <a href="../hurricaneexposure/index.html">hurricaneexposure</a>, <a href="../hydroToolkit/index.html">hydroToolkit</a>, <a href="../iClick/index.html">iClick</a>, <a href="../ie2misc/index.html">ie2misc</a>, <a href="../IETD/index.html">IETD</a>, <a href="../iglu/index.html">iglu</a>, <a href="../ihpdr/index.html">ihpdr</a>, <a href="../impactflu/index.html">impactflu</a>, <a href="../incR/index.html">incR</a>, <a href="../IndexConstruction/index.html">IndexConstruction</a>, <a href="../inegiR/index.html">inegiR</a>, <a href="../insee/index.html">insee</a>, <a href="../insurancerating/index.html">insurancerating</a>, <a href="../iNZightPlots/index.html">iNZightPlots</a>, <a href="../iNZightTools/index.html">iNZightTools</a>, <a href="../IPDFileCheck/index.html">IPDFileCheck</a>, <a href="../ipeadatar/index.html">ipeadatar</a>, <a href="../isdparser/index.html">isdparser</a>, <a href="../janitor/index.html">janitor</a>, <a href="../kiwisR/index.html">kiwisR</a>, <a href="../Knoema/index.html">Knoema</a>, <a href="../kntnr/index.html">kntnr</a>, <a href="../lazytrade/index.html">lazytrade</a>, <a href="../LDATS/index.html">LDATS</a>, <a href="../LifeInsuranceContracts/index.html">LifeInsuranceContracts</a>, <a href="../lifelogr/index.html">lifelogr</a>, <a href="../logib/index.html">logib</a>, <a href="../longitudinalcascade/index.html">longitudinalcascade</a>, <a href="../lutz/index.html">lutz</a>, <a href="../machina/index.html">machina</a>, <a href="../macleish/index.html">macleish</a>, <a href="../MazamaCoreUtils/index.html">MazamaCoreUtils</a>, <a href="../MazamaLocationUtils/index.html">MazamaLocationUtils</a>, <a href="../MazamaSpatialUtils/index.html">MazamaSpatialUtils</a>, <a href="../mboxr/index.html">mboxr</a>, <a href="../mds/index.html">mds</a>, <a href="../MediaNews/index.html">MediaNews</a>, <a href="../medrxivr/index.html">medrxivr</a>, <a href="../MeTo/index.html">MeTo</a>, <a href="../metools/index.html">metools</a>, <a href="../metR/index.html">metR</a>, <a href="../mfbvar/index.html">mfbvar</a>, <a href="../midasml/index.html">midasml</a>, <a href="../migrbc/index.html">migrbc</a>, <a href="../MIMSunit/index.html">MIMSunit</a>, <a href="../mimsy/index.html">mimsy</a>, <a href="../mmaqshiny/index.html">mmaqshiny</a>, <a href="../modchart/index.html">modchart</a>, <a href="../MODISSnow/index.html">MODISSnow</a>, <a href="../momentuHMM/index.html">momentuHMM</a>, <a href="../moveVis/index.html">moveVis</a>, <a href="../mtconnectR/index.html">mtconnectR</a>, <a href="../mudata2/index.html">mudata2</a>, <a href="../musica/index.html">musica</a>, <a href="../N2H4/index.html">N2H4</a>, <a href="../naptime/index.html">naptime</a>, <a href="../nasapower/index.html">nasapower</a>, <a href="../nationwider/index.html">nationwider</a>, <a href="../nbTransmission/index.html">nbTransmission</a>, <a href="../neonUtilities/index.html">neonUtilities</a>, <a href="../newsanchor/index.html">newsanchor</a>, <a href="../nflfastR/index.html">nflfastR</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/ngsReports.html"><span class="BioC">ngsReports</span></a>, <a href="../nixmass/index.html">nixmass</a>, <a href="../noaastormevents/index.html">noaastormevents</a>, <a href="../nowcasting/index.html">nowcasting</a>, <a href="../npphen/index.html">npphen</a>, <a href="../nprcgenekeepr/index.html">nprcgenekeepr</a>, <a href="../occCite/index.html">occCite</a>, <a href="../oceanmap/index.html">oceanmap</a>, <a href="../openair/index.html">openair</a>, <a href="../opendotaR/index.html">opendotaR</a>, <a href="../opentripplanner/index.html">opentripplanner</a>, <a href="../osmdata/index.html">osmdata</a>, <a href="../packagefinder/index.html">packagefinder</a>, <a href="../padr/index.html">padr</a>, <a href="../PAMmisc/index.html">PAMmisc</a>, <a href="../PAutilities/index.html">PAutilities</a>, <a href="../pcts/index.html">pcts</a>, <a href="../pdfetch/index.html">pdfetch</a>, <a href="../periscope/index.html">periscope</a>, <a href="../phenofit/index.html">phenofit</a>, <a href="../photobiology/index.html">photobiology</a>, <a href="../photobiologyInOut/index.html">photobiologyInOut</a>, <a href="../PhysActBedRest/index.html">PhysActBedRest</a>, <a href="../piggyback/index.html">piggyback</a>, <a href="../pinbasic/index.html">pinbasic</a>, <a href="../pingers/index.html">pingers</a>, <a href="../plotdap/index.html">plotdap</a>, <a href="../plusser/index.html">plusser</a>, <a href="../pmdplyr/index.html">pmdplyr</a>, <a href="../pmetar/index.html">pmetar</a>, <a href="../podr/index.html">podr</a>, <a href="../PointFore/index.html">PointFore</a>, <a href="../polAr/index.html">polAr</a>, <a href="../polished/index.html">polished</a>, <a href="../pollen/index.html">pollen</a>, <a href="../pollstR/index.html">pollstR</a>, <a href="../PortalHacienda/index.html">PortalHacienda</a>, <a href="../portalr/index.html">portalr</a>, <a href="../PortfolioAnalysis/index.html">PortfolioAnalysis</a>, <a href="../priceR/index.html">priceR</a>, <a href="../primerTree/index.html">primerTree</a>, <a href="../prism/index.html">prism</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/proBatch.html"><span class="BioC">proBatch</span></a>, <a href="../projects/index.html">projects</a>, <a href="../ProPublicaR/index.html">ProPublicaR</a>, <a href="../psyosphere/index.html">psyosphere</a>, <a href="../puzzle/index.html">puzzle</a>, <a href="../PWFSLSmoke/index.html">PWFSLSmoke</a>, <a href="../qoma.smuggler/index.html">qoma.smuggler</a>, <a href="../quantdates/index.html">quantdates</a>, <a href="../radiant.basics/index.html">radiant.basics</a>, <a href="../radiant.model/index.html">radiant.model</a>, <a href="../radiant.multivariate/index.html">radiant.multivariate</a>, <a href="../radix/index.html">radix</a>, <a href="../rAmCharts4/index.html">rAmCharts4</a>, <a href="../rameritrade/index.html">rameritrade</a>, <a href="../ratPASTA/index.html">ratPASTA</a>, <a href="../rbi.helpers/index.html">rbi.helpers</a>, <a href="../RBNZ/index.html">RBNZ</a>, <a href="../rcrimeanalysis/index.html">rcrimeanalysis</a>, <a href="../rdefra/index.html">rdefra</a>, <a href="../rdfp/index.html">rdfp</a>, <a href="../RDML/index.html">RDML</a>, <a href="../recipes/index.html">recipes</a>, <a href="../redcapAPI/index.html">redcapAPI</a>, <a href="../REDCapExporter/index.html">REDCapExporter</a>, <a href="../respirometry/index.html">respirometry</a>, <a href="../retrosheet/index.html">retrosheet</a>, <a href="../rfm/index.html">rfm</a>, <a href="../RGA/index.html">RGA</a>, <a href="../riem/index.html">riem</a>, <a href="../Rinstapkg/index.html">Rinstapkg</a>, <a href="../RKorAPClient/index.html">RKorAPClient</a>, <a href="../RmarineHeatWaves/index.html">RmarineHeatWaves</a>, <a href="../rmweather/index.html">rmweather</a>, <a href="../rmytarget/index.html">rmytarget</a>, <a href="../rnoaa/index.html">rnoaa</a>, <a href="../rnrfa/index.html">rnrfa</a>, <a href="../Rnumerai/index.html">Rnumerai</a>, <a href="../RobinHood/index.html">RobinHood</a>, <a href="../ropenaq/index.html">ropenaq</a>, <a href="../rplos/index.html">rplos</a>, <a href="../rprev/index.html">rprev</a>, <a href="../RSAlgaeR/index.html">RSAlgaeR</a>, <a href="../rsbp/index.html">rsbp</a>, <a href="../rsinaica/index.html">rsinaica</a>, <a href="../rtimicropem/index.html">rtimicropem</a>, <a href="../RTL/index.html">RTL</a>, <a href="../rtrends/index.html">rtrends</a>, <a href="../rtypeform/index.html">rtypeform</a>, <a href="../rumidas/index.html">rumidas</a>, <a href="../rWind/index.html">rWind</a>, <a href="../rwunderground/index.html">rwunderground</a>, <a href="../salesforcer/index.html">salesforcer</a>, <a href="../SanFranBeachWater/index.html">SanFranBeachWater</a>, <a href="../sapfluxnetr/index.html">sapfluxnetr</a>, <a href="../saqgetr/index.html">saqgetr</a>, <a href="../satin/index.html">satin</a>, <a href="../SDLfilter/index.html">SDLfilter</a>, <a href="../secuTrialR/index.html">secuTrialR</a>, <a href="../semnar/index.html">semnar</a>, <a href="../SensusR/index.html">SensusR</a>, <a href="../shinyloadtest/index.html">shinyloadtest</a>, <a href="../shinyML/index.html">shinyML</a>, <a href="../simfinR/index.html">simfinR</a>, <a href="../simplevis/index.html">simplevis</a>, <a href="../siteymlgen/index.html">siteymlgen</a>, <a href="../socialmixr/index.html">socialmixr</a>, <a href="../SoilHyP/index.html">SoilHyP</a>, <a href="../Sojourn/index.html">Sojourn</a>, <a href="../solartime/index.html">solartime</a>, <a href="../SpaDES.core/index.html">SpaDES.core</a>, <a href="../SpatialBall/index.html">SpatialBall</a>, <a href="../spatialrisk/index.html">spatialrisk</a>, <a href="../spatsurv/index.html">spatsurv</a>, <a href="../speech/index.html">speech</a>, <a href="../splashr/index.html">splashr</a>, <a href="../spocc/index.html">spocc</a>, <a href="../squashinformr/index.html">squashinformr</a>, <a href="../starvars/index.html">starvars</a>, <a href="../stationaRy/index.html">stationaRy</a>, <a href="../statnipokladna/index.html">statnipokladna</a>, <a href="../steemr/index.html">steemr</a>, <a href="../stlcsb/index.html">stlcsb</a>, <a href="../stocks/index.html">stocks</a>, <a href="../stormwindmodel/index.html">stormwindmodel</a>, <a href="../strand/index.html">strand</a>, <a href="../sugrrants/index.html">sugrrants</a>, <a href="../summarytools/index.html">summarytools</a>, <a href="../suncalc/index.html">suncalc</a>, <a href="../sweep/index.html">sweep</a>, <a href="../sweidnumbr/index.html">sweidnumbr</a>, <a href="../swfscAirDAS/index.html">swfscAirDAS</a>, <a href="../swfscDAS/index.html">swfscDAS</a>, <a href="../swissparl/index.html">swissparl</a>, <a href="../SWMPrExtension/index.html">SWMPrExtension</a>, <a href="../synoptReg/index.html">synoptReg</a>, <a href="../tableschema.r/index.html">tableschema.r</a>, <a href="../tashu/index.html">tashu</a>, <a href="../tbrf/index.html">tbrf</a>, <a href="../thinkr/index.html">thinkr</a>, <a href="../tibbletime/index.html">tibbletime</a>, <a href="../tidyhydat/index.html">tidyhydat</a>, <a href="../tidyquery/index.html">tidyquery</a>, <a href="../tidytransit/index.html">tidytransit</a>, <a href="../tidytuesdayR/index.html">tidytuesdayR</a>, <a href="../tidyverse/index.html">tidyverse</a>, <a href="../timelineR/index.html">timelineR</a>, <a href="../timelineS/index.html">timelineS</a>, <a href="../timeperiodsR/index.html">timeperiodsR</a>, <a href="../timeR/index.html">timeR</a>, <a href="../timetk/index.html">timetk</a>, <a href="../timevis/index.html">timevis</a>, <a href="../togglr/index.html">togglr</a>, <a href="../tosca/index.html">tosca</a>, <a href="../trackdf/index.html">trackdf</a>, <a href="../TrafficBDE/index.html">TrafficBDE</a>, <a href="../tsibble/index.html">tsibble</a>, <a href="../tsibbletalk/index.html">tsibbletalk</a>, <a href="../TSstudio/index.html">TSstudio</a>, <a href="../tsviz/index.html">tsviz</a>, <a href="../TTAinterfaceTrendAnalysis/index.html">TTAinterfaceTrendAnalysis</a>, <a href="../twilio/index.html">twilio</a>, <a href="../TwitterAutomatedTrading/index.html">TwitterAutomatedTrading</a>, <a href="../UKgrid/index.html">UKgrid</a>, <a href="../urlshorteneR/index.html">urlshorteneR</a>, <a href="../utile.tools/index.html">utile.tools</a>, <a href="../vetools/index.html">vetools</a>, <a href="../vosonSML/index.html">vosonSML</a>, <a href="../VTrack/index.html">VTrack</a>, <a href="../waccR/index.html">waccR</a>, <a href="../waterData/index.html">waterData</a>, <a href="../weathercan/index.html">weathercan</a>, <a href="../webTRISr/index.html">webTRISr</a>, <a href="../winfapReader/index.html">winfapReader</a>, <a href="../WRTDStidal/index.html">WRTDStidal</a>, <a href="../wyz.code.metaTesting/index.html">wyz.code.metaTesting</a>, <a href="../wyz.code.offensiveProgramming/index.html">wyz.code.offensiveProgramming</a>, <a href="../wyz.code.testthat/index.html">wyz.code.testthat</a>, <a href="../xesreadR/index.html">xesreadR</a>, <a href="../xml2relational/index.html">xml2relational</a>, <a href="../xray/index.html">xray</a>, <a href="../xROI/index.html">xROI</a>, <a href="../Z10/index.html">Z10</a>, <a href="../zipangu/index.html">zipangu</a>, <a href="../ztype/index.html">ztype</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../adept/index.html">adept</a>, <a href="../arrow/index.html">arrow</a>, <a href="../basictabler/index.html">basictabler</a>, <a href="../camtrapR/index.html">camtrapR</a>, <a href="../CAST/index.html">CAST</a>, <a href="../ChillModels/index.html">ChillModels</a>, <a href="../completejourney/index.html">completejourney</a>, <a href="../correlationfunnel/index.html">correlationfunnel</a>, <a href="../diffdf/index.html">diffdf</a>, <a href="../dint/index.html">dint</a>, <a href="../diversitree/index.html">diversitree</a>, <a href="../drake/index.html">drake</a>, <a href="../Ecfun/index.html">Ecfun</a>, <a href="../eph/index.html">eph</a>, <a href="../fabletools/index.html">fabletools</a>, <a href="../fec16/index.html">fec16</a>, <a href="../fhidata/index.html">fhidata</a>, <a href="../ggformula/index.html">ggformula</a>, <a href="../ggvis/index.html">ggvis</a>, <a href="../gtfsrouter/index.html">gtfsrouter</a>, <a href="../guardianapi/index.html">guardianapi</a>, <a href="../hetu/index.html">hetu</a>, <a href="../HistData/index.html">HistData</a>, <a href="../hms/index.html">hms</a>, <a href="../htmlTable/index.html">htmlTable</a>, <a href="../implyr/index.html">implyr</a>, <a href="../inferr/index.html">inferr</a>, <a href="../Lock5withR/index.html">Lock5withR</a>, <a href="../madness/index.html">madness</a>, <a href="../marcher/index.html">marcher</a>, <a href="../mdsr/index.html">mdsr</a>, <a href="../midasr/index.html">midasr</a>, <a href="../modeltime/index.html">modeltime</a>, <a href="../modeltime.ensemble/index.html">modeltime.ensemble</a>, <a href="../mosaic/index.html">mosaic</a>, <a href="../move/index.html">move</a>, <a href="../NHSRdatasets/index.html">NHSRdatasets</a>, <a href="../Nmisc/index.html">Nmisc</a>, <a href="../oce/index.html">oce</a>, <a href="../openintro/index.html">openintro</a>, <a href="../PetfindeR/index.html">PetfindeR</a>, <a href="../photobiologySun/index.html">photobiologySun</a>, <a href="../pillar/index.html">pillar</a>, <a href="../pinochet/index.html">pinochet</a>, <a href="../pivottabler/index.html">pivottabler</a>, <a href="../pointblank/index.html">pointblank</a>, <a href="../processanimateR/index.html">processanimateR</a>, <a href="../ProjectTemplate/index.html">ProjectTemplate</a>, <a href="../psymonitor/index.html">psymonitor</a>, <a href="../ptvapi/index.html">ptvapi</a>, <a href="../rAmCharts/index.html">rAmCharts</a>, <a href="../rasterly/index.html">rasterly</a>, <a href="../raw/index.html">raw</a>, <a href="../rdflib/index.html">rdflib</a>, <a href="http://www.bioconductor.org/packages/release/data/experiment/html/RforProteomics.html"><span class="BioC">RforProteomics</span></a>, <a href="../RGENERATEPREC/index.html">RGENERATEPREC</a>, <a href="../RMAWGEN/index.html">RMAWGEN</a>, <a href="../rmsfuns/index.html">rmsfuns</a>, <a href="../robservable/index.html">robservable</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/rols.html"><span class="BioC">rols</span></a>, <a href="../santoku/index.html">santoku</a>, <a href="../segmentr/index.html">segmentr</a>, <a href="../skimr/index.html">skimr</a>, <a href="../slider/index.html">slider</a>, <a href="../statar/index.html">statar</a>, <a href="../stats19/index.html">stats19</a>, <a href="../tabulog/index.html">tabulog</a>, <a href="../tibble/index.html">tibble</a>, <a href="../tidyjson/index.html">tidyjson</a>, <a href="../treedater/index.html">treedater</a>, <a href="../trip/index.html">trip</a>, <a href="../unvotes/index.html">unvotes</a>, <a href="../USgrid/index.html">USgrid</a>, <a href="../UsingR/index.html">UsingR</a>, <a href="../vegawidget/index.html">vegawidget</a>, <a href="../wingui/index.html">wingui</a>, <a href="../wyz.code.rdoc/index.html">wyz.code.rdoc</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=lubridate"><samp>https://CRAN.R-project.org/package=lubridate</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,35 @@
+Package: IRkernel
+Title: Native R Kernel for the 'Jupyter Notebook'
+Description: 
+    The R kernel for the 'Jupyter' environment executes R code which the front-end
+    ('Jupyter Notebook' or other front-ends) submits to the kernel via the network.
+Version: 0.8.14
+Authors@R: c(
+    person('Thomas', 'Kluyver', role = c('aut', 'cph'), email = 'thomas@kluyver.me.uk'),
+    person('Philipp', 'Angerer', role = c('aut', 'cph', 'cre'), email = 'phil.angerer@gmail.com'),
+    person('Jan', 'Schulz', role = c('aut', 'cph'), email = 'jasc@gmx.net'),
+    person('Karthik', 'Ram', role = c('aut', 'cph'), email = 'karthik.ram@gmail.com'))
+Depends: R (>= 3.2.0)
+Suggests: testthat, roxygen2
+SystemRequirements: jupyter, jupyter_kernel_test (Python package for
+        testing)
+License: MIT + file LICENSE
+LazyData: true
+Encoding: UTF-8
+Imports: repr (>= 0.4.99), methods, evaluate (>= 0.10), IRdisplay (>=
+        0.3.0.9999), pbdZMQ (>= 0.2-1), crayon, jsonlite (>= 0.9.6),
+        uuid, digest
+Collate: 'class_unions.r' 'logging.r' 'comm_manager.r' 'compat.r'
+        'environment_runtime.r' 'environment_shadow.r' 'options.r'
+        'execution.r' 'handlers.r' 'help.r' 'installspec.r' 'utils.r'
+        'kernel.r' 'main.r' 'onload.r'
+RoxygenNote: 6.1.0
+NeedsCompilation: no
+Packaged: 2018-11-06 17:40:59 UTC; phil
+Author: Thomas Kluyver [aut, cph],
+  Philipp Angerer [aut, cph, cre],
+  Jan Schulz [aut, cph],
+  Karthik Ram [aut, cph]
+Maintainer: Philipp Angerer <phil.angerer@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-11-16 15:30:06 UTC

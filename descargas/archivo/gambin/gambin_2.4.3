@@ -1,0 +1,33 @@
+Package: gambin
+Type: Package
+Title: Fit the Gambin Model to Species Abundance Distributions
+Version: 2.4.3
+Authors@R: c(person(given="Thomas", family="Matthews", email="txm676@gmail.com",
+    role = c("aut", "cre")), person(given=c("Michael", "Krabbe"), 
+    family="Borregaard", email="mkborregaard@snm.ku.dk", role = "aut"), 
+    person(given="Karl", family="Ugland", role = "aut"),
+    person(given="Colin", family="Gillespie",
+    email="csgillespie@gmail.com", role = "aut"))
+Description: Fits unimodal and multimodal gambin distributions to species-abundance distributions
+    from ecological data, as in in Matthews et al. (2014) <DOI:10.1111/ecog.00861>. 
+    'gambin' is short for 'gamma-binomial'. The main function is fit_abundances(), which estimates 
+    the 'alpha' parameter(s) of the gambin distribution using maximum likelihood. Functions are 
+    also provided to generate the gambin distribution and for calculating likelihood statistics.
+Imports: stats, graphics, doParallel, gtools, foreach, parallel
+Suggests: testthat, knitr
+Depends: R(>= 3.0.0)
+URL: https://github.com/txm676/gambin/
+BugReports: https://github.com/txm676/gambin/issues
+License: GPL-3
+RoxygenNote: 7.0.2
+VignetteBuilder: knitr
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2020-02-03 16:34:54 UTC; matthetj
+Author: Thomas Matthews [aut, cre],
+  Michael Krabbe Borregaard [aut],
+  Karl Ugland [aut],
+  Colin Gillespie [aut]
+Maintainer: Thomas Matthews <txm676@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-02-03 19:30:06 UTC

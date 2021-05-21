@@ -1,0 +1,38 @@
+Package: windfarmGA
+Title: Genetic Algorithm for Wind Farm Layout Optimization
+Version: 2.2.1
+Date: 2019-01-30
+Author: Sebastian Gatscha
+Maintainer: Sebastian Gatscha <sebastian_gatscha@gmx.at>
+Description: The genetic algorithm is designed to optimize small wind farms with
+    irregular shapes. The algorithm works with a fixed amount of turbines, a fixed
+    rotor radius and a mean wind speed value for every incoming wind direction.
+    If required, it can include a terrain effect model which downloads an
+    'SRTM' elevation model automatically and loads a Corine Land Cover raster,
+    which has to be downloaded previously. Further information can be found in the
+    description of the function 'windfarmGA'. To start an optimization run, either the
+    function 'windfarmGA' or 'genAlgo' can be used. The function 'windfarmGA' checks
+    the user inputs interactively and then runs the function 'genAlgo'. If the input
+    parameters are already known, an optimization can be run directly via the function
+    'genAlgo'. Their output is identical.
+Depends: R (>= 3.2.3)
+Imports: rgdal (>= 1.0-4), Rcpp (>= 1.0.0), raster (>= 2.8.19), sf (>=
+        0.7.2), rayshader (>= 0.5.1), plyr (>= 1.8.4), rworldmap (>=
+        1.3.6), sp (>= 1.2-2), maptools (>= 0.8-36), calibrate (>=
+        1.7.2), gstat (>= 1.0-26), ggplot2 (>= 2.2.0), RColorBrewer (>=
+        1.1-2), rgeos (>= 0.3-11), magrittr (>= 1.5), foreach (>=
+        1.4.3), parallel (>= 3.4.1), doParallel (>= 1.0.11), leaflet
+        (>= 1.1.0), methods (>= 3.2.5), spatstat (>= 1.42-2),
+        grDevices, graphics, stats, utils
+LinkingTo: Rcpp
+LazyData: TRUE
+License: MIT + file LICENSE
+URL: https://github.com/YsoSirius/windfarmGA
+BugReports: https://github.com/YsoSirius/windfarmGA/issues
+RoxygenNote: 6.0.1
+Suggests: testthat
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2019-02-18 23:06:58 UTC; Bobo
+Repository: CRAN
+Date/Publication: 2019-02-19 00:10:03 UTC

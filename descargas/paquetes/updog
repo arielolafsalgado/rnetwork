@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package updog</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Flexible Genotyping for Polyploids [R package updog version 2.0.2]" />
+<meta name="citation_author" content="David Gerard" />
+<meta name="citation_publication_date" content="2020-07-21" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=updog" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=updog" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="updog: Flexible Genotyping for Polyploids" />
+<meta name="og:description" content="Implements empirical Bayes approaches to genotype polyploids from next generation sequencing data while accounting for allele bias, overdispersion, and sequencing error. The main functions are flexdog() and multidog(), which allow the specification of many different genotype distributions. Also provided are functions to simulate genotypes, rgeno(), and read-counts, rflexdog(), as well as functions to calculate oracle genotyping error rates, oracle_mis(), and correlation with the true genotypes, oracle_cor(). These latter two functions are useful for read depth calculations. Run browseVignettes(package = &quot;updog&quot;) in R for example usage. See Gerard et al. (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.1534%2Fgenetics.118.301468&quot;&gt;doi:10.1534/genetics.118.301468&lt;/a&gt;&amp;gt; and Gerard and Ferrao (2020) &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fbioinformatics%2Fbtz852&quot;&gt;doi:10.1093/bioinformatics/btz852&lt;/a&gt;&amp;gt; for details on the implemented methods." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=updog" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>updog: Flexible Genotyping for Polyploids</h2>
+<p>Implements empirical Bayes approaches to genotype
+       polyploids from next generation sequencing data while
+       accounting for allele bias, overdispersion, and sequencing
+       error. The main functions are flexdog() and multidog(), 
+       which allow the specification
+       of many different genotype distributions. Also provided are functions to
+       simulate genotypes, rgeno(), and read-counts, rflexdog(), as well as
+       functions to calculate oracle genotyping error rates, oracle_mis(), and
+       correlation with the true genotypes, oracle_cor(). These latter two
+       functions are useful for read depth calculations. Run
+       browseVignettes(package = "updog") in R for example usage. See
+       Gerard et al. (2018) &lt;<a href="https://doi.org/10.1534%2Fgenetics.118.301468">doi:10.1534/genetics.118.301468</a>&gt; and
+       Gerard and Ferrao (2020) &lt;<a href="https://doi.org/10.1093%2Fbioinformatics%2Fbtz852">doi:10.1093/bioinformatics/btz852</a>&gt; for details 
+       on the implemented methods.</p>
+<table summary="Package updog summary">
+<tr>
+<td>Version:</td>
+<td>2.0.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.4.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.16), <a href="../RcppArmadillo/index.html">RcppArmadillo</a>, <a href="../assertthat/index.html">assertthat</a>, <a href="../foreach/index.html">foreach</a>, <a href="../doParallel/index.html">doParallel</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../ggthemes/index.html">ggthemes</a>, <a href="../reshape2/index.html">reshape2</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../covr/index.html">covr</a>, <a href="../testthat/index.html">testthat</a>, <a href="../SuppDists/index.html">SuppDists</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-07-21</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>David Gerard <a href="https://orcid.org/0000-0001-9450-5023"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>David Gerard  &#x3c;&#x67;&#x65;&#x72;&#x61;&#x72;&#x64;&#x2e;&#x31;&#x37;&#x38;&#x37;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="http://github.com/dcgerard/updog/issues">http://github.com/dcgerard/updog/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">updog citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_updog.html">updog results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package updog downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="updog.pdf"> updog.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/multidog.html">Genotyping Many SNPs with multidog()</a><br/>
+<a href="vignettes/oracle_calculations.html">Oracle Calculations</a><br/>
+<a href="vignettes/simulate_ngs.html">Simulate Next-Generation Sequencing Data</a><br/>
+<a href="vignettes/smells_like_updog.html">Example Use of Updog</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/updog_2.0.2.tar.gz"> updog_2.0.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/updog_2.0.2.zip">updog_2.0.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/updog_2.0.2.zip">updog_2.0.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/updog_2.0.2.zip">updog_2.0.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/updog_2.0.2.tgz">updog_2.0.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/updog_2.0.2.tgz">updog_2.0.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/updog"> updog archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package updog reverse dependencies">
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../ldsep/index.html">ldsep</a>, <a href="../mappoly/index.html">mappoly</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=updog"><samp>https://CRAN.R-project.org/package=updog</samp></a>
+to link to this page.</p>
+</body>
+</html>

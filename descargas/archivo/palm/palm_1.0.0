@@ -1,0 +1,20 @@
+Package: palm
+Type: Package
+Title: Fitting Point Process Models via the Palm Likelihood
+Version: 1.0.0
+Date: 2017-01-30
+Author: Ben Stevenson <ben.stevenson@auckland.ac.nz>
+Maintainer: Ben Stevenson <ben.stevenson@auckland.ac.nz>
+Depends: R (>= 3.0.0), Rcpp (>= 0.11.5)
+Imports: gsl, methods, mvtnorm, R6, spatstat
+LinkingTo: Rcpp
+Suggests: testthat
+Description: Functions for the fitting of point process models using the Palm likelihood. First proposed by Tanaka, Ogata, and Stoyan (2008) <DOI:10.1002/bimj.200610339>, maximisation of the Palm likelihood can provide computationally efficient parameter estimation in situations where the full likelihood is intractable. This package is chiefly focused on Neyman-Scott point processes, but can also fit void processes. The development of this package was motivated by the analysis of capture-recapture surveys on which individuals cannot be identified---the data from which can conceptually be seen as a clustered point process. As such, some of the functions in this package are specifically for the estimation of cetacean density from two-camera aerial surveys.
+License: GPL
+URL: https://github.com/b-steve/palm
+LazyData: TRUE
+RoxygenNote: 5.0.1
+NeedsCompilation: yes
+Packaged: 2017-01-29 23:45:12 UTC; ben
+Repository: CRAN
+Date/Publication: 2017-01-30 12:30:04

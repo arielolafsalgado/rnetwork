@@ -1,0 +1,28 @@
+Package: ompr
+Type: Package
+Title: Model and Solve Mixed Integer Linear Programs
+Version: 0.6.0
+Authors@R: person("Dirk", "Schumacher", email = "mail@dirk-schumacher.net",
+            role = c("aut", "cre", "cph"))
+Description: Model mixed integer linear programs in an algebraic way directly in R.
+             The model is solver-independent and thus offers the possibility
+             to solve a model with different solvers. It currently only supports
+             linear constraints and objective functions. See the 'ompr'
+             website <https://dirkschumacher.github.io/ompr> for more information, 
+             documentation and examples.
+License: GPL-3 | file LICENSE
+LazyData: TRUE
+RoxygenNote: 6.0.1
+URL: https://github.com/dirkschumacher/ompr
+BugReports: https://github.com/dirkschumacher/ompr/issues
+Depends: R (>= 3.2.0)
+Imports: dplyr, lazyeval, Rcpp
+Suggests: magrittr, testthat
+ByteCompile: Yes
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2017-04-17 13:59:07 UTC; dirkschumacher
+Author: Dirk Schumacher [aut, cre, cph]
+Maintainer: Dirk Schumacher <mail@dirk-schumacher.net>
+Repository: CRAN
+Date/Publication: 2017-04-17 14:52:25 UTC

@@ -1,0 +1,28 @@
+Package: conf
+Type: Package
+Title: Plotting Two-Dimensional Confidence Regions
+Version: 1.0
+Authors@R: c(person("Christopher", "Weld", role = c("aut", "cre"), email = "ceweld@email.wm.edu", comment = c(ORCID = "0000-0001-5902-9738")), 
+  person("Lawrence", "Leemis", role = "aut"))
+Maintainer: Christopher Weld <ceweld@email.wm.edu>
+Imports: stats
+Description: Plots the two-dimensional confidence region for probability distribution (Weibull or
+  inverse Gaussian) parameters corresponding to a user given dataset and level of significance. 
+  The crplot() algorithm plots more points in areas of greater curvature to ensure a smooth
+  appearance throughout the confidence region boundary.  An alternative heuristic plots a specified
+  number of points at roughly uniform intervals along its boundary.  Both heuristics build upon the 
+  radial profile log-likelihood ratio technique for plotting two-dimensional confidence regions given 
+  by Jaeger (2016) <doi:10.1080/00031305.2016.1182946>. 
+Depends: R (>= 3.3.0)
+License: GPL (<= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-03-01 18:07:32 UTC; christopherweld
+Author: Christopher Weld [aut, cre] (<https://orcid.org/0000-0001-5902-9738>),
+  Lawrence Leemis [aut]
+Repository: CRAN
+Date/Publication: 2018-03-02 13:47:54 UTC

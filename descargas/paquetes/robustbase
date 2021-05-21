@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package robustbase</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Basic Robust Statistics [R package robustbase version 0.93-6]" />
+<meta name="citation_author1" content="Martin Maechler" />
+<meta name="citation_author2" content="Valentin Todorov" />
+<meta name="citation_author3" content="Andreas Ruckstuhl" />
+<meta name="citation_author4" content="Matias Salibian-Barrera" />
+<meta name="citation_author5" content="Manuel Koller" />
+<meta name="citation_author6" content="Eduardo L. T. Conceicao" />
+<meta name="citation_publication_date" content="2020-03-23" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=robustbase" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=robustbase" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="robustbase: Basic Robust Statistics" />
+<meta name="og:description" content="&quot;Essential&quot; Robust Statistics. Tools allowing to analyze data with robust methods. This includes regression methodology including model selections and multivariate statistics where we strive to cover the book &quot;Robust Statistics, Theory and Methods&quot; by 'Maronna, Martin and Yohai'; Wiley 2006." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=robustbase" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>robustbase: Basic Robust Statistics</h2>
+<p>"Essential" Robust Statistics.
+ Tools allowing to analyze data with robust methods.  This includes
+ regression methodology including model selections and multivariate
+ statistics where we strive to cover the book "Robust Statistics,
+ Theory and Methods" by 'Maronna, Martin and Yohai'; Wiley 2006.</p>
+<table summary="Package robustbase summary">
+<tr>
+<td>Version:</td>
+<td>0.93-6</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.1.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>stats, graphics, utils, methods, <a href="../DEoptimR/index.html">DEoptimR</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td>grid, <a href="../MASS/index.html">MASS</a>, <a href="../lattice/index.html">lattice</a>, <a href="../boot/index.html">boot</a>, <a href="../cluster/index.html">cluster</a>, <a href="../Matrix/index.html">Matrix</a>, <a href="../robust/index.html">robust</a>, <a href="../fit.models/index.html">fit.models</a>, <a href="../MPV/index.html">MPV</a>, <a href="../xtable/index.html">xtable</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../GGally/index.html">GGally</a>, <a href="../RColorBrewer/index.html">RColorBrewer</a>, <a href="../reshape2/index.html">reshape2</a>, <a href="../sfsmisc/index.html">sfsmisc</a>, <a href="../catdata/index.html">catdata</a>, <a href="../doParallel/index.html">doParallel</a>, <a href="../foreach/index.html">foreach</a>, <a href="../skewt/index.html">skewt</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-03-23</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Martin Maechler <a href="https://orcid.org/0000-0002-8685-9910"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Peter Rousseeuw [ctb] (Qn and Sn),
+  Christophe Croux [ctb] (Qn and Sn),
+  Valentin Todorov [aut] (most robust Cov),
+  Andreas Ruckstuhl [aut] (nlrob, anova, glmrob),
+  Matias Salibian-Barrera [aut] (lmrob orig.),
+  Tobias Verbeke [ctb, fnd] (mc, adjbox),
+  Manuel Koller [aut] (mc, lmrob, psi-func.),
+  Eduardo L. T. Conceicao [aut] (MM-, tau-, CM-, and MTL- nlrob),
+  Maria Anna di Palma [ctb] (initial version of Comedian)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Martin Maechler  &#x3c;&#x6d;&#x61;&#x65;&#x63;&#x68;&#x6c;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x73;&#x74;&#x61;&#x74;&#x2e;&#x6d;&#x61;&#x74;&#x68;&#x2e;&#x65;&#x74;&#x68;&#x7a;&#x2e;&#x63;&#x68;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://robustbase.r-forge.r-project.org/">http://robustbase.r-forge.r-project.org/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">robustbase citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news.html">NEWS</a> <a href="ChangeLog">ChangeLog</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Multivariate.html">Multivariate</a>, <a href="../../views/Robust.html">Robust</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_robustbase.html">robustbase results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package robustbase downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="robustbase.pdf"> robustbase.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/fastMcd-kmini.pdf">covMcd() &ndash; Generalizing the FastMCD</a><br/>
+<a href="vignettes/lmrob_simulation.pdf">Simulations for Robust Regression Inference in Small Samples</a><br/>
+<a href="vignettes/psi_functions.pdf">Definitions of Psi-Functions Available in Robustbase</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/robustbase_0.93-6.tar.gz"> robustbase_0.93-6.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/robustbase_0.93-6.zip">robustbase_0.93-6.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/robustbase_0.93-6.zip">robustbase_0.93-6.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/robustbase_0.93-6.zip">robustbase_0.93-6.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/robustbase_0.93-6.tgz">robustbase_0.93-6.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/robustbase_0.93-6.tgz">robustbase_0.93-6.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/robustbase"> robustbase archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package robustbase reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../BMA/index.html">BMA</a>, <a href="../ccaPP/index.html">ccaPP</a>, <a href="../cvTools/index.html">cvTools</a>, <a href="../ddalpha/index.html">ddalpha</a>, <a href="../DetMCD/index.html">DetMCD</a>, <a href="../dmm/index.html">dmm</a>, <a href="../ForwardSearch/index.html">ForwardSearch</a>, <a href="../GWmodel/index.html">GWmodel</a>, <a href="../ltsbase/index.html">ltsbase</a>, <a href="../MALDIrppa/index.html">MALDIrppa</a>, <a href="../MBmca/index.html">MBmca</a>, <a href="../muma/index.html">muma</a>, <a href="../perry/index.html">perry</a>, <a href="../poissonMT/index.html">poissonMT</a>, <a href="../qpcR/index.html">qpcR</a>, <a href="../RobExtremes/index.html">RobExtremes</a>, <a href="../robfilter/index.html">robfilter</a>, <a href="../robmed/index.html">robmed</a>, <a href="../RobPer/index.html">RobPer</a>, <a href="../RobustAFT/index.html">RobustAFT</a>, <a href="../robustgam/index.html">robustgam</a>, <a href="../robustHD/index.html">robustHD</a>, <a href="../rrcov/index.html">rrcov</a>, <a href="../rrcovHD/index.html">rrcovHD</a>, <a href="../rrcovNA/index.html">rrcovNA</a>, <a href="../sscor/index.html">sscor</a>, <a href="../tsqn/index.html">tsqn</a>, <a href="../univOutl/index.html">univOutl</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../anomaly/index.html">anomaly</a>, <a href="../BIGL/index.html">BIGL</a>, <a href="../bigleaf/index.html">bigleaf</a>, <a href="../bigutilsr/index.html">bigutilsr</a>, <a href="../bulletr/index.html">bulletr</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/cellity.html"><span class="BioC">cellity</span></a>, <a href="../cellWise/index.html">cellWise</a>, <a href="../CerioliOutlierDetection/index.html">CerioliOutlierDetection</a>, <a href="../chemometrics/index.html">chemometrics</a>, <a href="../chipPCR/index.html">chipPCR</a>, <a href="../complmrob/index.html">complmrob</a>, <a href="../compositions/index.html">compositions</a>, <a href="../crmReg/index.html">crmReg</a>, <a href="../cvTools/index.html">cvTools</a>, <a href="../dartR/index.html">dartR</a>, <a href="../dataMaid/index.html">dataMaid</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/DepecheR.html"><span class="BioC">DepecheR</span></a>, <a href="../DetR/index.html">DetR</a>, <a href="../dfphase1/index.html">dfphase1</a>, <a href="../dmbc/index.html">dmbc</a>, <a href="../envoutliers/index.html">envoutliers</a>, <a href="../ergm/index.html">ergm</a>, <a href="../fAssets/index.html">fAssets</a>, <a href="../fpc/index.html">fpc</a>, <a href="../fPortfolio/index.html">fPortfolio</a>, <a href="../georob/index.html">georob</a>, <a href="../Gmedian/index.html">Gmedian</a>, <a href="../GNSSseg/index.html">GNSSseg</a>, <a href="../groc/index.html">groc</a>, <a href="../GSE/index.html">GSE</a>, <a href="../highfrequency/index.html">highfrequency</a>, <a href="../hpiR/index.html">hpiR</a>, <a href="../JWileymisc/index.html">JWileymisc</a>, <a href="../KRMM/index.html">KRMM</a>, <a href="../lessR/index.html">lessR</a>, <a href="../lolR/index.html">lolR</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/Maaslin2.html"><span class="BioC">Maaslin2</span></a>, <a href="../MAINT.Data/index.html">MAINT.Data</a>, <a href="../MendelianRandomization/index.html">MendelianRandomization</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/metaMS.html"><span class="BioC">metaMS</span></a>, <a href="../metRology/index.html">metRology</a>, <a href="../MKmisc/index.html">MKmisc</a>, <a href="../MKomics/index.html">MKomics</a>, <a href="../mvMonitoring/index.html">mvMonitoring</a>, <a href="../MVN/index.html">MVN</a>, <a href="../mvoutlier/index.html">mvoutlier</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/optimalFlow.html"><span class="BioC">optimalFlow</span></a>, <a href="../OutliersO3/index.html">OutliersO3</a>, <a href="../pcalg/index.html">pcalg</a>, <a href="../PCRedux/index.html">PCRedux</a>, <a href="../PhylogeneticEM/index.html">PhylogeneticEM</a>, <a href="../PlasmaMutationDetector/index.html">PlasmaMutationDetector</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/PrInCE.html"><span class="BioC">PrInCE</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/pulsedSilac.html"><span class="BioC">pulsedSilac</span></a>, <a href="../PupilPre/index.html">PupilPre</a>, <a href="../pyinit/index.html">pyinit</a>, <a href="../qGaussian/index.html">qGaussian</a>, <a href="../qqplotr/index.html">qqplotr</a>, <a href="../quokar/index.html">quokar</a>, <a href="../RandomCoefficients/index.html">RandomCoefficients</a>, <a href="../RcmdrPlugin.PcaRobust/index.html">RcmdrPlugin.PcaRobust</a>, <a href="../regrrr/index.html">regrrr</a>, <a href="../rlme/index.html">rlme</a>, <a href="../roahd/index.html">roahd</a>, <a href="../robCompositions/index.html">robCompositions</a>, <a href="../RobMixReg/index.html">RobMixReg</a>, <a href="../robreg3S/index.html">robreg3S</a>, <a href="../RobStatTM/index.html">RobStatTM</a>, <a href="../robust/index.html">robust</a>, <a href="../robustlmm/index.html">robustlmm</a>, <a href="../robustMVMR/index.html">robustMVMR</a>, <a href="../robustX/index.html">robustX</a>, <a href="../rospca/index.html">rospca</a>, <a href="../rpls/index.html">rpls</a>, <a href="../rrcov3way/index.html">rrcov3way</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/SC3.html"><span class="BioC">SC3</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/scPipe.html"><span class="BioC">scPipe</span></a>, <a href="../sdcMicro/index.html">sdcMicro</a>, <a href="../semiArtificial/index.html">semiArtificial</a>, <a href="../shotGroups/index.html">shotGroups</a>, <a href="../splithalf/index.html">splithalf</a>, <a href="../sprm/index.html">sprm</a>, <a href="../ssmrob/index.html">ssmrob</a>, <a href="../StatDA/index.html">StatDA</a>, <a href="../Taba/index.html">Taba</a>, <a href="../tergm/index.html">tergm</a>, <a href="../TVMM/index.html">TVMM</a>, <a href="../VIM/index.html">VIM</a>, <a href="../wordbankr/index.html">wordbankr</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/xcms.html"><span class="BioC">xcms</span></a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;linking&nbsp;to:</td>
+<td><a href="../robustlmm/index.html">robustlmm</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../broom/index.html">broom</a>, <a href="../ChemoSpec/index.html">ChemoSpec</a>, <a href="../ChemoSpec2D/index.html">ChemoSpec2D</a>, <a href="../ChemoSpecUtils/index.html">ChemoSpecUtils</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/ClassifyR.html"><span class="BioC">ClassifyR</span></a>, <a href="../depth/index.html">depth</a>, <a href="../DepthProc/index.html">DepthProc</a>, <a href="../FRESA.CAD/index.html">FRESA.CAD</a>, <a href="../ggeffects/index.html">ggeffects</a>, <a href="../ICS/index.html">ICS</a>, <a href="../insight/index.html">insight</a>, <a href="../ltsspca/index.html">ltsspca</a>, <a href="../mrfDepth/index.html">mrfDepth</a>, <a href="../multcomp/index.html">multcomp</a>, <a href="../PerformanceAnalytics/index.html">PerformanceAnalytics</a>, <a href="../PLSbiplot1/index.html">PLSbiplot1</a>, <a href="../PortfolioAnalytics/index.html">PortfolioAnalytics</a>, <a href="../robcor/index.html">robcor</a>, <a href="../robmixglm/index.html">robmixglm</a>, <a href="../rsae/index.html">rsae</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/scater.html"><span class="BioC">scater</span></a>, <a href="../simsalapar/index.html">simsalapar</a>, <a href="../timeSeries/index.html">timeSeries</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;enhances:</td>
+<td><a href="../DEoptimR/index.html">DEoptimR</a>, <a href="../stargazer/index.html">stargazer</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=robustbase"><samp>https://CRAN.R-project.org/package=robustbase</samp></a>
+to link to this page.</p>
+</body>
+</html>

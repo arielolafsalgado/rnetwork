@@ -1,0 +1,36 @@
+Package: PopED
+Type: Package
+Title: Population (and Individual) Optimal Experimental Design
+Version: 0.3.0
+Depends: ggplot2
+Imports: MASS, mvtnorm, nlme, dplyr, codetools, stats, utils
+Suggests: testthat, Hmisc, GA
+Authors@R: c(
+    person("Andrew C.","Hooker", email="andrew.hooker@farmbio.uu.se", role=c("aut","cre","trl","cph")),
+    person("Sebastian","Ueckert", role="aut", comment="MATLAB version"),
+    person("Marco","Foracchia", role="aut", comment="O-Matrix version"),
+    person("Joakim", "Nyberg", role="aut", comment="MATLAB version"),
+    person("Eric","Stroemberg", role="ctb", comment="MATLAB version")
+    )
+Description: Optimal experimental designs for both population and individual
+    studies based on nonlinear mixed-effect models. Often this is based on a
+    computation of the Fisher Information Matrix (FIM). This package was developed
+    for pharmacometric problems, and examples and predefined models are available
+    for these types of systems.
+License: LGPL (>= 3)
+ByteCompile: true
+URL: http://poped.sourceforge.net
+BugReports: https://github.com/andrewhooker/PopED/issues
+Copyright: 2014-2015 Andrew C. Hooker
+LazyData: true
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2015-12-29 20:49:39 UTC; ahooker
+Author: Andrew C. Hooker [aut, cre, trl, cph],
+  Sebastian Ueckert [aut] (MATLAB version),
+  Marco Foracchia [aut] (O-Matrix version),
+  Joakim Nyberg [aut] (MATLAB version),
+  Eric Stroemberg [ctb] (MATLAB version)
+Maintainer: Andrew C. Hooker <andrew.hooker@farmbio.uu.se>
+Repository: CRAN
+Date/Publication: 2015-12-29 22:29:36

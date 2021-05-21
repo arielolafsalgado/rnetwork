@@ -1,0 +1,27 @@
+Package: brotli
+Type: Package
+Title: A Compression Format Optimized for the Web
+Version: 1.1
+Authors@R: c(
+    person("Jeroen", "Ooms", ,"jeroen@berkeley.edu", role = c("aut", "cre")),
+    person("Google, Inc", role = c("aut","cph"), comment = "Brotli C++ library")
+  )
+Description: A lossless compressed data format that uses a combination of the
+    LZ77 algorithm and Huffman coding. Brotli is similar in speed to deflate (gzip)
+    but offers more dense compression.
+License: MIT + file LICENSE
+URL: https://tools.ietf.org/html/rfc7932 (spec)
+        https://github.com/google/brotli#readme (upstream)
+        http://github.com/jeroen/brotli#read (devel)
+BugReports: http://github.com/jeroen/brotli/issues
+VignetteBuilder: knitr, R.rsp
+Suggests: spelling, knitr, R.rsp, microbenchmark, rmarkdown, ggplot2
+RoxygenNote: 6.0.1
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2018-01-27 19:52:20 UTC; jeroen
+Author: Jeroen Ooms [aut, cre],
+  Google, Inc [aut, cph] (Brotli C++ library)
+Maintainer: Jeroen Ooms <jeroen@berkeley.edu>
+Repository: CRAN
+Date/Publication: 2018-01-28 16:03:24 UTC

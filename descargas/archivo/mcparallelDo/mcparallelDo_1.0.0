@@ -1,0 +1,23 @@
+Package: mcparallelDo
+Type: Package
+Title: A Simplified Interface for Running Commands on Parallel
+        Processes
+Version: 1.0.0
+Date: 2015-12-07
+Author: Russell S. Pierce
+Maintainer: Russell S. Pierce <russell.s.pierce@gmail.com>
+Description: Provides a function that wraps 
+    mcparallel() and mccollect() from 'parallel' with temporary variables and a 
+    task handler.  Wrapped in this way the results of an mcparallel() call 
+    can be returned to the R session when the fork is complete 
+    without explicitly issuing a specific mccollect() to retrieve the value.
+    Outside of top-level tasks, multiple mcparallel() jobs can be retrieved with 
+    a single call to mcparallelDoCheck().
+License: GPL-2
+Suggests: testthat
+RoxygenNote: 5.0.1
+Imports: parallel, R.utils, ArgumentCheck, R6
+NeedsCompilation: no
+Packaged: 2015-12-09 07:30:42 UTC; russell
+Repository: CRAN
+Date/Publication: 2015-12-09 11:06:36

@@ -1,0 +1,68 @@
+Package: SDMtune
+Type: Package
+Title: Species Distribution Model Selection
+Version: 0.1.0
+Date: 2019-06-20
+Authors@R: c(
+	  person("Sergio", "Vignali",  email = "sergio.vignali@iee.unibe.ch",
+	         role = c("aut", "cre"), comment = c(ORCID = "00000-0002-3390-5442")),
+	  person("Arnaud", "Barras", role = "aut",
+	         comment = c(ORCID = "0000-0003-0850-6965")),
+	  person("Veronika", "Braunisch", role = "aut",
+	         comment = c(ORCID = "00000-0001-7035-4662")),
+	  person("Conservation Biology - University of Bern", role = "fnd")
+	)
+Description: User-friendly framework that enables the training and the
+    evaluation of species distribution models (SDMs). The package implements
+    functions for data driven variable selection and model tuning and includes
+    numerous utilities to display the results. All the functions used to select
+    variables or to tune model hyperparameters have an interactive real-time
+    chart displayed in the 'RStudio' viewer pane during their execution. At the
+    moment only the maximum entropy method is available using the 'Java'
+    implementation, Phillips et al. (2006) <doi:10.1016/j.ecolmodel.2005.03.026>,
+    through the 'dismo' package and the 'R' implementation through the 'maxnet'
+    package, Phillips et al. (2017) <doi:10.1111/ecog.03049>. 'SDMtune' uses its
+    own script to predict maxent models, resulting in much faster predictions
+    for large datasets compared to native predictions from the use of the 'Java'
+    software. This reduces considerably the computation time when tuning the
+    model using the AICc.
+License: GPL-3
+URL: https://consbiol-unibern.github.io/SDMtune/
+BugReports: https://github.com/ConsBiol-unibern/SDMtune/issues
+Depends: R (>= 3.2.0)
+Imports: cli (>= 1.1.0), crayon (>= 1.3.4), dismo (>= 1.1-4), ggplot2
+        (>= 3.2.0), htmltools (>= 0.3.6), jsonlite (>= 1.6), kableExtra
+        (>= 1.1.0), maxnet (>= 0.1.2), methods, progress (>= 1.2.2),
+        raster (>= 2.9-5), rasterVis (>= 0.45), Rcpp (>= 1.0.1),
+        reshape2 (>= 1.4.3), rgdal (>= 1.4-4), rJava (>= 0.9-11),
+        rstudioapi (>= 0.10), scales (>= 1.0.0), stringr (>= 1.4.0),
+        whisker (>= 0.3-2)
+Encoding: UTF-8
+LazyData: true
+LinkingTo: Rcpp
+RoxygenNote: 6.1.1
+Suggests: covr, knitr (>= 1.23), maps (>= 3.3.0), pkgdown (>= 1.3.0),
+        rmarkdown (>= 1.13), roxygen2 (>= 6.1.1), snow (>= 0.4-3),
+        testthat (>= 2.1.1), zeallot (>= 0.1.0)
+VignetteBuilder: knitr
+Collate: 'Maxent_class.R' 'Maxnet_class.R' 'RcppExports.R'
+        'SDMmodel2MaxEnt.R' 'SWD_class.R' 'SDMmodelCV.R'
+        'SDMmodel_class.R' 'SDMtune.R' 'SDMtune_class.R' 'aicc.R'
+        'auc.R' 'chart_utils.R' 'condor.R' 'confMatrix.R' 'corVar.R'
+        'doJk.R' 'getSubsample.R' 'gridSearch.R' 'maxentTh.R'
+        'maxentVarImp.R' 'mergeSWD.R' 'modelReport.R' 'optimizeModel.R'
+        'plotCor.R' 'plotJk.R' 'plotPA.R' 'plotPred.R' 'plotROC.R'
+        'plotResponse.R' 'plotVarImp.R' 'predict_Maxent.R'
+        'predict_SDMmodel.R' 'prepareSWD.R' 'randomSearch.R'
+        'reduceVar.R' 'swd2csv.R' 'thinData.R' 'thresholds.R' 'train.R'
+        'trainMaxent.R' 'trainMaxnet.R' 'trainValTest.R' 'tss.R'
+        'utils.R' 'varImp.R' 'varSel.R' 'zzz.R'
+NeedsCompilation: yes
+Packaged: 2019-06-20 07:08:49 UTC; vignali
+Author: Sergio Vignali [aut, cre] (<https://orcid.org/00000-0002-3390-5442>),
+  Arnaud Barras [aut] (<https://orcid.org/0000-0003-0850-6965>),
+  Veronika Braunisch [aut] (<https://orcid.org/00000-0001-7035-4662>),
+  Conservation Biology - University of Bern [fnd]
+Maintainer: Sergio Vignali <sergio.vignali@iee.unibe.ch>
+Repository: CRAN
+Date/Publication: 2019-06-21 08:00:20 UTC

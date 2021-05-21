@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package ssdtools</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Species Sensitivity Distributions [R package ssdtools version 0.3.2]" />
+<meta name="citation_author1" content="Joe Thorley" />
+<meta name="citation_author2" content="Carl Schwarz" />
+<meta name="citation_publication_date" content="2020-09-02" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=ssdtools" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=ssdtools" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="ssdtools: Species Sensitivity Distributions" />
+<meta name="og:description" content="Species sensitivity distributions are cumulative probability distributions which are fitted to toxicity concentrations for different species as described by Posthuma et al.(2001) &amp;lt;isbn:9781566705783&amp;gt;. The ssdtools package uses Maximum Likelihood to fit distributions such as the log-normal, gamma, log-logistic, log-Gumbel, Gompertz and Weibull. The user can provide custom distributions. Multiple distributions can be averaged using Information Criteria. Confidence intervals on hazard concentrations and proportions are produced by parametric bootstrapping." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=ssdtools" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>ssdtools: Species Sensitivity Distributions</h2>
+<p>Species sensitivity distributions are 
+  cumulative probability distributions which are fitted to 
+  toxicity concentrations for different species as described by
+  Posthuma et al.(2001) &lt;isbn:9781566705783&gt;.
+  The ssdtools package uses Maximum Likelihood to fit distributions 
+  such as the log-normal, gamma, log-logistic, 
+  log-Gumbel, Gompertz and Weibull.
+  The user can provide custom distributions.
+  Multiple distributions can be averaged using Information Criteria.
+  Confidence intervals on hazard concentrations and proportions are produced by 
+  parametric bootstrapping.</p>
+<table summary="Package ssdtools summary">
+<tr>
+<td>Version:</td>
+<td>0.3.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.4)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../chk/index.html">chk</a>, <a href="../fitdistrplus/index.html">fitdistrplus</a>, <a href="../abind/index.html">abind</a>, <a href="../actuar/index.html">actuar</a>, <a href="../ggplot2/index.html">ggplot2</a>, graphics, grid, <a href="../lifecycle/index.html">lifecycle</a>, <a href="../tibble/index.html">tibble</a>, <a href="../scales/index.html">scales</a>, stats, <a href="../VGAM/index.html">VGAM</a>, <a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../covr/index.html">covr</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../testthat/index.html">testthat</a>, <a href="../readr/index.html">readr</a>, <a href="../rlang/index.html">rlang</a>, <a href="../purrr/index.html">purrr</a>, <a href="../tidyr/index.html">tidyr</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../R.rsp/index.html">R.rsp</a>, <a href="../mle.tools/index.html">mle.tools</a>, <a href="../reshape2/index.html">reshape2</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-02</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Joe Thorley <a href="https://orcid.org/0000-0002-7683-4592"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    cre, ctr],
+  Carl Schwarz [aut, ctr],
+  Angeline Tillmanns [ctb],
+  Ali Azizishirazi [ctb],
+  Rebecca Fisher [ctb],
+  David Fox [ctb],
+  Kathleen McTavish [ctb],
+  Heather Thompson [ctb],
+  Andy Teucher [ctb],
+  Emilie Doussantousse [ctb],
+  Stephanie Hazlitt [ctb],
+  Nan-Hung Hsieh [ctb],
+  Sergio Ibarra Espinosa [ctb],
+  Province of British Columbia [cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Joe Thorley  &#x3c;&#x6a;&#x6f;&#x65;&#x20;&#x61;&#x74;&#x20;&#x70;&#x6f;&#x69;&#x73;&#x73;&#x6f;&#x6e;&#x63;&#x6f;&#x6e;&#x73;&#x75;&#x6c;&#x74;&#x69;&#x6e;&#x67;&#x2e;&#x63;&#x61;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/bcgov/ssdtools/issues">https://github.com/bcgov/ssdtools/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License (== 2.0)</a> | file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/bcgov/ssdtools">https://github.com/bcgov/ssdtools</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">ssdtools citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_ssdtools.html">ssdtools results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package ssdtools downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="ssdtools.pdf"> ssdtools.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/distributions.html">Selecting Distributions</a><br/>
+<a href="vignettes/exposure-plots.html">Embellishing Plots with an Exposure Distribution</a><br/>
+<a href="vignettes/faqs.html">Frequently Asked Questions</a><br/>
+<a href="vignettes/small-sample-bias-ref.html">Small sample bias in estimates - reference</a><br/>
+<a href="vignettes/ssdtools.html">Get Started with ssdtools</a><br/>
+<a href="vignettes/small-sample-bias.pdf">Small sample bias in estimates</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/ssdtools_0.3.2.tar.gz"> ssdtools_0.3.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/ssdtools_0.3.2.zip">ssdtools_0.3.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/ssdtools_0.3.2.zip">ssdtools_0.3.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/ssdtools_0.3.2.zip">ssdtools_0.3.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/ssdtools_0.3.2.tgz">ssdtools_0.3.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/ssdtools_0.3.2.tgz">ssdtools_0.3.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/ssdtools"> ssdtools archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=ssdtools"><samp>https://CRAN.R-project.org/package=ssdtools</samp></a>
+to link to this page.</p>
+</body>
+</html>

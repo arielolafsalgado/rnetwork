@@ -1,0 +1,27 @@
+Package: REDCapExporter
+Title: Automated Construction of R Data Packages from REDCap Projects
+Version: 0.1.0
+Authors@R: person("Peter", "DeWitt", email = "peter.dewitt@cuanschutz.edu", role = c("aut", "cre"))
+Description: Export all data, including metadata, from a REDCap (Research
+    Electronic Data Capture) Project via the REDCap API
+    <https://projectredcap.org/wp-content/resources/REDCapTechnicalOverview.pdf>.
+    The exported (meta)data will be processed and formatted into a stand alone R
+    data package which can be installed and shared between researchers.  Several
+    default reports are generated as vignettes in the resulting package.
+License: GPL-2
+Encoding: UTF-8
+URL: https://github.com/dewittpe/REDCapExporter
+Language: en-us
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: lubridate, RCurl
+Suggests: data.table, devtools, fs, knitr, magrittr, qwraps2 (> 0.4.1),
+        rmarkdown, rjson, secret
+VignetteBuilder: knitr
+RoxygenNote: 7.0.2
+NeedsCompilation: no
+Packaged: 2019-12-19 05:14:30 UTC; dewittp
+Author: Peter DeWitt [aut, cre]
+Maintainer: Peter DeWitt <peter.dewitt@cuanschutz.edu>
+Repository: CRAN
+Date/Publication: 2019-12-22 16:50:02 UTC

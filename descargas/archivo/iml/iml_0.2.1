@@ -1,0 +1,28 @@
+Package: iml
+Type: Package
+Title: Interpretable Machine Learning
+Version: 0.2.1
+Date: 2018-03-04
+Authors@R: c(person(given = "Christoph", family = "Molnar", 
+                    role = c("aut", "cre"), email = "christoph.molnar@gmail.com"))
+Maintainer: Christoph Molnar <christoph.molnar@gmail.com>
+Description: Interpretability methods to analyze the behavior and predictions of
+ any machine learning model.
+ Implemented methods are:
+ Feature importance described by Fisher et al. (2018) <arXiv:1801.01489>,
+ partial dependence plots described by Friedman (2001) <http://www.jstor.org/stable/2699986>,
+ individual conditional expectation ('ice') plots described by Goldstein et al. (2013) <doi:10.1080/10618600.2014.907095>,
+ local models (variant of 'lime') described by Ribeiro et. al (2016) <arXiv:1602.04938>,
+ the Shapley Value described by Strumbelj et. al (2014) <doi:10.1007/s10115-013-0679-x> and
+ tree surrogate models.
+Imports: R6, checkmate, dplyr, tidyr, ggplot2, partykit, glmnet,
+        Metrics, data.table
+Suggests: randomForest, gower, testthat, rpart, MASS, caret, e1071,
+        lime, mlr
+License: MIT + file LICENSE
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-03-07 13:47:11 UTC; chris
+Author: Christoph Molnar [aut, cre]
+Repository: CRAN
+Date/Publication: 2018-03-13 17:14:38 UTC

@@ -1,0 +1,36 @@
+Package: codemetar
+Type: Package
+Title: Generate 'CodeMeta' Metadata for R Packages
+Version: 0.1.3
+Authors@R: person("Carl", "Boettiger", 
+                  role=c("aut", "cre", "cph"), 
+                  email="cboettig@gmail.com", 
+                  comment=c(ORCID = "0000-0002-1642-628X"))
+Description: The 'Codemeta' Project defines a 'JSON-LD' format for describing
+  software metadata, as detailed at <https://codemeta.github.io>. This package
+  provides utilities to generate, parse, and modify 'codemeta.json' files 
+  automatically for R packages, as well as tools and examples for working with
+  'codemeta.json' 'JSON-LD' more generally.
+License: MIT + file LICENSE
+URL: https://github.com/ropensci/codemetar
+BugReports: https://github.com/ropensci/codemetar/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Depends: R (>= 3.0.0)
+Imports: jsonlite (>= 1.3), jsonld, git2r, devtools, methods, stats,
+        stringi, readr
+Suggests: testthat, jsonvalidate, covr, knitr, rmarkdown, httr,
+        magrittr, xml2, dplyr (>= 0.7.0), tibble, purrr, printr
+VignetteBuilder: knitr
+X-schema.org-keywords: metadata, codemeta, ropensci, citation, credit,
+        linked-data
+X-schema.org-isPartOf: https://ropensci.org
+X-schema.org-relatedLink: https://codemeta.github.io/codemetar
+NeedsCompilation: no
+Packaged: 2018-02-07 21:38:44 UTC; cboettig
+Author: Carl Boettiger [aut, cre, cph]
+    (<https://orcid.org/0000-0002-1642-628X>)
+Maintainer: Carl Boettiger <cboettig@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-02-08 10:21:02 UTC

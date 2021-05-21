@@ -1,0 +1,20 @@
+Package: cordillera
+Title: Calculation of the OPTICS Cordillera
+Version: 0.7-0
+Date: 2017-07-24
+Authors@R: c(person(given="Thomas", family="Rusch", email="thomas.rusch@wu.ac.at", role = c("aut","cre")), person(given="Patrick",family="Mair", role = "ctb"),person(given="Kurt",family="Hornik", role = "ctb"))
+Author: Thomas Rusch [aut, cre], Patrick Mair [ctb], Kurt Hornik [ctb]
+Maintainer: Thomas Rusch <thomas.rusch@wu.ac.at>
+Description: Functions for calculating the OPTICS Cordillera. The OPTICS Cordillera measures the amount of 'clusteredness' in a numeric data matrix within a distance-density based framework for a given minimum number of points comprising a cluster, as described in Rusch, Hornik, Mair (2017) <doi:10.1080/10618600.2017.1349664>. There is an R native version and a version that uses 'ELKI', with methods for printing, summarizing, and plotting the result. There also is an interface to the reference implementation of OPTICS in 'ELKI'.
+Depends: R (>= 3.1.2),
+SystemRequirements: ELKI (>=0.6.0 if used)
+Imports: dbscan, yesno
+Suggests: cluster, scatterplot3d, MASS
+License: GPL-2 | GPL-3
+LazyData: true
+URL: http://r-forge.r-project.org/projects/stops/
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-07-24 20:27:45 UTC; root
+Repository: CRAN
+Date/Publication: 2017-07-24 22:07:51 UTC

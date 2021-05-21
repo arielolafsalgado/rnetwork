@@ -1,0 +1,36 @@
+Package: emba
+Type: Package
+Title: Ensemble Boolean Model Biomarker Analysis
+Version: 0.1.1
+Authors@R: person("John", "Zobolas", role = c("aut", "cph", "cre"), 
+  email = "bblodfon@gmail.com", comment = c(ORCID = "0000-0002-3609-8674"))
+Description: Analysis and visualization of an ensemble of boolean models for 
+  biomarker discovery in cancer cell networks. The package allows to easily 
+  import the data results of a software pipeline that predicts synergistic drug 
+  combinations in cancer cell lines, developed by the DrugLogics research group 
+  in NTNU. It has generic functions that can be used to split a boolean model 
+  dataset to model groups with regards to the models predictive performance (number of true 
+  positive predictions or Matthews correlation coefficient score) or synergy prediction based on a given set 
+  of observed synergies and find the average activity difference per network 
+  node between all group pairs. Thus, given user-specific thresholds,
+  important nodes (biomarkers) can be accessed in the sense that they make the 
+  models predict specific synergies (synergy biomarkers) or have better 
+  performance in general (performance biomarkers). Lastly, if the 
+  boolean models have a specific equation form and differ only in their link operator, 
+  link operator biomarkers can also be assessed.
+License: MIT + file LICENSE
+URL: https://github.com/bblodfon/emba
+BugReports: https://github.com/bblodfon/emba/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Imports: graphics, grDevices, utils, rje (>= 1.9), igraph (>= 1.2.4),
+        visNetwork (>= 2.0.7), Ckmeans.1d.dp (>= 4.2.2), magrittr (>=
+        1.5), usefun (>= 0.4.1)
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2019-10-18 14:20:45 UTC; john
+Author: John Zobolas [aut, cph, cre] (<https://orcid.org/0000-0002-3609-8674>)
+Maintainer: John Zobolas <bblodfon@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-10-21 14:30:02 UTC

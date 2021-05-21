@@ -1,0 +1,41 @@
+Package: phenofit
+Type: Package
+Title: Extract Remote Sensing Vegetation Phenology
+Version: 0.2.0
+Authors@R: c(
+    person("Dongdong", "Kong", role = c("aut", "cre"), email = "kongdd.sysu@gmail.com"),
+    person("Mingzhong", "Xiao", role = c("aut"), email = "xmingzh@mail2.sysu.edu.cn"),
+    person("Yongqiang", "Zhang", role = c("aut"), email = "yongqiang.zhang2014@gmail.com"),
+    person("Xihui", "Gu", role = c("aut"), email = "guxh@cug.edu.cn"),
+    person("Jianjian", "Cui", role = c("aut"), email = "cuijj6@mail2.sysu.edu.cn"))
+Description: 
+    The merits of 'TIMESAT' and 'phenopix' are adopted. Besides, a simple and 
+    growing season dividing method and a practical snow elimination method 
+    based on Whittaker were proposed. 7 curve fitting methods and 4 phenology 
+    extraction methods were provided. Parameters boundary are considered for 
+    every curve fitting methods according to their ecological meaning. 
+    And 'optimx' is used to select best optimization method for different 
+    curve fitting methods.
+License: GPL-2 | file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+LinkingTo: Rcpp, RcppArmadillo
+Depends: R (>= 3.1)
+Imports: Rcpp, tibble, dplyr, purrr, stringr, tidyr, ggplot2,
+        lubridate, data.table, spam, grid, gridExtra, magrittr, plyr,
+        reshape2, zoo, optimx, ucminf, numDeriv, grDevices, utils,
+        stats, DT
+Suggests: knitr, rmarkdown, testthat
+URL: https://github.com/kongdd/phenofit
+BugReports: https://github.com/kongdd/phenofit/issues
+NeedsCompilation: yes
+Packaged: 2019-02-08 23:37:39 UTC; kongdd
+Author: Dongdong Kong [aut, cre],
+  Mingzhong Xiao [aut],
+  Yongqiang Zhang [aut],
+  Xihui Gu [aut],
+  Jianjian Cui [aut]
+Maintainer: Dongdong Kong <kongdd.sysu@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-02-18 11:50:04 UTC

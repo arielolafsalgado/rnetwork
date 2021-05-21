@@ -1,0 +1,22 @@
+Package: DevTreatRules
+Type: Package
+Title: Develop Treatment Rules with Observational Data
+Version: 1.0.0
+Authors@R: c(person("Jeremy", "Roth", email = "jhroth@uw.edu", role=c("cre", "aut")),
+                         person("Noah", "Simon", email = "nrsimon@uw.edu", role="aut"))
+Description: Develop and evaluate treatment rules based on: (1) the standard indirect approach of split-regression, which fits regressions separately in both treatment groups and assigns an individual to the treatment option under which predicted outcome is more desirable; (2) the direct approach of outcome-weighted-learning proposed by Yingqi Zhao, Donglin Zeng, A. John Rush, and Michael Kosorok (2012) <doi:10.1080/01621459.2012.695674>; (3) the direct approach, which we refer to as direct-interactions, proposed by Shuai Chen, Lu Tian, Tianxi Cai, and Menggang Yu (2017) <doi:10.1111/biom.12676>. Please see the vignette for a walk-through of how to start with an observational dataset whose design is understood scientifically and end up with a treatment rule that is trustworthy statistically, along with an estimation of rule benefit in an independent sample.
+Depends: R (>= 3.2.0)
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+Imports: glmnet, DynTxRegime, modelObj
+Suggests: dplyr, knitr, rmarkdown
+NeedsCompilation: no
+Packaged: 2019-05-13 20:31:43 UTC; jeremy
+Author: Jeremy Roth [cre, aut],
+  Noah Simon [aut]
+Maintainer: Jeremy Roth <jhroth@uw.edu>
+Repository: CRAN
+Date/Publication: 2019-05-16 11:20:07 UTC

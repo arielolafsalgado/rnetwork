@@ -1,0 +1,37 @@
+Package: textdata
+Title: Download and Load Various Text Datasets
+Version: 0.2.0
+Authors@R: c(person(given = "Emil",
+                    family = "Hvitfeldt",
+                    role = c("aut", "cre"),
+                    email = "emilhhvitfeldt@gmail.com",
+                    comment = c(ORCID = "0000-0002-0679-1945")),
+             person(given = "Julia", 
+                    family = "Silge", 
+                    role = c("ctb"), 
+                    email = "julia.silge@gmail.com", 
+                    comment = c(ORCID = "0000-0002-3671-836X")))
+Description: Provides a framework to download, parse, and store text datasets
+    on the disk and load them when needed. Includes various sentiment lexicons
+    and labeled text data sets for classification and analysis.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: fs, readr, tibble, rappdirs
+RoxygenNote: 6.1.1
+Collate: 'dataset_ag_news.R' 'dataset_dbpedia.R' 'dataset_imdb.R'
+        'dataset_sentence_polarity.R' 'dataset_trec.R' 'lexicon_nrc.R'
+        'lexicon_bing.R' 'lexicon_loughran.R' 'lexicon_afinn.R'
+        'download_functions.R' 'info.R' 'load_dataset.R' 'printer.R'
+        'process_functions.R'
+Suggests: knitr, rmarkdown, testthat (>= 2.1.0)
+VignetteBuilder: knitr
+URL: https://github.com/EmilHvitfeldt/textdata
+BugReports: https://github.com/EmilHvitfeldt/textdata/issues
+NeedsCompilation: no
+Packaged: 2019-07-22 21:37:06 UTC; emilhvitfeldthansen
+Author: Emil Hvitfeldt [aut, cre] (<https://orcid.org/0000-0002-0679-1945>),
+  Julia Silge [ctb] (<https://orcid.org/0000-0002-3671-836X>)
+Maintainer: Emil Hvitfeldt <emilhhvitfeldt@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-07-22 21:50:02 UTC

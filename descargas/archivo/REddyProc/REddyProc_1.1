@@ -1,0 +1,63 @@
+Package: REddyProc
+Type: Package
+Version: 1.1
+Title: Post Processing of (Half-)Hourly Eddy-Covariance Measurements
+Authors@R: c( person( "Department for Biogeochemical Integration at MPI-BGC, Jena, Germany", role=c("cph"), email="REddyProc-help@bgc-jena.mpg.de" )
+              ,person( "Thomas", "Wutzler", role=c("aut","cre"), email="twutz@bgc-jena.mpg.de" )
+              ,person( "Markus", "Reichstein", role=c("aut"), email="mreichstein@bgc-jena.mpg.de")
+              ,person( c("Antje","Maria"), "Moffat", role=c("aut","trl"), email="antje.moffat@bgc.mpg.de" )
+              ,person( "Olaf", "Menzer", role=c("ctb"), email="omenzer@bgc-jena.mpg.de" )
+              ,person( "Mirco", "Migliavacca", role=c("aut"), email="mmiglia@bgc-jena.mpg.de" )
+              ,person( "Kerstin", "Sickel", role=c("ctb","trl"), email="ksickel@bgc-jena.mpg.de" )
+              ,person( "Ladislav", "Šigut", role=c("ctb"), email="sigut.l@czechglobe.cz" )
+              )
+Description: Standard and extensible Eddy-Covariance data post-processing includes  
+  uStar-filtering, gap-filling, and flux-partitioning.
+  The Eddy-Covariance (EC)  micrometeorological technique quantifies continuous 
+  exchange fluxes of gases, energy, and momentum between an ecosystem and the atmosphere.
+  It is important for understanding ecosystem dynamics and upscaling exchange fluxes.
+  (Aubinet et al. (2012) <doi:10.1007/978-94-007-2351-1>).
+  This package inputs pre-processed (half-)hourly data and supports further processing. 
+  First, a quality-check and filtering is performed based on the relationship between 
+  measured flux and friction
+  velocity (uStar) to discard biased data 
+  (Papale et al. (2006) <doi:10.5194/bg-3-571-2006>).
+  Second, gaps in the data are filled based on information from environmental conditions
+  (Reichstein et al. (2005) <doi:10.1111/j.1365-2486.2005.001002.x>).
+  Third, the net flux of carbon dioxide is partitioned
+  into its gross fluxes in and out of the ecosystem by night-time 
+  based and day-time based approaches
+  (Lasslop et al. (2010) <doi:10.1111/j.1365-2486.2009.02041.x>).
+URL: https://www.bgc-jena.mpg.de/bgi/index.php/Services/REddyProcWeb,
+        http://r-forge.r-project.org/projects/reddyproc/
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+LinkingTo: Rcpp
+Depends: R (>= 3.0.0), methods
+Imports: dplyr, purrr, mlegp, logitnorm, tibble
+Suggests: ncdf4, RNetCDF, testthat, minpack.lm, segmented, knitr
+Collate: 'DataFunctions.R' 'aEddy.R' 'EddyGapfilling.R'
+        'EddyPartitioning.R' 'EddyPlotting.R'
+        'EddyUStarFilterChangePointDetection.R' 'EddyUStarFilterDP.R'
+        'Example.R' 'FileHandling.R' 'FileHandlingFormats.R'
+        'GeoFunctions.R' 'LRC_base.R' 'LRC_logisticSigmoid.R'
+        'LRC_nonrectangular.R' 'LRC_rectangular.R'
+        'PartitioningLasslop10.R' 'PartitioningLasslop10Nighttime.R'
+        'RcppExports.R' 'imports.R' 'variableNames.R' 'zzzDebugCode.R'
+NeedsCompilation: yes
+Packaged: 2018-01-08 16:48:07 UTC; twutz
+Author: Department for Biogeochemical Integration at MPI-BGC, Jena, Germany
+    [cph],
+  Thomas Wutzler [aut, cre],
+  Markus Reichstein [aut],
+  Antje Maria Moffat [aut, trl],
+  Olaf Menzer [ctb],
+  Mirco Migliavacca [aut],
+  Kerstin Sickel [ctb, trl],
+  Ladislav Šigut [ctb]
+Maintainer: Thomas Wutzler <twutz@bgc-jena.mpg.de>
+Repository: CRAN
+Date/Publication: 2018-01-09 14:12:13 UTC

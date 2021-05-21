@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package bmgarch</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Bayesian Multivariate GARCH Models [R package bmgarch version 1.0.0]" />
+<meta name="citation_author1" content="Philippe Rast" />
+<meta name="citation_author2" content="Stephen Martin" />
+<meta name="citation_publication_date" content="2020-09-17" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=bmgarch" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=bmgarch" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="bmgarch: Bayesian Multivariate GARCH Models" />
+<meta name="og:description" content="Fit Bayesian multivariate GARCH models using 'Stan' for full Bayesian inference. Generate (weighted) forecasts for means, variances (volatility) and correlations. Currently DCC(P,Q), CCC(P,Q), pdBEKK(P,Q), and BEKK(P,Q) parameterizations are implemented, based either on a multivariate gaussian normal or student-t distribution. DCC and CCC models are based on Engle (2002) &amp;lt;&lt;a href=&quot;https://doi.org/10.1198%2F073500102288618487&quot;&gt;doi:10.1198/073500102288618487&lt;/a&gt;&amp;gt; and Bollerslev (1990) &amp;lt;&lt;a href=&quot;https://doi.org/10.2307%2F2109358&quot;&gt;doi:10.2307/2109358&lt;/a&gt;&amp;gt;. The BEKK parameterization follows Engle and Kroner (1995) &amp;lt;&lt;a href=&quot;https://doi.org/10.1017%2FS0266466600009063&quot;&gt;doi:10.1017/S0266466600009063&lt;/a&gt;&amp;gt; while the pdBEKK as well as the estimation approach for this package is described in Rast et al. (2020) &amp;lt;&lt;a href=&quot;https://doi.org/10.31234%2Fosf.io%2Fj57pk&quot;&gt;doi:10.31234/osf.io/j57pk&lt;/a&gt;&amp;gt;. The fitted models contain 'rstan' objects and can be examined with 'rstan' functions. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=bmgarch" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>bmgarch: Bayesian Multivariate GARCH Models</h2>
+<p>Fit Bayesian multivariate GARCH models using 'Stan' for full Bayesian inference. Generate (weighted) forecasts for means, variances (volatility) and correlations. Currently DCC(P,Q), CCC(P,Q), pdBEKK(P,Q), and BEKK(P,Q) parameterizations are implemented, based either on a multivariate gaussian normal or student-t distribution. DCC and CCC models are based on Engle (2002) &lt;<a href="https://doi.org/10.1198%2F073500102288618487">doi:10.1198/073500102288618487</a>&gt; and Bollerslev (1990) &lt;<a href="https://doi.org/10.2307%2F2109358">doi:10.2307/2109358</a>&gt;. The BEKK parameterization follows Engle and Kroner (1995) &lt;<a href="https://doi.org/10.1017%2FS0266466600009063">doi:10.1017/S0266466600009063</a>&gt; while the pdBEKK as well as the estimation approach for this package is described in Rast et al. (2020) &lt;<a href="https://doi.org/10.31234%2Fosf.io%2Fj57pk">doi:10.31234/osf.io/j57pk</a>&gt;. The fitted models contain 'rstan' objects and can be examined with 'rstan' functions.  </p>
+<table summary="Package bmgarch summary">
+<tr>
+<td>Version:</td>
+<td>1.0.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>methods, R (&ge; 3.5.0), <a href="../Rcpp/index.html">Rcpp</a> (&ge; 1.0.1)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../rstan/index.html">rstan</a> (&ge; 2.21.2), <a href="../rstantools/index.html">rstantools</a> (&ge; 1.5.1), <a href="../ggplot2/index.html">ggplot2</a>, <a href="../MASS/index.html">MASS</a>, <a href="../forecast/index.html">forecast</a>, <a href="../loo/index.html">loo</a>, <a href="../Rdpack/index.html">Rdpack</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../BH/index.html">BH</a> (&ge; 1.69.0-1), <a href="../Rcpp/index.html">Rcpp</a> (&ge; 1.0.1), <a href="../RcppEigen/index.html">RcppEigen</a> (&ge; 0.3.3.5.0), <a href="../rstan/index.html">rstan</a> (&ge; 2.18.2), <a href="../StanHeaders/index.html">StanHeaders</a> (&ge; 2.18.1)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a> (&ge; 2.1.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-17</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Philippe Rast <a href="https://orcid.org/0000-0003-3630-6629"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Stephen Martin <a href="https://orcid.org/0000-0001-8085-2390"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Philippe Rast  &#x3c;&#x72;&#x61;&#x73;&#x74;&#x2e;&#x70;&#x68;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ph-rast/bmgarch/issues">https://github.com/ph-rast/bmgarch/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL (&ge; 3)</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>GNU make</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Finance.html">Finance</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_bmgarch.html">bmgarch results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package bmgarch downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="bmgarch.pdf"> bmgarch.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/bmgarch_1.0.0.tar.gz"> bmgarch_1.0.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/bmgarch_1.0.0.zip">bmgarch_1.0.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/bmgarch_1.0.0.zip">bmgarch_1.0.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/bmgarch_1.0.0.zip">bmgarch_1.0.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: not available, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/bmgarch_1.0.0.tgz">bmgarch_1.0.0.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=bmgarch"><samp>https://CRAN.R-project.org/package=bmgarch</samp></a>
+to link to this page.</p>
+</body>
+</html>

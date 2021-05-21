@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package RelimpPCR</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=RelimpPCR" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="RelimpPCR: Relative Importance PCA Regression" />
+<meta name="og:description" content="Performs Principal Components Analysis (also known as PCA) dimensionality reduction in the context of a linear regression. In most cases, PCA dimensionality reduction is performed independent of the response variable for a regression. This captures the majority of the variance of the model's predictors, but may not actually be the optimal dimensionality reduction solution for a regression against the response variable. An alternative method, optimized for a regression against the response variable, is to use both PCA and a relative importance measure. This package applies PCA to a given data frame of predictors, and then calculates the relative importance of each PCA factor against the response variable. It outputs ordered factors that are optimized for model fit. By performing dimensionality reduction with this method, an individual can achieve a the same r-squared value as performing just PCA, but with fewer PCA factors. References: Yuri Balasanov (2017) &amp;lt;&lt;a href=&quot;https://ilykei.com&quot;&gt;https://ilykei.com&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=RelimpPCR" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>RelimpPCR: Relative Importance PCA Regression</h2>
+<p>Performs Principal Components Analysis (also known as PCA) dimensionality reduction in the context of a linear regression. In most cases, PCA dimensionality reduction is performed independent of the response variable for a regression. This captures the majority of the variance of the model's predictors, but may not actually be the optimal dimensionality reduction solution for a regression against the response variable. An alternative method, optimized for a regression against the response variable, is to use both PCA and a relative importance measure. This package applies PCA to a given data frame of predictors, and then calculates the relative importance of each PCA factor against the response variable. It outputs ordered factors that are optimized for model fit. By performing dimensionality reduction with this method, an individual can achieve a the same r-squared value as performing just PCA, but with fewer PCA factors. References: Yuri Balasanov (2017) &lt;<a href="https://ilykei.com">https://ilykei.com</a>&gt;.</p>
+<table summary="Package RelimpPCR summary">
+<tr>
+<td>Version:</td>
+<td>0.2.4</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../relaimpo/index.html">relaimpo</a>, <a href="../Rmisc/index.html">Rmisc</a>, <a href="../caret/index.html">caret</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../reshape2/index.html">reshape2</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td>parallel, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-05-02</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Michael Hernandez, Yuri Balasanov</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Michael Hernandez  &#x3c;&#x68;&#x65;&#x72;&#x6e;&#x61;&#x6e;&#x64;&#x65;&#x7a;&#x20;&#x61;&#x74;&#x20;&#x75;&#x63;&#x68;&#x69;&#x63;&#x61;&#x67;&#x6f;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/mhernan88/RelimpPCR/issues">https://github.com/mhernan88/RelimpPCR/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/mhernan88/RelimpPCR">https://github.com/mhernan88/RelimpPCR</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_RelimpPCR.html">RelimpPCR results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package RelimpPCR downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="RelimpPCR.pdf"> RelimpPCR.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/RelimpPCR_0.2.4.tar.gz"> RelimpPCR_0.2.4.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/RelimpPCR_0.2.4.zip">RelimpPCR_0.2.4.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/RelimpPCR_0.2.4.zip">RelimpPCR_0.2.4.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/RelimpPCR_0.2.4.zip">RelimpPCR_0.2.4.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/RelimpPCR_0.2.4.tgz">RelimpPCR_0.2.4.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/RelimpPCR_0.2.4.tgz">RelimpPCR_0.2.4.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/RelimpPCR"> RelimpPCR archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=RelimpPCR"><samp>https://CRAN.R-project.org/package=RelimpPCR</samp></a>
+to link to this page.</p>
+</body>
+</html>

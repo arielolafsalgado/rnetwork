@@ -1,0 +1,26 @@
+Package: genotypeR
+Title: SNP Genotype Marker Design and Analysis
+Version: 0.0.1.6
+Authors@R: c(person(given=c("Stephen", "Alfred"), family="Sefick", email = "ssefick@gmail.com", role = c("aut", "cre")), person(given=c("Magdelena", "A"),family="Castronova", email = "mac0079@auburn.edu", role = c("aut")), person(given=c("Laurie", "S"), family="Stevison", email = "lss0021@auburn.edu", role = c("aut")))
+Description: We implement a common genotyping workflow with a standardized software interface. 'genotypeR' designs genotyping markers from vcf files, outputs markers for multiplexing suitability on various platforms (Sequenom and Illumina GoldenGate), and provides various QA/QC and analysis functions. We developed this package to analyze data in Stevison LS, SA Sefick, CA Rushton, and RM Graze. Accepted. Invited Review: Recombination rate plasticity: revealing mechanisms by design. Philosophical Transactions Royal Society London B Biol Sci. <DOI:10.1098/rstb.2015.0615>. 
+Depends: R (>= 3.3.2)
+License: GPL (>= 3)
+URL: https://github.com/StevisonLab/genotypeR
+Encoding: UTF-8
+LazyData: true
+LazyLoad: yes
+RoxygenNote: 6.0.1
+SystemRequirements: The SequenomMarkers() marker design function
+        requires 'vcftools' and 'Perl' on 'windows', and, in addition,
+        'awk' and 'bash' on '*nix'.
+Suggests: testthat, knitr, rmarkdown, qtl
+Imports: methods, reshape2, plyr, doBy, zoo, colorspace
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-08-23 17:42:48 UTC; ssefick
+Author: Stephen Alfred Sefick [aut, cre],
+  Magdelena A Castronova [aut],
+  Laurie S Stevison [aut]
+Maintainer: Stephen Alfred Sefick <ssefick@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-08-23 20:55:52 UTC

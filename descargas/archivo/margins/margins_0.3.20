@@ -1,0 +1,36 @@
+Package: margins
+Type: Package
+Title: Marginal Effects for Model Objects
+Description: An R port of Stata's 'margins' command, which can be used to
+    calculate marginal (or partial) effects from model objects.
+License: MIT + file LICENSE
+Version: 0.3.20
+Date: 2018-04-24
+Authors@R: c(person("Thomas J.", "Leeper",
+                    role = c("aut", "cre"), 
+                    email = "thosjleeper@gmail.com",
+                    comment = c(ORCID = "0000-0003-4097-6326")),
+             person("Jeffrey", "Arnold", 
+                    role = c("ctb"),
+                    email = "jeffrey.arnold@gmail.com"),
+             person("Vincent", "Arel-Bundock", 
+                    role = c("ctb"))
+             )
+URL: https://github.com/leeper/margins
+BugReports: https://github.com/leeper/margins/issues
+Imports: utils, stats, prediction (>= 0.2.8), data.table, graphics,
+        MASS
+Suggests: knitr, rmarkdown, testthat, ggplot2, gapminder, nnet,
+        sandwich, stargazer
+Enhances: AER, betareg, ordinal, survey
+ByteCompile: true
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-04-24 09:08:28 UTC; THOMAS
+Author: Thomas J. Leeper [aut, cre] (<https://orcid.org/0000-0003-4097-6326>),
+  Jeffrey Arnold [ctb],
+  Vincent Arel-Bundock [ctb]
+Maintainer: Thomas J. Leeper <thosjleeper@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-04-24 10:03:11 UTC

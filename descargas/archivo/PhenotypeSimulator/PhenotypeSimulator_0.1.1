@@ -1,0 +1,34 @@
+Package: PhenotypeSimulator
+Title: Flexible Phenotype Simulation from Different Genetic and Noise
+        Models
+Version: 0.1.1
+Authors@R: c(
+  person("Hannah", "Meyer", email = "hannah@ebi.ac.uk", role = c("aut", "cre")),
+  person("Konrad", "Rudolph", email = "konrad.rudolph@gmail.com", role = "ctb")
+  )
+Description: Phenotype simulator allows for the flexible simulation of 
+    phenotypes under different models, including fixed and background genetic 
+    effects as well as correlated, fixed and background noise effects. Different 
+    phenotypic effects can be combined into a final phenotype while controling 
+    for the proportion of variance explained by each of the components. For each 
+    component, the number of variables, their distribution and the design of 
+    their effect across traits can be customised. The final simulated phenotypes
+    and its components can be automatically saved into .rds or .csv files. In
+    addition, for simulated genotypes, export into plink format is possible. 
+Depends: R (>= 3.3.2)
+LinkingTo: Rcpp
+Imports: methods, optparse, R.utils, plyr, mvtnorm, snpStats, Rcpp (>=
+        0.12.10)
+Suggests: testthat, knitr, rmarkdown
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2017-05-20 09:05:44 UTC; hannah
+Author: Hannah Meyer [aut, cre],
+  Konrad Rudolph [ctb]
+Maintainer: Hannah Meyer <hannah@ebi.ac.uk>
+Repository: CRAN
+Date/Publication: 2017-05-21 07:02:27 UTC

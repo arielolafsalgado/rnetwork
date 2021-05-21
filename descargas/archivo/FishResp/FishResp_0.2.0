@@ -1,0 +1,31 @@
+Package: FishResp
+Type: Package
+Title: An Analytical Tool for Aquatic Respirometry
+Description: Calculates metabolic rate of fish and other aquatic organisms measured using 
+             an intermittent-flow respirometry approach. The tool is used to run a set of 
+             graphical QC tests of raw respirometry data, correct it for background 
+             respiration and chamber effect, filter and extract target values of absolute 
+             and mass-specific metabolic rate. Experimental design should include background 
+             respiration tests and measuring of one or two metabolic rate traits. The package 
+             allows a user to import raw respirometry data obtained from 'AutoResp' 
+             (see <http://www.loligosystems.com> for more information) or other logger 
+             software.
+Version: 0.2.0
+Date: 2018-01-04
+Authors@R: c(
+    person("Sergey", "Morozov", role = c("aut", "cre"), email = "sergey.morozov@helsinki.fi") ,
+    person("R.J. Scott", "McCairns", role = "aut", email = "scott.mccairns@inra.fr"),
+	  person("Federico", "Calboli", role = "ctb", email = "federico.calboli@kuleuven.be"))
+Author: Sergey Morozov [aut, cre], R.J. Scott McCairns [aut], Federico Calboli [ctb]
+Maintainer: Sergey Morozov <sergey.morozov@helsinki.fi>
+Depends: R (>= 3.0.0)
+Imports: chron, lattice, mclust, rMR, respirometry
+License: GPL-3
+URL: https://fishresp.org
+LazyData: FALSE
+SystemRequirements: Display resolution >= 1280:800
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-01-04 13:25:22 UTC; Samoedd
+Repository: CRAN
+Date/Publication: 2018-01-04 13:45:29 UTC

@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package flexpolyline</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Flexible Polyline Encoding [R package flexpolyline version 0.1.1]" />
+<meta name="citation_author1" content="Merlin Unterfinger" />
+<meta name="citation_author2" content="HERE Europe B.V." />
+<meta name="citation_publication_date" content="2020-08-07" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=flexpolyline" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=flexpolyline" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="flexpolyline: Flexible Polyline Encoding" />
+<meta name="og:description" content="Binding to the C++ implementation of the flexible polyline encoding by HERE &amp;lt;&lt;a href=&quot;https://github.com/heremaps/flexible-polyline&quot;&gt;https://github.com/heremaps/flexible-polyline&lt;/a&gt;&amp;gt;. The flexible polyline encoding is a lossy compressed representation of a list of coordinate pairs or coordinate triples. The encoding is achieved by: (1) Reducing the decimal digits of each value; (2) encoding only the offset from the previous point; (3) using variable length for each coordinate delta; and (4) using 64 URL-safe characters to display the result." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=flexpolyline" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>flexpolyline: Flexible Polyline Encoding</h2>
+<p>Binding to the C++ implementation of the flexible polyline
+    encoding by HERE &lt;<a href="https://github.com/heremaps/flexible-polyline">https://github.com/heremaps/flexible-polyline</a>&gt;. The
+    flexible polyline encoding is a lossy compressed representation of a list of
+    coordinate pairs or coordinate triples. The encoding is achieved by:
+    (1) Reducing the decimal digits of each value;
+    (2) encoding only the offset from the previous point;
+    (3) using variable length for each coordinate delta; and
+    (4) using 64 URL-safe characters to display the result.</p>
+<table summary="Package flexpolyline summary">
+<tr>
+<td>Version:</td>
+<td>0.1.1</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../sf/index.html">sf</a> (&ge; 0.9-3)</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a> (&ge; 2.3.2), <a href="../stringr/index.html">stringr</a> (&ge; 1.4.0), <a href="../knitr/index.html">knitr</a> (&ge; 1.28), <a href="../rmarkdown/index.html">rmarkdown</a> (&ge; 2.1), <a href="../covr/index.html">covr</a> (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-08-07</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Merlin Unterfinger
+    <a href="https://orcid.org/0000-0003-2020-2366"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut, cre],
+  HERE Europe B.V. [aut, cph] (Flexible polyline encoding C++
+    implementation)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Merlin Unterfinger  &#x3c;&#x69;&#x6e;&#x66;&#x6f;&#x20;&#x61;&#x74;&#x20;&#x6d;&#x75;&#x6e;&#x74;&#x65;&#x72;&#x66;&#x69;&#x6e;&#x67;&#x65;&#x72;&#x2e;&#x63;&#x68;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/munterfinger/flexpolyline/issues">https://github.com/munterfinger/flexpolyline/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://munterfinger.github.io/flexpolyline">https://munterfinger.github.io/flexpolyline</a>,
+<a href="https://github.com/munterfinger/flexpolyline">https://github.com/munterfinger/flexpolyline</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_flexpolyline.html">flexpolyline results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package flexpolyline downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="flexpolyline.pdf"> flexpolyline.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/cpp-binding.html">C++ binding</a><br/>
+<a href="vignettes/flexpolyline.html">Get started</a><br/>
+<a href="vignettes/sf-support.html">Simple feature support</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/flexpolyline_0.1.1.tar.gz"> flexpolyline_0.1.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/flexpolyline_0.1.1.zip">flexpolyline_0.1.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/flexpolyline_0.1.1.zip">flexpolyline_0.1.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/flexpolyline_0.1.1.zip">flexpolyline_0.1.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/flexpolyline_0.1.1.tgz">flexpolyline_0.1.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/flexpolyline_0.1.1.tgz">flexpolyline_0.1.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/flexpolyline"> flexpolyline archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package flexpolyline reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../hereR/index.html">hereR</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=flexpolyline"><samp>https://CRAN.R-project.org/package=flexpolyline</samp></a>
+to link to this page.</p>
+</body>
+</html>

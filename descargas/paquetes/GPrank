@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package GPrank</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Gaussian Process Ranking of Multiple Time Series [R package GPrank version 0.1.4]" />
+<meta name="citation_author1" content="Hande Topa" />
+<meta name="citation_author2" content="Antti Honkela" />
+<meta name="citation_publication_date" content="2018-08-17" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=GPrank" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=GPrank" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="GPrank: Gaussian Process Ranking of Multiple Time Series" />
+<meta name="og:description" content="Implements a Gaussian process (GP)-based ranking method which can be used to rank multiple time series according to their temporal activity levels. An example is the case when expression levels of all genes are measured over a time course and the main concern is to identify the most active genes, i.e. genes which show significant non-random variation in their expression levels. This is achieved by computing Bayes factors for each time series by comparing the marginal likelihoods under time-dependent and time-independent GP models. Additional variance information from pre-processing of the observations is incorporated into the GP models, which makes the ranking more robust against model overfitting. The package supports exporting the results to 'tigreBrowser' for visualisation, filtering or ranking." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=GPrank" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>GPrank: Gaussian Process Ranking of Multiple Time Series</h2>
+<p>Implements a Gaussian process (GP)-based ranking method
+    which can be used to rank multiple time series according to their
+    temporal activity levels. An example is the case when expression
+    levels of all genes are measured over a time course and the main
+    concern is to identify the most active genes, i.e. genes which
+    show significant non-random variation in their expression levels.
+    This is achieved by computing Bayes factors for each time series
+    by comparing the marginal likelihoods under time-dependent and
+    time-independent GP models. Additional variance information from
+    pre-processing of the observations is incorporated into the GP
+    models, which makes the ranking more robust against model
+    overfitting. The package supports exporting the results to
+    'tigreBrowser' for visualisation, filtering or ranking.</p>
+<table summary="Package GPrank summary">
+<tr>
+<td>Version:</td>
+<td>0.1.4</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.14.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../gptk/index.html">gptk</a>, <a href="../matrixStats/index.html">matrixStats</a>, <a href="../tigreBrowserWriter/index.html">tigreBrowserWriter</a>, <a href="../RColorBrewer/index.html">RColorBrewer</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2018-08-17</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Hande Topa [aut, cre],
+  Antti Honkela [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Hande Topa  &#x3c;&#x68;&#x61;&#x6e;&#x64;&#x65;&#x2e;&#x74;&#x6f;&#x70;&#x61;&#x20;&#x61;&#x74;&#x20;&#x68;&#x65;&#x6c;&#x73;&#x69;&#x6e;&#x6b;&#x69;&#x2e;&#x66;&#x69;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/PROBIC/GPrank/issues">https://github.com/PROBIC/GPrank/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/PROBIC/GPrank">https://github.com/PROBIC/GPrank</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">GPrank citation info</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_GPrank.html">GPrank results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package GPrank downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="GPrank.pdf"> GPrank.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/GPrank.html">GPrank vignette</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/GPrank_0.1.4.tar.gz"> GPrank_0.1.4.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/GPrank_0.1.4.zip">GPrank_0.1.4.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/GPrank_0.1.4.zip">GPrank_0.1.4.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/GPrank_0.1.4.zip">GPrank_0.1.4.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/GPrank_0.1.4.tgz">GPrank_0.1.4.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/GPrank_0.1.4.tgz">GPrank_0.1.4.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/GPrank"> GPrank archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=GPrank"><samp>https://CRAN.R-project.org/package=GPrank</samp></a>
+to link to this page.</p>
+</body>
+</html>

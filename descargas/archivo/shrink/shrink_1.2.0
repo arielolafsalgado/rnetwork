@@ -1,0 +1,25 @@
+Package: shrink
+Type: Package
+Title: Global, Parameterwise and Joint Post-Estimation Shrinkage
+Version: 1.2.0
+Date: 2014-10-02
+Author: Daniela Dunkler, Georg Heinze
+Maintainer: Daniela Dunkler <daniela.dunkler@meduniwien.ac.at>
+Description: Post-estimation shrinkage of regression coefficients in statistical modeling can be
+ used to correct for the overestimation of regression coefficients caused by variable selection.
+ While global shrinkage modifies all regression coefficients by the same factor, parameterwise
+ shrinkage factors differ between regression coefficients. With variables which are either 
+ highly correlated or associated with regard to contents, such as several columns of a design 
+ matrix describing a nonlinear effect, parameterwise shrinkage factors are not interpretable 
+ and a compromise between global and parameterwise shrinkage, termed 'joint shrinkage', is a 
+ useful extension.
+ A computational shortcut to resampling-based shrinkage factor estimation based on DFBETA
+ residuals can be applied.
+ Global, parameterwise and joint shrinkage for models fitted by lm, glm, coxph, or (for 
+ R <= 3.1.0) mfp is available.
+Imports: survival, MASS, rms
+License: GPL-2
+Packaged: 2014-10-02 16:03:06 UTC; Dani
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2014-10-02 19:17:18

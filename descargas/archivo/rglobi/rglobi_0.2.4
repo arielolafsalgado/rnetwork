@@ -1,0 +1,34 @@
+Package: rglobi
+Type: Package
+Title: R interface to Global Biotic Interactions
+Description: A programmatic interface to the web service methods
+    provided by Global Biotic Interactions (GloBI). GloBI provides 
+    access to spatial-temporal species interaction records from 
+    source all over the world. rglobi provides methods to search 
+    species interactions by location, interaction type, and 
+    taxonomic name. In addition, it supports Cypher, a graph query
+    language, to allow for executing custom queries on the GloBI 
+    aggregate species interaction dataset.
+Version: 0.2.4
+Date: 2015-01-27
+Authors@R: c(person("Jorrit", "Poelen", role = c("aut", "cre"),
+    email = "jhpoelen@xs4all.nl"),
+    person("Stephen", "Gosnell", role = "aut",
+    email = "stephen.gosnell@baruch.cuny.edu"),
+    person("Sergey", "Slyusarev", role = "aut",
+    email = "cph.lmy@gmail.com"))
+URL: https://github.com/ropensci/rglobi
+BugReports: https://github.com/ropensci/rglobi/issues
+VignetteBuilder: knitr
+Depends: R (>= 3.0.1)
+License: MIT + file LICENSE
+Imports: rjson (>= 0.2.13), RCurl
+Suggests: testthat, knitr
+Packaged: 2015-01-29 07:27:44 UTC; ripley
+Author: Jorrit Poelen [aut, cre],
+  Stephen Gosnell [aut],
+  Sergey Slyusarev [aut]
+Maintainer: Jorrit Poelen <jhpoelen@xs4all.nl>
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2015-01-29 08:28:57

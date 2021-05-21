@@ -1,0 +1,26 @@
+Package: TimeSeries.OBeu
+Type: Package
+Title: Time Series Analysis 'OpenBudgets.eu'
+Version: 1.2.3
+Date: 2019-01-20
+Description: Estimate and return the needed parameters for visualizations designed for 'OpenBudgets.eu' <http://openbudgets.eu/> time series data. Calculate time series model and forecast parameters in budget time series data of municipalities across Europe, according to the 'OpenBudgets.eu' data model. There are functions for measuring deterministic and stochastic trend of the input time series data with 'ACF', 'PACF', 'Phillips Perron' test, 'Augmented Dickey Fuller (ADF)' test, 'Kwiatkowski-Phillips-Schmidt-Shin (KPSS)' test, 'Mann Kendall' test for monotonic trend and 'Cox and Stuart' trend test, decomposing with local regression models or 'stl' decomposition, fitting the appropriate 'arima' model and provide forecasts for the input 'OpenBudgets.eu' time series fiscal data. Also, can be used generally to extract visualization parameters convert them to 'JSON' format and use them as input in a different graphical interface.
+Authors@R: c(
+    person("Kleanthis", "Koupidis", , "koupidis@okfn.gr", role = c("aut", "cre")),
+    person("Charalampos", "Bratsas", , "charalampos.bratsas@okfn.org", role = "aut")
+    )
+Maintainer: Kleanthis Koupidis <koupidis@okfn.gr>
+URL: https://github.com/okgreece/TimeSeries.OBeu
+BugReports: https://github.com/okgreece/TimeSeries.OBeu/issues
+License: GPL-2 | file LICENSE
+LazyData: TRUE
+Encoding: UTF-8
+Imports: devtools, forecast, locfit, jsonlite, stats, trend, tseries
+RoxygenNote: 6.1.0
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-01-20 21:02:30 UTC; akis
+Author: Kleanthis Koupidis [aut, cre],
+  Charalampos Bratsas [aut]
+Repository: CRAN
+Date/Publication: 2019-01-20 21:40:03 UTC

@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package wrProteo</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Proteomics Data Analysis Functions [R package wrProteo version 1.2.0]" />
+<meta name="citation_author" content="Wolfgang Raffelsberger" />
+<meta name="citation_publication_date" content="2020-10-18" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=wrProteo" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=wrProteo" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="wrProteo: Proteomics Data Analysis Functions" />
+<meta name="og:description" content="Data analysis of proteomics experiments by mass spectrometry is supported by this collection of functions mostly dedicated to the analysis of (bottom-up) quantitative (XIC) data. Fasta-formatted proteomes (eg from UniProt Consortium &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fnar%2Fgky1049&quot;&gt;doi:10.1093/nar/gky1049&lt;/a&gt;&amp;gt;) can be read with automatic parsing and multiple annotation types (like species origin, abbreviated gene names, etc) extracted. Quantitative proteomics (Schubert et al 2017 &amp;lt;&lt;a href=&quot;https://doi.org/10.1038%2Fnprot.2017.040&quot;&gt;doi:10.1038/nprot.2017.040&lt;/a&gt;&amp;gt;) measurements frequently contain multiple NA values, due to physical absence of given peptides in some samples, limitations in sensitivity or other reasons. The functions provided here help to inspect graphically the data to investigate the nature of NA-values via their respective replicate measurements and to help/confirm the choice of NA-replacement by low random values. Dedicated filtering and statistical testing using the framework of package 'limma' &amp;lt;&lt;a href=&quot;https://doi.org/10.18129%2FB9.bioc.limma&quot;&gt;doi:10.18129/B9.bioc.limma&lt;/a&gt;&amp;gt; can be run, enhanced by multiple rounds of NA-replacements to provide robustness towards rare stochastic events. Multi-species samples, as frequently used in benchmark-tests (eg Navarro et al 2016 &amp;lt;&lt;a href=&quot;https://doi.org/10.1038%2Fnbt.3685&quot;&gt;doi:10.1038/nbt.3685&lt;/a&gt;&amp;gt;, Ramus et al 2016 &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.jprot.2015.11.011&quot;&gt;doi:10.1016/j.jprot.2015.11.011&lt;/a&gt;&amp;gt;), can be run with special options separating the data into sub-groups during normalization and testing. Subsequently, ROC curves (Hand and Till 2001 &amp;lt;&lt;a href=&quot;https://doi.org/10.1023%2FA%3A1010920819831&quot;&gt;doi:10.1023/A:1010920819831&lt;/a&gt;&amp;gt;) can be constructed to compare multiple analysis approaches." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=wrProteo" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>wrProteo: Proteomics Data Analysis Functions</h2>
+<p>Data analysis of proteomics experiments by mass spectrometry is supported by this collection of functions mostly dedicated to the analysis of (bottom-up) quantitative (XIC) data. 
+    Fasta-formatted proteomes (eg from UniProt Consortium &lt;<a href="https://doi.org/10.1093%2Fnar%2Fgky1049">doi:10.1093/nar/gky1049</a>&gt;) can be read with automatic parsing and multiple annotation types (like species origin, abbreviated gene names, etc) extracted. 
+    Quantitative proteomics (Schubert et al 2017 &lt;<a href="https://doi.org/10.1038%2Fnprot.2017.040">doi:10.1038/nprot.2017.040</a>&gt;) measurements frequently contain multiple NA values, due to physical absence of given peptides in some samples, limitations in sensitivity or other reasons. 
+    The functions provided here help to inspect graphically the data to investigate the nature of NA-values via their respective replicate measurements and to help/confirm the choice of NA-replacement by low random values. 
+    Dedicated filtering and statistical testing using the framework of package 'limma' &lt;<a href="https://doi.org/10.18129%2FB9.bioc.limma">doi:10.18129/B9.bioc.limma</a>&gt; can be run, enhanced by multiple rounds of NA-replacements to provide robustness towards rare stochastic events. 
+    Multi-species samples, as frequently used in benchmark-tests (eg Navarro et al 2016 &lt;<a href="https://doi.org/10.1038%2Fnbt.3685">doi:10.1038/nbt.3685</a>&gt;, Ramus et al 2016 &lt;<a href="https://doi.org/10.1016%2Fj.jprot.2015.11.011">doi:10.1016/j.jprot.2015.11.011</a>&gt;), can be run with special options separating the data into sub-groups during normalization and testing. 
+    Subsequently, ROC curves (Hand and Till 2001 &lt;<a href="https://doi.org/10.1023%2FA%3A1010920819831">doi:10.1023/A:1010920819831</a>&gt;) can be constructed to compare multiple analysis approaches.</p>
+<table summary="Package wrProteo summary">
+<tr>
+<td>Version:</td>
+<td>1.2.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.1.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>grDevices, graphics, <a href="http://www.bioconductor.org/packages/release/bioc/html/limma.html"><span class="BioC">limma</span></a>, <a href="../knitr/index.html">knitr</a>, stats, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../wrMisc/index.html">wrMisc</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../fdrtool/index.html">fdrtool</a>, <a href="../MASS/index.html">MASS</a>, <a href="../RColorBrewer/index.html">RColorBrewer</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/ROTS.html"><span class="BioC">ROTS</span></a>, <a href="../R.utils/index.html">R.utils</a>, <a href="../sm/index.html">sm</a>, utils, <a href="../wrGraph/index.html">wrGraph</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-18</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Wolfgang Raffelsberger [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Wolfgang Raffelsberger  &#x3c;&#x77;&#x2e;&#x72;&#x61;&#x66;&#x66;&#x65;&#x6c;&#x73;&#x62;&#x65;&#x72;&#x67;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x75;&#x6e;&#x69;&#x73;&#x74;&#x72;&#x61;&#x2e;&#x66;&#x72;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_wrProteo.html">wrProteo results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package wrProteo downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="wrProteo.pdf"> wrProteo.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/wrProteoVignette1.html">wrProteoVignette1</a><br/>
+<a href="vignettes/wrProteoVignetteUPS1.html">wrProteoRamus_vignette1</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/wrProteo_1.2.0.tar.gz"> wrProteo_1.2.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/wrProteo_1.2.0.zip">wrProteo_1.2.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/wrProteo_1.2.0.zip">wrProteo_1.2.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/wrProteo_1.2.0.zip">wrProteo_1.2.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/wrProteo_1.2.0.tgz">wrProteo_1.2.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/wrProteo_1.2.0.tgz">wrProteo_1.2.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/wrProteo"> wrProteo archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package wrProteo reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../wrTopDownFrag/index.html">wrTopDownFrag</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=wrProteo"><samp>https://CRAN.R-project.org/package=wrProteo</samp></a>
+to link to this page.</p>
+</body>
+</html>

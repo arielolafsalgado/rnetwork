@@ -1,0 +1,36 @@
+Package: thor
+Title: Interface to 'LMDB'
+Version: 1.1.1
+Authors@R: c(person("Rich", "FitzJohn", role = c("aut", "cre"),
+    email = "rich.fitzjohn@gmail.com"),
+    person("Howard", "Chu", role = c("aut", "cph")),
+    person("Symas Corporation", role = "cph"),
+    person("Martin", "Hedenfalk", role = c("aut", "cph")),
+    person("The OpenLDAP Foundation", role = "cph"))
+Description: Key-value store, implemented as a wrapper around 'LMDB';
+    the "lightning memory-mapped database" <https://symas.com/lmdb/>.
+    'LMDB' is a transactional key value store that uses a memory map
+    for efficient access.  This package wraps the entire 'LMDB'
+    interface (except duplicated keys), and provides objects for
+    transactions and cursors.
+License: MIT + file LICENSE
+LazyData: true
+URL: https://github.com/richfitz/thor
+BugReports: https://github.com/richfitz/thor/issues
+Imports: R6, storr
+Suggests: ids, knitr, rmarkdown, testthat
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+ByteCompile: true
+Encoding: UTF-8
+Language: en-GB
+NeedsCompilation: yes
+Packaged: 2020-01-14 13:56:31 UTC; rich
+Author: Rich FitzJohn [aut, cre],
+  Howard Chu [aut, cph],
+  Symas Corporation [cph],
+  Martin Hedenfalk [aut, cph],
+  The OpenLDAP Foundation [cph]
+Maintainer: Rich FitzJohn <rich.fitzjohn@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-01-16 23:50:02 UTC

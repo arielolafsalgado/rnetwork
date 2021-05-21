@@ -1,0 +1,35 @@
+Package: getCRUCLdata
+Type: Package
+Title: Use and Explore CRU CL v. 2.0 Climatology Elements in R
+Version: 0.1.8
+Authors@R: person(given = "Adam", family = "Sparks", 
+                  email = "adamhsparks@gmail.com", role = c("aut", "cre"),
+                  comment = "http://orcid.org/0000-0002-0061-8359")
+Description: Provides functions that automate downloading and importing
+    University of East Anglia Climate Research Unit (CRU) CL v. 2.0 climatology
+    data into R, facilitates the calculation of minimum temperature and maximum
+    temperature and formats the data into a tidy data frame as a tibble or a 
+    list of raster stack objects for use in an R session.  CRU CL v. 2.0 data 
+    are a gridded climatology of 1961-1990 monthly means released in 2002 and
+    cover all land areas (excluding Antarctica) at 10 arcminutes
+    (0.1666667 degree) resolution.  For more information see the description of
+    the data provided by the University of East Anglia Climate Research Unit,
+    <https://crudata.uea.ac.uk/cru/data/hrg/tmc/readme.txt>.
+License: MIT + file LICENSE
+Depends: R (>= 3.2.0)
+Imports: data.table, dplyr, httr, purrr, rappdirs, raster, tidyr,
+        tibble, utils
+LazyData: TRUE
+RoxygenNote: 6.0.1
+ByteCompile: TRUE
+Suggests: ccafs, covr, ggplot2, knitr, readr, rmarkdown, roxygen2 (>=
+        6.0.1), sp, testthat, viridis
+URL: https://github.com/ropensci/getCRUCLdata
+BugReports: https://github.com/ropensci/getCRUCLdata/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-07-07 02:38:24 UTC; asparks
+Author: Adam Sparks [aut, cre] (http://orcid.org/0000-0002-0061-8359)
+Maintainer: Adam Sparks <adamhsparks@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-07-07 04:51:46 UTC

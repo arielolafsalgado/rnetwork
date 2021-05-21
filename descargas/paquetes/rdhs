@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package rdhs</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="API Client and Dataset Management for the Demographic and Health Survey (DHS) Data [R package rdhs version 0.6.3]" />
+<meta name="citation_author1" content="OJ Watson" />
+<meta name="citation_author2" content="Jeff Eaton" />
+<meta name="citation_publication_date" content="2019-03-19" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=rdhs" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=rdhs" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="rdhs: API Client and Dataset Management for the Demographic and Health Survey (DHS) Data" />
+<meta name="og:description" content="Provides a client for (1) querying the DHS API for survey indicators and metadata (&amp;lt;&lt;a href=&quot;https://api.dhsprogram.com/#/index.html&quot;&gt;https://api.dhsprogram.com/#/index.html&lt;/a&gt;&amp;gt;), (2) identifying surveys and datasets for analysis, (3) downloading survey datasets from the DHS website, (4) loading datasets and associate metadata into R, and (5) extracting variables and combining datasets for pooled analysis." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=rdhs" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>rdhs: API Client and Dataset Management for the Demographic and Health
+Survey (DHS) Data</h2>
+<p>Provides a client for (1) querying the DHS API for survey indicators
+  and metadata (&lt;<a href="https://api.dhsprogram.com/#/index.html">https://api.dhsprogram.com/#/index.html</a>&gt;), (2) identifying surveys
+  and datasets for analysis, (3) downloading survey datasets from the DHS website,
+  (4) loading datasets and associate metadata into R, and (5) extracting variables
+  and combining datasets for pooled analysis.</p>
+<table summary="Package rdhs summary">
+<tr>
+<td>Version:</td>
+<td>0.6.3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../R6/index.html">R6</a>, <a href="../httr/index.html">httr</a>, <a href="../jsonlite/index.html">jsonlite</a>, <a href="../foreign/index.html">foreign</a>, <a href="../magrittr/index.html">magrittr</a>, <a href="../rappdirs/index.html">rappdirs</a>, <a href="../digest/index.html">digest</a>, <a href="../storr/index.html">storr</a>, <a href="../xml2/index.html">xml2</a>, <a href="../qdapRegex/index.html">qdapRegex</a>, <a href="../rgdal/index.html">rgdal</a>, <a href="../getPass/index.html">getPass</a>, <a href="../haven/index.html">haven</a>, <a href="../iotools/index.html">iotools</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../survey/index.html">survey</a>, <a href="../data.table/index.html">data.table</a>, <a href="../microbenchmark/index.html">microbenchmark</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-03-19</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>OJ Watson <a href="https://orcid.org/0000-0003-2374-0741"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    cre],
+  Jeff Eaton <a href="https://orcid.org/0000-0001-7728-728X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Lucy D'Agostino McGowan
+    <a href="https://orcid.org/0000-0001-7297-9359"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [rev],
+  Duncan Gillespie [rev]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>OJ Watson  &#x3c;&#x6f;&#x6a;&#x2e;&#x77;&#x61;&#x74;&#x73;&#x6f;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x68;&#x6f;&#x74;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x2e;&#x75;&#x6b;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ropensci/rdhs/issues">https://github.com/ropensci/rdhs/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://ropensci.github.io/rdhs/">https://ropensci.github.io/rdhs/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-GB</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_rdhs.html">rdhs results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package rdhs downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="rdhs.pdf"> rdhs.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/anemia.html">Anemia prevalence among women: an 'rdhs' example</a><br/>
+<a href="vignettes/client.html">Using the rdhs client</a><br/>
+<a href="vignettes/country_codes.html">Country Codes</a><br/>
+<a href="vignettes/geojson.html">Interacting with geojson API results</a><br/>
+<a href="vignettes/introduction.html">How to use rdhs?</a><br/>
+<a href="vignettes/testing.html">Testing</a><br/>
+<a href="vignettes/toolkit.html">Toolkit</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/rdhs_0.6.3.tar.gz"> rdhs_0.6.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/rdhs_0.6.3.zip">rdhs_0.6.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/rdhs_0.6.3.zip">rdhs_0.6.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/rdhs_0.6.3.zip">rdhs_0.6.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/rdhs_0.6.3.tgz">rdhs_0.6.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/rdhs_0.6.3.tgz">rdhs_0.6.3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/rdhs"> rdhs archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package rdhs reverse dependencies">
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../malariaAtlas/index.html">malariaAtlas</a>, <a href="../SUMMER/index.html">SUMMER</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=rdhs"><samp>https://CRAN.R-project.org/package=rdhs</samp></a>
+to link to this page.</p>
+</body>
+</html>

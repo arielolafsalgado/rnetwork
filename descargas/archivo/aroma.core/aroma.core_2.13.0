@@ -1,0 +1,42 @@
+Package: aroma.core
+Version: 2.13.0
+Depends: R (>= 3.0.0), R.utils (>= 1.34.0), R.filesets (>= 2.6.0),
+        R.devices (>= 2.12.0)
+Imports: utils, R.methodsS3 (>= 1.6.1), R.oo (>= 1.18.0), R.cache (>=
+        0.10.0), R.rsp (>= 0.19.0), matrixStats (>= 0.12.2),
+        RColorBrewer (>= 1.1-2), PSCBS (>= 0.43.0)
+Suggests: png (>= 0.1-7), Cairo (>= 1.5-6), EBImage (>= 4.4.0),
+        preprocessCore (>= 1.24.0), aroma.light (>= 1.32.0), DNAcopy
+        (>= 1.36.0), GLAD (>= 1.12.0), sfit (>= 0.1.8), expectile (>=
+        0.2.5), HaarSeg (>= 0.0.2), mpcbs (>= 1.1.1)
+SuggestsNote: Recommended: aroma.light, preprocessCore, DNAcopy, sfit,
+        png
+Additional_repositories: http://r-forge.r-project.org
+Date: 2015-01-07
+Title: Core Methods and Classes Used by aroma.* Packages Part of The
+        Aroma Framework
+Authors@R: c(
+  person("Henrik", "Bengtsson", role=c("aut", "cre", "cph"),
+                                 email="henrikb@braju.com"),
+  person("Mark", "Robinson", role="ctb"),
+  person("Ken", "Simpson", role="ctb"))
+Description: This package contains core methods and classes used by
+        higher-level aroma.* packages part of the Aroma Project, e.g.
+        aroma.affymetrix and aroma.cn.  Its API is mostly of interest
+	to developers and is rarely used by end users directly.
+License: LGPL (>= 2.1)
+URL: http://www.aroma-project.org/,
+        https://github.com/HenrikBengtsson/aroma.core
+BugReports: https://github.com/HenrikBengtsson/aroma.core/issues
+LazyLoad: TRUE
+biocViews: Microarray, OneChannel, TwoChannel, MultiChannel,
+        DataImport, DataRepresentation, GUI, Visualization,
+        Preprocessing, QualityControl, aCGH, CopyNumberVariants
+NeedsCompilation: no
+Packaged: 2015-01-07 17:10:08 UTC; hb
+Author: Henrik Bengtsson [aut, cre, cph],
+  Mark Robinson [ctb],
+  Ken Simpson [ctb]
+Maintainer: Henrik Bengtsson <henrikb@braju.com>
+Repository: CRAN
+Date/Publication: 2015-01-17 00:16:18

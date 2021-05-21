@@ -1,0 +1,357 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package spatstat</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=spatstat" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="spatstat: Spatial Point Pattern Analysis, Model-Fitting, Simulation, Tests" />
+<meta name="og:description" content="Comprehensive open-source toolbox for analysing Spatial Point Patterns. Focused mainly on two-dimensional point patterns, including multitype/marked points, in any spatial region. Also supports three-dimensional point patterns, space-time point patterns in any number of dimensions, point patterns on a linear network, and patterns of other geometrical objects. Supports spatial covariate data such as pixel images. Contains over 2000 functions for plotting spatial data, exploratory data analysis, model-fitting, simulation, spatial sampling, model diagnostics, and formal inference. Data types include point patterns, line segment patterns, spatial windows, pixel images, tessellations, and linear networks. Exploratory methods include quadrat counts, K-functions and their simulation envelopes, nearest neighbour distance and empty space statistics, Fry plots, pair correlation function, kernel smoothed intensity, relative risk estimation with cross-validated bandwidth selection, mark correlation functions, segregation indices, mark dependence diagnostics, and kernel estimates of covariate effects. Formal hypothesis tests of random pattern (chi-squared, Kolmogorov-Smirnov, Monte Carlo, Diggle-Cressie-Loosmore-Ford, Dao-Genton, two-stage Monte Carlo) and tests for covariate effects (Cox-Berman-Waller-Lawson, Kolmogorov-Smirnov, ANOVA) are also supported. Parametric models can be fitted to point pattern data using the functions ppm(), kppm(), slrm(), dppm() similar to glm(). Types of models include Poisson, Gibbs and Cox point processes, Neyman-Scott cluster processes, and determinantal point processes. Models may involve dependence on covariates, inter-point interaction, cluster formation and dependence on marks. Models are fitted by maximum likelihood, logistic regression, minimum contrast, and composite likelihood methods. A model can be fitted to a list of point patterns (replicated point pattern data) using the function mppm(). The model can include random effects and fixed effects depending on the experimental design, in addition to all the features listed above. Fitted point process models can be simulated, automatically. Formal hypothesis tests of a fitted model are supported (likelihood ratio test, analysis of deviance, Monte Carlo tests) along with basic tools for model selection (stepwise(), AIC()) and variable selection (sdr). Tools for validating the fitted model include simulation envelopes, residuals, residual plots and Q-Q plots, leverage and influence diagnostics, partial residuals, and added variable plots." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=spatstat" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>spatstat: Spatial Point Pattern Analysis, Model-Fitting, Simulation, Tests</h2>
+<p>Comprehensive open-source toolbox for analysing Spatial Point Patterns. Focused mainly on two-dimensional point patterns, including multitype/marked points, in any spatial region. Also supports three-dimensional point patterns, space-time point patterns in any number of dimensions, point patterns on a linear network, and patterns of other geometrical objects. Supports spatial covariate data such as pixel images. 
+	Contains over 2000 functions for plotting spatial data, exploratory data analysis, model-fitting, simulation, spatial sampling, model diagnostics, and formal inference. 
+	Data types include point patterns, line segment patterns, spatial windows, pixel images, tessellations, and linear networks. 
+	Exploratory methods include quadrat counts, K-functions and their simulation envelopes, nearest neighbour distance and empty space statistics, Fry plots, pair correlation function, kernel smoothed intensity, relative risk estimation with cross-validated bandwidth selection, mark correlation functions, segregation indices, mark dependence diagnostics, and kernel estimates of covariate effects. Formal hypothesis tests of random pattern (chi-squared, Kolmogorov-Smirnov, Monte Carlo, Diggle-Cressie-Loosmore-Ford, Dao-Genton, two-stage Monte Carlo) and tests for covariate effects (Cox-Berman-Waller-Lawson, Kolmogorov-Smirnov, ANOVA) are also supported.
+	Parametric models can be fitted to point pattern data using the functions ppm(), kppm(), slrm(), dppm() similar to glm(). Types of models include Poisson, Gibbs and Cox point processes, Neyman-Scott cluster processes, and determinantal point processes. Models may involve dependence on covariates, inter-point interaction, cluster formation and dependence on marks. Models are fitted by maximum likelihood, logistic regression, minimum contrast, and composite likelihood methods. 
+	A model can be fitted to a list of point patterns (replicated point pattern data) using the function mppm(). The model can include random effects and fixed effects depending on the experimental design, in addition to all the features listed above.
+	Fitted point process models can be simulated, automatically. Formal hypothesis tests of a fitted model are supported (likelihood ratio test, analysis of deviance, Monte Carlo tests) along with basic tools for model selection (stepwise(), AIC()) and variable selection (sdr). Tools for validating the fitted model include simulation envelopes, residuals, residual plots and Q-Q plots, leverage and influence diagnostics, partial residuals, and added variable plots.</p>
+<table summary="Package spatstat summary">
+<tr>
+<td>Version:</td>
+<td>1.64-1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3.0), <a href="../spatstat.data/index.html">spatstat.data</a> (&ge; 1.4-2), stats, graphics, grDevices, utils, methods, <a href="../nlme/index.html">nlme</a>, <a href="../rpart/index.html">rpart</a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../spatstat.utils/index.html">spatstat.utils</a> (&ge; 1.17-0), <a href="../mgcv/index.html">mgcv</a>, <a href="../Matrix/index.html">Matrix</a>, <a href="../deldir/index.html">deldir</a> (&ge; 0.0-21), <a href="../abind/index.html">abind</a>, <a href="../tensor/index.html">tensor</a>, <a href="../polyclip/index.html">polyclip</a> (&ge; 1.10-0), <a href="../goftest/index.html">goftest</a> (&ge; 1.2-2)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../sm/index.html">sm</a>, <a href="../maptools/index.html">maptools</a> (&ge; 0.9-9), <a href="../gsl/index.html">gsl</a>, <a href="../locfit/index.html">locfit</a>, <a href="../spatial/index.html">spatial</a>, <a href="../RandomFields/index.html">RandomFields</a> (&ge; 3.1.24.1), <a href="../RandomFieldsUtils/index.html">RandomFieldsUtils</a> (&ge; 0.3.3.1), <a href="../fftwtools/index.html">fftwtools</a> (&ge;
+0.9-8)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-05-12</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Adrian Baddeley,
+	Rolf Turner 
+        and Ege Rubak,
+	with substantial contributions of code by 
+	Kasper Klitgaard Berthelsen;
+	Ottmar Cronie;
+	Tilman Davies;
+	Yongtao Guan;
+	Ute Hahn;
+	Abdollah Jalilian;
+	Marie-Colette van Lieshout;
+	Greg McSwiggan;
+	Tuomas Rajala;
+	Suman Rakshit;
+	Dominic Schuhmacher;
+	Rasmus Waagepetersen;
+ 	and Hangsheng Wang.
+	Additional contributions 
+	by M. Adepeju;
+        C. Anderson; 
+        Q.W. Ang;
+	R. Arellano;
+	J. Astrom;
+	R. Aue;
+        M. Austenfeld;
+	S. Azaele; 
+	M. Baddeley;
+	C. Beale; 
+	M. Bell;
+	R. Bernhardt; 
+	T. Bendtsen;
+	A. Bevan;
+	B. Biggerstaff;
+	A. Bilgrau;
+	L. Bischof;
+	C. Biscio;
+	R. Bivand;
+	J.M. Blanco Moreno;
+	F. Bonneu;
+	J. Brown;
+	J. Burgos; 
+	S. Byers; 
+	Y.M. Chang; 
+	J.B. Chen; 
+	I. Chernayavsky; 
+	Y.C. Chin; 
+	B. Christensen;
+	L. Cobo Sanchez;
+	J.-F. Coeurjolly;
+	K. Colyvas;
+	H. Commenges;
+	R. Constantine;
+	R. Corria Ainslie;
+	R. Cotton;
+	M. de la Cruz; 
+	P. Dalgaard; 
+	M. D'Antuono;
+        S. Das;
+	P.J. Diggle; 
+	P. Donnelly;
+	I. Dryden; 
+	S. Eglen; 
+	A. El-Gabbas;
+        B. Fandohan;
+        O. Flores;
+	E.D. Ford;
+        P. Forbes;
+	S. Frank; 
+	J. Franklin; 
+	N. Funwi-Gabga;
+        O. Garcia;
+	A. Gault; 
+ 	J. Geldmann;
+	M. Genton;
+	S. Ghalandarayeshi;
+	J. Gilbey;
+	J. Goldstick;
+	P. Grabarnik; 
+	C. Graf; 
+	U. Hahn; 
+	A. Hardegen; 
+	M.B. Hansen; 
+	M. Hazelton; 
+	J. Heikkinen; 
+	M. Hering; 
+	M. Herrmann;
+	M. Hesselbarth;
+	P. Hewson;
+	H. Heydarian;
+	K. Hingee;
+	K. Hornik; 
+	P. Hunziker; 
+	J. Hywood;
+	R. Ihaka;
+	C. Icos; 
+	A. Jammalamadaka;
+	R. John-Chandran; 
+	D. Johnson; 
+	M. Khanmohammadi;
+	R. Klaver;
+	P. Kovesi;
+	L. Kozmian-Ledward;
+	M. Kuhn; 
+	J. Laake; 
+	R.A. Lamb; 
+	F. Lavancier;
+	T. Lawrence;
+	T. Lazauskas;
+	J. Lee; 
+	G.P. Leser;
+	A. Li;
+	H.T. Li;
+	G. Limitsios;
+	A. Lister;
+	N. Luambua;
+	B. Madin;
+	M. Maechler;
+	J. Marcus;
+	K. Marchikanti; 
+	R. Mark; 
+	J. Mateu;
+	P. McCullagh; 
+	U. Mehlig;
+	F. Mestre;
+	S. Meyer; 
+	X.C. Mi;
+	L. De Middeleer;
+	R.K. Milne; 
+        E. Miranda;
+	J. Moller;
+	A. Mollie;
+	I. Moncada;
+	M. Moradi;
+	V. Morera Pujol; 
+	E. Mudrak;
+        G.M. Nair;
+	N. Najari;
+	N. Nava;
+	L.S. Nielsen; 
+	F. Nunes; 
+	J.R. Nyengaard;
+	J. Oehlschlaegel;
+	T. Onkelinx;
+	S. O'Riordan;
+	E. Parilov; 
+	J. Picka; 
+	N. Picard;
+	T. Pollington;
+	M. Porter;
+	S. Protsiv;
+	A. Raftery; 
+	S. Rakshit; 
+	B. Ramage;
+	P. Ramon;
+	X. Raynaud;
+	N. Read; 
+	M. Reiter; 
+        I. Renner;
+	T.O. Richardson;  
+	B.D. Ripley;  
+	E. Rosenbaum; 
+	B. Rowlingson; 
+	J. Rudokas;
+	T. Rudolph;
+	J. Rudge;
+	C. Ryan; 
+	F. Safavimanesh;
+	A. Sarkka; 
+	C. Schank; 
+	K. Schladitz; 
+	S. Schutte;
+	B.T. Scott; 
+        O. Semboli;
+	F. Semecurbe;
+	V. Shcherbakov;
+	G.C. Shen;
+        P. Shi;
+	H.-J. Ship;
+	T.L. Silva;
+	I.-M. Sintorn; 
+	Y. Song; 
+	M. Spiess; 
+	M. Stevenson; 
+	K. Stucki;
+	J. Sulavik;
+	M. Sumner; 
+	P. Surovy; 
+	B. Taylor; 
+	T. Thorarinsdottir;
+	L. Torres;
+	B. Turlach; 
+	T. Tvedebrink;
+        K. Ummer;
+	M. Uppala;
+	A. van Burgel; 
+	T. Verbeke; 
+        M. Vihtakari;
+	A. Villers; 
+        F. Vinatier;
+        M. Vogtland;
+        S. Voss;
+	S. Wagner;
+	H. Wang; 
+	H. Wendrock; 
+	J. Wild;
+	C. Witthoft;
+	S. Wong;
+	M. Woringer;
+	L. Yates;
+	M.E. Zamboni
+	and
+	A. Zeileis.</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Adrian Baddeley  &#x3c;&#x41;&#x64;&#x72;&#x69;&#x61;&#x6e;&#x2e;&#x42;&#x61;&#x64;&#x64;&#x65;&#x6c;&#x65;&#x79;&#x20;&#x61;&#x74;&#x20;&#x63;&#x75;&#x72;&#x74;&#x69;&#x6e;&#x2e;&#x65;&#x64;&#x75;&#x2e;&#x61;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/spatstat/spatstat/issues">https://github.com/spatstat/spatstat/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://www.spatstat.org">http://www.spatstat.org</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">spatstat citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Spatial.html">Spatial</a>, <a href="../../views/SpatioTemporal.html">SpatioTemporal</a>, <a href="../../views/Survival.html">Survival</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_spatstat.html">spatstat results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package spatstat downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="spatstat.pdf"> spatstat.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/bugfixes.pdf">Bugs Fixed in Spatstat</a><br/>
+<a href="vignettes/datasets.pdf">Datasets Provided for the Spatstat Package</a><br/>
+<a href="vignettes/getstart.pdf">Getting Started with Spatstat</a><br/>
+<a href="vignettes/replicated.pdf">Analysing Replicated Point Patterns in Spatstat</a><br/>
+<a href="vignettes/shapefiles.pdf">Handling shapefiles in the spatstat package</a><br/>
+<a href="vignettes/updates.pdf">Summary of Recent Updates to Spatstat</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/spatstat_1.64-1.tar.gz"> spatstat_1.64-1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/spatstat_1.64-1.zip">spatstat_1.64-1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/spatstat_1.64-1.zip">spatstat_1.64-1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/spatstat_1.64-1.zip">spatstat_1.64-1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/spatstat_1.64-1.tgz">spatstat_1.64-1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/spatstat_1.64-1.tgz">spatstat_1.64-1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/spatstat"> spatstat archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package spatstat reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../adaptsmoFMRI/index.html">adaptsmoFMRI</a>, <a href="../dixon/index.html">dixon</a>, <a href="../DSpat/index.html">DSpat</a>, <a href="../ecespa/index.html">ecespa</a>, <a href="../globalKinhom/index.html">globalKinhom</a>, <a href="../GriegSmith/index.html">GriegSmith</a>, <a href="../idar/index.html">idar</a>, <a href="../lacunaritycovariance/index.html">lacunaritycovariance</a>, <a href="../lmfor/index.html">lmfor</a>, <a href="../overlapptest/index.html">overlapptest</a>, <a href="../ppmlasso/index.html">ppmlasso</a>, <a href="../rase/index.html">rase</a>, <a href="../sclero/index.html">sclero</a>, <a href="../selectspm/index.html">selectspm</a>, <a href="../SGCS/index.html">SGCS</a>, <a href="../siar/index.html">siar</a>, <a href="../siplab/index.html">siplab</a>, <a href="../spagmix/index.html">spagmix</a>, <a href="../sparr/index.html">sparr</a>, <a href="../sparrpowR/index.html">sparrpowR</a>, <a href="../SpatEntropy/index.html">SpatEntropy</a>, <a href="../spatialsegregation/index.html">spatialsegregation</a>, <a href="../SpatialVx/index.html">SpatialVx</a>, <a href="../spatstat.gui/index.html">spatstat.gui</a>, <a href="../spatstat.Knet/index.html">spatstat.Knet</a>, <a href="../spatstat.local/index.html">spatstat.local</a>, <a href="../stlnpp/index.html">stlnpp</a>, <a href="../ttbary/index.html">ttbary</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../ads/index.html">ads</a>, <a href="../alphahull/index.html">alphahull</a>, <a href="../AROC/index.html">AROC</a>, <a href="../BAT/index.html">BAT</a>, <a href="../Biolinv/index.html">Biolinv</a>, <a href="../CalSim/index.html">CalSim</a>, <a href="../colordistance/index.html">colordistance</a>, <a href="../drf/index.html">drf</a>, <a href="../DRHotNet/index.html">DRHotNet</a>, <a href="../ecospat/index.html">ecospat</a>, <a href="../ENMTools/index.html">ENMTools</a>, <a href="../ETAS/index.html">ETAS</a>, <a href="../expp/index.html">expp</a>, <a href="../ForestGapR/index.html">ForestGapR</a>, <a href="../forestSAS/index.html">forestSAS</a>, <a href="../geometr/index.html">geometr</a>, <a href="../GET/index.html">GET</a>, <a href="../GmAMisc/index.html">GmAMisc</a>, <a href="../graph4lg/index.html">graph4lg</a>, <a href="../hht/index.html">hht</a>, <a href="../highriskzone/index.html">highriskzone</a>, <a href="../IDSpatialStats/index.html">IDSpatialStats</a>, <a href="../intamapInteractive/index.html">intamapInteractive</a>, <a href="../latticeDensity/index.html">latticeDensity</a>, <a href="../lgcp/index.html">lgcp</a>, <a href="../lqr/index.html">lqr</a>, <a href="../MetaLandSim/index.html">MetaLandSim</a>, <a href="../MtreeRing/index.html">MtreeRing</a>, <a href="../NLMR/index.html">NLMR</a>, <a href="../osmplotr/index.html">osmplotr</a>, <a href="../OutlierDetection/index.html">OutlierDetection</a>, <a href="../radiomics/index.html">radiomics</a>, <a href="../rangeModelMetadata/index.html">rangeModelMetadata</a>, <a href="../rcarbon/index.html">rcarbon</a>, <a href="../replicatedpp2w/index.html">replicatedpp2w</a>, <a href="../rgeoprofile/index.html">rgeoprofile</a>, <a href="../RImageJROI/index.html">RImageJROI</a>, <a href="../rLiDAR/index.html">rLiDAR</a>, <a href="../ROCnReg/index.html">ROCnReg</a>, <a href="../sbw/index.html">sbw</a>, <a href="../SDALGCP/index.html">SDALGCP</a>, <a href="../Seurat/index.html">Seurat</a>, <a href="../shar/index.html">shar</a>, <a href="../SIBER/index.html">SIBER</a>, <a href="../smacpod/index.html">smacpod</a>, <a href="../spatialEco/index.html">spatialEco</a>, <a href="../spatsurv/index.html">spatsurv</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/spicyR.html"><span class="BioC">spicyR</span></a>, <a href="../SpNetPrep/index.html">SpNetPrep</a>, <a href="../sppmix/index.html">sppmix</a>, <a href="../SPUTNIK/index.html">SPUTNIK</a>, <a href="../stpp/index.html">stpp</a>, <a href="../surveillance/index.html">surveillance</a>, <a href="../swfscMisc/index.html">swfscMisc</a>, <a href="../TCIU/index.html">TCIU</a>, <a href="../trip/index.html">trip</a>, <a href="../tweet2r/index.html">tweet2r</a>, <a href="../utilityFunctionTools/index.html">utilityFunctionTools</a>, <a href="../visualFields/index.html">visualFields</a>, <a href="../windfarmGA/index.html">windfarmGA</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../archdata/index.html">archdata</a>, <a href="../autoimage/index.html">autoimage</a>, <a href="../bamlss/index.html">bamlss</a>, <a href="../epiR/index.html">epiR</a>, <a href="../GSIF/index.html">GSIF</a>, <a href="../imager/index.html">imager</a>, <a href="../inlabru/index.html">inlabru</a>, <a href="../ipdw/index.html">ipdw</a>, <a href="../maptools/index.html">maptools</a>, <a href="../McSpatial/index.html">McSpatial</a>, <a href="../mobsim/index.html">mobsim</a>, <a href="../plotKML/index.html">plotKML</a>, <a href="../polyCub/index.html">polyCub</a>, <a href="../rlfsm/index.html">rlfsm</a>, <a href="../sf/index.html">sf</a>, <a href="../spatstat.data/index.html">spatstat.data</a>, <a href="../spatstat.utils/index.html">spatstat.utils</a>, <a href="../stars/index.html">stars</a>, <a href="../stats19/index.html">stats19</a>, <a href="../TexMix/index.html">TexMix</a>, <a href="../trajectories/index.html">trajectories</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=spatstat"><samp>https://CRAN.R-project.org/package=spatstat</samp></a>
+to link to this page.</p>
+</body>
+</html>

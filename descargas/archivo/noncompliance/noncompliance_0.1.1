@@ -1,0 +1,31 @@
+Package: noncompliance
+Type: Package
+Title: Causal Inference in the Presence of Treatment Noncompliance
+        Under the Binary Instrumental Variable Model
+Version: 0.1.1
+Date: 2016-02-11
+Authors@R: c(
+    person("Wen Wei", "Loh", email = "wloh@uw.edu", role = c("aut", "cre")),
+    person("Thomas", "Richardson", role = "aut"))
+Description: A finite-population significance test
+    of the 'sharp' causal null hypothesis that
+    treatment exposure X has no effect on final outcome Y,
+    within the principal stratum of Compliers.
+    A generalized likelihood ratio test statistic is used,
+    and the resulting p-value is exact.
+    Currently, it is assumed that there are only Compliers and Never Takers
+    in the population.
+Imports: data.table (>= 1.9.4), Rcpp (>= 0.12.1)
+License: GPL (>= 3)
+LazyData: TRUE
+LinkingTo: Rcpp
+RoxygenNote: 5.0.1
+Suggests: testthat
+URL: https://www.stat.washington.edu/~wloh/
+NeedsCompilation: yes
+Packaged: 2016-02-12 01:10:49 UTC; wloh
+Author: Wen Wei Loh [aut, cre],
+  Thomas Richardson [aut]
+Maintainer: Wen Wei Loh <wloh@uw.edu>
+Repository: CRAN
+Date/Publication: 2016-02-12 07:41:04

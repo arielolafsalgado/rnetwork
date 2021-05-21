@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package sen2r</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Find, Download and Process Sentinel-2 Data [R package sen2r version 1.3.9]" />
+<meta name="citation_author1" content="Luigi Ranghetti" />
+<meta name="citation_author2" content="Lorenzo Busetto" />
+<meta name="citation_publication_date" content="2020-10-14" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=sen2r" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=sen2r" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="sen2r: Find, Download and Process Sentinel-2 Data" />
+<meta name="og:description" content="Functions to download Sentinel-2 optical images and perform preliminary processing operations. 'sen2r' provides the instruments required to easily perform (and eventually automate) the steps necessary to build a complete Sentinel-2 processing chain. A Graphical User Interface to facilitate data processing is also provided. For additional documentation refer to the following article: Ranghetti et al. (2020) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.cageo.2020.104473&quot;&gt;doi:10.1016/j.cageo.2020.104473&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=sen2r" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>sen2r: Find, Download and Process Sentinel-2 Data</h2>
+<p>Functions to download Sentinel-2 optical images
+ and perform preliminary processing operations.
+ 'sen2r' provides the instruments required to easily perform
+ (and eventually automate) the steps necessary to build a complete
+ Sentinel-2 processing chain.
+ A Graphical User Interface to facilitate data processing is also provided.
+ For additional documentation refer to the following article: 
+ Ranghetti et al. (2020) &lt;<a href="https://doi.org/10.1016%2Fj.cageo.2020.104473">doi:10.1016/j.cageo.2020.104473</a>&gt;.</p>
+<table summary="Package sen2r summary">
+<tr>
+<td>Version:</td>
+<td>1.3.9</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>methods, <a href="../sf/index.html">sf</a> (&ge; 0.9.2), <a href="../stars/index.html">stars</a> (&ge; 0.4.1), <a href="../data.table/index.html">data.table</a>, <a href="../raster/index.html">raster</a>, <a href="../rgdal/index.html">rgdal</a>, <a href="../XML/index.html">XML</a>, <a href="../jsonlite/index.html">jsonlite</a>, <a href="../geojsonio/index.html">geojsonio</a>, <a href="../foreach/index.html">foreach</a>, parallel, <a href="../doParallel/index.html">doParallel</a>, <a href="../httr/index.html">httr</a>, <a href="../RcppTOML/index.html">RcppTOML</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../leaflet/index.html">leaflet</a>, <a href="../leafpm/index.html">leafpm</a>, <a href="../mapedit/index.html">mapedit</a>, <a href="../shiny/index.html">shiny</a>, <a href="../shinyFiles/index.html">shinyFiles</a>, <a href="../shinydashboard/index.html">shinydashboard</a>, <a href="../shinyjs/index.html">shinyjs</a>, <a href="../shinyWidgets/index.html">shinyWidgets</a>, <a href="../spelling/index.html">spelling</a>, <a href="../geojsonlint/index.html">geojsonlint</a>, <a href="../httptest/index.html">httptest</a>, <a href="../knitr/index.html">knitr</a>, <a href="../markdown/index.html">markdown</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../sys/index.html">sys</a>, tools, <a href="../units/index.html">units</a>, <a href="../testthat/index.html">testthat</a> (&ge; 2.1.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-14</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Luigi Ranghetti <a href="https://orcid.org/0000-0001-6207-5188"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Lorenzo Busetto <a href="https://orcid.org/0000-0001-9634-6038"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Luigi Ranghetti  &#x3c;&#x6c;&#x75;&#x69;&#x67;&#x69;&#x20;&#x61;&#x74;&#x20;&#x72;&#x61;&#x6e;&#x67;&#x68;&#x65;&#x74;&#x74;&#x69;&#x2e;&#x69;&#x6e;&#x66;&#x6f;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ranghetti/sen2r/issues">https://github.com/ranghetti/sen2r/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://sen2r.ranghetti.info">http://sen2r.ranghetti.info</a>, <a href="https://github.com/ranghetti/sen2r">https://github.com/ranghetti/sen2r</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>GDAL (&gt;= 2.1.2), PROJ (&gt;= 4.9.1), GEOS (&gt;= 3.4.2),
+Cairo, Curl, NetCDF, jq, Protocol Buffers, V8, OpenSSL,
+Libxml2.</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-GB</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">sen2r citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_sen2r.html">sen2r results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package sen2r downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="sen2r.pdf"> sen2r.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/docker.html">Run in a Docker container</a><br/>
+<a href="vignettes/installation.html">Installation</a><br/>
+<a href="vignettes/outstructure.html">Output file structure</a><br/>
+<a href="vignettes/sen2r_cmd.html">Using sen2r() from the command line</a><br/>
+<a href="vignettes/sen2r_gui.html">Using sen2r() from the GUI</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/sen2r_1.3.9.tar.gz"> sen2r_1.3.9.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/sen2r_1.3.9.zip">sen2r_1.3.9.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/sen2r_1.3.9.zip">sen2r_1.3.9.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/sen2r_1.3.9.zip">sen2r_1.3.9.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/sen2r_1.3.9.tgz">sen2r_1.3.9.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/sen2r_1.3.9.tgz">sen2r_1.3.9.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/sen2r"> sen2r archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=sen2r"><samp>https://CRAN.R-project.org/package=sen2r</samp></a>
+to link to this page.</p>
+</body>
+</html>

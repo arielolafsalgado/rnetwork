@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package fasterize</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Fast Polygon to Raster Conversion [R package fasterize version 1.0.3]" />
+<meta name="citation_author" content="Noam Ross" />
+<meta name="citation_publication_date" content="2020-07-27" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=fasterize" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=fasterize" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="fasterize: Fast Polygon to Raster Conversion" />
+<meta name="og:description" content="Provides a drop-in replacement for rasterize() from the 'raster' package that takes 'sf'-type objects, and is much faster. There is support for the main options provided by the rasterize() function, including setting the field used and background value, and options for aggregating multi-layer rasters. Uses the scan line algorithm attributed to Wylie et al. (1967) &amp;lt;&lt;a href=&quot;https://doi.org/10.1145%2F1465611.1465619&quot;&gt;doi:10.1145/1465611.1465619&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=fasterize" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>fasterize: Fast Polygon to Raster Conversion</h2>
+<p>Provides a drop-in replacement for rasterize() from the 'raster'
+   package that takes 'sf'-type objects, and is much faster. There is support
+   for the main options provided by the rasterize() function, including
+   setting the field used and background value, and options for 
+   aggregating multi-layer rasters. Uses the scan line algorithm attributed to
+   Wylie et al. (1967) &lt;<a href="https://doi.org/10.1145%2F1465611.1465619">doi:10.1145/1465611.1465619</a>&gt;.</p>
+<table summary="Package fasterize summary">
+<tr>
+<td>Version:</td>
+<td>1.0.3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>methods, <a href="../Rcpp/index.html">Rcpp</a>, <a href="../raster/index.html">raster</a>, <a href="../sp/index.html">sp</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../microbenchmark/index.html">microbenchmark</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../sf/index.html">sf</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-07-27</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Noam Ross <a href="https://orcid.org/0000-0002-2136-0000"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    cre],
+  Michael Sumner <a href="https://orcid.org/0000-0002-2471-7511"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  EcoHealth Alliance [cph],
+  USAID PREDICT [fnd]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Noam Ross  &#x3c;&#x72;&#x6f;&#x73;&#x73;&#x20;&#x61;&#x74;&#x20;&#x65;&#x63;&#x6f;&#x68;&#x65;&#x61;&#x6c;&#x74;&#x68;&#x61;&#x6c;&#x6c;&#x69;&#x61;&#x6e;&#x63;&#x65;&#x2e;&#x6f;&#x72;&#x67;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ecohealthalliance/fasterize/issues">https://github.com/ecohealthalliance/fasterize/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/ecohealthalliance/fasterize">https://github.com/ecohealthalliance/fasterize</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>C++11</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_fasterize.html">fasterize results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package fasterize downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="fasterize.pdf"> fasterize.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/using-fasterize.html">Using Fasterize</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/fasterize_1.0.3.tar.gz"> fasterize_1.0.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/fasterize_1.0.3.zip">fasterize_1.0.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/fasterize_1.0.3.zip">fasterize_1.0.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/fasterize_1.0.3.zip">fasterize_1.0.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/fasterize_1.0.3.tgz">fasterize_1.0.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/fasterize_1.0.3.tgz">fasterize_1.0.3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/fasterize"> fasterize archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package fasterize reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../BIEN/index.html">BIEN</a>, <a href="../briskaR/index.html">briskaR</a>, <a href="../GapAnalysis/index.html">GapAnalysis</a>, <a href="../NLMR/index.html">NLMR</a>, <a href="../prioritizr/index.html">prioritizr</a>, <a href="../raceland/index.html">raceland</a>, <a href="../rasterDT/index.html">rasterDT</a>, <a href="../siland/index.html">siland</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../reproducible/index.html">reproducible</a>, <a href="../SpaDES.tools/index.html">SpaDES.tools</a>, <a href="../ursa/index.html">ursa</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=fasterize"><samp>https://CRAN.R-project.org/package=fasterize</samp></a>
+to link to this page.</p>
+</body>
+</html>

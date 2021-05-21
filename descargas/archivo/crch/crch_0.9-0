@@ -1,0 +1,25 @@
+Package: crch
+Title: Censored Regression with Conditional Heteroscedasticity
+Version: 0.9-0
+Date: 2015-06-26
+Authors@R: c(person(given = "Jakob", family = "Messner", role = c("aut", "cre"), email = "Jakob.Messner@uibk.ac.at"),
+             person(given = "Achim", family = "Zeileis", role = "aut", email = "Achim.Zeileis@R-project.org"))
+Depends: R (>= 2.10.0)
+Imports: stats, Formula, ordinal
+Suggests: glmx, lmtest
+Description: Different approaches to censored or truncated regression with 
+  conditional heteroscedasticity are provided. First, continuous 
+  distributions can be used for the (right and/or left censored or truncated)
+  response with separate linear predictors for the mean and variance. 
+  Second, cumulative link models for ordinal data
+  (obtained by interval-censoring continuous data) can be employed for
+  heteroscedastic extended logistic regression (HXLR). In the latter type of
+  models, the intercepts depend on the thresholds that define the intervals. 
+License: GPL-2 | GPL-3
+NeedsCompilation: no
+Packaged: 2015-06-27 05:49:33 UTC; jakob
+Author: Jakob Messner [aut, cre],
+  Achim Zeileis [aut]
+Maintainer: Jakob Messner <Jakob.Messner@uibk.ac.at>
+Repository: CRAN
+Date/Publication: 2015-06-27 13:22:43

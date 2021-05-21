@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package heatmaply</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Interactive Cluster Heat Maps Using 'plotly' [R package heatmaply version 1.1.1]" />
+<meta name="citation_author1" content="Tal Galili" />
+<meta name="citation_author2" content="Alan O'Callaghan" />
+<meta name="citation_publication_date" content="2020-08-25" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=heatmaply" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=heatmaply" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="heatmaply: Interactive Cluster Heat Maps Using 'plotly'" />
+<meta name="og:description" content="Create interactive cluster 'heatmaps' that can be saved as a stand- alone HTML file, embedded in 'R Markdown' documents or in a 'Shiny' app, and available in the 'RStudio' viewer pane. Hover the mouse pointer over a cell to show details or drag a rectangle to zoom. A 'heatmap' is a popular graphical method for visualizing high-dimensional data, in which a table of numbers are encoded as a grid of colored cells. The rows and columns of the matrix are ordered to highlight patterns and are often accompanied by 'dendrograms'. 'Heatmaps' are used in many fields for visualizing observations, correlations, missing values patterns, and more. Interactive 'heatmaps' allow the inspection of specific value by hovering the mouse over a cell, as well as zooming into a region of the 'heatmap' by dragging a rectangle around the relevant area. This work is based on the 'ggplot2' and 'plotly.js' engine. It produces similar 'heatmaps' as 'heatmap.2' with the advantage of speed ('plotly.js' is able to handle larger size matrix), the ability to zoom from the 'dendrogram' panes, and the placing of factor variables in the sides of the 'heatmap'." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=heatmaply" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>heatmaply: Interactive Cluster Heat Maps Using 'plotly'</h2>
+<p>Create interactive cluster 'heatmaps' that can be saved as a stand-
+    alone HTML file, embedded in 'R Markdown' documents or in a 'Shiny' app, and
+    available in the 'RStudio' viewer pane. Hover the mouse pointer over a cell to
+    show details or drag a rectangle to zoom. A 'heatmap' is a popular graphical
+    method for visualizing high-dimensional data, in which a table of numbers
+    are encoded as a grid of colored cells. The rows and columns of the matrix
+    are ordered to highlight patterns and are often accompanied by 'dendrograms'.
+    'Heatmaps' are used in many fields for visualizing observations, correlations,
+    missing values patterns, and more. Interactive 'heatmaps' allow the inspection
+    of specific value by hovering the mouse over a cell, as well as zooming into
+    a region of the 'heatmap' by dragging a rectangle around the relevant area.
+    This work is based on the 'ggplot2' and 'plotly.js' engine. It produces
+    similar 'heatmaps' as 'heatmap.2' with the advantage of speed
+    ('plotly.js' is able to handle larger size matrix), the ability to zoom from
+    the 'dendrogram' panes, and the placing of factor variables in the sides of the
+    'heatmap'.</p>
+<table summary="Package heatmaply summary">
+<tr>
+<td>Version:</td>
+<td>1.1.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0.0), <a href="../plotly/index.html">plotly</a> (&ge; 4.7.1), <a href="../viridis/index.html">viridis</a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../ggplot2/index.html">ggplot2</a> (&ge; 2.2.0), <a href="../dendextend/index.html">dendextend</a> (&ge; 1.12.0), <a href="../magrittr/index.html">magrittr</a> (&ge;
+1.0.1), <a href="../reshape2/index.html">reshape2</a>, <a href="../scales/index.html">scales</a>, <a href="../seriation/index.html">seriation</a>, utils, stats, grDevices, methods, <a href="../colorspace/index.html">colorspace</a>, <a href="../RColorBrewer/index.html">RColorBrewer</a>, <a href="../htmlwidgets/index.html">htmlwidgets</a>, <a href="../webshot/index.html">webshot</a>, <a href="../assertthat/index.html">assertthat</a>, <a href="../egg/index.html">egg</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../covr/index.html">covr</a>, <a href="../gplots/index.html">gplots</a>, <a href="../tidyselect/index.html">tidyselect</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-08-25</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Tal Galili [aut, cre, cph] (https://www.r-statistics.com),
+  Alan O'Callaghan [aut] (https://github.com/Alanocallaghan),
+  Jonathan Sidi [ctb] (https://github.com/yonicd),
+  Yoav Benjamini [ths]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Tal Galili  &#x3c;&#x74;&#x61;&#x6c;&#x2e;&#x67;&#x61;&#x6c;&#x69;&#x6c;&#x69;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/talgalili/heatmaply/issues">https://github.com/talgalili/heatmaply/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://talgalili.github.io/heatmaply/">https://talgalili.github.io/heatmaply/</a>,
+<a href="https://cran.r-project.org/package=heatmaply">https://cran.r-project.org/package=heatmaply</a>,
+<a href="https://github.com/talgalili/heatmaply/">https://github.com/talgalili/heatmaply/</a>,
+<a href="https://www.r-statistics.com/tag/heatmaply/">https://www.r-statistics.com/tag/heatmaply/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">heatmaply citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> <a href="ChangeLog">ChangeLog</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_heatmaply.html">heatmaply results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package heatmaply downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="heatmaply.pdf"> heatmaply.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/heatmaply.html">Introduction to heatmaply</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/heatmaply_1.1.1.tar.gz"> heatmaply_1.1.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/heatmaply_1.1.1.zip">heatmaply_1.1.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/heatmaply_1.1.1.zip">heatmaply_1.1.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/heatmaply_1.1.1.zip">heatmaply_1.1.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/heatmaply_1.1.1.tgz">heatmaply_1.1.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/heatmaply_1.1.1.tgz">heatmaply_1.1.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/heatmaply"> heatmaply archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package heatmaply reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../shinyHeatmaply/index.html">shinyHeatmaply</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="http://www.bioconductor.org/packages/release/bioc/html/BatchQC.html"><span class="BioC">BatchQC</span></a>, <a href="../BayesianNetwork/index.html">BayesianNetwork</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/debrowser.html"><span class="BioC">debrowser</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/DiscoRhythm.html"><span class="BioC">DiscoRhythm</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/ideal.html"><span class="BioC">ideal</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/ImmuneSpaceR.html"><span class="BioC">ImmuneSpaceR</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/metaseqR2.html"><span class="BioC">metaseqR2</span></a>, <a href="../neatmaps/index.html">neatmaps</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/OUTRIDER.html"><span class="BioC">OUTRIDER</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/pcaExplorer.html"><span class="BioC">pcaExplorer</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/scTensor.html"><span class="BioC">scTensor</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/ViSEAGO.html"><span class="BioC">ViSEAGO</span></a>, <a href="../wilson/index.html">wilson</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../CNVScope/index.html">CNVScope</a>, <a href="../dendextend/index.html">dendextend</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/rcellminer.html"><span class="BioC">rcellminer</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/rrvgo.html"><span class="BioC">rrvgo</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=heatmaply"><samp>https://CRAN.R-project.org/package=heatmaply</samp></a>
+to link to this page.</p>
+</body>
+</html>

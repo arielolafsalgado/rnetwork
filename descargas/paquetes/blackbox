@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package blackbox</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Black Box Optimization and Exploration of Parameter Space [R package blackbox version 1.1.32]" />
+<meta name="citation_author" content="François Rousset" />
+<meta name="citation_publication_date" content="2020-04-20" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=blackbox" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=blackbox" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="blackbox: Black Box Optimization and Exploration of Parameter Space" />
+<meta name="og:description" content="Performs prediction of a response function from simulated response values, allowing black-box optimization of functions estimated with some error. Includes a simple user interface for such applications, as well as more specialized functions designed to be called by the Migraine software (Rousset and Leblois, 2012 &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fmolbev%2FMSR262&quot;&gt;doi:10.1093/molbev/MSR262&lt;/a&gt;&amp;gt;; Leblois et al., 2014 &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fmolbev%2Fmsu212&quot;&gt;doi:10.1093/molbev/msu212&lt;/a&gt;&amp;gt;; and see URL). The latter functions are used for prediction of likelihood surfaces and implied likelihood ratio confidence intervals, and for exploration of predictor space of the surface. Prediction of the response is based on ordinary Kriging (with residual error) of the input. Estimation of smoothing parameters is performed by generalized cross-validation." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=blackbox" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>blackbox: Black Box Optimization and Exploration of Parameter Space</h2>
+<p>Performs prediction of a response function from simulated response values, allowing black-box optimization of functions estimated with some error. Includes a simple user interface for such applications, as well as more specialized functions designed to be called by the Migraine software (Rousset and Leblois, 2012 &lt;<a href="https://doi.org/10.1093%2Fmolbev%2FMSR262">doi:10.1093/molbev/MSR262</a>&gt;; Leblois et al., 2014 &lt;<a href="https://doi.org/10.1093%2Fmolbev%2Fmsu212">doi:10.1093/molbev/msu212</a>&gt;; and see URL). The latter functions are used for prediction of likelihood surfaces and implied likelihood ratio confidence intervals, and for exploration of predictor space of the surface. Prediction of the response is based on ordinary Kriging (with residual error) of the input. Estimation of smoothing parameters is performed by generalized cross-validation.</p>
+<table summary="Package blackbox summary">
+<tr>
+<td>Version:</td>
+<td>1.1.32</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.1.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../numDeriv/index.html">numDeriv</a>, <a href="../rcdd/index.html">rcdd</a>, <a href="../geometry/index.html">geometry</a> (&ge; 0.3-6), <a href="../proxy/index.html">proxy</a>, <a href="../spaMM/index.html">spaMM</a> (&ge; 3.1.0), <a href="../lattice/index.html">lattice</a>, <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.10), <a href="../nloptr/index.html">nloptr</a>, <a href="../MASS/index.html">MASS</a>, <a href="../pbapply/index.html">pbapply</a>, <a href="../foreach/index.html">foreach</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppEigen/index.html">RcppEigen</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../minqa/index.html">minqa</a>, <a href="../lbfgsb3c/index.html">lbfgsb3c</a>, <a href="../igraph/index.html">igraph</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-04-20</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>François Rousset <a href="https://orcid.org/0000-0003-4670-0371"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre, cph],
+  Raphaël Leblois <a href="https://orcid.org/0000-0002-3051-4497"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>François Rousset  &#x3c;&#x66;&#x72;&#x61;&#x6e;&#x63;&#x6f;&#x69;&#x73;&#x2e;&#x72;&#x6f;&#x75;&#x73;&#x73;&#x65;&#x74;&#x20;&#x61;&#x74;&#x20;&#x75;&#x6d;&#x6f;&#x6e;&#x74;&#x70;&#x65;&#x6c;&#x6c;&#x69;&#x65;&#x72;&#x2e;&#x66;&#x72;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="http://www.cecill.info/licences/Licence_CeCILL_V2-en.txt">CeCILL-2</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://kimura.univ-montp2.fr/~rousset/Migraine.htm">http://kimura.univ-montp2.fr/~rousset/Migraine.htm</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_blackbox.html">blackbox results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package blackbox downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="blackbox.pdf"> blackbox.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/blackbox_1.1.32.tar.gz"> blackbox_1.1.32.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/blackbox_1.1.32.zip">blackbox_1.1.32.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/blackbox_1.1.32.zip">blackbox_1.1.32.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/blackbox_1.1.32.zip">blackbox_1.1.32.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/blackbox_1.1.32.tgz">blackbox_1.1.32.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/blackbox_1.1.32.tgz">blackbox_1.1.32.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/blackbox"> blackbox archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package blackbox reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../Infusion/index.html">Infusion</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../spaMM/index.html">spaMM</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=blackbox"><samp>https://CRAN.R-project.org/package=blackbox</samp></a>
+to link to this page.</p>
+</body>
+</html>

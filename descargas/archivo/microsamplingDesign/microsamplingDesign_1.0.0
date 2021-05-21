@@ -1,0 +1,55 @@
+Package: microsamplingDesign
+Title: Finding Optimal Microsampling Designs for Non-Compartmental
+        Pharmacokinetic Analysis
+Version: 1.0.0
+License: GPL-3
+Authors@R: c( person("Adriaan", "Blommaert", role = c("aut", "cre"),
+                     email = "adriaan.blommaert@openanalytics.eu"),
+              person("Daan", "Seynaeve", role = "ctb" ),
+              person("Helen", "Barnett", role = "ctb" ),
+              person("Tom", "Jacobs", role = "ctb" ),
+              person("Fetene", "Tekle", role = "ctb" ),
+              person("Thomas", "Jaki", role = "ctb" ) )
+Maintainer: Adriaan Blommaert <adriaan.blommaert@openanalytics.eu>
+Description: 
+  Find optimal microsampling designs for non-compartmental pharacokinetic analysis using a  general simulation methodology:
+  Algorithm III of Barnett, Helen, Helena Geys, Tom Jacobs, and Thomas Jaki. (2017) "Optimal Designs for Non-Compartmental
+  Analysis of Pharmacokinetic Studies. (currently unpublished)"
+  This methodology consist of (1) specifying a pharmacokinetic model
+  including variability among animals; (2) generating possible sampling times; (3)
+  evaluating performance of each time point choice on simulated data; (4)
+  generating possible schemes given a time point choice and additional constraints
+  and finally (5) evaluating scheme performance on simulated data. The default
+  settings differ from the article of Barnett and others, in the default pharmacokinetic model used and
+  the parameterization of variability among animals. Details can be found in the package vignette. A 'shiny'
+  web application is included, which guides users from model parametrization to
+  optimal microsampling scheme.   
+URL: http://www.openanalytics.eu
+Depends: R (>= 3.3.2), Rcpp
+Imports: abind, deSolve, devtools, ggplot2, gridExtra, gtools, knitr,
+        MASS, matrixStats, matrixcalc, methods, parallel, plyr, readr,
+        reshape2, shiny, stats, stringr, utils
+LinkingTo: Rcpp, RcppArmadillo
+ByteCompile: true
+LazyLoad: yes
+RoxygenNote: 6.0.1
+Suggests: bookdown, data.table, plotly, shinyjs, shinyBS, rmarkdown,
+        rhandsontable, shinycssloaders, testthat
+Collate: 'RcppExports.R' 'aaaGenerics.R' 'appFunctions.R'
+        'constraintFunctions.R' 'fastRankSchemes.R' 'internalHelpers.R'
+        'objectPkModelParent.R' 'objectSetOfSchemes.R'
+        'objectPkModel.R' 'objectPkModelRange.R'
+        'objectSetOfTimePoints.R' 'pkFunctions.R' 'schemeStatistics.R'
+        'rankScheme.R' 'rankTimePoints.R' 'schemeGenerator.R'
+        'timePointGeneration.R'
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2018-05-02 09:05:42 UTC; ablommaert
+Author: Adriaan Blommaert [aut, cre],
+  Daan Seynaeve [ctb],
+  Helen Barnett [ctb],
+  Tom Jacobs [ctb],
+  Fetene Tekle [ctb],
+  Thomas Jaki [ctb]
+Repository: CRAN
+Date/Publication: 2018-05-02 20:13:22 UTC

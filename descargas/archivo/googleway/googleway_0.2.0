@@ -1,0 +1,27 @@
+Package: googleway
+Type: Package
+Title: Retrieve Routes from Google Directions API and Decode Encoded
+        Polylines
+Version: 0.2.0
+Date: 2016-05-20
+Authors@R: c(
+    person("David", "Cooley", ,"dcooley@symbolix.com.au", role = c("aut", "cre")),
+    person("Paulo", "Barcelos", role = "ctb", comment = "Author of c++ decode_pl")
+    )
+Description: Retrieves routes and decodes polylines generated from Google's directions API (https://developers.google.com/maps/documentation/directions/).
+License: Apache License 2.0
+LazyData: TRUE
+Depends: R (>= 3.0.0)
+Imports: Rcpp (>= 0.12.5), jsonlite (>= 0.9.20), curl
+LinkingTo: Rcpp
+RoxygenNote: 5.0.1
+BugReports: https://github.com/SymbolixAU/googleway/issues
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2016-05-30 06:50:22 UTC; dave
+Author: David Cooley [aut, cre],
+  Paulo Barcelos [ctb] (Author of c++ decode_pl)
+Maintainer: David Cooley <dcooley@symbolix.com.au>
+Repository: CRAN
+Date/Publication: 2016-05-30 15:56:43

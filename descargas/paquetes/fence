@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package fence</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=fence" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="fence: Using Fence Methods for Model Selection" />
+<meta name="og:description" content="This method is a new class of model selection strategies, for mixed model selection, which includes linear and generalized linear mixed models. The idea involves a procedure to isolate a subgroup of what are known as correct models (of which the optimal model is a member). This is accomplished by constructing a statistical fence, or barrier, to carefully eliminate incorrect models. Once the fence is constructed, the optimal model is selected from among those within the fence according to a criterion which can be made flexible. References: 1. Jiang J., Rao J.S., Gu Z., Nguyen T. (2008), Fence Methods for Mixed Model Selection. The Annals of Statistics, 36(4): 1669-1692. &amp;lt;&lt;a href=&quot;https://doi.org/10.1214%2F07-AOS517&quot;&gt;doi:10.1214/07-AOS517&lt;/a&gt;&amp;gt; &amp;lt;&lt;a href=&quot;https://projecteuclid.org/euclid.aos/1216237296&quot;&gt;https://projecteuclid.org/euclid.aos/1216237296&lt;/a&gt;&amp;gt;. 2. Jiang J., Nguyen T., Rao J.S. (2009), A Simplified Adaptive Fence Procedure. Statistics and Probability Letters, 79, 625-629. &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.spl.2008.10.014&quot;&gt;doi:10.1016/j.spl.2008.10.014&lt;/a&gt;&amp;gt; &amp;lt;&lt;a href=&quot;https://www.researchgate.net/publication/23991417_A_simplified_adaptive_fence_procedure&quot;&gt;https://www.researchgate.net/publication/23991417_A_simplified_adaptive_fence_procedure&lt;/a&gt;&amp;gt; 3. Jiang J., Nguyen T., Rao J.S. (2010), Fence Method for Nonparametric Small Area Estimation. Survey Methodology, 36(1), 3-11. &amp;lt;&lt;a href=&quot;http://publications.gc.ca/collections/collection_2010/statcan/12-001-X/12-001-x2010001-eng.pdf&quot;&gt;http://publications.gc.ca/collections/collection_2010/statcan/12-001-X/12-001-x2010001-eng.pdf&lt;/a&gt;&amp;gt;. 4. Jiming Jiang, Thuan Nguyen and J. Sunil Rao (2011), Invisible fence methods and the identification of differentially expressed gene sets. Statistics and Its Interface, Volume 4, 403-415. &amp;lt;&lt;a href=&quot;http://www.intlpress.com/site/pub/files/_fulltext/journals/sii/2011/0004/0003/SII-2011-0004-0003-a014.pdf&quot;&gt;http://www.intlpress.com/site/pub/files/_fulltext/journals/sii/2011/0004/0003/SII-2011-0004-0003-a014.pdf&lt;/a&gt;&amp;gt;. 5. Thuan Nguyen &amp;amp; Jiming Jiang (2012), Restricted fence method for covariate selection in longitudinal data analysis. Biostatistics, 13(2), 303-314. &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fbiostatistics%2Fkxr046&quot;&gt;doi:10.1093/biostatistics/kxr046&lt;/a&gt;&amp;gt; &amp;lt;&lt;a href=&quot;https://academic.oup.com/biostatistics/article/13/2/303/263903/Restricted-fence-method-for-covariate-selection-in&quot;&gt;https://academic.oup.com/biostatistics/article/13/2/303/263903/Restricted-fence-method-for-covariate-selection-in&lt;/a&gt;&amp;gt;. 6. Thuan Nguyen, Jie Peng, Jiming Jiang (2014), Fence Methods for Backcross Experiments. Statistical Computation and Simulation, 84(3), 644-662. &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F00949655.2012.721885&quot;&gt;doi:10.1080/00949655.2012.721885&lt;/a&gt;&amp;gt; &amp;lt;&lt;a href=&quot;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3891925/&quot;&gt;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3891925/&lt;/a&gt;&amp;gt;. 7. Jiang, J. (2014), The fence methods, in Advances in Statistics, Hindawi Publishing Corp., Cairo. &amp;lt;&lt;a href=&quot;https://doi.org/10.1155%2F2014%2F830821&quot;&gt;doi:10.1155/2014/830821&lt;/a&gt;&amp;gt;. 8. Jiming Jiang and Thuan Nguyen (2015), The Fence Methods, World Scientific, Singapore. &amp;lt;&lt;a href=&quot;https://www.abebooks.com/9789814596060/Fence-Methods-Jiming-Jiang-981459606X/plp&quot;&gt;https://www.abebooks.com/9789814596060/Fence-Methods-Jiming-Jiang-981459606X/plp&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=fence" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>fence: Using Fence Methods for Model Selection</h2>
+<p>This method is a new class of model selection strategies, 
+    for mixed model selection, which includes linear and generalized linear 
+    mixed models. The idea involves a procedure to isolate a subgroup of what 
+    are known as correct models (of which the optimal model is a member). This is 
+    accomplished by constructing a statistical fence, or barrier, to carefully 
+    eliminate incorrect models. Once the fence is constructed, the optimal model is 
+    selected from among those within the fence according to a criterion which can 
+    be made flexible.
+    References: 
+    1. Jiang J., Rao J.S., Gu Z., Nguyen T. (2008),  Fence Methods for Mixed Model Selection. 
+    The Annals of Statistics, 36(4): 1669-1692.  
+    &lt;<a href="https://doi.org/10.1214%2F07-AOS517">doi:10.1214/07-AOS517</a>&gt; &lt;<a href="https://projecteuclid.org/euclid.aos/1216237296">https://projecteuclid.org/euclid.aos/1216237296</a>&gt;.
+    2. Jiang J., Nguyen T., Rao J.S. (2009), A Simplified Adaptive Fence Procedure. 
+    Statistics and Probability Letters, 79, 625-629.  
+    &lt;<a href="https://doi.org/10.1016%2Fj.spl.2008.10.014">doi:10.1016/j.spl.2008.10.014</a>&gt; &lt;<a href="https://www.researchgate.net/publication/23991417_A_simplified_adaptive_fence_procedure">https://www.researchgate.net/publication/23991417_A_simplified_adaptive_fence_procedure</a>&gt;
+    3. Jiang J., Nguyen T., Rao J.S. (2010), Fence Method for Nonparametric Small Area Estimation. 
+    Survey Methodology, 36(1), 3-11.  
+    &lt;<a href="http://publications.gc.ca/collections/collection_2010/statcan/12-001-X/12-001-x2010001-eng.pdf">http://publications.gc.ca/collections/collection_2010/statcan/12-001-X/12-001-x2010001-eng.pdf</a>&gt;.
+    4. Jiming Jiang, Thuan Nguyen and J. Sunil Rao (2011), Invisible fence methods and the identification of differentially expressed gene sets. 
+    Statistics and Its Interface, Volume 4, 403-415.
+    &lt;<a href="http://www.intlpress.com/site/pub/files/_fulltext/journals/sii/2011/0004/0003/SII-2011-0004-0003-a014.pdf">http://www.intlpress.com/site/pub/files/_fulltext/journals/sii/2011/0004/0003/SII-2011-0004-0003-a014.pdf</a>&gt;.
+    5. Thuan Nguyen &amp; Jiming Jiang (2012), Restricted fence method for covariate selection in longitudinal data analysis. 
+    Biostatistics, 13(2), 303-314.  
+    &lt;<a href="https://doi.org/10.1093%2Fbiostatistics%2Fkxr046">doi:10.1093/biostatistics/kxr046</a>&gt; &lt;<a href="https://academic.oup.com/biostatistics/article/13/2/303/263903/Restricted-fence-method-for-covariate-selection-in">https://academic.oup.com/biostatistics/article/13/2/303/263903/Restricted-fence-method-for-covariate-selection-in</a>&gt;.
+    6. Thuan Nguyen, Jie Peng, Jiming Jiang (2014), Fence Methods for Backcross Experiments.  
+    Statistical Computation and Simulation, 84(3), 644-662.  
+    &lt;<a href="https://doi.org/10.1080%2F00949655.2012.721885">doi:10.1080/00949655.2012.721885</a>&gt; &lt;<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3891925/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3891925/</a>&gt;.
+    7. Jiang, J. (2014), The fence methods, in Advances in Statistics, Hindawi Publishing Corp., Cairo.  
+    &lt;<a href="https://doi.org/10.1155%2F2014%2F830821">doi:10.1155/2014/830821</a>&gt;.
+    8. Jiming Jiang and Thuan Nguyen (2015), The Fence Methods, World Scientific, Singapore.  
+    &lt;<a href="https://www.abebooks.com/9789814596060/Fence-Methods-Jiming-Jiang-981459606X/plp">https://www.abebooks.com/9789814596060/Fence-Methods-Jiming-Jiang-981459606X/plp</a>&gt;.</p>
+<table summary="Package fence summary">
+<tr>
+<td>Version:</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../MASS/index.html">MASS</a>, stats, <a href="../lme4/index.html">lme4</a>, <a href="../ggplot2/index.html">ggplot2</a>, compiler, <a href="../sae/index.html">sae</a>, <a href="../fields/index.html">fields</a>, grDevices, <a href="../snowfall/index.html">snowfall</a>, <a href="../snow/index.html">snow</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../pscl/index.html">pscl</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2017-07-01</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Jiming Jiang, Jianyang Zhao, J. Sunil Rao, Thuan Nguyen</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Thuan Nguyen  &#x3c;&#x6e;&#x67;&#x75;&#x79;&#x74;&#x68;&#x75;&#x61;&#x20;&#x61;&#x74;&#x20;&#x6f;&#x68;&#x73;&#x75;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/BSD_2_clause">BSD_2_clause</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_fence.html">fence results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package fence downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="fence.pdf"> fence.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/fence_1.0.tar.gz"> fence_1.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/fence_1.0.zip">fence_1.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/fence_1.0.zip">fence_1.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/fence_1.0.zip">fence_1.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/fence_1.0.tgz">fence_1.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/fence_1.0.tgz">fence_1.0.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=fence"><samp>https://CRAN.R-project.org/package=fence</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,33 @@
+Package: crplyr
+Type: Package
+Title: A 'dplyr' Interface for Crunch
+Description: In order to facilitate analysis of datasets hosted on the Crunch
+    data platform <http://crunch.io/>, the 'crplyr' package implements 'dplyr'
+    methods on top of the Crunch backend. The usual methods 'select', 'filter',
+    'group_by', 'summarize', and 'collect' are implemented in such a way as to
+    perform as much computation on the server and pull as little data locally
+    as possible.
+Version: 0.3.0
+Authors@R: c(
+    person("Neal", "Richardson", role="aut", email="neal.p.richardson@gmail.com"),
+    person("Jonathan", "Keane", role=c("aut", "cre"), email="jon.keane@crunch.io"),
+    person("Gordon", "Shotwell", role="aut", email="gordon.shotwell@gmail.com"))
+URL: https://crunch.io/r/crplyr/, https://github.com/Crunch-io/crplyr
+BugReports: https://github.com/Crunch-io/crplyr/issues
+License: LGPL (>= 3)
+Depends: R (>= 3.0.0), crunch (>= 1.15.3), dplyr
+Imports: methods, ggplot2, lazyeval, purrr, tibble, rlang, scales,
+        stringr, viridisLite
+Suggests: covr, httptest (>= 3.0.0), magrittr, spelling, vdiffr, knitr,
+        testthat, rmarkdown
+RoxygenNote: 6.1.1
+Language: en-US
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-04-03 21:01:01 UTC; npr
+Author: Neal Richardson [aut],
+  Jonathan Keane [aut, cre],
+  Gordon Shotwell [aut]
+Maintainer: Jonathan Keane <jon.keane@crunch.io>
+Repository: CRAN
+Date/Publication: 2019-04-03 21:52:16 UTC

@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package Rsagacmd</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Linking R with the Open-Source 'SAGA-GIS' Software [R package Rsagacmd version 0.0.9]" />
+<meta name="citation_author" content="Steven Pawley" />
+<meta name="citation_publication_date" content="2020-06-12" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=Rsagacmd" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=Rsagacmd" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="Rsagacmd: Linking R with the Open-Source 'SAGA-GIS' Software" />
+<meta name="og:description" content="Provides an R scripting interface to the open-source 'SAGA-GIS' (System for Automated Geoscientific Analyses Geographical Information System) software. 'Rsagacmd' dynamically generates R functions for every 'SAGA-GIS' geoprocessing tool based on the user's currently installed 'SAGA-GIS' version. These functions are contained within an S3 object and are accessed as a named list of libraries and tools. This structure facilitates an easier scripting experience by organizing the large number of 'SAGA-GIS' geoprocessing tools (&amp;gt;700) by their respective library. Interactive scripting can fully take advantage of code autocompletion tools (e.g. in 'Rstudio'), allowing for each tools syntax to be quickly recognized. Furthermore, the most common types of spatial data (via the 'raster', 'sp', and 'sf' packages) along with non-spatial data are automatically passed from R to the 'SAGA-GIS' command line tool for geoprocessing operations, and the results are loaded as the appropriate R object. Outputs from individual 'SAGA-GIS' tools can also be chained using pipes from the 'magrittr' and 'dplyr' packages to combine complex geoprocessing operations together in a single statement. 'SAGA-GIS' is available under a GPLv2 / LGPLv2 licence from &amp;lt;&lt;a href=&quot;https://sourceforge.net/projects/saga-gis/&quot;&gt;https://sourceforge.net/projects/saga-gis/&lt;/a&gt;&amp;gt; including Windows x86/x84 binaries. SAGA-GIS is also included in Debian/Ubuntu default software repositories and is available for macOS using homebrew (&amp;lt;&lt;a href=&quot;https://brew.sh/&quot;&gt;https://brew.sh/&lt;/a&gt;&amp;gt;) from the osgeo/osgeo4mac (&amp;lt;&lt;a href=&quot;https://github.com/OSGeo/homebrew-osgeo4mac&quot;&gt;https://github.com/OSGeo/homebrew-osgeo4mac&lt;/a&gt;&amp;gt;) formula tap. Rsagacmd has currently been tested on 'SAGA-GIS' versions from 2.3.1 to 7.6.0 on Windows, Linux and macOS." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=Rsagacmd" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>Rsagacmd: Linking R with the Open-Source 'SAGA-GIS' Software</h2>
+<p>Provides an R scripting interface to the open-source 'SAGA-GIS' (System for Automated Geoscientific Analyses Geographical Information System) software. 'Rsagacmd' dynamically generates R functions for every 'SAGA-GIS' geoprocessing tool based on the user's currently installed 'SAGA-GIS' version. These functions are contained within an S3 object and are accessed as a named list of libraries and tools. This structure facilitates an easier scripting experience by organizing the large number of 'SAGA-GIS' geoprocessing tools (&gt;700) by their respective library. Interactive scripting can fully take advantage of code autocompletion tools (e.g. in 'Rstudio'), allowing for each tools syntax to be quickly recognized. Furthermore, the most common types of spatial data (via the 'raster', 'sp', and 'sf' packages) along with non-spatial data are automatically passed from R to the 'SAGA-GIS' command line tool for geoprocessing operations, and the results are loaded as the appropriate R object. Outputs from individual 'SAGA-GIS' tools can also be chained using pipes from the 'magrittr' and 'dplyr' packages to combine complex geoprocessing operations together in a single statement. 'SAGA-GIS' is available under a GPLv2 / LGPLv2 licence from &lt;<a href="https://sourceforge.net/projects/saga-gis/">https://sourceforge.net/projects/saga-gis/</a>&gt; including Windows x86/x84 binaries. SAGA-GIS is also included in Debian/Ubuntu default software repositories and is available for macOS using homebrew (&lt;<a href="https://brew.sh/">https://brew.sh/</a>&gt;) from the osgeo/osgeo4mac (&lt;<a href="https://github.com/OSGeo/homebrew-osgeo4mac">https://github.com/OSGeo/homebrew-osgeo4mac</a>&gt;) formula tap. Rsagacmd has currently been tested on 'SAGA-GIS' versions from 2.3.1 to 7.6.0 on Windows, Linux and macOS.</p>
+<table summary="Package Rsagacmd summary">
+<tr>
+<td>Version:</td>
+<td>0.0.9</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td><a href="../raster/index.html">raster</a>, R (&ge; 2.10)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../XML/index.html">XML</a>, <a href="../sf/index.html">sf</a>, tools, <a href="../rgdal/index.html">rgdal</a>, <a href="../foreign/index.html">foreign</a>, <a href="../minpack.lm/index.html">minpack.lm</a>, <a href="../magrittr/index.html">magrittr</a>, <a href="../stringr/index.html">stringr</a>, <a href="../rlang/index.html">rlang</a>, <a href="../tibble/index.html">tibble</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../dplyr/index.html">dplyr</a>, <a href="../testthat/index.html">testthat</a>, <a href="../covr/index.html">covr</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-12</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Steven Pawley [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Steven Pawley  &#x3c;&#x64;&#x72;&#x2e;&#x73;&#x74;&#x65;&#x76;&#x65;&#x6e;&#x70;&#x61;&#x77;&#x6c;&#x65;&#x79;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>SAGA-GIS (&gt;= 2.3.1)</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_Rsagacmd.html">Rsagacmd results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package Rsagacmd downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="Rsagacmd.pdf"> Rsagacmd.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/Rsagacmd_0.0.9.tar.gz"> Rsagacmd_0.0.9.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/Rsagacmd_0.0.9.zip">Rsagacmd_0.0.9.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/Rsagacmd_0.0.9.zip">Rsagacmd_0.0.9.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/Rsagacmd_0.0.9.zip">Rsagacmd_0.0.9.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/Rsagacmd_0.0.9.tgz">Rsagacmd_0.0.9.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/Rsagacmd_0.0.9.tgz">Rsagacmd_0.0.9.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/Rsagacmd"> Rsagacmd archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=Rsagacmd"><samp>https://CRAN.R-project.org/package=Rsagacmd</samp></a>
+to link to this page.</p>
+</body>
+</html>

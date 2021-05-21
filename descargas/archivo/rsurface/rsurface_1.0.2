@@ -1,0 +1,38 @@
+Package: rsurface
+Type: Package
+Title: Design of Rotatable Central Composite Experiments and Response
+        Surface Analysis
+Version: 1.0.2
+Authors@R: c(
+    person("Timothy", "Schwinghamer", email =
+    "timothy.schwinghamer@mail.mcgill.ca", role = c("aut", "cre")),
+    person("Dutilleul", "Pierre", email =
+    "pierre.dutilleul@mcgill.ca", role = c("aut", "cph")
+    )
+    )
+Maintainer: Timothy Schwinghamer <timothy.schwinghamer@mail.mcgill.ca>
+Description: Produces tables with the level of replication (number of replicates) and the
+    experimental uncoded values of the quantitative factors to be used for rotatable Central
+    Composite Design (CCD) experimentation and a 2-D contour plot of the corresponding
+    variance of the predicted response according to
+    Mead et al. (2012) <doi:10.1017/CBO9781139020879> design_ccd(), and analyzes
+    CCD data with response surface methodology ccd_analysis(). A rotatable CCD
+    provides values of the variance of the predicted response that are concentrically
+    distributed around the average treatment combination used in the experimentation, which
+    with uniform precision (implied by the use of several replicates at the average
+    treatment combination) improves greatly the search and finding of an optimum response.
+    These properties of a rotatable CCD represent undeniable advantages over the classical
+    factorial design, as discussed by Panneton et al. (1999) <doi:10.13031/2013.13267> and
+    Mead et al. (2012) <doi:10.1017/CBO9781139020879.018> among others.
+Depends: R (>= 3.4.1)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: grDevices, plotly, rsm, stats
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-09-26 18:13:26 UTC; Schwi
+Author: Timothy Schwinghamer [aut, cre],
+  Dutilleul Pierre [aut, cph]
+Repository: CRAN
+Date/Publication: 2017-09-26 18:36:51 UTC

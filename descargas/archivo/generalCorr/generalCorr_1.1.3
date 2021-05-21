@@ -1,0 +1,33 @@
+Package: generalCorr
+Type: Package
+Title: Generalized Correlations and Plausible Causal Paths
+Version: 1.1.3
+Date: 2019-10-07
+Author: Prof. H. D. Vinod, Fordham University, NY.
+Maintainer: H. D. Vinod <vinod@fordham.edu>
+Encoding: UTF-8
+Depends: R (>= 3.0.0), np (>= 0.60), xtable (>= 1.8), meboot (>= 1.4),
+        psych, lattice
+Suggests: R.rsp
+VignetteBuilder: R.rsp
+Description: Since causal paths from data are important for all sciences, the
+    package provides many sophisticated functions. causeSummary()
+    gives easy-to-interpret causal paths.  Let Z denote control variables and compare 
+    two flipped kernel regressions: X=f(Y, Z)+e1 and Y=g(X,Z)+e2. Our criterion Cr1 
+    says that if |e1*Y|>|e2*X| then variation in X is more "exogenous or independent"
+    than in Y and causal path is X to Y. Criterion Cr2 requires |e2|<|e1|. These
+    inequalities between many absolute value are quantified by four orders of 
+    stochastic dominance. Our third criterion Cr3 for the causal path X to Y
+    requires new generalized partial correlations to satisfy |r*(x|y,z)|< |r*(y|x,z)|.
+    The function parcorMany() reports generalized partials between the first
+    variable and all others.  The package provides additional R tools for 
+    causal assessment, "outlier detection," and for numerical integration by the
+    trapezoidal rule, stochastic dominance, pillar 3D charts, etc. We also provide
+    functions for bootstrap-based statistical inference for causal paths.
+License: GPL (>= 2)
+LazyData: true
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-10-07 15:34:10 UTC; vinod
+Repository: CRAN
+Date/Publication: 2019-10-07 17:00:02 UTC

@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package mmaqshiny</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Explore Air-Quality Mobile-Monitoring Data [R package mmaqshiny version 1.0.0]" />
+<meta name="citation_author1" content="Adithi R. Upadhya" />
+<meta name="citation_author2" content="Meenakshi Kushwaha" />
+<meta name="citation_publication_date" content="2020-06-26" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=mmaqshiny" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=mmaqshiny" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="mmaqshiny: Explore Air-Quality Mobile-Monitoring Data" />
+<meta name="og:description" content="Mobile-monitoring or &quot;sensors on a mobile platform&quot;, is an increasingly popular approach to measure high-resolution pollution data at the street level. Coupled with location data, spatial visualisation of air-quality parameters helps detect localized areas of high air-pollution, also called hotspots. In this approach, portable sensors are mounted on a vehicle and driven on predetermined routes to collect high frequency data (1 Hz). 'mmaqshiny' is for analysing, visualising and spatial mapping of high-resolution air-quality data collected by specific devices installed on a moving platform. 1 Hz data of PM2.5 (mass concentrations of particulate matter with size less than 2.5 microns), Black carbon mass concentrations (BC), ultra-fine particle number concentrations, carbon dioxide along with GPS coordinates and relative humidity (RH) data collected by popular portable instruments (TSI DustTrak-8530, Aethlabs microAeth-AE51, TSI CPC3007, LICOR Li-830, Garmin GPSMAP 64s, Omega USB RH probe respectively). It incorporates device specific cleaning and correction algorithms. RH correction is applied to DustTrak PM2.5 following the Chakrabarti et al., (2004) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.atmosenv.2004.03.007&quot;&gt;doi:10.1016/j.atmosenv.2004.03.007&lt;/a&gt;&amp;gt;. Provision is given to add linear regression coefficients for correcting the PM2.5 data (if required). BC data will be cleaned for the vibration generated noise, by adopting the statistical procedure as explained in Apte et al., (2011) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.atmosenv.2011.05.028&quot;&gt;doi:10.1016/j.atmosenv.2011.05.028&lt;/a&gt;&amp;gt;, followed by a loading correction as suggested by Ban-Weiss et al., (2009) &amp;lt;&lt;a href=&quot;https://doi.org/10.1021%2Fes8021039&quot;&gt;doi:10.1021/es8021039&lt;/a&gt;&amp;gt;. For the number concentration data, provision is given for dilution correction factor (if a diluter is used with CPC3007; default value is 1). The package joins the raw, cleaned and corrected data from the above said instruments and outputs as a downloadable csv file. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=mmaqshiny" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>mmaqshiny: Explore Air-Quality Mobile-Monitoring Data</h2>
+<p>Mobile-monitoring or "sensors on a mobile platform", is an increasingly 
+    popular approach to measure high-resolution pollution data at the street level. 
+    Coupled with location data, spatial visualisation of air-quality parameters 
+    helps detect localized areas of high air-pollution, also called hotspots. 
+    In this approach, portable sensors are mounted on a vehicle and driven on 
+    predetermined routes to collect high frequency data (1 Hz). 
+    'mmaqshiny' is for analysing, visualising and spatial mapping of 
+    high-resolution air-quality data collected by specific devices installed on 
+    a moving platform. 1 Hz data of PM2.5 (mass concentrations of particulate  
+    matter with size less than 2.5 microns), Black carbon mass concentrations 
+    (BC), ultra-fine particle number concentrations, carbon dioxide along with 
+    GPS coordinates and relative humidity (RH) data collected by popular 
+    portable instruments (TSI DustTrak-8530, Aethlabs microAeth-AE51, TSI CPC3007, 
+    LICOR Li-830, Garmin GPSMAP 64s, Omega USB RH probe respectively). It 
+    incorporates device specific cleaning and correction algorithms. RH correction 
+    is applied to DustTrak PM2.5 following the Chakrabarti et al., (2004) 
+    &lt;<a href="https://doi.org/10.1016%2Fj.atmosenv.2004.03.007">doi:10.1016/j.atmosenv.2004.03.007</a>&gt;. Provision is given to add linear 
+    regression coefficients for correcting the PM2.5 data (if required). BC data
+    will be cleaned for the vibration generated noise, by adopting the statistical 
+    procedure as explained in Apte et al., (2011) &lt;<a href="https://doi.org/10.1016%2Fj.atmosenv.2011.05.028">doi:10.1016/j.atmosenv.2011.05.028</a>&gt;, 
+    followed by a loading correction as suggested by Ban-Weiss et al., (2009)  
+    &lt;<a href="https://doi.org/10.1021%2Fes8021039">doi:10.1021/es8021039</a>&gt;. For the number concentration data, provision is 
+    given for dilution correction factor (if a diluter is used with CPC3007; 
+    default value is 1). The package joins the raw, cleaned and corrected data 
+    from the above said instruments and outputs as a downloadable csv file. </p>
+<table summary="Package mmaqshiny summary">
+<tr>
+<td>Version:</td>
+<td>1.0.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../htmltools/index.html">htmltools</a>, <a href="../Cairo/index.html">Cairo</a>, <a href="../xts/index.html">xts</a>, <a href="../lubridate/index.html">lubridate</a>, <a href="../zoo/index.html">zoo</a>, <a href="../caTools/index.html">caTools</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../data.table/index.html">data.table</a>, <a href="../DT/index.html">DT</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../leaflet/index.html">leaflet</a>, <a href="../stringr/index.html">stringr</a>, <a href="../shiny/index.html">shiny</a>, <a href="../XML/index.html">XML</a>, <a href="../shinyjs/index.html">shinyjs</a>, <a href="../plotly/index.html">plotly</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../devtools/index.html">devtools</a>, <a href="../usethis/index.html">usethis</a>, <a href="../shinytest/index.html">shinytest</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-26</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Adithi R. Upadhya [aut, cre, cph],
+  Pratyush Agrawal [dtc],
+  Sreekanth Vakacherla [aui, ctb],
+  Meenakshi Kushwaha [aut, cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Adithi R. Upadhya  &#x3c;&#x61;&#x64;&#x69;&#x74;&#x68;&#x69;&#x20;&#x61;&#x74;&#x20;&#x69;&#x6c;&#x6b;&#x6c;&#x61;&#x62;&#x73;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/meenakshi-kushwaha/mmaqshiny/issues">https://github.com/meenakshi-kushwaha/mmaqshiny/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/meenakshi-kushwaha/mmaqshiny">https://github.com/meenakshi-kushwaha/mmaqshiny</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_mmaqshiny.html">mmaqshiny results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package mmaqshiny downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="mmaqshiny.pdf"> mmaqshiny.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/mmaqshiny_1.0.0.tar.gz"> mmaqshiny_1.0.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/mmaqshiny_1.0.0.zip">mmaqshiny_1.0.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/mmaqshiny_1.0.0.zip">mmaqshiny_1.0.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/mmaqshiny_1.0.0.zip">mmaqshiny_1.0.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/mmaqshiny_1.0.0.tgz">mmaqshiny_1.0.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/mmaqshiny_1.0.0.tgz">mmaqshiny_1.0.0.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=mmaqshiny"><samp>https://CRAN.R-project.org/package=mmaqshiny</samp></a>
+to link to this page.</p>
+</body>
+</html>

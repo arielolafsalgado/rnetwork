@@ -1,0 +1,31 @@
+Package: caretEnsemble
+Type: Package
+Title: Ensembles of Caret Models
+Version: 1.0.0
+Date: 2015-01-14
+Authors@R: c(person(c("Zachary", "A."), "Mayer", role = c("aut", "cre"),
+    email = "zach.mayer@gmail.com"),
+    person(c("Jared", "E."), "Knowles", role=c("aut"),
+    email="jknowles@gmail.com"))
+URL: https://github.com/zachmayer/caretEnsemble
+BugReports: https://github.com/zachmayer/caretEnsemble/issues
+Description: Functions for creating ensembles of caret models: caretList,
+    caretEnsemble, and caretStack.  caretList is a convenience function for
+    fitting multiple caret::train models to the same dataset. caretEnsemble will
+    make a linear combination of these models using greedy forward selection,
+    and caretStack will make linear or non-linear combinations of these models,
+    using a caret::train model as a meta-model.
+Depends: R (>= 3.1.0), caret
+Suggests: testthat, randomForest, rpart, kernlab, nnet, e1071, ipred,
+        pROC, knitr, mlbench, MASS, gbm, klaR
+Imports: caTools, pbapply, ggplot2, digest, plyr, grid, lattice,
+        gridExtra
+License: MIT + file LICENSE
+VignetteBuilder: knitr
+Packaged: 2015-01-14 20:16:22 UTC; zach
+Author: Zachary A. Mayer [aut, cre],
+  Jared E. Knowles [aut]
+Maintainer: Zachary A. Mayer <zach.mayer@gmail.com>
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2015-01-16 22:19:29

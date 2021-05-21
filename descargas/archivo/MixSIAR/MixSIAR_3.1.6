@@ -1,0 +1,52 @@
+Package: MixSIAR
+Title: Bayesian Mixing Models in R
+Version: 3.1.6
+Authors@R: c(
+    person("Brian", "Stock", email = "b1stock@ucsd.edu", role = c("cre","aut")),
+    person("Brice", "Semmens", email = "semmens@ucsd.edu", role = "aut"),
+    person("Eric", "Ward", role = "ctb"),
+    person("Andrew", "Parnell", role = "ctb"),
+    person("Andrew", "Jackson", role = "ctb"),
+    person("Donald", "Phillips", role = "ctb"),
+    person("Jon", "Moore", role = "ctb"),
+    person("Stuart", "Bearhop", role = "ctb"),
+    person("Richard", "Inger", role = "ctb"))
+Description: Creates and runs Bayesian mixing models to analyze
+    biotracer data (i.e. stable isotopes, fatty acids), which estimate the
+    proportions of source (prey) contributions to a mixture (consumer). 'MixSIAR'
+    is not one model, but a framework that allows a user to create a mixing model
+    based on their data structure and research questions, via options for fixed/
+    random effects, source data types, priors, and error terms. 'MixSIAR' incorporates
+    several years of advances since 'MixSIR' and 'SIAR', and includes both GUI
+    (graphical user interface) and script versions.
+Depends: R (>= 3.2.3)
+Imports: ggplot2 (>= 1.0.1), rjags (>= 4-4), R2jags (>= 0.5-7), MASS
+        (>= 7.3), RColorBrewer (>= 1.1), reshape (>= 0.8), reshape2 (>=
+        1.4.1), lattice (>= 0.20), compositions (>= 1.40), ggmcmc (>=
+        0.7.2), coda (>= 0.18-1)
+Suggests: gWidgets (>= 0.0-54), gWidgetsRGtk2 (>= 0.0-83), splancs (>=
+        2.01-38), knitr, rmarkdown, testthat
+SystemRequirements: JAGS (>= 4.1) for the script version, both JAGS and
+        GTK+ for the GUI version. For install instructions, see manual
+        at
+        <https://github.com/brianstock/MixSIAR/blob/master/inst/mixsiar_manual_3.1_small.pdf>
+URL: https://github.com/brianstock/MixSIAR
+BugReports: https://github.com/brianstock/MixSIAR/issues
+License: GPL-3
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-06-25 00:38:37 UTC; brian
+Author: Brian Stock [cre, aut],
+  Brice Semmens [aut],
+  Eric Ward [ctb],
+  Andrew Parnell [ctb],
+  Andrew Jackson [ctb],
+  Donald Phillips [ctb],
+  Jon Moore [ctb],
+  Stuart Bearhop [ctb],
+  Richard Inger [ctb]
+Maintainer: Brian Stock <b1stock@ucsd.edu>
+Repository: CRAN
+Date/Publication: 2016-06-25 19:07:27

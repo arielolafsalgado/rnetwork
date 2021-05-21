@@ -1,0 +1,26 @@
+Package: buildmer
+Title: Stepwise Elimination and Term Reordering for Mixed-Effects
+        Regression
+Version: 1.1
+Authors@R: person(c("Cesko", "C."), "Voeten", email = "cvoeten@gmail.com", role = c("aut", "cre"))
+Description: Finds the largest possible regression model that will still converge
+    for various types of regression analyses (including mixed models and generalized
+    additive models) and then optionally performs stepwise elimination similar to the
+    forward and backward effect selection methods in SAS, based on the change in
+    log-likelihood, Akaike's Information Criterion, or the Bayesian Information Criterion.
+Depends: R (>= 3.2)
+Imports: methods, mgcv, lme4, plyr, stats, utils
+Suggests: JuliaCall, MASS, gamm4, glmmTMB, knitr, lmerTest, nlme, nnet,
+        parallel, pbkrtest, rmarkdown
+License: FreeBSD
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+BugReports: https://github.com/cvoeten/buildmer/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-05-19 08:03:02 UTC; cesko
+Author: Cesko C. Voeten [aut, cre]
+Maintainer: Cesko C. Voeten <cvoeten@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-05-19 22:30:12 UTC

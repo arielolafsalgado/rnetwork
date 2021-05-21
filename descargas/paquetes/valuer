@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package valuer</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Pricing of Variable Annuities [R package valuer version 1.1.2]" />
+<meta name="citation_author" content="Ivan Zoccolan" />
+<meta name="citation_publication_date" content="2018-02-07" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=valuer" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=valuer" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="valuer: Pricing of Variable Annuities" />
+<meta name="og:description" content="Pricing of variable annuity life insurance contracts by means of Monte Carlo methods. Monte Carlo is used to price the contract in case the policyholder cannot surrender while Least Squares Monte Carlo is used if the insured can surrender. This package implements the pricing framework and algorithm described in Bacinello et al. (2011) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.insmatheco.2011.05.003&quot;&gt;doi:10.1016/j.insmatheco.2011.05.003&lt;/a&gt;&amp;gt;. It also implements the state-dependent fee structure discussed in Bernard et al. (2014) &amp;lt;&lt;a href=&quot;https://doi.org/10.1017%2Fasb.2014.13&quot;&gt;doi:10.1017/asb.2014.13&lt;/a&gt;&amp;gt; as well as a function which prices the contract by resolving the partial differential equation described in MacKay et al. (2017) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fjori.12094&quot;&gt;doi:10.1111/jori.12094&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=valuer" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>valuer: Pricing of Variable Annuities</h2>
+<p>Pricing of variable annuity life insurance
+    contracts by means of Monte Carlo methods. Monte Carlo is used to price
+    the contract in case the policyholder cannot surrender while
+    Least Squares Monte Carlo is used if the insured can surrender.
+    This package implements the pricing framework and algorithm described in
+    Bacinello et al. (2011) &lt;<a href="https://doi.org/10.1016%2Fj.insmatheco.2011.05.003">doi:10.1016/j.insmatheco.2011.05.003</a>&gt;.
+    It also implements the state-dependent fee structure
+    discussed in Bernard et al. (2014) &lt;<a href="https://doi.org/10.1017%2Fasb.2014.13">doi:10.1017/asb.2014.13</a>&gt; as well as 
+    a function which prices the contract by resolving the partial differential equation 
+    described in MacKay et al. (2017) &lt;<a href="https://doi.org/10.1111%2Fjori.12094">doi:10.1111/jori.12094</a>&gt;.</p>
+<table summary="Package valuer summary">
+<tr>
+<td>Version:</td>
+<td>1.1.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.2.5), <a href="../orthopolynom/index.html">orthopolynom</a> (&ge; 1.0-5)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../R6/index.html">R6</a> (&ge; 2.1.2), <a href="../RcppEigen/index.html">RcppEigen</a> (&ge; 0.3.2.8.1), <a href="../timeDate/index.html">timeDate</a> (&ge;
+3012.100), <a href="../yuima/index.html">yuima</a> (&ge; 1.1.6), <a href="../ggplot2/index.html">ggplot2</a>, <a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../doParallel/index.html">doParallel</a> (&ge; 1.0.10), <a href="../foreach/index.html">foreach</a> (&ge; 1.4.3), <a href="../limSolve/index.html">limSolve</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2018-02-07</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Ivan Zoccolan [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Ivan Zoccolan  &#x3c;&#x69;&#x76;&#x61;&#x6e;&#x2e;&#x7a;&#x6f;&#x63;&#x63;&#x6f;&#x6c;&#x61;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="http://github.com/IvanZoccolan/valuer/issues">http://github.com/IvanZoccolan/valuer/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://github.com/IvanZoccolan/valuer">http://github.com/IvanZoccolan/valuer</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="README.html">README</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_valuer.html">valuer results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package valuer downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="valuer.pdf"> valuer.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Introduction.html">Introduction to valuer</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/valuer_1.1.2.tar.gz"> valuer_1.1.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/valuer_1.1.2.zip">valuer_1.1.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/valuer_1.1.2.zip">valuer_1.1.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/valuer_1.1.2.zip">valuer_1.1.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/valuer_1.1.2.tgz">valuer_1.1.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/valuer_1.1.2.tgz">valuer_1.1.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/valuer"> valuer archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=valuer"><samp>https://CRAN.R-project.org/package=valuer</samp></a>
+to link to this page.</p>
+</body>
+</html>

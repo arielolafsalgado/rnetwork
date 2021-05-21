@@ -1,0 +1,20 @@
+Package: assertable
+Type: Package
+Title: Verbose Assertions for Tabular Data (Data.frames and
+        Data.tables)
+Version: 0.1.0
+Author: Grant Nguyen
+Maintainer: Grant Nguyen <gngu@uw.edu>
+Description: Simple, flexible, assertions on data.frame or data.table objects with verbose output for vetting. While other assertion packages apply towards more general use-cases, assertable is tailored towards tabular data. It includes functions to check variable names and values, whether the dataset contains all combinations of a given set of unique identifiers, and whether it is a certain length. In addition, assertable includes utility functions to check the existence of target files and to efficiently import multiple tabular data files into one data.table.
+Depends: R (>= 3.1.0)
+Imports: data.table, parallel
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 5.0.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr, data.table
+NeedsCompilation: no
+Packaged: 2017-01-13 19:46:11 UTC; gngu
+Repository: CRAN
+Date/Publication: 2017-01-14 12:46:34

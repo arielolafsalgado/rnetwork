@@ -1,0 +1,32 @@
+Package: ggeffects
+Type: Package
+Encoding: UTF-8
+Title: Create Tidy Data Frames of Marginal Effects for 'ggplot' from
+        Model Outputs
+Version: 0.8.0
+Date: 2019-01-09
+Authors@R: person("Daniel", "Lüdecke", role = c("aut", "cre"), email = "d.luedecke@uke.de", comment = c(ORCID = "0000-0002-8895-3206"))
+Maintainer: Daniel Lüdecke <d.luedecke@uke.de>
+Description: Compute marginal effects from statistical models and returns the 
+    result as tidy data frames. These data frames are ready to use with the 
+    'ggplot2'-package. Marginal effects can be calculated for many different 
+    models. Interaction terms, splines and polynomial terms are also supported. 
+    The main functions are ggpredict(), ggemmeans() and ggeffect(). There is a 
+    generic plot()-method to plot the results using 'ggplot2'.
+License: GPL-3
+Depends: R (>= 3.2), graphics, stats, utils
+Imports: crayon, dplyr, ggplot2, lme4, magrittr, MASS, prediction,
+        purrr, rlang, scales, sjlabelled (>= 1.0.14), sjmisc (>=
+        2.7.6), sjstats (>= 0.17.3), tidyr
+Suggests: brms, effects (>= 4.0-0), emmeans, glmmTMB, knitr, nlme,
+        pscl, rmarkdown, rstanarm, rstantools, sandwich, survey,
+        survival, testthat
+URL: https://strengejacke.github.io/ggeffects
+BugReports: https://github.com/strengejacke/ggeffects/issues
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-01-09 15:13:11 UTC; Daniel
+Author: Daniel Lüdecke [aut, cre] (<https://orcid.org/0000-0002-8895-3206>)
+Repository: CRAN
+Date/Publication: 2019-01-09 16:20:03 UTC

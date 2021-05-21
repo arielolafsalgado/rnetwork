@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package tsmp</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Time Series with Matrix Profile [R package tsmp version 0.4.14]" />
+<meta name="citation_author" content="Francisco Bischoff" />
+<meta name="citation_publication_date" content="2020-04-06" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=tsmp" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=tsmp" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="tsmp: Time Series with Matrix Profile" />
+<meta name="og:description" content="A toolkit implementing the Matrix Profile concept that was created by CS-UCR &amp;lt;&lt;a href=&quot;http://www.cs.ucr.edu/~eamonn/MatrixProfile.html&quot;&gt;http://www.cs.ucr.edu/~eamonn/MatrixProfile.html&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=tsmp" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>tsmp: Time Series with Matrix Profile</h2>
+<p>A toolkit implementing the Matrix Profile concept
+    that was created by CS-UCR
+    &lt;<a href="http://www.cs.ucr.edu/~eamonn/MatrixProfile.html">http://www.cs.ucr.edu/~eamonn/MatrixProfile.html</a>&gt;.</p>
+<table summary="Package tsmp summary">
+<tr>
+<td>Version:</td>
+<td>0.4.14</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../audio/index.html">audio</a>, <a href="../checkmate/index.html">checkmate</a>, <a href="../doSNOW/index.html">doSNOW</a>, <a href="../foreach/index.html">foreach</a>, <a href="../magrittr/index.html">magrittr</a>, parallel, <a href="../progress/index.html">progress</a>, <a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppParallel/index.html">RcppParallel</a> (&ge; 5.0.0), <a href="../RJSONIO/index.html">RJSONIO</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 1.0.3), <a href="../RcppParallel/index.html">RcppParallel</a> (&ge; 5.0.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../covr/index.html">covr</a>, <a href="../gdtools/index.html">gdtools</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../raster/index.html">raster</a>, <a href="../spelling/index.html">spelling</a>, <a href="../testthat/index.html">testthat</a> (&ge; 2.1.0), <a href="../vdiffr/index.html">vdiffr</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-04-06</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Francisco Bischoff
+    <a href="https://orcid.org/0000-0002-5301-8672"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut, cre],
+  Michael Yeh <a href="https://orcid.org/0000-0002-9807-2963"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [res,
+    ccp, ctb],
+  Diego Silva <a href="https://orcid.org/0000-0002-5184-9413"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [res,
+    ccp, ctb],
+  Yan Zhu <a href="https://orcid.org/0000-0002-5952-2108"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [res,
+    ccp, ctb],
+  Hoang Dau <a href="https://orcid.org/0000-0003-2439-5185"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [res,
+    ccp, ctb],
+  Michele Linardi <a href="https://orcid.org/0000-0002-3249-2068"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [res, ccp, ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Francisco Bischoff  &#x3c;&#x66;&#x62;&#x69;&#x73;&#x63;&#x68;&#x6f;&#x66;&#x66;&#x20;&#x61;&#x74;&#x20;&#x6d;&#x65;&#x64;&#x2e;&#x75;&#x70;&#x2e;&#x70;&#x74;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/matrix-profile-foundation/tsmp/issues">https://github.com/matrix-profile-foundation/tsmp/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License (&ge; 2.0)</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/matrix-profile-foundation/tsmp">https://github.com/matrix-profile-foundation/tsmp</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>GNU make</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_tsmp.html">tsmp results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package tsmp downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="tsmp.pdf"> tsmp.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/press.html">Time Series with Matrix Profile</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/tsmp_0.4.14.tar.gz"> tsmp_0.4.14.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/tsmp_0.4.14.zip">tsmp_0.4.14.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/tsmp_0.4.14.zip">tsmp_0.4.14.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/tsmp_0.4.14.zip">tsmp_0.4.14.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/tsmp_0.4.14.tgz">tsmp_0.4.14.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/tsmp_0.4.14.tgz">tsmp_0.4.14.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/tsmp"> tsmp archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=tsmp"><samp>https://CRAN.R-project.org/package=tsmp</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,22 @@
+Package: radsafer
+Type: Package
+Title: Radiation Safety
+Version: 2.2.1
+Author: Mark Hogue <mark.hogue.chp@gmail.com>
+Maintainer: Mark Hogue <mark.hogue.chp@gmail.com>
+Description: Provides functions for radiation safety, also known as "radiation protection" and "radiological control". The science of radiation protection is called "health physics" and its engineering functions are called "radiological engineering". Functions in this package cover many of the computations needed by radiation safety professionals. Examples include: obtaining updated calibration and source check values for radiation monitors to account for radioactive decay in a reference source, simulating instrument readings to better understand measurement uncertainty, correcting instrument readings for geometry and ambient atmospheric conditions. Many of these functions are described in Johnson and Kirby (2011, ISBN-13:  978-1609134198). Utilities are also included for developing inputs and processing outputs with radiation transport codes, such as MCNP, a general-purpose Monte Carlo N-Particle code that can be used for neutron, photon, electron, or coupled neutron/photon/electron transport (Werner et. al. (2018) <doi:10.2172/1419730>).
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+Suggests: testthat, beepr, knitr, rmarkdown
+Imports: ggplot2, readr, stats, graphics, RadData, stringr, magrittr,
+        dplyr, rlang, scatterplot3d, ggthemes
+Depends: R (>= 3.3)
+URL: https://github.com/markhogue/radsafer
+BugReports: https://github.com/markhogue/radsafer/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-06-10 01:44:49 UTC; markh
+Repository: CRAN
+Date/Publication: 2020-06-10 04:40:02 UTC

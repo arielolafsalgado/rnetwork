@@ -1,0 +1,37 @@
+Package: microplot
+Type: Package
+Title: R Graphics as Microplots (Sparklines) in 'LaTeX', 'HTML',
+        'Excel'
+Version: 1.0-16
+Date: 2017-01-18
+Author: Richard M. Heiberger, with contributions from Karen Byron and Nooreen Dabbish.
+Maintainer: Richard M. Heiberger <rmh@temple.edu>
+Description: Prepare lists of R graphics files to be used as
+	     microplots (sparklines) in tables in either 'LaTeX',
+	     'HTML', or 'Excel' files.  For 'LaTeX', use the
+	     'Hmisc::latex' function or 'xtable::xtable' function with
+	     'Sweave', 'knitr', 'rmarkdown', or 'Emacs' 'org-mode' to
+	     construct 'latex' tabular environments which include the
+	     graphs.  For 'HTML' files, use either 'Emacs' 'org-mode' or the
+	     'htmlTable::htmlTable' function to construct an 'HTML' file
+	     containing tables which include the graphs.  For 'Excel'
+	     use on 'Windows', the file 'examples/irisExcel.xls' includes 'VBA'
+	     code which brings the individual panels into individual
+	     cells in the spreadsheet.  Examples in the 'examples'
+	     subdirectory and demos are shown with 'lattice' graphics,
+	     'base' graphics, and 'ggplot2' graphics.  Examples for 'LaTeX'
+	     include 'Sweave' (both 'LaTeX'-style and 'Noweb'-style), 'knitr',
+	     'emacs' 'org-mode', and 'rmarkdown' input files and their 'pdf'
+	     output files.  Examples for 'HTML' include 'org-mode' and 'Rmd'
+	     input files and their webarchive 'HTML' output files.  In
+	     addition, the 'as.orgtable' function can display a
+	     'data.frame' in an 'org-mode' document.
+Imports: Hmisc
+Suggests: HH, lattice, ggplot2, reshape2, grid, latticeExtra, xtable,
+        markdown, rmarkdown, knitr, htmlTable
+SystemRequirements: LaTeX
+License: GPL (>= 2)
+NeedsCompilation: no
+Packaged: 2017-01-19 00:17:38 UTC; rmh
+Repository: CRAN
+Date/Publication: 2017-01-19 11:17:46

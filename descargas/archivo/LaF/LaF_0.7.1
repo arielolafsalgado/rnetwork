@@ -1,0 +1,30 @@
+Package: LaF
+Type: Package
+Title: Fast Access to Large ASCII Files
+Version: 0.7.1
+Date: 2017-10-12
+Author: Jan van der Laan
+Maintainer: Jan van der Laan <djvanderlaan@unrealizedtime.nl>
+Description: Methods for fast access to large ASCII files.  Currently the
+    following file formats are supported: comma separated format (CSV) and fixed
+    width format. It is assumed that the files are too large to fit into memory,
+    although the package can also be used to efficiently access files that do
+    fit into memory. Methods are provided to access and process files blockwise.
+    Furthermore, an opened file can be accessed as one would an ordinary
+    data.frame. The LaF vignette gives an overview of the functionality
+    provided.
+URL: https://github.com/djvanderlaan/LaF
+License: GPL-3
+LazyLoad: yes
+Depends: methods, utils
+Suggests: testthat, yaml
+LinkingTo: Rcpp
+Imports: Rcpp (>= 0.11.1)
+Collate: 'generics.R' 'laf.R' 'laf_column.R' 'meta.R' 'open.R'
+        'read_dm_blaise.R' 'stats.R' 'textutils.R' 'types.R'
+        'utility.R'
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2017-10-12 12:41:55 UTC; dlan
+Repository: CRAN
+Date/Publication: 2017-10-12 14:04:41 UTC

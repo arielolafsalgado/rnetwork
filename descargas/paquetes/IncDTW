@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package IncDTW</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=IncDTW" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="IncDTW: Incremental Calculation of Dynamic Time Warping" />
+<meta name="og:description" content="The Dynamic Time Warping (DTW) distance measure for time series allows non-linear alignments of time series to match similar patterns in time series of different lengths and or different speeds. IncDTW is characterized by (1) the incremental calculation of DTW (reduces runtime complexity to a linear level for updating the DTW distance) - especially for life data streams or subsequence matching, (2) the vector based implementation of DTW which is faster because no matrices are allocated (reduces the space complexity from a quadratic to a linear level in the number of observations) - for all runtime intensive DTW computations, (3) the subsequence matching algorithm runDTW, that efficiently finds the k-NN to a query pattern in a long time series, and (4) C++ in the heart. For details about DTW see the original paper &quot;Dynamic programming algorithm optimization for spoken word recognition&quot; by Sakoe and Chiba (1978) &amp;lt;&lt;a href=&quot;https://doi.org/10.1109%2FTASSP.1978.1163055&quot;&gt;doi:10.1109/TASSP.1978.1163055&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=IncDTW" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>IncDTW: Incremental Calculation of Dynamic Time Warping</h2>
+<p>The Dynamic Time Warping (DTW) distance measure for time series allows non-linear alignments of time series to match  similar patterns in time series of different lengths and or different speeds. IncDTW is characterized by (1) the incremental calculation of DTW (reduces runtime complexity to a linear level for updating the DTW distance) - especially for life data streams or subsequence matching, (2) the vector based implementation of DTW which is faster because no matrices are allocated (reduces the space complexity from a quadratic to a linear level in the number of observations) - for all runtime intensive DTW computations, (3) the subsequence matching algorithm runDTW, that efficiently finds the k-NN to a query pattern in a long time series, and (4) C++ in the heart. For details about DTW see the original paper "Dynamic programming algorithm optimization for spoken word recognition" by Sakoe and Chiba (1978) &lt;<a href="https://doi.org/10.1109%2FTASSP.1978.1163055">doi:10.1109/TASSP.1978.1163055</a>&gt;.</p>
+<table summary="Package IncDTW summary">
+<tr>
+<td>Version:</td>
+<td>1.1.4.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.8), <a href="../RcppParallel/index.html">RcppParallel</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../scales/index.html">scales</a>, parallel, stats, <a href="../data.table/index.html">data.table</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppParallel/index.html">RcppParallel</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../dtw/index.html">dtw</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../gridExtra/index.html">gridExtra</a>, <a href="../testthat/index.html">testthat</a>, <a href="../dtwclust/index.html">dtwclust</a>, <a href="../parallelDist/index.html">parallelDist</a>, <a href="../microbenchmark/index.html">microbenchmark</a>, <a href="../rucrdtw/index.html">rucrdtw</a>, <a href="../proxy/index.html">proxy</a>, <a href="../R.rsp/index.html">R.rsp</a>, <a href="../dendextend/index.html">dendextend</a>, <a href="../reshape2/index.html">reshape2</a>, <a href="../colorspace/index.html">colorspace</a>, <a href="../fastcluster/index.html">fastcluster</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-09</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Maximilian Leodolter</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Maximilian Leodolter  &#x3c;&#x6d;&#x61;&#x78;&#x69;&#x6d;&#x69;&#x6c;&#x69;&#x61;&#x6e;&#x2e;&#x6c;&#x65;&#x6f;&#x64;&#x6f;&#x6c;&#x74;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>GNU make</td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/TimeSeries.html">TimeSeries</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_IncDTW.html">IncDTW results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package IncDTW downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="IncDTW.pdf"> IncDTW.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Theory_and_Applications_for_the_R_Package_IncDTW.pdf">Theory and Applications for the  RPackage IncDTW</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/IncDTW_1.1.4.2.tar.gz"> IncDTW_1.1.4.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/IncDTW_1.1.4.2.zip">IncDTW_1.1.4.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/IncDTW_1.1.4.2.zip">IncDTW_1.1.4.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/IncDTW_1.1.4.2.zip">IncDTW_1.1.4.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/IncDTW_1.1.4.2.tgz">IncDTW_1.1.4.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/IncDTW_1.1.4.2.tgz">IncDTW_1.1.4.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/IncDTW"> IncDTW archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=IncDTW"><samp>https://CRAN.R-project.org/package=IncDTW</samp></a>
+to link to this page.</p>
+</body>
+</html>

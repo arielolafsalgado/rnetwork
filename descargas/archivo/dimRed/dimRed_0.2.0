@@ -1,0 +1,37 @@
+Package: dimRed
+Title: A Framework for Dimensionality Reduction
+Version: 0.2.0
+Authors@R: c(
+    person("Guido", "Kraemer",
+           email = "gkraemer@bgc-jena.mpg.de",
+           role = c("aut", "cre"))
+    )
+Description: A collection of dimensionality reduction
+    techniques from R packages and a common
+    interface for calling the methods.
+Depends: R (>= 3.0.0), DRR
+Imports: NMF, magrittr, methods
+Suggests: cccd, MASS, Matrix, RANN, RSpectra, Rtsne, coRanking,
+        diffusionMap, energy, fastICA, ggplot2, graphics, igraph,
+        keras, kernlab, knitr, lle, loe, optimx, pcaL1, pcaPP,
+        reticulate, rgl, scales, scatterplot3d, stats, tensorflow,
+        testthat, tidyr, tinytex, umap, vegan
+VignetteBuilder: knitr
+License: GPL-3 | file LICENSE
+URL: https://github.com/gdkrmr/dimRed
+LazyData: true
+Encoding: UTF-8
+Collate: 'dimRedMethod-class.R' 'misc.R' 'dimRedData-class.R'
+        'dimRedResult-class.R' 'autoencoder.R' 'dataSets.R' 'diffmap.R'
+        'dimRed.R' 'drr.R' 'embed.R' 'fastica.R' 'get_info.R'
+        'graph_embed.R' 'hlle.R' 'isomap.R' 'kpca.R' 'l1pca.R' 'leim.R'
+        'lle.R' 'loe.R' 'mds.R' 'mixColorSpaces.R' 'nmds.R' 'nnmf.R'
+        'pca.R' 'plot.R' 'quality.R' 'rotate.R' 'soe.R' 'tsne.R'
+        'umap.R'
+RoxygenNote: 6.1.0
+NeedsCompilation: yes
+Packaged: 2018-11-06 20:14:51 UTC; gkraemer
+Author: Guido Kraemer [aut, cre]
+Maintainer: Guido Kraemer <gkraemer@bgc-jena.mpg.de>
+Repository: CRAN
+Date/Publication: 2018-11-08 15:40:08 UTC

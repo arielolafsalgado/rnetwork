@@ -1,0 +1,26 @@
+Package: SubtypeDrug
+Type: Package
+Title: Prioritization of Candidate Cancer Subtype Specific Drugs
+Version: 0.1.0
+Author: Xudong Han,
+  Junwei Han,
+  Chonghui Liu
+Maintainer: Junwei Han <hanjunwei1981@163.com>
+Description: A systematic biology tool was developed to prioritize cancer subtype-specific drugs by integrating genetic perturbation, drug action, biological pathway, and cancer subtype. 
+    The capabilities of this tool include inferring patient-specific subpathway activity profiles in the context of gene expression profiles with subtype labels, calculating differentially 
+    expressed subpathways based on cultured human cells treated with drugs in the 'cMap' (connectivity map) database, prioritizing cancer subtype specific drugs according to drug-disease 
+    reverse association score based on subpathway, and visualization of results (Castelo (2013) <doi:10.1186/1471-2105-14-7>; Han et al (2019) <doi:10.1093/bioinformatics/btz894>; Lamb and Justin (2006) <DOI:10.1126/science.1132939>).
+License: GPL (>= 2)
+Depends: R (>= 2.10)
+Encoding: UTF-8
+LazyData: true
+BugReports: https://github.com/hanjunwei-lab/SubtypeDrug/issues
+RoxygenNote: 7.1.0
+Imports:
+        BiocGenerics,GSVA,grDevices,graphics,igraph,parallel,pheatmap,rvest,stats,xml2,devtools,ChemmineR
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-05-12 10:49:33 UTC; 12859
+Repository: CRAN
+Date/Publication: 2020-05-16 09:30:08 UTC

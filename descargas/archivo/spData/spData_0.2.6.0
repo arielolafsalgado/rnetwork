@@ -1,0 +1,34 @@
+Package: spData
+Title: Datasets for Spatial Analysis
+Version: 0.2.6.0
+Authors@R: c(person("Roger", "Bivand", role = "aut", email="Roger.Bivand@nhh.no"),
+        person("Jakub", "Nowosad", role = c("aut", "cre"), email="nowosad.jakub@gmail.com"),
+        person("Robin", "Lovelace", role = "aut")
+	)
+Description: Diverse spatial datasets for demonstrating, benchmarking and teaching spatial data analysis. 
+        It includes R data of class sf (defined by the package 'sf'), Spatial (sp), and nb (spdep).
+        Unlike other spatial data packages such as 'rnaturalearth' and 'maps', 
+        it also contains data stored in a range of file formats including GeoJSON, ESRI Shapefile and GeoPackage. 
+        Some of the datasets are designed to illustrate specific analysis techniques.
+        cycle_hire and cycle_hire_osm, for example, is designed to illustrate point pattern analysis techniques.
+        This package interacts with data available through the 'spDataLarge' package, 
+        which is available in a 'drat' repository. To access this data package, 
+        run 'install.packages("spDataLarge", repos = "https://nowosad.github.io/drat/", type = "source")'. 
+        The size of the 'spDataLarge' package is approximately 20 MB. 
+Depends: R (>= 3.3.0)
+Suggests: foreign, maptools, rgdal, sf, sp, spDataLarge (>= 0.2.3.0),
+        spdep
+License: CC0
+RoxygenNote: 6.0.1
+LazyData: true
+URL: https://github.com/Nowosad/spData
+BugReports: https://github.com/Nowosad/spData/issues
+Additional_repositories: https://nowosad.github.io/drat
+NeedsCompilation: no
+Packaged: 2017-10-07 16:06:09 UTC; jn
+Author: Roger Bivand [aut],
+  Jakub Nowosad [aut, cre],
+  Robin Lovelace [aut]
+Maintainer: Jakub Nowosad <nowosad.jakub@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-10-07 16:16:58 UTC

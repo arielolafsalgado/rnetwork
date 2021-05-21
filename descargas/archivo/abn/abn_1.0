@@ -1,0 +1,20 @@
+Package: abn
+Version: 1.0
+Date: 2016-01-11
+Title: Modelling Multivariate Data with Additive Bayesian Networks
+Authors@R: c(person("Fraser Ian", "Lewis", role = c("aut"), email = "fraseriain.lewis@uzh.ch"), person("Marta", "Pittavino", role = c("cre","ctb"), email = "marta.pittavino@math.uzh.ch"), person("Reinhard", "Furrer", role = c("ctb"), email = "reinhard.furrer@math.uzh.ch"))
+Author: Fraser Ian Lewis [aut], Marta Pittavino [cre, ctb], Reinhard Furrer [ctb]
+Maintainer: Marta Pittavino <marta.pittavino@math.uzh.ch>
+Depends: Cairo, R (>= 2.15.1)
+Imports: methods
+Suggests: INLA, Rgraphviz
+Additional_repositories: http://www.math.ntnu.no/inla/R/stable/
+SystemRequirements: Gnu Scientific Library version >= 1.12
+Description: Bayesian network analysis is a form of probabilistic  graphical models which derives from empirical data a directed acyclic graph, DAG, describing the dependency structure between  random variables. An additive Bayesian network model consists of a form of a DAG where each node comprises a generalized linear model, GLM. Additive Bayesian network models are equivalent to Bayesian multivariate regression using graphical modelling, they generalises the usual multivariable regression, GLM, to multiple dependent variables. 'abn' provides routines to help determine optimal Bayesian network models for a given data set, where these models are used to identify statistical dependencies in messy, complex data. The additive formulation of these models is equivalent to multivariate generalised linear modelling (including mixed models with iid random effects). The usual term to describe this model selection process is structure discovery. The core functionality is concerned with model selection - determining the most robust empirical model of data from interdependent variables. Laplace approximations are used to estimate goodness of fit metrics and model parameters, and wrappers are also included to the INLA package which can be obtained from http://www.r-inla.org. It is recommended the testing version, which can be downloaded by running: source("http://www.math.ntnu.no/inla/givemeINLA-testing.R"). A comprehensive set of documented case studies, numerical accuracy/quality assurance exercises, and additional documentation are available from the abn website.
+License: GPL (>= 2)
+LazyData: true
+URL: http://www.r-bayesian-networks.org
+NeedsCompilation: yes
+Packaged: 2016-01-18 10:40:15 UTC; martapit
+Repository: CRAN
+Date/Publication: 2016-01-18 22:20:23

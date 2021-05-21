@@ -1,0 +1,38 @@
+Package: sf
+Version: 0.2-0
+Title: Simple Features for R
+Authors@R: c(person("Edzer", "Pebesma", role = c("aut", "cre"), email = "edzer.pebesma@uni-muenster.de"),
+	person("Roger", "Bivand", role = "ctb"),
+	person("Ian", "Cook", role = "ctb"),
+	person("Tim", "Keitt", role = "ctb"),
+	person("Michael", "Sumner", role = "ctb"),
+	person("Robin", "Lovelace", role = "ctb"),
+	person("Hadley", "Wickham", role = "ctb"),
+	person("Jeroen", "Ooms", role = "ctb")
+	)
+Depends: R (>= 3.0.0)
+Imports: utils, stats, graphics, grid, methods, Rcpp, DBI
+LinkingTo: Rcpp
+Suggests: sp, rgeos, rgdal, RPostgreSQL, testthat, knitr, roxygen2
+VignetteBuilder: knitr
+Description: Support for simple features, a standardized way to encode spatial data, in R.
+SystemRequirements: GDAL, GEOS++
+License: GPL-2 | MIT + file LICENSE
+URL: https://github.com/edzer/sfr/
+BugReports: https://github.com/edzer/sfr/issues/
+RoxygenNote: 5.0.1
+Collate: RcppExports.R init.R bbox.R read.R sfc.R sfg.R sf.R wkb.R
+        wkt.R plot.R geom.R transform.R sp.R crs.R grid.R arith.R
+NeedsCompilation: yes
+Packaged: 2016-10-25 18:35:29 UTC; edzer
+Author: Edzer Pebesma [aut, cre],
+  Roger Bivand [ctb],
+  Ian Cook [ctb],
+  Tim Keitt [ctb],
+  Michael Sumner [ctb],
+  Robin Lovelace [ctb],
+  Hadley Wickham [ctb],
+  Jeroen Ooms [ctb]
+Maintainer: Edzer Pebesma <edzer.pebesma@uni-muenster.de>
+Repository: CRAN
+Date/Publication: 2016-10-26 10:37:55

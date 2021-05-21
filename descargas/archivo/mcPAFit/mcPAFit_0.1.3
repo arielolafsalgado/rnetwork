@@ -1,0 +1,19 @@
+Package: mcPAFit
+Type: Package
+Title: Estimating Preferential Attachment from a Single Network
+        Snapshot by Markov Chain Monte Carlo
+Version: 0.1.3
+Date: 2016-05-25
+Author: Thong Pham, Paul Sheridan, Hidetoshi Shimodaira
+Maintainer: Thong Pham <thongpham@thongpham.net>
+Description: A Markov chain Monte Carlo method is provided to estimate the preferential attachment function from a single network snapshot. Conventional methods require the complete information about the appearance order of all nodes and edges in the network. This package incorporates the appearance order into the state space and estimates it together with the preferential attachment function. Auxiliary variables are introduced to facilitate fast Gibbs sampling.
+License: GPL-3
+Depends: R(>= 2.10.0)
+Imports: Rcpp (>= 0.11.3) , grDevices, graphics, stats, RColorBrewer,
+        PAFit
+LinkingTo: Rcpp
+LazyData: True
+NeedsCompilation: yes
+Packaged: 2016-05-25 13:06:39 UTC; pham
+Repository: CRAN
+Date/Publication: 2016-05-25 15:52:19

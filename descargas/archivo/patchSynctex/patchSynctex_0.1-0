@@ -1,0 +1,27 @@
+Package: patchSynctex
+Type: Package
+Title: Communication between Editor and Viewer for Literate Programs
+Version: 0.1-0
+Date: 2015-01-10
+Authors@R: c(person(given="Jan", family="Gleixner",
+                    email="jan.gleixner@gmail.com", role="aut"),
+	     person(given="Emmanuel", family="Charpentier",
+	     	    email="emm.charpentier@free.fr", role=c("aut", "cre")))
+Depends: tools, stringr
+Enhances: knitr, utils
+Description: This utility eases the debugging of literate documents
+	     (noweb files) by patching the synchronization information
+	     (the .synctex(.gz) file) produced by pdflatex with
+	     concordance information produced by Sweave or knitr and
+	     Sweave or knitr ; this allows for bilateral communication
+	     between a text editor (visualizing the noweb source) and
+	     a viewer (visualizing the resultant PDF), thus bypassing
+	     the intermediate TeX file.
+License: GPL (>= 2)
+NeedsCompilation: no
+Packaged: 2015-01-11 08:58:22 UTC; charpent
+Author: Jan Gleixner [aut],
+  Emmanuel Charpentier [aut, cre]
+Maintainer: Emmanuel Charpentier <emm.charpentier@free.fr>
+Repository: CRAN
+Date/Publication: 2015-01-11 16:53:11

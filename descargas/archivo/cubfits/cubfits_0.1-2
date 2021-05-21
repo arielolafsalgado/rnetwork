@@ -1,0 +1,42 @@
+Package: cubfits
+Version: 0.1-2
+Date: 2016-01-24
+Title: Codon Usage Bias Fits
+Authors@R: c(person("Wei-Chen", "Chen", role = c("aut", "cre"), email =
+       "wccsnow@gmail.com"),
+       person("Russell", "Zaretzki", role = "aut"),
+       person("William", "Howell", role = "aut"),
+       person("Cedric", "Landerer", role = "aut"),
+       person("Drew", "Schmidt", role = "aut"),
+       person("Michael A.", "Gilchrist", role = "aut"),
+       person("Preston", "Hewgley", role = "ctb"),
+       person("Students", "REU13", role = "ctb"))
+Depends: R(>= 3.0.0), methods, coda, foreach, parallel, stats,
+        graphics, utils
+Suggests: seqinr, VGAM, EMCluster
+Enhances: pbdMPI (>= 0.3-1)
+LazyLoad: yes
+LazyData: yes
+Description: Estimating mutation and selection coefficients on synonymous
+       codon bias usage based on models of ribosome overhead cost (ROC).
+       Multinomial logistic regression and Markov Chain Monte Carlo are used to
+       estimate and predict protein production rates with/without the presence
+       of expressions and measurement errors. Work flows with examples for
+       simulation, estimation and prediction processes are also provided
+       with parallelization speedup. The whole framework is tested with
+       yeast genome and gene expression data of Yassour (2009).
+License: Mozilla Public License 2.0
+URL: https://github.com/snoweye/cubfits
+NeedsCompilation: yes
+Packaged: 2016-01-24 20:10:27 UTC; snoweye
+Author: Wei-Chen Chen [aut, cre],
+  Russell Zaretzki [aut],
+  William Howell [aut],
+  Cedric Landerer [aut],
+  Drew Schmidt [aut],
+  Michael A. Gilchrist [aut],
+  Preston Hewgley [ctb],
+  Students REU13 [ctb]
+Maintainer: Wei-Chen Chen <wccsnow@gmail.com>
+Repository: CRAN
+Date/Publication: 2016-01-24 21:39:07

@@ -1,0 +1,44 @@
+Package: mirt
+Version: 1.2.1
+Date: 2014-02-20
+Type: Package
+Title: Multidimensional Item Response Theory
+Authors@R: c( person("Phil", "Chalmers", email = "rphilip.chalmers@gmail.com",
+    role = c("aut", "cre")), person("Joshua", "Pritikin", role=c('ctb')))
+Description: Analysis of dichotomous and polytomous response data using
+    unidimensional and multidimensional latent trait models under the Item
+    Response Theory paradigm. Exploratory and confirmatory models can be
+    estimated with quadrature (EM) or stochastic (MHRM) methods. Confirmatory
+    bi-factor and two-tier analyses are available for modeling item testlets.
+    Multiple group analysis and mixed effects designs also are available for
+    detecting differential item functioning and modelling item and person
+    covariates.
+Depends: R (>= 2.15), stats4, lattice, methods
+Imports: MASS, GPArotation, mvtnorm, Rcpp, numDeriv
+Suggests: testthat, plink, boot, latticeExtra, shiny, parallel
+ByteCompile: yes
+LazyLoad: yes
+LazyData: yes
+LinkingTo: Rcpp
+Repository: CRAN
+License: GPL (>= 2)
+URL: https://github.com/philchalmers/mirt
+Collate: '00-classes.R' '01-itemtypes.R' '02-item_methods.R'
+        '03-estimation.R' '04-derivatives.R' 'Confirmatory-methods.R'
+        'DIF.R' 'EMstep.group.R' 'Exploratory-methods.R' 'LoadPars.R'
+        'MHRM.group.R' 'Mixed-methods.R' 'MultipleGroup-methods.R'
+        'PLCI.mirt.R' 'PrepData.R' 'SE.methods.R' 'bfactor.R'
+        'boot.mirt.R' 'calcLogLik.R' 'createItem.R' 'expand.table.R'
+        'expected.item.R' 'extract.item.R' 'fscores.R'
+        'fscores.internal.R' 'imputeMissing.R' 'itemfit.R' 'iteminfo.R'
+        'itemplot.R' 'itemplot.internal.R' 'key2binary.R'
+        'mirt-package.R' 'mirt.R' 'mirt.model.R' 'mirtCluster.R'
+        'mixedmirt.R' 'testinfo.R' 'mod2values.R' 'model.elements.R'
+        'multipleGroup.R' 'personfit.R' 'probtrace.R' 'randef.R'
+        'read.mirt.R' 'M2.R' 'simdata.R' 'utils.R' 'wald.R'
+Packaged: 2014-02-21 04:56:27 UTC; phil
+Author: Phil Chalmers [aut, cre],
+  Joshua Pritikin [ctb]
+Maintainer: Phil Chalmers <rphilip.chalmers@gmail.com>
+NeedsCompilation: yes
+Date/Publication: 2014-02-21 08:11:31

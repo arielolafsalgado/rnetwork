@@ -1,0 +1,18 @@
+Package: lmvar
+Type: Package
+Title: Linear Regression with Non-Constant Variances
+Version: 1.2.0
+Author: Posthuma Partners <info@posthuma-partners.nl> 
+Maintainer: Marco Nijmeijer <nijmeijer@posthuma-partners.nl>
+Description: Runs a linear regression in which both the expected value and the variance can vary per observation. The expected values mu follows the standard linear model mu = X_mu * beta_mu. The standard deviation sigma follows the model log(sigma) = X_sigma * beta_sigma. The package comes with two vignettes: 'Intro' gives an introduction, 'Math' gives mathematical details.
+License: GPL-3
+LazyData: TRUE
+Imports: Matrix (>= 1.2-4), matrixcalc (>= 1.0-3), maxLik (>= 1.3-4),
+        stats (>= 3.2.5)
+RoxygenNote: 6.0.1
+Suggests: testthat, knitr, rmarkdown, R.rsp, MASS
+VignetteBuilder: knitr, R.rsp
+NeedsCompilation: no
+Packaged: 2017-06-13 15:51:55 UTC; Marc
+Repository: CRAN
+Date/Publication: 2017-06-13 16:00:20 UTC

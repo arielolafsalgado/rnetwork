@@ -1,0 +1,34 @@
+Package: slouch
+Type: Package
+Title: Stochastic Linear Ornstein-Uhlenbeck Comparative Hypotheses
+Version: 2.1.2
+Date: 2019-03-21
+Authors@R: c(person("Bj\u00F8rn Tore", "Kopperud", role =c("aut", "cre"), email = "b.t.kopperud@nhm.uio.no"),
+             person("Jason", "Pienaar", role = c("aut")),
+             person("Kjetil Lysne", "Voje", role = c("aut")),
+             person("Steven Hecht", "Orzack", role = c("aut")),
+             person("Thomas F.", "Hansen", role = c("aut")),
+             person("Mark", "Grabowski", role = c("ctb")))
+Description: An implementation of a phylogenetic comparative method. It can fit univariate among-species Ornstein-Uhlenbeck models of phenotypic trait evolution, where the trait evolves towards a primary optimum. The optimum can be modelled as a single parameter, as multiple discrete regimes on the phylogenetic tree, and/or with continuous covariates. See also Hansen (1997) doi:10.2307/2411186, Butler & King (2004) doi:10.1086/426002, Hansen et al. (2008) doi:10.1111/j.1558-5646.2008.00412.x.
+License: GPL-2
+LazyData: FALSE
+ByteCompile: FALSE
+RoxygenNote: 6.1.0
+Depends: R (>= 3.0.0), base, stats
+Imports: parallel, ape, memoise
+Suggests: knitr, rmarkdown, bookdown, testthat
+URL: http://github.com/kopperud/slouch
+BugReports: http://github.com/kopperud/slouch/issues
+VignetteBuilder: knitr
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2019-03-21 10:59:30 UTC; bjorntko
+Author: Bjørn Tore Kopperud [aut, cre],
+  Jason Pienaar [aut],
+  Kjetil Lysne Voje [aut],
+  Steven Hecht Orzack [aut],
+  Thomas F. Hansen [aut],
+  Mark Grabowski [ctb]
+Maintainer: Bjørn Tore Kopperud <b.t.kopperud@nhm.uio.no>
+Repository: CRAN
+Date/Publication: 2019-03-21 11:40:03 UTC

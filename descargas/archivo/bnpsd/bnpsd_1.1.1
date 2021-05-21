@@ -1,0 +1,33 @@
+Package: bnpsd
+Title: Simulate Genotypes from the BN-PSD Admixture Model
+Version: 1.1.1
+Authors@R: c(
+    person(given = "Alejandro",
+	   family = "Ochoa",
+	   role = c("aut", "cre"),
+	   email = "alejandro.ochoa@duke.edu",
+           comment = c(ORCID = "0000-0003-4928-3403")),
+    person(given = "John D.",
+           family = "Storey",
+	   role = c("aut"),
+	   email = "jstorey@princeton.edu",
+           comment = c(ORCID = "0000-0001-5992-402X"))
+    )
+Description: The Pritchard-Stephens-Donnelly (PSD) admixture model has k intermediate subpopulations from which n individuals draw their alleles dictated by their individual-specific admixture proportions.  The BN-PSD model additionally imposes the Balding-Nichols (BN) allele frequency model to the intermediate populations, which therefore evolved independently from a common ancestral population T with subpopulation-specific FST (Wright's fixation index) parameters.  The BN-PSD model can be used to yield complex population structures.  Method described in Ochoa and Storey (2016) <doi:10.1101/083923>.
+Depends:
+Imports: stats
+Suggests: popkin (>= 1.2.2), testthat, knitr, rmarkdown, RColorBrewer
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1.9000
+VignetteBuilder: knitr
+URL: https://github.com/StoreyLab/bnpsd/
+BugReports: https://github.com/StoreyLab/bnpsd/issues
+NeedsCompilation: no
+Packaged: 2019-05-15 17:27:24 UTC; viiia
+Author: Alejandro Ochoa [aut, cre] (<https://orcid.org/0000-0003-4928-3403>),
+  John D. Storey [aut] (<https://orcid.org/0000-0001-5992-402X>)
+Maintainer: Alejandro Ochoa <alejandro.ochoa@duke.edu>
+Repository: CRAN
+Date/Publication: 2019-05-15 17:40:03 UTC

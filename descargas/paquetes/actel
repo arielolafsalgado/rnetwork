@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package actel</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Acoustic Telemetry Data Analysis [R package actel version 1.1.1]" />
+<meta name="citation_author" content="Hugo Flávio" />
+<meta name="citation_publication_date" content="2020-09-11" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=actel" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=actel" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="actel: Acoustic Telemetry Data Analysis" />
+<meta name="og:description" content="Designed for studies where animals tagged with acoustic tags are expected to move through receiver arrays. This package combines the advantages of automatic sorting and checking of animal movements with the possibility for user intervention on tags that deviate from expected behaviour. The three analysis functions (explore(), migration() and residency()) allow the users to analyse their data in a systematic way, making it easy to compare results from different studies. CJS calculations are based on Perry et al. (2012) &amp;lt;&lt;a href=&quot;https://www.researchgate.net/publication/256443823_Using_mark-recapture_models_to_estimate_survival_from_telemetry_data&quot;&gt;https://www.researchgate.net/publication/256443823_Using_mark-recapture_models_to_estimate_survival_from_telemetry_data&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=actel" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>actel: Acoustic Telemetry Data Analysis</h2>
+<p>Designed for studies where animals tagged with acoustic tags are expected
+    to move through receiver arrays. This package combines the advantages of automatic sorting and checking 
+    of animal movements with the possibility for user intervention on tags that deviate from expected 
+    behaviour. The three analysis functions (explore(), migration() and residency()) 
+    allow the users to analyse their data in a systematic way, making it easy to compare results from 
+    different studies.
+    CJS calculations are based on Perry et al. (2012) &lt;<a href="https://www.researchgate.net/publication/256443823_Using_mark-recapture_models_to_estimate_survival_from_telemetry_data">https://www.researchgate.net/publication/256443823_Using_mark-recapture_models_to_estimate_survival_from_telemetry_data</a>&gt;.</p>
+<table summary="Package actel summary">
+<tr>
+<td>Version:</td>
+<td>1.1.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.6)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../circular/index.html">circular</a>, <a href="../data.table/index.html">data.table</a>, <a href="../DiagrammeR/index.html">DiagrammeR</a>, <a href="../DiagrammeRsvg/index.html">DiagrammeRsvg</a>, <a href="../fasttime/index.html">fasttime</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../svglite/index.html">svglite</a>, graphics, <a href="../knitr/index.html">knitr</a>, <a href="../readr/index.html">readr</a>, <a href="../reshape2/index.html">reshape2</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../rsvg/index.html">rsvg</a>, <a href="../scales/index.html">scales</a>, stats, <a href="../stringr/index.html">stringr</a>, <a href="../stringi/index.html">stringi</a>, grDevices, utils</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../raster/index.html">raster</a>, <a href="../gdistance/index.html">gdistance</a>, <a href="../sp/index.html">sp</a>, tools, <a href="../rgdal/index.html">rgdal</a>, <a href="../testthat/index.html">testthat</a>, <a href="../RGtk2/index.html">RGtk2</a>, <a href="../gWidgets2RGtk2/index.html">gWidgets2RGtk2</a>, <a href="../gWidgets2/index.html">gWidgets2</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-11</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Hugo Flávio <a href="https://orcid.org/0000-0002-5174-1197"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Hugo Flávio  &#x3c;&#x68;&#x64;&#x6d;&#x66;&#x6c;&#x61;&#x20;&#x61;&#x74;&#x20;&#x61;&#x71;&#x75;&#x61;&#x2e;&#x64;&#x74;&#x75;&#x2e;&#x64;&#x6b;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/hugomflavio/actel/issues">https://github.com/hugomflavio/actel/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/hugomflavio/actel">https://github.com/hugomflavio/actel</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-GB</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_actel.html">actel results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package actel downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="actel.pdf"> actel.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/a-0_workspace_requirements.html">1.0) Preparing your data</a><br/>
+<a href="vignettes/a-1_study_area.html">1.1) Structuring the study area</a><br/>
+<a href="vignettes/a-2_distances_matrix.html">1.2) Creating a distances matrix</a><br/>
+<a href="vignettes/a-3_preload.html">1.3) The preload() function</a><br/>
+<a href="vignettes/b-0_explore.html">2.0) explore()</a><br/>
+<a href="vignettes/b-1_explore_processes.html">2.1) Processes behind explore()</a><br/>
+<a href="vignettes/b-2_explore_results.html">2.2) Inspecting the explore() results</a><br/>
+<a href="vignettes/c-0_migration.html">3.0) migration()</a><br/>
+<a href="vignettes/c-1_migration_processes.html">3.1) Processes behind migration()</a><br/>
+<a href="vignettes/c-2_migration_results.html">3.2) Inspecting the migration() results</a><br/>
+<a href="vignettes/c-3_migration_efficiency.html">3.3) One-way efficiency estimations</a><br/>
+<a href="vignettes/d-0_residency.html">4.0) residency()</a><br/>
+<a href="vignettes/d-1_residency_processes.html">4.1) Processes behind residency()</a><br/>
+<a href="vignettes/d-2_residency_results.html">4.2) Inspecting the residency() results</a><br/>
+<a href="vignettes/d-3_residency_efficiency.html">4.3) Multi-way efficiency estimations</a><br/>
+<a href="vignettes/e-0_manual_mode.html">5.0) Manual mode</a><br/>
+<a href="vignettes/f-0_post_functions.html">6.0) Beyond the three main analyses</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/actel_1.1.1.tar.gz"> actel_1.1.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/actel_1.1.1.zip">actel_1.1.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/actel_1.1.1.zip">actel_1.1.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/actel_1.1.1.zip">actel_1.1.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/actel_1.1.1.tgz">actel_1.1.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/actel_1.1.1.tgz">actel_1.1.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/actel"> actel archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=actel"><samp>https://CRAN.R-project.org/package=actel</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package netmeta</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Network Meta-Analysis using Frequentist Methods [R package netmeta version 1.2-1]" />
+<meta name="citation_author1" content="Gerta Rücker" />
+<meta name="citation_author2" content="Ulrike Krahn" />
+<meta name="citation_author3" content="Jochem König" />
+<meta name="citation_author4" content="Orestis Efthimiou" />
+<meta name="citation_author5" content="Guido Schwarzer" />
+<meta name="citation_publication_date" content="2020-04-16" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=netmeta" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=netmeta" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="netmeta: Network Meta-Analysis using Frequentist Methods" />
+<meta name="og:description" content="A comprehensive set of functions providing frequentist methods for network meta-analysis and supporting Schwarzer et al. (2015) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2F978-3-319-21416-0&quot;&gt;doi:10.1007/978-3-319-21416-0&lt;/a&gt;&amp;gt;, Chapter 8 &quot;Network Meta-Analysis&quot;: - frequentist network meta-analysis following Rücker (2012) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fjrsm.1058&quot;&gt;doi:10.1002/jrsm.1058&lt;/a&gt;&amp;gt;; - net heat plot and design-based decomposition of Cochran's Q according to Krahn et al. (2013) &amp;lt;&lt;a href=&quot;https://doi.org/10.1186%2F1471-2288-13-35&quot;&gt;doi:10.1186/1471-2288-13-35&lt;/a&gt;&amp;gt;; - measures characterizing the flow of evidence between two treatments by König et al. (2013) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fsim.6001&quot;&gt;doi:10.1002/sim.6001&lt;/a&gt;&amp;gt;; - ranking of treatments (frequentist analogue of SUCRA) according to Rücker &amp;amp; Schwarzer (2015) &amp;lt;&lt;a href=&quot;https://doi.org/10.1186%2Fs12874-015-0060-8&quot;&gt;doi:10.1186/s12874-015-0060-8&lt;/a&gt;&amp;gt;; - partial order of treatment rankings ('poset') and Hasse diagram for 'poset' (Carlsen &amp;amp; Bruggemann, 2014) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fcem.2569&quot;&gt;doi:10.1002/cem.2569&lt;/a&gt;&amp;gt;; (Rücker &amp;amp; Schwarzer, 2017) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fjrsm.1270&quot;&gt;doi:10.1002/jrsm.1270&lt;/a&gt;&amp;gt;; - split direct and indirect evidence to check consistency (Dias et al., 2010) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fsim.3767&quot;&gt;doi:10.1002/sim.3767&lt;/a&gt;&amp;gt;, (Efthimiou et al., 2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fsim.8158&quot;&gt;doi:10.1002/sim.8158&lt;/a&gt;&amp;gt;; - league table with network meta-analysis results; - additive network meta-analysis for combinations of treatments (Rücker et al., 2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fbimj.201800167&quot;&gt;doi:10.1002/bimj.201800167&lt;/a&gt;&amp;gt;; - network meta-analysis of binary data using the Mantel-Haenszel or non-central hypergeometric distribution method (Efthimiou et al., 2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fsim.8158&quot;&gt;doi:10.1002/sim.8158&lt;/a&gt;&amp;gt;; - 'comparison-adjusted' funnel plot (Chaimani &amp;amp; Salanti, 2012) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fjrsm.57&quot;&gt;doi:10.1002/jrsm.57&lt;/a&gt;&amp;gt;; - automated drawing of network graphs described in Rücker &amp;amp; Schwarzer (2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fjrsm.1143&quot;&gt;doi:10.1002/jrsm.1143&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=netmeta" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>netmeta: Network Meta-Analysis using Frequentist Methods</h2>
+<p>A comprehensive set of functions providing frequentist methods for network meta-analysis and supporting Schwarzer et al. (2015) &lt;<a href="https://doi.org/10.1007%2F978-3-319-21416-0">doi:10.1007/978-3-319-21416-0</a>&gt;, Chapter 8 "Network Meta-Analysis":
+ - frequentist network meta-analysis following Rücker (2012) &lt;<a href="https://doi.org/10.1002%2Fjrsm.1058">doi:10.1002/jrsm.1058</a>&gt;;
+ - net heat plot and design-based decomposition of Cochran's Q according to Krahn et al. (2013) &lt;<a href="https://doi.org/10.1186%2F1471-2288-13-35">doi:10.1186/1471-2288-13-35</a>&gt;;
+ - measures characterizing the flow of evidence between two treatments by König et al. (2013) &lt;<a href="https://doi.org/10.1002%2Fsim.6001">doi:10.1002/sim.6001</a>&gt;;
+ - ranking of treatments (frequentist analogue of SUCRA) according to Rücker &amp; Schwarzer (2015) &lt;<a href="https://doi.org/10.1186%2Fs12874-015-0060-8">doi:10.1186/s12874-015-0060-8</a>&gt;;
+ - partial order of treatment rankings ('poset') and Hasse diagram for 'poset' (Carlsen &amp; Bruggemann, 2014) &lt;<a href="https://doi.org/10.1002%2Fcem.2569">doi:10.1002/cem.2569</a>&gt;; (Rücker &amp; Schwarzer, 2017) &lt;<a href="https://doi.org/10.1002%2Fjrsm.1270">doi:10.1002/jrsm.1270</a>&gt;;
+ - split direct and indirect evidence to check consistency (Dias et al., 2010) &lt;<a href="https://doi.org/10.1002%2Fsim.3767">doi:10.1002/sim.3767</a>&gt;, (Efthimiou et al., 2019) &lt;<a href="https://doi.org/10.1002%2Fsim.8158">doi:10.1002/sim.8158</a>&gt;;
+ - league table with network meta-analysis results;
+ - additive network meta-analysis for combinations of treatments (Rücker et al., 2019) &lt;<a href="https://doi.org/10.1002%2Fbimj.201800167">doi:10.1002/bimj.201800167</a>&gt;;
+ - network meta-analysis of binary data using the Mantel-Haenszel or non-central hypergeometric distribution method (Efthimiou et al., 2019) &lt;<a href="https://doi.org/10.1002%2Fsim.8158">doi:10.1002/sim.8158</a>&gt;;
+ - 'comparison-adjusted' funnel plot (Chaimani &amp; Salanti, 2012) &lt;<a href="https://doi.org/10.1002%2Fjrsm.57">doi:10.1002/jrsm.57</a>&gt;;
+ - automated drawing of network graphs described in Rücker &amp; Schwarzer (2016) &lt;<a href="https://doi.org/10.1002%2Fjrsm.1143">doi:10.1002/jrsm.1143</a>&gt;.</p>
+<table summary="Package netmeta summary">
+<tr>
+<td>Version:</td>
+<td>1.2-1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td><a href="../meta/index.html">meta</a> (&ge; 4.9-8)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../magic/index.html">magic</a>, <a href="../MASS/index.html">MASS</a>, <a href="../ggplot2/index.html">ggplot2</a> (&ge; 3.0.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../colorspace/index.html">colorspace</a>, <a href="../rgl/index.html">rgl</a>, <a href="../hasseDiagram/index.html">hasseDiagram</a> (&ge; 0.1.3), grid</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-04-16</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Gerta Rücker <a href="https://orcid.org/0000-0002-2192-2560"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Ulrike Krahn [aut],
+  Jochem König <a href="https://orcid.org/0000-0003-4683-0360"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Orestis Efthimiou <a href="https://orcid.org/0000-0002-0955-7572"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Guido Schwarzer <a href="https://orcid.org/0000-0001-6214-9087"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Guido Schwarzer  &#x3c;&#x73;&#x63;&#x20;&#x61;&#x74;&#x20;&#x69;&#x6d;&#x62;&#x69;&#x2e;&#x75;&#x6e;&#x69;&#x2d;&#x66;&#x72;&#x65;&#x69;&#x62;&#x75;&#x72;&#x67;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/guido-s/netmeta">https://github.com/guido-s/netmeta</a> <a href="http://meta-analysis-with-r.org">http://meta-analysis-with-r.org</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/MetaAnalysis.html">MetaAnalysis</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_netmeta.html">netmeta results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package netmeta downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="netmeta.pdf"> netmeta.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/netmeta_1.2-1.tar.gz"> netmeta_1.2-1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/netmeta_1.2-1.zip">netmeta_1.2-1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/netmeta_1.2-1.zip">netmeta_1.2-1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/netmeta_1.2-1.zip">netmeta_1.2-1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/netmeta_1.2-1.tgz">netmeta_1.2-1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/netmeta_1.2-1.tgz">netmeta_1.2-1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/netmeta"> netmeta archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package netmeta reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../fragility/index.html">fragility</a>, <a href="../NMAoutlier/index.html">NMAoutlier</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../nmadb/index.html">nmadb</a>, <a href="../RcmdrPlugin.EZR/index.html">RcmdrPlugin.EZR</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=netmeta"><samp>https://CRAN.R-project.org/package=netmeta</samp></a>
+to link to this page.</p>
+</body>
+</html>

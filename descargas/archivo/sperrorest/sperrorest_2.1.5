@@ -1,0 +1,43 @@
+Package: sperrorest
+Type: Package
+Title: Perform Spatial Error Estimation and Variable Importance in
+        Parallel
+Description: Implements spatial error estimation and 
+   permutation-based variable importance measures for predictive models using 
+   spatial cross-validation and spatial block bootstrap.
+Version: 2.1.5
+Date: 2018-03-26
+Authors@R: c(
+      person("Alexander", "Brenning",
+        email = "alexander.brenning@uni-jena.de",
+        role = c("aut", "cre"),
+        comment = c(ORCID = '0000-0001-6640-679X')),
+      person("Patrick", "Schratz",
+        email = "patrick.schratz@gmail.com", 
+        role = c("aut"),
+        comment = c(ORCID = '0000-0003-0748-6624')),
+      person("Tobias", "Herrmann", 
+        email = "herrmann.tobias89@gmail.com",
+        role = "aut",
+        comment = c(ORCID = '0000-0001-9768-0708'))  
+      )
+BugReports: https://github.com/pat-s/sperrorest/issues
+Depends: R (>= 2.10)
+Suggests: ipred, nnet, RSAGA, knitr, testthat, pacman, rmarkdown
+Imports: pbapply, pbmcapply, magrittr, future.apply, future, doFuture,
+        foreach, ROCR, parallel, graphics, stats, rpart, purrr,
+        stringr, gdata, glue
+License: GPL-3
+LazyData: true
+LazyLoad: yes
+ByteCompile: true
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-03-27 11:06:50 UTC; pjs
+Author: Alexander Brenning [aut, cre] (<https://orcid.org/0000-0001-6640-679X>),
+  Patrick Schratz [aut] (<https://orcid.org/0000-0003-0748-6624>),
+  Tobias Herrmann [aut] (<https://orcid.org/0000-0001-9768-0708>)
+Maintainer: Alexander Brenning <alexander.brenning@uni-jena.de>
+Repository: CRAN
+Date/Publication: 2018-03-27 12:20:30 UTC

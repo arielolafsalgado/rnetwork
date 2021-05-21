@@ -1,0 +1,30 @@
+Package: FDboost
+Type: Package
+Title: Boosting Functional Regression Models
+Version: 0.1-0
+Date: 2016-03-13
+Authors@R: c(person("Sarah", "Brockhaus", role = c("aut", "cre"),
+		            email = "Sarah.Brockhaus@stat.uni-muenchen.de"), 
+			 person("David", "Ruegamer", role = "ctb"),
+			 person("Torsten", "Hothorn", role = "ctb"), 
+			 person("with contributions by many others", "(see inst/CONTRIBUTIONS)", role = "ctb"))
+Description: Regression models for functional data, i.e., scalar-on-function,
+    function-on-scalar and function-on-function regression models, are fitted
+    by a component-wise gradient boosting algorithm. 
+Depends: R (>= 3.0.0), methods, mboost (>= 2.6-0)
+Imports: graphics, grDevices, utils, stats, Matrix, gamboostLSS (>=
+        1.2-1), mgcv, refund, MASS, zoo
+Suggests: fda, fields, maps, mapdata
+License: GPL-2
+Packaged: 2016-03-14 07:58:17 UTC; brockhaus
+Collate: 'FDboost.R' 'baselearners.R' 'baselearnersX.R'
+        'constrainedX.R' 'crossvalidation.R' 'FDboostLSS.R' 'hmatrix.R'
+        'methods.R' 'utilityFunctions.R'
+NeedsCompilation: no
+Author: Sarah Brockhaus [aut, cre],
+  David Ruegamer [ctb],
+  Torsten Hothorn [ctb],
+  with contributions by many others (see inst/CONTRIBUTIONS) [ctb]
+Maintainer: Sarah Brockhaus <Sarah.Brockhaus@stat.uni-muenchen.de>
+Repository: CRAN
+Date/Publication: 2016-03-14 12:57:58

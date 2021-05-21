@@ -1,0 +1,26 @@
+Package: clinDR
+Version: 1.9
+Date: 2018-12-27
+Title: Simulation and Analysis Tools for Clinical Dose Response
+        Modeling
+Authors@R: c(person("Neal","Thomas",role=c("aut","cre"),
+	email="snthomas99@gmail.com",comment=c(ORCID = '0000-0002-1915-8487')),
+	person("Jing","Wu",role="aut",
+	email="Jing_Wu@uri.edu"))
+Maintainer: Neal Thomas <snthomas99@gmail.com>
+Description: Bayesian and ML Emax model fitting, graphics and simulation for clinical dose
+    response.  The summary data from the dose response meta-analyses in  
+    Thomas, Sweeney, and Somayaji (2014) <doi:10.1080/19466315.2014.924876> and
+    Thomas and Roy (2016) <doi:10.1080/19466315.2016.1256229> are included 
+    in the package.  The prior distributions for the Bayesian analyses default to
+    the posterior predictive distributions derived from these references.
+Depends: R (>= 3.0.1), rstan (>= 2.12)
+Imports:
+        foreach,graphics,ggplot2,DoseFinding,stats,utils,parallel,doParallel
+License: GPL (>= 2)
+NeedsCompilation: no
+Packaged: 2018-12-28 18:51:52 UTC; ThomasN
+Author: Neal Thomas [aut, cre] (<https://orcid.org/0000-0002-1915-8487>),
+  Jing Wu [aut]
+Repository: CRAN
+Date/Publication: 2019-01-04 11:20:13 UTC

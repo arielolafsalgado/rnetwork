@@ -1,0 +1,25 @@
+Package: aoos
+Type: Package
+Title: Another Object Orientation System
+Version: 0.3.0
+Date: 2015-08-06
+Authors@R: person("Sebastian", "Warnholz", role = c("aut", "cre"),
+                  email = "wahani@gmail.com")
+BugReports: https://github.com/wahani/aoos/issues
+Description: Another implementation of object-orientation in R. It provides an 
+  interface to S4 reference classes and two alternative new implementations. One 
+  is an experimental version built around S4 (defineClass) and the other one 
+  (retList) makes it more convenient to work with lists returned from functions 
+  and uses only S3.
+Depends: methods, R(>= 3.2.0)
+License: GPL-3 | file LICENSE
+Suggests: testthat, knitr, microbenchmark, R6
+Encoding: UTF-8
+VignetteBuilder: knitr
+ByteCompile: TRUE
+NeedsCompilation: no
+Packaged: 2015-08-06 13:20:19 UTC; sebastian
+Author: Sebastian Warnholz [aut, cre]
+Maintainer: Sebastian Warnholz <wahani@gmail.com>
+Repository: CRAN
+Date/Publication: 2015-08-06 18:06:20

@@ -1,0 +1,28 @@
+Package: bayesImageS
+Type: Package
+Title: Bayesian Methods for Image Segmentation using a Potts Model
+Version: 0.3-3
+Date: 2016-11-03
+Authors@R: c(
+    person("Matt", "Moores", role = c("aut", "cre"), email = "M.T.Moores@warwick.ac.uk"),
+    person("Kerrie", "Mengersen", role="aut", email="k.mengersen@qut.edu.au"))
+Description: Various algorithms for segmentation of 2D and 3D images, such
+    as computed tomography and satellite remote sensing. This package implements
+    Bayesian image analysis using the hidden Potts model with external field
+    prior. Latent labels are sampled using chequerboard updating or Swendsen-Wang.
+    Algorithms for the smoothing parameter include pseudolikelihood, path sampling,
+    the exchange algorithm, and approximate Bayesian computation (ABC).
+License: GPL (>= 2)
+Depends: R (>= 2.14.0)
+Imports: Rcpp (>= 0.10.2)
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: PottsUtils, coda, knitr
+VignetteBuilder: knitr
+RoxygenNote: 5.0.1
+NeedsCompilation: yes
+Packaged: 2016-11-03 18:21:57 UTC; stsrjs
+Author: Matt Moores [aut, cre],
+  Kerrie Mengersen [aut]
+Maintainer: Matt Moores <M.T.Moores@warwick.ac.uk>
+Repository: CRAN
+Date/Publication: 2016-11-03 20:27:00

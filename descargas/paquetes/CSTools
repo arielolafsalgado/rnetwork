@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package CSTools</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Assessing Skill of Climate Forecasts on Seasonal-to-Decadal Timescales [R package CSTools version 3.1.0]" />
+<meta name="citation_author1" content="Nuria Perez-Zanon" />
+<meta name="citation_author2" content="Louis-Philippe Caron" />
+<meta name="citation_author3" content="Carmen Alvarez-Castro" />
+<meta name="citation_author4" content="Jost von Hardenberg" />
+<meta name="citation_author5" content="Llorenç LLedo" />
+<meta name="citation_author6" content="Nicolau Manubens" />
+<meta name="citation_author7" content="Eroteida Sanchez-Garcia" />
+<meta name="citation_author8" content="Bert van Schaeybroeck" />
+<meta name="citation_author9" content="Veronica Torralba" />
+<meta name="citation_author10" content="Deborah Verfaillie" />
+<meta name="citation_publication_date" content="2020-07-02" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=CSTools" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=CSTools" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="CSTools: Assessing Skill of Climate Forecasts on Seasonal-to-Decadal Timescales" />
+<meta name="og:description" content="Exploits dynamical seasonal forecasts in order to provide information relevant to stakeholders at the seasonal timescale. The package contains process-based methods for forecast calibration, bias correction, statistical and stochastic downscaling, optimal forecast combination and multivariate verification, as well as basic and advanced tools to obtain tailored products. This package was developed in the context of the ERA4CS project MEDSCOPE and the H2020 S2S4E project. Doblas-Reyes et al. (2005) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fj.1600-0870.2005.00104.x&quot;&gt;doi:10.1111/j.1600-0870.2005.00104.x&lt;/a&gt;&amp;gt;. Mishra et al. (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs00382-018-4404-z&quot;&gt;doi:10.1007/s00382-018-4404-z&lt;/a&gt;&amp;gt;. Sanchez-Garcia et al. (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.5194%2Fasr-16-165-2019&quot;&gt;doi:10.5194/asr-16-165-2019&lt;/a&gt;&amp;gt;. Straus et al. (2007) &amp;lt;&lt;a href=&quot;https://doi.org/10.1175%2FJCLI4070.1&quot;&gt;doi:10.1175/JCLI4070.1&lt;/a&gt;&amp;gt;. Terzago et al. (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.5194%2Fnhess-18-2825-2018&quot;&gt;doi:10.5194/nhess-18-2825-2018&lt;/a&gt;&amp;gt;. Torralba et al. (2017) &amp;lt;&lt;a href=&quot;https://doi.org/10.1175%2FJAMC-D-16-0204.1&quot;&gt;doi:10.1175/JAMC-D-16-0204.1&lt;/a&gt;&amp;gt;. D'Onofrio et al. (2014) &amp;lt;&lt;a href=&quot;https://doi.org/10.1175%2FJHM-D-13-096.1&quot;&gt;doi:10.1175/JHM-D-13-096.1&lt;/a&gt;&amp;gt;. Van Schaeybroeck et al. (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2FB978-0-12-812372-0.00010-8&quot;&gt;doi:10.1016/B978-0-12-812372-0.00010-8&lt;/a&gt;&amp;gt;. Yiou et al. (2013) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs00382-012-1626-3&quot;&gt;doi:10.1007/s00382-012-1626-3&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=CSTools" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>CSTools: Assessing Skill of Climate Forecasts on Seasonal-to-Decadal
+Timescales</h2>
+<p>Exploits dynamical seasonal forecasts in order to provide
+    information relevant to stakeholders at the seasonal timescale. The package
+    contains process-based methods for forecast calibration, bias correction,
+    statistical and stochastic downscaling, optimal forecast combination and
+    multivariate verification, as well as basic and advanced tools to obtain
+    tailored products. This package was developed in the context of the
+    ERA4CS project MEDSCOPE and the H2020 S2S4E project.
+    Doblas-Reyes et al. (2005) &lt;<a href="https://doi.org/10.1111%2Fj.1600-0870.2005.00104.x">doi:10.1111/j.1600-0870.2005.00104.x</a>&gt;.
+    Mishra et al. (2018) &lt;<a href="https://doi.org/10.1007%2Fs00382-018-4404-z">doi:10.1007/s00382-018-4404-z</a>&gt;.
+    Sanchez-Garcia et al. (2019) &lt;<a href="https://doi.org/10.5194%2Fasr-16-165-2019">doi:10.5194/asr-16-165-2019</a>&gt;.
+    Straus et al. (2007) &lt;<a href="https://doi.org/10.1175%2FJCLI4070.1">doi:10.1175/JCLI4070.1</a>&gt;.
+    Terzago et al. (2018) &lt;<a href="https://doi.org/10.5194%2Fnhess-18-2825-2018">doi:10.5194/nhess-18-2825-2018</a>&gt;.
+    Torralba et al. (2017) &lt;<a href="https://doi.org/10.1175%2FJAMC-D-16-0204.1">doi:10.1175/JAMC-D-16-0204.1</a>&gt;.
+    D'Onofrio et al. (2014) &lt;<a href="https://doi.org/10.1175%2FJHM-D-13-096.1">doi:10.1175/JHM-D-13-096.1</a>&gt;.
+    Van Schaeybroeck et al. (2019) &lt;<a href="https://doi.org/10.1016%2FB978-0-12-812372-0.00010-8">doi:10.1016/B978-0-12-812372-0.00010-8</a>&gt;.
+    Yiou et al. (2013) &lt;<a href="https://doi.org/10.1007%2Fs00382-012-1626-3">doi:10.1007/s00382-012-1626-3</a>&gt;.</p>
+<table summary="Package CSTools summary">
+<tr>
+<td>Version:</td>
+<td>3.1.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.4.0), <a href="../maps/index.html">maps</a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../s2dverification/index.html">s2dverification</a>, <a href="../s2dv/index.html">s2dv</a>, <a href="../rainfarmr/index.html">rainfarmr</a>, <a href="../multiApply/index.html">multiApply</a> (&ge; 2.1.1), <a href="../qmap/index.html">qmap</a>, <a href="../ClimProjDiags/index.html">ClimProjDiags</a>, <a href="../ncdf4/index.html">ncdf4</a>, <a href="../plyr/index.html">plyr</a>, <a href="../abind/index.html">abind</a>, <a href="../data.table/index.html">data.table</a>, <a href="../reshape2/index.html">reshape2</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../RColorBrewer/index.html">RColorBrewer</a>, graphics, grDevices, stats, utils, <a href="../verification/index.html">verification</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../zeallot/index.html">zeallot</a>, <a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../markdown/index.html">markdown</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../startR/index.html">startR</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-07-02</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Nuria Perez-Zanon <a href="https://orcid.org/0000-0001-8568-3071"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Louis-Philippe Caron
+    <a href="https://orcid.org/0000-0001-5221-0147"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Carmen Alvarez-Castro [aut],
+  Jost von Hardenberg
+    <a href="https://orcid.org/0000-0002-5312-8070"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Llorenç LLedo [aut],
+  Nicolau Manubens [aut],
+  Eroteida Sanchez-Garcia [aut],
+  Bert van Schaeybroeck [aut],
+  Veronica Torralba [aut],
+  Deborah Verfaillie [aut],
+  Lauriane Batte [ctb],
+  Filippo Cali Quaglia [ctb],
+  Chihchung Chou [ctb],
+  Nicola Cortesi [ctb],
+  Susanna Corti [ctb],
+  Paolo Davini [ctb],
+  Marta Dominguez [ctb],
+  Federico Fabiano [ctb],
+  Ignazio Giuntoli [ctb],
+  Raul Marcos [ctb],
+  Niti Mishra [ctb],
+  Jesus Peña [ctb],
+  Francesc Roura-Adserias [ctb],
+  Silvia Terzago [ctb],
+  Danila Volpi [ctb],
+  BSC-CNS [cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Nuria Perez-Zanon  &#x3c;&#x6e;&#x75;&#x72;&#x69;&#x61;&#x2e;&#x70;&#x65;&#x72;&#x65;&#x7a;&#x20;&#x61;&#x74;&#x20;&#x62;&#x73;&#x63;&#x2e;&#x65;&#x73;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_CSTools.html">CSTools results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package CSTools downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="CSTools.pdf"> CSTools.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/BestEstimateIndex_vignette.html">Achiving Best Estimate Index</a><br/>
+<a href="vignettes/ENSclustering_vignette.html">Ensemble Clustering</a><br/>
+<a href="vignettes/MultiModelSkill_vignette.html">Multi-model Skill Assessment</a><br/>
+<a href="vignettes/MultivarRMSE_vignette.html">Multivariate RMSE</a><br/>
+<a href="vignettes/PlotForecastPDF.html">Plot Forecast PDFs</a><br/>
+<a href="vignettes/RainFARM_vignette.html">RainFARM</a><br/>
+<a href="vignettes/WeatherRegimes_vignette.html">Weather Regime Analysis</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/CSTools_3.1.0.tar.gz"> CSTools_3.1.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/CSTools_3.1.0.zip">CSTools_3.1.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/CSTools_3.1.0.zip">CSTools_3.1.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/CSTools_3.1.0.zip">CSTools_3.1.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/CSTools_3.1.0.tgz">CSTools_3.1.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/CSTools_3.1.0.tgz">CSTools_3.1.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/CSTools"> CSTools archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=CSTools"><samp>https://CRAN.R-project.org/package=CSTools</samp></a>
+to link to this page.</p>
+</body>
+</html>

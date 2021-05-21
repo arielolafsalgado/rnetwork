@@ -1,0 +1,28 @@
+Package: VFP
+Version: 1.2
+Date: 2019-12-17
+Title: Variance Function Program
+Author: Andre Schuetzenmeister [cre, aut],
+  Florian Dufey [aut],
+  Andrea Geistanger [ctb]
+Maintainer: Andre Schuetzenmeister <andre.schuetzenmeister@roche.com>
+Authors@R: c(
+		    person(given="Andre", family="Schuetzenmeister", email="andre.schuetzenmeister@roche.com", role = c("cre", "aut")),
+			person(given="Florian", family="Dufey", email="florian.dufey@roche.com", role = c("aut")),
+			person(given="Andrea", family="Geistanger", email="andrea.geistanger@roche.com", role = c("ctb"))
+		    )
+Depends: R (>= 3.1.0), gnm
+Imports: VCA, MASS, utils, stats, graphics, grDevices
+Suggests: RUnit, knitr, rmarkdown, prettydoc
+Description: 
+  Variance function estimation for models proposed by W. Sadler in his variance function program 
+  ('VFP', <http://www.aacb.asn.au/resources/useful-tools/variance-function-program-v14>). Here, the idea is
+  to fit multiple variance functions to a data set and consequently assess which function reflects
+  the relationship 'Var ~ Mean' best. For 'in-vitro diagnostic' ('IVD') assays modeling this relationship
+  is of great importance when individual test-results are used for defining follow-up treatment of patients.  
+License: GPL (>= 2)
+VignetteBuilder: knitr, rmarkdown
+NeedsCompilation: no
+Packaged: 2019-12-17 14:31:19 UTC; schueta6
+Repository: CRAN
+Date/Publication: 2019-12-17 21:30:02 UTC

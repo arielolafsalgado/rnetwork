@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package miceadds</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=miceadds" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="miceadds: Some Additional Multiple Imputation Functions, Especially for 'mice'" />
+<meta name="og:description" content=" Contains functions for multiple imputation which complements existing functionality in R. In particular, several imputation methods for the mice package (van Buuren &amp;amp; Groothuis-Oudshoorn, 2011, &amp;lt;&lt;a href=&quot;https://doi.org/10.18637%2Fjss.v045.i03&quot;&gt;doi:10.18637/jss.v045.i03&lt;/a&gt;&amp;gt;) are included. Main features of the miceadds package include plausible value imputation (Mislevy, 1991, &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2FBF02294457&quot;&gt;doi:10.1007/BF02294457&lt;/a&gt;&amp;gt;), multilevel imputation for variables at any level or with any number of hierarchical and non-hierarchical levels (Grund, Luedtke &amp;amp; Robitzsch, 2018, &amp;lt;&lt;a href=&quot;https://doi.org/10.1177%2F1094428117703686&quot;&gt;doi:10.1177/1094428117703686&lt;/a&gt;&amp;gt;; van Buuren, 2018, Ch.7, &amp;lt;&lt;a href=&quot;https://doi.org/10.1201%2F9780429492259&quot;&gt;doi:10.1201/9780429492259&lt;/a&gt;&amp;gt;), imputation using partial least squares (PLS) for high dimensional predictors (Robitzsch, Pham &amp;amp; Yanagida, 2016), nested multiple imputation (Rubin, 2003, &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2F1467-9574.00217&quot;&gt;doi:10.1111/1467-9574.00217&lt;/a&gt;&amp;gt;), substantive model compatible imputation (Bartlett et al., 2015, &amp;lt;&lt;a href=&quot;https://doi.org/10.1177%2F0962280214521348&quot;&gt;doi:10.1177/0962280214521348&lt;/a&gt;&amp;gt;), and features for the generation of synthetic datasets (Reiter, 2005, &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fj.1467-985X.2004.00343.x&quot;&gt;doi:10.1111/j.1467-985X.2004.00343.x&lt;/a&gt;&amp;gt;; Nowok, Raab, &amp;amp; Dibben, 2016, &amp;lt;&lt;a href=&quot;https://doi.org/10.18637%2Fjss.v074.i11&quot;&gt;doi:10.18637/jss.v074.i11&lt;/a&gt;&amp;gt;)." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=miceadds" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>miceadds: Some Additional Multiple Imputation Functions, Especially for
+'mice'</h2>
+<p>
+    Contains functions for multiple imputation which
+    complements existing functionality in R.
+    In particular, several imputation methods for the
+    mice package (van Buuren &amp; Groothuis-Oudshoorn, 2011,
+    &lt;<a href="https://doi.org/10.18637%2Fjss.v045.i03">doi:10.18637/jss.v045.i03</a>&gt;) are included.
+    Main features of the miceadds package include
+    plausible value imputation (Mislevy, 1991,
+    &lt;<a href="https://doi.org/10.1007%2FBF02294457">doi:10.1007/BF02294457</a>&gt;), multilevel imputation for
+    variables at any level or with any number of hierarchical
+    and non-hierarchical levels (Grund, Luedtke &amp; Robitzsch,
+    2018, &lt;<a href="https://doi.org/10.1177%2F1094428117703686">doi:10.1177/1094428117703686</a>&gt;; van Buuren, 2018, 
+    Ch.7, &lt;<a href="https://doi.org/10.1201%2F9780429492259">doi:10.1201/9780429492259</a>&gt;), imputation using 
+    partial least squares (PLS) for high dimensional 
+    predictors (Robitzsch, Pham &amp; Yanagida, 2016), 
+    nested multiple imputation (Rubin, 2003, 
+    &lt;<a href="https://doi.org/10.1111%2F1467-9574.00217">doi:10.1111/1467-9574.00217</a>&gt;), substantive model
+    compatible imputation (Bartlett et al., 2015,
+    &lt;<a href="https://doi.org/10.1177%2F0962280214521348">doi:10.1177/0962280214521348</a>&gt;), and features
+    for the generation of synthetic datasets
+    (Reiter, 2005, &lt;<a href="https://doi.org/10.1111%2Fj.1467-985X.2004.00343.x">doi:10.1111/j.1467-985X.2004.00343.x</a>&gt;;
+    Nowok, Raab, &amp; Dibben, 2016, &lt;<a href="https://doi.org/10.18637%2Fjss.v074.i11">doi:10.18637/jss.v074.i11</a>&gt;).</p>
+<table summary="Package miceadds summary">
+<tr>
+<td>Version:</td>
+<td>3.10-28</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0), <a href="../mice/index.html">mice</a> (&ge; 3.0.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>graphics, methods, <a href="../mitools/index.html">mitools</a>, <a href="../Rcpp/index.html">Rcpp</a>, stats, utils</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../BIFIEsurvey/index.html">BIFIEsurvey</a>, <a href="../blme/index.html">blme</a>, <a href="../car/index.html">car</a>, <a href="../CDM/index.html">CDM</a>, <a href="../coda/index.html">coda</a>, <a href="../foreign/index.html">foreign</a>, <a href="../grouped/index.html">grouped</a>, <a href="../imputeR/index.html">imputeR</a>, <a href="../inline/index.html">inline</a>, <a href="../lme4/index.html">lme4</a>, <a href="../MASS/index.html">MASS</a>, <a href="../MBESS/index.html">MBESS</a>, <a href="../MCMCglmm/index.html">MCMCglmm</a>, <a href="../mdmb/index.html">mdmb</a>, <a href="../numDeriv/index.html">numDeriv</a>, <a href="../readxl/index.html">readxl</a>, <a href="../sandwich/index.html">sandwich</a>, <a href="../simputation/index.html">simputation</a>, <a href="../sirt/index.html">sirt</a>, <a href="../sjlabelled/index.html">sjlabelled</a>, <a href="../synthpop/index.html">synthpop</a>, <a href="../TAM/index.html">TAM</a></td>
+</tr>
+<tr>
+<td>Enhances:</td>
+<td><a href="../Amelia/index.html">Amelia</a>, <a href="../jomo/index.html">jomo</a>, <a href="../micemd/index.html">micemd</a>, <a href="../mitml/index.html">mitml</a>, <a href="../pan/index.html">pan</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-07-30</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>
+    Alexander Robitzsch [aut,cre] (&lt;https://orcid.org/0000-0002-8226-3132&gt;),
+    Simon Grund [aut] (&lt;https://orcid.org/0000-0002-1290-8986&gt;),
+    Thorsten Henke [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Alexander Robitzsch  &#x3c;&#x72;&#x6f;&#x62;&#x69;&#x74;&#x7a;&#x73;&#x63;&#x68;&#x20;&#x61;&#x74;&#x20;&#x69;&#x70;&#x6e;&#x2e;&#x75;&#x6e;&#x69;&#x2d;&#x6b;&#x69;&#x65;&#x6c;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/alexanderrobitzsch/miceadds/issues?state=open">https://github.com/alexanderrobitzsch/miceadds/issues?state=open</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/alexanderrobitzsch/miceadds">https://github.com/alexanderrobitzsch/miceadds</a>,
+<a href="https://sites.google.com/site/alexanderrobitzsch2/software">https://sites.google.com/site/alexanderrobitzsch2/software</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">miceadds citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/MissingData.html">MissingData</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_miceadds.html">miceadds results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package miceadds downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="miceadds.pdf"> miceadds.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/miceadds_3.10-28.tar.gz"> miceadds_3.10-28.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/miceadds_3.10-28.zip">miceadds_3.10-28.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/miceadds_3.10-28.zip">miceadds_3.10-28.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/miceadds_3.10-28.zip">miceadds_3.10-28.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/miceadds_3.10-28.tgz">miceadds_3.10-28.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/miceadds_3.10-28.tgz">miceadds_3.10-28.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/miceadds"> miceadds archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package miceadds reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../BIFIEsurvey/index.html">BIFIEsurvey</a>, <a href="../Conigrave/index.html">Conigrave</a>, <a href="../mdmb/index.html">mdmb</a>, <a href="../psfmi/index.html">psfmi</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;linking&nbsp;to:</td>
+<td><a href="../mdmb/index.html">mdmb</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../CDM/index.html">CDM</a>, <a href="../hot.deck/index.html">hot.deck</a>, <a href="../LSAmitR/index.html">LSAmitR</a>, <a href="../mice/index.html">mice</a>, <a href="../mitml/index.html">mitml</a>, <a href="../sirt/index.html">sirt</a>, <a href="../TAM/index.html">TAM</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;enhances:</td>
+<td><a href="../texreg/index.html">texreg</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=miceadds"><samp>https://CRAN.R-project.org/package=miceadds</samp></a>
+to link to this page.</p>
+</body>
+</html>

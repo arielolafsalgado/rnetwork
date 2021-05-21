@@ -1,0 +1,46 @@
+Package: mousetrap
+Type: Package
+Version: 3.1.2
+Date: 2019-02-02
+Title: Process and Analyze Mouse-Tracking Data
+Description: Mouse-tracking, the analysis of mouse movements in computerized
+    experiments, is a method that is becoming increasingly popular in the
+    cognitive sciences. The mousetrap package offers functions for importing,
+    preprocessing, analyzing, aggregating, and visualizing mouse-tracking data.
+Maintainer: Pascal J. Kieslich <kieslich@psychologie.uni-mannheim.de>
+Authors@R: c(
+    person(c("Pascal","J."), "Kieslich", role= c("aut", "cre"),
+            email= "kieslich@psychologie.uni-mannheim.de",
+            comment = c(ORCID = "0000-0002-0853-9364")),
+    person(c("Dirk","U."), "Wulff", role = "aut",
+    		email = "dirk.wulff@gmail.com",
+    		comment = c(ORCID = "0000-0002-4008-8022")),
+    person("Felix", "Henninger", role = "aut",
+        email= "mailbox@felixhenninger.com",
+        comment = c(ORCID = "0000-0002-7730-9511")),
+    person(c("Jonas","M. B."), "Haslbeck", role = "aut",
+    		email = "jonas.haslbeck@googlemail.com"),
+    person("Sarah", "Brockhaus", role = "ctb")
+    )
+URL: https://github.com/pascalkieslich/mousetrap
+BugReports: https://github.com/pascalkieslich/mousetrap/issues
+License: GPL-3
+Depends: R (>= 3.1.0),
+Imports: utils, stats, pracma, dplyr (>= 0.5.0), tidyr, magrittr,
+        graphics, grDevices, ggplot2, scales, psych (>= 1.2.4), Rcpp
+        (>= 0.11.4), diptest, RColorBrewer, cstab, fastcluster,
+        parallel, fields
+Suggests: readbulk, testthat
+LinkingTo: Rcpp
+Encoding: UTF-8
+LazyData: TRUE
+RoxygenNote: 6.1.1
+NeedsCompilation: yes
+Packaged: 2019-02-02 00:59:25 UTC; Pascal
+Author: Pascal J. Kieslich [aut, cre] (<https://orcid.org/0000-0002-0853-9364>),
+  Dirk U. Wulff [aut] (<https://orcid.org/0000-0002-4008-8022>),
+  Felix Henninger [aut] (<https://orcid.org/0000-0002-7730-9511>),
+  Jonas M. B. Haslbeck [aut],
+  Sarah Brockhaus [ctb]
+Repository: CRAN
+Date/Publication: 2019-02-02 05:40:09 UTC

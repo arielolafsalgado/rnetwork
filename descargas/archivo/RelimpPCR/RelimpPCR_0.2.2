@@ -1,0 +1,21 @@
+Package: RelimpPCR
+Type: Package
+Title: Relative Importance PCA Regression
+Version: 0.2.2
+Date: 2017-09-19
+Author: Michael Hernandez <hernandez@uchicago.edu>, Yuri Balasanov
+Maintainer: Michael Hernandez <hernandez@uchicago.edu>
+Description: Performs Principal Components Analysis (also known as PCA) dimensionality reduction in the context of a linear regression. In most cases, PCA dimensionality reduction is performed independent of the response variable for a regression. This captures the majority of the variance of the model's predictors, but may not actually be the optimal dimensionality reduction solution for a regression against the response variable. An alternative method, optimized for a regression against the response variable, is to use both PCA and a relative importance measure. This package applies PCA to a given data frame of predictors, and then calculates the relative importance of each PCA factor against the response variable. It outputs ordered factors that are optimized for model fit. By performing dimensionality reduction with this method, an individual can achieve a the same r-squared value as performing just PCA, but with fewer PCA factors. References: Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani (2013) <http://www-bcf.usc.edu/~gareth/ISL/>.
+Depends: R (>= 3.3.2)
+Suggests: parallel, testthat
+License: MIT + file LICENSE
+URL: https://github.com/mhernan88/RelimpPCR
+BugReports: https://github.com/mhernan88/RelimpPCR/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Imports: relaimpo, Rmisc, caret, ggplot2, reshape2
+NeedsCompilation: no
+Packaged: 2017-10-04 16:28:47 UTC; michael
+Repository: CRAN
+Date/Publication: 2017-10-04 17:22:09 UTC

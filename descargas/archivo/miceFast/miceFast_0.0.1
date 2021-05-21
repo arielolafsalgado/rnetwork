@@ -1,0 +1,24 @@
+Package: miceFast
+Title: Fast Imputations Using 'Rcpp' and 'Armadillo'
+Version: 0.0.1
+Authors@R: person("Maciej", "Nasinski", email = "nasinski.maciej@gmail.com", role = c("aut", "cre"))
+Description: 
+  Fast imputations under the object-oriented programming paradigm.
+	There was used quantitative models with a closed-form solution. Thus package is based on linear algebra operations.
+	The biggest improvement in time performance could be achieve for a calculation where a grouping variable have to be used.
+Depends: R (>= 3.4.0)
+License: GPL (>= 2)
+Encoding: UTF-8
+Imports: methods, Rcpp (>= 0.12.12)
+Suggests: knitr, rmarkdown, pacman, testthat, mice, dplyr, broom
+VignetteBuilder: knitr
+LinkingTo: Rcpp, RcppArmadillo
+RcppModules: miceFast,CorrData
+SystemRequirements: C++11
+NeedsCompilation: yes
+RoxygenNote: 6.0.1
+Packaged: 2018-03-18 09:53:03 UTC; user
+Author: Maciej Nasinski [aut, cre]
+Maintainer: Maciej Nasinski <nasinski.maciej@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-03-19 11:34:45 UTC

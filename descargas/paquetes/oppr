@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package oppr</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Optimal Project Prioritization [R package oppr version 1.0.2]" />
+<meta name="citation_author1" content="Jeffrey O Hanson" />
+<meta name="citation_author2" content="Richard Schuster" />
+<meta name="citation_author3" content="Matthew Strimas-Mackey" />
+<meta name="citation_author4" content="Joseph R Bennett" />
+<meta name="citation_publication_date" content="2020-05-20" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=oppr" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=oppr" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="oppr: Optimal Project Prioritization" />
+<meta name="og:description" content="A decision support tool for prioritizing conservation projects. Prioritizations can be developed by maximizing expected feature richness, expected phylogenetic diversity, the number of features that meet persistence targets, or identifying a set of projects that meet persistence targets for minimal cost. Constraints (e.g. lock in specific actions) and feature weights can also be specified to further customize prioritizations. After defining a project prioritization problem, solutions can be obtained using exact algorithms, heuristic algorithms, or random processes. In particular, it is recommended to install the 'Gurobi' optimizer (available from &amp;lt;&lt;a href=&quot;https://www.gurobi.com&quot;&gt;https://www.gurobi.com&lt;/a&gt;&amp;gt;) because it can identify optimal solutions very quickly. Finally, methods are provided for comparing different prioritizations and evaluating their benefits. For more information, see Hanson et al. (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2F2041-210X.13264&quot;&gt;doi:10.1111/2041-210X.13264&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=oppr" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>oppr: Optimal Project Prioritization</h2>
+<p>A decision support tool for prioritizing conservation projects.
+    Prioritizations can be developed by maximizing expected feature richness,
+    expected phylogenetic diversity, the number of features that meet
+    persistence targets, or identifying a set of projects that meet persistence
+    targets for minimal cost. Constraints (e.g. lock in specific actions) and
+    feature weights can also be specified to further customize prioritizations.
+    After defining a project prioritization problem, solutions can be obtained
+    using exact algorithms, heuristic algorithms, or random processes. In
+    particular, it is recommended to install the 'Gurobi' optimizer (available
+    from &lt;<a href="https://www.gurobi.com">https://www.gurobi.com</a>&gt;) because it can identify optimal solutions
+    very quickly. Finally, methods are provided for comparing different
+    prioritizations and evaluating their benefits. For more information, see
+    Hanson et al. (2019) &lt;<a href="https://doi.org/10.1111%2F2041-210X.13264">doi:10.1111/2041-210X.13264</a>&gt;.</p>
+<table summary="Package oppr summary">
+<tr>
+<td>Version:</td>
+<td>1.0.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.4.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>utils, methods, stats, <a href="../Matrix/index.html">Matrix</a>, <a href="../magrittr/index.html">magrittr</a> (&ge; 1.5), <a href="../uuid/index.html">uuid</a> (&ge;
+0.1.2), <a href="../proto/index.html">proto</a> (&ge; 1.0.0), <a href="../cli/index.html">cli</a> (&ge; 1.0.1), <a href="../assertthat/index.html">assertthat</a> (&ge;
+0.2.0), <a href="../tibble/index.html">tibble</a> (&ge; 2.0.0), <a href="../ape/index.html">ape</a> (&ge; 5.2), <a href="../tidytree/index.html">tidytree</a> (&ge; 0.1.9), <a href="../ggplot2/index.html">ggplot2</a> (&ge; 3.0.0), <a href="../viridisLite/index.html">viridisLite</a> (&ge; 0.3.0), <a href="../lpSolveAPI/index.html">lpSolveAPI</a> (&ge;
+5.5.2.0.17)</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.19), <a href="../RcppArmadillo/index.html">RcppArmadillo</a> (&ge; 0.9.100.5.0), <a href="../RcppProgress/index.html">RcppProgress</a> (&ge; 0.4.1)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a> (&ge; 2.0.0), <a href="../knitr/index.html">knitr</a> (&ge; 1.20), <a href="../roxygen2/index.html">roxygen2</a> (&ge; 6.1.0), <a href="../rmarkdown/index.html">rmarkdown</a> (&ge; 1.10), gurobi (&ge; 8.0.0), <a href="http://www.bioconductor.org/packages/release/bioc/html/ggtree.html"><span class="BioC">ggtree</span></a> (&ge; 1.8.2), <a href="../Rsymphony/index.html">Rsymphony</a> (&ge; 0.1.28), <a href="http://www.bioconductor.org/packages/release/bioc/html/lpsymphony.html"><span class="BioC">lpsymphony</span></a> (&ge; 1.10.0), <a href="../shiny/index.html">shiny</a> (&ge;
+1.2.0), <a href="../rhandsontable/index.html">rhandsontable</a> (&ge; 0.3.7), <a href="../tidyr/index.html">tidyr</a> (&ge; 0.8.2)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-05-20</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Jeffrey O Hanson <a href="https://orcid.org/0000-0002-4716-6134"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Richard Schuster <a href="https://orcid.org/0000-0003-3191-7869"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Matthew Strimas-Mackey
+    <a href="https://orcid.org/0000-0001-8929-7776"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Joseph R Bennett <a href="https://orcid.org/0000-0002-3901-9513"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Jeffrey O Hanson  &#x3c;&#x6a;&#x65;&#x66;&#x66;&#x72;&#x65;&#x79;&#x2e;&#x68;&#x61;&#x6e;&#x73;&#x6f;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x75;&#x71;&#x63;&#x6f;&#x6e;&#x6e;&#x65;&#x63;&#x74;&#x2e;&#x65;&#x64;&#x75;&#x2e;&#x61;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/prioritizr/oppr/issues">https://github.com/prioritizr/oppr/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://prioritizr.github.io/oppr">https://prioritizr.github.io/oppr</a>,
+<a href="https://github.com/prioritizr/oppr">https://github.com/prioritizr/oppr</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>C++11</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">oppr citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_oppr.html">oppr results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package oppr downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="oppr.pdf"> oppr.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/oppr.html">oppr</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/oppr_1.0.2.tar.gz"> oppr_1.0.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/oppr_1.0.2.zip">oppr_1.0.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/oppr_1.0.2.zip">oppr_1.0.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/oppr_1.0.2.zip">oppr_1.0.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/oppr_1.0.2.tgz">oppr_1.0.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/oppr_1.0.2.tgz">oppr_1.0.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/oppr"> oppr archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=oppr"><samp>https://CRAN.R-project.org/package=oppr</samp></a>
+to link to this page.</p>
+</body>
+</html>

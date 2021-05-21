@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package gama</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Genetic Approach to Maximize Clustering Criterion [R package gama version 1.0.3]" />
+<meta name="citation_author1" content="Jairson Rodrigues" />
+<meta name="citation_author2" content="Germano Vasconcelos" />
+<meta name="citation_author3" content="Renato Tin'{o}s" />
+<meta name="citation_publication_date" content="2019-02-26" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=gama" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=gama" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="gama: Genetic Approach to Maximize Clustering Criterion" />
+<meta name="og:description" content="An evolutionary approach to performing hard partitional clustering. The algorithm uses genetic operators guided by information about the quality of individual partitions. The method looks for the best barycenters/centroids configuration (encoded as real-value) to maximize or minimize one of the given clustering validation criteria: Silhouette, Dunn Index, C-Index or Calinski-Harabasz Index. As many other clustering algorithms, 'gama' asks for k: a fixed a priori established number of partitions. If the user does not know the best value for k, the algorithm estimates it by using one of two user-specified options: minimum or broad. The first method uses an approximation of the second derivative of a set of points to automatically detect the maximum curvature (the 'elbow') in the within-cluster sum of squares error (WCSSE) graph. The second method estimates the best k value through majority voting of 24 indices. One of the major advantages of 'gama' is to introduce a bias to detect partitions which attend a particular criterion. References: Scrucca, L. (2013) &amp;lt;&lt;a href=&quot;https://doi.org/10.18637%2Fjss.v053.i04&quot;&gt;doi:10.18637/jss.v053.i04&lt;/a&gt;&amp;gt;; CHARRAD, Malika et al. (2014) &amp;lt;&lt;a href=&quot;https://doi.org/10.18637%2Fjss.v061.i06&quot;&gt;doi:10.18637/jss.v061.i06&lt;/a&gt;&amp;gt;; Tsagris M, Papadakis M. (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.7287%2Fpeerj.preprints.26605v1&quot;&gt;doi:10.7287/peerj.preprints.26605v1&lt;/a&gt;&amp;gt;; Kaufman, L., &amp;amp; Rousseeuw, P. (1990, ISBN:0-47 1-73578-7)." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=gama" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>gama: Genetic Approach to Maximize Clustering Criterion</h2>
+<p>An evolutionary approach to performing hard partitional clustering. The algorithm uses genetic operators guided by information about the quality of individual partitions. The method looks for the best barycenters/centroids configuration (encoded as real-value) to maximize or minimize one of the given clustering validation criteria: Silhouette, Dunn Index, C-Index or Calinski-Harabasz Index. As many other clustering algorithms, 'gama' asks for k: a fixed a priori established number of partitions. If the user does not know the best value for k, the algorithm estimates it by using one of two user-specified options: minimum or broad. The first method uses an approximation of the second derivative of a set of points to automatically detect the maximum curvature (the 'elbow') in the within-cluster sum of squares error (WCSSE) graph. The second method estimates the best k value through majority voting of 24 indices. One of the major advantages of 'gama' is to introduce a bias to detect partitions which attend a particular criterion. References: Scrucca, L. (2013) &lt;<a href="https://doi.org/10.18637%2Fjss.v053.i04">doi:10.18637/jss.v053.i04</a>&gt;; CHARRAD, Malika et al. (2014) &lt;<a href="https://doi.org/10.18637%2Fjss.v061.i06">doi:10.18637/jss.v061.i06</a>&gt;; Tsagris M, Papadakis M. (2018) &lt;<a href="https://doi.org/10.7287%2Fpeerj.preprints.26605v1">doi:10.7287/peerj.preprints.26605v1</a>&gt;; Kaufman, L., &amp; Rousseeuw, P. (1990, ISBN:0-47 1-73578-7).</p>
+<table summary="Package gama summary">
+<tr>
+<td>Version:</td>
+<td>1.0.3</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../ArgumentCheck/index.html">ArgumentCheck</a>, <a href="../cluster/index.html">cluster</a>, <a href="../clusterCrit/index.html">clusterCrit</a>, <a href="../NbClust/index.html">NbClust</a>, <a href="../GA/index.html">GA</a>, <a href="../ggplot2/index.html">ggplot2</a>, methods, <a href="../Rfast/index.html">Rfast</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-02-26</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Jairson Rodrigues <a href="https://orcid.org/0000-0003-1176-3903"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Germano Vasconcelos
+    <a href="https://orcid.org/0000-0002-1899-1506"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut, ths],
+  Renato Tin'{o}s <a href="https://orcid.org/0000-0003-4027-8851"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, rev]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Jairson Rodrigues  &#x3c;&#x6a;&#x61;&#x69;&#x72;&#x73;&#x6f;&#x6e;&#x2e;&#x72;&#x6f;&#x64;&#x72;&#x69;&#x67;&#x75;&#x65;&#x73;&#x20;&#x61;&#x74;&#x20;&#x75;&#x6e;&#x69;&#x76;&#x61;&#x73;&#x66;&#x2e;&#x65;&#x64;&#x75;&#x2e;&#x62;&#x72;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/jairsonrodrigues/gama">https://github.com/jairsonrodrigues/gama</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_gama.html">gama results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package gama downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="gama.pdf"> gama.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/gama.html">Using gama - a Genetic Approach to Maximize clustering criterion</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/gama_1.0.3.tar.gz"> gama_1.0.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/gama_1.0.3.zip">gama_1.0.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/gama_1.0.3.zip">gama_1.0.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/gama_1.0.3.zip">gama_1.0.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/gama_1.0.3.tgz">gama_1.0.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/gama_1.0.3.tgz">gama_1.0.3.tgz</a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package gama reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../Clustering/index.html">Clustering</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=gama"><samp>https://CRAN.R-project.org/package=gama</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,27 @@
+Package: retistruct
+License: CC BY-NC-SA 4.0
+Title: Retinal Reconstruction Program
+Authors@R: c(person("David C.", "Sterratt", role=c("aut", "cre", "cph"),
+    email="david.c.sterratt@ed.ac.uk"), person("Daniel", "Lyngholm",
+    role=c("aut", "cph")))
+Description: Reconstructs retinae by morphing a flat surface with
+    cuts (a dissected flat-mount retina) onto a curvilinear surface (the a
+    standard retinal shape). It can estimate the position of a point on the
+    intact adult retina to within 8 degrees of arc (3.6% of nasotemporal axis).
+    The coordinates in reconstructed retinae can be transformed to visuotopic
+    coordinates.
+Version: 0.5.10
+URL: http://retistruct.r-forge.r-project.org/
+BugReports: https://github.com/davidcsterratt/retistruct/issues
+Date: 2015-02-16
+Depends: R (>= 3.1.0)
+Imports: foreign, RImageJROI, png, ttutils, sp, geometry (>= 0.2-1),
+        RTriangle (>= 1.6-0.4), rgl, R.matlab
+Suggests: testthat, gWidgetsRGtk2, gWidgets, cairoDevice
+Packaged: 2015-02-16 11:32:31 UTC; sterratt
+Author: David C. Sterratt [aut, cre, cph],
+  Daniel Lyngholm [aut, cph]
+Maintainer: David C. Sterratt <david.c.sterratt@ed.ac.uk>
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2015-02-16 13:49:18

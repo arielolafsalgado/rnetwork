@@ -1,0 +1,49 @@
+Package: dtwclust
+Type: Package
+Title: Time Series Clustering Along with Optimizations for the Dynamic
+        Time Warping Distance
+Version: 5.2.0
+Depends: R (>= 3.2.0), methods, proxy (>= 0.4-16), dtw
+Imports: parallel, stats, utils, bigmemory, clue, cluster, dplyr,
+        flexclust, foreach, ggplot2, ggrepel, Matrix, nloptr, RSpectra,
+        Rcpp, RcppParallel, reshape2, rngtools
+Suggests: doParallel, knitr, parallelDist, rmarkdown, testthat,
+        TSclust, TSdist
+LinkingTo: Rcpp, RcppArmadillo, RcppParallel
+Author: Alexis Sarda-Espinosa
+Maintainer: Alexis Sarda <alexis.sarda@gmail.com>
+Description: Time series clustering along with optimized techniques related
+    to the Dynamic Time Warping distance and its corresponding lower bounds.
+    Implementations of partitional, hierarchical, fuzzy, k-Shape and TADPole
+    clustering are available. Functionality can be easily extended with
+    custom distance measures and centroid definitions. Implementations of
+    DTW barycenter averaging and a distance based on global alignment kernels
+    are also provided. All included distance functions have custom loops
+    optimized for the calculation of cross-distance matrices, including
+    parallelization support. Several cluster validity indices are included.
+URL: https://github.com/asardaes/dtwclust
+BugReports: https://github.com/asardaes/dtwclust/issues
+License: GPL-3
+LazyData: TRUE
+NeedsCompilation: yes
+SystemRequirements: C++11, GNU make
+RoxygenNote: 6.0.1
+Collate: 'CENTROIDS-dba.R' 'CENTROIDS-sdtw-cent.R'
+        'CENTROIDS-shape-extraction.R' 'CLUSTERING-all-cent2.R'
+        'CLUSTERING-compare-clusterings.R' 'CLUSTERING-ddist2.R'
+        'CLUSTERING-partitional-fuzzy.R' 'CLUSTERING-tadole.R'
+        'CLUSTERING-tsclust-controls.R' 'CLUSTERING-tsclust.R'
+        'DISTANCES-dtw-basic.R' 'DISTANCES-dtw-lb.R' 'DISTANCES-dtw2.R'
+        'DISTANCES-gak.R' 'DISTANCES-lb-improved.R'
+        'DISTANCES-lb-keogh.R' 'DISTANCES-sbd.R' 'DISTANCES-sdtw.R'
+        'GENERICS-cvi.R' 'S4-Distmat.R' 'S4-SparseDistmat.R'
+        'S4-tsclustFamily.R' 'S4-TSClusters-classes.R'
+        'S4-TSClusters-methods.R' 'UTILS-as-methods.R'
+        'UTILS-compute-envelope.R' 'UTILS-data.R'
+        'UTILS-expressions-proxy.R' 'UTILS-globals-internal.R'
+        'UTILS-nccc.R' 'UTILS-reinterpolate.R' 'UTILS-tslist.R'
+        'UTILS-utils.R' 'UTILS-zscore.R' 'pkg.R'
+VignetteBuilder: knitr
+Packaged: 2018-01-29 18:31:22 UTC; oso
+Repository: CRAN
+Date/Publication: 2018-01-29 19:25:08 UTC

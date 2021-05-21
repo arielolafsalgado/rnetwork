@@ -1,0 +1,28 @@
+Package: diveMove
+Type: Package
+Title: Dive Analysis and Calibration
+Version: 1.5.1
+Depends: R (>= 3.5.0), methods, stats4
+Suggests: knitr, lattice, pander, rmarkdown, tcltk, tinytest
+Imports: KernSmooth, plotly, quantreg, uniReg, geosphere
+Author: Sebastian P. Luque <spluque@gmail.com>
+Maintainer: Sebastian P. Luque <spluque@gmail.com>
+Description: Utilities to represent, visualize, filter, analyse, and summarize
+	     time-depth recorder (TDR) data.  Miscellaneous functions for
+	     handling location data are also provided.
+LazyLoad: yes
+LazyData: no
+ZipData: no
+BuildResaveData: no
+VignetteBuilder: knitr
+Collate: AllClass.R AllGenerics.R AllMethod.R austFilter.R bouts.R
+        calibrate.R detDive.R detPhase.R distSpeed.R diveStats.R
+        oneDiveStats.R plotTDR.R plotZOC.R readLocs.R readTDR.R
+        runquantile.R speedStats.R stampDive.R zoc.R zzz.R
+NeedsCompilation: yes
+License: GPL-3
+URL: https://github.com/spluque/diveMove
+BugReports: https://github.com/spluque/diveMove/issues
+Packaged: 2020-09-12 18:33:09 UTC; sluque
+Repository: CRAN
+Date/Publication: 2020-09-12 20:00:02 UTC

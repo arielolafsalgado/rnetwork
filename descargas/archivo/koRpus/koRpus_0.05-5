@@ -1,0 +1,77 @@
+Package: koRpus
+Type: Package
+Title: An R Package for Text Analysis
+Depends: R (>= 2.10.0),methods
+Enhances: rkward
+Suggests: testthat,tm,SnowballC,shiny
+Description: A set of tools to analyze texts. Includes, amongst others,
+    functions for automatic language detection, hyphenation, several indices of
+    lexical diversity (e.g., type token ratio, HD-D/vocd-D, MTLD) and
+    readability (e.g., Flesch, SMOG, LIX, Dale-Chall). Basic import functions
+    for language corpora are also provided, to enable frequency analyses
+    (supports Celex and Leipzig Corpora Collection file formats) and measures
+    like tf-idf.  #' Note: For full functionality a local installation of
+    TreeTagger is recommended. koRpus also includes a plugin for the R GUI and
+    IDE RKWard, providing dialogs for its basic features. To use them, install
+    RKWard from http://rkward.sf.net (plugins are detected automatically). Due
+    to some restrictions on CRAN, the full package sources are only available
+    from the project homepage.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyLoad: yes
+URL: http://reaktanz.de/?c=hacking&s=koRpus
+Authors@R: c(person(given="m.eik", family="michalke",
+    email="meik.michalke@hhu.de", role=c("aut", "cre")), person(given="Earl",
+    family="Brown", email="eabrown@csumb.edu", role=c("ctb")),
+    person(given="Alberto", family="Mirisola", role=c("ctb")),
+    person(given="Alexandre", family="Brulet", role=c("ctb")),
+    person(given="Laura", family="Hauser", role=c("ctb")))
+Version: 0.05-5
+Date: 2014-03-19
+Collate: '00_class_01_kRp.tagged.R' '00_class_02_kRp.TTR.R'
+        '00_class_03_kRp.txt.freq.R' '00_class_04_kRp.txt.trans.R'
+        '00_class_05_kRp.analysis.R' '00_class_06_kRp.corp.freq.R'
+        '00_class_07_kRp.hyph.pat.R' '00_class_08_kRp.hyphen.R'
+        '00_class_09_kRp.lang.R' '00_class_10_kRp.readability.R'
+        '01_method_cTest.R' 'kRp.filter.wclass.R' 'koRpus-internal.R'
+        '01_method_clozeDelete.R' '01_method_correct.R'
+        '01_method_kRp.taggedText.R' '01_method_plot.kRp.tagged.R'
+        '01_method_query.R' '01_method_show.kRp.lang.R'
+        '01_method_show.kRp.TTR.R' '01_method_show.kRp.corp.freq.R'
+        '01_method_show.kRp.readability.R'
+        '01_method_summary.kRp.lang.R' '01_method_summary.kRp.TTR.R'
+        '01_method_summary.kRp.readability.R'
+        '01_method_summary.kRp.tagged.R'
+        '01_method_summary.kRp.txt.freq.R' 'ARI.R' 'C.ld.R' 'CTTR.R'
+        'DRP.R' 'ELF.R' 'FOG.R' 'FORCAST.R' 'HDD.R' 'K.ld.R' 'LIX.R'
+        'MATTR.R' 'MSTTR.R' 'MTLD.R' 'R.ld.R' 'RIX.R' 'S.ld.R' 'SMOG.R'
+        'TRI.R' 'TTR.R' 'U.ld.R' 'bormuth.R' 'coleman.R'
+        'coleman.liau.R' 'dale.chall.R' 'danielson.bryan.R'
+        'dickes.steiwer.R' 'farr.jenkins.paterson.R' 'flesch.R'
+        'flesch.kincaid.R' 'freq.analysis.R' 'fucks.R' 'get.kRp.env.R'
+        'guess.lang.R' 'harris.jacobson.R' 'hyph.XX-data.R' 'hyphen.R'
+        'jumbleWords.R' 'kRp.POS.tags.R' 'kRp.cluster.R'
+        'kRp.text.analysis.R' 'kRp.text.paste.R' 'kRp.text.transform.R'
+        'koRpus-internal.import.R' 'koRpus-internal.lexdiv.formulae.R'
+        'koRpus-internal.rdb.formulae.R'
+        'koRpus-internal.rdb.params.grades.R'
+        'koRpus-internal.roxy.all.R' 'koRpus-package.R'
+        'lang.support-de.R' 'lang.support-en.R' 'lang.support-es.R'
+        'lang.support-fr.R' 'lang.support-it.R' 'lang.support-ru.R'
+        'lex.div.R' 'lex.div.num.R' 'linsear.write.R' 'maas.R'
+        'manage.hyph.pat.R' 'nWS.R' 'read.BAWL.R' 'read.corp.LCC.R'
+        'read.corp.celex.R' 'read.corp.custom.R' 'read.hyph.pat.R'
+        'read.tagged.R' 'readability.R' 'readability.num.R'
+        'segment.optimizer.R' 'set.kRp.env.R' 'spache.R' 'strain.R'
+        'textFeatures.R' 'tokenize.R' 'traenkle.bailer.R' 'treetag.R'
+        'wheeler.smith.R'
+Packaged: 2014-03-19 21:28:48 UTC; m
+Author: m.eik michalke [aut, cre],
+  Earl Brown [ctb],
+  Alberto Mirisola [ctb],
+  Alexandre Brulet [ctb],
+  Laura Hauser [ctb]
+Maintainer: m.eik michalke <meik.michalke@hhu.de>
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2014-03-20 03:17:04

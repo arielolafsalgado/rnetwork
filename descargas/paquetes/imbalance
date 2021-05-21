@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package imbalance</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Preprocessing Algorithms for Imbalanced Datasets [R package imbalance version 1.0.2.1]" />
+<meta name="citation_author1" content="Ignacio Cordón" />
+<meta name="citation_author2" content="Salvador García" />
+<meta name="citation_author3" content="Alberto Fernández" />
+<meta name="citation_author4" content="Francisco Herrera" />
+<meta name="citation_publication_date" content="2020-04-07" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=imbalance" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=imbalance" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="imbalance: Preprocessing Algorithms for Imbalanced Datasets" />
+<meta name="og:description" content="Class imbalance usually damages the performance of classifiers. Thus, it is important to treat data before applying a classifier algorithm. This package includes recent resampling algorithms in the literature: (Barua et al. 2014) &amp;lt;&lt;a href=&quot;https://doi.org/10.1109%2Ftkde.2012.232&quot;&gt;doi:10.1109/tkde.2012.232&lt;/a&gt;&amp;gt;; (Das et al. 2015) &amp;lt;&lt;a href=&quot;https://doi.org/10.1109%2Ftkde.2014.2324567&quot;&gt;doi:10.1109/tkde.2014.2324567&lt;/a&gt;&amp;gt;, (Zhang et al. 2014) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.inffus.2013.12.003&quot;&gt;doi:10.1016/j.inffus.2013.12.003&lt;/a&gt;&amp;gt;; (Gao et al. 2014) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.neucom.2014.02.006&quot;&gt;doi:10.1016/j.neucom.2014.02.006&lt;/a&gt;&amp;gt;; (Almogahed et al. 2014) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs00500-014-1484-5&quot;&gt;doi:10.1007/s00500-014-1484-5&lt;/a&gt;&amp;gt;. It also includes an useful interface to perform oversampling." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=imbalance" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>imbalance: Preprocessing Algorithms for Imbalanced Datasets</h2>
+<p>Class imbalance usually damages the performance of classifiers. Thus, it is
+             important to treat data before applying a classifier algorithm. This package
+             includes recent resampling algorithms in the literature: (Barua et al. 2014)
+             &lt;<a href="https://doi.org/10.1109%2Ftkde.2012.232">doi:10.1109/tkde.2012.232</a>&gt;; (Das et al. 2015) &lt;<a href="https://doi.org/10.1109%2Ftkde.2014.2324567">doi:10.1109/tkde.2014.2324567</a>&gt;,
+             (Zhang et al. 2014) &lt;<a href="https://doi.org/10.1016%2Fj.inffus.2013.12.003">doi:10.1016/j.inffus.2013.12.003</a>&gt;; (Gao et al. 2014)
+             &lt;<a href="https://doi.org/10.1016%2Fj.neucom.2014.02.006">doi:10.1016/j.neucom.2014.02.006</a>&gt;; (Almogahed et al. 2014)
+             &lt;<a href="https://doi.org/10.1007%2Fs00500-014-1484-5">doi:10.1007/s00500-014-1484-5</a>&gt;. It also includes an useful interface to
+             perform oversampling.</p>
+<table summary="Package imbalance summary">
+<tr>
+<td>Version:</td>
+<td>1.0.2.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../bnlearn/index.html">bnlearn</a>, <a href="../KernelKnn/index.html">KernelKnn</a>, <a href="../ggplot2/index.html">ggplot2</a>, utils, stats, <a href="../mvtnorm/index.html">mvtnorm</a>, <a href="../Rcpp/index.html">Rcpp</a>, <a href="../smotefamily/index.html">smotefamily</a>, <a href="../FNN/index.html">FNN</a>, <a href="../C50/index.html">C50</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-04-07</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Ignacio Cordón [aut, cre],
+  Salvador García [aut],
+  Alberto Fernández [aut],
+  Francisco Herrera [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Ignacio Cordón  &#x3c;&#x6e;&#x61;&#x63;&#x68;&#x6f;&#x2e;&#x63;&#x6f;&#x72;&#x64;&#x6f;&#x6e;&#x2e;&#x63;&#x61;&#x73;&#x74;&#x69;&#x6c;&#x6c;&#x6f;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="http://github.com/ncordon/imbalance/issues">http://github.com/ncordon/imbalance/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> | file <a href="LICENSE">LICENSE</a> [expanded from: GPL (&ge; 2) | file LICENSE]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://github.com/ncordon/imbalance">http://github.com/ncordon/imbalance</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">imbalance citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_imbalance.html">imbalance results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package imbalance downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="imbalance.pdf"> imbalance.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/imbalance.pdf">Working with imbalanced dataset</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/imbalance_1.0.2.1.tar.gz"> imbalance_1.0.2.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/imbalance_1.0.2.1.zip">imbalance_1.0.2.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/imbalance_1.0.2.1.zip">imbalance_1.0.2.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/imbalance_1.0.2.1.zip">imbalance_1.0.2.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/imbalance_1.0.2.1.tgz">imbalance_1.0.2.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/imbalance_1.0.2.1.tgz">imbalance_1.0.2.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/imbalance"> imbalance archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package imbalance reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../smartdata/index.html">smartdata</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../randomForestSRC/index.html">randomForestSRC</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=imbalance"><samp>https://CRAN.R-project.org/package=imbalance</samp></a>
+to link to this page.</p>
+</body>
+</html>

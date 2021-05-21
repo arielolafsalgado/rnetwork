@@ -1,0 +1,20 @@
+Package: SeqKat
+Type: Package
+Title: Detection of Kataegis
+Version: 0.0.4
+Date: 2017-06-16
+Author: Fouad Yousif, Xihui Lin, Fan Fan, Christopher Lalansingh
+Maintainer: Paul C. Boutros <Paul.Boutros@oicr.on.ca>
+Description: Kataegis is a localized hypermutation occurring when a region is enriched in somatic SNVs. Kataegis can result from multiple cytosine deaminations catalyzed by the AID/APOBEC family of proteins. This package contains functions to detect kataegis from SNVs in BED format. SeqKat reports two scores per kataegic event, a hypermutation score and an APOBEC mediated kataegic score. Upon publication of the paper describing the methods used in this package, a reference will be added here.
+Depends: R (>= 2.15.1), foreach, doParallel
+Imports: Rcpp(>= 0.11.0)
+LinkingTo: Rcpp
+Suggests: testthat, doMC, rmarkdown, knitr
+License: GPL-2
+LazyLoad: yes
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2017-06-25 06:22:12 UTC; clalansingh
+Repository: CRAN
+Date/Publication: 2017-06-25 07:10:11 UTC

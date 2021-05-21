@@ -1,0 +1,20 @@
+Package: geoGAM
+Type: Package
+Title: Select Sparse Geoadditive Models for Spatial Prediction
+Version: 0.1-1
+Date: 2016-10-27
+Authors@R: c( person( "Madlene", "Nussbaum", role = c( "cre", "aut" ),
+          email =  "madlene.nussbaum@env.ethz.ch" ),
+	      person( "Andreas", "Papritz", role = c( "ths" ),
+          email =  "andreas.papritz@env.ethz.ch" ) )
+Depends: R(>= 2.14.0)
+Imports: mboost, mgcv, grpreg, MASS
+Description: A model building procedure to select a sparse geoadditive model from a large number of covariates. Continuous, binary and ordered categorical responses are supported. The model building is based on component wise gradient boosting with linear effects and smoothing splines. The resulting covariate set after gradient boosting is further reduced through cross validated backward selection and aggregation of factor levels. The package provides a model based bootstrap method to simulate prediction intervals for point predictions. A test data set of a soil mapping case study is provided. 
+License: GPL (>= 2)
+Author: Madlene Nussbaum [cre, aut], Andreas Papritz [ths]
+Maintainer: Madlene Nussbaum <madlene.nussbaum@env.ethz.ch>
+LazyData: TRUE
+NeedsCompilation: no
+Repository: CRAN
+Packaged: 2016-10-28 15:47:59 UTC; nussbam
+Date/Publication: 2016-10-29 10:48:22

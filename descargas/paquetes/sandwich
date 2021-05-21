@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package sandwich</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Robust Covariance Matrix Estimators [R package sandwich version 3.0-0]" />
+<meta name="citation_author1" content="Achim Zeileis" />
+<meta name="citation_author2" content="Thomas Lumley" />
+<meta name="citation_publication_date" content="2020-10-02" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=sandwich" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=sandwich" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="sandwich: Robust Covariance Matrix Estimators" />
+<meta name="og:description" content="Object-oriented software for model-robust covariance matrix estimators. Starting out from the basic robust Eicker-Huber-White sandwich covariance methods include: heteroscedasticity-consistent (HC) covariances for cross-section data; heteroscedasticity- and autocorrelation-consistent (HAC) covariances for time series data (such as Andrews' kernel HAC, Newey-West, and WEAVE estimators); clustered covariances (one-way and multi-way); panel and panel-corrected covariances; outer-product-of-gradients covariances; and (clustered) bootstrap covariances. All methods are applicable to (generalized) linear model objects fitted by lm() and glm() but can also be adapted to other classes through S3 methods. Details can be found in Zeileis et al. (2020) &amp;lt;&lt;a href=&quot;https://doi.org/10.18637%2Fjss.v095.i01&quot;&gt;doi:10.18637/jss.v095.i01&lt;/a&gt;&amp;gt;, Zeileis (2004) &amp;lt;&lt;a href=&quot;https://doi.org/10.18637%2Fjss.v011.i10&quot;&gt;doi:10.18637/jss.v011.i10&lt;/a&gt;&amp;gt; and Zeileis (2006) &amp;lt;&lt;a href=&quot;https://doi.org/10.18637%2Fjss.v016.i09&quot;&gt;doi:10.18637/jss.v016.i09&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=sandwich" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>sandwich: Robust Covariance Matrix Estimators</h2>
+<p>Object-oriented software for model-robust covariance matrix estimators. Starting out from the basic 
+             robust Eicker-Huber-White sandwich covariance methods include: heteroscedasticity-consistent (HC)
+	     covariances for cross-section data; heteroscedasticity- and autocorrelation-consistent (HAC)
+	     covariances for time series data (such as Andrews' kernel HAC, Newey-West, and WEAVE estimators);
+	     clustered covariances (one-way and multi-way); panel and panel-corrected covariances;
+	     outer-product-of-gradients covariances; and (clustered) bootstrap covariances. All methods are
+	     applicable to (generalized) linear model objects fitted by lm() and glm() but can also be adapted
+	     to other classes through S3 methods. Details can be found in Zeileis et al. (2020) &lt;<a href="https://doi.org/10.18637%2Fjss.v095.i01">doi:10.18637/jss.v095.i01</a>&gt;,
+	     Zeileis (2004) &lt;<a href="https://doi.org/10.18637%2Fjss.v011.i10">doi:10.18637/jss.v011.i10</a>&gt; and Zeileis (2006) &lt;<a href="https://doi.org/10.18637%2Fjss.v016.i09">doi:10.18637/jss.v016.i09</a>&gt;.</p>
+<table summary="Package sandwich summary">
+<tr>
+<td>Version:</td>
+<td>3.0-0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>stats, utils, <a href="../zoo/index.html">zoo</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../AER/index.html">AER</a>, <a href="../car/index.html">car</a>, <a href="../geepack/index.html">geepack</a>, <a href="../lattice/index.html">lattice</a>, <a href="../lmtest/index.html">lmtest</a>, <a href="../MASS/index.html">MASS</a>, <a href="../multiwayvcov/index.html">multiwayvcov</a>, parallel, <a href="../pcse/index.html">pcse</a>, <a href="../plm/index.html">plm</a>, <a href="../pscl/index.html">pscl</a>, <a href="../scatterplot3d/index.html">scatterplot3d</a>, stats4, <a href="../strucchange/index.html">strucchange</a>, <a href="../survival/index.html">survival</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-02</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Achim Zeileis <a href="https://orcid.org/0000-0003-0918-3766"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Thomas Lumley [aut],
+  Nathaniel Graham [ctb],
+  Susanne Koell [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Achim Zeileis  &#x3c;&#x41;&#x63;&#x68;&#x69;&#x6d;&#x2e;&#x5a;&#x65;&#x69;&#x6c;&#x65;&#x69;&#x73;&#x20;&#x61;&#x74;&#x20;&#x52;&#x2d;&#x70;&#x72;&#x6f;&#x6a;&#x65;&#x63;&#x74;&#x2e;&#x6f;&#x72;&#x67;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="http://sandwich.R-Forge.R-project.org/contact.html">http://sandwich.R-Forge.R-project.org/contact.html</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://sandwich.R-Forge.R-project.org/">http://sandwich.R-Forge.R-project.org/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">sandwich citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Econometrics.html">Econometrics</a>, <a href="../../views/Finance.html">Finance</a>, <a href="../../views/Robust.html">Robust</a>, <a href="../../views/SocialSciences.html">SocialSciences</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_sandwich.html">sandwich results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package sandwich downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="sandwich.pdf"> sandwich.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/sandwich-CL.pdf">Various Versatile Variances: An Object-Oriented Implementation of Clustered Covariances in R</a><br/>
+<a href="vignettes/sandwich-OOP.pdf">Object-Oriented Computation of Sandwich Estimators</a><br/>
+<a href="vignettes/sandwich.pdf">Econometric Computing with HC and HAC Covariance Matrix Estimators</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/sandwich_3.0-0.tar.gz"> sandwich_3.0-0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/sandwich_3.0-0.zip">sandwich_3.0-0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/sandwich_3.0-0.zip">sandwich_3.0-0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/sandwich_3.0-0.zip">sandwich_3.0-0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/sandwich_3.0-0.tgz">sandwich_3.0-0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/sandwich_3.0-0.tgz">sandwich_3.0-0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/sandwich"> sandwich archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package sandwich reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../AER/index.html">AER</a>, <a href="../CADFtest/index.html">CADFtest</a>, <a href="../cjoint/index.html">cjoint</a>, <a href="../COUNT/index.html">COUNT</a>, <a href="../dhglm/index.html">dhglm</a>, <a href="../evian/index.html">evian</a>, <a href="../gmm/index.html">gmm</a>, <a href="../iClick/index.html">iClick</a>, <a href="../inference/index.html">inference</a>, <a href="../ivpack/index.html">ivpack</a>, <a href="../ivregEX/index.html">ivregEX</a>, <a href="../list/index.html">list</a>, <a href="../mediation/index.html">mediation</a>, <a href="../merDeriv/index.html">merDeriv</a>, <a href="../mfx/index.html">mfx</a>, <a href="../midasr/index.html">midasr</a>, <a href="../mobForest/index.html">mobForest</a>, <a href="../momentfit/index.html">momentfit</a>, <a href="../PeerPerformance/index.html">PeerPerformance</a>, <a href="../RcmdrMisc/index.html">RcmdrMisc</a>, <a href="../rdd/index.html">rdd</a>, <a href="../regtools/index.html">regtools</a>, <a href="../strucchange/index.html">strucchange</a>, <a href="../vars/index.html">vars</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../acrt/index.html">acrt</a>, <a href="../adventr/index.html">adventr</a>, <a href="../ARpLMEC/index.html">ARpLMEC</a>, <a href="../bayesdistreg/index.html">bayesdistreg</a>, <a href="../betareg/index.html">betareg</a>, <a href="../binsreg/index.html">binsreg</a>, <a href="../bucky/index.html">bucky</a>, <a href="../censReg/index.html">censReg</a>, <a href="../clusterSEs/index.html">clusterSEs</a>, <a href="../contrast/index.html">contrast</a>, <a href="../ConvergenceClubs/index.html">ConvergenceClubs</a>, <a href="../crch/index.html">crch</a>, <a href="../cregg/index.html">cregg</a>, <a href="../crseEventStudy/index.html">crseEventStudy</a>, <a href="../DChaos/index.html">DChaos</a>, <a href="../DirectEffects/index.html">DirectEffects</a>, <a href="../dLagM/index.html">dLagM</a>, <a href="../eventstudies/index.html">eventstudies</a>, <a href="../factorEx/index.html">factorEx</a>, <a href="../FindIt/index.html">FindIt</a>, <a href="../fixest/index.html">fixest</a>, <a href="../fxregime/index.html">fxregime</a>, <a href="../gcmr/index.html">gcmr</a>, <a href="../GLMpack/index.html">GLMpack</a>, <a href="../glmx/index.html">glmx</a>, <a href="../glogis/index.html">glogis</a>, <a href="../gravity/index.html">gravity</a>, <a href="../Greg/index.html">Greg</a>, <a href="../grf/index.html">grf</a>, <a href="../GVARX/index.html">GVARX</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/GWASTools.html"><span class="BioC">GWASTools</span></a>, <a href="../HARModel/index.html">HARModel</a>, <a href="../highfrequency/index.html">highfrequency</a>, <a href="../interflex/index.html">interflex</a>, <a href="../ivdoctr/index.html">ivdoctr</a>, <a href="../lavaSearch2/index.html">lavaSearch2</a>, <a href="../lax/index.html">lax</a>, <a href="../lfe/index.html">lfe</a>, <a href="../lineartestr/index.html">lineartestr</a>, <a href="../lpirfs/index.html">lpirfs</a>, <a href="../maxLik/index.html">maxLik</a>, <a href="../medflex/index.html">medflex</a>, <a href="../memochange/index.html">memochange</a>, <a href="../mixl/index.html">mixl</a>, <a href="../mlt/index.html">mlt</a>, <a href="../model4you/index.html">model4you</a>, <a href="../monotonicity/index.html">monotonicity</a>, <a href="../multcomp/index.html">multcomp</a>, <a href="../multiwayvcov/index.html">multiwayvcov</a>, <a href="../nonnest2/index.html">nonnest2</a>, <a href="../nse/index.html">nse</a>, <a href="../outreg/index.html">outreg</a>, <a href="../party/index.html">party</a>, <a href="../pdR/index.html">pdR</a>, <a href="../PlackettLuce/index.html">PlackettLuce</a>, <a href="../plm/index.html">plm</a>, <a href="../PointFore/index.html">PointFore</a>, <a href="../prais/index.html">prais</a>, <a href="../pubh/index.html">pubh</a>, <a href="../quickmatch/index.html">quickmatch</a>, <a href="../radiant.model/index.html">radiant.model</a>, <a href="../rddtools/index.html">rddtools</a>, <a href="../rdlocrand/index.html">rdlocrand</a>, <a href="../regmedint/index.html">regmedint</a>, <a href="../RPESE/index.html">RPESE</a>, <a href="../scDIFtest/index.html">scDIFtest</a>, <a href="../slm/index.html">slm</a>, <a href="../ssym/index.html">ssym</a>, <a href="../systemfit/index.html">systemfit</a>, <a href="../tbm/index.html">tbm</a>, <a href="../tram/index.html">tram</a>, <a href="../tramnet/index.html">tramnet</a>, <a href="../trtf/index.html">trtf</a>, <a href="../vcrpart/index.html">vcrpart</a>, <a href="../weibulltools/index.html">weibulltools</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../ANOM/index.html">ANOM</a>, <a href="../ARDL/index.html">ARDL</a>, <a href="../broom/index.html">broom</a>, <a href="../car/index.html">car</a>, <a href="../chandwich/index.html">chandwich</a>, <a href="../dfadjust/index.html">dfadjust</a>, <a href="../Disequilibrium/index.html">Disequilibrium</a>, <a href="../dyn/index.html">dyn</a>, <a href="../dynlm/index.html">dynlm</a>, <a href="../estimatr/index.html">estimatr</a>, <a href="../FinTS/index.html">FinTS</a>, <a href="../geex/index.html">geex</a>, <a href="../ggeffects/index.html">ggeffects</a>, <a href="../HSAUR2/index.html">HSAUR2</a>, <a href="../HSAUR3/index.html">HSAUR3</a>, <a href="../huxtable/index.html">huxtable</a>, <a href="../interactions/index.html">interactions</a>, <a href="../ivreg/index.html">ivreg</a>, <a href="../jtools/index.html">jtools</a>, <a href="../lmtest/index.html">lmtest</a>, <a href="../madness/index.html">madness</a>, <a href="../margins/index.html">margins</a>, <a href="../MarkowitzR/index.html">MarkowitzR</a>, <a href="../memisc/index.html">memisc</a>, <a href="../miceadds/index.html">miceadds</a>, <a href="../mlt.docreg/index.html">mlt.docreg</a>, <a href="../modelsummary/index.html">modelsummary</a>, <a href="../npcp/index.html">npcp</a>, <a href="../panelr/index.html">panelr</a>, <a href="../parameters/index.html">parameters</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/parglms.html"><span class="BioC">parglms</span></a>, <a href="../partykit/index.html">partykit</a>, <a href="../pscl/index.html">pscl</a>, <a href="../psychotools/index.html">psychotools</a>, <a href="../Rchoice/index.html">Rchoice</a>, <a href="../SharpeR/index.html">SharpeR</a>, <a href="../sjPlot/index.html">sjPlot</a>, <a href="../spatialreg/index.html">spatialreg</a>, <a href="../StratifiedMedicine/index.html">StratifiedMedicine</a>, <a href="../tangram/index.html">tangram</a>, <a href="../texreg/index.html">texreg</a>, <a href="../tukeytrend/index.html">tukeytrend</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=sandwich"><samp>https://CRAN.R-project.org/package=sandwich</samp></a>
+to link to this page.</p>
+</body>
+</html>

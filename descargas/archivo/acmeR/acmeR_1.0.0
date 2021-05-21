@@ -1,0 +1,27 @@
+Package: acmeR
+Title: Implements ACME Estimator of Bird and Bat Mortality by Wind
+        Turbines
+Version: 1.0.0
+Authors@R: c(person("Robert", "Wolpert", email = "wolpert@stat.duke.edu", role = c("aut", "cre")),
+             person("Jacob",  "Coleman", email = "jrc71@stat.duke.edu",   role = c("aut")))
+Description: Implementation of estimator ACME, described in Wolpert (2015),
+         ACME: A Partially Periodic Estimator of Avian & Chiropteran
+         Mortality at Wind Turbines (submitted).  Unlike most other models,
+         this estimator supports decreasing-hazard Weibull model for
+         persistence; decreasing search proficiency as carcasses age;
+         variable bleed-through at successive searches; and interval
+         mortality estimates.  The package provides, based on search data,
+         functions for estimating the mortality inflation factor in
+         Frequentist and Bayesian settings.
+Depends: R (>= 3.1.1)
+Imports: foreign (>= 0.8-63), grDevices (>= 3.1.1), graphics (>=
+        3.1.1), stats (>= 3.1.1), utils (>= 3.1.1)
+License: MIT + file LICENSE
+LazyData: true
+NeedsCompilation: no
+Packaged: 2015-07-23 18:18:44 UTC; rlw
+Author: Robert Wolpert [aut, cre],
+  Jacob Coleman [aut]
+Maintainer: Robert Wolpert <wolpert@stat.duke.edu>
+Repository: CRAN
+Date/Publication: 2015-07-24 07:53:48

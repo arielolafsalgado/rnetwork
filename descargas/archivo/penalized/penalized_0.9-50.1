@@ -1,0 +1,33 @@
+Package: penalized
+Version: 0.9-50.1
+Date: 2017-02-01
+Title: L1 (Lasso and Fused Lasso) and L2 (Ridge) Penalized Estimation
+        in GLMs and in the Cox Model
+Author: Jelle Goeman, Rosa Meijer, Nimisha Chaturvedi, Matthew Lueder
+Maintainer: ORPHANED
+Depends: R (>= 2.10.0), survival (>= 2.42-4), methods
+Imports: Rcpp
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: globaltest
+Description: Fitting possibly high dimensional penalized
+        regression models. The penalty structure can be any combination
+        of an L1 penalty (lasso and fused lasso), an L2 penalty (ridge) and a
+        positivity constraint on the regression coefficients. The
+        supported regression models are linear, logistic and Poisson
+        regression and the Cox Proportional Hazards model.
+        Cross-validation routines allow optimization of the tuning
+        parameters.
+License: GPL (>= 2)
+NeedsCompilation: yes
+Collate: onattach.R penfit.R breslow.R penalized.R core.R checkinput.R
+        cvl.R contrasts.R Brent.R plotpath.R cox.R logit.R linear.R
+        poisson.R
+LazyLoad: yes
+Repository: CRAN
+Date/Publication: 2018-06-30 12:02:55 UTC
+Packaged: 2018-06-30 08:07:13 UTC; hornik
+X-CRAN-Comment: Orphaned on 2018-02-21 as requested corrections were
+        not made.
+ .
+ Including unconditional use of Suggests package(s) from BioC.
+X-CRAN-Original-Maintainer: Jelle Goeman <j.j.goeman@lumc.nl>

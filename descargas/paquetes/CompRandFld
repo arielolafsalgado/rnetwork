@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package CompRandFld</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Composite-Likelihood Based Analysis of Random Fields [R package CompRandFld version 1.0.3-6]" />
+<meta name="citation_author1" content="Simone Padoan" />
+<meta name="citation_author2" content="Boris Beranger" />
+<meta name="citation_author3" content="Moreno Bevilacqua" />
+<meta name="citation_publication_date" content="2020-01-10" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=CompRandFld" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=CompRandFld" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="CompRandFld: Composite-Likelihood Based Analysis of Random Fields" />
+<meta name="og:description" content="A set of procedures for the analysis of Random Fields using likelihood and non-standard likelihood methods is provided. Spatial analysis often involves dealing with large dataset. Therefore even simple studies may be too computationally demanding. Composite likelihood inference is emerging as a useful tool for mitigating such computational problems. This methodology shows satisfactory results when compared with other techniques such as the tapering method. Moreover, composite likelihood (and related quantities) have some useful properties similar to those of the standard likelihood. Adapts the methodologies derived in Padoan and Bevilacqua (2015) &amp;lt;&lt;a href=&quot;https://doi.org/10.18637%2Fjss.v063.i09&quot;&gt;doi:10.18637/jss.v063.i09&lt;/a&gt;&amp;gt;, Padoan et al. (2010) &amp;lt;&lt;a href=&quot;https://doi.org/10.1198%2Fjasa.2009.tm08577&quot;&gt;doi:10.1198/jasa.2009.tm08577&lt;/a&gt;&amp;gt;, Davison et al. (2012) &amp;lt;&lt;a href=&quot;https://doi.org/10.1214%2F11-STS376&quot;&gt;doi:10.1214/11-STS376&lt;/a&gt;&amp;gt;, Bevilacqua et al. (2012) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F01621459.2011.646928&quot;&gt;doi:10.1080/01621459.2011.646928&lt;/a&gt;&amp;gt;. It also refers to the works of Bevilacqua et al. (2010) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs11222-009-9121-3&quot;&gt;doi:10.1007/s11222-009-9121-3&lt;/a&gt;&amp;gt;, Bevilacqua and Gaetan (2013) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs11222-014-9460-6&quot;&gt;doi:10.1007/s11222-014-9460-6&lt;/a&gt;&amp;gt;, Cooley et al. (2006) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2F0-387-36062-X_17&quot;&gt;doi:10.1007/0-387-36062-X_17&lt;/a&gt;&amp;gt;, Cressie (1993) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2F9781119115151&quot;&gt;doi:10.1002/9781119115151&lt;/a&gt;&amp;gt;, Gaetan and Guyon (2010) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2F978-0-387-92257-7&quot;&gt;doi:10.1007/978-0-387-92257-7&lt;/a&gt;&amp;gt;, Gneiting (2002) &amp;lt;&lt;a href=&quot;https://doi.org/10.1198%2F016214502760047113&quot;&gt;doi:10.1198/016214502760047113&lt;/a&gt;&amp;gt;, Gneiting et al. (2007) &amp;lt;&lt;a href=&quot;https://www.stat.washington.edu/sites/default/files/files/reports/2005/tr475.pdf&quot;&gt;https://www.stat.washington.edu/sites/default/files/files/reports/2005/tr475.pdf&lt;/a&gt;&amp;gt;, Heagerty and Zeger (1998) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F01621459.1998.10474097&quot;&gt;doi:10.1080/01621459.1998.10474097&lt;/a&gt;&amp;gt;, Harville (1977) &amp;lt;&lt;a href=&quot;https://doi.org/10.2307%2F2286796&quot;&gt;doi:10.2307/2286796&lt;/a&gt;&amp;gt;, Kaufman et al. (2008) &amp;lt;&lt;a href=&quot;https://doi.org/10.1198%2F016214508000000959&quot;&gt;doi:10.1198/016214508000000959&lt;/a&gt;&amp;gt;, Shaby and Ruppert (2012) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F10618600.2012.680819&quot;&gt;doi:10.1080/10618600.2012.680819&lt;/a&gt;&amp;gt;, Varin and Vidoni (2005) &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fbiomet%2F92.3.519&quot;&gt;doi:10.1093/biomet/92.3.519&lt;/a&gt;&amp;gt;, Patrick et al. &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F01621459.1998.10473771&quot;&gt;doi:10.1080/01621459.1998.10473771&lt;/a&gt;&amp;gt;, de Haan and Pereira (2006) &amp;lt;&lt;a href=&quot;https://doi.org/10.1214%2F009053605000000886&quot;&gt;doi:10.1214/009053605000000886&lt;/a&gt;&amp;gt;, Kabluchko (2010) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs10687-010-0110-x&quot;&gt;doi:10.1007/s10687-010-0110-x&lt;/a&gt;&amp;gt;, Kabluchko et al. (2009) &amp;lt;&lt;a href=&quot;https://doi.org/10.1214%2F09-AOP455&quot;&gt;doi:10.1214/09-AOP455&lt;/a&gt;&amp;gt;, Schlather (2002) &amp;lt;&lt;a href=&quot;https://doi.org/10.1023%2FA%3A1020977924878&quot;&gt;doi:10.1023/A:1020977924878&lt;/a&gt;&amp;gt;, Carlstein (1986) &amp;lt;&lt;a href=&quot;https://doi.org/10.1214%2Faos%2F1176350057&quot;&gt;doi:10.1214/aos/1176350057&lt;/a&gt;&amp;gt;, Heagerty and Lumley (2000) &amp;lt;&lt;a href=&quot;https://doi.org/10.2307%2F2669538&quot;&gt;doi:10.2307/2669538&lt;/a&gt;&amp;gt;, Lee and Lahiri (2002) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2F1467-9868.00364&quot;&gt;doi:10.1111/1467-9868.00364&lt;/a&gt;&amp;gt;, Li et al. (2007) &amp;lt;&lt;a href=&quot;https://doi.org/10.1198%2F016214507000000202&quot;&gt;doi:10.1198/016214507000000202&lt;/a&gt;&amp;gt;, de Haan and Ferreira (2006) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2F0-387-34471-3&quot;&gt;doi:10.1007/0-387-34471-3&lt;/a&gt;&amp;gt; Smith (1987) &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fbiomet%2F72.1.67&quot;&gt;doi:10.1093/biomet/72.1.67&lt;/a&gt;&amp;gt;, Chandler and Bate (2007) &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fbiomet%2Fasm015&quot;&gt;doi:10.1093/biomet/asm015&lt;/a&gt;&amp;gt;, Rotnitzky and Jewell (1990) &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fbiomet%2F77.3.485&quot;&gt;doi:10.1093/biomet/77.3.485&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=CompRandFld" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>CompRandFld: Composite-Likelihood Based Analysis of Random Fields</h2>
+<p>A set of procedures for the analysis of Random Fields using likelihood and non-standard likelihood methods is provided. Spatial analysis often involves dealing with large dataset. Therefore even simple studies may be too computationally demanding. Composite likelihood inference is emerging as a useful tool for mitigating such computational problems. This methodology shows satisfactory results when compared with other techniques such as the tapering method. Moreover, composite likelihood (and related quantities) have some useful properties similar to those of the standard likelihood. Adapts the methodologies derived in Padoan and Bevilacqua (2015) &lt;<a href="https://doi.org/10.18637%2Fjss.v063.i09">doi:10.18637/jss.v063.i09</a>&gt;, Padoan et al. (2010) &lt;<a href="https://doi.org/10.1198%2Fjasa.2009.tm08577">doi:10.1198/jasa.2009.tm08577</a>&gt;, Davison et al. (2012) &lt;<a href="https://doi.org/10.1214%2F11-STS376">doi:10.1214/11-STS376</a>&gt;, Bevilacqua et al. (2012) &lt;<a href="https://doi.org/10.1080%2F01621459.2011.646928">doi:10.1080/01621459.2011.646928</a>&gt;. It also refers to the works of Bevilacqua et al. (2010) &lt;<a href="https://doi.org/10.1007%2Fs11222-009-9121-3">doi:10.1007/s11222-009-9121-3</a>&gt;, Bevilacqua and Gaetan (2013) &lt;<a href="https://doi.org/10.1007%2Fs11222-014-9460-6">doi:10.1007/s11222-014-9460-6</a>&gt;, Cooley et al. (2006) &lt;<a href="https://doi.org/10.1007%2F0-387-36062-X_17">doi:10.1007/0-387-36062-X_17</a>&gt;, Cressie (1993) &lt;<a href="https://doi.org/10.1002%2F9781119115151">doi:10.1002/9781119115151</a>&gt;, Gaetan and Guyon (2010) &lt;<a href="https://doi.org/10.1007%2F978-0-387-92257-7">doi:10.1007/978-0-387-92257-7</a>&gt;, Gneiting (2002) &lt;<a href="https://doi.org/10.1198%2F016214502760047113">doi:10.1198/016214502760047113</a>&gt;, Gneiting et al. (2007) &lt;<a href="https://www.stat.washington.edu/sites/default/files/files/reports/2005/tr475.pdf">https://www.stat.washington.edu/sites/default/files/files/reports/2005/tr475.pdf</a>&gt;, Heagerty and Zeger (1998) &lt;<a href="https://doi.org/10.1080%2F01621459.1998.10474097">doi:10.1080/01621459.1998.10474097</a>&gt;, Harville (1977) &lt;<a href="https://doi.org/10.2307%2F2286796">doi:10.2307/2286796</a>&gt;, Kaufman et al. (2008) &lt;<a href="https://doi.org/10.1198%2F016214508000000959">doi:10.1198/016214508000000959</a>&gt;, Shaby and Ruppert (2012) &lt;<a href="https://doi.org/10.1080%2F10618600.2012.680819">doi:10.1080/10618600.2012.680819</a>&gt;, Varin and Vidoni (2005) &lt;<a href="https://doi.org/10.1093%2Fbiomet%2F92.3.519">doi:10.1093/biomet/92.3.519</a>&gt;, Patrick et al. &lt;<a href="https://doi.org/10.1080%2F01621459.1998.10473771">doi:10.1080/01621459.1998.10473771</a>&gt;, de Haan and Pereira (2006) &lt;<a href="https://doi.org/10.1214%2F009053605000000886">doi:10.1214/009053605000000886</a>&gt;, Kabluchko (2010) &lt;<a href="https://doi.org/10.1007%2Fs10687-010-0110-x">doi:10.1007/s10687-010-0110-x</a>&gt;, Kabluchko et al. (2009) &lt;<a href="https://doi.org/10.1214%2F09-AOP455">doi:10.1214/09-AOP455</a>&gt;, Schlather (2002) &lt;<a href="https://doi.org/10.1023%2FA%3A1020977924878">doi:10.1023/A:1020977924878</a>&gt;, Carlstein (1986) &lt;<a href="https://doi.org/10.1214%2Faos%2F1176350057">doi:10.1214/aos/1176350057</a>&gt;, Heagerty and Lumley (2000) &lt;<a href="https://doi.org/10.2307%2F2669538">doi:10.2307/2669538</a>&gt;, Lee and Lahiri (2002) &lt;<a href="https://doi.org/10.1111%2F1467-9868.00364">doi:10.1111/1467-9868.00364</a>&gt;, Li et al. (2007) &lt;<a href="https://doi.org/10.1198%2F016214507000000202">doi:10.1198/016214507000000202</a>&gt;, de Haan and Ferreira (2006) &lt;<a href="https://doi.org/10.1007%2F0-387-34471-3">doi:10.1007/0-387-34471-3</a>&gt; Smith (1987) &lt;<a href="https://doi.org/10.1093%2Fbiomet%2F72.1.67">doi:10.1093/biomet/72.1.67</a>&gt;, Chandler and Bate (2007) &lt;<a href="https://doi.org/10.1093%2Fbiomet%2Fasm015">doi:10.1093/biomet/asm015</a>&gt;, Rotnitzky and Jewell (1990) &lt;<a href="https://doi.org/10.1093%2Fbiomet%2F77.3.485">doi:10.1093/biomet/77.3.485</a>&gt;.</p>
+<table summary="Package CompRandFld summary">
+<tr>
+<td>Version:</td>
+<td>1.0.3-6</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../RandomFields/index.html">RandomFields</a>, <a href="../spam/index.html">spam</a>, <a href="../scatterplot3d/index.html">scatterplot3d</a>, <a href="../fields/index.html">fields</a>, <a href="../mapproj/index.html">mapproj</a>, methods, <a href="../maps/index.html">maps</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-01-10</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Simone Padoan [cre, aut],
+  Boris Beranger [aut],
+  Moreno Bevilacqua [aut],
+  Alan Genz [ctb] (Author of included MVNDST fragment)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Simone Padoan  &#x3c;&#x73;&#x69;&#x6d;&#x6f;&#x6e;&#x65;&#x2e;&#x70;&#x61;&#x64;&#x6f;&#x61;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x75;&#x6e;&#x69;&#x62;&#x6f;&#x63;&#x63;&#x6f;&#x6e;&#x69;&#x2e;&#x69;&#x74;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://faculty.unibocconi.it/simonepadoan">http://faculty.unibocconi.it/simonepadoan</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">CompRandFld citation info</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Spatial.html">Spatial</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_CompRandFld.html">CompRandFld results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package CompRandFld downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="CompRandFld.pdf"> CompRandFld.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/CompRandFld_1.0.3-6.tar.gz"> CompRandFld_1.0.3-6.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/CompRandFld_1.0.3-6.zip">CompRandFld_1.0.3-6.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/CompRandFld_1.0.3-6.zip">CompRandFld_1.0.3-6.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/CompRandFld_1.0.3-6.zip">CompRandFld_1.0.3-6.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/CompRandFld_1.0.3-6.tgz">CompRandFld_1.0.3-6.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/CompRandFld_1.0.3-6.tgz">CompRandFld_1.0.3-6.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/CompRandFld"> CompRandFld archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package CompRandFld reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../ExtremalDep/index.html">ExtremalDep</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=CompRandFld"><samp>https://CRAN.R-project.org/package=CompRandFld</samp></a>
+to link to this page.</p>
+</body>
+</html>

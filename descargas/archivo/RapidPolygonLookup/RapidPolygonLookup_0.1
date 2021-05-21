@@ -1,0 +1,23 @@
+Package: RapidPolygonLookup
+Type: Package
+Title: Polygon lookup using kd trees
+Version: 0.1
+Date: 2013-11-18
+Depends: R(>= 2.10.0), sp, RANN, PBSmapping, RgoogleMaps
+Author: Markus Loecher <markus.loecher@gmail.com> and Madhav Kumar <madhavkumar2005@gmail.com>
+Maintainer: Markus Loecher <markus.loecher@gmail.com>
+Description: Facilitates efficient polygon search using kd trees.
+    Coordinate level spatial data can be aggregated to higher geographical
+    identities like census blocks, ZIP codes or police district boundaries.
+    This process requires mapping each point in the given data set to a
+    particular identity of the desired geographical hierarchy. Unless efficient
+    data structures are used, this can be a daunting task. The operation
+    point.in.polygon() from the package sp is computationally expensive.
+    Here, we exploit kd-trees as efficient nearest neighbor search algorithm
+    to dramatically reduce the effective number of polygons being searched.
+License: GPL
+LazyLoad: yes
+Packaged: 2014-01-28 14:50:39 UTC; madhav
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2014-01-28 16:28:53

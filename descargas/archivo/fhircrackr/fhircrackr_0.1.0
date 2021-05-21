@@ -1,0 +1,46 @@
+Package: fhircrackr
+Type: Package
+Title: Handling HL7 FHIR Resources in R
+Version: 0.1.0
+Date: 2020-07-01
+Authors@R: c(
+    person( given = "Thomas", 
+            family = "Peschel", 
+            email = "tpeschel@imise.uni-leipzig.de", 
+            role = c("aut","cre")),
+    person( given = "Julia", 
+            family = "Gantner", 
+            email = "julia.gantner@med.uni-jena.de", 
+            role = "aut",
+            comment=c(ORCID = "0000-0003-1568-5893")),
+    person( given = "Jens", 
+            family = "Przybilla", 
+            email = "jprzybilla@imise.uni-leipzig.de", 
+            role = "aut"),
+    person( given = "Frank", 
+            family = "Meineke", 
+            email = "frank.meineke@imise.uni-leipzig.de", 
+            role = "aut",
+            comment=c(ORCID = "0000-0002-9256-7543")))
+Description: Useful tools for conveniently downloading FHIR resources in xml format 
+    and converting them to R data frames. The package uses FHIR-search to download bundles 
+    from a FHIR server, provides functions to save and read xml-files containing such bundles 
+    and allows flattening the bundles to data.frames using XPath expressions.
+BugReports: https://github.com/POLAR-fhiR/fhircrackr/issues
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+Imports: xml2, stringr, httr, utils, dplyr
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Depends: R (>= 3.5.0)
+NeedsCompilation: no
+Packaged: 2020-07-08 13:07:01 UTC; tpeschel
+Author: Thomas Peschel [aut, cre],
+  Julia Gantner [aut] (<https://orcid.org/0000-0003-1568-5893>),
+  Jens Przybilla [aut],
+  Frank Meineke [aut] (<https://orcid.org/0000-0002-9256-7543>)
+Maintainer: Thomas Peschel <tpeschel@imise.uni-leipzig.de>
+Repository: CRAN
+Date/Publication: 2020-07-10 08:30:03 UTC

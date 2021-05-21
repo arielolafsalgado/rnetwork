@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package DTWUMI</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=DTWUMI" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="DTWUMI: Imputation of Multivariate Time Series Based on Dynamic Time Warping" />
+<meta name="og:description" content="Functions to impute large gaps within multivariate time series based on Dynamic Time Warping methods. Gaps of size 1 or inferior to a defined threshold are filled using simple average and weighted moving average respectively. Larger gaps are filled using the methodology provided by Phan et al. (2017) &amp;lt;&lt;a href=&quot;https://doi.org/10.1109%2FMLSP.2017.8168165&quot;&gt;doi:10.1109/MLSP.2017.8168165&lt;/a&gt;&amp;gt;: a query is built immediately before/after a gap and a moving window is used to find the most similar sequence to this query using Dynamic Time Warping. To lower the calculation time, similar sequences are pre-selected using global features. Contrary to the univariate method (package 'DTWBI'), these global features are not estimated over the sequence containing the gap(s), but a feature matrix is built to summarize general features of the whole multivariate signal. Once the most similar sequence to the query has been identified, the adjacent sequence to this window is used to fill the gap considered. This function can deal with multiple gaps over all the sequences componing the input multivariate signal. However, for better consistency, large gaps at the same location over all sequences should be avoided." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=DTWUMI" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>DTWUMI: Imputation of Multivariate Time Series Based on Dynamic Time
+Warping</h2>
+<p>Functions to impute large gaps within multivariate time series based on Dynamic Time Warping methods. Gaps of size 1 or inferior to a defined threshold are filled using simple average and weighted moving average respectively. Larger gaps are filled using the methodology provided by Phan et al. (2017) &lt;<a href="https://doi.org/10.1109%2FMLSP.2017.8168165">doi:10.1109/MLSP.2017.8168165</a>&gt;: a query is built immediately before/after a gap and a moving window is used to find the most similar sequence to this query using Dynamic Time Warping. To lower the calculation time, similar sequences are pre-selected using global features. Contrary to the univariate method (package 'DTWBI'), these global features are not estimated over the sequence containing the gap(s), but a feature matrix is built to summarize general features of the whole multivariate signal. Once the most similar sequence to the query has been identified, the adjacent sequence to this window is used to fill the gap considered. This function can deal with multiple gaps over all the sequences componing the input multivariate signal. However, for better consistency, large gaps at the same location over all sequences should be avoided.</p>
+<table summary="Package DTWUMI summary">
+<tr>
+<td>Version:</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../dtw/index.html">dtw</a>, <a href="../rlist/index.html">rlist</a>, stats, <a href="../e1071/index.html">e1071</a>, <a href="../entropy/index.html">entropy</a>, <a href="../lsa/index.html">lsa</a>, <a href="../DTWBI/index.html">DTWBI</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2018-07-13</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>DEZECACHE Camille, PHAN Thi Thu Hong, POISSON-CAILLAULT Emilie</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>POISSON-CAILLAULT Emilie  &#x3c;&#x65;&#x6d;&#x69;&#x6c;&#x69;&#x65;&#x2e;&#x70;&#x6f;&#x69;&#x73;&#x73;&#x6f;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x75;&#x6e;&#x69;&#x76;&#x2d;&#x6c;&#x69;&#x74;&#x74;&#x6f;&#x72;&#x61;&#x6c;&#x2e;&#x66;&#x72;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://mawenzi.univ-littoral.fr/DTWUMI/">http://mawenzi.univ-littoral.fr/DTWUMI/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">DTWUMI citation info</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/MissingData.html">MissingData</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_DTWUMI.html">DTWUMI results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package DTWUMI downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="DTWUMI.pdf"> DTWUMI.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/DTWUMI_1.0.tar.gz"> DTWUMI_1.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/DTWUMI_1.0.zip">DTWUMI_1.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/DTWUMI_1.0.zip">DTWUMI_1.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/DTWUMI_1.0.zip">DTWUMI_1.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/DTWUMI_1.0.tgz">DTWUMI_1.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/DTWUMI_1.0.tgz">DTWUMI_1.0.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=DTWUMI"><samp>https://CRAN.R-project.org/package=DTWUMI</samp></a>
+to link to this page.</p>
+</body>
+</html>

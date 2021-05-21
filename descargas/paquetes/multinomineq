@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package multinomineq</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Bayesian Inference for Multinomial Models with Inequality Constraints [R package multinomineq version 0.2.1]" />
+<meta name="citation_author" content="Daniel W. Heck" />
+<meta name="citation_publication_date" content="2019-05-16" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=multinomineq" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=multinomineq" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="multinomineq: Bayesian Inference for Multinomial Models with Inequality Constraints" />
+<meta name="og:description" content=" Implements Gibbs sampling and Bayes factors for multinomial models with linear inequality constraints on the vector of probability parameters. As special cases, the model class includes models that predict a linear order of binomial probabilities (e.g., p[1] &amp;lt; p[2] &amp;lt; p[3] &amp;lt; .50) and mixture models assuming that the parameter vector p must be inside the convex hull of a finite number of predicted patterns (i.e., vertices). A formal definition of inequality-constrained multinomial models and the implemented computational methods is provided in: Heck, D.W., &amp;amp; Davis-Stober, C.P. (2019). Multinomial models with linear inequality constraints: Overview and improvements of computational methods for Bayesian inference. Journal of Mathematical Psychology, 91, 70-87. &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.jmp.2019.03.004&quot;&gt;doi:10.1016/j.jmp.2019.03.004&lt;/a&gt;&amp;gt;. Inequality-constrained multinomial models have applications in the area of judgment and decision making to fit and test random utility models (Regenwetter, M., Dana, J., &amp;amp; Davis-Stober, C.P. (2011). Transitivity of preferences. Psychological Review, 118, 42–56, &amp;lt;&lt;a href=&quot;https://doi.org/10.1037%2Fa0021150&quot;&gt;doi:10.1037/a0021150&lt;/a&gt;&amp;gt;) or to perform outcome-based strategy classification to select the decision strategy that provides the best account for a vector of observed choice frequencies (Heck, D.W., Hilbig, B.E., &amp;amp; Moshagen, M. (2017). From information processing to decisions: Formalizing and comparing probabilistic choice models. Cognitive Psychology, 96, 26–40. &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.cogpsych.2017.05.003&quot;&gt;doi:10.1016/j.cogpsych.2017.05.003&lt;/a&gt;&amp;gt;)." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=multinomineq" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>multinomineq: Bayesian Inference for Multinomial Models with Inequality
+Constraints</h2>
+<p>
+    Implements Gibbs sampling and Bayes factors for multinomial models with
+    linear inequality constraints on the vector of probability parameters. As
+    special cases, the model class includes models that predict a linear order 
+    of binomial probabilities (e.g., p[1] &lt; p[2] &lt; p[3] &lt; .50) and mixture models 
+    assuming that the parameter vector p must be inside the convex hull of a 
+    finite number of predicted patterns (i.e., vertices). A formal definition of 
+    inequality-constrained multinomial models and the implemented computational
+    methods is provided in: Heck, D.W., &amp; Davis-Stober, C.P. (2019). 
+    Multinomial models with linear inequality constraints: Overview and improvements 
+    of computational methods for Bayesian inference. Journal of Mathematical 
+    Psychology, 91, 70-87. &lt;<a href="https://doi.org/10.1016%2Fj.jmp.2019.03.004">doi:10.1016/j.jmp.2019.03.004</a>&gt;.
+    Inequality-constrained multinomial models have applications in the area of 
+    judgment and decision making to fit and test random utility models  
+    (Regenwetter, M., Dana, J., &amp; Davis-Stober, C.P. (2011). Transitivity of 
+    preferences. Psychological Review, 118, 42–56, &lt;<a href="https://doi.org/10.1037%2Fa0021150">doi:10.1037/a0021150</a>&gt;) or to 
+    perform outcome-based strategy classification to select the decision strategy 
+    that provides the best account for a vector of observed choice frequencies 
+    (Heck, D.W., Hilbig, B.E., &amp; Moshagen, M. (2017). From information 
+    processing to decisions: Formalizing and comparing probabilistic choice models. 
+    Cognitive Psychology, 96, 26–40. &lt;<a href="https://doi.org/10.1016%2Fj.cogpsych.2017.05.003">doi:10.1016/j.cogpsych.2017.05.003</a>&gt;).</p>
+<table summary="Package multinomineq summary">
+<tr>
+<td>Version:</td>
+<td>0.2.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.11), parallel, <a href="../Rglpk/index.html">Rglpk</a>, <a href="../quadprog/index.html">quadprog</a>, <a href="../coda/index.html">coda</a>, <a href="../RcppXPtrUtils/index.html">RcppXPtrUtils</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a>, <a href="../RcppProgress/index.html">RcppProgress</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td>rPorta, <a href="../knitr/index.html">knitr</a>, <a href="../testthat/index.html">testthat</a>, <a href="../covr/index.html">covr</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-05-16</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Daniel W. Heck [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Daniel W. Heck  &#x3c;&#x68;&#x65;&#x63;&#x6b;&#x20;&#x61;&#x74;&#x20;&#x75;&#x6e;&#x69;&#x2d;&#x6d;&#x61;&#x6e;&#x6e;&#x68;&#x65;&#x69;&#x6d;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/danheck/multinomineq">https://github.com/danheck/multinomineq</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">multinomineq citation info</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_multinomineq.html">multinomineq results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package multinomineq downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="multinomineq.pdf"> multinomineq.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/multinomineq_intro.html">multinomineq: Multinomial Models with Inequality Constraints</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/multinomineq_0.2.1.tar.gz"> multinomineq_0.2.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/multinomineq_0.2.1.zip">multinomineq_0.2.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/multinomineq_0.2.1.zip">multinomineq_0.2.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/multinomineq_0.2.1.zip">multinomineq_0.2.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/multinomineq_0.2.1.tgz">multinomineq_0.2.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/multinomineq_0.2.1.tgz">multinomineq_0.2.1.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=multinomineq"><samp>https://CRAN.R-project.org/package=multinomineq</samp></a>
+to link to this page.</p>
+</body>
+</html>

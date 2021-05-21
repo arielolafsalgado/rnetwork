@@ -1,0 +1,45 @@
+Package: TestDesign
+Type: Package
+Title: Optimal Test Design Approach to Fixed and Adaptive Test
+        Construction
+Version: 0.2.5
+Date: 2019-09-11
+Authors@R: c(
+    person("Seung W.", "Choi",
+        email = "schoi@austin.utexas.edu",
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0003-4777-5420")),
+    person("Sangdon", "Lim",
+        email = "sangdonlim@utexas.edu",
+        role = "aut",
+        comment = c(ORCID = "0000-0002-2988-014X")))
+Maintainer: Seung W. Choi <schoi@austin.utexas.edu>
+Description: Use the optimal test design approach by Birnbaum (1968, ISBN:9781593119348) and
+    van der Linden (2018) <doi:10.1201/9781315117430> in constructing fixed and adaptive tests. Supports the following
+    mixed-integer programming (MIP) solver packages: 'Rsymphony', 'gurobi', 'lpSolve', and 'Rglpk'. The 'gurobi' package
+    is not available from CRAN; see <https://www.gurobi.com/downloads>. See vignette for installing 'Rsymphony' package
+    on Mac systems.
+URL: https://github.com/choi-phd/TestDesign
+BugReports: https://github.com/choi-phd/TestDesign/issues
+License: GPL (>= 2)
+Depends: R (>= 2.10)
+Imports: Rcpp (>= 1.0.0), methods, Matrix, lpSolve, foreach, logitnorm,
+        Rdpack, crayon
+Suggests: gurobi, Rsymphony, Rglpk, shiny, shinythemes, shinyWidgets,
+        shinyjs, DT, knitr, rmarkdown, kableExtra, testthat (>= 2.1.0)
+LinkingTo: Rcpp
+RoxygenNote: 6.1.1
+Encoding: UTF-8
+LazyData: true
+RdMacros: Rdpack
+VignetteBuilder: knitr
+Collate: 'import.R' 'RcppExports.R' 'item_class.R' 'item_functions.R'
+        'loading_functions.R' 'ATA_class.R' 'ATA_functions.R'
+        'solver_functions.R' 'shadow_class.R' 'shadow_functions.R'
+        'datasets.R' 'runshiny.R'
+NeedsCompilation: yes
+Packaged: 2019-09-12 01:22:31 UTC; chois1
+Author: Seung W. Choi [aut, cre] (<https://orcid.org/0000-0003-4777-5420>),
+  Sangdon Lim [aut] (<https://orcid.org/0000-0002-2988-014X>)
+Repository: CRAN
+Date/Publication: 2019-09-12 05:30:14 UTC

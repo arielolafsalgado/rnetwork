@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package httk</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="High-Throughput Toxicokinetics [R package httk version 2.0.3]" />
+<meta name="citation_author1" content="John Wambaugh" />
+<meta name="citation_author2" content="Robert Pearce" />
+<meta name="citation_author3" content="Caroline Ring" />
+<meta name="citation_author4" content="Greg Honda" />
+<meta name="citation_author5" content="Mark Sfeir" />
+<meta name="citation_author6" content="Matt Linakis" />
+<meta name="citation_publication_date" content="2020-09-25" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=httk" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=httk" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="httk: High-Throughput Toxicokinetics" />
+<meta name="og:description" content="Generic models and chemical-specific data for simulation and statistical analysis of chemical toxicokinetics (&quot;TK&quot;) as described by Pearce et al. (2017) &amp;lt;&lt;a href=&quot;https://doi.org/10.18637%2Fjss.v079.i04&quot;&gt;doi:10.18637/jss.v079.i04&lt;/a&gt;&amp;gt;. Chemical-specific in vitro data have been obtained from relatively high throughput experiments. Both physiologically-based (&quot;PBTK&quot;) and empirical (for example, one compartment) &quot;TK&quot; models can be parameterized with the data provided for thousands of chemicals, multiple exposure routes, and various species. The models consist of systems of ordinary differential equations which are solved using compiled (C-based) code for speed. A Monte Carlo sampler is included, which allows for simulating human biological variability (Ring et al., 2017 &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.envint.2017.06.004&quot;&gt;doi:10.1016/j.envint.2017.06.004&lt;/a&gt;&amp;gt;) and propagating parameter uncertainty. Calibrated methods are included for predicting tissue:plasma partition coefficients and volume of distribution (Pearce et al., 2017 &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs10928-017-9548-7&quot;&gt;doi:10.1007/s10928-017-9548-7&lt;/a&gt;&amp;gt;). These functions and data provide a set of tools for in vitro-in vivo extrapolation (&quot;IVIVE&quot;) of high throughput screening data (for example, Tox21, ToxCast) to real-world exposures via reverse dosimetry (also known as &quot;RTK&quot;) (Wetmore et al., 2015 &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Ftoxsci%2Fkfv171&quot;&gt;doi:10.1093/toxsci/kfv171&lt;/a&gt;&amp;gt;)." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=httk" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>httk: High-Throughput Toxicokinetics</h2>
+<p>Generic models and chemical-specific data for simulation and
+             statistical analysis of chemical toxicokinetics ("TK") as
+             described by Pearce et al. (2017) &lt;<a href="https://doi.org/10.18637%2Fjss.v079.i04">doi:10.18637/jss.v079.i04</a>&gt;.
+             Chemical-specific in vitro data have been obtained from relatively
+             high throughput experiments. Both physiologically-based ("PBTK")
+             and empirical (for example, one compartment) "TK" models can be
+             parameterized with the data provided for thousands of chemicals,
+             multiple exposure routes, and various species. The models consist
+             of systems of ordinary differential equations which are solved
+             using compiled (C-based) code for speed. A Monte Carlo sampler is
+             included, which allows for simulating human biological variability
+             (Ring et al., 2017 &lt;<a href="https://doi.org/10.1016%2Fj.envint.2017.06.004">doi:10.1016/j.envint.2017.06.004</a>&gt;)
+             and propagating parameter uncertainty. Calibrated methods are
+             included for predicting tissue:plasma partition coefficients and
+             volume of distribution
+             (Pearce et al., 2017 &lt;<a href="https://doi.org/10.1007%2Fs10928-017-9548-7">doi:10.1007/s10928-017-9548-7</a>&gt;).
+             These functions and data provide a set of tools for
+             in vitro-in vivo extrapolation ("IVIVE") of high throughput
+             screening data (for example, Tox21, ToxCast) to real-world
+             exposures via reverse dosimetry (also known as "RTK")
+             (Wetmore et al., 2015 &lt;<a href="https://doi.org/10.1093%2Ftoxsci%2Fkfv171">doi:10.1093/toxsci/kfv171</a>&gt;).</p>
+<table summary="Package httk summary">
+<tr>
+<td>Version:</td>
+<td>2.0.3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../deSolve/index.html">deSolve</a>, <a href="../msm/index.html">msm</a>, <a href="../data.table/index.html">data.table</a>, <a href="../survey/index.html">survey</a>, <a href="../mvtnorm/index.html">mvtnorm</a>, <a href="../truncnorm/index.html">truncnorm</a>, stats, graphics, utils, <a href="../magrittr/index.html">magrittr</a>, <a href="../purrr/index.html">purrr</a>, methods</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../ggplot2/index.html">ggplot2</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../R.rsp/index.html">R.rsp</a>, <a href="../GGally/index.html">GGally</a>, <a href="../gplots/index.html">gplots</a>, <a href="../scales/index.html">scales</a>, <a href="../EnvStats/index.html">EnvStats</a>, <a href="../MASS/index.html">MASS</a>, <a href="../RColorBrewer/index.html">RColorBrewer</a>, <a href="../TeachingDemos/index.html">TeachingDemos</a>, <a href="../classInt/index.html">classInt</a>, <a href="../ks/index.html">ks</a>, <a href="../stringr/index.html">stringr</a>, <a href="../reshape/index.html">reshape</a>, <a href="../reshape2/index.html">reshape2</a>, <a href="../gdata/index.html">gdata</a>, <a href="../viridis/index.html">viridis</a>, <a href="../CensRegMod/index.html">CensRegMod</a>, <a href="../gmodels/index.html">gmodels</a>, <a href="../colorspace/index.html">colorspace</a>, <a href="../cowplot/index.html">cowplot</a>, <a href="../ggrepel/index.html">ggrepel</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../forcats/index.html">forcats</a>, <a href="../smatr/index.html">smatr</a>, <a href="../gtools/index.html">gtools</a>, <a href="../gridExtra/index.html">gridExtra</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-25</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>John Wambaugh <a href="https://orcid.org/0000-0002-4024-534X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Robert Pearce <a href="https://orcid.org/0000-0003-3168-4049"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Caroline Ring <a href="https://orcid.org/0000-0002-0463-1251"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Greg Honda <a href="https://orcid.org/0000-0001-7713-9850"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Mark Sfeir [aut],
+  Matt Linakis <a href="https://orcid.org/0000-0003-0526-2395"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Jimena Davis [ctb],
+  James Sluka <a href="https://orcid.org/0000-0002-5901-1404"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb],
+  Nisha Sipes <a href="https://orcid.org/0000-0003-4203-6426"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb],
+  Barbara Wetmore <a href="https://orcid.org/0000-0002-6878-5348"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Woodrow Setzer <a href="https://orcid.org/0000-0002-6709-9186"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>John Wambaugh  &#x3c;&#x77;&#x61;&#x6d;&#x62;&#x61;&#x75;&#x67;&#x68;&#x2e;&#x6a;&#x6f;&#x68;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x65;&#x70;&#x61;&#x2e;&#x67;&#x6f;&#x76;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/USEPA/CompTox-ExpoCast-httk">https://github.com/USEPA/CompTox-ExpoCast-httk</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://www.epa.gov/chemical-research/rapid-chemical-exposure-and-dose-research">https://www.epa.gov/chemical-research/rapid-chemical-exposure-and-dose-research</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">httk citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_httk.html">httk results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package httk downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="httk.pdf"> httk.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Frank2018.html">Frank et al. (2018): Creating IVIVE Figure (Fig. 6)</a><br/>
+<a href="vignettes/Honda2019.html">Honda et al. (2019): Updated Armitage et al. (2014) Model</a><br/>
+<a href="vignettes/Linakis2020.html">Linakis et al. (2020): Analysis and Figure Generation</a><br/>
+<a href="vignettes/Pearce2017.html">Pearce et al. (2017): Creating Partition Coefficient Evaluation Plots</a><br/>
+<a href="vignettes/Ring_2017_vignette01_subpopulations.html">Ring et al. (2017): Generating subpopulations</a><br/>
+<a href="vignettes/Ring_2017_vignette02_evalmodelsubpop.html">Ring et al. (2017): Evaluating HTTK models for subpopulations</a><br/>
+<a href="vignettes/Ring_2017_vignette03_paper_fig2.html">Ring et al. (2017): Generating Figure 2</a><br/>
+<a href="vignettes/Ring_2017_vignette04_paper_fig3.html">Ring et al. (2017): Generating Figure 3</a><br/>
+<a href="vignettes/Ring_2017_vignette05b_plothowgatejohnson.html">Ring et al. (2017): Plotting Howgate/Johnson data</a><br/>
+<a href="vignettes/Ring_2017_vignette06_aerplotting.html">Ring et al. (2017): AER plotting</a><br/>
+<a href="vignettes/Ring_2017_vignette_05a_virtualstudypops.html">Ring et al. (2017): Virtual study populations</a><br/>
+<a href="vignettes/Wambaugh2018.html">Wambaugh et al. (2018): Creating All Figures</a><br/>
+<a href="vignettes/Wambaugh2019.html">Wambaugh et al. (2019): Creating Figures for the Manuscript</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/httk_2.0.3.tar.gz"> httk_2.0.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/httk_2.0.3.zip">httk_2.0.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/httk_2.0.3.zip">httk_2.0.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/httk_2.0.3.zip">httk_2.0.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/httk_2.0.3.tgz">httk_2.0.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/httk_2.0.3.tgz">httk_2.0.3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/httk"> httk archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=httk"><samp>https://CRAN.R-project.org/package=httk</samp></a>
+to link to this page.</p>
+</body>
+</html>

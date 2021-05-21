@@ -1,0 +1,36 @@
+Package: DNAtools
+Type: Package
+Title: Tools for Analysing Forensic Genetic DNA Data
+Version: 0.2-2
+Authors@R: c(
+    person(given = "Torben", family = "Tvedebrink", 
+        email = "tvede@math.aau.dk", role = c("aut")),
+    person(given = "James", family = "Curran", 
+        email = "j.curran@auckland.ac.nz", role = c("aut")),
+    person(given = "Mikkel Meyer", family = "Andersen", 
+        email = "mikl@math.aau.dk", role = c("aut", "cre"))
+  )
+Author: Torben Tvedebrink [aut],
+  James Curran [aut],
+  Mikkel Meyer Andersen [aut, cre]
+Maintainer: Mikkel Meyer Andersen <mikl@math.aau.dk>
+Description: Computationally efficient tools for comparing all pairs of profiles
+    in a DNA database. The expectation and covariance of the summary statistic
+    is implemented for fast computing. Routines for estimating proportions of
+    close related individuals are available. The use of wildcards (also called F-
+    designation) is implemented. Dedicated functions ease plotting the results.
+License: GPL (>= 2) | file LICENSE
+Depends: R (>= 3.3.0)
+Imports: Rsolnp (>= 1.16), multicool (>= 0.1-10), Rcpp (>= 0.12.12),
+        RcppParallel (>= 4.3.20)
+LinkingTo: Rcpp, RcppParallel, RcppProgress
+SystemRequirements: C++11, GNU make
+BugReports: https://github.com/mikldk/DNAtools/issues
+NeedsCompilation: yes
+Encoding: UTF-8
+RoxygenNote: 7.0.2
+Suggests: testthat, testthis, knitr, rmarkdown
+VignetteBuilder: utils, knitr
+Packaged: 2020-03-03 13:16:59 UTC; mikl
+Repository: CRAN
+Date/Publication: 2020-03-03 14:30:15 UTC

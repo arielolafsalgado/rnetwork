@@ -1,0 +1,34 @@
+Package: denovolyzeR
+Title: Statistical Analyses of De Novo Genetic Variants
+Version: 0.1.1
+Date: 2016-06-18
+Authors@R: c(
+    person("James","Ware",email="j.ware@imperial.ac.uk",role=c("aut","cre")),
+    person("Jason","Homsy",role="ctb"),
+    person("Kaitlin","Samocha",role="ctb")
+    )
+Description: An integrated toolset for the analysis of de novo (sporadic)
+    genetic sequence variants. denovolyzeR implements a mutational model that
+    estimates the probability of a de novo genetic variant arising in each human
+    gene, from which one can infer the expected number of de novo variants in a
+    given population size. Observed variant frequencies can then be compared against
+    expectation in a Poisson framework. denovolyzeR provides a suite of functions
+    to implement these analyses for the interpretation of de novo variation in human
+    disease.
+Depends: R (>= 3.1.0)
+Imports: dplyr (>= 0.3), reshape (>= 0.8)
+License: GPL-3
+LazyData: true
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+URL: http://denovolyzeR.org
+BugReports: http://github.com/jamesware/denovolyzeR/issues
+RoxygenNote: 5.0.1
+Packaged: 2016-06-18 02:03:35 UTC; jamesware
+Author: James Ware [aut, cre],
+  Jason Homsy [ctb],
+  Kaitlin Samocha [ctb]
+Maintainer: James Ware <j.ware@imperial.ac.uk>
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2016-06-18 15:01:35

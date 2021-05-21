@@ -1,0 +1,46 @@
+Type: Package
+Package: rmapshaper
+Title: Client for 'mapshaper' for 'Geospatial' Operations
+Version: 0.4.3
+Authors@R: 
+    c(person(given = "Andy",
+             family = "Teucher",
+             role = c("aut", "cre"),
+             email = "andy.teucher@gmail.com"),
+      person(given = "Kenton",
+             family = "Russell",
+             role = "aut",
+             email = "kent.russell@timelyportfolio.com",
+             comment = "JavaScript support"),
+      person(given = "Matthew",
+             family = "Bloch",
+             role = "cph",
+             comment = "mapshaper Javascript library"))
+Description: Edit and simplify 'geojson', 'Spatial', and 'sf'
+    objects.  This is wrapper around the 'mapshaper' 'JavaScript' library
+    by Matthew Bloch <https://github.com/mbloch/mapshaper/> to perform
+    topologically-aware polygon simplification, as well as other
+    operations such as clipping, erasing, dissolving, and converting
+    'multi-part' to 'single-part' geometries.  It relies on the
+    'geojsonio' package for working with 'geojson' objects, the 'sf'
+    package for working with 'sf' objects, and the 'sp' and 'rgdal'
+    packages for working with 'Spatial' objects.
+License: MIT + file LICENSE
+URL: https://github.com/ateucher/rmapshaper
+BugReports: https://github.com/ateucher/rmapshaper/issues
+Imports: geojsonio (>= 0.6.0), geojsonlint (>= 0.2.0), jsonlite (>=
+        1.5), methods, readr (>= 1.1.1), sf (>= 0.6), sp (>= 1.2-7), V8
+        (>= 3.0)
+Suggests: knitr, magrittr, rgdal, rgeos, rmarkdown, testthat (>= 2.1.0)
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: TRUE
+RoxygenNote: 7.0.2
+NeedsCompilation: no
+Packaged: 2020-01-28 19:54:06 UTC; ateucher
+Author: Andy Teucher [aut, cre],
+  Kenton Russell [aut] (JavaScript support),
+  Matthew Bloch [cph] (mapshaper Javascript library)
+Maintainer: Andy Teucher <andy.teucher@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-01-28 20:40:06 UTC

@@ -1,0 +1,25 @@
+Package: wrangle
+Type: Package
+Title: A Systematic Data Wrangling Idiom
+Version: 0.3
+Date: 2017-02-20
+Author: Tim Bergsma
+Maintainer: Tim Bergsma <bergsmat@gmail.com>
+Description: Supports systematic scrutiny, modification, and integration of
+    data. The function status() counts rows that have missing values in 
+    grouping columns (returned by na() ), have non-unique combinations of 
+    grouping columns (returned by dup() ), and that are not locally sorted
+    (returned by unsorted() ). Functions enumerate() and itemize() give 
+    sorted unique combinations of columns, with or without occurrence counts,
+    respectively. Function ignore() drops columns in x that are present in y,
+    and informative() drops columns in x that are entirely NA. Data that have
+    defined unique combinations of grouping values behave more predictably
+    during merge operations.
+License: GPL-3
+LazyData: TRUE
+Imports: dplyr, tidyr, lazyeval, magrittr
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-02-20 14:08:49 UTC; tbergsma
+Repository: CRAN
+Date/Publication: 2017-02-20 15:23:18

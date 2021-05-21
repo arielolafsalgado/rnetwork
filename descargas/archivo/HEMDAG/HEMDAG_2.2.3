@@ -1,0 +1,25 @@
+Package: HEMDAG
+Title: Hierarchical Ensemble Methods for Directed Acyclic Graphs
+Version: 2.2.3
+Author: Marco Notaro [aut, cre] (<https://orcid.org/0000-0003-4309-2200>),
+  Alessandro Petrini [ctb] (<https://orcid.org/0000-0002-0587-1484>),
+  Giorgio Valentini [aut] (<https://orcid.org/0000-0002-5694-3919>)
+Maintainer: Marco Notaro <marco.notaro@unimi.it>
+Description: An implementation of Hierarchical Ensemble Methods for Directed Acyclic Graphs (DAGs). The 'HEMDAG' package can be used to enhance the predictions of virtually any flat learning methods, by taking into account the hierarchical nature of the classes of a bio-ontology. 'HEMDAG' is specifically designed for exploiting the hierarchical relationships of DAG-structured taxonomies, such as the Human Phenotype Ontology (HPO) or the Gene Ontology (GO), but it can be also safely applied to tree-structured taxonomies (as FunCat), since trees are DAGs. 'HEMDAG' scale nicely both in terms of the complexity of the taxonomy and in the cardinality of the examples. (Marco Notaro, Max Schubach, Peter N. Robinson and Giorgio Valentini (2017) <doi:10.1186/s12859-017-1854-y>).
+URL: https://hemdag-tutorials.readthedocs.io,
+        https://github.com/gecko515/HEMDAG
+Depends: R (>= 2.10)
+License: GPL (>= 3)
+Encoding: UTF-8
+Repository: CRAN
+LazyLoad: true
+NeedsCompilation: yes
+Imports: graph, RBGL, PerfMeas, precrec, preprocessCore, methods, plyr,
+        foreach, iterators, doParallel, parallel
+Suggests: Rgraphviz
+Authors@R: c( person(given="Marco", family="Notaro", role=c("aut", "cre"), comment=c(ORCID="0000-0003-4309-2200"), email="marco.notaro@unimi.it"),
+              person(given="Alessandro", family="Petrini", role="ctb", comment=c(ORCID="0000-0002-0587-1484")),
+              person(given="Giorgio", family="Valentini", role="aut", comment=c(ORCID="0000-0002-5694-3919")))
+RoxygenNote: 6.0.1
+Packaged: 2018-08-15 17:16:44 UTC; marco
+Date/Publication: 2018-08-15 17:40:02 UTC

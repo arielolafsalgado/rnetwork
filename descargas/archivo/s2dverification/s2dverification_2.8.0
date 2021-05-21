@@ -1,0 +1,55 @@
+Package: s2dverification
+Title: Set of Common Tools for Forecast Verification
+Version: 2.8.0
+Authors@R: c(
+    person("Virginie", "Guemas", , "virginie.guemas@bsc.es", role = "aut"),
+    person("Nicolau", "Manubens", , "nicolau.manubens@bsc.es", role = c("aut", "cre")),
+    person("Javier", "Garcia-Serrano", , "javier.garcia@bsc.es", role = "aut"),
+    person("Neven", "Fuckar", , "neven.fuckar@bsc.es", role = "aut"),
+    person("Luis", "Rodrigues", , "lrodrigues@ic3.cat", role = "aut"),
+    person("Louis-Philippe", "Caron", , "louis-philippe.caron@bsc.es", role = "aut"),
+    person("Omar", "Bellprat", , "omar.bellprat@bsc.es", role = "aut"),
+    person("Veronica", "Torralba", , "veronica.torralba@bsc.es", role = "aut"), 
+    person("Alasdair", "Hunter", , "alasdair.hunter@bsc.es", role = "aut"), 
+    person("Chloe", "Prodhomme", , "chloe.prodhomme@bs.es", role = "aut"),
+    person("Constantin", "Ardilouze", , "constantin.ardilouze@meteo.fr", role = "aut"),
+    person("Lauriane", "Batte", , "lauriane.batte@meteo.fr", role = "aut"),
+    person("Martin", "Menegoz", , "martin.menegoz@bsc.es", role = "aut"),
+    person("Fabian", "Lienert", , "fabian.lienert@bsc.es", role = "aut"),
+    person("Nube", "Gonzalez", , "nube.gonzalez@bsc.es", role = "aut"),
+    person("Ludovic", "Auger", , "ludovic.auger@meteo.fr", role = "aut"),
+    person("Isabel", "Andreu-Burillo", , "isabel.andreu.burillo@ic3.cat", role = "aut"),
+    person("Ramiro", "Saurral", , "ramiro.saurral@ic3.cat", role = "aut"))
+Description: Set of tools to verify forecasts through the computation of typical prediction scores against one or more observational datasets or reanalyses (a reanalysis being a physical extrapolation of observations that relies on the equations from a model, not a pure observational dataset). Intended for seasonal to decadal climate forecasts although can be useful to verify other kinds of forecasts. The package can be helpful in climate sciences for other purposes than forecasting. 
+Depends: maps, methods, R (>= 2.14.1)
+Imports: abind, bigmemory, GEOmap, geomapdata, mapproj, NbClust, ncdf4,
+        parallel, plyr, SpecsVerification (>= 0.5.0)
+Suggests: easyVerification
+License: LGPL-3
+URL: https://earth.bsc.es/gitlab/es/s2dverification/wikis/home
+BugReports: https://earth.bsc.es/gitlab/es/s2dverification/issues
+LazyData: true
+SystemRequirements: cdo
+NeedsCompilation: no
+Packaged: 2017-02-13 15:36:44 UTC; nmanuben
+Author: Virginie Guemas [aut],
+  Nicolau Manubens [aut, cre],
+  Javier Garcia-Serrano [aut],
+  Neven Fuckar [aut],
+  Luis Rodrigues [aut],
+  Louis-Philippe Caron [aut],
+  Omar Bellprat [aut],
+  Veronica Torralba [aut],
+  Alasdair Hunter [aut],
+  Chloe Prodhomme [aut],
+  Constantin Ardilouze [aut],
+  Lauriane Batte [aut],
+  Martin Menegoz [aut],
+  Fabian Lienert [aut],
+  Nube Gonzalez [aut],
+  Ludovic Auger [aut],
+  Isabel Andreu-Burillo [aut],
+  Ramiro Saurral [aut]
+Maintainer: Nicolau Manubens <nicolau.manubens@bsc.es>
+Repository: CRAN
+Date/Publication: 2017-02-13 23:44:33

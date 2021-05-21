@@ -1,0 +1,18 @@
+Package: fdrDiscreteNull
+Type: Package
+Title: False Discovery Rate Procedures Under Discrete and Heterogeneous
+        Null Distributions
+Version: 1.1
+Date: 2017-09-02
+Author: Xiongzhi Chen and Rebecca W. Doerge <rwdoerge@andrew.cmu.edu>
+Maintainer: Xiongzhi Chen <xiongzhi.chen@wsu.edu>
+Description: It is known that current false discovery rate (FDR) procedures can be very conservative when applied to multiple testing in the discrete paradigm where p-values (and test statistics) have discrete and heterogeneous null distributions. This package implements more powerful weighted or adaptive FDR procedures for FDR control and estimation in the discrete paradigm. The package takes in the original data set rather than just the p-values in order to carry out the adjustments for discreteness and heterogeneity of p-value distributions. The package implements methods for two types of test statistics and their p-values: (a) binomial test on if two independent Poisson distributions have the same means, (b) Fisher's exact test on if the conditional distribution is the same as the marginal distribution for two binomial distributions, or on if two independent binomial distributions have the same probabilities of success.
+Imports: MCMCpack, discreteMTP
+Depends: R(>= 3.2.0)
+URL: http://math.wsu.edu/faculty/xchen/welcome.php
+License: LGPL
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2017-09-03 16:11:07 UTC; xchen
+Repository: CRAN
+Date/Publication: 2017-09-03 17:52:07 UTC

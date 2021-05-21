@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package epiflows</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Predicting Disease Spread from Flow Data [R package epiflows version 0.2.0]" />
+<meta name="citation_author1" content="Pawel Piatkowski" />
+<meta name="citation_author2" content="Paula Moraga" />
+<meta name="citation_author3" content="Thibaut Jombart" />
+<meta name="citation_author4" content="VP Nagraj" />
+<meta name="citation_author5" content="Zhian N. Kamvar" />
+<meta name="citation_author6" content="Salla E. Toikkanen" />
+<meta name="citation_publication_date" content="2018-08-14" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=epiflows" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=epiflows" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="epiflows: Predicting Disease Spread from Flow Data" />
+<meta name="og:description" content="Provides functions and classes designed to handle and visualise epidemiological flows between locations. Also contains a statistical method for predicting disease spread from flow data initially described in Dorigatti et al. (2017) &amp;lt;&lt;a href=&quot;https://doi.org/10.2807%2F1560-7917.ES.2017.22.28.30572&quot;&gt;doi:10.2807/1560-7917.ES.2017.22.28.30572&lt;/a&gt;&amp;gt;. This package is part of the RECON (&amp;lt;&lt;a href=&quot;http://www.repidemicsconsortium.org/&quot;&gt;http://www.repidemicsconsortium.org/&lt;/a&gt;&amp;gt;) toolkit for outbreak analysis." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=epiflows" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>epiflows: Predicting Disease Spread from Flow Data</h2>
+<p>Provides functions and classes designed to handle and visualise
+    epidemiological flows between locations. Also contains a statistical method
+    for predicting disease spread from flow data initially described in
+    Dorigatti et al. (2017) &lt;<a href="https://doi.org/10.2807%2F1560-7917.ES.2017.22.28.30572">doi:10.2807/1560-7917.ES.2017.22.28.30572</a>&gt;.
+    This package is part of the RECON (&lt;<a href="http://www.repidemicsconsortium.org/">http://www.repidemicsconsortium.org/</a>&gt;)
+    toolkit for outbreak analysis.</p>
+<table summary="Package epiflows summary">
+<tr>
+<td>Version:</td>
+<td>0.2.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.4.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../epicontacts/index.html">epicontacts</a>, <a href="../leaflet/index.html">leaflet</a>, <a href="../ggmap/index.html">ggmap</a>, <a href="../geosphere/index.html">geosphere</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../tibble/index.html">tibble</a>, <a href="../sp/index.html">sp</a>, <a href="../htmlwidgets/index.html">htmlwidgets</a>, stats, <a href="../htmltools/index.html">htmltools</a>, <a href="../visNetwork/index.html">visNetwork</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../roxygen2/index.html">roxygen2</a>, <a href="../knitr/index.html">knitr</a>, <a href="../outbreaks/index.html">outbreaks</a>, <a href="../vdiffr/index.html">vdiffr</a>, <a href="../curl/index.html">curl</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2018-08-14</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Pawel Piatkowski <a href="https://orcid.org/0000-0002-0822-5592"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Paula Moraga <a href="https://orcid.org/0000-0001-5266-0201"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Isobel Blake [ctb, dtc],
+  Thibaut Jombart [aut],
+  VP Nagraj [aut],
+  Zhian N. Kamvar <a href="https://orcid.org/0000-0003-1458-7108"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Salla E. Toikkanen [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Pawel Piatkowski  &#x3c;&#x70;&#x61;&#x77;&#x65;&#x6c;&#x2e;&#x70;&#x69;&#x61;&#x74;&#x6b;&#x6f;&#x77;&#x73;&#x6b;&#x69;&#x20;&#x61;&#x74;&#x20;&#x70;&#x6f;&#x73;&#x74;&#x65;&#x6f;&#x2e;&#x6e;&#x65;&#x74;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/reconhub/epiflows/issues">https://github.com/reconhub/epiflows/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://www.repidemicsconsortium.org/epiflows">https://www.repidemicsconsortium.org/epiflows</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_epiflows.html">epiflows results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package epiflows downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="epiflows.pdf"> epiflows.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/epiflows-class.html">01 Data Preparation</a><br/>
+<a href="vignettes/introduction.html">00 Overview</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/epiflows_0.2.0.tar.gz"> epiflows_0.2.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/epiflows_0.2.0.zip">epiflows_0.2.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/epiflows_0.2.0.zip">epiflows_0.2.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/epiflows_0.2.0.zip">epiflows_0.2.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/epiflows_0.2.0.tgz">epiflows_0.2.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/epiflows_0.2.0.tgz">epiflows_0.2.0.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=epiflows"><samp>https://CRAN.R-project.org/package=epiflows</samp></a>
+to link to this page.</p>
+</body>
+</html>

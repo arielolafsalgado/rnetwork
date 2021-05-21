@@ -1,0 +1,49 @@
+Package: RestRserve
+Type: Package
+Title: A Framework for Building HTTP API
+Description: 
+  Allows to easily create high-performance full featured HTTP APIs from R 
+  functions. Provides high-level classes such as 'Request', 'Response', 
+  'Application', 'Middleware' in order to streamline server side 
+  application development. Out of the box allows to serve requests using 
+  'Rserve' package, but flexible enough to integrate with other HTTP servers
+  such as 'httpuv'.
+Version: 0.2.0.2
+Authors@R: c(
+  person(given = "Dmitriy",
+         family = "Selivanov",
+         role = c("aut", "cre"),
+         email = "ds@rexy.ai",
+         comment = c(ORCID = "0000-0001-5413-1506")),
+  person(given = "Artem",
+         family = "Klevtsov",
+         role = "aut",
+         email = "a.a.klevtsov@gmail.com",
+         comment = c(ORCID = "0000-0003-0492-6647")),
+  person(given = "rexy.ai",
+         role = c("cph", "fnd")))
+URL: http://restrserve.org, https://github.com/rexyai/RestRserve
+BugReports: https://github.com/rexyai/RestRserve/issues
+License: GPL (>= 2)
+Depends: R (>= 3.6.0)
+Imports: methods, Rserve (>= 1.7.3), Rcpp (>= 1.0.3), R6 (>= 2.4.0),
+        uuid (>= 0.1-2), checkmate (>= 1.9.4), mime (>= 0.7), jsonlite
+        (>= 1.6)
+Suggests: tinytest (>= 1.0.0), lgr (>= 0.3.2), lintr, knitr, rmarkdown,
+        curl, sys
+LinkingTo: Rcpp
+SystemRequirements: C++11
+ByteCompile: true
+KeepSource: true
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2020-03-09 11:09:00 UTC; dselivanov
+Author: Dmitriy Selivanov [aut, cre] (<https://orcid.org/0000-0001-5413-1506>),
+  Artem Klevtsov [aut] (<https://orcid.org/0000-0003-0492-6647>),
+  rexy.ai [cph, fnd]
+Maintainer: Dmitriy Selivanov <ds@rexy.ai>
+Repository: CRAN
+Date/Publication: 2020-03-09 15:10:07 UTC

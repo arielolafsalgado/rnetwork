@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package rgdal</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Bindings for the 'Geospatial' Data Abstraction Library [R package rgdal version 1.5-18]" />
+<meta name="citation_author1" content="Roger Bivand" />
+<meta name="citation_author2" content="Tim Keitt" />
+<meta name="citation_author3" content="Barry Rowlingson" />
+<meta name="citation_publication_date" content="2020-10-13" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=rgdal" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=rgdal" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="rgdal: Bindings for the 'Geospatial' Data Abstraction Library" />
+<meta name="og:description" content="Provides bindings to the 'Geospatial' Data Abstraction Library ('GDAL') (&amp;gt;= 1.11.4) and access to projection/transformation operations from the 'PROJ' library. Use is made of classes defined in the 'sp' package. Raster and vector map data can be imported into R, and raster and vector 'sp' objects exported. The 'GDAL' and 'PROJ' libraries are external to the package, and, when installing the package from source, must be correctly installed first; it is important that 'GDAL' &amp;lt; 3 be matched with 'PROJ' &amp;lt; 6. From 'rgdal' 1.5-8, installed with to 'GDAL' &amp;gt;=3, 'PROJ' &amp;gt;=6 and 'sp' &amp;gt;= 1.4, coordinate reference systems use 'WKT2_2019' strings, not 'PROJ' strings. 'Windows' and 'macOS' binaries (including 'GDAL', 'PROJ' and their dependencies) are provided on 'CRAN'. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=rgdal" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>rgdal: Bindings for the 'Geospatial' Data Abstraction Library</h2>
+<p>Provides bindings to the 'Geospatial' Data Abstraction Library ('GDAL') (&gt;= 1.11.4) and access to projection/transformation operations from the 'PROJ' library. Use is made of classes defined in the 'sp' package. Raster and vector map data can be imported into R, and raster and vector 'sp' objects exported. The 'GDAL' and 'PROJ' libraries are external to the package, and, when installing the package from source, must be correctly installed first; it is important that 'GDAL' &lt; 3 be matched with 'PROJ' &lt; 6. From 'rgdal' 1.5-8, installed with to 'GDAL' &gt;=3, 'PROJ' &gt;=6 and 'sp' &gt;= 1.4, coordinate reference systems use 'WKT2_2019' strings, not 'PROJ' strings. 'Windows' and 'macOS' binaries (including 'GDAL', 'PROJ' and their dependencies) are provided on 'CRAN'. </p>
+<table summary="Package rgdal summary">
+<tr>
+<td>Version:</td>
+<td>1.5-18</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0), methods, <a href="../sp/index.html">sp</a> (&ge; 1.1-0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>grDevices, graphics, stats, utils</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../sp/index.html">sp</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../DBI/index.html">DBI</a>, <a href="../RSQLite/index.html">RSQLite</a>, <a href="../maptools/index.html">maptools</a>, <a href="../mapview/index.html">mapview</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../curl/index.html">curl</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-13</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Roger Bivand <a href="https://orcid.org/0000-0003-2392-6140"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [cre, aut],
+  Tim Keitt [aut],
+  Barry Rowlingson [aut, ctb],
+  Edzer Pebesma [ctb],
+  Michael Sumner [ctb],
+  Robert Hijmans [ctb],
+  Even Rouault [cph, ctb],
+  Frank Warmerdam [cph, ctb],
+  Jeroen Ooms [ctb],
+  Colin Rundel [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Roger Bivand  &#x3c;&#x52;&#x6f;&#x67;&#x65;&#x72;&#x2e;&#x42;&#x69;&#x76;&#x61;&#x6e;&#x64;&#x20;&#x61;&#x74;&#x20;&#x6e;&#x68;&#x68;&#x2e;&#x6e;&#x6f;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://rgdal.r-forge.r-project.org">http://rgdal.r-forge.r-project.org</a>, <a href="https://gdal.org">https://gdal.org</a>,
+<a href="https://proj.org">https://proj.org</a>, <a href="https://r-forge.r-project.org/projects/rgdal/">https://r-forge.r-project.org/projects/rgdal/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>PROJ (&gt;= 4.8.0, https://proj.org/download.html) and
+GDAL (&gt;= 1.11.4, https://gdal.org/download.html), with versions
+either (A) PROJ &lt; 6 and GDAL &lt; 3 or (B) PROJ &gt;= 6 and GDAL &gt;=
+3. For degraded PROJ &gt;= 6 and GDAL &lt; 3, use the configure
+argument '--with-proj_api="proj_api.h"'.</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> <a href="ChangeLog">ChangeLog</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Spatial.html">Spatial</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_rgdal.html">rgdal results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package rgdal downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="rgdal.pdf"> rgdal.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/CRS_projections_transformations.html">CRS, projections and transformations</a><br/>
+<a href="vignettes/PROJ6_GDAL3.html">Migration to PROJ6/GDAL3</a><br/>
+<a href="vignettes/OGR_shape_encoding.pdf">OGR shapefile encoding</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/rgdal_1.5-18.tar.gz"> rgdal_1.5-18.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/rgdal_1.5-18.zip">rgdal_1.5-18.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/rgdal_1.5-18.zip">rgdal_1.5-18.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/rgdal_1.5-18.zip">rgdal_1.5-18.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/rgdal_1.5-18.tgz">rgdal_1.5-18.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/rgdal_1.5-18.tgz">rgdal_1.5-18.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/rgdal"> rgdal archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package rgdal reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../cffdrs/index.html">cffdrs</a>, <a href="../DeducerSpatial/index.html">DeducerSpatial</a>, <a href="../dggridR/index.html">dggridR</a>, <a href="../diffeR/index.html">diffeR</a>, <a href="../divagis/index.html">divagis</a>, <a href="../DMMF/index.html">DMMF</a>, <a href="../ExtractTrainData/index.html">ExtractTrainData</a>, <a href="../GADMTools/index.html">GADMTools</a>, <a href="../hddtools/index.html">hddtools</a>, <a href="../hsdar/index.html">hsdar</a>, <a href="../intensity.analysis/index.html">intensity.analysis</a>, <a href="../landsat/index.html">landsat</a>, <a href="../M3/index.html">M3</a>, <a href="../mapReasy/index.html">mapReasy</a>, <a href="../micromap/index.html">micromap</a>, <a href="../ModelMap/index.html">ModelMap</a>, <a href="../modiscloud/index.html">modiscloud</a>, <a href="../move/index.html">move</a>, <a href="../r2dRue/index.html">r2dRue</a>, <a href="../rangeBuilder/index.html">rangeBuilder</a>, <a href="../RSIP/index.html">RSIP</a>, <a href="../sdmpredictors/index.html">sdmpredictors</a>, <a href="../SPODT/index.html">SPODT</a>, <a href="../TOC/index.html">TOC</a>, <a href="../UScancer/index.html">UScancer</a>, <a href="../water/index.html">water</a>, <a href="../waver/index.html">waver</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../AGPRIS/index.html">AGPRIS</a>, <a href="../agriwater/index.html">agriwater</a>, <a href="../amber/index.html">amber</a>, <a href="../ambhasGW/index.html">ambhasGW</a>, <a href="../animalEKF/index.html">animalEKF</a>, <a href="../animaltracker/index.html">animaltracker</a>, <a href="../APfun/index.html">APfun</a>, <a href="../ASIP/index.html">ASIP</a>, <a href="../assignR/index.html">assignR</a>, <a href="../BARIS/index.html">BARIS</a>, <a href="../bbsBayes/index.html">bbsBayes</a>, <a href="../bdvis/index.html">bdvis</a>, <a href="../bfsMaps/index.html">bfsMaps</a>, <a href="../BIEN/index.html">BIEN</a>, <a href="../bioRad/index.html">bioRad</a>, <a href="../birdring/index.html">birdring</a>, <a href="../BIRDS/index.html">BIRDS</a>, <a href="../bnspatial/index.html">bnspatial</a>, <a href="../bomrang/index.html">bomrang</a>, <a href="../briskaR/index.html">briskaR</a>, <a href="../CARBayes/index.html">CARBayes</a>, <a href="../CARBayesST/index.html">CARBayesST</a>, <a href="../CCAMLRGIS/index.html">CCAMLRGIS</a>, <a href="../ConR/index.html">ConR</a>, <a href="../contact/index.html">contact</a>, <a href="../CoordinateCleaner/index.html">CoordinateCleaner</a>, <a href="../ctmm/index.html">ctmm</a>, <a href="../disaggregation/index.html">disaggregation</a>, <a href="../downscaledl/index.html">downscaledl</a>, <a href="../dssd/index.html">dssd</a>, <a href="../dtwSat/index.html">dtwSat</a>, <a href="../DWBmodelUN/index.html">DWBmodelUN</a>, <a href="../dynatopmodel/index.html">dynatopmodel</a>, <a href="../ebirdst/index.html">ebirdst</a>, <a href="../ecochange/index.html">ecochange</a>, <a href="../EcoGenetics/index.html">EcoGenetics</a>, <a href="../eddi/index.html">eddi</a>, <a href="../eechidna/index.html">eechidna</a>, <a href="../ENMTools/index.html">ENMTools</a>, <a href="../epitweetr/index.html">epitweetr</a>, <a href="../eseis/index.html">eseis</a>, <a href="../fastmaRching/index.html">fastmaRching</a>, <a href="../FedData/index.html">FedData</a>, <a href="../flightplanning/index.html">flightplanning</a>, <a href="../FLightR/index.html">FLightR</a>, <a href="../FloodMapper/index.html">FloodMapper</a>, <a href="../gdalUtils/index.html">gdalUtils</a>, <a href="../gDefrag/index.html">gDefrag</a>, <a href="../geodetector/index.html">geodetector</a>, <a href="../geodiv/index.html">geodiv</a>, <a href="../geometr/index.html">geometr</a>, <a href="../geonetwork/index.html">geonetwork</a>, <a href="../geoSpectral/index.html">geoSpectral</a>, <a href="../geotopbricks/index.html">geotopbricks</a>, <a href="../geoviz/index.html">geoviz</a>, <a href="../gfcanalysis/index.html">gfcanalysis</a>, <a href="../GInSARCorW/index.html">GInSARCorW</a>, <a href="../GmAMisc/index.html">GmAMisc</a>, <a href="../GPSeqClus/index.html">GPSeqClus</a>, <a href="../grainscape/index.html">grainscape</a>, <a href="../GSIF/index.html">GSIF</a>, <a href="../gtfs2gps/index.html">gtfs2gps</a>, <a href="../hyfo/index.html">hyfo</a>, <a href="../iemisc/index.html">iemisc</a>, <a href="../importinegi/index.html">importinegi</a>, <a href="../inlabru/index.html">inlabru</a>, <a href="../inlmisc/index.html">inlmisc</a>, <a href="../intamap/index.html">intamap</a>, <a href="../intamapInteractive/index.html">intamapInteractive</a>, <a href="../iSDM/index.html">iSDM</a>, <a href="../LabourMarketAreas/index.html">LabourMarketAreas</a>, <a href="../lakemorpho/index.html">lakemorpho</a>, <a href="../landsat8/index.html">landsat8</a>, <a href="../leastcostpath/index.html">leastcostpath</a>, <a href="../letsR/index.html">letsR</a>, <a href="../lidR/index.html">lidR</a>, <a href="../loa/index.html">loa</a>, <a href="../malariaAtlas/index.html">malariaAtlas</a>, <a href="../Mapinguari/index.html">Mapinguari</a>, <a href="../mapsRinteractive/index.html">mapsRinteractive</a>, <a href="../MazamaSpatialUtils/index.html">MazamaSpatialUtils</a>, <a href="../MEDITS/index.html">MEDITS</a>, <a href="../meteo/index.html">meteo</a>, <a href="../meteoland/index.html">meteoland</a>, <a href="../MinBAR/index.html">MinBAR</a>, <a href="../modchart/index.html">modchart</a>, <a href="../MODIS/index.html">MODIS</a>, <a href="../morphomap/index.html">morphomap</a>, <a href="../movecost/index.html">movecost</a>, <a href="../naijR/index.html">naijR</a>, <a href="../nhdR/index.html">nhdR</a>, <a href="../nichevol/index.html">nichevol</a>, <a href="../nightmares/index.html">nightmares</a>, <a href="../npphen/index.html">npphen</a>, <a href="../OasisR/index.html">OasisR</a>, <a href="../OCNet/index.html">OCNet</a>, <a href="../OpasnetUtils/index.html">OpasnetUtils</a>, <a href="../openSTARS/index.html">openSTARS</a>, <a href="../OpenStreetMap/index.html">OpenStreetMap</a>, <a href="../opentraj/index.html">opentraj</a>, <a href="../Orcs/index.html">Orcs</a>, <a href="../ows4R/index.html">ows4R</a>, <a href="../paleofire/index.html">paleofire</a>, <a href="../patternize/index.html">patternize</a>, <a href="../pgirmess/index.html">pgirmess</a>, <a href="../phenomap/index.html">phenomap</a>, <a href="../phyloregion/index.html">phyloregion</a>, <a href="../plotKML/index.html">plotKML</a>, <a href="../PopGenReport/index.html">PopGenReport</a>, <a href="../postGIStools/index.html">postGIStools</a>, <a href="../ppcSpatial/index.html">ppcSpatial</a>, <a href="../PReMiuM/index.html">PReMiuM</a>, <a href="../prevR/index.html">prevR</a>, <a href="../psgp/index.html">psgp</a>, <a href="../psyosphere/index.html">psyosphere</a>, <a href="../PWFSLSmoke/index.html">PWFSLSmoke</a>, <a href="../quickmapr/index.html">quickmapr</a>, <a href="../quickPlot/index.html">quickPlot</a>, <a href="../RAC/index.html">RAC</a>, <a href="../raceland/index.html">raceland</a>, <a href="../rangeMapper/index.html">rangeMapper</a>, <a href="../rangeModelMetadata/index.html">rangeModelMetadata</a>, <a href="../raptr/index.html">raptr</a>, <a href="../rAvis/index.html">rAvis</a>, <a href="../rcanvec/index.html">rcanvec</a>, <a href="../rCAT/index.html">rCAT</a>, <a href="../rcrimeanalysis/index.html">rcrimeanalysis</a>, <a href="../rdefra/index.html">rdefra</a>, <a href="../rdhs/index.html">rdhs</a>, <a href="../ReadDIM/index.html">ReadDIM</a>, <a href="../red/index.html">red</a>, <a href="../ref.ICAR/index.html">ref.ICAR</a>, <a href="../rflexscan/index.html">rflexscan</a>, <a href="../riverdist/index.html">riverdist</a>, <a href="../rmapzen/index.html">rmapzen</a>, <a href="../rnrfa/index.html">rnrfa</a>, <a href="../rosm/index.html">rosm</a>, <a href="../RSAGA/index.html">RSAGA</a>, <a href="../Rsagacmd/index.html">Rsagacmd</a>, <a href="../RStoolbox/index.html">RStoolbox</a>, <a href="../RSurvey/index.html">RSurvey</a>, <a href="../rWBclimate/index.html">rWBclimate</a>, <a href="../sara4r/index.html">sara4r</a>, <a href="../sdStaf/index.html">sdStaf</a>, <a href="../secrlinear/index.html">secrlinear</a>, <a href="../SeerMapper/index.html">SeerMapper</a>, <a href="../SegEnvIneq/index.html">SegEnvIneq</a>, <a href="../sen2r/index.html">sen2r</a>, <a href="../ShapePattern/index.html">ShapePattern</a>, <a href="../simplevis/index.html">simplevis</a>, <a href="../SiMRiv/index.html">SiMRiv</a>, <a href="../smartR/index.html">smartR</a>, <a href="../soilassessment/index.html">soilassessment</a>, <a href="../spacey/index.html">spacey</a>, <a href="../SpatialEpiApp/index.html">SpatialEpiApp</a>, <a href="../sperich/index.html">sperich</a>, <a href="../SpNetPrep/index.html">SpNetPrep</a>, <a href="../SSN/index.html">SSN</a>, <a href="../stampr/index.html">stampr</a>, <a href="../SWMPrExtension/index.html">SWMPrExtension</a>, <a href="../tidyUSDA/index.html">tidyUSDA</a>, <a href="../tigris/index.html">tigris</a>, <a href="../tiler/index.html">tiler</a>, <a href="../trackdf/index.html">trackdf</a>, <a href="../TrajDataMining/index.html">TrajDataMining</a>, <a href="../tripEstimation/index.html">tripEstimation</a>, <a href="../tweet2r/index.html">tweet2r</a>, <a href="../uavRmp/index.html">uavRmp</a>, <a href="../uFTIR/index.html">uFTIR</a>, <a href="../ursa/index.html">ursa</a>, <a href="../wallace/index.html">wallace</a>, <a href="../waterquality/index.html">waterquality</a>, <a href="../waveformlidar/index.html">waveformlidar</a>, <a href="../windfarmGA/index.html">windfarmGA</a>, <a href="../wux/index.html">wux</a>, <a href="../xROI/index.html">xROI</a>, <a href="../zonator/index.html">zonator</a>, <a href="../zoon/index.html">zoon</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../actel/index.html">actel</a>, <a href="../agridat/index.html">agridat</a>, <a href="../AQuadtree/index.html">AQuadtree</a>, <a href="../atakrig/index.html">atakrig</a>, <a href="../bayesTFR/index.html">bayesTFR</a>, <a href="../bcmaps/index.html">bcmaps</a>, <a href="../BiodiversityR/index.html">BiodiversityR</a>, <a href="../camtrapR/index.html">camtrapR</a>, <a href="../cancensus/index.html">cancensus</a>, <a href="../cartogram/index.html">cartogram</a>, <a href="../cartography/index.html">cartography</a>, <a href="../ceramic/index.html">ceramic</a>, <a href="../chronosphere/index.html">chronosphere</a>, <a href="../cmsafvis/index.html">cmsafvis</a>, <a href="../composits/index.html">composits</a>, <a href="../covid19mobility/index.html">covid19mobility</a>, <a href="../crawl/index.html">crawl</a>, <a href="../dartR/index.html">dartR</a>, <a href="../daymetr/index.html">daymetr</a>, <a href="../DEPONS2R/index.html">DEPONS2R</a>, <a href="../disdat/index.html">disdat</a>, <a href="../dismo/index.html">dismo</a>, <a href="../DiversityOccupancy/index.html">DiversityOccupancy</a>, <a href="../ecospat/index.html">ecospat</a>, <a href="../elevatr/index.html">elevatr</a>, <a href="../EmissV/index.html">EmissV</a>, <a href="../envirem/index.html">envirem</a>, <a href="../epiR/index.html">epiR</a>, <a href="../fieldRS/index.html">fieldRS</a>, <a href="../foto/index.html">foto</a>, <a href="../GapAnalysis/index.html">GapAnalysis</a>, <a href="../geohashTools/index.html">geohashTools</a>, <a href="../geoknife/index.html">geoknife</a>, <a href="../geostatsp/index.html">geostatsp</a>, <a href="../ggspatial/index.html">ggspatial</a>, <a href="../graticule/index.html">graticule</a>, <a href="../gstat/index.html">gstat</a>, <a href="../gwfa/index.html">gwfa</a>, <a href="../HSAR/index.html">HSAR</a>, <a href="../ibeemd/index.html">ibeemd</a>, <a href="../icosa/index.html">icosa</a>, <a href="../INLAMSM/index.html">INLAMSM</a>, <a href="../inldata/index.html">inldata</a>, <a href="../ipdw/index.html">ipdw</a>, <a href="../ipumsr/index.html">ipumsr</a>, <a href="../IsoriX/index.html">IsoriX</a>, <a href="../ISRaD/index.html">ISRaD</a>, <a href="../lacunaritycovariance/index.html">lacunaritycovariance</a>, <a href="../latticeDensity/index.html">latticeDensity</a>, <a href="../leaflet/index.html">leaflet</a>, <a href="../leaflet.opacity/index.html">leaflet.opacity</a>, <a href="../leafletR/index.html">leafletR</a>, <a href="../lgcp/index.html">lgcp</a>, <a href="../lingtypology/index.html">lingtypology</a>, <a href="../link2GI/index.html">link2GI</a>, <a href="../lutz/index.html">lutz</a>, <a href="../mapmisc/index.html">mapmisc</a>, <a href="../meteoForecast/index.html">meteoForecast</a>, <a href="../metR/index.html">metR</a>, <a href="../MODISTools/index.html">MODISTools</a>, <a href="../MODIStsp/index.html">MODIStsp</a>, <a href="../mptools/index.html">mptools</a>, <a href="../mregions/index.html">mregions</a>, <a href="../oce/index.html">oce</a>, <a href="../onemapsgapi/index.html">onemapsgapi</a>, <a href="../openCR/index.html">openCR</a>, <a href="../parlitools/index.html">parlitools</a>, <a href="../plotdap/index.html">plotdap</a>, <a href="../prettymapr/index.html">prettymapr</a>, <a href="../prioritizrdata/index.html">prioritizrdata</a>, <a href="../R.SamBada/index.html">R.SamBada</a>, <a href="../R2BayesX/index.html">R2BayesX</a>, <a href="../raster/index.html">raster</a>, <a href="../rasterDT/index.html">rasterDT</a>, <a href="../redlistr/index.html">redlistr</a>, <a href="../reproducible/index.html">reproducible</a>, <a href="../rerddapXtracto/index.html">rerddapXtracto</a>, <a href="../RFmerge/index.html">RFmerge</a>, <a href="../rgeoprofile/index.html">rgeoprofile</a>, <a href="../rgeos/index.html">rgeos</a>, <a href="../RGISTools/index.html">RGISTools</a>, <a href="../rgrass7/index.html">rgrass7</a>, <a href="../rmapshaper/index.html">rmapshaper</a>, <a href="../rnaturalearth/index.html">rnaturalearth</a>, <a href="../rnoaa/index.html">rnoaa</a>, <a href="../rpostgis/index.html">rpostgis</a>, <a href="../rsatscan/index.html">rsatscan</a>, <a href="../rsyncrosim/index.html">rsyncrosim</a>, <a href="../rtop/index.html">rtop</a>, <a href="../rworldmap/index.html">rworldmap</a>, <a href="../satellite/index.html">satellite</a>, <a href="../SDMPlay/index.html">SDMPlay</a>, <a href="../SDMtune/index.html">SDMtune</a>, <a href="../secr/index.html">secr</a>, <a href="../seg/index.html">seg</a>, <a href="../sf/index.html">sf</a>, <a href="../shadow/index.html">shadow</a>, <a href="../sharpshootR/index.html">sharpshootR</a>, <a href="../smapr/index.html">smapr</a>, <a href="../soilDB/index.html">soilDB</a>, <a href="../sp/index.html">sp</a>, <a href="../spacetime/index.html">spacetime</a>, <a href="../SpaDES.core/index.html">SpaDES.core</a>, <a href="../SpatialKDE/index.html">SpatialKDE</a>, <a href="../spatsurv/index.html">spatsurv</a>, <a href="../spcosa/index.html">spcosa</a>, <a href="../spData/index.html">spData</a>, <a href="../spdep/index.html">spdep</a>, <a href="../spgrass6/index.html">spgrass6</a>, <a href="../spgwr/index.html">spgwr</a>, <a href="../spmoran/index.html">spmoran</a>, <a href="../SSDM/index.html">SSDM</a>, <a href="../stplanr/index.html">stplanr</a>, <a href="../tangles/index.html">tangles</a>, <a href="../TexMix/index.html">TexMix</a>, <a href="../trajectories/index.html">trajectories</a>, <a href="../UScensus2010/index.html">UScensus2010</a>, <a href="../usdm/index.html">usdm</a>, <a href="../usmap/index.html">usmap</a>, <a href="../viridis/index.html">viridis</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=rgdal"><samp>https://CRAN.R-project.org/package=rgdal</samp></a>
+to link to this page.</p>
+</body>
+</html>

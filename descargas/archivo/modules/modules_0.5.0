@@ -1,0 +1,29 @@
+Package: modules
+Title: Self Contained Units of Source Code
+Version: 0.5.0
+Date: 2016-11-01
+Authors@R: person("Sebastian", "Warnholz", email = "wahani@gmail.com", role = c("aut", "cre"))
+Description: Provides modules as an organizational unit for source code. Modules
+    enforce to be more rigorous when defining dependencies and have
+    a local search path. They can be used as a sub unit within packages
+    or in scripts.
+BugReports: https://github.com/wahani/modules/issues
+URL: http://wahani.github.io/modules
+ByteCompile: TRUE
+Depends: R (>= 3.2.0)
+Imports: stringr, utils
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests: disposables, testthat, devtools, knitr, lintr, rmarkdown,
+        parallel
+RoxygenNote: 5.0.1
+Collate: 'NAMESPACE.R' 'getSearchPath.R' 'module-class.R'
+        'module-coercion.R' 'module-helper.R' 'module.R'
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2016-11-02 07:47:29 UTC; sebastian
+Author: Sebastian Warnholz [aut, cre]
+Maintainer: Sebastian Warnholz <wahani@gmail.com>
+Repository: CRAN
+Date/Publication: 2016-11-02 18:15:31

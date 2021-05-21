@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package PCMBase</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Simulation and Likelihood Calculation of Phylogenetic Comparative Models [R package PCMBase version 1.2.11]" />
+<meta name="citation_author" content="Venelin Mitov" />
+<meta name="citation_publication_date" content="2019-12-12" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=PCMBase" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=PCMBase" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="PCMBase: Simulation and Likelihood Calculation of Phylogenetic Comparative Models" />
+<meta name="og:description" content="Phylogenetic comparative methods represent models of continuous trait data associated with the tips of a phylogenetic tree. Examples of such models are Gaussian continuous time branching stochastic processes such as Brownian motion (BM) and Ornstein-Uhlenbeck (OU) processes, which regard the data at the tips of the tree as an observed (final) state of a Markov process starting from an initial state at the root and evolving along the branches of the tree. The PCMBase R package provides a general framework for manipulating such models. This framework consists of an application programming interface for specifying data and model parameters, and efficient algorithms for simulating trait evolution under a model and calculating the likelihood of model parameters for an assumed model and trait data. The package implements a growing collection of models, which currently includes BM, OU, BM/OU with jumps, two-speed OU as well as mixed Gaussian models, in which different types of the above models can be associated with different branches of the tree. The PCMBase package is limited to trait-simulation and likelihood calculation of (mixed) Gaussian phylogenetic models. The PCMFit package provides functionality for ML and Bayesian fit of these models to tree and trait data. The package web-site &amp;lt;&lt;a href=&quot;https://venelin.github.io/PCMBase/&quot;&gt;https://venelin.github.io/PCMBase/&lt;/a&gt;&amp;gt; provides access to the documentation and other resources. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=PCMBase" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>PCMBase: Simulation and Likelihood Calculation of Phylogenetic
+Comparative Models</h2>
+<p>Phylogenetic comparative methods represent models of continuous trait 
+  data associated with the tips of a phylogenetic tree. Examples of such models 
+  are Gaussian continuous time branching stochastic processes such as Brownian 
+  motion (BM) and Ornstein-Uhlenbeck (OU) processes, which regard the data at the 
+  tips of the tree as an observed (final) state of a Markov process starting from 
+  an initial state at the root and evolving along the branches of the tree. The 
+  PCMBase R package provides a general framework for manipulating such models. 
+  This framework consists of an application programming interface for specifying 
+  data and model parameters, and efficient algorithms for simulating trait evolution 
+  under a model and calculating the likelihood of model parameters for an assumed
+  model and trait data. The package implements a growing collection of models, 
+  which currently includes BM, OU, BM/OU with jumps, two-speed OU as well as mixed 
+  Gaussian models, in which different types of the above models can be associated 
+  with different branches of the tree. The PCMBase package is limited to 
+  trait-simulation and likelihood calculation of (mixed) Gaussian phylogenetic 
+  models. The PCMFit package provides functionality for ML and Bayesian fit of 
+  these models to tree and trait data. The package web-site 
+  &lt;<a href="https://venelin.github.io/PCMBase/">https://venelin.github.io/PCMBase/</a>&gt;
+  provides access to the documentation and other resources. </p>
+<table summary="Package PCMBase summary">
+<tr>
+<td>Version:</td>
+<td>1.2.11</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.1.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../ape/index.html">ape</a>, <a href="../expm/index.html">expm</a>, <a href="../mvtnorm/index.html">mvtnorm</a>, <a href="../data.table/index.html">data.table</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../xtable/index.html">xtable</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../abind/index.html">abind</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/ggtree.html"><span class="BioC">ggtree</span></a>, <a href="../cowplot/index.html">cowplot</a>, <a href="../covr/index.html">covr</a>, <a href="../mvSLOUCH/index.html">mvSLOUCH</a>, <a href="../BiocManager/index.html">BiocManager</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-12-12</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Venelin Mitov [aut, cre, cph] (&lt;a
+    href="https://venelin.github.io"&gt;venelin.github.io&lt;/a&gt;),
+  Krzysztof Bartoszek [ctb],
+  Georgios Asimomitis [ctb],
+  Tanja Stadler [ths]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Venelin Mitov  &#x3c;&#x76;&#x6d;&#x69;&#x74;&#x6f;&#x76;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/venelin/PCMBase/issues">https://github.com/venelin/PCMBase/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL (&ge; 3.0)</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://venelin.github.io/PCMBase/">https://venelin.github.io/PCMBase/</a>, <a href="https://venelin.github.io">https://venelin.github.io</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">PCMBase citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_PCMBase.html">PCMBase results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package PCMBase downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="PCMBase.pdf"> PCMBase.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/PCMBase.html">Getting started</a><br/>
+<a href="vignettes/PCMCreateModel.html">Creating a Custom Model in the PCMBase Framework</a><br/>
+<a href="vignettes/PCMParam.html">The PCMBase Parametrization API</a><br/>
+<a href="vignettes/PCMTracePruning.html">Tracing the likelihood calculation of a Gaussian model</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/PCMBase_1.2.11.tar.gz"> PCMBase_1.2.11.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/PCMBase_1.2.11.zip">PCMBase_1.2.11.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/PCMBase_1.2.11.zip">PCMBase_1.2.11.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/PCMBase_1.2.11.zip">PCMBase_1.2.11.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/PCMBase_1.2.11.tgz">PCMBase_1.2.11.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/PCMBase_1.2.11.tgz">PCMBase_1.2.11.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/PCMBase"> PCMBase archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package PCMBase reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../mvSLOUCH/index.html">mvSLOUCH</a>, <a href="../PCMBaseCpp/index.html">PCMBaseCpp</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=PCMBase"><samp>https://CRAN.R-project.org/package=PCMBase</samp></a>
+to link to this page.</p>
+</body>
+</html>

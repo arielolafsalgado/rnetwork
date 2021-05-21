@@ -1,0 +1,40 @@
+Package: mkin
+Type: Package
+Title: Routines for Fitting Kinetic Models with One or More State
+        Variables to Chemical Degradation Data
+Version: 0.9-38
+Date: 2015-06-23
+Authors@R: c(person("Johannes", "Ranke", role = c("aut", "cre", "cph"), 
+                    email = "jranke@uni-bremen.de"),
+             person("Katrin", "Lindenberger", role = "ctb"),
+             person("René", "Lehmann", role = "ctb"),
+             person("Eurofins Regulatory AG", role = "cph"))
+Description: Calculation routines based on the FOCUS Kinetics Report (2006).
+  Includes a function for conveniently defining differential equation models,
+  model solution based on eigenvalues if possible or using numerical solvers
+  and a choice of the optimisation methods made available by the 'FME' package.
+  If a C compiler (on windows: 'Rtools') is installed, differential
+  equation models are solved using compiled C functions.  
+  Please note that no warranty is implied for correctness of results or fitness
+  for a particular purpose.
+Depends: minpack.lm, rootSolve, inline
+Imports: FME, deSolve
+Suggests: knitr, testthat, microbenchmark
+License: GPL
+LazyLoad: yes
+LazyData: yes
+Encoding: UTF-8
+VignetteBuilder: knitr
+BugReports: http://github.com/jranke/mkin/issues
+URL: http://cran.r-project.org/package=mkin,
+        http://kinfit.r-forge.r-project.org/mkin_static,
+        http://github.com/jranke/mkin
+NeedsCompilation: no
+Packaged: 2015-06-23 13:22:05 UTC; jranke
+Author: Johannes Ranke [aut, cre, cph],
+  Katrin Lindenberger [ctb],
+  René Lehmann [ctb],
+  Eurofins Regulatory AG [cph]
+Maintainer: Johannes Ranke <jranke@uni-bremen.de>
+Repository: CRAN
+Date/Publication: 2015-06-23 17:26:35

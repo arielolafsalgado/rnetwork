@@ -1,0 +1,41 @@
+Package: segmentr
+Type: Package
+Title: Segment Data With Maximum Likelihood
+Version: 0.1.1
+Authors@R: c(
+    person("Thales", "Mello", email = "thalesmello@gmail.com", role = c("aut", "cre", "cph")),
+    person("Florencia", "Leonardi", role = c("aut", "cph", "ths")),
+    person("Bruno M.", "de Castro", role = c("cph")),
+    person("Deutscher Wetterdienst", role = c("cph"))
+    )
+Maintainer: Thales Mello <thalesmello@gmail.com>
+Description: Given a likelihood provided by the user, this package applies it
+    to a given matrix dataset in order to find change points in the data that
+    maximize the sum of the likelihoods of all the segments. This package provides
+    a handful of algorithms with different time complexities and assumption compromises
+    so the user is able to choose the best one for the problem at hand. The implementation
+    of the segmentation algorithms in this package are based on the paper by Bruno M. de Castro,
+	Florencia Leonardi (2018) <arXiv:1501.01756>. The Berlin
+	weather sample dataset was provided by Deutscher Wetterdienst <https://dwd.de/>.
+	You can find all the references in the Acknowledgments section of this package's
+	repository via the URL below.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 2.10)
+Imports: Rcpp (>= 0.12.16), foreach, glue
+LinkingTo: Rcpp
+Suggests: testthat, doParallel, knitr, rmarkdown, tidyr, tibble, dplyr,
+        lubridate, magrittr, rdwd
+RoxygenNote: 6.1.0
+VignetteBuilder: knitr
+Language: en-US
+URL: https://github.com/thalesmello/segmentr
+NeedsCompilation: yes
+Packaged: 2019-01-09 21:23:16 UTC; thalesmello
+Author: Thales Mello [aut, cre, cph],
+  Florencia Leonardi [aut, cph, ths],
+  Bruno M. de Castro [cph],
+  Deutscher Wetterdienst [cph]
+Repository: CRAN
+Date/Publication: 2019-01-17 16:50:03 UTC

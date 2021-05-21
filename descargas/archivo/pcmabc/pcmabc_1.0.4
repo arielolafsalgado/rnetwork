@@ -1,0 +1,20 @@
+Package: pcmabc
+Type: Package
+Title: Approximate Bayesian Computations for Phylogenetic Comparative
+        Methods
+Version: 1.0.4
+Date: 2019-04-03
+Author: Krzysztof Bartoszek <krzbar@protonmail.ch>, Pietro Lio'
+Maintainer: Krzysztof Bartoszek <krzbar@protonmail.ch>
+Description: Fits by ABC, the parameters of a stochastic process modelling the phylogeny and evolution of a suite of traits following the tree. The user may define an arbitrary Markov process for the trait and phylogeny. Importantly, trait-dependent speciation models are handled and fitted to data. See K. Bartoszek, P. Lio' (2019) <10.5506/APhysPolBSupp.12.25>.
+Depends: R(>= 2.9.1)
+Imports: ape (>= 3.0.6), distory, geiger, graphics, methods, mvSLOUCH,
+        phangorn, stats, TreeSim, utils, yuima
+License: GPL (>= 2) | file LICENCE
+LazyLoad: yes
+Collate: ABCdist.R ABCmessage.R ABC.R ABCupdate.R draw.R getTipSample.R
+        rates.R simsde.R simtree.R
+NeedsCompilation: no
+Repository: CRAN
+Packaged: 2019-04-03 07:02:20 UTC; kbart
+Date/Publication: 2019-04-03 08:10:03 UTC

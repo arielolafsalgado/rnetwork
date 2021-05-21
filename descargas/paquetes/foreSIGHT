@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package foreSIGHT</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Systems Insights from Generation of Hydroclimatic Timeseries [R package foreSIGHT version 0.9.81]" />
+<meta name="citation_author1" content="Bree Bennett" />
+<meta name="citation_author2" content="Sam Culley" />
+<meta name="citation_author3" content="Seth Westra" />
+<meta name="citation_publication_date" content="2019-12-04" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=foreSIGHT" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=foreSIGHT" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="foreSIGHT: Systems Insights from Generation of Hydroclimatic Timeseries" />
+<meta name="og:description" content="A tool to create hydroclimate scenarios, stress test systems and visualize system performance in scenario-neutral climate change impact assessments. Scenario-neutral approaches 'stress-test' the performance of a modelled system by applying a wide range of plausible hydroclimate conditions (see Brown &amp;amp; Wilby (2012) &amp;lt;&lt;a href=&quot;https://doi.org/10.1029%2F2012EO410001&quot;&gt;doi:10.1029/2012EO410001&lt;/a&gt;&amp;gt; and Prudhomme et al. (2010) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.jhydrol.2010.06.043&quot;&gt;doi:10.1016/j.jhydrol.2010.06.043&lt;/a&gt;&amp;gt;). These approaches allow the identification of hydroclimatic variables that affect the vulnerability of a system to hydroclimate variation and change. This tool enables the generation of perturbed time series using a range of approaches including simple scaling of observed time series (e.g. Culley et al. (2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2F2015WR018253&quot;&gt;doi:10.1002/2015WR018253&lt;/a&gt;&amp;gt;) and stochastic simulation of perturbed time series via an inverse approach (see Guo et al. (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.jhydrol.2016.03.025&quot;&gt;doi:10.1016/j.jhydrol.2016.03.025&lt;/a&gt;&amp;gt;). It incorporates a number of stochastic weather models to generate hydroclimate variables on a daily basis (e.g. precipitation, temperature, potential evapotranspiration) and allows a variety of different hydroclimate variable properties, herein called attributes, to be perturbed. Options are included for the easy integration of existing system models both internally in R and externally for seamless 'stress-testing'. A suite of visualization options for the results of a scenario-neutral analysis (e.g. plotting performance spaces and overlaying climate projection information) are also included. As further developments in scenario-neutral approaches occur the tool will be updated to incorporate these advances." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=foreSIGHT" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>foreSIGHT: Systems Insights from Generation of Hydroclimatic Timeseries</h2>
+<p>A tool to create hydroclimate scenarios, stress test systems and visualize system performance in scenario-neutral climate change impact assessments. Scenario-neutral approaches 'stress-test' the performance of a modelled system by applying a wide range of plausible hydroclimate conditions (see Brown &amp; Wilby (2012) &lt;<a href="https://doi.org/10.1029%2F2012EO410001">doi:10.1029/2012EO410001</a>&gt; and Prudhomme et al. (2010) &lt;<a href="https://doi.org/10.1016%2Fj.jhydrol.2010.06.043">doi:10.1016/j.jhydrol.2010.06.043</a>&gt;). These approaches allow the identification of hydroclimatic variables that affect the vulnerability of a system to hydroclimate variation and change. This tool enables the generation of perturbed time series using a range of approaches including simple scaling of observed time series (e.g. Culley et al. (2016) &lt;<a href="https://doi.org/10.1002%2F2015WR018253">doi:10.1002/2015WR018253</a>&gt;) and stochastic simulation of perturbed time series via an inverse approach (see Guo et al. (2018) &lt;<a href="https://doi.org/10.1016%2Fj.jhydrol.2016.03.025">doi:10.1016/j.jhydrol.2016.03.025</a>&gt;). It incorporates a number of stochastic weather models to generate hydroclimate variables on a daily basis (e.g. precipitation, temperature, potential evapotranspiration) and allows a variety of different hydroclimate variable properties, herein called attributes, to be perturbed. Options are included for the easy integration of existing system models both internally in R and externally for seamless 'stress-testing'. A suite of visualization options for the results of a scenario-neutral analysis (e.g. plotting performance spaces and overlaying climate projection information) are also included. As further developments in scenario-neutral approaches occur the tool will be updated to incorporate these advances.</p>
+<table summary="Package foreSIGHT summary">
+<tr>
+<td>Version:</td>
+<td>0.9.81</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3.0), <a href="../GA/index.html">GA</a> (&ge; 3.0.2), <a href="../zoo/index.html">zoo</a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../doParallel/index.html">doParallel</a>, <a href="../ggplot2/index.html">ggplot2</a> (&ge; 3.0.0), <a href="../directlabels/index.html">directlabels</a>, <a href="../cowplot/index.html">cowplot</a>, stats, graphics, grDevices, utils, <a href="../moments/index.html">moments</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a> (&ge; 1.8), <a href="../rmarkdown/index.html">rmarkdown</a> (&ge; 1.18)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-12-04</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Bree Bennett <a href="https://orcid.org/0000-0002-2131-088X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Sam Culley <a href="https://orcid.org/0000-0003-4798-8522"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Seth Westra <a href="https://orcid.org/0000-0003-4023-6061"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Danlu Guo <a href="https://orcid.org/0000-0003-1083-1214"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb],
+  Holger Maier <a href="https://orcid.org/0000-0002-0277-6887"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ths]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Bree Bennett  &#x3c;&#x62;&#x72;&#x65;&#x65;&#x2e;&#x62;&#x65;&#x6e;&#x6e;&#x65;&#x74;&#x74;&#x20;&#x61;&#x74;&#x20;&#x61;&#x64;&#x65;&#x6c;&#x61;&#x69;&#x64;&#x65;&#x2e;&#x65;&#x64;&#x75;&#x2e;&#x61;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/bsbennett/foreSIGHT/issues">https://github.com/bsbennett/foreSIGHT/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_foreSIGHT.html">foreSIGHT results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package foreSIGHT downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="foreSIGHT.pdf"> foreSIGHT.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Vignette.html">foreSIGHT - an introductory tutorial in scenario-neutral climate impact assessment</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/foreSIGHT_0.9.81.tar.gz"> foreSIGHT_0.9.81.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/foreSIGHT_0.9.81.zip">foreSIGHT_0.9.81.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/foreSIGHT_0.9.81.zip">foreSIGHT_0.9.81.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/foreSIGHT_0.9.81.zip">foreSIGHT_0.9.81.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/foreSIGHT_0.9.81.tgz">foreSIGHT_0.9.81.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/foreSIGHT_0.9.81.tgz">foreSIGHT_0.9.81.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/foreSIGHT"> foreSIGHT archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=foreSIGHT"><samp>https://CRAN.R-project.org/package=foreSIGHT</samp></a>
+to link to this page.</p>
+</body>
+</html>

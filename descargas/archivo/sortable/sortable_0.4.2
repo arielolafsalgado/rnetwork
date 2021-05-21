@@ -1,0 +1,53 @@
+Type: Package
+Package: sortable
+Title: Drag-and-Drop in 'shiny' Apps with 'SortableJS'
+Version: 0.4.2
+Date: 2019-11-28
+Authors@R: 
+    c(person(given = "Andrie",
+             family = "de Vries",
+             role = c("cre", "aut"),
+             email = "apdevries@gmail.com"),
+      person(given = "Barret",
+             family = "Schloerke",
+             role = "aut",
+             email = "barret@rstudio.com"),
+      person(given = "Kenton",
+             family = "Russell",
+             role = c("aut", "ccp"),
+             email = "kent.russell@timelyportfolio.com",
+             comment = "Original author"),
+      person(given = "Lebedev",
+             family = "Konstantin",
+             role = "cph",
+             comment = "'SortableJS', http://sortablejs.github.io/Sortable/"))
+Description: Enables drag-and-drop behaviour in Shiny apps, by exposing the 
+    functionality of the 'SortableJS' <https://sortablejs.github.io/Sortable/> 
+    JavaScript library as an 'htmlwidget' <http://htmlwidgets.org>. 
+    You can use this in Shiny apps and widgets, 'learnr' tutorials as well as 
+    R Markdown. In addition, provides a custom 'learnr' question type - 
+    'question_rank()' - that allows ranking questions with drag-and-drop.
+License: MIT + file LICENSE
+URL: https://github.com/rstudio/sortable,
+        https://rstudio.github.io/sortable/
+BugReports: https://github.com/rstudio/sortable/issues
+Imports: htmltools, htmlwidgets, learnr (>= 0.10.0), shiny, assertthat,
+        jsonlite, utils, ellipsis
+Suggests: base64, knitr, testthat (>= 2.1.0), withr, rmarkdown,
+        magrittr, lifecycle, webshot, spelling
+VignetteBuilder: knitr
+RdMacros: lifecycle
+Encoding: UTF-8
+LazyData: TRUE
+RoxygenNote: 6.1.1
+Language: en-US
+NeedsCompilation: no
+Packaged: 2019-11-28 09:12:23 UTC; apdev
+Author: Andrie de Vries [cre, aut],
+  Barret Schloerke [aut],
+  Kenton Russell [aut, ccp] (Original author),
+  Lebedev Konstantin [cph] ('SortableJS',
+    http://sortablejs.github.io/Sortable/)
+Maintainer: Andrie de Vries <apdevries@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-12-01 12:20:05 UTC

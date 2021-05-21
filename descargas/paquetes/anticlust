@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package anticlust</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Subset Partitioning via Anticlustering [R package anticlust version 0.5.3]" />
+<meta name="citation_author" content="Martin Papenberg" />
+<meta name="citation_publication_date" content="2020-09-25" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=anticlust" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=anticlust" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="anticlust: Subset Partitioning via Anticlustering" />
+<meta name="og:description" content="The method of anticlustering partitions a pool of elements into groups (i.e., anticlusters) in such a way that the between-group similarity is maximized and &amp;ndash; at the same time &amp;ndash; the within-group heterogeneity is maximized. This reverses the logic of cluster analysis that strives for high within-group homogeneity and low similarity of the different groups. Computationally, anticlustering is accomplished by maximizing instead of minimizing a clustering objective function, such as the intra-cluster variance (used in k-means clustering) or the sum of pairwise distances within clusters. The function anticlustering() implements exact and heuristic anticlustering algorithms as described in Papenberg and Klau (2020; &amp;lt;&lt;a href=&quot;https://doi.org/10.1037%2Fmet0000301&quot;&gt;doi:10.1037/met0000301&lt;/a&gt;&amp;gt;). The exact approach requires that the GNU linear programming kit (&amp;lt;&lt;a href=&quot;https://www.gnu.org/software/glpk/glpk.html&quot;&gt;https://www.gnu.org/software/glpk/glpk.html&lt;/a&gt;&amp;gt;) is available and the R package 'Rglpk' (&amp;lt;&lt;a href=&quot;https://cran.R-project.org/package=Rglpk&quot;&gt;https://cran.R-project.org/package=Rglpk&lt;/a&gt;&amp;gt;) is installed. Some other functions are available to solve classical clustering problems. The function balanced_clustering() applies a cluster analysis under size constraints, i.e., creates equal-sized clusters. The function matching() can be used for (unrestricted, bipartite, or K-partite) matching. The function wce() can be used optimally solve the (weighted) cluster editing problem, also known as correlation clustering, clique partitioning problem or transitivity clustering." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=anticlust" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>anticlust: Subset Partitioning via Anticlustering</h2>
+<p>The method of anticlustering partitions a pool of
+    elements into groups (i.e., anticlusters) in such a way that the
+    between-group similarity is maximized and &ndash; at the same time &ndash; the
+    within-group heterogeneity is maximized. This reverses the logic of
+    cluster analysis that strives for high within-group homogeneity and
+    low similarity of the different groups. Computationally,
+    anticlustering is accomplished by maximizing instead of minimizing a
+    clustering objective function, such as the intra-cluster variance
+    (used in k-means clustering) or the sum of pairwise distances within
+    clusters.  The function anticlustering() implements exact and
+    heuristic anticlustering algorithms as described in Papenberg and Klau
+    (2020; &lt;<a href="https://doi.org/10.1037%2Fmet0000301">doi:10.1037/met0000301</a>&gt;). The exact approach requires that the
+    GNU linear programming kit
+    (&lt;<a href="https://www.gnu.org/software/glpk/glpk.html">https://www.gnu.org/software/glpk/glpk.html</a>&gt;) is available and the R
+    package 'Rglpk' (&lt;<a href="https://cran.R-project.org/package=Rglpk">https://cran.R-project.org/package=Rglpk</a>&gt;) is
+    installed. Some other functions are available to solve classical
+    clustering problems. The function balanced_clustering() applies a
+    cluster analysis under size constraints, i.e., creates equal-sized
+    clusters. The function matching() can be used for (unrestricted,
+    bipartite, or K-partite) matching. The function wce() can be used
+    optimally solve the (weighted) cluster editing problem, also known as
+    correlation clustering, clique partitioning problem or transitivity
+    clustering.</p>
+<table summary="Package anticlust summary">
+<tr>
+<td>Version:</td>
+<td>0.5.3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.6.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Matrix/index.html">Matrix</a>, <a href="../RANN/index.html">RANN</a> (&ge; 2.6.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../Rglpk/index.html">Rglpk</a>, <a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-25</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Martin Papenberg <a href="https://orcid.org/0000-0002-9900-4268"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Meik Michalke [ctb] (centroid based clustering algorithm),
+  Gunnar W. Klau [ths],
+  Juliane V. Tkotz [ctb] (package logo)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Martin Papenberg  &#x3c;&#x6d;&#x61;&#x72;&#x74;&#x69;&#x6e;&#x2e;&#x70;&#x61;&#x70;&#x65;&#x6e;&#x62;&#x65;&#x72;&#x67;&#x20;&#x61;&#x74;&#x20;&#x68;&#x68;&#x75;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/m-Py/anticlust/issues">https://github.com/m-Py/anticlust/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/m-Py/anticlust">https://github.com/m-Py/anticlust</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>The exact (anti)clustering algorithms require that
+the GNU linear programming kit (GLPK library) is installed
+(&lt;http://www.gnu.org/software/glpk/&gt;). Rendering the vignette
+requires pandoc.</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">anticlust citation info</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_anticlust.html">anticlust results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package anticlust downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="anticlust.pdf"> anticlust.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/stimulus-selection.html">Using the R package anticlust for stimulus selection in experiments</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/anticlust_0.5.3.tar.gz"> anticlust_0.5.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/anticlust_0.5.3.zip">anticlust_0.5.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/anticlust_0.5.3.zip">anticlust_0.5.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/anticlust_0.5.3.zip">anticlust_0.5.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/anticlust_0.5.3.tgz">anticlust_0.5.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/anticlust_0.5.3.tgz">anticlust_0.5.3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/anticlust"> anticlust archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=anticlust"><samp>https://CRAN.R-project.org/package=anticlust</samp></a>
+to link to this page.</p>
+</body>
+</html>

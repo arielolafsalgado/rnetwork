@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package sisal</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Sequential Input Selection Algorithm [R package sisal version 0.48]" />
+<meta name="citation_author" content="Mikko Korpela" />
+<meta name="citation_publication_date" content="2020-02-15" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=sisal" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=sisal" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="sisal: Sequential Input Selection Algorithm" />
+<meta name="og:description" content="Implements the SISAL algorithm by Tikka and Hollmén. It is a sequential backward selection algorithm which uses a linear model in a cross-validation setting. Starting from the full model, one variable at a time is removed based on the regression coefficients. From this set of models, a parsimonious (sparse) model is found by choosing the model with the smallest number of variables among those models where the validation error is smaller than a threshold. Also implements extensions which explore larger parts of the search space and/or use ridge regression instead of ordinary least squares." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=sisal" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>sisal: Sequential Input Selection Algorithm</h2>
+<p>Implements the SISAL algorithm by Tikka and Hollmén. It is
+        a sequential backward selection algorithm which uses a linear
+        model in a cross-validation setting. Starting from the full
+        model, one variable at a time is removed based on the
+        regression coefficients. From this set of models, a
+        parsimonious (sparse) model is found by choosing the model with
+        the smallest number of variables among those models where the
+        validation error is smaller than a threshold. Also implements
+        extensions which explore larger parts of the search space
+        and/or use ridge regression instead of ordinary least squares.</p>
+<table summary="Package sisal summary">
+<tr>
+<td>Version:</td>
+<td>0.48</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.1.2)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>graphics, grDevices, grid, methods, stats, utils, <a href="../boot/index.html">boot</a>, <a href="../lattice/index.html">lattice</a>, <a href="../mgcv/index.html">mgcv</a>, <a href="../digest/index.html">digest</a>, <a href="../R.matlab/index.html">R.matlab</a>, <a href="../R.methodsS3/index.html">R.methodsS3</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="http://www.bioconductor.org/packages/release/bioc/html/graph.html"><span class="BioC">graph</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/Rgraphviz.html"><span class="BioC">Rgraphviz</span></a>, <a href="../testthat/index.html">testthat</a> (&ge; 0.8)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-02-15</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Mikko Korpela [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Mikko Korpela  &#x3c;&#x6d;&#x76;&#x6b;&#x6f;&#x72;&#x70;&#x65;&#x6c;&#x20;&#x61;&#x74;&#x20;&#x69;&#x6b;&#x69;&#x2e;&#x66;&#x69;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/mvkorpel/sisal/issues">https://github.com/mvkorpel/sisal/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>Copyright:</td>
+<td>Aalto University</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/mvkorpel/sisal">https://github.com/mvkorpel/sisal</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">sisal citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_sisal.html">sisal results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package sisal downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="sisal.pdf"> sisal.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/sisal_0.48.tar.gz"> sisal_0.48.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/sisal_0.48.zip">sisal_0.48.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/sisal_0.48.zip">sisal_0.48.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/sisal_0.48.zip">sisal_0.48.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/sisal_0.48.tgz">sisal_0.48.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/sisal_0.48.tgz">sisal_0.48.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/sisal"> sisal archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=sisal"><samp>https://CRAN.R-project.org/package=sisal</samp></a>
+to link to this page.</p>
+</body>
+</html>

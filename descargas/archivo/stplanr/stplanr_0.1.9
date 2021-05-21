@@ -1,0 +1,39 @@
+Package: stplanr
+Type: Package
+Title: Sustainable Transport Planning
+Version: 0.1.9
+Authors@R: c(
+    person("Robin", "Lovelace", email = "rob00x@gmail.com", role = c("aut", "cre")),
+    person("Richard", "Ellison", role = c("aut")),
+    person("Barry", "Rowlingson", role = c("ctb"), comment = "Author of overline"),
+    person("Nick", "Bearman", role = c("ctb"), comment = "Co-author of gclip"),
+    person("Malcolm", "Morgan", role = c("ctb"), comment = "Co-author of angle_diff"),
+    person("Nikolai", "Berkoff", role = c("ctb"), comment = "Co-author of line2route")
+    )
+Maintainer: Robin Lovelace <rob00x@gmail.com>
+Description: Functionality and data access tools for transport planning,
+    including origin-destination analysis, route allocation and modelling travel
+    patterns.
+License: MIT + file LICENSE
+BugReports: https://github.com/ropensci/stplanr/issues
+LazyData: yes
+Depends: sp, R (>= 3.0)
+Imports: curl, readr, dplyr, httr, jsonlite, stringi, stringr,
+        lubridate, maptools, raster, rgdal, rgeos, openxlsx, methods,
+        R.utils, geosphere, Rcpp (>= 0.12.1), igraph, nabor, rlang
+LinkingTo: RcppArmadillo, Rcpp
+Suggests: testthat, knitr, rmarkdown, tmap
+VignetteBuilder: knitr
+URL: https://github.com/ropensci/stplanr
+SystemRequirements: GNU make
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2017-07-12 15:00:49 UTC; robin
+Author: Robin Lovelace [aut, cre],
+  Richard Ellison [aut],
+  Barry Rowlingson [ctb] (Author of overline),
+  Nick Bearman [ctb] (Co-author of gclip),
+  Malcolm Morgan [ctb] (Co-author of angle_diff),
+  Nikolai Berkoff [ctb] (Co-author of line2route)
+Repository: CRAN
+Date/Publication: 2017-07-12 15:09:26 UTC

@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package funreg</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Functional Regression for Irregularly Timed Data [R package funreg version 1.2]" />
+<meta name="citation_author1" content="John Dziak" />
+<meta name="citation_author2" content="Mariya Shiyko" />
+<meta name="citation_publication_date" content="2016-08-24" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=funreg" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=funreg" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="funreg: Functional Regression for Irregularly Timed Data" />
+<meta name="og:description" content="Performs functional regression, and some related approaches, for intensive longitudinal data (see the book by Walls &amp;amp; Schafer, 2006, Models for Intensive Longitudinal Data, Oxford) when such data is not necessarily observed on an equally spaced grid of times. The approach generally follows the ideas of Goldsmith, Bobb, Crainiceanu, Caffo, and Reich (2011)&amp;lt;&lt;a href=&quot;https://doi.org/10.1198%2Fjcgs.2010.10007&quot;&gt;doi:10.1198/jcgs.2010.10007&lt;/a&gt;&amp;gt; and the approach taken in their sample code, but with some modifications to make it more feasible to use with long rather than wide, non-rectangular longitudinal datasets with unequal and potentially random measurement times. It also allows easy plotting of the correlation between the smoothed covariate and the outcome as a function of time, which can add additional insights on how to interpret a functional regression. Additionally, it also provides several permutation tests for the significance of the functional predictor. The heuristic interpretation of &amp;ldquo;time&amp;rdquo; is used to describe the index of the functional predictor, but the same methods can equally be used for another unidimensional continuous index, such as space along a north-south axis. The development of this package was part of a research project supported by Award R03 CA171809-01 from the National Cancer Institute and Award P50 DA010075 from the National Institute on Drug Abuse. The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institute on Drug Abuse, the National Cancer Institute, or the National Institutes of Health." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=funreg" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>funreg: Functional Regression for Irregularly Timed Data</h2>
+<p>Performs functional regression, and some related
+    approaches, for intensive longitudinal data (see the book by Walls &amp; Schafer, 
+    2006, Models for Intensive Longitudinal Data, Oxford) when such data is not
+    necessarily observed on an equally spaced grid of times.  The
+    approach generally follows the ideas of Goldsmith, Bobb, Crainiceanu,
+    Caffo, and Reich (2011)&lt;<a href="https://doi.org/10.1198%2Fjcgs.2010.10007">doi:10.1198/jcgs.2010.10007</a>&gt; and the approach taken in their sample code, but
+    with some modifications to make it more feasible to use with long rather
+    than wide, non-rectangular longitudinal datasets with unequal and
+    potentially random measurement times.  It also allows easy plotting of the
+    correlation between the smoothed covariate and the outcome as a function of
+    time, which can add additional insights on how to interpret a functional
+    regression.  Additionally, it also provides several permutation tests for
+    the significance of the functional predictor.  The heuristic interpretation
+    of &ldquo;time&rdquo; is used to describe the index of the functional predictor, but
+    the same methods can equally be used for another unidimensional continuous
+    index, such as space along a north-south axis.  The development of this
+    package was part of a research project supported by Award R03 CA171809-01
+    from the National Cancer Institute and Award P50 DA010075 from the National
+    Institute on Drug Abuse. The content is solely the responsibility of the
+    authors and does not necessarily represent the official views of the
+    National Institute on Drug Abuse, the National Cancer Institute, or the
+    National Institutes of Health.</p>
+<table summary="Package funreg summary">
+<tr>
+<td>Version:</td>
+<td>1.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.15.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../MASS/index.html">MASS</a>, <a href="../mgcv/index.html">mgcv</a>, <a href="../mvtnorm/index.html">mvtnorm</a>, splines</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2016-08-24</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>John Dziak [aut, cre],
+  Mariya Shiyko [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>John Dziak  &#x3c;&#x6a;&#x6a;&#x64;&#x32;&#x36;&#x34;&#x20;&#x61;&#x74;&#x20;&#x70;&#x73;&#x75;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>Copyright:</td>
+<td>The Pennsylvania State University and Northeastern
+University</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_funreg.html">funreg results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package funreg downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="funreg.pdf"> funreg.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/funreg_1.2.tar.gz"> funreg_1.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/funreg_1.2.zip">funreg_1.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/funreg_1.2.zip">funreg_1.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/funreg_1.2.zip">funreg_1.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/funreg_1.2.tgz">funreg_1.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/funreg_1.2.tgz">funreg_1.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/funreg"> funreg archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=funreg"><samp>https://CRAN.R-project.org/package=funreg</samp></a>
+to link to this page.</p>
+</body>
+</html>

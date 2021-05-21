@@ -1,0 +1,37 @@
+Package: denvax
+Type: Package
+Title: Simple Dengue Test and Vaccinate Cost Thresholds
+Version: 0.1.1
+Authors@R: c(
+    person("Carl A. B.", "Pearson", email="carl.pearson@lshtm.ac.uk", role = c("aut","cre"), comment = c(ORCID="0000-0003-0701-7860")),
+    person("Kaja M.", "Abbas", role = c("aut"), comment = c(ORCID="0000-0003-0563-1576")),
+    person("Samuel", "Clifford", role = c("aut"), comment = c(ORCID="0000-0002-3774-3882")),
+    person("Stefan", "Flasche", role = c("aut"), comment = c(ORCID="0000-0002-5808-2606")),
+    person("Thomas J.", "Hladish", role = c("aut"), comment = c(ORCID="0000-0003-1819-6235"))
+  )
+Description: Provides the mathematical model described by "Serostatus Testing & Dengue Vaccine Cost-Benefit Thresholds"
+    in <doi:10.1098/rsif.2019.0234>.  Using the functions in the package,
+    that analysis can be repeated using sample life histories, either synthesized from local seroprevalence data
+    using other functions in this package (as in the manuscript) or from some other source.
+    The package provides a vignette which walks through the analysis in the publication, as well as a function
+    to generate a project skeleton for such an analysis.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5)
+Suggests: data.table, testthat, usethis, devtools, roxygen2, jsonlite,
+        ggplot2, cowplot, directlabels, rmarkdown, knitr
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+URL: https://gitlab.com/cabp_LSHTM/denvax
+BugReports: https://gitlab.com/cabp_LSHTM/denvax/issues
+NeedsCompilation: no
+Packaged: 2019-08-21 11:36:28 UTC; carl
+Author: Carl A. B. Pearson [aut, cre] (<https://orcid.org/0000-0003-0701-7860>),
+  Kaja M. Abbas [aut] (<https://orcid.org/0000-0003-0563-1576>),
+  Samuel Clifford [aut] (<https://orcid.org/0000-0002-3774-3882>),
+  Stefan Flasche [aut] (<https://orcid.org/0000-0002-5808-2606>),
+  Thomas J. Hladish [aut] (<https://orcid.org/0000-0003-1819-6235>)
+Maintainer: Carl A. B. Pearson <carl.pearson@lshtm.ac.uk>
+Repository: CRAN
+Date/Publication: 2019-08-21 13:10:02 UTC

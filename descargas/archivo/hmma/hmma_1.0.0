@@ -1,0 +1,55 @@
+Package: hmma
+Type: Package
+Title: Constructs Asymmetric Hidden Markov Models
+Version: 1.0.0
+Authors@R: 
+    c(person(given = "Marcos L.P",
+             family = "Bueno",
+             role = "aut",
+             email = "mbueno@cs.ru.nl"),
+      person(given = "Arjen",
+             family = "Hommersom",
+             role = c("aut", "cre"),
+             email = "arjen.hommersom@ou.nl"),
+      person(given = "Joop",
+             family = "Thibaudier",
+             role = "aut",
+             email = "jthibaudier@gmail.com"),
+      person(given = "Marco",
+             family = "Scutari",
+             role = "ctb",
+             email = "marco.scutari@gmail.com"),
+      person(given = "Robert",
+             family = "Ness",
+             role = "ctb"),
+      person("Robert Gentleman and Ross Ihaka",
+             role = "cph"),
+      person("The R Development Core Team",
+             role = "cph"),
+      person("The R Foundation",
+             role = "cph"))
+Description: Asymmetric hidden Markov model (HMM-A) learning. 
+   HMM-As are similar to regular HMMs, but use Bayesian Networks (BNs) in 
+   their emission distribution. The HMM-As can therefore offer more problem 
+   insight [Bueno et al. 2017, <doi:10.1016/j.ijar.2017.05.011>].
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.6.0)
+VignetteBuilder: knitr
+Suggests: knitr, testthat, rmarkdown
+Imports: bnlearn, mhsmm, MCMCpack, Rgraphviz, graph, methods
+RoxygenNote: 7.1.0
+NeedsCompilation: yes
+Packaged: 2020-04-08 10:12:52 UTC; joopthibaudier
+Author: Marcos L.P Bueno [aut],
+  Arjen Hommersom [aut, cre],
+  Joop Thibaudier [aut],
+  Marco Scutari [ctb],
+  Robert Ness [ctb],
+  Robert Gentleman and Ross Ihaka [cph],
+  The R Development Core Team [cph],
+  The R Foundation [cph]
+Maintainer: Arjen Hommersom <arjen.hommersom@ou.nl>
+Repository: CRAN
+Date/Publication: 2020-04-08 16:00:02 UTC

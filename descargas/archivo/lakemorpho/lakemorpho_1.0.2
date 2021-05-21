@@ -1,0 +1,30 @@
+Package: lakemorpho
+Type: Package
+Title: Lake Morphometry Metrics in R
+Version: 1.0.2
+Date: 2016-05-113
+Authors@R: person(given = "Jeffrey W.", family = "Hollister",
+    role = c("aut","cre"),
+    email = "hollister.jeff@epa.gov")
+URL: http://www.github.com/USEPA/lakemorpho
+BugReports: https://www.github.com/USEPA/lakemorpho/issues
+Maintainer: Jeffrey W. Hollister <hollister.jeff@epa.gov>
+License: CC0
+Description: Lake morphometry metrics are used by limnologists to understand,
+    among other things, the ecological processes in a lake. Traditionally, these
+    metrics are calculated by hand, with planimeters, and increasingly with
+    commercial GIS products. All of these methods work; however, they are either
+    outdated, difficult to reproduce, or require expensive licenses to use. The
+    \code{lakemorpho} package provides the tools to calculate a typical suite
+    of these metrics from an input elevation model and lake polygon. The metrics
+    currently supported are: fetch, maximum length, maximum width, mean width,
+    maximum depth, mean depth, shoreline development, shoreline length, surface
+    area, and volume.
+Depends: R (>= 2.10), maptools
+Imports: methods, stats, grDevices, rgdal, raster, rgeos, sp, geosphere
+Author: Jeffrey W. Hollister [aut, cre]
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-05-13 13:39:50 UTC; jhollist
+Repository: CRAN
+Date/Publication: 2016-05-14 00:19:58

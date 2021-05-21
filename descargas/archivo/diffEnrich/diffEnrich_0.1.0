@@ -1,0 +1,39 @@
+Package: diffEnrich
+Title: Given a List of Gene Symbols, Performs Differential Enrichment
+        Analysis
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Harry",
+           family = "Smith",
+           role = c("aut", "cre"),
+           email = "harry.smith@ucdenver.edu"),
+    person(given = "Laura",
+           family = "Saba",
+           role = c("aut"),
+           email = "laura.saba@cuanschutz.edu"))
+Description: Compare functional enrichment between two experimentally-derived groups of genes or proteins (Peterson, DR., et al.(2018)) <doi: 10.1371/journal.pone.0198139>. Given a list of gene symbols, *diffEnrich*  will
+  perform differential enrichment analysis using the Kyoto Encyclopedia of Genes
+  and Genomes (KEGG) REST API. This package provides a number of functions that are 
+  intended to be used in a pipeline. Briefly, the user provides a KEGG formatted species id for either human, mouse or rat, and the package will
+  download and clean species specific ENTREZ gene IDs and map them to their respective
+  KEGG pathways by accessing KEGG's REST API. KEGG's API is used to guarantee the most up-to-date pathway data from KEGG. Next, the user will identify significantly
+  enriched pathways from two gene sets, and finally, the user will identify 
+  pathways that are differentially enriched between the two gene sets. In addition to 
+  the analysis pipeline, this package also provides a plotting function. 
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+URL: https://github.com/SabaLab/diffEnrich
+BugReports: https://github.com/SabaLab/diffEnrich/issues
+Suggests: knitr, rmarkdown, kableExtra, diagram
+Depends: dplyr, ggplot2, R (>= 2.10)
+Imports: here, stats, rlang, stringr, reshape2, ggnewscale
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-11-01 16:26:04 UTC; smiharry
+Author: Harry Smith [aut, cre],
+  Laura Saba [aut]
+Maintainer: Harry Smith <harry.smith@ucdenver.edu>
+Repository: CRAN
+Date/Publication: 2019-11-01 22:20:02 UTC

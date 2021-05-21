@@ -1,0 +1,31 @@
+Package: PCRedux
+Type: Package
+Title: Quantitative Polymerase Chain Reaction (qPCR) Machine Learning
+        Helper Tool
+Version: 0.2.5-1
+Date: 2017-11-20
+Authors@R: c(person("Stefan", "Roediger", email = "stefan.roediger@b-tu.de", role = c("cre", "aut")),
+             person("Michal", "Burdukiewicz", email = "michalburdukiewicz@gmail.com", role = c("aut")),
+             person("Andrej-Nikolai", "Spiess", email = "a.spiess@uke.de", role = c("aut")),
+             person("Konstantin A.", "Blagodatskikh", email = "k.blag@yandex.ru", role = c("aut")))
+Description: Extracts features from amplification curve data of quantitative Polymerase Chain Reactions (qPCR) (Pabinger, Stephan, Stefan Roediger, Albert Kriegner, Klemens Vierlinger, and Andreas Weinhauusel (2014) <doi:10.1016/j.bdq.2014.08.002>) for machine learning purposes. Helper functions prepare the amplification curve data for processing as functional data (e.g., Hausdorff distance) or enable the plotting of amplification curve classes (negative, ambiguous, positive). The hookreg() and hookregNL() functions can be used to predict amplification curves with an hook effect-like curvature. The pcrfit_single() function can be used to extract features from an amplification curve.
+License: MIT + file LICENSE
+URL: https://github.com/devSJR/PCRedux
+BugReports: https://github.com/devSJR/PCRedux/issues
+Depends: R (>= 3.3.3)
+Imports: bcp, changepoint, chipPCR, ecp, fda.usc, FFTrees, magrittr,
+        MBmca, pbapply, plotly, pracma, qpcR, robustbase, stats,
+        testthat, utils, visdat, zoo
+Suggests: data.table, drc, dplyr, knitr, RDML, readxl, rmarkdown,
+        xtable
+NeedsCompilation: no
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+Packaged: 2017-11-20 15:53:28 UTC; tux
+Author: Stefan Roediger [cre, aut],
+  Michal Burdukiewicz [aut],
+  Andrej-Nikolai Spiess [aut],
+  Konstantin A. Blagodatskikh [aut]
+Maintainer: Stefan Roediger <stefan.roediger@b-tu.de>
+Repository: CRAN
+Date/Publication: 2017-11-20 18:14:46 UTC

@@ -1,0 +1,26 @@
+Package: whSample
+Type: Package
+Title: Utilities for Sampling
+Version: 0.8.9
+Depends: R (>= 3.5.0)
+Authors@R: person("Paul", "West", role=c("aut", "cre"), email="fp8049@gmail.com")
+Description: Interactive tools for generating random samples. Users select an
+    .xlsx or .csv file with population data and are walked through selecting the
+    sample type (Simple Random Sample or Stratified), the number of backups
+    desired, and a "stratify_on" value (if desired). An .xlsx file is created
+    with the sample and key metadata for reference. It is menu-driven and lets
+    users pick an output directory. See vignettes for a detailed walk-through.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: data.table, magrittr, openxlsx, dplyr, purrr, tools,
+        rChoiceDialogs, rJava
+RoxygenNote: 7.1.1
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-08-25 21:26:54 UTC; Paul
+Author: Paul West [aut, cre]
+Maintainer: Paul West <fp8049@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-08-28 10:40:02 UTC

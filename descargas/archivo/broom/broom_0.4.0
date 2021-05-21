@@ -1,0 +1,47 @@
+Package: broom
+Type: Package
+Title: Convert Statistical Analysis Objects into Tidy Data Frames
+Version: 0.4.0
+Date: 2015-11-30
+Authors@R: c(
+    person("David", "Robinson", email = "admiral.david@gmail.com", role = c("aut", "cre")),
+    person("Matthieu", "Gomez", email = "mattg@princeton.edu", role = "ctb"),
+    person("Boris", "Demeshev", email = "boris.demeshev@gmail.com", role = "ctb"),
+    person("Dieter", "Menne", email = "dieter.menne@menne-biomed.de", role = "ctb"),
+    person("Benjamin", "Nutter", email = "nutter@battelle.org", role = "ctb"),
+    person("Luke", "Johnston", email = "luke.johnston@mail.utoronto.ca", role = "ctb"),
+    person("Ben", "Bolker", email = "bolker@mcmaster.ca", role = "ctb"),
+    person("Francois", "Briatte", email = "f.briatte@gmail.com", role = "ctb"),
+    person("Hadley", "Wickham", email = "hadley@rstudio.com", role = "ctb")
+    )
+Maintainer: David Robinson <admiral.david@gmail.com>
+Description: Convert statistical analysis objects from R into tidy data frames,
+    so that they can more easily be combined, reshaped and otherwise processed
+    with tools like 'dplyr', 'tidyr' and 'ggplot2'. The package provides three S3
+    generics: tidy, which summarizes a model's statistical findings such as
+    coefficients of a regression; augment, which adds columns to the original
+    data such as predictions, residuals and cluster assignments; and glance,
+    which provides a one-row summary of model-level statistics.
+Imports: plyr, dplyr, tidyr, psych, stringr, reshape2, nlme
+Suggests: knitr, boot, survival, gam, glmnet, lfe, Lahman, MASS, sp,
+        maps, maptools, multcomp, testthat, lme4, zoo, lmtest, plm,
+        biglm, ggplot2, nnet, geepack, AUC, ergm, network,
+        statnet.common, xergm, btergm, binGroup, Hmisc, bbmle, gamlss,
+        rstan, coda
+URL: http://github.com/dgrtwo/broom
+BugReports: http://github.com/dgrtwo/broom/issues
+VignetteBuilder: knitr
+License: MIT + file LICENSE
+NeedsCompilation: no
+Packaged: 2015-11-30 16:41:34 UTC; drobinson
+Author: David Robinson [aut, cre],
+  Matthieu Gomez [ctb],
+  Boris Demeshev [ctb],
+  Dieter Menne [ctb],
+  Benjamin Nutter [ctb],
+  Luke Johnston [ctb],
+  Ben Bolker [ctb],
+  Francois Briatte [ctb],
+  Hadley Wickham [ctb]
+Repository: CRAN
+Date/Publication: 2015-11-30 21:23:06

@@ -1,0 +1,30 @@
+Package: R.temis
+Type: Package
+Title: Integrated Text Mining Solution
+Version: 0.1.1
+Authors@R: c(person("Milan", "Bouchet-Valat", email="nalimilan@club.fr", role=c("aut", "cre")),
+             person("Gilles", "Bastin", email="gilles.bastin@sciencespo-grenoble.fr", role="aut"),
+             person("Antoine", "Chollet", email="antoine.chollet@eleve.ensai.fr", role="aut"))
+Imports: stats, utils, graphics, testthat, wordcloud, igraph, stringi,
+        crayon, SnowballC, tm.plugin.factiva, tm.plugin.lexisnexis,
+        tm.plugin.europresse, tm.plugin.alceste
+Depends: tm (>= 0.6), NLP, slam, FactoMineR, explor
+Description: An integrated solution to perform
+    a series of text mining tasks such as importing and cleaning a corpus, and
+    analyses like terms and documents counts, lexical summary, terms
+    co-occurrences and documents similarity measures, graphs of terms,
+    correspondence analysis and hierarchical clustering. Corpora can be imported
+    from spreadsheet-like files, directories of raw text files,
+    as well as from 'Dow Jones Factiva', 'LexisNexis', 'Europresse' and 'Alceste' files.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.0
+NeedsCompilation: no
+Packaged: 2018-12-21 14:14:58 UTC; milan
+Author: Milan Bouchet-Valat [aut, cre],
+  Gilles Bastin [aut],
+  Antoine Chollet [aut]
+Maintainer: Milan Bouchet-Valat <nalimilan@club.fr>
+Repository: CRAN
+Date/Publication: 2019-01-07 18:20:02 UTC

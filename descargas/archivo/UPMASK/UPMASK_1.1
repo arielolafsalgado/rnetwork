@@ -1,0 +1,23 @@
+Package: UPMASK
+Type: Package
+Title: Unsupervised Photometric Membership Assignment in Stellar
+        Clusters
+Version: 1.1
+Date: 2017-04-03
+Author: Alberto Krone-Martins, Andre Moitinho
+Maintainer: Alberto Krone-Martins <algol@sim.ul.pt>
+Description: An implementation of the UPMASK method for performing membership
+    assignment in stellar clusters in R. It is prepared to use photometry and
+    spatial positions, but it can take into account other types of data. The
+    method is able to take into account arbitrary error models, and it is
+    unsupervised, data-driven, physical-model-free and relies on as few
+    assumptions as possible. The approach followed for membership assessment is
+    based on an iterative process, principal component analysis, a clustering
+    algorithm and a kernel density estimation.
+Depends: R (>= 3.0)
+License: GPL (>= 3)
+Imports: parallel, MASS, RSQLite, DBI
+NeedsCompilation: no
+Packaged: 2017-04-03 18:28:39 UTC; algol
+Repository: CRAN
+Date/Publication: 2017-04-03 20:19:18 UTC

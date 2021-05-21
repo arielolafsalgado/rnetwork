@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package ampir</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Predict Antimicrobial Peptides [R package ampir version 1.0.0]" />
+<meta name="citation_author1" content="Legana Fingerhut" />
+<meta name="citation_author2" content="Ira Cooke" />
+<meta name="citation_publication_date" content="2020-05-11" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=ampir" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=ampir" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="ampir: Predict Antimicrobial Peptides" />
+<meta name="og:description" content="A toolkit to predict antimicrobial peptides from protein sequences on a genome-wide scale. It incorporates two support vector machine models (&quot;precursor&quot; and &quot;mature&quot;) trained on publicly available antimicrobial peptide data using calculated physico-chemical and compositional sequence properties described in Meher et al. (2017) &amp;lt;&lt;a href=&quot;https://doi.org/10.1038%2Fsrep42362&quot;&gt;doi:10.1038/srep42362&lt;/a&gt;&amp;gt;. In order to support genome-wide analyses, these models are designed to accept any type of protein as input and calculation of compositional properties has been optimised for high-throughput use. For details see Fingerhut et al. 2020 &amp;lt;&lt;a href=&quot;https://doi.org/10.1101%2F2020.05.07.082412&quot;&gt;doi:10.1101/2020.05.07.082412&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=ampir" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>ampir: Predict Antimicrobial Peptides</h2>
+<p>A toolkit to predict antimicrobial peptides from protein sequences on a genome-wide scale.
+    It incorporates two support vector machine models ("precursor" and "mature") trained on publicly available antimicrobial peptide data using calculated
+    physico-chemical and compositional sequence properties described in Meher et al. (2017) &lt;<a href="https://doi.org/10.1038%2Fsrep42362">doi:10.1038/srep42362</a>&gt;.
+    In order to support genome-wide analyses, these models are designed to accept any type of protein as input
+    and calculation of compositional properties has been optimised for high-throughput use. For details see Fingerhut et al. 2020 &lt;<a href="https://doi.org/10.1101%2F2020.05.07.082412">doi:10.1101/2020.05.07.082412</a>&gt;.</p>
+<table summary="Package ampir summary">
+<tr>
+<td>Version:</td>
+<td>1.0.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Peptides/index.html">Peptides</a>, <a href="../caret/index.html">caret</a> (&ge; 6.0.0), <a href="../kernlab/index.html">kernlab</a>, <a href="../Rcpp/index.html">Rcpp</a>, parallel</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../e1071/index.html">e1071</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-05-11</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Legana Fingerhut <a href="https://orcid.org/0000-0002-2482-5336"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Ira Cooke <a href="https://orcid.org/0000-0001-6520-1397"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Jinlong Zhang [ctb] (R/read_faa.R),
+  Nan Xiao [ctb] (R/calc_pseudo_comp.R)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Legana Fingerhut  &#x3c;&#x6c;&#x65;&#x67;&#x61;&#x6e;&#x61;&#x2e;&#x66;&#x69;&#x6e;&#x67;&#x65;&#x72;&#x68;&#x75;&#x74;&#x20;&#x61;&#x74;&#x20;&#x6d;&#x79;&#x2e;&#x6a;&#x63;&#x75;&#x2e;&#x65;&#x64;&#x75;&#x2e;&#x61;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/Legana/ampir">https://github.com/Legana/ampir</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_ampir.html">ampir results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package ampir downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="ampir.pdf"> ampir.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/ampir.html">Introduction to ampir</a><br/>
+<a href="vignettes/train_model.html">How to train your model</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/ampir_1.0.0.tar.gz"> ampir_1.0.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/ampir_1.0.0.zip">ampir_1.0.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/ampir_1.0.0.zip">ampir_1.0.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/ampir_1.0.0.zip">ampir_1.0.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/ampir_1.0.0.tgz">ampir_1.0.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/ampir_1.0.0.tgz">ampir_1.0.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/ampir"> ampir archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=ampir"><samp>https://CRAN.R-project.org/package=ampir</samp></a>
+to link to this page.</p>
+</body>
+</html>

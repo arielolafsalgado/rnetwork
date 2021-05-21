@@ -1,0 +1,28 @@
+Package: stevedore
+Title: Docker Client
+Version: 0.9.0
+Description: Work with containers over the Docker API.  Rather than
+    using system calls to interact with a docker client, using the
+    API directly means that we can receive richer information from
+    docker.  The interface in the package is automatically generated
+    using the 'OpenAPI' (a.k.a., 'swagger') specification, and all
+    return values are checked in order to make them type stable.
+License: MIT + file LICENSE
+Authors@R: c(person("Rich", "FitzJohn", role = c("aut", "cre"),
+    email = "rich.fitzjohn@gmail.com"))
+URL: https://github.com/richfitz/stevedore
+BugReports: https://github.com/richfitz/stevedore/issues
+Imports: crayon, curl (>= 2.3.0), jsonlite, yaml (>= 2.1.18)
+Suggests: knitr, openssl, redux, reticulate, rmarkdown, testthat, withr
+SystemRequirements: docker
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+Encoding: UTF-8
+ByteCompile: TRUE
+Language: en-GB
+NeedsCompilation: no
+Packaged: 2018-11-12 08:32:15 UTC; rich
+Author: Rich FitzJohn [aut, cre]
+Maintainer: Rich FitzJohn <rich.fitzjohn@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-11-19 18:30:02 UTC

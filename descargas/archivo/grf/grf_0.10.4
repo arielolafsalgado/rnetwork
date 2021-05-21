@@ -1,0 +1,42 @@
+Package: grf
+Title: Generalized Random Forests
+Version: 0.10.4
+Authors@R: c(
+    person("Julie", "Tibshirani", role = c("aut", "cre"), email = "jtibs@cs.stanford.edu"),
+    person("Susan", "Athey", role = "aut"),
+    person("Rina", "Friedberg", role = "ctb"),
+    person("Vitor", "Hadad", role = "ctb"),
+    person("David", "Hirshberg", role = "ctb"),
+    person("Luke", "Miner", role = "ctb"),
+    person("Erik", "Sverdrup", role = "ctb"),
+    person("Stefan", "Wager", role = "aut"),
+    person("Marvin", "Wright", role = "ctb")
+    )
+BugReports: https://github.com/grf-labs/grf/issues
+Description: A pluggable package for forest-based statistical estimation and inference.
+    GRF currently provides methods for non-parametric least-squares regression,
+    quantile regression, and treatment effect estimation (optionally using instrumental
+    variables).
+Depends: R (>= 3.3.0)
+License: GPL-3
+LinkingTo: Rcpp, RcppEigen
+Imports: DiceKriging, lmtest, Matrix, methods, Rcpp (>= 0.12.15),
+        sandwich (>= 2.4-0)
+RoxygenNote: 6.1.1
+Suggests: DiagrammeR, testthat,
+SystemRequirements: GNU make
+URL: https://github.com/grf-labs/grf
+NeedsCompilation: yes
+Packaged: 2019-09-03 01:26:53 UTC; jtibshirani
+Author: Julie Tibshirani [aut, cre],
+  Susan Athey [aut],
+  Rina Friedberg [ctb],
+  Vitor Hadad [ctb],
+  David Hirshberg [ctb],
+  Luke Miner [ctb],
+  Erik Sverdrup [ctb],
+  Stefan Wager [aut],
+  Marvin Wright [ctb]
+Maintainer: Julie Tibshirani <jtibs@cs.stanford.edu>
+Repository: CRAN
+Date/Publication: 2019-09-03 12:30:02 UTC

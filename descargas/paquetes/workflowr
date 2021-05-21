@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package workflowr</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="A Framework for Reproducible and Collaborative Data Science [R package workflowr version 1.6.2]" />
+<meta name="citation_author1" content="John Blischak" />
+<meta name="citation_author2" content="Peter Carbonetto" />
+<meta name="citation_author3" content="Matthew Stephens" />
+<meta name="citation_publication_date" content="2020-04-30" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=workflowr" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=workflowr" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="workflowr: A Framework for Reproducible and Collaborative Data Science" />
+<meta name="og:description" content="Provides a workflow for your analysis projects by combining literate programming ('knitr' and 'rmarkdown') and version control ('Git', via 'git2r') to generate a website containing time-stamped, versioned, and documented results." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=workflowr" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>workflowr: A Framework for Reproducible and Collaborative Data Science</h2>
+<p>Provides a workflow for your analysis projects by combining
+  literate programming ('knitr' and 'rmarkdown') and version control
+  ('Git', via 'git2r') to generate a website containing time-stamped,
+  versioned, and documented results.</p>
+<table summary="Package workflowr summary">
+<tr>
+<td>Version:</td>
+<td>1.6.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.2.5)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../callr/index.html">callr</a>, <a href="../fs/index.html">fs</a> (&ge; 1.2.7), <a href="../getPass/index.html">getPass</a>, <a href="../git2r/index.html">git2r</a> (&ge; 0.26.0), <a href="../glue/index.html">glue</a>, <a href="../httpuv/index.html">httpuv</a> (&ge; 1.2.2), <a href="../httr/index.html">httr</a>, <a href="../knitr/index.html">knitr</a> (&ge; 1.18), <a href="../rmarkdown/index.html">rmarkdown</a> (&ge; 1.7), <a href="../rprojroot/index.html">rprojroot</a> (&ge; 1.2), <a href="../rstudioapi/index.html">rstudioapi</a> (&ge; 0.6), <a href="../stringr/index.html">stringr</a> (&ge; 1.3.0), tools, utils, <a href="../whisker/index.html">whisker</a> (&ge; 0.3-2), <a href="../xfun/index.html">xfun</a>, <a href="../yaml/index.html">yaml</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../clipr/index.html">clipr</a> (&ge; 0.7.0), <a href="../covr/index.html">covr</a>, <a href="../devtools/index.html">devtools</a>, <a href="../miniUI/index.html">miniUI</a> (&ge; 0.1.1), <a href="../reticulate/index.html">reticulate</a> (&ge; 1.15), <a href="../shiny/index.html">shiny</a> (&ge; 0.14), <a href="../spelling/index.html">spelling</a>, <a href="../testthat/index.html">testthat</a> (&ge;
+2.0.0), <a href="../withr/index.html">withr</a> (&ge; 2.0.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-04-30</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>John Blischak <a href="https://orcid.org/0000-0003-2634-9879"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Peter Carbonetto <a href="https://orcid.org/0000-0003-1144-6780"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Matthew Stephens <a href="https://orcid.org/0000-0001-5397-9257"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Luke Zappia [ctb] (Instructions for hosting with GitLab),
+  Pierre Formont [ctb] (Support for hosting with Shiny Server),
+  Tim Trice [ctb] (Instructions for sharing common code),
+  Jiaxiang Li [ctb] (Function wflow_toc() to create table of contents),
+  Michael J. Kane <a href="https://orcid.org/0000-0003-1899-6662"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb] (Option suppress_report),
+  Anh Tran [ctb] (Updated RStudio Project Template),
+  Sydney Purdue [ctb] (Improved wflow_start() error handling)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>John Blischak  &#x3c;&#x6a;&#x64;&#x62;&#x6c;&#x69;&#x73;&#x63;&#x68;&#x61;&#x6b;&#x20;&#x61;&#x74;&#x20;&#x75;&#x63;&#x68;&#x69;&#x63;&#x61;&#x67;&#x6f;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/jdblischak/workflowr/issues">https://github.com/jdblischak/workflowr/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/jdblischak/workflowr">https://github.com/jdblischak/workflowr</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>pandoc (&gt;= 1.12.3) - http://pandoc.org</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">workflowr citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/ReproducibleResearch.html">ReproducibleResearch</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_workflowr.html">workflowr results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package workflowr downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="workflowr.pdf"> workflowr.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/wflow-01-getting-started.html">Getting started with workflowr</a><br/>
+<a href="vignettes/wflow-02-customization.html">Customize your research website</a><br/>
+<a href="vignettes/wflow-03-migrating.html">Migrating an existing project to use workflowr</a><br/>
+<a href="vignettes/wflow-04-how-it-works.html">How the workflowr package works</a><br/>
+<a href="vignettes/wflow-05-faq.html">Frequently asked questions</a><br/>
+<a href="vignettes/wflow-06-gitlab.html">Hosting workflowr websites using GitLab</a><br/>
+<a href="vignettes/wflow-07-common-code.html">Sharing common code across analyses</a><br/>
+<a href="vignettes/wflow-08-deploy.html">Alternative strategies for deploying workflowr websites</a><br/>
+<a href="vignettes/wflow-09-workshop.html">Reproducible research with workflowr</a><br/>
+<a href="vignettes/wflow-10-data.html">Using large data files with workflowr</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/workflowr_1.6.2.tar.gz"> workflowr_1.6.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/workflowr_1.6.2.zip">workflowr_1.6.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/workflowr_1.6.2.zip">workflowr_1.6.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/workflowr_1.6.2.zip">workflowr_1.6.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/workflowr_1.6.2.tgz">workflowr_1.6.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/workflowr_1.6.2.tgz">workflowr_1.6.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/workflowr"> workflowr archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=workflowr"><samp>https://CRAN.R-project.org/package=workflowr</samp></a>
+to link to this page.</p>
+</body>
+</html>

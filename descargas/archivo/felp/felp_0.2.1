@@ -1,0 +1,34 @@
+Package: felp
+Type: Package
+Title: Functional Help for Functions, Objects, and Packages
+Version: 0.2.1
+Author: Atsushi Yasumoto [aut, cph, cre]
+    (<https://orcid.org/0000-0002-8335-495X>)
+Authors@R: c(
+        person(
+            given = "Atsushi", family = "Yasumoto",
+            role = c("aut", "cph", "cre"),
+            email = "atusy.rpkg@gmail.com",
+            comment = c(ORCID = "0000-0002-8335-495X")
+        )
+    )
+Maintainer: Atsushi Yasumoto <atusy.rpkg@gmail.com>
+Description: 
+    Provides pseudo-postfix operators and more to enhance displaying documents.
+    The `?.` pseudo-postfix operator and the `?` prefix operator displays documents and contents (source or structure) of objects simultaneously to help understanding the objects.
+    The `?p` pseudo-postfix operator displays package documents, and is shorter than help(package = foo).
+URL: https://github.com/atusy/felp
+BugReports: https://github.com/atusy/felp/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Imports: prettycode
+Suggests: knitr, pkgdown, printr, rmarkdown, roxygen2, testthat (>=
+        2.1.0), covr
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2019-06-11 12:24:39 UTC; rstudio
+Repository: CRAN
+Date/Publication: 2019-06-27 10:40:03 UTC

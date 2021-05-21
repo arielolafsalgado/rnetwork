@@ -1,0 +1,31 @@
+Package: cansim
+Type: Package
+Title: Accessing Statistics Canada Data Table and Vectors
+Version: 0.3.0
+Authors@R: c(
+    person("Jens", "von Bergmann", email = "jens@mountainmath.ca", role = c("cre")),
+    person("Dmitry", "Shkolnik", email = "shkolnikd@gmail.com", role = c("aut")))
+Maintainer: Jens von Bergmann <jens@mountainmath.ca>
+Description: Searches for, accesses, and retrieves new-format and old-format Statistics Canada data 
+    tables, as well as individual vectors, as tidy data frames. This package deals with encoding issues, allows for 
+    bilingual English or French language data retrieval, and bundles convenience functions 
+    to make it easier to work with retrieved table data. Optional caching features are provided.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 2.10)
+Imports: dplyr (>= 0.7), httr (>= 1.0.0), readr, rlang, xml2, rvest,
+        stringr, purrr, tibble, utils, jsonlite
+RoxygenNote: 6.1.1
+Suggests: knitr, rmarkdown, scales, tidyr, ggplot2
+URL: https://github.com/mountainMath/cansim,
+        https://mountainmath.github.io/cansim/
+BugReports: https://github.com/mountainMath/cansim/issues
+VignetteBuilder: knitr
+Language: en-CA
+NeedsCompilation: no
+Packaged: 2019-07-17 17:39:13 UTC; jens
+Author: Jens von Bergmann [cre],
+  Dmitry Shkolnik [aut]
+Repository: CRAN
+Date/Publication: 2019-07-18 06:35:46 UTC

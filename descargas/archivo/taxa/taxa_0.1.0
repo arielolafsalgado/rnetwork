@@ -1,0 +1,31 @@
+Package: taxa
+Type: Package
+Title: Taxonomic Classes
+Description: Provides taxonomic classes for
+    groupings of taxonomic names without data, and those
+    with data. Methods provided are "taxonomically aware", in
+    that they know about ordering of ranks, and methods that
+    filter based on taxonomy also filter associated data.
+Version: 0.1.0
+Authors@R: c(
+    person("Scott", "Chamberlain", role = c("aut", "cre"), email = "myrmecocystus+r@gmail.com"),
+    person("Zachary", "Foster", role = "aut", email = "zacharyfoster1989@gmail.com")
+    )
+Depends: R (>= 3.0.2)
+VignetteBuilder: knitr
+LazyLoad: yes
+LazyData: yes
+License: MIT + file LICENSE
+URL: https://github.com/ropensci/taxa
+BugReports: https://github.com/ropensci/taxa/issues
+Imports: R6, jsonlite, dplyr, lazyeval, magrittr, tibble, knitr, rlang,
+        stringr
+Suggests: roxygen2 (>= 6.0.1), testthat, rmarkdown (>= 0.9.6), taxize
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-07-16 21:36:34 UTC; sacmac
+Author: Scott Chamberlain [aut, cre],
+  Zachary Foster [aut]
+Maintainer: Scott Chamberlain <myrmecocystus+r@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-07-16 21:51:40 UTC

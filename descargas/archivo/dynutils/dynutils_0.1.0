@@ -1,0 +1,44 @@
+Package: dynutils
+Type: Package
+Title: Common Functions for the Dynverse Packages
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Robrecht", 
+      "Cannoodt", 
+      email = "rcannood@gmail.com", 
+      role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0003-3641-729X", github = "rcannood")
+    ),
+    person(
+      "Wouter", 
+      "Saelens", 
+      email = "wouter.saelens@ugent.be", 
+      role = c("aut"), 
+      comment = c(ORCID = "0000-0002-7114-6248", github = "zouter")
+    )
+  )
+Description: 
+  Provides a common functionality for the dynverse packages. 
+  Dynverse is created to support the development, execution, and benchmarking of trajectory inference methods.
+  For more information, see <https://github.com/dynverse/dynverse>.
+License: GPL-3
+LazyData: TRUE
+RoxygenNote: 6.0.1
+Depends: R (>= 3.0.0)
+Imports: crayon, devtools, desc, dplyr, glue, magrittr, methods,
+        processx, purrr, Rcpp, stringr, testthat, tibble, tidyr
+LinkingTo: Rcpp
+Collate: 'RcppExports.R' 'add_class.R' 'inherit_default_params.R'
+        'calculate_distance.R' 'expand_matrix.R' 'extend_with.R'
+        'install_packages.R' 'package.R' 'pritt.R'
+        'random_time_string.R' 'run_until_exit.R' 'scaling.R'
+        'tibble.R'
+NeedsCompilation: yes
+Packaged: 2018-06-24 12:41:04 UTC; rcannood
+Author: Robrecht Cannoodt [aut, cre] (<https://orcid.org/0000-0003-3641-729X>,
+    rcannood),
+  Wouter Saelens [aut] (<https://orcid.org/0000-0002-7114-6248>, zouter)
+Maintainer: Robrecht Cannoodt <rcannood@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-06-24 14:07:55 UTC

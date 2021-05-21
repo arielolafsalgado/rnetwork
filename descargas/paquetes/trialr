@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package trialr</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Clinical Trial Designs in 'rstan' [R package trialr version 0.1.5]" />
+<meta name="citation_author" content="Kristian Brock" />
+<meta name="citation_publication_date" content="2020-10-15" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=trialr" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=trialr" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="trialr: Clinical Trial Designs in 'rstan'" />
+<meta name="og:description" content="A collection of clinical trial designs and methods, implemented in 'rstan' and R, including: the Continual Reassessment Method by O'Quigley et al. (1990) &amp;lt;&lt;a href=&quot;https://doi.org/10.2307%2F2531628&quot;&gt;doi:10.2307/2531628&lt;/a&gt;&amp;gt;; EffTox by Thall &amp;amp; Cook (2004) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fj.0006-341X.2004.00218.x&quot;&gt;doi:10.1111/j.0006-341X.2004.00218.x&lt;/a&gt;&amp;gt;; the two-parameter logistic method of Neuenschwander, Branson &amp;amp; Sponer (2008) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fsim.3230&quot;&gt;doi:10.1002/sim.3230&lt;/a&gt;&amp;gt;; and the Augmented Binary method by Wason &amp;amp; Seaman (2013) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fsim.5867&quot;&gt;doi:10.1002/sim.5867&lt;/a&gt;&amp;gt;; and more. We provide functions to aid model-fitting and analysis. The 'rstan' implementations may also serve as a cookbook to anyone looking to extend or embellish these models. We hope that this package encourages the use of Bayesian methods in clinical trials. There is a preponderance of early phase trial designs because this is where Bayesian methods are used most. If there is a method you would like implemented, please get in touch." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=trialr" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>trialr: Clinical Trial Designs in 'rstan'</h2>
+<p>A collection of clinical trial designs and methods, implemented in 
+    'rstan' and R, including: the Continual Reassessment Method by O'Quigley et 
+    al. (1990) &lt;<a href="https://doi.org/10.2307%2F2531628">doi:10.2307/2531628</a>&gt;; EffTox by Thall &amp; Cook (2004) 
+    &lt;<a href="https://doi.org/10.1111%2Fj.0006-341X.2004.00218.x">doi:10.1111/j.0006-341X.2004.00218.x</a>&gt;; the two-parameter logistic method of
+    Neuenschwander, Branson &amp; Sponer (2008) &lt;<a href="https://doi.org/10.1002%2Fsim.3230">doi:10.1002/sim.3230</a>&gt;; and the 
+    Augmented Binary method by Wason &amp; Seaman (2013) &lt;<a href="https://doi.org/10.1002%2Fsim.5867">doi:10.1002/sim.5867</a>&gt;; and
+    more. We provide functions to aid model-fitting and analysis. 
+    The 'rstan' implementations may also serve as a cookbook to anyone looking 
+    to extend or embellish these models. We hope that this package encourages 
+    the use of Bayesian methods in clinical trials. There is a preponderance of 
+    early phase trial designs because this is where Bayesian methods are used 
+    most. If there is a method you would like implemented, please get in touch.</p>
+<table summary="Package trialr summary">
+<tr>
+<td>Version:</td>
+<td>0.1.5</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0), methods, <a href="../Rcpp/index.html">Rcpp</a> (&ge; 1.0.1)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../rstan/index.html">rstan</a> (&ge; 2.18.2), <a href="../rstantools/index.html">rstantools</a> (&ge; 1.5.1), <a href="../rlang/index.html">rlang</a> (&ge; 0.4.5), <a href="../dplyr/index.html">dplyr</a>, <a href="../purrr/index.html">purrr</a>, <a href="../magrittr/index.html">magrittr</a>, <a href="../stringr/index.html">stringr</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../gtools/index.html">gtools</a>, <a href="../coda/index.html">coda</a>, <a href="../tidybayes/index.html">tidybayes</a> (&ge; 2.0.3), <a href="../tibble/index.html">tibble</a> (&ge; 3.0.0), <a href="../binom/index.html">binom</a>, <a href="../MASS/index.html">MASS</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../StanHeaders/index.html">StanHeaders</a> (&ge; 2.18.1), <a href="../rstan/index.html">rstan</a> (&ge; 2.18.2), <a href="../BH/index.html">BH</a> (&ge;
+1.69.0-1), <a href="../Rcpp/index.html">Rcpp</a> (&ge; 1.0.1), <a href="../RcppEigen/index.html">RcppEigen</a> (&ge; 0.3.3.5.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../tidyr/index.html">tidyr</a>, <a href="../ggridges/index.html">ggridges</a>, <a href="../DiagrammeR/index.html">DiagrammeR</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-15</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Kristian Brock <a href="https://orcid.org/0000-0002-3921-0166"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Trustees of Columbia University [cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Kristian Brock  &#x3c;&#x6b;&#x72;&#x69;&#x73;&#x74;&#x69;&#x61;&#x6e;&#x2e;&#x62;&#x72;&#x6f;&#x63;&#x6b;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/brockk/trialr/issues">https://github.com/brockk/trialr/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL (&ge; 3)</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/brockk/trialr">https://github.com/brockk/trialr</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>GNU make</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_trialr.html">trialr results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package trialr downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="trialr.pdf"> trialr.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/A200-CRM.html">CRM: Continual Reassessment Method</a><br/>
+<a href="vignettes/A210-CRM-visualisation.html">Visualisation with CRM</a><br/>
+<a href="vignettes/A220-CRM-pathways.html">Dose pathways with CRM</a><br/>
+<a href="vignettes/A250-LevyCaseStudy.html">CRM Case Study 1 - Levy et al (2006)</a><br/>
+<a href="vignettes/A260-TITE-CRM.html">Time-to-Event Continual Reassessment Method</a><br/>
+<a href="vignettes/A300-NeuenschwanderBransonGsponer.html">NeuenschwanderBransonGsponer</a><br/>
+<a href="vignettes/A400-EffTox.html">EffTox</a><br/>
+<a href="vignettes/A500-HierarchicalBayesianResponse.html">Hierarchical Bayesian Model for Binary Responses</a><br/>
+<a href="vignettes/A600-BEBOP.html">BEBOP: Bayesian Evaluation of Bivariate Binary Outcomes and Predictive Information</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/trialr_0.1.5.tar.gz"> trialr_0.1.5.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/trialr_0.1.5.zip">trialr_0.1.5.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/trialr_0.1.5.zip">trialr_0.1.5.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/trialr_0.1.5.zip">trialr_0.1.5.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/trialr_0.1.5.tgz">trialr_0.1.5.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/trialr_0.1.5.tgz">trialr_0.1.5.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/trialr"> trialr archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package trialr reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../escalation/index.html">escalation</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=trialr"><samp>https://CRAN.R-project.org/package=trialr</samp></a>
+to link to this page.</p>
+</body>
+</html>

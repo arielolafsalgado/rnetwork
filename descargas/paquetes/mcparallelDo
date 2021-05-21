@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package mcparallelDo</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=mcparallelDo" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="mcparallelDo: A Simplified Interface for Running Commands on Parallel Processes" />
+<meta name="og:description" content="Provides a function that wraps mcparallel() and mccollect() from 'parallel' with temporary variables and a task handler. Wrapped in this way the results of an mcparallel() call can be returned to the R session when the fork is complete without explicitly issuing a specific mccollect() to retrieve the value. Outside of top-level tasks, multiple mcparallel() jobs can be retrieved with a single call to mcparallelDoCheck()." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=mcparallelDo" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>mcparallelDo: A Simplified Interface for Running Commands on Parallel
+Processes</h2>
+<p>Provides a function that wraps 
+    mcparallel() and mccollect() from 'parallel' with temporary variables and a 
+    task handler.  Wrapped in this way the results of an mcparallel() call 
+    can be returned to the R session when the fork is complete 
+    without explicitly issuing a specific mccollect() to retrieve the value.
+    Outside of top-level tasks, multiple mcparallel() jobs can be retrieved with 
+    a single call to mcparallelDoCheck().</p>
+<table summary="Package mcparallelDo summary">
+<tr>
+<td>Version:</td>
+<td>1.1.0</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>parallel, <a href="../R.utils/index.html">R.utils</a>, <a href="../checkmate/index.html">checkmate</a> (&ge; 1.6.3), <a href="../R6/index.html">R6</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../covr/index.html">covr</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2016-07-24</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Russell S. Pierce</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Russell S. Pierce  &#x3c;&#x72;&#x75;&#x73;&#x73;&#x65;&#x6c;&#x6c;&#x2e;&#x73;&#x2e;&#x70;&#x69;&#x65;&#x72;&#x63;&#x65;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/drknexus/mcparallelDo/issues">https://github.com/drknexus/mcparallelDo/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/drknexus/mcparallelDo">https://github.com/drknexus/mcparallelDo</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="README.html">README</a> <a href="news.html">NEWS</a> <a href="ChangeLog">ChangeLog</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_mcparallelDo.html">mcparallelDo results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package mcparallelDo downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="mcparallelDo.pdf"> mcparallelDo.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/mcparallelDo_1.1.0.tar.gz"> mcparallelDo_1.1.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/mcparallelDo_1.1.0.zip">mcparallelDo_1.1.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/mcparallelDo_1.1.0.zip">mcparallelDo_1.1.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/mcparallelDo_1.1.0.zip">mcparallelDo_1.1.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/mcparallelDo_1.1.0.tgz">mcparallelDo_1.1.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/mcparallelDo_1.1.0.tgz">mcparallelDo_1.1.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/mcparallelDo"> mcparallelDo archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=mcparallelDo"><samp>https://CRAN.R-project.org/package=mcparallelDo</samp></a>
+to link to this page.</p>
+</body>
+</html>

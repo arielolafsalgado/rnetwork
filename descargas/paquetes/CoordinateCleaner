@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package CoordinateCleaner</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Automated Cleaning of Occurrence Records from Biological Collections [R package CoordinateCleaner version 2.0-18]" />
+<meta name="citation_author" content="Alexander Zizka" />
+<meta name="citation_publication_date" content="2020-10-14" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=CoordinateCleaner" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=CoordinateCleaner" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="CoordinateCleaner: Automated Cleaning of Occurrence Records from Biological Collections" />
+<meta name="og:description" content="Automated flagging of common spatial and temporal errors in biological and paleontological collection data, for the use in conservation, ecology and paleontology. Includes automated tests to easily flag (and exclude) records assigned to country or province centroid, the open ocean, the headquarters of the Global Biodiversity Information Facility, urban areas or the location of biodiversity institutions (museums, zoos, botanical gardens, universities). Furthermore identifies per species outlier coordinates, zero coordinates, identical latitude/longitude and invalid coordinates. Also implements an algorithm to identify data sets with a significant proportion of rounded coordinates. Especially suited for large data sets. The reference for the methodology is: Zizka et al. (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2F2041-210X.13152&quot;&gt;doi:10.1111/2041-210X.13152&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=CoordinateCleaner" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>CoordinateCleaner: Automated Cleaning of Occurrence Records from Biological
+Collections</h2>
+<p>Automated flagging of common spatial and temporal errors in biological and paleontological collection data, for the use in conservation, ecology and paleontology. Includes automated tests to easily flag (and exclude) records assigned to country or province centroid, the open ocean, the headquarters of the Global Biodiversity Information Facility, urban areas or the location of biodiversity institutions (museums, zoos, botanical gardens, universities). Furthermore identifies per species outlier coordinates, zero coordinates, identical latitude/longitude and invalid coordinates. Also implements an algorithm to identify data sets with a significant proportion of rounded coordinates. Especially suited for large data sets. The reference for the methodology is: Zizka et al. (2019) &lt;<a href="https://doi.org/10.1111%2F2041-210X.13152">doi:10.1111/2041-210X.13152</a>&gt;.</p>
+<table summary="Package CoordinateCleaner summary">
+<tr>
+<td>Version:</td>
+<td>2.0-18</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../dplyr/index.html">dplyr</a>, <a href="../geosphere/index.html">geosphere</a>, <a href="../ggplot2/index.html">ggplot2</a>, graphics, grDevices, methods, <a href="../raster/index.html">raster</a>, <a href="../rgbif/index.html">rgbif</a>, <a href="../rgeos/index.html">rgeos</a>, <a href="../rgdal/index.html">rgdal</a>, <a href="../rnaturalearth/index.html">rnaturalearth</a>, stats, <a href="../sp/index.html">sp</a>, <a href="../tidyselect/index.html">tidyselect</a>, utils</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../covr/index.html">covr</a>, <a href="../countrycode/index.html">countrycode</a>, <a href="../knitr/index.html">knitr</a>, <a href="../maps/index.html">maps</a>, <a href="../magrittr/index.html">magrittr</a>, <a href="../paleobioDB/index.html">paleobioDB</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../rnaturalearthdata/index.html">rnaturalearthdata</a>, <a href="../testthat/index.html">testthat</a>, <a href="../viridis/index.html">viridis</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-14</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Alexander Zizka [aut, cre],
+  Daniele Silvestro [ctb],
+  Tobias Andermann [ctb],
+  Josue Azevedo [ctb],
+  Camila Duarte Ritter [ctb],
+  Daniel Edler [ctb],
+  Harith Farooq [ctb],
+  Andrei Herdean [ctb],
+  Maria Ariza [ctb],
+  Ruud Scharn [ctb],
+  Sten Svanteson [ctb],
+  Niklas Wengstrom [ctb],
+  Vera Zizka [ctb],
+  Alexandre Antonelli [ctb],
+  Irene Steves [rev] (Irene reviewed the package for ropensci, see
+    &lt;https://github.com/ropensci/onboarding/issues/210&gt;),
+  Francisco Rodriguez-Sanchez [rev] (Francisco reviewed the package for
+    ropensci, see &lt;https://github.com/ropensci/onboarding/issues/210&gt;)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Alexander Zizka  &#x3c;&#x61;&#x6c;&#x65;&#x78;&#x61;&#x6e;&#x64;&#x65;&#x72;&#x2e;&#x7a;&#x69;&#x7a;&#x6b;&#x61;&#x20;&#x61;&#x74;&#x20;&#x69;&#x64;&#x69;&#x76;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ropensci/CoordinateCleaner/issues">https://github.com/ropensci/CoordinateCleaner/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://ropensci.github.io/CoordinateCleaner/">https://ropensci.github.io/CoordinateCleaner/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>GDAL (&gt;= 2.0.1)</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-gb</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">CoordinateCleaner citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_CoordinateCleaner.html">CoordinateCleaner results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package CoordinateCleaner downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="CoordinateCleaner.pdf"> CoordinateCleaner.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Cleaning_GBIF_data_with_CoordinateCleaner.html">Cleaning GBIF data for the use in biogeography</a><br/>
+<a href="vignettes/Cleaning_PBDB_fossils_with_CoordinateCleaner.html">Cleaning fossil data for the use in biogeography and palaeontology</a><br/>
+<a href="vignettes/Comparison_other_software.html">Comparison of CoordinateCleaner to other tools</a><br/>
+<a href="vignettes/Using_custom_gazetteers.html">Using customized gazetteers</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/CoordinateCleaner_2.0-18.tar.gz"> CoordinateCleaner_2.0-18.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/CoordinateCleaner_2.0-18.zip">CoordinateCleaner_2.0-18.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/CoordinateCleaner_2.0-18.zip">CoordinateCleaner_2.0-18.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/CoordinateCleaner_2.0-18.zip">CoordinateCleaner_2.0-18.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/CoordinateCleaner_2.0-18.tgz">CoordinateCleaner_2.0-18.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/CoordinateCleaner_2.0-18.tgz">CoordinateCleaner_2.0-18.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/CoordinateCleaner"> CoordinateCleaner archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=CoordinateCleaner"><samp>https://CRAN.R-project.org/package=CoordinateCleaner</samp></a>
+to link to this page.</p>
+</body>
+</html>

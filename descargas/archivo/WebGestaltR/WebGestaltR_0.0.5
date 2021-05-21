@@ -1,0 +1,21 @@
+Package: WebGestaltR
+Type: Package
+Title: The R Version of WebGestalt
+Version: 0.0.5
+Date: 2017-02-24
+Author: Jing Wang <jingwang.uestc@gmail.com>
+Maintainer: Jing Wang <jingwang.uestc@gmail.com>
+Description: The web version WebGestalt <http://www.webgestalt.org> supports 12 organisms, 324 gene identifiers and 150,937 function categories. Users can upload the data and functional categories with their own gene identifiers. In addition to the Over-Representation Analysis, WebGestalt also supports Gene Set Enrichment Analysis. The user-friendly output interface allow interactive and efficient exploration of enrichment results. The WebGestaltR package not only supports all above functions but also can be integrated into other pipeline or simultaneous analyze multiple gene lists.
+License: LGPL
+LazyLoad: yes
+Depends: R (>= 3.3), pkgmaker (>= 0.22), rjson (>= 0.2.15)
+Imports: methods, data.table (>= 1.10.0), parallel (>= 3.3.2),
+        doParallel (>= 1.0.10), foreach (>= 1.4.0), rPython (>= 0.0-6)
+Collate: zzz.R WebGestaltR.R WebGestaltR_batch.R IDMapping.R
+        GOSlimSummary.R listGeneSet.R listIDType.R listOrganism.R
+        readGMT.R listReferenceSet.R listArchiveURL.R formatCheck.R
+SystemRequirements: Java, Python
+NeedsCompilation: no
+Packaged: 2017-02-24 16:22:26 UTC; jingwang
+Repository: CRAN
+Date/Publication: 2017-02-26 16:24:22

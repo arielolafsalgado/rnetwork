@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package DRomics</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Dose Response for Omics [R package DRomics version 2.1-3]" />
+<meta name="citation_author1" content="Marie-Laure Delignette-Muller" />
+<meta name="citation_author2" content="Elise Billoir" />
+<meta name="citation_author3" content="Aurelie Siberchicot" />
+<meta name="citation_publication_date" content="2020-09-23" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=DRomics" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=DRomics" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="DRomics: Dose Response for Omics" />
+<meta name="og:description" content="Several functions are provided for dose-response (or concentration-response) characterization from omics data. 'DRomics' is especially dedicated to omics data obtained using a typical dose-response design, favoring a great number of tested doses (or concentrations) rather than a great number of replicates (no need of three replicates). 'DRomics' provides functions 1) to check, normalize and or transform data, 2) to select monotonic or biphasic significantly responding items (e.g. probes, metabolites), 3) to choose the best-fit model among a predefined family of monotonic and biphasic models to describe each selected item, 4) to derive a benchmark dose or concentration and a typology of response from each fitted curve. In the available version data are supposed to be single-channel microarray data in log2, RNAseq data in raw counts, or already pretreated metabolomic data in log scale. In order to link responses across biological levels based on a common method, 'DRomics' also handles apical data as long as they are continuous and follow a Gaussian distribution for each dose or concentration, with a common standard error. For further details see Larras et al (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.1021%2Facs.est.8b04752&quot;&gt;doi:10.1021/acs.est.8b04752&lt;/a&gt;&amp;gt; at &amp;lt;&lt;a href=&quot;https://hal.archives-ouvertes.fr/hal-02309919&quot;&gt;https://hal.archives-ouvertes.fr/hal-02309919&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=DRomics" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>DRomics: Dose Response for Omics</h2>
+<p>Several functions are provided for dose-response (or concentration-response) characterization from omics data. 'DRomics' is especially dedicated to omics data obtained using a typical dose-response design, favoring a great number of tested doses (or concentrations) rather than a great number of replicates (no need of three replicates). 'DRomics' provides functions 1) to check, normalize and or transform data, 2) to select monotonic or biphasic significantly responding items (e.g. probes, metabolites), 3) to choose the best-fit model among a predefined family of monotonic and biphasic models to describe each selected item, 4) to derive a benchmark dose or concentration and a typology of response from each fitted curve. In the available version data are supposed to be single-channel microarray data in log2, RNAseq data in raw counts, or already pretreated metabolomic data in log scale. In order to link responses across biological levels based on a common method, 'DRomics' also handles apical data as long as they are continuous and follow a Gaussian distribution for each dose or concentration, with a common standard error. For further details see Larras et al (2018) &lt;<a href="https://doi.org/10.1021%2Facs.est.8b04752">doi:10.1021/acs.est.8b04752</a>&gt; at &lt;<a href="https://hal.archives-ouvertes.fr/hal-02309919">https://hal.archives-ouvertes.fr/hal-02309919</a>&gt;.</p>
+<table summary="Package DRomics summary">
+<tr>
+<td>Version:</td>
+<td>2.1-3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0), <a href="http://www.bioconductor.org/packages/release/bioc/html/limma.html"><span class="BioC">limma</span></a>, utils, grDevices, <a href="http://www.bioconductor.org/packages/release/bioc/html/DESeq2.html"><span class="BioC">DESeq2</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/SummarizedExperiment.html"><span class="BioC">SummarizedExperiment</span></a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>stats, graphics, <a href="../ggplot2/index.html">ggplot2</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td>parallel, <a href="../shiny/index.html">shiny</a>, <a href="../shinyBS/index.html">shinyBS</a>, <a href="../shinyjs/index.html">shinyjs</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-23</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Marie-Laure Delignette-Muller [aut],
+  Elise Billoir [aut],
+  Floriane Larras [ctb],
+  Aurelie Siberchicot [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Aurelie Siberchicot  &#x3c;&#x61;&#x75;&#x72;&#x65;&#x6c;&#x69;&#x65;&#x2e;&#x73;&#x69;&#x62;&#x65;&#x72;&#x63;&#x68;&#x69;&#x63;&#x6f;&#x74;&#x20;&#x61;&#x74;&#x20;&#x75;&#x6e;&#x69;&#x76;&#x2d;&#x6c;&#x79;&#x6f;&#x6e;&#x31;&#x2e;&#x66;&#x72;&#x3e;</td>
+</tr>
+<tr>
+<td>Contact:</td>
+<td>&#x4d;&#x61;&#x72;&#x69;&#x65;&#x2d;&#x4c;&#x61;&#x75;&#x72;&#x65;&#x20;&#x44;&#x65;&#x6c;&#x69;&#x67;&#x6e;&#x65;&#x74;&#x74;&#x65;&#x2d;&#x4d;&#x75;&#x6c;&#x6c;&#x65;&#x72;&#xa;&#x3c;&#x6d;&#x61;&#x72;&#x69;&#x65;&#x6c;&#x61;&#x75;&#x72;&#x65;&#x2e;&#x64;&#x65;&#x6c;&#x69;&#x67;&#x6e;&#x65;&#x74;&#x74;&#x65;&#x6d;&#x75;&#x6c;&#x6c;&#x65;&#x72;&#x40;&#x76;&#x65;&#x74;&#x61;&#x67;&#x72;&#x6f;&#x2d;&#x73;&#x75;&#x70;&#x2e;&#x66;&#x72;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://lbbe.univ-lyon1.fr/-DRomics-.html">https://lbbe.univ-lyon1.fr/-DRomics-.html</a>,
+<a href="https://github.com/aursiber/DRomics">https://github.com/aursiber/DRomics</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">DRomics citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_DRomics.html">DRomics results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package DRomics downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="DRomics.pdf"> DRomics.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/DRomics_2.1-3.tar.gz"> DRomics_2.1-3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/DRomics_2.1-3.zip">DRomics_2.1-3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/DRomics_2.1-3.zip">DRomics_2.1-3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/DRomics_2.1-3.zip">DRomics_2.1-3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/DRomics_2.1-3.tgz">DRomics_2.1-3.tgz</a>, r-oldrel: not available </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/DRomics"> DRomics archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=DRomics"><samp>https://CRAN.R-project.org/package=DRomics</samp></a>
+to link to this page.</p>
+</body>
+</html>

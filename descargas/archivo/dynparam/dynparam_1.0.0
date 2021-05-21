@@ -1,0 +1,42 @@
+Package: dynparam
+Type: Package
+Title: Creating Meta-Information for Parameters
+Version: 1.0.0
+Authors@R: c(
+    person(
+      "Robrecht", 
+      "Cannoodt", 
+      email = "rcannood@gmail.com", 
+      role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0003-3641-729X", github = "rcannood")
+    ),
+    person(
+      "Wouter", 
+      "Saelens", 
+      email = "wouter.saelens@ugent.be", 
+      role = c("aut"), 
+      comment = c(ORCID = "0000-0002-7114-6248", github = "zouter")
+    )
+  )
+URL: https://github.com/dynverse/dynparam
+BugReports: https://github.com/dynverse/dynparam/issues
+Description: Provides tools for describing parameters of algorithms in an abstract way.
+  Description can include an id, a description, a domain (range or list of values),
+  and a default value. 'dynparam' can also convert parameter sets to a 'ParamHelpers' format, 
+  in order to be able to use 'dynparam' in conjunction with 'mlrMBO'.
+License: GPL-3
+LazyData: TRUE
+RoxygenNote: 6.1.1
+Encoding: UTF-8
+Depends: R (>= 3.0.0)
+Imports: assertthat, carrier, dplyr, dynutils (>= 1.0.2), Hmisc,
+        magrittr, purrr, stringr, testthat, tibble, tidyr
+Suggests: ParamHelpers, lhs
+NeedsCompilation: no
+Packaged: 2019-04-02 11:22:16 UTC; rcannood
+Author: Robrecht Cannoodt [aut, cre] (<https://orcid.org/0000-0003-3641-729X>,
+    rcannood),
+  Wouter Saelens [aut] (<https://orcid.org/0000-0002-7114-6248>, zouter)
+Maintainer: Robrecht Cannoodt <rcannood@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-04-04 16:10:10 UTC

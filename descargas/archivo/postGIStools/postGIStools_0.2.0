@@ -1,0 +1,27 @@
+Package: postGIStools
+Type: Package
+Title: Tools for Interacting with 'PostgreSQL' / 'PostGIS' Databases
+Description: Functions to convert geometry and 'hstore' data types from
+    'PostgreSQL' into standard R objects, as well as to simplify
+    the import of R data frames (including spatial data frames) into 'PostgreSQL'.
+Version: 0.2.0
+License: GPL-3
+URL: https://github.com/SESYNC-ci/postGIStools
+BugReports: https://github.com/SESYNC-ci/postGIStools/issues
+Authors@R: c(person('Philippe', 'Marchand', email = 'pmarchand@sesync.org',
+                  role = c('aut', 'cre')),
+             person('Richard', 'Ellison', role = 'aut'))
+Depends: R (>= 3.2.3), sp (>= 1.2)
+Imports: DBI (>= 0.5), jsonlite (>= 0.9), methods, rgdal (>= 0.8),
+        rgeos (>= 0.3), RPostgreSQL (>= 0.4), stringr (>= 1.0)
+Suggests: testthat, knitr, rmarkdown
+LazyData: TRUE
+RoxygenNote: 5.0.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2016-08-29 13:24:59 UTC; pmarchand
+Author: Philippe Marchand [aut, cre],
+  Richard Ellison [aut]
+Maintainer: Philippe Marchand <pmarchand@sesync.org>
+Repository: CRAN
+Date/Publication: 2016-08-30 01:59:09

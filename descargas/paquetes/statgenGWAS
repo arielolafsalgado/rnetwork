@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package statgenGWAS</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Genome Wide Association Studies [R package statgenGWAS version 1.0.5]" />
+<meta name="citation_author1" content="Bart-Jan van Rossum" />
+<meta name="citation_author2" content="Willem Kruijer" />
+<meta name="citation_publication_date" content="2020-09-29" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=statgenGWAS" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=statgenGWAS" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="statgenGWAS: Genome Wide Association Studies" />
+<meta name="og:description" content="Fast single trait Genome Wide Association Studies (GWAS) following the method described in Kang et al. (2010), &amp;lt;&lt;a href=&quot;https://doi.org/10.1038%2Fng.548&quot;&gt;doi:10.1038/ng.548&lt;/a&gt;&amp;gt;. One of a series of statistical genetic packages for streamlining the analysis of typical plant breeding experiments developed by Biometris." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=statgenGWAS" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>statgenGWAS: Genome Wide Association Studies</h2>
+<p>Fast single trait Genome Wide Association Studies (GWAS) following 
+    the method described in Kang et al. (2010), &lt;<a href="https://doi.org/10.1038%2Fng.548">doi:10.1038/ng.548</a>&gt;.        
+    One of a series of statistical genetic packages for streamlining the 
+    analysis of typical plant breeding experiments developed by Biometris.</p>
+<table summary="Package statgenGWAS summary">
+<tr>
+<td>Version:</td>
+<td>1.0.5</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../data.table/index.html">data.table</a>, <a href="../ggplot2/index.html">ggplot2</a> (&ge; 3.0.0), <a href="../sommer/index.html">sommer</a> (&ge; 3.7.3), <a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../officer/index.html">officer</a>, <a href="../tinytest/index.html">tinytest</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-29</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Bart-Jan van Rossum [aut, cre],
+  Willem Kruijer <a href="https://orcid.org/0000-0001-7179-1733"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Fred van Eeuwijk <a href="https://orcid.org/0000-0003-3672-2921"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Martin Boer [ctb],
+  Marcos Malosetti <a href="https://orcid.org/0000-0002-8150-1397"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Daniela Bustos-Korts
+    <a href="https://orcid.org/0000-0003-3827-6726"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb],
+  Emilie Millet <a href="https://orcid.org/0000-0002-2913-4892"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Joao Paulo <a href="https://orcid.org/0000-0002-4180-0763"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb],
+  Maikel Verouden <a href="https://orcid.org/0000-0002-4893-3323"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Ron Wehrens <a href="https://orcid.org/0000-0002-8798-5599"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb],
+  Choazhi Zheng <a href="https://orcid.org/0000-0001-6030-3933"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Bart-Jan van Rossum  &#x3c;&#x62;&#x61;&#x72;&#x74;&#x2d;&#x6a;&#x61;&#x6e;&#x2e;&#x76;&#x61;&#x6e;&#x72;&#x6f;&#x73;&#x73;&#x75;&#x6d;&#x20;&#x61;&#x74;&#x20;&#x77;&#x75;&#x72;&#x2e;&#x6e;&#x6c;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/Biometris/statgenGWAS/issues">https://github.com/Biometris/statgenGWAS/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://biometris.github.io/statgenGWAS/index.html">https://biometris.github.io/statgenGWAS/index.html</a>,
+<a href="https://github.com/Biometris/statgenGWAS/">https://github.com/Biometris/statgenGWAS/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_statgenGWAS.html">statgenGWAS results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package statgenGWAS downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="statgenGWAS.pdf"> statgenGWAS.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/GWAS.html">Introduction to the statgenGWAS package</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/statgenGWAS_1.0.5.tar.gz"> statgenGWAS_1.0.5.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/statgenGWAS_1.0.5.zip">statgenGWAS_1.0.5.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/statgenGWAS_1.0.5.zip">statgenGWAS_1.0.5.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/statgenGWAS_1.0.5.zip">statgenGWAS_1.0.5.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/statgenGWAS_1.0.5.tgz">statgenGWAS_1.0.5.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/statgenGWAS_1.0.5.tgz">statgenGWAS_1.0.5.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/statgenGWAS"> statgenGWAS archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=statgenGWAS"><samp>https://CRAN.R-project.org/package=statgenGWAS</samp></a>
+to link to this page.</p>
+</body>
+</html>

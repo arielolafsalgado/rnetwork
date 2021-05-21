@@ -1,0 +1,17 @@
+Package: DPWeibull
+Type: Package
+Title: Dirichlet Process Weibull Mixture Model for Survival Data
+Version: 1.6
+Date: 2020-09-12
+Author: Yushu Shi
+Maintainer: Yushu Shi <shiyushu2006@gmail.com>
+Depends: R (>= 3.5.0)
+Description: Use Dirichlet process Weibull mixture model and dependent Dirichlet process Weibull mixture model for survival data with and without competing risks. Dirichlet process Weibull mixture model is used for data without covariates and dependent Dirichlet process model is used for regression data. The package is designed to handle exact/right-censored/ interval-censored observations without competing risks and exact/right-censored observations for data with competing risks. Inside each cluster of Dirichlet process, we assume a multiplicative effect of covariates as in Cox model and Fine and Gray model. For wrapper of the DPdensity function from the R package DPpackage (already archived by CRAN) that uses the Low Information Omnibus prior, please check (<https://github.com/mjmartens/DPdensity-wrapper-with-LIO-prior>). 
+License: GPL (>= 2)
+LinkingTo: Rcpp, RcppArmadillo
+Imports: truncdist, binaryLogic, prodlim, survival, Rcpp (>= 0.12.4)
+NeedsCompilation: yes
+RoxygenNote: 5.0.1
+Packaged: 2020-09-13 19:16:46 UTC; ys8wp
+Repository: CRAN
+Date/Publication: 2020-09-13 20:20:03 UTC

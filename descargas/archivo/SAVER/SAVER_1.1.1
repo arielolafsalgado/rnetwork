@@ -1,0 +1,33 @@
+Package: SAVER
+Type: Package
+Version: 1.1.1
+Title: Single-Cell RNA-Seq Gene Expression Recovery
+Description: An implementation of a regularized regression prediction and 
+    empirical Bayes method to recover the true gene expression profile in 
+    noisy and sparse single-cell RNA-seq data. See Huang M, et al (2018) 
+    <doi:10.1038/s41592-018-0033-z> for more details.
+Authors@R: c(
+    person("Mo", "Huang", email = "mohuangx@gmail.com", 
+        role = c("aut", "cre")),
+    person("Nancy", "Zhang", email = "nzh@wharton.upenn.edu", role = "aut"),
+    person("Mingyao", "Li", email = "mingyao@pennmedicine.upenn.edu", 
+        role = "aut")
+    )
+Maintainer: Mo Huang <mohuangx@gmail.com>
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.0.1)
+Imports: glmnet, foreach, methods, iterators, doParallel, Matrix
+RoxygenNote: 6.1.0
+URL: https://github.com/mohuangx/SAVER
+BugReports: https://github.com/mohuangx/SAVER/issues
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-09-27 18:16:18 UTC; mohuang
+Author: Mo Huang [aut, cre],
+  Nancy Zhang [aut],
+  Mingyao Li [aut]
+Repository: CRAN
+Date/Publication: 2018-10-14 17:20:10 UTC

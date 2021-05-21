@@ -1,0 +1,79 @@
+Package: RxODE
+Version: 0.7.2-5
+Title: Facilities for Simulating from ODE-Based Models
+Authors@R: c(
+   person("Matthew L.","Fidler",
+      role = "aut", email = "matthew.fidler@gmail.com"),
+   person("Melissa", "Hallow",
+      role = "aut", email = "hallowkm@uga.edu"),
+   person("Wenping", "Wang", 
+      role = c("aut", "cre"), email = "wwang8198@gmail.com"),
+   person("Zufar", "Mulyukov", role="ctb", email="zufar.mulyukov@novartis.com"),
+   person("Justin", "Wilkins", 
+      role = "ctb", email = "justin.wilkins@occams.com"),
+   person("Simon", "Frost", role="ctb"),
+   person("Heng", "Li", role="ctb"),
+   person("Yu", "Feng", role="ctb"),	
+   person("Alan", "Hindmarsh",role="ctb"),
+   person("Linda", "Petzold", role="ctb"),
+   person("Ernst", "Hairer", role="ctb"),
+   person("Gerhard", "Wanner", role="ctb"),
+   person("J", "Colinge", role="ctb"),
+   person("Hadley", "Wickham", role="ctb"),
+   person("G", "Grothendieck", role="ctb"),
+   person("Robert", "Gentleman",role="ctb"),
+   person("Ross", "Ihaka",role="ctb"),
+   person("R core team", role="cph"),
+   person("odepack authors", role="cph")
+   )
+Maintainer: Wenping Wang <wwang8198@gmail.com>
+Depends: R (>= 3.3.0)
+Suggests: knitr, nlme, shiny, tcltk, testthat, devtools, covr,
+        rmarkdown, SnakeCharmR, rSymPy, dplyr, tidyr, tibble, curl,
+        ggplot2, gridExtra, microbenchmark, scales, stringi, htmltools
+Imports: utils, methods, digest, rex, dparser (>= 0.1.8), brew,
+        memoise, magrittr, Rcpp (>= 0.12.3), inline, Matrix, R.utils,
+        PreciseSums (>= 0.3), mvnfast, cli, crayon
+Description: Facilities for running simulations from ordinary
+    differential equation (ODE) models, such as pharmacometrics and other
+    compartmental models.  A compilation manager translates the ODE model
+    into C, compiles it, and dynamically loads the object code into R for
+    improved computational efficiency.  An event table object facilitates
+    the specification of complex dosing regimens (optional) and sampling
+    schedules.  NB: The use of this package requires both C and
+    Fortran compilers, for details on their use with R please see
+    Section 6.3, Appendix A, and Appendix D in the "R Administration and
+    Installation" manual. Also the code is mostly released under GPL.  The
+    VODE and LSODA are in the public domain.  The information is available
+    in the inst/COPYRIGHTS.
+BugReports: https://github.com/nlmixrdevelopment/RxODE/issues
+NeedsCompilation: yes
+VignetteBuilder: knitr
+License: GPL (>= 2)
+URL: https://www.r-project.org,
+        https://github.com/nlmixrdevelopment/RxODE
+RoxygenNote: 6.0.1
+LinkingTo: dparser(>= 0.1.8), Rcpp (>= 0.12.3), RcppArmadillo(>=
+        0.5.600.2.0), PreciseSums (>= 0.3)
+Packaged: 2018-06-19 04:56:47 UTC; FIDLEMA3
+Author: Matthew L. Fidler [aut],
+  Melissa Hallow [aut],
+  Wenping Wang [aut, cre],
+  Zufar Mulyukov [ctb],
+  Justin Wilkins [ctb],
+  Simon Frost [ctb],
+  Heng Li [ctb],
+  Yu Feng [ctb],
+  Alan Hindmarsh [ctb],
+  Linda Petzold [ctb],
+  Ernst Hairer [ctb],
+  Gerhard Wanner [ctb],
+  J Colinge [ctb],
+  Hadley Wickham [ctb],
+  G Grothendieck [ctb],
+  Robert Gentleman [ctb],
+  Ross Ihaka [ctb],
+  R core team [cph],
+  odepack authors [cph]
+Repository: CRAN
+Date/Publication: 2018-06-19 09:47:54 UTC

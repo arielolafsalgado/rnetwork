@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package SelectBoost</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="A General Algorithm to Enhance the Performance of Variable Selection Methods in Correlated Datasets [R package SelectBoost version 2.0.0]" />
+<meta name="citation_author1" content="Frederic Bertrand" />
+<meta name="citation_author2" content="Myriam Maumy-Bertrand" />
+<meta name="citation_publication_date" content="2020-02-23" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=SelectBoost" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=SelectBoost" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="SelectBoost: A General Algorithm to Enhance the Performance of Variable Selection Methods in Correlated Datasets" />
+<meta name="og:description" content="An implementation of the selectboost algorithm (Bertrand et al. 2020, &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1810.01670&quot;&gt;arXiv:1810.01670&lt;/a&gt;&amp;gt;), which is a general algorithm that improves the precision of any existing variable selection method. This algorithm is based on highly intensive simulations and takes into account the correlation structure of the data. It can either produce a confidence index for variable selection or it can be used in an experimental design planning perspective." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=SelectBoost" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>SelectBoost: A General Algorithm to Enhance the Performance of Variable
+Selection Methods in Correlated Datasets</h2>
+<p>An implementation of the selectboost algorithm (Bertrand et al. 2020, &lt;<a href="https://arxiv.org/abs/1810.01670">arXiv:1810.01670</a>&gt;), which is a general algorithm that improves the precision of any existing variable selection method. This algorithm is based on highly intensive simulations and takes into account the correlation structure of the data. It can either produce a confidence index for variable selection or it can be used in an experimental design planning perspective.</p>
+<table summary="Package SelectBoost summary">
+<tr>
+<td>Version:</td>
+<td>2.0.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../lars/index.html">lars</a>, <a href="../glmnet/index.html">glmnet</a>, <a href="../igraph/index.html">igraph</a>, parallel, <a href="../msgps/index.html">msgps</a>, <a href="../Rfast/index.html">Rfast</a>, methods, <a href="../Cascade/index.html">Cascade</a>, graphics, grDevices, <a href="../varbvs/index.html">varbvs</a>, <a href="../spls/index.html">spls</a>, <a href="../abind/index.html">abind</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/mixOmics.html"><span class="BioC">mixOmics</span></a>, <a href="../CascadeData/index.html">CascadeData</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-02-23</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Frederic Bertrand <a href="https://orcid.org/0000-0002-0837-8281"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [cre, aut],
+  Myriam Maumy-Bertrand
+    <a href="https://orcid.org/0000-0002-4615-1512"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Ismail Aouadi [ctb],
+  Nicolas Jung [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Frederic Bertrand  &#x3c;&#x66;&#x72;&#x65;&#x64;&#x65;&#x72;&#x69;&#x63;&#x2e;&#x62;&#x65;&#x72;&#x74;&#x72;&#x61;&#x6e;&#x64;&#x20;&#x61;&#x74;&#x20;&#x6d;&#x61;&#x74;&#x68;&#x2e;&#x75;&#x6e;&#x69;&#x73;&#x74;&#x72;&#x61;&#x2e;&#x66;&#x72;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/fbertran/SelectBoost/issues">https://github.com/fbertran/SelectBoost/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/fbertran/SelectBoost">https://github.com/fbertran/SelectBoost</a>,
+<a href="http://www-irma.u-strasbg.fr/~fbertran/">http://www-irma.u-strasbg.fr/~fbertran/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Classification/MSC:</td>
+<td><a href="../../classifications/MSC.html#code:62H11">62H11</a>, <a href="../../classifications/MSC.html#code:62J12">62J12</a>, <a href="../../classifications/MSC.html#code:62J99">62J99</a></td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">SelectBoost citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_SelectBoost.html">SelectBoost results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package SelectBoost downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="SelectBoost.pdf"> SelectBoost.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/benchmarking-selectboost-networks.html">Benchmarking the SelectBoost Package for Network Reverse Engineering</a><br/>
+<a href="vignettes/confidence-indices-Cascade-networks.html">Towards confidence estimates in Cascade Networks using the SelectBoost package</a><br/>
+<a href="vignettes/sim-with-sb.html">Simulation Tools Provided With the Selectboost Package</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/SelectBoost_2.0.0.tar.gz"> SelectBoost_2.0.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/SelectBoost_2.0.0.zip">SelectBoost_2.0.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/SelectBoost_2.0.0.zip">SelectBoost_2.0.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/SelectBoost_2.0.0.zip">SelectBoost_2.0.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/SelectBoost_2.0.0.tgz">SelectBoost_2.0.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/SelectBoost_2.0.0.tgz">SelectBoost_2.0.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/SelectBoost"> SelectBoost archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package SelectBoost reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../Patterns/index.html">Patterns</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=SelectBoost"><samp>https://CRAN.R-project.org/package=SelectBoost</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,43 @@
+Package: portfolioBacktest
+Title: Automated Backtesting of Portfolios over Multiple Datasets
+Version: 0.1.0
+Date: 2019-06-19
+Description: Automated backtesting of multiple portfolios over multiple 
+    datasets of stock prices in a rolling-window fashion. Intended for 
+    researchers and practitioners to backtest a set of different portfolios, 
+    as well as by a course instructor to assess the students in their portfolio 
+    design in a fully automated and convenient manner, with results conveniently 
+    formatted in tables and plots. Each portfolio design is easily defined as a
+    function that takes as input a window of the stock prices and outputs the 
+    portfolio weights. Multiple portfolios can be easily specified as a list 
+    of functions or as files in a folder. Multiple datasets can be conveniently 
+    extracted randomly from different markets, different time periods, and 
+    different subsets of the stock universe. The results can be later assessed 
+    and ranked with tables based on a number of performance criteria (e.g., 
+    expected return, volatility, Sharpe ratio, drawdown, turnover rate, return 
+    on investment, computational time, etc.), as well as plotted in a number of 
+    ways with nice barplots and boxplots.
+Authors@R: c(
+  person(c("Daniel", "P."), "Palomar", role = c("cre", "aut"), email = "daniel.p.palomar@gmail.com"),
+  person("Rui", "Zhou", role =  "aut", email = "rzhouae@connect.ust.hk")
+  )
+Maintainer: Daniel P. Palomar <daniel.p.palomar@gmail.com>
+URL: https://CRAN.R-project.org/package=portfolioBacktest,
+        https://github.com/dppalomar/portfolioBacktest
+BugReports: https://github.com/dppalomar/portfolioBacktest/issues
+License: GPL-3 | file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Depends: R (>= 2.10)
+Imports: doSNOW, evaluate, foreach, PerformanceAnalytics, quantmod,
+        R.utils, snow, utils, xts, zoo
+Suggests: CVXR, DT, ggplot2, gridExtra, knitr, prettydoc, readtext,
+        rmarkdown, R.rsp, stringi, testthat
+VignetteBuilder: knitr, rmarkdown, R.rsp
+NeedsCompilation: no
+Packaged: 2019-06-19 05:30:35 UTC; palomar
+Author: Daniel P. Palomar [cre, aut],
+  Rui Zhou [aut]
+Repository: CRAN
+Date/Publication: 2019-06-19 11:40:02 UTC

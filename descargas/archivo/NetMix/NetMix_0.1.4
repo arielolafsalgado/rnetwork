@@ -1,0 +1,37 @@
+Package: NetMix
+Type: Package
+Title: Dynamic Mixed-Membership Network Regression Model
+Version: 0.1.4
+Date: 2019-07-11
+Encoding: UTF-8
+Author: Kosuke Imai [aut, cre],
+	Tyler Pratt [aut, cre],
+	Adeline Lo [aut, cre],
+	Santiago Olivella [aut, cre]
+Maintainer: Santiago Olivella <olivella@unc.edu>
+Description: Variational EM estimation of mixed-membership stochastic blockmodel for networks,
+             incorporating node-level predictors of mixed-membership vectors, as well as 
+             dyad-level predictors. For networks observed over time, the model defines a hidden
+             Markov process that allows the effects of node-level predictors to evolve in discrete,
+             historical periods. In addition, the package offers a variety of utilities for 
+             exploring results of estimation, including tools for conducting posterior 
+             predictive checks of goodness-of-fit and several plotting functions. The package 
+             implements methods described in Olivella, Pratt and Imai (2019) ''Dynamic Stochastic
+             Blockmodel Regression for Social Networks: Application to International Conflicts'',
+             available at <http://santiagoolivella.info/wp-content/uploads/2018/07/dSBM_Reg.pdf>.
+BugReports: https://github.com/solivella/NetMix/issues
+NeedsCompilation: yes
+License: GPL (>= 2)
+Depends: R (>= 3.1.0)
+SystemRequirements: C++11
+Suggests: doParallel (>= 1.0.14), ergm (>= 3.9.4), foreach (>= 1.4.4),
+        ggplot2 (>= 3.1.1), network (>= 1.13)
+Imports: clue (>= 0.3-54), graphics (>= 3.5.2), grDevices (>= 3.5.2),
+        gtools (>= 3.8.1), igraph (>= 1.2.4.1), lda (>= 1.4.2), Matrix
+        (>= 1.2-15), methods (>= 3.5.2), Rcpp (>= 0.12.13), RSpectra
+        (>= 0.14-0), stats (>= 3.5.2), utils (>= 3.5.2)
+LinkingTo: Rcpp
+RoxygenNote: 6.1.1
+Packaged: 2019-07-22 22:54:56 UTC; olivella
+Repository: CRAN
+Date/Publication: 2019-07-26 09:10:02 UTC

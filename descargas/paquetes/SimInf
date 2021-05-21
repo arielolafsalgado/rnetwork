@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package SimInf</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="A Framework for Data-Driven Stochastic Disease Spread Simulations [R package SimInf version 8.1.0]" />
+<meta name="citation_author1" content="Stefan Widgren" />
+<meta name="citation_author2" content="Robin Eriksson" />
+<meta name="citation_author3" content="Stefan Engblom" />
+<meta name="citation_author4" content="Pavol Bauer" />
+<meta name="citation_publication_date" content="2020-10-18" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=SimInf" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=SimInf" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="SimInf: A Framework for Data-Driven Stochastic Disease Spread Simulations" />
+<meta name="og:description" content="Provides an efficient and very flexible framework to conduct data-driven epidemiological modeling in realistic large scale disease spread simulations. The framework integrates infection dynamics in subpopulations as continuous-time Markov chains using the Gillespie stochastic simulation algorithm and incorporates available data such as births, deaths and movements as scheduled events at predefined time-points. Using C code for the numerical solvers and 'OpenMP' (if available) to divide work over multiple processors ensures high performance when simulating a sample outcome. One of our design goals was to make the package extendable and enable usage of the numerical solvers from other R extension packages in order to facilitate complex epidemiological research. The package contains template models and can be extended with user-defined models. For more details see the paper by Widgren, Bauer, Eriksson and Engblom (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.18637%2Fjss.v091.i12&quot;&gt;doi:10.18637/jss.v091.i12&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=SimInf" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>SimInf: A Framework for Data-Driven Stochastic Disease Spread
+Simulations</h2>
+<p>Provides an efficient and very flexible framework to
+    conduct data-driven epidemiological modeling in realistic large
+    scale disease spread simulations. The framework integrates
+    infection dynamics in subpopulations as continuous-time Markov
+    chains using the Gillespie stochastic simulation algorithm and
+    incorporates available data such as births, deaths and movements
+    as scheduled events at predefined time-points. Using C code for
+    the numerical solvers and 'OpenMP' (if available) to divide work
+    over multiple processors ensures high performance when simulating
+    a sample outcome. One of our design goals was to make the package
+    extendable and enable usage of the numerical solvers from other R
+    extension packages in order to facilitate complex epidemiological
+    research. The package contains template models and can be extended
+    with user-defined models. For more details see the paper by
+    Widgren, Bauer, Eriksson and Engblom (2019)
+    &lt;<a href="https://doi.org/10.18637%2Fjss.v091.i12">doi:10.18637/jss.v091.i12</a>&gt;.</p>
+<table summary="Package SimInf summary">
+<tr>
+<td>Version:</td>
+<td>8.1.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../digest/index.html">digest</a>, graphics, grDevices, methods, stats, utils, <a href="../Matrix/index.html">Matrix</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-18</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Stefan Widgren <a href="https://orcid.org/0000-0001-5745-2284"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Robin Eriksson <a href="https://orcid.org/0000-0002-4291-712X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Stefan Engblom <a href="https://orcid.org/0000-0002-3614-1732"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Pavol Bauer <a href="https://orcid.org/0000-0003-4328-7171"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Thomas Rosendal <a href="https://orcid.org/0000-0002-6576-9668"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Attractive Chaos [cph] (Author of 'kvec.h'.)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Stefan Widgren  &#x3c;&#x73;&#x74;&#x65;&#x66;&#x61;&#x6e;&#x2e;&#x77;&#x69;&#x64;&#x67;&#x72;&#x65;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/stewid/SimInf/issues">https://github.com/stewid/SimInf/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/stewid/SimInf">https://github.com/stewid/SimInf</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>GNU Scientific Library (GSL)</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">SimInf citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_SimInf.html">SimInf results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package SimInf downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="SimInf.pdf"> SimInf.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/SimInf.pdf">SimInf: An R Package for Data-Driven Stochastic Disease Spread Simulations</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/SimInf_8.1.0.tar.gz"> SimInf_8.1.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/SimInf_8.1.0.zip">SimInf_8.1.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/SimInf_8.1.0.zip">SimInf_8.1.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/SimInf_8.1.0.zip">SimInf_8.1.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/SimInf_8.1.0.tgz">SimInf_8.1.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/SimInf_8.1.0.tgz">SimInf_8.1.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/SimInf"> SimInf archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=SimInf"><samp>https://CRAN.R-project.org/package=SimInf</samp></a>
+to link to this page.</p>
+</body>
+</html>

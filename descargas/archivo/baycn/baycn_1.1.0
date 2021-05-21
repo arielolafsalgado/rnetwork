@@ -1,0 +1,26 @@
+Package: baycn
+Type: Package
+Title: Bayesian Inference for Causal Networks
+Version: 1.1.0
+Author: Evan A Martin [aut, cre], Audrey Qiuyan Fu [aut]
+Maintainer: Evan A Martin <evanamartin@gmail.com>
+Description: A Bayesian hybrid approach for inferring Directed Acyclic Graphs
+    (DAGs) for continuous, discrete, and mixed data. The algorithm can use the 
+    graph inferred by another more efficient graph inference method as input;
+    the input graph may contain false edges or undirected edges but can help
+    reduce the search space to a more manageable size. A Bayesian Markov chain
+    Monte Carlo algorithm is then used to infer the probability of direction and
+    absence for the edges in the network.
+    References:
+    Martin and Fu (2019) <arXiv:1909.10678>.
+License: GPL-3 | file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: egg, ggplot2, gtools, MASS, methods
+RoxygenNote: 7.0.2
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2020-03-10 18:47:56 UTC; Evatar
+Repository: CRAN
+Date/Publication: 2020-03-10 19:50:02 UTC

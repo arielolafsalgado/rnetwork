@@ -1,0 +1,38 @@
+Package: HMMoce
+Type: Package
+Title: Improved Analysis of Marine Animal Movement Data Using Hidden
+        Markov Models
+Version: 1.0.0
+Date: 2017-10-26
+Authors@R: c(
+              person("Camrin", "Braun", email = "camrin.braun@gmail.com", role = c("aut","cre")),
+              person("Benjamin", "Galuardi", email = "drdrumfish@gmail.com", role = c("aut")),
+              person("Benjamin", "Jones", role = c("ctb"), comment = 'Contributed to earlier version of some of the download functions.'),
+              person("Martin", "Pedersen", role = c("ctb"), comment = 'Developed an earlier version of some of the HMM framework and helper functions.')
+              )
+Maintainer: Camrin Braun <camrin.braun@gmail.com>
+Description: Improved analysis of marine animal movement data by implementing
+    a state-space hidden Markov model (HMM) to improve position estimates. Position
+    estimates are derived by comparing electronic tag data (from tags deployed on
+    marine animals, typically fish) to three-dimensional oceanographic data.
+License: MIT + file LICENSE
+Depends: R (>= 2.10),
+Imports: dplyr, fields, foreach, imager, locfit, lubridate, maptools,
+        raster, RColorBrewer, rgeos, RNetCDF, sp, parallel, doParallel,
+        curl, methods
+Suggests: knitr, rmarkdown, png, grid
+RoxygenNote: 6.0.1
+URL: http://www.camrinbraun.com/
+BugReports: https://github.com/camrinbraun/HMMoce/issues
+LazyData: true
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-10-27 20:52:57 UTC; Cam
+Author: Camrin Braun [aut, cre],
+  Benjamin Galuardi [aut],
+  Benjamin Jones [ctb] (Contributed to earlier version of some of the
+    download functions.),
+  Martin Pedersen [ctb] (Developed an earlier version of some of the HMM
+    framework and helper functions.)
+Repository: CRAN
+Date/Publication: 2017-10-29 14:23:39 UTC

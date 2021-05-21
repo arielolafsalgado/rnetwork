@@ -1,0 +1,25 @@
+Package: journalabbr
+Type: Package
+Title: Journal Abbreviations for BibTeX Documents
+Version: 0.1.0
+Authors@R: c(person("ShuCai Zou",email = "zscmoyujian@163.com",role =c("aut","cre")),
+            person("Yu Chen", email = "chengyuxuezhe@163.com", role =c("aut")))
+Description: Since the reference management software (such as 'Zotero', 'Mendeley') exports Bib file journal abbreviation is not detailed enough, the 'journalabbr' package only abbreviates the journal field of Bib file, and then outputs a new Bib file for generating reference format with journal abbreviation on other software (such as 'texstudio'). The abbreviation table is from 'JabRef'. 
+License: GPL-3
+URL: https://github.com/zoushucai/journalabbr
+BugReports: http://github.com/zoushucai/journalabbr/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0.0)
+Imports: data.table, bib2df, stringr, dplyr, purrr, stringi, usethis,
+        rlang, httr
+Suggests: testthat, knitr, rmarkdown, ggplot2, tidyr
+RoxygenNote: 7.1.0
+Date: 2020-07-10
+NeedsCompilation: no
+Packaged: 2020-07-14 02:33:53 UTC; zsc
+Author: ShuCai Zou [aut, cre],
+  Yu Chen [aut]
+Maintainer: ShuCai Zou <zscmoyujian@163.com>
+Repository: CRAN
+Date/Publication: 2020-07-14 16:50:02 UTC

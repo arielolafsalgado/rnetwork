@@ -1,0 +1,20 @@
+Package: MCMCprecision
+Type: Package
+Title: Precision of Discrete Parameters in Transdimensional MCMC
+Version: 0.3.6
+Authors@R: c(person("Daniel W.","Heck", email="heck@uni-mannheim.de",role=c("aut","cre")))
+Author: Daniel W. Heck [aut, cre]
+Maintainer: Daniel W. Heck <heck@uni-mannheim.de>
+Description: Estimates the precision of transdimensional Markov chain Monte Carlo (MCMC) output, which is often used for Bayesian analysis of models with different dimensionality (e.g., model selection). Transdimensional MCMC (e.g., reversible jump MCMC) relies on sampling a discrete model-indicator variable to estimate the posterior model probabilities. If only few switches occur between the models, precision may be low and assessment based on the assumption of independent samples misleading. Based on the observed transition matrix of the indicator variable, the method of Heck, Overstall, Gronau, & Wagenmakers (2017) <https://arxiv.org/abs/1703.10364> draws posterior samples of the stationary distribution to (a) assess the uncertainty in the estimated posterior model probabilities and (b) estimate the effective sample size of the MCMC output.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.0.0)
+Imports: Rcpp, parallel, utils, stats, Matrix, combinat
+LinkingTo: Rcpp, RcppArmadillo, RcppProgress, RcppEigen
+RoxygenNote: 6.0.1
+URL: https://github.com/danheck/MCMCprecision
+NeedsCompilation: yes
+Packaged: 2017-04-02 19:36:01 UTC; Daniel
+Repository: CRAN
+Date/Publication: 2017-04-03 06:17:12 UTC

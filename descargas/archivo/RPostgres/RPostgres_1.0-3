@@ -1,0 +1,42 @@
+Encoding: UTF-8
+Package: RPostgres
+Version: 1.0-3
+Date: 2017-12-06
+Title: 'Rcpp' Interface to 'PostgreSQL'
+Authors@R: c(
+    person("Hadley", "Wickham", role = "aut"),
+    person("Jeroen", "Ooms", role = "aut"),
+    person("Kirill", "Müller", role = "cre", email = "krlmlr+r@mailbox.org"),
+    person("RStudio", role = "cph"),
+    person("R Consortium", role = "cph"),
+    person("Tomoaki", "Nishiyama", role = "ctb",
+    comment = "Code for encoding vectors into strings derived from RPostgreSQL"),
+    person("Kungliga Tekniska Högskolan", role = "ctb", comment = "Source code for timegm")
+    )
+Description: 
+    Fully 'DBI'-compliant 'Rcpp'-backed interface to 'PostgreSQL' <https://www.postgresql.org/>,
+    an open-source relational database.
+License: GPL-2
+LazyLoad: true
+Depends: R (>= 3.1.0)
+Imports: bit64, blob, DBI (>= 0.7), hms, methods, Rcpp (>= 0.11.4.2),
+        withr
+Suggests: DBItest, testthat
+LinkingTo: BH, plogr, Rcpp
+Collate: 'PqDriver.R' 'PqConnection.R' 'PqResult.R' 'RPostgres-pkg.R'
+        'RcppExports.R' 'default.R' 'quote.R' 'tables.R'
+        'transactions.R' 'utils.R'
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2017-12-06 00:17:52 UTC; muelleki
+Author: Hadley Wickham [aut],
+  Jeroen Ooms [aut],
+  Kirill Müller [cre],
+  RStudio [cph],
+  R Consortium [cph],
+  Tomoaki Nishiyama [ctb] (Code for encoding vectors into strings derived
+    from RPostgreSQL),
+  Kungliga Tekniska Högskolan [ctb] (Source code for timegm)
+Maintainer: Kirill Müller <krlmlr+r@mailbox.org>
+Repository: CRAN
+Date/Publication: 2017-12-06 10:21:43 UTC

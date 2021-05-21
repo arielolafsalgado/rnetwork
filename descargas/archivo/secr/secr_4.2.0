@@ -1,0 +1,25 @@
+Package: secr
+Type: Package
+Title: Spatially Explicit Capture-Recapture
+Version: 4.2.0
+Depends: R (>= 3.5.0), methods
+Imports: abind, graphics, grDevices, MASS, utils, parallel, nlme, sp,
+        mgcv, raster, stats, tools, stringr, Rcpp (>= 0.12.14),
+        RcppParallel, RcppNumerical
+Suggests: maptools, spsurvey, rgdal, knitr, gdistance, rgeos, readxl,
+        rmarkdown
+LinkingTo: Rcpp, RcppParallel, RcppEigen, RcppNumerical
+VignetteBuilder: knitr
+Date: 2020-02-22
+Author: Murray Efford
+Maintainer: Murray Efford <murray.efford@otago.ac.nz>
+Description: Functions to estimate the density and size of a spatially distributed animal population sampled with an array of passive detectors, such as traps, or by searching polygons or transects. Models incorporating distance-dependent detection are fitted by maximizing the likelihood. Tools are included for data manipulation and model selection.
+License: GPL (>= 2)
+LazyData: yes
+LazyDataCompression: xz
+SystemRequirements: GNU make
+URL: https://www.otago.ac.nz/density
+NeedsCompilation: yes
+Packaged: 2020-02-22 01:11:38 UTC; Murray
+Repository: CRAN
+Date/Publication: 2020-02-22 06:30:02 UTC

@@ -1,0 +1,29 @@
+Package: SACOBRA
+Type: Package
+Title: Self-Adjusting COBRA
+Version: 1.1
+Date: 2019-08-15
+Author: Wolfgang Konen <wolfgang.konen@th-koeln.de> [aut], 
+ Samineh Bagheri <samineh.bagheri@th-koeln.de> [aut,cre],
+ Patrick Koch [aut], Thomas Baeck <t.h.w.baeck@liacs.leidenuniv.nl> [aut]
+Maintainer: Samineh Bagheri <samineh.bagheri@th-koeln.de>
+Description: Performs surrogate-assisted optimization for expensive black-box constrained problems.
+License: GPL (>= 2)
+Depends: R (>= 2.14.0),
+Suggests: nloptr, FNN, MASS, dfoptim, DEoptim, lhs, rgl, grDevices,
+        scales, numDeriv, pracma, reshape2, data.table
+Imports: testit, methods, mgcv, R6
+Collate: 'cobraInit.R' 'cobraPhaseI.R' 'cobraPhaseII.R' 'debugModel.R'
+        'defaultDebugRBF.R' 'defaultRI.R' 'defaultSAC.R' 'defaultTR.R'
+        'defaultCA.R' 'drawSurrogate3d.R' 'evalReal.R' 'fnArchive.R'
+        'getPredY.R' 'initialHjkb.R' 'innerFuncs.R' 'isres2.R'
+        'modifyEquCons.R' 'modelSelection.R' 'multiRunPlot.R'
+        'multiRunPlot_2.R' 'multiCOBRA.R' 'nmkb2.R' 'RbfInter.R'
+        'repairChootinan.R' 'repairInfeasRI2.R' 'SACOBRA.R'
+        'startCobra.R' 'trainSurrogates.R' 'trustRegion.R'
+        'updateSaveCobra.R' 'Gproblems.R'
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2019-08-26 16:59:22 UTC; bagheri
+Repository: CRAN
+Date/Publication: 2019-08-27 23:50:02 UTC

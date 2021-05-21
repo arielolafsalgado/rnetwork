@@ -1,0 +1,53 @@
+Package: bomrang
+Type: Package
+Title: Australian Government Bureau of Meteorology Data from R
+Version: 0.1.1
+Authors@R: c(person("Adam", "Sparks", role = c("aut", "cre"),
+    email = "adamhsparks@gmail.com",
+    comment = c(ORCID = "0000-0002-0061-8359")),
+    person("Mark", "Padgham", role = "aut",
+    email = "mark.padgham@email.com",
+    comment = c(ORCID = "0000-0003-2172-5265")),
+    person("Hugh", "Parsonage", role = "aut",
+    email = "hugh.parsonage@gmail.com",
+    comment = c(ORCID = "0000-0003-4055-0835")),
+    person("Keith", "Pembleton", role = "aut",
+    email = "keith.pembleton@usq.edu.au",
+    comment = c(ORCID = "0000-0002-1896-4516")))
+Description: Provides functions to interface with Australian Government Bureau
+    of Meteorology (BoM) data, fetching data and returning a tidy data frame of
+    précis forecasts, current weather data from stations, agriculture
+    bulletin data, BoM 0900 or 1500 weather bulletins or a raster stack object
+    of satellite imagery from GeoTIFF files. Data (c) Australian Government
+    Bureau of Meteorology Creative Commons (CC) Attribution 3.0 licence or
+    Public Access Licence (PAL) as appropriate. See
+    <http://www.bom.gov.au/other/copyright.shtml> for further details.
+URL: https://github.com/ropensci/bomrang
+BugReports: https://github.com/ropensci/bomrang/issues
+License: MIT + file LICENSE
+Depends: R (>= 3.2.0)
+Imports: curl (>= 2.8.1), data.table (>= 1.10.4), dplyr (>= 0.7.0),
+        foreign, httr (>= 1.2.1), hoardr, janitor, jsonlite (>= 1.5),
+        magrittr (>= 1.5), raster, rgdal, readr (>= 1.1.1), rvest,
+        tidyr (>= 0.6.3), utils, xml2 (>= 1.1.1)
+Encoding: UTF-8
+LazyData: true
+Suggests: covr, testthat, knitr, rmarkdown, ggplot2, ggthemes, grid,
+        gridExtra, maps, mapproj
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+ByteCompile: TRUE
+VignetteBuilder: knitr
+X-schema.org-applicationCategory: Tools
+X-schema.org-keywords: bom, meteorological-data, weather-forecast,
+        australia, weather, weather-data, meteorology,
+        australia-bureau-of-meteorology
+X-schema.org-isPartOf: https://ropensci.org
+Packaged: 2017-12-14 21:47:46 UTC; adamsparks
+Author: Adam Sparks [aut, cre] (0000-0002-0061-8359),
+  Mark Padgham [aut] (0000-0003-2172-5265),
+  Hugh Parsonage [aut] (0000-0003-4055-0835),
+  Keith Pembleton [aut] (0000-0002-1896-4516)
+Maintainer: Adam Sparks <adamhsparks@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-12-15 08:17:37 UTC

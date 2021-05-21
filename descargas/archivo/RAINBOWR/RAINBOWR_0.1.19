@@ -1,0 +1,26 @@
+Package: RAINBOWR
+Type: Package
+Title: Genome-Wide Association Study with SNP-Set Methods
+Version: 0.1.19
+Authors@R: c(
+  person("Kosuke", "Hamazaki", email = "hamazaki@ut-biomet.org", role = c("aut", "cre")),
+  person("Hiroyoshi", "Iwata", email = "aiwata@mail.ecc.u-tokyo.ac.jp", role = c("aut", "ctb"))
+  )
+Maintainer: Kosuke Hamazaki <hamazaki@ut-biomet.org>
+Description: By using 'RAINBOWR' (Reliable Association INference By Optimizing Weights with R), users can test multiple SNPs (Single Nucleotide Polymorphisms) simultaneously by kernel-based (SNP-set) methods. This package can also be applied to haplotype-based GWAS (Genome-Wide Association Study). Users can test not only additive effects but also dominance and epistatic effects. In detail, please check our paper on PLOS Computational Biology: Kosuke Hamazaki and Hiroyoshi Iwata (2020) <doi:10.1371/journal.pcbi.1007663>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: Rcpp, rrBLUP, rgl, tcltk, Matrix, cluster, MASS, pbmcapply,
+        optimx, methods, ape, stringr
+LinkingTo: Rcpp, RcppEigen
+RoxygenNote: 7.1.0
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2020-07-22 12:07:20 UTC; hamazaki
+Author: Kosuke Hamazaki [aut, cre],
+  Hiroyoshi Iwata [aut, ctb]
+Repository: CRAN
+Date/Publication: 2020-07-23 10:50:02 UTC

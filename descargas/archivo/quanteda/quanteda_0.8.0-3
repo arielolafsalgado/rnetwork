@@ -1,0 +1,43 @@
+Package: quanteda
+Type: Package
+Title: Quantitative Analysis of Textual Data
+Authors@R: c( person("Kenneth", "Benoit", email = "kbenoit@lse.ac.uk", role =
+    c("aut", "cre")), person("Paul", "Nulty", email = "paul.nulty@gmail.com",
+    role = "aut"), person("Pablo", "Barberá", email = "pablo.barbera@nyu.edu",
+    role = "ctb"), person("Kohei", "Watanabe", email =
+    "watanabe.kohei@gmail.com", role = "ctb"), person("Benjamin", "Lauderdale",
+    email = "B.E.lauderdale@lse.ac.uk", role = "ctb"))
+Author: Kenneth Benoit [aut, cre],
+    Paul Nulty [aut],
+    Pablo Barberá [ctb],
+    Kohei Watanabe [ctb],
+    Benjamin Lauderdale [ctb]
+Version: 0.8.0-3
+Date: 2015-07-10
+Description: A fast, flexible toolset for for the management, processing, and
+    quantitative analysis of textual data in R.
+License: GPL-3
+Depends: R (>= 3.0)
+Imports: methods, utils, stats, Matrix (>= 1.1), data.table (>= 1.9.3),
+        SnowballC, wordcloud, proxy, parallel, Rcpp, ca, stringi
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: knitr, lda, topicmodels, jsonlite (>= 0.9.10), streamR, tm
+        (>= 0.6), slam, ggplot2, XML, testthat
+URL: http://github.com/kbenoit/quanteda
+Encoding: UTF-8
+BugReports: https://github.com/kbenoit/quanteda/issues
+LazyData: TRUE
+VignetteBuilder: knitr
+Collate: 'RcppExports.R' 'clean.R' 'dictionaries.R' 'collocations.R'
+        'converters.R' 'corpus.R' 'dataDocs.R' 'describe-texts.R'
+        'dfm-classes.R' 'dfm-main.R' 'dfm-methods.R' 'distance.R'
+        'encoding.R' 'kwic.R' 'lexdiv.R' 'ngrams.R' 'plots.R'
+        'quanteda-package.R' 'readability.R' 'resample.R' 'settings.R'
+        'stopwords.R' 'syllables.R' 'textfile.R' 'textmodel-ca.R'
+        'textmodel-generics.R' 'textmodel-wordfish.R'
+        'textmodel-wordscores.R' 'toLower.R' 'tokenize.R' 'wordstem.R'
+NeedsCompilation: yes
+Packaged: 2015-07-10 23:03:15 UTC; kbenoit
+Maintainer: Kenneth Benoit <kbenoit@lse.ac.uk>
+Repository: CRAN
+Date/Publication: 2015-07-11 11:02:23

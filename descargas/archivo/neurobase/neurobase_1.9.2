@@ -1,0 +1,22 @@
+Package: neurobase
+Type: Package
+Title: 'Neuroconductor' Base Package with Helper Functions for 'nifti'
+        Objects
+Version: 1.9.2
+Author: John Muschelli <muschellij2@gmail.com>
+Maintainer: John Muschelli <muschellij2@gmail.com>
+Description: Base package for 'Neuroconductor', which includes many helper functions 
+    that interact with objects of class 'nifti', implemented by
+    package 'oro.nifti', for reading/writing and also other manipulation functions.
+Imports: methods, matrixStats, R.utils, graphics, grDevices, stats,
+        RNifti
+Depends: oro.nifti (>= 0.7.2), R (>= 3.2.0)
+License: GPL-2
+Suggests: testthat, ggplot2, knitr, rmarkdown, dplyr, reshape2, httr
+VignetteBuilder: knitr
+BugReports: https://github.com/muschellij2/nifti/issues
+RoxygenNote: 5.0.1.9000
+NeedsCompilation: no
+Packaged: 2017-01-06 02:49:28 UTC; johnmuschelli
+Repository: CRAN
+Date/Publication: 2017-01-06 10:11:56

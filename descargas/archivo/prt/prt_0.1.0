@@ -1,0 +1,30 @@
+Package: prt
+Title: Tabular Data Backed by Partitioned 'fst' Files
+Version: 0.1.0
+Authors@R: c(person(given = "Nicolas",
+                    family = "Bennett",
+                    role = c("aut", "cre"),
+                    email = "nicolas.bennett@stat.math.ethz.ch"),
+             person(given = "Drago",
+                    family = "Plecko",
+                    role = "ctb",
+                    email = "drago.plecko@stat.math.ethz.ch"))
+Description: Intended for larger-than-memory tabular data, 'prt' objects provide an interface to read row and/or column subsets into memory as data.table objects. Data queries, constructed as 'R' expressions, are evaluated using the non-standard evaluation framework provided by 'rlang' and file-backing is powered by the fast and efficient 'fst' package.
+URL: https://nbenn.github.io/prt/
+BugReports: https://github.com/nbenn/prt/issues
+License: GPL-3
+Imports: assertthat, fst, data.table, utils, vctrs, tibble, cli,
+        pillar, crayon, fansi, backports, rlang, knitr
+Suggests: testthat, xml2, covr, withr, nycflights13, datasets,
+        rmarkdown, bench
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-08-11 14:42:03 UTC; nbennett
+Author: Nicolas Bennett [aut, cre],
+  Drago Plecko [ctb]
+Maintainer: Nicolas Bennett <nicolas.bennett@stat.math.ethz.ch>
+Repository: CRAN
+Date/Publication: 2020-08-18 09:40:06 UTC

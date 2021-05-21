@@ -1,0 +1,69 @@
+Package: vegawidget
+Version: 0.1.0
+Title: Htmlwidget Renderer for Vega and Vega-Lite
+Description: Vega and Vega-Lite parse text in JSON notation to render 
+  chart-specifications into HTML. This package is used to facilitate the 
+  rendering. It also provides a means to interact with signals, events,
+  and datasets in a Vega chart using JavaScript or Shiny.
+Authors@R: c(
+    person(
+      given = "Ian", 
+      family = "Lyttle", 
+      email = "ian.lyttle@schneider-electric.com", 
+      role = c("aut", "cre"), 
+      comment = c(ORCID = "0000-0001-9962-4849")
+    ),
+    person("Vega/Vega-Lite Developers", role = c("aut")),
+    person(
+      given = "Alicia", 
+      family = "Schep",
+      email = "aschep@gmail.com",
+      role = c("ctb"),
+      comment = c(ORCID = "orcid.org/0000-0002-3915-0618")
+    ),
+    person(
+      given = "Stuart", 
+      family = "Lee", 
+      email = "lee.s@wehi.edu.au", 
+      role = c("ctb")
+    ),
+    person("Hadley", "Wickham", , "hadley@rstudio.com", role = c("ctb"), 
+      comment = c(ORCID = "0000-0003-4757-117X")
+    ),
+    person("Kanit", "Wongsuphasawat", comment = "Vega/Vega-Lite library", role = c("ctb")),
+    person("Dominik", "Moritz", comment = "Vega/Vega-Lite library", role = c("ctb")),
+    person("Arvind", "Satyanarayan", comment = "Vega/Vega-Lite library", role = c("ctb")),
+    person("Jeffrey", "Heer", comment = "Vega/Vega-Lite library", role = c("ctb")),
+    person("Mike", "Bostock", comment = "D3 library", role = c("ctb")),
+    person("David", "Frank", comment = "node-fetch library", role = c("ctb"))
+  )
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+URL: https://github.com/vegawidget/vegawidget
+BugReports: https://github.com/vegawidget/vegawidget/issues
+RoxygenNote: 6.1.1
+Depends: R (>= 2.10)
+Imports: jsonlite, htmlwidgets, assertthat, rlang, glue, magrittr,
+        shiny, htmltools
+Suggests: knitr, rmarkdown, listviewer, httr, testthat, yaml, fs,
+        gistr, webshot, magick, usethis, whisker, crayon, clipr, desc,
+        clisymbols, shinytest, readr, tibble, lubridate, learnr,
+        processx, rsvg, dplyr, png, conflicted, here
+NeedsCompilation: no
+Packaged: 2019-01-21 01:43:00 UTC; ijlyttle
+Author: Ian Lyttle [aut, cre] (<https://orcid.org/0000-0001-9962-4849>),
+  Vega/Vega-Lite Developers [aut],
+  Alicia Schep [ctb] (<https://orcid.org/0000-0002-3915-0618>),
+  Stuart Lee [ctb],
+  Hadley Wickham [ctb] (<https://orcid.org/0000-0003-4757-117X>),
+  Kanit Wongsuphasawat [ctb] (Vega/Vega-Lite library),
+  Dominik Moritz [ctb] (Vega/Vega-Lite library),
+  Arvind Satyanarayan [ctb] (Vega/Vega-Lite library),
+  Jeffrey Heer [ctb] (Vega/Vega-Lite library),
+  Mike Bostock [ctb] (D3 library),
+  David Frank [ctb] (node-fetch library)
+Maintainer: Ian Lyttle <ian.lyttle@schneider-electric.com>
+Repository: CRAN
+Date/Publication: 2019-01-30 18:20:03 UTC

@@ -1,0 +1,27 @@
+Package: tatoo
+Type: Package
+Title: Combine and Export Data Frames
+Version: 1.0.9
+Authors@R: person("Stefan", "Fleck", email = "stefan.b.fleck@gmail.com", role = c("aut", "cre"))
+Maintainer: Stefan Fleck <stefan.b.fleck@gmail.com>
+Description: 
+  Functions to combine data.frames in ways that require additional effort in 
+  base R, and to add metadata (id, title, ...) that can be used for printing and 
+  xlsx export. The 'Tatoo_report' class is provided as a 
+  convenient helper to write several such tables to a workbook, one table per 
+  worksheet.
+License: MIT + file LICENSE
+LazyData: TRUE
+Imports: assertthat, magrittr, data.table, openxlsx (>= 4.0.0), purrr,
+        rlang, stringi, colt, crayon, withr
+Suggests: testthat, rprojroot, kableExtra, knitr, rmarkdown
+RoxygenNote: 6.0.1.9000
+Encoding: UTF-8
+VignetteBuilder: knitr
+BugReports: https://github.com/statistikat/tatoo/issues
+URL: https://github.com/statistikat/tatoo
+NeedsCompilation: no
+Packaged: 2018-01-16 15:21:33 UTC; FLECK$
+Author: Stefan Fleck [aut, cre]
+Repository: CRAN
+Date/Publication: 2018-01-16 15:25:48 UTC

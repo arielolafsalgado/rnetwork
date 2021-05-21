@@ -1,0 +1,28 @@
+Package: bigrquery
+Title: An Interface to Google's 'BigQuery' 'API'
+Description: Easily talk to Google's 'BigQuery' database from R.
+Version: 0.4.1
+Authors@R: c(
+    person("Hadley", "Wickham", , "hadley@rstudio.com", c("aut", "cre")),
+    person("RStudio", role = "cph")
+    )
+Depends: R (>= 3.1.0)
+Imports: DBI, methods, httr, jsonlite, assertthat, readr, progress
+Suggests: testthat, DBItest, dplyr (>= 0.7.0), dbplyr, withr, hms
+License: GPL-3 | file LICENSE
+LazyData: true
+RoxygenNote: 6.0.1
+URL: https://github.com/rstats-db/bigrquery
+BugReports: https://github.com/rstats-db/bigrquery/issues
+Collate: 'auth.r' 'bigrquery.r' 'camelCase.R' 'datasets.r'
+        'dbi-driver.r' 'dbi-connection.r' 'dbi-result.r'
+        'dplyr-compat.R' 'dplyr.r' 'id.R' 'job-extract.R' 'job-query.R'
+        'job-upload.r' 'jobs.r' 'projects.r' 'query.r' 'request.r'
+        'tabledata.r' 'tables.r' 'utils.r' 'zzz.r'
+NeedsCompilation: yes
+Packaged: 2017-06-26 21:58:50 UTC; hadley
+Author: Hadley Wickham [aut, cre],
+  RStudio [cph]
+Maintainer: Hadley Wickham <hadley@rstudio.com>
+Repository: CRAN
+Date/Publication: 2017-06-26 22:16:13 UTC

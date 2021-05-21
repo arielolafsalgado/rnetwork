@@ -1,0 +1,21 @@
+Package: mfGARCH
+Title: Mixed-Frequency GARCH Models
+Version: 0.1.4
+Authors@R: person("Onno", "Kleen", email = "r@onnokleen.de", role = c("aut", "cre"))
+Description: Estimating GARCH-MIDAS (MIxed-DAta-Sampling) models (Engle, Ghysels, Sohn, 2013, <doi:10.1162/REST_a_00300>) and related statistical inference, accompanying the paper "Two are better than one: volatility forecasting using multiplicative component GARCH models" by Conrad and Kleen (2018, Working Paper, <doi:10.2139/ssrn.2752354>). The GARCH-MIDAS model decomposes the conditional variance of (daily) stock returns into a short- and long-term component, where the latter may depend on an exogenous covariate sampled at a lower frequency. 
+Depends: R (>= 3.3.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Imports: Rcpp, graphics, stats, numDeriv, zoo
+LinkingTo: Rcpp
+URL: https://github.com/onnokleen/mfGARCH/
+BugReports: https://github.com/onnokleen/mfGARCH/issues
+Suggests: testthat, dplyr, ggplot2, covr, rmarkdown
+NeedsCompilation: yes
+Packaged: 2018-06-19 14:02:11 UTC; Arbeit
+Author: Onno Kleen [aut, cre]
+Maintainer: Onno Kleen <r@onnokleen.de>
+Repository: CRAN
+Date/Publication: 2018-06-19 14:53:07 UTC

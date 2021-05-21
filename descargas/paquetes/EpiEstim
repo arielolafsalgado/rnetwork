@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package EpiEstim</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Estimate Time Varying Reproduction Numbers from Epidemic Curves [R package EpiEstim version 2.2-3]" />
+<meta name="citation_author" content="Anne Cori" />
+<meta name="citation_publication_date" content="2020-05-29" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=EpiEstim" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=EpiEstim" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="EpiEstim: Estimate Time Varying Reproduction Numbers from Epidemic Curves" />
+<meta name="og:description" content="Tools to quantify transmissibility throughout an epidemic from the analysis of time series of incidence as described in Cori et al. (2013) &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Faje%2Fkwt133&quot;&gt;doi:10.1093/aje/kwt133&lt;/a&gt;&amp;gt; and Wallinga and Teunis (2004) &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Faje%2Fkwh255&quot;&gt;doi:10.1093/aje/kwh255&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=EpiEstim" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>EpiEstim: Estimate Time Varying Reproduction Numbers from Epidemic Curves</h2>
+<p>Tools to quantify transmissibility throughout
+    an epidemic from the analysis of time series of incidence as described in
+    Cori et al. (2013) &lt;<a href="https://doi.org/10.1093%2Faje%2Fkwt133">doi:10.1093/aje/kwt133</a>&gt; and Wallinga and Teunis (2004) 
+    &lt;<a href="https://doi.org/10.1093%2Faje%2Fkwh255">doi:10.1093/aje/kwh255</a>&gt;.</p>
+<table summary="Package EpiEstim summary">
+<tr>
+<td>Version:</td>
+<td>2.2-3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../coarseDataTools/index.html">coarseDataTools</a> (&ge; 0.6-4), stats, graphics, <a href="../reshape2/index.html">reshape2</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../gridExtra/index.html">gridExtra</a>, <a href="../fitdistrplus/index.html">fitdistrplus</a>, <a href="../coda/index.html">coda</a>, <a href="../incidence/index.html">incidence</a> (&ge; 1.7.0), <a href="../scales/index.html">scales</a>, grDevices</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, utils, <a href="../vdiffr/index.html">vdiffr</a>, <a href="../covr/index.html">covr</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-05-29</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Anne Cori <a href="https://orcid.org/0000-0002-8443-9162"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    cre],
+  Simon Cauchemez [ctb],
+  Neil M. Ferguson <a href="https://orcid.org/0000-0002-1154-8093"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Christophe Fraser <a href="https://orcid.org/0000-0003-2399-9657"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Elisabeth Dahlqwist
+    <a href="https://orcid.org/0000-0001-5797-6803"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb],
+  P. Alex Demarsh [ctb],
+  Thibaut Jombart <a href="https://orcid.org/0000-0003-2226-8692"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Zhian N. Kamvar <a href="https://orcid.org/0000-0003-1458-7108"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Justin Lessler <a href="https://orcid.org/0000-0002-9741-8109"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Shikun Li [ctb],
+  Jonathan A. Polonsky
+    <a href="https://orcid.org/0000-0002-8634-4255"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb],
+  Jake Stockwin [ctb],
+  Robin Thompson <a href="https://orcid.org/0000-0001-8545-5212"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Rolina van Gaalen [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Anne Cori  &#x3c;&#x61;&#x2e;&#x63;&#x6f;&#x72;&#x69;&#x20;&#x61;&#x74;&#x20;&#x69;&#x6d;&#x70;&#x65;&#x72;&#x69;&#x61;&#x6c;&#x2e;&#x61;&#x63;&#x2e;&#x75;&#x6b;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_EpiEstim.html">EpiEstim results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package EpiEstim downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="EpiEstim.pdf"> EpiEstim.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/demo.html">EpiEstim demonstration</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/EpiEstim_2.2-3.tar.gz"> EpiEstim_2.2-3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/EpiEstim_2.2-3.zip">EpiEstim_2.2-3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/EpiEstim_2.2-3.zip">EpiEstim_2.2-3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/EpiEstim_2.2-3.zip">EpiEstim_2.2-3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/EpiEstim_2.2-3.tgz">EpiEstim_2.2-3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/EpiEstim_2.2-3.tgz">EpiEstim_2.2-3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/EpiEstim"> EpiEstim archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package EpiEstim reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../earlyR/index.html">earlyR</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=EpiEstim"><samp>https://CRAN.R-project.org/package=EpiEstim</samp></a>
+to link to this page.</p>
+</body>
+</html>

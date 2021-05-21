@@ -1,0 +1,32 @@
+Package: mlr
+Title: mlr: Machine Learning in R.
+Description: Interface to a large number of classification and regression
+    techniques, including machine-readable parameter descriptions. There is
+    also a n experimental extension for surival analysis and cost-sensitive
+    learning. Generic resampling, including cross-validation, bootstrapping and
+    subsampling. Hyperparameter tuning with modern optimization techniques.
+    Filter and wrapper methods for feature selection. Extension of basic
+    learners with additional operations common in machine learning.
+Author: Bernd Bischl <bernd_bischl@gmx.net>,
+    Michel Lang <lang@statistik.tu-dortmund.de>,
+    Jakob Richter <code@jakob-r.de>,
+    Leonard Judt <leonard.judt@tu-dortmund.de>
+Maintainer: Bernd Bischl <bernd_bischl@gmx.net>
+URL: https://github.com/berndbischl/mlr
+BugReports: https://github.com/berndbischl/mlr/issues
+License: BSD_3_clause + file LICENSE
+Depends: R (>= 3.0.0), ParamHelpers (>= 1.2), BBmisc (>= 1.7), stats
+Imports: parallelMap (>= 1.1), codetools, survival, checkmate (>= 1.1)
+Suggests: testthat, ada, adabag, class, cluster, cmaes, CoxBoost, crs,
+        DiceKriging, DiceOptim, DiscriMiner, e1071, earth, FNN,
+        FSelector, gbm, GenSA, ggplot2, glmnet, Hmisc, irace, kernlab,
+        kknn, klaR, LiblineaR, mboost, mda, mlbench, mRMRe, nnet,
+        party, penalized, pls, pROC, randomForest, randomForestSRC,
+        reshape2, rrlda, robustbase, rpart, rsm, RWeka, ROCR, stepPlr
+LazyData: yes
+ByteCompile: yes
+Version: 2.0
+Packaged: 2014-07-03 21:45:30 UTC; bischl
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2014-07-04 02:25:14

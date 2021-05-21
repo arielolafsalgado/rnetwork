@@ -1,0 +1,25 @@
+Package: etasFLP
+Type: Package
+Title: Estimation of an ETAS model. Mixed FLP (Forward Likelihood
+        Predictive) and ML estimation of non-parametric and parametric
+        components of the ETAS model for earthquake description.
+Version: 1.0.1
+Date: 2014-2-12
+Description: Estimation of the components of an ETAS model for earthquake description. 
+ Non-parametric background seismicity can be estimated through FLP (Forward Likelihood Predictive), while parametric components are estimated through maximum likelihood. 
+ The two estimation steps are alternated until convergence is obtained. 
+ For each event the probability of being a background event is estimated and used as a weight for declustering steps. Many options to control the estimation process are present. Some descriptive functions for earthquakes catalogs are  present; also plot, print, summary, profile methods are defined for main output.
+License: GPL (>= 2)
+Imports: fields,rgl,maps
+Depends: R (>= 2.14.0),mapdata
+Suggests: MASS
+Authors@R: c(person("Marcello", "Chiodi", role = c("aut", "cre"),
+                          email = "marcello.chiodi@unipa.it"),
+                   person("Giada", "Adelfio", role = c("aut"),
+                     email = "giada.adelfio@unipa.it"))
+Maintainer: Marcello Chiodi <marcello.chiodi@unipa.it>
+Author: Marcello Chiodi and Giada Adelfio
+Packaged: 2014-02-13 10:06:12 UTC; marcello
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2014-02-13 14:29:18

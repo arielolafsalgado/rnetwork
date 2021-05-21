@@ -1,0 +1,46 @@
+Package: MixSIAR
+Title: Bayesian Mixing Models in R
+Version: 3.1.10
+Authors@R: c(
+    person("Brian", "Stock", email = "b1stock@ucsd.edu", role = c("cre","aut")),
+    person("Brice", "Semmens", email = "semmens@ucsd.edu", role = "aut"),
+    person("Eric", "Ward", role = "ctb"),
+    person("Andrew", "Parnell", role = "ctb"),
+    person("Andrew", "Jackson", role = "ctb"),
+    person("Donald", "Phillips", role = "ctb"))
+Description: Creates and runs Bayesian mixing models to analyze
+    biological tracer data (i.e. stable isotopes, fatty acids), which estimate the
+    proportions of source (prey) contributions to a mixture (consumer). 'MixSIAR'
+    is not one model, but a framework that allows a user to create a mixing model
+    based on their data structure and research questions, via options for fixed/
+    random effects, source data types, priors, and error terms. 'MixSIAR' incorporates
+    several years of advances since 'MixSIR' and 'SIAR', and includes both GUI
+    (graphical user interface) and script versions.
+Depends: R (>= 3.4.0)
+Imports: ggplot2 (>= 2.2.1), rjags (>= 4-6), R2jags (>= 0.5-7), MASS
+        (>= 7.3), RColorBrewer (>= 1.1), reshape (>= 0.8.7), reshape2
+        (>= 1.4.3), lattice (>= 0.20-35), MCMCpack (>= 1.4-2), ggmcmc
+        (>= 1.1), coda (>= 0.19-1), loo (>= 2.0.0), bayesplot (>=
+        1.4.0)
+Suggests: gWidgets (>= 0.0-54), gWidgetsRGtk2 (>= 0.0-86), splancs (>=
+        2.01-40), knitr, rmarkdown, testthat
+SystemRequirements: JAGS (>= 4.1) for the script version, both JAGS and
+        GTK+ for the GUI version. For install instructions, see README
+        file.
+URL: https://github.com/brianstock/MixSIAR
+BugReports: https://github.com/brianstock/MixSIAR/issues
+License: GPL-3
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-04-13 01:47:20 UTC; brian
+Author: Brian Stock [cre, aut],
+  Brice Semmens [aut],
+  Eric Ward [ctb],
+  Andrew Parnell [ctb],
+  Andrew Jackson [ctb],
+  Donald Phillips [ctb]
+Maintainer: Brian Stock <b1stock@ucsd.edu>
+Repository: CRAN
+Date/Publication: 2018-04-13 03:09:50 UTC

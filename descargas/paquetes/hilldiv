@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package hilldiv</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=hilldiv" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="hilldiv: Integral Analysis of Diversity Based on Hill Numbers" />
+<meta name="og:description" content="Tools for analysing, comparing, visualising and partitioning diversity based on Hill numbers. 'hilldiv' is an R package that provides a set of functions to assist analysis of diversity for diet reconstruction, microbial community profiling or more general ecosystem characterisation analyses based on Hill numbers, using OTU/ASV tables and associated phylogenetic trees as inputs. The package includes functions for (phylo)diversity measurement, (phylo)diversity profile plotting, (phylo)diversity comparison between samples and groups, (phylo)diversity partitioning and (dis)similarity measurement. All of these grounded in abundance-based and incidence-based Hill numbers. The statistical framework developed around Hill numbers encompasses many of the most broadly employed diversity (e.g. richness, Shannon index, Simpson index), phylogenetic diversity (e.g. Faith's PD, Allen's H, Rao's quadratic entropy) and dissimilarity (e.g. Sorensen index, Unifrac distances) metrics. This enables the most common analyses of diversity to be performed while grounded in a single statistical framework. The methods are described in Jost et al. (2007) &amp;lt;&lt;a href=&quot;https://doi.org/10.1890%2F06-1736.1&quot;&gt;doi:10.1890/06-1736.1&lt;/a&gt;&amp;gt;, Chao et al. (2010) &amp;lt;&lt;a href=&quot;https://doi.org/10.1098%2Frstb.2010.0272&quot;&gt;doi:10.1098/rstb.2010.0272&lt;/a&gt;&amp;gt; and Chiu et al. (2014) &amp;lt;&lt;a href=&quot;https://doi.org/10.1890%2F12-0960.1&quot;&gt;doi:10.1890/12-0960.1&lt;/a&gt;&amp;gt;; and reviewed in the framework of molecularly characterised biological systems in Alberdi &amp;amp; Gilbert (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2F1755-0998.13014&quot;&gt;doi:10.1111/1755-0998.13014&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=hilldiv" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>hilldiv: Integral Analysis of Diversity Based on Hill Numbers</h2>
+<p>Tools for analysing, comparing, visualising and partitioning diversity based on Hill numbers.
+  'hilldiv' is an R package that provides a set of functions to assist analysis of diversity for
+  diet reconstruction, microbial community profiling or more general ecosystem characterisation
+  analyses based on Hill numbers, using OTU/ASV tables and associated phylogenetic trees as
+  inputs. The package includes functions for (phylo)diversity measurement, (phylo)diversity
+  profile plotting, (phylo)diversity comparison between samples and groups, (phylo)diversity
+  partitioning and (dis)similarity measurement. All of these grounded in abundance-based and
+  incidence-based Hill numbers.
+  The statistical framework developed around Hill numbers encompasses many of the most
+  broadly employed diversity (e.g. richness, Shannon index, Simpson index),
+  phylogenetic diversity (e.g. Faith's PD, Allen's H, Rao's quadratic entropy) and
+  dissimilarity (e.g. Sorensen index, Unifrac distances) metrics. This enables the most
+  common analyses of diversity to be performed while grounded in a single statistical
+  framework. The methods are described in Jost et al. (2007) &lt;<a href="https://doi.org/10.1890%2F06-1736.1">doi:10.1890/06-1736.1</a>&gt;,
+  Chao et al. (2010) &lt;<a href="https://doi.org/10.1098%2Frstb.2010.0272">doi:10.1098/rstb.2010.0272</a>&gt; and Chiu et al. (2014)
+  &lt;<a href="https://doi.org/10.1890%2F12-0960.1">doi:10.1890/12-0960.1</a>&gt;; and reviewed in the framework of molecularly characterised
+  biological systems in Alberdi &amp; Gilbert (2019) &lt;<a href="https://doi.org/10.1111%2F1755-0998.13014">doi:10.1111/1755-0998.13014</a>&gt;.</p>
+<table summary="Package hilldiv summary">
+<tr>
+<td>Version:</td>
+<td>1.5.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.1.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>stats, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../scales/index.html">scales</a>, <a href="../ggpubr/index.html">ggpubr</a>, <a href="../RColorBrewer/index.html">RColorBrewer</a>, <a href="../data.table/index.html">data.table</a>, <a href="../ape/index.html">ape</a>, <a href="../vegan/index.html">vegan</a>, <a href="../geiger/index.html">geiger</a>, <a href="../qgraph/index.html">qgraph</a>, <a href="../FSA/index.html">FSA</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-10-01</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Antton Alberdi [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Antton Alberdi  &#x3c;&#x61;&#x6e;&#x74;&#x74;&#x6f;&#x6e;&#x2e;&#x61;&#x6c;&#x62;&#x65;&#x72;&#x64;&#x69;&#x20;&#x61;&#x74;&#x20;&#x62;&#x69;&#x6f;&#x2e;&#x6b;&#x75;&#x2e;&#x64;&#x6b;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/anttonalberdi/hilldiv/issues">https://github.com/anttonalberdi/hilldiv/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/anttonalberdi/hilldiv">https://github.com/anttonalberdi/hilldiv</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">hilldiv citation info</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_hilldiv.html">hilldiv results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package hilldiv downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="hilldiv.pdf"> hilldiv.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/hilldiv_1.5.1.tar.gz"> hilldiv_1.5.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/hilldiv_1.5.1.zip">hilldiv_1.5.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/hilldiv_1.5.1.zip">hilldiv_1.5.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/hilldiv_1.5.1.zip">hilldiv_1.5.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/hilldiv_1.5.1.tgz">hilldiv_1.5.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/hilldiv_1.5.1.tgz">hilldiv_1.5.1.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=hilldiv"><samp>https://CRAN.R-project.org/package=hilldiv</samp></a>
+to link to this page.</p>
+</body>
+</html>

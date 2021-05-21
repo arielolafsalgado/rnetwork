@@ -1,0 +1,44 @@
+Package: EcoNetGen
+Version: 0.2.2
+Title: Simulate and Sample from Ecological Interaction Networks
+Description: Randomly generate a wide range of interaction networks with
+             specified size, average degree, modularity, and topological
+             structure. Sample nodes and links from within simulated networks
+             randomly, by degree, by module, or by abundance. Simulations
+             and sampling routines are implemented in 'FORTRAN', providing
+             efficient generation times even for large networks. Basic
+             visualization methods also included. Algorithms implemented
+             here are described in de Aguiar et al. (2017) <arXiv:1708.01242>.
+Authors@R: c(person("Marcus", "de Aguiar", 
+                    role = c("aut", "cph"),
+                    comment = c(ORCID = "0000-0003-1379-7568")),
+             person("Erica", "Newman", 
+                    role = c("aut"), 
+                    comment = c(ORCID = "0000-0001-6433-8594")),
+             person("Mathias", "Pires", role = "aut", 
+                    comment = c(ORCID = "0000-0003-2500-4748")),
+             person("NIMBioS", role = "fnd"),
+             person("Carl", "Boettiger", 
+                    email = "cboettig@gmail.com",
+                    role = c("aut", "cre"),
+                    comment = c(ORCID = "0000-0003-4580-091X")))
+License: GPL-3
+URL: https://github.com/cboettig/EcoNetGen
+BugReports: https://github.com/cboettig/EcoNetGen/issues
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+RoxygenNote: 6.1.0
+Suggests: spelling, testthat, covr, ggraph
+Imports: igraph, ggplot2
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2018-10-05 17:40:35 UTC; cboettig
+Author: Marcus de Aguiar [aut, cph] (<https://orcid.org/0000-0003-1379-7568>),
+  Erica Newman [aut] (<https://orcid.org/0000-0001-6433-8594>),
+  Mathias Pires [aut] (<https://orcid.org/0000-0003-2500-4748>),
+  NIMBioS [fnd],
+  Carl Boettiger [aut, cre] (<https://orcid.org/0000-0003-4580-091X>)
+Maintainer: Carl Boettiger <cboettig@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-10-05 17:52:13 UTC

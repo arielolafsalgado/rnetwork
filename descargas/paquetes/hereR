@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package hereR</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="'sf'-Based Interface to the 'HERE' REST APIs [R package hereR version 0.5.1]" />
+<meta name="citation_author" content="Merlin Unterfinger" />
+<meta name="citation_publication_date" content="2020-10-20" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=hereR" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=hereR" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="hereR: 'sf'-Based Interface to the 'HERE' REST APIs" />
+<meta name="og:description" content="Interface to the 'HERE' REST APIs &amp;lt;&lt;a href=&quot;https://developer.here.com/develop/rest-apis&quot;&gt;https://developer.here.com/develop/rest-apis&lt;/a&gt;&amp;gt;: (1) geocode and autosuggest addresses or reverse geocode POIs using the 'Geocoder' API; (2) route directions, travel distance or time matrices and isolines using the 'Routing' API; (3) request real-time traffic flow and incident information from the 'Traffic' API; (4) find request public transport connections and nearby stations from the 'Public Transit' API; (5) request intermodal routes using the 'Intermodal Routing' API; (6) get weather forecasts, reports on current weather conditions, astronomical information and alerts at a specific location from the 'Destination Weather' API. Locations, routes and isolines are returned as 'sf' objects." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=hereR" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>hereR: 'sf'-Based Interface to the 'HERE' REST APIs</h2>
+<p>Interface to the 'HERE' REST APIs &lt;<a href="https://developer.here.com/develop/rest-apis">https://developer.here.com/develop/rest-apis</a>&gt;:
+  (1) geocode and autosuggest addresses or reverse geocode POIs using the 'Geocoder' API;
+  (2) route directions, travel distance or time matrices and isolines using the 'Routing' API;
+  (3) request real-time traffic flow and incident information from the 'Traffic' API;
+  (4) find request public transport connections and nearby stations from the 'Public Transit' API;
+  (5) request intermodal routes using the 'Intermodal Routing' API;
+  (6) get weather forecasts, reports on current weather conditions, astronomical
+  information and alerts at a specific location from the 'Destination Weather' API.
+  Locations, routes and isolines are returned as 'sf' objects.</p>
+<table summary="Package hereR summary">
+<tr>
+<td>Version:</td>
+<td>0.5.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../curl/index.html">curl</a> (&ge; 4.3), <a href="../data.table/index.html">data.table</a> (&ge; 1.12.6), <a href="../flexpolyline/index.html">flexpolyline</a> (&ge;
+0.1.1), <a href="../jsonlite/index.html">jsonlite</a> (&ge; 1.7.0), <a href="../sf/index.html">sf</a> (&ge; 0.9-0), <a href="../stringr/index.html">stringr</a> (&ge; 1.4.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../covr/index.html">covr</a> (&ge; 3.5.0), <a href="../ggplot2/index.html">ggplot2</a> (&ge; 3.3.2), <a href="../htmlwidgets/index.html">htmlwidgets</a> (&ge; 1.5.1), <a href="../knitr/index.html">knitr</a> (&ge; 1.29), <a href="../leafpop/index.html">leafpop</a> (&ge; 0.0.5), <a href="../lwgeom/index.html">lwgeom</a> (&ge; 0.2-5), <a href="../mapview/index.html">mapview</a> (&ge; 2.9.0), <a href="../rmarkdown/index.html">rmarkdown</a> (&ge; 2.3), <a href="../testthat/index.html">testthat</a> (&ge; 2.3.2)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-20</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Merlin Unterfinger
+    <a href="https://orcid.org/0000-0003-2020-2366"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut, cre],
+  Daniel Possenriede
+    <a href="https://orcid.org/0000-0002-6738-9845"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Merlin Unterfinger  &#x3c;&#x69;&#x6e;&#x66;&#x6f;&#x20;&#x61;&#x74;&#x20;&#x6d;&#x75;&#x6e;&#x74;&#x65;&#x72;&#x66;&#x69;&#x6e;&#x67;&#x65;&#x72;&#x2e;&#x63;&#x68;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/munterfinger/hereR/issues/">https://github.com/munterfinger/hereR/issues/</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://munterfinger.github.io/hereR/">https://munterfinger.github.io/hereR/</a>,
+<a href="https://github.com/munterfinger/hereR/">https://github.com/munterfinger/hereR/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_hereR.html">hereR results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package hereR downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="hereR.pdf"> hereR.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/authentication.html">Authentication</a><br/>
+<a href="vignettes/geocoder.html">Geocoder API</a><br/>
+<a href="vignettes/intermodal.html">Intermodal Routing API</a><br/>
+<a href="vignettes/routing.html">Routing API</a><br/>
+<a href="vignettes/traffic.html">Traffic API</a><br/>
+<a href="vignettes/transit.html">Public Transit API</a><br/>
+<a href="vignettes/weather.html">Destination Weather API</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/hereR_0.5.1.tar.gz"> hereR_0.5.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/hereR_0.5.1.zip">hereR_0.5.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/hereR_0.5.1.zip">hereR_0.5.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/hereR_0.5.1.zip">hereR_0.5.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/hereR_0.5.1.tgz">hereR_0.5.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/hereR_0.5.1.tgz">hereR_0.5.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/hereR"> hereR archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=hereR"><samp>https://CRAN.R-project.org/package=hereR</samp></a>
+to link to this page.</p>
+</body>
+</html>

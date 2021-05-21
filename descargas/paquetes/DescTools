@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package DescTools</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Tools for Descriptive Statistics [R package DescTools version 0.99.38]" />
+<meta name="citation_author" content="Andri Signorell" />
+<meta name="citation_publication_date" content="2020-09-07" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=DescTools" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=DescTools" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="DescTools: Tools for Descriptive Statistics" />
+<meta name="og:description" content="A collection of miscellaneous basic statistic functions and convenience wrappers for efficiently describing data. The author's intention was to create a toolbox, which facilitates the (notoriously time consuming) first descriptive tasks in data analysis, consisting of calculating descriptive statistics, drawing graphical summaries and reporting the results. The package contains furthermore functions to produce documents using MS Word (or PowerPoint) and functions to import data from Excel. Many of the included functions can be found scattered in other packages and other sources written partly by Titans of R. The reason for collecting them here, was primarily to have them consolidated in ONE instead of dozens of packages (which themselves might depend on other packages which are not needed at all), and to provide a common and consistent interface as far as function and arguments naming, NA handling, recycling rules etc. are concerned. Google style guides were used as naming rules (in absence of convincing alternatives). The 'BigCamelCase' style was consequently applied to functions borrowed from contributed R packages as well." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=DescTools" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>DescTools: Tools for Descriptive Statistics</h2>
+<p>A collection of miscellaneous basic statistic functions and convenience wrappers for efficiently describing data. The author's intention was to create a toolbox, which facilitates the (notoriously time consuming) first descriptive tasks in data analysis, consisting of calculating descriptive statistics, drawing graphical summaries and reporting the results. The package contains furthermore functions to produce documents using MS Word (or PowerPoint) and functions to import data from Excel. Many of the included functions can be found scattered in other packages and other sources written partly by Titans of R. The reason for collecting them here, was primarily to have them consolidated in ONE instead of dozens of packages (which themselves might depend on other packages which are not needed at all), and to provide a common and consistent interface as far as function and arguments naming, NA handling, recycling rules etc. are concerned. Google style guides were used as naming rules (in absence of convincing alternatives). The 'BigCamelCase' style was consequently applied to functions borrowed from contributed R packages as well.</p>
+<table summary="Package DescTools summary">
+<tr>
+<td>Version:</td>
+<td>0.99.38</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>base, stats, R (&ge; 3.6.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>graphics, grDevices, methods, <a href="../MASS/index.html">MASS</a>, utils, <a href="../boot/index.html">boot</a>, <a href="../mvtnorm/index.html">mvtnorm</a>, <a href="../expm/index.html">expm</a>, <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.10), <a href="../rstudioapi/index.html">rstudioapi</a>, <a href="../Exact/index.html">Exact</a>, <a href="../gld/index.html">gld</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../BH/index.html">BH</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td>RDCOMClient, tcltk, <a href="../VGAM/index.html">VGAM</a>, <a href="../R.rsp/index.html">R.rsp</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-07</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Andri Signorell [aut, cre],
+  Ken Aho [ctb],
+  Andreas Alfons [ctb],
+  Nanina Anderegg [ctb],
+  Tomas Aragon [ctb],
+  Chandima Arachchige [ctb],
+  Antti Arppe [ctb],
+  Adrian Baddeley [ctb],
+  Kamil Barton [ctb],
+  Ben Bolker [ctb],
+  Hans W. Borchers [ctb],
+  Frederico Caeiro [ctb],
+  Stephane Champely [ctb],
+  Daniel Chessel [ctb],
+  Leanne Chhay [ctb],
+  Clint Cummins [ctb],
+  Michael Dewey [ctb],
+  Harold C. Doran [ctb],
+  Stephane Dray [ctb],
+  Charles Dupont [ctb],
+  Dirk Eddelbuettel [ctb],
+  Claus Ekstrom [ctb],
+  Martin Elff [ctb],
+  Jeff Enos [ctb],
+  Richard W. Farebrother [ctb],
+  John Fox [ctb],
+  Romain Francois [ctb],
+  Michael Friendly [ctb],
+  Tal Galili [ctb],
+  Matthias Gamer [ctb],
+  Joseph L. Gastwirth [ctb],
+  Vilmantas Gegzna [ctb],
+  Yulia R. Gel [ctb],
+  Juergen Gross [ctb],
+  Gabor Grothendieck [ctb],
+  Frank E. Harrell Jr [ctb],
+  Richard Heiberger [ctb],
+  Michael Hoehle [ctb],
+  Christian W. Hoffmann [ctb],
+  Soeren Hojsgaard [ctb],
+  Torsten Hothorn [ctb],
+  Markus Huerzeler [ctb],
+  Wallace W. Hui [ctb],
+  Pete Hurd [ctb],
+  Rob J. Hyndman [ctb],
+  Christopher Jackson [ctb],
+  Matthias Kohl [ctb],
+  Mikko Korpela [ctb],
+  Max Kuhn [ctb],
+  Detlew Labes [ctb],
+  Friederich Leisch [ctb],
+  Jim Lemon [ctb],
+  Dong Li [ctb],
+  Martin Maechler [ctb],
+  Arni Magnusson [ctb],
+  Ben Mainwaring [ctb],
+  Daniel Malter [ctb],
+  George Marsaglia [ctb],
+  John Marsaglia [ctb],
+  Alina Matei [ctb],
+  David Meyer [ctb],
+  Weiwen Miao [ctb],
+  Giovanni Millo [ctb],
+  Yongyi Min [ctb],
+  David Mitchell [ctb],
+  Franziska Mueller [ctb],
+  Markus Naepflin [ctb],
+  Daniel Navarro [ctb],
+  Henric Nilsson [ctb],
+  Klaus Nordhausen [ctb],
+  Derek Ogle [ctb],
+  Hong Ooi [ctb],
+  Nick Parsons [ctb],
+  Sandrine Pavoine [ctb],
+  Tony Plate [ctb],
+  Luke Prendergast [ctb],
+  Roland Rapold [ctb],
+  William Revelle [ctb],
+  Tyler Rinker [ctb],
+  Brian D. Ripley [ctb],
+  Caroline Rodriguez [ctb],
+  Nathan Russell [ctb],
+  Nick Sabbe [ctb],
+  Venkatraman E. Seshan [ctb],
+  Michael Smithson [ctb],
+  Greg Snow [ctb],
+  Karline Soetaert [ctb],
+  Werner A. Stahel [ctb],
+  Alec Stephenson [ctb],
+  Mark Stevenson [ctb],
+  Ralf Stubner [ctb],
+  Matthias Templ [ctb],
+  Duncan Temple Lang [ctb],
+  Terry Therneau [ctb],
+  Yves Tille [ctb],
+  Luis Torgo [ctb],
+  Adrian Trapletti [ctb],
+  Joshua Ulrich [ctb],
+  Kevin Ushey [ctb],
+  Jeremy VanDerWal [ctb],
+  Bill Venables [ctb],
+  John Verzani [ctb],
+  Pablo J. Villacorta Iglesias [ctb],
+  Gregory R. Warnes [ctb],
+  Stefan Wellek [ctb],
+  Hadley Wickham [ctb],
+  Rand R. Wilcox [ctb],
+  Peter Wolf [ctb],
+  Daniel Wollschlaeger [ctb],
+  Joseph Wood [ctb],
+  Ying Wu [ctb],
+  Thomas Yee [ctb],
+  Achim Zeileis [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Andri Signorell  &#x3c;&#x61;&#x6e;&#x64;&#x72;&#x69;&#x20;&#x61;&#x74;&#x20;&#x73;&#x69;&#x67;&#x6e;&#x6f;&#x72;&#x65;&#x6c;&#x6c;&#x2e;&#x6e;&#x65;&#x74;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/AndriSignorell/DescTools/issues">https://github.com/AndriSignorell/DescTools/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://andrisignorell.github.io/DescTools/">https://andrisignorell.github.io/DescTools/</a>,
+<a href="https://github.com/AndriSignorell/DescTools/">https://github.com/AndriSignorell/DescTools/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>C++11</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">DescTools citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/MissingData.html">MissingData</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_DescTools.html">DescTools results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package DescTools downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="DescTools.pdf"> DescTools.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Combinatorics.pdf">Combinatorics</a><br/>
+<a href="vignettes/DescToolsCompanion.pdf">DescTools Companion</a><br/>
+<a href="vignettes/TablesInR.pdf">Tables in R</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/DescTools_0.99.38.tar.gz"> DescTools_0.99.38.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/DescTools_0.99.38.zip">DescTools_0.99.38.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/DescTools_0.99.38.zip">DescTools_0.99.38.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/DescTools_0.99.38.zip">DescTools_0.99.38.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/DescTools_0.99.38.tgz">DescTools_0.99.38.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/DescTools_0.99.38.tgz">DescTools_0.99.38.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/DescTools"> DescTools archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package DescTools reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../bfsMaps/index.html">bfsMaps</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../AGread/index.html">AGread</a>, <a href="../ANOVAShiny/index.html">ANOVAShiny</a>, <a href="../ANOVAShiny2/index.html">ANOVAShiny2</a>, <a href="../atable/index.html">atable</a>, <a href="../catfun/index.html">catfun</a>, <a href="../CGPfunctions/index.html">CGPfunctions</a>, <a href="../dad/index.html">dad</a>, <a href="../DescToolsAddIns/index.html">DescToolsAddIns</a>, <a href="../docdescriptR/index.html">docdescriptR</a>, <a href="../epiGWAS/index.html">epiGWAS</a>, <a href="../GmAMisc/index.html">GmAMisc</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/gpuMagic.html"><span class="BioC">gpuMagic</span></a>, <a href="../jack/index.html">jack</a>, <a href="../miceRanger/index.html">miceRanger</a>, <a href="../morphomap/index.html">morphomap</a>, <a href="../rcompanion/index.html">rcompanion</a>, <a href="../robin/index.html">robin</a>, <a href="../rties/index.html">rties</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/SCOPE.html"><span class="BioC">SCOPE</span></a>, <a href="../Semblance/index.html">Semblance</a>, <a href="../sobir/index.html">sobir</a>, <a href="../SSHAARP/index.html">SSHAARP</a>, <a href="../tadaatoolbox/index.html">tadaatoolbox</a>, <a href="../TipDatingBeast/index.html">TipDatingBeast</a>, <a href="../uwo4419/index.html">uwo4419</a>, <a href="../wiseR/index.html">wiseR</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../ARTool/index.html">ARTool</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/chromswitch.html"><span class="BioC">chromswitch</span></a>, <a href="../Ecfun/index.html">Ecfun</a>, <a href="../FRESA.CAD/index.html">FRESA.CAD</a>, <a href="../FSA/index.html">FSA</a>, <a href="../gmGeostats/index.html">gmGeostats</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/iasva.html"><span class="BioC">iasva</span></a>, <a href="../JFE/index.html">JFE</a>, <a href="../mrbayes/index.html">mrbayes</a>, <a href="../MUS/index.html">MUS</a>, <a href="../samplesizeCMH/index.html">samplesizeCMH</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=DescTools"><samp>https://CRAN.R-project.org/package=DescTools</samp></a>
+to link to this page.</p>
+</body>
+</html>

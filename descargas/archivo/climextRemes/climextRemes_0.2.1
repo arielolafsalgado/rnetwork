@@ -1,0 +1,28 @@
+Package: climextRemes
+Title: Tools for Analyzing Climate Extremes
+Version: 0.2.1
+Date: 2019-06-02
+Authors@R: c(person("Christopher", "Paciorek", email =
+    "paciorek@stat.berkeley.edu", role = c("aut", "cre")),
+    person("Harinarayan", "Krishnan", email = "hkrishnan@lbl.gov",
+    role = c("ctb")))
+Description: Functions for fitting GEV and POT (via point process fitting)
+    models for extremes in climate data, providing return values, return
+    probabilities, and return periods for stationary and nonstationary models.
+    Also provides differences in return values and differences in log return
+    probabilities for contrasts of covariate values. Functions for estimating risk
+    ratios for event attribution analyses, including uncertainty. Under the hood,
+    many of the functions use functions from 'extRemes', including for fitting the
+    statistical models. Details are given in Paciorek, Stone, and Wehner (2018)
+    <doi:10.1016/j.wace.2018.01.002>.
+License: BSD_3_clause + file LICENSE
+Imports: methods, extRemes (>= 2.0.0), boot
+URL: https://bitbucket.org/lbl-cascade/climextremes-dev
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2019-06-02 21:02:01 UTC; paciorek
+Author: Christopher Paciorek [aut, cre],
+  Harinarayan Krishnan [ctb]
+Maintainer: Christopher Paciorek <paciorek@stat.berkeley.edu>
+Repository: CRAN
+Date/Publication: 2019-06-03 11:30:15 UTC

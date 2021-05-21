@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package postpack</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Utilities for Processing Posterior Samples Stored in 'mcmc.lists' [R package postpack version 0.5.2]" />
+<meta name="citation_author" content="Ben Staton" />
+<meta name="citation_publication_date" content="2020-09-17" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=postpack" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=postpack" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="postpack: Utilities for Processing Posterior Samples Stored in 'mcmc.lists'" />
+<meta name="og:description" content="The aim of 'postpack' is to provide the infrastructure for a standardized workflow for 'mcmc.list' objects. These objects can be used to store output from models fitted with Bayesian inference using 'JAGS', 'WinBUGS', 'OpenBUGS', 'NIMBLE', 'Stan', or even custom MCMC algorithms. Although the 'coda' R package provides some methods for these objects, it is somewhat limited in easily performing post-processing tasks for specific nodes. Models are ever increasing in their complexity and the number of tracked nodes, and oftentimes a user may wish to summarize/diagnose sampling behavior for only a small subset of nodes at a time for a particular question or figure. Thus, many 'postpack' functions support performing tasks on a subset of nodes, where the subset is specified with regular expressions. The functions in 'postpack' streamline the extraction, summarization, and diagnostics of specific monitored nodes after model fitting. Further, because there is rarely only ever one model under consideration, 'postpack' scales efficiently to perform the same tasks on output from multiple models simultaneously, facilitating rapid assessment of model sensitivity to changes in assumptions." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=postpack" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>postpack: Utilities for Processing Posterior Samples Stored in
+'mcmc.lists'</h2>
+<p>The aim of 'postpack' is to provide the infrastructure for a standardized workflow for 'mcmc.list' objects.
+    These objects can be used to store output from models fitted with Bayesian inference using
+    'JAGS', 'WinBUGS', 'OpenBUGS', 'NIMBLE', 'Stan', or even custom MCMC algorithms. Although the 'coda' R package provides
+    some methods for these objects, it is somewhat limited in easily performing post-processing tasks for
+    specific nodes. Models are ever increasing in their complexity and the number of tracked nodes, and oftentimes
+    a user may wish to summarize/diagnose sampling behavior for only a small subset of nodes at a time
+    for a particular question or figure. Thus, many 'postpack' functions support performing tasks on a
+    subset of nodes, where the subset is specified with regular expressions. The functions in 'postpack'
+    streamline the extraction, summarization, and diagnostics of specific monitored nodes after model fitting.
+    Further, because there is rarely only ever one model under consideration, 'postpack' scales efficiently 
+    to perform the same tasks on output from multiple models simultaneously, facilitating rapid assessment 
+    of model sensitivity to changes in assumptions.</p>
+<table summary="Package postpack summary">
+<tr>
+<td>Version:</td>
+<td>0.5.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../stringr/index.html">stringr</a> (&ge; 1.3.1), <a href="../matrixcalc/index.html">matrixcalc</a>, <a href="../coda/index.html">coda</a>, <a href="../mcmcse/index.html">mcmcse</a>, <a href="../abind/index.html">abind</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-17</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Ben Staton <a href="https://orcid.org/0000-0002-2342-3482"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Ben Staton  &#x3c;&#x73;&#x74;&#x61;&#x74;&#x6f;&#x6e;&#x62;&#x65;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/bstaton1/postpack/issues">https://github.com/bstaton1/postpack/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://bstaton1.github.io/postpack/">https://bstaton1.github.io/postpack/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_postpack.html">postpack results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package postpack downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="postpack.pdf"> postpack.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/example-mcmclists.html">Example mcmc.lists</a><br/>
+<a href="vignettes/feature-overview.html">Feature Overview</a><br/>
+<a href="vignettes/multiple-models.html">Multiple Models</a><br/>
+<a href="vignettes/pattern-matching.html">Pattern Matching</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/postpack_0.5.2.tar.gz"> postpack_0.5.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/postpack_0.5.2.zip">postpack_0.5.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/postpack_0.5.2.zip">postpack_0.5.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/postpack_0.5.2.zip">postpack_0.5.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/postpack_0.5.2.tgz">postpack_0.5.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/postpack_0.5.2.tgz">postpack_0.5.2.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=postpack"><samp>https://CRAN.R-project.org/package=postpack</samp></a>
+to link to this page.</p>
+</body>
+</html>

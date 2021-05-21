@@ -1,0 +1,27 @@
+Package: FindIt
+Version: 0.4
+Date: 2015-02-02
+Title: Finding Heterogeneous Treatment Effects
+Author: Naoki Egami <naoki.egami5@gmail.com>, Marc Ratkovic <ratkovic@princeton.edu>, Kosuke Imai <kimai@princeton.edu>,
+Maintainer: Naoki Egami <naoki.egami5@gmail.com>
+Depends: R (>= 2.15.0), glmnet, lars, Matrix
+Description: FindIt implements the heterogeneous
+        treatment effect estimation procedure proposed by Imai and
+        Ratkovic (2013).  The proposed method is applicable, for
+        example, when selecting a small number of most (or least)
+        efficacious treatments from a large number of alternative
+        treatments as well as when identifying subsets of the
+        population who benefit (or are harmed by) a treatment of
+        interest. The method adapts the Support Vector Machine
+        classifier by placing separate LASSO constraints over the
+        pre-treatment parameters and causal heterogeneity parameters of
+        interest. This allows for the qualitative distinction between
+        causal and other parameters, thereby making the variable
+        selection suitable for the exploration of causal heterogeneity.
+LazyLoad: yes
+LazyData: yes
+License: GPL (>= 2)
+Repository: CRAN
+NeedsCompilation: no
+Packaged: 2015-02-07 18:08:36 UTC; naokiegami
+Date/Publication: 2015-02-08 00:31:16

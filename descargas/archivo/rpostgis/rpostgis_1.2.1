@@ -1,0 +1,31 @@
+Package: rpostgis
+Version: 1.2.1
+Date: 2017-5-6
+Title: R Interface to a 'PostGIS' Database
+Description: Provides an interface between R and
+    'PostGIS'-enabled 'PostgreSQL' databases to transparently transfer
+    spatial data. Both vector (points, lines, polygons) and raster
+    data are supported in read and write modes. Also provides
+    convenience functions to execute common procedures in
+    'PostgreSQL/PostGIS'.
+Authors@R: c(
+    person("Mathieu", "Basille", email = "basille@ufl.edu", role =
+           c("aut")),
+    person("David", "Bucklin", email = "dbucklin@ufl.edu", role =
+           c("aut", "cre")) )
+SystemRequirements: 'PostgreSQL' with 'PostGIS' extension
+Depends: R (>= 3.3.0), RPostgreSQL, DBI (>= 0.5)
+Imports: methods, raster, rgeos, sp, stats
+Suggests: rgdal, wkb
+License: GPL (>= 3)
+LazyData: true
+URL: https://github.com/mablab/rpostgis
+BugReports: https://github.com/mablab/rpostgis/issues
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-05-06 20:53:18 UTC; dbucklin
+Author: Mathieu Basille [aut],
+  David Bucklin [aut, cre]
+Maintainer: David Bucklin <dbucklin@ufl.edu>
+Repository: CRAN
+Date/Publication: 2017-05-07 05:35:56 UTC

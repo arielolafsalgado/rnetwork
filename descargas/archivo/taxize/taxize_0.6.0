@@ -1,0 +1,39 @@
+Package: taxize
+Title: Taxonomic Information from Around the Web
+Description: Taxonomic information from around the web. This package
+    interacts with a suite of web 'APIs' for taxonomic tasks, such
+    as verifying species names, getting taxonomic hierarchies,
+    and verifying name spelling.
+Version: 0.6.0
+License: MIT + file LICENSE
+URL: https://github.com/ropensci/taxize
+BugReports: https://github.com/ropensci/taxize/issues
+Authors@R: c(
+    person("Scott", "Chamberlain", role = c("aut", "cre"), email = "myrmecocystus@gmail.com"),
+    person("Eduard", "Szoecs", role = "aut", email = "eduardszoecs@gmail.com"),
+    person("Zachary", "Foster", role = "aut", email = "zacharyfoster1989@gmail.com"),
+    person("Carl", "Boettiger", role = "aut", email = "cboettig@gmail.com"),
+    person("Karthik", "Ram", role = "aut", email = "karthik@ropensci.org"),
+    person("Ignasi", "Bartomeus", role = "aut", email = "nacho.bartomeus@gmail.com"),
+    person("John", "Baumgartner", role = "aut", email = "johnbb@student.unimelb.edu.au")
+  )
+LazyLoad: yes
+LazyData: yes
+VignetteBuilder: knitr
+Depends: R(>= 2.10.0)
+Imports: XML (>= 3.98.1.1), RCurl (>= 1.6), reshape2, stringr, plyr,
+        httr (>= 0.6.1), jsonlite, foreach, ape, Taxonstand,
+        data.table, bold
+Suggests: testthat, roxygen2, knitr, vegan
+NeedsCompilation: no
+Packaged: 2015-06-13 15:24:49 UTC; sacmac
+Author: Scott Chamberlain [aut, cre],
+  Eduard Szoecs [aut],
+  Zachary Foster [aut],
+  Carl Boettiger [aut],
+  Karthik Ram [aut],
+  Ignasi Bartomeus [aut],
+  John Baumgartner [aut]
+Maintainer: Scott Chamberlain <myrmecocystus@gmail.com>
+Repository: CRAN
+Date/Publication: 2015-06-13 19:00:34

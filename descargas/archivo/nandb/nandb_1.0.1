@@ -1,0 +1,31 @@
+Package: nandb
+Type: Package
+Title: Number and Brightness Image Analysis
+Version: 1.0.1
+Authors@R: c(person("Rory", "Nolan", email = "rorynoolan@gmail.com", 
+                    role = c("aut", "cre", "cph")),
+             person("Luis", "Alvarez", email = "lalvarez@well.ox.ac.uk",
+                    role = "ctb"),
+             person("Sergi", "Padilla-Parra", email = "spadilla@well.ox.ac.uk",
+                    role = c("ctb", "ths", "cph")))
+Maintainer: Rory Nolan <rorynoolan@gmail.com>
+URL: https://github.com/rorynolan/nandb
+BugReports: https://github.com/rorynolan/nandb/issues
+Description: Functions for calculation of molecular number and brightness from 
+    images, as detailed in Digman et al. 2008 <doi:10.1529/biophysj.107.114645>. 
+License: BSD_3_clause + file LICENSE
+LazyData: TRUE
+LinkingTo: Rcpp
+Imports: Rcpp, filesstrings (>= 2.2.0), magrittr, autothresholdr (>=
+        1.2.0), dplyr, stringr, purrr, checkmate, detrendr (>= 0.5.0),
+        ijtiff (>= 1.1.0), rlang, stats, MASS
+RoxygenNote: 6.0.1
+Suggests: knitr, rmarkdown, covr, testthat, tidyverse, abind
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2018-05-08 14:27:21 UTC; rnolan
+Author: Rory Nolan [aut, cre, cph],
+  Luis Alvarez [ctb],
+  Sergi Padilla-Parra [ctb, ths, cph]
+Repository: CRAN
+Date/Publication: 2018-05-08 15:26:39 UTC

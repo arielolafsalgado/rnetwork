@@ -1,0 +1,41 @@
+Package: multiApply
+Title: Apply Functions to Multiple Multidimensional Arrays or Vectors
+Version: 2.0.1
+Authors@R: c(
+    person("BSC-CNS", role = c("aut", "cph")),
+    person("Nicolau", "Manubens", , "nicolau.manubens@bsc.es", role = "aut"),
+    person("Alasdair", "Hunter", , "alasdair.hunter@bsc.es", role = "aut"),
+    person("Nuria", "Perez", , "nuria.perez@bsc.es", role = "cre"))
+Description: The base apply function and its variants, as well as the related
+    functions in the 'plyr' package, typically apply user-defined functions to a
+    single argument (or a list of vectorized arguments in the case of mapply). The
+    'multiApply' package extends this paradigm with its only function, Apply, which
+    efficiently applies functions taking one or a list of multiple unidimensional
+    or multidimensional numeric arrays (or combinations thereof) as input. The input
+    arrays can have different numbers of dimensions as well as different dimension
+    lengths, and the applied function can return one or a list of unidimensional or
+    multidimensional arrays as output. This saves development time by preventing the
+    R user from writing often error-prone and memory-inefficient loops dealing with
+    multiple complex arrays. Also, a remarkable feature of Apply is the transparent
+    use of multi-core through its parameter 'ncores'. In contrast to the base apply
+    function, this package suggests the use of 'target dimensions' as opposite
+    to the 'margins' for specifying the dimensions relevant to the function to be
+    applied.
+Depends: R (>= 3.2.0)
+Imports: doParallel, foreach, plyr
+Suggests: testthat
+License: LGPL-3
+URL: https://earth.bsc.es/gitlab/ces/multiApply
+BugReports: https://earth.bsc.es/gitlab/ces/multiApply/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 5.0.0
+NeedsCompilation: no
+Packaged: 2018-11-21 17:14:36 UTC; nmanuben
+Author: BSC-CNS [aut, cph],
+  Nicolau Manubens [aut],
+  Alasdair Hunter [aut],
+  Nuria Perez [cre]
+Maintainer: Nuria Perez <nuria.perez@bsc.es>
+Repository: CRAN
+Date/Publication: 2018-11-23 23:40:03 UTC

@@ -1,0 +1,15 @@
+Package: RegressionFactory
+Type: Package
+Title: Expander Functions for Generating Full Gradient and Hessian from
+        Single-Slot and Multi-Slot Base Distributions
+Version: 0.7.2
+Date: 2016-09-07
+Author: Alireza S. Mahani, Mansour T.A. Sharabiani
+Maintainer: Alireza S. Mahani <alireza.s.mahani@gmail.com>
+Description: The expander functions rely on the mathematics developed for the Hessian-definiteness invariance theorem for linear projection transformations of variables, described in authors' paper, to generate the full, high-dimensional gradient and Hessian from the lower-dimensional derivative objects. This greatly relieves the computational burden of generating the regression-function derivatives, which in turn can be fed into any optimization routine that utilizes such derivatives. The theorem guarantees that Hessian definiteness is preserved, meaning that reasoning about this property can be performed in the low-dimensional space of the base distribution. This is often a much easier task than its equivalent in the full, high-dimensional space. Definiteness of Hessian can be useful in selecting optimization/sampling algorithms such as Newton-Raphson optimization or its sampling equivalent, the Stochastic Newton Sampler. Finally, in addition to being a computational tool, the regression expansion framework is of conceptual value by offering new opportunities to generate novel regression problems.
+License: GPL (>= 2)
+Suggests: sns, MfUSampler, dglm
+NeedsCompilation: no
+Packaged: 2016-09-08 00:46:00 UTC; asmahani
+Repository: CRAN
+Date/Publication: 2016-09-08 07:33:43

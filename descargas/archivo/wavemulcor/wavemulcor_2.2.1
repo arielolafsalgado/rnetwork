@@ -1,0 +1,41 @@
+Package: wavemulcor
+Title: Wavelet Routines for Global and Local Multiple Correlation
+Version: 2.2.1
+Authors@R: person("Javier", "Fernandez-Macho", email = "javier.fernandezmacho@ehu.es", role = c("aut", "cre"))
+Description: Wavelet routines that calculate single sets of 
+             wavelet multiple correlations (WMC) and cross-correlations (WMCC)
+             out of n variables. 
+             They can later be plotted in single graphs, as an alternative to trying 
+             to make sense out of several sets of wavelet correlations or 
+             wavelet cross-correlations. 
+             The code is based on the calculation, at each wavelet scale, of the 
+             square root of the coefficient of determination in a linear combination 
+             of variables for which such coefficient of determination is a maximum. 
+             The code provided here is based on the wave.correlation routine in 
+             Brandon Whitcher's waveslim R package Version: 1.6.4, which in turn is 
+             based on wavelet methodology developed in Percival and Walden (2000) <DOI:10.1017/CBO9780511841040>; 
+             Gençay, Selçuk and Whitcher (2002) <DOI:10.1016/B978-012279670-8.50013-6> and others.
+             Version 2 incorporates wavelet local multiple correlations (WLMC).
+             These are like the previous global WMC but consisting in one
+             single set of multiscale correlations along time. That is, at each time
+             t, they are calculated by letting a window of weighted wavelet 
+             coefficients around t move along time. Six weight functions are provided.
+             Namely, the  uniform window, Cleveland's tricube window, Epanechnikov's 
+             parabolic window, Bartlett's triangular window and Wendland's truncated 
+             power window and the Gaussian window.
+             Version 2.2 incorporates an auxiliary function that calculates local 
+             multiple correlations (LMC). They are calculated by letting move along time 
+             a window of weighted time series values around t. Any of the six weight 
+             functions mentioned above can be used.
+License: GPL (>= 2)
+Depends: R (>= 3.4.0), waveslim (>= 1.7.5)
+Suggests: plot3D
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-06-08 18:58:21 UTC; jf
+Author: Javier Fernandez-Macho [aut, cre]
+Maintainer: Javier Fernandez-Macho <javier.fernandezmacho@ehu.es>
+Repository: CRAN
+Date/Publication: 2018-06-08 21:32:58 UTC

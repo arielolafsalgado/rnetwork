@@ -1,0 +1,25 @@
+Package: rrd
+Type: Package
+Title: Import Data from a RRD (Round Robin Database) File
+Version: 0.2.1
+Date: 2018-07-02
+Authors@R: c(person("Andrie", "de Vries", email = "apdevries@gmail.com", 
+    role = c("cre", "cph")), person("Plamen", "Dimitrov", 
+    email = "dim.plamen@gmail.com", role = c("aut", "cph")))
+Description: Makes it easy to import the data from a 'RRD' database 
+   (<https://oss.oetiker.ch/rrdtool/>) directly into R data structures. The 
+   resulting objects are 'tibble' objects or a list of 'tibble' objects, making
+   it easy to manipulate the data.
+SystemRequirements: librrd-dev, rrdtool
+OS_type: unix
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Imports: assertthat, tibble
+License: MIT + file LICENSE
+Suggests: testthat, covr
+Packaged: 2018-07-02 11:10:10 UTC; andrie
+Author: Andrie de Vries [cre, cph],
+  Plamen Dimitrov [aut, cph]
+Maintainer: Andrie de Vries <apdevries@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-07-05 08:30:06 UTC

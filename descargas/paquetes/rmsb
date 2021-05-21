@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package rmsb</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Bayesian Regression Modeling Strategies [R package rmsb version 0.0.1]" />
+<meta name="citation_author" content="Frank Harrell" />
+<meta name="citation_publication_date" content="2020-08-03" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=rmsb" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=rmsb" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="rmsb: Bayesian Regression Modeling Strategies" />
+<meta name="og:description" content="A Bayesian companion to the 'rms' package, 'rmsb' provides Bayesian model fitting, post-fit estimation, and graphics. It implements Bayesian regression models whose fit objects can be processed by 'rms' functions such as 'contrast()', 'summary()', 'Predict()', 'nomogram()', and 'latex()'. The fitting function currently implemented in the package is 'blrm()' for Bayesian logistic binary and ordinal regression with optional clustering, censoring, and departures from the proportional odds assumption using the partial proportional odds model of Peterson and Harrell (1990) &amp;lt;&lt;a href=&quot;https://doi.org/10.2307%2F2347760&quot;&gt;doi:10.2307/2347760&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=rmsb" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>rmsb: Bayesian Regression Modeling Strategies</h2>
+<p>A Bayesian companion to the 'rms' package, 'rmsb' provides Bayesian model fitting, post-fit estimation, and graphics.  It implements Bayesian regression models whose fit objects can be processed by 'rms' functions such as 'contrast()', 'summary()', 'Predict()', 'nomogram()', and 'latex()'.  The fitting function currently implemented in the package is 'blrm()' for Bayesian logistic binary and ordinal regression with optional clustering, censoring, and departures from the proportional odds assumption using the partial proportional odds model of Peterson and Harrell (1990) &lt;<a href="https://doi.org/10.2307%2F2347760">doi:10.2307/2347760</a>&gt;.</p>
+<table summary="Package rmsb summary">
+<tr>
+<td>Version:</td>
+<td>0.0.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.4.0), <a href="../rms/index.html">rms</a> (&ge; 6.0.1)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>methods, <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.0), <a href="../RcppParallel/index.html">RcppParallel</a> (&ge; 5.0.1), <a href="../rstan/index.html">rstan</a> (&ge;
+2.18.1), <a href="../rstantools/index.html">rstantools</a> (&ge; 2.1.1), <a href="../Hmisc/index.html">Hmisc</a> (&ge; 4.3-0), <a href="../survival/index.html">survival</a> (&ge;
+3.1-12), <a href="../ggplot2/index.html">ggplot2</a>, <a href="../MASS/index.html">MASS</a>, <a href="../cluster/index.html">cluster</a>, <a href="../digest/index.html">digest</a>, <a href="../knitr/index.html">knitr</a>, <a href="../loo/index.html">loo</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../BH/index.html">BH</a> (&ge; 1.66.0), <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.0), <a href="../RcppEigen/index.html">RcppEigen</a> (&ge; 0.3.3.3.0), <a href="../RcppParallel/index.html">RcppParallel</a> (&ge; 5.0.1), <a href="../rstan/index.html">rstan</a> (&ge; 2.18.1), <a href="../StanHeaders/index.html">StanHeaders</a> (&ge;
+2.18.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../mice/index.html">mice</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-08-03</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Frank Harrell <a href="https://orcid.org/0000-0002-8271-5493"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Ben Goodrich [ctb] (contributed Stan code),
+  Ben Bolker [ctb] (wrote original code that is folded into the
+    pdensityContour function),
+  Doug Bates [ctb] (write original code for highest posterior density
+    interval that is folded into the HPDint function)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Frank Harrell  &#x3c;&#x66;&#x68;&#x20;&#x61;&#x74;&#x20;&#x66;&#x68;&#x61;&#x72;&#x72;&#x65;&#x6c;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL (&ge; 3)</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://hbiostat.org/R/rmsb">https://hbiostat.org/R/rmsb</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>GNU make</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="README">README</a> <a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_rmsb.html">rmsb results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package rmsb downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="rmsb.pdf"> rmsb.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/rmsb_0.0.1.tar.gz"> rmsb_0.0.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/rmsb_0.0.1.zip">rmsb_0.0.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/rmsb_0.0.1.zip">rmsb_0.0.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/rmsb_0.0.1.zip">rmsb_0.0.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/rmsb_0.0.1.tgz">rmsb_0.0.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/rmsb_0.0.1.tgz">rmsb_0.0.1.tgz</a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package rmsb reverse dependencies">
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../rms/index.html">rms</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=rmsb"><samp>https://CRAN.R-project.org/package=rmsb</samp></a>
+to link to this page.</p>
+</body>
+</html>

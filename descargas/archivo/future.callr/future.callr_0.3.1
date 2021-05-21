@@ -1,0 +1,21 @@
+Package: future.callr
+Version: 0.3.1
+Depends: R (>= 3.2.0), future (>= 1.8.1)
+Imports: callr (>= 2.0.4)
+Suggests: future.apply, listenv, markdown, R.rsp
+VignetteBuilder: R.rsp
+Title: A Future API for Parallel Processing using 'callr'
+Authors@R: c(person("Henrik", "Bengtsson", role=c("aut", "cre", "cph"),
+                                          email = "henrikb@braju.com"))
+Description: Implementation of the Future API on top of the 'callr' package.  This allows you to process futures, as defined by the 'future' package, in parallel out of the box, on your local (Linux, macOS, Windows, ...) machine.  Contrary to backends relying on the 'parallel' package (e.g. 'future::multisession'), the 'callr' backend provided here can run more than 125 parallel R processes.
+License: LGPL (>= 2.1)
+LazyLoad: TRUE
+URL: https://github.com/HenrikBengtsson/future.callr
+BugReports: https://github.com/HenrikBengtsson/future.callr/issues
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-07-18 08:05:55 UTC; hb
+Author: Henrik Bengtsson [aut, cre, cph]
+Maintainer: Henrik Bengtsson <henrikb@braju.com>
+Repository: CRAN
+Date/Publication: 2018-07-18 09:40:03 UTC

@@ -1,0 +1,36 @@
+Package: heuristicsmineR
+Type: Package
+Title: Discovery of Process Models with the Heuristics Miner
+Version: 0.2.0
+Authors@R: 
+    person(given = "Felix",
+           family = "Mannhardt",
+           role = c("aut", "cre"),
+           email = "felix.mannhardt@sintef.no")
+Description: Provides the heuristics miner algorithm for process discovery 
+   as proposed by Weijters et al. (2011) <doi:10.1109/CIDM.2011.5949453>. The
+   algorithm builds a causal net from an event log created with the 'bupaR' 
+   package. Event logs are a set of ordered sequences of events for which 
+   'bupaR' provides the S3 class eventlog(). The discovered causal nets 
+   can be visualised as 'htmlwidgets' and it is possible to annotate them with
+   the occurrence frequency or processing and waiting time of process 
+   activities.  
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+LinkingTo: Rcpp, BH
+SystemRequirements: C++11
+Depends: R (>= 2.10)
+Imports: DiagrammeR (>= 1.0.0), magrittr, dplyr, processmapR (>=
+        0.3.1), petrinetR, bupaR, purrr, tidyr, rlang, scales, Rcpp,
+        Rcpp11, ggplot2, ggthemes, data.table
+Suggests: eventdataR, edeaR, svgPanZoom, DiagrammeRsvg
+RoxygenNote: 6.1.1
+URL: https://github.com/fmannhardt/heuristicsmineR
+BugReports: https://github.com/fmannhardt/heuristicsmineR/issues
+NeedsCompilation: yes
+Packaged: 2019-05-01 10:12:45 UTC; felixm
+Author: Felix Mannhardt [aut, cre]
+Maintainer: Felix Mannhardt <felix.mannhardt@sintef.no>
+Repository: CRAN
+Date/Publication: 2019-05-02 08:20:04 UTC

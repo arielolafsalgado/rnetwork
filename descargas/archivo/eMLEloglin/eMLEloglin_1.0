@@ -1,0 +1,15 @@
+Package: eMLEloglin
+Title: Fitting log-Linear Models in Sparse Contingency Tables
+Version: 1.0
+Date: 2016-11-21
+Author: Matthew Friedlander
+Maintainer: Matthew Friedlander <mattyf5@hotmail.com>
+Depends: lpSolveAPI
+Suggests: R.rsp
+VignetteBuilder: R.rsp
+Description: Log-linear modeling is a popular method for the analysis of contingency table data. When the table is sparse, the data can fall on the boundary of the convex support, and we say that "the MLE does not exist" in the sense that some parameters cannot be estimated. However, an extended MLE always exists, and a subset of the original parameters will be estimable. The 'eMLEloglin' package determines which sampling zeros contribute to the non-existence of the MLE. These problematic zero cells can be removed from the contingency table and the model can then be fit (as far as is possible) using the glm() function.
+License: GPL (>= 2)
+NeedsCompilation: no
+Packaged: 2016-11-23 09:14:36 UTC; root
+Repository: CRAN
+Date/Publication: 2016-11-24 00:36:47

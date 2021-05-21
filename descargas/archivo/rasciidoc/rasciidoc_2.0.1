@@ -1,0 +1,30 @@
+Package: rasciidoc
+Title: Create Reports Using R and 'asciidoc'
+Version: 2.0.1
+Authors@R: 
+    person(given = "Andreas Dominik",
+           family = "Cullmann",
+           role = c("aut", "cre"),
+           email = "fvafrcu@mailbox.org")
+Description: Inspired by Karl Broman`s reader on using 'knitr'
+    with 'asciidoc'
+    (<http://kbroman.org/knitr_knutshell/pages/asciidoc.html>), this is
+    merely a wrapper to 'knitr' and 'asciidoc'.
+License: BSD_2_clause + file LICENSE
+URL: https://gitlab.com/fvafrcu/rasciidoc
+Depends: R (>= 3.3.0)
+Imports: document, highr, knitr
+Suggests: devtools, pkgload, rmarkdown, rprojroot, RUnit, testthat,
+        withr
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+SystemRequirements: asciidoc (<https://asciidoc.org>), source-highlight
+        is recommend.
+NeedsCompilation: no
+Packaged: 2019-12-18 08:30:13 UTC; qwer
+Author: Andreas Dominik Cullmann [aut, cre]
+Maintainer: Andreas Dominik Cullmann <fvafrcu@mailbox.org>
+Repository: CRAN
+Date/Publication: 2019-12-18 08:50:02 UTC

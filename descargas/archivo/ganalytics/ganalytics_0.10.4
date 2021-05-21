@@ -1,0 +1,54 @@
+Package: ganalytics
+Title: Interact with 'Google Analytics'
+Version: 0.10.4
+Date: 2018-06-23
+Authors@R: person(
+    given = "Johann",
+    family = "de Boer",
+    role = c("aut", "cre"),
+    email = "johanndeboer@gmail.com")
+Description: Functions for querying the 'Google Analytics' core reporting,
+    real-time, multi-channel funnel and management APIs, as well as the 'Google
+    Tag Manager' (GTM) API. Write methods are also provided for the management and
+    GTM APIs so that you can change tag, property or view
+    settings, for example. Define reporting queries using natural R expressions
+    instead of being concerned as much about API technical intricacies like
+    query syntax, character code escaping, and API limitations.
+URL: https://github.com/jdeboer/ganalytics
+BugReports: https://github.com/jdeboer/ganalytics/issues
+License: MIT + file LICENCE
+Depends: R(>= 3.1.0)
+Imports: assertthat (>= 0.2.0), httpuv, httr (>= 1.0.0),
+        googleAnalyticsR (>= 0.5.0), jsonlite, lazyeval, lubridate,
+        methods, plyr, R6, rvest, stringr (>= 1.0), XML, xml2, scales,
+        selectr
+Suggests: devtools, ggplot2, knitr, rmarkdown, testthat
+Collate: 'Bool-generics.R' 'utils.R' 'Segment-generics.R'
+        'GaApiRequest.R' 'meta.R' 'globaldata.R' 'Expr-generics.R'
+        'operand-classes.R' 'comparator-classes.R' 'var-classes.R'
+        'expr-classes.R' 'segment-classes.R' 'Bool-methods.R'
+        'Comparator-generics.R' 'comparator-coerce.R'
+        'Comparator-methods.R' 'TableFilter-generics.R'
+        'table-filter-classes.R' 'var-list-classes.R' 'query-classes.R'
+        'Query-generics.R' 'Creds-methods.R' 'Date-generics.R'
+        'date-coerce.R' 'ga-api-classes.R' 'management-api-classes.R'
+        'Date-methods.R' 'operand-coerce.R' 'Operand-generics.R'
+        'Operand-methods.R' 'Var-list-generics.R' 'Var-generics.R'
+        'var-list-coerce.R' 'var-coerce.R' 'Var-methods.R'
+        'expr-coerce.R' 'Expr-methods.R' 'GaGetCoreReport.R'
+        'view-coerce.R' 'GaView-methods.R' 'ga-api-coerce.R'
+        'GetGa-methods.R' 'Query-methods.R' 'segment-coerce.R'
+        'Sequence-generics.R' 'Segment-methods.R' 'Sequence-methods.R'
+        'table-filter-coerce.R' 'TableFilter-methods.R'
+        'Var-list-methods.R' 'deprecated.R' 'ganalytics-package.R'
+        'googleAnalyticsR-coerce.R' 'gtm-api-classes.R' 'sequence.R'
+        'zzz.R'
+VignetteBuilder: knitr
+LazyData: TRUE
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-06-25 10:26:34 UTC; Johann
+Author: Johann de Boer [aut, cre]
+Maintainer: Johann de Boer <johanndeboer@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-07-01 13:30:39 UTC

@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package MPkn</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=MPkn" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="MPkn: Calculations of One Discrete Model in Several Time Steps" />
+<meta name="og:description" content="A matrix discrete model having the form 'M[i+1] = (I + Q)*M[i]'. The calculation of the values of 'M[i]' only for pre-selected values of 'i'. The method of calculation is presented in the vignette 'Fundament' ('Base'). Maybe it&amp;lsquo;s own idea of the author of the package. A weakness is that the method gives information only in selected steps of the process. It mainly refers to cases with matrices that are not Markov chain. If &amp;rsquo;Q' is Markov transition matrix, then MUPkL() may be used to calculate the steady-state distribution 'p' for 'p = Q*p'. Matrix power of non integer (matrix.powerni()) gives the same results as a mpower() from package 'matlib'. References: &quot;Markov chains&quot;, (&amp;lt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Markov_chain#Expected_number_of_visits&quot;&gt;https://en.wikipedia.org/wiki/Markov_chain#Expected_number_of_visits&lt;/a&gt;&amp;gt;). Donald R. Burleson, Ph.D. (2005), &quot;ON NON-INTEGER POWERS OF A SQUARE MATRIX&quot;, (&amp;lt;&lt;a href=&quot;http://www.blackmesapress.com/Eigenvalues.htm&quot;&gt;http://www.blackmesapress.com/Eigenvalues.htm&lt;/a&gt;&amp;gt;)." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=MPkn" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>MPkn: Calculations of One Discrete Model in Several Time Steps</h2>
+<p>A matrix discrete model having the form
+    'M[i+1] = (I + Q)*M[i]'.
+    The calculation of the values of 'M[i]' only for
+    pre-selected values of 'i'. The method of calculation
+    is presented in the vignette 'Fundament' ('Base'). Maybe it&lsquo;s own
+    idea of the author of the package. A weakness is that the method
+    gives information only in selected steps of the process.
+    It mainly refers to cases with matrices that are not Markov chain.
+    If &rsquo;Q' is Markov transition matrix, then MUPkL() may be
+    used to calculate the steady-state distribution 'p' for
+    'p = Q*p'.
+    Matrix power of non integer (matrix.powerni()) gives
+    the same results as a mpower() from package 'matlib'.
+    References:
+    "Markov chains",
+    (&lt;<a href="https://en.wikipedia.org/wiki/Markov_chain#Expected_number_of_visits">https://en.wikipedia.org/wiki/Markov_chain#Expected_number_of_visits</a>&gt;).
+    Donald R. Burleson, Ph.D. (2005), 
+    "ON NON-INTEGER POWERS OF A SQUARE MATRIX", 
+    (&lt;<a href="http://www.blackmesapress.com/Eigenvalues.htm">http://www.blackmesapress.com/Eigenvalues.htm</a>&gt;).</p>
+<table summary="Package MPkn summary">
+<tr>
+<td>Version:</td>
+<td>0.1.0</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../matrixcalc/index.html">matrixcalc</a>, <a href="../markovchain/index.html">markovchain</a>, <a href="../matlib/index.html">matlib</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2018-05-07</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Josef Brejcha</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Josef Brejcha  &#x3c;&#x62;&#x72;&#x63;&#x68;&#x6a;&#x6f;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL (&ge; 3)</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_MPkn.html">MPkn results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package MPkn downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="MPkn.pdf"> MPkn.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Fundament.pdf">Fundament</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/MPkn_0.1.0.tar.gz"> MPkn_0.1.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/MPkn_0.1.0.zip">MPkn_0.1.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/MPkn_0.1.0.zip">MPkn_0.1.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/MPkn_0.1.0.zip">MPkn_0.1.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/MPkn_0.1.0.tgz">MPkn_0.1.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/MPkn_0.1.0.tgz">MPkn_0.1.0.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=MPkn"><samp>https://CRAN.R-project.org/package=MPkn</samp></a>
+to link to this page.</p>
+</body>
+</html>

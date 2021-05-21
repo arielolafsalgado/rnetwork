@@ -1,0 +1,47 @@
+Package: metagam
+Type: Package
+Title: Meta-Analysis of Generalized Additive Models
+Version: 0.1.1
+Authors@R: c(person("Oystein", "Sorensen", 
+                    email = "oystein.sorensen@psykologi.uio.no", 
+                    role = c("aut", "cre"),
+                    comment = c(ORCID = "0000-0003-0724-3542")),
+            person("Andreas M.", "Brandmaier",
+                    email = "brandmaier@mpib-berlin.mpg.de",
+                    role = c("aut"),
+                    comment = c(ORCID = "0000-0001-8765-6982")),
+            person("Athanasia Mo", "Mowinckel", 
+                    email = "a.m.mowinckel@psykologi.uio.no", 
+                    role = c("aut"),
+                    comment = c(ORCID = "0000-0002-5756-0223")))
+Description: Meta-analysis of generalized additive
+    models and generalized additive mixed models. A typical use case is
+    when data cannot be shared across locations, and an overall meta-analytic
+    fit is sought. 'metagam' provides functionality for removing individual
+    participant data from models computed using the 'mgcv' and 'gamm4' packages such
+    that the model objects can be shared without exposing individual data.
+    Furthermore, methods for meta-analysing these fits are provided. The implemented
+    methods are described in Sorensen et al. (2020), <arXiv:2002.02627>,
+    extending previous works by Schwartz and Zanobetti (2000)
+    and Crippa et al. (2018) <doi:10.6000/1929-6029.2018.07.02.1>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+biocViews:
+Imports: dplyr, furrr, ggplot2, knitr, metafor, metap, purrr, rlang,
+        stringr, tidyr, viridis
+RoxygenNote: 7.1.0
+Suggests: future, mgcv, gamm4, gratia, roxygen2, rmarkdown, devtools,
+        covr, testthat (>= 2.1.0)
+URL: https://lifebrain.github.io/metagam/,
+        https://github.com/Lifebrain/metagam
+BugReports: https://github.com/Lifebrain/metagam/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-05-11 12:39:34 UTC; oyss
+Author: Oystein Sorensen [aut, cre] (<https://orcid.org/0000-0003-0724-3542>),
+  Andreas M. Brandmaier [aut] (<https://orcid.org/0000-0001-8765-6982>),
+  Athanasia Mo Mowinckel [aut] (<https://orcid.org/0000-0002-5756-0223>)
+Maintainer: Oystein Sorensen <oystein.sorensen@psykologi.uio.no>
+Repository: CRAN
+Date/Publication: 2020-05-11 16:10:08 UTC

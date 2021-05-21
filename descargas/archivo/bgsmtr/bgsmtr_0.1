@@ -1,0 +1,21 @@
+Package: bgsmtr
+Title: Bayesian Group Sparse Multi-Task Regression
+Version: 0.1
+Description: Fits a Bayesian group-sparse multi-task regression model using Gibbs
+    sampling. The hierarchical prior encourages shrinkage of the estimated regression
+    coefficients at both the gene and SNP level. The model has been applied
+    successfully to imaging phenotypes of dimension up to 100; it can be used more
+    generally for multivariate (non-imaging) phenotypes.
+Author: Farouk S. Nathoo, Keelin Greenlaw, Mary Lesperance
+Maintainer: Farouk S. Nathoo <nathoo@uvic.ca>
+Depends: R (>= 3.3.1), Matrix (>= 1.2.6), mvtnorm (>= 1.0.5)
+Imports: coda (>= 0.18.1), EDISON (>= 1.1.1), mnormt (>= 1.5.4),
+        statmod (>= 1.4.26), sparseMVN (>= 0.2.0)
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-10-04 14:23:21 UTC; farouknathoo
+Repository: CRAN
+Date/Publication: 2016-10-04 17:49:35

@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package mlrMBO</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Bayesian Optimization and Model-Based Optimization of Expensive Black-Box Functions [R package mlrMBO version 1.1.5]" />
+<meta name="citation_author1" content="Bernd Bischl" />
+<meta name="citation_author2" content="Jakob Richter" />
+<meta name="citation_author3" content="Jakob Bossek" />
+<meta name="citation_author4" content="Daniel Horn" />
+<meta name="citation_author5" content="Michel Lang" />
+<meta name="citation_author6" content="Janek Thomas" />
+<meta name="citation_publication_date" content="2020-10-23" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=mlrMBO" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=mlrMBO" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="mlrMBO: Bayesian Optimization and Model-Based Optimization of Expensive Black-Box Functions" />
+<meta name="og:description" content="Flexible and comprehensive R toolbox for model-based optimization ('MBO'), also known as Bayesian optimization. It implements the Efficient Global Optimization Algorithm and is designed for both single- and multi- objective optimization with mixed continuous, categorical and conditional parameters. The machine learning toolbox 'mlr' provide dozens of regression learners to model the performance of the target algorithm with respect to the parameter settings. It provides many different infill criteria to guide the search process. Additional features include multi-point batch proposal, parallel execution as well as visualization and sophisticated logging mechanisms, which is especially useful for teaching and understanding of algorithm behavior. 'mlrMBO' is implemented in a modular fashion, such that single components can be easily replaced or adapted by the user for specific use cases." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=mlrMBO" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>mlrMBO: Bayesian Optimization and Model-Based Optimization of Expensive
+Black-Box Functions</h2>
+<p>Flexible and comprehensive R toolbox for model-based optimization
+    ('MBO'), also known as Bayesian optimization. It implements the Efficient
+    Global Optimization Algorithm and is designed for both single- and multi-
+    objective optimization with mixed continuous, categorical and conditional
+    parameters. The machine learning toolbox 'mlr' provide dozens of regression
+    learners to model the performance of the target algorithm with respect to
+    the parameter settings. It provides many different infill criteria to guide
+    the search process. Additional features include multi-point batch proposal,
+    parallel execution as well as visualization and sophisticated logging
+    mechanisms, which is especially useful for teaching and understanding of
+    algorithm behavior. 'mlrMBO' is implemented in a modular fashion, such that
+    single components can be easily replaced or adapted by the user for specific
+    use cases.</p>
+<table summary="Package mlrMBO summary">
+<tr>
+<td>Version:</td>
+<td>1.1.5</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td><a href="../mlr/index.html">mlr</a> (&ge; 2.10), <a href="../ParamHelpers/index.html">ParamHelpers</a> (&ge; 1.10), <a href="../smoof/index.html">smoof</a> (&ge; 1.5.1)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../backports/index.html">backports</a> (&ge; 1.1.0), <a href="../BBmisc/index.html">BBmisc</a> (&ge; 1.11), <a href="../checkmate/index.html">checkmate</a> (&ge; 1.8.2), <a href="../data.table/index.html">data.table</a>, <a href="../lhs/index.html">lhs</a>, <a href="../parallelMap/index.html">parallelMap</a> (&ge; 1.3)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../akima/index.html">akima</a>, <a href="../cmaesr/index.html">cmaesr</a> (&ge; 1.0.3), <a href="../ggplot2/index.html">ggplot2</a>, <a href="../DiceKriging/index.html">DiceKriging</a>, <a href="../earth/index.html">earth</a>, <a href="../emoa/index.html">emoa</a>, <a href="../GGally/index.html">GGally</a>, <a href="../gridExtra/index.html">gridExtra</a>, <a href="../kernlab/index.html">kernlab</a>, <a href="../kknn/index.html">kknn</a>, <a href="../knitr/index.html">knitr</a>, <a href="../mco/index.html">mco</a>, <a href="../nnet/index.html">nnet</a>, <a href="../party/index.html">party</a>, <a href="../randomForest/index.html">randomForest</a>, <a href="../reshape2/index.html">reshape2</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../rgenoud/index.html">rgenoud</a>, <a href="../rpart/index.html">rpart</a>, <a href="../testthat/index.html">testthat</a>, <a href="../covr/index.html">covr</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-23</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Bernd Bischl <a href="https://orcid.org/0000-0001-6002-6980"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Jakob Richter <a href="https://orcid.org/0000-0003-4481-5554"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Jakob Bossek <a href="https://orcid.org/0000-0002-4121-4668"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Daniel Horn [aut],
+  Michel Lang <a href="https://orcid.org/0000-0001-9754-0393"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Janek Thomas <a href="https://orcid.org/0000-0003-4511-6245"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Jakob Richter  &#x3c;&#x63;&#x6f;&#x64;&#x65;&#x20;&#x61;&#x74;&#x20;&#x6a;&#x61;&#x6b;&#x6f;&#x62;&#x2d;&#x72;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/mlr-org/mlrMBO/issues">https://github.com/mlr-org/mlrMBO/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/BSD_2_clause">BSD_2_clause</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/mlr-org/mlrMBO">https://github.com/mlr-org/mlrMBO</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">mlrMBO citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Optimization.html">Optimization</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_mlrMBO.html">mlrMBO results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package mlrMBO downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="mlrMBO.pdf"> mlrMBO.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/mlrMBO.html">Quick introduction</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/mlrMBO_1.1.5.tar.gz"> mlrMBO_1.1.5.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/mlrMBO_1.1.5.zip">mlrMBO_1.1.5.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/mlrMBO_1.1.5.zip">mlrMBO_1.1.5.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/mlrMBO_1.1.5.zip">mlrMBO_1.1.5.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/mlrMBO_1.1.5.tgz">mlrMBO_1.1.5.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/mlrMBO_1.1.5.tgz">mlrMBO_1.1.5.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/mlrMBO"> mlrMBO archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package mlrMBO reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../tramnet/index.html">tramnet</a>, <a href="../tuneRanger/index.html">tuneRanger</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../ChemoSpec2D/index.html">ChemoSpec2D</a>, <a href="../mlr/index.html">mlr</a>, <a href="../mosmafs/index.html">mosmafs</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=mlrMBO"><samp>https://CRAN.R-project.org/package=mlrMBO</samp></a>
+to link to this page.</p>
+</body>
+</html>

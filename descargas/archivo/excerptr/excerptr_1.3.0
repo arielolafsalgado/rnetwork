@@ -1,0 +1,29 @@
+Package: excerptr
+Title: Excerpt Structuring Comments from Your Code File and Set a Table
+        of Contents
+Version: 1.3.0
+OS_type: unix
+Authors@R: person(given = c("Andreas", "Dominik"), family = "Cullmann",
+    email = "adc-r@arcor.de", role = c("aut","cre"))
+Description: This is an R interface to the
+    python package 'excerpts' (<https://pypi.python.org/pypi/excerpts>).
+URL: https://github.com/fvafrCU/excerptr
+Depends: R (>= 3.3.2)
+Imports: utils, rPython, rprojroot, git2r
+License: BSD_2_clause + file LICENSE
+SystemRequirements: python3, rPython (see file README). To make full
+        use of the vignette's examples you need 'pandoc'
+        (http://pandoc.org) installed, although it's not a requirement.
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Suggests: testthat, knitr, rmarkdown
+Collate: 'excerptr-package.R' 'internals.R' 'get_excerpts.R' 'utils.R'
+        'options.R' 'excerptr.R' 'zzz.R'
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-06-22 11:45:59 UTC; qwer
+Author: Andreas Dominik Cullmann [aut, cre]
+Maintainer: Andreas Dominik Cullmann <adc-r@arcor.de>
+Repository: CRAN
+Date/Publication: 2017-06-22 12:06:50 UTC

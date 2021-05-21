@@ -1,0 +1,47 @@
+Package: spsur
+Type: Package
+Title: Spatial Seemingly Unrelated Regression Models
+Version: 1.0.0.3
+Date: 2019-03-23
+Authors@R: c(person("Ana", "Angulo", email = "aangulo@unizar.es", 
+                  role = "aut"),
+           person("Fernando A", "Lopez", email = "fernando.lopez@upct.es", 
+                  role = "aut"), 
+           person("Roman", "Minguez", email = "roman.minguez@uclm.es", 
+                  role = c("aut", "cre")),
+           person("Jesus", "Mur", email = "jmur@unizar.es", 
+                  role = "aut"))
+Maintainer: Roman Minguez <roman.minguez@uclm.es>
+Description: A collection of functions to test and estimate Seemingly 
+    Unrelated Regression (usually called SUR) models, with spatial structure, by maximum 
+    likelihood and three-stage least squares. The package estimates the 
+    most common spatial specifications, that is, SUR with Spatial Lag of 
+    X regressors (called SUR-SLX), SUR with Spatial Lag Model (called SUR-SLM), 
+    SUR with Spatial Error Model (called SUR-SEM), SUR with Spatial Durbin Model (called SUR-SDM), 
+    SUR with Spatial Durbin Error Model (called SUR-SDEM), 
+    SUR with Spatial Autoregressive terms and Spatial Autoregressive 
+    Disturbances (called SUR-SARAR) and SUR with Spatially Independent Model (called SUR-SIM).
+    The methodology of these models can be found in next references
+    Mur, J., Lopez, F., and Herrera, M. (2010) <doi:10.1080/17421772.2010.516443> 
+    Lopez, F.A., Mur, J., and Angulo, A. (2014) <doi:10.1007/s00168-014-0624-2>.
+LazyData: true
+Encoding: UTF-8
+License: GPL-3
+Depends: R (>= 3.4.0)
+Imports: Formula (>= 1.2.3), MASS (>= 7.3.50), Matrix (>= 1.2.14),
+        methods (>= 3.5.0), numDeriv (>= 2016.8.1), minqa (>= 1.2.4),
+        sparseMVN (>= 0.2.1.1), spdep (>= 0.7.9), stats (>= 3.5.0)
+Suggests: bookdown, knitr, rmarkdown, Rdpack
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+RdMacros: Rdpack
+URL: http://github.com/rominsal/spsur
+BugReports: http://github.com/rominsal/spsur/issues
+NeedsCompilation: no
+Packaged: 2019-03-23 09:54:26 UTC; roman
+Author: Ana Angulo [aut],
+  Fernando A Lopez [aut],
+  Roman Minguez [aut, cre],
+  Jesus Mur [aut]
+Repository: CRAN
+Date/Publication: 2019-03-23 10:10:02 UTC

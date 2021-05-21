@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package rSHAPE</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=rSHAPE" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="rSHAPE: Simulated Haploid Asexual Population Evolution" />
+<meta name="og:description" content="In silico experimental evolution offers a cost-and-time effective means to test evolutionary hypotheses. Existing evolutionary simulation tools focus on simulations in a limited experimental framework, and tend to report on only the results presumed of interest by the tools designer. The R-package for Simulated Haploid Asexual Population Evolution ('rSHAPE') addresses these concerns by implementing a robust simulation framework that outputs complete population demographic and genomic information for in silico evolving communities. Allowing more than 60 parameters to be specified, 'rSHAPE' simulates evolution across discrete time-steps for an evolving community of haploid asexual populations with binary state genomes. These settings are for the current state of 'rSHAPE' and future steps will be to increase the breadth of evolutionary conditions permitted. At present, most effort was placed into permitting varied growth models to be simulated (such as constant size, exponential growth, and logistic growth) as well as various fitness landscape models to reflect the evolutionary landscape (e.g.: Additive, House of Cards - Stuart Kauffman and Simon Levin (1987) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2FS0022-5193%2887%2980029-2&quot;&gt;doi:10.1016/S0022-5193(87)80029-2&lt;/a&gt;&amp;gt;, NK - Stuart A. Kauffman and Edward D. Weinberger (1989) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2FS0022-5193%2889%2980019-0&quot;&gt;doi:10.1016/S0022-5193(89)80019-0&lt;/a&gt;&amp;gt;, Rough Mount Fuji - Neidhart, Johannes and Szendro, Ivan G and Krug, Joachim (2014) &amp;lt;&lt;a href=&quot;https://doi.org/10.1534%2Fgenetics.114.167668&quot;&gt;doi:10.1534/genetics.114.167668&lt;/a&gt;&amp;gt;). This package includes numerous functions though users will only need defineSHAPE(), runSHAPE(), shapeExperiment() and summariseExperiment(). All other functions are called by these main functions and are likely only to be on interest for someone wishing to develop 'rSHAPE'. Simulation results will be stored in files which are exported to the directory referenced by the shape_workDir option (defaults to tempdir() but do change this by passing a folderpath argument for workDir when calling defineSHAPE() if you plan to make use of your results beyond your current session). 'rSHAPE' will generate numerous replicate simulations for your defined range of experimental parameters. The experiment will be built under the experimental working directory (i.e.: referenced by the option shape_workDir set using defineSHAPE() ) where individual replicate simulation results will be stored as well as processed results which I have made in an effort to facilitate analyses by automating collection and processing of the potentially thousands of files which will be created. On that note, 'rSHAPE' implements a robust and flexible framework with highly detailed output at the cost of computational efficiency and potentially requiring significant disk space (generally gigabytes but up to tera-bytes for very large simulation efforts). So, while 'rSHAPE' offers a single framework in which we can simulate evolution and directly compare the impacts of a wide range of parameters, it is not as quick to run as other in silico simulation tools which focus on a single scenario with limited output. There you have it, 'rSHAPE' offers you a less restrictive in silico evolutionary playground than other tools and I hope you enjoy testing your hypotheses." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=rSHAPE" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>rSHAPE: Simulated Haploid Asexual Population Evolution</h2>
+<p>In silico experimental evolution offers a cost-and-time effective means to test evolutionary hypotheses.  Existing evolutionary simulation tools focus on simulations in a limited experimental framework, and tend to report on only the results presumed of interest by the tools designer.  The R-package for Simulated Haploid Asexual Population Evolution ('rSHAPE') addresses these concerns by implementing a robust simulation framework that outputs complete population demographic and genomic information for in silico evolving communities.  Allowing more than 60 parameters to be specified, 'rSHAPE'	simulates evolution across discrete time-steps for an evolving community of haploid asexual populations with binary state genomes.  These settings are for the current state of 'rSHAPE' and future steps will be to increase the breadth of evolutionary conditions permitted.  At present, most effort was placed into permitting varied growth models to be simulated (such as constant size, exponential growth, and logistic growth) as well as various fitness landscape models to reflect the evolutionary landscape (e.g.: Additive, House of Cards - Stuart Kauffman and Simon Levin (1987) &lt;<a href="https://doi.org/10.1016%2FS0022-5193%2887%2980029-2">doi:10.1016/S0022-5193(87)80029-2</a>&gt;, NK - Stuart A. Kauffman and Edward D. Weinberger (1989) &lt;<a href="https://doi.org/10.1016%2FS0022-5193%2889%2980019-0">doi:10.1016/S0022-5193(89)80019-0</a>&gt;, Rough Mount Fuji - Neidhart, Johannes and Szendro, Ivan G and Krug, Joachim (2014) &lt;<a href="https://doi.org/10.1534%2Fgenetics.114.167668">doi:10.1534/genetics.114.167668</a>&gt;). This package includes numerous functions though users will only need defineSHAPE(), runSHAPE(), shapeExperiment() and summariseExperiment().  All other functions are called by these main functions and are likely only to be on interest for someone wishing to develop 'rSHAPE'.  Simulation results will be stored in files which are exported to the directory referenced by the shape_workDir option (defaults to tempdir() but do change this by passing a folderpath argument for workDir when calling defineSHAPE() if you plan to make use of your results beyond your current session).  'rSHAPE' will generate numerous replicate simulations for your defined range of experimental parameters.  The experiment will be built under the experimental working directory (i.e.: referenced by the option shape_workDir set using defineSHAPE() ) where individual replicate simulation results will be stored as well as processed results which I have made in an effort to facilitate analyses by automating collection and processing of the potentially thousands of files which will be created. On that note, 'rSHAPE' implements a robust and flexible framework with highly detailed output at the cost of computational efficiency and potentially requiring significant disk space (generally gigabytes but up to tera-bytes for very large simulation efforts).  So, while 'rSHAPE' offers a single framework in which we can simulate evolution and directly compare the impacts of a wide range of parameters, it is not as quick to run as other in silico simulation tools which focus on a single scenario with limited output. There you have it, 'rSHAPE' offers you a less restrictive in silico evolutionary playground than other tools and I hope you enjoy testing your hypotheses.</p>
+<table summary="Package rSHAPE summary">
+<tr>
+<td>Version:</td>
+<td>0.3.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.2)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../abind/index.html">abind</a>, graphics, <a href="../sn/index.html">sn</a>, <a href="../VGAM/index.html">VGAM</a>, <a href="../evd/index.html">evd</a>, stats, utils, <a href="../RSQLite/index.html">RSQLite</a>, <a href="../DBI/index.html">DBI</a>, <a href="../foreach/index.html">foreach</a>, parallel, <a href="../doParallel/index.html">doParallel</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-07-19</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Jonathan Dench</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Jonathan Dench  &#x3c;&#x6a;&#x64;&#x65;&#x6e;&#x63;&#x30;&#x31;&#x37;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_rSHAPE.html">rSHAPE results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package rSHAPE downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="rSHAPE.pdf"> rSHAPE.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/rSHAPE_0.3.2.tar.gz"> rSHAPE_0.3.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/rSHAPE_0.3.2.zip">rSHAPE_0.3.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/rSHAPE_0.3.2.zip">rSHAPE_0.3.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/rSHAPE_0.3.2.zip">rSHAPE_0.3.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/rSHAPE_0.3.2.tgz">rSHAPE_0.3.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/rSHAPE_0.3.2.tgz">rSHAPE_0.3.2.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=rSHAPE"><samp>https://CRAN.R-project.org/package=rSHAPE</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package sylcount</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Syllable Counting and Readability Measurements [R package sylcount version 0.2-2]" />
+<meta name="citation_author" content="Drew Schmidt" />
+<meta name="citation_publication_date" content="2020-02-23" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=sylcount" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=sylcount" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="sylcount: Syllable Counting and Readability Measurements" />
+<meta name="og:description" content="An English language syllable counter, plus readability score measure-er. For readability, we support 'Flesch' Reading Ease and 'Flesch-Kincaid' Grade Level ('Kincaid' 'et al'. 1975) &amp;lt;&lt;a href=&quot;https://stars.library.ucf.edu/cgi/viewcontent.cgi?article=1055&amp;amp;amp;context=istlibrary&quot;&gt;https://stars.library.ucf.edu/cgi/viewcontent.cgi?article=1055&amp;amp;context=istlibrary&lt;/a&gt;&amp;gt;, Automated Readability Index ('Senter' and Smith 1967) &amp;lt;&lt;a href=&quot;http://www.dtic.mil/cgi-bin/GetTRDoc?AD=AD0667273&quot;&gt;http://www.dtic.mil/cgi-bin/GetTRDoc?AD=AD0667273&lt;/a&gt;&amp;gt;, Simple Measure of Gobbledygook (McLaughlin 1969) &amp;lt;&lt;a href=&quot;https://www.semanticscholar.org/paper/SMOG-Grading-A-New-Readability-Formula.-Laughlin/5fccb74c14769762b3de010c5e8a1a7ce700d17a&quot;&gt;https://www.semanticscholar.org/paper/SMOG-Grading-A-New-Readability-Formula.-Laughlin/5fccb74c14769762b3de010c5e8a1a7ce700d17a&lt;/a&gt;&amp;gt;, and 'Coleman-Liau' (Coleman and 'Liau' 1975) &amp;lt;&lt;a href=&quot;https://doi.org/10.1037%2Fh0076540&quot;&gt;doi:10.1037/h0076540&lt;/a&gt;&amp;gt;. The package has been carefully optimized and should be very efficient, both in terms of run time performance and memory consumption. The main methods are 'vectorized' by document, and scores for multiple documents are computed in parallel via 'OpenMP'." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=sylcount" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>sylcount: Syllable Counting and Readability Measurements</h2>
+<p>An English language syllable counter, plus readability score
+    measure-er. For readability, we support 'Flesch' Reading Ease and
+    'Flesch-Kincaid' Grade Level ('Kincaid' 'et al'. 1975)
+    &lt;<a href="https://stars.library.ucf.edu/cgi/viewcontent.cgi?article=1055&amp;amp;context=istlibrary">https://stars.library.ucf.edu/cgi/viewcontent.cgi?article=1055&amp;context=istlibrary</a>&gt;,
+    Automated Readability Index ('Senter' and Smith 1967)
+    &lt;<a href="http://www.dtic.mil/cgi-bin/GetTRDoc?AD=AD0667273">http://www.dtic.mil/cgi-bin/GetTRDoc?AD=AD0667273</a>&gt;,
+    Simple Measure of Gobbledygook (McLaughlin 1969)
+    &lt;<a href="https://www.semanticscholar.org/paper/SMOG-Grading-A-New-Readability-Formula.-Laughlin/5fccb74c14769762b3de010c5e8a1a7ce700d17a">https://www.semanticscholar.org/paper/SMOG-Grading-A-New-Readability-Formula.-Laughlin/5fccb74c14769762b3de010c5e8a1a7ce700d17a</a>&gt;,
+    and 'Coleman-Liau' (Coleman and 'Liau' 1975) &lt;<a href="https://doi.org/10.1037%2Fh0076540">doi:10.1037/h0076540</a>&gt;. The
+    package has been carefully optimized and should be very efficient, both in
+    terms of run time performance and memory consumption. The main methods are
+    'vectorized' by document, and scores for multiple documents are computed in
+    parallel via 'OpenMP'.</p>
+<table summary="Package sylcount summary">
+<tr>
+<td>Version:</td>
+<td>0.2-2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-02-23</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Drew Schmidt [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Drew Schmidt  &#x3c;&#x77;&#x72;&#x61;&#x74;&#x68;&#x65;&#x6d;&#x61;&#x74;&#x69;&#x63;&#x73;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/wrathematics/sylcount/issues">https://github.com/wrathematics/sylcount/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/BSD_2_clause">BSD 2-clause License</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/wrathematics/sylcount">https://github.com/wrathematics/sylcount</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="ChangeLog">ChangeLog</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_sylcount.html">sylcount results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package sylcount downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="sylcount.pdf"> sylcount.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/sylcount_0.2-2.tar.gz"> sylcount_0.2-2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/sylcount_0.2-2.zip">sylcount_0.2-2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/sylcount_0.2-2.zip">sylcount_0.2-2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/sylcount_0.2-2.zip">sylcount_0.2-2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/sylcount_0.2-2.tgz">sylcount_0.2-2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/sylcount_0.2-2.tgz">sylcount_0.2-2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/sylcount"> sylcount archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=sylcount"><samp>https://CRAN.R-project.org/package=sylcount</samp></a>
+to link to this page.</p>
+</body>
+</html>

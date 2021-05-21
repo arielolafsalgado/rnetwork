@@ -1,0 +1,37 @@
+Package: salesforcer
+Title: An Implementation of 'Salesforce' APIs Using Tidy Principles
+Version: 0.1.2
+Date: 2018-04-12
+Description: An implementation of the 'Salesforce' Platform APIs (REST, SOAP, 
+    Bulk 1.0, Bulk 2.0, and Metadata) <https://developer.salesforce.com/page/Salesforce_APIs>. 
+    This package is an articulation of the most API methods into R. The API calls 
+    return XML or JSON that is parsed tidy data structures. For more details please 
+    see the 'Salesforces' API references and this package's website 
+    <https://stevenmmortimer.github.io/salesforcer/> for more information, 
+    documentation, and examples.
+Authors@R: c(
+    person(c("Steven", "M."), "Mortimer", , "reportmort@gmail.com", c("aut", "cre")),
+    person("Takekatsu", "Hiramura", , "thira@plavox.info", c("ctb")),
+    person("Jennifer", "Bryan", , "jenny@rstudio.com", c("ctb")),
+    person("Joanna", "Zhao", , "joanna.zhao@alumni.ubc.ca", c("ctb"))
+    )
+URL: https://github.com/StevenMMortimer/salesforcer
+BugReports: https://github.com/StevenMMortimer/salesforcer/issues
+Encoding: UTF-8
+Depends: R (>= 3.1.0)
+License: MIT + file LICENSE
+LazyData: true
+Imports: methods, httr, dplyr, xml2, XML, jsonlite, purrr, readr,
+        lubridate
+Suggests: knitr, testthat, rmarkdown, here, RForcecom
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-04-12 22:00:35 UTC; steven.mortimer
+Author: Steven M. Mortimer [aut, cre],
+  Takekatsu Hiramura [ctb],
+  Jennifer Bryan [ctb],
+  Joanna Zhao [ctb]
+Maintainer: Steven M. Mortimer <reportmort@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-04-13 09:02:16 UTC

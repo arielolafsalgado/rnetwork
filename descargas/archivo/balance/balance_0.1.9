@@ -1,0 +1,29 @@
+Package: balance
+Title: Visualize Balances of Compositional Data
+Version: 0.1.9
+URL: http://github.com/tpq/balance
+BugReports: http://github.com/tpq/balance/issues
+Authors@R: c(
+    person("Thomas", "Quinn", email = "contacttomquinn@gmail.com", role = c("aut", "cre"))
+    )
+Description: Balances have become a cornerstone of compositional data analysis. However,
+ conceptualizing balances is difficult, especially for high-dimensional data. Most often,
+ investigators visualize balances with "balance dendrograms". However, this visualization
+ tool does not scale well for large data. This package provides an alternative scheme for
+ visualizing balances, described in [Quinn (2018) <DOI:10.12688/f1000research.15858.1>].
+ This package also provides a method for principal balance analysis.
+License: GPL-2
+LazyData: TRUE
+VignetteBuilder: knitr
+RoxygenNote: 6.1.0
+Encoding: UTF-8
+Imports: methods, ggplot2, grid
+Depends: R (>= 3.2.2)
+Suggests: ape, ggthemes, knitr, philr, propr, reshape2, rmarkdown,
+        robCompositions, testthat
+NeedsCompilation: no
+Packaged: 2018-12-10 03:14:10 UTC; thom
+Author: Thomas Quinn [aut, cre]
+Maintainer: Thomas Quinn <contacttomquinn@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-12-10 09:20:10 UTC

@@ -1,0 +1,26 @@
+Package: NPC
+Type: Package
+Title: Nonparametric Combination of Hypothesis Tests
+Version: 1.0.2
+Authors@R: person("Devin", "Caughey", email="devin.caughey@gmail.com", role=c("aut", "cre"))
+Depends: R (>= 3.2.2)
+LazyData: true
+Description: An implementation of nonparametric combination of hypothesis tests.
+    This package performs nonparametric combination (Pesarin and Salmaso 2010),
+    a permutation-based procedure for jointly testing multiple hypotheses. The
+    tests are conducted under the global "sharp" null hypothesis of no effects,
+    and the component tests are combined on the metric of their p-values. A
+    key feature of nonparametric combination is that it accounts for the
+    dependence among tests under the null hypothesis. In addition to the
+    "NPC" function, which performs nonparametric combination itself, the
+    package also contains a number of helper functions, many of which calculate
+    a test statistic given an input of data.
+License: GPL-3
+Imports: permute, dplyr, coin, matlab
+Suggests: car, mvtnorm, plyr, xtable
+NeedsCompilation: no
+Packaged: 2015-10-20 20:33:57 UTC; justin
+Author: Devin Caughey [aut, cre]
+Maintainer: Devin Caughey <devin.caughey@gmail.com>
+Repository: CRAN
+Date/Publication: 2015-10-21 10:01:28

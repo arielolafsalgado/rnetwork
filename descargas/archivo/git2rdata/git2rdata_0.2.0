@@ -1,0 +1,50 @@
+Package: git2rdata
+Title: Store and Retrieve Data.frames in a Git Repository
+Version: 0.2.0
+Authors@R: c(
+  person(
+    "Thierry", "Onkelinx", role = c("aut", "cre"), 
+    email = "thierry.onkelinx@inbo.be", 
+    comment = c(ORCID = "0000-0001-8804-4216")),
+  person(
+    "Floris", "Vanderhaeghe", role = "ctb", 
+    email = "floris.vanderhaeghe@inbo.be", 
+    comment = c(ORCID = "0000-0002-6378-6229")),
+  person(
+    "Peter", "Desmet", role = "ctb", 
+    email = "peter.desmet@inbo.be", 
+    comment = c(ORCID = "0000-0002-8442-8025")),
+  person(
+    "Els", "Lommelen", role = "ctb", 
+    email = "els.lommelen@inbo.be", 
+    comment = c(ORCID = "0000-0002-3481-5684")),
+  person(
+    "Research Institute for Nature and Forest",
+    role = c("cph", "fnd"), email = "info@inbo.be"))
+Description: Make versioning of data.frame easy and efficient using git repositories.
+Depends: R (>= 3.5.0)
+Imports: assertthat, git2r (>= 0.23.0), methods, yaml
+Suggests: spelling, ggplot2, knitr, microbenchmark, rmarkdown, testthat
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+URL: https://github.com/ropensci/git2rdata,
+        https://doi.org/10.5281/zenodo.1485309
+BugReports: https://github.com/ropensci/git2rdata/issues
+Collate: 'clean_data_path.R' 'datahash.R' 'git2rdata-package.R'
+        'write_vc.R' 'is_git2rdata.R' 'is_git2rmeta.R' 'list_data.R'
+        'meta.R' 'prune.R' 'read_vc.R' 'recent_commit.R' 'reexport.R'
+        'relabel.R' 'upgrade_data.R' 'utils.R'
+VignetteBuilder: knitr
+Language: en-GB
+NeedsCompilation: no
+Packaged: 2019-11-18 11:36:08 UTC; thierry
+Author: Thierry Onkelinx [aut, cre] (<https://orcid.org/0000-0001-8804-4216>),
+  Floris Vanderhaeghe [ctb] (<https://orcid.org/0000-0002-6378-6229>),
+  Peter Desmet [ctb] (<https://orcid.org/0000-0002-8442-8025>),
+  Els Lommelen [ctb] (<https://orcid.org/0000-0002-3481-5684>),
+  Research Institute for Nature and Forest [cph, fnd]
+Maintainer: Thierry Onkelinx <thierry.onkelinx@inbo.be>
+Repository: CRAN
+Date/Publication: 2019-11-18 11:50:03 UTC

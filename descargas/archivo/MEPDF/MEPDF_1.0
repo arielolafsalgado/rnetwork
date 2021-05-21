@@ -1,0 +1,20 @@
+Package: MEPDF
+Type: Package
+Title: Multivariate Empirical Density Function
+Version: 1.0
+Author: Martin Wiegand, Saralees Nadarajah
+Date: 2017-10-22
+Maintainer: Martin Wiegand <Martin.Wiegand@manchester.ac.uk>
+Depends: R (>= 3.0.1)
+Description: Based on the input data an n-dimensional cube with sub cells of user specified side length is created.
+    The number of sample points which fall in each sub cube is counted, and with the cell volume and overall sample
+    size an empirical probability can be computed. A number of cubes of higher resolution can be superimposed. The 
+    basic method stems from J.L. Bentley in "Multidimensional Divide and Conquer".
+    J. L. Bentley (1980) <doi:10.1145/358841.358850>.
+License: GPL-2
+LazyData: TRUE
+Imports: plyr, MASS, pracma
+NeedsCompilation: no
+Packaged: 2017-10-24 22:12:29 UTC; martin
+Repository: CRAN
+Date/Publication: 2017-10-25 10:22:07 UTC

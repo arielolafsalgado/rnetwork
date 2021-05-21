@@ -1,0 +1,29 @@
+Package: ropenaq
+Type: Package
+Title: Accesses Air Quality Data from the Open Data Platform OpenAQ
+Version: 0.1.0
+Date: 2016-07-04
+Authors@R: c(person("Maëlle", "Salmon", email = "maelle.salmon@yahoo.se", role = c("aut", "cre")),
+             person("Andrew", "MacDonald", role = c("ctb"), comment = "Andrew MacDonald reviewed the package for rOpenSci, see https://github.com/ropensci/onboarding/issues/24"),
+             person("Andy ", "Teucher", role = c("ctb"), comment = "Andy Teucher reviewed the package for rOpenSci, see https://github.com/ropensci/onboarding/issues/24"))
+Description: Allows access to air quality data from the API of the OpenAQ platform <https://docs.openaq.org/>, with the different services the API offers (getting measurements for a given query, getting latest measurements, getting lists of available countries/cities/locations).
+License: GPL (>= 2)
+LazyData: TRUE
+RoxygenNote: 5.0.1
+URL: http://github.com/ropenscilabs/ropenaq
+BugReports: http://github.com/ropenscilabs/ropenaq/issues
+Suggests: knitr, rmarkdown, lintr, ggplot2, testthat, openair,
+        devtools, animation, rworldmap, ggmap
+VignetteBuilder: knitr
+Imports: httr, lubridate, dplyr, jsonlite, tidyr, lazyeval
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2016-07-05 08:32:40 UTC; msalmon
+Author: Maëlle Salmon [aut, cre],
+  Andrew MacDonald [ctb] (Andrew MacDonald reviewed the package for
+    rOpenSci, see https://github.com/ropensci/onboarding/issues/24),
+  Andy Teucher [ctb] (Andy Teucher reviewed the package for rOpenSci, see
+    https://github.com/ropensci/onboarding/issues/24)
+Maintainer: Maëlle Salmon <maelle.salmon@yahoo.se>
+Repository: CRAN
+Date/Publication: 2016-07-05 11:01:42

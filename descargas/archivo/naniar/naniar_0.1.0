@@ -1,0 +1,44 @@
+Package: naniar
+Type: Package
+Title: Data Structures, Summaries, and Visualisations for Missing Data
+Version: 0.1.0
+Authors@R: c(
+    person("Nicholas", "Tierney", , "nicholas.tierney@gmail.com", c("aut", "cre")),
+    person("Di", "Cook", , "dicook@monash.edu", role = "aut"),
+    person("Miles", "McBain", , "miles.mcbain@gmail.com", role = "aut"), 
+    person("Colin", "Fay", , "contact@colinfay.me", role = "aut")
+    )
+Description: Missing values are ubiquitous in data and need to be explored and
+    handled in the initial stages of analysis. 'naniar' provides data structures 
+    and functions that facilitate the plotting of missing values and examination 
+    of imputations. This allows missing data dependencies to be explored with 
+    minimal deviation from the common work patterns of 'ggplot2' and tidy data. 
+License: MIT + file LICENSE
+LazyData: TRUE
+ByteCompile: TRUE
+Suggests: knitr, rmarkdown, testthat, rpart, rpart.plot, covr,
+        gridExtra, wakefield, vdiffr, here, simputation, imputeTS
+VignetteBuilder: knitr
+Depends: R (>= 3.1.2)
+Imports: dplyr, ggplot2, purrr, tidyr, tibble, magrittr, stats, visdat,
+        purrrlyr, rlang, forcats, viridis
+RoxygenNote: 6.0.1.9000
+Collate: 'add-cols.R' 'add-n-prop-miss.R' 'cast-shadows.R'
+        'data-oceanbuoys.R' 'data-pedestrian.R' 'data-riskfactors.R'
+        'legend-draw.R' 'geom-miss-point.R' 'gg-miss-x.R'
+        'label-miss.R' 'miss-prop-pct-summary.R' 'miss-x-cumsum.R'
+        'miss-x-pct-prop.R' 'miss-x-run.R' 'miss-x-span.R'
+        'miss-x-summary.R' 'miss-x-table.R' 'n-prop-miss-complete.R'
+        'naniar-ggproto.R' 'naniar-package.R' 'replace-to-na.R'
+        'shadow-shifters.R' 'shadows.R' 'stat-miss-point.R' 'utils.R'
+URL: https://github.com/njtierney/naniar
+BugReports: https://github.com/njtierney/naniar/issues
+NeedsCompilation: no
+Packaged: 2017-08-09 03:37:41 UTC; ntie0001
+Author: Nicholas Tierney [aut, cre],
+  Di Cook [aut],
+  Miles McBain [aut],
+  Colin Fay [aut]
+Maintainer: Nicholas Tierney <nicholas.tierney@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-08-09 04:06:29 UTC

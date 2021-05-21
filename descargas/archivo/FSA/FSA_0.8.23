@@ -1,0 +1,34 @@
+Package: FSA
+Version: 0.8.23
+Date: 2019-5-1
+Title: Simple Fisheries Stock Assessment Methods
+Description: A variety of simple fish stock assessment methods.
+    Detailed vignettes are available on the fishR website <http://derekogle.com/fishR/>.
+Authors@R: c(
+    person("Derek", "Ogle", email="derek@derekogle.com", role=c("aut","cre"),
+           comment=c(ORCID="0000-0002-0370-9299")),
+    person("Powell", "Wheeler", email="powell.wheeler@gmail.com", role="aut",
+           comment="Added method='Burnham' to removal()"),
+    person("Alexis", "Dinno", email="alexis.dinno@pdx.edu", role="aut",
+           comment="Provided base functionality of dunnTest()")
+    )
+URL: https://github.com/droglenc/FSA
+BugReports: https://github.com/droglenc/FSA/issues
+License: GPL (>= 2)
+LazyData: true
+Depends: R (>= 3.2.0)
+Imports: graphics, grDevices, stats, tools, utils, car, dplyr,
+        dunn.test, epitools, gplots, lmtest, plotrix, plyr, sciplot,
+        withr
+Suggests: asbio, DescTools, fishmethods, FSAdata, knitr, marked, nlme,
+        nlstools, pkgdown, psych, Rcapture, testthat, rmarkdown
+Encoding: UTF-8
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-05-01 21:39:49 UTC; dogle
+Author: Derek Ogle [aut, cre] (<https://orcid.org/0000-0002-0370-9299>),
+  Powell Wheeler [aut] (Added method='Burnham' to removal()),
+  Alexis Dinno [aut] (Provided base functionality of dunnTest())
+Maintainer: Derek Ogle <derek@derekogle.com>
+Repository: CRAN
+Date/Publication: 2019-05-02 11:10:12 UTC

@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package genomicper</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=genomicper" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="genomicper: Circular Genomic Permutation using Gwas p-Values of Association" />
+<meta name="og:description" content="Circular genomic permutation approach uses GWAS results to establish the significance of pathway/gene-set associations whilst accounting for genomic structure. All SNPs in the GWAS are placed in a 'circular genome' according to their location. Then the complete set of SNP association p-values are permuted by rotation with respect to the SNPs' genomic locations. Two testing frameworks are available: permutations at the gene level, and permutations at the SNP level. The permutation at the gene level uses fisher's combination test to calculate a single gene p-value, followed by the hypergeometric test. The SNP count methodology maps each SNP to pathways/gene-sets and calculates the proportion of SNPs for the real and the permutated datasets above a pre-defined threshold. Genomicper requires a matrix of GWAS association p-values. The SNPs annotation and pathways annotations can be performed within the package or provided by the user." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=genomicper" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>genomicper: Circular Genomic Permutation using Gwas p-Values of Association</h2>
+<p>Circular genomic permutation approach uses GWAS results to establish the significance of pathway/gene-set associations whilst accounting for genomic structure. All SNPs in the GWAS are placed in a 'circular genome' according to their location. Then the complete set of SNP association p-values are permuted by rotation with respect to the SNPs' genomic locations. Two testing frameworks are available: permutations at the gene level, and permutations at the SNP level. The permutation at the gene level uses fisher's combination test to calculate a single gene p-value, followed by the hypergeometric test. The SNP count methodology maps each SNP to pathways/gene-sets and calculates the proportion of SNPs for the real and the permutated datasets above a pre-defined threshold. Genomicper requires a matrix of GWAS association p-values. The SNPs annotation and pathways annotations can be performed within the package or provided by the user.</p>
+<table summary="Package genomicper summary">
+<tr>
+<td>Version:</td>
+<td>1.6</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>stats, grDevices, utils, graphics, <a href="../DBI/index.html">DBI</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="http://www.bioconductor.org/packages/release/data/annotation/html/KEGG.db.html"><span class="BioC">KEGG.db</span></a>, <a href="http://www.bioconductor.org/packages/release/data/annotation/html/reactome.db.html"><span class="BioC">reactome.db</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/AnnotationDbi.html"><span class="BioC">AnnotationDbi</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2016-07-05</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Claudia P. Cabrera, Pau Navarro, Chris S.Haley</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Claudia Cabrera  &#x3c;&#x63;&#x2e;&#x63;&#x61;&#x62;&#x72;&#x65;&#x72;&#x61;&#x20;&#x61;&#x74;&#x20;&#x71;&#x6d;&#x75;&#x6c;&#x2e;&#x61;&#x63;&#x2e;&#x75;&#x6b;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_genomicper.html">genomicper results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package genomicper downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="genomicper.pdf"> genomicper.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/genomicper_1.6.tar.gz"> genomicper_1.6.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/genomicper_1.6.zip">genomicper_1.6.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/genomicper_1.6.zip">genomicper_1.6.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/genomicper_1.6.zip">genomicper_1.6.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/genomicper_1.6.tgz">genomicper_1.6.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/genomicper_1.6.tgz">genomicper_1.6.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/genomicper"> genomicper archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=genomicper"><samp>https://CRAN.R-project.org/package=genomicper</samp></a>
+to link to this page.</p>
+</body>
+</html>

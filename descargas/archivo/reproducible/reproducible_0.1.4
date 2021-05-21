@@ -1,0 +1,46 @@
+Package: reproducible
+Type: Package
+Title: A Set of Tools that Enhance Reproducibility Beyond Package
+        Management
+Description: Built on top of 'git2r' and 'archivist', this package aims at
+    making high-level, robust, machine and OS independent tools for making
+    deeply reproducible and reusable content in R. This includes light weight
+    package management (similar to 'packrat' and 'checkpoint', but more flexible,
+    lightweight and simpler than both), plus it includes
+    tools for caching, and accessing GitHub repositories.
+URL: https://predictiveecology.github.io/reproducible/,
+        https://github.com/PredictiveEcology/reproducible
+Date: 2018-01-24
+Version: 0.1.4
+Authors@R: c(
+    person("Eliot J B", "McIntire", email = "eliot.mcintire@canada.ca",
+    role = c("aut", "cre")),
+    person("Alex M", "Chubaty", email = "alexander.chubaty@canada.ca",
+    role = c("aut")),
+    person("Her Majesty the Queen in Right of Canada, as represented by the Minister of Natural Resources Canada",
+    role = "cph")
+    )
+Depends: R (>= 3.3.0)
+Imports: archivist (>= 2.1.2), crayon, data.table (>= 1.10.4),
+        devtools, digest, fastdigest, git2r (>= 0.18), magrittr,
+        memoise, methods, raster, Rcpp (>= 0.12.13), RCurl, sp,
+        versions
+Suggests: hunspell, knitr, rgdal, rmarkdown, testthat
+LinkingTo: Rcpp
+License: GPL-3
+BugReports: https://github.com/PredictiveEcology/reproducible/issues
+ByteCompile: yes
+RoxygenNote: 6.0.1
+Collate: 'RcppExports.R' 'cache-helpers.R' 'cache-tools.R'
+        'robustDigest.R' 'cache.R' 'consistentPaths.R' 'git.R'
+        'helpers.R' 'packages.R' 'pipe.R' 'reproducible-package.R'
+        'search.R'
+NeedsCompilation: yes
+Packaged: 2018-01-25 05:59:09 UTC; emcintir
+Author: Eliot J B McIntire [aut, cre],
+  Alex M Chubaty [aut],
+  Her Majesty the Queen in Right of Canada, as represented by the
+    Minister of Natural Resources Canada [cph]
+Maintainer: Eliot J B McIntire <eliot.mcintire@canada.ca>
+Repository: CRAN
+Date/Publication: 2018-01-25 12:24:39 UTC

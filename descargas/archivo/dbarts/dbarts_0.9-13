@@ -1,0 +1,55 @@
+Package: dbarts
+Version: 0.9-13
+Date: 2019-09-22
+Title: Discrete Bayesian Additive Regression Trees Sampler
+Authors@R: c(
+  person("Vincent", "Dorie", role = c("aut", "cre"), email = "vdorie@gmail.com", comment = c(ORCID = "0000-0002-9576-3064")),
+  person("Hugh", "Chipman", role = "aut", email = "hugh.chipman@gmail.com"),
+  person("Robert", "McCulloch", role = "aut", email = "robert.mcculloch1@gmail.com"),
+  person("Armon", "Dadgar", role = "ctb", comment = "adaptive radix tree"),
+  person("R Core Team", role = "ctb", comment = "basis of RNG"),
+  person("Guido U", "Draheim", role = "ctb", comment = "ax_check_compile_flag.m4"),
+  person("Maarten", "Bosmans", role = "ctb", comment = "ax_check_compile_flag.m4"),
+  person("Christophe", "Tournayre", role = "ctb", comment = "ax_compiler_ext.m4, ax_ext.m4"),
+  person("Michael", "Petch", role = "ctb", comment = "ax_compiler_ext.m4, ax_ext.m4, ax_gcc_x86_avx_xgetbv.m4, ax_gcc_x86_cpuid.m4"),
+  person("Rafael", "de Lucena Valle", role = "ctb", comment = "ax_compiler_ext.m4, ax_ext.m4"),
+  person("Steven G.", "Johnson", role = "ctb", comment = c("ax_compiler_vendor.m4, ax_gcc_x86_cpuid.m4, ax_pthread.m4", ORCID = "0000-0001-7327-4967")),
+  person("Matteo", "Frigo", role = "ctb", comment = "ax_compiler_vendor.m4, ax_gcc_x86_cpuid.m4"),
+  person("John", "Zaitseff", role = "ctb", comment = "ax_compiler_vendor.m4"),
+  person("Todd", "Veldhuizen", role = "ctb", comment = "ax_cxx_namespace_std.m4"),
+  person("Luc", "Maisonobe", role = "ctb", comment = "ax_cxx_namespace_std.m4"),
+  person("Scott", "Pakin", role = "ctb", comment = c("ax_func_posix_memalign.m4", ORCID = "0000-0002-5220-1985")),
+  person("Daniel", "Richard G.", role = "ctb", comment = "ax_pthread.m4"))
+Depends: R (>= 3.1-0)
+Imports: stats, methods, graphics, parallel
+Suggests: testthat (>= 0.9-0)
+Description: Fits Bayesian additive regression trees (BART; Chipman, George, and McCulloch (2010) <doi:10.1214/09-AOAS285>) while allowing the updating of predictors or response so that BART can be incorporated as a conditional model in a Gibbs/MH sampler. Also serves as a drop-in replacement for package 'BayesTree'.
+License: GPL (>= 2)
+NeedsCompilation: yes
+Biarch: yes
+URL: https://github.com/vdorie/dbarts
+BugReports: https://github.com/vdorie/dbarts/issues
+Packaged: 2019-09-22 16:03:02 UTC; vdorie
+Author: Vincent Dorie [aut, cre] (<https://orcid.org/0000-0002-9576-3064>),
+  Hugh Chipman [aut],
+  Robert McCulloch [aut],
+  Armon Dadgar [ctb] (adaptive radix tree),
+  R Core Team [ctb] (basis of RNG),
+  Guido U Draheim [ctb] (ax_check_compile_flag.m4),
+  Maarten Bosmans [ctb] (ax_check_compile_flag.m4),
+  Christophe Tournayre [ctb] (ax_compiler_ext.m4, ax_ext.m4),
+  Michael Petch [ctb] (ax_compiler_ext.m4, ax_ext.m4,
+    ax_gcc_x86_avx_xgetbv.m4, ax_gcc_x86_cpuid.m4),
+  Rafael de Lucena Valle [ctb] (ax_compiler_ext.m4, ax_ext.m4),
+  Steven G. Johnson [ctb] (ax_compiler_vendor.m4, ax_gcc_x86_cpuid.m4,
+    ax_pthread.m4, <https://orcid.org/0000-0001-7327-4967>),
+  Matteo Frigo [ctb] (ax_compiler_vendor.m4, ax_gcc_x86_cpuid.m4),
+  John Zaitseff [ctb] (ax_compiler_vendor.m4),
+  Todd Veldhuizen [ctb] (ax_cxx_namespace_std.m4),
+  Luc Maisonobe [ctb] (ax_cxx_namespace_std.m4),
+  Scott Pakin [ctb] (ax_func_posix_memalign.m4,
+    <https://orcid.org/0000-0002-5220-1985>),
+  Daniel Richard G. [ctb] (ax_pthread.m4)
+Maintainer: Vincent Dorie <vdorie@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-09-24 15:40:12 UTC

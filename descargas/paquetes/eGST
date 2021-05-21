@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package eGST</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Leveraging eQTLs to Identify Individual-Level Tissue of Interest for a Complex Trait [R package eGST version 1.0.0]" />
+<meta name="citation_author1" content="Arunabha Majumdar" />
+<meta name="citation_author2" content="Tanushree Haldar" />
+<meta name="citation_author3" content="Bogdan Pasaniuc" />
+<meta name="citation_publication_date" content="2019-07-02" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=eGST" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=eGST" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="eGST: Leveraging eQTLs to Identify Individual-Level Tissue of Interest for a Complex Trait" />
+<meta name="og:description" content="Genetic predisposition for complex traits is often manifested through multiple tissues of interest at different time points in the development. As an example, the genetic predisposition for obesity could be manifested through inherited variants that control metabolism through regulation of genes expressed in the brain and/or through the control of fat storage in the adipose tissue by dysregulation of genes expressed in adipose tissue. We present a method eGST (eQTL-based genetic subtyper) that integrates tissue-specific eQTLs with GWAS data for a complex trait to probabilistically assign a tissue of interest to the phenotype of each individual in the study. eGST estimates the posterior probability that an individual's phenotype can be assigned to a tissue based on individual-level genotype data of tissue-specific eQTLs and marginal phenotype data in a genome-wide association study (GWAS) cohort. Under a Bayesian framework of mixture model, eGST employs a maximum a posteriori (MAP) expectation-maximization (EM) algorithm to estimate the tissue-specific posterior probability across individuals. Methodology is available from: A Majumdar, C Giambartolomei, N Cai, MK Freund, T Haldar, T Schwarz, J Flint, B Pasaniuc (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1101%2F674226&quot;&gt;doi:10.1101/674226&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=eGST" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>eGST: Leveraging eQTLs to Identify Individual-Level Tissue of Interest
+for a Complex Trait</h2>
+<p>Genetic predisposition for complex traits is often manifested through multiple tissues of interest at different time points in the development. As an example, the genetic predisposition for obesity could be manifested through inherited variants that control metabolism through regulation of genes expressed in the brain and/or through the control of fat storage in the adipose tissue by dysregulation of genes expressed in adipose tissue. We present a method eGST (eQTL-based genetic subtyper) that integrates tissue-specific eQTLs with GWAS data for a complex trait to probabilistically assign a tissue of interest to the phenotype of each individual in the study. eGST estimates the posterior probability that an individual's phenotype can be assigned to a tissue based on individual-level genotype data of tissue-specific eQTLs and marginal phenotype data in a genome-wide association study (GWAS) cohort. Under a Bayesian framework of mixture model, eGST employs a maximum a posteriori (MAP) expectation-maximization (EM) algorithm to estimate the tissue-specific posterior probability across individuals. Methodology is available from: A Majumdar, C Giambartolomei, N Cai, MK Freund, T Haldar, T Schwarz, J Flint, B Pasaniuc (2019) &lt;<a href="https://doi.org/10.1101%2F674226">doi:10.1101/674226</a>&gt;.</p>
+<table summary="Package eGST summary">
+<tr>
+<td>Version:</td>
+<td>1.0.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.2.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../purrr/index.html">purrr</a>, <a href="../mvtnorm/index.html">mvtnorm</a>, <a href="../MASS/index.html">MASS</a>, utils, stats, <a href="../matrixStats/index.html">matrixStats</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-07-02</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Arunabha Majumdar [aut, cre],
+  Tanushree Haldar [aut],
+  Bogdan Pasaniuc [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Arunabha Majumdar  &#x3c;&#x73;&#x74;&#x61;&#x74;&#x67;&#x65;&#x6e;&#x2e;&#x61;&#x72;&#x75;&#x6e;&#x61;&#x62;&#x68;&#x61;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ArunabhaCodes/eGST/issues">https://github.com/ArunabhaCodes/eGST/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/ArunabhaCodes/eGST">https://github.com/ArunabhaCodes/eGST</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_eGST.html">eGST results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package eGST downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="eGST.pdf"> eGST.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/eGSTvignette.html">eGST Tutorial</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/eGST_1.0.0.tar.gz"> eGST_1.0.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/eGST_1.0.0.zip">eGST_1.0.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/eGST_1.0.0.zip">eGST_1.0.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/eGST_1.0.0.zip">eGST_1.0.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/eGST_1.0.0.tgz">eGST_1.0.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/eGST_1.0.0.tgz">eGST_1.0.0.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=eGST"><samp>https://CRAN.R-project.org/package=eGST</samp></a>
+to link to this page.</p>
+</body>
+</html>

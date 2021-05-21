@@ -1,0 +1,33 @@
+Package: rjmcmc
+Type: Package
+Title: Reversible-Jump MCMC Using Post-Processing
+Version: 0.2.2
+Date: 2017-03-16
+Authors@R: c(person("Nick", "Gelling", email="ngelling@maths.otago.ac.nz", 
+                    role=c("aut","cre")),
+             person(c("Matthew", "R."), "Schofield", 
+                    email="mschofield@maths.otago.ac.nz", role="aut"),
+             person(c("Richard", "J."), "Barker", 
+                    email="rbarker@maths.otago.ac.nz", role="aut"))
+Description: Performs reversible-jump MCMC (Green, 1995)
+    <doi:10.2307/2337340>, specifically the restriction introduced by
+    Barker & Link (2013) <doi:10.1080/00031305.2013.791644>. By utilising
+    a 'universal parameter' space, RJMCMC is treated as a Gibbs sampling
+    problem. Previously-calculated posterior distributions are used to
+    quickly estimate posterior model probabilities. Jacobian matrices are
+    found using automatic differentiation.
+License: GPL-3
+Depends: madness, R (>= 3.2.0)
+Imports: utils, R2jags, coda
+Suggests: knitr
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+LazyData: TRUE
+NeedsCompilation: no
+Packaged: 2017-03-19 20:27:19 UTC; rachaelyoung
+Author: Nick Gelling [aut, cre],
+  Matthew R. Schofield [aut],
+  Richard J. Barker [aut]
+Maintainer: Nick Gelling <ngelling@maths.otago.ac.nz>
+Repository: CRAN
+Date/Publication: 2017-03-20 05:22:26 UTC

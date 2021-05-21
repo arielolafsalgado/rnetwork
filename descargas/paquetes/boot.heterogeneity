@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package boot.heterogeneity</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="A Bootstrap-Based Heterogeneity Test for Meta-Analysis [R package boot.heterogeneity version 0.1.1]" />
+<meta name="citation_author1" content="Ge Jiang" />
+<meta name="citation_author2" content="Han Du" />
+<meta name="citation_publication_date" content="2020-09-21" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=boot.heterogeneity" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=boot.heterogeneity" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="boot.heterogeneity: A Bootstrap-Based Heterogeneity Test for Meta-Analysis" />
+<meta name="og:description" content="Implements a bootstrap-based heterogeneity test for standardized mean differences (d), Fisher-transformed Pearson's correlations (r), and natural-logarithm-transformed odds ratio (or) in meta-analysis studies. Depending on the presence of moderators, this Monte Carlo based test can be implemented in the random- or mixed-effects model. This package uses rma() function from the R package 'metafor' to obtain parameter estimates and likelihoods, so installation of R package 'metafor' is required. This approach refers to the studies of Anscombe (1956) &amp;lt;&lt;a href=&quot;https://doi.org/10.2307%2F2332926&quot;&gt;doi:10.2307/2332926&lt;/a&gt;&amp;gt;, Haldane (1940) &amp;lt;&lt;a href=&quot;https://doi.org/10.2307%2F2332614&quot;&gt;doi:10.2307/2332614&lt;/a&gt;&amp;gt;, Hedges (1981) &amp;lt;&lt;a href=&quot;https://doi.org/10.3102%2F10769986006002107&quot;&gt;doi:10.3102/10769986006002107&lt;/a&gt;&amp;gt;, Hedges &amp;amp; Olkin (1985, ISBN:978-0123363800), Silagy, Lancaster, Stead, Mant, &amp;amp; Fowler (2004) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2F14651858.CD000146.pub2&quot;&gt;doi:10.1002/14651858.CD000146.pub2&lt;/a&gt;&amp;gt;, Viechtbauer (2010) &amp;lt;&lt;a href=&quot;https://doi.org/10.18637%2Fjss.v036.i03&quot;&gt;doi:10.18637/jss.v036.i03&lt;/a&gt;&amp;gt;, and Zuckerman (1994, ISBN:978-0521432009). " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=boot.heterogeneity" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>boot.heterogeneity: A Bootstrap-Based Heterogeneity Test for Meta-Analysis</h2>
+<p>Implements a bootstrap-based heterogeneity test for standardized mean differences (d), Fisher-transformed Pearson's correlations (r), and natural-logarithm-transformed odds ratio (or) in meta-analysis studies. Depending on the presence of moderators, this Monte Carlo based test can be implemented in the random- or mixed-effects model. This package uses rma() function from the R package 'metafor' to obtain parameter estimates and likelihoods, so installation of R package 'metafor' is required. This approach refers to the studies of Anscombe (1956) &lt;<a href="https://doi.org/10.2307%2F2332926">doi:10.2307/2332926</a>&gt;, Haldane (1940) &lt;<a href="https://doi.org/10.2307%2F2332614">doi:10.2307/2332614</a>&gt;, Hedges (1981) &lt;<a href="https://doi.org/10.3102%2F10769986006002107">doi:10.3102/10769986006002107</a>&gt;, Hedges &amp; Olkin (1985, ISBN:978-0123363800), Silagy, Lancaster, Stead, Mant, &amp; Fowler (2004) &lt;<a href="https://doi.org/10.1002%2F14651858.CD000146.pub2">doi:10.1002/14651858.CD000146.pub2</a>&gt;, Viechtbauer (2010) &lt;<a href="https://doi.org/10.18637%2Fjss.v036.i03">doi:10.18637/jss.v036.i03</a>&gt;, and Zuckerman (1994, ISBN:978-0521432009). </p>
+<table summary="Package boot.heterogeneity summary">
+<tr>
+<td>Version:</td>
+<td>0.1.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.1.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>stats, <a href="../metafor/index.html">metafor</a>, utils, <a href="../pbmcapply/index.html">pbmcapply</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td>base, <a href="../HSAUR3/index.html">HSAUR3</a>, <a href="../roxygen2/index.html">roxygen2</a>, parallel, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-21</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Ge Jiang [aut, cre],
+  Han Du [aut],
+  Zijun Ke [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Ge Jiang  &#x3c;&#x67;&#x65;&#x6a;&#x69;&#x61;&#x6e;&#x67;&#x32;&#x20;&#x61;&#x74;&#x20;&#x69;&#x6c;&#x6c;&#x69;&#x6e;&#x6f;&#x69;&#x73;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/gabriellajg/boot.heterogeneity/issues">https://github.com/gabriellajg/boot.heterogeneity/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/gabriellajg/boot.heterogeneity/">https://github.com/gabriellajg/boot.heterogeneity/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/MetaAnalysis.html">MetaAnalysis</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_boot.heterogeneity.html">boot.heterogeneity results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package boot.heterogeneity downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="boot.heterogeneity.pdf"> boot.heterogeneity.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/boot.heterogeneity.html">boot.heterogeneity</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/boot.heterogeneity_0.1.1.tar.gz"> boot.heterogeneity_0.1.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/boot.heterogeneity_0.1.1.zip">boot.heterogeneity_0.1.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/boot.heterogeneity_0.1.1.zip">boot.heterogeneity_0.1.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/boot.heterogeneity_0.1.1.zip">boot.heterogeneity_0.1.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/boot.heterogeneity_0.1.1.tgz">boot.heterogeneity_0.1.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/boot.heterogeneity_0.1.1.tgz">boot.heterogeneity_0.1.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/boot.heterogeneity"> boot.heterogeneity archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package boot.heterogeneity reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../mc.heterogeneity/index.html">mc.heterogeneity</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=boot.heterogeneity"><samp>https://CRAN.R-project.org/package=boot.heterogeneity</samp></a>
+to link to this page.</p>
+</body>
+</html>

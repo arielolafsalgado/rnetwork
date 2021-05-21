@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package sanitizers</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=sanitizers" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="sanitizers: C/C++ source code to trigger Address and Undefined Behaviour Sanitizers" />
+<meta name="og:description" content="Recent gcc and clang compiler versions provide functionality to memory violations and other undefined behaviour; this is often referred to as &quot;Address Sanitizer&quot; (or SAN) and &quot;Undefined Behaviour Sanitizer&quot; (UBSAN). The Writing R Extension manual describes this in some detail in Section 4.9. This feature has to be enabled in the corresponding binary, eg in R, which is somewhat involved as it also required a current compiler toolchain which is not yet widely available, or in the case of Windows, not available at all (via the common Rtools mechanism). As an alternative, the pre-built Docker containers available via the Docker Hub at &lt;a href=&quot;https://registry.hub.docker.com/u/eddelbuettel/docker-debian-r/&quot;&gt;https://registry.hub.docker.com/u/eddelbuettel/docker-debian-r/&lt;/a&gt; can be used on Linux, and via boot2docker on Windows and OS X. This package then provides a means of testing the compiler setup as the known code failures provides in the sample code here should be detected correctly, whereas a default build of R will let the package pass. The code samples are based on the examples from the Address Sanitizer Wiki at &lt;a href=&quot;https://code.google.com/p/address-sanitizer/wiki/AddressSanitizer&quot;&gt;https://code.google.com/p/address-sanitizer/wiki/AddressSanitizer&lt;/a&gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=sanitizers" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>sanitizers: C/C++ source code to trigger Address and Undefined Behaviour
+Sanitizers</h2>
+<p>Recent gcc and clang compiler versions provide functionality to
+ memory violations and other undefined behaviour; this is often referred to as
+ "Address Sanitizer" (or SAN) and "Undefined Behaviour Sanitizer" (UBSAN).
+ The Writing R Extension manual describes this in some detail in Section 4.9.
+
+    This feature has to be enabled in the corresponding binary, eg in R, which
+ is somewhat involved as it also required a current compiler toolchain which 
+ is not yet widely available, or in the case of Windows, not available at all
+ (via the common Rtools mechanism).
+
+    As an alternative, the pre-built Docker containers available via the Docker Hub
+ at <a href="https://registry.hub.docker.com/u/eddelbuettel/docker-debian-r/">https://registry.hub.docker.com/u/eddelbuettel/docker-debian-r/</a> can be used
+ on Linux, and via boot2docker on Windows and OS X.
+
+    This package then provides a means of testing the compiler setup as the
+ known code failures provides in the sample code here should be detected
+ correctly, whereas a default build of R will let the package pass.
+
+    The code samples are based on the examples from the Address Sanitizer
+ Wiki at <a href="https://code.google.com/p/address-sanitizer/wiki/AddressSanitizer">https://code.google.com/p/address-sanitizer/wiki/AddressSanitizer</a>.</p>
+<table summary="Package sanitizers summary">
+<tr>
+<td>Version:</td>
+<td>0.1.0</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2014-08-03</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Dirk Eddelbuettel</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Dirk Eddelbuettel  &#x3c;&#x65;&#x64;&#x64;&#x20;&#x61;&#x74;&#x20;&#x64;&#x65;&#x62;&#x69;&#x61;&#x6e;&#x2e;&#x6f;&#x72;&#x67;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="README.html">README</a> <a href="ChangeLog">ChangeLog</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_sanitizers.html">sanitizers results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package sanitizers downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="sanitizers.pdf"> sanitizers.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/sanitizers_0.1.0.tar.gz"> sanitizers_0.1.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/sanitizers_0.1.0.zip">sanitizers_0.1.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/sanitizers_0.1.0.zip">sanitizers_0.1.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/sanitizers_0.1.0.zip">sanitizers_0.1.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/sanitizers_0.1.0.tgz">sanitizers_0.1.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/sanitizers_0.1.0.tgz">sanitizers_0.1.0.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=sanitizers"><samp>https://CRAN.R-project.org/package=sanitizers</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,18 @@
+Package: random.polychor.pa
+Type: Package
+Title: A Parallel Analysis With Polychoric Correlation Matrices
+Version: 1.1.4-1
+Date: 2014-08-12
+Author: Fabio Presaghi & Marta Desimoni
+Maintainer: Fabio Presaghi <fabio.presaghi@uniroma1.it>
+Description: The Function performs a parallel analysis using simulated polychoric correlation matrices. The nth-percentile of the eigenvalues distribution obtained from both the randomly generated and the real data polychoric correlation matrices is returned. A plot comparing the two types of eigenvalues (real and simulated) will help determine the number of real eigenvalues that outperform random data. The function is based on the idea that if real data are non-normal and the polychoric correlation matrix is needed to perform a Factor Analysis, then the Parallel Analysis method used to choose a non-random number of factors should also be based on randomly generated polychoric correlation matrices and not on Pearson correlation matrices. Random data sets are simulated assuming or a uniform or a multinomial distribution or via the bootstrap method of resampling (i.e., random permutations of cases). Also Multigroup Parallel analysis is made available for random (uniform and multinomial distribution and with or without difficulty factor) and bootstrap methods. An option to choose between default or full output is also available as well as a parameter to print Fit Statistics (Chi-squared, TLI, RMSEA, RMR and BIC) for the factor solutions indicated by the Parallel Analysis. 
+Depends: psych, nFactors, boot
+Imports: MASS, mvtnorm, sfsmisc
+LazyLoad: yes
+LazyData: yes
+License: GPL (>= 2)
+Encoding: UTF-8
+Packaged: 2014-08-12 05:13:32 UTC; fabio
+Repository: CRAN
+NeedsCompilation: no
+Date/Publication: 2014-08-12 08:24:32

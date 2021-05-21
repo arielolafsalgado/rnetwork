@@ -1,0 +1,18 @@
+Package: AICcmodavg
+Type: Package
+Title: Model selection and multimodel inference based on (Q)AIC(c)
+Version: 2.00
+Date: 2014-07-14
+Author: Marc J. Mazerolle <marc.mazerolle@uqat.ca>.  
+Maintainer: Marc J. Mazerolle <marc.mazerolle@uqat.ca>
+Depends: methods, stats
+Suggests: coxme, lme4, MASS, Matrix, maxlike, nlme, nnet, ordinal,
+        pscl, R2jags, R2OpenBUGS, R2WinBUGS, stats4, survival,
+        unmarked, VGAM
+Description: This package includes functions to create model selection tables based on Akaike's information criterion (AIC) and the second-order AIC (AICc), as well as their quasi-likelihood counterparts (QAIC, QAICc).  The package also features functions to conduct classic model averaging (multimodel inference) for a given parameter of interest or predicted values, as well as a shrinkage version of model averaging parameter estimates.  Other handy functions enable the computation of relative variable importance, evidence ratios, and confidence sets for the best model.  The present version works with Cox proportional hazards models and conditional logistic regression ('coxph' and 'coxme' classes), linear models ('lm' class), generalized linear models ('glm', 'vglm', and 'zeroinfl' classes), linear models fit by generalized least squares ('gls' class), linear mixed models ('lme' class), generalized linear mixed models ('mer' and 'merMod' classes), multinomial and ordinal logistic regressions ('multinom'}, 'polr', 'clm', and 'clmm' classes), robust regression models ('rlm' class), nonlinear models ('nls' class), and nonlinear mixed models ('nlme' and 'nlmer' classes).  The package also supports various models of 'unmarkedFit' and 'maxLikeFit' classes estimating demographic parameters after accounting for imperfect detection probabilities.  Some functions also allow the creation of model selection tables for Bayesian models of the 'bugs' and 'rjags' classes.
+License: GPL (>= 2)
+LazyLoad: yes
+Packaged: 2014-07-15 14:40:27 UTC; mazerolm
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2014-07-15 17:04:57

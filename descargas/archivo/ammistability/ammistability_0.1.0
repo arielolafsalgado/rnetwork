@@ -1,0 +1,56 @@
+Package: ammistability
+Type: Package
+Title: Additive Main Effects and Multiplicative Interaction Model
+        Stability Parameters
+Version: 0.1.0
+Authors@R: c(
+    person(given  = c("B.", "C."), family = "Ajay",
+           email = "ajaygpb@yahoo.co.in",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-7222-8483")),
+    person(given = "J.", family = "Aravind",
+           email = "j.aravind@icar.gov.in",
+           role = c("aut"),
+           comment = c(ORCID = "0000-0002-4791-442X")),
+    person(given = "R.", family = c("Abdul Fiyaz"),
+           email = "fiyaz.ra@icar.gov.in",
+           role = "aut"),
+    person("ICAR",
+           role = c("cph"),
+           comment = c(url = "https://www.icar.org.in")))
+Description: Computes various stability parameters from Additive Main Effects
+    and Multiplicative Interaction (AMMI) analysis results such as  Modified
+    AMMI Stability Value (MASV), Sums of the Absolute Value of the Interaction
+    Principal Component Scores (SIPC), Sum Across Environments of
+    Genotype-Environment Interaction Modelled by AMMI (AMGE), Sum Across 
+    Environments of Absolute Value of Genotype-Environment Interaction Modelled
+    by AMMI (AV_(AMGE)), AMMI Stability Index (ASI), Modified ASI (MASI), AMMI
+    Based Stability Parameter (ASTAB), Annicchiarico's D Parameter (DA), Zhang's
+    D Parameter (DZ), Averages of the Squared Eigenvector Values (EV), Stability
+    Measure Based on Fitted AMMI Model (FA), Absolute Value of the Relative
+    Contribution of IPCs to the Interaction (Za). Further calculates the
+    Simultaneous Selection Index for Yield and Stability from the computed
+    stability parameters. See the vignette for complete list of citations for
+    the methods implemented.
+Copyright: 2017-2018, ICAR-DGR
+License: GPL-2 | GPL-3
+Encoding: UTF-8
+Depends: R (>= 3.0.1)
+VignetteBuilder: knitr
+RoxygenNote: 6.1.0
+Imports: agricolae, ggcorrplot, ggplot2, methods, reshape2, stats,
+        Rdpack
+Suggests: knitr, rmarkdown, pander
+RdMacros: Rdpack
+URL: http://github.com/ajaygpb/ammistability
+        https://ajaygpb.github.io/ammistability
+BugReports: http://github.com/ajaygpb/ammistability/issues
+NeedsCompilation: no
+Packaged: 2018-08-09 15:42:17 UTC; J. Aravind
+Author: B. C. Ajay [aut, cre] (<https://orcid.org/0000-0001-7222-8483>),
+  J. Aravind [aut] (<https://orcid.org/0000-0002-4791-442X>),
+  R. Abdul Fiyaz [aut],
+  ICAR [cph] (https://www.icar.org.in)
+Maintainer: B. C. Ajay <ajaygpb@yahoo.co.in>
+Repository: CRAN
+Date/Publication: 2018-08-13 09:20:03 UTC

@@ -1,0 +1,50 @@
+Package: qs
+Type: Package
+Title: Quick Serialization of R Objects
+Version: 0.18.3
+Date: 2019-8-12
+Authors@R: c(
+    person("Travers", "Ching", email = "traversc@gmail.com", role = c("aut", "cre", "cph")),
+    person("Yann", "Collet", role = c("ctb", "cph"), comment = "Yann Collet is the author of the bundled zstd and lz4 code"),
+    person("Facebook, Inc.", role = "cph", comment = "Facebook is the copyright holder of the bundled zstd code"),
+    person("Reichardt", "Tino", role = c("ctb", "cph"), comment = "Contributor/copyright holder of zstd bundled code"),
+    person("Skibinski", "Przemyslaw", role = c("ctb", "cph"), comment = "Contributor/copyright holder of zstd bundled code"),
+    person("Mori", "Yuta", role = c("ctb", "cph"), comment = "Contributor/copyright holder of zstd bundled code"),
+    person("Romain", "Francois", role = c("ctb", "cph"), comment = "Derived example/tutorials for Alt-Rep structures"),
+    person("Francesc", "Alted", role = c("ctb", "cph"), comment = "Shuffling routines derived from Blosc library"))
+Maintainer: Travers Ching <traversc@gmail.com>
+Description: Provides functions for quickly writing and reading any R object to and from disk.  
+License: GPL-3 | file LICENSE
+LazyData: true
+Biarch: true
+SystemRequirements: C++11
+Imports: Rcpp, RApiSerialize
+LinkingTo: Rcpp, RApiSerialize
+RoxygenNote: 6.1.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Copyright: This package includes code from the 'zstd' library owned by
+        Facebook, Inc. and created by Yann Collet; the 'lz4' library
+        created by Yann Collet; and code derived from the 'Blosc'
+        library created by Francesc Alted.
+URL: https://github.com/traversc/qs
+BugReports: https://github.com/traversc/qs/issues
+NeedsCompilation: yes
+Packaged: 2019-08-20 06:19:26 UTC; tching
+Author: Travers Ching [aut, cre, cph],
+  Yann Collet [ctb, cph] (Yann Collet is the author of the bundled zstd
+    and lz4 code),
+  Facebook, Inc. [cph] (Facebook is the copyright holder of the bundled
+    zstd code),
+  Reichardt Tino [ctb, cph] (Contributor/copyright holder of zstd bundled
+    code),
+  Skibinski Przemyslaw [ctb, cph] (Contributor/copyright holder of zstd
+    bundled code),
+  Mori Yuta [ctb, cph] (Contributor/copyright holder of zstd bundled
+    code),
+  Romain Francois [ctb, cph] (Derived example/tutorials for Alt-Rep
+    structures),
+  Francesc Alted [ctb, cph] (Shuffling routines derived from Blosc
+    library)
+Repository: CRAN
+Date/Publication: 2019-08-21 11:20:06 UTC

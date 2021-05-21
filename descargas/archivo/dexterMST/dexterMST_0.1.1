@@ -1,0 +1,36 @@
+Package: dexterMST
+Type: Package
+Title: CML Calibration of Multi Stage Tests
+Version: 0.1.1
+Date: 2018-10-29
+Authors@R: c(person("Timo", "Bechger", role = c("aut", "cre"),
+                     email = "tmbechger@gmail.com"),
+              person("Jesse","Koops", role = "aut"),
+              person("Ivailo","Partchev", role = "aut"),
+	            person("Gunter", "Maris", role = "aut"),
+	            person("Robert", "Zwitser", role = "ctb"))
+Maintainer: Timo Bechger <tmbechger@gmail.com>
+Description: Conditional Maximum Likelihood Calibration and data management of multistage tests. 
+  Functions for calibration of the Extended Nominal Response and the Interaction models, DIF and profile analysis.
+  See Robert J. Zwitser and Gunter Maris (2015)<doi:10.1007/s11336-013-9369-6>.
+License: GPL (>= 2)
+URL: http://dexterities.netlify.com
+BugReports: https://github.com/jessekps/dexter/issues
+Encoding: UTF-8
+Imports: Rcpp (>= 0.12.14), dexter (>= 0.8.1), dplyr (>= 0.7.4),
+        RSQLite (>= 2.0), rlang (>= 0.3.0), dbplyr (>= 1.2.0),
+        fastmatch, igraph (>= 1.2.1), tidyr (>= 0.8.0), tibble, DBI,
+        crayon, graphics, methods, stats, utils
+LinkingTo: Rcpp
+RoxygenNote: 6.1.0
+Suggests: knitr, testthat, mirt, ggplot2, Cairo
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2018-10-29 16:11:16 UTC; timo
+Author: Timo Bechger [aut, cre],
+  Jesse Koops [aut],
+  Ivailo Partchev [aut],
+  Gunter Maris [aut],
+  Robert Zwitser [ctb]
+Repository: CRAN
+Date/Publication: 2018-10-29 19:20:14 UTC

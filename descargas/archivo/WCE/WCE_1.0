@@ -1,0 +1,18 @@
+Package: WCE
+Type: Package
+Title: Weighted Cumulative Exposure Models
+Version: 1.0
+Date: 2015-01-12
+Author: Marie-Pierre Sylvestre <marie-pierre.sylvestre@umontreal.ca>, Marie-Eve Beauchamp <marie-eve.beauchamp@clinepi.mcgill.ca>, Ryan Patrick Kyle <ryan.kyle@mail.mcgill.ca>, Michal Abrahamowicz <michal.abrahamowicz@mcgill.ca>
+Maintainer: Marie-Pierre Sylvestre <marie-pierre.sylvestre@umontreal.ca>
+Depends: R (>= 2.10)
+Imports: plyr, survival, splines
+Suggests: R.rsp
+VignetteBuilder: R.rsp
+Description: WCE implements a flexible method for modeling cumulative effects of time-varying exposures, weighted according to their relative proximity in time, and represented by time-dependent covariates. The current implementation estimates the weight function in the Cox proportional hazards model. The function that assigns weights to doses taken in the past is estimated using cubic regression splines.
+License: GPL (>= 2)
+LazyData: true
+NeedsCompilation: no
+Packaged: 2015-01-13 23:52:35 UTC; kyle
+Repository: CRAN
+Date/Publication: 2015-01-14 01:59:06

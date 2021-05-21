@@ -1,0 +1,45 @@
+Package: clustree
+Type: Package
+Title: Visualise Clusterings at Different Resolutions
+Version: 0.4.2
+Date: 2020-01-29
+Authors@R: 
+    c(person("Luke", "Zappia", role = c("aut", "cre"),
+             email = "luke@lazappi.id.au",
+             comment = c(ORCID = "0000-0001-7744-8565")),
+      person("Alicia", "Oshlack", role = c("aut"),
+             email = "alicia.oshlack@petermac.org",
+             comment = c(ORCID = "0000-0001-9788-5690")),
+      person("Andrea", "Rau", role = c("ctb"),
+             email = "andrea.rau@inra.fr"),
+      person("Paul", "Hoffman", role = c("ctb"),
+             email = "phoffman@nygenome.org",
+             comment = c(ORCID = "0000-0002-7693-8957")))
+Maintainer: Luke Zappia <luke@lazappi.id.au>
+Description: Deciding what resolution to use can be a difficult question when
+    approaching a clustering analysis. One way to approach this problem is to
+    look at how samples move as the number of clusters increases. This package
+    allows you to produce clustering trees, a visualisation for interrogating
+    clusterings as resolution increases.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/lazappi/clustree
+BugReports: https://github.com/lazappi/clustree/issues
+VignetteBuilder: knitr
+Depends: R (>= 3.4), ggraph
+Imports: checkmate, igraph, dplyr, grid, ggplot2, viridis, methods,
+        rlang, tidygraph, ggrepel
+Suggests: testthat (>= 2.1.0), knitr, rmarkdown, SingleCellExperiment,
+        Seurat (>= 2.3.0), covr, SummarizedExperiment, pkgdown,
+        spelling
+RoxygenNote: 7.0.2
+Language: en-GB
+NeedsCompilation: no
+Packaged: 2020-01-29 11:25:40 UTC; Luke
+Author: Luke Zappia [aut, cre] (<https://orcid.org/0000-0001-7744-8565>),
+  Alicia Oshlack [aut] (<https://orcid.org/0000-0001-9788-5690>),
+  Andrea Rau [ctb],
+  Paul Hoffman [ctb] (<https://orcid.org/0000-0002-7693-8957>)
+Repository: CRAN
+Date/Publication: 2020-01-29 12:30:02 UTC

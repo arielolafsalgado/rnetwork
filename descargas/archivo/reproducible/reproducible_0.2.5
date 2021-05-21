@@ -1,0 +1,63 @@
+Package: reproducible
+Type: Package
+Title: A Set of Tools that Enhance Reproducibility Beyond Package
+        Management
+Description: Collection of high-level, robust, machine- and OS-independent tools
+    for making deeply reproducible and reusable content in R.
+    This includes light weight package management (similar to 'packrat' and
+    'checkpoint', but more flexible, lightweight and simpler than both), tools
+    for caching, downloading and verifying or writing checksums, post-processing 
+    of common spatial datasets, and accessing GitHub repositories. 
+    Some features are still under active development.
+URL: http://reproducible.predictiveecology.org,
+        https://github.com/PredictiveEcology/reproducible
+Date: 2018-11-15
+Version: 0.2.5
+Authors@R: c(
+    person("Eliot J B", "McIntire", email = "eliot.mcintire@canada.ca",
+    role = c("aut", "cre"), comment=c(ORCID = "0000-0002-6914-8316")),
+    person("Alex M", "Chubaty", email = "alex.chubaty@gmail.com",
+    role = c("aut"), comment = c(ORCID = "0000-0001-7146-8135")),
+    person("Tati", "Micheletti", email = "tati.micheletti@gmail.com",
+    role = c("ctb"), comment=c(ORCID = "0000-0003-4838-8342")),
+    person("Ceres", "Barros", email = "cbarros@mail.ubc.ca",
+    role = c("ctb"), comment=c(ORCID = "0000-0003-4036-977X")),
+    person("Ian", "Eddy", email = "ian.eddy@canada.com",
+    role = c("ctb"), comment=c(ORCID = "0000-0001-7397-2116")),
+    person("Her Majesty the Queen in Right of Canada, as represented by the Minister of Natural Resources Canada",
+    role = "cph")
+    )
+Depends: R (>= 3.3.0)
+Imports: archivist (>= 2.1.2), backports, crayon, data.table (>=
+        1.10.4), devtools, digest, dplyr, fastdigest, fasterize,
+        fpCompare, gdalUtils, git2r (>= 0.18), googledrive, httr,
+        magrittr, memoise, methods, parallel, quickPlot, R.utils,
+        raster, Rcpp (>= 0.12.13), RCurl (>= 1.95-4.8), remotes, rgdal,
+        rgeos, sf, sp, testthat, tibble, tools, utils, versions
+Suggests: covr, future, knitr, rmarkdown, TimeWarp
+Encoding: UTF-8
+Language: en-CA
+LinkingTo: Rcpp
+License: GPL-3
+VignetteBuilder: knitr, rmarkdown
+BugReports: https://github.com/PredictiveEcology/reproducible/issues
+ByteCompile: yes
+RoxygenNote: 6.1.0.9000
+Collate: 'RcppExports.R' 'cache-helpers.R' 'cache-tools.R'
+        'robustDigest.R' 'cache.R' 'checksums.R' 'consistentPaths.R'
+        'convertPaths.R' 'download.R' 'gis.R' 'git.R' 'helpers.R'
+        'objectSize.R' 'packages.R' 'pipe.R' 'postProcess.R'
+        'preProcess.R' 'prepInputs.R' 'reproducible-package.R'
+        'search.R' 'zzz.R'
+NeedsCompilation: yes
+Packaged: 2018-11-15 20:47:28 UTC; achubaty
+Author: Eliot J B McIntire [aut, cre] (<https://orcid.org/0000-0002-6914-8316>),
+  Alex M Chubaty [aut] (<https://orcid.org/0000-0001-7146-8135>),
+  Tati Micheletti [ctb] (<https://orcid.org/0000-0003-4838-8342>),
+  Ceres Barros [ctb] (<https://orcid.org/0000-0003-4036-977X>),
+  Ian Eddy [ctb] (<https://orcid.org/0000-0001-7397-2116>),
+  Her Majesty the Queen in Right of Canada, as represented by the
+    Minister of Natural Resources Canada [cph]
+Maintainer: Eliot J B McIntire <eliot.mcintire@canada.ca>
+Repository: CRAN
+Date/Publication: 2018-11-16 09:30:03 UTC

@@ -1,0 +1,31 @@
+Package: rpg
+Type: Package
+Title: Easy interface to advanced PostgreSQL features
+Version: 1.0
+Date: 2014-05-30
+Author: Timothy H. Keitt
+Maintainer: Timothy H. Keitt <tkeitt@gmail.com>
+Description: Allows ad hoc queries and reading and
+    writing data frames to and from a database.
+License: GPL (>= 2)
+URL: http://www.postgresql.org/, http://github.com/thk686/rpg,
+        http://r-forge.r-project.org/projects/rpg/,
+        http://www.keittlab.org/
+Imports: Rcpp (>= 0.11.1), uuid (>= 0.1-1), RApiSerialize (>= 0.1.0)
+Suggests: foreach (>= 1.4.2), doParallel (>= 1.0.0), hflights (>= 0.1)
+LinkingTo: Rcpp, RApiSerialize
+SystemRequirements: libpq
+Depends: R (>= 3.0.0)
+NeedsCompilation: yes
+Note: The files configure.in, cleanup, Makevars.in and Makevars.win are
+        based on the same files found in RPostgreSQL. I thank Dirk
+        Eddelbuettel for giving the go ahead to resue thier build
+        setup. Copyright of the unmodified protions remains with the
+        original authors. The files in src/libpq/ are part of
+        PostgreSQL.
+Repository: CRAN
+Repository/R-Forge/Project: rpg
+Repository/R-Forge/Revision: 18
+Repository/R-Forge/DateTimeStamp: 2014-07-15 20:57:00
+Date/Publication: 2014-07-24 18:53:44
+Packaged: 2014-07-15 22:15:29 UTC; rforge

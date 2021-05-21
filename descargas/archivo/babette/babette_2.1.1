@@ -1,0 +1,43 @@
+Package: babette
+Title: Control 'BEAST2'
+Version: 2.1.1
+Authors@R: c(
+    person("Richèl J.C.", "Bilderbeek", email = "richel@richelbilderbeek.nl", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1107-7049")),
+    person("Joëlle", "Barido-Sottani", role = "rev", comment = "Joëlle reviewed the package for rOpenSci, see https://github.com/ropensci/onboarding/issues/209"),
+    person("David", "Winter", role = "rev", comment = "David reviewed the package for rOpenSci, see https://github.com/ropensci/onboarding/issues/209"),
+    person("Giovanni", "Laudanno", email = "glaudanno@gmail.com", role = "ctb"))
+Maintainer: Richèl J.C. Bilderbeek <richel@richelbilderbeek.nl>
+Description: 'BEAST2' (<http://www.beast2.org>) is a widely used
+    Bayesian phylogenetic tool, that uses DNA/RNA/protein data
+    and many model priors to create a posterior of jointly estimated 
+    phylogenies and parameters.
+    'BEAST2' is commonly accompanied by 'BEAUti 2', 'Tracer' and 'DensiTree'.
+    'babette' provides for an alternative workflow of using 
+    all these tools separately. This allows doing complex Bayesian
+    phylogenetics easily and reproducibly from 'R'. 
+License: GPL-3
+LazyData: true
+RoxygenNote: 7.0.2
+VignetteBuilder: knitr
+URL: https://docs.ropensci.org/babette,
+        https://github.com/ropensci/babette
+BugReports: https://github.com/ropensci/babette/issues
+Depends: R (>= 3.5.0), beautier (>= 2.3), beastier (>= 2.1), mauricer,
+        tracerer
+Imports: phangorn, remotes, stringr, testit, xml2
+Suggests: ape, ggplot2, hunspell, knitr, lintr, nLTT, rappdirs,
+        rmarkdown, spelling, testthat (>= 2.1.0)
+Language: en-US
+Encoding: UTF-8
+SystemRequirements: BEAST2 (http://www.beast2.org/)
+NeedsCompilation: no
+Packaged: 2019-12-31 06:52:51 UTC; richel
+Author: Richèl J.C. Bilderbeek [aut, cre]
+    (<https://orcid.org/0000-0003-1107-7049>),
+  Joëlle Barido-Sottani [rev] (Joëlle reviewed the package for rOpenSci,
+    see https://github.com/ropensci/onboarding/issues/209),
+  David Winter [rev] (David reviewed the package for rOpenSci, see
+    https://github.com/ropensci/onboarding/issues/209),
+  Giovanni Laudanno [ctb]
+Repository: CRAN
+Date/Publication: 2020-01-11 12:50:02 UTC

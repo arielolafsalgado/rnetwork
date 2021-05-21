@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package psfmi</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Prediction Model Selection and Performance Evaluation in Multiple Imputed Datasets [R package psfmi version 0.5.0]" />
+<meta name="citation_author" content="Martijn Heymans" />
+<meta name="citation_publication_date" content="2020-09-24" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=psfmi" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=psfmi" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="psfmi: Prediction Model Selection and Performance Evaluation in Multiple Imputed Datasets" />
+<meta name="og:description" content=" Pooling, backward and forward selection of logistic and Cox regression models in multiply imputed datasets. Backward and forward selection can be done from the pooled model using Rubin's Rules (RR), the D1, D2, D3 and the median p-values method. This is also possible for Mixed models. The models can contain continuous, dichotomous, categorical and restricted cubic spline predictors and interaction terms between all these type of predictors. The stability of the models can be evaluated using bootstrapping and cluster bootstrapping. The package further contains functions to pool the model performance as ROC/AUC, R-squares, scaled Brier score and calibration plots for logistic regression models. Internal validation can be done with cross-validation or bootstrapping. The adjusted intercept after shrinkage of pooled regression coefficients can be obtained. Backward and forward selection as part of internal validation is possible. Also a function to externally validate logistic prediction models in multiple imputed datasets is available. Eekhout (2017) &amp;lt;&lt;a href=&quot;https://doi.org/10.1186%2Fs12874-017-0404-7&quot;&gt;doi:10.1186/s12874-017-0404-7&lt;/a&gt;&amp;gt;. Wiel (2009) &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fbiostatistics%2Fkxp011&quot;&gt;doi:10.1093/biostatistics/kxp011&lt;/a&gt;&amp;gt;. Marshall (2009) &amp;lt;&lt;a href=&quot;https://doi.org/10.1186%2F1471-2288-9-57&quot;&gt;doi:10.1186/1471-2288-9-57&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=psfmi" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>psfmi: Prediction Model Selection and Performance Evaluation in
+Multiple Imputed Datasets</h2>
+<p>
+	Pooling, backward and forward selection of logistic and Cox regression models in 
+	multiply imputed datasets. Backward and forward selection can be done 
+	from the pooled model using Rubin's Rules (RR), the D1, D2, D3 and 
+	the median p-values method. This is also possible for Mixed models. 
+	The models can contain continuous, dichotomous, categorical and restricted 
+	cubic spline predictors and interaction terms between	all these type of predictors. 
+	The stability of the models	can be evaluated using bootstrapping and cluster 
+	bootstrapping. The package further contains functions to pool the model performance 
+	as ROC/AUC, R-squares, scaled Brier score and calibration	plots for logistic 
+	regression models. Internal validation can be	done with cross-validation or bootstrapping. 
+	The adjusted intercept after shrinkage of pooled regression coefficients can be obtained. 
+	Backward and forward selection as part of internal validation is possible. 
+	Also a function to externally validate logistic prediction models in multiple imputed 
+	datasets is available.
+	Eekhout (2017) &lt;<a href="https://doi.org/10.1186%2Fs12874-017-0404-7">doi:10.1186/s12874-017-0404-7</a>&gt;.
+	Wiel (2009) &lt;<a href="https://doi.org/10.1093%2Fbiostatistics%2Fkxp011">doi:10.1093/biostatistics/kxp011</a>&gt;.
+	Marshall (2009) &lt;<a href="https://doi.org/10.1186%2F1471-2288-9-57">doi:10.1186/1471-2288-9-57</a>&gt;.</p>
+<table summary="Package psfmi summary">
+<tr>
+<td>Version:</td>
+<td>0.5.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.6.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../survival/index.html">survival</a> (&gt; 2.41-3), <a href="../car/index.html">car</a> (&gt; 3.0.0), <a href="../lme4/index.html">lme4</a> (&ge; 1.1-21), <a href="../norm/index.html">norm</a> (&ge;
+1.0-9.5), <a href="../miceadds/index.html">miceadds</a> (&gt; 2.10-14), <a href="../mitools/index.html">mitools</a> (&ge; 2.4), <a href="../pROC/index.html">pROC</a> (&gt;
+1.11.0), <a href="../rms/index.html">rms</a> (&gt; 5.1-2), <a href="../ResourceSelection/index.html">ResourceSelection</a> (&gt; 0.3-2), <a href="../ggplot2/index.html">ggplot2</a> (&gt;
+2.2.1), <a href="../dplyr/index.html">dplyr</a> (&ge; 0.8.3), <a href="../magrittr/index.html">magrittr</a> (&ge; 1.5), <a href="../rsample/index.html">rsample</a> (&ge;
+0.0.5), <a href="../purrr/index.html">purrr</a> (&ge; 0.3.3), <a href="../tidyr/index.html">tidyr</a> (&ge; 1.0.0), <a href="../tibble/index.html">tibble</a> (&ge; 2.1.3), <a href="../mice/index.html">mice</a> (&ge; 3.6.0), <a href="../mitml/index.html">mitml</a> (&ge; 0.3-7), <a href="../cvAUC/index.html">cvAUC</a> (&ge; 1.1.0), <a href="../stringr/index.html">stringr</a> (&ge; 1.4.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../foreign/index.html">foreign</a> (&ge; 0.8-72), <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../testthat/index.html">testthat</a>, <a href="../bookdown/index.html">bookdown</a>, <a href="../readr/index.html">readr</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-24</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Martijn Heymans <a href="https://orcid.org/0000-0002-3889-0921"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [cre, aut],
+  Iris Eekhout [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Martijn Heymans  &#x3c;&#x6d;&#x77;&#x2e;&#x68;&#x65;&#x79;&#x6d;&#x61;&#x6e;&#x73;&#x20;&#x61;&#x74;&#x20;&#x61;&#x6d;&#x73;&#x74;&#x65;&#x72;&#x64;&#x61;&#x6d;&#x75;&#x6d;&#x63;&#x2e;&#x6e;&#x6c;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/mwheymans/psfmi/issues">https://github.com/mwheymans/psfmi/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://mwheymans.github.io/psfmi/">https://mwheymans.github.io/psfmi/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/MissingData.html">MissingData</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_psfmi.html">psfmi results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package psfmi downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="psfmi.pdf"> psfmi.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/MI_boot.html">MI_boot</a><br/>
+<a href="vignettes/MI_cv_naive.html">MI_cv_naive</a><br/>
+<a href="vignettes/boot_MI.html">boot_MI</a><br/>
+<a href="vignettes/cv_MI.html">cv_MI</a><br/>
+<a href="vignettes/cv_MI_RR.html">cv_MI_RR</a><br/>
+<a href="vignettes/psfmi_CoxModels.html">psfmi_CoxModels</a><br/>
+<a href="vignettes/psfmi_LogisticModels.html">psfmi_LogisticModels</a><br/>
+<a href="vignettes/psfmi_StabilityAnalysis.html">psfmi_StabilityAnalysis</a><br/>
+<a href="vignettes/psfmi_mice.html">psfmi_mice</a><br/>
+<a href="vignettes/psfmi_valext.html">psfmi_valext</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/psfmi_0.5.0.tar.gz"> psfmi_0.5.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/psfmi_0.5.0.zip">psfmi_0.5.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/psfmi_0.5.0.zip">psfmi_0.5.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/psfmi_0.5.0.zip">psfmi_0.5.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/psfmi_0.5.0.tgz">psfmi_0.5.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/psfmi_0.5.0.tgz">psfmi_0.5.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/psfmi"> psfmi archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=psfmi"><samp>https://CRAN.R-project.org/package=psfmi</samp></a>
+to link to this page.</p>
+</body>
+</html>

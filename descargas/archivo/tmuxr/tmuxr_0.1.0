@@ -1,0 +1,28 @@
+Package: tmuxr
+Title: Manage 'tmux'
+Version: 0.1.0
+Authors@R: c(
+    person("Jeroen", "Janssens", email = "jeroen@datascienceworkshops.com", role = c("aut", "cre")),
+    person("Data Science Workshops", role = c("cph", "fnd"))
+    )                  
+Description: Create, control, and record 'tmux' sessions, windows, and panes
+    using a pipeable API.
+Depends: R (>= 3.3.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/datascienceworkshops/tmuxr
+BugReports: https://github.com/datascienceworkshops/tmuxr/issues
+SystemRequirements: tmux
+OS_type: unix
+Imports: purrr, stringr, magrittr
+Collate: tmuxr.R server.R session.R window.R pane.R prompt.R send.R
+RoxygenNote: 6.0.1
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2017-11-13 09:16:28 UTC; jeroen
+Author: Jeroen Janssens [aut, cre],
+  Data Science Workshops [cph, fnd]
+Maintainer: Jeroen Janssens <jeroen@datascienceworkshops.com>
+Repository: CRAN
+Date/Publication: 2017-11-13 19:30:44 UTC

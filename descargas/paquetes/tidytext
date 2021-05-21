@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package tidytext</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Text Mining using 'dplyr', 'ggplot2', and Other Tidy Tools [R package tidytext version 0.2.6]" />
+<meta name="citation_author1" content="David Robinson" />
+<meta name="citation_author2" content="Julia Silge" />
+<meta name="citation_publication_date" content="2020-09-20" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=tidytext" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=tidytext" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="tidytext: Text Mining using 'dplyr', 'ggplot2', and Other Tidy Tools" />
+<meta name="og:description" content="Using tidy data principles can make many text mining tasks easier, more effective, and consistent with tools already in wide use. Much of the infrastructure needed for text mining with tidy data frames already exists in packages like 'dplyr', 'broom', 'tidyr', and 'ggplot2'. In this package, we provide functions and supporting data sets to allow conversion of text to and from tidy formats, and to switch seamlessly between tidy tools and existing text mining packages." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=tidytext" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>tidytext: Text Mining using 'dplyr', 'ggplot2', and Other Tidy Tools</h2>
+<p>Using tidy data principles can make many text mining tasks easier, 
+    more effective, and consistent with tools already in wide use. Much of the 
+    infrastructure needed for text mining with tidy data frames already exists 
+    in packages like 'dplyr', 'broom', 'tidyr', and 'ggplot2'. In this package, 
+    we provide functions and supporting data sets to allow conversion of text 
+    to and from tidy formats, and to switch seamlessly between tidy tools and 
+    existing text mining packages.</p>
+<table summary="Package tidytext summary">
+<tr>
+<td>Version:</td>
+<td>0.2.6</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../rlang/index.html">rlang</a>, <a href="../tibble/index.html">tibble</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../stringr/index.html">stringr</a>, <a href="../hunspell/index.html">hunspell</a>, <a href="../generics/index.html">generics</a>, <a href="../Matrix/index.html">Matrix</a>, <a href="../tokenizers/index.html">tokenizers</a>, <a href="../janeaustenr/index.html">janeaustenr</a>, <a href="../purrr/index.html">purrr</a> (&ge; 0.1.1), methods</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../readr/index.html">readr</a>, <a href="../tidyr/index.html">tidyr</a>, <a href="../XML/index.html">XML</a>, <a href="../tm/index.html">tm</a>, <a href="../quanteda/index.html">quanteda</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../reshape2/index.html">reshape2</a>, <a href="../wordcloud/index.html">wordcloud</a>, <a href="../topicmodels/index.html">topicmodels</a>, <a href="../NLP/index.html">NLP</a>, <a href="../scales/index.html">scales</a>, <a href="../testthat/index.html">testthat</a> (&ge;
+2.1.0), <a href="../vdiffr/index.html">vdiffr</a>, <a href="../mallet/index.html">mallet</a>, <a href="../stm/index.html">stm</a>, <a href="../data.table/index.html">data.table</a>, <a href="../broom/index.html">broom</a>, <a href="../textdata/index.html">textdata</a>, <a href="../stopwords/index.html">stopwords</a>, <a href="../covr/index.html">covr</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-20</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Gabriela De Queiroz [ctb],
+  Colin Fay <a href="https://orcid.org/0000-0001-7343-1846"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb],
+  Emil Hvitfeldt [ctb],
+  Os Keyes <a href="https://orcid.org/0000-0001-5196-609X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb],
+  Kanishka Misra [ctb],
+  Tim Mastny [ctb],
+  Jeff Erickson [ctb],
+  David Robinson [aut],
+  Julia Silge <a href="https://orcid.org/0000-0002-3671-836X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Julia Silge  &#x3c;&#x6a;&#x75;&#x6c;&#x69;&#x61;&#x2e;&#x73;&#x69;&#x6c;&#x67;&#x65;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/juliasilge/tidytext/issues">https://github.com/juliasilge/tidytext/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/juliasilge/tidytext">https://github.com/juliasilge/tidytext</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">tidytext citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/NaturalLanguageProcessing.html">NaturalLanguageProcessing</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_tidytext.html">tidytext results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package tidytext downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="tidytext.pdf"> tidytext.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/tf_idf.html">Tidy Term Frequency and Inverse Document Frequency (tf-idf)</a><br/>
+<a href="vignettes/tidying_casting.html">Converting to and from Document-Term Matrices and Corpus objects</a><br/>
+<a href="vignettes/tidytext.html">Introduction to tidytext</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/tidytext_0.2.6.tar.gz"> tidytext_0.2.6.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/tidytext_0.2.6.zip">tidytext_0.2.6.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/tidytext_0.2.6.zip">tidytext_0.2.6.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/tidytext_0.2.6.zip">tidytext_0.2.6.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/tidytext_0.2.6.tgz">tidytext_0.2.6.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/tidytext_0.2.6.tgz">tidytext_0.2.6.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/tidytext"> tidytext archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package tidytext reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../akc/index.html">akc</a>, <a href="../available/index.html">available</a>, <a href="../crsra/index.html">crsra</a>, <a href="../epitweetr/index.html">epitweetr</a>, <a href="../fedregs/index.html">fedregs</a>, <a href="../genius/index.html">genius</a>, <a href="../ggpage/index.html">ggpage</a>, <a href="../oRus/index.html">oRus</a>, <a href="../schrute/index.html">schrute</a>, <a href="../statquotes/index.html">statquotes</a>, <a href="../TextForecast/index.html">TextForecast</a>, <a href="../TextMiningGUI/index.html">TextMiningGUI</a>, <a href="../TwitterAutomatedTrading/index.html">TwitterAutomatedTrading</a>, <a href="../widyr/index.html">widyr</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../cwbtools/index.html">cwbtools</a>, <a href="../eurlex/index.html">eurlex</a>, <a href="../funrar/index.html">funrar</a>, <a href="../gutenbergr/index.html">gutenbergr</a>, <a href="../kdtools/index.html">kdtools</a>, <a href="../LexisNexisTools/index.html">LexisNexisTools</a>, <a href="../MoMPCA/index.html">MoMPCA</a>, <a href="../mvrsquared/index.html">mvrsquared</a>, <a href="../newsanchor/index.html">newsanchor</a>, <a href="../polmineR/index.html">polmineR</a>, <a href="../quanteda/index.html">quanteda</a>, <a href="../spacyr/index.html">spacyr</a>, <a href="../textmineR/index.html">textmineR</a>, <a href="../tidylo/index.html">tidylo</a>, <a href="../tidypmc/index.html">tidypmc</a>, <a href="../vosonSML/index.html">vosonSML</a>, <a href="../wikisourcer/index.html">wikisourcer</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=tidytext"><samp>https://CRAN.R-project.org/package=tidytext</samp></a>
+to link to this page.</p>
+</body>
+</html>

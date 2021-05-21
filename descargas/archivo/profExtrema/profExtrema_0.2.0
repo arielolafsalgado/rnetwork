@@ -1,0 +1,21 @@
+Package: profExtrema
+Type: Package
+Title: Compute and Visualize Profile Extrema Functions
+Version: 0.2.0
+Authors@R: person("Dario","Azzimonti",role=c("aut","cre","cph"),email= "dario.azzimonti@gmail.com", comment = c(ORCID = "0000-0001-5080-3061"))
+Maintainer: Dario Azzimonti <dario.azzimonti@gmail.com>
+Date: 2018-08-22
+Description: Computes profile extrema functions for arbitrary functions. If the function is expensive-to-evaluate it computes profile extrema by emulating the function with a Gaussian process (using package 'DiceKriging'). In this case uncertainty quantification on the profile extrema can also be computed. The different plotting functions for profile extrema give the user a tool to better locate excursion sets. 
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 2.10), DiceKriging, KrigInv, pGPx
+Imports: microbenchmark, quantreg, lhs, splines, methods, RColorBrewer,
+        utils, MASS, rcdd
+RoxygenNote: 6.1.0
+NeedsCompilation: no
+Packaged: 2018-08-22 08:04:14 UTC; dario
+Author: Dario Azzimonti [aut, cre, cph]
+    (<https://orcid.org/0000-0001-5080-3061>)
+Repository: CRAN
+Date/Publication: 2018-08-30 13:20:03 UTC

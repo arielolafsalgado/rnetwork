@@ -1,0 +1,36 @@
+Package: wrapr
+Type: Package
+Title: Wrap R Tools for Debugging and Parametric Programming
+Version: 2.0.2
+Date: 2020-08-10
+Authors@R: c(
+    person("John", "Mount", email = "jmount@win-vector.com", role = c("aut", "cre")),
+    person("Nina", "Zumel", email = "nzumel@win-vector.com", role = c("aut")),
+    person(family = "Win-Vector LLC", role = c("cph"))
+    )
+URL: https://github.com/WinVector/wrapr,
+        https://winvector.github.io/wrapr/
+Maintainer: John Mount <jmount@win-vector.com>
+BugReports: https://github.com/WinVector/wrapr/issues
+Description: Tools for writing and debugging R code. Provides: 
+    '%.>%' dot-pipe (an 'S3' configurable pipe), unpack/to (R style multiple assignment/return),
+    'build_frame()'/'draw_frame()' ('data.frame' example tools),
+    'qc()' (quoting concatenate), 
+    ':=' (named map builder), 'let()' (converts non-standard evaluation interfaces to parametric standard
+    evaluation interfaces, inspired by 'gtools::strmacro()' and 'base::bquote()'), and more.
+License: GPL-2 | GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Depends: R (>= 3.3.0)
+Imports: utils, methods, stats
+Suggests: parallel, knitr, graphics, rmarkdown, RUnit, R.rsp
+VignetteBuilder: knitr, R.rsp
+ByteCompile: true
+NeedsCompilation: no
+Packaged: 2020-08-10 19:40:21 UTC; johnmount
+Author: John Mount [aut, cre],
+  Nina Zumel [aut],
+  Win-Vector LLC [cph]
+Repository: CRAN
+Date/Publication: 2020-08-10 21:20:02 UTC

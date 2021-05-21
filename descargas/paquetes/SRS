@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package SRS</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Scaling with Ranked Subsampling [R package SRS version 0.1.1]" />
+<meta name="citation_author1" content="Lukas Beule" />
+<meta name="citation_author2" content="Vitor Heidrich" />
+<meta name="citation_author3" content="Petr Karlovsky" />
+<meta name="citation_publication_date" content="2020-10-02" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=SRS" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=SRS" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="SRS: Scaling with Ranked Subsampling" />
+<meta name="og:description" content="Analysis of species count data in ecology often requires normalization to an identical sample size. Rarefying (random subsampling without replacement), which is a popular method for normalization, has been widely criticized for its poor reproducibility and potential distortion of the community structure. In the context of microbiome count data, researchers explicitly advised against the use of rarefying. An alternative to rarefying is scaling with ranked subsampling (SRS). SRS consists of two steps. In the first step, the total counts for all OTUs (operational taxonomic units) or species in each sample are divided by a scaling factor chosen in such a way that the sum of the scaled counts Cscaled equals Cmin. In the second step, the non-integer Cscaled values are converted into integers by an algorithm that we dub ranked subsampling. The Cscaled value for each OTU or species is split into the integer part Cint (Cint = floor(Cscaled)) and the fractional part Cfrac (Cfrac = Cscaled - Cints). Since the sum of Cint is smaller or equal to Cmin, additional delta C = Cmin - the sum of Cint counts have to be added to the library to reach the total count of Cmin. This is achieved as follows. OTUs are ranked in the descending order of their Cfrac values. Beginning with the OTU of the highest rank, single count per OTU is added to the normalized library until the total number of added counts reaches delta C and the sum of all counts in the normalized library equals Cmin. When the lowest Cfrag involved in picking delta C counts is shared by several OTUs, the OTUs used for adding a single count to the library are selected in the order of their Cint values. This selection minimizes the effect of normalization on the relative frequencies of OTUs. OTUs with identical Cfrag as well as Cint are sampled randomly without replacement. See Beule &amp;amp; Karlovsky (2020) &amp;lt;&lt;a href=&quot;https://doi.org/10.7717%2Fpeerj.9593&quot;&gt;doi:10.7717/peerj.9593&lt;/a&gt;&amp;gt; for details." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=SRS" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>SRS: Scaling with Ranked Subsampling</h2>
+<p>Analysis of species count data in ecology often requires normalization to an identical sample size. Rarefying (random subsampling without replacement), which is a popular method for normalization, has been widely criticized for its poor reproducibility and potential distortion of the community structure. In the context of microbiome count data, researchers explicitly advised against the use of rarefying. An alternative to rarefying is scaling with ranked subsampling (SRS). SRS consists of two steps. In the first step, the total counts for all OTUs (operational taxonomic units) or species in each sample are divided by a scaling factor chosen in such a way that the sum of the scaled counts Cscaled equals Cmin. In the second step, the non-integer Cscaled values are converted into integers by an algorithm that we dub ranked subsampling. The Cscaled value for each OTU or species is split into the integer part Cint  (Cint = floor(Cscaled)) and the fractional part Cfrac (Cfrac = Cscaled - Cints). Since the sum of Cint is smaller or equal to Cmin, additional  delta C = Cmin - the sum of Cint counts have to be added to the library to reach the total count of Cmin. This is achieved as follows. OTUs are ranked in the descending order of their Cfrac values. Beginning with the OTU of the highest rank, single count per OTU is added to the normalized library until the total number of added counts reaches delta C and the sum of all counts in the normalized library equals Cmin. When the lowest Cfrag involved in picking delta C counts is shared by several OTUs, the OTUs used for adding a single count to the library are selected in the order of their Cint values. This selection minimizes the effect of normalization on the relative frequencies of OTUs. OTUs with identical Cfrag as well as Cint are sampled randomly without replacement. See Beule &amp; Karlovsky (2020) &lt;<a href="https://doi.org/10.7717%2Fpeerj.9593">doi:10.7717/peerj.9593</a>&gt; for details.</p>
+<table summary="Package SRS summary">
+<tr>
+<td>Version:</td>
+<td>0.1.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.4.0), <a href="../vegan/index.html">vegan</a> (&ge; 2.5-6)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-02</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Lukas Beule [aut, cre],
+  Vitor Heidrich [aut],
+  Petr Karlovsky [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Lukas Beule  &#x3c;&#x6c;&#x75;&#x6b;&#x61;&#x73;&#x2e;&#x62;&#x65;&#x75;&#x6c;&#x65;&#x20;&#x61;&#x74;&#x20;&#x61;&#x67;&#x72;&#x2e;&#x75;&#x6e;&#x69;&#x2d;&#x67;&#x6f;&#x65;&#x74;&#x74;&#x69;&#x6e;&#x67;&#x65;&#x6e;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">SRS citation info</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_SRS.html">SRS results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package SRS downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="SRS.pdf"> SRS.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/SRS_0.1.1.tar.gz"> SRS_0.1.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/SRS_0.1.1.zip">SRS_0.1.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/SRS_0.1.1.zip">SRS_0.1.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/SRS_0.1.1.zip">SRS_0.1.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/SRS_0.1.1.tgz">SRS_0.1.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/SRS_0.1.1.tgz">SRS_0.1.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/SRS"> SRS archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=SRS"><samp>https://CRAN.R-project.org/package=SRS</samp></a>
+to link to this page.</p>
+</body>
+</html>

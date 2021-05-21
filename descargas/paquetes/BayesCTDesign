@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package BayesCTDesign</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Two Arm Bayesian Clinical Trial Design with and Without Historical Control Data [R package BayesCTDesign version 0.6.0]" />
+<meta name="citation_author1" content="Barry Eggleston" />
+<meta name="citation_author2" content="Doug Wilson" />
+<meta name="citation_author3" content="Becky McNeil" />
+<meta name="citation_author4" content="Joseph Ibrahim" />
+<meta name="citation_author5" content="Diane Catellier" />
+<meta name="citation_publication_date" content="2019-08-02" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=BayesCTDesign" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=BayesCTDesign" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="BayesCTDesign: Two Arm Bayesian Clinical Trial Design with and Without Historical Control Data" />
+<meta name="og:description" content="A set of functions to help clinical trial researchers calculate power and sample size for two-arm Bayesian randomized clinical trials that do or do not incorporate historical control data. At some point during the design process, a clinical trial researcher who is designing a basic two-arm Bayesian randomized clinical trial needs to make decisions about power and sample size within the context of hypothesized treatment effects. Through simulation, the simple_sim() function will estimate power and other user specified clinical trial characteristics at user specified sample sizes given user defined scenarios about treatment effect,control group characteristics, and outcome. If the clinical trial researcher has access to historical control data, then the researcher can design a two-arm Bayesian randomized clinical trial that incorporates the historical data. In such a case, the researcher needs to work through the potential consequences of historical and randomized control differences on trial characteristics, in addition to working through issues regarding power in the context of sample size, treatment effect size, and outcome. If a researcher designs a clinical trial that will incorporate historical control data, the researcher needs the randomized controls to be from the same population as the historical controls. What if this is not the case when the designed trial is implemented? During the design phase, the researcher needs to investigate the negative effects of possible historic/randomized control differences on power, type one error, and other trial characteristics. Using this information, the researcher should design the trial to mitigate these negative effects. Through simulation, the historic_sim() function will estimate power and other user specified clinical trial characteristics at user specified sample sizes given user defined scenarios about historical and randomized control differences as well as treatment effects and outcomes. The results from historic_sim() and simple_sim() can be printed with print_table() and graphed with plot_table() methods. Outcomes considered are Gaussian, Poisson, Bernoulli, Lognormal, Weibull, and Piecewise Exponential. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=BayesCTDesign" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>BayesCTDesign: Two Arm Bayesian Clinical Trial Design with and Without
+Historical Control Data</h2>
+<p>A set of functions to help clinical trial researchers calculate power and sample size for two-arm Bayesian randomized clinical trials that do or do not incorporate historical control data.  At some point during the design process, a clinical trial researcher who is designing a basic two-arm Bayesian randomized clinical trial needs to make decisions about power and sample size within the context of hypothesized treatment effects.  Through simulation, the simple_sim() function will estimate power and other user specified clinical trial characteristics at user specified sample sizes given user defined scenarios about treatment effect,control group characteristics, and outcome.  If the clinical trial researcher has access to historical control data, then the researcher can design a two-arm Bayesian randomized clinical trial that incorporates the historical data.  In such a case, the researcher needs to work through the potential consequences of historical and randomized control differences on trial characteristics, in addition to working through issues regarding power in the context of sample size, treatment effect size, and outcome.  If a researcher designs a clinical trial that will incorporate historical control data, the researcher needs the randomized controls to be from the same population as the historical controls.  What if this is not the case when the designed trial is implemented?  During the design phase, the researcher needs to investigate the negative effects of possible historic/randomized control differences on power, type one error, and other trial characteristics.  Using this information, the researcher should design the trial to mitigate these negative effects.  Through simulation, the historic_sim() function will estimate power and other user specified clinical trial characteristics at user specified sample sizes given user defined scenarios about historical and randomized control differences as well as treatment effects and outcomes.  The results from historic_sim() and simple_sim() can be printed with print_table() and graphed with plot_table() methods.  Outcomes considered are Gaussian, Poisson, Bernoulli, Lognormal, Weibull, and Piecewise Exponential.  </p>
+<table summary="Package BayesCTDesign summary">
+<tr>
+<td>Version:</td>
+<td>0.6.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../eha/index.html">eha</a> (&ge; 2.5.1), <a href="../ggplot2/index.html">ggplot2</a> (&ge; 2.2.1), <a href="../survival/index.html">survival</a> (&ge; 2.41-3), <a href="../reshape2/index.html">reshape2</a> (&ge; 1.4.3), stats (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-08-02</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Barry Eggleston [cre, aut],
+  Doug Wilson [aut],
+  Becky McNeil [aut],
+  Joseph Ibrahim [aut],
+  Diane Catellier [fnd, rth, aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Barry Eggleston  &#x3c;&#x62;&#x65;&#x67;&#x67;&#x6c;&#x65;&#x73;&#x74;&#x6f;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x72;&#x74;&#x69;&#x2e;&#x6f;&#x72;&#x67;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="http://github.com/begglest/BayesCTDesign/issues">http://github.com/begglest/BayesCTDesign/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://github.com/begglest/BayesCTDesign">http://github.com/begglest/BayesCTDesign</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_BayesCTDesign.html">BayesCTDesign results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package BayesCTDesign downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="BayesCTDesign.pdf"> BayesCTDesign.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/BayesCTDesign_0.6.0.tar.gz"> BayesCTDesign_0.6.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/BayesCTDesign_0.6.0.zip">BayesCTDesign_0.6.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/BayesCTDesign_0.6.0.zip">BayesCTDesign_0.6.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/BayesCTDesign_0.6.0.zip">BayesCTDesign_0.6.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/BayesCTDesign_0.6.0.tgz">BayesCTDesign_0.6.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/BayesCTDesign_0.6.0.tgz">BayesCTDesign_0.6.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/BayesCTDesign"> BayesCTDesign archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=BayesCTDesign"><samp>https://CRAN.R-project.org/package=BayesCTDesign</samp></a>
+to link to this page.</p>
+</body>
+</html>

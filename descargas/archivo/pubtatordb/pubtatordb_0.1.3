@@ -1,0 +1,24 @@
+Package: pubtatordb
+Type: Package
+Title: Create and Query a Local 'PubTator' Database
+Version: 0.1.3
+Authors@R: c(
+    person("Zachary", "Colburn", email = "zcolburn@gmail.com", role = c("aut", "cre")),
+    person("Madigan Army Medical Center - Department of Clinical Investigation", email = "usarmy.jblm.medcom-mamc.mbx.dci@mail.mil", role = c("cph", "fnd"))
+  )
+Maintainer: Zachary Colburn <zcolburn@gmail.com>
+Description: 'PubTator' <https://www.ncbi.nlm.nih.gov/CBBresearch/Lu/Demo/PubTator/> is a National Center for Biotechnology Information (NCBI) tool that enhances the annotation of articles on PubMed <https://www.ncbi.nlm.nih.gov/pubmed/>. It makes it possible to rapidly identify potential relationships between genes or proteins using text mining techniques. In contrast, manually searching for and reading the annotated articles would be very time consuming. 'PubTator' offers both an online interface and a RESTful API, however, neither of these approaches are well suited for frequent, high-throughput analyses. The package 'pubtatordb' provides a set of functions that make it easy for the average R user to download 'PubTator' annotations, create, and then query a local version of the database.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests: covr, testthat, knitr, rmarkdown
+Imports: DBI, R.utils, RSQLite, assertthat, dplyr, readr
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-03-13 15:35:56 UTC; mamcdci
+Author: Zachary Colburn [aut, cre],
+  Madigan Army Medical Center - Department of Clinical Investigation
+    [cph, fnd]
+Repository: CRAN
+Date/Publication: 2019-03-13 16:00:03 UTC

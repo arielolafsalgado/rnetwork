@@ -1,0 +1,67 @@
+Package: nasapower
+Type: Package
+Title: NASA POWER API Client
+Version: 3.0.0
+Authors@R: 
+    c(person(given = "Adam H.",
+            family = "Sparks",
+            role = c("aut", "cre"),
+            email = "adamhsparks@gmail.com",
+            comment = c(ORCID = "0000-0002-0061-8359")),
+     person(given = "Scott",
+            family = "Chamberlain",
+            role = "rev", 
+            email = "myrmecocystus@gmail.com",
+            comment = c(ORCID = "0000-0003-1444-9135",
+                        "Scott Chamberlain reviewed nasapower for rOpenSci, see
+                        https://github.com/ropensci/software-review/issues/155")
+                        ),
+     person(given = "Hazel",
+            family = "Kavili",
+            role = "rev",
+            comment = "Hazel Kavili reviewed nasapower for rOpenSci, see
+            https://github.com/ropensci/software-review/issues/155"),
+     person(given = "Alison",
+            family = "Boyer",
+            role = "rev",
+            comment = "Alison Boyer reviewed nasapower for rOpenSci, see
+            https://github.com/ropensci/software-review/issues/155"))
+URL: https://docs.ropensci.org/nasapower/
+BugReports: https://github.com/ropensci/nasapower/issues
+Description: Client for 'NASA' 'POWER' global meteorology, surface solar
+    energy and climatology data 'API'.  'POWER' (Prediction Of Worldwide Energy
+    Resource) data are freely available global meteorology and surface solar
+    energy climatology data for download with a resolution of 1/2 by 1/2 arc
+    degree longitude and latitude and are funded through the 'NASA' Earth
+    Science Directorate Applied Science Program.  For more on the data
+    themselves, a web-based data viewer and web access, please see
+    <https://power.larc.nasa.gov/>.
+Depends: R (>= 3.5.0)
+License: MIT + file LICENSE
+Imports: crul, curl, lubridate, jsonlite, readr, tibble
+RoxygenNote: 7.1.1
+Encoding: UTF-8
+Language: en-AU
+NeedsCompilation: no
+Repository: CRAN
+LazyData: TRUE
+ByteCompile: TRUE
+Suggests: apsimx, ggplot2, knitr, purrr, terra, rmarkdown,
+        rnaturalearth, sf, testthat
+VignetteBuilder: knitr
+X-schema.org-applicationCategory: Tools
+X-schema.org-keywords: NASA, meteorological-data, weather, global,
+        weather, weather-data, meteorology, NASA-POWER,
+        agroclimatology, earth-science, data-access, climate-data
+X-schema.org-isPartOf: https://ropensci.org
+Packaged: 2020-10-10 04:41:00 UTC; adamsparks
+Author: Adam H. Sparks [aut, cre] (<https://orcid.org/0000-0002-0061-8359>),
+  Scott Chamberlain [rev] (<https://orcid.org/0000-0003-1444-9135>, Scott
+    Chamberlain reviewed nasapower for rOpenSci, see
+    https://github.com/ropensci/software-review/issues/155),
+  Hazel Kavili [rev] (Hazel Kavili reviewed nasapower for rOpenSci, see
+    https://github.com/ropensci/software-review/issues/155),
+  Alison Boyer [rev] (Alison Boyer reviewed nasapower for rOpenSci, see
+    https://github.com/ropensci/software-review/issues/155)
+Maintainer: Adam H. Sparks <adamhsparks@gmail.com>
+Date/Publication: 2020-10-10 05:00:06 UTC

@@ -1,0 +1,26 @@
+Package: labelVector
+Title: Label Attributes for Atomic Vectors
+Version: 0.0.1
+Authors@R: person("Benjamin", "Nutter", , "benjamin.nutter@gmail.com", role = c("aut", "cre"))
+Description: Labels are a common construct in statistical software providing a 
+  human readable description of a variable. While variable names are succinct,
+  quick to type, and follow a language's naming conventions, labels may 
+  be more illustrative and may use plain text and spaces. R does not provide
+  native support for labels. Some packages, however, have made this feature
+  available.  Most notably, the 'Hmisc' package provides labelling methods
+  for a number of different object. Due to design decisions, these methods
+  are not all exported, and so are unavailable for use in package development.
+  The 'labelVector' package supports labels for atomic vectors in a light-weight
+  design that is suitable for use in other packages.
+Depends: R (>= 2.0.0)
+Suggests: Hmisc, knitr, testthat
+License: MIT + file LICENSE
+LazyData: true
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-12-21 14:50:54 UTC; benjamin
+Author: Benjamin Nutter [aut, cre]
+Maintainer: Benjamin Nutter <benjamin.nutter@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-12-21 15:23:41 UTC

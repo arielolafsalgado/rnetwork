@@ -1,0 +1,37 @@
+Package: kamila
+Type: Package
+Version: 0.1.1.3
+Date: 2019-03-14
+Authors@R: c(
+    person("Alexander", "Foss", email = "alexanderhfoss@gmail.com",
+           role = c("aut", "cre")),
+    person("Marianthi", "Markatou", role = c("aut"))
+    )
+Author: Alexander Foss [aut, cre],
+  Marianthi Markatou [aut]
+Maintainer: Alexander Foss <alexanderhfoss@gmail.com>
+Title: Methods for Clustering Mixed-Type Data
+Description: Implements methods for clustering mixed-type data,
+  specifically combinations of continuous and nominal data. Special attention
+  is paid to the often-overlooked problem of equitably balancing the
+  contribution of the continuous and categorical variables. This package
+  implements KAMILA clustering, a novel method for clustering
+  mixed-type data in the spirit of k-means clustering. It does not require
+  dummy coding of variables, and is efficient enough to scale to rather large
+  data sets. Also implemented is Modha-Spangler clustering, which uses a
+  brute-force strategy to maximize the cluster separation simultaneously in the
+  continuous and categorical variables. For more information, see Foss, Markatou,
+  Ray, & Heching (2016) <doi:10.1007/s10994-016-5575-7> and Foss & Markatou
+  (2018) <doi:10.18637/jss.v083.i13>.
+Depends: R (>= 3.0.0)
+License: GPL-3 | file LICENSE
+URL: https://github.com/ahfoss/kamila
+BugReports: https://github.com/ahfoss/kamila/issues
+Imports: stats, abind, KernSmooth, gtools, Rcpp, plyr
+LinkingTo: Rcpp
+Suggests: testthat, clustMD, ggplot2, Hmisc
+RoxygenNote: 6.1.0
+NeedsCompilation: yes
+Packaged: 2019-03-16 03:50:52 UTC; afoss
+Repository: CRAN
+Date/Publication: 2019-03-16 19:50:03 UTC

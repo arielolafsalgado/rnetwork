@@ -1,0 +1,22 @@
+Package: GRANBase
+Type: Package
+Title: Creating Continuously Integrated Package Repositories from
+        Manifests
+Version: 1.0.12
+Author: Gabriel Becker[aut,cre], Cory Barr [cre,ctb]
+Maintainer: Gabriel Becker <becker.gabriel@gene.com>
+Copyright: Genentech Inc
+Description: Repository based tools for department and analysis level
+    reproducibility. 'GRANBase' allows creation of custom branched,
+    continuous integration-ready R repositories, including incremental testing of only packages which have changed versions since the last repository build.
+License: Artistic-2.0
+Imports: tools, XML, hwriter
+Depends: switchr (>= 0.9.6), methods
+Suggests: parallel, BiocStyle
+SystemRequirements: svn, git
+URL: https://github.com/gmbecker/gRAN
+BugReports: https://github.com/gmbecker/gRAN/issues
+NeedsCompilation: no
+Packaged: 2015-07-01 18:40:19 UTC; beckerg4
+Repository: CRAN
+Date/Publication: 2015-07-01 22:50:02

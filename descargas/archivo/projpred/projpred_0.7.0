@@ -1,0 +1,29 @@
+Package: projpred
+Title: Projection Predictive Feature Selection
+Version: 0.7.0
+Author: 
+    Markus Paasiniemi [aut],
+    Juho Piironen [aut],
+    Jonah Gabry [ctb],
+    Aki Vehtari [ctb]
+Maintainer: Juho Piironen <juho.piironen@aalto.fi>
+Description: 
+    Performs projection predictive feature selection for generalized linear models 
+    (see, e.g., Piironen and Vehtari, 2017, <doi:10.1007/s11222-016-9649-y>).
+    The package is compatible with 'rstanarm' package, but other reference models 
+    can also be used. See the package vignette for more information and examples. 
+Depends: R (>= 3.1.2)
+Imports: rstan, rstanarm (>= 2.17.2), loo, ggplot2, Rcpp, utils
+LinkingTo: Rcpp, RcppArmadillo
+License: GPL-3
+Encoding: UTF-8
+LazyData: TRUE
+RoxygenNote: 6.0.1
+Suggests: testthat, knitr, rmarkdown, glmnet, bayesplot
+VignetteBuilder: knitr
+URL: https://github.com/stan-dev/projpred
+BugReports: https://github.com/stan-dev/projpred/issues
+NeedsCompilation: yes
+Packaged: 2018-02-18 19:26:42 UTC; juho
+Repository: CRAN
+Date/Publication: 2018-02-19 10:10:41 UTC

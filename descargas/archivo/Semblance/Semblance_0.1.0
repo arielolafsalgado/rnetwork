@@ -1,0 +1,18 @@
+Package: Semblance
+Type: Package
+Title: Pair-Wise Semblance Using a Rank-Based Kernel
+Version: 0.1.0
+Author: Divyansh Agarwal <divyansh@upenn.edu>
+        Nancy R. Zhang <nzh@wharton.upenn.edu>
+Maintainer: Divyansh Agarwal <divyansh@upenn.edu>
+Description: We present a rank-based Mercer kernel to compute a pair-wise similarity metric, corresponding to informative representation of data. We tailor the development of a kernel to encode our prior knowledge about the data distribution over a probability space. The philosophical concept behind our construction is that objects whose feature values fall on the extreme of that feature’s probability mass distribution are more similar to each other, than objects whose feature values lie closer to the mean. Semblance emphasizes features whose values lie far away from the mean of their probability distribution. The kernel relies on properties empirically determined from the data and does not assume an underlying distribution. The use of feature ranks on a probability space ensures that Semblance is computational efficacious, robust to outliers, and statistically stable, thus making it widely applicable algorithm for pattern analysis.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports: fields (>= 9.6)
+Suggests: kernlab
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-05-30 11:29:59 UTC; divyanshagarwal
+Repository: CRAN
+Date/Publication: 2018-05-30 12:35:49 UTC

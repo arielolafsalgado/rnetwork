@@ -1,0 +1,29 @@
+Package: sparsio
+Type: Package
+Title: I/O Operations with Sparse Matrices
+Version: 1.0.0
+Date: 2017-06-28
+Authors@R: c(person("Dmitriy", "Selivanov", role = c("aut", "cre"),
+    email = "selivanov.dmitriy@gmail.com"), 
+    person("Felix", "Riedel", role = c("aut"),
+    email = "felix.riedel@gmail.com"))
+Maintainer: Dmitriy Selivanov <selivanov.dmitriy@gmail.com>
+Encoding: UTF-8
+Description: Fast 'SVMlight' reader and writer. 
+    'SVMlight' is most commonly used format for storing 
+    sparse matrices (possibly with some target variable) on disk.
+    For additional information about 'SVMlight' format see <http://svmlight.joachims.org/>.
+License: GPL (>= 2) | file LICENSE
+Depends: R (>= 3.1.0), methods
+Imports: Rcpp (>= 0.12.0), Matrix (>= 1.1)
+LinkingTo: Rcpp
+Suggests: testthat
+URL: https://github.com/dselivanov/sparsio
+BugReports: https://github.com/dselivanov/sparsio/issues
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2017-06-28 07:46:16 UTC; dselivanov
+Author: Dmitriy Selivanov [aut, cre],
+  Felix Riedel [aut]
+Repository: CRAN
+Date/Publication: 2017-06-28 15:59:40 UTC

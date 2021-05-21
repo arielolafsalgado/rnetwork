@@ -1,0 +1,52 @@
+Package: ssdtools
+Version: 0.0.3
+Title: Species Sensitivity Distributions
+Description: Species sensitivity distributions are cumulative probability 
+  distributions which are fitted to toxicity concentrations for multiple species.
+  The ssdtools package uses Maximum Likelihood to fit
+  log-normal, log-logistic, log-Gumbel, Gompertz, gamma or Weibull distributions.
+  Multiple distributions can be averaged using Information Criteria.
+  Confidence intervals can be calculated for the fitted cumulative distribution 
+  function or specific hazard concentrations (percentiles).
+  Confidence intervals are currently produced by bootstrapping.
+Authors@R: c(
+  person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c("aut", "cre", "ctr"), 
+    comment = c(ORCID = "0000-0002-7683-4592")),
+  person("Carl", "Schwarz", role = c("aut", "ctr")),
+  person("Ali", "Azizishirazi", email = "Ali.Azizishirazi@gov.bc.ca", role = "ctb"),
+  person("Angeline", "Tillmanns", role = "ctb"),
+  person("Stephanie", "Hazlitt", role = "ctb"),
+  person("Kathleen", "McTavish", role = "ctb"),
+  person("Emilie", "Doussantousse", role = "ctb"),
+  person("Heather", "Thompson", role = "ctb"),
+  person("Andy", "Teucher", role = "ctb"),
+  person("Province of British Columbia", role = "cph")
+  )
+URL: https://github.com/bcgov/ssdtools
+BugReports: https://github.com/bcgov/ssdtools/issues
+License: Apache License (== 2.0) | file LICENSE
+Depends: R (>= 3.4.0)
+Imports: checkr, fitdistrplus, FAdist, ggplot2, graphics, grid, scales,
+        stats, VGAM
+Suggests: covr, knitr, rmarkdown, testthat, tibble, tidyr, readr,
+        purrr, dplyr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2018-11-25 18:30:13 UTC; joe
+Author: Joe Thorley [aut, cre, ctr] (<https://orcid.org/0000-0002-7683-4592>),
+  Carl Schwarz [aut, ctr],
+  Ali Azizishirazi [ctb],
+  Angeline Tillmanns [ctb],
+  Stephanie Hazlitt [ctb],
+  Kathleen McTavish [ctb],
+  Emilie Doussantousse [ctb],
+  Heather Thompson [ctb],
+  Andy Teucher [ctb],
+  Province of British Columbia [cph]
+Maintainer: Joe Thorley <joe@poissonconsulting.ca>
+Repository: CRAN
+Date/Publication: 2018-11-25 19:10:03 UTC

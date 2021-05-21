@@ -1,0 +1,26 @@
+Package: ubiquity
+Type: Package
+Title: PKPD, PBPK, and Systems Pharmacology Modeling Tools
+Version: 1.0.1
+Authors@R: c(person("John", "Harrold", role = c("aut", "cre"),
+                     email = "john.m.harrold@gmail.com"))
+Author: John Harrold [aut, cre]
+Maintainer: John Harrold <john.m.harrold@gmail.com>
+Description: Complete work flow for the analysis of pharmacokinetic pharmacodynamic (PKPD), physiologically-based pharmacokinetic (PBPK) and systems pharmacology models including: creation of ordinary differential equation-based models, pooled parameter estimation, individual/population based simulations, rule-based simulations for clinical trial design and modeling assays, deployment with a customizable 'Shiny' app, and non-compartmental analysis. System-specific analysis templates can be generated and each element includes integrated reporting with 'PowerPoint' and 'Word'. 
+URL: https://r.ubiquity.tools/
+SystemRequirements: Perl
+BugReports: https://github.com/john-harrold/ubiquity/issues
+License: BSD_2_clause + file LICENSE
+Encoding: UTF-8
+LazyData: TRUE
+Imports: deSolve, digest, doParallel, flextable, foreach, gridExtra,
+        grid, gdata, ggplot2, knitr, MASS, officer (>= 0.3.5), optimx,
+        PKNCA, pso, rmarkdown, rhandsontable, rstudioapi, stats,
+        stringr, shiny,
+Suggests: GA, GGally, gridGraphics, webshot, testthat, ggrepel
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2020-01-21 01:50:56 UTC; jmh
+Repository: CRAN
+Date/Publication: 2020-01-21 07:50:02 UTC

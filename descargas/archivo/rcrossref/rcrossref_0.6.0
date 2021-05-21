@@ -1,0 +1,32 @@
+Package: rcrossref
+Title: Client for Various 'CrossRef' APIs
+Description: Client for various 'CrossRef' APIs, including 'metadata' search
+    with their old and newer search APIs, get 'citations' in various formats
+    (including 'bibtex', 'citeproc-json', 'rdf-xml', etc.), convert 'DOIs'
+    to 'PMIDs', and 'vice versa', get citations for 'DOIs', and get links to
+    full text of articles when available.
+Version: 0.6.0
+License: MIT + file LICENSE
+Authors@R: c(
+    person("Scott", "Chamberlain", role = c("aut", "cre"), email = "myrmecocystus@gmail.com"),
+    person("Carl", "Boettiger", role = "aut"),
+    person("Ted", "Hart", role = "aut"),
+    person("Karthik", "Ram", role = "aut")
+    )
+URL: https://github.com/ropensci/rcrossref
+BugReports: https://github.com/ropensci/rcrossref/issues
+VignetteBuilder: knitr
+Imports: methods, utils, jsonlite (>= 1.0), httr (>= 1.2.0), xml2 (>=
+        1.0.0), plyr, bibtex, dplyr (>= 0.5.0), R6, shiny, miniUI,
+        stringr, rappdirs
+Suggests: roxygen2 (>= 5.0.1), testthat, knitr, covr
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-11-08 18:52:43 UTC; sacmac
+Author: Scott Chamberlain [aut, cre],
+  Carl Boettiger [aut],
+  Ted Hart [aut],
+  Karthik Ram [aut]
+Maintainer: Scott Chamberlain <myrmecocystus@gmail.com>
+Repository: CRAN
+Date/Publication: 2016-11-09 18:28:53

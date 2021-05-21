@@ -1,0 +1,49 @@
+Package: riskRegression
+Type: Package
+Title: Risk Regression Models and Prediction Scores for Survival
+        Analysis with Competing Risks
+Version: 2019.11.03
+Authors@R: c(person("Thomas Alexander", "Gerds", role = c("aut", "cre"),
+                    email = "tag@biostat.ku.dk"),
+             person("Paul", "Blanche", role = "ctb"),
+             person("Rikke", "Mortensen", role = "ctb"),
+             person("Nikolaj", "Tollenaar", role = "ctb"),
+             person("Ulla Brasch", "Mogensen", role = "ctb"),
+             person("Brice", "Ozenne", role = "aut", email = "broz@sund.ku.dk", comment = c(ORCID = "0000-0001-9694-2956")))
+Depends: R (>= 3.5.0),
+Imports: data.table (>= 1.12.2), ggplot2 (>= 3.1.0), prodlim (>=
+        2018.4.18), doParallel, stats, graphics, survival (>= 2.44.1),
+        lava (>= 1.6.5), cmprsk, plotrix, timereg (>= 1.9.3), foreach,
+        ranger, parallel, Rcpp, lattice, rms (>= 5.1.3)
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: boot, Publish, smcfcs, CoxBoost, ipw, SuperLearner, gbm,
+        glmnetUtils, flexsurv, mets, mstate, party, pec, penalized,
+        pROC, randomForest, randomForestSRC, rbenchmark, rpart,
+        testthat, R.rsp
+Maintainer: Thomas Alexander Gerds <tag@biostat.ku.dk>
+Description: Implementation of the following methods for event history analysis.
+    Risk regression models for survival endpoints also in the presence of competing
+    risks are fitted using binomial regression based on a time sequence of binary
+    event status variables. A formula interface for the Fine-Gray regression model
+    and an interface for the combination of cause-specific Cox regression models.
+    A toolbox for assessing and comparing performance of risk predictions (risk
+    markers and risk prediction models). Prediction performance is measured by the
+    Brier score and the area under the ROC curve for binary possibly time-dependent
+    outcome. Inverse probability of censoring weighting and pseudo values are used
+    to deal with right censored data. Lists of risk markers and lists of risk models
+    are assessed simultaneously. Cross-validation repeatedly splits the data, trains
+    the risk prediction models on one part of each split and then summarizes and
+    compares the performance across splits.
+License: GPL (>= 2)
+RoxygenNote: 6.1.1
+VignetteBuilder: R.rsp
+NeedsCompilation: yes
+Packaged: 2019-11-04 11:23:59 UTC; tag
+Author: Thomas Alexander Gerds [aut, cre],
+  Paul Blanche [ctb],
+  Rikke Mortensen [ctb],
+  Nikolaj Tollenaar [ctb],
+  Ulla Brasch Mogensen [ctb],
+  Brice Ozenne [aut] (<https://orcid.org/0000-0001-9694-2956>)
+Repository: CRAN
+Date/Publication: 2019-11-04 17:20:02 UTC

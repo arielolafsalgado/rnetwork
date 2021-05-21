@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package dbarts</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Discrete Bayesian Additive Regression Trees Sampler [R package dbarts version 0.9-18]" />
+<meta name="citation_author1" content="Vincent Dorie" />
+<meta name="citation_author2" content="Hugh Chipman" />
+<meta name="citation_author3" content="Robert McCulloch" />
+<meta name="citation_publication_date" content="2020-06-12" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=dbarts" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=dbarts" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="dbarts: Discrete Bayesian Additive Regression Trees Sampler" />
+<meta name="og:description" content="Fits Bayesian additive regression trees (BART; Chipman, George, and McCulloch (2010) &amp;lt;&lt;a href=&quot;https://doi.org/10.1214%2F09-AOAS285&quot;&gt;doi:10.1214/09-AOAS285&lt;/a&gt;&amp;gt;) while allowing the updating of predictors or response so that BART can be incorporated as a conditional model in a Gibbs/Metropolis-Hastings sampler. Also serves as a drop-in replacement for package 'BayesTree'." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=dbarts" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>dbarts: Discrete Bayesian Additive Regression Trees Sampler</h2>
+<p>Fits Bayesian additive regression trees (BART; Chipman, George, and McCulloch (2010) &lt;<a href="https://doi.org/10.1214%2F09-AOAS285">doi:10.1214/09-AOAS285</a>&gt;) while allowing the updating of predictors or response so that BART can be incorporated as a conditional model in a Gibbs/Metropolis-Hastings sampler. Also serves as a drop-in replacement for package 'BayesTree'.</p>
+<table summary="Package dbarts summary">
+<tr>
+<td>Version:</td>
+<td>0.9-18</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.1-0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>stats, methods, graphics, parallel</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a> (&ge; 0.9-0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-12</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Vincent Dorie <a href="https://orcid.org/0000-0002-9576-3064"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Hugh Chipman [aut],
+  Robert McCulloch [aut],
+  Armon Dadgar [ctb] (adaptive radix tree),
+  R Core Team [ctb] (basis of RNG),
+  Guido U Draheim [ctb] (ax_check_compile_flag.m4),
+  Maarten Bosmans [ctb] (ax_check_compile_flag.m4),
+  Christophe Tournayre [ctb] (ax_compiler_ext.m4, ax_ext.m4),
+  Michael Petch [ctb] (ax_compiler_ext.m4, ax_ext.m4,
+    ax_gcc_x86_avx_xgetbv.m4, ax_gcc_x86_cpuid.m4),
+  Rafael de Lucena Valle [ctb] (ax_compiler_ext.m4, ax_ext.m4),
+  Steven G. Johnson <a href="https://orcid.org/0000-0001-7327-4967"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb] (ax_compiler_vendor.m4, ax_gcc_x86_cpuid.m4, ax_pthread.m4),
+  Matteo Frigo [ctb] (ax_compiler_vendor.m4, ax_gcc_x86_cpuid.m4),
+  John Zaitseff [ctb] (ax_compiler_vendor.m4),
+  Todd Veldhuizen [ctb] (ax_cxx_namespace_std.m4),
+  Luc Maisonobe [ctb] (ax_cxx_namespace_std.m4),
+  Scott Pakin <a href="https://orcid.org/0000-0002-5220-1985"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb]
+    (ax_func_posix_memalign.m4),
+  Daniel Richard G. [ctb] (ax_pthread.m4)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Vincent Dorie  &#x3c;&#x76;&#x64;&#x6f;&#x72;&#x69;&#x65;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/vdorie/dbarts/issues">https://github.com/vdorie/dbarts/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/vdorie/dbarts">https://github.com/vdorie/dbarts</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">dbarts citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_dbarts.html">dbarts results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package dbarts downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="dbarts.pdf"> dbarts.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/dbarts_0.9-18.tar.gz"> dbarts_0.9-18.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/dbarts_0.9-18.zip">dbarts_0.9-18.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/dbarts_0.9-18.zip">dbarts_0.9-18.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/dbarts_0.9-18.zip">dbarts_0.9-18.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/dbarts_0.9-18.tgz">dbarts_0.9-18.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/dbarts_0.9-18.tgz">dbarts_0.9-18.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/dbarts"> dbarts archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package dbarts reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../bartCause/index.html">bartCause</a>, <a href="../CIMTx/index.html">CIMTx</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../tmle/index.html">tmle</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=dbarts"><samp>https://CRAN.R-project.org/package=dbarts</samp></a>
+to link to this page.</p>
+</body>
+</html>

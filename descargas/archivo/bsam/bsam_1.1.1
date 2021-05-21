@@ -1,0 +1,37 @@
+Package: bsam
+Type: Package
+Title: Bayesian State-Space Models for Animal Movement
+Version: 1.1.1
+Authors@R: c(
+    person("Ian", "Jonsen", email = "ian.jonsen@mq.edu.au", 
+    role = c("aut", "cre")),
+    person("Sophie", "Bestley", email = "sophie.bestley@aad.gov.au",
+    role = "ctb"),
+    person("Simon", "Wotherspoon",  email = "simon.wotherspoon@utas.edu.au",
+    role = "ctb"),
+    person("Michael", "Sumner", email = "mdsumner@gmail.com", role = "ctb"))
+Depends: R (>= 3.3.0), rjags (>= 4-6)
+Imports: coda (>= 0.18-1), dplyr (>= 0.5.0), ggplot2 (>= 2.1.0),
+        gridExtra (>= 2.2.1), msm (>= 1.6.1), mvtnorm (>= 1.0-5),
+        rworldxtra(>= 1.01), sp (>= 1.2-3), tibble(>= 1.1)
+SystemRequirements: JAGS (>= 4.2.0)
+Description: Tools to fit Bayesian state-space models to animal tracking data. Models are provided for location 
+    filtering, location filtering and behavioural state estimation, and their hierarchical versions. 
+    The models are primarily intended for fitting to ARGOS satellite tracking data but options exist to fit 
+    to other tracking data types. For Global Positioning System data, consider the 'moveHMM' package. 
+    Simplified Markov Chain Monte Carlo convergence diagnostic plotting is provided but users are encouraged 
+    to explore tools available in packages such as 'coda' and 'boa'.
+License: GPL-2
+URL: https://github.com/ianjonsen/bsam
+BugReports: https://github.com/ianjonsen/bsam/issues
+LazyData: yes
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-11-17 09:21:42 UTC; jonsen
+Author: Ian Jonsen [aut, cre],
+  Sophie Bestley [ctb],
+  Simon Wotherspoon [ctb],
+  Michael Sumner [ctb]
+Maintainer: Ian Jonsen <ian.jonsen@mq.edu.au>
+Repository: CRAN
+Date/Publication: 2016-11-17 14:34:35

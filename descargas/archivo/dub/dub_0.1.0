@@ -1,0 +1,25 @@
+Package: dub
+Type: Package
+Title: Unpacking Assignment for Lists via Pattern Matching
+Version: 0.1.0
+Authors@R: person("Eugene", "Ha", , "eha@posteo.de", c("aut", "cre"))
+Description: Provides an operator for assigning nested components of a list to
+  names via a concise, Haskell-like pattern matching syntax. This is especially
+  convenient for assigning individual names to the multiple values that a
+  function may return in the form of a list, and for extracting deeply nested
+  list components.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+Suggests: covr, testthat
+URL: https://github.com/egnha/dub
+BugReports: https://github.com/egnha/dub/issues
+Collate: 'util.R' 'assert.R' 'tree.R' 'names.R' 'assign.R'
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-02-16 13:40:32 UTC; eha
+Author: Eugene Ha [aut, cre]
+Maintainer: Eugene Ha <eha@posteo.de>
+Repository: CRAN
+Date/Publication: 2018-02-16 19:24:08 UTC

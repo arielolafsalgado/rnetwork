@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package PlackettLuce</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Plackett-Luce Models for Rankings [R package PlackettLuce version 0.3.1]" />
+<meta name="citation_author1" content="Heather Turner" />
+<meta name="citation_author2" content="Ioannis Kosmidis" />
+<meta name="citation_author3" content="David Firth" />
+<meta name="citation_publication_date" content="2020-10-13" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=PlackettLuce" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=PlackettLuce" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="PlackettLuce: Plackett-Luce Models for Rankings" />
+<meta name="og:description" content="Functions to prepare rankings data and fit the Plackett-Luce model jointly attributed to Plackett (1975) &amp;lt;&lt;a href=&quot;https://doi.org/10.2307%2F2346567&quot;&gt;doi:10.2307/2346567&lt;/a&gt;&amp;gt; and Luce (1959, ISBN:0486441369). The standard Plackett-Luce model is generalized to accommodate ties of any order in the ranking. Partial rankings, in which only a subset of items are ranked in each ranking, are also accommodated in the implementation. Disconnected/weakly connected networks implied by the rankings may be handled by adding pseudo-rankings with a hypothetical item. Optionally, a multivariate normal prior may be set on the log-worth parameters and ranker reliabilities may be incorporated as proposed by Raman and Joachims (2014) &amp;lt;&lt;a href=&quot;https://doi.org/10.1145%2F2623330.2623654&quot;&gt;doi:10.1145/2623330.2623654&lt;/a&gt;&amp;gt;. Maximum a posteriori estimation is used when priors are set. Methods are provided to estimate standard errors or quasi-standard errors for inference as well as to fit Plackett-Luce trees. See the package website or vignette for further details." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=PlackettLuce" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>PlackettLuce: Plackett-Luce Models for Rankings</h2>
+<p>Functions to prepare rankings data and fit the Plackett-Luce model
+    jointly attributed to Plackett (1975) &lt;<a href="https://doi.org/10.2307%2F2346567">doi:10.2307/2346567</a>&gt; and Luce
+    (1959, ISBN:0486441369). The standard Plackett-Luce model is generalized
+    to accommodate ties of any order in the ranking. Partial rankings, in which
+    only a subset of items are ranked in each ranking, are also accommodated in
+    the implementation. Disconnected/weakly connected networks implied by the
+    rankings may be handled by adding pseudo-rankings with a hypothetical item.
+    Optionally, a multivariate normal prior may be set on the log-worth
+    parameters and ranker reliabilities may be incorporated as proposed by
+    Raman and Joachims (2014) &lt;<a href="https://doi.org/10.1145%2F2623330.2623654">doi:10.1145/2623330.2623654</a>&gt;. Maximum a
+    posteriori estimation is used when priors are set. Methods are provided to
+    estimate standard errors or quasi-standard errors for inference as well as
+    to fit Plackett-Luce trees. See the package website or vignette for further
+    details.</p>
+<table summary="Package PlackettLuce summary">
+<tr>
+<td>Version:</td>
+<td>0.3.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Matrix/index.html">Matrix</a>, <a href="../igraph/index.html">igraph</a>, methods, <a href="../partykit/index.html">partykit</a>, <a href="../psychotools/index.html">psychotools</a>, <a href="../psychotree/index.html">psychotree</a>, <a href="../RSpectra/index.html">RSpectra</a>, <a href="../qvcalc/index.html">qvcalc</a>, <a href="../sandwich/index.html">sandwich</a>, stats</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="http://www.bioconductor.org/packages/release/bioc/html/BiocStyle.html"><span class="BioC">BiocStyle</span></a>, <a href="../BayesMallows/index.html">BayesMallows</a>, <a href="../BradleyTerry2/index.html">BradleyTerry2</a>, <a href="../PLMIX/index.html">PLMIX</a>, <a href="../ROlogit/index.html">ROlogit</a>, <a href="../StatRank/index.html">StatRank</a>, <a href="../bookdown/index.html">bookdown</a>, <a href="../covr/index.html">covr</a>, <a href="../hyper2/index.html">hyper2</a>, <a href="../kableExtra/index.html">kableExtra</a>, <a href="../knitr/index.html">knitr</a>, <a href="../lbfgs/index.html">lbfgs</a>, <a href="../gnm/index.html">gnm</a>, <a href="../pmr/index.html">pmr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-13</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Heather Turner <a href="https://orcid.org/0000-0002-1256-3375"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Ioannis Kosmidis <a href="https://orcid.org/0000-0003-1556-0302"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  David Firth <a href="https://orcid.org/0000-0003-0302-2312"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Jacob van Etten <a href="https://orcid.org/0000-0001-7554-2558"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Heather Turner  &#x3c;&#x68;&#x74;&#x20;&#x61;&#x74;&#x20;&#x68;&#x65;&#x61;&#x74;&#x68;&#x65;&#x72;&#x74;&#x75;&#x72;&#x6e;&#x65;&#x72;&#x2e;&#x6e;&#x65;&#x74;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/hturner/PlackettLuce/issues">https://github.com/hturner/PlackettLuce/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://hturner.github.io/PlackettLuce/">https://hturner.github.io/PlackettLuce/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-GB</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_PlackettLuce.html">PlackettLuce results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package PlackettLuce downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="PlackettLuce.pdf"> PlackettLuce.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Overview.html">Introduction to PlackettLuce</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/PlackettLuce_0.3.1.tar.gz"> PlackettLuce_0.3.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/PlackettLuce_0.3.1.zip">PlackettLuce_0.3.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/PlackettLuce_0.3.1.zip">PlackettLuce_0.3.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/PlackettLuce_0.3.1.zip">PlackettLuce_0.3.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/PlackettLuce_0.3.1.tgz">PlackettLuce_0.3.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/PlackettLuce_0.3.1.tgz">PlackettLuce_0.3.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/PlackettLuce"> PlackettLuce archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package PlackettLuce reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../ClimMobTools/index.html">ClimMobTools</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../PLMIX/index.html">PLMIX</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=PlackettLuce"><samp>https://CRAN.R-project.org/package=PlackettLuce</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package paleotree</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=paleotree" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="paleotree: Paleontological and Phylogenetic Analyses of Evolution" />
+<meta name="og:description" content="Provides tools for transforming, a posteriori time-scaling, and modifying phylogenies containing extinct (i.e. fossil) lineages. In particular, most users are interested in the functions timePaleoPhy, bin_timePaleoPhy, cal3TimePaleoPhy and bin_cal3TimePaleoPhy, which date cladograms of fossil taxa using stratigraphic data. This package also contains a large number of likelihood functions for estimating sampling and diversification rates from different types of data available from the fossil record (e.g. range data, occurrence data, etc). paleotree users can also simulate diversification and sampling in the fossil record using the function simFossilRecord, which is a detailed simulator for branching birth-death-sampling processes composed of discrete taxonomic units arranged in ancestor-descendant relationships. Users can use simFossilRecord to simulate diversification in incompletely sampled fossil records, under various models of morphological differentiation (i.e. the various patterns by which morphotaxa originate from one another), and with time-dependent, longevity-dependent and/or diversity-dependent rates of diversification, extinction and sampling. Additional functions allow users to translate simulated ancestor-descendant data from simFossilRecord into standard time-scaled phylogenies or unscaled cladograms that reflect the relationships among taxon units." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=paleotree" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>paleotree: Paleontological and Phylogenetic Analyses of Evolution</h2>
+<p>Provides tools for transforming, a posteriori time-scaling, and
+    modifying phylogenies containing extinct (i.e. fossil) lineages. In particular,
+    most users are interested in the functions timePaleoPhy, bin_timePaleoPhy,
+    cal3TimePaleoPhy and bin_cal3TimePaleoPhy, which date cladograms of
+    fossil taxa using stratigraphic data. This package also contains a large number
+    of likelihood functions for estimating sampling and diversification rates from
+    different types of data available from the fossil record (e.g. range data,
+    occurrence data, etc). paleotree users can also simulate diversification and
+    sampling in the fossil record using the function simFossilRecord, which is a
+    detailed simulator for branching birth-death-sampling processes composed of
+    discrete taxonomic units arranged in ancestor-descendant relationships. Users
+    can use simFossilRecord to simulate diversification in incompletely sampled
+    fossil records, under various models of morphological differentiation (i.e.
+    the various patterns by which morphotaxa originate from one another), and
+    with time-dependent, longevity-dependent and/or diversity-dependent rates of
+    diversification, extinction and sampling. Additional functions allow users to
+    translate simulated ancestor-descendant data from simFossilRecord into standard
+    time-scaled phylogenies or unscaled cladograms that reflect the relationships
+    among taxon units.</p>
+<table summary="Package paleotree summary">
+<tr>
+<td>Version:</td>
+<td>3.3.25</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0.0), <a href="../ape/index.html">ape</a> (&ge; 4.1)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../phangorn/index.html">phangorn</a> (&ge; 2.0.0), stats, <a href="../phytools/index.html">phytools</a> (&ge; 0.6-00), <a href="../jsonlite/index.html">jsonlite</a>, graphics, grDevices, methods, <a href="../png/index.html">png</a>, <a href="../RCurl/index.html">RCurl</a>, utils</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../spelling/index.html">spelling</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-12-12</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>David W. Bapst, Peter J. Wagner</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>David W. Bapst  &#x3c;&#x64;&#x77;&#x62;&#x61;&#x70;&#x73;&#x74;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/dwbapst/paleotree/issues">https://github.com/dwbapst/paleotree/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="https://creativecommons.org/publicdomain/zero/1.0/legalcode">CC0</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/dwbapst/paleotree">https://github.com/dwbapst/paleotree</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">paleotree citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="ChangeLog">ChangeLog</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Phylogenetics.html">Phylogenetics</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_paleotree.html">paleotree results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package paleotree downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="paleotree.pdf"> paleotree.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/paleotree_3.3.25.tar.gz"> paleotree_3.3.25.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/paleotree_3.3.25.zip">paleotree_3.3.25.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/paleotree_3.3.25.zip">paleotree_3.3.25.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/paleotree_3.3.25.zip">paleotree_3.3.25.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/paleotree_3.3.25.tgz">paleotree_3.3.25.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/paleotree_3.3.25.tgz">paleotree_3.3.25.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/paleotree"> paleotree archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package paleotree reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../OUwie/index.html">OUwie</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../FossilSim/index.html">FossilSim</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=paleotree"><samp>https://CRAN.R-project.org/package=paleotree</samp></a>
+to link to this page.</p>
+</body>
+</html>

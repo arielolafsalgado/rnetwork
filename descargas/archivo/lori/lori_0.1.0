@@ -1,0 +1,21 @@
+Package: lori
+Type: Package
+Title: Low-Rank Interaction Contingency Tables
+Version: 0.1.0
+Authors@R: person("Genevieve", "Robin", email = "genevieve.robin@polytechnique.edu",
+  role = c("aut", "cre"))
+Maintainer: Genevieve Robin <genevieve.robin@polytechnique.edu>
+Description: Estimation and visualization of low-rank interaction contingency tables. Low-rank interaction is a two-fold extension of the log-bilinear model. First, instead of a fixed rank constraint, the log-likelihood is penalized by the nuclear norm of the interaction matrix. Second, available row and column covariates can be incorporated in the model. The main function can be applied to contingency tables with missing values. G. Robin, J. Josse, E. Moulines, S. Sardy (2017) <arXiv:1703.02296>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: psych, svd, NLRoot, FactoMineR, glmnet, pdist, lars, ade4,
+        lattice, logmult
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-02-26 22:37:37 UTC; genevieverobin
+Author: Genevieve Robin [aut, cre]
+Repository: CRAN
+Date/Publication: 2018-02-27 10:31:46 UTC

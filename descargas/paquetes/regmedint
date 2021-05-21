@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package regmedint</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Regression-Based Causal Mediation Analysis with an Interaction Term [R package regmedint version 0.1.0]" />
+<meta name="citation_author" content="Kazuki Yoshida" />
+<meta name="citation_publication_date" content="2020-05-11" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=regmedint" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=regmedint" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="regmedint: Regression-Based Causal Mediation Analysis with an Interaction Term" />
+<meta name="og:description" content="'R' re-implementation of the regression-based causal mediation analysis with a treatment-mediator interaction term, as originally implemented in the 'SAS' macro by Valeri and VanderWeele (2013) &amp;lt;&lt;a href=&quot;https://doi.org/10.1037%2Fa0031034&quot;&gt;doi:10.1037/a0031034&lt;/a&gt;&amp;gt; and Valeri and VanderWeele (2015) &amp;lt;&lt;a href=&quot;https://doi.org/10.1097%2FEDE.0000000000000253&quot;&gt;doi:10.1097/EDE.0000000000000253&lt;/a&gt;&amp;gt;. Linear and logistic models are supported for the mediator model. Linear, logistic, loglinear, Poisson, negative binomial, Cox, and accelerated failure time (exponential and Weibull) models are supported for the outcome model." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=regmedint" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>regmedint: Regression-Based Causal Mediation Analysis with an Interaction
+Term</h2>
+<p>'R' re-implementation of the regression-based causal mediation analysis with a treatment-mediator interaction term, as originally implemented in the 'SAS' macro by Valeri and VanderWeele (2013) &lt;<a href="https://doi.org/10.1037%2Fa0031034">doi:10.1037/a0031034</a>&gt; and Valeri and VanderWeele (2015) &lt;<a href="https://doi.org/10.1097%2FEDE.0000000000000253">doi:10.1097/EDE.0000000000000253</a>&gt;. Linear and logistic models are supported for the mediator model. Linear, logistic, loglinear, Poisson, negative binomial, Cox, and accelerated failure time (exponential and Weibull) models are supported for the outcome model.</p>
+<table summary="Package regmedint summary">
+<tr>
+<td>Version:</td>
+<td>0.1.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Deriv/index.html">Deriv</a>, <a href="../MASS/index.html">MASS</a>, <a href="../Matrix/index.html">Matrix</a>, <a href="../assertthat/index.html">assertthat</a>, <a href="../sandwich/index.html">sandwich</a>, <a href="../survival/index.html">survival</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../boot/index.html">boot</a>, <a href="../furrr/index.html">furrr</a>, <a href="../future/index.html">future</a>, <a href="../geepack/index.html">geepack</a>, <a href="../knitr/index.html">knitr</a>, <a href="../mice/index.html">mice</a>, <a href="../mitools/index.html">mitools</a>, <a href="../modelr/index.html">modelr</a>, <a href="../purrr/index.html">purrr</a>, <a href="../rlang/index.html">rlang</a>, <a href="../stringr/index.html">stringr</a>, <a href="../testthat/index.html">testthat</a>, <a href="../tidyverse/index.html">tidyverse</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-05-11</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Kazuki Yoshida <a href="https://orcid.org/0000-0002-2030-3549"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [cre, aut],
+  Maya Mathur <a href="https://orcid.org/0000-0001-6698-2607"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Kazuki Yoshida  &#x3c;&#x6b;&#x61;&#x7a;&#x75;&#x6b;&#x69;&#x79;&#x6f;&#x73;&#x68;&#x69;&#x64;&#x61;&#x20;&#x61;&#x74;&#x20;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x68;&#x61;&#x72;&#x76;&#x61;&#x72;&#x64;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/kaz-yos/regmedint/issues">https://github.com/kaz-yos/regmedint/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://kaz-yos.github.io/regmedint/">https://kaz-yos.github.io/regmedint/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_regmedint.html">regmedint results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package regmedint downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="regmedint.pdf"> regmedint.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/vig_01_introduction.html">Introduction to user interface functions</a><br/>
+<a href="vignettes/vig_02_formulas.html">Implementation of formulas</a><br/>
+<a href="vignettes/vig_03_bootstrap.html">Using bootstrapping with regemedint</a><br/>
+<a href="vignettes/vig_04_mi.html">Using multiple imputation with regmedint</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/regmedint_0.1.0.tar.gz"> regmedint_0.1.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/regmedint_0.1.0.zip">regmedint_0.1.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/regmedint_0.1.0.zip">regmedint_0.1.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/regmedint_0.1.0.zip">regmedint_0.1.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/regmedint_0.1.0.tgz">regmedint_0.1.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/regmedint_0.1.0.tgz">regmedint_0.1.0.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=regmedint"><samp>https://CRAN.R-project.org/package=regmedint</samp></a>
+to link to this page.</p>
+</body>
+</html>

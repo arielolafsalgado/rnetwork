@@ -1,0 +1,31 @@
+Package: numform
+Title: Tools to Format Numbers for Publication
+Version: 0.5.0
+Authors@R: c(person("Tyler", "Rinker", email = "tyler.rinker@gmail.com", role = c("aut", "cre")))
+Maintainer: Tyler Rinker <tyler.rinker@gmail.com>
+Description: Format numbers and plots for publication; includes the removal of leading zeros,
+           standardization of number of digits, addition of affixes, and a p-value formatter. These
+           tools combine the functionality of several 'base' functions such as 'paste()',
+           'format()', and 'sprintf()' into specific use case functions that are named in a way
+           that is consistent with usage, making their names easy to remember and easy to deploy.
+Depends: R (>= 3.2.0)
+Suggests: testthat
+Imports: glue
+License: GPL-2
+LazyData: TRUE
+RoxygenNote: 6.1.0.9000
+Collate: 'alignment.R' 'as_factor.R' 'constants.R' 'f_12_hour.R'
+        'utils.R' 'f_abbreviation.R' 'f_affirm.R' 'f_affix.R' 'f_bin.R'
+        'f_comma.R' 'f_data.R' 'f_date.R' 'f_degree.R' 'f_denom.R'
+        'f_dollar.R' 'f_list.R' 'f_logical.R' 'f_month.R' 'f_num.R'
+        'f_ordinal.R' 'f_pad_zero.R' 'f_parenthesis.R' 'f_percent.R'
+        'f_pval.R' 'f_quarter.R' 'f_replace.R' 'f_sign.R' 'f_state.R'
+        'f_title.R' 'f_weekday.R' 'f_wrap.R' 'f_year.R'
+        'fv_num_percent.R' 'fv_percent.R' 'fv_percent_diff.R'
+        'fv_percent_lead.R' 'fv_runs.R' 'glue-reexports.R'
+        'highlight_cells.R' 'numform-package.R'
+NeedsCompilation: no
+Packaged: 2018-11-03 02:11:15 UTC; trinker
+Author: Tyler Rinker [aut, cre]
+Repository: CRAN
+Date/Publication: 2018-11-03 05:20:07 UTC

@@ -1,0 +1,34 @@
+Package: datafsm
+Title: Estimating Finite State Machine Models from Data
+Version: 0.2.0
+Date: 2017-06-16
+Authors@R: c( person("Nay", "John J.", 
+      email = "john.j.nay@gmail.com", role = c("aut")), 
+    person("Gilligan",  "Jonathan M.", 
+      email = "jonathan.gilligan@vanderbilt.edu", role = c("cre", "aut")))
+Description: Our method automatically generates models of dynamic decision-
+    making that both have strong predictive power and are interpretable in human
+    terms. We use an efficient model representation and a genetic algorithm-based
+    estimation process to generate simple deterministic approximations that explain
+    most of the structure of complex stochastic processes. We have applied the
+    software to empirical data, and demonstrated it's ability to recover known data-
+    generating processes by simulating data with agent-based models and correctly
+    deriving the underlying decision models for multiple agent models and degrees of
+    stochasticity.
+URL: https://github.com/jonathan-g/datafsm
+BugReports: https://github.com/jonathan-g/datafsm/issues
+Depends: R (>= 3.1.1), methods, stats
+License: MIT + file LICENSE
+LazyData: true
+LinkingTo: Rcpp
+Suggests: doParallel, foreach, testthat, diagram, knitr
+Imports: caret, GA, Rcpp
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2017-06-17 02:14:05 UTC; Jonathan
+Author: Nay John J. [aut],
+  Gilligan Jonathan M. [cre, aut]
+Maintainer: Gilligan Jonathan M. <jonathan.gilligan@vanderbilt.edu>
+Repository: CRAN
+Date/Publication: 2017-06-17 14:40:08 UTC

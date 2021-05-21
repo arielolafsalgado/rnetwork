@@ -1,0 +1,15 @@
+Package: ssizeRNA
+Type: Package
+Title: Sample Size Calculation for RNA-Seq Experimental Design
+Version: 1.1.2
+Date: 2015-04-30
+Author: Ran Bi <biran@iastate.edu>, Peng Liu <pliu@iastate.edu>
+Maintainer: Ran Bi <biran@iastate.edu>
+Description: We propose a procedure for sample size calculation while controlling false discovery rate for RNA-seq experimental design. Our procedure depends on the Voom method proposed for RNA-seq data analysis by Law et al. (2014) and the sample size calculation method proposed for microarray experiments by Liu and Hwang (2007). We develop a set of functions that calculates appropriate sample sizes for two-sample t-test for RNA-seq experiments with fixed or varied set of parameters. The outputs also contain a plot of power versus sample size, a table of power at different sample sizes, and a table of critical test values at different sample sizes. To install this package, please use "source('http://bioconductor.org/biocLite.R'); biocLite('ssizeRNA', type = 'source')".
+Depends: R (>= 3.1.2)
+Imports: MASS, Biobase, edgeR, limma, qvalue, ssize.fdr
+License: GPL (>= 2)
+NeedsCompilation: no
+Packaged: 2015-05-11 23:25:35 UTC; Ran
+Repository: CRAN
+Date/Publication: 2015-05-12 08:01:42

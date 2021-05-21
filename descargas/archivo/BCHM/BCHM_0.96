@@ -1,0 +1,19 @@
+Package: BCHM
+Title: Clinical Trial Calculation Based on BCHM Design
+Version: 0.96
+Author: Nan Chen and J. Jack Lee 
+Description: Users can estimate the treatment effect for multiple subgroups basket trials based on the Bayesian Cluster Hierarchical Model (BCHM). In this model, a Bayesian non-parametric method is applied to dynamically calculate the number of clusters by conducting the multiple cluster classification based on subgroup outcomes. Hierarchical model is used to compute the posterior probability of treatment effect with the borrowing strength determined by the Bayesian non-parametric clustering and the similarities between subgroups. To use this package, 'JAGS' software and 'rjags' package are required, and users need to pre-install them.
+Depends: R (>= 3.5), rjags
+License: LGPL-2
+Maintainer: Nan Chen <nchen2@mdanderson.org>
+Imports: stats, cluster, coda, clValid, knitr, crayon, plyr
+Suggests: testthat
+LazyData: true
+Encoding: UTF-8
+SystemRequirements: JAGS
+RoxygenNote: 7.0.2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-12-17 19:40:42 UTC; NChen2
+Repository: CRAN
+Date/Publication: 2019-12-20 14:30:05 UTC

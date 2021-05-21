@@ -1,0 +1,42 @@
+Package: haldensify
+Title: Highly Adaptive Lasso Conditional Density Estimation
+Version: 0.0.5
+Authors@R: c(
+    person("Nima", "Hejazi", email = "nh@nimahejazi.org",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-7127-2789")),
+    person("David", "Benkeser", email = "benkeser@emory.edu",
+           role = "aut",
+           comment = c(ORCID = "0000-0002-1019-8343")),
+    person("Mark", "van der Laan", email = "laan@berkeley.edu",
+           role = c("aut", "ths"),
+           comment = c(ORCID = "0000-0003-1432-5511"))
+  )
+Maintainer: Nima Hejazi <nh@nimahejazi.org>
+Description: Conditional density estimation is a longstanding and challenging
+    problem in statistical theory, and numerous proposals exist for optimally
+    estimating such complex functions. Algorithms for nonparametric estimation
+    of conditional densities based on a pooled hazard regression formulation and
+    semiparametric estimation via conditional hazards modeling are implemented
+    based on the highly adaptive lasso, a nonparametric regression function for
+    efficient estimation with fast convergence under mild assumptions. The
+    pooled hazards formulation implemented was first described by Díaz and
+    van der Laan (2011) <doi:10.2202/1557-4679.1356>.
+Depends: R (>= 3.2.0)
+Imports: stats, ggplot2, data.table, future.apply, assertthat, hal9001
+        (>= 0.2.5), origami (>= 1.0.0), Rdpack
+Suggests: testthat, knitr, rmarkdown, future, dplyr
+License: MIT + file LICENSE
+URL: https://github.com/nhejazi/haldensify
+BugReports: https://github.com/nhejazi/haldensify/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+RdMacros: Rdpack
+NeedsCompilation: no
+Packaged: 2020-03-06 06:00:01 UTC; nsh
+Author: Nima Hejazi [aut, cre, cph] (<https://orcid.org/0000-0002-7127-2789>),
+  David Benkeser [aut] (<https://orcid.org/0000-0002-1019-8343>),
+  Mark van der Laan [aut, ths] (<https://orcid.org/0000-0003-1432-5511>)
+Repository: CRAN
+Date/Publication: 2020-03-14 15:20:05 UTC

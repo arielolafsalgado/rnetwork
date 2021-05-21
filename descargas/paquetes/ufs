@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package ufs</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Quantitative Analysis Made Accessible [R package ufs version 0.3.2]" />
+<meta name="citation_author" content="Gjalt-Jorn Peters" />
+<meta name="citation_publication_date" content="2020-10-19" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=ufs" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=ufs" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="ufs: Quantitative Analysis Made Accessible" />
+<meta name="og:description" content="This is a new version of the 'userfriendlyscience' package, which has grown a bit unwieldy. Therefore, distinct functionalities are being 'consciously uncoupled' into different packages. This package contains the general-purpose tools and utilities (see the 'behaviorchange' package, the 'rosetta' package, and the soon-to-be-released 'scd' package for other functionality), and is the most direct 'successor' of the original 'userfriendlyscience' package. For example, this package contains a number of basic functions to create higher level plots, such as diamond plots, to easily plot sampling distributions, to generate confidence intervals, to plan study sample sizes for confidence intervals, and to do some basic operations such as (dis)attenuate effect size estimates." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=ufs" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>ufs: Quantitative Analysis Made Accessible</h2>
+<p>This is a new version of the 'userfriendlyscience' package,
+    which has grown a bit unwieldy. Therefore, distinct functionalities
+    are being 'consciously uncoupled' into different packages. This package
+    contains the general-purpose tools and utilities (see the
+    'behaviorchange' package, the 'rosetta' package, and the
+    soon-to-be-released 'scd' package for other functionality), and
+    is the most direct 'successor' of the original 'userfriendlyscience' package.
+    For example, this package contains a number of basic functions to create
+    higher level plots, such as diamond plots, to easily plot sampling
+    distributions, to generate confidence intervals, to plan study sample sizes
+    for confidence intervals, and to do some basic operations such as
+    (dis)attenuate effect size estimates.</p>
+<table summary="Package ufs summary">
+<tr>
+<td>Version:</td>
+<td>0.3.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../digest/index.html">digest</a> (&ge; 0.6.19), <a href="../diptest/index.html">diptest</a> (&ge; 0.75.7), <a href="../dplyr/index.html">dplyr</a> (&ge; 0.7.6), <a href="../GGally/index.html">GGally</a> (&ge; 1.4.0), <a href="../ggplot2/index.html">ggplot2</a> (&ge; 2.2.1), <a href="../ggrepel/index.html">ggrepel</a> (&ge; 0.8), <a href="../ggridges/index.html">ggridges</a> (&ge; 0.5.0), grDevices (&ge; 3.0.0), <a href="../gridExtra/index.html">gridExtra</a> (&ge; 2.3), <a href="../gtable/index.html">gtable</a> (&ge; 0.2.0), <a href="../htmltools/index.html">htmltools</a> (&ge; 0.4.0), <a href="../knitr/index.html">knitr</a> (&ge; 1.22), <a href="../pander/index.html">pander</a> (&ge; 0.6.3), <a href="../plyr/index.html">plyr</a> (&ge; 1.8.4), <a href="../scales/index.html">scales</a> (&ge; 1.0.0), <a href="../SuppDists/index.html">SuppDists</a> (&ge; 1.1.9), <a href="../viridis/index.html">viridis</a> (&ge; 0.5.1)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../bootES/index.html">bootES</a> (&ge; 1.2), <a href="../car/index.html">car</a> (&ge; 3.0), <a href="../careless/index.html">careless</a> (&ge; 1.1), <a href="../jmvcore/index.html">jmvcore</a> (&ge;
+1.2), <a href="../lavaan/index.html">lavaan</a> (&ge; 0.6), <a href="../MBESS/index.html">MBESS</a> (&ge; 4.5.1), <a href="../psych/index.html">psych</a> (&ge; 1.8), <a href="../rio/index.html">rio</a> (&ge; 0.5), <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../rstudioapi/index.html">rstudioapi</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-19</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Gjalt-Jorn Peters <a href="https://orcid.org/0000-0002-0336-9589"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Stefan Gruijters <a href="https://orcid.org/0000-0003-0141-0071"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Gjalt-Jorn Peters  &#x3c;&#x67;&#x6a;&#x61;&#x6c;&#x74;&#x2d;&#x6a;&#x6f;&#x72;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x75;&#x73;&#x65;&#x72;&#x66;&#x72;&#x69;&#x65;&#x6e;&#x64;&#x6c;&#x79;&#x73;&#x63;&#x69;&#x65;&#x6e;&#x63;&#x65;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://gitlab.com/r-packages/ufs/-/issues">https://gitlab.com/r-packages/ufs/-/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL (&ge; 3)</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://r-packages.gitlab.io/ufs">https://r-packages.gitlab.io/ufs</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_ufs.html">ufs results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package ufs downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="ufs.pdf"> ufs.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/ufs_0.3.2.tar.gz"> ufs_0.3.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/ufs_0.3.2.zip">ufs_0.3.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/ufs_0.3.2.zip">ufs_0.3.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/ufs_0.3.2.zip">ufs_0.3.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/ufs_0.3.2.tgz">ufs_0.3.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/ufs_0.3.2.tgz">ufs_0.3.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/ufs"> ufs archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package ufs reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../behaviorchange/index.html">behaviorchange</a>, <a href="../justifier/index.html">justifier</a>, <a href="../rosetta/index.html">rosetta</a>, <a href="../userfriendlyscience/index.html">userfriendlyscience</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../codebook/index.html">codebook</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=ufs"><samp>https://CRAN.R-project.org/package=ufs</samp></a>
+to link to this page.</p>
+</body>
+</html>

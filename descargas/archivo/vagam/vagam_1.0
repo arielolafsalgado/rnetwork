@@ -1,0 +1,21 @@
+Package: vagam
+Type: Package
+Title: Variational Approximations for Generalized Additive Models
+Version: 1.0
+Date: 2019-1-03
+Depends: R (>= 3.4.0), mgcv, gamm4, Matrix, mvtnorm, truncnorm
+LazyLoad: yes
+LazyData: yes
+Authors@R: c(
+	person("Han Lin", "Shang", email="hanlin.shang@anu.edu.au", role=c("aut", "cre", "cph"), comment = c(ORCID = "0000-0003-1769-6430")),
+	person("Francis K.C.", "Hui", role="aut", comment = c(ORCID = "0000-0003-0765-3533"))
+	)    
+Maintainer: Han Lin Shang <hanlin.shang@anu.edu.au>
+Description: Fits generalized additive models (GAMs) using a variational approximations (VA) framework. In brief, the VA framework provides a fully or at least closed to fully tractable lower bound approximation to the marginal likelihood of a GAM when it is parameterized as a mixed model (using penalized splines, say). In doing so, the VA framework aims offers both the stability and natural inference tools available in the mixed model approach to GAMs, while achieving computation times comparable to that of using the penalized likelihood approach to GAMs. See Hui et al. (2018) <doi:10.1080/01621459.2018.1518235>.
+License: GPL-3
+NeedsCompilation: no
+Packaged: 2019-01-04 11:17:13 UTC; hanlinshang
+Author: Han Lin Shang [aut, cre, cph] (<https://orcid.org/0000-0003-1769-6430>),
+  Francis K.C. Hui [aut] (<https://orcid.org/0000-0003-0765-3533>)
+Repository: CRAN
+Date/Publication: 2019-01-09 17:00:03 UTC

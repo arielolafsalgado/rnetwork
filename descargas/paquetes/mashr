@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package mashr</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Multivariate Adaptive Shrinkage [R package mashr version 0.2.38]" />
+<meta name="citation_author1" content="Matthew Stephens" />
+<meta name="citation_author2" content="Sarah Urbut" />
+<meta name="citation_author3" content="Gao Wang" />
+<meta name="citation_author4" content="Yuxin Zou" />
+<meta name="citation_author5" content="Peter Carbonetto" />
+<meta name="citation_publication_date" content="2020-06-19" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=mashr" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=mashr" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="mashr: Multivariate Adaptive Shrinkage" />
+<meta name="og:description" content="Implements the multivariate adaptive shrinkage (mash) method of Urbut et al (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1038%2Fs41588-018-0268-8&quot;&gt;doi:10.1038/s41588-018-0268-8&lt;/a&gt;&amp;gt; for estimating and testing large numbers of effects in many conditions (or many outcomes). Mash takes an empirical Bayes approach to testing and effect estimation; it estimates patterns of similarity among conditions, then exploits these patterns to improve accuracy of the effect estimates. The core linear algebra is implemented in C++ for fast model fitting and posterior computation." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=mashr" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>mashr: Multivariate Adaptive Shrinkage</h2>
+<p>Implements the multivariate adaptive shrinkage (mash)
+    method of Urbut et al (2019) &lt;<a href="https://doi.org/10.1038%2Fs41588-018-0268-8">doi:10.1038/s41588-018-0268-8</a>&gt; for
+    estimating and testing large numbers of effects in many conditions
+    (or many outcomes). Mash takes an empirical Bayes approach to
+    testing and effect estimation; it estimates patterns of similarity
+    among conditions, then exploits these patterns to improve accuracy
+    of the effect estimates. The core linear algebra is implemented in
+    C++ for fast model fitting and posterior computation.</p>
+<table summary="Package mashr summary">
+<tr>
+<td>Version:</td>
+<td>0.2.38</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3.0), <a href="../ashr/index.html">ashr</a> (&ge; 2.2-22)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../assertthat/index.html">assertthat</a>, utils, stats, <a href="../plyr/index.html">plyr</a>, <a href="../rmeta/index.html">rmeta</a>, <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.11), <a href="../mvtnorm/index.html">mvtnorm</a>, <a href="../abind/index.html">abind</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a>, <a href="../RcppGSL/index.html">RcppGSL</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../MASS/index.html">MASS</a>, <a href="../REBayes/index.html">REBayes</a>, <a href="../corrplot/index.html">corrplot</a>, <a href="../testthat/index.html">testthat</a>, <a href="../kableExtra/index.html">kableExtra</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../profmem/index.html">profmem</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-19</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Matthew Stephens [aut],
+  Sarah Urbut [aut],
+  Gao Wang [aut],
+  Yuxin Zou [aut],
+  Yunqi Yang [ctb],
+  Sam Roweis [cph],
+  David Hogg [cph],
+  Jo Bovy [cph],
+  Peter Carbonetto [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Peter Carbonetto  &#x3c;&#x70;&#x65;&#x74;&#x65;&#x72;&#x2e;&#x63;&#x61;&#x72;&#x62;&#x6f;&#x6e;&#x65;&#x74;&#x74;&#x6f;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="http://github.com/stephenslab/mashr/issues">http://github.com/stephenslab/mashr/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/BSD_3_clause">BSD_3_clause</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>Copyright:</td>
+<td>file COPYRIGHTS <br/>  <a href="COPYRIGHTS">mashr copyright details</a> </td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://github.com/stephenslab/mashr">http://github.com/stephenslab/mashr</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>C++11</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">mashr citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_mashr.html">mashr results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package mashr downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="mashr.pdf"> mashr.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/eQTL_outline.html">using mashr for eQTL studies</a><br/>
+<a href="vignettes/intro_correlations.html">mashr intro with correlations</a><br/>
+<a href="vignettes/intro_mash_dd.html">mashr intro with data-driven covariances</a><br/>
+<a href="vignettes/intro_mash.html">mashr intro</a><br/>
+<a href="vignettes/intro_mashcommonbaseline.html">mashcommonbaseline intro</a><br/>
+<a href="vignettes/intro_mashnobaseline.html">mashnocommonbaseline intro</a><br/>
+<a href="vignettes/mash_sampling.html">Sample from mash posteriors</a><br/>
+<a href="vignettes/simulate_noncanon.html">mashr simulation with non-canonical matrices</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/mashr_0.2.38.tar.gz"> mashr_0.2.38.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/mashr_0.2.38.zip">mashr_0.2.38.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/mashr_0.2.38.zip">mashr_0.2.38.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/mashr_0.2.38.zip">mashr_0.2.38.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/mashr_0.2.38.tgz">mashr_0.2.38.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/mashr_0.2.38.tgz">mashr_0.2.38.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/mashr"> mashr archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=mashr"><samp>https://CRAN.R-project.org/package=mashr</samp></a>
+to link to this page.</p>
+</body>
+</html>

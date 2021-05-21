@@ -1,0 +1,40 @@
+Package: tsibble
+Type: Package
+Title: Tidy Temporal Data Frames and Tools
+Version: 0.2.0
+Date: 2018-05-11
+Authors@R: c(
+    person("Earo", "Wang", email = "earo.wang@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-6448-5260")),
+    person("Di", "Cook", role = c("aut", "ths"), comment = c(ORCID = "0000-0002-3813-7155")),
+    person("Rob", "Hyndman", role = c("aut", "ths"), comment = c(ORCID = "0000-0002-2140-5352")),
+    person("Mitchell", "O'Hara-Wild", role = c("ctb"))
+    )
+Description: Provides a 'tbl_ts' class (the 'tsibble') to store and manage
+    temporal-context data in a data-centric format, which is built on top of
+    the 'tibble'. The 'tsibble' aims at easily manipulating and analysing temporal 
+    data, including counting and filling time gaps, aggregate over calendar periods, 
+    performing rolling window calculations, and etc.
+Depends: R (>= 3.1.3)
+Imports: rlang (>= 0.2.0), tidyr, purrr (>= 0.2.3), tibble (>= 1.4.1),
+        pillar (>= 1.0.1), lubridate, dplyr (>= 0.7.3), Rcpp (>=
+        0.12.3), tidyselect
+Suggests: knitr, rmarkdown, testthat, covr, hts, hms, nycflights13,
+        ggplot2 (>= 2.2.0)
+LinkingTo: Rcpp (>= 0.12.0)
+ByteCompile: true
+VignetteBuilder: knitr
+License: GPL (>= 3)
+URL: https://pkg.earo.me/tsibble
+BugReports: https://github.com/tidyverts/tsibble/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2018-05-11 08:07:56 UTC; earo
+Author: Earo Wang [aut, cre] (<https://orcid.org/0000-0001-6448-5260>),
+  Di Cook [aut, ths] (<https://orcid.org/0000-0002-3813-7155>),
+  Rob Hyndman [aut, ths] (<https://orcid.org/0000-0002-2140-5352>),
+  Mitchell O'Hara-Wild [ctb]
+Maintainer: Earo Wang <earo.wang@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-05-11 08:58:28 UTC

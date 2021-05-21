@@ -1,0 +1,43 @@
+Package: dragon
+Title: Deep Time Redox Analysis of the Geobiology Ontology Network
+Version: 1.0.3
+Authors@R: person("Stephanie J.", "Spielman", 
+                  email = "spielman@rowan.edu", 
+                  role = c("aut", "cre"),
+                  comment = c(ORCID = "0000-0002-9090-4788"))
+Description: Create, visualize, manipulate, and analyze bipartite mineral-chemistry
+    networks for set of focal element(s) across deep-time on Earth. The method is 
+    described in Spielman and Moore (2020) <doi:10.3389/feart.2020.585087>.
+License: GPL-3
+Imports: config, golem (>= 0.2.1), shiny, DT (>= 0.14), ggplot2 (>=
+        3.3.2), readr, openxlsx, dplyr (>= 1.0.0), RColorBrewer,
+        stringr, tidyr (>= 1.0.0), purrr, tibble, broom (>= 0.5.6),
+        cowplot (>= 1.0.0), ggforce, magrittr, shinydashboard,
+        shinyWidgets, colourpicker (>= 1.0), colorspace (>= 1.4),
+        visNetwork (>= 2.0.9), igraph (>= 0.4), rlang, htmltools,
+        stats, promises, future, lubridate, xml2, rvest, curl,
+        tidyselect
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Suggests: testthat (>= 2.1.0), processx, knitr, rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/sjspielman/dragon
+BugReports: https://github.com/sjspielman/dragon/issues
+Depends: R (>= 3.5.0)
+Collate: 'utils_definitions.R' 'utils_globals.R' 'utils_names.R'
+        'utils_palette.R' 'utils_style-network.R' 'utils_ui-choices.R'
+        'fct_prepare-med-data.R' 'fct_build-legend.R'
+        'fct_build-linear-models.R' 'fct_build-network.R'
+        'fct_build-shiny-tables.R' 'fct_calculate-network-info.R'
+        'fct_export-network.R' 'fct_style-network.R' 'fct_timeline.R'
+        'mod_choose-color-palette.R'
+        'mod_choose-custom-element-colors.R' 'app_config.R'
+        'app_server.R' 'app_ui.R' 'run_app.R'
+NeedsCompilation: no
+Packaged: 2020-09-29 14:44:51 UTC; spielman
+Author: Stephanie J. Spielman [aut, cre]
+    (<https://orcid.org/0000-0002-9090-4788>)
+Maintainer: Stephanie J. Spielman <spielman@rowan.edu>
+Repository: CRAN
+Date/Publication: 2020-09-29 15:10:02 UTC

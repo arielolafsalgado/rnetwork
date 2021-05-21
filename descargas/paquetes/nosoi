@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package nosoi</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="A Forward Agent-Based Transmission Chain Simulator [R package nosoi version 1.0.3]" />
+<meta name="citation_author1" content="Sebastian Lequime" />
+<meta name="citation_author2" content="Paul Bastide" />
+<meta name="citation_author3" content="Simon Dellicour" />
+<meta name="citation_author4" content="Philippe Lemey" />
+<meta name="citation_author5" content="Guy Baele" />
+<meta name="citation_publication_date" content="2020-05-12" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=nosoi" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=nosoi" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="nosoi: A Forward Agent-Based Transmission Chain Simulator" />
+<meta name="og:description" content="The aim of 'nosoi' (pronounced no.si) is to provide a flexible agent-based stochastic transmission chain/epidemic simulator (Lequime et al. bioRxiv 2020.03.03.973107). It is named after the daimones of plague, sickness and disease that escaped Pandora's jar in the Greek mythology. 'nosoi' is able to take into account the influence of multiple variable on the transmission process (e.g. dual-host systems (such as arboviruses), within-host viral dynamics, transportation, population structure), alone or taken together, to create complex but relatively intuitive epidemiological simulations." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=nosoi" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>nosoi: A Forward Agent-Based Transmission Chain Simulator</h2>
+<p>The aim of 'nosoi' (pronounced no.si) is to provide a flexible agent-based stochastic transmission chain/epidemic simulator (Lequime et al. bioRxiv 2020.03.03.973107). It is named after the daimones of plague, sickness and disease that escaped Pandora's jar in the Greek mythology. 'nosoi' is able to take into account the influence of multiple variable on the transmission process (e.g. dual-host systems (such as arboviruses), within-host viral dynamics, transportation, population structure), alone or taken together, to create complex but relatively intuitive epidemiological simulations.</p>
+<table summary="Package nosoi summary">
+<tr>
+<td>Version:</td>
+<td>1.0.3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td><a href="../data.table/index.html">data.table</a> (&ge; 1.12.0), R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>stats (&ge; 3.5.2), methods (&ge; 3.5.2), <a href="../raster/index.html">raster</a> (&ge; 2.8-19)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a> (&ge; 2.1.0), <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../igraph/index.html">igraph</a>, <a href="../tidyverse/index.html">tidyverse</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../ggnetwork/index.html">ggnetwork</a>, <a href="../intergraph/index.html">intergraph</a>, <a href="../viridis/index.html">viridis</a>, <a href="../gifski/index.html">gifski</a>, <a href="../png/index.html">png</a>, <a href="../gganimate/index.html">gganimate</a>, <a href="../ape/index.html">ape</a> (&ge; 5.3), <a href="../tidytree/index.html">tidytree</a> (&ge; 0.3.3), <a href="http://www.bioconductor.org/packages/release/bioc/html/treeio.html"><span class="BioC">treeio</span></a> (&ge;
+1.10.0), <a href="http://www.bioconductor.org/packages/release/bioc/html/ggtree.html"><span class="BioC">ggtree</span></a> (&ge; 2.0.2), <a href="../magrittr/index.html">magrittr</a> (&ge; 1.5), <a href="../dplyr/index.html">dplyr</a> (&ge; 0.8.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-05-12</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Sebastian Lequime <a href="https://orcid.org/0000-0002-3140-0651"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Paul Bastide <a href="https://orcid.org/0000-0002-8084-9893"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Simon Dellicour <a href="https://orcid.org/0000-0001-9558-1052"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Philippe Lemey <a href="https://orcid.org/0000-0003-2826-5353"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Guy Baele <a href="https://orcid.org/0000-0002-1915-7732"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Sebastian Lequime  &#x3c;&#x73;&#x65;&#x62;&#x61;&#x73;&#x74;&#x69;&#x61;&#x6e;&#x2e;&#x6c;&#x65;&#x71;&#x75;&#x69;&#x6d;&#x65;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/slequime/nosoi">https://github.com/slequime/nosoi</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_nosoi.html">nosoi results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package nosoi downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="nosoi.pdf"> nosoi.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/continuous.html">Spread of a pathogen in a continuous space</a><br/>
+<a href="vignettes/discrete.html">Spread of a pathogen in a discrete structured population</a><br/>
+<a href="vignettes/none.html">Spread of a pathogen in a homogeneous population</a><br/>
+<a href="vignettes/nosoi.html">Getting-started</a><br/>
+<a href="vignettes/output.html">output-summarization</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/nosoi_1.0.3.tar.gz"> nosoi_1.0.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/nosoi_1.0.3.zip">nosoi_1.0.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/nosoi_1.0.3.zip">nosoi_1.0.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/nosoi_1.0.3.zip">nosoi_1.0.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/nosoi_1.0.3.tgz">nosoi_1.0.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/nosoi_1.0.3.tgz">nosoi_1.0.3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/nosoi"> nosoi archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=nosoi"><samp>https://CRAN.R-project.org/package=nosoi</samp></a>
+to link to this page.</p>
+</body>
+</html>

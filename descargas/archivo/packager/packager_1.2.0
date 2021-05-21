@@ -1,0 +1,32 @@
+Package: packager
+Title: Create, Build and Maintain Packages
+Version: 1.2.0
+Authors@R: 
+    person(given = "Andreas Dominik",
+           family = "Cullmann",
+           role = c("aut", "cre"),
+           email = "fvafrcu@mailbox.org")
+Description: Helper functions for package creation, building and
+    maintenance. Designed to work with a build system such as 'GNU make' or
+    package 'fakemake' to help you to conditionally work through the stages of
+    package development (such as spell checking, linting, testing, before
+    building and checking a package).
+License: BSD_2_clause + file LICENSE
+URL: https://gitlab.com/fvafrCU/packager
+Depends: R (>= 3.3.0)
+Imports: callr, checkmate, codetools, crayon, cyclocomp, desc,
+        devtools, fakemake, git2r, httr, methods, pkgbuild, pkgload,
+        rcmdcheck, remotes, rprojroot, tools, usethis, utils, whisker,
+        whoami, withr
+Suggests: cleanr, covr, digest, knitr, lintr, rasciidoc, rmarkdown,
+        roxygen2, RUnit, spelling, testthat
+VignetteBuilder: rasciidoc, knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+NeedsCompilation: no
+Packaged: 2020-04-14 12:04:16 UTC; qwer
+Author: Andreas Dominik Cullmann [aut, cre]
+Maintainer: Andreas Dominik Cullmann <fvafrcu@mailbox.org>
+Repository: CRAN
+Date/Publication: 2020-04-14 12:20:10 UTC

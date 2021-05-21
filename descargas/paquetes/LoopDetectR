@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package LoopDetectR</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Comprehensive Feedback Loop Detection in ODE Models [R package LoopDetectR version 0.1.2]" />
+<meta name="citation_author" content="Katharina Baum" />
+<meta name="citation_publication_date" content="2020-07-20" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=LoopDetectR" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=LoopDetectR" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="LoopDetectR: Comprehensive Feedback Loop Detection in ODE Models" />
+<meta name="og:description" content="Detect feedback loops (cycles, circuits) between species (nodes) in ordinary differential equation (ODE) models. Feedback loops are paths from a node to itself without visiting any other node twice, and they have important regulatory functions. Loops are reported with their order of participating nodes and their length, and whether the loop is a positive or a negative feedback loop. An upper limit of the number of feedback loops limits runtime (which scales with feedback loop count). Model parametrizations and values of the modelled variables are accounted for. Computation uses the characteristics of the Jacobian matrix as described e.g. in Thomas and Kaufman (2002) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fs1631-0691%2802%2901452-x&quot;&gt;doi:10.1016/s1631-0691(02)01452-x&lt;/a&gt;&amp;gt;. Input can be the Jacobian matrix of the ODE model or the ODE function definition; in the latter case, the Jacobian matrix is determined using 'numDeriv'. Graph-based algorithms from 'igraph' are employed for path detection. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=LoopDetectR" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>LoopDetectR: Comprehensive Feedback Loop Detection in ODE Models</h2>
+<p>Detect feedback loops (cycles, circuits) between species (nodes) in ordinary differential equation (ODE) models. Feedback loops are paths from a node to itself without visiting any other node twice, and they have important regulatory functions. Loops are reported with their order of participating nodes and their length, and whether the loop is a positive or a negative feedback loop. An upper limit of the number of feedback loops limits runtime (which scales with feedback loop count). Model parametrizations and values of the modelled variables are accounted for. Computation uses the characteristics of the Jacobian matrix as described e.g. in Thomas and Kaufman (2002) &lt;<a href="https://doi.org/10.1016%2Fs1631-0691%2802%2901452-x">doi:10.1016/s1631-0691(02)01452-x</a>&gt;. Input can be the Jacobian matrix of the ODE model or the ODE function definition; in the latter case, the Jacobian matrix is determined using 'numDeriv'. Graph-based algorithms from 'igraph' are employed for path detection. </p>
+<table summary="Package LoopDetectR summary">
+<tr>
+<td>Version:</td>
+<td>0.1.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.0.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../igraph/index.html">igraph</a>, <a href="../numDeriv/index.html">numDeriv</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../deSolve/index.html">deSolve</a>, <a href="../knitr/index.html">knitr</a>, <a href="../markdown/index.html">markdown</a>, <a href="../remotes/index.html">remotes</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, utils</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-07-20</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Katharina Baum <a href="https://orcid.org/0000-0001-7256-0566"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Sandra Krüger [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Katharina Baum  &#x3c;&#x6b;&#x61;&#x74;&#x68;&#x61;&#x72;&#x69;&#x6e;&#x61;&#x2e;&#x62;&#x61;&#x75;&#x6d;&#x20;&#x61;&#x74;&#x20;&#x68;&#x70;&#x69;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_LoopDetectR.html">LoopDetectR results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package LoopDetectR downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="LoopDetectR.pdf"> LoopDetectR.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/workflow_LoopDetectR.html">LoopDetectR: Comprehensive Feedback Loop Detection in ODE models</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/LoopDetectR_0.1.2.tar.gz"> LoopDetectR_0.1.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/LoopDetectR_0.1.2.zip">LoopDetectR_0.1.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/LoopDetectR_0.1.2.zip">LoopDetectR_0.1.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/ReadMe">not available</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/LoopDetectR_0.1.2.tgz">LoopDetectR_0.1.2.tgz</a>, r-oldrel: not available </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=LoopDetectR"><samp>https://CRAN.R-project.org/package=LoopDetectR</samp></a>
+to link to this page.</p>
+</body>
+</html>

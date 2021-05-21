@@ -1,0 +1,35 @@
+Package: cubeview
+Type: Package
+Title: View 3D Raster Cubes Interactively
+Version: 0.1.0
+Date: 2019-02-10
+Authors@R: 
+    c(person(given = "Tim",
+             family = "Appelhans",
+             role = c("cre", "aut"),
+             email = "tim.appelhans@gmail.com"),
+      person(given = "Stefan",
+             family = "Woellauer",
+             role = "aut",
+             email = "stephan.woellauer@geo.uni-marburg.de"))
+Maintainer: Tim Appelhans <tim.appelhans@gmail.com>
+Description: Creates a 3D data cube view of a RasterStack/Brick, typically a 
+    collection/array of RasterLayers (along z-axis) with the same geographical 
+    extent (x and y dimensions) and resolution, provided by package 'raster'. 
+    Slices through each dimension (x/y/z), freely adjustable in location, 
+    are mapped to the visible sides of the cube. The cube can be freely rotated. 
+    Zooming and panning can be used to focus on different areas of the cube.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 2.10)
+Imports: base64enc, htmltools, htmlwidgets, lattice, raster,
+        viridisLite
+Suggests: shiny
+LazyData: true
+RoxygenNote: 6.1.0
+NeedsCompilation: no
+Packaged: 2019-03-13 17:29:53 UTC; timpanse
+Author: Tim Appelhans [cre, aut],
+  Stefan Woellauer [aut]
+Repository: CRAN
+Date/Publication: 2019-03-15 17:03:47 UTC

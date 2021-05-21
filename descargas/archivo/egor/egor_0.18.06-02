@@ -1,0 +1,45 @@
+Package: egor
+Type: Package
+Title: Import and Analyse Ego-Centered Network Data
+Version: 0.18.06-02
+Date: 2018-06-19
+Authors@R: c(
+    person("Markus", "Gamper", email = "m.gamper@uni-koeln.de",
+    role = c("aut")),
+    person("Andreas", "Herz", email = "herzand@uni-hildesheim.de",
+    role = c("aut")),
+    person("Till", "Krenz", email = "egor@tillt.net",
+    role = c("aut", "cre")),
+    person("Christopher", "McCarty", email = "ufchris@ufl.edu",
+    role = c("aut")),
+    person("Pavel N.", "Krivitsky", email="pavel@uow.edu.au",
+    role=c("aut")),
+    person("Raffaele", "Vacca", email = "r.vacca@ufl.edu",
+    role = c("aut")))
+Description: Tools for importing, analyzing and visualizing ego-centered
+    network data. Supports several data formats, including the export formats of
+    'EgoNet', 'EgoWeb 2.0' and 'openeddi'. An interactive (shiny) app for the
+    intuitive visualization of ego-centered networks is provided. Also included
+    are procedures for creating and visualizing Clustered Graphs 
+    (Lerner 2008 <DOI:10.1109/PACIFICVIS.2008.4475458>).
+URL: https://github.com/tilltnet/egor, https://tilltnet.github.io/egor/
+BugReports: https://github.com/tilltnet/egor/issues
+License: AGPL-3
+Depends: R (>= 2.10), dplyr, tibble
+Imports: igraph, network, shiny, plyr, survey, tidyr, methods, utils,
+        purrr
+Suggests: knitr, testthat, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1.9000
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2018-06-19 17:39:35 UTC; Till
+Author: Markus Gamper [aut],
+  Andreas Herz [aut],
+  Till Krenz [aut, cre],
+  Christopher McCarty [aut],
+  Pavel N. Krivitsky [aut],
+  Raffaele Vacca [aut]
+Maintainer: Till Krenz <egor@tillt.net>
+Repository: CRAN
+Date/Publication: 2018-07-02 11:00:03 UTC

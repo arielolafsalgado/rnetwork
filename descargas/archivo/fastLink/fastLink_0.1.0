@@ -1,0 +1,34 @@
+Package: fastLink
+Type: Package
+Title: Fast Probabilistic Record Linkage with Missing Data
+Version: 0.1.0
+Date: 2017-07-08
+Authors@R: c(
+  person("Ted", "Enamorado", email = "fastlinkr@gmail.com", role = c("aut", "cre")),
+  person("Ben", "Fifield", email = "fastlinkr@gmail.com", role = c("aut")),
+  person("Kosuke", "Imai", email = "kimai@Princeton.edu", role = c("aut"))
+  )
+Description: Implements a Fellegi-Sunter probabilistic record linkage model that allows for missing data
+    and the inclusion of auxiliary information. This includes functionalities to conduct a merge of two datasets under the Fellegi-Sunter model
+    using the Expectation-Maximization algorithm. In addition, tools for preparing, adjusting, and summarizing
+    data merges are included. The package implements methods described in Enamorado, Fifield,
+    and Imai (2017) ''Using a Probabilistic Model to Assist Merging of Large-scale Administrative
+    Records'', available at <http://imai.princeton.edu/research/linkage.html>.
+License: GPL (>= 3)
+Imports: Matrix, parallel, foreach, doParallel, gtools, data.table,
+        stringdist, stringr, Rcpp (>= 0.12.9), Hmisc, FactoClass,
+        adagio, dplyr
+Depends: R (>= 3.1.0)
+LinkingTo: RcppArmadillo, Rcpp, RcppEigen
+Encoding: UTF-8
+LazyData: true
+BugReports: https://github.com/kosukeimai/fastLink/issues
+RoxygenNote: 5.0.1
+NeedsCompilation: yes
+Packaged: 2017-07-09 13:17:11 UTC; benfifield
+Author: Ted Enamorado [aut, cre],
+  Ben Fifield [aut],
+  Kosuke Imai [aut]
+Maintainer: Ted Enamorado <fastlinkr@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-07-09 14:24:16 UTC

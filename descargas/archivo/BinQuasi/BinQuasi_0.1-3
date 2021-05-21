@@ -1,0 +1,38 @@
+Package: BinQuasi
+Version: 0.1-3
+Date: 2018-03-29
+Title: Analyzing Replicated ChIP Sequencing Data Using Quasi-Likelihood
+Authors@R: c(
+  person("Emily", "Goren", role=c("aut", "cre"), email="emily.goren@gmail.com"),
+  person("Steve", "Lund", role="aut", comment="The author of the QuasiSeq package, from which all functions were modified to produce this package."),
+  person("Long", "Qu", role="aut", comment="The author of the QuasiSeq package, from which all functions were modified to produce this package."),
+  person("Ian", "Marschner", role="aut", comment="The author of glm2::glm.fit2, which was modified slightly leading to glm.fit3 in this package."),
+  person("Daniel", "Gerhard", role="aut", comment="The author of mcprofile::orglm.fit, which was modified slightly and used under the same name in this package."), 
+  person("R Core Team", role="aut", comment="The author of stats::glm.fit, which was modified slightly leading to glm.fit3 in this package.")
+  )
+Imports: edgeR, mgcv, pracma, quadprog, Rsamtools, GenomicAlignments,
+        GenomicRanges, IRanges, csaw(>= 1.12.0), SummarizedExperiment,
+        BiocGenerics, S4Vectors
+Suggests: nleqslv, knitr, rmarkdown
+Description: Identify peaks in ChIP-seq data with biological replicates using a one-sided quasi-likelihood ratio test in quasi-Poisson or quasi-negative binomial models.
+License: GPL (>= 2)
+NeedsCompilation: yes
+Maintainer: Emily Goren <emily.goren@gmail.com>
+URL: https://github.com/emilygoren/BinQuasi
+BugReports: https://github.com/emilygoren/BinQuasi/issues
+Author: Emily Goren [aut, cre],
+  Steve Lund [aut] (The author of the QuasiSeq package, from which all
+    functions were modified to produce this package.),
+  Long Qu [aut] (The author of the QuasiSeq package, from which all
+    functions were modified to produce this package.),
+  Ian Marschner [aut] (The author of glm2::glm.fit2, which was modified
+    slightly leading to glm.fit3 in this package.),
+  Daniel Gerhard [aut] (The author of mcprofile::orglm.fit, which was
+    modified slightly and used under the same name in this package.),
+  R Core Team [aut] (The author of stats::glm.fit, which was modified
+    slightly leading to glm.fit3 in this package.)
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+Packaged: 2018-03-29 17:51:18 UTC; emilygoren
+Repository: CRAN
+Date/Publication: 2018-04-03 19:12:23 UTC

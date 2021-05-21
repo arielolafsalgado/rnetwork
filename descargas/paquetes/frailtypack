@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package frailtypack</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=frailtypack" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="frailtypack: General Frailty Models: Shared, Joint and Nested Frailty Models with Prediction; Evaluation of Failure-Time Surrogate Endpoints" />
+<meta name="og:description" content="The following several classes of frailty models using a penalized likelihood estimation on the hazard function but also a parametric estimation can be fit using this R package: 1) A shared frailty model (with gamma or log-normal frailty distribution) and Cox proportional hazard model. Clustered and recurrent survival times can be studied. 2) Additive frailty models for proportional hazard models with two correlated random effects (intercept random effect with random slope). 3) Nested frailty models for hierarchically clustered data (with 2 levels of clustering) by including two iid gamma random effects. 4) Joint frailty models in the context of the joint modelling for recurrent events with terminal event for clustered data or not. A joint frailty model for two semi-competing risks and clustered data is also proposed. 5) Joint general frailty models in the context of the joint modelling for recurrent events with terminal event data with two independent frailty terms. 6) Joint Nested frailty models in the context of the joint modelling for recurrent events with terminal event, for hierarchically clustered data (with two levels of clustering) by including two iid gamma random effects. 7) Multivariate joint frailty models for two types of recurrent events and a terminal event. 8) Joint models for longitudinal data and a terminal event. 9) Trivariate joint models for longitudinal data, recurrent events and a terminal event. 10) Joint frailty models for the validation of surrogate endpoints in multiple randomized clinical trials with failure-time endpoints 11) Conditional and Marginal two-part joint models for longitudinal semicontinuous data and a terminal event. 12) Joint frailty-copula models for the validation of surrogate endpoints in multiple randomized clinical trials with failure-time endpoints. Prediction values are available (for a terminal event or for a new recurrent event). Left-truncated (not for Joint model), right-censored data, interval-censored data (only for Cox proportional hazard and shared frailty model) and strata are allowed. In each model, the random effects have the gamma or normal distribution. Now, you can also consider time-varying covariates effects in Cox, shared and joint frailty models (1-5). The package includes concordance measures for Cox proportional hazards models and for shared frailty models. Moreover, the package can be used with its shiny application, in a local mode or by following the link below." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=frailtypack" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>frailtypack: General Frailty Models: Shared, Joint and Nested Frailty Models
+with Prediction; Evaluation of Failure-Time Surrogate Endpoints</h2>
+<p>The following several classes of frailty models using a penalized likelihood estimation on the hazard function but also a parametric estimation can be fit using this R package:
+        1) A shared frailty model (with gamma or log-normal frailty distribution) and Cox proportional hazard model. Clustered and recurrent survival times can be studied.
+        2) Additive frailty models for proportional hazard models with two correlated random effects (intercept random effect with random slope).
+        3) Nested frailty models for hierarchically clustered data (with 2 levels of clustering) by including two iid gamma random effects.
+        4) Joint frailty models in the context of the joint modelling for recurrent events with terminal event for clustered data or not. A joint frailty model for two semi-competing risks and clustered data is also proposed.
+	5) Joint general frailty models in the context of the joint modelling for recurrent events with terminal event data with two independent frailty terms.
+	6) Joint Nested frailty models in the context of the joint modelling for recurrent events with terminal event, for hierarchically clustered data (with two levels of clustering) by including two iid gamma random effects.
+	7) Multivariate joint frailty models for two types of recurrent events and a terminal event.
+	8) Joint models for longitudinal data and a terminal event. 
+	9) Trivariate joint models for longitudinal data, recurrent events and a terminal event. 
+	10) Joint frailty models for the validation of surrogate endpoints in multiple randomized clinical trials with failure-time endpoints 
+        11) Conditional and Marginal two-part joint models for longitudinal semicontinuous data and a terminal event.
+        12) Joint frailty-copula models for the validation of surrogate endpoints in multiple randomized clinical trials with failure-time endpoints.
+		Prediction values are available (for a terminal event or for a new recurrent event). Left-truncated (not for Joint model), right-censored data, interval-censored data (only for Cox proportional hazard and shared frailty model) and strata are allowed. In each model, the random effects have the gamma or normal distribution. Now, you can also consider time-varying covariates effects in Cox, shared and joint frailty models (1-5). The package includes concordance measures for Cox proportional hazards models and for shared frailty models.
+		Moreover, the package can be used with its shiny application, in a local mode or by following the link below.</p>
+<table summary="Package frailtypack summary">
+<tr>
+<td>Version:</td>
+<td>3.3.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10.0), <a href="../survival/index.html">survival</a>, <a href="../boot/index.html">boot</a>, <a href="../MASS/index.html">MASS</a>, <a href="../survC1/index.html">survC1</a>, <a href="../doBy/index.html">doBy</a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../statmod/index.html">statmod</a>, <a href="../nlme/index.html">nlme</a>, <a href="../rootSolve/index.html">rootSolve</a>, <a href="../shiny/index.html">shiny</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-14</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Virginie Rondeau, Juan R. Gonzalez, Yassin Mazroui, Audrey
+        Mauguen, Amadou Diakite, Alexandre Laurent, Myriam Lopez, 
+        Agnieszka Krol, Casimir L. Sofeu, Julien Dumerc, Denis Rustand</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Virginie Rondeau  &#x3c;&#x76;&#x69;&#x72;&#x67;&#x69;&#x6e;&#x69;&#x65;&#x2e;&#x72;&#x6f;&#x6e;&#x64;&#x65;&#x61;&#x75;&#x20;&#x61;&#x74;&#x20;&#x75;&#x2d;&#x62;&#x6f;&#x72;&#x64;&#x65;&#x61;&#x75;&#x78;&#x2e;&#x66;&#x72;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2.0)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://virginie1rondeau.wixsite.com/virginierondeau/software-frailtypack">https://virginie1rondeau.wixsite.com/virginierondeau/software-frailtypack</a>
+<a href="https://frailtypack-pkg.shinyapps.io/shiny_frailtypack">https://frailtypack-pkg.shinyapps.io/shiny_frailtypack</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">frailtypack citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_frailtypack.html">frailtypack results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package frailtypack downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="frailtypack.pdf"> frailtypack.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Package_summary.html">Package summary</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/frailtypack_3.3.2.tar.gz"> frailtypack_3.3.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/frailtypack_3.3.2.zip">frailtypack_3.3.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/frailtypack_3.3.2.zip">frailtypack_3.3.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/frailtypack_3.3.2.zip">frailtypack_3.3.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/frailtypack_3.3.2.tgz">frailtypack_3.3.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/frailtypack_3.3.2.tgz">frailtypack_3.3.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/frailtypack"> frailtypack archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package frailtypack reverse dependencies">
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../icensBKL/index.html">icensBKL</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=frailtypack"><samp>https://CRAN.R-project.org/package=frailtypack</samp></a>
+to link to this page.</p>
+</body>
+</html>

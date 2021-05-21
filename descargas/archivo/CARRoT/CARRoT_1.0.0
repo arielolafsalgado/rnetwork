@@ -1,0 +1,20 @@
+Package: CARRoT
+Title: Predicting Categorical and Continuous Outcomes Using One in Ten
+        Rule
+Version: 1.0.0
+Authors@R: c(person("Alina", "Bazarova", email = "a.bazarova@bham.ac.uk", role = c("aut", "cre")),person("Marko", "Raseta", email = "m.raseta@keele.ac.uk", role = c("aut")))
+Description: Predicts categorical or continuous outcomes while concentrating on four key points. These are Cross-validation, Accuracy, Regression and Rule of Ten or "one in ten rule" (CARRoT). It performs the cross-validation specified number of times by partitioning the input into training and test set and fitting linear/multinomial/binary regression models to the training set. All regression models satisfying a rule of ten events per variable are fitted and the ones with the best predictive power are given as an output. Best predictive power is understood as highest accuracy in case of binary/multinomial outcomes, smallest absolute and relative errors in case of continuous outcomes. For binary case there is also an option of finding a regression model which gives the highest AUROC (Area Under Receiver Operating Curve) value. The option of parallel toolbox is also available. Methods are described in Peduzzi et al. (1996) <doi:10.1016/S0895-4356(96)00236-3> and Rhemtulla et al. (2012) <doi:10.1037/a0029315>.
+Depends: R (>= 3.4.0)
+License: GPL-2
+Encoding: UTF-8
+Imports: stats,utils,nnet,doParallel,Rdpack,parallel,foreach
+LazyData: true
+RoxygenNote: 6.0.1.9000
+RdMacros: Rdpack
+NeedsCompilation: yes
+Packaged: 2018-06-30 15:38:56 UTC; alina
+Author: Alina Bazarova [aut, cre],
+  Marko Raseta [aut]
+Maintainer: Alina Bazarova <a.bazarova@bham.ac.uk>
+Repository: CRAN
+Date/Publication: 2018-06-30 17:04:38 UTC

@@ -1,0 +1,76 @@
+Package: pomp
+Type: Package
+Title: Statistical Inference for Partially Observed Markov Processes
+Version: 2.3
+Date: 2019-09-04
+Authors@R: c(person(given=c("Aaron","A."),family="King",
+		role=c("aut","cre"),email="kingaa@umich.edu"),
+	  person(given=c("Edward","L."),family="Ionides",role=c("aut")),
+	  person(given=c("Carles"),family="Breto",role=c("aut")),
+	  person(given=c("Stephen","P."),family="Ellner",role=c("ctb")),
+	  person(given=c("Matthew","J."),family="Ferrari",role=c("ctb")),
+	  person(given=c("Bruce","E."),family="Kendall",role=c("ctb")),
+	  person(given=c("Michael"),family="Lavine",role=c("ctb")),
+	  person(given="Dao",family="Nguyen",role=c("ctb")),
+	  person(given=c("Daniel","C."),family="Reuman",role=c("ctb")),
+	  person(given=c("Helen"),family="Wearing",role=c("ctb")),
+	  person(given=c("Simon","N."),family="Wood",role=c("ctb")),
+	  person(given="Sebastian",family="Funk",role=c("ctb")),
+	  person(given=c("Steven","G."),family="Johnson",role=c("ctb")),
+	  person(given=c("Eamon"),family="O'Dea",role=c("ctb"))
+	  )
+URL: https://kingaa.github.io/pomp/
+Description: Tools for data analysis with partially observed Markov process (POMP) models (also known as stochastic dynamical systems, hidden Markov models, and nonlinear, non-Gaussian, state-space models).  The package provides facilities for implementing POMP models, simulating them, and fitting them to time series data by a variety of frequentist and Bayesian methods.  It is also a versatile platform for implementation of inference methods for general POMP models.
+Depends: R(>= 3.5.0), methods
+Imports: stats, graphics, digest, mvtnorm, deSolve, coda, reshape2,
+        magrittr, plyr
+Suggests: ggplot2, knitr, tidyr, dplyr, subplex
+SystemRequirements: For Windows users, Rtools (see
+        https://cran.r-project.org/bin/windows/Rtools/).
+License: GPL-3
+LazyData: true
+Contact: kingaa at umich dot edu
+BugReports: https://github.com/kingaa/pomp/issues/
+Encoding: UTF-8
+Collate: 'pomp-package.R' 'aaa.R' 'pstop.R' 'undefined.R' 'csnippet.R'
+        'pomp_fun.R' 'parameter_trans.R' 'covariate_table.R'
+        'skeleton_spec.R' 'rprocess_spec.R' 'safecall.R' 'pomp_class.R'
+        'load.R' 'workhorses.R' 'continue.R' 'prior_spec.R'
+        'dmeasure_spec.R' 'dprocess_spec.R' 'rmeasure_spec.R'
+        'rinit_spec.R' 'templates.R' 'builder.R' 'pomp.R' 'probe.R'
+        'abc.R' 'accumulators.R' 'kalman.R' 'proposals.R' 'pfilter.R'
+        'pmcmc.R' 'mif2.R' 'listie.R' 'simulate.R' 'spect.R' 'plot.R'
+        'bsmc2.R' 'as_data_frame.R' 'as_pomp.R' 'authors.R' 'bake.R'
+        'basic_probes.R' 'blowflies.R' 'bsflu.R' 'bsplines.R' 'coef.R'
+        'concat.R' 'cond_logLik.R' 'covmat.R' 'dacca.R' 'traces.R'
+        'deprecated.R' 'design.R' 'distributions.R' 'ebola.R'
+        'eff_sample_size.R' 'extract.R' 'filter_mean.R' 'filter_traj.R'
+        'flow.R' 'forecast.R' 'gompertz.R' 'probe_match.R'
+        'spect_match.R' 'summary.R' 'nlf.R' 'trajectory.R'
+        'traj_match.R' 'objfun.R' 'loglik.R' 'logmeanexp.R' 'lookup.R'
+        'measles.R' 'melt.R' 'obs.R' 'ou2.R' 'parmat.R' 'parus.R'
+        'pipe.R' 'pred_mean.R' 'pred_var.R' 'show.R' 'print.R'
+        'profile_design.R' 'resample.R' 'ricker.R' 'runif_design.R'
+        'rw2.R' 'sannbox.R' 'sir.R' 'slice_design.R' 'sobol.R' 'spy.R'
+        'states.R' 'time.R' 'timezero.R' 'transformations.R'
+        'userdata.R' 'verhulst.R' 'window.R'
+RoxygenNote: 6.1.1
+NeedsCompilation: yes
+Packaged: 2019-09-04 12:16:01 UTC; kingaa
+Author: Aaron A. King [aut, cre],
+  Edward L. Ionides [aut],
+  Carles Breto [aut],
+  Stephen P. Ellner [ctb],
+  Matthew J. Ferrari [ctb],
+  Bruce E. Kendall [ctb],
+  Michael Lavine [ctb],
+  Dao Nguyen [ctb],
+  Daniel C. Reuman [ctb],
+  Helen Wearing [ctb],
+  Simon N. Wood [ctb],
+  Sebastian Funk [ctb],
+  Steven G. Johnson [ctb],
+  Eamon O'Dea [ctb]
+Maintainer: Aaron A. King <kingaa@umich.edu>
+Repository: CRAN
+Date/Publication: 2019-09-05 15:50:03 UTC

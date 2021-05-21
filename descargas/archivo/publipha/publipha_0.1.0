@@ -1,0 +1,39 @@
+Package: publipha
+Title: Bayesian Meta-Analysis with Publications Bias and P-Hacking
+Version: 0.1.0
+Authors@R: c(
+    person("Jonas", "Moss", , "jonas.gjertsen@gmail.com", role = c("aut", "cre"), 
+      comment = c(ORCID = "0000-0002-6876-6964")
+    ),
+    person("Trustees of Columbia University", role = "cph"))
+Description: Tools for Bayesian estimation of meta-analysis models that account 
+    for publications bias or p-hacking. For publication bias, this package 
+    implements a variant of the p-value based selection model of Hedges (1992)
+    <doi:10.1214/ss/1177011364> with discrete selection probabilities. It also 
+    implements the mixture of truncated normals model for p-hacking described 
+    in Moss and De Bin (2019) <arXiv:1911.12445>.
+License: GPL-3
+Depends: methods, R (>= 3.5.0), Rcpp (>= 0.12.19)
+Imports: rstan (>= 2.18.1), rstantools (>= 1.5.1), loo, truncnorm
+LinkingTo: BH (>= 1.72.0-2), Rcpp (>= 0.12.19), RcppEigen (>=
+        0.3.3.4.0), rstan (>= 2.18.1), StanHeaders (>= 2.18.0)
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: yes
+SystemRequirements: GNU make
+RoxygenNote: 7.0.2
+Suggests: testthat (>= 2.1.0), covr, knitr, rmarkdown, metafor, qtl,
+        spelling
+Collate: 'data-anderson2010.R' 'data-baskerville2012.R'
+        'data-cuddy2018.R' 'data-dang2018.R' 'data-motyl2017.R'
+        'densities-helpers.R' 'densities-mpsnorm.R'
+        'densities-phnorm.R' 'densities-psnorm.R' 'densities-snorm.R'
+        'ma.R' 'generics.R' 'publipha-package.R' 'stanmodels.R'
+        'tools.R' 'utility.R' 'zzz.R'
+Language: en-US
+Packaged: 2020-01-07 13:39:23 UTC; jonas
+Author: Jonas Moss [aut, cre] (<https://orcid.org/0000-0002-6876-6964>),
+  Trustees of Columbia University [cph]
+Maintainer: Jonas Moss <jonas.gjertsen@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-01-08 17:20:02 UTC

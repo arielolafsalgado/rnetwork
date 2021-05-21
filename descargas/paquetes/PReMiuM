@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package PReMiuM</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=PReMiuM" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="PReMiuM: Dirichlet Process Bayesian Clustering, Profile Regression" />
+<meta name="og:description" content="Bayesian clustering using a Dirichlet process mixture model. This model is an alternative to regression models, non-parametrically linking a response vector to covariate data through cluster membership. The package allows Bernoulli, Binomial, Poisson, Normal, survival and categorical response, as well as Normal and discrete covariates. It also allows for fixed effects in the response model, where a spatial CAR (conditional autoregressive) term can be also included. Additionally, predictions may be made for the response, and missing values for the covariates are handled. Several samplers and label switching moves are implemented along with diagnostic tools to assess convergence. A number of R functions for post-processing of the output are also provided. In addition to fitting mixtures, it may additionally be of interest to determine which covariates actively drive the mixture components. This is implemented in the package as variable selection. The main reference for the package is Liverani, Hastie, Azizi, Papathomas and Richardson (2015) &amp;lt;&lt;a href=&quot;https://doi.org/10.18637%2Fjss.v064.i07&quot;&gt;doi:10.18637/jss.v064.i07&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=PReMiuM" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>PReMiuM: Dirichlet Process Bayesian Clustering, Profile Regression</h2>
+<p>Bayesian clustering using a Dirichlet process mixture model. This model is an alternative to regression models, non-parametrically linking a response vector to covariate data through cluster membership. The package allows Bernoulli, Binomial, Poisson, Normal, survival and categorical response, as well as Normal and discrete covariates. It also allows for fixed effects in the response model, where a spatial CAR (conditional autoregressive) term can be also included. Additionally, predictions may be made for the response, and missing values for the covariates are handled. Several samplers and label switching moves are implemented along with diagnostic tools to assess convergence. A number of R functions for post-processing of the output are also provided. In addition to fitting mixtures, it may additionally be of interest to determine which covariates actively drive the mixture components. This is implemented in the package as variable selection. The main reference for the package is Liverani, Hastie, Azizi, Papathomas and Richardson (2015) &lt;<a href="https://doi.org/10.18637%2Fjss.v064.i07">doi:10.18637/jss.v064.i07</a>&gt;.</p>
+<table summary="Package PReMiuM summary">
+<tr>
+<td>Version:</td>
+<td>3.2.3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.4.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.13), <a href="../ggplot2/index.html">ggplot2</a> (&ge; 2.2), <a href="../cluster/index.html">cluster</a>, <a href="../plotrix/index.html">plotrix</a> (&ge;
+3.6-6), <a href="../gamlss.dist/index.html">gamlss.dist</a> (&ge; 4.3-1), <a href="../ald/index.html">ald</a> (&ge; 1.1), <a href="../data.table/index.html">data.table</a> (&ge;
+1.10.4-3), <a href="../spdep/index.html">spdep</a> (&ge; 0.7-7), <a href="../rgdal/index.html">rgdal</a> (&ge; 1.3-3)</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppEigen/index.html">RcppEigen</a> (&ge; 0.3.3.3.0), <a href="../BH/index.html">BH</a> (&ge; 1.65.0-1)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a> (&ge; 1.0.2)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-11-02</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>David I. Hastie, Silvia Liverani and Sylvia Richardson with contributions from Aurore J. Lavigne, Lucy Leigh, Lamiae Azizi, Xi Liu, Ruizhu Huang, Austin Gratton, Wei Jing</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Silvia Liverani  &#x3c;&#x6c;&#x69;&#x76;&#x65;&#x72;&#x61;&#x6e;&#x69;&#x73;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://www.silvialiverani.com/software/">http://www.silvialiverani.com/software/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>GNU make</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">PReMiuM citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="ChangeLog">ChangeLog</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Bayesian.html">Bayesian</a>, <a href="../../views/Cluster.html">Cluster</a>, <a href="../../views/Spatial.html">Spatial</a>, <a href="../../views/Survival.html">Survival</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_PReMiuM.html">PReMiuM results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package PReMiuM downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="PReMiuM.pdf"> PReMiuM.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/PReMiuM_3.2.3.tar.gz"> PReMiuM_3.2.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/PReMiuM_3.2.3.zip">PReMiuM_3.2.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/PReMiuM_3.2.3.zip">PReMiuM_3.2.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/PReMiuM_3.2.3.zip">PReMiuM_3.2.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/PReMiuM_3.2.3.tgz">PReMiuM_3.2.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/PReMiuM_3.2.3.tgz">PReMiuM_3.2.3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/PReMiuM"> PReMiuM archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=PReMiuM"><samp>https://CRAN.R-project.org/package=PReMiuM</samp></a>
+to link to this page.</p>
+</body>
+</html>

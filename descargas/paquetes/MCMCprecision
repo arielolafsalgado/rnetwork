@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package MCMCprecision</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Precision of Discrete Parameters in Transdimensional MCMC [R package MCMCprecision version 0.4.0]" />
+<meta name="citation_author" content="Daniel W. Heck" />
+<meta name="citation_publication_date" content="2019-12-05" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=MCMCprecision" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=MCMCprecision" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="MCMCprecision: Precision of Discrete Parameters in Transdimensional MCMC" />
+<meta name="og:description" content="Estimates the precision of transdimensional Markov chain Monte Carlo (MCMC) output, which is often used for Bayesian analysis of models with different dimensionality (e.g., model selection). Transdimensional MCMC (e.g., reversible jump MCMC) relies on sampling a discrete model-indicator variable to estimate the posterior model probabilities. If only few switches occur between the models, precision may be low and assessment based on the assumption of independent samples misleading. Based on the observed transition matrix of the indicator variable, the method of Heck, Overstall, Gronau, &amp;amp; Wagenmakers (2019, Statistics &amp;amp; Computing, 29, 631-643) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs11222-018-9828-0&quot;&gt;doi:10.1007/s11222-018-9828-0&lt;/a&gt;&amp;gt; draws posterior samples of the stationary distribution to (a) assess the uncertainty in the estimated posterior model probabilities and (b) estimate the effective sample size of the MCMC output." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=MCMCprecision" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>MCMCprecision: Precision of Discrete Parameters in Transdimensional MCMC</h2>
+<p>Estimates the precision of transdimensional Markov chain Monte Carlo 
+    (MCMC) output, which is often used for Bayesian analysis of models with different 
+    dimensionality (e.g., model selection). Transdimensional MCMC (e.g., reversible 
+    jump MCMC) relies on sampling a discrete model-indicator variable to estimate 
+    the posterior model probabilities. If only few switches occur between the models, 
+    precision may be low and assessment based on the assumption of independent 
+    samples misleading. Based on the observed transition matrix of the indicator 
+    variable, the method of Heck, Overstall, Gronau, &amp; Wagenmakers (2019, 
+    Statistics &amp; Computing, 29, 631-643) &lt;<a href="https://doi.org/10.1007%2Fs11222-018-9828-0">doi:10.1007/s11222-018-9828-0</a>&gt; draws 
+    posterior samples of the stationary distribution to (a) assess the uncertainty 
+    in the estimated posterior model probabilities and (b) estimate the effective 
+    sample size of the MCMC output.</p>
+<table summary="Package MCMCprecision summary">
+<tr>
+<td>Version:</td>
+<td>0.4.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, parallel, utils, stats, <a href="../Matrix/index.html">Matrix</a>, <a href="../combinat/index.html">combinat</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a>, <a href="../RcppProgress/index.html">RcppProgress</a>, <a href="../RcppEigen/index.html">RcppEigen</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../R.rsp/index.html">R.rsp</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-12-05</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Daniel W. Heck <a href="https://orcid.org/0000-0002-6302-9252"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Daniel W. Heck  &#x3c;&#x64;&#x68;&#x65;&#x63;&#x6b;&#x20;&#x61;&#x74;&#x20;&#x75;&#x6e;&#x69;&#x2d;&#x6d;&#x61;&#x72;&#x62;&#x75;&#x72;&#x67;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/danheck/MCMCprecision">https://github.com/danheck/MCMCprecision</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">MCMCprecision citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_MCMCprecision.html">MCMCprecision results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package MCMCprecision downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="MCMCprecision.pdf"> MCMCprecision.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Heck_2018_Statistics_and_Computing.pdf">Heck, Overstall, Gronau, &amp; Wagenmakers (2018, Statistics &amp; Computing): Methods implemented in MCMCprecision</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/MCMCprecision_0.4.0.tar.gz"> MCMCprecision_0.4.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/MCMCprecision_0.4.0.zip">MCMCprecision_0.4.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/MCMCprecision_0.4.0.zip">MCMCprecision_0.4.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/MCMCprecision_0.4.0.zip">MCMCprecision_0.4.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/MCMCprecision_0.4.0.tgz">MCMCprecision_0.4.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/MCMCprecision_0.4.0.tgz">MCMCprecision_0.4.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/MCMCprecision"> MCMCprecision archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package MCMCprecision reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="http://www.bioconductor.org/packages/release/bioc/html/celda.html"><span class="BioC">celda</span></a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=MCMCprecision"><samp>https://CRAN.R-project.org/package=MCMCprecision</samp></a>
+to link to this page.</p>
+</body>
+</html>

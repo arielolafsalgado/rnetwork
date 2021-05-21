@@ -1,0 +1,36 @@
+Package: robotstxt
+Date: 2018-07-18
+Type: Package
+Title: A 'robots.txt' Parser and 'Webbot'/'Spider'/'Crawler'
+        Permissions Checker
+Version: 0.6.2
+Authors@R: c(
+        person(
+          "Peter", "Meissner", role = c("aut", "cre"),
+          email = "retep.meissner@gmail.com"
+        ),
+	      person("Oliver", "Keys", role = "ctb"),
+	      person("Rich", "Fitz John", role = "ctb")
+	      )
+Description: Provides functions to download and parse 'robots.txt' files.
+        Ultimately the package makes it easy to check if bots
+        (spiders, crawler, scrapers, ...) are allowed to access specific
+        resources on a domain.
+License: MIT + file LICENSE
+LazyData: TRUE
+BugReports: https://github.com/ropensci/robotstxt/issues
+URL: https://github.com/ropensci/robotstxt
+Imports: stringr (>= 1.0.0), httr (>= 1.0.0), spiderbar (>= 0.2.0),
+        future (>= 1.6.2), future.apply (>= 1.0.0), magrittr, utils
+Suggests: knitr, rmarkdown, dplyr, testthat, covr
+Depends: R (>= 3.0.0)
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-07-18 21:00:35 UTC; peter
+Author: Peter Meissner [aut, cre],
+  Oliver Keys [ctb],
+  Rich Fitz John [ctb]
+Maintainer: Peter Meissner <retep.meissner@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-07-18 21:30:03 UTC

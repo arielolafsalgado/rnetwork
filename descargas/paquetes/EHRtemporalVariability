@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package EHRtemporalVariability</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Delineating Temporal Dataset Shifts in Electronic Health Records [R package EHRtemporalVariability version 1.1.2.1]" />
+<meta name="citation_author1" content="Carlos Sáez" />
+<meta name="citation_author2" content="Alba Gutiérrez-Sacristán" />
+<meta name="citation_author3" content="Isaac Kohane" />
+<meta name="citation_author4" content="Juan M García-Gómez" />
+<meta name="citation_author5" content="Paul Avillach" />
+<meta name="citation_publication_date" content="2020-10-09" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=EHRtemporalVariability" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=EHRtemporalVariability" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="EHRtemporalVariability: Delineating Temporal Dataset Shifts in Electronic Health Records" />
+<meta name="og:description" content="Functions to delineate temporal dataset shifts in Electronic Health Records through the projection and visualization of dissimilarities among data temporal batches. This is done through the estimation of data statistical distributions over time and their projection in non-parametric statistical manifolds, uncovering the patterns of the data latent temporal variability. 'EHRtemporalVariability' is particularly suitable for multi-modal data and categorical variables with a high number of values, common features of biomedical data where traditional statistical process control or time-series methods may not be appropriate. 'EHRtemporalVariability' allows you to explore and identify dataset shifts through visual analytics formats such as Data Temporal heatmaps and Information Geometric Temporal (IGT) plots. An additional 'EHRtemporalVariability' Shiny app can be used to load and explore the package results and even to allow the use of these functions to those users non-experienced in R coding. (Sáez et al. 2020) &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fgigascience%2Fgiaa079&quot;&gt;doi:10.1093/gigascience/giaa079&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=EHRtemporalVariability" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>EHRtemporalVariability: Delineating Temporal Dataset Shifts in Electronic Health Records</h2>
+<p>Functions to delineate temporal dataset shifts in Electronic Health 
+             Records through the projection and visualization of dissimilarities 
+             among data temporal batches. This is done through the estimation of 
+             data statistical distributions over time and their projection in 
+             non-parametric statistical manifolds, uncovering the patterns of the 
+             data latent temporal variability. 'EHRtemporalVariability' is 
+             particularly suitable for multi-modal data and categorical variables 
+             with a high number of values, common features of biomedical data where 
+             traditional statistical process control or time-series methods may not 
+             be appropriate. 'EHRtemporalVariability' allows you to explore and 
+             identify dataset shifts through visual analytics formats such as 
+             Data Temporal heatmaps and Information Geometric Temporal (IGT) plots. 
+             An additional 'EHRtemporalVariability' Shiny app can be used to load 
+             and explore the package results and even to allow the use of these 
+             functions to those users non-experienced in R coding. (Sáez et al. 2020)
+             &lt;<a href="https://doi.org/10.1093%2Fgigascience%2Fgiaa079">doi:10.1093/gigascience/giaa079</a>&gt;.</p>
+<table summary="Package EHRtemporalVariability summary">
+<tr>
+<td>Version:</td>
+<td>1.1.2.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3.0), <a href="../dplyr/index.html">dplyr</a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../plotly/index.html">plotly</a>, <a href="../zoo/index.html">zoo</a>, <a href="../xts/index.html">xts</a>, <a href="../lubridate/index.html">lubridate</a>, <a href="../RColorBrewer/index.html">RColorBrewer</a>, <a href="../viridis/index.html">viridis</a>, <a href="../scales/index.html">scales</a>, methods, <a href="../MASS/index.html">MASS</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../devtools/index.html">devtools</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/BiocStyle.html"><span class="BioC">BiocStyle</span></a>, <a href="../dbscan/index.html">dbscan</a>, <a href="../webshot/index.html">webshot</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-09</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Carlos Sáez [aut, cre],
+  Alba Gutiérrez-Sacristán [aut],
+  Isaac Kohane [aut],
+  Juan M García-Gómez [aut],
+  Paul Avillach [aut],
+  Biomedical Data Science Lab, Universitat Politècnica de València
+    (Spain) [cph],
+  Department of Biomedical Informatics, Harvard Medical School [cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Carlos Sáez  &#x3c;&#x63;&#x61;&#x72;&#x73;&#x61;&#x65;&#x73;&#x69;&#x20;&#x61;&#x74;&#x20;&#x75;&#x70;&#x76;&#x2e;&#x65;&#x73;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a> | file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/hms-dbmi/EHRtemporalVariability">https://github.com/hms-dbmi/EHRtemporalVariability</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_EHRtemporalVariability.html">EHRtemporalVariability results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package EHRtemporalVariability downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="EHRtemporalVariability.pdf"> EHRtemporalVariability.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/EHRtemporalVariability.html">EHRtemporalVariability</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/EHRtemporalVariability_1.1.2.1.tar.gz"> EHRtemporalVariability_1.1.2.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/EHRtemporalVariability_1.1.2.1.zip">EHRtemporalVariability_1.1.2.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/EHRtemporalVariability_1.1.2.1.zip">EHRtemporalVariability_1.1.2.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/EHRtemporalVariability_1.1.2.1.zip">EHRtemporalVariability_1.1.2.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/EHRtemporalVariability_1.1.2.1.tgz">EHRtemporalVariability_1.1.2.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/EHRtemporalVariability_1.1.2.1.tgz">EHRtemporalVariability_1.1.2.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/EHRtemporalVariability"> EHRtemporalVariability archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=EHRtemporalVariability"><samp>https://CRAN.R-project.org/package=EHRtemporalVariability</samp></a>
+to link to this page.</p>
+</body>
+</html>

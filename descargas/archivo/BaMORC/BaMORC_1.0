@@ -1,0 +1,33 @@
+Package: BaMORC
+Type: Package
+Title: Bayesian Model Optimized Reference Correction Method for
+        Assigned and Unassigned Protein NMR Spectra
+Version: 1.0
+Depends: R (>= 3.1.0)
+Date: 2018-10-18
+Authors@R: c( person("Xi", "Chen", email = "billchenxi@gmail.com", comment = c(ORCID="0000-0001-7094-6748"),
+                  role = c("aut", "cre")), 
+           person("Andrey", "Smelter", email = "andrey.smeltor@gmail.com", comment = c(ORCID="0000-0003-3056-9225"),
+                  role = "aut"),
+           person("Hunter", "Moseley", email = "hunter.moseley@uky.edu", comment = c(ORCID="0000-0003-3995-5368"),
+                  role = "aut")
+        )
+Description: Provides reference correction for protein NMR spectra. Bayesian Model Optimized Reference Correction (BaMORC) is utilizing Bayesian probabilistic framework to perform protein NMR referencing correction, currently for alpha and beta carbon-13 chemical shifts, without any resonance assignment and/or three-dimensional protein structure. For more detailed explanation, please refer to the paper "Automatic 13C Chemical Shift Reference Correction for Unassigned Protein NMR Spectra" <https://rdcu.be/4ly5> (Journal of Biomolecular NMR, Aug 2018)" <doi:10.1007/s10858-018-0202-5>.
+URL: https://github.com/MoseleyBioinformaticsLab/BaMORC
+BugReports: https://github.com/MoseleyBioinformaticsLab/BaMORC/issues
+License: BSD_3_clause + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: data.table, tidyr, DEoptim, httr, docopt, stringr, jsonlite,
+        readr, devtools, RBMRB, BMRBr
+RoxygenNote: 6.1.0
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-11-02 13:12:01 UTC; bill
+Author: Xi Chen [aut, cre] (<https://orcid.org/0000-0001-7094-6748>),
+  Andrey Smelter [aut] (<https://orcid.org/0000-0003-3056-9225>),
+  Hunter Moseley [aut] (<https://orcid.org/0000-0003-3995-5368>)
+Maintainer: Xi Chen <billchenxi@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-11-14 09:20:13 UTC

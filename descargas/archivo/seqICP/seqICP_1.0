@@ -1,0 +1,16 @@
+Package: seqICP
+Title: Sequential Invariant Causal Prediction
+Version: 1.0
+Author: Niklas Pfister and Jonas Peters
+Maintainer: Niklas Pfister <pfister@stat.math.ethz.ch>
+Description: Contains an implementation of invariant causal prediction for sequential data. The main function in the package is 'seqICP', which performs linear sequential invariant causal prediction and has guaranteed type I error control. For non-linear dependencies the package also contains a non-linear method 'seqICPnl', which allows to input any regression procedure and performs tests based on a permutation approach that is only approximately correct. In order to test whether an individual set S is invariant the package contains the subroutines 'seqICP.s' and 'seqICPnl.s' corresponding to the respective main methods.
+Depends: R (>= 3.2.3)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: dHSIC, mgcv, stats
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-06-27 06:31:03 UTC; pfisteni
+Repository: CRAN
+Date/Publication: 2017-06-27 06:40:14 UTC

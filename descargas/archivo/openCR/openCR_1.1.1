@@ -1,0 +1,22 @@
+Package: openCR
+Type: Package
+Title: Open Population Capture-Recapture
+Version: 1.1.1
+Depends: R (>= 3.2.0), secr (>= 3.1.5)
+Imports: utils, MASS, nlme, parallel, stats, Rcpp (>= 0.12.14),
+        stringr, plyr, abind, methods
+LinkingTo: Rcpp
+Suggests: knitr, RMark, rgdal
+VignetteBuilder: knitr
+Date: 2018-04-11
+Authors@R: person("Murray", "Efford", email = "murray.efford@otago.ac.nz", role = c("aut","cre"), comment = c(ORCID = "0000-0001-5231-5184"))
+Description: Functions for the analysis of capture-recapture data from animal populations subject to turnover. The models extend Schwarz and Arnason (1996) <DOI:10.2307/2533048> and Borchers and  Efford (2008) <DOI:10.1111/j.1541-0420.2007.00927.x>, and may be non-spatial or spatial. The parameterisation of recruitment is flexible (options include population growth rate and per capita recruitment). Spatially explicit analyses may assume home-range centres are fixed or allow dispersal between sampling sessions.
+License: GPL (>= 2)
+LazyData: yes
+LazyDataCompression: xz
+NeedsCompilation: yes
+Packaged: 2018-04-11 01:38:54 UTC; Murray
+Author: Murray Efford [aut, cre] (<https://orcid.org/0000-0001-5231-5184>)
+Maintainer: Murray Efford <murray.efford@otago.ac.nz>
+Repository: CRAN
+Date/Publication: 2018-04-12 08:48:29 UTC

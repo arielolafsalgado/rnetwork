@@ -1,0 +1,66 @@
+Type: Package
+Package: rpf
+Title: Response Probability Functions
+Version: 1.0.4
+Date: 2020-05-06
+Authors@R: 
+    c(person(given = "Joshua",
+             family = "Pritikin",
+             role = c("cre", "aut"),
+             email = "jpritikin@pobox.com"),
+      person(given = "Jonathan",
+             family = "Weeks",
+             role = "ctb",
+             email = "weeksjp@gmail.com"),
+      person(given = "Li",
+             family = "Cai",
+             role = "ctb"),
+      person(given = "Carrie",
+             family = "Houts",
+             role = "ctb"),
+      person(given = "Phil",
+             family = "Chalmers",
+             role = "ctb",
+             email = "rphilip.chalmers@gmail.com"),
+      person(given = c("Michael", "D."),
+             family = "Hunter",
+             role = "ctb"),
+      person(given = c("Carl", "F."),
+             family = "Falk",
+             role = "ctb",
+             email = "falkcarl@msu.edu"))
+Maintainer: Joshua Pritikin <jpritikin@pobox.com>
+Description: The purpose of this package is to factor out logic
+    and math common to Item Factor Analysis fitting, diagnostics, and
+    analysis. It is envisioned as core support code suitable for more
+    specialized IRT packages to build upon. Complete access to optimized C
+    functions are made available with R_RegisterCCallable().
+License: GPL (>= 3)
+URL: https://github.com/jpritikin/rpf
+Depends: methods, parallel, R (>= 2.14.0)
+Imports: Rcpp (>= 1.0.2), mvtnorm, lifecycle
+Suggests: testthat, roxygen2, ggplot2, reshape2, gridExtra, numDeriv,
+        knitr, mirt
+LinkingTo: Rcpp, RcppEigen
+VignetteBuilder: knitr
+RdMacros: lifecycle
+Encoding: UTF-8
+LazyData: yes
+LazyDataCompression: bzip2
+RoxygenNote: 7.0.2
+SystemRequirements: GNU make
+Collate: 'init.R' 'classes.R' 'fit.R' 'drm.R' 'nrm.R' 'mcm.R' 'grm.R'
+        'LSAT.R' 'sample.R' 'dataframe.R' 'diagnose.R' 'science.R'
+        'kct.R' 'openmx.R' 'flexmirt.R' 'util.R' 'lmp.R' 'grmp.R'
+        'gpcmp.R' 'RcppExports.R'
+NeedsCompilation: yes
+Packaged: 2020-05-07 02:08:10 UTC; joshua
+Author: Joshua Pritikin [cre, aut],
+  Jonathan Weeks [ctb],
+  Li Cai [ctb],
+  Carrie Houts [ctb],
+  Phil Chalmers [ctb],
+  Michael D. Hunter [ctb],
+  Carl F. Falk [ctb]
+Repository: CRAN
+Date/Publication: 2020-05-07 11:20:02 UTC

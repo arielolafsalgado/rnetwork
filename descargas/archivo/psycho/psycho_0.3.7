@@ -1,0 +1,50 @@
+Package: psycho
+Type: Package
+Title: Efficient and Publishing-Oriented Workflow for Psychological
+        Science
+Version: 0.3.7
+Authors@R: c(
+    person("Dominique", 
+        "Makowski", 
+        email = "dom.makowski@gmail.com",
+        role = c("aut", "cre", "cph"), 
+        comment = c(ORCID = "0000-0001-5375-9967")),
+    person("Hugo",
+        "Najberg",
+        role = "ctb"),
+    person("Viliam",
+        "Simko",
+        role = "ctb"),
+    person("Sasha", 
+        "Epskamp", 
+        role = "rev",
+        comment = "Sasha reviewed the package for JOSS, see https://github.com/openjournals/joss-reviews/issues/470")
+    )
+Maintainer: Dominique Makowski <dom.makowski@gmail.com>
+URL: https://github.com/neuropsychology/psycho.R
+BugReports: https://github.com/neuropsychology/psycho.R/issues
+Description: The main goal of the psycho package is to provide tools for psychologists, neuropsychologists and neuroscientists, 
+   to facilitate and speed up the time spent on data analysis. It aims at supporting best practices and tools to format the output 
+   of statistical methods to directly paste them into a manuscript, ensuring statistical reporting standardization and conformity.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.0
+Depends: R (>= 3.5.0)
+Imports: methods, dplyr, ggplot2, tidyr, stringr, purrr, psych, MASS,
+        nFactors, qgraph, ppcor, ggcorrplot, rstanarm, rstantools,
+        MuMIn, lme4, lmerTest, coda, emmeans (>= 1.2.2), broom, tibble,
+        DescTools, BayesFactor (>= 0.9.1), scales, loo (>= 2.0.0),
+        lavaan
+Suggests: knitr, rmarkdown, testthat, covr, plotly, GPArotation
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-09-13 08:51:40 UTC; Dom
+Author: Dominique Makowski [aut, cre, cph]
+    (<https://orcid.org/0000-0001-5375-9967>),
+  Hugo Najberg [ctb],
+  Viliam Simko [ctb],
+  Sasha Epskamp [rev] (Sasha reviewed the package for JOSS, see
+    https://github.com/openjournals/joss-reviews/issues/470)
+Repository: CRAN
+Date/Publication: 2018-09-13 10:20:03 UTC

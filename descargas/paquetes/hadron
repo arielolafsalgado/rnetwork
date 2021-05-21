@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package hadron</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Analysis Framework for Monte Carlo Simulation Data in Physics [R package hadron version 3.1.2]" />
+<meta name="citation_author1" content="Bartosz Kostrzewa" />
+<meta name="citation_author2" content="Johann Ostmeyer" />
+<meta name="citation_author3" content="Martin Ueding" />
+<meta name="citation_author4" content="Carsten Urbach" />
+<meta name="citation_publication_date" content="2020-09-10" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=hadron" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=hadron" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="hadron: Analysis Framework for Monte Carlo Simulation Data in Physics" />
+<meta name="og:description" content="Toolkit to perform statistical analyses of correlation functions generated from Lattice Monte Carlo simulations. In particular, a class 'cf' for correlation functions and methods to analyse those are defined. This includes (blocked) bootstrap (based on the 'boot' package) and jackknife, but also an automatic determination of integrated autocorrelation times. 'hadron' also provides a very general function bootstrap.nlsfit() to bootstrap a non-linear least squares fit. More specific functions are provided to extract hadronic quantities from Lattice Quantum Chromodynamics simulations, a particular Monte Carlo simulation,(see e.g. European Twisted Mass Collaboration, P. Boucaud et al. (2008) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.cpc.2008.06.013&quot;&gt;doi:10.1016/j.cpc.2008.06.013&lt;/a&gt;&amp;gt;). Here, to determine energy eigenvalues of hadronic states, specific fitting routines and in particular the generalised eigenvalue method (see e.g. B. Blossier et al. (2009) &amp;lt;&lt;a href=&quot;https://doi.org/10.1088%2F1126-6708%2F2009%2F04%2F094&quot;&gt;doi:10.1088/1126-6708/2009/04/094&lt;/a&gt;&amp;gt; and M. Fischer et al. (2020) &amp;lt;&lt;a href=&quot;https://inspirehep.net/literature/1792113&quot;&gt;https://inspirehep.net/literature/1792113&lt;/a&gt;&amp;gt;) are implemented. In addition, input/output and plotting routines are available." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=hadron" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>hadron: Analysis Framework for Monte Carlo Simulation Data in Physics</h2>
+<p>Toolkit to perform statistical analyses of correlation
+   functions generated from Lattice Monte Carlo simulations. In
+   particular, a class 'cf' for correlation functions and
+   methods to analyse those are defined. This includes (blocked)
+   bootstrap (based on the 'boot' package) and jackknife, but also an
+   automatic determination of integrated autocorrelation
+   times. 'hadron' also provides a very  general function
+   bootstrap.nlsfit() to bootstrap a non-linear least squares fit.
+   More specific functions are provided to extract hadronic quantities
+   from Lattice Quantum Chromodynamics simulations, a particular Monte
+   Carlo simulation,(see e.g. European Twisted Mass Collaboration, P. Boucaud et
+   al. (2008) &lt;<a href="https://doi.org/10.1016%2Fj.cpc.2008.06.013">doi:10.1016/j.cpc.2008.06.013</a>&gt;). Here, to determine
+   energy eigenvalues of hadronic states, specific fitting routines
+   and in particular the generalised eigenvalue method (see
+   e.g. B. Blossier et al. (2009) &lt;<a href="https://doi.org/10.1088%2F1126-6708%2F2009%2F04%2F094">doi:10.1088/1126-6708/2009/04/094</a>&gt;
+   and M. Fischer et al. (2020)
+   &lt;<a href="https://inspirehep.net/literature/1792113">https://inspirehep.net/literature/1792113</a>&gt;) are implemented.
+   In addition, input/output and plotting routines are available.</p>
+<table summary="Package hadron summary">
+<tr>
+<td>Version:</td>
+<td>3.1.2</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../abind/index.html">abind</a>, <a href="../boot/index.html">boot</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../Rcpp/index.html">Rcpp</a>, <a href="../R6/index.html">R6</a>, <a href="../stringr/index.html">stringr</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../minpack.lm/index.html">minpack.lm</a>, parallel, <a href="http://www.bioconductor.org/packages/release/bioc/html/rhdf5.html"><span class="BioC">rhdf5</span></a>, <a href="../knitr/index.html">knitr</a>, <a href="../testthat/index.html">testthat</a>, <a href="../tictoc/index.html">tictoc</a>, <a href="../tikzDevice/index.html">tikzDevice</a>, <a href="../hash/index.html">hash</a>, <a href="../numDeriv/index.html">numDeriv</a>, <a href="../staplr/index.html">staplr</a>, <a href="../markdown/index.html">markdown</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../errors/index.html">errors</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-10</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Bartosz Kostrzewa [aut],
+  Johann Ostmeyer [aut],
+  Martin Ueding [aut],
+  Carsten Urbach [aut, cre],
+  Nikolas Schlage [ctb],
+  Markus Werner [ctb],
+  Ferenc Pittler [ctb],
+  Matthias Fischer [ctb],
+  Vittorio Lubicz [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Carsten Urbach  &#x3c;&#x75;&#x72;&#x62;&#x61;&#x63;&#x68;&#x20;&#x61;&#x74;&#x20;&#x68;&#x69;&#x73;&#x6b;&#x70;&#x2e;&#x75;&#x6e;&#x69;&#x2d;&#x62;&#x6f;&#x6e;&#x6e;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/HISKP-LQCD/hadron/issues">https://github.com/HISKP-LQCD/hadron/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/HISKP-LQCD/hadron">https://github.com/HISKP-LQCD/hadron</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>Gnu Scientific Library version &gt;= 1.8</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_hadron.html">hadron results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package hadron downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="hadron.pdf"> hadron.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Two_Amplitudes_Model.html">Two Amplitudes Model</a><br/>
+<a href="vignettes/gevp.html">GEVP energy level extraction</a><br/>
+<a href="vignettes/hankel.html">Hankel method for energy level extraction</a><br/>
+<a href="vignettes/jackknife_cov_and_missing_values.html">Jackknife Covariance and Missing Values</a><br/>
+<a href="vignettes/jackknife_error_normalization.html">Jackknife Error Normalization</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/hadron_3.1.2.tar.gz"> hadron_3.1.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/hadron_3.1.2.zip">hadron_3.1.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/hadron_3.1.2.zip">hadron_3.1.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/hadron_3.1.2.zip">hadron_3.1.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/hadron_3.1.2.tgz">hadron_3.1.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/hadron_3.1.2.tgz">hadron_3.1.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/hadron"> hadron archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=hadron"><samp>https://CRAN.R-project.org/package=hadron</samp></a>
+to link to this page.</p>
+</body>
+</html>

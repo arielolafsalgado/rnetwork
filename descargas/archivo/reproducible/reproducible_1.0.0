@@ -1,0 +1,68 @@
+Package: reproducible
+Type: Package
+Title: A Set of Tools that Enhance Reproducibility Beyond Package
+        Management
+Description: Collection of high-level, robust, machine- and OS-independent tools
+    for making deeply reproducible and reusable content in R.
+    The three workhorse functions are Cache, prepInputs, and Require; 
+    these allow for nested caching, robust to environments, and objects with
+    environments (like functions), and data retrieval and processing, and 
+    package handling in continuous workflow environments. In all cases,
+    efforts are made to make the first and subsequent calls of functions have 
+    the same result, but vastly faster at subsequent times by way of checksums
+    and digesting. Several features are still under active development, including
+    cloud storage of cached objects, allowing for sharing between users.
+SystemRequirements: 'unrar' (Linux/macOS) or '7-Zip' (Windows) to work
+        with '.rar' files.
+URL: https://reproducible.predictiveecology.org,
+        https://github.com/PredictiveEcology/reproducible
+Date: 2020-02-19
+Version: 1.0.0
+Authors@R: c(
+    person("Eliot J B", "McIntire", email = "eliot.mcintire@canada.ca",
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0002-6914-8316")),
+    person("Alex M", "Chubaty", email = "alex.chubaty@gmail.com",
+    role = c("aut"), comment = c(ORCID = "0000-0001-7146-8135")),
+    person("Tati", "Micheletti", email = "tati.micheletti@gmail.com",
+    role = c("ctb"), comment = c(ORCID = "0000-0003-4838-8342")),
+    person("Ceres", "Barros", email = "cbarros@mail.ubc.ca",
+    role = c("ctb"), comment = c(ORCID = "0000-0003-4036-977X")),
+    person("Ian", "Eddy", email = "ian.eddy@canada.com",
+    role = c("ctb"), comment = c(ORCID = "0000-0001-7397-2116")),
+    person("Her Majesty the Queen in Right of Canada, as represented by the Minister of Natural Resources Canada",
+    role = "cph")
+    )
+Depends: R (>= 3.5)
+Imports: backports, crayon, data.table (>= 1.10.4), DBI, digest,
+        fastdigest, fpCompare, gdalUtils, glue, googledrive, httr,
+        magrittr, memoise, methods, qs, quickPlot, R.utils, raster,
+        RSQLite, remotes, rgdal, rlang, sf, sp, testthat, tools, utils,
+        versions
+Suggests: archivist (>= 2.1.2), covr, dplyr, fasterize, future, git2r
+        (>= 0.18), knitr, parallel, RCurl (>= 1.95-4.8), rgeos,
+        rmarkdown, TimeWarp
+Encoding: UTF-8
+Language: en-CA
+License: GPL-3
+VignetteBuilder: knitr, rmarkdown
+BugReports: https://github.com/PredictiveEcology/reproducible/issues
+ByteCompile: yes
+RoxygenNote: 7.0.2
+Collate: 'DBI.R' 'cache-helpers.R' 'cache-internals.R' 'cache-tools.R'
+        'robustDigest.R' 'cache.R' 'checksums.R' 'cloud.R' 'cloudOld.R'
+        'consistentPaths.R' 'convertPaths.R' 'copy.R' 'download.R'
+        'gis.R' 'git.R' 'helpers.R' 'objectSize.R' 'options.R'
+        'packages.R' 'pipe.R' 'postProcess.R' 'preProcess.R'
+        'prepInputs.R' 'reproducible-package.R' 'search.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2020-02-20 01:02:36 UTC; emcintir
+Author: Eliot J B McIntire [aut, cre] (<https://orcid.org/0000-0002-6914-8316>),
+  Alex M Chubaty [aut] (<https://orcid.org/0000-0001-7146-8135>),
+  Tati Micheletti [ctb] (<https://orcid.org/0000-0003-4838-8342>),
+  Ceres Barros [ctb] (<https://orcid.org/0000-0003-4036-977X>),
+  Ian Eddy [ctb] (<https://orcid.org/0000-0001-7397-2116>),
+  Her Majesty the Queen in Right of Canada, as represented by the
+    Minister of Natural Resources Canada [cph]
+Maintainer: Eliot J B McIntire <eliot.mcintire@canada.ca>
+Repository: CRAN
+Date/Publication: 2020-02-20 17:30:02 UTC

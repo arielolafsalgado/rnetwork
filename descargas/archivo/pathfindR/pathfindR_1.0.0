@@ -1,0 +1,30 @@
+Package: pathfindR
+Type: Package
+Title: Pathway Enrichment Analysis Utilizing Active Subnetworks
+Version: 1.0.0
+Author: Ege Ulgen, Ozan Ozisik
+Maintainer: Ege Ulgen <egeulgen@gmail.com>
+Description: Pathway enrichment analysis enables researchers to uncover mechanisms 
+    underlying the phenotype. pathfindR is a tool for pathway enrichment analysis 
+    utilizing active subnetworks. It identifies active subnetworks in a 
+    protein-protein interaction network using user-provided a list of genes. 
+    It performs pathway enrichment analyses on the identified subnetworks. 
+    pathfindR also offers functionality to cluster enriched pathways and identify 
+    representative pathways. The method is described in detail in 
+    Ulgen E, Ozisik O, Sezerman OU. 2018. pathfindR: An R Package for Pathway 
+    Enrichment Analysis Utilizing Active Subnetworks. bioRxiv. <doi:10.1101/272450>.
+License: MIT + file LICENSE
+URL: https://github.com/egeulgen/pathfindR
+BugReports: https://github.com/egeulgen/pathfindR/issues
+Encoding: UTF-8
+LazyData: true
+SystemRequirements: Java JVM 1.8
+Imports: AnnotationDbi, DBI, doParallel, foreach, rmarkdown,
+        org.Hs.eg.db
+Depends: R (>= 3.4), pathview, knitr, shiny
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-03-08 23:31:30 UTC; egeulgen
+Repository: CRAN
+Date/Publication: 2018-03-09 12:18:06 UTC

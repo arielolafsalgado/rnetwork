@@ -1,0 +1,19 @@
+Package: iterpc
+Type: Package
+Title: Efficient iterator for permutations and combinations
+Version: 0.2.2
+Date: 2014-03-28
+Author: Randy Lai [aut, cre], Martin Broadhurst [aut]
+Maintainer: Randy Lai <randy.cs.lai@gmail.com>
+Description: This package helps in 1) generating permutations and combinations with or without replacement; 2) with distinct items or non-distinct items (multiset); 3) calculating number of combinations or permutations in various situations. All generated sequences are in lexicographical order (AKA, dictionary order). The algorithms to generate permutations and combinations are memory efficient, only previous sequence is required to generate next sequence. These iteratively algorithms enable users to process all sequences without putting all results in the memory at the same time.  The algorithms are written in C/C++ and hence very computational efficient. 
+URL: https://github.com/randy3k/iterpc
+License: GPL-2
+Depends: R (>= 3.0.0)
+Imports: Rcpp (>= 0.11.0), polynom
+Suggests: testthat
+LinkingTo: Rcpp
+SystemRequirements: GNU make
+Packaged: 2014-03-29 08:53:56 UTC; Randy
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2014-03-29 10:08:08

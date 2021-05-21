@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package lax</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Loglikelihood Adjustment for Extreme Value Models [R package lax version 1.1.0]" />
+<meta name="citation_author1" content="Paul J. Northrop" />
+<meta name="citation_author2" content="Camellia Yin" />
+<meta name="citation_publication_date" content="2019-12-05" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=lax" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=lax" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="lax: Loglikelihood Adjustment for Extreme Value Models" />
+<meta name="og:description" content="Performs adjusted inferences based on model objects fitted, using maximum likelihood estimation, by the extreme value analysis packages 'evd' &amp;lt;&lt;a href=&quot;https://cran.r-project.org/package=evd&quot;&gt;https://cran.r-project.org/package=evd&lt;/a&gt;&amp;gt;, 'evir' &amp;lt;&lt;a href=&quot;https://cran.r-project.org/package=evir&quot;&gt;https://cran.r-project.org/package=evir&lt;/a&gt;&amp;gt;, 'extRemes' &amp;lt;&lt;a href=&quot;https://cran.r-project.org/package=extRemes&quot;&gt;https://cran.r-project.org/package=extRemes&lt;/a&gt;&amp;gt;, 'fExtremes' &amp;lt;&lt;a href=&quot;https://cran.r-project.org/package=fExtremes&quot;&gt;https://cran.r-project.org/package=fExtremes&lt;/a&gt;&amp;gt;, 'ismev' &amp;lt;&lt;a href=&quot;https://cran.r-project.org/package=ismev&quot;&gt;https://cran.r-project.org/package=ismev&lt;/a&gt;&amp;gt;, 'mev' &amp;lt;&lt;a href=&quot;https://cran.r-project.org/package=mev&quot;&gt;https://cran.r-project.org/package=mev&lt;/a&gt;&amp;gt;, 'POT' &amp;lt;&lt;a href=&quot;https://cran.r-project.org/package=POT&quot;&gt;https://cran.r-project.org/package=POT&lt;/a&gt;&amp;gt; and 'texmex' &amp;lt;&lt;a href=&quot;https://cran.r-project.org/package=texmex&quot;&gt;https://cran.r-project.org/package=texmex&lt;/a&gt;&amp;gt;. Adjusted standard errors and an adjusted loglikelihood are provided, using the 'chandwich' package &amp;lt;&lt;a href=&quot;https://cran.r-project.org/package=chandwich&quot;&gt;https://cran.r-project.org/package=chandwich&lt;/a&gt;&amp;gt; and the object-oriented features of the 'sandwich' package &amp;lt;&lt;a href=&quot;https://cran.r-project.org/package=sandwich&quot;&gt;https://cran.r-project.org/package=sandwich&lt;/a&gt;&amp;gt;. The adjustment is based on a robust sandwich estimator of the parameter covariance matrix, based on the methodology in Chandler and Bate (2007) &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fbiomet%2Fasm015&quot;&gt;doi:10.1093/biomet/asm015&lt;/a&gt;&amp;gt;. This can be used for cluster correlated data when interest lies in the parameters of the marginal distributions, or for performing inferences that are robust to certain types of model misspecification. Univariate extreme value models, including regression models, are supported. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=lax" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>lax: Loglikelihood Adjustment for Extreme Value Models</h2>
+<p>Performs adjusted inferences based on model objects fitted, using 
+    maximum likelihood estimation, by the extreme value analysis packages
+    'evd' &lt;<a href="https://cran.r-project.org/package=evd">https://cran.r-project.org/package=evd</a>&gt;, 
+    'evir' &lt;<a href="https://cran.r-project.org/package=evir">https://cran.r-project.org/package=evir</a>&gt;, 
+    'extRemes' &lt;<a href="https://cran.r-project.org/package=extRemes">https://cran.r-project.org/package=extRemes</a>&gt;, 
+    'fExtremes' &lt;<a href="https://cran.r-project.org/package=fExtremes">https://cran.r-project.org/package=fExtremes</a>&gt;, 
+    'ismev' &lt;<a href="https://cran.r-project.org/package=ismev">https://cran.r-project.org/package=ismev</a>&gt;, 
+    'mev' &lt;<a href="https://cran.r-project.org/package=mev">https://cran.r-project.org/package=mev</a>&gt;, 
+    'POT' &lt;<a href="https://cran.r-project.org/package=POT">https://cran.r-project.org/package=POT</a>&gt; and
+    'texmex' &lt;<a href="https://cran.r-project.org/package=texmex">https://cran.r-project.org/package=texmex</a>&gt;. 
+    Adjusted standard errors and an adjusted loglikelihood are provided, using    
+    the 'chandwich' package &lt;<a href="https://cran.r-project.org/package=chandwich">https://cran.r-project.org/package=chandwich</a>&gt;
+    and the object-oriented features of the 'sandwich' package 
+    &lt;<a href="https://cran.r-project.org/package=sandwich">https://cran.r-project.org/package=sandwich</a>&gt;. The adjustment is based on a 
+    robust sandwich estimator of the parameter covariance matrix, based on the 
+    methodology in Chandler and Bate (2007) &lt;<a href="https://doi.org/10.1093%2Fbiomet%2Fasm015">doi:10.1093/biomet/asm015</a>&gt;. This 
+    can be used for cluster correlated data when interest lies in the 
+    parameters of the marginal distributions, or for performing inferences that 
+    are robust to certain types of model misspecification.  Univariate extreme 
+    value models, including regression models, are supported.  </p>
+<table summary="Package lax summary">
+<tr>
+<td>Version:</td>
+<td>1.1.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../chandwich/index.html">chandwich</a>, graphics, <a href="../numDeriv/index.html">numDeriv</a>, <a href="../revdbayes/index.html">revdbayes</a>, <a href="../sandwich/index.html">sandwich</a>, stats, utils</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../distillery/index.html">distillery</a>, <a href="../evd/index.html">evd</a>, <a href="../evir/index.html">evir</a>, <a href="../extRemes/index.html">extRemes</a>, <a href="../fExtremes/index.html">fExtremes</a>, <a href="../ismev/index.html">ismev</a>, <a href="../knitr/index.html">knitr</a>, <a href="../mev/index.html">mev</a>, <a href="../POT/index.html">POT</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../testthat/index.html">testthat</a>, <a href="../texmex/index.html">texmex</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-12-05</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Paul J. Northrop [aut, cre, cph],
+  Camellia Yin [aut, cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Paul J. Northrop  &#x3c;&#x70;&#x2e;&#x6e;&#x6f;&#x72;&#x74;&#x68;&#x72;&#x6f;&#x70;&#x20;&#x61;&#x74;&#x20;&#x75;&#x63;&#x6c;&#x2e;&#x61;&#x63;&#x2e;&#x75;&#x6b;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="http://github.com/paulnorthrop/lax/issues">http://github.com/paulnorthrop/lax/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://paulnorthrop.github.io/lax/">https://paulnorthrop.github.io/lax/</a>,
+<a href="http://github.com/paulnorthrop/lax">http://github.com/paulnorthrop/lax</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_lax.html">lax results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package lax downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="lax.pdf"> lax.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/lax-vignette.html">An overview of lax</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/lax_1.1.0.tar.gz"> lax_1.1.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/lax_1.1.0.zip">lax_1.1.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/lax_1.1.0.zip">lax_1.1.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/lax_1.1.0.zip">lax_1.1.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/lax_1.1.0.tgz">lax_1.1.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/lax_1.1.0.tgz">lax_1.1.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/lax"> lax archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=lax"><samp>https://CRAN.R-project.org/package=lax</samp></a>
+to link to this page.</p>
+</body>
+</html>

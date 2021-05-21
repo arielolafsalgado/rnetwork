@@ -1,0 +1,36 @@
+Package: RMySQL
+Version: 0.10.11
+Title: Database Interface and 'MySQL' Driver for R
+Description: A 'DBI' interface to 'MySQL' / 'MariaDB'. The CRAN version of this package
+    contains an old branch based on legacy code from S-PLUS, which being phased out. A
+    modern rewrite based on 'Rcpp' can be obtained from the 'Github' repository.
+Authors@R: c(person("Jeroen", "Ooms", email = "jeroen@berkeley.edu", role = c("aut", "cre")),
+    person("David", "James", role = "aut"),
+    person("Saikat", "DebRoy", role = "aut"),
+    person("Hadley", "Wickham", email = "hadley@rstudio.com", role = "aut"),
+    person("Jeffrey", "Horner", role = "aut"),
+    person("RStudio", role = "cph"))
+Depends: R (>= 2.8.0), DBI (>= 0.4)
+Imports: methods
+License: GPL-2
+URL: https://github.com/rstats-db/RMySQL#readme (devel)
+        https://downloads.mariadb.org/connector-c/ (upstream)
+BugReports: https://github.com/rstats-db/rmysql/issues
+SystemRequirements: libmariadb-client-dev | libmariadb-client-lgpl-dev
+        | libmysqlclient-dev (deb), mariadb-devel (rpm), mariadb |
+        mysql-connector-c (brew), mysql56_dev (csw)
+NeedsCompilation: yes
+Collate: 'mysql.R' 'driver.R' 'connection.R' 'data-type.R' 'default.R'
+        'escaping.R' 'result.R' 'extension.R' 'is-valid.R' 'table.R'
+        'transaction.R'
+Suggests: testthat
+Packaged: 2017-03-29 09:56:34 UTC; jeroen
+Author: Jeroen Ooms [aut, cre],
+  David James [aut],
+  Saikat DebRoy [aut],
+  Hadley Wickham [aut],
+  Jeffrey Horner [aut],
+  RStudio [cph]
+Maintainer: Jeroen Ooms <jeroen@berkeley.edu>
+Repository: CRAN
+Date/Publication: 2017-03-29 10:15:02 UTC

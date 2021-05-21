@@ -1,0 +1,40 @@
+Package: phyr
+Type: Package
+Title: Model Based Phylogenetic Analysis
+Version: 1.0.1
+Authors@R: c(
+    person("Anthony", "Ives", , "arives@wisc.edu", role = c("aut")),
+    person("Russell", "Dinnage", , "r.dinnage@gmail.com", role = c("aut"), comment = c(ORCID = "0000-0003-0846-2819")),
+    person(c("Lucas", "A."), "Nell", , "lucas@lucasnell.com", role = c("aut"), comment = c(ORCID = "0000-0003-3209-0517")),
+    person("Matthew", "Helmus", , "mrhelmus@temple.edu", role = c("aut")),
+    person("Daijiang", "Li", , "daijianglee@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-0925-3421")))
+Description: A collection of functions to do model-based phylogenetic analysis. 
+    It includes functions to calculate community phylogenetic diversity,
+    to estimate correlations among functional traits while accounting for 
+    phylogenetic relationships, and to fit phylogenetic generalized linear
+    mixed models. The Bayesian phylogenetic generalized linear mixed models
+    are fitted with the 'INLA' package (<http://www.r-inla.org>).
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.1)
+Imports: stats, ape, Rcpp, Matrix, methods, graphics, dplyr, lme4,
+        nloptr, gridExtra, mvtnorm, latticeExtra
+RoxygenNote: 6.1.1
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: testthat, pez, tidyr, knitr, rmarkdown, covr, picante,
+        rbenchmark, INLA, MCMCglmm, logistf, phylolm
+VignetteBuilder: knitr
+URL: https://github.com/daijiang/phyr/
+BugReports: https://github.com/daijiang/phyr/issues
+Additional_repositories: https://inla.r-inla-download.org/R/stable/
+NeedsCompilation: yes
+Packaged: 2019-11-10 03:06:25 UTC; dli
+Author: Anthony Ives [aut],
+  Russell Dinnage [aut] (<https://orcid.org/0000-0003-0846-2819>),
+  Lucas A. Nell [aut] (<https://orcid.org/0000-0003-3209-0517>),
+  Matthew Helmus [aut],
+  Daijiang Li [aut, cre] (<https://orcid.org/0000-0002-0925-3421>)
+Maintainer: Daijiang Li <daijianglee@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-11-10 11:20:02 UTC

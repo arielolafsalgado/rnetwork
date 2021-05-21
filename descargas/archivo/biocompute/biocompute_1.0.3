@@ -1,0 +1,39 @@
+Package: biocompute
+Type: Package
+Title: Create and Manipulate BioCompute Objects
+Version: 1.0.3
+Authors@R: c(
+    person("Nan", "Xiao", email = "nan.xiao@sevenbridges.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0250-5673")),
+    person("Soner", "Koc", email = "soner.koc@sevenbridges.com", role = c("aut")),
+    person("Dennis", "Dean", email = "dennis.dean@sevenbridges.com", role = c("aut"),
+           comment = c(ORCID = "0000-0002-7621-9717")),
+    person("Seven Bridges Genomics", role = c("cph", "fnd"))
+    )
+Maintainer: Nan Xiao <nan.xiao@sevenbridges.com>
+Description: Tools to create, validate, and export BioCompute Objects
+    described in King et al. (2019) <doi:10.17605/osf.io/h59uh>.
+    Users can encode information in data frames, and compose
+    BioCompute Objects from the domains defined by the standard.
+    A checksum validator and a JSON schema validator are provided.
+    This package also supports exporting BioCompute Objects as JSON,
+    PDF, HTML, or 'Word' documents, and exporting to cloud-based platforms.
+License: AGPL-3
+VignetteBuilder: knitr
+URL: https://sbg.github.io/biocompute/,
+        https://github.com/sbg/biocompute
+BugReports: https://github.com/sbg/biocompute/issues
+Encoding: UTF-8
+LazyData: true
+Imports: methods, jsonlite, yaml, digest, uuid, jsonvalidate, httr,
+        curl, crayon, cli, stringr, magrittr, rmarkdown
+Suggests: knitr
+RoxygenNote: 7.0.0
+NeedsCompilation: no
+Packaged: 2019-11-22 20:01:28 UTC; nanx
+Author: Nan Xiao [aut, cre] (<https://orcid.org/0000-0002-0250-5673>),
+  Soner Koc [aut],
+  Dennis Dean [aut] (<https://orcid.org/0000-0002-7621-9717>),
+  Seven Bridges Genomics [cph, fnd]
+Repository: CRAN
+Date/Publication: 2019-11-28 17:00:02 UTC

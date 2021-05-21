@@ -1,0 +1,35 @@
+Package: timevis
+Title: Create Interactive Timeline Visualizations in R
+Version: 0.4
+Authors@R: c(
+    person("Dean", "Attali", email = "daattali@gmail.com",
+      role = c("aut", "cre"), comment = "R interface"),
+    person(family = "Almende B.V.", role = c("aut", "cph"),
+       comment = "vis.js library, http://visjs.org, http://www.almende.com/home")
+      )
+Description: Create rich and fully interactive timeline visualizations.
+    Timelines can be included in Shiny apps and R markdown documents, or viewed
+    from the R console and RStudio Viewer. 'timevis' includes an extensive API
+    to manipulate a timeline after creation, and supports getting data out of
+    the visualization into R. Based on the 'vis.js' Timeline module and the
+    'htmlwidgets' R package.
+URL: https://github.com/daattali/timevis,
+        http://daattali.com/shiny/timevis-demo/
+BugReports: https://github.com/daattali/timevis/issues
+Depends: R (>= 3.1.0)
+Imports: htmltools (>= 0.2.6), htmlwidgets (>= 0.6), jsonlite,
+        magrittr, methods, rmarkdown, shiny
+Suggests: knitr (>= 1.7), testthat (>= 0.9.1),
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-09-16 22:00:03 UTC; Dean
+Author: Dean Attali [aut, cre] (R interface),
+  Almende B.V. [aut, cph] (vis.js library, http://visjs.org,
+    http://www.almende.com/home)
+Maintainer: Dean Attali <daattali@gmail.com>
+Repository: CRAN
+Date/Publication: 2016-09-17 01:21:26

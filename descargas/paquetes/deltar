@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package deltar</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=deltar" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="deltar: Calculation of Delta R Values" />
+<meta name="og:description" content="Computes the regional correction factor of 14C age offset in marine-derived samples (Delta R). This is possible with the recently established &quot;marine13&quot; calibration curve and the 'BchronCalibrate' function from the 'Bchron' package. The algorithm of Delta R computation includes four steps: measure radiocarbon age of a marine sample; identify its true age; compute its modeled radiocarbon age corresponding to the true age; and finally calculate the difference between its measured and modeled radiocarbon ages. This package has functions that compute Delta R with three methods: by using marine samples with known collection dates (before 1950s), usually molluscan shells from museum collections, (function dr_shell()); by measuring other radioactive isotopes, mainly uranium-thorium (230Th/234U), ratio (dr_pair() function and the &quot;pair&quot; method in the dr_df() function); and finally by using a pair of coeval samples, one being marine and the other terrestrial (dr_pair() function and the &quot;pair&quot; method for the dr_df() function as well). Usually such samples originate from archaeological sites where the context, in which paired samples were found, is taken as a guarantee of their synchronicity. References: Oeschger H, Siegenthaler U, Schotterer U, Gugelmann A (1975) &amp;lt;&lt;a href=&quot;https://doi.org/10.3402%2Ftellusa.v27i2.9900&quot;&gt;doi:10.3402/tellusa.v27i2.9900&lt;/a&gt;&amp;gt; Reimer PJ, Bard E, Bayliss A, Beck JW, Blackwell PG, Bronk Ramsey C, Buck CE, Cheng H, Edwards RL, Friedrich M, Grootes PM, Guilderson TP, Haflidason H, Hajdas I, Hatté C, Heaton TJ, Hoffmann DL, Hogg AG, Hughen KA, Kaiser KF, Kromer B, Manning SW, Niu M, Reimer RW, Richards DA, Scott EM, Southon JR, Staff RA, Turney CSM, van der Plicht J (2013) &amp;lt;&lt;a href=&quot;https://doi.org/10.2458%2Fazu_js_rc.55.16947&quot;&gt;doi:10.2458/azu_js_rc.55.16947&lt;/a&gt;&amp;gt; Soulet G (2015) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.quageo.2015.05.023&quot;&gt;doi:10.1016/j.quageo.2015.05.023&lt;/a&gt;&amp;gt; Stuiver M, Braziunas TF (1993) &amp;lt;&lt;a href=&quot;https://doi.org/10.1017%2FS0033822200013874&quot;&gt;doi:10.1017/S0033822200013874&lt;/a&gt;&amp;gt; ." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=deltar" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>deltar: Calculation of Delta R Values</h2>
+<p>Computes the regional correction factor of 14C age offset in marine-derived samples (Delta R). This is possible with the recently established "marine13" calibration curve and the 'BchronCalibrate' function from the 'Bchron' package. The algorithm of Delta R computation includes four steps: measure radiocarbon age of a marine sample; identify its true age; compute its modeled radiocarbon age corresponding to the true age; and finally calculate the difference between its measured and modeled radiocarbon ages. This package has functions that compute Delta R with three methods: by using marine samples with known collection dates (before 1950s), usually molluscan shells from museum collections, (function dr_shell()); by measuring other radioactive isotopes, mainly uranium-thorium (230Th/234U), ratio (dr_pair() function and the "pair" method in the dr_df() function); and finally by using a pair of coeval samples, one being marine and the other terrestrial (dr_pair() function and the "pair" method for the dr_df() function as well). Usually such samples originate from archaeological sites where the context, in which paired samples were found, is taken as a guarantee of their synchronicity.  
+ References: 
+ Oeschger H, Siegenthaler U, Schotterer U, Gugelmann A (1975) &lt;<a href="https://doi.org/10.3402%2Ftellusa.v27i2.9900">doi:10.3402/tellusa.v27i2.9900</a>&gt;
+ Reimer PJ, Bard E, Bayliss A, Beck JW, Blackwell PG, Bronk Ramsey C, Buck CE, Cheng H, Edwards RL, Friedrich M, Grootes PM, Guilderson TP, Haflidason H, Hajdas I, Hatté C, Heaton TJ, Hoffmann DL, Hogg AG, Hughen KA, Kaiser KF, Kromer B, Manning SW, Niu M, Reimer RW, Richards DA, Scott EM, Southon JR, Staff RA, Turney CSM, van der Plicht J (2013) &lt;<a href="https://doi.org/10.2458%2Fazu_js_rc.55.16947">doi:10.2458/azu_js_rc.55.16947</a>&gt;
+ Soulet G (2015) &lt;<a href="https://doi.org/10.1016%2Fj.quageo.2015.05.023">doi:10.1016/j.quageo.2015.05.023</a>&gt;
+ Stuiver M, Braziunas TF (1993) &lt;<a href="https://doi.org/10.1017%2FS0033822200013874">doi:10.1017/S0033822200013874</a>&gt; .</p>
+<table summary="Package deltar summary">
+<tr>
+<td>Version:</td>
+<td>1.0.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.15.2)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Bchron/index.html">Bchron</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2017-08-30</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Bulat Khasanov, Timur Khasanov</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Timur Khasanov  &#x3c;&#x74;&#x2e;&#x62;&#x2e;&#x6b;&#x68;&#x61;&#x73;&#x61;&#x6e;&#x6f;&#x76;&#x20;&#x61;&#x74;&#x20;&#x79;&#x61;&#x6e;&#x64;&#x65;&#x78;&#x2e;&#x72;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/teemour/deltaR">https://github.com/teemour/deltaR</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_deltar.html">deltar results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package deltar downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="deltar.pdf"> deltar.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/deltar_1.0.0.tar.gz"> deltar_1.0.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/deltar_1.0.0.zip">deltar_1.0.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/deltar_1.0.0.zip">deltar_1.0.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/deltar_1.0.0.zip">deltar_1.0.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/deltar_1.0.0.tgz">deltar_1.0.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/deltar_1.0.0.tgz">deltar_1.0.0.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=deltar"><samp>https://CRAN.R-project.org/package=deltar</samp></a>
+to link to this page.</p>
+</body>
+</html>

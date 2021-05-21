@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package gdalcubes</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Earth Observation Data Cubes from Satellite Image Collections [R package gdalcubes version 0.3.1]" />
+<meta name="citation_author" content="Marius Appel" />
+<meta name="citation_publication_date" content="2020-08-27" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=gdalcubes" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=gdalcubes" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="gdalcubes: Earth Observation Data Cubes from Satellite Image Collections" />
+<meta name="og:description" content="Processing collections of Earth observation images as on-demand multispectral, multitemporal raster data cubes. Users define cubes by spatiotemporal extent, resolution, and spatial reference system and let 'gdalcubes' automatically apply cropping, reprojection, and resampling using the 'Geospatial Data Abstraction Library' ('GDAL'). Implemented functions on data cubes include reduction over space and time, applying arithmetic expressions on pixel band values, moving window aggregates over time, filtering by space, time, bands, and predicates on pixel values, exporting data cubes as 'netCDF' or 'GeoTIFF' files, and plotting. The package implements lazy evaluation and multithreading. All computational parts are implemented in C++, linking to the 'GDAL', 'netCDF', 'CURL', and 'SQLite' libraries. See Appel and Pebesma (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.3390%2Fdata4030092&quot;&gt;doi:10.3390/data4030092&lt;/a&gt;&amp;gt; for further details." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=gdalcubes" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>gdalcubes: Earth Observation Data Cubes from Satellite Image Collections</h2>
+<p>Processing collections of Earth observation images as on-demand multispectral, multitemporal raster data cubes. Users
+    define cubes by spatiotemporal extent, resolution, and spatial reference system and let 'gdalcubes' automatically apply cropping, reprojection, and 
+    resampling using the 'Geospatial Data Abstraction Library' ('GDAL'). Implemented functions on data cubes include reduction over space and time, 
+    applying arithmetic expressions on pixel band values, moving window aggregates over time, filtering by space, time, bands, and predicates on pixel values, 
+    exporting data cubes as 'netCDF' or 'GeoTIFF' files, and plotting.  The package implements lazy evaluation and 
+    multithreading. All computational parts are implemented in C++, linking to the 'GDAL', 'netCDF', 'CURL', and 'SQLite' libraries. 
+    See Appel and Pebesma (2019) &lt;<a href="https://doi.org/10.3390%2Fdata4030092">doi:10.3390/data4030092</a>&gt; for further details.</p>
+<table summary="Package gdalcubes summary">
+<tr>
+<td>Version:</td>
+<td>0.3.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.4)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppProgress/index.html">RcppProgress</a>, <a href="../jsonlite/index.html">jsonlite</a>, <a href="../ncdf4/index.html">ncdf4</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppProgress/index.html">RcppProgress</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../magrittr/index.html">magrittr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../stars/index.html">stars</a>, <a href="../magick/index.html">magick</a>, <a href="../sf/index.html">sf</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-08-27</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Marius Appel <a href="https://orcid.org/0000-0001-5281-3896"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Edzer Pebesma <a href="https://orcid.org/0000-0001-8049-7069"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Roger Bivand [ctb],
+  Lewis Van Winkle [cph],
+  Ole Christian Eidheim [cph],
+  Howard Hinnant [cph],
+  Adrian Colomitchi [cph],
+  Florian Dang [cph],
+  Paul Thompson [cph],
+  Tomasz Kamiński [cph],
+  Dropbox, Inc. [cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Marius Appel  &#x3c;&#x6d;&#x61;&#x72;&#x69;&#x75;&#x73;&#x2e;&#x61;&#x70;&#x70;&#x65;&#x6c;&#x20;&#x61;&#x74;&#x20;&#x75;&#x6e;&#x69;&#x2d;&#x6d;&#x75;&#x65;&#x6e;&#x73;&#x74;&#x65;&#x72;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/appelmar/gdalcubes_R/issues/">https://github.com/appelmar/gdalcubes_R/issues/</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>Copyright:</td>
+<td>file inst/COPYRIGHTS <br/>  <a href="COPYRIGHTS">gdalcubes copyright details</a> </td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/appelmar/gdalcubes_R">https://github.com/appelmar/gdalcubes_R</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>cxx11, gdal, libgdal, libproj, netcdf4</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">gdalcubes citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_gdalcubes.html">gdalcubes results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package gdalcubes downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="gdalcubes.pdf"> gdalcubes.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/MODIS.html">1. Processing MODIS data with gdalcubes</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/gdalcubes_0.3.1.tar.gz"> gdalcubes_0.3.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/gdalcubes_0.3.1.zip">gdalcubes_0.3.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/gdalcubes_0.3.1.zip">gdalcubes_0.3.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/gdalcubes_0.3.1.zip">gdalcubes_0.3.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/gdalcubes_0.3.1.tgz">gdalcubes_0.3.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/gdalcubes_0.3.1.tgz">gdalcubes_0.3.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/gdalcubes"> gdalcubes archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package gdalcubes reverse dependencies">
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../theiaR/index.html">theiaR</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=gdalcubes"><samp>https://CRAN.R-project.org/package=gdalcubes</samp></a>
+to link to this page.</p>
+</body>
+</html>

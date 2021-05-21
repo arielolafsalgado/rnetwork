@@ -1,0 +1,32 @@
+Package: qicharts
+Version: 0.4.3
+Date: 2015-12-19
+Title: Quality Improvement Charts
+Authors@R: c(person("Jacob", "Anhoej",
+    email = "jacob@anhoej.net",
+    role = c("aut", "cre")),
+    person("Timo", "Roeder", role = "ctb"))
+Description: Functions for making run charts and  basic Shewhart control
+    charts for measure and count data.
+    The main function, qic(), creates run and control charts and has a
+    simple interface with a rich set of options to control data analysis
+    and plotting, including options for automatic data aggregation by
+    subgroups, easy analysis of before-and-after data, exclusion of one
+    or more data points from analysis, and splitting charts into
+    sequential time periods.
+    Missing values and empty subgroups are handled gracefully.
+Depends: R (>= 3.0.0)
+Imports: lattice, latticeExtra, graphics, grDevices, stats, ggplot2,
+        scales
+Suggests: knitr
+VignetteBuilder: knitr
+License: GPL-3
+LazyData: true
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2015-12-19 22:07:46 UTC; jacob
+Author: Jacob Anhoej [aut, cre],
+  Timo Roeder [ctb]
+Maintainer: Jacob Anhoej <jacob@anhoej.net>
+Repository: CRAN
+Date/Publication: 2015-12-20 09:16:21

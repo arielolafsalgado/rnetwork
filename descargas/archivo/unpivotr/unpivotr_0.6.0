@@ -1,0 +1,30 @@
+Package: unpivotr
+Title: Unpivot Complex and Irregular Data Layouts
+Version: 0.6.0
+Authors@R: c(
+    person("Duncan", "Garmonsway", email = "nacnudus@gmail.com", role = c("aut", "cre"))
+    )
+Description: Tools for converting data from complex or irregular layouts to a
+    columnar structure.  For example, tables with multilevel column or row
+    headers, or spreadsheets.  Header and data cells are selected by their
+    contents and position, as well as formatting and comments where available,
+    and are associated with one other by their proximity in given directions.
+    Functions for data frames and HTML tables are provided.
+Depends: R (>= 3.2.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: methods, rlang, magrittr, dplyr, forcats, purrr, tidyr,
+        pillar, tibble (>= 2.1.1), cellranger, xml2, tidyselect
+URL: https://github.com/nacnudus/unpivotr
+BugReports: https://github.com/nacnudus/unpivotr/issues
+RoxygenNote: 7.1.0
+Suggests: knitr, rmarkdown, readr, tidyxl, readxl, stringr, htmltools,
+        rvest, selectr, DT, testthat, covr, here
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-05-08 16:25:56 UTC; nacnudus
+Author: Duncan Garmonsway [aut, cre]
+Maintainer: Duncan Garmonsway <nacnudus@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-05-08 17:50:02 UTC

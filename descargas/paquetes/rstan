@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package rstan</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="R Interface to Stan [R package rstan version 2.21.2]" />
+<meta name="citation_author1" content="Jiqiang Guo" />
+<meta name="citation_author2" content="Jonah Gabry" />
+<meta name="citation_author3" content="Ben Goodrich" />
+<meta name="citation_author4" content="Sebastian Weber" />
+<meta name="citation_publication_date" content="2020-07-27" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=rstan" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=rstan" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="rstan: R Interface to Stan" />
+<meta name="og:description" content="User-facing R functions are provided to parse, compile, test, estimate, and analyze Stan models by accessing the header-only Stan library provided by the 'StanHeaders' package. The Stan project develops a probabilistic programming language that implements full Bayesian statistical inference via Markov Chain Monte Carlo, rough Bayesian inference via 'variational' approximation, and (optionally penalized) maximum likelihood estimation via optimization. In all three cases, automatic differentiation is used to quickly and accurately evaluate gradients without burdening the user with the need to derive the partial derivatives." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=rstan" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>rstan: R Interface to Stan</h2>
+<p>User-facing R functions are provided to parse, compile, test,
+    estimate, and analyze Stan models by accessing the header-only Stan library
+    provided by the 'StanHeaders' package. The Stan project develops a probabilistic
+    programming language that implements full Bayesian statistical inference
+    via Markov Chain Monte Carlo, rough Bayesian inference via 'variational'
+    approximation, and (optionally penalized) maximum likelihood estimation via
+    optimization. In all three cases, automatic differentiation is used to quickly
+    and accurately evaluate gradients without burdening the user with the need to
+    derive the partial derivatives.</p>
+<table summary="Package rstan summary">
+<tr>
+<td>Version:</td>
+<td>2.21.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.4.0), <a href="../StanHeaders/index.html">StanHeaders</a> (&ge; 2.21.0), <a href="../ggplot2/index.html">ggplot2</a> (&ge; 3.0.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>methods, stats4, <a href="../inline/index.html">inline</a>, <a href="../gridExtra/index.html">gridExtra</a> (&ge; 2.0.0), <a href="../Rcpp/index.html">Rcpp</a> (&ge;
+0.12.0), <a href="../RcppParallel/index.html">RcppParallel</a> (&ge; 5.0.1), <a href="../loo/index.html">loo</a> (&ge; 2.3.0), <a href="../pkgbuild/index.html">pkgbuild</a>, <a href="../withr/index.html">withr</a>, <a href="../V8/index.html">V8</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.0), <a href="../RcppEigen/index.html">RcppEigen</a> (&ge; 0.3.3.3.0), <a href="../BH/index.html">BH</a> (&ge;
+1.72.0-2), <a href="../StanHeaders/index.html">StanHeaders</a> (&ge; 2.21.0), <a href="../RcppParallel/index.html">RcppParallel</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../RUnit/index.html">RUnit</a>, <a href="../RcppEigen/index.html">RcppEigen</a> (&ge; 0.3.3.3.0), <a href="../BH/index.html">BH</a> (&ge; 1.72.0-2), parallel, <a href="../KernSmooth/index.html">KernSmooth</a>, <a href="../shinystan/index.html">shinystan</a> (&ge; 2.3.0), <a href="../bayesplot/index.html">bayesplot</a> (&ge; 1.5.0), <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../rstantools/index.html">rstantools</a>, <a href="../rstudioapi/index.html">rstudioapi</a>, <a href="../Matrix/index.html">Matrix</a>, <a href="../knitr/index.html">knitr</a> (&ge; 1.15.1)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-07-27</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Jiqiang Guo [aut],
+  Jonah Gabry [aut],
+  Ben Goodrich [cre, aut],
+  Sebastian Weber [aut],
+  Daniel Lee [ctb],
+  Krzysztof Sakrejda [ctb],
+  Modrak Martin [ctb],
+  Trustees of Columbia University [cph],
+  Oleg Sklyar [cph] (R/cxxfunplus.R),
+  The R Core Team [cph] (R/pairs.R, R/dynGet.R),
+  Jens Oehlschlaegel-Akiyoshi [cph] (R/pairs.R),
+  John Maddock [cph] (gamma.hpp),
+  Paul Bristow [cph] (gamma.hpp),
+  Nikhar Agrawal [cph] (gamma.hpp),
+  Christopher Kormanyos [cph] (gamma.hpp),
+  Bronder Steve [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Ben Goodrich  &#x3c;&#x62;&#x65;&#x6e;&#x6a;&#x61;&#x6d;&#x69;&#x6e;&#x2e;&#x67;&#x6f;&#x6f;&#x64;&#x72;&#x69;&#x63;&#x68;&#x20;&#x61;&#x74;&#x20;&#x63;&#x6f;&#x6c;&#x75;&#x6d;&#x62;&#x69;&#x61;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/stan-dev/rstan/issues/">https://github.com/stan-dev/rstan/issues/</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL (&ge; 3)</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://mc-stan.org/rstan">https://mc-stan.org/rstan</a>, <a href="https://discourse.mc-stan.org">https://discourse.mc-stan.org</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>GNU make, pandoc</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">rstan citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Bayesian.html">Bayesian</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_rstan.html">rstan results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package rstan downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="rstan.pdf"> rstan.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/SBC.html">Simulation Based Calibration</a><br/>
+<a href="vignettes/external.html">Interfacing with External C++ Code</a><br/>
+<a href="vignettes/rstan.html">RStan</a><br/>
+<a href="vignettes/stanfit-objects.html">stanfit objects</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/rstan_2.21.2.tar.gz"> rstan_2.21.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/rstan_2.21.2.zip">rstan_2.21.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/rstan_2.21.2.zip">rstan_2.21.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/rstan_2.21.2.zip">rstan_2.21.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/rstan_2.21.1.tgz">rstan_2.21.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/rstan_2.21.2.tgz">rstan_2.21.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/rstan"> rstan archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package rstan reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="http://www.bioconductor.org/packages/release/bioc/html/banocc.html"><span class="BioC">banocc</span></a>, <a href="../BayesianFROC/index.html">BayesianFROC</a>, <a href="../bayesvl/index.html">bayesvl</a>, <a href="../bmscstan/index.html">bmscstan</a>, <a href="../clinDR/index.html">clinDR</a>, <a href="../CopulaDTA/index.html">CopulaDTA</a>, <a href="../dfped/index.html">dfped</a>, <a href="../dfpk/index.html">dfpk</a>, <a href="../DrBats/index.html">DrBats</a>, <a href="../edstan/index.html">edstan</a>, <a href="../evidence/index.html">evidence</a>, <a href="../fergm/index.html">fergm</a>, <a href="../GPRMortality/index.html">GPRMortality</a>, <a href="../HCT/index.html">HCT</a>, <a href="../iCARH/index.html">iCARH</a>, <a href="../JMbayes/index.html">JMbayes</a>, <a href="../MADPop/index.html">MADPop</a>, <a href="../MIXFIM/index.html">MIXFIM</a>, <a href="../psrwe/index.html">psrwe</a>, <a href="../tmbstan/index.html">tmbstan</a>, <a href="../varian/index.html">varian</a>, <a href="../visit/index.html">visit</a>, <a href="../walker/index.html">walker</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../adnuts/index.html">adnuts</a>, <a href="../baggr/index.html">baggr</a>, <a href="../BANOVA/index.html">BANOVA</a>, <a href="../bayes4psy/index.html">bayes4psy</a>, <a href="../bayesbr/index.html">bayesbr</a>, <a href="../bayesdfa/index.html">bayesdfa</a>, <a href="../BayesSenMC/index.html">BayesSenMC</a>, <a href="../beanz/index.html">beanz</a>, <a href="../bellreg/index.html">bellreg</a>, <a href="../bkmrhat/index.html">bkmrhat</a>, <a href="../blavaan/index.html">blavaan</a>, <a href="../bmgarch/index.html">bmgarch</a>, <a href="../bmlm/index.html">bmlm</a>, <a href="../breathteststan/index.html">breathteststan</a>, <a href="../brms/index.html">brms</a>, <a href="../bsem/index.html">bsem</a>, <a href="../CausalQueries/index.html">CausalQueries</a>, <a href="../cbq/index.html">cbq</a>, <a href="../CNVRG/index.html">CNVRG</a>, <a href="../conStruct/index.html">conStruct</a>, <a href="../ctsem/index.html">ctsem</a>, <a href="../DAMisc/index.html">DAMisc</a>, <a href="../dclone/index.html">dclone</a>, <a href="../DCPO/index.html">DCPO</a>, <a href="../DeLorean/index.html">DeLorean</a>, <a href="../densEstBayes/index.html">densEstBayes</a>, <a href="../eggCounts/index.html">eggCounts</a>, <a href="../EpiNow2/index.html">EpiNow2</a>, <a href="../fishflux/index.html">fishflux</a>, <a href="../gastempt/index.html">gastempt</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/genphen.html"><span class="BioC">genphen</span></a>, <a href="../ggfan/index.html">ggfan</a>, <a href="../glmmfields/index.html">glmmfields</a>, <a href="../gppm/index.html">gppm</a>, <a href="../hBayesDM/index.html">hBayesDM</a>, <a href="../hsstan/index.html">hsstan</a>, <a href="../idem/index.html">idem</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/IgGeneUsage.html"><span class="BioC">IgGeneUsage</span></a>, <a href="../llbayesireg/index.html">llbayesireg</a>, <a href="../MCMCvis/index.html">MCMCvis</a>, <a href="../metaBMA/index.html">metaBMA</a>, <a href="../MetaStan/index.html">MetaStan</a>, <a href="../mrbayes/index.html">mrbayes</a>, <a href="../multinma/index.html">multinma</a>, <a href="../OncoBayes2/index.html">OncoBayes2</a>, <a href="../pcFactorStan/index.html">pcFactorStan</a>, <a href="../pivmet/index.html">pivmet</a>, <a href="../PosteriorBootstrap/index.html">PosteriorBootstrap</a>, <a href="../prophet/index.html">prophet</a>, <a href="../publipha/index.html">publipha</a>, <a href="../qmix/index.html">qmix</a>, <a href="../rater/index.html">rater</a>, <a href="../RBesT/index.html">RBesT</a>, <a href="../Rlgt/index.html">Rlgt</a>, <a href="../rmdcev/index.html">rmdcev</a>, <a href="../rmsb/index.html">rmsb</a>, <a href="../rstanarm/index.html">rstanarm</a>, <a href="../rstanemax/index.html">rstanemax</a>, <a href="../rstap/index.html">rstap</a>, <a href="../shinybrms/index.html">shinybrms</a>, <a href="../shinystan/index.html">shinystan</a>, <a href="../spatialfusion/index.html">spatialfusion</a>, <a href="../spsurv/index.html">spsurv</a>, <a href="../ssMousetrack/index.html">ssMousetrack</a>, <a href="../survHE/index.html">survHE</a>, <a href="../themetagenomics/index.html">themetagenomics</a>, <a href="../thurstonianIRT/index.html">thurstonianIRT</a>, <a href="../trialr/index.html">trialr</a>, <a href="../YPBP/index.html">YPBP</a>, <a href="../YPPE/index.html">YPPE</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;linking&nbsp;to:</td>
+<td><a href="../baggr/index.html">baggr</a>, <a href="../bayes4psy/index.html">bayes4psy</a>, <a href="../bayesbr/index.html">bayesbr</a>, <a href="../bayesdfa/index.html">bayesdfa</a>, <a href="../beanz/index.html">beanz</a>, <a href="../bellreg/index.html">bellreg</a>, <a href="../blavaan/index.html">blavaan</a>, <a href="../bmgarch/index.html">bmgarch</a>, <a href="../bmlm/index.html">bmlm</a>, <a href="../breathteststan/index.html">breathteststan</a>, <a href="../bsem/index.html">bsem</a>, <a href="../CausalQueries/index.html">CausalQueries</a>, <a href="../cbq/index.html">cbq</a>, <a href="../CNVRG/index.html">CNVRG</a>, <a href="../conStruct/index.html">conStruct</a>, <a href="../ctsem/index.html">ctsem</a>, <a href="../DCPO/index.html">DCPO</a>, <a href="../DeLorean/index.html">DeLorean</a>, <a href="../densEstBayes/index.html">densEstBayes</a>, <a href="../dfpk/index.html">dfpk</a>, <a href="../eggCounts/index.html">eggCounts</a>, <a href="../EpiNow2/index.html">EpiNow2</a>, <a href="../fishflux/index.html">fishflux</a>, <a href="../gastempt/index.html">gastempt</a>, <a href="../glmmfields/index.html">glmmfields</a>, <a href="../hBayesDM/index.html">hBayesDM</a>, <a href="../hsstan/index.html">hsstan</a>, <a href="../idem/index.html">idem</a>, <a href="../MADPop/index.html">MADPop</a>, <a href="../metaBMA/index.html">metaBMA</a>, <a href="../MetaStan/index.html">MetaStan</a>, <a href="../mrbayes/index.html">mrbayes</a>, <a href="../multinma/index.html">multinma</a>, <a href="../OncoBayes2/index.html">OncoBayes2</a>, <a href="../pcFactorStan/index.html">pcFactorStan</a>, <a href="../prophet/index.html">prophet</a>, <a href="../psrwe/index.html">psrwe</a>, <a href="../publipha/index.html">publipha</a>, <a href="../qmix/index.html">qmix</a>, <a href="../rater/index.html">rater</a>, <a href="../RBesT/index.html">RBesT</a>, <a href="../Rlgt/index.html">Rlgt</a>, <a href="../rmdcev/index.html">rmdcev</a>, <a href="../rmsb/index.html">rmsb</a>, <a href="../rstanarm/index.html">rstanarm</a>, <a href="../rstanemax/index.html">rstanemax</a>, <a href="../rstap/index.html">rstap</a>, <a href="../spsurv/index.html">spsurv</a>, <a href="../ssMousetrack/index.html">ssMousetrack</a>, <a href="../survHE/index.html">survHE</a>, <a href="../thurstonianIRT/index.html">thurstonianIRT</a>, <a href="../tmbstan/index.html">tmbstan</a>, <a href="../trialr/index.html">trialr</a>, <a href="../visit/index.html">visit</a>, <a href="../walker/index.html">walker</a>, <a href="../YPBP/index.html">YPBP</a>, <a href="../YPPE/index.html">YPPE</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../bayesImageS/index.html">bayesImageS</a>, <a href="../bayesplot/index.html">bayesplot</a>, <a href="../BayesPostEst/index.html">BayesPostEst</a>, <a href="../bayestestR/index.html">bayestestR</a>, <a href="../bridgesampling/index.html">bridgesampling</a>, <a href="../broom.mixed/index.html">broom.mixed</a>, <a href="../concurve/index.html">concurve</a>, <a href="../effectsize/index.html">effectsize</a>, <a href="../finalfit/index.html">finalfit</a>, <a href="../ggmcmc/index.html">ggmcmc</a>, <a href="../loo/index.html">loo</a>, <a href="../modeltime/index.html">modeltime</a>, <a href="../pollimetry/index.html">pollimetry</a>, <a href="../RoBMA/index.html">RoBMA</a>, <a href="../rstantools/index.html">rstantools</a>, <a href="../sjstats/index.html">sjstats</a>, <a href="../SoupX/index.html">SoupX</a>, <a href="../StanHeaders/index.html">StanHeaders</a>, <a href="../tidybayes/index.html">tidybayes</a>, <a href="../unifed/index.html">unifed</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;enhances:</td>
+<td><a href="../mrregression/index.html">mrregression</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=rstan"><samp>https://CRAN.R-project.org/package=rstan</samp></a>
+to link to this page.</p>
+</body>
+</html>

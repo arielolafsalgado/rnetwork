@@ -1,0 +1,33 @@
+Package: rplos
+Title: Interface to the Search 'API' for 'PLoS' Journals
+Description: A programmatic interface to the 'SOLR' based
+    search 'API' (http://api.plos.org/) provided by the Public
+    Library of Science journals to search their articles.
+    Functions are included for searching for articles, retrieving
+    articles, making plots, doing 'faceted' searches,
+    'highlight' searches, and viewing results of 'highlighted'
+    searches in a browser.
+Version: 0.5.6
+License: MIT + file LICENSE
+Authors@R: c(
+    person("Scott", "Chamberlain", role = c("aut", "cre"), email = "myrmecocystus@gmail.com"),
+    person("Carl", "Boettiger", role = "aut", email = "cboettig@gmail.com"),
+    person("Karthik", "Ram", role = "aut", email = "karthik.ram@gmail.com")
+    )
+URL: https://github.com/ropensci/rplos
+BugReports: https://github.com/ropensci/rplos/issues
+LazyData: true
+VignetteBuilder: knitr
+Imports: methods, utils, stats, ggplot2, httr (>= 1.0.0), jsonlite,
+        dplyr, plyr, lubridate, reshape2, whisker, solr (<= 0.1.6)
+Suggests: XML, testthat, knitr
+Enhances: tm
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-02-15 22:15:25 UTC; sacmac
+Author: Scott Chamberlain [aut, cre],
+  Carl Boettiger [aut],
+  Karthik Ram [aut]
+Maintainer: Scott Chamberlain <myrmecocystus@gmail.com>
+Repository: CRAN
+Date/Publication: 2016-02-16 00:13:29

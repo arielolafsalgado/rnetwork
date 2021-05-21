@@ -1,0 +1,35 @@
+Package: raceland
+Title: Pattern-Based Zoneless Method for Analysis and Visualization of
+        Racial Topography
+Version: 1.0.7
+Authors@R: 
+    c(person(given = "Jakub", family = "Nowosad", role = c("aut", "cre"), 
+    email = "nowosad.jakub@gmail.com", comment = c(ORCID = "0000-0002-1057-3721")),
+    person("Anna", "Dmowska", role = c("aut")),
+    person("Tomasz", "Stepinski", role = c("aut")))
+Description: Implements a computational framework for a pattern-based, 
+    zoneless analysis, and visualization of (ethno)racial topography. It is a reimagined
+    approach for analyzing residential segregation and racial diversity based on 
+    the concept of 'landscape’ used in the domain of landscape ecology.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+Depends: R (>= 3.5)
+LinkingTo: Rcpp, comat (>= 0.7.0), RcppArmadillo
+Imports: fasterize, methods, plotwidgets, raster, rgdal, sf, Rcpp,
+        comat
+Suggests: dplyr, pbapply, testthat (>= 2.1.0), knitr, rmarkdown,
+        RColorBrewer, covr
+VignetteBuilder: knitr
+SystemRequirements: C++11
+URL: https://nowosad.github.io/raceland/
+BugReports: https://github.com/Nowosad/raceland/issues
+NeedsCompilation: yes
+Packaged: 2020-03-26 08:04:50 UTC; jn
+Author: Jakub Nowosad [aut, cre] (<https://orcid.org/0000-0002-1057-3721>),
+  Anna Dmowska [aut],
+  Tomasz Stepinski [aut]
+Maintainer: Jakub Nowosad <nowosad.jakub@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-03-26 08:40:03 UTC

@@ -1,0 +1,40 @@
+Package: futureheatwaves
+Type: Package
+Title: Find, Characterize, and Explore Heat Waves in Climate
+        Projections
+Version: 1.0.0
+Date: 2016-03-23
+Authors@R: c(
+    person("Brooke", "Anderson", , "brooke.anderson@colostate.edu",
+    c("aut", "cre")),
+    person("Colin", "Eason", , "aimesce@gmail.com", c("aut")),
+    person("Elizabeth", "Barnes", , "eabarnes@atmos.colostate.edu", c("aut"))
+    )
+Description: Inputs a directory of climate projection files and, for each,
+    identifies and characterizes heat waves for specified study locations. The
+    definition used to identify heat waves can be customized. Heat wave
+    characterizations include several metrics of heat wave length, intensity,
+    and timing in the year. The heat waves that are identified can be
+    explored using a function to apply user-created functions across all
+    generated heat wave files.This work was supported in part by grants from
+    the National Institute of Environmental Health Sciences (R00ES022631), the
+    National Science Foundation (1331399), and the Colorado State University
+    Vice President for Research.
+License: GPL-2
+LazyData: TRUE
+Depends: R (>= 2.10)
+Imports: dplyr (>= 0.4.3), ggplot2 (>= 2.0.0), ggthemes (>= 3.0.0),
+        Rcpp (>= 0.12.3)
+Suggests: gridExtra (>= 2.0.0), knitr (>= 1.10.5), mapproj (>= 1.2.4),
+        maps (>= 3.0.2), rmarkdown (>= 0.7.0), testthat (>= 0.11.0)
+VignetteBuilder: knitr
+RoxygenNote: 5.0.1
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2016-03-24 05:45:34 UTC; brookeanderson
+Author: Brooke Anderson [aut, cre],
+  Colin Eason [aut],
+  Elizabeth Barnes [aut]
+Maintainer: Brooke Anderson <brooke.anderson@colostate.edu>
+Repository: CRAN
+Date/Publication: 2016-03-25 00:53:23

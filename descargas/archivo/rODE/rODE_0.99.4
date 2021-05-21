@@ -1,0 +1,30 @@
+Package: rODE
+Type: Package
+Title: Ordinary Differential Equation (ODE) Solvers Written in R Using
+        S4 Classes
+Version: 0.99.4
+Author: Alfonso R. Reyes <alfonso.reyes@oilgainsanalytics.com>
+Maintainer: Alfonso R. Reyes <alfonso.reyes@oilgainsanalytics.com>
+Description: Show Physics and engineering students how an ODE solver
+    is made and how effective classes can be for the construction of
+    the equations that describe how effective classes can be for the 
+    construction of equations that describe the natural phenomena. Most 
+    of the ideas come from the book on "Computer Simulations in Physics" 
+    by Harvey Gould, Jan Tobochnik, and Wolfgang Christian. 
+    Book link: <http://www.compadre.org/osp/items/detail.cfm?ID=7375>.
+Depends: R (>= 3.3.0)
+License: GPL-2
+Encoding: UTF-8
+Imports: methods, data.table
+LazyData: true
+Suggests: knitr, testthat, rmarkdown, ggplot2, dplyr, tidyr
+RoxygenNote: 6.0.1
+Collate: 'ode_generics.R' 'ODESolver.R' 'ODE.R' 'AbstractODESolver.R'
+        'ODEAdaptiveSolver.R' 'DormandPrince45.R' 'Euler.R'
+        'EulerRichardson.R' 'RK4.R' 'RK45.R' 'Verlet.R'
+        'rODE-package.r' 'utils.R'
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-05-27 17:24:51 UTC; msfz751
+Repository: CRAN
+Date/Publication: 2017-05-28 06:20:06 UTC

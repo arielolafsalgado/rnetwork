@@ -1,0 +1,34 @@
+Package: etl
+Type: Package
+Title: Extract-Transform-Load Framework for Medium Data
+Version: 0.3.8
+Authors@R: c(
+    person("Ben", "Baumer", email = "ben.baumer@gmail.com",
+      role = c("aut", "cre")),
+    person("Carson", "Sievert", email = "cpsievert1@gmail.com", role = "ctb"))
+Maintainer: Ben Baumer <ben.baumer@gmail.com>
+Description: A predictable and pipeable framework for performing ETL 
+    (extract-transform-load) operations on publicly-accessible medium-sized data 
+    set. This package sets up the method structure and implements generic 
+    functions. Packages that depend on this package download specific data sets 
+    from the Internet, clean them up, and import them into a local or remote 
+    relational database management system.
+License: CC0
+LazyData: TRUE
+Imports: DBI, datasets, downloader, janitor, lubridate, methods,
+        stringr, readr, rlang, rvest, tibble, usethis, utils, xml2
+Depends: R (>= 2.10), dplyr
+Suggests: dbplyr, knitr, macleish, RSQLite, RPostgreSQL, RMySQL,
+        ggplot2, testthat, rmarkdown
+URL: http://github.com/beanumber/etl
+BugReports: https://github.com/beanumber/etl/issues
+RoxygenNote: 7.0.2
+Encoding: UTF-8
+VignetteBuilder: knitr, rmarkdown, etl, macleish, ggplot2, dplyr,
+        dbplyr
+NeedsCompilation: no
+Packaged: 2019-12-18 17:06:35 UTC; bbaumer
+Author: Ben Baumer [aut, cre],
+  Carson Sievert [ctb]
+Repository: CRAN
+Date/Publication: 2019-12-18 18:20:02 UTC

@@ -1,0 +1,38 @@
+Package: unitizer
+Title: Interactive R Unit Tests
+Description: Simplifies regression tests by comparing objects produced by test
+    code with earlier versions of those same objects.  If objects are unchanged
+    the tests pass, otherwise execution stops with error details.  If in
+    interactive mode, tests can be reviewed through the provided interactive
+    environment.
+Version: 1.4.2
+Authors@R: c(
+    person(
+    "Brodie", "Gaslam", email="brodie.gaslam@yahoo.com",
+    role=c("aut", "cre"))
+    )
+Depends: methods
+Imports: stats, utils, crayon (>= 1.3.2), diffobj (>= 0.1.5.9000)
+VignetteBuilder: knitr
+Suggests: covr, knitr, rmarkdown, testthat, devtools
+License: GPL (>= 2)
+LazyData: true
+URL: https://github.com/brodieG/unitizer
+BugReports: https://github.com/brodieG/unitizer/issues
+Collate: 'asciiml.R' 'capture.R' 'is.R' 'global.R' 'change.R'
+        'class_unions.R' 'list.R' 'conditions.R' 'item.R' 'deparse.R'
+        'text.R' 'item.sub.R' 'section.R' 'test.R' 'unitizer.R'
+        'exec.R' 'prompt.R' 'browse.struct.R' 'browse.R' 'demo.R'
+        'diff.R' 'faux_prompt.R' 'get.R' 'heal.R' 'load.R' 'ls.R'
+        'misc.R' 'search.R' 'options.R' 'onload.R' 'parse.R' 'rename.R'
+        'repairenvs.R' 'result.R' 'shims.R' 'size.R' 'state.R'
+        'state.compare.R' 'testfuns.R' 'translate.R' 'unitize.R'
+        'unitize.core.R' 'unitizer-package.r' 'unitizer.add.R'
+        'upgrade.R'
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-04-07 00:37:47 UTC; brodie
+Author: Brodie Gaslam [aut, cre]
+Maintainer: Brodie Gaslam <brodie.gaslam@yahoo.com>
+Repository: CRAN
+Date/Publication: 2017-04-09 14:44:33 UTC

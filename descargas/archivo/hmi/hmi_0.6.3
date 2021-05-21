@@ -1,0 +1,36 @@
+Package: hmi
+Type: Package
+Title: Hierarchical Multiple Imputation
+Version: 0.6.3
+Authors@R: c(
+    person("Matthias", "Speidel", , "matthias.speidel@googlemail.com", role = c("aut", "cre"),
+    comment = "Institute for Employment Research, Nuremberg, Germany"),
+    person("Joerg", "Drechsler", role = "aut",
+    comment = "Institute for Employment Research, Nuremberg, Germany"),
+    person("Shahab", "Jolani", role = "aut",
+    comment = "Maastricht University, Maastricht, The Netherlands"))
+Maintainer: Matthias Speidel <matthias.speidel@googlemail.com>
+Description: Runs single level and multilevel imputation models. The user just has to pass the data to the main function and, optionally, his analysis model. Basically the package then translates this analysis model into commands to impute the data according to it with functions from 'mice', 'MCMCglmm' or routines build for this package.
+BugReports: http://github.com/matthiasspeidel/hmi/issues
+Imports: boot (>= 1.3-18), coda (>= 0.18-1), linLIR (>= 1.1), lme4 (>=
+        1.1-12), MASS (>= 7.3-45), Matrix (>= 1.2), MCMCglmm (>=
+        2.22.1), mice (>= 2.25), msm (>= 1.6.4), mvtnorm (>= 1.0-5),
+        pbivnorm (>= 0.6.0), stats (>= 3.0.0), tmvtnorm (>= 1.4-10),
+        tree (>= 1.0-37), utils, Rcpp
+Suggests: knitr, rmarkdown
+Depends: R (>= 3.0.0)
+License: GPL-3
+LazyData: TRUE
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+URL: http://github.com/matthiasspeidel/hmi
+NeedsCompilation: no
+Packaged: 2017-03-27 16:04:59 UTC; Matthias
+Author: Matthias Speidel [aut, cre] (Institute for Employment Research,
+    Nuremberg, Germany),
+  Joerg Drechsler [aut] (Institute for Employment Research, Nuremberg,
+    Germany),
+  Shahab Jolani [aut] (Maastricht University, Maastricht, The
+    Netherlands)
+Repository: CRAN
+Date/Publication: 2017-03-27 16:21:51 UTC

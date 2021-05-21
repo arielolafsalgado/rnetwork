@@ -1,0 +1,35 @@
+Type: Package
+Package: lacunaritycovariance
+Title: Gliding Box Lacunarity and Other Metrics for 2D Random Closed
+        Sets
+Version: 1.0-8
+Date: 2019-07-21
+Author: Kassel Liam Hingee
+Maintainer: Kassel Liam Hingee <kassel.hingee@research.uwa.edu.au>
+Description: Functions for estimating the gliding box lacunarity (GBL),
+    covariance, and pair-correlation of a random closed set (RACS) in 2D
+    from a binary coverage map (e.g. presence-absence land cover maps).
+    Contains a number of newly-developed covariance-based estimators of
+    GBL (Hingee et al., 2019) <doi:10.1007/s13253-019-00351-9> and
+    balanced estimators, proposed by Picka (2000)
+    <http://www.jstor.org/stable/1428408>, for covariance, centred
+    covariance, and pair-correlation.  Also contains methods for
+    estimating contagion-like properties of RACS and simulating 2D Boolean
+    models.  Binary coverage maps are usually represented as raster images
+    with pixel values of TRUE, FALSE or NA, with NA representing
+    unobserved pixels.  A demo for extracting such a binary map from a
+    geospatial data format is provided.  Binary maps may also be
+    represented using polygonal sets as the foreground, however for most
+    computations such maps are converted into raster images.  The package
+    is based on research conducted during the author's PhD studies.
+License: GPL (>= 2)
+URL: https://github.com/kasselhingee/lacunaritycovariance
+Depends: spatstat
+Imports: RcppRoll
+Suggests: raster, maptools, rgdal, testthat
+ByteCompile: true
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-07-21 05:54:56 UTC; tearcor
+Repository: CRAN
+Date/Publication: 2019-07-24 07:50:06 UTC

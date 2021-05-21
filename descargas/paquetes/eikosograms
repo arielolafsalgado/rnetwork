@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package eikosograms</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="The Picture of Probability [R package eikosograms version 0.1.1]" />
+<meta name="citation_author1" content="Wayne Oldford" />
+<meta name="citation_author2" content="Erle Holgersen" />
+<meta name="citation_author3" content="Ben Lafreniere" />
+<meta name="citation_author4" content="Tianlu Zhu" />
+<meta name="citation_publication_date" content="2018-08-22" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=eikosograms" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=eikosograms" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="eikosograms: The Picture of Probability" />
+<meta name="og:description" content="An eikosogram (ancient Greek for probability picture) divides the unit square into rectangular regions whose areas, sides, and widths, represent various probabilities associated with the values of one or more categorical variates. Rectangle areas are joint probabilities, widths are always marginal (though possibly joint margins, i.e. marginal joint distributions of two or more variates), and heights of rectangles are always conditional probabilities. Eikosograms embed the rules of probability and are useful for introducing elementary probability theory, including axioms, marginal, conditional, and joint probabilities, and their relationships (including Bayes theorem as a completely trivial consequence). They are markedly superior to Venn diagrams for this purpose, especially in distinguishing probabilistic independence, mutually exclusive events, coincident events, and associations. They also are useful for identifying and understanding conditional independence structure. As data analysis tools, eikosograms display categorical data in a manner similar to Mosaic plots, especially when only two variates are involved (the only case in which they are essentially identical, though eikosograms purposely disallow spacing between rectangles). Unlike Mosaic plots, eikosograms do not alternate axes as each new categorical variate (beyond two) is introduced. Instead, only one categorical variate, designated the &quot;response&quot;, presents on the vertical axis and all others, designated the &quot;conditioning&quot; variates, appear on the horizontal. In this way, conditional probability appears only as height and marginal probabilities as widths. The eikosogram is therefore much better suited to a response model analysis (e.g. logistic model) than is a Mosaic plot. Mosaic plots are better suited to log-linear style modelling as in discrete multivariate analysis. Of course, eikosograms are also suited to discrete multivariate analysis with each variate in turn appearing as the response. This makes it better suited than Mosaic plots to discrete graphical models based on conditional independence graphs (i.e. &quot;Bayesian Networks&quot; or &quot;BayesNets&quot;). The eikosogram and its superiority to Venn diagrams in teaching probability is described in W.H. Cherry and R.W. Oldford (2003) &amp;lt;&lt;a href=&quot;https://math.uwaterloo.ca/~rwoldfor/papers/eikosograms/paper.pdf&quot;&gt;https://math.uwaterloo.ca/~rwoldfor/papers/eikosograms/paper.pdf&lt;/a&gt;&amp;gt;, its value in exploring conditional independence structure and relation to graphical and log-linear models is described in R.W. Oldford (2003) &amp;lt;&lt;a href=&quot;https://math.uwaterloo.ca/~rwoldfor/papers/eikosograms/independence/paper.pdf&quot;&gt;https://math.uwaterloo.ca/~rwoldfor/papers/eikosograms/independence/paper.pdf&lt;/a&gt;&amp;gt;, and a number of problems, puzzles, and paradoxes that are easily explained with eikosograms are given in R.W. Oldford (2003) &amp;lt;&lt;a href=&quot;https://math.uwaterloo.ca/~rwoldfor/papers/eikosograms/examples/paper.pdf&quot;&gt;https://math.uwaterloo.ca/~rwoldfor/papers/eikosograms/examples/paper.pdf&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=eikosograms" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>eikosograms: The Picture of Probability</h2>
+<p>An eikosogram (ancient Greek for probability picture) divides the unit square 
+    into rectangular regions whose areas, sides, and widths, represent various probabilities
+    associated with the values of one or more categorical variates.
+    Rectangle areas are joint probabilities, widths are always marginal (though possibly joint 
+    margins, i.e. marginal joint distributions of two or more variates), and heights of rectangles
+    are always conditional probabilities.
+    Eikosograms embed the rules of probability and are useful for introducing elementary probability
+    theory, including axioms, marginal, conditional, and joint probabilities, and their
+    relationships (including Bayes theorem as a completely trivial consequence).
+    They are markedly superior to Venn diagrams for this purpose, especially in distinguishing
+    probabilistic independence, mutually exclusive events, coincident events, and associations.
+    They also are useful for identifying and understanding conditional independence structure.
+    As data analysis tools, eikosograms display categorical data in a manner similar
+    to Mosaic plots, especially when only two variates are involved (the only case in which
+    they are essentially identical, though eikosograms purposely disallow spacing between rectangles).
+    Unlike Mosaic plots, eikosograms do not alternate axes as each new categorical variate 
+    (beyond two) is introduced.  
+    Instead, only one categorical variate, designated the "response", presents on the vertical axis 
+    and all others, designated the "conditioning" variates, appear on the horizontal. 
+    In this way, conditional probability appears only as height and marginal probabilities as widths. 
+    The eikosogram is therefore much better suited to a response model analysis (e.g. logistic model)
+    than is a Mosaic plot.  
+    Mosaic plots are better suited to log-linear style modelling as in discrete multivariate analysis.
+    Of course, eikosograms are also suited to discrete multivariate analysis with each variate in turn 
+    appearing as the response. 
+    This makes it better suited than Mosaic plots to discrete graphical models based on conditional 
+    independence graphs (i.e. "Bayesian Networks" or "BayesNets").  
+    The eikosogram and its superiority to Venn diagrams in teaching probability is described in
+    W.H. Cherry and R.W. Oldford (2003) &lt;<a href="https://math.uwaterloo.ca/~rwoldfor/papers/eikosograms/paper.pdf">https://math.uwaterloo.ca/~rwoldfor/papers/eikosograms/paper.pdf</a>&gt;, 
+    its value in exploring conditional independence structure and relation to graphical and log-linear models
+    is described in R.W. Oldford (2003) &lt;<a href="https://math.uwaterloo.ca/~rwoldfor/papers/eikosograms/independence/paper.pdf">https://math.uwaterloo.ca/~rwoldfor/papers/eikosograms/independence/paper.pdf</a>&gt;,
+    and a number of problems, puzzles, and paradoxes that are easily explained with eikosograms are given in
+    R.W. Oldford (2003) &lt;<a href="https://math.uwaterloo.ca/~rwoldfor/papers/eikosograms/examples/paper.pdf">https://math.uwaterloo.ca/~rwoldfor/papers/eikosograms/examples/paper.pdf</a>&gt;.</p>
+<table summary="Package eikosograms summary">
+<tr>
+<td>Version:</td>
+<td>0.1.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.1.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../plyr/index.html">plyr</a>, grid</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../gridExtra/index.html">gridExtra</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2018-08-22</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Wayne Oldford [aut, cre],
+  Erle Holgersen [aut],
+  Ben Lafreniere [aut],
+  Tianlu Zhu [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Wayne Oldford  &#x3c;&#x72;&#x77;&#x6f;&#x6c;&#x64;&#x66;&#x6f;&#x72;&#x64;&#x20;&#x61;&#x74;&#x20;&#x75;&#x77;&#x61;&#x74;&#x65;&#x72;&#x6c;&#x6f;&#x6f;&#x2e;&#x63;&#x61;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/rwoldford/eikosograms">https://github.com/rwoldford/eikosograms</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_eikosograms.html">eikosograms results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package eikosograms downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="eikosograms.pdf"> eikosograms.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/DataAnalysis.html">Data analysis with eikosograms - different data structure examples</a><br/>
+<a href="vignettes/IndependenceExploration.html">Exploring independence relations between two and three variates</a><br/>
+<a href="vignettes/Introduction.html">Introduction to eikosograms - construction and interpretation</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/eikosograms_0.1.1.tar.gz"> eikosograms_0.1.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/eikosograms_0.1.1.zip">eikosograms_0.1.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/eikosograms_0.1.1.zip">eikosograms_0.1.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/eikosograms_0.1.1.zip">eikosograms_0.1.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/eikosograms_0.1.1.tgz">eikosograms_0.1.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/eikosograms_0.1.1.tgz">eikosograms_0.1.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/eikosograms"> eikosograms archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=eikosograms"><samp>https://CRAN.R-project.org/package=eikosograms</samp></a>
+to link to this page.</p>
+</body>
+</html>

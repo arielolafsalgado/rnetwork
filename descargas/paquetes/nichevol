@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package nichevol</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Tools for Ecological Niche Evolution Assessment Considering Uncertainty [R package nichevol version 0.1.19]" />
+<meta name="citation_author1" content="Marlon E. Cobos" />
+<meta name="citation_author2" content="Hannah L. Owens" />
+<meta name="citation_author3" content="A. Townsend Peterson" />
+<meta name="citation_publication_date" content="2020-03-02" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=nichevol" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=nichevol" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="nichevol: Tools for Ecological Niche Evolution Assessment Considering Uncertainty" />
+<meta name="og:description" content="A collection of tools that allow users to perform critical steps in the process of assessing ecological niche evolution over phylogenies, with uncertainty incorporated explicitly in reconstructions. The method proposed here for ancestral reconstruction of ecological niches characterizes species' niches using a bin-based approach that incorporates uncertainty in estimations. Compared to other existing methods, the approaches presented here reduce risk of overestimation of amounts and rates of ecological niche evolution. The main analyses include: initial exploration of environmental data in occurrence records and accessible areas, preparation of data for phylogenetic analyses, executing comparative phylogenetic analyses of ecological niches, and plotting for interpretations. Details on the theoretical background and methods used can be found in: Peterson et al. (1999) &amp;lt;&lt;a href=&quot;https://doi.org/10.1126%2Fscience.285.5431.1265&quot;&gt;doi:10.1126/science.285.5431.1265&lt;/a&gt;&amp;gt;, Soberon and Peterson (2005) &amp;lt;&lt;a href=&quot;https://doi.org/10.17161%2Fbi.v2i0.4&quot;&gt;doi:10.17161/bi.v2i0.4&lt;/a&gt;&amp;gt;, Peterson (2011) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fj.1365-2699.2010.02456.x&quot;&gt;doi:10.1111/j.1365-2699.2010.02456.x&lt;/a&gt;&amp;gt;, Barve et al. (2011) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fecog.02671&quot;&gt;doi:10.1111/ecog.02671&lt;/a&gt;&amp;gt;, Owens et al. (2013) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.ecolmodel.2013.04.011&quot;&gt;doi:10.1016/j.ecolmodel.2013.04.011&lt;/a&gt;&amp;gt;, and Saupe et al. (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fsysbio%2Fsyx084&quot;&gt;doi:10.1093/sysbio/syx084&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=nichevol" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>nichevol: Tools for Ecological Niche Evolution Assessment Considering
+Uncertainty</h2>
+<p>A collection of tools that allow users to perform critical steps 
+    in the process of assessing ecological niche evolution over phylogenies, with
+    uncertainty incorporated explicitly in reconstructions. The method proposed
+    here for ancestral reconstruction of ecological niches characterizes species'
+    niches using a bin-based approach that incorporates uncertainty in estimations.
+    Compared to other existing methods, the approaches presented here reduce risk
+    of overestimation of amounts and rates of ecological niche evolution. The
+    main analyses include: initial exploration of environmental data in occurrence
+    records and accessible areas, preparation of data for phylogenetic analyses,
+    executing comparative phylogenetic analyses of ecological niches, and plotting
+    for interpretations. Details on the theoretical background and methods used 
+    can be found in: Peterson et al. (1999) &lt;<a href="https://doi.org/10.1126%2Fscience.285.5431.1265">doi:10.1126/science.285.5431.1265</a>&gt;,
+    Soberon and Peterson (2005) &lt;<a href="https://doi.org/10.17161%2Fbi.v2i0.4">doi:10.17161/bi.v2i0.4</a>&gt;,
+    Peterson (2011) &lt;<a href="https://doi.org/10.1111%2Fj.1365-2699.2010.02456.x">doi:10.1111/j.1365-2699.2010.02456.x</a>&gt;,
+    Barve et al. (2011) &lt;<a href="https://doi.org/10.1111%2Fecog.02671">doi:10.1111/ecog.02671</a>&gt;, 
+    Owens et al. (2013) &lt;<a href="https://doi.org/10.1016%2Fj.ecolmodel.2013.04.011">doi:10.1016/j.ecolmodel.2013.04.011</a>&gt;, and
+    Saupe et al. (2018) &lt;<a href="https://doi.org/10.1093%2Fsysbio%2Fsyx084">doi:10.1093/sysbio/syx084</a>&gt;.</p>
+<table summary="Package nichevol summary">
+<tr>
+<td>Version:</td>
+<td>0.1.19</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td><a href="../ape/index.html">ape</a> (&ge; 5.3), R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../castor/index.html">castor</a> (&ge; 1.4), <a href="../concaveman/index.html">concaveman</a> (&ge; 1.0), <a href="../geiger/index.html">geiger</a> (&ge; 2.0), graphics (&ge; 3.6), grDevices (&ge; 3.6), <a href="../raster/index.html">raster</a> (&ge; 2.6), <a href="../rgdal/index.html">rgdal</a> (&ge; 1.2), <a href="../rgeos/index.html">rgeos</a> (&ge; 0.5), <a href="../sf/index.html">sf</a> (&ge; 0.8), <a href="../sp/index.html">sp</a> (&ge; 1.3), <a href="../stringr/index.html">stringr</a> (&ge;
+1.4), stats (&ge; 3.6), utils (&ge; 3.6)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a> (&ge; 1.25), <a href="../phytools/index.html">phytools</a> (&ge; 0.6)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-03-02</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Marlon E. Cobos [aut, cre],
+  Hannah L. Owens [aut],
+  A. Townsend Peterson [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Marlon E. Cobos  &#x3c;&#x6d;&#x61;&#x6e;&#x75;&#x62;&#x69;&#x6f;&#x31;&#x33;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/marlonecobos/nichevol/issues">https://github.com/marlonecobos/nichevol/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/marlonecobos/nichevol">https://github.com/marlonecobos/nichevol</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_nichevol.html">nichevol results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package nichevol downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="nichevol.pdf"> nichevol.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/nichevol_0.1.19.tar.gz"> nichevol_0.1.19.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/nichevol_0.1.19.zip">nichevol_0.1.19.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/nichevol_0.1.19.zip">nichevol_0.1.19.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/nichevol_0.1.19.zip">nichevol_0.1.19.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/nichevol_0.1.19.tgz">nichevol_0.1.19.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/nichevol_0.1.19.tgz">nichevol_0.1.19.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=nichevol"><samp>https://CRAN.R-project.org/package=nichevol</samp></a>
+to link to this page.</p>
+</body>
+</html>

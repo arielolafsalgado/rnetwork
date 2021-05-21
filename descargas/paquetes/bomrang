@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package bomrang</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Australian Government Bureau of Meteorology ('BOM') Data Client [R package bomrang version 0.7.1]" />
+<meta name="citation_author1" content="Adam H. Sparks" />
+<meta name="citation_author2" content="Jonathan Carroll" />
+<meta name="citation_author3" content="James Goldie" />
+<meta name="citation_author4" content="Dean Marchiori" />
+<meta name="citation_author5" content="Paul Melloy" />
+<meta name="citation_author6" content="Mark Padgham" />
+<meta name="citation_author7" content="Hugh Parsonage" />
+<meta name="citation_author8" content="Keith Pembleton" />
+<meta name="citation_publication_date" content="2020-09-28" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=bomrang" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=bomrang" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="bomrang: Australian Government Bureau of Meteorology ('BOM') Data Client" />
+<meta name="og:description" content="Provides functions to interface with Australian Government Bureau of Meteorology ('BOM') data, fetching data and returning a data frame of precis forecasts, historical and current weather data from stations, agriculture bulletin data, 'BOM' 0900 or 1500 weather bulletins and downloading and importing radar and satellite imagery files. Data (c) Australian Government Bureau of Meteorology Creative Commons (CC) Attribution 3.0 licence or Public Access Licence (PAL) as appropriate. See &amp;lt;&lt;a href=&quot;http://www.bom.gov.au/other/copyright.shtml&quot;&gt;http://www.bom.gov.au/other/copyright.shtml&lt;/a&gt;&amp;gt; for further details." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=bomrang" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>bomrang: Australian Government Bureau of Meteorology ('BOM') Data Client</h2>
+<p>Provides functions to interface with Australian Government Bureau
+    of Meteorology ('BOM') data, fetching data and returning a data frame of
+    precis forecasts, historical and current weather data from stations,
+    agriculture bulletin data, 'BOM' 0900 or 1500 weather bulletins and
+    downloading and importing radar and satellite imagery files.  Data (c)
+    Australian Government Bureau of Meteorology Creative Commons (CC)
+    Attribution 3.0 licence or Public Access Licence (PAL) as appropriate.  See
+    &lt;<a href="http://www.bom.gov.au/other/copyright.shtml">http://www.bom.gov.au/other/copyright.shtml</a>&gt; for further details.</p>
+<table summary="Package bomrang summary">
+<tr>
+<td>Version:</td>
+<td>0.7.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../curl/index.html">curl</a> (&ge; 2.8.1), <a href="../crayon/index.html">crayon</a>, <a href="../data.table/index.html">data.table</a> (&ge; 1.10.4), <a href="../dplyr/index.html">dplyr</a> (&ge;
+0.7.0), <a href="../foreign/index.html">foreign</a>, <a href="../httr/index.html">httr</a> (&ge; 1.2.1), <a href="../hoardr/index.html">hoardr</a>, <a href="../janitor/index.html">janitor</a> (&ge; 1.0.0), <a href="../jsonlite/index.html">jsonlite</a> (&ge; 1.5), <a href="../lubridate/index.html">lubridate</a>, <a href="../magrittr/index.html">magrittr</a> (&ge; 1.5), <a href="../raster/index.html">raster</a>, <a href="../rgdal/index.html">rgdal</a>, <a href="../readr/index.html">readr</a> (&ge; 1.1.1), <a href="../rvest/index.html">rvest</a>, <a href="../tidyr/index.html">tidyr</a> (&ge; 0.6.3), tools, utils, <a href="../xml2/index.html">xml2</a> (&ge; 1.1.1)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../ASGS.foyer/index.html">ASGS.foyer</a>, <a href="../covr/index.html">covr</a>, <a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../ggthemes/index.html">ggthemes</a>, grid, <a href="../gridExtra/index.html">gridExtra</a>, <a href="../maps/index.html">maps</a>, <a href="../mapproj/index.html">mapproj</a>, <a href="../rappdirs/index.html">rappdirs</a>, <a href="../roxygen2/index.html">roxygen2</a> (&ge; 6.1.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-28</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Adam H. Sparks <a href="https://orcid.org/0000-0002-0061-8359"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Jonathan Carroll <a href="https://orcid.org/0000-0002-1404-5264"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  James Goldie <a href="https://orcid.org/0000-0002-5024-6207"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Dean Marchiori [aut],
+  Paul Melloy <a href="https://orcid.org/0000-0003-4253-7167"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Mark Padgham <a href="https://orcid.org/0000-0003-2172-5265"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, rev],
+  Hugh Parsonage <a href="https://orcid.org/0000-0003-4055-0835"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Keith Pembleton <a href="https://orcid.org/0000-0002-1896-4516"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  James Balamuta <a href="https://orcid.org/0000-0003-2826-8458"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Brooke Anderson <a href="https://orcid.org/0000-0002-5012-9035"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [rev]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Adam H. Sparks  &#x3c;&#x61;&#x64;&#x61;&#x6d;&#x68;&#x73;&#x70;&#x61;&#x72;&#x6b;&#x73;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ropensci/bomrang/issues">https://github.com/ropensci/bomrang/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/ropensci/bomrang">https://github.com/ropensci/bomrang</a>,
+<a href="https://docs.ropensci.org/bomrang/">https://docs.ropensci.org/bomrang/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-AU</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">bomrang citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Hydrology.html">Hydrology</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_bomrang.html">bomrang results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package bomrang downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="bomrang.pdf"> bomrang.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/bomrang.html">bomrang</a><br/>
+<a href="vignettes/use_case.html">bomrang Use Case</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/bomrang_0.7.1.tar.gz"> bomrang_0.7.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/bomrang_0.7.1.zip">bomrang_0.7.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/bomrang_0.7.1.zip">bomrang_0.7.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/bomrang_0.7.1.zip">bomrang_0.7.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/bomrang_0.7.1.tgz">bomrang_0.7.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/bomrang_0.7.1.tgz">bomrang_0.7.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/bomrang"> bomrang archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=bomrang"><samp>https://CRAN.R-project.org/package=bomrang</samp></a>
+to link to this page.</p>
+</body>
+</html>

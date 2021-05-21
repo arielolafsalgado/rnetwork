@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package ZVCV</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Zero-Variance Control Variates [R package ZVCV version 2.1.0]" />
+<meta name="citation_author" content="Leah F. South" />
+<meta name="citation_publication_date" content="2020-06-17" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=ZVCV" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=ZVCV" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="ZVCV: Zero-Variance Control Variates" />
+<meta name="og:description" content="Stein control variates can be used to improve Monte Carlo estimates of expectations when the derivatives of the log target are available. This package implements a variety of such methods, including zero-variance control variates (ZV-CV, Mira et al. (2013) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs11222-012-9344-6&quot;&gt;doi:10.1007/s11222-012-9344-6&lt;/a&gt;&amp;gt;), regularised ZV-CV (South et al., 2018 &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1811.05073&quot;&gt;arXiv:1811.05073&lt;/a&gt;&amp;gt;), control functionals (CF, Oates et al. (2017) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Frssb.12185&quot;&gt;doi:10.1111/rssb.12185&lt;/a&gt;&amp;gt;) and semi-exact control functionals (SECF, South et al., 2020 &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/2002.00033&quot;&gt;arXiv:2002.00033&lt;/a&gt;&amp;gt;). ZV-CV is a parametric approach that is exact for (low order) polynomial integrands with Gaussian targets. CF is a non-parametric alternative that offers better than the standard Monte Carlo convergence rates. SECF has both a parametric and a non-parametric component and it offers the advantages of both for an additional computational cost. Functions for applying ZV-CV and CF to two estimators for the normalising constant of the posterior distribution in Bayesian statistics are also supplied in this package. The basic requirements for using the package are a set of samples, derivatives and function evaluations. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=ZVCV" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>ZVCV: Zero-Variance Control Variates</h2>
+<p>Stein control variates can be used to improve Monte Carlo estimates of expectations when the derivatives of the log target are available. This package implements a variety of such methods, including zero-variance control variates (ZV-CV, Mira et al. (2013) &lt;<a href="https://doi.org/10.1007%2Fs11222-012-9344-6">doi:10.1007/s11222-012-9344-6</a>&gt;), regularised ZV-CV (South et al., 2018 &lt;<a href="https://arxiv.org/abs/1811.05073">arXiv:1811.05073</a>&gt;), control functionals (CF, Oates et al. (2017) &lt;<a href="https://doi.org/10.1111%2Frssb.12185">doi:10.1111/rssb.12185</a>&gt;) and semi-exact control functionals (SECF, South et al., 2020 &lt;<a href="https://arxiv.org/abs/2002.00033">arXiv:2002.00033</a>&gt;). ZV-CV is a parametric approach that is exact for (low order) polynomial integrands with Gaussian targets. CF is a non-parametric alternative that offers better than the standard Monte Carlo convergence rates. SECF has both a parametric and a non-parametric component and it offers the advantages of both for an additional computational cost. Functions for applying ZV-CV and CF to two estimators for the normalising constant of the posterior distribution in Bayesian statistics are also supplied in this package. The basic requirements for using the package are a set of samples, derivatives and function evaluations. </p>
+<table summary="Package ZVCV summary">
+<tr>
+<td>Version:</td>
+<td>2.1.0</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.11.0), <a href="../glmnet/index.html">glmnet</a>, <a href="../abind/index.html">abind</a>, <a href="../mvtnorm/index.html">mvtnorm</a>, stats, <a href="../Rlinsolve/index.html">Rlinsolve</a>, <a href="../magrittr/index.html">magrittr</a>, <a href="../dplyr/index.html">dplyr</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a>, <a href="../BH/index.html">BH</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../partitions/index.html">partitions</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../ggthemes/index.html">ggthemes</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-17</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Leah F. South <a href="https://orcid.org/0000-0002-5646-2963"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Leah F. South  &#x3c;&#x6c;&#x65;&#x61;&#x68;&#x2e;&#x73;&#x6f;&#x75;&#x74;&#x68;&#x20;&#x61;&#x74;&#x20;&#x68;&#x64;&#x72;&#x2e;&#x71;&#x75;&#x74;&#x2e;&#x65;&#x64;&#x75;&#x2e;&#x61;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/LeahPrice/ZVCV/issues">https://github.com/LeahPrice/ZVCV/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_ZVCV.html">ZVCV results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package ZVCV downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="ZVCV.pdf"> ZVCV.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/ZVCV_2.1.0.tar.gz"> ZVCV_2.1.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/ZVCV_2.1.0.zip">ZVCV_2.1.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/ZVCV_2.1.0.zip">ZVCV_2.1.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/ZVCV_2.1.0.zip">ZVCV_2.1.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/ZVCV_2.1.0.tgz">ZVCV_2.1.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/ZVCV_2.1.0.tgz">ZVCV_2.1.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/ZVCV"> ZVCV archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=ZVCV"><samp>https://CRAN.R-project.org/package=ZVCV</samp></a>
+to link to this page.</p>
+</body>
+</html>

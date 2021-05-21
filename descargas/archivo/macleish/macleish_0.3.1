@@ -1,0 +1,43 @@
+Package: macleish
+Type: Package
+Title: Retrieve Data from MacLeish Field Station
+Version: 0.3.1
+Date: 2017-09-19
+Authors@R: c(
+    person("Benjamin S.", "Baumer", email = "ben.baumer@gmail.com",
+      role = c("aut", "cre")),
+    person("Rose", "Goueth", role = "aut"),
+    person("Wencong", "Li", email = "liwencong1995@gmail.com", role = "aut"),
+    person("Weijia", "Zhang", email = "wzhang23@smith.edu", role = "aut"),
+    person("Nicholas", "Horton", email = "nhorton@amherst.edu", role = "aut")
+    )
+Description: Download data from the Ada and Archibald MacLeish Field 
+    Station in Whately, MA. The Ada 
+    and Archibald MacLeish Field Station is a 260-acre patchwork of 
+    forest and farmland located in West Whately, MA that provides opportunities 
+    for faculty and students to pursue environmental research, outdoor 
+    education, and low-impact recreation 
+    (see <http://www.smith.edu/ceeds/macleish.php> for more information). 
+    This package contains 
+    weather data over several years, and spatial data on various man-made and 
+    natural structures.
+License: CC0
+LazyData: TRUE
+Imports: dplyr, DBI, lubridate, readr, sp, rgdal, rgeos
+Depends: R (>= 2.10), etl
+Suggests: ggplot2, dbplyr, RSQLite, broom, knitr, ggmap, leaflet,
+        rmarkdown, clifro, testthat
+URL: http://github.com/beanumber/macleish
+BugReports: https://github.com/beanumber/macleish/issues
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-09-28 14:23:40 UTC; bbaumer
+Author: Benjamin S. Baumer [aut, cre],
+  Rose Goueth [aut],
+  Wencong Li [aut],
+  Weijia Zhang [aut],
+  Nicholas Horton [aut]
+Maintainer: Benjamin S. Baumer <ben.baumer@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-09-28 14:43:49 UTC

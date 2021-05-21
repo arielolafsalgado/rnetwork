@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package dabestr</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Data Analysis using Bootstrap-Coupled Estimation [R package dabestr version 0.3.0]" />
+<meta name="citation_author1" content="Joses W. Ho" />
+<meta name="citation_author2" content="Tayfun Tumkaya" />
+<meta name="citation_publication_date" content="2020-07-13" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=dabestr" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=dabestr" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="dabestr: Data Analysis using Bootstrap-Coupled Estimation" />
+<meta name="og:description" content="Data Analysis using Bootstrap-Coupled ESTimation. Estimation statistics is a simple framework that avoids the pitfalls of significance testing. It uses familiar statistical concepts: means, mean differences, and error bars. More importantly, it focuses on the effect size of one's experiment/intervention, as opposed to a false dichotomy engendered by P values. An estimation plot has two key features: 1. It presents all datapoints as a swarmplot, which orders each point to display the underlying distribution. 2. It presents the effect size as a bootstrap 95% confidence interval on a separate but aligned axes. Estimation plots are introduced in Ho et al., Nature Methods 2019, 1548-7105. &amp;lt;&lt;a href=&quot;https://doi.org/10.1038%2Fs41592-019-0470-3&quot;&gt;doi:10.1038/s41592-019-0470-3&lt;/a&gt;&amp;gt;. The free-to-view PDF is located at &amp;lt;&lt;a href=&quot;https://rdcu.be/bHhJ4&quot;&gt;https://rdcu.be/bHhJ4&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=dabestr" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>dabestr: Data Analysis using Bootstrap-Coupled Estimation</h2>
+<p>Data Analysis using Bootstrap-Coupled ESTimation.
+    Estimation statistics is a simple framework that avoids the pitfalls of
+    significance testing. It uses familiar statistical concepts: means,
+    mean differences, and error bars. More importantly, it focuses on the
+    effect size of one's experiment/intervention, as opposed to a false
+    dichotomy engendered by P values.
+    An estimation plot has two key features:
+    1. It presents all datapoints as a swarmplot, which orders each point to
+    display the underlying distribution.
+    2. It presents the effect size as a bootstrap 95% confidence interval on a
+    separate but aligned axes.
+    Estimation plots are introduced in Ho et al., Nature Methods 2019, 1548-7105.
+    &lt;<a href="https://doi.org/10.1038%2Fs41592-019-0470-3">doi:10.1038/s41592-019-0470-3</a>&gt;.
+    The free-to-view PDF is located at &lt;<a href="https://rdcu.be/bHhJ4">https://rdcu.be/bHhJ4</a>&gt;.</p>
+<table summary="Package dabestr summary">
+<tr>
+<td>Version:</td>
+<td>0.3.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0), <a href="../magrittr/index.html">magrittr</a>, stats, utils</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../boot/index.html">boot</a>, <a href="../cowplot/index.html">cowplot</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../effsize/index.html">effsize</a>, <a href="../ellipsis/index.html">ellipsis</a>, <a href="../ggplot2/index.html">ggplot2</a> (&ge; 3.2), <a href="../forcats/index.html">forcats</a>, <a href="../ggforce/index.html">ggforce</a>, <a href="../ggbeeswarm/index.html">ggbeeswarm</a>, <a href="../plyr/index.html">plyr</a>, <a href="../RColorBrewer/index.html">RColorBrewer</a>, <a href="../rlang/index.html">rlang</a>, <a href="../simpleboot/index.html">simpleboot</a>, <a href="../stringr/index.html">stringr</a>, <a href="../tibble/index.html">tibble</a>, <a href="../tidyr/index.html">tidyr</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../tufte/index.html">tufte</a>, <a href="../testthat/index.html">testthat</a>, <a href="../vdiffr/index.html">vdiffr</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-07-13</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Joses W. Ho [cre, aut],
+  Tayfun Tumkaya [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Joses W. Ho  &#x3c;&#x6a;&#x6f;&#x73;&#x65;&#x73;&#x68;&#x6f;&#x77;&#x68;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ACCLAB/dabestr/issues">https://github.com/ACCLAB/dabestr/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td>file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/ACCLAB/dabestr">https://github.com/ACCLAB/dabestr</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">dabestr citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_dabestr.html">dabestr results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package dabestr downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="dabestr.pdf"> dabestr.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/using-dabestr.html">Using dabestr</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/dabestr_0.3.0.tar.gz"> dabestr_0.3.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/dabestr_0.3.0.zip">dabestr_0.3.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/dabestr_0.3.0.zip">dabestr_0.3.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/dabestr_0.3.0.zip">dabestr_0.3.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/dabestr_0.3.0.tgz">dabestr_0.3.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/dabestr_0.3.0.tgz">dabestr_0.3.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/dabestr"> dabestr archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package dabestr reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../permubiome/index.html">permubiome</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=dabestr"><samp>https://CRAN.R-project.org/package=dabestr</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,25 @@
+Package: GMAC
+Type: Package
+Title: Genomic Mediation Analysis with Adaptive Confounding Adjustment
+Version: 2.0
+Date: 2017-10-30
+Author: Fan Yang, Jiebiao Wang and Lin Chen
+Maintainer: Fan Yang <yfcarolyn@gmail.com>
+Description: Performs genomic mediation
+    analysis with adaptive confounding adjustment (GMAC) proposed by Yang et al. (2017) <doi:10.1101/078683>. It implements large scale
+    mediation analysis and adaptively selects potential confounding variables to
+    adjust for each mediation test from a pool of candidate confounders. The package
+    is tailored for but not limited to genomic mediation analysis (e.g., cis-gene
+    mediating trans-gene regulation pattern where an eQTL, its cis-linking gene
+    transcript, and its trans-gene transcript play the roles as treatment, mediator
+    and the outcome, respectively), restricting to scenarios with the presence of
+    cis-association (i.e., treatment-mediator association) and random eQTL (i.e.,
+    treatment).
+License: GPL
+Depends: parallel, qvalue
+LazyData: TRUE
+NeedsCompilation: no
+Repository: CRAN
+RoxygenNote: 6.0.1
+Packaged: 2017-10-30 23:58:40 UTC; rande
+Date/Publication: 2017-10-31 22:54:36 UTC

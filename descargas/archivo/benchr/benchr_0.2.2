@@ -1,0 +1,34 @@
+Package: benchr
+Title: High Precise Measurement of R Expressions Execution Time
+Version: 0.2.2
+Description: Provides infrastructure to accurately measure and compare
+    the execution time of R expressions.
+Authors@R: c(
+    person("Artem", "Klevtsov", role = c("aut", "cre"),
+           email = "a.a.klevtsov@gmail.com"),
+    person("Anton", "Antonov", role = "ctb",
+           email = "tonytonov@gmail.com"),
+    person("Philipp", "Upravitelev", role = "ctb",
+           email = "upravitelev@gmail.com"))
+URL: https://gitlab.com/artemklevtsov/benchr
+BugReports: https://gitlab.com/artemklevtsov/benchr/issues
+License: GPL (>= 2)
+Encoding: UTF-8
+ByteCompile: yes
+LazyData: yes
+Imports: Rcpp (>= 0.12.11), RcppProgress, stats, graphics
+Suggests: testthat, ggplot2
+LinkingTo: Rcpp, RcppProgress
+SystemRequirements: C++11
+RoxygenNote: 6.0.1
+Collate: 'RcppExports.R' 'order.R' 'utils.R' 'benchmark.R'
+        'benchr-package.R' 'boxplot.R' 'mean.R' 'plot.R' 'units.R'
+        'summary.R' 'print.R' 'zzz.R'
+NeedsCompilation: yes
+Packaged: 2018-07-15 09:37:31 UTC; xxx
+Author: Artem Klevtsov [aut, cre],
+  Anton Antonov [ctb],
+  Philipp Upravitelev [ctb]
+Maintainer: Artem Klevtsov <a.a.klevtsov@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-07-15 10:00:03 UTC

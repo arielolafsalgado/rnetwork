@@ -1,0 +1,36 @@
+Package: docxtractr
+Title: Extract Data Tables and Comments from 'Microsoft' 'Word'
+        Documents
+Version: 0.6.2
+Authors@R: c(
+    person("Bob", "Rudis", email = "bob@rud.is", role = c("aut", "cre"), 
+           comment = c(ORCID = "0000-0001-5670-2640")),
+    person("Mark", "Dulhunty", role = c("ctb")),
+    person("Karlo", "Guidoni-Martins", role = c("ctb"), email = "kguidonimartins@gmail.com"), 
+    person("Chris", "Muir", email = "chrismuirrva@gmail.com", role = c("aut", "ctb"))
+  )
+Maintainer: Bob Rudis <bob@rud.is>
+Description: 'Microsoft Word' 'docx' files provide an 'XML' structure that is fairly
+    straightforward to navigate, especially when it applies to 'Word' tables and
+    comments. Tools are provided to determine table count/structure, comment count
+    and also to extract/clean tables and comments from 'Microsoft Word' 'docx' documents.
+    There is also nascent support for '.doc' files.
+SystemRequirements: LibreOffice (<https://www.libreoffice.org/>)
+        required to extract data from .doc files.
+URL: http://gitlab.com/hrbrmstr/docxtractr
+BugReports: https://gitlab.com/hrbrmstr/docxtractr/issues
+Encoding: UTF-8
+Depends: R (>= 3.2.0)
+License: MIT + file LICENSE
+LazyData: true
+Suggests: testthat, covr
+Imports: tools, xml2, purrr, dplyr, utils, httr, magrittr
+RoxygenNote: 7.1.0
+NeedsCompilation: no
+Packaged: 2020-06-13 12:23:45 UTC; hrbrmstr
+Author: Bob Rudis [aut, cre] (<https://orcid.org/0000-0001-5670-2640>),
+  Mark Dulhunty [ctb],
+  Karlo Guidoni-Martins [ctb],
+  Chris Muir [aut, ctb]
+Repository: CRAN
+Date/Publication: 2020-06-13 12:40:06 UTC

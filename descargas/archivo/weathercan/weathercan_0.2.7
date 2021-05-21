@@ -1,0 +1,34 @@
+Package: weathercan
+Type: Package
+Title: Download Weather Data from the Environment and Climate Change
+        Canada Website
+Version: 0.2.7
+Authors@R: c(
+     person("Steffi", "LaZerte", email = "steffi@steffi.ca", role = c("aut","cre"), comment = "https://orcid.org/0000-0002-7690-8360"),
+     person("Sam", "Albers", email = "sam.albers@gmail.com", role = c("ctb"), comment = "https://orcid.org/0000-0002-9270-7884"))
+Description: Provides means for downloading historical weather data from 
+    the Environment and Climate Change Canada website 
+    (<http://climate.weather.gc.ca/historical_data/search_historic_data_e.html>). 
+    Data can be downloaded from multiple stations and over large date ranges 
+    and automatically processed into a single dataset. Tools are also provided 
+    to identify stations either by name or proximity to a location.
+License: GPL-3
+Language: en-CA
+BugReports: https://github.com/ropensci/weathercan/issues
+LazyData: TRUE
+URL: https://github.com/ropensci/weathercan
+Depends: R (>= 3.1.2)
+Imports: dplyr (>= 0.7.0), httr (>= 1.1.0), lubridate (>= 1.7.1),
+        methods (>= 3.2.2), purrr (>= 0.2.4), stringi (>= 1.1.2), tidyr
+        (>= 0.4.1), xml2 (>= 0.1.2)
+RoxygenNote: 6.0.1
+Suggests: devtools, ggplot2, ggmap, knitr, rmarkdown, sp, stringr,
+        testthat
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2018-07-02 15:43:14 UTC; steffi
+Author: Steffi LaZerte [aut, cre] (<https://orcid.org/0000-0002-7690-8360>),
+  Sam Albers [ctb] (<https://orcid.org/0000-0002-9270-7884>)
+Maintainer: Steffi LaZerte <steffi@steffi.ca>
+Repository: CRAN
+Date/Publication: 2018-07-05 09:20:03 UTC

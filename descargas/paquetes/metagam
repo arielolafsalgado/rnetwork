@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package metagam</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Meta-Analysis of Generalized Additive Models [R package metagam version 0.1.2]" />
+<meta name="citation_author1" content="Oystein Sorensen" />
+<meta name="citation_author2" content="Andreas M. Brandmaier" />
+<meta name="citation_author3" content="Athanasia Mo Mowinckel" />
+<meta name="citation_publication_date" content="2020-06-22" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=metagam" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=metagam" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="metagam: Meta-Analysis of Generalized Additive Models" />
+<meta name="og:description" content="Meta-analysis of generalized additive models and generalized additive mixed models. A typical use case is when data cannot be shared across locations, and an overall meta-analytic fit is sought. 'metagam' provides functionality for removing individual participant data from models computed using the 'mgcv' and 'gamm4' packages such that the model objects can be shared without exposing individual data. Furthermore, methods for meta-analysing these fits are provided. The implemented methods are described in Sorensen et al. (2020), &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/2002.02627&quot;&gt;arXiv:2002.02627&lt;/a&gt;&amp;gt;, extending previous works by Schwartz and Zanobetti (2000) and Crippa et al. (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.6000%2F1929-6029.2018.07.02.1&quot;&gt;doi:10.6000/1929-6029.2018.07.02.1&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=metagam" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>metagam: Meta-Analysis of Generalized Additive Models</h2>
+<p>Meta-analysis of generalized additive
+    models and generalized additive mixed models. A typical use case is
+    when data cannot be shared across locations, and an overall meta-analytic
+    fit is sought. 'metagam' provides functionality for removing individual
+    participant data from models computed using the 'mgcv' and 'gamm4' packages such
+    that the model objects can be shared without exposing individual data.
+    Furthermore, methods for meta-analysing these fits are provided. The implemented
+    methods are described in Sorensen et al. (2020), &lt;<a href="https://arxiv.org/abs/2002.02627">arXiv:2002.02627</a>&gt;,
+    extending previous works by Schwartz and Zanobetti (2000)
+    and Crippa et al. (2018) &lt;<a href="https://doi.org/10.6000%2F1929-6029.2018.07.02.1">doi:10.6000/1929-6029.2018.07.02.1</a>&gt;.</p>
+<table summary="Package metagam summary">
+<tr>
+<td>Version:</td>
+<td>0.1.2</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../dplyr/index.html">dplyr</a>, <a href="../furrr/index.html">furrr</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../knitr/index.html">knitr</a>, <a href="../metafor/index.html">metafor</a>, <a href="../metap/index.html">metap</a>, <a href="../purrr/index.html">purrr</a>, <a href="../rlang/index.html">rlang</a>, <a href="../stringr/index.html">stringr</a>, <a href="../tidyr/index.html">tidyr</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../future/index.html">future</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/multtest.html"><span class="BioC">multtest</span></a>, <a href="../mgcv/index.html">mgcv</a>, <a href="../gamm4/index.html">gamm4</a>, <a href="../gratia/index.html">gratia</a>, <a href="../roxygen2/index.html">roxygen2</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../devtools/index.html">devtools</a>, <a href="../covr/index.html">covr</a>, <a href="../viridis/index.html">viridis</a>, <a href="../testthat/index.html">testthat</a> (&ge; 2.1.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-22</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Oystein Sorensen <a href="https://orcid.org/0000-0003-0724-3542"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Andreas M. Brandmaier
+    <a href="https://orcid.org/0000-0001-8765-6982"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Athanasia Mo Mowinckel
+    <a href="https://orcid.org/0000-0002-5756-0223"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Oystein Sorensen  &#x3c;&#x6f;&#x79;&#x73;&#x74;&#x65;&#x69;&#x6e;&#x2e;&#x73;&#x6f;&#x72;&#x65;&#x6e;&#x73;&#x65;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x70;&#x73;&#x79;&#x6b;&#x6f;&#x6c;&#x6f;&#x67;&#x69;&#x2e;&#x75;&#x69;&#x6f;&#x2e;&#x6e;&#x6f;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/Lifebrain/metagam/issues">https://github.com/Lifebrain/metagam/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://lifebrain.github.io/metagam/">https://lifebrain.github.io/metagam/</a>,
+<a href="https://github.com/Lifebrain/metagam">https://github.com/Lifebrain/metagam</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/MetaAnalysis.html">MetaAnalysis</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_metagam.html">metagam results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package metagam downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="metagam.pdf"> metagam.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/dominance.html">Dominance Plots</a><br/>
+<a href="vignettes/heterogeneity.html">Heterogeneity Plots</a><br/>
+<a href="vignettes/introduction.html">Introduction</a><br/>
+<a href="vignettes/multivariate.html">Multivariate Smooth Terms</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/metagam_0.1.2.tar.gz"> metagam_0.1.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/metagam_0.1.2.zip">metagam_0.1.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/metagam_0.1.2.zip">metagam_0.1.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/metagam_0.1.2.zip">metagam_0.1.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/metagam_0.1.2.tgz">metagam_0.1.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/metagam_0.1.2.tgz">metagam_0.1.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/metagam"> metagam archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=metagam"><samp>https://CRAN.R-project.org/package=metagam</samp></a>
+to link to this page.</p>
+</body>
+</html>

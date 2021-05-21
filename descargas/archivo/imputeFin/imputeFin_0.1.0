@@ -1,0 +1,41 @@
+Package: imputeFin
+Title: Imputation of Financial Time Series with Missing Values
+Version: 0.1.0
+Date: 2019-12-05
+Description: Missing values often occur in financial data due to a variety 
+    of reasons (errors in the collection process or in the processing stage, 
+    lack of asset liquidity, lack of reporting of funds, etc.). However, 
+    most data analysis methods expect complete data and cannot be employed 
+    with missing values. One convenient way to deal with this issue without 
+    having to redesign the data analysis method is to impute the missing 
+    values. This package provides an efficient way to impute the missing 
+    values based on modeling the time series with a random walk or an 
+    autoregressive (AR) model, convenient to model log-prices and log-volumes 
+    in financial data. In the current version, the imputation is 
+    univariate-based (so no asset correlation is used). 
+    The package is based on the paper:
+    J. Liu, S. Kumar, and D. P. Palomar (2019). Parameter Estimation of 
+    Heavy-Tailed AR Model With Missing Data Via Stochastic EM. IEEE Trans. on 
+    Signal Processing, vol. 67, no. 8, pp. 2159-2172. <doi:10.1109/TSP.2019.2899816>.
+Authors@R: c(
+  person("Junyan", "Liu", role =  "aut", email = "jliubl@connect.ust.hk"),
+  person(c("Daniel", "P."), "Palomar", role = c("cre", "aut"), email = "daniel.p.palomar@gmail.com")
+  )
+Maintainer: Daniel P. Palomar <daniel.p.palomar@gmail.com>
+URL: https://CRAN.R-project.org/package=imputeFin,
+        https://github.com/dppalomar/imputeFin
+BugReports: https://github.com/dppalomar/imputeFin/issues
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.0
+Imports: MASS, zoo
+Suggests: bookdown, knitr, ggplot2, prettydoc, rmarkdown, R.rsp,
+        testthat, xts
+VignetteBuilder: knitr, rmarkdown, R.rsp
+NeedsCompilation: no
+Packaged: 2019-12-05 02:45:30 UTC; palomar
+Author: Junyan Liu [aut],
+  Daniel P. Palomar [cre, aut]
+Repository: CRAN
+Date/Publication: 2019-12-13 15:00:06 UTC

@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package shapr</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Prediction Explanation with Dependence-Aware Shapley Values [R package shapr version 0.1.3]" />
+<meta name="citation_author1" content="Nikolai Sellereite" />
+<meta name="citation_author2" content="Martin Jullum" />
+<meta name="citation_publication_date" content="2020-09-03" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=shapr" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=shapr" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="shapr: Prediction Explanation with Dependence-Aware Shapley Values" />
+<meta name="og:description" content="Complex machine learning models are often hard to interpret. However, in many situations it is crucial to understand and explain why a model made a specific prediction. Shapley values is the only method for such prediction explanation framework with a solid theoretical foundation. Previously known methods for estimating the Shapley values do, however, assume feature independence. This package implements the method described in Aas, Jullum and Løland (2019) &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1903.10464&quot;&gt;arXiv:1903.10464&lt;/a&gt;&amp;gt;, which accounts for any feature dependence, and thereby produces more accurate estimates of the true Shapley values." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=shapr" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>shapr: Prediction Explanation with Dependence-Aware Shapley Values</h2>
+<p>Complex machine learning models are often hard to interpret. However, in 
+  many situations it is crucial to understand and explain why a model made a specific 
+  prediction. Shapley values is the only method for such prediction explanation framework 
+  with a solid theoretical foundation. Previously known methods for estimating the Shapley 
+  values do, however, assume feature independence. This package implements the method 
+  described in Aas, Jullum and Løland (2019) &lt;<a href="https://arxiv.org/abs/1903.10464">arXiv:1903.10464</a>&gt;, which accounts for any feature 
+  dependence, and thereby produces more accurate estimates of the true Shapley values.</p>
+<table summary="Package shapr summary">
+<tr>
+<td>Version:</td>
+<td>0.1.3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>stats, <a href="../data.table/index.html">data.table</a>, <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.15), <a href="../condMVNorm/index.html">condMVNorm</a>, <a href="../mvnfast/index.html">mvnfast</a>, <a href="../Matrix/index.html">Matrix</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../RcppArmadillo/index.html">RcppArmadillo</a>, <a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../ranger/index.html">ranger</a>, <a href="../xgboost/index.html">xgboost</a>, <a href="../mgcv/index.html">mgcv</a>, <a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../roxygen2/index.html">roxygen2</a>, <a href="../MASS/index.html">MASS</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../gbm/index.html">gbm</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-03</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Nikolai Sellereite
+    <a href="https://orcid.org/0000-0002-4671-0337"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Martin Jullum <a href="https://orcid.org/0000-0003-3908-5155"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [cre, aut],
+  Anders Løland [ctb],
+  Jens Christian Wahl [ctb],
+  Camilla Lingjærde [ctb],
+  Norsk Regnesentral [cph, fnd]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Martin Jullum  &#x3c;&#x4d;&#x61;&#x72;&#x74;&#x69;&#x6e;&#x2e;&#x4a;&#x75;&#x6c;&#x6c;&#x75;&#x6d;&#x20;&#x61;&#x74;&#x20;&#x6e;&#x72;&#x2e;&#x6e;&#x6f;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/NorskRegnesentral/shapr/issues">https://github.com/NorskRegnesentral/shapr/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://norskregnesentral.github.io/shapr/">https://norskregnesentral.github.io/shapr/</a>,
+<a href="https://github.com/NorskRegnesentral/shapr">https://github.com/NorskRegnesentral/shapr</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_shapr.html">shapr results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package shapr downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="shapr.pdf"> shapr.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/understanding_shapr.html">'shapr': Explaining individual machine learning predictions with Shapley values</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/shapr_0.1.3.tar.gz"> shapr_0.1.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/shapr_0.1.3.zip">shapr_0.1.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/shapr_0.1.3.zip">shapr_0.1.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/shapr_0.1.3.zip">shapr_0.1.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/shapr_0.1.3.tgz">shapr_0.1.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/shapr_0.1.3.tgz">shapr_0.1.3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/shapr"> shapr archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=shapr"><samp>https://CRAN.R-project.org/package=shapr</samp></a>
+to link to this page.</p>
+</body>
+</html>

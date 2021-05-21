@@ -1,0 +1,35 @@
+Package: kamila
+Type: Package
+Version: 0.1.1.2
+Date: 2018-02-17
+Authors@R: c(
+    person("Alexander", "Foss", email = "alexanderhfoss@gmail.com",
+           role = c("aut", "cre")),
+    person("Marianthi", "Markatou", role = c("aut"))
+    )
+Author: Alexander Foss [aut, cre],
+  Marianthi Markatou [aut]
+Maintainer: Alexander Foss <alexanderhfoss@gmail.com>
+Title: Methods for Clustering Mixed-Type Data
+Description: Implements methods for clustering mixed-type data,
+  specifically combinations of continuous and nominal data. Special attention
+  is paid to the often-overlooked problem of equitably balancing the
+  contribution of the continuous and categorical variables. This package
+  implements KAMILA clustering, a novel method for clustering
+  mixed-type data in the spirit of k-means clustering. It does not require
+  dummy coding of variables, and is efficient enough to scale to rather large
+  data sets. Also implemented is Modha-Spangler clustering, which uses a
+  brute-force strategy to maximize the cluster separation simultaneously in the
+  continuous and categorical variables.
+Depends: R (>= 3.0.0)
+License: GPL-3 | file LICENSE
+URL: https://github.com/ahfoss/kamila
+BugReports: https://github.com/ahfoss/kamila/issues
+Imports: stats, abind, KernSmooth, gtools, Rcpp, mclust, plyr
+LinkingTo: Rcpp
+Suggests: testthat, clustMD, ggplot2, Hmisc
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2018-02-17 15:22:24 UTC; ahfoss
+Repository: CRAN
+Date/Publication: 2018-02-18 04:41:36 UTC

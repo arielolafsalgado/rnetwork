@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package cops</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Cluster Optimized Proximity Scaling [R package cops version 1.0-2]" />
+<meta name="citation_author1" content="Thomas Rusch" />
+<meta name="citation_author2" content="Jan de Leeuw" />
+<meta name="citation_author3" content="Patrick Mair" />
+<meta name="citation_publication_date" content="2019-11-01" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=cops" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=cops" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="cops: Cluster Optimized Proximity Scaling" />
+<meta name="og:description" content="Cluster optimized proximity scaling (COPS) refers to multidimensional scaling (MDS) methods that aim at pronouncing the clustered appearance of the configuration. They achieve this by transforming proximities/distances with power functions and augment the fitting criterion with a clusteredness index, the OPTICS Cordillera (Rusch, Hornik &amp;amp; Mair, 2018, &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F10618600.2017.1349664&quot;&gt;doi:10.1080/10618600.2017.1349664&lt;/a&gt;&amp;gt;). There are two variants: One for finding the configuration directly for given parameters (COPS-C) for ratio, interval and non-metric MDS (Borg &amp;amp; Groenen, 2005, ISBN:978-0-387-28981-6), and one for using the augmented fitting criterion to find optimal parameters (P-COPS). The package contains various functions, wrappers, methods and classes for fitting, plotting and displaying different MDS models in a COPS framework like ratio, interval and non-metric MDS for COPS-C and P-COPS with Torgerson scaling (Torgerson, 1958, ISBN:978-0471879459), scaling by majorizing a complex function (SMACOF; de Leeuw, 1977, &amp;lt;&lt;a href=&quot;https://escholarship.org/uc/item/4ps3b5mj&quot;&gt;https://escholarship.org/uc/item/4ps3b5mj&lt;/a&gt;&amp;gt;), Sammon mapping (Sammon, 1969, &amp;lt;&lt;a href=&quot;https://doi.org/10.1109%2FT-C.1969.222678&quot;&gt;doi:10.1109/T-C.1969.222678&lt;/a&gt;&amp;gt;), elastic scaling (McGee, 1966, &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fj.2044-8317.1966.tb00367.x&quot;&gt;doi:10.1111/j.2044-8317.1966.tb00367.x&lt;/a&gt;&amp;gt;), s-stress (Takane, Young &amp;amp; de Leeuw, 1977, &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2FBF02293745&quot;&gt;doi:10.1007/BF02293745&lt;/a&gt;&amp;gt;, r-stress (de Leeuw, Groenen &amp;amp; Mair, 2016, &amp;lt;&lt;a href=&quot;https://rpubs.com/deleeuw/142619&quot;&gt;https://rpubs.com/deleeuw/142619&lt;/a&gt;&amp;gt;), power-stress (Buja &amp;amp; Swayne, 2002 &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs00357-001-0031-0&quot;&gt;doi:10.1007/s00357-001-0031-0&lt;/a&gt;&amp;gt;) and power elastic scaling, power Sammon mapping and approximated power stress (Rusch, Mair &amp;amp; Hornik, 2015, &amp;lt;&lt;a href=&quot;https://bach-s59.wu.ac.at/4888/&quot;&gt;https://bach-s59.wu.ac.at/4888/&lt;/a&gt;&amp;gt;). All of these models can also solely be fit as MDS with power transformations. The package further contains a function for pattern search optimization, the &quot;Adaptive Luus-Jakola Algorithm&quot; (Rusch, Mair &amp;amp; Hornik, 2015, &amp;lt;&lt;a href=&quot;https://bach-s59.wu.ac.at/4888/&quot;&gt;https://bach-s59.wu.ac.at/4888/&lt;/a&gt;&amp;gt;)." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=cops" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>cops: Cluster Optimized Proximity Scaling</h2>
+<p>Cluster optimized proximity scaling (COPS) refers to multidimensional scaling (MDS) methods that aim at pronouncing the clustered appearance of the configuration. They achieve this by transforming proximities/distances with power functions and augment the fitting criterion with a clusteredness index, the OPTICS Cordillera (Rusch, Hornik &amp; Mair, 2018, &lt;<a href="https://doi.org/10.1080%2F10618600.2017.1349664">doi:10.1080/10618600.2017.1349664</a>&gt;). There are two variants: One for finding the configuration directly for given parameters (COPS-C) for ratio, interval and non-metric MDS (Borg &amp; Groenen, 2005, ISBN:978-0-387-28981-6), and one for using the augmented fitting criterion to find optimal parameters (P-COPS). The package contains various functions, wrappers, methods and classes for fitting, plotting and displaying different MDS models in a COPS framework like ratio, interval and non-metric MDS for COPS-C and P-COPS with Torgerson scaling (Torgerson, 1958, ISBN:978-0471879459), scaling by majorizing a complex function (SMACOF; de Leeuw, 1977, &lt;<a href="https://escholarship.org/uc/item/4ps3b5mj">https://escholarship.org/uc/item/4ps3b5mj</a>&gt;), Sammon mapping (Sammon, 1969, &lt;<a href="https://doi.org/10.1109%2FT-C.1969.222678">doi:10.1109/T-C.1969.222678</a>&gt;), elastic scaling (McGee, 1966, &lt;<a href="https://doi.org/10.1111%2Fj.2044-8317.1966.tb00367.x">doi:10.1111/j.2044-8317.1966.tb00367.x</a>&gt;), s-stress (Takane, Young &amp; de Leeuw, 1977, &lt;<a href="https://doi.org/10.1007%2FBF02293745">doi:10.1007/BF02293745</a>&gt;, r-stress (de Leeuw, Groenen &amp; Mair, 2016, &lt;<a href="https://rpubs.com/deleeuw/142619">https://rpubs.com/deleeuw/142619</a>&gt;), power-stress (Buja &amp; Swayne, 2002 &lt;<a href="https://doi.org/10.1007%2Fs00357-001-0031-0">doi:10.1007/s00357-001-0031-0</a>&gt;) and power elastic scaling, power Sammon mapping and approximated power stress (Rusch, Mair &amp; Hornik, 2015, &lt;<a href="https://bach-s59.wu.ac.at/4888/">https://bach-s59.wu.ac.at/4888/</a>&gt;). All of these models can also solely be fit as MDS with power transformations. The package further contains a function for pattern search optimization, the "Adaptive Luus-Jakola Algorithm" (Rusch, Mair &amp; Hornik, 2015, &lt;<a href="https://bach-s59.wu.ac.at/4888/">https://bach-s59.wu.ac.at/4888/</a>&gt;).</p>
+<table summary="Package cops summary">
+<tr>
+<td>Version:</td>
+<td>1.0-2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.1.2), <a href="../cordillera/index.html">cordillera</a> (&ge; 0.7-2), <a href="../smacof/index.html">smacof</a> (&ge; 1.10-4)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../MASS/index.html">MASS</a>, <a href="../minqa/index.html">minqa</a>, <a href="../pso/index.html">pso</a>, <a href="../scatterplot3d/index.html">scatterplot3d</a>, <a href="../NlcOptim/index.html">NlcOptim</a>, <a href="../Rsolnp/index.html">Rsolnp</a>, <a href="../dfoptim/index.html">dfoptim</a>, <a href="../subplex/index.html">subplex</a>, <a href="../cmaes/index.html">cmaes</a>, <a href="../crs/index.html">crs</a>, <a href="../nloptr/index.html">nloptr</a>, <a href="../rgl/index.html">rgl</a>, <a href="../rgenoud/index.html">rgenoud</a>, <a href="../GenSA/index.html">GenSA</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Enhances:</td>
+<td>stats</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-11-01</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Thomas Rusch <a href="https://orcid.org/0000-0002-7773-2096"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Jan de Leeuw [aut],
+  Patrick Mair [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Thomas Rusch  &#x3c;&#x74;&#x68;&#x6f;&#x6d;&#x61;&#x73;&#x2e;&#x72;&#x75;&#x73;&#x63;&#x68;&#x20;&#x61;&#x74;&#x20;&#x77;&#x75;&#x2e;&#x61;&#x63;&#x2e;&#x61;&#x74;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://r-forge.r-project.org/projects/stops/">http://r-forge.r-project.org/projects/stops/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">cops citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Psychometrics.html">Psychometrics</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_cops.html">cops results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package cops downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="cops.pdf"> cops.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/cops_1.0-2.tar.gz"> cops_1.0-2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/cops_1.0-2.zip">cops_1.0-2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/cops_1.0-2.zip">cops_1.0-2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/cops_1.0-2.zip">cops_1.0-2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/cops_1.0-2.tgz">cops_1.0-2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/cops_1.0-2.tgz">cops_1.0-2.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=cops"><samp>https://CRAN.R-project.org/package=cops</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,26 @@
+Package: hunspell
+Type: Package
+Title: High-Performance Stemmer, Tokenizer, and Spell Checker for R
+Version: 2.7
+Depends: R (>= 3.0.2)
+Author: Jeroen Ooms
+Maintainer: Jeroen Ooms <jeroen@berkeley.edu>
+Description: A spell checker and morphological analyzer library designed for
+    languages with rich morphology and complex word compounding or character
+    encoding. The package can check and analyze individual words as well as
+    search for incorrect words within a text, latex, html or xml document. Use
+    the 'devtools' package to spell check R documentation with 'hunspell'.
+License: GPL-2 | LGPL-2.1 | MPL-1.1
+URL: https://github.com/ropensci/hunspell#readme (devel)
+        https://hunspell.github.io (upstream)
+BugReports: https://github.com/ropensci/hunspell/issues
+Imports: Rcpp, digest
+LinkingTo: Rcpp (>= 0.12.12)
+Suggests: testthat, devtools, pdftools, janeaustenr, wordcloud2, knitr,
+        rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2017-11-01 12:36:33 UTC; jeroen
+Repository: CRAN
+Date/Publication: 2017-11-03 12:21:38 UTC

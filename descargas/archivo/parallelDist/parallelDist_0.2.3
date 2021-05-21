@@ -1,0 +1,42 @@
+Package: parallelDist
+Type: Package
+Title: Parallel Distance Matrix Computation using Multiple Threads
+Version: 0.2.3
+Author: Alexander Eckert [aut, cre],
+  Lucas Godoy [ctb],
+  Srikanth KS [ctb]
+Authors@R: c(
+    person("Alexander", "Eckert", role = c("aut", "cre"), email = "info@alexandereckert.com"),
+    person("Lucas", "Godoy", role = "ctb", email = "lucasdac.godoy@gmail.com"),
+    person("Srikanth", "KS", role = "ctb", email = "sri.teach@gmail.com")
+    )
+Maintainer: Alexander Eckert <info@alexandereckert.com>
+Description: A fast parallelized alternative to R's native 'dist' function to
+    calculate distance matrices for continuous, binary, and multi-dimensional
+    input matrices, which supports a broad variety of 41 predefined distance
+    functions from the 'stats', 'proxy' and 'dtw' R packages, as well as user-
+    defined functions written in C++. For ease of use, the 'parDist' function
+    extends the signature of the 'dist' function and uses the same parameter
+    naming conventions as distance methods of existing R packages. The package
+    is mainly implemented in C++ and leverages the 'RcppParallel' package to
+    parallelize the distance computations with the help of the 'TinyThread'
+    library. Furthermore, the 'Armadillo' linear algebra library is used for
+    optimized matrix operations during distance calculations. The curiously
+    recurring template pattern (CRTP) technique is applied to avoid virtual
+    functions, which improves the Dynamic Time Warping calculations while
+    the implementation stays flexible enough to support different DTW step
+    patterns and normalization methods.
+License: GPL (>= 2)
+LazyData: TRUE
+URL: https://github.com/alexeckert/parallelDist,
+        https://www.alexandereckert.com/R
+BugReports: https://github.com/alexeckert/parallelDist/issues
+NeedsCompilation: yes
+Depends: R (>= 3.0.2)
+Imports: Rcpp (>= 0.12.6), RcppParallel (>= 4.3.20)
+LinkingTo: Rcpp, RcppParallel, RcppArmadillo
+SystemRequirements: C++11
+Suggests: dtw, ggplot2, proxy, testthat, RcppArmadillo, RcppXPtrUtils
+Packaged: 2018-12-11 17:45:06 UTC; alex
+Repository: CRAN
+Date/Publication: 2018-12-11 23:30:03 UTC

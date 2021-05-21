@@ -1,0 +1,24 @@
+Package: nhlscrape
+Type: Package
+Title: Scrapes the 'NHL' API for Statistical Analysis
+Version: 0.1.2
+Author: Adam Azoulay [aut, cre]
+Authors@R: person("Adam", "Azoulay", email = "adam1azoulay@gmail.com",
+                  role = c("aut", "cre"))
+Maintainer: Adam Azoulay <adam1azoulay@gmail.com>
+URL: https://github.com/adamazoulay/nhlscrape
+BugReports: https://github.com/adamazoulay/nhlscrape/issues
+Description: Add game events to a database file to use for statistical analysis of hockey games. This means we only call the 'NHL' API
+    once for each game we want to add. We will have very fast retrieval of data once games have been added since the data is stored locally.
+    We use the API located at <https://statsapi.web.nhl.com/api/v1/teams> with supplemental data from <https://www.nhl.com/scores/>.
+    Other endpoints can be found at <https://gitlab.com/dword4/nhlapi>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: httr, jsonlite, RSQLite, rvest, DBI, xml2
+RoxygenNote: 7.0.1
+NeedsCompilation: no
+Packaged: 2020-01-08 22:34:30 UTC; Adam
+Suggests: testthat
+Repository: CRAN
+Date/Publication: 2020-01-12 11:40:02 UTC

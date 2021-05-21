@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package jackalope</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="A Swift, Versatile Phylogenomic and High-Throughput Sequencing Simulator [R package jackalope version 1.1.1]" />
+<meta name="citation_author" content="Lucas A. Nell" />
+<meta name="citation_publication_date" content="2020-06-15" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=jackalope" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=jackalope" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="jackalope: A Swift, Versatile Phylogenomic and High-Throughput Sequencing Simulator" />
+<meta name="og:description" content="Simply and efficiently simulates (i) variants from reference genomes and (ii) reads from both Illumina &amp;lt;&lt;a href=&quot;https://www.illumina.com/&quot;&gt;https://www.illumina.com/&lt;/a&gt;&amp;gt; and Pacific Biosciences (PacBio) &amp;lt;&lt;a href=&quot;https://www.pacb.com/&quot;&gt;https://www.pacb.com/&lt;/a&gt;&amp;gt; platforms. It can either read reference genomes from FASTA files or simulate new ones. Genomic variants can be simulated using summary statistics, phylogenies, Variant Call Format (VCF) files, and coalescent simulations—the latter of which can include selection, recombination, and demographic fluctuations. 'jackalope' can simulate single, paired-end, or mate-pair Illumina reads, as well as PacBio reads. These simulations include sequencing errors, mapping qualities, multiplexing, and optical/polymerase chain reaction (PCR) duplicates. Simulating Illumina sequencing is based on ART by Huang et al. (2012) &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fbioinformatics%2Fbtr708&quot;&gt;doi:10.1093/bioinformatics/btr708&lt;/a&gt;&amp;gt;. PacBio sequencing simulation is based on SimLoRD by Stöcker et al. (2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fbioinformatics%2Fbtw286&quot;&gt;doi:10.1093/bioinformatics/btw286&lt;/a&gt;&amp;gt;. All outputs can be written to standard file formats." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=jackalope" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>jackalope: A Swift, Versatile Phylogenomic and High-Throughput Sequencing
+Simulator</h2>
+<p>Simply and efficiently
+    simulates (i) variants from reference genomes and (ii) reads from both Illumina 
+    &lt;<a href="https://www.illumina.com/">https://www.illumina.com/</a>&gt;
+    and Pacific Biosciences (PacBio) &lt;<a href="https://www.pacb.com/">https://www.pacb.com/</a>&gt; platforms. 
+    It can either read reference genomes from FASTA files or simulate new ones.
+    Genomic variants can be simulated using summary statistics, phylogenies, 
+    Variant Call Format (VCF) files, and coalescent simulations—the latter of which
+    can include selection, recombination, and demographic fluctuations.
+    'jackalope' can simulate single, paired-end, or mate-pair Illumina reads, 
+    as well as PacBio reads.
+    These simulations include sequencing errors, mapping qualities, multiplexing,
+    and optical/polymerase chain reaction (PCR) duplicates.
+    Simulating Illumina sequencing is based on ART
+    by Huang et al. (2012) &lt;<a href="https://doi.org/10.1093%2Fbioinformatics%2Fbtr708">doi:10.1093/bioinformatics/btr708</a>&gt;.
+    PacBio sequencing simulation is based on 
+    SimLoRD  by Stöcker et al. (2016) &lt;<a href="https://doi.org/10.1093%2Fbioinformatics%2Fbtw286">doi:10.1093/bioinformatics/btw286</a>&gt;.
+    All outputs can be written to standard file formats.</p>
+<table summary="Package jackalope summary">
+<tr>
+<td>Version:</td>
+<td>1.1.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../ape/index.html">ape</a>, <a href="../R6/index.html">R6</a>, <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.11), <a href="http://www.bioconductor.org/packages/release/bioc/html/zlibbioc.html"><span class="BioC">zlibbioc</span></a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a>, <a href="../RcppProgress/index.html">RcppProgress</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/Rhtslib.html"><span class="BioC">Rhtslib</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/zlibbioc.html"><span class="BioC">zlibbioc</span></a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../coala/index.html">coala</a>, <a href="../knitr/index.html">knitr</a>, <a href="../scrm/index.html">scrm</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-15</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Lucas A. Nell <a href="https://orcid.org/0000-0003-3209-0517"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [cph, aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Lucas A. Nell  &#x3c;&#x6c;&#x75;&#x63;&#x61;&#x73;&#x20;&#x61;&#x74;&#x20;&#x6c;&#x75;&#x63;&#x61;&#x73;&#x6e;&#x65;&#x6c;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/lucasnell/jackalope/issues">https://github.com/lucasnell/jackalope/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/lucasnell/jackalope">https://github.com/lucasnell/jackalope</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>GNU make, C++11</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">jackalope citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_jackalope.html">jackalope results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package jackalope downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="jackalope.pdf"> jackalope.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/jackalope-intro.html">Intro to jackalope</a><br/>
+<a href="vignettes/sub-models.html">Models of nucleotide substitution</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/jackalope_1.1.1.tar.gz"> jackalope_1.1.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/jackalope_1.1.1.zip">jackalope_1.1.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/jackalope_1.1.1.zip">jackalope_1.1.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/jackalope_1.1.1.zip">jackalope_1.1.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/jackalope_1.1.1.tgz">jackalope_1.1.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/jackalope_1.1.1.tgz">jackalope_1.1.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/jackalope"> jackalope archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=jackalope"><samp>https://CRAN.R-project.org/package=jackalope</samp></a>
+to link to this page.</p>
+</body>
+</html>

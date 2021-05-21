@@ -1,0 +1,23 @@
+Package: HiResTEC
+Type: Package
+Title: Non-Targeted Fluxomics on High-Resolution Mass-Spectrometry Data
+Version: 0.52
+Date: 2018-05-07
+Authors@R: c(person("Jan", "Lisec", role = c("aut", "cre"), email = "jan.lisec@bam.de"), person("Friederike", "Hoffmann", role = c("aut"), email = "Friederike.Hoffmann@charite.de"))
+Maintainer: Jan Lisec <jan.lisec@bam.de>
+Description: Identifying labeled compounds in a 13C-tracer experiment in non-targeted fashion is a cumbersome process. This package facilitates such type of analyses
+    by providing high level quality control plots, deconvoluting and evaluating spectra and performing a multitude of tests in an automatic fashion.
+    The main idea is to use changing intensity ratios of ion pairs from peak list generated with 'xcms' as candidates and evaluate those against
+    base peak chromatograms and spectra information within the raw measurement data automatically.
+License: GPL-3
+LazyData: TRUE
+Depends: R(>= 2.10.0)
+Imports: xcms, plyr, openxlsx, InterpretMSSpectrum, Rdisop, beeswarm,
+        Biobase
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2018-05-07 07:07:04 UTC; jlisec
+Author: Jan Lisec [aut, cre],
+  Friederike Hoffmann [aut]
+Repository: CRAN
+Date/Publication: 2018-05-07 13:32:10 UTC

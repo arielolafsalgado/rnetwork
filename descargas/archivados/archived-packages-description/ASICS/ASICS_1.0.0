@@ -1,0 +1,32 @@
+Package: ASICS
+Type: Package
+Title: Automatic Statistical Identification in Complex Spectra
+Version: 1.0.0
+Authors@R: c(
+    person("Gaëlle", "Lefort", email = "gaelle.lefort@inra.fr", role = c("aut", "cre")),
+    person("Rémi", "Sevien", email = "remi.servien@inra.fr", role = "aut"),
+    person("Patrick", "Tardivel", email = "patrick.tardivel@inra.fr", role = "aut"),
+    person("Nathalie", "Villa-Vialaneix", email = "nathalie.villa-vialaneix@inra.fr", role = "aut"))
+Description: With a set of pure metabolite spectra, ASICS quantifies 
+    metabolites concentration in a complex spectrum. The identification of 
+    metabolites is performed by fitting a mixture model to the spectra of the
+    library with a sparse penalty. The method and its statistical properties are 
+    described in Tardivel et al. (2017) <doi:10.1007/s11306-017-1244-5>. 
+Depends: R (>= 2.14)
+Imports: doParallel, ggplot2, foreach, methods, parallel, plyr,
+        quadprog, zoo
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Suggests: knitr, rmarkdown, BiocStyle
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-10-06 08:33:25 UTC; glefort
+Author: Gaëlle Lefort [aut, cre],
+  Rémi Sevien [aut],
+  Patrick Tardivel [aut],
+  Nathalie Villa-Vialaneix [aut]
+Maintainer: Gaëlle Lefort <gaelle.lefort@inra.fr>
+Repository: CRAN
+Date/Publication: 2017-10-06 12:03:35 UTC

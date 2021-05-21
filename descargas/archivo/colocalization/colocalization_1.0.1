@@ -1,0 +1,17 @@
+Package: colocalization
+Type: Package
+Title: Normalized Spatial Intensity Correlation
+Version: 1.0.1
+Author: Jiahui Xu, Xueyan Liu, Cheng Cheng, Hui Zhang
+Maintainer: Hui Zhang <hzhang@northwestern.edu>
+Depends: R (>= 2.10)
+Description: Calculate the colocalization index, NSInC, in two different ways as described in the paper (Liu et al., 2019. Manuscript submitted for publication.) for multiple-species spatial data which contain the precise locations and membership of each spatial point. The two main functions are nsinc.d() and nsinc.z(). They provide the Pearson’s correlation coefficients of signal proportions in different memberships within a concerned proximity of every signal (or every base signal if single direction colocalization is considered) across all (base) signals using two different ways of normalization. The proximity sizes could be an individual value or a range of values, where the default ranges of values are different for the two functions.
+License: GPL-3
+Encoding: UTF-8
+Suggests: testthat, rgl
+Imports: utils, stats, ggplot2
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2019-10-30 16:07:38 UTC; Serafina
+Repository: CRAN
+Date/Publication: 2019-10-30 22:40:02 UTC

@@ -1,0 +1,36 @@
+Package: neonstore
+Title: NEON Data Store
+Version: 0.1.2
+Authors@R: c(person(
+              "Carl", "Boettiger", 
+              email = "cboettig@gmail.com", 
+              role = c("aut", "cre"),
+              comment = c(ORCID = "0000-0002-1642-628X")),
+            person("Quinn", "Thomas", role = "ctb"),
+            person("Christine", "Laney", role = "aut", 
+                   comment = c("ORCID" = "0000-0002-4944-2083"))
+            )
+Description: The National Ecological Observatory Network (NEON) provides access
+  to its numerous data products through its REST API, 
+  <https://data.neonscience.org/data-api/>. This package provides a
+  high-level user interface for downloading and storing NEON data products.
+  While each of NEON data products consist of hundreds or thousands of individual
+  files.  Unlike 'neonUtilities', this package will avoid repeated downloading,
+  provides persistent storage, and improves performance.  This package does not 
+  provide expose interactions with the individual low-level NEON API endpoints.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: httr, jsonlite, rappdirs, progress, vroom, utils, curl,
+        openssl, tibble, stats, zip
+RoxygenNote: 7.1.1
+Suggests: testthat, covr, xml2, spelling
+Language: en-US
+NeedsCompilation: no
+Packaged: 2020-08-11 05:34:17 UTC; cboettig
+Author: Carl Boettiger [aut, cre] (<https://orcid.org/0000-0002-1642-628X>),
+  Quinn Thomas [ctb],
+  Christine Laney [aut] (<https://orcid.org/0000-0002-4944-2083>)
+Maintainer: Carl Boettiger <cboettig@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-08-11 14:50:02 UTC

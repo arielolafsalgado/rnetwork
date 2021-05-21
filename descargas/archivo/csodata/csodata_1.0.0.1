@@ -1,0 +1,36 @@
+Package: csodata
+Type: Package
+Title: Download Data from the CSO 'StatBank' API
+Version: 1.0.0.1
+Date: 2020-03-09
+Authors@R: c(
+    person("Eoin", "Horgan", email = "eoin.horgan@cso.ie", role = "aut", comment = c(ORCID = "0000-0002-3446-6154")),
+	person("Conor", "Crowley", email = "conor.crowley@cso.ie", role = c("aut", "cre")),
+    person("Mervyn", "O'Luing", email = "mervyn.oluing@cso.ie", role = "aut"))
+Maintainer: Conor Crowley <conor.crowley@cso.ie>
+Description: Imports 'StatBank' data in JSON-stat format and (optionally) reshapes it into wide
+	format. The Central Statistics Office (CSO) is the national statistical institute of Ireland
+	and 'StatBank' is the CSOs online database of Official Statistics. This database contains current
+	and historical data series compiled from CSO statistical releases and is accessed at
+	<http://www.cso.ie/px/pxeirestat/statire/SelectTable/Omrade0.asp?Planguage=0>.
+	A tutorial explaining and illustrating how to navigate to the 'StatBank' and how to search the
+	'StatBank' by keyword or theme can be found here:
+	<https://www.cso.ie/en/interactivezone/youtubevideos/statbanktutorial/>. This tutorial also
+	demonstrates how a user can create, edit and download a table from the 'StatBank'. The CSO
+	'StatBank' Application Programming Interface (API), which is accessed in this package, provides
+	access to 'StatBank' data in JSON-stat format at <https://statbank.cso.ie/webserviceclient/>.
+	This dissemination tool allows developers machine to machine access to CSO 'StatBank' data.
+Imports: dplyr, httr, jsonlite, reshape2, rjstat, R.cache, sf
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+Suggests: knitr, rmarkdown, tmap, viridisLite
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-03-09 08:43:38 UTC; horgane
+Author: Eoin Horgan [aut] (<https://orcid.org/0000-0002-3446-6154>),
+  Conor Crowley [aut, cre],
+  Mervyn O'Luing [aut]
+Repository: CRAN
+Date/Publication: 2020-03-09 15:40:02 UTC

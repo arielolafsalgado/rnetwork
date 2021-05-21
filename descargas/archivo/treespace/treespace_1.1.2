@@ -1,0 +1,35 @@
+Package: treespace
+Title: Statistical Exploration of Landscapes of Phylogenetic Trees
+Date: 2018-02-20
+Version: 1.1.2
+Authors@R: c(TJ = person("Thibaut", "Jombart", email="thibautjombart@gmail.com", role = "aut"),
+ 	     MK = person("Michelle", "Kendall", email="michelle.kendall@bdi.ox.ac.uk", role = c("aut", "cre")),
+	     JAG = person("Jacob", "Almagro-Garcia", role = "aut"),
+	     CC = person("Caroline", "Colijn", role = "aut"))
+Maintainer: Michelle Kendall <michelle.kendall@bdi.ox.ac.uk>
+Description: Tools for the exploration of distributions of phylogenetic trees.
+    This package includes a 'shiny' interface which can be started from R using
+    treespaceServer().
+Depends: R (>= 3.4.0), ape, ade4
+Imports: adegenet, adegraphics, adephylo, combinat, compiler, distory,
+        fields, htmlwidgets, MASS, parallel, phangorn, phytools, Rcpp,
+        RLumShiny, scatterD3, shiny, shinyBS, utils
+LinkingTo: Rcpp
+Suggests: ggplot2, igraph, knitr, pander, RColorBrewer, reshape2, rgl,
+        rmarkdown, testthat
+License: MIT + file LICENSE
+LazyData: true
+Collate: RcppExports.R metrics.R medTree.R treespace.R findGroves.R
+        plotGroves.R plotTreeDiff.R servers.R transmissionTrees.R
+        data.R makeCollapsedTree.R relatedTreeDist.R simulateIndTree.R
+        tipsMRCAdepths.R treeConcordance.R
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2018-02-21 20:23:39 UTC; Michelle
+Author: Thibaut Jombart [aut],
+  Michelle Kendall [aut, cre],
+  Jacob Almagro-Garcia [aut],
+  Caroline Colijn [aut]
+Repository: CRAN
+Date/Publication: 2018-02-22 18:11:40 UTC

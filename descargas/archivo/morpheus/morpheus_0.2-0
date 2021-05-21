@@ -1,0 +1,24 @@
+Package: morpheus
+Title: Estimate Parameters of Mixtures of Logistic Regressions
+Description: Mixture of logistic regressions parameters (H)estimation with
+    (U)spectral methods. The main methods take d-dimensional inputs and a vector
+    of binary outputs, and return parameters according to the GLMs mixture model
+    (General Linear Model). For more details see chapter 3 in the PhD thesis of
+		Mor-Absa Loum: <http://www.theses.fr/s156435>, available here
+		<https://www.math.u-psud.fr/~loum/IMG/pdf/these.compressed-2.pdf>.
+Version: 0.2-0
+Author: Benjamin Auder <Benjamin.Auder@u-psud.fr> [aut,cre],
+    Mor-Absa Loum <Mor-Absa.Loum@u-psud.fr> [aut]
+Maintainer: Benjamin Auder <Benjamin.Auder@u-psud.fr>
+Depends: R (>= 3.0.0),
+Imports: MASS, jointDiag, methods, pracma
+Suggests: devtools, flexmix, parallel, testthat, roxygen2, tensor,
+        nloptr
+License: MIT + file LICENSE
+RoxygenNote: 5.0.1
+Collate: 'utils.R' 'A_NAMESPACE.R' 'computeMu.R' 'multiRun.R'
+        'optimParams.R' 'plot.R' 'sampleIO.R'
+NeedsCompilation: yes
+Packaged: 2018-06-12 12:24:17 UTC; auder
+Repository: CRAN
+Date/Publication: 2018-06-14 18:48:14 UTC

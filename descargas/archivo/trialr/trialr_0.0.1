@@ -1,0 +1,36 @@
+Package: trialr
+Type: Package
+Title: Clinical Trial Designs in 'RStan'
+Version: 0.0.1
+Date: 2017-11-01
+Authors@R: c(person("Kristian", "Brock", email = "kristian.brock@gmail.com", role = c("aut", "cre")),
+             person("Trustees of", "Columbia University", role = "cph"))
+Maintainer: Kristian Brock <kristian.brock@gmail.com>
+Description: A showcase of Bayesian clinical trial designs, implemented in 
+    'RStan' and R. Some designs are implemented in R for the first
+    time (e.g. 'EffTox' by Thall and Cook, 2004, 
+    <https://biostatistics.mdanderson.org/softwaredownload/SingleSoftware.aspx?Software_Id=2>). 
+    Given the emphasis on flexibility in Bayesian analysis,
+    the implementations in a common language and style may serve as a cookbook
+    to encourage the use of Bayesian methods in trials. Compiled 'RStan' models
+    are provided in addition to helper functions to perform simulations and
+    inference on observed trial outcomes. There is a preponderance of early
+    phase trial designs because this is where Bayesian methods are used most.
+    If there is a published Bayesian design you want implemented in 'Stan', get in
+    touch.
+License: GPL-3
+Depends: R (>= 3.0.2), Rcpp (>= 0.12.8), methods (>= 3.3.2)
+Imports: rstan (>= 2.12.1), rstantools (>= 1.1.0), gtools
+LinkingTo: StanHeaders (>= 2.12.0.1), rstan (>= 2.12.1), BH (>=
+        1.62.0.1), Rcpp (>= 0.12.8), RcppEigen (>= 0.3.2.9.0)
+Suggests: knitr, rmarkdown, ggplot2
+URL: https://github.com/brockk/trialr
+BugReports: https://github.com/brockk/trialr/issues
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2017-11-20 20:09:10 UTC; krist
+Author: Kristian Brock [aut, cre],
+  Trustees of Columbia University [cph]
+Repository: CRAN
+Date/Publication: 2017-11-21 15:33:55 UTC

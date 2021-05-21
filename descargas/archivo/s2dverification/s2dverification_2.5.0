@@ -1,0 +1,40 @@
+Package: s2dverification
+Title: Set of Common Tools for Forecast Verification
+Version: 2.5.0
+Authors@R: c(
+    person("Virginie", "Guemas", , "virginie.guemas@bsc.es", role = "aut"),
+    person("Nicolau", "Manubens", , "nicolau.manubens@bsc.es", role = c("aut", "cre")),
+    person("Louis-Philippe", "Caron", , "louis-philippe.caron@bsc.es", role = "aut"),
+    person("Verónica", "Torralba", , "veronica.torralba@bsc.es", role = "aut"), 
+    person("Chloé", "Prodhomme", , "chloe.prodhomme@bs.es", role = "aut"),
+    person("Martin", "Ménégoz", , "martin.menegoz@bsc.es", role = "aut"),
+    person("Javier", "Garcia-Serrano", , "javier.garcia@bsc.es", role = "aut"),
+    person("Fabian", "Lienert", , "fabian.lienert@bsc.es", role = "aut"),
+    person("Ludovic", "Auger", , "ludovic.auger@meteo.fr", role = "aut"),
+    person("Isabel", "Andreu-Burillo", , "isabel.andreu.burillo@ic3.cat", role = "aut"))
+Description: Set of tools to verify forecasts through the computation of typical prediction scores against one or more observational datasets or reanalyses (a reanalysis being a physical extrapolation of observations that relies on the equations from a model, not a pure observational dataset). Intended for seasonal to decadal climate forecasts although can be useful to verify other kinds of forecasts. The package can be helpful in climate sciences for other purposes than forecasting. 
+Depends: R (>= 2.14.1), methods, maps
+Imports: ncdf4, GEOmap, geomapdata, mapproj, abind, parallel,
+        bigmemory, SpecsVerification, plyr
+Suggests: easyVerification
+License: GPL-3
+URL: https://earth.bsc.es/gitlab/es/s2dverification/wikis/home
+BugReports: https://earth.bsc.es/gitlab/es/s2dverification/issues
+LazyData: true
+SystemRequirements: cdo
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2016-02-15 12:30:42 UTC; nmanuben
+Author: Virginie Guemas [aut],
+  Nicolau Manubens [aut, cre],
+  Louis-Philippe Caron [aut],
+  Verónica Torralba [aut],
+  Chloé Prodhomme [aut],
+  Martin Ménégoz [aut],
+  Javier Garcia-Serrano [aut],
+  Fabian Lienert [aut],
+  Ludovic Auger [aut],
+  Isabel Andreu-Burillo [aut]
+Maintainer: Nicolau Manubens <nicolau.manubens@bsc.es>
+Repository: CRAN
+Date/Publication: 2016-02-17 11:19:18

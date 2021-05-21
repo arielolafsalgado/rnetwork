@@ -1,0 +1,32 @@
+Package: hdnom
+Type: Package
+Title: Benchmarking and Visualization Toolkit for Penalized Cox Models
+Version: 4.9
+Authors@R: c(
+    person("Nan", "Xiao", email = "me@nanx.me", role = c("aut", "cre")),
+    person("Qingsong", "Xu", email = "qsxu@csu.edu.cn", role = c("aut")),
+    person("Miaozhu", "Li", email = "miaozhu.li@duke.edu", role = c("aut"))
+    )
+Maintainer: Nan Xiao <me@nanx.me>
+Description: Creates nomogram visualizations for penalized Cox regression
+    models, with the support of reproducible survival model building,
+    validation, calibration, and comparison for high-dimensional data.
+License: GPL-3 | file LICENSE
+LazyData: TRUE
+VignetteBuilder: knitr
+URL: https://hdnom.org, https://github.com/road2stat/hdnom,
+        http://hdnom.io
+BugReports: https://github.com/road2stat/hdnom/issues
+Depends: R (>= 3.0.2)
+Imports: survival, glmnet, penalized, ncvreg (>= 3.8-0), rms, foreach,
+        survAUC, ggplot2 (>= 2.2.1), gridExtra
+Suggests: knitr, rmarkdown, doParallel, Hmisc, mice
+Encoding: UTF-8
+RoxygenNote: 6.0.1.9000
+NeedsCompilation: no
+Packaged: 2017-09-29 00:48:44 UTC; nanx
+Author: Nan Xiao [aut, cre],
+  Qingsong Xu [aut],
+  Miaozhu Li [aut]
+Repository: CRAN
+Date/Publication: 2017-09-29 03:47:53 UTC

@@ -1,0 +1,47 @@
+Package: LocalControl
+Type: Package
+Title: Nonparametric Methods for Generating High Quality Comparative
+        Effectiveness Evidence
+Version: 1.1.2
+Date: 2019-02-22
+Authors@R: c(
+  person(given = "Nicolas R.", family = "Lauve", role = "aut"),
+  person(given = "Stuart J.", family = "Nelson", role = "aut"),
+  person(given = "S. Stanley", family = "Young", role = "aut"),
+  person(given = "Robert L.", family = "Obenchain", role = "aut"),
+  person(given = "Melania", family = "Pintilie", role = "ctb"),
+  person(given = "Martin", family = "Kutz", role = "ctb"),
+  person(given = "Christophe G.", family = "Lambert", role = c("aut","cre"), email = "cglambert@unm.edu"))
+Description: Implements novel nonparametric approaches to address
+    biases and confounding when comparing treatments or exposures in
+    observational studies of outcomes. While designed and appropriate for use
+    in studies involving medicine and the life sciences, the package can be
+    used in other situations involving outcomes with multiple confounders.
+    The package implements a family of methods for non-parametric bias correction
+    when comparing treatments in observational studies, including survival
+    analysis settings, where competing risks and/or censoring may be present.
+    The approach extends to bias-corrected personalized predictions of treatment
+    outcome differences, and analysis of heterogeneity of treatment effect-sizes
+    across patient subgroups.
+License: Apache License 2.0 | file LICENSE
+SystemRequirements: C++11
+LazyData: TRUE
+LinkingTo: Rcpp
+Imports: Rcpp, gss, cluster, lattice, stats, graphics
+Suggests: colorspace, RColorBrewer, TeachingDemos, data.table, ggplot2,
+        gridExtra, rpart, rpart.plot, xtable
+RoxygenNote: 6.1.1
+Encoding: UTF-8
+NeedsCompilation: yes
+Depends: R (>= 3.0.0)
+Repository: CRAN
+Packaged: 2019-02-22 23:39:04 UTC; lambert
+Author: Nicolas R. Lauve [aut],
+  Stuart J. Nelson [aut],
+  S. Stanley Young [aut],
+  Robert L. Obenchain [aut],
+  Melania Pintilie [ctb],
+  Martin Kutz [ctb],
+  Christophe G. Lambert [aut, cre]
+Maintainer: Christophe G. Lambert <cglambert@unm.edu>
+Date/Publication: 2019-02-24 15:10:23 UTC

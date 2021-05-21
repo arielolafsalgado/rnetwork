@@ -1,0 +1,22 @@
+Package: clustermq
+Title: Evaluate Function Calls on HPC Schedulers (LSF, SGE, SLURM)
+Version: 0.8.0
+Author: Michael Schubert <mschu.dev@gmail.com>
+Maintainer: Michael Schubert <mschu.dev@gmail.com>
+Description: Evaluate arbitrary function calls using workers on HPC schedulers
+    in single line of code. All processing is done on the network without
+    accessing the file system. Remote schedulers are supported via SSH.
+URL: https://github.com/mschubert/clustermq
+BugReports: https://github.com/mschubert/clustermq/issues
+Depends: R (>= 3.0.2)
+Imports: infuser (>= 0.2.8), narray, purrr, R6, rzmq (>= 0.9.3), utils
+License: Apache License (== 2.0) | file LICENSE
+LazyData: true
+Encoding: UTF-8
+Suggests: dplyr, knitr, parallel, testthat
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-11-11 15:27:49 UTC; mschu
+Repository: CRAN
+Date/Publication: 2017-11-12 00:01:29 UTC

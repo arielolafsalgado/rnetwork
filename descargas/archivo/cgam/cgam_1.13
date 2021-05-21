@@ -1,0 +1,16 @@
+Package: cgam
+Type: Package
+Title: Constrained Generalized Additive Model
+Version: 1.13
+Date: 2019-04-22
+Author: Mary C. Meyer and Xiyue Liao 
+Maintainer: Xiyue Liao <liaoxiyue2011@gmail.com>
+Description: A constrained generalized additive model is fitted by the cgam routine. Given a set of predictors, each of which may have a shape or order restrictions, the maximum likelihood estimator for the constrained generalized additive model is found using an iteratively re-weighted cone projection algorithm. The ShapeSelect routine chooses a subset of predictor variables and describes the component relationships with the response. For each predictor, the user needs only specify a set of possible shape or order restrictions. A model selection method chooses the shapes and orderings of the relationships as well as the variables. The cone information criterion (CIC) is used to select the best combination of variables and shapes. A genetic algorithm may be used when the set of possible models is large. In addition, the cgam routine implements a two-dimensional isotonic regression using warped-plane splines without additivity assumptions.  It can also fit a convex or concave regression surface with triangle splines without additivity assumptions. See Mary C. Meyer (2013)<doi:10.1080/10485252.2013.797577> for more details.
+License: GPL (>= 2)
+Depends: coneproj(>= 1.12), svDialogs (>= 0.9-57), splines (>= 3.4.0),
+        lme4 (>= 1.1-13), Matrix (>= 1.2-8), R(>= 3.0.2)
+NeedsCompilation: no
+Suggests: stats, MASS, graphics, grDevices, utils, SemiPar
+Packaged: 2019-04-22 21:02:13 UTC; xiyueliao
+Repository: CRAN
+Date/Publication: 2019-04-23 04:10:03 UTC

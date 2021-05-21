@@ -1,0 +1,32 @@
+Package: textrecipes
+Title: Extra 'Recipes' for Text Processing
+Version: 0.1.0
+Authors@R: 
+    person(given = "Emil",
+           family = "Hvitfeldt",
+           role = c("aut", "cre"),
+           email = "emilhhvitfeldt@gmail.com",
+           comment = c(ORCID = "0000-0002-0679-1945"))
+Description: Converting text to numerical features requires
+    specifically created procedures, which are implemented as steps
+    according to the 'recipes' package. These steps allows for
+    tokenization, filtering, counting (tf and tfidf) and feature hashing.
+License: MIT + file LICENSE
+URL: https://github.com/tidymodels/textrecipes
+BugReports: https://github.com/tidymodels/textrecipes/issues
+Depends: R (>= 2.10), recipes (>= 0.1.4)
+Imports: generics, rlang, tokenizers, dplyr, tibble, tidyr, purrr,
+        SnowballC, stopwords, magrittr, Matrix, stringr
+Suggests: covr, testthat (>= 2.1.0), knitr, text2vec, rmarkdown,
+        textfeatures (>= 0.3.3)
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+SystemRequirements: GNU make, C++11
+NeedsCompilation: no
+Packaged: 2020-03-05 04:51:08 UTC; emilhvitfeldthansen
+Author: Emil Hvitfeldt [aut, cre] (<https://orcid.org/0000-0002-0679-1945>)
+Maintainer: Emil Hvitfeldt <emilhhvitfeldt@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-03-05 05:40:02 UTC

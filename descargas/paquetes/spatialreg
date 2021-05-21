@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package spatialreg</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Spatial Regression Analysis [R package spatialreg version 1.1-5]" />
+<meta name="citation_author1" content="Roger Bivand" />
+<meta name="citation_author2" content="Gianfranco Piras" />
+<meta name="citation_publication_date" content="2019-12-01" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=spatialreg" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=spatialreg" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="spatialreg: Spatial Regression Analysis" />
+<meta name="og:description" content="A collection of all the estimation functions for spatial cross-sectional models (on lattice/areal data using spatial weights matrices) contained up to now in 'spdep', 'sphet' and 'spse'. These model fitting functions include maximum likelihood methods for cross-sectional models proposed by 'Cliff' and 'Ord' (1973, ISBN:0850860369) and (1981, ISBN:0850860814), fitting methods initially described by 'Ord' (1975) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F01621459.1975.10480272&quot;&gt;doi:10.1080/01621459.1975.10480272&lt;/a&gt;&amp;gt;. The models are further described by 'Anselin' (1988) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2F978-94-015-7799-1&quot;&gt;doi:10.1007/978-94-015-7799-1&lt;/a&gt;&amp;gt;. Spatial two stage least squares and spatial general method of moment models initially proposed by 'Kelejian' and 'Prucha' (1998) &amp;lt;&lt;a href=&quot;https://doi.org/10.1023%2FA%3A1007707430416&quot;&gt;doi:10.1023/A:1007707430416&lt;/a&gt;&amp;gt; and (1999) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2F1468-2354.00027&quot;&gt;doi:10.1111/1468-2354.00027&lt;/a&gt;&amp;gt; are provided. Impact methods and MCMC fitting methods proposed by 'LeSage' and 'Pace' (2009) &amp;lt;&lt;a href=&quot;https://doi.org/10.1201%2F9781420064254&quot;&gt;doi:10.1201/9781420064254&lt;/a&gt;&amp;gt; are implemented for the family of cross-sectional spatial regression models. Methods for fitting the log determinant term in maximum likelihood and MCMC fitting are compared by 'Bivand et al.' (2013) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fgean.12008&quot;&gt;doi:10.1111/gean.12008&lt;/a&gt;&amp;gt;, and model fitting methods by 'Bivand' and 'Piras' (2015) &amp;lt;&lt;a href=&quot;https://doi.org/10.18637%2Fjss.v063.i18&quot;&gt;doi:10.18637/jss.v063.i18&lt;/a&gt;&amp;gt;; both of these articles include extensive lists of references. 'spatialreg' &amp;gt;= 1.1-* correspond to 'spdep' &amp;gt;= 1.1-1, in which the model fitting functions are deprecated and pass through to 'spatialreg', but will mask those in 'spatialreg'. From versions 1.2-*, the functions will be made defunct in 'spdep'." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=spatialreg" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>spatialreg: Spatial Regression Analysis</h2>
+<p>A collection of all the estimation functions for spatial cross-sectional models (on lattice/areal data using spatial weights matrices) contained up to now in 'spdep', 'sphet' and 'spse'. These model fitting functions include maximum likelihood methods for cross-sectional models proposed by 'Cliff' and 'Ord' (1973, ISBN:0850860369) and (1981, ISBN:0850860814), fitting methods initially described by 'Ord' (1975) &lt;<a href="https://doi.org/10.1080%2F01621459.1975.10480272">doi:10.1080/01621459.1975.10480272</a>&gt;. The models are further described by 'Anselin' (1988) &lt;<a href="https://doi.org/10.1007%2F978-94-015-7799-1">doi:10.1007/978-94-015-7799-1</a>&gt;. Spatial two stage least squares and spatial general method of moment models initially proposed by 'Kelejian' and 'Prucha' (1998) &lt;<a href="https://doi.org/10.1023%2FA%3A1007707430416">doi:10.1023/A:1007707430416</a>&gt; and (1999) &lt;<a href="https://doi.org/10.1111%2F1468-2354.00027">doi:10.1111/1468-2354.00027</a>&gt; are provided. Impact methods and MCMC fitting methods proposed by 'LeSage' and 'Pace' (2009) &lt;<a href="https://doi.org/10.1201%2F9781420064254">doi:10.1201/9781420064254</a>&gt; are implemented for the family of cross-sectional spatial regression models. Methods for fitting the log determinant term in maximum likelihood and MCMC fitting are compared by 'Bivand et al.' (2013) &lt;<a href="https://doi.org/10.1111%2Fgean.12008">doi:10.1111/gean.12008</a>&gt;, and model fitting methods by 'Bivand' and 'Piras' (2015) &lt;<a href="https://doi.org/10.18637%2Fjss.v063.i18">doi:10.18637/jss.v063.i18</a>&gt;; both of these articles include extensive lists of references. 'spatialreg' &gt;= 1.1-* correspond to 'spdep' &gt;= 1.1-1, in which the model fitting functions are deprecated and pass through to 'spatialreg', but will mask those in 'spatialreg'. From versions 1.2-*, the functions will be made defunct in 'spdep'.</p>
+<table summary="Package spatialreg summary">
+<tr>
+<td>Version:</td>
+<td>1.1-5</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3.0), <a href="../spData/index.html">spData</a>, <a href="../Matrix/index.html">Matrix</a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../spdep/index.html">spdep</a>, <a href="../expm/index.html">expm</a>, <a href="../coda/index.html">coda</a>, methods, <a href="../MASS/index.html">MASS</a>, <a href="../boot/index.html">boot</a>, splines, <a href="../LearnBayes/index.html">LearnBayes</a>, <a href="../nlme/index.html">nlme</a>, <a href="../gmodels/index.html">gmodels</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td>parallel, <a href="../RSpectra/index.html">RSpectra</a>, <a href="../sf/index.html">sf</a>, <a href="../tmap/index.html">tmap</a>, <a href="../foreign/index.html">foreign</a>, <a href="../spam/index.html">spam</a>, <a href="../knitr/index.html">knitr</a>, <a href="../lmtest/index.html">lmtest</a>, <a href="../sandwich/index.html">sandwich</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-12-01</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Roger Bivand <a href="https://orcid.org/0000-0003-2392-6140"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [cre, aut],
+  Gianfranco Piras [aut],
+  Luc Anselin [ctb],
+  Andrew Bernat [ctb],
+  Eric Blankmeyer [ctb],
+  Yongwan Chun [ctb],
+  Virgilio Gómez-Rubio [ctb],
+  Daniel Griffith [ctb],
+  Martin Gubri [ctb],
+  Rein Halbersma [ctb],
+  James LeSage [ctb],
+  Angela Li [ctb],
+  Jielai Ma [ctb],
+  Abhirup Mallik [ctb, trl],
+  Giovanni Millo [ctb],
+  Kelley Pace [ctb],
+  Pedro Peres-Neto [ctb],
+  Mauricio Sarrias [ctb],
+  JuanTomas Sayago [ctb],
+  Michael Tiefelsdorf [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Roger Bivand  &#x3c;&#x52;&#x6f;&#x67;&#x65;&#x72;&#x2e;&#x42;&#x69;&#x76;&#x61;&#x6e;&#x64;&#x20;&#x61;&#x74;&#x20;&#x6e;&#x68;&#x68;&#x2e;&#x6e;&#x6f;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/r-spatial/spatialreg/issues/">https://github.com/r-spatial/spatialreg/issues/</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/r-spatial/spatialreg/">https://github.com/r-spatial/spatialreg/</a>,
+<a href="https://r-spatial.github.io/spatialreg/">https://r-spatial.github.io/spatialreg/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">spatialreg citation info</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Econometrics.html">Econometrics</a>, <a href="../../views/Spatial.html">Spatial</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_spatialreg.html">spatialreg results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package spatialreg downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="spatialreg.pdf"> spatialreg.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/SpatialFiltering.html">Moran Eigenvectors</a><br/>
+<a href="vignettes/sids_models.html">Introduction to the North Carolina SIDS data set (re-revised)</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/spatialreg_1.1-5.tar.gz"> spatialreg_1.1-5.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/spatialreg_1.1-5.zip">spatialreg_1.1-5.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/spatialreg_1.1-5.zip">spatialreg_1.1-5.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/spatialreg_1.1-5.zip">spatialreg_1.1-5.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/spatialreg_1.1-5.tgz">spatialreg_1.1-5.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/spatialreg_1.1-5.tgz">spatialreg_1.1-5.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/spatialreg"> spatialreg archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package spatialreg reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../GWmodel/index.html">GWmodel</a>, <a href="../lagsarlmtree/index.html">lagsarlmtree</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../HSAR/index.html">HSAR</a>, <a href="../latticeDensity/index.html">latticeDensity</a>, <a href="../spANOVA/index.html">spANOVA</a>, <a href="../spsur/index.html">spsur</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../broom/index.html">broom</a>, <a href="../prabclus/index.html">prabclus</a>, <a href="../spData/index.html">spData</a>, <a href="../spdep/index.html">spdep</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;enhances:</td>
+<td><a href="../MuMIn/index.html">MuMIn</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=spatialreg"><samp>https://CRAN.R-project.org/package=spatialreg</samp></a>
+to link to this page.</p>
+</body>
+</html>

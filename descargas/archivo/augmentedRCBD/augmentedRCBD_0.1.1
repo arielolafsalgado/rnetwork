@@ -1,0 +1,52 @@
+Package: augmentedRCBD
+Title: Analysis of Augmented Randomised Complete Block Designs
+Version: 0.1.1
+Authors@R: c(
+    person(given = "J.", family = "Aravind",
+           email = "j.aravind@icar.gov.in",
+           role = c("aut", "cre"),
+		       comment = c(ORCID = "0000-0002-4791-442X")),
+	  person(given = "S.", family = "Mukesh Sankar", 
+           email = "mukeshsankar@gmail.com",
+		       role = "aut"),
+    person(given = c("Dhammaprakash", "Pandhari"), family = "Wankhede", 
+           email = "d.wankhede@icar.gov.in",
+		       role = "aut"),
+    person(given = "Vikender", family = "Kaur",
+           email = "vikender.kaur@icar.gov.in",
+		       role = "aut"),
+    person("ICAR-NBGPR",
+           role = c("cph"),
+		       comment = c(url = "www.nbpgr.ernet.in")))
+Description: Functions for analysis of data generated from experiments in
+    augmented randomised complete block design according to Federer, W.T. (1961)
+    <doi:10.2307/2527837>. Computes analysis of variance, adjusted means,
+    descriptive statistics, genetic variability statistics etc. Further includes
+    data visualization and report generation functions.
+Copyright: 2015-2018, ICAR-NBPGR
+License: GPL-2 | GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.0.1)
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+URL: https://github.com/aravind-j/augmentedRCBD
+        https://CRAN.R-project.org/package=augmentedRCBD
+        https://aravind-j.github.io/augmentedRCBD
+        https://doi.org/10.5281/zenodo.1310011
+BugReports: https://github.com/aravind-j/augmentedRCBD/issues
+Imports: emmeans, dplyr, flextable, ggplot2, grDevices, methods,
+        moments, multcomp, multcompView, Rdpack, stats, stringi,
+        officer, reshape2, utils
+Suggests: knitr, rmarkdown, pander, testthat
+RdMacros: Rdpack
+NeedsCompilation: no
+Packaged: 2019-07-20 05:13:19 UTC; acer
+Author: J. Aravind [aut, cre] (<https://orcid.org/0000-0002-4791-442X>),
+  S. Mukesh Sankar [aut],
+  Dhammaprakash Pandhari Wankhede [aut],
+  Vikender Kaur [aut],
+  ICAR-NBGPR [cph] (www.nbpgr.ernet.in)
+Maintainer: J. Aravind <j.aravind@icar.gov.in>
+Repository: CRAN
+Date/Publication: 2019-07-21 06:50:03 UTC

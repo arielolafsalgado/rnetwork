@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package Claddis</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Measuring Morphological Diversity and Evolutionary Tempo [R package Claddis version 0.6.3]" />
+<meta name="citation_author1" content="Graeme T. Lloyd" />
+<meta name="citation_author2" content="Thomas Guillerme" />
+<meta name="citation_author3" content="Emma Sherratt" />
+<meta name="citation_author4" content="Steve C. Wang" />
+<meta name="citation_publication_date" content="2020-09-26" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=Claddis" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=Claddis" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="Claddis: Measuring Morphological Diversity and Evolutionary Tempo" />
+<meta name="og:description" content="Measures morphological diversity from discrete character data and estimates evolutionary tempo on phylogenetic trees. Imports morphological data from #NEXUS (Maddison et al. (1997) &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fsysbio%2F46.4.590&quot;&gt;doi:10.1093/sysbio/46.4.590&lt;/a&gt;&amp;gt;) format with read_nexus_matrix(), and writes to both #NEXUS and TNT format (Goloboff et al. (2008) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fj.1096-0031.2008.00217.x&quot;&gt;doi:10.1111/j.1096-0031.2008.00217.x&lt;/a&gt;&amp;gt;). Main functions are test_rates(), which implements AIC and likelihood ratio tests for discrete character rates introduced across Lloyd et al. (2012) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fj.1558-5646.2011.01460.x&quot;&gt;doi:10.1111/j.1558-5646.2011.01460.x&lt;/a&gt;&amp;gt;, Brusatte et al. (2014) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.cub.2014.08.034&quot;&gt;doi:10.1016/j.cub.2014.08.034&lt;/a&gt;&amp;gt;, Close et al. (2015) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.cub.2015.06.047&quot;&gt;doi:10.1016/j.cub.2015.06.047&lt;/a&gt;&amp;gt;, and Lloyd (2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fbij.12746&quot;&gt;doi:10.1111/bij.12746&lt;/a&gt;&amp;gt;, and MatrixDistances(), which implements multiple discrete character distance metrics from Gower (1971) &amp;lt;&lt;a href=&quot;https://doi.org/10.2307%2F2528823&quot;&gt;doi:10.2307/2528823&lt;/a&gt;&amp;gt;, Wills (1998) &amp;lt;&lt;a href=&quot;https://doi.org/10.1006%2Fbijl.1998.0255&quot;&gt;doi:10.1006/bijl.1998.0255&lt;/a&gt;&amp;gt;, Lloyd (2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fbij.12746&quot;&gt;doi:10.1111/bij.12746&lt;/a&gt;&amp;gt;, and Hopkins and St John (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.1098%2Frspb.2018.1784&quot;&gt;doi:10.1098/rspb.2018.1784&lt;/a&gt;&amp;gt;. This also includes the GED correction from Lehmann et al. (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fpala.12430&quot;&gt;doi:10.1111/pala.12430&lt;/a&gt;&amp;gt;. Multiple functions implement morphospace plots: plot_chronophylomorphospace() implements Sakamoto and Ruta (2012) &amp;lt;&lt;a href=&quot;https://doi.org/10.1371%2Fjournal.pone.0039752&quot;&gt;doi:10.1371/journal.pone.0039752&lt;/a&gt;&amp;gt;, plot_morphospace() implements Wills et al. (1994) &amp;lt;&lt;a href=&quot;https://doi.org/10.1017%2FS009483730001263X&quot;&gt;doi:10.1017/S009483730001263X&lt;/a&gt;&amp;gt;, plot_changes_on_tree() implements Wang and Lloyd (2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.1098%2Frspb.2016.0214&quot;&gt;doi:10.1098/rspb.2016.0214&lt;/a&gt;&amp;gt;, and plot_morphospace_stack() implements Foote (1993) &amp;lt;&lt;a href=&quot;https://doi.org/10.1017%2FS0094837300015864&quot;&gt;doi:10.1017/S0094837300015864&lt;/a&gt;&amp;gt;. Other functions include safe_taxonomic_reduction(), which implements Wilkinson (1995) &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fsysbio%2F44.4.501&quot;&gt;doi:10.1093/sysbio/44.4.501&lt;/a&gt;&amp;gt;, map_dollo_changes() implements the Dollo stochastic character mapping of Tarver et al. (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fgbe%2Fevy096&quot;&gt;doi:10.1093/gbe/evy096&lt;/a&gt;&amp;gt;, and estimate_ancestral_states() implements the ancestral state options of Lloyd (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fpala.12380&quot;&gt;doi:10.1111/pala.12380&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=Claddis" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>Claddis: Measuring Morphological Diversity and Evolutionary Tempo</h2>
+<p>Measures morphological diversity from discrete character data and
+    estimates evolutionary tempo on phylogenetic trees. Imports morphological
+    data from #NEXUS (Maddison et al. (1997) &lt;<a href="https://doi.org/10.1093%2Fsysbio%2F46.4.590">doi:10.1093/sysbio/46.4.590</a>&gt;)
+    format with read_nexus_matrix(), and writes to both #NEXUS and TNT format 
+    (Goloboff et al. (2008) &lt;<a href="https://doi.org/10.1111%2Fj.1096-0031.2008.00217.x">doi:10.1111/j.1096-0031.2008.00217.x</a>&gt;). Main
+    functions are test_rates(), which implements AIC and likelihood
+    ratio tests for discrete character rates introduced across Lloyd et al.
+    (2012) &lt;<a href="https://doi.org/10.1111%2Fj.1558-5646.2011.01460.x">doi:10.1111/j.1558-5646.2011.01460.x</a>&gt;, Brusatte et al. (2014)
+    &lt;<a href="https://doi.org/10.1016%2Fj.cub.2014.08.034">doi:10.1016/j.cub.2014.08.034</a>&gt;, Close et al. (2015)
+    &lt;<a href="https://doi.org/10.1016%2Fj.cub.2015.06.047">doi:10.1016/j.cub.2015.06.047</a>&gt;, and Lloyd (2016) &lt;<a href="https://doi.org/10.1111%2Fbij.12746">doi:10.1111/bij.12746</a>&gt;,
+    and MatrixDistances(), which implements multiple discrete character
+    distance metrics from Gower (1971) &lt;<a href="https://doi.org/10.2307%2F2528823">doi:10.2307/2528823</a>&gt;, Wills (1998)
+    &lt;<a href="https://doi.org/10.1006%2Fbijl.1998.0255">doi:10.1006/bijl.1998.0255</a>&gt;, Lloyd (2016) &lt;<a href="https://doi.org/10.1111%2Fbij.12746">doi:10.1111/bij.12746</a>&gt;, and
+    Hopkins and St John (2018) &lt;<a href="https://doi.org/10.1098%2Frspb.2018.1784">doi:10.1098/rspb.2018.1784</a>&gt;. This also includes
+    the GED correction from Lehmann et al. (2019) &lt;<a href="https://doi.org/10.1111%2Fpala.12430">doi:10.1111/pala.12430</a>&gt;.
+    Multiple functions implement morphospace plots:
+    plot_chronophylomorphospace() implements Sakamoto and Ruta (2012)
+    &lt;<a href="https://doi.org/10.1371%2Fjournal.pone.0039752">doi:10.1371/journal.pone.0039752</a>&gt;, plot_morphospace() implements Wills et
+    al. (1994) &lt;<a href="https://doi.org/10.1017%2FS009483730001263X">doi:10.1017/S009483730001263X</a>&gt;, plot_changes_on_tree()
+    implements Wang and Lloyd (2016) &lt;<a href="https://doi.org/10.1098%2Frspb.2016.0214">doi:10.1098/rspb.2016.0214</a>&gt;, and
+    plot_morphospace_stack() implements Foote (1993)
+    &lt;<a href="https://doi.org/10.1017%2FS0094837300015864">doi:10.1017/S0094837300015864</a>&gt;. Other functions include
+    safe_taxonomic_reduction(), which implements Wilkinson (1995)
+    &lt;<a href="https://doi.org/10.1093%2Fsysbio%2F44.4.501">doi:10.1093/sysbio/44.4.501</a>&gt;, map_dollo_changes() implements
+    the Dollo stochastic character mapping of Tarver et al. (2018)
+    &lt;<a href="https://doi.org/10.1093%2Fgbe%2Fevy096">doi:10.1093/gbe/evy096</a>&gt;, and estimate_ancestral_states() implements
+    the ancestral state options of Lloyd (2018) &lt;<a href="https://doi.org/10.1111%2Fpala.12380">doi:10.1111/pala.12380</a>&gt;.</p>
+<table summary="Package Claddis summary">
+<tr>
+<td>Version:</td>
+<td>0.6.3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td><a href="../ape/index.html">ape</a>, <a href="../phytools/index.html">phytools</a>, <a href="../strap/index.html">strap</a>, R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../clipr/index.html">clipr</a>, <a href="../geoscale/index.html">geoscale</a>, graphics, grDevices, methods, stats, utils</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../rgl/index.html">rgl</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-26</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Graeme T. Lloyd [aut, cre, cph],
+  Thomas Guillerme [aut, cph],
+  Emma Sherratt [aut, cph],
+  Steve C. Wang [aut, cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Graeme T. Lloyd  &#x3c;&#x67;&#x72;&#x61;&#x65;&#x6d;&#x65;&#x74;&#x6c;&#x6c;&#x6f;&#x79;&#x64;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">Claddis citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="ChangeLog">ChangeLog</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_Claddis.html">Claddis results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package Claddis downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="Claddis.pdf"> Claddis.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/Claddis_0.6.3.tar.gz"> Claddis_0.6.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/Claddis_0.6.3.zip">Claddis_0.6.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/Claddis_0.6.3.zip">Claddis_0.6.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/Claddis_0.6.3.zip">Claddis_0.6.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/Claddis_0.6.3.tgz">Claddis_0.6.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/Claddis_0.6.3.tgz">Claddis_0.6.3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/Claddis"> Claddis archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package Claddis reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../dispRity/index.html">dispRity</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=Claddis"><samp>https://CRAN.R-project.org/package=Claddis</samp></a>
+to link to this page.</p>
+</body>
+</html>

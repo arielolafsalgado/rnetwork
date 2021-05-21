@@ -1,0 +1,22 @@
+Package: GSCAD
+Type: Package
+Title: Implementing GSCAD Method for Image Denoising and Inpainting
+Version: 0.1.0
+Authors@R: c(
+    person("Simeng", "Qu", email = "simengqu@gmail.com", role =c("aut", "cre")),
+    person("Xiao", "Wang", email = "wangxiao@purdue.edu", role = "aut"))
+Maintainer: Simeng Qu <simengqu@gmail.com>
+Description: Method proposed in "Simultaneous Sparse Dictionary Learning and Pruning" ( Qu and Wang (2016) <arXiv:1605.07870>) is implemented. The idea is to conduct a linear decomposition of a signal using a few atoms of a learned and usually over-completed dictionary instead of a pre-defined basis. A proper size of the to-be-learned dictionary is determining at the same time during the procedure. Application includes image denoising and image inpainting.
+Depends: R (>= 3.2.3)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+LinkingTo: Rcpp, RcppArmadillo
+Imports: Rcpp, Matrix, fields, methods
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2017-10-05 23:24:50 UTC; Simone
+Author: Simeng Qu [aut, cre],
+  Xiao Wang [aut]
+Repository: CRAN
+Date/Publication: 2017-10-06 11:51:17 UTC

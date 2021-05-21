@@ -1,0 +1,39 @@
+Package: landsepi
+Type: Package
+Encoding: UTF-8
+Title: Landscape Epidemiology and Evolution
+Version: 0.0.2
+Date: 2018-03-19
+Authors@R: c(person("Loup", "Rimbaud", role = "aut", email = "loup.rimbaud@csiro.au"),
+        person("Julien", "Papaix", role = "aut", email = "julien.papaix@inra.fr"),
+        person("Jean-Francois", "Rey", role = "cre", email = "jean-francois.rey@inra.fr"))
+Author: Loup Rimbaud [aut],
+  Julien Papaix [aut],
+  Jean-Francois Rey [cre]
+Maintainer: Jean-Francois Rey <jean-francois.rey@inra.fr>
+Description: A spatio-temporal stochastic model to assess resistance deployment strategies 
+    against plant pathogens. The model is based on stochastic geometry for describing the 
+    landscape and the resistant hosts, a dispersal kernel for the dissemination of the 
+    pathogen, and a SEIR (Susceptible-Exposed-Infectious-Removed) architecture to simulate 
+    plant response to disease.
+    Loup Rimbaud, Julien Papaïx, Jean-François Rey, Luke G Barrett, 
+    Peter H Thrall (2018) <doi:10.1101/260836>.
+License: GPL (>= 2) | file LICENSE
+LazyData: true
+BuildVignettes: true
+NeedsCompilation: yes
+Biarch: true
+SystemRequirements: C++11, gsl, gdal >= 1.7.0
+Depends: methods, utils, grDevices (>= 3.0.0), graphics (>= 3.0.0), R
+        (>= 3.3.0), Rcpp (>= 0.9.0), rgdal (>= 1.2-16)
+Imports: sp (>= 1.0-17), stats (>= 3.0.2), Matrix, MASS, rgeos,
+        maptools, fields, splancs, sf
+Collate: 'invlogit.R' 'logit.R' 'RcppExports.R' 'graphLand.R'
+        'periodic_cov.R' 'multiN.R' 'AgriLand.R' 'HLIRdynamics.R'
+        'demo_landsepi.R' 'landsepi.R' 'plotevolQR.R'
+        'simul_landsepi.R'
+LinkingTo: Rcpp
+RoxygenNote: 6.0.1
+Packaged: 2018-03-23 08:48:28 UTC; jfrey
+Repository: CRAN
+Date/Publication: 2018-03-26 12:38:25 UTC

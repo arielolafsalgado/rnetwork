@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package vapour</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Lightweight Access to the 'Geospatial Data Abstraction Library' ('GDAL') [R package vapour version 0.5.5]" />
+<meta name="citation_author" content="Michael Sumner" />
+<meta name="citation_publication_date" content="2020-06-23" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=vapour" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=vapour" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="vapour: Lightweight Access to the 'Geospatial Data Abstraction Library' ('GDAL')" />
+<meta name="og:description" content="Provides low-level access to 'GDAL' functionality for R packages. The aim is to minimize the level of interpretation put on the 'GDAL' facilities, to enable direct use of it for a variety of purposes. 'GDAL' is the 'Geospatial Data Abstraction Library' a translator for raster and vector geospatial data formats that presents a single raster abstract data model and single vector abstract data model to the calling application for all supported formats &amp;lt;&lt;a href=&quot;http://gdal.org/&quot;&gt;http://gdal.org/&lt;/a&gt;&amp;gt;. Other available packages 'rgdal' and 'sf' also provide access to the 'GDAL' library, but neither can be used for these lower level tasks, and both do many other tasks. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=vapour" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>vapour: Lightweight Access to the 'Geospatial Data Abstraction Library'
+('GDAL')</h2>
+<p>Provides low-level access to 'GDAL' functionality for R packages. The aim is to minimize
+  the level of interpretation put on the 'GDAL' facilities, to enable direct use of it for a variety of purposes. 
+  'GDAL' is the 'Geospatial Data Abstraction Library' a translator for raster and vector geospatial data formats 
+  that presents a single raster abstract data model and single vector abstract data model to the calling application 
+  for all supported formats &lt;<a href="http://gdal.org/">http://gdal.org/</a>&gt;. Other available packages 'rgdal' and 'sf' also provide access to 
+  the 'GDAL' library, but neither can be used for these lower level tasks, and both do many other tasks. </p>
+<table summary="Package vapour summary">
+<tr>
+<td>Version:</td>
+<td>0.5.5</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, utils</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../covr/index.html">covr</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../geojsonsf/index.html">geojsonsf</a>, <a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rbenchmark/index.html">rbenchmark</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../spelling/index.html">spelling</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-23</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Michael Sumner <a href="https://orcid.org/0000-0002-2471-7511"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Simon Wotherspoon [ctb] (figured out the mechanism for the resampling
+    algorithm),
+  Mark Padgham [ctb] (helped get started :)),
+  Edzer Pebesma [ctb] (wrote allocate_attribute, copied here from sf),
+  Roger Bivand [ctb] (wrote configure.ac, adapted here from rgdal),
+  Jim Hester [ctb] (wrote CollectorList.h, copied here from fs package),
+  Timothy Keitt [ctb] (wrote GetPointsInternal copied here from rgdal2
+    package),
+  Jeroen Ooms [ctb] (tweaked build process, provided Windows build tools),
+  Dale Maschette [ctb] (created the hex logo),
+  Joseph Stachelek [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Michael Sumner  &#x3c;&#x6d;&#x64;&#x73;&#x75;&#x6d;&#x6e;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/hypertidy/vapour/issues">https://github.com/hypertidy/vapour/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/hypertidy/vapour">https://github.com/hypertidy/vapour</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>GDAL (&gt;= 2.2.2), PROJ.4 (&gt;= 4.8.0), C++11</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_vapour.html">vapour results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package vapour downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="vapour.pdf"> vapour.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/vapour.html">Vapour</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/vapour_0.5.5.tar.gz"> vapour_0.5.5.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/vapour_0.5.5.zip">vapour_0.5.5.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/vapour_0.5.5.zip">vapour_0.5.5.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/vapour_0.5.5.zip">vapour_0.5.5.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/vapour_0.5.5.tgz">vapour_0.5.5.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/vapour_0.5.5.tgz">vapour_0.5.5.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/vapour"> vapour archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package vapour reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../lazyraster/index.html">lazyraster</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=vapour"><samp>https://CRAN.R-project.org/package=vapour</samp></a>
+to link to this page.</p>
+</body>
+</html>

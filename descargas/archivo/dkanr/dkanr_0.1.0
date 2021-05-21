@@ -1,0 +1,34 @@
+Package: dkanr
+Title: Client for the 'DKAN' API
+Version: 0.1.0
+Authors@R: c(
+    person("Tony", "Fujs",
+        role = c("aut", "cre"),
+        email = "tonyfujs@gmail.com"),
+    person("Meera", "Desai",
+        role = "aut",
+        email = "mbdesai@umich.edu"),
+    person("Karthik", "Ramanathan",
+        role = "aut",
+        email = "drkarthi@umich.edu")
+    )
+Description: Provides functions to facilitate access to the 'DKAN' API (<https://dkan.readthedocs.io/en/latest/apis/index.html>), including the 'DKAN' REST API (metadata), and the 'DKAN' datastore API (data). Includes functions to list, create, retrieve, update, and delete datasets and resources nodes. It also includes functions to search and retrieve data from the 'DKAN' datastore. 
+License: MIT + file LICENSE
+Depends: R (>= 3.2)
+Imports: assertthat (>= 0.2.0), dplyr (>= 0.7.4), httr (>= 1.3.1),
+        jsonlite (>= 1.5), purrr (>= 0.2.4), stringr (>= 1.2.0), tibble
+        (>= 1.4.2)
+Suggests: covr (>= 3.0.1), knitr (>= 1.19), rmarkdown (>= 1.8),
+        testthat (>= 2.0.0), httptest
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2018-03-15 13:55:16 UTC; WB499754
+Author: Tony Fujs [aut, cre],
+  Meera Desai [aut],
+  Karthik Ramanathan [aut]
+Maintainer: Tony Fujs <tonyfujs@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-03-16 09:42:55 UTC

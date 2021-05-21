@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package clusterSim</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=clusterSim" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="clusterSim: Searching for Optimal Clustering Procedure for a Data Set" />
+<meta name="og:description" content="Distance measures (GDM1, GDM2, Sokal-Michener, Bray-Curtis, for symbolic interval-valued data), cluster quality indices (Calinski-Harabasz, Baker-Hubert, Hubert-Levine, Silhouette, Krzanowski-Lai, Hartigan, Gap, Davies-Bouldin), data normalization formulas (metric data, interval-valued symbolic data), data generation (typical and non-typical data), HINoV method, replication analysis, linear ordering methods, spectral clustering, agreement indices between two partitions, plot functions (for categorical and symbolic interval-valued data). (MILLIGAN, G.W., COOPER, M.C. (1985) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2FBF02294245&quot;&gt;doi:10.1007/BF02294245&lt;/a&gt;&amp;gt;, HUBERT, L., ARABIE, P. (1985) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2FBF01908075&quot;&gt;doi:10.1007%2FBF01908075&lt;/a&gt;&amp;gt;, RAND, W.M. (1971) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F01621459.1971.10482356&quot;&gt;doi:10.1080/01621459.1971.10482356&lt;/a&gt;&amp;gt;, JAJUGA, K., WALESIAK, M. (2000) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2F978-3-642-57280-7_11&quot;&gt;doi:10.1007/978-3-642-57280-7_11&lt;/a&gt;&amp;gt;, MILLIGAN, G.W., COOPER, M.C. (1988) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2FBF01897163&quot;&gt;doi:10.1007/BF01897163&lt;/a&gt;&amp;gt;, JAJUGA, K., WALESIAK, M., BAK, A. (2003) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2F978-3-642-55721-7_12&quot;&gt;doi:10.1007/978-3-642-55721-7_12&lt;/a&gt;&amp;gt;, DAVIES, D.L., BOULDIN, D.W. (1979) &amp;lt;&lt;a href=&quot;https://doi.org/10.1109%2FTPAMI.1979.4766909&quot;&gt;doi:10.1109/TPAMI.1979.4766909&lt;/a&gt;&amp;gt;, CALINSKI, T., HARABASZ, J. (1974) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F03610927408827101&quot;&gt;doi:10.1080/03610927408827101&lt;/a&gt;&amp;gt;, HUBERT, L. (1974) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F01621459.1974.10480191&quot;&gt;doi:10.1080/01621459.1974.10480191&lt;/a&gt;&amp;gt;, TIBSHIRANI, R., WALTHER, G., HASTIE, T. (2001) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2F1467-9868.00293&quot;&gt;doi:10.1111/1467-9868.00293&lt;/a&gt;&amp;gt;, BRECKENRIDGE, J.N. (2000) &amp;lt;&lt;a href=&quot;https://doi.org/10.1207%2FS15327906MBR3502_5&quot;&gt;doi:10.1207/S15327906MBR3502_5&lt;/a&gt;&amp;gt;, WALESIAK, M., DUDEK, A. (2008) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2F978-3-540-78246-9_11&quot;&gt;doi:10.1007/978-3-540-78246-9_11&lt;/a&gt;&amp;gt;)." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=clusterSim" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>clusterSim: Searching for Optimal Clustering Procedure for a Data Set</h2>
+<p>Distance measures (GDM1, GDM2,	Sokal-Michener, Bray-Curtis, for symbolic interval-valued data), cluster quality indices (Calinski-Harabasz, Baker-Hubert, Hubert-Levine, Silhouette, Krzanowski-Lai, Hartigan, Gap,	Davies-Bouldin),	data normalization formulas (metric data, interval-valued symbolic data), data generation (typical and non-typical data), HINoV method,	replication analysis, linear ordering methods, spectral clustering, agreement indices between two partitions, plot functions (for categorical and symbolic interval-valued data). 
+ (MILLIGAN, G.W., COOPER, M.C. (1985) &lt;<a href="https://doi.org/10.1007%2FBF02294245">doi:10.1007/BF02294245</a>&gt;, 
+ HUBERT, L., ARABIE, P. (1985) &lt;<a href="https://doi.org/10.1007%2FBF01908075">doi:10.1007%2FBF01908075</a>&gt;, 
+ RAND, W.M. (1971) &lt;<a href="https://doi.org/10.1080%2F01621459.1971.10482356">doi:10.1080/01621459.1971.10482356</a>&gt;, 
+ JAJUGA, K., WALESIAK, M. (2000) &lt;<a href="https://doi.org/10.1007%2F978-3-642-57280-7_11">doi:10.1007/978-3-642-57280-7_11</a>&gt;, 
+ MILLIGAN, G.W., COOPER, M.C. (1988) &lt;<a href="https://doi.org/10.1007%2FBF01897163">doi:10.1007/BF01897163</a>&gt;, 
+ JAJUGA, K., WALESIAK, M., BAK, A. (2003) &lt;<a href="https://doi.org/10.1007%2F978-3-642-55721-7_12">doi:10.1007/978-3-642-55721-7_12</a>&gt;, 
+ DAVIES, D.L., BOULDIN, D.W. (1979) &lt;<a href="https://doi.org/10.1109%2FTPAMI.1979.4766909">doi:10.1109/TPAMI.1979.4766909</a>&gt;, 
+ CALINSKI, T., HARABASZ, J. (1974) &lt;<a href="https://doi.org/10.1080%2F03610927408827101">doi:10.1080/03610927408827101</a>&gt;,
+ HUBERT, L. (1974) &lt;<a href="https://doi.org/10.1080%2F01621459.1974.10480191">doi:10.1080/01621459.1974.10480191</a>&gt;, 
+ TIBSHIRANI, R., WALTHER, G., HASTIE, T. (2001) &lt;<a href="https://doi.org/10.1111%2F1467-9868.00293">doi:10.1111/1467-9868.00293</a>&gt;, 
+ BRECKENRIDGE, J.N. (2000) &lt;<a href="https://doi.org/10.1207%2FS15327906MBR3502_5">doi:10.1207/S15327906MBR3502_5</a>&gt;, 
+ WALESIAK, M., DUDEK, A. (2008) &lt;<a href="https://doi.org/10.1007%2F978-3-540-78246-9_11">doi:10.1007/978-3-540-78246-9_11</a>&gt;).</p>
+<table summary="Package clusterSim summary">
+<tr>
+<td>Version:</td>
+<td>0.49-1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0), <a href="../cluster/index.html">cluster</a>, <a href="../MASS/index.html">MASS</a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../ade4/index.html">ade4</a>, <a href="../e1071/index.html">e1071</a>, <a href="../rgl/index.html">rgl</a>, <a href="../R2HTML/index.html">R2HTML</a>, grDevices, graphics, stats, utils</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../mlbench/index.html">mlbench</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-07-20</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Marek Walesiak, Andrzej Dudek</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Andrzej Dudek  &#x3c;&#x61;&#x6e;&#x64;&#x72;&#x7a;&#x65;&#x6a;&#x2e;&#x64;&#x75;&#x64;&#x65;&#x6b;&#x20;&#x61;&#x74;&#x20;&#x75;&#x65;&#x2e;&#x77;&#x72;&#x6f;&#x63;&#x2e;&#x70;&#x6c;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://keii.ue.wroc.pl/clusterSim">http://keii.ue.wroc.pl/clusterSim</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">clusterSim citation info</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Cluster.html">Cluster</a>, <a href="../../views/Multivariate.html">Multivariate</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_clusterSim.html">clusterSim results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package clusterSim downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="clusterSim.pdf"> clusterSim.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/clusterSim_0.49-1.tar.gz"> clusterSim_0.49-1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/clusterSim_0.49-1.zip">clusterSim_0.49-1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/clusterSim_0.49-1.zip">clusterSim_0.49-1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/clusterSim_0.49-1.zip">clusterSim_0.49-1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/clusterSim_0.49-1.tgz">clusterSim_0.49-1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/clusterSim_0.49-1.tgz">clusterSim_0.49-1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/clusterSim"> clusterSim archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package clusterSim reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../emma/index.html">emma</a>, <a href="../mdsOpt/index.html">mdsOpt</a>, <a href="../symbolicDA/index.html">symbolicDA</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../comato/index.html">comato</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/mAPKL.html"><span class="BioC">mAPKL</span></a>, <a href="../smartdata/index.html">smartdata</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../mlr/index.html">mlr</a>, <a href="../spectralGraphTopology/index.html">spectralGraphTopology</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=clusterSim"><samp>https://CRAN.R-project.org/package=clusterSim</samp></a>
+to link to this page.</p>
+</body>
+</html>

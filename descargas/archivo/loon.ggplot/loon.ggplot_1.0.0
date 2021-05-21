@@ -1,0 +1,28 @@
+Package: loon.ggplot
+Type: Package
+Title: Making 'ggplot2' Plots Interactive with 'loon' and Vice Versa
+Version: 1.0.0
+Authors@R: c(
+  person('Zehao', 'Xu', email = 'z267xu@uwaterloo.ca', role = c("aut", "cre")),
+  person('R. Wayne', 'Oldford', email = 'rwoldford@uwaterloo.ca', role = c("aut"))
+  )
+Description: It provides a bridge between the 'loon' and  'ggplot2' packages. Data analysts who value the grammar pipeline provided by 'ggplot2' can turn these static plots into interactive 'loon' plots. Conversely, data analysts who explore data interactively with 'loon' can turn any 'loon' plot into a 'ggplot2' plot structure. The function 'loon.ggplot()' is applied to one plot structure will return the other.
+License: GPL-2
+BugReports: https://github.com/great-northern-diver/loon.ggplot/issues
+Depends: R (>= 3.4.0), tcltk, methods, loon (> 1.2.3), ggplot2
+Imports: stats, utils, grDevices, stringr, grid, GGally, gridExtra,
+        magrittr, dplyr, rlang
+Suggests: png, tools, testthat, knitr, rmarkdown, tidyverse, covr,
+        maps, nycflights13
+LazyData: true
+RoxygenNote: 7.1.0
+Encoding: UTF-8
+VignetteBuilder: knitr
+Language: en-US
+NeedsCompilation: no
+Packaged: 2020-06-11 00:34:55 UTC; Zehao
+Author: Zehao Xu [aut, cre],
+  R. Wayne Oldford [aut]
+Maintainer: Zehao Xu <z267xu@uwaterloo.ca>
+Repository: CRAN
+Date/Publication: 2020-06-17 09:50:02 UTC

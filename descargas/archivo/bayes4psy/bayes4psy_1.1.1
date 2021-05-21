@@ -1,0 +1,37 @@
+Package: bayes4psy
+Version: 1.1.1
+Title: User Friendly Bayesian Data Analysis for Psychology
+Description: Contains several Bayesian models for data analysis of psychological tests. A user friendly interface for these models should enable students and researchers to perform professional level Bayesian data analysis without advanced knowledge in programming and Bayesian statistics.
+Authors@R: 
+    c(person("Jure", "Demšar", , "jure.demsar@fri.uni-lj.si", c("cre", "aut")),
+    person("Grega", "Repovš", , "grega.repovs@psy.ff.uni-lj.si", "aut"),
+    person("Erik", "Štrumbelj", , "erik.strumbelj@fri.uni-lj.si", "aut"),
+    person("Trustees of", "Columbia University", role = "cph"),
+    person("John", "Kruschke", role = "cph", comment = "R/shared_functions.R - mcmc_hdi, src/stan_files/ttest.stan"),
+    person("Rasmus", "Baath", role = "cph", comment = "R/b_bootstrap.R"))
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+Depends: methods, R (>= 3.4.0), Rcpp (>= 0.12.16)
+Imports: circular (>= 0.4.93), cowplot (>= 0.9.3), dplyr (>= 0.7.6),
+        emg (>= 1.0.7), ggplot2 (>= 2.2.1), metRology (>= 0.9.28),
+        reshape (>= 0.8.7), rstan (>= 2.17.3), rstantools (>= 1.5.0),
+        mcmcse (>= 1.3.2), stats, utils,
+LinkingTo: StanHeaders (>= 2.17.2), rstan (>= 2.17.3), BH (>=
+        1.66.0-1), Rcpp (>= 0.12.16), RcppEigen (>= 0.3.3.4.0)
+SystemRequirements: GNU make
+NeedsCompilation: yes
+RoxygenNote: 6.1.1
+Suggests: testthat
+Packaged: 2019-06-24 22:34:01 UTC; Jure
+Author: Jure Demšar [cre, aut],
+  Grega Repovš [aut],
+  Erik Štrumbelj [aut],
+  Trustees of Columbia University [cph],
+  John Kruschke [cph] (R/shared_functions.R - mcmc_hdi,
+    src/stan_files/ttest.stan),
+  Rasmus Baath [cph] (R/b_bootstrap.R)
+Maintainer: Jure Demšar <jure.demsar@fri.uni-lj.si>
+Repository: CRAN
+Date/Publication: 2019-06-28 12:20:22 UTC

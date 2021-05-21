@@ -1,0 +1,33 @@
+Package: popEpi
+Title: Functions for Epidemiological Analysis using Population Data
+Authors@R: c(person("Joonas", "Miettinen", , "joonas.miettinen@cancer.fi", c("aut", "cre")), person("Matti", "Rantanen", , "matti.rantanen@cancer.fi", "aut"), person("Karri", "Seppa", , "karri.seppa@cancer.fi", "ctb") )
+Version: 0.4.6
+Date: 2019-02-13
+Language: en-GB
+Maintainer: Joonas Miettinen <joonas.miettinen@cancer.fi>
+Description: Enables computation of epidemiological statistics, including those 
+    where counts or mortality rates of the reference population are used. 
+    Currently supported: excess hazard models, rates, mean survival times, 
+    relative survival, and standardized incidence and mortality ratios 
+    (SIRs/SMRs), all of which can be easily adjusted for by covariates such as 
+    age. Fast splitting and aggregation of 'Lexis' objects (from package 'Epi') 
+    and other computations achieved using 'data.table'. 
+Depends: R (>= 3.2.0)
+Imports: Epi (>= 2.0), survival, data.table (>= 1.10.4)
+Suggests: reshape2, methods, testthat, knitr, rmarkdown, relsurv,
+        ggplot2, mstate, date, splines, roxygen2, covr
+Encoding: UTF-8
+License: GPL-3
+LazyData: true
+ByteCompile: true
+VignetteBuilder: knitr
+URL: https://github.com/WetRobot/popEpi
+BugReports: https://github.com/WetRobot/popEpi/issues
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-02-14 08:35:28 UTC; joonas.miettinen
+Author: Joonas Miettinen [aut, cre],
+  Matti Rantanen [aut],
+  Karri Seppa [ctb]
+Repository: CRAN
+Date/Publication: 2019-02-14 10:00:03 UTC

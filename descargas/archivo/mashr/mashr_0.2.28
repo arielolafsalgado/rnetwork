@@ -1,0 +1,53 @@
+Package: mashr
+Type: Package
+Encoding: UTF-8
+Title: Multivariate Adaptive Shrinkage
+Version: 0.2.28
+Date: 2020-06-04
+Authors@R: c(person("Matthew","Stephens",role="aut"),
+             person("Sarah","Urbut",role="aut"),
+             person("Gao","Wang",role="aut"),
+             person("Yuxin","Zou",role="aut"),
+             person("Yunqi","Yang",role="ctb"),
+	     person("Sam","Roweis",role="cph"),
+	     person("David","Hogg",role="cph"),
+	     person("Jo","Bovy",role="cph"),
+             person("Peter","Carbonetto",role=c("aut","cre"),
+                    email="peter.carbonetto@gmail.com"))
+Description: Implements the multivariate adaptive shrinkage (mash)
+    method of Urbut et al (2019) <DOI:10.1038/s41588-018-0268-8> for
+    estimating and testing large numbers of effects in many conditions
+    (or many outcomes). Mash takes an empirical Bayes approach to
+    testing and effect estimation; it estimates patterns of similarity
+    among conditions, then exploits these patterns to improve accuracy
+    of the effect estimates. The core linear algebra is implemented in
+    C++ for fast model fitting and posterior computation.
+URL: http://github.com/stephenslab/mashr
+BugReports: http://github.com/stephenslab/mashr/issues
+License: BSD_3_clause + file LICENSE
+Copyright: file COPYRIGHTS
+LazyData: true
+SystemRequirements: C++11
+Depends: R (>= 3.3.0), ashr (>= 2.2-22)
+Imports: assertthat, utils, stats, plyr, rmeta, Rcpp (>= 0.12.11),
+        mvtnorm, abind, mixsqp
+LinkingTo: Rcpp, RcppArmadillo, RcppGSL
+Suggests: MASS, REBayes, corrplot, testthat, kableExtra, knitr,
+        rmarkdown, profmem
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Biarch: true
+RoxygenNote: 7.1.0
+Packaged: 2020-06-05 03:34:05 UTC; pcarbo
+Author: Matthew Stephens [aut],
+  Sarah Urbut [aut],
+  Gao Wang [aut],
+  Yuxin Zou [aut],
+  Yunqi Yang [ctb],
+  Sam Roweis [cph],
+  David Hogg [cph],
+  Jo Bovy [cph],
+  Peter Carbonetto [aut, cre]
+Maintainer: Peter Carbonetto <peter.carbonetto@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-06-09 13:30:03 UTC

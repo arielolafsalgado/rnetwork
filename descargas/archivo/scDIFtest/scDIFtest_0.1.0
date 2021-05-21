@@ -1,0 +1,24 @@
+Package: scDIFtest
+Type: Package
+Title: Item-Wise Score-Based DIF Detection
+Version: 0.1.0
+Authors@R: c(
+    person("Dries", "Debeer", email = "debeer.dries@gmail.com", 
+    role = c("cre", "aut")))
+Description: Detection of item-wise Differential Item Functioning (DIF) 
+             in fitted 'mirt', 'multipleGroup' or 'bfactor' models  
+             using score-based structural change tests. Under the hood 
+             the sctest() function from the 'strucchange' package is used.
+Imports: sandwich, strucchange, mirt, zoo,
+Suggests: mvtnorm, psychotree, knitr, rmarkdown, testthat
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-06-25 13:30:55 UTC; u0067731
+Author: Dries Debeer [cre, aut]
+Maintainer: Dries Debeer <debeer.dries@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-06-26 09:10:03 UTC

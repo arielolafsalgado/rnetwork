@@ -1,0 +1,24 @@
+Package: mvnfast
+Type: Package
+Title: Fast Multivariate Normal and Student's t Methods
+Version: 0.2.2
+Date: 2017-08-14
+Author: Matteo Fasiolo, using the C++ parallel RNG of Thijs van den Berg
+Maintainer: Matteo Fasiolo <matteo.fasiolo@gmail.com>
+Description: Provides computationally efficient tools related to
+    the multivariate normal and Student's t distributions. The main functionalities are:
+    simulating multivariate random vectors, evaluating multivariate
+    normal or Student's t densities and Mahalanobis distances. These tools are very efficient
+    thanks to the use of C++ code and of the OpenMP API.
+License: GPL (>= 2.0)
+URL: https://github.com/mfasiolo/mvnfast, www.sitmo.com
+Imports: Rcpp (>= 0.12.0)
+Suggests: knitr, testthat, mvtnorm, microbenchmark, MASS, plyr,
+        RhpcBLASctl
+LinkingTo: Rcpp, RcppArmadillo, BH
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2017-08-14 10:24:21 UTC; teo
+Repository: CRAN
+Date/Publication: 2017-08-14 13:17:36 UTC

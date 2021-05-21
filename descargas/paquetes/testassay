@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package testassay</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=testassay" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="testassay: A Hypothesis Testing Framework for Validating an Assay for Precision" />
+<meta name="og:description" content="A common way of validating a biological assay for is through a procedure, where m levels of an analyte are measured with n replicates at each level, and if all m estimates of the coefficient of variation (CV) are less than some prespecified level, then the assay is declared validated for precision within the range of the m analyte levels. Two limitations of this procedure are: there is no clear statistical statement of precision upon passing, and it is unclear how to modify the procedure for assays with constant standard deviation. We provide tools to convert such a procedure into a set of m hypothesis tests. This reframing motivates the m:n:q procedure, which upon completion delivers a 100q% upper confidence limit on the CV. Additionally, for a post-validation assay output of y, the method gives an &amp;ldquo;effective standard deviation interval&amp;rdquo; of log(y) plus or minus r, which is a 68% confidence interval on log(mu), where mu is the expected value of the assay output for that sample. Further, the m:n:q procedure can be straightforwardly applied to constant standard deviation assays. We illustrate these tools by applying them to a growth inhibition assay. This is an implementation of the methods described in Fay, Sachs, and Miura (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fsim.7528&quot;&gt;doi:10.1002/sim.7528&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=testassay" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>testassay: A Hypothesis Testing Framework for Validating an Assay for
+Precision</h2>
+<p>A common way of validating a biological assay for is through a
+    procedure, where m levels of an analyte are measured with n replicates at each
+    level, and if all m estimates of the coefficient of variation (CV) are less
+    than some prespecified level, then the assay is declared validated for precision
+    within the range of the m analyte levels. Two limitations of this procedure are:
+    there is no clear statistical statement of precision upon passing, and it is
+    unclear how to modify the procedure for assays with constant standard deviation.
+    We provide tools to convert such a procedure into a set of m hypothesis tests.
+    This reframing motivates the m:n:q procedure, which upon completion delivers
+    a 100q% upper confidence limit on the CV. Additionally, for a post-validation
+    assay output of y, the method gives an &ldquo;effective standard deviation interval&rdquo;
+    of log(y) plus or minus r, which is a 68% confidence interval on log(mu), where
+    mu is the expected value of the assay output for that sample. Further, the m:n:q
+    procedure can be straightforwardly applied to constant standard deviation assays.
+    We illustrate these tools by applying them to a growth inhibition assay. This is
+    an implementation of the methods described in Fay, Sachs, and Miura (2018) 
+    &lt;<a href="https://doi.org/10.1002%2Fsim.7528">doi:10.1002/sim.7528</a>&gt;.</p>
+<table summary="Package testassay summary">
+<tr>
+<td>Version:</td>
+<td>0.1.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../ggplot2/index.html">ggplot2</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-03</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Michael C Sachs and Michael P Fay</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Michael C Sachs  &#x3c;&#x73;&#x61;&#x63;&#x68;&#x73;&#x6d;&#x63;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">testassay citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_testassay.html">testassay results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package testassay downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="testassay.pdf"> testassay.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/GIAValidationExample.html">Validation of Growth Inhibition Assay</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/testassay_0.1.1.tar.gz"> testassay_0.1.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/testassay_0.1.1.zip">testassay_0.1.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/testassay_0.1.1.zip">testassay_0.1.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/testassay_0.1.1.zip">testassay_0.1.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/testassay_0.1.1.tgz">testassay_0.1.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/testassay_0.1.1.tgz">testassay_0.1.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/testassay"> testassay archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=testassay"><samp>https://CRAN.R-project.org/package=testassay</samp></a>
+to link to this page.</p>
+</body>
+</html>

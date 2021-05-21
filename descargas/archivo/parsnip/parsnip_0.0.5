@@ -1,0 +1,32 @@
+Package: parsnip
+Version: 0.0.5
+Title: A Common API to Modeling and Analysis Functions
+Description: A common interface is provided to allow users to specify a model without having to remember the different argument names across different functions or computational engines (e.g. 'R', 'Spark', 'Stan', etc). 
+Authors@R: c(
+    person(given = "Max",   family = "Kuhn",    email = "max@rstudio.com",   role = c("aut", "cre")),
+    person(given = "Davis", family = "Vaughan", email = "davis@rstudio.com", role = c("aut")),
+    person("RStudio", role = "cph"))
+Maintainer: Max Kuhn <max@rstudio.com>
+URL: https://tidymodels.github.io/parsnip,
+        https://github.com/tidymodels/parsnip
+BugReports: https://github.com/tidymodels/parsnip/issues
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+VignetteBuilder: knitr
+Depends: R (>= 2.10)
+Imports: dplyr (>= 0.8.0.1), rlang (>= 0.3.1), purrr, utils, tibble (>=
+        2.1.1), generics, glue, magrittr, stats, tidyr, globals,
+        prettyunits, vctrs (>= 0.2.0)
+RoxygenNote: 7.0.2.9000
+Suggests: testthat, knitr, rmarkdown, survival, keras, xgboost, covr,
+        C50, sparklyr (>= 1.0.0), earth, kernlab, kknn, randomForest,
+        ranger, rpart, MASS, nlme, modeldata
+NeedsCompilation: no
+Packaged: 2020-01-04 19:54:56 UTC; max
+Author: Max Kuhn [aut, cre],
+  Davis Vaughan [aut],
+  RStudio [cph]
+Repository: CRAN
+Date/Publication: 2020-01-07 20:20:14 UTC

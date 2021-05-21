@@ -1,0 +1,31 @@
+Package: getCRUCLdata
+Type: Package
+Title: Download and Use CRU CL2.0 Climatology Data in R
+Version: 0.1.2
+Authors@R: person(given = "Adam", family = "Sparks", email = "adamhsparks@gmail.com", role = c("aut", "cre"))
+Description: Provides functions that automate downloading and importing
+    University of East Anglia Climate Research Unit (CRU) CL2.0 climatology data
+    into R, facilitates the calculation of minimum temperature and maximum
+    temperature and formats the data into a tidy data frame or a list of raster
+    stack objects for use in an R session. CRU CL2.0 data are a gridded
+    climatology of 1961-1990 monthly means released in 2002 and cover all land
+    areas (excluding Antarctica) at 10-minute resolution. For more
+    information see the description of the data provided by the University of
+    East Anglia Climate Research Unit,
+    <https://crudata.uea.ac.uk/cru/data/hrg/tmc/readme.txt>.
+License: MIT + file LICENSE
+Depends: R (>= 3.0.0)
+Imports: curl, dplyr, plyr, purrr (>= 0.2.0), raster, tidyr, utils
+LazyData: TRUE
+RoxygenNote: 5.0.1
+ByteCompile: TRUE
+Suggests: testthat, knitr, rmarkdown
+URL: https://github.com/adamhsparks/getCRUCLdata
+BugReports: https://github.com/adamhsparks/getCRUCLdata/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-01-18 01:23:23 UTC; asparks
+Author: Adam Sparks [aut, cre]
+Maintainer: Adam Sparks <adamhsparks@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-01-18 08:37:41

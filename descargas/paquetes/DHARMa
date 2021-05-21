@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package DHARMa</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Residual Diagnostics for Hierarchical (Multi-Level / Mixed) Regression Models [R package DHARMa version 0.3.3.0]" />
+<meta name="citation_author" content="Florian Hartig" />
+<meta name="citation_publication_date" content="2020-09-08" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=DHARMa" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=DHARMa" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="DHARMa: Residual Diagnostics for Hierarchical (Multi-Level / Mixed) Regression Models" />
+<meta name="og:description" content="The 'DHARMa' package uses a simulation-based approach to create readily interpretable scaled (quantile) residuals for fitted (generalized) linear mixed models. Currently supported are linear and generalized linear (mixed) models from 'lme4' (classes 'lmerMod', 'glmerMod'), 'glmmTMB' and 'spaMM', generalized additive models ('gam' from 'mgcv'), 'glm' (including 'negbin' from 'MASS', but excluding quasi-distributions) and 'lm' model classes. Moreover, externally created simulations, e.g. posterior predictive simulations from Bayesian software such as 'JAGS', 'STAN', or 'BUGS' can be processed as well. The resulting residuals are standardized to values between 0 and 1 and can be interpreted as intuitively as residuals from a linear regression. The package also provides a number of plot and test functions for typical model misspecification problems, such as over/underdispersion, zero-inflation, and residual spatial and temporal autocorrelation." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=DHARMa" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>DHARMa: Residual Diagnostics for Hierarchical (Multi-Level / Mixed)
+Regression Models</h2>
+<p>The 'DHARMa' package uses a simulation-based approach to create
+    readily interpretable scaled (quantile) residuals for fitted (generalized) linear mixed
+    models. Currently supported are linear and generalized linear (mixed) models from 'lme4'
+    (classes 'lmerMod', 'glmerMod'), 'glmmTMB' and 'spaMM', generalized additive models ('gam' from
+    'mgcv'), 'glm' (including 'negbin' from 'MASS', but excluding quasi-distributions) and 'lm' model
+    classes. Moreover, externally created simulations, e.g. posterior predictive simulations
+    from Bayesian software such as 'JAGS', 'STAN', or 'BUGS' can be processed as well.
+    The resulting residuals are standardized to values between 0 and 1 and can be interpreted
+    as intuitively as residuals from a linear regression. The package also provides a number of
+    plot and test functions for typical model misspecification problems, such as
+    over/underdispersion, zero-inflation, and residual spatial and temporal autocorrelation.</p>
+<table summary="Package DHARMa summary">
+<tr>
+<td>Version:</td>
+<td>0.3.3.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0.2)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>stats, graphics, utils, grDevices, parallel, <a href="../doParallel/index.html">doParallel</a>, <a href="../foreach/index.html">foreach</a>, <a href="../gap/index.html">gap</a>, <a href="../lmtest/index.html">lmtest</a>, <a href="../ape/index.html">ape</a>, <a href="../sfsmisc/index.html">sfsmisc</a>, <a href="../MASS/index.html">MASS</a>, <a href="../qgam/index.html">qgam</a> (&ge; 1.3.2), <a href="../lme4/index.html">lme4</a>, <a href="../mgcv/index.html">mgcv</a>, <a href="../glmmTMB/index.html">glmmTMB</a> (&ge; 1.0.1)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../testthat/index.html">testthat</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../KernSmooth/index.html">KernSmooth</a>, <a href="../spaMM/index.html">spaMM</a> (&ge; 3.2.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-08</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Florian Hartig <a href="https://orcid.org/0000-0002-6255-9059"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Lukas Lohse [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Florian Hartig  &#x3c;&#x66;&#x6c;&#x6f;&#x72;&#x69;&#x61;&#x6e;&#x2e;&#x68;&#x61;&#x72;&#x74;&#x69;&#x67;&#x20;&#x61;&#x74;&#x20;&#x62;&#x69;&#x6f;&#x6c;&#x6f;&#x67;&#x69;&#x65;&#x2e;&#x75;&#x6e;&#x69;&#x2d;&#x72;&#x65;&#x67;&#x65;&#x6e;&#x73;&#x62;&#x75;&#x72;&#x67;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/florianhartig/DHARMa/issues">https://github.com/florianhartig/DHARMa/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL (&ge; 3)</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://florianhartig.github.io/DHARMa/">http://florianhartig.github.io/DHARMa/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_DHARMa.html">DHARMa results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package DHARMa downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="DHARMa.pdf"> DHARMa.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/DHARMa.html">Vignette for the DHARMa package</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/DHARMa_0.3.3.0.tar.gz"> DHARMa_0.3.3.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/DHARMa_0.3.3.0.zip">DHARMa_0.3.3.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/DHARMa_0.3.3.0.zip">DHARMa_0.3.3.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/DHARMa_0.3.3.0.zip">DHARMa_0.3.3.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/DHARMa_0.3.3.0.tgz">DHARMa_0.3.3.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/DHARMa_0.3.3.0.tgz">DHARMa_0.3.3.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/DHARMa"> DHARMa archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package DHARMa reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../BayesianTools/index.html">BayesianTools</a>, <a href="../insurancerating/index.html">insurancerating</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../GLMMadaptive/index.html">GLMMadaptive</a>, <a href="../glmmTMB/index.html">glmmTMB</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=DHARMa"><samp>https://CRAN.R-project.org/package=DHARMa</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package ccrs</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Correct and Cluster Response Style Biased Data [R package ccrs version 0.1.0]" />
+<meta name="citation_author" content="Mariko Takagishi" />
+<meta name="citation_publication_date" content="2019-03-04" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=ccrs" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=ccrs" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="ccrs: Correct and Cluster Response Style Biased Data" />
+<meta name="og:description" content="Functions for performing Correcting and Clustering response-style-biased preference data (CCRS). The main functions are correct.RS() for correcting for response styles, and ccrs() for simultaneously correcting and content-based clustering. The procedure begin with making rank-ordered boundary data from the given preference matrix using a function called create.ccrsdata(). Then in correct.RS(), the response style is corrected as follows: the rank-ordered boundary data are smoothed by I-spline functions, the given preference data are transformed by the smoothed functions. The resulting data matrix, which is considered as bias-corrected data, can be used for any data analysis methods. If one wants to cluster respondents based on their indicated preferences (content-based clustering), ccrs() can be applied to the given (response-style-biased) preference data, which simultaneously corrects for response styles and clusters respondents based on the contents. Also, the correction result can be checked by plot.crs() function." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=ccrs" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>ccrs: Correct and Cluster Response Style Biased Data</h2>
+<p>Functions for performing Correcting and Clustering response-style-biased preference data (CCRS). The main functions are correct.RS() for correcting for response styles, and ccrs() for simultaneously correcting and content-based clustering. The procedure begin with making rank-ordered boundary data from the given preference matrix using a function called create.ccrsdata(). Then in correct.RS(), the response style is corrected as follows: the rank-ordered boundary data are smoothed by I-spline functions, the given preference data are transformed by the smoothed functions. The resulting data matrix, which is considered as bias-corrected data, can be used for any data analysis methods. If one wants to cluster respondents based on their indicated preferences (content-based clustering), ccrs() can be applied to the given (response-style-biased) preference data, which simultaneously corrects for response styles and clusters respondents based on the contents. Also, the correction result can be checked by plot.crs() function.</p>
+<table summary="Package ccrs summary">
+<tr>
+<td>Version:</td>
+<td>0.1.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../cds/index.html">cds</a>, <a href="../colorspace/index.html">colorspace</a>, <a href="../dplyr/index.html">dplyr</a>, graphics, <a href="../limSolve/index.html">limSolve</a>, <a href="../lsbclust/index.html">lsbclust</a>, methods, <a href="../msm/index.html">msm</a>, parallel, stats, utils</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-03-04</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Mariko Takagishi [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Mariko Takagishi  &#x3c;&#x6d;&#x2e;&#x74;&#x61;&#x6b;&#x61;&#x67;&#x69;&#x73;&#x68;&#x69;&#x30;&#x37;&#x32;&#x38;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_ccrs.html">ccrs results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package ccrs downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="ccrs.pdf"> ccrs.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/ccrs_0.1.0.tar.gz"> ccrs_0.1.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/ccrs_0.1.0.zip">ccrs_0.1.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/ccrs_0.1.0.zip">ccrs_0.1.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/ccrs_0.1.0.zip">ccrs_0.1.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/ccrs_0.1.0.tgz">ccrs_0.1.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/ccrs_0.1.0.tgz">ccrs_0.1.0.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=ccrs"><samp>https://CRAN.R-project.org/package=ccrs</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,46 @@
+Package: lmem.qtler
+Type: Package
+Title: Linear Mixed Effects Models for QTL Mapping for Multienvironment
+        and Multitrait Analysis
+Version: 0.1.0
+Authors@R: c(person("Lucia", "Gutierrez", role = "aut",
+             email = "gutierrezcha@wisc.edu"),
+             person("Gaston", "Quero",role =c("aut","cre"),
+             email = "gastonquero@gmail.com"),
+             person("Schubert", "Fernandez",role ="aut",
+             email = "sfernandez@inia.org.uy"),
+             person("Sofia", "Brandariz",role ="aut",
+             email = "brandarizsofia@gmail.com"),
+             person("Sebastian", "Simondi",role ="ctb",
+             email = "sebastian.simondi@gmail.com"))
+Author: Lucia Gutierrez [aut],
+    Gaston Quero [aut, cre],
+    Schubert Fernandez [aut],
+    Sofia Brandariz [aut],
+    Sebastian Simondi [ctb]
+Maintainer: Gaston Quero <gastonquero@gmail.com>
+Description: Performs QTL mapping analysis for balanced and for
+  multi-environment and multi-trait analysis using mixed models.
+  Balanced population, single trait, single environment QTL mapping is
+  performed through marker-regression (Haley and Knott (1992) <DOI:10.1038/hdy.1992.131>,
+  Martinez and Curnow (1992) <DOI:10.1007/BF00222330>,
+  while multi-environment and multi-trait QTL
+  mapping is performed through linear mixed models.
+  These functions could use any of the following populations: double haploid,
+  F2, recombinant inbred lines, back-cross, and 4-way crosses.
+  Performs a Single Marker Analysis, a Single Interval Mapping,
+  or a Composite Interval Mapping analysis, and then constructs a final model
+  with all of the relevant QTL.
+License: GPL-3
+Depends: R (>= 2.10)
+LazyData: TRUE
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+Imports: qtl, lme4, lattice, pastecs, stringr, graphics, utils,
+        grDevices, stats
+Encoding: UTF-8
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-05-05 15:16:20 UTC; GQ
+Repository: CRAN
+Date/Publication: 2016-05-06 00:09:50

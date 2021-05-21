@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package reda</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Recurrent Event Data Analysis [R package reda version 0.5.2]" />
+<meta name="citation_author1" content="Wenjie Wang" />
+<meta name="citation_author2" content="Haoda Fu" />
+<meta name="citation_publication_date" content="2020-07-08" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=reda" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=reda" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="reda: Recurrent Event Data Analysis" />
+<meta name="og:description" content="Contains implementations of recurrent event data analysis routines including (1) survival and recurrent event data simulation from stochastic process point of view by the thinning method proposed by Lewis and Shedler (1979) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fnav.3800260304&quot;&gt;doi:10.1002/nav.3800260304&lt;/a&gt;&amp;gt; and the inversion method introduced in Cinlar (1975, ISBN:978-0486497976), (2) the mean cumulative function (MCF) estimation by the Nelson-Aalen estimator of the cumulative hazard rate function, (3) two-sample recurrent event responses comparison with the pseudo-score tests proposed by Lawless and Nadeau (1995) &amp;lt;&lt;a href=&quot;https://doi.org/10.2307%2F1269617&quot;&gt;doi:10.2307/1269617&lt;/a&gt;&amp;gt;, (4) gamma frailty model with spline rate function following Fu, et al. (2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F10543406.2014.992524&quot;&gt;doi:10.1080/10543406.2014.992524&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=reda" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>reda: Recurrent Event Data Analysis</h2>
+<p>Contains implementations of recurrent event data analysis routines
+    including (1) survival and recurrent event data simulation from
+    stochastic process point of view by the thinning method
+    proposed by Lewis and Shedler (1979) &lt;<a href="https://doi.org/10.1002%2Fnav.3800260304">doi:10.1002/nav.3800260304</a>&gt;
+    and the inversion method introduced in Cinlar (1975, ISBN:978-0486497976),
+    (2) the mean cumulative function (MCF) estimation by the
+    Nelson-Aalen estimator of the cumulative hazard rate function,
+    (3) two-sample recurrent event responses comparison with the pseudo-score
+    tests proposed by Lawless and Nadeau (1995) &lt;<a href="https://doi.org/10.2307%2F1269617">doi:10.2307/1269617</a>&gt;,
+    (4) gamma frailty model with spline rate function following
+    Fu, et al. (2016) &lt;<a href="https://doi.org/10.1080%2F10543406.2014.992524">doi:10.1080/10543406.2014.992524</a>&gt;.</p>
+<table summary="Package reda summary">
+<tr>
+<td>Version:</td>
+<td>0.5.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.2.3)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../ggplot2/index.html">ggplot2</a>, graphics, grDevices, methods, <a href="../splines2/index.html">splines2</a>, stats</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../tinytest/index.html">tinytest</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-07-08</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Wenjie Wang <a href="https://orcid.org/0000-0003-0363-3180"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    cre],
+  Haoda Fu [aut],
+  Jun Yan <a href="https://orcid.org/0000-0003-4401-7296"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Wenjie Wang  &#x3c;&#x77;&#x65;&#x6e;&#x6a;&#x69;&#x65;&#x2e;&#x32;&#x2e;&#x77;&#x61;&#x6e;&#x67;&#x20;&#x61;&#x74;&#x20;&#x75;&#x63;&#x6f;&#x6e;&#x6e;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/wenjie2wang/reda/issues">https://github.com/wenjie2wang/reda/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL (&ge; 3)</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/wenjie2wang/reda">https://github.com/wenjie2wang/reda</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">reda citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Survival.html">Survival</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_reda.html">reda results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package reda downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="reda.pdf"> reda.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/reda-Recur.html">Introduction to Formula Response Function Recur()</a><br/>
+<a href="vignettes/reda-intro.html">Introduction to reda through Examples</a><br/>
+<a href="vignettes/reda-simulate.html">Simulate Survival and Recurrent Event Data with reda</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/reda_0.5.2.tar.gz"> reda_0.5.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/reda_0.5.2.zip">reda_0.5.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/reda_0.5.2.zip">reda_0.5.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/reda_0.5.2.zip">reda_0.5.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/reda_0.5.2.tgz">reda_0.5.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/reda_0.5.2.tgz">reda_0.5.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/reda"> reda archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package reda reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../reReg/index.html">reReg</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=reda"><samp>https://CRAN.R-project.org/package=reda</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package poppr</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Genetic Analysis of Populations with Mixed Reproduction [R package poppr version 2.8.6]" />
+<meta name="citation_author1" content="Zhian N. Kamvar" />
+<meta name="citation_author2" content="Javier F. Tabima" />
+<meta name="citation_author3" content="Jonah C. Brooks" />
+<meta name="citation_publication_date" content="2020-06-02" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=poppr" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=poppr" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="poppr: Genetic Analysis of Populations with Mixed Reproduction" />
+<meta name="og:description" content="Population genetic analyses for hierarchical analysis of partially clonal populations built upon the architecture of the 'adegenet' package. Originally described in Kamvar, Tabima, and Grünwald (2014) &amp;lt;&lt;a href=&quot;https://doi.org/10.7717%2Fpeerj.281&quot;&gt;doi:10.7717/peerj.281&lt;/a&gt;&amp;gt; with version 2.0 described in Kamvar, Brooks, and Grünwald (2015) &amp;lt;&lt;a href=&quot;https://doi.org/10.3389%2Ffgene.2015.00208&quot;&gt;doi:10.3389/fgene.2015.00208&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=poppr" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>poppr: Genetic Analysis of Populations with Mixed Reproduction</h2>
+<p>Population genetic analyses for hierarchical analysis of partially
+    clonal populations built upon the architecture of the 'adegenet' package. 
+    Originally described in Kamvar, Tabima, and Grünwald (2014) 
+    &lt;<a href="https://doi.org/10.7717%2Fpeerj.281">doi:10.7717/peerj.281</a>&gt; with version 2.0 described in Kamvar, Brooks, and 
+    Grünwald (2015) &lt;<a href="https://doi.org/10.3389%2Ffgene.2015.00208">doi:10.3389/fgene.2015.00208</a>&gt;.</p>
+<table summary="Package poppr summary">
+<tr>
+<td>Version:</td>
+<td>2.8.6</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.15.1), <a href="../adegenet/index.html">adegenet</a> (&ge; 2.0.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>stats, graphics, grDevices, utils, <a href="../vegan/index.html">vegan</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../phangorn/index.html">phangorn</a>, <a href="../ape/index.html">ape</a> (&ge; 3.1-1), <a href="../igraph/index.html">igraph</a> (&ge; 1.0.0), methods, <a href="../ade4/index.html">ade4</a>, <a href="../pegas/index.html">pegas</a>, <a href="../polysat/index.html">polysat</a>, <a href="../dplyr/index.html">dplyr</a> (&ge; 0.4), <a href="../rlang/index.html">rlang</a>, <a href="../boot/index.html">boot</a>, <a href="../shiny/index.html">shiny</a>, <a href="../magrittr/index.html">magrittr</a>, <a href="../progressr/index.html">progressr</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../poweRlaw/index.html">poweRlaw</a>, <a href="../cowplot/index.html">cowplot</a>, <a href="../RClone/index.html">RClone</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-02</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Zhian N. Kamvar <a href="https://orcid.org/0000-0003-1458-7108"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [cre, aut],
+  Javier F. Tabima <a href="https://orcid.org/0000-0002-3603-2691"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Sydney E. Everhart
+    <a href="https://orcid.org/0000-0002-5773-1280"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb, dtc],
+  Jonah C. Brooks [aut],
+  Stacy A. Krueger-Hadfield
+    <a href="https://orcid.org/0000-0002-7324-7448"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb],
+  Erik Sotka [ctb],
+  Brian J. Knaus <a href="https://orcid.org/0000-0003-1665-4343"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb],
+  Patrick G. Meirmans
+    <a href="https://orcid.org/0000-0002-6395-8107"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb],
+  Frédéric D. Chevalier
+    <a href="https://orcid.org/0000-0003-2611-8106"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb],
+  Niklaus J. Grünwald
+    <a href="https://orcid.org/0000-0003-1656-7602"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ths]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Zhian N. Kamvar  &#x3c;&#x7a;&#x6b;&#x61;&#x6d;&#x76;&#x61;&#x72;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/grunwaldlab/poppr/issues">https://github.com/grunwaldlab/poppr/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://grunwaldlab.github.io/poppr">https://grunwaldlab.github.io/poppr</a>,
+<a href="https://github.com/grunwaldlab/poppr">https://github.com/grunwaldlab/poppr</a>,
+<a href="https://grunwaldlab.github.io/Population_Genetics_in_R/">https://grunwaldlab.github.io/Population_Genetics_in_R/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">poppr citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_poppr.html">poppr results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package poppr downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="poppr.pdf"> poppr.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/mlg.html">Multilocus Genotype Analysis</a><br/>
+<a href="vignettes/poppr_manual.html">Data Import and Manipulation</a><br/>
+<a href="vignettes/algo.pdf">Algorightms and Equations</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/poppr_2.8.6.tar.gz"> poppr_2.8.6.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/poppr_2.8.6.zip">poppr_2.8.6.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/poppr_2.8.6.zip">poppr_2.8.6.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/poppr_2.8.6.zip">poppr_2.8.6.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/poppr_2.8.6.tgz">poppr_2.8.6.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/poppr_2.8.6.tgz">poppr_2.8.6.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/poppr"> poppr archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package poppr reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../popprxl/index.html">popprxl</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../adegenet/index.html">adegenet</a>, <a href="../dartR/index.html">dartR</a>, <a href="../vcfR/index.html">vcfR</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=poppr"><samp>https://CRAN.R-project.org/package=poppr</samp></a>
+to link to this page.</p>
+</body>
+</html>

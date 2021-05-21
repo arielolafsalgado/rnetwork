@@ -1,0 +1,37 @@
+Package: newsmap
+Type: Package
+Title: Semi-Supervised Model for Geographical Document Classification
+Version: 0.6.9
+Authors@R: c(person("Kohei", "Watanabe", email = "watanabe.kohei@gmail.com", role = c("aut", "cre", "cph")), 
+             person("Stefan", "Müller", email = "mullers@tcd.ie", role = "aut"),
+             person("Dani", "Madrid-Morales", email = "dani.madrid@my.cityu.edu.hk", role = "aut"),
+             person("Katerina", "Tertytchnaya", email = "katerina.tertytchnaya@gmail.com", role = "aut"),
+             person("Ke", "Cheng", email = "kecheng.ac@gmail.com", role = "aut"),
+	         person("Chung-hong", "Chan", email = "chainsawtiney@gmail.com", role = "aut"),
+	         person("Claude", "Grasland", email = "claude.grasland@parisgeo.cnrs.fr", role = "aut"),
+	         person("Giuseppe", "Carteny", email = "giuseppe.carteny@unimi.it", role = "aut"))
+Maintainer: Kohei Watanabe <watanabe.kohei@gmail.com>
+Description: Semi-supervised model for geographical document classification (Watanabe 2018) <doi:10.1080/21670811.2017.1293487>. 
+    This package currently contains seed dictionaries in English, German, French, Spanish, Japanese, Russian and Chinese (Simplified and Traditional).
+License: MIT + file LICENSE
+URL: https://github.com/koheiw/newsmap
+BugReports: https://github.com/koheiw/newsmap/issues
+LazyData: TRUE
+Encoding: UTF-8
+Depends: R (>= 3.5.0), methods
+Imports: utils, Matrix, quanteda (> 1.4), stringi,
+Suggests: testthat,
+RoxygenNote: 6.1.1
+Collate: textmodel_newsmap.R data.R
+NeedsCompilation: no
+Packaged: 2019-07-27 19:12:14 UTC; kohei
+Author: Kohei Watanabe [aut, cre, cph],
+  Stefan Müller [aut],
+  Dani Madrid-Morales [aut],
+  Katerina Tertytchnaya [aut],
+  Ke Cheng [aut],
+  Chung-hong Chan [aut],
+  Claude Grasland [aut],
+  Giuseppe Carteny [aut]
+Repository: CRAN
+Date/Publication: 2019-07-29 10:00:03 UTC

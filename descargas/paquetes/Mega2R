@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package Mega2R</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Accessing and Processing a 'Mega2' Genetic Database [R package Mega2R version 1.0.8]" />
+<meta name="citation_author1" content="Robert V. Baron" />
+<meta name="citation_author2" content="Daniel E. Weeks" />
+<meta name="citation_publication_date" content="2020-10-01" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=Mega2R" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=Mega2R" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="Mega2R: Accessing and Processing a 'Mega2' Genetic Database" />
+<meta name="og:description" content="Uses as input genetic data that have been reformatted and stored in a 'SQLite' database; this database is initially created by the standalone 'mega2' C++ program (available freely from &amp;lt;&lt;a href=&quot;https://watson.hgen.pitt.edu/register/&quot;&gt;https://watson.hgen.pitt.edu/register/&lt;/a&gt;&amp;gt;). Loads and manipulates data frames containing genotype, phenotype, and family information from the input 'SQLite' database, and decompresses needed subsets of the genotype data, on the fly, in a memory efficient manner. We have also created several more functions that illustrate how to use the data frames as well as perform useful tasks: these permit one to run the 'pedgene' package to carry out gene-based association tests on family data using selected marker subsets, to run the 'SKAT' package to carry out gene-based association tests using selected marker subsets, to run the 'famSKATRC' package to carry out gene-based association tests on families (optionally) and with rare or common variants using selected marker subsets, to output the 'Mega2R' data as a VCF file and related files (for phenotype and family data), and to convert the data frames into CoreArray Genomic Data Structure (GDS) format." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=Mega2R" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>Mega2R: Accessing and Processing a 'Mega2' Genetic Database</h2>
+<p>Uses as input genetic data that have been reformatted and
+     stored in a 'SQLite' database; this database is initially created
+     by the standalone 'mega2' C++ program (available freely from
+     &lt;<a href="https://watson.hgen.pitt.edu/register/">https://watson.hgen.pitt.edu/register/</a>&gt;). Loads and manipulates
+     data frames containing genotype, phenotype, and family
+     information from the input 'SQLite' database, and decompresses
+     needed subsets of the genotype data, on the fly, in a memory
+     efficient manner.  We have also created several more functions
+     that illustrate how to use the data frames as well as perform
+     useful tasks: these permit one to run the 'pedgene' package to
+     carry out gene-based association tests on family data using
+     selected marker subsets, to run the 'SKAT' package to carry out
+     gene-based association tests using selected marker subsets, to
+     run the 'famSKATRC' package to carry out gene-based association
+     tests on families (optionally) and with rare or common variants
+     using selected marker subsets, to output the 'Mega2R' data as a
+     VCF file and related files (for phenotype and family data), and
+     to convert the data frames into CoreArray Genomic Data Structure
+     (GDS) format.</p>
+<table summary="Package Mega2R summary">
+<tr>
+<td>Version:</td>
+<td>1.0.8</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0), <a href="../SKAT/index.html">SKAT</a>, <a href="../pedgene/index.html">pedgene</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/gdsfmt.html"><span class="BioC">gdsfmt</span></a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="http://www.bioconductor.org/packages/release/bioc/html/AnnotationDbi.html"><span class="BioC">AnnotationDbi</span></a>, <a href="../DBI/index.html">DBI</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/GenomeInfoDb.html"><span class="BioC">GenomeInfoDb</span></a>, <a href="../RSQLite/index.html">RSQLite</a>, methods, <a href="../famSKATRC/index.html">famSKATRC</a>, <a href="../kinship2/index.html">kinship2</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../formatR/index.html">formatR</a>, <a href="http://www.bioconductor.org/packages/release/data/annotation/html/TxDb.Hsapiens.UCSC.hg19.knownGene.html"><span class="BioC">TxDb.Hsapiens.UCSC.hg19.knownGene</span></a>, <a href="http://www.bioconductor.org/packages/release/data/annotation/html/org.Hs.eg.db.html"><span class="BioC">org.Hs.eg.db</span></a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-01</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Robert V. Baron [aut],
+  Daniel E. Weeks [aut, cre],
+  University of Pittsburgh [cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Daniel E. Weeks  &#x3c;&#x77;&#x65;&#x65;&#x6b;&#x73;&#x20;&#x61;&#x74;&#x20;&#x70;&#x69;&#x74;&#x74;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://groups.google.com/forum/#!forum/mega2-users">https://groups.google.com/forum/#!forum/mega2-users</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://watson.hgen.pitt.edu/mega2/mega2r/">https://watson.hgen.pitt.edu/mega2/mega2r/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_Mega2R.html">Mega2R results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package Mega2R downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="Mega2R.pdf"> Mega2R.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/mega2rtutorial.html">Mega2R Tutorial</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/Mega2R_1.0.8.tar.gz"> Mega2R_1.0.8.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/Mega2R_1.0.8.zip">Mega2R_1.0.8.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/Mega2R_1.0.8.zip">Mega2R_1.0.8.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/Mega2R_1.0.8.zip">Mega2R_1.0.8.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/Mega2R_1.0.8.tgz">Mega2R_1.0.8.tgz</a>, r-oldrel: not available </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/Mega2R"> Mega2R archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=Mega2R"><samp>https://CRAN.R-project.org/package=Mega2R</samp></a>
+to link to this page.</p>
+</body>
+</html>

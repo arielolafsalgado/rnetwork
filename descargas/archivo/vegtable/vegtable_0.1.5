@@ -1,0 +1,35 @@
+Package: vegtable
+Version: 0.1.5
+Encoding: UTF-8
+Title: Handling Vegetation Data Sets
+Authors@R: 
+	person("Miguel", "Alvarez", email="kamapu78@gmail.com",
+		role=c("aut","cre"), comment=c(ORCID="0000-0003-1500-1834"))
+Depends: R(>= 3.0.0), taxlist
+Imports: foreign, methods, plotKML, qdapRegex, sp, stringi, vegdata
+Suggests: devtools, vegan
+LazyData: true
+Description: Import and handling data from vegetation-plot databases, especially
+    data stored in 'Turboveg' (<https://www.synbiosys.alterra.nl/turboveg>).
+    Also import/export routines for exchange of data with 'Juice'
+    (<http://www.sci.muni.cz/botany/juice>) are implemented.
+License: GPL (>= 2)
+URL: https://github.com/kamapu/vegtable
+BugReports: https://github.com/kamapu/vegtable/issues
+Collate: 'NULLing.R'
+        'coverconvert-class.R''vegtable-class.R''shaker-class.R'
+        'cross2db.R''clean.R''as.list.R''merge_taxa.R''add_releves.R'
+        'header.R''Extract.R''veg_relation.R''relation2header.R'
+        'vegtable_stat.R''df2vegtable.R''used_synonyms.R' 'subset.R'
+        'coverconvert-methods.R''names.R'
+        'tv2coverconvert.R''tv2vegtable.R'
+        'crosstable.R''aggregate.R''write_juice.R''read_juice.R''vegtable2kml.R'
+        'layers2samples.R' 'shaker-methods.R''make_cocktail.R'
+        'summary.R''match_names.R' 'taxa2samples.R''count_taxa.R'
+        'trait_proportion.R''trait_stats.R' 'StartMessage.R'
+NeedsCompilation: no
+Packaged: 2020-01-12 06:21:27 UTC; m_alvarez
+Author: Miguel Alvarez [aut, cre] (<https://orcid.org/0000-0003-1500-1834>)
+Maintainer: Miguel Alvarez <kamapu78@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-01-13 19:30:02 UTC

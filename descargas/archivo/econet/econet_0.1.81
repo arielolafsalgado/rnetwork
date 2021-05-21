@@ -1,0 +1,25 @@
+Package: econet
+Type: Package
+Title: Estimation of Parameter-Dependent Network Centrality Measures
+Version: 0.1.81
+Authors@R: c(person(given = "Marco", family = "Battaglini", role = "aut",  email = "battaglini@cornell.edu", comment = c(ORCID = "https://orcid.org/0000-0001-9690-0721")), person(given = "Valerio", family = "Leone Sciabolazza", role = c("aut", "cre"),  email = "valerio.leonesciabolazza@uniparthenope.it", comment = c(ORCID = "https://orcid.org/0000-0003-2537-3084")), person(given = "Eleonora", family = "Patacchini", role = "aut", email = "ep454@cornell.edu", comment = c(ORCID = "https://orcid.org/0000-0002-3510-2969")), person(given = "Sida", family = "Peng", role = "aut", email = "sidpeng@microsoft.com", comment = c(ORCID = "https://orcid.org/0000-0002-2151-0523")))
+Description: Provides methods for estimating parameter-dependent network centrality measures with linear-in-means models. Both non linear least squares and maximum likelihood estimators are implemented. The methods allow for both link and node heterogeneity in network effects, endogenous network formation and the presence of unconnected nodes. The routines also compare the explanatory power of parameter-dependent network centrality measures with those of standard measures of network centrality. Benefits and features of the 'econet' package are illustrated using data from Battaglini and Patacchini (2018), which examine the determinants of US campaign contributions when legislators care about the behavior of other legislators to whom they are socially connected. For additional details, see the vignette.
+Depends: R (>= 3.5.0)
+Imports: bbmle, igraph, intergraph, Matrix, MASS, minpack.lm, sna,
+        spatstat.utils, stats, tnet, utils, plyr, dplyr
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Suggests: testthat, R.rsp
+VignetteBuilder: R.rsp
+NeedsCompilation: no
+Packaged: 2018-11-08 10:43:44 UTC; Eleonora
+Author: Marco Battaglini [aut] (<https://orcid.org/0000-0001-9690-0721>),
+  Valerio Leone Sciabolazza [aut, cre]
+    (<https://orcid.org/0000-0003-2537-3084>),
+  Eleonora Patacchini [aut] (<https://orcid.org/0000-0002-3510-2969>),
+  Sida Peng [aut] (<https://orcid.org/0000-0002-2151-0523>)
+Maintainer: Valerio Leone Sciabolazza <valerio.leonesciabolazza@uniparthenope.it>
+Repository: CRAN
+Date/Publication: 2018-11-08 11:00:03 UTC

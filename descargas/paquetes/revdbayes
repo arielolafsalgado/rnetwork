@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package revdbayes</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Ratio-of-Uniforms Sampling for Bayesian Extreme Value Analysis [R package revdbayes version 1.3.9]" />
+<meta name="citation_author" content="Paul J. Northrop" />
+<meta name="citation_publication_date" content="2020-09-12" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=revdbayes" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=revdbayes" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="revdbayes: Ratio-of-Uniforms Sampling for Bayesian Extreme Value Analysis" />
+<meta name="og:description" content="Provides functions for the Bayesian analysis of extreme value models. The 'rust' package &amp;lt;&lt;a href=&quot;https://cran.r-project.org/package=rust&quot;&gt;https://cran.r-project.org/package=rust&lt;/a&gt;&amp;gt; is used to simulate a random sample from the required posterior distribution. The functionality of 'revdbayes' is similar to the 'evdbayes' package &amp;lt;&lt;a href=&quot;https://cran.r-project.org/package=evdbayes&quot;&gt;https://cran.r-project.org/package=evdbayes&lt;/a&gt;&amp;gt;, which uses Markov Chain Monte Carlo ('MCMC') methods for posterior simulation. Also provided are functions for making inferences about the extremal index, using the K-gaps model of Suveges and Davison (2010) &amp;lt;&lt;a href=&quot;https://doi.org/10.1214%2F09-AOAS292&quot;&gt;doi:10.1214/09-AOAS292&lt;/a&gt;&amp;gt;. Also provided are d,p,q,r functions for the Generalised Extreme Value ('GEV') and Generalised Pareto ('GP') distributions that deal appropriately with cases where the shape parameter is very close to zero." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=revdbayes" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>revdbayes: Ratio-of-Uniforms Sampling for Bayesian Extreme Value Analysis</h2>
+<p>Provides functions for the Bayesian analysis of extreme value
+    models.  The 'rust' package &lt;<a href="https://cran.r-project.org/package=rust">https://cran.r-project.org/package=rust</a>&gt; is
+    used to simulate a random sample from the required posterior distribution.
+    The functionality of 'revdbayes' is similar to the 'evdbayes' package
+    &lt;<a href="https://cran.r-project.org/package=evdbayes">https://cran.r-project.org/package=evdbayes</a>&gt;, which uses Markov Chain
+    Monte Carlo ('MCMC') methods for posterior simulation.  Also provided
+    are functions for making inferences about the extremal index, using 
+    the K-gaps model of Suveges and Davison (2010) &lt;<a href="https://doi.org/10.1214%2F09-AOAS292">doi:10.1214/09-AOAS292</a>&gt;.
+    Also provided are d,p,q,r functions for the Generalised Extreme Value 
+    ('GEV') and Generalised Pareto ('GP') distributions that deal 
+    appropriately with cases where the shape parameter is very close to zero.</p>
+<table summary="Package revdbayes summary">
+<tr>
+<td>Version:</td>
+<td>1.3.9</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../bayesplot/index.html">bayesplot</a> (&ge; 1.1.0), graphics, <a href="../Rcpp/index.html">Rcpp</a>, <a href="../rust/index.html">rust</a> (&ge; 1.2.2), stats, utils</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.10), <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../evdbayes/index.html">evdbayes</a>, <a href="../ggplot2/index.html">ggplot2</a> (&ge; 2.2.1), <a href="../knitr/index.html">knitr</a>, <a href="../microbenchmark/index.html">microbenchmark</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-12</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Paul J. Northrop [aut, cre, cph],
+  Scott D. Grimshaw [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Paul J. Northrop  &#x3c;&#x70;&#x2e;&#x6e;&#x6f;&#x72;&#x74;&#x68;&#x72;&#x6f;&#x70;&#x20;&#x61;&#x74;&#x20;&#x75;&#x63;&#x6c;&#x2e;&#x61;&#x63;&#x2e;&#x75;&#x6b;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/paulnorthrop/revdbayes/issues">https://github.com/paulnorthrop/revdbayes/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://paulnorthrop.github.io/revdbayes/">https://paulnorthrop.github.io/revdbayes/</a>,
+<a href="https://github.com/paulnorthrop/revdbayes">https://github.com/paulnorthrop/revdbayes</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Bayesian.html">Bayesian</a>, <a href="../../views/Distributions.html">Distributions</a>, <a href="../../views/ExtremeValue.html">ExtremeValue</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_revdbayes.html">revdbayes results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package revdbayes downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="revdbayes.pdf"> revdbayes.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/revdbayes-a-vignette.html">Introducing revdbayes: Ratio-of-Uniforms Sampling for Bayesian Extreme Value Analysis</a><br/>
+<a href="vignettes/revdbayes-b-using-rcpp-vignette.html">Faster simulation using revdbayes</a><br/>
+<a href="vignettes/revdbayes-c-predictive-vignette.html">Posterior Predictive Extreme Value Inference using the revdbayes Package</a><br/>
+<a href="vignettes/revdbayes-d-kgaps-vignette.html">Inference for the extremal index using the K-gaps model</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/revdbayes_1.3.9.tar.gz"> revdbayes_1.3.9.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/revdbayes_1.3.9.zip">revdbayes_1.3.9.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/revdbayes_1.3.9.zip">revdbayes_1.3.9.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/revdbayes_1.3.9.zip">revdbayes_1.3.9.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/revdbayes_1.3.9.tgz">revdbayes_1.3.9.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/revdbayes_1.3.9.tgz">revdbayes_1.3.9.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/revdbayes"> revdbayes archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package revdbayes reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../lax/index.html">lax</a>, <a href="../threshr/index.html">threshr</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../exdex/index.html">exdex</a>, <a href="../fitteR/index.html">fitteR</a>, <a href="../mev/index.html">mev</a>, <a href="../rust/index.html">rust</a>, <a href="../smovie/index.html">smovie</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=revdbayes"><samp>https://CRAN.R-project.org/package=revdbayes</samp></a>
+to link to this page.</p>
+</body>
+</html>

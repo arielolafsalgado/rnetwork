@@ -1,0 +1,43 @@
+Package: quickPlot
+Type: Package
+Title: A System of Plotting Optimized for Speed and Modularity
+Description: A high-level plotting system, built using 'grid' graphics, that is
+    optimized for speed and modularity. This has great utility for quick
+    visualizations when testing code, with the key benefit that visualizations
+    are updated independently of one another.
+URL: http://quickplot.predictiveecology.org,
+        https://github.com/PredictiveEcology/quickPlot
+Version: 0.1.5
+Date: 2018-10-01
+Authors@R: c(
+    person("Eliot J B", "McIntire", email = "eliot.mcintire@canada.ca",
+    role = c("aut", "cre"), comment=c(ORCID = "https://orcid.org/0000-0002-6914-8316")),
+    person("Alex M", "Chubaty", email = "alex.chubaty@gmail.com",
+    role = c("aut"), comment = c(ORCID = "https://orcid.org/0000-0001-7146-8135")),
+    person("Her Majesty the Queen in Right of Canada, as represented by the Minister of Natural Resources Canada",
+    role = "cph")
+    )
+Additional_repositories: https://rforge.net
+Depends: R (>= 3.3.0)
+Imports: data.table (>= 1.10.4), fpCompare, ggplot2, grDevices, grid,
+        gridBase, igraph, methods, raster, RColorBrewer, rgdal, rgeos,
+        sp, stats
+Suggests: covr, fastshp, hunspell, knitr, rmarkdown, testthat (>=
+        1.0.2)
+License: GPL-3
+VignetteBuilder: knitr, rmarkdown
+BugReports: https://github.com/PredictiveEcology/quickPlot/issues
+ByteCompile: yes
+RoxygenNote: 6.1.0.9000
+Collate: 'environment.R' 'plotting-classes.R' 'plotting-colours.R'
+        'plotting-helpers.R' 'plotting-other.R' 'plotting.R'
+        'quickPlot-classes.R' 'quickPlot-package.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2018-10-01 20:19:52 UTC; emcintir
+Author: Eliot J B McIntire [aut, cre] (<https://orcid.org/0000-0002-6914-8316>),
+  Alex M Chubaty [aut] (<https://orcid.org/0000-0001-7146-8135>),
+  Her Majesty the Queen in Right of Canada, as represented by the
+    Minister of Natural Resources Canada [cph]
+Maintainer: Eliot J B McIntire <eliot.mcintire@canada.ca>
+Repository: CRAN
+Date/Publication: 2018-10-01 21:00:03 UTC

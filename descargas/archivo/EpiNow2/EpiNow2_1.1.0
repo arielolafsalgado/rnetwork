@@ -1,0 +1,86 @@
+Package: EpiNow2
+Type: Package
+Title: Estimate Real-Time Case Counts and Time-Varying Epidemiological
+        Parameters
+Version: 1.1.0
+Authors@R: c(
+    person(given = "Sam Abbott",
+           role = c("aut", "cre"),
+           email = "sam.abbott@lshtm.ac.uk",
+           comment = c(ORCID = "0000-0001-8057-8037")),
+    person("Joel", "Hellewell",
+           email = "joel.hellewell@lshtm.ac.uk", 
+           role = c("aut"),
+           comment = c(ORCID = "0000-0003-2683-0849")),
+    person("Robin", "Thompson", 
+           email = "robin.thompson@lshtm.ac.uk", 
+           role = c("aut")), 
+    person("Katelyn", "Gostic",
+           email = "kgostic@uchicago.edu",
+           role = c("aut")),
+    person("Katharine", "Sherratt",
+           email = "katharine.sherratt@lshtm.ac.uk",
+           role = c("aut")),
+    person("Sophie", "Meakin", 
+           email = "sophie.meaking@lshtm.ac.uk", 
+           role = c("aut")), 
+    person("James", "Munday",
+           email = "james.munday@lshtm.ac.uk",
+           role = c("aut")),
+    person("Nikos", "Bosse", 
+           role = c("aut")),
+    person("Joe", "Hickson",
+           email = "joseph.hickson@metoffice.gov.uk",
+           role = c("aut")),       
+    person("Paul", "Mee",
+           email = "paul.mee@lshtm.ac.uk",
+           role = c("ctb")),
+    person("Peter", "Ellis",
+           email = "peter.ellis2013nz@gmail.com",
+           role = c("ctb")),
+    person(given = "EpiForecasts",
+             role = c("aut")),
+    person("Sebastian", "Funk",
+            email = "sebastian.funk@lshtm.ac.uk",
+            role = c("aut")))
+Description: Estimates the time-varying reproduction number, rate of spread,
+             and doubling time using a range of open-source tools (Abbott et al. (2020) <doi:10.12688/wellcomeopenres.16006.1>),
+             and current best practices (Gostic et al. (2020) <doi:10.1101/2020.06.18.20134858>).
+             It aims to help users avoid some of the limitations of naive implementations in a framework
+             that is informed by community feedback and is under active development.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: cowplot, data.table, futile.logger (>= 1.4), future.apply,
+        ggplot2, HDInterval, lubridate, methods, patchwork, purrr, Rcpp
+        (>= 0.12.0), rstan (>= 2.18.1), rstantools (>= 2.0.0), scales,
+        stats, truncnorm,
+Suggests: countrycode, dplyr, EpiSoon, forecastHybrid, here,
+        kableExtra, knitr, magrittr, rmarkdown, rnaturalearth,
+        spelling, tidyr,
+Additional_repositories: https://epiforecasts.io/drat/
+RoxygenNote: 7.1.1
+Biarch: true
+Depends: R (>= 3.4.0)
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        rstan (>= 2.21.1), StanHeaders (>= 2.21.0-5)
+SystemRequirements: GNU make
+Language: en-US
+NeedsCompilation: yes
+Packaged: 2020-08-26 16:14:33 UTC; epinow2
+Author: Sam Abbott [aut, cre] (<https://orcid.org/0000-0001-8057-8037>),
+  Joel Hellewell [aut] (<https://orcid.org/0000-0003-2683-0849>),
+  Robin Thompson [aut],
+  Katelyn Gostic [aut],
+  Katharine Sherratt [aut],
+  Sophie Meakin [aut],
+  James Munday [aut],
+  Nikos Bosse [aut],
+  Joe Hickson [aut],
+  Paul Mee [ctb],
+  Peter Ellis [ctb],
+  EpiForecasts [aut],
+  Sebastian Funk [aut]
+Maintainer: Sam Abbott <sam.abbott@lshtm.ac.uk>
+Repository: CRAN
+Date/Publication: 2020-09-01 16:10:03 UTC

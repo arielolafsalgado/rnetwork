@@ -1,0 +1,30 @@
+Package: exPrior
+Type: Package
+Title: Prior Distributions Using a Bayesian Hierarchical Framework
+Version: 1.0.0
+Authors@R: c(
+	person("Falk", "Hesse", email = "falk.hesse@ufz.de", role = "cre"),
+	person("Nura", "Kawa", email = "nkawa@berkeley.edu", role = "aut"),
+	person("Karina", "Cucchi", email = "karina.cucchi@gmail.com", role = "aut"))
+Maintainer: Falk Hesse <falk.hesse@ufz.de>
+Description: The aim of this package is to provide practitioners of statistics in
+  geology, hydrology, etc. a tool to derive prior distributions for Bayesian 
+  inference. Prior distributions summarize knowledge from studies at similar sites. 
+  The main features of the package are to (i) generate prior distributions based 
+  on external data only; (ii) to account for possible autocorrelation
+  in the data, and (iii) to account for available soft data, say, in 
+  the form of expert information on bounds and moments.
+Depends: R (>= 3.1.0), nimble (>= 0.7.0)
+Imports: plyr, stats, dplyr, ggplot2, reshape2, gtable, grid, coda
+License: MIT + file LICENSE
+LazyData: TRUE
+RoxygenNote: 6.1.1
+Suggests: knitr, rmarkdown, devtools, testthat
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-11-13 16:32:06 UTC; fhesse
+Author: Falk Hesse [cre],
+  Nura Kawa [aut],
+  Karina Cucchi [aut]
+Repository: CRAN
+Date/Publication: 2019-11-13 17:50:06 UTC

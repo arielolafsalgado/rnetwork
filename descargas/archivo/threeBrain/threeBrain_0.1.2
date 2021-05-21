@@ -1,0 +1,36 @@
+Package: threeBrain
+Type: Package
+Title: 3D Brain Visualization
+Version: 0.1.2
+Authors@R: c(
+    person("Zhengjia", "Wang", email = "zhengjia.wang@rice.edu", role = c("aut", "cre"))
+    )
+Description: In neuroscience, 'AFNI/SUMA' is a great tool to visualize 3D brain. 
+    However, it takes efforts to interact and share the viewer to others. In 
+    addition, 'AFNI/SUMA' doesn't support Windows platform. In the 'EEG/iEEG' 
+    field, it's hard to have multiple cortical electrodes mapped to a template 
+    brain for group analysis. Therefore this package is written aimed at 
+    providing a fast, stable, interactive and easy to share tool based on 'Three.js', 
+    a 'WebGL' engine to render 3D objects in the web browser such that we can 
+    display brain surfaces on webpage interactively. This package translates R 
+    objects to JavaScript objects via 'JSON' format, and provides 'R-Shiny' interface
+    to manipulate geometries interactively. The visualizations can also serve as 
+    standalone widgets that can be easily shared across different platforms. 
+    Along with 'rave', another package developed by Beauchamp's lab at Baylor 
+    College Medicine, this package provides solutions to easily map surface 
+    electrodes from multiple subjects to one template 141 brain.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Imports: methods, grDevices, graphics, shiny, rlang, future, crayon (>=
+        1.3.4), base64enc (>= 0.1-3), htmltools (>= 0.3.6), jsonlite
+        (>= 1.5), stringr (>= 1.3.1), htmlwidgets (>= 1.3), R6 (>=
+        2.3.0)
+Suggests: knitr, rmarkdown, pryr
+NeedsCompilation: no
+Packaged: 2019-06-27 15:52:38 UTC; beauchamplab
+Author: Zhengjia Wang [aut, cre]
+Maintainer: Zhengjia Wang <zhengjia.wang@rice.edu>
+Repository: CRAN
+Date/Publication: 2019-06-28 16:40:02 UTC

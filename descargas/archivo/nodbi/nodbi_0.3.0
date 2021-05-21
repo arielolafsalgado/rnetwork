@@ -1,0 +1,43 @@
+Package: nodbi
+Title: 'NoSQL' Database Connector
+Description: Simplified document database manipulation and analysis,
+    including support for many 'NoSQL' databases, including document 
+    databases ('Elasticsearch', 'CouchDB', 'MongoDB'), 
+    'key-value' databases ('Redis'), and (with limitations)
+    SQLite/json1.
+Version: 0.3.0
+Authors@R: c(
+    person("Scott", "Chamberlain", role = c("aut", "cre"),
+        email = "sckott@protonmail.com",
+        comment = c(ORCID = "0000-0003-1444-9135")),
+    person("Rich", "FitzJohn", role = "aut"),
+    person("Jeroen", "Ooms", role = "aut"),
+    person(given = "Ralf",
+           family = "Herold",
+           role = "aut",
+           comment = c(ORCID = "0000-0002-8148-6748"))
+  )
+License: MIT + file LICENSE
+LazyData: true
+URL: https://github.com/ropensci/nodbi
+BugReports: https://github.com/ropensci/nodbi/issues
+Depends: R (>= 2.10)
+Encoding: UTF-8
+Language: en-US
+Imports: data.table, jsonlite
+Suggests: sofa (>= 0.3.0), elastic (>= 1.0.0), mongolite (>= 1.6),
+        redux, RSQLite (>= 1.1), DBI, testthat
+RoxygenNote: 6.1.1
+X-schema.org-applicationCategory: Databases
+X-schema.org-keywords: database, MongoDB, Redis, Elasticsearch,
+        CouchDB, SQLite, NoSQL, JSON, documents
+X-schema.org-isPartOf: https://ropensci.org
+NeedsCompilation: no
+Packaged: 2019-09-18 21:46:05 UTC; sckott
+Author: Scott Chamberlain [aut, cre] (<https://orcid.org/0000-0003-1444-9135>),
+  Rich FitzJohn [aut],
+  Jeroen Ooms [aut],
+  Ralf Herold [aut] (<https://orcid.org/0000-0002-8148-6748>)
+Maintainer: Scott Chamberlain <sckott@protonmail.com>
+Repository: CRAN
+Date/Publication: 2019-09-18 22:00:02 UTC

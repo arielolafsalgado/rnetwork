@@ -1,0 +1,22 @@
+Package: snht
+Type: Package
+Title: Standard Normal Homogeneity Test
+Version: 1.0.3
+Date: 2015-12-14
+Depends: ggplot2, gridExtra, mgcv
+Imports: zoo, plyr, reshape2, mvtnorm, methods
+Authors@R: c(person("Josh", "Browning", role = c("aut", "cre"),
+		     email = "jbrownin@mines.edu"),
+	         person("Carina", "Schneider", role = "aut",
+             email = "carinamariaschneider@gmail.com"))
+Author: Josh Browning [aut, cre],
+  Carina Schneider [aut]
+Maintainer: Josh Browning <jbrownin@mines.edu>
+Description: Implementation of robust and non-robust Standard Normal Homogeneity Test (SNHT) for changepoint detection.  This test statistic is equal sided, as proposed in "Homogenization of Radiosonde Temperature Time Series Using Innovation Statistics" by Haimberger, L., 2007.  However, the statistic contains an estimate of sigma^2 in the denominator instead of sigma, which seems to be a more appropriate value (based on the paper "Homogenization of Swedish temperature data. Part I: Homogeneity test for linear trends." by Alexandersson, H., and A. Moberg, 1997).
+License: GPL-3
+VignetteBuilder: knitr
+Suggests: knitr
+NeedsCompilation: no
+Packaged: 2015-12-14 15:45:30 UTC; josh
+Repository: CRAN
+Date/Publication: 2015-12-14 16:48:37

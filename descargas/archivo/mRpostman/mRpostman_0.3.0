@@ -1,0 +1,33 @@
+Package: mRpostman
+Type: Package
+Title: IMAP Toolkit
+Version: 0.3.0
+Date: 2019-10-15
+Authors@R: c(
+    person(given="Allan", family="Quadros", email = "allanvcq@gmail.com",
+    role = c("aut", "cre")))
+Description: IMAP4rev1 (Internet Message Access Protocol, Version 4rev1) 
+    functionalities based on the RFC 3501 manual (Crispin, 2003, 
+    <doi:10.17487/RFC3501>), its updates, and other related documents. 
+    'mRpostman' makes extensive use of 'curl' and 'libcurl' capabilities, 
+    providing functions for mailboxes and electronic messages manipulation, such 
+    as moving, deleting, and searching messages using specific 
+    criteria, setting and clearing flags, selective fetching of message 
+    attributes and more.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: curl, stringr, magrittr, assertthat, base64enc, utils
+Depends: R (>= 3.1.0)
+BugReports: https://github.com/allanvc/mRpostman/issues
+SystemRequirements: libcurl: libcurl-devel (rpm) or
+        libcurl4-openssl-dev (deb)
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-10-17 03:09:28 UTC; allan
+Author: Allan Quadros [aut, cre]
+Maintainer: Allan Quadros <allanvcq@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-10-17 05:10:06 UTC

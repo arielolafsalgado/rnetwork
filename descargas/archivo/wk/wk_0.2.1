@@ -1,0 +1,46 @@
+Package: wk
+Title: Lightweight Well-Known Geometry Parsing
+Version: 0.2.1
+Authors@R: 
+    c(
+      person(given = "Dewey",
+             family = "Dunnington",
+             role = c("aut", "cre"),
+             email = "dewey@fishandwhistle.net",
+             comment = c(ORCID = "0000-0002-9415-4582")),
+       person(given = "Edzer",
+              family = "Pebesma",
+              role = c("aut"),
+              email = "edzer.pebesma@uni-muenster.de",
+              comment = c(ORCID = "0000-0001-8049-7069")),
+        person("Refractions Research Inc.", role = "cph"),
+        person("Vivid Solutions Inc.", role = "cph")
+    )
+Maintainer: Dewey Dunnington <dewey@fishandwhistle.net>
+Description: Provides a minimal R and C++ API for parsing
+  well-known binary and well-known text representation of
+  geometries to and from R-native formats. 
+  Well-known binary is compact
+  and fast to parse; well-known text is human-readable
+  and is useful for writing tests. These formats are only
+  useful in R if the information they contain can be 
+  accessed in R, for which high-performance functions 
+  are provided here.
+License: LGPL (>= 2.1)
+Copyright: file COPYRIGHTS
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+LinkingTo: Rcpp
+Imports: Rcpp
+Suggests: testthat
+URL: https://github.com/paleolimbot/wk
+BugReports: https://github.com/paleolimbot/wk/issues
+NeedsCompilation: yes
+Packaged: 2020-05-08 16:29:50 UTC; dewey
+Author: Dewey Dunnington [aut, cre] (<https://orcid.org/0000-0002-9415-4582>),
+  Edzer Pebesma [aut] (<https://orcid.org/0000-0001-8049-7069>),
+  Refractions Research Inc. [cph],
+  Vivid Solutions Inc. [cph]
+Repository: CRAN
+Date/Publication: 2020-05-11 15:50:02 UTC

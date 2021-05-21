@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package alpaca</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Fit GLM's with High-Dimensional k-Way Fixed Effects [R package alpaca version 0.3.2]" />
+<meta name="citation_author1" content="Amrei Stammann" />
+<meta name="citation_author2" content="Daniel Czarnowske" />
+<meta name="citation_publication_date" content="2020-01-12" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=alpaca" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=alpaca" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="alpaca: Fit GLM's with High-Dimensional k-Way Fixed Effects" />
+<meta name="og:description" content="Provides a routine to concentrate out factors with many levels during the optimization of the log-likelihood function of the corresponding generalized linear model (glm). The package is based on the algorithm proposed by Stammann (2018) &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1707.01815&quot;&gt;arXiv:1707.01815&lt;/a&gt;&amp;gt; and is restricted to glm's that are based on maximum likelihood estimation and non-linear. It also offers an efficient algorithm to recover estimates of the fixed effects in a post-estimation routine and includes robust and multi-way clustered standard errors. Further the package provides analytical bias corrections for binary choice models (logit and probit) derived by Fernandez-Val and Weidner (2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.jeconom.2015.12.014&quot;&gt;doi:10.1016/j.jeconom.2015.12.014&lt;/a&gt;&amp;gt; and Hinz, Stammann, and Wanner (2019)." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=alpaca" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>alpaca: Fit GLM's with High-Dimensional k-Way Fixed Effects</h2>
+<p>Provides a routine to concentrate out factors with many levels during the
+  optimization of the log-likelihood function of the corresponding generalized linear model (glm).
+  The package is based on the algorithm proposed by Stammann (2018) &lt;<a href="https://arxiv.org/abs/1707.01815">arXiv:1707.01815</a>&gt; and is
+  restricted to glm's that are based on maximum likelihood estimation and non-linear. It also offers
+  an efficient algorithm to recover estimates of the fixed effects in a post-estimation routine and 
+  includes robust and multi-way clustered standard errors. Further the package provides analytical 
+  bias corrections for binary choice models (logit and probit) derived by Fernandez-Val 
+  and Weidner (2016) &lt;<a href="https://doi.org/10.1016%2Fj.jeconom.2015.12.014">doi:10.1016/j.jeconom.2015.12.014</a>&gt; and Hinz, Stammann, and Wanner (2019).</p>
+<table summary="Package alpaca summary">
+<tr>
+<td>Version:</td>
+<td>0.3.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.1.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../data.table/index.html">data.table</a>, <a href="../Formula/index.html">Formula</a>, <a href="../MASS/index.html">MASS</a>, <a href="../Rcpp/index.html">Rcpp</a>, stats, utils</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../bife/index.html">bife</a>, <a href="../car/index.html">car</a>, <a href="../knitr/index.html">knitr</a>, <a href="../lfe/index.html">lfe</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-01-12</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Amrei Stammann [aut, cre],
+  Daniel Czarnowske <a href="https://orcid.org/0000-0002-0030-929X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Amrei Stammann  &#x3c;&#x61;&#x6d;&#x72;&#x65;&#x69;&#x2e;&#x73;&#x74;&#x61;&#x6d;&#x6d;&#x61;&#x6e;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x68;&#x68;&#x75;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/amrei-stammann/alpaca/issues">https://github.com/amrei-stammann/alpaca/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/amrei-stammann/alpaca">https://github.com/amrei-stammann/alpaca</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">alpaca citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Econometrics.html">Econometrics</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_alpaca.html">alpaca results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package alpaca downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="alpaca.pdf"> alpaca.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/howto.html">How to use alpaca</a><br/>
+<a href="vignettes/trade.html">Estimating the intensive and extensive margin of trade</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/alpaca_0.3.2.tar.gz"> alpaca_0.3.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/alpaca_0.3.2.zip">alpaca_0.3.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/alpaca_0.3.2.zip">alpaca_0.3.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/alpaca_0.3.2.zip">alpaca_0.3.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/alpaca_0.3.2.tgz">alpaca_0.3.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/alpaca_0.3.2.tgz">alpaca_0.3.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/alpaca"> alpaca archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package alpaca reverse dependencies">
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../bife/index.html">bife</a>, <a href="../lfe/index.html">lfe</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;enhances:</td>
+<td><a href="../texreg/index.html">texreg</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=alpaca"><samp>https://CRAN.R-project.org/package=alpaca</samp></a>
+to link to this page.</p>
+</body>
+</html>

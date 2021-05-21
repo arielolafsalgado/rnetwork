@@ -1,0 +1,44 @@
+Package: missSBM
+Type: Package
+Title: Handling Missing Data in Stochastic Block Models
+Version: 0.2.0
+Authors@R: c(
+  person("Julien", "Chiquet", role = c("aut", "cre"), email = "julien.chiquet@inra.fr",
+      comment = c(ORCID = "0000-0002-3629-3429")),
+  person("Pierre", "Barbillon", role = c("aut"), email = "pierre.barbillon@agroparistech.fr",
+      comment = c(ORCID = "0000-0002-7766-7693")),
+  person("Timothée", "Tabouy", role = c("aut"), email = "timothee.tabouy@agroparistech.fr")
+  )
+Maintainer: Julien Chiquet <julien.chiquet@inra.fr>
+Description: When a network is partially observed (here, NAs in the adjacency matrix rather than 1 or 0 
+  due to missing information between node pairs), it is possible to account for the underlying process
+  that generates those NAs. 'missSBM' adjusts the popular stochastic block model from network data 
+  sampled under various missing data conditions, as described in Tabouy, Barbillon and Chiquet (2019) <doi:10.1080/01621459.2018.1562934>.
+URL: https://jchiquet.github.io/missSBM
+BugReports: https://github.com/jchiquet/missSBM/issues
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Depends: R (>= 3.4.0)
+Imports: Rcpp, methods, ape, igraph, nloptr, corrplot, R6, magrittr
+LinkingTo: Rcpp, RcppArmadillo
+Collate: 'RcppExports.R' 'SBM-Class.R' 'SBM_fit-Class.R'
+        'SBM_fit_covariates-Class.R' 'SBM_fit_nocovariate-Class.R'
+        'SBM_sampler-Class.R' 'er_network.R' 'estimate.R'
+        'frenchblog2007.R' 'missSBM-package.R' 'utils_missSBM.R'
+        'networkSampling-Class.R' 'networkSampling_fit-Class.R'
+        'missSBM_fit-Class.R' 'missSBM_collection-Class.R'
+        'networkSampler-Class.R' 'prepare_data.R' 'sample.R'
+        'sampledNetwork-Class.R' 'simulate.R' 'utils-pipe.R'
+        'utils_initialization.R' 'war.R'
+Suggests: aricode, blockmodels, testthat, covr, knitr, rmarkdown,
+        ggplot2
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2019-06-07 12:08:02 UTC; jchiquet
+Author: Julien Chiquet [aut, cre] (<https://orcid.org/0000-0002-3629-3429>),
+  Pierre Barbillon [aut] (<https://orcid.org/0000-0002-7766-7693>),
+  Timothée Tabouy [aut]
+Repository: CRAN
+Date/Publication: 2019-06-08 08:10:03 UTC

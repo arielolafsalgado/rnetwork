@@ -1,0 +1,28 @@
+Package: abcrlda
+Type: Package
+Title: Asymptotically Bias-Corrected Regularized Linear Discriminant
+        Analysis
+Version: 1.0.1
+Author: Dmitriy Fedorov [aut, cre],
+  Amin Zollanvari [aut],
+  Aresh Dadlani [aut],
+  Berdakh Abibullaev [aut]
+Maintainer: Dmitriy Fedorov <dmitriy.fedorov@nu.edu.kz>
+Authors@R: c(
+    person("Dmitriy", "Fedorov", email = "dmitriy.fedorov@nu.edu.kz", role = c("aut", "cre")),
+    person("Amin", "Zollanvari", email = "amin.zollanvari@nu.edu.kz", role = "aut"),
+    person("Aresh", "Dadlani", email = "aresh.dadlani@nu.edu.kz ", role = "aut"),
+    person("Berdakh", "Abibullaev", email = "berdakh.abibullaev@nu.edu.kz", role = "aut"))
+Description: Offers methods to perform asymptotically bias-corrected regularized linear discriminant analysis (ABC_RLDA) for cost-sensitive binary classification. The bias-correction is an estimate of the bias term added to regularized discriminant analysis (RLDA) that minimizes the overall risk. The default magnitude of misclassification costs are equal and set to 0.5; however, the package also offers the options to set them to some predetermined values or, alternatively, take them as hyperparameters to tune.
+    A. Zollanvari, M. Abdirash, A. Dadlani and B. Abibullaev (2019) <doi:10.1109/LSP.2019.2918485>.
+Imports: stats
+License: GPL-3
+URL: https://ieeexplore.ieee.org/document/8720003/,
+        https://dx.doi.org/10.1109/LSP.2019.2918485
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-11-20 04:52:16 UTC; DFed
+Repository: CRAN
+Date/Publication: 2019-11-25 12:00:02 UTC

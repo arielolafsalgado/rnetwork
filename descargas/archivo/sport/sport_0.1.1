@@ -1,0 +1,34 @@
+Package: sport
+Type: Package
+Title: Sequential Pairwise Online Rating Techniques
+Version: 0.1.1
+Depends: R (>= 3.0)
+Authors@R: person("Dawid", "Kałędkowski", email = "dawid.kaledkowski@gmail.com", role = c("aut", "cre"))
+Maintainer: Dawid Kałędkowski <dawid.kaledkowski@gmail.com>
+Description: Calculates ratings for two-player or 
+  multi-player challenges. Methods included in package such as are able to 
+  estimate ratings (players strengths) and their evolution in time, also able to 
+  predict output of challenge. Algorithms are based on Bayesian Approximation 
+  Method, and they don't involve any matrix inversions nor likelihood estimation. 
+  Parameters are updated sequentially, and computation doesn't require any 
+  additional RAM to make estimation feasible. Additionally, base of the package 
+  is written in C++ what makes sport computation even faster. Methods used in the 
+  package refers to Mark E. Glickman (1999) <http://www.glicko.net/research/glicko.pdf>; 
+  Mark E. Glickman (2001) <doi:10.1080/02664760120059219>; 
+  Ruby C. Weng, Chih-Jen Lin (2011) <http://jmlr.csail.mit.edu/papers/volume12/weng11a/weng11a.pdf>; 
+  W. Penny, Stephen J. Roberts (1999) <doi:10.1109/IJCNN.1999.832603>.
+BugReports: https://github.com/gogonzo/sport/issues
+Imports: Rcpp (>= 0.12.8), data.table (>= 1.11.0), ggplot2 (>= 3.0.0)
+LinkingTo: Rcpp
+License: GPL-2
+Encoding: UTF-8
+URL: https://github.com/gogonzo/sport
+LazyData: true
+RoxygenNote: 6.1.0
+Suggests: knitr, rmarkdown, testthat, magrittr, dplyr
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2018-09-11 10:23:29 UTC; dkaledkowski
+Author: Dawid Kałędkowski [aut, cre]
+Repository: CRAN
+Date/Publication: 2018-09-11 17:20:02 UTC

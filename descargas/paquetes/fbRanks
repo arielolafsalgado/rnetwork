@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package fbRanks</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=fbRanks" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="fbRanks: Association Football (Soccer) Ranking via Poisson Regression" />
+<meta name="og:description" content="This package uses time dependent Poisson regression and a record of goals scored in matches to rank teams via estimated attack and defense strengths. The statistical model is based on Dixon and Coles (1997) Modeling Association Football Scores and Inefficiencies in the Football Betting Market, Applied Statistics, Volume 46, Issue 2, 265-280. The package has a some webscrapers to assist in the development and updating of a match database. If the match database contains unconnected clusters (i.e. sets of teams that have only played each other and not played teams from other sets), each cluster is ranked separately relative to the median team strength in the cluster. The package contains functions for predicting and simulating tournaments and leagues from estimated models. The package allows fitting via the glm(), speedglm(), and glmnet() functions. The latter allows fast and efficient fitting of very large numbers of teams. The fitting algorithm will analyze the match data and determine which teams form a cluster (a set of teams where there is a path of matches connecting every team) and fit each cluster separately." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=fbRanks" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>fbRanks: Association Football (Soccer) Ranking via Poisson Regression</h2>
+<p>This package uses time dependent Poisson regression and a record of goals scored in matches to rank teams via estimated attack and defense strengths.  The statistical model is based on Dixon and Coles (1997) Modeling Association Football Scores and Inefficiencies in the Football Betting Market, Applied Statistics, Volume 46, Issue 2, 265-280.  The package has a some webscrapers to assist in the development and updating of a match database.  If the match database contains unconnected clusters (i.e. sets of teams that have only played each other and not played teams from other sets), each cluster is ranked separately relative to the median team strength in the cluster.  The package contains functions for predicting and simulating tournaments and leagues from estimated models. The package allows fitting via the glm(), speedglm(), and glmnet() functions.  The latter allows fast and efficient fitting of very large numbers of teams.  The fitting algorithm will analyze the match data and determine which teams form a cluster (a set of teams where there is a path of matches connecting every team) and fit each cluster separately.</p>
+<table summary="Package fbRanks summary">
+<tr>
+<td>Version:</td>
+<td>2.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>stats</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../igraph/index.html">igraph</a>, <a href="../stringr/index.html">stringr</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../RJSONIO/index.html">RJSONIO</a>, <a href="../RCurl/index.html">RCurl</a>, <a href="../httr/index.html">httr</a>, <a href="../XML/index.html">XML</a>, <a href="../Rlab/index.html">Rlab</a>, <a href="../xtable/index.html">xtable</a>, tcltk, <a href="../speedglm/index.html">speedglm</a>, <a href="../glmnet/index.html">glmnet</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2013-10-23</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Eli Holmes</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>E Holmes  &#x3c;&#x65;&#x65;&#x68;&#x6f;&#x6c;&#x6d;&#x65;&#x73;&#x20;&#x61;&#x74;&#x20;&#x75;&#x2e;&#x77;&#x61;&#x73;&#x68;&#x69;&#x6e;&#x67;&#x74;&#x6f;&#x6e;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://www.lastplanetranking.blogspot.com/">http://www.lastplanetranking.blogspot.com/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_fbRanks.html">fbRanks results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package fbRanks downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="fbRanks.pdf"> fbRanks.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Basic_team_ranking.pdf">Basic Team Ranking</a><br/>
+<a href="vignettes/Scrape_match_data.pdf">Webscrape Match Data</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/fbRanks_2.0.tar.gz"> fbRanks_2.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/fbRanks_2.0.zip">fbRanks_2.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/fbRanks_2.0.zip">fbRanks_2.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/fbRanks_2.0.zip">fbRanks_2.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/fbRanks_2.0.tgz">fbRanks_2.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/fbRanks_2.0.tgz">fbRanks_2.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/fbRanks"> fbRanks archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=fbRanks"><samp>https://CRAN.R-project.org/package=fbRanks</samp></a>
+to link to this page.</p>
+</body>
+</html>

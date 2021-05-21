@@ -1,0 +1,23 @@
+Package: FarmTest
+Title: Factor Adjusted Robust Multiple Testing
+Version: 1.0.3
+Authors@R: c(person("Koushiki", "Bose", email = "koush.bose@gmail.com", role = c("aut", "cre")), person("Yuan", "Ke", email = "yzk62@psu.edu", role = "aut"),person("Wen-xin", "Zhou", email = "wez243@ucsd.edu", role = "aut"))
+Description: Performs robust multiple testing for means in the presence of known and unknown latent factors. It implements a robust procedure to estimate distribution parameters using the Huber's loss function and accounts for strong dependence among coordinates via an approximate factor model. This method is particularly suitable for high dimensional data when there are many variables but only a small number of observations available. Moreover, the method is tailored to cases when the underlying distribution deviates from Gaussian, which is commonly assumed in the literature. Besides the results of hypotheses testing, the estimated underlying factors and diagnostic plots are also output. Multiple comparison correction is done after estimating the proportion of true null hypotheses using the method in Storey (2015) <https://github.com/jdstorey/qvalue>. For detailed description of methods and further references, see the papers on the 'FarmTest' method: Fan et al. (2017) <arXiv:1711.05386> and Zhou et al. (2017) <arXiv:1711.05381>.
+Depends: R (>= 3.3.0)
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports: graphics, stats, Rcpp, grDevices, utils, methods
+URL: https://kbose28.github.io/FarmTest/
+RoxygenNote: 6.0.1
+LinkingTo: Rcpp, RcppArmadillo
+NeedsCompilation: yes
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Packaged: 2018-05-24 19:43:31 UTC; bose
+Author: Koushiki Bose [aut, cre],
+  Yuan Ke [aut],
+  Wen-xin Zhou [aut]
+Maintainer: Koushiki Bose <koush.bose@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-05-29 13:19:48 UTC

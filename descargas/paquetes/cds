@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package cds</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Constrained Dual Scaling for Detecting Response Styles [R package cds version 1.0.3]" />
+<meta name="citation_author" content="Pieter Schoonees" />
+<meta name="citation_publication_date" content="2016-01-05" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=cds" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=cds" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="cds: Constrained Dual Scaling for Detecting Response Styles" />
+<meta name="og:description" content="This is an implementation of constrained dual scaling for detecting response styles in categorical data, including utility functions. The procedure involves adding additional columns to the data matrix representing the boundaries between the rating categories. The resulting matrix is then doubled and analyzed by dual scaling. One-dimensional solutions are sought which provide optimal scores for the rating categories. These optimal scores are constrained to follow monotone quadratic splines. Clusters are introduced within which the response styles can vary. The type of response style present in a cluster can be diagnosed from the optimal scores for said cluster, and this can be used to construct an imputed version of the data set which adjusts for response styles." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=cds" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>cds: Constrained Dual Scaling for Detecting Response Styles</h2>
+<p>This is an implementation of constrained dual scaling for
+    detecting response styles in categorical data, including utility functions. The
+    procedure involves adding additional columns to the data matrix representing the
+    boundaries between the rating categories. The resulting matrix is then doubled
+    and analyzed by dual scaling. One-dimensional solutions are sought which provide
+    optimal scores for the rating categories. These optimal scores are constrained
+    to follow monotone quadratic splines. Clusters are introduced within which the
+    response styles can vary. The type of response style present in a cluster can
+    be diagnosed from the optimal scores for said cluster, and this can be used to
+    construct an imputed version of the data set which adjusts for response styles.</p>
+<table summary="Package cds summary">
+<tr>
+<td>Version:</td>
+<td>1.0.3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.2.3), parallel</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../MASS/index.html">MASS</a>, <a href="../limSolve/index.html">limSolve</a>, <a href="../clue/index.html">clue</a>, <a href="../colorspace/index.html">colorspace</a>, <a href="../copula/index.html">copula</a>, graphics, methods, stats</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2016-01-05</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Pieter Schoonees [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Pieter Schoonees  &#x3c;&#x73;&#x63;&#x68;&#x6f;&#x6f;&#x6e;&#x65;&#x65;&#x73;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">cds citation info</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Psychometrics.html">Psychometrics</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_cds.html">cds results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package cds downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="cds.pdf"> cds.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/cds_1.0.3.tar.gz"> cds_1.0.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/cds_1.0.3.zip">cds_1.0.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/cds_1.0.3.zip">cds_1.0.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/cds_1.0.3.zip">cds_1.0.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/cds_1.0.3.tgz">cds_1.0.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/cds_1.0.3.tgz">cds_1.0.3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/cds"> cds archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package cds reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../ccrs/index.html">ccrs</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=cds"><samp>https://CRAN.R-project.org/package=cds</samp></a>
+to link to this page.</p>
+</body>
+</html>

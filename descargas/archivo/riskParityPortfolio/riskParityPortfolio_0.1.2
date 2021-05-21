@@ -1,0 +1,48 @@
+Package: riskParityPortfolio
+Title: Design of Risk Parity Portfolios
+Version: 0.1.2
+Date: 2019-06-01
+Description: Fast design of risk parity portfolios for financial investment.
+    The goal of the risk parity portfolio formulation is to equalize or distribute
+    the risk contributions of the different assets, which is missing if we simply
+    consider the overall volatility of the portfolio as in the mean-variance
+    Markowitz portfolio. In addition to the vanilla formulation, where the risk
+    contributions are perfectly equalized subject to no shortselling and budget
+    constraints, many other formulations are considered that allow for box
+    constraints and shortselling, as well as the inclusion of additional
+    objectives like the expected return and overall variance. See vignette for
+    a detailed documentation and comparison, with several illustrative examples.
+    The package is based on the papers:
+    Y. Feng, and D. P. Palomar (2015). SCRIP: Successive Convex Optimization Methods
+    for Risk Parity Portfolio Design. IEEE Trans. on Signal Processing, vol. 63,
+    no. 19, pp. 5285-5300. <doi:10.1109/TSP.2015.2452219>.
+    F. Spinu (2013), An Algorithm for Computing Risk Parity Weights.
+    <doi:10.2139/ssrn.2297383>.
+    T. Griveau-Billion, J. Richard, and T. Roncalli (2013). A fast algorithm for computing 
+    High-dimensional risk parity portfolios. <arXiv:1311.4057>.
+Authors@R: c(
+  person("Ze", "Vinicius", role = "aut", email = "jvmirca@gmail.com"),
+  person(c("Daniel", "P."), "Palomar", role = c("cre", "aut"), email = "daniel.p.palomar@gmail.com")
+  )
+Maintainer: Daniel P. Palomar <daniel.p.palomar@gmail.com>
+URL: https://CRAN.R-project.org/package=riskParityPortfolio,
+        https://github.com/dppalomar/riskParityPortfolio,
+        https://www.danielppalomar.com,
+        https://doi.org/10.1109/TSP.2015.2452219
+BugReports: https://github.com/dppalomar/riskParityPortfolio/issues
+Depends:
+License: GPL-3 | file LICENSE
+Encoding: UTF-8
+LazyData: true
+LinkingTo: Rcpp, RcppEigen
+RoxygenNote: 6.1.1
+Imports: alabama, nloptr, quadprog, Rcpp
+Suggests: bookdown, knitr, numDeriv, prettydoc, rmarkdown, R.rsp,
+        testthat
+VignetteBuilder: knitr, rmarkdown, R.rsp
+NeedsCompilation: yes
+Packaged: 2019-06-01 00:30:09 UTC; palomar
+Author: Ze Vinicius [aut],
+  Daniel P. Palomar [cre, aut]
+Repository: CRAN
+Date/Publication: 2019-06-01 04:30:03 UTC

@@ -1,0 +1,40 @@
+Package: bpbounds
+Title: Nonparametric Bounds for the Average Causal Effect Due to Balke
+        and Pearl and Extensions
+Version: 0.1.0
+Authors@R: c(person("Tom", "Palmer", 
+    email = "tom.palmer@lancaster.ac.uk", role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0003-4655-4511")),
+  person("Roland", "Ramsahai", role = c("aut")),
+  person("Vanessa", "Didelez", role = c("aut"), 
+    comment = c(ORCID = "0000-0001-8587-7706")),
+  person("Nuala", "Sheehan", role = c("aut")))
+Description: Implementation of the nonparametric bounds for the average causal 
+    effect under an instrumental variable model by Balke and Pearl (Bounds on 
+    Treatment Effects from Studies with Imperfect Compliance, JASA, 1997, 92, 
+    439, 1171-1176). The package can calculate bounds for a binary outcome, a 
+    binary treatment/phenotype, and an instrument with either 2 or 3 
+    categories. The package implements bounds for situations where these 3 
+    variables are measured in the same dataset (trivariate data) or where the 
+    outcome and instrument are measured in one study and the 
+    treatment/phenotype and instrument are measured in another study 
+    (bivariate data).
+Depends: R (>= 3.5.0)
+Imports: methods
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Suggests: dplyr, testthat, knitr, rmarkdown, tidyr
+VignetteBuilder: knitr
+RoxygenNote: 6.1.0
+URL: https://github.com/remlapmot/bpbounds
+BugReports: https://github.com/remlapmot/bpbounds/issues
+NeedsCompilation: no
+Packaged: 2018-11-09 17:42:31 UTC; remlapmot
+Author: Tom Palmer [aut, cre] (<https://orcid.org/0000-0003-4655-4511>),
+  Roland Ramsahai [aut],
+  Vanessa Didelez [aut] (<https://orcid.org/0000-0001-8587-7706>),
+  Nuala Sheehan [aut]
+Maintainer: Tom Palmer <tom.palmer@lancaster.ac.uk>
+Repository: CRAN
+Date/Publication: 2018-11-18 19:00:06 UTC

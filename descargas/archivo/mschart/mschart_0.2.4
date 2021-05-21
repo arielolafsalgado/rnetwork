@@ -1,0 +1,33 @@
+Package: mschart
+Type: Package
+Title: Chart Generation for 'Microsoft Word' and 'Microsoft PowerPoint'
+        Documents
+Version: 0.2.4
+Authors@R: c( person("David", "Gohel", role = c("aut", "cre"), email = "david.gohel@ardata.fr"),
+           person("YouGov", role = "fnd"),
+           person("David", "Camposeco", role = "ctb", email = "david.camposeco.paulsen@gmail.com", comment = "chart_data_smooth function") 
+           )
+Description: Create native charts for 'Microsoft PowerPoint' and 'Microsoft Word' documents. 
+ These can then be edited and annotated. Functions are provided to let users create charts, modify 
+ and format their content. The chart's underlying data is automatically saved within the 
+ 'Word' document or 'PowerPoint' presentation. It extends package 'officer' that does 
+ not contain any feature for 'Microsoft' native charts production. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 2.10)
+Imports: stats, data.table, officer (>= 0.2.0), R6,cellranger,
+        writexl,grDevices, xml2 (>= 1.1.0), htmltools
+URL: https://ardata-fr.github.io/mschart/
+BugReports: https://github.com/ardata-fr/mschart/issues
+RoxygenNote: 6.1.1
+Suggests: knitr, rmarkdown,magrittr
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-06-25 15:42:44 UTC; davidgohel
+Author: David Gohel [aut, cre],
+  YouGov [fnd],
+  David Camposeco [ctb] (chart_data_smooth function)
+Maintainer: David Gohel <david.gohel@ardata.fr>
+Repository: CRAN
+Date/Publication: 2019-06-26 09:10:02 UTC

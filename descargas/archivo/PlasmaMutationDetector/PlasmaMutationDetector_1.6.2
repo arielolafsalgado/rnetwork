@@ -1,0 +1,25 @@
+Package: PlasmaMutationDetector
+Type: Package
+Title: Tumor Mutation Detection in Plasma
+Version: 1.6.2
+Date: 2017-11-08
+Author: Yves Rozenholc, Nicolas Pécuchet, Pierre Laurent-Puig
+Maintainer: Yves Rozenholc <yves.rozenholc@parisdescartes.fr>
+Description: Aims at detecting single nucleotide variation
+    (SNV) and insertion/deletion (INDEL) in circulating tumor DNA (ctDNA), used
+    as a surrogate marker for tumor, at each base position of an Next Generation
+    Sequencing (NGS) analysis. Mutations are assessed by comparing the minor-allele
+    frequency at each position to the measured PER in control samples.
+License: MIT + file LICENSE
+Imports: S4Vectors (>= 0.8.7), Rsamtools (>= 1.22.0), rtracklayer (>=
+        1.30.1), robustbase (>= 0.92-5), SummarizedExperiment (>=
+        1.2.3)
+Depends: R (>= 3.3.1), ggplot2 (>= 2.0.0), grid (>= 3.2.3),
+        GenomicRanges (>= 1.22.3), VariantAnnotation (>= 1.16.4)
+Encoding: UTF-8
+RoxygenNote: 6.0.1
+LazyData: true
+NeedsCompilation: no
+Packaged: 2017-11-15 13:05:35 UTC; rozen
+Repository: CRAN
+Date/Publication: 2017-11-15 13:30:36 UTC

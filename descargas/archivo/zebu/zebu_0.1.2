@@ -1,0 +1,25 @@
+Package: zebu
+Type: Package
+Title: Local Association Measures
+Version: 0.1.2
+Date: 2017-10-21
+Authors@R: c(
+    person("Olivier M. F.", "Martin", email = "oliviermfmartin@gmail.com", role = c("aut", "cre")),
+    person("Michel", "Ducher", email = "michel.ducher@chu-lyon.fr", role = "aut"))
+Author: Olivier M. F. Martin [aut, cre], 
+    Michel Ducher [aut]
+Maintainer: Olivier M. F. Martin <oliviermfmartin@gmail.com>
+Description: Implements the estimation of local (and global) association measures: Ducher's Z, pointwise mutual information and normalized pointwise mutual information. The significance of local (and global) association is accessed using p-values estimated by permutations. Finally, using local association subgroup analysis, it identifies if the association between variables is dependent on the value of another variable.
+URL: http://github.com/oliviermfmartin/zebu
+BugReports: https://github.com/oliviermfmartin/zebu/issues
+Depends: R (>= 2.10)
+License: GPL-3
+LazyData: true
+Imports: ggplot2, foreach, iterators, reshape2, plyr, utils
+Suggests: knitr, rmarkdown, devtools
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-10-24 11:46:12 UTC; olivier
+Repository: CRAN
+Date/Publication: 2017-10-24 14:05:08 UTC

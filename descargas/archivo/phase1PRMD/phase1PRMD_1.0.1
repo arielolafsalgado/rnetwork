@@ -1,0 +1,30 @@
+Package: phase1PRMD
+Type: Package
+Date: 2019-01-29
+Title: Personalized Repeated Measurement Design for Phase I Clinical
+        Trials
+Version: 1.0.1
+Author: Lu Zhang, Jun Yin
+Maintainer: Lu Zhang <luzhangstat@gmail.com>
+Description: Implements Bayesian phase I repeated measurement design that 
+    accounts for multidimensional toxicity endpoints and longitudinal efficacy 
+    measure from multiple treatment cycles. The package provides flags to 
+    fit a variety of model-based phase I design, including 1 stage models with
+    or without individualized dose modification, 3-stage models with or without
+    individualized dose modification, etc. Functions are provided to recommend 
+    dosage selection based on the data collected in the available patient cohorts 
+    and to simulate trial characteristics given design parameters. 
+    Yin, Jun, et al. (2017) <doi:10.1002/sim.7134>. 
+SystemRequirements: JAGS (http://mcmc-jags.sourceforge.net)
+Depends: R (>= 3.0.0), coda (>= 0.13), ggplot2, stats
+Encoding: UTF-8
+LazyData: true
+Imports: rjags, arrayhelpers, phase1RMD, MASS, reshape2, dplyr, plyr,
+        RColorBrewer, gridExtra, kableExtra, knitr
+RoxygenNote: 6.1.1
+Suggests:
+License: GPL (>= 2)
+NeedsCompilation: no
+Packaged: 2019-01-30 04:42:11 UTC; luzhang
+Repository: CRAN
+Date/Publication: 2019-02-03 17:00:03 UTC

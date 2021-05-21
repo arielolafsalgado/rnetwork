@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package copula</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Multivariate Dependence with Copulas [R package copula version 1.0-0]" />
+<meta name="citation_author1" content="Marius Hofert" />
+<meta name="citation_author2" content="Ivan Kojadinovic" />
+<meta name="citation_author3" content="Martin Maechler" />
+<meta name="citation_author4" content="Jun Yan" />
+<meta name="citation_publication_date" content="2020-05-29" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=copula" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=copula" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="copula: Multivariate Dependence with Copulas" />
+<meta name="og:description" content="Classes (S4) of commonly used elliptical, Archimedean, extreme-value and other copula families, as well as their rotations, mixtures and asymmetrizations. Nested Archimedean copulas, related tools and special functions. Methods for density, distribution, random number generation, bivariate dependence measures, Rosenblatt transform, Kendall distribution function, perspective and contour plots. Fitting of copula models with potentially partly fixed parameters, including standard errors. Serial independence tests, copula specification tests (independence, exchangeability, radial symmetry, extreme-value dependence, goodness-of-fit) and model selection based on cross-validation. Empirical copula, smoothed versions, and non-parametric estimators of the Pickands dependence function." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=copula" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>copula: Multivariate Dependence with Copulas</h2>
+<p>Classes (S4) of commonly used elliptical, Archimedean,
+ extreme-value and other copula families, as well as their rotations,
+ mixtures and asymmetrizations. Nested Archimedean copulas, related
+ tools and special functions. Methods for density, distribution, random
+ number generation, bivariate dependence measures, Rosenblatt transform,
+ Kendall distribution function, perspective and contour plots. Fitting of
+ copula models with potentially partly fixed parameters, including
+ standard errors. Serial independence tests, copula specification tests
+ (independence, exchangeability, radial symmetry, extreme-value
+ dependence, goodness-of-fit) and model selection based on
+ cross-validation. Empirical copula, smoothed versions, and
+ non-parametric estimators of the Pickands dependence function.</p>
+<table summary="Package copula summary">
+<tr>
+<td>Version:</td>
+<td>1.0-0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>stats, graphics, methods, stats4, <a href="../Matrix/index.html">Matrix</a>, <a href="../lattice/index.html">lattice</a>, <a href="../colorspace/index.html">colorspace</a>, <a href="../gsl/index.html">gsl</a>, <a href="../ADGofTest/index.html">ADGofTest</a>, <a href="../stabledist/index.html">stabledist</a> (&ge; 0.6-4), <a href="../mvtnorm/index.html">mvtnorm</a>, <a href="../pcaPP/index.html">pcaPP</a>, <a href="../pspline/index.html">pspline</a>, <a href="../numDeriv/index.html">numDeriv</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../MASS/index.html">MASS</a>, <a href="../KernSmooth/index.html">KernSmooth</a>, <a href="../sfsmisc/index.html">sfsmisc</a>, <a href="../scatterplot3d/index.html">scatterplot3d</a>, <a href="../Rmpfr/index.html">Rmpfr</a>, <a href="../bbmle/index.html">bbmle</a>, <a href="../knitr/index.html">knitr</a>, <a href="../abind/index.html">abind</a>, <a href="../crop/index.html">crop</a>, <a href="../gridExtra/index.html">gridExtra</a>, <a href="../lcopula/index.html">lcopula</a>, <a href="../mev/index.html">mev</a>, <a href="../mvnormtest/index.html">mvnormtest</a>, parallel, <a href="../partitions/index.html">partitions</a>, <a href="../polynom/index.html">polynom</a>, <a href="../qrng/index.html">qrng</a>, <a href="../randtoolbox/index.html">randtoolbox</a>, <a href="../rugarch/index.html">rugarch</a>, <a href="../Runuran/index.html">Runuran</a>, <a href="../tseries/index.html">tseries</a>, <a href="../VGAM/index.html">VGAM</a>, <a href="../VineCopula/index.html">VineCopula</a>, <a href="../zoo/index.html">zoo</a></td>
+</tr>
+<tr>
+<td>Enhances:</td>
+<td><a href="../nor1mix/index.html">nor1mix</a>, <a href="../copulaData/index.html">copulaData</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-05-29</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Marius Hofert <a href="https://orcid.org/0000-0001-8009-4665"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Ivan Kojadinovic <a href="https://orcid.org/0000-0002-2903-1543"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Martin Maechler <a href="https://orcid.org/0000-0002-8685-9910"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Jun Yan <a href="https://orcid.org/0000-0003-4401-7296"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Johanna G. Nešlehová
+    <a href="https://orcid.org/0000-0001-9634-4796"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb]
+    (evTestK()),
+  Rebecca Morger [ctb] (fitCopula.ml(): code for free mixCopula weight
+    parameters)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Martin Maechler  &#x3c;&#x6d;&#x61;&#x65;&#x63;&#x68;&#x6c;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x73;&#x74;&#x61;&#x74;&#x2e;&#x6d;&#x61;&#x74;&#x68;&#x2e;&#x65;&#x74;&#x68;&#x7a;&#x2e;&#x63;&#x68;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL (&ge; 3)</a> | file <a href="LICENCE">LICENCE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://copula.r-forge.r-project.org/">http://copula.r-forge.r-project.org/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">copula citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news.html">NEWS</a> <a href="ChangeLog">ChangeLog</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Distributions.html">Distributions</a>, <a href="../../views/ExtremeValue.html">ExtremeValue</a>, <a href="../../views/Finance.html">Finance</a>, <a href="../../views/Multivariate.html">Multivariate</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_copula.html">copula results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package copula downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="copula.pdf"> copula.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/AC_Liouville.html">Archimedean Liouville Copulas</a><br/>
+<a href="vignettes/AR_Clayton.html">MLE and Quantile Evaluation for a Clayton AR(1) Model with Student Marginals</a><br/>
+<a href="vignettes/GIG.html">Generalized Inverse Gaussian Archimedean Copulas</a><br/>
+<a href="vignettes/HAXC.html">Hierarchical Archimax Copulas</a><br/>
+<a href="vignettes/NALC.html">Nested Archimedean Lévy Copulas</a><br/>
+<a href="vignettes/copula_GARCH.html">The Copula GARCH Model</a><br/>
+<a href="vignettes/dNAC.html">Densities of Two-Level Nested Archimedean Copulas</a><br/>
+<a href="vignettes/empiricial_copulas.html">Exploring Empirical Copulas</a><br/>
+<a href="vignettes/logL_visualization.html">Log-Likelihood Visualization for Archimedean Copulas</a><br/>
+<a href="vignettes/qrng.html">Quasi-Random Numbers for Copula Models</a><br/>
+<a href="vignettes/wild_animals.html">Wild Animals: Examples of Nonstandard Copulas</a><br/>
+<a href="vignettes/Frank-Rmpfr.pdf">Numerically stable Frank Copulas via Multiprecision (Rmpfr)</a><br/>
+<a href="vignettes/nacopula-pkg.pdf">Nested Archimedean Copulas Meet R</a><br/>
+<a href="vignettes/rhoAMH-dilog.pdf">Beautiful Spearman's Rho for AMH Copula</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/copula_1.0-0.tar.gz"> copula_1.0-0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/copula_1.0-0.zip">copula_1.0-0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/copula_1.0-0.zip">copula_1.0-0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/copula_1.0-0.zip">copula_1.0-0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/copula_1.0-0.tgz">copula_1.0-0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/copula_1.0-0.tgz">copula_1.0-0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/copula"> copula archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package copula reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../BivarP/index.html">BivarP</a>, <a href="../censorcopula/index.html">censorcopula</a>, <a href="../ClusterStability/index.html">ClusterStability</a>, <a href="../CoClust/index.html">CoClust</a>, <a href="../CoImp/index.html">CoImp</a>, <a href="../CopCTS/index.html">CopCTS</a>, <a href="../COST/index.html">COST</a>, <a href="../gofCopula/index.html">gofCopula</a>, <a href="../HAC/index.html">HAC</a>, <a href="../HMMcopula/index.html">HMMcopula</a>, <a href="../ipptoolbox/index.html">ipptoolbox</a>, <a href="../lcopula/index.html">lcopula</a>, <a href="../nCopula/index.html">nCopula</a>, <a href="../NCSCopula/index.html">NCSCopula</a>, <a href="../RGENERATEPREC/index.html">RGENERATEPREC</a>, <a href="../VC2copula/index.html">VC2copula</a>, <a href="../vfcp/index.html">vfcp</a>, <a href="../vines/index.html">vines</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../bivgeom/index.html">bivgeom</a>, <a href="../bivquant/index.html">bivquant</a>, <a href="../BSL/index.html">BSL</a>, <a href="../cascsim/index.html">cascsim</a>, <a href="../cds/index.html">cds</a>, <a href="../ClustImpute/index.html">ClustImpute</a>, <a href="../CopulaCenR/index.html">CopulaCenR</a>, <a href="../copulaedas/index.html">copulaedas</a>, <a href="../depcoeff/index.html">depcoeff</a>, <a href="../drought/index.html">drought</a>, <a href="../EFDR/index.html">EFDR</a>, <a href="../ExtremalDep/index.html">ExtremalDep</a>, <a href="../ExtremeRisks/index.html">ExtremeRisks</a>, <a href="../flood/index.html">flood</a>, <a href="../gamCopula/index.html">gamCopula</a>, <a href="../GJRM/index.html">GJRM</a>, <a href="../MHTcop/index.html">MHTcop</a>, <a href="../multinma/index.html">multinma</a>, <a href="../mvnormalTest/index.html">mvnormalTest</a>, <a href="../nvmix/index.html">nvmix</a>, <a href="../Omisc/index.html">Omisc</a>, <a href="../PAsso/index.html">PAsso</a>, <a href="../pgee.mixed/index.html">pgee.mixed</a>, <a href="../PortRisk/index.html">PortRisk</a>, <a href="../qad/index.html">qad</a>, <a href="../qrng/index.html">qrng</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/scBFA.html"><span class="BioC">scBFA</span></a>, <a href="../sgee/index.html">sgee</a>, <a href="../surrosurv/index.html">surrosurv</a>, <a href="../survivalMPLdc/index.html">survivalMPLdc</a>, <a href="../svars/index.html">svars</a>, <a href="../zipfextR/index.html">zipfextR</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../copBasic/index.html">copBasic</a>, <a href="../docopulae/index.html">docopulae</a>, <a href="../gnn/index.html">gnn</a>, <a href="../intcensROC/index.html">intcensROC</a>, <a href="../kyotil/index.html">kyotil</a>, <a href="../mbbefd/index.html">mbbefd</a>, <a href="../npcp/index.html">npcp</a>, <a href="../qrmtools/index.html">qrmtools</a>, <a href="../robustrank/index.html">robustrank</a>, <a href="../SimDesign/index.html">SimDesign</a>, <a href="../simsalapar/index.html">simsalapar</a>, <a href="../simsem/index.html">simsem</a>, <a href="../univariateML/index.html">univariateML</a>, <a href="../wdm/index.html">wdm</a>, <a href="../zenplots/index.html">zenplots</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=copula"><samp>https://CRAN.R-project.org/package=copula</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,35 @@
+Package: ecr
+Type: Package
+Title: Evolutionary Computing in R
+Description: Provides a powerful framework for evolutionary
+    computing in R. The user can easily construct powerful evolutionary algorithms
+    for tackling both single- and multi-objective problems by plugging in different
+    predefined evolutionary building blocks, e. g., operators for mutation,
+    recombination and selection with just a few lines of code. Your problem
+    cannot be easily solved with a standard EA which works on real-valued vectors,
+    permutations or binary strings? No problem, 'ecr' has been developed with that in
+    mind. Extending the framework with own operators is also possible. Additionally
+    there are various comfort functions, like monitoring, logging and more.
+Version: 1.0
+Encoding: UTF-8
+Date: 2016-08-22
+Authors@R: c(person("Jakob", "Bossek", email = "j.bossek@gmail.com", role =
+    c("aut", "cre")), person("Dirk", "Surmann", email = "surmann@statistik.tu-dortmund.de", role = "ctb"))
+Maintainer: Jakob Bossek <j.bossek@gmail.com>
+License: BSD_2_clause + file LICENSE
+URL: https://github.com/jakobbossek/ecr
+BugReports: https://github.com/jakobbossek/ecr/issues
+Depends: ParamHelpers (>= 1.8), BBmisc (>= 1.6), smoof (>= 1.4),
+        ggplot2 (>= 1.0.0)
+Imports: checkmate (>= 1.1), parallelMap (>= 1.1), reshape2 (>= 1.4.1),
+        gridExtra (>= 0.9.1)
+Suggests: testthat (>= 0.9.1)
+ByteCompile: yes
+LazyData: yes
+RoxygenNote: 5.0.1
+NeedsCompilation: yes
+Packaged: 2016-08-23 10:21:07 UTC; jboss
+Author: Jakob Bossek [aut, cre],
+  Dirk Surmann [ctb]
+Repository: CRAN
+Date/Publication: 2016-08-23 15:25:09

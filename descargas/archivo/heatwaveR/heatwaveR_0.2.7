@@ -1,0 +1,31 @@
+Package: heatwaveR
+Version: 0.2.7
+Date: 2018-05-28
+Title: Detect Heatwaves and Cold-Spells
+Description: The different methods of defining and detecting extreme events, known as heatwaves or cold-spells in both air and water temperature data are encompassed within this package. These detection algorithms may be used on non-temperature data as well however, this is not catered for explicitly here as no use of this technique in the literature currently exists.
+Type: Package
+Authors@R: c(person("Robert W.", "Schlegel", role = c("aut", "cre", "ctb"),
+    email = "robwschlegel@gmail.com",
+    comment = c(ORCID = "0000-0002-0705-1287")),
+    person("Albertus J.", "Smit", role = c("aut", "ctb"),
+    comment = c(ORCID = "0000-0002-3799-6126")))
+Maintainer: Robert W. Schlegel <robwschlegel@gmail.com>
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+RoxygenNote: 6.0.1
+Depends: R (>= 3.00), data.table, ggplot2
+Suggests: tidyverse, testthat, knitr, rmarkdown
+Imports: tibble, lubridate, dplyr, stats, utils, zoo, grid, RcppRoll,
+        Rcpp (>= 0.12.16)
+LinkingTo: Rcpp, RcppArmadillo
+NeedsCompilation: yes
+VignetteBuilder: knitr
+URL: https://robwschlegel.github.io/heatwaveR/index.html
+Packaged: 2018-05-29 11:51:45 UTC; rws
+Author: Robert W. Schlegel [aut, cre, ctb]
+    (<https://orcid.org/0000-0002-0705-1287>),
+  Albertus J. Smit [aut, ctb] (<https://orcid.org/0000-0002-3799-6126>)
+Repository: CRAN
+Date/Publication: 2018-05-30 08:13:00 UTC

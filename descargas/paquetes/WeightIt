@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package WeightIt</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Weighting for Covariate Balance in Observational Studies [R package WeightIt version 0.10.2]" />
+<meta name="citation_author" content="Noah Greifer" />
+<meta name="citation_publication_date" content="2020-08-27" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=WeightIt" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=WeightIt" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="WeightIt: Weighting for Covariate Balance in Observational Studies" />
+<meta name="og:description" content="Generates weights to form equivalent groups in observational studies with point or longitudinal treatments by easing and extending the functionality of the R packages 'twang' for generalized boosted modeling (McCaffrey, Ridgeway &amp;amp; Morral, 2004) &amp;lt;&lt;a href=&quot;https://doi.org/10.1037%2F1082-989X.9.4.403&quot;&gt;doi:10.1037/1082-989X.9.4.403&lt;/a&gt;&amp;gt;, 'CBPS' for covariate balancing propensity score weighting (Imai &amp;amp; Ratkovic, 2014) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Frssb.12027&quot;&gt;doi:10.1111/rssb.12027&lt;/a&gt;&amp;gt;, 'ebal' for entropy balancing (Hainmueller, 2012) &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fpan%2Fmpr025&quot;&gt;doi:10.1093/pan/mpr025&lt;/a&gt;&amp;gt;, 'optweight' for optimization-based weights (Zubizarreta, 2015) &amp;lt;&lt;a href=&quot;https://doi.org/10.1080%2F01621459.2015.1023805&quot;&gt;doi:10.1080/01621459.2015.1023805&lt;/a&gt;&amp;gt;, 'ATE' for empirical balancing calibration weighting (Chan, Yam, &amp;amp; Zhang, 2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Frssb.12129&quot;&gt;doi:10.1111/rssb.12129&lt;/a&gt;&amp;gt;, and 'SuperLearner' for stacked machine learning-based propensity scores (Pirracchio, Petersen, &amp;amp; van der Laan, 2015) &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Faje%2Fkwu253&quot;&gt;doi:10.1093/aje/kwu253&lt;/a&gt;&amp;gt;. Also allows for assessment of weights and checking of covariate balance by interfacing directly with 'cobalt'." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=WeightIt" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>WeightIt: Weighting for Covariate Balance in Observational Studies</h2>
+<p>Generates weights to form equivalent groups in observational studies with point or longitudinal treatments by easing and extending the functionality of the R packages 'twang' for generalized boosted modeling (McCaffrey, Ridgeway &amp; Morral, 2004) &lt;<a href="https://doi.org/10.1037%2F1082-989X.9.4.403">doi:10.1037/1082-989X.9.4.403</a>&gt;, 'CBPS' for covariate balancing propensity score weighting (Imai &amp; Ratkovic, 2014) &lt;<a href="https://doi.org/10.1111%2Frssb.12027">doi:10.1111/rssb.12027</a>&gt;, 'ebal' for entropy balancing (Hainmueller, 2012) &lt;<a href="https://doi.org/10.1093%2Fpan%2Fmpr025">doi:10.1093/pan/mpr025</a>&gt;, 'optweight' for optimization-based weights (Zubizarreta, 2015) &lt;<a href="https://doi.org/10.1080%2F01621459.2015.1023805">doi:10.1080/01621459.2015.1023805</a>&gt;, 'ATE' for empirical balancing calibration weighting (Chan, Yam, &amp; Zhang, 2016) &lt;<a href="https://doi.org/10.1111%2Frssb.12129">doi:10.1111/rssb.12129</a>&gt;, and 'SuperLearner' for stacked machine learning-based propensity scores (Pirracchio, Petersen, &amp; van der Laan, 2015) &lt;<a href="https://doi.org/10.1093%2Faje%2Fkwu253">doi:10.1093/aje/kwu253</a>&gt;. Also allows for assessment of weights and checking of covariate balance by interfacing directly with 'cobalt'.</p>
+<table summary="Package WeightIt summary">
+<tr>
+<td>Version:</td>
+<td>0.10.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../cobalt/index.html">cobalt</a> (&ge; 4.2.2), <a href="../ggplot2/index.html">ggplot2</a> (&ge; 3.0.0), <a href="../crayon/index.html">crayon</a>, <a href="../backports/index.html">backports</a> (&ge;
+1.1.8)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../twang/index.html">twang</a> (&ge; 1.5), <a href="../CBPS/index.html">CBPS</a> (&ge; 0.18), <a href="../ebal/index.html">ebal</a> (&ge; 0.1-6), <a href="../ATE/index.html">ATE</a> (&ge;
+0.2.0), <a href="../optweight/index.html">optweight</a> (&ge; 0.2.4), <a href="../SuperLearner/index.html">SuperLearner</a> (&ge; 2.0-25), <a href="../mlogit/index.html">mlogit</a> (&ge; 1.1.0), <a href="../mnlogit/index.html">mnlogit</a> (&ge; 1.2.6), <a href="../dfidx/index.html">dfidx</a>, <a href="../MNP/index.html">MNP</a> (&ge; 3.1-0), <a href="../brglm2/index.html">brglm2</a> (&ge; 0.5.2), <a href="../osqp/index.html">osqp</a> (&ge; 0.6.0.3), <a href="../survey/index.html">survey</a>, <a href="../jtools/index.html">jtools</a> (&ge; 2.0.2), <a href="../boot/index.html">boot</a>, <a href="../MASS/index.html">MASS</a>, <a href="../gbm/index.html">gbm</a> (&ge; 2.1.3), <a href="../misaem/index.html">misaem</a> (&ge; 1.0.0), <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-08-27</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Noah Greifer <a href="https://orcid.org/0000-0003-3067-7154"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Noah Greifer  &#x3c;&#x6e;&#x6f;&#x61;&#x68;&#x2e;&#x67;&#x72;&#x65;&#x69;&#x66;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ngreifer/WeightIt/issues">https://github.com/ngreifer/WeightIt/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://ngreifer.github.io/WeightIt/">https://ngreifer.github.io/WeightIt/</a>,
+<a href="https://github.com/ngreifer/WeightIt">https://github.com/ngreifer/WeightIt</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_WeightIt.html">WeightIt results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package WeightIt downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="WeightIt.pdf"> WeightIt.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/WeightIt.html">Using WeightIt to Estimate Balancing Weights</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/WeightIt_0.10.2.tar.gz"> WeightIt_0.10.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/WeightIt_0.10.2.zip">WeightIt_0.10.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/WeightIt_0.10.2.zip">WeightIt_0.10.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/WeightIt_0.10.2.zip">WeightIt_0.10.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/WeightIt_0.10.2.tgz">WeightIt_0.10.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/WeightIt_0.10.2.tgz">WeightIt_0.10.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/WeightIt"> WeightIt archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package WeightIt reverse dependencies">
+<tr>
+<td>Reverse&nbsp;depends:</td>
+<td><a href="../MatchThem/index.html">MatchThem</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../CIMTx/index.html">CIMTx</a>, <a href="../mvGPS/index.html">mvGPS</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../cobalt/index.html">cobalt</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=WeightIt"><samp>https://CRAN.R-project.org/package=WeightIt</samp></a>
+to link to this page.</p>
+</body>
+</html>

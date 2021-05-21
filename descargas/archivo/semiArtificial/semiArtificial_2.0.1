@@ -1,0 +1,25 @@
+Package: semiArtificial
+Title: Generator of Semi-Artificial Data
+Version: 2.0.1
+Date: 2015-09-03
+Author: Marko Robnik-Sikonja
+Maintainer: Marko Robnik-Sikonja <marko.robnik@fri.uni-lj.si>
+Description: Package semiArtificial contains methods to generate and evaluate semi-artificial data sets. 
+ Based on a given data set different methods learn data properties using machine learning algorithms and
+ generate new data with the same properties.
+ The package currently includes the following data generator:
+  -a RBF network based generator using rbfDDA from RSNNS package,
+  -a Random Forest based generator for both classification and regression problems
+  -a density forest based generator for unsupervised data
+ Data evaluation support tools include:
+  -single attribute based statistical evaluation: mean, median, standard deviation, skewness, kurtosis, medcouple, L/RMC, KS test, Hellinger distance
+  -evaluation based on clustering using Adjusted Rand Index (ARI) and FM
+  -evaluation based on classification performance with various learning models, eg, random forests.
+License: GPL-3
+URL: http://lkm.fri.uni-lj.si/rmarko/software/
+Imports:
+        CORElearn,RSNNS,MASS,nnet,cluster,mclust,fpc,stats,timeDate,robustbase,dendextend,ks,logspline,methods
+NeedsCompilation: no
+Packaged: 2015-09-03 21:28:10 UTC; rmarko
+Repository: CRAN
+Date/Publication: 2015-09-04 01:11:01

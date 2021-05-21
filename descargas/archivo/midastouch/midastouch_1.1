@@ -1,0 +1,28 @@
+Package: midastouch
+Type: Package
+Version: 1.1
+Title: Multiple Imputation by Distance Aided Donor Selection
+Date: 2016-01-07
+Authors@R: c(person("Philipp", "Gaffert", role = c("aut","cre"),
+    email = "philipp.gaffert@web.de"),
+    person("Florian", "Meinfelder", role = "aut",
+    email = "florian.meinfelder@uni-bamberg.de"),
+    person("Volker", "Bosch", role = "aut",
+    email = "volker.bosch@gfk.com"))
+Maintainer: Philipp Gaffert <philipp.gaffert@web.de>
+Depends: R (>= 3.2.0)
+Imports: utils
+Suggests: mice
+Description: Contains the function mice.impute.midastouch. Technically this function is to be run from within the R::mice package (van Buuren et al. 2011), type ??mice. It substitutes the method "pmm" within mice by "midastouch". The authors have shown that midastouch is superior to default pmm (see URL). Many ideas are based on Siddique / Belin 2008 (MIDAS).
+License: GPL-2 | GPL-3
+LazyLoad: yes
+LazyData: yes
+URL:
+        https://www.uni-bamberg.de/fileadmin/uni/fakultaeten/sowi_lehrstuehle/statistik/Personen/Dateien_Florian/properPMM.pdf
+NeedsCompilation: no
+Packaged: 2016-01-12 15:25:17 UTC; Phil
+Author: Philipp Gaffert [aut, cre],
+  Florian Meinfelder [aut],
+  Volker Bosch [aut]
+Repository: CRAN
+Date/Publication: 2016-01-12 22:04:14

@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package ICAMS</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=ICAMS" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="ICAMS: In-depth Characterization and Analysis of Mutational Signatures ('ICAMS')" />
+<meta name="og:description" content="Analysis and visualization of experimentally elucidated mutational signatures &amp;ndash; the kind of analysis and visualization in Boot et al., &quot;In-depth characterization of the cisplatin mutational signature in human cell lines and in esophageal and liver tumors&quot;, Genome Research 2018, &amp;lt;&lt;a href=&quot;https://doi.org/10.1101%2Fgr.230219.117&quot;&gt;doi:10.1101/gr.230219.117&lt;/a&gt;&amp;gt; and &quot;Characterization of colibactin-associated mutational signature in an Asian oral squamous cell carcinoma and in other mucosal tumor types&quot;, Genome Research 2020 &amp;lt;&lt;a href=&quot;https://doi.org/10.1101%2Fgr.255620.119&quot;&gt;doi:10.1101/gr.255620.119&lt;/a&gt;&amp;gt;. 'ICAMS' stands for In-depth Characterization and Analysis of Mutational Signatures. 'ICAMS' has functions to read in variant call files (VCFs) and to collate the corresponding catalogs of mutational spectra and to analyze and plot catalogs of mutational spectra and signatures. Handles both &quot;counts-based&quot; and &quot;density-based&quot; catalogs of mutational spectra or signatures." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=ICAMS" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>ICAMS: In-depth Characterization and Analysis of Mutational Signatures
+('ICAMS')</h2>
+<p>Analysis and visualization of experimentally elucidated mutational
+    signatures &ndash; the kind of analysis and visualization in Boot et al.,
+    "In-depth characterization of the cisplatin mutational signature in 
+    human cell lines and in esophageal and liver tumors", Genome Research 2018, 
+    &lt;<a href="https://doi.org/10.1101%2Fgr.230219.117">doi:10.1101/gr.230219.117</a>&gt; and
+    "Characterization of colibactin-associated mutational signature in an 
+    Asian oral squamous cell carcinoma and in other mucosal tumor types",
+    Genome Research 2020 &lt;<a href="https://doi.org/10.1101%2Fgr.255620.119">doi:10.1101/gr.255620.119</a>&gt;.
+    'ICAMS' stands for In-depth Characterization 
+    and Analysis of Mutational Signatures. 'ICAMS' has functions to read in 
+    variant call files (VCFs) and to collate the corresponding catalogs of 
+    mutational spectra and to analyze and plot catalogs of mutational spectra
+    and signatures. Handles both "counts-based" and "density-based" catalogs
+    of mutational spectra or signatures.</p>
+<table summary="Package ICAMS summary">
+<tr>
+<td>Version:</td>
+<td>2.2.4</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="http://www.bioconductor.org/packages/release/bioc/html/Biostrings.html"><span class="BioC">Biostrings</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/BSgenome.html"><span class="BioC">BSgenome</span></a>, <a href="../data.table/index.html">data.table</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/GenomeInfoDb.html"><span class="BioC">GenomeInfoDb</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/GenomicRanges.html"><span class="BioC">GenomicRanges</span></a>, graphics, grDevices, <a href="http://www.bioconductor.org/packages/release/bioc/html/IRanges.html"><span class="BioC">IRanges</span></a>, <a href="../RColorBrewer/index.html">RColorBrewer</a>, stats, <a href="../stringi/index.html">stringi</a>, utils, <a href="../zip/index.html">zip</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="http://www.bioconductor.org/packages/release/data/annotation/html/BSgenome.Hsapiens.1000genomes.hs37d5.html"><span class="BioC">BSgenome.Hsapiens.1000genomes.hs37d5</span></a>, <a href="http://www.bioconductor.org/packages/release/data/annotation/html/BSgenome.Hsapiens.UCSC.hg38.html"><span class="BioC">BSgenome.Hsapiens.UCSC.hg38</span></a>, <a href="http://www.bioconductor.org/packages/release/data/annotation/html/BSgenome.Mmusculus.UCSC.mm10.html"><span class="BioC">BSgenome.Mmusculus.UCSC.mm10</span></a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-22</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Steve Rozen, Nanhai Jiang, Arnoud Boot, Mo Liu</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Steve Rozen  &#x3c;&#x73;&#x74;&#x65;&#x76;&#x65;&#x72;&#x6f;&#x7a;&#x65;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/steverozen/ICAMS/issues">https://github.com/steverozen/ICAMS/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a> | file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/steverozen/ICAMS">https://github.com/steverozen/ICAMS</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_ICAMS.html">ICAMS results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package ICAMS downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="ICAMS.pdf"> ICAMS.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/ICAMS_2.2.4.tar.gz"> ICAMS_2.2.4.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/ICAMS_2.2.4.zip">ICAMS_2.2.4.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/ICAMS_2.2.4.zip">ICAMS_2.2.4.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/ICAMS_2.2.4.zip">ICAMS_2.2.4.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/ICAMS_2.2.4.tgz">ICAMS_2.2.4.tgz</a>, r-oldrel: not available </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/ICAMS"> ICAMS archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=ICAMS"><samp>https://CRAN.R-project.org/package=ICAMS</samp></a>
+to link to this page.</p>
+</body>
+</html>

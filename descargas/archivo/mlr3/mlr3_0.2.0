@@ -1,0 +1,106 @@
+Package: mlr3
+Title: Machine Learning in R - Next Generation
+Version: 0.2.0
+Authors@R: 
+    c(person(given = "Michel",
+             family = "Lang",
+             role = c("cre", "aut"),
+             email = "michellang@gmail.com",
+             comment = c(ORCID = "0000-0001-9754-0393")),
+      person(given = "Bernd",
+             family = "Bischl",
+             role = "aut",
+             email = "bernd_bischl@gmx.net",
+             comment = c(ORCID = "0000-0001-6002-6980")),
+      person(given = "Jakob",
+             family = "Richter",
+             role = "aut",
+             email = "jakob1richter@gmail.com",
+             comment = c(ORCID = "0000-0003-4481-5554")),
+      person(given = "Patrick",
+             family = "Schratz",
+             role = "aut",
+             email = "patrick.schratz@gmail.com",
+             comment = c(ORCID = "0000-0003-0748-6624")),
+      person(given = "Giuseppe",
+             family = "Casalicchio",
+             role = "ctb",
+             email = "giuseppe.casalicchio@stat.uni-muenchen.de",
+             comment = c(ORCID = "0000-0001-5324-5966")),
+      person(given = "Stefan",
+             family = "Coors",
+             role = "ctb",
+             email = "mail@stefancoors.de",
+             comment = c(ORCID = "0000-0002-7465-2146")),
+      person(given = "Quay",
+             family = "Au",
+             role = "ctb",
+             email = "quayau@gmail.com",
+             comment = c(ORCID = "0000-0002-5252-8902")),
+      person(given = "Martin",
+             family = "Binder",
+             role = "aut",
+             email = "mlr.developer@mb706.com"))
+Description: Efficient, object-oriented programming on the
+    building blocks of machine learning. Provides 'R6' objects for tasks,
+    learners, resamplings, and measures. The package is geared towards
+    scalability and larger datasets by supporting parallelization and
+    out-of-memory data-backends like databases. While 'mlr3' focuses on
+    the core computational operations, add-on packages provide additional
+    functionality.
+License: LGPL-3
+URL: https://mlr3.mlr-org.com, https://github.com/mlr-org/mlr3
+BugReports: https://github.com/mlr-org/mlr3/issues
+Depends: R (>= 3.1.0)
+Imports: R6 (>= 2.4.1), backports, checkmate (>= 2.0.0), data.table (>=
+        1.12.8), digest, lgr (>= 0.3.4), mlbench, mlr3measures (>=
+        0.1.3), mlr3misc (>= 0.2.0), paradox (>= 0.2.0), uuid
+Suggests: Matrix, bibtex, callr, datasets, evaluate, future (>=
+        1.16.0), future.apply (>= 1.4.0), future.callr, mlr3data,
+        progressr, rpart, testthat
+RdMacros: mlr3misc
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: no
+RoxygenNote: 7.1.0
+Collate: 'mlr_reflections.R' 'BenchmarkResult.R' 'DataBackend.R'
+        'DataBackendCbind.R' 'DataBackendDataTable.R'
+        'DataBackendMatrix.R' 'DataBackendRbind.R'
+        'DataBackendRename.R' 'Learner.R' 'LearnerClassif.R'
+        'mlr_learners.R' 'LearnerClassifDebug.R'
+        'LearnerClassifFeatureless.R' 'LearnerClassifRpart.R'
+        'LearnerRegr.R' 'LearnerRegrFeatureless.R' 'LearnerRegrRpart.R'
+        'Measure.R' 'MeasureClassif.R' 'mlr_measures.R'
+        'MeasureClassifCosts.R' 'MeasureDebug.R' 'MeasureElapsedTime.R'
+        'MeasureOOBError.R' 'MeasureRegr.R' 'MeasureSelectedFeatures.R'
+        'MeasureSimple.R' 'Prediction.R' 'PredictionClassif.R'
+        'PredictionRegr.R' 'ResampleResult.R' 'Resampling.R'
+        'mlr_resamplings.R' 'ResamplingBootstrap.R' 'ResamplingCV.R'
+        'ResamplingCustom.R' 'ResamplingHoldout.R'
+        'ResamplingInsample.R' 'ResamplingRepeatedCV.R'
+        'ResamplingSubsampling.R' 'Task.R' 'TaskSupervised.R'
+        'TaskClassif.R' 'mlr_tasks.R' 'TaskClassif_german_credit.R'
+        'TaskClassif_iris.R' 'TaskClassif_pima.R' 'TaskClassif_sonar.R'
+        'TaskClassif_spam.R' 'TaskClassif_wine.R' 'TaskClassif_zoo.R'
+        'TaskGenerator.R' 'mlr_task_generators.R'
+        'TaskGenerator2DNormals.R' 'TaskGeneratorFriedman1.R'
+        'TaskGeneratorSmiley.R' 'TaskGeneratorXor.R' 'TaskRegr.R'
+        'TaskRegr_boston_housing.R' 'TaskRegr_mtcars.R'
+        'TaskUnsupervised.R' 'Task_cbind.R' 'Task_rbind.R'
+        'as_data_backend.R' 'assertions.R' 'auto_convert.R'
+        'benchmark.R' 'benchmark_grid.R' 'default_measures.R'
+        'deprecated.R' 'fix_factor_levels.R' 'helper.R'
+        'mlr_coercions.R' 'mlr_sugar.R' 'predict.R' 'reexports.R'
+        'resample.R' 'worker.R' 'zzz.R'
+Packaged: 2020-04-16 07:00:18 UTC; lang
+Author: Michel Lang [cre, aut] (<https://orcid.org/0000-0001-9754-0393>),
+  Bernd Bischl [aut] (<https://orcid.org/0000-0001-6002-6980>),
+  Jakob Richter [aut] (<https://orcid.org/0000-0003-4481-5554>),
+  Patrick Schratz [aut] (<https://orcid.org/0000-0003-0748-6624>),
+  Giuseppe Casalicchio [ctb] (<https://orcid.org/0000-0001-5324-5966>),
+  Stefan Coors [ctb] (<https://orcid.org/0000-0002-7465-2146>),
+  Quay Au [ctb] (<https://orcid.org/0000-0002-5252-8902>),
+  Martin Binder [aut]
+Maintainer: Michel Lang <michellang@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-04-17 13:40:06 UTC

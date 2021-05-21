@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package SuperGauss</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Superfast Likelihood Inference for Stationary Gaussian Time Series [R package SuperGauss version 2.0.1]" />
+<meta name="citation_author1" content="Yun Ling" />
+<meta name="citation_author2" content="Martin Lysy" />
+<meta name="citation_publication_date" content="2020-10-03" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=SuperGauss" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=SuperGauss" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="SuperGauss: Superfast Likelihood Inference for Stationary Gaussian Time Series" />
+<meta name="og:description" content="Likelihood evaluations for stationary Gaussian time series are typically obtained via the Durbin-Levinson algorithm, which scales as O(n^2) in the number of time series observations. This package provides a &quot;superfast&quot; O(n log^2 n) algorithm written in C++, crossing over with Durbin-Levinson around n = 300. Efficient implementations of the score and Hessian functions are also provided, leading to superfast versions of inference algorithms such as Newton-Raphson and Hamiltonian Monte Carlo. The C++ code provides a Toeplitz matrix class packaged as a header-only library, to simplify low-level usage in other packages and outside of R." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=SuperGauss" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>SuperGauss: Superfast Likelihood Inference for Stationary Gaussian Time
+Series</h2>
+<p>Likelihood evaluations for stationary Gaussian time series are typically obtained via the Durbin-Levinson algorithm, which scales as O(n^2) in the number of time series observations.  This package provides a "superfast" O(n log^2 n) algorithm written in C++, crossing over with Durbin-Levinson around n = 300.  Efficient implementations of the score and Hessian functions are also provided, leading to superfast versions of inference algorithms such as Newton-Raphson and Hamiltonian Monte Carlo.  The C++ code provides a Toeplitz matrix class packaged as a header-only library, to simplify low-level usage in other packages and outside of R.</p>
+<table summary="Package SuperGauss summary">
+<tr>
+<td>Version:</td>
+<td>2.0.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>stats, methods, <a href="../R6/index.html">R6</a>, <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.7), <a href="../fftw/index.html">fftw</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppEigen/index.html">RcppEigen</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../testthat/index.html">testthat</a>, <a href="../mvtnorm/index.html">mvtnorm</a>, <a href="../numDeriv/index.html">numDeriv</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-03</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Yun Ling [aut],
+  Martin Lysy [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Martin Lysy  &#x3c;&#x6d;&#x6c;&#x79;&#x73;&#x79;&#x20;&#x61;&#x74;&#x20;&#x75;&#x77;&#x61;&#x74;&#x65;&#x72;&#x6c;&#x6f;&#x6f;&#x2e;&#x63;&#x61;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>fftw3 (&gt;= 3.1.2)</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_SuperGauss.html">SuperGauss results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package SuperGauss downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="SuperGauss.pdf"> SuperGauss.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/SuperGauss-quicktut.html">Superfast Likelihood Inference for Stationary Gaussian Time Series</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/SuperGauss_2.0.1.tar.gz"> SuperGauss_2.0.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/SuperGauss_2.0.1.zip">SuperGauss_2.0.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/SuperGauss_2.0.1.zip">SuperGauss_2.0.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/SuperGauss_2.0.1.zip">SuperGauss_2.0.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/SuperGauss_2.0.1.tgz">SuperGauss_2.0.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/SuperGauss_2.0.1.tgz">SuperGauss_2.0.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/SuperGauss"> SuperGauss archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=SuperGauss"><samp>https://CRAN.R-project.org/package=SuperGauss</samp></a>
+to link to this page.</p>
+</body>
+</html>

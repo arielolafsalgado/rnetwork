@@ -1,0 +1,22 @@
+Package: binsmooth
+Type: Package
+Title: Generate PDFs and CDFs from Binned Data
+Version: 0.1.0
+Author: David J. Hunter and McKalie Drown
+Maintainer: Dave Hunter <dhunter@westmont.edu>
+Description: Provides several methods for generating density functions
+    based on binned data. Data are assumed to be nonnegative, but the bin widths
+    need not be uniform, and the top bin may be unbounded. All PDF smoothing methods
+    maintain the areas specified by the binned data. (Equivalently, all CDF
+    smoothing methods interpolate the points specified by the binned data.) An
+    estimate for the mean of the distribution may be supplied as an optional
+    argument, which greatly improves the reliability of statistics computed from
+    the smoothed density functions. Methods include step function, recursive
+    subdivision, and optimized spline.
+License: MIT + file LICENSE
+Imports: stats, pracma, ineq, triangle
+LazyData: TRUE
+NeedsCompilation: no
+Packaged: 2016-08-12 14:09:50 UTC; dhunter
+Repository: CRAN
+Date/Publication: 2016-08-12 16:46:49

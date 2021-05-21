@@ -1,0 +1,36 @@
+Package: protr
+Version: 1.4-2
+Title: Generating Various Numerical Representation Schemes for Protein
+        Sequences
+Description: Comprehensive toolkit for generating various numerical
+    features of protein sequences described in Xiao et al. (2015)
+    <DOI:10.1093/bioinformatics/btv042>. For full functionality,
+    the software 'ncbi-blast+' is needed, see
+    <https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download>
+    for more information.
+Authors@R: c(
+    person("Nan", "Xiao", email = "me@nanx.me", role = c("aut", "cre")),
+    person("Qing-Song", "Xu", email = "qsxu@csu.edu.cn", role = c("aut")),
+    person("Dong-Sheng", "Cao", role = "aut")
+    )
+Maintainer: Nan Xiao <me@nanx.me>
+License: BSD_3_clause + file LICENSE
+URL: https://nanx.me/protr/, https://github.com/road2stat/protr,
+        http://protr.org
+BugReports: https://github.com/road2stat/protr/issues
+SystemRequirements: ncbi-blast+ (see
+        <https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download>)
+LazyData: true
+VignetteBuilder: knitr
+Depends: R (>= 3.0.2)
+Suggests: knitr, rmarkdown, Biostrings, GOSemSim, foreach, doParallel,
+        org.Hs.eg.db
+Encoding: UTF-8
+RoxygenNote: 6.0.1.9000
+NeedsCompilation: no
+Packaged: 2017-09-28 23:03:35 UTC; nanx
+Author: Nan Xiao [aut, cre],
+  Qing-Song Xu [aut],
+  Dong-Sheng Cao [aut]
+Repository: CRAN
+Date/Publication: 2017-09-29 03:15:16 UTC

@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package microplot</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=microplot" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="microplot: Microplots (Sparklines) in 'LaTeX', 'Word', 'HTML', 'Excel'" />
+<meta name="og:description" content="The microplot function writes a set of R graphics files to be used as microplots (sparklines) in tables in either 'LaTeX', 'HTML', 'Word', or 'Excel' files. For 'LaTeX', we provide methods for the Hmisc::latex() generic function to construct 'latex' tabular environments which include the graphs. These can be used directly with the operating system 'pdflatex' or 'latex' command, or by using one of 'Sweave', 'knitr', 'rmarkdown', or 'Emacs org-mode' as an intermediary. For 'MS Word', the msWord() function uses the 'flextable' package to construct 'Word' tables which include the graphs. There are several distinct approaches for constructing HTML files. The simplest is to use the msWord() function with argument filetype=&quot;html&quot;. Alternatively, use either 'Emacs org-mode' or the htmlTable::htmlTable() function to construct an 'HTML' file containing tables which include the graphs. See the documentation for our as.htmlimg() function. For 'Excel' use on 'Windows', the file examples/irisExcel.xls includes 'VBA' code which brings the individual panels into individual cells in the spreadsheet. Examples in the examples and demo subdirectories are shown with 'lattice' graphics, 'ggplot2' graphics, and 'base' graphics. Examples for 'LaTeX' include 'Sweave' (both 'LaTeX'-style and 'Noweb'-style), 'knitr', 'emacs org-mode', and 'rmarkdown' input files and their 'pdf' output files. Examples for 'HTML' include 'org-mode' and 'Rmd' input files and their webarchive 'HTML' output files. In addition, the as.orgtable() function can display a data.frame in an 'org-mode' document. The examples for 'MS Word' (with either filetype=&quot;docx&quot; or filetype=&quot;html&quot;) work with all operating systems. The package does not require the installation of 'LaTeX' or 'MS Word' to be able to write '.tex' or '.docx' files." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=microplot" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>microplot: Microplots (Sparklines) in 'LaTeX', 'Word', 'HTML', 'Excel'</h2>
+<p>The microplot function writes a set of R graphics files to be used as
+  microplots (sparklines) in tables in either 'LaTeX', 'HTML', 'Word',
+  or 'Excel' files.  For 'LaTeX', we provide methods for the
+  Hmisc::latex() generic function to construct 'latex' tabular
+  environments which include the graphs.  These can be used directly
+  with the operating system 'pdflatex' or 'latex' command, or by using
+  one of 'Sweave', 'knitr', 'rmarkdown', or 'Emacs org-mode' as an
+  intermediary.  For 'MS Word', the msWord() function uses the
+  'flextable' package to construct 'Word' tables which include the
+  graphs.  There are several distinct approaches for constructing HTML
+  files.  The simplest is to use the msWord() function with argument
+  filetype="html".  Alternatively, use either 'Emacs org-mode' or the
+  htmlTable::htmlTable() function to construct an 'HTML' file
+  containing tables which include the graphs.  See the documentation
+  for our as.htmlimg() function.  For 'Excel' use on 'Windows', the
+  file examples/irisExcel.xls includes 'VBA' code which brings the
+  individual panels into individual cells in the spreadsheet.
+  Examples in the examples and demo subdirectories are shown with
+  'lattice' graphics, 'ggplot2' graphics, and 'base' graphics.
+  Examples for 'LaTeX' include 'Sweave' (both 'LaTeX'-style and
+  'Noweb'-style), 'knitr', 'emacs org-mode', and 'rmarkdown' input
+  files and their 'pdf' output files.  Examples for 'HTML' include
+  'org-mode' and 'Rmd' input files and their webarchive 'HTML' output
+  files.  In addition, the as.orgtable() function can display a
+  data.frame in an 'org-mode' document.  The examples for 'MS Word'
+  (with either filetype="docx" or filetype="html") work with all
+  operating systems.  The package does not require the installation of
+  'LaTeX' or 'MS Word' to be able to write '.tex' or '.docx' files.</p>
+<table summary="Package microplot summary">
+<tr>
+<td>Version:</td>
+<td>1.0-42</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Hmisc/index.html">Hmisc</a> (&ge; 4.1-1), <a href="../HH/index.html">HH</a>, <a href="../lattice/index.html">lattice</a>, grid, <a href="../flextable/index.html">flextable</a>, <a href="../officer/index.html">officer</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../htmltools/index.html">htmltools</a>, <a href="../cowplot/index.html">cowplot</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../reshape2/index.html">reshape2</a>, <a href="../latticeExtra/index.html">latticeExtra</a>, <a href="../xtable/index.html">xtable</a>, <a href="../markdown/index.html">markdown</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../knitr/index.html">knitr</a>, <a href="../htmlTable/index.html">htmlTable</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2018-08-19</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Richard M. Heiberger, with contributions from Karen Byron and Nooreen Dabbish.</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Richard M. Heiberger  &#x3c;&#x72;&#x6d;&#x68;&#x20;&#x61;&#x74;&#x20;&#x74;&#x65;&#x6d;&#x70;&#x6c;&#x65;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_microplot.html">microplot results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package microplot downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="microplot.pdf"> microplot.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/rmhPoster.pdf">Microplots in LaTeX tables, useR2016 poster</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/microplot_1.0-42.tar.gz"> microplot_1.0-42.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/microplot_1.0-42.zip">microplot_1.0-42.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/microplot_1.0-42.zip">microplot_1.0-42.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/microplot_1.0-42.zip">microplot_1.0-42.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/microplot_1.0-42.tgz">microplot_1.0-42.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/microplot_1.0-42.tgz">microplot_1.0-42.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/microplot"> microplot archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package microplot reverse dependencies">
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../HH/index.html">HH</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=microplot"><samp>https://CRAN.R-project.org/package=microplot</samp></a>
+to link to this page.</p>
+</body>
+</html>

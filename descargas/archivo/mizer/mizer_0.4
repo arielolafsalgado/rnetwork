@@ -1,0 +1,37 @@
+Package: mizer
+Title: Multi-Species sIZE Spectrum Modelling in R
+Type: Package
+Description: A set of classes and methods to set up and run multispecies, trait
+    based and community size spectrum ecological models, focussed on the marine
+    environment.
+Maintainer: Gustav Delius <gustav.delius@york.ac.uk>
+Authors@R: c(person("Finlay", "Scott", email="drfinlayscott@gmail.com", 
+                    role=c("aut", "cph")),
+             person("Julia", "Blanchard", email="julia.blanchard@utas.edu.au",
+                    role=c("aut", "cph")),
+             person("Ken", "Andersen", email="kha@aqua.dtu.dk",
+                    role=c("aut", "cph")),
+             person("Gustav", "Delius", email="gustav.delius@york.ac.uk",
+                    role=c("ctb", "cre")),
+             person("Richard", "Southwell", email="richard.southwell@york.ac.uk",
+                    role=c("ctb")))
+Version: 0.4
+License: GPL-3
+Imports: ggplot2, grid, methods, plyr, Rcpp, reshape2
+LinkingTo: Rcpp
+Depends: R (>= 3.0)
+Suggests: testthat, roxygen2, knitr
+Collate: 'MizerParams-class.R' 'MizerSim-class.R' 'selectivity_funcs.R'
+        'project.R' 'help.R' 'project_methods.R' 'summary_methods.R'
+        'plots.R' 'wrapper_functions.R' 'data.R' 'RcppExports.R'
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2017-12-14 16:46:32 UTC; gustav
+Author: Finlay Scott [aut, cph],
+  Julia Blanchard [aut, cph],
+  Ken Andersen [aut, cph],
+  Gustav Delius [ctb, cre],
+  Richard Southwell [ctb]
+Repository: CRAN
+Date/Publication: 2017-12-14 18:26:46 UTC

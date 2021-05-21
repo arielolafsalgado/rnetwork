@@ -1,0 +1,47 @@
+Package: tsfeatures
+Title: Time Series Feature Extraction
+Version: 1.0.0
+Authors@R: c(
+    person("Rob", "Hyndman", email = "Rob.Hyndman@monash.edu", role = c("aut","cre"), comment = c(ORCID = "0000-0002-2140-5352")),
+    person("Yanfei", "Kang", role = "aut", comment = c(ORCID = "0000-0001-8769-6650")),
+    person("Pablo", "Montero-Manso", email="p.montero.manso@udc.es", role="aut"),
+    person("Thiyanga", "Talagala", role = "aut", comment=c(ORCID = "0000-0002-0656-9789")),
+    person("Earo", "Wang", role = "aut", comment=c(ORCID = "0000-0001-6448-5260")),
+    person("Yangzhuoran", "Yang", email = "Fin.Yang@monash.edu", role = "aut"),
+    person("Souhaib", "Ben Taieb", role = "ctb"),
+    person("Cao", "Hanqing", role="ctb"),
+    person("D K", "Lake", email="dlake@virginia.edu", role="ctb"),
+    person("Nikolay", "Laptev", role="ctb"),
+    person("J R", "Moorman", role="ctb"),
+    person("Mitchell", "O'Hara-Wild", role="ctb", comment=c(ORCID = "0000-0001-6729-7695")))
+Description: Methods for extracting various features from time series data. The features provided are those from Hyndman, Wang and Laptev (2013) <doi:10.1109/ICDMW.2015.104>, Kang, Hyndman and Smith-Miles (2017) <doi:10.1016/j.ijforecast.2016.09.004> and from Fulcher, Little and Jones (2013) <doi:10.1098/rsif.2013.0048>. Features include spectral entropy, autocorrelations, measures of the strength of seasonality and trend, and so on. Users can also define their own feature functions.
+Depends: R (>= 3.2.3)
+Imports: ForeCA, fracdiff, forecast (>= 8.3), purrr, RcppRoll (>=
+        0.2.2), stats, tibble, tseries, urca, future, furrr
+Suggests: testthat, knitr, rmarkdown, ggplot2, tidyr, dplyr, Mcomp,
+        GGally
+License: GPL-3
+LazyData: true
+ByteCompile: true
+URL: https://pkg.robjhyndman.com/tsfeatures/
+BugReports: https://github.com/robjhyndman/tsfeatures/issues/
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2019-02-02 01:26:37 UTC; hyndman
+Author: Rob Hyndman [aut, cre] (<https://orcid.org/0000-0002-2140-5352>),
+  Yanfei Kang [aut] (<https://orcid.org/0000-0001-8769-6650>),
+  Pablo Montero-Manso [aut],
+  Thiyanga Talagala [aut] (<https://orcid.org/0000-0002-0656-9789>),
+  Earo Wang [aut] (<https://orcid.org/0000-0001-6448-5260>),
+  Yangzhuoran Yang [aut],
+  Souhaib Ben Taieb [ctb],
+  Cao Hanqing [ctb],
+  D K Lake [ctb],
+  Nikolay Laptev [ctb],
+  J R Moorman [ctb],
+  Mitchell O'Hara-Wild [ctb] (<https://orcid.org/0000-0001-6729-7695>)
+Maintainer: Rob Hyndman <Rob.Hyndman@monash.edu>
+Repository: CRAN
+Date/Publication: 2019-02-06 15:50:03 UTC

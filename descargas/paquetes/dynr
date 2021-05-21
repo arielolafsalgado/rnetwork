@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package dynr</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Dynamic Modeling in R [R package dynr version 0.1.15-25]" />
+<meta name="citation_author1" content="Lu Ou" />
+<meta name="citation_author2" content="Michael D. Hunter" />
+<meta name="citation_author3" content="Sy-Miin Chow" />
+<meta name="citation_author4" content="Linying Ji" />
+<meta name="citation_author5" content="Meng Chen" />
+<meta name="citation_author6" content="Hui-Ju Hung" />
+<meta name="citation_author7" content="Jungmin Lee" />
+<meta name="citation_author8" content="Yanling Li" />
+<meta name="citation_author9" content="Jonathan Park" />
+<meta name="citation_publication_date" content="2020-02-11" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=dynr" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=dynr" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="dynr: Dynamic Modeling in R" />
+<meta name="og:description" content="Intensive longitudinal data have become increasingly prevalent in various scientific disciplines. Many such data sets are noisy, multivariate, and multi-subject in nature. The change functions may also be continuous, or continuous but interspersed with periods of discontinuities (i.e., showing regime switches). The package 'dynr' (Dynamic Modeling in R) is an R package that implements a set of computationally efficient algorithms for handling a broad class of linear and nonlinear discrete- and continuous-time models with regime-switching properties under the constraint of linear Gaussian measurement functions. The discrete-time models can generally take on the form of a state- space or difference equation model. The continuous-time models are generally expressed as a set of ordinary or stochastic differential equations. All estimation and computations are performed in C, but users are provided with the option to specify the model of interest via a set of simple and easy-to-learn model specification functions in R. Model fitting can be performed using single- subject time series data or multiple-subject longitudinal data." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=dynr" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>dynr: Dynamic Modeling in R</h2>
+<p>Intensive longitudinal data have become increasingly prevalent in
+    various scientific disciplines. Many such data sets are noisy, multivariate,
+    and multi-subject in nature. The change functions may also be continuous, or
+    continuous but interspersed with periods of discontinuities (i.e., showing
+    regime switches). The package 'dynr' (Dynamic Modeling in R) is an R package
+    that implements a set of computationally efficient algorithms for handling a
+    broad class of linear and nonlinear discrete- and continuous-time models with
+    regime-switching properties under the constraint of linear Gaussian measurement
+    functions. The discrete-time models can generally take on the form of a state-
+    space or difference equation model. The continuous-time models are generally
+    expressed as a set of ordinary or stochastic differential equations. All
+    estimation and computations are performed in C, but users are provided with the
+    option to specify the model of interest via a set of simple and easy-to-learn
+    model specification functions in R. Model fitting can be performed using single-
+    subject time series data or multiple-subject longitudinal data.</p>
+<table summary="Package dynr summary">
+<tr>
+<td>Version:</td>
+<td>0.1.15-25</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0.0), <a href="../ggplot2/index.html">ggplot2</a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../MASS/index.html">MASS</a>, <a href="../Matrix/index.html">Matrix</a>, <a href="../numDeriv/index.html">numDeriv</a>, <a href="../xtable/index.html">xtable</a>, <a href="../latex2exp/index.html">latex2exp</a>, grid, <a href="../reshape2/index.html">reshape2</a>, <a href="../plyr/index.html">plyr</a>, <a href="../mice/index.html">mice</a>, <a href="../magrittr/index.html">magrittr</a>, <a href="../Rdpack/index.html">Rdpack</a>, methods, <a href="../fda/index.html">fda</a>, <a href="../car/index.html">car</a>, <a href="../stringi/index.html">stringi</a>, <a href="../tibble/index.html">tibble</a>, <a href="../deSolve/index.html">deSolve</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../roxygen2/index.html">roxygen2</a> (&ge; 3.1), <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-02-11</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Lu Ou [aut],
+  Michael D. Hunter <a href="https://orcid.org/0000-0002-3651-6709"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Sy-Miin Chow <a href="https://orcid.org/0000-0003-1938-027X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Linying Ji [aut],
+  Meng Chen [aut],
+  Hui-Ju Hung [aut],
+  Jungmin Lee [aut],
+  Yanling Li [aut],
+  Jonathan Park [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Michael D. Hunter  &#x3c;&#x6d;&#x68;&#x75;&#x6e;&#x74;&#x65;&#x72;&#x2e;&#x6f;&#x75;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>GNU make</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">dynr citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_dynr.html">dynr results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package dynr downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="dynr.pdf"> dynr.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/linearSDE.html">Example: A Linear Stochastic Differential Equation Model</a><br/>
+<a href="vignettes/InstallationForDevelopers.pdf">Installation for Developers</a><br/>
+<a href="vignettes/InstallationForUsers.pdf">Installation for Users</a><br/>
+<a href="vignettes/LinearDiscreteTimeModels.pdf">Linear discrete-time regime-switching models</a><br/>
+<a href="vignettes/NonlinearContinuousTimeModels.pdf">Nonlinear continuous-time models</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/dynr_0.1.15-25.tar.gz"> dynr_0.1.15-25.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/dynr_0.1.15-25.zip">dynr_0.1.15-25.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/dynr_0.1.15-25.zip">dynr_0.1.15-25.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/dynr_0.1.15-25.zip">dynr_0.1.15-25.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/dynr_0.1.15-25.tgz">dynr_0.1.15-25.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/dynr_0.1.15-25.tgz">dynr_0.1.15-25.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/dynr"> dynr archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=dynr"><samp>https://CRAN.R-project.org/package=dynr</samp></a>
+to link to this page.</p>
+</body>
+</html>

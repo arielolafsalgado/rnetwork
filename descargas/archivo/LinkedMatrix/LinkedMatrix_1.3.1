@@ -1,0 +1,25 @@
+Package: LinkedMatrix
+Version: 1.3.1
+License: MIT + file LICENSE
+Title: Column-Linked and Row-Linked Matrices
+Description: A class that links matrix-like objects (nodes) by rows or by
+    columns while behaving similarly to a base R matrix. Very large matrices
+    are supported if the nodes are memory-mapped objects.
+Authors@R: c(
+    person("Gustavo", "de los Campos", email = "gustavoc@msu.edu", role = c("aut")),
+    person("Alexander", "Grueneberg", email = "alexander.grueneberg@googlemail.com", role = c("aut", "cre")))
+URL: https://github.com/QuantGen/LinkedMatrix
+BugReports: https://github.com/QuantGen/LinkedMatrix/issues
+Imports: methods, crochet (>= 2.0.1)
+Suggests: BGData, ff, bigmemory, testthat, covr
+Collate: 'ColumnLinkedMatrix.R' 'RowLinkedMatrix.R' 'LinkedMatrix.R'
+        'package.R' 'utils.R'
+RoxygenNote: 6.1.0
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2018-08-06 15:33:53 UTC; agrueneberg
+Author: Gustavo de los Campos [aut],
+  Alexander Grueneberg [aut, cre]
+Maintainer: Alexander Grueneberg <alexander.grueneberg@googlemail.com>
+Repository: CRAN
+Date/Publication: 2018-08-06 16:00:03 UTC

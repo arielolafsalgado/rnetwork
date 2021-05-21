@@ -1,0 +1,46 @@
+Package: cdcfluview
+Type: Package
+Encoding: UTF-8
+Title: Retrieve Flu Season Data from the United States Centers for
+        Disease Control and Prevention ('CDC') 'FluView' Portal
+Version: 0.9.1
+Date: 2020-04-01
+Authors@R: c(
+    person("Bob", "Rudis", email = "bob@rud.is", role = c("aut", "cre"), 
+           comment = c(ORCID = "0000-0001-5670-2640")),
+    person("Craig", "McGowan", email = "mcgowan.cj@gmail.com", role = "ctb",
+           comment = c(ORCID = "0000-0002-6298-0185")),
+    person("JJ", "Chen", email = "jiajia.chern@gmail.com", role = "ctb",
+           comment = c(ORCID = "0000-0001-8482-8398")),
+    person("Sebastian", "Meyer", email = "seb.meyer@fau.de", role = "ctb",
+           comment = c(ORCID = "0000-0002-1791-9449")),
+    person("James", "Turtle", email = "jturtle@predsci.com", role = "ctb",
+           comment = c(ORCID = "0000-0003-0735-7769")),
+    person("Andrew", "Bates", role = "ctb")
+  )
+Maintainer: Bob Rudis <bob@rud.is>
+Description: The 'U.S.' Centers for Disease Control and Prevention (CDC) maintain
+    a portal <https://gis.cdc.gov/grasp/fluview/fluportaldashboard.html> for
+    accessing state, regional and national influenza statistics as well as
+    mortality surveillance data. The web interface makes it difficult and
+    time-consuming to select and retrieve influenza data. Tools are provided 
+    to access the data provided by the portal's underlying 'API'.
+URL: https://github.com/hrbrmstr/cdcfluview
+BugReports: https://github.com/hrbrmstr/cdcfluview/issues
+License: MIT + file LICENSE
+LazyData: true
+Suggests: testthat, covr
+Depends: R (>= 3.2.0)
+Imports: httr, tools, dplyr, jsonlite, tibble, stats, utils, sf, xml2,
+        purrr, readr, MMWRweek, units (>= 0.4-6)
+RoxygenNote: 7.1.0
+NeedsCompilation: no
+Packaged: 2020-04-02 11:45:48 UTC; hrbrmstr
+Author: Bob Rudis [aut, cre] (<https://orcid.org/0000-0001-5670-2640>),
+  Craig McGowan [ctb] (<https://orcid.org/0000-0002-6298-0185>),
+  JJ Chen [ctb] (<https://orcid.org/0000-0001-8482-8398>),
+  Sebastian Meyer [ctb] (<https://orcid.org/0000-0002-1791-9449>),
+  James Turtle [ctb] (<https://orcid.org/0000-0003-0735-7769>),
+  Andrew Bates [ctb]
+Repository: CRAN
+Date/Publication: 2020-04-02 12:00:17 UTC

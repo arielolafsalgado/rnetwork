@@ -1,0 +1,25 @@
+Package: DPP
+Type: Package
+Title: Inference of Parameters of Normal Distributions from a Mixture
+        of Normals
+Version: 0.1.1
+Authors@R: c(
+    person("Luis M.", "Avila", email = "lmavila@gmail.com", role = c("aut","cre")),
+    person("Michael R.", "May", email = "mikeryanmay@ucdavis.edu", role = "aut"),
+    person("Jeff", "Ross-Ibarra", email = "rossibarra@ucdavis.edu", role = "aut"))
+Description: This MCMC method takes a data numeric vector (Y) and assigns the elements of Y
+  to a (potentially infinite) number of normal distributions. The individual normal distributions from a mixture of normals can be inferred.
+  Following the method described in Escobar (1994) <doi:10.2307/2291223> we use a Dirichlet Process Prior (DPP) to describe stochastically our prior assumptions about the dimensionality of the data.
+License: MIT + file LICENSE
+Depends: methods, Rcpp (>= 0.12.4), coda
+LinkingTo: Rcpp
+RcppModules: DPPmcmc,Models
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2017-10-31 16:57:09 UTC; lavila
+Author: Luis M. Avila [aut, cre],
+  Michael R. May [aut],
+  Jeff Ross-Ibarra [aut]
+Maintainer: Luis M. Avila <lmavila@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-10-31 20:44:34 UTC

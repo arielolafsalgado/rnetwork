@@ -1,0 +1,41 @@
+Package: OncoBayes2
+Type: Package
+Title: Bayesian Logistic Regression for Oncology Dose-Escalation Trials
+Description: Bayesian logistic regression model with optional
+  EXchangeability-NonEXchangeability parameter modelling for flexible
+  borrowing from historical or concurrent data-sources. The safety model
+  can guide dose-escalation decisions for adaptive oncology Phase I
+  dose-escalation trials which involve an arbitrary number of
+  drugs. Please refer to Neuenschwander et al. (2008)
+  <doi:10.1002/sim.3230> and Neuenschwander et al. (2016)
+  <doi:10.1080/19466315.2016.1174149> for details on the methodology.
+Version: 0.4-4
+Date: 2019-08-28
+Authors@R: c(person("Novartis", "Pharma AG", role = "cph")
+            ,person("Sebastian", "Weber", email="sebastian.weber@novartis.com", role=c("aut", "cre"))
+            ,person("Andrew", "Bean", email="andrew.bean@novartis.com", role="aut")
+            ,person("Trustees of", "Columbia University", role="cph", comment="src/init.cpp, tools/make_cc.R, R/stanmodels.R, src/Makevars, src/Makevars.win")
+	    )
+Depends: R (>= 3.4.0), Rcpp (>= 0.12.0), methods
+Imports: assertthat, checkmate, Formula, rstan (>= 2.18.1), rstantools
+        (>= 1.4.0), bayesplot (>= 1.4.0), ggplot2 (>= 2.2.1), dplyr (>=
+        0.7.1), tibble, tidyr, abind, RBesT
+LinkingTo: StanHeaders (>= 2.18.0), rstan (>= 2.18.1), BH (>= 1.66.0),
+        Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0)
+License: GPL (>= 3)
+LazyData: true
+NeedsCompilation: yes
+Suggests: rmarkdown, knitr, testthat (>= 2.0.0), mvtnorm, tidybayes
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+SystemRequirements: GNU make, pandoc (>= 1.12.3), pandoc-citeproc
+Encoding: UTF-8
+Packaged: 2019-08-28 15:55:54 UTC; 
+Author: Novartis Pharma AG [cph],
+  Sebastian Weber [aut, cre],
+  Andrew Bean [aut],
+  Trustees of Columbia University [cph] (src/init.cpp, tools/make_cc.R,
+    R/stanmodels.R, src/Makevars, src/Makevars.win)
+Maintainer: Sebastian Weber <sebastian.weber@novartis.com>
+Repository: CRAN
+Date/Publication: 2019-08-29 07:30:06 UTC

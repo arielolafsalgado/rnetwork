@@ -1,0 +1,36 @@
+Encoding: UTF-8
+Package: plumber
+Type: Package
+Title: An API Generator for R
+Version: 0.3.2
+Date: 2017-05-21
+Authors@R: c(
+  person(family="Trestle Technology, LLC", role="aut", email="cran@trestletech.com"),
+  person("Jeff", "Allen", role="cre", email="cran@trestletech.com"),
+  person("Frans", "van Dunné", role="ctb", email="frans@ixpantia.com"))
+License: MIT + file LICENSE
+Description: Gives the ability to automatically generate and serve an HTTP API
+    from R functions using the annotations in the R documentation around your
+    functions.
+Depends: R (>= 3.0.0)
+Imports: R6 (>= 2.0.0), stringi (>= 0.3.0), jsonlite (>= 0.9.16),
+        httpuv (>= 1.2.3)
+LazyData: TRUE
+Suggests: testthat (>= 0.11.0), XML, rmarkdown, PKI, base64enc,
+        htmlwidgets, visNetwork, analogsea
+Collate: 'content-types.R' 'cookie-parser.R' 'globals.R'
+        'serializer-json.R' 'plumber.R' 'default-handlers.R'
+        'digital-ocean.R' 'includes.R' 'paths.R' 'plumber-step.R'
+        'post-body.R' 'processor.R' 'processor-image.R'
+        'query-string.R' 'response.R' 'serializer-content-type.R'
+        'serializer-html.R' 'serializer-htmlwidget.R'
+        'serializer-xml.R' 'serializer.R' 'session-cookie.R'
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-05-22 01:38:33 UTC; jeff
+Author: Trestle Technology, LLC [aut],
+  Jeff Allen [cre],
+  Frans van Dunné [ctb]
+Maintainer: Jeff Allen <cran@trestletech.com>
+Repository: CRAN
+Date/Publication: 2017-05-22 03:41:20

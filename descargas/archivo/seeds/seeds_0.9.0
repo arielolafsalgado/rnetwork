@@ -1,0 +1,34 @@
+Package: seeds
+Type: Package
+Title: Estimate Hidden Inputs using the Dynamic Elastic Net
+Version: 0.9.0
+Authors@R: c(person("Tobias", "Newmiwaka", email = "tobias.newmiwaka@gmail.com",
+                  role = c("aut", "cre")),
+            person("Benjamin", "Engelhardt", email = "engelhar@bit.uni-bonn.de", 
+                    role = c("aut")))
+Description: Algorithms to calculate the hidden inputs of systems of differential equations. 
+  These hidden inputs can be interpreted as a control that tries to minimize the
+  discrepancies between a given model and taken measurements. The idea is 
+  also called the Dynamic Elastic Net, as proposed in the paper "Learning (from) the errors of a systems biology model" 
+  (Engelhardt, Froelich, Kschischo 2016) <doi:10.1038/srep20772>.
+  To use the experimental SBML import function, the 'rsbml' package is required. For installation I refer to the official 'rsbml' page: <https://bioconductor.org/packages/release/bioc/html/rsbml.html>.
+License: MIT + file LICENSE
+Maintainer: Tobias Newmiwaka <tobias.newmiwaka@gmail.com>
+Depends: R (>= 3.5.0)
+Encoding: UTF-8
+URL: https://github.com/Newmi1988/seeds
+BugReports: https://github.com/Newmi1988/seeds/issues
+LazyData: true
+RoxygenNote: 7.0.2
+Imports: deSolve (>= 1.20), pracma (>= 2.1.4), Deriv (>= 3.8.4),
+        Ryacas, stats, graphics, methods, mvtnorm, matrixStats,
+        statmod, coda, MASS, ggplot2, tidyr, dplyr, Hmisc, R.utils,
+        callr
+Suggests: rsbml, knitr, rmarkdown,
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-03-18 17:01:25 UTC; newmi
+Author: Tobias Newmiwaka [aut, cre],
+  Benjamin Engelhardt [aut]
+Repository: CRAN
+Date/Publication: 2020-03-20 14:20:02 UTC

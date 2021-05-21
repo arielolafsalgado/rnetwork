@@ -1,0 +1,28 @@
+Package: hIRT
+Type: Package
+Title: Hierarchical Item Response Theory Models
+Version: 0.2.0
+Authors@R: person("Xiang", "Zhou", email = "xiang_zhou@fas.harvard.edu",
+  role = c("aut", "cre"))
+Description: Implementation of a class of hierarchical item response
+  theory (IRT) models where both the mean and the variance of latent preferences
+  (ability parameters) may depend on observed covariates. The current
+  implementation includes both the two-parameter latent trait model for binary data and the
+  graded response model for ordinal data. Both are fitted via the Expectation-Maximization (EM)
+  algorithm. Asymptotic standard errors are derived from the observed information
+  matrix. 
+Depends: R (>= 3.4.0), stats
+Imports: pryr (>= 0.1.2), rms (>= 5.1-1)
+Suggests: ggplot2 (>= 2.2.1)
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.0
+URL: http://github.com/xiangzhou09/hIRT
+BugReports: http://github.com/xiangzhou09/hIRT
+NeedsCompilation: no
+Packaged: 2019-06-13 17:28:33 UTC; xiz225
+Author: Xiang Zhou [aut, cre]
+Maintainer: Xiang Zhou <xiang_zhou@fas.harvard.edu>
+Repository: CRAN
+Date/Publication: 2019-06-13 17:50:03 UTC

@@ -1,0 +1,36 @@
+Package: FedData
+Type: Package
+Title: Functions to Automate Downloading Geospatial Data Available from
+        Several Federated Data Sources
+Version: 2.3.2
+Date: 2016-10-26
+Author: R. Kyle Bocinsky [aut, cre], Dylan Beaudette [ctb], Scott Chamberlain [ctb]
+Authors@R: c(person(given = c("R.", "Kyle"), family = "Bocinsky",
+    role = c("aut", "cre"), email = "bocinsky@gmail.com"),
+    person(given = c("Dylan"), family = "Beaudette", role = "ctb"),
+    person(given = c("Scott"), family = "Chamberlain", role = "ctb"))
+Maintainer: R. Kyle Bocinsky <bocinsky@gmail.com>
+Description: Functions to automate downloading geospatial data available from
+    several federated data sources (mainly sources maintained by the US Federal
+    government). Currently, the package allows for retrieval of five datasets:
+    The National Elevation Dataset digital elevation models (1 and 1/3 arc-second;
+    USGS); The National Hydrography Dataset (USGS); The Soil Survey Geographic
+    (SSURGO) database from the National Cooperative Soil Survey (NCSS), which is
+    led by the Natural Resources Conservation Service (NRCS) under the USDA; the
+    Global Historical Climatology Network (GHCN), coordinated by National Climatic
+    Data Center at NOAA; the Daymet gridded estimates of daily weather parameters 
+    for North America, version 3, available from the Oak Ridge National Laboratory's
+    Distributed Active Archive Center (DAAC); and the International Tree Ring Data Bank.
+    Additional data sources are in the works, global soils (HWSD), 
+    MODIS satellite data products, the National Atlas (US), Natural Earth, and WorldClim.
+License: MIT + file LICENSE
+Depends: R (>= 3.2.0), sp
+Imports: data.table, devtools, soilDB, igraph, curl, methods, rgdal,
+        raster, Hmisc, rgeos, readr, lubridate, dplyr, magrittr,
+        foreach, doParallel
+Repository: CRAN
+NeedsCompilation: no
+RoxygenNote: 5.0.1
+Suggests: testthat
+Packaged: 2016-10-26 19:51:06 UTC; bocinsky
+Date/Publication: 2016-10-27 11:08:57

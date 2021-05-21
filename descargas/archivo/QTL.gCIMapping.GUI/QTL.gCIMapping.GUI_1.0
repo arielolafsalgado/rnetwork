@@ -1,0 +1,18 @@
+Package: QTL.gCIMapping.GUI
+Type: Package
+Title: QTL Genome-Wide Composite Interval Mapping with Graphical User
+        Interface
+Version: 1.0
+Date: 2018-6-12
+Author: Zhang Ya-Wen, Wen Yang-Jun, Wang Shi-Bo, and Zhang Yuan-Ming
+Maintainer: Yuanming Zhang<soyzhang@mail.hzau.edu.cn>
+Description: Conduct multiple quantitative trait loci (QTL) mapping under the framework of random-QTL-effect mixed linear model. First, each position on the genome is detected in order to construct a negative logarithm P-value curve against genome position. Then, all the peaks on each effect (additive or dominant) curve are viewed as potential QTL, all the effects of the potential QTL are included in a multi-QTL model, their effects are estimated by empirical Bayes in doubled haploid or by adaptive lasso in F2, and true QTL are identified by likelihood radio test. Wang S-B, Wen Y-J, Ren W-L, Ni Y-L, Zhang J, Feng J-Y, Zhang Y-M (2016) <doi:10.1038/srep29951>.
+Encoding: UTF-8
+Depends: shiny,MASS,qtl,doParallel,foreach
+License: GPL (>= 2)
+Imports: Rcpp (>= 0.12.17),methods,stringr,openxlsx,data.table,parcor
+LinkingTo: Rcpp
+NeedsCompilation: yes
+Packaged: 2018-06-13 03:46:03 UTC; 亚雯
+Repository: CRAN
+Date/Publication: 2018-06-15 15:26:36 UTC

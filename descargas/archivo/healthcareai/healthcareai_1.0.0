@@ -1,0 +1,34 @@
+Package: healthcareai
+Type: Package
+Title: Tools for Healthcare Machine Learning
+Version: 1.0.0
+Date: 2017-09-08
+Authors@R: c(
+    person("Levi", "Thatcher", email = "levi.thatcher@healthcatalyst.com", role = c("aut", "cre")),
+    person("Mike", "Mastanduno", email = "michael.mastanduno@healthcatalyst.com", role = "aut"),
+    person("Michael", "Levy", email = "michael.levy@healthcatalyst.com", role = "aut"),
+    person("Taylor", "Miller", email = "taylor.miller@healthcatalyst.com", role = "aut"),
+    person("Taylor", "Larsen", email = "taylor.larsen@healthcatalyst.com", role = "aut"))
+Description: A machine learning toolbox tailored to healthcare data.
+    Aids in data cleaning, model development, hyperparameter tuning, and model
+    deployment in a production SQL environment. Algorithms currently supported
+    are Lasso, Random Forest, XGBoost, Kmeans clustering, and Linear Mixed Model.
+License: MIT + file LICENSE
+LazyData: TRUE
+Depends: R (>= 3.2.3)
+Imports: caret, data.table, DBI, doParallel, e1071, grpreg, lme4, odbc,
+        pROC, R6, ranger, ROCR, RSQLite, xgboost
+RoxygenNote: 6.0.1
+Suggests: testthat
+URL: http://healthcareai-r.readthedocs.io
+BugReports: https://github.com/HealthCatalyst/healthcareai-r/issues
+NeedsCompilation: no
+Packaged: 2017-09-11 16:21:45 UTC; michael.mastanduno
+Author: Levi Thatcher [aut, cre],
+  Mike Mastanduno [aut],
+  Michael Levy [aut],
+  Taylor Miller [aut],
+  Taylor Larsen [aut]
+Maintainer: Levi Thatcher <levi.thatcher@healthcatalyst.com>
+Repository: CRAN
+Date/Publication: 2017-09-11 17:17:00 UTC

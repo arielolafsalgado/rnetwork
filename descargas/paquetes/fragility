@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package fragility</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Assessing and Visualizing Fragility of Clinical Results with Binary Outcomes [R package fragility version 1.1]" />
+<meta name="citation_author1" content="Lifeng Lin" />
+<meta name="citation_author2" content="Haitao Chu" />
+<meta name="citation_publication_date" content="2020-08-12" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=fragility" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=fragility" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="fragility: Assessing and Visualizing Fragility of Clinical Results with Binary Outcomes" />
+<meta name="og:description" content="A collection of user-friendly functions for assessing and visualizing fragility of individual studies (Walsh et al., 2014 &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.jclinepi.2013.10.019&quot;&gt;doi:10.1016/j.jclinepi.2013.10.019&lt;/a&gt;&amp;gt;; Lin, 2020 &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fjep.13428&quot;&gt;doi:10.1111/jep.13428&lt;/a&gt;&amp;gt;), conventional pairwise meta-analyses (Atal et al., 2019 &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.jclinepi.2019.03.012&quot;&gt;doi:10.1016/j.jclinepi.2019.03.012&lt;/a&gt;&amp;gt;), and network meta-analyses of multiple treatments with binary outcomes (Xing et al., 2020 &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.jclinepi.2020.07.003&quot;&gt;doi:10.1016/j.jclinepi.2020.07.003&lt;/a&gt;&amp;gt;). The included functions are designed to: 1) calculate the fragility index (i.e., the minimal event status modifications that can alter the significance or non-significance of the original result) and fragility quotient (i.e., fragility index divided by sample size) at a specific significance level; 2) give the cases of event status modifications for altering the result's significance or non-significance and visualize these cases; 3) visualize the trend of statistical significance as event status is modified; 4) efficiently derive fragility indexes and fragility quotients at multiple significance levels, and visualize the relationship between these fragility measures against the significance levels; and 5) calculate fragility indexes and fragility quotients of multiple datasets (e.g., a collection of clinical trials or meta-analyses) and produce plots of their overall distributions. The outputs from these functions may inform the robustness of clinical results in terms of statistical significance and aid the interpretation of fragility measures." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=fragility" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>fragility: Assessing and Visualizing Fragility of Clinical Results with
+Binary Outcomes</h2>
+<p>A collection of user-friendly functions for assessing and visualizing fragility of individual studies (Walsh et al., 2014 &lt;<a href="https://doi.org/10.1016%2Fj.jclinepi.2013.10.019">doi:10.1016/j.jclinepi.2013.10.019</a>&gt;; Lin, 2020 &lt;<a href="https://doi.org/10.1111%2Fjep.13428">doi:10.1111/jep.13428</a>&gt;), conventional pairwise meta-analyses (Atal et al., 2019 &lt;<a href="https://doi.org/10.1016%2Fj.jclinepi.2019.03.012">doi:10.1016/j.jclinepi.2019.03.012</a>&gt;), and network meta-analyses of multiple treatments with binary outcomes (Xing et al., 2020 &lt;<a href="https://doi.org/10.1016%2Fj.jclinepi.2020.07.003">doi:10.1016/j.jclinepi.2020.07.003</a>&gt;). The included functions are designed to: 1) calculate the fragility index (i.e., the minimal event status modifications that can alter the significance or non-significance of the original result) and fragility quotient (i.e., fragility index divided by sample size) at a specific significance level; 2) give the cases of event status modifications for altering the result's significance or non-significance and visualize these cases; 3) visualize the trend of statistical significance as event status is modified; 4) efficiently derive fragility indexes and fragility quotients at multiple significance levels, and visualize the relationship between these fragility measures against the significance levels; and 5) calculate fragility indexes and fragility quotients of multiple datasets (e.g., a collection of clinical trials or meta-analyses) and produce plots of their overall distributions. The outputs from these functions may inform the robustness of clinical results in terms of statistical significance and aid the interpretation of fragility measures.</p>
+<table summary="Package fragility summary">
+<tr>
+<td>Version:</td>
+<td>1.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>graphics (&ge; 3.5.0), grDevices (&ge; 3.5.0), <a href="../metafor/index.html">metafor</a> (&ge; 2.0-0), <a href="../netmeta/index.html">netmeta</a> (&ge; 1.0-0), <a href="../plotrix/index.html">plotrix</a> (&ge; 3.7-5), stats (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-08-12</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Lifeng Lin <a href="https://orcid.org/0000-0002-3562-9816"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    cre],
+  Haitao Chu <a href="https://orcid.org/0000-0003-0932-598X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Lifeng Lin  &#x3c;&#x6c;&#x69;&#x6e;&#x6c;&#x20;&#x61;&#x74;&#x20;&#x73;&#x74;&#x61;&#x74;&#x2e;&#x66;&#x73;&#x75;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_fragility.html">fragility results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package fragility downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="fragility.pdf"> fragility.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/fragility_1.1.tar.gz"> fragility_1.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/fragility_1.1.zip">fragility_1.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/fragility_1.1.zip">fragility_1.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/fragility_1.1.zip">fragility_1.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/fragility_1.1.tgz">fragility_1.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/fragility_1.1.tgz">fragility_1.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/fragility"> fragility archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=fragility"><samp>https://CRAN.R-project.org/package=fragility</samp></a>
+to link to this page.</p>
+</body>
+</html>

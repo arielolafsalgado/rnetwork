@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package ssizeRNA</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Sample Size Calculation for RNA-Seq Experimental Design [R package ssizeRNA version 1.3.2]" />
+<meta name="citation_author1" content="Ran Bi" />
+<meta name="citation_author2" content="Peng Liu" />
+<meta name="citation_publication_date" content="2019-08-20" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=ssizeRNA" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=ssizeRNA" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="ssizeRNA: Sample Size Calculation for RNA-Seq Experimental Design" />
+<meta name="og:description" content="We propose a procedure for sample size calculation while controlling false discovery rate for RNA-seq experimental design. Our procedure depends on the Voom method proposed for RNA-seq data analysis by Law et al. (2014) &amp;lt;&lt;a href=&quot;https://doi.org/10.1186%2Fgb-2014-15-2-r29&quot;&gt;doi:10.1186/gb-2014-15-2-r29&lt;/a&gt;&amp;gt; and the sample size calculation method proposed for microarray experiments by Liu and Hwang (2007) &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fbioinformatics%2Fbtl664&quot;&gt;doi:10.1093/bioinformatics/btl664&lt;/a&gt;&amp;gt;. We develop a set of functions that calculates appropriate sample sizes for two-sample t-test for RNA-seq experiments with fixed or varied set of parameters. The outputs also contain a plot of power versus sample size, a table of power at different sample sizes, and a table of critical test values at different sample sizes. To install this package, please use 'source(&quot;http://bioconductor.org/biocLite.R&quot;); biocLite(&quot;ssizeRNA&quot;)'. For R version 3.5 or greater, please use 'if(!requireNamespace(&quot;BiocManager&quot;, quietly = TRUE)){install.packages(&quot;BiocManager&quot;)}; BiocManager::install(&quot;ssizeRNA&quot;)'." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=ssizeRNA" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>ssizeRNA: Sample Size Calculation for RNA-Seq Experimental Design</h2>
+<p>We propose a procedure for sample size calculation while
+    controlling false discovery rate for RNA-seq experimental design. Our
+    procedure depends on the Voom method proposed for RNA-seq data analysis
+    by Law et al. (2014) &lt;<a href="https://doi.org/10.1186%2Fgb-2014-15-2-r29">doi:10.1186/gb-2014-15-2-r29</a>&gt; and the sample size 
+    calculation method proposed for microarray experiments by Liu and Hwang 
+    (2007) &lt;<a href="https://doi.org/10.1093%2Fbioinformatics%2Fbtl664">doi:10.1093/bioinformatics/btl664</a>&gt;. We develop a set of functions
+    that calculates appropriate sample sizes for two-sample t-test for RNA-seq
+    experiments with fixed or varied set of parameters. The outputs also contain a
+    plot of power versus sample size, a table of power at different sample sizes,
+    and a table of critical test values at different sample sizes. 
+    To install this package, please use 
+    'source("http://bioconductor.org/biocLite.R"); biocLite("ssizeRNA")'. 
+    For R version 3.5 or greater, please use  
+    'if(!requireNamespace("BiocManager", quietly = TRUE)){install.packages("BiocManager")}; BiocManager::install("ssizeRNA")'.</p>
+<table summary="Package ssizeRNA summary">
+<tr>
+<td>Version:</td>
+<td>1.3.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.2.3)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../MASS/index.html">MASS</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/Biobase.html"><span class="BioC">Biobase</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/edgeR.html"><span class="BioC">edgeR</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/limma.html"><span class="BioC">limma</span></a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/qvalue.html"><span class="BioC">qvalue</span></a>, <a href="../ssize.fdr/index.html">ssize.fdr</a>, graphics, stats</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-08-20</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Ran Bi [aut, cre],
+  Peng Liu [aut],
+  Tim Triche [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Ran Bi  &#x3c;&#x62;&#x69;&#x72;&#x61;&#x6e;&#x70;&#x69;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/ExperimentalDesign.html">ExperimentalDesign</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_ssizeRNA.html">ssizeRNA results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package ssizeRNA downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="ssizeRNA.pdf"> ssizeRNA.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/ssizeRNA.pdf">Sample Size Calculation for RNA-Seq Experimental Design</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/ssizeRNA_1.3.2.tar.gz"> ssizeRNA_1.3.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/ssizeRNA_1.3.2.zip">ssizeRNA_1.3.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/ssizeRNA_1.3.2.zip">ssizeRNA_1.3.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/ssizeRNA_1.3.2.zip">ssizeRNA_1.3.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/ssizeRNA_1.3.2.tgz">ssizeRNA_1.3.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/ssizeRNA_1.3.2.tgz">ssizeRNA_1.3.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/ssizeRNA"> ssizeRNA archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=ssizeRNA"><samp>https://CRAN.R-project.org/package=ssizeRNA</samp></a>
+to link to this page.</p>
+</body>
+</html>

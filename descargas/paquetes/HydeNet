@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package HydeNet</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=HydeNet" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="HydeNet: Hybrid Bayesian Networks Using R and JAGS" />
+<meta name="og:description" content="Facilities for easy implementation of hybrid Bayesian networks using R. Bayesian networks are directed acyclic graphs representing joint probability distributions, where each node represents a random variable and each edge represents conditionality. The full joint distribution is therefore factorized as a product of conditional densities, where each node is assumed to be independent of its non-descendents given information on its parent nodes. Since exact, closed-form algorithms are computationally burdensome for inference within hybrid networks that contain a combination of continuous and discrete nodes, particle-based approximation techniques like Markov Chain Monte Carlo are popular. We provide a user-friendly interface to constructing these networks and running inference using the 'rjags' package. Econometric analyses (maximum expected utility under competing policies, value of information) involving decision and utility nodes are also supported." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=HydeNet" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>HydeNet: Hybrid Bayesian Networks Using R and JAGS</h2>
+<p>Facilities for easy implementation of hybrid Bayesian networks
+    using R. Bayesian networks are directed acyclic graphs representing joint
+    probability distributions, where each node represents a random variable and
+    each edge represents conditionality. The full joint distribution is therefore
+    factorized as a product of conditional densities, where each node is assumed
+    to be independent of its non-descendents given information on its parent nodes.
+    Since exact, closed-form algorithms are computationally burdensome for inference
+    within hybrid networks that contain a combination of continuous and discrete
+    nodes, particle-based approximation techniques like Markov Chain Monte Carlo
+    are popular. We provide a user-friendly interface to constructing these networks
+    and running inference using the 'rjags' package. Econometric analyses (maximum
+    expected utility under competing policies, value of information) involving
+    decision and utility nodes are also supported.</p>
+<table summary="Package HydeNet summary">
+<tr>
+<td>Version:</td>
+<td>0.10.11</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0.0), <a href="../nnet/index.html">nnet</a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../checkmate/index.html">checkmate</a>, <a href="../DiagrammeR/index.html">DiagrammeR</a> (&ge; 0.9.0), <a href="../plyr/index.html">plyr</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/graph.html"><span class="BioC">graph</span></a>, <a href="../magrittr/index.html">magrittr</a>, <a href="../pixiedust/index.html">pixiedust</a> (&ge; 0.6.1), <a href="../rjags/index.html">rjags</a>, stats, <a href="../stringr/index.html">stringr</a>, utils</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../RCurl/index.html">RCurl</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../survival/index.html">survival</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-07-06</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Jarrod E. Dalton and Benjamin Nutter</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Benjamin Nutter  &#x3c;&#x62;&#x65;&#x6e;&#x6a;&#x61;&#x6d;&#x69;&#x6e;&#x2e;&#x6e;&#x75;&#x74;&#x74;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/nutterb/HydeNet/issues">https://github.com/nutterb/HydeNet/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/nutterb/HydeNet">https://github.com/nutterb/HydeNet</a>,</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>JAGS (http://mcmc-jags.sourceforge.net)</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_HydeNet.html">HydeNet results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package HydeNet downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="HydeNet.pdf"> HydeNet.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/DecisionNetworks.html">Decision Network (Influence Diagram) Analyses in HydeNet</a><br/>
+<a href="vignettes/GettingStartedWithHydeNet.html">Getting Started with HydeNet</a><br/>
+<a href="vignettes/HydeNetPlots.html">Building and Customizing HydeNet Plots</a><br/>
+<a href="vignettes/WorkingWithHydeNetObjects.html">Working with HydeNetwork Objects</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/HydeNet_0.10.11.tar.gz"> HydeNet_0.10.11.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/HydeNet_0.10.11.zip">HydeNet_0.10.11.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/HydeNet_0.10.11.zip">HydeNet_0.10.11.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/HydeNet_0.10.11.zip">HydeNet_0.10.11.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/HydeNet_0.10.11.tgz">HydeNet_0.10.11.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/HydeNet_0.10.11.tgz">HydeNet_0.10.11.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/HydeNet"> HydeNet archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package HydeNet reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../wiseR/index.html">wiseR</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=HydeNet"><samp>https://CRAN.R-project.org/package=HydeNet</samp></a>
+to link to this page.</p>
+</body>
+</html>

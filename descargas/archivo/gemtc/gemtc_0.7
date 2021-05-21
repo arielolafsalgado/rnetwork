@@ -1,0 +1,30 @@
+Package: gemtc
+Version: 0.7
+Date: 2015-09-09
+Title: Network Meta-Analysis Using Bayesian Methods
+Author: Gert van Valkenhoef, Joel Kuiper
+Maintainer: Gert van Valkenhoef <g.h.m.van.valkenhoef@rug.nl>
+Description: Network meta-analyses (mixed treatment comparisons) in the Bayesian
+    framework using JAGS. Includes methods to assess heterogeneity and
+    inconsistency, and a number of standard visualizations.
+Depends: coda (>= 0.13)
+Imports: igraph (>= 1.0), meta (>= 2.1), plyr (>= 1.8), graphics,
+        grDevices, stats, utils, grid, rjags (>= 3-0), truncnorm
+Suggests: testthat (>= 0.8), Matrix, XML (>= 3.6)
+URL: http://github.com/gertvv/gemtc
+License: GPL-3
+LazyData: true
+Collate: 'anohe.R' 'blobbogram.R' 'code.R' 'data.R' 'deviance.R'
+        'inits.R' 'likelihoods.R' 'll-helper.counts.R'
+        'll.binom.cloglog.R' 'll.binom.log.R' 'll.binom.logit.R'
+        'll.call.R' 'll.normal.identity.R' 'll.poisson.log.R'
+        'minimum.diameter.spanning.tree.R' 'mtc.data.studyrow.R'
+        'mtc.model.R' 'mtc.model.consistency.R' 'mtc.model.nodesplit.R'
+        'mtc.model.ume.R' 'mtc.model.use.R' 'mtc.network.R'
+        'mtc.network.xml.R' 'mtc.result.R' 'mtc.run.R' 'nodesplit.R'
+        'priors.R' 'rank.probability.R' 'relative.effect.R'
+        'relative.effect.table.R' 'template.R'
+NeedsCompilation: yes
+Packaged: 2015-09-09 10:01:25 UTC; gert
+Repository: CRAN
+Date/Publication: 2015-09-09 13:33:44

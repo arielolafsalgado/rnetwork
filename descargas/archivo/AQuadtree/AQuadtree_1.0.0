@@ -1,0 +1,30 @@
+Package: AQuadtree
+Title: Confidentiality of Spatial Point Data
+Version: 1.0.0
+Authors@R: c(
+    person("Raymond", "Lagonigro", email = "raymond.lagonigro@uvic.cat", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-8091-4296")),
+    person("Ramon", "Oller", email = "ramon.oller@uvic.cat", role = "aut", comment = c(ORCID = "0000-0002-4333-0021")),
+    person("Joan Carles", "Martori", email = "martori@uvic.cat", role = "aut", comment = c(ORCID = "0000-0002-8400-5487")))
+Depends: R (>= 3.3.2), methods, stats, sp, dplyr,
+Description: Provides an automatic aggregation tool to manage point data privacy, 
+    intended to be helpful for the production of official spatial data and for researchers.
+    The package pursues the data accuracy at the smallest possible areas preventing 
+    individual information disclosure. The methodology, based on hierarchical geographic 
+    data structures performs aggregation and local suppression of point data to ensure privacy
+    as described in Lagonigro, R., Oller, R., Martori J.C. (2017) <doi:10.2436/20.8080.02.55>.
+    The data structures are created following the guidelines for grid datasets from the
+    European Forum for Geography and Statistics. 
+License: MIT + file LICENSE
+Suggests: rgeos, rgdal, knitr, devtools, rmarkdown
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-03-13 08:43:52 UTC; raymond
+Author: Raymond Lagonigro [aut, cre] (<https://orcid.org/0000-0002-8091-4296>),
+  Ramon Oller [aut] (<https://orcid.org/0000-0002-4333-0021>),
+  Joan Carles Martori [aut] (<https://orcid.org/0000-0002-8400-5487>)
+Maintainer: Raymond Lagonigro <raymond.lagonigro@uvic.cat>
+Repository: CRAN
+Date/Publication: 2020-03-13 10:00:23 UTC

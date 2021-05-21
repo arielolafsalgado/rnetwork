@@ -1,0 +1,54 @@
+Package: mizer
+Title: Multi-Species sIZE Spectrum Modelling in R
+Type: Package
+Description: A set of classes and methods to set up and run multi-species, trait
+    based and community size spectrum ecological models, focused on the marine
+    environment.
+Maintainer: Gustav Delius <gustav.delius@york.ac.uk>
+Authors@R: c(person("Gustav", "Delius", email="gustav.delius@york.ac.uk",
+                    role=c("cre", "aut", "cph"),
+                    comment = c(ORCID = "0000-0003-4092-8228")),
+             person("Finlay", "Scott", email="drfinlayscott@gmail.com", 
+                    role=c("aut", "cph")),
+             person("Julia", "Blanchard", email="julia.blanchard@utas.edu.au",
+                    role=c("aut", "cph"),
+                    comment = c(ORCID = "0000-0003-0532-4824")),
+             person("Ken", "Andersen", email="kha@aqua.dtu.dk",
+                    role=c("aut", "cph"),
+                    comment = c(ORCID = "0000-0002-8478-3430")),
+             person("Richard", "Southwell", email="richard.southwell@york.ac.uk",
+                    role=c("ctb", "cph")))
+Version: 2.0.3
+License: GPL-3
+Imports: assertthat, deSolve, dplyr, ggplot2, grid, methods, plotly,
+        plyr, progress, Rcpp, reshape2,
+LinkingTo: Rcpp
+Depends: R (>= 3.1)
+Suggests: testthat (>= 2.1.0), vdiffr, roxygen2, knitr, shinyBS,
+        rmarkdown, pkgdown, covr, spelling
+Collate: 'MizerParams-class.R' 'MizerSim-class.R' 'species_params.R'
+        'setInteraction.R' 'setPredKernel.R' 'setSearchVolume.R'
+        'setMaxIntakeRate.R' 'setMetabolicRate.R' 'setExtMort.R'
+        'setReproduction.R' 'setResource.R' 'setFishing.R'
+        'setInitialValues.R' 'upgrade.R' 'selectivity_funcs.R'
+        'pred_kernel_funcs.R' 'resource_dynamics.R' 'project.R'
+        'mizer-package.R' 'project_methods.R' 'rate_functions.R'
+        'summary_methods.R' 'plots.R' 'newMultispeciesParams.R'
+        'wrapper_functions.R' 'steady.R' 'extension.R' 'data.R'
+        'RcppExports.R' 'deprecated.R'
+RoxygenNote: 7.1.1
+Encoding: UTF-8
+LazyData: true
+URL: https://sizespectrum.org/mizer,
+        https://github.com/sizespectrum/mizer
+BugReports: https://github.com/sizespectrum/mizer/issues
+Language: en-GB
+NeedsCompilation: yes
+Packaged: 2020-07-28 12:58:38 UTC; gustav
+Author: Gustav Delius [cre, aut, cph] (<https://orcid.org/0000-0003-4092-8228>),
+  Finlay Scott [aut, cph],
+  Julia Blanchard [aut, cph] (<https://orcid.org/0000-0003-0532-4824>),
+  Ken Andersen [aut, cph] (<https://orcid.org/0000-0002-8478-3430>),
+  Richard Southwell [ctb, cph]
+Repository: CRAN
+Date/Publication: 2020-07-28 14:30:02 UTC

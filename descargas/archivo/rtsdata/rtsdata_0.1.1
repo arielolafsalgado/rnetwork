@@ -1,0 +1,31 @@
+Package: rtsdata
+Type: Package
+Title: R Time Series Intelligent Data Storage
+Version: 0.1.1
+Authors@R: c(
+	person(family = "RTSVizTeam", role = c("aut", "cph"), email = "rtsvizteam@gmail.com"),
+	person("Irina", "Kapler", role = c("cre"), email = "irkapler@gmail.com")
+	)
+Description: A tool that allows to download and save historical time series data 
+	for future use offline. The intelligent updating functionality will only download 
+	the new available information; thus, saving you time and Internet bandwidth. 
+	It will only re-download the full data-set if any inconsistencies are detected. 
+	This package supports following data provides: 'Yahoo' (<https://finance.yahoo.com>), 
+	'FRED' (<https://fred.stlouisfed.org>), 'Quandl' (<https://www.quandl.com>), 
+	'AlphaVantage' (<https://www.alphavantage.co>), 'Tiingo' (<https://www.tiingo.com>).
+License: MIT + file LICENSE
+Depends: xts
+Imports: quantmod, zoo, alfred, Quandl, anytime, data.table, mongolite,
+        curl
+Suggests: RQuantLib
+URL: https://bitbucket.org/rtsvizteam/rtsdata
+BugReports: https://bitbucket.org/rtsvizteam/rtsdata/issues
+LazyLoad: yes
+RoxygenNote: 6.1.0
+NeedsCompilation: no
+Packaged: 2018-10-18 01:17:47 UTC; pcadmin
+Author: RTSVizTeam [aut, cph],
+  Irina Kapler [cre]
+Maintainer: Irina Kapler <irkapler@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-10-26 15:50:06 UTC

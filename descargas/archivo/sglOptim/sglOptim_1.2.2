@@ -1,0 +1,27 @@
+Package: sglOptim
+Type: Package
+Title: Generic Sparse Group Lasso Solver
+Version: 1.2.2
+Date: 2016-09-10
+Author: Martin Vincent
+Maintainer: Martin Vincent <martin.vincent.dk@gmail.com>
+Description: Fast generic solver for sparse group lasso optimization
+    problems. The loss (objective) function must be defined in a C++ module.
+    Use of multiple processors for cross validation and subsampling is supported
+    through OpenMP. The optimization problem is solved using a coordinate gradient
+    descent algorithm. The algorithm is applicable to a broad class of convex
+    loss functions. Convergence of the algorithm is established (see reference).
+    Development version is on github, please report package issues on github.
+URL: https://dx.doi.org/10.1016/j.csda.2013.06.004
+        https://github.com/vincent-dk/ sglOptim
+BugReports: https://github.com/vincent-dk/sglOptim/issues
+License: GPL (>= 2)
+LazyLoad: yes
+Imports: methods, stats, utils
+Depends: R (>= 3.0.0), Matrix
+LinkingTo: Rcpp, RcppProgress, RcppArmadillo, BH
+RoxygenNote: 5.0.1
+NeedsCompilation: yes
+Packaged: 2016-09-10 16:39:54 UTC; martin
+Repository: CRAN
+Date/Publication: 2016-09-10 19:17:52

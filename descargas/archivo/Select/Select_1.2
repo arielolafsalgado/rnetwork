@@ -1,0 +1,29 @@
+Package: Select
+Title: Determines Species Probabilities Based on Functional Traits
+Version: 1.2
+Authors@R: person("Daniel Laughlin", role = c("aut", "cre"),
+                     email = "danielclaughlin@gmail.com")
+Maintainer: Daniel Laughlin <danielclaughlin@gmail.com>
+Description: For determining species probabilities that satisfy a given
+    functional trait profile. Restoring resilient ecosystems requires a
+    flexible framework for selecting assemblages that are based on the functional
+    traits of species. However, current trait-based models have been biased toward
+    algorithms that can only select species by optimising specific trait values,
+    and could not elegantly accommodate the common desire among restoration ecologists
+    to produce functionally diverse assemblages. We have solved this problem by
+    applying a non-linear optimisation algorithm that optimises Rao’s Q, a closed-form
+    functional diversity index that incorporates species abundances, subject to other
+    linear constraints. This framework generalises previous models that could only
+    optimise the entropy of the community, and can optimise both functional diversity
+    and entropy simultaneously.
+Depends: R (>= 3.3.2)
+Imports: Rsolnp, latticeExtra, grDevices, stats, lattice, graphics
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-12-15 19:33:31 UTC; danielclaughlin
+Author: Daniel Laughlin [aut, cre]
+Repository: CRAN
+Date/Publication: 2017-12-16 22:01:25 UTC

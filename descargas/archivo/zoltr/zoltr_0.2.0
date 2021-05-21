@@ -1,0 +1,27 @@
+Package: zoltr
+Title: Interface to the 'Zoltar' Forecast Repository API
+Version: 0.2.0
+Authors@R: c(
+    person("Matthew", "Cornell", role = c("aut", "cre"), email = "cornell@umass.edu"),
+    person("Nicholas", "Reich", role = c("aut", "cph"), email = "nick@schoolph.umass.edu"))
+Description: 'Zoltar' <https://www.zoltardata.com/> is a website that provides a repository of model forecast results
+    in a standardized format and a central location. It supports storing, retrieving, comparing, and analyzing time
+    series forecasts for prediction challenges of interest to the modeling community. This package provides functions
+    for working with the 'Zoltar' API, including connecting and authenticating, getting information about projects,
+    models, and forecasts, deleting and uploading forecast data, and downloading scores.
+URL: https://github.com/reichlab/zoltr , http://reichlab.io/zoltr/
+BugReports: https://github.com/reichlab/zoltr/issues
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Suggests: testthat, knitr, rmarkdown
+Imports: httr, jsonlite, readr, mockery, webmockr
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-05-20 16:13:13 UTC; cornell
+Author: Matthew Cornell [aut, cre],
+  Nicholas Reich [aut, cph]
+Maintainer: Matthew Cornell <cornell@umass.edu>
+Repository: CRAN
+Date/Publication: 2019-05-22 14:00:03 UTC

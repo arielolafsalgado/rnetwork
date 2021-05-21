@@ -1,0 +1,33 @@
+Package: joinXL
+Title: Perform Joins or Minus Queries on 'Excel' Files
+Version: 1.0.0
+Authors@R: person("Yvonne", "Glanville", email = "yvonneglanville@gmail.com", role = c("aut", "cre"))
+Description: Performs Joins and Minus Queries on 'Excel' Files
+    fulljoinXL() Merges all rows of 2 'Excel' files based upon a common column in the files.
+    innerjoinXL() Merges all rows from base file and join file when the join condition is met.
+    leftjoinXL() Merges all rows from the base file, and all rows from the join file
+    if the join condition is met.
+    rightjoinXL() Merges all rows from the join file, and all rows from the base file if the join
+    condition is met.
+    minusXL() Performs 2 operations source-minus-target and target-minus-source
+    If the files are identical all output files will be empty.
+    Choose two 'Excel' files via a dialog box, and then follow prompts at the console to
+    choose a base or source file and columns to merge or minus on.
+Depends: R (>= 3.3.1)
+Imports: readxl (>= 0.1.1), openxlsx (>= 3.0.0), timeSeries (>=
+        3022.101.2), data.table (>= 1.9.6), rChoiceDialogs(>= 1.0.6),
+        R.utils(>= 2.3.0)
+VignetteBuilder: knitr
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: http://github.com/yvonneglanville/joinXL
+BugReports: http://github.com/yvonneglanville/joinXL/issues
+RoxygenNote: 5.0.1
+Suggests: knitr, rmarkdown
+NeedsCompilation: no
+Packaged: 2016-08-29 18:31:01 UTC; a593215
+Author: Yvonne Glanville [aut, cre]
+Maintainer: Yvonne Glanville <yvonneglanville@gmail.com>
+Repository: CRAN
+Date/Publication: 2016-08-30 00:48:34

@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package dipsaus</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="A Dipping Sauce for Data Analysis and Visualizations [R package dipsaus version 0.1.1]" />
+<meta name="citation_author" content="Zhengjia Wang" />
+<meta name="citation_publication_date" content="2020-10-09" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=dipsaus" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=dipsaus" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="dipsaus: A Dipping Sauce for Data Analysis and Visualizations" />
+<meta name="og:description" content="Works as an &quot;add-on&quot; to packages like 'shiny', 'future', as well as 'rlang', and provides utility functions. Just like dipping sauce adding flavors to potato chips or pita bread, 'dipsaus' for data analysis and visualizations adds handy functions and enhancements to popular packages. The goal is to provide simple solutions that are frequently asked for online, such as how to synchronize 'shiny' inputs without freezing the app, or how to get memory size on 'Linux' or 'MacOS' system. The enhancements roughly fall into these four categories: 1. 'shiny' input widgets; 2. high-performance computing using 'RcppParallel' and 'future' package; 3. modify R calls and convert among numbers, strings, and other objects. 4. utility functions to get system information such like CPU chip-set, memory limit, etc." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=dipsaus" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>dipsaus: A Dipping Sauce for Data Analysis and Visualizations</h2>
+<p>Works as an "add-on" to packages like 'shiny', 'future', as well as 
+    'rlang', and provides utility functions. Just like dipping sauce adding 
+    flavors to potato chips or pita bread, 'dipsaus' for data analysis and 
+    visualizations adds handy functions and enhancements to popular packages. 
+    The goal is to provide simple solutions that are frequently asked for 
+    online, such as how to synchronize 'shiny' inputs without freezing the app,
+    or how to get memory size on 'Linux' or 'MacOS' system. The enhancements 
+    roughly fall into these four categories: 1. 'shiny' input widgets; 2. 
+    high-performance computing using 'RcppParallel' and 'future' package; 3. 
+    modify R calls and convert among numbers, strings, and other objects. 4. 
+    utility functions to get system information such like CPU chip-set, memory 
+    limit, etc.</p>
+<table summary="Package dipsaus summary">
+<tr>
+<td>Version:</td>
+<td>0.1.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.5.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>utils, grDevices, parallel, <a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppParallel/index.html">RcppParallel</a>, <a href="../R6/index.html">R6</a>, <a href="../shiny/index.html">shiny</a>, <a href="../cli/index.html">cli</a>, <a href="../stringr/index.html">stringr</a>, <a href="../jsonlite/index.html">jsonlite</a> (&ge; 1.6), <a href="../future/index.html">future</a>, <a href="../future.apply/index.html">future.apply</a>, <a href="../progressr/index.html">progressr</a>, <a href="../fastmap/index.html">fastmap</a>, <a href="../base64url/index.html">base64url</a>, <a href="../base64enc/index.html">base64enc</a>, <a href="../synchronicity/index.html">synchronicity</a>, <a href="../digest/index.html">digest</a>, <a href="../rlang/index.html">rlang</a> (&ge; 0.4.0), <a href="../startup/index.html">startup</a>, <a href="../rstudioapi/index.html">rstudioapi</a> (&ge; 0.11)</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppParallel/index.html">RcppParallel</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../microbenchmark/index.html">microbenchmark</a>, <a href="../htmltools/index.html">htmltools</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../testthat/index.html">testthat</a>, <a href="../promises/index.html">promises</a>, <a href="../magrittr/index.html">magrittr</a>, <a href="../glue/index.html">glue</a>, <a href="../yaml/index.html">yaml</a>, <a href="../qs/index.html">qs</a>, <a href="../RcppRedis/index.html">RcppRedis</a>, <a href="../future.callr/index.html">future.callr</a>, <a href="../remotes/index.html">remotes</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-09</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Zhengjia Wang [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Zhengjia Wang  &#x3c;&#x7a;&#x68;&#x65;&#x6e;&#x67;&#x6a;&#x69;&#x61;&#x2e;&#x77;&#x61;&#x6e;&#x67;&#x20;&#x61;&#x74;&#x20;&#x72;&#x69;&#x63;&#x65;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/dipterix/dipsaus/issues">https://github.com/dipterix/dipsaus/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/dipterix/dipsaus">https://github.com/dipterix/dipsaus</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_dipsaus.html">dipsaus results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package dipsaus downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="dipsaus.pdf"> dipsaus.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/async_evaluator.html">Asynchronous Evaluator</a><br/>
+<a href="vignettes/r_expr_addons.html">R Expression Add-on</a><br/>
+<a href="vignettes/shiny_customized_widgets.html">Shiny Customized Widgets</a><br/>
+<a href="vignettes/utility_functions.html">Utility Functions</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/dipsaus_0.1.1.tar.gz"> dipsaus_0.1.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/dipsaus_0.1.1.zip">dipsaus_0.1.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/dipsaus_0.1.1.zip">dipsaus_0.1.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/dipsaus_0.1.1.zip">dipsaus_0.1.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/dipsaus_0.1.1.tgz">dipsaus_0.1.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/dipsaus_0.1.1.tgz">dipsaus_0.1.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/dipsaus"> dipsaus archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package dipsaus reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../raveio/index.html">raveio</a>, <a href="../threeBrain/index.html">threeBrain</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../lazyarray/index.html">lazyarray</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=dipsaus"><samp>https://CRAN.R-project.org/package=dipsaus</samp></a>
+to link to this page.</p>
+</body>
+</html>

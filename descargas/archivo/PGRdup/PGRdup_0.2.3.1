@@ -1,0 +1,42 @@
+Package: PGRdup
+Title: Discover Probable Duplicates in Plant Genetic Resources
+        Collections
+Version: 0.2.3.1
+Authors@R: c(
+    person(c("J.", "Aravind"),
+    email = "j.aravind@icar.gov.in",
+    role = c("aut", "cre")),
+    person(c("J.", "Radhamani"),
+    email = "jalli.radhamani@icar.gov.in", role = "aut"),
+    person(c("Kalyani", "Srinivasan"),
+    email = "kalyani.srinivasan@icar.gov.in", role = "aut"),
+    person(c("B.", "Ananda", "Subhash"),
+    email = "anandasubhash@gmail.com", role = "aut"),
+    person(c("R.", "K.", "Tyagi"),
+    email = "rishi.tyagi@icar.gov.in", role = "aut"))
+Description: Provides functions to aid the identification of probable/possible
+    duplicates in Plant Genetic Resources (PGR) collections using
+    'passport databases' comprising of information records of each constituent
+    sample. These include methods for cleaning the data, creation of a
+    searchable Key Word in Context (KWIC) index of keywords associated with
+    sample records and the identification of nearly identical records with
+    similar information by fuzzy, phonetic and semantic matching of keywords.
+Depends: R (>= 3.0.2)
+Imports: data.table (>= 1.9.3), igraph, stringdist (>= 0.9.4), stringi,
+        ggplot2, grid, gridExtra, methods, utils, stats
+Suggests: diagram, wordcloud, microbenchmark, knitr, rmarkdown
+Copyright: 2014, ICAR-NBPGR
+License: GPL-2 | GPL-3
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+NeedsCompilation: yes
+Packaged: 2017-03-10 05:29:37 UTC; lenovo
+Author: J. Aravind [aut, cre],
+  J. Radhamani [aut],
+  Kalyani Srinivasan [aut],
+  B. Ananda Subhash [aut],
+  R. K. Tyagi [aut]
+Maintainer: J. Aravind <j.aravind@icar.gov.in>
+Repository: CRAN
+Date/Publication: 2017-03-15 09:57:09

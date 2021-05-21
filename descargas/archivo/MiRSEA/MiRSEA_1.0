@@ -1,0 +1,20 @@
+Package: MiRSEA
+Type: Package
+Version: 1.0
+Date: 2015-05-31
+Title: Discovering the Risk Pathways Based on microRNA
+Author: Junwei Han, Siyao Liu 
+Maintainer: Junwei Han <hanjunwei1981@163.com>
+Description: The tools for 'MicroRNA Set Enrichment Analysis' can identify risk pathways by investigating the expression changes of microRNA ('miRNA') that regulate gene expression of pathways in the context of microRNA expression data. (1) This package constructs a correlation profile of microRNA and pathways by the hypergeometric statistic test. The gene sets of pathways derived from the three public databases (Kyoto Encyclopedia of Genes and Genomes ('KEGG'); 'Reactome'; 'Biocarta') and the target gene sets of microRNA are provided by four databases('TarBaseV6.0'; 'mir2Disease'; 'miRecords'; 'miRTarBase';). (2) This package can quantify the change of correlation between microRNA for each pathway based on a microRNA expression data with cases and controls. (3) This package uses the weighted Kolmogorov-Smirnov statistic to calculate an enrichment score (ES) of a microRNA set that co-regulate to a pathway , which reflects the degree to which a given pathway is associated the specific phenotype. (4) This package can provide the visualization of the results.
+Collate: Corrp2miRfile.R EnrichmentScore.R S2N.R MirSEA.R MsReport.R
+        GetExampleData.R getEnvironmentData.R GetMiRTargetData.R
+        GetPathwayData.R PlotCorrelation.R PlotHeatMap.R
+        PlotRunEnrichment.R
+LazyData: Yes
+Depends: R (>= 2.15.1)
+License: GPL (>= 2)
+biocViews: Statistics, Pathways, microRNA, enrichment analysis
+Packaged: 2015-05-31 08:59:58 UTC; liu
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2015-06-01 01:00:10

@@ -1,0 +1,38 @@
+Package: powdR
+Type: Package
+Title: Full Pattern Summation of X-Ray Powder Diffraction Data
+Version: 1.2.2
+Date: 2020-06-17
+Authors@R: c(
+  person("Benjamin", "Butler", email = "benjamin.butler@hutton.ac.uk",
+  role = c("aut", "cre")),
+  person("Stephen", "Hillier", email = "stephen.hillier@hutton.ac.uk",
+  role = "aut"),
+  person("Dylan", "Beaudette", role = "ctb"),
+  person("Dennis", "Eberl", role = "ctb"))
+Maintainer: Benjamin Butler <benjamin.butler@hutton.ac.uk>
+Description: Full pattern summation of X-ray powder diffraction data as
+  described in Chipera and Bish (2002) <doi:10.1107/S0021889802017405>.
+  Derives quantitative estimates of crystalline and amorphous phase
+  concentrations in complex mixtures.
+License: GPL-2 | file LICENSE
+URL: http://github.com/benmbutler/powdR
+BugReports: http://github.com/benmbutler/powdR/issues
+Depends: R (>= 3.2.0)
+Encoding: UTF-8
+LazyData: true
+Imports: plyr (>= 1.8.6), reshape (>= 0.8.8), plotly (>= 4.9.2.1),
+        ggplot2 (>= 3.3.0), stats (>= 3.4.3), ggpubr (>= 0.2.5), shiny
+        (>= 1.4.0.2), DT (>= 0.13), nnls (>= 1.4), shinyWidgets (>=
+        0.5.1), baseline (>= 1.2), tidyr (>= 1.0.2)
+Suggests: knitr, rmarkdown
+RoxygenNote: 7.1.0
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2020-06-17 13:58:19 UTC; bb42885
+Author: Benjamin Butler [aut, cre],
+  Stephen Hillier [aut],
+  Dylan Beaudette [ctb],
+  Dennis Eberl [ctb]
+Repository: CRAN
+Date/Publication: 2020-06-17 15:20:03 UTC

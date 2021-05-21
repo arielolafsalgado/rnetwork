@@ -1,0 +1,32 @@
+Package: HistDAWass
+Type: Package
+Title: Histogram-Valued Data Analysis
+Version: 0.1.7
+Date: 2017-09-26
+Authors@R: c(person("Antonio", "Irpino", role = c("aut", "cre"),
+  	     email = "antonio.irpino@unicampania.it"))
+Author: Antonio Irpino [aut, cre]
+Maintainer: Antonio Irpino <antonio.irpino@unicampania.it>
+Description: In the framework of Symbolic Data Analysis, a relatively new
+    approach to the statistical analysis of multi-valued data, we consider
+    histogram-valued data, i.e., data described by univariate histograms. The
+    methods and the basic statistics for histogram-valued data are mainly based
+    on the L2 Wasserstein metric between distributions, i.e., a Euclidean metric
+    between quantile functions. The package contains unsupervised classification
+    techniques, least square regression and tools for histogram-valued data and for
+    histogram time series.
+License: GPL (>= 2)
+Imports: graphics, class, FactoMineR, ggplot2, grid, histogram,
+        grDevices, stats, colorspace, utils
+Depends: R(>= 3.1), methods
+LazyData: true
+Collate: 'All_classes.R' 'Utility.R' 'Fuzzy_cmeans.R' 'H_time_series.R'
+        'HistDAWass-package.R' 'Kohonen_maps.R' 'Met_HTS.R'
+        'Met_MatH.R' 'Met_distributionH.R' 'principal_components.R'
+        'regression.R' 'unsuperv_classification.R'
+        'Plotting_with_ggplot.R'
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2017-09-21 15:18:22 UTC; Antonio
+Repository: CRAN
+Date/Publication: 2017-09-21 20:46:18 UTC

@@ -1,0 +1,30 @@
+Package: concaveman
+Type: Package
+Title: A Very Fast 2D Concave Hull Algorithm
+Version: 1.0.0
+Authors@R: c(
+  person("Joël", "Gombin", email="joel.gombin@gmail.com", role = c("cre", "aut")), 
+  person("Ramnath", "Vaidyanathan", role = "aut"),
+  person("Vladimir", "Agafonkin", role = "aut"),
+  person("Mapbox", role = "cph")
+  )
+Description: The concaveman function ports the 'concaveman' (<https://github.com/mapbox/concaveman>) library from 'mapbox'. It computes the concave polygon(s) for one or several set of points.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 2.10)
+Imports: V8, sf, magrittr, jsonlite, methods, dplyr
+RoxygenNote: 6.0.1
+Suggests: testthat, sp
+URL: http://www.github.com/joelgombin/concaveman
+BugReports: http://www.github.com/joelgombin/concaveman/issues
+SystemRequirements: GDAL (>= 2.0.0), GEOS (>= 3.3.0), PROJ.4 (>= 4.8.0)
+NeedsCompilation: no
+Packaged: 2017-07-25 21:57:11 UTC; joel
+Author: Joël Gombin [cre, aut],
+  Ramnath Vaidyanathan [aut],
+  Vladimir Agafonkin [aut],
+  Mapbox [cph]
+Maintainer: Joël Gombin <joel.gombin@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-07-25 22:37:09 UTC

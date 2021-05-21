@@ -1,0 +1,33 @@
+Package: hereR
+Type: Package
+Title: 'sf'-Based Interface to the 'HERE' REST APIs
+Version: 0.1.0
+Authors@R: c(
+    person("Merlin", "Unterfinger", email = "info@munterfinger.ch", role = c("aut", "cre")))
+Maintainer: Merlin Unterfinger <info@munterfinger.ch>
+URL: https://munterfinger.github.io/hereR/,
+        https://github.com/munterfinger/hereR/
+BugReports: https://github.com/munterfinger/hereR/issues/
+Description: Interface to the 'HERE' REST APIs <https://developer.here.com/develop/rest-apis>:
+  (1) geocode addresses using the 'Geocoder' API;
+  (2) routing directions, travel distance or time matrices and isolines using the 'Routing' API;
+  (3) traffic flow and incident information from the 'Traffic' API;
+  (4) weather forecasts, reports on current weather conditions, astronomical
+  information and alerts at a specific location from the 'Destination Weather' API.
+  Locations, routes and isolines are returned as 'sf' objects.
+Depends: R (>= 3.5.0)
+Imports: curl (>= 4.2), data.table (>= 1.12.6), jsonlite (>= 1.6),
+        lwgeom (>= 0.1-7), sf (>= 0.8-0), stringr (>= 1.4.0)
+Suggests: ggplot2 (>= 3.2.1), leafpop (>= 0.0.1), mapview (>= 2.7.0),
+        testthat (>= 2.2.1), knitr (>= 1.25), rmarkdown (>= 1.16), covr
+        (>= 3.3.2)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-11-04 18:14:43 UTC; Merlin
+Author: Merlin Unterfinger [aut, cre]
+Repository: CRAN
+Date/Publication: 2019-11-05 15:20:02 UTC

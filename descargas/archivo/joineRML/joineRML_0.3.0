@@ -1,0 +1,52 @@
+Package: joineRML
+Type: Package
+Title: Joint Modelling of Multivariate Longitudinal Data and
+        Time-to-Event Outcomes
+Version: 0.3.0
+Authors@R: c(
+    person("Graeme L.", "Hickey", email = "graeme.hickey@liverpool.ac.uk", 
+        role = c("cre", "aut")),
+    person("Pete", "Philipson", email = "pete.philipson@northumbria.ac.uk", 
+        role = "aut"),
+    person("Andrea", "Jorgensen", email = "aljorgen@liverpool.ac.uk", 
+        role = "aut"),
+    person("Ruwanthi", "Kolamunnage-Dona", email = "kdrr@liverpool.ac.uk", 
+        role = "aut"),
+    person("Paula", "Williamson", email = "p.r.williamson@liverpool.ac.uk",
+        role = "ctb"),
+    person("Dimitris", "Rizopoulos", email = "d.rizopoulos@erasmusmc.nl",
+        role = c("ctb", "dtc"),
+        comment = "data/renal.rda, R/hessian.R, R/vcov.R")
+    )
+Encoding: UTF-8
+Description: Fits the joint model proposed by Henderson and colleagues (2000) 
+    <doi:10.1093/biostatistics/1.4.465>, but extended to the case of multiple 
+    continuous longitudinal measures. The time-to-event data is modelled using a 
+    Cox proportional hazards regression model with time-varying covariates. The 
+    multiple longitudinal outcomes are modelled using a multivariate version of the 
+    Laird and Ware linear mixed model. The association is captured by a multivariate
+    latent Gaussian process. The model is estimated using a Monte Carlo Expectation 
+    Maximization algorithm. This project is funded by the Medical Research Council 
+    (Grant number MR/M013227/1).
+License: GPL-3 | file LICENSE
+URL: https://github.com/graemeleehickey/joineRML/
+BugReports: https://github.com/graemeleehickey/joineRML/issues
+LazyData: true
+Depends: R (>= 3.3.0), nlme, survival
+Imports: ggplot2, graphics, lme4 (>= 1.1-8), MASS, Matrix, mvtnorm,
+        Rcpp (>= 0.12.7), stats, utils
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 6.0.1
+Suggests: JM, joineR, knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2017-07-23 15:41:53 UTC; graemeleehickey
+Author: Graeme L. Hickey [cre, aut],
+  Pete Philipson [aut],
+  Andrea Jorgensen [aut],
+  Ruwanthi Kolamunnage-Dona [aut],
+  Paula Williamson [ctb],
+  Dimitris Rizopoulos [ctb, dtc] (data/renal.rda, R/hessian.R, R/vcov.R)
+Maintainer: Graeme L. Hickey <graeme.hickey@liverpool.ac.uk>
+Repository: CRAN
+Date/Publication: 2017-07-23 16:25:20 UTC

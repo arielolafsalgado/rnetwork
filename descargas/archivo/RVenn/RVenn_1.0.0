@@ -1,0 +1,30 @@
+Package: RVenn
+Type: Package
+Title: Set Operations for Many Sets
+Version: 1.0.0
+Authors@R: person("Turgut Yigit", "Akyol", email = "tyakyol@gmail.com",
+    role = c("aut", "cre"))
+Maintainer: Turgut Yigit Akyol <tyakyol@gmail.com>
+Description: Set operations for many sets. The base functions for set
+    operations in R are good for only two sets. This package uses
+    'purrr' to find the union, intersection and difference of three
+    or more sets. Further, based on 'ggplot2' and 'ggforce', Venn
+    diagram can be drawn for two or three sets (Venn diagrams with four or more
+    sets are terrible, please use 'UpSet' if you have lots of sets).
+    Finally, enrichment test can be applied to two sets whether an overlap is
+    statistically significant or not.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: ggforce (>= 0.2.1), ggplot2 (>= 3.0.0), magrittr (>= 1.5),
+        purrr (>= 0.2.5), methods (>= 3.5.1), rlang (>= 0.2.2)
+RoxygenNote: 6.1.1
+Collate: 'Construct.R' 'Plot.R' 'SetOperations.R' 'package-RVenn.R'
+        'Enrichment.R'
+Suggests: testthat, knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-05-05 10:30:10 UTC; tyakyol
+Author: Turgut Yigit Akyol [aut, cre]
+Repository: CRAN
+Date/Publication: 2019-05-08 10:30:16 UTC

@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package CausalQueries</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Make, Update, and Query Binary Causal Models [R package CausalQueries version 0.0.3]" />
+<meta name="citation_author1" content="Macartan Humphreys" />
+<meta name="citation_author2" content="Alan Jacobs" />
+<meta name="citation_author3" content="Lily Medina" />
+<meta name="citation_publication_date" content="2020-06-03" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=CausalQueries" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=CausalQueries" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="CausalQueries: Make, Update, and Query Binary Causal Models" />
+<meta name="og:description" content="Users can declare binary causal models, update beliefs about causal types given data and calculate arbitrary estimands. Model definition makes use of 'dagitty' functionality. Updating is implemented in 'stan'. The approach used in 'CausalQueries' is a generalization of the 'biqq' models described in &quot;Mixing Methods: A Bayesian Approach&quot; (Humphreys and Jacobs, 2015, &amp;lt;&lt;a href=&quot;https://doi.org/10.1017%2FS0003055415000453&quot;&gt;doi:10.1017/S0003055415000453&lt;/a&gt;&amp;gt;). The conceptual extension makes use of work on probabilistic causal models described in Pearl's Causality (Pearl, 2009, &amp;lt;&lt;a href=&quot;https://doi.org/10.1017%2FCBO9780511803161&quot;&gt;doi:10.1017/CBO9780511803161&lt;/a&gt;&amp;gt;)." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=CausalQueries" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>CausalQueries: Make, Update, and Query Binary Causal Models</h2>
+<p>Users can declare binary causal models, update beliefs about causal types given data and calculate arbitrary estimands.  Model definition makes use of 'dagitty' functionality. Updating is implemented in 'stan'. The approach used in 'CausalQueries' is a generalization of the 'biqq' models described in "Mixing Methods: A Bayesian Approach" (Humphreys and Jacobs, 2015, &lt;<a href="https://doi.org/10.1017%2FS0003055415000453">doi:10.1017/S0003055415000453</a>&gt;). The conceptual extension makes use of work on probabilistic causal models described in Pearl's Causality (Pearl, 2009, &lt;<a href="https://doi.org/10.1017%2FCBO9780511803161">doi:10.1017/CBO9780511803161</a>&gt;).</p>
+<table summary="Package CausalQueries summary">
+<tr>
+<td>Version:</td>
+<td>0.0.3</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td><a href="../dplyr/index.html">dplyr</a>, methods, R (&ge; 3.4.0), <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../dagitty/index.html">dagitty</a>, <a href="../gtools/index.html">gtools</a>, stats, <a href="../randomizr/index.html">randomizr</a>, <a href="../rlang/index.html">rlang</a> (&ge; 0.2.0), <a href="../rstan/index.html">rstan</a> (&ge;
+2.18.1), <a href="../rstantools/index.html">rstantools</a> (&ge; 2.0.0), <a href="../stringr/index.html">stringr</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../BH/index.html">BH</a> (&ge; 1.66.0), <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.0), <a href="../RcppEigen/index.html">RcppEigen</a> (&ge; 0.3.3.3.0), <a href="../rstan/index.html">rstan</a> (&ge; 2.18.1), <a href="../StanHeaders/index.html">StanHeaders</a> (&ge; 2.18.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../knitr/index.html">knitr</a>, <a href="../DeclareDesign/index.html">DeclareDesign</a>, <a href="../covr/index.html">covr</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-03</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Clara Bicalho [ctb],
+  Jasper Cooper [ctb],
+  Macartan Humphreys [aut],
+  Alan Jacobs [aut],
+  Merlin Heidemanns [ctb],
+  Lily Medina [aut, cre],
+  Julio Solis [ctb],
+  Georgiy Syunyaev [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Lily Medina  &#x3c;&#x6c;&#x69;&#x6c;&#x79;&#x6d;&#x69;&#x72;&#x75;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>GNU make</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_CausalQueries.html">CausalQueries results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package CausalQueries downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="CausalQueries.pdf"> CausalQueries.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/CausalQueries_0.0.3.tar.gz"> CausalQueries_0.0.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/CausalQueries_0.0.3.zip">CausalQueries_0.0.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/CausalQueries_0.0.3.zip">CausalQueries_0.0.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/CausalQueries_0.0.3.zip">CausalQueries_0.0.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/CausalQueries_0.0.3.tgz">CausalQueries_0.0.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/CausalQueries_0.0.3.tgz">CausalQueries_0.0.3.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=CausalQueries"><samp>https://CRAN.R-project.org/package=CausalQueries</samp></a>
+to link to this page.</p>
+</body>
+</html>

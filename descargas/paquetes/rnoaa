@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package rnoaa</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="'NOAA' Weather Data from R [R package rnoaa version 1.2.0]" />
+<meta name="citation_author" content="Scott Chamberlain" />
+<meta name="citation_publication_date" content="2020-10-06" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=rnoaa" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=rnoaa" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="rnoaa: 'NOAA' Weather Data from R" />
+<meta name="og:description" content="Client for many 'NOAA' data sources including the 'NCDC' climate 'API' at &amp;lt;&lt;a href=&quot;https://www.ncdc.noaa.gov/cdo-web/webservices/v2&quot;&gt;https://www.ncdc.noaa.gov/cdo-web/webservices/v2&lt;/a&gt;&amp;gt;, with functions for each of the 'API' 'endpoints': data, data categories, data sets, data types, locations, location categories, and stations. In addition, we have an interface for 'NOAA' sea ice data, the 'NOAA' severe weather inventory, 'NOAA' Historical Observing 'Metadata' Repository ('HOMR') data, 'NOAA' storm data via 'IBTrACS', tornado data via the 'NOAA' storm prediction center, and more." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=rnoaa" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>rnoaa: 'NOAA' Weather Data from R</h2>
+<p>Client for many 'NOAA' data sources including the 'NCDC' climate
+    'API' at &lt;<a href="https://www.ncdc.noaa.gov/cdo-web/webservices/v2">https://www.ncdc.noaa.gov/cdo-web/webservices/v2</a>&gt;, with functions for
+    each of the 'API' 'endpoints': data, data categories, data sets, data types,
+    locations, location categories, and stations. In addition, we have an interface
+    for 'NOAA' sea ice data, the 'NOAA' severe weather inventory, 'NOAA' Historical
+    Observing 'Metadata' Repository ('HOMR') data, 'NOAA' storm data via 'IBTrACS',
+    tornado data via the 'NOAA' storm prediction center, and more.</p>
+<table summary="Package rnoaa summary">
+<tr>
+<td>Version:</td>
+<td>1.2.0</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>utils, <a href="../crul/index.html">crul</a> (&ge; 0.7.0), <a href="../lubridate/index.html">lubridate</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../tidyr/index.html">tidyr</a>, <a href="../tidyselect/index.html">tidyselect</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../scales/index.html">scales</a>, <a href="../XML/index.html">XML</a>, <a href="../xml2/index.html">xml2</a>, <a href="../jsonlite/index.html">jsonlite</a>, <a href="../rappdirs/index.html">rappdirs</a>, <a href="../gridExtra/index.html">gridExtra</a>, <a href="../tibble/index.html">tibble</a>, <a href="../isdparser/index.html">isdparser</a> (&ge; 0.2.0), <a href="../geonames/index.html">geonames</a>, <a href="../hoardr/index.html">hoardr</a> (&ge; 0.5.2), <a href="../data.table/index.html">data.table</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../roxygen2/index.html">roxygen2</a> (&ge; 7.1.0), <a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../taxize/index.html">taxize</a>, <a href="../ncdf4/index.html">ncdf4</a>, <a href="../raster/index.html">raster</a>, <a href="../leaflet/index.html">leaflet</a>, <a href="../rgdal/index.html">rgdal</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../purrr/index.html">purrr</a>, <a href="../ggmap/index.html">ggmap</a>, <a href="../ropenaq/index.html">ropenaq</a>, <a href="../vcr/index.html">vcr</a> (&ge;
+0.5.4), <a href="../webmockr/index.html">webmockr</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-06</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Scott Chamberlain <a href="https://orcid.org/0000-0003-1444-9135"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Brooke Anderson [ctb],
+  Maëlle Salmon [ctb],
+  Adam Erickson [ctb],
+  Nicholas Potter [ctb],
+  Joseph Stachelek [ctb],
+  Alex Simmons [ctb],
+  Karthik Ram [ctb],
+  Hart Edmund [ctb],
+  rOpenSci [fnd] (https://ropensci.org)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Scott Chamberlain  &#x3c;&#x6d;&#x79;&#x72;&#x6d;&#x65;&#x63;&#x6f;&#x63;&#x79;&#x73;&#x74;&#x75;&#x73;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ropensci/rnoaa/issues">https://github.com/ropensci/rnoaa/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://docs.ropensci.org/rnoaa/">https://docs.ropensci.org/rnoaa/</a> (website),
+<a href="https://github.com/ropensci/rnoaa">https://github.com/ropensci/rnoaa</a> (devel)</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Hydrology.html">Hydrology</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_rnoaa.html">rnoaa results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package rnoaa downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="rnoaa.pdf"> rnoaa.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/rnoaa.html">rnoaa introduction</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/rnoaa_1.2.0.tar.gz"> rnoaa_1.2.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/rnoaa_1.2.0.zip">rnoaa_1.2.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/rnoaa_1.2.0.zip">rnoaa_1.2.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/rnoaa_1.2.0.zip">rnoaa_1.2.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/rnoaa_1.2.0.tgz">rnoaa_1.2.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/rnoaa_1.2.0.tgz">rnoaa_1.2.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/rnoaa"> rnoaa archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package rnoaa reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../countyweather/index.html">countyweather</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../Z10/index.html">Z10</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=rnoaa"><samp>https://CRAN.R-project.org/package=rnoaa</samp></a>
+to link to this page.</p>
+</body>
+</html>

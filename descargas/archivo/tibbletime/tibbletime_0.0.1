@@ -1,0 +1,31 @@
+Package: tibbletime
+Type: Package
+Title: Time Aware Tibbles
+Version: 0.0.1
+Date: 2017-09-05
+Authors@R: c(
+    person("Davis", "Vaughan", email = "dvaughan@business-science.io", role = c("aut", "cre")),
+    person("Matt", "Dancho", email = "mdancho@business-science.io", role = c("aut"))
+  )
+Maintainer: Davis Vaughan <dvaughan@business-science.io>
+Description: Built on top of the 'tibble' package, 'tibbletime' is an extension
+  that allows for the creation of time aware tibbles. Some immediate
+  advantages of this include: the ability to perform time based subsetting
+  on tibbles, quickly summarising and aggregating results by time periods,
+  and calling functions similar in spirit to the map family from 'purrr'
+  on time based tibbles.
+URL: https://github.com/business-science/tibbletime
+BugReports: https://github.com/business-science/tibbletime/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Suggests: testthat
+RoxygenNote: 6.0.1
+Depends: R (>= 3.3.0)
+Imports: assertthat, dplyr (>= 0.7), lubridate, magrittr, purrr, rlang,
+        stringr, tibble, tidyr (>= 0.7.1)
+NeedsCompilation: no
+Packaged: 2017-09-07 11:57:12 UTC; davisvaughan
+Author: Davis Vaughan [aut, cre],
+  Matt Dancho [aut]
+Repository: CRAN
+Date/Publication: 2017-09-07 12:12:38 UTC

@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package disaggregation</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Disaggregation Modelling [R package disaggregation version 0.1.3]" />
+<meta name="citation_author1" content="Anita Nandi" />
+<meta name="citation_author2" content="Tim Lucas" />
+<meta name="citation_author3" content="Rohan Arambepola" />
+<meta name="citation_author4" content="Andre Python" />
+<meta name="citation_publication_date" content="2020-02-19" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=disaggregation" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=disaggregation" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="disaggregation: Disaggregation Modelling" />
+<meta name="og:description" content="Fits disaggregation regression models using 'TMB' ('Template Model Builder'). When the response data are aggregated to polygon level but the predictor variables are at a higher resolution, these models can be useful. Regression models with spatial random fields. A useful reference for disaggregation modelling is Lucas et al. (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1101%2F548719&quot;&gt;doi:10.1101/548719&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=disaggregation" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>disaggregation: Disaggregation Modelling</h2>
+<p>Fits disaggregation regression models using 'TMB' ('Template Model
+    Builder'). When the response data are aggregated to polygon level but
+    the predictor variables are at a higher resolution, these models can be
+    useful. Regression models with spatial random fields. A useful reference for disaggregation modelling is 
+    Lucas et al. (2019) &lt;<a href="https://doi.org/10.1101%2F548719">doi:10.1101/548719</a>&gt;.</p>
+<table summary="Package disaggregation summary">
+<tr>
+<td>Version:</td>
+<td>0.1.3</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../maptools/index.html">maptools</a>, <a href="../raster/index.html">raster</a>, <a href="../foreach/index.html">foreach</a>, <a href="../sp/index.html">sp</a>, parallel, <a href="../doParallel/index.html">doParallel</a>, <a href="../rgeos/index.html">rgeos</a>, <a href="../splancs/index.html">splancs</a>, <a href="../rgdal/index.html">rgdal</a>, <a href="../Matrix/index.html">Matrix</a>, stats, <a href="../TMB/index.html">TMB</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../cowplot/index.html">cowplot</a>, <a href="../sparseMVN/index.html">sparseMVN</a>, utils</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../TMB/index.html">TMB</a>, <a href="../RcppEigen/index.html">RcppEigen</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, INLA, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../SpatialEpi/index.html">SpatialEpi</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-02-19</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Anita Nandi <a href="https://orcid.org/0000-0002-5087-2494"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut,
+    cre],
+  Tim Lucas <a href="https://orcid.org/0000-0003-4694-8107"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [aut],
+  Rohan Arambepola [aut],
+  Andre Python <a href="https://orcid.org/0000-0001-8094-7226"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Anita Nandi  &#x3c;&#x61;&#x6e;&#x69;&#x74;&#x61;&#x2e;&#x6b;&#x2e;&#x6e;&#x61;&#x6e;&#x64;&#x69;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>GNU make</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">disaggregation citation info</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_disaggregation.html">disaggregation results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package disaggregation downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="disaggregation.pdf"> disaggregation.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/disaggregation.html">A short introduction to the disaggregation package</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/disaggregation_0.1.3.tar.gz"> disaggregation_0.1.3.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/disaggregation_0.1.3.zip">disaggregation_0.1.3.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/disaggregation_0.1.3.zip">disaggregation_0.1.3.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/disaggregation_0.1.3.zip">disaggregation_0.1.3.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/disaggregation_0.1.3.tgz">disaggregation_0.1.3.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/disaggregation_0.1.3.tgz">disaggregation_0.1.3.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/disaggregation"> disaggregation archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=disaggregation"><samp>https://CRAN.R-project.org/package=disaggregation</samp></a>
+to link to this page.</p>
+</body>
+</html>

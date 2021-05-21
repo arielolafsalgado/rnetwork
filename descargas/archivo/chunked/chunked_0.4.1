@@ -1,0 +1,23 @@
+Package: chunked
+Type: Package
+Title: Chunkwise Text-File Processing for 'dplyr'
+Version: 0.4.1
+Authors@R: c(person("Edwin", "de Jonge", email="edwindjonge@gmail.com", role=c("aut","cre")))
+Description: Data stored in text file can be processed chunkwise using 'dplyr' commands. These
+    are recorded and executed per data chunk, so large files can be processed with
+    limited memory using the 'LaF' package.
+License: GPL-2
+LazyData: TRUE
+BugReports: https://github.com/edwindj/chunked/issues
+URL: https://github.com/edwindj/chunked
+Depends: dplyr (>= 0.7)
+Imports: LaF, utils, rlang, DBI
+Suggests: testthat, RSQLite, dbplyr
+RoxygenNote: 7.0.2
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2020-03-08 12:46:55 UTC; edwindj
+Author: Edwin de Jonge [aut, cre]
+Maintainer: Edwin de Jonge <edwindjonge@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-03-08 13:00:03 UTC

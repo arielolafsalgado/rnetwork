@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package virtuoso</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Interface to 'Virtuoso' using 'ODBC' [R package virtuoso version 0.1.5]" />
+<meta name="citation_author" content="Carl Boettiger" />
+<meta name="citation_publication_date" content="2020-09-01" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=virtuoso" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=virtuoso" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="virtuoso: Interface to 'Virtuoso' using 'ODBC'" />
+<meta name="og:description" content="Provides users with a simple and convenient mechanism to manage and query a 'Virtuoso' database using the 'DBI' (Data-Base Interface) compatible 'ODBC' (Open Database Connectivity) interface. 'Virtuoso' is a high-performance &quot;universal server,&quot; which can act as both a relational database, supporting standard Structured Query Language ('SQL') queries, while also supporting data following the Resource Description Framework ('RDF') model for Linked Data. 'RDF' data can be queried using 'SPARQL' ('SPARQL' Protocol and 'RDF' Query Language) queries, a graph-based query that supports semantic reasoning. This allows users to leverage the performance of local or remote 'Virtuoso' servers using popular 'R' packages such as 'DBI' and 'dplyr', while also providing a high-performance solution for working with large 'RDF' 'triplestores' from 'R.' The package also provides helper routines to install, launch, and manage a 'Virtuoso' server locally on 'Mac', 'Windows' and 'Linux' platforms using the standard interactive installers from the 'R' command-line. By automatically handling these setup steps, the package can make using 'Virtuoso' considerably faster and easier for a most users to deploy in a local environment. Managing the bulk import of triples from common serializations with a single intuitive command is another key feature of this package. Bulk import performance can be tens to hundreds of times faster than the comparable imports using existing 'R' tools, including 'rdflib' and 'redland' packages. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=virtuoso" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>virtuoso: Interface to 'Virtuoso' using 'ODBC'</h2>
+<p>Provides users with a simple and convenient
+             mechanism to manage and query a 'Virtuoso' database using the 'DBI' (Data-Base Interface)
+             compatible 'ODBC' (Open Database Connectivity) interface.
+             'Virtuoso' is a high-performance "universal server," which can act
+             as both a relational database, supporting standard Structured Query
+             Language ('SQL') queries, while also supporting data following the
+             Resource Description Framework ('RDF') model for Linked Data.
+             'RDF' data can be queried using 'SPARQL' ('SPARQL' Protocol and 'RDF' Query Language)
+             queries, a graph-based query that supports semantic reasoning.
+             This allows users to leverage the performance of local or remote 'Virtuoso' servers using
+             popular 'R' packages such as 'DBI' and 'dplyr', while also providing a 
+             high-performance solution for working with large 'RDF' 'triplestores' from 'R.'
+             The package also provides helper routines to install, launch, and manage
+             a 'Virtuoso' server locally on 'Mac', 'Windows' and 'Linux' platforms using
+             the standard interactive installers from the 'R' command-line.  By 
+             automatically handling these setup steps, the package can make using 'Virtuoso'
+             considerably faster and easier for a most users to deploy in a local
+             environment. Managing the bulk import of triples
+             from common serializations with a single intuitive command is another key
+             feature of this package.  Bulk import performance can be tens to
+             hundreds of times faster than the comparable imports using existing 'R' tools,
+             including 'rdflib' and 'redland' packages.  </p>
+<table summary="Package virtuoso summary">
+<tr>
+<td>Version:</td>
+<td>0.1.5</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../odbc/index.html">odbc</a>, <a href="../processx/index.html">processx</a>, <a href="../DBI/index.html">DBI</a>, utils, <a href="../ini/index.html">ini</a>, <a href="../rappdirs/index.html">rappdirs</a>, <a href="../curl/index.html">curl</a>, <a href="../fs/index.html">fs</a>, <a href="../digest/index.html">digest</a>, <a href="../ps/index.html">ps</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../nycflights13/index.html">nycflights13</a>, <a href="../testthat/index.html">testthat</a>, <a href="../covr/index.html">covr</a>, <a href="../jsonld/index.html">jsonld</a>, <a href="../dplyr/index.html">dplyr</a>, <a href="../spelling/index.html">spelling</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-01</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Carl Boettiger <a href="https://orcid.org/0000-0002-1642-628X"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre, cph],
+  Bryce Mecum <a href="https://orcid.org/0000-0002-0381-3766"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Carl Boettiger  &#x3c;&#x63;&#x62;&#x6f;&#x65;&#x74;&#x74;&#x69;&#x67;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ropensci/virtuoso/issues">https://github.com/ropensci/virtuoso/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/ropensci/virtuoso">https://github.com/ropensci/virtuoso</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>virtuoso-opensource (Linux). For Mac &amp; Windows,
+this package can automate Virtuoso installation.</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_virtuoso.html">virtuoso results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package virtuoso downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="virtuoso.pdf"> virtuoso.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/installation.html">Installation</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/virtuoso_0.1.5.tar.gz"> virtuoso_0.1.5.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/virtuoso_0.1.5.zip">virtuoso_0.1.5.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/virtuoso_0.1.5.zip">virtuoso_0.1.5.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/virtuoso_0.1.5.zip">virtuoso_0.1.5.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/virtuoso_0.1.5.tgz">virtuoso_0.1.5.tgz</a>, r-oldrel: not available </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/virtuoso"> virtuoso archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=virtuoso"><samp>https://CRAN.R-project.org/package=virtuoso</samp></a>
+to link to this page.</p>
+</body>
+</html>

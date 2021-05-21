@@ -1,0 +1,70 @@
+Package: NetLogoR
+Title: Build and Run Spatially Explicit Agent-Based Models
+Description: Build and run spatially explicit
+    agent-based models using only the R platform. 'NetLogoR' follows the same
+    framework as the 'NetLogo' software
+    (Wilensky, 1999 <http://ccl.northwestern.edu/netlogo/>) and is a translation
+    in R of the structure and functions of 'NetLogo'.
+    'NetLogoR' provides new R classes to define model agents and functions to
+    implement spatially explicit agent-based models in the R environment.
+    This package allows benefiting of the fast and easy coding phase from the
+    highly developed 'NetLogo' framework, coupled with the versatility, power
+    and massive resources of the R software.
+    Examples of three models (Ants <http://ccl.northwestern.edu/netlogo/models/Ants>,
+    Butterfly (Railsback and Grimm, 2012) and Wolf-Sheep-Predation
+    <http://ccl.northwestern.edu/netlogo/models/WolfSheepPredation>) written using
+    'NetLogoR' are available. The 'NetLogo' code of the original version of these
+    models is provided alongside.
+    A programming guide inspired from the 'NetLogo' Programming Guide
+    (<https://ccl.northwestern.edu/netlogo/docs/programming.html>) and a dictionary
+    of 'NetLogo' primitives (<https://ccl.northwestern.edu/netlogo/docs/dictionary.html>)
+    equivalences are also available.
+    NOTE: To increment 'time', these functions can use a for loop or can be
+    integrated with a discrete event simulator, such as 'SpaDES'
+    (<https://cran.r-project.org/package=SpaDES>).
+    The suggested package 'fastshp' can be installed with
+    'install.packages("fastshp", repos = "https://rforge.net", type = "source")'.
+URL: http://netlogor.predictiveecology.org,
+        https://github.com/PredictiveEcology/NetLogoR/
+Version: 0.3.6
+Date: 2019-11-25
+Authors@R: c(
+    person("Sarah", "Bauduin", email = "sarahbauduin@hotmail.fr",
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0002-3252-5894")),
+    person("Eliot J B", "McIntire", email = "eliot.mcintire@canada.ca",
+    role = c("aut"), comment=c(ORCID = "0000-0002-6914-8316")),
+    person("Alex M", "Chubaty", email = "alex.chubaty@gmail.com",
+    role = c("aut"), comment = c(ORCID = "0000-0001-7146-8135")),
+    person("Her Majesty the Queen in Right of Canada, as represented by the Minister of Natural Resources Canada",
+    role = "cph")
+    )
+Depends: R (>= 3.5), raster
+Imports: abind, car, CircStats, data.table, grDevices, Hmisc,
+        matrixStats, methods, plyr, quickPlot (>= 0.1.2), sp,
+        SpaDES.tools, stats, rgeos
+Suggests: fastshp, knitr, magrittr, microbenchmark, rmarkdown, sf,
+        SpaDES.core, testthat
+License: GPL-3
+Language: en-US
+Encoding: UTF-8
+VignetteBuilder: knitr, rmarkdown
+BugReports: https://github.com/PredictiveEcology/NetLogoR/issues
+ByteCompile: yes
+LazyData: true
+RoxygenNote: 7.0.0
+Additional_repositories: https://rforge.net
+Collate: 'Agent-classes.R' 'Classes.R' 'NetLogoR-package.R'
+        'worldNLR-classes-methods.R' 'agentMatrix-Class-methods.R'
+        'agentset-functions.R' 'function-arguments.R'
+        'patch-functions.R' 'plot.R' 'world-functions.R' 'quickPlot.R'
+        'spades-functions.R' 'turtle-functions.R'
+NeedsCompilation: no
+Packaged: 2019-11-26 16:45:39 UTC; achubaty
+Author: Sarah Bauduin [aut, cre] (<https://orcid.org/0000-0002-3252-5894>),
+  Eliot J B McIntire [aut] (<https://orcid.org/0000-0002-6914-8316>),
+  Alex M Chubaty [aut] (<https://orcid.org/0000-0001-7146-8135>),
+  Her Majesty the Queen in Right of Canada, as represented by the
+    Minister of Natural Resources Canada [cph]
+Maintainer: Sarah Bauduin <sarahbauduin@hotmail.fr>
+Repository: CRAN
+Date/Publication: 2019-11-27 12:00:02 UTC

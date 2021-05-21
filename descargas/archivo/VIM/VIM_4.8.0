@@ -1,0 +1,37 @@
+Package: VIM
+Version: 4.8.0
+Date: 2019-02-07
+Title: Visualization and Imputation of Missing Values
+Authors@R: c(
+  person("Matthias", "Templ", email = "matthias.templ@gmail.com", role = c("aut","cre")),
+  person("Alexander", "Kowarik", email = "alexander.kowarik@statistik.gv.at", role = c("aut"), comment=c(ORCID="0000-0001-8598-4130")),
+  person("Andreas", "Alfons", role = c("aut")),
+  person("Bernd", "Prantner", role = c("aut")))
+Depends: R (>= 3.1.0),colorspace,grid,data.table(>= 1.9.4)
+Imports: car, grDevices, robustbase, stats, sp,
+        vcd,MASS,nnet,e1071,methods,Rcpp,utils,graphics,laeken, ranger
+Suggests: dplyr, testthat
+Description: New tools for the visualization of missing and/or imputed values
+    are introduced, which can be used for exploring the data and the structure of
+    the missing and/or imputed values. Depending on this structure of the missing
+    values, the corresponding methods may help to identify the mechanism generating
+    the missing values and allows to explore the data including missing values.
+    In addition, the quality of imputation can be visually explored using various
+    univariate, bivariate, multiple and multivariate plot methods. A graphical user
+    interface available in the separate package VIMGUI allows an easy handling of
+    the implemented plot methods.
+LazyData: TRUE
+ByteCompile: TRUE
+License: GPL (>= 2)
+URL: https://github.com/statistikat/VIM
+Repository: CRAN
+LinkingTo: Rcpp
+RoxygenNote: 6.1.1
+NeedsCompilation: yes
+Packaged: 2019-02-07 12:39:46 UTC; kowarik
+Author: Matthias Templ [aut, cre],
+  Alexander Kowarik [aut] (<https://orcid.org/0000-0001-8598-4130>),
+  Andreas Alfons [aut],
+  Bernd Prantner [aut]
+Maintainer: Matthias Templ <matthias.templ@gmail.com>
+Date/Publication: 2019-02-11 12:33:20 UTC

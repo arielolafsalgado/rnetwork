@@ -1,0 +1,28 @@
+Package: uroot
+Version: 2.0-10
+Date: 2019-06-18
+Title: Unit Root Tests for Seasonal Time Series
+Authors@R: c( person(given = "Javier", family = "López-de-Lacalle",
+                     role = c("aut"), 
+                     email = "javlacalle@yahoo.es"),
+              person(given = c("Georgi", "N."), family = "Boshnakov", 
+                     role = c("cre"), 
+                     email = "georgi.boshnakov@manchester.ac.uk") )
+Depends: R (>= 3.0.0), stats
+SystemRequirements: nvcc (release >= 7.1) (NVIDIA Cuda Compiler driver)
+Encoding: UTF-8
+Description: Seasonal unit roots and seasonal stability tests.
+    P-values based on response surface regressions are available for both tests.
+    P-values based on bootstrap are available for seasonal unit root tests.
+    A parallel implementation of the bootstrap method requires a CUDA capable GPU 
+    with compute capability >= 3.0, otherwise a debugging version fully coded in R is used.
+NeedsCompilation: yes
+LazyData: yes
+LazyDataCompression: xz
+License: GPL-2
+Packaged: 2019-06-18 07:00:59 UTC; georgi
+Author: Javier López-de-Lacalle [aut],
+  Georgi N. Boshnakov [cre]
+Maintainer: Georgi N. Boshnakov <georgi.boshnakov@manchester.ac.uk>
+Repository: CRAN
+Date/Publication: 2019-06-24 18:20:03 UTC

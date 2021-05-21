@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package weathercan</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Download Weather Data from Environment and Climate Change Canada [R package weathercan version 0.4.0]" />
+<meta name="citation_author" content="Steffi LaZerte" />
+<meta name="citation_publication_date" content="2020-09-02" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=weathercan" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=weathercan" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="weathercan: Download Weather Data from Environment and Climate Change Canada" />
+<meta name="og:description" content="Provides means for downloading historical weather data from the Environment and Climate Change Canada website (&amp;lt;&lt;a href=&quot;https://climate.weather.gc.ca/historical_data/search_historic_data_e.html&quot;&gt;https://climate.weather.gc.ca/historical_data/search_historic_data_e.html&lt;/a&gt;&amp;gt;). Data can be downloaded from multiple stations and over large date ranges and automatically processed into a single dataset. Tools are also provided to identify stations either by name or proximity to a location." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=weathercan" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>weathercan: Download Weather Data from Environment and Climate Change Canada</h2>
+<p>Provides means for downloading historical weather data from 
+    the Environment and Climate Change Canada website 
+    (&lt;<a href="https://climate.weather.gc.ca/historical_data/search_historic_data_e.html">https://climate.weather.gc.ca/historical_data/search_historic_data_e.html</a>&gt;). 
+    Data can be downloaded from multiple stations and over large date ranges 
+    and automatically processed into a single dataset. Tools are also provided 
+    to identify stations either by name or proximity to a location.</p>
+<table summary="Package weathercan summary">
+<tr>
+<td>Version:</td>
+<td>0.4.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.1.2)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../dplyr/index.html">dplyr</a> (&ge; 0.7.0), <a href="../httr/index.html">httr</a> (&ge; 1.1.0), <a href="../lubridate/index.html">lubridate</a> (&ge; 1.7.1), <a href="../memoise/index.html">memoise</a> (&ge; 1.1.0), methods (&ge; 3.2.2), <a href="../purrr/index.html">purrr</a> (&ge; 0.2.4), <a href="../rlang/index.html">rlang</a> (&ge; 0.1.4), <a href="../readr/index.html">readr</a> (&ge; 1.3.1), <a href="../rvest/index.html">rvest</a> (&ge; 0.3.4), <a href="../stringi/index.html">stringi</a> (&ge;
+1.1.2), <a href="../stringr/index.html">stringr</a> (&ge; 1.4.0), <a href="../tidyr/index.html">tidyr</a> (&ge; 0.4.1), <a href="../tidyselect/index.html">tidyselect</a> (&ge;
+1.0.0), <a href="../xml2/index.html">xml2</a> (&ge; 0.1.2)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../devtools/index.html">devtools</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../htmltools/index.html">htmltools</a>, <a href="../knitr/index.html">knitr</a>, <a href="../leaflet/index.html">leaflet</a>, <a href="../lutz/index.html">lutz</a>, <a href="../naniar/index.html">naniar</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../sf/index.html">sf</a>, <a href="../sp/index.html">sp</a>, <a href="../testthat/index.html">testthat</a>, <a href="../vcr/index.html">vcr</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-02</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Steffi LaZerte <a href="https://orcid.org/0000-0002-7690-8360"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Sam Albers <a href="https://orcid.org/0000-0002-9270-7884"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb],
+  Nick Brown <a href="https://orcid.org/0000-0002-2719-0671"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a> [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Steffi LaZerte  &#x3c;&#x73;&#x74;&#x65;&#x66;&#x66;&#x69;&#x20;&#x61;&#x74;&#x20;&#x73;&#x74;&#x65;&#x66;&#x66;&#x69;&#x2e;&#x63;&#x61;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ropensci/weathercan/issues/">https://github.com/ropensci/weathercan/issues/</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://docs.ropensci.org/weathercan/">https://docs.ropensci.org/weathercan/</a>,
+<a href="https://github.com/ropensci/weathercan/">https://github.com/ropensci/weathercan/</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-CA</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">weathercan citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Hydrology.html">Hydrology</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_weathercan.html">weathercan results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package weathercan downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="weathercan.pdf"> weathercan.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/flags.html">flags</a><br/>
+<a href="vignettes/glossary.html">glossary</a><br/>
+<a href="vignettes/glossary_normals.html">glossary_normals</a><br/>
+<a href="vignettes/interpolate_data.html">interpolation</a><br/>
+<a href="vignettes/normals.html">normals</a><br/>
+<a href="vignettes/weathercan.html">weathercan</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/weathercan_0.4.0.tar.gz"> weathercan_0.4.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/weathercan_0.4.0.zip">weathercan_0.4.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/weathercan_0.4.0.zip">weathercan_0.4.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/weathercan_0.4.0.zip">weathercan_0.4.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/weathercan_0.4.0.tgz">weathercan_0.4.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/weathercan_0.4.0.tgz">weathercan_0.4.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/weathercan"> weathercan archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=weathercan"><samp>https://CRAN.R-project.org/package=weathercan</samp></a>
+to link to this page.</p>
+</body>
+</html>

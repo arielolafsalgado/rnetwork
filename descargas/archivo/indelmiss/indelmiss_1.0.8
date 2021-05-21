@@ -1,0 +1,27 @@
+Package: indelmiss
+Type: Package
+Title: Insertion Deletion Analysis While Accounting for Possible
+        Missing Data
+Version: 1.0.8
+Date: 2018-01-30
+Author: Utkarsh J. Dang and G. Brian Golding
+Maintainer: Utkarsh J. Dang <udang@binghamton.edu>
+Description: Genome-wide gene insertion and deletion rates can be modelled in a maximum 
+    likelihood framework with the additional flexibility of modelling potential missing 
+    data using the models included within. These models simultaneously estimate insertion 
+    and deletion (indel) rates of gene families and proportions of "missing" data for 
+    (multiple) taxa of interest. The likelihood framework is utilized for parameter 
+    estimation. A phylogenetic tree of the taxa and gene presence/absence patterns 
+    (with data ordered by the tips of the tree) are required. See Dang et al.
+    (2016) <doi:10.1534/genetics.116.191973> for more details.
+License: GPL (>= 2)
+Imports: Rcpp (>= 0.11.2), ape (>= 3.2), numDeriv (>= 2012.9.1),
+        phangorn (>= 1.99.13)
+LinkingTo: Rcpp
+Suggests: testthat
+Depends: R (>= 2.10)
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2018-01-30 18:11:50 UTC; udang
+Repository: CRAN
+Date/Publication: 2018-01-30 18:41:18 UTC

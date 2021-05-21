@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package DeLorean</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=DeLorean" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="DeLorean: Estimates Pseudotimes for Single Cell Expression Data" />
+<meta name="og:description" content="Implements the DeLorean model (Reid &amp;amp; Wernisch (2016) &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fbioinformatics%2Fbtw372&quot;&gt;doi:10.1093/bioinformatics/btw372&lt;/a&gt;&amp;gt;) to estimate pseudotimes for single cell expression data. The DeLorean model uses a Gaussian process latent variable model to model uncertainty in the capture time of cross-sectional data." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=DeLorean" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>DeLorean: Estimates Pseudotimes for Single Cell Expression Data</h2>
+<p>Implements the DeLorean model (Reid &amp; Wernisch (2016)
+    &lt;<a href="https://doi.org/10.1093%2Fbioinformatics%2Fbtw372">doi:10.1093/bioinformatics/btw372</a>&gt;) to estimate pseudotimes for
+    single cell expression data. The DeLorean model uses a Gaussian process
+    latent variable model to model uncertainty in the capture time of
+    cross-sectional data.</p>
+<table summary="Package DeLorean summary">
+<tr>
+<td>Version:</td>
+<td>1.5.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>methods, R (&ge; 3.4.0), <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.19)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../rstan/index.html">rstan</a> (&ge; 2.18.1), <a href="../rstantools/index.html">rstantools</a> (&ge; 1.5.1), <a href="../dplyr/index.html">dplyr</a> (&ge; 0.4.3), <a href="../reshape2/index.html">reshape2</a> (&ge; 1.4), <a href="../stringr/index.html">stringr</a> (&ge; 0.6.2), <a href="../ggplot2/index.html">ggplot2</a> (&ge; 1.0.0), <a href="../MASS/index.html">MASS</a> (&ge; 7.3), <a href="../broom/index.html">broom</a>, <a href="../coda/index.html">coda</a>, parallel, <a href="../functional/index.html">functional</a>, <a href="../kernlab/index.html">kernlab</a>, <a href="../fastICA/index.html">fastICA</a>, <a href="../seriation/index.html">seriation</a>, <a href="../lattice/index.html">lattice</a>, <a href="../memoise/index.html">memoise</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../BH/index.html">BH</a> (&ge; 1.66.0-1), <a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.19), <a href="../RcppEigen/index.html">RcppEigen</a> (&ge;
+0.3.3.4.0), <a href="../rstan/index.html">rstan</a> (&ge; 2.18.1), <a href="../StanHeaders/index.html">StanHeaders</a> (&ge; 2.18.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a> (&ge; 1.8), <a href="../knitcitations/index.html">knitcitations</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../formatR/index.html">formatR</a>, <a href="../extrafont/index.html">extrafont</a>, <a href="../testthat/index.html">testthat</a>, <a href="../svglite/index.html">svglite</a>, <a href="../VGAM/index.html">VGAM</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2018-10-17</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>John Reid</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>John Reid  &#x3c;&#x6a;&#x6f;&#x68;&#x6e;&#x62;&#x61;&#x72;&#x6f;&#x6e;&#x72;&#x65;&#x69;&#x64;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>GNU make</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_DeLorean.html">DeLorean results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package DeLorean downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="DeLorean.pdf"> DeLorean.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/DeLorean.html">DeLorean</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/DeLorean_1.5.0.tar.gz"> DeLorean_1.5.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/DeLorean_1.5.0.zip">DeLorean_1.5.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/DeLorean_1.5.0.zip">DeLorean_1.5.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/DeLorean_1.5.0.zip">DeLorean_1.5.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/DeLorean_1.5.0.tgz">DeLorean_1.5.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/DeLorean_1.5.0.tgz">DeLorean_1.5.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/DeLorean"> DeLorean archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=DeLorean"><samp>https://CRAN.R-project.org/package=DeLorean</samp></a>
+to link to this page.</p>
+</body>
+</html>

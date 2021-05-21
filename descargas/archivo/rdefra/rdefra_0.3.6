@@ -1,0 +1,38 @@
+Package: rdefra
+Title: Interact with the UK AIR Pollution Database from DEFRA
+Version: 0.3.6
+Authors@R: c(person(given = "Claudia",
+                    family = "Vitolo",
+                    role = c("aut", "cre"),
+                    email = "cvitolodev@gmail.com",
+                    comment = c(ORCID = "0000-0002-4252-1176")),
+             person("Andrew", "Russell", role = c("ctb"), comment = "This package is part of the KEHRA project and Andrew supervised the technical/software development."),
+             person("Allan", "Tucker", role = c("ctb"), comment = "This package is part of the KEHRA project and Allan supervised the technical/software development."),
+             person("Maëlle", "Salmon", role = c("ctb"), comment = "Maëlle Salmon reviewed the package for rOpenSci, see https://github.com/ropensci/onboarding/issues/68"),
+             person("Hao", "Zhu", role = c("ctb"), comment = "Hao Zhu reviewed the package for rOpenSci, see https://github.com/ropensci/onboarding/issues/68"))
+Maintainer: Claudia Vitolo <cvitolodev@gmail.com>
+URL: https://github.com/ropensci/rdefra
+BugReports: https://github.com/ropensci/rdefra/issues
+Description: Get data from DEFRA's UK-AIR website <https://uk-air.defra.gov.uk/>. It basically scrapes the HTML content.
+Depends: R (>= 2.10)
+Imports: lubridate, tibble, httr, xml2, dplyr, sp, rgdal
+Suggests: testthat, leaflet, parallel, rmarkdown, knitr, ggplot2, zoo,
+        lintr, pkgdown
+VignetteBuilder: knitr
+LazyData: true
+Encoding: UTF-8
+License: GPL-3
+Repository: CRAN
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-03-18 19:08:55 UTC; claudia
+Author: Claudia Vitolo [aut, cre] (<https://orcid.org/0000-0002-4252-1176>),
+  Andrew Russell [ctb] (This package is part of the KEHRA project and
+    Andrew supervised the technical/software development.),
+  Allan Tucker [ctb] (This package is part of the KEHRA project and Allan
+    supervised the technical/software development.),
+  Maëlle Salmon [ctb] (Maëlle Salmon reviewed the package for rOpenSci,
+    see https://github.com/ropensci/onboarding/issues/68),
+  Hao Zhu [ctb] (Hao Zhu reviewed the package for rOpenSci, see
+    https://github.com/ropensci/onboarding/issues/68)
+Date/Publication: 2019-03-18 20:00:11 UTC

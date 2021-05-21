@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package DPQ</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Density, Probability, Quantile ('DPQ') Computations [R package DPQ version 0.4-1]" />
+<meta name="citation_author" content="Martin Maechler" />
+<meta name="citation_publication_date" content="2020-06-19" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=DPQ" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=DPQ" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="DPQ: Density, Probability, Quantile ('DPQ') Computations" />
+<meta name="og:description" content="Computations for approximations and alternatives for the 'DPQ' (Density (pdf), Probability (cdf) and Quantile) functions for probability distributions in R. Primary focus is on (central and non-central) beta, gamma and related distributions such as the chi-squared, F, and t. &amp;ndash; This is for the use of researchers in these numerical approximation implementations, notably for my own use in order to improve R&amp;lsquo;s own pbeta(), qgamma(), ..., etc: {&amp;rsquo;&quot;dpq&quot;'-functions}. &amp;ndash; We plan to complement with 'DPQmpfr' to be suggested later." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=DPQ" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>DPQ: Density, Probability, Quantile ('DPQ') Computations</h2>
+<p>Computations for approximations and alternatives for the 'DPQ'
+  (Density (pdf), Probability (cdf) and Quantile) functions for probability
+  distributions in R.
+  Primary focus is on (central and non-central) beta, gamma and related
+  distributions such as the chi-squared, F, and t.
+  &ndash;
+  This is for the use of researchers in these numerical approximation
+  implementations, notably for my own use in order to improve R&lsquo;s own
+   pbeta(), qgamma(), ..., etc: {&rsquo;"dpq"'-functions}.
+  &ndash; We plan to complement with 'DPQmpfr' to be suggested later.</p>
+<table summary="Package DPQ summary">
+<tr>
+<td>Version:</td>
+<td>0.4-1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.6.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>stats, graphics, methods, utils, <a href="../sfsmisc/index.html">sfsmisc</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../Rmpfr/index.html">Rmpfr</a>, <a href="../Matrix/index.html">Matrix</a>, <a href="../MASS/index.html">MASS</a>, <a href="../mgcv/index.html">mgcv</a>, <a href="../scatterplot3d/index.html">scatterplot3d</a>, <a href="../akima/index.html">akima</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-19</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Martin Maechler <a href="https://orcid.org/0000-0002-8685-9910"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Morten Welinder [ctb] (pgamma C code, see PR#7307, Jan. 2005; further
+    pdhyper()),
+  Wolfgang Viechtbauer [ctb] (dtWV(), 2002),
+  Ross Ihaka [ctb] (src/qchisq_appr.c),
+  Marius Hofert [ctb] (lsum(), lssum()),
+  R-core [ctb] (src/{dpq.h, algdiv.c, pnchisq.c}),
+  R Foundation [cph] (src/qchisq-appr.c)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Martin Maechler  &#x3c;&#x6d;&#x61;&#x65;&#x63;&#x68;&#x6c;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x73;&#x74;&#x61;&#x74;&#x2e;&#x6d;&#x61;&#x74;&#x68;&#x2e;&#x65;&#x74;&#x68;&#x7a;&#x2e;&#x63;&#x68;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Distributions.html">Distributions</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_DPQ.html">DPQ results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package DPQ downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="DPQ.pdf"> DPQ.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Noncentral-Chisq.pdf">Noncentral Chi-Squared Probabilities &ndash; Algorithms in \R</a><br/>
+<a href="vignettes/comp-beta.pdf">Computing Beta(a,b) for Large Arguments</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/DPQ_0.4-1.tar.gz"> DPQ_0.4-1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/DPQ_0.4-1.zip">DPQ_0.4-1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/DPQ_0.4-1.zip">DPQ_0.4-1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/DPQ_0.4-1.zip">DPQ_0.4-1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/DPQ_0.4-1.tgz">DPQ_0.4-1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/DPQ_0.4-1.tgz">DPQ_0.4-1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/DPQ"> DPQ archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package DPQ reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../RoBMA/index.html">RoBMA</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=DPQ"><samp>https://CRAN.R-project.org/package=DPQ</samp></a>
+to link to this page.</p>
+</body>
+</html>

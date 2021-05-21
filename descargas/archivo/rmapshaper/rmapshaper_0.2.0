@@ -1,0 +1,36 @@
+Package: rmapshaper
+Type: Package
+Title: Edit 'GeoJSON' and Spatial Objects
+Version: 0.2.0
+Date: 2017-02-15
+Authors@R: c(person("Andy", "Teucher", role = c("aut", "cre"),
+    email = "andy.teucher@gmail.com"), 
+    person("Kenton", "Russell", role = "aut", 
+    email="kent.russell@timelyportfolio.com", 
+    comment = "JavaScript support"), 
+    person("Matthew", "Bloch", role = "cph", 
+    comment = "mapshaper Javascript library"))
+Description: Edit and simplify 'geojson' and 'Spatial' objects.
+    This is wrapper around the 'mapshaper' 'javascript' library
+    <https://github.com/mbloch/mapshaper/> to perform topologically-aware
+    polygon simplification, as well as other operations such as clipping,
+    erasing, dissolving, and converting 'multi-part' to 'single-part' geometries.
+    It relies on the 'geojsonio' package for working with 'geojson' objects,
+    and the 'sp' and 'rgdal' packages for working with 'Spatial' objects.
+License: MIT + file LICENSE
+URL: https://github.com/ateucher/rmapshaper
+BugReports: https://github.com/ateucher/rmapshaper/issues
+LazyData: TRUE
+Imports: rgdal (>= 1.1-10), sp (>= 1.2-1), V8 (>= 1.0.2), geojsonio (>=
+        0.3.0), geojsonlint (>= 0.1.0), readr (>= 0.2.2), methods
+Suggests: testthat, rgeos, knitr, rmarkdown, magrittr
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-02-16 08:01:09 UTC; ateucher
+Author: Andy Teucher [aut, cre],
+  Kenton Russell [aut] (JavaScript support),
+  Matthew Bloch [cph] (mapshaper Javascript library)
+Maintainer: Andy Teucher <andy.teucher@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-02-16 10:57:47

@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package staRdom</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="PARAFAC Analysis of EEMs from DOM [R package staRdom version 1.1.14]" />
+<meta name="citation_author1" content="Matthias Pucher" />
+<meta name="citation_author2" content="Daniel Graeber" />
+<meta name="citation_publication_date" content="2020-07-28" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=staRdom" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=staRdom" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="staRdom: PARAFAC Analysis of EEMs from DOM" />
+<meta name="og:description" content="This is a user-friendly way to run a parallel factor (PARAFAC) analysis (Harshman, 1971) &amp;lt;&lt;a href=&quot;https://doi.org/10.1121%2F1.1977523&quot;&gt;doi:10.1121/1.1977523&lt;/a&gt;&amp;gt; on excitation emission matrix (EEM) data from dissolved organic matter (DOM) samples (Murphy et al., 2013) &amp;lt;&lt;a href=&quot;https://doi.org/10.1039%2Fc3ay41160e&quot;&gt;doi:10.1039/c3ay41160e&lt;/a&gt;&amp;gt;. The analysis includes profound methods for model validation. Some additional functions allow the calculation of absorbance slope parameters and create beautiful plots." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=staRdom" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>staRdom: PARAFAC Analysis of EEMs from DOM</h2>
+<p>This is a user-friendly way to run a parallel factor (PARAFAC) analysis (Harshman, 1971) &lt;<a href="https://doi.org/10.1121%2F1.1977523">doi:10.1121/1.1977523</a>&gt; on excitation emission matrix (EEM) data from dissolved organic matter (DOM) samples (Murphy et al., 2013) &lt;<a href="https://doi.org/10.1039%2Fc3ay41160e">doi:10.1039/c3ay41160e</a>&gt;. The analysis includes profound methods for model validation. Some additional functions allow the calculation of absorbance slope parameters and create beautiful plots.</p>
+<table summary="Package staRdom summary">
+<tr>
+<td>Version:</td>
+<td>1.1.14</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.6), <a href="../ggplot2/index.html">ggplot2</a> (&ge; 3.3.2), <a href="../eemR/index.html">eemR</a> (&ge; 1.0.1), parallel (&ge;
+3.6)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../dplyr/index.html">dplyr</a> (&ge; 1.0.0), <a href="../tidyr/index.html">tidyr</a> (&ge; 1.1.0), <a href="../stringr/index.html">stringr</a> (&ge; 1.4.0), <a href="../pracma/index.html">pracma</a> (&ge; 2.2.9), <a href="../zoo/index.html">zoo</a> (&ge; 1.8-8), <a href="../tibble/index.html">tibble</a> (&ge; 3.0.3), <a href="../multiway/index.html">multiway</a> (&ge;
+1.0-6), <a href="../GGally/index.html">GGally</a> (&ge; 2.0.0), graphics (&ge; 3.6), <a href="../doParallel/index.html">doParallel</a> (&ge;
+1.0.15), <a href="../drc/index.html">drc</a> (&ge; 3.0-1), <a href="../foreach/index.html">foreach</a> (&ge; 1.5.0), <a href="../data.table/index.html">data.table</a> (&ge;
+1.13.0), <a href="../matrixStats/index.html">matrixStats</a> (&ge; 0.56.0), <a href="../MBA/index.html">MBA</a> (&ge; 0.0-9), <a href="../cdom/index.html">cdom</a> (&ge;
+0.1.0), <a href="../R.matlab/index.html">R.matlab</a> (&ge; 3.6.2), <a href="../readr/index.html">readr</a> (&ge; 1.3.1), <a href="../gtools/index.html">gtools</a> (&ge; 3.8.2)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../plotly/index.html">plotly</a>, <a href="../xlsx/index.html">xlsx</a>, <a href="../knitr/index.html">knitr</a>, <a href="../kableExtra/index.html">kableExtra</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-07-28</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Matthias Pucher [aut, cre],
+  Daniel Graeber [aut, ctb],
+  Stefan Preiner [ctb],
+  Renata Pinto [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Matthias Pucher  &#x3c;&#x6d;&#x61;&#x74;&#x74;&#x68;&#x69;&#x61;&#x73;&#x2e;&#x70;&#x75;&#x63;&#x68;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x77;&#x63;&#x6c;&#x2e;&#x61;&#x63;&#x2e;&#x61;&#x74;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/MatthiasPucher/staRdom/issues">https://github.com/MatthiasPucher/staRdom/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/AGPL-3">AGPL</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://cran.r-project.org/package=staRdom">https://cran.r-project.org/package=staRdom</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">staRdom citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="README">README</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_staRdom.html">staRdom results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package staRdom downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="staRdom.pdf"> staRdom.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/Basic_analysis_of_DOM_samples.html">Correcting raw data, calculating peaks and indices in EEMS and absorbance (slope) parameters</a><br/>
+<a href="vignettes/PARAFAC_analysis_of_EEM.html">PARAFAC analysis of EEM data to separate DOM components</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/staRdom_1.1.14.tar.gz"> staRdom_1.1.14.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/staRdom_1.1.14.zip">staRdom_1.1.14.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/staRdom_1.1.14.zip">staRdom_1.1.14.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/staRdom_1.1.14.zip">staRdom_1.1.14.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/staRdom_1.1.14.tgz">staRdom_1.1.14.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/staRdom_1.1.14.tgz">staRdom_1.1.14.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/staRdom"> staRdom archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=staRdom"><samp>https://CRAN.R-project.org/package=staRdom</samp></a>
+to link to this page.</p>
+</body>
+</html>

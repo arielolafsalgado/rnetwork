@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package ProjectionBasedClustering</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Projection Based Clustering [R package ProjectionBasedClustering version 1.1.5]" />
+<meta name="citation_author1" content="Michael Thrun" />
+<meta name="citation_author2" content="Florian Lerch" />
+<meta name="citation_author3" content="Felix Pape" />
+<meta name="citation_author4" content="Tim Schreier" />
+<meta name="citation_author5" content="Luis Winckelmann" />
+<meta name="citation_publication_date" content="2020-10-25" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=ProjectionBasedClustering" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=ProjectionBasedClustering" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="ProjectionBasedClustering: Projection Based Clustering" />
+<meta name="og:description" content="A clustering approach applicable to every projection method is proposed here. The two-dimensional scatter plot of any projection method can construct a topographic map which displays unapparent data structures by using distance and density information of the data. The generalized U*-matrix renders this visualization in the form of a topographic map, which can be used to automatically define the clusters of high-dimensional data. The whole system is based on Thrun and Ultsch, &quot;Using Projection based Clustering to Find Distance and Density based Clusters in High-Dimensional Data&quot; &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs00357-020-09373-2&quot;&gt;doi:10.1007/s00357-020-09373-2&lt;/a&gt;&amp;gt;. Selecting the correct projection method will result in a visualization in which mountains surround each cluster. The number of clusters can be determined by counting valleys on the topographic map. Most projection methods are wrappers for already available methods in R. By contrast, the neighbor retrieval visualizer (NeRV) is based on C++ source code of the 'dredviz' software package, and the Curvilinear Component Analysis (CCA) is translated from 'MATLAB' ('SOM Toolbox' 2.0) to R." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=ProjectionBasedClustering" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>ProjectionBasedClustering: Projection Based Clustering</h2>
+<p>A clustering approach applicable to every projection method is proposed here. The two-dimensional scatter plot of any projection method can construct a topographic map which displays unapparent data structures by using distance and density information of the data. The generalized U*-matrix renders this visualization in the form of a topographic map, which can be used to automatically define the clusters of high-dimensional data. The whole system is based on Thrun and Ultsch, "Using Projection based Clustering to Find Distance and Density based Clusters in High-Dimensional Data" &lt;<a href="https://doi.org/10.1007%2Fs00357-020-09373-2">doi:10.1007/s00357-020-09373-2</a>&gt;. Selecting the correct projection method will result in a visualization in which mountains surround each cluster. The number of clusters can be determined by counting valleys on the topographic map. Most projection methods are wrappers for already available methods in R. By contrast, the neighbor retrieval visualizer (NeRV) is based on C++ source code of the 'dredviz' software package, and the Curvilinear Component Analysis (CCA) is translated from 'MATLAB' ('SOM Toolbox' 2.0) to R.</p>
+<table summary="Package ProjectionBasedClustering summary">
+<tr>
+<td>Version:</td>
+<td>1.1.5</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../ggplot2/index.html">ggplot2</a>, stats, graphics, <a href="../vegan/index.html">vegan</a>, <a href="../deldir/index.html">deldir</a>, <a href="../geometry/index.html">geometry</a>, <a href="../GeneralizedUmatrix/index.html">GeneralizedUmatrix</a>, <a href="../shiny/index.html">shiny</a>, <a href="../shinyjs/index.html">shinyjs</a>, <a href="../shinythemes/index.html">shinythemes</a>, <a href="../plotly/index.html">plotly</a>, grDevices</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../DataVisualizations/index.html">DataVisualizations</a>, <a href="../fastICA/index.html">fastICA</a>, <a href="../tsne/index.html">tsne</a>, <a href="../FastKNN/index.html">FastKNN</a>, <a href="../MASS/index.html">MASS</a>, <a href="../pcaPP/index.html">pcaPP</a>, <a href="../spdep/index.html">spdep</a>, <a href="../pracma/index.html">pracma</a>, grid, <a href="../mgcv/index.html">mgcv</a>, <a href="../fields/index.html">fields</a>, <a href="../png/index.html">png</a>, <a href="../reshape2/index.html">reshape2</a>, <a href="../Rtsne/index.html">Rtsne</a>, methods, <a href="../dendextend/index.html">dendextend</a>, <a href="../umap/index.html">umap</a>, <a href="../uwot/index.html">uwot</a>, <a href="../DatabionicSwarm/index.html">DatabionicSwarm</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-25</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Michael Thrun [aut, cre, cph],
+  Florian Lerch [aut],
+  Felix Pape [aut],
+  Tim Schreier [aut],
+  Luis Winckelmann [aut],
+  Kristian Nybo [cph],
+  Jarkko Venna [cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Michael Thrun  &#x3c;&#x6d;&#x2e;&#x74;&#x68;&#x72;&#x75;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x78;&#x2e;&#x6e;&#x65;&#x74;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/Mthrun/ProjectionBasedClustering/issues">https://github.com/Mthrun/ProjectionBasedClustering/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://www.deepbionics.org">http://www.deepbionics.org</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>C++11</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">ProjectionBasedClustering citation info</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Cluster.html">Cluster</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_ProjectionBasedClustering.html">ProjectionBasedClustering results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package ProjectionBasedClustering downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="ProjectionBasedClustering.pdf"> ProjectionBasedClustering.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/ProjectionBasedClustering_1.1.5.tar.gz"> ProjectionBasedClustering_1.1.5.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/ProjectionBasedClustering_1.1.2.zip">ProjectionBasedClustering_1.1.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/ProjectionBasedClustering_1.1.5.zip">ProjectionBasedClustering_1.1.5.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/ProjectionBasedClustering_1.1.2.zip">ProjectionBasedClustering_1.1.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/ProjectionBasedClustering_1.1.5.tgz">ProjectionBasedClustering_1.1.5.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/ProjectionBasedClustering_1.1.5.tgz">ProjectionBasedClustering_1.1.5.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/ProjectionBasedClustering"> ProjectionBasedClustering archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package ProjectionBasedClustering reverse dependencies">
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../DatabionicSwarm/index.html">DatabionicSwarm</a>, <a href="../FCPS/index.html">FCPS</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=ProjectionBasedClustering"><samp>https://CRAN.R-project.org/package=ProjectionBasedClustering</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package brglm2</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Bias Reduction in Generalized Linear Models [R package brglm2 version 0.7.0]" />
+<meta name="citation_author" content="Ioannis Kosmidis" />
+<meta name="citation_publication_date" content="2020-10-19" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=brglm2" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=brglm2" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="brglm2: Bias Reduction in Generalized Linear Models" />
+<meta name="og:description" content="Estimation and inference from generalized linear models based on various methods for bias reduction and maximum penalized likelihood with powers of the Jeffreys prior as penalty. The 'brglmFit' fitting method can achieve reduction of estimation bias by solving either the mean bias-reducing adjusted score equations in Firth (1993) &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fbiomet%2F80.1.27&quot;&gt;doi:10.1093/biomet/80.1.27&lt;/a&gt;&amp;gt; and Kosmidis and Firth (2009) &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fbiomet%2Fasp055&quot;&gt;doi:10.1093/biomet/asp055&lt;/a&gt;&amp;gt;, or the median bias-reduction adjusted score equations in Kenne et al. (2017) &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fbiomet%2Fasx046&quot;&gt;doi:10.1093/biomet/asx046&lt;/a&gt;&amp;gt;, or through the direct subtraction of an estimate of the bias of the maximum likelihood estimator from the maximum likelihood estimates as in Cordeiro and McCullagh (1991) &amp;lt;&lt;a href=&quot;http://www.jstor.org/stable/2345592&quot;&gt;http://www.jstor.org/stable/2345592&lt;/a&gt;&amp;gt;. See Kosmidis et al (2020) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs11222-019-09860-6&quot;&gt;doi:10.1007/s11222-019-09860-6&lt;/a&gt;&amp;gt; for more details. Estimation in all cases takes place via a quasi Fisher scoring algorithm, and S3 methods for the construction of of confidence intervals for the reduced-bias estimates are provided. In the special case of generalized linear models for binomial and multinomial responses (both ordinal and nominal), the adjusted score approaches to mean and media bias reduction have been found to return estimates with improved frequentist properties, that are also always finite, even in cases where the maximum likelihood estimates are infinite (e.g. complete and quasi-complete separation; see Kosmidis and Firth, 2020 &amp;lt;&lt;a href=&quot;https://doi.org/10.1093%2Fbiomet%2Fasaa052&quot;&gt;doi:10.1093/biomet/asaa052&lt;/a&gt;&amp;gt;, for a proof for mean bias reduction in logistic regression). 'brglm2' also provides pre-fit and post-fit methods for detecting separation and infinite maximum likelihood estimates in binomial response generalized linear models." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=brglm2" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>brglm2: Bias Reduction in Generalized Linear Models</h2>
+<p>Estimation and inference from generalized linear models based on various methods for bias reduction and maximum penalized likelihood with powers of the Jeffreys prior as penalty. The 'brglmFit' fitting method can achieve reduction of estimation bias by solving either the mean bias-reducing adjusted score equations in Firth (1993) &lt;<a href="https://doi.org/10.1093%2Fbiomet%2F80.1.27">doi:10.1093/biomet/80.1.27</a>&gt; and Kosmidis and Firth (2009) &lt;<a href="https://doi.org/10.1093%2Fbiomet%2Fasp055">doi:10.1093/biomet/asp055</a>&gt;, or the median bias-reduction adjusted score equations in Kenne et al. (2017) &lt;<a href="https://doi.org/10.1093%2Fbiomet%2Fasx046">doi:10.1093/biomet/asx046</a>&gt;, or through the direct subtraction of an estimate of the bias of the maximum likelihood estimator from the maximum likelihood estimates as in Cordeiro and McCullagh (1991) &lt;<a href="http://www.jstor.org/stable/2345592">http://www.jstor.org/stable/2345592</a>&gt;. See Kosmidis et al (2020) &lt;<a href="https://doi.org/10.1007%2Fs11222-019-09860-6">doi:10.1007/s11222-019-09860-6</a>&gt; for more details. Estimation in all cases takes place via a quasi Fisher scoring algorithm, and S3 methods for the construction of of confidence intervals for the reduced-bias estimates are provided. In the special case of generalized linear models for binomial and multinomial responses (both ordinal and nominal), the adjusted score approaches to mean and media bias reduction have been found to return estimates with improved frequentist properties, that are also always finite, even in cases where the maximum likelihood estimates are infinite (e.g. complete and quasi-complete separation; see Kosmidis and Firth, 2020 &lt;<a href="https://doi.org/10.1093%2Fbiomet%2Fasaa052">doi:10.1093/biomet/asaa052</a>&gt;, for a proof for mean bias reduction in logistic regression). 'brglm2' also provides pre-fit and post-fit methods for detecting separation and infinite maximum likelihood estimates in binomial response generalized linear models.</p>
+<table summary="Package brglm2 summary">
+<tr>
+<td>Version:</td>
+<td>0.7.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.3.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../MASS/index.html">MASS</a>, stats, <a href="../Matrix/index.html">Matrix</a>, graphics, <a href="../nnet/index.html">nnet</a>, <a href="../enrichwith/index.html">enrichwith</a>, <a href="../lpSolveAPI/index.html">lpSolveAPI</a>, <a href="../numDeriv/index.html">numDeriv</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a>, <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../covr/index.html">covr</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-19</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Ioannis Kosmidis <a href="https://orcid.org/0000-0003-1556-0302"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Kjell Konis [ctb],
+  Euloge Clovis Kenne Pagui [ctb],
+  Nicola Sartori [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Ioannis Kosmidis  &#x3c;&#x69;&#x6f;&#x61;&#x6e;&#x6e;&#x69;&#x73;&#x2e;&#x6b;&#x6f;&#x73;&#x6d;&#x69;&#x64;&#x69;&#x73;&#x20;&#x61;&#x74;&#x20;&#x77;&#x61;&#x72;&#x77;&#x69;&#x63;&#x6b;&#x2e;&#x61;&#x63;&#x2e;&#x75;&#x6b;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/ikosmidis/brglm2/issues">https://github.com/ikosmidis/brglm2/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/ikosmidis/brglm2">https://github.com/ikosmidis/brglm2</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">brglm2 citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_brglm2.html">brglm2 results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package brglm2 downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="brglm2.pdf"> brglm2.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/adjacent.html">Adjacent category logit models using brglm2</a><br/>
+<a href="vignettes/iteration.html">Bias reduction in generalized linear models</a><br/>
+<a href="vignettes/multinomial.html">Multinomial logistic regression using brglm2</a><br/>
+<a href="vignettes/separation.html">Detecting separation and infinite estimates in binomial response GLMs</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/brglm2_0.7.0.tar.gz"> brglm2_0.7.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/brglm2_0.7.0.zip">brglm2_0.7.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/brglm2_0.7.0.zip">brglm2_0.7.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/brglm2_0.7.0.zip">brglm2_0.7.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/brglm2_0.7.0.tgz">brglm2_0.7.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/brglm2_0.7.0.tgz">brglm2_0.7.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/brglm2"> brglm2 archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package brglm2 reverse dependencies">
+<tr>
+<td>Reverse&nbsp;imports:</td>
+<td><a href="../SOIL/index.html">SOIL</a></td>
+</tr>
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../detectseparation/index.html">detectseparation</a>, <a href="../parameters/index.html">parameters</a>, <a href="../WeightIt/index.html">WeightIt</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=brglm2"><samp>https://CRAN.R-project.org/package=brglm2</samp></a>
+to link to this page.</p>
+</body>
+</html>

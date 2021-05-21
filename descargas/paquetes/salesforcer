@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package salesforcer</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="An Implementation of 'Salesforce' APIs Using Tidy Principles [R package salesforcer version 0.2.2]" />
+<meta name="citation_author" content="Steven M. Mortimer" />
+<meta name="citation_publication_date" content="2020-09-09" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=salesforcer" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=salesforcer" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="salesforcer: An Implementation of 'Salesforce' APIs Using Tidy Principles" />
+<meta name="og:description" content="Functions connecting to the 'Salesforce' Platform APIs (REST, SOAP, Bulk 1.0, Bulk 2.0, Metadata, Reports and Dashboards) &amp;lt;&lt;a href=&quot;https://trailhead.salesforce.com/en/content/learn/modules/api_basics/api_basics_overview&quot;&gt;https://trailhead.salesforce.com/en/content/learn/modules/api_basics/api_basics_overview&lt;/a&gt;&amp;gt;. &quot;API&quot; is an acronym for &quot;application programming interface&quot;. Most all calls from these APIs are supported as they use CSV, XML or JSON data that can be parsed into R data structures. For more details please see the 'Salesforce' API documentation and this package's website &amp;lt;&lt;a href=&quot;https://stevenmmortimer.github.io/salesforcer/&quot;&gt;https://stevenmmortimer.github.io/salesforcer/&lt;/a&gt;&amp;gt; for more information, documentation, and examples." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=salesforcer" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>salesforcer: An Implementation of 'Salesforce' APIs Using Tidy Principles</h2>
+<p>Functions connecting to the 'Salesforce' Platform APIs (REST, SOAP, 
+    Bulk 1.0, Bulk 2.0, Metadata, Reports and Dashboards) 
+    &lt;<a href="https://trailhead.salesforce.com/en/content/learn/modules/api_basics/api_basics_overview">https://trailhead.salesforce.com/en/content/learn/modules/api_basics/api_basics_overview</a>&gt;. 
+    "API" is an acronym for "application programming interface". Most all calls 
+    from these APIs are supported as they use CSV, XML or JSON data that can be 
+    parsed into R data structures. For more details please see the 'Salesforce' 
+    API documentation and this package's website 
+    &lt;<a href="https://stevenmmortimer.github.io/salesforcer/">https://stevenmmortimer.github.io/salesforcer/</a>&gt; for more information, 
+    documentation, and examples.</p>
+<table summary="Package salesforcer summary">
+<tr>
+<td>Version:</td>
+<td>0.2.2</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.6.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>methods (&ge; 3.6.0), utils (&ge; 3.6.0), stats (&ge; 3.6.0), <a href="../dplyr/index.html">dplyr</a> (&ge; 1.0.0), <a href="../purrr/index.html">purrr</a> (&ge; 0.3.4), <a href="../vctrs/index.html">vctrs</a> (&ge; 0.3.4), <a href="../tibble/index.html">tibble</a> (&ge;
+3.0.3), <a href="../readr/index.html">readr</a> (&ge; 1.3.1), <a href="../lubridate/index.html">lubridate</a> (&ge; 1.7.8), <a href="../rlang/index.html">rlang</a> (&ge;
+0.4.7), <a href="../httr/index.html">httr</a> (&ge; 1.4.1), <a href="../curl/index.html">curl</a> (&ge; 4.3), <a href="../data.table/index.html">data.table</a> (&ge; 1.13.0), <a href="../XML/index.html">XML</a> (&ge; 3.99-0.3), <a href="../xml2/index.html">xml2</a> (&ge; 1.3.2), <a href="../jsonlite/index.html">jsonlite</a> (&ge; 1.6.1), <a href="../rlist/index.html">rlist</a> (&ge; 0.4.6.1), <a href="../zip/index.html">zip</a> (&ge; 2.0.4), <a href="../base64enc/index.html">base64enc</a> (&ge; 0.1-3), <a href="../mime/index.html">mime</a> (&ge;
+0.9), <a href="../lifecycle/index.html">lifecycle</a> (&ge; 0.2.0)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../testthat/index.html">testthat</a>, <a href="../spelling/index.html">spelling</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../here/index.html">here</a>, <a href="../microbenchmark/index.html">microbenchmark</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../sessioninfo/index.html">sessioninfo</a>, <a href="../RForcecom/index.html">RForcecom</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-09-09</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Steven M. Mortimer [aut, cre],
+  Takekatsu Hiramura [ctb],
+  Jennifer Bryan [ctb, cph],
+  Joanna Zhao [ctb, cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Steven M. Mortimer  &#x3c;&#x6d;&#x6f;&#x72;&#x74;&#x69;&#x6d;&#x65;&#x72;&#x2e;&#x73;&#x74;&#x65;&#x76;&#x65;&#x6e;&#x2e;&#x6d;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/StevenMMortimer/salesforcer/issues">https://github.com/StevenMMortimer/salesforcer/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/StevenMMortimer/salesforcer">https://github.com/StevenMMortimer/salesforcer</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>en-US</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_salesforcer.html">salesforcer results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package salesforcer downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="salesforcer.pdf"> salesforcer.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/getting-started.html">Getting Started</a><br/>
+<a href="vignettes/passing-control-args.html">Passing Control Args</a><br/>
+<a href="vignettes/supported-queries.html">Supported Queries</a><br/>
+<a href="vignettes/transitioning-from-RForcecom.html">Transitioning from RForcecom</a><br/>
+<a href="vignettes/working-with-attachments.html">Working with Attachments</a><br/>
+<a href="vignettes/working-with-bulk-apis.html">Working with Bulk APIs</a><br/>
+<a href="vignettes/working-with-metadata.html">Working with Metadata</a><br/>
+<a href="vignettes/working-with-reports.html">Working with Reports</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/salesforcer_0.2.2.tar.gz"> salesforcer_0.2.2.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/salesforcer_0.2.2.zip">salesforcer_0.2.2.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/salesforcer_0.2.2.zip">salesforcer_0.2.2.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/salesforcer_0.2.2.zip">salesforcer_0.2.2.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/salesforcer_0.2.2.tgz">salesforcer_0.2.2.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/salesforcer_0.2.2.tgz">salesforcer_0.2.2.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/salesforcer"> salesforcer archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=salesforcer"><samp>https://CRAN.R-project.org/package=salesforcer</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,30 @@
+Package: tadaatoolbox
+Type: Package
+Date: 2016-02-12
+Title: Helpers for Data Analysis and Presentation Focused on Undergrad
+        Psychology
+Version: 0.8.0
+Authors@R: c(person('Lukas', 'Burk', email = 'lukas@quantenbrot.de', role = c('aut', 'cre')),
+           person('Tobias', 'Anton', email = 'unsichtbarer@quantenbrot.de', role = c('aut')))
+Description: Contains functions for the easy display of statistical tests as well as
+    some convenience functions for recoding or data cleanup. It is meant to ease existing workflows
+    with packages like 'sjPlot', 'dplyr', and 'ggplot2'. The primary components are the functions
+    prefixed with 'tadaa_', which are built to work in an interactive environment, but also print
+    tidy markdown tables powered by 'pixiedist' for the creation of 'RMarkdown' reports.
+License: MIT + file LICENSE
+LazyData: TRUE
+Encoding: UTF-8
+Depends: R (>= 3.1.0)
+Suggests: testthat
+Imports: stats, broom, dplyr, pwr, pixiedust, car, ggplot2, lazyeval,
+        sjmisc, haven, ryouready, vcd
+RoxygenNote: 5.0.1
+URL: https://github.com/tadaadata/tadaatoolbox
+BugReports: https://github.com/tadaadata/tadaatoolbox/issues
+NeedsCompilation: no
+Packaged: 2016-02-12 23:50:25 UTC; Lukas
+Author: Lukas Burk [aut, cre],
+  Tobias Anton [aut]
+Maintainer: Lukas Burk <lukas@quantenbrot.de>
+Repository: CRAN
+Date/Publication: 2016-02-13 01:01:49

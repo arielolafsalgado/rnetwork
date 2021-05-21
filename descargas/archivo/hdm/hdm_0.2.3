@@ -1,0 +1,34 @@
+Package: hdm
+Type: Package
+Title: High-Dimensional Metrics
+Version: 0.2.3
+Date: 2018-01-22
+Authors@R: c(person("Martin", "Spindler", email="martin.spindler@gmx.de", role=c("cre", "aut")), person("Victor", "Chernozhukov", role="aut"), person("Christian", "Hansen", role="aut"))
+Depends: R (>= 3.0.0)
+Description: Implementation of selected high-dimensional statistical and
+    econometric methods for estimation and inference. Efficient estimators and
+    uniformly valid confidence intervals for various low-dimensional causal/
+    structural parameters are provided which appear in high-dimensional
+    approximately sparse models. Including functions for fitting heteroscedastic
+    robust Lasso regressions with non-Gaussian errors and for instrumental variable
+    (IV) and treatment effect estimation in a high-dimensional setting. Moreover,
+    the methods enable valid post-selection inference and rely on a theoretically
+    grounded, data-driven choice of the penalty.
+    Chernozhukov, Hansen, Spindler (2016) <arXiv:1603.01700>.
+License: MIT + file LICENSE
+LazyData: TRUE
+Imports: MASS, glmnet, ggplot2, checkmate, Formula, methods
+Suggests: testthat, knitr, xtable
+VignetteBuilder: knitr
+RoxygenNote: 5.0.1
+Author: Martin Spindler [cre, aut],
+  Victor Chernozhukov [aut],
+  Christian Hansen [aut]
+Maintainer: Martin Spindler <martin.spindler@gmx.de>
+Repository: CRAN
+Repository/R-Forge/Project: hdm
+Repository/R-Forge/Revision: 132
+Repository/R-Forge/DateTimeStamp: 2018-01-23 18:27:16
+Date/Publication: 2018-01-23 21:50:45 UTC
+NeedsCompilation: no
+Packaged: 2018-01-23 18:47:01 UTC; rforge

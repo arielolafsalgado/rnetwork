@@ -1,0 +1,28 @@
+Package: dat
+Type: Package
+Title: Tools for Data Manipulation
+Version: 0.3.0
+Authors@R: person("Sebastian", "Warnholz", role = c("aut", "cre"),
+                  email = "wahani@gmail.com")
+BugReports: https://github.com/wahani/dat/issues
+Description: An implementation of common higher order functions with syntactic
+    sugar for anonymous function. Provides also a link to 'dplyr' for common
+    transformations on data frames to work around non standard evaluation by
+    default.
+License: MIT + file LICENSE
+Depends: methods, aoos
+Imports: data.table, dplyr, Formula, magrittr, progress, tibble
+Suggests: lintr, knitr, rbenchmark, nycflights13, rmarkdown, testthat
+VignetteBuilder: knitr
+Encoding: UTF-8
+ByteCompile: TRUE
+RoxygenNote: 6.0.1
+Collate: 'NAMESPACE.R' 'FormulaList.R' 'helper.R' 'DataFrame.R'
+        'as.function.R' 'bindRows.R' 'extract.R' 'map.R' 'mutar.R'
+        'pipeExport.R' 'replace.R' 'verboseApply.R'
+NeedsCompilation: no
+Packaged: 2017-07-22 15:21:25 UTC; sebastian
+Author: Sebastian Warnholz [aut, cre]
+Maintainer: Sebastian Warnholz <wahani@gmail.com>
+Repository: CRAN
+Date/Publication: 2017-07-22 20:52:37 UTC

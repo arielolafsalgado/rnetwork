@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package fasstr</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Analyze, Summarize, and Visualize Daily Streamflow Data [R package fasstr version 0.3.1]" />
+<meta name="citation_author1" content="Jon Goetz" />
+<meta name="citation_author2" content="Carl James Schwarz" />
+<meta name="citation_publication_date" content="2020-01-09" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=fasstr" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=fasstr" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="fasstr: Analyze, Summarize, and Visualize Daily Streamflow Data" />
+<meta name="og:description" content="The Flow Analysis Summary Statistics Tool for R, 'fasstr', provides various functions to clean and screen daily stream discharge data; calculate and visualize various summary statistics and metrics; and compute annual trending (using 'zyp' package methods &amp;lt;&lt;a href=&quot;https://CRAN.R-project.org/package=zyp&quot;&gt;https://CRAN.R-project.org/package=zyp&lt;/a&gt;&amp;gt;) and volume frequency analyses (using methods similar to HEC-SSP (2019) &amp;lt;&lt;a href=&quot;https://www.hec.usace.army.mil/software/hec-ssp/&quot;&gt;https://www.hec.usace.army.mil/software/hec-ssp/&lt;/a&gt;&amp;gt;). It features useful function arguments for filtering of and handling dates, customizing data and metrics, and the ability to pull daily data directly from the Water Survey of Canada hydrometric database (&amp;lt;&lt;a href=&quot;https://collaboration.cmc.ec.gc.ca/cmc/hydrometrics/www/&quot;&gt;https://collaboration.cmc.ec.gc.ca/cmc/hydrometrics/www/&lt;/a&gt;&amp;gt;)." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=fasstr" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>fasstr: Analyze, Summarize, and Visualize Daily Streamflow Data</h2>
+<p>The Flow Analysis Summary Statistics Tool for R, 'fasstr', provides various 
+    functions to clean and screen daily stream discharge data; calculate and visualize various summary statistics
+    and metrics; and compute annual trending (using 'zyp' package methods &lt;<a href="https://CRAN.R-project.org/package=zyp">https://CRAN.R-project.org/package=zyp</a>&gt;)
+    and volume frequency analyses (using methods similar to HEC-SSP (2019) 
+    &lt;<a href="https://www.hec.usace.army.mil/software/hec-ssp/">https://www.hec.usace.army.mil/software/hec-ssp/</a>&gt;). It features useful function arguments for filtering of and
+    handling dates, customizing data and metrics, and the ability to pull daily data directly from the Water Survey
+    of Canada hydrometric database (&lt;<a href="https://collaboration.cmc.ec.gc.ca/cmc/hydrometrics/www/">https://collaboration.cmc.ec.gc.ca/cmc/hydrometrics/www/</a>&gt;).</p>
+<table summary="Package fasstr summary">
+<tr>
+<td>Version:</td>
+<td>0.3.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.2.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../dplyr/index.html">dplyr</a> (&ge; 0.8.1), <a href="../e1071/index.html">e1071</a> (&ge; 1.7.0.1), <a href="../fitdistrplus/index.html">fitdistrplus</a> (&ge;
+1.0.14), <a href="../ggplot2/index.html">ggplot2</a> (&ge; 3.1.0), grDevices, <a href="../lubridate/index.html">lubridate</a> (&ge; 1.7.4), <a href="../PearsonDS/index.html">PearsonDS</a> (&ge; 1.1), <a href="../plyr/index.html">plyr</a> (&ge; 1.8.4), <a href="../purrr/index.html">purrr</a> (&ge; 0.3.2), <a href="../RcppRoll/index.html">RcppRoll</a> (&ge; 0.3.0), <a href="../scales/index.html">scales</a> (&ge; 1.0.0), <a href="../tidyhydat/index.html">tidyhydat</a> (&ge; 0.4.0), <a href="../tidyr/index.html">tidyr</a> (&ge;
+0.8.3), <a href="../openxlsx/index.html">openxlsx</a> (&ge; 4.1.0), <a href="../zyp/index.html">zyp</a> (&ge; 0.10.1.1)</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-01-09</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Jon Goetz [aut, cre],
+  Carl James Schwarz [aut],
+  Robin Pike [ctb],
+  Province of British Columbia [cph]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Jon Goetz  &#x3c;&#x6a;&#x6f;&#x6e;&#x2e;&#x67;&#x6f;&#x65;&#x74;&#x7a;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6f;&#x76;&#x2e;&#x62;&#x63;&#x2e;&#x63;&#x61;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/bcgov/fasstr/issues">https://github.com/bcgov/fasstr/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/bcgov/fasstr">https://github.com/bcgov/fasstr</a>,
+<a href="https://www2.gov.bc.ca/gov/content/environment/air-land-water/water">https://www2.gov.bc.ca/gov/content/environment/air-land-water/water</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Hydrology.html">Hydrology</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_fasstr.html">fasstr results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package fasstr downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="fasstr.pdf"> fasstr.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/fasstr_frequency_analysis.html">Computing Frequency Analyses with fasstr</a><br/>
+<a href="vignettes/fasstr_full_analysis.html">Computing a Full Analysis with fasstr</a><br/>
+<a href="vignettes/fasstr_trending_analysis.html">Computing Annual Trends with fasstr</a><br/>
+<a href="vignettes/fasstr_under_the_hood.html">Under the fasstr Hood</a><br/>
+<a href="vignettes/fasstr_users_guide.html">fasstr R Package Users Guide</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/fasstr_0.3.1.tar.gz"> fasstr_0.3.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/fasstr_0.3.1.zip">fasstr_0.3.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/fasstr_0.3.1.zip">fasstr_0.3.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/fasstr_0.3.1.zip">fasstr_0.3.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/fasstr_0.3.1.tgz">fasstr_0.3.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/fasstr_0.3.1.tgz">fasstr_0.3.1.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=fasstr"><samp>https://CRAN.R-project.org/package=fasstr</samp></a>
+to link to this page.</p>
+</body>
+</html>

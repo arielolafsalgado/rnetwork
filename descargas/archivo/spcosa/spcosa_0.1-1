@@ -1,0 +1,79 @@
+Package: spcosa
+Type: Package
+Title: Spatial Coverage Sampling
+Version: 0.1-1
+Date: 2009-03-13
+Author: D.J.J. Walvoort, D.J. Brus, and J.J. de Gruijter
+Maintainer: Dennis Walvoort <dennis.walvoort@wur.nl>
+Description: Spatial coverage sampling and random sampling from compact
+        geographical strata created by k-means.
+Depends: R (>= 2.8.0), rJava (>= 0.6-1), methods, ggplot2 (>= 0.8.1),
+        rgdal
+Suggests: classGraph, gpclib, gstat, rgl
+Imports: sp (>= 0.9-28)
+SystemRequirements: Java (>= 6.0)
+License: GPL (>= 3)
+LazyLoad: yes
+Collate: class_Stratification.R class_CompactStratification.R
+        class_CompactStratificationEqualArea.R
+        class_CompactStratificationPriorPoints.R
+        class_SamplingPattern.R class_SamplingPatternPurposive.R
+        class_SamplingPatternCentroids.R
+        class_SamplingPatternPriorPoints.R
+        class_SamplingPatternRandom.R
+        class_SamplingPatternRandomSamplingUnits.R
+        class_SamplingPatternRandomComposite.R class_Statistic.R
+        class_SpatialMean.R class_SamplingVariance.R
+        class_StandardError.R class_SpatialVariance.R
+        class_SpatialCumulativeDistributionFunction.R
+        generic_estimate.R generic_getArea.R generic_getRelativeArea.R
+        generic_getAttributes.R generic_getCellSize.R
+        generic_getCentroid.R generic_getSampleSize.R
+        generic_getNumberOfCells.R generic_getNumberOfStrata.R
+        generic_getObjectiveFunctionValue.R generic_stratify.R
+        generic_plot.R
+        method_estimate-SamplingVariance-CompactStratification-SamplingPatternRandom-data.frame.R
+        method_estimate-SamplingVariance-CompactStratificationEqualArea-SamplingPatternRandomComposite-data.frame.R
+        method_estimate-SpatialCumulativeDistributionFunction-CompactStratification-SamplingPatternRandom-data.frame.R
+        method_estimate-SpatialMean-CompactStratification-SamplingPatternRandom-data.frame.R
+        method_estimate-SpatialMean-CompactStratificationEqualArea-SamplingPatternRandomComposite-data.frame.R
+        method_estimate-SpatialVariance-CompactStratification-SamplingPatternRandom-data.frame.R
+        method_estimate-StandardError-CompactStratification-SamplingPatternRandom-data.frame.R
+        method_estimate-character-CompactStratificationEqualArea-SamplingPatternRandomComposite-data.frame.R
+        method_estimate-character-CompactStratification-SamplingPatternRandomSamplingUnits-data.frame.R
+        method_getArea-CompactStratification.R
+        method_getRelativeArea-CompactStratification.R
+        method_getCellSize-CompactStratification.R
+        method_getCentroid-CompactStratification.R
+        method_getNumberOfCells-CompactStratification.R
+        method_getNumberOfStrata-CompactStratification.R
+        method_getObjectiveFunctionValue-CompactStratification.R
+        method_getSampleSize-SamplingPattern.R
+        method_getSampleSize-SamplingPatternRandomComposite.R
+        method_initialize-CompactStratification.R
+        method_initialize-CompactStratificationPriorPoints.R
+        method_stratify-SpatialPixels.R
+        method_stratify-SpatialPolygons.R
+        method_plot-CompactStratification.R
+        method_plot-SamplingPattern.R
+        method_plot-SamplingPatternPriorPoints.R
+        method_plot-SamplingPatternRandomComposite.R
+        method_plot-CompactStratification-SamplingPattern.R
+        method_plot-CompactStratification-SamplingPatternPriorPoints.R
+        method_plot-CompactStratification-SamplingPatternRandomComposite.R
+        method_spsample_CompactStratificationEqualArea-numeric-character.R
+        method_spsample_CompactStratification-missing-missing.R
+        method_spsample_CompactStratification-numeric-missing.R
+        method_spsample_CompactStratificationPriorPoints-missing.R
+        method_setAs_SamplingPattern-data.frame.R
+        method_setAs_SamplingPattern-SpatialPoints.R
+        method_setAs_SamplingPatternRandomComposite-data.frame.R
+        method_setAs_SamplingPatternRandomComposite-SpatialPointsDataFrame.R
+        method_setAs_CompactStratification-data.frame.R
+        method_setAs_CompactStratification-SpatialPixels.R
+        method_setAs_CompactStratification-SpatialPixelsDataFrame.R
+        method_show-Stratification.R method_show-SamplingPattern.R
+        method_show-Statistic.R onLoad.R
+Packaged: Fri Mar 13 11:46:09 2009; walvo001
+Repository: CRAN
+Date/Publication: 2009-03-13 11:04:30

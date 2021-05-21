@@ -1,0 +1,37 @@
+Package: natmanager
+Title: Install the 'Natverse' Packages from Scratch
+Version: 0.4.0
+Authors@R: c(
+    person(given = "Sridhar",
+           family = "Jagannathan",
+           role = c("aut", "cre"),
+           email = "j.sridharrajan@gmail.com",
+           comment = c(ORCID = "0000-0002-2078-1145")),
+    person(given = "Gregory",
+           family = "Jefferis", 
+           email="jefferis@gmail.com", 
+           role = c("aut"), 
+           comment = c(ORCID = "0000-0002-0587-9355"))
+           )
+URL: https://github.com/natverse/natmanager
+BugReports: https://github.com/natverse/natmanager/issues
+Description: Provides streamlined installation for packages from the 'natverse',
+    a suite of R packages for computational neuroanatomy built on top of the
+    'nat' 'NeuroAnatomy Toolbox' package. Installation of the complete
+    'natverse' suite requires a 'GitHub' user account and personal access token
+    'GITHUB_PAT'. 'natmanager' will help the end user set this up if necessary.
+License: GPL-3
+Imports: gh, utils, remotes, usethis, curl, withr
+Suggests: testthat (>= 2.1.0), knitr, rstudioapi
+Encoding: UTF-8
+Language: en-GB
+LazyData: true
+RoxygenNote: 7.0.2
+NeedsCompilation: no
+Packaged: 2020-03-11 11:27:45 UTC; sri
+Author: Sridhar Jagannathan [aut, cre]
+    (<https://orcid.org/0000-0002-2078-1145>),
+  Gregory Jefferis [aut] (<https://orcid.org/0000-0002-0587-9355>)
+Maintainer: Sridhar Jagannathan <j.sridharrajan@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-03-11 12:40:02 UTC

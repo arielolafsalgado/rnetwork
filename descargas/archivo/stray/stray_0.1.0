@@ -1,0 +1,34 @@
+Package: stray
+Type: Package
+Title: Anomaly Detection in High Dimensional and Temporal Data
+Version: 0.1.0
+Depends: R (>= 3.4.0)
+Imports: FNN, ggplot2, colorspace, pcaPP, stats, ks
+Authors@R: 
+    c(person("Priyanga Dilini", "Talagala", email="pritalagala@gmail.com", role= c("aut","cre"), comment = c(ORCID = "0000-0003-2870-7449")),
+    person("Rob J", "Hyndman", email="rob.hyndman@monash.edu", role=c("ths"), comment = c(ORCID = "0000-0002-2140-5352")),
+    person("Kate", "Smith-Miles", email="smith-miles@unimelb.edu.au", role=c("ths")))
+Description: 
+    This is a modification of 'HDoutliers' package. The 'HDoutliers' algorithm is a powerful 
+    unsupervised algorithm for detecting anomalies in high-dimensional data, with a 
+    strong theoretical foundation. However, it suffers from some limitations that 
+    significantly hinder its performance level, under certain circumstances. This package 
+    implements the algorithm proposed in Talagala, Hyndman and Smith-Miles (2019) 
+    <arXiv:1908.04000>  for detecting anomalies in high-dimensional data
+    that addresses these limitations of 'HDoutliers' algorithm. We define an anomaly as an observation that deviates markedly from the majority
+    with a large distance gap. An approach based on extreme value theory is used 
+    for the anomalous threshold calculation.
+BugReports: https://github.com/pridiltal/stray/issues
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-12-12 10:05:20 UTC; priyangatalagala
+Author: Priyanga Dilini Talagala [aut, cre]
+    (<https://orcid.org/0000-0003-2870-7449>),
+  Rob J Hyndman [ths] (<https://orcid.org/0000-0002-2140-5352>),
+  Kate Smith-Miles [ths]
+Maintainer: Priyanga Dilini Talagala <pritalagala@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-12-17 11:50:03 UTC

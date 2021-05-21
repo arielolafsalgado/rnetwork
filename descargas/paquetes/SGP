@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package SGP</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Student Growth Percentiles &amp;amp; Percentile Growth Trajectories [R package SGP version 1.9-5.0]" />
+<meta name="citation_author1" content="Damian W. Betebenner" />
+<meta name="citation_author2" content="Adam R. Van Iwaarden" />
+<meta name="citation_author3" content="Ben Domingue" />
+<meta name="citation_author4" content="Yi Shang" />
+<meta name="citation_publication_date" content="2020-01-30" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=SGP" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=SGP" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="SGP: Student Growth Percentiles &amp;amp; Percentile Growth Trajectories" />
+<meta name="og:description" content="An analytic framework for the calculation of norm- and criterion-referenced academic growth estimates using large scale, longitudinal education assessment data as developed in Betebenner (2009) &amp;lt;&lt;a href=&quot;https://doi.org/10.1111%2Fj.1745-3992.2009.00161.x&quot;&gt;doi:10.1111/j.1745-3992.2009.00161.x&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=SGP" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>SGP: Student Growth Percentiles &amp; Percentile Growth Trajectories</h2>
+<p>An analytic framework for the calculation of norm- and criterion-referenced academic growth estimates using large scale, longitudinal education assessment data as developed in Betebenner (2009) &lt;<a href="https://doi.org/10.1111%2Fj.1745-3992.2009.00161.x">doi:10.1111/j.1745-3992.2009.00161.x</a>&gt;.</p>
+<table summary="Package SGP summary">
+<tr>
+<td>Version:</td>
+<td>1.9-5.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 3.6.0)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Cairo/index.html">Cairo</a>, <a href="../callr/index.html">callr</a>, <a href="../colorspace/index.html">colorspace</a>, <a href="../crayon/index.html">crayon</a>, datasets, <a href="../data.table/index.html">data.table</a> (&ge;
+1.12.4), <a href="../digest/index.html">digest</a>, <a href="../doParallel/index.html">doParallel</a>, <a href="../doRNG/index.html">doRNG</a> (&ge; 1.8.2), <a href="../equate/index.html">equate</a> (&ge;
+2.0-5), <a href="../foreach/index.html">foreach</a>, graphics, grid, grDevices, <a href="../gridBase/index.html">gridBase</a>, <a href="../iterators/index.html">iterators</a>, <a href="../gtools/index.html">gtools</a>, <a href="../jsonlite/index.html">jsonlite</a>, <a href="../matrixStats/index.html">matrixStats</a>, methods, parallel, <a href="../plotly/index.html">plotly</a>, <a href="../quantreg/index.html">quantreg</a>, <a href="../randomNames/index.html">randomNames</a> (&ge; 0.0-5), <a href="../rngtools/index.html">rngtools</a> (&ge; 1.5), <a href="../RSQLite/index.html">RSQLite</a>, <a href="../sn/index.html">sn</a> (&ge; 1.0-0), splines, stats, <a href="../toOrdinal/index.html">toOrdinal</a>, utils</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../SGPdata/index.html">SGPdata</a> (&ge; 23.0-0), <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-01-30</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Damian W. Betebenner [aut, cre],
+  Adam R. Van Iwaarden [aut],
+  Ben Domingue [aut],
+  Yi Shang [aut],
+  Jonathan Weeks [ctb],
+  John Stewart [ctb],
+  Jinnie Choi [ctb],
+  Xin Wei [ctb],
+  Hi Shin Shim [ctb],
+  Xiaoyuan Tan [ctb] (Arizona Department of Education),
+  Carrie Giovannini [ctb] (Arizona Department of Education),
+  Sarah Polasky [ctb] (Arizona State University),
+  Rebecca Gau [ctb] (Arizona Charter School Association),
+  Jeffrey Dean [ctb] (University of Arkansas),
+  William Bonk [ctb] (Colorado Department of Education),
+  Marie Huchton [ctb] (Colorado Department of Education),
+  Allison Timberlake [ctb] (Georgia Department of Education),
+  Qi Qin [ctb] (Georgia Department of Education),
+  Melissa Fincher [ctb] (Georgia Department of Education),
+  Kiran Athota [ctb] (Georgia Department of Education),
+  Travis Allen [ctb] (Georgia Department of Education),
+  Glenn Hirata [ctb] (Hawaii Department of Education),
+  Glenn Nochi [ctb] (Hawaii Department of Education),
+  Joshua Lee [ctb] (Hawaii Department of Education),
+  Ayaka Nukui [ctb] (Idaho Department of Education),
+  Carissa Miller [ctb] (Idaho Department of Education),
+  Matthew Raimondi [ctb] (Elgin Area School District U46 (Illinois)),
+  Wes Bruce [ctb] (Indiana Department of Education),
+  Robert Hochsegang [ctb] (Indiana Department of Education),
+  Tony Moss [ctb] (Kansas State Department of Education),
+  Xuewen Sheng [ctb] (Kansas State Department of Education),
+  Kathy Flanagan [ctb] (Massachusetts Department of Elementary and
+    Secondary Education),
+  Robert Lee [ctb] (Massachusetts Department of Elementary and Secondary
+    Education),
+  Ji Zeng [ctb] (Michigan Department of Education),
+  Steve Viger [ctb] (Michigan Department of Education),
+  Joe DeCastra [ctb] (Mississippi Department of Education),
+  Ken Thompson [ctb] (Mississippi Department of Education),
+  Soo Yeon Cho [ctb] (Missouri Department of Education),
+  Jeff Halsell [ctb] (Clark County School District, Nevada),
+  Selcuk Ozdemir [ctb] (Washoe County School District, Nevada),
+  Roger Silva [ctb] (Nevada Department of Education),
+  Deb Wiswell [ctb] (New Hampshire Department of Education),
+  Katya Levitan-Reiner [ctb] (New Haven Public Schools),
+  Catherine McCaslin [ctb] (New Haven Public Schools),
+  Joshua Marland [ctb] (New York Education Department),
+  W Joshua Rew [ctb] (Oregon Department of Education),
+  Jason Becker [ctb] (Rhode Island Department of Education),
+  Jessica Bailey [ctb] (Rhode Island Department of Education),
+  Ana Karantonis [ctb] (Rhode Island Department of Education),
+  Deborah Jonas [ctb] (Virginia Department of Education),
+  Juan D'Brot [ctb] (West Virginia Department of Education),
+  Nate Hixson [ctb] (West Virginia Department of Education),
+  Deb Came [ctb] (Washington Office of Superintendent of Public
+    Instruction),
+  Ashley Colburn [ctb] (Washington Office of Superintendent of Public
+    Instruction),
+  Nick Hassell [ctb] (Washington Office of Superintendent of Public
+    Instruction),
+  Krissy Johnson [ctb] (Washington Office of Superintendent of Public
+    Instruction),
+  Daniel Bush [ctb] (Wisconsin Department of Education),
+  Justin Meyer [ctb] (Wisconsin Department of Education),
+  Joseph Newton [ctb] (Wisconsin Department of Education),
+  Nick Stroud [ctb] (Wisconsin Department of Education),
+  John Paul [ctb] (Wyoming Department of Education),
+  Michael Flicek [ctb] (Michael Flicek Projects LLC working with Wyoming
+    Department of Education),
+  Phyllis Clay [ctb] (Albuquerque Public Schools),
+  Peter Kinyua [ctb] (Albuquerque Public Schools),
+  Brendan Houng [ctb] (University of Melbourne, Australia, NAPLAN),
+  Leslie Rosale [ctb] (Ministry of Education, Guatemala),
+  Nathan Wall [ctb] (eMetric working with Nevada Department of Education
+    and South Dakota Department of Education),
+  Narek Sahakyan [ctb] (World Class Instruction and Design (WIDA))</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Damian W. Betebenner  &#x3c;&#x64;&#x62;&#x65;&#x74;&#x65;&#x62;&#x65;&#x6e;&#x6e;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x6e;&#x63;&#x69;&#x65;&#x61;&#x2e;&#x6f;&#x72;&#x67;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/CenterForAssessment/SGP/issues">https://github.com/CenterForAssessment/SGP/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://sgp.io">https://sgp.io</a>, <a href="https://github.com/CenterForAssessment/SGP">https://github.com/CenterForAssessment/SGP</a>,
+<a href="https://CRAN.R-project.org/package=SGP">https://CRAN.R-project.org/package=SGP</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>(PDF)LaTeX (https://www.latex-project.org/) with
+'pdfpages' package for studentGrowthPlot option in visualizeSGP
+to bind together student growth plots into school catalogs</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">SGP citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_SGP.html">SGP results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package SGP downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="SGP.pdf"> SGP.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/SGP.html">Getting started with SGP</a><br/>
+<a href="vignettes/SGP_Data_Analysis.html">SGP Data Analysis</a><br/>
+<a href="vignettes/SGP_Data_Preparation.html">Data Preparation</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/SGP_1.9-5.0.tar.gz"> SGP_1.9-5.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/SGP_1.9-5.0.zip">SGP_1.9-5.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/SGP_1.9-5.0.zip">SGP_1.9-5.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/SGP_1.9-5.0.zip">SGP_1.9-5.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/SGP_1.9-5.0.tgz">SGP_1.9-5.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/SGP_1.9-5.0.tgz">SGP_1.9-5.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/SGP"> SGP archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package SGP reverse dependencies">
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../SGPdata/index.html">SGPdata</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=SGP"><samp>https://CRAN.R-project.org/package=SGP</samp></a>
+to link to this page.</p>
+</body>
+</html>

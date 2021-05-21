@@ -1,0 +1,18 @@
+Package: SoundexBR
+Type: Package
+Title: Phonetic-Coding For Portuguese
+Version: 1.0
+Date/Publication: 2014-12-23 00:27:45
+Author: Daniel Marcelino
+Maintainer: Daniel Marcelino <dmarcelino@live.com>
+Description: The SoundexBR provides an algorithm for decoding names into phonetic codes, as pronounced in Portuguese. It takes an Portuguese name, and returns a simple hash of it; this hash is intended to be the same for words that sound alike. Therefore, homophones can be matched despite minor differences in spelling. The phonetic code itself is a four digits long string composed by one letter followed by three numbers. While the letter is the first letter of the name, the digits encode the remaining consonants of that name.
+Suggests: SciencesPo
+LazyData: yes
+License: AGPL-3
+Depends: R (>= 3.0),stats,utils,graphics,grDevices
+Enhances: RecordLinkage
+BugReports: http://github.com/danielmarcelino/soundexBR
+ByteCompile: TRUE
+Packaged: 2014-12-22 21:47:08 UTC; daniel
+NeedsCompilation: yes
+Repository: CRAN

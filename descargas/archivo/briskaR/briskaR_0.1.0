@@ -1,0 +1,41 @@
+Package: briskaR
+Type: Package
+Encoding: UTF-8
+Title: Biological Risk Assessment
+Version: 0.1.0
+Date: 2016-10-07
+Authors@R: c(person("Emily", "Walker", role = "aut", email = "emily.walker@inra.fr"),
+	      person("Jean-Francois", "Rey", role = c("aut","cre"), email = "jean-francois.rey@inra.fr"),
+	      person("Melen", "Leclerc", role = "aut", email = "melen.leclerc@inra.fr"),
+	      person("Samuel", "Soubeyrand", role = "ctb", email = "samuel.soubeyrand@inra.fr"),
+        person("Marc", "Bourotte", role = "ctb", email = "marc.bourotte@inra.fr"))
+Author: Emily Walker [aut],
+    Jean-Francois Rey [aut, cre],
+    Melen Leclerc [aut],
+    Samuel Soubeyrand [ctb],
+    Marc Bourotte [ctb]
+Maintainer: Jean-Francois Rey <jean-francois.rey@inra.fr>
+Description: A spatio-temporal exposure-hazard model for assessing biological
+    risk and impact. The model is based on stochastic geometry for describing
+    the landscape and the exposed individuals, a dispersal kernel for the
+    dissemination of contaminants and an ecotoxicological equation.
+License: GPL (>= 2) | file LICENSE
+LazyData: True
+BuildVignettes: True
+VignetteBuilder: knitr
+Depends: methods, grDevices (>= 3.0.0), graphics (>= 3.0.0), R (>=
+        3.0.0)
+Imports: sp (>= 1.0-17), stats (>= 3.0.2), rgeos(>= 0.3), fields(>=
+        7.1), MASS(>= 7.3.29), deldir(>= 0.1), pracma(>= 1.8.3),
+        raster(>= 2.3.0), fftwtools(>= 0.9.6), mvtnorm(>= 1.0.2), rgdal
+        (>= 0.9)
+Suggests: knitr(>= 1.11), rmarkdown(>= 0.8.1)
+Collate: '0briskaR.R' 'Class-Individuals.R' 'Class-Landscape.R'
+        'Individuals-Methods.R' 'simulPrecip.R' 'toxicIntensity.R'
+        'Landscape-Methods.R' 'Landscape-Individuals-Methods.R'
+        'briskaR.R' 'pollen-data.R' 'ecoToxic.R' 'demo.R'
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-10-11 09:28:54 UTC; jfrey
+Repository: CRAN
+Date/Publication: 2016-10-11 12:42:45

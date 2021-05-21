@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package modelc</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="A Linear Model to 'SQL' Compiler [R package modelc version 1.0.0.0]" />
+<meta name="citation_author" content="Hugo Saavedra" />
+<meta name="citation_publication_date" content="2020-06-28" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=modelc" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=modelc" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="modelc: A Linear Model to 'SQL' Compiler" />
+<meta name="og:description" content="This is a cross-platform linear model to 'SQL' compiler. It generates 'SQL' from linear and generalized linear models. Its interface consists of a single function, modelc(), which takes the output of lm() or glm() functions (or any object which has the same signature) and outputs a 'SQL' character vector representing the predictions on the scale of the response variable as described in Dunn &amp;amp; Smith (2018) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2F978-1-4419-0118-7&quot;&gt;doi:10.1007/978-1-4419-0118-7&lt;/a&gt;&amp;gt; and originating in Nelder &amp;amp; Wedderburn (1972) &amp;lt;&lt;a href=&quot;https://doi.org/10.2307%2F2344614&quot;&gt;doi:10.2307/2344614&lt;/a&gt;&amp;gt;. The resultant 'SQL' can be included in a 'SELECT' statement and returns output similar to that of the glm.predict() or lm.predict() predictions, assuming numeric types are represented in the database using sufficient precision. Currently log and identity link functions are supported." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=modelc" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>modelc: A Linear Model to 'SQL' Compiler</h2>
+<p>This is a cross-platform linear model to 'SQL' compiler. It generates 'SQL' from linear and generalized linear models. Its interface consists of a single function, modelc(), which takes the output of lm() or glm() functions (or any object which has the same signature) and outputs a 'SQL' character vector representing the predictions on the scale of the response variable as described in Dunn &amp; Smith (2018) &lt;<a href="https://doi.org/10.1007%2F978-1-4419-0118-7">doi:10.1007/978-1-4419-0118-7</a>&gt; and originating in Nelder &amp; Wedderburn (1972) &lt;<a href="https://doi.org/10.2307%2F2344614">doi:10.2307/2344614</a>&gt;. The resultant 'SQL' can be included in a 'SELECT' statement and returns output similar to that of the glm.predict() or lm.predict() predictions, assuming numeric types are represented in the database using sufficient precision. Currently log and identity link functions are supported.</p>
+<table summary="Package modelc summary">
+<tr>
+<td>Version:</td>
+<td>1.0.0.0</td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../testthat/index.html">testthat</a> (&ge; 2.1.0)</td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-06-28</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Sparkfish Analytics [cph],
+  Hugo Saavedra [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Hugo Saavedra  &#x3c;&#x61;&#x6e;&#x61;&#x6c;&#x79;&#x74;&#x69;&#x63;&#x73;&#x2b;&#x68;&#x75;&#x67;&#x6f;&#x20;&#x61;&#x74;&#x20;&#x73;&#x70;&#x61;&#x72;&#x6b;&#x66;&#x69;&#x73;&#x68;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/sparkfish/modelc/issues">https://github.com/sparkfish/modelc/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/MIT">MIT</a> + file <a href="LICENSE">LICENSE</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/sparkfish/modelc">https://github.com/sparkfish/modelc</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_modelc.html">modelc results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package modelc downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="modelc.pdf"> modelc.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/modelc_1.0.0.0.tar.gz"> modelc_1.0.0.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/modelc_1.0.0.0.zip">modelc_1.0.0.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/modelc_1.0.0.0.zip">modelc_1.0.0.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/modelc_1.0.0.0.zip">modelc_1.0.0.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/modelc_1.0.0.0.tgz">modelc_1.0.0.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/modelc_1.0.0.0.tgz">modelc_1.0.0.0.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=modelc"><samp>https://CRAN.R-project.org/package=modelc</samp></a>
+to link to this page.</p>
+</body>
+</html>

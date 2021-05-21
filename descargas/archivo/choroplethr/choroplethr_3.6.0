@@ -1,0 +1,32 @@
+Package: choroplethr
+Title: Simplify the Creation of Choropleth Maps in R
+Description: Choropleths are thematic maps where geographic regions, such as
+    states, are colored according to some metric, such as the number of people
+    who live in that state. This package simplifies this process by 1.
+    Providing ready-made functions for creating choropleths of common maps. 2.
+    Providing data and API connections to interesting data sources for making
+    choropleths. 3. Providing a framework for creating choropleths from
+    arbitrary shapefiles. 4. Overlaying those maps over reference maps from
+    Google Maps. Please see the vignettes for more details.
+Version: 3.6.0
+Author: Ari Lamstein <ari@lamsteinconsulting.com>[cre, aut],
+    Brian P Johnson <brian@pjohnson.info> [ctb, frontend animation code]
+Maintainer: Ari Lamstein <ari@lamsteinconsulting.com>
+URL: http://www.arilamstein.com/open-source
+Copyright: Trulia, Inc.
+License: BSD_3_clause + file LICENSE
+Imports: scales, Hmisc, stringr, ggplot2 (>= 2.0.0), dplyr, R6, WDI,
+        ggmap, RgoogleMaps, tigris, gridExtra
+Suggests: testthat, choroplethrMaps, choroplethrAdmin1 (>= 1.1.0)
+Depends: R (>= 3.0.0), acs
+Collate: 'acs.R' 'choropleth.R' 'admin1.R' 'admin1_region.R'
+        'choroplethr_animate.R' 'choroplethr_wdi.R' 'country.R' 'usa.R'
+        'county.R' 'county_zoom.R' 'data.R' 'deprecated.R'
+        'get_county_demographics.R' 'get_state_demograhpics.R'
+        'get_tract_demographics.R' 'startup_messages.R' 'state.R'
+        'tracts.R' 'utils.R'
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-04-08 23:34:40 UTC; arilamstein
+Repository: CRAN
+Date/Publication: 2017-04-09 14:01:25 UTC

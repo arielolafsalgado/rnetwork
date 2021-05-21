@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package smoothedLasso</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=smoothedLasso" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="smoothedLasso: A Framework to Smooth L1 Penalized Regression Operators using Nesterov Smoothing" />
+<meta name="og:description" content="We provide full functionality to smooth L1 penalized regression operators and to compute regression estimates thereof. For this, the objective function of a user-specified regression operator is first smoothed using Nesterov smoothing (see Y. Nesterov (2005) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs10107-004-0552-5&quot;&gt;doi:10.1007/s10107-004-0552-5&lt;/a&gt;&amp;gt;), resulting in a modified objective function with explicit gradients everywhere. The smoothed objective function and its gradient are minimized via BFGS, and the obtained minimizer is returned. Using Nesterov smoothing, the smoothed objective function can be made arbitrarily close to the original (unsmoothed) one. In particular, the Nesterov approach has the advantage that it comes with explicit accuracy bounds, both on the L1/L2 difference of the unsmoothed to the smoothed objective functions as well as on their respective minimizers (see G. Hahn, S.M. Lutz, N. Laha, C. Lange (2020) &amp;lt;&lt;a href=&quot;https://doi.org/10.1101%2F2020.09.17.301788&quot;&gt;doi:10.1101/2020.09.17.301788&lt;/a&gt;&amp;gt;). A progressive smoothing approach is provided which iteratively smoothes the objective function, resulting in more stable regression estimates." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=smoothedLasso" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>smoothedLasso: A Framework to Smooth L1 Penalized Regression Operators using
+Nesterov Smoothing</h2>
+<p>We provide full functionality to smooth L1 penalized regression operators and to compute regression estimates thereof. For this, the objective function of a user-specified regression operator is first smoothed using Nesterov smoothing (see Y. Nesterov (2005) &lt;<a href="https://doi.org/10.1007%2Fs10107-004-0552-5">doi:10.1007/s10107-004-0552-5</a>&gt;), resulting in a modified objective function with explicit gradients everywhere. The smoothed objective function and its gradient are minimized via BFGS, and the obtained minimizer is returned. Using Nesterov smoothing, the smoothed objective function can be made arbitrarily close to the original (unsmoothed) one. In particular, the Nesterov approach has the advantage that it comes with explicit accuracy bounds, both on the L1/L2 difference of the unsmoothed to the smoothed objective functions as well as on their respective minimizers (see G. Hahn, S.M. Lutz, N. Laha, C. Lange (2020) &lt;<a href="https://doi.org/10.1101%2F2020.09.17.301788">doi:10.1101/2020.09.17.301788</a>&gt;). A progressive smoothing approach is provided which iteratively smoothes the objective function, resulting in more stable regression estimates.</p>
+<table summary="Package smoothedLasso summary">
+<tr>
+<td>Version:</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rdpack/index.html">Rdpack</a>, <a href="../Matrix/index.html">Matrix</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-08</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Georg Hahn [aut,cre], Sharon M. Lutz [ctb], Nilanjana Laha [ctb], Christoph Lange [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Georg Hahn  &#x3c;&#x67;&#x68;&#x61;&#x68;&#x6e;&#x20;&#x61;&#x74;&#x20;&#x68;&#x73;&#x70;&#x68;&#x2e;&#x68;&#x61;&#x72;&#x76;&#x61;&#x72;&#x64;&#x2e;&#x65;&#x64;&#x75;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a> | <a href="../../licenses/GPL-3">GPL-3</a> [expanded from: GPL (&ge; 2)]</td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_smoothedLasso.html">smoothedLasso results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package smoothedLasso downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="smoothedLasso.pdf"> smoothedLasso.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/smoothedLasso_1.5.tar.gz"> smoothedLasso_1.5.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/smoothedLasso_1.5.zip">smoothedLasso_1.5.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/smoothedLasso_1.5.zip">smoothedLasso_1.5.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/smoothedLasso_1.5.zip">smoothedLasso_1.5.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/smoothedLasso_1.5.tgz">smoothedLasso_1.5.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/smoothedLasso_1.5.tgz">smoothedLasso_1.5.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/smoothedLasso"> smoothedLasso archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=smoothedLasso"><samp>https://CRAN.R-project.org/package=smoothedLasso</samp></a>
+to link to this page.</p>
+</body>
+</html>

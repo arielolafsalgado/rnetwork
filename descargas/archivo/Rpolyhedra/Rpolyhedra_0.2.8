@@ -1,0 +1,27 @@
+Package: Rpolyhedra
+Type: Package
+Title: Polyhedra Database
+Version: 0.2.8
+Authors@R: c(
+    person("Alejandro", "Baranek",,"abaranek@dc.uba.ar", c("aut","com","cre", "cph")),
+    person("Leonardo","Belen",,"leobelen@gmail.com", c("aut","com","cph"))
+    )
+Maintainer: Alejandro Baranek <abaranek@dc.uba.ar>
+Description: A polyhedra database scraped from various sources as R6 objects and 'rgl' visualizing capabilities. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.0
+Suggests: knitr, rmarkdown, covr
+VignetteBuilder: knitr
+Depends: R (>= 3.4)
+Imports: futile.logger, rgl, stringr, R6, testthat, XML, digest
+Collate: 'db-lib.R' 'polyhedra-lib.R' 'ledger-lib.R'
+        'serialization-lib.R' 'zzz.R'
+BugReports: https://github.com/qbotics/Rpolyhedra/issues
+NeedsCompilation: no
+Packaged: 2018-10-04 19:04:20 UTC; kenarab
+Author: Alejandro Baranek [aut, com, cre, cph],
+  Leonardo Belen [aut, com, cph]
+Repository: CRAN
+Date/Publication: 2018-10-05 15:30:02 UTC

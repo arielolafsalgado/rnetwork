@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package apollo</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Tools for Choice Model Estimation and Application [R package apollo version 0.2.0]" />
+<meta name="citation_author1" content="Stephane Hess" />
+<meta name="citation_author2" content="David Palma" />
+<meta name="citation_publication_date" content="2020-10-19" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=apollo" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=apollo" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="apollo: Tools for Choice Model Estimation and Application" />
+<meta name="og:description" content="The Choice Modelling Centre (CMC) at the University of Leeds has developed flexible code for the estimation and application of choice models in R. Users are able to write their own model functions or use a mix of already available ones. Random heterogeneity, both continuous and discrete and at the level of individuals and choices, can be incorporated for all models. There is support for both standalone models and hybrid model structures. Both classical and Bayesian estimation is available, and multiple discrete continuous models are covered in addition to discrete choice. Multi-threading processing is supported for estimation and a large number of pre and post-estimation routines, including for computing posterior (individual-level) distributions are available. For examples, a manual, and a support forum, visit www.ApolloChoiceModelling.com. For more information on choice models see Train, K. (2009) &amp;lt;isbn:978-0-521-74738-7&amp;gt; and Hess, S. &amp;amp; Daly, A.J. (2014) &amp;lt;isbn:978-1-781-00314-5&amp;gt; for an overview of the field." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=apollo" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>apollo: Tools for Choice Model Estimation and Application</h2>
+<p>The Choice Modelling Centre (CMC) at the University of Leeds 
+    has developed flexible code for the estimation and application 
+    of choice models in R. Users are able to write their own 
+    model functions or use a mix of already available ones. Random heterogeneity, 
+    both continuous and discrete and at the level of individuals and 
+    choices, can be incorporated for all models. There is support for both standalone 
+    models and hybrid model structures.  Both classical 
+    and Bayesian estimation is available, and multiple discrete 
+    continuous models are covered in addition to discrete choice. 
+    Multi-threading processing is supported for estimation and a large
+    number of pre and post-estimation routines, including for computing posterior
+    (individual-level) distributions are available. 
+    For examples, a manual, and a support forum, visit 
+    www.ApolloChoiceModelling.com. For more information on choice 
+    models see Train, K. (2009) &lt;isbn:978-0-521-74738-7&gt; and Hess, 
+    S. &amp; Daly, A.J. (2014) &lt;isbn:978-1-781-00314-5&gt; for an overview 
+    of the field.</p>
+<table summary="Package apollo summary">
+<tr>
+<td>Version:</td>
+<td>0.2.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 4.0.0), stats, utils</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 1.0.0), <a href="../maxLik/index.html">maxLik</a>, <a href="../mnormt/index.html">mnormt</a>, <a href="../mvtnorm/index.html">mvtnorm</a>, graphics, <a href="../randtoolbox/index.html">randtoolbox</a>, <a href="../numDeriv/index.html">numDeriv</a>, parallel, <a href="../Deriv/index.html">Deriv</a>, <a href="../matrixStats/index.html">matrixStats</a>, <a href="../RSGHB/index.html">RSGHB</a>, <a href="../coda/index.html">coda</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a>, <a href="../RcppEigen/index.html">RcppEigen</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-10-19</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Stephane Hess [aut],
+  David Palma [aut, cre]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>David Palma  &#x3c;&#x44;&#x2e;&#x50;&#x61;&#x6c;&#x6d;&#x61;&#x20;&#x61;&#x74;&#x20;&#x6c;&#x65;&#x65;&#x64;&#x73;&#x2e;&#x61;&#x63;&#x2e;&#x75;&#x6b;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://groups.google.com/d/forum/apollo-choice-modelling">https://groups.google.com/d/forum/apollo-choice-modelling</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-2">GPL-2</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="http://www.apolloChoiceModelling.com">http://www.apolloChoiceModelling.com</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">apollo citation info</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Econometrics.html">Econometrics</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_apollo.html">apollo results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package apollo downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="apollo.pdf"> apollo.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/apollofirstexample.html">Model file examples</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/apollo_0.2.0.tar.gz"> apollo_0.2.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/apollo_0.2.0.zip">apollo_0.2.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/apollo_0.2.0.zip">apollo_0.2.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/apollo_0.1.0.zip">apollo_0.1.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/apollo_0.2.0.tgz">apollo_0.2.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/apollo_0.1.0.tgz">apollo_0.1.0.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/apollo"> apollo archive </a> </td>
+</tr>
+</table>
+<h4>Reverse dependencies:</h4>
+<table summary="Package apollo reverse dependencies">
+<tr>
+<td>Reverse&nbsp;suggests:</td>
+<td><a href="../support.BWS/index.html">support.BWS</a></td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=apollo"><samp>https://CRAN.R-project.org/package=apollo</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package swmmr</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="R Interface for US EPA's SWMM [R package swmmr version 0.9.1]" />
+<meta name="citation_author1" content="Dominik Leutnant" />
+<meta name="citation_author2" content="Anneke Doering" />
+<meta name="citation_publication_date" content="2020-03-02" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=swmmr" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=swmmr" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="swmmr: R Interface for US EPA's SWMM" />
+<meta name="og:description" content="Functions to connect the widely used Storm Water Management Model (SWMM) of the United States Environmental Protection Agency (US EPA) &amp;lt;&lt;a href=&quot;https://www.epa.gov/water-research/storm-water-management-model-swmm&quot;&gt;https://www.epa.gov/water-research/storm-water-management-model-swmm&lt;/a&gt;&amp;gt; to R with currently two main goals: (1) Run a SWMM simulation from R and (2) provide fast access to simulation results, i.e. SWMM's binary '.out'-files. High performance is achieved with help of Rcpp. Additionally, reading SWMM's '.inp' and '.rpt' files is supported to glance model structures and to get direct access to simulation summaries." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=swmmr" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>swmmr: R Interface for US EPA's SWMM</h2>
+<p>Functions to connect the widely used Storm Water Management Model (SWMM)
+  of the United States Environmental Protection Agency (US EPA) 
+  &lt;<a href="https://www.epa.gov/water-research/storm-water-management-model-swmm">https://www.epa.gov/water-research/storm-water-management-model-swmm</a>&gt; to R with
+  currently two main goals: (1) Run a SWMM simulation from R and (2) provide fast 
+  access to simulation results, i.e. SWMM's binary '.out'-files. High performance is achieved
+  with help of Rcpp. Additionally, reading SWMM's '.inp' and '.rpt' files is supported to 
+  glance model structures and to get direct access to simulation summaries.</p>
+<table summary="Package swmmr summary">
+<tr>
+<td>Version:</td>
+<td>0.9.1</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../dplyr/index.html">dplyr</a> (&ge; 0.7.4), <a href="../purrr/index.html">purrr</a> (&ge; 0.2.4), <a href="../readr/index.html">readr</a> (&ge; 1.1.1), <a href="../Rcpp/index.html">Rcpp</a>, <a href="../tibble/index.html">tibble</a> (&ge; 1.2.4), <a href="../tidyr/index.html">tidyr</a> (&ge; 1.0.0), utils, <a href="../xts/index.html">xts</a> (&ge; 0.10-1), <a href="../zoo/index.html">zoo</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../DEoptim/index.html">DEoptim</a>, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../sf/index.html">sf</a> (&ge; 0.6-1), <a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a>, <a href="../testthat/index.html">testthat</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-03-02</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Dominik Leutnant <a href="https://orcid.org/0000-0003-3293-2315"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut, cre],
+  Anneke Doering [aut],
+  Malte Henrichs [ctb],
+  Hauke Sonnenberg <a href="https://orcid.org/0000-0001-9134-2871"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Dominik Leutnant  &#x3c;&#x6c;&#x65;&#x75;&#x74;&#x6e;&#x61;&#x6e;&#x74;&#x20;&#x61;&#x74;&#x20;&#x66;&#x68;&#x2d;&#x6d;&#x75;&#x65;&#x6e;&#x73;&#x74;&#x65;&#x72;&#x2e;&#x64;&#x65;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/dleutnant/swmmr/issues">https://github.com/dleutnant/swmmr/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/dleutnant/swmmr">https://github.com/dleutnant/swmmr</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>SWMM (&gt;=5.1.012)</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">swmmr citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> <a href="news/news.html">NEWS</a> </td>
+</tr>
+<tr>
+<td>In&nbsp;views:</td>
+<td><a href="../../views/Hydrology.html">Hydrology</a></td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_swmmr.html">swmmr results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package swmmr downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="swmmr.pdf"> swmmr.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/How_swmmr_reads_and_writes_files.html">How swmmr reads and writes inp files</a><br/>
+<a href="vignettes/How_to_autocalibrate_a_SWMM_model_with_swmmr.html">How to autocalibrate a SWMM model with swmmr</a><br/>
+<a href="vignettes/How_to_convert_between_GIS_data_and_SWMM_with_swmmr.html">How to convert GIS data and SWMM with swmmr</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/swmmr_0.9.1.tar.gz"> swmmr_0.9.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/swmmr_0.9.1.zip">swmmr_0.9.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/swmmr_0.9.1.zip">swmmr_0.9.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/swmmr_0.9.1.zip">swmmr_0.9.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/swmmr_0.9.1.tgz">swmmr_0.9.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/swmmr_0.9.1.tgz">swmmr_0.9.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/swmmr"> swmmr archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=swmmr"><samp>https://CRAN.R-project.org/package=swmmr</samp></a>
+to link to this page.</p>
+</body>
+</html>

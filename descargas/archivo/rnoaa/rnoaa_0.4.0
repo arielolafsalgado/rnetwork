@@ -1,0 +1,34 @@
+Package: rnoaa
+Title: 'NOAA' Climate Data from R
+Description: Client for many 'NOAA' data sources including the 'NCDC'
+    climate 'API' at http://www.ncdc.noaa.gov/cdo-web/webservices/v2, with
+    functions for each of the 'API' 'endpoints': data, data categories, data sets,
+    data types, locations, location categories, and stations. In addition, we
+    have an interface for 'NOAA' sea ice data, the 'NOAA' severe weather inventory,
+    'NOAA' Historical Observing 'Metadata' Repository ('HOMR') data,
+    'NOAA' storm data via 'IBTrACS', and tornado data via the 'NOAA' storm prediction
+    center.
+Version: 0.4.0
+License: MIT + file LICENSE
+Authors@R: c(
+    person("Hart", "Edmund", role = "ctb", email = "Edmund.m.hart@gmail.com"),
+    person("Scott", "Chamberlain", role = c("aut","cre"), email = "myrmecocystus@gmail.com"),
+    person("Karthik", "Ram", role = "ctb", email = "karthik.ram@gmail.com"),
+    person("Adam", "Erickson", role = "ctb", email = "adam.erickson@ubc.ca")
+  )
+URL: https://github.com/ropensci/rnoaa
+BugReports: http://www.github.com/ropensci/rnoaa/issues
+LazyData: true
+VignetteBuilder: knitr
+Imports: httr, lubridate, plyr, dplyr, tidyr, ggplot2, scales, rgdal,
+        XML, data.table, jsonlite
+Suggests: testthat, roxygen2, knitr, taxize, ncdf
+NeedsCompilation: no
+Packaged: 2015-06-19 01:01:02 UTC; sacmac
+Author: Hart Edmund [ctb],
+  Scott Chamberlain [aut, cre],
+  Karthik Ram [ctb],
+  Adam Erickson [ctb]
+Maintainer: Scott Chamberlain <myrmecocystus@gmail.com>
+Repository: CRAN
+Date/Publication: 2015-06-19 08:51:14

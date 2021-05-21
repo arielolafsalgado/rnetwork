@@ -1,0 +1,37 @@
+Package: auk
+Title: eBird Data Extraction with AWK
+Version: 0.0.1
+Date: 2017-07-01
+Authors@R: c(
+  person("Matthew", "Strimas-Mackey", email = "mes335@cornell.edu", role = c("aut", "cre")),
+  person("Eliot", "Miller", role = "aut"),
+  person("Wesley", "Hochachka", role = "aut"),
+  person("Cornell Lab of Ornithology", role = "cph")
+  )
+URL: http://CornellLabofOrnithology.github.io/auk/,
+        https://github.com/CornellLabofOrnithology/auk
+BugReports: https://github.com/CornellLabofOrnithology/auk/issues
+Description: Extract and process bird sightings records from eBird 
+    (<http://ebird.org/>), an onlnine tool for recording bird observations. 
+    Public access to the full eBird database is via the eBird Basic Dataset 
+    (EBD; see <http://ebird.org/ebird/data/download> for access), a downloadable 
+    text file. This package is an interface to AWK for extracting data from the 
+    EBD based on taxonomic, spatial, or temporal filters, to produce a 
+    manageable file size that can be imported into R.
+Depends: R (>= 3.3.3)
+License: GPL-3 | file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: assertthat, stringr, magrittr, countrycode, tidyr
+RoxygenNote: 6.0.1
+Suggests: readr, data.table, knitr, rmarkdown, testthat, covr
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-07-05 11:23:19 UTC; mes335
+Author: Matthew Strimas-Mackey [aut, cre],
+  Eliot Miller [aut],
+  Wesley Hochachka [aut],
+  Cornell Lab of Ornithology [cph]
+Maintainer: Matthew Strimas-Mackey <mes335@cornell.edu>
+Repository: CRAN
+Date/Publication: 2017-07-05 11:44:13 UTC

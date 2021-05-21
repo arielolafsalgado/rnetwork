@@ -1,0 +1,76 @@
+Package: ecd
+Type: Package
+Title: Elliptic Distribution Based on Elliptic Curves
+Version: 0.6.4
+Date: 2015-12-23
+Authors@R: person(given = c("Stephen", "H-T."), family = "Lihn",
+                  email = "stevelihn@gmail.com", role = c("aut", "cre"))
+Author: Stephen H-T. Lihn [aut, cre]
+Maintainer: Stephen H-T. Lihn <stevelihn@gmail.com>
+Description: An implementation of the univariate elliptic distribution
+    and elliptic option pricing model. It provides detailed functionality
+    and data sets for the distribution and modelling.
+    Especially, it contains functions for the computation of
+    density, probability, quantile, fitting procedures, option prices,
+    volatility smile. It also comes with sample financial data, and plotting routines.
+Depends: R (>= 3.1.2)
+Imports: stats, Rmpfr, polynom, xts, zoo, optimx, moments, parallel,
+        graphics, methods, yaml, RSQLite
+Suggests: knitr, testthat, roxygen2, ghyp, fOptions
+License: Artistic-2.0
+Encoding: latin1
+LazyData: true
+Collate: 'ecd-adj-gamma-method.R' 'ecd-asymp-stats-method.R'
+        'ecd-ccdf-method.R' 'ecd-cdf-method.R'
+        'ecd-numericMpfr-class.R' 'ecdq-class.R' 'ecd-package.R'
+        'ecd-class.R' 'ecd-constructor.R' 'ecd-cubic-method.R'
+        'ecd-cusp-a2r-method.R' 'ecd-cusp-constructor.R'
+        'ecd-cusp-std-moment-method.R' 'ecd-data-config-internal.R'
+        'ecd-data-method.R' 'ecd-data-stats-method.R'
+        'ecd-df2ts-method.R' 'ecd-discr-generic.R'
+        'ecd-distribution-method.R' 'ecld-class.R'
+        'ecd-ecldOrEcd-class.R' 'ecd-ellipticity-generic.R'
+        'ecd-estimate-const-method.R' 'ecd-fit-data-method.R'
+        'ecd-fit-ts-conf-method.R' 'ecd-has-quantile-method.R'
+        'ecd-imgf-method.R' 'ecd-integrate-method.R'
+        'ecd-integrate-pdf-generic.R' 'ecd-is-numericMpfr-internal.R'
+        'ecd-jinv-generic.R' 'ecd-lag-method.R'
+        'ecd-manage-hist-tails-method.R' 'ecd-max-kurtosis-method.R'
+        'ecd-model-internal.R' 'ecd-moment-generic.R'
+        'ecd-mp2f-method.R' 'ecd-mpfr-method.R'
+        'ecd-mpfr-qagi-method.R' 'ecd-mpnum-method.R'
+        'ecd-ogf-method.R' 'ecd-pdf-method.R' 'ecd-plot-2x2-generic.R'
+        'ecd-polar-constructor.R' 'ecd-quantilize-generic.R'
+        'ecd-rational-method.R' 'ecd-read-csv-by-symbol-method.R'
+        'ecd-read-symbol-conf-method.R' 'ecd-sd-method.R'
+        'ecd-setup-const-method.R' 'ecd-solve-cusp-asym-method.R'
+        'ecd-solve-generic.R' 'ecd-solve-sym-generic.R'
+        'ecd-solve-trig-generic.R' 'ecd-standardfit-method.R'
+        'ecd-stats-method.R' 'ecd-toString-method.R'
+        'ecd-ts-lag-stats-method.R' 'ecd-uniroot-method.R'
+        'ecd-y-slope-generic.R' 'ecd-y0-isomorphic-method.R'
+        'ecdattr-class.R' 'ecdattr-constructor.R'
+        'ecdattr-enrich-method.R' 'ecdattr-pairs-method.R'
+        'ecdattr-pairs-polar-method.R' 'ecdb-class.R'
+        'ecdb-bootstrap-generic.R' 'ecdb-constructor.R'
+        'ecdb-dbSendQuery-method.R' 'ecdb-ecdattr-generic.R'
+        'ecdb-helpers-internal.R' 'ecdb-history-generic.R'
+        'ecdb-protectiveCommit-method.R' 'ecdb-read-generic.R'
+        'ecdb-summary-generic.R' 'ecdb-write-generic.R'
+        'ecdq-constructor.R' 'ecld-cdf-method.R' 'ecld-const-method.R'
+        'ecld-constructor.R' 'ecld-gamma-method.R' 'ecld-imgf-method.R'
+        'ecld-imnt-method.R' 'ecld-ivol-ogf-star-method.R'
+        'ecld-mgf-term-method.R' 'ecld-moment-method.R'
+        'ecld-mpnum-method.R' 'ecld-mu-D-method.R' 'ecld-ogf-method.R'
+        'ecld-ogf-star-method.R' 'ecld-op-V-method.R'
+        'ecld-pdf-method.R' 'ecld-sd-method.R' 'ecld-sged-method.R'
+        'ecld-solve-method.R' 'ecld-y-slope-method.R'
+        'ecop-bs-implied-volatility-method.R'
+        'ecop-bs-option-price-method.R' 'ecop-opt-class.R'
+        'ecop-class.R' 'ecop-constructor.R' 'ecop-plot-option-method.R'
+        'ecop-polyfit-option-method.R' 'ecop-read-csv-by-symbol.R'
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-01-04 15:59:06 UTC; hornik
+Repository: CRAN
+Date/Publication: 2016-01-04 17:05:41

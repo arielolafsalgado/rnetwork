@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package LEGIT</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=LEGIT" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="LEGIT: Latent Environmental &amp;amp; Genetic InTeraction (LEGIT) Model" />
+<meta name="og:description" content="Constructs genotype x environment interaction (GxE) models where G is a weighted sum of genetic variants (genetic score) and E is a weighted sum of environments (environmental score) using the alternating optimization algorithm by Jolicoeur-Martineau et al. (2017) &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1703.08111&quot;&gt;arXiv:1703.08111&lt;/a&gt;&amp;gt;. This approach has greatly enhanced predictive power over traditional GxE models which include only a single genetic variant and a single environmental exposure. Although this approach was originally made for GxE modelling, it is flexible and does not require the use of genetic and environmental variables. It can also handle more than 2 latent variables (rather than just G and E) and 3-way interactions or more. The LEGIT model produces highly interpretable results and is very parameter-efficient thus it can even be used with small sample sizes (n &amp;lt; 250). Tools to determine the type of interaction (vantage sensitivity, diathesis-stress or differential susceptibility), with any number of genetic variants or environments, are available &amp;lt;&lt;a href=&quot;https://arxiv.org/abs/1712.04058&quot;&gt;arXiv:1712.04058&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=LEGIT" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>LEGIT: Latent Environmental &amp; Genetic InTeraction (LEGIT) Model</h2>
+<p>Constructs genotype x environment interaction (GxE) models where
+    G is a weighted sum of genetic variants (genetic score) and E is a weighted
+    sum of environments (environmental score) using the alternating optimization algorithm 
+    by Jolicoeur-Martineau et al. (2017) &lt;<a href="https://arxiv.org/abs/1703.08111">arXiv:1703.08111</a>&gt;. This approach has greatly 
+    enhanced predictive power over traditional GxE models which include only a single 
+    genetic variant and a single environmental exposure. Although this approach was 
+    originally made for GxE modelling, it is flexible and does not require the use of 
+    genetic and environmental variables. It can also handle more than 2 latent variables 
+    (rather than just G and E) and 3-way interactions or more. The LEGIT model produces 
+    highly interpretable results and is very parameter-efficient thus it can even be 
+    used with small sample sizes (n &lt; 250). Tools to determine the type of interaction
+    (vantage sensitivity, diathesis-stress or differential susceptibility), with any 
+    number of genetic variants or environments, are available &lt;<a href="https://arxiv.org/abs/1712.04058">arXiv:1712.04058</a>&gt;.</p>
+<table summary="Package LEGIT summary">
+<tr>
+<td>Version:</td>
+<td>1.3.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td><a href="../formula.tools/index.html">formula.tools</a>, stats, graphics</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../pROC/index.html">pROC</a>, <a href="../foreach/index.html">foreach</a>, <a href="../snow/index.html">snow</a>, <a href="../doSNOW/index.html">doSNOW</a>, utils, <a href="../iterators/index.html">iterators</a>, <a href="../Hmisc/index.html">Hmisc</a>, grDevices, <a href="../boot/index.html">boot</a>, <a href="../RColorBrewer/index.html">RColorBrewer</a>, <a href="../glmnet/index.html">glmnet</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-08-29</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Alexia Jolicoeur-Martineau</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Alexia Jolicoeur-Martineau  &#x3c;&#x61;&#x6c;&#x65;&#x78;&#x69;&#x61;&#x2e;&#x6a;&#x6f;&#x6c;&#x69;&#x63;&#x6f;&#x65;&#x75;&#x72;&#x2d;&#x6d;&#x61;&#x72;&#x74;&#x69;&#x6e;&#x65;&#x61;&#x75;&#x20;&#x61;&#x74;&#x20;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x6d;&#x63;&#x67;&#x69;&#x6c;&#x6c;&#x2e;&#x63;&#x61;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="NEWS">NEWS</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_LEGIT.html">LEGIT results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package LEGIT downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="LEGIT.pdf"> LEGIT.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/ElasticNet.html">Elastic Net</a><br/>
+<a href="vignettes/GxE_testing.html">GxE Testing</a><br/>
+<a href="vignettes/LEGIT.html">LEGIT</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/LEGIT_1.3.1.tar.gz"> LEGIT_1.3.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/LEGIT_1.3.1.zip">LEGIT_1.3.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/LEGIT_1.3.1.zip">LEGIT_1.3.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/LEGIT_1.3.1.zip">LEGIT_1.3.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/LEGIT_1.3.1.tgz">LEGIT_1.3.1.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/LEGIT_1.3.1.tgz">LEGIT_1.3.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/LEGIT"> LEGIT archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=LEGIT"><samp>https://CRAN.R-project.org/package=LEGIT</samp></a>
+to link to this page.</p>
+</body>
+</html>

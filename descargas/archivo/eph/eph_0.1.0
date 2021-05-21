@@ -1,0 +1,37 @@
+Package: eph
+Title: Argentina's Permanent Household Survey Data and Manipulation
+        Utilities
+Version: 0.1.0
+Authors@R: c(
+    person("Diego", "Kozlowski", email = "diegokoz92@gmail.com", role = c("aut", "cre")),
+    person("Pablo", "Tiscornia", email = "pablotisco@gmail.com", role = "aut"),
+    person("Guido", "Weksler", email = "guidowe45@gmail.com", role = "aut"),
+    person("Natsumi", "Shokida", email = "natsumi.shokida@gmail.com", role = "aut"),
+    person("German", "Rosati", email = "german.rosati@gmail.com", role = "aut"))
+Description: Tools to download and manipulate the Permanent Household Survey from Argentina
+    (EPH is the Spanish acronym for Permanent Household Survey).
+    e.g: get_microdata() for downloading the datasets, get_poverty_lines() for downloading the official poverty baskets,
+    calculate_poverty() for the calculation of stating if a household is in poverty or not, following the official methodology.
+    organize_panels() is used to concatenate observations from different periods, and organize_labels()
+    adds the official labels to the data. The implemented methods are based on INDEC (2016) <http://www.estadistica.ec.gba.gov.ar/dpe/images/SOCIEDAD/EPH_metodologia_22_pobreza.pdf>.
+    As this package works with the argentinian Permanent Household Survey and its main audience is from this country,
+    the documentation was written in Spanish.
+Imports: dplyr, expss, assertthat, purrr, stringr, magrittr, glue,
+        readxl, janitor, questionr, tidyr, readr, utils
+Depends: R (>= 2.10)
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: es
+LazyData: true
+RoxygenNote: 6.1.1
+Suggests: testthat, covr
+NeedsCompilation: no
+Packaged: 2019-08-28 11:58:39 UTC; diego
+Author: Diego Kozlowski [aut, cre],
+  Pablo Tiscornia [aut],
+  Guido Weksler [aut],
+  Natsumi Shokida [aut],
+  German Rosati [aut]
+Maintainer: Diego Kozlowski <diegokoz92@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-09-03 07:50:05 UTC

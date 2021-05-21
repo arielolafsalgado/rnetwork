@@ -1,0 +1,23 @@
+Package: tukeytrend
+Type: Package
+Version: 0.6
+Title: Tukeys Trend Test via Multiple Marginal Models
+Date: 2018-05-15
+Authors@R: c(person("Frank","Schaarschmidt", role=c("aut","cre"), email="schaarschmidt@biostat.uni-hannover.de"),
+ person("Christian", "Ritz", role="aut"),
+ person("Ludwig", "Hothorn", role="ctb"))
+Author: Frank Schaarschmidt [aut, cre],
+  Christian Ritz [aut],
+  Ludwig Hothorn [ctb]
+Maintainer: Frank Schaarschmidt <schaarschmidt@biostat.uni-hannover.de>
+Depends: multcomp
+Imports: stats, pbkrtest, mgcv, lme4, nlme, Matrix
+Suggests: knitr, xtable, reshape2, sandwich, CorrBin, SASmixed,
+        SimComp, HSAUR3
+VignetteBuilder: knitr
+Description: Provides wrapper functions to the multiple marginal model function mmm() of package 'multcomp' to implement the trend test of Tukey, Ciminera and Heyse (1985) <DOI:10.2307/2530666> for general parametric models.
+License: GPL-2
+NeedsCompilation: no
+Packaged: 2018-05-17 05:35:18 UTC; Schaarschmidt
+Repository: CRAN
+Date/Publication: 2018-05-17 17:30:05 UTC

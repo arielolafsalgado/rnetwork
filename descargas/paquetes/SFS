@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package SFS</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Similarity-First Search Seriation Algorithm [R package SFS version 0.1.4]" />
+<meta name="citation_author1" content="Matteo Seminaroti" />
+<meta name="citation_author2" content="Utz-Uwe Haus" />
+<meta name="citation_publication_date" content="2019-05-07" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=SFS" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=SFS" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="SFS: Similarity-First Search Seriation Algorithm" />
+<meta name="og:description" content="An implementation of the Similarity-First Search algorithm (SFS), a combinatorial algorithm which can be used to solve the seriation problem and to recognize some structured weighted graphs. The SFS algorithm represents a generalization to weighted graphs of the graph search algorithm Lexicographic Breadth-First Search (Lex-BFS), a variant of Breadth-First Search. The SFS algorithm reduces to Lex-BFS when applied to binary matrices (or, equivalently, unweighted graphs). Hence this library can be also considered for Lex-BFS applications such as recognition of graph classes like chordal or unit interval graphs. In fact, the SFS seriation algorithm implemented in this package is a multisweep algorithm, which consists in repeating a finite number of SFS iterations (at most n sweeps for a matrix of size n). If the data matrix has a Robinsonian structure, then the ranking returned by the multistep SFS algorithm is a Robinson ordering of the input matrix. Otherwise the algorithm can be used as a heuristic to return a ranking partially satisfying the Robinson property. " />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=SFS" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>SFS: Similarity-First Search Seriation Algorithm</h2>
+<p>An implementation of the Similarity-First Search algorithm (SFS), a combinatorial algorithm which can be used to solve the seriation problem and to recognize some structured weighted graphs. The SFS algorithm represents a generalization to weighted graphs of the graph search algorithm Lexicographic Breadth-First Search (Lex-BFS), a variant of Breadth-First Search. The SFS algorithm reduces to Lex-BFS when applied to binary matrices (or, equivalently, unweighted graphs). Hence this library can be also considered for Lex-BFS applications such as recognition of graph classes like chordal or unit interval graphs. In fact, the SFS seriation algorithm implemented in this package is a multisweep algorithm, which consists in repeating a finite number of SFS iterations (at most n sweeps for a matrix of size n). If the data matrix has a Robinsonian structure, then the ranking returned by the multistep SFS algorithm is a Robinson ordering of the input matrix. Otherwise the algorithm can be used as a heuristic to return a ranking partially satisfying the Robinson property. </p>
+<table summary="Package SFS summary">
+<tr>
+<td>Version:</td>
+<td>0.1.4</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a> (&ge; 0.12.7)</td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../seriation/index.html">seriation</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-05-07</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Matteo Seminaroti [aut, cph],
+  Utz-Uwe Haus [aut, cre, cph],
+  Monique Laurent [ctb]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Utz-Uwe Haus  &#x3c;&#x75;&#x68;&#x61;&#x75;&#x73;&#x20;&#x61;&#x74;&#x20;&#x63;&#x72;&#x61;&#x79;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL-3</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SystemRequirements:</td>
+<td>C++11</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">SFS citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_SFS.html">SFS results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package SFS downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="SFS.pdf"> SFS.pdf </a> </td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/SFS_0.1.4.tar.gz"> SFS_0.1.4.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/SFS_0.1.4.zip">SFS_0.1.4.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/SFS_0.1.4.zip">SFS_0.1.4.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/SFS_0.1.4.zip">SFS_0.1.4.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/SFS_0.1.4.tgz">SFS_0.1.4.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/SFS_0.1.4.tgz">SFS_0.1.4.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/SFS"> SFS archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=SFS"><samp>https://CRAN.R-project.org/package=SFS</samp></a>
+to link to this page.</p>
+</body>
+</html>

@@ -1,0 +1,27 @@
+Package: ordinalCont
+Title: Ordinal Regression Analysis for Continuous Scales
+Version: 1.2
+Authors@R: c(person("Maurizio Manuguerra", role = c("aut", "cre"),
+  	     email = "maurizio.manuguerra@mq.edu.au"),
+	      person("Gillian Heller", role = "aut", email = "gillian.heller@mq.edu.au"))
+Author: Maurizio Manuguerra [aut, cre],
+    Gillian Heller [aut]
+Maintainer: Maurizio Manuguerra <maurizio.manuguerra@mq.edu.au>
+Description: A regression framework for response variables which are continuous
+    self-rating scales such as the Visual Analog Scale (VAS) used in pain
+    assessment, or the Linear Analog Self-Assessment (LASA) scales in quality
+    of life studies. These scales measure subjects' perception of an intangible
+    quantity, and cannot be handled as ratio variables because of their inherent
+    non-linearity. We treat them as ordinal variables, measured on a continuous
+    scale. A function (the g function) connects the scale with an underlying
+    continuous latent variable. The link function is the inverse of the CDF of the
+    assumed underlying distribution of the latent variable. Currently the logit
+    link, which corresponds to a standard logistic distribution, is implemented.
+Depends: R (>= 3.1.1), boot, splines
+License: GPL (>= 2)
+LazyData: true
+RoxygenNote: 6.0.1
+NeedsCompilation: no
+Packaged: 2017-06-15 23:50:09 UTC; manuguerra
+Repository: CRAN
+Date/Publication: 2017-06-16 18:10:21 UTC

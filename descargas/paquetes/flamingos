@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package flamingos</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Functional Latent Data Models for Clustering Heterogeneous Curves ('FLaMingos') [R package flamingos version 0.1.0]" />
+<meta name="citation_author1" content="Faicel Chamroukhi" />
+<meta name="citation_author2" content="Florian Lecocq" />
+<meta name="citation_author3" content="Marius Bartcus" />
+<meta name="citation_publication_date" content="2019-08-06" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=flamingos" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=flamingos" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="flamingos: Functional Latent Data Models for Clustering Heterogeneous Curves ('FLaMingos')" />
+<meta name="og:description" content="Provides a variety of original and flexible user-friendly statistical latent variable models for the simultaneous clustering and segmentation of heterogeneous functional data (i.e time series, or more generally longitudinal data, fitted by unsupervised algorithms, including EM algorithms. Functional Latent Data Models for Clustering heterogeneous curves ('FLaMingos') are originally introduced and written in 'Matlab' by Faicel Chamroukhi &amp;lt;&lt;a href=&quot;https://github.com/fchamroukhi?utf8=?&amp;amp;amp;tab=repositories&amp;amp;amp;q=mix&amp;amp;amp;type=public&amp;amp;amp;language=matlab&quot;&gt;https://github.com/fchamroukhi?utf8=?&amp;amp;tab=repositories&amp;amp;q=mix&amp;amp;type=public&amp;amp;language=matlab&lt;/a&gt;&amp;gt;. The references are mainly the following ones. Chamroukhi F. (2010) &amp;lt;&lt;a href=&quot;https://chamroukhi.com/FChamroukhi-PhD.pdf&quot;&gt;https://chamroukhi.com/FChamroukhi-PhD.pdf&lt;/a&gt;&amp;gt;. Chamroukhi F., Same A., Govaert, G. and Aknin P. (2010) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.neucom.2009.12.023&quot;&gt;doi:10.1016/j.neucom.2009.12.023&lt;/a&gt;&amp;gt;. Chamroukhi F., Same A., Aknin P. and Govaert G. (2011). &amp;lt;&lt;a href=&quot;https://doi.org/10.1109%2FIJCNN.2011.6033590&quot;&gt;doi:10.1109/IJCNN.2011.6033590&lt;/a&gt;&amp;gt;. Same A., Chamroukhi F., Govaert G. and Aknin, P. (2011) &amp;lt;&lt;a href=&quot;https://doi.org/10.1007%2Fs11634-011-0096-5&quot;&gt;doi:10.1007/s11634-011-0096-5&lt;/a&gt;&amp;gt;. Chamroukhi F., and Glotin H. (2012) &amp;lt;&lt;a href=&quot;https://doi.org/10.1109%2FIJCNN.2012.6252818&quot;&gt;doi:10.1109/IJCNN.2012.6252818&lt;/a&gt;&amp;gt;. Chamroukhi F., Glotin H. and Same A. (2013) &amp;lt;&lt;a href=&quot;https://doi.org/10.1016%2Fj.neucom.2012.10.030&quot;&gt;doi:10.1016/j.neucom.2012.10.030&lt;/a&gt;&amp;gt;. Chamroukhi F. (2015) &amp;lt;&lt;a href=&quot;https://chamroukhi.com/FChamroukhi-HDR.pdf&quot;&gt;https://chamroukhi.com/FChamroukhi-HDR.pdf&lt;/a&gt;&amp;gt;. Chamroukhi F. and Nguyen H-D. (2019) &amp;lt;&lt;a href=&quot;https://doi.org/10.1002%2Fwidm.1298&quot;&gt;doi:10.1002/widm.1298&lt;/a&gt;&amp;gt;." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=flamingos" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>flamingos: Functional Latent Data Models for Clustering Heterogeneous
+Curves ('FLaMingos')</h2>
+<p>Provides a variety of original and flexible user-friendly 
+    statistical latent variable models for the simultaneous clustering and 
+    segmentation of heterogeneous functional data (i.e time series, or more 
+    generally longitudinal data, fitted by unsupervised algorithms, including 
+    EM algorithms. Functional Latent Data Models for Clustering heterogeneous 
+    curves ('FLaMingos') are originally introduced and written in 'Matlab' by
+    Faicel Chamroukhi 
+    &lt;<a href="https://github.com/fchamroukhi?utf8=?&amp;amp;tab=repositories&amp;amp;q=mix&amp;amp;type=public&amp;amp;language=matlab">https://github.com/fchamroukhi?utf8=?&amp;tab=repositories&amp;q=mix&amp;type=public&amp;language=matlab</a>&gt;. 
+    The references are mainly the following ones.
+    Chamroukhi F. (2010) &lt;<a href="https://chamroukhi.com/FChamroukhi-PhD.pdf">https://chamroukhi.com/FChamroukhi-PhD.pdf</a>&gt;.
+    Chamroukhi F., Same A., Govaert, G. and Aknin P. (2010) &lt;<a href="https://doi.org/10.1016%2Fj.neucom.2009.12.023">doi:10.1016/j.neucom.2009.12.023</a>&gt;.
+    Chamroukhi F., Same A., Aknin P. and Govaert G. (2011). &lt;<a href="https://doi.org/10.1109%2FIJCNN.2011.6033590">doi:10.1109/IJCNN.2011.6033590</a>&gt;.
+    Same A., Chamroukhi F., Govaert G. and Aknin, P. (2011) &lt;<a href="https://doi.org/10.1007%2Fs11634-011-0096-5">doi:10.1007/s11634-011-0096-5</a>&gt;.
+    Chamroukhi F., and Glotin H. (2012) &lt;<a href="https://doi.org/10.1109%2FIJCNN.2012.6252818">doi:10.1109/IJCNN.2012.6252818</a>&gt;.
+    Chamroukhi F., Glotin H. and Same A. (2013) &lt;<a href="https://doi.org/10.1016%2Fj.neucom.2012.10.030">doi:10.1016/j.neucom.2012.10.030</a>&gt;.
+    Chamroukhi F. (2015) &lt;<a href="https://chamroukhi.com/FChamroukhi-HDR.pdf">https://chamroukhi.com/FChamroukhi-HDR.pdf</a>&gt;.
+    Chamroukhi F. and Nguyen H-D. (2019) &lt;<a href="https://doi.org/10.1002%2Fwidm.1298">doi:10.1002/widm.1298</a>&gt;.</p>
+<table summary="Package flamingos summary">
+<tr>
+<td>Version:</td>
+<td>0.1.0</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td>R (&ge; 2.10)</td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td>methods, stats, <a href="../Rcpp/index.html">Rcpp</a></td>
+</tr>
+<tr>
+<td>LinkingTo:</td>
+<td><a href="../Rcpp/index.html">Rcpp</a>, <a href="../RcppArmadillo/index.html">RcppArmadillo</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2019-08-06</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Faicel Chamroukhi <a href="https://orcid.org/0000-0002-5894-3103"><img alt="ORCID iD" src="/web/orcid.svg" style="width:16px; height:16px; margin-left:4px; margin-right:4px; vertical-align:middle" /></a>
+    [aut],
+  Florian Lecocq [aut, trl, cre] (R port),
+  Marius Bartcus [aut, trl] (R port)</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Florian Lecocq  &#x3c;&#x66;&#x6c;&#x6f;&#x72;&#x69;&#x61;&#x6e;&#x2e;&#x6c;&#x65;&#x63;&#x6f;&#x63;&#x71;&#x20;&#x61;&#x74;&#x20;&#x6f;&#x75;&#x74;&#x6c;&#x6f;&#x6f;&#x6b;&#x2e;&#x63;&#x6f;&#x6d;&#x3e;</td>
+</tr>
+<tr>
+<td>BugReports:</td>
+<td><a href="https://github.com/fchamroukhi/FLaMingos/issues">https://github.com/fchamroukhi/FLaMingos/issues</a></td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL (&ge; 3)</a></td>
+</tr>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/fchamroukhi/FLaMingos">https://github.com/fchamroukhi/FLaMingos</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Citation:</td>
+<td><a href="citation.html">flamingos citation info</a> </td>
+</tr>
+<tr>
+<td>Materials:</td>
+<td><a href="readme/README.html">README</a> </td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_flamingos.html">flamingos results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package flamingos downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="flamingos.pdf"> flamingos.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/A-quick-tour-of-mixHMM.html">A-quick-tour-of-mixHMM</a><br/>
+<a href="vignettes/A-quick-tour-of-mixHMMR.html">A-quick-tour-of-mixHMMR</a><br/>
+<a href="vignettes/A-quick-tour-of-mixRHLP.html">A-quick-tour-of-mixRHLP</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/flamingos_0.1.0.tar.gz"> flamingos_0.1.0.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/flamingos_0.1.0.zip">flamingos_0.1.0.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/flamingos_0.1.0.zip">flamingos_0.1.0.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/flamingos_0.1.0.zip">flamingos_0.1.0.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: <a href="../../../bin/macosx/contrib/4.0/flamingos_0.1.0.tgz">flamingos_0.1.0.tgz</a>, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/flamingos_0.1.0.tgz">flamingos_0.1.0.tgz</a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=flamingos"><samp>https://CRAN.R-project.org/package=flamingos</samp></a>
+to link to this page.</p>
+</body>
+</html>

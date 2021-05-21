@@ -1,0 +1,34 @@
+Package: tcgsaseq
+Type: Package
+Title: Time-Course Gene Set Analysis for RNA-Seq Data
+Version: 1.8.1
+Date: 2018-12-06
+Authors@R: c(person("Denis", "Agniel", role = c("aut"),
+                    email = "denis.agniel@gmail.com"),
+	           person("Boris P.", "Hejblum", role = c("aut", "cre"),
+	                  email = "boris.hejblum@u-bordeaux.fr"),
+	           person("Marine", "Gauthier", role = c("aut"),
+	                  email = "marine.gauthier@u-bordeaux.fr"))
+Depends: R (>= 3.0.2)
+Imports: CompQuadForm, ggplot2, graphics, GSA, KernSmooth, stats,
+        statmod, utils
+Suggests: limma, edgeR, DESeq2, S4Vectors, knitr, rmarkdown, testthat,
+        covr
+Description: Analyze RNA-seq data with variance component score test accounting 
+    for data heteroscedasticity through precision weights. Perform both gene-wise and gene set
+    analyses, and can deal with longitudinal data. Method is detailed in: Agniel D & Hejblum BP (2017) 
+    Variance component score test for time-course gene set analysis of longitudinal RNA-seq data, 
+    Biostatistics, 18(4):589-604.
+LazyData: true
+License: GPL-2 | file LICENSE
+BugReports: https://github.com/denisagniel/tcgsaseq/issues
+Encoding: UTF-8
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2018-12-06 23:39:59 UTC; borishejblum
+Author: Denis Agniel [aut],
+  Boris P. Hejblum [aut, cre],
+  Marine Gauthier [aut]
+Maintainer: Boris P. Hejblum <boris.hejblum@u-bordeaux.fr>
+Repository: CRAN
+Date/Publication: 2018-12-07 00:50:03 UTC

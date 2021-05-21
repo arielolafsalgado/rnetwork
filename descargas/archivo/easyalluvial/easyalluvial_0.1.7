@@ -1,0 +1,34 @@
+Package: easyalluvial
+Title: Generate Alluvial Plots with a Single Line of Code
+Version: 0.1.7
+Authors@R: person( "Bjoern", "Koneswarakantha", role = c("aut","cre"), email = "datistics@gmail.com", comment = c(ORCID = " 0000-0003-4585-7799") )
+URL: https://github.com/erblast/easyalluvial
+Description: Alluvial plots are similar to sankey diagrams and visualise categorical data 
+    over multiple dimensions as flows. (Rosvall M, Bergstrom CT (2010) Mapping Change in 
+    Large Networks. PLoS ONE 5(1): e8694. <doi:10.1371/journal.pone.0008694> 
+    Their graphical grammar however is a bit more complex then that of a regular x/y 
+    plots. The 'ggalluvial' package made a great job of translating that grammar into 
+    'ggplot2' syntax and gives you many option to tweak the appearance of an alluvial 
+    plot, however there still remains a multi-layered complexity that makes it difficult
+    to use 'ggalluvial' for explorative data analysis. 'easyalluvial' provides a simple 
+    interface to this package that allows you to produce a decent alluvial plot from any 
+    dataframe in either long or wide format from a single line of code while also handling 
+    continuous data. It is meant to allow a quick visualisation of entire dataframes 
+    with a focus on different colouring options that can make alluvial plots a great 
+    tool for data exploration. 
+License: CC0
+Encoding: UTF-8
+LazyData: true
+Depends: R(>= 2.10)
+Suggests: testthat, covr, ISLR, nycflights13
+RoxygenNote: 6.1.1
+Imports: purrr , tidyr , dplyr , forcats , ggalluvial , ggplot2 ,
+        RColorBrewer , recipes , rlang , stringr , magrittr , tibble
+Language: en-US
+NeedsCompilation: no
+Packaged: 2018-12-10 00:19:39 UTC; erbla
+Author: Bjoern Koneswarakantha [aut, cre] (<https://orcid.org/
+    0000-0003-4585-7799>)
+Maintainer: Bjoern Koneswarakantha <datistics@gmail.com>
+Repository: CRAN
+Date/Publication: 2018-12-18 16:50:03 UTC

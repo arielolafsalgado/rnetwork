@@ -1,0 +1,47 @@
+Package: psd
+Type: Package
+Title: Adaptive, Sine-Multitaper Power Spectral Density and Cross
+        Spectrum Estimation
+Version: 2.0.0
+Date: 2020-06-21
+Authors@R: 
+    c(person(given = c("Andrew","J."),
+             family = "Barbour",
+             role = c("aut", "cre"),
+             email = "andy.barbour@gmail.com",
+             comment = c(ORCID = "0000-0002-6890-2452")),
+      person(given = "Jonathan",
+             family = "Kennel",
+             role = "aut",
+             comment = c(ORCID = "0000-0003-4474-6886")),
+      person(given = c("Robert","L."),
+             family = "Parker",
+             role = "aut"))
+Description: Produces power spectral density estimates through iterative
+    refinement of the optimal number of sine-tapers at each frequency. This
+    optimization procedure is based on the method of Riedel and Sidorenko
+    (1995), which minimizes the Mean Square Error (sum of variance and bias)
+    at each frequency, but modified for computational stability. The same
+    procedure can now be used to calculate the cross spectrum.
+License: GPL (>= 2)
+URL: https://github.com/abarbour/psd, Barbour and Parker (2014):
+        https://doi.org/10.1016/j.cageo.2013.09.015, Riedel and
+        Sidorenko (1995): https://doi.org/10.1109/78.365298
+BugReports: https://github.com/abarbour/psd/issues
+Depends: R (>= 2.14.1)
+Imports: Rcpp (>= 0.11.5), RColorBrewer, zoo
+Suggests: bspec, fftw (>= 1.0.3), ggplot2 (>= 0.9), multitaper, plyr,
+        RSEIS, rbenchmark, reshape2, knitr, rmarkdown, signal, formatR,
+        testthat (>= 2.1.0)
+Encoding: UTF-8
+VignetteBuilder: knitr
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.1.0
+NeedsCompilation: yes
+Packaged: 2020-06-22 02:08:42 UTC; abarbour
+Author: Andrew J. Barbour [aut, cre] (<https://orcid.org/0000-0002-6890-2452>),
+  Jonathan Kennel [aut] (<https://orcid.org/0000-0003-4474-6886>),
+  Robert L. Parker [aut]
+Maintainer: Andrew J. Barbour <andy.barbour@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-06-22 05:10:02 UTC

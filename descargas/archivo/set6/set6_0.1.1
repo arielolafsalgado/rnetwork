@@ -1,0 +1,40 @@
+Package: set6
+Title: R6 Mathematical Sets Interface
+Version: 0.1.1
+Authors@R: 
+      c(person(given = "Raphael",
+             family = "Sonabend",
+             role = c("aut","cre"),
+             email = "raphael.sonabend.15@ucl.ac.uk",
+             comment = c(ORCID = "0000-0001-9225-4654")),
+      person(given = "Franz",
+             family = "Kiraly",
+             role = "aut",
+             email = "f.kiraly@ucl.ac.uk"))
+Description: An object-oriented package for mathematical sets, upgrading the current gold-standard {sets}. Many forms of mathematical sets are implemented, including (countably finite) sets, tuples, intervals (countably infinite or uncountable), and fuzzy variants. Wrappers extend functionality by allowing symbolic representations of complex operations on sets, including unions, (cartesian) products, exponentiation, and differences (asymmetric and symmetric).
+Imports: checkmate, R6, utils
+Suggests: knitr, testthat, devtools, rmarkdown
+License: MIT + file LICENSE
+LazyData: true
+VignetteBuilder: knitr
+Encoding: UTF-8
+RoxygenNote: 7.0.2
+Collate: 'Properties.R' 'set6-deprecated.R' 'Set.R' 'SetWrapper.R'
+        'SetWrapper_ComplementSet.R' 'SetWrapper_ExponentSet.R'
+        'SetWrapper_PowersetSet.R' 'SetWrapper_ProductSet.R'
+        'SetWrapper_UnionSet.R' 'Set_ConditionalSet.R' 'Set_FuzzySet.R'
+        'Set_FuzzySet_FuzzyTuple.R' 'Set_Interval.R' 'setSymbol.R'
+        'Set_Interval_SpecialSet.R' 'Set_Tuple.R' 'Set_UniversalSet.R'
+        'helpers.R' 'assertions.R' 'listSpecialSets.R'
+        'operation_cleaner.R' 'operation_powerset.R'
+        'operation_setcomplement.R' 'operation_setintersect.R'
+        'operation_setpower.R' 'operation_setproduct.R'
+        'operation_setsymdiff.R' 'operation_setunion.R' 'set6.R'
+        'set6.news.R' 'useUnicode.R' 'zzz.R'
+NeedsCompilation: no
+Packaged: 2020-02-04 11:01:55 UTC; raphael
+Author: Raphael Sonabend [aut, cre] (<https://orcid.org/0000-0001-9225-4654>),
+  Franz Kiraly [aut]
+Maintainer: Raphael Sonabend <raphael.sonabend.15@ucl.ac.uk>
+Repository: CRAN
+Date/Publication: 2020-02-04 11:20:02 UTC

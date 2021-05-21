@@ -1,0 +1,40 @@
+Package: fxtract
+Type: Package
+Title: Feature Extraction from Grouped Data
+Date: 2019-02-07
+Description: An R6 implementation for calculating features from grouped data.
+    The output will be one row for each group.
+    This functionality is often needed in the feature extraction process of machine learning problems.
+    Very large datasets are supported, since data is only read into RAM when needed.
+    Calculation can be done in parallel and the process can be monitored. 
+    Global error handling is supported.
+    Results are available in one final dataframe.
+Version: 0.9.1
+Authors@R: c(person("Quay", "Au", email = "quayau@gmail.com", role = c("aut", "cre")),
+  person("Clemens", "Stachl", email = "clemensstachl@gmail.com", role = "ctb"),
+  person("Ramona", "Schoedel", email = "ramonaschoedel90@gmail.com", role = "ctb"),
+  person("Theresa", "Ullmann", email = "theresa_ullmann@gmx.de", role = "ctb"),
+  person("Andreas", "Hofheinz", email = "andreas.hofheinz@outlook.com", role = "ctb")
+  )
+URL: https://github.com/QuayAu/fxtract
+BugReports: https://github.com/QuayAu/fxtract/issues
+NeedsCompilation: yes
+ByteCompile: yes
+Depends: R (>= 3.4.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Imports: dplyr, magrittr, checkmate, utils, data.table, future,
+        future.apply, R6
+Suggests: testthat, knitr, covr, pkgdown
+VignetteBuilder: knitr
+Packaged: 2019-02-07 13:39:02 UTC; auj
+Author: Quay Au [aut, cre],
+  Clemens Stachl [ctb],
+  Ramona Schoedel [ctb],
+  Theresa Ullmann [ctb],
+  Andreas Hofheinz [ctb]
+Maintainer: Quay Au <quayau@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-02-12 17:30:03 UTC

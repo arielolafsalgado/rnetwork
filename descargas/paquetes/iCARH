@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CRAN - Package iCARH</title>
+<link rel="stylesheet" type="text/css" href="../../CRAN_web.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="citation_title" content="Integrative Conditional Autoregressive Horseshoe Model [R package iCARH version 2.0.2.1]" />
+<meta name="citation_author1" content="Takoua Jendoubi" />
+<meta name="citation_author2" content="Timothy M.D. Ebbels" />
+<meta name="citation_publication_date" content="2020-08-27" />
+<meta name="citation_public_url" content="https://CRAN.R-project.org/package=iCARH" />
+<meta name="DC.identifier" content="https://CRAN.R-project.org/package=iCARH" />
+<meta name="DC.publisher" content="Comprehensive R Archive Network (CRAN)" />
+<meta name="og:title" content="iCARH: Integrative Conditional Autoregressive Horseshoe Model" />
+<meta name="og:description" content="Implements the integrative conditional autoregressive horseshoe model discussed in Jendoubi, T., Ebbels, T.M. Integrative analysis of time course metabolic data and biomarker discovery. BMC Bioinformatics 21, 11 (2020) &amp;lt;&lt;a href=&quot;https://doi.org/10.1186%2Fs12859-019-3333-0&quot;&gt;doi:10.1186/s12859-019-3333-0&lt;/a&gt;&amp;gt;. The model consists in three levels: Metabolic pathways level modeling interdependencies between variables via a conditional auto-regressive (CAR) component, integrative analysis level to identify potential associations between heterogeneous omic variables via a Horseshoe prior and experimental design level to capture experimental design conditions through a mixed-effects model. The package also provides functions to simulate data from the model, construct pathway matrices, post process and plot model parameters." />
+<meta name="og:image" content="https://CRAN.R-project.org/CRANlogo.png" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://CRAN.R-project.org/package=iCARH" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@_R_Foundation" />
+<style type="text/css">
+  table td { vertical-align: top; }
+</style>
+</head>
+<body>
+<h2>iCARH: Integrative Conditional Autoregressive Horseshoe Model</h2>
+<p>Implements the integrative conditional autoregressive horseshoe model 
+    discussed in Jendoubi, T., Ebbels, T.M. Integrative analysis of time course metabolic data and biomarker discovery. 
+    BMC Bioinformatics 21, 11 (2020) &lt;<a href="https://doi.org/10.1186%2Fs12859-019-3333-0">doi:10.1186/s12859-019-3333-0</a>&gt;.
+    The model consists in three levels: Metabolic pathways level modeling interdependencies between
+    variables via a conditional auto-regressive (CAR) component, integrative analysis level to identify
+    potential associations between heterogeneous omic variables via a Horseshoe prior and experimental
+    design level to capture experimental design conditions through a mixed-effects model.
+    The package also provides functions to simulate data from the model, construct pathway matrices,
+    post process and plot model parameters.</p>
+<table summary="Package iCARH summary">
+<tr>
+<td>Version:</td>
+<td>2.0.2.1</td>
+</tr>
+<tr>
+<td>Depends:</td>
+<td><a href="../rstan/index.html">rstan</a>, <a href="../MASS/index.html">MASS</a>, stats, <a href="../ggplot2/index.html">ggplot2</a>, <a href="../glue/index.html">glue</a></td>
+</tr>
+<tr>
+<td>Imports:</td>
+<td><a href="../RCurl/index.html">RCurl</a>, <a href="http://www.bioconductor.org/packages/release/bioc/html/KEGGgraph.html"><span class="BioC">KEGGgraph</span></a>, <a href="../igraph/index.html">igraph</a>, <a href="../reshape2/index.html">reshape2</a>, <a href="../mc2d/index.html">mc2d</a>, <a href="../abind/index.html">abind</a>, <a href="../Matrix/index.html">Matrix</a></td>
+</tr>
+<tr>
+<td>Suggests:</td>
+<td><a href="../knitr/index.html">knitr</a>, <a href="../rmarkdown/index.html">rmarkdown</a></td>
+</tr>
+<tr>
+<td>Published:</td>
+<td>2020-08-27</td>
+</tr>
+<tr>
+<td>Author:</td>
+<td>Takoua Jendoubi [aut, cre],
+  Timothy M.D. Ebbels [aut]</td>
+</tr>
+<tr>
+<td>Maintainer:</td>
+<td>Takoua Jendoubi  &#x3c;&#x74;&#x2e;&#x6a;&#x65;&#x6e;&#x64;&#x6f;&#x75;&#x62;&#x69;&#x31;&#x34;&#x20;&#x61;&#x74;&#x20;&#x69;&#x6d;&#x70;&#x65;&#x72;&#x69;&#x61;&#x6c;&#x2e;&#x61;&#x63;&#x2e;&#x75;&#x6b;&#x3e;</td>
+</tr>
+<tr>
+<td>License:</td>
+<td><a href="../../licenses/GPL-3">GPL (&ge; 3)</a></td>
+</tr>
+<tr>
+<td>NeedsCompilation:</td>
+<td>no</td>
+</tr>
+<tr>
+<td>CRAN&nbsp;checks:</td>
+<td><a href="../../checks/check_results_iCARH.html">iCARH results</a></td>
+</tr>
+</table>
+<h4>Downloads:</h4>
+<table summary="Package iCARH downloads">
+<tr>
+<td> Reference&nbsp;manual: </td>
+<td> <a href="iCARH.pdf"> iCARH.pdf </a> </td>
+</tr>
+<tr>
+<td>Vignettes:</td>
+<td>
+<a href="vignettes/example.html">Example of simulating and running the iCARH model</a><br/>
+</td>
+</tr>
+<tr>
+<td> Package&nbsp;source: </td>
+<td> <a href="../../../src/contrib/iCARH_2.0.2.1.tar.gz"> iCARH_2.0.2.1.tar.gz </a> </td>
+</tr>
+<tr>
+<td> Windows&nbsp;binaries: </td>
+<td> r-devel: <a href="../../../bin/windows/contrib/4.1/iCARH_2.0.2.1.zip">iCARH_2.0.2.1.zip</a>, r-release: <a href="../../../bin/windows/contrib/4.0/iCARH_2.0.2.1.zip">iCARH_2.0.2.1.zip</a>, r-oldrel: <a href="../../../bin/windows/contrib/3.6/iCARH_2.0.2.1.zip">iCARH_2.0.2.1.zip</a> </td>
+</tr>
+<tr>
+<td> macOS&nbsp;binaries: </td>
+<td> r-release: not available, r-oldrel: <a href="../../../bin/macosx/el-capitan/contrib/3.6/iCARH_2.0.2.1.tgz">iCARH_2.0.2.1.tgz</a> </td>
+</tr>
+<tr>
+<td> Old&nbsp;sources: </td>
+<td> <a href="https://CRAN.R-project.org/src/contrib/Archive/iCARH"> iCARH archive </a> </td>
+</tr>
+</table>
+<h4>Linking:</h4>
+<p>Please use the canonical form
+<a href="https://CRAN.R-project.org/package=iCARH"><samp>https://CRAN.R-project.org/package=iCARH</samp></a>
+to link to this page.</p>
+</body>
+</html>

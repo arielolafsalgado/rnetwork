@@ -1,0 +1,23 @@
+Package: swissdd
+Type: Package
+Title: Get Swiss Federal and Cantonal Vote Results from Opendata.swiss
+Imports: purrr, dplyr, tidyr, jsonlite, magrittr, tibble, curl
+Version: 1.0.0
+Authors@R: c(
+    person("Thomas", "Lo Russo", email = "th.lorusso@gmail.com", role = c("cre","aut")),
+    person("Thomas", "Willi", email = "thomas.willi@uzh.ch", role = "aut"))
+Description: Builds upon the real time data service as well as the archive for national votes <https://opendata.swiss/api/3/action/package_show?id=echtzeitdaten-am-abstimmungstag-zu-eidgenoessischen-abstimmungsvorlagen> and cantonal votes <https://opendata.swiss/api/3/action/package_show?id=echtzeitdaten-am-abstimmungstag-zu-kantonalen-abstimmungsvorlagen>. It brings the results of Swiss popular votes, aggregated at the geographical level of choice, into R. 
+URL: https://github.com/politanch/swissdd
+BugReports: https://github.com/politanch/swissdd/issues
+License: GPL-2
+Encoding: UTF-8
+Suggests: testthat
+LazyData: true
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-05-31 14:01:59 UTC; tlo1
+Author: Thomas Lo Russo [cre, aut],
+  Thomas Willi [aut]
+Maintainer: Thomas Lo Russo <th.lorusso@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-06-03 13:10:03 UTC

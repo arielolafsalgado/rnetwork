@@ -1,0 +1,24 @@
+Package: lsm
+Type: Package
+Title: Estimation of the log Likelihood of the Saturated Model
+Version: 0.1.6
+Date: 2018-03-30
+Authors@R: c(person("Humberto", "Llinas", role = c("aut")),
+  person("Omar", "Fabregas", role = c("aut")),
+  person("Jorge", "Villalba", email = "jlvia1191@gmail.com", role = c("aut", "cre")))
+Author: Humberto Llinas [aut],
+  Omar Fabregas [aut],
+  Jorge Villalba [aut, cre]
+Maintainer: Jorge Villalba <jlvia1191@gmail.com>
+Description: When the values of the outcome variable Y are either 0 or 1, the function lsm() calculates the estimation of the log likelihood in the saturated model. This model is characterized by Llinas (2006, ISSN:2389-8976) in section 2.3 through the assumptions 1 and 2. The function LogLik() works (almost perfectly) when the number of independent variables K is high, but for small K it calculates wrong values in some cases. For this reason, when Y is dichotomous and the data are grouped in J populations, it is recommended to use the function lsm() because it works very well for all K.
+Depends: R (>= 3.1.0),stats
+Encoding: UTF-8
+URL: https://github.com/jlvia1191/lsm
+License: MIT + file LICENSE
+LazyData: TRUE
+RoxygenNote: 6.0.1
+Collate: 'lsm.R'
+NeedsCompilation: no
+Packaged: 2018-03-30 15:10:27 UTC; jorgeR
+Repository: CRAN
+Date/Publication: 2018-04-09 13:52:11 UTC

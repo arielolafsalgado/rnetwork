@@ -1,0 +1,21 @@
+Package: bnnSurvival
+Type: Package
+Title: Bagged k-Nearest Neighbors Survival Prediction
+Version: 0.1.4
+Date: 2016-02-26
+Author: Marvin N. Wright
+Maintainer: Marvin N. Wright <wright@imbs.uni-luebeck.de>
+Description: Implements a bootstrap aggregated (bagged) version of
+    the k-nearest neighbors survival probability prediction method (Lowsky et
+    al. 2013). In addition to the bootstrapping of training samples, the
+    features can be subsampled in each baselearner to break the correlation
+    between them. The Rcpp package is used to speed up the computation.
+Imports: prodlim, pec, Rcpp (>= 0.11.2), parallel, methods
+LinkingTo: Rcpp
+Suggests: survival, testthat
+License: GPL-3
+RoxygenNote: 5.0.1
+NeedsCompilation: yes
+Packaged: 2016-02-26 16:43:32 UTC; wright
+Repository: CRAN
+Date/Publication: 2016-02-27 14:40:34

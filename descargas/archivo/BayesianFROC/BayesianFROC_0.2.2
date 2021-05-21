@@ -1,0 +1,80 @@
+Package: BayesianFROC
+Type: Package
+Title: FROC Analysis by Bayesian Approaches
+Version: 0.2.2
+Authors@R: person(given = "Issei",family = "Tsunoda",email = "tsunoda.issei1111@gmail.com", role = c("aut", "cre") )
+Maintainer: Issei Tsunoda <tsunoda.issei1111@gmail.com>
+Description: Execute BayesianFROC::fit_GUI_Shiny() (or fit_GUI_Shiny_MRMC()) for a graphical user interface via Shiny. The free-response receiver operating characteristic (FROC) method is a generalization of receiver operating characteristic (ROC) analysis. However, Chakraborty's classical model is non-generative in the sense that it cannot synthesize data. This package aims to modify his models to be generative using a Bayesian approach, and to verify that our models fit practical datasets. We also develop a Bayesian model for comparing modalities. Chakraborty [1] defined a free-response receiver operating characteristic (FROC) model based on maximum likelihood (ML). However, his model is non-generative in the sense that it cannot generate FROC datasets. In signal detection theory, the number of true positives never exceeds the number of targets. However, this is not explained by any existing model. Thus, in this package, the author contributes to FROC theory by refining Chakraborty’s model to obtain models that are generative. This modification allows us to use FROC analysis in a general statistical scheme, and as a benefit, our generative model can be applied to calculations of posterior predictive p values that require generation of synthetic datasets from fitted models. Furthermore, this package presents new models for comparison of modalities. Modality comparison is a common problem in radiology, and has been studied extensively. However, in many medical studies, such problems are addressed with non-Bayesian methods such as ANOVA. As a supplementary topic, this work presents a Bayesian model that includes individual differences. With this model, we can account for differences between individual readers when comparing modalities, using Bayesian rather than ML-methods. The author found the existing FROC model in [1] to be non-generative for calculation of  posterior predictive p values. Replacing the ML-based method with a Bayesian approach differs from standard practice but provides insight into the problems of existing methods. Please execute the following R scripts from the R (R studio) console, demo(demo_MRMC, package = "BayesianFROC"); demo(demo_srsc, package = "BayesianFROC"); demo(demo_stan, package = "BayesianFROC"); demo(demo_drawcurves_srsc, package = "BayesianFROC"); demo_Bayesian_FROC(); demo_Bayesian_FROC_without_pause(). References: [1] Dev Chakraborty (1989) <doi:10.1118/1.596358> Maximum likelihood analysis of free - response receiver operating characteristic (FROC) data. Pre-print: Issei Tsunoda; Generative Models for free-response receiver operating characteristic analysis. See the vignettes for more details.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+Imports: knitr, readxl, xlsx, stats, graphics, tcltk, grDevices,
+        ggplot2, methods, car, crayon, DiagrammeR, bridgesampling,
+        rhandsontable, shiny, pracma, shinydashboard, shinythemes
+Suggests: rmarkdown, rstantools, openxlsx, hexbin, MASS, ggmcmc,
+        magrittr
+Depends: rstan (>= 2.18.2), R (>= 3.5.0), Rcpp
+NeedsCompilation: yes
+VignetteBuilder: knitr
+Collate: 'AFROC.R' 'Author_vs_Chakraborty_for_AUC.R' 'BayesianFROC.R'
+        'Close_all_graphic_devices.R' 'ConfirmConvergence.R'
+        'DrawCurves.R' 'Draw_an_area_of_AUC_for_srsc.R'
+        'FROC_via_ggplot.R' 'Make_TeX_file_for_summary.R'
+        'Phi__and__Phi_inv.R' 'QQQ.R' 'Rprofile.R'
+        'Simulation_Based_Calibration.R'
+        'Stan_model_minimal_incomplete.R' 'StartupMessage.R'
+        'StatisticForANOVA.R'
+        'Test_Null_Hypothesis_that_all_modalities_are_same.R'
+        'apply_foo.R' 'array_easy_example.R'
+        'array_of_hit_and_false_alarms_from_vector.R'
+        'check_hit_is_less_than_NL.R' 'check_rhat.R'
+        'chi_square_goodness_of_fit.R' 'clearWorkspace.R' 'color.R'
+        'convertFromJafroc.R' 'create_dataset.R' 'css_shiny.R'
+        'dark_theme.R' 'dataset_creator_by_specifying_only_M_Q.R'
+        'dataset_creator_for_many_Readers.R'
+        'dataset_creator_new_version.R' 'demo_Bayesian_FROC.R'
+        'demo_Bayesian_FROC_without_pause.R'
+        'development_Tools_and_Memorandum.R' 'document_dataset_MRMC.R'
+        'document_dataset_srsc.R' 'document_true_param.R'
+        'draw_latent_distribution.R' 'empty_cell_shiny.R'
+        'error_message.R'
+        'error_message_on_imaging_device_rhat_values.R' 'ex.R'
+        'explanation_about_package_BayesianFROC.R'
+        'explanation_for_what_curves_are_drawn.R'
+        'extract_EAP_by_array.R'
+        'extract_data_frame_from_dataList_MRMC.R' 'fffaaabbb.R'
+        'fit_Bayesian_FROC.R' 'fit_GUI.R' 'fit_GUI_MRMC.R'
+        'fit_GUI_MRMC_new.R' 'fit_GUI_Shiny.R' 'fit_GUI_dashboard.R'
+        'fit_GUI_simple_from_apppp_file.R' 'fit_MRMC_versionTWO.R'
+        'foo_of_a_List_of_Arrays.R' 'fut_GUI_MRMC_shiny.R'
+        'get_posterior_variance.R' 'give_name_srsc_data.R'
+        'hit_rate_adjusted_from_the_vector_p.R'
+        'initial_values_specification_for_stan_in_case_of_MRMC.R'
+        'install_imports.R' 'layout.R' 'm_q_c_vector_from_M_Q_C.R'
+        'make_true_parameter_MRMC.R' 'metadata.R' 'method.R'
+        'stanfitExtended.R' 'methods.R' 'methods_print.R'
+        'minimal_model_MRMC.R' 'minimal_model_MRMC2.R'
+        'minimal_model_MRMC2_to_check_causes.R' 'minimal_model_MRMC3.R'
+        'minimal_model_MRMC_development.R' 'modelComparison.R'
+        'multiple_degit_plot.R' 'operator.R'
+        'p_value_of_the_Bayesian_sense_for_chi_square_goodness_of_fit.R'
+        'pairs_plot_if_divergent_transition_occurred.R' 'pause.R'
+        'plotFROC.R' 'plot_FPF_and_TPF_from_a_dataset.R'
+        'plot_curve_and_hit_rate_and_false_rate_simultaneously.R'
+        'pnorm_or_qnorm.R' 'ppp.R' 'prior_predictor.R' 'prior_print.R'
+        'save_an_R_object.R' 'sbc.R' 'sbc_MRMC.R'
+        'showGraphicalModel.R' 'show_codes_in_my_manuscript.R'
+        'size_of_return_value.R' 'small_margin.R'
+        'snippet_for_BayesianFROC.R' 'sortAUC.R'
+        'stability_of_AUC_ranking_in_case_of_MRMC_data.R'
+        'summarise_MRMC.R' 'summary_AUC_comparison_MRMC.R'
+        'summary_EAP_CI_srsc.R' 'the_row_number_of_logical_vector.R'
+        'validation_MRMC_Create_dataList_MRMC_Hit_from_rate_etc.R'
+        'validation_MRMC_UNDER_CONSTRUCTION.R'
+        'validation_error_srsc.R' 'viewdata.R' 'waic.R'
+        'without_double_quote.R'
+Packaged: 2020-03-17 13:42:35 UTC; 81909
+Author: Issei Tsunoda [aut, cre]
+Repository: CRAN
+Date/Publication: 2020-03-17 14:50:14 UTC
